@@ -3,7 +3,7 @@ layout: docs
 title: Knowledge base contribution guide
 published: 2022-07-08
 author_github: brilator
-add toc: true
+add toc: false
 add sidebar: _sidebars/mainSidebar.md
 article_status: published
 todo:  
@@ -16,6 +16,26 @@ This guide is intended to show you how to contribute new articles and tutorials 
 
 <!-- TODO check link!! -->
 For smaller changes and suggestions, please refer to https://nfdi4plants.org/nfdi4plants.knowledgebase/content/docs/index.html.
+
+
+- [Introduction](#introduction)
+- [GitHub Routines](#github-routines)
+- [Testing](#testing)
+- [Common errors](#common-errors)
+- [Docs-Page](#docs-page)
+- [_sidebar](#_sidebar)
+- [Public or not public](#public-or-not-public)
+  - [Ignored content](#ignored-content)
+  - [visible or hidden](#visible-or-hidden)
+- [References](#references)
+- [Structure and Format](#structure-and-format)
+- [Headline level 2](#headline-level-2)
+  - [Headline level 3](#headline-level-3)
+- [Images](#images)
+- [File Name Requirements](#file-name-requirements)
+- [Addressing Readers](#addressing-readers)
+- [Language](#language)
+
 
 ## Introduction
 
