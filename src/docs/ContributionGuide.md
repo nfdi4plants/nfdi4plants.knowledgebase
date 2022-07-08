@@ -1,37 +1,53 @@
-# How-to "knowledge base"
+---
+layout: docs
+title: Knowledge base contribution guide
+published: 2022-07-08
+author_github: brilator
+add toc: true
+add sidebar: sidebars/mainSidebar.md
+article_status: published
+todo:
+  - test before push
+  - commenting in documents
+  - "public" vs. visible
+    - use of sidebar
+    - use folder "_ignored"
+---
 
 Your contribution to the DataPLANT knowledge base is highly appreciated.
-This *How-To* is intended to guide you on contributing via on of three general ways:
+This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.
+<!-- most efficiently for you and the knowledge base curators -->
 
-1. Raising an issue via Helpdesk or GitHub
-    - Recommend missing topics
-    - Minor inconsistencies
-    - Errors in training materials or tutorials
-2. Suggesting changes via GitHub fork and pull request
-    - Review and adapt parts of existing articles or tutorials
-3. Authoring new content
-    - Add new content to the knowledge base
+For smaller changes and suggestions, please refer to https://nfdi4plants.github.io/content/docs/Feedback.html.
 
-- [Introduction](#introduction)
-  - [(Live) Testing](#live-testing)
-- [Authoring content](#authoring-content)
-    - [Docs-Page](#docs-page)
-    - [_sidebar](#sidebar)
-    - [_ignored](#ignored)
-    - [README.md](#readme-md)
-- [Content Design Principles](#content-design-principles)
-    - [References](#references)
-    - [Structure and Format](#structure-and-format)
-    - [Images](#images)
-    - [File Naming](#file-naming)
-    - [Addressing Readers](#addressing-readers)
-    - [Language](#language)
-- [Link Collection](#link-collection)
-
-# Introduction
+## Introduction
 
 The DataPLANT knowledge base is built on [nfdi-web-components](https://nfdi4plants.github.io/web-components-docs/) and will fit all **markdown** content into this "framework".
 For a general introduction to writing markdown, see: [Markdown tutorial](tutorials/markdown.md) and references therein.
+
+## GitHub Routines
+
+> Note: This is not a full-fledged GitHub tutorial. Please refer to available tutorials online or contact the knowledge base curators.
+
+1. Sign up for a GitHub account.
+2. [Fork](https://github.com/nfdi4plants/nfdi4plants.github.io/fork) the knowledge base git repository.
+   
+   - This creates a copy of the knowledge base repository in your own GitHub account.
+   - In the top left, you will see that the repository is associated with your account (1) and forked from the main repository (2).
+   - You can either directly add or edit content using GitHub or clone (3) your repository to work on it locally.
+   - Be aware that your fork is not automatically updated, if the main repository updates. Make sure to update your fork regularly (especially before creating new content) by clicking "Fetch upstream" (4) in the top-right corner of your repository.
+   - If you cloned your repository locally, you also have to update the local clone (via "git pull").
+   
+  ![Git Routine](./img/contribution_git.png)
+
+3. You can work and make any changes on your own fork.
+
+4. Once you want to submit those changes to the main repository, you can open a "pull request" by clicking "Contribute" (5) in the top-right corner.
+   > Remember to "Fetch upstream" (4), if your fork is not up-to-date with the main repository.
+
+5. If edited or added existing content, please assign the original author during your pull-request to review your changes.
+  - The github user name of the original author is stored in the yaml block on top under `author_github`
+  - During the pull-request mention the author via `@<author_github>`.
 
 # (Live) Testing
 
