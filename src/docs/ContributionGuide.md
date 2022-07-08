@@ -4,7 +4,7 @@ title: Knowledge base contribution guide
 published: 2022-07-08
 author_github: brilator
 add toc: true
-add sidebar: sidebars/mainSidebar.md
+add sidebar: _sidebars/mainSidebar.md
 article_status: published
 todo:
   - test before push
@@ -18,7 +18,8 @@ Your contribution to the DataPLANT knowledge base is highly appreciated.
 This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.
 <!-- most efficiently for you and the knowledge base curators -->
 
-For smaller changes and suggestions, please refer to https://nfdi4plants.github.io/content/docs/Feedback.html.
+<!-- TODO check link!! -->
+For smaller changes and suggestions, please refer to https://nfdi4plants.org/nfdi4plants.knowledgebase/content/docs/index.html.
 
 ## Introduction
 
