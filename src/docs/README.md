@@ -41,18 +41,34 @@ For a general introduction to writing markdown, see: [Markdown tutorial](tutoria
    
   ![Git Routine](./img/contribution_git.png)
 
-3. You can work and make any changes on your own fork.
+3. You can work and make any changes in your own repository and commit + push them to your fork.
 
 4. Once you want to submit those changes to the main repository, you can open a "pull request" by clicking "Contribute" (5) in the top-right corner.
    > Remember to "Fetch upstream" (4), if your fork is not up-to-date with the main repository.
 
 5. If edited or added existing content, please assign the original author during your pull-request to review your changes.
+  
   - The github user name of the original author is stored in the yaml block on top under `author_github`
   - During the pull-request mention the author via `@<author_github>`.
 
-# (Live) Testing
+## Testing
 
-Check out the main README.md in the root directory.
+Check out the README.md in the [root directory](../../README.md) for instructions on how to install the knowledge base locally on your machine.
+Following those instructions allows you to test and see how your changes come into play and wether everything renders correctly.
+
+It's highly recommended to *frequently* check your changes locally.
+Please **do not** produce and submit a lot of content without prior local testing.
+
+## Common errors
+
+- Missing metadata block
+- Missing or false required (`MUST`) attribute in metadata block
+- Using a layout in metadata block that does not exist
+- Wrong links
+  - to sidebar elements
+  - to images
+
+## Reviewing
 
 # Authoring content
 
@@ -119,13 +135,16 @@ To add a sidebar element to the page, use the codeblock syntax:
   - Only headers up to `###` are parsed. All header with more depth are parsed to `###`.
 - Tries to match active browser url to referenced ``href`` of any element to set active page.
 
-## _ignored
 
-Anything inside this folder will not be used to generate html pages.
+## Public or not public
 
-## README.md
+### Ignored content
 
-Any file named `README.md` (case sensitive!) will not be used to generate html pages.
+- Anything inside the folder `_ignored` will not be used to generate html pages.
+
+### visible or hidden
+
+- sidebar
 
 # Content Design Principles
 
@@ -137,31 +156,53 @@ Any file named `README.md` (case sensitive!) will not be used to generate html p
 
 ## Structure and Format
 
-- Max. 3 headline levels (## & ###)
+Try to avoid deep structures by using no more than two headline levels, i.e.
 
+<pre><code>```
+## Headline level 2  
+### Headline level 3
+```</code></pre>
+
+Level 1 is automatically generated from the article's `title: `. 
+ 
 ## Images
 
 - simple markdown logic (not HTML): `![name_of_image](path_to_image.png)`
 
 ## File Naming
 
-Preferred: 
-- [snake_case](https://en.wikipedia.org/wiki/Snake_case) (lower_case_with_underscores) 
+Avoid
+
+- special characters
+- spaces
+- abbreviations
+
+To make your file names more readable, preferably use
+
+- [snake_case](https://en.wikipedia.org/wiki/Snake_case) (lower_case_with_underscores)
 - [PascalCase](https://techterms.com/definition/pascalcase) (UpperCase)
+
+For easier findability, use the article's title for the filename, e.g.:
+  DataManagementPlan.md -> `title: Data Management Plan`
+
+> Remember: Changing file names (and paths) means changing URLs and can easily lead to dead links.
 
 ## Addressing Readers
 
-- direct address ("you can", not "user can" or "one can...")
+We generally try to address users and readers directly.
+Use "you can", not "the user can" or "one can..."
 
 ## Language
 
-British English (?)
+British English
 
+> Note: If you work with Visual Studio Code -
+> Check out the extension "Code Spell Checker" https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
+> with British English ("cSpell.language": "en-GB") support.
 
 # Link Collection
 
 > Note: This is just a link collection for recurrent use in KB articles
-
 > Nothing automatised. Just copy/paste.
 
 ⚠️ Must be read from markdown, will not be shown in html.
