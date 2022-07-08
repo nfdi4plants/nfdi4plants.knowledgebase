@@ -6,12 +6,8 @@ author_github: brilator
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
 article_status: published
-todo:
-  - test before push
+todo:  
   - commenting in documents
-  - "public" vs. visible
-    - use of sidebar
-    - use folder "_ignored"
 ---
 
 Your contribution to the DataPLANT knowledge base is highly appreciated.
@@ -135,16 +131,21 @@ To add a sidebar element to the page, use the codeblock syntax:
   - Only headers up to `###` are parsed. All header with more depth are parsed to `###`.
 - Tries to match active browser url to referenced ``href`` of any element to set active page.
 
-
 ## Public or not public
+
+Every markdown document stored in `/nfdi4plants.knowledgebase/src/docs` or any subfolder (except `_ignored`) will be rendered to html and become publicly available once pushed to the main repository.
 
 ### Ignored content
 
 - Anything inside the folder `_ignored` will not be used to generate html pages.
+- This folder is intended for ideas and drafts that
+  - should not yet become available in the knowledge base
+  - should be under version control for discussion and reviewing
 
 ### visible or hidden
 
-- sidebar
+Although most markdown content will be rendered and published, it will not prominently be visible to all visitors.
+It will only become visible in the sidebar once the article is linked in the respective sidebar (typically `add sidebar: _sidebars/mainSidebar.md`)
 
 # Content Design Principles
 
@@ -163,8 +164,8 @@ Try to avoid deep structures by using no more than two headline levels, i.e.
 ### Headline level 3
 ```</code></pre>
 
-Level 1 is automatically generated from the article's `title: `. 
- 
+Level 1 is automatically generated from the article's `title: `.
+
 ## Images
 
 - simple markdown logic (not HTML): `![name_of_image](path_to_image.png)`
