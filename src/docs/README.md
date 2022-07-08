@@ -13,27 +13,33 @@ This *How-To* is intended to guide you on contributing via on of three general w
     - Add new content to the knowledge base
 
 - [Introduction](#introduction)
-  - [Authoring content](#authoring-content)
-  - [Sidebar](#sidebar)
-- [Do not!](#do-not)
-- [(Live) Testing](#live-testing)
-- [References](#references)
-- [Structure and format](#structure-and-format)
-- [Images](#images)
-- [File naming](#file-naming)
-- [Content](#content)
-  - [Addressing readers](#addressing-readers)
-  - [Language](#language)
-- [Link collection](#link-collection)
+  - [(Live) Testing](#live-testing)
+- [Authoring content](#authoring-content)
+    - [Docs-Page](#docs-page)
+    - [_sidebar](#sidebar)
+    - [_ignored](#ignored)
+    - [README.md](#readme-md)
+- [Content Design Principles](#content-design-principles)
+    - [References](#references)
+    - [Structure and Format](#structure-and-format)
+    - [Images](#images)
+    - [File Naming](#file-naming)
+    - [Addressing Readers](#addressing-readers)
+    - [Language](#language)
+- [Link Collection](#link-collection)
 
-
-## Introduction
+# Introduction
 
 The DataPLANT knowledge base is built on [nfdi-web-components](https://nfdi4plants.github.io/web-components-docs/) and will fit all **markdown** content into this "framework".
 For a general introduction to writing markdown, see: [Markdown tutorial](tutorials/markdown.md) and references therein.
 
+# (Live) Testing
 
-### Authoring content
+Check out the main README.md in the root directory.
+
+# Authoring content
+
+## Docs-Page
 
 To add more documentation, add a markdown file to `/src/docs`. The file MUST start with a metadata block:
 
@@ -71,7 +77,7 @@ todo:
 - MAY contain `add sidebar: realtive\path\to\sidebar.md` to add the sidebar element to the page.
 - MAY contain **any** other metadata. The information will be read but will not affect the generated html.
 
-### Sidebar
+## _sidebar
 
 Sidebar files MUST be in any **subdirectory** of `/src/docs/_sidebars`. Sidebar markdown files must start with a metadata block:
 
@@ -96,23 +102,15 @@ To add a sidebar element to the page, use the codeblock syntax:
   - Only headers up to `###` are parsed. All header with more depth are parsed to `###`.
 - Tries to match active browser url to referenced ``href`` of any element to set active page.
 
-## README.md
-
-Any file named `README.md` (case sensitive!) will not be used to generate html pages.
-
 ## _ignored
 
 Anything inside this folder will not be used to generate html pages.
 
+## README.md
 
-## Do not!
+Any file named `README.md` (case sensitive!) will not be used to generate html pages.
 
-- Store a markdown (.md, .markdown) file in the /docs folder, that is not supposed to be parsed. Fornax will look for the yaml header and break if it does not exist.
-
-
-## (Live) Testing
-
-Check out the main README.md in the root directory.
+# Content Design Principles
 
 ## References
 
@@ -120,7 +118,7 @@ Check out the main README.md in the root directory.
 - External links (tools, sites, platforms): as hyper-link
 - Knowledge base cross-references: relative path to *.md document, **BUT** replace the `.md` file extension with `.html`, as the markdown files are parsed to html.
 
-## Structure and format
+## Structure and Format
 
 - Max. 3 headline levels (## & ###)
 
@@ -128,28 +126,28 @@ Check out the main README.md in the root directory.
 
 - simple markdown logic (not HTML): `![name_of_image](path_to_image.png)`
 
-## File naming
+## File Naming
 
 Preferred: 
 - [snake_case](https://en.wikipedia.org/wiki/Snake_case) (lower_case_with_underscores) 
 - [PascalCase](https://techterms.com/definition/pascalcase) (UpperCase)
 
-
-## Content
-
-### Addressing readers
+## Addressing Readers
 
 - direct address ("you can", not "user can" or "one can...")
 
-### Language
+## Language
 
 British English (?)
 
 
-## Link collection
+# Link Collection
 
 > Note: This is just a link collection for recurrent use in KB articles
+
 > Nothing automatised. Just copy/paste.
+
+⚠️ Must be read from markdown, will not be shown in html.
 
 <!-- Links to DataPLANT knowledge base (kb-) -->
 
