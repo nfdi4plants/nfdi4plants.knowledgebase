@@ -17,7 +17,7 @@ let loader (projectRoot: string) (siteContent: SiteContents) =
     let files = 
         Directory.GetFiles(docsPath, "*", options)
         |> Array.filter (fun n -> n.Contains @"\_sidebars\" |> not && n.Contains "/_sidebars/" |> not)
-        |> Array.filter (fun n -> n.Contains @"\_ignored\" |> not && n.Contains "/_sidebars/" |> not)
+        |> Array.filter (fun n -> n.Contains @"\_ignored\" |> not && n.Contains "/_ignored/" |> not)
         |> Array.filter (fun n -> n.Contains "README.md" |> not)
         |> Array.filter (fun n -> n.EndsWith ".md")
 
