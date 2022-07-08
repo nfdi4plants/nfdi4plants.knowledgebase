@@ -351,3 +351,6 @@ MigrationBackup/
 src/_public
 .vscode/settings.json
 .paket/
+
+# Macos temporary files
+.DS_Store
