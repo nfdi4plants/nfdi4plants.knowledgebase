@@ -9,9 +9,11 @@
 1. Download repo.
 2. Run `dotnet tool restore` in root directory.
 3. Run `dotnet paket install` in root directory.
-4. Run `dotnet fornax watch` in `\src` folder.
-5. Open page in browser.
 
+## run
+
+1. Run `dotnet fornax watch` in `\src` folder.
+2. Open page in browser [http://127.0.0.1:8080/](http://127.0.0.1:8080/).
 
 ## update web-components
 

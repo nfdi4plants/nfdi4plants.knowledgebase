@@ -73,7 +73,7 @@ todo:
 
 ### Sidebar
 
-Sidebar files MAY be in ANY **subdirectory** of `/src/docs`. Sidebar markdown files must start with a metadata block:
+Sidebar files MUST be in any **subdirectory** of `/src/docs/_sidebars`. Sidebar markdown files must start with a metadata block:
 
 ```yml
 ---
@@ -96,6 +96,14 @@ To add a sidebar element to the page, use the codeblock syntax:
   - Only headers up to `###` are parsed. All header with more depth are parsed to `###`.
 - Tries to match active browser url to referenced ``href`` of any element to set active page.
 
+## README.md
+
+Any file named `README.md` (case sensitive!) will not be used to generate html pages.
+
+## _ignored
+
+Anything inside this folder will not be used to generate html pages.
+
 
 ## Do not!
 
@@ -104,11 +112,7 @@ To add a sidebar element to the page, use the codeblock syntax:
 
 ## (Live) Testing
 
-- see 
-
-> Note: 
-
-
+Check out the main README.md in the root directory.
 
 ## References
 
@@ -126,8 +130,9 @@ To add a sidebar element to the page, use the codeblock syntax:
 
 ## File naming
 
-- no special characters
-- preferably all lowercase to ease cross-references
+Preferred: 
+- [snake_case](https://en.wikipedia.org/wiki/Snake_case) (lower_case_with_underscores) 
+- [PascalCase](https://techterms.com/definition/pascalcase) (UpperCase)
 
 
 ## Content
