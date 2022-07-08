@@ -2,21 +2,21 @@
 ---
 
 ```Fundamentals
-# Research Data Management:/content/docs/ResearchDataManagement.html
-# FAIR Data Principles:/content/docs/FairDataPrinciples.html
-# Metadata:/content/docs/Metadata.html
-# Data Sharing:/content/docs/DataSharing.html
-# Data Publications:/content/docs/DataPublications.html
-# Data Management Plan:/content/docs/DataManagementPlan.html
-# Version Control & Git:/content/docs/VersionControlGit.html
-# Public Data Repositories:/content/docs/PublicDataRepositories.html
-# Persistent Identifiers:/content/docs/PersistentIdentifiers.html
+# Research Data Management:/nfdi4plants.knowledgebase/docs/ResearchDataManagement.html
+# FAIR Data Principles:/nfdi4plants.knowledgebase/docs/FairDataPrinciples.html
+# Metadata:/nfdi4plants.knowledgebase/docs/Metadata.html
+# Data Sharing:/nfdi4plants.knowledgebase/docs/DataSharing.html
+# Data Publications:/nfdi4plants.knowledgebase/docs/DataPublications.html
+# Data Management Plan:/nfdi4plants.knowledgebase/docs/DataManagementPlan.html
+# Version Control & Git:/nfdi4plants.knowledgebase/docs/VersionControlGit.html
+# Public Data Repositories:/nfdi4plants.knowledgebase/docs/PublicDataRepositories.html
+# Persistent Identifiers:/nfdi4plants.knowledgebase/docs/PersistentIdentifiers.html
 ```
 
 ```Implementation within DataPLANT
-# Annotated Research Context:/content/docs/AnnotatedResearchContext.html
-## ARC QuickStart:/content/docs/QuickStart_arc.html
-# DataHUB:/content/docs/DataHub.html
+# Annotated Research Context:/nfdi4plants.knowledgebase/docs/AnnotatedResearchContext.html
+## ARC QuickStart:/nfdi4plants.knowledgebase/docs/QuickStart_arc.html
+# DataHUB:/nfdi4plants.knowledgebase/docs/DataHub.html
 ```
 
 <!-- ```Training & Tutorials -->

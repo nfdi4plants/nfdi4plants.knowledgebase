@@ -8,7 +8,8 @@
 open Html
 open Fornax.Nfdi4Plants
 
-let baseUrl = "https://github.com/nfdi4plants/web-components-docs/blob/main/src/"
+///<summary>This is used in generators/docs</summary>
+let baseUrl = "https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/"
 
 let injectWebsocketCode (webpage:string) =
     let websocketScript =

@@ -1,6 +1,6 @@
 # nfdi4plants.knowledgebase
 
-**[WIP]()**
+**[https://nfdi4plants.github.io/nfdi4plants.knowledgebase/](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/)**
 
 # Development
 
