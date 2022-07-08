@@ -16,10 +16,10 @@ let loader (projectRoot: string) (siteContent: SiteContents) =
     let options = EnumerationOptions(RecurseSubdirectories = true)
     let files = 
         Directory.GetFiles(docsPath, "*", options)
-        |> Array.filter (fun n -> n.Contains @"\_sidebars\" |> not)
-        |> Array.filter (fun n -> n.Contains @"\_ignored\" |> not)
-        |> Array.filter (fun n -> n.EndsWith ".md")
+        |> Array.filter (fun n -> n.Contains @"\_sidebars\" || n.Contains "/_sidebars/" |> not)
+        |> Array.filter (fun n -> n.Contains @"\_ignored\" || n.Contains "/_sidebars/" |> not)
         |> Array.filter (fun n -> n.Contains "README.md" |> not)
+        |> Array.filter (fun n -> n.EndsWith ".md")
 
     printfn "%A" files
 
