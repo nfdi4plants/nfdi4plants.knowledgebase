@@ -4,7 +4,7 @@ title: Index
 published: 2022-06-06
 Author: Kevin Frey
 add toc: true
-add sidebar: sidebars\mainSidebar.md
+add sidebar: _sidebars/mainSidebar.md
 ---
 
 The `@nfdi4plants/web-components` were created, based on the [lit web components](https://lit.dev) base typescript template.

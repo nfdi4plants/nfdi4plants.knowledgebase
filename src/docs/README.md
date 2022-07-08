@@ -47,7 +47,7 @@ author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
 add toc: true
-add sidebar: sidebars\mainSidebar.md
+add sidebar: _sidebars/mainSidebar.md
 article_status: published
 todo:
     - update to include changes in latest tool version

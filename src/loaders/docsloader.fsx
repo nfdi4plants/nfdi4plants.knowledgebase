@@ -22,10 +22,7 @@ let loader (projectRoot: string) (siteContent: SiteContents) =
         |> Array.filter (fun n -> n.Contains "README.md" |> not)
 
     printfn "%A" files
-    // let files = 
-    //     Directory.GetFiles(docsPath, "*")
-    //     |> Array.filter (fun n -> n.EndsWith ".md")
-    //     |> Array.filter (fun n -> n.Contains "README.md" |> not)
+
     let docs = 
         files 
         |> Array.map (Docs.loadFile projectRoot contentDir)
@@ -36,6 +33,8 @@ let loader (projectRoot: string) (siteContent: SiteContents) =
 
     docs
     |> Array.iter siteContent.Add
+
+    printfn "[DOCS-LOADER] Done!"
 
     siteContent.Add({disableLiveRefresh = false})
     siteContent

@@ -5,7 +5,7 @@ published: 2022-05-25
 author: Martin Kuhl
 author_github: martin-kuhl
 add toc: true
-add sidebar: sidebars\mainSidebar.md
+add sidebar: _sidebars/mainSidebar.md
 article_status: published
 todo:
     - Technical implementations (machine-readability)

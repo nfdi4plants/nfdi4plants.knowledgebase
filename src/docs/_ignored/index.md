@@ -2,7 +2,7 @@
 layout: docs
 title: Welcome to the DataPLANT knowledge base
 add toc: false
-add sidebar: sidebars\mainSidebar.md
+add sidebar: _sidebars/mainSidebar.md
 ---
 
 We are very happy that you are interested to learn more about DataPLANT. Feel free to click through the sections on the left
