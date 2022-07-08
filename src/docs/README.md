@@ -24,13 +24,11 @@ For smaller changes and suggestions, please refer to https://nfdi4plants.org/nfd
 - [Common errors](#common-errors)
 - [Docs-Page](#docs-page)
 - [_sidebar](#_sidebar)
-- [Public or not public](#public-or-not-public)
-  - [Ignored content](#ignored-content)
-  - [visible or hidden](#visible-or-hidden)
+- [Markdown to HTML Rendering Rules](#markdown-to-html-rendering-rules)
+  - [Ignored Content](#ignored-content)
+  - [Visible or Hidden](#visible-or-hidden)
 - [References](#references)
 - [Structure and Format](#structure-and-format)
-- [Headline level 2](#headline-level-2)
-  - [Headline level 3](#headline-level-3)
 - [Images](#images)
 - [File Name Requirements](#file-name-requirements)
 - [Addressing Readers](#addressing-readers)
@@ -149,18 +147,18 @@ To add a sidebar element to the page, use the codeblock syntax:
   - Only headers up to `###` are parsed. All header with more depth are parsed to `###`.
 - Tries to match active browser url to referenced ``href`` of any element to set active page.
 
-## Public or not public
+## Markdown to HTML Rendering Rules
 
 Every markdown document stored in `/nfdi4plants.knowledgebase/src/docs` or any subfolder (except `_ignored`) will be rendered to html and become publicly available once pushed to the main repository.
 
-### Ignored content
+### Ignored Content
 
 - Anything inside the folder `_ignored` will not be used to generate html pages.
 - This folder is intended for ideas and drafts that
   - should not yet become available in the knowledge base
   - should be under version control for discussion and reviewing
 
-### visible or hidden
+### Visible or Hidden
 
 Although most markdown content will be rendered and published, it will not prominently be visible to all visitors.
 It will only become visible in the sidebar once the article is linked in the respective sidebar (typically `add sidebar: _sidebars/mainSidebar.md`)
@@ -178,8 +176,8 @@ It will only become visible in the sidebar once the article is linked in the res
 Try to avoid deep structures by using no more than two headline levels, i.e.
 
 <pre><code>```
-## Headline level 2  
-### Headline level 3
+## Headline level 2 <!-- omit in toc -->
+### Headline level 3 <!-- omit in toc -->
 ```</code></pre>
 
 Level 1 is automatically generated from the article's `title: `.
