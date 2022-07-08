@@ -1,0 +1,60 @@
+# This is a basic workflow to help you get started with Actions
+
+name: update-dependencies
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow at 20pm thursday (depends on timezone) (0 18 * * THU)
+  schedule:
+    - cron: '0 21 * * *'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  update_dependencies:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup .NET 3.1
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1.301
+          
+      - name: Setup .NET 5
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.102
+
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+
+      - name: Install rollup
+        run: npm install --global rollup
+
+      - name: Update to latest nfdi4plants web components
+        run: npm install @nfdi4plants/web-components@latest
+
+      - name: Bundle npm packages
+        run: rollup --config rollup.config.js
+          
+      - name: Restore dotnet tools
+        run: dotnet tool restore
+        
+      - name: Update to latest Nfdi4Plants.fornax version
+        run: dotnet paket update Nfdi4Plants.Fornax
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update @nfdi4plants/web-components & Nfdi4Plants.Fornax ⬆️
