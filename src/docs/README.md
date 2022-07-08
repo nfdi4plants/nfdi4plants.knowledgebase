@@ -64,8 +64,6 @@ Please **do not** produce and submit a lot of content without prior local testin
   - to sidebar elements
   - to images
 
-## Reviewing
-
 # Authoring content
 
 ## Docs-Page
@@ -170,20 +168,20 @@ Level 1 is automatically generated from the article's `title: `.
 
 - simple markdown logic (not HTML): `![name_of_image](path_to_image.png)`
 
-## File Naming
+## File Name Requirements
 
-Avoid
+File names MUST NOT contain
 
 - special characters
 - spaces
 - abbreviations
 
-To make your file names more readable, preferably use
+To make your file names more readable, it is RECOMMENDED to use
 
 - [snake_case](https://en.wikipedia.org/wiki/Snake_case) (lower_case_with_underscores)
 - [PascalCase](https://techterms.com/definition/pascalcase) (UpperCase)
 
-For easier findability, use the article's title for the filename, e.g.:
+For easier findability, it is RECOMMENDED to use the article's title for the filename, e.g.:
   DataManagementPlan.md -> `title: Data Management Plan`
 
 > Remember: Changing file names (and paths) means changing URLs and can easily lead to dead links.
