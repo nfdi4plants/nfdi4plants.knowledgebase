@@ -1,6 +1,6 @@
-# @nfdi4plants/web-components docs
+# nfdi4plants.knowledgebase
 
-**[Link to gh-pages](https://nfdi4plants.github.io/web-components-docs/)**
+**[WIP]()**
 
 # Development
 
