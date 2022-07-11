@@ -10,29 +10,32 @@ todo:
   - commenting in documents
 ---
 
+<br>
 Your contribution to the DataPLANT knowledge base is highly appreciated.
 This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.
 <!-- most efficiently for you and the knowledge base curators -->
 
 <!-- TODO check link!! -->
-For smaller changes and suggestions, please refer to https://nfdi4plants.org/nfdi4plants.knowledgebase/content/docs/index.html.
+For smaller changes and suggestions, please refer to [here](./home.html).
 
 
 - [Introduction](#introduction)
 - [GitHub Routines](#github-routines)
 - [Testing](#testing)
 - [Common errors](#common-errors)
-- [Docs-Page](#docs-page)
-- [_sidebar](#_sidebar)
-- [Markdown to HTML Rendering Rules](#markdown-to-html-rendering-rules)
-  - [Ignored Content](#ignored-content)
-  - [Visible or Hidden](#visible-or-hidden)
-- [References](#references)
-- [Structure and Format](#structure-and-format)
-- [Images](#images)
-- [File Name Requirements](#file-name-requirements)
-- [Addressing Readers](#addressing-readers)
-- [Language](#language)
+- [Authoring Content](#authoring-content)
+    - [Docs-Page](#docs-page)
+    - [_sidebar](#_sidebar)
+    - [Markdown to HTML Rendering Rules](#markdown-to-html-rendering-rules)
+        - [Ignored Content](#ignored-content)
+        - [Visible or Hidden](#visible-or-hidden)
+- [Content Design Principles](content-design-principles)
+    - [References](#references)
+    - [Structure and Format](#structure-and-format)
+    - [Images](#images)
+    - [File Name Requirements](#file-name-requirements)
+    - [Addressing Readers](#addressing-readers)
+    - [Language](#language)
 
 
 ## Introduction
@@ -73,7 +76,7 @@ Following those instructions allows you to test and see how your changes come in
 It's highly recommended to *frequently* check your changes locally.
 Please **do not** produce and submit a lot of content without prior local testing.
 
-## Common errors
+## Common Errors
 
 - Missing metadata block
 - Missing or false required (`MUST`) attribute in metadata block
@@ -82,7 +85,7 @@ Please **do not** produce and submit a lot of content without prior local testin
   - to sidebar elements
   - to images
 
-# Authoring content
+# Authoring Content
 
 ## Docs-Page
 

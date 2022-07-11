@@ -9,7 +9,7 @@ let docsPredicate (projectRoot: string, page: string) =
     if ext = ".md" then
         let ctn = File.ReadAllText fileName
         page.Contains("_public") |> not
-        && page.Contains("README.md") |> not
+        // && page.Contains("README.md") |> not
         && ctn.Contains("layout: docs")
     else
         false
