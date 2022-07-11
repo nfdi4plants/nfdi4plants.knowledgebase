@@ -97,7 +97,7 @@ Name | Type | Tasks on metadata
 -->
 
 
-## Sources and further informmation
+## Sources and further information
 
 - [ISA model](https://isa-specs.readthedocs.io/en/latest/isamodel.html)
 - [Common Workflow Language](https://www.commonwl.org/)
