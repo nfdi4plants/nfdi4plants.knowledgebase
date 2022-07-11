@@ -3,7 +3,7 @@
 #load "../../.paket/load/net5.0/main.group.fsx"
 
 open System.IO
-open Fornax.Nfdi4Plants
+open Fornax
 
 let contentDir = "docs"
 
@@ -24,8 +24,9 @@ let loader (projectRoot: string) (siteContent: SiteContents) =
     printfn "%A" files
 
     let docs = 
+        let loadDocs (filePath:string) = Nfdi4Plants.Docs.loadFile(projectRoot,contentDir,filePath, productionBasePath = "nfdi4plants.knowledgebase")
         files 
-        |> Array.map (Docs.loadFile projectRoot contentDir)
+        |> Array.map loadDocs
 
     // let docs0 = siteContent.TryGetValues<DocsData> () |> Option.defaultValue Seq.empty
 
