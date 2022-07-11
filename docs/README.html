@@ -1,0 +1,343 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - Knowledge base contribution guide
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Fundamentals
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/Home.html">Introduction</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/ResearchDataManagement.html">Research Data Management</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/FairDataPrinciples.html">FAIR Data Principles</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/Metadata.html">Metadata</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataSharing.html">Data Sharing</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataPublications.html">Data Publications</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataManagementPlan.html">Data Management Plan</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/VersionControlGit.html">Version Control & Git</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/PublicDataRepositories.html">Public Data Repositories</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/PersistentIdentifiers.html">Persistent Identifiers</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Implementation within DataPLANT
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/AnnotatedResearchContext.html">Annotated Research Context</h1>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/QuickStart_arc.html">ARC QuickStart</h2>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataHub.html">DataHUB</h1>
+<!-- ```Training & Tutorials -->
+<!-- # Swate Tutorial Videos:/content/docs/swate_videos.html -->
+<!-- # Sync ARCs via GitHub Desktop:/content/docs/tutorials/github_desktop.html -->
+<!-- # Markdown:/content/docs/tutorials/markdown.html -->
+<!-- ``` -->
+
+      </nfdi-sidebar-element>
+      <h1 class="front-header">
+        Knowledge base contribution guide
+      </h1>
+      <i class="help">
+        last updated at 2022-07-08
+      </i>
+      <br>
+Your contribution to the DataPLANT knowledge base is highly appreciated.
+This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.
+<!-- most efficiently for you and the knowledge base curators -->
+<!-- TODO check link!! -->
+<p>For smaller changes and suggestions, please refer to <a href="./home.html">here</a>.</p>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#github-routines">GitHub Routines</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#common-errors">Common errors</a></li>
+<li><a href="#authoring-content">Authoring Content</a>
+<ul>
+<li><a href="#docs-page">Docs-Page</a></li>
+<li><a href="#_sidebar">_sidebar</a></li>
+<li><a href="#markdown-to-html-rendering-rules">Markdown to HTML Rendering Rules</a>
+<ul>
+<li><a href="#ignored-content">Ignored Content</a></li>
+<li><a href="#visible-or-hidden">Visible or Hidden</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="content-design-principles">Content Design Principles</a>
+<ul>
+<li><a href="#references">References</a></li>
+<li><a href="#structure-and-format">Structure and Format</a></li>
+<li><a href="#images">Images</a></li>
+<li><a href="#file-name-requirements">File Name Requirements</a></li>
+<li><a href="#addressing-readers">Addressing Readers</a></li>
+<li><a href="#language">Language</a></li>
+</ul>
+</li>
+</ul>
+<nfdi-h2 id="introduction">Introduction</nfdi-h2>
+<p>The DataPLANT knowledge base is built on <a href="https://nfdi4plants.github.io/web-components-docs/">nfdi-web-components</a> and will fit all <strong>markdown</strong> content into this &quot;framework&quot;.
+For a general introduction to writing markdown, see: <a href="tutorials/markdown.md">Markdown tutorial</a> and references therein.</p>
+<nfdi-h2 id="github-routines">GitHub Routines</nfdi-h2>
+<blockquote>
+<p>Note: This is not a full-fledged GitHub tutorial. Please refer to available tutorials online or contact the knowledge base curators.</p>
+</blockquote>
+<ol>
+<li><p>Sign up for a GitHub account.</p>
+</li>
+<li><p><a href="https://github.com/nfdi4plants/nfdi4plants.github.io/fork">Fork</a> the knowledge base git repository.</p>
+<ul>
+<li>This creates a copy of the knowledge base repository in your own GitHub account.</li>
+<li>In the top left, you will see that the repository is associated with your account (1) and forked from the main repository (2).</li>
+<li>You can either directly add or edit content using GitHub or clone (3) your repository to work on it locally.</li>
+<li>Be aware that your fork is not automatically updated, if the main repository updates. Make sure to update your fork regularly (especially before creating new content) by clicking &quot;Fetch upstream&quot; (4) in the top-right corner of your repository.</li>
+<li>If you cloned your repository locally, you also have to update the local clone (via &quot;git pull&quot;).</li>
+</ul>
+</li>
+</ol>
+<p><img src="./img/contribution_git.png" alt="Git Routine" /></p>
+<ol start="3">
+<li><p>You can work and make any changes in your own repository and commit + push them to your fork.</p>
+</li>
+<li><p>Once you want to submit those changes to the main repository, you can open a &quot;pull request&quot; by clicking &quot;Contribute&quot; (5) in the top-right corner.</p>
+<blockquote>
+<p>Remember to &quot;Fetch upstream&quot; (4), if your fork is not up-to-date with the main repository.</p>
+</blockquote>
+</li>
+<li><p>If edited or added existing content, please assign the original author during your pull-request to review your changes.</p>
+</li>
+</ol>
+<ul>
+<li>The github user name of the original author is stored in the yaml block on top under <code>author_github</code></li>
+<li>During the pull-request mention the author via <code>@&lt;author_github&gt;</code>.</li>
+</ul>
+<nfdi-h2 id="testing">Testing</nfdi-h2>
+<p>Check out the README.md in the <a href="../../README.md">root directory</a> for instructions on how to install the knowledge base locally on your machine.
+Following those instructions allows you to test and see how your changes come into play and wether everything renders correctly.</p>
+<p>It's highly recommended to <em>frequently</em> check your changes locally.
+Please <strong>do not</strong> produce and submit a lot of content without prior local testing.</p>
+<nfdi-h2 id="common-errors">Common Errors</nfdi-h2>
+<ul>
+<li>Missing metadata block</li>
+<li>Missing or false required (<code>MUST</code>) attribute in metadata block</li>
+<li>Using a layout in metadata block that does not exist</li>
+<li>Wrong links
+<ul>
+<li>to sidebar elements</li>
+<li>to images</li>
+</ul>
+</li>
+</ul>
+<nfdi-h1 id="authoring-content">Authoring Content</nfdi-h1>
+<nfdi-h2 id="docs-page">Docs-Page</nfdi-h2>
+<p>To add more documentation, add a markdown file to <code>/src/docs</code>. The file MUST start with a metadata block:</p>
+<!--used yml here as code language for nice color syntax-->
+<nfdi-code class="language-yml">---
+layout: docs
+title: Metadata
+published: 2022-05-09
+author: Dominik Brilhaus
+author_orcid: https://orcid.org/0000-0001-9021-3197
+author_github: brilator
+add toc: true
+add sidebar: _sidebars/mainSidebar.md
+article_status: published
+todo:
+    - update to include changes in latest tool version
+---</nfdi-code>
+<ul>
+<li>All keys (<code>layout</code>, <code>author</code>, etc.) are <strong>not</strong> case sensitive.</li>
+<li>All fields can be at ANY position.</li>
+<li>MUST start and end with <code>---</code> .</li>
+<li>MUST contain <code>layout: docs</code>.
+<ul>
+<li>This triggers fornax parsing to html.</li>
+</ul>
+</li>
+<li>MUST contain <code>title: xxxx</code>.
+<ul>
+<li>Will be added as &quot;# xxxx&quot; to the html.</li>
+<li>Will be used to name the generated webpage.</li>
+</ul>
+</li>
+<li>MUST contain <code>published: yyyy-MM-dd</code>.</li>
+<li>MAY contain <code>author: xxxx</code>.</li>
+<li>MAY contain <code>author_github: xxxx</code>.
+<ul>
+<li>This helps authoring and reviewing content.</li>
+</ul>
+</li>
+<li>MAY contain <code>add toc: true</code>.
+<ul>
+<li>Will add automated table of contents from all found headers in content.</li>
+</ul>
+</li>
+<li>MAY contain <code>add sidebar: realtive\path\to\sidebar.md</code> to add the sidebar element to the page.</li>
+<li>MAY contain <strong>any</strong> other metadata. The information will be read but will not affect the generated html.</li>
+</ul>
+<nfdi-h2 id="sidebar">_sidebar</nfdi-h2>
+<p>Sidebar files MUST be in any <strong>subdirectory</strong> of <code>/src/docs/_sidebars</code>. Sidebar markdown files must start with a metadata block:</p>
+<nfdi-code class="language-yml">---
+published: 2022-05-09
+article_status: published
+---</nfdi-code>
+<ul>
+<li>MAY contain <strong>any</strong> other metadata. The information will be read but will not affect the generated html.</li>
+</ul>
+<p>To add a sidebar element to the page, use the codeblock syntax:</p>
+<pre><code>```Data Management Plan
+# Data Management Plan:/docs/DataManagementPlan.html
+# DataPLANT's Data Management Plan Generator:/docs/DataManagementPlan.html#dataplants-data-management-plan-generator
+```</code></pre>
+<ul>
+<li>All text after the opening &quot;```&quot; will be parsed to the element title.</li>
+<li>Inner text MUST only contain heading lines.
+<ul>
+<li>Only headers up to <code>###</code> are parsed. All header with more depth are parsed to <code>###</code>.</li>
+</ul>
+</li>
+<li>Tries to match active browser url to referenced <code>href</code> of any element to set active page.</li>
+</ul>
+<nfdi-h2 id="markdown-to-html-rendering-rules">Markdown to HTML Rendering Rules</nfdi-h2>
+<p>Every markdown document stored in <code>/nfdi4plants.knowledgebase/src/docs</code> or any subfolder (except <code>_ignored</code>) will be rendered to html and become publicly available once pushed to the main repository.</p>
+<nfdi-h3 id="ignored-content">Ignored Content</nfdi-h3>
+<ul>
+<li>Anything inside the folder <code>_ignored</code> will not be used to generate html pages.</li>
+<li>This folder is intended for ideas and drafts that
+<ul>
+<li>should not yet become available in the knowledge base</li>
+<li>should be under version control for discussion and reviewing</li>
+</ul>
+</li>
+</ul>
+<nfdi-h3 id="visible-or-hidden">Visible or Hidden</nfdi-h3>
+<p>Although most markdown content will be rendered and published, it will not prominently be visible to all visitors.
+It will only become visible in the sidebar once the article is linked in the respective sidebar (typically <code>add sidebar: _sidebars/mainSidebar.md</code>)</p>
+<nfdi-h1 id="content-design-principles">Content Design Principles</nfdi-h1>
+<nfdi-h2 id="references">References</nfdi-h2>
+<ul>
+<li><strong>Literature / information references:</strong> additional bibliography block below</li>
+<li><strong>External links (tools, sites, platforms):</strong> as hyper-link</li>
+<li><strong>Knowledge base cross-references:</strong> relative path to *.md document, <strong>BUT</strong> replace the <code>.md</code> file extension with <code>.html</code>, as the markdown files are parsed to html.</li>
+</ul>
+<nfdi-h3 id="relative-paths">Relative Paths</nfdi-h3>
+<p>We SHOULD always try to use relative paths, as they are easier to maintain. Altough useful, they need a bit more finetuning, as there are several options.</p>
+<p>One of the major issues with relative paths is that during development the pages are accessed by <code>/</code>, for example <code>/docs/README.html</code>. Published they will be accessed by <code>/nfdi4plants.knowledgebase</code> (<code>/nfdi4plants.knowledgebase/docs/README.html</code>). In the following i will describe some ideas on how to deal with this:</p>
+<ul>
+<li><strong>Basic relative paths:</strong> These will looke like this: <code>[Test](/README.html)</code>. By starting with <code>/</code> we implcitly say &quot;start at host&quot;. So in development it will start with <code>http://127.0.0.1:8080/</code>, in production it will start with <code>https://nfdi4plants.github.io/</code>. Because in production we also need would need <code>https://nfdi4plants.github.io/nfdi4plants.knowledgebase/</code>, this type of relative paths can create issues! ⚠️</li>
+<li><strong>Relative paths in sidebar:</strong> The sidebars actually check if you are currently in <code>dotnet fornax watch</code> mode. So you can use basic relative paths here. Example `<nfdi-code class="language-markdown">```Fundamentals
+# Introduction:/docs/Home.html
+```!</nfdi-code>
+<code>/docs/Home.html</code> will be parsed to <code>/nfdi4plants.knowledgebase/docs/Home.html</code>.</li>
+<li><strong>Relative paths from current file:</strong> These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of &quot;Basic relative paths&quot;. Example: <code>[Test](./ResearchDataManagement.html)</code>. Starting with <code>./</code> translates to &quot;coming from the position of this file&quot;. We can even go up in the file hierarchy, like <code>[Test](./../README.html)</code>. This translates to &quot;coming from the position of this file, go one folder higher and find README.html there&quot;.</li>
+</ul>
+<p><a href="./../README.html">Test</a></p>
+<nfdi-h2 id="structure-and-format">Structure and Format</nfdi-h2>
+<p>Try to avoid deep structures by using no more than two headline levels, i.e.</p>
+<pre><code>```
+## Headline level 2 <!-- omit in toc -->
+### Headline level 3 <!-- omit in toc -->
+```</code></pre>
+<p>Level 1 is automatically generated from the article's <code>title: </code>.</p>
+<nfdi-h2 id="images">Images</nfdi-h2>
+<ul>
+<li>simple markdown logic (not HTML): <code>![name_of_image](path_to_image.png)</code></li>
+</ul>
+<nfdi-h2 id="file-name-requirements">File Name Requirements</nfdi-h2>
+<p>File names:</p>
+<ul>
+<li>MUST use the article's title for the filename, e.g.: DataManagementPlan.md → <code>title: Data Management Plan</code></li>
+<li>MUST NOT contain special characters</li>
+<li>MUST NOT contain spaces</li>
+<li>MUST use <a href="https://en.wikipedia.org/wiki/Snake_case">snake_case</a> (lower_case_with_underscores) OR <a href="https://techterms.com/definition/pascalcase">PascalCase</a> (UpperCase)</li>
+</ul>
+<blockquote>
+<p>Remember: Changing file names (and paths) means changing URLs and can easily lead to dead links.</p>
+</blockquote>
+<nfdi-h2 id="addressing-readers">Addressing Readers</nfdi-h2>
+<p>We generally try to address users and readers directly.
+Use &quot;you can&quot;, not &quot;the user can&quot; or &quot;one can...&quot;</p>
+<nfdi-h2 id="language">Language</nfdi-h2>
+<p>British English</p>
+<blockquote>
+<p>Note: If you work with Visual Studio Code -
+Check out the extension &quot;Code Spell Checker&quot; <a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker</a>
+with British English (&quot;cSpell.language&quot;: &quot;en-GB&quot;) support.</p>
+</blockquote>
+<nfdi-h1 id="link-collection">Link Collection</nfdi-h1>
+<blockquote>
+<p>Note: This is just a link collection for recurrent use in KB articles
+Nothing automatised. Just copy/paste.</p>
+</blockquote>
+<p>⚠️ Must be read from markdown, will not be shown in html.</p>
+<!-- Links to DataPLANT knowledge base (kb-) -->
+<!-- Links to DataPLANT Homepage (hp-) -->
+<!-- Links to DataPLANT GitHub (gh-) -->
+<!-- Links to external (ext-) sources -->
+
+      <h3>
+        Dataplant Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+          directly
+        </a>
+        .
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/README.md" style="margin-left: auto; display: block; width: 130px;">
+          ✏️ Edit this page
+        </a>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>
