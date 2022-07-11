@@ -10,29 +10,32 @@ todo:
   - commenting in documents
 ---
 
+<br>
 Your contribution to the DataPLANT knowledge base is highly appreciated.
 This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.
 <!-- most efficiently for you and the knowledge base curators -->
 
 <!-- TODO check link!! -->
-For smaller changes and suggestions, please refer to https://nfdi4plants.org/nfdi4plants.knowledgebase/content/docs/index.html.
+For smaller changes and suggestions, please refer to [here](./home.html).
 
 
 - [Introduction](#introduction)
 - [GitHub Routines](#github-routines)
 - [Testing](#testing)
 - [Common errors](#common-errors)
-- [Docs-Page](#docs-page)
-- [_sidebar](#_sidebar)
-- [Markdown to HTML Rendering Rules](#markdown-to-html-rendering-rules)
-  - [Ignored Content](#ignored-content)
-  - [Visible or Hidden](#visible-or-hidden)
-- [References](#references)
-- [Structure and Format](#structure-and-format)
-- [Images](#images)
-- [File Name Requirements](#file-name-requirements)
-- [Addressing Readers](#addressing-readers)
-- [Language](#language)
+- [Authoring Content](#authoring-content)
+    - [Docs-Page](#docs-page)
+    - [_sidebar](#_sidebar)
+    - [Markdown to HTML Rendering Rules](#markdown-to-html-rendering-rules)
+        - [Ignored Content](#ignored-content)
+        - [Visible or Hidden](#visible-or-hidden)
+- [Content Design Principles](content-design-principles)
+    - [References](#references)
+    - [Structure and Format](#structure-and-format)
+    - [Images](#images)
+    - [File Name Requirements](#file-name-requirements)
+    - [Addressing Readers](#addressing-readers)
+    - [Language](#language)
 
 
 ## Introduction
@@ -73,7 +76,7 @@ Following those instructions allows you to test and see how your changes come in
 It's highly recommended to *frequently* check your changes locally.
 Please **do not** produce and submit a lot of content without prior local testing.
 
-## Common errors
+## Common Errors
 
 - Missing metadata block
 - Missing or false required (`MUST`) attribute in metadata block
@@ -82,7 +85,7 @@ Please **do not** produce and submit a lot of content without prior local testin
   - to sidebar elements
   - to images
 
-# Authoring content
+# Authoring Content
 
 ## Docs-Page
 
@@ -167,9 +170,27 @@ It will only become visible in the sidebar once the article is linked in the res
 
 ## References
 
-- Literature / information references: additional bibliography block below
-- External links (tools, sites, platforms): as hyper-link
-- Knowledge base cross-references: relative path to *.md document, **BUT** replace the `.md` file extension with `.html`, as the markdown files are parsed to html.
+- **Literature / information references:** additional bibliography block below
+- **External links (tools, sites, platforms):** as hyper-link
+- **Knowledge base cross-references:** relative path to *.md document, **BUT** replace the `.md` file extension with `.html`, as the markdown files are parsed to html.
+
+### Relative Paths
+
+We SHOULD always try to use relative paths, as they are easier to maintain. Altough useful, they need a bit more finetuning, as there are several options.
+
+One of the major issues with relative paths is that during development the pages are accessed by `/`, for example `/docs/README.html`. Published they will be accessed by `/nfdi4plants.knowledgebase` (`/nfdi4plants.knowledgebase/docs/README.html`). In the following i will describe some ideas on how to deal with this:
+
+- **Basic relative paths:** These will looke like this: `[Test](/README.html)`. By starting with `/` we implcitly say "start at host". So in development it will start with `http://127.0.0.1:8080/`, in production it will start with `https://nfdi4plants.github.io/`. Because in production we also need would need `https://nfdi4plants.github.io/nfdi4plants.knowledgebase/`, this type of relative paths can create issues! ⚠️
+- **Relative paths in sidebar:** The sidebars actually check if you are currently in `dotnet fornax watch` mode. So you can use basic relative paths here. Example `
+    ```markdown
+    ```Fundamentals
+    # Introduction:/docs/Home.html
+    ```!
+    ```
+    `/docs/Home.html` will be parsed to `/nfdi4plants.knowledgebase/docs/Home.html`.
+- **Relative paths from current file:** These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". Example: `[Test](./ResearchDataManagement.html)`. Starting with `./` translates to "coming from the position of this file". We can even go up in the file hierarchy, like `[Test](./../README.html)`. This translates to "coming from the position of this file, go one folder higher and find README.html there".
+
+[Test](./../README.html)
 
 ## Structure and Format
 
