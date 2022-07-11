@@ -10,13 +10,17 @@ todo:
   - commenting in documents
 ---
 
+# Knowledge base contribution guide
+
+
 Your contribution to the DataPLANT knowledge base is highly appreciated.
 This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.
 <!-- most efficiently for you and the knowledge base curators -->
 
 <!-- TODO check link!! -->
-For smaller changes and suggestions, please refer to https://nfdi4plants.org/nfdi4plants.knowledgebase/content/docs/index.html.
+For smaller changes and suggestions, please refer to https://nfdi4plants.org/nfdi4plants.knowledgebase/.
 
+## Contents
 
 - [Introduction](#introduction)
 - [GitHub Routines](#github-routines)
