@@ -1,41 +1,86 @@
-# How-to "knowledge base"
+---
+layout: docs
+title: Knowledge base contribution guide
+published: 2022-07-08
+author_github: brilator
+add toc: false
+add sidebar: _sidebars/mainSidebar.md
+article_status: published
+todo:  
+  - commenting in documents
+---
 
 Your contribution to the DataPLANT knowledge base is highly appreciated.
-This *How-To* is intended to guide you on contributing via on of three general ways:
+This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.
+<!-- most efficiently for you and the knowledge base curators -->
 
-1. Raising an issue via Helpdesk or GitHub
-    - Recommend missing topics
-    - Minor inconsistencies
-    - Errors in training materials or tutorials
-2. Suggesting changes via GitHub fork and pull request
-    - Review and adapt parts of existing articles or tutorials
-3. Authoring new content
-    - Add new content to the knowledge base
+<!-- TODO check link!! -->
+For smaller changes and suggestions, please refer to https://nfdi4plants.org/nfdi4plants.knowledgebase/content/docs/index.html.
+
 
 - [Introduction](#introduction)
-  - [(Live) Testing](#live-testing)
-- [Authoring content](#authoring-content)
-    - [Docs-Page](#docs-page)
-    - [_sidebar](#sidebar)
-    - [_ignored](#ignored)
-    - [README.md](#readme-md)
-- [Content Design Principles](#content-design-principles)
-    - [References](#references)
-    - [Structure and Format](#structure-and-format)
-    - [Images](#images)
-    - [File Naming](#file-naming)
-    - [Addressing Readers](#addressing-readers)
-    - [Language](#language)
-- [Link Collection](#link-collection)
+- [GitHub Routines](#github-routines)
+- [Testing](#testing)
+- [Common errors](#common-errors)
+- [Docs-Page](#docs-page)
+- [_sidebar](#_sidebar)
+- [Markdown to HTML Rendering Rules](#markdown-to-html-rendering-rules)
+  - [Ignored Content](#ignored-content)
+  - [Visible or Hidden](#visible-or-hidden)
+- [References](#references)
+- [Structure and Format](#structure-and-format)
+- [Images](#images)
+- [File Name Requirements](#file-name-requirements)
+- [Addressing Readers](#addressing-readers)
+- [Language](#language)
 
-# Introduction
+
+## Introduction
 
 The DataPLANT knowledge base is built on [nfdi-web-components](https://nfdi4plants.github.io/web-components-docs/) and will fit all **markdown** content into this "framework".
 For a general introduction to writing markdown, see: [Markdown tutorial](tutorials/markdown.md) and references therein.
 
-# (Live) Testing
+## GitHub Routines
 
-Check out the main README.md in the root directory.
+> Note: This is not a full-fledged GitHub tutorial. Please refer to available tutorials online or contact the knowledge base curators.
+
+1. Sign up for a GitHub account.
+2. [Fork](https://github.com/nfdi4plants/nfdi4plants.github.io/fork) the knowledge base git repository.
+   
+   - This creates a copy of the knowledge base repository in your own GitHub account.
+   - In the top left, you will see that the repository is associated with your account (1) and forked from the main repository (2).
+   - You can either directly add or edit content using GitHub or clone (3) your repository to work on it locally.
+   - Be aware that your fork is not automatically updated, if the main repository updates. Make sure to update your fork regularly (especially before creating new content) by clicking "Fetch upstream" (4) in the top-right corner of your repository.
+   - If you cloned your repository locally, you also have to update the local clone (via "git pull").
+   
+  ![Git Routine](./img/contribution_git.png)
+
+3. You can work and make any changes in your own repository and commit + push them to your fork.
+
+4. Once you want to submit those changes to the main repository, you can open a "pull request" by clicking "Contribute" (5) in the top-right corner.
+   > Remember to "Fetch upstream" (4), if your fork is not up-to-date with the main repository.
+
+5. If edited or added existing content, please assign the original author during your pull-request to review your changes.
+  
+  - The github user name of the original author is stored in the yaml block on top under `author_github`
+  - During the pull-request mention the author via `@<author_github>`.
+
+## Testing
+
+Check out the README.md in the [root directory](../../README.md) for instructions on how to install the knowledge base locally on your machine.
+Following those instructions allows you to test and see how your changes come into play and wether everything renders correctly.
+
+It's highly recommended to *frequently* check your changes locally.
+Please **do not** produce and submit a lot of content without prior local testing.
+
+## Common errors
+
+- Missing metadata block
+- Missing or false required (`MUST`) attribute in metadata block
+- Using a layout in metadata block that does not exist
+- Wrong links
+  - to sidebar elements
+  - to images
 
 # Authoring content
 
@@ -102,13 +147,21 @@ To add a sidebar element to the page, use the codeblock syntax:
   - Only headers up to `###` are parsed. All header with more depth are parsed to `###`.
 - Tries to match active browser url to referenced ``href`` of any element to set active page.
 
-## _ignored
+## Markdown to HTML Rendering Rules
 
-Anything inside this folder will not be used to generate html pages.
+Every markdown document stored in `/nfdi4plants.knowledgebase/src/docs` or any subfolder (except `_ignored`) will be rendered to html and become publicly available once pushed to the main repository.
 
-## README.md
+### Ignored Content
 
-Any file named `README.md` (case sensitive!) will not be used to generate html pages.
+- Anything inside the folder `_ignored` will not be used to generate html pages.
+- This folder is intended for ideas and drafts that
+  - should not yet become available in the knowledge base
+  - should be under version control for discussion and reviewing
+
+### Visible or Hidden
+
+Although most markdown content will be rendered and published, it will not prominently be visible to all visitors.
+It will only become visible in the sidebar once the article is linked in the respective sidebar (typically `add sidebar: _sidebars/mainSidebar.md`)
 
 # Content Design Principles
 
@@ -120,31 +173,46 @@ Any file named `README.md` (case sensitive!) will not be used to generate html p
 
 ## Structure and Format
 
-- Max. 3 headline levels (## & ###)
+Try to avoid deep structures by using no more than two headline levels, i.e.
+
+<pre><code>```
+## Headline level 2 <!-- omit in toc -->
+### Headline level 3 <!-- omit in toc -->
+```</code></pre>
+
+Level 1 is automatically generated from the article's `title: `.
 
 ## Images
 
 - simple markdown logic (not HTML): `![name_of_image](path_to_image.png)`
 
-## File Naming
+## File Name Requirements
 
-Preferred: 
-- [snake_case](https://en.wikipedia.org/wiki/Snake_case) (lower_case_with_underscores) 
-- [PascalCase](https://techterms.com/definition/pascalcase) (UpperCase)
+File names:
+
+- MUST use the article's title for the filename, e.g.: DataManagementPlan.md -> `title: Data Management Plan`
+- MUST NOT contain special characters
+- MUST NOT contain spaces
+- MUST use [snake_case](https://en.wikipedia.org/wiki/Snake_case) (lower_case_with_underscores) OR [PascalCase](https://techterms.com/definition/pascalcase) (UpperCase)
+
+> Remember: Changing file names (and paths) means changing URLs and can easily lead to dead links.
 
 ## Addressing Readers
 
-- direct address ("you can", not "user can" or "one can...")
+We generally try to address users and readers directly.
+Use "you can", not "the user can" or "one can..."
 
 ## Language
 
-British English (?)
+British English
 
+> Note: If you work with Visual Studio Code -
+> Check out the extension "Code Spell Checker" https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
+> with British English ("cSpell.language": "en-GB") support.
 
 # Link Collection
 
 > Note: This is just a link collection for recurrent use in KB articles
-
 > Nothing automatised. Just copy/paste.
 
 ⚠️ Must be read from markdown, will not be shown in html.
