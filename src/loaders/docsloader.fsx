@@ -24,7 +24,7 @@ let loader (projectRoot: string) (siteContent: SiteContents) =
     printfn "%A" files
 
     let docs = 
-        let loadDocs (filePath:string) = Nfdi4Plants.Docs.loadFile(projectRoot,contentDir,filePath, productionBasePath = "nfdi4plants.knowledgebase")
+        let loadDocs (filePath:string) = Nfdi4Plants.Docs.loadFile(projectRoot, contentDir, filePath, productionBasePath = "nfdi4plants.knowledgebase")
         files 
         |> Array.map loadDocs
 
