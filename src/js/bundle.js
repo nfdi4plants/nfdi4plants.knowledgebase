@@ -10811,6 +10811,7 @@ body {
 
 `;
 const mainPageBaseUrl = "https://nfdi4plants.org/";
+const knowledgeBaseUrl = "https://nfdi4plants.github.io/nfdi4plants.knowledgebase/";
 const gitlabBaseUrl = "https://git.nfdi4plants.org/";
 var __defProp$8 = Object.defineProperty;
 var __getOwnPropDesc$8 = Object.getOwnPropertyDescriptor;
@@ -10875,19 +10876,9 @@ let Navbar = class extends s$1 {
             <a class=${this.url == gitlabBaseUrl ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${gitlabBaseUrl}">
               DataHUB
             </a>
-            <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link" href="${mainPageBaseUrl}content/docs/ResearchDataManagement.html">
-                Knowledge Base
-                </a>
-                <div class="navbar-dropdown is-active smooth-hover">
-                  <a class=${this.url == "${mainPageBaseUrl}content/docs/ResearchDataManagement.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/docs/ResearchDataManagement.html">
-                    Fundamentals
-                  </a>
-                  <a class=${this.url == "${mainPageBaseUrl}content/docs/AnnotatedResearchContext.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/docs/AnnotatedResearchContext.html">
-                    Integration within DataPLANT
-                  </a>
-                </div>
-              </div>
+            <a class=${this.url.includes(knowledgeBaseUrl, 0) ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${knowledgeBaseUrl}index.html">
+            Knowledge Base
+            </a>
           </div>
           <div class="navbar-end">
             <a class="navbar-item" href="https://helpdesk.nfdi4plants.org/" title="Helpdesk">
@@ -11059,7 +11050,7 @@ let Footer = class extends s$1 {
                         </div>
                         <div class="block">
                         <li>
-                            <a href="${mainPageBaseUrl}content/docs/ResearchDataManagement.html">
+                            <a href="${knowledgeBaseUrl}index.html">
                             Knowledge Base
                             </a>
                         </li>
