@@ -188,19 +188,12 @@ Level 1 is automatically generated from the article's `title: `.
 
 ## File Name Requirements
 
-File names MUST NOT contain
+File names:
 
-- special characters
-- spaces
-- abbreviations
-
-To make your file names more readable, it is RECOMMENDED to use
-
-- [snake_case](https://en.wikipedia.org/wiki/Snake_case) (lower_case_with_underscores)
-- [PascalCase](https://techterms.com/definition/pascalcase) (UpperCase)
-
-For easier findability, it is RECOMMENDED to use the article's title for the filename, e.g.:
-  DataManagementPlan.md -> `title: Data Management Plan`
+- MUST use the article's title for the filename, e.g.: DataManagementPlan.md -> `title: Data Management Plan`
+- MUST NOT contain special characters
+- MUST NOT contain spaces
+- MUST use [snake_case](https://en.wikipedia.org/wiki/Snake_case) (lower_case_with_underscores) OR [PascalCase](https://techterms.com/definition/pascalcase) (UpperCase)
 
 > Remember: Changing file names (and paths) means changing URLs and can easily lead to dead links.
 
