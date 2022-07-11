@@ -1,0 +1,158 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - Persistent Identifiers
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Fundamentals
+        </div>
+        <h1 slot="inner" href="/docs/ResearchDataManagement.html">Research Data Management</h1>
+<h1 slot="inner" href="/docs/FairDataPrinciples.html">FAIR Data Principles</h1>
+<h1 slot="inner" href="/docs/Metadata.html">Metadata</h1>
+<h1 slot="inner" href="/docs/DataSharing.html">Data Sharing</h1>
+<h1 slot="inner" href="/docs/DataPublications.html">Data Publications</h1>
+<h1 slot="inner" href="/docs/DataManagementPlan.html">Data Management Plan</h1>
+<h1 slot="inner" href="/docs/VersionControlGit.html">Version Control & Git</h1>
+<h1 slot="inner" href="/docs/PublicDataRepositories.html">Public Data Repositories</h1>
+<h1 slot="inner" href="/docs/PersistentIdentifiers.html">Persistent Identifiers</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Implementation within DataPLANT
+        </div>
+        <h1 slot="inner" href="/docs/AnnotatedResearchContext.html">Annotated Research Context</h1>
+<h2 slot="inner" href="/docs/QuickStart_arc.html">ARC QuickStart</h2>
+<h1 slot="inner" href="/docs/DataHub.html">DataHUB</h1>
+<!-- ```Training & Tutorials -->
+<!-- # Swate Tutorial Videos:/content/docs/swate_videos.html -->
+<!-- # Sync ARCs via GitHub Desktop:/content/docs/tutorials/github_desktop.html -->
+<!-- # Markdown:/content/docs/tutorials/markdown.html -->
+<!-- ``` -->
+
+      </nfdi-sidebar-element>
+      <h1 class="front-header">
+        Persistent Identifiers
+      </h1>
+      <i class="help">
+        last updated at 2022-05-09
+      </i>
+      <nfdi-toc></nfdi-toc>
+      <nfdi-h2 id="what-are-pids">What are PIDs?</nfdi-h2>
+<p>Persistent identifiers (PIDs) – as the name suggests – enable to persistently identify a resource.
+This may sound complicated, but consider a daily life example for PIDs: the International Standard Book Number (ISBN). The 13-digit ISBN code allows to unambiguously identify a book without having to specify book author, title or any other detail. Just as the ISBN alone helps you to find and order a book at a local retailer, PIDs enable you to easily find different entities or resources relevant to plant sciences. This can include publications, methods, samples or other experimental materials, software, and the datasets they produce or your contributions to the earlier.</p>
+<nfdi-h2 id="globally-unique-and-persistent">Globally unique and persistent</nfdi-h2>
+<p>Two major requirements of PIDs are the reason they contribute to virtually all aspects of <a href="./FairDataPrinciples.html">FAIR</a> data management. PIDs need to be <strong>globally unique</strong> and <strong>persistent</strong>, i.e. they stably resolve to identify the respective resource, also in the (foreseeable) future. Global uniqueness is nowadays technically achieved through use of the internet. In simple words: no web address may exist more than once. However, it is good to know that standard URLs (uniform resource locators, &quot;web addresses&quot;) cannot be considered PIDs. Sparing the technical details behind PIDs (see <a href="https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator" title="Wikipedia PURLs">PURLs</a> and <a href="https://en.wikipedia.org/wiki/Handle_System" title="Wikipedia Handles">Handles</a>), consider the homepage of an institute where a publication was originally stored at the URL<br />
+<code>https://plant-science-institute.com/research/publications/publication</code> and after homepage restructuring moved to<br />
+<code>https://plant-science-institute.com/about/outputs/publication</code>. The earlier URL becomes a &quot;dead link&quot;, impossible to be properly resolved and identify the linked publication, a phenomenon known as &quot;link rot&quot;.
+Although many PIDs resolve to a URL, taking the user to the proper location, they more importantly resolve to the content of the linked digital object (e.g. a dataset or publication). The example shows that the technical layer alone (global uniqueness through web addresses) is not enough to guarantee persistence and prevent &quot;link rot&quot;. This is achieved socially through defined policies and institutions: PIDs are actively curated and managed through registration services overseeing that the linked digital object is properly located.</p>
+<nfdi-h2 id="what-can-i-reference-with-a-pid-and-why-do-i-benefit-from-pids">What can I reference with a PID and why do I benefit from PIDs?</nfdi-h2>
+<p>Although basically any imaginable – both analog and digital – entity can be assigned a PID, we mostly focus on PIDs that identify digital objects or resources. However these digital resources themselves may be descriptors of analog entities such as items at museums, samples from a collection, artistic or musical outputs. The exact benefit and how a PID is assigned to a resource depends on the context: what type of entity is referenced with a PID.</p>
+<p>The two best known examples for PIDs used in science are <strong>DOI</strong> (Digital Object Identifier) and <strong>ORCID</strong> (Open Researcher and Contributor ID).
+The most established use of DOIs is to identify publications. Similar to an ISBN for a book, a DOI alone suffices to persistently link and refer to a publication, without naming the title, authors or journal. Usually DOIs are not actively requested by standard users, e.g. the authors submitting a manuscript to a journal or data to a repository, but they are assigned during the publication process, e.g. by the journal or data repository acting as the PID registration service.</p>
+<!-- As scientists, we benefit from DOI-referenced publications by better findability and more concise referencing (see also [kb-DataPublications]) -->
+<p>On the other hand, you, as a researcher, need to request an ORCID (once). ORCIDs concisely identify researchers independent of identical names between multiple researchers or name changes (e.g. due to wedding). They can actively be curated, e.g. to link and present all publication or other digital outputs.</p>
+<!-- In summary, PIDs help making data FAIR. A dataset that is persistently linked via a PID will be findable and accesible and thereby  -->
+<nfdi-h2 id="common-examples-for-pids">Common examples for PIDs</nfdi-h2>
+<nfdi-h3 id="people">People</nfdi-h3>
+<ul>
+<li>Open Researcher and Contributor ID (<a href="https://orcid.org/">ORCID</a>)</li>
+</ul>
+<nfdi-h3 id="digital-objects-and-publications">Digital objects and publications</nfdi-h3>
+<ul>
+<li>Digital Object Identifier (<a href="https://www.doi.org">DOI</a>)</li>
+<li>Persistent Identifiers for eResearch (<a href="https://www.pidconsortium.net">ePIC consortium</a>)</li>
+<li>Pubmed ID (<a href="https://pubmed.ncbi.nlm.nih.gov">PMID</a>)</li>
+</ul>
+<nfdi-h3 id="samples-and-resources">Samples and Resources</nfdi-h3>
+<ul>
+<li>Research Resource Identifiers (<a href="http://scicrunch.org/resources">RRIDs</a>)</li>
+</ul>
+<nfdi-h3 id="institutions">Institutions</nfdi-h3>
+<ul>
+<li>Research Organization Registry (<a href="https://ror.org">ROR</a>)</li>
+<li>Global Research Identifier Database (<a href="https://grid.ac">GRID</a>)</li>
+</ul>
+<!-- TODO ## How does DataPLANT support me in using PIDs?
+
+The following table gives an overview about DataPLANT tools and services related to sharing data. Follow the link in the first column for details.
+
+Name | Type | Tasks on metadata 
+----------------|-----------|------------------ 
+- invenio -->
+<nfdi-h2 id="sources-and-further-information">Sources and further information</nfdi-h2>
+<ul>
+<li><a href="https://www.doi.org/faq.html">Frequently Asked Questions about the DOI® System</a></li>
+</ul>
+<!-- Knowledge base Cross-references -->
+<!-- Reference links -->
+
+      <h3>
+        Dataplant Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+          directly
+        </a>
+        .
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/PersistentIdentifiers.md" style="margin-left: auto; display: block; width: 130px;">
+          ✏️ Edit this page
+        </a>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>

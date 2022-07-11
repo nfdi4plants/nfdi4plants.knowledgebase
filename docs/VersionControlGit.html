@@ -1,0 +1,157 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - Version control & Git
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Fundamentals
+        </div>
+        <h1 slot="inner" href="/docs/ResearchDataManagement.html">Research Data Management</h1>
+<h1 slot="inner" href="/docs/FairDataPrinciples.html">FAIR Data Principles</h1>
+<h1 slot="inner" href="/docs/Metadata.html">Metadata</h1>
+<h1 slot="inner" href="/docs/DataSharing.html">Data Sharing</h1>
+<h1 slot="inner" href="/docs/DataPublications.html">Data Publications</h1>
+<h1 slot="inner" href="/docs/DataManagementPlan.html">Data Management Plan</h1>
+<h1 slot="inner" href="/docs/VersionControlGit.html">Version Control & Git</h1>
+<h1 slot="inner" href="/docs/PublicDataRepositories.html">Public Data Repositories</h1>
+<h1 slot="inner" href="/docs/PersistentIdentifiers.html">Persistent Identifiers</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Implementation within DataPLANT
+        </div>
+        <h1 slot="inner" href="/docs/AnnotatedResearchContext.html">Annotated Research Context</h1>
+<h2 slot="inner" href="/docs/QuickStart_arc.html">ARC QuickStart</h2>
+<h1 slot="inner" href="/docs/DataHub.html">DataHUB</h1>
+<!-- ```Training & Tutorials -->
+<!-- # Swate Tutorial Videos:/content/docs/swate_videos.html -->
+<!-- # Sync ARCs via GitHub Desktop:/content/docs/tutorials/github_desktop.html -->
+<!-- # Markdown:/content/docs/tutorials/markdown.html -->
+<!-- ``` -->
+
+      </nfdi-sidebar-element>
+      <h1 class="front-header">
+        Version control & Git
+      </h1>
+      <i class="help">
+        last updated at 2022-05-09
+      </i>
+      <nfdi-toc></nfdi-toc>
+      <nfdi-h2 id="scientific-iteration-and-versioning">Scientific iteration and versioning</nfdi-h2>
+<p>Science is highly iterative. Most outcomes along the data life cycle (between an initial idea and the final publication, see also <a href="./ResearchDataManagement.html" title="Research Data Management">RDM</a>) are iterated through multiple cycles of design-test-repeat (e.g. laboratory experiments) or draft-review-publish (e.g. manuscripts) and mixes thereof. During these iterations multiple versions of the different outcomes are produced.<br />
+There are different options to keep track of these versions. The seemingly simplest option is to duplicate a file and rename it by attaching a version, e.g. <code>manuscript.txt</code> – <code>manuscript_v2.txt</code> – <code>manuscript_final.txt</code>. Although this may work acceptably for individual use it quickly becomes confusing when sharing with other researchers. Cloud services offer options to keep track of changes (what was changed and by whom) within collaborative, multi-party projects (see also <a href="./DataSharing.html" title="Data Sharing">Data Sharing</a>). Here, versioning is usually taken care of automatically by the cloud service with little to no control by the user. However, these services are helpful only for version histories of typical office data (documents, presentations) or small datasets and within low-complexity projects.</p>
+<p><img src="img/git_cloudServices.png" alt="Cloud Services" /></p>
+<nfdi-h2 id="git">Git</nfdi-h2>
+<p>A more sophisticated approach addressing the versioning needs in more complex projects originates from the field of software engineering. Software development builds on iterative design-test-repeat cycles, in which multiple versions of files (code, inputs and outputs) or directory structures emerge plus changing dependencies within (e.g. files) and outside (e.g. other software) of the project. So-called &quot;distributed version control systems&quot; (sometimes termed &quot;source control&quot; or &quot;revision control&quot;) help software developers to keep track of project changes, guaranteeing stable integrity of the software, ideally before it is rolled-out to the public. The most prominent and vastly established distributed version control system is called <a href="https://git-scm.com" title="Git">Git</a>.</p>
+<p>By taking chronological snapshots of a complete project (termed &quot;git repository&quot;) rather than single files, Git allows the user to &quot;go back in time&quot; to an earlier version of that project, e.g. when the software was properly functioning. This is further supported by options to make changes to multiple files at once in parallel, safe copies of the project (termed &quot;branch&quot; or &quot;fork&quot;) without breaking the original version. In contrast to the versioning of cloud services, active control over these snapshots lies in the user's hand, allowing to evolve a project with a well-documented version history paralleling the iterative steps.</p>
+<p><img src="img/git.png" alt="Git and Git Platforms" /></p>
+<nfdi-h2 id="git-platforms-github-and-gitlab">Git platforms: GitHub and GitLab</nfdi-h2>
+<p>Although Git could be used locally as a standalone tool, its full power is unfolded via git platforms such as <a href="https://github.com" title="GitHub">GitHub</a> and <a href="https://gitlab.com" title="GitLab">GitLab</a>. Similar to the typical cloud services for file sharing and collaboration, these platforms function as remote share-points for git repositories. They allow data access management (permission control) to share data privately with selected collaborators or the public. Individual contributions and changes by multiple collaborators can be tracked. On top of versioned data sharing, additional features, such as discussing and tracking project tasks and contributions, and wiki-based documentation render these git platforms very valuable for project and research (data) management. Consequently, they nowadays enjoy great popularity outside of software development.</p>
+<p>Software developers collaborate via git to develop a software project over time, add new features, improve software parts or embed them into other software projects, and keep it up to date. Likewise, git suits to track the evolution of your plant science project over time,  where analyses become more complex, build on top of each other or are embedded from other projects as more data from your own experiments or external resources is added. This is particularly the case, if experimental data is packaged in one git repository together with descriptive metadata, computations, analyses, and their outcomes as well as licenses for reuse.</p>
+<nfdi-h2 id="git-its-not-for-me">Git? - it's not for me...</nfdi-h2>
+<p>Yes, although we spare the technical details here, Git at first glance is complex and there is quite the learning curve for those who really urge to understand the inner workings. However, the complexity is also part of its strength to capture the parallel, multi-party, multifaceted strings of scientifically iterative projects. And more importantly, there is a growing set of helper tools, GUI solutions and integrations into other tools to ease the work with git.</p>
+<nfdi-h2 id="how-does-dataplant-support-me-to-version-control-my-data">How does DataPLANT support me to version control my data?</nfdi-h2>
+<p>The following table gives an overview about DataPLANT tools and services related to sharing data. Follow the link in the first column for details.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Tasks on data sharing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="https://github.com/nfdi4plants/arcCommander/wiki" title="ArcCommander Wiki">ArcCommander</a></strong></td>
+<td>Tool</td>
+<td><strong>Collect, structure and share:</strong> <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul></td>
+</tr>
+<tr>
+<td><strong><a href="./AnnotatedResearchContext.html" title="Annotated Research Context">ARC</a></strong>  <br> (Annotated Research Context)</td>
+<td>Standard</td>
+<td><strong>Structure:</strong> <ul><li>ARCs are git repositories</li><li>Package data with metadata in a defined format</li></ul></td>
+</tr>
+<tr>
+<td><strong><a href="./DataHub.html" title="DataPLANT DataHUB">DataHUB</a></strong></td>
+<td>Service</td>
+<td><strong>Share:</strong> <ul><li>DataPLANT-customized GitLab instance</li><li>Infrastructure-as-code: on-premise solution</li><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul></td>
+</tr>
+</tbody>
+</table>
+<!-- - Replace arcCommander link with KB link (once available) -->
+<nfdi-h3 id="register-with-dataplant">Register with DataPLANT</nfdi-h3>
+<p>In order to use the <a href="https://git.nfdi4plants.org" title="ARC DataHUB">DataHUB</a> and other DataPLANT infrastructure and services, please <a href="https://register.nfdi4plants.org/" title="DataPLANT Registration">sign up</a>: with DataPLANT.</p>
+<!-- Knowledge base Cross-references -->
+<!-- DataPLANT web links -->
+<!-- Reference web links -->
+
+      <h3>
+        Dataplant Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+          directly
+        </a>
+        .
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/VersionControlGit.md" style="margin-left: auto; display: block; width: 130px;">
+          ✏️ Edit this page
+        </a>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>

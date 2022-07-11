@@ -1,0 +1,263 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - FAIR Data Principles
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Fundamentals
+        </div>
+        <h1 slot="inner" href="/docs/ResearchDataManagement.html">Research Data Management</h1>
+<h1 slot="inner" href="/docs/FairDataPrinciples.html">FAIR Data Principles</h1>
+<h1 slot="inner" href="/docs/Metadata.html">Metadata</h1>
+<h1 slot="inner" href="/docs/DataSharing.html">Data Sharing</h1>
+<h1 slot="inner" href="/docs/DataPublications.html">Data Publications</h1>
+<h1 slot="inner" href="/docs/DataManagementPlan.html">Data Management Plan</h1>
+<h1 slot="inner" href="/docs/VersionControlGit.html">Version Control & Git</h1>
+<h1 slot="inner" href="/docs/PublicDataRepositories.html">Public Data Repositories</h1>
+<h1 slot="inner" href="/docs/PersistentIdentifiers.html">Persistent Identifiers</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Implementation within DataPLANT
+        </div>
+        <h1 slot="inner" href="/docs/AnnotatedResearchContext.html">Annotated Research Context</h1>
+<h2 slot="inner" href="/docs/QuickStart_arc.html">ARC QuickStart</h2>
+<h1 slot="inner" href="/docs/DataHub.html">DataHUB</h1>
+<!-- ```Training & Tutorials -->
+<!-- # Swate Tutorial Videos:/content/docs/swate_videos.html -->
+<!-- # Sync ARCs via GitHub Desktop:/content/docs/tutorials/github_desktop.html -->
+<!-- # Markdown:/content/docs/tutorials/markdown.html -->
+<!-- ``` -->
+
+      </nfdi-sidebar-element>
+      <h1 class="front-header">
+        FAIR Data Principles
+      </h1>
+      <i class="help">
+        last updated at 2022-05-19
+      </i>
+      <p>The FAIR Principles were published in 2016 to serve as guidelines for improving the <strong>F</strong>indability, <strong>A</strong>ccessibility, <strong>I</strong>nteroperability, and <strong>R</strong>eusability of scientific data. Albeit data can only be FAIR when provided with <a href="./Metadata.html" title="Metadata">metadata</a>, researchers rely on infrastructures to set a framework. Hence, FAIR(ness) addresses both stakeholders publishing data and those providing infrastructures, such as repositories.</p>
+<p>The ultimate goal of FAIR (data) is to drive science and the production of new datasets, as it allows researchers to build on existing comprehensively annotated studies. In plant biology, this, e.g., can accelerate the innovation process of generating new crop species that provide a higher nutritional content or show a superior heat tolerance, regarding global warming. Submitting your proteomics dataset for such a new species in a standardized file format to a repository, e.g. [PRIDE][EBI-PRIDE], would be one implementation of the FAIR Principles. While researchers need to be able to find and understand published datasets, computers need to handle (big) data depending on the intended use case. Thus, the FAIR principles also aim to improve the machine-readability of datasets for autonomous processing, while preserving human-readability.</p>
+<nfdi-h3 id="findable">Findable</nfdi-h3>
+<ul>
+<li><a href="#f1-metadata-are-assigned-a-globally-unique-and-persistent-identifier">F1. (Meta)data are assigned a globally unique and persistent identifier</a></li>
+<li><a href="#f2-data-are-described-with-rich-metadata-defined-by-r1-below">F2. Data are described with rich metadata (defined by R1 below)</a></li>
+<li><a href="#f3-metadata-clearly-and-explicitly-include-the-identifier-of-the-data-they-describe">F3. Metadata clearly and explicitly include the identifier of the data they describe</a></li>
+<li><a href="#f4-metadata-are-registered-or-indexed-in-a-searchable-resource">F4. (Meta)data are registered or indexed in a searchable resource</a></li>
+</ul>
+<nfdi-h3 id="accessible">Accessible</nfdi-h3>
+<ul>
+<li><a href="#a1-metadata-are-retrievable-by-their-identifier-using-a-standardised-communications-protocol">A1. (Meta)data are retrievable by their identifier using a standardised communications protocol</a>
+<ul>
+<li><a href="#a11-the-protocol-is-open-free-and-universally-implementable">A1.1 The protocol is open, free, and universally implementable</a></li>
+<li><a href="#a12-the-protocol-allows-for-an-authentication-and-authorisation-procedure-where-necessary">A1.2 The protocol allows for an authentication and authorisation procedure, where necessary</a></li>
+</ul>
+</li>
+<li><a href="#a2-metadata-are-accessible-even-when-the-data-are-no-longer-available">A2. Metadata are accessible, even when the data are no longer available</a></li>
+</ul>
+<nfdi-h3 id="interoperable">Interoperable</nfdi-h3>
+<ul>
+<li><a href="#i1-metadata-use-a-formal-accessible-shared-and-broadly-applicable-language-for-knowledge-representation">I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation</a></li>
+<li><a href="#i2-metadata-use-vocabularies-that-follow-fair-principles">I2. (Meta)data use vocabularies that follow FAIR principles</a></li>
+<li><a href="#i3-metadata-include-qualified-references-to-other-metadata">I3. (Meta)data include qualified references to other (meta)data</a></li>
+</ul>
+<nfdi-h3 id="reusable">Reusable</nfdi-h3>
+<ul>
+<li><a href="#r1-metadata-are-richly-described-with-a-plurality-of-accurate-and-relevant-attributes">R1. (Meta)data are richly described with a plurality of accurate and relevant attributes</a>
+<ul>
+<li><a href="#r11-metadata-are-released-with-a-clear-and-accessible-data-usage-license">R1.1. (Meta)data are released with a clear and accessible data usage license</a></li>
+<li><a href="#r12-metadata-are-associated-with-detailed-provenance">R1.2. (Meta)data are associated with detailed provenance</a></li>
+<li><a href="#r13-metadata-meet-domainrelevant-community-standards">R1.3. (Meta)data meet domain-relevant community standards</a></li>
+</ul>
+</li>
+</ul>
+<p><img src="img/FAIR.jpg" alt="FAIR Data Principles" /></p>
+<nfdi-h2 id="detailed-explanation">Detailed explanation</nfdi-h2>
+<nfdi-h3 id="findable-1">Findable</nfdi-h3>
+<p>The first step in (re)using data is to find them. Metadata and data should be easy to find for both humans and computers, including machine-readable metadata that are essential for automatic discovery of your datasets and services.</p>
+<nfdi-h4 id="f1.metadata-are-assigned-a-globally-unique-and-persistent-identifier">F1. (Meta)data are assigned a globally unique and persistent identifier</nfdi-h4>
+<p>A <a href="./PersistentIdentifiers.html" title="Persistent Identifiers">persistent identifier</a> (PID) is a long-lasting reference, typically used in the context of digital resources accessible over the internet, in this case your dataset. Globally unique and persistent identifiers allow finding your data in the first place. Continuous availability of the digital object is guaranteed by registry providers, which maintain the link to the actual dataset.</p>
+<p>A PID you have probably already heard of as most biological journals assign them to manuscripts, is the Digital Object Identifier (<a href="https://www.doi.org/" title="Digital Object Identifier">DOI</a>). Your personal 16-digit <a href="https://www.orcid.org/" title="ORCID">ORCID</a> or the accession number of your RNASeq dataset on GEO also represent examples for PIDs. An overview which scientific repositories assign which type of PID can be found at the registry of research data repositories (<a href="https://www.re3data.org/" title="re3data.org">re3data.org</a>).</p>
+<nfdi-h4 id="f2.data-are-described-with-rich-metadata-defined-by-r1-below">F2. Data are described with rich metadata (defined by R1 below)</nfdi-h4>
+<p>To enable (automatic) findability of your dataset, it is essential for humans and computers to understand its content. This is supported by comprehensive metadata in a standardized format about the dataset (how it was generated), its context (including associated data), or associated publications . This aspect goes hand in hand with making your data reusable and is therefore additionally addressed during metadata attributes (R1). As creator of the data, you should always keep in mind that it is best to provide as much information as possible, as others will generally profit from more input. Repository providers set the framework for this aspect by giving researchers the possibility to fully describe their datasets with proper metadata.</p>
+<nfdi-h4 id="f3.metadata-clearly-and-explicitly-include-the-identifier-of-the-data-they-describe">F3. Metadata clearly and explicitly include the identifier of the data they describe</nfdi-h4>
+<p>Your data need to be assigned with a globally unique and persistent identifier (F1). Accordingly, this identifier must be included in your metadata file to link the information to the corresponding data file. A requirement, which must be ensured by infrastructure providers. Even though your dataset might not have been published, and archived subsequently, the PID included in the metadata can link you as the responsible contact person for the dataset. Thereby, the PID can still help other researchers to find your data and you in increasing your reach.</p>
+<nfdi-h4 id="f4.metadata-are-registered-or-indexed-in-a-searchable-resource">F4. (Meta)data are registered or indexed in a searchable resource</nfdi-h4>
+<p>Repositories ensure that metadata of a submitted dataset are filed in a machine-readable format to enable indexing. The indices of your metadata are used to efficiently search and find datasets. Once again it needs to be highlighted, that you should equip your metadata with as much information as possible, as more input simplifies the searching process.</p>
+<nfdi-h3 id="accessible-1">Accessible</nfdi-h3>
+<p>Once users find your data, they need to know how they can access it, possibly including authentication and authorization.</p>
+<nfdi-h4 id="a1.metadata-are-retrievable-by-their-identifier-using-a-standardised-communications-protocol">A1. (Meta)data are retrievable by their identifier using a standardised communications protocol</nfdi-h4>
+<p>Standardized communication protocols, in combination with persistent identifiers, can guarantee access to your datasets, as links are maintained by the identifier providers. Examples of such protocols are http(s) or ftp(s). Accordingly, the combination of protocol and PID could look like <ins><a href="https://doi.org/10.1000/182">https://doi.org/10.1000/182</a></ins>. Protocols with poor documentation or elements that need human assistance should be avoided, as these lead to hurdles in accessing data. For highly sensitive data it can be an option to provide an email or telephone number of a contact person, as fully mechanized protocols cannot guarantee secure access.</p>
+<nfdi-h4 id="a1.1-the-protocol-is-open-free-and-universally-implementable">A1.1 The protocol is open, free, and universally implementable</nfdi-h4>
+<p>Infrastructure providers should use free (no-cost), open-source protocols. Thus, these protocols are globally implementable and can grant researchers around the globe access to the data, at least to the metadata. As researcher, you can maximize the reuse of your data if you share your data with repositories that follow these criteria. Avoid proprietary and non-standard protocols.</p>
+<nfdi-h4 id="a1.2-the-protocol-allows-for-an-authentication-and-authorisation-procedure-where-necessary">A1.2 The protocol allows for an authentication and authorisation procedure, where necessary</nfdi-h4>
+<p>At this point it is very important to differentiate between &quot;accessible&quot; and &quot;open&quot; data. The &quot;A&quot; in FAIR does not imply that you are required to grant free access for everyone to your data, but rather to specify conditions under which the data are accessible. Even protected data are FAIR, if requirements were defined on how the data can be retrieved. These must be processable automatically by a system, e.g. a repository, and can be especially necessary for sensitive data.</p>
+<p>An example for this case is a private and thereby, non-visible repository on <a href="./DataHub.html" title="DataPLANT DataHUB">GitLab</a>, accessible only to defined users. As owner of the GitLab repository, you can select these users and researchers simply identify using the GitLab sign-in. Accordingly, the mechanism to allow users to identify themselves, belongs to the responsibility of the infrastructure provider.</p>
+<nfdi-h4 id="a2.metadata-are-accessible-even-when-the-data-are-no-longer-available">A2. Metadata are accessible, even when the data are no longer available</nfdi-h4>
+<p>Metadata and actual datasets should be stored in separate files. In this way, your metadata can and should persist even when the dataset was archived or is no longer supported (due to evolving technologies), as storing metadata is generally easier and cheaper. Researchers and infrastructure providers can thereby ensure that a link to responsible contact persons remains available and that researchers do not waste time searching for the data. This will also help you as the data provider to maintain your reach.</p>
+<nfdi-h3 id="interoperable-1">Interoperable</nfdi-h3>
+<p>To make your data reusable, it needs to interoperate with applications or workflows for analysis, storage, and processing.</p>
+<nfdi-h4 id="i1.metadata-use-a-formal-accessible-shared-and-broadly-applicable-language-for-knowledge-representation">I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation</nfdi-h4>
+<p>Besides other researchers, with whom you want to discuss and exchange your (newest) discoveries, your data can be processed by machines. This should be possible without human assistance or any additional algorithms, tools, or mappings specifically developed for this use case. Interoperability typically means that each computer system at least has knowledge of the other system's data exchange formats. Hence, using a good data model, to describe and structure your (meta)data and using commonly used controlled vocabularies, ontologies, and thesauri, each with globally unique PIDs, strongly supports you in generating interoperable data that can be found automatically. This holds especially true for metadata, as they contextualize your dataset and in the ideal case avoid any kind of questions or confusion.</p>
+<!-- TODO
+- add link to kb ontology
+ -->
+<nfdi-h4 id="i2.metadata-use-vocabularies-that-follow-fair-principles">I2. (Meta)data use vocabularies that follow FAIR principles</nfdi-h4>
+<p>Ontologies and controlled vocabularies you use to describe your datasets need to be documented and resolvable using globally unique PIDs. These documentations include authors, definitions of terms and cross-references to other ontologies. Additionally, the documentation needs to be accessible and findable by anyone who uses the dataset, e.g., by a URL included in your metadata.</p>
+<nfdi-h4 id="i3.metadata-include-qualified-references-to-other-metadata">I3. (Meta)data include qualified references to other (meta)data</nfdi-h4>
+<p>Datasets are not static since they can evolve through extension by additional data or analyses by new algorithms. In such cases you generate newer versions of your data, which need to be stated as such by qualified references. Qualified references are cross-references that explain their intent, meaning in our example that characterizing V1 as the previous version of V2 of your dataset is a much more qualified reference than simply describing the two versions as related. Correspondingly, you should provide as many meaningful links as possible, preferably via PIDs,  between datasets that build on other datasets, additional datasets needed to complete a dataset, or complementary information stored in a different dataset.</p>
+<nfdi-h3 id="reusable-1">Reusable</nfdi-h3>
+<p>The ultimate goal of FAIR is to optimise the reuse of data. To achieve this, metadata and data should be well-described so that they can be replicated and/or combined in different settings.</p>
+<nfdi-h4 id="r1.metadata-are-richly-described-with-a-plurality-of-accurate-and-relevant-attributes">R1. (Meta)data are richly described with a plurality of accurate and relevant attributes</nfdi-h4>
+<p>Principle R1 is related to F2, but focuses on assisting humans and machines to decide if your data is actually useful in a particular context. This can be facilitated by giving as much standardized information as possible on the context under which and how the data was generated, e.g. &quot;Which specific strain was used?&quot; or &quot;Under which parameters was the mass spectrometer?&quot;, but also &quot;simple&quot; information as the manufacturer of an incubator or sensor.
+As author of your dataset you cannot expect other researchers to be familiar with your methods or domain. Therefore, you should be as generous as possible in providing metadata and even include information that seem irrelevant to you. As infrastructure provider you should give researchers the option to include a variety of metadata, including optional and free-text fields. Exemplary questions that need to be answered by the metadata are:</p>
+<ul>
+<li>Who created the data?</li>
+<li>When was the data created and/or published?</li>
+<li>How was the data generated?</li>
+<li>How was the data processed?</li>
+<li>Are there any limitations other users should be aware of?</li>
+<li>...</li>
+</ul>
+<nfdi-h4 id="r1.1.metadata-are-released-with-a-clear-and-accessible-data-usage-license">R1.1. (Meta)data are released with a clear and accessible data usage license</nfdi-h4>
+<p>You should clearly describe the usage rights for your data and include it in your metadata, as ambiguity could severely limit its reuse. Hence, the conditions under which the data can be used should be clear to machines and humans and can, e.g., be represented in form of a license. For scientific data, <a href="https://creativecommons.org/" title="Creative Commons">Creative Commons licenses</a> are commonly used.</p>
+<nfdi-h4 id="r1.2.metadata-are-associated-with-detailed-provenance">R1.2. (Meta)data are associated with detailed provenance</nfdi-h4>
+<p>Ultimately, this point means nothing more than &quot;where does your (meta)data originate from?&quot; This includes a human- and machine-readable description of persons who collected the data, the workflows used to generate your data, information on additional external data, but also different versions of the data, amongst others. This information must be linked via PIDs. Always keep in mind that other researchers want to be just as much acknowledged for their work as you.</p>
+<nfdi-h4 id="r1.3.metadata-meet-domain-relevant-community-standards">R1.3. (Meta)data meet domain-relevant community standards</nfdi-h4>
+<p>Researchers find it easiest to reuse data, if they are familiar with the type of data, file formats (well-established and sustainable), how the (meta)data is organized, and if commonly used vocabularies and ontologies are integrated.</p>
+<p>FAIR data should at least meet minimal information standards, such as MIAPPE, MIAME, or MIAPE (see also <a href="./Metadata.html" title="Metadata">metadata</a>). Other community standards may be less formal, but nevertheless, publishing (meta)data in a manner that increases its use(ability) for the community is the primary objective of FAIRness. DataPLANT aims at supporting FAIR data by providing a framework for the plant biology community.</p>
+<p>All of the above stated applies to data (or any digital object), metadata (information about that digital object), and infrastructure.</p>
+<nfdi-h2 id="how-does-dataplant-support-me-in-the-creation-of-fair-data">How does DataPLANT support me in the creation of FAIR data?</nfdi-h2>
+<p>The following table gives an overview about DataPLANT tools and services supporting you in FAIRification of your data. Follow the link in the first column for details.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Tasks on metadata</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="./AnnotatedResearchContext.html" title="Annotated Research Context">ARC</a></strong>  <br> (Annotated Research Context)</td>
+<td>Standard</td>
+<td><strong>Structure:</strong> <ul><li>Package data with metadata</li></ul></td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/nfdi4plants/Swate/wiki" title="Swate Wiki">Swate</a></strong> <br> (Swate Workflow Annotation Tool for Excel)</td>
+<td>Tool</td>
+<td><strong>Collect and structure:</strong> <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul></td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/nfdi4plants/arcCommander/wiki" title="ArcCommander Wiki">ArcCommander</a></strong></td>
+<td>Tool</td>
+<td><strong>Collect, structure and share:</strong> <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul></td>
+</tr>
+<tr>
+<td><strong><a href="./DataHub.html" title="DataPLANT DataHUB">DataHUB</a></strong></td>
+<td>Service</td>
+<td><strong>Share:</strong> <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul></td>
+</tr>
+<tr>
+<td><strong>Invenio</strong></td>
+<td>Service under construction</td>
+<td><strong>Share:</strong> <ul><li>Assign a DOI to an ARC</li></ul></td>
+</tr>
+<tr>
+<td><strong>Metadata registry</strong></td>
+<td>Service under construction</td>
+<td><strong>Share:</strong> <ul><li>Find ARC (meta)data</li></ul></td>
+</tr>
+<tr>
+<td><strong>Converters</strong></td>
+<td>Tool under construction</td>
+<td><strong>Curate:</strong> <ul><li>Harmonize and migrate between metadata schema</td>
+</tr>
+</tbody>
+</table>
+<!-- TODOs
+
+- Replace SWATE link with KB link (once available)
+- Replace arcCommander link with KB link (once available)
+- Add KB-converter link (once available)
+- Add KB-metadata_registry link (once available)
+-->
+<nfdi-h2 id="sources-and-further-information">Sources and further information</nfdi-h2>
+<ul>
+<li><a href="https://www.go-fair.org/fair-principles/">FAIR Principles</a></li>
+<li><a href="https://www.nature.com/articles/sdata201618">The FAIR Guiding Principles for scientific data management and stewardship</a></li>
+</ul>
+<!-- Knowledge base cross-references -->
+<!-- DataPLANT web links -->
+<!-- Reference web links -->
+
+      <h3>
+        Dataplant Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+          directly
+        </a>
+        .
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/FairDataPrinciples.md" style="margin-left: auto; display: block; width: 130px;">
+          ✏️ Edit this page
+        </a>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>

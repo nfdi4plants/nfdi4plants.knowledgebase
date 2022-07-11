@@ -1,0 +1,152 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - Data Management Plan
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Fundamentals
+        </div>
+        <h1 slot="inner" href="/docs/ResearchDataManagement.html">Research Data Management</h1>
+<h1 slot="inner" href="/docs/FairDataPrinciples.html">FAIR Data Principles</h1>
+<h1 slot="inner" href="/docs/Metadata.html">Metadata</h1>
+<h1 slot="inner" href="/docs/DataSharing.html">Data Sharing</h1>
+<h1 slot="inner" href="/docs/DataPublications.html">Data Publications</h1>
+<h1 slot="inner" href="/docs/DataManagementPlan.html">Data Management Plan</h1>
+<h1 slot="inner" href="/docs/VersionControlGit.html">Version Control & Git</h1>
+<h1 slot="inner" href="/docs/PublicDataRepositories.html">Public Data Repositories</h1>
+<h1 slot="inner" href="/docs/PersistentIdentifiers.html">Persistent Identifiers</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Implementation within DataPLANT
+        </div>
+        <h1 slot="inner" href="/docs/AnnotatedResearchContext.html">Annotated Research Context</h1>
+<h2 slot="inner" href="/docs/QuickStart_arc.html">ARC QuickStart</h2>
+<h1 slot="inner" href="/docs/DataHub.html">DataHUB</h1>
+<!-- ```Training & Tutorials -->
+<!-- # Swate Tutorial Videos:/content/docs/swate_videos.html -->
+<!-- # Sync ARCs via GitHub Desktop:/content/docs/tutorials/github_desktop.html -->
+<!-- # Markdown:/content/docs/tutorials/markdown.html -->
+<!-- ``` -->
+
+      </nfdi-sidebar-element>
+      <h1 class="front-header">
+        Data Management Plan
+      </h1>
+      <i class="help">
+        last updated at 2022-05-19
+      </i>
+      <nfdi-toc></nfdi-toc>
+      <p>A data management plan (DMP) structures the handling of research data in a scientific project and describes how to deal with the data during and after the end of the project. Many third-party funders, such as DFG, Horizon Europe, or BMBF expect you to provide information on the handling of research data as part of your funding application. Not only is a DMP by now mandatory for a DFG funding in plant sciences, it is always beneficial for your work on a research project.</p>
+<nfdi-h2 id="advantages-of-a-dmp">Advantages of a DMP</nfdi-h2>
+<p>A DMP allows you to track the current status of data within your project throughout its entire lifecycle. Thus, it is also helpful for the administration and to keep an overview. Scientific practice shows that you generally profit from the effort spent on better structuring, documentation, and organization of your research data, if you <a href="./FairDataPrinciples.html" title="FAIR Data principles">FAIRify</a> and thereby, lower the hurdles of reusing your datasets. Additional personnel, technical, or infrastructural resources required for compliance with your DMP can usually be claimed in third-party funding applications.</p>
+<ul>
+<li>Enables access to certain funding lines</li>
+<li>Facilitates documentation for reporting requirements</li>
+<li>Simplifies your own subsequent use of data by specifying clear structures</li>
+<li>Reduces the risk of data loss through defined data handling</li>
+<li>Improves knowledge management in the event of personnel changes</li>
+<li>Increases the number of citations through regulated reuse/licensing for third parties</li>
+</ul>
+<nfdi-h2 id="elements-of-a-dmp">Elements of a DMP</nfdi-h2>
+<p>When setting up your own data management plan it will be advantageous to know best practices. Many funders have specific requirements and templates for a DMP, which make it easier to follow these practices and the broad range of data management aspects. A DMP can contain the following information</p>
+<ul>
+<li>Project scope: A collection of objectives, sponsors, partners, project managers, and duration of your project.</li>
+<li>Data description: A description of the information to be gathered, the type and scale of the data that will be generated, and information on how data will be generated or collected.</li>
+<li>Existing data: A survey of existing data relevant to the project and a discussion of whether and how these data will be integrated.</li>
+<li>Format: Formats in which the data will be generated, maintained, and made available, including a justification for the procedural and archival appropriateness of those formats.</li>
+<li>Metadata: A description of the metadata to be provided along with the generated data, and a discussion of the metadata standards used.</li>
+<li>Storage and backup: Storage methods and backup procedures for the data, including the physical and virtual resources and facilities that will be used for the effective preservation and storage of the research data, incl. file naming and versioning as well as synchronization and collaborative working.</li>
+<li>Security: A description of technical and procedural protections for information, including confidential information, and how permissions, restrictions, and embargoes will be enforced.</li>
+<li>Resources: An overview of details of your anticipated costs for DMP compliance, including staff, metadata creation, digital curation services, and archiving.</li>
+<li>Responsibility: Names of the individuals responsible for data management in your research project.</li>
+<li>Intellectual property rights: Entities or persons who will hold the intellectual property (IP) rights to the data, and how IP will be protected if necessary. Any copyright constraints should be noted.</li>
+<li>Access and sharing: A description of how data will be shared, including access procedures, embargo periods, technical mechanisms for dissemination and whether access will be open or granted only to specific user groups. You should also provide a timeframe for data sharing and publishing.</li>
+<li>Archiving and preservation: The procedures in place or envisioned for long-term archiving and preservation of the data, including succession plans for your data in case the expected archiving entity is closed.</li>
+</ul>
+<nfdi-h2 id="dataplants-data-management-plan-generator">DataPLANT's Data Management Plan Generator</nfdi-h2>
+<p>You can write your DMPs offline by using the downloaded template of a funding agency in a text document format. However, a number of web-based DMP tools are currently available that greatly facilitate the process, as they use different templates.
+DataPLANT helps the community by providing a Data Management Plan Generator on their own with various building blocks, available under <a href="https://nfdi4plants.org/dmpg/">https://nfdi4plants.org/dmpg/</a>. The tool provides guidance throughout the writing process, as it is a living document. When opening the tool, users first need to select the type of document they want to generate: a detailed european DMP, a short proposal DMP, or a detailed guide through the project. Depending on the choice, the tool will restructure the document and point out errors when information is missing. The tool also gives the possibility to save the document in different formats during or after completion</p>
+<p><img src="img/DMPG.png" alt="DMPG" /></p>
+<nfdi-h2 id="sources-and-further-information">Sources and further information</nfdi-h2>
+<ul>
+<li><a href="https://nfdi4plants.org/dmpg/">DataPLANT's DMPG</a></li>
+<li><a href="https://www.dfg.de/en/research_funding/principles_dfg_funding/research_data/index.html">DFG: Handling of Research Data</a></li>
+<li><a href="https://www.forschungsdaten.info/themen/informieren-und-planen/datenmanagementplan/">forschungsdaten.info - Der Datenmanagementplan</a></li>
+<li><a href="https://rdmkit.elixir-europe.org/data_management_plan.html">RDMkit - Data management plan</a></li>
+<li><a href="https://www.icpsr.umich.edu/web/pages/datamanagement/dmp/elements.html">Elements of a DMP</a></li>
+</ul>
+<!-- Knowledge base cross-references -->
+<!-- DataPLANT web links -->
+<!-- Reference web links -->
+
+      <h3>
+        Dataplant Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+          directly
+        </a>
+        .
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/DataManagementPlan.md" style="margin-left: auto; display: block; width: 130px;">
+          ✏️ Edit this page
+        </a>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>
