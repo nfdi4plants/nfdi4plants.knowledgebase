@@ -8,35 +8,36 @@ add sidebar: _sidebars/mainSidebar.md
 article_status: published
 todo:  
   - commenting in documents
-  - explain references and links with clear examples
 ---
 
 # Knowledge base contribution guide
 
-Your contribution to the DataPLANT knowledge base is highly appreciated!
+
+Your contribution to the DataPLANT knowledge base is highly appreciated.
 This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.
+<!-- most efficiently for you and the knowledge base curators -->
 
-
+<!-- TODO check link!! -->
 For smaller changes and suggestions, please refer to https://nfdi4plants.org/nfdi4plants.knowledgebase/.
 
-## Contents  <!-- omit in toc -->
+## Contents
 
 - [Introduction](#introduction)
 - [GitHub Routines](#github-routines)
 - [Testing](#testing)
 - [Common errors](#common-errors)
-- [Authoring content](#authoring-content)
-  - [Docs-Page](#docs-page)
-  - [_sidebar](#_sidebar)
-  - [Markdown to HTML Rendering Rules](#markdown-to-html-rendering-rules)
-- [Content Design Principles](#content-design-principles)
-  - [References](#references)
-  - [Structure and Format](#structure-and-format)
-  - [Images](#images)
-  - [File Name Requirements](#file-name-requirements)
-  - [Addressing Readers](#addressing-readers)
-  - [Language](#language)
-- [Link Collection](#link-collection)
+- [Docs-Page](#docs-page)
+- [_sidebar](#_sidebar)
+- [Markdown to HTML Rendering Rules](#markdown-to-html-rendering-rules)
+  - [Ignored Content](#ignored-content)
+  - [Visible or Hidden](#visible-or-hidden)
+- [References](#references)
+- [Structure and Format](#structure-and-format)
+- [Images](#images)
+- [File Name Requirements](#file-name-requirements)
+- [Addressing Readers](#addressing-readers)
+- [Language](#language)
+
 
 ## Introduction
 
@@ -49,13 +50,13 @@ For a general introduction to writing markdown, see: [Markdown tutorial](tutoria
 
 1. Sign up for a GitHub account.
 2. [Fork](https://github.com/nfdi4plants/nfdi4plants.github.io/fork) the knowledge base git repository.
-
+   
    - This creates a copy of the knowledge base repository in your own GitHub account.
    - In the top left, you will see that the repository is associated with your account (1) and forked from the main repository (2).
    - You can either directly add or edit content using GitHub or clone (3) your repository to work on it locally.
    - Be aware that your fork is not automatically updated, if the main repository updates. Make sure to update your fork regularly (especially before creating new content) by clicking "Fetch upstream" (4) in the top-right corner of your repository.
    - If you cloned your repository locally, you also have to update the local clone (via "git pull").
-
+   
   ![Git Routine](./img/contribution_git.png)
 
 3. You can work and make any changes in your own repository and commit + push them to your fork.
@@ -85,9 +86,9 @@ Please **do not** produce and submit a lot of content without prior local testin
   - to sidebar elements
   - to images
 
-## Authoring content
+# Authoring content
 
-### Docs-Page
+## Docs-Page
 
 To add more documentation, add a markdown file to `/src/docs`. The file MUST start with a metadata block:
 
@@ -125,7 +126,7 @@ todo:
 - MAY contain `add sidebar: realtive\path\to\sidebar.md` to add the sidebar element to the page.
 - MAY contain **any** other metadata. The information will be read but will not affect the generated html.
 
-### _sidebar
+## _sidebar
 
 Sidebar files MUST be in any **subdirectory** of `/src/docs/_sidebars`. Sidebar markdown files must start with a metadata block:
 
@@ -150,31 +151,31 @@ To add a sidebar element to the page, use the codeblock syntax:
   - Only headers up to `###` are parsed. All header with more depth are parsed to `###`.
 - Tries to match active browser url to referenced ``href`` of any element to set active page.
 
-### Markdown to HTML Rendering Rules
+## Markdown to HTML Rendering Rules
 
 Every markdown document stored in `/nfdi4plants.knowledgebase/src/docs` or any subfolder (except `_ignored`) will be rendered to html and become publicly available once pushed to the main repository.
 
-#### Ignored Content
+### Ignored Content
 
 - Anything inside the folder `_ignored` will not be used to generate html pages.
 - This folder is intended for ideas and drafts that
   - should not yet become available in the knowledge base
   - should be under version control for discussion and reviewing
 
-#### Visible or Hidden
+### Visible or Hidden
 
 Although most markdown content will be rendered and published, it will not prominently be visible to all visitors.
 It will only become visible in the sidebar once the article is linked in the respective sidebar (typically `add sidebar: _sidebars/mainSidebar.md`)
 
-## Content Design Principles
+# Content Design Principles
 
-### References
+## References
 
 - Literature / information references: additional bibliography block below
 - External links (tools, sites, platforms): as hyper-link
 - Knowledge base cross-references: relative path to *.md document, **BUT** replace the `.md` file extension with `.html`, as the markdown files are parsed to html.
 
-### Structure and Format
+## Structure and Format
 
 Try to avoid deep structures by using no more than two headline levels, i.e.
 
@@ -185,11 +186,11 @@ Try to avoid deep structures by using no more than two headline levels, i.e.
 
 Level 1 is automatically generated from the article's `title: `.
 
-### Images
+## Images
 
 - simple markdown logic (not HTML): `![name_of_image](path_to_image.png)`
 
-### File Name Requirements
+## File Name Requirements
 
 File names:
 
@@ -200,12 +201,12 @@ File names:
 
 > Remember: Changing file names (and paths) means changing URLs and can easily lead to dead links.
 
-### Addressing Readers
+## Addressing Readers
 
 We generally try to address users and readers directly.
 Use "you can", not "the user can" or "one can..."
 
-### Language
+## Language
 
 British English
 
@@ -213,7 +214,7 @@ British English
 > Check out the extension "Code Spell Checker" https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
 > with British English ("cSpell.language": "en-GB") support.
 
-## Link Collection
+# Link Collection
 
 > Note: This is just a link collection for recurrent use in KB articles
 > Nothing automatised. Just copy/paste.
