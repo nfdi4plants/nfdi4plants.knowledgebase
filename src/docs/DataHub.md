@@ -46,7 +46,7 @@ A plant biologist's day-to-day routines circle around more than just data and co
 
 ### Register with DataPLANT
 
-In order to use the [DataHUB][hp-DataHUB] and other DataPLANT infrastructure and services, please [sign up][hp-Registration]: with DataPLANT.  
+In order to use the [DataHUB][hp-DataHUB] and other DataPLANT infrastructure and services, please [sign up][hp-Registration] with DataPLANT.  
 
 <!-- Knowledge base cross-references -->
 
