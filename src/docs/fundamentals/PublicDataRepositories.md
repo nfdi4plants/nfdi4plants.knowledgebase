@@ -92,13 +92,12 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledge base cross-references -->
 
-[kb-DataPublications]: ./DataPublications.html "Data Publication"
-[kb-FairDataPrinciples]: ./FairDataPrinciples.html "FAIR Data principles"
-[kb-Metadata]: ./Metadata.html "Metadata"
-[kb-PersistentIdentifiers]: ./PersistentIdentifiers.html  "Persistent Identifiers"
-<!-- [kb-arccommander]: ./ArcCommander.html "arcCommander" -->
-[kb-AnnotatedResearchContext]: ./AnnotatedResearchContext.html "Annotated Research Context"
-[kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
+[kb-DataPublications]: ../fundamentals/DataPublications.html "Data Publication"
+[kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
+[kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
+[kb-PersistentIdentifiers]: ../fundamentals/PersistentIdentifiers.html "Persistent Identifiers"
+[kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
+[kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 
 <!-- DataPLANT web links -->
 

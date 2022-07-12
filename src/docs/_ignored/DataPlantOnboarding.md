@@ -49,18 +49,18 @@ Within DataPLANT we communicate via Microsoft Teams. If you would like to join D
 
 <!-- Links to DataPLANT knowledge base (kb-) -->
 
-[kb-AnnotatedResearchContext]: ./AnnotatedResearchContext.html "Annotated Research Context"
-[kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
+[kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
+[kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 [kb-DataManagementPlan]: ../fundamentals/DataManagementPlan.html "Data Management Plan"
-[kb-DataPublications]: ./DataPublications.html "Data Publication"
-[kb-DataSharing]: ./DataSharing.html "Data Sharing"
-[kb-FairDataPrinciples]: ./FairDataPrinciples.html "FAIR Data principles"
-[kb-Metadata]: ./Metadata.html "Metadata"
-[kb-PersistentIdentifiers]: ./PersistentIdentifiers.html "Persistent Identifiers"
-[kb-PublicDataRepositories]: ./PublicDataRepositories.html "Repositories"
-[kb-QuickStart_arc]: ./QuickStart_arc.html "Quickstart ARC"
-[kb-ResearchDataManagement]: ./ResearchDataManagement.html "Research Data Management"
-[kb-VersionControlGit]: ./VersionControlGit.html "Version Control and Git"
+[kb-DataPublications]: ../fundamentals/DataPublications.html "Data Publication"
+[kb-DataSharing]: ../fundamentals/DataSharing.html "Data Sharing"
+[kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
+[kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
+[kb-PersistentIdentifiers]: ../fundamentals/PersistentIdentifiers.html "Persistent Identifiers"
+[kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
+[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+[kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
+[kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
 
 <!-- Links to DataPLANT Homepage (hp-) -->
 

@@ -58,7 +58,7 @@ DataPLANT helps the community by providing a Data Management Plan Generator on t
 
 <!-- Knowledge base cross-references -->
 
-[kb-FairDataPrinciples]: ./FairDataPrinciples.html "FAIR Data principles"
+[kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
 
 <!-- DataPLANT web links -->
 

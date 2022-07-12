@@ -168,12 +168,28 @@ Name | Type | Tasks on metadata
 - [FAIR Principles](https://www.go-fair.org/fair-principles/)
 - [The FAIR Guiding Principles for scientific data management and stewardship](https://www.nature.com/articles/sdata201618)
 
-<!-- Knowledge base cross-references -->
 
-[kb-Metadata]: ./Metadata.html "Metadata"
-[kb-PersistentIdentifiers]: ./PersistentIdentifiers.html  "Persistent Identifiers"
-[kb-AnnotatedResearchContext]: ./AnnotatedResearchContext.html "Annotated Research Context"
-[kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
+<!-- Links to DataPLANT knowledge base (kb-) -->
+
+<!-- kb-Fundamentals -->
+
+[kb-DataManagementPlan]: ../fundamentals/DataManagementPlan.html "Data Management Plan"
+[kb-DataPublications]: ../fundamentals/DataPublications.html "Data Publication"
+[kb-DataSharing]: ../fundamentals/DataSharing.html "Data Sharing"
+[kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
+[kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
+[kb-PersistentIdentifiers]: ../fundamentals/PersistentIdentifiers.html "Persistent Identifiers"
+[kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
+[kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
+[kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
+
+<!-- kb-Implementation -->
+[kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
+[kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
+
+<!-- kb-Tutorials -->
+[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+
 
 <!-- DataPLANT web links -->
 

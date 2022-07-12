@@ -13,30 +13,26 @@ todo:
 <br>
 Your contribution to the DataPLANT knowledge base is highly appreciated.
 This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.
-<!-- most efficiently for you and the knowledge base curators -->
 
-<!-- TODO check link!! -->
 For smaller changes and suggestions, please refer to [here](./home.html).
 
 
 - [Introduction](#introduction)
 - [GitHub Routines](#github-routines)
 - [Testing](#testing)
-- [Common errors](#common-errors)
-- [Authoring Content](#authoring-content)
-    - [Docs-Page](#docs-page)
-    - [_sidebar](#_sidebar)
-    - [Markdown to HTML Rendering Rules](#markdown-to-html-rendering-rules)
-        - [Ignored Content](#ignored-content)
-        - [Visible or Hidden](#visible-or-hidden)
-- [Content Design Principles](content-design-principles)
-    - [References](#references)
-    - [Structure and Format](#structure-and-format)
-    - [Images](#images)
-    - [File Name Requirements](#file-name-requirements)
-    - [Addressing Readers](#addressing-readers)
-    - [Language](#language)
-
+- [Common Errors](#common-errors)
+- [Docs-Page](#docs-page)
+- [_sidebar](#_sidebar)
+- [Markdown to HTML Rendering Rules](#markdown-to-html-rendering-rules)
+  - [Ignored Content](#ignored-content)
+  - [Visible or Hidden](#visible-or-hidden)
+- [References](#references)
+  - [Relative Paths](#relative-paths)
+- [Structure and Format](#structure-and-format)
+- [Images](#images)
+- [File Name Requirements](#file-name-requirements)
+- [Addressing Readers](#addressing-readers)
+- [Language](#language)
 
 ## Introduction
 
@@ -240,18 +236,25 @@ British English
 
 <!-- Links to DataPLANT knowledge base (kb-) -->
 
-[kb-AnnotatedResearchContext]: ./AnnotatedResearchContext.html "Annotated Research Context"
-[kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
-[kb-DataManagementPlan]: ./DataManagementPlan.html "Data Management Plan"
-[kb-DataPublications]: ./DataPublications.html "Data Publication"
-[kb-DataSharing]: ./DataSharing.html "Data Sharing"
-[kb-FairDataPrinciples]: ./FairDataPrinciples.html "FAIR Data principles"
-[kb-Metadata]: ./Metadata.html "Metadata"
-[kb-PersistentIdentifiers]: ./PersistentIdentifiers.html "Persistent Identifiers"
-[kb-PublicDataRepositories]: ./PublicDataRepositories.html "Repositories"
-[kb-QuickStart_arc]: ./QuickStart_arc.html "Quickstart ARC"
-[kb-ResearchDataManagement]: ./ResearchDataManagement.html "Research Data Management"
-[kb-VersionControlGit]: ./VersionControlGit.html "Git"
+<!-- kb-Fundamentals -->
+
+[kb-DataManagementPlan]: ../fundamentals/DataManagementPlan.html "Data Management Plan"
+[kb-DataPublications]: ../fundamentals/DataPublications.html "Data Publication"
+[kb-DataSharing]: ../fundamentals/DataSharing.html "Data Sharing"
+[kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
+[kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
+[kb-PersistentIdentifiers]: ../fundamentals/PersistentIdentifiers.html "Persistent Identifiers"
+[kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
+[kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
+[kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
+
+<!-- kb-Implementation -->
+[kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
+[kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
+
+<!-- kb-Tutorials -->
+[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+
 
 <!-- Links to DataPLANT Homepage (hp-) -->
 
@@ -261,23 +264,23 @@ British English
 
 <!-- Links to DataPLANT GitHub (gh-) -->
 
+[gh-DataPlant]: <https://github.com/nfdi4plants/ARC-specification/> "GitHub DataPLANT"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
 
 <!-- Links to external (ext-) sources -->
 
+[ext-github-join]: <https://github.com/join/> "Join GitHub"
+[ext-github-desktop]: <https://desktop.github.com/> "GitHub Desktop"
+[ext-git]: <https://git-scm.com/download/> "Git"
+[ext-git-lfs]: <https://git-lfs.github.com/> "Git-LFS"
+[ext-excel-online]: <https://www.microsoft.com/en-us/microsoft-365/excel> "Excel online"
+
+[ext-VSCode]: https://code.visualstudio.com/ "Visual Studio Code"
+
 [ext-galaxy]: <https://plants.usegalaxy.eu/> "Galaxy Plants"
 [ext-omero]: <https://www.openmicroscopy.org/omero/> "Omero"
 [ext-zenodo]: <https://zenodo.org/> "Zenodo"
 [ext-invenio]: <https://inveniosoftware.org/products/rdm/> "Invenio"
 [ext-DataJournals]: https://www.researchdata.uni-jena.de/en/information/data-publication "RDM Jena Data Journals"
-
-[ext-EBI-PRIDE]: https://www.ebi.ac.uk/pride/ "EBI PRIDE"
-[ext-re3data]: https://www.re3data.org/ "re3data.org"
-[ext-CreativeCommons]: https://creativecommons.org/ "Creative Commons"
-[ext-DublinCore]: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/> "DublinCore"
-[ext-DataCite]: <https://schema.datacite.org>  "DataCite"
-[fairsharing.org]: https://fairsharing.org/search?fairsharingRegistry=Standard "Standards at fairsharing.org"
-[doi]: https://www.doi.org/ "Digital Object Identifier"
-[orcid]: https://www.orcid.org/ "ORCID"

@@ -105,13 +105,13 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledge base cross-references -->
 
-[kb-VersionControlGit]: ./VersionControlGit.html "Git"
-[kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
-[kb-FairDataPrinciples]: ./FairDataPrinciples.html "FAIR Data principles"
-[kb-QuickStart_arc]: ./QuickStart_arc.html "Quickstart ARC"
-[kb-PublicDataRepositories]: ./PublicDataRepositories.html "Repositories"
-[kb-ResearchDataManagement]: ./ResearchDataManagement.html "Research Data Management"
-[kb-DataSharing]: ./DataSharing.html "Data Sharing"
+[kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
+[kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
+[kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
+[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+[kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
+[kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
+[kb-DataSharing]: ../fundamentals/DataSharing.html "Data Sharing"
 
 <!-- DataPLANT web links -->
 

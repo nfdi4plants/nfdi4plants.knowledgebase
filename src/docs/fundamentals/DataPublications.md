@@ -73,12 +73,28 @@ Name | Type | Tasks on metadata
 - [Making Data a First Class Scientific Output](https://doi.org/10.2218/ijdc.v7i1.218)
 - [The data paper](https://dx.doi.org/10.1186%2F1471-2105-12-S15-S2)
 
-<!-- Knowledge base cross-references -->
 
-[kb-Metadata]: ./Metadata.html "Metadata"
-[kb-PersistentIdentifiers]: ./PersistentIdentifiers.html  "Persistent Identifiers"
-[kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
-[kb-PublicDataRepositories]: ./PublicDataRepositories.html "Repositories"
+<!-- Links to DataPLANT knowledge base (kb-) -->
+
+<!-- kb-Fundamentals -->
+
+[kb-DataManagementPlan]: ../fundamentals/DataManagementPlan.html "Data Management Plan"
+[kb-DataPublications]: ../fundamentals/DataPublications.html "Data Publication"
+[kb-DataSharing]: ../fundamentals/DataSharing.html "Data Sharing"
+[kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
+[kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
+[kb-PersistentIdentifiers]: ../fundamentals/PersistentIdentifiers.html "Persistent Identifiers"
+[kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
+[kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
+[kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
+
+<!-- kb-Implementation -->
+[kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
+[kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
+
+<!-- kb-Tutorials -->
+[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+
 
 <!-- DataPLANT web links -->
 
