@@ -10811,7 +10811,7 @@ body {
 
 `;
 const mainPageBaseUrl = "https://nfdi4plants.org/";
-const knowledgeBaseUrl = "https://nfdi4plants.github.io/nfdi4plants.knowledgebase/";
+const knowledgeBaseUrl = "https://nfdi4plants.org/nfdi4plants.knowledgebase/";
 const gitlabBaseUrl = "https://git.nfdi4plants.org/";
 var __defProp$8 = Object.defineProperty;
 var __getOwnPropDesc$8 = Object.getOwnPropertyDescriptor;
