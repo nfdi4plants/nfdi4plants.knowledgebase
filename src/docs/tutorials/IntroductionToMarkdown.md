@@ -180,7 +180,7 @@ Although markdown is not perfect for collaboration on documents (e.g. manuscript
 
 ## Recommended VS code extensions
 
-There are many markdown extensions available for Visual Studio Code.  
+There are many markdown extensions available for [Visual Studio Code](https://code.visualstudio.com/).  
 These support you in
 
 - Creating a table, copy/pasting a table from excel
