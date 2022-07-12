@@ -53,30 +53,42 @@
           Fundamentals
         </div>
         <h1 slot="inner" href="/nfdi4plants.knowledgebase/index.html">Introduction</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/ResearchDataManagement.html">Research Data Management</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/FairDataPrinciples.html">FAIR Data Principles</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/Metadata.html">Metadata</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataSharing.html">Data Sharing</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataPublications.html">Data Publications</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataManagementPlan.html">Data Management Plan</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/VersionControlGit.html">Version Control & Git</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/PublicDataRepositories.html">Public Data Repositories</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/PersistentIdentifiers.html">Persistent Identifiers</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/ResearchDataManagement.html">Research Data Management</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/FairDataPrinciples.html">FAIR Data Principles</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/Metadata.html">Metadata</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataSharing.html">Data Sharing</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataPublications.html">Data Publications</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataManagementPlan.html">Data Management Plan</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/VersionControlGit.html">Version Control & Git</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">Public Data Repositories</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/PersistentIdentifiers.html">Persistent Identifiers</h1>
 
       </nfdi-sidebar-element>
       <nfdi-sidebar-element slot="sidebar" isActive="true">
         <div slot="title">
           Implementation within DataPLANT
         </div>
-        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/AnnotatedResearchContext.html">Annotated Research Context</h1>
-<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/QuickStart_arc.html">ARC QuickStart</h2>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataHub.html">DataHUB</h1>
-<!-- ```Training & Tutorials -->
-<!-- # Swate Tutorial Videos:/content/docs/swate_videos.html -->
-<!-- # Sync ARCs via GitHub Desktop:/content/docs/tutorials/github_desktop.html -->
-<!-- # Markdown:/content/docs/tutorials/markdown.html -->
-<!-- ``` -->
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">Annotated Research Context</h1>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arc.html">ARC QuickStart</h2>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/DataHub.html">DataHUB</h1>
+<!-- 
 
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Training & Tutorials
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arc.html">ARC QuickStart</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/swate_videos.html">Swate Tutorial Videos</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/DataHub_GitHubDesktop.html">Sync ARCs via GitHub Desktop</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/IntroductionToMarkdown.html">Markdown</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          -->
+        </div>
+        
       </nfdi-sidebar-element>
       <h1 class="front-header">
         Version control & Git
@@ -88,11 +100,11 @@
       <nfdi-h2 id="scientific-iteration-and-versioning">Scientific iteration and versioning</nfdi-h2>
 <p>Science is highly iterative. Most outcomes along the data life cycle (between an initial idea and the final publication, see also <a href="./ResearchDataManagement.html" title="Research Data Management">RDM</a>) are iterated through multiple cycles of design-test-repeat (e.g. laboratory experiments) or draft-review-publish (e.g. manuscripts) and mixes thereof. During these iterations multiple versions of the different outcomes are produced.<br />
 There are different options to keep track of these versions. The seemingly simplest option is to duplicate a file and rename it by attaching a version, e.g. <code>manuscript.txt</code> – <code>manuscript_v2.txt</code> – <code>manuscript_final.txt</code>. Although this may work acceptably for individual use it quickly becomes confusing when sharing with other researchers. Cloud services offer options to keep track of changes (what was changed and by whom) within collaborative, multi-party projects (see also <a href="./DataSharing.html" title="Data Sharing">Data Sharing</a>). Here, versioning is usually taken care of automatically by the cloud service with little to no control by the user. However, these services are helpful only for version histories of typical office data (documents, presentations) or small datasets and within low-complexity projects.</p>
-<p><img src="img/git_cloudServices.png" alt="Cloud Services" /></p>
+<p><img src="../img/git_cloudServices.png" alt="Cloud Services" /></p>
 <nfdi-h2 id="git">Git</nfdi-h2>
 <p>A more sophisticated approach addressing the versioning needs in more complex projects originates from the field of software engineering. Software development builds on iterative design-test-repeat cycles, in which multiple versions of files (code, inputs and outputs) or directory structures emerge plus changing dependencies within (e.g. files) and outside (e.g. other software) of the project. So-called &quot;distributed version control systems&quot; (sometimes termed &quot;source control&quot; or &quot;revision control&quot;) help software developers to keep track of project changes, guaranteeing stable integrity of the software, ideally before it is rolled-out to the public. The most prominent and vastly established distributed version control system is called <a href="https://git-scm.com" title="Git">Git</a>.</p>
 <p>By taking chronological snapshots of a complete project (termed &quot;git repository&quot;) rather than single files, Git allows the user to &quot;go back in time&quot; to an earlier version of that project, e.g. when the software was properly functioning. This is further supported by options to make changes to multiple files at once in parallel, safe copies of the project (termed &quot;branch&quot; or &quot;fork&quot;) without breaking the original version. In contrast to the versioning of cloud services, active control over these snapshots lies in the user's hand, allowing to evolve a project with a well-documented version history paralleling the iterative steps.</p>
-<p><img src="img/git.png" alt="Git and Git Platforms" /></p>
+<p><img src="../img/git_github_gitlab.png" alt="Git and Git Platforms" /></p>
 <nfdi-h2 id="git-platforms-github-and-gitlab">Git platforms: GitHub and GitLab</nfdi-h2>
 <p>Although Git could be used locally as a standalone tool, its full power is unfolded via git platforms such as <a href="https://github.com" title="GitHub">GitHub</a> and <a href="https://gitlab.com" title="GitLab">GitLab</a>. Similar to the typical cloud services for file sharing and collaboration, these platforms function as remote share-points for git repositories. They allow data access management (permission control) to share data privately with selected collaborators or the public. Individual contributions and changes by multiple collaborators can be tracked. On top of versioned data sharing, additional features, such as discussing and tracking project tasks and contributions, and wiki-based documentation render these git platforms very valuable for project and research (data) management. Consequently, they nowadays enjoy great popularity outside of software development.</p>
 <p>Software developers collaborate via git to develop a software project over time, add new features, improve software parts or embed them into other software projects, and keep it up to date. Likewise, git suits to track the evolution of your plant science project over time,  where analyses become more complex, build on top of each other or are embedded from other projects as more data from your own experiments or external resources is added. This is particularly the case, if experimental data is packaged in one git repository together with descriptive metadata, computations, analyses, and their outcomes as well as licenses for reuse.</p>
@@ -148,7 +160,7 @@ There are different options to keep track of these versions. The seemingly simpl
         .
       </div>
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/VersionControlGit.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/fundamentals/VersionControlGit.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>

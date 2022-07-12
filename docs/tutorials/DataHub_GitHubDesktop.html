@@ -53,30 +53,42 @@
           Fundamentals
         </div>
         <h1 slot="inner" href="/nfdi4plants.knowledgebase/index.html">Introduction</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/ResearchDataManagement.html">Research Data Management</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/FairDataPrinciples.html">FAIR Data Principles</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/Metadata.html">Metadata</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataSharing.html">Data Sharing</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataPublications.html">Data Publications</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataManagementPlan.html">Data Management Plan</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/VersionControlGit.html">Version Control & Git</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/PublicDataRepositories.html">Public Data Repositories</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/PersistentIdentifiers.html">Persistent Identifiers</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/ResearchDataManagement.html">Research Data Management</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/FairDataPrinciples.html">FAIR Data Principles</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/Metadata.html">Metadata</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataSharing.html">Data Sharing</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataPublications.html">Data Publications</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataManagementPlan.html">Data Management Plan</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/VersionControlGit.html">Version Control & Git</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">Public Data Repositories</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/PersistentIdentifiers.html">Persistent Identifiers</h1>
 
       </nfdi-sidebar-element>
       <nfdi-sidebar-element slot="sidebar" isActive="true">
         <div slot="title">
           Implementation within DataPLANT
         </div>
-        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/AnnotatedResearchContext.html">Annotated Research Context</h1>
-<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/QuickStart_arc.html">ARC QuickStart</h2>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataHub.html">DataHUB</h1>
-<!-- ```Training & Tutorials -->
-<!-- # Swate Tutorial Videos:/content/docs/swate_videos.html -->
-<!-- # Sync ARCs via GitHub Desktop:/content/docs/tutorials/github_desktop.html -->
-<!-- # Markdown:/content/docs/tutorials/markdown.html -->
-<!-- ``` -->
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">Annotated Research Context</h1>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arc.html">ARC QuickStart</h2>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/DataHub.html">DataHUB</h1>
+<!-- 
 
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Training & Tutorials
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arc.html">ARC QuickStart</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/swate_videos.html">Swate Tutorial Videos</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/DataHub_GitHubDesktop.html">Sync ARCs via GitHub Desktop</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/IntroductionToMarkdown.html">Markdown</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          -->
+        </div>
+        
       </nfdi-sidebar-element>
       <h1 class="front-header">
         How-To: Synchronize DataHUB ARCs via GitHub Desktop
@@ -85,7 +97,8 @@
         last updated at 2022-07-01
       </i>
       <nfdi-h2 id="goal">Goal</nfdi-h2>
-<p>Use <a href="https://desktop.github.com/">GitHub Desktop</a> to synchronize ARCs between the DataHUB and your local machine</p>
+<p>Use <a href="https://desktop.github.com/">GitHub Desktop</a> to synchronize ARCs between the DataHUB and your local machine.
+GitHub Desktop is a user-friendly software to help you synchronize (pull, commit, push, ...) and track and communicate changes (diff, pull request, ...) git repositories without memorizing and executing the git commands in your command line.</p>
 <blockquote>
 <p>Note: This authenticates your local GitHub Desktop to communicate with the DataHUB.
 You need to do this only once per machine (unless you specify an expiration date in step 4)</p>
@@ -103,22 +116,22 @@ You need to do this only once per machine (unless you specify an expiration date
 </ol>
 </li>
 </ol>
-<p><img src="img/datahub_accessToken.png" alt="Access Token" /></p>
+<p><img src="../img/datahub_accessToken.png" alt="Access Token" /></p>
 <ol start="5">
 <li>Click &quot;Create personal access token&quot;</li>
 <li><code>Your new personal access token</code> appears on top. Copy it somewhere for later use.</li>
 </ol>
-<p><img src="img/datahub_accessToken_02.png" alt="Access Token" /></p>
+<p><img src="../img/datahub_accessToken_02.png" alt="Access Token" /></p>
 <ol start="7">
 <li>Within the DataHUB, go to your ARC.</li>
 <li>Click on <code>Clone</code> and copy the HTTPS url, e.g. <code>https://git.nfdi4plants.org/&lt;yourUserName&gt;/&lt;yourArc&gt;.git</code></li>
 </ol>
-<p><img src="img/datahub_clone.png" alt="DataHUB Clone" /></p>
+<p><img src="../img/datahub_clone.png" alt="DataHUB Clone" /></p>
 <ol start="9">
 <li>Open GitHub Desktop.</li>
 <li>Select <code>File</code> → <code>Clone repository</code></li>
 </ol>
-<p><img src="img/githubDesktop_clone.png" alt="GitHub Desktop Clone" /></p>
+<p><img src="../img/githubDesktop_clone.png" alt="GitHub Desktop Clone" /></p>
 <ol start="11">
 <li>Select the tab <code>URL</code> on top.</li>
 <li>Paste the HTTPS link to your ARC (step 8) inside the URL field and select the destination folder, where your ARC will be stored locally. Click <code>Clone</code></li>
@@ -129,7 +142,13 @@ You need to do this only once per machine (unless you specify an expiration date
 </ol>
 </li>
 </ol>
-<p><img src="img/githubDesktop_accessToken.png" alt="GitHub Desktop Clone" /></p>
+<p><img src="../img/githubDesktop_accessToken.png" alt="GitHub Desktop Clone" /></p>
+<ol start="14">
+<li><p>Click <code>Save and Retry</code>.</p>
+</li>
+<li><p>Your ARC is now available in your GitHub Desktop.</p>
+</li>
+</ol>
 
       <h3>
         Dataplant Support
@@ -146,7 +165,7 @@ You need to do this only once per machine (unless you specify an expiration date
         .
       </div>
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/tutorials/github_desktop.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/tutorials/DataHub_GitHubDesktop.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>

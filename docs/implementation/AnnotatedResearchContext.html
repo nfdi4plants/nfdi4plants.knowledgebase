@@ -53,30 +53,42 @@
           Fundamentals
         </div>
         <h1 slot="inner" href="/nfdi4plants.knowledgebase/index.html">Introduction</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/ResearchDataManagement.html">Research Data Management</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/FairDataPrinciples.html">FAIR Data Principles</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/Metadata.html">Metadata</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataSharing.html">Data Sharing</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataPublications.html">Data Publications</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataManagementPlan.html">Data Management Plan</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/VersionControlGit.html">Version Control & Git</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/PublicDataRepositories.html">Public Data Repositories</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/PersistentIdentifiers.html">Persistent Identifiers</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/ResearchDataManagement.html">Research Data Management</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/FairDataPrinciples.html">FAIR Data Principles</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/Metadata.html">Metadata</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataSharing.html">Data Sharing</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataPublications.html">Data Publications</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataManagementPlan.html">Data Management Plan</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/VersionControlGit.html">Version Control & Git</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">Public Data Repositories</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/PersistentIdentifiers.html">Persistent Identifiers</h1>
 
       </nfdi-sidebar-element>
       <nfdi-sidebar-element slot="sidebar" isActive="true">
         <div slot="title">
           Implementation within DataPLANT
         </div>
-        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/AnnotatedResearchContext.html">Annotated Research Context</h1>
-<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/QuickStart_arc.html">ARC QuickStart</h2>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataHub.html">DataHUB</h1>
-<!-- ```Training & Tutorials -->
-<!-- # Swate Tutorial Videos:/content/docs/swate_videos.html -->
-<!-- # Sync ARCs via GitHub Desktop:/content/docs/tutorials/github_desktop.html -->
-<!-- # Markdown:/content/docs/tutorials/markdown.html -->
-<!-- ``` -->
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">Annotated Research Context</h1>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arc.html">ARC QuickStart</h2>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/DataHub.html">DataHUB</h1>
+<!-- 
 
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Training & Tutorials
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arc.html">ARC QuickStart</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/swate_videos.html">Swate Tutorial Videos</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/DataHub_GitHubDesktop.html">Sync ARCs via GitHub Desktop</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/IntroductionToMarkdown.html">Markdown</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          -->
+        </div>
+        
       </nfdi-sidebar-element>
       <h1 class="front-header">
         Annotated Research Context
@@ -95,7 +107,7 @@ To realize such a data centric approach for RDM in fundamental plant research, w
  -->
 <p>The ARC concept relies on a structure that partitions studies, assays, workflows, and runs for a granular reuse and development. Studies cover biological data, while assays cover experimental, and instrumental data, including their self-contained description using the ISA model. Similarly, workflows cover all computational steps of a study and contain application code, scripts, or any other executable description of an analysis ensuring highest flexibility for the scientists. To ensure persistence and reproducibility, these workflows comprise their own containerized running environment. The resulting data (runs) is linked to the workflows by a minimal Common Workflow Language file specifying the input and output of the process. The suggested structure for ARCs is a starting point for individual research projects and defines a framework for the organization, sharing, reuse, and evolution of research projects in a fashion familiar from open-source software development (see also <a href="./DataSharing.html" title="Data Sharing">Data Sharing</a>).</p>
 <p>This results in standardized RDM procedures being process-oriented, meaning that each tool realizes or supports the researcher in a distinct task within the RDM cycle. As a consequence, this enables the desired mixed mode of application, in which both human and machine can operate processes simultaneously or asynchronously while avoiding technological barriers.</p>
-<p><img src="img/ARC.jpg" alt="ARC" />
+<p><img src="../img/ARC.jpg" alt="ARC" />
 Figure 1: Basic ARC folder structure.</p>
 <nfdi-h2 id="technical-implementations">Technical implementations</nfdi-h2>
 <nfdi-h3 id="framework">Framework</nfdi-h3>
@@ -179,7 +191,7 @@ Git (LFS) also ensures integrity of your data, as all objects in git are accesse
 - Add KB-metadata_registry link (once available)
 - reference KB-DataFormats and link to it 
 -->
-<nfdi-h2 id="sources-and-further-informmation">Sources and further informmation</nfdi-h2>
+<nfdi-h2 id="sources-and-further-information">Sources and further information</nfdi-h2>
 <ul>
 <li><a href="https://isa-specs.readthedocs.io/en/latest/isamodel.html">ISA model</a></li>
 <li><a href="https://www.commonwl.org/">Common Workflow Language</a></li>
@@ -204,7 +216,7 @@ Git (LFS) also ensures integrity of your data, as all objects in git are accesse
         .
       </div>
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/AnnotatedResearchContext.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/AnnotatedResearchContext.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>

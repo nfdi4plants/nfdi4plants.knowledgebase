@@ -53,30 +53,42 @@
           Fundamentals
         </div>
         <h1 slot="inner" href="/nfdi4plants.knowledgebase/index.html">Introduction</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/ResearchDataManagement.html">Research Data Management</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/FairDataPrinciples.html">FAIR Data Principles</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/Metadata.html">Metadata</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataSharing.html">Data Sharing</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataPublications.html">Data Publications</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataManagementPlan.html">Data Management Plan</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/VersionControlGit.html">Version Control & Git</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/PublicDataRepositories.html">Public Data Repositories</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/PersistentIdentifiers.html">Persistent Identifiers</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/ResearchDataManagement.html">Research Data Management</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/FairDataPrinciples.html">FAIR Data Principles</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/Metadata.html">Metadata</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataSharing.html">Data Sharing</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataPublications.html">Data Publications</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataManagementPlan.html">Data Management Plan</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/VersionControlGit.html">Version Control & Git</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">Public Data Repositories</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/PersistentIdentifiers.html">Persistent Identifiers</h1>
 
       </nfdi-sidebar-element>
       <nfdi-sidebar-element slot="sidebar" isActive="true">
         <div slot="title">
           Implementation within DataPLANT
         </div>
-        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/AnnotatedResearchContext.html">Annotated Research Context</h1>
-<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/QuickStart_arc.html">ARC QuickStart</h2>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/DataHub.html">DataHUB</h1>
-<!-- ```Training & Tutorials -->
-<!-- # Swate Tutorial Videos:/content/docs/swate_videos.html -->
-<!-- # Sync ARCs via GitHub Desktop:/content/docs/tutorials/github_desktop.html -->
-<!-- # Markdown:/content/docs/tutorials/markdown.html -->
-<!-- ``` -->
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">Annotated Research Context</h1>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arc.html">ARC QuickStart</h2>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/DataHub.html">DataHUB</h1>
+<!-- 
 
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Training & Tutorials
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arc.html">ARC QuickStart</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/swate_videos.html">Swate Tutorial Videos</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/DataHub_GitHubDesktop.html">Sync ARCs via GitHub Desktop</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/IntroductionToMarkdown.html">Markdown</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          -->
+        </div>
+        
       </nfdi-sidebar-element>
       <h1 class="front-header">
         Introduction to Markdown
@@ -84,8 +96,31 @@
       <i class="help">
         last updated at 2022-07-06
       </i>
-      <nfdi-toc></nfdi-toc>
-      <nfdi-h2 id="what-is-markdown">What is Markdown?</nfdi-h2>
+      <ul>
+<li><a href="#what-is-markdown">What is Markdown?</a></li>
+<li><a href="#why-markdown">Why Markdown?</a></li>
+<li><a href="#is-there-anything-markdown-cant-do">Is there anything markdown can't do?</a></li>
+<li><a href="#markdown--code--data-management">Markdown &lt;&gt; Code &amp; Data Management?</a></li>
+<li><a href="#implementations-and-variants">Implementations and variants</a></li>
+<li><a href="#converting-markdown-files">Converting markdown files</a></li>
+<li><a href="#real-time-collaboration">Real-time collaboration</a></li>
+<li><a href="#tutorials-and-resources">Tutorials and resources</a></li>
+<li><a href="#recommended-vs-code-extensions">Recommended VS code extensions</a></li>
+<li><a href="#hands-on-markdown-tutorial">Hands-on markdown tutorial</a></li>
+<li><a href="#software">Software</a></li>
+<li><a href="#basic-syntax">Basic Syntax</a>
+<ul>
+<li><a href="#phrase-emphasis">Phrase Emphasis</a></li>
+<li><a href="#headers">Headers</a></li>
+<li><a href="#lists">Lists</a></li>
+<li><a href="#blockquotes">Blockquotes</a></li>
+<li><a href="#manual-line-breaks">Manual Line Breaks</a></li>
+<li><a href="#links">Links</a></li>
+<li><a href="#images">Images</a></li>
+</ul>
+</li>
+</ul>
+<nfdi-h2 id="what-is-markdown">What is Markdown?</nfdi-h2>
 <ul>
 <li>Markdown is a lightweight markup language
 <ul>
@@ -166,12 +201,6 @@
 </ul>
 </li>
 </ul>
-<nfdi-h2 id="hands-on-live-demo">Hands-on live demo</nfdi-h2>
-<p>Let's try it out with a few examples.</p>
-<p>→ <a href="./markdown_handsOn.md">Hands-on tutorial</a> ←</p>
-<blockquote>
-<p>Note: This is also to highlight cross-document linking.</p>
-</blockquote>
 <nfdi-h2 id="is-there-anything-markdown-cant-do">Is there anything markdown can't do?</nfdi-h2>
 <ul>
 <li>Beautiful, perfectly designed documents or slide shows
@@ -224,7 +253,7 @@ e.g. not every markdown parser understands</p>
 </blockquote>
 <nfdi-h2 id="converting-markdown-files">Converting markdown files</nfdi-h2>
 <p>In case you want to provide your markdown document in another file format, converters help you.
-The top recommendation: Pandoc![^3][Pandoc]</p>
+The top recommendation: Pandoc.<a id="fnref:3" href="#fn:3" class="footnote-ref"><sup>3</sup></a></p>
 <blockquote>
 <p>Note: pandoc conversion to pdf depends on a LaTeX Installation on your system.
 If you run into issues, see <a href="https://pandoc.org/installing.html">https://pandoc.org/installing.html</a> for details and recommendations.</p>
@@ -239,7 +268,6 @@ pandoc -t slidy -s --slide-level=2 --metadata pagetitle=markdown_intro README.md
 <ul>
 <li>HedgeDoc: <a href="https://hedgedoc.org">https://hedgedoc.org</a></li>
 <li>CodiMD <a href="https://github.com/hackmdio/codimd">https://github.com/hackmdio/codimd</a></li>
-<li><strong>CodiMD instance at HHU: <a href="https://pad.hhu.de">https://pad.hhu.de</a></strong></li>
 </ul>
 <nfdi-h2 id="tutorials-and-resources">Tutorials and resources</nfdi-h2>
 <ul>
@@ -283,6 +311,7 @@ These support you in</p>
 </ul>
 <!-- This is just to show references in markdown -->
 <!-- This is just to show you a footnote in markdown -->
+<hr />
 <nfdi-h2 id="hands-on-markdown-tutorial">Hands-on markdown tutorial</nfdi-h2>
 <blockquote>
 <p>mostly (adapted) from <a href="https://daringfireball.net/projects/markdown/dingus">https://daringfireball.net/projects/markdown/dingus</a></p>
@@ -300,21 +329,15 @@ These support you in</p>
 _This is also italic_   
 **This is bold**  
 __This is also bold__ </nfdi-code>
-<nfdi-code class="language-bash">### Headers
-
-# Header 1
+<nfdi-h3 id="headers">Headers</nfdi-h3>
+<nfdi-code class="language-bash"># Header 1
 
 ## Header 2
 
-###### Header 6
-```bash
-
-### Lists
-
-#### Ordered, without paragraphs:
-
-```bash
-1. Item 1 
+###### Header 6</nfdi-code>
+<nfdi-h3 id="lists">Lists</nfdi-h3>
+<nfdi-h4 id="ordered-without-paragraphs">Ordered, without paragraphs:</nfdi-h4>
+<nfdi-code class="language-bash">1. Item 1 
 2. Item 2
 4. Item 3</nfdi-code>
 <blockquote>
@@ -335,7 +358,8 @@ You can nest them:
 <p>Note: indentation matters</p>
 </blockquote>
 <nfdi-h3 id="blockquotes">Blockquotes</nfdi-h3>
-<nfdi-code class="language-bash">> Email-style angle brackets
+<pre><code>```
+> Email-style angle brackets
 > are used for blockquotes.
 
 > > And, they can be nested.
@@ -343,18 +367,23 @@ You can nest them:
 > #### Headers in blockquotes
 >
 > - You can quote a list.
-> - Etc.</nfdi-code>
+> - Etc.
+```</code></pre>
 <nfdi-h3 id="code-spans">Code Spans</nfdi-h3>
-<nfdi-code class="language-bash">- `<code>` spans are delimited by backticks.
+<pre><code>
+```
+- `&#60;code&#62;` spans are delimited by backticks.
 
-- You can include literal backticks like `` `this` ``.</nfdi-code>
+- You can include literal backticks like `` `this` ``.
+```
+</code></pre>
 <nfdi-h3 id="code-blocks">Code Blocks</nfdi-h3>
 <pre><code>```
 This is a code block
 ```</code></pre>
 <nfdi-h3 id="horizontal-rules">Horizontal Rules</nfdi-h3>
 <p>Three or more dashes or asterisks:</p>
-<nfdi-code class="language-bash">---
+<nfdi-code class="language-yml">---
 
 * * *
 
@@ -373,6 +402,7 @@ Violets are blue.</nfdi-code>
   [id]: http://example.com/  "Title"</nfdi-code>
 <nfdi-h3 id="images">Images</nfdi-h3>
 <nfdi-code class="language-bash">![alt text](../img/ARC.jpg "This is an ARC")</nfdi-code>
+<p><img src="../img/ARC.jpg" alt="alt text" title="This is an ARC" /></p>
 <div class="footnotes">
 <hr />
 <ol>
@@ -381,6 +411,9 @@ Violets are blue.</nfdi-code>
 </li>
 <li id="fn:2">
 <p>I am a footnote<a href="#fnref:2" class="footnote-back-ref">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://pandoc.org/">https://pandoc.org/</a> &quot;Pandoc&quot;<a href="#fnref:3" class="footnote-back-ref">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -400,7 +433,7 @@ Violets are blue.</nfdi-code>
         .
       </div>
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/tutorials/markdown.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/tutorials/IntroductionToMarkdown.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>
