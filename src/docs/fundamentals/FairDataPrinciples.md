@@ -41,7 +41,7 @@ The ultimate goal of FAIR (data) is to drive science and the production of new d
   - [R1.2. (Meta)data are associated with detailed provenance](#r12-metadata-are-associated-with-detailed-provenance)
   - [R1.3. (Meta)data meet domain-relevant community standards](#r13-metadata-meet-domainrelevant-community-standards)
 
-![FAIR Data Principles](img/FAIR.jpg)
+![FAIR Data Principles](../img/FAIR.jpg)
 
 ## Detailed explanation
 

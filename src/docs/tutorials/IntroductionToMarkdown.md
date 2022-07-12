@@ -5,10 +5,32 @@ published: 2022-07-06
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
-add toc: true
+add toc: false
 add sidebar: _sidebars/mainSidebar.md
 article_status: not published
 ---
+
+- [What is Markdown?](#what-is-markdown)
+- [Why Markdown?](#why-markdown)
+- [Is there anything markdown can't do?](#is-there-anything-markdown-cant-do)
+- [Markdown <> Code & Data Management?](#markdown--code--data-management)
+- [Implementations and variants](#implementations-and-variants)
+- [Converting markdown files](#converting-markdown-files)
+- [Real-time collaboration](#real-time-collaboration)
+- [Tutorials and resources](#tutorials-and-resources)
+- [Recommended VS code extensions](#recommended-vs-code-extensions)
+- [Hands-on markdown tutorial](#hands-on-markdown-tutorial)
+- [Software](#software)
+- [Basic Syntax](#basic-syntax)
+  - [Phrase Emphasis](#phrase-emphasis)
+  - [Headers](#headers)
+  - [Lists](#lists)
+  - [Blockquotes](#blockquotes)
+  - [Manual Line Breaks](#manual-line-breaks)
+  - [Links](#links)
+  - [Images](#images)
+
+
 
 ## What is Markdown?
 
@@ -85,14 +107,6 @@ article_status: not published
 - extendible
   - many programs and tools work with markdown
 
-## Hands-on live demo
-
-Let's try it out with a few examples.
-
--> [Hands-on tutorial](./markdown_handsOn.md) <-
-
-> Note: This is also to highlight cross-document linking.
-
 ## Is there anything markdown can't do?
 
 - Beautiful, perfectly designed documents or slide shows
@@ -133,7 +147,7 @@ Markdown can be used in many programming languages, platforms and frameworks, in
 ## Converting markdown files
 
 In case you want to provide your markdown document in another file format, converters help you.
-The top recommendation: Pandoc![^3][Pandoc]  
+The top recommendation: Pandoc.[^3]
 
 > Note: pandoc conversion to pdf depends on a LaTeX Installation on your system.
 > If you run into issues, see <https://pandoc.org/installing.html> for details and recommendations.
@@ -153,7 +167,6 @@ Although markdown is not perfect for collaboration on documents (e.g. manuscript
 
 - HedgeDoc: <https://hedgedoc.org>
 - CodiMD <https://github.com/hackmdio/codimd>
-- **CodiMD instance at HHU: <https://pad.hhu.de>**
 
 ## Tutorials and resources
 
@@ -191,8 +204,9 @@ These support you in
 
 [^1]: Integrated development environments
 [^2]: I am a footnote
-[^3]: <https://pandoc.org/>
+[^3]: <https://pandoc.org/> "Pandoc"
 
+----
 
 ## Hands-on markdown tutorial
 
@@ -217,15 +231,15 @@ _This is also italic_
 __This is also bold__ 
 ```
 
-```bash
 ### Headers
 
+```bash
 # Header 1
 
 ## Header 2
 
 ###### Header 6
-```bash
+```
 
 ### Lists
 
@@ -258,7 +272,7 @@ You can nest them:
 
 ### Blockquotes
 
-```bash
+<pre><code>```
 > Email-style angle brackets
 > are used for blockquotes.
 
@@ -268,15 +282,18 @@ You can nest them:
 >
 > - You can quote a list.
 > - Etc.
-```
+```</code></pre>
 
 ### Code Spans
 
-```bash
-- `<code>` spans are delimited by backticks.
+<pre><code>
+```
+- `&#60;code&#62;` spans are delimited by backticks.
 
 - You can include literal backticks like `` `this` ``.
 ```
+</code></pre>
+
 
 ### Code Blocks
 
@@ -288,7 +305,7 @@ This is a code block
 
 Three or more dashes or asterisks:
 
-```bash
+```yml
 ---
 
 * * *
@@ -321,3 +338,5 @@ Violets are blue.
 ```bash
 ![alt text](../img/ARC.jpg "This is an ARC")
 ```
+
+![alt text](../img/ARC.jpg "This is an ARC")

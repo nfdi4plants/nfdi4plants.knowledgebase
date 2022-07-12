@@ -7,8 +7,6 @@ add sidebar: _sidebars/mainSidebar.md
 article_status: published
 author: Dominik Brilhaus
 todo:
-  - replace link to github issue with that of kb repo
-  - add link to contribution guide (kb repo README)
 ---
 
 <br>
