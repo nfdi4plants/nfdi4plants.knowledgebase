@@ -41,7 +41,7 @@ This document is work in progress. If you experience any inconsistencies, have q
 - Most of this Quickstart (especially the section [ARC initialization](#arc-initialization)) is based on the command line (Windows: powershell; Linux and Mac: terminal).
 - The following picture shows exemplarily how to open a powershell on windows by entering *powershell* into the explorer path:  
 
-![Windows Powershell](img/windows_powershell.png)
+![Windows Powershell](../img/windows_powershell.png)
 
 - Text formatted as code blocks represents commands to copy/paste into the command line:
 
@@ -69,7 +69,7 @@ arc --version
 arc --help
 ```
 
-![ARC Commander help menu](img/arcCommander_help.png)
+![ARC Commander help menu](../img/arcCommander_help.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -90,7 +90,7 @@ arc init
 
 3. This will create the general ARC folder structure:
 
-![arc init](img/arcCommander_init.png)
+![arc init](../img/arcCommander_init.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -125,7 +125,7 @@ arc a add -s QuickStartStudy -a QuickStartAssay
 - The ARC Commander will add a subdirectories to the *studies* and *assays* folder. Your ARC should
     look similar to this now:  
 
-![subdirectories](img/arc_studies_assays.jpg)
+![subdirectories](../img/arc_studies_assays.jpg)
 
 - These steps can be repeated to add as many studies and assays as needed. Accordingly, more subdirectories will be added. Multiple assays can be grouped in a study when the same StudyIdentifier is used.
 
@@ -139,7 +139,7 @@ arc a add -s QuickStartStudy -a QuickStartAssay
 
 In case you are not a member of DataPLANT yet, please visit [sign up](<https://register.nfdi4plants.org>). Afterwards, you will be granted access to DataPLANT’s [DataHUB](<https://git.nfdi4plants.org>). The DataHUB allows you to share your ARCs with registered lab or project partners.
 
-![](img/dataplant_registration.png)
+![](../img/dataplant_registration.png)
 
 After successful registration, create and set an access token for ARC Commander synchronization using
 
@@ -149,7 +149,7 @@ arc remote accesstoken get -s https://git.nfdi4plants.org
 
 A window within your browser will open, asking for your DataPLANT Log In. In case you are already logged in, the browser will directly display a Success message to you:
 
-![](img/arcCommander_AccessToken.png)
+![](../img/arcCommander_AccessToken.png)
 
 ### ARC synchronization
 
@@ -176,11 +176,11 @@ arc sync -r https://git.nfdi4plants.org/martinkuhl/QuickStart
 arc sync -f
 ```
 
-![](img/arcCommander_syncForce.png)
+![](../img/arcCommander_syncForce.png)
 
 5. Check if the upload was successful by visiting your ARC at the respective URL in your browser.
 
-![](img/datahub_repository.png)
+![](../img/datahub_repository.png)
 
 >Note: Alternatively, you can first create a new blank repository in the [DataHUB](https://git.nfdi4plants.org) by clicking "New project/repository" in the plus drop down menu of the navigation bar on top. Afterwards, you can sync your local ARC to the respective repository by adapting the URL to the newly generated one. 
 
@@ -207,7 +207,7 @@ Briefly:
 - *Developers:* The choice for most people you want to invite to your ARC. Developers have read and write access, but cannot maintain the project on the DataHUB, e.g. inviting others.  
 - *Maintainers:* Gives the person the same rights as you have (except of removing you from your own project). This is recommended for inviting PIs or group leaders allowing them to add their group members for data upload or analysis to the project as well.
 
-![](img/datahub_members.png)
+![](../img/datahub_members.png)
 
 > Note: A detailed usage instruction for the ARC Commander can be found [here](https://github.com/nfdi4plants/arcCommander/wiki/Detailed-usage-instruction).
 
@@ -271,7 +271,7 @@ Fill the cells beneath each building block with ontology terms to note the respe
 
 3. If you could not find a fitting term, use free text input.
 
-![](img/swate_ontologyTermSearch2.png)
+![](../img/swate_ontologyTermSearch2.png)
 
 
 > Note: More information on how to use SWATE can be found [here](https://github.com/nfdi4plants/Swate/wiki).

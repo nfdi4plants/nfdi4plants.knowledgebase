@@ -3,26 +3,26 @@
 
 ```Fundamentals
 # Introduction:/index.html
-# Research Data Management:/docs/ResearchDataManagement.html
-# FAIR Data Principles:/docs/FairDataPrinciples.html
-# Metadata:/docs/Metadata.html
-# Data Sharing:/docs/DataSharing.html
-# Data Publications:/docs/DataPublications.html
-# Data Management Plan:/docs/DataManagementPlan.html
-# Version Control & Git:/docs/VersionControlGit.html
-# Public Data Repositories:/docs/PublicDataRepositories.html
-# Persistent Identifiers:/docs/PersistentIdentifiers.html
+# Research Data Management:/docs/fundamentals/ResearchDataManagement.html
+# FAIR Data Principles:/docs/fundamentals/FairDataPrinciples.html
+# Metadata:/docs/fundamentals/Metadata.html
+# Data Sharing:/docs/fundamentals/DataSharing.html
+# Data Publications:/docs/fundamentals/DataPublications.html
+# Data Management Plan:/docs/fundamentals/DataManagementPlan.html
+# Version Control & Git:/docs/fundamentals/VersionControlGit.html
+# Public Data Repositories:/docs/fundamentals/PublicDataRepositories.html
+# Persistent Identifiers:/docs/fundamentals/PersistentIdentifiers.html
 ```
 
 ```Implementation within DataPLANT
-# Annotated Research Context:/docs/AnnotatedResearchContext.html
-## ARC QuickStart:/docs/QuickStart_arc.html
-# DataHUB:/docs/DataHub.html
+# Annotated Research Context:/docs/implementation/AnnotatedResearchContext.html
+## ARC QuickStart:/docs/tutorials/QuickStart_arc.html
+# DataHUB:/docs/implementation/DataHub.html
 ```
-
 <!-- 
 ```Training & Tutorials
-# Swate Tutorial Videos:/content/docs/swate_videos.html
-# Sync ARCs via GitHub Desktop:/content/docs/tutorials/github_desktop.html
-# Markdown:/content/docs/tutorials/markdown.html
+# ARC QuickStart:/docs/tutorials/QuickStart_arc.html
+# Swate Tutorial Videos:/docs/tutorials/swate_videos.html
+# Sync ARCs via GitHub Desktop:/docs/tutorials/DataHub_GitHubDesktop.html
+# Markdown:/docs/tutorials/IntroductionToMarkdown.html
 ``` -->
