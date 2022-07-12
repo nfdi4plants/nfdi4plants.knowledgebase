@@ -207,7 +207,6 @@ These support you in
 [^3]: <https://pandoc.org/> "Pandoc"
 
 ----
-----
 
 ## Hands-on markdown tutorial
 
@@ -287,11 +286,14 @@ You can nest them:
 
 ### Code Spans
 
-<pre><code>```
-- `<code>` spans are delimited by backticks.
+<pre><code>
+```
+- `&#60;code&#62;` spans are delimited by backticks.
 
 - You can include literal backticks like `` `this` ``.
-```</code></pre>
+```
+</code></pre>
+
 
 ### Code Blocks
 
