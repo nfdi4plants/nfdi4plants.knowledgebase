@@ -25,7 +25,7 @@ A more sophisticated approach addressing the versioning needs in more complex pr
 
 By taking chronological snapshots of a complete project (termed "git repository") rather than single files, Git allows the user to "go back in time" to an earlier version of that project, e.g. when the software was properly functioning. This is further supported by options to make changes to multiple files at once in parallel, safe copies of the project (termed "branch" or "fork") without breaking the original version. In contrast to the versioning of cloud services, active control over these snapshots lies in the user's hand, allowing to evolve a project with a well-documented version history paralleling the iterative steps.
 
-![Git and Git Platforms](../img/git.png)
+![Git and Git Platforms](../img/git_github_gitlab.png)
 
 ## Git platforms: GitHub and GitLab
 

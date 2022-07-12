@@ -1,8 +1,7 @@
 ---
 layout: docs
 title: DataHUB
-published: 2022-05-12
-date: 2022-05-12
+published: 2022-07-12
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
@@ -28,6 +27,9 @@ The DataHUB is connected to a login system (single sign-on solution) that allows
 <figure><img src="../img/datahub_roles.png" alt="DataHUB Roles" style="width:100%"><figcaption align = "left">Inviting collaborators to your ARC</figcaption></figure>
 
 In this way, the DataHUB enables you to discuss your research data at different stages of the project and with varying collaborators. No matter if you just designed an experiment, already sampled your plants, ran the experiment or are in the middle of data wrangling or preparing a manuscript. For example, you can communicate metadata about your samples directly from the ARC with a core facility before submitting the samples for measurement to that facility and receive back measurement data and metadata directly into your ARC. Likewise, you could exchange assay data with a data scientist or computational biologist and receive back the results together with the documented workflow they employed. And everything without the need to download the data and finding a proper routine to share it.
+
+<figure><img src="../img/datahub_collaboration.png" alt="DataHUB Collaboration" style="width:100%"><figcaption align = "left">Contribution of different data types</figcaption></figure>
+
 The additional layer of access management on top of the ARC-stored research datasets enables you to keep track of contributions: what was done, why, when, and by whom. This transparent exchange not only spikes fruitful and targeted discussions. It also facilitates properly crediting individual contributions to the project, also persistently in the future as user accounts can be connected to ORCIDs (see [persistent identifiers][kb-PersistentIdentifiers]).
 Once your research project is ready for publication, you can either make the whole ARC publicly accessible directly via the DataHUB (with above-mentioned scopes) or publish a current snapshot of your ARC via the invenio RDM service to retrieve a [persistent identifier][kb-PersistentIdentifiers] to make it citable in [publications][kb-DataPublications].
 <!-- TODO: add link to invenio -->
