@@ -284,3 +284,12 @@ British English
 [ext-zenodo]: <https://zenodo.org/> "Zenodo"
 [ext-invenio]: <https://inveniosoftware.org/products/rdm/> "Invenio"
 [ext-DataJournals]: https://www.researchdata.uni-jena.de/en/information/data-publication "RDM Jena Data Journals"
+
+[ext-EBI-PRIDE]: https://www.ebi.ac.uk/pride/ "EBI PRIDE"
+[ext-re3data]: https://www.re3data.org/ "re3data.org"
+[ext-CreativeCommons]: https://creativecommons.org/ "Creative Commons"
+[ext-DublinCore]: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/> "DublinCore"
+[ext-DataCite]: <https://schema.datacite.org>  "DataCite"
+[fairsharing.org]: https://fairsharing.org/search?fairsharingRegistry=Standard "Standards at fairsharing.org"
+[doi]: https://www.doi.org/ "Digital Object Identifier"
+[orcid]: https://www.orcid.org/ "ORCID"
