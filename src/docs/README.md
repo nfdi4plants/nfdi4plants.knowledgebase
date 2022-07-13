@@ -21,18 +21,21 @@ For smaller changes and suggestions, please refer to [here](./home.html).
 - [GitHub Routines](#github-routines)
 - [Testing](#testing)
 - [Common Errors](#common-errors)
-- [Docs-Page](#docs-page)
-- [_sidebar](#_sidebar)
+- [Authoring Content](#authoring-content)
+  - [Docs-Page](#docs-page)
+  - [_sidebar](#_sidebar)
 - [Markdown to HTML Rendering Rules](#markdown-to-html-rendering-rules)
   - [Ignored Content](#ignored-content)
   - [Visible or Hidden](#visible-or-hidden)
-- [References](#references)
+- [Content Design Principles](#content-design-principles)
+  - [References](#references)
   - [Relative Paths](#relative-paths)
-- [Structure and Format](#structure-and-format)
-- [Images](#images)
+  - [Structure and Format](#structure-and-format)
+  - [Images](#images)
 - [File Name Requirements](#file-name-requirements)
 - [Addressing Readers](#addressing-readers)
 - [Language](#language)
+- [Link Collection](#link-collection)
 
 ## Introduction
 
@@ -81,9 +84,9 @@ Please **do not** produce and submit a lot of content without prior local testin
   - to sidebar elements
   - to images
 
-# Authoring Content
+## Authoring Content
 
-## Docs-Page
+### Docs-Page
 
 To add more documentation, add a markdown file to `/src/docs`. The file MUST start with a metadata block:
 
@@ -121,7 +124,7 @@ todo:
 - MAY contain `add sidebar: realtive\path\to\sidebar.md` to add the sidebar element to the page.
 - MAY contain **any** other metadata. The information will be read but will not affect the generated html.
 
-## _sidebar
+### _sidebar
 
 Sidebar files MUST be in any **subdirectory** of `/src/docs/_sidebars`. Sidebar markdown files must start with a metadata block:
 
@@ -162,9 +165,9 @@ Every markdown document stored in `/nfdi4plants.knowledgebase/src/docs` or any s
 Although most markdown content will be rendered and published, it will not prominently be visible to all visitors.
 It will only become visible in the sidebar once the article is linked in the respective sidebar (typically `add sidebar: _sidebars/mainSidebar.md`)
 
-# Content Design Principles
+## Content Design Principles
 
-## References
+### References
 
 - **Literature / information references:** additional bibliography block below
 - **External links (tools, sites, platforms):** as hyper-link
@@ -188,7 +191,7 @@ One of the major issues with relative paths is that during development the pages
 
 [Test](./../README.html)
 
-## Structure and Format
+### Structure and Format
 
 Try to avoid deep structures by using no more than two headline levels, i.e.
 
@@ -199,7 +202,7 @@ Try to avoid deep structures by using no more than two headline levels, i.e.
 
 Level 1 is automatically generated from the article's `title: `.
 
-## Images
+### Images
 
 - simple markdown logic (not HTML): `![name_of_image](path_to_image.png)`
 
@@ -227,7 +230,7 @@ British English
 > Check out the extension "Code Spell Checker" https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
 > with British English ("cSpell.language": "en-GB") support.
 
-# Link Collection
+## Link Collection
 
 > Note: This is just a link collection for recurrent use in KB articles
 > Nothing automatised. Just copy/paste.
