@@ -94,14 +94,27 @@ Name | Type | Tasks on metadata
 
 
 
-<!-- Knowledge base Cross-references -->
 
-[kb-FairDataPrinciples]: ./FairDataPrinciples.html "FAIR Data principles"
-[kb-DataSharing]: ./DataSharing.html "Data Sharing"
-[kb-PublicDataRepositories]: ./PublicDataRepositories.html "Repositories"
-[kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
-[kb-VersionControlGit]: ./VersionControlGit.html "Git"
-[kb-AnnotatedResearchContext]: ./AnnotatedResearchContext.html "Annotated Research Context"
+<!-- Links to DataPLANT knowledge base (kb-) -->
+
+<!-- kb-Fundamentals -->
+
+[kb-DataManagementPlan]: ../fundamentals/DataManagementPlan.html "Data Management Plan"
+[kb-DataPublications]: ../fundamentals/DataPublications.html "Data Publication"
+[kb-DataSharing]: ../fundamentals/DataSharing.html "Data Sharing"
+[kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
+[kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
+[kb-PersistentIdentifiers]: ../fundamentals/PersistentIdentifiers.html "Persistent Identifiers"
+[kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
+[kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
+[kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
+
+<!-- kb-Implementation -->
+[kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
+[kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
+
+<!-- kb-Tutorials -->
+[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
 
 <!-- DataPLANT weblinks -->
 

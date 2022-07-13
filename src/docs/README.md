@@ -13,30 +13,29 @@ todo:
 <br>
 Your contribution to the DataPLANT knowledge base is highly appreciated.
 This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.
-<!-- most efficiently for you and the knowledge base curators -->
 
-<!-- TODO check link!! -->
 For smaller changes and suggestions, please refer to [here](./home.html).
 
 
 - [Introduction](#introduction)
 - [GitHub Routines](#github-routines)
 - [Testing](#testing)
-- [Common errors](#common-errors)
+- [Common Errors](#common-errors)
 - [Authoring Content](#authoring-content)
-    - [Docs-Page](#docs-page)
-    - [_sidebar](#_sidebar)
-    - [Markdown to HTML Rendering Rules](#markdown-to-html-rendering-rules)
-        - [Ignored Content](#ignored-content)
-        - [Visible or Hidden](#visible-or-hidden)
-- [Content Design Principles](content-design-principles)
-    - [References](#references)
-    - [Structure and Format](#structure-and-format)
-    - [Images](#images)
-    - [File Name Requirements](#file-name-requirements)
-    - [Addressing Readers](#addressing-readers)
-    - [Language](#language)
-
+  - [Docs-Page](#docs-page)
+  - [_sidebar](#_sidebar)
+- [Markdown to HTML Rendering Rules](#markdown-to-html-rendering-rules)
+  - [Ignored Content](#ignored-content)
+  - [Visible or Hidden](#visible-or-hidden)
+- [Content Design Principles](#content-design-principles)
+  - [References](#references)
+  - [Relative Paths](#relative-paths)
+  - [Structure and Format](#structure-and-format)
+  - [Images](#images)
+- [File Name Requirements](#file-name-requirements)
+- [Addressing Readers](#addressing-readers)
+- [Language](#language)
+- [Link Collection](#link-collection)
 
 ## Introduction
 
@@ -85,9 +84,9 @@ Please **do not** produce and submit a lot of content without prior local testin
   - to sidebar elements
   - to images
 
-# Authoring Content
+## Authoring Content
 
-## Docs-Page
+### Docs-Page
 
 To add more documentation, add a markdown file to `/src/docs`. The file MUST start with a metadata block:
 
@@ -125,7 +124,7 @@ todo:
 - MAY contain `add sidebar: realtive\path\to\sidebar.md` to add the sidebar element to the page.
 - MAY contain **any** other metadata. The information will be read but will not affect the generated html.
 
-## _sidebar
+### _sidebar
 
 Sidebar files MUST be in any **subdirectory** of `/src/docs/_sidebars`. Sidebar markdown files must start with a metadata block:
 
@@ -166,9 +165,9 @@ Every markdown document stored in `/nfdi4plants.knowledgebase/src/docs` or any s
 Although most markdown content will be rendered and published, it will not prominently be visible to all visitors.
 It will only become visible in the sidebar once the article is linked in the respective sidebar (typically `add sidebar: _sidebars/mainSidebar.md`)
 
-# Content Design Principles
+## Content Design Principles
 
-## References
+### References
 
 - **Literature / information references:** additional bibliography block below
 - **External links (tools, sites, platforms):** as hyper-link
@@ -192,7 +191,7 @@ One of the major issues with relative paths is that during development the pages
 
 [Test](./../README.html)
 
-## Structure and Format
+### Structure and Format
 
 Try to avoid deep structures by using no more than two headline levels, i.e.
 
@@ -203,7 +202,7 @@ Try to avoid deep structures by using no more than two headline levels, i.e.
 
 Level 1 is automatically generated from the article's `title: `.
 
-## Images
+### Images
 
 - simple markdown logic (not HTML): `![name_of_image](path_to_image.png)`
 
@@ -231,7 +230,7 @@ British English
 > Check out the extension "Code Spell Checker" https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
 > with British English ("cSpell.language": "en-GB") support.
 
-# Link Collection
+## Link Collection
 
 > Note: This is just a link collection for recurrent use in KB articles
 > Nothing automatised. Just copy/paste.
@@ -240,18 +239,25 @@ British English
 
 <!-- Links to DataPLANT knowledge base (kb-) -->
 
-[kb-AnnotatedResearchContext]: ./AnnotatedResearchContext.html "Annotated Research Context"
-[kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
-[kb-DataManagementPlan]: ./DataManagementPlan.html "Data Management Plan"
-[kb-DataPublications]: ./DataPublications.html "Data Publication"
-[kb-DataSharing]: ./DataSharing.html "Data Sharing"
-[kb-FairDataPrinciples]: ./FairDataPrinciples.html "FAIR Data principles"
-[kb-Metadata]: ./Metadata.html "Metadata"
-[kb-PersistentIdentifiers]: ./PersistentIdentifiers.html "Persistent Identifiers"
-[kb-PublicDataRepositories]: ./PublicDataRepositories.html "Repositories"
-[kb-QuickStart_arc]: ./QuickStart_arc.html "Quickstart ARC"
-[kb-ResearchDataManagement]: ./ResearchDataManagement.html "Research Data Management"
-[kb-VersionControlGit]: ./VersionControlGit.html "Git"
+<!-- kb-Fundamentals -->
+
+[kb-DataManagementPlan]: ../fundamentals/DataManagementPlan.html "Data Management Plan"
+[kb-DataPublications]: ../fundamentals/DataPublications.html "Data Publication"
+[kb-DataSharing]: ../fundamentals/DataSharing.html "Data Sharing"
+[kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
+[kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
+[kb-PersistentIdentifiers]: ../fundamentals/PersistentIdentifiers.html "Persistent Identifiers"
+[kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
+[kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
+[kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
+
+<!-- kb-Implementation -->
+[kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
+[kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
+
+<!-- kb-Tutorials -->
+[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+
 
 <!-- Links to DataPLANT Homepage (hp-) -->
 
@@ -261,11 +267,20 @@ British English
 
 <!-- Links to DataPLANT GitHub (gh-) -->
 
+[gh-DataPlant]: <https://github.com/nfdi4plants/> "GitHub DataPLANT"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
 
 <!-- Links to external (ext-) sources -->
+
+[ext-github-join]: <https://github.com/join/> "Join GitHub"
+[ext-github-desktop]: <https://desktop.github.com/> "GitHub Desktop"
+[ext-git]: <https://git-scm.com/download/> "Git"
+[ext-git-lfs]: <https://git-lfs.github.com/> "Git-LFS"
+[ext-excel-online]: <https://www.microsoft.com/en-us/microsoft-365/excel> "Excel online"
+
+[ext-VSCode]: https://code.visualstudio.com/ "Visual Studio Code"
 
 [ext-galaxy]: <https://plants.usegalaxy.eu/> "Galaxy Plants"
 [ext-omero]: <https://www.openmicroscopy.org/omero/> "Omero"

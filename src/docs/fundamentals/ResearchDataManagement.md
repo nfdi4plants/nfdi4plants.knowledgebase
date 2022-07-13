@@ -80,17 +80,17 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledge base cross-references -->
 
-[kb-DataPublications]: ./DataPublications.html "Data Publication"
-[kb-DataManagementPlan]: ./DataManagementPlan.html "Data Management Plan"
-[kb-FairDataPrinciples]: ./FairDataPrinciples.html "FAIR Data principles"
-[kb-Metadata]: ./Metadata.html "Metadata"
-[kb-PersistentIdentifiers]: ./PersistentIdentifiers.html  "Persistent Identifiers"
-[kb-AnnotatedResearchContext]: ./AnnotatedResearchContext.html "Annotated Research Context"
-[kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
-[kb-ResearchDataManagement]: ./ResearchDataManagement.html "Research Data Management"
-[kb-DataSharing]: ./DataSharing.html "Data Sharing"
+[kb-DataPublications]: ../fundamentals/DataPublications.html "Data Publication"
+[kb-DataManagementPlan]: ../fundamentals/DataManagementPlan.html "Data Management Plan"
+[kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
+[kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
+[kb-PersistentIdentifiers]: ../fundamentals/PersistentIdentifiers.html "Persistent Identifiers"
+[kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
+[kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
+[kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
+[kb-DataSharing]: ../fundamentals/DataSharing.html "Data Sharing"
 [kb-VersionControlGit]: ./VersionControlGit.html "Git"
-[kb-PublicDataRepositories]: ./PublicDataRepositories.html "Repositories"
+[kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
 
 <!-- DataPLANT web links -->
 

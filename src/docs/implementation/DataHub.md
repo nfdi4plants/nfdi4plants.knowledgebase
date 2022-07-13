@@ -54,28 +54,53 @@ A plant biologist's day-to-day routines circle around more than just data and co
 
 In order to use the [DataHUB][hp-DataHUB] and other DataPLANT infrastructure and services, please [sign up][hp-Registration] with DataPLANT.  
 
-<!-- Knowledge base cross-references -->
+<!-- Links to DataPLANT knowledge base (kb-) -->
 
-[kb-DataPublications]: ./DataPublications.html "Data Publication"
-[kb-FairDataPrinciples]: ./FairDataPrinciples.html "FAIR Data principles"
-[kb-Metadata]: ./Metadata.html "Metadata"
-[kb-PersistentIdentifiers]: ./PersistentIdentifiers.html  "Persistent Identifiers"
-[kb-arccommander]: ./ArcCommander.html "arcCommander"
-[kb-AnnotatedResearchContext]: ./AnnotatedResearchContext.html "Annotated Research Context"
-[kb-ResearchDataManagement]: ./ResearchDataManagement.html "Research Data Management"
-[kb-DataSharing]: ./DataSharing.html "Data Sharing"
-[kb-VersionControlGit]: ./VersionControlGit.html "Git"
-[kb-PublicDataRepositories]: ./PublicDataRepositories.html "Repositories"
-<!-- [kb-WMS]: ./WMS.html -->
+<!-- kb-Fundamentals -->
 
-<!-- DataPLANT web links -->
+[kb-DataManagementPlan]: ../fundamentals/DataManagementPlan.html "Data Management Plan"
+[kb-DataPublications]: ../fundamentals/DataPublications.html "Data Publication"
+[kb-DataSharing]: ../fundamentals/DataSharing.html "Data Sharing"
+[kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
+[kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
+[kb-PersistentIdentifiers]: ../fundamentals/PersistentIdentifiers.html "Persistent Identifiers"
+[kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
+[kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
+[kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
+
+<!-- kb-Implementation -->
+[kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
+[kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
+
+<!-- kb-Tutorials -->
+[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+
+
+<!-- Links to DataPLANT Homepage (hp-) -->
 
 [hp-Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
-[hp-DataHUB]: <https://git.nfdi4plants.org> "DataHUB"
+[hp-DataHUB]: <https://git.nfdi4plants.org> "DataPLANT DataHUB"
+[hp-HelpDesk]: <https://helpdesk.nfdi4plants.org> "DataPLANT Help Desk"
+
+<!-- Links to DataPLANT GitHub (gh-) -->
+
+[gh-DataPlant]: <https://github.com/nfdi4plants/ARC-specification/> "GitHub DataPLANT"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
 
-<!-- Reference web links -->
+<!-- Links to external (ext-) sources -->
 
-[ext-galaxy]: https://plants.usegalaxy.eu/ "Galaxy Plants"
+[ext-github-join]: <https://github.com/join/> "Join GitHub"
+[ext-github-desktop]: <https://desktop.github.com/> "GitHub Desktop"
+[ext-git]: <https://git-scm.com/download/> "Git"
+[ext-git-lfs]: <https://git-lfs.github.com/> "Git-LFS"
+[ext-excel-online]: <https://www.microsoft.com/en-us/microsoft-365/excel> "Excel online"
+
+[ext-VSCode]: https://code.visualstudio.com/ "Visual Studio Code"
+
+[ext-galaxy]: <https://plants.usegalaxy.eu/> "Galaxy Plants"
+[ext-omero]: <https://www.openmicroscopy.org/omero/> "Omero"
+[ext-zenodo]: <https://zenodo.org/> "Zenodo"
+[ext-invenio]: <https://inveniosoftware.org/products/rdm/> "Invenio"
+[ext-DataJournals]: https://www.researchdata.uni-jena.de/en/information/data-publication "RDM Jena Data Journals"

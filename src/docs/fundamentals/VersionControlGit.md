@@ -54,12 +54,12 @@ In order to use the [DataHUB][hp-DataHUB] and other DataPLANT infrastructure and
 
 <!-- Knowledge base Cross-references -->
 
-[kb-FairDataPrinciples]: ./FairDataPrinciples.html "FAIR Data principles"
-[kb-Metadata]: ./Metadata.html "Metadata"
-[kb-AnnotatedResearchContext]: ./AnnotatedResearchContext.html "Annotated Research Context"
-[kb-ResearchDataManagement]: ./ResearchDataManagement.html "Research Data Management"
-[kb-DataSharing]: ./DataSharing.html "Data Sharing"
-[kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
+[kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
+[kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
+[kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
+[kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
+[kb-DataSharing]: ../fundamentals/DataSharing.html "Data Sharing"
+[kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 
 <!-- DataPLANT web links -->
 

@@ -68,14 +68,40 @@ Name | Type | Tasks on metadata
 
 - [Frequently Asked Questions about the DOI® System](<https://www.doi.org/faq.html>)
 
-<!-- Knowledge base Cross-references -->
+<!-- Links to DataPLANT knowledge base (kb-) -->
 
-[kb-FairDataPrinciples]: ./FairDataPrinciples.html
-[kb-Metadata]: ./Metadata.html
+<!-- kb-Fundamentals -->
 
-<!-- Reference links -->
-[hp-DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"
+[kb-DataManagementPlan]: ../fundamentals/DataManagementPlan.html "Data Management Plan"
+[kb-DataPublications]: ../fundamentals/DataPublications.html "Data Publication"
+[kb-DataSharing]: ../fundamentals/DataSharing.html "Data Sharing"
+[kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
+[kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
+[kb-PersistentIdentifiers]: ../fundamentals/PersistentIdentifiers.html "Persistent Identifiers"
+[kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
+[kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
+[kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
+
+<!-- kb-Implementation -->
+[kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
+[kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
+
+<!-- kb-Tutorials -->
+[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+
+
+<!-- Links to DataPLANT Homepage (hp-) -->
+
+[hp-Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
+[hp-DataHUB]: <https://git.nfdi4plants.org> "DataPLANT DataHUB"
+[hp-HelpDesk]: <https://helpdesk.nfdi4plants.org> "DataPLANT Help Desk"
+
+<!-- Links to DataPLANT GitHub (gh-) -->
+
+[gh-DataPlant]: <https://github.com/nfdi4plants/ARC-specification/> "GitHub DataPLANT"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
+[gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
+[gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
 
 [PURLs]: https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator "Wikipedia PURLs"
 [Handles]: https://en.wikipedia.org/wiki/Handle_System "Wikipedia Handles"
