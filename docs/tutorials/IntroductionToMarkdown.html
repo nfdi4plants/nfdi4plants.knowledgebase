@@ -139,26 +139,30 @@
 <p>Note: No worries, this is not about learning HTML. The following is just an example to show the idea of markup.</p>
 </blockquote>
 <p><strong>In HTML:</strong></p>
-<nfdi-code class="language-html"><html>
-  <body>    
-    <h3>headline level 3</h3>
-    <h4>headline level 4</h4>
-  </body>
-</html></nfdi-code>
+<nfdi-code class="language-html">&lt;html>
+  &lt;body>    
+    &lt;h3>headline level 3&lt;/h3>
+    &lt;h4>headline level 4&lt;/h4>
+  &lt;/body>
+&lt;/html>
+</nfdi-code>
 <p><strong>In Markdown:</strong></p>
 <nfdi-code>  ### headline level 3
-  #### headline level 4</nfdi-code>
+  #### headline level 4
+</nfdi-code>
 <p><strong>Rendered output:</strong></p>
 <nfdi-h3 id="headline-level-3">headline level 3 <!-- omit in toc --></nfdi-h3>
 <nfdi-h4 id="headline-level-4">headline level 4 <!-- omit in toc --></nfdi-h4>
 <p><strong>In HTML:</strong></p>
-<nfdi-code class="language-html">  <ul>
-    <li>List item 1</li>
-    <li><strong>List item 2 in bold</strong></li>
-  </ul></nfdi-code>
+<nfdi-code class="language-html">  &lt;ul>
+    &lt;li>List item 1&lt;/li>
+    &lt;li>&lt;strong>List item 2 in bold&lt;/strong>&lt;/li>
+  &lt;/ul>
+</nfdi-code>
 <p><strong>In Markdown:</strong></p>
 <nfdi-code>  - List item 1
-  - **List item 2 in bold**</nfdi-code>
+  - **List item 2 in bold**
+</nfdi-code>
 <p><strong>Rendered output:</strong></p>
 <ul>
 <li>List item 1</li>
@@ -262,7 +266,8 @@ If you run into issues, see <a href="https://pandoc.org/installing.html">https:/
 <nfdi-code class="language-bash">pandoc README.md -o markdown_intro.html   # ... markdown to .html
 pandoc README.md -o markdown_intro.pdf    # ... markdown to .pdf
 pandoc README.md -o markdown_intro.docx   # ... markdown to .docx
-pandoc -t slidy -s --slide-level=2 --metadata pagetitle=markdown_intro README.md -o markdown_intro_slides.html # ... markdown to html slides</nfdi-code>
+pandoc -t slidy -s --slide-level=2 --metadata pagetitle=markdown_intro README.md -o markdown_intro_slides.html # ... markdown to html slides
+</nfdi-code>
 <nfdi-h2 id="real-time-collaboration">Real-time collaboration</nfdi-h2>
 <p>Although markdown is not perfect for collaboration on documents (e.g. manuscripts), there are occasions where online collaboration in markdown format comes in very handy (meetings with people that understand MD, code-intensive classes, etc.).</p>
 <ul>
@@ -328,18 +333,21 @@ These support you in</p>
 <nfdi-code class="language-bash">*This is italic*   
 _This is also italic_   
 **This is bold**  
-__This is also bold__ </nfdi-code>
+__This is also bold__ 
+</nfdi-code>
 <nfdi-h3 id="headers">Headers</nfdi-h3>
 <nfdi-code class="language-bash"># Header 1
 
 ## Header 2
 
-###### Header 6</nfdi-code>
+###### Header 6
+</nfdi-code>
 <nfdi-h3 id="lists">Lists</nfdi-h3>
 <nfdi-h4 id="ordered-without-paragraphs">Ordered, without paragraphs:</nfdi-h4>
 <nfdi-code class="language-bash">1. Item 1 
 2. Item 2
-4. Item 3</nfdi-code>
+4. Item 3
+</nfdi-code>
 <blockquote>
 <p>Note the &quot;4.&quot; in md</p>
 </blockquote>
@@ -353,7 +361,8 @@ You can nest them:
     1. bunk
     2. bupkis
       - BELITTLER
-    3. burper</nfdi-code>
+    3. burper
+</nfdi-code>
 <blockquote>
 <p>Note: indentation matters</p>
 </blockquote>
@@ -387,11 +396,13 @@ This is a code block
 
 * * *
 
-- - - -</nfdi-code>
+- - - -
+</nfdi-code>
 <nfdi-h3 id="manual-line-breaks">Manual Line Breaks</nfdi-h3>
 <nfdi-code class="language-bash">End a line with two or more spaces:
 Roses are red,  
-Violets are blue.</nfdi-code>
+Violets are blue.
+</nfdi-code>
 <nfdi-h3 id="links">Links</nfdi-h3>
 <nfdi-code class="language-bash">- Inline:
   An [example](http://url.com/ "Title")
@@ -399,9 +410,11 @@ Violets are blue.</nfdi-code>
 - Reference-style labels (titles are optional):
   An [example][id]. Then, anywhere else in the doc, define the link:
 
-  [id]: http://example.com/  "Title"</nfdi-code>
+  [id]: http://example.com/  "Title"
+</nfdi-code>
 <nfdi-h3 id="images">Images</nfdi-h3>
-<nfdi-code class="language-bash">![alt text](../img/ARC.jpg "This is an ARC")</nfdi-code>
+<nfdi-code class="language-bash">![alt text](../img/ARC.jpg "This is an ARC")
+</nfdi-code>
 <p><img src="../img/ARC.jpg" alt="alt text" title="This is an ARC" /></p>
 <div class="footnotes">
 <hr />

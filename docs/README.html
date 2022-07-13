@@ -199,7 +199,8 @@ add sidebar: _sidebars/mainSidebar.md
 article_status: published
 todo:
     - update to include changes in latest tool version
----</nfdi-code>
+---
+</nfdi-code>
 <ul>
 <li>All keys (<code>layout</code>, <code>author</code>, etc.) are <strong>not</strong> case sensitive.</li>
 <li>All fields can be at ANY position.</li>
@@ -235,7 +236,8 @@ todo:
 <nfdi-code class="language-yml">---
 published: 2022-05-09
 article_status: published
----</nfdi-code>
+---
+</nfdi-code>
 <ul>
 <li>MAY contain <strong>any</strong> other metadata. The information will be read but will not affect the generated html.</li>
 </ul>
@@ -282,7 +284,8 @@ It will only become visible in the sidebar once the article is linked in the res
 <li><strong>Basic relative paths:</strong> These will looke like this: <code>[Test](/README.html)</code>. By starting with <code>/</code> we implcitly say &quot;start at host&quot;. So in development it will start with <code>http://127.0.0.1:8080/</code>, in production it will start with <code>https://nfdi4plants.github.io/</code>. Because in production we also need would need <code>https://nfdi4plants.github.io/nfdi4plants.knowledgebase/</code>, this type of relative paths can create issues! ⚠️</li>
 <li><strong>Relative paths in sidebar:</strong> The sidebars actually check if you are currently in <code>dotnet fornax watch</code> mode. So you can use basic relative paths here. Example `<nfdi-code class="language-markdown">```Fundamentals
 # Introduction:/docs/Home.html
-```!</nfdi-code>
+```!
+</nfdi-code>
 <code>/docs/Home.html</code> will be parsed to <code>/nfdi4plants.knowledgebase/docs/Home.html</code>.</li>
 <li><strong>Relative paths from current file:</strong> These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of &quot;Basic relative paths&quot;. Example: <code>[Test](./ResearchDataManagement.html)</code>. Starting with <code>./</code> translates to &quot;coming from the position of this file&quot;. We can even go up in the file hierarchy, like <code>[Test](./../README.html)</code>. This translates to &quot;coming from the position of this file, go one folder higher and find README.html there&quot;.</li>
 </ul>
