@@ -99,36 +99,36 @@
       <br>
 Your contribution to the DataPLANT knowledge base is highly appreciated.
 This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.
-<!-- most efficiently for you and the knowledge base curators -->
-<!-- TODO check link!! -->
 <p>For smaller changes and suggestions, please refer to <a href="./home.html">here</a>.</p>
 <ul>
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#github-routines">GitHub Routines</a></li>
 <li><a href="#testing">Testing</a></li>
-<li><a href="#common-errors">Common errors</a></li>
+<li><a href="#common-errors">Common Errors</a></li>
 <li><a href="#authoring-content">Authoring Content</a>
 <ul>
 <li><a href="#docs-page">Docs-Page</a></li>
 <li><a href="#_sidebar">_sidebar</a></li>
+</ul>
+</li>
 <li><a href="#markdown-to-html-rendering-rules">Markdown to HTML Rendering Rules</a>
 <ul>
 <li><a href="#ignored-content">Ignored Content</a></li>
 <li><a href="#visible-or-hidden">Visible or Hidden</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="content-design-principles">Content Design Principles</a>
+<li><a href="#content-design-principles">Content Design Principles</a>
 <ul>
 <li><a href="#references">References</a></li>
+<li><a href="#relative-paths">Relative Paths</a></li>
 <li><a href="#structure-and-format">Structure and Format</a></li>
 <li><a href="#images">Images</a></li>
+</ul>
+</li>
 <li><a href="#file-name-requirements">File Name Requirements</a></li>
 <li><a href="#addressing-readers">Addressing Readers</a></li>
 <li><a href="#language">Language</a></li>
-</ul>
-</li>
+<li><a href="#link-collection">Link Collection</a></li>
 </ul>
 <nfdi-h2 id="introduction">Introduction</nfdi-h2>
 <p>The DataPLANT knowledge base is built on <a href="https://nfdi4plants.github.io/web-components-docs/">nfdi-web-components</a> and will fit all <strong>markdown</strong> content into this &quot;framework&quot;.
@@ -183,8 +183,8 @@ Please <strong>do not</strong> produce and submit a lot of content without prior
 </ul>
 </li>
 </ul>
-<nfdi-h1 id="authoring-content">Authoring Content</nfdi-h1>
-<nfdi-h2 id="docs-page">Docs-Page</nfdi-h2>
+<nfdi-h2 id="authoring-content">Authoring Content</nfdi-h2>
+<nfdi-h3 id="docs-page">Docs-Page</nfdi-h3>
 <p>To add more documentation, add a markdown file to <code>/src/docs</code>. The file MUST start with a metadata block:</p>
 <!--used yml here as code language for nice color syntax-->
 <nfdi-code class="language-yml">---
@@ -230,7 +230,7 @@ todo:
 <li>MAY contain <code>add sidebar: realtive\path\to\sidebar.md</code> to add the sidebar element to the page.</li>
 <li>MAY contain <strong>any</strong> other metadata. The information will be read but will not affect the generated html.</li>
 </ul>
-<nfdi-h2 id="sidebar">_sidebar</nfdi-h2>
+<nfdi-h3 id="sidebar">_sidebar</nfdi-h3>
 <p>Sidebar files MUST be in any <strong>subdirectory</strong> of <code>/src/docs/_sidebars</code>. Sidebar markdown files must start with a metadata block:</p>
 <nfdi-code class="language-yml">---
 published: 2022-05-09
@@ -268,8 +268,8 @@ article_status: published
 <nfdi-h3 id="visible-or-hidden">Visible or Hidden</nfdi-h3>
 <p>Although most markdown content will be rendered and published, it will not prominently be visible to all visitors.
 It will only become visible in the sidebar once the article is linked in the respective sidebar (typically <code>add sidebar: _sidebars/mainSidebar.md</code>)</p>
-<nfdi-h1 id="content-design-principles">Content Design Principles</nfdi-h1>
-<nfdi-h2 id="references">References</nfdi-h2>
+<nfdi-h2 id="content-design-principles">Content Design Principles</nfdi-h2>
+<nfdi-h3 id="references">References</nfdi-h3>
 <ul>
 <li><strong>Literature / information references:</strong> additional bibliography block below</li>
 <li><strong>External links (tools, sites, platforms):</strong> as hyper-link</li>
@@ -287,14 +287,14 @@ It will only become visible in the sidebar once the article is linked in the res
 <li><strong>Relative paths from current file:</strong> These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of &quot;Basic relative paths&quot;. Example: <code>[Test](./ResearchDataManagement.html)</code>. Starting with <code>./</code> translates to &quot;coming from the position of this file&quot;. We can even go up in the file hierarchy, like <code>[Test](./../README.html)</code>. This translates to &quot;coming from the position of this file, go one folder higher and find README.html there&quot;.</li>
 </ul>
 <p><a href="./../README.html">Test</a></p>
-<nfdi-h2 id="structure-and-format">Structure and Format</nfdi-h2>
+<nfdi-h3 id="structure-and-format">Structure and Format</nfdi-h3>
 <p>Try to avoid deep structures by using no more than two headline levels, i.e.</p>
 <pre><code>```
 ## Headline level 2 <!-- omit in toc -->
 ### Headline level 3 <!-- omit in toc -->
 ```</code></pre>
 <p>Level 1 is automatically generated from the article's <code>title: </code>.</p>
-<nfdi-h2 id="images">Images</nfdi-h2>
+<nfdi-h3 id="images">Images</nfdi-h3>
 <ul>
 <li>simple markdown logic (not HTML): <code>![name_of_image](path_to_image.png)</code></li>
 </ul>
@@ -319,13 +319,16 @@ Use &quot;you can&quot;, not &quot;the user can&quot; or &quot;one can...&quot;<
 Check out the extension &quot;Code Spell Checker&quot; <a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker</a>
 with British English (&quot;cSpell.language&quot;: &quot;en-GB&quot;) support.</p>
 </blockquote>
-<nfdi-h1 id="link-collection">Link Collection</nfdi-h1>
+<nfdi-h2 id="link-collection">Link Collection</nfdi-h2>
 <blockquote>
 <p>Note: This is just a link collection for recurrent use in KB articles
 Nothing automatised. Just copy/paste.</p>
 </blockquote>
 <p>⚠️ Must be read from markdown, will not be shown in html.</p>
 <!-- Links to DataPLANT knowledge base (kb-) -->
+<!-- kb-Fundamentals -->
+<!-- kb-Implementation -->
+<!-- kb-Tutorials -->
 <!-- Links to DataPLANT Homepage (hp-) -->
 <!-- Links to DataPLANT GitHub (gh-) -->
 <!-- Links to external (ext-) sources -->

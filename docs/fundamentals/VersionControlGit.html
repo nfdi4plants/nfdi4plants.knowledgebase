@@ -98,8 +98,8 @@
       </i>
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="scientific-iteration-and-versioning">Scientific iteration and versioning</nfdi-h2>
-<p>Science is highly iterative. Most outcomes along the data life cycle (between an initial idea and the final publication, see also <a href="./ResearchDataManagement.html" title="Research Data Management">RDM</a>) are iterated through multiple cycles of design-test-repeat (e.g. laboratory experiments) or draft-review-publish (e.g. manuscripts) and mixes thereof. During these iterations multiple versions of the different outcomes are produced.<br />
-There are different options to keep track of these versions. The seemingly simplest option is to duplicate a file and rename it by attaching a version, e.g. <code>manuscript.txt</code> – <code>manuscript_v2.txt</code> – <code>manuscript_final.txt</code>. Although this may work acceptably for individual use it quickly becomes confusing when sharing with other researchers. Cloud services offer options to keep track of changes (what was changed and by whom) within collaborative, multi-party projects (see also <a href="./DataSharing.html" title="Data Sharing">Data Sharing</a>). Here, versioning is usually taken care of automatically by the cloud service with little to no control by the user. However, these services are helpful only for version histories of typical office data (documents, presentations) or small datasets and within low-complexity projects.</p>
+<p>Science is highly iterative. Most outcomes along the data life cycle (between an initial idea and the final publication, see also <a href="../fundamentals/ResearchDataManagement.html" title="Research Data Management">RDM</a>) are iterated through multiple cycles of design-test-repeat (e.g. laboratory experiments) or draft-review-publish (e.g. manuscripts) and mixes thereof. During these iterations multiple versions of the different outcomes are produced.<br />
+There are different options to keep track of these versions. The seemingly simplest option is to duplicate a file and rename it by attaching a version, e.g. <code>manuscript.txt</code> – <code>manuscript_v2.txt</code> – <code>manuscript_final.txt</code>. Although this may work acceptably for individual use it quickly becomes confusing when sharing with other researchers. Cloud services offer options to keep track of changes (what was changed and by whom) within collaborative, multi-party projects (see also <a href="../fundamentals/DataSharing.html" title="Data Sharing">Data Sharing</a>). Here, versioning is usually taken care of automatically by the cloud service with little to no control by the user. However, these services are helpful only for version histories of typical office data (documents, presentations) or small datasets and within low-complexity projects.</p>
 <p><img src="../img/git_cloudServices.png" alt="Cloud Services" /></p>
 <nfdi-h2 id="git">Git</nfdi-h2>
 <p>A more sophisticated approach addressing the versioning needs in more complex projects originates from the field of software engineering. Software development builds on iterative design-test-repeat cycles, in which multiple versions of files (code, inputs and outputs) or directory structures emerge plus changing dependencies within (e.g. files) and outside (e.g. other software) of the project. So-called &quot;distributed version control systems&quot; (sometimes termed &quot;source control&quot; or &quot;revision control&quot;) help software developers to keep track of project changes, guaranteeing stable integrity of the software, ideally before it is rolled-out to the public. The most prominent and vastly established distributed version control system is called <a href="https://git-scm.com" title="Git">Git</a>.</p>
@@ -127,12 +127,12 @@ There are different options to keep track of these versions. The seemingly simpl
 <td><strong>Collect, structure and share:</strong> <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul></td>
 </tr>
 <tr>
-<td><strong><a href="./AnnotatedResearchContext.html" title="Annotated Research Context">ARC</a></strong>  <br> (Annotated Research Context)</td>
+<td><strong><a href="../implementation/AnnotatedResearchContext.html" title="Annotated Research Context">ARC</a></strong>  <br> (Annotated Research Context)</td>
 <td>Standard</td>
 <td><strong>Structure:</strong> <ul><li>ARCs are git repositories</li><li>Package data with metadata in a defined format</li></ul></td>
 </tr>
 <tr>
-<td><strong><a href="./DataHub.html" title="DataPLANT DataHUB">DataHUB</a></strong></td>
+<td><strong><a href="../implementation/DataHub.html" title="DataPLANT DataHUB">DataHUB</a></strong></td>
 <td>Service</td>
 <td><strong>Share:</strong> <ul><li>DataPLANT-customized GitLab instance</li><li>Infrastructure-as-code: on-premise solution</li><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul></td>
 </tr>
