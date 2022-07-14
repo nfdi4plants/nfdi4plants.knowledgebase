@@ -14022,7 +14022,7 @@ let Code = class extends s$1 {
         const trimStart = code.startsWith(start) ? code.slice(start.length) : code;
         return trimStart.endsWith(end) ? trimStart.slice(0, trimStart.length - end.length) : trimStart;
       }
-      let processedInnerHtml = trimCode(this.innerHTML.replace(/&gt;/ig, ">").replace(/&lt;/ig, "<"));
+      let processedInnerHtml = trimCode(this.innerHTML.replace(/&gt;/ig, ">").replace(/&lt;/ig, "<").replace(/&amp;/ig, "&"));
       this.highlightedCode = suggestedHighlight(processedInnerHtml, language.replace("language-", ""));
       this.requestUpdate();
     });
