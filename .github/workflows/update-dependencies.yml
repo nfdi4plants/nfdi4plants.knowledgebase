@@ -34,10 +34,10 @@ jobs:
         with:
           dotnet-version: 5.0.102
 
-      - name: Setup node
-        uses: actions/setup-node@v2
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.4.0
         with:
-          node-version: '12'
+          node-version: 16
 
       - name: Install rollup
         run: npm install --global rollup

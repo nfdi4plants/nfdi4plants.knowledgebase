@@ -10811,7 +10811,7 @@ body {
 
 `;
 const mainPageBaseUrl = "https://nfdi4plants.org/";
-const knowledgeBaseUrl = "https://nfdi4plants.github.io/nfdi4plants.knowledgebase/";
+const knowledgeBaseUrl = "https://nfdi4plants.org/nfdi4plants.knowledgebase/";
 const gitlabBaseUrl = "https://git.nfdi4plants.org/";
 var __defProp$8 = Object.defineProperty;
 var __getOwnPropDesc$8 = Object.getOwnPropertyDescriptor;
@@ -14022,7 +14022,8 @@ let Code = class extends s$1 {
         const trimStart = code.startsWith(start) ? code.slice(start.length) : code;
         return trimStart.endsWith(end) ? trimStart.slice(0, trimStart.length - end.length) : trimStart;
       }
-      this.highlightedCode = suggestedHighlight(trimCode(this.innerHTML), language.replace("language-", ""));
+      let processedInnerHtml = trimCode(this.innerHTML.replace(/&gt;/ig, ">").replace(/&lt;/ig, "<").replace(/&amp;/ig, "&"));
+      this.highlightedCode = suggestedHighlight(processedInnerHtml, language.replace("language-", ""));
       this.requestUpdate();
     });
   }
