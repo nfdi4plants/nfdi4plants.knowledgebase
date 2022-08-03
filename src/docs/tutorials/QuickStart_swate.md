@@ -14,15 +14,10 @@ todo:
 > V1.0
 > August 2022
 
+
 This document is work in progress. If you experience any inconsistencies, have questions or would like to suggest additions, please feel free to <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">contact us</a> or open an issue in our [Helpdesk](<https://helpdesk.nfdi4plants.org>).
 
-We are very happy that you chose our tools and infrastructure to create and share your own ARCs. In this QuickStart we focus on explaining the ARC structure and its different components.
-
-Let's imagine a scenario in which a project partner proposed to you at a conference to use this cool new platform called ARC for your collaboration. Convinced by the versioning system and the single point of entry logic you are motivated to set up your very first own ARC and fill it with your newest project results when returning to the lab. Back home, you only remember the basic ARC structure and something about some isa.xlsx files. How do you get the project into the empty ARC displayed below, shared by your partner?
-
-To answer this question we will first take a step back and remember Violas metadata example: 
-
-> Viola investigates the effect of the plant circadian clock on sugar metabolism in *W. mirabilis*. For her PhD project, which is part of an EU-funded consortium in Prof. Beetroot's lab, she acquires seeds from a South-African botanical society. Viola grows the plants under different light regimes, harvests leaves from a two-day time series experiment, extracts polar metabolites as well as RNA and submits the samples to nearby core facilities for metabolomics and transcriptomics measurements, respectively. After a few weeks of iterative consultation with the facilities' heads as well as technicians and computational biologists involved, Viola receives back a wealth of raw and processed data. From the data she produces figures and wraps everything up to publish the results in the *Journal of Wonderful Plant Sciences*.
+We are very happy that you chose our tools and infrastructure to create and share your own ARCs. In this QuickStart we focus on annotating your studies and assays with our excel tool SWATE.
 
 
 ## Adding metadata
@@ -131,27 +126,3 @@ Fill the cells beneath each building block with ontology terms to note the respe
 
 <div style="page-break-after: always;"></div>
 
-## The Minimalist's ARC-QuickStart
-
-- [x] You know how to use a command line
-- [x] You have created an ARC before
-- [x] The latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) as well as [git](https://git-scm.com/downloads) and [git LFS](https://git-lfs.github.com/) are installed on your computer
-- [x] You have a [DataPLANT](https://register.nfdi4plants.org) account
-- [x] Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via an ssh key or a personal access token.
-
-Voila! You are ready to follow these few steps to create a minimal ARC sharable via DataPLANT's DataHUB:
-
-1. Visit the [DataHUB](https://git.nfdi4plants.org), create a new repository and copy the URL to your clipboard.
-2. Replace the `<variables>` in the following code block with your information and execute it in your command line.
-
-```bash
-# Create and navigate to your ARC folder
-mkdir <YourARC>
-cd <YourARC>
-
-# Setup the ARC structure with one study and one assay
-arc init
-arc i create -i <YourInvestigation>
-arc a add -s <YourStudy> -a <YourAssay>
-arc sync -f -r https://git.nfdi4plants.org/<YourUserName>/<YourARC> -m "initialize ARC structure"
-```

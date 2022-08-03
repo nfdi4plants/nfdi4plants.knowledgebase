@@ -16,9 +16,15 @@
 
 ```Implementation within DataPLANT
 # Annotated Research Context:/docs/implementation/AnnotatedResearchContext.html
-## ARC QuickStart:/docs/tutorials/QuickStart_arc.html
 # DataHUB:/docs/implementation/DataHub.html
 ```
+
+```Training & Tutorials
+# Annotated Research Context - QuickStart:/docs/tutorials/QuickStart_arc.html
+# ARC Commander QuickStart:/docs/tutorials/QuickStart_arcCommander.html
+# SWATE QuickStart:/docs/tutorials/QuickStart_swate.html
+```
+
 <!-- 
 ```Training & Tutorials
 # ARC QuickStart:/docs/tutorials/QuickStart_arc.html
