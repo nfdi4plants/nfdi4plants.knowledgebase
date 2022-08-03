@@ -20,7 +20,7 @@
 ```
 
 ```Training & Tutorials
-# Annotated Research Context - QuickStart:/docs/tutorials/QuickStart_arc.html
+# QuickStart on ARCs:/docs/tutorials/QuickStart_arc.html
 # ARC Commander QuickStart:/docs/tutorials/QuickStart_arcCommander.html
 # SWATE QuickStart:/docs/tutorials/QuickStart_swate.html
 ```

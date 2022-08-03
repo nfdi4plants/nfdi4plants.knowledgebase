@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: ARC QuickStart
+title: SWATE QuickStart
 published: 2022-08-05
 author: Martin Kuhl
 author_github: martin-kuhl
@@ -17,55 +17,9 @@ todo:
 
 This document is work in progress. If you experience any inconsistencies, have questions or would like to suggest additions, please feel free to <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">contact us</a> or open an issue in our [Helpdesk](<https://helpdesk.nfdi4plants.org>).
 
-We are very happy that you chose our tools and infrastructure to create and share your own ARCs. In this QuickStart we focus on annotating your studies and assays with our excel tool SWATE.
+We are very happy that you chose our tools and infrastructure to create and share your own ARCs. In this QuickStart we assume that your ARC already contains one or more isa.study.xlsx and isa.assay.xlsx file(s), respectively. Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses. In the following we will focus on adding metadata to your studies and assays with our excel tool SWATE.
 
-
-## Adding metadata
-
-### ISA investigation
-
-The ISA investigation (`-i`) workbook allows you to record administrative metadata of your project. Add the isa.investigation.xlsx workbook including an identifier to your ARC with
-
-```bash
-arc i create -i QuickStartInvestigation
-```
-
-### ISA studies and assays
-
-The ISA study (`-s`) and ISA assay (`-a`) workbooks allow you to annotate your experimental data.
-
-1. Add an isa.study.xlsx workbook including an identifier to your ARC with
-
-```bash
-arc s add -s QuickStartStudy
-```
-  
-2. Add an isa.assay.xlsx workbook including an identifier to your ARC with
-
-```bash
-arc a add -s QuickStartStudy -a QuickStartAssay
-```
-
-> Note: An assay must be linked to a study. If a study does not exist, it will be created automatically in this step.
-
-- The ARC Commander will add a subdirectories to the *studies* and *assays* folder. Your ARC should
-    look similar to this now:  
-
-![subdirectories](../img/arc_studies_assays.jpg)
-
-- These steps can be repeated to add as many studies and assays as needed. Accordingly, more subdirectories will be added. Multiple assays can be grouped in a study when the same StudyIdentifier is used.
-
-3. Place the data for each assay in the respective dataset folder.
-
-<div style="page-break-after: always;"></div>
-
-
-
-## Data annotation
-
-Your ARC should now contain one isa.investigation.xlsx and one or more isa.study.xlsx and isa.assay.xlsx file(s), respectively. Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses.
-
-### SWATE
+## SWATE
 
 DataPLANT provides the Excel Add-In SWATE to support you in data annotation.
 
@@ -84,7 +38,7 @@ Briefly:
 
 - The combination of ISA (Characteristics, Parameter, Factor) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter \[temperature\] or Factor \[temperature\]).
 
-#### Customize your table by adding building blocks
+## Customize your table by adding building blocks
 
 1. Choose the type of building block you want to add (A).
 
@@ -98,13 +52,13 @@ Briefly:
 
 5. For more information on customizing your annotation table click [here](https://github.com/nfdi4plants/Swate/wiki/Docs03-Building-Blocks).
 
-#### Use templates
+## Use templates
 
 Alternatively, you can also use one of DataPLANT’s [SWATE templates](https://github.com/nfdi4plants/Swate/wiki/Docs05-Templates). You can find them under the *Protocol Insert* tab in SWATE.  
 
 ![](https://user-images.githubusercontent.com/39732517/128495178-cc14690a-fc8a-4a3c-b591-365176ea2b00.png)
 
-#### Annotate your samples and data
+## Annotate your samples and data
 
 Fill the cells beneath each building block with ontology terms to note the respective *Characteristics, Parameter,* and *Factor* values of your experiment. Using the ontology term search function, you can fill multiple cells at once.
 
