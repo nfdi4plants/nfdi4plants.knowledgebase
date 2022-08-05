@@ -69,8 +69,16 @@
           Implementation within DataPLANT
         </div>
         <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">Annotated Research Context</h1>
-<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arc.html">ARC QuickStart</h2>
 <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/DataHub.html">DataHUB</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Training & Tutorials
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arc.html">QuickStart on ARCs</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arcCommander.html">ARC Commander QuickStart</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_swate.html">Swate QuickStart</h1>
 <!-- 
 
       </nfdi-sidebar-element>
@@ -94,270 +102,75 @@
         ARC QuickStart
       </h1>
       <i class="help">
-        last updated at 2022-05-25
+        last updated at 2022-08-05
       </i>
       <blockquote>
-<p>V1.3
-May 2022</p>
+<p>V1.0
+August 2022</p>
 </blockquote>
-<p>We are very happy that you chose our tools and infrastructure to create and share your own ARCs. In this QuickStart we focus on how to use the &quot;ARC Commander&quot; to store your data and &quot;SWATE&quot; to enrich it with metadata.</p>
 <p>This document is work in progress. If you experience any inconsistencies, have questions or would like to suggest additions, please feel free to <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">contact us</a> or open an issue in our <a href="https://helpdesk.nfdi4plants.org">Helpdesk</a>.</p>
+<p>We are very happy that you chose our tools and infrastructure to create and share your own ARCs. In this QuickStart we focus on explaining the ARC structure and its different components.</p>
 <ul>
-<li><a href="#environment-and-setup">Environment and setup</a>
+<li><a href="#violas-arc">Viola's ARC</a></li>
+<li><a href="#isainvestigationxlsx">isa.investigation.xlsx</a></li>
+<li><a href="#studies">Studies</a>
 <ul>
-<li><a href="#the-command-line">The command line</a></li>
-<li><a href="#required-software">Required software</a></li>
+<li><a href="#isastudyxlsx">isa.study.xlsx</a></li>
 </ul>
 </li>
-<li><a href="#arc-initialization">ARC initialization</a></li>
-<li><a href="#adding-metadata">Adding metadata</a>
+<li><a href="#assays">Assays</a>
 <ul>
-<li><a href="#isa-investigation">ISA investigation</a></li>
-<li><a href="#isa-studies-and-assays">ISA studies and assays</a></li>
+<li><a href="#isaassayxlsx">isa.assay.xlsx</a></li>
 </ul>
 </li>
-<li><a href="#sharing-your-arc">Sharing your ARC</a>
-<ul>
-<li><a href="#dataplant-registration-and-access">DataPLANT registration and access</a></li>
-<li><a href="#arc-synchronization">ARC synchronization</a></li>
-<li><a href="#setting-a-git-user">Setting a git user</a></li>
-<li><a href="#invite-collaborators">Invite collaborators</a></li>
+<li><a href="#runs">Workflows</a></li>
+<li><a href="#runs">Runs</a></li>
+<li><a href="#cheatsheet">Cheatsheet</a></li>
 </ul>
-</li>
-<li><a href="#data-annotation">Data annotation</a>
-<ul>
-<li><a href="#swate">SWATE</a></li>
-</ul>
-</li>
-<li><a href="#the-minimalists-arc-quickstart">The Minimalist's ARC-QuickStart</a></li>
-</ul>
-<nfdi-h2 id="environment-and-setup">Environment and setup</nfdi-h2>
-<nfdi-h3 id="the-command-line">The command line</nfdi-h3>
-<ul>
-<li>Most of this Quickstart (especially the section <a href="#arc-initialization">ARC initialization</a>) is based on the command line (Windows: powershell; Linux and Mac: terminal).</li>
-<li>The following picture shows exemplarily how to open a powershell on windows by entering <em>powershell</em> into the explorer path:</li>
-</ul>
-<p><img src="../img/windows_powershell.png" alt="Windows Powershell" /></p>
-<ul>
-<li>Text formatted as code blocks represents commands to copy/paste into the command line:</li>
-</ul>
-<nfdi-code class="language-bash">echo "hello - I am a code block"
-</nfdi-code>
-<nfdi-h3 id="required-software">Required software</nfdi-h3>
-<ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" /> Prerequisites for using the ARC Commander are <a href="https://git-scm.com/downloads">git</a> and <a href="https://git-lfs.github.com/">git LFS</a></li>
-</ul>
+<nfdi-h2 id="violas-arc">Viola's ARC</nfdi-h2>
+<p>Let's imagine a scenario where a project partner suggests to you at a conference to use this cool new platform called ARC for your collaboration. Convinced by the versioning system and the single-point-of-entry logic, you are motivated to set up your first ARC and fill it with your latest project results when returning to the lab. Back home, however, you only remember the basic ARC structure and something about some isa.xlsx files. So how do you start and get your project into the shown blank ARC, shared by your partner?</p>
+<p><img src="../img/ARC_FolderStructure.png" alt="ARCStructure" /></p>
+<p>To answer this question, we will first take a look back on Viola's metadata example:</p>
 <blockquote>
-<p>Note: If this is your first time using git on this computer, you need to set your git user name and email address. These are needed for displaying them on the git commits. You can update the settings with</p>
+<p>Viola investigates the effect of the plant circadian clock on sugar metabolism in <em>W. mirabilis</em>. For her PhD project, which is part of an EU-funded consortium in Prof. Beetroot's lab, she acquires seeds from a South-African botanical society. Viola grows the plants under different light regimes, harvests leaves from a two-day time series experiment, extracts polar metabolites as well as RNA and submits the samples to nearby core facilities for metabolomics and transcriptomics measurements, respectively. After a few weeks of iterative consultation with the facilities' heads as well as technicians and computational biologists involved, Viola receives back a wealth of raw and processed data. From the data she produces figures and wraps everything up to publish the results in the <em>Journal of Wonderful Plant Sciences</em>.</p>
 </blockquote>
-<nfdi-code class="language-bash">git config --global user.name &lt;your_name>
-git config --global user.email &lt;your_email>
-</nfdi-code>
-<ul class="contains-task-list">
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" /> Please download the latest version of the <a href="https://github.com/nfdi4plants/arcCommander/releases">ARC Commander</a> for your operating system and install it according to <a href="https://github.com/nfdi4plants/arcCommander#install-and-start">these instructions</a>.</p>
-</li>
-<li><p>Check if the ARC Commander is functional by displaying the ARC commander version and help menu:</p>
-</li>
-</ul>
-<nfdi-code class="language-bash">arc --version
-arc --help
-</nfdi-code>
-<p><img src="../img/arcCommander_help.png" alt="ARC Commander help menu" /></p>
-<div style="page-break-after: always;"></div>
-<nfdi-h2 id="arc-initialization">ARC initialization</nfdi-h2>
-<ol>
-<li>Create and navigate to a local folder, which you want to initialize as an ARC.</li>
-</ol>
-<nfdi-code class="language-bash">mkdir ~/Desktop/QuickStart; 
-cd ~/Desktop/QuickStart
-</nfdi-code>
-<ol start="2">
-<li>Initialize your ARC by executing</li>
-</ol>
-<nfdi-code class="language-bash">arc init
-</nfdi-code>
-<ol start="3">
-<li>This will create the general ARC folder structure:</li>
-</ol>
-<p><img src="../img/arcCommander_init.png" alt="arc init" /></p>
-<div style="page-break-after: always;"></div>
-<nfdi-h2 id="adding-metadata">Adding metadata</nfdi-h2>
-<nfdi-h3 id="isa-investigation">ISA investigation</nfdi-h3>
-<p>The ISA investigation (<code>-i</code>) workbook allows you to record administrative metadata of your project. Add the isa.investigation.xlsx workbook including an identifier to your ARC with</p>
-<nfdi-code class="language-bash">arc i create -i QuickStartInvestigation
-</nfdi-code>
-<nfdi-h3 id="isa-studies-and-assays">ISA studies and assays</nfdi-h3>
-<p>The ISA study (<code>-s</code>) and ISA assay (<code>-a</code>) workbooks allow you to annotate your experimental data.</p>
-<ol>
-<li>Add an isa.study.xlsx workbook including an identifier to your ARC with</li>
-</ol>
-<nfdi-code class="language-bash">arc s add -s QuickStartStudy
-</nfdi-code>
-<ol start="2">
-<li>Add an isa.assay.xlsx workbook including an identifier to your ARC with</li>
-</ol>
-<nfdi-code class="language-bash">arc a add -s QuickStartStudy -a QuickStartAssay
-</nfdi-code>
-<blockquote>
-<p>Note: An assay must be linked to a study. If a study does not exist, it will be created automatically in this step.</p>
-</blockquote>
+<p>The entire information given in this example can be stored within an ARC. To illustrate the ARC specifications, we will highlight and explain every (sub)directory and ISA-file of the ARC with references of Viola's example.</p>
+<nfdi-h2 id="isa.investigation.xlsx">isa.investigation.xlsx</nfdi-h2>
+<p>Use the ISA investigation workbook to record administrative metadata of your project. In our example, the title of the project, the contact persons, and related publications correspond to such metadata. Besides that, the workbook can also contain a short description of your project, but also lists included studies with respective design types assays, protocols, etc. Although we recommend to use the ARC Commander for adding these metadata, you can of course fill the workbook (and also the <a href="#isastudyxlsx">isa.study.xlsx</a> and <a href="#isaassayxlsx">isa.assay.xlsx</a>) manually.
+<img src="../img/ARC_investigation.jpg" alt="Investigation" /></p>
+<nfdi-h2 id="studies">Studies</nfdi-h2>
+<p>Use the Studies (sub)folders to collect material and resources used within your investigation. Corresponding information in Viola's project are from where she got her seeds, how she grew the plants, and the design of the experiment.</p>
+<p>In case your investigation contains more than one study, each of these studies is placed in an individual subdirectory. Use the &quot;resources&quot; directory to store material samples or external data as virtual sample files. You can use the protocol subdirectory to store free-text protocols describing the sample or material creation process.</p>
+<p><img src="../img/ARC_studiesSubdirectories.jpg" alt="StuSubdirectories" /></p>
+<nfdi-h3 id="isa.study.xlsx">isa.study.xlsx</nfdi-h3>
+<p>Every study needs to contain one isa.study.xlsx file to specify the characteristics of all material and resources. Resources described in a study file can be the input for one or multiple assays or workflows. The workbook contains two worksheets:</p>
 <ul>
-<li>The ARC Commander will add a subdirectories to the <em>studies</em> and <em>assays</em> folder. Your ARC should
-look similar to this now:</li>
+<li>&quot;2022_CircadianClock&quot;: A worksheet with the name of your study to annotate the inherent properties of your source material following the ISA model. While this can be done manually, we recommend using our ontology supported annotation tool <a href="QuickStart_swate.html">Swate</a>.</li>
+<li>&quot;Study&quot;: Viola collected the administrative metadata of her study in this worksheet. These information can later be transferred into the isa.investigation.xlsx using the ARC Commander.</li>
 </ul>
-<p><img src="../img/arc_studies_assays.jpg" alt="subdirectories" /></p>
+<p><img src="../img/ARC_study.jpg" alt="ISA-study" />
+<img src="../img/ARC_studyMetadata.jpg" alt="ISA-studyMetadata" /></p>
+<nfdi-h2 id="assays">Assays</nfdi-h2>
+<p>The assays folder allows you to store data and metadata from experimental processes or analytical measurements. Each assay is a collection of files stored in a single directory, including corresponding metadata files in form of an isa.assay.xlsx. Therefore, Viola needs two subdirectories, one for her metabolomics and one for her transcriptomics experiment. Assay data files and free-text protocols are placed in an individual subdirectory. Data files produced by an assay can be the input for one or multiple workflows.</p>
+<p><img src="../img/ARC_assaysSubdirectories.jpg" alt="AssaySubdirectories1" />
+<img src="../img/ARC_MetSubdirectories.jpg" alt="AssaySubdirectories2" /></p>
+<nfdi-h3 id="isa.assay.xlsx">isa.assay.xlsx</nfdi-h3>
+<p>Viola can annotate her experimental workflows of the metabolomics and transcriptomics assays with process parameters in the isa.assay.xlsx file, which needs to be present for every assay. The workbook contains two or more worksheets, depending on the number of used protocols:</p>
 <ul>
-<li>These steps can be repeated to add as many studies and assays as needed. Accordingly, more subdirectories will be added. Multiple assays can be grouped in a study when the same StudyIdentifier is used.</li>
+<li>&quot;MetaboliteExtraction&quot;: A worksheet with the name of the used protocol to annotate the experimental workflow, in this case for extraction of metabolites. While this can be done manually, we recommend using our ontology supported annotation tool <a href="QuickStart_swate.html">Swate</a>.</li>
+<li>&quot;MetaboliteMeasurement&quot;</li>
+<li>&quot;Assay&quot;: Viola collected the administrative metadata of her assay in this worksheet. These information can later be transferred into the isa.investigation.xlsx using the ARC Commander.</li>
 </ul>
-<ol start="3">
-<li>Place the data for each assay in the respective dataset folder.</li>
-</ol>
-<div style="page-break-after: always;"></div>
-<nfdi-h2 id="sharing-your-arc">Sharing your ARC</nfdi-h2>
-<nfdi-h3 id="dataplant-registration-and-access">DataPLANT registration and access</nfdi-h3>
-<p>In case you are not a member of DataPLANT yet, please visit <a href="https://register.nfdi4plants.org">sign up</a>. Afterwards, you will be granted access to DataPLANT’s <a href="https://git.nfdi4plants.org">DataHUB</a>. The DataHUB allows you to share your ARCs with registered lab or project partners.</p>
-<p><img src="../img/dataplant_registration.png" alt="" /></p>
-<p>After successful registration, create and set an access token for ARC Commander synchronization using</p>
-<nfdi-code class="language-bash">arc remote accesstoken get -s https://git.nfdi4plants.org
-</nfdi-code>
-<p>A window within your browser will open, asking for your DataPLANT Log In. In case you are already logged in, the browser will directly display a Success message to you:</p>
-<p><img src="../img/arcCommander_AccessToken.png" alt="" /></p>
-<nfdi-h3 id="arc-synchronization">ARC synchronization</nfdi-h3>
-<ol>
-<li>Synchronize your ARCs with the DataHUB using the command</li>
-</ol>
-<nfdi-code class="language-bash">arc sync 
-</nfdi-code>
-<ol start="2">
-<li>If you did not connect your local ARC with a remote one so far, you can specify the remote address with the flag <code>-r</code> followed by an URL, e.g.,</li>
-</ol>
-<nfdi-code class="language-bash">arc sync -r https://git.nfdi4plants.org/martinkuhl/QuickStart
-</nfdi-code>
-<ol start="3">
-<li>In case you want to create a new remote repository at this URL, it needs to be assembled as the following example:</li>
-</ol>
-<nfdi-code class="language-bash"># https://git.nfdi4plants.org/&lt;YourUserName>/&lt;YourARC>
-</nfdi-code>
-<ol start="4">
-<li>If no repository exists under the given URL, the ARC Commander will produce an error ensuring that you spelled the URL correctly. To force synchronization, use</li>
-</ol>
-<nfdi-code class="language-bash">arc sync -f
-</nfdi-code>
-<p><img src="../img/arcCommander_syncForce.png" alt="" /></p>
-<ol start="5">
-<li>Check if the upload was successful by visiting your ARC at the respective URL in your browser.</li>
-</ol>
-<p><img src="../img/datahub_repository.png" alt="" /></p>
-<blockquote>
-<p>Note: Alternatively, you can first create a new blank repository in the <a href="https://git.nfdi4plants.org">DataHUB</a> by clicking &quot;New project/repository&quot; in the plus drop down menu of the navigation bar on top. Afterwards, you can sync your local ARC to the respective repository by adapting the URL to the newly generated one.</p>
-</blockquote>
-<nfdi-h3 id="setting-a-git-user">Setting a git user</nfdi-h3>
-<p>Some users might want to use different signatures for different repositories, e.g. for developing software on GitHub and working on ARCs on <a href="https://git.nfdi4plants.org">DataPLANT's DataHUB</a>. Besides your global git configuration, you can store the information you want to use for editing ARCs within the ARC Commander config:</p>
-<nfdi-code class="language-bash">arc config set -g -n "general.gitname" -v "Name of choice"
-arc config set -g -n "general.gitemail" -v "Email of choice"
-</nfdi-code>
-<p>To transfer the information from the global ARC Commander config to the local git config of the ARC use</p>
-<nfdi-code class="language-bash">arc config setgituser
-</nfdi-code>
-<nfdi-h3 id="invite-collaborators">Invite collaborators</nfdi-h3>
-<p>You can invite lab-colleagues or project partners to join your ARC for collaboration. While inside your ARC on the DataHUB, click on <em>Project information -&gt; Members</em> in the left navigation panel. Search for registered researchers and select a role for each individually. These roles come along with different rights.<br />
-Briefly:</p>
-<ul>
-<li><em>Guests:</em> Have the least rights. This is recommended for people you ask for consultancy.</li>
-<li><em>Developers:</em> The choice for most people you want to invite to your ARC. Developers have read and write access, but cannot maintain the project on the DataHUB, e.g. inviting others.</li>
-<li><em>Maintainers:</em> Gives the person the same rights as you have (except of removing you from your own project). This is recommended for inviting PIs or group leaders allowing them to add their group members for data upload or analysis to the project as well.</li>
-</ul>
-<p><img src="../img/datahub_members.png" alt="" /></p>
-<blockquote>
-<p>Note: A detailed usage instruction for the ARC Commander can be found <a href="https://github.com/nfdi4plants/arcCommander/wiki/Detailed-usage-instruction">here</a>.</p>
-</blockquote>
-<div style="page-break-after: always;"></div>
-<nfdi-h2 id="data-annotation">Data annotation</nfdi-h2>
-<p>Your ARC should now contain one isa.investigation.xlsx and one or more isa.study.xlsx and isa.assay.xlsx file(s), respectively. Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses.</p>
-<nfdi-h3 id="swate">SWATE</nfdi-h3>
-<p>DataPLANT provides the Excel Add-In SWATE to support you in data annotation.</p>
-<ul class="contains-task-list">
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" /> Download and install the newest SWATE version according to <a href="https://github.com/nfdi4plants/Swate/wiki/docs01-installing-Swate#desktop-installation">these instructions</a>.</p>
-</li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" /> In case you use an Excel version older than Excel 2019, please install <a href="https://github.com/nfdi4plants/Swate/wiki/docs01-installing-Swate#quickstart">SWATE for Excel online</a>.</p>
-</li>
-<li><p>Use the <em>create annotation table</em> button in the yellow pop-up box (this only appears if you start SWATE on an Excel worksheet without an existing annotation table). An annotation table with the building blocks <em>Source Name</em> and <em>Sample Name</em> will be generated.</p>
-</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/wiki/nfdi4plants/Swate/images/UserDocs/Swate-CreateAnnotationTable-Exp.jpg" alt="" /></p>
-<ul>
-<li><p>Annotate your table with help of the <a href="https://nfdi4plants.github.io/AnnotationPrinciples/">annotation principles</a>.<br />
-Briefly:</p>
-<ul>
-<li><em>Characteristics</em> are used for study descriptions and describe inherent properties of the source material (e.g. a certain strain).</li>
-<li><em>Parameters</em> describe steps in your experimental workflow (e.g. an instrument model or a growth chamber), and</li>
-<li><em>Factors</em> describe independent variables that result in a specific output (e.g. the light intensity).</li>
-</ul>
-</li>
-<li><p>The combination of ISA (Characteristics, Parameter, Factor) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter [temperature] or Factor [temperature]).</p>
-</li>
-</ul>
-<nfdi-h4 id="customize-your-table-by-adding-building-blocks">Customize your table by adding building blocks</nfdi-h4>
-<ol>
-<li><p>Choose the type of building block you want to add (A).</p>
-</li>
-<li><p>If you chose a descriptive building block type (building blocks besides Sample Name, Source Name, and Data File Name), use search field (B) to search for an Ontology Term. SWATE accesses the SwateDB with a list of established external ontologies designated suitable for use in plant science. In addition, we feature our own ontology NFDI4PSO to extend the DB with missing, but necessary terms.</p>
-</li>
-<li><p>If you want to add a building block with a unit, check box (C) and use search field (D) to look for a fitting unit term, e.g. degree Celsius as unit for Parameter [temperature].</p>
-</li>
-<li><p>If you could not find a fitting term, you can use the Advanced Term Search with the blue links above the <em>Add building block</em> button. If you still could not find a fitting term, use free text input.</p>
-</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/wiki/nfdi4plants/Swate/images/UserDocs/Swate-AddBuildingBlock-Exp.jpg" alt="" /></p>
-<ol start="5">
-<li>For more information on customizing your annotation table click <a href="https://github.com/nfdi4plants/Swate/wiki/Docs03-Building-Blocks">here</a>.</li>
-</ol>
-<nfdi-h4 id="use-templates">Use templates</nfdi-h4>
-<p>Alternatively, you can also use one of DataPLANT’s <a href="https://github.com/nfdi4plants/Swate/wiki/Docs05-Templates">SWATE templates</a>. You can find them under the <em>Protocol Insert</em> tab in SWATE.</p>
-<p><img src="https://user-images.githubusercontent.com/39732517/128495178-cc14690a-fc8a-4a3c-b591-365176ea2b00.png" alt="" /></p>
-<nfdi-h4 id="annotate-your-samples-and-data">Annotate your samples and data</nfdi-h4>
-<p>Fill the cells beneath each building block with ontology terms to note the respective <em>Characteristics, Parameter,</em> and <em>Factor</em> values of your experiment. Using the ontology term search function, you can fill multiple cells at once.</p>
-<ol>
-<li><p>When <em>Use related term directed search</em> (A) is enabled, SWATE
-will suggest a selection of suitable terms within the ontology
-for the column header, e.g. <em>TripleTOF</em> <em>5600</em> for <em>instrument
-model.</em></p>
-</li>
-<li><p>When term directed search (A) is disabled, SWATE will still
-suggest ontology terms, but without relation to the column
-header.</p>
-</li>
-<li><p>If you could not find a fitting term, use free text input.</p>
-</li>
-</ol>
-<p><img src="../img/swate_ontologyTermSearch2.png" alt="" /></p>
-<blockquote>
-<p>Note: More information on how to use SWATE can be found <a href="https://github.com/nfdi4plants/Swate/wiki">here</a>.</p>
-</blockquote>
-<div style="page-break-after: always;"></div>
-<nfdi-h2 id="the-minimalists-arc-quickstart">The Minimalist's ARC-QuickStart</nfdi-h2>
-<ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> You know how to use a command line</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> You have created an ARC before</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> The latest version of the <a href="https://github.com/nfdi4plants/arcCommander/releases">ARC Commander</a> as well as <a href="https://git-scm.com/downloads">git</a> and <a href="https://git-lfs.github.com/">git LFS</a> are installed on your computer</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> You have a <a href="https://register.nfdi4plants.org">DataPLANT</a> account</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Your computer is linked to the <a href="https://git.nfdi4plants.org">DataHUB</a> via an ssh key or a personal access token.</li>
-</ul>
-<p>Voila! You are ready to follow these few steps to create a minimal ARC sharable via DataPLANT's DataHUB:</p>
-<ol>
-<li>Visit the <a href="https://git.nfdi4plants.org">DataHUB</a>, create a new repository and copy the URL to your clipboard.</li>
-<li>Replace the <code>&lt;variables&gt;</code> in the following code block with your information and execute it in your command line.</li>
-</ol>
-<nfdi-code class="language-bash"># Create and navigate to your ARC folder
-mkdir &lt;YourARC>
-cd &lt;YourARC>
-
-# Setup the ARC structure with one study and one assay
-arc init
-arc i create -i &lt;YourInvestigation>
-arc a add -s &lt;YourStudy> -a &lt;YourAssay>
-arc sync -f -r https://git.nfdi4plants.org/&lt;YourUserName>/&lt;YourARC> -m "initialize ARC structure"
-</nfdi-code>
+<p><img src="../img/ARC_IsaAssay.jpg" alt="IsaAssay" />
+<img src="../img/ARC_IsaAssayMetadata.jpg" alt="AssayMetadata" /></p>
+<nfdi-h2 id="workflows">Workflows</nfdi-h2>
+<p>Workflows in ARCs represent processing steps used in computational analyses and other data transformations of studies and assays to generate run results. Typical examples include data cleaning and preprocessing, computational analysis, or visualization.</p>
+<p>Viola received for her transcriptome and metabolome assays various processed data files, which she now can use to generate some nice plots. Additionally, the computational biologists sent her the code used for data processing, including an executable Common Workflow Language (CWL) file, which contains a standardized tool or workflow description. She stored these files in individual subdirectories for each workflow.</p>
+<nfdi-h2 id="runs">Runs</nfdi-h2>
+<p>After Viola generated her plots, she placed them in individual subdirectories, specific to the run they were generated with. In general, use the runs folder to store plots, tables, or similar result files that derive from computations on assays and external data.</p>
+<nfdi-h2 id="cheatsheet">Cheatsheet</nfdi-h2>
+<p>We hope that these examples nicely illustrated the ARC structure and that you are now ready to produce your own ARCs. Use the figure below as a cheatsheet to remember where to store which files.</p>
+<p><img src="../img/ARC_IllustratedFolderStructure.jpg" alt="IllustratedARCStructure" /></p>
 
       <h3>
         Dataplant Support
