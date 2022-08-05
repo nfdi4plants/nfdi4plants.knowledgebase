@@ -22,7 +22,7 @@
 ```Training & Tutorials
 # QuickStart on ARCs:/docs/tutorials/QuickStart_arc.html
 # ARC Commander QuickStart:/docs/tutorials/QuickStart_arcCommander.html
-# SWATE QuickStart:/docs/tutorials/QuickStart_swate.html
+# Swate QuickStart:/docs/tutorials/QuickStart_swate.html
 ```
 
 <!-- 

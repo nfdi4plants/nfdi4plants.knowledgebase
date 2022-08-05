@@ -17,16 +17,16 @@ todo:
 
 This document is work in progress. If you experience any inconsistencies, have questions or would like to suggest additions, please feel free to <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">contact us</a> or open an issue in our [Helpdesk](<https://helpdesk.nfdi4plants.org>).
 
-We are very happy that you chose our tools and infrastructure to create and share your own ARCs. In this QuickStart we assume that your ARC already contains one or more isa.study.xlsx and isa.assay.xlsx file(s), respectively. Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses. In the following we will focus on adding metadata to your studies and assays with our excel tool SWATE.
+We are very happy that you chose our tools and infrastructure to create and share your own ARCs. In this QuickStart we assume that your ARC already contains one or more isa.study.xlsx and isa.assay.xlsx file(s), respectively. Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses. In the following we will focus on adding metadata to your studies and assays with our excel tool Swate.
 
-## SWATE
+## Swate
 
-DataPLANT provides the Excel Add-In SWATE to support you in data annotation.
+DataPLANT provides the Excel Add-In Swate to support you in data annotation.
 
-- [ ] Download and install the newest SWATE version according to [these instructions](https://github.com/nfdi4plants/Swate/wiki/docs01-installing-Swate#desktop-installation).
-- [ ] In case you use an Excel version older than Excel 2019, please install [SWATE for Excel online](https://github.com/nfdi4plants/Swate/wiki/docs01-installing-Swate#quickstart).
+- [ ] Download and install the newest Swate version according to [these instructions](https://github.com/nfdi4plants/Swate/wiki/docs01-installing-Swate#desktop-installation).
+- [ ] In case you use an Excel version older than Excel 2019, please install [Swate for Excel online](https://github.com/nfdi4plants/Swate/wiki/docs01-installing-Swate#quickstart).
 
-- Use the *create annotation table* button in the yellow pop-up box (this only appears if you start SWATE on an Excel worksheet without an existing annotation table). An annotation table with the building blocks *Source Name* and *Sample Name* will be generated.  
+- Use the *create annotation table* button in the yellow pop-up box (this only appears if you start Swate on an Excel worksheet without an existing annotation table). An annotation table with the building blocks *Source Name* and *Sample Name* will be generated.  
 
 ![](https://raw.githubusercontent.com/wiki/nfdi4plants/Swate/images/UserDocs/Swate-CreateAnnotationTable-Exp.jpg)
 
@@ -42,7 +42,7 @@ Briefly:
 
 1. Choose the type of building block you want to add (A).
 
-2. If you chose a descriptive building block type (building blocks besides Sample Name, Source Name, and Data File Name), use search field (B) to search for an Ontology Term. SWATE accesses the SwateDB with a list of established external ontologies designated suitable for use in plant science. In addition, we feature our own ontology NFDI4PSO to extend the DB with missing, but necessary terms.
+2. If you chose a descriptive building block type (building blocks besides Sample Name, Source Name, and Data File Name), use search field (B) to search for an Ontology Term. Swate accesses the SwateDB with a list of established external ontologies designated suitable for use in plant science. In addition, we feature our own ontology NFDI4PSO to extend the DB with missing, but necessary terms.
 
 3. If you want to add a building block with a unit, check box (C) and use search field (D) to look for a fitting unit term, e.g. degree Celsius as unit for Parameter \[temperature\].
 
@@ -54,7 +54,7 @@ Briefly:
 
 ## Use templates
 
-Alternatively, you can also use one of DataPLANT’s [SWATE templates](https://github.com/nfdi4plants/Swate/wiki/Docs05-Templates). You can find them under the *Protocol Insert* tab in SWATE.  
+Alternatively, you can also use one of DataPLANT’s [Swate templates](https://github.com/nfdi4plants/Swate/wiki/Docs05-Templates). You can find them under the *Protocol Insert* tab in Swate.  
 
 ![](https://user-images.githubusercontent.com/39732517/128495178-cc14690a-fc8a-4a3c-b591-365176ea2b00.png)
 
@@ -62,12 +62,12 @@ Alternatively, you can also use one of DataPLANT’s [SWATE templates](https://g
 
 Fill the cells beneath each building block with ontology terms to note the respective *Characteristics, Parameter,* and *Factor* values of your experiment. Using the ontology term search function, you can fill multiple cells at once.
 
-1. When *Use related term directed search* (A) is enabled, SWATE
+1. When *Use related term directed search* (A) is enabled, Swate
   will suggest a selection of suitable terms within the ontology
   for the column header, e.g. *TripleTOF* *5600* for *instrument
   model.*
 
-2. When term directed search (A) is disabled, SWATE will still
+2. When term directed search (A) is disabled, Swate will still
   suggest ontology terms, but without relation to the column
   header.
 
@@ -76,7 +76,7 @@ Fill the cells beneath each building block with ontology terms to note the respe
 ![](../img/swate_ontologyTermSearch2.png)
 
 
-> Note: More information on how to use SWATE can be found [here](https://github.com/nfdi4plants/Swate/wiki).
+> Note: More information on how to use Swate can be found [here](https://github.com/nfdi4plants/Swate/wiki).
 
 <div style="page-break-after: always;"></div>
 
