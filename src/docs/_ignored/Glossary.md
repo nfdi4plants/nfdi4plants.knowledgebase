@@ -22,3 +22,4 @@ RDM
 Abbreviation | Meaning | Details
 ---------|----------|---------
 ARC | Annotated Research Context |  
+

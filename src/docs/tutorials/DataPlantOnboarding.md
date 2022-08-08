@@ -31,7 +31,7 @@ For more details, please explore the DataPLANT Knowledge Base and linked resourc
 
 ### DataPLANT tools and services
 
-- Please install [arcCommander][gh-ArcCommander] on your system.
+- Please install [arcCommander][gh-ArcCommander-Wiki] on your system.
 - Please install [Swate][gh-Swate] on your system.
 - In order to use the [DataHUB][hp-DataHUB], please [sign up][hp-Registration] with DataPLANT.
 
@@ -78,7 +78,7 @@ Within DataPLANT we communicate via Microsoft Teams. If you would like to join D
 
 [gh-DataPlant]: <https://github.com/nfdi4plants/> "GitHub DataPLANT"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
-[gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
+[gh-ArcCommander-Wiki]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
 
 <!-- Links to external (ext-) sources -->
