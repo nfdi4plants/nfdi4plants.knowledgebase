@@ -16,7 +16,8 @@ article_status: draft
 ## Fundamentals: (code / software) reproducibility
 
 - Reproducibility of computational analyses
-  - a) you can "reproduce" the exact same output (run result)
+  - a) you can "reproduce" that exact same output (run result) using the exact same inputs
+  - b) you can apply the analysis onto other data to produce analogous outputs, that can be fed into other workflows (e.g. generate similar figures)
 
 - How we usually (learn to) work with scripts
   - interactive, iterative
