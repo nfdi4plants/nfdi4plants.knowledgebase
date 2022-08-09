@@ -78,3 +78,10 @@ article_status: draft
 ### Recommendations
 
 - VS code extension [CWL (Rabix/Benten)](https://marketplace.visualstudio.com/items?itemName=sbg-rabix.benten-cwl)
+
+
+### Note / Typical errors
+
+- (re)moved a required input or output
+- cwltool can neither resolve "~" nor $HOME ?!
+- let recurrent variables (script name, outfolder, etc.) come first
