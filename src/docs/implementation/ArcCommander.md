@@ -16,9 +16,11 @@ article_status: draft
 The ARC Commander is one of two central DataPLANT tools designed for convenient interaction with your [ARC][kb-AnnotatedResearchContext] (the other one being [SWATE][gh-Swate]).
 It supports you in many actions on files within your ARC enabling you to sort, associate and keep track of your files.
 
-The major function of the ARC Commander is to set up the ARC directory and (put...) it under [version-control][kb-VersionControlGit] for you. The ARC Commander creates the directory structure with the root directories "studies", "assays", "runs", and "workflows" (see [ARC][kb-AnnotatedResearchContext] for details). Depending on / According to the design of your project, you can use the ARC Commander to create study and assay sub-directories and add the associated details and data files. While setting up the root directory structure, the ARC Commander initializes your ARC as a [git][kb-VersionControlGit] repository, allowing you to track changes of your ARC and easily back-up and synchronize it with the [DataHUB][kb-DataHub]. This includes an efficient mechanism to keep track of your large data files. The ARC Commander makes it straight-forward to download shared ARCs from the DataHUB for collaboration.
+The major function of the ARC Commander is to set up the ARC directory and (put...) <!-- Why these brackets? --> it under [version-control][kb-VersionControlGit] for you. The ARC Commander creates the directory structure with the root directories "studies", "assays", "runs", and "workflows" (see [ARC][kb-AnnotatedResearchContext] for details). Depending on / According to <!-- Use According to --> the design of your project, you can use the ARC Commander to create study and assay sub-directories and add the associated details and data files. While setting up the root directory structure, the ARC Commander initializes your ARC as a [git][kb-VersionControlGit] repository, allowing you to track changes of your ARC and easily back-up and synchronize it with the [DataHUB][kb-DataHub]. This includes an efficient mechanism to keep track of your large data files <!-- with the git lfs extension -->. The ARC Commander makes it straight-forward to download shared ARCs from the DataHUB for collaboration.
 
-Apart from managing the ARC as a whole in terms of file handling, the ARC Commander supervises the integrity and connections between files of your ARC. It ensures that the ARC is intact following the [ARC specifications][gh-ArcSpecs] as well as the ISA model to provide machine-readability of metadata. By (automatically) registering your studies and assays including their associated meta(data) files in the `isa.investigation.xlsx` registry file, the ARC Commander makes the resources in your ARC identifiable and findable. It would also warn you about possible inconsistencies, such as duplicate ISA metadata files (e.g. every ARC stores only one `isa.investigation.xlsx`) or studies and assays that may have been added manually and not registered, yet.
+Apart from managing the ARC as a whole in terms of file handling, the ARC Commander supervises the integrity and connections between files of your ARC. It ensures that the ARC is intact following the [ARC specifications][gh-ArcSpecs] <!-- is this really true? --> as well as the ISA model to provide machine-readability of metadata. By (automatically) registering your studies and assays including their associated meta(data) files in the `isa.investigation.xlsx` registry file, the ARC Commander makes the resources in your ARC identifiable and findable. It would also warn you about possible inconsistencies, such as duplicate ISA metadata files (e.g. every ARC stores only one `isa.investigation.xlsx`) or studies and assays that may have been added manually and not registered, yet.
+
+<!-- willst du die alle im Detail beschreiben? -->
 
 <!-- 
 - init
@@ -27,7 +29,8 @@ Apart from managing the ARC as a whole in terms of file handling, the ARC Comman
 - update
 - create
 - add
-- (export) -->
+- (export)
+ -->
 
 <!-- - Keeping track / version-control
   - initialize the ARC as a [git][kb-VersionControlGit] repository
@@ -50,7 +53,7 @@ Apart from managing the ARC as a whole in terms of file handling, the ARC Comman
 
 ## What the ARC Commander does not do
 
-Unless you actively request it to, the ARC Commander does not delete, modify or move files within your ARC. While the it may help with suggestions, it will not guess your intentions or override your decisions. For instance, the arcCommander will not search any (ISA) metadata or other data files in your ARC and move them into the intended folders. If such files exist somewhere in your ARC, they will simply be ignored as "additional payload" (see [ARC specifications][gh-ArcSpecs]). The ARC Commander does not operate / manage your ARC automatically. You have the full control over all actions. Whenever you decide to add or link new (meta)data in your ARC or synchronize it with the [DataHUB][kb-DataHub], you can do so with a few commands.
+Unless you actively request it to, the ARC Commander does not delete, modify or move files within your ARC. While the <!-- additional word --> it may help with suggestions, it will not guess your intentions or override your decisions. For instance, the arcCommander will not search any (ISA) metadata or other data files in your ARC and move them into the intended folders. If such files exist somewhere in your ARC, they will simply be ignored as "additional payload" (see [ARC specifications][gh-ArcSpecs]). The ARC Commander does not operate / manage your ARC automatically. You have the full control over all actions. Whenever you decide to add or link new (meta)data in your ARC or synchronize it with the [DataHUB][kb-DataHub], you can do so with a few commands.
 
 ## Do I have to use the arcCommander?
 
@@ -96,7 +99,7 @@ For details, please
 [kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 
 <!-- kb-Tutorials -->
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+[kb-QuickStart_arc]: ../tutorials/QuickStart_arcCommander.html "Quickstart ARC"
 
 
 <!-- Links to DataPLANT Homepage (hp-) -->

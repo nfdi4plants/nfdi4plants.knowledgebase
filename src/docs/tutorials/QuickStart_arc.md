@@ -3,6 +3,7 @@ layout: docs
 title: ARC QuickStart
 published: 2022-08-05
 author: Martin Kuhl
+author_orcid: https://orcid.org/0000-0002-8493-1077
 author_github: martin-kuhl
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
@@ -10,10 +11,7 @@ article_status: published
 todo:
 ---
 
- <!-- Id suggest, to use only the date / published in yaml and skip the versioning -->
 
-> V1.0 
-> August 2022
 
 This document is work in progress. If you experience any inconsistencies, have questions or would like to suggest additions, please feel free to <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">contact us</a> or open an issue in our [Helpdesk](<https://helpdesk.nfdi4plants.org>).
 
@@ -30,11 +28,8 @@ We are very happy that you chose our tools and infrastructure to create and shar
 - [Cheat sheet](#cheat-sheet)
 
 ## Viola's ARC
+Let's imagine a scenario where your project partner suggests at a conference to use this cool new Annotated Research Context (ARC) for your collaboration. Convinced by the versioning system and the single point of entry logic, you are motivated to set up your first own ARC after returning to the lab and fill it with your latest project results. Back home, however, you only remember the basic ARC structure and something about some isa.xlsx files. So how do you transfer your project into the empty ARC your project partner shared with you?
 
-
-Let's imagine a scenario where a project partner suggests to you at a conference to use this cool new platform called ARC for your collaboration.
-<!-- I wouldn't really call ARC a platform -->
-Convinced by the versioning system and the single-point-of-entry logic, you are motivated to set up your first ARC and fill it with your latest project results when returning to the lab. Back home, however, you only remember the basic ARC structure and something about some isa.xlsx files. So how do you start and get your project into the provided blank ARC, shared by your partner?
 <!-- why is the shared ARC blank? -->
 
 ![ARCStructure](../img/ARC_FolderStructure.png)
@@ -111,7 +106,7 @@ After Viola generated her plots, she placed them in individual subdirectories, s
 
 ## Cheat sheet
 
-We hope that these examples nicely illustrated the ARC structure and that you are now ready to produce your own ARCs. Use the figure below as a cheat sheet to remember where to store which files. Or follow the [QuickStart on ARCs][kb-QuickStart_arc] to try it out yourself.
+We hope that these examples nicely illustrated the ARC structure and that you are now ready to produce your own ARCs. Use the figure below as a cheat sheet to remember where to store which files. Or follow the [ARC Commander QuickStart][kb-QuickStart_arcCommander] to try it out yourself.
 
 ![IllustratedARCStructure](../img/ARC_IllustratedFolderStructure.jpg)
 
@@ -119,5 +114,5 @@ We hope that these examples nicely illustrated the ARC structure and that you ar
 [kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
 [kb-ArcCommander]: ../implementation/ArcCommander.html "DataPLANT ARC Commander"
 [kb-QuickStart_swate]: ../tutorials/QuickStart_swate.html "Quickstart Swate"
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+[kb-QuickStart_arc]: ../tutorials/QuickStart_arcCommander.html "Quickstart ARC"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
