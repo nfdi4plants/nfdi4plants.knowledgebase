@@ -104,7 +104,8 @@
       <i class="help">
         last updated at 2022-08-05
       </i>
-      <blockquote>
+       <!-- Id suggest, to use only the date / published in yaml and skip the versioning -->
+<blockquote>
 <p>V1.0
 August 2022</p>
 </blockquote>
@@ -123,54 +124,74 @@ August 2022</p>
 <li><a href="#isaassayxlsx">isa.assay.xlsx</a></li>
 </ul>
 </li>
-<li><a href="#runs">Workflows</a></li>
+<li><a href="#workflows">Workflows</a></li>
 <li><a href="#runs">Runs</a></li>
-<li><a href="#cheatsheet">Cheatsheet</a></li>
+<li><a href="#cheat-sheet">Cheat sheet</a></li>
 </ul>
 <nfdi-h2 id="violas-arc">Viola's ARC</nfdi-h2>
-<p>Let's imagine a scenario where a project partner suggests to you at a conference to use this cool new platform called ARC for your collaboration. Convinced by the versioning system and the single-point-of-entry logic, you are motivated to set up your first ARC and fill it with your latest project results when returning to the lab. Back home, however, you only remember the basic ARC structure and something about some isa.xlsx files. So how do you start and get your project into the shown blank ARC, shared by your partner?</p>
+<p>Let's imagine a scenario where a project partner suggests to you at a conference to use this cool new platform called ARC for your collaboration.</p>
+<!-- I wouldn't really call ARC a platform -->
+<p>Convinced by the versioning system and the single-point-of-entry logic, you are motivated to set up your first ARC and fill it with your latest project results when returning to the lab. Back home, however, you only remember the basic ARC structure and something about some isa.xlsx files. So how do you start and get your project into the provided blank ARC, shared by your partner?</p>
+<!-- why is the shared ARC blank? -->
 <p><img src="../img/ARC_FolderStructure.png" alt="ARCStructure" /></p>
-<p>To answer this question, we will first take a look back on Viola's metadata example:</p>
+<p>To answer this question, we will first take a look back on Viola's <a href="../fundamentals/Metadata.html" title="Metadata">metadata</a> example:</p>
 <blockquote>
-<p>Viola investigates the effect of the plant circadian clock on sugar metabolism in <em>W. mirabilis</em>. For her PhD project, which is part of an EU-funded consortium in Prof. Beetroot's lab, she acquires seeds from a South-African botanical society. Viola grows the plants under different light regimes, harvests leaves from a two-day time series experiment, extracts polar metabolites as well as RNA and submits the samples to nearby core facilities for metabolomics and transcriptomics measurements, respectively. After a few weeks of iterative consultation with the facilities' heads as well as technicians and computational biologists involved, Viola receives back a wealth of raw and processed data. From the data she produces figures and wraps everything up to publish the results in the <em>Journal of Wonderful Plant Sciences</em>.</p>
+<p>Viola investigates the effect of the plant circadian clock on sugar metabolism in <em>W. mirabilis</em>. For her PhD project, which is part of an EU-funded consortium in Prof. Beetroot's lab, she acquires seeds from a South-African Botanical Society. Viola grows the plants under different light regimes, harvests leaves from a two-day time series experiment, extracts polar metabolites as well as RNA and submits the samples to nearby core facilities for metabolomics and transcriptomics measurements, respectively. After a few weeks of iterative consultation with the facilities' heads as well as technicians and computational biologists involved, Viola receives back a wealth of raw and processed data. From the data she produces figures and wraps everything up to publish the results in the <em>Journal of Wonderful Plant Sciences</em>.</p>
 </blockquote>
-<p>The entire information given in this example can be stored within an ARC. To illustrate the ARC specifications, we will highlight and explain every (sub)directory and ISA-file of the ARC with references of Viola's example.</p>
+<p>The entire information given in this example can be stored within an ARC. To illustrate the <a href="https://github.com/nfdi4plants/ARC-specification/" title="ARC specifications">ARC specifications</a>, we will highlight and explain every (sub)directory and ISA-file of the ARC with references to Viola's example.</p>
 <nfdi-h2 id="isa.investigation.xlsx">isa.investigation.xlsx</nfdi-h2>
-<p>Use the ISA investigation workbook to record administrative metadata of your project. In our example, the title of the project, the contact persons, and related publications correspond to such metadata. Besides that, the workbook can also contain a short description of your project, but also lists included studies with respective design types assays, protocols, etc. Although we recommend to use the ARC Commander for adding these metadata, you can of course fill the workbook (and also the <a href="#isastudyxlsx">isa.study.xlsx</a> and <a href="#isaassayxlsx">isa.assay.xlsx</a>) manually.
-<img src="../img/ARC_investigation.jpg" alt="Investigation" /></p>
+<p>The ISA investigation workbook allows you to record administrative metadata of your project. In Viola's example, the title of the project, the contact persons, and related publications correspond to such metadata. Besides that, the workbook can also contain a short description of your project, but also lists included studies with respective design types, assays, protocols, etc.. Although we recommend to use the <a href="../implementation/ArcCommander.html" title="DataPLANT ARC Commander">ARC Commander</a> for adding these metadata, you can of course fill the workbook (and also the <a href="#isastudyxlsx">isa.study.xlsx</a> and <a href="#isaassayxlsx">isa.assay.xlsx</a>) manually.</p>
+<!-- I'd suggest to fill out / or "zoom away" the blank cells in the investigation image -->
+<p><img src="../img/ARC_investigation.jpg" alt="Investigation" /></p>
 <nfdi-h2 id="studies">Studies</nfdi-h2>
-<p>Use the Studies (sub)folders to collect material and resources used within your investigation. Corresponding information in Viola's project are from where she got her seeds, how she grew the plants, and the design of the experiment.</p>
-<p>In case your investigation contains more than one study, each of these studies is placed in an individual subdirectory. Use the &quot;resources&quot; directory to store material samples or external data as virtual sample files. You can use the protocol subdirectory to store free-text protocols describing the sample or material creation process.</p>
+<p>In the <code>studies</code> (sub)folders you can collect material and resources used within your studies. Corresponding information in Viola's project include the source of her seeds (South-African Botanical Society), how she grew the plants, and the design of the experiment (two-day time series, etc.).</p>
+<p>In case your investigation contains more than one study, each of these studies is placed in an individual subdirectory. The &quot;resources&quot; directory allows you to store material samples or external data as virtual sample files. You can use the protocol subdirectory to store free-text protocols that describe how the samples or materials were created.</p>
+<!-- 
+The distinction of investigation vs. study could be clearer in this and the following images.
+Investigation: "Effect of plant circadian clock on sugar metabolism in *W. mirabilis*"
+Study1: "Time series of *W. mirabilis*" grown under different light regimes"
+Study2: "Time series of *W. mirabilis*" grown under blue and red light"
+ -->
 <p><img src="../img/ARC_studiesSubdirectories.jpg" alt="StuSubdirectories" /></p>
 <nfdi-h3 id="isa.study.xlsx">isa.study.xlsx</nfdi-h3>
-<p>Every study needs to contain one isa.study.xlsx file to specify the characteristics of all material and resources. Resources described in a study file can be the input for one or multiple assays or workflows. The workbook contains two worksheets:</p>
+<p>Every study contains one <code>isa.study.xlsx</code> file to specify the characteristics of all material and resources. Resources described in a study file can be the input for one or multiple <a href="#assays">assays</a> or <a href="#workflows">workflows</a>. The workbook contains (at least) two worksheets:</p>
+<!-- the reference to "workflows" might be a bit early -->
 <ul>
-<li>&quot;2022_CircadianClock&quot;: A worksheet with the name of your study to annotate the inherent properties of your source material following the ISA model. While this can be done manually, we recommend using our ontology supported annotation tool <a href="QuickStart_swate.html">Swate</a>.</li>
-<li>&quot;Study&quot;: Viola collected the administrative metadata of her study in this worksheet. These information can later be transferred into the isa.investigation.xlsx using the ARC Commander.</li>
+<li>&quot;2022_CircadianClock&quot;: A worksheet with the name of your study to annotate the properties of your source material following the ISA model. While this can be done manually, we recommend using our ontology supported annotation tool <a href="QuickStart_swate.html">Swate</a>.</li>
+</ul>
+<!-- The sheet name is not obligatory to be the exact same as the "Study Identifier"-->
+<ul>
+<li>&quot;Study&quot;: Viola collected the administrative metadata of her study in this worksheet. This information can later be transferred into the <code>isa.investigation.xlsx</code> using the <a href="../implementation/ArcCommander.html" title="DataPLANT ARC Commander">ARC Commander</a>.</li>
 </ul>
 <p><img src="../img/ARC_study.jpg" alt="ISA-study" />
 <img src="../img/ARC_studyMetadata.jpg" alt="ISA-studyMetadata" /></p>
 <nfdi-h2 id="assays">Assays</nfdi-h2>
-<p>The assays folder allows you to store data and metadata from experimental processes or analytical measurements. Each assay is a collection of files stored in a single directory, including corresponding metadata files in form of an isa.assay.xlsx. Therefore, Viola needs two subdirectories, one for her metabolomics and one for her transcriptomics experiment. Assay data files and free-text protocols are placed in an individual subdirectory. Data files produced by an assay can be the input for one or multiple workflows.</p>
+<p>The <code>assays</code> folder allows you to store data and metadata from experimental processes or analytical measurements. Each assay is a collection of files stored in a single directory, including corresponding metadata files in form of an <code>isa.assay.xlsx</code>. Viola needs two subdirectories, one for her metabolomics and one for her transcriptomics dataset, respectively. Assay data files and free-text protocols are placed in individual subdirectories. Data files produced by an assay can be the input for one or multiple <a href="#workflows">workflows</a>.</p>
+<!-- See above. I'd recommend to fill out as completely as possible. -->
 <p><img src="../img/ARC_assaysSubdirectories.jpg" alt="AssaySubdirectories1" />
 <img src="../img/ARC_MetSubdirectories.jpg" alt="AssaySubdirectories2" /></p>
 <nfdi-h3 id="isa.assay.xlsx">isa.assay.xlsx</nfdi-h3>
-<p>Viola can annotate her experimental workflows of the metabolomics and transcriptomics assays with process parameters in the isa.assay.xlsx file, which needs to be present for every assay. The workbook contains two or more worksheets, depending on the number of used protocols:</p>
+<p>Viola can annotate her experimental workflows of the metabolomics and transcriptomics assays with process parameters in the <code>isa.assay.xlsx</code> file, which needs to be present for every assay. The workbook contains two or more worksheets, depending on the number of used protocols:</p>
+<!-- this would potentially also apply to isa.study.xlsx -->
 <ul>
-<li>&quot;MetaboliteExtraction&quot;: A worksheet with the name of the used protocol to annotate the experimental workflow, in this case for extraction of metabolites. While this can be done manually, we recommend using our ontology supported annotation tool <a href="QuickStart_swate.html">Swate</a>.</li>
-<li>&quot;MetaboliteMeasurement&quot;</li>
-<li>&quot;Assay&quot;: Viola collected the administrative metadata of her assay in this worksheet. These information can later be transferred into the isa.investigation.xlsx using the ARC Commander.</li>
+<li>&quot;MetaboliteExtraction&quot;: A worksheet with the name of the used protocol to annotate the experimental workflow, in this case for extraction of metabolites. While this can be done manually, we recommend using our ontology supported annotation tool <a href="../tutorials/QuickStart_swate.html" title="Quickstart Swate">Swate</a>.</li>
+</ul>
+<!-- See above. We'd also have to update this to the `Protocol Type` + `Protol REF` routine, once implemented. `Protol REF` would be the name of the protocol. Sheet name not "relevant" anymore -->
+<ul>
+<li>&quot;MetaboliteMeasurement&quot;: A worksheet that describes the quantification of polar metabolites using gas-chromatography mass-spectrometry.</li>
+<li>&quot;Assay&quot;: Viola collected the administrative metadata of her assay in this worksheet. This information can later be transferred into the <code>isa.investigation.xlsx</code> using the ARC Commander.</li>
 </ul>
 <p><img src="../img/ARC_IsaAssay.jpg" alt="IsaAssay" />
 <img src="../img/ARC_IsaAssayMetadata.jpg" alt="AssayMetadata" /></p>
 <nfdi-h2 id="workflows">Workflows</nfdi-h2>
-<p>Workflows in ARCs represent processing steps used in computational analyses and other data transformations of studies and assays to generate run results. Typical examples include data cleaning and preprocessing, computational analysis, or visualization.</p>
-<p>Viola received for her transcriptome and metabolome assays various processed data files, which she now can use to generate some nice plots. Additionally, the computational biologists sent her the code used for data processing, including an executable Common Workflow Language (CWL) file, which contains a standardized tool or workflow description. She stored these files in individual subdirectories for each workflow.</p>
+<p>In an ARC <code>workflows</code> represent the processing steps used in computational analyses and other transformations of data originating from studies and assays. Typical examples include data cleaning and preprocessing, computational analysis, or visualization. The outcomes of these workflows (&quot;run results&quot;) are stored in <a href="#runs">runs</a>.</p>
+<p>Viola received for her transcriptome and metabolome assays various processed data files, which she now can use to generate some nice plots. Additionally, the computational biologists sent her the code used for data processing, including an executable Common Workflow Language (CWL) file, which contains a standardized tool or workflow description. She stores these files in individual subdirectories for each workflow.</p>
 <nfdi-h2 id="runs">Runs</nfdi-h2>
-<p>After Viola generated her plots, she placed them in individual subdirectories, specific to the run they were generated with. In general, use the runs folder to store plots, tables, or similar result files that derive from computations on assays and external data.</p>
-<nfdi-h2 id="cheatsheet">Cheatsheet</nfdi-h2>
-<p>We hope that these examples nicely illustrated the ARC structure and that you are now ready to produce your own ARCs. Use the figure below as a cheatsheet to remember where to store which files.</p>
+<p>After Viola generated her plots, she placed them in individual subdirectories, specific to the run they were generated with. In general, you can use the runs folder to store plots, tables, or similar result files that derive from computations on study, assay, external data or other runs.</p>
+<nfdi-h2 id="cheat-sheet">Cheat sheet</nfdi-h2>
+<p>We hope that these examples nicely illustrated the ARC structure and that you are now ready to produce your own ARCs. Use the figure below as a cheat sheet to remember where to store which files. Or follow the <a href="../tutorials/QuickStart_arc.html" title="Quickstart ARC">QuickStart on ARCs</a> to try it out yourself.</p>
 <p><img src="../img/ARC_IllustratedFolderStructure.jpg" alt="IllustratedARCStructure" /></p>
+<!--  Links -->
 
       <h3>
         Dataplant Support
