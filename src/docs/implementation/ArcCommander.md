@@ -21,11 +21,11 @@ Apart from managing the ARC as a whole in terms of file handling, the ARC Comman
 
 ## What the ARC Commander does not do
 
-Unless you actively request it to, the ARC Commander does not delete, modify or move files within your ARC. While it may help with suggestions, the ARC Commander will not guess your intentions or override your decisions. For instance, the arcCommander will not search any (ISA) metadata or other data files in your ARC and move them into the intended folders. If such files exist somewhere in your ARC, they will simply be ignored as "additional payload" (see [ARC specifications][gh-ArcSpecs]). The ARC Commander does not operate / manage your ARC automatically. You have the full control over all actions. Whenever you decide to add or link new (meta)data in your ARC or synchronize it with the [DataHUB][kb-DataHub], you can do so with a few commands.
+Unless you actively request it to, the ARC Commander does not delete, modify or move files within your ARC. While it may help with suggestions, the ARC Commander will not guess your intentions or override your decisions. For instance, the ARC Commander will not search any (ISA) metadata or other data files in your ARC and move them into the intended folders. If such files exist somewhere in your ARC, they will simply be ignored as "additional payload" (see [ARC specifications][gh-ArcSpecs]). The ARC Commander does not operate / manage your ARC automatically. You have the full control over all actions. Whenever you decide to add or link new (meta)data in your ARC or synchronize it with the [DataHUB][kb-DataHub], you can do so with a few commands.
 
-## Do I have to use the arcCommander?
+## Do I have to use the ARC Commander?
 
-No. As with most tools and services developed in DataPLANT, you are not obliged to use the arcCommander to benefit from DataPLANT's support in [FAIR RDM][kb-ResearchDataManagement].
+No. As with most tools and services developed in DataPLANT, you are not obliged to use the ARC Commander to benefit from DataPLANT's support in [FAIR RDM][kb-ResearchDataManagement].
 However, we'd highly recommend to check it following the [ARC quickstart][kb-QuickStart_arc].
 
 <!-- Or do you prefer to... -->
@@ -43,9 +43,9 @@ The ARC Commander runs on current Windows, Mac and Linux operating systems. At t
 
 For details, please
 
- - try out the [QuickStart ARC Commander][kb-QuickStart_arcCommander],
- - check the [GitHub repository][gh-ArcCommander] to download and install the latest ARC Commander release on your device, or
- - explore the [ARC Commander wiki pages][gh-ArcCommander-Wiki] for in-depth details.
+ - try out the [QuickStart ARC Commander][kb-QuickStart_ARC Commander],
+ - check the [GitHub repository][gh-ARC Commander] to download and install the latest ARC Commander release on your device, or
+ - explore the [ARC Commander wiki pages][gh-ARC Commander-Wiki] for in-depth details.
 
 <!-- Links to DataPLANT knowledge base (kb-) -->
 
@@ -66,7 +66,7 @@ For details, please
 [kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 
 <!-- kb-Tutorials -->
-[kb-QuickStart_arcCommander]: ../tutorials/QuickStart_arcCommander.html "QuickStart ARC Commander"
+[kb-QuickStart_ARC Commander]: ../tutorials/QuickStart_ARC Commander.html "QuickStart ARC Commander"
 
 
 <!-- Links to DataPLANT Homepage (hp-) -->
@@ -79,8 +79,8 @@ For details, please
 
 [gh-DataPlant]: <https://github.com/nfdi4plants/> "GitHub DataPLANT"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
-[gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/> "ArcCommander"
-[gh-ArcCommander-Wiki]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
+[gh-ARC Commander]: <https://github.com/nfdi4plants/ARC Commander/> "ARC Commander"
+[gh-ARC Commander-Wiki]: <https://github.com/nfdi4plants/ARC Commander/wiki> "ARC Commander Wiki"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
 
 <!-- Links to external (ext-) sources -->
