@@ -259,6 +259,7 @@ British English
 <!-- kb-Tutorials -->
 [kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
 [kb-QuickStart_swate]: ../tutorials/QuickStart_swate.html "Quickstart Swate"
+[kb-QuickStart_arcCommander]: ../tutorials/QuickStart_arcCommander.html "QuickStart ARC Commander"
 
 <!-- Links to DataPLANT Homepage (hp-) -->
 
