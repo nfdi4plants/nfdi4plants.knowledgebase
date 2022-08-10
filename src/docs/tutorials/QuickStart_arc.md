@@ -3,6 +3,7 @@ layout: docs
 title: ARC QuickStart
 published: 2022-08-05
 author: Martin Kuhl
+author_orcid: https://orcid.org/0000-0002-8493-1077
 author_github: martin-kuhl
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
@@ -29,7 +30,7 @@ We are very happy that you chose our tools and infrastructure to create and shar
 - [Cheatsheet](#cheatsheet)
 
 ## Viola's ARC
-Let's imagine a scenario where a project partner suggests to you at a conference to use this cool new platform called ARC for your collaboration. Convinced by the versioning system and the single-point-of-entry logic, you are motivated to set up your first ARC and fill it with your latest project results when returning to the lab. Back home, however, you only remember the basic ARC structure and something about some isa.xlsx files. So how do you start and get your project into the shown blank ARC, shared by your partner?
+Let's imagine a scenario where your project partner suggests at a conference to use this cool new Annotated Research Context (ARC) for your collaboration. Convinced by the versioning system and the single point of entry logic, you are motivated to set up your first own ARC after returning to the lab and fill it with your latest project results. Back home, however, you only remember the basic ARC structure and something about some isa.xlsx files. So how do you transfer your project into the empty ARC your project partner shared with you?
 
 ![ARCStructure](../img/ARC_FolderStructure.png)
 
