@@ -1,0 +1,170 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - Swate
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Fundamentals
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/index.html">Introduction</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/ResearchDataManagement.html">Research Data Management</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/FairDataPrinciples.html">FAIR Data Principles</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/Metadata.html">Metadata</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataSharing.html">Data Sharing</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataPublications.html">Data Publications</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataManagementPlan.html">Data Management Plan</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/VersionControlGit.html">Version Control & Git</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">Public Data Repositories</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/PersistentIdentifiers.html">Persistent Identifiers</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Implementation within DataPLANT
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">Annotated Research Context</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/DataHub.html">DataHUB</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Training & Tutorials
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arc.html">QuickStart on ARCs</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arcCommander.html">ARC Commander QuickStart</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_swate.html">Swate QuickStart</h1>
+<!-- 
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Training & Tutorials
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arc.html">ARC QuickStart</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/swate_videos.html">Swate Tutorial Videos</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/DataHub_GitHubDesktop.html">Sync ARCs via GitHub Desktop</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/IntroductionToMarkdown.html">Markdown</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          -->
+        </div>
+        
+      </nfdi-sidebar-element>
+      <h1 class="front-header">
+        Swate
+      </h1>
+      <i class="help">
+        last updated at 2022-08-11
+      </i>
+      <nfdi-toc></nfdi-toc>
+      <p>Swate (Swate workflow annotation tool for Excel) is one of two central DataPLANT tools designed for convenient interaction with your <a href="../implementation/AnnotatedResearchContext.html" title="Annotated Research Context">ARC</a> (the other one being the <a href="../implementation/ArcCommander.html" title="ARC Commander">ARC Commander</a>).
+Swate supports you in adding metadata to your ISA Study and ISA Assay files <!-- link to ISA model --> by making the usage of ontologies <!-- link to ontology --> for your workflow annotation as easy and intuitive as possible.</p>
+<nfdi-h2 id="swate-for-ontology-driven-metadata-annotation">Swate for ontology driven metadata annotation</nfdi-h2>
+<p>A key factor in the development of research data management tools is finding the balance between standardization and the requirements of researchers for annotating their experimental workflows. The spreadsheet-based version of the well-established ISA framework allows for ontology-driven metadata annotation of these workflows in a simple and accessible way. However, finding the appropriate ontology term can be extremely tedious and often results in incomplete metadata annotation. To overcome this hurdle, DataPLANT offers SWATE to facilitate the generation of ISA-Tab annotation tables with an integrated search function and an ontology guided metadata annotation.</p>
+<p>Fully integrated in Microsoft Excel (Excel online, Excel 365, and Excel 2019), Swate leverages standard spreadsheet features, such as color coding or highlighting (increasing user experience and acceptance) without polluting the actual metadata information separately stored in the spreadsheetML. Users can add and delete building blocks to their ISA compliant annotation tables, describing the data in a clear representation. These building blocks can either represent a</p>
+<ul>
+<li><code>Source Name</code> (input, one per table),</li>
+<li><code>Characteristic</code>,</li>
+<li><code>Parameter</code>,</li>
+<li><code>Factor</code>,</li>
+<li><code>Component</code>,</li>
+<li><code>Protocol Column</code> (Protocol REF/Protocol Type), or an</li>
+<li><code>Output Column</code> (Sample Name/Raw Data File//Derived Data File, one per table).</li>
+</ul>
+<p>Hierarchical combination of the ISA-container ontology (Characteristic, Parameter, Factor, Component) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on within your annotation table (Parameter [temperature] or Factor [temperature]). For more information on these building blocks, please check our <a href="">annotation principles</a>. <!-- update and link annotation principles --></p>
+<p><img src="../img/Swate_BuildingBlocks.jpg" alt="Building Blocks" /></p>
+<p>Ontology terms within the Swate database (SwateDB) can not only be used to standardize the column headers of your annotation table, but also for standardization of the respective values. When choosing the option &quot;related term directed search&quot;, Swate will suggest metadata to you, as it will only search for children terms <!-- link to ontology--> of the column header within the database. Of course, users are not forced to use this feature in case they opt for more flexibility.</p>
+<p><img src="../img/Swate_TermRelatedSearch.jpg" alt="TermRelatedSearch" /></p>
+<nfdi-h2 id="templates-for-convenient-metadata-annotation">Templates for convenient metadata annotation</nfdi-h2>
+<p>Metadata annotation as part of the data submission routine to public endpoint repositories is often bothersome due to a high variability between repository requirements. This can become particularly inconvenient when the same metadata is submitted repeatedly, e.g. to unrelated endpoint repositories. To assist researchers in this process, DataPLANT provides a growing collection of templates as a starting point for their annotation tables. The template design process is initiated “backwards”, starting from the requirements of end-point repositories and thereby, compliance with metadata standards. Our Data stewards supervise the implementation of ontologies and the use of controlled vocabulary as required by the target repository, and simultaneously contribute to the development of the DataPLANT broker ontology <!-- linkt to NFDI4PSO-->.<br />
+From a technical perspective, these templates are ISA Protocols containing various Characteristics, Parameters, and the Study specific Factor. DataPLANT provides checklists and requirements of endpoint repositories as templates that are considered useful for various technologies and common standards, e.g. MIAPPE or MINSEQE. The templates are hosted on GitHub and can directly be integrated to the isa.assay.xlsx using Swate. Once loaded into the table by the experimenter, they still can be modified to special needs in the sense of adding or deleting annotation building blocks. The modularity of the system also gives labs and institutions the possibility to create their own lab specific templates for experiments that are frequently run in the lab, e.g. a metabolomics experiment of a measurement facility. High flexibility is fostered by offering a manual or Swate-supported template customization, distribution, and use.</p>
+<p><img src="../img/Swate_Templates.jpg" alt="SwateTemplates" /></p>
+<nfdi-h2 id="there-is-no-wrong-or-right">There is no wrong or right</nfdi-h2>
+<p>Neither does DataPLANT tell you which building blocks or terms you should use for your data annotation, nor do we enforce the usage of our templates. These shall only serve as a starting point for your annotation table and CAN assist you during data submission to specific endpoint repositories.</p>
+<p>If you could not find a fitting term for your data annotation, you can try to use Swate's Advanced Term Search. If you still could not find a fitting term, use free text input, as a non-ontology supported annotation is still better than no annotation. Feel free to <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">contact us</a> or open an issue in our <a href="https://helpdesk.nfdi4plants.org">Helpdesk</a> if you want to request the addition of a term to our broker ontology.</p>
+<nfdi-h2 id="whats-next">What`s next?</nfdi-h2>
+<p>After reading this article, you should</p>
+<ul>
+<li>check the <a href="../tutorials/QuickStart_swate.htlm" title="Swate QuickStart">Swate QuickStart</a> and</li>
+<li>explore the <a href="https://github.com/nfdi4plants/Swate/wiki" title="Swate Wiki">Swate docs</a> for an in-depth details.</li>
+</ul>
+<!-- Links to DataPLANT knowledge base (kb-) -->
+<!-- kb-Fundamentals -->
+<!-- kb-Implementation -->
+<!-- kb-Tutorials -->
+<!-- Links to DataPLANT Homepage (hp-) -->
+<!-- Links to DataPLANT GitHub (gh-) -->
+<!-- Links to external (ext-) sources -->
+
+      <h3>
+        Dataplant Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+          directly
+        </a>
+        .
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/Swate.md" style="margin-left: auto; display: block; width: 130px;">
+          ✏️ Edit this page
+        </a>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>
