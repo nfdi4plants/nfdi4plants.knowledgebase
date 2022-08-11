@@ -11,8 +11,6 @@ article_status: published
 todo:
 ---
 
-
-
 This document is work in progress. If you experience any inconsistencies, have questions or would like to suggest additions, please feel free to <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">contact us</a> or open an issue in our [Helpdesk](<https://helpdesk.nfdi4plants.org>).
 
 We are very happy that you chose our tools and infrastructure to create and share your own ARCs. In this QuickStart we focus on explaining the ARC structure and its different components.
@@ -34,7 +32,7 @@ Let's imagine a scenario where your project partner suggests at a conference to 
 
 ![ARCStructure](../img/ARC_FolderStructure.png)
 
-To answer this question, we will first take a look back on Viola's [metadata][kb-Metadata] example:
+To answer this question, we will first take a look back at Viola's [metadata][kb-Metadata] example:
 
 > Viola investigates the effect of the plant circadian clock on sugar metabolism in *W. mirabilis*. For her PhD project, which is part of an EU-funded consortium in Prof. Beetroot's lab, she acquires seeds from a South-African Botanical Society. Viola grows the plants under different light regimes, harvests leaves from a two-day time series experiment, extracts polar metabolites as well as RNA and submits the samples to nearby core facilities for metabolomics and transcriptomics measurements, respectively. After a few weeks of iterative consultation with the facilities' heads as well as technicians and computational biologists involved, Viola receives back a wealth of raw and processed data. From the data she produces figures and wraps everything up to publish the results in the *Journal of Wonderful Plant Sciences*.
 
@@ -114,5 +112,5 @@ We hope that these examples nicely illustrated the ARC structure and that you ar
 [kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
 [kb-ArcCommander]: ../implementation/ArcCommander.html "DataPLANT ARC Commander"
 [kb-QuickStart_swate]: ../tutorials/QuickStart_swate.html "Quickstart Swate"
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arcCommander.html "Quickstart ARC"
+[kb-QuickStart_arcCommander]: ../tutorials/QuickStart_arcCommander.html "QuickStart ARC Commander"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
