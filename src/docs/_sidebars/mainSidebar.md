@@ -16,6 +16,7 @@
 
 ```Implementation within DataPLANT
 # Annotated Research Context:/docs/implementation/AnnotatedResearchContext.html
+# ARC Commander:/docs/implementation/ArcCommander.html
 # DataHUB:/docs/implementation/DataHub.html
 ```
 
