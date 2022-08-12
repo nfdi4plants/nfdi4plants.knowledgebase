@@ -17,6 +17,7 @@
 ```Implementation within DataPLANT
 # Annotated Research Context:/docs/implementation/AnnotatedResearchContext.html
 # ARC Commander:/docs/implementation/ArcCommander.html
+# Swate - a workflow annotation tool for Excel:/docs/implementation/Swate.html
 # DataHUB:/docs/implementation/DataHub.html
 ```
 
@@ -28,7 +29,6 @@
 
 <!-- 
 ```Training & Tutorials
-# ARC QuickStart:/docs/tutorials/QuickStart_arc.html
 # Swate Tutorial Videos:/docs/tutorials/swate_videos.html
 # Sync ARCs via GitHub Desktop:/docs/tutorials/DataHub_GitHubDesktop.html
 # Markdown:/docs/tutorials/IntroductionToMarkdown.html

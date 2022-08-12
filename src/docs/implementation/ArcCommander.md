@@ -7,12 +7,12 @@ author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
-article_status: draft
+article_status: published
 ---
 
 ## A tool to make FAIR RDM easy
 
-The ARC Commander is one of two central DataPLANT tools designed for convenient interaction with your [ARC][kb-AnnotatedResearchContext] (the other one being [SWATE][gh-Swate]).
+The ARC Commander is one of two central DataPLANT tools designed for convenient interaction with your [ARC][kb-AnnotatedResearchContext] (the other one being [SWATE][kb-Swate]).
 It supports you in many actions on files within your ARC enabling you to sort, associate and keep track of your files.
 
 The major function of the ARC Commander is to set up the ARC directory and put it under [version-control][kb-VersionControlGit] for you. The ARC Commander creates the directory structure with the root directories "studies", "assays", "runs", and "workflows" (see [ARC][kb-AnnotatedResearchContext] for details).  According to the design of your project, you can use the ARC Commander to create study and assay sub-directories and add the associated details and data files. While setting up the root directory structure, the ARC Commander initializes your ARC as a [git][kb-VersionControlGit] repository, allowing you to track changes of your ARC and easily back-up and synchronize it with the [DataHUB][kb-DataHub]. This includes an efficient mechanism to keep track of your large data files <!-- with the git lfs extension -->. The ARC Commander makes it straight-forward to download shared ARCs from the DataHUB for collaboration.
@@ -64,6 +64,7 @@ For details, please
 <!-- kb-Implementation -->
 [kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
 [kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
+[kb-Swate]: ../implementation/Swate.html "Swate"
 
 <!-- kb-Tutorials -->
 [kb-QuickStart_ARC Commander]: ../tutorials/QuickStart_ARC Commander.html "QuickStart ARC Commander"
