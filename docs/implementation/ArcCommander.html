@@ -70,6 +70,7 @@
         </div>
         <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">Annotated Research Context</h1>
 <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/Swate.html">Swate - a workflow annotation tool for Excel</h1>
 <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/DataHub.html">DataHUB</h1>
 
       </nfdi-sidebar-element>
@@ -87,8 +88,7 @@
         <div slot="title">
           Training & Tutorials
         </div>
-        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arc.html">ARC QuickStart</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/swate_videos.html">Swate Tutorial Videos</h1>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/swate_videos.html">Swate Tutorial Videos</h1>
 <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/DataHub_GitHubDesktop.html">Sync ARCs via GitHub Desktop</h1>
 <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/IntroductionToMarkdown.html">Markdown</h1>
 
@@ -107,7 +107,7 @@
       </i>
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="a-tool-to-make-fair-rdm-easy">A tool to make FAIR RDM easy</nfdi-h2>
-<p>The ARC Commander is one of two central DataPLANT tools designed for convenient interaction with your <a href="../implementation/AnnotatedResearchContext.html" title="Annotated Research Context">ARC</a> (the other one being <a href="https://github.com/nfdi4plants/Swate/wiki" title="Swate Wiki">SWATE</a>).
+<p>The ARC Commander is one of two central DataPLANT tools designed for convenient interaction with your <a href="../implementation/AnnotatedResearchContext.html" title="Annotated Research Context">ARC</a> (the other one being <a href="../implementation/Swate.html" title="Swate">SWATE</a>).
 It supports you in many actions on files within your ARC enabling you to sort, associate and keep track of your files.</p>
 <p>The major function of the ARC Commander is to set up the ARC directory and put it under <a href="../fundamentals/VersionControlGit.html" title="Version Control and Git">version-control</a> for you. The ARC Commander creates the directory structure with the root directories &quot;studies&quot;, &quot;assays&quot;, &quot;runs&quot;, and &quot;workflows&quot; (see <a href="../implementation/AnnotatedResearchContext.html" title="Annotated Research Context">ARC</a> for details).  According to the design of your project, you can use the ARC Commander to create study and assay sub-directories and add the associated details and data files. While setting up the root directory structure, the ARC Commander initializes your ARC as a <a href="../fundamentals/VersionControlGit.html" title="Version Control and Git">git</a> repository, allowing you to track changes of your ARC and easily back-up and synchronize it with the <a href="../implementation/DataHub.html" title="DataPLANT DataHUB">DataHUB</a>. This includes an efficient mechanism to keep track of your large data files <!-- with the git lfs extension -->. The ARC Commander makes it straight-forward to download shared ARCs from the DataHUB for collaboration.</p>
 <p>Apart from managing the ARC as a whole in terms of file handling, the ARC Commander supervises the integrity and connections between files of your ARC. It ensures that the ARC is intact following the <a href="https://github.com/nfdi4plants/ARC-specification/" title="ARC specifications">ARC specifications</a> <!-- is this really true? --> as well as the ISA model to provide machine-readability of metadata. By (automatically) registering your studies and assays including their associated meta(data) files in the <code>isa.investigation.xlsx</code> registry file, the ARC Commander makes the resources in your ARC identifiable and findable. It would also warn you about possible inconsistencies, such as duplicate ISA metadata files (e.g. every ARC stores only one <code>isa.investigation.xlsx</code>) or studies and assays that may have been added manually and not registered, yet.</p>
