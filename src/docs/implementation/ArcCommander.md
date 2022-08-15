@@ -67,7 +67,7 @@ For details, please
 [kb-Swate]: ../implementation/Swate.html "Swate"
 
 <!-- kb-Tutorials -->
-[kb-QuickStart_ARC Commander]: ../tutorials/QuickStart_ARC Commander.html "QuickStart ARC Commander"
+[kb-QuickStart_ARC Commander]: ../tutorials/QuickStart_arcCommander.html "QuickStart ARC Commander"
 
 
 <!-- Links to DataPLANT Homepage (hp-) -->
@@ -80,8 +80,8 @@ For details, please
 
 [gh-DataPlant]: <https://github.com/nfdi4plants/> "GitHub DataPLANT"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
-[gh-ARC Commander]: <https://github.com/nfdi4plants/ARC Commander/> "ARC Commander"
-[gh-ARC Commander-Wiki]: <https://github.com/nfdi4plants/ARC Commander/wiki> "ARC Commander Wiki"
+[gh-ARC Commander]: <https://github.com/nfdi4plants/arcCommander> "ARC Commander"
+[gh-ARC Commander-Wiki]: <https://github.com/nfdi4plants/arcCommander/wiki> "ARC Commander Wiki"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
 
 <!-- Links to external (ext-) sources -->
