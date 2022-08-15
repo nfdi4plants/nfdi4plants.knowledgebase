@@ -43,7 +43,7 @@ The ARC Commander runs on current Windows, Mac and Linux operating systems. At t
 
 For details, please
 
- - try out the [QuickStart ARC Commander][kb-QuickStart_ARC Commander],
+ - try out the [QuickStart ARC Commander][kb-QuickStart_arcCommander],
  - check the [GitHub repository][gh-ARC Commander] to download and install the latest ARC Commander release on your device, or
  - explore the [ARC Commander wiki pages][gh-ARC Commander-Wiki] for in-depth details.
 
@@ -67,7 +67,7 @@ For details, please
 [kb-Swate]: ../implementation/Swate.html "Swate"
 
 <!-- kb-Tutorials -->
-[kb-QuickStart_ARC Commander]: ../tutorials/QuickStart_arcCommander.html "QuickStart ARC Commander"
+[kb-QuickStart_arcCommander]: ../tutorials/QuickStart_arcCommander.html "QuickStart ARC Commander"
 
 
 <!-- Links to DataPLANT Homepage (hp-) -->
