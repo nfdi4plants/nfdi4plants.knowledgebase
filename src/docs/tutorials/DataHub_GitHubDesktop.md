@@ -14,9 +14,6 @@ titlepage-rule-color: "4FB3D9"
 titlepage-background: ../_ignored/pandoc_tests/sources/dataplant_titlePage.drawio.png
 ---
 
-<!-- # titlepage-background: ../_ignored/pandoc_tests/sources/sources/dataplant_titlePage.png -->
-
-
 ## Goal
 
 Use [GitHub Desktop](https://desktop.github.com/) to synchronize ARCs between the DataHUB and your local machine.
@@ -24,8 +21,6 @@ GitHub Desktop is a user-friendly software to help you synchronize (pull, commit
 
 > Note: This authenticates your local GitHub Desktop to communicate with the DataHUB.
 > You need to do this only once per machine (unless you specify an expiration date in step 4)
-
-
 
 ## Steps
 
