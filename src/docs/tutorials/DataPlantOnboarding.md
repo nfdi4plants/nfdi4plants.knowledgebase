@@ -8,6 +8,12 @@ author_github: brilator
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
 article_status: draft
+titlepage: true
+titlepage-color: "2D3E50"
+titlepage-text-color: "4FB3D9"
+titlepage-rule-color: "4FB3D9"
+titlepage-rule-height: 2
+titlepage-background: ../_ignored/pandoc_tests/sources/dpbackground.pdf
 ---
 
 We are very happy that you would like to employ or contribute to the DataPLANT tools and services.
