@@ -1,5 +1,10 @@
+# Conversion of knowledge base articles to polished pdf
 
-# Conversion of knowledgebase articles to polished pdf
+Goal:
+
+1. Hand-out materials as PDF
+1. Have code chunks copy-paste friendly
+1. Document everything in one place (GitHub) and format (Markdown)
 
 ## Dependencies
 
@@ -24,7 +29,7 @@ See original repo for instructions and more examples.
 
 Since `pandoc` does not support to specify a path-to-template, the template needs to be copied to the default local `pandoc` templates folder.
 
-> Note: This `$HOME/.pandoc/templates/` be the macOS-specific directory. Check! 
+> Note: This `$HOME/.pandoc/templates/` be the macOS-specific directory. Check!
 
 ```bash
 #  cd <path/to>/nfdi4plants.knowledgebase
@@ -59,7 +64,7 @@ pandoc QuickStart_arc.md -o QuickStart_arc.pdf
 
 ### with template
 
-pandoc QuickStart_arc.md -o QuickStart_arc.pdf --from markdown --template dataplant_eisvogel.latex --listings
+pandoc QuickStart_arc.md -o ../_ignored/pandoc_tests/QuickStart_arc.pdf --from markdown --template dataplant_eisvogel.latex --listings
 
 ### with template and title page (based on a pdf)
 
@@ -75,7 +80,7 @@ titlepage-background: ../_ignored/pandoc_tests/sources/dpbackground.pdf
 ```
 
 ```bash
-pandoc DataPlantOnboarding.md -o DataPlantOnboarding.pdf --from markdown --template dataplant_eisvogel.latex --listings
+pandoc DataPlantOnboarding.md -o ../_ignored/pandoc_tests/DataPlantOnboarding.pdf --from markdown --template dataplant_eisvogel.latex --listings
 ```
 
 ### with template and title page (based on a drawio)
@@ -90,5 +95,5 @@ titlepage-background: ../_ignored/pandoc_tests/sources/dataplant_titlePage.drawi
 ```
 
 ```bash
-pandoc DataHub_GitHubDesktop.md -o DataHub_GitHubDesktop.pdf --from markdown --template dataplant_eisvogel.latex --listings
+pandoc DataHub_GitHubDesktop.md -o ../_ignored/pandoc_tests/DataHub_GitHubDesktop.pdf --from markdown --template dataplant_eisvogel.latex --listings
 ```
