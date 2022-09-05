@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Common Workflow Language
+title: Reproduce and reuse
 published: 2022-08-08
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
@@ -14,6 +14,24 @@ article_status: draft
 > Could be partitioned into fundamentals/implementation/tutorial
 
 ## Fundamentals: (code / software) reproducibility
+
+
+Reproducibility in science overall
+
+wet lab | dry lab
+--- | ---
+company RNA extraction kit with all buffers and most of materials and tools| established / (commercial) software; somewhat contained, isolated, self-sustained
+"manual" protocol where you buy and mix buffers together yourself | script or combinations of scripts (pipeline) with varying inputs (reference data sets) and tool dependencies (code interpreters, packages, functions)
+version, batch or LOT number | software / package version
+laboratory environment | operating system 
+
+
+In the wet-lab many more factors affect reproducibility, making it close to impossible to reproduce the exact same outcomes (results, datasets)
+- biological variance
+- hands-on factor (more hands, bigger variance)
+- environment (humidity, temperature), but also standard devices (growth chamber, centrifuge)
+
+
 
 - Reproducibility of computational analyses
   - a) you can "reproduce" that exact same output (run result) using the exact same inputs
@@ -41,6 +59,17 @@ article_status: draft
   - packages / libraries within the programming environment
   - version of one of above
   - (use of) virtual environments
+
+- Towards solutions
+  - containers
+    - docker, singularity
+  - workflow languages
+    - CWL, snakemake, neftflow
+    - environment-agnostic
+    - formulate ins, outs, parameters
+
+
+
 
 ## Implementation: Make your ARC reproducible / executable with CWL
 
