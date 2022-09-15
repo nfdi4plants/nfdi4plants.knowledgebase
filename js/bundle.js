@@ -10813,6 +10813,7 @@ body {
 const mainPageBaseUrl = "https://nfdi4plants.org/";
 const knowledgeBaseUrl = "https://nfdi4plants.org/nfdi4plants.knowledgebase/";
 const gitlabBaseUrl = "https://git.nfdi4plants.org/";
+const dataPLANGeneratorUrl = "https://dmpg.nfdi4plants.org";
 var __defProp$8 = Object.defineProperty;
 var __getOwnPropDesc$8 = Object.getOwnPropertyDescriptor;
 var __decorateClass$8 = (decorators, target, key, kind) => {
@@ -10872,6 +10873,9 @@ let Navbar = class extends s$1 {
             </a>
             <a class=${this.url == "${mainPageBaseUrl}content/jobs.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/jobs.html">
               Jobs
+            </a>
+            <a class=${this.url == dataPLANGeneratorUrl ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${dataPLANGeneratorUrl}">
+              DataPLAN
             </a>
             <a class=${this.url == gitlabBaseUrl ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${gitlabBaseUrl}">
               DataHUB
@@ -11038,6 +11042,13 @@ let Footer = class extends s$1 {
                         <li>
                             <a href="${mainPageBaseUrl}content/jobs.html">
                             Jobs
+                            </a>
+                        </li>
+                        </div>
+                        <div class="block">
+                        <li>
+                            <a href="${dataPLANGeneratorUrl}">
+                            DataPLAN
                             </a>
                         </li>
                         </div>
