@@ -1,24 +1,49 @@
 ---
+marp: true
 layout: docs
 title: DataPLANT Onboarding
 published: 2022-07-12
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
-add toc: true
-add sidebar: _sidebars/mainSidebar.md
-article_status: draft
-titlepage: true
-titlepage-color: "2D3E50"
-titlepage-text-color: "4FB3D9"
-titlepage-rule-color: "4FB3D9"
-titlepage-rule-height: 2
-titlepage-background: ../_ignored/pandoc_tests/sources/dpbackground.pdf
+paginate: true
+footer: "[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+size: 16:9
 ---
 
-We are very happy that you would like to employ or contribute to the DataPLANT tools and services.
-The following is supposed to give you an overview of required or recommended software to install and accounts to sign up to get you started quickly.
-For more details, please explore the DataPLANT Knowledge Base and linked resources below.
+
+![bg](./sources/dataplant_titlePage_marp.drawio.png)
+
+
+# This is a title
+
+## Ok this needs to be moved somwhere else
+
+### Also, the color needs to be changed
+
+<!-- scoped style -->
+
+<style scoped>
+    a {color: grey;}
+    h1 {color: white}
+    h2 {color: white}
+    h3 {color: yellow}
+</style> 
+
+----
+
+<!-- global style -->
+
+<style>
+    :root {color: #2D3E50}
+    a {color: grey;}    
+</style> 
+
+
+
+We are very happy that you would like to employ or contribute to the DataPLANT tools and services. The following is supposed to give you an overview of required or recommended software to install and accounts to sign up to get you started quickly. For more details, please explore the DataPLANT Knowledge Base and linked resources below.
+
+----
 
 ## General Setup (all users)
 
@@ -30,10 +55,15 @@ For more details, please explore the DataPLANT Knowledge Base and linked resourc
   - On Windows: Enter `powershell` into the explorer path.
   - On MacOS: Search `terminal` via spotlight or navigate to `Applications` -> `Utilities` -> `Terminal`
   <!-- - On Linux:  -->
+
+----
+
 - Please install [git][ext-git] and [git-lfs][ext-git-lfs] on your system.
   - Note: for some operating systems *git-lfs* may already be available as part of the *git* installation
   - Note: On MacOS we recommend git installation via homebrew following the [git website's][ext-git] instruction.
 - In order to use Swate you need to have a local Microsoft Excel installation or access to [Microsoft Excel online][ext-excel-online].
+
+----
 
 ### DataPLANT tools and services
 
@@ -44,10 +74,14 @@ For more details, please explore the DataPLANT Knowledge Base and linked resourc
 <!-- ### Galaxy access
 - Your DataPLANT account grants you access to a plant science-designated are of [Galaxy][ext-galaxy].  -->
 
+----
+
 ## Other recommended software
 
 - [GitHub Desktop][ext-github-desktop] is a convenient software to avoid using git via the CLI.
 - [Visual Studio Code][ext-VSCode] is an integrated development environment (IDE) with git integration and convenient extensions.
+
+----
 
 ## Behind the scenes (data stewards and contributors)
 
