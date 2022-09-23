@@ -258,6 +258,7 @@ British English
 [kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
 [kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 [kb-ArcCommander]: ../implementation/ArcCommander.html "DataPLANT ARC Commander"
+[kb-Swate]: ../implementation/Swate.html "DataPLANT Swate"
 
 <!-- kb-Tutorials -->
 [kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
