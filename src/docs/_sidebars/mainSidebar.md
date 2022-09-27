@@ -22,14 +22,8 @@
 ```
 
 ```Training & Tutorials
+# DataPLANT Setup:/docs/tutorials/DataPlant_Setup.html
 # QuickStart on ARCs:/docs/tutorials/QuickStart_arc.html
 # ARC Commander QuickStart:/docs/tutorials/QuickStart_arcCommander.html
 # Swate QuickStart:/docs/tutorials/QuickStart_swate.html
 ```
-
-<!-- 
-```Training & Tutorials
-# Swate Tutorial Videos:/docs/tutorials/swate_videos.html
-# Sync ARCs via GitHub Desktop:/docs/tutorials/DataHub_GitHubDesktop.html
-# Markdown:/docs/tutorials/IntroductionToMarkdown.html
-``` -->

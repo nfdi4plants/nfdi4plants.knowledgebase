@@ -99,7 +99,8 @@ published: 2022-05-09
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
-add toc: true
+add toc: true # or false
+add support: true # or false
 add sidebar: _sidebars/mainSidebar.md
 article_status: published
 todo:
@@ -122,6 +123,8 @@ todo:
 - MAY contain `add toc: true`.
   - Will add automated table of contents from all found headers in content.
 - MAY contain `add sidebar: realtive\path\to\sidebar.md` to add the sidebar element to the page.
+- MAY contain `add support: true`.
+  - Will add a standard "DataPLANT Support" paragraph (incl. link to email and helpdesk) to the bottom
 - MAY contain **any** other metadata. The information will be read but will not affect the generated html.
 
 ### _sidebar
@@ -255,6 +258,7 @@ British English
 [kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
 [kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 [kb-ArcCommander]: ../implementation/ArcCommander.html "DataPLANT ARC Commander"
+[kb-Swate]: ../implementation/Swate.html "DataPLANT Swate"
 
 <!-- kb-Tutorials -->
 [kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
