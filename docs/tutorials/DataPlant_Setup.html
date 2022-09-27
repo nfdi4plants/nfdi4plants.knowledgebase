@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - DataPLANT Onboarding
+      DataPLANT documentation - DataPLANT Setup
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -78,96 +78,76 @@
         <div slot="title">
           Training & Tutorials
         </div>
-        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arc.html">QuickStart on ARCs</h1>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/DataPlant_Setup.html">DataPLANT Setup</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arc.html">QuickStart on ARCs</h1>
 <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arcCommander.html">ARC Commander QuickStart</h1>
 <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_swate.html">Swate QuickStart</h1>
-<!-- 
 
-      </nfdi-sidebar-element>
-      <nfdi-sidebar-element slot="sidebar" isActive="true">
-        <div slot="title">
-          Training & Tutorials
-        </div>
-        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/swate_videos.html">Swate Tutorial Videos</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/DataHub_GitHubDesktop.html">Sync ARCs via GitHub Desktop</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/IntroductionToMarkdown.html">Markdown</h1>
-
-      </nfdi-sidebar-element>
-      <nfdi-sidebar-element slot="sidebar" isActive="true">
-        <div slot="title">
-          -->
-        </div>
-        
       </nfdi-sidebar-element>
       <h1 class="front-header">
-        DataPLANT Onboarding
+        DataPLANT Setup
       </h1>
       <i class="help">
-        last updated at 2022-07-12
+        last updated at 2022-09-23
       </i>
       <nfdi-toc></nfdi-toc>
       <p>We are very happy that you would like to employ or contribute to the DataPLANT tools and services.
-The following is supposed to give you an overview of required or recommended software to install and accounts to sign up to get you started quickly.
-For more details, please explore the DataPLANT Knowledge Base and linked resources below.</p>
-<nfdi-h2 id="general-setup-all-users">General Setup (all users)</nfdi-h2>
-<nfdi-h3 id="non-dataplant-tools">Non-DataPLANT tools</nfdi-h3>
+The following is supposed to give you an overview of required or recommended software to install and accounts to sign up to get you started quickly. For more details, please explore the DataPLANT Knowledge Base and linked resources below.</p>
+<nfdi-h2 id="all-users">All users</nfdi-h2>
 <ul>
-<li>Find the <strong>command-line interface (CLI)</strong> on your system.
+<li><p>In order to use <a href="../implementation/Swate.html" title="DataPLANT Swate">Swate</a> you need to have Microsoft Excel locally installed or access to <a href="https://www.microsoft.com/en-us/microsoft-365/excel" title="Excel online">Microsoft Excel online</a>.</p>
+</li>
+<li><p>Find the <strong>command-line interface (CLI)</strong> on your system.</p>
 <ul>
-<li>Note: We mostly avoid asking you to use the <strong>CLI</strong>. However, this is required for some of the installation steps below.</li>
-<li>Note: Most modern operating systems come with a pre-installed <strong>CLI</strong>. If none of the below works, please get in touch.</li>
 <li>On Windows: Enter <code>powershell</code> into the explorer path.</li>
 <li>On MacOS: Search <code>terminal</code> via spotlight or navigate to <code>Applications</code> → <code>Utilities</code> → <code>Terminal</code></li>
 </ul>
 <!-- - On Linux:  -->
-</li>
-<li>Please install <a href="https://git-scm.com/download/" title="Git">git</a> and <a href="https://git-lfs.github.com/" title="Git-LFS">git-lfs</a> on your system.
+<blockquote>
+<p>Note:</p>
 <ul>
-<li>Note: for some operating systems <em>git-lfs</em> may already be available as part of the <em>git</em> installation</li>
-<li>Note: On MacOS we recommend git installation via homebrew following the <a href="https://git-scm.com/download/" title="Git">git website's</a> instruction.</li>
+<li>We mostly avoid asking you to use the CLI. However, this is required for some of the installation steps below. Most modern operating systems come with a pre-installed CLI. If none of the above works, please get in touch.</li>
 </ul>
+</blockquote>
 </li>
-<li>In order to use Swate you need to have a local Microsoft Excel installation or access to <a href="https://www.microsoft.com/en-us/microsoft-365/excel" title="Excel online">Microsoft Excel online</a>.</li>
-</ul>
-<nfdi-h3 id="dataplant-tools-and-services">DataPLANT tools and services</nfdi-h3>
+<li><p>Please install <a href="https://git-scm.com/download/" title="Git">git</a> and <a href="https://git-lfs.github.com/" title="Git-LFS">git-lfs</a> on your system.</p>
+<blockquote>
+<p>Note:</p>
 <ul>
-<li>Please install <a href="https://github.com/nfdi4plants/arcCommander/wiki" title="ArcCommander Wiki">arcCommander</a> on your system.</li>
-<li>Please install <a href="https://github.com/nfdi4plants/Swate/wiki" title="Swate Wiki">Swate</a> on your system.</li>
-<li>In order to use the <a href="https://git.nfdi4plants.org" title="DataPLANT DataHUB">DataHUB</a>, please <a href="https://register.nfdi4plants.org/registration" title="DataPLANT Registration">sign up</a> with DataPLANT.</li>
+<li>For some operating systems <em>git-lfs</em> may already be available as part of the <em>git</em> installation</li>
+<li>On MacOS we recommend git installation via <code>homebrew</code> following the <a href="https://git-scm.com/download/" title="Git">git website's</a> instruction. This may require installation of <code>homebrew</code> as instructed there.</li>
+</ul>
+</blockquote>
+</li>
+<li><p>Please install <a href="https://github.com/nfdi4plants/arcCommander/" title="ArcCommander">arcCommander</a> on your system.</p>
+</li>
+<li><p>Please install <a href="https://github.com/nfdi4plants/Swate/wiki" title="Swate Wiki">Swate</a> on your system.</p>
+</li>
+<li><p>Please <a href="https://register.nfdi4plants.org/registration" title="DataPLANT Registration">sign up</a> with DataPLANT to use the <a href="https://git.nfdi4plants.org" title="DataPLANT DataHUB">DataHUB</a>.</p>
+</li>
 </ul>
 <!-- ### Galaxy access
-- Your DataPLANT account grants you access to a plant science-designated are of [Galaxy][ext-galaxy].  -->
-<nfdi-h2 id="other-recommended-software">Other recommended software</nfdi-h2>
+- Your DataPLANT account grants you access to a plant science-designated area of [Galaxy][ext-galaxy].  -->
+<nfdi-h2 id="data-stewards-and-contributors">Data stewards and contributors</nfdi-h2>
+<nfdi-h3 id="github">GitHub</nfdi-h3>
+<p>Most DataPLANT tools and services are collaboratively and transparently developed at <a href="https://github.com/nfdi4plants/" title="GitHub DataPLANT">GitHub</a>. If you would like to contribute, <a href="https://github.com/join/" title="Join GitHub">please sign up with GitHub</a> and use common git routines, such as opening issues or fork-edit-pull-request a repository.</p>
+<nfdi-h3 id="microsoft-teams">Microsoft Teams</nfdi-h3>
+<p>Within DataPLANT we communicate via Microsoft Teams. If you would like to join DataPLANT as a data steward for your community, please contact us via <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">email</a>.</p>
+<nfdi-h3 id="other-recommended-software">Other recommended software</nfdi-h3>
 <ul>
 <li><a href="https://desktop.github.com/" title="GitHub Desktop">GitHub Desktop</a> is a convenient software to avoid using git via the CLI.</li>
 <li><a href="https://code.visualstudio.com/" title="Visual Studio Code">Visual Studio Code</a> is an integrated development environment (IDE) with git integration and convenient extensions.</li>
 </ul>
-<nfdi-h2 id="behind-the-scenes-data-stewards-and-contributors">Behind the scenes (data stewards and contributors)</nfdi-h2>
-<nfdi-h3 id="github-tool-service-development">GitHub: Tool &amp; Service Development</nfdi-h3>
-<p>Most DataPLANT tools and services are collaboratively and transparently developed at <a href="https://github.com/nfdi4plants/" title="GitHub DataPLANT">GitHub</a>. If you would like to contribute, <a href="https://github.com/join/" title="Join GitHub">please sign up with GitHub</a> and use common git routines, such as opening issues or fork-edit-pull-request a repository.</p>
-<nfdi-h3 id="microsoft-teams-communication-project-management">Microsoft Teams: Communication &amp; Project Management</nfdi-h3>
-<p>Within DataPLANT we communicate via Microsoft Teams. If you would like to join DataPLANT as a data steward, please contact us via <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">email</a>.</p>
 <!-- Links to DataPLANT knowledge base (kb-) -->
+<!-- kb-Fundamentals -->
+<!-- kb-Implementation -->
+<!-- kb-Tutorials -->
 <!-- Links to DataPLANT Homepage (hp-) -->
 <!-- Links to DataPLANT GitHub (gh-) -->
 <!-- Links to external (ext-) sources -->
 
-      <h3>
-        Dataplant Support
-      </h3>
       <div>
-        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
-        <a href="https://support.nfdi4plants.org">
-          helpdesk
-        </a>
-         or by contacting us 
-        <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
-          directly
-        </a>
-        .
-      </div>
-      <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/tutorials/DataPlantOnboarding.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/tutorials/DataPlant_Setup.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>

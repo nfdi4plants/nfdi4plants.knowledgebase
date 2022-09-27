@@ -78,26 +78,11 @@
         <div slot="title">
           Training & Tutorials
         </div>
-        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arc.html">QuickStart on ARCs</h1>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/DataPlant_Setup.html">DataPLANT Setup</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arc.html">QuickStart on ARCs</h1>
 <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arcCommander.html">ARC Commander QuickStart</h1>
 <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_swate.html">Swate QuickStart</h1>
-<!-- 
 
-      </nfdi-sidebar-element>
-      <nfdi-sidebar-element slot="sidebar" isActive="true">
-        <div slot="title">
-          Training & Tutorials
-        </div>
-        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/swate_videos.html">Swate Tutorial Videos</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/DataHub_GitHubDesktop.html">Sync ARCs via GitHub Desktop</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/IntroductionToMarkdown.html">Markdown</h1>
-
-      </nfdi-sidebar-element>
-      <nfdi-sidebar-element slot="sidebar" isActive="true">
-        <div slot="title">
-          -->
-        </div>
-        
       </nfdi-sidebar-element>
       <h1 class="front-header">
         Knowledge base contribution guide
@@ -203,7 +188,8 @@ published: 2022-05-09
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
-add toc: true
+add toc: true # or false
+add support: true # or false
 add sidebar: _sidebars/mainSidebar.md
 article_status: published
 todo:
@@ -238,6 +224,11 @@ todo:
 </ul>
 </li>
 <li>MAY contain <code>add sidebar: realtive\path\to\sidebar.md</code> to add the sidebar element to the page.</li>
+<li>MAY contain <code>add support: true</code>.
+<ul>
+<li>Will add a standard &quot;DataPLANT Support&quot; paragraph (incl. link to email and helpdesk) to the bottom</li>
+</ul>
+</li>
 <li>MAY contain <strong>any</strong> other metadata. The information will be read but will not affect the generated html.</li>
 </ul>
 <nfdi-h3 id="sidebar">_sidebar</nfdi-h3>
