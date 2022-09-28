@@ -28,8 +28,6 @@ We are very happy that you chose our tools and infrastructure to create and shar
 ## Viola's ARC
 Let's imagine a scenario where your project partner suggests at a conference to use this cool new Annotated Research Context (ARC) for your collaboration. Convinced by the versioning system and the single point of entry logic, you are motivated to set up your first own ARC after returning to the lab and fill it with your latest project results. Back home, however, you only remember the basic ARC structure and something about some isa.xlsx files. So how do you transfer your project into the empty ARC your project partner shared with you?
 
-<!-- why is the shared ARC blank? -->
-
 ![ARCStructure](../img/ARC_FolderStructure.png)
 
 To answer this question, we will first take a look back at Viola's [metadata][kb-Metadata] example:
@@ -42,7 +40,6 @@ The entire information given in this example can be stored within an ARC. To ill
 
 The ISA investigation workbook allows you to record administrative metadata of your project. In Viola's example, the title of the project, the contact persons, and related publications correspond to such metadata. Besides that, the workbook can also contain a short description of your project, but also lists included studies with respective design types, assays, protocols, etc.. Although we recommend to use the [ARC Commander][kb-ArcCommander] for adding these metadata, you can of course fill the workbook (and also the [isa.study.xlsx](#isastudyxlsx) and [isa.assay.xlsx](#isaassayxlsx)) manually.
 
-<!-- I'd suggest to fill out / or "zoom away" the blank cells in the investigation image -->
 ![Investigation](../img/ARC_investigation.jpg)
 
 ## Studies
@@ -51,21 +48,13 @@ In the `studies` (sub)folders you can collect material and resources used within
 
 In case your investigation contains more than one study, each of these studies is placed in an individual subdirectory. The "resources" directory allows you to store material samples or external data as virtual sample files. You can use the protocol subdirectory to store free-text protocols that describe how the samples or materials were created.
 
-<!-- 
-The distinction of investigation vs. study could be clearer in this and the following images.
-Investigation: "Effect of plant circadian clock on sugar metabolism in *W. mirabilis*"
-Study1: "Time series of *W. mirabilis*" grown under different light regimes"
-Study2: "Time series of *W. mirabilis*" grown under blue and red light"
- -->
 ![StuSubdirectories](../img/ARC_studiesSubdirectories.jpg)
 
 ### isa.study.xlsx
 
-Every study contains one `isa.study.xlsx` file to specify the characteristics of all material and resources. Resources described in a study file can be the input for one or multiple [assays](#assays) or [workflows](#workflows). The workbook contains (at least) two worksheets:
-<!-- the reference to "workflows" might be a bit early -->
+Every study contains one `isa.study.xlsx` file to specify the characteristics of all material and resources. Resources described in a study file can be the input for one or multiple assays or workflows. The workbook contains (at least) two worksheets:
 
-- "2022_CircadianClock": A worksheet with the name of your study to annotate the properties of your source material following the ISA model. While this can be done manually, we recommend using our ontology supported annotation tool [Swate](QuickStart_swate.html).
-<!-- The sheet name is not obligatory to be the exact same as the "Study Identifier"-->
+- "CircadianClock_Light regimes": One or more worksheets, depending on the number of used protocols, to annotate the properties of your source material following the ISA model. The sheet name is not obligatory to be the exact same as the "Study Identifier". While this can be done manually, we recommend using our ontology supported annotation tool [Swate](QuickStart_swate.html).
 - "Study": Viola collected the administrative metadata of her study in this worksheet. This information can later be transferred into the `isa.investigation.xlsx` using the [ARC Commander][kb-ArcCommander].
 
 ![ISA-study](../img/ARC_study.jpg)
@@ -75,17 +64,16 @@ Every study contains one `isa.study.xlsx` file to specify the characteristics of
 
 The `assays` folder allows you to store data and metadata from experimental processes or analytical measurements. Each assay is a collection of files stored in a single directory, including corresponding metadata files in form of an `isa.assay.xlsx`. Viola needs two subdirectories, one for her metabolomics and one for her transcriptomics dataset, respectively. Assay data files and free-text protocols are placed in individual subdirectories. Data files produced by an assay can be the input for one or multiple [workflows](#workflows).
 
-<!-- See above. I'd recommend to fill out as completely as possible. -->
 ![AssaySubdirectories1](../img/ARC_assaysSubdirectories.jpg)
 ![AssaySubdirectories2](../img/ARC_MetSubdirectories.jpg)
 
 ### isa.assay.xlsx
 
 Viola can annotate her experimental workflows of the metabolomics and transcriptomics assays with process parameters in the `isa.assay.xlsx` file, which needs to be present for every assay. The workbook contains two or more worksheets, depending on the number of used protocols:
-<!-- this would potentially also apply to isa.study.xlsx -->
 
-- "MetaboliteExtraction": A worksheet with the name of the used protocol to annotate the experimental workflow, in this case for extraction of metabolites. While this can be done manually, we recommend using our ontology supported annotation tool [Swate][kb-QuickStart_swate].
-<!-- See above. We'd also have to update this to the `Protocol Type` + `Protol REF` routine, once implemented. `Protol REF` would be the name of the protocol. Sheet name not "relevant" anymore -->
+
+- "MetaboliteExtraction": A worksheet to annotate the experimental workflow, in this case for extraction of metabolites. While this can be done manually, we recommend using our ontology supported annotation tool [Swate][kb-QuickStart_swate].
+> Note: Using the name of the protocol for the name of the worksheet can provide clarity. 
 - "MetaboliteMeasurement": A worksheet that describes the quantification of polar metabolites using gas-chromatography mass-spectrometry.
 - "Assay": Viola collected the administrative metadata of her assay in this worksheet. This information can later be transferred into the `isa.investigation.xlsx` using the ARC Commander.
 
@@ -97,6 +85,8 @@ Viola can annotate her experimental workflows of the metabolomics and transcript
 In an ARC `workflows` represent the processing steps used in computational analyses and other transformations of data originating from studies and assays. Typical examples include data cleaning and preprocessing, computational analysis, or visualization. The outcomes of these workflows ("run results") are stored in [runs](#runs).
 
 Viola received for her transcriptome and metabolome assays various processed data files, which she now can use to generate some nice plots. Additionally, the computational biologists sent her the code used for data processing, including an executable Common Workflow Language (CWL) file, which contains a standardized tool or workflow description. She stores these files in individual subdirectories for each workflow.
+
+<!-- Picture runs + workflow -->
 
 ## Runs
 
