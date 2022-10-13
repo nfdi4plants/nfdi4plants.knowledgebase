@@ -1,17 +1,23 @@
 ---
 layout: docs
 title: Home
-published: 2022-07-08
+published: 2022-09-20
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
-article_status: published
-author: Dominik Brilhaus
-todo:
+add support: false
 ---
 
 <br>
 
 Welcome to the DataPLANT knowledge base! 👋
+
+Please navigate via the sidebar on the left to
+
+- explore **fundamental** topics on research data management (RDM),
+- how **DataPLANT implements** these aspects to support plant researchers with RDM tools and services, and
+- to follow **training and tutorials** on specific tools.
+
+## Feedback & Contribution
 
 The DataPLANT knowledge base is a community effort and improves with every feedback we receive from readers and users.
 **Your contribution is highly appreciated** no matter how little it may seem!

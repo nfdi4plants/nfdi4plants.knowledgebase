@@ -79,9 +79,9 @@ The following table gives an overview about DataPLANT tools and services support
 
 Name | Type | Tasks on metadata
 ----------------|-----------|------------------
-**[DataPLANT's QuickStart on ARCs][kb-QuickStart_arc]**   | Document | **Tutorial:** <ul><li>How to initialize an ARC<li>How to package data with metadata</li></ul>
+**[ARC Commander QuickStart][kb-QuickStart_arc]**   | Document | **Tutorial:** <ul><li>How to initialize an ARC<li>How to package data with metadata</li></ul>
 **[Swate][gh-Swate]** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
-**[ArcCommander][gh-ArcCommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
+**[ARC Commander][gh-ArcCommander-Wiki]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
 **[DataHUB](DataHub.html)** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 **Invenio** | Service under construction | **Share:** <ul><li>Assign a DOI to an ARC</li></ul>
 **Metadata registry** | Service under construction | **Share:** <ul><li>Find ARC (meta)data</li></ul>
@@ -108,7 +108,7 @@ Name | Type | Tasks on metadata
 [kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
 [kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 [kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+[kb-QuickStart_arc]: ../tutorials/QuickStart_arcCommander.html "Quickstart ARC"
 [kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
 [kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
 [kb-DataSharing]: ../fundamentals/DataSharing.html "Data Sharing"
@@ -116,7 +116,7 @@ Name | Type | Tasks on metadata
 <!-- DataPLANT web links -->
 
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
-[gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
+[gh-ArcCommander-Wiki]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
 
 <!-- Reference web links -->

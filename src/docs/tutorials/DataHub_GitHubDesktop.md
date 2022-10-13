@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: How-To: Synchronize DataHUB ARCs via GitHub Desktop
+title: "How-To: Synchronize DataHUB ARCs via GitHub Desktop"
 published: 2022-07-01
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
@@ -8,6 +8,10 @@ author_github: brilator
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
 article_status: not published
+titlepage: true
+titlepage-rule-height: 2
+titlepage-rule-color: "4FB3D9"
+titlepage-background: ../_ignored/pandoc_tests/sources/dataplant_titlePage.drawio.png
 ---
 
 ## Goal
@@ -17,8 +21,6 @@ GitHub Desktop is a user-friendly software to help you synchronize (pull, commit
 
 > Note: This authenticates your local GitHub Desktop to communicate with the DataHUB.
 > You need to do this only once per machine (unless you specify an expiration date in step 4)
-
-
 
 ## Steps
 
