@@ -94,6 +94,6 @@ After reading this article, you should
 [gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/> "ArcCommander"
 [gh-ArcCommander-Wiki]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/> "Swate repository"
-[gh-SwateWiki]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
+[gh-SwateWiki]: <https://nfdi4plants.github.io/Swate-docs/index.html> "Swate Wiki"
 
 <!-- Links to external (ext-) sources -->
