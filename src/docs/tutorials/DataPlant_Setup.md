@@ -39,7 +39,7 @@ The following is supposed to give you an overview of required or recommended sof
   > - For some operating systems *git-lfs* may already be available as part of the *git* installation  
   > - On MacOS we recommend git installation via `homebrew` following the [git website's][ext-git] instruction. This may require installation of `homebrew` as instructed there.
 
-- Please install [arcCommander][gh-ArcCommander] on your system.
+- Please install [ARC Commander][gh-ArcCommander] on your system.
 - Please install [Swate][gh-Swate] on your system.
 - Please [sign up][hp-Registration] with DataPLANT to use the [DataHUB][hp-DataHUB].
 
