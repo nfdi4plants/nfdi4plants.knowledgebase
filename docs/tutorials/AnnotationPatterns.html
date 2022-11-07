@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - Home
+      DataPLANT documentation - How to annotate your data correctly
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -86,32 +86,45 @@
 
       </nfdi-sidebar-element>
       <h1 class="front-header">
-        Home
+        How to annotate your data correctly
       </h1>
       <i class="help">
-        last updated at 2022-09-20
+        last updated at 2022-11-07
       </i>
-      <br>
-<p>Welcome to the DataPLANT knowledge base! 👋</p>
-<p>Please navigate via the sidebar on the left to</p>
-<ul>
-<li>explore <strong>fundamental</strong> topics on research data management (RDM),</li>
-<li>how <strong>DataPLANT implements</strong> these aspects to support plant researchers with RDM tools and services, and</li>
-<li>to follow <strong>training and tutorials</strong> on specific tools.</li>
-</ul>
-<nfdi-h2 id="feedback-contribution">Feedback &amp; Contribution</nfdi-h2>
-<p>The DataPLANT knowledge base is a community effort and improves with every feedback we receive from readers and users.
-<strong>Your contribution is highly appreciated</strong> no matter how little it may seem!</p>
-<p>If you just want to ask a question, recommend missing topics or tutorials, raise awareness for inconsistencies, typos, missing links, errors in training materials or tutorials, feel free to</p>
-<ul>
-<li>submit a ticket to our <a href="https://helpdesk.nfdi4plants.org/?topic=ResearchDataManagement_Teaching">helpdesk</a>,</li>
-<li><a href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/issues/new/">open an issue</a> at GitHub or</li>
-<li>write us an <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">email</a>.</li>
-</ul>
-<p>For all other contributions, please refer to the <a href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/tree/main/src#readme">Contribution guide</a>.</p>
+      <nfdi-toc></nfdi-toc>
+      <p>In this tutorial, we will take a closer look at some experimental scenarios that every scientist might face on a more or less regular basis. With these examples, we aim to provide you with the best practices for  data annotation in isa.study.xlsx and isa.assay.xlsx files allowing you to generate machine-readable and thereby, interoperable and reproducible data. Do not hesitate to contact us if you think that we are missing some urgent expamles or if you have any further questions.</p>
+<nfdi-h2 id="annotation-of-biological-and-technical-replicates">Annotation of biological and technical replicates</nfdi-h2>
+<p>In our first scenario we focus on annotating the origin and relationship between biological and technical replicates within a fictional study. We started with three biological replicates (Plant A, Plant B, and Plant C) of the model organism <em>Arabidsopis thaliana</em> (Characteristic [Organism]), which were grown under particular conditions (Characteristic [growth day length]). Harvesting of the plants or particular parts resulted in three samples: S1, S2, and S3. These information were stored within the isa.study.xlsx file.</p>
+<p>Subsequent proccesing steps, mostly omitted here for better clarity, are stored within one or multiple isa.assay.xlsx files. In our scenario, three technical replicates of each sample were analyzed via LC/MS (Parameter [instrument model]), generating nine raw data files.</p>
+<p><img src="../img/ISA_AnnotationPattern_Replicates.svg" alt="replicates" /></p>
+<p><strong>It is very important to group these technical replicates and thus annotate their common origin.</strong> If you would falsely name the individual technical replicates as A, B and C, you could run into trouble during your computational analysis.</p>
+<nfdi-h2 id="annotation-of-time-series-experiments">Annotation of time series experiments</nfdi-h2>
+<p>In this rather simple scenario we take a look at the annotation of time coure patterns. Let's imagine a study in which our plant (Sample A) was exposed to stress (high light, salt, ...) for a given time. To investigate the cellular response, you harvested samples at various time points after exposure to the stressor: S1 is harvested after 5 minutes, S2 after 10 minutes, and so on.</p>
+<p><img src="../img/ISA_AnnotationPattern_TimeSeries.svg" alt="TimeSeries" /></p>
+<p>You should use the Factor building block in such a case to annotate the time after exposure and thereby the sampling point in the isa.study.xlsx file, as this time period will ultimately result in the given output, when all remaining parameters for treatment and analysis were identical.</p>
+<nfdi-h2 id="annotation-of-mixed-samples">Annotation of mixed samples</nfdi-h2>
+<p>This example can be of relevance when you are carrying out labeling experiments or when you are spiking your samples with an internal standard for absolute quantification. The isa.assay.xlsx file below displays the best practice for annotating the mixing of experimental samples with a reference prior to LC/MS analysis.</p>
+<p><img src="../img/ISA_AnnotationPattern_MixingSamples.svg" alt="Spiking" /></p>
+<p>By listing every raw data file twice, it becomes clear that the analyzed samples originated from the combination of an experimental sample and a reference, e.g. spiking of S1 with the reference resulted in the data file S1R.wiff.</p>
 
+      <h3>
+        DataPLANT Support
+      </h3>
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/Home.md" style="margin-left: auto; display: block; width: 130px;">
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <span style="display: inline-flex; flex-wrap: wrap;">
+          <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+            directly
+          </a>
+          .
+        </span>
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/tutorials/AnnotationPatterns.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>
