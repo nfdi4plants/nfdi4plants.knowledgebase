@@ -16,31 +16,31 @@ todo:
 
 ## Why another DMP tool is needed?
 
-From funding agencies to research institutes, DMPs are required more and more often. The generation, following up and update of a DMP has increase the workload and cost of researchers. Although many tools have been developed to help people create DMPs, most of the tools does not reduce a significant amount workload. As DataPLANT use standardized tool, protocols and formats to manage data, the planing of the data management can also be standardized. Which means that the DataPLAN does not help people answer the DMPs, but also prepared standardized answers for the user, so that the user can just selected the answers they need. As the user only need to "select from prepared answers" instead of "writing from scratch", a lot of workload was saved. In addition, the DataPLAN offers a practical guide, which is a detailed and comprehensive document for the project team and data stewards to follow.   
+From funding agencies to research institutes, DMPs are required more and more often. The generation, following up and update of a DMP has increase the cost and workload of researchers. Although many tools have been developed to help creating DMPs, most of the tools does not reduce a significant amount workload. As DataPLANT use standardized tool, protocols and formats to manage data, the planing of the data management can also be standardized. Therefore, the tool DataPLAN does not only help people answer the DMPs, but also prepared standardized answers for the users. So that the user can just select the answers, instead of write the answers. As the user only need to "select from prepared answers" instead of "writing from scratch", a lot of workload was saved. In addition, the DataPLAN offers a practical guide, which is a detailed and comprehensive document for the project team and data stewards to follow.   
 
 ## Simple layout
 
 <figure><img src="../img/dataplan_layout.png" alt="The layout of DataPLAN" style="width:100%"><figcaption style="margin: auto;">Figure 1: Layout of DataPLAN. Red box is the live preview of the generated document; blue box is the single-page questionnaire</figcaption></figure>
 
-The DataPLAN's has a two column layout. The left-hand-side is the live preview of the generated document and the right-hand-side is the single-page questionnaire. By answering all the questions in the right-hand-side, a DMP will be generated in the right-hand-side column. 
+The DataPLAN's has a two column layout (Fig. 1). The left-hand-side is the live preview of the generated document and the right-hand-side is the single-page questionnaire. By answering all the questions in the right-hand-side, a DMP will be generated in the right-hand-side column. 
 
 ## The answers-integrated templates
 
-The standardized answers of the DMP questions are integrated in the templates. The final exported DMP includes the answers selected by the users. For example, in Fig. 2, all checkbox option in Question 2 is selected, therefore all the integrated answers are showed up in the final DMP document (in green text). in Fig. 3, some checkbox option in Question 2 is deselected, therefore the unselected integrated answers are not showed up in the final DMP document.
+The standardized answers of the DMP questions are integrated in the templates. The final exported DMP includes the answers selected by the users. For example, in Fig. 2, all checkbox option in Question 2 is selected, therefore all the integrated answers are showed up in the final DMP document (in green text). In Fig. 3, some checkbox options in Question 2 are deselected, therefore the unselected answers are not showed up in the final DMP document.
 
 <figure><img src="../img/dataplan_before_deselect.png" alt="Before deselect checkboxes" style="width:100%"><figcaption style="margin: auto;">Figure 2: If all the checkboxes are selected in quesiton 2, all counterparts in the DMP text will be kept.</figcaption></figure>
 
 <figure><img src="../img/dataplan_after_deselect.png" alt="After deselect checkboxes" style="width:100%"><figcaption style="margin: auto;">Figure 3: If some of the checkboxes are deselected in quesiton 2, the respective counterparts in the DMP text will be removed.</figcaption></figure>
 
-The users can type text in the input field to change specific part of the answers, such as "project name" and "project aim".
+The users can alo type text in the input field to change specific part of the answers, such as "project name" and "project aim".
 
 ## Offline usable and absolute secure
-DataPLAN can be used offline in a convenient way. Unlike other DMP tools, which is hard to be used offline, the DataPLAN can be saved as html file (by "ctrl + s" as showed in Fig. 4) and then be used. The user can also disconnect the internet after the DataPLAN is fully loaded. The server-less design of DataPLAN make it absolute secure because it prevent the loss and exposure of data during data transfer and online storage.  
+DataPLAN can be used offline in a convenient way. Unlike other DMP tools, which is complicated to be used offline, the DataPLAN can be saved as html file (by "ctrl + s" as showed in Fig. 4) and then be used. The user can also disconnect the internet after fully loaded the DataPLAN website. The server-less design of DataPLAN make it absolute secure, because it prevent the loss and exposure of data during either data transfer or online storage.  
 
 <figure><img src="../img/dataplan_save.png" alt=" press Ctrl + S to save the file in html and then use it later on" style="width:100%"><figcaption style="margin: auto;">Figure 4: press Ctrl + S to save the file in html and then use it later on.</figcaption></figure>
 
 ## Customizable template
-All the templates prepared and provided by the DataPLAN are Customizable. DataPLAN has a user-defined template section where the template are editable and can be directly modified based on the answers. 
+All the templates prepared and provided by the DataPLAN are customizable. DataPLAN has a user-defined template section where the template are editable and can be directly loaded into the DataPLAN.   
 
 <figure><img src="../img/dataplan_user_defined.png" alt="User-defined template can also be directly used" style="width:100%"><figcaption style="margin: auto;">Figure 5: All the templates prepared and provided by the DataPLAN are Customizable. The templates can be reused to create user-defined templates.</figcaption></figure>
 
