@@ -34,15 +34,17 @@ The standardized answers of the DMP questions are integrated in the templates. T
 
 The users can alo type text in the input field to change specific part of the answers, such as "project name" and "project aim".
 
-## Offline usable and absolute secure
-DataPLAN can be used offline in a convenient way. Unlike other DMP tools, which is complicated to be used offline, the DataPLAN can be saved as html file (by "ctrl + s" as showed in Fig. 4) and then be used. The user can also disconnect the internet after fully loaded the DataPLAN website. The server-less design of DataPLAN make it absolute secure, because it prevent the loss and exposure of data during either data transfer or online storage.  
-
-<figure><img src="../img/dataplan_save.png" alt=" press Ctrl + S to save the file in html and then use it later on" style="width:100%"><figcaption style="margin: auto;">Figure 4: press Ctrl + S to save the file in html and then use it later on.</figcaption></figure>
-
 ## Customizable template
-All the templates prepared and provided by the DataPLAN are customizable. DataPLAN has a user-defined template section where the template are editable and can be directly loaded into the DataPLAN.   
+All the templates prepared and provided by the DataPLAN are customizable. DataPLAN has a user-defined template section (Fig. 4) where the template are editable and can be directly loaded into the DataPLAN.   
 
-<figure><img src="../img/dataplan_user_defined.png" alt="User-defined template can also be directly used" style="width:100%"><figcaption style="margin: auto;">Figure 5: All the templates prepared and provided by the DataPLAN are Customizable. The templates can be reused to create user-defined templates.</figcaption></figure>
+<figure><img src="../img/dataplan_user_defined.png" alt="User-defined template can also be directly used" style="width:100%"><figcaption style="margin: auto;">Figure 4: All the templates prepared and provided by the DataPLAN are Customizable. The templates can be reused to create user-defined templates.</figcaption></figure>
+
+## Offline usable and absolute secure
+DataPLAN can be used offline in a convenient way. Unlike other DMP tools, which is complicated to be used offline, the DataPLAN can be saved as html file (by "ctrl + s" as showed in Fig. 5) and then be used. The user can also disconnect the internet after fully loaded the DataPLAN website. The server-less design of DataPLAN make it absolute secure, because it prevent the loss and exposure of data during either data transfer or online storage.  
+
+<figure><img src="../img/dataplan_save.png" alt=" press Ctrl + S to save the file in html and then use it later on" style="width:100%"><figcaption style="margin: auto;">Figure 5: press Ctrl + S to save the file in html and then use it later on.</figcaption></figure>
+
+
 
 <!-- Links to DataPLANT knowledge base (kb-) -->
 
