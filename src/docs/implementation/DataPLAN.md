@@ -30,7 +30,7 @@ The standardized answers of the DMP questions are integrated in the templates. T
 
 <figure><img src="../img/dataplan_before_deselect.png" alt="Before deselect checkboxes" style="width:100%"><figcaption style="margin: auto;">Figure 2: If all the checkboxes are selected in quesiton 2, all counterparts in the DMP text will be kept.</figcaption></figure>
 
-<figure><img src="../img/dataplan_after_deselect" alt="After deselect checkboxes" style="width:100%"><figcaption style="margin: auto;">Figure 3: If some of the checkboxes are deselected in quesiton 2, the respective counterparts in the DMP text will be removed.</figcaption></figure>
+<figure><img src="../img/dataplan_after_deselect.png" alt="After deselect checkboxes" style="width:100%"><figcaption style="margin: auto;">Figure 3: If some of the checkboxes are deselected in quesiton 2, the respective counterparts in the DMP text will be removed.</figcaption></figure>
 
 The users can type text in the input field to change specific part of the answers, such as "project name" and "project aim".
 
