@@ -11,7 +11,7 @@ article_status: published
 todo:
 ---
 
-[DataPLAN][hp-DataPLAN] is a [Data Management Plan][kb-DataManagementPlan] generator which can help you create a plan for the [research data management][kb-ResearchDataManagement]. It takes less than five minutes to make standardized DMPs for Horizon Europ and Deutsche Forschungsgemeinschaft (DFG). The fast generation speed on account of the answers-integrated template design and single-page web application technology. 
+[DataPLAN][hp-DataPLAN] is a [Data Management Plan][kb-DataManagementPlan] generator which can help you create a plan for the [research data management][kb-ResearchDataManagement]. By using DataPLAN, standardized DMPs for Horizon Europ and Deutsche Forschungsgemeinschaft (DFG) can be generated in five minutes. The fast generation speed on account of the answers-integrated template design and single-page web application technology. 
 
 
 ## Why another DMP tool is needed?
@@ -22,29 +22,34 @@ From funding agencies to research institutes, DMPs are required more and more of
 
 <figure><img src="../img/dataplan_layout.png" alt="The layout of DataPLAN" style="width:100%"><figcaption style="margin: auto;">Figure 1: Layout of DataPLAN. Red box is the live preview of the generated document; blue box is the single-page questionnaire</figcaption></figure>
 
-The DataPLAN's has a two column layout (Fig. 1). The left-hand-side is the live preview of the generated document and the right-hand-side is the single-page questionnaire. By answering all the questions in the right-hand-side, a DMP will be generated in the right-hand-side column. 
+The DataPLAN has a two-column layout (Fig. 1). In the left-hand-side column (the red box), there is a live preview of the generated document; in the right-hand-side column (the blue box), there is a questionnaire. While answering all the questions in the right-hand-side column, the DMP in the left-hand-side column will update lively based on the answers given in the questionnaire. This live update gives users a unique What You See Is What You Get (WYSIWYG) experience.
 
 ## The answers-integrated templates
 
-The standardized answers of the DMP questions are integrated in the templates. The final exported DMP includes the answers selected by the users. For example, in Fig. 2, all checkbox option in Question 2 is selected, therefore all the integrated answers are showed up in the final DMP document (in green text). In Fig. 3, some checkbox options in Question 2 are deselected, therefore the unselected answers are not showed up in the final DMP document.
+The standardized answers of the DMP questions are integrated in the templates. The final exported DMP document will only include the answers that is selected by the users. For example, in Fig. 2, all checkbox options in Question 2 are selected, therefore all the integrated answers are showed up in the final DMP document (in green text). In Fig. 3, some checkbox options in Question 2 are deselected, therefore the unselected answers are not showed up in the final DMP document. The answers prepared in the DataPLAN tool is deeply coordinated with other DataPLANT tools such as  [ArcCommander][kb-ArcCommander] and [Swate][kb-Swate].  
 
-<figure><img src="../img/dataplan_before_deselect.png" alt="Before deselect checkboxes" style="width:100%"><figcaption style="margin: auto;">Figure 2: If all the checkboxes are selected in quesiton 2, all counterparts in the DMP text will be kept.</figcaption></figure>
 
-<figure><img src="../img/dataplan_after_deselect.png" alt="After deselect checkboxes" style="width:100%"><figcaption style="margin: auto;">Figure 3: If some of the checkboxes are deselected in quesiton 2, the respective counterparts in the DMP text will be removed.</figcaption></figure>
+<figure><img src="../img/dataplan_before_deselect.png" alt="Before deselect checkboxes" style="width:100%"><figcaption style="margin: auto;">Figure 2: If all the checkboxes are selected in quesiton 2, all counterparts in the DMP text will be kept.</figcaption></figure>  
 
-The users can alo type text in the input field to change specific part of the answers, such as "project name" and "project aim".
 
-## Customizable template
+<figure><img src="../img/dataplan_after_deselect.png" alt="After deselect checkboxes" style="width:100%"><figcaption style="margin: auto;">Figure 3: If some of the checkboxes are deselected in quesiton 2, the respective counterparts in the DMP text will be removed.</figcaption></figure>  
+
+For specific information which is unique between different project, such as "project name" and "project aim". The users can can type text in the respective input fields, then the counter parts in the DMP will also be updated lively.   
+
+## The templates can be customized
 All the templates prepared and provided by the DataPLAN are customizable. DataPLAN has a user-defined template section (Fig. 4) where the template are editable and can be directly loaded into the DataPLAN.   
 
 <figure><img src="../img/dataplan_user_defined.png" alt="User-defined template can also be directly used" style="width:100%"><figcaption style="margin: auto;">Figure 4: All the templates prepared and provided by the DataPLAN are Customizable. The templates can be reused to create user-defined templates.</figcaption></figure>
 
 ## Offline usable and absolute secure
-DataPLAN can be used offline in a convenient way. Unlike other DMP tools, which is complicated to be used offline, the DataPLAN can be saved as html file (by "ctrl + s" as showed in Fig. 5) and then be used. The user can also disconnect the internet after fully loaded the DataPLAN website. The server-less design of DataPLAN make it absolute secure, because it prevent the loss and exposure of data during either data transfer or online storage.  
+DataPLAN can be used offline conveniently. Unlike other DMP tools, which is complicated to run in offline situations, the DataPLAN can be saved as html file (by "ctrl + s" as showed in Fig. 5) and then be further used. The user can also disconnect the internet after fully loaded the DataPLAN website. The server-less design of DataPLAN make it absolute secure, because it prevent the loss and exposure of data during either internet data transfer or online storage.  
 
 <figure><img src="../img/dataplan_save.png" alt=" press Ctrl + S to save the file in html and then use it later on" style="width:100%"><figcaption style="margin: auto;">Figure 5: press Ctrl + S to save the file in html and then use it later on.</figcaption></figure>
 
+## No registration and free to share
+No registration is needed to use all the functions of DataPLAN. The user input is saved automatically in the local storage. To share the answers or synchronize between different computers, the answers can be first exported and then imported in the DataPLAN tools. 
 
+Just try the [DataPLAN][hp-DataPLAN] and share your feedback or feature request, the developers of DataPLAN will be happy to know your need and further improve the DataPLAN tool. 
 
 <!-- Links to DataPLANT knowledge base (kb-) -->
 
@@ -63,7 +68,9 @@ DataPLAN can be used offline in a convenient way. Unlike other DMP tools, which 
 <!-- kb-Implementation -->
 [kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
 [kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
+[kb-ArcCommander]: ../implementation/ArcCommander.html "ARC Commander"
 
+[kb-Swate]: ../implementation/Swate.html "DataPLANT Swate"
 <!-- kb-Tutorials -->
 [kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
 
@@ -80,6 +87,8 @@ DataPLAN can be used offline in a convenient way. Unlike other DMP tools, which 
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-ArcCommander-Wiki]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
+
+
 
 <!-- Links to external (ext-) sources -->
 
