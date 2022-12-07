@@ -20,7 +20,6 @@ From funding agencies to research institutes, DMPs are required more and more of
   
 
 ## Simple layout
-
 <figure><img src="../img/dataplan_layout.png" alt="The layout of DataPLAN" style="width:100%"><figcaption style="margin: auto;">Figure 1: Layout of DataPLAN. The red box shows a live preview of the generated document; the blue box shows the single-page questionnaire</figcaption></figure>
 
 DataPLAN has a two-column layout (Fig. 1). In the left column (the red box), a live-preview of the generated document is shown; in the right column (the blue box), a questionnaire is shown. While answering all the questions in the questionnaire, the DMP in the live-preview will automatically update based on the answers to the questionnaire. This live update gives users a unique What You See Is What You Get (WYSIWYG) experience.
@@ -34,10 +33,10 @@ Unlike other DMP tools, which only have questions in their templates, the standa
 <figure><img src="../img/dataplan_before_deselect.png" alt="Before deselect checkboxes" style="width:100%"><figcaption style="margin: auto;">Figure 2: If all checkboxes of question 2 are selected, all counterparts in the DMP text will be kept.</figcaption></figure>  
 
 
-<br> <figure><img src="../img/dataplan_after_deselect.png" alt="After deselect checkboxes" style="width:100%"><figcaption style="margin: auto;">Figure 3: If some of the checkboxes are not selected in question 2, the respective counterparts in the DMP text will be removed.</figcaption></figure>  
+<figure><img src="../img/dataplan_after_deselect.png" alt="After deselect checkboxes" style="width:100%"><figcaption style="margin: auto;">Figure 3: If some of the checkboxes are not selected in question 2, the respective counterparts in the DMP text will be removed.</figcaption></figure>  
 
 
-<br> For specific information, which is unique between different projects, such as the "project name" and the "project aim", the users can use free-text for the respective input fields. The counter parts in the DMP will be updated lively as well.   
+For specific information, which is unique between different projects, such as the "project name" and the "project aim", the users can use free-text for the respective input fields. The counter parts in the DMP will be updated lively as well.   
 
 ## Templates can be customized
 All templates prepared and provided by DataPLAN are customizable. DataPLAN has a user-defined template section (Fig. 4), in which templates are editable and can be directly loaded into DataPLAN.   
