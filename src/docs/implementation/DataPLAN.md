@@ -28,7 +28,7 @@ DataPLAN has a two-column layout (Fig. 1). In the left column (the red box), a l
 
 ## The answers-integrated templates
 
-TUnlike in other DMP tools, which only have questions in their templates, the standardized answers of the DMP questions are directly integrated into the templates with DataPLAN. The final exported DMP document will only include answers selected by the users. For example, in Fig. 2, all checkbox options of Question 2 are selected. Therefore, all the integrated answers are shown in the final DMP document (green text). In Fig. 3, some checkbox options in Question 2 are not selected. Therefore, these answers are not shown in the final DMP document. The answers prepared in the DataPLAN tool are deeply coordinated with other DataPLANT tools such as the [ARC Commander][kb-ArcCommander] and [Swate][kb-Swate].  
+Unlike other DMP tools, which only have questions in their templates, the standardized answers of the DMP questions are directly integrated into the templates with DataPLAN. The final exported DMP document will only include answers selected by the users. For example, in Fig. 2, all checkbox options of Question 2 are selected. Therefore, all the integrated answers are shown in the final DMP document (green text). In Fig. 3, some checkbox options in Question 2 are not selected. Therefore, these answers are not shown in the final DMP document. The answers prepared in the DataPLAN tool are deeply coordinated with other DataPLANT tools such as the [ARC Commander][kb-ArcCommander] and [Swate][kb-Swate].  
 
 
 <figure><img src="../img/dataplan_before_deselect.png" alt="Before deselect checkboxes" style="width:100%"><figcaption style="margin: auto;">Figure 2: If all checkboxes of question 2 are selected, all counterparts in the DMP text will be kept.</figcaption></figure>  
@@ -45,7 +45,7 @@ All templates prepared and provided by DataPLAN are customizable. DataPLAN has a
 <figure><img src="../img/dataplan_user_defined.png" alt="User-defined template can also be directly used" style="width:100%"><figcaption style="margin: auto;">Figure 4: All  templates prepared and provided by the DataPLAN are customizable. The templates can be reused to create user-defined templates.</figcaption></figure>
 
 ## Offline usable and absolute secure
-DataPLAN can be used offline conveniently. Unlike other DMP tools, which can be complicated to run in offline situations, the document can be saved as html file using "ctrl + s" (Fig. 5) and edited subsequently. The user can also disconnect the internet after the DataPLAN website has been loaded completely. The serverless design of DataPLAN makes it absolute secure, because it prevents the loss and exposure of data during internet data transfer or online storage.  
+DataPLAN can be used offline conveniently. Unlike other DMP tools, which can be complicated to run in offline situations, the [DataPLAN][hp-DataPLAN] tool itself can be saved as html file using "ctrl + s" (Fig. 5) and used subsequently. The user can also disconnect the internet after the DataPLAN website has been loaded completely. The serverless design of DataPLAN makes it absolute secure, because it prevents the loss and exposure of data during internet data transfer or online storage.  
 
 <figure><img src="../img/dataplan_save.png" alt=" press Ctrl + S to save the file in html and then use it later on" style="width:100%"><figcaption style="margin: auto;">Figure 5: press Ctrl + S to save the file in html for using it later on.</figcaption></figure>
 
