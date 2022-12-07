@@ -50,7 +50,7 @@ When setting up your own data management plan it will be advantageous to know be
 You can write your DMPs offline by using the downloaded template of a funding agency in a text document format. However, a number of web-based DMP tools are currently available that greatly facilitate the process, as they use different templates.
 DataPLANT helps the community by providing a Data Management Plan Generator on their own with various building blocks, available under <https://plan.nfdi4plants.org/>. The tool provides guidance throughout the writing process, as it is a living document. When opening the tool, users first need to select the type of document they want to generate: a detailed european DMP, a short proposal DMP, or a detailed guide through the project. Depending on the choice, the tool will restructure the document and point out errors when information is missing. The tool also gives the possibility to save the document in different formats during or after completion
 
-![DMPG](../img/DMPG.png)
+![DMPG](../img/dataplan.png)
 
 ## Sources and further information
 
