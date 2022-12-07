@@ -10,7 +10,12 @@ article_status: published
 todo:
 ---
 
-A data management plan (DMP) structures the handling of research data in a scientific project and describes how to deal with the data during and after the end of the project. Many third-party funders, such as DFG, Horizon Europe, or BMBF expect you to provide information on the handling of research data as part of your funding application. Not only is a DMP by now mandatory for a DFG funding in plant sciences, it is always beneficial for your work on a research project.
+### disambiguation
+- If you are looking for [DataPLAN][DataPLAN], the Data Management Plan (DMP) generator of DataPLAN, you can find it here: <https://plan.nfdi4plants.org>;
+- If you are looking for a article of [DataPLAN][DataPLAN], you can find it here: [KnowledgeBase article about DataPLAN][kb-DataPLAN];
+
+
+A DMP structures the handling of research data in a scientific project and describes how to deal with the data during and after the end of the project. Many third-party funders, such as DFG, Horizon Europe, or BMBF expect you to provide information on the handling of research data as part of your funding application. Not only is a DMP by now mandatory for a DFG funding in plant sciences, it is always beneficial for your work on a research project.
 
 ## Advantages of a DMP
 
@@ -49,7 +54,7 @@ DataPLANT helps the community by providing a Data Management Plan Generator on t
 
 ## Sources and further information
 
-- [DataPLANT's DMPG](https://plan.nfdi4plants.org)
+- [DataPLAN](https://plan.nfdi4plants.org)
 - [DFG: Handling of Research Data](https://www.dfg.de/en/research_funding/principles_dfg_funding/research_data/index.html)
 - [forschungsdaten.info - Der Datenmanagementplan](https://www.forschungsdaten.info/themen/informieren-und-planen/datenmanagementplan/)
 - [RDMkit - Data management plan](https://rdmkit.elixir-europe.org/data_management_plan.html)
@@ -57,7 +62,7 @@ DataPLANT helps the community by providing a Data Management Plan Generator on t
 
 
 <!-- Knowledge base cross-references -->
-
+[kb-DataPLAN]: ../implementation/DataPLAN.html "DataPLAN, a DMP generator"
 [kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
 
 <!-- DataPLANT web links -->
