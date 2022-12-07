@@ -48,7 +48,7 @@ DataPLANT helps the community by providing [DataPLAN](https://plan.nfdi4plants.o
 
 ![DMPG](../img/dataplan.png)
 
-## Disambiguation
+## Follow-up
 - If you are looking for DataPLAN, the Data Management Plan (DMP) generator of DataPLANT, you can find it [here](https://plan.nfdi4plants.org).
 - If you are looking for an article about DataPLAN, you can find it [here][kb-DataPLAN].
 
