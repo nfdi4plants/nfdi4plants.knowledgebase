@@ -10,10 +10,6 @@ article_status: published
 todo:
 ---
 
-### Disambiguation
-- If you are looking for [DataPLAN][DataPLAN], the Data Management Plan (DMP) generator of DataPLAN, you can find it here: <https://plan.nfdi4plants.org>;
-- If you are looking for an article of [DataPLAN][DataPLAN], you can find it here: [KnowledgeBase article about DataPLAN][kb-DataPLAN];
-
 # Data Management Plan
 A DMP structures the handling of research data in a scientific project and describes how to deal with the data during and after the end of the project. Many third-party funders, such as DFG, Horizon Europe, or BMBF expect you to provide information on the handling of research data as part of your funding application. Not only is a DMP by now mandatory for a DFG funding in plant sciences, it is always beneficial for your work on a research project.
 
@@ -48,9 +44,13 @@ When setting up your own data management plan it will be advantageous to know be
 ## DataPLANT's Data Management Plan Generator
 
 You can write your DMPs offline by using the downloaded template of a funding agency in a text document format. However, a number of web-based DMP tools are currently available that greatly facilitate the process, as they use different templates.
-DataPLANT helps the community by providing a Data Management Plan Generator on their own with various building blocks, available under <https://plan.nfdi4plants.org/>. The tool provides guidance throughout the writing process, as it is a living document. When opening the tool, users first need to select the type of document they want to generate: a detailed european DMP, a short proposal DMP, or a detailed guide through the project. Depending on the choice, the tool will restructure the document and point out errors when information is missing. The tool also gives the possibility to save the document in different formats during or after completion
+DataPLANT helps the community by providing [DataPLAN](https://plan.nfdi4plants.org/), a Data Management Plan Generator with various building blocks. The tool provides guidance throughout the writing process, as it is a living document. When opening the tool, users first need to select the type of document they want to generate: a detailed european DMP, a short proposal DMP, or a detailed guide through the project. Depending on the choice, the tool will restructure the document and point out errors when information is missing. The tool also gives the possibility to save the document in different formats during or after completion.
 
 ![DMPG](../img/dataplan.png)
+
+## Disambiguation
+- If you are looking for DataPLAN, the Data Management Plan (DMP) generator of DataPLANT, you can find it [here](https://plan.nfdi4plants.org).
+- If you are looking for an article about DataPLAN, you can find it [here][kb-DataPLAN].
 
 ## Sources and further information
 
