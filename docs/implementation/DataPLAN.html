@@ -1,0 +1,148 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - DataPLAN
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Fundamentals
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/index.html">Introduction</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/ResearchDataManagement.html">Research Data Management</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/FairDataPrinciples.html">FAIR Data Principles</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/Metadata.html">Metadata</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataSharing.html">Data Sharing</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataPublications.html">Data Publications</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataManagementPlan.html">Data Management Plan</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/VersionControlGit.html">Version Control & Git</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">Public Data Repositories</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/PersistentIdentifiers.html">Persistent Identifiers</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Implementation within DataPLANT
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">Annotated Research Context</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/Swate.html">Swate - a workflow annotation tool for Excel</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/DataHub.html">DataHUB</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/DataPLAN.html">DataPLAN - our Data Management Plan Generator</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Training & Tutorials
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arc.html">QuickStart on ARCs</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_arcCommander.html">ARC Commander QuickStart</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/QuickStart_swate.html">Swate QuickStart</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/AnnotationPatterns.html">Best practices for data annotation</h1>
+<!-- # DataPLANT Setup:/docs/tutorials/DataPlant_Setup.html -->
+
+      </nfdi-sidebar-element>
+      <h1 class="front-header">
+        DataPLAN
+      </h1>
+      <i class="help">
+        last updated at 2022-12-06
+      </i>
+      <nfdi-toc></nfdi-toc>
+      <p><a href="https://plan.nfdi4plants.org" title="DataPLANT data management plan tool">DataPLAN</a> is a <a href="../fundamentals/DataManagementPlan.html" title="Data Management Plan">Data Management Plan</a> generator, which can help users creating a plan for their <a href="../fundamentals/ResearchDataManagement.html" title="Research Data Management">research data management</a>. By using DataPLAN, standardized DMPs for Horizon Europe and Deutsche Forschungsgemeinschaft (DFG) can be generated in five minutes. The fast generation speed is enabled by a template design with integratable answers and single-page web application technology.</p>
+<nfdi-h2 id="why-is-another-dmp-tool-needed">Why is another DMP tool needed?</nfdi-h2>
+<p>From funding agencies to research institutes, DMPs are required more and more often. Generating, following up and updating a DMP has increased the cost and workload of researchers. Although many tools have been developed to help creating DMPs, most of the tools do not reduce a significant amount workload. As DataPLANT uses standardized tools, protocols and formats to manage data, planing of the data management can also be standardized. The tool DataPLAN does not only help people to answer the DMPs, but comes already with a superset of standardized answers. Thus, instead of writing their own answers from scratch, users can select predefined ones, which can save a lot of workload. In addition, DataPLAN offers a practical guide, which is a detailed and comprehensive document for the project team and data stewards to follow.</p>
+<nfdi-h2 id="simple-layout">Simple layout</nfdi-h2>
+<figure><img src="../img/dataplan_layout.png" alt="The layout of DataPLAN" style="width:100%"><figcaption style="margin: auto;">Figure 1: Layout of DataPLAN. The red box shows a live preview of the generated document; the blue box shows the single-page questionnaire</figcaption></figure>
+<p>DataPLAN has a two-column layout (Fig. 1). In the left column (the red box), a live-preview of the generated document is shown; in the right column (the blue box), a questionnaire is shown. While answering all the questions in the questionnaire, the DMP in the live-preview will automatically update based on the answers to the questionnaire. This live update gives users a unique What You See Is What You Get (WYSIWYG) experience.</p>
+<nfdi-h2 id="the-answers-integrated-templates">The answers-integrated templates</nfdi-h2>
+<p>Unlike other DMP tools, which only have questions in their templates, the standardized answers of the DMP questions are directly integrated into the templates with DataPLAN. The final exported DMP document will only include answers selected by the users. For example, in Fig. 2, all checkbox options of Question 2 are selected. Therefore, all the integrated answers are shown in the final DMP document (green text). In Fig. 3, some checkbox options in Question 2 are not selected. Therefore, these answers are not shown in the final DMP document. The answers prepared in the DataPLAN tool are deeply coordinated with other DataPLANT tools such as the <a href="../implementation/ArcCommander.html" title="ARC Commander">ARC Commander</a> and <a href="../implementation/Swate.html" title="DataPLANT Swate">Swate</a>.</p>
+<figure><img src="../img/dataplan_before_deselect.png" alt="Before deselect checkboxes" style="width:100%"><figcaption style="margin: auto;">Figure 2: If all checkboxes of question 2 are selected, all counterparts in the DMP text will be kept.</figcaption></figure>  
+<p><br> <figure><img src="../img/dataplan_after_deselect.png" alt="After deselect checkboxes" style="width:100%"><figcaption style="margin: auto;">Figure 3: If some of the checkboxes are not selected in question 2, the respective counterparts in the DMP text will be removed.</figcaption></figure></p>
+<p><br> For specific information, which is unique between different projects, such as the &quot;project name&quot; and the &quot;project aim&quot;, the users can use free-text for the respective input fields. The counter parts in the DMP will be updated lively as well.</p>
+<nfdi-h2 id="templates-can-be-customized">Templates can be customized</nfdi-h2>
+<p>All templates prepared and provided by DataPLAN are customizable. DataPLAN has a user-defined template section (Fig. 4), in which templates are editable and can be directly loaded into DataPLAN.</p>
+<figure><img src="../img/dataplan_user_defined.png" alt="User-defined template can also be directly used" style="width:100%"><figcaption style="margin: auto;">Figure 4: All  templates prepared and provided by the DataPLAN are customizable. The templates can be reused to create user-defined templates.</figcaption></figure>
+<nfdi-h2 id="offline-usable-and-absolute-secure">Offline usable and absolute secure</nfdi-h2>
+<p>DataPLAN can be used offline conveniently. Unlike other DMP tools, which can be complicated to run in offline situations, the <a href="https://plan.nfdi4plants.org" title="DataPLANT data management plan tool">DataPLAN</a> tool itself can be saved as html file using &quot;ctrl + s&quot; (Fig. 5) and used subsequently. The user can also disconnect the internet after the DataPLAN website has been loaded completely. The serverless design of DataPLAN makes it absolute secure, because it prevents the loss and exposure of data during internet data transfer or online storage.</p>
+<figure><img src="../img/dataplan_save.png" alt=" press Ctrl + S to save the file in html and then use it later on" style="width:100%"><figcaption style="margin: auto;">Figure 5: press Ctrl + S to save the file in html for using it later on.</figcaption></figure>
+<nfdi-h2 id="no-registration-and-free-to-share">No registration and free to share</nfdi-h2>
+<p>Any user with or without registration can use all features of DataPLAN. The user input is saved automatically in the local storage. To share the answers or synchronize between different computers, answers can be exported in a first step and afterwards imported again into DataPLAN.</p>
+<p>Give <a href="https://plan.nfdi4plants.org" title="DataPLANT data management plan tool">DataPLAN</a> a try and share your feedback or feature request with us. The developers of DataPLAN will be happy to hear about your needs and further improve the DataPLAN tool.</p>
+<!-- Links to DataPLANT knowledge base (kb-) -->
+<!-- kb-Fundamentals -->
+<!-- kb-Implementation -->
+<!-- kb-Tutorials -->
+<!-- Links to DataPLANT Homepage (hp-) -->
+<!-- Links to DataPLANT GitHub (gh-) -->
+<!-- Links to external (ext-) sources -->
+
+      <h3>
+        DataPLANT Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <span style="display: inline-flex; flex-wrap: wrap;">
+          <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+            directly
+          </a>
+          .
+        </span>
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/DataPLAN.md" style="margin-left: auto; display: block; width: 130px;">
+          ✏️ Edit this page
+        </a>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>
