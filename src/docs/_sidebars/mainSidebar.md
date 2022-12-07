@@ -19,6 +19,7 @@
 # ARC Commander:/docs/implementation/ArcCommander.html
 # Swate - a workflow annotation tool for Excel:/docs/implementation/Swate.html
 # DataHUB:/docs/implementation/DataHub.html
+# DataPLAN - our Data Management Plan Generator:/docs/implementation/DataPLAN.html
 ```
 
 ```Training & Tutorials
