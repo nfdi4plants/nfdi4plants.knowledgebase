@@ -11,7 +11,7 @@ article_status: published
 todo:
 ---
 
-[DataPLAN][hp-DataPLAN] is a [Data Management Plan][kb-DataManagementPlan] generator which can help you create a plan for the [research data management][kb-ResearchDataManagement]. By using DataPLAN, standardized DMPs for Horizon Europ and Deutsche Forschungsgemeinschaft (DFG) can be generated in five minutes. The fast generation speed on account of the answers-integrated template design and single-page web application technology. 
+[DataPLAN][hp-DataPLAN] is a [Data Management Plan][kb-DataManagementPlan] generator which can help users to create a plan for the [research data management][kb-ResearchDataManagement]. By using DataPLAN, standardized DMPs for Horizon Europ and Deutsche Forschungsgemeinschaft (DFG) can be generated in five minutes. The fast generation speed on account of the answers-integrated template design and single-page web application technology. 
 
 
 ## Why another DMP tool is needed?
