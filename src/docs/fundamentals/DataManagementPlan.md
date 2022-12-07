@@ -10,11 +10,11 @@ article_status: published
 todo:
 ---
 
-### disambiguation
+### Disambiguation
 - If you are looking for [DataPLAN][DataPLAN], the Data Management Plan (DMP) generator of DataPLAN, you can find it here: <https://plan.nfdi4plants.org>;
-- If you are looking for a article of [DataPLAN][DataPLAN], you can find it here: [KnowledgeBase article about DataPLAN][kb-DataPLAN];
+- If you are looking for an article of [DataPLAN][DataPLAN], you can find it here: [KnowledgeBase article about DataPLAN][kb-DataPLAN];
 
-
+# Data Management Plan
 A DMP structures the handling of research data in a scientific project and describes how to deal with the data during and after the end of the project. Many third-party funders, such as DFG, Horizon Europe, or BMBF expect you to provide information on the handling of research data as part of your funding application. Not only is a DMP by now mandatory for a DFG funding in plant sciences, it is always beneficial for your work on a research project.
 
 ## Advantages of a DMP
