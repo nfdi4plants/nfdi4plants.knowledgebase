@@ -20,9 +20,10 @@ From funding agencies to research institutes, DMPs are required more and more of
   
 
 ## Simple layout
+DataPLAN has a two-column layout (Fig. 1). In the left column (the red box), a live-preview of the generated document is shown; in the right column (the blue box), a questionnaire is shown. While answering all the questions in the questionnaire, the DMP in the live-preview will automatically update based on the answers to the questionnaire. This live update gives users a unique What You See Is What You Get (WYSIWYG) experience.
+
 <figure><img src="../img/dataplan_layout.png" alt="The layout of DataPLAN" style="width:100%"><figcaption style="margin: auto;">Figure 1: Layout of DataPLAN. The red box shows a live preview of the generated document; the blue box shows the single-page questionnaire</figcaption></figure>
 
-DataPLAN has a two-column layout (Fig. 1). In the left column (the red box), a live-preview of the generated document is shown; in the right column (the blue box), a questionnaire is shown. While answering all the questions in the questionnaire, the DMP in the live-preview will automatically update based on the answers to the questionnaire. This live update gives users a unique What You See Is What You Get (WYSIWYG) experience.
 
 
 ## The answers-integrated templates
