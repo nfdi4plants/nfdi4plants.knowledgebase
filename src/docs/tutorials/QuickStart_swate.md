@@ -74,7 +74,47 @@ Fill the cells beneath each building block with ontology terms to note the respe
 ![](../img/swate_ontologyTermSearch2.png)
 
 
-> Note: More information on how to use Swate can be found [here](https://github.com/nfdi4plants/Swate/wiki).
+> Note: More information on how to use Swate can be found [here][gh-SwateWiki].
 
 <div style="page-break-after: always;"></div>
 
+<!-- Links to DataPLANT knowledge base (kb-) -->
+
+<!-- kb-Fundamentals -->
+
+[kb-DataManagementPlan]: ../fundamentals/DataManagementPlan.html "Data Management Plan"
+[kb-DataPublications]: ../fundamentals/DataPublications.html "Data Publication"
+[kb-DataSharing]: ../fundamentals/DataSharing.html "Data Sharing"
+[kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
+[kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
+[kb-PersistentIdentifiers]: ../fundamentals/PersistentIdentifiers.html "Persistent Identifiers"
+[kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
+[kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
+[kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
+
+<!-- kb-Implementation -->
+[kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
+[kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
+[kb-ArcCommander]: ../implementation/ArcCommander.html "ARC Commander"
+
+<!-- kb-Tutorials -->
+[kb-QuickStart_arc]: ../tutorials/QuickStart_arcCommander.html "Quickstart ARC"
+[kb-QuickStart_Swate]: ../tutorials/QuickStart_swate.html "Swate QuickStart"
+
+
+<!-- Links to DataPLANT Homepage (hp-) -->
+
+[hp-Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
+[hp-DataHUB]: <https://git.nfdi4plants.org> "DataPLANT DataHUB"
+[hp-HelpDesk]: <https://helpdesk.nfdi4plants.org> "DataPLANT Help Desk"
+
+<!-- Links to DataPLANT GitHub (gh-) -->
+
+[gh-DataPlant]: <https://github.com/nfdi4plants/> "GitHub DataPLANT"
+[gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
+[gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/> "ArcCommander"
+[gh-ArcCommander-Wiki]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
+[gh-Swate]: <https://github.com/nfdi4plants/Swate/> "Swate repository"
+[gh-SwateWiki]: <https://nfdi4plants.github.io/Swate-docs/index.html> "Swate Wiki"
+
+<!-- Links to external (ext-) sources -->

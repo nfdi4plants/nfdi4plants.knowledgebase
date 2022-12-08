@@ -26,7 +26,8 @@ Fully integrated in Microsoft Excel (Excel online, Excel 365, and Excel 2019), S
 - `Protocol Column` (Protocol REF/Protocol Type), or an
 - `Output Column` (Sample Name/Raw Data File//Derived Data File, one per table).  
 
-Combination of ISA (Characteristic, Parameter, Factor, Component) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on within your annotation table (Parameter [temperature] or Factor [temperature]). For more information on these building blocks, please check our [annotation principles](). <!-- update and link annotation principles --> 
+Combination of ISA (Characteristic, Parameter, Factor, Component) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on within your annotation table (Parameter [temperature] or Factor [temperature]). For more information on these building blocks, please check our [annotation principles](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/tutorials/AnnotationPatterns.html#annotation-principles-swate-building-blocks). 
+
 
 ![Building Blocks](../img/Swate_BuildingBlocks.jpg)
 
