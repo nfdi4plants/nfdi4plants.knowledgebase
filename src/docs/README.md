@@ -251,7 +251,7 @@ British English
 [kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
 [kb-PersistentIdentifiers]: ../fundamentals/PersistentIdentifiers.html "Persistent Identifiers"
 [kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
-[kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
+[kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"s
 [kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
 
 <!-- kb-Implementation -->
