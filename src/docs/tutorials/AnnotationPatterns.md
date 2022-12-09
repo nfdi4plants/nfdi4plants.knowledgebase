@@ -36,6 +36,3 @@ This example can be of relevance when you are carrying out labeling experiments 
 
 By listing every raw data file twice, it becomes clear that the analyzed samples originated from the combination of an experimental sample and a reference, e.g. spiking of S1 with the reference resulted in the data file S1R.wiff.  
 
-## Annotation Principles for Swate building blocks
-
-![](../img/Swate_AnnotationPrinciples.png)
