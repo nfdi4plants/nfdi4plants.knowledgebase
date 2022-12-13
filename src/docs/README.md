@@ -186,7 +186,7 @@ One of the major issues with relative paths is that during development the pages
     ```
     `/docs/Home.html` will be parsed to `/nfdi4plants.knowledgebase/docs/Home.html`.
 - **Relative paths from current file:** These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". Example: `[Test](./ResearchDataManagement.html)`. Starting with `./` translates to "coming from the position of this file". We can even go up in the file hierarchy, like `[Test](./../README.html)`. This translates to "coming from the position of this file, go two folder higher and [find README.html there](./../../README.html)".
-
+<!--The last example link links now to "README.md" as the Contribution guide currently linked to from the website it the README within the repo and not shown on the website. If the contribution guide is moved in the future, this needs to be changed.-->
 ### Structure and Format
 
 Try to avoid deep structures by using no more than two headline levels, i.e.
