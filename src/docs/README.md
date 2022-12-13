@@ -14,33 +14,28 @@ todo:
 Your contribution to the DataPLANT knowledge base is highly appreciated.
 This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.
 
-For smaller changes and suggestions, please refer to [here](./home.html).
+For changes and suggestions, feel free to open an issue or to open a pull request.
 
 
-- [Introduction](#introduction)
-- [GitHub Routines](#github-routines)
-- [Testing](#testing)
-- [Common Errors](#common-errors)
-- [Authoring Content](#authoring-content)
-  - [Docs-Page](#docs-page)
-  - [_sidebar](#_sidebar)
-- [Markdown to HTML Rendering Rules](#markdown-to-html-rendering-rules)
-  - [Ignored Content](#ignored-content)
-  - [Visible or Hidden](#visible-or-hidden)
-- [Content Design Principles](#content-design-principles)
-  - [References](#references)
-  - [Relative Paths](#relative-paths)
-  - [Structure and Format](#structure-and-format)
-  - [Images](#images)
-- [File Name Requirements](#file-name-requirements)
-- [Addressing Readers](#addressing-readers)
-- [Language](#language)
-- [Link Collection](#link-collection)
+- [Data Management Plan:/docs/DataManagementPlan.html](#data-management-plandocsdatamanagementplanhtml)
+- [DataPLANT's Data Management Plan Generator:/docs/DataManagementPlan.html#dataplants-data-management-plan-generator](#dataplants-data-management-plan-generatordocsdatamanagementplanhtmldataplants-data-management-plan-generator)
+  - [Markdown to HTML Rendering Rules](#markdown-to-html-rendering-rules)
+    - [Ignored Content](#ignored-content)
+    - [Visible or Hidden](#visible-or-hidden)
+  - [Content Design Principles](#content-design-principles)
+    - [References](#references)
+    - [Relative Paths](#relative-paths)
+    - [Structure and Format](#structure-and-format)
+    - [Images](#images)
+  - [File Name Requirements](#file-name-requirements)
+  - [Addressing Readers](#addressing-readers)
+  - [Language](#language)
+  - [Link Collection](#link-collection)
 
 ## Introduction
 
 The DataPLANT knowledge base is built on [nfdi-web-components](https://nfdi4plants.github.io/web-components-docs/) and will fit all **markdown** content into this "framework".
-For a general introduction to writing markdown, see: [Markdown tutorial](tutorials/markdown.md) and references therein.
+For a general introduction to writing markdown, see: [Markdown tutorial](tutorials/IntroductionToMarkdown.md) and references therein.
 
 ## GitHub Routines
 
@@ -180,7 +175,7 @@ It will only become visible in the sidebar once the article is linked in the res
 
 We SHOULD always try to use relative paths, as they are easier to maintain. Altough useful, they need a bit more finetuning, as there are several options.
 
-One of the major issues with relative paths is that during development the pages are accessed by `/`, for example `/docs/README.html`. Published they will be accessed by `/nfdi4plants.knowledgebase` (`/nfdi4plants.knowledgebase/docs/README.html`). In the following i will describe some ideas on how to deal with this:
+One of the major issues with relative paths is that during development the pages are accessed by `/`, for example `/docs/README.html`. Published they will be accessed by `/nfdi4plants.knowledgebase` (`/nfdi4plants.knowledgebase/docs/README.html`). In the following, I will describe some ideas on how to deal with this:
 
 - **Basic relative paths:** These will looke like this: `[Test](/README.html)`. By starting with `/` we implcitly say "start at host". So in development it will start with `http://127.0.0.1:8080/`, in production it will start with `https://nfdi4plants.github.io/`. Because in production we also need would need `https://nfdi4plants.github.io/nfdi4plants.knowledgebase/`, this type of relative paths can create issues! ⚠️
 - **Relative paths in sidebar:** The sidebars actually check if you are currently in `dotnet fornax watch` mode. So you can use basic relative paths here. Example `
