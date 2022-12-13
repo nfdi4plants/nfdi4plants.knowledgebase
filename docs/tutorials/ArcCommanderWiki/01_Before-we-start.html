@@ -1,0 +1,109 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - Before we start
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          ARC Commander Wiki
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/01_Before-we-start.html">Before we start</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/02_ARC-initialization.html">ARC Initialization</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/03_Investigation.html">Investigation</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/04_Study.html">Study</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/05_Assay.html">Assay</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/06_ARC-Synchronization.html">ARC Synchronization</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Back to knowledgebase
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/index.html">Introduction</h1>
+
+      </nfdi-sidebar-element>
+      <h1 class="front-header">
+        Before we start
+      </h1>
+      <i class="help">
+        last updated at 2022-12-13
+      </i>
+      <nfdi-toc></nfdi-toc>
+      <p><strong>An installation of <a href="https://git-scm.com/downloads">git</a> and <a href="https://git-lfs.github.com/">git LFS</a> is mandatory for arcCommander usage. Whenever submitting a command that relies on a git functionality, the Commander will check for presence of git and git LFS. If not installed, the respective command will result in an error. Throughout the installation setup of git, the user has the possibility to install git LFS. Git LFS can also be downloaded manually <a href="https://git-lfs.github.com/">here</a>.</strong></p>
+<ul>
+<li>For all following steps it is assumed, that you opened a shell within a directory you want to add an ARC in. In this example it is &quot;C:\Users\userA\source\repos\ArcTutorial&quot;.</li>
+<li>Note that each input that contains non-literal characters must be encapsulated in quotation marks when entered within the shell. This also applies when using the editor for numerals that are no numbers (dates, phone numbers, etc.).</li>
+<li>Furthermore, <code>&lt;arc&gt;</code> defines the path to the ArcCommander.exe (eg. &quot;C:\Users\userA\source\repos\ArcCommander\ArcCommander.exe&quot;).</li>
+<li>Every input can be entered by using the shell. For user friendly experience, an editor may pop up if no arguments are given. After entering the required values, save and close the editor.</li>
+</ul>
+
+      <h3>
+        DataPLANT Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <span style="display: inline-flex; flex-wrap: wrap;">
+          <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+            directly
+          </a>
+          .
+        </span>
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/tutorials/ArcCommanderWiki/01_Before-we-start.md" style="margin-left: auto; display: block; width: 130px;">
+          ✏️ Edit this page
+        </a>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>

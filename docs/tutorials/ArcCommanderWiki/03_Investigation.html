@@ -1,0 +1,318 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - Investigation
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          ARC Commander Wiki
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/01_Before-we-start.html">Before we start</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/02_ARC-initialization.html">ARC Initialization</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/03_Investigation.html">Investigation</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/04_Study.html">Study</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/05_Assay.html">Assay</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/06_ARC-Synchronization.html">ARC Synchronization</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Back to knowledgebase
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/index.html">Introduction</h1>
+
+      </nfdi-sidebar-element>
+      <h1 class="front-header">
+        Investigation
+      </h1>
+      <i class="help">
+        last updated at 2022-12-13
+      </i>
+      <nfdi-toc></nfdi-toc>
+      <nfdi-h2 id="addition-of-an-isa.investigation.xlsx">3.1. Addition of an isa.investigation.xlsx</nfdi-h2>
+<ul>
+<li>Each ARC includes an isa.investigation file that serves as central information registry. The ARC’s content as well as global and detailed meta data are listed here. Any study or assay addition performed throughout the ARC’s working life must be registered in investigation.isa.xlsx.</li>
+<li>arc i create will open an editor that asks for basic investigation information to create an ISA-TAB conform Excel file. If arguments are applied with the given command, no editor will open.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Input</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identifier (Mandatory)</td>
+<td>A identifier or an accession number provided by a repository.</td>
+<td>2021_TestARC05</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>A concise name given to the investigation.</td>
+<td>Redox behaviour of yeast mutant M21</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A textual description of the investigation.</td>
+<td>M21 lacks in protein P09 and is susceptible to H2O2 Treatment. The molecular and phenotypical responses are studied.</td>
+</tr>
+<tr>
+<td>SubmissionDate</td>
+<td>The date on which the investigation was reported to the repository.</td>
+<td></td>
+</tr>
+<tr>
+<td>PublicReleaseDate</td>
+<td>The date on which the investigation was released publicly.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Instead of using the editor, the following command can be used.<br />
+<code>arc i create --identifier &quot;2021_TestARC05&quot; --title &quot;Redox behaviour of yeast mutant M21&quot; --description &quot;M21 lacks in protein P09 and is susceptible to H2O2 Treatment. The molecular and phenotypical responses are studied.&quot;</code></li>
+<li>The isa.investigation.xlsx is added to root directory.</li>
+</ul>
+<nfdi-h2 id="registering-persons-to-investigation">3.2. Registering persons to investigation</nfdi-h2>
+<ul>
+<li>Every person, that is involved in the investigation can be registered with personal information using <code>arc i person register</code>.<br />
+<em>Note: If an investigation covers several studies with various groups and persons, it may be beneficial to register corresponding contacts to investigation and register all study-related persons in each study (see X.X).</em>_</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Input</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LastName (Mandatory)</td>
+<td>The last name of a person associated with the investigation.</td>
+<td>Doe</td>
+</tr>
+<tr>
+<td>FirstName (Mandatory)</td>
+<td>The first name of a person associated with the investigation.</td>
+<td>John</td>
+</tr>
+<tr>
+<td>MidInitials</td>
+<td>The middle initials of a person associated with the investigation.</td>
+<td>P</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>The email address of a person associated with the investigation.</td>
+<td>jpdoe@mail.com</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>The telephone number of a person associated with the investigation.</td>
+<td>+49(0)631 205 3045</td>
+</tr>
+<tr>
+<td>Fax</td>
+<td>The fax number of a person associated with the investigation.</td>
+<td></td>
+</tr>
+<tr>
+<td>Address</td>
+<td>The address of a person associated with the investigation.</td>
+<td>Paul Ehrlich Straße 23, 67663 Kaiserslautern, Germany</td>
+</tr>
+<tr>
+<td>Affiliation</td>
+<td>The organization affiliation for a person associated with the investigation.</td>
+<td>Department of M21 Measurements, Technische Universität Kaiserslautern, Germany</td>
+</tr>
+<tr>
+<td>Roles</td>
+<td>Term to classify the role(s) performed by this person in the context of the investigation, which means that the roles reported here need not correspond to roles held withing their affiliated organization. Multiple annotations or values attached to one person can be provided by using a semicolon (“;”) Unicode (U0003+B) as a separator (e.g.: submitter;funder;sponsor). The term can be free text or from, for example, a controlled vocabulary or an ontology. If the latter source is used the Term Accession Number and Term Source REF fields below are required.</td>
+<td>supervisor</td>
+</tr>
+<tr>
+<td>RolesTermAccessionNumber</td>
+<td>The accession number from the Term Source associated with the selected term.</td>
+<td></td>
+</tr>
+<tr>
+<td>RolesTermSourceREF</td>
+<td>dentifies the controlled vocabulary or ontology that this term comes from. The Source REF has to match one of the Term Source Names declared in the Ontology Source Reference section.  RolesTermSourceREF: <a href="https://sparontologies.github.io/scoro/current/scoro.xml">https://sparontologies.github.io/scoro/current/scoro.xml</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Instead of using the editor, the following command can be used:<br />
+<code>arc i person register -l Doe -f John -m P --email jpdoe@mail.com --phone &quot;+49(0)631 205 3045&quot; --address &quot;Paul-Ehrlich-Straße 23, 67663 Kaiserslautern&quot; --affiliation &quot;Department of M21 Measurements, Technische Universität Kaiserslautern, Germany&quot; --roles &quot;supervisor&quot;</code></li>
+</ul>
+<nfdi-h3 id="listing-and-inspecting-registered-persons">3.2.1 Listing and inspecting registered persons</nfdi-h3>
+<ul>
+<li>Registered persons can be listed by <code>arc i person list</code>.</li>
+<li>To get detailed information about a specific entry use <code>arc i person get</code>. If no arguments are specified an editor will request first and last name (mandatory) and optionally mid name initials to print all registered information into the shell.</li>
+</ul>
+<nfdi-h3 id="editing-person-information">3.2.2. Editing person information</nfdi-h3>
+<ul>
+<li>A person can be edited using <code>arc i person edit</code>.
+<ul>
+<li>If no further arguments are specified an editor opens, that asks for the person that should be edited.</li>
+<li>If the person exists, another editor opens with information already known for the respective person. The required values can be edited.</li>
+</ul>
+</li>
+<li>Instead of using the editor, the following command can be used. To circumvent editor pop ups, not <code>arc i person edit</code>, but <code>arc i person update</code> must be used:<br />
+<code>arc i person update -l Kunze -f Heinz-Rudolf --email hrkunze@mail.com --address &quot;Herzstraße 5, 12345 Musterstadt&quot;</code></li>
+</ul>
+<nfdi-h3 id="removing-a-person">3.2.3 Removing a person</nfdi-h3>
+<ul>
+<li>A person can be removed from an investigation using <code>arc i person unregister</code>. An editor will request first and last name (mandatory) and optionally mid name initials to unregister the person from the isa.investigation.xlsx.</li>
+<li>Instead of using the editor, the following command can be used:
+<code>arc i person unregister -l Doe -f John -m P</code></li>
+</ul>
+<nfdi-h2 id="registering-publications-to-investigation">3.3. Registering publications to investigation</nfdi-h2>
+<ul>
+<li>Investigation publications may be a collection of all study publications or publications that emerge from study publications (reviews/integrating publications).</li>
+<li>Investigation publications can be registered by <code>arc i publication register</code>.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Input</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DOI (Mandatory)</td>
+<td>A Digital Object Identifier (DOI) for that publication (where available).</td>
+<td>2021_ARC05_Pub01tmp</td>
+</tr>
+<tr>
+<td>PubMedID</td>
+<td>The PubMed IDs of the described publication(s) associated with this investigation.</td>
+<td></td>
+</tr>
+<tr>
+<td>AuthorList</td>
+<td>The list of authors associated with that publication.</td>
+<td>John P Doe; Eva Muller</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>The title of publication associated with the investigation.</td>
+<td></td>
+</tr>
+<tr>
+<td>Status</td>
+<td>A term describing the status of that publication (i.e. submitted, in preparation, published).</td>
+<td>in preparation</td>
+</tr>
+<tr>
+<td>StatusTermAccessionNumber</td>
+<td>The accession number from the Term Source associated with the selected term.</td>
+<td></td>
+</tr>
+<tr>
+<td>StatusTermSourceREF</td>
+<td>Identifies the controlled vocabulary or ontology that this term comes from. The Source REF has to match one the Term Source Name declared in the in the Ontology Source Reference section.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<nfdi-h3 id="listing-and-inspecting-registered-publications">3.3.1 Listing and inspecting registered publications</nfdi-h3>
+<ul>
+<li>Registered publications can be listed by <code>arc i publication list</code>.</li>
+<li>To get detailed information about a specific entry use <code>arc i publication get</code>. If no arguments are specified an editor will request the doi to print all registered information into the shell.</li>
+</ul>
+<nfdi-h3 id="editing-publication-information">3.3.2 Editing publication information</nfdi-h3>
+<ul>
+<li>A publication can be edited using <code>arc i publication edit</code>.
+<ul>
+<li>If no further arguments are specified an editor opens, that asks for the publication doi that should be edited.</li>
+<li>If the publication exists, another editor opens with information already known for the respective publication. The required values can be edited.</li>
+</ul>
+</li>
+<li>Instead of using the editor, the following command can be used. To circumvent editor pop ups, not arc i publication edit, but arc i publication update must be used:<br />
+<code>arc i publication update -d 2021_ARC05_Pub01tmp --title &quot;Review on yeast P09 protein and its involvement in redox susceptibility&quot;.</code></li>
+</ul>
+<nfdi-h3 id="removing-a-publication">3.3.3 Removing a publication</nfdi-h3>
+<ul>
+<li>A publication can be removed from an investigation using <code>arc i publication unregister</code>. A editor will request the doi to unregister the publication from the isa.investigation.xlsx.</li>
+<li>Instead of using the editor, the following command can be used:<br />
+<code>arc i publication unregister -d 2021_ARC05_Pub01tmp</code></li>
+</ul>
+
+      <h3>
+        DataPLANT Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <span style="display: inline-flex; flex-wrap: wrap;">
+          <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+            directly
+          </a>
+          .
+        </span>
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/tutorials/ArcCommanderWiki/03_Investigation.md" style="margin-left: auto; display: block; width: 130px;">
+          ✏️ Edit this page
+        </a>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>

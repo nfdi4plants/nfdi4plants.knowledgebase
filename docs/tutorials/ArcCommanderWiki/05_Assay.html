@@ -1,0 +1,204 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - Assay
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          ARC Commander Wiki
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/01_Before-we-start.html">Before we start</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/02_ARC-initialization.html">ARC Initialization</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/03_Investigation.html">Investigation</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/04_Study.html">Study</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/05_Assay.html">Assay</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/06_ARC-Synchronization.html">ARC Synchronization</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Back to knowledgebase
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/index.html">Introduction</h1>
+
+      </nfdi-sidebar-element>
+      <h1 class="front-header">
+        Assay
+      </h1>
+      <i class="help">
+        last updated at 2022-12-13
+      </i>
+      <nfdi-toc></nfdi-toc>
+      <nfdi-h2 id="addition-of-assays">5.1 Addition of assays</nfdi-h2>
+<ul>
+<li>An assay may consist of experimental measuring data together with experimental protocols.
+Note: An assay identifier also sets the folder name, so ensure to avoid special characters!</li>
+<li>An assay folder structure can be created by using <code>arc a init</code>. Under assays an assay folder named after the assay identifier is created which includes:
+<ul>
+<li>dataset</li>
+<li>protocol</li>
+<li>assay.isa.xlsx</li>
+<li>README.md</li>
+</ul>
+</li>
+<li>An existing assay can be registered to the investigation by using <code>arc a register</code>.</li>
+<li>To create the folder structure and afterwards register the new assay <code>arc a add</code> can be used. This command combines init and register.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Input</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>StudyIdentifier</td>
+<td>Name of the study   in which the assay is situated</td>
+<td></td>
+</tr>
+<tr>
+<td>AssayIdentifier (Mandatory)</td>
+<td>Name of the assay of interest</td>
+<td>GelBasedProteomicsWT</td>
+</tr>
+<tr>
+<td>MeasurementType</td>
+<td>A term to qualify   the endpoint, or what is being measured (e.g. gene expression profiling or   protein identification). The term can be free text or from, for example, a controlled   vocabulary or an ontology. If the latter source is used the Term Accession   Number and Term Source REF fields below are required.</td>
+<td>Proteomics</td>
+</tr>
+<tr>
+<td>MeasurementTypeTermAccessionNumber</td>
+<td>The accession number from the Term Source associated   with the selected term.</td>
+<td></td>
+</tr>
+<tr>
+<td>MeasurementTypeTermSourceREF</td>
+<td>The Source REF has   to match one of the Term Source Name declared in the Ontology Source   Reference section.</td>
+<td></td>
+</tr>
+<tr>
+<td>TechnologyType</td>
+<td>Term to identify the technology used to perform the   measurement, e.g. DNA microarray, mass spectrometry. The term can be free   text or from, for example, a controlled vocabulary or an ontology. If the   latter source is used the Term Accession Number and Term Source REF fields   below are required.</td>
+<td>Mass spectrometry</td>
+</tr>
+<tr>
+<td>TechnologyTypeTermAccessionNumber</td>
+<td>The accession   number from the Term Source associated with the selected term.</td>
+<td></td>
+</tr>
+<tr>
+<td>TechnologyTypeTermSourceREF</td>
+<td>Identifies the controlled vocabulary or ontology   that this term comes from. The Source REF has to match one of the Term Source   Names declared in the Ontology Source Reference section.</td>
+<td></td>
+</tr>
+<tr>
+<td>TechnologyPlatform</td>
+<td>Manufacturer and   platform name, e.g. Bruker AVANCE</td>
+<td>AB Sciex TT6600</td>
+</tr>
+</tbody>
+</table>
+<p>If no study identifier is given, a study is created with the assay identifier as study identifier. Instead of using the editor, the following command can be used:<br />
+<code>arc a add -a GelBasedProteomicsM21 --measurementtype Proteomics --technologytype &quot;Mass spectrometry&quot; --technologyplatform &quot;AB Sciex TT6600&quot;</code></p>
+<nfdi-h2 id="listing-and-inspecting-registered-assays">5.2 Listing and inspecting registered assays</nfdi-h2>
+<ul>
+<li>Registered assays can be listed by <code>arc a list</code>.</li>
+<li>To get detailed information about a specific entry use <code>arc a get</code>. If no arguments are specified an editor will request study and assay identifier (mandatory) to print all registered information into the shell.</li>
+</ul>
+<nfdi-h2 id="editing-assay-information">5.3 Editing assay information</nfdi-h2>
+<ul>
+<li>An assay can be edited using <code>arc a edit</code>.
+<ul>
+<li>If no further arguments are specified an editor opens, that asks for the assay and study identifier that should be edited.</li>
+<li>If the assay exists, another editor opens with information already known for the respective assay. The required values can be edited.</li>
+</ul>
+</li>
+<li>Instead of using the editor, the following command can be used. To circumvent editor pop ups, not <code>arc a edit</code>, but <code>arc a update</code> must be used:<br />
+<code>arc a update -s GelBasedProteomicsWT -a GelBasedProteomicsWT --technologyplatform &quot;AB Sciex TT6600&quot;</code></li>
+</ul>
+<nfdi-h2 id="removing-assays">5.4 Removing assays</nfdi-h2>
+<p><em>Note: To remove, unregister, or delete an assay both study identifier and assay identifier are required to ensure the correct assay is chosen.</em></p>
+<ul>
+<li>An assay can be unregistered from the investigation by using <code>arc a unregister</code>.</li>
+<li>An assay folder structure can be deleted by using <code>arc a delete</code>.</li>
+<li>To both, delete the assay folder structure and unregister it from the investigation <code>arc a remove</code> can be used.</li>
+</ul>
+<nfdi-h2 id="moving-assays">5.5 Moving assays</nfdi-h2>
+<ul>
+<li>If an assay was mis-assigned to an incorrect study, or some assays should be grouped together (e.g. when a new study is created and some old assays would fit better to this new study), an assay can be moved from one study to another by using <code>arc a move</code>. After definition of the assay identifier together with old, and target study identifier, the assay is moved. If no study exist, that matches the given target study identifier, a new study is registered.</li>
+<li>Instead of using the editor, the following command can be used:<br />
+<code>arc a move -s GelBasedProteomicsWT -a GelBasedProteomicsWT -t WTProteomics</code></li>
+</ul>
+
+      <h3>
+        DataPLANT Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <span style="display: inline-flex; flex-wrap: wrap;">
+          <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+            directly
+          </a>
+          .
+        </span>
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/tutorials/ArcCommanderWiki/05_Assay.md" style="margin-left: auto; display: block; width: 130px;">
+          ✏️ Edit this page
+        </a>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>
