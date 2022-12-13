@@ -177,7 +177,7 @@ We SHOULD always try to use relative paths, as they are easier to maintain. Alto
 
 One of the major issues with relative paths is that during development the pages are accessed by `/`, for example `/docs/README.html`. Published they will be accessed by `/nfdi4plants.knowledgebase` (`/nfdi4plants.knowledgebase/docs/README.html`). In the following, I will describe some ideas on how to deal with this:
 
-- **Basic relative paths:** These will looke like this: `[Test](/README.html)`. By starting with `/` we implcitly say "start at host". So in development it will start with `http://127.0.0.1:8080/`, in production it will start with `https://nfdi4plants.github.io/`. Because in production we also need would need `https://nfdi4plants.github.io/nfdi4plants.knowledgebase/`, this type of relative paths can create issues! ⚠️
+- **Basic relative paths:** These will looke like this: `[Test](/README.html)`. By starting with `/` we implicitly say "start at host". So in development it will start with `http://127.0.0.1:8080/`, in production it will start with `https://nfdi4plants.github.io/`. Because in production we also need would need `https://nfdi4plants.github.io/nfdi4plants.knowledgebase/`, this type of relative paths can create issues! ⚠️
 - **Relative paths in sidebar:** The sidebars actually check if you are currently in `dotnet fornax watch` mode. So you can use basic relative paths here. Example `
     ```markdown
     ```Fundamentals
@@ -185,9 +185,7 @@ One of the major issues with relative paths is that during development the pages
     ```!
     ```
     `/docs/Home.html` will be parsed to `/nfdi4plants.knowledgebase/docs/Home.html`.
-- **Relative paths from current file:** These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". Example: `[Test](./ResearchDataManagement.html)`. Starting with `./` translates to "coming from the position of this file". We can even go up in the file hierarchy, like `[Test](./../README.html)`. This translates to "coming from the position of this file, go one folder higher and find README.html there".
-
-[Test](./../README.html)
+- **Relative paths from current file:** These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". Example: `[Test](./ResearchDataManagement.html)`. Starting with `./` translates to "coming from the position of this file". We can even go up in the file hierarchy, like `[Test](./../README.html)`. This translates to "coming from the position of this file, go two folder higher and [find README.html there](./../../README.html)".
 
 ### Structure and Format
 
