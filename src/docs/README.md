@@ -42,7 +42,7 @@ For a general introduction to writing markdown, see: [Markdown tutorial](tutoria
 > Note: This is not a full-fledged GitHub tutorial. Please refer to available tutorials online or contact the knowledge base curators.
 
 1. Sign up for a GitHub account.
-2. [Fork](https://github.com/nfdi4plants/nfdi4plants.github.io/fork) the knowledge base git repository.
+2. [Fork](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/fork) the knowledge base git repository.
    
    - This creates a copy of the knowledge base repository in your own GitHub account.
    - In the top left, you will see that the repository is associated with your account (1) and forked from the main repository (2).
