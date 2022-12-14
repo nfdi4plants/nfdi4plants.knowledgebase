@@ -32,7 +32,7 @@ For a general introduction to writing markdown, see: [Markdown tutorial](tutoria
    - Be aware that your fork is not automatically updated, if the main repository updates. Make sure to update your fork regularly (especially before creating new content) by clicking "Fetch upstream" (4) in the top-right corner of your repository.
    - If you cloned your repository locally, you also have to update the local clone (via "git pull").
    
-  ![Git Routine](./src/docs/img/contribution_git.png)
+  ![Git Routine](./img/contribution_git.png)
 
 3. You can work and make any changes in your own repository and commit + push them to your fork.
 
@@ -167,7 +167,7 @@ One of the major issues with relative paths is that during development the pages
     ```!
     ```
     `/docs/Home.html` will be parsed to `/nfdi4plants.knowledgebase/docs/Home.html`.
-- **Relative paths from current file:** These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". Example: `[Test](./ResearchDataManagement.html)`. Starting with `./` translates to "coming from the position of this file". We can even go up in the file hierarchy, like `[Test](./../../README.html)`. This translates to "coming from the position of this file, go one folder higher and into the docs directory [find this README.html file there](./../docs/README.html)".
+- **Relative paths from current file:** These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". Example: `[Test](./ResearchDataManagement.html)`. Starting with `./` translates to "coming from the position of this file". We can even go up in the file hierarchy, like `[Test](./../../README.html)`. This translates to "coming from the position of this file, go one folder higher and into the docs directory to [find this README.html file there](./../docs/README.html)".
 <!--The last example link links now to "README.md" as the Contribution guide currently linked to from the website it the README within the repo and not shown on the website. If the contribution guide is moved in the future, this needs to be changed.-->
 ### Structure and Format
 
