@@ -28,4 +28,4 @@ If you just want to ask a question, recommend missing topics or tutorials, raise
 - [open an issue](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/issues/new/) at GitHub or
 - write us an <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">email</a>.
 
-For all other contributions, please refer to the [contribution guide](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/CONTRIBUTING.md).
+For all other contributions, please refer to the [contribution guide](../docs/CONTRIBUTING.html).
