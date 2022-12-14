@@ -32,7 +32,7 @@ For a general introduction to writing markdown, see: [Markdown tutorial](tutoria
    - Be aware that your fork is not automatically updated, if the main repository updates. Make sure to update your fork regularly (especially before creating new content) by clicking "Fetch upstream" (4) in the top-right corner of your repository.
    - If you cloned your repository locally, you also have to update the local clone (via "git pull").
    
-  ![Git Routine](./img/contribution_git.png)
+  ![Git Routine](./src/docs/img/contribution_git.png)
 
 3. You can work and make any changes in your own repository and commit + push them to your fork.
 
