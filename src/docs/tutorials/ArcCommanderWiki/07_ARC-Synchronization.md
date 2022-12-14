@@ -31,18 +31,18 @@ arc sync -r https://github.com/nfdi4plants/ARC/tree/Example-ARC.git
 
 ## 6.1 Working on a second branch
 
-### Problem: 
+*Problem:* 
 
 - No direct access rights to main branch
 
  or 
 - Many people work on repository, making direct pushing to main branch chaotic
 
-### Solution: 
+*Solution:* 
 
 Work on second branch, and contribute to the main branch using merge/pull requests
 
-### Workflow: 
+*Workflow*
  1. use `arc get` to get main branch of repo
  2. work on arc
  3. use `arc sync -b secondbranchname`
