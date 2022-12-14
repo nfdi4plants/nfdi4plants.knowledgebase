@@ -87,37 +87,13 @@ Training & Tutorials# DataPLANT Setup:/docs/tutorials/DataPlant_Setup.html
         Knowledge base contribution guide
       </h1>
       <i class="help">
-        last updated at 2022-07-08
+        last updated at 2022-12-14
       </i>
-      <br>
-Your contribution to the DataPLANT knowledge base is highly appreciated.
-This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.
+      <nfdi-toc></nfdi-toc>
+      <nfdi-h1 id="contribution-guide">Contribution Guide</nfdi-h1>
+<p>Your contribution to the DataPLANT knowledge base is highly appreciated.
+This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.</p>
 <p>For changes and suggestions, feel free to open an issue or to open a pull request.</p>
-<ul>
-<li><a href="#data-management-plandocsdatamanagementplanhtml">Data Management Plan:/docs/DataManagementPlan.html</a></li>
-<li><a href="#dataplants-data-management-plan-generatordocsdatamanagementplanhtmldataplants-data-management-plan-generator">DataPLANT's Data Management Plan Generator:/docs/DataManagementPlan.html#dataplants-data-management-plan-generator</a>
-<ul>
-<li><a href="#markdown-to-html-rendering-rules">Markdown to HTML Rendering Rules</a>
-<ul>
-<li><a href="#ignored-content">Ignored Content</a></li>
-<li><a href="#visible-or-hidden">Visible or Hidden</a></li>
-</ul>
-</li>
-<li><a href="#content-design-principles">Content Design Principles</a>
-<ul>
-<li><a href="#references">References</a></li>
-<li><a href="#relative-paths">Relative Paths</a></li>
-<li><a href="#structure-and-format">Structure and Format</a></li>
-<li><a href="#images">Images</a></li>
-</ul>
-</li>
-<li><a href="#file-name-requirements">File Name Requirements</a></li>
-<li><a href="#addressing-readers">Addressing Readers</a></li>
-<li><a href="#language">Language</a></li>
-<li><a href="#link-collection">Link Collection</a></li>
-</ul>
-</li>
-</ul>
 <nfdi-h2 id="introduction">Introduction</nfdi-h2>
 <p>The DataPLANT knowledge base is built on <a href="https://nfdi4plants.github.io/web-components-docs/">nfdi-web-components</a> and will fit all <strong>markdown</strong> content into this &quot;framework&quot;.
 For a general introduction to writing markdown, see: <a href="tutorials/IntroductionToMarkdown.md">Markdown tutorial</a> and references therein.</p>
@@ -156,7 +132,7 @@ For a general introduction to writing markdown, see: <a href="tutorials/Introduc
 </ul>
 <nfdi-h2 id="testing">Testing</nfdi-h2>
 <p>Check out the README.md in the <a href="../../README.md">root directory</a> for instructions on how to install the knowledge base locally on your machine.
-Following those instructions allows you to test and see how your changes come into play and wether everything renders correctly.</p>
+Following those instructions allows you to test and see how your changes come into play and whether everything renders correctly.</p>
 <p>It's highly recommended to <em>frequently</em> check your changes locally.
 Please <strong>do not</strong> produce and submit a lot of content without prior local testing.</p>
 <nfdi-h2 id="common-errors">Common Errors</nfdi-h2>
@@ -272,16 +248,16 @@ It will only become visible in the sidebar once the article is linked in the res
 <li><strong>Knowledge base cross-references:</strong> relative path to *.md document, <strong>BUT</strong> replace the <code>.md</code> file extension with <code>.html</code>, as the markdown files are parsed to html.</li>
 </ul>
 <nfdi-h3 id="relative-paths">Relative Paths</nfdi-h3>
-<p>We SHOULD always try to use relative paths, as they are easier to maintain. Altough useful, they need a bit more finetuning, as there are several options.</p>
-<p>One of the major issues with relative paths is that during development the pages are accessed by <code>/</code>, for example <code>/docs/README.html</code>. Published they will be accessed by <code>/nfdi4plants.knowledgebase</code> (<code>/nfdi4plants.knowledgebase/docs/README.html</code>). In the following, I will describe some ideas on how to deal with this:</p>
+<p>We SHOULD always try to use relative paths, as they are easier to maintain. Although useful, they need a bit more fine tuning, as there are several options.</p>
+<p>One of the major issues with relative paths is that during development the pages are accessed by <code>/</code>, for example <code>/docs/README.html</code>. Published they will be accessed by <code>/nfdi4plants.knowledgebase</code> (<code>/nfdi4plants.knowledgebase/docs/README.html</code>). In the following, some ideas are described on how to deal with this:</p>
 <ul>
-<li><strong>Basic relative paths:</strong> These will looke like this: <code>[Test](/README.html)</code>. By starting with <code>/</code> we implicitly say &quot;start at host&quot;. So in development it will start with <code>http://127.0.0.1:8080/</code>, in production it will start with <code>https://nfdi4plants.github.io/</code>. Because in production we also need would need <code>https://nfdi4plants.github.io/nfdi4plants.knowledgebase/</code>, this type of relative paths can create issues! ⚠️</li>
+<li><strong>Basic relative paths:</strong> These will look like this: <code>[Test](/README.html)</code>. By starting with <code>/</code> we implicitly say &quot;start at host&quot;. So in development it will start with <code>http://127.0.0.1:8080/</code>, in production it will start with <code>https://nfdi4plants.github.io/</code>. Because in production we also need would need <code>https://nfdi4plants.github.io/nfdi4plants.knowledgebase/</code>, this type of relative paths can create issues! ⚠️</li>
 <li><strong>Relative paths in sidebar:</strong> The sidebars actually check if you are currently in <code>dotnet fornax watch</code> mode. So you can use basic relative paths here. Example `<nfdi-code class="language-markdown">```Fundamentals
 # Introduction:/docs/Home.html
 ```!
 </nfdi-code>
 <code>/docs/Home.html</code> will be parsed to <code>/nfdi4plants.knowledgebase/docs/Home.html</code>.</li>
-<li><strong>Relative paths from current file:</strong> These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of &quot;Basic relative paths&quot;. Example: <code>[Test](./ResearchDataManagement.html)</code>. Starting with <code>./</code> translates to &quot;coming from the position of this file&quot;. We can even go up in the file hierarchy, like <code>[Test](./../README.html)</code>. This translates to &quot;coming from the position of this file, go two folder higher and <a href="./../../README.html">find README.html there</a>&quot;.</li>
+<li><strong>Relative paths from current file:</strong> These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of &quot;Basic relative paths&quot;. Example: <code>[Test](./ResearchDataManagement.html)</code>. Starting with <code>./</code> translates to &quot;coming from the position of this file&quot;. We can even go up in the file hierarchy, like <code>[Test](./../../README.html)</code>. This translates to &quot;coming from the position of this file, go one folder higher and into the docs directory to <a href="./../docs/README.html">find this README.html file there</a>&quot;.</li>
 </ul>
 <!--The last example link links now to "README.md" as the Contribution guide currently linked to from the website it the README within the repo and not shown on the website. If the contribution guide is moved in the future, this needs to be changed.-->
 <nfdi-h3 id="structure-and-format">Structure and Format</nfdi-h3>
@@ -319,13 +295,11 @@ with British English (&quot;cSpell.language&quot;: &quot;en-GB&quot;) support.</
 <nfdi-h2 id="link-collection">Link Collection</nfdi-h2>
 <blockquote>
 <p>Note: This is just a link collection for recurrent use in KB articles
-Nothing automatised. Just copy/paste.</p>
+Nothing automatized. Just copy/paste.</p>
 </blockquote>
-<p>⚠️ Must be read from markdown, will not be shown in html.</p>
+<p>⚠️ Must be read from <a href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/tree/main/CONTRIBUTING.md">markdown</a>, will not be shown in html.</p>
 <!-- Links to DataPLANT knowledge base (kb-) -->
 <!-- kb-Fundamentals -->
-<p>s
-[kb-VersionControlGit]: ../fundamentals/VersionControlGit.html &quot;Version Control and Git&quot;</p>
 <!-- kb-Implementation -->
 <!-- kb-Tutorials -->
 <!-- Links to DataPLANT Homepage (hp-) -->
@@ -349,7 +323,7 @@ Nothing automatised. Just copy/paste.</p>
         </span>
       </div>
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/README.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/CONTRIBUTING.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>
