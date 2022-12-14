@@ -96,18 +96,11 @@
       <br>
 Your contribution to the DataPLANT knowledge base is highly appreciated.
 This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.
-<p>For smaller changes and suggestions, please refer to <a href="./home.html">here</a>.</p>
+<p>For changes and suggestions, feel free to open an issue or to open a pull request.</p>
 <ul>
-<li><a href="#introduction">Introduction</a></li>
-<li><a href="#github-routines">GitHub Routines</a></li>
-<li><a href="#testing">Testing</a></li>
-<li><a href="#common-errors">Common Errors</a></li>
-<li><a href="#authoring-content">Authoring Content</a>
+<li><a href="#data-management-plandocsdatamanagementplanhtml">Data Management Plan:/docs/DataManagementPlan.html</a></li>
+<li><a href="#dataplants-data-management-plan-generatordocsdatamanagementplanhtmldataplants-data-management-plan-generator">DataPLANT's Data Management Plan Generator:/docs/DataManagementPlan.html#dataplants-data-management-plan-generator</a>
 <ul>
-<li><a href="#docs-page">Docs-Page</a></li>
-<li><a href="#_sidebar">_sidebar</a></li>
-</ul>
-</li>
 <li><a href="#markdown-to-html-rendering-rules">Markdown to HTML Rendering Rules</a>
 <ul>
 <li><a href="#ignored-content">Ignored Content</a></li>
@@ -127,9 +120,11 @@ This guide is intended to show you how to contribute new articles and tutorials 
 <li><a href="#language">Language</a></li>
 <li><a href="#link-collection">Link Collection</a></li>
 </ul>
+</li>
+</ul>
 <nfdi-h2 id="introduction">Introduction</nfdi-h2>
 <p>The DataPLANT knowledge base is built on <a href="https://nfdi4plants.github.io/web-components-docs/">nfdi-web-components</a> and will fit all <strong>markdown</strong> content into this &quot;framework&quot;.
-For a general introduction to writing markdown, see: <a href="tutorials/markdown.md">Markdown tutorial</a> and references therein.</p>
+For a general introduction to writing markdown, see: <a href="tutorials/IntroductionToMarkdown.md">Markdown tutorial</a> and references therein.</p>
 <nfdi-h2 id="github-routines">GitHub Routines</nfdi-h2>
 <blockquote>
 <p>Note: This is not a full-fledged GitHub tutorial. Please refer to available tutorials online or contact the knowledge base curators.</p>
@@ -137,7 +132,7 @@ For a general introduction to writing markdown, see: <a href="tutorials/markdown
 <ol>
 <li><p>Sign up for a GitHub account.</p>
 </li>
-<li><p><a href="https://github.com/nfdi4plants/nfdi4plants.github.io/fork">Fork</a> the knowledge base git repository.</p>
+<li><p><a href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/fork">Fork</a> the knowledge base git repository.</p>
 <ul>
 <li>This creates a copy of the knowledge base repository in your own GitHub account.</li>
 <li>In the top left, you will see that the repository is associated with your account (1) and forked from the main repository (2).</li>
@@ -282,17 +277,17 @@ It will only become visible in the sidebar once the article is linked in the res
 </ul>
 <nfdi-h3 id="relative-paths">Relative Paths</nfdi-h3>
 <p>We SHOULD always try to use relative paths, as they are easier to maintain. Altough useful, they need a bit more finetuning, as there are several options.</p>
-<p>One of the major issues with relative paths is that during development the pages are accessed by <code>/</code>, for example <code>/docs/README.html</code>. Published they will be accessed by <code>/nfdi4plants.knowledgebase</code> (<code>/nfdi4plants.knowledgebase/docs/README.html</code>). In the following i will describe some ideas on how to deal with this:</p>
+<p>One of the major issues with relative paths is that during development the pages are accessed by <code>/</code>, for example <code>/docs/README.html</code>. Published they will be accessed by <code>/nfdi4plants.knowledgebase</code> (<code>/nfdi4plants.knowledgebase/docs/README.html</code>). In the following, I will describe some ideas on how to deal with this:</p>
 <ul>
-<li><strong>Basic relative paths:</strong> These will looke like this: <code>[Test](/README.html)</code>. By starting with <code>/</code> we implcitly say &quot;start at host&quot;. So in development it will start with <code>http://127.0.0.1:8080/</code>, in production it will start with <code>https://nfdi4plants.github.io/</code>. Because in production we also need would need <code>https://nfdi4plants.github.io/nfdi4plants.knowledgebase/</code>, this type of relative paths can create issues! ⚠️</li>
+<li><strong>Basic relative paths:</strong> These will looke like this: <code>[Test](/README.html)</code>. By starting with <code>/</code> we implicitly say &quot;start at host&quot;. So in development it will start with <code>http://127.0.0.1:8080/</code>, in production it will start with <code>https://nfdi4plants.github.io/</code>. Because in production we also need would need <code>https://nfdi4plants.github.io/nfdi4plants.knowledgebase/</code>, this type of relative paths can create issues! ⚠️</li>
 <li><strong>Relative paths in sidebar:</strong> The sidebars actually check if you are currently in <code>dotnet fornax watch</code> mode. So you can use basic relative paths here. Example `<nfdi-code class="language-markdown">```Fundamentals
 # Introduction:/docs/Home.html
 ```!
 </nfdi-code>
 <code>/docs/Home.html</code> will be parsed to <code>/nfdi4plants.knowledgebase/docs/Home.html</code>.</li>
-<li><strong>Relative paths from current file:</strong> These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of &quot;Basic relative paths&quot;. Example: <code>[Test](./ResearchDataManagement.html)</code>. Starting with <code>./</code> translates to &quot;coming from the position of this file&quot;. We can even go up in the file hierarchy, like <code>[Test](./../README.html)</code>. This translates to &quot;coming from the position of this file, go one folder higher and find README.html there&quot;.</li>
+<li><strong>Relative paths from current file:</strong> These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of &quot;Basic relative paths&quot;. Example: <code>[Test](./ResearchDataManagement.html)</code>. Starting with <code>./</code> translates to &quot;coming from the position of this file&quot;. We can even go up in the file hierarchy, like <code>[Test](./../README.html)</code>. This translates to &quot;coming from the position of this file, go two folder higher and <a href="./../../README.html">find README.html there</a>&quot;.</li>
 </ul>
-<p><a href="./../README.html">Test</a></p>
+<!--The last example link links now to "README.md" as the Contribution guide currently linked to from the website it the README within the repo and not shown on the website. If the contribution guide is moved in the future, this needs to be changed.-->
 <nfdi-h3 id="structure-and-format">Structure and Format</nfdi-h3>
 <p>Try to avoid deep structures by using no more than two headline levels, i.e.</p>
 <pre><code>```
