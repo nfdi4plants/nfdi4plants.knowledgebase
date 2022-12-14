@@ -17,7 +17,7 @@ For changes and suggestions, feel free to open an issue or to open a pull reques
 ## Introduction
 
 The DataPLANT knowledge base is built on [nfdi-web-components](https://nfdi4plants.github.io/web-components-docs/) and will fit all **markdown** content into this "framework".
-For a general introduction to writing markdown, see: [Markdown tutorial](tutorials/IntroductionToMarkdown.md) and references therein.
+For a general introduction to writing markdown, see: [Markdown tutorial](tutorials/IntroductionToMarkdown.html) and references therein.
 
 ## GitHub Routines
 
@@ -46,7 +46,7 @@ For a general introduction to writing markdown, see: [Markdown tutorial](tutoria
 
 ## Testing
 
-Check out the README.md in the [root directory](../../README.md) for instructions on how to install the knowledge base locally on your machine.
+Check out the README.md in the [root directory](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/README.md) for instructions on how to install the knowledge base locally on your machine.
 Following those instructions allows you to test and see how your changes come into play and whether everything renders correctly.
 
 It's highly recommended to *frequently* check your changes locally.
@@ -213,7 +213,7 @@ British English
 > Note: This is just a link collection for recurrent use in KB articles
 > Nothing automatized. Just copy/paste.
 
-⚠️ Must be read from [markdown](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/tree/main/CONTRIBUTING.md), will not be shown in html.
+⚠️ Must be read from [markdown](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/CONTRIBUTING.md), will not be shown in html.
 
 <!-- Links to DataPLANT knowledge base (kb-) -->
 
