@@ -104,7 +104,7 @@ todo:
   - Will add a standard "DataPLANT Support" paragraph (incl. link to email and helpdesk) to the bottom
 - MAY contain **any** other metadata. The information will be read but will not affect the generated html.
 
-### _sidebar
+### Sidebar
 
 Sidebar files MUST be in any **subdirectory** of `/src/docs/_sidebars`. Sidebar markdown files must start with a metadata block:
 
