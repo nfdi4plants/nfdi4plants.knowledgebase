@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - Before we start
+      DataPLANT documentation - ARC initialization
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -70,19 +70,33 @@
 
       </nfdi-sidebar-element>
       <h1 class="front-header">
-        Before we start
+        ARC initialization
       </h1>
       <i class="help">
         last updated at 2022-12-13
       </i>
       <nfdi-toc></nfdi-toc>
-      <p>An installation of <a href="https://git-scm.com/downloads">git</a> and <a href="https://git-lfs.github.com/">git LFS</a> is mandatory for arcCommander usage. Whenever submitting a command that relies on a git functionality, the Commander will check for presence of git and git LFS. If not installed, the respective command will result in an error. Throughout the installation setup of git, the user has the possibility to install git LFS. Git LFS can also be downloaded manually <a href="https://git-lfs.github.com/">here</a>.</p>
+      <ul>
+<li><p>The basic ARC folder structure can be created using <code>arc init</code></p>
 <ul>
-<li>For all following steps it is assumed, that you opened a shell within a directory you want to add an ARC in. In this example it is &quot;C:\Users\userA\source\repos\ArcTutorial&quot;.</li>
-<li>Note that each input that contains non-literal characters must be encapsulated in quotation marks when entered within the shell. This also applies when using the editor for numerals that are no numbers (dates, phone numbers, etc.).</li>
-<li>Furthermore, <code>&lt;arc&gt;</code> defines the path to the ArcCommander.exe (eg. &quot;C:\Users\userA\source\repos\ArcCommander\ArcCommander.exe&quot;).</li>
-<li>Every input can be entered by using the shell. For user friendly experience, an editor may pop up if no arguments are given. After entering the required values, save and close the editor.</li>
+<li>.arc auxillary arc commander files</li>
+<li>assays storage for raw data</li>
+<li>externals storage for external data</li>
+<li>runs storage for processed data</li>
+<li>workflows storage for computational workflows</li>
 </ul>
+</li>
+<li><p>The flag <code>--repositoryaddress</code> (<code>-r</code>) followed by the URL + &quot;.git&quot; of a remote repository lets you connect your local ARC with the respective remote repository, e.g.</p>
+</li>
+</ul>
+<nfdi-code>arc init --repositoryaddress https://github.com/nfdi4plants/ARC.git
+</nfdi-code>
+<ul>
+<li>Using <code>arc get -r</code> followed by a URL + &quot;.git&quot; enables you to clone an already existing ARC as local repository, e.g.</li>
+</ul>
+<nfdi-code>arc get -r https://github.com/nfdi4plants/ARC.git
+</nfdi-code>
+<p><strong>In previous versions of the arcCommander, the subcommand <code>get</code> allowed you to retrieve information from the ARC, e.g. <code>arc assay get</code> or <code>arc study person get</code>. This function is now available using the command <code>show</code>, e.g. <code>arc assay show</code> or <code>arc study person show</code>.</strong></p>
 
       <h3>
         DataPLANT Support
@@ -101,7 +115,7 @@
         </span>
       </div>
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/tutorials/ArcCommanderWiki/01_Before-we-start.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/tutorials/ArcCommanderWiki/03_ARC-initialization.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>
