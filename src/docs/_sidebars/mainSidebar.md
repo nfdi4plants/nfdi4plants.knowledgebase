@@ -24,8 +24,8 @@
 
 ```Training & Tutorials
 # QuickStart on ARCs:/docs/tutorials/QuickStart_arc.html
-# ARC Commander QuickStart:/docs/tutorials/QuickStart_arcCommander.html
-# ARC Commander Wiki: /docs/tutorials/ArcCommanderWiki/index.html
+# ARC Commander: /docs/tutorials/ArcCommanderWiki/index.html
+## ARC Commander QuickStart:/docs/tutorials/QuickStart_arcCommander.html
 # Swate QuickStart:/docs/tutorials/QuickStart_swate.html
 # Best practices for data annotation:/docs/tutorials/AnnotationPatterns.html
 <!-- # DataPLANT Setup:/docs/tutorials/DataPlant_Setup.html -->
