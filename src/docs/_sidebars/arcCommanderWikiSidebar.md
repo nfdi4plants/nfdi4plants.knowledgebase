@@ -1,7 +1,7 @@
 ---
 ---
 
-```ARC Commander Wiki
+```ARC Commander
 # Before we start:/docs/tutorials/ArcCommanderWiki/01_Before-we-start.html
 # DataHUB access:/docs/tutorials/ArcCommanderWiki/02_DataPLANT_access.html
 # ARC Initialization:/docs/tutorials/ArcCommanderWiki/03_ARC-initialization.html
