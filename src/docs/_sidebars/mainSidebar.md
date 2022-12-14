@@ -16,17 +16,19 @@
 
 ```Implementation within DataPLANT
 # Annotated Research Context:/docs/implementation/AnnotatedResearchContext.html
+## User Journey:/docs/tutorials/QuickStart_arc.html
 # ARC Commander:/docs/implementation/ArcCommander.html
-# Swate - a workflow annotation tool for Excel:/docs/implementation/Swate.html
+## QuickStart:/docs/tutorials/QuickStart_arcCommander.html
+## Manual: /docs/tutorials/ArcCommanderWiki/index.html
+# Swate:/docs/implementation/Swate.html
+## QuickStart:/docs/tutorials/QuickStart_swate.html
+## Best Practices For Data Annotation:/docs/tutorials/AnnotationPatterns.html
 # DataHUB:/docs/implementation/DataHub.html
-# DataPLAN - our Data Management Plan Generator:/docs/implementation/DataPLAN.html
+# DataPLAN:/docs/implementation/DataPLAN.html
 ```
 
-```Training & Tutorials
-# QuickStart on ARCs:/docs/tutorials/QuickStart_arc.html
-# ARC Commander: /docs/tutorials/ArcCommanderWiki/index.html
-## ARC Commander QuickStart:/docs/tutorials/QuickStart_arcCommander.html
-# Swate QuickStart:/docs/tutorials/QuickStart_swate.html
-# Best practices for data annotation:/docs/tutorials/AnnotationPatterns.html
-<!-- # DataPLANT Setup:/docs/tutorials/DataPlant_Setup.html -->
-```
+
+<!-- 
+Training & Tutorials# DataPLANT Setup:/docs/tutorials/DataPlant_Setup.html 
+-->
+
