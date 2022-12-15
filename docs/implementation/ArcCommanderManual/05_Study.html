@@ -77,13 +77,14 @@
       </i>
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="addition-of-studies">5.1 Addition of studies</nfdi-h2>
-<p><em>Note: A study identifier also defines the isa file name, so ensure to avoid special characters!</em></p>
+<p><strong>Note:</strong> Make sure to close all isa.xlsx files before submitting a new command to the command line, as otherwise the information cannot be saved by the ARC Commander.</p>
 <ul>
 <li>An investigation may contain several studies, which in turn can include multiple assays.</li>
 <li>There is no need for a folder structure that represents a study since all data are associated with assays. Studies can be created to group related assays within an investigation. A study consists of a single isa.study.xlsx file, can be created by using <code>arc s init</code>.</li>
 <li>An existing study can be registered to the investigation by using <code>arc s register</code>.</li>
 <li>To create the isa.study file and afterwards register the new study <code>arc s add</code> can be used. This command combines init and register.</li>
 </ul>
+<p><em>Note: A study identifier also defines the isa file name, so ensure to avoid special characters!</em></p>
 <table>
 <thead>
 <tr>

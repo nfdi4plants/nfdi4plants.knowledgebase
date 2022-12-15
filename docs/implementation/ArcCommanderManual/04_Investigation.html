@@ -77,6 +77,7 @@
       </i>
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="addition-of-an-isa.investigation.xlsx">4.1. Addition of an isa.investigation.xlsx</nfdi-h2>
+<p><strong>Note:</strong> Make sure to close all isa.xlsx files before submitting a new command to the command line, as otherwise the information cannot be saved by the ARC Commander.</p>
 <ul>
 <li>Each ARC includes an isa.investigation file that serves as central information registry. The ARC’s content as well as global and detailed metadata are listed here. Any study or assay addition performed throughout the ARC’s working life must be registered in the isa.investigation.xlsx.</li>
 <li><code>arc i create</code> will open an editor that asks for basic investigation information to create an ISA-TAB conform Excel file. If arguments are applied with the given command, no editor will open.
@@ -126,6 +127,7 @@
 <code>arc i create --identifier &quot;2021_TestARC05&quot; --title &quot;Redox behaviour of yeast mutant M21&quot; --description &quot;M21 lacks in protein P09 and is susceptible to H2O2 Treatment. The molecular and phenotypical responses are studied.&quot;</code></li>
 <li>The isa.investigation.xlsx is added to root directory.</li>
 </ul>
+<p><strong>You don't need to fill every row from beginning, as ARCs are intended as an evolving object that shapes over time.</strong></p>
 <nfdi-h2 id="registering-persons-to-investigation">4.2. Registering persons to investigation</nfdi-h2>
 <ul>
 <li>Every person that is involved in the investigation can be registered with personal information using <code>arc i person register</code>.</li>
