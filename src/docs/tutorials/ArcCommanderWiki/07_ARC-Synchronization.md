@@ -3,7 +3,7 @@ layout: docs
 title: "ARC synchronization"
 published: 2022-12-13
 add toc: true
-add sidebar: _sidebars/arcCommanderWikiSidebar.md
+add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
 
 The command `arc sync` handles multiple operations for your ARC in one step. It will

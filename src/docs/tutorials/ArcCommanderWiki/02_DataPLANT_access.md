@@ -5,7 +5,7 @@ published: 2022-08-05
 author: Martin Kuhl
 author_github: martin-kuhl
 add toc: false
-add sidebar: _sidebars/arcCommanderWikiSidebar.md
+add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
 
 In case you are not a member of DataPLANT yet, please [sign up](<https://register.nfdi4plants.org>). Afterwards, you will be granted access to DataPLANT’s [DataHUB](<https://git.nfdi4plants.org>). The DataHUB allows you to share your ARCs with registered lab or project partners.

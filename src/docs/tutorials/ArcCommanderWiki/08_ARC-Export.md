@@ -5,7 +5,7 @@ published: 2022-12-14
 author: Martin Kuhl
 author_github: martin-kuhl
 add toc: false
-add sidebar: _sidebars/arcCommanderWikiSidebar.md
+add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
 
 Users have the possibility to export the metadata within the ARC as a JSON file. Using 

@@ -3,7 +3,7 @@ layout: docs
 title: "ARC initialization"
 published: 2022-12-13
 add toc: true
-add sidebar: _sidebars/arcCommanderWikiSidebar.md
+add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
 
 - The basic ARC folder structure can be created using `arc init`
