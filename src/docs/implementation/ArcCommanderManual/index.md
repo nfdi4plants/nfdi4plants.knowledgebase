@@ -3,7 +3,7 @@ layout: docs
 title: "ARC Commander"
 published: 2022-12-13
 add toc: true
-add sidebar: _sidebars/arcCommanderWikiSidebar.md
+add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
 
 ## Welcome to the new home of the ARC Commander Wiki
