@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - ARC initialization
+      DataPLANT documentation - DataHUB access for ARC Commander synchronization
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -50,16 +50,16 @@
     <nfdi-body class="content" hasSidebar="true">
       <nfdi-sidebar-element slot="sidebar" isActive="true">
         <div slot="title">
-          ARC Commander
+          ARC Commander Manual
         </div>
-        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/01_Before-we-start.html">Before we start</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/02_DataPLANT_access.html">DataHUB access</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/03_ARC-initialization.html">ARC Initialization</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/04_Investigation.html">Investigation</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/05_Study.html">Study</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/06_Assay.html">Assay</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/07_ARC-Synchronization.html">ARC Synchronization</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/08_ARC-Export.html">ARC export</h1>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/01_Before-we-start.html">Before we start</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/02_DataPLANT_access.html">DataHUB access</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/03_ARC-initialization.html">ARC Initialization</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/04_Investigation.html">Investigation</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/05_Study.html">Study</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/06_Assay.html">Assay</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/07_ARC-Synchronization.html">ARC Synchronization</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/08_ARC-Export.html">ARC export</h1>
 
       </nfdi-sidebar-element>
       <nfdi-sidebar-element slot="sidebar" isActive="true">
@@ -70,33 +70,26 @@
 
       </nfdi-sidebar-element>
       <h1 class="front-header">
-        ARC initialization
+        DataHUB access for ARC Commander synchronization
       </h1>
       <i class="help">
-        last updated at 2022-12-13
+        last updated at 2022-08-05
       </i>
       <nfdi-toc></nfdi-toc>
-      <ul>
-<li><p>The basic ARC folder structure can be created using <code>arc init</code></p>
-<ul>
-<li>.arc auxillary arc commander files</li>
-<li>assays storage for raw data</li>
-<li>externals storage for external data</li>
-<li>runs storage for processed data</li>
-<li>workflows storage for computational workflows</li>
-</ul>
-</li>
-<li><p>The flag <code>--repositoryaddress</code> (<code>-r</code>) followed by the URL + &quot;.git&quot; of a remote repository lets you connect your local ARC with the respective remote repository, e.g.</p>
-</li>
-</ul>
-<nfdi-code>arc init --repositoryaddress https://github.com/nfdi4plants/ARC.git
+      <nfdi-h2 id="datahub-access">2.1 DataHUB access</nfdi-h2>
+<p>In case you are not a member of DataPLANT yet, please <a href="https://register.nfdi4plants.org">sign up</a>. Afterwards, you will be granted access to DataPLANT’s <a href="https://git.nfdi4plants.org">DataHUB</a>. The DataHUB allows you to share your ARCs with registered lab or project partners.</p>
+<p>After successful registration, create and set an access token for ARC Commander synchronization using</p>
+<nfdi-code class="language-bash">arc remote accesstoken get -s https://git.nfdi4plants.org
 </nfdi-code>
-<ul>
-<li>Using <code>arc get -r</code> followed by a URL + &quot;.git&quot; enables you to clone an already existing ARC as local repository, e.g.</li>
-</ul>
-<nfdi-code>arc get -r https://github.com/nfdi4plants/ARC.git
+<p>A window within your browser will open, asking for your DataPLANT Log In. In case you are already logged in, the browser will directly display a Success message to you.</p>
+<nfdi-h2 id="setting-a-git-user">2.2 Setting a git user</nfdi-h2>
+<p>Some users might want to use different signatures for different repositories, e.g., developing software on GitHub and working on ARCs on <a href="https://git.nfdi4plants.org">the DataHUB</a>. Besides your global git configuration, you can store the information you want to use for editing ARCs within the ARC Commander config:</p>
+<nfdi-code class="language-bash">arc config set -g -n "general.gitname" -v "Name of choice"
+arc config set -g -n "general.gitemail" -v "Email of choice"
 </nfdi-code>
-<p><strong>In previous versions of the arcCommander, the subcommand <code>get</code> allowed you to retrieve information from the ARC, e.g. <code>arc assay get</code> or <code>arc study person get</code>. This function is now available using the command <code>show</code>, e.g. <code>arc assay show</code> or <code>arc study person show</code>.</strong></p>
+<p>To transfer the information from the global ARC Commander config to the local git config of the ARC use</p>
+<nfdi-code class="language-bash">arc config setgituser
+</nfdi-code>
 
       <h3>
         DataPLANT Support
@@ -115,7 +108,7 @@
         </span>
       </div>
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/tutorials/ArcCommanderWiki/03_ARC-initialization.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/02_DataPLANT_access.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>

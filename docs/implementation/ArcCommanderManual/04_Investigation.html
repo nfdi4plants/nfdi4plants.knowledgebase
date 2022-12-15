@@ -50,16 +50,16 @@
     <nfdi-body class="content" hasSidebar="true">
       <nfdi-sidebar-element slot="sidebar" isActive="true">
         <div slot="title">
-          ARC Commander
+          ARC Commander Manual
         </div>
-        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/01_Before-we-start.html">Before we start</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/02_DataPLANT_access.html">DataHUB access</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/03_ARC-initialization.html">ARC Initialization</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/04_Investigation.html">Investigation</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/05_Study.html">Study</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/06_Assay.html">Assay</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/07_ARC-Synchronization.html">ARC Synchronization</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/08_ARC-Export.html">ARC export</h1>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/01_Before-we-start.html">Before we start</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/02_DataPLANT_access.html">DataHUB access</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/03_ARC-initialization.html">ARC Initialization</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/04_Investigation.html">Investigation</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/05_Study.html">Study</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/06_Assay.html">Assay</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/07_ARC-Synchronization.html">ARC Synchronization</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/08_ARC-Export.html">ARC export</h1>
 
       </nfdi-sidebar-element>
       <nfdi-sidebar-element slot="sidebar" isActive="true">
@@ -76,7 +76,7 @@
         last updated at 2022-12-13
       </i>
       <nfdi-toc></nfdi-toc>
-      <nfdi-h2 id="addition-of-an-isa.investigation.xlsx">3.1. Addition of an isa.investigation.xlsx</nfdi-h2>
+      <nfdi-h2 id="addition-of-an-isa.investigation.xlsx">4.1. Addition of an isa.investigation.xlsx</nfdi-h2>
 <ul>
 <li>Each ARC includes an isa.investigation file that serves as central information registry. The ARC’s content as well as global and detailed meta data are listed here. Any study or assay addition performed throughout the ARC’s working life must be registered in investigation.isa.xlsx.</li>
 <li>arc i create will open an editor that asks for basic investigation information to create an ISA-TAB conform Excel file. If arguments are applied with the given command, no editor will open.</li>
@@ -122,7 +122,7 @@
 <code>arc i create --identifier &quot;2021_TestARC05&quot; --title &quot;Redox behaviour of yeast mutant M21&quot; --description &quot;M21 lacks in protein P09 and is susceptible to H2O2 Treatment. The molecular and phenotypical responses are studied.&quot;</code></li>
 <li>The isa.investigation.xlsx is added to root directory.</li>
 </ul>
-<nfdi-h2 id="registering-persons-to-investigation">3.2. Registering persons to investigation</nfdi-h2>
+<nfdi-h2 id="registering-persons-to-investigation">4.2. Registering persons to investigation</nfdi-h2>
 <ul>
 <li>Every person, that is involved in the investigation can be registered with personal information using <code>arc i person register</code>.<br />
 <em>Note: If an investigation covers several studies with various groups and persons, it may be beneficial to register corresponding contacts to investigation and register all study-related persons in each study (see X.X).</em>_</li>
@@ -197,12 +197,12 @@
 <li>Instead of using the editor, the following command can be used:<br />
 <code>arc i person register -l Doe -f John -m P --email jpdoe@mail.com --phone &quot;+49(0)631 205 3045&quot; --address &quot;Paul-Ehrlich-Straße 23, 67663 Kaiserslautern&quot; --affiliation &quot;Department of M21 Measurements, Technische Universität Kaiserslautern, Germany&quot; --roles &quot;supervisor&quot;</code></li>
 </ul>
-<nfdi-h3 id="listing-and-inspecting-registered-persons">3.2.1 Listing and inspecting registered persons</nfdi-h3>
+<nfdi-h3 id="listing-and-inspecting-registered-persons">4.2.1 Listing and inspecting registered persons</nfdi-h3>
 <ul>
 <li>Registered persons can be listed by <code>arc i person list</code>.</li>
 <li>To get detailed information about a specific entry use <code>arc i person get</code>. If no arguments are specified an editor will request first and last name (mandatory) and optionally mid name initials to print all registered information into the shell.</li>
 </ul>
-<nfdi-h3 id="editing-person-information">3.2.2. Editing person information</nfdi-h3>
+<nfdi-h3 id="editing-person-information">4.2.2. Editing person information</nfdi-h3>
 <ul>
 <li>A person can be edited using <code>arc i person edit</code>.
 <ul>
@@ -213,13 +213,13 @@
 <li>Instead of using the editor, the following command can be used. To circumvent editor pop ups, not <code>arc i person edit</code>, but <code>arc i person update</code> must be used:<br />
 <code>arc i person update -l Kunze -f Heinz-Rudolf --email hrkunze@mail.com --address &quot;Herzstraße 5, 12345 Musterstadt&quot;</code></li>
 </ul>
-<nfdi-h3 id="removing-a-person">3.2.3 Removing a person</nfdi-h3>
+<nfdi-h3 id="removing-a-person">4.2.3 Removing a person</nfdi-h3>
 <ul>
 <li>A person can be removed from an investigation using <code>arc i person unregister</code>. An editor will request first and last name (mandatory) and optionally mid name initials to unregister the person from the isa.investigation.xlsx.</li>
 <li>Instead of using the editor, the following command can be used:
 <code>arc i person unregister -l Doe -f John -m P</code></li>
 </ul>
-<nfdi-h2 id="registering-publications-to-investigation">3.3. Registering publications to investigation</nfdi-h2>
+<nfdi-h2 id="registering-publications-to-investigation">4.3. Registering publications to investigation</nfdi-h2>
 <ul>
 <li>Investigation publications may be a collection of all study publications or publications that emerge from study publications (reviews/integrating publications).</li>
 <li>Investigation publications can be registered by <code>arc i publication register</code>.</li>
@@ -270,12 +270,12 @@
 </tr>
 </tbody>
 </table>
-<nfdi-h3 id="listing-and-inspecting-registered-publications">3.3.1 Listing and inspecting registered publications</nfdi-h3>
+<nfdi-h3 id="listing-and-inspecting-registered-publications">4.3.1 Listing and inspecting registered publications</nfdi-h3>
 <ul>
 <li>Registered publications can be listed by <code>arc i publication list</code>.</li>
 <li>To get detailed information about a specific entry use <code>arc i publication get</code>. If no arguments are specified an editor will request the doi to print all registered information into the shell.</li>
 </ul>
-<nfdi-h3 id="editing-publication-information">3.3.2 Editing publication information</nfdi-h3>
+<nfdi-h3 id="editing-publication-information">4.3.2 Editing publication information</nfdi-h3>
 <ul>
 <li>A publication can be edited using <code>arc i publication edit</code>.
 <ul>
@@ -286,7 +286,7 @@
 <li>Instead of using the editor, the following command can be used. To circumvent editor pop ups, not arc i publication edit, but arc i publication update must be used:<br />
 <code>arc i publication update -d 2021_ARC05_Pub01tmp --title &quot;Review on yeast P09 protein and its involvement in redox susceptibility&quot;.</code></li>
 </ul>
-<nfdi-h3 id="removing-a-publication">3.3.3 Removing a publication</nfdi-h3>
+<nfdi-h3 id="removing-a-publication">4.3.3 Removing a publication</nfdi-h3>
 <ul>
 <li>A publication can be removed from an investigation using <code>arc i publication unregister</code>. A editor will request the doi to unregister the publication from the isa.investigation.xlsx.</li>
 <li>Instead of using the editor, the following command can be used:<br />
@@ -310,7 +310,7 @@
         </span>
       </div>
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/tutorials/ArcCommanderWiki/04_Investigation.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/04_Investigation.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>

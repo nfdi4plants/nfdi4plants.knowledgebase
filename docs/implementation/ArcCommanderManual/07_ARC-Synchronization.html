@@ -50,16 +50,16 @@
     <nfdi-body class="content" hasSidebar="true">
       <nfdi-sidebar-element slot="sidebar" isActive="true">
         <div slot="title">
-          ARC Commander
+          ARC Commander Manual
         </div>
-        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/01_Before-we-start.html">Before we start</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/02_DataPLANT_access.html">DataHUB access</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/03_ARC-initialization.html">ARC Initialization</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/04_Investigation.html">Investigation</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/05_Study.html">Study</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/06_Assay.html">Assay</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/07_ARC-Synchronization.html">ARC Synchronization</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/08_ARC-Export.html">ARC export</h1>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/01_Before-we-start.html">Before we start</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/02_DataPLANT_access.html">DataHUB access</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/03_ARC-initialization.html">ARC Initialization</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/04_Investigation.html">Investigation</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/05_Study.html">Study</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/06_Assay.html">Assay</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/07_ARC-Synchronization.html">ARC Synchronization</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/08_ARC-Export.html">ARC export</h1>
 
       </nfdi-sidebar-element>
       <nfdi-sidebar-element slot="sidebar" isActive="true">
@@ -84,38 +84,37 @@
 <li>pull changes from the remote repository, and</li>
 <li>push changes from your local repository.</li>
 </ul>
-<p>Using the flag <code>-m</code> allows you to add a message to your synchronization, e.g.</p>
+<p>Using the flag <code>-m</code> allows you to add a message to your synchronization, e.g.,</p>
 <nfdi-code>arc sync -m "addition of proteomics dataset"
 </nfdi-code>
 <p>If no message was added, the Commander will generate a message by itself.</p>
-<p>In case you have not yet connected your local repository to a remote one, you can specify the remote repository with the flag <code>--repositoryaddress</code> or <code>-r</code> in combination with a URL + &quot;.git&quot;, e.g.</p>
+<p>In case you have not yet connected your local repository to a remote one, you can specify the remote repository with the flag <code>--repositoryaddress</code> or <code>-r</code> in combination with a URL + &quot;.git&quot;, e.g.,</p>
 <nfdi-code>arc sync -r https://github.com/nfdi4plants/ARC/tree/Example-ARC.git
 </nfdi-code>
 <p><strong>Note:</strong> If your local repository is not connected to a remote repository, <code>arc sync</code> will only track LFS files and stage and commit changes to your local repository. The Commander will not pull or push any changes.</p>
-<nfdi-h2 id="working-on-a-second-branch">6.1 Working on a second branch</nfdi-h2>
+<nfdi-h2 id="working-on-a-second-branch">7.1 Working on a second branch</nfdi-h2>
 <p><em>Problem:</em></p>
 <ul>
-<li>No direct access rights to main branch</li>
-</ul>
-<p>or</p>
-<ul>
-<li>Many people work on repository, making direct pushing to main branch chaotic</li>
+<li>No direct access rights to the main branch (which can be handled via the <a href="../DataHub.md">DataHUB</a>) or</li>
+<li>Many people working on the same repository, making direct pushing to main branch chaotic.</li>
 </ul>
 <p><em>Solution:</em></p>
-<p>Work on second branch, and contribute to the main branch using merge/pull requests</p>
-<p><em>Workflow</em></p>
+<p>Work on a second branch and contribute to the main branch using merge/pull requests</p>
+<p><em>Workflow:</em></p>
 <ol>
-<li><p>use <code>arc get</code> to get main branch of repo</p>
-</li>
-<li><p>work on arc</p>
-</li>
-<li><p>use <code>arc sync -b secondbranchname</code></p>
-<p>This will create a commit with your newest changes and push the commit to a new branch with the given name.</p>
-</li>
+<li>Use <code>arc get</code> to get the main branch of the repository.</li>
+<li>Work on the ARC.</li>
+<li>Use <code>arc sync -b SecondBranchName</code>.</li>
 </ol>
-<nfdi-h2 id="setting-a-git-user">6.2 Setting a git user</nfdi-h2>
+<p>This will create a commit with your newest changes and push the commit to a new branch with the given name. When you finished editing your ARC, you can merge your progress into the main branch.</p>
+<nfdi-h2 id="git-status">7.2 Git status</nfdi-h2>
+<p>You can check on which branch you are currently working on and the status of this branch by using</p>
+<nfdi-code class="language-bash">git status
+</nfdi-code>
+<p>This will print to the console, if you are behind, up to date, or ahead of the main branch.</p>
+<nfdi-h2 id="setting-a-git-user">7.3 Setting a git user</nfdi-h2>
 <p><code>git</code> always signs commits made with a <code>name</code> and <code>e-mail</code> adress of the user. These are then also used by <code>GitLab</code> and <code>GitHub</code> to assign the commits to user accounts. There are different ways to set this information.</p>
-<nfdi-h3 id="globally-in-git">Globally in git</nfdi-h3>
+<nfdi-h3 id="globally-in-git">7.3.1 Globally in git</nfdi-h3>
 <p>The easiest way would be to do it directly globally using git:</p>
 <ul>
 <li><p><code>git config --global user.name &quot;FIRST_NAME LAST_NAME&quot;</code></p>
@@ -123,11 +122,11 @@
 <li><p><code>git config --global user.email &quot;MY_NAME@example.com&quot;</code></p>
 </li>
 </ul>
-<nfdi-h3 id="locally-for-each-arc">Locally for each ARC</nfdi-h3>
-<p>The problem with setting this information globally in git arises when you want to use different signatures for different repositories. E.g. when you develop software on <code>GitHub</code> and work on <code>ARCs</code> on the <code>nfdi4plants GitLab</code>.</p>
+<nfdi-h3 id="locally-for-each-arc">7.3.2 Locally for each ARC</nfdi-h3>
+<p>You have the option to set this information globally, but you can also use different signatures for different repositories. E.g., when you develop software on <code>GitHub</code> and work on <code>ARCs</code> on the <code>nfdi4plants GitLab</code>.</p>
 <p>For this case the <code>ArcCommander</code> has a set of features to ease your pain.</p>
 <ol>
-<li><p>First set the information you want to use <code>globally</code> in the <code>ArcCommander config</code>:</p>
+<li>First set the information you want to use <code>globally</code> in the <code>ARC Commander config</code>:
 <ul>
 <li>Either using <code>arc config edit -g</code> and adding the following fields:
 <ul>
@@ -143,10 +142,9 @@
 </li>
 </ul>
 </li>
-<li><p>Then for each <code>ARC</code> you download or create, just use <code>arc config setgituser</code></p>
-<p>This will automatically transfer the info stored globally in the ArcCommander config to the local git config of the ARC.</p>
-</li>
+<li>Afterwards, just use <code>arc config setgituser</code> for each ARC you download or create.</li>
 </ol>
+<p>This will automatically transfer the info stored globally in the ArcCommander config to the local git config of the ARC.</p>
 
       <h3>
         DataPLANT Support
@@ -165,7 +163,7 @@
         </span>
       </div>
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/tutorials/ArcCommanderWiki/07_ARC-Synchronization.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/07_ARC-Synchronization.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>

@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - ARC export
+      DataPLANT documentation - ARC Commander
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -50,16 +50,16 @@
     <nfdi-body class="content" hasSidebar="true">
       <nfdi-sidebar-element slot="sidebar" isActive="true">
         <div slot="title">
-          ARC Commander
+          ARC Commander Manual
         </div>
-        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/01_Before-we-start.html">Before we start</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/02_DataPLANT_access.html">DataHUB access</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/03_ARC-initialization.html">ARC Initialization</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/04_Investigation.html">Investigation</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/05_Study.html">Study</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/06_Assay.html">Assay</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/07_ARC-Synchronization.html">ARC Synchronization</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/tutorials/ArcCommanderWiki/08_ARC-Export.html">ARC export</h1>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/01_Before-we-start.html">Before we start</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/02_DataPLANT_access.html">DataHUB access</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/03_ARC-initialization.html">ARC Initialization</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/04_Investigation.html">Investigation</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/05_Study.html">Study</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/06_Assay.html">Assay</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/07_ARC-Synchronization.html">ARC Synchronization</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/08_ARC-Export.html">ARC export</h1>
 
       </nfdi-sidebar-element>
       <nfdi-sidebar-element slot="sidebar" isActive="true">
@@ -70,20 +70,17 @@
 
       </nfdi-sidebar-element>
       <h1 class="front-header">
-        ARC export
+        ARC Commander
       </h1>
       <i class="help">
-        last updated at 2022-12-14
+        last updated at 2022-12-13
       </i>
-      <p>Users have the possibility to export the metadata within the ARC as a JSON file. Using</p>
-<nfdi-code class="language-bash">arc export
-</nfdi-code>
-<p>the ARC Commander transfers all metadata from the isa.study.xlsx and isa.assay.xlsx to the isa.investigation.xlsx registry and prints the information to the console in JSON format. Using</p>
-<nfdi-code class="language-bash">arc export > YourFile.json
-</nfdi-code>
-<p>the ARC Commander directly generates a JSON file at the root of the ARC. Currently, this JSON file is identical to the ISA.json.</p>
+      <nfdi-toc></nfdi-toc>
+      <nfdi-h2 id="welcome-to-the-new-home-of-the-arc-commander-wiki">Welcome to the new home of the ARC Commander Wiki</nfdi-h2>
+<p>the following pages 🚧 are under construction 🚧.
+The content provided here originates from <a href="https://github.com/nfdi4plants/arcCommander/wiki">https://github.com/nfdi4plants/arcCommander/wiki</a>.</p>
 <blockquote>
-<p>Important note: Both ISA-Tab and ISA.json support the Data File column. As this object has no factors field, which is essential for describing the experiment, the ARC Commander generates an additional sample object with the same name to store the factors when parsing a line with a data file output. As the mapping from input to output in the process is handled exactly n to n, this also requires a duplication of the input objects resulting in additional list entries.</p>
+<p>Developers, please check out the <a href="https://nfdi4plants.github.io/arcCommander-docs/">ARC Commander Dev Docs</a>.</p>
 </blockquote>
 
       <h3>
@@ -103,7 +100,7 @@
         </span>
       </div>
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/tutorials/ArcCommanderWiki/08_ARC-Export.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/index.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>
