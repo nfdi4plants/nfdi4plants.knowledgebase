@@ -71,7 +71,7 @@ The easiest way would be to do it directly globally using git:
 
 ### 7.3.2 Locally for each ARC
 
-The problem with setting this information globally in git arises when you want to use different signatures for different repositories. E.g., when you develop software on `GitHub` and work on `ARCs` on the `nfdi4plants GitLab`.
+You have the option to set this information globally, but you can also use different signatures for different repositories. E.g., when you develop software on `GitHub` and work on `ARCs` on the `nfdi4plants GitLab`.
 
 For this case the `ArcCommander` has a set of features to ease your pain.
 
