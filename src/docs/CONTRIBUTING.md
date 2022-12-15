@@ -3,30 +3,31 @@ layout: docs
 title: Knowledge Base Contribution Guide
 published: 2022-12-14
 add toc: true
+add support: true
 add sidebar: _sidebars/mainSidebar.md
 article_status: published
 todo:  
 ---
 
 # Contribution Guide
-Your contribution to the DataPLANT knowledge base is highly appreciated.
+Your contribution to the DataPLANT Knowledge Base is highly appreciated.
 This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.
 
 For changes and suggestions, feel free to open an issue or to open a pull request.
 
 ## Introduction
 
-The DataPLANT knowledge base is built on [nfdi-web-components](https://nfdi4plants.github.io/web-components-docs/) and will fit all **markdown** content into this "framework".
+The DataPLANT Knowledge Base is built on [nfdi-web-components](https://nfdi4plants.github.io/web-components-docs/) which fit **markdown** content into this "framework".
 For a general introduction to writing markdown, see: [Markdown tutorial](tutorials/IntroductionToMarkdown.html) and references therein.
 
 ## GitHub Routines
 
-> Note: This is not a full-fledged GitHub tutorial. Please refer to available tutorials online or contact the knowledge base curators.
+> Note: This is not a full-fledged GitHub tutorial. Please refer to available tutorials online or contact the Knowledge Base curators.
 
 1. Sign up for a GitHub account.
-2. [Fork](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/fork) the knowledge base git repository.
+2. [Fork](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/fork) the Knowledge Base Git repository.
    
-   - This creates a copy of the knowledge base repository in your own GitHub account.
+   - This creates a copy of the Knowledge Base repository in your own GitHub account.
    - In the top left, you will see that the repository is associated with your account (1) and forked from the main repository (2).
    - You can either directly add or edit content using GitHub or clone (3) your repository to work on it locally.
    - Be aware that your fork is not automatically updated, if the main repository updates. Make sure to update your fork regularly (especially before creating new content) by clicking "Fetch upstream" (4) in the top-right corner of your repository.
@@ -46,7 +47,7 @@ For a general introduction to writing markdown, see: [Markdown tutorial](tutoria
 
 ## Testing
 
-Check out the README.md in the [root directory](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/README.md) for instructions on how to install the knowledge base locally on your machine.
+Check out the README.md in the [root directory](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/README.md) for instructions on how to install the Knowledge Base locally on your machine.
 Following those instructions allows you to test and see how your changes come into play and whether everything renders correctly.
 
 It's highly recommended to *frequently* check your changes locally.
@@ -119,31 +120,41 @@ article_status: published
 
 To add a sidebar element to the page, use the codeblock syntax:
 
-<pre><code>```Data Management Plan
-# Data Management Plan:/docs/DataManagementPlan.html
-# DataPLANT's Data Management Plan Generator:/docs/DataManagementPlan.html#dataplants-data-management-plan-generator
-```</code></pre>
-
 - All text after the opening "```" will be parsed to the element title.
 - Inner text MUST only contain heading lines.
-  - Only headers up to `###` are parsed. All header with more depth are parsed to `###`.
+- Only headers up to the third level (`###`) are parsed. All headers with more depth are parsed to the third level (`###`).
 - Tries to match active browser url to referenced ``href`` of any element to set active page.
+
+**Example:**
+
+<pre><code>```Implementation within DataPLANT
+# Annotated Research Context:/docs/implementation/AnnotatedResearchContext.html
+## User Journey:/docs/implementation/QuickStart_arc.html
+### Cheat sheet:/docs/implementation/QuickStart_arc.html#cheat-sheet
+```</code></pre>
+
+A hash within the hyperlink defines an element id to which the window will be scrolled.
+Here, "#cheat-sheet" in the second element points directly to the specific headline 
+"Cheat sheet" in the rendered document "QuickStart_arc.html" which originates 
+from "QuickStart_arc.md" located in the directory "/docs/implementation". 
 
 ## Markdown to HTML Rendering Rules
 
-Every markdown document stored in `/nfdi4plants.knowledgebase/src/docs` or any subfolder (except `_ignored`) will be rendered to html and become publicly available once pushed to the main repository.
+Every markdown document stored in `/nfdi4plants.knowledgebase/src/docs` or any subfolder 
+(except `_ignored`) will be rendered to html and become publicly available once pushed to the main repository.
 
 ### Ignored Content
 
 - Anything inside the folder `_ignored` will not be used to generate html pages.
 - This folder is intended for ideas and drafts that
-  - should not yet become available in the knowledge base
+  - should not yet become available in the Knowledge Base
   - should be under version control for discussion and reviewing
 
 ### Visible or Hidden
 
 Although most markdown content will be rendered and published, it will not prominently be visible to all visitors.
-It will only become visible in the sidebar once the article is linked in the respective sidebar (typically `add sidebar: _sidebars/mainSidebar.md`)
+It will only become visible in the sidebar once the article is linked in the respective sidebar 
+(typically `add sidebar: _sidebars/mainSidebar.md`)
 
 ## Content Design Principles
 
@@ -151,15 +162,22 @@ It will only become visible in the sidebar once the article is linked in the res
 
 - **Literature / information references:** additional bibliography block below
 - **External links (tools, sites, platforms):** as hyper-link
-- **Knowledge base cross-references:** relative path to *.md document, **BUT** replace the `.md` file extension with `.html`, as the markdown files are parsed to html.
+- **Knowledge Base cross-references:** relative path to *.md document, **BUT** replace the `.md` file extension 
+with `.html`, as the markdown files are parsed to html.
 
 ### Relative Paths
 
-We SHOULD always try to use relative paths, as they are easier to maintain. Although useful, they need a bit more fine tuning, as there are several options.
+We SHOULD always try to use relative paths, as they are easier to maintain. 
+Although useful, they need a bit more fine tuning, as there are several options.
 
-One of the major issues with relative paths is that during development the pages are accessed by `/`, for example `/docs/README.html`. Published they will be accessed by `/nfdi4plants.knowledgebase` (`/nfdi4plants.knowledgebase/docs/README.html`). In the following, some ideas are described on how to deal with this:
+One of the major issues with relative paths is that during development the pages are accessed by `/`, for example `/docs/README.html`. 
+Published they will be accessed by `/nfdi4plants.knowledgebase` (`/nfdi4plants.knowledgebase/docs/README.html`). 
+In the following, some ideas are described on how to deal with this:
 
-- **Basic relative paths:** These will look like this: `[Test](/README.html)`. By starting with `/` we implicitly say "start at host". So in development it will start with `http://127.0.0.1:8080/`, in production it will start with `https://nfdi4plants.github.io/`. Because in production we also need would need `https://nfdi4plants.github.io/nfdi4plants.knowledgebase/`, this type of relative paths can create issues! ⚠️
+- **Basic relative paths:** These will look like this: `[Test](/README.html)`. 
+By starting with `/` we implicitly say "start at host". 
+So in development it will start with `http://127.0.0.1:8080/`, in production it will start with `https://nfdi4plants.github.io/`. 
+Because in production we also need `https://nfdi4plants.github.io/nfdi4plants.knowledgebase/`, this type of relative paths can create issues! ⚠️
 - **Relative paths in sidebar:** The sidebars actually check if you are currently in `dotnet fornax watch` mode. So you can use basic relative paths here. Example `
     ```markdown
     ```Fundamentals
@@ -167,7 +185,7 @@ One of the major issues with relative paths is that during development the pages
     ```!
     ```
     `/docs/Home.html` will be parsed to `/nfdi4plants.knowledgebase/docs/Home.html`.
-- **Relative paths from current file:** These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". Example: `[Test](./ResearchDataManagement.html)`. Starting with `./` translates to "coming from the position of this file". We can even go up in the file hierarchy, like `[Test](./../docs/README.html)`. This translates to "coming from the position of this file, go one folder higher and into the docs directory to find this README.html file there."
+- **Relative paths from current file:** These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". Example: `[Test](./ResearchDataManagement.html)`. Starting with `./` translates to "coming from the position of this file". We can even go up in the file hierarchy, like `[Test](./../docs/README.html)`. This translates to "coming from the position of this file, go one folder higher and into the docs directory to find this [Contribution Guide](./../docs/CONTRIBUTING.md) file there."
 <!--The last example link links now to "README.md" as the Contribution guide currently linked to from the website it the README within the repo and not shown on the website. If the contribution guide is moved in the future, this needs to be changed.-->
 ### Structure and Format
 
@@ -215,7 +233,7 @@ British English
 
 ⚠️ Must be read from [markdown](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/CONTRIBUTING.md), will not be shown in html.
 
-<!-- Links to DataPLANT knowledge base (kb-) -->
+<!-- Links to DataPLANT Knowledge Base (kb-) -->
 
 <!-- kb-Fundamentals -->
 
