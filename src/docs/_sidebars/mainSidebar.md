@@ -27,6 +27,9 @@
 # DataPLAN:/docs/implementation/DataPLAN.html
 ```
 
+<!-- ```FAQs
+# Frequently Asked Questions:/docs/faqs/faqs.html
+``` -->
 
 <!-- 
 Training & Tutorials# DataPLANT Setup:/docs/tutorials/DataPlant_Setup.html 
