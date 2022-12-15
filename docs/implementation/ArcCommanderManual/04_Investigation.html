@@ -78,8 +78,12 @@
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="addition-of-an-isa.investigation.xlsx">4.1. Addition of an isa.investigation.xlsx</nfdi-h2>
 <ul>
-<li>Each ARC includes an isa.investigation file that serves as central information registry. The ARC’s content as well as global and detailed meta data are listed here. Any study or assay addition performed throughout the ARC’s working life must be registered in investigation.isa.xlsx.</li>
-<li>arc i create will open an editor that asks for basic investigation information to create an ISA-TAB conform Excel file. If arguments are applied with the given command, no editor will open.</li>
+<li>Each ARC includes an isa.investigation file that serves as central information registry. The ARC’s content as well as global and detailed metadata are listed here. Any study or assay addition performed throughout the ARC’s working life must be registered in the isa.investigation.xlsx.</li>
+<li><code>arc i create</code> will open an editor that asks for basic investigation information to create an ISA-TAB conform Excel file. If arguments are applied with the given command, no editor will open.
+<blockquote>
+<p>Note: Avoid using spaces in the identifier. Use underscores and capital letters instead.</p>
+</blockquote>
+</li>
 </ul>
 <table>
 <thead>
@@ -107,13 +111,13 @@
 </tr>
 <tr>
 <td>SubmissionDate</td>
-<td>The date on which the investigation was reported to the repository.</td>
-<td></td>
+<td>The date on which the investigation was reported to the repository. Formatted as ISO8601 date <br>YYYY-MM-DD</td>
+<td>2022-12-13</td>
 </tr>
 <tr>
 <td>PublicReleaseDate</td>
-<td>The date on which the investigation was released publicly.</td>
-<td></td>
+<td>The date on which the investigation was released publicly. Formatted as ISO8601 date <br>YYYY-MM-DD</td>
+<td>2022-12-13</td>
 </tr>
 </tbody>
 </table>
@@ -124,9 +128,11 @@
 </ul>
 <nfdi-h2 id="registering-persons-to-investigation">4.2. Registering persons to investigation</nfdi-h2>
 <ul>
-<li>Every person, that is involved in the investigation can be registered with personal information using <code>arc i person register</code>.<br />
-<em>Note: If an investigation covers several studies with various groups and persons, it may be beneficial to register corresponding contacts to investigation and register all study-related persons in each study (see X.X).</em>_</li>
+<li>Every person that is involved in the investigation can be registered with personal information using <code>arc i person register</code>.</li>
 </ul>
+<blockquote>
+<p>Note: If an investigation covers several studies with various groups and persons, it may be beneficial to register corresponding contacts to the investigation and register all study-related persons in each study.</p>
+</blockquote>
 <table>
 <thead>
 <tr>
@@ -200,7 +206,7 @@
 <nfdi-h3 id="listing-and-inspecting-registered-persons">4.2.1 Listing and inspecting registered persons</nfdi-h3>
 <ul>
 <li>Registered persons can be listed by <code>arc i person list</code>.</li>
-<li>To get detailed information about a specific entry use <code>arc i person get</code>. If no arguments are specified an editor will request first and last name (mandatory) and optionally mid name initials to print all registered information into the shell.</li>
+<li>To get detailed information about a specific entry use <code>arc i person get</code>. If no arguments are specified, an editor will request first and last name (mandatory) and optionally mid name initials to print all registered information into the shell.</li>
 </ul>
 <nfdi-h3 id="editing-person-information">4.2.2. Editing person information</nfdi-h3>
 <ul>
@@ -210,7 +216,7 @@
 <li>If the person exists, another editor opens with information already known for the respective person. The required values can be edited.</li>
 </ul>
 </li>
-<li>Instead of using the editor, the following command can be used. To circumvent editor pop ups, not <code>arc i person edit</code>, but <code>arc i person update</code> must be used:<br />
+<li>To circumvent editor pop ups, not <code>arc i person edit</code>, but <code>arc i person update</code> must be used:<br />
 <code>arc i person update -l Kunze -f Heinz-Rudolf --email hrkunze@mail.com --address &quot;Herzstraße 5, 12345 Musterstadt&quot;</code></li>
 </ul>
 <nfdi-h3 id="removing-a-person">4.2.3 Removing a person</nfdi-h3>

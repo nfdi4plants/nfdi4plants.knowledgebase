@@ -312,7 +312,7 @@
 </ul>
 <nfdi-h3 id="editing-publication-information">5.6.2 Editing publication information</nfdi-h3>
 <ul>
-<li>A publication can be edited using arc s publication edit.
+<li>A publication can be edited using <code>arc s publication edit</code>.
 <ul>
 <li>If no further arguments are specified an editor opens, that asks for the study identifier and publication doi that should be edited.</li>
 <li>If the publication exists, another editor opens with information already known for the respective publication. The required values can be edited.</li>
@@ -327,16 +327,17 @@
 <li>Instead of using the editor, the following command can be used:<br />
 <code>arc s publication unregister -s GelBasedProteomicsWT -d 2021_ARC05_Pub01tmp</code></li>
 </ul>
-<!-- 
-## 5.7 Design
-
-
- 
-## 5.8 Factor
-
-
-
-## 5.9 Protocol -->
+<nfdi-h2 id="registering-design-types-to-studies">5.7 Registering Design Types to Studies</nfdi-h2>
+<ul>
+<li>The design type of your study can be registered using <code>arc s design register</code>.
+<ul>
+<li>If no further arguments are specified an editor opens that asks for a term allowing the classification of the study based on the overall experimental design, e.g cross-over design or parallel group design.</li>
+<li>Additionally you are asked to supply the accession number from the term source and the Term Source REF if available.</li>
+</ul>
+</li>
+<li>Instead of using the editor, the following command can be used:
+<code>arc s design register -s &quot;GelBasedProteomicsWT&quot; -d &quot;YourDesignType&quot;</code></li>
+</ul>
 
       <h3>
         DataPLANT Support
