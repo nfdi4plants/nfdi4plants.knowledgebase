@@ -13,9 +13,8 @@ Welcome to the DataPLANT knowledge base! 👋
 
 Please navigate via the sidebar on the left to
 
-- explore **fundamental** topics on research data management (RDM),
-- how **DataPLANT implements** these aspects to support plant researchers with RDM tools and services, and
-- to follow **training and tutorials** on specific tools.
+- explore **fundamental** topics on research data management (RDM) and
+- how **DataPLANT implements** these aspects to support plant researchers with RDM tools and services.
 
 ## Feedback & Contribution
 
