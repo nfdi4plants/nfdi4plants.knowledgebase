@@ -10896,6 +10896,12 @@ let Navbar = class extends s$1 {
                 <path fill="currentColor" d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/>
               </svg>
             </a>
+            <a class="navbar-item" href="https://auth.nfdi4plants.org/realms/dataplant/account" title="Account Management">
+            <!-- https://fontawesome.com/v6.0/docs/web/add-icons/svg-bare -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" aria-hidden="true" focusable="false" viewBox="0 0 448 512">
+                <path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
+            </svg>
+            </a>
             <p id="navbar-v-divide" class="navbar-item is-lightblue">
               |
             </p>
@@ -11092,6 +11098,14 @@ let Footer = class extends s$1 {
                         </a>
                     </div>
                     <div class="block">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" aria-hidden="true" focusable="false" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3zz"/>
+                        </svg>
+                        <a href="https://auth.nfdi4plants.org/realms/dataplant/account/">
+                            DataPLANT Account Management
+                        </a>
+                    </div>
+                    <div class="block">
                         <h3 class="subtitle headerColor">
                         Social
                         </h3>
@@ -11209,7 +11223,6 @@ Sidebar.styles = [
             .inner-wrapper {
                 position: sticky;
                 top: 71px;
-                max-height: 90%;
                 scrollbar-color: var(--element-background-color, ${nfdiWhite}) var(--accent-text-color, ${nfdiBlack});
                 background-color: var(--sidebar-background-color, transparent);
                 padding: 1rem;
@@ -11267,6 +11280,7 @@ Sidebar.styles = [
                 .main {
                     display: grid; 
                     height: 100%;
+                    min-height: max-content;
                     grid-template-columns: 1fr; grid-template-rows: 1fr;
                 }
 
@@ -11306,7 +11320,7 @@ Sidebar.styles = [
                 }
 
                 :host {
-                    display: inline
+                    display: inline;
                 }
 
                 .fixed-footer {
