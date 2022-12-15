@@ -3,7 +3,7 @@ layout: docs
 title: "Investigation"
 published: 2022-12-13
 add toc: true
-add sidebar: _sidebars/arcCommanderWikiSidebar.md
+add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
 
 ## 3.1. Addition of an isa.investigation.xlsx

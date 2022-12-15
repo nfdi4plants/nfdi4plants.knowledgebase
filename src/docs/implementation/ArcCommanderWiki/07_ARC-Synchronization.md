@@ -3,7 +3,7 @@ layout: docs
 title: "ARC synchronization"
 published: 2022-12-13
 add toc: true
-add sidebar: _sidebars/arcCommanderWikiSidebar.md
+add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
 
 The command `arc sync` handles multiple operations for your ARC in one step. It will
@@ -33,14 +33,14 @@ arc sync -r https://github.com/nfdi4plants/ARC/tree/Example-ARC.git
 
 *Problem:* 
 
-- No direct access rights to main branch
+- No direct access rights to the main branch
 
  or 
-- Many people work on repository, making direct pushing to main branch chaotic
+- Many people work on the same repository, making direct pushing to main branch chaotic.
 
 *Solution:* 
 
-Work on second branch, and contribute to the main branch using merge/pull requests
+Work on a second branch and contribute to the main branch using merge/pull requests
 
 *Workflow*
  1. use `arc get` to get main branch of repo

@@ -3,13 +3,13 @@ layout: docs
 title: "ARC initialization"
 published: 2022-12-13
 add toc: true
-add sidebar: _sidebars/arcCommanderWikiSidebar.md
+add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
 
 - The basic ARC folder structure can be created using `arc init`
   - .arc auxillary arc commander files
   - assays storage for raw data
-  - externals storage for external data
+  - studies storage for your material and external data
   - runs storage for processed data
   - workflows storage for computational workflows
 
