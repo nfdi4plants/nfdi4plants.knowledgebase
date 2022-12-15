@@ -185,7 +185,7 @@ Because in production we also need `https://nfdi4plants.github.io/nfdi4plants.kn
     ```!
     ```
     `/docs/Home.html` will be parsed to `/nfdi4plants.knowledgebase/docs/Home.html`.
-- **Relative paths from current file:** These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". Example: `[Test](./ResearchDataManagement.html)`. Starting with `./` translates to "coming from the position of this file". We can even go up in the file hierarchy, like `[Test](./../docs/README.html)`. This translates to "coming from the position of this file, go one folder higher and into the docs directory to find this [Contribution Guide](./../docs/CONTRIBUTING.md) file there."
+- **Relative paths from current file:** These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". Example: `[Test](./ResearchDataManagement.html)`. Starting with `./` translates to "coming from the position of this file". We can even go up in the file hierarchy, like `[Test](./../docs/README.html)`. This translates to "coming from the position of this file, go one folder higher and into the docs directory to find this [Contribution Guide](./../docs/CONTRIBUTING.html) file there."
 <!--The last example link links now to "README.md" as the Contribution guide currently linked to from the website it the README within the repo and not shown on the website. If the contribution guide is moved in the future, this needs to be changed.-->
 ### Structure and Format
 
