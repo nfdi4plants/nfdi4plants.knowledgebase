@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: ARC QuickStart
+title: ARC User Journey
 published: 2022-08-05
 author: Martin Kuhl
 author_orcid: https://orcid.org/0000-0002-8493-1077
