@@ -109,7 +109,7 @@ If no study identifier is given, a study is created with the assay identifier as
 - To get detailed information about a specific entry use `arc s publication get`. If no arguments are specified an editor will request the study identifier and doi to print all registered information into the shell.
 
 ### 5.6.2 Editing publication information
-- A publication can be edited using arc s publication edit.
+- A publication can be edited using `arc s publication edit`.
   - If no further arguments are specified an editor opens, that asks for the study identifier and publication doi that should be edited.
   - If the publication exists, another editor opens with information already known for the respective publication. The required values can be edited.
 - Instead of using the editor, the following command can be used. To circumvent editor pop ups, not `arc s publication edit`, but `arc s publication update` must be used:  
@@ -120,16 +120,14 @@ If no study identifier is given, a study is created with the assay identifier as
 - Instead of using the editor, the following command can be used:  
 `arc s publication unregister -s GelBasedProteomicsWT -d 2021_ARC05_Pub01tmp`
 
-<!-- 
-## 5.7 Design
 
+## 5.7 Registering Design Types to Studies
 
- 
-## 5.8 Factor
-
-
-
-## 5.9 Protocol -->
+- The design type of your study can be registered using `arc s design register`.
+  - If no further arguments are specified an editor opens that asks for a term allowing the classification of the study based on the overall experimental design, e.g cross-over design or parallel group design.
+  - Additionally you are asked to supply the accession number from the term source and the Term Source REF if available.
+- Instead of using the editor, the following command can be used: 
+`arc s design register -s "GelBasedProteomicsWT" -d "YourDesignType"`
 
 
 
