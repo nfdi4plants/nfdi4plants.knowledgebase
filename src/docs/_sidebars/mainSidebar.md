@@ -19,7 +19,7 @@
 ## User Journey:/docs/implementation/QuickStart_arc.html
 # ARC Commander:/docs/implementation/ArcCommander.html
 ## QuickStart:/docs/implementation/QuickStart_arcCommander.html
-## Manual: /docs/implementation/ArcCommanderWiki/index.html
+## Manual: /docs/implementation/ArcCommanderManual/index.html
 # Swate:/docs/implementation/Swate.html
 ## QuickStart:/docs/implementation/QuickStart_swate.html
 ## Best Practices For Data Annotation:/docs/implementation/AnnotationPatterns.html
