@@ -8,16 +8,17 @@ add sidebar: _sidebars/arcCommanderManualSidebar.md
 
 ## 4.1. Addition of an isa.investigation.xlsx
 
-- Each ARC includes an isa.investigation file that serves as central information registry. The ARC’s content as well as global and detailed meta data are listed here. Any study or assay addition performed throughout the ARC’s working life must be registered in investigation.isa.xlsx.
-- arc i create will open an editor that asks for basic investigation information to create an ISA-TAB conform Excel file. If arguments are applied with the given command, no editor will open.
+- Each ARC includes an isa.investigation file that serves as central information registry. The ARC’s content as well as global and detailed metadata are listed here. Any study or assay addition performed throughout the ARC’s working life must be registered in the isa.investigation.xlsx.
+- `arc i create` will open an editor that asks for basic investigation information to create an ISA-TAB conform Excel file. If arguments are applied with the given command, no editor will open.
+  > Note: Avoid using spaces in the identifier. Use underscores and capital letters instead.
 
 | Field                   | Description                                                          | Input                                                                                                                 |
 |-------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | Identifier (Mandatory)  | A identifier or an accession number provided by a repository.        | 2021_TestARC05                                                                                                        |
 | Title                   | A concise name given to the investigation.                           | Redox behaviour of yeast mutant M21                                                                                   |
 | Description             | A textual description of the investigation.                          | M21 lacks in protein P09 and is susceptible to H2O2 Treatment. The molecular and phenotypical responses are studied.  |
-| SubmissionDate          | The date on which the investigation was reported to the repository.  |                                                                                                                       |
-| PublicReleaseDate       | The date on which the investigation was released publicly.           |                                                                                                                       |
+| SubmissionDate          | The date on which the investigation was reported to the repository. Formatted as ISO8601 date <br>YYYY-MM-DD  |   2022-12-13                                                                                                                    |
+| PublicReleaseDate       | The date on which the investigation was released publicly. Formatted as ISO8601 date <br>YYYY-MM-DD           |   2022-12-13                                                                                                                    |
 
 - Instead of using the editor, the following command can be used.  
 `arc i create --identifier "2021_TestARC05" --title "Redox behaviour of yeast mutant M21" --description "M21 lacks in protein P09 and is susceptible to H2O2 Treatment. The molecular and phenotypical responses are studied."`
@@ -25,8 +26,8 @@ add sidebar: _sidebars/arcCommanderManualSidebar.md
 
 ## 4.2. Registering persons to investigation
 
-- Every person, that is involved in the investigation can be registered with personal information using `arc i person register`.  
-_Note: If an investigation covers several studies with various groups and persons, it may be beneficial to register corresponding contacts to investigation and register all study-related persons in each study (see X.X).__
+- Every person that is involved in the investigation can be registered with personal information using `arc i person register`.  
+>Note: If an investigation covers several studies with various groups and persons, it may be beneficial to register corresponding contacts to the investigation and register all study-related persons in each study.
 
 | Field                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Input                                                                           |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
@@ -50,14 +51,14 @@ _Note: If an investigation covers several studies with various groups and person
 ### 4.2.1 Listing and inspecting registered persons 
 
 - Registered persons can be listed by `arc i person list`. 
-- To get detailed information about a specific entry use `arc i person get`. If no arguments are specified an editor will request first and last name (mandatory) and optionally mid name initials to print all registered information into the shell.  
+- To get detailed information about a specific entry use `arc i person get`. If no arguments are specified, an editor will request first and last name (mandatory) and optionally mid name initials to print all registered information into the shell.  
 
 ### 4.2.2. Editing person information
 
 - A person can be edited using `arc i person edit`.
   - If no further arguments are specified an editor opens, that asks for the person that should be edited.
   - If the person exists, another editor opens with information already known for the respective person. The required values can be edited.
-- Instead of using the editor, the following command can be used. To circumvent editor pop ups, not `arc i person edit`, but `arc i person update` must be used:  
+- To circumvent editor pop ups, not `arc i person edit`, but `arc i person update` must be used:  
 `arc i person update -l Kunze -f Heinz-Rudolf --email hrkunze@mail.com --address "Herzstraße 5, 12345 Musterstadt"`
 
 ### 4.2.3 Removing a person
