@@ -8,12 +8,14 @@ todo: Update design, factor, and protocol sections
 ---
 
 ## 5.1 Addition of studies
+  **Note:** Make sure to close all isa.xlsx files before submitting a new command to the command line, as otherwise the information cannot be saved by the ARC Commander.
   
-  _Note: A study identifier also defines the isa file name, so ensure to avoid special characters!_  
 - An investigation may contain several studies, which in turn can include multiple assays.
 - There is no need for a folder structure that represents a study since all data are associated with assays. Studies can be created to group related assays within an investigation. A study consists of a single isa.study.xlsx file, can be created by using `arc s init`.
 - An existing study can be registered to the investigation by using `arc s register`.
 - To create the isa.study file and afterwards register the new study `arc s add` can be used. This command combines init and register.
+
+_Note: A study identifier also defines the isa file name, so ensure to avoid special characters!_  
 
 | Field                   | Description                                                                                                                                                                                             | Input                                                                                         |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|

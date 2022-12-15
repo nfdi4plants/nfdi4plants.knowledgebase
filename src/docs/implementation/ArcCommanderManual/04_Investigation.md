@@ -6,7 +6,10 @@ add toc: true
 add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
 
+
+
 ## 4.1. Addition of an isa.investigation.xlsx
+**Note:** Make sure to close all isa.xlsx files before submitting a new command to the command line, as otherwise the information cannot be saved by the ARC Commander.
 
 - Each ARC includes an isa.investigation file that serves as central information registry. The ARC’s content as well as global and detailed metadata are listed here. Any study or assay addition performed throughout the ARC’s working life must be registered in the isa.investigation.xlsx.
 - `arc i create` will open an editor that asks for basic investigation information to create an ISA-TAB conform Excel file. If arguments are applied with the given command, no editor will open.
@@ -23,6 +26,8 @@ add sidebar: _sidebars/arcCommanderManualSidebar.md
 - Instead of using the editor, the following command can be used.  
 `arc i create --identifier "2021_TestARC05" --title "Redox behaviour of yeast mutant M21" --description "M21 lacks in protein P09 and is susceptible to H2O2 Treatment. The molecular and phenotypical responses are studied."`
 - The isa.investigation.xlsx is added to root directory.
+
+**You don't need to fill every row from beginning, as ARCs are intended as an evolving object that shapes over time.**
 
 ## 4.2. Registering persons to investigation
 
