@@ -7,7 +7,7 @@ add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
 
 ## 6.1 Addition of assays
-
+  **Note:** Make sure to close all isa.xlsx files before submitting a new command to the command line, as otherwise the information cannot be saved by the ARC Commander.
 - An assay may consist of experimental measuring data together with experimental protocols.
 Note: An assay identifier also sets the folder name, so ensure to avoid special characters!
 - An assay folder structure can be created by using `arc a init`. Under assays an assay folder named after the assay identifier is created which includes:
