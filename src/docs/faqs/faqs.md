@@ -13,7 +13,6 @@ todo:
 4. Open FAQ-section to public (CMR)
 ---
 
-
 ## General
 
 **Q:**  
