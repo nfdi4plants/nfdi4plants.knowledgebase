@@ -5,7 +5,7 @@
 # Installation:/docs/implementation/ArcCommanderManual/arc_installation.html
 ## Installing Dependencies:/docs/implementation/ArcCommanderManual/arc_installation_dependencies.html
 ## ARC User configuration:/docs/implementation/ArcCommanderManual/arc_config.html
-## Installing the ARC Commander:/docs/implementation/ArcCommanderManual/arc_installation.html#installing-the-arc-commander
+## Installing the ARC Commander:/docs/implementation/ArcCommanderManual/arc_installation.html
 ### Windows:/docs/implementation/ArcCommanderManual/arc_installation.html#windows
 ### Linux:/docs/implementation/ArcCommanderManual/arc_installation.html#linux
 ### MacOS:/docs/implementation/ArcCommanderManual/arc_installation.html#macos
@@ -14,7 +14,8 @@
 
 ```ARC Commander Manual
 # Initialize:/docs/implementation/ArcCommanderManual/arc_initialization.html
-# DataHUB access:/docs/implementation/ArcCommanderManual/arc_access.html
+# DataHUB Access:/docs/implementation/ArcCommanderManual/arc_access.html
+# Clone an ARC:/docs/implementation/ArcCommanderManual/arc_get.html
 # Synchronize:/docs/implementation/ArcCommanderManual/arc_synchronization.html
 # Branch:/docs/implementation/ArcCommanderManual/arc_branch.html
 ```

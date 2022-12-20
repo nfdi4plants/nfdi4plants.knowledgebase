@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: "Export ARC metadata"
+title: "Clone an ARC from the DataHUB"
 published: 2022-12-20
 author: Martin Kuhl
 author_github: martin-kuhl
@@ -18,4 +18,4 @@ arc get -r https://github.com/nfdi4plants/ARC.git
 ```
 
 > :warning: In previous versions of the ARC Commander, the subcommand `get` allowed you to retrieve information from the ARC, e.g., `arc assay get` or `arc study person get`.  
-This function is now available using the command `show`, e.g. `arc assay show` or `arc study person show`.
+> This function is now available using the command `show`, e.g. `arc assay show` or `arc study person show`.

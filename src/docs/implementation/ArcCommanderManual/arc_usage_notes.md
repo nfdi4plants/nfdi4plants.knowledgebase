@@ -10,3 +10,6 @@ add sidebar: _sidebars/arcCommanderManualSidebar.md
 - Note that each input that contains non-literal characters must be encapsulated in quotation marks when entered within the shell. This also applies when using the editor for numerals that are no numbers (dates, phone numbers, etc.).
 - Furthermore, `<arc>` defines the path to the ArcCommander.exe (eg. "C:\Users\userA\source\repos\ArcCommander\ArcCommander.exe").
 - Every input can be entered by using the shell. For user friendly experience, an editor may pop up if no arguments are given. After entering the required values, save and close the editor.
+
+
+> :warning: Note: We strongly recommend to read the in-depth guides to the ARC Commander on the following pages!

@@ -1,17 +1,11 @@
 ---
 layout: docs
-title: "Installation"
+title: "Installing the ARC Commander"
 published: 2022-12-20
 add toc: false
 add support: false
 add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
-
-## Installing Dependencies
-
-An installation of [git](https://git-scm.com/downloads) and [git LFS](https://git-lfs.github.com/) is mandatory for ARC Commander usage. Whenever submitting a command that relies on a git functionality, the ARC Commander will check for presence of git and git LFS. If not installed, the respective command will result in an error. Throughout the installation setup of git, the user has the possibility to install git LFS. Git LFS can also be downloaded manually [here](https://git-lfs.github.com/).
-
-## Installing the ARC Commander
 
 Head to the ARC Commander's GitHub [release page](https://github.com/nfdi4plants/arcCommander/releases). Download the newest release for your operating system (OS).
 
@@ -19,8 +13,6 @@ Start the ARC Commander with the respective OS's command-line shell.
 A global config file will be created the first time you use the ARC Commander in the following folder:
 - Windows: `<YourDriveLetter>:\Users\<Username>\AppData\Roaming\DataPLANT\ArcCommander\`
 - Unix: `~/.config/DataPLANT/ArcCommander/`
-
-We strongly recommend to read the in-depth guide to the ARC Commander manual on the following pages!
 
 ### Windows
 
