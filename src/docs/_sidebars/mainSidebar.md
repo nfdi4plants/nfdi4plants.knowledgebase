@@ -18,8 +18,9 @@
 # Annotated Research Context:/docs/implementation/AnnotatedResearchContext.html
 ## User Journey:/docs/implementation/QuickStart_arc.html
 # ARC Commander:/docs/implementation/ArcCommander.html
-## QuickStart:/docs/implementation/QuickStart_arcCommander.html
 ## Manual: /docs/implementation/ArcCommanderManual/index.html
+## QuickStart:/docs/implementation/QuickStart_arcCommander.html
+## QuickStart (experts):/docs/implementation/QuickStart_arcCommander_expert.html
 # Swate:/docs/implementation/Swate.html
 ## QuickStart:/docs/implementation/QuickStart_swate.html
 ## Best Practices For Data Annotation:/docs/implementation/AnnotationPatterns.html

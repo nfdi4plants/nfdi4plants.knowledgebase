@@ -30,7 +30,6 @@ We are very happy that you chose our tools and infrastructure to create and shar
   - [ARC synchronization](#arc-synchronization)
   - [Setting a git user](#setting-a-git-user)
   - [Invite collaborators](#invite-collaborators)
-- [The Minimalist's ARC-QuickStart](#the-minimalists-arc-quickstart)
 
 ## Environment and setup
 
@@ -209,35 +208,3 @@ Briefly:
 ![](../img/datahub_members.png)
 
 > Note: A detailed usage instruction for the ARC Commander can be found [here](https://github.com/nfdi4plants/arcCommander/wiki/Detailed-usage-instruction).
-
-<div style="page-break-after: always;"></div>
-
-
-
-
-<div style="page-break-after: always;"></div>
-
-## The Minimalist's ARC-QuickStart
-
-- [x] You know how to use a command line
-- [x] You have created an ARC before
-- [x] The latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) as well as [git](https://git-scm.com/downloads) and [git LFS](https://git-lfs.github.com/) are installed on your computer
-- [x] You have a [DataPLANT](https://register.nfdi4plants.org) account
-- [x] Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via an ssh key or a personal access token.
-
-Voila! You are ready to follow these few steps to create a minimal ARC sharable via DataPLANT's DataHUB:
-
-1. Visit the [DataHUB](https://git.nfdi4plants.org), create a new repository and copy the URL to your clipboard.
-2. Replace the `<variables>` in the following code block with your information and execute it in your command line.
-
-```bash
-# Create and navigate to your ARC folder
-mkdir <YourARC>
-cd <YourARC>
-
-# Setup the ARC structure with one study and one assay
-arc init
-arc i create -i <YourInvestigation>
-arc a add -s <YourStudy> -a <YourAssay>
-arc sync -f -r https://git.nfdi4plants.org/<YourUserName>/<YourARC> -m "initialize ARC structure"
-```
