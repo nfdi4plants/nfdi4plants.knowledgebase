@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: "ARC synchronization"
+title: "Sychronize an ARC"
 published: 2022-12-13
 add toc: true
 add sidebar: _sidebars/arcCommanderManualSidebar.md
