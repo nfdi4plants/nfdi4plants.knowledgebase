@@ -1,12 +1,20 @@
 ---
 layout: docs
-title: "Installing the ARC Commander"
+title: "Installation"
 published: 2022-12-20
-add toc: true
+add toc: false
+add support: false
 add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
 
-Head over to [Releases](https://github.com/nfdi4plants/arcCommander/releases). Download the newest release for the OS you use.
+## Installing Dependencies
+
+An installation of [git](https://git-scm.com/downloads) and [git LFS](https://git-lfs.github.com/) is mandatory for ARC Commander usage. Whenever submitting a command that relies on a git functionality, the ARC Commander will check for presence of git and git LFS. If not installed, the respective command will result in an error. Throughout the installation setup of git, the user has the possibility to install git LFS. Git LFS can also be downloaded manually [here](https://git-lfs.github.com/).
+
+
+## Installing the ARC Commander
+
+Head to the ARC Commander's GitHub [release page](https://github.com/nfdi4plants/arcCommander/releases). Download the newest release for your operating system (OS).
 
 Start the ARC Commander with the respective OS's command-line shell.  
 A global config file will be created the first time you use the ARC Commander in the following folder:
@@ -15,7 +23,7 @@ A global config file will be created the first time you use the ARC Commander in
 
 We strongly recommend to read the in-depth guide to the ARC Commander manual on the following pages!
 
-## Windows
+### Windows
 
 1. In Windows Explorer, head over to the folder where you downloaded the ARC Commander, e.g.
 ![image](https://user-images.githubusercontent.com/47781170/118627514-13e63f00-b7cc-11eb-95cb-1bf74a355cde.png)
@@ -32,7 +40,7 @@ We strongly recommend to read the in-depth guide to the ARC Commander manual on 
 ![image](https://user-images.githubusercontent.com/47781170/119680874-dd4e9b00-be41-11eb-8faf-ed699c827395.png)
 6. Run the ARC Commander from the CMD by executing `arc`
 
-## Linux
+### Linux
 
 1. Download the latest ARC Commander release
 
@@ -68,7 +76,7 @@ You should see the following or similar message:
 > v0.4.0
 > Done processing command.  
 
-## MacOS
+### MacOS
 
 1. Open a Terminal (Applications -> Utilities -> Terminal)
 2. Copy/paste the following commands into your terminal and execute them to (a) download the latest ARC Commander release, (b) change permissions to make the ARC Commander executable and (c) move the ARC Commander program to a location from where it is executable via the terminal:
