@@ -2,13 +2,12 @@
 ---
 
 ```ARC Commander Setup 
-# Installation:/docs/implementation/ArcCommanderManual/arc_installation.html
-## Installing Dependencies:/docs/implementation/ArcCommanderManual/arc_installation_dependencies.html
-## ARC User configuration:/docs/implementation/ArcCommanderManual/arc_config.html
-## Installing the ARC Commander:/docs/implementation/ArcCommanderManual/arc_installation.html
-### Windows:/docs/implementation/ArcCommanderManual/arc_installation.html#windows
-### Linux:/docs/implementation/ArcCommanderManual/arc_installation.html#linux
-### MacOS:/docs/implementation/ArcCommanderManual/arc_installation.html#macos
+# Installing Dependencies:/docs/implementation/ArcCommanderManual/arc_installation_dependencies.html
+# ARC User configuration:/docs/implementation/ArcCommanderManual/arc_config.html
+# Installing the ARC Commander:/docs/implementation/ArcCommanderManual/arc_installation.html
+## Windows Installation:/docs/implementation/ArcCommanderManual/arc_installation_windows.html
+## MacOS Installation:/docs/implementation/ArcCommanderManual/arc_installation_macos.html
+## Linux Installation:/docs/implementation/ArcCommanderManual/arc_installation_linux.html
 # Before we start:/docs/implementation/ArcCommanderManual/arc_usage_notes.html
 ```
 

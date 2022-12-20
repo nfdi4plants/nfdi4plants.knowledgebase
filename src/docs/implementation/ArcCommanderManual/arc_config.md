@@ -49,4 +49,4 @@ To transfer the information from the global ARC Commander config to the local gi
 arc config setgituser
 ```
 
-This will automatically transfer the info stored globally in the ArcCommander config to the local git config of the ARC.
+> :bulb: This will automatically transfer the info stored globally in the ArcCommander config to the local git config of the ARC.

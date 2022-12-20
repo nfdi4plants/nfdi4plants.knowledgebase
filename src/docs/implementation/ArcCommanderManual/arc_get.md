@@ -9,9 +9,7 @@ add support: false
 add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
 
-## arc get
-
-- Using `arc get -r` followed by a URL + ".git" enables you to clone an already existing ARC as a local repository, e.g.,
+Using `arc get -r` followed by a URL + ".git" enables you to clone an already existing ARC as a local repository, e.g.,
 
 ```bash
 arc get -r https://github.com/nfdi4plants/ARC.git
