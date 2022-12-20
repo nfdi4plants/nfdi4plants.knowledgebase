@@ -10,14 +10,14 @@ todo: Update design, factor, and protocol sections
 
 ## Adding a study
 
-**Note:** Make sure to close all isa.xlsx files before submitting a new command to the command line, as otherwise the information cannot be saved by the ARC Commander.
+> :warning: Make sure to close all isa.*.xlsx files before submitting a new command to the command line, as otherwise the information cannot be saved by the ARC Commander.
   
 - An investigation may contain several studies, which in turn can include multiple assays.
 - There is no need for a folder structure that represents a study since all data are associated with assays. Studies can be created to group related assays within an investigation. A study consists of a single isa.study.xlsx file, can be created by using `arc s init`.
 - An existing study can be registered to the investigation by using `arc s register`.
 - To create the isa.study file and afterwards register the new study `arc s add` can be used. This command combines init and register.
 
-_Note: A study identifier also defines the isa file name, so ensure to avoid special characters!_  
+> :warning: A study identifier also defines the isa file name, so ensure to avoid special characters!
 
 | Field                   | Description                                                                                                                                                                                             | Input                                                                                         |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -45,7 +45,7 @@ If no study identifier is given, a study is created with the assay identifier as
 
 ## Removing a study
 
-- A study can be unregistered from the investigation by using `arc s unregister`. 
+- A study can be unregistered from the investigation by using `arc s unregister`.
 - A study folder structure can be deleted by using `arc s delete`.
 - To both, delete the assay folder structure and unregister it from the investigation `arc a remove` can be used.
 
@@ -110,6 +110,7 @@ If no study identifier is given, a study is created with the assay identifier as
 `arc s publication register -s GelBasedProteomicsWT -d 2021_ARC05_S01_01tmp --authorlist "John P Doe; Eva Muller" --title "abc"`
 
 ### Listing and inspecting registered publications
+
 - Registered publications can be listed by `arc s publication list`.
 - To get detailed information about a specific entry use `arc s publication get`. If no arguments are specified an editor will request the study identifier and doi to print all registered information into the shell.
 
@@ -122,15 +123,15 @@ If no study identifier is given, a study is created with the assay identifier as
 `arc s publication update -s "GelBasedProteomicsWT" -d 2021_ARC05_Pub01tmp --title "The peroxisomal Flux-Compensator-Cycle is heavily dependent on P09 accumulation under redox stress.".`
 
 ### Removing a publication
+
 - A publication can be removed from a study using `arc s publication unregister`. An editor will request the study identifier and DOI to unregister the publication from the study in the isa.investigation file.
 - Instead of using the editor, the following command can be used:  
 `arc s publication unregister -s GelBasedProteomicsWT -d 2021_ARC05_Pub01tmp`
 
-
-## 5.7 Registering Design Types to Studies
+## Registering Design Types to Studies
 
 - The design type of your study can be registered using `arc s design register`.
   - If no further arguments are specified an editor opens that asks for a term allowing the classification of the study based on the overall experimental design, e.g cross-over design or parallel group design.
   - Additionally you are asked to supply the accession number from the term source and the Term Source REF if available.
-- Instead of using the editor, the following command can be used: 
+- Instead of using the editor, the following command can be used:
 `arc s design register -s "GelBasedProteomicsWT" -d "YourDesignType"`
