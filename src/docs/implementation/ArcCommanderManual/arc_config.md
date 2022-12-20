@@ -3,6 +3,7 @@ layout: docs
 title: "ARC User configuration"
 published: 2022-12-20
 add toc: true
+add support: false
 add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
 

@@ -5,6 +5,7 @@ published: 2022-12-20
 author: Martin Kuhl
 author_github: martin-kuhl
 add toc: false
+add support: false
 add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
 
