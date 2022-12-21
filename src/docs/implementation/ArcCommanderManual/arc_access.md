@@ -24,3 +24,8 @@ arc remote accesstoken get -s https://git.nfdi4plants.org
 > :bulb: This step needs to be done only once per machine, unless you delete the token from your DataHUB account.
 
 A window within your browser will open, asking for your DataPLANT login. In case you are already logged in, the browser will directly display a plain `Success` message to you.
+
+<!-- TODO
+Andrea: I suggest to directly add a linnk to the trouble shooting for authentication problems...
+In case an authentification error occured please follow these instructions for the authentification step. (link to the FAQ for the access TOKEN)
+ -->
