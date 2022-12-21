@@ -52,19 +52,50 @@
         <div slot="title">
           ARC Commander Manual
         </div>
-        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/01_Before-we-start.html">Before we start</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/02_DataPLANT_access.html">DataHUB access</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/03_ARC-initialization.html">ARC Initialization</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/04_Investigation.html">Investigation</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/05_Study.html">Study</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/06_Assay.html">Assay</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/07_ARC-Synchronization.html">ARC Synchronization</h1>
-<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/08_ARC-Export.html">ARC export</h1>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/index.html">Welcome</h1>
 
       </nfdi-sidebar-element>
       <nfdi-sidebar-element slot="sidebar" isActive="true">
         <div slot="title">
-          Back to knowledgebase
+          Setup
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_installation_dependencies.html">Installing Dependencies</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/git_config.html">Configure Git</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_installation.html">Installing the ARC Commander</h1>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_installation_windows.html">Windows</h2>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_installation_macos.html">MacOS</h2>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_installation_linux.html">Linux</h2>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_access.html">DataHUB Access</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_usage_notes.html">Before we start</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Central Functions
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_initialization.html">Initialize</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_get.html">Clone</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_connect.html">Connect</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_synchronization.html">Synchronize</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_config.html">Configure</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_branch.html">Branch</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          ISA Metadata Functions
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_isa.html">ISA Metadata</h1>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_isa_investigation.html">Investigation</h2>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_isa_study.html">Study</h2>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_isa_assay.html">Assay</h2>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_update.html">Update</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/arc_export.html">Export</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          🔙 to Knowledge Base
         </div>
         <h1 slot="inner" href="/nfdi4plants.knowledgebase/index.html">Introduction</h1>
 
@@ -76,13 +107,15 @@
         last updated at 2022-12-13
       </i>
       <nfdi-toc></nfdi-toc>
-      <p>An installation of <a href="https://git-scm.com/downloads">git</a> and <a href="https://git-lfs.github.com/">git LFS</a> is mandatory for ARC Commander usage. Whenever submitting a command that relies on a git functionality, the Commander will check for presence of git and git LFS. If not installed, the respective command will result in an error. Throughout the installation setup of git, the user has the possibility to install git LFS. Git LFS can also be downloaded manually <a href="https://git-lfs.github.com/">here</a>.</p>
-<ul>
+      <ul>
 <li>For all following steps it is assumed, that you opened a shell within a directory you want to add an ARC in. In this example it is &quot;C:\Users\userA\source\repos\ArcTutorial&quot;.</li>
 <li>Note that each input that contains non-literal characters must be encapsulated in quotation marks when entered within the shell. This also applies when using the editor for numerals that are no numbers (dates, phone numbers, etc.).</li>
 <li>Furthermore, <code>&lt;arc&gt;</code> defines the path to the ArcCommander.exe (eg. &quot;C:\Users\userA\source\repos\ArcCommander\ArcCommander.exe&quot;).</li>
 <li>Every input can be entered by using the shell. For user friendly experience, an editor may pop up if no arguments are given. After entering the required values, save and close the editor.</li>
 </ul>
+<blockquote>
+<p>⚠️ Note: We strongly recommend to read the in-depth guides to the ARC Commander on the following pages!</p>
+</blockquote>
 
       <h3>
         DataPLANT Support
@@ -101,7 +134,7 @@
         </span>
       </div>
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/01_Before-we-start.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/arc_usage_notes.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>

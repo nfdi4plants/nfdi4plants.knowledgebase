@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - ARC Commander Manual
+      DataPLANT documentation - Working on an ARC branch
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -101,24 +101,37 @@
 
       </nfdi-sidebar-element>
       <h1 class="front-header">
-        ARC Commander Manual
+        Working on an ARC branch
       </h1>
       <i class="help">
         last updated at 2022-12-13
       </i>
-      <p>Welcome to the ARC Commander Manual.
-Please explore the sections on the left to find guides on</p>
+      <nfdi-h2 id="challenge">Challenge</nfdi-h2>
 <ul>
-<li>Setup and Installation to use the ARC Commander,</li>
-<li>Central Functions to work with your ARC, and</li>
-<li>Functions to fill and work on ISA Metadata within your ARC.</li>
+<li>No direct access rights to the main branch (which can be handled via the <a href="../DataHub.md">DataHUB</a>) or</li>
+<li>Many people working on the same repository, making direct pushing to main branch chaotic.</li>
 </ul>
+<nfdi-h2 id="solution">Solution</nfdi-h2>
+<p>Work on a second branch and contribute to the main branch using merge/pull requests</p>
+<nfdi-h2 id="workflow">Workflow</nfdi-h2>
+<ol>
+<li>Use <code>arc get</code> to get the main branch of the repository.</li>
+<li>Work on the ARC.</li>
+<li>Use <code>arc sync -b SecondBranchName</code>.</li>
+</ol>
 <blockquote>
-<p><strong>Developers</strong>, please check out the <a href="https://nfdi4plants.github.io/arcCommander-docs/">ARC Commander Dev Docs</a>.</p>
+<p>💡 This will create a commit with your newest changes and push the commit to a new branch with the given name. When you finished editing your ARC, you can merge your progress into the main branch.</p>
+</blockquote>
+<nfdi-h2 id="git-status">Git status</nfdi-h2>
+<p>You can check on which branch you are currently working on and the status of this branch by using</p>
+<nfdi-code class="language-bash">git status
+</nfdi-code>
+<blockquote>
+<p>💡 This will print to the console, if you are behind, up to date, or ahead of the main branch.</p>
 </blockquote>
 
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/index.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/arc_branch.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>

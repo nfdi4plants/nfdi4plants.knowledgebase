@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - ARC Commander Manual
+      DataPLANT documentation - Clone an ARC from the DataHUB
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -101,24 +101,27 @@
 
       </nfdi-sidebar-element>
       <h1 class="front-header">
-        ARC Commander Manual
+        Clone an ARC from the DataHUB
       </h1>
       <i class="help">
-        last updated at 2022-12-13
+        last updated at 2022-12-20
       </i>
-      <p>Welcome to the ARC Commander Manual.
-Please explore the sections on the left to find guides on</p>
-<ul>
-<li>Setup and Installation to use the ARC Commander,</li>
-<li>Central Functions to work with your ARC, and</li>
-<li>Functions to fill and work on ISA Metadata within your ARC.</li>
-</ul>
+      <p>Using <code>arc get -r</code> followed by a URL + &quot;.git&quot; enables you to clone an already existing ARC as a local repository, e.g.,</p>
+<nfdi-code class="language-bash">arc get -r https://github.com/nfdi4plants/ARC.git
+</nfdi-code>
 <blockquote>
-<p><strong>Developers</strong>, please check out the <a href="https://nfdi4plants.github.io/arcCommander-docs/">ARC Commander Dev Docs</a>.</p>
+<p>⚠️ In previous versions of the ARC Commander, the subcommand <code>get</code> allowed you to retrieve information from the ARC, e.g., <code>arc assay get</code> or <code>arc study person get</code>.<br />
+This function is now available using the command <code>show</code>, e.g. <code>arc assay show</code> or <code>arc study person show</code>.</p>
 </blockquote>
+<!-- TODO 
+
+Andrea: Should we already mention the new lfs flag to prevent bad experience due to downloading very/too big shared ARCs?
+Also, for arc get, the authentification problem might occur or re-occur when the access TOKEN is expired as somebody set it like this. Therefore, the respective link would be also of interest here.
+
+ -->
 
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/index.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/arc_get.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>

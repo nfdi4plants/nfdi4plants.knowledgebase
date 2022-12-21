@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - How-To: Synchronize DataHUB ARCs via GitHub Desktop
+      DataPLANT documentation - ARC Commander QuickStart (Expert Version)
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -90,83 +90,37 @@
         
       </nfdi-sidebar-element>
       <h1 class="front-header">
-        How-To: Synchronize DataHUB ARCs via GitHub Desktop
+        ARC Commander QuickStart (Expert Version)
       </h1>
       <i class="help">
-        last updated at 2022-07-01
+        last updated at 2022-12-20
       </i>
-      <nfdi-h2 id="goal">Goal</nfdi-h2>
-<p>Use <a href="https://desktop.github.com/">GitHub Desktop</a> to synchronize ARCs between the DataHUB and your local machine.
-GitHub Desktop is a user-friendly software to help you synchronize (pull, commit, push, ...) and track and communicate changes (diff, pull request, ...) git repositories without memorizing and executing the git commands in your command line.</p>
+      <nfdi-h2 id="checkpoint">Checkpoint</nfdi-h2>
+<p>✅ You know how to use a command line or terminal<br />
+✅ You have created an ARC before<br />
+✅ The latest version of the <a href="https://github.com/nfdi4plants/arcCommander/releases">ARC Commander</a> as well as <a href="https://git-scm.com/downloads">git</a> and <a href="https://git-lfs.github.com/">git LFS</a> are installed on your computer<br />
+✅ You have a <a href="https://register.nfdi4plants.org">DataPLANT</a> account<br />
+✅ Your computer is linked to the <a href="https://git.nfdi4plants.org">DataHUB</a> via an ssh key or a personal access token</p>
 <blockquote>
-<p>Note: This authenticates your local GitHub Desktop to communicate with the DataHUB.
-You need to do this only once per machine (unless you specify an expiration date in step 4)</p>
+<p>🚀 Voila! You are ready to follow these few steps to create a minimal ARC sharable via DataPLANT's DataHUB.</p>
 </blockquote>
-<nfdi-h2 id="steps">Steps</nfdi-h2>
 <ol>
-<li>Download <a href="https://desktop.github.com/">GitHub Desktop</a></li>
-<li>Sign in to the <a href="https://git.nfdi4plants.org/">DataHUB</a></li>
-<li>Go to the <a href="https://git.nfdi4plants.org/-/profile/personal_access_tokens">Access Tokens</a> settings</li>
-<li>Fill all required information
-<ol>
-<li>Token name: e.g. &quot;GitHub Desktop&quot;</li>
-<li>Expiration date (optional)</li>
-<li>Select scope: <code>api</code></li>
+<li>Visit the <a href="https://git.nfdi4plants.org">DataHUB</a>, create a new repository and copy the URL to your ARC (<code>https://git.nfdi4plants.org/&lt;YourUserName&gt;/&lt;YourARC&gt;.git</code>) to your clipboard.</li>
+<li>Replace the <code>&lt;variables&gt;</code> in the following code block with your information and execute it in your command line.</li>
 </ol>
-</li>
-</ol>
-<p><img src="../img/datahub_accessToken.png" alt="Access Token" /></p>
-<ol start="5">
-<li>Click &quot;Create personal access token&quot;</li>
-<li><code>Your new personal access token</code> appears on top. Copy it somewhere for later use.</li>
-</ol>
-<p><img src="../img/datahub_accessToken_02.png" alt="Access Token" /></p>
-<ol start="7">
-<li>Within the DataHUB, go to your ARC.</li>
-<li>Click on <code>Clone</code> and copy the HTTPS url, e.g. <code>https://git.nfdi4plants.org/&lt;yourUserName&gt;/&lt;yourArc&gt;.git</code></li>
-</ol>
-<p><img src="../img/datahub_clone.png" alt="DataHUB Clone" /></p>
-<ol start="9">
-<li>Open GitHub Desktop.</li>
-<li>Select <code>File</code> → <code>Clone repository</code></li>
-</ol>
-<p><img src="../img/githubDesktop_clone.png" alt="GitHub Desktop Clone" /></p>
-<ol start="11">
-<li>Select the tab <code>URL</code> on top.</li>
-<li>Paste the HTTPS link to your ARC (step 8) inside the URL field and select the destination folder, where your ARC will be stored locally. Click <code>Clone</code></li>
-<li>A pop-up window &quot;Authentication Failed&quot; will ask you for Username and Password. Fill in the
-<ol>
-<li>Username: this is your DataHUB username. You can find it under your avatar in the DataHUB</li>
-<li>Password: paste the access token copied in step 6.</li>
-</ol>
-</li>
-</ol>
-<p><img src="../img/githubDesktop_accessToken.png" alt="GitHub Desktop Clone" /></p>
-<ol start="14">
-<li><p>Click <code>Save and Retry</code>.</p>
-</li>
-<li><p>Your ARC is now available in your GitHub Desktop.</p>
-</li>
-</ol>
+<nfdi-code class="language-bash"># Create and navigate to your ARC folder
+mkdir &lt;path/to/YourARCFolder>
+cd &lt;path/to/YourARCFolder>
 
-      <h3>
-        DataPLANT Support
-      </h3>
+# Setup the ARC structure with one study and one assay
+arc init
+arc i create -i &lt;YourInvestigationID>
+arc a add -s &lt;YourStudyID> -a &lt;YourAssayID>
+arc sync -f -r https://git.nfdi4plants.org/&lt;YourUserName>/&lt;YourARC> -m "initialize ARC structure"
+</nfdi-code>
+
       <div>
-        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
-        <a href="https://support.nfdi4plants.org">
-          helpdesk
-        </a>
-         or by contacting us 
-        <span style="display: inline-flex; flex-wrap: wrap;">
-          <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
-            directly
-          </a>
-          .
-        </span>
-      </div>
-      <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/tutorials/DataHub_GitHubDesktop.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/QuickStart_arcCommander_expert.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>

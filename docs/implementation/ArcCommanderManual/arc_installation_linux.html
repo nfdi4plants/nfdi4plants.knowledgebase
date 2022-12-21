@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - ARC Commander Manual
+      DataPLANT documentation - Installing the ARC Commander - Linux
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -101,24 +101,45 @@
 
       </nfdi-sidebar-element>
       <h1 class="front-header">
-        ARC Commander Manual
+        Installing the ARC Commander - Linux
       </h1>
       <i class="help">
-        last updated at 2022-12-13
+        last updated at 2022-12-20
       </i>
-      <p>Welcome to the ARC Commander Manual.
-Please explore the sections on the left to find guides on</p>
-<ul>
-<li>Setup and Installation to use the ARC Commander,</li>
-<li>Central Functions to work with your ARC, and</li>
-<li>Functions to fill and work on ISA Metadata within your ARC.</li>
-</ul>
+      <ol>
+<li><p>Download the latest ARC Commander release</p>
+<nfdi-code class="language-bash">wget https://github.com/nfdi4plants/arcCommander/releases/download/v0.4.0-linux.x64/arc
+</nfdi-code>
+</li>
+<li><p>Make it executable</p>
+<nfdi-code class="language-bash">chmod u+x arc
+</nfdi-code>
+</li>
+<li><p>Move to suitable place (e.g. in your home directory or to <code>/home/bin/</code> to make it accessible for all users)</p>
+<nfdi-code class="language-bash">if ! [ -d "$HOME/bin" ]; then mkdir "$HOME/bin"; fi # If it does not exist, create a folder `bin` in your home directory. 
+mv arc $HOME/bin/ # move executable to that folder
+</nfdi-code>
+</li>
+<li><p>You might have to start a fresh terminal or <code>source ~/.profile</code></p>
+</li>
+<li><p>Test that ARC Commander is properly installed</p>
+<nfdi-code class="language-bash">arc --version # check the current version 
+</nfdi-code>
+</li>
+</ol>
+<p>You should see the following or similar message:</p>
 <blockquote>
-<p><strong>Developers</strong>, please check out the <a href="https://nfdi4plants.github.io/arcCommander-docs/">ARC Commander Dev Docs</a>.</p>
+<p>Start processing parameterless command.<br />
+Start Arc Version<br />
+v0.4.0
+Done processing command.</p>
+</blockquote>
+<blockquote>
+<p>💡 A global config file will be created the first time you use the ARC Commander in the folder <code>~/.config/DataPLANT/ArcCommander/</code></p>
 </blockquote>
 
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/index.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/arc_installation_linux.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>

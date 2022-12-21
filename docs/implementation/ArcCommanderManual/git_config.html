@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - ARC Commander Manual
+      DataPLANT documentation - Configure a Git User
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -101,24 +101,43 @@
 
       </nfdi-sidebar-element>
       <h1 class="front-header">
-        ARC Commander Manual
+        Configure a Git User
       </h1>
       <i class="help">
-        last updated at 2022-12-13
+        last updated at 2022-12-20
       </i>
-      <p>Welcome to the ARC Commander Manual.
-Please explore the sections on the left to find guides on</p>
-<ul>
-<li>Setup and Installation to use the ARC Commander,</li>
-<li>Central Functions to work with your ARC, and</li>
-<li>Functions to fill and work on ISA Metadata within your ARC.</li>
-</ul>
+      <p><code>Git</code> always signs commits with a <code>name</code> and <code>e-mail</code> address of the user. These are then also used by <code>GitLab</code> and <code>GitHub</code> to associate the commits to user accounts.</p>
+<nfdi-h2 id="checkpoint">Checkpoint</nfdi-h2>
+<p>Check the git user configuration on your system, by executing</p>
+<nfdi-code class="language-bash">git config --global --get-regexp user
+</nfdi-code>
+<p>This should prompt two lines:<br />
+<code>user.name &lt;Your Name&gt;</code><br />
+<code>user.email &lt;Your Email&gt;</code></p>
+<p>If this does not prompt anything or if you want to change the configuration, follow the next steps.</p>
+<nfdi-h2 id="global-git-configuration">Global Git Configuration</nfdi-h2>
+<p>Set the git configuration globally (for your system):</p>
+<ol>
+<li>Your name</li>
+</ol>
+<nfdi-code class="language-bash">git config --global user.name &lt;Your Name>
+</nfdi-code>
+<ol start="2">
+<li>Your email address</li>
+</ol>
+<nfdi-code class="language-bash">git config --global user.email &lt;Your Email>
+</nfdi-code>
+<ol start="3">
+<li>Check it</li>
+</ol>
+<nfdi-code class="language-bash">git config --global --get-regexp user
+</nfdi-code>
 <blockquote>
-<p><strong>Developers</strong>, please check out the <a href="https://nfdi4plants.github.io/arcCommander-docs/">ARC Commander Dev Docs</a>.</p>
+<p>💡 Configuration needs to be done only once after installation of git on your system.</p>
 </blockquote>
 
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/index.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/git_config.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>

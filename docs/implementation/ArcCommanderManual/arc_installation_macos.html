@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - ARC Commander Manual
+      DataPLANT documentation - Installing the ARC Commander - MacOS
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -101,24 +101,57 @@
 
       </nfdi-sidebar-element>
       <h1 class="front-header">
-        ARC Commander Manual
+        Installing the ARC Commander - MacOS
       </h1>
       <i class="help">
-        last updated at 2022-12-13
+        last updated at 2022-12-20
       </i>
-      <p>Welcome to the ARC Commander Manual.
-Please explore the sections on the left to find guides on</p>
-<ul>
-<li>Setup and Installation to use the ARC Commander,</li>
-<li>Central Functions to work with your ARC, and</li>
-<li>Functions to fill and work on ISA Metadata within your ARC.</li>
-</ul>
+      <ol>
+<li><p>Open a Terminal (Applications → Utilities → Terminal)</p>
+</li>
+<li><p>Copy/paste the following commands into your terminal and execute them to (a) download the latest ARC Commander release, (b) change permissions to make the ARC Commander executable and (c) move the ARC Commander program to a location from where it is executable via the terminal:</p>
+<nfdi-code class="language-bash">curl -L https://github.com/nfdi4plants/arcCommander/releases/download/v0.4.0-osx.x64/arc > arc
+chmod u+x ./arc
+mv ./arc /usr/local/bin/
+</nfdi-code>
+</li>
+<li><p>Run ARC Commander from the terminal by executing:</p>
+<nfdi-code class="language-bash">arc
+</nfdi-code>
+</li>
+<li><p>MacOS security note: On first execution, MacOS will not allow arc to be run. Instead it opens a pop-up:</p>
 <blockquote>
-<p><strong>Developers</strong>, please check out the <a href="https://nfdi4plants.github.io/arcCommander-docs/">ARC Commander Dev Docs</a>.</p>
+<p>&quot;arc&quot; cannot be opened because it is from an unidentified developer</p>
+</blockquote>
+</li>
+<li><p>Open the Security Panel in system Preferences (Applications → System Preferences → &quot;Security &amp; Privacy&quot;) or by executing the following command in your terminal:</p>
+<nfdi-code class="language-bash">open "x-apple.systempreferences:com.apple.preference.security"
+</nfdi-code>
+<p>In the &quot;General&quot; tab click the bottom-right button &quot;Allow Anyway&quot; right next to</p>
+<blockquote>
+<p>arc was blocked from use because it is not from an identified developer.</p>
+</blockquote>
+</li>
+<li><p>Head back to the terminal and execute <code>arc</code> again. Another pop-up will ask you to confirm by clicking &quot;Open&quot;.</p>
+</li>
+<li><p>Check that arc is properly installed by executing</p>
+<nfdi-code class="language-bash">arc --version
+</nfdi-code>
+</li>
+</ol>
+<p>You should see the following or similar message:</p>
+<blockquote>
+<p>Start processing parameterless command.<br />
+Start Arc Version<br />
+v0.4.0
+Done processing command.</p>
+</blockquote>
+<blockquote>
+<p>💡 A global config file will be created the first time you use the ARC Commander in the folder <code>~/.config/DataPLANT/ArcCommander/</code></p>
 </blockquote>
 
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/index.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/arc_installation_macos.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>

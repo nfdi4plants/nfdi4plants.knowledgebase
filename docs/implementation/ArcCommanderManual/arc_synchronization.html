@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - ARC Commander Manual
+      DataPLANT documentation - Sychronize an ARC
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -101,24 +101,30 @@
 
       </nfdi-sidebar-element>
       <h1 class="front-header">
-        ARC Commander Manual
+        Sychronize an ARC
       </h1>
       <i class="help">
         last updated at 2022-12-13
       </i>
-      <p>Welcome to the ARC Commander Manual.
-Please explore the sections on the left to find guides on</p>
+      <p>The command <code>arc sync</code> handles multiple operations for your ARC in one step. It will</p>
 <ul>
-<li>Setup and Installation to use the ARC Commander,</li>
-<li>Central Functions to work with your ARC, and</li>
-<li>Functions to fill and work on ISA Metadata within your ARC.</li>
+<li>track LFS files,</li>
+<li>stage changes,</li>
+<li>commit changes,</li>
+<li>pull changes from the remote repository, and</li>
+<li>push changes from your local repository.</li>
 </ul>
-<blockquote>
-<p><strong>Developers</strong>, please check out the <a href="https://nfdi4plants.github.io/arcCommander-docs/">ARC Commander Dev Docs</a>.</p>
-</blockquote>
+<p>Using the flag <code>-m</code> allows you to add a message to your synchronization, e.g.,</p>
+<nfdi-code>arc sync -m "addition of proteomics dataset"
+</nfdi-code>
+<p>If no message was added, the Commander will generate a message by itself.</p>
+<!-- TODO
+
+Andrea: link to workaround / FAQ 
+ -->
 
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/index.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/arc_synchronization.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>

@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - ARC Commander Manual
+      DataPLANT documentation - Installing the ARC Commander - Windows
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -101,24 +101,37 @@
 
       </nfdi-sidebar-element>
       <h1 class="front-header">
-        ARC Commander Manual
+        Installing the ARC Commander - Windows
       </h1>
       <i class="help">
-        last updated at 2022-12-13
+        last updated at 2022-12-20
       </i>
-      <p>Welcome to the ARC Commander Manual.
-Please explore the sections on the left to find guides on</p>
+      <p>Head to the ARC Commander's GitHub <a href="https://github.com/nfdi4plants/arcCommander/releases">release page</a>. Download the newest release for Windows.</p>
+<ol>
+<li>In Windows Explorer, head over to the folder where you downloaded the ARC Commander, e.g.
+<img src="https://user-images.githubusercontent.com/47781170/118627514-13e63f00-b7cc-11eb-95cb-1bf74a355cde.png" alt="image" /></li>
+<li>You can move the .exe to a desired folder, e.g. to your personal folder</li>
+<li>Add the folder with the ARC Commander to your PATH:
 <ul>
-<li>Setup and Installation to use the ARC Commander,</li>
-<li>Central Functions to work with your ARC, and</li>
-<li>Functions to fill and work on ISA Metadata within your ARC.</li>
+<li>Open the Start Menu, type in <code>path</code> and click on <em>Edit the system environment variables</em>
+<img src="https://user-images.githubusercontent.com/47781170/119674721-b8a3f480-be3c-11eb-9982-e3c0fa191f05.png" alt="image" /></li>
+<li>Click on <em>Environment Variables...</em>, click on <em>Path</em> and on <em>Edit...</em> in the tab <em>User variables for <your username></em>, click on <em>New</em> and type in the full path to your folder as seen in the example below:
+<img src="https://user-images.githubusercontent.com/47781170/119674652-a9bd4200-be3c-11eb-81f8-72f1198842ef.png" alt="image" /></li>
+<li>This allows you to start the ARC Commander from any folder</li>
+<li><strong>Please make sure that you do not have any blank spaces in your path</strong></li>
 </ul>
+</li>
+<li>Navigate to a folder in which you want to initialize an ARC</li>
+<li>Open the Command Prompt (CMD) via typing in <code>cmd</code> in the folder address, press Enter
+<img src="https://user-images.githubusercontent.com/47781170/119680874-dd4e9b00-be41-11eb-8faf-ed699c827395.png" alt="image" /></li>
+<li>Run the ARC Commander from the CMD by executing <code>arc</code></li>
+</ol>
 <blockquote>
-<p><strong>Developers</strong>, please check out the <a href="https://nfdi4plants.github.io/arcCommander-docs/">ARC Commander Dev Docs</a>.</p>
+<p>💡 A global config file will be created the first time you use the ARC Commander in the folder <code>&lt;YourDrive&gt;:\Users\&lt;Username&gt;\AppData\Roaming\DataPLANT\ArcCommander\</code></p>
 </blockquote>
 
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/index.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/arc_installation_windows.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>

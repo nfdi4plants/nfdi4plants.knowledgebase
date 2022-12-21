@@ -71,8 +71,9 @@
         <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">Annotated Research Context</h1>
 <h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_arc.html">User Journey</h2>
 <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</h1>
-<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_arcCommander.html">QuickStart</h2>
 <h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/index.html">Manual</h2>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_arcCommander.html">QuickStart</h2>
+<!-- ## QuickStart (experts):/docs/implementation/QuickStart_arcCommander_expert.html -->
 <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/Swate.html">Swate</h1>
 <h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_swate.html">QuickStart</h2>
 <h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/AnnotationPatterns.html">Best Practices For Data Annotation</h2>
@@ -86,10 +87,7 @@
         <div slot="title">
           -->
         </div>
-        <!-- 
-Training & Tutorials# DataPLANT Setup:/docs/tutorials/DataPlant_Setup.html 
--->
-
+        
       </nfdi-sidebar-element>
       <h1 class="front-header">
         ARC Commander QuickStart
@@ -121,7 +119,6 @@ Training & Tutorials# DataPLANT Setup:/docs/tutorials/DataPlant_Setup.html
 <li><a href="#invite-collaborators">Invite collaborators</a></li>
 </ul>
 </li>
-<li><a href="#the-minimalists-arc-quickstart">The Minimalist's ARC-QuickStart</a></li>
 </ul>
 <nfdi-h2 id="environment-and-setup">Environment and setup</nfdi-h2>
 <nfdi-h3 id="the-command-line">The command line</nfdi-h3>
@@ -266,31 +263,6 @@ Briefly:</p>
 <blockquote>
 <p>Note: A detailed usage instruction for the ARC Commander can be found <a href="https://github.com/nfdi4plants/arcCommander/wiki/Detailed-usage-instruction">here</a>.</p>
 </blockquote>
-<div style="page-break-after: always;"></div>
-<div style="page-break-after: always;"></div>
-<nfdi-h2 id="the-minimalists-arc-quickstart">The Minimalist's ARC-QuickStart</nfdi-h2>
-<ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> You know how to use a command line</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> You have created an ARC before</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> The latest version of the <a href="https://github.com/nfdi4plants/arcCommander/releases">ARC Commander</a> as well as <a href="https://git-scm.com/downloads">git</a> and <a href="https://git-lfs.github.com/">git LFS</a> are installed on your computer</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> You have a <a href="https://register.nfdi4plants.org">DataPLANT</a> account</li>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Your computer is linked to the <a href="https://git.nfdi4plants.org">DataHUB</a> via an ssh key or a personal access token.</li>
-</ul>
-<p>Voila! You are ready to follow these few steps to create a minimal ARC sharable via DataPLANT's DataHUB:</p>
-<ol>
-<li>Visit the <a href="https://git.nfdi4plants.org">DataHUB</a>, create a new repository and copy the URL to your clipboard.</li>
-<li>Replace the <code>&lt;variables&gt;</code> in the following code block with your information and execute it in your command line.</li>
-</ol>
-<nfdi-code class="language-bash"># Create and navigate to your ARC folder
-mkdir &lt;YourARC>
-cd &lt;YourARC>
-
-# Setup the ARC structure with one study and one assay
-arc init
-arc i create -i &lt;YourInvestigation>
-arc a add -s &lt;YourStudy> -a &lt;YourAssay>
-arc sync -f -r https://git.nfdi4plants.org/&lt;YourUserName>/&lt;YourARC> -m "initialize ARC structure"
-</nfdi-code>
 
       <h3>
         DataPLANT Support

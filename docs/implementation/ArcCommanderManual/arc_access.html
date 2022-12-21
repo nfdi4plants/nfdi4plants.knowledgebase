@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - ARC Commander Manual
+      DataPLANT documentation - DataHUB access for ARC synchronization
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -101,24 +101,32 @@
 
       </nfdi-sidebar-element>
       <h1 class="front-header">
-        ARC Commander Manual
+        DataHUB access for ARC synchronization
       </h1>
       <i class="help">
-        last updated at 2022-12-13
+        last updated at 2022-12-20
       </i>
-      <p>Welcome to the ARC Commander Manual.
-Please explore the sections on the left to find guides on</p>
-<ul>
-<li>Setup and Installation to use the ARC Commander,</li>
-<li>Central Functions to work with your ARC, and</li>
-<li>Functions to fill and work on ISA Metadata within your ARC.</li>
-</ul>
-<blockquote>
-<p><strong>Developers</strong>, please check out the <a href="https://nfdi4plants.github.io/arcCommander-docs/">ARC Commander Dev Docs</a>.</p>
+      <blockquote>
+<p>✅ In case you are not a member of DataPLANT yet, please <a href="https://register.nfdi4plants.org">sign up</a>. Afterwards, you will be granted access to DataPLANT’s <a href="https://git.nfdi4plants.org">DataHUB</a>. The DataHUB allows you to share your ARCs with registered lab or project partners.</p>
 </blockquote>
+<nfdi-h2 id="arc-commander-authentication">ARC Commander authentication</nfdi-h2>
+<p>After successful registration, create and set an access token for ARC Commander synchronization using</p>
+<nfdi-code class="language-bash">arc remote accesstoken get -s https://git.nfdi4plants.org
+</nfdi-code>
+<blockquote>
+<p>💡 This authenticates your machine to communicate with your personal DataHUB account</p>
+</blockquote>
+<blockquote>
+<p>💡 This step needs to be done only once per machine, unless you delete the token from your DataHUB account.</p>
+</blockquote>
+<p>A window within your browser will open, asking for your DataPLANT login. In case you are already logged in, the browser will directly display a plain <code>Success</code> message to you.</p>
+<!-- TODO
+Andrea: I suggest to directly add a linnk to the trouble shooting for authentication problems...
+In case an authentification error occured please follow these instructions for the authentification step. (link to the FAQ for the access TOKEN)
+ -->
 
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/index.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/arc_access.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>

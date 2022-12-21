@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - ARC Commander Manual
+      DataPLANT documentation - Connect an ARC to the DataHUB
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -101,24 +101,24 @@
 
       </nfdi-sidebar-element>
       <h1 class="front-header">
-        ARC Commander Manual
+        Connect an ARC to the DataHUB
       </h1>
       <i class="help">
         last updated at 2022-12-13
       </i>
-      <p>Welcome to the ARC Commander Manual.
-Please explore the sections on the left to find guides on</p>
-<ul>
-<li>Setup and Installation to use the ARC Commander,</li>
-<li>Central Functions to work with your ARC, and</li>
-<li>Functions to fill and work on ISA Metadata within your ARC.</li>
-</ul>
+      <p>In case you have not yet connected your local repository to a remote one, you can specify the remote repository with the flag <code>--repositoryaddress</code> or <code>-r</code> in combination with a URL + &quot;.git&quot;, e.g.,</p>
+<nfdi-code class="language-bash">arc sync -r https://github.com/nfdi4plants/ARC/tree/Example-ARC.git
+</nfdi-code>
 <blockquote>
-<p><strong>Developers</strong>, please check out the <a href="https://nfdi4plants.github.io/arcCommander-docs/">ARC Commander Dev Docs</a>.</p>
+<p>💡 If your local repository is not connected to a remote repository, <code>arc sync</code> will only track LFS files and stage and commit changes to your local repository. The Commander will not pull or push any changes.</p>
 </blockquote>
+<!-- TODO
+
+Andrea: link to workaround / FAQ 
+ -->
 
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/index.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/arc_connect.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>

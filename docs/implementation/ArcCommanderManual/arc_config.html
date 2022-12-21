@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - ARC Commander Manual
+      DataPLANT documentation - Configure a git user locally for each ARC
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -101,24 +101,39 @@
 
       </nfdi-sidebar-element>
       <h1 class="front-header">
-        ARC Commander Manual
+        Configure a git user locally for each ARC
       </h1>
       <i class="help">
-        last updated at 2022-12-13
+        last updated at 2022-12-20
       </i>
-      <p>Welcome to the ARC Commander Manual.
-Please explore the sections on the left to find guides on</p>
-<ul>
-<li>Setup and Installation to use the ARC Commander,</li>
-<li>Central Functions to work with your ARC, and</li>
-<li>Functions to fill and work on ISA Metadata within your ARC.</li>
-</ul>
+      <nfdi-toc></nfdi-toc>
+      <!-- ### 
+
+You have the option to set this information globally, but you can also use different signatures for different repositories. E.g., when you develop software on `GitHub` and work on `ARCs` on the `nfdi4plants GitLab`.
+
+For this case the `ArcCommander` has a set of features to ease your pain.
+
+1. First set the information you want to use `globally` in the `ARC Commander config`: 
+   - Either using `arc config edit -g` and adding the following fields: 
+      - general.gitname="Full Name of User"
+      - general.gitemail="Email of user"
+   - or adding them directly in the cli:
+      - `arc config set -g -n "general.gitname" -v "Full Name of User"`
+      - `arc config set -g -n "general.gitemail" -v "Email of user"`
+2. Afterwards, just use `arc config setgituser` for each ARC you download or create. -->
+<p>Some users might want to use different signatures for different repositories, e.g., developing software on GitHub and working on ARCs on <a href="https://git.nfdi4plants.org">the DataHUB</a>. Besides your global git configuration, you can store the information you want to use for editing ARCs within the ARC Commander config:</p>
+<nfdi-code class="language-bash">arc config set -g -n "general.gitname" -v "Name of choice"
+arc config set -g -n "general.gitemail" -v "Email of choice"
+</nfdi-code>
+<p>To transfer the information from the global ARC Commander config to the local git config of the ARC use</p>
+<nfdi-code class="language-bash">arc config setgituser
+</nfdi-code>
 <blockquote>
-<p><strong>Developers</strong>, please check out the <a href="https://nfdi4plants.github.io/arcCommander-docs/">ARC Commander Dev Docs</a>.</p>
+<p>💡 This will automatically transfer the info stored globally in the ARC Commander config to the local git config of the ARC.</p>
 </blockquote>
 
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/index.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/ArcCommanderManual/arc_config.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>
