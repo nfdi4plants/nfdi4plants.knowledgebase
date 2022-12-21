@@ -3,13 +3,15 @@ layout: docs
 title: "Assay"
 published: 2022-12-13
 add toc: true
+add support: false
 add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
 
-## 6.1 Addition of assays
-  **Note:** Make sure to close all isa.xlsx files before submitting a new command to the command line, as otherwise the information cannot be saved by the ARC Commander.
-- An assay may consist of experimental measuring data together with experimental protocols.
-Note: An assay identifier also sets the folder name, so ensure to avoid special characters!
+## Addition of assays
+
+> :warning: Make sure to close all isa.*.xlsx files before submitting a new command to the command line, as otherwise the information cannot be saved by the ARC Commander.
+
+- An assay may consist of experimentally measured data together with experimental protocols.
 - An assay folder structure can be created by using `arc a init`. Under assays an assay folder named after the assay identifier is created which includes:
   - dataset
   - protocol
@@ -17,6 +19,8 @@ Note: An assay identifier also sets the folder name, so ensure to avoid special 
   - README.md
 - An existing assay can be registered to the investigation by using `arc a register`.
 - To create the folder structure and afterwards register the new assay `arc a add` can be used. This command combines init and register.
+
+> :warning: An assay identifier also sets the folder name, so ensure to avoid special characters!
 
 |     Field                                 |     Description                                                                                                                                                                                                                                                                                                                    |     Input                   |
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
@@ -33,11 +37,12 @@ Note: An assay identifier also sets the folder name, so ensure to avoid special 
 If no study identifier is given, a study is created with the assay identifier as study identifier. Instead of using the editor, the following command can be used:  
 `arc a add -a GelBasedProteomicsM21 --measurementtype Proteomics --technologytype "Mass spectrometry" --technologyplatform "AB Sciex TT6600"`
 
-## 6.2 Listing and inspecting registered assays
+## Listing and inspecting registered assays
+
 - Registered assays can be listed by `arc a list`.
 - To get detailed information about a specific entry use `arc a get`. If no arguments are specified an editor will request study and assay identifier (mandatory) to print all registered information into the shell.
 
-## 6.3 Editing assay information
+## Editing assay information
 
 - An assay can be edited using `arc a edit`.
   - If no further arguments are specified an editor opens, that asks for the assay and study identifier that should be edited.
@@ -45,13 +50,16 @@ If no study identifier is given, a study is created with the assay identifier as
 - Instead of using the editor, the following command can be used. To circumvent editor pop ups, not `arc a edit`, but `arc a update` must be used:  
 `arc a update -s GelBasedProteomicsWT -a GelBasedProteomicsWT --technologyplatform "AB Sciex TT6600"`
 
-## 6.4 Removing assays
-_Note: To remove, unregister, or delete an assay both study identifier and assay identifier are required to ensure the correct assay is chosen._
+## Removing assays
+
+> :bulb: To remove, unregister, or delete an assay both study identifier and assay identifier are required to ensure the correct assay is chosen.
+
 - An assay can be unregistered from the investigation by using `arc a unregister`.
 - An assay folder structure can be deleted by using `arc a delete`.
 - To both, delete the assay folder structure and unregister it from the investigation `arc a remove` can be used.
 
-## 6.5 Moving assays
+## Moving assays
+
 - If an assay was mis-assigned to an incorrect study, or some assays should be grouped together (e.g. when a new study is created and some old assays would fit better to this new study), an assay can be moved from one study to another by using `arc a move`. After definition of the assay identifier together with old, and target study identifier, the assay is moved. If no study exist, that matches the given target study identifier, a new study is registered.
 - Instead of using the editor, the following command can be used:  
 `arc a move -s GelBasedProteomicsWT -a GelBasedProteomicsWT -t WTProteomics`

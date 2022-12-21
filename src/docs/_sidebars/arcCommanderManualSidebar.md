@@ -2,16 +2,38 @@
 ---
 
 ```ARC Commander Manual
-# Before we start:/docs/implementation/ArcCommanderManual/01_Before-we-start.html
-# DataHUB access:/docs/implementation/ArcCommanderManual/02_DataPLANT_access.html
-# ARC Initialization:/docs/implementation/ArcCommanderManual/03_ARC-initialization.html
-# Investigation:/docs/implementation/ArcCommanderManual/04_Investigation.html
-# Study:/docs/implementation/ArcCommanderManual/05_Study.html
-# Assay:/docs/implementation/ArcCommanderManual/06_Assay.html
-# ARC Synchronization:/docs/implementation/ArcCommanderManual/07_ARC-Synchronization.html
-# ARC export:/docs/implementation/ArcCommanderManual/08_ARC-Export.html
+# Welcome:/docs/implementation/ArcCommanderManual/index.html
 ```
 
-```Back to knowledgebase
+```Setup
+# Installing Dependencies:/docs/implementation/ArcCommanderManual/arc_installation_dependencies.html
+# Configure Git:/docs/implementation/ArcCommanderManual/git_config.html
+# Installing the ARC Commander:/docs/implementation/ArcCommanderManual/arc_installation.html
+## Windows:/docs/implementation/ArcCommanderManual/arc_installation_windows.html
+## MacOS:/docs/implementation/ArcCommanderManual/arc_installation_macos.html
+## Linux:/docs/implementation/ArcCommanderManual/arc_installation_linux.html
+# DataHUB Access:/docs/implementation/ArcCommanderManual/arc_access.html
+# Before we start:/docs/implementation/ArcCommanderManual/arc_usage_notes.html
+```
+
+```Central Functions
+# Initialize:/docs/implementation/ArcCommanderManual/arc_initialization.html
+# Clone:/docs/implementation/ArcCommanderManual/arc_get.html
+# Connect:/docs/implementation/ArcCommanderManual/arc_connect.html
+# Synchronize:/docs/implementation/ArcCommanderManual/arc_synchronization.html
+# Configure:/docs/implementation/ArcCommanderManual/arc_config.html
+# Branch:/docs/implementation/ArcCommanderManual/arc_branch.html
+```
+
+```ISA Metadata Functions
+# ISA Metadata:/docs/implementation/ArcCommanderManual/arc_isa.html
+## Investigation:/docs/implementation/ArcCommanderManual/arc_isa_investigation.html
+## Study:/docs/implementation/ArcCommanderManual/arc_isa_study.html
+## Assay:/docs/implementation/ArcCommanderManual/arc_isa_assay.html
+# Update:/docs/implementation/ArcCommanderManual/arc_update.html
+# Export:/docs/implementation/ArcCommanderManual/arc_export.html
+```
+
+```🔙 to Knowledge Base
 # Introduction:/index.html
 ```

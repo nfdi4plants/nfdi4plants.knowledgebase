@@ -3,19 +3,21 @@ layout: docs
 title: "Study"
 published: 2022-12-13
 add toc: true
+add support: false
 add sidebar: _sidebars/arcCommanderManualSidebar.md
 todo: Update design, factor, and protocol sections
 ---
 
-## 5.1 Addition of studies
-  **Note:** Make sure to close all isa.xlsx files before submitting a new command to the command line, as otherwise the information cannot be saved by the ARC Commander.
+## Adding a study
+
+> :warning: Make sure to close all isa.*.xlsx files before submitting a new command to the command line, as otherwise the information cannot be saved by the ARC Commander.
   
 - An investigation may contain several studies, which in turn can include multiple assays.
 - There is no need for a folder structure that represents a study since all data are associated with assays. Studies can be created to group related assays within an investigation. A study consists of a single isa.study.xlsx file, can be created by using `arc s init`.
 - An existing study can be registered to the investigation by using `arc s register`.
 - To create the isa.study file and afterwards register the new study `arc s add` can be used. This command combines init and register.
 
-_Note: A study identifier also defines the isa file name, so ensure to avoid special characters!_  
+> :warning: A study identifier also defines the isa file name, so ensure to avoid special characters!
 
 | Field                   | Description                                                                                                                                                                                             | Input                                                                                         |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -28,12 +30,12 @@ _Note: A study identifier also defines the isa file name, so ensure to avoid spe
 If no study identifier is given, a study is created with the assay identifier as study identifier. Instead of using the editor, the following command can be used:  
 `arc s add --identifier Test --title "Gel-based proteomics of wild type cells" --description " Study to investigate the proteins of wild type yeast cells under standard growth conditions."`
 
-## 5.2. Listing and inspecting registered studies
+## Listing and inspecting registered studies
 
 - Registered assays can be listed by `arc s list`.
 - To get detailed information about a specific entry use `arc s get`. If no arguments are specified an editor will request a study identifier to print all registered information into the shell.
 
-## 5.3. Editing study information
+## Editing study information
 
 - A study can be edited using `arc s edit`.
   - If no further arguments are specified an editor opens, that asks for the study identifier that should be edited.
@@ -41,13 +43,13 @@ If no study identifier is given, a study is created with the assay identifier as
 - Instead of using the editor, the following command can be used. To circumvent editor pop ups, not arc s edit, but `arc s update` must be used:  
 `arc s update --identifier GelBasedProteomicsWT --submissiondate "13.04.2020"`
 
-## 5.4. Removing studies 
+## Removing a study
 
-- A study can be unregistered from the investigation by using `arc s unregister`. 
-- A study folder structure can be deleted by using `arc s delete`. 
+- A study can be unregistered from the investigation by using `arc s unregister`.
+- A study folder structure can be deleted by using `arc s delete`.
 - To both, delete the assay folder structure and unregister it from the investigation `arc a remove` can be used.
 
-## 5.5. Registering persons to studies
+## Registering persons to a study
 
 - Every person, that is involved in a study can be registered with personal information using `arc s person register`.
 
@@ -69,12 +71,12 @@ If no study identifier is given, a study is created with the assay identifier as
 - Instead of using the editor, the following command can be used:  
 `arc s person register -s GelBasedProteomicsWT -l Doe -f John -m P --email jpdoe@mail.com --phone "+49(0)631 205 3045" --address "Paul-Ehrlich-Straße 23, 67663 Kaiserslautern" --affiliation "Department of M21 Measurements, Technische Universität Kaiserslautern, Germany" --roles "supervisor"`
 
-### 5.5.1 Listing and inspecting registered persons
+### Listing and inspecting registered persons
 
 - Registered persons can be listed by `arc s person list`.
 - To get detailed information about a specific entry use `arc s person get`. If no arguments are specified an editor will request a study identifier, a first and last name (mandatory) and optionally mid name initials to print all registered information into the shell.
 
-### 5.5.2 Editing person information
+### Editing person information
 
 - A person can be edited using `arc s person edit`.
   - If no further arguments are specified an editor opens, that asks for the person that should be edited.
@@ -82,13 +84,14 @@ If no study identifier is given, a study is created with the assay identifier as
 - Instead of using the editor, the following command can be used. To circumvent editor pop ups, not `arc s person edit`, but `arc s person update` must be used:  
 `arc s person update -s GelBasedProteomicsWT -l Kunze -f Heinz-Rudolf --email hrkunze@mail.com --address "Herzstraße 5, 12345 Musterstadt"`
 
-### 5.5.3 Removing a person
+### Removing a person
 
 - A person can be removed from a study using `arc s person unregister`. An editor will request the study identifier, first and last name (mandatory) and optionally mid name initials to unregister the person from the study in isa.investigation.xlsx.
 - Instead of using the editor, the following command can be used:  
 `arc s person unregister -s GelBasedProteomicsWT -l Doe -f John -m P`
 
-## 5.6 Registering publications to studies
+## Registering publications to studies
+
 - If studies result in publications, they can be registered to the corresponding study.
 - Study publications can be registered by `arc s publication register`.
 
@@ -106,30 +109,29 @@ If no study identifier is given, a study is created with the assay identifier as
 - Instead of using the editor, the following command can be used:  
 `arc s publication register -s GelBasedProteomicsWT -d 2021_ARC05_S01_01tmp --authorlist "John P Doe; Eva Muller" --title "abc"`
 
-### 5.6.1 Listing and inspecting registered publications
+### Listing and inspecting registered publications
+
 - Registered publications can be listed by `arc s publication list`.
 - To get detailed information about a specific entry use `arc s publication get`. If no arguments are specified an editor will request the study identifier and doi to print all registered information into the shell.
 
-### 5.6.2 Editing publication information
+### Editing publication information
+
 - A publication can be edited using `arc s publication edit`.
   - If no further arguments are specified an editor opens, that asks for the study identifier and publication doi that should be edited.
   - If the publication exists, another editor opens with information already known for the respective publication. The required values can be edited.
 - Instead of using the editor, the following command can be used. To circumvent editor pop ups, not `arc s publication edit`, but `arc s publication update` must be used:  
 `arc s publication update -s "GelBasedProteomicsWT" -d 2021_ARC05_Pub01tmp --title "The peroxisomal Flux-Compensator-Cycle is heavily dependent on P09 accumulation under redox stress.".`
 
-### 5.6.3 Removing a publication
+### Removing a publication
+
 - A publication can be removed from a study using `arc s publication unregister`. An editor will request the study identifier and DOI to unregister the publication from the study in the isa.investigation file.
 - Instead of using the editor, the following command can be used:  
 `arc s publication unregister -s GelBasedProteomicsWT -d 2021_ARC05_Pub01tmp`
 
-
-## 5.7 Registering Design Types to Studies
+## Registering Design Types to Studies
 
 - The design type of your study can be registered using `arc s design register`.
   - If no further arguments are specified an editor opens that asks for a term allowing the classification of the study based on the overall experimental design, e.g cross-over design or parallel group design.
   - Additionally you are asked to supply the accession number from the term source and the Term Source REF if available.
-- Instead of using the editor, the following command can be used: 
+- Instead of using the editor, the following command can be used:
 `arc s design register -s "GelBasedProteomicsWT" -d "YourDesignType"`
-
-
-

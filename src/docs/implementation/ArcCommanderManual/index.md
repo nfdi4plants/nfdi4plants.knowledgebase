@@ -7,7 +7,11 @@ add support: false
 add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
 
-The following pages :construction: are under construction :construction:.
-> The content provided here originates from https://github.com/nfdi4plants/arcCommander/wiki.
+Welcome to the ARC Commander Manual. 
+Please explore the sections on the left to find guides on
+
+- Setup and Installation to use the ARC Commander,
+- Central Functions to work with your ARC, and
+- Functions to fill and work on ISA Metadata within your ARC.
 
 > **Developers**, please check out the [ARC Commander Dev Docs](https://nfdi4plants.github.io/arcCommander-docs/).
