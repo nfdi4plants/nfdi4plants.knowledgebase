@@ -9,8 +9,6 @@ add sidebar: _sidebars/arcCommanderManualSidebar.md
 
 <!-- TODO: I would suggest to link this to ARC article rather than explaining the structure here -->
 
-## arc init
-
 - The basic ARC folder structure can be created using `arc init`
   - .arc auxillary arc commander files
   - assays storage for raw data
