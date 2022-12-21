@@ -12,12 +12,12 @@
 ## Windows:/docs/implementation/ArcCommanderManual/arc_installation_windows.html
 ## MacOS:/docs/implementation/ArcCommanderManual/arc_installation_macos.html
 ## Linux:/docs/implementation/ArcCommanderManual/arc_installation_linux.html
+# DataHUB Access:/docs/implementation/ArcCommanderManual/arc_access.html
 # Before we start:/docs/implementation/ArcCommanderManual/arc_usage_notes.html
 ```
 
 ```Central Functions
 # Initialize:/docs/implementation/ArcCommanderManual/arc_initialization.html
-# DataHUB Access:/docs/implementation/ArcCommanderManual/arc_access.html
 # Clone:/docs/implementation/ArcCommanderManual/arc_get.html
 # Connect:/docs/implementation/ArcCommanderManual/arc_connect.html
 # Synchronize:/docs/implementation/ArcCommanderManual/arc_synchronization.html
