@@ -31,3 +31,8 @@ arc sync -r https://github.com/nfdi4plants/ARC/tree/Example-ARC.git
 ``` 
 
 **Note:** If your local repository is not connected to a remote repository, `arc sync` will only track LFS files and stage and commit changes to your local repository. The Commander will not pull or push any changes.
+
+<!-- TODO
+
+Andrea: link to workaround / FAQ 
+ -->
