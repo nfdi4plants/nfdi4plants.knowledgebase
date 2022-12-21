@@ -1,23 +1,11 @@
 ---
 layout: docs
-title: "ARC User configuration"
+title: "Configure a git user locally for each ARC"
 published: 2022-12-20
 add toc: true
 add support: false
 add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
-
-## Setting a git user
-
-`git` always signs commits made with a `name` and `e-mail` address of the user. These are then also used by `GitLab` and `GitHub` to assign the commits to user accounts. There are different ways to set this information.
-
-### Globally in git
-
-The easiest way would be to do it directly globally using git:
-
-- `git config --global user.name "FIRST_NAME LAST_NAME"`
-
-- `git config --global user.email "MY_NAME@example.com"`
 
 <!-- ### 
 
@@ -34,8 +22,6 @@ For this case the `ArcCommander` has a set of features to ease your pain.
       - `arc config set -g -n "general.gitemail" -v "Email of user"`
 2. Afterwards, just use `arc config setgituser` for each ARC you download or create. -->
 
-## Setting a git user locally for each ARC
-
 Some users might want to use different signatures for different repositories, e.g., developing software on GitHub and working on ARCs on [the DataHUB](https://git.nfdi4plants.org). Besides your global git configuration, you can store the information you want to use for editing ARCs within the ARC Commander config:
 
 ```bash
@@ -49,4 +35,4 @@ To transfer the information from the global ARC Commander config to the local gi
 arc config setgituser
 ```
 
-> :bulb: This will automatically transfer the info stored globally in the ArcCommander config to the local git config of the ARC.
+> :bulb: This will automatically transfer the info stored globally in the ARC Commander config to the local git config of the ARC.
