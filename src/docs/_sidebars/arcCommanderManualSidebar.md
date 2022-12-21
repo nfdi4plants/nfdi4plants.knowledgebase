@@ -30,7 +30,7 @@
 ## Investigation:/docs/implementation/ArcCommanderManual/arc_isa_investigation.html
 ## Study:/docs/implementation/ArcCommanderManual/arc_isa_study.html
 ## Assay:/docs/implementation/ArcCommanderManual/arc_isa_assay.html
-# Export:/docs/implementation/ArcCommanderManual/arc_isa_export.html
+# Export:/docs/implementation/ArcCommanderManual/arc_export.html
 ```
 
 ```🔙 to Knowledge Base
