@@ -30,6 +30,7 @@
 ## Investigation:/docs/implementation/ArcCommanderManual/arc_isa_investigation.html
 ## Study:/docs/implementation/ArcCommanderManual/arc_isa_study.html
 ## Assay:/docs/implementation/ArcCommanderManual/arc_isa_assay.html
+# Update:/docs/implementation/ArcCommanderManual/arc_update.html
 # Export:/docs/implementation/ArcCommanderManual/arc_export.html
 ```
 
