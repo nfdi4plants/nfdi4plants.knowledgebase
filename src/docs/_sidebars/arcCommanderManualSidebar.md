@@ -7,7 +7,7 @@
 
 ```Setup
 # Installing Dependencies:/docs/implementation/ArcCommanderManual/arc_installation_dependencies.html
-# Git User configuration:/docs/implementation/ArcCommanderManual/git_config.html
+# Configure Git:/docs/implementation/ArcCommanderManual/git_config.html
 # Installing the ARC Commander:/docs/implementation/ArcCommanderManual/arc_installation.html
 ## Windows:/docs/implementation/ArcCommanderManual/arc_installation_windows.html
 ## MacOS:/docs/implementation/ArcCommanderManual/arc_installation_macos.html
@@ -18,7 +18,8 @@
 ```Central Functions
 # Initialize:/docs/implementation/ArcCommanderManual/arc_initialization.html
 # DataHUB Access:/docs/implementation/ArcCommanderManual/arc_access.html
-# Clone an ARC:/docs/implementation/ArcCommanderManual/arc_get.html
+# Clone:/docs/implementation/ArcCommanderManual/arc_get.html
+# Connect:/docs/implementation/ArcCommanderManual/arc_connect.html
 # Synchronize:/docs/implementation/ArcCommanderManual/arc_synchronization.html
 # Configure:/docs/implementation/ArcCommanderManual/arc_config.html
 # Branch:/docs/implementation/ArcCommanderManual/arc_branch.html
