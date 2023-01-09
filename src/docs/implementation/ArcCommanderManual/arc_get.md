@@ -25,7 +25,7 @@ arc get -r https://github.com/nfdi4plants/ARC.git
 
 <!-- TODO 
 
-Andrea: Should we already mention the new lfs flag to prevent bad experience due to downloading very/too big shared ARCs?
+Andrea: 
 Also, for arc get, the authentification problem might occur or re-occur when the access TOKEN is expired as somebody set it like this. Therefore, the respective link would be also of interest here.
 
  -->
