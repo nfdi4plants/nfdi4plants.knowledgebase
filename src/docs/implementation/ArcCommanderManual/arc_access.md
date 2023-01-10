@@ -38,10 +38,9 @@ After successful registration, setup your machine for smooth ARC synchronization
     ```
 
 2. Create and set an access token
-
-```bash
-arc remote accesstoken get -s https://git.nfdi4plants.org
-```
+     ```bash
+    arc remote accesstoken get -s https://git.nfdi4plants.org
+    ```
 
 > :bulb: This authenticates your machine to communicate with your personal DataHUB account  
 

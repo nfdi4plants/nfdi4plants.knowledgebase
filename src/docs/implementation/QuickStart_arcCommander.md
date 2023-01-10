@@ -139,11 +139,34 @@ In case you are not a member of DataPLANT yet, please visit [sign up](<https://r
 
 ![](../img/dataplant_registration.png)
 
-After successful registration, create and set an access token for ARC Commander synchronization using
+After successful registration, setup your machine for smooth ARC synchronization using the ARC Commander
 
-```bash
-arc remote accesstoken get -s https://git.nfdi4plants.org
-```
+1. Allow git to store credentials on your machine.
+
+    ***Windows***  
+    ```bash
+    git config --global credential.helper cache
+    ```
+
+    or  
+    ```bash
+    git config --global credential.helper store
+    ```
+
+    ***MacOS***  
+    ```bash
+    git config --global credential.helper osxkeychain
+    ```
+
+    ***Linux***  
+    ```bash
+    git config --global credential.helper store
+    ```
+
+2. Create and set an access token
+    ```bash
+    arc remote accesstoken get -s https://git.nfdi4plants.org
+    ```
 
 A window within your browser will open, asking for your DataPLANT Log In. In case you are already logged in, the browser will directly display a Success message to you:
 
