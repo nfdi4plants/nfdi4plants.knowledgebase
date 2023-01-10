@@ -110,7 +110,25 @@
 <p>✅ In case you are not a member of DataPLANT yet, please <a href="https://register.nfdi4plants.org">sign up</a>. Afterwards, you will be granted access to DataPLANT’s <a href="https://git.nfdi4plants.org">DataHUB</a>. The DataHUB allows you to share your ARCs with registered lab or project partners.</p>
 </blockquote>
 <nfdi-h2 id="arc-commander-authentication">ARC Commander authentication</nfdi-h2>
-<p>After successful registration, create and set an access token for ARC Commander synchronization using</p>
+<p>After successful registration, setup your machine for smooth ARC synchronization using the ARC Commander</p>
+<ol>
+<li><p>Allow git to store credentials on your machine.</p>
+<p><em><strong>Windows</strong></em></p>
+<nfdi-code class="language-bash">git config --global credential.helper cache
+</nfdi-code>
+<p>or</p>
+<nfdi-code class="language-bash">git config --global credential.helper store
+</nfdi-code>
+<p><em><strong>MacOS</strong></em></p>
+<nfdi-code class="language-bash">git config --global credential.helper osxkeychain
+</nfdi-code>
+<p><em><strong>Linux</strong></em></p>
+<nfdi-code class="language-bash">git config --global credential.helper store
+</nfdi-code>
+</li>
+<li><p>Create and set an access token</p>
+</li>
+</ol>
 <nfdi-code class="language-bash">arc remote accesstoken get -s https://git.nfdi4plants.org
 </nfdi-code>
 <blockquote>
