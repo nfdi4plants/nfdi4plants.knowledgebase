@@ -110,11 +110,16 @@
 <li><p>Open a Terminal (Applications → Utilities → Terminal)</p>
 </li>
 <li><p>Copy/paste the following commands into your terminal and execute them to (a) download the latest ARC Commander release, (b) change permissions to make the ARC Commander executable and (c) move the ARC Commander program to a location from where it is executable via the terminal:</p>
-<nfdi-code class="language-bash">curl -L https://github.com/nfdi4plants/arcCommander/releases/download/v0.4.0-osx.x64/arc > arc
-chmod u+x ./arc
+<nfdi-code class="language-bash">wget https://github.com/nfdi4plants/arcCommander/releases/download/v0.4.0-osx.x64/arc
+chmod a+x ./arc
 mv ./arc /usr/local/bin/
 </nfdi-code>
 </li>
+</ol>
+<blockquote>
+<p>⚠️ By moving the ARC commander binary to <code>/usr/local/bin/</code> it also becomes available to other users on your machine.</p>
+</blockquote>
+<ol start="3">
 <li><p>Run ARC Commander from the terminal by executing:</p>
 <nfdi-code class="language-bash">arc
 </nfdi-code>
