@@ -11,10 +11,12 @@ add sidebar: _sidebars/arcCommanderManualSidebar.md
 2. Copy/paste the following commands into your terminal and execute them to (a) download the latest ARC Commander release, (b) change permissions to make the ARC Commander executable and (c) move the ARC Commander program to a location from where it is executable via the terminal:
 
     ```bash
-    curl -L https://github.com/nfdi4plants/arcCommander/releases/download/v0.4.0-osx.x64/arc > arc
-    chmod u+x ./arc
+    wget https://github.com/nfdi4plants/arcCommander/releases/download/v0.4.0-osx.x64/arc
+    chmod a+x ./arc
     mv ./arc /usr/local/bin/
     ```
+
+> :warning: By moving the ARC commander binary to `/usr/local/bin/` it also becomes available to other users on your machine.
 
 3. Run ARC Commander from the terminal by executing:
 
