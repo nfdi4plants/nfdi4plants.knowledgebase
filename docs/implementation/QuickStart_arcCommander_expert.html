@@ -116,7 +116,11 @@ cd &lt;path/to/YourARCFolder>
 arc init
 arc i create -i &lt;YourInvestigationID>
 arc a add -s &lt;YourStudyID> -a &lt;YourAssayID>
+
 arc sync -f -r https://git.nfdi4plants.org/&lt;YourUserName>/&lt;YourARC> -m "initialize ARC structure"
+</nfdi-code>
+<nfdi-code class="language-bash"># Even if you linked to the DataHUB, you might have to repeat this step before syncing
+arc remote accesstoken get -s https://git.nfdi4plants.org
 </nfdi-code>
 
       <div>
