@@ -38,6 +38,8 @@ arc a add -s <YourStudyID> -a <YourAssayID>
 arc sync -f -r https://git.nfdi4plants.org/<YourUserName>/<YourARC> -m "initialize ARC structure"
 ```
 
+> 💡 The last command will prompt an Error `ERROR: GIT: fatal: repository 'https://git.nfdi4plants.org/<YourUserName>/<YourARC>' not found`. Don't worry, the ARC is being created at that address. 
+
 ```bash
 # Even if you linked to the DataHUB, you might have to repeat this step before syncing
 arc remote accesstoken get -s https://git.nfdi4plants.org
