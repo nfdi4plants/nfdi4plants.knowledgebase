@@ -13,7 +13,7 @@ In case you have not yet connected your local repository to a remote one, you ca
 arc sync -r https://github.com/nfdi4plants/ARC/tree/Example-ARC.git
 ```
 
-> :bulb: If your local repository is not connected to a remote repository, `arc sync` will only track LFS files and stage and commit changes to your local repository. The Commander will not pull or push any changes.
+> :bulb: If your local repository is not connected to a remote repository, `arc sync` will only track and store changes locally. The ARC Commander will not synchronize  any changes to the DataHUB.
 
 <!-- TODO
 
