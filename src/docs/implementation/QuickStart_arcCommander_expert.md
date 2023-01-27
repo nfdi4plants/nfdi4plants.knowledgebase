@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: ARC Commander QuickStart (Expert Version)
-published: 2022-12-20
+published: 2023-01-27
 author: "Dominik Brilhaus"
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
@@ -12,7 +12,7 @@ article_status: published
 todo:
 ---
 
-> :warning: Before using this guide, please follow the Setup instructions in the [ARC Commander maual](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/index.html)
+> :warning: Before using this guide, please follow the Setup instructions in the [ARC Commander manual](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/index.html)
 
 ## Checkpoint
 
