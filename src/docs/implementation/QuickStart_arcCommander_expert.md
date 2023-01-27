@@ -12,13 +12,15 @@ article_status: published
 todo:
 ---
 
+> :warning: Before using this guide, please follow the Setup instructions in the [ARC Commander maual](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/index.html)
+
 ## Checkpoint
 
 :white_check_mark: You know how to use a command line or terminal  
 :white_check_mark: You have created an ARC before  
-:white_check_mark: The latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) as well as [git](https://git-scm.com/downloads) and [git LFS](https://git-lfs.github.com/) are installed on your computer  
+:white_check_mark: The latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) is installed on your computer  
 :white_check_mark: You have a [DataPLANT](https://register.nfdi4plants.org) account  
-:white_check_mark: Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via an ssh key or a personal access token  
+:white_check_mark: Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via personal access token
 
 > :rocket: Voila! You are ready to follow these few steps to create a minimal ARC sharable via DataPLANT's DataHUB.
 
