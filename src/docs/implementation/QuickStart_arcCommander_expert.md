@@ -22,8 +22,7 @@ todo:
 
 > :rocket: Voila! You are ready to follow these few steps to create a minimal ARC sharable via DataPLANT's DataHUB.
 
-1. Visit the [DataHUB](https://git.nfdi4plants.org), create a new repository and copy the URL to your ARC (`https://git.nfdi4plants.org/<YourUserName>/<YourARC>.git`) to your clipboard.
-2. Replace the `<variables>` in the following code block with your information and execute it in your command line.
+Replace the `<variables>` in the following code block with your information and execute it in your command line.
 
 ```bash
 # Create and navigate to your ARC folder
@@ -38,9 +37,8 @@ arc a add -s <YourStudyID> -a <YourAssayID>
 arc sync -f -r https://git.nfdi4plants.org/<YourUserName>/<YourARC> -m "initialize ARC structure"
 ```
 
-> 💡 The last command will prompt an Error `ERROR: GIT: fatal: repository 'https://git.nfdi4plants.org/<YourUserName>/<YourARC>' not found`. Don't worry, the ARC is being created at that address. 
+> 💡 Make sure that no ARC exists at https://git.nfdi4plants.org/<YourUserName>/<YourARC>. Otherwise you will sync to that ARC.
 
-```bash
-# Even if you linked to the DataHUB, you might have to repeat this step before syncing
-arc remote accesstoken get -s https://git.nfdi4plants.org
-```
+> 💡 The last command will prompt an Error `ERROR: GIT: fatal: repository 'https://git.nfdi4plants.org/<YourUserName>/<YourARC>' not found` (Windows) or `ERROR: GIT: fatal: couldn't find remote ref main` (macOS). Don't worry, the ARC is being created at that DataHUB during this step.
+
+> 💡 You might need to repeat linking your computer to the DataHUB first via `arc remote accesstoken get -s https://git.nfdi4plants.org`.
