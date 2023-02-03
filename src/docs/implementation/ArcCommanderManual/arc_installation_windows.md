@@ -24,4 +24,4 @@ Head to the ARC Commander's GitHub [release page](https://github.com/nfdi4plants
 ![image](https://user-images.githubusercontent.com/47781170/119680874-dd4e9b00-be41-11eb-8faf-ed699c827395.png)
 6. Run the ARC Commander from the CMD by executing `arc`
 
-> :bulb: A global config file will be created the first time you use the ARC Commander in the folder `<YourDrive>:\Users\<Username>\AppData\Roaming\DataPLANT\ArcCommander\`
+> :bulb: A global config file will be created the first time you use the ARC Commander in the (hidden) folder `<YourDrive>:\Users\<Username>\AppData\Roaming\DataPLANT\ArcCommander\`
