@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Electronic Lab Notebooks
+title: Electronic Lab Notebooks (ELNs)
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
@@ -38,7 +38,7 @@ Method: how an experiment could be done (compare: recipe for baking a cake)
 Protocol: how an experiment was done (used this type of flour, baked for 45 instead of 40 minutes)
 -->
 
-## Electronic Lab Notebooks (ELNs) - Digitalized Protocols
+## ELN - Digitalized Protocols
 
 **electronic** lab notebooks help overcome the limitations of classical pen-and-paper lab note book
 
@@ -70,8 +70,7 @@ Where is the bridge between ELNs and ARCs? (ELNs = Protocols = Metadata)
 - ARCs are FAIR Digital Objects (FDO)
   - combine data with metadata in one research data package
   - sharing and reusability of the research data as a whole
-- sharing 
-
+- sharing
 
 ## Steps you can take **today** to pave the way towards ELN-ARC integration (Using an ELN with your ARC)
 
