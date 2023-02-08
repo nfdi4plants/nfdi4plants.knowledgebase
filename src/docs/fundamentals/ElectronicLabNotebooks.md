@@ -10,6 +10,27 @@ date: 2023-02-03
 article_status: draft
 ---
 
+## Protocols - Recipes to knowledge
+
+1. Protocols: basis to lab processes
+2. Key to knowledge of a biological laboratory
+3. Protocols = Metadata
+5. Key to reproducibility and as such to a FAIR scientific process
+  - mixed types of protocols
+  - some routine, some continuously evolving
+  - some protocols form the base to very central experiments and assays
+  - Protocols are an integral part of publications (*materials and methods* section). Methods are shared with peers 
+6. classical pen-and-paper lab note book
+   1. metadata knowledge stuck in a single copy
+   2. hard to access (hidden in a shelf)
+   3. hard to maintain (over generations of researchers)
+   4. hard to communicate adaptations (stickers, post-its, hand-written notes)
+
+
+In protocols we document exactly how a planned lab process was followed for a dedicated set of samples.
+While a well established method for RNA extraction may state that "between 20 and 30 mg" of a ground leaf shall be used as the starting material, we would denote that RNA was extracted from exactly "23.6 mg" of leaf material for one identifiable sample.
+While the method may generally recommend five technical replicates, the protocol would associate the five replicates with information 
+
 <!-- 
 Definitions:
 
@@ -17,22 +38,13 @@ Method: how an experiment could be done (compare: recipe for baking a cake)
 Protocol: how an experiment was done (used this type of flour, baked for 45 instead of 40 minutes)
 -->
 
+## Electronic Lab Notebooks (ELNs) - Digitalized Protocols
 
-1. Protocols: basis to lab processes
-2. Key to knowledge of a biological laboratory
-3. Key to reproducibility and as such to a FAIR scientific process
-  - mixed types of protocols
-    - some routine, some continuously evolving
-    - some protocols form the base to very central experiments and assays
-1. classical pen-and-paper lab note book
-   1. hard to access (hidden in a shelf)
-   2. hard to maintain (over generations of researchers)
-   3. hard to communicate adaptations (stickers, post-its, hand-written notes)
-2. ELNs help overcome these limitations
-   1. the fact that the digitalized form of what used to be on **one** paper can now be replicated with ease facilitates quicker collaboration, sharing, and reuse of those central entities at least within the closed lab context
-   2. the exchange on laboratory protocols
-   3. ELNs d
+**electronic** lab notebooks help overcome the limitations of classical pen-and-paper lab note book
 
+1. the fact that the digitalized form of what used to be on **one** paper can now be replicated with ease facilitates quicker collaboration, sharing, and reuse of those central entities at least within the closed lab context
+2. the exchange on laboratory protocols
+3. ELNs d
 
 Electronic Lab Notebooks (ELNs) are a heap in digitalization of laboratory processes.
 
@@ -45,20 +57,30 @@ Protocols and methods that frequently used to be hard to access in classical pen
   - easy to reuse
 - time stamping
 
+## ARCs - Packaging ELN protocols with the data
 
-In protocols we document exactly how a planned lab process was followed for a dedicated set of samples.
-While a well established method for RNA extraction may state that "between 20 and 30 mg" of a ground leaf shall be used as the starting material, we would denote that RNA was extracted from exactly "23.6 mg" of leaf material for one identifiable sample.
-While the method may generally recommend five technical replicates, the protocol would associate the five replicates with information 
-
-## Where is the bridge between ELNs and ARCs? (ELNs = Protocols = Metadata)
+Where is the bridge between ELNs and ARCs? (ELNs = Protocols = Metadata)
 
 - protocols integrate well with the ARC idea
 - Every study and assay (subfolder) in the ARC comes with a dedicated folder `protocols`
-- this folder collects all protocols directly associated with a dedicated set of data files in the parallel `dataset` folderd
+- this folder collects all protocols directly associated with a dedicated set of data files in the parallel `dataset` folder
+
+<!-- ## What is the added benefit of using ARCs and ELNs? -->
+
+- ARCs are FAIR Digital Objects (FDO)
+  - combine data with metadata in one research data package
+  - sharing and reusability of the research data as a whole
+- sharing 
+
 
 ## Steps you can take **today** to pave the way towards ELN-ARC integration (Using an ELN with your ARC)
 
 the ARC is your place to structure, store, annotate, share and evolve all data to your research project
+
+the goals:
+- reduce the documentation work load
+- reduce duplications and redundancies
+- foster FAIRness
 
 ### Identify your projects and resources
 
@@ -74,7 +96,7 @@ use identifiers
 Most ELN software allow some routine to structure / associate entries.
 This can be well aligned with ISA structure used in the ARC
 
-Independent of the ELN software you use or if you prefer another digital routine -cloud, local file server or wiki- to structure and share your lab protocols, the intuitive ISA structure can easily be implemented and aligned with the ARC. 
+Independent of the ELN software you use or whether you prefer another digital routine -cloud, local file server or wiki- to structure and share your lab protocols, the intuitive ISA structure can easily be implemented and aligned with the ARC.
 
 ARC structure could be implemented in the ELN
 
@@ -88,5 +110,6 @@ ARC structure could be implemented in the ELN
 
 ## Outlook
 
-- automated syncronization 
-- 
+- automated synchronization
+  - 
+- automated 
