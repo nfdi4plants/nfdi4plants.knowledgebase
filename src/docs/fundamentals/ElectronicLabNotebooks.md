@@ -19,7 +19,7 @@ Protocols are the key to knowledge (generation) via predefined experimental proc
 Every lab builds on a collection of protocols. Some protocols may describe routinely performed *standard operating procedures*, while others may be continuously evolving and adapted.
 In pre-digital times, protocols for a scientific project were collected in classical pen-and-paper lab notebooks. Inherently 
 
-As such, the metadata (and) knowledge collected in these single-copy protocols was deemed hard to access (hidden in a shelf), hard to maintain (over generations of researchers) and hard to share and communicate (hand-written notes, post-its) with peers during the ongoing process. <!-- (unless published) -->
+As such, the metadata knowledge collected in these single-copy protocols was hard to access (hidden in a shelf), maintain (over generations of researchers) or share and communicate (hand-written notes, post-its) with peers during the ongoing process. <!-- (unless published) -->
 <!-- 
 1. Protocols: basis to lab procedures
 2. Key to knowledge of a biological laboratory
@@ -36,7 +36,6 @@ As such, the metadata (and) knowledge collected in these single-copy protocols w
    3. hard to maintain (over generations of researchers)
    4. hard to communicate adaptations (stickers, post-its, hand-written notes) -->
 
-
 <!-- 
 
 In protocols we document exactly how a planned lab process was followed for a dedicated set of samples.
@@ -52,15 +51,23 @@ Protocol: how an experiment was done (used this type of flour, baked for 45 inst
 
 ## ELN - Digitalized Protocols
 
-**electronic** lab notebooks help overcome the limitations of classical pen-and-paper lab note book
 
-1. the fact that the digitalized form of what used to be on **one** paper can now be replicated with ease facilitates quicker collaboration, sharing, and reuse of those central entities at least within the closed lab context
+the fact that the digitalized form of what used to be on **one** paper can now be replicated with ease facilitates quicker collaboration, sharing, and reuse of those central entities at least within 
+
+**electronic** lab notebooks (ELN) help overcome the limitations of classical pen-and-paper lab notebooks.
+
+Designed to facilitate the editing and sharing of protocols in a closed environment. 
+
+
+Tools to edit and share protocols 
+
+With the purpose of protocol editors 
+
+1. the closed lab context
 2. the exchange on laboratory protocols
 3. ELNs d
 
 Electronic Lab Notebooks (ELNs) are a heap in digitalization of laboratory processes.
-
-Protocols and methods that frequently used to be hard to access in classical pen-and-paper notebooks can now be shared with peers
 
 - good tool to digitalize your protocols
 - good protocol editor
@@ -71,11 +78,14 @@ Protocols and methods that frequently used to be hard to access in classical pen
 
 ## ARCs - Packaging ELN protocols with the data
 
-Where is the bridge between ELNs and ARCs? (ELNs = Protocols = Metadata)
+<!-- Where is the bridge between ELNs and ARCs? (ELNs = Protocols = Metadata) -->
+
+Protocols and metadata have a specified place and schema within the ARC. Every study and assay (subfolder) in the ARC comes with a dedicated folder called `protocols`. This folder collects all protocols directly associated with a specific set of data files in the parallel `dataset` folder. 
+
 
 - protocols integrate well with the ARC idea
-- Every study and assay (subfolder) in the ARC comes with a dedicated folder `protocols`
-- this folder collects all protocols directly associated with a dedicated set of data files in the parallel `dataset` folder
+- 
+- 
 
 <!-- ## What is the added benefit of using ARCs and ELNs? -->
 
