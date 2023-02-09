@@ -49,6 +49,8 @@ Method: how an experiment could be done (compare: recipe for baking a cake)
 Protocol: how an experiment was done (used this type of flour, baked for 45 instead of 40 minutes)
 -->
 
+This is a a test commit. 
+
 ## ELN - Digitalized Protocols
 
 
