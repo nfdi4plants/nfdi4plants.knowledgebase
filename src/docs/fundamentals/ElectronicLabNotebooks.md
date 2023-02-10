@@ -16,7 +16,9 @@ article_status: draft
 - [Actions to make the best of using ELNs with ARCs](#actions-to-make-the-best-of-using-elns-with-arcs)
   - [Identify your projects and resources](#identify-your-projects-and-resources)
   - [Structure your ELN: unmix and disentangle](#structure-your-eln-unmix-and-disentangle)
+  - [Review your protocol habits :D](#review-your-protocol-habits-d)
   - [Align annotations](#align-annotations)
+  - [ISA](#isa)
   - [Export protocols to ARC](#export-protocols-to-arc)
 - [Outlook](#outlook)
 
@@ -44,12 +46,12 @@ Since ARCs (are designed as FAIR digital objects, which) combine the data files 
 
 ## Actions to make the best of using ELNs with ARCs
 
-In the following sections we outline recommendations to take full advantage of ELNs together with ARCs. These recommendations range from conceptual measures or organisational decisions that are independent of the use of an ELN or ARC over (manual) practices that could facilitate their integration towards tool-aided automations and interfaces.
-We try to highlight, where the ARC and a typical ELN conceptually mean the same thing or in technical terms *could write to and read from the same file*.
+In the following sections we outline recommendations to take full advantage of ELNs together with ARCs. These recommendations include conceptual measures or organisational decisions that are independent of the use of an ELN or ARC as well as manual practices that one could implement immediately to facilitate their integration. Further we will explore possible routes towards automated and tool-aided integrations and interfaces. We try to highlight, where the ARC and a typical ELN conceptually mean the same thing or in technical terms *could write to and read from the same file*.
 
-The goal foster FAIRness
+The goal of bridging the use of ELNs with ARCs is to foster FAIRness in a way that 
 
-- reduce the documentation work load
+
+reduce the documentation work load
 - reduce duplications and redundancies
 - an intuitive and unblocked / unhindered mechanisms to "along the way"
 
@@ -70,6 +72,9 @@ the ARC is your place to structure, store, annotate, share and evolve all data t
 
 use identifiers
 
+- cross-referencing
+- 
+
 ### Structure your ELN: unmix and disentangle
 
 Most ELN software allow some routine to structure / associate entries.
@@ -81,13 +86,64 @@ ARC structure could be implemented in the ELN
 
 1:1 Project : ARC
 
-cut protocols into small pieces
+
+### Review your protocol habits :D 
+
+- define clear process inputs and outputs
+- define where a process (protocol) starts and where it ends
+- 
+
+Looking back at the kitchen analogy: If you're baking a chocolate cake, then going to the grocery store to buy the required ingredients could vaguely be defined as part of the process "chocolate cake baking". However, at the latest once you want to reuse some of the ingredients to cook another dish (process "crumbing a fish filet"), it would become hart to reference the process' (sub)part ("buying groceries"). Certainly, brewing coffee and setting the table should be defined as separate processes.
+
 
 ### Align annotations
 
 1. same wording (ISA grammar, annotation principles)
 2. 
 - use templates
+
+
+### ISA
+
+
+`./isa.investigation.xlsx`
+
+INVESTIGATION
+Investigation Identifier
+Investigation Title
+Investigation Description
+...
+INVESTIGATION CONTACTS
+Investigation Person Last Name
+Investigation Person First Name
+...
+Investigation Person Email
+...
+
+`./studies/<YourStudyName>/isa.study.xlsx`
+
+STUDY
+Study Identifier
+Study Title
+Study Description
+...
+
+STUDY FACTORS
+Study Factor Name
+Study Factor Type
+...
+STUDY ASSAYS
+Study Assay Measurement Type
+...
+Study Assay Technology Type
+...
+Study Assay Technology Platform
+Study Assay File Name
+STUDY PROTOCOLS
+Study Protocol Name
+...
+
+
 
 ### Export protocols to ARC
 
@@ -103,7 +159,7 @@ cut protocols into small pieces
 - automated ARC-ELN synchronization
 - using isa templates in an ELN
 - integrate ontology API into ELN
-
+- access management
 
 
 
