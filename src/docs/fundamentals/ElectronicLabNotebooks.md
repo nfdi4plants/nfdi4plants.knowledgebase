@@ -73,14 +73,20 @@ ARC structure could be implemented in the ELN
 
 ### Align annotations
 
+1. same wording (ISA grammar, annotation principles)
+2. 
 - use templates
 
 
 ## Outlook
 
-- automated synchronization
-  - 
-- automated
+- (local) ELN-ARC interface
+  - read-write protocols
+  - read-write isa.*.xlsx / isa.json
+- automated ARC-ELN synchronization
+- using isa templates in an ELN
+- integrate ontology API into ELN
+
 
 
 <!-- 
@@ -143,5 +149,3 @@ With the purpose of protocol editors
 
 
 <!-- Where is the bridge between ELNs and ARCs? (ELNs = Protocols = Metadata) -->
-
--->
