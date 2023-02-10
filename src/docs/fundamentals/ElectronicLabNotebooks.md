@@ -4,11 +4,21 @@ title: Electronic Lab Notebooks (ELNs)
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
-add toc: true
+add toc: false
 add sidebar: _sidebars/mainSidebar.md
 date: 2023-02-10
 article_status: draft
 ---
+
+- [Protocols - Recipes to Knowledge](#protocols---recipes-to-knowledge)
+- [ELN - Digital Protocol Editors](#eln---digital-protocol-editors)
+- [ARCs - Packaging ELN protocols with the data](#arcs---packaging-eln-protocols-with-the-data)
+- [Actions to make the best of using ELNs with ARCs](#actions-to-make-the-best-of-using-elns-with-arcs)
+  - [Identify your projects and resources](#identify-your-projects-and-resources)
+  - [Structure your ELN: unmix and disentangle](#structure-your-eln-unmix-and-disentangle)
+  - [Align annotations](#align-annotations)
+  - [Export protocols to ARC](#export-protocols-to-arc)
+- [Outlook](#outlook)
 
 ## Protocols - Recipes to Knowledge
 
