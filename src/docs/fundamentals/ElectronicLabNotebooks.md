@@ -24,36 +24,32 @@ Once a protocol is digitalized, the information that used be stuck in a single-c
 
 ELNs were developed (designed) to help overcome the limitations of classical pen-and-paper lab notebooks and align well with daily wet-lab routines. ELNs facilitate the editing and sharing of protocols, usually in a closed environment such as a lab or consortium.
 
-Designed as lightweight (low-burden) protocol editors, ELNs are a major step towards digitalization of laboratory processes.
+Designed as lightweight (low-burden, free-text) protocol editors, ELNs are a major step towards digitalization of laboratory processes.
 
 ## ARCs - Packaging ELN protocols with the data
 
-Protocols integrate well with the ARC idea
+Protocols generated in ELNs integrate well with the ARC. Protocols and the metadata they contain have a dedicated place and schema within the ARC. Every study and assay (subfolder) in the ARC comes with a folder called `protocols`. This folder collects all protocols directly associated with a specific set of data files in the parallel `dataset` folder. In addition, the `isa.study.xlsx` and `isa.assay.xlsx` workbooks associated to each study or assay, help to communicate the protocol's metadata in a structured and machine-readable way.
+
+Since ARCs (are designed as FAIR digital objects, which) combine the data files with the metadata in one research data package, they facilitate to store, share and reuse the research data as a whole. <!-- rather than just the protocol // just the data without metadata  -->
+
+## Actions to make the best of using ELNs with ARCs
+
+In the following sections we outline recommendations to take full advantage of ELNs together with ARCs. These recommendations range from conceptual measures or organisational decisions that are independent of the use of an ELN or ARC over (manual) practices that could facilitate their integration towards tool-aided automations and interfaces.
+We try to highlight, where the ARC and a typical ELN conceptually mean the same thing or in technical terms *could write to and read from the same file*.
+
+The goal foster FAIRness
+
+- reduce the documentation work load
+- reduce duplications and redundancies
+- an intuitive and unblocked / unhindered mechanisms to "along the way"
 
 
+<!-- integration (Using an ELN with your ARC) -->
+<!-- you can take to make pave the way towards ELN-ARC integration (Using an ELN with your ARC) -->
 
-
-Protocols and the metadata they embed (contain) have a specified place and schema within the ARC. Every study and assay (subfolder) in the ARC comes with a dedicated folder called `protocols`. This folder collects all protocols directly associated with a specific set of data files in the parallel `dataset` folder. 
-
-
-- 
-- 
-
-<!-- ## What is the added benefit of using ARCs and ELNs? -->
-
-- ARCs are FAIR Digital Objects (FDO)
-  - combine data with metadata in one research data package
-  - sharing and reusability of the research data as a whole
-- sharing
-
-## Steps you can take **today** to pave the way towards ELN-ARC integration (Using an ELN with your ARC)
 
 the ARC is your place to structure, store, annotate, share and evolve all data to your research project
 
-the goals:
-- reduce the documentation work load
-- reduce duplications and redundancies
-- foster FAIRness
 
 ### Identify your projects and resources
 
@@ -78,18 +74,13 @@ ARC structure could be implemented in the ELN
 ### Align annotations
 
 - use templates
-- 
 
 
 ## Outlook
 
 - automated synchronization
   - 
-- automated 
-
-
-
-
+- automated
 
 
 <!-- 
