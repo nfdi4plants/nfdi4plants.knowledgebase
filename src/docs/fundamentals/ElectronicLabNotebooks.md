@@ -14,9 +14,9 @@ article_status: draft
 - [ELN - Digital Protocol Editors](#eln---digital-protocol-editors)
 - [ARCs - Packaging ELN protocols with the data](#arcs---packaging-eln-protocols-with-the-data)
 - [Actions to make the best of using ELNs with ARCs](#actions-to-make-the-best-of-using-elns-with-arcs)
-  - [Identify your projects and resources](#identify-your-projects-and-resources)
   - [Structure your ELN: unmix and disentangle](#structure-your-eln-unmix-and-disentangle)
   - [Review your protocol habits :D](#review-your-protocol-habits-d)
+  - [Identify your projects and resources](#identify-your-projects-and-resources)
   - [Align annotations](#align-annotations)
   - [ISA](#isa)
   - [Export protocols to ARC](#export-protocols-to-arc)
@@ -44,36 +44,19 @@ Protocols generated in ELNs integrate well with the ARC. Protocols and the metad
 
 Since ARCs (are designed as FAIR digital objects, which) combine the data files with the metadata in one research data package, they facilitate to store, share and reuse the research data as a whole. <!-- rather than just the protocol // just the data without metadata  -->
 
+
 ## Actions to make the best of using ELNs with ARCs
 
 In the following sections we outline recommendations to take full advantage of ELNs together with ARCs. These recommendations include conceptual measures or organisational decisions that are independent of the use of an ELN or ARC as well as manual practices that one could implement immediately to facilitate their integration. Further we will explore possible routes towards automated and tool-aided integrations and interfaces. We try to highlight, where the ARC and a typical ELN conceptually mean the same thing or in technical terms *could write to and read from the same file*.
 
-The goal of bridging the use of ELNs with ARCs is to foster FAIRness in a way that 
+The goal of bridging the use of ELNs with ARCs is to foster FAIRness in a way that reduces the documentation work by minimizing duplications and redundancies, and integrates 
+
+- ARCs are the place where wet-lab and computational biologists meet. 
+
+an intuitive and unblocked / unhindered mechanisms to "along the way"
 
 
-reduce the documentation work load
-- reduce duplications and redundancies
-- an intuitive and unblocked / unhindered mechanisms to "along the way"
-
-
-<!-- integration (Using an ELN with your ARC) -->
-<!-- you can take to make pave the way towards ELN-ARC integration (Using an ELN with your ARC) -->
-
-
-the ARC is your place to structure, store, annotate, share and evolve all data to your research project
-
-
-### Identify your projects and resources
-
-- project ID => INV ID
-- samples, primers, materials => resources
-- the definition of what defines a project can vary greatly from a small side project during a bachelor thesis with only the student and a supervisor involved towards multi-lab efforts and should not be enforced
-- Note however: the smaller and more concise the project is defined, the more actionable it will be. Just as the ARC, laboratory projects are *immutable, but evolving*. 
-
-use identifiers
-
-- cross-referencing
-- 
+- the ARC is your place to structure, store, annotate, share and evolve all data to your research project
 
 ### Structure your ELN: unmix and disentangle
 
@@ -86,7 +69,6 @@ ARC structure could be implemented in the ELN
 
 1:1 Project : ARC
 
-
 ### Review your protocol habits :D 
 
 - define clear process inputs and outputs
@@ -95,11 +77,27 @@ ARC structure could be implemented in the ELN
 
 Looking back at the kitchen analogy: If you're baking a chocolate cake, then going to the grocery store to buy the required ingredients could vaguely be defined as part of the process "chocolate cake baking". However, at the latest once you want to reuse some of the ingredients to cook another dish (process "crumbing a fish filet"), it would become hart to reference the process' (sub)part ("buying groceries"). Certainly, brewing coffee and setting the table should be defined as separate processes.
 
+### Identify your projects and resources
+
+Once we have clearly defined modular processes, we can start to label them. 
+
+
+- project ID => INV ID
+- samples, primers, materials => resources
+- the definition of what defines a project can vary greatly from a small side project during a bachelor thesis with only the student and a supervisor involved towards multi-lab efforts and should not be enforced
+- Note however: the smaller and more concise the project is defined, the more actionable it will be. Just as the ARC, laboratory projects are *immutable, but evolving*. 
+
+- use identifiers
+  - some ELN tools allow the use of tags or labels
+  - 
+- cross-referencing
+- identifiers allow us to ... *identify* "things"
+
+
 
 ### Align annotations
 
-1. same wording (ISA grammar, annotation principles)
-2. 
+- wording (ISA grammar, annotation principles)
 - use templates
 
 
@@ -142,7 +140,6 @@ Study Assay File Name
 STUDY PROTOCOLS
 Study Protocol Name
 ...
-
 
 
 ### Export protocols to ARC
@@ -223,3 +220,7 @@ With the purpose of protocol editors
 
 
 <!-- Where is the bridge between ELNs and ARCs? (ELNs = Protocols = Metadata) -->
+
+
+<!-- integration (Using an ELN with your ARC) -->
+<!-- you can take to make pave the way towards ELN-ARC integration (Using an ELN with your ARC) -->
