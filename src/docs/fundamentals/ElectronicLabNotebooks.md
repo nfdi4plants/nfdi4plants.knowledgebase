@@ -71,12 +71,19 @@ ARC structure could be implemented in the ELN
 
 1:1 Project : ARC
 
+cut protocols into small pieces
+
 ### Align annotations
 
 1. same wording (ISA grammar, annotation principles)
 2. 
 - use templates
 
+### Export protocols to ARC
+
+1. Take advantage of ARC's version control system
+2. ARC: structured ELN backup
+3. Daily routine: Export protocol to the ARC of the respective project
 
 ## Outlook
 
@@ -86,6 +93,7 @@ ARC structure could be implemented in the ELN
 - automated ARC-ELN synchronization
 - using isa templates in an ELN
 - integrate ontology API into ELN
+
 
 
 
