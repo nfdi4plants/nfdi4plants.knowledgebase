@@ -57,7 +57,13 @@ echo "hello - I am a code block"
   git config --global user.email <your_email>
   ```
 
-- [ ] Please download the latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) for your operating system and install it according to [these instructions](https://github.com/nfdi4plants/arcCommander#install-and-start).
+> You can check the configuration with
+
+```bash
+git config --global --get-regexp user
+```
+
+- [ ] Please download the latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) for your operating system and install it according to [these instructions][kb-ARC_Commander-Manual-Installation].
 
 - Check if the ARC Commander is functional by displaying the ARC commander version and help menu:
 
@@ -231,3 +237,7 @@ Briefly:
 ![](../img/datahub_members.png)
 
 > Note: A detailed usage instruction for the ARC Commander can be found [here](https://github.com/nfdi4plants/arcCommander/wiki/Detailed-usage-instruction).
+
+
+<!-- kb-Implementation -->
+[kb-ARC_Commander-Manual-Installation]: ../implementation/ArcCommanderManual/arc_installation.html "ARC Commander Installation"
