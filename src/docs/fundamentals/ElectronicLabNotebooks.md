@@ -14,8 +14,9 @@ article_status: draft
 - [ELN - Digital Protocol Editors](#eln---digital-protocol-editors)
 - [ARCs - Packaging ELN protocols with the data](#arcs---packaging-eln-protocols-with-the-data)
 - [Actions to make the best of using ELNs with ARCs](#actions-to-make-the-best-of-using-elns-with-arcs)
-  - [Structure your ELN: unmix and disentangle](#structure-your-eln-unmix-and-disentangle)
-  - [Review your protocol habits :D](#review-your-protocol-habits-d)
+  - [Structure your ELN: un-mix and disentangle](#structure-your-eln-un-mix-and-disentangle)
+  - [Review protocol habits](#review-protocol-habits)
+    - [cut protocols into pieces](#cut-protocols-into-pieces)
   - [Identify your projects and resources](#identify-your-projects-and-resources)
   - [Align annotations](#align-annotations)
   - [ISA](#isa)
@@ -47,39 +48,58 @@ Since ARCs (are designed as FAIR digital objects, which) combine the data files 
 
 ## Actions to make the best of using ELNs with ARCs
 
-In the following sections we outline recommendations to take full advantage of ELNs together with ARCs. These recommendations include conceptual measures or organisational decisions that are independent of the use of an ELN or ARC as well as manual practices that one could implement immediately to facilitate their integration. Further we will explore possible routes towards automated and tool-aided integrations and interfaces. We try to highlight, where the ARC and a typical ELN conceptually mean the same thing or in technical terms *could write to and read from the same file*.
+In the following sections we outline recommendations to take full advantage of ELNs together with ARCs. These recommendations include conceptual measures or organizational decisions that are independent of the use of an ELN or ARC as well as manual practices that one could implement immediately to facilitate their integration. Further we will explore possible routes towards automated and tool-aided integrations and interfaces. We try to highlight, where the ARC and a typical ELN conceptually mean the same thing or in technical terms *could write to and read from the same file*.
 
-The goal of bridging the use of ELNs with ARCs is to foster FAIRness in a way that reduces the documentation work by minimizing duplications and redundancies, and integrates 
+The goal of bridging the use of ELNs with ARCs is to foster FAIRness in an approach that reduces the documentation work by minimizing duplications and redundancies. To achieve this, the approach needs to integrate smoothly with daily routines of both wet-lab and computational biologists. 
+<!-- an intuitive and unblocked / unhindered mechanisms to "along the way" -->
 
-- ARCs are the place where wet-lab and computational biologists meet. 
+### Structure your ELN: un-mix and disentangle
 
-an intuitive and unblocked / unhindered mechanisms to "along the way"
+1. sharing with others is easier when we agree on a system (to name and structure)
+2. the ARC structure / naming convention is built on the ISA metadata model
+   - hierarchy / taxonomy
+   - naming
+   - linking
+   - referencing
+3. the ISA structure can easily be 
+
+Independent of the ELN software you use or whether you prefer another digital routine -cloud, local file server or wiki- to structure and share your lab protocols, the intuitive ISA structure can easily be implemented.
 
 
-- the ARC is your place to structure, store, annotate, share and evolve all data to your research project
-
-### Structure your ELN: unmix and disentangle
 
 Most ELN software allow some routine to structure / associate entries.
-This can be well aligned with ISA structure used in the ARC
 
-Independent of the ELN software you use or whether you prefer another digital routine -cloud, local file server or wiki- to structure and share your lab protocols, the intuitive ISA structure can easily be implemented and aligned with the ARC.
 
-ARC structure could be implemented in the ELN
 
-1:1 Project : ARC
+### Review protocol habits
 
-### Review your protocol habits :D 
+Before (re-)structuring a whole laboratory's protocol collection, it helps to revise the strengths of the ISA model.
+
+Protocols usually describe a single process. In rare cases a combination of multiple processes are combined to one protocol. 
+
+- define where a process (protocol) starts and where it ends
+
+what are inputs and outputs:  
 
 - define clear process inputs and outputs
-- define where a process (protocol) starts and where it ends
-- 
 
-Looking back at the kitchen analogy: If you're baking a chocolate cake, then going to the grocery store to buy the required ingredients could vaguely be defined as part of the process "chocolate cake baking". However, at the latest once you want to reuse some of the ingredients to cook another dish (process "crumbing a fish filet"), it would become hart to reference the process' (sub)part ("buying groceries"). Certainly, brewing coffee and setting the table should be defined as separate processes.
+#### cut protocols into pieces
+
+There is no clear "ruling" as to what defines as a single process.
+
+Looking back at the kitchen analogy: If you're baking a chocolate cake, then going to the grocery store to buy the required ingredients could vaguely be defined as part of the process "chocolate cake baking". However, at the latest once you want to reuse some of the ingredients to cook another dish (process "crumbing a fish filet"), it would become hard to reference the process' (sub)part ("buying groceries"). Certainly, brewing coffee and setting the table should be defined as separate processes.
+
+As vague rules of thumb, one can recognize a process by either of the following criteria
+
+- you can safely store away the input or output sample, material under suitable conditions (e.g. dry/wet, room temperature / freezer)
+- someone else or you yourself could be interested in the output sample, material or data of your process for another purpose (frozen leaf powder for different extractions and assays)
+- steps are performed across multiple days
+
+As a counter example: centrifugation or incubation and setting samples aside during an extraction.
 
 ### Identify your projects and resources
 
-Once we have clearly defined modular processes, we can start to label them. 
+Once we have clearly defined modular processes, we can start to label them.
 
 
 - project ID => INV ID
@@ -146,7 +166,10 @@ Study Protocol Name
 
 1. Take advantage of ARC's version control system
 2. ARC: structured ELN backup
-3. Daily routine: Export protocol to the ARC of the respective project
+3. Just like an ELN, the ARC can parallel your lab work
+4. Daily routine: Export protocol to the ARC of the respective project
+   1. Things are often "work in progress"
+   2. ARC allows to "end-of-day-dump" your protocols into a subdir 
 
 ## Outlook
 
@@ -224,3 +247,7 @@ With the purpose of protocol editors
 
 <!-- integration (Using an ELN with your ARC) -->
 <!-- you can take to make pave the way towards ELN-ARC integration (Using an ELN with your ARC) -->
+
+<!-- - the ARC is your place to structure, store, annotate, share and evolve all data to your research project -->
+
+<!-- 1:1 Project : ARC -->
