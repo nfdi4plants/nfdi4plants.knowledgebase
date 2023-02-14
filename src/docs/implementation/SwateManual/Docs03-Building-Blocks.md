@@ -21,7 +21,7 @@ Building Blocks are necessary to sustain ontology information in an [annotation 
 </p>
 
 1. Choose the type of building block you want to add (A). For more information on building block types, click [here](#building-block-types).
-2. If you chose a [descriptive building block](#descriptive-building-blocks) type, use searchfield (B) to [search for a Ontology Term](/docs/implementation/SwateManual/docs04-Ontology-Term-Search.html). This term together with your building block type describes your workflow.
+2. If you chose a [descriptive building block](#descriptive-building-blocks) type, use searchfield (B) to [search for a Ontology Term](./docs04-Ontology-Term-Search.html). This term together with your building block type describes your workflow.
     - Example 1: `Component [instrument model]` will describe any mass spectrometry instrument model used in your workflow ([source](http://www.ontobee.org/ontology/MS?iri=http://purl.obolibrary.org/obo/MS_1000031)).
     - <details><summary>Example 1 | Table</summary>
         <p>
@@ -40,7 +40,7 @@ Building Blocks are necessary to sustain ontology information in an [annotation 
 
         </p>
         </details>
-    - If you cannot find a fitting term, you can use the [Advanced Term Search](/docs/implementation/SwateManual/Docs07-Advanced-Term-Search.html) for both searchfield (B) and (D) with the blue links above the *Add building block*-button.
+    - If you cannot find a fitting term, you can use the [Advanced Term Search](./Docs07-Advanced-Term-Search.html) for both searchfield (B) and (D) with the blue links above the *Add building block*-button.
     - If you still cannot find a fitting term, you can write an issue to request a Term [here](https://github.com/nfdi4plants/nfdi4plants_ontology/issues/new/choose) **OR** use free text input.
 3. Click *Add building block* to insert the building block in an existing [Annotation Table](docs/UserDocs/docs02-Annotation-Table.html). The new building block will be added to the right of any currently selected column of the table. 
     - 👀 Swate will automatically skip any reference columns.
@@ -152,7 +152,7 @@ Building Blocks are necessary to sustain ontology information in an [annotation 
 
 ### Add Unit Example
 
-This workflow is especially important when working with [templates](/docs/implementation/SwateManual/Docs05-Templates.html), as these will often have columns which are intended to have a unit which is not set for you by the creators. For example a building block `Characteristics [Plant age]` without a unit. Let's assume you want to use such a template.
+This workflow is especially important when working with [templates](./Docs05-Templates.html), as these will often have columns which are intended to have a unit which is not set for you by the creators. For example a building block `Characteristics [Plant age]` without a unit. Let's assume you want to use such a template.
 
 | Characteristics [Plant age] 	| Term Source REF (NFDI4PSO:0000033) 	| Term Accession Number (NFDI4PSO:0000033) 	|
 |-----------------------------	|------------------------------------	|------------------------------------------	|

@@ -47,7 +47,7 @@ You can find ontology term search fields on the *Building Blocks* and on the *Te
 You can find this function on the *Terms* tab in the <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">navbar</a>. Use this function to insert terms in an [ISA-Tab conform way](https://isa-specs.readthedocs.io/en/latest/isatab.html#ontology-annotations), for example for Swate building blocks.
 
 - Type in the search field to trigger the auto-complete function and find terms. Select the term you want or follow the information under [General](#General) for more information.
-- You can now insert the chosen term anywhere in Excel, not only inside of a Swate [annotation table](/docs/implementation/SwateManual/Docs02-Annotation-Table.html).
+- You can now insert the chosen term anywhere in Excel, not only inside of a Swate [annotation table](./Docs02-Annotation-Table.html).
     - Terms will be added to all selected rows in the format:
 
         `| term name | term source ontology | purl.obolibrary.org link for term |`
@@ -80,7 +80,7 @@ If a user wants to fill in `Component [instrument model]` then they are most lik
 
 ## Relationship-Directed Search Usage
 
-1. Choose any [descriptive building block](/docs/implementation/SwateManual/Docs03-Building-Blocks#descriptive-building-blocks.html) (all building blocks with 3 or more columns work, e.g. `Protocol Type`) and select any number of rows in the main column.
+1. Choose any [descriptive building block](./Docs03-Building-Blocks.html#descriptive-building-blocks) (all building blocks with 3 or more columns work, e.g. `Protocol Type`) and select any number of rows in the main column.
 2. Click in the ontology term search field under the *Terms* tab in the <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">navbar</a>.
     - This will create an additional field in front of the search field with the column header term inside.
     - For the example table under [theory](#Relationship-Directed-Search-Theory) one would click in any row below `Parameter [instrument model]` and then after clicking into the searchfield, one should see `instrument model`. In this case we call `instrument model` the **<u>parent term</u>** and all related terms **<u>child terms</u>**.
