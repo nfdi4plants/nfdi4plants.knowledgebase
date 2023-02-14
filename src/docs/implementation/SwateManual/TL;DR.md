@@ -15,7 +15,7 @@ Swate is a FAIR workflow annotation Microsoft Excel add-in.
 
 ## Installation
 
-Follow the [Quickstart](/docs/UserDocs/docs01-installing-Swate#quickstart) guide (~2min).
+Follow the [Quickstart](/docs/implementation/SwateManual/docs01-installing-Swate.html) guide (~2min).
 
 ## Usage (~10min)
 

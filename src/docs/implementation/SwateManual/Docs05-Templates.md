@@ -28,7 +28,7 @@ To filter with tags, just start typing and Swate will show you related tags. The
 
 (c) Filter the templates by **origin**.
 
-By default the search results will contain both, community made templates and templates made by our data stewards. You can change this behaviour by hovering over the "cur/com" field and picking the behaviour you want. 
+By default the search results will contain both, community made templates and templates made by our data stewards. You can change this behaviour by hovering over the "cur/com" field and picking the behavior you want. 
 
 ### Template information
 

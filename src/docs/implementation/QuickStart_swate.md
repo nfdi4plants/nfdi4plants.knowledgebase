@@ -20,7 +20,7 @@ We are very happy that you chose our tools and infrastructure to create and shar
 ## Swate
 
 DataPLANT provides the Excel Add-In Swate to support you in data annotation.
-Please download and install the newest Swate version according to [these instructions](https://nfdi4plants.github.io/Swate-docs/docs/UserDocs/Docs01-Installing-Swate.html).
+Please download and install the newest Swate version according to [these instructions](https://nfdi4plants.github.io/Swate-docs/docs/implementation/SwateManual/Docs01-Installing-Swate.html).
 
 - Use the *create annotation table* button in the yellow pop-up box (this only appears if you start Swate on an Excel worksheet without an existing annotation table). An annotation table with the building blocks *Source Name* and *Sample Name* will be generated.  
 
