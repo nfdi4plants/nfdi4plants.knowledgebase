@@ -27,7 +27,7 @@ Examples:
 
 ### Annotation Workflow
 
-<img src="./../../images/UserDocs/Swate-Overlay-Exp.jpg?v27.01.202" style="height: 300px">
+<img src="./../../img/Swate-Overlay-Exp.jpg?v27.01.202" style="height: 300px">
 
 *This image displays major areas of the Swate user interface, which will be referenced below.*
 
