@@ -9,7 +9,7 @@ add sidebar: _sidebars\swateManualSidebar.md
 
 <br>
 
-Advanced term search is accessible on multiple occations but is functionally the same. 
+Advanced term search is accessible on multiple occasions, but is functionally the same.
 
 ## How to use
 

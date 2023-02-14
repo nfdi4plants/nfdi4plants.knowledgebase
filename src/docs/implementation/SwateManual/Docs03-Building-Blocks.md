@@ -11,13 +11,13 @@ Building Blocks are necessary to sustain ontology information in an [annotation 
 
 # Usage
 
-1. Navigate to the *Building Blocks* tab in the <a href="./../../images/UserDocs/Swate-Overlay-Exp.jpg" target="_blank">navbar</a>.
+1. Navigate to the *Building Blocks* tab in the <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">navbar</a>.
 2. This page shows two functions, one to add new building blocks and one to update existing building blocks with a unit.
 
 ## Adding a Building Block
 
 <p style="display: flex; justify-content: center">
-<img src="./../../images/UserDocs/Swate-AddBuildingBlock-Exp.jpg?v31.01.22" style="height: 300px">
+<img src="./../../img/Swate-AddBuildingBlock-Exp.jpg?v31.01.22" style="height: 300px">
 </p>
 
 1. Choose the type of building block you want to add (A). For more information on building block types, click [here](#building-block-types).
@@ -45,21 +45,21 @@ Building Blocks are necessary to sustain ontology information in an [annotation 
 3. Click *Add building block* to insert the building block in an existing [Annotation Table](docs/UserDocs/docs02-Annotation-Table.html). The new building block will be added to the right of any currently selected column of the table. 
     - 👀 Swate will automatically skip any reference columns.
 4. Any input or output building block will only add a <u>single</u> column, any descriptive building block will add <u>three</u> columns or <u>four</u> column if it is created with a unit. Only the main column column will be visible by default, all other reference columns will be hidden.
-    - 👀 You can hold <kbd>Ctrl</kbd> and click the *Autoformat Table* <a href="./../../images/UserDocs/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a> to adjust column widths and unhide all hidden columns.   
+    - 👀 You can hold <kbd>Ctrl</kbd> and click the *Autoformat Table* <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a> to adjust column widths and unhide all hidden columns.   
 
 <br>
 
 ## Adding/Changing Unit of existing Building Block
 
 <p style="display: flex; justify-content: center">
-<img src="./../../images/UserDocs/Swate-UpdateUnit-Exp.jpg?v01.02.22" style="height: 200px">
+<img src="./../../img/Swate-UpdateUnit-Exp.jpg?v01.02.22" style="height: 200px">
 </p>
 
 1. Choose the building block for which you want to change the unit.
 2. Select any number of rows of that building block's main column.
 3. Use the searchfield to search for the wanted unit and click on the unit in the dropdown to select it.
 4. Click *Update unit for cells* to update the unit **only** for the selected rows.
-5. Update your tables unit references by clicking the *Update Ontology Terms* <a href="./../../images/UserDocs/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>. 
+5. Update your tables unit references by clicking the *Update Ontology Terms* <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>. 
 
 ### Update Unit Example
 
@@ -74,7 +74,7 @@ Building Blocks are necessary to sustain ontology information in an [annotation 
 
         </p>
         </details>
-    - 👀 You can hold <kbd>Ctrl</kbd> and click the *Autoformat Table* <a href="./../../images/UserDocs/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a> to adjust column widths and unhide all hidden columns.  
+    - 👀 You can hold <kbd>Ctrl</kbd> and click the *Autoformat Table* <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a> to adjust column widths and unhide all hidden columns.  
 2. Create more rows for the table and fill the main column (`Parameter [vegetative growth time]`) with some data.
     - <details><summary>Expanded Table</summary>
         <p>
@@ -93,8 +93,8 @@ Building Blocks are necessary to sustain ontology information in an [annotation 
         </p>
         </details>
     - When typing numbers into these cells, Excel will add the unit to the number values.
-    - 👀 The unit information for the main column cells can be seen in Excel. Select main column cells → `Home` → `Number` → small expand symbol on the bottom right (<a href="./../../images/UserDocs/Swate-numberFormat-Exp.jpg?v01.02.22" target="_blank">image</a>).
-3. Click the *Update Ontology Terms* <a href="./../../images/UserDocs/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
+    - 👀 The unit information for the main column cells can be seen in Excel. Select main column cells → `Home` → `Number` → small expand symbol on the bottom right (<a href="./../../img/Swate-numberFormat-Exp.jpg?v01.02.22" target="_blank">image</a>).
+3. Click the *Update Ontology Terms* <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
     - <details><summary>Expanded Table</summary>
         <p>
 
@@ -131,7 +131,7 @@ Building Blocks are necessary to sustain ontology information in an [annotation 
         </details>
     - ⚠️ Notize how this only changed the values in the main column **and** the [number format](/images/UserDocs/Swate-numberFormat-Exp.jpg?v01.02.22).
         - 👀 Swate bases it's unit reference only on the [number format](/images/UserDocs/Swate-numberFormat-Exp.jpg?v01.02.22) of the related cells. You can change this by hand in the following format: `0,00 "unit term name"`. 
-6. Click the *Update Ontology Terms* <a href="./../../images/UserDocs/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
+6. Click the *Update Ontology Terms* <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
     - <details><summary>Expanded Table</summary>
         <p>
 
@@ -197,7 +197,7 @@ This workflow is especially important when working with [templates](/docs/UserDo
             </details>
     - ⚠️ Notize how this only changed the values in the main column **and** the [number format](/images/UserDocs/Swate-numberFormat-Exp.jpg?v01.02.22).
 
-3. Click the *Update Ontology Terms* <a href="./../../images/UserDocs/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
+3. Click the *Update Ontology Terms* <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
     - <details><summary>Expanded Table </summary>
         <p>
 
