@@ -20,6 +20,7 @@
 # Filling cells with ontology terms:/docs/implementation/SwateManual/Docs04-Ontology-Term-Search.html
 # Advanced Term Search:/docs/implementation/SwateManual/Docs07-Advanced-Term-Search.html
 # Templates:/docs/implementation/SwateManual/Docs05-Templates.html
+# File Picker:/docs/implementation/SwateManual/Using-the-File-Picker.html
 ```
 
 ```Expert Features
