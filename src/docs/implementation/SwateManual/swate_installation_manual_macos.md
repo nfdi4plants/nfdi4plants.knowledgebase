@@ -3,7 +3,7 @@ layout: docs
 title: Swate Manual Installation for MacOS Excel Desktop
 published: 2023-02-01
 add toc: false
-add sidebar: _sidebars\mainSidebar.md
+add sidebar: _sidebars\swateManualSidebar.md
 ---
 
 > Adapted from: https://learn.microsoft.com/en-us/office/dev/add-ins/testing/sideload-an-office-add-in-on-mac

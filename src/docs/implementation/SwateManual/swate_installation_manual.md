@@ -3,7 +3,7 @@ layout: docs
 title: Swate Manual Installation
 published: 2023-02-01
 add toc: false
-add sidebar: _sidebars\mainSidebar.md
+add sidebar: _sidebars\swateManualSidebar.md
 ---
 
 1. Download the latest [Swate manifests](https://github.com/nfdi4plants/Swate/blob/developer/.assets/swate-win.zip?raw=true)

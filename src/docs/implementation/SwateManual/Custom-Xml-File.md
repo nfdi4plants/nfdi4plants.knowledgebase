@@ -4,7 +4,7 @@ title: Custom XML (deprecated)
 published: 2022-09-19
 Author: Kevin Frey
 add toc: false
-add sidebar: _sidebars\mainSidebar.md
+add sidebar: _sidebars\swateManualSidebar.md
 ---
 
 # Base Structure

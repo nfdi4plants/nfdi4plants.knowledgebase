@@ -4,7 +4,7 @@ title: Building Blocks
 published: 2022-09-19
 Author: Kevin Frey
 add toc: true
-add sidebar: _sidebars\mainSidebar.md
+add sidebar: _sidebars\swateManualSidebar.md
 ---
 
 Building Blocks are necessary to sustain ontology information in an [annotation table](https://github.com/nfdi4plants/Swate/wiki/Docs02-Annotation-Table) and are designed to follow the core idea behind the [ISA-Tab](https://isa-specs.readthedocs.io/en/latest/isatab.html) format, altough simplified. Any Swate annotation table can be converted to ISA-Json.

@@ -4,7 +4,7 @@ title: TL;DR
 published: 2022-09-19
 Author: Kevin Frey
 add toc: false
-add sidebar: _sidebars\mainSidebar.md
+add sidebar: _sidebars\swateManualSidebar.md
 ---
 
 Swate is a FAIR workflow annotation Microsoft Excel add-in. 
