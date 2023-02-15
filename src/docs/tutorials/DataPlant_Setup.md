@@ -98,7 +98,7 @@ Within DataPLANT we communicate via Microsoft Teams. If you would like to join D
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/> "ArcCommander"
 [gh-ArcCommander-Wiki]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
-[gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
+[gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
 
 <!-- Links to external (ext-) sources -->
 

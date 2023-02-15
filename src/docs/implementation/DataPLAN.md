@@ -89,7 +89,6 @@ Give [DataPLAN][hp-DataPLAN] a try and share your feedback or feature request wi
 [gh-DataPlant]: <https://github.com/nfdi4plants/ARC-specification/> "GitHub DataPLANT"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-ArcCommander-Wiki]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
-[gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
 
 
 

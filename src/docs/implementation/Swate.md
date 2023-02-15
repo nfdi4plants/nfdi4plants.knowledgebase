@@ -51,12 +51,7 @@ If you cannot find a fitting term for your data annotation, you can try to use S
 After reading this article, you should 
 
 - check the [Swate QuickStart][kb-QuickStart_Swate] and
-- explore the [Swate docs][gh-SwateWiki] for an in-depth details.
-
-
-
-
-
+- explore the [Swate Manual][kb-SwateManual] for in-depth details.
 
 <!-- Links to DataPLANT knowledge base (kb-) -->
 
@@ -71,6 +66,7 @@ After reading this article, you should
 [kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
 [kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
 [kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
+[kb-SwateManual]: ../implementation/SwateManual/index.html "Swate Manual"
 
 <!-- kb-Implementation -->
 [kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
@@ -80,7 +76,6 @@ After reading this article, you should
 <!-- kb-Tutorials -->
 [kb-QuickStart_arc]: ../tutorials/QuickStart_arcCommander.html "Quickstart ARC"
 [kb-QuickStart_Swate]: ../tutorials/QuickStart_swate.html "Swate QuickStart"
-
 
 <!-- Links to DataPLANT Homepage (hp-) -->
 
@@ -94,7 +89,6 @@ After reading this article, you should
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/> "ArcCommander"
 [gh-ArcCommander-Wiki]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
-[gh-Swate]: <https://github.com/nfdi4plants/Swate/> "Swate repository"
-[gh-SwateWiki]: <https://nfdi4plants.github.io/Swate-docs/index.html> "Swate Wiki"
+[gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
 
 <!-- Links to external (ext-) sources -->

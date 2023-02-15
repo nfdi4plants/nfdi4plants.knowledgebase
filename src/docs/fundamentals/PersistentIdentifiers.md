@@ -101,7 +101,6 @@ Name | Type | Tasks on metadata
 [gh-DataPlant]: <https://github.com/nfdi4plants/ARC-specification/> "GitHub DataPLANT"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-ArcCommander-Wiki]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
-[gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
 
 [PURLs]: https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator "Wikipedia PURLs"
 [Handles]: https://en.wikipedia.org/wiki/Handle_System "Wikipedia Handles"

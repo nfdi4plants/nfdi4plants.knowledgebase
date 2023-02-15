@@ -95,4 +95,4 @@ Name | Type | Tasks on metadata
 <!-- DataPLANT web links -->
 
 [gh-ArcCommander-Wiki]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
-[gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
+[gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
