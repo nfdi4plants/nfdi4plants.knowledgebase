@@ -26,7 +26,7 @@ You can find ontology term search fields on the *Building Blocks* and on the *Te
 **Features:**
 - Access to the SwateDB with a list of established, [external ontologies](https://github.com/nfdi4plants/nfdi4plants_ontology/blob/main/ext_ontologies.include) deemed fit for use in plant science. In addition we feature our very own ontology [DPBO](https://github.com/nfdi4plants/nfdi4plants_ontology/blob/main/nfdi4plants_ontology.obo), which we extend with missing but necessary terms.
     - External ontologies are taken from the [obofoundry](https://obofoundry.org) and updated regularly.
-    - 👀 You can always ask us to add existing terms/ontologies or even new terms to our database. If you wish to do so, you can fill out an issue [here](https://github.com/nfdi4plants/nfdi4plants_ontology/issues/new/choose).
+    - 👀 If you miss a term or ontology, please follow the [DPBO contribution guide](https://github.com/nfdi4plants/nfdi4plants_ontology) to let us know.
 - Search through database with autocomplete search on term names.
 - If you already know what you are searching for, you can also type in the term unique identifier (example: `MS:1000031`). 
     - To trigger this search the input must match the [Swate Regex pattern](http://regexstorm.net/tester?p=%5b%5cw%5d%2b%3f%3a%5b%5cd%5d%2b&i=MS%3a1000031%0d%0aDPBO%3a1000161%0d%0a) for term accessions.
