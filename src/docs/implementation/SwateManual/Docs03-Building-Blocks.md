@@ -42,7 +42,7 @@ Building Blocks are necessary to sustain ontology information in an [annotation 
         </details>
     - If you cannot find a fitting term, you can use the [Advanced Term Search](./Docs07-Advanced-Term-Search.html) for both searchfield (B) and (D) with the blue links above the *Add building block*-button.
     - If you still cannot find a fitting term, you can write an issue to request a Term [here](https://github.com/nfdi4plants/nfdi4plants_ontology/issues/new/choose) **OR** use free text input.
-3. Click *Add building block* to insert the building block in an existing [Annotation Table](docs/UserDocs/docs02-Annotation-Table.html). The new building block will be added to the right of any currently selected column of the table. 
+3. Click *Add building block* to insert the building block in an existing [Annotation Table](./Docs02-Annotation-Table.html). The new building block will be added to the right of any currently selected column of the table. 
     - 👀 Swate will automatically skip any reference columns.
 4. Any input or output building block will only add a <u>single</u> column, any descriptive building block will add <u>three</u> columns or <u>four</u> column if it is created with a unit. Only the main column column will be visible by default, all other reference columns will be hidden.
     - 👀 You can hold <kbd>Ctrl</kbd> and click the *Autoformat Table* <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a> to adjust column widths and unhide all hidden columns.   
