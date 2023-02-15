@@ -43,7 +43,7 @@ The following table gives an overview about DataPLANT tools and services related
 
 Name | Type | Tasks on data sharing
 ----------------|-----------|------------------
-**[ARC Commander][gh-ArcCommander-Wiki]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
+**[ARC Commander][kb-ArcCommander-Manual]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
 **[ARC][kb-AnnotatedResearchContext]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>ARCs are git repositories</li><li>Package data with metadata in a defined format</li></ul>
 **[DataHUB][kb-DataHub]** | Service | **Share:** <ul><li>DataPLANT-customized GitLab instance</li><li>Infrastructure-as-code: on-premise solution</li><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 <!-- - Replace arcCommander link with KB link (once available) -->
@@ -65,7 +65,7 @@ In order to use the [DataHUB][hp-DataHUB] and other DataPLANT infrastructure and
 
 [hp-Registration]: <https://register.nfdi4plants.org/> "DataPLANT Registration"
 [hp-DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"
-[gh-ArcCommander-Wiki]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
+[kb-ArcCommander-Manual]: ../implementation/ArcCommanderManual/index.html "ARC Commander Manual"
 
 <!-- Reference web links -->
 
