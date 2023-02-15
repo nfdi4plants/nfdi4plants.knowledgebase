@@ -1,0 +1,175 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - ISA-JSON import and export
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Swate Manual
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/index.html">Welcome</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Setup
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/Docs01-Installing-Swate.html">Installing Swate</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/swate_installation_browser.html">Browser</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/swate_installation_desktop.html">Desktop (via installer)</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/swate_installation_manual.html">Desktop (manually)</h1>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/swate_installation_manual_macos.html">MacOS</h2>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/swate_installation_organization.html">Organization-wide</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Core Features
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/Docs02-Annotation-Table.html">Annotation tables</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/Docs03-Building-Blocks.html">Building blocks</h1>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/swate_blocks_types.html">Building Block Types</h2>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/swate_blocks_add.html">Adding a Building Block</h2>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/swate_blocks_units.html">Using Units with Building Blocks</h2>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/Docs04-Ontology-Term-Search.html">Filling cells with ontology terms</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/Docs07-Advanced-Term-Search.html">Advanced Term Search</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/docs04-Ontology-Term-Search.html">Filling cells with ontology terms</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/Docs05-Templates.html">Templates</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/Using-the-File-Picker.html">File Picker</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Expert Features
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/Docs06-ISA-JSON.html">ISA-JSON</h1>
+<!-- 
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Tutorials
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/TL;DR.html">TL;DR</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          -->
+        </div>
+        
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Back to Knowledge Base
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/index.html">🔙 Introduction</h1>
+
+      </nfdi-sidebar-element>
+      <h1 class="front-header">
+        ISA-JSON import and export
+      </h1>
+      <i class="help">
+        last updated at 2022-09-19
+      </i>
+      <br>
+<p>It is possible to export and import your Swate annotation tables to ISA-JSON conform .json files.</p>
+<nfdi-h2 id="isa-json-and-isadotnet">ISA-JSON and ISADotNet</nfdi-h2>
+<p>We follow ISA-JSON <a href="https://isa-specs.readthedocs.io/en/latest/isajson.html#schemas">schemas</a>. To ensure correct Swate import we need to add additional information to the json files.</p>
+<p>For example:</p>
+<ul>
+<li>Add comments to remember column position.</li>
+</ul>
+<nfdi-code class="language-json">"comments": [
+    {
+        "name": "ValueIndex",
+        "value": "0"
+    }
+]
+</nfdi-code>
+<ul>
+<li>Add the term accession to the name to store the unique identifier of ontology terms.</li>
+</ul>
+<nfdi-code class="language-json">"componentName": "LECO instrument model (MS:1001800)",
+</nfdi-code>
+<nfdi-h2 id="export">Export</nfdi-h2>
+<p>This is done via the Swate.Experts interface under the <em>Json Exporter</em> tab.
+You can choose multiple option to export your Swate tables:</p>
+<ul>
+<li>Export the active table or all annotation tables in the workbook.</li>
+<li>Export as <a href="https://isa-specs.readthedocs.io/en/latest/isajson.html#assay-schema-json">assay.json</a> or <a href="https://isa-specs.readthedocs.io/en/latest/isajson.html#process-schema-json">sequence of process.json</a>.</li>
+</ul>
+<nfdi-h2 id="import">Import</nfdi-h2>
+<p>You can import all files created by the Swate export function by using the Swate.Core &quot;Add template(s) from file&quot; option under the &quot;Templates&quot; tab.</p>
+<p>The app will try to fit the imported json to any supported information and directly insert all tables into the excel workbook.</p>
+
+      <h3>
+        DataPLANT Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <span style="display: inline-flex; flex-wrap: wrap;">
+          <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+            directly
+          </a>
+          .
+        </span>
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/SwateManual/Docs06-ISA-JSON.md" style="margin-left: auto; display: block; width: 130px;">
+          ✏️ Edit this page
+        </a>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>

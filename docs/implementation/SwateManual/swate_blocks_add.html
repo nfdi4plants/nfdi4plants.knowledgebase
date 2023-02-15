@@ -1,0 +1,204 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - Adding a Building Block
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Swate Manual
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/index.html">Welcome</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Setup
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/Docs01-Installing-Swate.html">Installing Swate</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/swate_installation_browser.html">Browser</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/swate_installation_desktop.html">Desktop (via installer)</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/swate_installation_manual.html">Desktop (manually)</h1>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/swate_installation_manual_macos.html">MacOS</h2>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/swate_installation_organization.html">Organization-wide</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Core Features
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/Docs02-Annotation-Table.html">Annotation tables</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/Docs03-Building-Blocks.html">Building blocks</h1>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/swate_blocks_types.html">Building Block Types</h2>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/swate_blocks_add.html">Adding a Building Block</h2>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/swate_blocks_units.html">Using Units with Building Blocks</h2>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/Docs04-Ontology-Term-Search.html">Filling cells with ontology terms</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/Docs07-Advanced-Term-Search.html">Advanced Term Search</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/docs04-Ontology-Term-Search.html">Filling cells with ontology terms</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/Docs05-Templates.html">Templates</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/Using-the-File-Picker.html">File Picker</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Expert Features
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/Docs06-ISA-JSON.html">ISA-JSON</h1>
+<!-- 
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Tutorials
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/TL;DR.html">TL;DR</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          -->
+        </div>
+        
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Back to Knowledge Base
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/index.html">🔙 Introduction</h1>
+
+      </nfdi-sidebar-element>
+      <h1 class="front-header">
+        Adding a Building Block
+      </h1>
+      <i class="help">
+        last updated at 2023-02-15
+      </i>
+      <nfdi-toc></nfdi-toc>
+      <p style="display: flex; justify-content: center">
+<img src="./../../img/Swate-AddBuildingBlock-Exp.jpg?v31.01.22" style="height: 300px">
+</p>
+<ol>
+<li>Choose the type of building block you want to add (A). For more information on building block types, click <a href="#building-block-types">here</a>.</li>
+<li>If you chose a <a href="#descriptive-building-blocks">descriptive building block</a> type, use searchfield (B) to <a href="./docs04-Ontology-Term-Search.html">search for a Ontology Term</a>. This term together with your building block type describes your workflow.
+<ul>
+<li><p>Example 1: <code>Component [instrument model]</code> will describe any mass spectrometry instrument model used in your workflow (<a href="http://www.ontobee.org/ontology/MS?iri=http://purl.obolibrary.org/obo/MS_1000031">source</a>).</p>
+</li>
+<li><details><summary>Example 1 | Table</summary>
+  <p>
+<table>
+<thead>
+<tr>
+<th>Component [instrument model]</th>
+<th>Term Source REF (MS:1000031)</th>
+<th>Term Accession Number (MS:1000031)</th>
+</tr>
+</thead>
+</table>
+  </p>
+  </details>
+</li>
+<li><p>Example 2 with unit: If you want to add a building block with a unit, check box (C) and use searchfield (D) to look for a fitting unit term. <code>Factor [temperature]</code> and <code>degree Celsius</code> as unit.</p>
+</li>
+<li><details><summary>Example 2 with unit | Table</summary>
+  <p>
+<table>
+<thead>
+<tr>
+<th>Factor [temperature]</th>
+<th>Unit</th>
+<th>Term Source REF (PATO:0000146)</th>
+<th>Term Accession Number (PATO:0000146)</th>
+</tr>
+</thead>
+</table>
+  </p>
+  </details>
+</li>
+<li><p>If you cannot find a fitting term, you can use the <a href="./Docs07-Advanced-Term-Search.html">Advanced Term Search</a> for both searchfield (B) and (D) with the blue links above the <em>Add building block</em>-button.</p>
+</li>
+<li><p>If you still cannot find a fitting term, you can write an issue to request a Term <a href="https://github.com/nfdi4plants/nfdi4plants_ontology/issues/new/choose">here</a> <strong>OR</strong> use free text input.</p>
+</li>
+</ul>
+</li>
+<li>Click <em>Add building block</em> to insert the building block in an existing <a href="./Docs02-Annotation-Table.html">Annotation Table</a>. The new building block will be added to the right of any currently selected column of the table.
+<ul>
+<li>👀 Swate will automatically skip any reference columns.</li>
+</ul>
+</li>
+<li>Any input or output building block will only add a <u>single</u> column, any descriptive building block will add <u>three</u> columns or <u>four</u> column if it is created with a unit. Only the main column column will be visible by default, all other reference columns will be hidden.
+<ul>
+<li>👀 You can hold <kbd>Ctrl</kbd> and click the <em>Autoformat Table</em> <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a> to adjust column widths and unhide all hidden columns.</li>
+</ul>
+</li>
+</ol>
+<br>
+
+      <h3>
+        DataPLANT Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <span style="display: inline-flex; flex-wrap: wrap;">
+          <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+            directly
+          </a>
+          .
+        </span>
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/SwateManual/swate_blocks_add.md" style="margin-left: auto; display: block; width: 130px;">
+          ✏️ Edit this page
+        </a>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>
