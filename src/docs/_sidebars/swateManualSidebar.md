@@ -17,6 +17,9 @@
 ```Core Features
 # Annotation tables:/docs/implementation/SwateManual/Docs02-Annotation-Table.html
 # Building blocks:/docs/implementation/SwateManual/Docs03-Building-Blocks.html
+## Building Block Types:/docs/implementation/SwateManual/swate_blocks_types.html
+## Adding a Building Block:/docs/implementation/SwateManual/swate_blocks_add.html
+## Using Units with Building Blocks:/docs/implementation/SwateManual/swate_blocks_units.html
 # Filling cells with ontology terms:/docs/implementation/SwateManual/Docs04-Ontology-Term-Search.html
 # Advanced Term Search:/docs/implementation/SwateManual/Docs07-Advanced-Term-Search.html
 # Filling cells with ontology terms:/docs/implementation/SwateManual/docs04-Ontology-Term-Search.html
