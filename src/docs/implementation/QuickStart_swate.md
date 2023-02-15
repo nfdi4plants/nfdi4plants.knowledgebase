@@ -20,7 +20,7 @@ We are very happy that you chose our tools and infrastructure to create and shar
 ## Swate
 
 DataPLANT provides the Excel Add-In Swate to support you in data annotation.
-Please download and install the newest Swate version according to [these instructions](https://nfdi4plants.github.io/Swate-docs/docs/UserDocs/Docs01-Installing-Swate.html).
+Please download and install the newest Swate version according to [these instructions](https://nfdi4plants.github.io/Swate-docs/docs/implementation/SwateManual/Docs01-Installing-Swate.html).
 
 - Use the *create annotation table* button in the yellow pop-up box (this only appears if you start Swate on an Excel worksheet without an existing annotation table). An annotation table with the building blocks *Source Name* and *Sample Name* will be generated.  
 
@@ -38,7 +38,7 @@ Briefly:
 
 1. Choose the type of building block you want to add (A).
 
-2. If you chose a descriptive building block type (building blocks besides Sample Name, Source Name, and Data File Name), use search field (B) to search for an Ontology Term. Swate accesses the SwateDB with a list of established external ontologies designated suitable for use in plant science. In addition, we feature our own ontology NFDI4PSO to extend the DB with missing, but necessary terms.
+2. If you chose a descriptive building block type (building blocks besides Sample Name, Source Name, and Data File Name), use search field (B) to search for an Ontology Term. Swate accesses the SwateDB with a list of established external ontologies designated suitable for use in plant science. In addition, we feature our own ontology DPBO to extend the DB with missing, but necessary terms.
 
 3. If you want to add a building block with a unit, check box (C) and use search field (D) to look for a fitting unit term, e.g. degree Celsius as unit for Parameter \[temperature\].
 
