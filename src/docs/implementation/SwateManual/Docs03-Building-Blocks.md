@@ -154,7 +154,7 @@ Building Blocks are necessary to sustain ontology information in an [annotation 
 
 This workflow is especially important when working with [templates](./Docs05-Templates.html), as these will often have columns which are intended to have a unit which is not set for you by the creators. For example a building block `Characteristics [Plant age]` without a unit. Let's assume you want to use such a template.
 
-| Characteristics [Plant age] 	| Term Source REF (NFDI4PSO:0000033) 	| Term Accession Number (NFDI4PSO:0000033) 	|
+| Characteristics [Plant age] 	| Term Source REF (DPBO:0000033) 	| Term Accession Number (DPBO:0000033) 	|
 |-----------------------------	|------------------------------------	|------------------------------------------	|
 |                             	|                                    	|                                          	|
 
@@ -163,7 +163,7 @@ This workflow is especially important when working with [templates](./Docs05-Tem
     - <details><summary>Expanded Table</summary>
         <p>
 
-        | Characteristics [Plant age] 	| Unit 	| Term Source REF (NFDI4PSO:0000033) 	| Term Accession Number (NFDI4PSO:0000033) 	|
+        | Characteristics [Plant age] 	| Unit 	| Term Source REF (DPBO:0000033) 	| Term Accession Number (DPBO:0000033) 	|
         |-----------------------------	|------	|------------------------------------	|------------------------------------------	|
         |                             	|      	|                                    	|                                          	|
 
@@ -174,7 +174,7 @@ This workflow is especially important when working with [templates](./Docs05-Tem
         - <details><summary>Expanded Table | Before</summary>
             <p>
 
-            | Characteristics [Plant age] 	| Term Source REF (NFDI4PSO:0000033) 	| Term Accession Number (NFDI4PSO:0000033) 	|
+            | Characteristics [Plant age] 	| Term Source REF (DPBO:0000033) 	| Term Accession Number (DPBO:0000033) 	|
             |-----------------------------	|------------------------------------	|------------------------------------------	|
             | 10                          	|                                    	|                                          	|
             | 10                          	|                                    	|                                          	|
@@ -186,7 +186,7 @@ This workflow is especially important when working with [templates](./Docs05-Tem
         - <details><summary>Expanded Table | After</summary>
             <p>
 
-            | Characteristics [Plant age] 	| Unit 	| Term Source REF (NFDI4PSO:0000033) 	| Term Accession Number (NFDI4PSO:0000033) 	|
+            | Characteristics [Plant age] 	| Unit 	| Term Source REF (DPBO:0000033) 	| Term Accession Number (DPBO:0000033) 	|
             |-----------------------------	|------	|------------------------------------	|------------------------------------------	|
             | 10,00 day                   	|      	|                                    	|                                          	|
             | 10,00 day                 	|      	|                                    	|                                          	|
@@ -201,7 +201,7 @@ This workflow is especially important when working with [templates](./Docs05-Tem
     - <details><summary>Expanded Table </summary>
         <p>
 
-        | Characteristics [Plant age] 	| Unit 	| Term Source REF (NFDI4PSO:0000033) 	| Term Accession Number (NFDI4PSO:0000033)  	|
+        | Characteristics [Plant age] 	| Unit 	| Term Source REF (DPBO:0000033) 	| Term Accession Number (DPBO:0000033)  	|
         |-----------------------------	|------	|------------------------------------	|-------------------------------------------	|
         | 10,00 day                   	| day  	| UO                                 	| http://purl.obolibrary.org/obo/UO_0000033 	|
         | 10,00   day                 	| day  	| UO                                 	| http://purl.obolibrary.org/obo/UO_0000033 	|
@@ -455,7 +455,7 @@ In a study measuring the influence of different quantities of fertilizer on plan
 <details><summary>Extended table.</summary>
 <p>
 
-| Characteristics [Organism part] 	| Term Source REF (NFDI4PSO:0000032) 	| Term Accession Number (NFDI4PSO:0000032)  	| Characteristics [age]       	| Term Source REF (NFDI4PSO:0000033) 	| Term Accession Number (NFDI4PSO:0000033) 	| Characteristics [Developmental Stage] 	| Term Source REF (NFDI4PSO:0000070) 	| Term Accession Number (NFDI4PSO:0000070) 	|
+| Characteristics [Organism part] 	| Term Source REF (DPBO:0000032) 	| Term Accession Number (DPBO:0000032)  	| Characteristics [age]       	| Term Source REF (DPBO:0000033) 	| Term Accession Number (DPBO:0000033) 	| Characteristics [Developmental Stage] 	| Term Source REF (DPBO:0000070) 	| Term Accession Number (DPBO:0000070) 	|
 |---------------------------------	|------------------------------------	|-------------------------------------------	|-----------------------------	|------------------------------------	|------------------------------------------	|---------------------------------------	|------------------------------------	|------------------------------------------	|
 | Leaf                            	| PO                                 	| http://purl.obolibrary.org/obo/PO_0025034 	| 28 days after germination   	| user-specific                      	| user-specific                            	| Mature                                	| user-specific                      	| user-specific                            	|
 | Leaf                            	| PO                                 	| http://purl.obolibrary.org/obo/PO_0025034 	| 28 days after   germination 	| user-specific                      	| user-specific                            	| Mature                                	| user-specific                      	| user-specific                            	|
@@ -487,9 +487,9 @@ These columns have been added to better support conversion to endpoint repositor
 <details><summary>Example | Growth Protocol.</summary>
 <p>
 
-| Protocol Type	| Term Source REF (NFDI4PSO:1000161) 	| Term Accession Number (NFDI4PSO:1000161)        	|
+| Protocol Type	| Term Source REF (DPBO:1000161) 	| Term Accession Number (DPBO:1000161)        	|
 |------------------------------	| ------------------------------	|-------------------------------------------	|
-| growth protocol   | NFDI4PSO | http://purl.obolibrary.org/obo/NFDI4PSO_1000162	|
+| growth protocol   | DPBO | http://purl.obolibrary.org/obo/DPBO_1000162	|
 
 </p>
 </details>
