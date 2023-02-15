@@ -74,7 +74,7 @@ Let's look at this with an example:
 |-------------|------------------------------|------------------------------|------------------------------------|-------------|
 |             |                              |                              |                                    |             |
 
-If a user wants to fill in `Component [instrument model]` then they are most likely looking for the instrument model used in their experimental workflow. Here for example the instrument model series and the exact instrument models are connected to `instrument model (MS:1000031)` via [`is_a` relationships](/images/UserDocs/Swate-RelationshipGraph-Exp.jpg). 
+If a user wants to fill in `Component [instrument model]` then they are most likely looking for the instrument model used in their experimental workflow. Here for example the instrument model series and the exact instrument models are connected to `instrument model (MS:1000031)` via [`is_a` relationships](./../../img/Swate-RelationshipGraph-Exp.jpg).
 
 <br>
 

@@ -129,8 +129,8 @@ Building Blocks are necessary to sustain ontology information in an [annotation 
 
         </p>
         </details>
-    - ⚠️ Notize how this only changed the values in the main column **and** the [number format](/images/UserDocs/Swate-numberFormat-Exp.jpg?v01.02.22).
-        - 👀 Swate bases it's unit reference only on the [number format](/images/UserDocs/Swate-numberFormat-Exp.jpg?v01.02.22) of the related cells. You can change this by hand in the following format: `0,00 "unit term name"`. 
+    - ⚠️ Notize how this only changed the values in the main column **and** the [number format](./../../img/Swate-numberFormat-Exp.jpg?v01.02.22).
+        - 👀 Swate bases it's unit reference only on the [number format](./../../img/Swate-numberFormat-Exp.jpg?v01.02.22) of the related cells. You can change this by hand in the following format: `0,00 "unit term name"`. 
 6. Click the *Update Ontology Terms* <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
     - <details><summary>Expanded Table</summary>
         <p>
@@ -195,7 +195,7 @@ This workflow is especially important when working with [templates](./Docs05-Tem
 
             </p>
             </details>
-    - ⚠️ Notize how this only changed the values in the main column **and** the [number format](/images/UserDocs/Swate-numberFormat-Exp.jpg?v01.02.22).
+    - ⚠️ Notize how this only changed the values in the main column **and** the [number format](./../../img/Swate-numberFormat-Exp.jpg?v01.02.22).
 
 3. Click the *Update Ontology Terms* <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
     - <details><summary>Expanded Table </summary>
