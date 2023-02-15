@@ -29,10 +29,6 @@
 ```Expert Features
 # ISA-JSON:/docs/implementation/SwateManual/Docs06-ISA-JSON.html
 ```
-<!-- 
-```Tutorials
-# TL;DR:/docs/implementation/SwateManual/TL;DR.html
-``` -->
 
 ```Back to Knowledge Base
 # 🔙 Introduction:/index.html

@@ -23,6 +23,7 @@
 ## Manual: /docs/implementation/ArcCommanderManual/index.html
 # Swate:/docs/implementation/Swate.html
 ## QuickStart:/docs/implementation/QuickStart_swate.html
+## Walk-through:/docs/implementation/QuickStart_swate_walkthrough.html
 ## Best Practices For Data Annotation:/docs/implementation/AnnotationPatterns.html
 ## Manual: /docs/implementation/SwateManual/index.html
 # DataHUB:/docs/implementation/DataHub.html
