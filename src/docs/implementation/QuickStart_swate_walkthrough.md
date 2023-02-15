@@ -1,33 +1,30 @@
 ---
 layout: docs
-title: TL;DR
-published: 2022-09-19
+title: Swate Walk-through
+published: 2023-02-15
 Author: Kevin Frey
 add toc: false
-add sidebar: _sidebars\swateManualSidebar.md
+add sidebar: _sidebars/mainSidebar.md
 ---
 
-Swate is a FAIR workflow annotation Microsoft Excel add-in. 
+DataPLANT provides the Excel Add-In Swate to support you in data annotation.
+In this walk-through, we guide you on annotating your data using Swate with a show-case example.
 
-## Requirements
+## Installation (~2 min)
 
-1. Existing Microsoft Account with Excel 2019 or newer **OR** a free Microsoft account to use Excel online.
+Before we can start, please follow the [installation instructions](./SwateManual/Docs01-Installing-Swate.html) in the Swate Manual.
 
-## Installation
-
-Follow the [Quickstart](./docs01-installing-Swate.html) guide (~2min).
-
-## Usage (~10min)
+## Usage (~10 min)
 
 Swate uses an Excel table as main tool to annotate workflows. Each table represent one process from input to output.
 
 Examples:
-- Plant -Sampling-> Extract
-- Measured data files -statistical analysis-> result files
+- Plants &rarr; sampling &rarr; extract
+- Measured data files  &rarr; statistical analysis  &rarr; result files
 
 ### Annotation Workflow
 
-<img src="./../../img/Swate-Overlay-Exp.jpg?v27.01.202" style="height: 300px">
+<img src="./../img/Swate-Overlay-Exp.jpg?v27.01.202" style="height: 300px">
 
 *This image displays major areas of the Swate user interface, which will be referenced below.*
 
