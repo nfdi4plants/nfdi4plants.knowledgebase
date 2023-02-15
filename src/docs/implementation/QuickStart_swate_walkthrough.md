@@ -16,11 +16,22 @@ Before we can start, please follow the [installation instructions](./SwateManual
 
 ## Usage (~10 min)
 
-Swate uses an Excel table as main tool to annotate workflows. Each table represent one process from input to output.
+### Tables
 
-Examples:
+Swate uses an Excel table as main tool to annotate workflows. Each table represents one process from input to output.
+
+For example:
+
 - Plants &rarr; sampling &rarr; extract
 - Measured data files  &rarr; statistical analysis  &rarr; result files
+
+> :bulb: The Excel table feature allows to group data that belongs together inside one sheet. This is not to be confused with a (work)sheet or workbook.
+> ```bash
+> workbook (e.g. isa.assay.xlsx)
+>  └── worksheet (e.g. plant_growth)
+>       └── table (e.g. annotationTable)
+> ```
+
 
 ### Annotation Workflow
 
@@ -30,7 +41,7 @@ Examples:
 
 1. Start by creating a Swate annotation table.
     - Use the yellow box pop-up button *OR* click the *Add Annotation Table* quick access button.
-    - Only one table per Excel sheet.
+    - Only one annotation table can be added per Excel sheet.
     - Each table is by default created with an input (`Source Name`) and an output (`Sample Name`) column.
 2. If not active use the navbar to go to *Building Blocks*. Here you can add *Building Blocks* to the table. 
 3. Use the first function block to search for `instrument model`. This search looks for fitting *Terms* in our *Ontology* database.
