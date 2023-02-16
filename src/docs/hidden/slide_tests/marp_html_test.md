@@ -20,3 +20,5 @@ size: 16:9
 ## Demo
 
 this is just a slide deck to showcase, that marp generated html slides could already be used with our knowledge base
+
+<!-- I am a speaker note  -->
