@@ -236,7 +236,7 @@ Briefly:
 
 ![](../img/datahub_members.png)
 
-> Note: A detailed usage instruction for the ARC Commander can be found [here](https://github.com/nfdi4plants/arcCommander/wiki/Detailed-usage-instruction).
+> Note: A detailed usage instruction for the ARC Commander can be found [here](./ArcCommanderManual/index.html).
 
 
 <!-- kb-Implementation -->

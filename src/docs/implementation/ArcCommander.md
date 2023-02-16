@@ -81,7 +81,5 @@ For details, please
 [gh-DataPlant]: <https://github.com/nfdi4plants/> "GitHub DataPLANT"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-ARC Commander]: <https://github.com/nfdi4plants/arcCommander> "ARC Commander"
-[gh-ARC Commander-Wiki]: <https://github.com/nfdi4plants/arcCommander/wiki> "ARC Commander Wiki"
-[gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
 
 <!-- Links to external (ext-) sources -->
