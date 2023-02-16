@@ -8,7 +8,14 @@ add sidebar: _sidebars/arcCommanderManualSidebar.md
 ---
 
 1. Open a Terminal (Applications -> Utilities -> Terminal)
-2. Copy/paste the following commands into your terminal and execute them to (a) download the latest ARC Commander release, (b) change permissions to make the ARC Commander executable and (c) move the ARC Commander program to a location from where it is executable via the terminal:
+
+2. Install wget if not installed yet: e.g.:  
+
+    ```bash
+    brew install wget
+    ```
+ 
+    Copy/paste the following commands into your terminal and execute them to (a) download the latest ARC Commander release, (b) change permissions to make the ARC Commander executable and (c) move the ARC Commander program to a location from where it is executable via the terminal:
 
     ```bash
     wget https://github.com/nfdi4plants/arcCommander/releases/download/v0.4.0-osx.x64/arc
@@ -49,7 +56,7 @@ You should see the following or similar message:
 
 > Start processing parameterless command.  
 > Start Arc Version  
-> v0.4.0
+> v0.4.0  
 > Done processing command.  
 
 > :bulb: A global config file will be created the first time you use the ARC Commander in the folder `~/.config/DataPLANT/ArcCommander/`
