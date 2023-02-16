@@ -21,4 +21,6 @@
 
 ```Tests
 # Marp Slides:/docs/hidden/slide_tests/marp_html_test.html
+# Pandoc Readme:/docs/hidden/pandoc_tests/pandoc_readme.html
+# Pandoc Example PDF:/docs/hidden/pandoc_tests/pandoc_example_DataSharing.pdf
 ```
