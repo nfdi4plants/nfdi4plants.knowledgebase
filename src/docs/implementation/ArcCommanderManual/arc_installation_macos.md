@@ -9,16 +9,10 @@ add sidebar: _sidebars/arcCommanderManualSidebar.md
 
 1. Open a Terminal (Applications -> Utilities -> Terminal)
 
-2. Install wget if not installed yet: e.g.:  
+2. Copy/paste the following commands into your terminal and execute them to (a) download the latest ARC Commander release, (b) change permissions to make the ARC Commander executable and (c) move the ARC Commander program to a location from where it is executable via the terminal:
 
     ```bash
-    brew install wget
-    ```
- 
-    Copy/paste the following commands into your terminal and execute them to (a) download the latest ARC Commander release, (b) change permissions to make the ARC Commander executable and (c) move the ARC Commander program to a location from where it is executable via the terminal:
-
-    ```bash
-    wget https://github.com/nfdi4plants/arcCommander/releases/download/v0.4.0-osx.x64/arc
+    curl -LO https://github.com/nfdi4plants/arcCommander/releases/download/v0.4.0-osx.x64/arc
     chmod a+x ./arc
     mv ./arc /usr/local/bin/
     ```
