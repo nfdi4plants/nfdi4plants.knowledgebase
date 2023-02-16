@@ -10,9 +10,6 @@ article_status: published
 todo:
 ---
 
-
-
-
 This document is work in progress. If you experience any inconsistencies, have questions or would like to suggest additions, please feel free to <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">contact us</a> or open an issue in our [Helpdesk](<https://helpdesk.nfdi4plants.org>).
 
 We are very happy that you chose our tools and infrastructure to create and share your own ARCs. In this QuickStart we assume that your ARC already contains one or more isa.study.xlsx and isa.assay.xlsx file(s), respectively. Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses. In the following we will focus on adding metadata to your studies and assays with our excel tool Swate.
@@ -20,11 +17,11 @@ We are very happy that you chose our tools and infrastructure to create and shar
 ## Swate
 
 DataPLANT provides the Excel Add-In Swate to support you in data annotation.
-Please download and install the newest Swate version according to [these instructions](https://nfdi4plants.github.io/Swate-docs/docs/UserDocs/Docs01-Installing-Swate.html).
+Please download and install the newest Swate version according to [these instructions](./SwateManual/Docs01-Installing-Swate.html).
 
 - Use the *create annotation table* button in the yellow pop-up box (this only appears if you start Swate on an Excel worksheet without an existing annotation table). An annotation table with the building blocks *Source Name* and *Sample Name* will be generated.  
 
-![](https://raw.githubusercontent.com/wiki/nfdi4plants/Swate/images/UserDocs/Swate-CreateAnnotationTable-Exp.jpg)
+![](../img/Swate-CreateAnnotationTable-Exp.jpg)
 
 - Annotate your table with help of the [annotation principles](https://nfdi4plants.github.io/AnnotationPrinciples/).  
 Briefly:
@@ -38,19 +35,19 @@ Briefly:
 
 1. Choose the type of building block you want to add (A).
 
-2. If you chose a descriptive building block type (building blocks besides Sample Name, Source Name, and Data File Name), use search field (B) to search for an Ontology Term. Swate accesses the SwateDB with a list of established external ontologies designated suitable for use in plant science. In addition, we feature our own ontology NFDI4PSO to extend the DB with missing, but necessary terms.
+2. If you chose a descriptive building block type (building blocks besides Sample Name, Source Name, and Data File Name), use search field (B) to search for an Ontology Term. Swate accesses the SwateDB with a list of established external ontologies designated suitable for use in plant science. In addition, we feature our own ontology DPBO to extend the DB with missing, but necessary terms.
 
 3. If you want to add a building block with a unit, check box (C) and use search field (D) to look for a fitting unit term, e.g. degree Celsius as unit for Parameter \[temperature\].
 
 4. If you could not find a fitting term, you can use the Advanced Term Search with the blue links above the *Add building block* button. If you still could not find a fitting term, use free text input.  
 
-![](https://raw.githubusercontent.com/wiki/nfdi4plants/Swate/images/UserDocs/Swate-AddBuildingBlock-Exp.jpg)
+![](./../img/Swate-AddBuildingBlock-Exp.jpg)
 
-5. For more information on customizing your annotation table click [here](https://github.com/nfdi4plants/Swate/wiki/Docs03-Building-Blocks).
+5. For more information on customizing your annotation table click [here](./SwateManual/Docs03-Building-Blocks.html).
 
 ## Use templates
 
-Alternatively, you can also use one of DataPLANT’s [Swate templates](https://github.com/nfdi4plants/Swate/wiki/Docs05-Templates). You can find them under the *Protocol Insert* tab in Swate.  
+Alternatively, you can also use one of DataPLANT’s [Swate templates](./SwateManual/Docs05-Templates.html). You can find them under the *Protocol Insert* tab in Swate.  
 
 ![](https://user-images.githubusercontent.com/39732517/128495178-cc14690a-fc8a-4a3c-b591-365176ea2b00.png)
 
@@ -72,7 +69,7 @@ Fill the cells beneath each building block with ontology terms to note the respe
 ![](../img/swate_ontologyTermSearch2.png)
 
 
-> Note: More information on how to use Swate can be found [here][gh-SwateWiki].
+> Note: More information on how to use Swate can be found [here][kb-SwateManual].
 
 <div style="page-break-after: always;"></div>
 
@@ -89,6 +86,7 @@ Fill the cells beneath each building block with ontology terms to note the respe
 [kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
 [kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
 [kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
+[kb-SwateManual]: ../implementation/SwateManual/index.html "Swate Manual"
 
 <!-- kb-Implementation -->
 [kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
@@ -111,8 +109,7 @@ Fill the cells beneath each building block with ontology terms to note the respe
 [gh-DataPlant]: <https://github.com/nfdi4plants/> "GitHub DataPLANT"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/> "ArcCommander"
-[gh-ArcCommander-Wiki]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
-[gh-Swate]: <https://github.com/nfdi4plants/Swate/> "Swate repository"
-[gh-SwateWiki]: <https://nfdi4plants.github.io/Swate-docs/index.html> "Swate Wiki"
+[kb-ArcCommander-Manual]: ../implementation/ArcCommanderManual/index.html "ARC Commander Manual"
+[gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
 
 <!-- Links to external (ext-) sources -->

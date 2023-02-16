@@ -36,7 +36,7 @@ Ontology terms within the Swate database can not only be used to standardize the
 ![TermRelatedSearch](../img/Swate_TermRelatedSearch.jpg)
 
 ## Templates for convenient metadata annotation
-Metadata annotation as part of the data submission routine to public repositories is often bothersome due to a high variability between repository requirements. This can become particularly inconvenient when the same metadata is submitted repeatedly, e.g. to unrelated public repositories. To assist researchers in this process, DataPLANT provides a growing collection of templates as a starting point for their annotation tables. The template design process is initiated “backwards”, starting from the requirements of public repositories and thereby, compliance with metadata standards. Our Data stewards supervise the metadata harmonization between template and target repository and simultaneously contribute to the development of the DataPLANT broker ontology <!-- linkt to NFDI4PSO-->.  
+Metadata annotation as part of the data submission routine to public repositories is often bothersome due to a high variability between repository requirements. This can become particularly inconvenient when the same metadata is submitted repeatedly, e.g. to unrelated public repositories. To assist researchers in this process, DataPLANT provides a growing collection of templates as a starting point for their annotation tables. The template design process is initiated “backwards”, starting from the requirements of public repositories and thereby, compliance with metadata standards. Our Data stewards supervise the metadata harmonization between template and target repository and simultaneously contribute to the development of the DataPLANT broker ontology <!-- linkt to DPBO-->.  
 From a technical perspective, these templates are ISA Protocols containing various Characteristics, Parameters, and the Study specific Factor. DataPLANT provides checklists and requirements of public repositories as templates that are considered useful for various technologies and common standards, e.g. MIAPPE or MINSEQE. The templates can directly be integrated to the isa.study.xlsx and isa.assay.xlsx files using Swate. Once loaded into the table, they still can be modified to special needs in the sense of adding or deleting annotation building blocks. The modularity of the system also gives labs and institutions the possibility to create their own lab specific templates for experiments that are frequently run in the lab, e.g. a metabolomics experiment of a measurement facility. High flexibility is fostered by offering a manual or Swate-supported template customization, distribution, and use.
 
 ![SwateTemplates](../img/Swate_Templates.jpg)
@@ -51,12 +51,7 @@ If you cannot find a fitting term for your data annotation, you can try to use S
 After reading this article, you should 
 
 - check the [Swate QuickStart][kb-QuickStart_Swate] and
-- explore the [Swate docs][gh-SwateWiki] for an in-depth details.
-
-
-
-
-
+- explore the [Swate Manual][kb-SwateManual] for in-depth details.
 
 <!-- Links to DataPLANT knowledge base (kb-) -->
 
@@ -71,6 +66,7 @@ After reading this article, you should
 [kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
 [kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
 [kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
+[kb-SwateManual]: ../implementation/SwateManual/index.html "Swate Manual"
 
 <!-- kb-Implementation -->
 [kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
@@ -80,7 +76,6 @@ After reading this article, you should
 <!-- kb-Tutorials -->
 [kb-QuickStart_arc]: ../tutorials/QuickStart_arcCommander.html "Quickstart ARC"
 [kb-QuickStart_Swate]: ../tutorials/QuickStart_swate.html "Swate QuickStart"
-
 
 <!-- Links to DataPLANT Homepage (hp-) -->
 
@@ -93,8 +88,7 @@ After reading this article, you should
 [gh-DataPlant]: <https://github.com/nfdi4plants/> "GitHub DataPLANT"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/> "ArcCommander"
-[gh-ArcCommander-Wiki]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
-[gh-Swate]: <https://github.com/nfdi4plants/Swate/> "Swate repository"
-[gh-SwateWiki]: <https://nfdi4plants.github.io/Swate-docs/index.html> "Swate Wiki"
+[kb-ArcCommander-Manual]: ../implementation/ArcCommanderManual/index.html "ARC Commander Manual"
+[gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
 
 <!-- Links to external (ext-) sources -->
