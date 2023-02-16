@@ -1,0 +1,172 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - How-To: Synchronize DataHUB ARCs via GitHub Desktop
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          The Hidden Menu
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/hidden.html">Home</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Tutorials
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/hidden/onboarding_technical.html">DataPLANT Technical Onboarding</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/hidden/IntroductionToMarkdown.html">Markdown Intro</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Workarounds
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/hidden/DataHub_GitHubDesktop.html">Connect DataHUB with GH-Desktop</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Unfinished docs
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/hidden/Glossary.html">Glossary</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/hidden/DataPlantPhilosophy.html">DataPlantPhilosophy</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Tests
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/hidden/slide_tests/marp_html_test.html">Marp Slides</h1>
+
+      </nfdi-sidebar-element>
+      <h1 class="front-header">
+        How-To: Synchronize DataHUB ARCs via GitHub Desktop
+      </h1>
+      <i class="help">
+        last updated at 2022-07-01
+      </i>
+      <nfdi-h2 id="goal">Goal</nfdi-h2>
+<p>Use <a href="https://desktop.github.com/">GitHub Desktop</a> to synchronize ARCs between the DataHUB and your local machine.
+GitHub Desktop is a user-friendly software to help you synchronize (pull, commit, push, ...) and track and communicate changes (diff, pull request, ...) git repositories without memorizing and executing the git commands in your command line.</p>
+<blockquote>
+<p>Note: This authenticates your local GitHub Desktop to communicate with the DataHUB.
+You need to do this only once per machine (unless you specify an expiration date in step 4)</p>
+</blockquote>
+<nfdi-h2 id="steps">Steps</nfdi-h2>
+<ol>
+<li>Download <a href="https://desktop.github.com/">GitHub Desktop</a></li>
+<li>Sign in to the <a href="https://git.nfdi4plants.org/">DataHUB</a></li>
+<li>Go to the <a href="https://git.nfdi4plants.org/-/profile/personal_access_tokens">Access Tokens</a> settings</li>
+<li>Fill all required information
+<ol>
+<li>Token name: e.g. &quot;GitHub Desktop&quot;</li>
+<li>Expiration date (optional)</li>
+<li>Select scope: <code>api</code></li>
+</ol>
+</li>
+</ol>
+<p><img src="../img/datahub_accessToken.png" alt="Access Token" /></p>
+<ol start="5">
+<li>Click &quot;Create personal access token&quot;</li>
+<li><code>Your new personal access token</code> appears on top. Copy it somewhere for later use.</li>
+</ol>
+<p><img src="../img/datahub_accessToken_02.png" alt="Access Token" /></p>
+<ol start="7">
+<li>Within the DataHUB, go to your ARC.</li>
+<li>Click on <code>Clone</code> and copy the HTTPS url, e.g. <code>https://git.nfdi4plants.org/&lt;yourUserName&gt;/&lt;yourArc&gt;.git</code></li>
+</ol>
+<p><img src="../img/datahub_clone.png" alt="DataHUB Clone" /></p>
+<ol start="9">
+<li>Open GitHub Desktop.</li>
+<li>Select <code>File</code> → <code>Clone repository</code></li>
+</ol>
+<p><img src="../img/githubDesktop_clone.png" alt="GitHub Desktop Clone" /></p>
+<ol start="11">
+<li>Select the tab <code>URL</code> on top.</li>
+<li>Paste the HTTPS link to your ARC (step 8) inside the URL field and select the destination folder, where your ARC will be stored locally. Click <code>Clone</code></li>
+<li>A pop-up window &quot;Authentication Failed&quot; will ask you for Username and Password. Fill in the
+<ol>
+<li>Username: this is your DataHUB username. You can find it under your avatar in the DataHUB</li>
+<li>Password: paste the access token copied in step 6.</li>
+</ol>
+</li>
+</ol>
+<p><img src="../img/githubDesktop_accessToken.png" alt="GitHub Desktop Clone" /></p>
+<ol start="14">
+<li><p>Click <code>Save and Retry</code>.</p>
+</li>
+<li><p>Your ARC is now available in your GitHub Desktop.</p>
+</li>
+</ol>
+
+      <h3>
+        DataPLANT Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <span style="display: inline-flex; flex-wrap: wrap;">
+          <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+            directly
+          </a>
+          .
+        </span>
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/hidden/DataHub_GitHubDesktop.md" style="margin-left: auto; display: block; width: 130px;">
+          ✏️ Edit this page
+        </a>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>
