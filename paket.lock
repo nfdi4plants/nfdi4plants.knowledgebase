@@ -5,6 +5,6 @@ NUGET
   remote: https://api.nuget.org/v3/index.json
     FSharp.Core (7.0) - restriction: || (== net5.0) (&& (== netstandard2.0) (>= net5.0)) (&& (== netstandard2.1) (>= net5.0))
     Markdig (0.30.4) - restriction: || (== net5.0) (&& (== netstandard2.0) (>= net5.0)) (&& (== netstandard2.1) (>= net5.0))
-    Nfdi4Plants.Fornax (0.10)
+    Nfdi4Plants.Fornax (0.12)
       FSharp.Core (>= 5.0.2) - restriction: || (== net5.0) (&& (== netstandard2.0) (>= net5.0)) (&& (== netstandard2.1) (>= net5.0))
       Markdig (>= 0.30.2) - restriction: || (== net5.0) (&& (== netstandard2.0) (>= net5.0)) (&& (== netstandard2.1) (>= net5.0))
