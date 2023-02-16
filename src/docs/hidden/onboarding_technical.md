@@ -1,19 +1,13 @@
 ---
 layout: docs
-title: DataPLANT Setup
-published: 2022-09-23
+title: DataPLANT Technical Onboarding
+date: 2022-09-23
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
-add toc: true
-add sidebar: _sidebars/mainSidebar.md
+add toc: false
+add sidebar: _sidebars/hiddenMenuSidebar.md
 add support: false
-titlepage: true
-titlepage-color: "2D3E50"
-titlepage-text-color: "4FB3D9"
-titlepage-rule-color: "4FB3D9"
-titlepage-rule-height: 2
-titlepage-background: ../_ignored/pandoc_tests/sources/dpbackground.pdf
 ---
 
 We are very happy that you would like to employ or contribute to the DataPLANT tools and services.
