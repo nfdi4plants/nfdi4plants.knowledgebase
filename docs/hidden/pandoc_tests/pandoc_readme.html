@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - How-To: Synchronize DataHUB ARCs via GitHub Desktop
+      DataPLANT documentation - knowledge-base2pdf
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -88,64 +88,74 @@
 
       </nfdi-sidebar-element>
       <h1 class="front-header">
-        How-To: Synchronize DataHUB ARCs via GitHub Desktop
+        knowledge-base2pdf
       </h1>
       <i class="help">
         last updated at 2022-07-01
       </i>
-      <nfdi-h2 id="goal">Goal</nfdi-h2>
-<p>Use <a href="https://desktop.github.com/">GitHub Desktop</a> to synchronize ARCs between the DataHUB and your local machine.
-GitHub Desktop is a user-friendly software to help you synchronize (pull, commit, push, ...) and track and communicate changes (diff, pull request, ...) git repositories without memorizing and executing the git commands in your command line.</p>
+      <p>Goal:</p>
+<ol>
+<li>Hand-out materials as PDF</li>
+<li>Have code chunks copy-paste friendly</li>
+<li>Document everything in one place (GitHub) and format (Markdown)</li>
+</ol>
+<nfdi-h2 id="dependencies">Dependencies</nfdi-h2>
+<p>Requires local installations of</p>
+<ol>
+<li>Pandoc: <a href="https://pandoc.org/installing.html">https://pandoc.org/installing.html</a></li>
+<li>Latex: (see pandoc installation instructions for OS-specific recommendations)</li>
+</ol>
+<nfdi-h2 id="pandoc-template">Pandoc template</nfdi-h2>
+<p>The <code>dataplant_eisvogel.latex</code> is just a copy of the <code>eisvogel.tex</code> downloaded from <a href="https://github.com/Wandmalfarbe/pandoc-latex-template/">https://github.com/Wandmalfarbe/pandoc-latex-template/</a> (commit #f5c1f20; Dec 19, 2021).
+See original repo for instructions and more examples.</p>
+<p>Since <code>pandoc</code> does not support to specify a path-to-template, the template needs to be copied to the default local <code>pandoc</code> templates folder.</p>
 <blockquote>
-<p>Note: This authenticates your local GitHub Desktop to communicate with the DataHUB.
-You need to do this only once per machine (unless you specify an expiration date in step 4)</p>
+<p>Note: This <code>$HOME/.pandoc/templates/</code> be the macOS-specific directory. Check!</p>
 </blockquote>
-<nfdi-h2 id="steps">Steps</nfdi-h2>
+<nfdi-code class="language-bash">#  cd &lt;path/to>/nfdi4plants.knowledgebase
+cp src/docs/_ignored/pandoc_tests/sources/dataplant_eisvogel.latex $HOME/.pandoc/templates/
+</nfdi-code>
+<nfdi-h2 id="common-issues-with-pandoc-and-latex">Common issues with pandoc (and latex)</nfdi-h2>
+<ul>
+<li>special characters in YAML metadata,
+<ul>
+<li>e.g. <code>title: How-To: Synchronize ...</code> must be escaped or put into apostrophes <code>title: &quot;How-To: Synchronize...&quot;</code></li>
+</ul>
+</li>
+<li>embedded images in pdflatex (e.g. when using the pandoc template)
+<ul>
+<li>pdf is ok</li>
+<li>png is ok (also *.drawio.png)</li>
+<li><strong>.svg does not work!</strong></li>
+</ul>
+</li>
+<li>the titlepage-background from eisvogel.latex template will center and fit the linked image
+<ul>
+<li>if the file is not of the same paper size / ratio (e.g. DIN A4) as the output, it will align it middle-center</li>
+</ul>
+</li>
+</ul>
+<nfdi-h2 id="example-usage">Example usage</nfdi-h2>
 <ol>
-<li>Download <a href="https://desktop.github.com/">GitHub Desktop</a></li>
-<li>Sign in to the <a href="https://git.nfdi4plants.org/">DataHUB</a></li>
-<li>Go to the <a href="https://git.nfdi4plants.org/-/profile/personal_access_tokens">Access Tokens</a> settings</li>
-<li>Fill all required information
-<ol>
-<li>Token name: e.g. &quot;GitHub Desktop&quot;</li>
-<li>Expiration date (optional)</li>
-<li>Select scope: <code>api</code></li>
+<li>Navigate to the folder, where the <code>*.md</code> article is stored (to maintain relative paths, e.g. to images),</li>
 </ol>
-</li>
+<nfdi-code class="language-bash">#  cd &lt;path/to>/nfdi4plants.knowledgebase
+cd src/docs/hidden
+</nfdi-code>
+<ol start="2">
+<li>Run pandoc to produce a PDF</li>
 </ol>
-<p><img src="../img/datahub_accessToken.png" alt="Access Token" /></p>
-<ol start="5">
-<li>Click &quot;Create personal access token&quot;</li>
-<li><code>Your new personal access token</code> appears on top. Copy it somewhere for later use.</li>
-</ol>
-<p><img src="../img/datahub_accessToken_02.png" alt="Access Token" /></p>
-<ol start="7">
-<li>Within the DataHUB, go to your ARC.</li>
-<li>Click on <code>Clone</code> and copy the HTTPS url, e.g. <code>https://git.nfdi4plants.org/&lt;yourUserName&gt;/&lt;yourArc&gt;.git</code></li>
-</ol>
-<p><img src="../img/datahub_clone.png" alt="DataHUB Clone" /></p>
-<ol start="9">
-<li>Open GitHub Desktop.</li>
-<li>Select <code>File</code> → <code>Clone repository</code></li>
-</ol>
-<p><img src="../img/githubDesktop_clone.png" alt="GitHub Desktop Clone" /></p>
-<ol start="11">
-<li>Select the tab <code>URL</code> on top.</li>
-<li>Paste the HTTPS link to your ARC (step 8) inside the URL field and select the destination folder, where your ARC will be stored locally. Click <code>Clone</code></li>
-<li>A pop-up window &quot;Authentication Failed&quot; will ask you for Username and Password. Fill in the
-<ol>
-<li>Username: this is your DataHUB username. You can find it under your avatar in the DataHUB</li>
-<li>Password: paste the access token copied in step 6.</li>
-</ol>
-</li>
-</ol>
-<p><img src="../img/githubDesktop_accessToken.png" alt="GitHub Desktop Clone" /></p>
-<ol start="14">
-<li><p>Click <code>Save and Retry</code>.</p>
-</li>
-<li><p>Your ARC is now available in your GitHub Desktop.</p>
-</li>
-</ol>
+<nfdi-h3 id="with-template-and-title-page-based-on-a-pdf">with template and title page (based on a pdf)</nfdi-h3>
+<p>Added the following attributes to the YAML header of <code>src/docs/fundamentals/DataSharing.md</code> to produce pandoc_example_DataSharing.md</p>
+<nfdi-code class="language-bash">titlepage: true
+titlepage-color: "2D3E50"
+titlepage-text-color: "4FB3D9"
+titlepage-rule-color: "4FB3D9"
+titlepage-rule-height: 2
+titlepage-background: pandoc_sources/dpbackground.pdf
+</nfdi-code>
+<nfdi-code class="language-bash">pandoc pandoc_example_DataSharing.md -o pandoc_example_DataSharing.pdf --from markdown --template dataplant_eisvogel.latex --listings
+</nfdi-code>
 
       <h3>
         DataPLANT Support
@@ -164,7 +174,7 @@ You need to do this only once per machine (unless you specify an expiration date
         </span>
       </div>
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/hidden/DataHub_GitHubDesktop.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/hidden/pandoc_tests/pandoc_readme.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>
