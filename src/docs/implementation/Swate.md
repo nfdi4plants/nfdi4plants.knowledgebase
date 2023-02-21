@@ -74,8 +74,7 @@ After reading this article, you should
 [kb-ArcCommander]: ../implementation/ArcCommander.html "ARC Commander"
 
 <!-- kb-Tutorials -->
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arcCommander.html "Quickstart ARC"
-[kb-QuickStart_Swate]: ../tutorials/QuickStart_swate.html "Swate QuickStart"
+[kb-QuickStart_Swate]: ../implementation/QuickStart_swate.html "Swate QuickStart"
 
 <!-- Links to DataPLANT Homepage (hp-) -->
 
