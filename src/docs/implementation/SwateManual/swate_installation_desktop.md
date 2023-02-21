@@ -8,7 +8,8 @@ add sidebar: _sidebars\swateManualSidebar.md
 
 > :warning: Currently there is no installer available for Linux or MacOS. Please check out the alternatives.
 
-> :bulb: As a university trying to publish to the Excel add-in store we encountered some legal roadblocks. Hence the current installer is far from perfect. Please check out the alternatives, if the installer does not work for your setup.
+> :bulb: As a university trying to publish to the Excel add-in store we encountered some legal roadblocks. Hence the current installer is far from perfect. Please check out the _Alternatives_ (noted below), if the installer does not work for your setup. This especially applies to standalone MS Excel versions (e.g. ***Excel 2019***, ***Excel 2021***, etc.), too.  
+Please note that we cannot guarantee compatibility of Swate with Excel versions that are *not* part of MS 365.
 
 > ⚠️ **If you have an older Swate version installed already, it <u>might</u> be necessary to [clear the cache](https://docs.microsoft.com/de-de/office/dev/add-ins/testing/clear-cache#manually-clear-the-cache-in-excel-word-and-powerpoint) to apply the changes to Swate.**
 
