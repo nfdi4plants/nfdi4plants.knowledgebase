@@ -12,6 +12,7 @@
 
 ```Workarounds
 # Connect DataHUB with GH-Desktop:/docs/hidden/DataHub_GitHubDesktop.html
+# Git-LFS Time Out:/docs/hidden/gitlab_timeout.html
 ```
 
 ```Unfinished docs
