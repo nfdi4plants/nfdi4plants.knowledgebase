@@ -138,11 +138,27 @@ For a general introduction to writing markdown, see: <a href="tutorials/Introduc
 <li>The github user name of the original author is stored in the yaml block on top under <code>author_github</code></li>
 <li>During the pull-request mention the author via <code>@&lt;author_github&gt;</code>.</li>
 </ul>
-<nfdi-h2 id="testing">Testing</nfdi-h2>
-<p>Check out the README.md in the <a href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/README.md">root directory</a> for instructions on how to install the Knowledge Base locally on your machine.
-Following those instructions allows you to test and see how your changes come into play and whether everything renders correctly.</p>
+<nfdi-h2 id="local-testing">Local testing</nfdi-h2>
+<p>The following instructions allow you to test and see how your changes come into play and whether everything renders correctly.</p>
 <p>It's highly recommended to <em>frequently</em> check your changes locally.
 Please <strong>do not</strong> produce and submit a lot of content without prior local testing.</p>
+<nfdi-h3 id="install">install</nfdi-h3>
+<ol>
+<li>Download the repo.</li>
+<li>Run <code>dotnet tool restore</code> in root directory.</li>
+<li>Run <code>dotnet paket install</code> in root directory.</li>
+</ol>
+<nfdi-h3 id="run">run</nfdi-h3>
+<ol>
+<li>Run <code>dotnet fornax watch</code> in <code>\src</code> folder.</li>
+<li>Open page in browser <a href="http://127.0.0.1:8080/">http://127.0.0.1:8080/</a>.</li>
+</ol>
+<nfdi-h3 id="update-web-components">update web-components</nfdi-h3>
+<p>Check out the installation docs on <a href="https://github.com/nfdi4plants/web-components#installation">nfdi4plants/web-components</a>. For fornax you will need to bundle the web-components with rollup. See the respective section for more information.</p>
+<nfdi-h3 id="update-nfdi4plants.fornax">update Nfdi4Plants.Fornax</nfdi-h3>
+<nfdi-code>dotnet paket update Nfdi4Plants.Fornax
+</nfdi-code>
+<p><em>Load script will be generated automatically and is referenced in <code>src\loaders\docsloader.fsx</code>.</em></p>
 <nfdi-h2 id="common-errors">Common Errors</nfdi-h2>
 <ul>
 <li>Missing metadata block</li>
