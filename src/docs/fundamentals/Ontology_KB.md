@@ -19,9 +19,9 @@ All knowledge within an ontology is described through axiom triples in a subject
 | range | range (tag) | Object of a relationship triplet. |
 <br />
 
-![img1](/home/hannah/Dokumente/KnowledgeBase/plant_ontology_image.png)
+![img1](../img/plant_ontology_image.png)
 
-*Fig. 1: Excerpt of the plant ontology. Boxes describe classes, arrows describe object properties. The class “phyllome” is defined as a subclass of “plant organ”. The class “phyllome” has three subclasses: “bract”, “leaf” and “sporophyll”. It is furthermore defined as “part of” the class “shoot system” that “develops_from” the “phyllome primordium”.*
+Fig. 1: Excerpt of the plant ontology. Boxes describe classes, arrows describe object properties. The class “phyllome” is defined as a subclass of “plant organ”. The class “phyllome” has three subclasses: “bract”, “leaf” and “sporophyll”. It is furthermore defined as “part of” the class “shoot system” that “develops_from” the “phyllome primordium”.
 
 </br>
 
@@ -47,12 +47,12 @@ When it comes to OWL ontologies, there are several common formats: RDF/XML, OWL/
 RDF/XML example:
 ```
 <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/PO_0006001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/PO_0009006"/>
-<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-10-17T08:33:26Z</dc:date>
-        <rdfs:label xml:lang="en">part of</rdfs:label>
-    </owl:ObjectProperty>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/PO_0006001"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/PO_0009006"/>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-10-17T08:33:26Z</dc:date>
+    <rdfs:label xml:lang="en">part of</rdfs:label>
+</owl:ObjectProperty>
 ```
 
 OWL Manchester example:
