@@ -1,3 +1,15 @@
+---
+layout: docs
+title: Ontology
+published: 2023-02-28
+author: Hannah Dörpholz, Angela Kranz, Kathryn Dumschott
+author_github: Hannah-Doerpholz, AngelaKranz, kdumschott
+add toc: false
+add sidebar: _sidebars/mainSidebar.md
+article_status: published
+todo:
+---
+
 # **Ontology**
 
 ## **What is an Ontology?**
