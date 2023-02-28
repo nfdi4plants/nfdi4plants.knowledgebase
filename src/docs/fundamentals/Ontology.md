@@ -3,7 +3,7 @@ layout: docs
 title: Ontology
 published: 2023-02-28
 author: Hannah Dörpholz, Angela Kranz, Kathryn Dumschott
-author_github: Hannah-Doerpholz, AngelaKranz, kdumschott
+author_github: Hannah-Doerpholz
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
 article_status: published
