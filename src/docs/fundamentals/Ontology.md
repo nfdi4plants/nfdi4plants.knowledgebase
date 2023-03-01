@@ -1,24 +1,27 @@
 ---
 layout: docs
-title: Ontology
+title: Ontologies
 published: 2023-02-28
 author: Hannah Dörpholz, Angela Kranz, Kathryn Dumschott
 author_github: Hannah-Doerpholz
-add toc: false
+add toc: true
 add sidebar: _sidebars/mainSidebar.md
 article_status: published
 todo:
 ---
 
-# **Ontology**
-
-## **What is an Ontology?**
+## What is an Ontology?
 
 The term ontology has its origin in the philosophic question about the very nature of our existence. Here, we do not want to engage into a discussion that could fill whole books.
 
-In our context, an ontology comprises a conceptualized collection of well-defined terms and their relationships for a specific research domain (e.g. plant sciences). Therefore, it can be used to semantically annotate and describe research data in a way that makes it both human- and machine-readable.
+In our context, an ontology comprises a conceptualized collection of well-defined terms and their relationships for a specific research domain, e.g., plant sciences. Therefore, it can be used to semantically annotate and describe research data in a way that makes it both human- and machine-readable.
+<!-- Can you maybe extend this part a little bit, as it is so important for our use case. How are they annotated? Terms have a definition so that researcher B knows what researcher B meant by using this term. Things like this would be cool :-) These things might not be clear to anybody reading the article, although they are clear to us-->
 
-All knowledge within an ontology is described through axiom triples in a subject-predicate-object syntax. There are several terms (depending on the ontology format) that are used to describe specific parts of an ontology:
+All knowledge within an ontology is described through axiom triples in a subject-predicate-object syntax. 
+
+<!-- A simple example of this would be really nice here, e.g. A. thaliana is/has xy.  -->
+
+There are several terms (depending on the ontology format) that are used to describe specific parts of an ontology:
 
 | OWL term | OBO term | Explanation |
 | :----- | :----- | :----- |
@@ -29,15 +32,20 @@ All knowledge within an ontology is described through axiom triples in a subject
 | NamedIndividual | Instance (stanza) | Instances of classes that can be related to other instances through properties. |
 | domain | domain (tag) | Subject of a relationship triplet. |
 | range | range (tag) | Object of a relationship triplet. |
+
+<!-- Although some are already covered by the figure, I think that an additional column with little examples here would be good if possible. We are trying to keep these articles as simple as possible -->
 <br />
 
 ![img1](../img/plant_ontology_image.png)
 
-Fig. 1: Excerpt of the plant ontology. Boxes describe classes, arrows describe object properties. The class “phyllome” is defined as a subclass of “plant organ”. The class “phyllome” has three subclasses: “bract”, “leaf” and “sporophyll”. It is furthermore defined as “part of” the class “shoot system” that “develops_from” the “phyllome primordium”.
+Fig. 1: Excerpt of the plant ontology. Boxes describe classes, arrows describe object properties. The class “phyllome” is defined as a subclass of “plant organ”. The class “phyllome” has three subclasses: “bract”, “leaf”, and “sporophyll”. It is furthermore defined as “part of” the class “shoot system” and “develops_from” the “phyllome primordium”.
+
+<!-- I assume that you mean phyllome develops_from phyllome  -->
+
 
 </br>
 
-## **OBO and OWL format**
+## OBO and OWL format
 
 Ontologies can be used for many different purposes. As such, there are also multiple languages which an ontology can be written in, as well as many formats. Some of the most important relevant for our context include the Web Ontology Language (OWL) and Open Biomedical Ontologies (OBO) format. OBO was mainly used by the biomedical community (see section OBO Foundry) before the rise of OWL and today is considered a dialect of OWL.
 
@@ -84,14 +92,14 @@ Since the OBO format does not cover all aspects that can be included in OWL form
 
 </br>
 
-## **OBO Foundry**
+## OBO Foundry
 The Open Biological Biomedical Ontologies (OBO) Foundry is a team of scientists interested in the development, collection and maintenance of ontologies for the biological and biomedical domain of life sciences. 
 
 The OBO Foundry is open for contribution from everyone. For an ontology to be accepted into the OBO Foundry, it must follow the [OBO Foundry Principles](https://obofoundry.org/principles/fp-000-summary.html):
 
-1.	It must be open and it needs to be licensed (e.g. CC-BY 3.0)
-2.	A common format must be must (see section OBO and OWL format)
-3.	Each term should have a unique identifier by using a unique prefix (such as GO) followed by a numerical ID thereby resulting in an unique OBO Foundry URL
+1.	It must be open and it needs to be licensed (e.g. CC-BY 3.0).
+2.	A common format must be used (see section OBO and OWL format).
+3.	Each term should have a unique identifier by using a unique prefix (such as GO) followed by a numerical ID thereby, resulting in an unique OBO Foundry URL.
 4.	Every new version of an ontology must be versioned using documented procedures.
 5.	The domain or matter of the ontology must be described.
 6.	Each term in an ontology must be described in a human-readable form.
@@ -105,7 +113,7 @@ The OBO Foundry is open for contribution from everyone. For an ontology to be ac
 
 </br>
 
-## **Sources and further information**
+## Sources and further information
 * [OBO Foundry](https://obofoundry.org/)
 * [AgroPortal](https://agroportal.lirmm.fr)
 * [OBO Academy](https://oboacademy.github.io/obook/explanation/owl-format-variants/)
