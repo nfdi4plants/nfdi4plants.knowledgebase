@@ -69,6 +69,6 @@ In order to use the [DataHUB][kb-DataHub] and other DataPLANT infrastructure and
 
 
 <!-- Reference links -->
-[hp-Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
+[hp-Registration]: <https://register.nfdi4plants.org/> "DataPLANT Registration"
 [ext-omero]: <https://www.openmicroscopy.org/omero/> "Omero"
 [ext-galaxy]: <https://plants.usegalaxy.eu/> "Galaxy Plants"
