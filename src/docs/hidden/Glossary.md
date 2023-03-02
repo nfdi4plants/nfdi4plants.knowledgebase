@@ -12,10 +12,10 @@ add sidebar: _sidebars/hiddenMenuSidebar.md
 Abbreviation | Meaning | Details
 ---------|----------|---------
 DMP | Data Management Plan | 
-FAIR
-GIT
-PID
-RDM
+FAIR | Findable, Accessible, Interoperable, and Re-usable | 
+GIT |  | Distributed Version Control System
+PID | Persistent Identifier | 
+RDM | Research Data Management | 
 
 ## DataPLANT
 
