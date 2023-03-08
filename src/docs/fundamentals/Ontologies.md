@@ -89,19 +89,20 @@ The Open Biological Biomedical Ontologies (OBO) Foundry is a team of scientists 
 
 The OBO Foundry is open for contribution from everyone. For an ontology to be accepted into the OBO Foundry, it must follow the [OBO Foundry Principles](https://obofoundry.org/principles/fp-000-summary.html):
 
-1.	It must be open and it needs to be licensed (e.g. CC-BY 3.0).
-2.	A common format must be used (see section OBO and OWL format).
-3.	Each term should have a unique identifier by using a unique prefix (such as GO) followed by a numerical ID, thereby resulting in an unique OBO Foundry URL.
-4.	Every new version of an ontology must be versioned using documented procedures.
-5.	The domain or matter of the ontology must be described.
-6.	Each term in an ontology must be described in a human-readable form.
-7.	Relations between different items of the ontology should be described using defined vocabulary described by the Relations Ontology (RO).
-8.	Documentations for the ontology must be available. Here, the best way is to provide a GitHub repository.
-9.	It should be documented that multiple independent people or organizations use the ontology.
-10.	The ontology should be open to contribution from anyone.
-11.	One person should be listed as contact and responsible person for the ontology.
-12.	The naming of for elements such as classes, subclasses etc. should follow naming conventions.
-13.	The ontology needs to be maintained.
+P1.	It must be open and it needs to be licensed (e.g. CC-BY 3.0).
+P2.	A common format must be used (see section OBO and OWL format).
+P3.	Each term should have a unique identifier by using a unique prefix (such as GO) followed by a numerical ID, thereby resulting in an unique OBO Foundry URL.
+P4.	Every new version of an ontology must be versioned using documented procedures.
+P5.	The domain or matter of the ontology must be described.
+P6.	Each term in an ontology must be described in a human-readable form.
+P7.	Relations between different items of the ontology should be described using defined vocabulary described by the Relations Ontology (RO).
+P8.	Documentations for the ontology must be available. Here, the best way is to provide a GitHub repository.
+P9.	It should be documented that multiple independent people or organizations use the ontology.
+P10.	The ontology should be open to contribution from anyone.
+P11.	One person should be listed as contact and responsible person for the ontology.
+P12.	The naming of for elements such as classes, subclasses etc. should follow naming conventions.
+P16.	The ontology needs to be maintained.
+P20.    Ontology developers MUST offer channels for community participation and SHOULD be responsive to requests.
 
 </br>
 
