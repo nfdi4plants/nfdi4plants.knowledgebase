@@ -21,15 +21,15 @@ All knowledge within an ontology is described through axiom triples in a subject
 
 There are several terms (depending on the ontology format) that are used to describe specific parts of an ontology:
 
-| OWL term  | OBO term | <div style="width:200px">Explanation</div> | OWL Manchester Example |
-| :-----   | :-----   | :-----      | :-----                 |
-| Class    | Term (stanza) | <div style="width:200px">Define groups of individuals that belong together because they share some properties.</div> | <div style="width:200px">Class: PO_0006001</br> &nbsp; &nbsp; Annotations:</br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "phyllome"</div> |
-| ObjectProperty | Typedef (stanza) | <div style="width:200px">Relations between instances of two classes.</div> | <div style="width:200px">ObjectProperty: BFO_0000050</br> &nbsp; &nbsp; Annotations: </br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "part of"</div> |
-| DataProperty | no equivalent | <div style="width:200px">Relations between instances of classes and datatypes. | <div style="width:200px">DataProperty: ARC_00000243</br> &nbsp; &nbsp; Annotations:</br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "email"</div> |
-| AnnotationProperty | property_value (tag) | <div style="width:200px">Define that a property is an annotation.</div> | <div style="width:200px">AnnotationProperty: dc:creator</div> |
-| Individual | Instance (stanza) | <div style="width:200px">Instances of classes that can be related to other instances through properties. | <div style="width:200px">Individual: ARC_00000500</br> &nbsp; &nbsp; Annotations:</br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "A. thaliana"</div> |
-| Domain | domain (tag) | <div style="width:200px">Subject of a relationship triplet.</div> | <div style="width:200px">ObjectProperty: BFO_0000050</br> &nbsp; &nbsp; Annotations: </br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "part of"</br> &nbsp; &nbsp; Domain:</br> &nbsp; &nbsp; &nbsp; &nbsp; PO_0006001 </div> |
-| Range | range (tag) | <div style="width:200px">Object of a relationship triplet.</div> | <div style="width:200px">ObjectProperty: BFO_0000050</br> &nbsp; &nbsp; Annotations: </br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "part of"</br> &nbsp; &nbsp; Range:</br> &nbsp; &nbsp; &nbsp; &nbsp; PO_0009006 </div> |
+| OWL term  | OBO term | Explanation | OWL Manchester Example |
+| :-----   | :-----   | :----- | :--------------------- |
+| Class    | Term (stanza) | Define groups of individuals</br> that belong together because</br> they share some properties. | Class: PO_0006001</br> &nbsp; &nbsp; Annotations:</br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "phyllome" |
+| ObjectProperty | Typedef (stanza) | Relations between instances of</br> two classes. | ObjectProperty: BFO_0000050</br> &nbsp; &nbsp; Annotations: </br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "part of" |
+| DataProperty | no equivalent | Relations between instances of</br> classes and datatypes. | DataProperty: ARC_00000243</br> &nbsp; &nbsp; Annotations:</br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "email" |
+| AnnotationProperty | property_value (tag) | Define that a property is an</br> annotation. | AnnotationProperty: dc:creator |
+| Individual | Instance (stanza) | Instances of classes that can be</br> related to other instances</br> through properties. | Individual: ARC_00000500</br> &nbsp; &nbsp; Annotations:</br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "A. thaliana" |
+| Domain | domain (tag) | Subject of a relationship</br> triplet. | ObjectProperty: BFO_0000050</br> &nbsp; &nbsp; Annotations: </br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "part of"</br> &nbsp; &nbsp; Domain:</br> &nbsp; &nbsp; &nbsp; &nbsp; PO_0006001 |
+| Range | range (tag) | Object of a relationship triplet. | ObjectProperty: BFO_0000050</br> &nbsp; &nbsp; Annotations: </br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "part of"</br> &nbsp; &nbsp; Range:</br> &nbsp; &nbsp; &nbsp; &nbsp; PO_0009006 |
 <br /> |
 
 ![img1](../img/plant_ontology_image.png)
