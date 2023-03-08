@@ -1,0 +1,274 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - Ontologies
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Fundamentals
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/index.html">Introduction</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/ResearchDataManagement.html">Research Data Management</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/FairDataPrinciples.html">FAIR Data Principles</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/Metadata.html">Metadata</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/Ontologies.html">Ontologies</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataSharing.html">Data Sharing</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataPublications.html">Data Publications</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataManagementPlan.html">Data Management Plan</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/VersionControlGit.html">Version Control & Git</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">Public Data Repositories</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/fundamentals/PersistentIdentifiers.html">Persistent Identifiers</h1>
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          Implementation within DataPLANT
+        </div>
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">Annotated Research Context</h1>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_arc.html">User Journey</h2>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</h1>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_arcCommander.html">QuickStart</h2>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_arcCommander_expert.html">QuickStart (experts)</h2>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/index.html">Manual</h2>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/Swate.html">Swate</h1>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_swate.html">QuickStart</h2>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_swate_walkthrough.html">Walk-through</h2>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/AnnotationPatterns.html">Best Practices For Data Annotation</h2>
+<h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/index.html">Manual</h2>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/DataHub.html">DataHUB</h1>
+<h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/DataPLAN.html">DataPLAN</h1>
+<!-- ```FAQs
+# Frequently Asked Questions:/docs/faqs/faqs.html
+
+      </nfdi-sidebar-element>
+      <nfdi-sidebar-element slot="sidebar" isActive="true">
+        <div slot="title">
+          -->
+        </div>
+        
+      </nfdi-sidebar-element>
+      <h1 class="front-header">
+        Ontologies
+      </h1>
+      <i class="help">
+        last updated at 2023-02-28
+      </i>
+      <nfdi-toc></nfdi-toc>
+      <nfdi-h2 id="what-is-an-ontology">What is an Ontology?</nfdi-h2>
+<p>The term ontology has its origin in the philosophic question about the very nature of our existence. Here, we do not want to engage into a discussion that could fill whole books.</p>
+<p>In our context, an ontology comprises a conceptualized collection of well-defined terms and their relationships for a specific research domain, e.g., plant sciences. Each term and relationship consists of a unique ID, a label and a definition that are curated manually by experts of the respective domain. Therefore, it can be used to semantically annotate and describe research data in a way that makes it both human- and machine-readable. Using the human-readable definition each researcher can understand and correctly reuse specific terms, while a computer can use the unique ID to reference any term from the ontology. If one term will be replaced by a more accurate term it will not be deleted from the ontology but rather marked as &quot;obsolete&quot;. This ensures that older documents that reference the old ontology term remain valid. Using the relationships within the ontology, experimental data can be structured and easily compared to other structured datasets and infer new information.</p>
+<p>All knowledge within an ontology is described through axiom triples in a subject-predicate-object syntax. An example for this is the following triplet:</p>
+<blockquote>
+<p>The &quot;phyllome&quot; (subject) is &quot;part of&quot; (predicate) the &quot;shoot system&quot; (object).</p>
+</blockquote>
+<p>There are several terms (depending on the ontology format) that are used to describe specific parts of an ontology:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">OWL term</th>
+<th style="text-align: left;">OBO term</th>
+<th style="text-align: left;">Explanation</th>
+<th style="text-align: left;">OWL Manchester Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Class</td>
+<td style="text-align: left;">Term (stanza)</td>
+<td style="text-align: left;">Define groups of individuals</br> that belong together because</br> they share some properties.</td>
+<td style="text-align: left;">Class: PO_0006001</br>     Annotations:</br>         rdfs:label &quot;phyllome&quot;</td>
+</tr>
+<tr>
+<td style="text-align: left;">ObjectProperty</td>
+<td style="text-align: left;">Typedef (stanza)</td>
+<td style="text-align: left;">Relations between instances of</br> two classes.</td>
+<td style="text-align: left;">ObjectProperty: BFO_0000050</br>     Annotations: </br>         rdfs:label &quot;part of&quot;</td>
+</tr>
+<tr>
+<td style="text-align: left;">DataProperty</td>
+<td style="text-align: left;">no equivalent</td>
+<td style="text-align: left;">Relations between instances of</br> classes and datatypes.</td>
+<td style="text-align: left;">DataProperty: ARC_00000243</br>     Annotations:</br>         rdfs:label &quot;email&quot;</td>
+</tr>
+<tr>
+<td style="text-align: left;">AnnotationProperty</td>
+<td style="text-align: left;">property_value (tag)</td>
+<td style="text-align: left;">Define that a property is an</br> annotation.</td>
+<td style="text-align: left;">AnnotationProperty: dc:creator</td>
+</tr>
+<tr>
+<td style="text-align: left;">Individual</td>
+<td style="text-align: left;">Instance (stanza)</td>
+<td style="text-align: left;">Instances of classes that can be</br> related to other instances</br> through properties.</td>
+<td style="text-align: left;">Individual: ARC_00000500</br>     Annotations:</br>         rdfs:label &quot;A. thaliana&quot;</td>
+</tr>
+<tr>
+<td style="text-align: left;">Domain</td>
+<td style="text-align: left;">domain (tag)</td>
+<td style="text-align: left;">Subject of a relationship</br> triplet.</td>
+<td style="text-align: left;">ObjectProperty: BFO_0000050</br>     Annotations: </br>         rdfs:label &quot;part of&quot;</br>     Domain:</br>         PO_0006001</td>
+</tr>
+<tr>
+<td style="text-align: left;">Range</td>
+<td style="text-align: left;">range (tag)</td>
+<td style="text-align: left;">Object of a relationship triplet.</td>
+<td style="text-align: left;">ObjectProperty: BFO_0000050</br>     Annotations: </br>         rdfs:label &quot;part of&quot;</br>     Range:</br>         PO_0009006</td>
+</tr>
+</tbody>
+</table>
+<p><img src="../img/plant_ontology_image.png" alt="img1" /></p>
+<p>Fig. 1: Excerpt of the <a href="https://obofoundry.org/ontology/po.html">plant ontology</a>. Boxes describe classes, arrows describe object properties. The class “phyllome” is defined as a subclass of “plant organ”. The class “phyllome” has three subclasses: “bract”, “leaf” and “sporophyll”. It is furthermore defined as “part of” the class “shoot system” and the &quot;phyllome&quot; “develops_from” the “phyllome primordium”.
+</br></p>
+<nfdi-h2 id="obo-and-owl-format">OBO and OWL format</nfdi-h2>
+<p>Ontologies can be used for many different purposes. As such, there are also multiple languages which an ontology can be written in, as well as many formats. Some of the most important relevant for our context include the Web Ontology Language (OWL) and Open Biomedical Ontologies (OBO) format. OBO was mainly used by the biomedical community (see section OBO Foundry) before the rise of OWL and today is considered a dialect of OWL.</p>
+<p>The OBO format is the simplest format and not only machine-readable but also easily read by humans. As such, it is easy to edit and review, but also lacks multiple features only available in other formats. For instance, it is not possible to define DatatypeProperties in OBO, which are used in OWL ontologies.</p>
+<p>OBO example:</p>
+<nfdi-code>[Typedef]
+id: BFO_0000050
+name: part of
+property_value: http://purl.org/dc/elements/1.1/creator "Hannah Doerpholz" xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2022-10-17T08:33:26Z xsd:dateTime
+domain: PO_0006001 ! phyllome
+range: PO_0009006 ! shoot system
+</nfdi-code>
+<p>When it comes to OWL ontologies, there are several common formats: RDF/XML, OWL/XML, OWL Functional Syntax and OWL Manchester Syntax. All formats are more complex than the easy-to-read OBO format. While RDF/XML is the best format for providing a suitable input format file for a multitude of tools, it is very complex and more difficult to review without a good understanding of the format. Review and editing can be more easily performed using the OWL Manchester Syntax, which provides all information about a concept and its usages within the ontology in one paragraph.</p>
+<p>RDF/XML example:</p>
+<nfdi-code>&lt;owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+    &lt;rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/PO_0006001"/>
+    &lt;rdfs:range rdf:resource="http://purl.obolibrary.org/obo/PO_0009006"/>
+    &lt;dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz&lt;/dc:creator>
+    &lt;dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-10-17T08:33:26Z&lt;/dc:date>
+    &lt;rdfs:label xml:lang="en">part of&lt;/rdfs:label>
+&lt;/owl:ObjectProperty>
+</nfdi-code>
+<p>OWL Manchester example:</p>
+<nfdi-code>ObjectProperty: BFO_0000050
+    Annotations: 
+        dc:creator "Hannah Doerpholz"^^xsd:string,
+        dc:date "2022-10-17T08:33:26Z"^^xsd:dateTime,
+        rdfs:label "part of"@en
+    Domain: 
+        PO_0006001
+    Range: 
+        PO_0009006
+</nfdi-code>
+<p>Since the OBO format does not cover all aspects that can be included in OWL formatted ontologies, conversion between the formats can be problematic. Generally, it is possible to convert OBO files into OWL files using conversion tools such as the <a href="https://owlapi.sourceforge.net/">OWL API</a>, since OBO can be interpreted as a reduced OWL form. However, when trying to convert OWL files to OBO files, there can be significant information loss when concepts foreign to OBO (such as DatatypeProperties mentioned above) are used.</p>
+</br>
+<nfdi-h2 id="obo-foundry">OBO Foundry</nfdi-h2>
+<p>The Open Biological Biomedical Ontologies (OBO) Foundry is a team of scientists interested in the development, collection and maintenance of ontologies for the biological and biomedical domain of life sciences.</p>
+<p>The OBO Foundry is open for contribution from everyone. For an ontology to be accepted into the OBO Foundry, it must follow the <a href="https://obofoundry.org/principles/fp-000-summary.html">OBO Foundry Principles</a>:</p>
+<ol>
+<li><p>It must be open and it needs to be licensed (e.g. CC-BY 3.0).</p>
+</li>
+<li><p>A common format must be used (see section OBO and OWL format).</p>
+</li>
+<li><p>Each term should have a unique identifier by using a unique prefix (such as GO) followed by a numerical ID, thereby resulting in an unique OBO Foundry URL.</p>
+</li>
+<li><p>Every new version of an ontology must be versioned using documented procedures.</p>
+</li>
+<li><p>The domain or matter of the ontology must be described.</p>
+</li>
+<li><p>Each term in an ontology must be described in a human-readable form.</p>
+</li>
+<li><p>Relations between different items of the ontology should be described using defined vocabulary described by the Relations Ontology (RO).</p>
+</li>
+<li><p>Documentations for the ontology must be available. Here, the best way is to provide a GitHub repository.</p>
+</li>
+<li><p>It should be documented that multiple independent people or organizations use the ontology.</p>
+</li>
+<li><p>The ontology should be open to contribution from anyone.</p>
+</li>
+<li><p>One person should be listed as contact and responsible person for the ontology.</p>
+</li>
+<li><p>The naming of for elements such as classes, subclasses etc. should follow naming conventions.</p>
+</li>
+</ol>
+<!-- -->
+<ol start="16">
+<li>The ontology needs to be maintained.</li>
+</ol>
+<!-- -->
+<ol start="20">
+<li>Ontology developers MUST offer channels for community participation and SHOULD be responsive to requests.</li>
+</ol>
+</br>
+<nfdi-h2 id="sources-and-further-information">Sources and further information</nfdi-h2>
+<ul>
+<li><a href="https://obofoundry.org/">OBO Foundry</a></li>
+<li><a href="https://agroportal.lirmm.fr">AgroPortal</a></li>
+<li><a href="https://oboacademy.github.io/obook/explanation/owl-format-variants/">OBO Academy</a></li>
+<li><a href="https://www.w3.org/TR/owl-features/">W3 - Web Ontology Language</a></li>
+<li><a href="https://obofoundry.org/ontology/po.html">Plant ontology</a></li>
+<li><a href="https://owlapi.sourceforge.net/">OWL API</a></li>
+</ul>
+
+      <h3>
+        DataPLANT Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <span style="display: inline-flex; flex-wrap: wrap;">
+          <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+            directly
+          </a>
+          .
+        </span>
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/fundamentals/Ontologies.md" style="margin-left: auto; display: block; width: 130px;">
+          ✏️ Edit this page
+        </a>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>
