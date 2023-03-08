@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Ontologyies
+title: Ontologies
 published: 2023-02-28
 author: Hannah Dörpholz, Angela Kranz, Kathryn Dumschott
 author_github: Hannah-Doerpholz
