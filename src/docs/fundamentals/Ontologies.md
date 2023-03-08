@@ -30,7 +30,7 @@ There are several terms (depending on the ontology format) that are used to desc
 | Individual | Instance (stanza) | Instances of classes that can be</br> related to other instances</br> through properties. | Individual: ARC_00000500</br> &nbsp; &nbsp; Annotations:</br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "A. thaliana" |
 | Domain | domain (tag) | Subject of a relationship</br> triplet. | ObjectProperty: BFO_0000050</br> &nbsp; &nbsp; Annotations: </br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "part of"</br> &nbsp; &nbsp; Domain:</br> &nbsp; &nbsp; &nbsp; &nbsp; PO_0006001 |
 | Range | range (tag) | Object of a relationship triplet. | ObjectProperty: BFO_0000050</br> &nbsp; &nbsp; Annotations: </br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "part of"</br> &nbsp; &nbsp; Range:</br> &nbsp; &nbsp; &nbsp; &nbsp; PO_0009006 |
-<br /> |
+
 
 ![img1](../img/plant_ontology_image.png)
 
