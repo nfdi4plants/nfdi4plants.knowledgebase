@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Ontologies
+title: Ontologyies
 published: 2023-02-28
 author: Hannah Dörpholz, Angela Kranz, Kathryn Dumschott
 author_github: Hannah-Doerpholz
@@ -14,35 +14,27 @@ todo:
 
 The term ontology has its origin in the philosophic question about the very nature of our existence. Here, we do not want to engage into a discussion that could fill whole books.
 
-In our context, an ontology comprises a conceptualized collection of well-defined terms and their relationships for a specific research domain, e.g., plant sciences. Therefore, it can be used to semantically annotate and describe research data in a way that makes it both human- and machine-readable.
-<!-- Can you maybe extend this part a little bit, as it is so important for our use case. How are they annotated? Terms have a definition so that researcher B knows what researcher B meant by using this term. Things like this would be cool :-) These things might not be clear to anybody reading the article, although they are clear to us-->
+In our context, an ontology comprises a conceptualized collection of well-defined terms and their relationships for a specific research domain, e.g., plant sciences. Each term and relationship consists of a unique ID, a label and a definition that are curated manually by experts of the respective domain. Therefore, it can be used to semantically annotate and describe research data in a way that makes it both human- and machine-readable. Using the human-readable definition each researcher can understand and correctly reuse specific terms, while a computer can use the unique ID to reference any term from the ontology. If one term will be replaced by a more accurate term it will not be deleted from the ontology but rather marked as "obsolete". This ensures that older documents that reference the old ontology term remain valid. Using the relationships within the ontology, experimental data can be structured and easily compared to other structured datasets and infer new information.
 
-All knowledge within an ontology is described through axiom triples in a subject-predicate-object syntax. 
-
-<!-- A simple example of this would be really nice here, e.g. A. thaliana is/has xy.  -->
+All knowledge within an ontology is described through axiom triples in a subject-predicate-object syntax. An example for this is the following triplet:  
+>The "phyllome" (subject) is "part of" (predicate) the "shoot system" (object).  
 
 There are several terms (depending on the ontology format) that are used to describe specific parts of an ontology:
 
-| OWL term | OBO term | Explanation |
-| :----- | :----- | :----- |
-| Class | Term (stanza) | Define groups of individuals that belong together because they share some properties. |
-| ObjectProperty | Typedef (stanza) | Relations between instances of two classes. |
-| DatatypeProperty | no equivalent | Relations between instances of classes and datatypes. |
-| AnnotationProperty | property_value (tag) | Define that a property is an annotation. |
-| NamedIndividual | Instance (stanza) | Instances of classes that can be related to other instances through properties. |
-| domain | domain (tag) | Subject of a relationship triplet. |
-| range | range (tag) | Object of a relationship triplet. |
-
-<!-- Although some are already covered by the figure, I think that an additional column with little examples here would be good if possible. We are trying to keep these articles as simple as possible -->
-<br />
+| OWL term  | OBO term | <div style="width:200px">Explanation</div> | OWL Manchester Example |
+| :-----   | :-----   | :-----      | :-----                 |
+| Class    | Term (stanza) | <div style="width:200px">Define groups of individuals that belong together because they share some properties.</div> | <div style="width:200px">Class: PO_0006001</br> &nbsp; &nbsp; Annotations:</br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "phyllome"</div> |
+| ObjectProperty | Typedef (stanza) | <div style="width:200px">Relations between instances of two classes.</div> | <div style="width:200px">ObjectProperty: BFO_0000050</br> &nbsp; &nbsp; Annotations: </br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "part of"</div> |
+| DataProperty | no equivalent | <div style="width:200px">Relations between instances of classes and datatypes. | <div style="width:200px">DataProperty: ARC_00000243</br> &nbsp; &nbsp; Annotations:</br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "email"</div> |
+| AnnotationProperty | property_value (tag) | <div style="width:200px">Define that a property is an annotation.</div> | <div style="width:200px">AnnotationProperty: dc:creator</div> |
+| Individual | Instance (stanza) | <div style="width:200px">Instances of classes that can be related to other instances through properties. | <div style="width:200px">Individual: ARC_00000500</br> &nbsp; &nbsp; Annotations:</br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "A. thaliana"</div> |
+| Domain | domain (tag) | <div style="width:200px">Subject of a relationship triplet.</div> | <div style="width:200px">ObjectProperty: BFO_0000050</br> &nbsp; &nbsp; Annotations: </br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "part of"</br> &nbsp; &nbsp; Domain:</br> &nbsp; &nbsp; &nbsp; &nbsp; PO_0006001 </div> |
+| Range | range (tag) | <div style="width:200px">Object of a relationship triplet.</div> | <div style="width:200px">ObjectProperty: BFO_0000050</br> &nbsp; &nbsp; Annotations: </br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "part of"</br> &nbsp; &nbsp; Range:</br> &nbsp; &nbsp; &nbsp; &nbsp; PO_0009006 </div> |
+<br /> |
 
 ![img1](../img/plant_ontology_image.png)
 
-Fig. 1: Excerpt of the plant ontology. Boxes describe classes, arrows describe object properties. The class “phyllome” is defined as a subclass of “plant organ”. The class “phyllome” has three subclasses: “bract”, “leaf”, and “sporophyll”. It is furthermore defined as “part of” the class “shoot system” and “develops_from” the “phyllome primordium”.
-
-<!-- I assume that you mean phyllome develops_from phyllome  -->
-
-
+Fig. 1: Excerpt of the [plant ontology](https://obofoundry.org/ontology/po.html). Boxes describe classes, arrows describe object properties. The class “phyllome” is defined as a subclass of “plant organ”. The class “phyllome” has three subclasses: “bract”, “leaf” and “sporophyll”. It is furthermore defined as “part of” the class “shoot system” and the "phyllome" “develops_from” the “phyllome primordium”.
 </br>
 
 ## OBO and OWL format
@@ -99,7 +91,7 @@ The OBO Foundry is open for contribution from everyone. For an ontology to be ac
 
 1.	It must be open and it needs to be licensed (e.g. CC-BY 3.0).
 2.	A common format must be used (see section OBO and OWL format).
-3.	Each term should have a unique identifier by using a unique prefix (such as GO) followed by a numerical ID thereby, resulting in an unique OBO Foundry URL.
+3.	Each term should have a unique identifier by using a unique prefix (such as GO) followed by a numerical ID, thereby resulting in an unique OBO Foundry URL.
 4.	Every new version of an ontology must be versioned using documented procedures.
 5.	The domain or matter of the ontology must be described.
 6.	Each term in an ontology must be described in a human-readable form.
@@ -118,3 +110,5 @@ The OBO Foundry is open for contribution from everyone. For an ontology to be ac
 * [AgroPortal](https://agroportal.lirmm.fr)
 * [OBO Academy](https://oboacademy.github.io/obook/explanation/owl-format-variants/)
 * [W3 - Web Ontology Language](https://www.w3.org/TR/owl-features/)
+* [Plant ontology](https://obofoundry.org/ontology/po.html)
+* [OWL API](https://owlapi.sourceforge.net/)
