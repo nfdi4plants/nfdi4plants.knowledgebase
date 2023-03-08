@@ -6,6 +6,7 @@
 # Research Data Management:/docs/fundamentals/ResearchDataManagement.html
 # FAIR Data Principles:/docs/fundamentals/FairDataPrinciples.html
 # Metadata:/docs/fundamentals/Metadata.html
+# Ontologies:/docs/fundamentals/Ontologies.html
 # Data Sharing:/docs/fundamentals/DataSharing.html
 # Data Publications:/docs/fundamentals/DataPublications.html
 # Data Management Plan:/docs/fundamentals/DataManagementPlan.html
