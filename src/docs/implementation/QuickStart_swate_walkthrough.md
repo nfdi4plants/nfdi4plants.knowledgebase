@@ -93,12 +93,16 @@ Click the <kbd>Update Ontology Terms</kbd> quick access buttons.
 
 At this point. Your table should look similar to this
 
+<div class="table-container">
+
 | Source Name 	| Parameter [instrument model] 	| Term Source REF (MS:1000031) 	| Term Accession Number (MS:1000031)        	| Parameter [sample volume] 	| Unit       	| Term Source REF (MS:1000005) 	| Term Accession Number (MS:1000005)        	| Sample Name 	|
 |-------------	|------------------------------	|------------------------------	|-------------------------------------------	|---------------------------	|------------	|------------------------------	|-------------------------------------------	|-------------	|
 |             	| SCIEX instrument model       	| MS                           	| http://purl.obolibrary.org/obo/MS_1000121 	| 10.00 microliter          	| microliter 	| UO                           	| http://purl.obolibrary.org/obo/UO_0000101 	|             	|
 |             	| SCIEX instrument model       	| MS                           	| http://purl.obolibrary.org/obo/MS_1000121 	| 5.00 microliter           	| microliter 	| UO                           	| http://purl.obolibrary.org/obo/UO_0000101 	|             	|
 |             	| SCIEX instrument model       	| MS                           	| http://purl.obolibrary.org/obo/MS_1000121 	| 5.00 microliter           	| microliter 	| UO                           	| http://purl.obolibrary.org/obo/UO_0000101 	|             	|
 |             	| SCIEX instrument model       	| MS                           	| http://purl.obolibrary.org/obo/MS_1000121 	| 5.00 microliter           	| microliter 	| UO                           	| http://purl.obolibrary.org/obo/UO_0000101 	|             	|
+
+</div>
 
 ### Hiding ontology reference columns
 
