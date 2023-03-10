@@ -36,7 +36,7 @@ For example:
 
 ### Create an annotation table
 
-Create a Swate annotation table via the <kbd>create annotation table</kbd> in the yellow pop-up box *OR* click the <kbd>Add Annotation Table</kbd> quick access button.
+Create a Swate annotation table via the <kbd>create annotation table</kbd> in the yellow pop-up box *OR* click the <kbd>Create Annotation Table</kbd> quick access button.
   
 > :bulb: Each table is by default created with one input (`Source Name`) and one output (`Sample Name`) column  
 > :bulb: Only one annotation table can be added per Excel sheet
