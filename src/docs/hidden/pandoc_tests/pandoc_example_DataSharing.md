@@ -6,8 +6,14 @@ author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
 add toc: true
-add sidebar: _sidebars/mainSidebar.md
+# add sidebar: _sidebars/mainSidebar.md
 article_status: draft
+titlepage: true
+titlepage-color: "2D3E50"
+titlepage-text-color: "4FB3D9"
+titlepage-rule-color: "4FB3D9"
+titlepage-rule-height: 2
+titlepage-background: pandoc_sources/dpbackground.pdf
 ---
 
 ## The merits of data sharing

@@ -100,7 +100,7 @@ Fill the cells beneath each building block with ontology terms to note the respe
 
 <!-- Links to DataPLANT Homepage (hp-) -->
 
-[hp-Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
+[hp-Registration]: <https://register.nfdi4plants.org/> "DataPLANT Registration"
 [hp-DataHUB]: <https://git.nfdi4plants.org> "DataPLANT DataHUB"
 [hp-HelpDesk]: <https://helpdesk.nfdi4plants.org> "DataPLANT Help Desk"
 

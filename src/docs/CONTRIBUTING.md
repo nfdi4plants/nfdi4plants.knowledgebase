@@ -45,13 +45,36 @@ For a general introduction to writing markdown, see: [Markdown tutorial](tutoria
   - The github user name of the original author is stored in the yaml block on top under `author_github`
   - During the pull-request mention the author via `@<author_github>`.
 
-## Testing
+## Local testing
 
-Check out the README.md in the [root directory](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/README.md) for instructions on how to install the Knowledge Base locally on your machine.
-Following those instructions allows you to test and see how your changes come into play and whether everything renders correctly.
+The following instructions allow you to test and see how your changes come into play and whether everything renders correctly.
 
 It's highly recommended to *frequently* check your changes locally.
 Please **do not** produce and submit a lot of content without prior local testing.
+
+### install
+
+1. Download the repo.
+2. Run `dotnet tool restore` in root directory.
+3. Run `dotnet paket install` in root directory.
+
+### run
+
+1. Run `dotnet fornax watch` in `\src` folder.
+2. Open page in browser [http://127.0.0.1:8080/](http://127.0.0.1:8080/).
+
+### update web-components
+
+Check out the installation docs on [nfdi4plants/web-components](https://github.com/nfdi4plants/web-components#installation). For fornax you will need to bundle the web-components with rollup. See the respective section for more information.
+
+### update Nfdi4Plants.Fornax
+
+```
+dotnet paket update Nfdi4Plants.Fornax
+```
+
+_Load script will be generated automatically and is referenced in `src\loaders\docsloader.fsx`._
+
 
 ## Common Errors
 
@@ -261,7 +284,7 @@ British English
 
 <!-- Links to DataPLANT Homepage (hp-) -->
 
-[hp-Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
+[hp-Registration]: <https://register.nfdi4plants.org/> "DataPLANT Registration"
 [hp-DataHUB]: <https://git.nfdi4plants.org> "DataPLANT DataHUB"
 [hp-HelpDesk]: <https://helpdesk.nfdi4plants.org> "DataPLANT Help Desk"
 

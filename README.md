@@ -1,28 +1,33 @@
-# nfdi4plants.knowledgebase
+# DataPLANT Knowledge Base
 
-**[https://nfdi4plants.github.io/nfdi4plants.knowledgebase/](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/)**
+[![CC BY 4.0][cc-by-shield]][cc-by]
 
-# Development
+Welcome to the [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4plants.knowledgebase/index.html)! 👋
 
-## install 
+This knowledge base combines articles on
+- **fundamental** topics on research data management (RDM) and
+- how **DataPLANT implements** these aspects to support plant researchers with RDM tools and services.
 
-1. Download repo.
-2. Run `dotnet tool restore` in root directory.
-3. Run `dotnet paket install` in root directory.
+## Feedback & Contribution
 
-## run
+The DataPLANT knowledge base is a community effort and improves with every feedback we receive from readers and users.
+**Your contribution is highly appreciated** no matter how little it may seem!
 
-1. Run `dotnet fornax watch` in `\src` folder.
-2. Open page in browser [http://127.0.0.1:8080/](http://127.0.0.1:8080/).
+If you just want to ask a question, recommend missing topics or tutorials, raise awareness for inconsistencies, typos, missing links, errors in training materials or tutorials, feel free to
 
-## update web-components
+- submit a ticket to our [helpdesk](https://helpdesk.nfdi4plants.org/?topic=ResearchDataManagement_Teaching),
+- [open an issue](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/issues/new/) at GitHub or
+- write us an <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">email</a>.
 
-Check out the installation docs on [nfdi4plants/web-components](https://github.com/nfdi4plants/web-components#installation). For fornax you will need to bundle the web-components with rollup. See the respective section for more information.
+For all other contributions, please refer to the [contribution guide](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/CONTRIBUTING.html).
 
-## update Nfdi4Plants.Fornax
+## License
 
-```
-dotnet paket update Nfdi4Plants.Fornax
-```
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
 
-_Load script will be generated automatically and is referenced in `src\loaders\docsloader.fsx`._
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg

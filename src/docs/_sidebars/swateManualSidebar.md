@@ -8,8 +8,8 @@
 ```Setup
 # Installing Swate:/docs/implementation/SwateManual/Docs01-Installing-Swate.html
 # Browser:/docs/implementation/SwateManual/swate_installation_browser.html
-# Desktop (via installer):/docs/implementation/SwateManual/swate_installation_desktop.html
-# Desktop (manually):/docs/implementation/SwateManual/swate_installation_manual.html
+# Desktop, via installer (beta-stage):/docs/implementation/SwateManual/swate_installation_desktop.html
+# Desktop, manually (recommended):/docs/implementation/SwateManual/swate_installation_manual.html
 ## MacOS:/docs/implementation/SwateManual/swate_installation_manual_macos.html
 # Organization-wide:/docs/implementation/SwateManual/swate_installation_organization.html
 ```
