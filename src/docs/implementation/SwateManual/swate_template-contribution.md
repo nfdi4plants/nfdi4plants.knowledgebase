@@ -12,6 +12,7 @@ add sidebar: _sidebars\swateManualSidebar.md
 ## Prerequisites
 
 - Access to a latest-version installation of **Swate Core** and **Swate Experts**
+- Some routine with Swate (e.g. from this manual and available quickstarts)
 - GitHub account and some routine with GitHub workflows
 
 :bulb: Feel free to contact us for Data Steward support, if you are not familiar to GitHub or Swate, but would like to contribute a Swate template for your community.
@@ -29,14 +30,38 @@ add sidebar: _sidebars\swateManualSidebar.md
 
 ## Creating a new template
 
-1. Create a new .xlsx file in the correct folder (check the subfolder README.md files).
-2. Create an [Annotation Table](https://nfdi4plants.github.io/Swate-docs/docs/UserDocs/Docs02-Annotation-Table.html).
-3. [Add building blocks](https://nfdi4plants.github.io/Swate-docs/docs/UserDocs/Docs03-Building-Blocks.html). If you are unsure of which columns to add:
-    - keep the template as concise as possible
-    - if you add a template with a specific endpoint repository (ER) in mind, you may want to add columns that match the required fields of this ER
-    - if you add a template because the research/methodical topic is missing, try to add columns that cover experimental procedures (as Parameters) and features of the sample (as Characteristics) that the experimenter would do when working on an experiment of that type
-4. After you are done with the table, you have to add a SwateMetadataSheet: Click on the "Template Metadata" tab in **Swate Experts** and click "Create Metadata". A new worksheet will open.
-5. The metadata sheet contains some fields which will be described in the following. Make sure to never change any of the fields in the first column. These "key" fields must exist to create a functional template. Always only change the "value" fields (second and following columns).
+### Create a new Excel file
+
+- Create e.g. `my-template.xlsx`
+- Save it in a suitable folder within your local clone
+
+> :bulb: check the subfolder `README.md`s  
+> :construction: file and directory naming convention is work in progress
+
+### Create an annotation table
+
+- Open `my-template.xlsx`
+- create an [Annotation Table](./Docs02-Annotation-Table.html).
+
+### Add building blocks
+
+- [Add building blocks](./Docs03-Building-Blocks.html) to your template's Annotation Table
+  
+> :bulb: **Recommendations** for suitable building blocks
+> 
+> - keep the template as concise as possible
+> - if you add a template with a specific endpoint repository (ER) in mind, you may want to add columns that match the required fields of this ER
+> - if you add a template because the research/methodical topic is missing, try to add columns that cover experimental procedures (as Parameters) and features of the sample (as Characteristics) that the experimenter would do when working on an experiment of that type
+
+### Add Template Metadata
+
+- Open the "Template Metadata" tab in **Swate Experts**
+- Click "Create Metadata"
+- A new worksheet will open called "SwateMetadataSheet"
+
+### Fill Template Metadata
+
+The metadata sheet contains some fields which will be described in the following. Make sure to never change any of the fields in the first column. These "key" fields must exist to create a functional template. Always only change the "value" fields (second and following columns).
     - **Id**: Never change this field. It maps your template to a database entry.
     - **Name**: This is what users will see first of your template, try using a short, descriptive and human readable name. (Think YouTube video title)
     - **Version**: The versioning follows the [SemVer](https://semver.org/) convention. For a new templates use `1.0.0`, or raise the version number if you update an existing template.
@@ -49,11 +74,12 @@ add sidebar: _sidebars\swateManualSidebar.md
     - **AUTHORS list**: Add your name/alias here with as much information as you like.
     - Example:
     ![Image of example metadata table](./img/example_metadata.jpg)
-6.  Close the file and give it an appropriate name (naming convention is work in progress).
 
-Well done! :tada: You created a new template. 
 
-### Recommended best practices
+
+Well done! :tada: You created a new template.
+
+## Recommended best practices
 
 - Try to think about in which order the experimenter in the lab will do their work. Try to match this chronological order from left to right. The normal order of the columns is: **Source Name** -> (all the Parameters and Characteristics in between in chronological order) -> **Sample Name** -or- **Raw Data File** -or- **Derived Data File**. This step is optional and only meant to increase readability.
 - Below the header you can add exemplary terms as in this example:  
@@ -66,4 +92,4 @@ These examples help as additional information for other Data Stewards and are no
 
 - Opening and saving a Swate template .xlsx file with a spread sheet program other than Microsoft Excel (e.g. LibreOffice) will destroy the template (backend). Please, avoid to upload this file into the GitHub repository, even if the annotation table itself looks intact and can be worked on with the Swate plugin.
 
-- Editing multiple templates and pushing them in a single commit 
+- Editing multiple templates and pushing them in a single commit
