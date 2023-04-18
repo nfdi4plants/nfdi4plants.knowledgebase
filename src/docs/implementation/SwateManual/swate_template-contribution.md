@@ -61,23 +61,33 @@ add sidebar: _sidebars\swateManualSidebar.md
 
 ### Fill Template Metadata
 
-The metadata sheet contains some fields which will be described in the following. Make sure to never change any of the fields in the first column. These "key" fields must exist to create a functional template. Always only change the "value" fields (second and following columns).
-    - **Id**: Never change this field. It maps your template to a database entry.
-    - **Name**: This is what users will see first of your template, try using a short, descriptive and human readable name. (Think YouTube video title)
-    - **Version**: The versioning follows the [SemVer](https://semver.org/) convention. For a new templates use `1.0.0`, or raise the version number if you update an existing template.
-    - **Description**: Here you can describe your template. Users interested in your template can read this in Swate, but not search by it.
-    - **Organisation**: The name of an organisation you want to provide this template for. This facilitates searching for relevant templates in a specific organisation or community. Templates with the organisation "DataPLANT" are listed as "curated" in the Swate template database. All other templates are listed as community.
-    - **Table**: This value must match the name of the annotation table you want to use as a template. To find the name click on any field in your annotation table, then "Table Design". Copy the name to the "Table" value field.
-    ![Image on how to find table name in Excel](./img/find_table_name.jpg)
-    - **ER list**: You can add any number of endpoint repositories to which your template complies here. You may want to add them as ontology terms with unique identifier and source.
-    - **TAGS list**: You can add any number of tags here. These tags are used to search for your template. You may want to add them as ontology terms with unique identifier and source.
-    - **AUTHORS list**: Add your name/alias here with as much information as you like.
-    - Example:
-    ![Image of example metadata table](./img/example_metadata.jpg)
+The metadata sheet contains the following fields:
+
+- **Id**: Do not change this field. It maps your template to a database entry.
+- **Name**: This is first info Swate users see about your template.  
+    > :bulb: Try using a short, descriptive and human readable name. (Think YouTube video title)
+- **Version**: The versioning follows the [SemVer](https://semver.org/) convention. 
+    > :bulb: For a new template use `1.0.0`. Raise the version number when updating an existing template.
+- **Description**: Here you can describe your template. Users interested in your template can read this in Swate, but not search by it.
+- **Organisation**: The name of an organisation or community you create this template for. This facilitates searching for relevant templates in a specific organisation or community.
+    > :bulb: Templates with the organisation "DataPLANT" are listed as `curated` in the Swate template database. All other templates are listed as `community`.
+- **Table**: This value **must match** the name of the annotation table you want to use as a template. To find the name click on any field in your annotation table, then "Table Design". Copy the name to the "Table" value field.
+![Image on how to find table name in Excel](./img/find_table_name.jpg)
+- **ER list**: You can add any number of endpoint repositories to which your template complies here. You may want to add them as ontology terms with unique identifier and source.
+- **TAGS list**: You can add any number of tags here. These tags are used to search for your template. You may want to add them as ontology terms with unique identifier and source.
+- **AUTHORS list**: Add your name/alias here with as much information as you like.
+- Example:
+![Image of example metadata table](./img/example_metadata.jpg)
 
 
+> :warning: Make sure to never change any of the fields in the first column. These "key" fields must exist to create a functional template.  
+> Always only change the "value" fields (second and following columns).
 
-Well done! :tada: You created a new template.
+### Your template is ready for upload :tada:
+
+- Well done! You created a new template.
+- You can now submit your template via the git workflow described above. 
+- Once your pull request is merged, you will receive a "Swobup Commit Report" Email
 
 ## Recommended best practices
 
@@ -90,6 +100,4 @@ These examples help as additional information for other Data Stewards and are no
 
 ## Known pitfalls
 
-- Opening and saving a Swate template .xlsx file with a spread sheet program other than Microsoft Excel (e.g. LibreOffice) will destroy the template (backend). Please, avoid to upload this file into the GitHub repository, even if the annotation table itself looks intact and can be worked on with the Swate plugin.
-
-- Editing multiple templates and pushing them in a single commit
+- Opening and saving a Swate template .xlsx file with a spread sheet program other than Microsoft Excel (e.g. LibreOffice) will destroy the template (backend). Please, avoid to upload this file into the GitHub repository, even if the annotation table itself looks intact and can be worked on with the Swate plugin
