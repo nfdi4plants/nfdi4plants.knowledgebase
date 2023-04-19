@@ -5,14 +5,16 @@ headingDivider:
     - 2
     - 3
 layout: docs
-title: Swate Template - Contribution Guide
+title: Swate Templates - Contribution Guide
 published: 2023-04-18
 author: 
     - Kevin Frey
     - Dominik Brilhaus
-add toc: true
+add toc: false
 add sidebar: _sidebars\swateManualSidebar.md
 ---
+
+:bulb: This walk-through tutorial is meant for data stewards and data managers
 
 ## Prerequisites
 
@@ -36,7 +38,7 @@ Before contributing Swate templates you ideally have
 5. Add/update **ONE** template ([see steps below](#creating-a-new-swate-template))
 6. Commit, push and [sync your branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork).
 7. Open a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
-   > 👀 You can **reference your issue** (typing `#` in the pull request's commenting dialog)
+   > 👀 You can **reference your issue** typing `#` in the pull request's commenting dialog
 
 ## Creating a new Swate template
 
@@ -71,9 +73,8 @@ figcaption {
 - Open a new Excel workbook `<template>.xlsx`
 - Create an [Annotation Table](./Docs02-Annotation-Table.html)
 - Save the Excel file in a suitable folder within your local clone of the Swate templates repository
-
-> :bulb: check the subfolder README.md`s  
-> :construction: naming convention for files and directories is work in progress
+  - :bulb: check the subfolder README.md`s  
+  - :construction: naming convention for files and directories is work in progress
 
 - [Add building blocks](./Docs03-Building-Blocks.html) to your template's Annotation Table
 
@@ -88,14 +89,13 @@ figcaption {
 </div>
 </div>
 
-
 ### Recommendations for template design
 
 - keep the template as concise as possible
 - finding suitable building blocks is not always straight-forward
 - 👀 If you miss a term or ontology, please follow the [DPBO contribution guide](https://github.com/nfdi4plants/nfdi4plants_ontology) to let us know
 - if you add a template to address a missing method, try to add building blocks that cover experimental procedures (as Parameters) and features of the sample (as Characteristics) that the experimenter would do when working on an experiment of that type
-- if you add a template with a specific endpoint repository (ER) in mind, you may want to add columns that match the required fields of this ER
+- if you add a template with a specific endpoint repository (ER) in mind, you may want to add building blocks that match the required fields of this ER
 
 ### Add Template Metadata
 
@@ -105,57 +105,69 @@ figcaption {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
 }
-figure {
-  position: relative;
-  width: 300px;
-}
 
 </style>
 
-- Open the "Template Metadata" tab in **Swate Experts** <img height=30px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Experts/swate_e_40x40.png'/>
+- Open the "Template Metadata" tab in **Swate Experts** <img height=10px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Experts/swate_e_40x40.png'/>
 - Click "Create Metadata"
 - A new worksheet will open called "SwateMetadataSheet"
 
 <div class="columns">
 
-<figure>
-  <img src="./../../img/swateExperts-tab-templateMetadata.png">
-</figure>
+<div class="columns-left">
+<img src="./../../img/swateExperts-tab-templateMetadata.png" style="height: 300px">
+</div>
 
-<figure>
-  <img src="./../../img/swate-templates-metadata.png">
-</figure>
+<div class="columns-right">
+<img src="./../../img/swate-templates-metadata.png" style="height: 300px">
+</div>
 
 </div>
 
-### Fill Template Metadata (1)
 
-The metadata sheet contains the following fields:
+> :warning: Make sure to never change any of the fields in the first column. These "key" fields must exist to create a functional template. Always only change the "value" fields (second and following columns).
 
-- **Id**: Do not change this field. It maps your template to a database entry.
-- **Name**: This is first info Swate users see about your template.  
-    > :bulb: Try using a short, descriptive and human readable name. (Think YouTube video title)
-- **Version**: The versioning follows the [SemVer](https://semver.org/) convention. 
-    > :bulb: For a new template use `1.0.0`. Raise the version number when updating an existing template.
-- **Description**: Here you can describe your template. Users interested in your template can read this in Swate, but not search by it.
-- **Organisation**: The name of an organisation or community you create this template for. This facilitates searching for relevant templates in a specific organisation or community.
-    > :bulb: Templates with the organisation "DataPLANT" are listed as `curated` in the Swate template database. All other templates are listed as `community`.
-- **Table**: This value **must match** the name of the annotation table you want to use as a template. To find the name click on any field in your annotation table, then "Table Design". Copy the name to the "Table" value field.
+### Template Metadata Explanation
 
-
-### Fill Template Metadata (2)
-
-- **ER list**: You can add any number of endpoint repositories to which your template complies here. You may want to add them as ontology terms with unique identifier and source.
-- **TAGS list**: You can add any number of tags here. These tags are used to search for your template. You may want to add them as ontology terms with unique identifier and source.
-- **AUTHORS list**: Add your name/alias here with as much information as you like.
-- Example:
-![Image of example metadata table bg right width:600](./../../img/Swate-templates_example_metadata.jpg)
-
-> :warning: Make sure to never change any of the fields in the first column. These "key" fields must exist to create a functional template.  
-> Always only change the "value" fields (second and following columns).
+Key | Definition | Tip :bulb:
+------- | ------- | -------
+**Id** |   | Do not change this field. It maps your template to a database entry :warning:
+**Name** |  This is the first info Swate users see about your template  |  Try using a short, descriptive and human readable name. (Think YouTube video title)
+**Version** |  The version of the template following the [SemVer](https://semver.org/) convention.  |  For a new template use `1.0.0`. Raise the version number when updating an existing template
+**Description** |  Here you can describe your template |  Users interested in your template can read this in Swate, but not search by it
+**Organisation** |  The name of an organisation or community you create this template for. This facilitates searching for relevant templates in a specific organisation or community. |  Templates with the organisation "DataPLANT" are listed as `curated` in the Swate template database. All other templates are listed as `community`.
+**Table** |  This value **must match** the name of the annotation table you want to use as a template |  To find the name click on any field in your annotation table, then open the `Table Design` (on macOS: `Table`) tab. Copy the name to the "Table" value field <img src="../../img/Swate-templates_find_table_name.jpg" style="height: 150px"  />
+**ER list** |  You can add any number of endpoint repositories to which your template complies here | You may want to add them as ontology terms with unique identifier and source
+**TAGS list** |  You can add any number of tags here. These tags are the basis to search for your template | You may want to add them as ontology terms with unique identifier and source
+**AUTHORS list** |  Add your name/alias here with as much information as you like.
 
 
-<!-- ![Image on how to find table name in Excel bg right width:600](./../../img/Swate-templates_find_table_name.jpg) -->
+
+### Template Metadata Example
+
+<style scoped>
+.columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px;
+}
+
+</style>
+
+Here is an example for filled out template metadata and how it helps in Swate's template search.
+
+<div class="columns">
+
+<div class="columns-left">
+<img src="../../img/Swate-templates_example_metadata.jpg">
+</div>
+
+<div class="columns-right">
+<img src="../../img/swate-tab-templates_example.png">
+</div>
+
+</div>
+
 
 ### Your template is ready for upload :tada:
 
