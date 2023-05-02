@@ -1,0 +1,1 @@
+Note, this is just a dump folder of a markdown and images linked in that markdown. The links are not functional (anymore) and would need to be adapted according to (relative to) where the markdown and the images are stored / used / interpreted.
