@@ -66,7 +66,6 @@ The goal of bridging the use of ELNs with ARCs is to foster FAIRness in an appro
 Independent of the ELN software you use or whether you prefer another digital routine -cloud, local file server or wiki- to structure and share your lab protocols, the intuitive ISA structure can easily be implemented.
 
 
-
 Most ELN software allow some routine to structure / associate entries.
 
 
@@ -89,7 +88,7 @@ There is no clear "ruling" as to what defines as a single process.
 
 Looking back at the kitchen analogy: If you're baking a chocolate cake, then going to the grocery store to buy the required ingredients could vaguely be defined as part of the process "chocolate cake baking". However, at the latest once you want to reuse some of the ingredients to cook another dish (process "crumbing a fish filet"), it would become hard to reference the process' (sub)part ("buying groceries"). Certainly, brewing coffee and setting the table should be defined as separate processes.
 
-As vague rules of thumb, one can recognize a process by either of the following criteria
+As vague rules of thumb, in a laboratory context one can recognize a process by either of the following criteria
 
 - you can safely store away the input or output sample, material under suitable conditions (e.g. dry/wet, room temperature / freezer)
 - someone else or you yourself could be interested in the output sample, material or data of your process for another purpose (frozen leaf powder for different extractions and assays)
@@ -97,12 +96,17 @@ As vague rules of thumb, one can recognize a process by either of the following 
 
 As a counter example: centrifugation or incubation and setting samples aside during an extraction.
 
+![](define-processes.drawio.svg)
+
+
+
 ### Identify your projects and resources
 
 Once we have clearly defined modular processes, we can start to label them.
 
 
 - project ID => INV ID
+- Here's a strength in electronic lab notebooks
 - samples, primers, materials => resources
 - the definition of what defines a project can vary greatly from a small side project during a bachelor thesis with only the student and a supervisor involved towards multi-lab efforts and should not be enforced
 - Note however: the smaller and more concise the project is defined, the more actionable it will be. Just as the ARC, laboratory projects are *immutable, but evolving*. 
@@ -169,7 +173,7 @@ Study Protocol Name
 3. Just like an ELN, the ARC can parallel your lab work
 4. Daily routine: Export protocol to the ARC of the respective project
    1. Things are often "work in progress"
-   2. ARC allows to "end-of-day-dump" your protocols into a subdir 
+   2. ARC allows to "end-of-day-dump" your protocols into a subdir
 
 ## Outlook
 
