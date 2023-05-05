@@ -21,4 +21,4 @@ lowering the activation energy.
 <br>
 <br>
 
-![w:600](../images/FAIRData_ActivationEnergy_withDataPLANT.svg)
+![w:600](../../img/FAIRData_ActivationEnergy_withDataPLANT.svg)

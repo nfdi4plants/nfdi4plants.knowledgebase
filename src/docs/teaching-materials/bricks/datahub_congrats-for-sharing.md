@@ -24,4 +24,4 @@ object-position: 100% 45%;
 }
 </style>
 
-![](../images/ARC_Sharing_img1.png)
+![](../../img/ARC_Sharing_img1.png)

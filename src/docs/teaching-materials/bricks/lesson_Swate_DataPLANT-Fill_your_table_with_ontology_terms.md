@@ -12,4 +12,4 @@ title: lesson_Swate_DataPLANT-Fill_your_table_with_ontology_terms
 
 # Fill your table with ontology terms
 
-![w:800](../images/Swate_OntologyTermSearch2.svg)
+![w:800](../../img/Swate_OntologyTermSearch2.svg)

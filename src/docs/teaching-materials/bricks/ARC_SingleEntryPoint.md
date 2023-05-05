@@ -8,4 +8,4 @@ title: ARC_SingleEntryPoint
 
 # ARC as the single entry point
 
-![w:800](../images/ARC_SingleEntryPoint.svg)
+![w:800](../../img/ARC_SingleEntryPoint.svg)

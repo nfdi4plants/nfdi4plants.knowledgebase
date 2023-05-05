@@ -14,4 +14,4 @@ title: tutorial_arc_add-subdirectories
 
 The ARC Commander will add subdirectories to the *studies* and *assays* folder. Your ARC should look similar to this now: 
 
-![w:800](../images/arc_studies_assays.jpg)
+![w:800](../../img/arc_studies_assays.jpg)

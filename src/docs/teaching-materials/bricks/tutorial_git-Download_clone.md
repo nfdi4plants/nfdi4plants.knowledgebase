@@ -12,4 +12,4 @@ title: tutorial_git-Download_clone
 
 # Download ≠ clone
 
-![](../images/git_download_img1.png)
+![](../../img/git_download_img1.png)

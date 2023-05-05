@@ -12,4 +12,4 @@ date: 2022-11-04
 
 # What does an ARC look like?
 
-![width:950](../images/ARC_fillWithData_seq1.png)
+![width:950](../../img/ARC_fillWithData_seq1.png)

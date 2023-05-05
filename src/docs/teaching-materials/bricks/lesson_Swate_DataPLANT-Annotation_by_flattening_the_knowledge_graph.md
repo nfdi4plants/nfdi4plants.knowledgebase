@@ -12,7 +12,7 @@ title: lesson_Swate_DataPLANT-Annotation_by_flattening_the_knowledge_graph
 
 # Annotation by flattening the knowledge graph
 
-![w:800](../images/Swate_ParentChildTerm.svg)
+![w:800](../../img/Swate_ParentChildTerm.svg)
 
 - Low-friction metadata annotation
 - Familiar spreadsheet, row/column-based environment

@@ -19,4 +19,4 @@ object-fit: cover;
 }
 </style>
 
-![](../images/FAIR_Benefits.png)
+![](../../img/FAIR_Benefits.png)

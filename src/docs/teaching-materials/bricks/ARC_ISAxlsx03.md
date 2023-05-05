@@ -11,4 +11,4 @@ Output building blocks:
 - Raw Data File
 - Derived Data File
 
-![bg right w:600](../images/ISAmodel_ARC01_img05.svg)
+![bg right w:600](../../img/ISAmodel_ARC01_img05.svg)

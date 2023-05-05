@@ -17,4 +17,4 @@ provide support in being FAIR
 </span>
 </h1>
 
-![bg w:1200](../images/Tools-and-Services_DataPLANT.png)
+![bg w:1200](../../img/Tools-and-Services_DataPLANT.png)

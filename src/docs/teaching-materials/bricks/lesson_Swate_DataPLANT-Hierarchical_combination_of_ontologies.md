@@ -12,6 +12,6 @@ title: lesson_Swate_DataPLANT-Hierarchical_combination_of_ontologies
 
 # Hierarchical combination of ontologies
 
-![w:800](../images/Swate_OntologyCombination.svg)
+![w:800](../../img/Swate_OntologyCombination.svg)
 
 <!-- combination of ISA (Characteristics, Parameter, Factor) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter \[temperature\] or Factor \[temperature\]). -->

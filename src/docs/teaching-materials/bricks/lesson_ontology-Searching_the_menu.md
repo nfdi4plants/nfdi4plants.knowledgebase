@@ -16,7 +16,7 @@ An ontology can be queried:
 
 - *"name all pizzas with topping mushrooms"*
 
-![bg right w:1020](../images/Ontologies_pizzaAnalogy_seq9.png)
+![bg right w:1020](../../img/Ontologies_pizzaAnalogy_seq9.png)
 
 <!-- 
 TODO: 

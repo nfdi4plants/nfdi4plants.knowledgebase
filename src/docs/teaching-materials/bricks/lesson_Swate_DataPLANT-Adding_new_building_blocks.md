@@ -12,6 +12,6 @@ title: lesson_Swate_DataPLANT-Adding_new_building_blocks
 
 # Adding new building blocks (columns)
 
-![w:750](../images/Swate_NewParameter.svg)
+![w:750](../../img/Swate_NewParameter.svg)
 
 - Swate can be used for the annotation of **isa.study.xlsx and isa.assay.xlsx** files

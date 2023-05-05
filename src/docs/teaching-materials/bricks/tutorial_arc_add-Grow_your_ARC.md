@@ -15,4 +15,4 @@ title: tutorial_arc_add-Grow_your_ARC
 - The previous steps can be repeated to add as many studies and assays as needed. Accordingly, more subdirectories will be added
 - Multiple assays can be grouped in a study, if the same `StudyIdentifier` is used
 
-![bg right:50% w:640](../images/ARC_realLifeLoading.svg)
+![bg right:50% w:640](../../img/ARC_realLifeLoading.svg)

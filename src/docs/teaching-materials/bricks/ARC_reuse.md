@@ -11,4 +11,4 @@ title: ARC_reuse
 
 <br>
 
-![w:800](../images/ARC_reuse_img2.png)
+![w:800](../../img/ARC_reuse_img2.png)

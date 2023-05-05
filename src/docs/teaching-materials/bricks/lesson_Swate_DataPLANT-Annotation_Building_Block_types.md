@@ -12,7 +12,7 @@ title: lesson_Swate_DataPLANT-Annotation_Building_Block_types
 
 # Annotation Building Block types <!--fit-->
 
-![bg right w:620](../images/Swate_Overview.svg)
+![bg right w:620](../../img/Swate_Overview.svg)
 
 - Source Name (Input)
 - Protocol Columns

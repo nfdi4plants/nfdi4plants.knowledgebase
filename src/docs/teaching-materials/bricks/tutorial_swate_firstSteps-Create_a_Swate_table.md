@@ -15,4 +15,4 @@ title: tutorial_swate_firstSteps-Create_a_Swate_table
 - Click *create annotation table* in the yellow pop-up box (only appears on Excel worksheets without annotation table). 
 - An annotation table with the building blocks *Source Name* and *Sample Name* will be generated.  
 
-![w:500](../images/Swate-CreateAnnotationTable-Exp.jpg)
+![w:500](../../img/Swate-CreateAnnotationTable-Exp.jpg)

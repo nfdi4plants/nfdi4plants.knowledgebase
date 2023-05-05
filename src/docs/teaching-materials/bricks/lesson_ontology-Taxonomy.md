@@ -14,4 +14,4 @@ title: lesson_ontology-Taxonomy
 
 Hierarchy or classification
 
-![bg right:60% w:780](../images/Ontologies_pizzaAnalogy_seq1.png)
+![bg right:60% w:780](../../img/Ontologies_pizzaAnalogy_seq1.png)

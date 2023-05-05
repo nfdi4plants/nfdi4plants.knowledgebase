@@ -20,4 +20,4 @@ title: tutorial_arc_sync-Success
 
 Check if the upload was successful by visiting your ARC at the respective URL in your browser.
 
-![w:800](../images/datahub_repository.png)
+![w:800](../../img/datahub_repository.png)

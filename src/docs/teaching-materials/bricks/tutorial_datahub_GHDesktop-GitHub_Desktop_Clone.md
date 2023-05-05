@@ -19,4 +19,4 @@ title: tutorial_datahub_GHDesktop-GitHub_Desktop_Clone
 5. Select a destination folder (local path), where your ARC will be stored locally
 6. Click `Clone`
 
-![bg right:40% w:500](../images/GitHub_Desktop_clone.png)
+![bg right:40% w:500](../../img/GitHub_Desktop_clone.png)

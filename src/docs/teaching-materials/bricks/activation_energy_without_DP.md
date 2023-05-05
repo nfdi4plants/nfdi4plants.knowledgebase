@@ -11,4 +11,4 @@ title: activation_energy_without_DP
 <!--DataPLANT acts like a catalyst. It lowers the activation energy.-->
 <br>
 
-![w:600](../images/activation_energy_without_DP.png)
+![w:600](../../img/activation_energy_without_DP.png)

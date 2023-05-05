@@ -12,7 +12,7 @@ title: lesson_repositories-Generic_data_repositories
 
 # Generic data repositories
 
-![bg right width:500](../images/repositories_genericRepos_collage.drawio.svg)
+![bg right width:500](../../img/repositories_genericRepos_collage.drawio.svg)
 
 **Good**
 

@@ -11,7 +11,7 @@ title: ARC_contribute
 
 <br>
 
-![w:750](../images/ARC_contribute_img2.png)
+![w:750](../../img/ARC_contribute_img2.png)
 
 <br>
 

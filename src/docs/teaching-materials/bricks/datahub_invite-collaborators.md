@@ -20,28 +20,28 @@ date: 2022-11-04
 
 1. Click on **Project Information** in the left navigation panel
 
-![fit w:1050](../images/datahub_members_seq2.png)
+![fit w:1050](../../img/datahub_members_seq2.png)
 
 ---
 
 2. Click on **Members**
 
-![fit w:1050](../images/datahub_members_seq3.png)
+![fit w:1050](../../img/datahub_members_seq3.png)
 
 ---
 
 3. Click on **Invite members**
 
-![fit w:1050](../images/datahub_members_seq4.png)
+![fit w:1050](../../img/datahub_members_seq4.png)
 
 ---
 
 4. Search for potential collaborators
 
-![fit w:1050](../images/datahub_members_seq5.png)
+![fit w:1050](../../img/datahub_members_seq5.png)
 
 ---
 
 5. Select a role 
 
-![fit w:1050](../images/datahub_members_seq6.png)
+![fit w:1050](../../img/datahub_members_seq6.png)

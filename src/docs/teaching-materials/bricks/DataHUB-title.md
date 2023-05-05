@@ -11,5 +11,5 @@ title: DataHUB-title
 
 Discover and share ARCs with the Community on DataPLANT's [DataHUB](<https://git.nfdi4plants.org/>).
 
-![](../images/DataHUB_LandingPage.png)
+![](../../img/DataHUB_LandingPage.png)
 

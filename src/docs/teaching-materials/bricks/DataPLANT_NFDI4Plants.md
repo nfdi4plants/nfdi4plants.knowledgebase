@@ -33,7 +33,7 @@ ul {
 </div>
 <div class="columns-right">
 
-<img align="center" width="450" src="../images/DataPLANT_TaskAreas.svg">
+<img align="center" width="450" src="../../img/DataPLANT_TaskAreas.svg">
 
 </div>
 <!-- 

@@ -6,4 +6,4 @@ title: ARC_ISA-tab
 
 # 
 
-![w:1100](../images/ISAmodel_ARC01_img02.svg)
+![w:1100](../../img/ISAmodel_ARC01_img02.svg)

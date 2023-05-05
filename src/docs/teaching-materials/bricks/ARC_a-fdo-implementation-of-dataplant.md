@@ -21,5 +21,5 @@ a FAIR digital object implementation of DataPLANT
 
 <div class=mdiv>
 
-![w:320](../images/DataPLANT_BigPicture_seq1-mid.png)
+![w:320](../../img/DataPLANT_BigPicture_seq1-mid.png)
 </div>

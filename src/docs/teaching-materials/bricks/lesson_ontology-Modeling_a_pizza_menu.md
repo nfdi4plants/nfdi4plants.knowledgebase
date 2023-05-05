@@ -12,12 +12,12 @@ title: lesson_ontology-Modeling_a_pizza_menu
 
 # Modeling a pizza menu
 
-![w:1000](../images/Ontologies_pizzaAnalogy_seq3.png)
+![w:1000](../../img/Ontologies_pizzaAnalogy_seq3.png)
 
 # Modeling a pizza menu
 
-![w:1000](../images/Ontologies_pizzaAnalogy_seq4.png)
+![w:1000](../../img/Ontologies_pizzaAnalogy_seq4.png)
 
 # Modeling a pizza menu
 
-![w:1000](../images/Ontologies_pizzaAnalogy_seq5.png)
+![w:1000](../../img/Ontologies_pizzaAnalogy_seq5.png)

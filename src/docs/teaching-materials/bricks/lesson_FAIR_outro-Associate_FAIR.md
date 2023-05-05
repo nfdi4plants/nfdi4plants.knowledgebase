@@ -36,4 +36,4 @@ ul {
 * Access Management
 * Publication
 
-![bg right:30% w:700](../images/FAIR_Principles_002.svg)
+![bg right:30% w:700](../../img/FAIR_Principles_002.svg)

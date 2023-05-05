@@ -12,4 +12,4 @@ date: 2022-11-04
 
 # Annotated Research Context (ARC)
 
-![width:950](../images/ARC_DataCentricIntegration_img1.png)
+![width:950](../../img/ARC_DataCentricIntegration_img1.png)

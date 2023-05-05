@@ -15,4 +15,4 @@ title: tutorial_swate_firstSteps-DataPLANT_curated_and_community_templates
 - Alternatively, you can also use a [Swate template](https://github.com/nfdi4plants/Swate/wiki/Docs05-Templates). 
 - You can find them under the *Protocol Insert* tab in Swate. Select a DataPLANT or community template as indicated by the tags.
 
-![bg right:50% w:450px](../images/swate_templates.svg)
+![bg right:50% w:450px](../../img/swate_templates.svg)

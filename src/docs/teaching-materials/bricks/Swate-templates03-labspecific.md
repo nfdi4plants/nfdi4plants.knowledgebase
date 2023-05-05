@@ -23,6 +23,6 @@ section {
 }
 </style>
 
-![](../images/Swate_metadataTemplates.png)
+![](../../img/Swate_metadataTemplates.png)
 
 Facilities can define their most common workflows as templates

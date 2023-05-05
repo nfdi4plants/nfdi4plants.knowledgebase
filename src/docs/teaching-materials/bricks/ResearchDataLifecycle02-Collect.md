@@ -34,6 +34,6 @@ figcaption {
 </style>
 
 <figure>
-  <img src="../images/ResearchDataLifecycle_seq2.png">
+  <img src="../../img/ResearchDataLifecycle_seq2.png">
   <figcaption>inspired by RDMkit <br> https://rdmkit.elixir-europe.org/data_life_cycle</figcaption>
 </figure>

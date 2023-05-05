@@ -12,4 +12,4 @@ title: tutorial_arc_add-Adding_metadata_to_your_ARC
 
 # Adding metadata to your ARC
 
-![bg right:50% w:800](../images/ARC_fillWithData_seq6.png)
+![bg right:50% w:800](../../img/ARC_fillWithData_seq6.png)

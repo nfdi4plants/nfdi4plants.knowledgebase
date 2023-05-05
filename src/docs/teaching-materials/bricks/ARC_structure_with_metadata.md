@@ -9,4 +9,4 @@ date: 2022-11-24
 
 # Structure of an ARC?
 
-![width:950](../images/ARC_fillWithData_seq6.png)
+![width:950](../../img/ARC_fillWithData_seq6.png)
