@@ -1,7 +1,35 @@
-
-# Teaching Materials
+---
+layout: docs
+title: Teaching Materials
+published: 2022-12-14
+todo:  
+---
 
 :bulb: mostly copied here from https://github.com/nfdi4plants/teaching_materials
+
+
+## git issues
+
+Note, with the many images (and powerpoint files) stored in this repo, the overall size has become rather big leading to issues with `git push`
+So far, it helped to increas the postBuffer:
+
+```bash
+git config --global http.postBuffer 2097152000
+```
+
+> source: https://stackoverflow.com/questions/6887228/git-hangs-while-writing-objects
+
+
+## Bricks gallery
+
+There's a "bricks gallery", compiling all available bricks, rendered as html.
+
+In `dotnet fornax watch` mode, navigate to http://127.0.0.1:8080/docs/teaching-materials/_maintenance/bricks-gallery.html 
+
+> :bulb:
+> - this is not a slide deck
+> - this is just to get a quick overview of available bricks
+> - the file (bricks-gallery.md) can be auto-generated and will likely be overwritten
 
 ## VS Code Marp Settings
 
