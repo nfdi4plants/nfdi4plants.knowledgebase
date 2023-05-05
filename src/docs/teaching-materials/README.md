@@ -47,7 +47,7 @@ In order to work with the VS Code marp extension (i.e. preview and export slides
     "src/docs/teaching-materials/style/dataplant_marp-theme-Intro.css"
   ],
   "markdown.marp.enableHtml": true,
-  "markdown.marp.exportType": "pdf",
+  "markdown.marp.exportType": "html",
   "markdown.marp.pdf.noteAnnotations": false
 }
 ```
