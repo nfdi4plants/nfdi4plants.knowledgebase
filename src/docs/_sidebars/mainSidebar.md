@@ -39,4 +39,5 @@
 ```Teaching Materials
 # ARC Demo:docs/teaching-materials/units/promotion_arc-demo/promotion_arc-demo.html
 # DataPLANT Overview:docs/teaching-materials/units/promotion_001_DataPLANT-Overview/promotion_001_DataPLANT-Overview.html
+# ARC structure:docs/teaching-materials/units/lesson_022_ARC_structure_DataPLANT/lesson_022_ARC_structure_DataPLANT.html
 ```
