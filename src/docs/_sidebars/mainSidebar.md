@@ -34,3 +34,8 @@
 <!-- ```FAQs
 # Frequently Asked Questions:/docs/faqs/faqs.html
 ``` -->
+
+
+```Teaching Materials
+# ARC Demo:docs/teaching-materials/units/promotion_arc-demo/promotion_arc-demo.html
+```
