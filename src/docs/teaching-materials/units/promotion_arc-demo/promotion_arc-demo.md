@@ -12,6 +12,7 @@ title: "First steps towards your ARC"
 contributor_name: "Dominik Brilhaus"
 contributor_orcid: https://orcid.org/0000-0001-9021-3197
 contributor_github: brilator
+date: 2023-02-02
 ---
 
 <!-- 
