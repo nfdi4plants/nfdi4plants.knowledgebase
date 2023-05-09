@@ -22,7 +22,7 @@ description:
 learning outcomes:
 - evaluate an appropriate structure for research data
 - give examples for systematic file names
-title: trainingpath
+title: lesson_OrderStructure
 ---
 
 ../../bricks/lesson_OrderStructure-Directory_structures_and_file_naming.md

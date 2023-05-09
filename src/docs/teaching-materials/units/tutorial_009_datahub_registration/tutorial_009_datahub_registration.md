@@ -8,7 +8,7 @@ footer: <a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../../i
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height:
   30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity:
   0.5;}'
-title: DataPLANT Registration
+title: tutorial_009_datahub_registration
 layout: slides
 author: null
 author_orcid: null

@@ -20,7 +20,7 @@ author_github:
 - brilator
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 date: 2023-03-16
-title: trainingpath
+title: tutorial_arc_installation
 ---
 
 ../../bricks/tutorial_arc_title.md

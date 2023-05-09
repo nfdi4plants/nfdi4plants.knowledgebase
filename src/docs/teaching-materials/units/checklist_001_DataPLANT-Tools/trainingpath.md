@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: DataPLANT Tools Checklist
+title: checklist_001_DataPLANT-Tools
 author: Cristina Martins Rodrigues
 author_orcid: https://orcid.org/0000-0002-4849-1537
 author_github: CMR248

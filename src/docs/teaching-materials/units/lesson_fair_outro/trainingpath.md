@@ -16,7 +16,7 @@ license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 date: 2023-03-16
 learning outcomes:
 - explain how the fair principles are implemented with the topics of this course
-title: trainingpath
+title: lesson_fair_outro
 ---
 
 ../../bricks/lesson_FAIR_outro-Associate_FAIR.md

@@ -9,7 +9,7 @@ style: 'footer {height: 30px;padding: 10px;bottom: 00px;} #footer-img1 {height: 
   0px;} #footer-img2 {height: 30px;padding-left: 20px;opacity: 0.5;} #footer-img3
   {height: 20px;padding-left: 20px;opacity: 0.5;}'
 layout: slides
-title: FAIR principles
+title: lesson_fair-intro
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator

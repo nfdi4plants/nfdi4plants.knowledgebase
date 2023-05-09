@@ -17,7 +17,7 @@ date: 2023-03-16
 learning outcomes:
 - give examples of metadata standards
 - choose a suitable metadata standard
-title: trainingpath
+title: lesson_metadataStandards
 ---
 
 ../../bricks/lesson_metadataStandards-NotStandards.md

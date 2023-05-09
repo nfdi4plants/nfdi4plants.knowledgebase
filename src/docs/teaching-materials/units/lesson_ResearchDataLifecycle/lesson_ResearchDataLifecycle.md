@@ -9,7 +9,7 @@ style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height
   30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity:
   0.5;}'
 layout: slides
-title: The Research Data Lifecycle
+title: lesson_ResearchDataLifecycle
 author:
 - Dominik Brilhaus
 - Martin Kuhl

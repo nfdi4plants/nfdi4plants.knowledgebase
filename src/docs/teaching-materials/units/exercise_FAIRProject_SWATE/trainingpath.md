@@ -18,7 +18,7 @@ description:
 - Exercise to let participants appreciate FAIR principles on own data
 - Experience the need for FAIR / structured data
 - Compares to project handover on a flash drive or via email
-title: trainingpath
+title: exercise_FAIRProject_SWATE
 ---
 
 ../../bricks/exercise_FAIRProject_SWATE-title.md

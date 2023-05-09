@@ -23,7 +23,7 @@ description:
 learning outcomes:
 - evaluate different publication types and modes
 - define different routes of data publication weigh up their benefits and pitfalls
-title: trainingpath
+title: lesson_publication
 ---
 
 ../../bricks/lesson_publication-title.md

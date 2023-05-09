@@ -18,7 +18,7 @@ description:
 - contemporaneous documentation
 - introduce electronic lab notebook (ELN)
 - show digital tools for collaborative, shared documentation
-title: trainingpath
+title: lesson_documentation
 ---
 
 ../../bricks/lesson_documentation-Digital_documentation.md

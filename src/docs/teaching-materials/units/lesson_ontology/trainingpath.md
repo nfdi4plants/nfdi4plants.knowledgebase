@@ -20,7 +20,7 @@ description:
 learning outcomes:
 - explain that ontologies consist of related terms
 - identifiy the purpose of ontologies for metadata
-title: trainingpath
+title: lesson_ontology
 ---
 
 ../../bricks/lesson_ontology-Ontology.md

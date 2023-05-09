@@ -16,7 +16,7 @@ license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 date: 2023-03-16
 description:
 - Slides to show people how to find and use the command line
-title: trainingpath
+title: tutorial_IntroCLI
 ---
 
 ../../bricks/tutorial_IntroCLI-The_command_line.md

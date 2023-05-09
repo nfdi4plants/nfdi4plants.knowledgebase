@@ -9,7 +9,7 @@ style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height
   30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity:
   0.5;}'
 layout: slides
-title: Annotated Research Context - Folder Structure
+title: lesson_022_ARC_structure_DataPLANT
 author: Cristina Martins Rodrigues
 author_orcid: https://orcid.org/0000-0002-4849-1537
 author_github: CMR248

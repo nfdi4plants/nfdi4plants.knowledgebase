@@ -24,7 +24,7 @@ learning outcomes:
 - know that several (method-specific) repositories exist
 - define difference between specific vs general repositories
 - distinguish which repository fits best
-title: trainingpath
+title: lesson_repositories
 ---
 
 ../../bricks/lesson_repositories-Domain-specific.md
