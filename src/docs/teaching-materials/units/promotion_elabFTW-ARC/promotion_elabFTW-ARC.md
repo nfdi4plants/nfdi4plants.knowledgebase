@@ -1,18 +1,19 @@
 ---
 marp: true
 theme: dataplant_marp-theme
-headingDivider:
-- 1
-- 2
-- 3
 paginate: true
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
 layout: slides
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://ceplas.eu"> <img id="footer-img2" src="../../images/_logos/CEPLAS/CEPLAS_Icon.jpeg"></a><a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img3" src="../../images/_logos/CreativeCommons/by.svg"></a>'
-style: 'footer {height: 30px;padding: 10px;bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 30px; padding-left: 20px;opacity: 0.5;}  #footer-img3 {height: 20px;padding-left: 20px; opacity: 0.5;}'
+footer: <a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a>
+  <a href="https://ceplas.eu"> <img id="footer-img2" src="../../images/_logos/CEPLAS/CEPLAS_Icon.jpeg"></a><a
+  href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img3" src="../../images/_logos/CreativeCommons/by.svg"></a>
+style: 'footer {height: 30px;padding: 10px;bottom: 00px;} #footer-img1 {height: 30px;
+  padding-left: 0px;} #footer-img2 {height: 30px; padding-left: 20px;opacity: 0.5;}  #footer-img3
+  {height: 20px;padding-left: 20px; opacity: 0.5;}'
+title: promotion_elabFTW-ARC
 ---
 
 # elabFTW // ARC
@@ -239,5 +240,3 @@ for arc_name in inv002-arabidopsis-heat inv003-welwitschia-clock; do
   arc sync -f -r "$gitlab_base_url""$arc_name" -m "initialize ARC structure $arc_name"
 done
 ```
-
-

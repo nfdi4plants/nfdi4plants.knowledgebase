@@ -1,3 +1,7 @@
+---
+title: 2023-03-02_plant-growth
+---
+
 # Plant Material and Growth Conditions
 
 Plant Material and Growth Conditions

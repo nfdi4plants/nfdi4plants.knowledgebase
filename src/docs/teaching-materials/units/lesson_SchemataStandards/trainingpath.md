@@ -1,25 +1,25 @@
 ---
-# Slide-related yaml
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
-style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
-# Training yaml
+footer: <a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a>
+  <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg">
+  </a>
+style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height:
+  30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity:
+  0.5;}'
 layout: slides
-title: "Schemata and Standards"
-suggested units:
-  - Metadata
-author: "Dominik Brilhaus"
+title: Schemata and Standards
+author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
 learning outcomes:
-  - distinguish schematized from non-schematized metadata  
+- distinguish schematized from non-schematized metadata
 keywords:
-  - 
-teaching mode: "inhale/listen"
+- null
+teaching mode: inhale/listen
 duration_minutes: 7
-date: "2022-11-10"
+date: 2022-11-10
 ---
 
 ../../bricks/SchemaStandards-title.md

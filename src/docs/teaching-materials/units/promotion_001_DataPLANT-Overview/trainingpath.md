@@ -1,30 +1,33 @@
 ---
-# Slide-related yaml
 marp: true
 theme: dataplant_marp-theme-CMR
 paginate: true
-footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../../img/_logos/CreativeCommons/by.svg"> </a>'
-style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
+footer: <a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a>
+  <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../../img/_logos/CreativeCommons/by.svg">
+  </a>
+style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height:
+  30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity:
+  0.5;}'
 layout: slides
-title: "DataPLANT Overview"
-contributor_name: Cristina Martins Rodrigues  
-contributor_orcid: https://orcid.org/0000-0002-4849-1537  
+title: DataPLANT Overview
+contributor_name: Cristina Martins Rodrigues
+contributor_orcid: https://orcid.org/0000-0002-4849-1537
 contributor_github: CMR248
-images_used:
-citation:  
-license: "[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)"  
-description: General overview of DataPLANT for promotional needs.  
-keywords:
-comments:  
-date: 2023-03-24 
+images_used: null
+citation: null
+license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+description: General overview of DataPLANT for promotional needs.
+keywords: null
+comments: null
+date: 2023-03-24
 status: ready
-learning outcomes:
-skills:
-abilities:
-requirements:
-required resources:
+learning outcomes: null
+skills: null
+abilities: null
+requirements: null
+required resources: null
 teaching mode:
-  - inhale/listen
+- inhale/listen
 duration_minutes: 3
 ---
 
