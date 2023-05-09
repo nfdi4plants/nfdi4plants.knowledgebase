@@ -18,3 +18,4 @@ custom/bricks/ceplas-dataplant-collab.md
 ../../units/promotion_arc-demo/promotion_arc-demo.md
 custom/bricks/links-resources.md
 custom/bricks/acknowledgements.md
+../../bricks/feedback_002_FiveFinger.md

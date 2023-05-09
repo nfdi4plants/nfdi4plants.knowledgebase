@@ -417,8 +417,6 @@ section p br {
 ### <img align="left" height=35px src='custom/img/CEPLAS_Icon.jpeg'/> CEPLAS Data Science
 
 > Website: https://www.ceplas.eu/en/research/data-science-and-data-management/
-<!-- > GitHub: https://github.com/CEPLAS-DataScience -->
-<!-- > Twitter: https://twitter.com/CeplasData -->
 
 ### <img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
 
@@ -466,3 +464,28 @@ ul {
 </div>
 <!-- Source to slide(s) -->
 <!-- custom/bricks/acknowledgements.md -->
+
+---
+
+# Five-Finger-Feedback
+
+<style scoped>
+section {
+  text-align: center;
+  /* background: #F9CD69; */
+}
+</style>
+
+![width:800px](../../../img/feedback01_FiveFinger.drawio.svg)
+
+<!-- 
+- Invite participants to give feedback
+- If feasible, collect transparently on a board or in a markdown pad, etc. 
+
+# Five-Finger-Feedback
+
+...was too short | I'm happy with... | I did not like at all ...| This idea or advice was good: ... | I really liked ...  
+---|---|---|---|---
+... | ... | ... | ... | ...
+
+-->

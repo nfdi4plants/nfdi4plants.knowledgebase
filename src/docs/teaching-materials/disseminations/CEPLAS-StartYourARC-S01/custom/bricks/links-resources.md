@@ -11,8 +11,6 @@ date: 2023-05-09
 ### <img align="left" height=35px src='../img/CEPLAS_Icon.jpeg'/> CEPLAS Data Science
 
 > Website: https://www.ceplas.eu/en/research/data-science-and-data-management/
-<!-- > GitHub: https://github.com/CEPLAS-DataScience -->
-<!-- > Twitter: https://twitter.com/CeplasData -->
 
 ### <img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
 
