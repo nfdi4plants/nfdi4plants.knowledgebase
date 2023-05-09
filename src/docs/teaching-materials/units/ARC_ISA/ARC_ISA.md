@@ -1,0 +1,107 @@
+---
+# Slide-related yaml
+marp: true
+theme: dataplant_marp-theme
+paginate: true
+headingDivider: 
+  - 1
+  - 2
+footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
+style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
+# Training yaml
+layout: slides
+title: "ISA Model & DataPLANT"
+suggested units:
+  - Metadata
+author: "Martin Kuhl"
+author_orcid: https://orcid.org/0000-0002-8493-1077
+author_github: Martin-Kuhl
+license: "[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+citation: ""
+description:
+  - ISAmodel structure
+  - Data annotation
+  - isa.xlsx files  
+learning outcomes:
+  - Attendees will know about the different isa.xlsx files present in an ARC, their main purpose, and how they are connected
+skills:
+abilities:
+DataPLANT implementation: ""
+exercise:
+target audience: ""
+required resources: ""
+keywords:
+  - ISA  
+teaching mode: "inhale/listen"
+duration_minutes: "5"
+alternative: 
+date: "2022-10-24"
+status: ready
+---
+
+# 
+
+![w:1100](../../images/ISAmodel_ARC01_img02.svg)
+
+<!-- ################# -->
+<!-- Source to slide(s) -->
+<!-- ../../bricks/ARC_ISA-tab.md -->
+<!-- ################# -->
+
+
+# ARC builds on ISA
+
+![w:900](../../images/ISAmodel_ARC01_img01.svg)
+
+https://isa-tools.org/format/specification.html
+
+<!-- ################# -->
+<!-- Source to slide(s) -->
+<!-- ../../bricks/ARC_ISAmodel.md -->
+<!-- ################# -->
+
+
+# isa.<>.xlsx files within ARCs
+
+![w:1000](../../images/ISAmodel_ARC01_img03.svg)
+
+<!-- ################# -->
+<!-- Source to slide(s) -->
+<!-- ../../bricks/ARC_ISAxlsx01.md -->
+<!-- ################# -->
+
+
+# Study and assay files are registered in the investigation file <!-- fit -->
+
+![w:950](../../images/ISAmodel_ARC01_img04.svg)
+
+<!-- ################# -->
+<!-- Source to slide(s) -->
+<!-- ../../bricks/ARC_ISAxlsx02.md -->
+<!-- ################# -->
+
+
+# The output of a study or assay file can function as input for a new isa.assay.xlsx 
+
+Output building blocks:
+- Sample Name
+- Raw Data File
+- Derived Data File
+
+![bg right w:600](../../images/ISAmodel_ARC01_img05.svg)
+
+<!-- ################# -->
+<!-- Source to slide(s) -->
+<!-- ../../bricks/ARC_ISAxlsx03.md -->
+<!-- ################# -->
+
+
+# 
+
+![bg w:1050](../../images/ISAmodel_ARC01_img6.svg)
+
+<!-- ################# -->
+<!-- Source to slide(s) -->
+<!-- ../../bricks/ARC_ISAxlsx04.md -->
+<!-- ################# -->
+

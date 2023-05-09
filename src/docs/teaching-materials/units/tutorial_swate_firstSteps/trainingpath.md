@@ -1,0 +1,28 @@
+---
+# Slide-related yaml
+marp: true
+theme: dataplant_marp-theme
+paginate: true
+headingDivider: 
+  - 1
+  - 2
+footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
+style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
+# Training yaml
+layout: slides
+author: Martin Kuhl
+author_orcid: https://orcid.org/0000-0002-8493-1077
+author_github: Martin-Kuhl
+license: "[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+date: 2023-03-16
+---
+
+../../bricks/tutorial_swate_firstSteps-First_steps.md
+../../bricks/tutorial_swate_firstSteps-Create_a_Swate_table.md
+../../bricks/tutorial_swate_firstSteps-Customize_your_table_by_adding_building_blocks.md
+../../bricks/tutorial_swate_firstSteps-Descriptive_building_blocks.md
+../../bricks/tutorial_swate_firstSteps-Units.md
+../../bricks/tutorial_swate_firstSteps-Advanced_term_search.md
+../../bricks/tutorial_swate_firstSteps-DataPLANT_curated_and_community_templates.md
+../../bricks/tutorial_swate_firstSteps-Annotate_your_samples_and_data.md
+../../bricks/tutorial_swate_firstSteps-Resources.md
