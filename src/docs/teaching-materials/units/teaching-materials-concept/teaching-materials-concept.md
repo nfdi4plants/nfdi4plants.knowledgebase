@@ -15,7 +15,6 @@ contributor_github: brilator
 date: 2023-05-09
 ---
 
-
 # DataPLANT Teaching Materials Concept
 
 > Dominik Brilhaus
@@ -30,11 +29,9 @@ date: 2023-05-09
 
 ![](images/teaching_concept-02.drawio.png)
 
-
 # Three Levels to Balance Customization and Reuse <!-- fit -->
 
 ![](images/teaching_concept-03.drawio.png)
-
 
 # Example “version control using Git”
 
@@ -47,3 +44,23 @@ date: 2023-05-09
 # Example “version control using Git”
 
 ![](images/teaching_concept-06.drawio.png)
+
+# Minitools to prep slides
+
+![](images/teaching_tools-01.drawio.png)
+
+# Minitools for maintenance
+
+![](images/teaching_tools-02.drawio.png)
+
+# Links
+
+- Concept repo: https://github.com/nfdi4plants/teaching-materials-concept)
+- Tools repo: https://github.com/nfdi4plants/teaching-materials-tools
+
+# People involved
+
+- Cristina Martins Rodrigues
+- Martin Kuhl
+- Andrea Schrader
+- Dominik Brilhaus
