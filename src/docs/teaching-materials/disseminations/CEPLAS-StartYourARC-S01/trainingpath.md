@@ -16,3 +16,5 @@ custom/bricks/ceplas-dataplant-collab.md
 ../../units/lesson_022_ARC_structure_DataPLANT/lesson_022_ARC_structure_DataPLANT.md
 ../../units/lesson_030_BigPicture_ARC_DataPLANT/lesson_030_BigPicture_ARC_DataPLANT.md
 ../../units/promotion_arc-demo/promotion_arc-demo.md
+custom/bricks/links-resources.md
+custom/bricks/acknowledgements.md

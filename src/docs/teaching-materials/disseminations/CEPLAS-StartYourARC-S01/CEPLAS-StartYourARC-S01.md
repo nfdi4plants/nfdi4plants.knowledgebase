@@ -19,7 +19,7 @@ author_github: brilator
 <!-- _paginate: false -->
 <!-- _footer: "" -->
 
-![bg fit](custom/../img/background_title_ceplas.drawio.svg)
+![bg fit](custom/img/background_title_ceplas.drawio.svg)
 
 Session 01 - Introduction to the ARC (demo)
 May 9th, 2023
@@ -36,58 +36,16 @@ Dominik Brilhaus - CEPLAS Data Science
 
 # CEPLAS collaborates with DataPLANT
 
-![w:880](custom/../img/DataPLANT_CEPLAS_collaboration_seq1.png)
+![w:880](custom/img/DataPLANT_CEPLAS_collaboration_seq1.png)
 
 ---
 
 # CEPLAS collaborates with DataPLANT
 
-![w:880](custom/../img/DataPLANT_CEPLAS_collaboration_seq2.png)
+![w:880](custom/img/DataPLANT_CEPLAS_collaboration_seq2.png)
 
 <!-- Source to slide(s) -->
 <!-- custom/bricks/ceplas-dataplant-collab.md -->
-
-
----
-
-# DataPLANT &ndash; The NFDI4Plants
-<style scoped>
-.columns {
-    display: grid;
-    grid-template-columns: minmax(650px, max-content) repeat(auto-fill, 800px) 15%;
-}
-ul {
-    margin: 5; padding: 0;
-}
-</style>
-
-<div class="columns">
-<div class="columns-left">
-
-<br>
-<br>
-<br>
-
-- __NFDI__: "Nationale Forschungsdaten Infrastruktur"(https://www.nfdi.de/)
-  
-<br>
-
-- Funded since end of 2020
-
-</div>
-<div class="columns-right">
-
-<img align="center" width="450" src="../../../img/DataPLANT_TaskAreas.svg">
-
-</div>
-<!-- 
-Two partners each:
-  - from computing centers: Freiburg, Tübingen
-  - from biology: Jülich / HHU, Kaiserslautern
- -->
-
-<!-- Source to slide(s) -->
-<!-- ../../bricks/DataPLANT_NFDI4Plants.md -->
 
 
 ---
@@ -160,7 +118,6 @@ Two partners each:
 <!-- ../../bricks/ARC_Structure_DataPLANT-6Folder_Structure_MetadataAnnotation.md -->
 
 
----
 
 <!-- Source to slide(s) -->
 <!-- ../../units/lesson_022_ARC_structure_DataPLANT/lesson_022_ARC_structure_DataPLANT.md -->
@@ -248,7 +205,6 @@ Two partners each:
 <!-- ../../bricks/BigPicture_ARC_DataPLANT.md -->
 
 
----
 
 <!-- Source to slide(s) -->
 <!-- ../../units/lesson_030_BigPicture_ARC_DataPLANT/lesson_030_BigPicture_ARC_DataPLANT.md -->
@@ -455,3 +411,58 @@ section p br {
 
 
 ---
+
+# Resources
+
+### <img align="left" height=35px src='custom/img/CEPLAS_Icon.jpeg'/> CEPLAS Data Science
+
+> Website: https://www.ceplas.eu/en/research/data-science-and-data-management/
+<!-- > GitHub: https://github.com/CEPLAS-DataScience -->
+<!-- > Twitter: https://twitter.com/CeplasData -->
+
+### <img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
+
+> Website: https://nfdi4plants.org/
+> Knowledge Base: https://nfdi4plants.org/nfdi4plants.knowledgebase/ 
+> DataHUB: https://git.nfdi4plants.org
+> GitHub: https://github.com/nfdi4plants
+
+<!-- Source to slide(s) -->
+<!-- custom/bricks/links-resources.md -->
+
+
+---
+
+# Acknowledgements
+
+<style scoped>
+.columns {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 0rem;
+}
+ul {
+    margin: 5; padding: 10;
+}
+</style>
+
+<div class="columns">
+<div class="columns-left">
+
+**CEPLAS**
+
+- Björn Usadel, Andrea Schrader, Hajira Jabeen (until 2021)
+
+**DataPLANT**
+
+- Timo Mühlhaus & Group  
+- Cristina Martins Rodrigues, Martin Kuhl
+
+</div>
+<div class="columns-right"> 
+
+![bg right:45% w:550](custom/img/hackathon_group.png)
+
+</div>
+<!-- Source to slide(s) -->
+<!-- custom/bricks/acknowledgements.md -->
