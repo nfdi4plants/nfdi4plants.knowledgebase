@@ -3,9 +3,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 # Training yaml
@@ -23,11 +20,11 @@ date: 2023-03-16
 > The PAT can be used to authenticate your local machine to communicate with your DataHUB account
 > You need to do this only once per machine (unless you specify an expiration date)
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_PAT-title.md -->
-<!-- ################# -->
 
+
+---
 
 # Steps
 
@@ -38,17 +35,17 @@ date: 2023-03-16
    2. Expiration date (optional)
    3. Select scope: `api`
 
-![bg right w:600](../../images/datahub_accessToken.png)
+![bg right w:600](../../../img/datahub_accessToken.png)
 
 # Steps
 
 4. Click "Create personal access token"
 5. `Your new personal access token` appears on top. Copy it somewhere **save** for later use.
 
-![Access Token w:800](../../images/datahub_accessToken_02.png)
+![Access Token w:800](../../../img/datahub_accessToken_02.png)
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_PAT-Steps.md -->
-<!-- ################# -->
 
+
+---

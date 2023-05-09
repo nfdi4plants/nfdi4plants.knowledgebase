@@ -3,9 +3,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 # Training yaml
@@ -19,35 +16,22 @@ date: 2023-03-16
 
 # Download ≠ clone
 
-![](../../images/git_download_img1.png)
+![](../../../img/git_download_img1.png)
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_git-Download_clone.md -->
-<!-- ################# -->
 
 
-# GitHub Desktop
+---
 
-![w:1000](../../images/git_GitHubDesktop1_img1.png)
-
-# GitHub Desktop
-
-![w:1000](../../images/git_GitHubDesktop2_img1.png)
-
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_git-GitHub_Desktop.md -->
-<!-- ################# -->
 
 
-# Visual Studio Code
-![w:1000](../../images/git_VSCode_img1.png)
+---
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_git-Visual_Studio_Code.md -->
-<!-- ################# -->
 
+
+---

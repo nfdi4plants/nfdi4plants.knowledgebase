@@ -3,9 +3,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 # Training yaml
@@ -29,12 +26,11 @@ Find the **command-line interface (CLI)** on your system.
 <br>
 > Note: In our tutorials we sometimes use "terminal", "command-line interface (CLI)" and "powershell" interchangeably.
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_IntroCLI-The_command_line.md -->
-<!-- ################# -->
 
+
+---
 
 # Code examples
 
@@ -46,8 +42,8 @@ Copy the following line to your terminal and hit enter:
 echo "Hello. I am a code block"
 ```
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_IntroCLI-Code_examples.md -->
-<!-- ################# -->
 
+
+---

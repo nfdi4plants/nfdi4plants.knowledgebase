@@ -1,9 +1,6 @@
 ---
 marp: true
 theme: dataplant_marp-theme
-headingDivider: 
-  - 1
-  - 2
 layout: slides
 author: 
   - Martin Kuhl

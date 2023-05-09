@@ -25,32 +25,11 @@ date: 2023-01-12
 status: ready
 ---
 
-# Metadata
-
-<style scoped>
-figure {
-  position: relative;
-  width: 550px;
-  padding-left: 50px;
-}
-figcaption {
-  position: absolute;
-  right: 0;
-  padding-left: 50px;
-  font-size: 15px;
-  writing-mode: vertical-rl;
-}
-</style>
-
-<figure>
-  <img src="../../images/meme_metadata.png">
-  <figcaption> <a href="https://imgur.com/gallery/aQr7NkQ">https://imgur.com/gallery/aQr7NkQ</a></figcaption>
-</figure>
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/title_metadata.md -->
-<!-- ################# -->
 
+
+---
 
 # Project metadata
 
@@ -151,11 +130,11 @@ ul {
 </div>
 </div>
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/metadata_types.md -->
-<!-- ################# -->
 
+
+---
 
 # Metadata from a FAIR perspective
 
@@ -199,8 +178,8 @@ ul {
 </div>
 </div>
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/metadata_FAIR.md -->
-<!-- ################# -->
 
+
+---

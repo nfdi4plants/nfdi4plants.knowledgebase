@@ -3,9 +3,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 # Training yaml
@@ -28,12 +25,11 @@ learning outcomes:
 
 # Publication
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_publication-title.md -->
-<!-- ################# -->
 
+
+---
 
 # Types of scientific (data) publications
 
@@ -45,12 +41,11 @@ learning outcomes:
 - Software publication
 <!-- Data Management Plan (DMP)-->
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_publication-Types.md -->
-<!-- ################# -->
 
+
+---
 
 # Protocol publication
 
@@ -93,26 +88,21 @@ ul {
   </div>
 </div>
 
-
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_publication-Protocol_publication.md -->
-<!-- ################# -->
 
+
+---
 
 # Protocol publication platforms
-<!-- Follow protocols.io as a demo and/or share the link and select an example. Find identifiers.-->
+
 - protocols.io
 - star-protocols.cell.com
 - protocolexchange.researchsquare.com
 - experiments.springernature.com
 
-
-<!--# Publish a DMP-->
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_publication-Protocol_publication_platforms.md -->
-<!-- ################# -->
 
+
+---

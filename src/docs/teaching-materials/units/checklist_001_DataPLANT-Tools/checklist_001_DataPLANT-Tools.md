@@ -1,25 +1,28 @@
 ---
-marp: true
-theme: marpCombiner-theme
-paginate: true
-headingDivider: 
-  - 1
-  - 2
-footer: '
-<a href="https://creativecommons.org/licenses/by/4.0/">
-  <img id="footer-img" src="../../images/image002_cc_by.svg">
-</a>'
-style: |
-  footer {
-    height: 30px;
-    padding: 10px;
-    bottom: 00px;
-  }
-  #footer-img {
-      height: 20px;
-      padding-left: 20px;
-      opacity: 0.5;
-  }
+layout: docs
+title: "DataPLANT Tools Checklist"
+contributor_name: Cristina Martins Rodrigues  
+contributor_orcid: https://orcid.org/0000-0002-4849-1537  
+contributor_github: CMR248
+images_used: none
+citation:  
+license: "[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)"  
+description:
+  - This is a checklist which can be used prior to a dissemination including DataPLANT tools.
+keywords:
+  - ARC
+  - Swate
+  - Tools
+  - Registration
+comments:  
+date: 2023-02-17 
+status: ready
+learning outcomes:
+required resources: 
+  - computer
+  - internet
+teaching mode:
+  - checklist
 ---
 
 ## DataPLANT Tools Checklist 
@@ -35,14 +38,13 @@ style: |
     * [ ] Notify DataHUB team  
 - [ ] Organize computer with Windowns/Mac/Linux, which is available during the training period  
 - [ ] Check the level/experience of participants  
-- [ ] Provide ARC with mock data  
+- [ ] Provide ARC with mock data
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/DataPLANT-Tools_Checklist.md -->
 
 
-<!-- ################# -->
-<!-- Source to slide(s) above -->
-<!-- bricks/DataPLANT-Tools_Checklist.md -->
-<!-- ################# -->
-
+---
 
 ## Internal Tech Check
 *(1-2 weeks before)*
@@ -82,14 +84,13 @@ style: |
 - [ ] Delete test users
     * [ ] Windows
     * [ ] Mac
-    * [ ] Linux    
+    * [ ] Linux
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/Internal-TechCheck_Checklist.md -->
 
 
-<!-- ################# -->
-<!-- Source to slide(s) above -->
-<!-- bricks/Internal-TechCheck_Checklist.md -->
-<!-- ################# -->
-
+---
 
 ## Participant Tech Check
 *(1 week before)*
@@ -99,9 +100,8 @@ style: |
 - [ ] Download ARC Commander
 - [ ] Download Swate
 
+<!-- Source to slide(s) -->
+<!-- ../../bricks/Participant-TechCheck_Checklist.md -->
 
-<!-- ################# -->
-<!-- Source to slide(s) above -->
-<!-- bricks/Participant-TechCheck_Checklist.md -->
-<!-- ################# -->
 
+---

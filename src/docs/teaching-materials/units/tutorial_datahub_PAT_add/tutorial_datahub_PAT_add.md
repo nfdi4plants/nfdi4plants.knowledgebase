@@ -3,9 +3,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 # Training yaml
@@ -23,12 +20,11 @@ date: 2023-03-16
 > - The PAT authenticates your local machine to communicate with your DataHUB account
 > - You need to do this only once per machine (unless you specify an expiration date)
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_PAT_add-title.md -->
-<!-- ################# -->
 
+
+---
 
 # Preparation
 
@@ -39,12 +35,11 @@ date: 2023-03-16
    3. Leave the "Visibility Level" set to "Private"
 3. Copy the URL to your project (from the browser's URL field or the "clone" menu) `https://git.nfdi4plants.org/<YourUserName>/<YourProjectName>`
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_PAT_add-Preparation.md -->
-<!-- ################# -->
 
+
+---
 
 # Option 1
 
@@ -57,12 +52,11 @@ date: 2023-03-16
 1. Once asked to fill your  `Username for 'https://git.nfdi4plants.org'`, fill in `<YourUserName>` and hit return &#8629;
 2. Once asked to fill your  `Password for 'https://<YourUserName>@git.nfdi4plants.org':`,paste in `<YourPAT>` and hit return &#8629;
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_PAT_add-Option_1.md -->
-<!-- ################# -->
 
+
+---
 
 # Option 2
 
@@ -75,8 +69,8 @@ git clone https://oauth2:<YourPAT>@git.nfdi4plants.org/<YourUserName>/<YourProje
 
 > Replace `<YourPAT>`, `<YourUserName>`, `<YourProjectName>` with your personal information.
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_PAT_add-Option_2.md -->
-<!-- ################# -->
 
+
+---

@@ -3,9 +3,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 # Training yaml
@@ -39,12 +36,11 @@ footer {
 }
 </style>
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/exercise_FAIRProject-Title.md -->
-<!-- ################# -->
 
+
+---
 
 # Preparation (Tutor)
 
@@ -53,12 +49,11 @@ footer {
 3. Invite people (see point below) and share their ArbitraryParticipantIDs via Email
 4. Make sure to add copyright / sharing disclaimer and share in a folder only for that class
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/exercise_FAIRProject-Preparation_Tutor.md -->
-<!-- ################# -->
 
+
+---
 
 # Prerequisites (Participants)
 1. Share the data required to reproduce **your BA / MA / PhD thesis**  
@@ -70,13 +65,11 @@ footer {
 7. Try to keep the overall folder size below 300 MB.  
  -->
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/exercise_FAIRProject-Prerequisites_Participants.md -->
-<!-- ################# -->
 
 
+---
 
 # Understand your colleague’s project
 
@@ -89,12 +82,11 @@ footer {
 1. How was the data analyzed (~ computational methods, statistics)?  
 1. Collect all of the above in a `README_<YourArbitraryParticipantID>.txt` in the same folder.
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/exercise_FAIRProject-Understand_project.md -->
-<!-- ################# -->
 
+
+---
 
 # Assignment
 
@@ -105,8 +97,8 @@ Participant02 | Participant03
 … | …
 Participant n | Participant n+1
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/exercise_FAIRProject-Assignment.md -->
-<!-- ################# -->
 
+
+---

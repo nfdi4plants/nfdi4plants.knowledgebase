@@ -3,9 +3,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 # Training yaml
@@ -44,11 +41,11 @@ learning outcomes:
 - Different metadata schema
 - Complex and versatile submission routines
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_repositories-Domain-specific.md -->
-<!-- ################# -->
 
+
+---
 
 # Choosing a data repository
 
@@ -58,12 +55,11 @@ Domain-specific >> Generic >> Institutional
 <https://www.re3data.org>
 <https://fairsharing.org>
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_repositories-Choosing_a_data_repository.md -->
-<!-- ################# -->
 
+
+---
 
 # Domain-specific data repositories
 
@@ -89,16 +85,15 @@ Repository | Description | Biological data domain
 [NCBI-GenBank](<https://www.ncbi.nlm.nih.gov/genbank/>) | Genetic Sequence Database | genome
 [NCBI-SRA](<https://www.ncbi.nlm.nih.gov/sra/>) | Sequence Read Archive | genome / transcriptome sequences
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_repositories-Domain-specific-table.md -->
-<!-- ################# -->
 
+
+---
 
 # Generic data repositories
 
-![bg right width:500](../../images/repositories_genericRepos_collage.drawio.svg)
+![bg right width:500](../../../img/repositories_genericRepos_collage.drawio.svg)
 
 **Good**
 
@@ -111,9 +106,8 @@ Repository | Description | Biological data domain
 - Only generic / high-level metadata schema
 - Limited reusability
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_repositories-Generic_data_repositories.md -->
-<!-- ################# -->
 
+
+---

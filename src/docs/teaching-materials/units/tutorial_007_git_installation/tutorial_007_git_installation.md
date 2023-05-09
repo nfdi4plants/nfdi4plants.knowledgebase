@@ -3,9 +3,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 # Training yaml
@@ -37,12 +34,11 @@ date: "xxxx-xx-xx"
 status: "ready"
 ---
 
-# Installation of Git and Git LFS
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/title_git_installation.md -->
-<!-- ################# -->
 
+
+---
 
 # Checkpoint: Git
 
@@ -58,11 +54,11 @@ git --version
 
 > :white_check_mark: Git is installed || :x: Please install Git.
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/checkpoint_git.md -->
-<!-- ################# -->
 
+
+---
 
 #  Installation: Git
 
@@ -74,11 +70,11 @@ Please follow the instructions at the [Git website][ext-git] to install Git on y
 
 [ext-git]: <https://git-scm.com/download/> "Git"
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/installation_git.md -->
-<!-- ################# -->
 
+
+---
 
 # Checkpoint: Git-LFS
 
@@ -94,11 +90,11 @@ git-lfs --version
 
 > :white_check_mark: Git-LFS is installed || :x: Please install Git-LFS.
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/checkpoint_gitlfs.md -->
-<!-- ################# -->
 
+
+---
 
 # Installation: "Git Large File Storage (LFS)"
 
@@ -109,8 +105,9 @@ Please follow the instructions at the [Git LFS website][ext-git-lfs] to install 
 <!-- Links -->
 
 [ext-git-lfs]: <https://git-lfs.github.com/> "Git-LFS"
-<!-- ################# -->
+
 <!-- Source to slide(s) -->
 <!-- ../../bricks/installation_gitlfs.md -->
-<!-- ################# -->
 
+
+---

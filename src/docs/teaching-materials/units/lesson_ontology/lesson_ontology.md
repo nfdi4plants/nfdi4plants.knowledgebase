@@ -3,9 +3,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 # Training yaml
@@ -39,12 +36,11 @@ An ontology combines features of
 - Can be used in disambiguation, defining hierarchies, a standard to define terms
 - Define a common vocabulary of concepts and their relationships to **model** a particular domain while making it **machine understandable**
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Ontology.md -->
-<!-- ################# -->
 
+
+---
 
 # Dictionary
 
@@ -53,25 +49,23 @@ Alphabetically lists terms and their definitions
 
 **Pizza**: *"a dish made typically of flattened bread dough spread with a savory mixture usually including tomatoes and cheese and often other toppings and baked"*
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Dictionary.md -->
-<!-- ################# -->
 
+
+---
 
 # Taxonomy
 
 Hierarchy or classification
 
-![bg right:60% w:780](../../images/Ontologies_pizzaAnalogy_seq1.png)
+![bg right:60% w:780](../../../img/Ontologies_pizzaAnalogy_seq1.png)
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Taxonomy.md -->
-<!-- ################# -->
 
+
+---
 
 # Thesaurus
 
@@ -80,12 +74,11 @@ Dictionary of synonyms and relations
 
 **Pizza** ≈ Lahmacun ≈ Focaccia ≈ Flammkuchen
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Thesaurus.md -->
-<!-- ################# -->
 
+
+---
 
 # Ontology
 
@@ -103,115 +96,107 @@ An ontology combines features of
 - Can be used in disambiguation, defining hierarchies, a standard to define terms
 - Define a common vocabulary of concepts and their relationships to **model** a particular domain while making it **machine understandable**
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Ontology.md -->
-<!-- ################# -->
 
+
+---
 
 # The semantic triple
 
-![w:1000](../../images/Ontologies_pizzaAnalogy_seq2.png)
+![w:1000](../../../img/Ontologies_pizzaAnalogy_seq2.png)
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-The_semantic_triple.md -->
-<!-- ################# -->
 
 
-# Modeling a pizza menu
-
-![w:1000](../../images/Ontologies_pizzaAnalogy_seq3.png)
+---
 
 # Modeling a pizza menu
 
-![w:1000](../../images/Ontologies_pizzaAnalogy_seq4.png)
+![w:1000](../../../img/Ontologies_pizzaAnalogy_seq3.png)
 
 # Modeling a pizza menu
 
-![w:1000](../../images/Ontologies_pizzaAnalogy_seq5.png)
+![w:1000](../../../img/Ontologies_pizzaAnalogy_seq4.png)
 
+# Modeling a pizza menu
 
-<!-- ################# -->
+![w:1000](../../../img/Ontologies_pizzaAnalogy_seq5.png)
+
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Modeling_a_pizza_menu.md -->
-<!-- ################# -->
 
 
-# Modeling a pizza menu
-
-![w:1000](../../images/Ontologies_pizzaAnalogy_seq3.png)
+---
 
 # Modeling a pizza menu
 
-![w:1000](../../images/Ontologies_pizzaAnalogy_seq4.png)
+![w:1000](../../../img/Ontologies_pizzaAnalogy_seq3.png)
 
 # Modeling a pizza menu
 
-![w:1000](../../images/Ontologies_pizzaAnalogy_seq5.png)
+![w:1000](../../../img/Ontologies_pizzaAnalogy_seq4.png)
 
+# Modeling a pizza menu
 
-<!-- ################# -->
+![w:1000](../../../img/Ontologies_pizzaAnalogy_seq5.png)
+
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Modeling_a_pizza_menu.md -->
-<!-- ################# -->
 
 
-# Modeling a pizza menu
-
-![w:1000](../../images/Ontologies_pizzaAnalogy_seq3.png)
+---
 
 # Modeling a pizza menu
 
-![w:1000](../../images/Ontologies_pizzaAnalogy_seq4.png)
+![w:1000](../../../img/Ontologies_pizzaAnalogy_seq3.png)
 
 # Modeling a pizza menu
 
-![w:1000](../../images/Ontologies_pizzaAnalogy_seq5.png)
+![w:1000](../../../img/Ontologies_pizzaAnalogy_seq4.png)
 
+# Modeling a pizza menu
 
-<!-- ################# -->
+![w:1000](../../../img/Ontologies_pizzaAnalogy_seq5.png)
+
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Modeling_a_pizza_menu.md -->
-<!-- ################# -->
 
+
+---
 
 # Predicates have two directions
 
-![w:1000](../../images/Ontologies_pizzaAnalogy_seq6.png)
+![w:1000](../../../img/Ontologies_pizzaAnalogy_seq6.png)
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Predicates_have_two_directions.md -->
-<!-- ################# -->
 
+
+---
 
 # Looking at the menu from a different perspective
 
 An object of one triplet can be the subject to another
 
-![w:1000](../../images/Ontologies_pizzaAnalogy_seq7.png)
+![w:1000](../../../img/Ontologies_pizzaAnalogy_seq7.png)
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Looking_at_the_menu.md -->
-<!-- ################# -->
 
+
+---
 
 # (Towards) a knowledge graph
 
-![w:1020](../../images/Ontologies_pizzaAnalogy_seq8.png)
+![w:1020](../../../img/Ontologies_pizzaAnalogy_seq8.png)
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Towards_knowledge_graph.md -->
-<!-- ################# -->
 
+
+---
 
 # Searching the menu
 
@@ -219,33 +204,29 @@ An ontology can be queried:
 
 - *"name all pizzas with topping mushrooms"*
 
-![bg right w:1020](../../images/Ontologies_pizzaAnalogy_seq9.png)
+![bg right w:1020](../../../img/Ontologies_pizzaAnalogy_seq9.png)
 
 <!-- 
 TODO: 
 - This is actually not a proper ontology(!), but rather a knowledge graph (= ontology + data)
  -->
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Searching_the_menu.md -->
-<!-- ################# -->
 
+
+---
 
 # The Pizza Ontology
 
 - Example from protege: https://protege.stanford.edu/ontologies/pizza/pizza.owl
 - Visualize viw WebVOWL http://vowl.visualdataweb.org/webvowl.html
 
-
-
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-The_Pizza_Ontology.md -->
-<!-- ################# -->
 
+
+---
 
 # Example ontologies
 
@@ -277,8 +258,8 @@ LIVE-Demo
 - Show that terms can have alternative / external IDs and link to "outdated" ontologies
 -->
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Example_ontologies.md -->
-<!-- ################# -->
 
+
+---

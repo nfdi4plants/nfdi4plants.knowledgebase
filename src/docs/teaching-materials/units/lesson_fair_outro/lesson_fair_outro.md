@@ -3,9 +3,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 # Training yaml
@@ -45,14 +42,13 @@ ul {
 * Access Management
 * Publication
 
-![bg right:30% w:700](../../images/FAIR_Principles_002.svg)
+![bg right:30% w:700](../../../img/FAIR_Principles_002.svg)
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_FAIR_outro-Associate_FAIR.md -->
-<!-- ################# -->
 
+
+---
 
 # Associate the course units to the research data life cycle <!-- fit -->
 
@@ -80,10 +76,10 @@ ul {
 * Access Management
 * Publication
 
-![bg right:30% w:700](../../images/ResearchDataLifecycle_seq8.png)
+![bg right:30% w:700](../../../img/ResearchDataLifecycle_seq8.png)
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_FAIR_outro-Associate_DataLifeCycle.md -->
-<!-- ################# -->
 
+
+---

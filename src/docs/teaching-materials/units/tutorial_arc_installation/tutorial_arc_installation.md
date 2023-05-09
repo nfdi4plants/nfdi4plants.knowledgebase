@@ -3,9 +3,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 # Training yaml
@@ -28,14 +25,13 @@ date: 2023-03-16
 DataPLANT provides the ARC Commander command line tool to create, manage and share your ARCs.
 
 
-![bg right w:500](../../images/_logos/ARCCommander/ARCCommander_Logo1.svg)
+![bg right w:500](../../../img/_logos/ARCCommander/ARCCommander_Logo1.svg)
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_arc_title.md -->
-<!-- ################# -->
 
+
+---
 
 # ARC Commander Installation
 
@@ -47,8 +43,8 @@ Check if the ARC Commander is functional by displaying the ARC Commander version
 arc --version
 ```
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_arc_installation.md -->
-<!-- ################# -->
 
+
+---

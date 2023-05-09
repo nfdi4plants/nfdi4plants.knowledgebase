@@ -3,9 +3,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 # Training yaml
@@ -30,99 +27,37 @@ Examples from Minimum Information for Biological and Biomedical Investigations (
 
 *Check: https://fairsharing.org/*
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_metadataStandards-NotStandards.md -->
-<!-- ################# -->
 
 
-# A closer look at MIAPE 
+---
 
-(*MIAPE = Minimum Information About a **Proteomics** Experiment*)
-
-<style scoped>
-  section p img {
-  width: 1000px;
-  height: 400px;
-  object-fit: cover;
-  object-position: 100% 10%;
-  margin: 0 auto 0 auto ;
-  }
-</style>
-
-![](../../images/metadata_MIAPE_MS_2.98_excerpt.png)
-
-> Note: This is just an excerpt!
-
-https://www.psidev.info/sites/default/files/2018-03/MIAPE_MS_2.98.pdf
-
-
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_metadataStandards-MIAPE.md -->
-<!-- ################# -->
 
 
-# A closer look at MIAPPE
+---
 
-(*MIAPPE = Minimum Information About a **Plant Phenotyping** Experiment*)
-
-<style scoped>
-  section p img {
-  width: 1000px;
-  height: 400px;
-  object-fit: cover;
-  object-position: 100% 10%;
-  margin: 0 auto 0 auto ;
-  }
-</style>
-
-![](../../images/metadata_MIAPPE_Checklist.png)
-
-> Note: This is just a tiny excerpt!
-
-http://doi.org/10.1111/nph.16544
-
-
-<!-- 
-TODO 
-
-- compare MIAPPE / MIAPE 
-- different forms / words
-- come towards ontolgy and schemata
-
--->
-
-
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_metadataStandards-MIAPPE.md -->
-<!-- ################# -->
 
+
+---
 
 # Metadata standards ~ Checklists
 
 - Determine the (minimal) required information (content)
 - Usually **do not** determine the format (i.e. shape or file type)
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_metadataStandards-Checklists.md -->
-<!-- ################# -->
 
 
-# Connecting (i.e. “mapping”) MIAPPE and ISA
+---
 
-![w:400](../../images/metadata_MIAPPE_mappingISA.png)
-
-http://doi.org/10.1111/nph.16544
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_metadataStandards-MIAPPE_ISA.md -->
-<!-- ################# -->
 
+
+---

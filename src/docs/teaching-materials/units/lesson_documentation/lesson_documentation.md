@@ -3,9 +3,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 # Training yaml
@@ -37,38 +34,17 @@ Electronic lab notebook
 - Analyses (excel, code, etc.)
 - Keep track of tools, versions and parameters used
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_documentation-Digital_documentation.md -->
-<!-- ################# -->
 
 
-# Electronic lab notebooks (ELNs)
+---
 
-<style scoped>
-.columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 3rem;
-    padding-top: 60px;
-}
-</style>
-
-<div class="columns">
-<div class="columns-left">
-  <img src="../../images/documentation_ELN_elabFTW_img1.png" width="500"/>
-</div>
-<div class="columns-right">
-  <img src="../../images/documentation_ELN_elabJournal_img1.png" width="500"/>
-</div>
-</div>
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_documentation-ELNs-title.md -->
-<!-- ################# -->
 
+
+---
 
 # Electronic lab notebooks (ELNs)
 
@@ -117,12 +93,11 @@ ul {
 </div>
 </div>
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_documentation-ELNs.md -->
-<!-- ################# -->
 
+
+---
 
 # Markup Languages
 
@@ -135,11 +110,11 @@ ul {
 > WYSIWYG: *What You See Is What You Get*
 > You literally "code out", what you want the text to look like
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_documentation-Markup_Languages.md -->
-<!-- ################# -->
 
+
+---
 
 # Markdown vs. HTML
 
@@ -187,12 +162,11 @@ ul {
 </div>
 </div>
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_documentation-Markdown_HTML.md -->
-<!-- ################# -->
 
+
+---
 
 # What is Markdown?
 
@@ -200,12 +174,11 @@ ul {
 - File extensions: `.md` or `.markdown`
 - Official markdown website: <https://daringfireball.net/projects/markdown/>
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_documentation-Markdown.md -->
-<!-- ################# -->
 
+
+---
 
 # Why Markdown?
 
@@ -253,12 +226,11 @@ ul {
 
 - many programs, tools and platforms work with or understand markdown
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_documentation-Why_Markdown.md -->
-<!-- ################# -->
 
+
+---
 
 # Text editors and IDEs
 
@@ -272,8 +244,8 @@ Recommended text editors with code highlighting
 
 - These highlight the structure / hierarchy of many text / code file types and make them a bit more comprehensible than pure text editors
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_documentation-Text_editors_and_IDEs.md -->
-<!-- ################# -->
 
+
+---

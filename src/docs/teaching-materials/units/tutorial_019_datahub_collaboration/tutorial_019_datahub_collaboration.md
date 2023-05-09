@@ -1,25 +1,46 @@
 ---
-marp: true
-theme: marpCombiner-theme
-paginate: true
-headingDivider: 
-  - 1
-  - 2
-footer: '
-<a href="https://creativecommons.org/licenses/by/4.0/">
-  <img id="footer-img" src="../../images/image002_cc_by.svg">
-</a>'
-style: |
-  footer {
-    height: 30px;
-    padding: 10px;
-    bottom: 00px;
-  }
-  #footer-img {
-      height: 20px;
-      padding-left: 20px;
-      opacity: 0.5;
-  }
+layout: slides  
+title: "Access Management within DataPLANT´s DataHUB"
+contributor_name: Cristina Martins Rodrigues  
+contributor_orcid: https://orcid.org/0000-0002-4849-1537  
+contributor_github: CMR248
+images_used:
+  - datahub_members_seq2.png
+  - datahub_members_seq3.png
+  - datahub_members_seq4.png
+  - datahub_members_seq5.png
+  - datahub_members_seq6.png
+  - ARC_Sharing_img1.png
+citation:  
+license: "[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)"  
+description: Step-by-step instructions for inviting additional collaborators to an ARC within the DataHUB.  
+keywords:
+  - Sharing
+  - Collaboration
+  - DataHUBs
+  - Access Management
+comments:  
+date: 2023-02-16 
+status: ready
+
+
+learning outcomes:
+  - is able to independently add further members to an ARC
+skills:
+abilities:
+requirements:
+  - tutorial_009_datahub_registration.md
+  - tutorial_020_datahub_PAT.md
+  - lesson_026_DataHUB_DataPLANT.md
+  - lesson_030_BigPicture_ARC_DataPLANT.md
+required resources:
+  - computer
+  - internet connection
+teaching mode: hands-on
+duration_minutes: 3
+links and references:
+  - https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/QuickStart_arcCommander.html#invite-collaborators
+  - https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI
 ---
 
 ## Invite collaborators
@@ -32,39 +53,37 @@ style: |
 
 1. Click on **Project Information** in the left navigation panel
 
-![fit w:1050](../../images/datahub_members_seq2.png)
+![fit w:1050](../../../img/datahub_members_seq2.png)
 
 ---
 
 2. Click on **Members**
 
-![fit w:1050](../../images/datahub_members_seq3.png)
+![fit w:1050](../../../img/datahub_members_seq3.png)
 
 ---
 
 3. Click on **Invite members**
 
-![fit w:1050](../../images/datahub_members_seq4.png)
+![fit w:1050](../../../img/datahub_members_seq4.png)
 
 ---
 
 4. Search for potential collaborators
 
-![fit w:1050](../../images/datahub_members_seq5.png)
+![fit w:1050](../../../img/datahub_members_seq5.png)
 
 ---
 
 5. Select a role 
 
-![fit w:1050](../../images/datahub_members_seq6.png)
+![fit w:1050](../../../img/datahub_members_seq6.png)
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/datahub_invite-collaborators.md -->
 
 
-
-<!-- ################# -->
-<!-- Source to slide(s) above -->
-<!-- bricks/datahub_invite-collaborators.md -->
-<!-- ################# -->
-
+---
 
 ## Choosing the proper role
 
@@ -79,13 +98,11 @@ Gives the person the same rights as you have (except of removing you from your o
 
 *A detailed list of all permissions for the individual roles can be found [here](https://docs.gitlab.com/ee/user/permissions.html)*
 
+<!-- Source to slide(s) -->
+<!-- ../../bricks/datahub_choose-collaborator-role.md -->
 
 
-<!-- ################# -->
-<!-- Source to slide(s) above -->
-<!-- bricks/datahub_choose-collaborator-role.md -->
-<!-- ################# -->
-
+---
 
 ## <div align="center">Congratulations!</div>
 <div align="center">You have just shared your ARC with a collaborator.</div>
@@ -101,11 +118,10 @@ object-position: 100% 45%;
 }
 </style>
 
-![](../../images/ARC_Sharing_img1.png)
+![](../../../img/ARC_Sharing_img1.png)
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/datahub_congrats-for-sharing.md -->
 
 
-<!-- ################# -->
-<!-- Source to slide(s) above -->
-<!-- bricks/datahub_congrats-for-sharing.md -->
-<!-- ################# -->
-
+---

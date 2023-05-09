@@ -3,9 +3,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 # Training yaml
@@ -45,15 +42,15 @@ figcaption {
 </style>
 
 <figure>
-  <img src="../../images/ResearchDataLifecycle_seq1.png">
+  <img src="../../../img/ResearchDataLifecycle_seq1.png">
   <figcaption>inspired by RDMkit <br> https://rdmkit.elixir-europe.org/data_life_cycle</figcaption>
 </figure>
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ResearchDataLifecycle01-Plan.md -->
-<!-- ################# -->
 
+
+---
 
 # The Research Data Lifecycle
 
@@ -74,15 +71,15 @@ figcaption {
 </style>
 
 <figure>
-  <img src="../../images/ResearchDataLifecycle_seq2.png">
+  <img src="../../../img/ResearchDataLifecycle_seq2.png">
   <figcaption>inspired by RDMkit <br> https://rdmkit.elixir-europe.org/data_life_cycle</figcaption>
 </figure>
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ResearchDataLifecycle02-Collect.md -->
-<!-- ################# -->
 
+
+---
 
 # The Research Data Lifecycle
 
@@ -103,15 +100,15 @@ figcaption {
 </style>
 
 <figure>
-  <img src="../../images/ResearchDataLifecycle_seq3.png">
+  <img src="../../../img/ResearchDataLifecycle_seq3.png">
   <figcaption>inspired by RDMkit <br> https://rdmkit.elixir-europe.org/data_life_cycle</figcaption>
 </figure>
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ResearchDataLifecycle03-Process.md -->
-<!-- ################# -->
 
+
+---
 
 # The Research Data Lifecycle
 
@@ -132,15 +129,15 @@ figcaption {
 </style>
 
 <figure>
-  <img src="../../images/ResearchDataLifecycle_seq4.png">
+  <img src="../../../img/ResearchDataLifecycle_seq4.png">
   <figcaption>inspired by RDMkit <br> https://rdmkit.elixir-europe.org/data_life_cycle</figcaption>
 </figure>
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ResearchDataLifecycle04-Analyse.md -->
-<!-- ################# -->
 
+
+---
 
 # The Research Data Lifecycle
 
@@ -161,15 +158,15 @@ figcaption {
 </style>
 
 <figure>
-  <img src="../../images/ResearchDataLifecycle_seq5.png">
+  <img src="../../../img/ResearchDataLifecycle_seq5.png">
   <figcaption>inspired by RDMkit <br> https://rdmkit.elixir-europe.org/data_life_cycle</figcaption>
 </figure>
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ResearchDataLifecycle05-Preserve.md -->
-<!-- ################# -->
 
+
+---
 
 # The Research Data Lifecycle
 
@@ -190,15 +187,15 @@ figcaption {
 </style>
 
 <figure>
-  <img src="../../images/ResearchDataLifecycle_seq6.png">
+  <img src="../../../img/ResearchDataLifecycle_seq6.png">
   <figcaption>inspired by RDMkit <br> https://rdmkit.elixir-europe.org/data_life_cycle</figcaption>
 </figure>
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ResearchDataLifecycle06-Share.md -->
-<!-- ################# -->
 
+
+---
 
 # The Research Data Lifecycle
 
@@ -219,15 +216,15 @@ figcaption {
 </style>
 
 <figure>
-  <img src="../../images/ResearchDataLifecycle_seq7.png">
+  <img src="../../../img/ResearchDataLifecycle_seq7.png">
   <figcaption>inspired by RDMkit <br> https://rdmkit.elixir-europe.org/data_life_cycle</figcaption>
 </figure>
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ResearchDataLifecycle07-Reuse.md -->
-<!-- ################# -->
 
+
+---
 
 # The Research Data Lifecycle
 
@@ -248,15 +245,15 @@ figcaption {
 </style>
 
 <figure>
-  <img src="../../images/ResearchDataLifecycle_seq8.png">
+  <img src="../../../img/ResearchDataLifecycle_seq8.png">
   <figcaption>inspired by RDMkit <br> https://rdmkit.elixir-europe.org/data_life_cycle</figcaption>
 </figure>
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ResearchDataLifecycle08-Loops.md -->
-<!-- ################# -->
 
+
+---
 
 # The Research Data Lifecycle
 
@@ -277,12 +274,12 @@ figcaption {
 </style>
 
 <figure>
-  <img src="../../images/ResearchDataLifecycle_seq9.png">
+  <img src="../../../img/ResearchDataLifecycle_seq9.png">
   <figcaption>inspired by RDMkit <br> https://rdmkit.elixir-europe.org/data_life_cycle</figcaption>
 </figure>
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ResearchDataLifecycle09-Cross.md -->
-<!-- ################# -->
 
+
+---

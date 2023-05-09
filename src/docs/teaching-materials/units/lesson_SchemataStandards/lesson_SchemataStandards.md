@@ -3,9 +3,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 # Training yaml
@@ -27,11 +24,11 @@ date: "2022-11-10"
 
 # Schemas, standards and machine-readability
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/SchemaStandards-title.md -->
-<!-- ################# -->
 
+
+---
 
 # Structured data and the internet
 
@@ -48,11 +45,11 @@ TODO:
 Source: bioschemas.org
  -->
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/Schema-org01.md -->
-<!-- ################# -->
 
+
+---
 
 # Structured data and the internet: Schema.org
 
@@ -100,11 +97,11 @@ https://schema.org/Person
     </script>
 ```
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/Schema-org02.md -->
-<!-- ################# -->
 
+
+---
 
 ## JSON-LD
 
@@ -136,11 +133,12 @@ JSON-LD = JavaScript Object Notation for Linked Data
   }
 </script>
 ```
-<!-- ################# -->
+
 <!-- Source to slide(s) -->
 <!-- ../../bricks/Schema-jsonld.md -->
-<!-- ################# -->
 
+
+---
 
 ## RDFa
 
@@ -160,11 +158,11 @@ RDFa = Resource Description Framework in Attributes
 </div>
 ```
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/Schema-RDFa.md -->
-<!-- ################# -->
 
+
+---
 
 # Standards
 
@@ -177,11 +175,11 @@ https://www.dublincore.org/schemas/
 - Schema: http://schema.datacite.org/meta/kernel-4.3/metadata.xsd
 - Full Example: https://schema.datacite.org/meta/kernel-4.3/example/datacite-example-full-v4.xml
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/Standards.md -->
-<!-- ################# -->
 
+
+---
 
 ## DataCite Schema: Simple Example
 
@@ -232,8 +230,8 @@ code {
 
 https://schema.datacite.org/meta/kernel-4.3/example/datacite-example-dataset-v4.xml
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/Standards-DataCite.md -->
-<!-- ################# -->
 
+
+---

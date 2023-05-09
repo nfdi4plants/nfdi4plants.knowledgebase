@@ -3,9 +3,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 # Training yaml
@@ -19,12 +16,11 @@ date: 2023-03-16
 
 # Synchronize ARCs using GitHub Desktop
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_GHDesktop-title.md -->
-<!-- ################# -->
 
+
+---
 
 # About this tutorial
 
@@ -35,12 +31,11 @@ You can use [GitHub Desktop](https://desktop.github.com/) to synchronize ARCs be
 > Note: This authenticates your local GitHub Desktop to communicate with the DataHUB.
 > You need to do this only once per machine (unless you specify an expiration date)
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_GHDesktop-About_this_tutorial.md -->
-<!-- ################# -->
 
+
+---
 
 # Checkpoint
 
@@ -49,12 +44,11 @@ For this tutorial
 - You need to have a DataPLANT account granting access to the DataHUB
 - You need a personal access token (PAT) to the DataHUB
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_GHDesktop-Checkpoint.md -->
-<!-- ################# -->
 
+
+---
 
 # GitHub Desktop
 
@@ -64,12 +58,11 @@ For this tutorial
 - No need to memorize git commands and execute them on your command line
 - Download and install [GitHub Desktop](https://desktop.github.com/)
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_GHDesktop-GitHub_Desktop.md -->
-<!-- ################# -->
 
+
+---
 
 # Navigate to your ARC in the DataHUB
 
@@ -77,14 +70,13 @@ For this tutorial
 2. Navigate to an ARC you want to sync locally
 3. Click on `Clone` and copy the HTTPS url, e.g. `https://git.nfdi4plants.org/<yourUserName>/<yourArc>.git`
 
-![bg right w:600](../../images/datahub_clone.png)
+![bg right w:600](../../../img/datahub_clone.png)
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_GHDesktop-Navigate_to_your_ARC_in_the_DataHUB.md -->
-<!-- ################# -->
 
+
+---
 
 # GitHub Desktop Clone
 
@@ -95,14 +87,13 @@ For this tutorial
 5. Select a destination folder (local path), where your ARC will be stored locally
 6. Click `Clone`
 
-![bg right:40% w:500](../../images/GitHub_Desktop_clone.png)
+![bg right:40% w:500](../../../img/GitHub_Desktop_clone.png)
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_GHDesktop-GitHub_Desktop_Clone.md -->
-<!-- ################# -->
 
+
+---
 
 # Link your account
 
@@ -112,10 +103,10 @@ For this tutorial
 2. Click `Save and Retry`
 3. Your ARC is now available in your GitHub Desktop.
 
-![bg right:40% w:500](../../images/GitHub_Desktop_accessToken.png)
+![bg right:40% w:500](../../../img/GitHub_Desktop_accessToken.png)
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_GHDesktop-Link_your_account.md -->
-<!-- ################# -->
 
+
+---

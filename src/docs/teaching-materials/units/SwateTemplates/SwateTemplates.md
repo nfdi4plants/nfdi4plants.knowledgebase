@@ -3,9 +3,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 # Training yaml
@@ -46,15 +43,15 @@ status: ready
 
 # Swate Templates
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/Swate-templates01-title.md -->
-<!-- ################# -->
 
+
+---
 
 # Checklists and Templates
 
-![w:800px](../../images/swate_TemplatesChecklists.svg)
+![w:800px](../../../img/swate_TemplatesChecklists.svg)
 
 Metadata standards or repository requirements can be represented as templates
 
@@ -67,11 +64,11 @@ section {
 }
 </style>
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/Swate-templates02-checklists.md -->
-<!-- ################# -->
 
+
+---
 
 # Realization of lab-specific metadata templates
 
@@ -91,25 +88,25 @@ section {
 }
 </style>
 
-![](../../images/Swate_metadataTemplates.png)
+![](../../../img/Swate_metadataTemplates.png)
 
 Facilities can define their most common workflows as templates
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/Swate-templates03-labspecific.md -->
-<!-- ################# -->
 
+
+---
 
 # Directly import templates via Swate
 
 - DataPLANT curated
 - Community templates
 
-![bg right w:450](../../images/Swate_Templates.svg)
-<!-- ################# -->
+![bg right w:450](../../../img/Swate_Templates.svg)
+
 <!-- Source to slide(s) -->
 <!-- ../../bricks/Swate-templates04-import.md -->
-<!-- ################# -->
 
+
+---

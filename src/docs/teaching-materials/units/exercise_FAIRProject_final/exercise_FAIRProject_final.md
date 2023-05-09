@@ -3,9 +3,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../images/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../images/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 # Training yaml
@@ -26,12 +23,11 @@ description:
 1. Follow the next slides to learn how to share your ARC with a colleague
 2. Go to your colleague’s ARC and try to understand it
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/exercise_FAIRProject_final-Share_your_ARC.md -->
-<!-- ################# -->
 
+
+---
 
 # Understand your colleague’s ARC
 
@@ -62,12 +58,11 @@ footer {
 7. How was the data analyzed (~ computational methods, statistics)?  
 8. Collect all of the above in a `README_<YourArbitraryParticipantID>.md` in the same folder.
 
-
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/exercise_FAIRProject_final-Understand_ARC.md -->
-<!-- ################# -->
 
+
+---
 
 # Assignment
 
@@ -78,8 +73,8 @@ Participant03 | Participant02
 … | …
 Participant n | Participant n-1
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/exercise_FAIRProject_final-Assignment.md -->
-<!-- ################# -->
 
+
+---
