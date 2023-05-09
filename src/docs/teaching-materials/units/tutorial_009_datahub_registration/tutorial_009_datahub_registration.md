@@ -10,9 +10,9 @@ style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height
   0.5;}'
 title: DataPLANT Registration
 layout: slides
-contributor_name: null
-contributor_orcid: null
-contributor_github: null
+author: null
+author_orcid: null
+author_github: null
 images_used: null
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 description: null

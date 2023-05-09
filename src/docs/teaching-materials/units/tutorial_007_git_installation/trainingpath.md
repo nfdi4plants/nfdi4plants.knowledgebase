@@ -10,9 +10,9 @@ style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height
   0.5;}'
 layout: slides
 title: null
-contributor_name: Dominik Brilhaus
-contributor_orcid: https://orcid.org/0000-0001-9021-3197
-contributor_github: brilator
+author: Dominik Brilhaus
+author_orcid: https://orcid.org/0000-0001-9021-3197
+author_github: brilator
 images_used: null
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 description: null

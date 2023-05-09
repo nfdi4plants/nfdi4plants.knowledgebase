@@ -10,9 +10,9 @@ style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height
   0.5;}'
 layout: slides
 title: Annotated Research Context - Folder Structure
-contributor_name: Cristina Martins Rodrigues
-contributor_orcid: https://orcid.org/0000-0002-4849-1537
-contributor_github: CMR248
+author: Cristina Martins Rodrigues
+author_orcid: https://orcid.org/0000-0002-4849-1537
+author_github: CMR248
 images_used:
 - ARC_DataCentricIntegration_img1.png
 - ARC_fillWithData_seq1.png

@@ -1,9 +1,9 @@
 ---
 layout: slides
 title: Access Management within DataPLANT´s DataHUB
-contributor_name: Cristina Martins Rodrigues
-contributor_orcid: https://orcid.org/0000-0002-4849-1537
-contributor_github: CMR248
+author: Cristina Martins Rodrigues
+author_orcid: https://orcid.org/0000-0002-4849-1537
+author_github: CMR248
 images_used:
 - datahub_members_seq2.png
 - datahub_members_seq3.png
