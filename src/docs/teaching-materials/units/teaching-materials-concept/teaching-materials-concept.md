@@ -55,7 +55,9 @@ date: 2023-05-09
 
 # Links
 
-- Concept repo: https://github.com/nfdi4plants/teaching-materials-concept)
+- Teaching materials repo: https://github.com/nfdi4plants/teaching_materials
+  - in part now ingested into DataPLANT knowledge base: https://github.com/nfdi4plants/nfdi4plants.knowledgebase
+- Concept repo: https://github.com/nfdi4plants/teaching-materials-concept
 - Tools repo: https://github.com/nfdi4plants/teaching-materials-tools
 
 # People involved
