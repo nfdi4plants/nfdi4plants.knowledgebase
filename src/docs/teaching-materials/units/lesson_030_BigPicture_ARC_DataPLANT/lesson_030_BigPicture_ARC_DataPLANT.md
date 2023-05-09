@@ -127,4 +127,3 @@ duration_minutes: 10
 <!-- ../../bricks/BigPicture_ARC_DataPLANT.md -->
 
 
----
