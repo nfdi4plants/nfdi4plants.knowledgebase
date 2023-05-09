@@ -2,11 +2,15 @@
 layout: docs
 title: Teaching Materials
 published: 2022-12-14
-todo:  
 ---
 
 :bulb: mostly copied here from https://github.com/nfdi4plants/teaching_materials
 
+
+## Moving contents from teaching materials to here (recommendations)
+
+- Keep testing with `dotnet fornax watch` from `src` and make sure to follow the technical requirements collected in the [contribution guide](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/CONTRIBUTING.html)
+- When adding markdowns (bricks, units) and images (i.e. to `img`), replace `/images/` with `/../img/`.
 
 ## git issues
 
@@ -43,7 +47,7 @@ In order to work with the VS Code marp extension (i.e. preview and export slides
     "src/docs/teaching-materials/style/dataplant_marp-theme-Intro.css"
   ],
   "markdown.marp.enableHtml": true,
-  "markdown.marp.exportType": "pdf",
+  "markdown.marp.exportType": "html",
   "markdown.marp.pdf.noteAnnotations": false
 }
 ```

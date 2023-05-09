@@ -12,4 +12,3 @@ date: 2022-11-04
 
 ![bg cover](../../img/DataPLANT_BigPicture_seq6.png)
 
----
