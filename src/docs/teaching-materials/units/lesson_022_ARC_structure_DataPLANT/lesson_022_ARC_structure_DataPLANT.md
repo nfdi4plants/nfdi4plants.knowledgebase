@@ -53,68 +53,68 @@ links and references:
 
 ![width:950](../../../img/ARC_DataCentricIntegration_img1.png)
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_DataCentricIntegration.md -->
-<!-- ################# -->
 
+
+---
 
 # What does an ARC look like?
 
 ![width:950](../../../img/ARC_fillWithData_seq1.png)
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_Structure_DataPLANT-1Folder_Structure.md -->
-<!-- ################# -->
 
+
+---
 
 # What does an ARC look like?
 
 ![width:950](../../../img/ARC_fillWithData_seq2.png)
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_Structure_DataPLANT-2Folder_Structure_ExperimentalData.md -->
-<!-- ################# -->
 
+
+---
 
 # What does an ARC look like?
 
 ![width:950](../../../img/ARC_fillWithData_seq3.png)
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_Structure_DataPLANT-3Folder_Structure_ExperimentalData_Images.md -->
-<!-- ################# -->
 
+
+---
 
 # What does an ARC look like?
 
 ![width:950](../../../img/ARC_fillWithData_seq4.png)
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_Structure_DataPLANT-4Folder_Structure_DataAnalysis-Computation.md -->
-<!-- ################# -->
 
+
+---
 
 # What does an ARC look like?
 
 ![width:950](../../../img/ARC_fillWithData_seq5.png)
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_Structure_DataPLANT-5Folder_Structure_DataAnalysis-Computation_Images.md -->
-<!-- ################# -->
 
+
+---
 
 # What does an ARC look like?
 
 ![width:950](../../../img/ARC_fillWithData_seq6.png)
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_Structure_DataPLANT-6Folder_Structure_MetadataAnnotation.md -->
-<!-- ################# -->
 
+
+---

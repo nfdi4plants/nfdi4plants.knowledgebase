@@ -2,9 +2,6 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-headingDivider: 
-  - 1
-  - 2
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://ceplas.eu"> <img id="footer-img2" src="../../../img/_logos/CEPLAS/CEPLAS_Icon.jpeg"></a><a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img3" src="../../../img/_logos/CreativeCommons/by.svg"></a>'
 style: 'footer {height: 30px;padding: 10px;bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 30px; padding-left: 20px;opacity: 0.5;}  #footer-img3 {height: 20px;padding-left: 20px; opacity: 0.5;}'
@@ -37,18 +34,22 @@ date: 2023-02-02
 
 # First steps towards your ARC
 
-Dominik Brilhaus - May 10, 2023
-
+---
 
 ## You just received your data
 
 ![bg right width:400](../../../img/demo_data_screenshot.png)
+
+---
 
 ## Goal
 
 - Structure,
 - Annotate, and
 - Share **your experimental data**.
+
+---
+
 
 <!-- 
 ## Tools and software
@@ -65,6 +66,9 @@ Dominik Brilhaus - May 10, 2023
 ## Structure your data
 
 ![width:800](../../../img/ARC_fillWithData_experimental.png)
+
+---
+
 
 ## Annotate your data
 
@@ -88,6 +92,9 @@ object-position: 50% 60%;
 
 3. Fill assay parameters (by json import, link files by picker) -->
 
+---
+
+
 ## Collaborate and share
 
 <style scoped>
@@ -104,6 +111,9 @@ object-position: 50% 30%;
 
 ![](../../../img/ARC_DataSharing_Experts02_img1.png)
 
+
+---
+
 ## Sync your ARC to the DataHUB
 
 ```bash
@@ -116,6 +126,9 @@ arc sync -f -r https://git.nfdi4plants.org/brilator/demo-arc
 - `brilator/` = username @ DataHUB  
 - `demo-arc` = name of the ARC @ DataHUB   -->
 
+---
+
+
 ## Invite collaborators to your ARC
 
 https://git.nfdi4plants.org/brilator/demo-arc
@@ -127,6 +140,9 @@ https://git.nfdi4plants.org/brilator/demo-arc
 - Or directly navigate to https://git.nfdi4plants.org/brilator/demo-arc/-/commits/main 
 
 -->
+
+---
+
 
 ## Using the ARC Commander to setup an ARC
 
@@ -151,10 +167,16 @@ arc a add -s talinum_drought -a rnaseq
 arc a add -s talinum_drought -a metabolomics
 ```
 
+---
+
+
 ## Your ARC is ready
 
 ![bg 80% right:75%](../../../img/demo_data_screenshot.png)
 ![bg 80%](../../../img/demo_arc_screenshot.png)
+
+---
+
 
 ## Your ARC is ready
 
