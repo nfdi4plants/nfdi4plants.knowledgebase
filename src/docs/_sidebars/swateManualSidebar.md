@@ -31,6 +31,6 @@
 # ISA-JSON:/docs/implementation/SwateManual/Docs06-ISA-JSON.html
 ```
 
-```Back to Knowledge Base
-# 🔙 Introduction:/index.html
+```🔙 to Knowledge Base
+# Introduction:/index.html
 ```

@@ -1,12 +1,16 @@
 ---
 layout: docs
-title: Slide Decks
-published: 2023-05-08
+title: Teaching Materials
+published: 2023-05-09
 add toc: false
-add sidebar: _sidebars/mainSidebar.md
+add support: false
+add sidebar: _sidebars/teachingMaterialsSidebar.md
 ---
 
+Welcome to the DataPLANT Teaching Materials
+
 :construction: This site is currently under construction. Links may change.
+
 
 <hr>
 
