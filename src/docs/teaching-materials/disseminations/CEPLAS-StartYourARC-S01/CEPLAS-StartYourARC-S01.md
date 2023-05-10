@@ -36,12 +36,6 @@ Dominik Brilhaus - CEPLAS Data Science
 
 # CEPLAS collaborates with DataPLANT
 
-![w:880](custom/img/DataPLANT_CEPLAS_collaboration_seq1.png)
-
----
-
-# CEPLAS collaborates with DataPLANT
-
 ![w:880](custom/img/DataPLANT_CEPLAS_collaboration_seq2.png)
 
 <!-- Source to slide(s) -->
@@ -434,36 +428,30 @@ section p br {
 # Acknowledgements
 
 <style scoped>
-.columns {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 0rem;
+section {
+  font-size: 22px;  
 }
 ul {
-    margin: 5; padding: 10;
+    margin: 10; padding: 0;
 }
 </style>
 
-<div class="columns">
-<div class="columns-left">
-
 **CEPLAS**
 
-- Björn Usadel, Andrea Schrader, Hajira Jabeen (until 2021)
+Björn Usadel, Andrea Schrader, Hajira Jabeen (until 2021)
 
 **DataPLANT**
 
-- Timo Mühlhaus & Group  
-- Cristina Martins Rodrigues, Martin Kuhl
+Kaiserslautern: Timo Mühlhaus, Christoph Garth
+- Kevin Frey, Lukas Weil, Oliver Maus, Kevin Schneider  
+(`ARC Commander`, `Swate`)
+- Cristina Martins Rodrigues, Martin Kuhl (`Knowledge Base`)
+- Jonas Lukasczyk (`ARCitect`)
 
-</div>
-<div class="columns-right"> 
+Freiburg: Dirk von Suchodeletz
+- Jonathan Bauer, Marcel Tschöpe (`DataHUB`, `Swobup`)
 
-![bg right:45% w:550](custom/img/hackathon_group.png)
-
-</div>
-<!-- Source to slide(s) -->
-<!-- custom/bricks/acknowledgements.md -->
+![bg right:40% w:550](custom/img/hackathon_group.png)
 
 ---
 
