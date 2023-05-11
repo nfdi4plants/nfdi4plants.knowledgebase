@@ -74,12 +74,11 @@ After reading this article, you should
 [kb-ArcCommander]: ../implementation/ArcCommander.html "ARC Commander"
 
 <!-- kb-Tutorials -->
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arcCommander.html "Quickstart ARC"
-[kb-QuickStart_Swate]: ../tutorials/QuickStart_swate.html "Swate QuickStart"
+[kb-QuickStart_Swate]: ../implementation/QuickStart_swate.html "Swate QuickStart"
 
 <!-- Links to DataPLANT Homepage (hp-) -->
 
-[hp-Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
+[hp-Registration]: <https://register.nfdi4plants.org/> "DataPLANT Registration"
 [hp-DataHUB]: <https://git.nfdi4plants.org> "DataPLANT DataHUB"
 [hp-HelpDesk]: <https://helpdesk.nfdi4plants.org> "DataPLANT Help Desk"
 

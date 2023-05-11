@@ -7,12 +7,10 @@ add toc: false
 add sidebar: _sidebars\swateManualSidebar.md
 ---
 
-## How to use
-
-A good starting point for your annotation is using a predefined template. You can find them under the "Templates" tab. Here, click on the "Browse database" to explore all currently available templates.
+A good starting point for your data annotation is using a predefined template. You can find them under the "Templates" tab. Here, click on the "Browse database" to explore all currently available templates.
 
 <p style="justify-content: center; display: flex">
-<img src="https://user-images.githubusercontent.com/39732517/128495178-cc14690a-fc8a-4a3c-b591-365176ea2b00.png" data-canonical-src="https://user-images.githubusercontent.com/39732517/128495178-cc14690a-fc8a-4a3c-b591-365176ea2b00.png" style="height: 300px"  />
+<img src="../../img/swate-tab-templates.png" style="height: 300px"  />
 </p>
 
 ### Template search
@@ -28,11 +26,11 @@ To filter with tags, just start typing and Swate will show you related tags. The
 
 (c) Filter the templates by **origin**.
 
-By default the search results will contain both, community made templates and templates made by our data stewards. You can change this behaviour by hovering over the "cur/com" field and picking the behavior you want. 
+By default the search results will contain both, community made templates and templates made by our data stewards. You can change this behavior by hovering over the "cur/com" field and picking the behavior you want. 
 
 ### Template information
 
-When you click on a template you will be presented with some additional information, like the date of creation, the version and related tags. After selecting a template you are returned to the Swate main-page and are presented with all building blocks contained in the template. Click "Insert protocol annotation blocks" to add the template to the right side of your selected Excel cells. *Only building blocks not yet in your table will be added*.
+When you click on a template you will be presented with some additional information, like the date of creation, the version and related tags. After selecting a template you are returned to the Swate main-page and are presented with all building blocks contained in the template. Click "Add template" to add the template to the right side of your selected Excel cells. *Only building blocks not yet in your table will be added*.
 
 ## Get in contact
 

@@ -101,7 +101,7 @@ Name | Type | Tasks on metadata
 
 <!-- DataPLANT web links -->
 
-[hp-Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
+[hp-Registration]: <https://register.nfdi4plants.org/> "DataPLANT Registration"
 [hp-DataHUB]: <https://git.nfdi4plants.org> "DataHUB"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"

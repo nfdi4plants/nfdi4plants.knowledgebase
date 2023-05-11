@@ -1,0 +1,55 @@
+/* @theme dataplant_marp-theme */
+
+@import 'default';
+
+header {
+  top: 30px;
+  height: 60px;
+}
+
+footer {
+  height: 60px;
+  padding: 10px;
+  bottom: 00px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: Calibri, sans-serif;
+  color: #2D3E50;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: Calibri, sans-serif;
+  color: #2D3E50;  
+}
+
+code {
+  /* font-size: 20px; */
+  /* color: #c21f3a; */
+}
+
+section {
+  font-size: 30px;
+  font-family: Calibri, sans-serif;
+  color: #2D3E50;
+  /* padding: 40px; */
+}
+
+/* Center images in the main section ("block") */
+
+section p img {
+  display: block;
+  margin: 0px auto 0px auto;  /* top right bottom left*/ 
+}
+img.emoji {
+  display: inline;
+  }
+
+/* Styling page number */
+section::after {
+  font-family: Calibri, sans-serif;
+  font-size: 20px;
+  color: #2D3E50  
+}

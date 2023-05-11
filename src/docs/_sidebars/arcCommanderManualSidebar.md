@@ -13,7 +13,7 @@
 ## MacOS:/docs/implementation/ArcCommanderManual/arc_installation_macos.html
 ## Linux:/docs/implementation/ArcCommanderManual/arc_installation_linux.html
 # DataHUB Access:/docs/implementation/ArcCommanderManual/arc_access.html
-# Before we start:/docs/implementation/ArcCommanderManual/arc_usage_notes.html
+# Before we start:/docs/implementation/ArcCommanderManual/arc_before_we_start.html
 ```
 
 ```Central Functions
