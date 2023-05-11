@@ -62,7 +62,7 @@ date: 2023-05-09
 
 # People involved
 
-- Cristina Martins Rodrigues
-- Martin Kuhl
-- Andrea Schrader
-- Dominik Brilhaus
+- [Cristina Martins Rodrigues](https://orcid.org/0000-0002-4849-1537)
+- [Martin Kuhl](https://orcid.org/0000-0002-8493-1077)
+- [Andrea Schrader](https://orcid.org/0000-0002-3879-7057)
+- [Dominik Brilhaus](https://orcid.org/0000-0001-9021-3197)
