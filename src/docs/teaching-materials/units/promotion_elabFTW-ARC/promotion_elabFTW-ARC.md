@@ -6,6 +6,7 @@ author: Dominik Brilhaus
 headingDivider:
 - 1
 - 2
+- 3
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
 layout: slides

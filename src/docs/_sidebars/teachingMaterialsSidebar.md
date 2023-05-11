@@ -23,7 +23,6 @@
 ## lesson fair outro:/docs/teaching-materials/units/lesson_fair_outro/lesson_fair_outro.html
 ## lesson fair-intro:/docs/teaching-materials/units/lesson_fair-intro/lesson_fair-intro.html
 ## lesson ontology:/docs/teaching-materials/units/lesson_ontology/lesson_ontology.html
-## lesson publication:/docs/teaching-materials/units/lesson_publication/lesson_publication.html
 ## lesson repositories:/docs/teaching-materials/units/lesson_repositories/lesson_repositories.html
 ## lesson reproducibility:/docs/teaching-materials/units/lesson_reproducibility/lesson_reproducibility.html
 ## lesson ResearchDataLifecycle:/docs/teaching-materials/units/lesson_ResearchDataLifecycle/lesson_ResearchDataLifecycle.html
