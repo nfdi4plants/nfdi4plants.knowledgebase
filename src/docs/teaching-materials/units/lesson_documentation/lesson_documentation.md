@@ -43,12 +43,6 @@ Electronic lab notebook
 
 ---
 
-<!-- Source to slide(s) -->
-<!-- ../../bricks/lesson_documentation-ELNs-title.md -->
-
-
----
-
 # Electronic lab notebooks (ELNs)
 
 <style scoped>

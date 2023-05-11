@@ -69,12 +69,6 @@ arc sync -r https://git.nfdi4plants.org/<OwnerOfRepository>/<NameOfRepository>
 
 ---
 
-<!-- Source to slide(s) -->
-<!-- ../../bricks/tutorial_arc_sync-ARC_synchronization.md -->
-
-
----
-
 # Successful ARC synchronization
 
 Check if the upload was successful by visiting your ARC at the respective URL in your browser.

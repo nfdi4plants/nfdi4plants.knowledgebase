@@ -34,12 +34,6 @@ date: 2022-10-11
 status: ready
 ---
 
-<!-- Source to slide(s) -->
-<!-- ../../bricks/FAIR-principles.md -->
-
-
----
-
 # The benefits of acting FAIR
 
 <style scoped>

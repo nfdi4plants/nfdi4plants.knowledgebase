@@ -1,6 +1,7 @@
 ---
 title: lesson_009_metadata
 layout: slides
+marp: true
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
@@ -30,8 +31,5 @@ style: 'footer {height: 30px;padding: 10px;bottom: 00px;} #footer-img1 {height: 
   {height: 20px;padding-left: 20px;opacity: 0.5;}'
 ---
 
-../../bricks/title_metadata.md
-
 ../../bricks/metadata_types.md
-
 ../../bricks/metadata_FAIR.md

@@ -1,6 +1,7 @@
 ---
 title: lesson_009_metadata
 layout: slides
+marp: true
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
@@ -28,12 +29,6 @@ footer: ' <a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../..
 style: 'footer {height: 30px;padding: 10px;bottom: 00px;} #footer-img1 {height: 30px;padding-left:
   0px;} #footer-img2 {height: 30px;padding-left: 20px;opacity: 0.5;} #footer-img3
   {height: 20px;padding-left: 20px;opacity: 0.5;}'
----
-
-<!-- Source to slide(s) -->
-<!-- ../../bricks/title_metadata.md -->
-
-
 ---
 
 # Project metadata
