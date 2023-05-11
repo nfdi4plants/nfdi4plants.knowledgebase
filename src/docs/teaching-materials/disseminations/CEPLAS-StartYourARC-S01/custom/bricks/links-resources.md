@@ -4,6 +4,7 @@ theme: dataplant_marp-theme
 status: ready
 license: [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 date: 2023-05-09
+title: Resources
 ---
 
 # Resources
