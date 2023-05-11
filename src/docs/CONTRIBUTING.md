@@ -67,6 +67,10 @@ Please **do not** produce and submit a lot of content without prior local testin
 
 Check out the installation docs on [nfdi4plants/web-components](https://github.com/nfdi4plants/web-components#installation). For fornax you will need to bundle the web-components with rollup. See the respective section for more information.
 
+```bash
+npm install @nfdi4plants/web-components@latest
+```
+
 ### update Nfdi4Plants.Fornax
 
 ```
