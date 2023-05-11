@@ -26,5 +26,4 @@ title: tutorial_arc_sync
 ../../bricks/tutorial_arc_sync-title.md
 ../../bricks/tutorial_arc_sync-Create.md
 ../../bricks/tutorial_arc_sync-Connect.md
-../../bricks/tutorial_arc_sync-ARC_synchronization.md
 ../../bricks/tutorial_arc_sync-Success.md
