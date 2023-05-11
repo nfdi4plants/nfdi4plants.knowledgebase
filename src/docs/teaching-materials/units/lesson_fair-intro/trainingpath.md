@@ -42,5 +42,4 @@ status: ready
 #  - infrastructures
 #  - stakeholders
 
-../../bricks/FAIR-principles.md
 ../../bricks/FAIR-benefits.md

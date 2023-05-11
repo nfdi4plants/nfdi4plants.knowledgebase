@@ -18,14 +18,11 @@
 ```Non-curated Teaching Materials
 # Lessons
 ## ARC ISA:/docs/teaching-materials/units/ARC_ISA/ARC_ISA.html
-## lesson PID:/docs/teaching-materials/units/lesson_003_PID/lesson_003_PID.html
 ## lesson DataHUB:/docs/teaching-materials/units/lesson_DataHUB/lesson_DataHUB.html
 ## lesson documentation:/docs/teaching-materials/units/lesson_documentation/lesson_documentation.html
 ## lesson fair outro:/docs/teaching-materials/units/lesson_fair_outro/lesson_fair_outro.html
 ## lesson fair-intro:/docs/teaching-materials/units/lesson_fair-intro/lesson_fair-intro.html
-## lesson metadataStandards:/docs/teaching-materials/units/lesson_metadataStandards/lesson_metadataStandards.html
 ## lesson ontology:/docs/teaching-materials/units/lesson_ontology/lesson_ontology.html
-## lesson OrderStructure:/docs/teaching-materials/units/lesson_OrderStructure/lesson_OrderStructure.html
 ## lesson publication:/docs/teaching-materials/units/lesson_publication/lesson_publication.html
 ## lesson repositories:/docs/teaching-materials/units/lesson_repositories/lesson_repositories.html
 ## lesson reproducibility:/docs/teaching-materials/units/lesson_reproducibility/lesson_reproducibility.html
@@ -34,7 +31,6 @@
 ## lesson Swate DataPLANT:/docs/teaching-materials/units/lesson_Swate_DataPLANT/lesson_Swate_DataPLANT.html
 # Tutorials
 ## SwateTemplates:/docs/teaching-materials/units/SwateTemplates/SwateTemplates.html
-## tutorial git installation:/docs/teaching-materials/units/tutorial_007_git_installation/tutorial_007_git_installation.html
 ## tutorial datahub registration:/docs/teaching-materials/units/tutorial_009_datahub_registration/tutorial_009_datahub_registration.html
 ## tutorial arc access:/docs/teaching-materials/units/tutorial_arc_access/tutorial_arc_access.html
 ## tutorial arc add:/docs/teaching-materials/units/tutorial_arc_add/tutorial_arc_add.html

@@ -22,7 +22,6 @@ title: lesson_documentation
 ---
 
 ../../bricks/lesson_documentation-Digital_documentation.md
-../../bricks/lesson_documentation-ELNs-title.md
 ../../bricks/lesson_documentation-ELNs.md
 ../../bricks/lesson_documentation-Markup_Languages.md
 ../../bricks/lesson_documentation-Markdown_HTML.md
