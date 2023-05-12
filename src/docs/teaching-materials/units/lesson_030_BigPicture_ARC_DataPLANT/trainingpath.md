@@ -1,5 +1,5 @@
 ---
-marp: false
+marp: true
 theme: dataplant_marp-theme-CMR
 paginate: true
 footer: <a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a>

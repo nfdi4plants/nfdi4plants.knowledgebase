@@ -24,7 +24,7 @@ Welcome to the DataPLANT Teaching Materials
 
 <hr>
 
-# DataHUB concept
+# DataHUB Concept
 
 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="../img/_logos/CreativeCommons/by.svg" style="height:15px"></a>  [Cristina Martins Rodrigues](https://orcid.org/0000-0002-4849-1537), [DataPLANT](https://nfdi4plants.org/)
 📆 2023-02-17
