@@ -19,7 +19,7 @@ author_github: brilator
 duration_minutes: 10
 date: 2023-03-29
 status: ready
-description: slide-deck to illustrate how ARC + DataHUB could be implemented parallel / replacing a local file share
+description: slide-deck to illustrate how ARC + DataHUB could be implemented parallel, replacing a local file share
 title: promotion_fileshare2arc
 ---
 
