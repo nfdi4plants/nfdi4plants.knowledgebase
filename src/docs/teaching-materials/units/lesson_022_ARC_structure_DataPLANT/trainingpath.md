@@ -21,7 +21,6 @@ images_used:
 - ARC_fillWithData_seq4.png
 - ARC_fillWithData_seq5.png
 - ARC_fillWithData_seq6.png
-citation: null
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 description:
 - Introduce ARC as a FAIR Digital Object for research data
@@ -30,15 +29,12 @@ keywords:
 - annotated research context
 - Fair Digital Object
 - Order and Structure
-comments: null
 date: 2023-02-17
 status: ready
 learning outcomes:
 - name different parts of an ARC
 - Knows where to place experimental data, data analysis and computation, or metadata
   annotation
-skills: null
-abilities: null
 requirements:
 - Understanding FAIR Principles
 required resources: none

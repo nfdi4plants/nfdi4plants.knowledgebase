@@ -22,16 +22,12 @@ description:
 learning outcomes:
 - Attendees will know about the different isa.xlsx files present in an ARC, their
   main purpose, and how they are connected
-skills: null
-abilities: null
-exercise: null
 target audience: ''
 required resources: ''
 keywords:
 - ISA
 teaching mode: inhale/listen
 duration_minutes: '5'
-alternative: null
 date: 2022-10-24
 status: ready
 ---

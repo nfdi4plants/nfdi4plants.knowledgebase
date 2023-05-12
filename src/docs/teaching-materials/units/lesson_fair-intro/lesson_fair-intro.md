@@ -15,12 +15,8 @@ author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 citation: ''
-description: null
 learning outcomes:
 - list the FAIR principles and name one example for each
-skills: null
-abilities: null
-exercise: null
 requirements: ''
 target audience: ''
 teaching mode: inhale/listen

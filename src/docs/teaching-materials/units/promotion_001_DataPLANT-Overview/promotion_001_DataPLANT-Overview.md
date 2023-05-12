@@ -13,19 +13,10 @@ title: promotion_001_DataPLANT-Overview
 author: Cristina Martins Rodrigues
 author_orcid: https://orcid.org/0000-0002-4849-1537
 author_github: CMR248
-images_used: null
-citation: null
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 description: General overview of DataPLANT for promotional needs.
-keywords: null
-comments: null
 date: 2023-03-24
 status: ready
-learning outcomes: null
-skills: null
-abilities: null
-requirements: null
-required resources: null
 teaching mode:
 - inhale/listen
 duration_minutes: 3

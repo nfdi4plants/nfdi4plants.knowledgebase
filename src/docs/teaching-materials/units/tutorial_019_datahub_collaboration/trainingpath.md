@@ -11,7 +11,6 @@ images_used:
 - datahub_members_seq5.png
 - datahub_members_seq6.png
 - ARC_Sharing_img1.png
-citation: null
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 description: Step-by-step instructions for inviting additional collaborators to an
   ARC within the DataHUB.
@@ -20,13 +19,10 @@ keywords:
 - Collaboration
 - DataHUBs
 - Access Management
-comments: null
 date: 2023-02-16
 status: ready
 learning outcomes:
 - is able to independently add further members to an ARC
-skills: null
-abilities: null
 requirements:
 - tutorial_009_datahub_registration.md
 - tutorial_020_datahub_PAT.md

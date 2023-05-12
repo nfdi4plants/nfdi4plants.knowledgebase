@@ -23,7 +23,6 @@ images_used:
 - DataPLANT_BigPicture_seq6.png
 - DataPLANT_BigPicture_seq7.png
 - DataPLANT_BigPicture_seq8.png
-citation: null
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 description: General overview of DataPLANT's topics visualized using the ARC. Each
   individual slide may serve as a starting point for a deeper insight into the respective
@@ -33,13 +32,10 @@ keywords:
 - ARC
 - DataHUB
 - Sharing Plattform
-comments: null
 date: 2023-02-17
 status: ready
 learning outcomes:
 - name the core values of DataPLANT.
-skills: null
-abilities: null
 requirements:
 - Understanding FAIR Principles
 required resources: none

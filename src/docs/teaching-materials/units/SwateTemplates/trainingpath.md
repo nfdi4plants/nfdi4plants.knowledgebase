@@ -21,9 +21,6 @@ description:
 learning outcomes:
 - The audience will know about Swate templates, how they are generated and, that they
   can customize their lab-specific templates.
-skills: null
-abilities: null
-exercise: null
 requirements:
 - '[lesson_002_ontology.md](lesson_002_ontology.md)'
 - '[lesson_010_schemata.md](lesson_010_schemata.md)'
@@ -35,7 +32,6 @@ keywords:
 - null
 teaching mode: inhale/listen
 duration_minutes: '5'
-alternative: null
 links and references: ''
 date: 2022-10-25
 status: ready
