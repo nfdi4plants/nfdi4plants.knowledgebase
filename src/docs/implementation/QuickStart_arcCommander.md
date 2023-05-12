@@ -106,7 +106,7 @@ The ISA investigation (`-i`) workbook allows you to record administrative metada
 ```bash
 arc i create -i QuickStartInvestigation
 ```
-> Note: Avoid using spaces in the identifier. Use underscores and capital letters instead.>
+> Note: Avoid using spaces in the identifier. Use underscores and capital letters instead.
 
 ### ISA studies and assays
 
