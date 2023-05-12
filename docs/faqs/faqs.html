@@ -83,15 +83,14 @@
 <h2 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/SwateManual/index.html">Manual</h2>
 <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/DataHub.html">DataHUB</h1>
 <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/implementation/DataPLAN.html">DataPLAN</h1>
-<!-- ```FAQs
-# Frequently Asked Questions:/docs/faqs/faqs.html
 
       </nfdi-sidebar-element>
       <nfdi-sidebar-element slot="sidebar" isActive="true">
         <div slot="title">
-          -->
+          FAQs
         </div>
-        
+        <h1 slot="inner" href="/nfdi4plants.knowledgebase/docs/faqs/faqs.html">Frequently Asked Questions</h1>
+
       </nfdi-sidebar-element>
       <nfdi-sidebar-element slot="sidebar" isActive="true">
         <div slot="title">
@@ -104,26 +103,41 @@
         Frequently Asked Questions
       </h1>
       <i class="help">
-        last updated at 2022-12-14
+        last updated at 2023-05-11
       </i>
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="general">General</nfdi-h2>
-<p><strong>Q:</strong></p>
-<p><strong>A:</strong></p>
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Is it necessary to fill in the empty fields in the investigation-file manually? 
+</summary>
+No. Although it is possible to fill in the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
+</details>
+<br>
 <nfdi-h2 id="annotated-research-context">Annotated Research Context</nfdi-h2>
-<p><strong>Q:</strong>  Should the metadata annotation be made in the same document in which the dataset resides?</p>
-<p><strong>A:</strong></p>
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Should the metadata annotation be made in the same document in which the dataset resides? 
+</summary>
+No. The metadata describing the data is annotated in a separate xlsx-file that resides in the parent folder of the data sets.
+</details>
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Is it necessary to fill in the empty fields in the investigation-file manually? 
+</summary>
+No. Although it is possible to fill out the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
+</details>
+<br>
 <nfdi-h2 id="arc-commander">ARC Commander</nfdi-h2>
-<p><strong>Q:</strong>  Is it possible to use common Excel functionalities?</p>
-<p><strong>A:</strong>  Yes! In fact, this is one of the reasons why we decided to embed Swate within Excel, as it allows users to continue using the Excel functionality they are accustomed to.</p>
-<p><strong>Q:</strong>  Do Excel files need to be closed before entering a new command in the terminal?</p>
-<p><strong>A:</strong></p>
-<p><strong>Q:</strong>  Which aspects have to be taken into account when giving a title or an identifier?</p>
-<p><strong>A:</strong></p>
-<p><strong>Q:</strong> How to retrieve a valid access token? - #163</p>
-<p><strong>A:</strong> English version of Arc Commander - Authentication Step Fix - detailed version #157
-Note, this also works for &quot;arc get&quot;
-<br></p>
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Are there any recommendations for titles or identifiers?
+</summary>
+Avoid using spaces in the identifier. Use underscores and capital letters instead. There are no specific restrictions regarding the title. Although it is possible to fill in the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
+</details>
+<br>
+<!--<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+How to retrieve a valid access token? - #163
+</summary>
+English version of ARC Commander - Authentication Step Fix - detailed version #157
+Note, this also works for "arc get"
+<br>
 <p><em><strong>TLDR:</strong></em></p>
 <ul>
 <li>Have a GitLab account</li>
@@ -159,25 +173,51 @@ Note, this also works for &quot;arc get&quot;
 enter „cmd“ and execute the command there, as an alternative, navigate in the Command Prompt to this directory.<br></p>
 <p>In case you want to delete the Test repo again: navigate into the project within the DataHUB, on the left hand side select settings and general
 →advanced-&gt;Expand-&gt; at the bottom: “ Delete project”.</p>
+</details>
+<br>-->
 <nfdi-h2 id="swate">Swate</nfdi-h2>
-<p><strong>Q:</strong>  Is it possible to use common Excel functionalities?</p>
-<p><strong>A:</strong>  Yes! In fact, this is one of the reasons why we decided to embed Swate within Excel, as it allows users to continue using the Excel functionality they are accustomed to.</p>
-<p><strong>Q:</strong>  Do I have to fill in all columns when using a template?</p>
-<p><strong>A:</strong></p>
-<p><strong>Q:</strong>  Which format must be used to enter a date?</p>
-<p><strong>A:</strong>  String formatted as ISO8601 date
-YYYY-MM-DD</p>
-<p>ISA-Spec</p>
-<p><strong>Q:</strong>  Is it necessary to fill in the empty fields in the investigation-file manually?</p>
-<p><strong>A:</strong> Eigentlich muss man da gar nichts amchen, aber wenn man will kann man, aber generell gilt: Was nicht passt, einfach frei lassen</p>
-<p><strong>Q:</strong>  How to separate multiple entries per row?</p>
-<p><strong>A:</strong></p>
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Is it possible to use common Excel functionalities?
+</summary>
+Yes. In fact, this is one of the reasons why we decided to embed Swate within Excel, as it allows users to continue using the Excel functionality they are accustomed to.
+</details>
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Do I have to fill in all columns when using a template?
+</summary>
+No. However, if you want to submit your data to a <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">public data repository</a>, these will require specific metadata. For this purpose we provide the corresponding templates helping you to annotate your data accordingly.
+</details>
+<br>
+<nfdi-h2 id="isa">ISA</nfdi-h2>
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Which format must be used to enter a date?
+</summary>
+String formatted as ISO8601 date: YYYY-MM-DD
+</details>
+<br>
+<!--
+## ARCitect
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Question
+</summary>
+Answer
+</details>
 <nfdi-h2 id="datahub">DataHUB</nfdi-h2>
-<p><strong>Q:</strong></p>
-<p><strong>A:</strong></p>
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Question
+</summary>
+Answer
+</details>
 <nfdi-h2 id="dataplan">DataPLAN</nfdi-h2>
-<p><strong>Q:</strong></p>
-<p><strong>A:</strong></p>
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Question
+</summary>
+Answer
+</details>
+<!--Other Design-version
+
+**Q:**  Which format must be used to enter a date?
+
+**A:**  String formatted as ISO8601 date: YYYY-MM-DD
 
       <h3>
         DataPLANT Support
