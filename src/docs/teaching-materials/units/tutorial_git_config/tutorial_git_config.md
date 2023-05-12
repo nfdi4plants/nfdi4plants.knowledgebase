@@ -69,6 +69,3 @@ git config --global --get-regexp user
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_git_config-Global.md -->
-
-
-

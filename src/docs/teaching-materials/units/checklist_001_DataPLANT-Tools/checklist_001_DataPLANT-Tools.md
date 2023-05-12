@@ -100,6 +100,3 @@ teaching mode:
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/Participant-TechCheck_Checklist.md -->
-
-
-

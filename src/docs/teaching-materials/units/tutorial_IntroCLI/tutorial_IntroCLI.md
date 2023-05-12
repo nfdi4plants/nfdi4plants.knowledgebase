@@ -47,6 +47,3 @@ echo "Hello. I am a code block"
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_IntroCLI-Code_examples.md -->
-
-
-

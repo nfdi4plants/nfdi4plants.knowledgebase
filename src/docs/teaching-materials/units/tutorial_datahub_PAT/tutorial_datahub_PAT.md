@@ -49,6 +49,3 @@ title: tutorial_datahub_PAT
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_PAT-Steps.md -->
-
-
-

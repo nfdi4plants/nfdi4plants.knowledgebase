@@ -78,6 +78,3 @@ Participant n | Participant n-1
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/exercise_FAIRProject_final-Assignment.md -->
-
-
-

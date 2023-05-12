@@ -83,6 +83,3 @@ ul {
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_FAIR_outro-Associate_DataLifeCycle.md -->
-
-
-

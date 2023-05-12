@@ -111,6 +111,3 @@ Repository | Description | Biological data domain
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_repositories-Generic_data_repositories.md -->
-
-
-

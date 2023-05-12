@@ -53,6 +53,3 @@ footer {
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/exercise_FAIRProject_ARC-assignment.md -->
-
-
-

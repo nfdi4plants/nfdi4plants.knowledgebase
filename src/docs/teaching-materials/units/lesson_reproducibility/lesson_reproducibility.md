@@ -72,6 +72,3 @@ title: lesson_reproducibility
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_reproducibility-Computational_workflow_languages.md -->
-
-
-

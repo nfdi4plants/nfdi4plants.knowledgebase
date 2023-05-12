@@ -117,6 +117,3 @@ object-position: 100% 45%;
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_congrats-for-sharing.md -->
-
-
-

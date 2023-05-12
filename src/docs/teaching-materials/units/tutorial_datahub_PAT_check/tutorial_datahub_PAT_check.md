@@ -55,6 +55,3 @@ title: tutorial_datahub_PAT_check
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_PAT_check-Erase_your_access_token.md -->
-
-
-

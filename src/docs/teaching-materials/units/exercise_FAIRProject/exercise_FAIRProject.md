@@ -102,6 +102,3 @@ Participant n | Participant n+1
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/exercise_FAIRProject-Assignment.md -->
-
-
-

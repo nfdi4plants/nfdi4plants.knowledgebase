@@ -45,6 +45,3 @@ object-fit: cover;
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/FAIR-benefits.md -->
-
-
-

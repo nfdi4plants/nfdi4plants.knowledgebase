@@ -171,6 +171,3 @@ ul {
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/metadata_FAIR.md -->
-
-
-

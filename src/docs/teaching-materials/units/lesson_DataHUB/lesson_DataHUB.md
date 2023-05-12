@@ -43,6 +43,3 @@ Discover and share ARCs with the Community on DataPLANT's [DataHUB](<https://git
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/DataHUB-collaboration.md -->
-
-
-

@@ -232,6 +232,3 @@ https://schema.datacite.org/meta/kernel-4.3/example/datacite-example-dataset-v4.
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/Standards-DataCite.md -->
-
-
-

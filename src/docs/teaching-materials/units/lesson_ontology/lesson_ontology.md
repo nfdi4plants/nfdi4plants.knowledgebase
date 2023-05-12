@@ -263,6 +263,3 @@ LIVE-Demo
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Example_ontologies.md -->
-
-
-

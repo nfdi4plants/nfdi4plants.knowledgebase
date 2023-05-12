@@ -122,6 +122,3 @@ duration_minutes: 10 - Depends on how deep one goes on each slide
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/BigPicture_ARC_DataPLANT.md -->
-
-
-
