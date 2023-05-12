@@ -19,7 +19,7 @@ String formatted as ISO8601 date: YYYY-MM-DD
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
 Is it necessary to fill in the empty fields in the investigation-file manually? 
 </summary>
-No! Although it is possible to fill in the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
+No. Although it is possible to fill in the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
 </details>
 <br>
 
@@ -34,14 +34,14 @@ No. The metadata describing the data is annotated in a separate xlsx-file that r
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
 Is it necessary to fill in the empty fields in the investigation-file manually? 
 </summary>
-No! Although it is possible to fill in the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
+No. Although it is possible to fill out the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
 </details>
 <br>
 
 ## ARC Commander
 
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
-Which aspects have to be taken into account when giving a title or an identifier?
+Are there any recommendations for titles or identifiers?
 </summary>
 Avoid using spaces in the identifier. Use underscores and capital letters instead. There are no specific restrictions regarding the title. Although it is possible to fill in the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
 </details>
@@ -105,13 +105,13 @@ In case you want to delete the Test repo again: navigate into the project within
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
 Is it possible to use common Excel functionalities?
 </summary>
-Yes! In fact, this is one of the reasons why we decided to embed Swate within Excel, as it allows users to continue using the Excel functionality they are accustomed to.
+Yes. In fact, this is one of the reasons why we decided to embed Swate within Excel, as it allows users to continue using the Excel functionality they are accustomed to.
 </details>
 
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
 Do I have to fill in all columns when using a template?
 </summary>
-No! Except you have used the template to reach a specific endpoint repository. Here, we have taken care to query only the necessary metadata in the corresponding templates.
+No. However, if you want to submit your data to a <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">public data repository</a>, these will require specific metadata. For this purpose we provide the corresponding templates helping you to annotate your data accordingly.
 </details>
 
 <!--
