@@ -13,7 +13,8 @@ footer: ' <a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../..
   <a id="authors" href="https://orcid.org/0000-0001-9021-3197">Dominik Brilhaus</a>'
 style: 'footer {height: 30px;padding: 10px;bottom: 00px;} #footer-img1 {height: 30px;padding-left:
   0px;} #footer-img2 {height: 30px;padding-left: 20px;opacity: 0.5;} #footer-img3
-  {height: 20px;padding-left: 20px;opacity: 0.5;}  #authors {height: 30px; font-size: 10px; padding-left: 20px}'
+  {height: 20px;padding-left: 20px;opacity: 0.5;}  #authors {height: 30px; font-size:
+  10px; padding-left: 20px}'
 title: promotion_elabFTW-ARC
 ---
 
