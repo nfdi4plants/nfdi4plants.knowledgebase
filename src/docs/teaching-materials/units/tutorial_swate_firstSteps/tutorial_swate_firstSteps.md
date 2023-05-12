@@ -113,6 +113,8 @@ If you want to add a building block with a unit, check box (C) and use search fi
 
 ![bg right w:450](../../../img/swate_ontologyTermSearch2.png)
 
+--- 
+
 # Annotate your samples and data <!--fit-->
 
 - If term-directed search is disabled, Swate still suggests ontology terms, but without relation to the column header.
