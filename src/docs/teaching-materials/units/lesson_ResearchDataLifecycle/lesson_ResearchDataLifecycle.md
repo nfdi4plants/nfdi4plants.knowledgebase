@@ -284,4 +284,3 @@ figcaption {
 <!-- ../../bricks/ResearchDataLifecycle09-Cross.md -->
 
 
----

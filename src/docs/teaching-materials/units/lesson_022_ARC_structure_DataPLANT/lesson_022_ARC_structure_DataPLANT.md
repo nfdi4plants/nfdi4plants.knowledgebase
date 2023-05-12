@@ -114,4 +114,3 @@ links and references:
 <!-- ../../bricks/ARC_Structure_DataPLANT-6Folder_Structure_MetadataAnnotation.md -->
 
 
----

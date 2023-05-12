@@ -36,4 +36,3 @@ Please follow [these instructions](https://nfdi4plants.github.io/Swate-docs/docs
 <!-- ../../bricks/tutorial_swate_installation.md -->
 
 
----

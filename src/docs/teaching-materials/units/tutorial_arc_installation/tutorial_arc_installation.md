@@ -50,4 +50,3 @@ arc --version
 <!-- ../../bricks/tutorial_arc_installation.md -->
 
 
----

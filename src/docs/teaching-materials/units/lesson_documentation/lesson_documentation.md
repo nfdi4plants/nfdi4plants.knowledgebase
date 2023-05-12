@@ -245,4 +245,3 @@ Recommended text editors with code highlighting
 <!-- ../../bricks/lesson_documentation-Text_editors_and_IDEs.md -->
 
 
----

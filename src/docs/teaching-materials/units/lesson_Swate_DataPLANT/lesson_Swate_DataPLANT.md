@@ -132,4 +132,3 @@ Enable **related term directed search** to directly fill cells with child terms
 <!-- ../../bricks/lesson_Swate_DataPLANT-Hierarchical_combination_of_ontologies.md -->
 
 
----

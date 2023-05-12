@@ -88,4 +88,3 @@ This will create the general ARC folder structure:
 <!-- ../../bricks/tutorial_arc_init-Your_fresh_ARC.md -->
 
 
----

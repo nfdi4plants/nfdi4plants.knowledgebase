@@ -105,4 +105,3 @@ Facilities can define their most common workflows as templates
 <!-- ../../bricks/Swate-templates04-import.md -->
 
 
----
