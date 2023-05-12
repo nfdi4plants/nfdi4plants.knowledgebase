@@ -14,7 +14,7 @@
 ## Introduction:/index.html
 ```
 
-
+<!-- 
 ```Non-curated Teaching Materials
 # Lessons
 ## ARC ISA:/docs/teaching-materials/units/ARC_ISA/ARC_ISA.html
@@ -56,4 +56,4 @@
 ## promotion fileshare2arc:/docs/teaching-materials/units/promotion_fileshare2arc/promotion_fileshare2arc.html
 ```
 
-
+ -->
