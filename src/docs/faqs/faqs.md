@@ -145,4 +145,6 @@ Answer
 
 **Q:**  Which format must be used to enter a date?
 
-**A:**  String formatted as ISO8601 date: YYYY-MM-DD
+**A:**  String formatted as ISO8601 date: YYYY-MM-DD-->
+
+Already got an answer to a question or figured out the answer yourself? Please let others benefit from it by adding your suggestion [here](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/issues/new?assignees=CMR248&labels=FAQ&projects=&template=contribution-to-the-faq-section.md&title=%5BFAQ%5D).
