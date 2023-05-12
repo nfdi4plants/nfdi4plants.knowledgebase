@@ -11,12 +11,6 @@ article_status: published
 ## General
 
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
-Which format must be used to enter a date?
-</summary>
-String formatted as ISO8601 date: YYYY-MM-DD
-</details>
-
-<details><summary><span style="color: #1fc2a7;font-size:1.2em">
 Is it necessary to fill in the empty fields in the investigation-file manually? 
 </summary>
 No. Although it is possible to fill in the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
@@ -99,7 +93,6 @@ In case you want to delete the Test repo again: navigate into the project within
 </details>
 <br>-->
 
-
 ## Swate
 
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
@@ -113,7 +106,16 @@ Do I have to fill in all columns when using a template?
 </summary>
 No. However, if you want to submit your data to a <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">public data repository</a>, these will require specific metadata. For this purpose we provide the corresponding templates helping you to annotate your data accordingly.
 </details>
+<br>
 
+## ISA
+
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Which format must be used to enter a date?
+</summary>
+String formatted as ISO8601 date: YYYY-MM-DD
+</details>
+<br>
 <!--
 ## ARCitect
 
@@ -138,7 +140,6 @@ Question
 </summary>
 Answer
 </details>
--->
 
 <!--Other Design-version
 
