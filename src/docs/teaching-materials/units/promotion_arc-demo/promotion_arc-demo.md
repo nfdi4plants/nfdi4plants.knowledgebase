@@ -18,6 +18,8 @@ date: 2023-02-02
 
 <!-- 
 
+---
+
 ## Tutor prep:
 
 - change `<username>` in `arc sync` steps
@@ -41,9 +43,13 @@ date: 2023-02-02
 Dominik Brilhaus - May 10, 2023
 
 
+---
+
 ## You just received your data
 
 ![bg right width:400](../../../img/demo_data_screenshot.png)
+
+---
 
 ## Goal
 
@@ -52,6 +58,8 @@ Dominik Brilhaus - May 10, 2023
 - Share **your experimental data**.
 
 <!-- 
+---
+
 ## Tools and software
 
 📂 Explorer or Finder on your local computer
@@ -63,9 +71,13 @@ Dominik Brilhaus - May 10, 2023
 👩‍💻 "Terminal" or "command prompt" on your local computer 
 -->
 
+---
+
 ## Structure your data
 
 ![width:800](../../../img/ARC_fillWithData_experimental.png)
+
+---
 
 ## Annotate your data
 
@@ -89,6 +101,8 @@ object-position: 50% 60%;
 
 3. Fill assay parameters (by json import, link files by picker) -->
 
+---
+
 ## Collaborate and share
 
 <style scoped>
@@ -105,6 +119,8 @@ object-position: 50% 30%;
 
 ![](../../../img/ARC_DataSharing_Experts02_img1.png)
 
+---
+
 ## Sync your ARC to the DataHUB
 
 ```bash
@@ -117,17 +133,23 @@ arc sync -f -r https://git.nfdi4plants.org/brilator/demo-arc
 - `brilator/` = username @ DataHUB  
 - `demo-arc` = name of the ARC @ DataHUB   -->
 
+---
+
 ## Invite collaborators to your ARC
 
 https://git.nfdi4plants.org/brilator/demo-arc
 
 <!-- 
+---
+
 ## Check your progress at the DataHUB
 
 - Open your ARC at https://git.nfdi4plants.org/brilator/demo-arc/ and click the `commits` link below the project avatar
 - Or directly navigate to https://git.nfdi4plants.org/brilator/demo-arc/-/commits/main 
 
 -->
+
+---
 
 ## Using the ARC Commander to setup an ARC
 
@@ -152,10 +174,14 @@ arc a add -s talinum_drought -a rnaseq
 arc a add -s talinum_drought -a metabolomics
 ```
 
+---
+
 ## Your ARC is ready
 
 ![bg 80% right:75%](../../../img/demo_data_screenshot.png)
 ![bg 80%](../../../img/demo_arc_screenshot.png)
+
+---
 
 ## Your ARC is ready
 
@@ -179,7 +205,9 @@ section p br {
 ![bg right width:400](../../../img/demo_arc_screenshot.png)
 
 
-<!-- ## Outlook
+<!-- ---
+
+## Outlook
 
 1. Data analysis: add workflows and runs (scripts + external data)
 2. Iterative and reproducible data analysis: add runs (CWL)

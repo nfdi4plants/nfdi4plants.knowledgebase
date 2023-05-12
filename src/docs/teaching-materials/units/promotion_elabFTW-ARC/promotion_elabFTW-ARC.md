@@ -3,10 +3,6 @@ marp: true
 theme: dataplant_marp-theme
 paginate: true
 author: Dominik Brilhaus
-headingDivider:
-- 1
-- 2
-- 3
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
 layout: slides
@@ -25,6 +21,8 @@ title: promotion_elabFTW-ARC
 
 Dominik Brilhaus - April 13, 2023
 
+---
+
 ## Example Scenario
 
 1. You use **ARCs** to
@@ -38,6 +36,9 @@ Dominik Brilhaus - April 13, 2023
    - document your daily lab work "on the fly"
    - organize lab routines with colleagues
 
+
+---
+
 ## Goals
 
 1. Benefit from "both worlds" (ARC and elabFTW)
@@ -49,36 +50,63 @@ Dominik Brilhaus - April 13, 2023
 
 <!-- :bulb: Note, the following slides outline the overlapping concepts of elabFTW a manual approach. -->
 
+
+---
+
 ## Local ARCs - <br> Project overview
 
 ![bg right:50% w:600](images/arc-local-overview.png)
 
+
+---
+
 ## Local ARCs - <br> Project overview
 
 ![bg right:50% w:600](images/arc-local-details1.png)
+
+---
+
 ## Local ARCs - <br> Protocols
 
 ![bg right:50% w:550](images/arc-local-details2.png)
+
+
+---
 
 ## DataHUB
 
 https://git.nfdi4plants.org
 
+
+---
+
 ## Example ARC DataHUB - project overview
 
 ![w:800](images/datahub-project-overview.png)
+
+
+---
 
 ## Example ARC DataHUB - ARC overview
 
 ![w:800](images/datahub-arc-root.png)
 
+
+---
+
 ## Example ARC DataHUB - assay protocols
 
 ![w:800](images/datahub-arc-assay-protocols.png)
 
+
+---
+
 ## Example ARC DataHUB - protocol detail
 
 ![w:800](images/datahub-arc-study-protocol-view.png)
+
+
+---
 
 ## elabFTW - Overview
 
@@ -90,20 +118,27 @@ elabFTW data is mainly divided in two main categories (panels)
 > 
 > `Database`
 
-### Experiment Panel
+
+---
+
+
+## Experiment Panel
 
 ![bg right:60% w:700](images/elabFTW-experiment-list-view.png)
 
 The `Experiment` panel is the default "working area" for protocols of daily lab work
 
-### Database Panel
+---
+
+## Database Panel
 
 ![bg right:60% w:700](images/elabFTW-database-list-view.png)
 
 The `Database` panel is elabFTW`s place to categorize contents
 
+---
 
-### Database item types
+## Database item types
 
 :bulb: Item types can be defined in the `Admin Panel` (bottom)
 
@@ -111,6 +146,8 @@ The `Database` panel is elabFTW`s place to categorize contents
 
 ![bg right  w:600](images/elabFTW-adminpanel-item-types.png)
 
+
+---
 
 ## Preparing database lists for elabFTW import
 
@@ -122,11 +159,15 @@ The `Database` panel is elabFTW`s place to categorize contents
   - `title`: will be the displayed name of the individual item
   - `tags`: (separated by `|`) will be used as tags
 
-### Database import
+---
+
+## Database import
 
 ![](images/elabFTW-database-import.png)
 
-### Database import example - Investigations
+---
+
+## Database import example - Investigations
 
 `db_investigations.csv`
 
@@ -136,7 +177,9 @@ inv001-talinum-cam | inv001-talinum-cam | inv001-talinum-cam | Beetroot | Jasmin
 inv002-arabidopsis-heat | inv002-arabidopsis-heat | inv002-arabidopsis-heat | Sage | Oliver | oliver.sage@arc-uni.org | 0211-0213
 inv003-welwitschia-clock | inv003-welwitschia-clock | inv003-welwitschia-clock | Sugarcane | Viola | viola.sugarcane@arc-uni.org | 0211-0214
 
-### Database import example - Studies
+---
+
+## Database import example - Studies
 
 `exp_inv001-talinum-cam_studies.csv`
 
@@ -147,22 +190,28 @@ sty01-aba-pre-experiment | inv001-talinum-cam | sty01-aba-pre-experiment | Pre-e
 sty02-aba-full | inv001-talinum-cam | sty02-aba-full | Large scale experiment with ABA | ABA treatment
 sty03-aba-timeseries | inv001-talinum-cam | sty03-aba-timeseries | Time series experiment with ABA | Time Series Design
 
+---
 
-
-### Database import
+## Database import
 
 ![w:700](images/elabFTW-database-import-menu.png)
 
-### Database import
+---
+
+## Database import
 
 ![w:700](images/elabFTW-database-import-success.png)
 
-### Database Panel
+---
+
+## Database Panel
 
 ![w:700](images/elabFTW-database-list-view.png)
 
 
-### Linking / grouping items
+---
+
+## Linking / grouping items
 
 :bulb: Two mechanisms
 
@@ -172,35 +221,46 @@ sty03-aba-timeseries | inv001-talinum-cam | sty03-aba-timeseries | Time series e
    1. Database items
    2. Experiment items
 
-### Linking items
+---
+
+## Linking items
 
 In edit mode
 
 ![bg right:70%  w:700](images/elabFTW-experiment-linking-items.png)
 
+---
 
-### Linked items
+## Linked items
 
 ![bg right:70% w:700](images/elabFTW-experiment-linked-items.png)
 
 
 
-##
+---
+---
 
 ## Demo
 
 :construction: The following slides are attached to prep a demo 
 
+
+---
+
 ## Creating the ARC structure locally (demo)
 
-### settings
+---
+
+## settings
 
 ```bash
 gitlab_base_url=https://git.nfdi4plants.org/elab-demo-arcs/
 arc_dir_local=~/gitlab_dataplant/elab-demo-arcs
 ```
 
-### create a first arc
+---
+
+## create a first arc
 
 :bulb: This is a line-by-line example to initiate and share an ARC with a few studies and assays
 
@@ -233,7 +293,9 @@ arc sync -f -r "$gitlab_base_url""$arc_name" -m "initialize ARC structure"
 
 ```
 
-### create and push more arcs (for loop)
+---
+
+## create and push more arcs (for loop)
 
 ```bash
 for arc_name in inv002-arabidopsis-heat inv003-welwitschia-clock; do
