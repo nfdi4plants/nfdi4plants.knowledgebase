@@ -16,6 +16,7 @@ style: 'footer {height: 30px;padding: 10px;bottom: 00px;} #footer-img1 {height: 
   {height: 20px;padding-left: 20px;opacity: 0.5;}  #authors {height: 30px; font-size:
   10px; padding-left: 20px}'
 title: promotion_elabFTW-ARC
+date: 2023-04-13
 ---
 
 # elabFTW // ARC
