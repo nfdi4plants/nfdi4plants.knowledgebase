@@ -1,48 +1,49 @@
 ---
 layout: docs
 title: Frequently Asked Questions
-published: 2022-12-14
+published: 2023-05-11
 add toc: true 
 add support: true 
 add sidebar: _sidebars/mainSidebar.md
 article_status: published
-todo: 
-1. Search for existing Questions (CMR)
-2. Provide answers (CMR)
-3. Include links to corresponding KB article (CMR)
-4. Open FAQ-section to public (CMR)
 ---
 
 ## General
 
-**Q:**  
-
-**A:**  
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Is it necessary to fill in the empty fields in the investigation-file manually? 
+</summary>
+No. Although it is possible to fill in the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
+</details>
+<br>
 
 ## Annotated Research Context
 
-**Q:**  Should the metadata annotation be made in the same document in which the dataset resides? 
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Should the metadata annotation be made in the same document in which the dataset resides? 
+</summary>
+No. The metadata describing the data is annotated in a separate xlsx-file that resides in the parent folder of the data sets.
+</details>
 
-**A:**  
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Is it necessary to fill in the empty fields in the investigation-file manually? 
+</summary>
+No. Although it is possible to fill out the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
+</details>
+<br>
 
 ## ARC Commander
 
-**Q:**  Is it possible to use common Excel functionalities?
-
-
-**A:**  Yes! In fact, this is one of the reasons why we decided to embed Swate within Excel, as it allows users to continue using the Excel functionality they are accustomed to. 
-
-**Q:**  Do Excel files need to be closed before entering a new command in the terminal?
-
-**A:**
-
-**Q:**  Which aspects have to be taken into account when giving a title or an identifier?
-
-**A:**
-
-**Q:** How to retrieve a valid access token? - #163
-
-**A:** English version of Arc Commander - Authentication Step Fix - detailed version #157
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Are there any recommendations for titles or identifiers?
+</summary>
+Avoid using spaces in the identifier. Use underscores and capital letters instead. There are no specific restrictions regarding the title. Although it is possible to fill in the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
+</details>
+<br>
+<!--<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+How to retrieve a valid access token? - #163
+</summary>
+English version of ARC Commander - Authentication Step Fix - detailed version #157
 Note, this also works for "arc get"
 <br>
 
@@ -89,44 +90,59 @@ enter „cmd“ and execute the command there, as an alternative, navigate in th
 
 In case you want to delete the Test repo again: navigate into the project within the DataHUB, on the left hand side select settings and general
 ->advanced->Expand-> at the bottom: “ Delete project”.
+</details>
+<br>-->
 
 ## Swate
 
-**Q:**  Is it possible to use common Excel functionalities?
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Is it possible to use common Excel functionalities?
+</summary>
+Yes. In fact, this is one of the reasons why we decided to embed Swate within Excel, as it allows users to continue using the Excel functionality they are accustomed to.
+</details>
 
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Do I have to fill in all columns when using a template?
+</summary>
+No. However, if you want to submit your data to a <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">public data repository</a>, these will require specific metadata. For this purpose we provide the corresponding templates helping you to annotate your data accordingly.
+</details>
+<br>
 
-**A:**  Yes! In fact, this is one of the reasons why we decided to embed Swate within Excel, as it allows users to continue using the Excel functionality they are accustomed to. 
+## ISA
 
-**Q:**  Do I have to fill in all columns when using a template?
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Which format must be used to enter a date?
+</summary>
+String formatted as ISO8601 date: YYYY-MM-DD
+</details>
+<br>
+<!--
+## ARCitect
 
-**A:**  
-
-**Q:**  Which format must be used to enter a date?
-
-**A:**  String formatted as ISO8601 date
-YYYY-MM-DD
-
-ISA-Spec
-
-**Q:**  Is it necessary to fill in the empty fields in the investigation-file manually? 
-
-**A:** Eigentlich muss man da gar nichts amchen, aber wenn man will kann man, aber generell gilt: Was nicht passt, einfach frei lassen
-
-**Q:**  How to separate multiple entries per row? 
-
-**A:**  
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Question
+</summary>
+Answer
+</details>
 
 ## DataHUB
 
-**Q:**  
-
-
-**A:**  
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Question
+</summary>
+Answer
+</details>
 
 ## DataPLAN
 
-**Q:**  
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Question
+</summary>
+Answer
+</details>
 
+<!--Other Design-version
 
-**A:**  
+**Q:**  Which format must be used to enter a date?
 
+**A:**  String formatted as ISO8601 date: YYYY-MM-DD

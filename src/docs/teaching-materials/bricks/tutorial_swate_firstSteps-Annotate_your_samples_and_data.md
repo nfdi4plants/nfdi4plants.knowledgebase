@@ -19,6 +19,8 @@ title: tutorial_swate_firstSteps-Annotate_your_samples_and_data
 
 ![bg right w:450](../../img/swate_ontologyTermSearch2.png)
 
+--- 
+
 # Annotate your samples and data <!--fit-->
 
 - If term-directed search is disabled, Swate still suggests ontology terms, but without relation to the column header.
