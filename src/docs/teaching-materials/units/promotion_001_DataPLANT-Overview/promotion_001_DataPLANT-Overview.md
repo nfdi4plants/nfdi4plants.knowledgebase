@@ -1,33 +1,24 @@
 ---
-# Slide-related yaml
 marp: true
 theme: dataplant_marp-theme-CMR
 paginate: true
-headingDivider: 
-  - 1
-  - 2
-footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../../img/_logos/CreativeCommons/by.svg"> </a>'
-style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
+footer: ' <a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a>
+  <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../../img/_logos/CreativeCommons/by.svg">
+  </a> '
+style: ' footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height:
+  30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity:
+  0.5;} '
 layout: slides
-title: "DataPLANT Overview"
-contributor_name: Cristina Martins Rodrigues  
-contributor_orcid: https://orcid.org/0000-0002-4849-1537  
-contributor_github: CMR248
-images_used:
-citation:  
-license: "[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)"  
-description: General overview of DataPLANT for promotional needs.  
-keywords:
-comments:  
-date: 2023-03-24 
+title: promotion_001_DataPLANT-Overview
+author: Cristina Martins Rodrigues
+author_orcid: https://orcid.org/0000-0002-4849-1537
+author_github: CMR248
+license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+description: General overview of DataPLANT for promotional needs.
+date: 2023-03-24
 status: ready
-learning outcomes:
-skills:
-abilities:
-requirements:
-required resources:
 teaching mode:
-  - inhale/listen
+- inhale/listen
 duration_minutes: 3
 ---
 
@@ -44,11 +35,11 @@ duration_minutes: 3
 ###
 ![](../../../img/DataPLANT-Background-Pictograms.png)
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/DataPLANT-Intro.md -->
-<!-- ################# -->
 
+
+---
 
 # Going FAIR requires energy investment
 <!-- _class: split -->
@@ -58,11 +49,11 @@ duration_minutes: 3
 ![w:700](../../../img/FAIRData_ActivationEnergy.svg)
 </div>
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/Going-FAIR-requires-energy-investment.md -->
-<!-- ################# -->
 
+
+---
 
 # DataPLANT as an enzyme
 <h1>
@@ -77,11 +68,11 @@ lowering the activation energy.
 
 ![w:600](../../../img/FAIRData_ActivationEnergy_withDataPLANT.svg)
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/DataPLANT-as-an-enzyme.md -->
-<!-- ################# -->
 
+
+---
 
 # Annotated Research Context (ARC)
 <h1>
@@ -97,11 +88,11 @@ a FAIR digital object implementation of DataPLANT
 ![w:320](../../../img/DataPLANT_BigPicture_seq1-mid.png)
 </div>
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_a-fdo-implementation-of-dataplant.md -->
-<!-- ################# -->
 
+
+---
 
 # Tools and Services
 <h1>
@@ -112,11 +103,11 @@ provide support in being FAIR
 
 ![bg w:1200](../../../img/Tools-and-Services_DataPLANT.png)
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/DataPLANT_Tools-and-Services.md -->
-<!-- ################# -->
 
+
+---
 
 # Let´s be FAIR together
 <h1>
@@ -155,8 +146,5 @@ https://www.nfdi4plants.org/
 ![](../../../img/_qr-codes/QR_DataPLANT_Linktree.svg)
 </div>
 
-<!-- ################# -->
 <!-- Source to slide(s) -->
 <!-- ../../bricks/DataPLANT-Links.md -->
-<!-- ################# -->
-

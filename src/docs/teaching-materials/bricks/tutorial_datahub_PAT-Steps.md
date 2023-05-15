@@ -21,6 +21,8 @@ title: tutorial_datahub_PAT-Steps
 
 ![bg right w:600](../../img/datahub_accessToken.png)
 
+--- 
+
 # Steps
 
 4. Click "Create personal access token"

@@ -31,10 +31,9 @@
 # DataPLAN:/docs/implementation/DataPLAN.html
 ```
 
-<!-- ```FAQs
+```FAQs
 # Frequently Asked Questions:/docs/faqs/faqs.html
-``` -->
-
+```
 
 ```Teaching Materials
 # Teaching Materials:docs/teaching-materials/index.html
