@@ -3,22 +3,16 @@ marp: true
 theme: dataplant_marp-theme
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-footer: ' <a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a>
-  <a href="https://ceplas.eu"> <img id="footer-img2" src="../../../img/_logos/CEPLAS/CEPLAS_Icon.jpeg"></a><a
-  href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img3" src="../../../img/_logos/CreativeCommons/by.svg"></a> '
-style: 'footer {height: 30px;padding: 10px;bottom: 00px;} #footer-img1 {height: 30px;padding-left:
-  0px;} #footer-img2 {height: 30px;padding-left: 20px;opacity: 0.5;} #footer-img3
-  {height: 20px;padding-left: 20px;opacity: 0.5;}'
-title: First steps towards your ARC
-author: Dominik Brilhaus
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
+footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://ceplas.eu"> <img id="footer-img2" src="../../../img/_logos/CEPLAS/CEPLAS_Icon.jpeg"></a><a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img3" src="../../../img/_logos/CreativeCommons/by.svg"></a>'
+style: 'footer {height: 30px;padding: 10px;bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 30px; padding-left: 20px;opacity: 0.5;}  #footer-img3 {height: 20px;padding-left: 20px; opacity: 0.5;}'
+title: "First steps towards your ARC"
+contributor_name: "Dominik Brilhaus"
+contributor_orcid: https://orcid.org/0000-0001-9021-3197
+contributor_github: brilator
 date: 2023-02-02
 ---
 
 <!-- 
-
----
 
 ## Tutor prep:
 
@@ -40,9 +34,6 @@ date: 2023-02-02
 
 # First steps towards your ARC
 
-Dominik Brilhaus - May 10, 2023
-
-
 ---
 
 ## You just received your data
@@ -57,9 +48,10 @@ Dominik Brilhaus - May 10, 2023
 - Annotate, and
 - Share **your experimental data**.
 
-<!-- 
 ---
 
+
+<!-- 
 ## Tools and software
 
 📂 Explorer or Finder on your local computer
@@ -71,13 +63,12 @@ Dominik Brilhaus - May 10, 2023
 👩‍💻 "Terminal" or "command prompt" on your local computer 
 -->
 
----
-
 ## Structure your data
 
 ![width:800](../../../img/ARC_fillWithData_experimental.png)
 
 ---
+
 
 ## Annotate your data
 
@@ -103,6 +94,7 @@ object-position: 50% 60%;
 
 ---
 
+
 ## Collaborate and share
 
 <style scoped>
@@ -118,6 +110,7 @@ object-position: 50% 30%;
 
 
 ![](../../../img/ARC_DataSharing_Experts02_img1.png)
+
 
 ---
 
@@ -135,13 +128,12 @@ arc sync -f -r https://git.nfdi4plants.org/brilator/demo-arc
 
 ---
 
+
 ## Invite collaborators to your ARC
 
 https://git.nfdi4plants.org/brilator/demo-arc
 
 <!-- 
----
-
 ## Check your progress at the DataHUB
 
 - Open your ARC at https://git.nfdi4plants.org/brilator/demo-arc/ and click the `commits` link below the project avatar
@@ -150,6 +142,7 @@ https://git.nfdi4plants.org/brilator/demo-arc
 -->
 
 ---
+
 
 ## Using the ARC Commander to setup an ARC
 
@@ -176,12 +169,14 @@ arc a add -s talinum_drought -a metabolomics
 
 ---
 
+
 ## Your ARC is ready
 
 ![bg 80% right:75%](../../../img/demo_data_screenshot.png)
 ![bg 80%](../../../img/demo_arc_screenshot.png)
 
 ---
+
 
 ## Your ARC is ready
 
@@ -205,9 +200,7 @@ section p br {
 ![bg right width:400](../../../img/demo_arc_screenshot.png)
 
 
-<!-- ---
-
-## Outlook
+<!-- ## Outlook
 
 1. Data analysis: add workflows and runs (scripts + external data)
 2. Iterative and reproducible data analysis: add runs (CWL)
