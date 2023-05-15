@@ -11,5 +11,5 @@ You can bring data of your current research, which
 
 Especially in the beginning phase, it might make sense to package an already published dataset.
 
-
-To showcase your ARC in your group, 
+- to showcase your ARC in your group
+- to easily get our help on your data
