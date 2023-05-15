@@ -445,11 +445,12 @@ Björn Usadel, Andrea Schrader, Hajira Jabeen (until 2021)
 Kaiserslautern: Timo Mühlhaus, Christoph Garth
 - Kevin Frey, Lukas Weil, Oliver Maus, Kevin Schneider  
 (`ARC Commander`, `Swate`)
-- Cristina Martins Rodrigues, Martin Kuhl (`Knowledge Base`)
+- Martin Kuhl (`Knowledge Base`)
 - Jonas Lukasczyk (`ARCitect`)
 
 Freiburg: Dirk von Suchodeletz
 - Jonathan Bauer, Marcel Tschöpe (`DataHUB`, `Swobup`)
+- Cristina Martins Rodrigues (`Knowledge Base`)
 
 ![bg right:40% w:550](custom/img/hackathon_group.png)
 
