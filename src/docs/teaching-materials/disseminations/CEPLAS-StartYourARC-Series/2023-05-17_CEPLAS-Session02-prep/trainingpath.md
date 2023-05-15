@@ -5,17 +5,24 @@ paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://ceplas.eu"> <img id="footer-img2" src="../../../../img/_logos/CEPLAS/CEPLAS_Icon.jpeg"></a><a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img3" src="../../../../img/_logos/CreativeCommons/by.svg"></a>'
 style: 'footer {height: 30px;padding: 10px;bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 30px; padding-left: 20px;opacity: 0.5;}  #footer-img3 {height: 20px;padding-left: 20px; opacity: 0.5;}'
-title: Start-Your-ARC Workshop Series - Session 01
+title: Start-Your-ARC Workshop Series - Session 02
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
 ---
 
-../custom/bricks/ceplas-title.md
-../custom/bricks/ceplas-dataplant-collab.md
-../../../units/lesson_022_ARC_structure_DataPLANT/lesson_022_ARC_structure_DataPLANT.md
-../../../units/lesson_030_BigPicture_ARC_DataPLANT/lesson_030_BigPicture_ARC_DataPLANT.md
-../../../units/promotion_arc-demo/promotion_arc-demo.md
+../custom/bricks/ceplas-title-02.md
+../../../bricks/checklist_ARC_hands-on.md
+../../../bricks/datahub_registration.md
+../custom/bricks/ceplas-datahub-registration.md
+../../../bricks/datahub_registration_role.md
+
+../../../bricks/tutorial_IntroCLI-The_command_line.md
+
+<!-- ../../../bricks/tutorial_007_git_installation.md -->
+../../../units/tutorial_git_config/tutorial_git_config.md
+../../../units/tutorial_arc_installation/tutorial_arc_installation.md
 ../custom/bricks/links-resources.md
-../custom/bricks/acknowledgements.md
-../../bricks/feedback_002_FiveFinger.md
+
+
+
