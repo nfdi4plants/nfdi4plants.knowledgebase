@@ -34,6 +34,16 @@ a two-day adventure to get your lab into the ARC universe
 - Data ingest
 - Only the first few steps into ARCs
 
+
+<!--  TODO -->
+
+Draw image: lift project over the line: below / above : with / without ARC.
+Above line => Autobahn / Rocket / project liftin off (into a good future)
+
+Starting point
+
+
+
 ## The Rules
 
 You do not talk about **ARC Club**
