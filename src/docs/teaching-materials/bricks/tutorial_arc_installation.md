@@ -18,10 +18,12 @@ title: tutorial_arc_installation
 
 # ARC Commander Installation
 
-Please install the latest version of the ARC Commander for your operating system according to [these instructions](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/index.html).
+Please install the latest version of the ARC Commander and dependencies for your operating system according to the [manual's setup instructions](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/index.html).
 
 Check if the ARC Commander is functional by displaying the ARC Commander version and help menu:
 
 ```bash
 arc --version
 ```
+
+![bg right:30% width:300](../../img/arc-manual-setup.png)

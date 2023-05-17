@@ -17,9 +17,9 @@ title: CEPLAS title
 
 ![bg fit](../img/background_title_ceplas.drawio.svg)
 
-**Preparation for** Session 02 - "Build your ARC"
+**Preparation for** Session 02 &ndash; "Build your ARC"
 (May 31st, 2023)
 
 <br>
 
-Dominik Brilhaus - CEPLAS Data Science
+Dominik Brilhaus &ndash; CEPLAS Data Science

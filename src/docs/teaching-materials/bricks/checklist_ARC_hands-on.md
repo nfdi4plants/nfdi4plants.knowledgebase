@@ -21,8 +21,7 @@ ul{
 
 :bulb: Please follow the next slides to register with DataPLANT and install some helper tools on your computer
 
-- Find your terminal :white_check_mark:
-- Register at DataPLANT :white_check_mark:
-- Install and configure git on your computer :white_check_mark:
-- Install ARC Commander on your computer :white_check_mark:
-- Install ARCitect on your computer :white_check_mark:
+- :white_check_mark: Register at DataPLANT 
+- :white_check_mark: Find your terminal 
+- :white_check_mark: Install ARC Commander and dependencies on your computer
+<!-- - Install ARCitect on your computer :white_check_mark: -->

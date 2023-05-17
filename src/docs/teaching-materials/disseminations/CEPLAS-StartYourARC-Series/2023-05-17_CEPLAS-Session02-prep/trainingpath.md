@@ -15,14 +15,7 @@ author_github: brilator
 ../../../bricks/checklist_ARC_hands-on.md
 ../../../bricks/datahub_registration.md
 ../custom/bricks/ceplas-datahub-registration.md
-../../../bricks/datahub_registration_role.md
-
 ../../../bricks/tutorial_IntroCLI-The_command_line.md
-
-<!-- ../../../bricks/tutorial_007_git_installation.md -->
-../../../units/tutorial_git_config/tutorial_git_config.md
-../../../units/tutorial_arc_installation/tutorial_arc_installation.md
+../../../bricks/tutorial_arc_installation.md
+../../../bricks/arc-hands-on-byod.md
 ../custom/bricks/links-resources.md
-
-
-

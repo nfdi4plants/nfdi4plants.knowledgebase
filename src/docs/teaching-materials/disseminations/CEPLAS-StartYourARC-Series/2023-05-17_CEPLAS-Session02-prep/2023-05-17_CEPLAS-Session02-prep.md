@@ -21,12 +21,12 @@ author_github: brilator
 
 ![bg fit](../custom/img/background_title_ceplas.drawio.svg)
 
-**Preparation for** Session 02 - "Build your ARC"
+**Preparation for** Session 02 &ndash; "Build your ARC"
 (May 31st, 2023)
 
 <br>
 
-Dominik Brilhaus - CEPLAS Data Science
+Dominik Brilhaus &ndash; CEPLAS Data Science
 
 <!-- Source to slide(s) -->
 <!-- ../custom/bricks/ceplas-title-02.md -->
@@ -46,11 +46,11 @@ ul{
 
 :bulb: Please follow the next slides to register with DataPLANT and install some helper tools on your computer
 
-- Find your terminal :white_check_mark:
-- Register at DataPLANT :white_check_mark:
-- Install and configure git on your computer :white_check_mark:
-- Install ARC Commander on your computer :white_check_mark:
-- Install ARCitect on your computer :white_check_mark:
+- :white_check_mark: Register at DataPLANT
+- :white_check_mark: Find your terminal
+- :white_check_mark: Install ARC Commander and dependencies on your computer
+<!-- - Install ARCitect on your computer :white_check_mark: -->
+
 <!-- Source to slide(s) -->
 <!-- ../../../bricks/checklist_ARC_hands-on.md -->
 
@@ -73,42 +73,10 @@ If you do not have a DataPLANT account, please register at the [DataPLANT websit
 
 Please add your `Project/consortium` (e.g. CEPLAS, SFB, TRR) and choose the role `Guest`
 
-![bg right:40% fit](../custom/img/dataplant_registration_roles.png)
+![bg right:40% fit](../../../../img/dataplant_registration_roles.png)
 
 <!-- Source to slide(s) -->
 <!-- ../custom/bricks/ceplas-datahub-registration.md -->
-
-
----
-
-# DataPLANT Roles
-
-<style scoped>
-section {
-  font-size: 25px;
-}
-ul {
-    margin: 0; padding: 1;
-}
-</style>
-
-During the registration you can "Choose your role in DataPLANT"
-
-- DataSteward
-  - Member of / associated to DataPLANT
-  - Teaches DataPLANT tools and services to community members
-- Developer
-  - Member of / associated to DataPLANT
-  - Develops DataPLANT tools and services
-- Member
-  - Other member of DataPLANT
-- Guest
-  - Guest users who want to use the DataPLANT tools and services
-
-![bg right:35% fit](../../../../img/dataplant_registration_roles.png)
-
-<!-- Source to slide(s) -->
-<!-- ../../../bricks/datahub_registration_role.md -->
 
 
 ---
@@ -129,87 +97,9 @@ Find the **command-line interface (CLI)** on your system.
 
 ---
 
-<!-- Source to slide(s) -->
-<!-- <!-- ../../../bricks/tutorial_007_git_installation.md --> -->
-
-
----
-
-# Configuration of Git
-
-<!-- Source to slide(s) -->
-<!-- ../../bricks/tutorial_git_config-title.md -->
-
-
----
-
-# Checkpoint
-
-Check the git user configuration on your system, by executing
-
-```bash
-git config --global --get-regexp user
-```
-
-This should prompt two lines
-`user.name <Your Name>`
-`user.email <Your Email>`
-
-> Configuration needs to be done only once after installation of git on your system.
-
-<!-- Source to slide(s) -->
-<!-- ../../bricks/tutorial_git_config-Checkpoint.md -->
-
-
----
-
-# Git configuration: Global
-
-Set the git configuration globally (for your system):
-
-1. Your name
-
-```bash
-git config --global user.name <Your Name>
-```
-
-2. Your email address
-
-```bash
-git config --global user.email <Your Email>
-```
-
-3. Check it
-
-```bash
-git config --global --get-regexp user
-```
-
-<!-- Source to slide(s) -->
-<!-- ../../bricks/tutorial_git_config-Global.md -->
-
-<!-- Source to slide(s) -->
-<!-- ../../../units/tutorial_git_config/tutorial_git_config.md -->
-
-
----
-
-# ARC Commander
-
-DataPLANT provides the ARC Commander command line tool to create, manage and share your ARCs.
-
-
-![bg right w:500](../../../../img/_logos/ARCCommander/ARCCommander_Logo1.svg)
-
-<!-- Source to slide(s) -->
-<!-- ../../bricks/tutorial_arc_title.md -->
-
-
----
-
 # ARC Commander Installation
 
-Please install the latest version of the ARC Commander for your operating system according to [these instructions](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/index.html).
+Please install the latest version of the ARC Commander and dependencies for your operating system according to the [manual's setup instructions](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/index.html).
 
 Check if the ARC Commander is functional by displaying the ARC Commander version and help menu:
 
@@ -217,18 +107,30 @@ Check if the ARC Commander is functional by displaying the ARC Commander version
 arc --version
 ```
 
-<!-- Source to slide(s) -->
-<!-- ../../bricks/tutorial_arc_installation.md -->
+![bg right:30% width:300](../../../../img/arc-manual-setup.png)
 
 <!-- Source to slide(s) -->
-<!-- ../../../units/tutorial_arc_installation/tutorial_arc_installation.md -->
+<!-- ../../../bricks/tutorial_arc_installation.md -->
+
+
+---
+
+# Hands-on: Bring your own data
+
+In the hands-on session, we would like to start creating an ARC together.
+To do so, please bring some data!
+
+This can be data of your current research project or an already published manuscript with supplemental data. Anything that you feel familiar with.
+
+<!-- Source to slide(s) -->
+<!-- ../../../bricks/arc-hands-on-byod.md -->
 
 
 ---
 
 # Resources
 
-### <img align="left" height=35px src='../img/CEPLAS_Icon.jpeg'/> CEPLAS Data Science
+### <img align="left" height=35px src='../custom/img/CEPLAS_Icon.jpeg'/> CEPLAS Data Science
 
 > Website: https://www.ceplas.eu/en/research/data-science-and-data-management/
 
