@@ -4,7 +4,7 @@ title: "Configure a Git User"
 published: 2022-12-20
 add toc: false
 add support: false
-add sidebar: _sidebars/arcCommanderManualSidebar.md
+add sidebar: _sidebars/mainSidebar.md
 ---
 
 `Git` always signs commits with a `name` and `e-mail` address of the user. These are then also used by `GitLab` and `GitHub` to associate the commits to user accounts.

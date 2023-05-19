@@ -52,33 +52,51 @@ The following instructions allow you to test and see how your changes come into 
 It's highly recommended to *frequently* check your changes locally.
 Please **do not** produce and submit a lot of content without prior local testing.
 
-### install
+### Setup
+
+This needs to be done only once after downloading.
 
 1. Download the repo.
 2. Run `dotnet tool restore` in root directory.
 3. Run `dotnet paket install` in root directory.
+4. Run `npm install` in root directory.
 
-### run
+### Run
 
-1. Run `dotnet fornax watch` in `\src` folder.
+1. Run `npm run fornax`.
 2. Open page in browser [http://127.0.0.1:8080/](http://127.0.0.1:8080/).
 
-### update web-components
+### Routines
 
-Check out the installation docs on [nfdi4plants/web-components](https://github.com/nfdi4plants/web-components#installation). For fornax you will need to bundle the web-components with rollup. See the respective section for more information.
+#### Update Dependencies
+
+This will update the npm package [`nfdi4plants/web-components`](https://github.com/nfdi4plants/web-components) to latest, as well as update the nuget dependency [`Nfdi4Plants.Fornax`](https://github.com/nfdi4plants/Nfdi4Plants.Fornax/tree/main) to latest. Then it will bundle all npm (javascript) dependencies to a single bundle.js file with rollup.
 
 ```bash
-npm install @nfdi4plants/web-components@latest
+npm run updatecomponents
 ```
 
-### update Nfdi4Plants.Fornax
+#### Bundle Npm Dependencies
 
+This is part of the execution chain of `npm run updatecomponents`
+
+```bash
+npm run bundle
 ```
-dotnet paket update Nfdi4Plants.Fornax
+
+#### Update Searchbar Index
+
+Index created html files. Creates `src/_public/pagefind` folder. **MUST** be used after running `npm run fornax` at least once. Otherwise there will be no `.html` files to index.
+
+```bash
+npm run index
 ```
 
-_Load script will be generated automatically and is referenced in `src\loaders\docsloader.fsx`._
+Same as `npm run index` but starts local server to test searchbar. Currently the only way to test searchbar locally, **but will not** allow to track changes in markdown files like `npm run fornax` does (If you want to combine both a PR would be more than welcome). 
 
+```bash
+npm run indexserve
+```
 
 ## Common Errors
 
@@ -91,79 +109,7 @@ _Load script will be generated automatically and is referenced in `src\loaders\d
 
 ## Authoring Content
 
-### Docs-Page
-
-To add more documentation, add a markdown file to `/src/docs`. The file MUST start with a metadata block:
-
-<!--used yml here as code language for nice color syntax-->
-```yml
----
-layout: docs
-title: Metadata
-published: 2022-05-09
-author: Dominik Brilhaus
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
-add toc: true # or false
-add support: true # or false
-add sidebar: _sidebars/mainSidebar.md
-article_status: published
-todo:
-    - update to include changes in latest tool version
----
-```
-
-- All keys (`layout`, `author`, etc.) are **not** case sensitive.
-- All fields can be at ANY position.
-- MUST start and end with `---` .
-- MUST contain `layout: docs`.
-  - This triggers fornax parsing to html.
-- MUST contain `title: xxxx`.
-  - Will be added as "# xxxx" to the html.
-  - Will be used to name the generated webpage.
-- MUST contain `published: yyyy-MM-dd`.
-- MAY contain `author: xxxx`.
-- MAY contain `author_github: xxxx`.
-  - This helps authoring and reviewing content. 
-- MAY contain `add toc: true`.
-  - Will add automated table of contents from all found headers in content.
-- MAY contain `add sidebar: realtive\path\to\sidebar.md` to add the sidebar element to the page.
-- MAY contain `add support: true`.
-  - Will add a standard "DataPLANT Support" paragraph (incl. link to email and helpdesk) to the bottom
-- MAY contain **any** other metadata. The information will be read but will not affect the generated html.
-
-### Sidebar
-
-Sidebar files MUST be in any **subdirectory** of `/src/docs/_sidebars`. Sidebar markdown files must start with a metadata block:
-
-```yml
----
-published: 2022-05-09
-article_status: published
----
-```
-
-- MAY contain **any** other metadata. The information will be read but will not affect the generated html.
-
-To add a sidebar element to the page, use the codeblock syntax:
-
-- All text after the opening "```" will be parsed to the element title.
-- Inner text MUST only contain heading lines.
-- Only headers up to the third level (`###`) are parsed. All headers with more depth are parsed to the third level (`###`).
-- Tries to match active browser url to referenced ``href`` of any element to set active page.
-
-**Example:**
-
-<pre><code>```Implementation within DataPLANT
-# Annotated Research Context:/docs/implementation/AnnotatedResearchContext.html
-## User Journey:/docs/implementation/QuickStart_arc.html
-### Cheat sheet:/docs/implementation/QuickStart_arc.html#cheat-sheet
-```</code></pre>
-
-A hash within the hyperlink defines an element id to which the window will be scrolled.
-Here, "#cheat-sheet" in the second element points directly to the specific headline 
-"Cheat sheet" in the rendered document "QuickStart_arc.html" which originates 
-from "QuickStart_arc.md" located in the directory "/docs/implementation". 
+Read more in the fornax section of the nfdi4plants web components docs [here](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax)
 
 ## Markdown to HTML Rendering Rules
 

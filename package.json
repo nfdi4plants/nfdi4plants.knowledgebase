@@ -6,6 +6,15 @@
     "type": "git",
     "url": "git+https://github.com/Freymaurer/nfdi4plants-fornax-template.git"
   },
+  "scripts": {
+    "bundle": "rollup --config rollup.config.js",
+    "preupdatecomponents": "dotnet paket update Nfdi4Plants.Fornax",
+    "updatecomponents": "npm install @nfdi4plants/web-components@latest",
+    "postupdatecomponents": "npm run bundle",
+    "index": "npx -y pagefind --source ./src/_public --bundle-dir pagefind",
+    "indexserve": "npx -y pagefind --source ./src/_public --bundle-dir pagefind --serve",
+    "fornax": "cd ./src && dotnet fornax watch"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {

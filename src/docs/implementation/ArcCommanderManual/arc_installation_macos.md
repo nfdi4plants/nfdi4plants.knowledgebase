@@ -4,7 +4,7 @@ title: "Installing the ARC Commander - MacOS"
 published: 2022-12-20
 add toc: false
 add support: false
-add sidebar: _sidebars/arcCommanderManualSidebar.md
+add sidebar: _sidebars/mainSidebar.md
 ---
 
 1. Open a Terminal (Applications -> Utilities -> Terminal)

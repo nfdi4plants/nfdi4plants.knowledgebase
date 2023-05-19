@@ -26,9 +26,9 @@ let loader (projectRoot: string) (siteContent: SiteContents) =
     let docs = 
         let loadDocs (filePath:string) = 
             #if WATCH
-            Nfdi4Plants.Docs.loadFile(projectRoot, contentDir, filePath)
+            Nfdi4Plants.Docs.loadFile(projectRoot, contentDir, filePath, includeSearchbar = true, useNewSidebar = true)
             #else
-            Nfdi4Plants.Docs.loadFile(projectRoot, contentDir, filePath, productionBasePath = "nfdi4plants.knowledgebase")
+            Nfdi4Plants.Docs.loadFile(projectRoot, contentDir, filePath, includeSearchbar = true, useNewSidebar = true, productionBasePath = "nfdi4plants.knowledgebase")
             #endif
         files 
         |> Array.map loadDocs

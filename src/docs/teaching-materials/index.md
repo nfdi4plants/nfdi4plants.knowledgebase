@@ -4,7 +4,7 @@ title: Teaching Materials
 published: 2023-05-09
 add toc: false
 add support: false
-add sidebar: _sidebars/teachingMaterialsSidebar.md
+add sidebar: _sidebars/mainSidebar.md
 ---
 
 Welcome to the DataPLANT Teaching Materials

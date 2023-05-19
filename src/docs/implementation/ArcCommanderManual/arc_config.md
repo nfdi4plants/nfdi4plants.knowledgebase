@@ -4,7 +4,7 @@ title: "Configure a git user locally for each ARC"
 published: 2022-12-20
 add toc: true
 add support: false
-add sidebar: _sidebars/arcCommanderManualSidebar.md
+add sidebar: _sidebars/mainSidebar.md
 ---
 
 <!-- ### 
