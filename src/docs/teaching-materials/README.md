@@ -4,8 +4,12 @@ title: Teaching Materials
 published: 2022-12-14
 ---
 
-:bulb: mostly copied here from https://github.com/nfdi4plants/teaching_materials
-
+:bulb: mostly copied here from https://github.com/nfdi4plants/teaching_materials  
+Main contributors are:
+- [Andrea Schrader](https://orcid.org/0000-0002-3879-7057) ([andreaschrader](https://github.com/andreaschrader))
+- [Cristina Martins Rodrigues](https://orcid.org/0000-0002-4849-1537) ([CMR248](https://github.com/CMR248))
+- [Dominik Brilhaus](https://orcid.org/0000-0001-9021-3197) ([Brilator](https://github.com/Brilator))
+- [Martin Kuhl](https://orcid.org/0000-0002-8493-1077) ([Martin-Kuhl](https://github.com/Martin-Kuhl))
 
 ## Moving contents from teaching materials to here (recommendations)
 
