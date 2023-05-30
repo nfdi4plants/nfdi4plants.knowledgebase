@@ -93,7 +93,8 @@ For this workshop, create a new folder somewhere on your machine where you want 
 
 # Your fresh ARC folder
 
-1. Create and navigate to a local folder, which you want to initialize as an ARC. Open the command line inside the folder.
+1. Create and navigate to a local folder, which you want to initialize as an ARC.
+2. Open the command line inside the folder / Navigate via command line to that folder.
 
 
 
@@ -105,10 +106,22 @@ Initialize your ARC by executing
 arc init
 ```
 
+# Upload your local ARC to the DataHUB
+
+In order to connect your local ARC with a remote ARC, you can specify the remote address with the flag `-r` followed by the URL of the remote ARC
+
+```bash
+arc sync -r https://git.nfdi4plants.org/<UserName>/<ARC>
+```
+# Successful ARC synchronization
+
+Check if the upload was successful by visiting your ARC at the respective URL in your browser.
+
+![w:800](../../../../img/datahub_repository.png)
 
 # Part 2: Tic-Tac-Toe
 
-## Participant 1 &ndash; `o`
+## Player 1 &ndash; `o`
 
 <style scoped>
 section{
@@ -126,24 +139,24 @@ ol {
 2. 💻 Add a **README.md** with the playground:
 
 ```md
-       |  | 
-     --+--+--
-       |  | 
-     --+--+--
-       |  | 
+       |   | 
+     --+---+--
+       |   | 
+     --+---+--
+       |   | 
 ```
 
 </div>
 
 <div class="columns-right">
 
-3. 💻 Sync the ARC to the hub
+3. 💻 Sync the ARC to the DataHUB
 
-`arc sync -r https://git.nfdi4plants.org/<Participant1>/<ARC>`
+`arc sync -r https://git.nfdi4plants.org/<Player1>/<ARC>`
 
-4. 🌐 Invite participant 2
+4. 🌐 Invite player 2
 
-## Participant 2 &ndash; `x`
+## Player 2 &ndash; `x`
 
 <style scoped>
 section{
@@ -154,12 +167,53 @@ ol {
 }
 </style>
 
-1. 💻 Get the ARC
+1. 💻 "Clone" the ARC
 
-`arc get -r https://git.nfdi4plants.org/<Participant1>/<ARC>`
+`arc get -r https://git.nfdi4plants.org/<Player1>/<ARC>`
 
-3. add a `x`
+2. add your `x` to the playground (**README.md**)
 
-</div>
+```md
+     x |   | 
+     --+---+--
+       |   | 
+     --+---+--
+       |   | 
+```
+
+3. 💻 Sync the ARC back to the DataHUB
+
+`arc sync -m <move Player 1>`
+
+
+## Player 1 &ndash; `o`
+
+1. 💻 "Update" the ARC
+
+`arc sync`
+
+
+2. add your `o` to the playground (**README.md**)
+
+```md
+     x |   | 
+     --+---+--
+       | o | 
+     --+---+--
+       |   | 
+```
+
+3. 💻 Sync the ARC back to the DataHUB
+
+`arc sync -m <move Player 2>`
+
+
+## Keep playing
+
+1. `arc sync`
+2. Make your move
+3. `arc sync -m <move player ..>`
+
+
 
 ## Part 2:
