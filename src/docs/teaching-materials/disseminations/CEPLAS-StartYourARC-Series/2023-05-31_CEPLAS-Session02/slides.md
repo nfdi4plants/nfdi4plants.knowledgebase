@@ -87,21 +87,6 @@ git config --global --get-regexp user
 :bulb: If this does not display your user name and email, you need to [configure git](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/git_config.html).
 
 
-## DataHUB Login
-
-Participant's user names:
-
-- chandar
-- einar.haraldsson
-- lea.wirth
-- marjorie.guichard
-- philipp.westhoff
-- sabrina.zander
-- tianyu.lan
-- usman.anwer
-
-:bulb: If your user name is not on this list, please tell me now.
-
 ## Have a simple text editor ready
 
 - Windows Notepad
@@ -127,7 +112,7 @@ git clone "https://demo-arc:x7ddrotJpzd5Rgfxx9d5@git.nfdi4plants.org/teaching/de
 ```
 
 
-# Part 1: Demo data
+# Part 1: Hands-on with demo data
 
 
 # Your fresh ARC folder
