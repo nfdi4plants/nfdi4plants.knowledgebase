@@ -43,10 +43,22 @@ Dominik Brilhaus - CEPLAS Data Science
 
 🌐 = Remote (in the DataHUB)  
 
-Info in `<brackets>` are placeholders.
+Info in `<brackets>` are placeholders - please replace with proper info
 
 
-# Part 0: Tech Check
+# Part 0: Check-in
+
+
+## Open the online notepad
+
+https://pad.hhu.de/u44vMavDQLa2e4hvjx1Oyg
+
+
+## Screen-sharing during the workshop
+
+https://hhu.webex.com/hhu-en/j.php?MTID=me5501c7ea1607b9ee3e1edfe401598f3
+
+:bulb: Any windows volunteer?
 
 ## Installation
 
@@ -77,9 +89,28 @@ git config --global --get-regexp user
 
 ## DataHUB Login
 
-https://git.nfdi4plants.org/ceplas/start-your-arc/-/blob/main/README.md
+Participant's user names:
 
-:bulb: If your user name is not on this list, please tell me.
+- chandar
+- einar.haraldsson
+- lea.wirth
+- marjorie.guichard
+- sabrina.zander
+- tianyu.lan
+- usman.anwer
+
+:bulb: If your user name is not on this list, please tell me now.
+
+## Have a simple text editor ready
+
+- Windows Notepad
+- MacOS TextEdit
+
+Recommended text editors with code highlighting:
+
+- Visual Studio Code <https://code.visualstudio.com/>
+- BBEdit <https://www.barebones.com/products/bbedit/>
+- Sublime <https://www.sublimetext.com/>
 
 ## Create a fresh folder for your ARCs
 
@@ -89,14 +120,18 @@ For this workshop, create a new folder somewhere on your machine where you want 
 - `~/Desktop/workshop-arcs` (mac)
 
 
-# Part 1: Create and sync a first ARC
+# Part 1: Create and sync your first ARC
 
 # Your fresh ARC folder
 
-1. Create and navigate to a local folder, which you want to initialize as an ARC.
-2. Open the command line inside the folder / Navigate via command line to that folder.
+1. 💻 Create a new folder, which you want to initialize as an ARC.
+2. 💻 Open the command line inside the folder or navigate via command line to that folder.
 
-
+For example:
+```bash
+mkdir -p ~/Desktop/workshop-arcs/arc01
+cd ~/Desktop/workshop-arcs/arc01
+```
 
 # ARC initialization
 
@@ -111,14 +146,14 @@ arc init
 In order to connect your local ARC with a remote ARC, you can specify the remote address with the flag `-r` followed by the URL of the remote ARC
 
 ```bash
-arc sync -r https://git.nfdi4plants.org/<UserName>/<ARC>
+arc sync -r https://git.nfdi4plants.org/<username>/arc01
 ```
 # Successful ARC synchronization
 
 Check if the upload was successful by visiting your ARC at the respective URL in your browser.
 
 ![w:800](../../../../img/datahub_repository.png)
-
+<!-- 
 # Part 2: Tic-Tac-Toe
 
 ## Player 1 &ndash; `o`
@@ -183,7 +218,7 @@ ol {
 
 3. 💻 Sync the ARC back to the DataHUB
 
-`arc sync -m <move Player 1>`
+`arc sync -m "move Player 2"`
 
 
 ## Player 1 &ndash; `o`
@@ -205,15 +240,78 @@ ol {
 
 3. 💻 Sync the ARC back to the DataHUB
 
-`arc sync -m <move Player 2>`
+`arc sync -m "move Player 1"`
 
 
 ## Keep playing
 
 1. `arc sync`
 2. Make your move
-3. `arc sync -m <move player ..>`
+3. `arc sync -m "<move player ..>"`
+ -->
+
+
+## Part 2: Adding subfolders for your data
+
+
+## Preparation
+
+Before you can fill your ARC, let's revise your data.
+
+- What is my **investigation**?
+- What is my **study**?
+- Which **assay**(s) did I perform?
+  - What is my (raw) **dataset**?
+  - What **protocol**s did I use?
 
 
 
-## Part 2:
+## ISA investigation
+
+The ISA investigation (`-i`) workbook allows you to record administrative metadata of your project. Add the isa.investigation.xlsx workbook including an identifier to your ARC with
+
+```bash
+arc i create -i <YourInvestigationID>
+```
+:bulb: Avoid using spaces in the identifier. Use underscores and capital letters instead.
+
+## ISA studies and assays
+
+The ISA study (`-s`) and ISA assay (`-a`) workbooks allow you to annotate your experimental data.
+
+## Adding a study
+
+Add an isa.study.xlsx workbook including an identifier to your ARC with
+
+```bash
+arc s add -s <YourStudyID>
+```
+  
+## Adding an assay
+
+Add an isa.assay.xlsx workbook including an identifier to your ARC with
+
+```bash
+arc a add -s <YourStudyID> -a <YourAssayID>
+```
+
+:bulb: An assay must be linked to a study. If a study does not exist, it will be created automatically in this step.
+
+
+## ISA studies and assays
+
+
+The ARC Commander adds subdirectories to the *studies* and *assays* folders. Your ARC should, look similar to this now:  
+
+![bg right w:600](../../../../img/arc_studies_assays.jpg)
+
+These steps can be repeated to add as many studies and assays as needed. Accordingly, more subdirectories will be added
+
+
+## Sync your ARC to the DataHUB
+
+
+
+
+
+3. Place the data for each assay in the respective dataset folder.
