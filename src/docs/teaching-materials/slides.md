@@ -7,10 +7,9 @@ add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-Welcome to the DataPLANT Teaching Materials
+Welcome to the DataPLANT Teaching Materials 
 
 :construction: This site is currently under construction. Links may change.
-
 
 <hr>
 

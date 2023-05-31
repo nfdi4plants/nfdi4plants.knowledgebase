@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Teaching Materials - Videos
-published: 2023-05-30
+published: 2023-05-31
 add toc: false
 add support: false
 add sidebar: _sidebars/mainSidebar.md
@@ -10,7 +10,6 @@ add sidebar: _sidebars/mainSidebar.md
 Welcome to the DataPLANT Teaching Materials
 
 :construction: This site is currently under construction. Links may change.
-
 
 <hr>
 

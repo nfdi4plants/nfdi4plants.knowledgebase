@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: CEPLAS meets ARCs
-published: 2023-05-09
+published: 2023-05-31
 add toc: false
 add support: false
 add sidebar: _sidebars/mainSidebar.md
