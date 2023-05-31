@@ -31,11 +31,11 @@ May 31st, 2023
 
 Dominik Brilhaus - CEPLAS Data Science
 
-# Goals 
+# Goals
 
 - Create your first ARC
 - Add data to your ARC
-- Share the ARC with another participant
+- Share the ARC
 
 # Legend
 
@@ -119,8 +119,15 @@ For this workshop, create a new folder somewhere on your machine where you want 
 - `C:\Users\<username>\Desktop\workshop-arcs` (windows)
 - `~/Desktop/workshop-arcs` (mac)
 
+## Download the demo data
 
-# Part 1: Create and sync your first ARC
+```bash
+git clone "https://demo-arc:x7ddrotJpzd5Rgfxx9d5@git.nfdi4plants.org/teaching/demo-arc_start-data.git"
+```
+
+
+# Part 1: Demo data
+
 
 # Your fresh ARC folder
 
@@ -129,8 +136,101 @@ For this workshop, create a new folder somewhere on your machine where you want 
 
 For example:
 ```bash
-mkdir -p ~/Desktop/workshop-arcs/arc01
-cd ~/Desktop/workshop-arcs/arc01
+mkdir -p ~/Desktop/workshop-arcs/arc-demo
+cd ~/Desktop/workshop-arcs/arc-demo
+```
+
+
+## Initiate the ARC folder structure
+
+```bash
+arc init
+```
+
+## Create an investigation
+
+```bash
+arc i create -i TalinumPhotosynthesis
+```
+
+## Add a study
+
+```bash
+arc s add -s talinum_drought
+```
+  
+## Add assays
+
+```bash
+arc a add -s talinum_drought -a rnaseq
+arc a add -s talinum_drought -a metabolomics
+```
+
+
+# Upload your local ARC to the DataHUB
+
+```bash
+arc sync -r https://git.nfdi4plants.org/<username>/arc-demo
+```
+
+
+## Sort the demo data into the ARC
+
+Identify "raw dataset(s)" and "protocols" and move them to the proper subfolders in the ARC. 
+
+![bg right w:500](../../../../img/demo_data_screenshot.png)
+
+## Invite a collaborator
+
+---
+
+1. Click on **Project Information** in the left navigation panel
+
+![fit w:1050](../../../../img/datahub_members_seq2.png)
+
+---
+
+2. Click on **Members**
+
+![fit w:1050](../../../../img/datahub_members_seq3.png)
+
+---
+
+3. Click on **Invite members**
+
+![fit w:1050](../../../../img/datahub_members_seq4.png)
+
+---
+
+4. Search for potential collaborators
+
+![fit w:1050](../../../../img/datahub_members_seq5.png)
+
+---
+
+5. Select a role 
+
+![fit w:1050](../../../../img/datahub_members_seq6.png)
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/datahub_invite-collaborators.md -->
+
+
+---
+
+
+
+# Part 2: Create your first ARC
+
+# Your fresh ARC folder
+
+1. 💻 Create a new folder, which you want to initialize as an ARC.
+2. 💻 Open the command line inside the folder or navigate via command line to that folder.
+
+For example:
+```bash
+mkdir -p ~/Desktop/workshop-arcs/my-arc
+cd ~/Desktop/workshop-arcs/my-arc
 ```
 
 # ARC initialization
@@ -146,13 +246,175 @@ arc init
 In order to connect your local ARC with a remote ARC, you can specify the remote address with the flag `-r` followed by the URL of the remote ARC
 
 ```bash
-arc sync -r https://git.nfdi4plants.org/<username>/arc01
+arc sync -r https://git.nfdi4plants.org/<username>/my-arc
 ```
 # Successful ARC synchronization
 
 Check if the upload was successful by visiting your ARC at the respective URL in your browser.
 
 ![w:800](../../../../img/datahub_repository.png)
+
+# Part 3: Adding subfolders for your data
+
+## Preparation
+
+Before you can fill your ARC, let's revise your data.
+
+- What is my **investigation**?
+- What is my **study**?
+- Which **assay**(s) did I perform?
+  - What is my (raw) **dataset**?
+  - What **protocol**s did I use?
+
+
+## ISA investigation
+
+The ISA investigation (`-i`) workbook allows you to record administrative metadata of your project. Add the isa.investigation.xlsx workbook including an identifier to your ARC with
+
+```bash
+arc i create -i <YourInvestigationID>
+```
+:bulb: Avoid using spaces in the identifier. Use underscores and capital letters instead.
+
+## ISA studies and assays
+
+The ISA study (`-s`) and ISA assay (`-a`) workbooks allow you to annotate your experimental data.
+
+## Adding a study
+
+Add an isa.study.xlsx workbook including an identifier to your ARC with
+
+```bash
+arc s add -s <YourStudyID>
+```
+  
+## Adding an assay
+
+Add an isa.assay.xlsx workbook including an identifier to your ARC with
+
+```bash
+arc a add -s <YourStudyID> -a <YourAssayID>
+```
+
+:bulb: An assay must be linked to a study. If a study does not exist, it will be created automatically in this step.
+
+
+## ISA studies and assays
+
+
+The ARC Commander adds subdirectories to the *studies* and *assays* folders. Your ARC should, look similar to this now:  
+
+![bg right w:600](../../../../img/arc_studies_assays.jpg)
+
+These steps can be repeated to add as many studies and assays as needed. Accordingly, more subdirectories will be added
+
+
+## Sync your ARC to the DataHUB
+
+To save the changes, sync the ARC to the DataHUB including a message. 
+
+```bash
+arc sync -m "initiate arc structure"
+```
+
+🌐 Check your ARC in the DataHUB.
+
+## Part 4: Start adding your data
+
+Place the dataset and protocols for each assay in the respective folders.
+
+
+
+## Part 4: DataHUB 
+
+
+
+## Invite collaborators
+
+* Unless changed, your ARC is set to private by default. 
+* To collaborate, you can invite lab colleagues or project partners to your ARC by following the steps on the subsequent slides. 
+* To get started [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB and open the ARC you want to share.
+
+---
+
+1. Click on **Project Information** in the left navigation panel
+
+![fit w:1050](../../../../img/datahub_members_seq2.png)
+
+---
+
+2. Click on **Members**
+
+![fit w:1050](../../../../img/datahub_members_seq3.png)
+
+---
+
+3. Click on **Invite members**
+
+![fit w:1050](../../../../img/datahub_members_seq4.png)
+
+---
+
+4. Search for potential collaborators
+
+![fit w:1050](../../../../img/datahub_members_seq5.png)
+
+---
+
+5. Select a role 
+
+![fit w:1050](../../../../img/datahub_members_seq6.png)
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/datahub_invite-collaborators.md -->
+
+
+---
+
+## Choosing the proper role
+
+<u>Guest</u>
+Have the least rights. This is recommended for people you ask for consultancy.
+
+<u>Developers</u> 
+The choice for most people you want to invite to your ARC. Developers have read and write access, but cannot maintain the project on the DataHUB, e.g. inviting others.
+
+<u>Maintainers</u> 
+Gives the person the same rights as you have (except of removing you from your own project). This is recommended for inviting PIs or group leaders allowing them to add their group members for data upload or analysis to the project as well.
+
+*A detailed list of all permissions for the individual roles can be found [here](https://docs.gitlab.com/ee/user/permissions.html)*
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/datahub_choose-collaborator-role.md -->
+
+
+---
+
+## <div align="center">Congratulations!</div>
+<div align="center">You have just shared your ARC with a collaborator.</div>
+
+<style scoped>
+
+section p img {
+width: 1000px;
+height: 300px;
+object-fit: cover;
+object-position: 100% 45%;
+/* display: block; */;
+}
+</style>
+
+![](../../../../img/ARC_Sharing_img1.png)
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/datahub_congrats-for-sharing.md -->
+
+
+
+
+
+
+
 <!-- 
 # Part 2: Tic-Tac-Toe
 
@@ -251,67 +513,3 @@ ol {
  -->
 
 
-## Part 2: Adding subfolders for your data
-
-
-## Preparation
-
-Before you can fill your ARC, let's revise your data.
-
-- What is my **investigation**?
-- What is my **study**?
-- Which **assay**(s) did I perform?
-  - What is my (raw) **dataset**?
-  - What **protocol**s did I use?
-
-
-
-## ISA investigation
-
-The ISA investigation (`-i`) workbook allows you to record administrative metadata of your project. Add the isa.investigation.xlsx workbook including an identifier to your ARC with
-
-```bash
-arc i create -i <YourInvestigationID>
-```
-:bulb: Avoid using spaces in the identifier. Use underscores and capital letters instead.
-
-## ISA studies and assays
-
-The ISA study (`-s`) and ISA assay (`-a`) workbooks allow you to annotate your experimental data.
-
-## Adding a study
-
-Add an isa.study.xlsx workbook including an identifier to your ARC with
-
-```bash
-arc s add -s <YourStudyID>
-```
-  
-## Adding an assay
-
-Add an isa.assay.xlsx workbook including an identifier to your ARC with
-
-```bash
-arc a add -s <YourStudyID> -a <YourAssayID>
-```
-
-:bulb: An assay must be linked to a study. If a study does not exist, it will be created automatically in this step.
-
-
-## ISA studies and assays
-
-
-The ARC Commander adds subdirectories to the *studies* and *assays* folders. Your ARC should, look similar to this now:  
-
-![bg right w:600](../../../../img/arc_studies_assays.jpg)
-
-These steps can be repeated to add as many studies and assays as needed. Accordingly, more subdirectories will be added
-
-
-## Sync your ARC to the DataHUB
-
-
-
-
-
-3. Place the data for each assay in the respective dataset folder.
