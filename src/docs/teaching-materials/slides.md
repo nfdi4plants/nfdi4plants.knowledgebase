@@ -14,7 +14,7 @@ Welcome to the DataPLANT Teaching Materials
 
 <hr>
 
-# DataPLANT Overview
+## DataPLANT Overview
 
 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="../img/_logos/CreativeCommons/by.svg" style="height:15px"></a>  [Cristina Martins Rodrigues](https://orcid.org/0000-0002-4849-1537), [DataPLANT](https://nfdi4plants.org/)
 📆 2023-03-24
@@ -24,7 +24,7 @@ Welcome to the DataPLANT Teaching Materials
 
 <hr>
 
-# DataHUB Concept
+## DataHUB Concept
 
 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="../img/_logos/CreativeCommons/by.svg" style="height:15px"></a>  [Cristina Martins Rodrigues](https://orcid.org/0000-0002-4849-1537), [DataPLANT](https://nfdi4plants.org/)
 📆 2023-02-17
@@ -34,7 +34,7 @@ Welcome to the DataPLANT Teaching Materials
 
 <hr>
 
-# ARC Structure
+## ARC Structure
 
 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="../img/_logos/CreativeCommons/by.svg" style="height:15px"></a>  [Cristina Martins Rodrigues](https://orcid.org/0000-0002-4849-1537), [DataPLANT](https://nfdi4plants.org/)
 📆 2023-02-17
@@ -44,7 +44,7 @@ Welcome to the DataPLANT Teaching Materials
 
 <hr>
 
-# ARC Demo
+## ARC Demo
 
 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="../img/_logos/CreativeCommons/by.svg" style="height:15px"></a>  [Dominik Brilhaus](https://orcid.org/0000-0001-9021-3197), [CEPLAS](ceplas.eu), [DataPLANT](https://nfdi4plants.org/)
 📆 2023-02-02
