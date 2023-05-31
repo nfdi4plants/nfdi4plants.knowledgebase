@@ -95,6 +95,7 @@ Participant's user names:
 - einar.haraldsson
 - lea.wirth
 - marjorie.guichard
+- philipp.westhoff
 - sabrina.zander
 - tianyu.lan
 - usman.anwer
@@ -325,7 +326,7 @@ Place the dataset and protocols for each assay in the respective folders.
 
 
 
-## Part 4: DataHUB 
+## Part 5: DataHUB Features
 
 
 
