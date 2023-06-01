@@ -83,6 +83,6 @@
 ### [ARC structure](/docs/teaching-materials/units/lesson_022_ARC_structure_DataPLANT/lesson_022_ARC_structure_DataPLANT.html)
 ### [ARC Demo](/docs/teaching-materials/units/promotion_arc-demo/promotion_arc-demo.html)
 ## [Videos](/docs/teaching-materials/videos.html)
-### [CEPLAS meets ARCs](/docs/teaching-materials/CEPLASmeetsARCs.html)
+### [Start Your ARC Workshop](/docs/teaching-materials/StartYourARC.html)
 
 
