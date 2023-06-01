@@ -1,7 +1,9 @@
 ---
 ---
 
-# [Fundamentals](/index.html)
+# [Home](/docs/home.html)
+## [Contribution](/docs/CONTRIBUTING.html)
+# [Fundamentals](/docs/fundamentals/index.html)
 ## [Research Data Management](/docs/fundamentals/ResearchDataManagement.html)
 ## [FAIR Data Principles](/docs/fundamentals/FairDataPrinciples.html)
 ## [Metadata](/docs/fundamentals/Metadata.html)
@@ -13,7 +15,7 @@
 ## [Public Data Repositories](/docs/fundamentals/PublicDataRepositories.html)
 ## [Persistent Identifiers](/docs/fundamentals/PersistentIdentifiers.html)
 
-# [Implementation within DataPLANT](/docs/implementation/AnnotatedResearchContext.html)
+# [DataPLANT Implementations](/docs/implementation/index.html)
 ## [Annotated Research Context](/docs/implementation/AnnotatedResearchContext.html)
 ### [User Journey](/docs/implementation/QuickStart_arc.html)
 ## [ARC Commander](/docs/implementation/ArcCommander.html)
@@ -74,8 +76,6 @@
 ## [Expert Features](/docs/implementation/SwateManual/Docs06-ISA-JSON.html)
 ### [ISA-JSON](/docs/implementation/SwateManual/Docs06-ISA-JSON.html)
 
-# [Frequently Asked Questions](/docs/faqs/faqs.html)
-
 # [Teaching Materials](/docs/teaching-materials/index.html)
 ## [Slides](/docs/teaching-materials/slides.html)
 ### [DataPLANT Overview](/docs/teaching-materials/units/promotion_001_DataPLANT-Overview/promotion_001_DataPLANT-Overview.html)
@@ -86,4 +86,4 @@
 ## [Videos](/docs/teaching-materials/videos.html)
 ### [Start Your ARC Workshop](/docs/teaching-materials/StartYourARC.html)
 
-
+# [Frequently Asked Questions](/docs/faqs/faqs.html)
