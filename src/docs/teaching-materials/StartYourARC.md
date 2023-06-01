@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Start your ARC Workshop
+title: Start your ARC Series
 published: 2023-06-01
 add toc: false
 add support: false

@@ -84,6 +84,6 @@
 ### [ARC Demo](/docs/teaching-materials/units/promotion_arc-demo/promotion_arc-demo.html)
 ### [CEPLAS Start Your ARC Series](/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html)
 ## [Videos](/docs/teaching-materials/videos.html)
-### [Start Your ARC Workshop](/docs/teaching-materials/StartYourARC.html)
+### [Start Your ARC Series](/docs/teaching-materials/StartYourARC.html)
 
 # [Frequently Asked Questions](/docs/faqs/faqs.html)
