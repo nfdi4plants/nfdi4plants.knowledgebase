@@ -3,7 +3,7 @@ layout: docs
 title: Swate Desktop Installation
 published: 2023-02-01
 add toc: false
-add sidebar: _sidebars\swateManualSidebar.md
+add sidebar: _sidebars\mainSidebar.md
 ---
 
 > :warning: Currently there is no installer available for Linux or MacOS. Please check out the alternatives.

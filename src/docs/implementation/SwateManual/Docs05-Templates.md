@@ -4,7 +4,7 @@ title: Templates
 published: 2022-09-19
 Author: Kevin Frey
 add toc: false
-add sidebar: _sidebars\swateManualSidebar.md
+add sidebar: _sidebars\mainSidebar.md
 ---
 
 A good starting point for your data annotation is using a predefined template. You can find them under the "Templates" tab. Here, click on the "Browse database" to explore all currently available templates.

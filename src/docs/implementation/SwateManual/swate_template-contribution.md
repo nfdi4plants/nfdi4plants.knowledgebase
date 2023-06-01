@@ -11,7 +11,7 @@ author:
     - Kevin Frey
     - Dominik Brilhaus
 add toc: false
-add sidebar: _sidebars\swateManualSidebar.md
+add sidebar: _sidebars\mainSidebar.md
 ---
 
 :bulb: This walk-through tutorial is meant for data stewards and data managers

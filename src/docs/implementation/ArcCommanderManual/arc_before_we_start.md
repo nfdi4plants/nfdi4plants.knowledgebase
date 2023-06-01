@@ -3,7 +3,7 @@ layout: docs
 title: "Before we start"
 date: 2023-04-06
 add toc: true
-add sidebar: _sidebars/arcCommanderManualSidebar.md
+add sidebar: _sidebars/mainSidebar.md
 ---
 
 After the setup steps, you're all set and ready to start using the Arc Commander. 

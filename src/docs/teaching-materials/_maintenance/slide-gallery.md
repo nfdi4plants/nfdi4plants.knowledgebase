@@ -4,7 +4,7 @@ title: Slide Decks
 published: 2023-05-12
 add toc: false
 add support: false
-add sidebar: _sidebars/teachingMaterialsSidebar.md
+add sidebar: _sidebars/mainSidebar.md
 ---
 
 # ARC_ISA

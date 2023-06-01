@@ -4,7 +4,7 @@ title: "Installing the ARC Commander - Windows"
 published: 2022-12-20
 add toc: false
 add support: false
-add sidebar: _sidebars/arcCommanderManualSidebar.md
+add sidebar: _sidebars/mainSidebar.md
 ---
 
 Head to the ARC Commander's GitHub [release page](https://github.com/nfdi4plants/arcCommander/releases). Download the newest release for Windows.

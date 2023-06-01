@@ -1,40 +1,88 @@
 ---
 ---
 
-```Fundamentals
-# Introduction:/index.html
-# Research Data Management:/docs/fundamentals/ResearchDataManagement.html
-# FAIR Data Principles:/docs/fundamentals/FairDataPrinciples.html
-# Metadata:/docs/fundamentals/Metadata.html
-# Ontologies:/docs/fundamentals/Ontologies.html
-# Data Sharing:/docs/fundamentals/DataSharing.html
-# Data Publications:/docs/fundamentals/DataPublications.html
-# Data Management Plan:/docs/fundamentals/DataManagementPlan.html
-# Version Control & Git:/docs/fundamentals/VersionControlGit.html
-# Public Data Repositories:/docs/fundamentals/PublicDataRepositories.html
-# Persistent Identifiers:/docs/fundamentals/PersistentIdentifiers.html
-```
+# [Fundamentals](/index.html)
+## [Research Data Management](/docs/fundamentals/ResearchDataManagement.html)
+## [FAIR Data Principles](/docs/fundamentals/FairDataPrinciples.html)
+## [Metadata](/docs/fundamentals/Metadata.html)
+## [Ontologies](/docs/fundamentals/Ontologies.html)
+## [Data Sharing](/docs/fundamentals/DataSharing.html)
+## [Data Publications](/docs/fundamentals/DataPublications.html)
+## [Data Management Plan](/docs/fundamentals/DataManagementPlan.html)
+## [Version Control & Git](/docs/fundamentals/VersionControlGit.html)
+## [Public Data Repositories](/docs/fundamentals/PublicDataRepositories.html)
+## [Persistent Identifiers](/docs/fundamentals/PersistentIdentifiers.html)
 
-```Implementation within DataPLANT
-# Annotated Research Context:/docs/implementation/AnnotatedResearchContext.html
-## User Journey:/docs/implementation/QuickStart_arc.html
-# ARC Commander:/docs/implementation/ArcCommander.html
-## QuickStart:/docs/implementation/QuickStart_arcCommander.html
-## QuickStart (experts):/docs/implementation/QuickStart_arcCommander_expert.html
-## Manual: /docs/implementation/ArcCommanderManual/index.html
-# Swate:/docs/implementation/Swate.html
-## QuickStart:/docs/implementation/QuickStart_swate.html
-## Walk-through:/docs/implementation/QuickStart_swate_walkthrough.html
-## Best Practices For Data Annotation:/docs/implementation/AnnotationPatterns.html
-## Manual: /docs/implementation/SwateManual/index.html
-# DataHUB:/docs/implementation/DataHub.html
-# DataPLAN:/docs/implementation/DataPLAN.html
-```
+# [Implementation within DataPLANT](/docs/implementation/AnnotatedResearchContext.html)
+## [Annotated Research Context](/docs/implementation/AnnotatedResearchContext.html)
+### [User Journey](/docs/implementation/QuickStart_arc.html)
+## [ARC Commander](/docs/implementation/ArcCommander.html)
+### [QuickStart](/docs/implementation/QuickStart_arcCommander.html)
+### [QuickStart (experts)](/docs/implementation/QuickStart_arcCommander_expert.html)
+## [Swate](/docs/implementation/Swate.html)
+### [QuickStart](/docs/implementation/QuickStart_swate.html)
+### [Walk-through](/docs/implementation/QuickStart_swate_walkthrough.html)
+### [Best Practices For Data Annotation](/docs/implementation/AnnotationPatterns.html)
+## [DataHUB](/docs/implementation/DataHub.html)
+## [DataPLAN](/docs/implementation/DataPLAN.html)
 
-```FAQs
-# Frequently Asked Questions:/docs/faqs/faqs.html
-```
+# [ARC Commander Manual](/docs/implementation/ArcCommanderManual/index.html)
+## [Setup](/docs/implementation/ArcCommanderManual/arc_installation_dependencies.html)
+### [Installing Dependencies](/docs/implementation/ArcCommanderManual/arc_installation_dependencies.html)
+### [Configure Git](/docs/implementation/ArcCommanderManual/git_config.html)
+### [Installing the ARC Commander](/docs/implementation/ArcCommanderManual/arc_installation.html)
+#### [Windows](/docs/implementation/ArcCommanderManual/arc_installation_windows.html)
+#### [MacOS](/docs/implementation/ArcCommanderManual/arc_installation_macos.html)
+#### [Linux](/docs/implementation/ArcCommanderManual/arc_installation_linux.html)
+### [DataHUB Access](/docs/implementation/ArcCommanderManual/arc_access.html)
+### [Before we start](/docs/implementation/ArcCommanderManual/arc_before_we_start.html)
+## [Central Functions](/docs/implementation/ArcCommanderManual/arc_initialization.html)
+### [Initialize](/docs/implementation/ArcCommanderManual/arc_initialization.html)
+### [Clone](/docs/implementation/ArcCommanderManual/arc_get.html)
+### [Connect](/docs/implementation/ArcCommanderManual/arc_connect.html)
+### [Synchronize](/docs/implementation/ArcCommanderManual/arc_synchronization.html)
+### [Configure](/docs/implementation/ArcCommanderManual/arc_config.html)
+### [Branch](/docs/implementation/ArcCommanderManual/arc_branch.html)
+## [ISA Metadata Functions](/docs/implementation/ArcCommanderManual/arc_isa.html)
+### [ISA Metadata](/docs/implementation/ArcCommanderManual/arc_isa.html)
+#### [Investigation](/docs/implementation/ArcCommanderManual/arc_isa_investigation.html)
+#### [Study](/docs/implementation/ArcCommanderManual/arc_isa_study.html)
+#### [Assay](/docs/implementation/ArcCommanderManual/arc_isa_assay.html)
+### [Update](/docs/implementation/ArcCommanderManual/arc_update.html)
+### [Export](/docs/implementation/ArcCommanderManual/arc_export.html)
 
-```Teaching Materials
-# Teaching Materials:docs/teaching-materials/index.html
-```
+
+# [Swate Manual](/docs/implementation/SwateManual/index.html)
+## [Setup](/docs/implementation/SwateManual/Docs01-Installing-Swate.html)
+### [Installing Swate](/docs/implementation/SwateManual/Docs01-Installing-Swate.html)
+### [Browser](/docs/implementation/SwateManual/swate_installation_browser.html)
+### [Desktop, via installer (beta-stage)](/docs/implementation/SwateManual/swate_installation_desktop.html)
+### [Desktop, manually (recommended)](/docs/implementation/SwateManual/swate_installation_manual.html)
+#### [MacOS](/docs/implementation/SwateManual/swate_installation_manual_macos.html)
+### [Organization-wide](/docs/implementation/SwateManual/swate_installation_organization.html)
+## [Core Features](/docs/implementation/SwateManual/Docs02-Annotation-Table.html)
+### [Annotation tables](/docs/implementation/SwateManual/Docs02-Annotation-Table.html)
+### [Building blocks](/docs/implementation/SwateManual/Docs03-Building-Blocks.html)
+#### [Building Block Types](/docs/implementation/SwateManual/swate_blocks_types.html)
+#### [Adding a Building Block](/docs/implementation/SwateManual/swate_blocks_add.html)
+#### [Using Units with Building Blocks](/docs/implementation/SwateManual/swate_blocks_units.html)
+### [Filling cells with ontology terms](/docs/implementation/SwateManual/Docs04-Ontology-Term-Search.html)
+### [Advanced Term Search](/docs/implementation/SwateManual/Docs07-Advanced-Term-Search.html)
+### [Templates](/docs/implementation/SwateManual/Docs05-Templates.html)
+#### [Contribute Templates](/docs/implementation/SwateManual/swate_template-contribution.html)
+### [File Picker](/docs/implementation/SwateManual/Using-the-File-Picker.html)
+## [Expert Features](/docs/implementation/SwateManual/Docs06-ISA-JSON.html)
+### [ISA-JSON](/docs/implementation/SwateManual/Docs06-ISA-JSON.html)
+
+# [Frequently Asked Questions](/docs/faqs/faqs.html)
+
+# [Teaching Materials](/docs/teaching-materials/index.html)
+## [Slides](/docs/teaching-materials/slides.html)
+### [DataPLANT Overview](/docs/teaching-materials/units/promotion_001_DataPLANT-Overview/promotion_001_DataPLANT-Overview.html)
+### [Big Picture](/docs/teaching-materials/units/lesson_030_BigPicture_ARC_DataPLANT/lesson_030_BigPicture_ARC_DataPLANT.html)
+### [ARC structure](/docs/teaching-materials/units/lesson_022_ARC_structure_DataPLANT/lesson_022_ARC_structure_DataPLANT.html)
+### [ARC Demo](/docs/teaching-materials/units/promotion_arc-demo/promotion_arc-demo.html)
+## [Videos](/docs/teaching-materials/videos.html)
+### [Start Your ARC Workshop](/docs/teaching-materials/StartYourARC.html)
+
+

@@ -58,6 +58,9 @@ jobs:
       - name: Build
         working-directory: ./src
         run: dotnet fornax build
+
+      - name: Index
+        run: npm run index
         
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@v4
