@@ -76,8 +76,6 @@
 ## [Expert Features](/docs/implementation/SwateManual/Docs06-ISA-JSON.html)
 ### [ISA-JSON](/docs/implementation/SwateManual/Docs06-ISA-JSON.html)
 
-# [Frequently Asked Questions](/docs/faqs/faqs.html)
-
 # [Teaching Materials](/docs/teaching-materials/index.html)
 ## [Slides](/docs/teaching-materials/slides.html)
 ### [DataPLANT Overview](/docs/teaching-materials/units/promotion_001_DataPLANT-Overview/promotion_001_DataPLANT-Overview.html)
@@ -86,3 +84,5 @@
 ### [ARC Demo](/docs/teaching-materials/units/promotion_arc-demo/promotion_arc-demo.html)
 ## [Videos](/docs/teaching-materials/videos.html)
 ### [Start Your ARC Workshop](/docs/teaching-materials/StartYourARC.html)
+
+# [Frequently Asked Questions](/docs/faqs/faqs.html)
