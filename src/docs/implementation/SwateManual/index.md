@@ -4,7 +4,7 @@ title: "Swate Manual"
 published: 2022-02-14
 add toc: false
 add support: false
-add sidebar: _sidebars/swateManualSidebar.md
+add sidebar: _sidebars/mainSidebar.md
 status: draft 
 ---
 

@@ -6,7 +6,7 @@ author: Martin Kuhl
 author_github: martin-kuhl
 add toc: false
 add support: false
-add sidebar: _sidebars/arcCommanderManualSidebar.md
+add sidebar: _sidebars/mainSidebar.md
 ---
 
 Using `arc get -r` followed by a URL + ".git" enables you to clone an already existing ARC as a local repository, e.g.,

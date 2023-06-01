@@ -5,7 +5,8 @@ export default {
   input: 'src/js/main.js',
   output: {
     file: 'src/js/bundle.js',
-    format: 'cjs'
+    format: 'cjs',
+    inlineDynamicImports: true
   },
   // https://github.com/rollup/plugins/tree/master/packages/node-resolve
   plugins: [nodeResolve()]

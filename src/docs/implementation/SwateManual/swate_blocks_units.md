@@ -4,7 +4,7 @@ title: Using Units with Building Blocks
 published: 2023-02-15
 Author: Kevin Frey
 add toc: true
-add sidebar: _sidebars\swateManualSidebar.md
+add sidebar: _sidebars\mainSidebar.md
 ---
 
 <p style="display: flex; justify-content: center">

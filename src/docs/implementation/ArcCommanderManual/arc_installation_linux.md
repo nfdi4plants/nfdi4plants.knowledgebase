@@ -4,7 +4,7 @@ title: "Installing the ARC Commander - Linux"
 published: 2022-12-20
 add toc: false
 add support: false
-add sidebar: _sidebars/arcCommanderManualSidebar.md
+add sidebar: _sidebars/mainSidebar.md
 ---
 
 1. Download the latest ARC Commander release

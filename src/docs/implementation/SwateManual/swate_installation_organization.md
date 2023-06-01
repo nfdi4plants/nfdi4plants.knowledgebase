@@ -3,7 +3,7 @@ layout: docs
 title: Swate Organization-wide Installation
 published: 2023-02-01
 add toc: false
-add sidebar: _sidebars\swateManualSidebar.md
+add sidebar: _sidebars\mainSidebar.md
 ---
 
 ## Using a shared folder as system admin
