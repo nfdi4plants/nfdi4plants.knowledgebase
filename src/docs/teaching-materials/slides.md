@@ -1,16 +1,21 @@
 ---
 layout: docs
 title: Teaching Materials - Slides
-published: 2023-05-30
+published: 2023-06-01
 add toc: false
 add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-Welcome to the DataPLANT Teaching Materials 
+Welcome to the DataPLANT Slide Collection.  
+This collection is divided into slides providing information on **[DataPLANT](/docs/teaching-materials/slides/DataPLANT.html)** in general, on the **[Annotated Research Context](/docs/teaching-materials/slides/ARC.html)**, and a set for real **[Events](/docs/teaching-materials/slides/Events.html)**.
+
+<br>
 
 :construction: This site is currently under construction. Links may change.
 
+
+<!--
 <hr>
 
 ## DataPLANT Overview
@@ -52,3 +57,4 @@ Welcome to the DataPLANT Teaching Materials
 [ :pencil2: Edit](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/teaching-materials/units/promotion_arc-demo/promotion_arc-demo.md)
 
 <hr>
+-->

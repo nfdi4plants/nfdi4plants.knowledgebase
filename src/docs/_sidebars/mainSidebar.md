@@ -78,12 +78,15 @@
 
 # [Teaching Materials](/docs/teaching-materials/index.html)
 ## [Slides](/docs/teaching-materials/slides.html)
-### [DataPLANT Overview](/docs/teaching-materials/units/promotion_001_DataPLANT-Overview/promotion_001_DataPLANT-Overview.html)
-### [Big Picture](/docs/teaching-materials/units/lesson_030_BigPicture_ARC_DataPLANT/lesson_030_BigPicture_ARC_DataPLANT.html)
-### [ARC Structure](/docs/teaching-materials/units/lesson_022_ARC_structure_DataPLANT/lesson_022_ARC_structure_DataPLANT.html)
-### [ARC Demo](/docs/teaching-materials/units/promotion_arc-demo/promotion_arc-demo.html)
-### [CEPLAS Start Your ARC Series](/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html)
+### [DataPLANT](/docs/teaching-materials/slides/DataPLANT.html)
+<!--#### [DataPLANT Overview](/docs/teaching-materials/units/promotion_001_DataPLANT-Overview/promotion_001_DataPLANT-Overview.html)-->
+<!--#### [Big Picture](/docs/teaching-materials/units/lesson_030_BigPicture_ARC_DataPLANT/lesson_030_BigPicture_ARC_DataPLANT.html)-->
+### [Annotated Research Context](/docs/teaching-materials/slides/ARC.html)
+<!--#### [ARC Structure](/docs/teaching-materials/units/lesson_022_ARC_structure_DataPLANT/lesson_022_ARC_structure_DataPLANT.html)-->
+<!--#### [ARC Demo](/docs/teaching-materials/units/promotion_arc-demo/promotion_arc-demo.html)-->
+### [Events](/docs/teaching-materials/slides/Events.html)
+#### [CEPLAS Start Your ARC Series](/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html)
 ## [Videos](/docs/teaching-materials/videos.html)
-### [Start Your ARC Series](/docs/teaching-materials/StartYourARC.html)
+### [Start Your ARC Series](/docs/teaching-materials/videos/StartYourARC.html)
 
 # [Frequently Asked Questions](/docs/faqs/faqs.html)
