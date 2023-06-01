@@ -9,7 +9,6 @@ article_status: published
 todo:  
 ---
 
-# Contribution Guide
 Your contribution to the DataPLANT Knowledge Base is highly appreciated.
 This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.
 
