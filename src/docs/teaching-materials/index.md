@@ -8,7 +8,7 @@ add sidebar: _sidebars/mainSidebar.md
 ---
 
 Welcome to the DataPLANT Teaching Materials Section.   
-Enjoy exploring our collection of **[Slides](/docs/teaching-materials/slides.html)** and **[Videos](/docs/teaching-materials/videos.html)**.
+Enjoy exploring our collection of **[Slides](slides.html)** and **[Videos](videos.html)**.
 
 <br>
 

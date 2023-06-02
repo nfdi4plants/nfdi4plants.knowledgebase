@@ -10,7 +10,7 @@ add sidebar: _sidebars/mainSidebar.md
 Welcome to the DataPLANT Video Collection.   
 This collection contains playlists for specific topics or events listed below:   
 
-* ### [Start Your ARC Workshop Series](/docs/teaching-materials/videos/StartYourARC.html)   
+* ### [Start Your ARC Workshop Series](videos/StartYourARC.html)   
    
 <br>
 
