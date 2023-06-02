@@ -1,7 +1,7 @@
 ---
 ---
 
-# [Home](/docs/home.html)
+# [Home](/index.html)
 ## [Contribution](/docs/CONTRIBUTING.html)
 # [Fundamentals](/docs/fundamentals/index.html)
 ## [Research Data Management](/docs/fundamentals/ResearchDataManagement.html)

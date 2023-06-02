@@ -8,7 +8,7 @@ add sidebar: _sidebars/mainSidebar.md
 ---
 
 Welcome to the DataPLANT Slide Collection.  
-This collection is divided into slides providing information on **[DataPLANT](/docs/teaching-materials/slides/DataPLANT.html)** in general, on the **[Annotated Research Context](/docs/teaching-materials/slides/ARC.html)**, and a set for real **[Events](/docs/teaching-materials/slides/Events.html)**.
+This collection is divided into slides providing information on **[DataPLANT](slides/DataPLANT.html)** in general, on the **[Annotated Research Context](slides/ARC.html)**, and a set for real **[Events](slides/Events.html)**.
 
 <br>
 
