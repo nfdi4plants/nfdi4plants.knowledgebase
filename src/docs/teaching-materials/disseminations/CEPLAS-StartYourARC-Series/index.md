@@ -34,6 +34,10 @@ Here you can find the slides prepared for the May / June 2023 CEPLAS *Start Your
 
 <hr>
 
+## Preparation for Session 3
 
+<iframe src="./2023-06-01_CEPLAS-Session03-prep/2023-06-01_CEPLAS-Session03-prep.html" style="height:225px; width:400px;" ></iframe>
 
-<!-- # Session 3: Annotate your data -->
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a>  [Dominik Brilhaus](https://orcid.org/0000-0001-9021-3197), [CEPLAS](ceplas.eu), [DataPLANT](https://nfdi4plants.org/)  📆 June 2nd, 2023
+
+<hr>
