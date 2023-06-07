@@ -2,7 +2,7 @@
 ---
 
 # [Home](/index.html)
-## [Contribution](/docs/CONTRIBUTING.html)
+
 # [Fundamentals](/docs/fundamentals/index.html)
 ## [Research Data Management](/docs/fundamentals/ResearchDataManagement.html)
 ## [FAIR Data Principles](/docs/fundamentals/FairDataPrinciples.html)
@@ -17,14 +17,14 @@
 
 # [DataPLANT Implementations](/docs/implementation/index.html)
 ## [Annotated Research Context](/docs/implementation/AnnotatedResearchContext.html)
-### [User Journey](/docs/implementation/QuickStart_arc.html)
+### [User Journey](/docs/guides/QuickStart_arc.html)
 ## [ARC Commander](/docs/implementation/ArcCommander.html)
-### [QuickStart](/docs/implementation/QuickStart_arcCommander.html)
-### [QuickStart (experts)](/docs/implementation/QuickStart_arcCommander_expert.html)
+### [QuickStart](/docs/guides/QuickStart_arcCommander.html)
+### [QuickStart (experts)](/docs/guides/QuickStart_arcCommander_expert.html)
 ## [Swate](/docs/implementation/Swate.html)
-### [QuickStart](/docs/implementation/QuickStart_swate.html)
-### [Walk-through](/docs/implementation/QuickStart_swate_walkthrough.html)
-### [Best Practices For Data Annotation](/docs/implementation/AnnotationPatterns.html)
+### [QuickStart](/docs/guides/QuickStart_swate.html)
+### [Walk-through](/docs/guides/QuickStart_swate_walkthrough.html)
+### [Best Practices For Data Annotation](/docs/guides/AnnotationPatterns.html)
 ## [DataHUB](/docs/implementation/DataHub.html)
 ## [DataPLAN](/docs/implementation/DataPLAN.html)
 
@@ -71,7 +71,7 @@
 ### [Filling cells with ontology terms](/docs/SwateManual/Docs04-Ontology-Term-Search.html)
 ### [Advanced Term Search](/docs/SwateManual/Docs07-Advanced-Term-Search.html)
 ### [Templates](/docs/SwateManual/Docs05-Templates.html)
-#### [Contribute Templates](/docs/SwateManual/swate_template-contribution.html)
+#### [Contribute Templates](/docs/guides/swate_template-contribution.html)
 ### [File Picker](/docs/SwateManual/Using-the-File-Picker.html)
 ## [Expert Features](/docs/SwateManual/Docs06-ISA-JSON.html)
 ### [ISA-JSON](/docs/SwateManual/Docs06-ISA-JSON.html)
@@ -79,14 +79,25 @@
 # [Teaching Materials](/docs/teaching-materials/index.html)
 ## [Slides](/docs/teaching-materials/slides.html)
 ### [DataPLANT](/docs/teaching-materials/slides/DataPLANT.html)
-<!--#### [DataPLANT Overview](/docs/teaching-materials/units/promotion_001_DataPLANT-Overview/promotion_001_DataPLANT-Overview.html)-->
-<!--#### [Big Picture](/docs/teaching-materials/units/lesson_030_BigPicture_ARC_DataPLANT/lesson_030_BigPicture_ARC_DataPLANT.html)-->
 ### [Annotated Research Context](/docs/teaching-materials/slides/ARC.html)
-<!--#### [ARC Structure](/docs/teaching-materials/units/lesson_022_ARC_structure_DataPLANT/lesson_022_ARC_structure_DataPLANT.html)-->
-<!--#### [ARC Demo](/docs/teaching-materials/units/promotion_arc-demo/promotion_arc-demo.html)-->
 ### [Events](/docs/teaching-materials/slides/Events.html)
 #### [CEPLAS Start Your ARC Series](/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html)
 ## [Videos](/docs/teaching-materials/videos.html)
 ### [Start Your ARC Series](/docs/teaching-materials/videos/StartYourARC.html)
+
+# [Guides](/docs/guides/index.html)
+## [ARC User Journey](/docs/guides/QuickStart_arc.html)
+## [Create your ARC]()
+### [ARC Commander QuickStart](/docs/guides/QuickStart_arcCommander.html)
+### [ARC Commander QuickStart (experts)](/docs/guides/QuickStart_arcCommander_expert.html)
+## [Annotate data in your ARC]()
+### [Best Practices For Data Annotation](/docs/guides/AnnotationPatterns.html)
+### [Swate QuickStart](/docs/guides/QuickStart_swate.html)
+### [Swate Walk-through](/docs/guides/QuickStart_swate_walkthrough.html)
+
+<!-- ## [Share your ARC]() -->
+## [Contribute]()
+### [Swate templates](/docs/guides/swate_template-contribution.html)
+### [Knowledge base](/docs/CONTRIBUTING.html)
 
 # [Frequently Asked Questions](/docs/faqs/faqs.html)
