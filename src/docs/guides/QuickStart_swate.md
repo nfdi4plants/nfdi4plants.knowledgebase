@@ -10,14 +10,24 @@ article_status: published
 todo:
 ---
 
+<br>
+
+<span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #B4CE82;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Newbie</span>  <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #2D3E50;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Tutorial</span>
+
+
 ## About
 
-In this guide we assume that your ARC already contains one or more isa.study.xlsx and isa.assay.xlsx file(s), respectively. Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses. In the following we will focus on adding metadata to your studies and assays with our excel tool Swate.
+DataPLANT provides the Excel Add-In Swate to support you in data annotation. In this guide we focus on adding metadata to your studies and assays with our excel tool [Swate](./../implementation/Swate.html). Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses. In the following 
+
+## Before we can start
+
+:ballot_box_with_check: Please [install Swate](./../SwateManual/Docs01-Installing-Swate.html)
+<br>
+:bulb: Consider reading about [Swate](./../implementation/Swate.html)
+<br>
+:bulb: We assume that you already created an ARC that contains one or more isa.study.xlsx and isa.assay.xlsx file(s), respectively.
 
 ## Swate
-
-DataPLANT provides the Excel Add-In Swate to support you in data annotation.
-Please download and install the newest Swate version according to [these instructions](./../SwateManual/Docs01-Installing-Swate.html).
 
 - Use the *create annotation table* button in the yellow pop-up box (this only appears if you start Swate on an Excel worksheet without an existing annotation table). An annotation table with the building blocks *Source Name* and *Sample Name* will be generated.  
 

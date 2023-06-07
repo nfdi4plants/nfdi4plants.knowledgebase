@@ -14,22 +14,24 @@ add toc: false
 add sidebar: _sidebars\mainSidebar.md
 ---
 
+<br>
+
+<span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #C21F3A;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Data Steward</span>  <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #2D3E50;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Tutorial</span>
 ## About
 
-This walk-through guide is meant for data stewards and data managers
+This tutorial guides you how to create and share Swate metadata templates.
 
-## Prerequisites
+## Before we can start
 
 Before contributing Swate templates you ideally have
 
-- Access to an up-to-date [installation](./Docs01-Installing-Swate.html) of **Swate Core** and **Swate Experts**
-- Some routine with Swate (e.g. from the Swate manual and quickstarts)
-  - you know how to create an [Annotation Table](./Docs02-Annotation-Table.html)
-  - you know how to [add building blocks](./Docs03-Building-Blocks.html) to your annotation table
+- :ballot_box_with_check: Access to an up-to-date [installation](./../SwateManual/Docs01-Installing-Swate.html) of **Swate Core** and **Swate Experts**  
+- :ballot_box_with_check: Some routine with Swate (e.g. from the Swate manual and quickstarts)
+  - you know how to create an [Annotation Table](./../SwateManual/Docs02-Annotation-Table.html)
+  - you know how to [add building blocks](./../SwateManual/Docs03-Building-Blocks.html) to your annotation table
   - you know the annotation principles
-- A GitHub account and some routine with GitHub workflows
-
-> :bulb: Feel free to contact us for Data Steward support, if you are not familiar to GitHub or Swate, but would like to contribute a Swate template for your community
+- :ballot_box_with_check: A [GitHub](https://github.com) account and some routine with GitHub
+- :bulb: Feel free to contact us for Data Steward support, if you are not familiar to GitHub or Swate, but would like to contribute a Swate template for your community
 
 ## Git Workflow to add or edit templates
 

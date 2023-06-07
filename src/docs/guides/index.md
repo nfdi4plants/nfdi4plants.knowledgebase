@@ -2,7 +2,7 @@
 layout: docs
 title: DataPLANT Guides
 published: 2023-06-07
-add toc: false
+add toc: true
 add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
@@ -47,3 +47,21 @@ Guides with this badge introduce an use-case example that you can exactly follow
 Guides with this badge introduce how to use a tool with your own data:
 
 <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #2D3E50;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Tutorial</span>
+
+
+### Tutorials
+
+#### Code blocks
+
+Tutorials that guide you on steps using the command line usually include code blocks with one or more lines of code. Code blocks are "copy/paste friendly"
+You can copy the following line to your command line and hit enter:
+
+```bash
+echo "Hello. I am a code block"
+```
+
+#### Variables
+
+Code blocks sometimes include `<variables>` in brackets, that need to be replaced with suitable information (e.g. the name of your folder) before executing in your command line.
+
+:bulb: Make sure to also remove the square brackets `<>`. 

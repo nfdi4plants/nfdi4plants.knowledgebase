@@ -10,10 +10,20 @@ article_status: published
 todo:
 ---
 
+<br>
+
+<span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #B4CE82;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Newbie</span>  <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #2D3E50;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Tutorial</span>
+
 ## About
 
-In this guide we focus on how to use the "ARC Commander" to store and share your data.
+In this guide we focus on how to use the [ARC Commander](./../implementation/ArcCommander.html) to create your ARC and structure, store and share your data.
 
+## Before we can start
+
+:ballot_box_with_check: Please [install ARC Commander](./../ArcCommanderManual/arc_installation.html)  
+:bulb: Consider reading about [ARC](./../implementation/AnnotatedResearchContext.html) and the [ARC Commander](./../implementation/ArcCommander.html)
+
+<!-- 
 ## Environment and setup
 
 ### The command line
@@ -33,7 +43,7 @@ echo "hello - I am a code block"
 
 - [ ] Prerequisites for using the ARC Commander are [git](https://git-scm.com/downloads) and [git LFS](https://git-lfs.github.com/)
 
-> Note: If this is your first time using git on this computer, you need to set your git user name and email address. These are needed for displaying them on the git commits. You can update the settings with
+> :bulb: If this is your first time using git on this computer, you need to set your git user name and email address. These are needed for displaying them on the git commits. You can update the settings with
 
   ```bash
   git config --global user.name <your_name>
@@ -57,7 +67,7 @@ arc --help
 
 ![ARC Commander help menu](../img/arcCommander_help.png)
 
-<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div> -->
 
 ## ARC initialization
 
@@ -89,7 +99,7 @@ The ISA investigation (`-i`) workbook allows you to record administrative metada
 ```bash
 arc i create -i QuickStartInvestigation
 ```
-> Note: Avoid using spaces in the identifier. Use underscores and capital letters instead.
+> :bulb: Avoid using spaces in the identifier. Use underscores and capital letters instead.
 
 ### ISA studies and assays
 
@@ -107,7 +117,7 @@ arc s add -s QuickStartStudy
 arc a add -s QuickStartStudy -a QuickStartAssay
 ```
 
-> Note: An assay must be linked to a study. If a study does not exist, it will be created automatically in this step.
+> :bulb: An assay must be linked to a study. If a study does not exist, it will be created automatically in this step.
 
 - The ARC Commander will add a subdirectories to the *studies* and *assays* folder. Your ARC should
     look similar to this now:  
@@ -219,8 +229,8 @@ Briefly:
 
 ![](../img/datahub_members.png)
 
-> Note: A detailed usage instruction for the ARC Commander can be found [here](./ArcCommanderManual/index.html).
+> :bulb: A detailed usage instruction for the ARC Commander can be found [here](./ArcCommanderManual/index.html).
 
 
 <!-- kb-Implementation -->
-[kb-ARC_Commander-Manual-Installation]: ../ArcCommanderManual/arc_installation.html "ARC Commander Installation"
+[kb-ARC_Commander-Manual-Installation]: ./../ArcCommanderManual/arc_installation.html "ARC Commander Installation"
