@@ -10,7 +10,7 @@ add sidebar: _sidebars/mainSidebar.md
 DataPLANT provides the Excel Add-In Swate to support you in data annotation.
 In this walk-through, we guide you on annotating your data using Swate with a show-case example.
 
-> :rocket: Before we can start, please follow the [installation instructions](./SwateManual/Docs01-Installing-Swate.html) in the Swate Manual.
+> :rocket: Before we can start, please follow the [installation instructions](./../SwateManual/Docs01-Installing-Swate.html) in the Swate Manual.
 
 ## Excel Tables
 
