@@ -8,14 +8,14 @@ add sidebar: _sidebars\mainSidebar.md
 ---
 
 <p style="display: flex; justify-content: center">
-<img src="./../../img/Swate-UpdateUnit-Exp.jpg?v01.02.22" style="height: 200px">
+<img src="./../img/Swate-UpdateUnit-Exp.jpg?v01.02.22" style="height: 200px">
 </p>
 
 1. Choose the building block for which you want to change the unit.
 2. Select any number of rows of that building block's main column.
 3. Use the search field to search for the wanted unit and click on the unit in the dropdown to select it.
 4. Click *Update unit for cells* to update the unit **only** for the selected rows.
-5. Update your tables unit references by clicking the *Update Ontology Terms* <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>. 
+5. Update your tables unit references by clicking the *Update Ontology Terms* <a href="./../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>. 
 
 ## Update Unit Example
 
@@ -30,7 +30,7 @@ add sidebar: _sidebars\mainSidebar.md
 
         </p>
         </details>
-    - 👀 You can hold <kbd>Ctrl</kbd> and click the *Autoformat Table* <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a> to adjust column widths and unhide all hidden columns.  
+    - 👀 You can hold <kbd>Ctrl</kbd> and click the *Autoformat Table* <a href="./../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a> to adjust column widths and unhide all hidden columns.  
 2. Create more rows for the table and fill the main column (`Parameter [vegetative growth time]`) with some data.
     - <details><summary>Expanded Table</summary>
         <p>
@@ -49,8 +49,8 @@ add sidebar: _sidebars\mainSidebar.md
         </p>
         </details>
     - When typing numbers into these cells, Excel will add the unit to the number values.
-    - 👀 The unit information for the main column cells can be seen in Excel. Select main column cells → `Home` → `Number` → small expand symbol on the bottom right (<a href="./../../img/Swate-numberFormat-Exp.jpg?v01.02.22" target="_blank">image</a>).
-3. Click the *Update Ontology Terms* <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
+    - 👀 The unit information for the main column cells can be seen in Excel. Select main column cells → `Home` → `Number` → small expand symbol on the bottom right (<a href="./../img/Swate-numberFormat-Exp.jpg?v01.02.22" target="_blank">image</a>).
+3. Click the *Update Ontology Terms* <a href="./../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
     - <details><summary>Expanded Table</summary>
         <p>
 
@@ -85,9 +85,9 @@ add sidebar: _sidebars\mainSidebar.md
 
         </p>
         </details>
-    - ⚠️ Notize how this only changed the values in the main column **and** the [number format](./../../img/Swate-numberFormat-Exp.jpg?v01.02.22).
-        - 👀 Swate bases it's unit reference only on the [number format](./../../img/Swate-numberFormat-Exp.jpg?v01.02.22) of the related cells. You can change this by hand in the following format: `0,00 "unit term name"`. 
-6. Click the *Update Ontology Terms* <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
+    - ⚠️ Notize how this only changed the values in the main column **and** the [number format](./../img/Swate-numberFormat-Exp.jpg?v01.02.22).
+        - 👀 Swate bases it's unit reference only on the [number format](./../img/Swate-numberFormat-Exp.jpg?v01.02.22) of the related cells. You can change this by hand in the following format: `0,00 "unit term name"`. 
+6. Click the *Update Ontology Terms* <a href="./../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
     - <details><summary>Expanded Table</summary>
         <p>
 
@@ -151,9 +151,9 @@ This workflow is especially important when working with [templates](./Docs05-Tem
 
             </p>
             </details>
-    - ⚠️ Notize how this only changed the values in the main column **and** the [number format](./../../img/Swate-numberFormat-Exp.jpg?v01.02.22).
+    - ⚠️ Notize how this only changed the values in the main column **and** the [number format](./../img/Swate-numberFormat-Exp.jpg?v01.02.22).
 
-3. Click the *Update Ontology Terms* <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
+3. Click the *Update Ontology Terms* <a href="./../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
     - <details><summary>Expanded Table </summary>
         <p>
 

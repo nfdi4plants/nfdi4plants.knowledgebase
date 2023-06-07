@@ -152,7 +152,7 @@ Centrifugation Time
 - If you use *Add Building Block* or/and *Term search* to insert your free text input, Swate will handle all formatting for you.
 
 <p style="display: flex; justify-content: center">
-<img src="./../../img/Swate-FreeTextInput-Exp.jpg?v31.01.202" style="height: 200px">
+<img src="./../img/Swate-FreeTextInput-Exp.jpg?v31.01.202" style="height: 200px">
 </p>
 
 </p>

@@ -82,7 +82,7 @@ figcaption {
 <div class="columns-right">
 
 <figure>
-  <img src="./../../img/swate-templates_repo_local.png">
+  <img src="./../img/swate-templates_repo_local.png">
   <figcaption>Local clone of Swate templates repository (April 19, 2023)</figcaption>
 </figure>
 
@@ -115,11 +115,11 @@ figcaption {
 <div class="columns">
 
 <div class="columns-left">
-<img src="./../../img/swateExperts-tab-templateMetadata.png" style="height: 300px">
+<img src="./../img/swateExperts-tab-templateMetadata.png" style="height: 300px">
 </div>
 
 <div class="columns-right">
-<img src="./../../img/swate-templates-metadata.png" style="height: 300px">
+<img src="./../img/swate-templates-metadata.png" style="height: 300px">
 </div>
 
 </div>
@@ -136,7 +136,7 @@ Key | Definition | Tip :bulb:
 **Version** |  The version of the template following the [SemVer](https://semver.org/) convention.  |  For a new template use `1.0.0`. Raise the version number when updating an existing template
 **Description** |  Here you can describe your template |  Users interested in your template can read this in Swate, but not search by it
 **Organisation** |  The name of an organisation or community you create this template for. This facilitates searching for relevant templates in a specific organisation or community. |  Templates with the organisation "DataPLANT" are listed as `curated` in the Swate template database. All other templates are listed as `community`.
-**Table** |  This value **must match** the name of the annotation table you want to use as a template |  To find the name click on any field in your annotation table, then open the `Table Design` (on macOS: `Table`) tab. Copy the name to the "Table" value field <img src="../../img/Swate-templates_find_table_name.jpg" style="height: 150px"  />
+**Table** |  This value **must match** the name of the annotation table you want to use as a template |  To find the name click on any field in your annotation table, then open the `Table Design` (on macOS: `Table`) tab. Copy the name to the "Table" value field <img src="./../img/Swate-templates_find_table_name.jpg" style="height: 150px"  />
 **ER list** |  You can add any number of endpoint repositories to which your template complies here | You may want to add them as ontology terms with unique identifier and source
 **TAGS list** |  You can add any number of tags here. These tags are the basis to search for your template | You may want to add them as ontology terms with unique identifier and source
 **AUTHORS list** |  Add your name/alias here with as much information as you like.
@@ -159,11 +159,11 @@ Here is an example for filled out template metadata and how it helps in Swate's 
 <div class="columns">
 
 <div class="columns-left">
-<img src="../../img/Swate-templates_example_metadata.jpg">
+<img src="./../img/Swate-templates_example_metadata.jpg">
 </div>
 
 <div class="columns-right">
-<img src="../../img/swate-tab-templates_example.png">
+<img src="./../img/swate-tab-templates_example.png">
 </div>
 
 </div>

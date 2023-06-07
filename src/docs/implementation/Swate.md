@@ -66,7 +66,7 @@ After reading this article, you should
 [kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
 [kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
 [kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
-[kb-SwateManual]: ../implementation/SwateManual/index.html "Swate Manual"
+[kb-SwateManual]: ../SwateManual/index.html "Swate Manual"
 
 <!-- kb-Implementation -->
 [kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
