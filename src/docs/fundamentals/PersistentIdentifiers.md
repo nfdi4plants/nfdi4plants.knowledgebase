@@ -100,7 +100,7 @@ Name | Type | Tasks on metadata
 
 [gh-DataPlant]: <https://github.com/nfdi4plants/ARC-specification/> "GitHub DataPLANT"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
-[kb-ArcCommander-Manual]: ../implementation/ArcCommanderManual/index.html "ARC Commander Manual"
+[kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 
 [PURLs]: https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator "Wikipedia PURLs"
 [Handles]: https://en.wikipedia.org/wiki/Handle_System "Wikipedia Handles"

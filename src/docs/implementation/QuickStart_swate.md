@@ -109,7 +109,7 @@ Fill the cells beneath each building block with ontology terms to note the respe
 [gh-DataPlant]: <https://github.com/nfdi4plants/> "GitHub DataPLANT"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/> "ArcCommander"
-[kb-ArcCommander-Manual]: ../implementation/ArcCommanderManual/index.html "ARC Commander Manual"
+[kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
 
 <!-- Links to external (ext-) sources -->

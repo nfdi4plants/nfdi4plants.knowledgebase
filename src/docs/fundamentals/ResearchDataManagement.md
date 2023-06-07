@@ -94,5 +94,5 @@ Name | Type | Tasks on metadata
 
 <!-- DataPLANT web links -->
 
-[kb-ArcCommander-Manual]: ../implementation/ArcCommanderManual/index.html "ARC Commander Manual"
+[kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"

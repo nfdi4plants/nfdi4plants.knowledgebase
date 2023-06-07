@@ -38,7 +38,7 @@ DataPLANT provides the ARC Commander command line tool to create, manage and sha
 
 # ARC Commander Installation
 
-Please install the latest version of the ARC Commander for your operating system according to [these instructions](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/index.html).
+Please install the latest version of the ARC Commander for your operating system according to [these instructions](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index.html).
 
 Check if the ARC Commander is functional by displaying the ARC Commander version and help menu:
 

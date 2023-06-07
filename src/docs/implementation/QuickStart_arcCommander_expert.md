@@ -12,7 +12,7 @@ article_status: published
 todo:
 ---
 
-> :warning: Before using this guide, please follow the Setup instructions in the [ARC Commander manual](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommanderManual/index.html)
+> :warning: Before using this guide, please follow the Setup instructions in the [ARC Commander manual](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index.html)
 
 ## Checkpoint
 

@@ -240,4 +240,4 @@ Briefly:
 
 
 <!-- kb-Implementation -->
-[kb-ARC_Commander-Manual-Installation]: ../implementation/ArcCommanderManual/arc_installation.html "ARC Commander Installation"
+[kb-ARC_Commander-Manual-Installation]: ../ArcCommanderManual/arc_installation.html "ARC Commander Installation"

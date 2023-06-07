@@ -86,7 +86,7 @@ In order to use the [DataHUB][hp-DataHUB] and other DataPLANT infrastructure and
 
 [gh-DataPlant]: <https://github.com/nfdi4plants/ARC-specification/> "GitHub DataPLANT"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
-[kb-ArcCommander-Manual]: ../implementation/ArcCommanderManual/index.html "ARC Commander Manual"
+[kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 
 <!-- Links to external (ext-) sources -->
 
