@@ -5,25 +5,15 @@ published: 2022-08-05
 author: Martin Kuhl
 author_orcid: https://orcid.org/0000-0002-8493-1077
 author_github: martin-kuhl
-add toc: false
+add toc: true
 add sidebar: _sidebars/mainSidebar.md
 article_status: published
 todo:
 ---
 
-This document is work in progress. If you experience any inconsistencies, have questions or would like to suggest additions, please feel free to <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">contact us</a> or open an issue in our [Helpdesk](<https://helpdesk.nfdi4plants.org>).
+## About
 
-We are very happy that you chose our tools and infrastructure to create and share your own ARCs. In this QuickStart we focus on explaining the ARC structure and its different components.
-
-- [Viola's ARC](#violas-arc)
-- [isa.investigation.xlsx](#isainvestigationxlsx)
-- [Studies](#studies)
-  - [isa.study.xlsx](#isastudyxlsx)
-- [Assays](#assays)
-  - [isa.assay.xlsx](#isaassayxlsx)
-- [Workflows](#workflows)
-- [Runs](#runs)
-- [Cheat sheet](#cheat-sheet)
+In this guide we focus on explaining the ARC structure and its different components.
 
 ## Viola's ARC
 Let's imagine a scenario where your project partner suggests at a conference to use this cool new Annotated Research Context (ARC) for your collaboration. Convinced by the versioning system and the single point of entry logic, you are motivated to set up your first own ARC after returning to the lab and fill it with your latest project results. Back home, however, you only remember the basic ARC structure and something about some isa.xlsx files. So how do you transfer your project into the empty ARC your project partner shared with you?

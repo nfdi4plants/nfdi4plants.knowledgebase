@@ -4,32 +4,15 @@ title: ARC Commander QuickStart
 published: 2022-08-05
 author: Martin Kuhl
 author_github: martin-kuhl
-add toc: false
+add toc: true
 add sidebar: _sidebars/mainSidebar.md
 article_status: published
 todo:
 ---
 
+## About
 
-
-This document is work in progress. If you experience any inconsistencies, have questions or would like to suggest additions, please feel free to <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">contact us</a> or open an issue in our [Helpdesk](<https://helpdesk.nfdi4plants.org>).
-
-We are very happy that you chose our tools and infrastructure to create and share your own ARCs. In this QuickStart we focus on how to use the "ARC Commander" to store and share your data.
-
-
-
-- [Environment and setup](#environment-and-setup)
-  - [The command line](#the-command-line)
-  - [Required software](#required-software)
-- [ARC initialization](#arc-initialization)
-- [Adding metadata](#adding-metadata)
-  - [ISA investigation](#isa-investigation)
-  - [ISA studies and assays](#isa-studies-and-assays)
-- [Sharing your ARC](#sharing-your-arc)
-  - [DataPLANT registration and access](#dataplant-registration-and-access)
-  - [ARC synchronization](#arc-synchronization)
-  - [Setting a git user](#setting-a-git-user)
-  - [Invite collaborators](#invite-collaborators)
+In this guide we focus on how to use the "ARC Commander" to store and share your data.
 
 ## Environment and setup
 

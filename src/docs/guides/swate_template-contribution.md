@@ -14,7 +14,9 @@ add toc: false
 add sidebar: _sidebars\mainSidebar.md
 ---
 
-:bulb: This walk-through tutorial is meant for data stewards and data managers
+## About
+
+This walk-through guide is meant for data stewards and data managers
 
 ## Prerequisites
 
