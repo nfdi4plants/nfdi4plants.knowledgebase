@@ -10,7 +10,7 @@ status: draft
 
 Welcome to the Swate Manual.
 
-Here you can find documentation about Swate features and best practices. If you want to get a picture of Swate first, please check out the [quickstart](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/QuickStart_swate.html).
+Here you can find documentation about Swate features and best practices. If you want to get a picture of Swate first, please check out the [quickstart](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/QuickStart_swate.html).
 
 Please explore the sections on the left to find guides on
 
