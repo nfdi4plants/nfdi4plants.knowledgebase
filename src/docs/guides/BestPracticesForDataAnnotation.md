@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: How to annotate your data correctly
+title: Best Practices For Data Annotation
 published: 2022-11-07
 author: Martin Kuhl
 author_orcid: https://orcid.org/0000-0002-8493-1077
@@ -20,6 +20,7 @@ todo:
 In this guide, we will take a closer look at some experimental scenarios that every scientist might face on a more or less regular basis. With these examples, we aim to provide you with the best practices for  data annotation in isa.study.xlsx and isa.assay.xlsx files allowing you to generate machine-readable and thereby, interoperable and reproducible data. Do not hesitate to contact us if you think that we are missing some urgent examples or if you have any further questions.
 
 ## Annotation of biological and technical replicates
+
 In our first scenario we focus on annotating the origin and relationship between biological and technical replicates within a fictional study. We started with three biological replicates (Plant A, Plant B, and Plant C) of the model organism *Arabidsopis thaliana* (Characteristic [Organism]), which were grown under particular conditions (Characteristic [growth day length]). Harvesting of the plants or particular parts resulted in three samples: S1, S2, and S3. These information were stored within the isa.study.xlsx file.
 
 Subsequent proccesing steps, mostly omitted here for better clarity, are stored within one or multiple isa.assay.xlsx files. In our scenario, three technical replicates of each sample were analyzed via LC/MS (Parameter [instrument model]), generating nine raw data files. 

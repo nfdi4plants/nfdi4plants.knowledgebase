@@ -104,8 +104,8 @@ Fill the cells beneath each building block with ontology terms to note the respe
 [kb-ArcCommander]: ../implementation/ArcCommander.html "ARC Commander"
 
 <!-- kb-Tutorials -->
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arcCommander.html "Quickstart ARC"
-[kb-QuickStart_Swate]: ../tutorials/QuickStart_swate.html "Swate QuickStart"
+[kb-QuickStart_arc]: ../tutorials/arcCommander_QuickStart.html "ARC User Journey"
+[kb-swate_QuickStart]: ../tutorials/swate_QuickStart.html "Swate QuickStart"
 
 
 <!-- Links to DataPLANT Homepage (hp-) -->

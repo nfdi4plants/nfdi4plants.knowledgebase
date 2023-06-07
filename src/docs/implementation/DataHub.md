@@ -73,7 +73,7 @@ In order to use the [DataHUB][hp-DataHUB] and other DataPLANT infrastructure and
 [kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 
 <!-- kb-Tutorials -->
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+[kb-QuickStart_arc]: ../tutorials/ARCUserJourney.html "ARC User Journey"
 
 
 <!-- Links to DataPLANT Homepage (hp-) -->

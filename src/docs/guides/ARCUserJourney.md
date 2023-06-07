@@ -48,7 +48,7 @@ In case your investigation contains more than one study, each of these studies i
 
 Every study contains one `isa.study.xlsx` file to specify the characteristics of all material and resources. Resources described in a study file can be the input for one or multiple assays or workflows. The workbook contains (at least) two worksheets:
 
-- "CircadianClock_Light regimes": One or more worksheets, depending on the number of used protocols, to annotate the properties of your source material following the ISA model. The sheet name is not obligatory to be the exact same as the "Study Identifier". While this can be done manually, we recommend using our ontology supported annotation tool [Swate](QuickStart_swate.html).
+- "CircadianClock_Light regimes": One or more worksheets, depending on the number of used protocols, to annotate the properties of your source material following the ISA model. The sheet name is not obligatory to be the exact same as the "Study Identifier". While this can be done manually, we recommend using our ontology supported annotation tool [Swate](swate_QuickStart.html).
 - "Study": Viola collected the administrative metadata of her study in this worksheet. This information can later be transferred into the `isa.investigation.xlsx` using the [ARC Commander][kb-ArcCommander].
 
 ![ISA-study](../img/ARC_study.jpg)
@@ -66,7 +66,7 @@ The `assays` folder allows you to store data and metadata from experimental proc
 Viola can annotate her experimental workflows of the metabolomics and transcriptomics assays with process parameters in the `isa.assay.xlsx` file, which needs to be present for every assay. The workbook contains two or more worksheets, depending on the number of used protocols:
 
 
-- "MetaboliteExtraction": A worksheet to annotate the experimental workflow, in this case for extraction of metabolites. While this can be done manually, we recommend using our ontology supported annotation tool [Swate][kb-QuickStart_swate].
+- "MetaboliteExtraction": A worksheet to annotate the experimental workflow, in this case for extraction of metabolites. While this can be done manually, we recommend using our ontology supported annotation tool [Swate][kb-swate_QuickStart].
 > Note: Using the name of the protocol for the name of the worksheet can provide clarity. 
 - "MetaboliteMeasurement": A worksheet that describes the quantification of polar metabolites using gas-chromatography mass-spectrometry.
 - "Assay": Viola collected the administrative metadata of her assay in this worksheet. This information can later be transferred into the `isa.investigation.xlsx` using the ARC Commander.
@@ -88,13 +88,13 @@ After Viola generated her plots, she placed them in individual subdirectories, s
 
 ## Cheat sheet
 
-We hope that these examples nicely illustrated the ARC structure and that you are now ready to produce your own ARCs. Use the figure below as a cheat sheet to remember where to store which files. Or follow the [ARC Commander QuickStart][kb-QuickStart_arcCommander] to try it out yourself.
+We hope that these examples nicely illustrated the ARC structure and that you are now ready to produce your own ARCs. Use the figure below as a cheat sheet to remember where to store which files. Or follow the [ARC Commander QuickStart][kb-arcCommander_QuickStart] to try it out yourself.
 
 ![IllustratedARCStructure](../img/ARC_IllustratedFolderStructure.jpg)
 
 <!--  Links -->
 [kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
 [kb-ArcCommander]: ../implementation/ArcCommander.html "DataPLANT ARC Commander"
-[kb-QuickStart_swate]: ../tutorials/QuickStart_swate.html "Quickstart Swate"
-[kb-QuickStart_arcCommander]: ../tutorials/QuickStart_arcCommander.html "QuickStart ARC Commander"
+[kb-swate_QuickStart]: ../tutorials/swate_QuickStart.html "Quickstart Swate"
+[kb-arcCommander_QuickStart]: ../tutorials/arcCommander_QuickStart.html "QuickStart ARC Commander"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"

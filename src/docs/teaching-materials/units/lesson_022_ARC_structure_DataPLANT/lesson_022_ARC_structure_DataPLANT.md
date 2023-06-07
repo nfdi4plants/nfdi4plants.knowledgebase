@@ -45,7 +45,7 @@ teaching mode:
 duration_minutes: 7
   - Depends on how deep one goes on each slide
 links and references:
-  - https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/QuickStart_arcCommander.html#invite-collaborators
+  - https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html#invite-collaborators
   - https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI
 ---
 

@@ -26,7 +26,7 @@ Unless you actively request it to, the ARC Commander does not delete, modify or 
 ## Do I have to use the ARC Commander?
 
 No. As with most tools and services developed in DataPLANT, you are not obliged to use the ARC Commander to benefit from DataPLANT's support in [FAIR RDM][kb-ResearchDataManagement].
-However, we'd highly recommend to check it following the [ARC Commander QuickStart][kb-QuickStart_arcCommander].
+However, we'd highly recommend to check it following the [ARC Commander QuickStart][kb-arcCommander_QuickStart].
 
 <!-- Or do you prefer to... -->
 The alternative would be to
@@ -43,7 +43,7 @@ The ARC Commander runs on current Windows, Mac and Linux operating systems. At t
 
 For details, please
 
- - try out the [ARC Commander QuickStart][kb-QuickStart_arcCommander],
+ - try out the [ARC Commander QuickStart][kb-arcCommander_QuickStart],
  - check the [GitHub repository][gh-ARC Commander] to download and install the latest ARC Commander release on your device, or
  - explore the [ARC Commander Manual][kb-ARC Commander-Manual] for in-depth details.
 
@@ -64,7 +64,7 @@ For details, please
 <!-- kb-Implementation -->
 [kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
 [kb-ARC Commander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
-[kb-QuickStart_arcCommander]: ../guides/QuickStart_arcCommander.html "ARC Commander QuickStart"
+[kb-arcCommander_QuickStart]: ../guides/arcCommander_QuickStart.html "ARC Commander QuickStart"
 [kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 [kb-Swate]: ../implementation/Swate.html "Swate"
 

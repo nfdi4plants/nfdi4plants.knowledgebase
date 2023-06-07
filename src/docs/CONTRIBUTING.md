@@ -227,9 +227,9 @@ British English
 [kb-Swate]: ../implementation/Swate.html "DataPLANT Swate"
 
 <!-- kb-Tutorials -->
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
-[kb-QuickStart_swate]: ../tutorials/QuickStart_swate.html "Quickstart Swate"
-[kb-QuickStart_arcCommander]: ../tutorials/QuickStart_arcCommander.html "QuickStart ARC Commander"
+[kb-QuickStart_arc]: ../tutorials/ARCUserJourney.html "ARC User Journey"
+[kb-swate_QuickStart]: ../tutorials/swate_QuickStart.html "Quickstart Swate"
+[kb-arcCommander_QuickStart]: ../tutorials/arcCommander_QuickStart.html "QuickStart ARC Commander"
 
 <!-- Links to DataPLANT Homepage (hp-) -->
 

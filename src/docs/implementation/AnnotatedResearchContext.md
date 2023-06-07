@@ -108,7 +108,7 @@ Name | Type | Tasks on metadata
 [kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
 [kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 [kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arcCommander.html "Quickstart ARC"
+[kb-QuickStart_arc]: ../tutorials/arcCommander_QuickStart.html "ARC User Journey"
 [kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
 [kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
 [kb-DataSharing]: ../fundamentals/DataSharing.html "Data Sharing"
