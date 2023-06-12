@@ -9,6 +9,11 @@ article_status: published
 todo:  
 ---
 
+<br>
+
+<span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #C21F3A;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Data Steward</span>  <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #2D3E50;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Tutorial</span>
+
+
 Your contribution to the DataPLANT Knowledge Base is highly appreciated.
 This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.
 
@@ -227,9 +232,9 @@ British English
 [kb-Swate]: ../implementation/Swate.html "DataPLANT Swate"
 
 <!-- kb-Tutorials -->
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
-[kb-QuickStart_swate]: ../tutorials/QuickStart_swate.html "Quickstart Swate"
-[kb-QuickStart_arcCommander]: ../tutorials/QuickStart_arcCommander.html "QuickStart ARC Commander"
+[kb-QuickStart_arc]: ../tutorials/ARCUserJourney.html "ARC User Journey"
+[kb-swate_QuickStart]: ../tutorials/swate_QuickStart.html "Quickstart Swate"
+[kb-arcCommander_QuickStart]: ../tutorials/arcCommander_QuickStart.html "QuickStart ARC Commander"
 
 <!-- Links to DataPLANT Homepage (hp-) -->
 

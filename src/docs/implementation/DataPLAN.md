@@ -75,7 +75,7 @@ Give [DataPLAN][hp-DataPLAN] a try and share your feedback or feature request wi
 
 [kb-Swate]: ../implementation/Swate.html "DataPLANT Swate"
 <!-- kb-Tutorials -->
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+[kb-QuickStart_arc]: ../tutorials/ARCUserJourney.html "ARC User Journey"
 
 
 <!-- Links to DataPLANT Homepage (hp-) -->

@@ -50,7 +50,7 @@ If you cannot find a fitting term for your data annotation, you can try to use S
 ## What's next?
 After reading this article, you should 
 
-- check the [Swate QuickStart][kb-QuickStart_Swate] and
+- check the [Swate QuickStart][kb-swate_QuickStart] and
 - explore the [Swate Manual][kb-SwateManual] for in-depth details.
 
 <!-- Links to DataPLANT knowledge base (kb-) -->
@@ -74,7 +74,7 @@ After reading this article, you should
 [kb-ArcCommander]: ../implementation/ArcCommander.html "ARC Commander"
 
 <!-- kb-Tutorials -->
-[kb-QuickStart_Swate]: ../implementation/QuickStart_swate.html "Swate QuickStart"
+[kb-swate_QuickStart]: ../guides/swate_QuickStart.html "Swate QuickStart"
 
 <!-- Links to DataPLANT Homepage (hp-) -->
 
