@@ -1,0 +1,633 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - Study
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <div slot="searchbar">
+        <link href="/nfdi4plants.knowledgebase/pagefind/pagefind-ui.css" rel="stylesheet"/>
+        <script src="/nfdi4plants.knowledgebase/pagefind/pagefind-ui.js" type="text/javascript"></script>
+        <div id="search"></div>
+        <script>
+          window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ 
+        element: "#search",
+        baseUrl: "/nfdi4plants.knowledgebase"
+    });
+});
+        </script>
+      </div>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/index.html">
+          Home
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/CONTRIBUTING.html">
+          Contribution
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/fundamentals/index.html">
+          Fundamentals
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/ResearchDataManagement.html">
+          Research Data Management
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/FairDataPrinciples.html">
+          FAIR Data Principles
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/Metadata.html">
+          Metadata
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/Ontologies.html">
+          Ontologies
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataSharing.html">
+          Data Sharing
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataPublications.html">
+          Data Publications
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataManagementPlan.html">
+          Data Management Plan
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/VersionControlGit.html">
+          Version Control & Git
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">
+          Public Data Repositories
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/PersistentIdentifiers.html">
+          Persistent Identifiers
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/implementation/index.html">
+          DataPLANT Implementations
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">
+            Annotated Research Context
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_arc.html">
+            User Journey
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">
+            ARC Commander
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_arcCommander.html">
+            QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_arcCommander_expert.html">
+            QuickStart (experts)
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/implementation/Swate.html">
+            Swate
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_swate.html">
+            QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_swate_walkthrough.html">
+            Walk-through
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/AnnotationPatterns.html">
+            Best Practices For Data Annotation
+          </a>
+        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/DataHub.html">
+          DataHUB
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/DataPLAN.html">
+          DataPLAN
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index.html">
+          ARC Commander Manual
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_dependencies.html">
+            Setup
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_dependencies.html">
+            Installing Dependencies
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/git_config.html">
+            Configure Git
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation.html">
+              Installing the ARC Commander
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_windows.html">
+              Windows
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_macos.html">
+              MacOS
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_linux.html">
+              Linux
+            </a>
+          </nfdi-sidebar-eleneo>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_access.html">
+            DataHUB Access
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_before_we_start.html">
+            Before we start
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_initialization.html">
+            Central Functions
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_initialization.html">
+            Initialize
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_get.html">
+            Clone
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_connect.html">
+            Connect
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_synchronization.html">
+            Synchronize
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_config.html">
+            Configure
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_branch.html">
+            Branch
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa.html">
+            ISA Metadata Functions
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa.html">
+              ISA Metadata
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa_investigation.html">
+              Investigation
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa_study.html">
+              Study
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa_assay.html">
+              Assay
+            </a>
+          </nfdi-sidebar-eleneo>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_update.html">
+            Update
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_export.html">
+            Export
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/SwateManual/index.html">
+          Swate Manual
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html">
+            Setup
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html">
+            Installing Swate
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_browser.html">
+            Browser
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_desktop.html">
+            Desktop, via installer (beta-stage)
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_manual.html">
+              Desktop, manually (recommended)
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_manual_macos.html">
+              MacOS
+            </a>
+          </nfdi-sidebar-eleneo>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_organization.html">
+            Organization-wide
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs02-Annotation-Table.html">
+            Core Features
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs02-Annotation-Table.html">
+            Annotation tables
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs03-Building-Blocks.html">
+              Building blocks
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_types.html">
+              Building Block Types
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_add.html">
+              Adding a Building Block
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_units.html">
+              Using Units with Building Blocks
+            </a>
+          </nfdi-sidebar-eleneo>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs04-Ontology-Term-Search.html">
+            Filling cells with ontology terms
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs07-Advanced-Term-Search.html">
+            Advanced Term Search
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs05-Templates.html">
+              Templates
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_template-contribution.html">
+              Contribute Templates
+            </a>
+          </nfdi-sidebar-eleneo>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Using-the-File-Picker.html">
+            File Picker
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs06-ISA-JSON.html">
+            Expert Features
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs06-ISA-JSON.html">
+            ISA-JSON
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/index.html">
+          Teaching Materials
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/slides.html">
+            Slides
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/slides/DataPLANT.html">
+            DataPLANT
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/slides/ARC.html">
+            Annotated Research Context
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/slides/Events.html">
+              Events
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html">
+              CEPLAS Start Your ARC Series
+            </a>
+          </nfdi-sidebar-eleneo>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/videos.html">
+            Videos
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/videos/StartYourARC.html">
+            Start Your ARC Series
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/faqs/faqs.html">
+          Frequently Asked Questions
+        </a>
+      </nfdi-sidebar-eleneo>
+      <h1 class="front-header">
+        Study
+      </h1>
+      <i class="help">
+        last updated at 2022-12-13
+      </i>
+      <nfdi-toc></nfdi-toc>
+      <nfdi-h2 id="adding-a-study">Adding a study</nfdi-h2>
+<blockquote>
+<p>⚠️ Make sure to close all isa.*.xlsx files before submitting a new command to the command line, as otherwise the information cannot be saved by the ARC Commander.</p>
+</blockquote>
+<ul>
+<li>An investigation may contain several studies, which in turn can include multiple assays.</li>
+<li>There is no need for a folder structure that represents a study since all data are associated with assays. Studies can be created to group related assays within an investigation. A study consists of a single isa.study.xlsx file, can be created by using <code>arc s init</code>.</li>
+<li>An existing study can be registered to the investigation by using <code>arc s register</code>.</li>
+<li>To create the isa.study file and afterwards register the new study <code>arc s add</code> can be used. This command combines init and register.</li>
+</ul>
+<blockquote>
+<p>⚠️ A study identifier also defines the isa file name, so ensure to avoid special characters!</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Input</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identifier (Mandatory)</td>
+<td>A unique identifier, either a temporary identifier supplied by users or one generated by a repository or other database. For example, it could be an identifier complying with the LSID specification.</td>
+<td>GelBasedProteomicsWT</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>A concise phrase used to encapsulate the purpose and goal of the study.</td>
+<td>Gel-based proteomics of wild type cells</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A textual description of the study, with components such as objective or goals.</td>
+<td>Study to investigate the proteins of wild type yeast cells under standard growth conditions.</td>
+</tr>
+<tr>
+<td>SubmissionDate:</td>
+<td>The date on which the study is submitted to an archive.</td>
+<td></td>
+</tr>
+<tr>
+<td>PublicReleaseDate:</td>
+<td>The date on which the study SHOULD be released publicly.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>If no study identifier is given, a study is created with the assay identifier as study identifier. Instead of using the editor, the following command can be used:<br />
+<code>arc s add --identifier Test --title &quot;Gel-based proteomics of wild type cells&quot; --description &quot; Study to investigate the proteins of wild type yeast cells under standard growth conditions.&quot;</code></p>
+<nfdi-h2 id="listing-and-inspecting-registered-studies">Listing and inspecting registered studies</nfdi-h2>
+<ul>
+<li>Registered assays can be listed by <code>arc s list</code>.</li>
+<li>To get detailed information about a specific entry use <code>arc s get</code>. If no arguments are specified an editor will request a study identifier to print all registered information into the shell.</li>
+</ul>
+<nfdi-h2 id="editing-study-information">Editing study information</nfdi-h2>
+<ul>
+<li>A study can be edited using <code>arc s edit</code>.
+<ul>
+<li>If no further arguments are specified an editor opens, that asks for the study identifier that should be edited.</li>
+<li>If the study exists, another editor opens with information already known for the respective study. The required values can be edited.</li>
+</ul>
+</li>
+<li>Instead of using the editor, the following command can be used. To circumvent editor pop ups, not arc s edit, but <code>arc s update</code> must be used:<br />
+<code>arc s update --identifier GelBasedProteomicsWT --submissiondate &quot;13.04.2020&quot;</code></li>
+</ul>
+<nfdi-h2 id="removing-a-study">Removing a study</nfdi-h2>
+<ul>
+<li>A study can be unregistered from the investigation by using <code>arc s unregister</code>.</li>
+<li>A study folder structure can be deleted by using <code>arc s delete</code>.</li>
+<li>To both, delete the study folder structure and unregister it from the investigation <code>arc s remove</code> can be used.</li>
+</ul>
+<nfdi-h2 id="registering-persons-to-a-study">Registering persons to a study</nfdi-h2>
+<ul>
+<li>Every person, that is involved in a study can be registered with personal information using <code>arc s person register</code>.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Input</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>StudyIdentifier (Mandatory)</td>
+<td>Identifier of the study the person is associated with</td>
+<td>GelBasedProteomicsWT</td>
+</tr>
+<tr>
+<td>LastName (Mandatory)</td>
+<td>The last name of a person associated with the investigation.</td>
+<td>Doe</td>
+</tr>
+<tr>
+<td>FirstName (Mandatory)</td>
+<td>The first name of a person associated with the investigation.</td>
+<td>John</td>
+</tr>
+<tr>
+<td>MidInitials</td>
+<td>The middle initials of a person associated with the investigation.</td>
+<td>P</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>The email address of a person associated with the investigation.</td>
+<td>jpdoe@mail.com</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>The telephone number of a person associated with the investigation.</td>
+<td>+49(0)631 205 3045</td>
+</tr>
+<tr>
+<td>Fax</td>
+<td>The fax number of a person associated with the investigation.</td>
+<td></td>
+</tr>
+<tr>
+<td>Address</td>
+<td>The address of a person associated with the investigation.</td>
+<td>Paul Ehrlich Straße 23, 67663 Kaiserslautern, Germany</td>
+</tr>
+<tr>
+<td>Affiliation</td>
+<td>The organization affiliation for a person associated with the investigation.</td>
+<td>Department of M21 Measurements, Technische Universität Kaiserslautern, Germany</td>
+</tr>
+<tr>
+<td>Roles</td>
+<td>Term to classify the role(s) performed by this person in the context of the investigation, which means that the roles reported here need not correspond to roles held withing their affiliated organization. Multiple annotations or values attached to one person can be provided by using a semicolon (;) Unicode (U0003+B) as a separator (e.g.: submitter;funder;sponsor). The term can be free text or from, for example, a controlled vocabulary or an ontology. If the latter source is used the Term Accession Number and Term Source REF fields below are required.</td>
+<td>supervisor</td>
+</tr>
+<tr>
+<td>RolesTermAccessionNumber</td>
+<td>The accession number from the Term Source associated with the selected term.</td>
+<td></td>
+</tr>
+<tr>
+<td>RolesTermSourceREF</td>
+<td>dentifies the controlled vocabulary or ontology that this term comes from. The Source REF has to match one of the Term Source Names declared in the Ontology Source Reference section.  RolesTermSourceREF:</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Instead of using the editor, the following command can be used:<br />
+<code>arc s person register -s GelBasedProteomicsWT -l Doe -f John -m P --email jpdoe@mail.com --phone &quot;+49(0)631 205 3045&quot; --address &quot;Paul-Ehrlich-Straße 23, 67663 Kaiserslautern&quot; --affiliation &quot;Department of M21 Measurements, Technische Universität Kaiserslautern, Germany&quot; --roles &quot;supervisor&quot;</code></li>
+</ul>
+<nfdi-h3 id="listing-and-inspecting-registered-persons">Listing and inspecting registered persons</nfdi-h3>
+<ul>
+<li>Registered persons can be listed by <code>arc s person list</code>.</li>
+<li>To get detailed information about a specific entry use <code>arc s person get</code>. If no arguments are specified an editor will request a study identifier, a first and last name (mandatory) and optionally mid name initials to print all registered information into the shell.</li>
+</ul>
+<nfdi-h3 id="editing-person-information">Editing person information</nfdi-h3>
+<ul>
+<li>A person can be edited using <code>arc s person edit</code>.
+<ul>
+<li>If no further arguments are specified an editor opens, that asks for the person that should be edited.</li>
+<li>If the person exists, another editor opens with information already known for the respective person. The required values can be edited.</li>
+</ul>
+</li>
+<li>Instead of using the editor, the following command can be used. To circumvent editor pop ups, not <code>arc s person edit</code>, but <code>arc s person update</code> must be used:<br />
+<code>arc s person update -s GelBasedProteomicsWT -l Kunze -f Heinz-Rudolf --email hrkunze@mail.com --address &quot;Herzstraße 5, 12345 Musterstadt&quot;</code></li>
+</ul>
+<nfdi-h3 id="removing-a-person">Removing a person</nfdi-h3>
+<ul>
+<li>A person can be removed from a study using <code>arc s person unregister</code>. An editor will request the study identifier, first and last name (mandatory) and optionally mid name initials to unregister the person from the study in isa.investigation.xlsx.</li>
+<li>Instead of using the editor, the following command can be used:<br />
+<code>arc s person unregister -s GelBasedProteomicsWT -l Doe -f John -m P</code></li>
+</ul>
+<nfdi-h2 id="registering-publications-to-studies">Registering publications to studies</nfdi-h2>
+<ul>
+<li>If studies result in publications, they can be registered to the corresponding study.</li>
+<li>Study publications can be registered by <code>arc s publication register</code>.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Input</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>StudyIdentifier (Mandatory)</td>
+<td>Identifier of the study the publication is associated with</td>
+<td>GelBasedProteomicsWT</td>
+</tr>
+<tr>
+<td>DOI (Mandatory)</td>
+<td>A Digital Object Identifier (DOI) for that publication (where available).</td>
+<td>2021_ARC05_S01_01tmp</td>
+</tr>
+<tr>
+<td>PubMedID</td>
+<td>The PubMed IDs of the described publication(s) associated with this investigation.</td>
+<td></td>
+</tr>
+<tr>
+<td>AuthorList</td>
+<td>The list of authors associated with that publication.</td>
+<td>Lara Fox; Peter Croft</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>The title of publication associated with the investigation.</td>
+<td></td>
+</tr>
+<tr>
+<td>Status</td>
+<td>A term describing the status of that publication (i.e. submitted, in preparation, published).</td>
+<td>in preparation</td>
+</tr>
+<tr>
+<td>StatusTermAccessionNumber</td>
+<td>The accession number from the Term Source associated with the selected term.</td>
+<td></td>
+</tr>
+<tr>
+<td>StatusTermSourceREF</td>
+<td>Identifies the controlled vocabulary or ontology that this term comes from. The Source REF has to match one the Term Source Name declared in the in the Ontology Source Reference section.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Instead of using the editor, the following command can be used:<br />
+<code>arc s publication register -s GelBasedProteomicsWT -d 2021_ARC05_S01_01tmp --authorlist &quot;John P Doe; Eva Muller&quot; --title &quot;abc&quot;</code></li>
+</ul>
+<nfdi-h3 id="listing-and-inspecting-registered-publications">Listing and inspecting registered publications</nfdi-h3>
+<ul>
+<li>Registered publications can be listed by <code>arc s publication list</code>.</li>
+<li>To get detailed information about a specific entry use <code>arc s publication get</code>. If no arguments are specified an editor will request the study identifier and doi to print all registered information into the shell.</li>
+</ul>
+<nfdi-h3 id="editing-publication-information">Editing publication information</nfdi-h3>
+<ul>
+<li>A publication can be edited using <code>arc s publication edit</code>.
+<ul>
+<li>If no further arguments are specified an editor opens, that asks for the study identifier and publication doi that should be edited.</li>
+<li>If the publication exists, another editor opens with information already known for the respective publication. The required values can be edited.</li>
+</ul>
+</li>
+<li>Instead of using the editor, the following command can be used. To circumvent editor pop ups, not <code>arc s publication edit</code>, but <code>arc s publication update</code> must be used:<br />
+<code>arc s publication update -s &quot;GelBasedProteomicsWT&quot; -d 2021_ARC05_Pub01tmp --title &quot;The peroxisomal Flux-Compensator-Cycle is heavily dependent on P09 accumulation under redox stress.&quot;.</code></li>
+</ul>
+<nfdi-h3 id="removing-a-publication">Removing a publication</nfdi-h3>
+<ul>
+<li>A publication can be removed from a study using <code>arc s publication unregister</code>. An editor will request the study identifier and DOI to unregister the publication from the study in the isa.investigation file.</li>
+<li>Instead of using the editor, the following command can be used:<br />
+<code>arc s publication unregister -s GelBasedProteomicsWT -d 2021_ARC05_Pub01tmp</code></li>
+</ul>
+<nfdi-h2 id="registering-design-types-to-studies">Registering Design Types to Studies</nfdi-h2>
+<ul>
+<li>The design type of your study can be registered using <code>arc s design register</code>.
+<ul>
+<li>If no further arguments are specified an editor opens that asks for a term allowing the classification of the study based on the overall experimental design, e.g cross-over design or parallel group design.</li>
+<li>Additionally you are asked to supply the accession number from the term source and the Term Source REF if available.</li>
+</ul>
+</li>
+<li>Instead of using the editor, the following command can be used:
+<code>arc s design register -s &quot;GelBasedProteomicsWT&quot; -d &quot;YourDesignType&quot;</code></li>
+</ul>
+
+      <div>
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/ArcCommanderManual/arc_isa_study.md" style="margin-left: auto; display: block; width: 130px;">
+          ✏️ Edit this page
+        </a>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>
