@@ -10,7 +10,7 @@ add sidebar: _sidebars\mainSidebar.md
 A good starting point for your data annotation is using a predefined template. You can find them under the "Templates" tab. Here, click on the "Browse database" to explore all currently available templates.
 
 <p style="justify-content: center; display: flex">
-<img src="../../img/swate-tab-templates.png" style="height: 300px"  />
+<img src="./../img/swate-tab-templates.png" style="height: 300px"  />
 </p>
 
 ### Template search

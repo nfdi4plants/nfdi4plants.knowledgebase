@@ -63,7 +63,7 @@ For details, please
 
 <!-- kb-Implementation -->
 [kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
-[kb-ARC Commander-Manual]: ../implementation/ArcCommanderManual/index.html "ARC Commander Manual"
+[kb-ARC Commander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 [kb-QuickStart_arcCommander]: ../implementation/QuickStart_arcCommander.html "ARC Commander QuickStart"
 [kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 [kb-Swate]: ../implementation/Swate.html "Swate"

@@ -66,7 +66,7 @@ After reading this article, you should
 [kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
 [kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
 [kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
-[kb-SwateManual]: ../implementation/SwateManual/index.html "Swate Manual"
+[kb-SwateManual]: ../SwateManual/index.html "Swate Manual"
 
 <!-- kb-Implementation -->
 [kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
@@ -87,7 +87,7 @@ After reading this article, you should
 [gh-DataPlant]: <https://github.com/nfdi4plants/> "GitHub DataPLANT"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/> "ArcCommander"
-[kb-ArcCommander-Manual]: ../implementation/ArcCommanderManual/index.html "ARC Commander Manual"
+[kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
 
 <!-- Links to external (ext-) sources -->

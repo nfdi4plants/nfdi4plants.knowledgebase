@@ -18,5 +18,5 @@ title: tutorial_swate_installation
 
 # Swate Installation
 
-Please follow [these instructions](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/SwateManual/Docs01-Installing-Swate.html) to install the latest version of Swate.
+Please follow [these instructions](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html) to install the latest version of Swate.
 

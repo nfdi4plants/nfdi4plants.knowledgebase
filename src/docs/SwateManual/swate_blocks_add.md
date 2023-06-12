@@ -8,7 +8,7 @@ add sidebar: _sidebars\mainSidebar.md
 ---
 
 <p style="display: flex; justify-content: center">
-<img src="./../../img/Swate-AddBuildingBlock-Exp.jpg?v31.01.22" style="height: 300px">
+<img src="./../img/Swate-AddBuildingBlock-Exp.jpg?v31.01.22" style="height: 300px">
 </p>
 
 1. Choose the type of building block you want to add (A). For more information on building block types, click [here](#building-block-types).
@@ -36,6 +36,6 @@ add sidebar: _sidebars\mainSidebar.md
 3. Click *Add building block* to insert the building block in an existing [Annotation Table](./Docs02-Annotation-Table.html). The new building block will be added to the right of any currently selected column of the table. 
     - 👀 Swate will automatically skip any reference columns.
 4. Any input or output building block will only add a <u>single</u> column, any descriptive building block will add <u>three</u> columns or <u>four</u> column if it is created with a unit. Only the main column column will be visible by default, all other reference columns will be hidden.
-    - 👀 You can hold <kbd>Ctrl</kbd> and click the *Autoformat Table* <a href="./../../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a> to adjust column widths and unhide all hidden columns.   
+    - 👀 You can hold <kbd>Ctrl</kbd> and click the *Autoformat Table* <a href="./../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a> to adjust column widths and unhide all hidden columns.   
 
 <br>
