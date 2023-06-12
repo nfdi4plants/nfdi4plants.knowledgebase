@@ -17,14 +17,20 @@ add sidebar: _sidebars/mainSidebar.md
 ## About
 
 DataPLANT provides the Excel Add-In [Swate](./../implementation/Swate.html) to support you in data annotation.
-In this walk-through, we guide you on annotating your data using Swate with a show-case example.
+In this walk-through, we guide you on annotating data using [Swate](./../implementation/Swate.html) with a show-case example.
 
 ## Before we can start
 
 :ballot_box_with_check: Please [install Swate](./../SwateManual/Docs01-Installing-Swate.html)  
 :bulb: Consider reading about [Swate](./../implementation/Swate.html)
 
-## Excel Tables
+## Annotation Workflow
+
+<img src="./../img/Swate-Overlay-Exp.jpg?v27.01.202" style="height: 300px">
+
+*This image displays major areas of the Swate user interface, which will be referenced below.*
+
+## A small detour on "Excel Tables"
 
 Swate uses an Excel table as main tool to annotate workflows. Each table represents one process from input to output.
 
@@ -40,11 +46,7 @@ For example:
 >       └── table (e.g. annotationTable)
 > ```
 
-## Annotation Workflow
 
-<img src="./../img/Swate-Overlay-Exp.jpg?v27.01.202" style="height: 300px">
-
-*This image displays major areas of the Swate user interface, which will be referenced below.*
 
 ### Create an annotation table
 
