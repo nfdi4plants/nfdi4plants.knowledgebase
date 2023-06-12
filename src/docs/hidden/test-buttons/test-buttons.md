@@ -37,11 +37,11 @@ TODO:
 
 <div class="container">
    <form action="Badge-sorted.html?">
-  <button type="submit" class="btn btn-primary" style="background-color: #4FB3D9">User <span class="badge"> Read</span></button>
+  <button type="submit" class="btn btn-primary" style="background-color: #4FB3D9">Mode <span class="badge"> Read</span></button>
    <form action="Badge-sorted.html">
-  <button type="submit" class="btn btn-primary" style="background-color: #1FC2A7">User <span class="badge"> Walk-through</span></button>
+  <button type="submit" class="btn btn-primary" style="background-color: #1FC2A7">Mode <span class="badge"> Walk-through</span></button>
    <form action="Badge-sorted.html">
-  <button type="submit" class="btn btn-primary" style="background-color: #2D3E50">User <span class="badge"> Tutorial</span></button>
+  <button type="submit" class="btn btn-primary" style="background-color: #2D3E50">Mode <span class="badge"> Tutorial</span></button>
 </div>
 
 
