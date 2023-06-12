@@ -78,16 +78,16 @@
 
 # [Guides](/docs/guides/index.html)
 ## [ARC User Journey](/docs/guides/ARCUserJourney.html)
-## [Create your ARC]()
+## [Create your ARC](/docs/guides/index-CreateYourARC.html)
 ### [ARC Commander QuickStart](/docs/guides/arcCommander_QuickStart.html)
 ### [ARC Commander QuickStart (Experts)](/docs/guides/arcCommander_QuickStart_expert.html)
-## [Annotate Data in your ARC]()
+## [Annotate Data in your ARC](/docs/guides/index-AnnotateDataInYourARC.html)
 ### [Best Practices For Data Annotation](/docs/guides/BestPracticesForDataAnnotation.html)
 ### [Swate QuickStart](/docs/guides/swate_QuickStart.html)
 ### [Swate Walk-through](/docs/guides/swate_walkthrough.html)
 
 <!-- ## [Share your ARC]() -->
-## [Contribute]()
+## [Contribute](/docs/guides/index-Contribute.html)
 ### [Swate Templates](/docs/guides/swate_template-contribution.html)
 ### [Knowledge Base](/docs/CONTRIBUTING.html)
 
