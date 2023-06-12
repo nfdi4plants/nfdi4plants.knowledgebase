@@ -66,9 +66,6 @@
         <a href="/nfdi4plants.knowledgebase/index.html">
           Home
         </a>
-        <a slot="child" href="/nfdi4plants.knowledgebase/docs/CONTRIBUTING.html">
-          Contribution
-        </a>
       </nfdi-sidebar-eleneo>
       <nfdi-sidebar-eleneo slot="sidebar">
         <a href="/nfdi4plants.knowledgebase/docs/fundamentals/index.html">
@@ -113,7 +110,7 @@
           <a href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">
             Annotated Research Context
           </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_arc.html">
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ARCUserJourney.html">
             User Journey
           </a>
         </nfdi-sidebar-eleneo>
@@ -121,24 +118,24 @@
           <a href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">
             ARC Commander
           </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_arcCommander.html">
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html">
             QuickStart
           </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_arcCommander_expert.html">
-            QuickStart (experts)
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart_expert.html">
+            QuickStart (Experts)
           </a>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
           <a href="/nfdi4plants.knowledgebase/docs/implementation/Swate.html">
             Swate
           </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_swate.html">
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
             QuickStart
           </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/QuickStart_swate_walkthrough.html">
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_walkthrough.html">
             Walk-through
           </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/AnnotationPatterns.html">
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/BestPracticesForDataAnnotation.html">
             Best Practices For Data Annotation
           </a>
         </nfdi-sidebar-eleneo>
@@ -293,7 +290,7 @@
             <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs05-Templates.html">
               Templates
             </a>
-            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_template-contribution.html">
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_template-contribution.html">
               Contribute Templates
             </a>
           </nfdi-sidebar-eleneo>
@@ -307,6 +304,50 @@
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs06-ISA-JSON.html">
             ISA-JSON
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/guides/index.html">
+          Guides
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ARCUserJourney.html">
+          ARC User Journey
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-CreateYourARC.html">
+            Create your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html">
+            ARC Commander QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart_expert.html">
+            ARC Commander QuickStart (Experts)
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-AnnotateDataInYourARC.html">
+            Annotate Data in your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/BestPracticesForDataAnnotation.html">
+            Best Practices For Data Annotation
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
+            Swate QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_walkthrough.html">
+            Swate Walk-through
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-Contribute.html">
+            Contribute
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_template-contribution.html">
+            Swate Templates
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/CONTRIBUTING.html">
+            Knowledge Base
           </a>
         </nfdi-sidebar-eleneo>
       </nfdi-sidebar-eleneo>
@@ -363,7 +404,7 @@ It supports you in many actions on files within your ARC enabling you to sort, a
 <p>Unless you actively request it to, the ARC Commander does not delete, modify or move files within your ARC. While it may help with suggestions, the ARC Commander will not guess your intentions or override your decisions. For instance, the ARC Commander will not search any (ISA) metadata or other data files in your ARC and move them into the intended folders. If such files exist somewhere in your ARC, they will simply be ignored as &quot;additional payload&quot; (see <a href="https://github.com/nfdi4plants/ARC-specification/" title="ARC specifications">ARC specifications</a>). The ARC Commander does not operate / manage your ARC automatically. You have the full control over all actions. Whenever you decide to add or link new (meta)data in your ARC or synchronize it with the <a href="../implementation/DataHub.html" title="DataPLANT DataHUB">DataHUB</a>, you can do so with a few commands.</p>
 <nfdi-h2 id="do-i-have-to-use-the-arc-commander">Do I have to use the ARC Commander?</nfdi-h2>
 <p>No. As with most tools and services developed in DataPLANT, you are not obliged to use the ARC Commander to benefit from DataPLANT's support in <a href="../fundamentals/ResearchDataManagement.html" title="Research Data Management">FAIR RDM</a>.
-However, we'd highly recommend to check it following the <a href="../implementation/QuickStart_arcCommander.html" title="ARC Commander QuickStart">ARC Commander QuickStart</a>.</p>
+However, we'd highly recommend to check it following the <a href="../guides/arcCommander_QuickStart.html" title="ARC Commander QuickStart">ARC Commander QuickStart</a>.</p>
 <!-- Or do you prefer to... -->
 <p>The alternative would be to</p>
 <ul>
@@ -377,7 +418,7 @@ However, we'd highly recommend to check it following the <a href="../implementat
 <p>The ARC Commander runs on current Windows, Mac and Linux operating systems. At the moment, the tool is solely designed as a <dfn title="Command-line interface">CLI</dfn>-based software. For the future, the DataPLANT developers work on a <dfn title="Graphical user interface">GUI</dfn> version, making it even more intuitive for all users.</p>
 <p>For details, please</p>
 <ul>
-<li>try out the <a href="../implementation/QuickStart_arcCommander.html" title="ARC Commander QuickStart">ARC Commander QuickStart</a>,</li>
+<li>try out the <a href="../guides/arcCommander_QuickStart.html" title="ARC Commander QuickStart">ARC Commander QuickStart</a>,</li>
 <li>check the <a href="https://github.com/nfdi4plants/arcCommander" title="ARC Commander">GitHub repository</a> to download and install the latest ARC Commander release on your device, or</li>
 <li>explore the <a href="../ArcCommanderManual/index.html" title="ARC Commander Manual">ARC Commander Manual</a> for in-depth details.</li>
 </ul>

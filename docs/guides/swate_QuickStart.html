@@ -1,0 +1,497 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - Swate QuickStart
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <div slot="searchbar">
+        <link href="/nfdi4plants.knowledgebase/pagefind/pagefind-ui.css" rel="stylesheet"/>
+        <script src="/nfdi4plants.knowledgebase/pagefind/pagefind-ui.js" type="text/javascript"></script>
+        <div id="search"></div>
+        <script>
+          window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ 
+        element: "#search",
+        baseUrl: "/nfdi4plants.knowledgebase"
+    });
+});
+        </script>
+      </div>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/index.html">
+          Home
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/fundamentals/index.html">
+          Fundamentals
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/ResearchDataManagement.html">
+          Research Data Management
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/FairDataPrinciples.html">
+          FAIR Data Principles
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/Metadata.html">
+          Metadata
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/Ontologies.html">
+          Ontologies
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataSharing.html">
+          Data Sharing
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataPublications.html">
+          Data Publications
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataManagementPlan.html">
+          Data Management Plan
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/VersionControlGit.html">
+          Version Control & Git
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">
+          Public Data Repositories
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/PersistentIdentifiers.html">
+          Persistent Identifiers
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/implementation/index.html">
+          DataPLANT Implementations
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">
+            Annotated Research Context
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ARCUserJourney.html">
+            User Journey
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">
+            ARC Commander
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html">
+            QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart_expert.html">
+            QuickStart (Experts)
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/implementation/Swate.html">
+            Swate
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
+            QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_walkthrough.html">
+            Walk-through
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/BestPracticesForDataAnnotation.html">
+            Best Practices For Data Annotation
+          </a>
+        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/DataHub.html">
+          DataHUB
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/DataPLAN.html">
+          DataPLAN
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index.html">
+          ARC Commander Manual
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_dependencies.html">
+            Setup
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_dependencies.html">
+            Installing Dependencies
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/git_config.html">
+            Configure Git
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation.html">
+              Installing the ARC Commander
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_windows.html">
+              Windows
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_macos.html">
+              MacOS
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_linux.html">
+              Linux
+            </a>
+          </nfdi-sidebar-eleneo>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_access.html">
+            DataHUB Access
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_before_we_start.html">
+            Before we start
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_initialization.html">
+            Central Functions
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_initialization.html">
+            Initialize
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_get.html">
+            Clone
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_connect.html">
+            Connect
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_synchronization.html">
+            Synchronize
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_config.html">
+            Configure
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_branch.html">
+            Branch
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa.html">
+            ISA Metadata Functions
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa.html">
+              ISA Metadata
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa_investigation.html">
+              Investigation
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa_study.html">
+              Study
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa_assay.html">
+              Assay
+            </a>
+          </nfdi-sidebar-eleneo>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_update.html">
+            Update
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_export.html">
+            Export
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/SwateManual/index.html">
+          Swate Manual
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html">
+            Setup
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html">
+            Installing Swate
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_browser.html">
+            Browser
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_desktop.html">
+            Desktop, via installer (beta-stage)
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_manual.html">
+              Desktop, manually (recommended)
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_manual_macos.html">
+              MacOS
+            </a>
+          </nfdi-sidebar-eleneo>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_organization.html">
+            Organization-wide
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs02-Annotation-Table.html">
+            Core Features
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs02-Annotation-Table.html">
+            Annotation tables
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs03-Building-Blocks.html">
+              Building blocks
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_types.html">
+              Building Block Types
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_add.html">
+              Adding a Building Block
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_units.html">
+              Using Units with Building Blocks
+            </a>
+          </nfdi-sidebar-eleneo>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs04-Ontology-Term-Search.html">
+            Filling cells with ontology terms
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs07-Advanced-Term-Search.html">
+            Advanced Term Search
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs05-Templates.html">
+              Templates
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_template-contribution.html">
+              Contribute Templates
+            </a>
+          </nfdi-sidebar-eleneo>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Using-the-File-Picker.html">
+            File Picker
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs06-ISA-JSON.html">
+            Expert Features
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs06-ISA-JSON.html">
+            ISA-JSON
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/guides/index.html">
+          Guides
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ARCUserJourney.html">
+          ARC User Journey
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-CreateYourARC.html">
+            Create your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html">
+            ARC Commander QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart_expert.html">
+            ARC Commander QuickStart (Experts)
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-AnnotateDataInYourARC.html">
+            Annotate Data in your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/BestPracticesForDataAnnotation.html">
+            Best Practices For Data Annotation
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
+            Swate QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_walkthrough.html">
+            Swate Walk-through
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-Contribute.html">
+            Contribute
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_template-contribution.html">
+            Swate Templates
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/CONTRIBUTING.html">
+            Knowledge Base
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/index.html">
+          Teaching Materials
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/slides.html">
+            Slides
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/slides/DataPLANT.html">
+            DataPLANT
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/slides/ARC.html">
+            Annotated Research Context
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/slides/Events.html">
+              Events
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html">
+              CEPLAS Start Your ARC Series
+            </a>
+          </nfdi-sidebar-eleneo>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/videos.html">
+            Videos
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/videos/StartYourARC.html">
+            Start Your ARC Series
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/faqs/faqs.html">
+          Frequently Asked Questions
+        </a>
+      </nfdi-sidebar-eleneo>
+      <h1 class="front-header">
+        Swate QuickStart
+      </h1>
+      <i class="help">
+        last updated at 2022-08-05
+      </i>
+      <br>
+<a href="./index.html">
+  <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #B4CE82;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Newbie</span>
+  <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #2D3E50;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Tutorial</span>
+</a>
+<nfdi-h2 id="about">About</nfdi-h2>
+<p>DataPLANT provides the Excel Add-In Swate to support you in data annotation. In this guide we focus on adding metadata to your studies and assays with our excel tool <a href="./../implementation/Swate.html">Swate</a>. Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses. In the following</p>
+<nfdi-h2 id="before-we-can-start">Before we can start</nfdi-h2>
+<p>☑️ Please <a href="./../SwateManual/Docs01-Installing-Swate.html">install Swate</a>
+<br>
+💡 Consider reading about <a href="./../implementation/Swate.html">Swate</a>
+<br>
+💡 We assume that you already created an ARC that contains one or more isa.study.xlsx and isa.assay.xlsx file(s), respectively.</p>
+<nfdi-h2 id="swate">Swate</nfdi-h2>
+<ul>
+<li>Use the <em>create annotation table</em> button in the yellow pop-up box (this only appears if you start Swate on an Excel worksheet without an existing annotation table). An annotation table with the building blocks <em>Source Name</em> and <em>Sample Name</em> will be generated.</li>
+</ul>
+<p><img src="../img/Swate-CreateAnnotationTable-Exp.jpg" alt="" /></p>
+<ul>
+<li><p>Annotate your table with help of the <a href="https://nfdi4plants.github.io/AnnotationPrinciples/">annotation principles</a>.<br />
+Briefly:</p>
+<ul>
+<li><em>Characteristics</em> are used for study descriptions and describe inherent properties of the source material (e.g. a certain strain).</li>
+<li><em>Parameters</em> describe steps in your experimental workflow (e.g. an instrument model or a growth chamber), and</li>
+<li><em>Factors</em> describe independent variables that result in a specific output (e.g. the light intensity).</li>
+</ul>
+</li>
+<li><p>The combination of ISA (Characteristics, Parameter, Factor) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter [temperature] or Factor [temperature]).</p>
+</li>
+</ul>
+<nfdi-h2 id="customize-your-table-by-adding-building-blocks">Customize your table by adding building blocks</nfdi-h2>
+<ol>
+<li><p>Choose the type of building block you want to add (A).</p>
+</li>
+<li><p>If you chose a descriptive building block type (building blocks besides Sample Name, Source Name, and Data File Name), use search field (B) to search for an Ontology Term. Swate accesses the SwateDB with a list of established external ontologies designated suitable for use in plant science. In addition, we feature our own ontology DPBO to extend the DB with missing, but necessary terms.</p>
+</li>
+<li><p>If you want to add a building block with a unit, check box (C) and use search field (D) to look for a fitting unit term, e.g. degree Celsius as unit for Parameter [temperature].</p>
+</li>
+<li><p>If you could not find a fitting term, you can use the Advanced Term Search with the blue links above the <em>Add building block</em> button. If you still could not find a fitting term, use free text input.</p>
+</li>
+</ol>
+<p><img src="./../img/Swate-AddBuildingBlock-Exp.jpg" alt="" /></p>
+<ol start="5">
+<li>For more information on customizing your annotation table click <a href="./SwateManual/Docs03-Building-Blocks.html">here</a>.</li>
+</ol>
+<nfdi-h2 id="use-templates">Use templates</nfdi-h2>
+<p>Alternatively, you can also use one of DataPLANT’s <a href="./SwateManual/Docs05-Templates.html">Swate templates</a>. You can find them under the <em>Protocol Insert</em> tab in Swate.</p>
+<p><img src="https://user-images.githubusercontent.com/39732517/128495178-cc14690a-fc8a-4a3c-b591-365176ea2b00.png" alt="" /></p>
+<nfdi-h2 id="annotate-your-samples-and-data">Annotate your samples and data</nfdi-h2>
+<p>Fill the cells beneath each building block with ontology terms to note the respective <em>Characteristics, Parameter,</em> and <em>Factor</em> values of your experiment. Using the ontology term search function, you can fill multiple cells at once.</p>
+<ol>
+<li><p>When <em>Use related term directed search</em> (A) is enabled, Swate
+will suggest a selection of suitable terms within the ontology
+for the column header, e.g. <em>TripleTOF</em> <em>5600</em> for <em>instrument
+model.</em></p>
+</li>
+<li><p>When term directed search (A) is disabled, Swate will still
+suggest ontology terms, but without relation to the column
+header.</p>
+</li>
+<li><p>If you could not find a fitting term, use free text input.</p>
+</li>
+</ol>
+<p><img src="../img/swate_ontologyTermSearch2.png" alt="" /></p>
+<blockquote>
+<p>Note: More information on how to use Swate can be found <a href="../SwateManual/index.html" title="Swate Manual">here</a>.</p>
+</blockquote>
+<div style="page-break-after: always;"></div>
+<!-- Links to DataPLANT knowledge base (kb-) -->
+<!-- kb-Fundamentals -->
+<!-- kb-Implementation -->
+<!-- kb-Tutorials -->
+<!-- Links to DataPLANT Homepage (hp-) -->
+<!-- Links to DataPLANT GitHub (gh-) -->
+<!-- Links to external (ext-) sources -->
+
+      <h3>
+        DataPLANT Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <span style="display: inline-flex; flex-wrap: wrap;">
+          <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+            directly
+          </a>
+          .
+        </span>
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/guides/swate_QuickStart.md" style="margin-left: auto; display: block; width: 130px;">
+          ✏️ Edit this page
+        </a>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>
