@@ -1,4 +1,9 @@
 ---
+marp: true
+headingDivider:
+- 1
+- 2
+- 3
 layout: docs
 title: Swate Walk-through
 published: 2023-02-15
@@ -21,36 +26,60 @@ In this walk-through, we guide you on annotating data using [Swate](./../impleme
 
 ## Before we can start
 
-:ballot_box_with_check: Please [install Swate](./../SwateManual/Docs01-Installing-Swate.html)  
-:bulb: Consider reading about [Swate](./../implementation/Swate.html)
+<style scoped>
+#before-start ul{
+    list-style-type: none;
+    margin-left: 20px;
+    padding-left: 0;
+}
+</style>
 
-## Annotation Workflow
+<div id="before-start">
 
-<img src="./../img/Swate-Overlay-Exp.jpg?v27.01.202" style="height: 300px">
+- :bulb: Consider reading about [Swate](./../implementation/Swate.html)
+- :ballot_box_with_check: Please [install Swate](./../SwateManual/Docs01-Installing-Swate.html)
 
-*This image displays major areas of the Swate user interface, which will be referenced below.*
+</div>
 
-## A small detour on "Excel Tables"
 
-Swate uses an Excel table as main tool to annotate workflows. Each table represents one process from input to output.
+## The Swate annotation workflow
 
-For example:
+### Starting Swate
 
-- Plants &rarr; sampling &rarr; extract
+1. Open a fresh Excel workbook
+2. Load the Swate plug-in from Excel's "Data" tab ![Swate.Core Icon](https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate_c_24x24.png)
+
+:bulb: Depending on your Swate setup, the way to load Swate may differ.
+:bulb: If you want to annotate data in your existing ARC, open a `isa.study.xlsx` or  `isa.assay.xlsx` file from your ARC. 
+
+
+### Swate Overview
+
+<figure>
+  <img src="./../img/Swate-Overlay-Exp.jpg?v27.01.202" style="height: 400px">
+  <figcaption>Major areas of the Swate user interface.</figcaption>
+</figure>
+
+<!-- 
+### A small detour on "Excel Tables"
+
+Swate uses Excel's "table" feature to annotate workflows. Each table represents one *process* from input (e.g. plant leaf material) to output (e.g. leaf extract).
+
+Example workflows with three *processes* each:
+
+- Plant growth &rarr; sampling &rarr; extraction
 - Measured data files  &rarr; statistical analysis  &rarr; result files
 
-> :bulb: The Excel table feature allows to group data that belongs together inside one sheet. This is not to be confused with a (work)sheet or workbook.
+> :bulb: Excel tables allow to group data that belongs together inside one sheet. This is not to be confused with a (work)sheet or workbook.
 > ```bash
-> workbook (e.g. isa.assay.xlsx)
->  └── worksheet (e.g. plant_growth)
->       └── table (e.g. annotationTable)
-> ```
-
-
+> workbook              (e.g. "isa.assay.xlsx")
+>  └─── worksheet       (e.g. "plant_growth")
+>           └─── table  (e.g. "annotationTable")
+> ``` -->
 
 ### Create an annotation table
 
-Create a Swate annotation table via the <kbd>create annotation table</kbd> in the yellow pop-up box *OR* click the <kbd>Create Annotation Table</kbd> quick access button.
+Create a Swate annotation table via the <kbd>create annotation table</kbd> button in the yellow pop-up box *OR* click the <kbd>Create Annotation Table</kbd> quick access button.
   
 > :bulb: Each table is by default created with one input (`Source Name`) and one output (`Sample Name`) column  
 > :bulb: Only one annotation table can be added per Excel sheet
@@ -73,7 +102,7 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> in th
 > :bulb: You should see `instrument model` showing in a field in front of the search field  
 > :bulb: The search will now yield results related to `instrument model`
 
-4. You can search or <kbd>double click</kbd> into the search field to show all related terms. Select any instrument model and click <kbd>Fill selected cells with this term*</kbd>
+4. You can search or double click into the search field to show all related terms. Select any instrument model and click <kbd>Fill selected cells with this term*</kbd>
 
 ### Add a building block with a unit
 
@@ -107,7 +136,7 @@ Click the <kbd>Update Ontology Terms</kbd> quick access buttons.
 
 At this point. Your table should look similar to this
 
-<div class="table-container">
+<div class="table-container" style="height: 400px">
 
 | Source Name 	| Parameter [instrument model] 	| Term Source REF (MS:1000031) 	| Term Accession Number (MS:1000031)        	| Parameter [sample volume] 	| Unit       	| Term Source REF (MS:1000005) 	| Term Accession Number (MS:1000005)        	| Sample Name 	|
 |-------------	|------------------------------	|------------------------------	|-------------------------------------------	|---------------------------	|------------	|------------------------------	|-------------------------------------------	|-------------	|
