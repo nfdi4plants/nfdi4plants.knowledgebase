@@ -76,15 +76,6 @@
 ## [Expert Features](/docs/SwateManual/Docs06-ISA-JSON.html)
 ### [ISA-JSON](/docs/SwateManual/Docs06-ISA-JSON.html)
 
-# [Teaching Materials](/docs/teaching-materials/index.html)
-## [Slides](/docs/teaching-materials/slides.html)
-### [DataPLANT](/docs/teaching-materials/slides/DataPLANT.html)
-### [Annotated Research Context](/docs/teaching-materials/slides/ARC.html)
-### [Events](/docs/teaching-materials/slides/Events.html)
-#### [CEPLAS Start Your ARC Series](/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html)
-## [Videos](/docs/teaching-materials/videos.html)
-### [Start Your ARC Series](/docs/teaching-materials/videos/StartYourARC.html)
-
 # [Guides](/docs/guides/index.html)
 ## [ARC User Journey](/docs/guides/ARCUserJourney.html)
 ## [Create your ARC]()
@@ -99,5 +90,14 @@
 ## [Contribute]()
 ### [Swate Templates](/docs/guides/swate_template-contribution.html)
 ### [Knowledge Base](/docs/CONTRIBUTING.html)
+
+# [Teaching Materials](/docs/teaching-materials/index.html)
+## [Slides](/docs/teaching-materials/slides.html)
+### [DataPLANT](/docs/teaching-materials/slides/DataPLANT.html)
+### [Annotated Research Context](/docs/teaching-materials/slides/ARC.html)
+### [Events](/docs/teaching-materials/slides/Events.html)
+#### [CEPLAS Start Your ARC Series](/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html)
+## [Videos](/docs/teaching-materials/videos.html)
+### [Start Your ARC Series](/docs/teaching-materials/videos/StartYourARC.html)
 
 # [Frequently Asked Questions](/docs/faqs/faqs.html)
