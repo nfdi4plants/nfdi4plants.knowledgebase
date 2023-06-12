@@ -20,7 +20,7 @@
 ### [User Journey](/docs/guides/ARCUserJourney.html)
 ## [ARC Commander](/docs/implementation/ArcCommander.html)
 ### [QuickStart](/docs/guides/arcCommander_QuickStart.html)
-### [QuickStart (experts)](/docs/guides/arcCommander_QuickStart_expert.html)
+### [QuickStart (Experts)](/docs/guides/arcCommander_QuickStart_expert.html)
 ## [Swate](/docs/implementation/Swate.html)
 ### [QuickStart](/docs/guides/swate_QuickStart.html)
 ### [Walk-through](/docs/guides/swate_walkthrough.html)
@@ -89,15 +89,15 @@
 ## [ARC User Journey](/docs/guides/ARCUserJourney.html)
 ## [Create your ARC]()
 ### [ARC Commander QuickStart](/docs/guides/arcCommander_QuickStart.html)
-### [ARC Commander QuickStart (experts)](/docs/guides/arcCommander_QuickStart_expert.html)
-## [Annotate data in your ARC]()
+### [ARC Commander QuickStart (Experts)](/docs/guides/arcCommander_QuickStart_expert.html)
+## [Annotate Data in your ARC]()
 ### [Best Practices For Data Annotation](/docs/guides/BestPracticesForDataAnnotation.html)
 ### [Swate QuickStart](/docs/guides/swate_QuickStart.html)
 ### [Swate Walk-through](/docs/guides/swate_walkthrough.html)
 
 <!-- ## [Share your ARC]() -->
 ## [Contribute]()
-### [Swate templates](/docs/guides/swate_template-contribution.html)
-### [Knowledge base](/docs/CONTRIBUTING.html)
+### [Swate Templates](/docs/guides/swate_template-contribution.html)
+### [Knowledge Base](/docs/CONTRIBUTING.html)
 
 # [Frequently Asked Questions](/docs/faqs/faqs.html)
