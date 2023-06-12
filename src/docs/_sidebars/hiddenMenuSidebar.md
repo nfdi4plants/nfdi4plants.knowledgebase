@@ -25,3 +25,8 @@
 # Pandoc Readme:/docs/hidden/pandoc_tests/pandoc_readme.html
 # Pandoc Example PDF:/docs/hidden/pandoc_tests/pandoc_example_DataSharing.pdf
 ```
+
+```Button Testing
+# Button Testing:/docs/hidden/test-buttons/test-buttons.html
+# Guide Collection:/docs/hidden/test-buttons/Badge-sorted.html
+```
