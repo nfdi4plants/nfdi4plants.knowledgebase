@@ -395,21 +395,39 @@
         last updated at 2022-12-14
       </i>
       <nfdi-toc></nfdi-toc>
-      <br>
+      <nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
+<p>Your contribution to the DataPLANT Knowledge Base is highly appreciated. This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones. For changes and suggestions, feel free to open an issue or to open a pull request.</p>
 <p><span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #C21F3A;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Data Steward</span>  <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #2D3E50;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Tutorial</span></p>
-<p>Your contribution to the DataPLANT Knowledge Base is highly appreciated.
-This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.</p>
-<p>For changes and suggestions, feel free to open an issue or to open a pull request.</p>
+<br>
+<nfdi-h2 id="before-we-start">Before we start</nfdi-h2>
+<style scoped>
+#before-start ul{
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 10;
+}
+</style>
+<div id="before-start">
+<p>Before contributing to the knowledge base, you should have</p>
+<ul>
+<li><p>☑️ a <a href="https://github.com">GitHub</a> account and some routine with GitHub</p>
+</li>
+<li><p>☑️ an up-to-date version of <a href="https://nodejs.org/">Node.JS</a> installed</p>
+</li>
+<li><p>💡 We recommend working with <a href="https://code.visualstudio.com/download">VS Code</a>, with extensions for easy markdown editing and spell check.</p>
+</li>
+<li><p>💡 Feel free to contact us for Data Steward support.</p>
+</li>
+</ul>
+</div>
 <nfdi-h2 id="introduction">Introduction</nfdi-h2>
 <p>The DataPLANT Knowledge Base is built on <a href="https://nfdi4plants.github.io/web-components-docs/">nfdi-web-components</a> which fit <strong>markdown</strong> content into this &quot;framework&quot;.
 For a general introduction to writing markdown, see: <a href="tutorials/IntroductionToMarkdown.html">Markdown tutorial</a> and references therein.</p>
+<nfdi-h2 id="authoring-content">Authoring Content</nfdi-h2>
+<p>Read more about authoring content in the fornax section of the nfdi4plants web components docs <a href="https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax">here</a></p>
+<p>⚠️ Please make sure to especially follow the markdown syntax section of the <a href="https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#markdown-syntax">nfdi4plants web components docs</a>.</p>
 <nfdi-h2 id="github-routines">GitHub Routines</nfdi-h2>
-<blockquote>
-<p>Note: This is not a full-fledged GitHub tutorial. Please refer to available tutorials online or contact the Knowledge Base curators.</p>
-</blockquote>
 <ol>
-<li><p>Sign up for a GitHub account.</p>
-</li>
 <li><p><a href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/fork">Fork</a> the Knowledge Base Git repository.</p>
 <ul>
 <li>This creates a copy of the Knowledge Base repository in your own GitHub account.</li>
@@ -421,7 +439,7 @@ For a general introduction to writing markdown, see: <a href="tutorials/Introduc
 </li>
 </ol>
 <p><img src="./img/contribution_git.png" alt="Git Routine" /></p>
-<ol start="3">
+<ol start="2">
 <li><p>You can work and make any changes in your own repository and commit + push them to your fork.</p>
 </li>
 <li><p>Once you want to submit those changes to the main repository, you can open a &quot;pull request&quot; by clicking &quot;Contribute&quot; (5) in the top-right corner.</p>
@@ -436,10 +454,14 @@ For a general introduction to writing markdown, see: <a href="tutorials/Introduc
 <li>The github user name of the original author is stored in the yaml block on top under <code>author_github</code></li>
 <li>During the pull-request mention the author via <code>@&lt;author_github&gt;</code>.</li>
 </ul>
+<blockquote>
+<p>⚠️ This is not a full-fledged GitHub tutorial. Please refer to available tutorials online or contact the Knowledge Base curators.</p>
+</blockquote>
 <nfdi-h2 id="local-testing">Local testing</nfdi-h2>
 <p>The following instructions allow you to test and see how your changes come into play and whether everything renders correctly.</p>
-<p>It's highly recommended to <em>frequently</em> check your changes locally.
-Please <strong>do not</strong> produce and submit a lot of content without prior local testing.</p>
+<blockquote>
+<p>⚠️ It's highly recommended to <em>frequently</em> check your changes locally. Please <strong>do not</strong> produce and submit a lot of content without prior local testing.</p>
+</blockquote>
 <nfdi-h3 id="setup">Setup</nfdi-h3>
 <p>This needs to be done only once after downloading.</p>
 <ol>
@@ -481,8 +503,6 @@ Please <strong>do not</strong> produce and submit a lot of content without prior
 </ul>
 </li>
 </ul>
-<nfdi-h2 id="authoring-content">Authoring Content</nfdi-h2>
-<p>Read more in the fornax section of the nfdi4plants web components docs <a href="https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax">here</a></p>
 <nfdi-h2 id="markdown-to-html-rendering-rules">Markdown to HTML Rendering Rules</nfdi-h2>
 <p>Every markdown document stored in <code>/nfdi4plants.knowledgebase/src/docs</code> or any subfolder
 (except <code>_ignored</code>) will be rendered to html and become publicly available once pushed to the main repository.</p>
@@ -568,7 +588,7 @@ with British English (&quot;cSpell.language&quot;: &quot;en-GB&quot;) support.</
 <p>Note: This is just a link collection for recurrent use in KB articles
 Nothing automatized. Just copy/paste.</p>
 </blockquote>
-<p>⚠️ Must be read from <a href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/CONTRIBUTING.md">markdown</a>, will not be shown in html.</p>
+<p>⚠️ Must be read from <a href="https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/main/src/docs/CONTRIBUTING.md">markdown</a>, will not be shown in html.</p>
 <!-- Links to DataPLANT Knowledge Base (kb-) -->
 <!-- kb-Fundamentals -->
 <!-- kb-Implementation -->
