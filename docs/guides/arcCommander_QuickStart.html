@@ -151,7 +151,7 @@
           ARC Commander Manual
         </a>
         <nfdi-sidebar-eleneo slot="child">
-          <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_dependencies.html">
+          <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index-setup.html">
             Setup
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_dependencies.html">
@@ -395,66 +395,22 @@
         last updated at 2022-08-05
       </i>
       <nfdi-toc></nfdi-toc>
-      <br>
+      <nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
+<p>In this guide we focus on how to use the <a href="./../implementation/ArcCommander.html">ARC Commander</a> to create your ARC and structure, store and share your data.</p>
 <a href="./index.html">
     <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #B4CE82;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Newbie</span>
     <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #2D3E50;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Tutorial</span>
 </a>
-<nfdi-h2 id="about">About</nfdi-h2>
-<p>In this guide we focus on how to use the <a href="./../implementation/ArcCommander.html">ARC Commander</a> to create your ARC and structure, store and share your data.</p>
+<br>
 <nfdi-h2 id="before-we-can-start">Before we can start</nfdi-h2>
-<p>☑️ Please <a href="./../ArcCommanderManual/arc_installation.html">install ARC Commander</a><br />
+<p>☑️ Please <a href="./../ArcCommanderManual/index-setup.html">install ARC Commander</a><br />
+☑️ Find <a href="./tutorial_TheCommandLine.html" target="_blank">the command line</a> on your system<br />
 💡 Consider reading about <a href="./../implementation/AnnotatedResearchContext.html">ARC</a> and the <a href="./../implementation/ArcCommander.html">ARC Commander</a></p>
-<!-- 
-## Environment and setup
-
-### The command line
-
-- Most of this Quickstart (especially the section [ARC initialization](#arc-initialization)) is based on the command line (Windows: powershell; Linux and Mac: terminal).
-- The following picture shows exemplarily how to open a powershell on windows by entering *powershell* into the explorer path:  
-
-![Windows Powershell](../img/windows_powershell.png)
-
-- Text formatted as code blocks represents commands to copy/paste into the command line:
-
-```bash
-echo "hello - I am a code block"
-```
-
-### Required software
-
-- [ ] Prerequisites for using the ARC Commander are [git](https://git-scm.com/downloads) and [git LFS](https://git-lfs.github.com/)
-
-> :bulb: If this is your first time using git on this computer, you need to set your git user name and email address. These are needed for displaying them on the git commits. You can update the settings with
-
-  ```bash
-  git config --global user.name <your_name>
-  git config --global user.email <your_email>
-  ```
-
-> You can check the configuration with
-
-```bash
-git config --global --get-regexp user
-```
-
-- [ ] Please download the latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) for your operating system and install it according to [these instructions][kb-ARC_Commander-Manual-Installation].
-
-- Check if the ARC Commander is functional by displaying the ARC commander version and help menu:
-
-```bash
-arc --version
-arc --help
-```
-
-![ARC Commander help menu](../img/arcCommander_help.png)
-
-<div style="page-break-after: always;"></div> -->
 <nfdi-h2 id="arc-initialization">ARC initialization</nfdi-h2>
 <ol>
 <li>Create and navigate to a local folder, which you want to initialize as an ARC.</li>
 </ol>
-<nfdi-code class="language-bash">mkdir ~/Desktop/QuickStart; 
+<nfdi-code class="language-bash">mkdir ~/Desktop/QuickStart
 cd ~/Desktop/QuickStart
 </nfdi-code>
 <ol start="2">
