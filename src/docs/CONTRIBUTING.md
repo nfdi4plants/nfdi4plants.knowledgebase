@@ -9,27 +9,51 @@ article_status: published
 todo:  
 ---
 
-<br>
+## About this guide
+
+Your contribution to the DataPLANT Knowledge Base is highly appreciated. This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones. For changes and suggestions, feel free to open an issue or to open a pull request.
 
 <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #C21F3A;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Data Steward</span>  <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #2D3E50;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Tutorial</span>
 
 
-Your contribution to the DataPLANT Knowledge Base is highly appreciated.
-This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones.
+<br>
 
-For changes and suggestions, feel free to open an issue or to open a pull request.
+## Before we start
+
+<style scoped>
+#before-start ul{
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 10;
+}
+</style>
+
+<div id="before-start">
+
+Before contributing to the knowledge base, you should have
+
+- :ballot_box_with_check: a [GitHub](https://github.com) account and some routine with GitHub
+- :ballot_box_with_check: an up-to-date version of [Node.JS](https://nodejs.org/) installed
+
+- :bulb: We recommend working with [VS Code](https://code.visualstudio.com/download), with extensions for easy markdown editing and spell check.
+- :bulb: Feel free to contact us for Data Steward support.
+
+</div>
 
 ## Introduction
 
 The DataPLANT Knowledge Base is built on [nfdi-web-components](https://nfdi4plants.github.io/web-components-docs/) which fit **markdown** content into this "framework".
 For a general introduction to writing markdown, see: [Markdown tutorial](tutorials/IntroductionToMarkdown.html) and references therein.
 
+## Authoring Content
+
+Read more about authoring content in the fornax section of the nfdi4plants web components docs [here](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax)
+
+:warning: Please make sure to especially follow the markdown syntax section of the [nfdi4plants web components docs](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#markdown-syntax). 
+
 ## GitHub Routines
 
-> Note: This is not a full-fledged GitHub tutorial. Please refer to available tutorials online or contact the Knowledge Base curators.
-
-1. Sign up for a GitHub account.
-2. [Fork](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/fork) the Knowledge Base Git repository.
+1. [Fork](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/fork) the Knowledge Base Git repository.
    
    - This creates a copy of the Knowledge Base repository in your own GitHub account.
    - In the top left, you will see that the repository is associated with your account (1) and forked from the main repository (2).
@@ -39,22 +63,23 @@ For a general introduction to writing markdown, see: [Markdown tutorial](tutoria
    
   ![Git Routine](./img/contribution_git.png)
 
-3. You can work and make any changes in your own repository and commit + push them to your fork.
+2. You can work and make any changes in your own repository and commit + push them to your fork.
 
-4. Once you want to submit those changes to the main repository, you can open a "pull request" by clicking "Contribute" (5) in the top-right corner.
+3. Once you want to submit those changes to the main repository, you can open a "pull request" by clicking "Contribute" (5) in the top-right corner.
    > Remember to "Fetch upstream" (4), if your fork is not up-to-date with the main repository.
 
-5. If edited or added existing content, please assign the original author during your pull-request to review your changes.
+4. If edited or added existing content, please assign the original author during your pull-request to review your changes.
   
   - The github user name of the original author is stored in the yaml block on top under `author_github`
   - During the pull-request mention the author via `@<author_github>`.
+
+> :warning: This is not a full-fledged GitHub tutorial. Please refer to available tutorials online or contact the Knowledge Base curators.
 
 ## Local testing
 
 The following instructions allow you to test and see how your changes come into play and whether everything renders correctly.
 
-It's highly recommended to *frequently* check your changes locally.
-Please **do not** produce and submit a lot of content without prior local testing.
+> :warning: It's highly recommended to *frequently* check your changes locally. Please **do not** produce and submit a lot of content without prior local testing.
 
 ### Setup
 
@@ -110,10 +135,6 @@ npm run indexserve
 - Wrong links
   - to sidebar elements
   - to images
-
-## Authoring Content
-
-Read more in the fornax section of the nfdi4plants web components docs [here](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax)
 
 ## Markdown to HTML Rendering Rules
 
@@ -209,7 +230,7 @@ British English
 > Note: This is just a link collection for recurrent use in KB articles
 > Nothing automatized. Just copy/paste.
 
-⚠️ Must be read from [markdown](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/CONTRIBUTING.md), will not be shown in html.
+⚠️ Must be read from [markdown](https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/main/src/docs/CONTRIBUTING.md), will not be shown in html.
 
 <!-- Links to DataPLANT Knowledge Base (kb-) -->
 
