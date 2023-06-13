@@ -49,12 +49,3 @@ Here you can find the slides prepared for the May / June 2023 CEPLAS *Start Your
 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [CEPLAS](https://ceplas.eu), [DataPLANT](https://nfdi4plants.org/)  📆 June 14th, 2023
 
 <hr>
-
-## Contributors 
-
-Slides presented here include contributions by 
-
-- Cristina Martins Rodrigues  | [GitHub](https://github.com/CMR248) | [ORCID](https://orcid.org/0000-0002-4849-1537)
-- Martin Kuhl  | [GitHub](https://github.com/Martin-Kuhl) | [ORCID](https://orcid.org/0000-0002-8493-1077)
-- Kevin Frey  | [GitHub](https://github.com/Freymaurer) | [ORCID](https://orcid.org/0000-0002-8510-6810)
-- Dominik Brilhaus | [GitHub](https://github.com/brilator) | [ORCID](https://orcid.org/0000-0001-9021-3197)
