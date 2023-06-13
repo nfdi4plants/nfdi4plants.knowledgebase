@@ -219,7 +219,7 @@ Dominik Brilhaus - CEPLAS Data Science
 
 - download the folder with unstructured sample data
     ```bash
-    git clone "https://demo-arc:x7ddrotJpzd5Rgfxx9d5@git.nfdi4plants.org/teaching/demo-arc_start-data.git"
+    git clone "https://demo-user:1_eznikmzxzARAbUxxnF@git.nfdi4plants.org/teaching/demo-arc_level0.git"
     ```
 
     > no access needed, "read_registry" token is part of command
