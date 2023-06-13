@@ -10,74 +10,29 @@ article_status: published
 todo:
 ---
 
-<br>
+## About this guide
+
+In this guide we focus on how to use the [ARC Commander](./../implementation/ArcCommander.html) to create your ARC and structure, store and share your data.
 
 <a href="./index.html">
     <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #B4CE82;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Newbie</span>
     <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #2D3E50;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Tutorial</span>
 </a>
 
-## About
-
-In this guide we focus on how to use the [ARC Commander](./../implementation/ArcCommander.html) to create your ARC and structure, store and share your data.
+<br>
 
 ## Before we can start
 
-:ballot_box_with_check: Please [install ARC Commander](./../ArcCommanderManual/arc_installation.html)  
+:ballot_box_with_check: Please [install ARC Commander](./../ArcCommanderManual/index-setup.html)  
+:ballot_box_with_check: Find <a href="./tutorial_TheCommandLine.html" target="_blank">the command line</a> on your system  
 :bulb: Consider reading about [ARC](./../implementation/AnnotatedResearchContext.html) and the [ARC Commander](./../implementation/ArcCommander.html)
-
-<!-- 
-## Environment and setup
-
-### The command line
-
-- Most of this Quickstart (especially the section [ARC initialization](#arc-initialization)) is based on the command line (Windows: powershell; Linux and Mac: terminal).
-- The following picture shows exemplarily how to open a powershell on windows by entering *powershell* into the explorer path:  
-
-![Windows Powershell](../img/windows_powershell.png)
-
-- Text formatted as code blocks represents commands to copy/paste into the command line:
-
-```bash
-echo "hello - I am a code block"
-```
-
-### Required software
-
-- [ ] Prerequisites for using the ARC Commander are [git](https://git-scm.com/downloads) and [git LFS](https://git-lfs.github.com/)
-
-> :bulb: If this is your first time using git on this computer, you need to set your git user name and email address. These are needed for displaying them on the git commits. You can update the settings with
-
-  ```bash
-  git config --global user.name <your_name>
-  git config --global user.email <your_email>
-  ```
-
-> You can check the configuration with
-
-```bash
-git config --global --get-regexp user
-```
-
-- [ ] Please download the latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) for your operating system and install it according to [these instructions][kb-ARC_Commander-Manual-Installation].
-
-- Check if the ARC Commander is functional by displaying the ARC commander version and help menu:
-
-```bash
-arc --version
-arc --help
-```
-
-![ARC Commander help menu](../img/arcCommander_help.png)
-
-<div style="page-break-after: always;"></div> -->
 
 ## ARC initialization
 
 1. Create and navigate to a local folder, which you want to initialize as an ARC.
 
 ```bash
-mkdir ~/Desktop/QuickStart; 
+mkdir ~/Desktop/QuickStart
 cd ~/Desktop/QuickStart
 ```
 

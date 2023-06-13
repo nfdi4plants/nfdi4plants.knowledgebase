@@ -29,7 +29,7 @@
 ## [DataPLAN](/docs/implementation/DataPLAN.html)
 
 # [ARC Commander Manual](/docs/ArcCommanderManual/index.html)
-## [Setup](/docs/ArcCommanderManual/arc_installation_dependencies.html)
+## [Setup](/docs/ArcCommanderManual/index-setup.html)
 ### [Installing Dependencies](/docs/ArcCommanderManual/arc_installation_dependencies.html)
 ### [Configure Git](/docs/ArcCommanderManual/git_config.html)
 ### [Installing the ARC Commander](/docs/ArcCommanderManual/arc_installation.html)
