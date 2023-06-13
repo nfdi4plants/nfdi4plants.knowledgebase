@@ -229,3 +229,11 @@ Gives the person the same rights as you have (except of removing you from your o
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_choose-collaborator-role.md -->
+
+
+## Contributors 
+
+Slides presented here include contributions by 
+
+- Dominik Brilhaus | [GitHub](https://github.com/brilator) | [ORCID](https://orcid.org/0000-0001-9021-3197)
+- Cristina Martins Rodrigues  | [GitHub](https://github.com/CMR248) | [ORCID](https://orcid.org/0000-0002-4849-1537)

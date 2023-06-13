@@ -339,3 +339,13 @@ Example workflows with three *processes* each:
 >           └─── table  (e.g. "annotationTable")
 > ``` -->
 
+
+--- 
+
+## Contributors 
+
+Slides presented here include contributions by 
+
+- Dominik Brilhaus | [GitHub](https://github.com/brilator) | [ORCID](https://orcid.org/0000-0001-9021-3197)
+- Kevin Frey  | [GitHub](https://github.com/Freymaurer) | [ORCID](https://orcid.org/0000-0002-8510-6810)
+- Martin Kuhl  | [GitHub](https://github.com/Martin-Kuhl) | [ORCID](https://orcid.org/0000-0002-8493-1077)

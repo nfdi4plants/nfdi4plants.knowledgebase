@@ -243,3 +243,12 @@ object-position: 100% 45%;
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_congrats-for-sharing.md -->
+
+
+## Contributors 
+
+Slides presented here include contributions by 
+
+- Dominik Brilhaus | [GitHub](https://github.com/brilator) | [ORCID](https://orcid.org/0000-0001-9021-3197)
+- Cristina Martins Rodrigues  | [GitHub](https://github.com/CMR248) | [ORCID](https://orcid.org/0000-0002-4849-1537)
+- Martin Kuhl  | [GitHub](https://github.com/Martin-Kuhl) | [ORCID](https://orcid.org/0000-0002-8493-1077)
