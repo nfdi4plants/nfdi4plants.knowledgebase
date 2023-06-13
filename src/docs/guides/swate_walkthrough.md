@@ -3,7 +3,13 @@ marp: true
 layout: docs
 title: Swate Walk-through
 published: 2023-06-13
-Author: Kevin Frey, Dominik Brilhaus
+author: 
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
+- name: Kevin Frey
+  github: https://github.com/Freymaurer
+  orcid: https://orcid.org/0000-0002-8510-6810
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
 ---
@@ -114,7 +120,7 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 
 <style scoped>
 .columns {
-    grid-template-columns: 600px 300px;
+    grid-template-columns: 500px 300px;
     gap: 30px;
     display: flex;
     justify-content: center;
@@ -125,10 +131,10 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 <div class="columns-left">
 
 1. Navigate to the *Building Blocks* tab via the navbar. Here you can add *Building Blocks* to the table.
-2. Instead of *Parameter* select *Component* from the drop-down menu
-2. Search for `instrument model` in the top panel of the *Building Blocks* tab. This search looks for suitable *Terms* in our *Ontology* database.
-3. Select the Term with the id `MS:1000031` and, 
-4. Click <kbd>Add building block</kbd>.
+2. Instead of *Parameter* select *Component* from the drop-down menu (A)
+3. Search for `instrument model` in the search bar (B). This search looks for suitable *Terms* in our *Ontology* database.
+4. Select the Term with the id `MS:1000031` and, 
+5. Click <kbd>Add building block</kbd>.
 
 > :bulb: This adds three columns to your table, one visible and **two** hidden.
 
