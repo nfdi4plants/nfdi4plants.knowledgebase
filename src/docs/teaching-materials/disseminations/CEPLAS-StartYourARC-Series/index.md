@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: CEPLAS Start Your ARC Workshop Series
-published: 2023-06-01
+published: 2023-06-13
 add toc: true
 add support: false
 add sidebar: _sidebars/mainSidebar.md
