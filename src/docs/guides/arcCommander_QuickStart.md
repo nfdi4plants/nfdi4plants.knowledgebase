@@ -185,7 +185,7 @@ arc sync
 2. If you did not connect your local ARC with a remote one so far, you can specify the remote address with the flag `-r` followed by an URL, e.g.,
 
 ```bash
-arc sync -r https://git.nfdi4plants.org/martinkuhl/QuickStart
+arc sync -r https://git.nfdi4plants.org/<YourUserName>/<YourARC>
 ```
 
 3. In case you want to create a new remote repository at this URL, it needs to be assembled as the following example: 
