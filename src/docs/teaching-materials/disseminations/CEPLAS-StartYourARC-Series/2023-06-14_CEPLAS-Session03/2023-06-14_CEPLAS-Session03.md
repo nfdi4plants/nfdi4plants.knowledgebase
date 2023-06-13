@@ -111,29 +111,18 @@ git clone "https://demo-user:5ehDYeHcqP2MqVXsNNPu@git.nfdi4plants.org/teaching/d
 
 ## Where we left off last time
 
-<style scoped>
-
-section p br {
-   display: block;
-   margin-top: 20px;
-   content: "";
-}
-</style>
 
 👩‍💻 Initiated an ARC
-<br>
 📂 Structured and ...  
-<br>
 🌐 Shared with collaborators
 
-<br>
 <br>
 
 **Today** we want to 
 
 <img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate_c_40x40.png'/> ... **annotate the experimental data**
 
-![bg right width:400](../../../../img/demo_arc_screenshot.png)
+![bg right:40% width:400](../../../../img/demo_arc_screenshot.png)
 
 ---
 
@@ -188,7 +177,7 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 </div>
 
 <div class="columns-right">
-    <img src="./../img/Swate-CreateAnnotationTable-Exp.jpg" style="width: 1200px">
+    <img src="./../../../../img/Swate-CreateAnnotationTable-Exp.jpg" style="width: 1200px">
 </div>
 
 </div>
