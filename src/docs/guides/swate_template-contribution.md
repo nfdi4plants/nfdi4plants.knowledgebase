@@ -13,19 +13,28 @@ author:
 add toc: false
 add sidebar: _sidebars\mainSidebar.md
 ---
+## About this guide
 
-<br>
+This tutorial guides you how to create and share Swate metadata templates.
 
 <a href="./index.html">
   <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #C21F3A;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Data Steward</span>
   <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #2D3E50;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Tutorial</span>
 </a>
 
-## About
-
-This tutorial guides you how to create and share Swate metadata templates.
+<br>
 
 ## Before we can start
+
+<style scoped>
+#before-start ul{
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 10;
+}
+</style>
+
+<div id="before-start">
 
 Before contributing Swate templates you ideally have
 
@@ -36,6 +45,8 @@ Before contributing Swate templates you ideally have
   - you know the annotation principles
 - :ballot_box_with_check: A [GitHub](https://github.com) account and some routine with GitHub
 - :bulb: Feel free to contact us for Data Steward support, if you are not familiar to GitHub or Swate, but would like to contribute a Swate template for your community
+
+</div>
 
 ## Git Workflow to add or edit templates
 
