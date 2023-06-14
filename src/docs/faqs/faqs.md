@@ -61,6 +61,18 @@ ___TLDR:___
 git clone https://oauth2:TOKENSTRING@git.nfdi4plants.org/abc/xyz
 ```
 </details>
+
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Why do I get the error `ERROR: GIT: fatal: detected dubious ownership`?
+</summary>
+Possible reasons:
+
+- You tried to work on an ARC that belongs to another person, e.g. another user account on the same computer or in the same file share - or vice versa.
+- This issues might occur when working on a network drive (Fileshare, File Server, NAS) that has been mounted by another user account.
+
+:bulb: We need more info to learn what causes this issue. Please let us know, if you run into that error! 
+</details>
+
 <br>
 
 ## Swate
