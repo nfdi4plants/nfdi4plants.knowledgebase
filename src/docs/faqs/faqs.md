@@ -30,6 +30,29 @@ Is it necessary to fill in the empty fields in the investigation-file manually?
 </summary>
 No. Although it is possible to fill out the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
 </details>
+
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Where in the ARC can I store "external" data? 
+</summary>
+Research projects rarely start out of the blue. Rather every project builds on previous findings and published datasets.
+To properly re-use and reference such a dataset, we recommend to add a `study` to your ARC. Every study by default comes with four parts: 
+
+```
+└── <StudyName>
+    ├── README.md
+    ├── isa.study.xlsx
+    ├── protocols
+    └── resources
+```
+
+- The "Study" worksheet in `isa.study.xlsx` contains a section "STUDY PUBLICATIONS", where you can add publication details (author, DOI, etc.) about the external data source.
+- In the `resources` directory you can add the data (e.g. supplemental data files)
+- In the `protocols` directory you can add notes on how you retrieved the data and from where.
+
+
+</details>
+
+
 <br>
 
 ## ARC Commander
