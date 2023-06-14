@@ -85,6 +85,26 @@ git clone https://oauth2:TOKENSTRING@git.nfdi4plants.org/abc/xyz
 </details>
 
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Why do I get the error `'arc' is not recognized as an internal or external command, operable program or batch file.`?
+</summary>
+
+Your machine cannot find your ARC commander executable. Possible reasons are that you have not yet installed the ARC commander or that the `arc` executable was not added to your path. 
+
+Please carefully retry the [ARC Commander setup](./../ArcCommanderManual/index-setup.html). 
+
+If this does not do the trick, please follow these steps towards debugging (on Windows): 
+
+1. Open the command prompt (cmd) or powershell in the folder (e.g. `C:\Programs\ArcCommander`) where you stored the ARC Commander program (e.g. arc.exe). If `arc --version` shows the version, the executable is intact. 
+2. Next, execute `path` to check wether the folder (e.g. `C:\Programs\ArcCommander`) appears in your path.
+3. Adapt the user's path (not admin)
+    :bulb: If you do not have admin rights on the computer, please open the settings "Edit environment variables for your account" and follow steps described in the [ARC Commander setup](./../ArcCommanderManual/index-setup.html).
+
+
+</details>
+
+
+
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
 Why do I get the error `ERROR: GIT: fatal: detected dubious ownership`?
 </summary>
 Possible reasons:
@@ -114,6 +134,7 @@ git config --global http.postBuffer 524288000
 
 source: https://stackoverflow.com/questions/6887228/git-hangs-while-writing-objects
 </details>
+
 
 <br>
 
