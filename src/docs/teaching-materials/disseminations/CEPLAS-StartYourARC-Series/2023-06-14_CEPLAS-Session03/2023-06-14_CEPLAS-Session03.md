@@ -337,7 +337,7 @@ Example workflows with three *processes* each:
 > workbook              (e.g. "isa.assay.xlsx")
 >  └─── worksheet       (e.g. "plant_growth")
 >           └─── table  (e.g. "annotationTable")
-> ``` -->
+
 
 
 --- 
