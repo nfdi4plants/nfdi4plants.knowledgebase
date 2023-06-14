@@ -18,4 +18,4 @@ Find the **command-line interface (CLI)** on your system.
 - On MacOS: Search `terminal` via spotlight (&#8984; + &#9251;) or navigate to `Applications` -> `Utilities` -> `Terminal`
 
 
-:bulb: In our tutorials we sometimes use "terminal", "command-line" or "command-line interface (CLI)" and "powershell" interchangeably.
+:bulb: In our tutorials we sometimes use "shell", "powershell", "terminal", "command prompt", "command-line" or "command-line interface (CLI)" interchangeably. Although they are technically not the same, they usually serve the same purpose here. 
