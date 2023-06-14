@@ -177,10 +177,10 @@
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_access.html">
             DataHUB Access
           </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_before_we_start.html">
-            Before we start
-          </a>
         </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_before_we_start.html">
+          Before we start
+        </a>
         <nfdi-sidebar-eleneo slot="child">
           <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_initialization.html">
             Central Functions
@@ -392,19 +392,52 @@
         Before we start
       </h1>
       <i class="help">
-        last updated at 2023-04-06
+        last updated at 2023-06-14
       </i>
       <nfdi-toc></nfdi-toc>
-      <p>After the setup steps, you're all set and ready to start using the ARC Commander.</p>
+      <p>After the setup steps, you're all set and ready to start using the ARC Commander. 🎉</p>
+<p>💡 We recommend trying the <a href="./../guides/index-CreateYourARC.html">quickstarts</a> for your first steps with the ARC Commander.</p>
+<p>💡 After the quickstarts, we strongly recommend to read the in-depth ARC Commander Manual here.</p>
+<nfdi-h2 id="notes-on-arc-commander-guides">Notes on ARC Commander Guides</nfdi-h2>
 <ul>
-<li>For all following steps it is assumed, that you opened a shell or command prompt within a directory you want to initiate as an ARC</li>
-<li>Note that each input that contains non-literal characters must be encapsulated in quotation marks when entered within the shell. This also applies when using the editor for numerals that are no numbers (dates, phone numbers, etc.).</li>
-<li>Furthermore, <code>arc</code> defines the path to the ARC Commander executable (e.g. on Windows &quot;C:\Users\userA\programs\ArcCommander\arc.exe&quot;).</li>
-<li>Every input can be entered by using the shell. For user friendly experience, an editor may pop up if no arguments are given. After entering the required values, save and close the editor.</li>
+<li>For most steps in this manual and in the <a href="./../guides/index-CreateYourARC.html">guides</a>, it is assumed, that you opened a <a href="./../guides/tutorial_TheCommandLine.html" target="_blank">shell or command prompt</a> within a directory you want to initiate as an ARC</li>
+<li>In the shell, <code>arc</code> defines the path to the ARC Commander executable (e.g. on Windows &quot;C:\Users\userA\programs\ArcCommander\arc.exe&quot;).</li>
+<li>Note that each input that contains non-literal characters must be encapsulated in &quot;quotation marks&quot; when entered within the shell. This also applies when using the editor for numerals that are no numbers (dates, phone numbers, etc.).</li>
 </ul>
-<blockquote>
-<p>⚠️ Note: We strongly recommend to read the in-depth guides to the ARC Commander on the following pages!</p>
-</blockquote>
+<nfdi-h2 id="different-routes-to-add-metadata">Different Routes to add Metadata</nfdi-h2>
+<p>Using the ARC commander, most metadata information (e.g. the title or identifier of your investigation) can theoretically be entered solely by using the shell.</p>
+<p>For instance, the following command would create an investigation with the identifier &quot;MyInv001&quot; and title &quot;My Investigation 001&quot;:</p>
+<nfdi-code>arc investigation create --identifier "MyInv001" --title "My Investigation 001"
+</nfdi-code>
+<p>If no arguments are supplied, a text editor may pop up asking you for suitable metadata values.
+For instance, the command</p>
+<nfdi-code>arc investigation create
+</nfdi-code>
+<p>will open a text editor and (amongst other metadata keys) allow you to enter</p>
+<nfdi-code class="language-yaml">Identifier:
+
+#A concise name given to the investigation
+Title:
+
+#A textual description of the investigation
+Description:
+</nfdi-code>
+<p>After entering the required values, you can save and close the editor.</p>
+<nfdi-h2 id="arc-commanders-help-menu">ARC Commander's Help Menu</nfdi-h2>
+<p>The ARC Commander comes with a leveled help menu, that suggests suitable inputs on every level of command or subcommand. You can simply add <code>-h</code> or <code>--help</code> at the end of an ARC Commander action to display the respective help menu.</p>
+<p>Some examples:</p>
+<nfdi-code>arc --help
+</nfdi-code>
+<nfdi-code>arc investigation --help
+</nfdi-code>
+<nfdi-code>arc investigation create --help
+</nfdi-code>
+<nfdi-code>arc study --help
+</nfdi-code>
+<nfdi-code>arc study add --help
+</nfdi-code>
+<nfdi-code>arc assay remove --help
+</nfdi-code>
 
       <h3>
         DataPLANT Support
