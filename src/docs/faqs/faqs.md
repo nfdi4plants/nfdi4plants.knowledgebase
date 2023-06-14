@@ -99,17 +99,18 @@ Possible reasons:
 Syncing my ARC to the DataHUB takes forever or gets stuck. What can I do?
 </summary>
 This is likely due to handling a big volume of data. 
-Solution: 
 
-Increase git's http post buffer
+Solution: Increase git's http post buffer
+
+Execute the following command in your command line:
 
 ```
 git config --global http.postBuffer 524288000
 ```
 
-500 MB: 524288000
-1 GB: 1048576000
-2 GB: 2097152000
+- 500 MB: 524288000
+- 1 GB: 1048576000
+- 2 GB: 2097152000
 
 source: https://stackoverflow.com/questions/6887228/git-hangs-while-writing-objects
 </details>
