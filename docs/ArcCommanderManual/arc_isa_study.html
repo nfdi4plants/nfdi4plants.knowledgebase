@@ -459,7 +459,7 @@
 <li>If the study exists, another editor opens with information already known for the respective study. The required values can be edited.</li>
 </ul>
 </li>
-<li>Instead of using the editor, the following command can be used. To circumvent editor pop ups, not arc s edit, but <code>arc s update</code> must be used:<br />
+<li>Instead of using the editor, the following command can be used. To circumvent editor pop ups, not <code>arc s edit</code>, but <code>arc s update</code> must be used:<br />
 <code>arc s update --identifier GelBasedProteomicsWT --submissiondate &quot;13.04.2020&quot;</code></li>
 </ul>
 <nfdi-h2 id="removing-a-study">Removing a study</nfdi-h2>
@@ -467,6 +467,13 @@
 <li>A study can be unregistered from the investigation by using <code>arc s unregister</code>.</li>
 <li>A study folder structure can be deleted by using <code>arc s delete</code>.</li>
 <li>To both, delete the study folder structure and unregister it from the investigation <code>arc s remove</code> can be used.</li>
+<li>Supply a studyidentifier to directly use these commands via command line, i.e.:
+<ul>
+<li><code>arc s unregister -s &lt;study identifier&gt;</code></li>
+<li><code>arc s delete -s &lt;study identifier&gt;</code></li>
+<li><code>arc s remove -s &lt;study identifier&gt;</code></li>
+</ul>
+</li>
 </ul>
 <nfdi-h2 id="registering-persons-to-a-study">Registering persons to a study</nfdi-h2>
 <ul>

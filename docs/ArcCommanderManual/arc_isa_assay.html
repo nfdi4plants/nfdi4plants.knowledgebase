@@ -472,7 +472,7 @@
 </tbody>
 </table>
 <p>If no study identifier is given, a study is created with the assay identifier as study identifier. Instead of using the editor, the following command can be used:<br />
-<code>arc a add -a GelBasedProteomicsM21 --measurementtype Proteomics --technologytype &quot;Mass spectrometry&quot; --technologyplatform &quot;AB Sciex TT6600&quot;</code></p>
+<code>arc assay add -a GelBasedProteomicsM21 --measurementtype Proteomics --technologytype &quot;Mass spectrometry&quot; --technologyplatform &quot;AB Sciex TT6600&quot;</code></p>
 <nfdi-h2 id="listing-and-inspecting-registered-assays">Listing and inspecting registered assays</nfdi-h2>
 <ul>
 <li>Registered assays can be listed by <code>arc a list</code>.</li>
@@ -490,14 +490,21 @@
 <code>arc a update -s GelBasedProteomicsWT -a GelBasedProteomicsWT --technologyplatform &quot;AB Sciex TT6600&quot;</code></li>
 </ul>
 <nfdi-h2 id="removing-assays">Removing assays</nfdi-h2>
-<blockquote>
-<p>💡 To remove, unregister, or delete an assay both study identifier and assay identifier are required to ensure the correct assay is chosen.</p>
-</blockquote>
 <ul>
 <li>An assay can be unregistered from the investigation by using <code>arc a unregister</code>.</li>
 <li>An assay folder structure can be deleted by using <code>arc a delete</code>.</li>
 <li>To both, delete the assay folder structure and unregister it from the investigation <code>arc a remove</code> can be used.</li>
+<li>Supply a study identifier and assay identifier to directly use these commands via command line, i.e.:
+<ul>
+<li><code>arc a unregister -s &lt;study identifier&gt; -a &lt;assay identifier&gt;</code></li>
+<li><code>arc a delete -s &lt;study identifier&gt; -a &lt;assay identifier&gt;</code></li>
+<li><code>arc a remove -s &lt;study identifier&gt; -a &lt;assay identifier&gt;</code></li>
 </ul>
+</li>
+</ul>
+<blockquote>
+<p>💡 To remove, unregister, or delete an assay both study identifier and assay identifier are required to ensure the correct assay is chosen.</p>
+</blockquote>
 <nfdi-h2 id="moving-assays">Moving assays</nfdi-h2>
 <ul>
 <li>If an assay was mis-assigned to an incorrect study, or some assays should be grouped together (e.g. when a new study is created and some old assays would fit better to this new study), an assay can be moved from one study to another by using <code>arc a move</code>. After definition of the assay identifier together with old, and target study identifier, the assay is moved. If no study exist, that matches the given target study identifier, a new study is registered.</li>

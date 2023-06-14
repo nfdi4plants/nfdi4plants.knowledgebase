@@ -394,7 +394,6 @@
       <i class="help">
         last updated at 2022-08-05
       </i>
-      <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
 <p>In this guide we focus on how to use the <a href="./../implementation/ArcCommander.html">ARC Commander</a> to create your ARC and structure, store and share your data.</p>
 <a href="./index.html">
@@ -402,10 +401,12 @@
     <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #2D3E50;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Tutorial</span>
 </a>
 <br>
+<br>
 <nfdi-h2 id="before-we-can-start">Before we can start</nfdi-h2>
 <p>☑️ Please <a href="./../ArcCommanderManual/index-setup.html">install ARC Commander</a><br />
 ☑️ Find <a href="./tutorial_TheCommandLine.html" target="_blank">the command line</a> on your system<br />
-💡 Consider reading about <a href="./../implementation/AnnotatedResearchContext.html">ARC</a> and the <a href="./../implementation/ArcCommander.html">ARC Commander</a></p>
+💡 Consider reading about <a href="./../implementation/AnnotatedResearchContext.html">ARC</a> and the <a href="./../implementation/ArcCommander.html">ARC Commander</a><br />
+💡 After concluding this quickstart, consider exploring the <a href="./../ArcCommanderManual/index.html">ARC Commander manual</a> for a more detailed usage instruction.</p>
 <nfdi-h2 id="arc-initialization">ARC initialization</nfdi-h2>
 <ol>
 <li>Create and navigate to a local folder, which you want to initialize as an ARC.</li>
@@ -426,7 +427,7 @@ cd ~/Desktop/QuickStart
 <nfdi-h2 id="adding-metadata">Adding metadata</nfdi-h2>
 <nfdi-h3 id="isa-investigation">ISA investigation</nfdi-h3>
 <p>The ISA investigation (<code>-i</code>) workbook allows you to record administrative metadata of your project. Add the isa.investigation.xlsx workbook including an identifier to your ARC with</p>
-<nfdi-code class="language-bash">arc i create -i QuickStartInvestigation
+<nfdi-code class="language-bash">arc investigation create -i QuickStartInvestigation
 </nfdi-code>
 <blockquote>
 <p>💡 Avoid using spaces in the identifier. Use underscores and capital letters instead.</p>
@@ -436,12 +437,12 @@ cd ~/Desktop/QuickStart
 <ol>
 <li>Add an isa.study.xlsx workbook including an identifier to your ARC with</li>
 </ol>
-<nfdi-code class="language-bash">arc s add -s QuickStartStudy
+<nfdi-code class="language-bash">arc study add -s QuickStartStudy
 </nfdi-code>
 <ol start="2">
 <li>Add an isa.assay.xlsx workbook including an identifier to your ARC with</li>
 </ol>
-<nfdi-code class="language-bash">arc a add -s QuickStartStudy -a QuickStartAssay
+<nfdi-code class="language-bash">arc assay add -s QuickStartStudy -a QuickStartAssay
 </nfdi-code>
 <blockquote>
 <p>💡 An assay must be linked to a study. If a study does not exist, it will be created automatically in this step.</p>
@@ -532,7 +533,7 @@ Briefly:</p>
 </ul>
 <p><img src="../img/datahub_members.png" alt="" /></p>
 <blockquote>
-<p>💡 A detailed usage instruction for the ARC Commander can be found <a href="./ArcCommanderManual/index.html">here</a>.</p>
+<p>💡 After concluding this quickstart, you might want to explore the <a href="./../ArcCommanderManual/index.html">ARC Commander manual</a> for a more detailed usage instruction.</p>
 </blockquote>
 <!-- kb-Implementation -->
 
