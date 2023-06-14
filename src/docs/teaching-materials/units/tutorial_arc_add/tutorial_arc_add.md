@@ -32,7 +32,7 @@ title: tutorial_arc_add
 The ISA investigation (`-i`) workbook allows you to record administrative metadata of your project. Add the isa.investigation.xlsx workbook including an identifier to your ARC with
 
 ```bash
-arc i create -i QuickStartInvestigation
+arc investigation create -i QuickStartInvestigation
 ```
 
 <!-- Source to slide(s) -->
@@ -56,7 +56,7 @@ The ISA study (`-s`) and ISA assay (`-a`) workbooks allow you to annotate your e
 Add an isa.study.xlsx workbook including an identifier to your ARC with
 
 ```bash
-arc s add -s QuickStartStudy
+arc study add -s QuickStartStudy
 ```
 
 <!-- Source to slide(s) -->
@@ -70,7 +70,7 @@ arc s add -s QuickStartStudy
 Add an isa.assay.xlsx workbook including an identifier to your ARC with
 
 ```bash
-arc a add -s QuickStartStudy -a QuickStartAssay
+arc assay add -s QuickStartStudy -a QuickStartAssay
 ```
 
 > Note: An assay must be linked to a study. If a study does not exist, it will be created automatically in this step.

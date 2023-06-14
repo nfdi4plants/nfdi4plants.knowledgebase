@@ -4,7 +4,7 @@ title: ARC Commander QuickStart
 published: 2022-08-05
 author: Martin Kuhl
 author_github: martin-kuhl
-add toc: true
+add toc: false
 add sidebar: _sidebars/mainSidebar.md
 article_status: published
 todo:
@@ -20,12 +20,14 @@ In this guide we focus on how to use the [ARC Commander](./../implementation/Arc
 </a>
 
 <br>
+<br>
 
 ## Before we can start
 
 :ballot_box_with_check: Please [install ARC Commander](./../ArcCommanderManual/index-setup.html)  
 :ballot_box_with_check: Find <a href="./tutorial_TheCommandLine.html" target="_blank">the command line</a> on your system  
-:bulb: Consider reading about [ARC](./../implementation/AnnotatedResearchContext.html) and the [ARC Commander](./../implementation/ArcCommander.html)
+:bulb: Consider reading about [ARC](./../implementation/AnnotatedResearchContext.html) and the [ARC Commander](./../implementation/ArcCommander.html)  
+:bulb: After concluding this quickstart, consider exploring the [ARC Commander manual](./../ArcCommanderManual/index.html) for a more detailed usage instruction.
 
 ## ARC initialization
 
@@ -55,7 +57,7 @@ arc init
 The ISA investigation (`-i`) workbook allows you to record administrative metadata of your project. Add the isa.investigation.xlsx workbook including an identifier to your ARC with
 
 ```bash
-arc i create -i QuickStartInvestigation
+arc investigation create -i QuickStartInvestigation
 ```
 > :bulb: Avoid using spaces in the identifier. Use underscores and capital letters instead.
 
@@ -66,13 +68,13 @@ The ISA study (`-s`) and ISA assay (`-a`) workbooks allow you to annotate your e
 1. Add an isa.study.xlsx workbook including an identifier to your ARC with
 
 ```bash
-arc s add -s QuickStartStudy
+arc study add -s QuickStartStudy
 ```
   
 2. Add an isa.assay.xlsx workbook including an identifier to your ARC with
 
 ```bash
-arc a add -s QuickStartStudy -a QuickStartAssay
+arc assay add -s QuickStartStudy -a QuickStartAssay
 ```
 
 > :bulb: An assay must be linked to a study. If a study does not exist, it will be created automatically in this step.
@@ -187,7 +189,7 @@ Briefly:
 
 ![](../img/datahub_members.png)
 
-> :bulb: A detailed usage instruction for the ARC Commander can be found [here](./ArcCommanderManual/index.html).
+> :bulb: After concluding this quickstart, you might want to explore the [ARC Commander manual](./../ArcCommanderManual/index.html) for a more detailed usage instruction.
 
 
 <!-- kb-Implementation -->
