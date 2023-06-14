@@ -187,7 +187,7 @@ Briefly:
 
 ![](../img/datahub_members.png)
 
-> :bulb: A detailed usage instruction for the ARC Commander can be found [here](./ArcCommanderManual/index.html).
+> :bulb: After concluding this quickstart, you might want to explore the [ARC Commander manual](./../ArcCommanderManual/index.html) for a more detailed usage instruction.
 
 
 <!-- kb-Implementation -->
