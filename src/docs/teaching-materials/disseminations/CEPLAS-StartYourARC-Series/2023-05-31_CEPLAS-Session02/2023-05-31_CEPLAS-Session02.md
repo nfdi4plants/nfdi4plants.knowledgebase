@@ -141,20 +141,20 @@ arc init
 ## Create an investigation
 
 ```bash
-arc i create -i TalinumPhotosynthesis
+arc investigation create -i TalinumPhotosynthesis
 ```
 
 ## Add a study
 
 ```bash
-arc s add -s talinum_drought
+arc study add -s talinum_drought
 ```
   
 ## Add assays
 
 ```bash
-arc a add -s talinum_drought -a rnaseq
-arc a add -s talinum_drought -a metabolomics
+arc assay add -s talinum_drought -a rnaseq
+arc assay add -s talinum_drought -a metabolomics
 ```
 
 # Upload your local ARC to the DataHUB

@@ -359,10 +359,10 @@ arc init
 *Add metadata structure*
 
 ```bash
-arc i create -i TalinumPhotosynthesis
-arc s add -s talinum_drought
-arc a add -s talinum_drought -a rnaseq
-arc a add -s talinum_drought -a metabolomics
+arc investigation create -i TalinumPhotosynthesis
+arc study add -s talinum_drought
+arc assay add -s talinum_drought -a rnaseq
+arc assay add -s talinum_drought -a metabolomics
 ```
 
 ---

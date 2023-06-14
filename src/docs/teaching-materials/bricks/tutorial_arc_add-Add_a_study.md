@@ -15,5 +15,5 @@ title: tutorial_arc_add-Add_a_study
 Add an isa.study.xlsx workbook including an identifier to your ARC with
 
 ```bash
-arc s add -s QuickStartStudy
+arc study add -s QuickStartStudy
 ```

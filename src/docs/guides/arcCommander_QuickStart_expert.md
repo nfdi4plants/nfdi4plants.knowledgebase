@@ -42,8 +42,8 @@ cd <path/to/YourARCFolder>
 
 # Setup the ARC structure with one study and one assay
 arc init
-arc i create -i <YourInvestigationID>
-arc a add -s <YourStudyID> -a <YourAssayID>
+arc investigation create -i <YourInvestigationID>
+arc assay add -s <YourStudyID> -a <YourAssayID>
 
 arc sync -f -r https://git.nfdi4plants.org/<YourUserName>/<YourARC> -m "initialize ARC structure"
 ```

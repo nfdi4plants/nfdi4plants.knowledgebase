@@ -25,7 +25,7 @@ add sidebar: _sidebars/mainSidebar.md
 | PublicReleaseDate       | The date on which the investigation was released publicly. Formatted as ISO8601 date <br>YYYY-MM-DD           |   2022-12-13                                                                                                                    |
 
 - Instead of using the editor, the following command can be used.  
-`arc i create --identifier "2021_TestARC05" --title "Redox behaviour of yeast mutant M21" --description "M21 lacks in protein P09 and is susceptible to H2O2 Treatment. The molecular and phenotypical responses are studied."`
+`arc investigation create --identifier "2021_TestARC05" --title "Redox behaviour of yeast mutant M21" --description "M21 lacks in protein P09 and is susceptible to H2O2 Treatment. The molecular and phenotypical responses are studied."`
 - The isa.investigation.xlsx is added to root directory.
 
 > :bulb: You don't need to fill every row from the beginning, as ARCs are intended as an evolving object that shapes over time.

@@ -111,7 +111,7 @@ Before you can fill your ARC, let's revise your data.
 The ISA investigation (`-i`) workbook allows you to record administrative metadata of your project. Add the isa.investigation.xlsx workbook including an identifier to your ARC with
 
 ```bash
-arc i create --identifier <YourInvestigationID>
+arc investigation create --identifier <YourInvestigationID>
 ```
 :bulb: Avoid using spaces in the identifier. Use underscores and capital letters instead.
 
@@ -132,7 +132,7 @@ arc s add --studyidentifier <YourStudyID>
 Add an assay folder with the isa.assay.xlsx workbook including an identifier to your ARC with
 
 ```bash
-arc a add --studyidentifier <YourStudyID> --assayidentifier <YourAssayID>
+arc assay add --studyidentifier <YourStudyID> --assayidentifier <YourAssayID>
 ```
 
 :bulb: An assay must be linked to a study. If a study does not exist, it will be created automatically in this step.

@@ -35,7 +35,7 @@ add sidebar: _sidebars/mainSidebar.md
 |     TechnologyPlatform                    |     Manufacturer and   platform name, e.g. Bruker AVANCE                                                                                                                                                                                                                                                                           |     AB Sciex TT6600         |
 
 If no study identifier is given, a study is created with the assay identifier as study identifier. Instead of using the editor, the following command can be used:  
-`arc a add -a GelBasedProteomicsM21 --measurementtype Proteomics --technologytype "Mass spectrometry" --technologyplatform "AB Sciex TT6600"`
+`arc assay add -a GelBasedProteomicsM21 --measurementtype Proteomics --technologytype "Mass spectrometry" --technologyplatform "AB Sciex TT6600"`
 
 ## Listing and inspecting registered assays
 
