@@ -122,11 +122,106 @@ git clone "https://demo-user:5ehDYeHcqP2MqVXsNNPu@git.nfdi4plants.org/teaching/d
 
 <img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate_c_40x40.png'/> ... **annotate the experimental data**
 
-![bg right:40% width:400](../../../../img/demo_arc_screenshot.png)
+![bg right:40% width:400](./../../../../img/demo_arc_screenshot.png)
 
 ---
 
-# Part 1: Swate hands-on with demo data
+# Part 1: Intro ISA
+
+---
+
+## ARC builds on ISA
+
+![w:900](./../../../../img/ISAmodel_ARC01_img01.svg)
+
+https://isa-tools.org/format/specification.html
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/ARC_ISAmodel.md -->
+
+---
+
+# ARC builds on ISA
+
+![w:1100](./../../../../img/ISAmodel_ARC01_img02.svg)
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/ARC_ISA-tab.md -->
+
+
+---
+
+# isa.<>.xlsx files within ARCs
+
+![w:1000](./../../../../img/ISAmodel_ARC01_img03.svg)
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/ARC_ISAxlsx01.md -->
+
+
+---
+
+# Study and assay files are registered in the investigation file <!-- fit -->
+
+![w:950](./../../../../img/ISAmodel_ARC01_img04.svg)
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/ARC_ISAxlsx02.md -->
+
+
+---
+
+# The output of a study or assay file can function as input for a new isa.assay.xlsx 
+
+Output building blocks:
+- Sample Name
+- Raw Data File
+- Derived Data File
+
+![bg right w:600](./../../../../img/ISAmodel_ARC01_img05.svg)
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/ARC_ISAxlsx03.md -->
+
+
+---
+
+# 
+
+![bg w:1050](./../../../../img/ISAmodel_ARC01_img6.svg)
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/ARC_ISAxlsx04.md -->
+
+
+---
+
+
+# Annotation Building Block types <!--fit-->
+
+![bg right:40% w:520](./../../../../img/Swate_Overview.svg)
+
+- Source Name (Input)
+- Protocol Columns
+  - Protocol Type, Protocol Ref
+- Characteristic
+- Parameter
+- Factor
+- Component
+- Output Columns
+  - Sample Name, Raw Data File, Derived Data File
+
+
+:bulb: For details, check out the [annotation principles](https://nfdi4plants.github.io/AnnotationPrinciples/).
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/lesson_Swate_DataPLANT-Annotation_Building_Block_types.md -->
+
+
+---
+
+
+# Part 2: Swate hands-on with demo data
 
 ---
 
@@ -269,7 +364,7 @@ Try to add suitable *building blocks* for other pieces of metadata from the plan
 ---
 
 
-## Let's annotate the RNA 
+## Let's annotate the RNA Seq data
 
 1. Navigate to the demo ARC. 
 2. Open the lab notes `assays/rnaseq/protocols/RNA_extraction.txt` in a text editor. 
@@ -287,6 +382,8 @@ Try to add suitable *building blocks* for other pieces of metadata from the plan
 1. Search for `RNA extraction` and click <kbd>select</kbd> 
     - You will see a preview of all building blocks which are part of this template.
 2. Click <kbd>Add template</kbd> to add all Building Blocks from the template to your table, which <u>do not exist yet</u>.
+
+![bg right:30% w:350px](../../../../img/swate_templates.svg)
 
 ---
 
@@ -310,9 +407,18 @@ If there are any Building Blocks which do not fit your experiment you can use th
 
 ---
 
+## New process, new worksheet
+
+1. Add a new sheet to the `assays/rnaseq/isa.assay.xlsx)` workbook.
+2. Add the template "RNASeq Assay"
+
+--- 
+
 ## Exercise :pencil:
 
-Try to fill the template with the protocol's details (`assays/rnaseq/protocols/RNA_extraction.txt`).
+Try to fill the two sheets with the protocol details:
+  - `assays/rnaseq/protocols/RNA_extraction.txt` and
+  - `assays/rnaseq/protocols/Illumina_libraries.txt`
 
 ---
 
