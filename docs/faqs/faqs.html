@@ -413,6 +413,23 @@ Is it necessary to fill in the empty fields in the investigation-file manually?
 </summary>
 No. Although it is possible to fill out the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
 </details>
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Where in the ARC can I store "external" data? 
+</summary>
+Research projects rarely start out of the blue. Rather every project builds on previous findings and published datasets.
+To properly re-use and reference such a dataset, we recommend to add a `study` to your ARC. Every study by default comes with four parts: 
+<nfdi-code>└── &lt;StudyName>
+    ├── README.md
+    ├── isa.study.xlsx
+    ├── protocols
+    └── resources
+</nfdi-code>
+<ul>
+<li>In the <code>resources</code> directory you can add the data (e.g. supplemental data files)</li>
+<li>In the <code>protocols</code> directory you can add notes on how you retrieved the data and from where.</li>
+<li>The study is registered in your ARC's <code>isa.investigation.xlsx</code>, which includes a section &quot;STUDY PUBLICATIONS&quot; for every study. Here, you can add publication details (author, DOI, etc.) about the external data source.</li>
+</ul>
+</details>
 <br>
 <nfdi-h2 id="arc-commander">ARC Commander</nfdi-h2>
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
@@ -437,6 +454,44 @@ Note: This also works for &quot;arc get&quot;<br />
 </ul>
 <nfdi-code class="language-BASH">git clone https://oauth2:TOKENSTRING@git.nfdi4plants.org/abc/xyz
 </nfdi-code>
+</details>
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Why do I get the error `'arc' is not recognized as an internal or external command, operable program or batch file.`?
+</summary>
+<p>Your machine cannot find your ARC commander executable. Possible reasons are that you have not yet installed the ARC commander or that the <code>arc</code> executable was not added to your path.</p>
+<p>Please carefully retry the <a href="./../ArcCommanderManual/index-setup.html">ARC Commander setup</a>.</p>
+<p>If this does not do the trick, please follow these steps towards debugging (on Windows):</p>
+<ol>
+<li>Open the command prompt (cmd) or powershell in the folder (e.g. <code>C:\Programs\ArcCommander</code>) where you stored the ARC Commander program (e.g. arc.exe). If <code>arc --version</code> shows the version, the executable is intact.</li>
+<li>Next, execute <code>path</code> to check wether the folder (e.g. <code>C:\Programs\ArcCommander</code>) appears in your path.</li>
+<li>Adapt the user's path (not admin)</li>
+</ol>
+<p>💡 If you do not have admin rights on the computer, please open the settings &quot;Edit environment variables for your account&quot; and follow steps described in the <a href="./../ArcCommanderManual/index-setup.html">ARC Commander setup</a>.</p>
+</details>
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Why do I get the error `ERROR: GIT: fatal: detected dubious ownership`?
+</summary>
+Possible reasons:
+<ul>
+<li>You tried to work on an ARC that belongs to another person, e.g. another user account on the same computer or in the same file share - or vice versa.</li>
+<li>This issues might occur when working on a network drive (Fileshare, File Server, NAS) that has been mounted by another user account.</li>
+</ul>
+<p>💡 We need more info to learn what causes this issue. Please let us know, if you run into that error!</p>
+</details>
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Syncing my ARC to the DataHUB takes forever or gets stuck. What can I do?
+</summary>
+This is likely due to handling a big volume of data. 
+<p>Solution: Increase git's http post buffer</p>
+<p>Execute the following command in your command line:</p>
+<nfdi-code>git config --global http.postBuffer 524288000
+</nfdi-code>
+<ul>
+<li>500 MB: 524288000</li>
+<li>1 GB: 1048576000</li>
+<li>2 GB: 2097152000</li>
+</ul>
+<p>source: <a href="https://stackoverflow.com/questions/6887228/git-hangs-while-writing-objects">https://stackoverflow.com/questions/6887228/git-hangs-while-writing-objects</a></p>
 </details>
 <br>
 <nfdi-h2 id="swate">Swate</nfdi-h2>
