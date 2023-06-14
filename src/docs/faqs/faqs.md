@@ -45,10 +45,9 @@ To properly re-use and reference such a dataset, we recommend to add a `study` t
     └── resources
 ```
 
-- The "Study" worksheet in `isa.study.xlsx` contains a section "STUDY PUBLICATIONS", where you can add publication details (author, DOI, etc.) about the external data source.
 - In the `resources` directory you can add the data (e.g. supplemental data files)
 - In the `protocols` directory you can add notes on how you retrieved the data and from where.
-
+- The study is registered in your ARC's `isa.investigation.xlsx`, which includes a section "STUDY PUBLICATIONS" for every study. Here, you can add publication details (author, DOI, etc.) about the external data source.
 
 </details>
 
