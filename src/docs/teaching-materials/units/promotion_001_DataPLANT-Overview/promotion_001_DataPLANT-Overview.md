@@ -22,18 +22,18 @@ teaching mode:
 duration_minutes: 3
 ---
 
-![bg](../../../img/DataPLANT-Background.png)
+![bg](./../../../img/DataPLANT-Background.png)
 
 <br>
 
-![w:500](../../../img/_logos/DataPLANT/DataPLANT_logo_bg_transparent.svg) 
+![w:500](./../../../img/_logos/DataPLANT/DataPLANT_logo_bg_transparent.svg) 
 
 <p style=
 "color:white; text-align:center;  font-variant: small-caps; font-size: 50px"
 >FAIR research in your hands</p>
 
 ###
-![](../../../img/DataPLANT-Background-Pictograms.png)
+![](./../../../img/DataPLANT-Background-Pictograms.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/DataPLANT-Intro.md -->
@@ -46,7 +46,7 @@ duration_minutes: 3
 
 <div class=mdiv>
 
-![w:700](../../../img/FAIRData_ActivationEnergy.svg)
+![w:700](./../../../img/FAIRData_ActivationEnergy.svg)
 </div>
 
 <!-- Source to slide(s) -->
@@ -66,7 +66,7 @@ lowering the activation energy.
 <br>
 <br>
 
-![w:600](../../../img/FAIRData_ActivationEnergy_withDataPLANT.svg)
+![w:600](./../../../img/FAIRData_ActivationEnergy_withDataPLANT.svg)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/DataPLANT-as-an-enzyme.md -->
@@ -85,7 +85,7 @@ a FAIR digital object implementation of DataPLANT
 
 <div class=mdiv>
 
-![w:320](../../../img/DataPLANT_BigPicture_seq1-mid.png)
+![w:320](./../../../img/DataPLANT_BigPicture_seq1-mid.png)
 </div>
 
 <!-- Source to slide(s) -->
@@ -101,7 +101,7 @@ provide support in being FAIR
 </span>
 </h1>
 
-![bg w:1200](../../../img/Tools-and-Services_DataPLANT.png)
+![bg w:1200](./../../../img/Tools-and-Services_DataPLANT.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/DataPLANT_Tools-and-Services.md -->
@@ -120,7 +120,7 @@ https://linktr.ee/DataPLANT
 
 <div class=ldiv>
 
-![w:200](../../../img/DataStewards_CommunityIntegration_img2.png)
+![w:200](./../../../img/DataStewards_CommunityIntegration_img2.png)
 
 </div>
 
@@ -143,7 +143,7 @@ https://www.nfdi4plants.org/
 <br>
 <br>
 
-![](../../../img/_qr-codes/QR_DataPLANT_Linktree.svg)
+![](./../../../img/_qr-codes/QR_DataPLANT_Linktree.svg)
 </div>
 
 <!-- Source to slide(s) -->

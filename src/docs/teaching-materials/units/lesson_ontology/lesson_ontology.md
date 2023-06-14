@@ -62,7 +62,7 @@ Alphabetically lists terms and their definitions
 
 Hierarchy or classification
 
-![bg right:60% w:780](../../../img/Ontologies_pizzaAnalogy_seq1.png)
+![bg right:60% w:780](./../../../img/Ontologies_pizzaAnalogy_seq1.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Taxonomy.md -->
@@ -107,7 +107,7 @@ An ontology combines features of
 
 # The semantic triple
 
-![w:1000](../../../img/Ontologies_pizzaAnalogy_seq2.png)
+![w:1000](./../../../img/Ontologies_pizzaAnalogy_seq2.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-The_semantic_triple.md -->
@@ -117,15 +117,15 @@ An ontology combines features of
 
 # Modeling a pizza menu
 
-![w:1000](../../../img/Ontologies_pizzaAnalogy_seq3.png)
+![w:1000](./../../../img/Ontologies_pizzaAnalogy_seq3.png)
 
 # Modeling a pizza menu
 
-![w:1000](../../../img/Ontologies_pizzaAnalogy_seq4.png)
+![w:1000](./../../../img/Ontologies_pizzaAnalogy_seq4.png)
 
 # Modeling a pizza menu
 
-![w:1000](../../../img/Ontologies_pizzaAnalogy_seq5.png)
+![w:1000](./../../../img/Ontologies_pizzaAnalogy_seq5.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Modeling_a_pizza_menu.md -->
@@ -135,15 +135,15 @@ An ontology combines features of
 
 # Modeling a pizza menu
 
-![w:1000](../../../img/Ontologies_pizzaAnalogy_seq3.png)
+![w:1000](./../../../img/Ontologies_pizzaAnalogy_seq3.png)
 
 # Modeling a pizza menu
 
-![w:1000](../../../img/Ontologies_pizzaAnalogy_seq4.png)
+![w:1000](./../../../img/Ontologies_pizzaAnalogy_seq4.png)
 
 # Modeling a pizza menu
 
-![w:1000](../../../img/Ontologies_pizzaAnalogy_seq5.png)
+![w:1000](./../../../img/Ontologies_pizzaAnalogy_seq5.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Modeling_a_pizza_menu.md -->
@@ -153,15 +153,15 @@ An ontology combines features of
 
 # Modeling a pizza menu
 
-![w:1000](../../../img/Ontologies_pizzaAnalogy_seq3.png)
+![w:1000](./../../../img/Ontologies_pizzaAnalogy_seq3.png)
 
 # Modeling a pizza menu
 
-![w:1000](../../../img/Ontologies_pizzaAnalogy_seq4.png)
+![w:1000](./../../../img/Ontologies_pizzaAnalogy_seq4.png)
 
 # Modeling a pizza menu
 
-![w:1000](../../../img/Ontologies_pizzaAnalogy_seq5.png)
+![w:1000](./../../../img/Ontologies_pizzaAnalogy_seq5.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Modeling_a_pizza_menu.md -->
@@ -171,7 +171,7 @@ An ontology combines features of
 
 # Predicates have two directions
 
-![w:1000](../../../img/Ontologies_pizzaAnalogy_seq6.png)
+![w:1000](./../../../img/Ontologies_pizzaAnalogy_seq6.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Predicates_have_two_directions.md -->
@@ -183,7 +183,7 @@ An ontology combines features of
 
 An object of one triplet can be the subject to another
 
-![w:1000](../../../img/Ontologies_pizzaAnalogy_seq7.png)
+![w:1000](./../../../img/Ontologies_pizzaAnalogy_seq7.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Looking_at_the_menu.md -->
@@ -193,7 +193,7 @@ An object of one triplet can be the subject to another
 
 # (Towards) a knowledge graph
 
-![w:1020](../../../img/Ontologies_pizzaAnalogy_seq8.png)
+![w:1020](./../../../img/Ontologies_pizzaAnalogy_seq8.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_ontology-Towards_knowledge_graph.md -->
@@ -207,7 +207,7 @@ An ontology can be queried:
 
 - *"name all pizzas with topping mushrooms"*
 
-![bg right w:1020](../../../img/Ontologies_pizzaAnalogy_seq9.png)
+![bg right w:1020](./../../../img/Ontologies_pizzaAnalogy_seq9.png)
 
 <!-- 
 TODO: 

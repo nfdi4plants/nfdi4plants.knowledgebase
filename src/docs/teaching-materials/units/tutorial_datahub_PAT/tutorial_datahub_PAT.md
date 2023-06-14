@@ -38,7 +38,7 @@ title: tutorial_datahub_PAT
    2. Expiration date (optional)
    3. Select scope: `api`
 
-![bg right w:600](../../../img/datahub_accessToken.png)
+![bg right w:600](./../../../img/datahub_accessToken.png)
 
 --- 
 
@@ -47,7 +47,7 @@ title: tutorial_datahub_PAT
 4. Click "Create personal access token"
 5. `Your new personal access token` appears on top. Copy it somewhere **save** for later use.
 
-![Access Token w:800](../../../img/datahub_accessToken_02.png)
+![Access Token w:800](./../../../img/datahub_accessToken_02.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_PAT-Steps.md -->

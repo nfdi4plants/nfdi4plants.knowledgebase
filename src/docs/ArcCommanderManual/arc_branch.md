@@ -10,7 +10,7 @@ add sidebar: _sidebars/mainSidebar.md
 
 ## Challenge
 
-- No direct access rights to the main branch (which can be handled via the [DataHUB](../DataHub.md)) or 
+- No direct access rights to the main branch (which can be handled via the [DataHUB](./../DataHub.md)) or 
 - Many people working on the same repository, making direct pushing to main branch chaotic.
 
 ## Solution

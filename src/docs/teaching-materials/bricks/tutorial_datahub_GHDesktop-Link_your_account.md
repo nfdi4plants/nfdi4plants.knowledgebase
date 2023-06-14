@@ -18,4 +18,4 @@ title: tutorial_datahub_GHDesktop-Link_your_account
 2. Click `Save and Retry`
 3. Your ARC is now available in your GitHub Desktop.
 
-![bg right:40% w:500](../../img/GitHub_Desktop_accessToken.png)
+![bg right:40% w:500](./../../img/GitHub_Desktop_accessToken.png)

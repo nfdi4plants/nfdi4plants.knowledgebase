@@ -14,4 +14,4 @@ title: tutorial_arc_add-Add_your_data
 
 Place the data and protocols for each study and assay in the respective `Dataset` and `Protocols` folders
 
-![bg right:50% width:850](../../img/ARC_fillWithData_seq3.png)
+![bg right:50% width:850](./../../img/ARC_fillWithData_seq3.png)

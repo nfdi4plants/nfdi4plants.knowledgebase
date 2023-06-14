@@ -46,7 +46,7 @@ arc init
 
 3. This will create the general ARC folder structure:
 
-![arc init](../img/arcCommander_init.png)
+![arc init](./../img/arcCommander_init.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -82,7 +82,7 @@ arc assay add -s QuickStartStudy -a QuickStartAssay
 - The ARC Commander will add a subdirectories to the *studies* and *assays* folder. Your ARC should
     look similar to this now:  
 
-![subdirectories](../img/arc_studies_assays.jpg)
+![subdirectories](./../img/arc_studies_assays.jpg)
 
 - These steps can be repeated to add as many studies and assays as needed. Accordingly, more subdirectories will be added. Multiple assays can be grouped in a study when the same StudyIdentifier is used.
 
@@ -96,7 +96,7 @@ arc assay add -s QuickStartStudy -a QuickStartAssay
 
 In case you are not a member of DataPLANT yet, please visit [sign up](<https://register.nfdi4plants.org>). Afterwards, you will be granted access to DataPLANT’s [DataHUB](<https://git.nfdi4plants.org>). The DataHUB allows you to share your ARCs with registered lab or project partners.
 
-![](../img/dataplant_registration.png)
+![](./../img/dataplant_registration.png)
 
 After successful registration, setup your machine for smooth ARC synchronization using the ARC Commander
 
@@ -129,7 +129,7 @@ After successful registration, setup your machine for smooth ARC synchronization
 
 A window within your browser will open, asking for your DataPLANT Log In. In case you are already logged in, the browser will directly display a Success message to you:
 
-![](../img/arcCommander_AccessToken.png)
+![](./../img/arcCommander_AccessToken.png)
 
 ### ARC synchronization
 
@@ -156,11 +156,11 @@ arc sync -r https://git.nfdi4plants.org/<YourUserName>/<YourARC>
 arc sync -f
 ```
 
-![](../img/arcCommander_syncForce.png)
+![](./../img/arcCommander_syncForce.png)
 
 5. Check if the upload was successful by visiting your ARC at the respective URL in your browser.
 
-![](../img/datahub_repository.png)
+![](./../img/datahub_repository.png)
 
 >Note: Alternatively, you can first create a new blank repository in the [DataHUB](https://git.nfdi4plants.org) by clicking "New project/repository" in the plus drop down menu of the navigation bar on top. Afterwards, you can sync your local ARC to the respective repository by adapting the URL to the newly generated one. 
 
@@ -187,7 +187,7 @@ Briefly:
 - *Developers:* The choice for most people you want to invite to your ARC. Developers have read and write access, but cannot maintain the project on the DataHUB, e.g. inviting others.  
 - *Maintainers:* Gives the person the same rights as you have (except of removing you from your own project). This is recommended for inviting PIs or group leaders allowing them to add their group members for data upload or analysis to the project as well.
 
-![](../img/datahub_members.png)
+![](./../img/datahub_members.png)
 
 > :bulb: After concluding this quickstart, you might want to explore the [ARC Commander manual](./../ArcCommanderManual/index.html) for a more detailed usage instruction.
 

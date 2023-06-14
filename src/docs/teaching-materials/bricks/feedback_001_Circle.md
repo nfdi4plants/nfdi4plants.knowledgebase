@@ -21,7 +21,7 @@ section {
 
 # Feedback-Circle
 
-![width:800px](../../img/feedback02_circle.drawio.svg)
+![width:800px](./../../img/feedback02_circle.drawio.svg)
 
 <!-- 
 - Invite participants to give feedback

@@ -28,7 +28,7 @@ date: 2023-06-14
 <!-- _paginate: false -->
 <!-- _footer: "" -->
 
-![bg fit](../custom/img/background_title_ceplas.drawio.svg)
+![bg fit](./../custom/img/background_title_ceplas.drawio.svg)
 
 Session 03 - Annotate your data
 June 14th, 2023
@@ -383,7 +383,7 @@ Try to add suitable *building blocks* for other pieces of metadata from the plan
     - You will see a preview of all building blocks which are part of this template.
 2. Click <kbd>Add template</kbd> to add all Building Blocks from the template to your table, which <u>do not exist yet</u>.
 
-![bg right:30% w:350px](../../../../img/swate_templates.svg)
+![bg right:30% w:350px](./../../../../img/swate_templates.svg)
 
 ---
 

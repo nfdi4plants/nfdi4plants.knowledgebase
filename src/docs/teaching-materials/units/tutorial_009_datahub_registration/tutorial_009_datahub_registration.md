@@ -24,7 +24,7 @@ status: ready
 
 If you do not have a DataPLANT account, please register at the [DataPLANT website](<https://register.nfdi4plants.org>).
 
-![w:800](../../../img/dataplant_registration.png)
+![w:800](./../../../img/dataplant_registration.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_registration.md -->
@@ -56,7 +56,7 @@ During the registration you can "Choose your role in DataPLANT"
 - Guest
   - Guest users who want to use the DataPLANT tools and services
 
-![bg right:35% fit](../../../img/dataplant_registration_roles.png)
+![bg right:35% fit](./../../../img/dataplant_registration_roles.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_registration_role.md -->

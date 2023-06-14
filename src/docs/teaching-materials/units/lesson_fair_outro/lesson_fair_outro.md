@@ -45,7 +45,7 @@ ul {
 * Access Management
 * Publication
 
-![bg right:30% w:700](../../../img/FAIR_Principles_002.svg)
+![bg right:30% w:700](./../../../img/FAIR_Principles_002.svg)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_FAIR_outro-Associate_FAIR.md -->
@@ -79,7 +79,7 @@ ul {
 * Access Management
 * Publication
 
-![bg right:30% w:700](../../../img/ResearchDataLifecycle_seq8.png)
+![bg right:30% w:700](./../../../img/ResearchDataLifecycle_seq8.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_FAIR_outro-Associate_DataLifeCycle.md -->

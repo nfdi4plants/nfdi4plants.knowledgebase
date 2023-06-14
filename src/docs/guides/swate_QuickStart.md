@@ -33,7 +33,7 @@ DataPLANT provides the Excel Add-In Swate to support you in data annotation. In 
 
 - Use the *create annotation table* button in the yellow pop-up box (this only appears if you start Swate on an Excel worksheet without an existing annotation table). An annotation table with the building blocks *Source Name* and *Sample Name* will be generated.  
 
-![](../img/Swate-CreateAnnotationTable-Exp.jpg)
+![](./../img/Swate-CreateAnnotationTable-Exp.jpg)
 
 - Annotate your table with help of the [annotation principles](https://nfdi4plants.github.io/AnnotationPrinciples/).  
 Briefly:
@@ -78,7 +78,7 @@ Fill the cells beneath each building block with ontology terms to note the respe
 
 3. If you could not find a fitting term, use free text input.
 
-![](../img/swate_ontologyTermSearch2.png)
+![](./../img/swate_ontologyTermSearch2.png)
 
 
 > Note: More information on how to use Swate can be found [here][kb-SwateManual].

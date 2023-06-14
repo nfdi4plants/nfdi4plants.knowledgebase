@@ -24,7 +24,7 @@ style: 'footer {height: 30px;padding: 10px;bottom: 00px;} #footer-img1 {height: 
 
 # Swate 
 
-![](../../../img/_logos/Swate/Swate_logo_for_excel.svg)
+![](./../../../img/_logos/Swate/Swate_logo_for_excel.svg)
 
 DataPLANT provides the Excel Add-In Swate to support you in data annotation.
 

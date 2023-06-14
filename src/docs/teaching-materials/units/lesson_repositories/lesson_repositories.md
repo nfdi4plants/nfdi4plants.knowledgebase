@@ -96,7 +96,7 @@ Repository | Description | Biological data domain
 
 # Generic data repositories
 
-![bg right width:500](../../../img/repositories_genericRepos_collage.drawio.svg)
+![bg right width:500](./../../../img/repositories_genericRepos_collage.drawio.svg)
 
 **Good**
 

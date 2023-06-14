@@ -16,7 +16,7 @@ section {
 }
 </style>
 
-![width:800px](../../img/feedback01_FiveFinger.drawio.svg)
+![width:800px](./../../img/feedback01_FiveFinger.drawio.svg)
 
 <!-- 
 - Invite participants to give feedback

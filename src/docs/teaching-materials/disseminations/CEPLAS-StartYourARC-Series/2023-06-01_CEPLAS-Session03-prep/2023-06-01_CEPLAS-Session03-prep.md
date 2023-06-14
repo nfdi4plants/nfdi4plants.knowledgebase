@@ -29,7 +29,7 @@ author:
 <!-- _paginate: false -->
 <!-- _footer: "" -->
 
-![bg fit](../custom/img/background_title_ceplas.drawio.svg)
+![bg fit](./../custom/img/background_title_ceplas.drawio.svg)
 
 (Preparation for) Session 03
 
@@ -89,7 +89,7 @@ arc sync -r https://git.nfdi4plants.org/<username>/my-arc
 
 Check if the upload was successful by visiting your ARC at the respective URL in your browser.
 
-![w:800](../../../../img/datahub_repository.png)
+![w:800](./../../../../img/datahub_repository.png)
 
 # Part 2: Adding subfolders for your data
 
@@ -141,7 +141,7 @@ arc assay add --studyidentifier <YourStudyID> --assayidentifier <YourAssayID>
 
 The ARC Commander adds subdirectories to the *studies* and *assays* folders. Your ARC should, look similar to this now:  
 
-![bg right w:600](../../../../img/arc_studies_assays.jpg)
+![bg right w:600](./../../../../img/arc_studies_assays.jpg)
 
 These steps can be repeated to add as many studies and assays as needed. Accordingly, more subdirectories will be added
 
@@ -178,31 +178,31 @@ Try to place your resources, datasets and protocols for each study and assay in 
 
 1. Click on **Project Information** in the left navigation panel
 
-![fit w:1050](../../../../img/datahub_members_seq2.png)
+![fit w:1050](./../../../../img/datahub_members_seq2.png)
 
 ---
 
 2. Click on **Members**
 
-![fit w:1050](../../../../img/datahub_members_seq3.png)
+![fit w:1050](./../../../../img/datahub_members_seq3.png)
 
 ---
 
 3. Click on **Invite members**
 
-![fit w:1050](../../../../img/datahub_members_seq4.png)
+![fit w:1050](./../../../../img/datahub_members_seq4.png)
 
 ---
 
 4. Search for potential collaborators
 
-![fit w:1050](../../../../img/datahub_members_seq5.png)
+![fit w:1050](./../../../../img/datahub_members_seq5.png)
 
 ---
 
 5. Select a role 
 
-![fit w:1050](../../../../img/datahub_members_seq6.png)
+![fit w:1050](./../../../../img/datahub_members_seq6.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_invite-collaborators.md -->
@@ -239,7 +239,7 @@ object-position: 100% 45%;
 }
 </style>
 
-![](../../../../img/ARC_Sharing_img1.png)
+![](./../../../../img/ARC_Sharing_img1.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_congrats-for-sharing.md -->

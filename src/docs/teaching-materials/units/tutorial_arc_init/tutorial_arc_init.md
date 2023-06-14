@@ -25,7 +25,7 @@ title: tutorial_arc_init
 
 # ARC initialization
 
-![bg right w:500](../../../img/_logos/ARCCommander/ARCCommander_Logo1.svg)
+![bg right w:500](./../../../img/_logos/ARCCommander/ARCCommander_Logo1.svg)
 
 # ARC initialization
 
@@ -62,7 +62,7 @@ cd ~/Desktop/QuickStart
 
 # ARC initialization
 
-![bg right w:500](../../../img/_logos/ARCCommander/ARCCommander_Logo1.svg)
+![bg right w:500](./../../../img/_logos/ARCCommander/ARCCommander_Logo1.svg)
 
 # ARC initialization
 
@@ -82,7 +82,7 @@ arc init
 
 This will create the general ARC folder structure:
 
-![w:800](../../../img/arcCommander_init.png)
+![w:800](./../../../img/arcCommander_init.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_arc_init-Your_fresh_ARC.md -->

@@ -19,7 +19,7 @@ author_github: brilator
 <!-- _paginate: false -->
 <!-- _footer: "" -->
 
-![bg fit](../custom/img/background_title_ceplas.drawio.svg)
+![bg fit](./../custom/img/background_title_ceplas.drawio.svg)
 
 **Preparation for** Session 02 &ndash; "Build your ARC"
 (May 31st, 2023)
@@ -61,7 +61,7 @@ ul{
 
 If you do not have a DataPLANT account, please register at the [DataPLANT website](<https://register.nfdi4plants.org>).
 
-![w:800](../../../../img/dataplant_registration.png)
+![w:800](./../../../../img/dataplant_registration.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../../bricks/datahub_registration.md -->
@@ -73,7 +73,7 @@ If you do not have a DataPLANT account, please register at the [DataPLANT websit
 
 Please add your `Project/consortium` (e.g. CEPLAS, SFB, TRR) and choose the role `Guest`
 
-![bg right:40% fit](../../../../img/dataplant_registration_roles.png)
+![bg right:40% fit](./../../../../img/dataplant_registration_roles.png)
 
 <!-- Source to slide(s) -->
 <!-- ../custom/bricks/ceplas-datahub-registration.md -->
@@ -107,7 +107,7 @@ Check if the ARC Commander is functional by displaying the ARC Commander version
 arc --version
 ```
 
-![bg right:30% width:300](../../../../img/arc-manual-setup.png)
+![bg right:30% width:300](./../../../../img/arc-manual-setup.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../../bricks/tutorial_arc_installation.md -->

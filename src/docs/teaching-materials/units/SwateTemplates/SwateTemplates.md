@@ -47,7 +47,7 @@ status: ready
 
 # Checklists and Templates
 
-![w:800px](../../../img/swate_TemplatesChecklists.svg)
+![w:800px](./../../../img/swate_TemplatesChecklists.svg)
 
 Metadata standards or repository requirements can be represented as templates
 
@@ -84,7 +84,7 @@ section {
 }
 </style>
 
-![](../../../img/Swate_metadataTemplates.png)
+![](./../../../img/Swate_metadataTemplates.png)
 
 Facilities can define their most common workflows as templates
 
@@ -99,7 +99,7 @@ Facilities can define their most common workflows as templates
 - DataPLANT curated
 - Community templates
 
-![bg right w:450](../../../img/Swate_Templates.svg)
+![bg right w:450](./../../../img/Swate_Templates.svg)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/Swate-templates04-import.md -->

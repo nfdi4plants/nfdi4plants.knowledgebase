@@ -19,7 +19,7 @@ title: tutorial_swate_firstSteps
 
 # First steps
 
-![](../../../img/_logos/Swate/Swate_logo_for_excel.svg)
+![](./../../../img/_logos/Swate/Swate_logo_for_excel.svg)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_swate_firstSteps-First_steps.md -->
@@ -32,7 +32,7 @@ title: tutorial_swate_firstSteps
 - Click *create annotation table* in the yellow pop-up box (only appears on Excel worksheets without annotation table). 
 - An annotation table with the building blocks *Source Name* and *Sample Name* will be generated.  
 
-![w:500](../../../img/Swate-CreateAnnotationTable-Exp.jpg)
+![w:500](./../../../img/Swate-CreateAnnotationTable-Exp.jpg)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_swate_firstSteps-Create_a_Swate_table.md -->
@@ -44,7 +44,7 @@ title: tutorial_swate_firstSteps
 
 Choose the type of building block you want to add (A).
 
-![w:600](../../../img/Swate-AddBuildingBlock-Exp.jpg)
+![w:600](./../../../img/Swate-AddBuildingBlock-Exp.jpg)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_swate_firstSteps-Customize_your_table_by_adding_building_blocks.md -->
@@ -68,7 +68,7 @@ Choose the type of building block you want to add (A).
 
 If you want to add a building block with a unit, check box (C) and use search field (D) to look for a fitting unit term, e.g. degree Celsius as unit for Parameter \[temperature\].
 
-![w:600](../../../img/Swate-AddBuildingBlock-Exp.jpg)
+![w:600](./../../../img/Swate-AddBuildingBlock-Exp.jpg)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_swate_firstSteps-Units.md -->
@@ -81,7 +81,7 @@ If you want to add a building block with a unit, check box (C) and use search fi
 - Use the *advanced search* for building blocks and terms, if no fitting term was found.
 - Use free text input, if still no fitting term was found.
 
-![w:600](../../../img/Swate-AddBuildingBlock-Exp.jpg)
+![w:600](./../../../img/Swate-AddBuildingBlock-Exp.jpg)
 
 - For more information on customizing your annotation table click [here](https://nfdi4plants.github.io/Swate-docs/docs/UserDocs/Docs03-Building-Blocks.html).
 
@@ -96,7 +96,7 @@ If you want to add a building block with a unit, check box (C) and use search fi
 - Alternatively, you can also use a [Swate template](https://github.com/nfdi4plants/Swate/wiki/Docs05-Templates). 
 - You can find them under the *Protocol Insert* tab in Swate. Select a DataPLANT or community template as indicated by the tags.
 
-![bg right:50% w:450px](../../../img/swate_templates.svg)
+![bg right:50% w:450px](./../../../img/swate_templates.svg)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_swate_firstSteps-DataPLANT_curated_and_community_templates.md -->
@@ -111,7 +111,7 @@ If you want to add a building block with a unit, check box (C) and use search fi
 - When *Use related term directed search* is enabled, Swate  suggests suitable terms within the ontology  for the column header, e.g.
 *TripleTOF* *5600* for *instrument model.*
 
-![bg right w:450](../../../img/swate_ontologyTermSearch2.png)
+![bg right w:450](./../../../img/swate_ontologyTermSearch2.png)
 
 --- 
 
@@ -121,7 +121,7 @@ If you want to add a building block with a unit, check box (C) and use search fi
 
 - If you cannot find a fitting term, use free text input.
 
-![bg right w:400](../../../img/swate_ontologyTermSearch2.png)
+![bg right w:400](./../../../img/swate_ontologyTermSearch2.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_swate_firstSteps-Annotate_your_samples_and_data.md -->

@@ -21,7 +21,7 @@ title: lesson_DataHUB
 
 Discover and share ARCs with the Community on DataPLANT's [DataHUB](<https://git.nfdi4plants.org/>).
 
-![](../../../img/DataHUB_LandingPage.png)
+![](./../../../img/DataHUB_LandingPage.png)
 
 
 <!-- Source to slide(s) -->

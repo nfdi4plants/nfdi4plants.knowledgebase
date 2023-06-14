@@ -25,7 +25,7 @@ title: tutorial_arc_sync
 
 # ARC synchronization
 
-![bg right w:500](../../../img/_logos/ARCCommander/ARCCommander_Logo1.svg)
+![bg right w:500](./../../../img/_logos/ARCCommander/ARCCommander_Logo1.svg)
 
 # ARC synchronization
 
@@ -73,7 +73,7 @@ arc sync -r https://git.nfdi4plants.org/<OwnerOfRepository>/<NameOfRepository>
 
 Check if the upload was successful by visiting your ARC at the respective URL in your browser.
 
-![w:800](../../../img/datahub_repository.png)
+![w:800](./../../../img/datahub_repository.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_arc_sync-Success.md -->

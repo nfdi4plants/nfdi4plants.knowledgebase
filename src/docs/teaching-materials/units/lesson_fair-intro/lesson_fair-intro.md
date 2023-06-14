@@ -41,7 +41,7 @@ object-fit: cover;
 }
 </style>
 
-![](../../../img/FAIR_Benefits.png)
+![](./../../../img/FAIR_Benefits.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/FAIR-benefits.md -->

@@ -73,7 +73,7 @@ For this tutorial
 2. Navigate to an ARC you want to sync locally
 3. Click on `Clone` and copy the HTTPS url, e.g. `https://git.nfdi4plants.org/<yourUserName>/<yourArc>.git`
 
-![bg right w:600](../../../img/datahub_clone.png)
+![bg right w:600](./../../../img/datahub_clone.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_GHDesktop-Navigate_to_your_ARC_in_the_DataHUB.md -->
@@ -90,7 +90,7 @@ For this tutorial
 5. Select a destination folder (local path), where your ARC will be stored locally
 6. Click `Clone`
 
-![bg right:40% w:500](../../../img/GitHub_Desktop_clone.png)
+![bg right:40% w:500](./../../../img/GitHub_Desktop_clone.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_GHDesktop-GitHub_Desktop_Clone.md -->
@@ -106,7 +106,7 @@ For this tutorial
 2. Click `Save and Retry`
 3. Your ARC is now available in your GitHub Desktop.
 
-![bg right:40% w:500](../../../img/GitHub_Desktop_accessToken.png)
+![bg right:40% w:500](./../../../img/GitHub_Desktop_accessToken.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_GHDesktop-Link_your_account.md -->

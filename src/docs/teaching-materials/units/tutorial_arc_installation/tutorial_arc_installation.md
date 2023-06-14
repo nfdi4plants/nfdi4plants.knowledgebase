@@ -28,7 +28,7 @@ title: tutorial_arc_installation
 DataPLANT provides the ARC Commander command line tool to create, manage and share your ARCs.
 
 
-![bg right w:500](../../../img/_logos/ARCCommander/ARCCommander_Logo1.svg)
+![bg right w:500](./../../../img/_logos/ARCCommander/ARCCommander_Logo1.svg)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_arc_title.md -->

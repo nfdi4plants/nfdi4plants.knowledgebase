@@ -27,22 +27,22 @@ GitHub Desktop is a user-friendly software to help you synchronize (pull, commit
    2. Expiration date (optional)
    3. Select scope: `api`
 
-![Access Token](../img/datahub_accessToken.png)
+![Access Token](./../img/datahub_accessToken.png)
 
 5. Click "Create personal access token"
 6. `Your new personal access token` appears on top. Copy it somewhere for later use.
 
-![Access Token](../img/datahub_accessToken_02.png)
+![Access Token](./../img/datahub_accessToken_02.png)
 
 7. Within the DataHUB, go to your ARC.
 8. Click on `Clone` and copy the HTTPS url, e.g. `https://git.nfdi4plants.org/<yourUserName>/<yourArc>.git`
 
-![DataHUB Clone](../img/datahub_clone.png)
+![DataHUB Clone](./../img/datahub_clone.png)
 
 9.  Open GitHub Desktop.
 10. Select `File` -> `Clone repository`
 
-![GitHub Desktop Clone](../img/githubDesktop_clone.png)
+![GitHub Desktop Clone](./../img/githubDesktop_clone.png)
 
 11. Select the tab `URL` on top.
 12. Paste the HTTPS link to your ARC (step 8) inside the URL field and select the destination folder, where your ARC will be stored locally. Click `Clone`
@@ -50,7 +50,7 @@ GitHub Desktop is a user-friendly software to help you synchronize (pull, commit
     1. Username: this is your DataHUB username. You can find it under your avatar in the DataHUB
     2. Password: paste the access token copied in step 6.
 
-![GitHub Desktop Clone](../img/githubDesktop_accessToken.png)
+![GitHub Desktop Clone](./../img/githubDesktop_accessToken.png)
 
 14. Click `Save and Retry`.
 

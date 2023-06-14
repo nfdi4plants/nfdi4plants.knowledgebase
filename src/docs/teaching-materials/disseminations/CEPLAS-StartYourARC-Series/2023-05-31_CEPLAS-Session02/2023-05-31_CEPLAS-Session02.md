@@ -28,7 +28,7 @@ author_github:
 <!-- _paginate: false -->
 <!-- _footer: "" -->
 
-![bg fit](../custom/img/background_title_ceplas.drawio.svg)
+![bg fit](./../custom/img/background_title_ceplas.drawio.svg)
 
 Session 02 - Build your ARC
 May 31st, 2023
@@ -167,7 +167,7 @@ arc sync -r https://git.nfdi4plants.org/<username>/arc-demo
 
 Identify "raw dataset(s)" and "protocols" and move them to the proper subfolders in the ARC.
 
-![bg right w:500](../../../../img/demo_data_screenshot.png)
+![bg right w:500](./../../../../img/demo_data_screenshot.png)
 
 ## Sync your ARC to the DataHUB
 
@@ -184,31 +184,31 @@ arc sync -m "sorted the demo data"
 
 1. Click on **Project Information** in the left navigation panel
 
-![fit w:1050](../../../../img/datahub_members_seq2.png)
+![fit w:1050](./../../../../img/datahub_members_seq2.png)
 
 ---
 
 2. Click on **Members**
 
-![fit w:1050](../../../../img/datahub_members_seq3.png)
+![fit w:1050](./../../../../img/datahub_members_seq3.png)
 
 ---
 
 3. Click on **Invite members**
 
-![fit w:1050](../../../../img/datahub_members_seq4.png)
+![fit w:1050](./../../../../img/datahub_members_seq4.png)
 
 ---
 
 4. Search for potential collaborators
 
-![fit w:1050](../../../../img/datahub_members_seq5.png)
+![fit w:1050](./../../../../img/datahub_members_seq5.png)
 
 ---
 
 5. Select a role 
 
-![fit w:1050](../../../../img/datahub_members_seq6.png)
+![fit w:1050](./../../../../img/datahub_members_seq6.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_invite-collaborators.md -->

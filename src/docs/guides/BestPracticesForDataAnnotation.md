@@ -28,21 +28,21 @@ In our first scenario we focus on annotating the origin and relationship between
 
 Subsequent proccesing steps, mostly omitted here for better clarity, are stored within one or multiple isa.assay.xlsx files. In our scenario, three technical replicates of each sample were analyzed via LC/MS (Parameter [instrument model]), generating nine raw data files. 
 
-![replicates](../img/ISA_AnnotationPattern_Replicates.svg)
+![replicates](./../img/ISA_AnnotationPattern_Replicates.svg)
 
 **It is very important to group these technical replicates and thus annotate their common origin.** If you would falsely name the individual technical replicates as A, B and C, you could run into trouble during your computational analysis.
 
 ## Annotation of time series experiments
 In this rather simple scenario we take a look at the annotation of time coure patterns. Let's imagine a study in which our plant (Sample A) was exposed to stress (high light, salt, ...) for a given time. To investigate the cellular response, you harvested samples at various time points after exposure to the stressor: S1 is harvested after 5 minutes, S2 after 10 minutes, and so on. 
 
-![TimeSeries](../img/ISA_AnnotationPattern_TimeSeries.svg)
+![TimeSeries](./../img/ISA_AnnotationPattern_TimeSeries.svg)
 
 You should use the Factor building block in such a case to annotate the time after exposure and thereby the sampling point in the isa.study.xlsx file, as this time period will ultimately result in the given output, when all remaining parameters for treatment and analysis were identical.
 
 ## Annotation of mixed samples
 This example can be of relevance when you are carrying out labeling experiments or when you are spiking your samples with an internal standard for absolute quantification. The isa.assay.xlsx file below displays the best practice for annotating the mixing of experimental samples with a reference prior to LC/MS analysis.  
 
-![Spiking](../img/ISA_AnnotationPattern_MixingSamples.svg)
+![Spiking](./../img/ISA_AnnotationPattern_MixingSamples.svg)
 
 By listing every raw data file twice, it becomes clear that the analyzed samples originated from the combination of an experimental sample and a reference, e.g. spiking of S1 with the reference resulted in the data file S1R.wiff.  
 
