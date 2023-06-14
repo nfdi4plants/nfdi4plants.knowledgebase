@@ -95,6 +95,25 @@ Possible reasons:
 :bulb: We need more info to learn what causes this issue. Please let us know, if you run into that error! 
 </details>
 
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Syncing my ARC to the DataHUB takes forever or gets stuck. What can I do?
+</summary>
+This is likely due to handling a big volume of data. 
+Solution: 
+
+Increase git's http post buffer
+
+```
+git config --global http.postBuffer 524288000
+```
+
+500 MB: 524288000
+1 GB: 1048576000
+2 GB: 2097152000
+
+source: https://stackoverflow.com/questions/6887228/git-hangs-while-writing-objects
+</details>
+
 <br>
 
 ## Swate
