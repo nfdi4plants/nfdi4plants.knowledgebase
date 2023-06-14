@@ -52,11 +52,15 @@ If no study identifier is given, a study is created with the assay identifier as
 
 ## Removing assays
 
-> :bulb: To remove, unregister, or delete an assay both study identifier and assay identifier are required to ensure the correct assay is chosen.
-
 - An assay can be unregistered from the investigation by using `arc a unregister`.
 - An assay folder structure can be deleted by using `arc a delete`.
 - To both, delete the assay folder structure and unregister it from the investigation `arc a remove` can be used.
+- Supply a study identifier and assay identifier to directly use these commands via command line, i.e.: 
+  - `arc a unregister -s <study identifier> -a <assay identifier>`
+  - `arc a delete -s <study identifier> -a <assay identifier>`
+  - `arc a remove -s <study identifier> -a <assay identifier>`
+
+> :bulb: To remove, unregister, or delete an assay both study identifier and assay identifier are required to ensure the correct assay is chosen.
 
 ## Moving assays
 

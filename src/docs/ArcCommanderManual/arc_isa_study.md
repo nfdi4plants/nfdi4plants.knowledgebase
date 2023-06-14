@@ -40,7 +40,7 @@ If no study identifier is given, a study is created with the assay identifier as
 - A study can be edited using `arc s edit`.
   - If no further arguments are specified an editor opens, that asks for the study identifier that should be edited.
   - If the study exists, another editor opens with information already known for the respective study. The required values can be edited.
-- Instead of using the editor, the following command can be used. To circumvent editor pop ups, not arc s edit, but `arc s update` must be used:  
+- Instead of using the editor, the following command can be used. To circumvent editor pop ups, not `arc s edit`, but `arc s update` must be used:  
 `arc s update --identifier GelBasedProteomicsWT --submissiondate "13.04.2020"`
 
 ## Removing a study
@@ -48,6 +48,10 @@ If no study identifier is given, a study is created with the assay identifier as
 - A study can be unregistered from the investigation by using `arc s unregister`.
 - A study folder structure can be deleted by using `arc s delete`.
 - To both, delete the study folder structure and unregister it from the investigation `arc s remove` can be used.
+- Supply a studyidentifier to directly use these commands via command line, i.e.: 
+  - `arc s unregister -s <study identifier>`
+  - `arc s delete -s <study identifier>`
+  - `arc s remove -s <study identifier>`
 
 ## Registering persons to a study
 
