@@ -1,4 +1,5 @@
 ---
+marp: true
 layout: docs
 title: ISA File Types
 author: 
@@ -13,18 +14,16 @@ add toc: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-
-![w:1100](./../img/ISAmodel_ARC01_img02.svg)
+<img src="./../img/ISAmodel_ARC01_img02.svg" style="width:70%;display: block;margin-left: auto;margin-right: auto;">
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_ISA-tab.md -->
 
-
 ---
 
-# ARC builds on ISA
+## ARC builds on ISA
 
-![w:900](./../img/ISAmodel_ARC01_img01.svg)
+<img src="./../img/ISAmodel_ARC01_img01.svg" style="width:70%;display: block;margin-left: auto;margin-right: auto;">
 
 https://isa-tools.org/format/specification.html
 
@@ -34,9 +33,9 @@ https://isa-tools.org/format/specification.html
 
 ---
 
-# isa.<>.xlsx files within ARCs
+## isa.<>.xlsx files within ARCs
 
-![w:1000](./../img/ISAmodel_ARC01_img03.svg)
+<img src="./../img/ISAmodel_ARC01_img03.svg" style="width:70%;display: block;margin-left: auto;margin-right: auto;">
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_ISAxlsx01.md -->
@@ -44,9 +43,9 @@ https://isa-tools.org/format/specification.html
 
 ---
 
-# Study and assay files are registered in the investigation file <!-- fit -->
+## Study and assay files are registered in the investigation file <!-- fit -->
 
-![w:950](./../img/ISAmodel_ARC01_img04.svg)
+<img src="./../img/ISAmodel_ARC01_img04.svg" style="width:70%;display: block;margin-left: auto;margin-right: auto;">
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_ISAxlsx02.md -->
@@ -54,14 +53,14 @@ https://isa-tools.org/format/specification.html
 
 ---
 
-# The output of a study or assay file can function as input for a new isa.assay.xlsx 
+## The output of a study or assay file can function as input for a new isa.assay.xlsx 
 
 Output building blocks:
 - Sample Name
 - Raw Data File
 - Derived Data File
 
-![bg right w:600](./../img/ISAmodel_ARC01_img05.svg)
+<img src="./../img/ISAmodel_ARC01_img05.svg" style="width:70%;display: block;margin-left: auto;margin-right: auto;">
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_ISAxlsx03.md -->
@@ -69,9 +68,9 @@ Output building blocks:
 
 ---
 
-# 
+## 
 
-![bg w:1050](./../img/ISAmodel_ARC01_img6.svg)
+<img src="./../img/ISAmodel_ARC01_img6.svg" style="width:70%;display: block;margin-left: auto;margin-right: auto;">
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_ISAxlsx04.md -->
