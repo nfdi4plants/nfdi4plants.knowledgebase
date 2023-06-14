@@ -86,7 +86,9 @@
 ### [Swate QuickStart](/docs/guides/swate_QuickStart.html)
 ### [Swate Walk-through](/docs/guides/swate_walkthrough.html)
 
-<!-- ## [Share your ARC]() -->
+## [Share your ARC](/docs/guides/index-ShareYourARC.html)
+### [Register at the DataHUB](/docs/guides/datahub_register.html)
+### [Invite collaborators to your ARC](/docs/guides/datahub_InviteCollaborators.html)
 ## [Contribute](/docs/guides/index-Contribute.html)
 ### [Swate Templates](/docs/guides/swate_template-contribution.html)
 ### [Knowledge Base](/docs/CONTRIBUTING.html)
