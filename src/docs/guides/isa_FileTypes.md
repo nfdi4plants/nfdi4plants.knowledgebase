@@ -14,10 +14,17 @@ add toc: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-<img src="./../img/ISAmodel_ARC01_img02.svg" style="width:70%;display: block;margin-left: auto;margin-right: auto;">
+## About this guide
 
-<!-- Source to slide(s) -->
-<!-- ../../bricks/ARC_ISA-tab.md -->
+In this guide we introduce the different ISA file types used in the ARC.
+
+<a href="./index.html">
+    <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #FFC000;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Advanced</span>
+    <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #4FB3D9;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Read</span>
+</a>
+
+<br>
+<br>
 
 ---
 
@@ -29,6 +36,16 @@ https://isa-tools.org/format/specification.html
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_ISAmodel.md -->
+
+---
+
+<img src="./../img/ISAmodel_ARC01_img02.svg" style="width:70%;display: block;margin-left: auto;margin-right: auto;">
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/ARC_ISA-tab.md -->
+
+---
+
 
 
 ---
