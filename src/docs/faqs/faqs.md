@@ -97,7 +97,8 @@ If this does not do the trick, please follow these steps towards debugging (on W
 1. Open the command prompt (cmd) or powershell in the folder (e.g. `C:\Programs\ArcCommander`) where you stored the ARC Commander program (e.g. arc.exe). If `arc --version` shows the version, the executable is intact. 
 2. Next, execute `path` to check wether the folder (e.g. `C:\Programs\ArcCommander`) appears in your path.
 3. Adapt the user's path (not admin)
-    :bulb: If you do not have admin rights on the computer, please open the settings "Edit environment variables for your account" and follow steps described in the [ARC Commander setup](./../ArcCommanderManual/index-setup.html).
+   
+:bulb: If you do not have admin rights on the computer, please open the settings "Edit environment variables for your account" and follow steps described in the [ARC Commander setup](./../ArcCommanderManual/index-setup.html).
 
 
 </details>
