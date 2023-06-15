@@ -5,21 +5,20 @@ author: Cristina Martins Rodrigues
 author_orcid: https://orcid.org/0000-0002-4849-1537
 author_github: CMR248
 date: 2023-06-14
-add toc: false
+add toc: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-## About this guide
-
-In this guide we show you how to invite lab colleagues or project partners to your ARC for collaboration. 
+<br>
 
 <a href="./index.html">
     <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #B4CE82;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Newbie</span>
     <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #2D3E50;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Tutorial</span>
 </a>
 
-<br>
-<br>
+## About this guide
+
+In this guide we show you how to invite lab colleagues or project partners to your ARC for collaboration. 
 
 ## Before we can start
 

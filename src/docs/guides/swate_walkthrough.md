@@ -10,21 +10,22 @@ author:
 - name: Kevin Frey
   github: https://github.com/Freymaurer
   orcid: https://orcid.org/0000-0002-8510-6810
-add toc: false
+add toc: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-## About this guide
-
-DataPLANT provides the Excel Add-In [Swate](./../implementation/Swate.html) to support you in data annotation.
-In this walk-through, we guide you on annotating data using [Swate](./../implementation/Swate.html) with a show-case example.
+<br>
 
 <a href="./index.html">
     <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #B4CE82;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Newbie</span>
     <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #1FC2A7;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Walk-through</span>
 </a>
 
----
+## About this guide
+
+DataPLANT provides the Excel Add-In [Swate](./../implementation/Swate.html) to support you in data annotation.
+In this walk-through, we guide you on annotating data using [Swate](./../implementation/Swate.html) with a show-case example.
+
 ## Before we can start
 
 <style scoped>
@@ -43,8 +44,6 @@ In this walk-through, we guide you on annotating data using [Swate](./../impleme
 
 </div>
 
----
-
 ## Starting Swate
 
 1. Open a fresh Excel workbook
@@ -52,8 +51,6 @@ In this walk-through, we guide you on annotating data using [Swate](./../impleme
 
 :bulb: Depending on your Swate setup, the way to load Swate may differ.  
 :bulb: Alternatively you can open a `isa.study.xlsx` or `isa.assay.xlsx` file from your existing ARC to annotate your ARC's data. 
-
----
 
 ## Swate Overview
 
@@ -78,8 +75,6 @@ Example workflows with three *processes* each:
 >  └─── worksheet       (e.g. "plant_growth")
 >           └─── table  (e.g. "annotationTable")
 > ``` -->
-
----
 
 ## Create an annotation table
 
@@ -114,8 +109,6 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 
 </div>
 
----
-
 ## Add a building block
 
 <style scoped>
@@ -146,7 +139,6 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 
 </div>
 
----
 ## Insert values to annotate your data
 
 1. Navigate to the *Terms* tab in the Navbar
@@ -158,8 +150,6 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 
 4. You can search or double click into the search field to show all related terms. Select any instrument model and click <kbd>Fill selected cells with this term*</kbd>
 
----
-
 ## Add a building block with a unit
 
 1. In the *Building Blocks* tab, re-select *Parameter*, search for `sample volume` and select the term with id `MS:1000005`.
@@ -169,15 +159,11 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 
 > :bulb: This adds four columns to your table, one visible and **three** hidden.
 
----
-
 ## Insert unit-values to annotate your data
 
 In the annotation table, select any cell below `Parameter [sample volume]` and add any numbers as volume.
 
 > :bulb: You can see the numbers being complemented with the chosen unit, e.g. `10.00 microliter`
-
----
 
 ## Showing ontology reference columns
 
@@ -186,15 +172,11 @@ Hold <kbd>Ctrl</kbd> and click the *Autoformat Table* quick access button to adj
 > :bulb: You can see that your instrument model of choice was added with id and source Ontology in the reference (hidden) columns.  
 > :warning: This feature is currently not supported on MacOS
 
----
-
 ## Update ontology reference columns
 
 Click the <kbd>Update Ontology Terms</kbd> quick access buttons.
 
 > :bulb: This updates all reference columns according to the main column. In this case the reference columns for `Parameter [sample volume]` are updated with the id and source ontology of the `microliter` unit.
-
----
 
 ## Your ISA table is growing
 
@@ -211,13 +193,9 @@ At this point. Your table should look similar to this
 
 </div>
 
----
-
 ## Hiding ontology reference columns
 
 Click the <kbd>Autoformat Table</kbd> quick access button without holding <kbd>Ctrl</kbd> to hide all reference columns.
-
----
 
 ## Use a template
 
@@ -229,15 +207,11 @@ Click the <kbd>Autoformat Table</kbd> quick access button without holding <kbd>C
     - You will see a preview of all building blocks which are part of this template.
 3. Click <kbd>Add template</kbd> to add all Building Blocks from the template to your table, which <u>do not exist yet</u>.
 
----
-
 ## Remove building blocks
 
 If there are any Building Blocks which do not fit your experiment you can use the <kbd>Remove Building Block</kbd> quick access button to remove it including all related (hidden) reference columns.
 
 :warning: Due to the hidden reference columns, we recommend not to delete table columns via usual Excel functions. 
-
----
 
 ## Your ISA table is ready 🎉
 

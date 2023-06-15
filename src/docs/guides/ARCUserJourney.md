@@ -18,7 +18,7 @@ todo:
     <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #4FB3D9;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Read</span>
 </a>
 
-## About
+## About this guide
 
 In this guide we focus on explaining the ARC structure and its different components.
 

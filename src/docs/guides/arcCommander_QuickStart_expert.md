@@ -5,23 +5,22 @@ published: 2023-01-27
 author: "Dominik Brilhaus"
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
-add toc: false
-add support: false
+add toc: true
+add support: true
 add sidebar: _sidebars/mainSidebar.md
 article_status: published
 ---
 
-## About this guide
-
-In this guide we focus on how to use the [ARC Commander](./../implementation/ArcCommander.html) to create your ARC and structure, store and share your data.
+<br>
 
 <a href="./index.html">
     <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #FFC000;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Advanced</span>
     <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #2D3E50;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Tutorial</span>
 </a>
 
-<br>
-<br>
+## About this guide
+
+In this guide we focus on how to use the [ARC Commander](./../implementation/ArcCommander.html) to create your ARC and structure, store and share your data.
 
 ## Before we can start
 
