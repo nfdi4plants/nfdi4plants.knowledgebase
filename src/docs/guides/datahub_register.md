@@ -42,9 +42,9 @@ During the registration you can "Choose your role in DataPLANT"
 
 <br>
 
-<img src="./../img/dataplant_registration_roles.png" style="width:70%;display: block;margin-left: auto;margin-right: auto;">
+<div align="center"></div>
 
-<br>
+<img src="./../img/dataplant_registration_roles.png" style="width:70%;display: block;margin-left: auto;margin-right: auto;">
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_registration_role.md -->
