@@ -43,7 +43,7 @@ Before contributing to the knowledge base, you should have
 ## Introduction
 
 The DataPLANT Knowledge Base is built on [nfdi-web-components](https://nfdi4plants.github.io/web-components-docs/) which fit **markdown** content into this "framework".
-For a general introduction to writing markdown, see: [Markdown tutorial](tutorials/IntroductionToMarkdown.html) and references therein.
+For a general introduction to writing markdown, see: [Markdown tutorial](./guides/tutorial_IntroductionToMarkdown.html) and references therein.
 
 ## Authoring Content
 

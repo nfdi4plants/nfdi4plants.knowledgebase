@@ -6,7 +6,7 @@ author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
 add toc: false
-add sidebar: _sidebars/hiddenMenuSidebar.md
+add sidebar: _sidebars/mainSidebar.md
 article_status: not published
 ---
 
