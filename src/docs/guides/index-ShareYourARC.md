@@ -7,4 +7,4 @@ add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-In this section you can find guides on how to share and collaborate with your ARC.
+In this section you can find guides on how to share and collaborate within your ARC.

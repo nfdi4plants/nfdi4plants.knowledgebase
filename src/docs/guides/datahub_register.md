@@ -12,8 +12,11 @@ add sidebar: _sidebars/mainSidebar.md
     <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #2D3E50;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Tutorial</span>
 </a>
 
+## About this guide
 
-<br>
+In this guide we show you how to register at the [DataHUB](https://git.nfdi4plants.org/) to be able to share your ARC for collaboration. 
+
+## Registration
 
 If you do not have a DataPLANT account, please register [here](<https://register.nfdi4plants.org>).
 
@@ -21,8 +24,6 @@ If you do not have a DataPLANT account, please register [here](<https://register
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_registration.md -->
-
----
 
 ## DataPLANT Roles
 

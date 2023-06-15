@@ -22,59 +22,46 @@ In this guide we show you how to invite lab colleagues or project partners to yo
 
 ## Before we can start
 
-:ballot_box_with_check: You have a [DataPLANT](https://register.nfdi4plants.org) account  
+:ballot_box_with_check: You have a [DataPLANT account](https://register.nfdi4plants.org)   
 :ballot_box_with_check: You have created an ARC  
 :bulb: Unless changed, your ARC is set to private by default. 
 
----
+## Inviting collaborators
 
-[Sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB and open the ARC you want to share.
-
----
-
-Click on **Project Information** in the left navigation panel
+1. [Sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB and open the ARC you want to share.
+2. Click on **Project Information** in the left navigation panel
 
 <img src="./../img/datahub_members_seq2.png" style="width:85%;display: block;margin-left: auto;margin-right: auto;">
 
----
-
-Click on **Members**
+3. Click on **Members**
 
 <img src="./../img/datahub_members_seq3.png" style="width:85%;display: block;margin-left: auto;margin-right: auto;">
 
----
-
-Click on **Invite members**
+4. Click on **Invite members**
 
 <img src="./../img/datahub_members_seq4.png" style="width:85%;display: block;margin-left: auto;margin-right: auto;">
 
----
-
-Search for potential collaborators
+5. Search for potential collaborators
 
 <img src="./../img/datahub_members_seq5.png" style="width:85%;display: block;margin-left: auto;margin-right: auto;">
 
----
-
-Select a role and click <kbd>Invite</kbd>
+6. **Select a role** and click <kbd>Invite</kbd>
 
 <img src="./../img/datahub_members_seq6.png" style="width:85%;display: block;margin-left: auto;margin-right: auto;">
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_invite-collaborators.md -->
-
-
----
+<br>
 
 ## Choosing the proper role
 
-<u>Guests</u>
+<u>Guests</u>   
 Have the least rights. This is recommended for people you ask for consultancy.
 
-<u>Developers</u> 
+<u>Developers</u>    
 The choice for most people you want to invite to your ARC. Developers have read and write access, but cannot maintain the project on the DataHUB, e.g. inviting others.
 
-<u>Maintainers</u> 
+<u>Maintainers</u>    
 Gives the person the same rights as you have (except of removing you from your own project). This is recommended for inviting PIs or group leaders allowing them to add their group members for data upload or analysis to the project as well.
 
 *A detailed list of all permissions for the individual roles can be found [here](https://docs.gitlab.com/ee/user/permissions.html)*
@@ -82,10 +69,9 @@ Gives the person the same rights as you have (except of removing you from your o
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_choose-collaborator-role.md -->
 
+<br>
 
----
-
-## <div align="center">Congratulations!</div>
+<div align="center"><b><font size="6">Congratulations!</b></font></div>
 <div align="center">You have just shared your ARC with a collaborator.</div>
 
 <img src="./../img/ARC_Sharing_img1.png" style="width:85%;display: block;margin-left: auto;margin-right: auto;">
