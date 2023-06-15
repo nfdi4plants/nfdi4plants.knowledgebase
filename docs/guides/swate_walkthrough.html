@@ -340,6 +340,17 @@
           </a>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-ShareYourARC.html">
+            Share your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub_register.html">
+            Register at the DataHUB
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub_InviteCollaborators.html">
+            Invite collaborators to your ARC
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
           <a href="/nfdi4plants.knowledgebase/docs/guides/index-Contribute.html">
             Contribute
           </a>
@@ -394,14 +405,15 @@
       <i class="help">
         last updated at 2023-06-13
       </i>
-      <nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
-<p>DataPLANT provides the Excel Add-In <a href="./../implementation/Swate.html">Swate</a> to support you in data annotation.
-In this walk-through, we guide you on annotating data using <a href="./../implementation/Swate.html">Swate</a> with a show-case example.</p>
+      <nfdi-toc></nfdi-toc>
+      <br>
 <a href="./index.html">
     <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #B4CE82;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Newbie</span>
     <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #1FC2A7;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Walk-through</span>
 </a>
-<hr />
+<nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
+<p>DataPLANT provides the Excel Add-In <a href="./../implementation/Swate.html">Swate</a> to support you in data annotation.
+In this walk-through, we guide you on annotating data using <a href="./../implementation/Swate.html">Swate</a> with a show-case example.</p>
 <nfdi-h2 id="before-we-can-start">Before we can start</nfdi-h2>
 <style scoped>
 #before-start ul{
@@ -416,7 +428,6 @@ In this walk-through, we guide you on annotating data using <a href="./../implem
 <li>💡 Consider reading about <a href="./../implementation/Swate.html">Swate</a></li>
 </ul>
 </div>
-<hr />
 <nfdi-h2 id="starting-swate">Starting Swate</nfdi-h2>
 <ol>
 <li>Open a fresh Excel workbook</li>
@@ -424,7 +435,6 @@ In this walk-through, we guide you on annotating data using <a href="./../implem
 </ol>
 <p>💡 Depending on your Swate setup, the way to load Swate may differ.<br />
 💡 Alternatively you can open a <code>isa.study.xlsx</code> or <code>isa.assay.xlsx</code> file from your existing ARC to annotate your ARC's data.</p>
-<hr />
 <nfdi-h2 id="swate-overview">Swate Overview</nfdi-h2>
 <figure>
   <img src="./../img/Swate-Overlay-Exp.jpg?v27.01.202" style="height: 400px">
@@ -446,7 +456,6 @@ Example workflows with three *processes* each:
 >  └─── worksheet       (e.g. "plant_growth")
 >           └─── table  (e.g. "annotationTable")
 > ``` -->
-<hr />
 <nfdi-h2 id="create-an-annotation-table">Create an annotation table</nfdi-h2>
 <br>
 <style scoped>
@@ -473,7 +482,6 @@ Example workflows with three *processes* each:
     <img src="./../img/Swate-CreateAnnotationTable-Exp.jpg" style="width: 1200px">
 </div>
 </div>
-<hr />
 <nfdi-h2 id="add-a-building-block">Add a building block</nfdi-h2>
 <style scoped>
 .columns {
@@ -500,7 +508,6 @@ Example workflows with three *processes* each:
     <img src="./../img/Swate-AddBuildingBlock-Exp.jpg?v31.01.22" style="width:1200px;">
 </div>
 </div>
-<hr />
 <nfdi-h2 id="insert-values-to-annotate-your-data">Insert values to annotate your data</nfdi-h2>
 <ol>
 <li>Navigate to the <em>Terms</em> tab in the Navbar</li>
@@ -514,7 +521,6 @@ Example workflows with three *processes* each:
 <ol start="4">
 <li>You can search or double click into the search field to show all related terms. Select any instrument model and click <kbd>Fill selected cells with this term*</kbd></li>
 </ol>
-<hr />
 <nfdi-h2 id="add-a-building-block-with-a-unit">Add a building block with a unit</nfdi-h2>
 <ol>
 <li>In the <em>Building Blocks</em> tab, re-select <em>Parameter</em>, search for <code>sample volume</code> and select the term with id <code>MS:1000005</code>.</li>
@@ -525,26 +531,22 @@ Example workflows with three *processes* each:
 <blockquote>
 <p>💡 This adds four columns to your table, one visible and <strong>three</strong> hidden.</p>
 </blockquote>
-<hr />
 <nfdi-h2 id="insert-unit-values-to-annotate-your-data">Insert unit-values to annotate your data</nfdi-h2>
 <p>In the annotation table, select any cell below <code>Parameter [sample volume]</code> and add any numbers as volume.</p>
 <blockquote>
 <p>💡 You can see the numbers being complemented with the chosen unit, e.g. <code>10.00 microliter</code></p>
 </blockquote>
-<hr />
 <nfdi-h2 id="showing-ontology-reference-columns">Showing ontology reference columns</nfdi-h2>
 <p>Hold <kbd>Ctrl</kbd> and click the <em>Autoformat Table</em> quick access button to adjust column widths and un-hide all hidden columns.</p>
 <blockquote>
 <p>💡 You can see that your instrument model of choice was added with id and source Ontology in the reference (hidden) columns.<br />
 ⚠️ This feature is currently not supported on MacOS</p>
 </blockquote>
-<hr />
 <nfdi-h2 id="update-ontology-reference-columns">Update ontology reference columns</nfdi-h2>
 <p>Click the <kbd>Update Ontology Terms</kbd> quick access buttons.</p>
 <blockquote>
 <p>💡 This updates all reference columns according to the main column. In this case the reference columns for <code>Parameter [sample volume]</code> are updated with the id and source ontology of the <code>microliter</code> unit.</p>
 </blockquote>
-<hr />
 <nfdi-h2 id="your-isa-table-is-growing">Your ISA table is growing</nfdi-h2>
 <p>At this point. Your table should look similar to this</p>
 <div class="table-container" style="height: 400px">
@@ -610,10 +612,8 @@ Example workflows with three *processes* each:
 </tbody>
 </table>
 </div>
-<hr />
 <nfdi-h2 id="hiding-ontology-reference-columns">Hiding ontology reference columns</nfdi-h2>
 <p>Click the <kbd>Autoformat Table</kbd> quick access button without holding <kbd>Ctrl</kbd> to hide all reference columns.</p>
-<hr />
 <nfdi-h2 id="use-a-template">Use a template</nfdi-h2>
 <ol>
 <li>Navigate to <em>Templates</em> in the Navbar and click <em>Browse database</em> in the first function block.</li>
@@ -629,11 +629,9 @@ Example workflows with three *processes* each:
 </li>
 <li>Click <kbd>Add template</kbd> to add all Building Blocks from the template to your table, which <u>do not exist yet</u>.</li>
 </ol>
-<hr />
 <nfdi-h2 id="remove-building-blocks">Remove building blocks</nfdi-h2>
 <p>If there are any Building Blocks which do not fit your experiment you can use the <kbd>Remove Building Block</kbd> quick access button to remove it including all related (hidden) reference columns.</p>
 <p>⚠️ Due to the hidden reference columns, we recommend not to delete table columns via usual Excel functions.</p>
-<hr />
 <nfdi-h2 id="your-isa-table-is-ready">Your ISA table is ready 🎉</nfdi-h2>
 <p>Go ahead, adjust the Building Blocks you want to use to describe your experiment as you see fit.
 Insert values using Swate Term search and add input and output.</p>
