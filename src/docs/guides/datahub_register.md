@@ -5,6 +5,7 @@ date: 2023-06-14
 add toc: true 
 add sidebar: _sidebars/mainSidebar.md
 ---
+
 <br>
 
 <a href="./index.html">
@@ -43,9 +44,8 @@ During the registration you can "Choose your role in DataPLANT"
 <br>
 
 
-<!-- <img src="./../img/dataplant_registration_roles.png" style="width:70%;display: block;margin-left: auto;margin-right: auto;"> -->
+<img src="./../img/DataPLANT_registration_roles.png" style="width:70%;display: block;margin-left: auto;margin-right: auto;">
 
-![](./../img/dataplant_registration_roles.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_registration_role.md -->
