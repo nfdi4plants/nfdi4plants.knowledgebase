@@ -15,6 +15,6 @@ title: tutorial_swate_firstSteps-Advanced_term_search
 - Use the *advanced search* for building blocks and terms, if no fitting term was found.
 - Use free text input, if still no fitting term was found.
 
-![w:600](../../img/Swate-AddBuildingBlock-Exp.jpg)
+![w:600](./../../img/Swate-AddBuildingBlock-Exp.jpg)
 
 - For more information on customizing your annotation table click [here](https://nfdi4plants.github.io/Swate-docs/docs/UserDocs/Docs03-Building-Blocks.html).

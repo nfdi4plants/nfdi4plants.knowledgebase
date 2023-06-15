@@ -3,7 +3,7 @@ marp: true
 theme: dataplant_marp-theme
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://ceplas.eu"> <img id="footer-img2" src="../../../../img/_logos/CEPLAS/CEPLAS_Icon.jpeg"></a><a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img3" src="../../../../img/_logos/CreativeCommons/by.svg"></a>'
+footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="./../../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://ceplas.eu"> <img id="footer-img2" src="./../../../../img/_logos/CEPLAS/CEPLAS_Icon.jpeg"></a><a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img3" src="./../../../../img/_logos/CreativeCommons/by.svg"></a>'
 style: 'footer {height: 30px;padding: 10px;bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 30px; padding-left: 20px;opacity: 0.5;}  #footer-img3 {height: 20px;padding-left: 20px; opacity: 0.5;}'
 title: Start-Your-ARC Workshop Series - Session 02
 author: Dominik Brilhaus
@@ -19,7 +19,7 @@ author_github: brilator
 <!-- _paginate: false -->
 <!-- _footer: "" -->
 
-![bg fit](../custom/img/background_title_ceplas.drawio.svg)
+![bg fit](./../custom/img/background_title_ceplas.drawio.svg)
 
 **Preparation for** Session 02 &ndash; "Build your ARC"
 (May 31st, 2023)
@@ -61,7 +61,7 @@ ul{
 
 If you do not have a DataPLANT account, please register at the [DataPLANT website](<https://register.nfdi4plants.org>).
 
-![w:800](../../../../img/dataplant_registration.png)
+![w:800](./../../../../img/dataplant_registration.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../../bricks/datahub_registration.md -->
@@ -73,7 +73,7 @@ If you do not have a DataPLANT account, please register at the [DataPLANT websit
 
 Please add your `Project/consortium` (e.g. CEPLAS, SFB, TRR) and choose the role `Guest`
 
-![bg right:40% fit](../../../../img/dataplant_registration_roles.png)
+![bg right:40% fit](./../../../../img/dataplant_registration_roles.png)
 
 <!-- Source to slide(s) -->
 <!-- ../custom/bricks/ceplas-datahub-registration.md -->
@@ -107,7 +107,7 @@ Check if the ARC Commander is functional by displaying the ARC Commander version
 arc --version
 ```
 
-![bg right:30% width:300](../../../../img/arc-manual-setup.png)
+![bg right:30% width:300](./../../../../img/arc-manual-setup.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../../bricks/tutorial_arc_installation.md -->

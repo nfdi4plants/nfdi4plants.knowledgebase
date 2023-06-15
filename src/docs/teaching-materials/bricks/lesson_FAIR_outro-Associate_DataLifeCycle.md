@@ -36,4 +36,4 @@ ul {
 * Access Management
 * Publication
 
-![bg right:30% w:700](../../img/ResearchDataLifecycle_seq8.png)
+![bg right:30% w:700](./../../img/ResearchDataLifecycle_seq8.png)

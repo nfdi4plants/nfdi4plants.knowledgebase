@@ -31,4 +31,4 @@ Kaiserslautern: Timo Mühlhaus, Christoph Garth
 Freiburg: Dirk von Suchodeletz
 - Jonathan Bauer, Marcel Tschöpe (`DataHUB`, `Swobup`)
 
-![bg right:40% w:550](../img/hackathon_group.png)
+![bg right:40% w:550](./../img/hackathon_group.png)

@@ -2,8 +2,8 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-footer: ' <a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a>
-  <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../../img/_logos/CreativeCommons/by.svg">
+footer: ' <a href="https://nfdi4plants.org"> <img id="footer-img1" src="./../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a>
+  <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="./../../../img/_logos/CreativeCommons/by.svg">
   </a> '
 style: ' footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height:
   30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity:
@@ -19,7 +19,7 @@ title: tutorial_arc_add
 
 # Adding metadata to your ARC
 
-![bg right:50% w:800](../../../img/ARC_fillWithData_seq6.png)
+![bg right:50% w:800](./../../../img/ARC_fillWithData_seq6.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_arc_add-Adding_metadata_to_your_ARC.md -->
@@ -85,7 +85,7 @@ arc assay add -s QuickStartStudy -a QuickStartAssay
 
 The ARC Commander will add subdirectories to the *studies* and *assays* folder. Your ARC should look similar to this now: 
 
-![w:800](../../../img/arc_studies_assays.jpg)
+![w:800](./../../../img/arc_studies_assays.jpg)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_arc_add-subdirectories.md -->
@@ -98,7 +98,7 @@ The ARC Commander will add subdirectories to the *studies* and *assays* folder. 
 - The previous steps can be repeated to add as many studies and assays as needed. Accordingly, more subdirectories will be added
 - Multiple assays can be grouped in a study, if the same `StudyIdentifier` is used
 
-![bg right:50% w:640](../../../img/ARC_realLifeLoading.svg)
+![bg right:50% w:640](./../../../img/ARC_realLifeLoading.svg)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_arc_add-Grow_your_ARC.md -->
@@ -110,7 +110,7 @@ The ARC Commander will add subdirectories to the *studies* and *assays* folder. 
 
 Place the data and protocols for each study and assay in the respective `Dataset` and `Protocols` folders
 
-![bg right:50% width:850](../../../img/ARC_fillWithData_seq3.png)
+![bg right:50% width:850](./../../../img/ARC_fillWithData_seq3.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_arc_add-Add_your_data.md -->

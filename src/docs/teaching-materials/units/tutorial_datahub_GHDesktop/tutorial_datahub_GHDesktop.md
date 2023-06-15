@@ -2,9 +2,9 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-footer: ' <a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a>
-  <a href="https://ceplas.eu"> <img id="footer-img2" src="../../../img/_logos/CEPLAS/CEPLAS_Icon.jpeg"></a><a
-  href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img3" src="../../../img/_logos/CreativeCommons/by.svg"></a> '
+footer: ' <a href="https://nfdi4plants.org"> <img id="footer-img1" src="./../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a>
+  <a href="https://ceplas.eu"> <img id="footer-img2" src="./../../../img/_logos/CEPLAS/CEPLAS_Icon.jpeg"></a><a
+  href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img3" src="./../../../img/_logos/CreativeCommons/by.svg"></a> '
 style: 'footer {height: 30px;padding: 10px;bottom: 00px;} #footer-img1 {height: 30px;padding-left:
   0px;} #footer-img2 {height: 30px;padding-left: 20px;opacity: 0.5;} #footer-img3
   {height: 20px;padding-left: 20px;opacity: 0.5;}'
@@ -73,7 +73,7 @@ For this tutorial
 2. Navigate to an ARC you want to sync locally
 3. Click on `Clone` and copy the HTTPS url, e.g. `https://git.nfdi4plants.org/<yourUserName>/<yourArc>.git`
 
-![bg right w:600](../../../img/datahub_clone.png)
+![bg right w:600](./../../../img/datahub_clone.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_GHDesktop-Navigate_to_your_ARC_in_the_DataHUB.md -->
@@ -90,7 +90,7 @@ For this tutorial
 5. Select a destination folder (local path), where your ARC will be stored locally
 6. Click `Clone`
 
-![bg right:40% w:500](../../../img/GitHub_Desktop_clone.png)
+![bg right:40% w:500](./../../../img/GitHub_Desktop_clone.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_GHDesktop-GitHub_Desktop_Clone.md -->
@@ -106,7 +106,7 @@ For this tutorial
 2. Click `Save and Retry`
 3. Your ARC is now available in your GitHub Desktop.
 
-![bg right:40% w:500](../../../img/GitHub_Desktop_accessToken.png)
+![bg right:40% w:500](./../../../img/GitHub_Desktop_accessToken.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/tutorial_datahub_GHDesktop-Link_your_account.md -->

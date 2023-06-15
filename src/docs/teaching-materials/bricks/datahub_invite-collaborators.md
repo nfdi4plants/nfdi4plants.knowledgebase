@@ -8,8 +8,8 @@ author_orcid: https://orcid.org/0000-0002-4849-1537
 author_github: CMR248
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 date: 2022-11-04
-footer: ' <a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a>
-  <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../../img/_logos/CreativeCommons/by.svg">
+footer: ' <a href="https://nfdi4plants.org"> <img id="footer-img1" src="./../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a>
+  <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="./../../../img/_logos/CreativeCommons/by.svg">
   </a> '
 style: ' footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height:
   30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity:
@@ -26,28 +26,28 @@ style: ' footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {heigh
 
 1. Click on **Project Information** in the left navigation panel
 
-![fit w:1050](../../img/datahub_members_seq2.png)
+![fit w:1050](./../../img/datahub_members_seq2.png)
 
 ---
 
 2. Click on **Members**
 
-![fit w:1050](../../img/datahub_members_seq3.png)
+![fit w:1050](./../../img/datahub_members_seq3.png)
 
 ---
 
 3. Click on **Invite members**
 
-![fit w:1050](../../img/datahub_members_seq4.png)
+![fit w:1050](./../../img/datahub_members_seq4.png)
 
 ---
 
 4. Search for potential collaborators
 
-![fit w:1050](../../img/datahub_members_seq5.png)
+![fit w:1050](./../../img/datahub_members_seq5.png)
 
 ---
 
 5. Select a role 
 
-![fit w:1050](../../img/datahub_members_seq6.png)
+![fit w:1050](./../../img/datahub_members_seq6.png)

@@ -2,8 +2,8 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-footer: ' <a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a>
-  <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../../img/_logos/CreativeCommons/by.svg">
+footer: ' <a href="https://nfdi4plants.org"> <img id="footer-img1" src="./../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a>
+  <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="./../../../img/_logos/CreativeCommons/by.svg">
   </a> '
 style: ' footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height:
   30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity:
@@ -19,7 +19,7 @@ title: lesson_Swate_DataPLANT
 
 # Swate workflow annotation tool for Excel
 
-![](../../../img/_logos/Swate/Swate_logo_for_excel.svg)
+![](./../../../img/_logos/Swate/Swate_logo_for_excel.svg)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_Swate_DataPLANT-Swate_workflow_annotation_tool_for_Excel.md -->
@@ -29,7 +29,7 @@ title: lesson_Swate_DataPLANT
 
 # Annotation by flattening the knowledge graph
 
-![w:800](../../../img/Swate_ParentChildTerm.svg)
+![w:800](./../../../img/Swate_ParentChildTerm.svg)
 
 - Low-friction metadata annotation
 - Familiar spreadsheet, row/column-based environment
@@ -47,7 +47,7 @@ section p img{
   /* padding-left: 230px */
 }  
 </style> -->
-![w:650](../../../img/Swate_ParentChildTerm2.svg)
+![w:650](./../../../img/Swate_ParentChildTerm2.svg)
 
 - Low-friction metadata annotation
 - Familiar spreadsheet, row/column-based environment
@@ -60,7 +60,7 @@ section p img{
 
 # Adding new building blocks (columns)
 
-![w:750](../../../img/Swate_NewParameter.svg)
+![w:750](./../../../img/Swate_NewParameter.svg)
 
 - Swate can be used for the annotation of **isa.study.xlsx and isa.assay.xlsx** files
 
@@ -72,7 +72,7 @@ section p img{
 
 # Annotation Building Block types <!--fit-->
 
-![bg right w:620](../../../img/Swate_Overview.svg)
+![bg right w:620](./../../../img/Swate_Overview.svg)
 
 - Source Name (Input)
 - Protocol Columns
@@ -102,7 +102,7 @@ section {
 }
 </style>
 
-![w:750](../../../img/Swate_OntologyTermSearch.svg)
+![w:750](./../../../img/Swate_OntologyTermSearch.svg)
 
 Enable **related term directed search** to directly fill cells with child terms
 
@@ -114,7 +114,7 @@ Enable **related term directed search** to directly fill cells with child terms
 
 # Fill your table with ontology terms
 
-![w:800](../../../img/Swate_OntologyTermSearch2.svg)
+![w:800](./../../../img/Swate_OntologyTermSearch2.svg)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_Swate_DataPLANT-Fill_your_table_with_ontology_terms.md -->
@@ -124,7 +124,7 @@ Enable **related term directed search** to directly fill cells with child terms
 
 # Hierarchical combination of ontologies
 
-![w:800](../../../img/Swate_OntologyCombination.svg)
+![w:800](./../../../img/Swate_OntologyCombination.svg)
 
 <!-- combination of ISA (Characteristics, Parameter, Factor) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter \[temperature\] or Factor \[temperature\]). -->
 

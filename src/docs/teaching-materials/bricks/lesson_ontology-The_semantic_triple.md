@@ -12,4 +12,4 @@ title: lesson_ontology-The_semantic_triple
 
 # The semantic triple
 
-![w:1000](../../img/Ontologies_pizzaAnalogy_seq2.png)
+![w:1000](./../../img/Ontologies_pizzaAnalogy_seq2.png)

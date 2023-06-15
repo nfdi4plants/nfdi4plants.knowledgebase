@@ -10,4 +10,4 @@ title: datahub_registration
 
 If you do not have a DataPLANT account, please register at the [DataPLANT website](<https://register.nfdi4plants.org>).
 
-![w:800](../../img/dataplant_registration.png)
+![w:800](./../../img/dataplant_registration.png)

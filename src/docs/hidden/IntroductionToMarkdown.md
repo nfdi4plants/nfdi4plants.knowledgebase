@@ -338,7 +338,7 @@ Violets are blue.
 ### Images
 
 ```bash
-![alt text](../img/ARC.jpg "This is an ARC")
+![alt text](./../img/ARC.jpg "This is an ARC")
 ```
 
-![alt text](../img/ARC.jpg "This is an ARC")
+![alt text](./../img/ARC.jpg "This is an ARC")

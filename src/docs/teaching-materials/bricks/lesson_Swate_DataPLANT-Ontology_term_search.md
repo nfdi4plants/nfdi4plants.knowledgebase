@@ -22,6 +22,6 @@ section {
 }
 </style>
 
-![w:750](../../img/Swate_OntologyTermSearch.svg)
+![w:750](./../../img/Swate_OntologyTermSearch.svg)
 
 Enable **related term directed search** to directly fill cells with child terms

@@ -17,7 +17,7 @@ section p img{
   /* padding-left: 230px */
 }  
 </style> -->
-![w:650](../../img/Swate_ParentChildTerm2.svg)
+![w:650](./../../img/Swate_ParentChildTerm2.svg)
 
 - Low-friction metadata annotation
 - Familiar spreadsheet, row/column-based environment

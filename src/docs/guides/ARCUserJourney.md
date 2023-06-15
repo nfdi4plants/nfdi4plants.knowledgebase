@@ -25,7 +25,7 @@ In this guide we focus on explaining the ARC structure and its different compone
 ## Viola's ARC
 Let's imagine a scenario where your project partner suggests at a conference to use this cool new Annotated Research Context (ARC) for your collaboration. Convinced by the versioning system and the single point of entry logic, you are motivated to set up your first own ARC after returning to the lab and fill it with your latest project results. Back home, however, you only remember the basic ARC structure and something about some isa.xlsx files. So how do you transfer your project into the empty ARC your project partner shared with you?
 
-![ARCStructure](../img/ARC_FolderStructure.png)
+![ARCStructure](./../img/ARC_FolderStructure.png)
 
 To answer this question, we will first take a look back at Viola's [metadata][kb-Metadata] example:
 
@@ -37,7 +37,7 @@ The entire information given in this example can be stored within an ARC. To ill
 
 The ISA investigation workbook allows you to record administrative metadata of your project. In Viola's example, the title of the project, the contact persons, and related publications correspond to such metadata. Besides that, the workbook can also contain a short description of your project, but also lists included studies with respective design types, assays, protocols, etc.. Although we recommend to use the [ARC Commander][kb-ArcCommander] for adding these metadata, you can of course fill the workbook (and also the [isa.study.xlsx](#isastudyxlsx) and [isa.assay.xlsx](#isaassayxlsx)) manually.
 
-![Investigation](../img/ARC_investigation.jpg)
+![Investigation](./../img/ARC_investigation.jpg)
 
 ## Studies
 
@@ -45,7 +45,7 @@ In the `studies` (sub)folders you can collect material and resources used within
 
 In case your investigation contains more than one study, each of these studies is placed in an individual subdirectory. The "resources" directory allows you to store material samples or external data as virtual sample files. You can use the protocol subdirectory to store free-text protocols that describe how the samples or materials were created.
 
-![StuSubdirectories](../img/ARC_studiesSubdirectories.jpg)
+![StuSubdirectories](./../img/ARC_studiesSubdirectories.jpg)
 
 ### isa.study.xlsx
 
@@ -54,15 +54,15 @@ Every study contains one `isa.study.xlsx` file to specify the characteristics of
 - "CircadianClock_Light regimes": One or more worksheets, depending on the number of used protocols, to annotate the properties of your source material following the ISA model. The sheet name is not obligatory to be the exact same as the "Study Identifier". While this can be done manually, we recommend using our ontology supported annotation tool [Swate](swate_QuickStart.html).
 - "Study": Viola collected the administrative metadata of her study in this worksheet. This information can later be transferred into the `isa.investigation.xlsx` using the [ARC Commander][kb-ArcCommander].
 
-![ISA-study](../img/ARC_study.jpg)
-![ISA-studyMetadata](../img/ARC_studyMetadata.jpg)
+![ISA-study](./../img/ARC_study.jpg)
+![ISA-studyMetadata](./../img/ARC_studyMetadata.jpg)
 
 ## Assays
 
 The `assays` folder allows you to store data and metadata from experimental processes or analytical measurements. Each assay is a collection of files stored in a single directory, including corresponding metadata files in form of an `isa.assay.xlsx`. Viola needs two subdirectories, one for her metabolomics and one for her transcriptomics dataset, respectively. Assay data files and free-text protocols are placed in individual subdirectories. Data files produced by an assay can be the input for one or multiple [workflows](#workflows).
 
-![AssaySubdirectories1](../img/ARC_assaysSubdirectories.jpg)
-![AssaySubdirectories2](../img/ARC_MetSubdirectories.jpg)
+![AssaySubdirectories1](./../img/ARC_assaysSubdirectories.jpg)
+![AssaySubdirectories2](./../img/ARC_MetSubdirectories.jpg)
 
 ### isa.assay.xlsx
 
@@ -74,8 +74,8 @@ Viola can annotate her experimental workflows of the metabolomics and transcript
 - "MetaboliteMeasurement": A worksheet that describes the quantification of polar metabolites using gas-chromatography mass-spectrometry.
 - "Assay": Viola collected the administrative metadata of her assay in this worksheet. This information can later be transferred into the `isa.investigation.xlsx` using the ARC Commander.
 
-![IsaAssay](../img/ARC_IsaAssay.jpg)
-![AssayMetadata](../img/ARC_IsaAssayMetadata.jpg)
+![IsaAssay](./../img/ARC_IsaAssay.jpg)
+![AssayMetadata](./../img/ARC_IsaAssayMetadata.jpg)
 
 ## Workflows
 
@@ -93,7 +93,7 @@ After Viola generated her plots, she placed them in individual subdirectories, s
 
 We hope that these examples nicely illustrated the ARC structure and that you are now ready to produce your own ARCs. Use the figure below as a cheat sheet to remember where to store which files. Or follow the [ARC Commander QuickStart][kb-arcCommander_QuickStart] to try it out yourself.
 
-![IllustratedARCStructure](../img/ARC_IllustratedFolderStructure.jpg)
+![IllustratedARCStructure](./../img/ARC_IllustratedFolderStructure.jpg)
 
 <!--  Links -->
 [kb-Metadata]: ../fundamentals/Metadata.html "Metadata"

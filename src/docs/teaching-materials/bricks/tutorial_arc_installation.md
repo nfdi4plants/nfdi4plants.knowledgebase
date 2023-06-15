@@ -26,4 +26,4 @@ Check if the ARC Commander is functional by displaying the ARC Commander version
 arc --version
 ```
 
-![bg right:30% width:300](../../img/arc-manual-setup.png)
+![bg right:30% width:300](./../../img/arc-manual-setup.png)

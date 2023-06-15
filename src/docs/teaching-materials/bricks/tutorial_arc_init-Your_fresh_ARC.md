@@ -20,4 +20,4 @@ title: tutorial_arc_init-Your_fresh_ARC
 
 This will create the general ARC folder structure:
 
-![w:800](../../img/arcCommander_init.png)
+![w:800](./../../img/arcCommander_init.png)

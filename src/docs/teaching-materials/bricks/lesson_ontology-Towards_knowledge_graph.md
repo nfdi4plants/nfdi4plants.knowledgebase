@@ -12,4 +12,4 @@ title: lesson_ontology-Towards_knowledge_graph
 
 # (Towards) a knowledge graph
 
-![w:1020](../../img/Ontologies_pizzaAnalogy_seq8.png)
+![w:1020](./../../img/Ontologies_pizzaAnalogy_seq8.png)

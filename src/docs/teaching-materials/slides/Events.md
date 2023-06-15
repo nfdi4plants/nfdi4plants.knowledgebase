@@ -9,4 +9,4 @@ add sidebar: _sidebars/mainSidebar.md
 
 This collection contains slides for specific **Events** listed below:   
 
-* ### [CEPLAS Start Your ARC Workshop Series](../disseminations/CEPLAS-StartYourARC-Series/index.html)
+* ### [CEPLAS Start Your ARC Workshop Series](./../disseminations/CEPLAS-StartYourARC-Series/index.html)

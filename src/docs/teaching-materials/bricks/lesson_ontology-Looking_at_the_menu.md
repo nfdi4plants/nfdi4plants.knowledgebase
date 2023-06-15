@@ -14,4 +14,4 @@ title: lesson_ontology-Looking_at_the_menu
 
 An object of one triplet can be the subject to another
 
-![w:1000](../../img/Ontologies_pizzaAnalogy_seq7.png)
+![w:1000](./../../img/Ontologies_pizzaAnalogy_seq7.png)

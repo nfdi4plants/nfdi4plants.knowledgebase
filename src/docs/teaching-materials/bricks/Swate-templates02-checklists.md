@@ -7,7 +7,7 @@ title: Swate-templates02-checklists
 
 # Checklists and Templates
 
-![w:800px](../../img/swate_TemplatesChecklists.svg)
+![w:800px](./../../img/swate_TemplatesChecklists.svg)
 
 Metadata standards or repository requirements can be represented as templates
 
