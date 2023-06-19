@@ -2,13 +2,12 @@
 
 @import 'default';
 
-
 section {    
-  background: url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/5dba3b88b4f9eada59064a5eed60b5a9dca21ef9/src/docs/img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"), url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/main/src/docs/img/_logos/CEPLAS/CEPLAS_Icon.jpeg"), url("https://i.creativecommons.org/l/by/4.0/88x31.png") ;
+  background: url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/5dba3b88b4f9eada59064a5eed60b5a9dca21ef9/src/docs/img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"), url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/main/src/docs/img/_logos/CEPLAS/CEPLAS_Icon.jpeg"), url("https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg");
   background-repeat: no-repeat;
-  background-size: 3%, 2%, 5%;    
-  overflow: visible;
+  background-size: 3%, 2%, 5%;
   background-position: 2% 99%, 7% 99%, 11% 99%;
+  background-color: white;
   font-size: 30px;
   font-family: Calibri, sans-serif;
   color: #2D3E50;
@@ -49,6 +48,7 @@ section p img {
   display: block;
   margin: 0px auto 0px auto;  /* top right bottom left*/ 
 }
+
 img.emoji {
   display: inline;
   }

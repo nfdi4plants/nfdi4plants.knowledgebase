@@ -19,7 +19,7 @@ date: 2023-06-14
 
 # Start Your ARC Workshop Series
 
-<style scoped>section {background: none;}</style>
+<style scoped>section {background: none; background-color: white;}</style>
 
 <!-- Title slide to class -->
 
