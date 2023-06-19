@@ -7,7 +7,7 @@
 
 ```Tutorials
 # DataPLANT Technical Onboarding:/docs/hidden/onboarding_technical.html
-# Markdown Intro:/docs/hidden/IntroductionToMarkdown.html
+# Markdown Intro:/docs/guides/IntroductionToMarkdown.html
 ```
 
 ```Workarounds
