@@ -10,16 +10,17 @@ article_status: published
 todo:
 ---
 
-<br>
-
-<a href="./index.html">
-  <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #B4CE82;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Newbie</span>
-  <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #2D3E50;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Tutorial</span>
-</a>
-
 ## About this guide
 
 DataPLANT provides the Excel Add-In Swate to support you in data annotation. In this guide we focus on adding metadata to your studies and assays with our excel tool [Swate](./../implementation/Swate.html). Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses. In the following 
+
+<a href="./index.html">
+  <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
+  <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
+</a>
+
+<br>
+<br>
 
 ## Before we can start
 

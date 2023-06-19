@@ -11,16 +11,16 @@ article_status: published
 todo:
 ---
 
-<br>
-
-<a href="./index.html">
-    <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #B4CE82;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Newbie</span>
-    <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #4FB3D9;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Read</span>
-</a>
-
 ## About this guide
 
 In this guide, we will take a closer look at some experimental scenarios that every scientist might face on a more or less regular basis. With these examples, we aim to provide you with the best practices for  data annotation in isa.study.xlsx and isa.assay.xlsx files allowing you to generate machine-readable and thereby, interoperable and reproducible data. Do not hesitate to contact us if you think that we are missing some urgent examples or if you have any further questions.
+
+<a href="./index.html">
+    <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
+    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
+</a>
+<br>
+<br>
 
 ## Annotation of biological and technical replicates
 

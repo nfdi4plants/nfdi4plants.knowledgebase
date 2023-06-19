@@ -6,16 +6,16 @@ add toc: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-<br>
-
-<a href="./index.html">
-    <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #B4CE82;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Newbie</span>
-    <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #2D3E50;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Tutorial</span>
-</a>
-
 ## About this guide
 
 In this guide we show you how to register at the [DataHUB](https://git.nfdi4plants.org/) to be able to share your ARC for collaboration. 
+
+<a href="./index.html">
+    <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
+    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
+</a>
+<br>
+<br>
 
 ## Registration
 
