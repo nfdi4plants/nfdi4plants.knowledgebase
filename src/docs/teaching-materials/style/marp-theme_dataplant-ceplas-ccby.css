@@ -2,6 +2,8 @@
 
 @import 'default';
 
+/* @import url('./../../../style/style.css'); */
+
 section {    
   background: url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/5dba3b88b4f9eada59064a5eed60b5a9dca21ef9/src/docs/img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"), url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/main/src/docs/img/_logos/CEPLAS/CEPLAS_Icon.jpeg"), url("https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg");
   background-repeat: no-repeat;
