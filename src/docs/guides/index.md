@@ -22,9 +22,9 @@ Welcome to the DataPLANT **guides** section
 
 Badge <div style="width:100px"></div> | Addresses
 ---|---
-<span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #B4CE82;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Newbie</span> | Users new to DataPLANT
-<span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #FFC000;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Advanced</span> | Users with some experience with DataPLANT tools
-<span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #C21F3A;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Data Steward</span> | Data stewards and data managers, who (want to) contribute to DataPLANT
+<span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>  | Users new to DataPLANT
+<span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span> | Users with some experience with DataPLANT tools
+<span class="badge-category">User</span><span class="badge-selected" id="badge-datasteward">Data Steward</span>  | Data stewards and data managers, who (want to) contribute to DataPLANT
 
 </div>
 
@@ -34,9 +34,9 @@ Badge <div style="width:100px"></div> | Addresses
 
 Badge <div style="width:100px"></div> | Meaning
 ---|---
-<span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #4FB3D9;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Read</span> | Read to learn about a tool or concept
-<span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #1FC2A7;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Walk-through</span> | Use-case example that you can follow *as-is*
-<span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #2D3E50;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Tutorial</span> | How to use a tool with your own data
+<span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span> | Read to learn about a tool or concept
+<span class="badge-category">Mode</span><span class="badge-selected" id="badge-walkthrough">Walk-through</span>  | Use-case example that you can follow *as-is*
+<span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>  | How to use a tool with your own data
 
 </div>
 

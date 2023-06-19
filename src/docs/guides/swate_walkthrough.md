@@ -14,33 +14,25 @@ add toc: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-<br>
-
-<a href="./index.html">
-    <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #B4CE82;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Newbie</span>
-    <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #1FC2A7;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Walk-through</span>
-</a>
-
 ## About this guide
 
 DataPLANT provides the Excel Add-In [Swate](./../implementation/Swate.html) to support you in data annotation.
 In this walk-through, we guide you on annotating data using [Swate](./../implementation/Swate.html) with a show-case example.
 
-## Before we can start
+<a href="./index.html">
+    <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
+    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-walkthrough">Walk-through</span>
+</a>
 
-<style scoped>
-#before-start ul{
-    list-style-type: none;
-    margin-left: 0px;
-    padding-left: 10;
-}
-</style>
+<br>
+<br>
+
+## Before we can start
 
 <div id="before-start">
 
 - :ballot_box_with_check: Please [install Swate](./../SwateManual/Docs01-Installing-Swate.html)
 - :bulb: Consider reading about [Swate](./../implementation/Swate.html)
-
 
 </div>
 
