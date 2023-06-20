@@ -33,11 +33,12 @@ In this guide we introduce the different ISA file types used in the ARC.
 The ARC builds on the <a href="https://isa-specs.readthedocs.io/en/latest/isamodel.html" target="_blank">ISA Abstract Model</a> for metadata annotation.
 Briefly, the ISA model comes with a hierarchy (ISA = Investigation - Study - Assay) that aligns well with most projects in (plant) biology labs. It allows to group multiple assays to one study and multiple studies to one investigation.
 
-
 <div class="center75percent">
   <img src="./../img/ISAmodel_ARC01_img01.svg">
   <figcaption> Image source (left panel): <a href="https://isa-tools.org/format/specification.html" target="_blank">https://isa-tools.org/format/specification.html</a></figcaption>
 </div>
+
+Your ARC has **one** `isa.investigation.xlsx` workbook at its root (i.e. every ARC describes collects the data to one investigation). Each study or assay that you add to your ARC contains one `isa.study.xlsx` or `isa.assay.xlsx`, respectively. 
 
 
 :bulb: For more details about the ISA model, please also refer to ISA tools (https://isa-tools.org/) and ISA specifications (https://isa-specs.readthedocs.io/). 
@@ -48,12 +49,14 @@ Briefly, the ISA model comes with a hierarchy (ISA = Investigation - Study - Ass
 
 ---
 
+## ISA-Tab for intuitive collection of metadata
+
+The most user-intuitive format of the ISA metadata framework is <a href="https://isa-specs.readthedocs.io/en/latest/isatab.html" target="_blank">ISA-Tab</a>. 
+
 <img src="./../img/ISAmodel_ARC01_img02.svg" style="width:70%;display: block;margin-left: auto;margin-right: auto;">
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_ISA-tab.md -->
-
----
 
 
 
