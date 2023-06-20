@@ -19,8 +19,8 @@ add sidebar: _sidebars/mainSidebar.md
 In this guide we introduce the different ISA file types used in the ARC.
 
 <a href="./index.html">
-    <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">User</span><span style="background-color: #FFC000;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Advanced</span>
-    <span style="color: #2D3E50; padding: 4px 8px;text-align: center; border-radius: 10px 0px 0px 10px; border: solid 1px;">Mode</span><span style="background-color: #4FB3D9;color:white; padding: 4px 8px;text-align: center; border-radius: 0px 10px 10px 0px; border: solid 1px #2D3E50">Read</span>
+    <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
+    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
 </a>
 
 <br>
@@ -30,9 +30,18 @@ In this guide we introduce the different ISA file types used in the ARC.
 
 ## ARC builds on ISA
 
-<img src="./../img/ISAmodel_ARC01_img01.svg" style="width:70%;display: block;margin-left: auto;margin-right: auto;">
+The ARC builds on the <a href="https://isa-specs.readthedocs.io/en/latest/isamodel.html" target="_blank">ISA Abstract Model</a> for metadata annotation.
+Briefly, the ISA model comes with a hierarchy (ISA = Investigation - Study - Assay) that aligns well with most projects in (plant) biology labs. It allows to group multiple assays to one study and multiple studies to one investigation.
 
-https://isa-tools.org/format/specification.html
+
+<div class="center75percent">
+  <img src="./../img/ISAmodel_ARC01_img01.svg">
+  <figcaption> Image source (left panel): <a href="https://isa-tools.org/format/specification.html" target="_blank">https://isa-tools.org/format/specification.html</a></figcaption>
+</div>
+
+
+:bulb: For more details about the ISA model, please also refer to ISA tools (https://isa-tools.org/) and ISA specifications (https://isa-specs.readthedocs.io/). 
+
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_ISAmodel.md -->
