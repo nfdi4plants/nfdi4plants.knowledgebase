@@ -3,71 +3,168 @@ marp: true
 title: Annotation Principles
 author: 
 - name: Kevin Schneider
-  github: 
+  github: https://github.com/kMutagene
 date: 2023-06-14
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-{
-    "Name": "Source Name",
-    "Description": "Every annotation table must start with the Source Name column, which defines the input of your table. This input value must be a unique identifier for an organism or a sample.",
-    "DescriptionSub": "The number of Source Name columns per table is limited to one.",
-    "BackgroudColor": "#0BB5DD",
-    "Color": "white",
-    "Image": "images/Source.png"
+<style>
+
+img {
+    width: 68%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-{
-    "Name": "Characteristics",
-    "Description": "Characteristic columns describe inherent properties of the source material, e.g., a certain strain or ecotype, but also the temperature an organism was exposed to.",
-    "DescriptionSub": "You can use any number of Characteristic columns.",
-    "BackgroudColor": "white",
-    "Color": "#1FC2A7",
-    "Image": "images/Characteristics.png"
+section, p, h1{
+    display: block;
+    font-size: 25px;
+    text-align: center;
 }
 
-{
-    "Name": "Factor",
-    "Description": "Use Factor columns to describe independent variables that determine the specific output of your experiment when process and analysis were identical.",
-    "DescriptionSub": "Most of the time, Factors are the most important building blocks for downstream computational analysis.",
-    "BackgroudColor": "#1FC2A7",
-    "Color": "white",
-    "Image": "images/Factor.png"
+h1 {
+    display: block;
+    font-size: 32px;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
-{
-  "Name": "Parameter",
-  "Description": "Parameter columns describe steps in your experimental workflow, e.g., the temperature or extraction buffer used for your assay. Multiple Parameter columns form a protocol.",
-  "DescriptionSub": "You can use any number of Parameter columns.",
-  "BackgroudColor": "white",
-  "Color": "#0BB5DD",
-  "Image": "images/Parameter.png"
+</style>
+
+
+# Source Name
+
+<style scoped>
+
+section, img, p, h1 {
+    background-color: #0BB5DD;
+    color: white
 }
 
-{
-  "Name": "Component",
-  "Description": "Use these columns to list anything physical of a protocol that can be consumed, e.g. instrument names, software names, or reagents names.",
-  "DescriptionSub": "You can use any number of Component columns.",
-  "BackgroudColor": "#0BB5DD",
-  "Color": "white",
-  "Image": "images/Component.png"
+</style>
+
+Every annotation table must start with the Source Name column, which defines the input of your table. This input value must be a unique identifier for an organism or a sample.  
+The number of Source Name columns per table is limited to one.
+
+<img src="./../img/AnnotationPrinciples/Source.svg">
+
+---
+
+
+# Characteristics
+
+<style scoped>
+
+section, img, p, h1 {
+    background-color: white;
+    color: #1FC2A7;
 }
 
-{
-    "Name": "Protocol Columns",
-    "Description": "Use Protocol REF columns to reference the protocol used in this table, i.e., the name of the protocol. Protocol Type columns define the type according to your preferred public repository, e.g., a growth protocol.",
-    "DescriptionSub": "The number of columns for each subtype is limited to one per table.",
-    "BackgroudColor": "white",
-    "Color": "#2D3E50",
-    "Image": "images/Protocol.png"
+</style>
+
+Characteristic columns describe inherent properties of the source material, e.g., a certain strain or ecotype, but also the temperature an organism was exposed to.  
+You can use any number of Characteristic columns.
+
+<img src="./../img/AnnotationPrinciples/Characteristics.svg">
+
+---
+
+
+# Factor
+
+<style scoped>
+
+section, img, p, h1 {
+    background-color: #1FC2A7;
+    color: white;
 }
 
-{
-    "Name": "Output Columns",
-    "Description": "Per table only one output column is allowed, which can either be a Sample Name, a Raw Data File or a Derived Data File. Data files can be sources for computational workflows.",
-    "DescriptionSub": "The value of this column must be a unique identifier.",
-    "BackgroudColor": "#2D3E50",
-    "Color": "white",
-    "Image": "images/Output.png"
+</style>
+
+Use Factor columns to describe independent variables that determine the specific output of your experiment when process and analysis were identical.  
+Most of the time, Factors are the most important building blocks for downstream computational analysis.
+
+<img src="./../img/AnnotationPrinciples/Factor.svg">
+
+---
+
+
+# Parameter
+
+<style scoped>
+
+section, img, p, h1 {
+    background-color: white;
+    color: #0BB5DD;
 }
+
+</style>
+
+
+Parameter columns describe steps in your experimental workflow, e.g., the temperature or extraction buffer used for your assay. Multiple Parameter columns form a protocol.  
+You can use any number of Parameter columns.
+
+
+<img src="./../img/AnnotationPrinciples/Parameter.svg">
+
+---
+
+# Component
+
+<style scoped>
+
+section, img, p, h1 {
+    background-color: #0BB5DD;
+    color: white;
+}
+
+</style>
+
+Use these columns to list anything physical of a protocol that can be consumed, e.g. instrument names, software names, or reagents names.  
+You can use any number of Component columns.
+
+<img src="./../img/AnnotationPrinciples/Component.svg">
+
+---
+
+# Protocol Columns
+
+<style scoped>
+
+section, img, p, h1 {
+    background-color: white;
+    color: #2D3E50;
+}
+
+</style>
+
+Use Protocol REF columns to reference the protocol used in this table, i.e., the name of the protocol. Protocol Type columns define the type according to your preferred public repository, e.g., a growth protocol.  
+The number of columns for each subtype is limited to one per table.
+
+<img src="./../img/AnnotationPrinciples/Protocol.svg">
+
+---
+
+
+# Output Columns
+
+<style scoped>
+
+section, img, p, h1 {
+    background-color: #2D3E50;
+color: white;
+}
+
+</style>
+
+
+Per table only one output column is allowed, which can either be a Sample Name, a Raw Data File or a Derived Data File. Data files can be sources for computational workflows.  
+The value of this column must be a unique identifier.
+
+
+<img src="./../img/AnnotationPrinciples/Output.svg">
+
+
+ 
