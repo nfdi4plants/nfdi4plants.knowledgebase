@@ -28,10 +28,25 @@ In this guide we introduce the different ISA file types used in the ARC.
 
 ---
 
+## Before we can start
+
+<div id="before-start">
+
+- :bulb: Consider reading about the [ARC](./../implementation/AnnotatedResearchContext.html)
+- :bulb: This guide only shows the ISA file types (not their content). Check out the 
+- :bulb: For more details about the ISA model, please also refer to ISA tools (https://isa-tools.org/) and ISA specifications (https://isa-specs.readthedocs.io/).
+
+
+:bulb: For details, check out the [annotation principles](https://nfdi4plants.github.io/AnnotationPrinciples/)
+
+</div>
+
+---
+
 ## ARC builds on ISA
 
 The ARC builds on the <a href="https://isa-specs.readthedocs.io/en/latest/isamodel.html" target="_blank">ISA Abstract Model</a> for metadata annotation.
-Briefly, the ISA model comes with a hierarchy (ISA = Investigation - Study - Assay) that aligns well with most projects in (plant) biology labs. It allows to group multiple assays to one study and multiple studies to one investigation.
+Briefly, the ISA model comes with a hierarchy (ISA: Investigation - Study - Assay) that aligns well with most projects in (plant) biology labs. It allows to group multiple assays to one study, and multiple studies to one investigation.
 
 <div class="center75percent">
   <img src="./../img/ISAmodel_ARC01_img01.svg">
@@ -39,9 +54,6 @@ Briefly, the ISA model comes with a hierarchy (ISA = Investigation - Study - Ass
 </div>
 
 Your ARC has one `isa.investigation.xlsx` workbook at its root (i.e. every ARC collects the data to one investigation). Each study or assay that you add to your ARC contains one `isa.study.xlsx` or `isa.assay.xlsx`, respectively. 
-
-
-:bulb: For more details about the ISA model, please also refer to ISA tools (https://isa-tools.org/) and ISA specifications (https://isa-specs.readthedocs.io/). 
 
 
 ---
@@ -56,28 +68,25 @@ The most user-intuitive format of the ISA metadata framework is <a href="https:/
   <figcaption>Comparison of the ISA file types. Grey cells: keys. White cells: values.</a></figcaption>
 </div>
 
-
 The major difference between the ISA workbooks is their **read-direction**: 
 - `isa.investigation.xlsx` is read *top-to-bottom* (keys on the left, values extending to the right)
 - `isa.study.xlsx` and `isa.assay.xlsx` *left-to-right* (keys on top, value extending to the bottom)
 
 ---
 
-## isa.investigation.xlsx - A to registry to your ARC 
+## A to registry to your ARC 
 
-- Study and assay files are registered in the investigation file
+The `isa.investigation.xlsx` allows to store metadata relevant on the investigation-level (e.g. title, date, contributor and publication details of the investigation). In addition, it functions as a "registry" to your ARC. 
+
+Each study (`isa.study.xlsx`) and assay (`isa.assay.xlsx`) of your ARC as well as a summary of metadata contained in them are registered and listed in the `isa.investigation.xlsx`. 
 
 <img src="./../img/ISAmodel_ARC01_img04.svg" style="width:70%;display: block;margin-left: auto;margin-right: auto;">
 
-<!-- Source to slide(s) -->
-<!-- ../../bricks/ARC_ISAxlsx02.md -->
-
-
-:bulb: Consider reading 
-
 ---
 
-## The output of a study or assay file can function as input for a new isa.assay.xlsx 
+## Communicate how your processes connect
+
+The output of a study or assay file can function as input for a new isa.assay.xlsx 
 
 - communicate the connection of processes
 
@@ -87,9 +96,6 @@ Output building blocks:
 - Derived Data File
 
 <img src="./../img/ISAmodel_ARC01_img05.svg" style="width:70%;display: block;margin-left: auto;margin-right: auto;">
-
-<!-- Source to slide(s) -->
-<!-- ../../bricks/ARC_ISAxlsx03.md -->
 
 
 ---

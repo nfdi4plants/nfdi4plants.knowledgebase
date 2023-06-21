@@ -90,3 +90,12 @@ figcaption {
   font-style: italic;
   margin-bottom: 30px;
 }
+
+
+/* add ISA defaults */
+
+
+.file::before {
+  content: "📁";
+  font-size: 10px;
+}
