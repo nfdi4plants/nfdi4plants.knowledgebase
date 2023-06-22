@@ -82,6 +82,8 @@ Each study (`isa.study.xlsx`) and assay (`isa.assay.xlsx`) of your ARC as well a
 
 <img src="./../img/ISAmodel_ARC01_img04.svg" style="width:70%;display: block;margin-left: auto;margin-right: auto;">
 
+:bulb: When opening the `isa.investigation.xlsx` for the first time, it may be necessary to widen the first column to make the entries visible.
+
 ---
 
 ## Communicate how your processes connect
