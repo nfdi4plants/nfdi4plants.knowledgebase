@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Swate Manual Installation for MacOS Excel Desktop
+title: Swate Manual Installation for macOS Excel Desktop
 published: 2023-02-01
 add toc: false
 add sidebar: _sidebars\mainSidebar.md
