@@ -54,7 +54,7 @@ let layout (ctx : SiteContents) (activePageTitle: string) bodyCnt =
             link [Rel "icon"; Type "image/png"; Sizes "32x32"; Href "/images/favicon.png"]
             link [Rel "stylesheet"; Href "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"]
             link [Rel "stylesheet"; Href "https://fonts.googleapis.com/css?family=Open+Sans"]
-            link [Rel "stylesheet"; Type "text/css"; Href "/style/style.css"]
+            link [Rel "stylesheet"; Type "text/css"; Href "./../../style/style.css"]
             link [Rel "stylesheet"; Type "text/css"; Href "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"]
             #if WATCH
             script [ Type "module"; Src "/js/bundle.js"] []
