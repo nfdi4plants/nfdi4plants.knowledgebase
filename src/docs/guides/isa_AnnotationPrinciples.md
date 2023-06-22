@@ -5,11 +5,24 @@ title: Annotation Principles
 author: 
 - name: Kevin Schneider
   github: https://github.com/kMutagene
-date: 2023-06-14
+date: 2023-06-22
 add toc: false
 add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
+
+## About this guide
+
+Annotation of data and workflows within the ARC builds on the ISA model. In this guide we introduce the different building blocks available to annotate your workflows in isa.study.xlsx and isa.assay.xlsx workbooks. 
+
+<a href="./index.html">
+  <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
+  <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
+</a>
+
+<br>
+<br>
+
 
 <style>
 
