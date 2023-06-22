@@ -12,7 +12,7 @@ todo:
 
 ## About this guide
 
-DataPLANT provides the Excel Add-In Swate to support you in data annotation. In this guide we focus on adding metadata to your studies and assays with our excel tool [Swate](./../implementation/Swate.html). Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses. In the following 
+DataPLANT provides the Excel Add-In Swate to support you in data annotation. In this guide we focus on adding metadata to your studies and assays with our excel tool [Swate](./../implementation/Swate.html). Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses.
 
 <a href="./index.html">
   <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
