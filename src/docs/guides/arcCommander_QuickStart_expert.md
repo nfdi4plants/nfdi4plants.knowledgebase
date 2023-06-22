@@ -33,7 +33,7 @@ In this guide we focus on how to use the [ARC Commander](./../implementation/Arc
 
 :rocket: Voila! You are ready to follow these few steps to create a minimal ARC sharable via DataPLANT's DataHUB.
 
-## Two minutes two your ARC
+## Two minutes to your ARC
 
 ```bash
 # Create and navigate to your ARC folder
