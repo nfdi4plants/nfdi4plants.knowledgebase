@@ -211,7 +211,7 @@ Output building blocks:
   - Sample Name, Raw Data File, Derived Data File
 
 
-:bulb: For details, check out the [annotation principles](https://nfdi4plants.github.io/AnnotationPrinciples/).
+:bulb: For details, check out the [Annotation Principles](https://nfdi4plants.github.io/AnnotationPrinciples/).
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_Swate_DataPLANT-Annotation_Building_Block_types.md -->
