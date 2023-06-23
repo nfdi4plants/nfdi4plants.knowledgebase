@@ -1,7 +1,7 @@
 ---
 name: Guide request
 title: "[guide]"
-description: If you're missing a guide about a tool, software or concept, please let us know.
+about: If you're missing a guide about a tool, software or concept, please let us know.
 labels: content
 ---
 
