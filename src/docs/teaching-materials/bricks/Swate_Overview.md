@@ -9,4 +9,4 @@ date: 2022-11-24
 
 # Swate Overview
 
-<img align="center" width="900" src="../../img/Swate_Overview.svg">
+<img align="center" width="900" src="./../../img/Swate_Overview.svg">

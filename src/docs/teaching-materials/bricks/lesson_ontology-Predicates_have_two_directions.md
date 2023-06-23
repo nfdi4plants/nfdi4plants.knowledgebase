@@ -12,4 +12,4 @@ title: lesson_ontology-Predicates_have_two_directions
 
 # Predicates have two directions
 
-![w:1000](../../img/Ontologies_pizzaAnalogy_seq6.png)
+![w:1000](./../../img/Ontologies_pizzaAnalogy_seq6.png)

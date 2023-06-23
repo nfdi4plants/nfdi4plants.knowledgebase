@@ -20,4 +20,4 @@ title: tutorial_arc_access-authentication
 
 A window within your browser will open, asking for your DataPLANT credentials. In case you are already logged in, the browser will directly display a Success message to you:
 
-![w:700](../../img/arcCommander_AccessToken.png)
+![w:700](./../../img/arcCommander_AccessToken.png)

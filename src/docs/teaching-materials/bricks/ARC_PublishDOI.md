@@ -11,4 +11,4 @@ title: ARC_PublishDOI
 
 <br>
 
-![w:1200](../../img/ARC_PublishDOI_img2.png)
+![w:1200](./../../img/ARC_PublishDOI_img2.png)

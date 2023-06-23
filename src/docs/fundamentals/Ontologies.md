@@ -32,7 +32,7 @@ There are several terms (depending on the ontology format) that are used to desc
 | Range | range (tag) | Object of a relationship triplet. | ObjectProperty: BFO_0000050</br> &nbsp; &nbsp; Annotations: </br> &nbsp; &nbsp; &nbsp; &nbsp; rdfs:label "part of"</br> &nbsp; &nbsp; Range:</br> &nbsp; &nbsp; &nbsp; &nbsp; PO_0009006 |
 
 
-![img1](../img/plant_ontology_image.png)
+![img1](./../img/plant_ontology_image.png)
 
 Fig. 1: Excerpt of the [plant ontology](https://obofoundry.org/ontology/po.html). Boxes describe classes, arrows describe object properties. The class “phyllome” is defined as a subclass of “plant organ”. The class “phyllome” has three subclasses: “bract”, “leaf” and “sporophyll”. It is furthermore defined as “part of” the class “shoot system” and the "phyllome" “develops_from” the “phyllome primordium”.
 </br>

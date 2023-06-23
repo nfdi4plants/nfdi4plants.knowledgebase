@@ -21,7 +21,7 @@ https://linktr.ee/DataPLANT
 
 <div class=ldiv>
 
-![w:200](../../img/DataStewards_CommunityIntegration_img2.png)
+![w:200](./../../img/DataStewards_CommunityIntegration_img2.png)
 
 </div>
 
@@ -44,5 +44,5 @@ https://www.nfdi4plants.org/
 <br>
 <br>
 
-![](../../img/_qr-codes/QR_DataPLANT_Linktree.svg)
+![](./../../img/_qr-codes/QR_DataPLANT_Linktree.svg)
 </div>

@@ -30,4 +30,4 @@ During the registration you can "Choose your role in DataPLANT"
 - Guest
   - Guest users who want to use the DataPLANT tools and services
 
-![bg right:35% fit](../../img/dataplant_registration_roles.png)
+![bg right:35% fit](./../../img/dataplant_registration_roles.png)

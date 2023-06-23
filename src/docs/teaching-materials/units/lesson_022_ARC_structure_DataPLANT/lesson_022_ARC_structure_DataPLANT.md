@@ -5,7 +5,7 @@ paginate: true
 headingDivider: 
   - 1
   - 2
-footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../../img/_logos/CreativeCommons/by.svg"> </a>'
+footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="./../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="./../../../img/_logos/CreativeCommons/by.svg"> </a>'
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 layout: slides
 title: "Annotated Research Context - Folder Structure"
@@ -45,13 +45,13 @@ teaching mode:
 duration_minutes: 7
   - Depends on how deep one goes on each slide
 links and references:
-  - https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/QuickStart_arcCommander.html#invite-collaborators
+  - https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html#invite-collaborators
   - https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI
 ---
 
 # Annotated Research Context (ARC)
 
-![width:950](../../../img/ARC_DataCentricIntegration_img1.png)
+![width:950](./../../../img/ARC_DataCentricIntegration_img1.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_DataCentricIntegration.md -->
@@ -61,7 +61,7 @@ links and references:
 
 # What does an ARC look like?
 
-![width:950](../../../img/ARC_fillWithData_seq1.png)
+![width:950](./../../../img/ARC_fillWithData_seq1.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_Structure_DataPLANT-1Folder_Structure.md -->
@@ -71,7 +71,7 @@ links and references:
 
 # What does an ARC look like?
 
-![width:950](../../../img/ARC_fillWithData_seq2.png)
+![width:950](./../../../img/ARC_fillWithData_seq2.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_Structure_DataPLANT-2Folder_Structure_ExperimentalData.md -->
@@ -81,7 +81,7 @@ links and references:
 
 # What does an ARC look like?
 
-![width:950](../../../img/ARC_fillWithData_seq3.png)
+![width:950](./../../../img/ARC_fillWithData_seq3.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_Structure_DataPLANT-3Folder_Structure_ExperimentalData_Images.md -->
@@ -91,7 +91,7 @@ links and references:
 
 # What does an ARC look like?
 
-![width:950](../../../img/ARC_fillWithData_seq4.png)
+![width:950](./../../../img/ARC_fillWithData_seq4.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_Structure_DataPLANT-4Folder_Structure_DataAnalysis-Computation.md -->
@@ -101,7 +101,7 @@ links and references:
 
 # What does an ARC look like?
 
-![width:950](../../../img/ARC_fillWithData_seq5.png)
+![width:950](./../../../img/ARC_fillWithData_seq5.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_Structure_DataPLANT-5Folder_Structure_DataAnalysis-Computation_Images.md -->
@@ -111,7 +111,7 @@ links and references:
 
 # What does an ARC look like?
 
-![width:950](../../../img/ARC_fillWithData_seq6.png)
+![width:950](./../../../img/ARC_fillWithData_seq6.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/ARC_Structure_DataPLANT-6Folder_Structure_MetadataAnnotation.md -->

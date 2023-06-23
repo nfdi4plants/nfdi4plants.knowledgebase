@@ -41,7 +41,7 @@ The ultimate goal of FAIR (data) is to drive science and the production of new d
   - [R1.2. (Meta)data are associated with detailed provenance](#r12-metadata-are-associated-with-detailed-provenance)
   - [R1.3. (Meta)data meet domain-relevant community standards](#r13-metadata-meet-domainrelevant-community-standards)
 
-![FAIR Data Principles](../img/FAIR.jpg)
+![FAIR Data Principles](./../img/FAIR.jpg)
 
 ## Detailed explanation
 
@@ -188,12 +188,12 @@ Name | Type | Tasks on metadata
 [kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 
 <!-- kb-Tutorials -->
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+[kb-QuickStart_arc]: ../tutorials/ARCUserJourney.html "ARC User Journey"
 
 
 <!-- DataPLANT web links -->
 
-[kb-ArcCommander-Manual]: ../implementation/ArcCommanderManual/index.html "ARC Commander Manual"
+[kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
 
 <!-- Reference web links -->

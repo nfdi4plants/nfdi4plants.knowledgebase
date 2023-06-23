@@ -15,5 +15,5 @@ date: 2023-03-23
 
 <div class=mdiv>
 
-![w:700](../../img/FAIRData_ActivationEnergy.svg)
+![w:700](./../../img/FAIRData_ActivationEnergy.svg)
 </div>

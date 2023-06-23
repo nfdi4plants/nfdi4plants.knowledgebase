@@ -14,4 +14,4 @@ title: tutorial_swate_firstSteps-Customize_your_table_by_adding_building_blocks
 
 Choose the type of building block you want to add (A).
 
-![w:600](../../img/Swate-AddBuildingBlock-Exp.jpg)
+![w:600](./../../img/Swate-AddBuildingBlock-Exp.jpg)

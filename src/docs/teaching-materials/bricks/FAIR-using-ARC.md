@@ -10,6 +10,6 @@ license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 date: 2022-11-04
 ---
 
-![bg cover](../../img/DataPLANT_BigPicture_seq1.png)
+![bg cover](./../../img/DataPLANT_BigPicture_seq1.png)
 
 <!-- Here one could elaborate on the ARC structure as deeply as desired. In addition, Swate incl. ontology could be discussed here.-->

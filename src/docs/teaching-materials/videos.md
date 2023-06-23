@@ -1,10 +1,17 @@
 ---
 layout: docs
 title: Teaching Materials - Videos
-published: 2023-05-31
+published: 2023-06-01
 add toc: false
 add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-Welcome to the DataPLANT Teaching Materials - Videos Section
+Welcome to the DataPLANT Video Collection.   
+This collection contains playlists for specific topics or events listed below:   
+
+* ### [Start Your ARC Workshop Series](videos/StartYourARC.html)   
+   
+<br>
+
+:construction: This site is currently under construction. Links may change.

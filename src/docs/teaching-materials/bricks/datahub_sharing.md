@@ -10,6 +10,6 @@ date: 2022-11-24
 # DataPLANT DataHUB<br> :arrow_forward: __data sharing and collaborative work__
 <br>
 
-![width:800](../../img/ARC_DataSharing_Collaborators_img2.png)
+![width:800](./../../img/ARC_DataSharing_Collaborators_img2.png)
 
 <!--You can share your work and work together-->

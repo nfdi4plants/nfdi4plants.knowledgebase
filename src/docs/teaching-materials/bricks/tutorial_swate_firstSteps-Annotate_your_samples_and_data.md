@@ -17,7 +17,7 @@ title: tutorial_swate_firstSteps-Annotate_your_samples_and_data
 - When *Use related term directed search* is enabled, Swate  suggests suitable terms within the ontology  for the column header, e.g.
 *TripleTOF* *5600* for *instrument model.*
 
-![bg right w:450](../../img/swate_ontologyTermSearch2.png)
+![bg right w:450](./../../img/swate_ontologyTermSearch2.png)
 
 --- 
 
@@ -27,4 +27,4 @@ title: tutorial_swate_firstSteps-Annotate_your_samples_and_data
 
 - If you cannot find a fitting term, use free text input.
 
-![bg right w:400](../../img/swate_ontologyTermSearch2.png)
+![bg right w:400](./../../img/swate_ontologyTermSearch2.png)

@@ -114,13 +114,13 @@ Name | Type | Tasks on metadata
 [kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 
 <!-- kb-Tutorials -->
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+[kb-QuickStart_arc]: ../tutorials/ARCUserJourney.html "ARC User Journey"
 
 <!-- DataPLANT weblinks -->
 
 [hp-DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
-[kb-ArcCommander-Manual]: ../implementation/ArcCommanderManual/index.html "ARC Commander Manual"
+[kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
 
 <!-- Reference weblinks -->

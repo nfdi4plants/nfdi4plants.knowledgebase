@@ -10,4 +10,4 @@ license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 date: 2022-11-04
 ---
 
-![bg cover](../../img/DataPLANT_BigPicture_seq2.png)
+![bg cover](./../../img/DataPLANT_BigPicture_seq2.png)

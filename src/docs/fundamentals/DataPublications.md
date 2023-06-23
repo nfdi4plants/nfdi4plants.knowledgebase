@@ -44,7 +44,7 @@ For more information see [data papers & data journals](#data-papers--data-journa
 -->
 
 
-![Data publishing](../img/DataPublication.jpg)
+![Data publishing](./../img/DataPublication.jpg)
 
 **Figure 1:** During publication, datasets are typically deposited in a repository to make them available, documented to support reproduction and reuse, and assigned an identifier to facilitate citation. Some, but not all, publishers review datasets to validate them.
 
@@ -93,7 +93,7 @@ Name | Type | Tasks on metadata
 [kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 
 <!-- kb-Tutorials -->
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+[kb-QuickStart_arc]: ../tutorials/ARCUserJourney.html "ARC User Journey"
 
 
 <!-- DataPLANT web links -->

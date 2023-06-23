@@ -34,7 +34,7 @@ required resources:
 teaching mode: hands-on
 duration_minutes: 3
 links and references:
-- https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/QuickStart_arcCommander.html#invite-collaborators
+- https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html#invite-collaborators
 - https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI
 ---
 
@@ -48,31 +48,31 @@ links and references:
 
 1. Click on **Project Information** in the left navigation panel
 
-![fit w:1050](../../../img/datahub_members_seq2.png)
+![fit w:1050](./../../../img/datahub_members_seq2.png)
 
 ---
 
 2. Click on **Members**
 
-![fit w:1050](../../../img/datahub_members_seq3.png)
+![fit w:1050](./../../../img/datahub_members_seq3.png)
 
 ---
 
 3. Click on **Invite members**
 
-![fit w:1050](../../../img/datahub_members_seq4.png)
+![fit w:1050](./../../../img/datahub_members_seq4.png)
 
 ---
 
 4. Search for potential collaborators
 
-![fit w:1050](../../../img/datahub_members_seq5.png)
+![fit w:1050](./../../../img/datahub_members_seq5.png)
 
 ---
 
 5. Select a role 
 
-![fit w:1050](../../../img/datahub_members_seq6.png)
+![fit w:1050](./../../../img/datahub_members_seq6.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_invite-collaborators.md -->
@@ -113,7 +113,7 @@ object-position: 100% 45%;
 }
 </style>
 
-![](../../../img/ARC_Sharing_img1.png)
+![](./../../../img/ARC_Sharing_img1.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_congrats-for-sharing.md -->

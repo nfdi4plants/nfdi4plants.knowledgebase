@@ -16,4 +16,4 @@ title: tutorial_datahub_GHDesktop-Navigate_to_your_ARC_in_the_DataHUB
 2. Navigate to an ARC you want to sync locally
 3. Click on `Clone` and copy the HTTPS url, e.g. `https://git.nfdi4plants.org/<yourUserName>/<yourArc>.git`
 
-![bg right w:600](../../img/datahub_clone.png)
+![bg right w:600](./../../img/datahub_clone.png)

@@ -76,9 +76,9 @@ Within DataPLANT we communicate via Microsoft Teams. If you would like to join D
 [kb-Swate]: ../implementation/Swate.html "DataPLANT Swate"
 
 <!-- kb-Tutorials -->
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
-[kb-QuickStart_swate]: ../tutorials/QuickStart_swate.html "Quickstart Swate"
-[kb-QuickStart_arcCommander]: ../tutorials/QuickStart_arcCommander.html "QuickStart ARC Commander"
+[kb-QuickStart_arc]: ../tutorials/ARCUserJourney.html "ARC User Journey"
+[kb-swate_QuickStart]: ../tutorials/swate_QuickStart.html "Quickstart Swate"
+[kb-arcCommander_QuickStart]: ../tutorials/arcCommander_QuickStart.html "QuickStart ARC Commander"
 
 <!-- Links to DataPLANT Homepage (hp-) -->
 
@@ -91,7 +91,7 @@ Within DataPLANT we communicate via Microsoft Teams. If you would like to join D
 [gh-DataPlant]: <https://github.com/nfdi4plants/> "GitHub DataPLANT"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/> "ArcCommander"
-[kb-ArcCommander-Manual]: ../implementation/ArcCommanderManual/index.html "ARC Commander Manual"
+[kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
 
 <!-- Links to external (ext-) sources -->

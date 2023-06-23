@@ -2,8 +2,8 @@
 marp: true
 theme: dataplant_marp-theme-CMR
 paginate: true
-footer: ' <a href="https://nfdi4plants.org"> <img id="footer-img1" src="../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a>
-  <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="../../../img/_logos/CreativeCommons/by.svg">
+footer: ' <a href="https://nfdi4plants.org"> <img id="footer-img1" src="./../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a>
+  <a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img2" src="./../../../img/_logos/CreativeCommons/by.svg">
   </a> '
 style: ' footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height:
   30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity:
@@ -44,7 +44,7 @@ teaching mode:
 duration_minutes: 10 - Depends on how deep one goes on each slide
 ---
 
-![left h:640](../../../img/User_Challenges_002.svg)
+![left h:640](./../../../img/User_Challenges_002.svg)
 
 <!-- Here you could address the general problems of the user. FAIRData_ActivationEnergy and FAIRData_ActivationEnergy_withDataPLANT would also be appropriate.-->
 
@@ -55,7 +55,7 @@ duration_minutes: 10 - Depends on how deep one goes on each slide
 
 ---
 
-![bg cover](../../../img/DataPLANT_BigPicture_seq1.png)
+![bg cover](./../../../img/DataPLANT_BigPicture_seq1.png)
 
 <!-- Here one could elaborate on the ARC structure as deeply as desired. In addition, Swate incl. ontology could be discussed here.-->
 
@@ -65,7 +65,7 @@ duration_minutes: 10 - Depends on how deep one goes on each slide
 
 ---
 
-![bg cover](../../../img/DataPLANT_BigPicture_seq2.png)
+![bg cover](./../../../img/DataPLANT_BigPicture_seq2.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/BigPicture_ARC_DataPLANT-1Storage-and-BackUp.md -->
@@ -73,7 +73,7 @@ duration_minutes: 10 - Depends on how deep one goes on each slide
 
 ---
 
-![bg cover](../../../img/DataPLANT_BigPicture_seq3.png)
+![bg cover](./../../../img/DataPLANT_BigPicture_seq3.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/BigPicture_ARC_DataPLANT-2Versioning.md -->
@@ -81,7 +81,7 @@ duration_minutes: 10 - Depends on how deep one goes on each slide
 
 ---
 
-![bg cover](../../../img/DataPLANT_BigPicture_seq4.png)
+![bg cover](./../../../img/DataPLANT_BigPicture_seq4.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/BigPicture_ARC_DataPLANT-3CollaborationAndAccessManagement.md -->
@@ -89,7 +89,7 @@ duration_minutes: 10 - Depends on how deep one goes on each slide
 
 ---
 
-![bg cover](../../../img/DataPLANT_BigPicture_seq5.png)
+![bg cover](./../../../img/DataPLANT_BigPicture_seq5.png)
 
 <!-- Here one could address repositories in general, but also ROC, Galaxy or Invenio.-->
 
@@ -100,7 +100,7 @@ duration_minutes: 10 - Depends on how deep one goes on each slide
 
 ---
 
-![bg cover](../../../img/DataPLANT_BigPicture_seq6.png)
+![bg cover](./../../../img/DataPLANT_BigPicture_seq6.png)
 
 
 <!-- Source to slide(s) -->
@@ -109,7 +109,7 @@ duration_minutes: 10 - Depends on how deep one goes on each slide
 
 ---
 
-![bg cover](../../../img/DataPLANT_BigPicture_seq7.png)
+![bg cover](./../../../img/DataPLANT_BigPicture_seq7.png)
 
 
 <!-- Source to slide(s) -->
@@ -118,7 +118,7 @@ duration_minutes: 10 - Depends on how deep one goes on each slide
 
 ---
 
-![bg cover](../../../img/DataPLANT_BigPicture_seq8.png)
+![bg cover](./../../../img/DataPLANT_BigPicture_seq8.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/BigPicture_ARC_DataPLANT.md -->

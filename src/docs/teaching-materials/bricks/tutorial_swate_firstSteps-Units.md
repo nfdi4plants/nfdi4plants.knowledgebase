@@ -14,4 +14,4 @@ title: tutorial_swate_firstSteps-Units
 
 If you want to add a building block with a unit, check box (C) and use search field (D) to look for a fitting unit term, e.g. degree Celsius as unit for Parameter \[temperature\].
 
-![w:600](../../img/Swate-AddBuildingBlock-Exp.jpg)
+![w:600](./../../img/Swate-AddBuildingBlock-Exp.jpg)

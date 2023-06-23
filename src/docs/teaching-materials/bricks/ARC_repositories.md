@@ -11,4 +11,4 @@ title: ARC_repositories
 
 <br>
 
-![w:800](../../img/ARC_repositories.png)
+![w:800](./../../img/ARC_repositories.png)

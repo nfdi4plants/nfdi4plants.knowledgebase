@@ -10,4 +10,4 @@ title: Swate-templates04-import
 - DataPLANT curated
 - Community templates
 
-![bg right w:450](../../img/Swate_Templates.svg)
+![bg right w:450](./../../img/Swate_Templates.svg)

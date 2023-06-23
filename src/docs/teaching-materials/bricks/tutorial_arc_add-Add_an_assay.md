@@ -15,7 +15,7 @@ title: tutorial_arc_add-Add_an_assay
 Add an isa.assay.xlsx workbook including an identifier to your ARC with
 
 ```bash
-arc a add -s QuickStartStudy -a QuickStartAssay
+arc assay add -s QuickStartStudy -a QuickStartAssay
 ```
 
 > Note: An assay must be linked to a study. If a study does not exist, it will be created automatically in this step.
