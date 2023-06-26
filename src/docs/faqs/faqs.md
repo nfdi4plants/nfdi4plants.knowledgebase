@@ -13,7 +13,9 @@ article_status: published
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
 Is it necessary to fill in the empty fields in the investigation-file manually? 
 </summary>
+
 No. Although it is possible to fill in the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
+
 </details>
 <br>
 
@@ -34,6 +36,7 @@ No. Although it is possible to fill out the workbook manually, we recommend usin
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
 Where in the ARC can I store "external" data? 
 </summary>
+
 Research projects rarely start out of the blue. Rather every project builds on previous findings and published datasets.
 To properly re-use and reference such a dataset, we recommend to add a `study` to your ARC. Every study by default comes with four parts: 
 
