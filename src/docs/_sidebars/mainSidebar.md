@@ -91,6 +91,11 @@
 ## [Share your ARC](/docs/guides/index-ShareYourARC.html)
 ### [Register at the DataHUB](/docs/guides/datahub_register.html)
 ### [Invite collaborators to your ARC](/docs/guides/datahub_InviteCollaborators.html)
+
+## [Working With Your ARC](/docs/guides/index-WorkingWithYourARC.html)
+### [Syncing Recommendations](/docs/guides/arc_SyncingRecommendations.html)
+
+
 ## [Contribute](/docs/guides/index-Contribute.html)
 ### [Swate Templates](/docs/guides/swate_template-contribution.html)
 ### [Knowledge Base](/docs/CONTRIBUTING.html)
