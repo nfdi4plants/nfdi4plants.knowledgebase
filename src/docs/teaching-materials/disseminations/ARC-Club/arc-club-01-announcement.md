@@ -62,11 +62,6 @@ You do not talk about **ARC Club**
 - There is no complete ARC
 - The only bad ARCs are those that don't exist yet.
 
-## The Game
-
-- More ARCs 
-
-
 ## The Setting
 
 - Good internet connection
@@ -114,7 +109,6 @@ Evening | *tbd*
 </div>
 
 
-
 ## Preparation
 
 - DataHUB user accounts https://register.nfdi4plants.org/
@@ -147,11 +141,11 @@ Evening | *tbd*
 
 ## perspective
 
-- This is just a start.
-- appreciate change
+- This is just a start
+- Appreciate change
+- 
 
-
-## Volunteers (10 - 15)
+## Volunteers
 
 Coders, data handlers, data users, ARC early adopters, long-term Weberlab-associated
 
@@ -185,4 +179,70 @@ Coders, data handlers, data users, ARC early adopters, long-term Weberlab-associ
 ## Dates
 
 August 16/17 or August 17/18
+
+
+
+
+---
+---
+
+# Part 0: Check-in
+
+## Part 0: Check-in
+
+- Registration
+  - Sign-in
+  - Member in group [HHU Plant Biochemistry](https://git.nfdi4plants.org/hhu-plant-biochemistry)
+- Installation
+  - Git
+  - Git config
+  - ARC Commander
+  - Swate
+- Chat / channel
+  - Notes
+  - Project List
+
+
+# Part 2: ARCing
+
+
+## Step 0: Assign yourself to the project
+
+## Step 1: Collect / derive as much info about the investigation as possible. <!-- fit -->
+
+
+**MUST** haves
+
+```yaml
+Investigation Identifier
+Investigation Title
+...
+Investigation Publication Status
+...
+Investigation Person Last Name
+Investigation Person First Name
+
+
+```
+
+:bulb: This and more investigation-level info can be collected in the ARC's `isa.investigation.xlsx`
+
+
+## Step 2: Create and share the ARC
+
+```bash
+arc init
+arc sync -f -r https://git.nfdi4plants.org/hhu-plant-biochemistry/<InvestigationID>
+```
+
+:warning: 
+
+
+## Step 3: Copy data
+
+:warning: Do not **move** data from original source
+
+```
+scp 
+```
 
