@@ -17,6 +17,9 @@ title: ARC Club
 
 # The ARC Club
 
+<style scoped>section {background: none; background-color: white;}</style>
+<!-- _paginate: false -->
+
 a two-day adventure to prepare your lab for the ARC universe
 
 
@@ -72,18 +75,25 @@ DataHUB: https://git.nfdi4plants.org/
 ![w:500](./../../../img/User_Challenges_002.svg)
 
 
+## The ARC Club &ndash; Setting
+
+- Good internet connection
+- Isolated from lab // office // daily duties
+- Access to the data to be ARCified
+(file share, hard disks)
+- Agile, communicative, collaborative, positive
+- Technical *ad-hoc* support by DataPLANT
+
+![bg right:40% w:450px](./images/ARCClub.drawio.svg)
+
 
 ## The ARC Club &ndash; Goals
 
 - Move existing datasets into ARCs
 - Share them via the DataHUB
-- Data ingest
 - First few steps into ARCs
 - Data users can pick them up from there
 
-<br>
-
-  :rocket: Let's get started, the rest is easy :rocket:
 
 <!--  TODO -->
 
@@ -103,51 +113,9 @@ You do not talk about **ARC Club**
 - There is no complete ARC
 - The only bad ARCs are those that don't exist yet.
 
-## Setting
+<br>
 
-- Good internet connection
-- Isolated from lab // office // daily duties
-- Access to the data to be ARCified (file share, hard disks)
-- Agile, communicative, collaborative, positive
-
-
-## Schedule
-
-<style scoped>
-.columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 50px;
-    margin-left: 10px;
-}
-</style>
-
-<div class="columns">
-<div class="columns-left">
-
-### Day 1
-
-Time | Content
---- | ---
-Morning | - Tech-check (Installation) <br> - Intro ARC, ARC Commander & DataHUB <br> - hands-on with dummy data
-Lunch | *tbd*
-Afternoon | - Discuss / assign projects <br> - Start creating ARCs
-Evening | *tbd*
-
-</div>
-<div class="columns-right">
-
-### Day 2
-
-Time | Content
---- | ---
-Morning | - Present project status <br> - Intro Swate <br> - hands-on with dummy data
-Lunch | *tbd*
-Afternoon | - Discuss / assign projects <br> - Start creating ARCs
-Evening | *tbd*
-
-</div>
-</div>
+  :rocket: Let's get started, the rest is easy :rocket:
 
 
 ## Preparation
@@ -160,31 +128,62 @@ Evening | *tbd*
 - List of projects to be ARCified
   - @Nicole, @Urte, @Dominik
 
-
-## "easy" catches
-
-- published data
-- why even ARC them?
-
-
-## more challenging ARCs
-
-- (unpublished) left-overs of colleagues who have since moved
-
-
-## Your motivation
+## Why you want to join the **ARC Club**
 
 - You've needed data before, now is your chance to make data available
 - Your contribution to the project / ARC will be visible
-- Free food :pizza:
-- Free drinks :beers:
+
+## Why you want to join the **ARC Club**
+
+- You've needed data before, now is your chance to make data available
+- Your contribution to the ARC will be visible
+- Food :pizza:
+- Drinks :beers:
 - After-ARCathon Party 🥳 
 
-## perspective
+## Rough Schedule
 
-- This is just a start
-- Appreciate change
-- 
+<style scoped>
+.columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px;
+    margin-left: 10px;
+}
+table {
+  height: 350px;
+  font-size: 20px;
+}
+</style>
+
+<div class="columns">
+<div>
+
+### Day 1
+
+Time | Content
+--- | ---
+Morning | - Tech-check (Installation) <br> - Intro ARC, ARC Commander & DataHUB <br> - hands-on with dummy data
+Lunch | *tbd* :hamburger:
+Afternoon | - Discuss / assign projects <br> - Start creating ARCs
+Evening | *tbd* :tropical_drink:
+
+</div>
+
+<div>
+
+### Day 2
+
+Time | Content
+--- | ---
+Morning | - Present project status <br> - Intro Swate <br> - hands-on with dummy data
+Lunch | *tbd* :pizza: 
+Afternoon | - Annotate experimental data <br> - Start creating ARCs
+Evening | *tbd* :beers:
+
+</div>
+</div>
+
 
 ## Volunteers
 
@@ -213,7 +212,7 @@ Coders, data handlers, data users, ARC early adopters, long-term Weberlab-associ
 - Urte
 - Franzi K.
 - Dominik
-- ...
+- ...`<your Name>`
 </div>
 </div>
 
@@ -222,3 +221,27 @@ Coders, data handlers, data users, ARC early adopters, long-term Weberlab-associ
 August 16/17 or August 17/18
 
 
+
+
+
+
+
+<!-- 
+## "easy" catches
+
+- published data
+- why even ARC them?
+
+
+## more challenging ARCs
+
+- (unpublished) left-overs of colleagues who have since moved
+
+
+
+## perspective
+
+- This is just a start
+- Appreciate change
+
+ -->
