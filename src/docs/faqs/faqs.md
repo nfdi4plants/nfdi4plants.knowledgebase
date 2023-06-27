@@ -66,6 +66,15 @@ Avoid using spaces in the identifier. Use underscores and capital letters instea
 </details>
 
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
+How often should I sync my ARC?
+</summary>
+We would not want to recommend a fixed time interval (once every hour / day / week) for how often you ideally sync the ARC. In general, the more you work with your ARC, the more you add or update, annotate or analyze data, the more you will want to make sure these changes are saved. Consider the syncing as a way to backup your project's progress as well as an "undo button".
+
+:bulb: For more details, check out the [Syncing Recommendations](./../guides/arc_SyncingRecommendations.html)
+
+</details>
+
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
 How to retrieve a valid access token?
 </summary>
 Please follow the short instructions below.  
