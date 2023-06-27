@@ -19,50 +19,91 @@ title: ARC Club
 
 a two-day adventure to prepare your lab for the ARC universe
 
-## Annotated Research Context (ARC)
 
-<!-- ![width:950](./../../../img/ARC_fillWithData_seq1.png) -->
+# Annotated Research Context (ARC)
 
-![w:700](./../../../img/ARC.jpg)
-<!-- ![w:600](./../../../img/ARC_IllustratedFolderStructure.jpg) -->
+![width:950](./../../../img/ARC_DataCentricIntegration_img1.png)
 
 
-## The ARC &ndash; a package for your research data
+# The ARC &ndash; a package for your research data
 
 ![width:950](./../../../img/ARC_fillWithData_seq8.png)
 
 
-## The DataHUB &ndash; a place to share your ARCs
+# The DataHUB &ndash; a place to share your ARCs
+
+<style scoped>
+
+section {
+  background-image: url('./images/DataHUB-icon-placeholder.drawio.svg');
+  background-repeat: no-repeat;  
+  background-size: 10%;
+  background-position: 96% 5%;
+  ; 
+}
+
+</style>
 
 ![](./../../../img/DataHUB_LandingPage.png)
 
  <!-- <iframe src="https://git.nfdi4plants.org/explore" width="1100" height="400"></iframe> -->
 
-## The goal
+DataHUB: https://git.nfdi4plants.org/
 
+
+
+## Status quo: Institute FileShare
+
+![w:900](images/InsituteFileShare01.drawio.svg)
+
+[smb://weberdata.ad.hhu.de/agweber/ht_data/](https://webdav-linux.hhu.de/metdata/agweber/ht_data/)
+
+## Moving from FileShare to DataHUB
+
+![w:900](images/InsituteFileShare02toDataHUB.drawio.svg)
+
+## Moving from FileShare to DataHUB &ndash; *via* ARCs
+
+![w:900](images/InsituteFileShare03toDataHUBviaARC.drawio.svg)
+
+
+## There's a tiny burden
+
+![w:500](./../../../img/User_Challenges_002.svg)
+
+
+
+## The ARC Club &ndash; Goals
+
+- Move existing datasets into ARCs
+- Share them via the DataHUB
 - Data ingest
-- Only the first few steps into ARCs
+- First few steps into ARCs
+- Data users can pick them up from there
 
+<br>
+
+  :rocket: Let's get started, the rest is easy :rocket:
 
 <!--  TODO -->
 
-Draw image: lift project over the line: below / above : with / without ARC.
+<!-- Draw image: lift project over the line: below / above : with / without ARC.
 Above line => Autobahn / Rocket / project liftin off (into a good future)
 
-Starting point
+Starting point -->
 
 
-## The Rules
+## The ARC Club &ndash; Rules
 
 You do not talk about **ARC Club**
 
-## The Rules: perfect is the enemy of good
+## Rules: perfect is the enemy of good
 
 - There is no perfect ARC
 - There is no complete ARC
 - The only bad ARCs are those that don't exist yet.
 
-## The Setting
+## Setting
 
 - Good internet connection
 - Isolated from lab // office // daily duties
@@ -126,7 +167,7 @@ Evening | *tbd*
 - why even ARC them?
 
 
-## more challanging ARCs
+## more challenging ARCs
 
 - (unpublished) left-overs of colleagues who have since moved
 
@@ -180,69 +221,4 @@ Coders, data handlers, data users, ARC early adopters, long-term Weberlab-associ
 
 August 16/17 or August 17/18
 
-
-
-
----
----
-
-# Part 0: Check-in
-
-## Part 0: Check-in
-
-- Registration
-  - Sign-in
-  - Member in group [HHU Plant Biochemistry](https://git.nfdi4plants.org/hhu-plant-biochemistry)
-- Installation
-  - Git
-  - Git config
-  - ARC Commander
-  - Swate
-- Chat / channel
-  - Notes
-  - Project List
-
-
-# Part 2: ARCing
-
-
-## Step 0: Assign yourself to the project
-
-## Step 1: Collect / derive as much info about the investigation as possible. <!-- fit -->
-
-
-**MUST** haves
-
-```yaml
-Investigation Identifier
-Investigation Title
-...
-Investigation Publication Status
-...
-Investigation Person Last Name
-Investigation Person First Name
-
-
-```
-
-:bulb: This and more investigation-level info can be collected in the ARC's `isa.investigation.xlsx`
-
-
-## Step 2: Create and share the ARC
-
-```bash
-arc init
-arc sync -f -r https://git.nfdi4plants.org/hhu-plant-biochemistry/<InvestigationID>
-```
-
-:warning: 
-
-
-## Step 3: Copy data
-
-:warning: Do not **move** data from original source
-
-```
-scp 
-```
 
