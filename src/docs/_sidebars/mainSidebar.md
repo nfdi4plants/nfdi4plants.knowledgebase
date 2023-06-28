@@ -94,6 +94,7 @@
 
 ## [Working With Your ARC](/docs/guides/index-WorkingWithYourARC.html)
 ### [Syncing Recommendations](/docs/guides/arc_SyncingRecommendations.html)
+### [Keep files from syncing to the DataHUB](/docs/guides/arc_gitignore.html)
 
 
 ## [Contribute](/docs/guides/index-Contribute.html)
