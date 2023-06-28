@@ -13,7 +13,7 @@ add sidebar: _sidebars/mainSidebar.md
 
 ## About this guide
 
-In this guide we show you how to keep files from syncing to the DataHUB
+In this guide we show you how to keep files from syncing to the DataHUB. This can help to keep large intermediate, sensitive or unpublished data from uploading to the DataHUB. 
 
 <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
@@ -32,12 +32,25 @@ In this guide we show you how to keep files from syncing to the DataHUB
 :ballot_box_with_check: Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via personal access token
 
 
-## The .gitignore file
+## The `.gitignore` file
 
-Files and paths listed in the `.gitignore` in the root of your ARC will be left out of the ARC's version control system. 
+Every ARC comes with a special file called `.gitignore`, that resides in the root of your ARC.
+
+:bulb: By default, this file is hidden from your File Explorer ([Windows](https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5#WindowsVersion=Windows_11)) or Finder ([macOS](https://nordlocker.com/blog/how-to-show-hidden-files-mac/)). 
+
+Files and folders listed in your ARC's `.gitignore` will be *ignored* by the ARC's version control system. That means changes to those files will not be tracked by the ARC Commander nor will the files be synced to the DataHUB. 
+
+:bulb: Since files added to `.gitignore` on one machine will not be synced to the DataHU, they will also not automatically become available on another machine, where you work with your ARC.
+
+:warning: If a file in your ARC was already synced to the DataHUB, adding it to `.gitignore` will only keep it from future syncs, it will however not remove the existing file. 
 
 
-use of gitignore 
-e.g. to keep sensible, unpublished data from sharing
-note: files added to gitignore on one machine will neither be synced to the DataHUB nor tracked by version control
-note: if a file was already in the DataHUB, using gitignore will only keep it from future syncs and not remove it
+## Adding files to `.gitignore`
+
+1. Open your ARC
+2. Add a new file `my-personal-notes.txt`
+3. Open `.gitignore` in a text editor.
+   1. Add a new line `my-personal-notes.txt` at the end of the file
+   2. Save and close the file.
+4. Sync the ARC via `arc sync`
+5. Check your ARC in the DataHUB, to see that the file `my-personal-notes.txt` does not exist there.
