@@ -17,11 +17,16 @@ title: ARC Club
 
 # The ARC Club
 
-<style scoped>section {background: none; background-color: white;}</style>
+<!-- <style scoped>section {background: none; background-color: white;}</style> -->
 <!-- _paginate: false -->
 
 a two-day adventure to prepare your lab for the ARC universe
 
+<br>
+<br>
+
+Dominik Brilhaus &ndash; CEPLAS Data Science 
+June 28th, 2023
 
 # Annotated Research Context (ARC)
 
