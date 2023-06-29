@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - Knowledge Base Contribution Guide
+      DataPLANT documentation - Contribute slide decks
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -404,296 +404,94 @@
         </a>
       </nfdi-sidebar-eleneo>
       <h1 class="front-header">
-        Knowledge Base Contribution Guide
+        Contribute slide decks
       </h1>
       <i class="help">
-        last updated at 2022-12-14
+        last updated at 2023-06-29
       </i>
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
-<p>Your contribution to the DataPLANT Knowledge Base is highly appreciated. This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones. For changes and suggestions, feel free to open a GitHub issue or pull request.</p>
+<p>This guide tries to describe the current way to prepare and contribute slide decks via the knowledge base.</p>
+<p>🚧 The mechanism to prepare and render slide decks in the knowledge base is currently under construction. So this guide is incomplete.</p>
 <a href="./index.html">
   <span class="badge-category">User</span><span class="badge-selected" id="badge-datasteward">Data Steward</span>  
-  <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
+  <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Tutorial</span>
 </a>
 <br>
 <br>
 <nfdi-h2 id="before-we-start">Before we start</nfdi-h2>
-<style scoped>
-#before-start ul{
-    list-style-type: none;
-    margin-left: 0px;
-    padding-left: 10;
-}
-</style>
 <div id="before-start">
-<p>Before contributing to the knowledge base, you should have</p>
 <ul>
-<li><p>☑️ a <a href="https://github.com">GitHub</a> account and some routine with GitHub</p>
-</li>
-<li><p>☑️ an up-to-date version of <a href="https://nodejs.org/">Node.JS</a> installed</p>
-</li>
-<li><p>☑️ an up-to-date version of <a href="https://dotnet.microsoft.com/en-us/download">.NET</a> installed</p>
-</li>
-<li><p>💡 We recommend working with <a href="https://code.visualstudio.com/download">VS Code</a>, with extensions for easy markdown editing and spell check.</p>
-</li>
-<li><p>💡 For a general introduction to writing markdown, see the <a href="./guides/tutorial_IntroductionToMarkdown.html">markdown tutorial</a> and references therein.</p>
-</li>
-<li><p>🚀 Feel free to contact us for Data Steward support.</p>
-</li>
+<li>☑️ Please install <a href="https://code.visualstudio.com/download">VS Code</a></li>
+<li>☑️ Please install the extension <a href="https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode">Marp for VS Code</a></li>
+<li>💡 For a general introduction to writing markdown, see the <a href="./tutorial_IntroductionToMarkdown.html">markdown tutorial</a> and references therein.</li>
+<li>💡 Check out <a href="https://marp.app">https://marp.app</a> for official docs and tutorials</li>
 </ul>
 </div>
 <br>
-<nfdi-h2 id="introduction">Introduction</nfdi-h2>
-<p>The DataPLANT Knowledge Base is built on <a href="https://nfdi4plants.github.io/web-components-docs/">nfdi-web-components</a> which fit <strong>markdown</strong> content into this &quot;framework&quot;.</p>
-<nfdi-h2 id="github-routines">GitHub Routines</nfdi-h2>
-<p>Please follow these steps to fork the knowledge base repository and clone your fork to your computer.</p>
+<nfdi-h2 id="creating-a-marp-slide-decks">Creating a marp slide decks</nfdi-h2>
+<p>Creation of slide decks is based on <a href="https://marp.app">marp</a></p>
 <ol>
-<li><p><a href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/fork">Fork</a> the Knowledge Base Git repository.</p>
-<ul>
-<li>This creates a copy of the Knowledge Base repository in your own GitHub account.</li>
-<li>In the top left, you will see that the repository is associated with your account (1) and forked from the main repository (2).</li>
-<li>You can either directly add or edit content using GitHub or clone (3) your repository to work on it locally.</li>
-<li>Be aware that your fork is not automatically updated, if the main repository updates. Make sure to update your fork regularly (especially before creating new content) by clicking &quot;Fetch upstream&quot; (4) in the top-right corner of your repository.</li>
-<li>If you cloned your repository locally, you also have to update the local clone (via &quot;git pull&quot;).</li>
-</ul>
-</li>
+<li>Create a new markdown file <code>test-slides.md</code></li>
+<li>Add <code>marp: true</code> to the YAML frontmatter of the file.</li>
+<li>Add content to the file just as you would do for a markdown text document.</li>
+<li>Add <code>---</code> (horizontal lines) as slide breaks</li>
 </ol>
-<p><img src="./img/contribution_git.png" alt="Git Routine" /></p>
-<ol start="2">
-<li><p>You can work and make any changes in your own repository and commit + push them to your fork.</p>
-</li>
-<li><p>Once you want to submit those changes to the main repository, you can open a &quot;pull request&quot; by clicking &quot;Contribute&quot; (5) in the top-right corner.</p>
-<blockquote>
-<p>Remember to &quot;Fetch upstream&quot; (4), if your fork is not up-to-date with the main repository.</p>
-</blockquote>
-</li>
-<li><p>If edited or added existing content, please assign the original author during your pull-request to review your changes.</p>
-</li>
-</ol>
+<p>🚧 Repo file structure and where to store the slide deck is under construction</p>
+<nfdi-h2 id="view-export-result">View / export result:</nfdi-h2>
 <ul>
-<li>The github user name of the original author is stored in the yaml block on top under <code>author_github</code></li>
-<li>During the pull-request mention the author via <code>@&lt;author_github&gt;</code>.</li>
+<li>preview via VS Code preview (cmd + k, v)</li>
+<li>export via VS Code command <code>Marp: Export Slide Deck</code> (to html or PDF) or right-click the Marp symbol in the top-right corner while in edit mode of the markdown file</li>
 </ul>
-<blockquote>
-<p>⚠️ This is not a full-fledged GitHub tutorial. Please refer to available tutorials online or contact the Knowledge Base curators.</p>
-</blockquote>
-<nfdi-h2 id="local-testing">Local testing</nfdi-h2>
-<p>The following instructions allow you to test and see how your changes come into play and check whether everything renders correctly.</p>
-<blockquote>
-<p>⚠️ It's highly recommended to <em>frequently</em> check your changes locally. Please <strong>do not</strong> produce and submit a lot of content without prior local testing.</p>
-</blockquote>
-<nfdi-h3 id="setup">Setup</nfdi-h3>
-<ol>
-<li>Download the repo.</li>
-<li>Run <code>dotnet tool restore</code> in root directory.</li>
-<li>Run <code>dotnet paket install</code> in root directory.</li>
-<li>Run <code>npm install</code> in root directory.</li>
-</ol>
-<p>💡 This needs to be done only once after cloning the repo.</p>
-<nfdi-h3 id="run">Run</nfdi-h3>
-<ol>
-<li>Run <code>npm run fornax</code>.</li>
-<li>Open the page in your browser <a href="http://127.0.0.1:8080/">http://127.0.0.1:8080/</a>.</li>
-</ol>
-<nfdi-h3 id="routines">Routines</nfdi-h3>
-<nfdi-h4 id="update-dependencies">Update Dependencies</nfdi-h4>
-<p>This will update the npm package <a href="https://github.com/nfdi4plants/web-components"><code>nfdi4plants/web-components</code></a> to latest, as well as update the nuget dependency <a href="https://github.com/nfdi4plants/Nfdi4Plants.Fornax/tree/main"><code>Nfdi4Plants.Fornax</code></a> to latest. Then it will bundle all npm (javascript) dependencies to a single bundle.js file with rollup.</p>
-<nfdi-code class="language-bash">npm run updatecomponents
+<nfdi-h2 id="speaker-notes">Speaker notes</nfdi-h2>
+<p>Can be added as markdown comments.</p>
+<nfdi-code class="language-md">&lt;!-- markdown notes -->
 </nfdi-code>
-<nfdi-h4 id="bundle-npm-dependencies">Bundle Npm Dependencies</nfdi-h4>
-<p>This is part of the execution chain of <code>npm run updatecomponents</code></p>
-<nfdi-code class="language-bash">npm run bundle
+<p>These will appear in presenter mode (html) or in PDF (if <code>&quot;markdown.marp.pdf.noteAnnotations&quot;: true</code> is added to the <code>.vscode/settings.json</code>)</p>
+<nfdi-h2 id="presentation-mode">Presentation mode</nfdi-h2>
+<ul>
+<li>export to html (opens in browser) and hit the presentation icon</li>
+</ul>
+<nfdi-h2 id="default-slide-size">Default slide size</nfdi-h2>
+<p>1280 x 720</p>
+<nfdi-h2 id="pro">Pro</nfdi-h2>
+<ul>
+<li>easy to adapt (from existing md content)</li>
+<li>customizable (requires css and / or html skills)</li>
+<li>can directly render draw.io images</li>
+</ul>
+<nfdi-h2 id="con">Con</nfdi-h2>
+<ul>
+<li>theme needs to be linked (also) via .vscode/settings.json</li>
+</ul>
+<nfdi-h2 id="tips">Tips</nfdi-h2>
+<p><a href="https://www.hashbangcode.com/article/seven-tips-getting-most-out-marp">https://www.hashbangcode.com/article/seven-tips-getting-most-out-marp</a></p>
+<nfdi-h2 id="themes">Themes</nfdi-h2>
+<p>Custom themes based on CSS are currently stored in <a href="./../teaching-materials/style/">src/docs/teaching-materials/style/</a></p>
+<nfdi-h2 id="vs-code-marp-settings">VS Code Marp Settings</nfdi-h2>
+<p>In order to work with the VS Code marp extension (i.e. preview and export slides to pdf, html, etc.), you might want to add the following to the gitignored VS code settings (<code>.vscode/settings.json</code>) of this repo. If the file does not exist, please create it.</p>
+<nfdi-code>{
+  "markdown.marp.themes": [
+    "src/docs/teaching-materials/style/dataplant_marp-theme.css",
+    "src/docs/teaching-materials/style/dataplant_marp-theme-CMR.css",
+    "src/docs/teaching-materials/style/dataplant_marp-theme-Intro.css",
+    "src/docs/teaching-materials/style/marp-theme_dataplant-ceplas-ccby.css"
+  ],
+  "markdown.marp.enableHtml": true,
+  "markdown.marp.exportType": "html",
+  "markdown.marp.pdf.noteAnnotations": false
+}
 </nfdi-code>
-<nfdi-h4 id="update-searchbar-index">Update Searchbar Index</nfdi-h4>
-<p>Index created html files. Creates <code>src/_public/pagefind</code> folder. <strong>MUST</strong> be used after running <code>npm run fornax</code> at least once. Otherwise there will be no <code>.html</code> files to index.</p>
-<nfdi-code class="language-bash">npm run index
-</nfdi-code>
-<p>Same as <code>npm run index</code> but starts local server to test search bar. Currently the only way to test search bar locally, <strong>but will not</strong> allow to track changes in markdown files like <code>npm run fornax</code> does (If you want to combine both a PR would be more than welcome).</p>
-<nfdi-code class="language-bash">npm run indexserve
-</nfdi-code>
-<hr />
-<nfdi-h2 id="authoring-content">Authoring Content</nfdi-h2>
-<p>Read more about authoring content in the fornax section of the nfdi4plants web components docs <a href="https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax">here</a></p>
-<p>⚠️ Please make sure to especially follow the markdown syntax section.</p>
-<p>💡 The following sections refer to contents with <code>layout: docs</code> as used for articles and guides.</p>
-<p>🚧 Contribution of slides (i.e. in folder <code>src/docs/teaching-materials/</code> and sidebar section &quot;Teaching Materials&quot;) is currently under construction. See the additional guide on <a href="./guides/contribute_slide-decks.html">slide deck</a>.</p>
-<nfdi-h3 id="knowledge-base-repo-structure">Knowledge Base repo structure</nfdi-h3>
+<nfdi-h2 id="debugging">Debugging</nfdi-h2>
 <ul>
-<li>The source to all content shown at the public website <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/">https://nfdi4plants.org/nfdi4plants.knowledgebase/</a> resides in the folder <code>src/docs</code></li>
-<li>All other files are mostly &quot;backend&quot;, help to render the content to html and can safely be ignored by most contributors</li>
-<li>The <code>src/docs</code> structure (as of June 29th, 2023) looks like this</li>
+<li>If images are not properly linked, marp cannot parse and render them in pdf or html.</li>
+<li>the VS Code extension will not throw a warning and just ouput an empty (figure-less) slide</li>
+<li>There's an easy way to find the missing / incorrect image links on the html version of your marp slides using your browser described here:</li>
 </ul>
-<nfdi-code>src/docs
-├── ArcCommanderManual
-├── CONTRIBUTING.md
-├── Home.md
-├── SwateManual
-├── _ignored
-├── _sidebars
-├── faqs
-│   └── faqs.md
-├── fundamentals
-│   ├── DataManagementPlan.md
-│   ├── DataPublications.md
-│   ├── ...
-├── guides
-│   ├── ARCUserJourney.md
-│   ├── BestPracticesForDataAnnotation.md
-│   ├── ...
-├── img
-├── implementation
-│   ├── AnnotatedResearchContext.md
-│   ├── AnnotationPatterns.md
-│   ├── ArcCommander.md
-│   ├── ...
-├── teaching-materials
-└── tutorials
-</nfdi-code>
-<p>💡 For easier findability we try to align the folder structure with how the content is presented in the sidebar of the public site. This is however not always feasible or sensible (for reasons).</p>
-<nfdi-h3 id="common-errors">Common Errors</nfdi-h3>
-<ul>
-<li>Missing metadata block</li>
-<li>Missing or false required (<code>MUST</code>) attribute in metadata block</li>
-<li>Using a layout in metadata block that does not exist</li>
-<li>Wrong links
-<ul>
-<li>to sidebar elements</li>
-<li>to images</li>
-</ul>
-</li>
-</ul>
-<nfdi-h3 id="markdown-to-html-rendering-rules">Markdown to HTML Rendering Rules</nfdi-h3>
-<p>Every markdown document with the YAML key <code>layout: docs</code> stored in <code>/nfdi4plants.knowledgebase/src/docs</code> or any subfolder
-(except <code>_ignored</code>) will be rendered to html and become publicly available once pushed to the main repository.</p>
-<nfdi-h3 id="ignored-content">Ignored Content</nfdi-h3>
-<ul>
-<li>Anything inside the folder <code>_ignored</code> will not be used to generate html pages.</li>
-<li>This folder is intended for ideas and drafts that
-<ul>
-<li>should not yet become available in the Knowledge Base</li>
-<li>should be under version control for discussion and reviewing</li>
-</ul>
-</li>
-</ul>
-<nfdi-h3 id="visible-or-hidden">Visible or Hidden</nfdi-h3>
-<p>Although most markdown content will be rendered and published, it will not prominently be visible to all visitors.
-It will only become visible in the sidebar once the article is linked in the respective sidebar
-(typically <code>add sidebar: _sidebars/mainSidebar.md</code>)</p>
-<hr />
-<nfdi-h2 id="content-design-principles">Content Design Principles</nfdi-h2>
-<nfdi-h3 id="references">References</nfdi-h3>
-<ul>
-<li><strong>Literature / information references:</strong> additional bibliography block below</li>
-<li><strong>External links (tools, sites, platforms):</strong> as hyper-link</li>
-<li><strong>Knowledge Base cross-references:</strong> relative path to *.md document, <strong>BUT</strong> replace the <code>.md</code> file extension
-with <code>.html</code>, as the markdown files are parsed to html.</li>
-</ul>
-<nfdi-h3 id="relative-paths">Relative Paths</nfdi-h3>
-<p>We SHOULD always try to use relative paths, as they are easier to maintain.
-Although useful, they need a bit more fine tuning, as there are several options.</p>
-<p>One of the major issues with relative paths is that during development the pages are accessed by <code>/</code>, for example <code>/docs/README.html</code>.
-Published they will be accessed by <code>/nfdi4plants.knowledgebase</code> (<code>/nfdi4plants.knowledgebase/docs/README.html</code>).
-In the following, some ideas are described on how to deal with this:</p>
-<ul>
-<li><strong>Basic relative paths:</strong> These will look like this: <code>[Test](/README.html)</code>.
-By starting with <code>/</code> we implicitly say &quot;start at host&quot;.
-So in development it will start with <code>http://127.0.0.1:8080/</code>, in production it will start with <code>https://nfdi4plants.github.io/</code>.
-Since in production we also need <code>https://nfdi4plants.org/nfdi4plants.knowledgebase/</code>, this type of relative paths can create issues! ⚠️</li>
-<li><strong>Relative paths in sidebar:</strong> The sidebars actually check if you are currently in <code>npm run fornax</code> mode. So you can use basic relative paths here.</li>
-</ul>
-<p>For example</p>
-<nfdi-code class="language-markdown">```Fundamentals
-# [Fundamentals](/docs/fundamentals/index.html)
-```!
-</nfdi-code>
-<p><code>/docs/fundamentals/index.html</code> will be parsed to <code>/nfdi4plants.knowledgebase/docs/fundamentals/index.html</code>.</p>
-<ul>
-<li><strong>Relative paths from current file:</strong> These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of &quot;Basic relative paths&quot;. Example: <code>[Test](./ResearchDataManagement.html)</code>. Starting with <code>./</code> translates to &quot;coming from the position of this file&quot;. We can even go up in the file hierarchy, like <code>[Test](./../docs/README.html)</code>. This translates to &quot;coming from the position of this file, go one folder higher and into the docs directory to find the <a href="./../docs/Home.html">Introduction</a> there.&quot;</li>
-</ul>
-<nfdi-h3 id="document-structure-and-format">Document structure and format</nfdi-h3>
-<p>Try to avoid deep structures by using no more than two headline levels, i.e.</p>
-<pre><code>```
-## Headline level 2
-### Headline level 3
-```</code></pre>
-<p>Headline level 1 is automatically generated from the article's <code>title: </code>.</p>
-<nfdi-h3 id="images-figures">Images / figures</nfdi-h3>
-<p>Images can be linked</p>
-<ol>
-<li>via simple markdown logic: <code>![name_of_image](path_to_image.png)</code></li>
-<li>via html: <code>&lt;img src=&quot;path_to_image.png&quot;&gt;</code></li>
-</ol>
-<p>💡 Please store images in <code>src/docs/img</code>.</p>
-<ul>
-<li>The folder <code>src/docs/img</code> holds image files (preferably *.svg, *.png) or the original source file (.pptx, .drawio.svg) used to create the image file(s)</li>
-<li>Avoid adding captions or links to figure files</li>
-<li>If powerpoint was used to create a figure
-<ul>
-<li>the pptx stored in <code>src/docs/img</code> is supposed to be a file of only a single slide or slide sequence (i.e. consecutive slides, where one image builds on the previous)</li>
-<li>the name of the resulting figure file (e.g. &quot;FAIRprinciples.png&quot;) MUST be aligned with the source file (e.g. &quot;FAIRprinciples.pptx&quot;)
-<ul>
-<li>a consecutive number is suffixed to images from slide sequences (e.g. &quot;FAIRprinciples_seq1.png&quot;, &quot;FAIRprinciples_seq2.png&quot;)</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<nfdi-h3 id="licensed-material">Licensed material</nfdi-h3>
-<ul>
-<li>Make sure you are allowed to add the content. If you reuse any content from other sources, make sure to reference the source and / or license, if applicable.</li>
-<li>In particular, when adding images that you did not create yourself, please clearly state this by
-<ol>
-<li>adding the source to the <a href="./img/_ImageIndex.html"><code>src/docs/img/_ImageIndex.md</code></a>,</li>
-<li>adding a link / license (however applicable) to the content (artilce, tutorial, slide deck, etc.) where you use the image, and</li>
-<li>reminding the knowledge base curators during your pull request.</li>
-</ol>
-</li>
-</ul>
-<hr />
-<nfdi-h2 id="file-name-requirements">File Name Requirements</nfdi-h2>
-<p>File names:</p>
-<ul>
-<li>MUST use the article's title for the filename, e.g.: DataManagementPlan.md → <code>title: Data Management Plan</code></li>
-<li>MUST NOT contain special characters</li>
-<li>MUST NOT contain spaces</li>
-<li>MUST use <a href="https://en.wikipedia.org/wiki/Snake_case">snake_case</a> (lower_case_with_underscores) OR <a href="https://techterms.com/definition/pascalcase">PascalCase</a> (UpperCase)</li>
-</ul>
-<blockquote>
-<p>⚠️ Changing file names (and paths) means changing URLs and can easily lead to dead links.</p>
-</blockquote>
-<nfdi-h2 id="avoiding-dead-links">Avoiding dead links</nfdi-h2>
-<p>Once in a while we (need to) restructure the <code>/nfdi4plants.knowledgebase/src/docs</code> folder a bit, which includes changes to file and folder names, i.e. producing dead links.
-In this case, the least we can do, is to keep the knowledge base itself intact:</p>
-<ol>
-<li>Carefully check <strong>all markdown documents</strong> for cross-links to the original file name (this can easily be done via e.g. VS Code).</li>
-<li>Remember to check for both file endings <code>.md</code> and <code>.html</code>.</li>
-<li>Replace with the new file name / path.</li>
-</ol>
-<p>This however does not help for articles, tutorials, etc. that have been shared with the community (via mail, in slide decks, etc.).
-In this case, please leave a markdown with the original file name and path and just fill it with the following</p>
-<nfdi-code class="language-markdown">---
-layout: docs
-date: 2023-06-07
-status: prevent-dead-link
-title: Sorry, this site moved...
----
-
-The site you are looking for was moved [here](./../path/to/new/file).
-</nfdi-code>
-<p>This is not the most beautiful solution as it clutters the knowledge base, but it helps against user frustration and should be done for frequently shared articles.
-Adding a date helps us clean up those files after a certain time interval.</p>
-<p>💡 If you're sharing content with the users, it might be best to only share the link to the knowledge base <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/">https://nfdi4plants.org/nfdi4plants.knowledgebase/</a>, rather than a concrete link to a tutorial (e.g. <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html">https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html</a>).</p>
-<nfdi-h3 id="addressing-readers">Addressing Readers</nfdi-h3>
-<p>We generally try to address users and readers directly.
-Use &quot;you can&quot;, not &quot;the user can&quot; or &quot;one can...&quot;</p>
-<nfdi-h3 id="language">Language</nfdi-h3>
-<p>British English</p>
-<blockquote>
-<p>Note: If you work with Visual Studio Code -
-Check out the extension &quot;Code Spell Checker&quot; <a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker</a>
-with British English (&quot;cSpell.language&quot;: &quot;en-GB&quot;) support.</p>
-</blockquote>
+<p><a href="https://github.com/marp-team/marp/discussions/257">https://github.com/marp-team/marp/discussions/257</a></p>
+<nfdi-h2 id="example-slide-deck">Example Slide deck</nfdi-h2>
+<p>Please check out the rendered <a href="./contribute_slide-decks-example.html">example slide deck</a>.
+And compare it to its <a href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/guides/contribute_slide-decks-example.md?plain=1">source markdown</a>.</p>
 
       <h3>
         DataPLANT Support
@@ -712,7 +510,7 @@ with British English (&quot;cSpell.language&quot;: &quot;en-GB&quot;) support.</
         </span>
       </div>
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/CONTRIBUTING.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/guides/contribute_slide-decks.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>
