@@ -68,6 +68,27 @@ kbd {
 }
 
 
+#badge-interim-left{
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 10px 0px 0px 10px;
+  border: solid 1px;
+  background-color:#C21F3A;    
+  border: solid 1px #2D3E50;
+  color:white;   
+}
+
+#badge-interim-right{
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 0px 10px 10px 0px;
+  border: solid 1px;
+  background-color:white;    
+  border: solid 1px #2D3E50;
+  color:#2D3E50;;   
+}
+
+
 /* Column design */
 
 .two-columns {

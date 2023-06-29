@@ -17,11 +17,16 @@ In this guide we elaborate recommendations on syncing your ARC via the [ARC Comm
 
 <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
+    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>    
 </a>
 
 <br>
 <br>
+
+
+<span id="badge-interim-left">Interim</span><span id="badge-interim-right">Solution</span><br>
+This guide presents an interim solution. We are working on a more user friendly implementation.
+
 
 ## Before we can start
 
