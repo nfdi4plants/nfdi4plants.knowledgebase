@@ -11,11 +11,14 @@ todo:
 
 ## About this guide
 
-Your contribution to the DataPLANT Knowledge Base is highly appreciated. This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones. For changes and suggestions, feel free to open an issue or to open a pull request.
-
-<span class="badge-category">User</span><span class="badge-selected" id="badge-datasteward">Data Steward</span>  <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
+Your contribution to the DataPLANT Knowledge Base is highly appreciated. This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones. For changes and suggestions, feel free to open a GitHub issue or pull request.
 
 
+<a href="./index.html">
+  <span class="badge-category">User</span><span class="badge-selected" id="badge-datasteward">Data Steward</span>  
+  <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
+</a>
+<br>
 <br>
 
 ## Before we start
@@ -35,26 +38,21 @@ Before contributing to the knowledge base, you should have
 - :ballot_box_with_check: a [GitHub](https://github.com) account and some routine with GitHub
 - :ballot_box_with_check: an up-to-date version of [Node.JS](https://nodejs.org/) installed
 - :ballot_box_with_check: an up-to-date version of [.NET](https://dotnet.microsoft.com/en-us/download) installed
+
 - :bulb: We recommend working with [VS Code](https://code.visualstudio.com/download), with extensions for easy markdown editing and spell check.
-- :bulb: Feel free to contact us for Data Steward support.
+- :bulb: For a general introduction to writing markdown, see the [markdown tutorial](./guides/tutorial_IntroductionToMarkdown.html) and references therein.
+- :rocket: Feel free to contact us for Data Steward support.
 
 </div>
+<br>
 
 ## Introduction
 
 The DataPLANT Knowledge Base is built on [nfdi-web-components](https://nfdi4plants.github.io/web-components-docs/) which fit **markdown** content into this "framework".
-For a general introduction to writing markdown, see: [Markdown tutorial](./guides/tutorial_IntroductionToMarkdown.html) and references therein.
-
-## Authoring Content
-
-Read more about authoring content in the fornax section of the nfdi4plants web components docs [here](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax)
-
-:warning: Please make sure to especially follow the markdown syntax section of the [nfdi4plants web components docs](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#markdown-syntax). 
-
-The content 
-
 
 ## GitHub Routines
+
+Please follow these steps to fork the knowledge base repository and clone your fork to your computer. 
 
 1. [Fork](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/fork) the Knowledge Base Git repository.
    
@@ -80,7 +78,7 @@ The content
 
 ## Local testing
 
-The following instructions allow you to test and see how your changes come into play and whether everything renders correctly.
+The following instructions allow you to test and see how your changes come into play and check whether everything renders correctly.
 
 > :warning: It's highly recommended to *frequently* check your changes locally. Please **do not** produce and submit a lot of content without prior local testing.
 
@@ -124,13 +122,34 @@ Index created html files. Creates `src/_public/pagefind` folder. **MUST** be use
 npm run index
 ```
 
-Same as `npm run index` but starts local server to test searchbar. Currently the only way to test searchbar locally, **but will not** allow to track changes in markdown files like `npm run fornax` does (If you want to combine both a PR would be more than welcome). 
+Same as `npm run index` but starts local server to test search bar. Currently the only way to test search bar locally, **but will not** allow to track changes in markdown files like `npm run fornax` does (If you want to combine both a PR would be more than welcome). 
 
 ```bash
 npm run indexserve
 ```
 
-## Common Errors
+---
+
+## Authoring Content
+
+Read more about authoring content in the fornax section of the nfdi4plants web components docs [here](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax)
+
+:warning: Please make sure to especially follow the markdown syntax section. 
+
+:bulb: Note that the following sections refer to contents with `layout: docs`
+
+### Knowledge Base repo structure
+
+- The source to all content shown at the public website https://nfdi4plants.org/nfdi4plants.knowledgebase/ resides in the folder `src/docs`.
+- All other files can safely be ignored by most contributors. 
+
+
+
+
+
+
+
+### Common Errors
 
 - Missing metadata block
 - Missing or false required (`MUST`) attribute in metadata block
@@ -139,9 +158,9 @@ npm run indexserve
   - to sidebar elements
   - to images
 
-## Markdown to HTML Rendering Rules
+### Markdown to HTML Rendering Rules
 
-Every markdown document stored in `/nfdi4plants.knowledgebase/src/docs` or any subfolder 
+Every markdown document with the YAML key `layout: docs` stored in `/nfdi4plants.knowledgebase/src/docs` or any subfolder 
 (except `_ignored`) will be rendered to html and become publicly available once pushed to the main repository.
 
 ### Ignored Content
@@ -156,6 +175,8 @@ Every markdown document stored in `/nfdi4plants.knowledgebase/src/docs` or any s
 Although most markdown content will be rendered and published, it will not prominently be visible to all visitors.
 It will only become visible in the sidebar once the article is linked in the respective sidebar 
 (typically `add sidebar: _sidebars/mainSidebar.md`)
+
+---
 
 ## Content Design Principles
 
@@ -189,7 +210,7 @@ Because in production we also need `https://nfdi4plants.github.io/nfdi4plants.kn
     
 - **Relative paths from current file:** These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". Example: `[Test](./ResearchDataManagement.html)`. Starting with `./` translates to "coming from the position of this file". We can even go up in the file hierarchy, like `[Test](./../docs/README.html)`. This translates to "coming from the position of this file, go one folder higher and into the docs directory to find the [Introduction](./../docs/Home.html) there."
 
-### Structure and Format
+### Document structure and format
 
 Try to avoid deep structures by using no more than two headline levels, i.e.
 
@@ -203,6 +224,8 @@ Headline level 1 is automatically generated from the article's `title: `.
 ### Images
 
 - simple markdown logic (not HTML): `![name_of_image](path_to_image.png)`
+
+---
 
 ## File Name Requirements
 
@@ -244,12 +267,12 @@ Adding a date helps us clean up those files after a certain time interval.
 
 :bulb: If you're sharing content with the users, it might be best to only share the link to the knowledge base https://nfdi4plants.org/nfdi4plants.knowledgebase/, rather than a concrete link to a tutorial (e.g. https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html).
 
-## Addressing Readers
+### Addressing Readers
 
 We generally try to address users and readers directly.
 Use "you can", not "the user can" or "one can..."
 
-## Language
+### Language
 
 British English
 
