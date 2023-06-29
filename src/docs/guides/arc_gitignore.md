@@ -24,6 +24,9 @@ In this guide we show you how to keep files from syncing to the DataHUB. This ca
 <br>
 <br>
 
+<span id="badge-interim-left">Interim</span><span id="badge-interim-right">Solution</span><br>
+This guide presents an interim solution. We are working on a more user friendly implementation.
+
 ## Before we can start
 
 :ballot_box_with_check: You have created an ARC before using the [ARC Commander](./../implementation/ArcCommander.html)  
@@ -36,7 +39,7 @@ In this guide we show you how to keep files from syncing to the DataHUB. This ca
 
 Every ARC comes with a special file called `.gitignore`, that resides in the root of your ARC. Files and folders listed in your ARC's `.gitignore` will be *ignored* by the ARC's version control system. That means changes to those files will not be tracked by the ARC Commander nor will the files be synced to the DataHUB.
 
-:bulb: If `.gitignore` does not exist in your ARC, you can simply create it using a text editor. 
+:bulb: If `.gitignore` does not exist in your ARC, you can simply create it in your ARC's root using a text editor. 
 
 :bulb: By default, this file is hidden from your File Explorer ([Windows](https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5#WindowsVersion=Windows_11)) or Finder ([macOS](https://nordlocker.com/blog/how-to-show-hidden-files-mac/)). 
 
@@ -48,8 +51,8 @@ Every ARC comes with a special file called `.gitignore`, that resides in the roo
 
 ## Adding files to .gitignore
 
-1. Open your ARC
-2. Add a new file `my-personal-notes.txt` or folder `intermediate-results`
+1. Open your ARC in your File Explorer (Windows) or Finder (macOS)
+2. Add a new file `my-personal-notes.txt` or folder `intermediate-results` to the ARC 
 3. Open `.gitignore` in a text editor.
    1. Add a new line `my-personal-notes.txt` or `intermediate-results/` at the end of the file
    2. Save and close the file.
