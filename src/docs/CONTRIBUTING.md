@@ -34,6 +34,7 @@ Before contributing to the knowledge base, you should have
 
 - :ballot_box_with_check: a [GitHub](https://github.com) account and some routine with GitHub
 - :ballot_box_with_check: an up-to-date version of [Node.JS](https://nodejs.org/) installed
+- :ballot_box_with_check: an up-to-date version of [.NET](https://dotnet.microsoft.com/en-us/download) installed
 - :bulb: We recommend working with [VS Code](https://code.visualstudio.com/download), with extensions for easy markdown editing and spell check.
 - :bulb: Feel free to contact us for Data Steward support.
 
@@ -49,6 +50,9 @@ For a general introduction to writing markdown, see: [Markdown tutorial](./guide
 Read more about authoring content in the fornax section of the nfdi4plants web components docs [here](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax)
 
 :warning: Please make sure to especially follow the markdown syntax section of the [nfdi4plants web components docs](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#markdown-syntax). 
+
+The content 
+
 
 ## GitHub Routines
 
@@ -190,11 +194,11 @@ Because in production we also need `https://nfdi4plants.github.io/nfdi4plants.kn
 Try to avoid deep structures by using no more than two headline levels, i.e.
 
 <pre><code>```
-## Headline level 2 <!-- omit in toc -->
-### Headline level 3 <!-- omit in toc -->
+## Headline level 2
+### Headline level 3
 ```</code></pre>
 
-Level 1 is automatically generated from the article's `title: `.
+Headline level 1 is automatically generated from the article's `title: `.
 
 ### Images
 
@@ -210,6 +214,35 @@ File names:
 - MUST use [snake_case](https://en.wikipedia.org/wiki/Snake_case) (lower_case_with_underscores) OR [PascalCase](https://techterms.com/definition/pascalcase) (UpperCase)
 
 > :warning: Changing file names (and paths) means changing URLs and can easily lead to dead links.
+
+
+## Avoiding dead links
+
+Once in a while we (need to) restructure the `/nfdi4plants.knowledgebase/src/docs` folder a bit, which includes changes to file and folder names, i.e. producing dead links. 
+In this case, the least we can do, is to keep the knowledge base itself intact:
+
+1. Carefully check **all markdown documents** for cross-links to the original file name (this can easily be done via e.g. VS Code). 
+2. Remember to check for both file endings `.md` and `.html`.
+3. Replace with the new file name / path. 
+
+This however does not help for articles, tutorials, etc. that have been shared with the community (via mail, in slide decks, etc.). 
+In this case, please leave a markdown with the original file name and path and just fill it with the following
+
+```markdown
+---
+layout: docs
+date: 2023-06-07
+status: prevent-dead-link
+title: Sorry, this site moved...
+---
+
+The site you are looking for was moved [here](./../path/to/new/file).
+```
+
+This is not the most beautiful solution as it clutters the knowledge base, but it helps against user frustration and should be done for frequently shared articles.
+Adding a date helps us clean up those files after a certain time interval.
+
+:bulb: If you're sharing content with the users, it might be best to only share the link to the knowledge base https://nfdi4plants.org/nfdi4plants.knowledgebase/, rather than a concrete link to a tutorial (e.g. https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html).
 
 ## Addressing Readers
 
