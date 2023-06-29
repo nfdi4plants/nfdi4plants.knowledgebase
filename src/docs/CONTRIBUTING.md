@@ -136,17 +136,45 @@ Read more about authoring content in the fornax section of the nfdi4plants web c
 
 :warning: Please make sure to especially follow the markdown syntax section. 
 
-:bulb: Note that the following sections refer to contents with `layout: docs`
+:bulb: The following sections refer to contents with `layout: docs` as used for articles and guides. 
+
+:construction: Contribution of slides (i.e. in folder `src/docs/teaching-materials/` and sidebar section "Teaching Materials") is currently under construction. See the additional guide on [slide deck](./guides/contribute_slide-decks.html). 
 
 ### Knowledge Base repo structure
 
-- The source to all content shown at the public website https://nfdi4plants.org/nfdi4plants.knowledgebase/ resides in the folder `src/docs`.
-- All other files can safely be ignored by most contributors. 
+- The source to all content shown at the public website https://nfdi4plants.org/nfdi4plants.knowledgebase/ resides in the folder `src/docs`
+- All other files are mostly "backend", help to render the content to html and can safely be ignored by most contributors
+- The `src/docs` structure (as of June 29th, 2023) looks like this
 
+```
+src/docs
+├── ArcCommanderManual
+├── CONTRIBUTING.md
+├── Home.md
+├── SwateManual
+├── _ignored
+├── _sidebars
+├── faqs
+│   └── faqs.md
+├── fundamentals
+│   ├── DataManagementPlan.md
+│   ├── DataPublications.md
+│   ├── ...
+├── guides
+│   ├── ARCUserJourney.md
+│   ├── BestPracticesForDataAnnotation.md
+│   ├── ...
+├── img
+├── implementation
+│   ├── AnnotatedResearchContext.md
+│   ├── AnnotationPatterns.md
+│   ├── ArcCommander.md
+│   ├── ...
+├── teaching-materials
+└── tutorials
+```
 
-
-
-
+:bulb: For easier findability we try to align the folder structure with how the content is presented in the sidebar of the public site. This is however not always feasible or sensible (for reasons). 
 
 
 ### Common Errors
@@ -199,14 +227,17 @@ In the following, some ideas are described on how to deal with this:
 - **Basic relative paths:** These will look like this: `[Test](/README.html)`. 
 By starting with `/` we implicitly say "start at host". 
 So in development it will start with `http://127.0.0.1:8080/`, in production it will start with `https://nfdi4plants.github.io/`. 
-Because in production we also need `https://nfdi4plants.github.io/nfdi4plants.knowledgebase/`, this type of relative paths can create issues! ⚠️
-- **Relative paths in sidebar:** The sidebars actually check if you are currently in `dotnet fornax watch` mode. So you can use basic relative paths here. Example `
-    ```markdown
-    ```Fundamentals
-    # Introduction:/docs/Home.html
-    ```!
-    ```
-    `/docs/Home.html` will be parsed to `/nfdi4plants.knowledgebase/docs/Home.html`.
+Since in production we also need `https://nfdi4plants.org/nfdi4plants.knowledgebase/`, this type of relative paths can create issues! ⚠️
+- **Relative paths in sidebar:** The sidebars actually check if you are currently in `npm run fornax` mode. So you can use basic relative paths here. 
+
+For example
+
+```markdown
+```Fundamentals
+# [Fundamentals](/docs/fundamentals/index.html)
+```!
+```
+`/docs/fundamentals/index.html` will be parsed to `/nfdi4plants.knowledgebase/docs/fundamentals/index.html`.
     
 - **Relative paths from current file:** These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". Example: `[Test](./ResearchDataManagement.html)`. Starting with `./` translates to "coming from the position of this file". We can even go up in the file hierarchy, like `[Test](./../docs/README.html)`. This translates to "coming from the position of this file, go one folder higher and into the docs directory to find the [Introduction](./../docs/Home.html) there."
 
@@ -221,9 +252,31 @@ Try to avoid deep structures by using no more than two headline levels, i.e.
 
 Headline level 1 is automatically generated from the article's `title: `.
 
-### Images
+### Images / figures
 
-- simple markdown logic (not HTML): `![name_of_image](path_to_image.png)`
+Images can be linked
+
+1. via simple markdown logic: `![name_of_image](path_to_image.png)`
+2. via html: `` 
+
+:bulb: Please store images in `src/docs/img`. 
+
+- The folder `src/docs/img` holds image files (preferably *.svg, *.png) or the original source file (.pptx, .drawio.svg) used to create the image file(s)
+- Avoid adding captions or links to figure files
+- If powerpoint was used to create a figure
+  - the pptx stored in `src/docs/img` is supposed to be a file of only a single slide or slide sequence (i.e. consecutive slides, where one image builds on the previous)
+  - the name of the resulting figure file (e.g. "FAIRprinciples.png") MUST be aligned with the source file (e.g. "FAIRprinciples.pptx")
+    - a consecutive number is suffixed to images from slide sequences (e.g. "FAIRprinciples_seq1.png", "FAIRprinciples_seq2.png")
+
+
+### Licensed material
+
+- Make sure you are allowed to add the content. If you reuse any content from other sources, make sure to reference the source and / or license, if applicable. 
+- In particular, when adding images that you did not create yourself, please clearly state this by
+  1. adding the source to the [`src/docs/img/_ImageIndex.md`](./img/_ImageIndex.html), 
+  2. adding a link / license (however applicable) to the content (artilce, tutorial, slide deck, etc.) where you use the image, and
+  3. reminding the knowledge base curators during your pull request.
+
 
 ---
 
