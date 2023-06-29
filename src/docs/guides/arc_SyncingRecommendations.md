@@ -81,10 +81,22 @@ You can actually see all `arc sync` actions (i.e. commits) to your ARC in the Da
 2. In the sidebar on the left, navigate to `Repository` &rarr; `Commits`. 
 3. There you find a chronological list of syncing messages together with who synced (if you collaborate with others on an ARC) and when.
 
+<img src="./../img/datahub-commits.png" style="width:75%;display: block;margin-left: auto;margin-right: auto;">
+
+
 
 ## Undo latest changes
 
 4. Click on the latest (i.e. uppermost) commit.
 5. In the top-right corner select `Revert` from the drop-down menu `Options`. 
+
+<img src="./../img/datahub-commits-revert01.png" style="width:75%;display: block;margin-left: auto;margin-right: auto;">
+
 6. Un-check the box "Start a new merge request with these changes".
 7. Click "Revert"
+
+<img src="./../img/datahub-commits-revert02.png" style="width:55%;display: block;margin-left: auto;margin-right: auto;">
+
+
+
+
