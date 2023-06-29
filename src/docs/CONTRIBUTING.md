@@ -257,7 +257,7 @@ Headline level 1 is automatically generated from the article's `title: `.
 Images can be linked
 
 1. via simple markdown logic: `![name_of_image](path_to_image.png)`
-2. via html: `` 
+2. via html: `<img src="path_to_image.png">` 
 
 :bulb: Please store images in `src/docs/img`. 
 
