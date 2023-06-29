@@ -123,4 +123,5 @@ https://github.com/marp-team/marp/discussions/257
 ## Example Slide deck
 
 Please check out the rendered [example slide deck](./contribute_slide-decks-example.html). 
-And compare it to its [source markdown](./contribute_slide-decks-example.md). 
+And compare it to its [source markdown](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/guides/contribute_slide-decks-example.md?plain=1). 
+
