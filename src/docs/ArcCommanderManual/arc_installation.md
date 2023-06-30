@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: "Installing the ARC Commander"
-published: 2022-12-20
+date: 2022-12-20
 add toc: false
 add support: false
 add sidebar: _sidebars/mainSidebar.md

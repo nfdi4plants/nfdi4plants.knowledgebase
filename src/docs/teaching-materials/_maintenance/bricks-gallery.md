@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Bricks Gallery
-published: 2023-05-02
+date: 2023-05-02
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
 ---

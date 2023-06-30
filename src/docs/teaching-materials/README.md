@@ -1,6 +1,6 @@
 ---
 title: Teaching Materials
-published: 2023-05-05
+date: 2023-05-05
 ---
 
 :bulb: mostly copied here from https://github.com/nfdi4plants/teaching_materials  

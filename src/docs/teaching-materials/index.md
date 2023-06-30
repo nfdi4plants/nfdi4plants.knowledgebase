@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Teaching Materials
-published: 2023-06-01
+date: 2023-06-01
 add toc: false
 add support: false
 add sidebar: _sidebars/mainSidebar.md

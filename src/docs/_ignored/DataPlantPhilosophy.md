@@ -1,13 +1,14 @@
 ---
 layout: docs
 title: The DataPLANT Philosophy
-published: 2022-08-10
-author: Dominik Brilhaus
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
+date: 2022-08-10
+author:
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
 add toc: true
 add sidebar: _sidebars/hiddenMenuSidebar.md
-article_status: draft
+status: draft
 ---
 
 

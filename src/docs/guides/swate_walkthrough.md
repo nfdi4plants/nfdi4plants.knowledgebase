@@ -1,8 +1,7 @@
 ---
-marp: true
 layout: docs
 title: Swate Walk-through
-published: 2023-06-13
+date: 2023-06-13
 author: 
 - name: Dominik Brilhaus
   github: https://github.com/brilator

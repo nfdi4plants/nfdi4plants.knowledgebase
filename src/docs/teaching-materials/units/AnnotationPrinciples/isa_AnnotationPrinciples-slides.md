@@ -48,7 +48,7 @@ section, img, p, h1 {
 Every annotation table must start with the Source Name column, which defines the input of your table. This input value must be a unique identifier for an organism or a sample.  
 The number of Source Name columns per table is limited to one.
 
-<img src="./../img/AnnotationPrinciples/Source.svg">
+<img src="./../../../img/AnnotationPrinciples/Source.svg">
 
 ---
 
@@ -67,7 +67,7 @@ section, img, p, h1 {
 Characteristic columns describe inherent properties of the source material, e.g., a certain strain or ecotype, but also the temperature an organism was exposed to.  
 You can use any number of Characteristic columns.
 
-<img src="./../img/AnnotationPrinciples/Characteristics.svg">
+<img src="./../../../img/AnnotationPrinciples/Characteristics.svg">
 
 ---
 
@@ -86,7 +86,7 @@ section, img, p, h1 {
 Use Factor columns to describe independent variables that determine the specific output of your experiment when process and analysis were identical.  
 Most of the time, Factors are the most important building blocks for downstream computational analysis.
 
-<img src="./../img/AnnotationPrinciples/Factor.svg">
+<img src="./../../../img/AnnotationPrinciples/Factor.svg">
 
 ---
 
@@ -107,7 +107,7 @@ Parameter columns describe steps in your experimental workflow, e.g., the temper
 You can use any number of Parameter columns.
 
 
-<img src="./../img/AnnotationPrinciples/Parameter.svg">
+<img src="./../../../img/AnnotationPrinciples/Parameter.svg">
 
 ---
 
@@ -125,7 +125,7 @@ section, img, p, h1 {
 Use these columns to list anything physical of a protocol that can be consumed, e.g. instrument names, software names, or reagents names.  
 You can use any number of Component columns.
 
-<img src="./../img/AnnotationPrinciples/Component.svg">
+<img src="./../../../img/AnnotationPrinciples/Component.svg">
 
 ---
 
@@ -143,7 +143,7 @@ section, img, p, h1 {
 Use Protocol REF columns to reference the protocol used in this table, i.e., the name of the protocol. Protocol Type columns define the type according to your preferred public repository, e.g., a growth protocol.  
 The number of columns for each subtype is limited to one per table.
 
-<img src="./../img/AnnotationPrinciples/Protocol.svg">
+<img src="./../../../img/AnnotationPrinciples/Protocol.svg">
 
 ---
 
@@ -164,7 +164,7 @@ Per table only one output column is allowed, which can either be a Sample Name, 
 The value of this column must be a unique identifier.
 
 
-<img src="./../img/AnnotationPrinciples/Output.svg">
+<img src="./../../../img/AnnotationPrinciples/Output.svg">
 
 
  

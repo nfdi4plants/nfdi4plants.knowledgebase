@@ -10,9 +10,10 @@ style: ' footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {heigh
   0.5;} '
 layout: slides
 title: promotion_001_DataPLANT-Overview
-author: Cristina Martins Rodrigues
-author_orcid: https://orcid.org/0000-0002-4849-1537
-author_github: CMR248
+author: 
+- name: Cristina Martins Rodrigues
+  orcid: https://orcid.org/0000-0002-4849-1537
+  github: CMR248
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 description: General overview of DataPLANT for promotional needs.
 date: 2023-03-24
