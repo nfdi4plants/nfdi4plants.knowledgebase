@@ -8,7 +8,7 @@ author:
   orcid: https://orcid.org/0000-0002-8493-1077
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
-article_status: published
+status: published
 todo:
 ---
 

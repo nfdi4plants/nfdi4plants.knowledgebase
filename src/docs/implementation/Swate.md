@@ -8,7 +8,7 @@ author:
   orcid: https://orcid.org/0000-0002-8493-1077
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
-article_status: published
+status: published
 ---
 
 Swate (Swate workflow annotation tool for Excel) is one of two central DataPLANT tools designed for convenient interaction with your [ARC][kb-AnnotatedResearchContext] (the other one being the [ARC Commander][kb-ArcCommander]).

@@ -5,7 +5,7 @@ date: 2022-12-14
 add toc: true
 add support: true
 add sidebar: _sidebars/mainSidebar.md
-article_status: published
+status: published
 author:
 - name: Kevin Frey
   github: https://github.com/Freymaurer

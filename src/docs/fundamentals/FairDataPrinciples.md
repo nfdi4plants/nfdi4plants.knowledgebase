@@ -8,7 +8,7 @@ author:
   orcid: https://orcid.org/0000-0002-8493-1077
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
-article_status: published
+status: published
 ---
 
 The FAIR Principles were published in 2016 to serve as guidelines for improving the **F**indability, **A**ccessibility, **I**nteroperability, and **R**eusability of scientific data. Albeit data can only be FAIR when provided with [metadata][kb-Metadata], researchers rely on infrastructures to set a framework. Hence, FAIR(ness) addresses both stakeholders publishing data and those providing infrastructures, such as repositories.
