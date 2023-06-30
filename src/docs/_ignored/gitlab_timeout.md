@@ -2,9 +2,10 @@
 layout: docs
 title: Time-out issues with git-LFS
 date: 2023-02-21
-author: Dominik Brilhaus
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
+author:
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
 add toc: true
 add sidebar: _sidebars/hiddenMenuSidebar.md
 article_status: draft
