@@ -355,6 +355,20 @@
           </a>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-RecommendedARCPractices.html">
+            Recommended ARC practices
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_SyncingRecommendation.html">
+            Syncing recommendation
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_gitignore.html">
+            Keep files from syncing to the DataHUB
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_WorkingWithLargeDataFiles.html">
+            Working with large data files
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
           <a href="/nfdi4plants.knowledgebase/docs/guides/index-Contribute.html">
             Contribute
           </a>
@@ -451,6 +465,12 @@ To properly re-use and reference such a dataset, we recommend to add a <code>stu
 Are there any recommendations for titles or identifiers?
 </summary>
 Avoid using spaces in the identifier. Use underscores and capital letters instead. There are no specific restrictions regarding the title. Although it is possible to fill in the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
+</details>
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+How often should I sync my ARC?
+</summary>
+We would not want to recommend a fixed time interval (once every hour / day / week) for how often you ideally sync the ARC. In general, the more you work with your ARC, the more you add or update, annotate or analyze data, the more you will want to make sure these changes are saved. Consider the syncing as a way to backup your project's progress as well as an "undo button".
+<p>💡 For more details, check out the <a href="./../guides/arc_SyncingRecommendations.html">Syncing Recommendations</a></p>
 </details>
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
 How to retrieve a valid access token?
