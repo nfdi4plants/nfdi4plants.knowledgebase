@@ -13,7 +13,7 @@ add sidebar: _sidebars/mainSidebar.md
 
 ## About this guide
 
-In this guide we show you how to keep files from syncing to the DataHUB. This can help to keep large intermediate, sensitive or unpublished data from uploading to the DataHUB. 
+In this guide we show you how you can actively handle large data files in your ARC. 
 
 <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
@@ -33,14 +33,27 @@ In this guide we show you how to keep files from syncing to the DataHUB. This ca
 
 ## Large File Storage (LFS)
 
-- ARC's come with a mechanism to sync and store large files, that is called *Large File Storage (LFS)*
+- ARCs come with a mechanism to sync and store large files, that is called *Large File Storage (LFS)*
 
-- by default, files stored in an assay's `dataset` folder are added to LFS
-- you can also actively add files to LFS
-- files 
+- efficient way to store large files
+   - First checks wether there was a change at all
+   - And only then checks, what was changed. I.e. only then scans a complete large data file 
 
+- By default, the ARC Commander tracks the following files via LFS: 
+  1. All files stored in an assay's `dataset` folder, and
+  2. All files with a size larger than 150 MB. 
+
+The threshold of 150 MB can be adjusted using the ARC Commander. For instance, if you want to increase it to 250 MB (i.e. 250000000 bytes), use
+
+```bash
+arc config set -g -n "general.gitlfsbytethreshold" -v "250000000"
+```
 
 ## Track files by LFS
+
+- You can also actively add files to LFS
+
+
 
 1. Update your local ARC via `arc sync`
 2. Add large files or folders by copying or moving them to your ARC
