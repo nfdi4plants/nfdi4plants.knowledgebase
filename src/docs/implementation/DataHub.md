@@ -2,13 +2,13 @@
 layout: docs
 title: DataHUB
 date: 2022-07-12
-author: Dominik Brilhaus
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
+author:
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
 article_status: published
-todo:
 ---
 
 The DataPLANT [DataHUB][hp-DataHUB] is the platform where several strings of DataPLANT's [research data management][kb-ResearchDataManagement] run together. Here you can upload your research data as an annotated research context ([ARC][kb-AnnotatedResearchContext]), to document its changes (via [git][kb-VersionControlGit]-based version control) and [share][kb-DataSharing] it with collaborators. [Metadata][kb-Metadata] associated with your ARC feeds into the metadata registry to make your research findable. From there, you can analyse your data using external workflows, publish it to specific [data repositories][kb-PublicDataRepositories] or [data publications][kb-DataPublications].
