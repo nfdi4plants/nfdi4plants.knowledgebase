@@ -2,12 +2,14 @@
 layout: docs
 title: Ontologies
 date: 2023-02-28
-author: Hannah Dörpholz, Angela Kranz, Kathryn Dumschott
-author_github: Hannah-Doerpholz
+author:
+- name: Hannah Dörpholz
+  github: https://github.com/Hannah-Doerpholz
+- name: Angela Kranz
+- name: Kathryn Dumschott
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
 article_status: published
-todo:
 ---
 
 ## What is an Ontology?

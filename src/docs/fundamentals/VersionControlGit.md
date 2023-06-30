@@ -2,14 +2,13 @@
 layout: docs
 title: Version control & Git
 date: 2022-05-09
-author: Dominik Brilhaus
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
+author:
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
-article_status: draft
-todo:
-  - paragraph branches
+article_status: published
 ---
 
 ## Scientific iteration and versioning

@@ -2,8 +2,10 @@
 layout: docs
 title: "Clone an ARC from the DataHUB"
 date: 2022-12-20
-author: Martin Kuhl
-author_github: martin-kuhl
+author:
+- name: Martin Kuhl
+  github: https://github.com/Martin-Kuhl
+  orcid: https://orcid.org/0000-0002-8493-1077
 add toc: false
 add support: false
 add sidebar: _sidebars/mainSidebar.md
@@ -22,10 +24,3 @@ arc get -r https://github.com/nfdi4plants/ARC.git
 
 > :warning: In previous versions of the ARC Commander, the subcommand `get` allowed you to retrieve information from the ARC, e.g., `arc assay get` or `arc study person get`.  
 > This function is now available using the command `show`, e.g. `arc assay show` or `arc study person show`.
-
-<!-- TODO 
-
-Andrea: 
-Also, for arc get, the authentification problem might occur or re-occur when the access TOKEN is expired as somebody set it like this. Therefore, the respective link would be also of interest here.
-
- -->

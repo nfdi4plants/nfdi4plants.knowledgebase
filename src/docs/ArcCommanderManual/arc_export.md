@@ -2,8 +2,10 @@
 layout: docs
 title: "Export ARC metadata"
 date: 2022-12-20
-author: Martin Kuhl
-author_github: martin-kuhl
+author:
+- name: Martin Kuhl
+  github: https://github.com/Martin-Kuhl
+  orcid: https://orcid.org/0000-0002-8493-1077
 add toc: false
 add support: false
 add sidebar: _sidebars/mainSidebar.md

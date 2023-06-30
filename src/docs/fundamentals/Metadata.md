@@ -2,13 +2,13 @@
 layout: docs
 title: Metadata
 date: 2022-05-20
-author: Dominik Brilhaus
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
+author:
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
 article_status: published
-todo:
 ---
 
 ## What is metadata?
