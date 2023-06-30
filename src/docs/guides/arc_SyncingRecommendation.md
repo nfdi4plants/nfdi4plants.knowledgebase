@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Syncing recommendations
+title: Syncing recommendation
 published: 2023-06-27
 author:
 - name: Dominik Brilhaus

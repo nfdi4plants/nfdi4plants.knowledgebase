@@ -88,8 +88,8 @@
 ### [Swate QuickStart](/docs/guides/swate_QuickStart.html)
 ### [Swate Walk-through](/docs/guides/swate_walkthrough.html)
 
-## [Work with your ARC](/docs/guides/index-WorkingWithYourARC.html)
-### [Syncing Recommendations](/docs/guides/arc_SyncingRecommendations.html)
+## [Work with your ARC](/docs/guides/index-WorkWithYourARC.html)
+### [Syncing Recommendation](/docs/guides/arc_SyncingRecommendation.html)
 ### [Keep files from syncing to the DataHUB](/docs/guides/arc_gitignore.html)
 ### [Working with large data files](/docs/guides/arc_WorkingWithLargeDataFiles.html)
 

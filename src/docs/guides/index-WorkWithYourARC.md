@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Share your ARC
+title: Work with your ARC
 published: 2023-06-12
 add toc: true
 add support: false
