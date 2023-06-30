@@ -1,11 +1,12 @@
 ---
 marp: true
 theme: dataplant_marp-theme
-author: Dominik Brilhaus
+author:
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
 title: Bring your own data
 layout: docs
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 date: 2023-05-15
 ---

@@ -4,11 +4,9 @@ theme: dataplant_marp-theme
 layout: slides
 title: Sustainable data formats
 author:
-- Dominik Brilhaus
-author_orcid:
-- https://orcid.org/0000-0001-9021-3197
-author_github:
-- brilator
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 date: 2023-01-23
 ---
