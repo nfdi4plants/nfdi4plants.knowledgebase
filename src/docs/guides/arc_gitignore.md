@@ -17,12 +17,12 @@ In this guide we show you how to keep files from syncing to the DataHUB. This ca
 
 <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
+    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>    
 </a>
 
 <br>
 <br>
+
 
 <span id="badge-interim-left">Interim</span><span id="badge-interim-right">Solution</span><br>
 This guide presents an interim solution. We are working on a more user friendly implementation.
