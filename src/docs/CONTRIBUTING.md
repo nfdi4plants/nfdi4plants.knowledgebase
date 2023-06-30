@@ -6,7 +6,16 @@ add toc: true
 add support: true
 add sidebar: _sidebars/mainSidebar.md
 article_status: published
-todo:  
+author:
+- name: Kevin Frey
+  github: https://github.com/Freymaurer
+  orcid: https://orcid.org/0000-0002-8510-6810
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
+- name: Martin Kuhl
+  github: https://github.com/Martin-Kuhl
+  orcid: https://orcid.org/0000-0002-8493-1077
 ---
 
 ## About this guide
@@ -71,7 +80,7 @@ Please follow these steps to fork the knowledge base repository and clone your f
 
 4. If edited or added existing content, please assign the original author during your pull-request to review your changes.
   
-  - The github user name of the original author is stored in the yaml block on top under `author_github`
+  - The github user name of the original author is stored in the yaml block on top under `author // github`
   - During the pull-request mention the author via `@<author_github>`.
 
 > :warning: This is not a full-fledged GitHub tutorial. Please refer to available tutorials online or contact the Knowledge Base curators.
