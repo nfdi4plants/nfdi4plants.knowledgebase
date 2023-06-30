@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Data Sharing
-published: 2022-05-23
+date: 2022-05-23
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator

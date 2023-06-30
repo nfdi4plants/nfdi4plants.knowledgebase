@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: DataPLAN
-published: 2022-12-06
+date: 2022-12-06
 author: Xiaoran Zhou
 author_orcid: https://orcid.org/0000-0002-5622-3348
 author_github: xiaoranzhou

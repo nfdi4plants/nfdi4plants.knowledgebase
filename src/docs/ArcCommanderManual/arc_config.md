@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: "Configure a git user locally for each ARC"
-published: 2022-12-20
+date: 2022-12-20
 add toc: true
 add support: false
 add sidebar: _sidebars/mainSidebar.md

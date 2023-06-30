@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: ISA-JSON import and export
-published: 2022-09-19
+date: 2022-09-19
 Author: Kevin Frey
 add toc: false
 add sidebar: _sidebars\mainSidebar.md

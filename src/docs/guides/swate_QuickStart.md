@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Swate QuickStart
-published: 2022-08-05
+date: 2022-08-05
 author:
 - name: Martin Kuhl
   github: https://github.com/Martin-Kuhl

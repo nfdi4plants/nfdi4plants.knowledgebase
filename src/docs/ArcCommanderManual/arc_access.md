@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: "DataHUB access for ARC synchronization"
-published: 2022-12-20
+date: 2022-12-20
 author: Martin Kuhl
 author_github: martin-kuhl
 add toc: false

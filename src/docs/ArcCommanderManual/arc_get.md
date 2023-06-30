@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: "Clone an ARC from the DataHUB"
-published: 2022-12-20
+date: 2022-12-20
 author: Martin Kuhl
 author_github: martin-kuhl
 add toc: false

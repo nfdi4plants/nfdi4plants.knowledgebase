@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Best Practices For Data Annotation
-published: 2022-11-07
+date: 2022-11-07
 author:
 - name: Martin Kuhl
   github: https://github.com/Martin-Kuhl

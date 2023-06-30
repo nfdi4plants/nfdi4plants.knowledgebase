@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Annotated Research Context
-published: 2022-05-25
+date: 2022-05-25
 author: Martin Kuhl
 author_github: martin-kuhl
 add toc: true

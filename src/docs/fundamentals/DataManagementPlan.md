@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Data Management Plan
-published: 2022-05-19
+date: 2022-05-19
 author: Martin Kuhl
 author_github: martin-kuhl
 add toc: true

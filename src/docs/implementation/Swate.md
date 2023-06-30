@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Swate
-published: 2022-08-1
+date: 2022-08-1
 author: Martin Kuhl
 author_orcid: https://orcid.org/0000-0002-8493-1077
 author_github: martin-kuhl

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: ARC Commander QuickStart (Experts)
-published: 2023-01-27
+date: 2023-01-27
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: ARC Commander
-published: 2022-08-10
+date: 2022-08-10
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator

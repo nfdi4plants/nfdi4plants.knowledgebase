@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: "How-To: Synchronize DataHUB ARCs via GitHub Desktop"
-published: 2022-07-01
+date: 2022-07-01
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator

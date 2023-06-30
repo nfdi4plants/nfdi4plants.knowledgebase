@@ -6,7 +6,7 @@ headingDivider:
     - 3
 layout: docs
 title: Contribution Swate Templates
-published: 2023-04-18
+date: 2023-04-18
 author: 
 - name: Dominik Brilhaus
   github: https://github.com/brilator

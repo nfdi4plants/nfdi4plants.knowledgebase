@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Time-out issues with git-LFS
-published: 2023-02-21
+date: 2023-02-21
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator

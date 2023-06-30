@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Introduction to Markdown
-published: 2022-07-06
+date: 2022-07-06
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator

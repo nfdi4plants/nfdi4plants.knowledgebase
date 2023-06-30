@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: workshop-notepad
-published: 2023-06-14
+date: 2023-06-14
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator

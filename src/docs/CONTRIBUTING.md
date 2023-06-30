@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Knowledge Base Contribution Guide
-published: 2022-12-14
+date: 2022-12-14
 add toc: true
 add support: true
 add sidebar: _sidebars/mainSidebar.md

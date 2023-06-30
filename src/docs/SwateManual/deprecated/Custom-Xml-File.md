@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Custom XML (deprecated)
-published: 2022-09-19
+date: 2022-09-19
 Author: Kevin Frey
 add toc: false
 add sidebar: _sidebars\mainSidebar.md

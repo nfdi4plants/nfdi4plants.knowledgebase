@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Annotate Data in your ARC
-published: 2023-06-12
+date: 2023-06-12
 add toc: true
 add support: false
 add sidebar: _sidebars/mainSidebar.md
