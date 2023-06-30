@@ -24,7 +24,7 @@ In this guide we elaborate recommendations on syncing your ARC via the [ARC Comm
 <br>
 
 
-<span id="badge-interim-left">Interim</span><span id="badge-interim-right">Solution</span><br>
+:warning:
 This guide presents an interim solution. We are working on a more user friendly implementation.
 
 

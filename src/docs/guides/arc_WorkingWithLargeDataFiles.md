@@ -24,7 +24,7 @@ In this guide we show you how you can actively handle large data files in your A
 <br>
 
 
-<span id="badge-interim-left">Interim</span><span id="badge-interim-right">Solution</span><br>
+:warning:
 This guide presents an interim solution. We are working on a more user friendly implementation.
 
 ## Before we can start
