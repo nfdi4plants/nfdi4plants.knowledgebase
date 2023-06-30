@@ -53,4 +53,4 @@ You should see the following or similar message:
 > v0.4.0  
 > Done processing command.  
 
-> :bulb: A global config file will be created the first time you use the ARC Commander in the folder `~/.config/DataPLANT/ArcCommander/`
+> :bulb: A global config file will be created the first time you use the ARC Commander at `~/.config/DataPLANT/ArcCommander/ArcCommander.config`
