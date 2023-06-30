@@ -2,7 +2,10 @@
 layout: docs
 title: Adding a Building Block
 date: 2023-02-15
-Author: Kevin Frey
+author: 
+- name: Kevin Frey
+  github: https://github.com/Freymaurer
+  orcid: https://orcid.org/0000-0002-8510-6810
 add toc: true
 add sidebar: _sidebars\mainSidebar.md
 ---

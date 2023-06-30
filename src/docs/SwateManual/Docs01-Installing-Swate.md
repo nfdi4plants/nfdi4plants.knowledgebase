@@ -2,16 +2,13 @@
 layout: docs
 title: Installing Swate
 date: 2022-09-19
-Author: Kevin Frey
+author: 
+- name: Kevin Frey
+  github: https://github.com/Freymaurer
+  orcid: https://orcid.org/0000-0002-8510-6810
 add toc: false
 add sidebar: _sidebars\mainSidebar.md
 ---
-<!-- 
-- [Browser](#browser)
-- [Desktop Installation via installer](#desktop-installation-via-installer)
-- [Manual Desktop Installation](#manual-desktop-installation)
-- [Organization-wide Desktop Installation](#organization-wide-desktop-installation) -->
-
 
 We currently offer different routes of installing Swate.
 
