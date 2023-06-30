@@ -25,7 +25,7 @@ In this guide we show you how to keep files from syncing to the DataHUB. This ca
 
 
 :warning:
-This guide presents an interim solution. We are working on a more user friendly implementation.
+This guide presents an interim solution. We are working on a more user-friendly implementation.
 
 ## Before we can start
 
