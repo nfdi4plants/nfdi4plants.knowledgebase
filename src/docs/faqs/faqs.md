@@ -1,11 +1,11 @@
 ---
 layout: docs
 title: Frequently Asked Questions
-published: 2023-05-11
+date: 2023-05-11
 add toc: true 
 add support: true 
 add sidebar: _sidebars/mainSidebar.md
-article_status: published
+status: published
 ---
 
 ## General

@@ -2,9 +2,10 @@
 layout: docs
 title: DataPLANT Technical Onboarding
 date: 2022-09-23
-author: Dominik Brilhaus
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
+author:
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
 add toc: false
 add sidebar: _sidebars/hiddenMenuSidebar.md
 add support: false

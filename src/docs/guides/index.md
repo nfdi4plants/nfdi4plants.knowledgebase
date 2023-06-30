@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: DataPLANT Guides
-published: 2023-06-07
+date: 2023-06-07
 add toc: true
 add support: false
 add sidebar: _sidebars/mainSidebar.md

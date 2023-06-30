@@ -1,8 +1,11 @@
 ---
 layout: docs
 title: Building Blocks
-published: 2022-09-19
-Author: Kevin Frey
+date: 2022-09-19
+author: 
+- name: Kevin Frey
+  github: https://github.com/Freymaurer
+  orcid: https://orcid.org/0000-0002-8510-6810
 add toc: false
 add sidebar: _sidebars\mainSidebar.md
 ---

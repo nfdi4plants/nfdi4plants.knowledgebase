@@ -2,6 +2,10 @@
 title: Register at the DataHUB
 layout: docs
 date: 2023-06-14
+author: 
+- name: Cristina Martins Rodrigues
+  orcid: https://orcid.org/0000-0002-4849-1537
+  github: CMR248
 add toc: true 
 add sidebar: _sidebars/mainSidebar.md
 ---

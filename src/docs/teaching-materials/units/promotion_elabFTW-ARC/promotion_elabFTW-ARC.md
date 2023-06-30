@@ -2,9 +2,10 @@
 marp: true
 theme: dataplant_marp-theme
 paginate: true
-author: Dominik Brilhaus
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
+author:
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
 layout: slides
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 footer: ' <a href="https://nfdi4plants.org"> <img id="footer-img1" src="./../../../img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a>

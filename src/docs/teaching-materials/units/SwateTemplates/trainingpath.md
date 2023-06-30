@@ -10,9 +10,10 @@ style: ' footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {heigh
   0.5;} '
 layout: slides
 title: SwateTemplates
-author: Martin Kuhl
-author_orcid: https://orcid.org/0000-0002-8493-1077
-author_github: Martin-Kuhl
+author:
+- name: Martin Kuhl
+  github: https://github.com/Martin-Kuhl
+  orcid: https://orcid.org/0000-0002-8493-1077
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 citation: ''
 description:

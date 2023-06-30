@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Slide Decks
-published: 2023-05-12
+date: 2023-05-12
 add toc: false
 add support: false
 add sidebar: _sidebars/mainSidebar.md
