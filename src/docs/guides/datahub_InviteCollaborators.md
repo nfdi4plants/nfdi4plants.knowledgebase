@@ -1,9 +1,10 @@
 ---
 layout: docs
 title: Invite collaborators to your ARC
-author: Cristina Martins Rodrigues
-author_orcid: https://orcid.org/0000-0002-4849-1537
-author_github: CMR248
+author: 
+- name: Cristina Martins Rodrigues
+  orcid: https://orcid.org/0000-0002-4849-1537
+  github: CMR248
 date: 2023-06-14
 add toc: true
 add sidebar: _sidebars/mainSidebar.md

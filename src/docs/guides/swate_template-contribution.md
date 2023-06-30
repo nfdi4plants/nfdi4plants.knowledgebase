@@ -8,8 +8,12 @@ layout: docs
 title: Contribution Swate Templates
 published: 2023-04-18
 author: 
-    - Kevin Frey
-    - Dominik Brilhaus
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
+- name: Kevin Frey
+  github: https://github.com/Freymaurer
+  orcid: https://orcid.org/0000-0002-8510-6810
 add toc: true
 add sidebar: _sidebars\mainSidebar.md
 ---

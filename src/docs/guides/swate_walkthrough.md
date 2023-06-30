@@ -1,5 +1,4 @@
 ---
-marp: true
 layout: docs
 title: Swate Walk-through
 published: 2023-06-13
