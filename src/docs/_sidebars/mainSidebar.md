@@ -92,8 +92,8 @@
 ### [Register at the DataHUB](/docs/guides/datahub_register.html)
 ### [Invite collaborators to your ARC](/docs/guides/datahub_InviteCollaborators.html)
 
-## [Work with your ARC](/docs/guides/index-WorkWithYourARC.html)
-### [Syncing Recommendation](/docs/guides/arc_SyncingRecommendation.html)
+## [Recommended ARC practices](/docs/guides/index-RecommendedARCPractices.html)
+### [Syncing recommendation](/docs/guides/arc_SyncingRecommendation.html)
 ### [Keep files from syncing to the DataHUB](/docs/guides/arc_gitignore.html)
 ### [Working with large data files](/docs/guides/arc_WorkingWithLargeDataFiles.html)
 

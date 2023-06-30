@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Work with your ARC
+title: Recommended ARC practices
 published: 2023-06-12
 add toc: true
 add support: false
