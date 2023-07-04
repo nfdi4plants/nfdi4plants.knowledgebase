@@ -1,13 +1,14 @@
 ---
 layout: docs
 title: Research Data Management
-published: 2022-05-19
-author: Martin Kuhl
-author_github: martin-kuhl
+date: 2022-05-19
+author:
+- name: Martin Kuhl
+  github: https://github.com/Martin-Kuhl
+  orcid: https://orcid.org/0000-0002-8493-1077
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
-article_status: published
-todo:
+status: published
 ---
 
 ## What is Research Data Management?
@@ -18,7 +19,7 @@ Research Data Management (RDM) combines conceptual, organizational, and technica
 
 For plant sciences, we would like to complement the concept of the data life cycle with the aspect of multiple connections between and iterations within the cycle. These additions mirror the evolution of data, as research data are not static, can build on each other, and sometimes might call for a re-evaluation. In some scenarios you might need to jump back to data collection after you made a breakthrough during your analyses. In another case, you might think that it would be helpful to process older data with different tools or a distinct focus as your results gave you new insights.
 
-![Research Data Management Lifecycles](../img/Lifecycle.jpg)
+![Research Data Management Lifecycles](./../img/Lifecycle.jpg)
 
 ### Planning
 
@@ -94,5 +95,5 @@ Name | Type | Tasks on metadata
 
 <!-- DataPLANT web links -->
 
-[kb-ArcCommander-Manual]: ../implementation/ArcCommanderManual/index.html "ARC Commander Manual"
+[kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"

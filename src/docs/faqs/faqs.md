@@ -1,132 +1,208 @@
 ---
 layout: docs
 title: Frequently Asked Questions
-published: 2022-12-14
+date: 2023-05-11
 add toc: true 
 add support: true 
 add sidebar: _sidebars/mainSidebar.md
-article_status: published
-todo: 
-1. Search for existing Questions (CMR)
-2. Provide answers (CMR)
-3. Include links to corresponding KB article (CMR)
-4. Open FAQ-section to public (CMR)
+status: published
 ---
 
 ## General
 
-**Q:**  
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Is it necessary to fill in the empty fields in the investigation-file manually? 
+</summary>
 
-**A:**  
+No. Although it is possible to fill in the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
+
+</details>
+<br>
 
 ## Annotated Research Context
 
-**Q:**  Should the metadata annotation be made in the same document in which the dataset resides? 
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Should the metadata annotation be made in the same document in which the dataset resides? 
+</summary>
+No. The metadata describing the data is annotated in a separate xlsx-file that resides in the parent folder of the data sets.
+</details>
 
-**A:**  
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Is it necessary to fill in the empty fields in the investigation-file manually? 
+</summary>
+No. Although it is possible to fill out the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
+</details>
+
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Where in the ARC can I store "external" data? 
+</summary>
+
+Research projects rarely start out of the blue. Rather every project builds on previous findings and published datasets.
+To properly re-use and reference such a dataset, we recommend to add a `study` to your ARC. Every study by default comes with four parts: 
+
+```
+└── <StudyName>
+    ├── README.md
+    ├── isa.study.xlsx
+    ├── protocols
+    └── resources
+```
+
+- In the `resources` directory you can add the data (e.g. supplemental data files)
+- In the `protocols` directory you can add notes on how you retrieved the data and from where.
+- The study is registered in your ARC's `isa.investigation.xlsx`, which includes a section "STUDY PUBLICATIONS" for every study. Here, you can add publication details (author, DOI, etc.) about the external data source.
+
+</details>
+
+
+<br>
 
 ## ARC Commander
 
-**Q:**  Is it possible to use common Excel functionalities?
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Are there any recommendations for titles or identifiers?
+</summary>
+Avoid using spaces in the identifier. Use underscores and capital letters instead. There are no specific restrictions regarding the title. Although it is possible to fill in the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
+</details>
 
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+How often should I sync my ARC?
+</summary>
+We would not want to recommend a fixed time interval (once every hour / day / week) for how often you ideally sync the ARC. In general, the more you work with your ARC, the more you add or update, annotate or analyze data, the more you will want to make sure these changes are saved. Consider the syncing as a way to backup your project's progress as well as an "undo button".
 
-**A:**  Yes! In fact, this is one of the reasons why we decided to embed Swate within Excel, as it allows users to continue using the Excel functionality they are accustomed to. 
+:bulb: For more details, check out the [Syncing Recommendations](./../guides/arc_SyncingRecommendations.html)
 
-**Q:**  Do Excel files need to be closed before entering a new command in the terminal?
+</details>
 
-**A:**
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+How to retrieve a valid access token?
+</summary>
+Please follow the short instructions below.  
 
-**Q:**  Which aspects have to be taken into account when giving a title or an identifier?
-
-**A:**
-
-**Q:** How to retrieve a valid access token? - #163
-
-**A:** English version of Arc Commander - Authentication Step Fix - detailed version #157
-Note, this also works for "arc get"
+Alternatively, please visit <a href="https://github.com/nfdi4plants/arcCommander/discussions/157English">#157 in the ARC Commander repository's discussion section</a> for detailed instructions.  
+<br>
+Note: This also works for "arc get"  
 <br>
 
-___TLDR:___
+___TLDR:___  
 
-- Have a GitLab account
-- Generate a GitLab access token (Preferences -> Access Tokens) (with API and read/write repository)
-- Copy token string
-- Clone a GitLab repo with adjusted address (one for which you have the respective access rights): 
+- Have a GitLab account (here: <a href="https://git.nfdi4plants.org/explore">DataPLANT DataHUB</a>)  
+- Generate a GitLab access token (Preferences -> Access Tokens) (with API and read/write repository)  
+- Copy token string  
+- Clone a GitLab repo with adjusted address (one for which you have the respective access rights):  
 
 ```BASH
 git clone https://oauth2:TOKENSTRING@git.nfdi4plants.org/abc/xyz
 ```
-<br>
+</details>
 
-___Detailed version:___
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Why do I get the error `'arc' is not recognized as an internal or external command, operable program or batch file.`?
+</summary>
 
--> Go to https://git.nfdi4plants.org/explore and sign in
+Your machine cannot find your ARC commander executable. Possible reasons are that you have not yet installed the ARC commander or that the `arc` executable was not added to your path. 
 
-Prepare one project for testing:<br>
--> Menu -> Projects -> Your projects<br>
--> Create project<br>
--> Create blank project<br>
--> Select a project name, e.g. “Test"<br>
--> Visibility Level: “Private”<br>
--> remove the tick in front of README<br>
--> Create project<br>
+Please carefully retry the [ARC Commander setup](./../ArcCommanderManual/index-setup.html). 
 
--> In the upper right corner, next to the avatar in the dropdown menu, select “Preferences”.<br>
--> In the left menu, select “Access Tokens”.<br>
--> Select a name for the token, tick api, read_repository and write_repository.<br>
--> Create personal access token<br>
+If this does not do the trick, please follow these steps towards debugging (on Windows): 
 
--> Copy token<br>
--> Prepare cmd command: <br>
-```BASH
-git clone https://oauth2:<TOKENSTRING>@git.nfdi4plants.org/abc/xyz
+1. Open the command prompt (cmd) or powershell in the folder (e.g. `C:\Programs\ArcCommander`) where you stored the ARC Commander program (e.g. arc.exe). If `arc --version` shows the version, the executable is intact. 
+2. Next, execute `path` to check wether the folder (e.g. `C:\Programs\ArcCommander`) appears in your path.
+3. Adapt the user's path (not admin)
+   
+:bulb: If you do not have admin rights on the computer, please open the settings "Edit environment variables for your account" and follow steps described in the [ARC Commander setup](./../ArcCommanderManual/index-setup.html).
+
+
+</details>
+
+
+
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Why do I get the error `ERROR: GIT: fatal: detected dubious ownership`?
+</summary>
+Possible reasons:
+
+- You tried to work on an ARC that belongs to another person, e.g. another user account on the same computer or in the same file share - or vice versa.
+- This issues might occur when working on a network drive (Fileshare, File Server, NAS) that has been mounted by another user account.
+
+:bulb: We need more info to learn what causes this issue. Please let us know, if you run into that error! 
+</details>
+
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Syncing my ARC to the DataHUB takes forever or gets stuck. What can I do?
+</summary>
+This is likely due to handling a big volume of data. 
+
+Solution: Increase git's http post buffer
+
+Execute the following command in your command line:
+
 ```
--> Replace „\<TOKENSTRING>“ with the token.<br>
--> abc is the GitHub handle (upper right corner, dropdown menu next to avatar, all parts of the string following “@“)<br>
--> xyz is the name of the project just created<br>
--> In Windows, go in the explorer in the directory in which the test repository shall be cloned (here named “project”)
-enter „cmd“ and execute the command there, as an alternative, navigate in the Command Prompt to this directory.<br>
+git config --global http.postBuffer 524288000
+```
 
-In case you want to delete the Test repo again: navigate into the project within the DataHUB, on the left hand side select settings and general
-->advanced->Expand-> at the bottom: “ Delete project”.
+- 500 MB: 524288000
+- 1 GB: 1048576000
+- 2 GB: 2097152000
+
+source: https://stackoverflow.com/questions/6887228/git-hangs-while-writing-objects
+</details>
+
+
+<br>
 
 ## Swate
 
-**Q:**  Is it possible to use common Excel functionalities?
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Is it possible to use common Excel functionalities?
+</summary>
+Yes. In fact, this is one of the reasons why we decided to embed Swate within Excel, as it allows users to continue using the Excel functionality they are accustomed to.
+</details>
 
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Do I have to fill in all columns when using a template?
+</summary>
+No. However, if you want to submit your data to a <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">public data repository</a>, these will require specific metadata. For this purpose we provide the corresponding templates helping you to annotate your data accordingly.
+</details>
+<br>
 
-**A:**  Yes! In fact, this is one of the reasons why we decided to embed Swate within Excel, as it allows users to continue using the Excel functionality they are accustomed to. 
+## ISA
 
-**Q:**  Do I have to fill in all columns when using a template?
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Which format must be used to enter a date?
+</summary>
+String formatted as ISO8601 date: YYYY-MM-DD
+</details>
+<br>
+<!--
+## ARCitect
 
-**A:**  
-
-**Q:**  Which format must be used to enter a date?
-
-**A:**  String formatted as ISO8601 date
-YYYY-MM-DD
-
-ISA-Spec
-
-**Q:**  Is it necessary to fill in the empty fields in the investigation-file manually? 
-
-**A:** Eigentlich muss man da gar nichts amchen, aber wenn man will kann man, aber generell gilt: Was nicht passt, einfach frei lassen
-
-**Q:**  How to separate multiple entries per row? 
-
-**A:**  
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Question
+</summary>
+Answer
+</details>
 
 ## DataHUB
 
-**Q:**  
-
-
-**A:**  
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Question
+</summary>
+Answer
+</details>
 
 ## DataPLAN
 
-**Q:**  
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Question
+</summary>
+Answer
+</details>
 
+<!--Other Design-version
 
-**A:**  
+**Q:**  Which format must be used to enter a date?
 
+**A:**  String formatted as ISO8601 date: YYYY-MM-DD-->
+
+Already got an answer to a question or figured out the answer yourself? Please let others benefit from it by adding your suggestion [here](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/issues/new?assignees=CMR248&labels=FAQ&projects=&template=contribution-to-the-faq-section.md&title=%5BFAQ%5D).

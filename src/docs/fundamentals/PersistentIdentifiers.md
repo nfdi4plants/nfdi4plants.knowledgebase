@@ -1,14 +1,14 @@
 ---
 layout: docs
 title: Persistent Identifiers
-published: 2022-05-09
-author: Dominik Brilhaus
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
+date: 2022-05-09
+author:
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
-article_status: Curation
-todo: 
+status: published
 ---
 
 ## What are PIDs?
@@ -87,7 +87,7 @@ Name | Type | Tasks on metadata
 [kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 
 <!-- kb-Tutorials -->
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+[kb-QuickStart_arc]: ../tutorials/ARCUserJourney.html "ARC User Journey"
 
 
 <!-- Links to DataPLANT Homepage (hp-) -->
@@ -100,7 +100,7 @@ Name | Type | Tasks on metadata
 
 [gh-DataPlant]: <https://github.com/nfdi4plants/ARC-specification/> "GitHub DataPLANT"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
-[kb-ArcCommander-Manual]: ../implementation/ArcCommanderManual/index.html "ARC Commander Manual"
+[kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 
 [PURLs]: https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator "Wikipedia PURLs"
 [Handles]: https://en.wikipedia.org/wiki/Handle_System "Wikipedia Handles"

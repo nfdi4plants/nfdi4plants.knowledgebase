@@ -1,15 +1,14 @@
 ---
 layout: docs
 title: Version control & Git
-published: 2022-05-09
-author: Dominik Brilhaus
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
+date: 2022-05-09
+author:
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
-article_status: draft
-todo:
-  - paragraph branches
+status: published
 ---
 
 ## Scientific iteration and versioning
@@ -17,7 +16,7 @@ todo:
 Science is highly iterative. Most outcomes along the data life cycle (between an initial idea and the final publication, see also [RDM][kb-ResearchDataManagement]) are iterated through multiple cycles of design-test-repeat (e.g. laboratory experiments) or draft-review-publish (e.g. manuscripts) and mixes thereof. During these iterations multiple versions of the different outcomes are produced.  
 There are different options to keep track of these versions. The seemingly simplest option is to duplicate a file and rename it by attaching a version, e.g. `manuscript.txt` &ndash; `manuscript_v2.txt` &ndash; `manuscript_final.txt`. Although this may work acceptably for individual use it quickly becomes confusing when sharing with other researchers. Cloud services offer options to keep track of changes (what was changed and by whom) within collaborative, multi-party projects (see also [Data Sharing][kb-DataSharing]). Here, versioning is usually taken care of automatically by the cloud service with little to no control by the user. However, these services are helpful only for version histories of typical office data (documents, presentations) or small datasets and within low-complexity projects.
 
-![Cloud Services](../img/git_cloudServices.png)
+![Cloud Services](./../img/git_cloudServices.png)
 
 ## Git
 
@@ -25,7 +24,7 @@ A more sophisticated approach addressing the versioning needs in more complex pr
 
 By taking chronological snapshots of a complete project (termed "git repository") rather than single files, Git allows the user to "go back in time" to an earlier version of that project, e.g. when the software was properly functioning. This is further supported by options to make changes to multiple files at once in parallel, safe copies of the project (termed "branch" or "fork") without breaking the original version. In contrast to the versioning of cloud services, active control over these snapshots lies in the user's hand, allowing to evolve a project with a well-documented version history paralleling the iterative steps.
 
-![Git and Git Platforms](../img/git_github_gitlab.png)
+![Git and Git Platforms](./../img/git_github_gitlab.png)
 
 ## Git platforms: GitHub and GitLab
 
@@ -65,7 +64,7 @@ In order to use the [DataHUB][hp-DataHUB] and other DataPLANT infrastructure and
 
 [hp-Registration]: <https://register.nfdi4plants.org/> "DataPLANT Registration"
 [hp-DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"
-[kb-ArcCommander-Manual]: ../implementation/ArcCommanderManual/index.html "ARC Commander Manual"
+[kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 
 <!-- Reference web links -->
 

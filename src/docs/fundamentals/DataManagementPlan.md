@@ -1,13 +1,14 @@
 ---
 layout: docs
 title: Data Management Plan
-published: 2022-05-19
-author: Martin Kuhl
-author_github: martin-kuhl
+date: 2022-05-19
+author:
+- name: Martin Kuhl
+  github: https://github.com/Martin-Kuhl
+  orcid: https://orcid.org/0000-0002-8493-1077
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
-article_status: published
-todo:
+status: published
 ---
 
 # Data Management Plan
@@ -46,7 +47,7 @@ When setting up your own data management plan it will be advantageous to know be
 You can write your DMPs offline by using the downloaded template of a funding agency in a text document format. However, a number of web-based DMP tools are currently available that greatly facilitate the process, as they use different templates.
 DataPLANT helps the community by providing [DataPLAN](https://plan.nfdi4plants.org/), a Data Management Plan Generator with various building blocks. The tool provides guidance throughout the writing process, as it is a living document. When opening the tool, users first need to select the type of document they want to generate: a detailed european DMP, a short proposal DMP, or a detailed guide through the project. Depending on the choice, the tool will restructure the document and point out errors when information is missing. The tool also gives the possibility to save the document in different formats during or after completion.
 
-![DMPG](../img/dataplan.png)
+![DMPG](./../img/dataplan.png)
 
 ## Follow-up
 - If you are looking for DataPLAN, the Data Management Plan (DMP) generator of DataPLANT, you can find it [here](https://plan.nfdi4plants.org).

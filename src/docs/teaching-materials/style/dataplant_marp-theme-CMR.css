@@ -1,0 +1,135 @@
+/* @theme dataplant_marp-theme-CMR */
+
+@import 'default';
+
+header {
+  top: 30px;
+  height: 60px;
+}
+
+footer {
+  height: 60px;
+  padding: 10px;
+  bottom: 00px;
+}
+
+h1 {
+  font-size: 54px;
+  font-family: Calibri, sans-serif;
+  color:#A2A1A1;
+  text-align: center;
+  margin: 50px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+}
+
+h1 span {
+  font-size: 35px;
+  font-family: Calibri, sans-serif;
+  font-style: italic;
+  color:#0BB5DD;
+  text-align: center;
+}
+
+h2 {
+  font-size: 35px;
+  font-family: Calibri, sans-serif;
+  color: #2D3E50;  
+}
+
+code {
+  /* font-size: 20px; */
+  /* color: #c21f3a; */
+}
+
+section {
+  font-size: 30px;
+  font-family: Calibri, sans-serif;
+  color: #2D3E50;
+  text-align: start;
+  /* padding: 40px; */
+}
+
+/* Center images in the main section ("block") */
+
+section p img {
+  display: block;
+  background-color: transparent;
+  /* position: fixed;
+  top: 200px;
+  left: 0;
+  right: 0; */
+  margin: 0px auto 0px auto;  /* top right bottom left*/ 
+}
+
+a {
+  color: #0BB5DD;
+}
+
+img.emoji {
+  display: inline;
+  }
+
+/* Styling page number */
+section::after {
+  font-family: Calibri, sans-serif;
+  font-size: 20px;
+  color: #2D3E50  
+}
+
+/* The code below allows you to divide the slide into 3 columns
+Code example:
+### A split slide
+<!-- _class: split -->
+
+<div class=ldiv>
+
+#### Title for the left panel
+- listed item
+- listed item
+- listed item
+</div>
+
+<div class=mdiv>
+
+#### Title for the left panel
+- listed item
+- listed item
+- listed item
+</div>
+
+<div class=rdiv>
+
+#### Title for the right panel
+- listed item
+- listed item
+- listed item
+</div>
+ */
+
+section.split {
+  overflow: visible;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 350px 500px 350px;
+  grid-template-rows: 100px auto;
+  grid-template-areas: 
+      "slideheading slideheading slideheading"
+      "leftpanel midpanel rightpanel";
+}
+/* debug */
+section.split h3, 
+section.split .ldiv,
+section.split .mdiv,
+section.split .rdiv { border: hidden 1.5pt dashed dimgray; }
+section.split h3 {
+  grid-area: slideheading;
+  font-size: 50px;
+}
+section.split .ldiv { grid-area: leftpanel; }
+section.split .mdiv { grid-area: midpanel; }
+section.split .rdiv { grid-area: rightpanel; }
+
+/*If you want to see the border of the columns, you can remove the "hidden" after "border:". */

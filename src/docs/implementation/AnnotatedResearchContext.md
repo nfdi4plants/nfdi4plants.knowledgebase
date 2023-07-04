@@ -1,12 +1,14 @@
 ---
 layout: docs
 title: Annotated Research Context
-published: 2022-05-25
-author: Martin Kuhl
-author_github: martin-kuhl
+date: 2022-05-25
+author:
+- name: Martin Kuhl
+  github: https://github.com/Martin-Kuhl
+  orcid: https://orcid.org/0000-0002-8493-1077
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
-article_status: published
+status: published
 todo:
     - Technical implementations (machine-readability)
 ---
@@ -27,7 +29,7 @@ The ARC concept relies on a structure that partitions studies, assays, workflows
 
 This results in standardized RDM procedures being process-oriented, meaning that each tool realizes or supports the researcher in a distinct task within the RDM cycle. As a consequence, this enables the desired mixed mode of application, in which both human and machine can operate processes simultaneously or asynchronously while avoiding technological barriers.
 
-![ARC](../img/ARC.jpg)
+![ARC](./../img/ARC.jpg)
 Figure 1: Basic ARC folder structure.
 
 ## Technical implementations
@@ -108,7 +110,7 @@ Name | Type | Tasks on metadata
 [kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
 [kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 [kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arcCommander.html "Quickstart ARC"
+[kb-QuickStart_arc]: ../tutorials/arcCommander_QuickStart.html "ARC User Journey"
 [kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
 [kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
 [kb-DataSharing]: ../fundamentals/DataSharing.html "Data Sharing"
@@ -116,7 +118,7 @@ Name | Type | Tasks on metadata
 <!-- DataPLANT web links -->
 
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
-[kb-ArcCommander-Manual]: ../implementation/ArcCommanderManual/index.html "ARC Commander Manual"
+[kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
 
 <!-- Reference web links -->

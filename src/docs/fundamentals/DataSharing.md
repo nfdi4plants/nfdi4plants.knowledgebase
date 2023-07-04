@@ -1,13 +1,14 @@
 ---
 layout: docs
 title: Data Sharing
-published: 2022-05-23
-author: Dominik Brilhaus
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
+date: 2022-05-23
+author:
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
-article_status: draft
+status: published
 ---
 
 ## The merits of data sharing
@@ -65,7 +66,7 @@ In order to use the [DataHUB][kb-DataHub] and other DataPLANT infrastructure and
 [kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 
 <!-- kb-Tutorials -->
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+[kb-QuickStart_arc]: ../tutorials/ARCUserJourney.html "ARC User Journey"
 
 
 <!-- Reference links -->

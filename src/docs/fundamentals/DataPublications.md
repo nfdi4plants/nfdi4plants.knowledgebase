@@ -1,13 +1,14 @@
 ---
 layout: docs
 title: Data Publications
-published: 2022-05-19
-author: Martin Kuhl
-author_github: martin-kuhl
+date: 2022-05-19
+author:
+- name: Martin Kuhl
+  github: https://github.com/Martin-Kuhl
+  orcid: https://orcid.org/0000-0002-8493-1077
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
-article_status: published
-todo:
+status: published
 ---
 
 
@@ -44,7 +45,7 @@ For more information see [data papers & data journals](#data-papers--data-journa
 -->
 
 
-![Data publishing](../img/DataPublication.jpg)
+![Data publishing](./../img/DataPublication.jpg)
 
 **Figure 1:** During publication, datasets are typically deposited in a repository to make them available, documented to support reproduction and reuse, and assigned an identifier to facilitate citation. Some, but not all, publishers review datasets to validate them.
 
@@ -93,7 +94,7 @@ Name | Type | Tasks on metadata
 [kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
 
 <!-- kb-Tutorials -->
-[kb-QuickStart_arc]: ../tutorials/QuickStart_arc.html "Quickstart ARC"
+[kb-QuickStart_arc]: ../tutorials/ARCUserJourney.html "ARC User Journey"
 
 
 <!-- DataPLANT web links -->

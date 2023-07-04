@@ -1,15 +1,14 @@
 ---
 layout: docs
 title: Public Data Repositories
-published: 2022-05-09
-author: Dominik Brilhaus
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
+date: 2022-05-09
+author:
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
-article_status: Curation
-todo: 
-    - Update links to other KB articles
+status: published
 ---
 
 ## What are data repositories?
@@ -57,7 +56,7 @@ The following resources provide good starting points to seek a suitable reposito
 
 Depositing research data at a public data repository can be tedious. Especially the domain-specific repositories require compliance with specific data submission routines (a) in terms of format and content and (b) for both "raw data" and "metadata". Only data types relevant for the respective domain are accepted and need to be provided in proper data formats. In order to guarantee that the information required to properly describe the data is present, they require adherence to domain-specific [metadata][kb-Metadata] standards, represented in the proper format and oftentimes require the use of controlled vocabularies and ontologies. And finally the mere technicalities of how to collect and submit the (meta)data varies greatly between repositories, ranging from the use of pure upload via file transfers (e.g. FTP), APIs, online web forms or specialized software requiring local installation. The large repository providers invest a lot to harmonize their formats and submission routines. Still, there is a long way to go and we are currently far away from the unified way where "If you know one, you know them all."
 
-![Submitting to repositories](../img/repositories_submission.png)
+![Submitting to repositories](./../img/repositories_submission.png)
 
 <!-- TODO: add section on 
 
@@ -105,7 +104,7 @@ Name | Type | Tasks on metadata
 [hp-DataHUB]: <https://git.nfdi4plants.org> "DataHUB"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
-[kb-ArcCommander-Manual]: ../implementation/ArcCommanderManual/index.html "ARC Commander Manual"
+[kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 
 
 <!-- Reference web links -->
