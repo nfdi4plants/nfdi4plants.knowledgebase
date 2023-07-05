@@ -70,7 +70,7 @@ How often should I sync my ARC?
 </summary>
 We would not want to recommend a fixed time interval (once every hour / day / week) for how often you ideally sync the ARC. In general, the more you work with your ARC, the more you add or update, annotate or analyze data, the more you will want to make sure these changes are saved. Consider the syncing as a way to backup your project's progress as well as an "undo button".
 
-:bulb: For more details, check out the [Syncing Recommendations](./../guides/arc_SyncingRecommendations.html)
+:bulb: For more details, check out the [Syncing Recommendations](./../guides/arc_SyncingRecommendation.html)
 
 </details>
 
