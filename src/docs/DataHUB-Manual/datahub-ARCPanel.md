@@ -13,7 +13,3 @@ add sidebar: _sidebars/mainSidebar.md
 
 <img src="./img/datahub-ARC-overview.drawio.svg" style="width:75%;display: block;margin: 20px auto;">
 
-
-## ARC settings
-
-<img src="./img/datahub-ARC-settings.drawio.svg" style="width:75%;display: block;margin: 20px auto;">
