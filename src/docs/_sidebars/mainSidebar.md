@@ -76,6 +76,16 @@
 ## [Expert Features](/docs/SwateManual/Docs06-ISA-JSON.html)
 ### [ISA-JSON](/docs/SwateManual/Docs06-ISA-JSON.html)
 
+# [DataHUB Manual](/docs/DataHUB-Manual/index.html)
+## [Overview](/docs/DataHUB-Manual/datahub-overview.html)
+## [User Settings](/docs/DataHUB-Manual/datahub-userSettings.html)
+## [Projects Panel](/docs/DataHUB-Manual/datahub-projectsPanel.html)
+## [ARC Panel](/docs/DataHUB-Manual/datahub-ARCPanel.html)
+### [ARC Settings](/docs/DataHUB-Manual/datahub-ARCSettings.html)
+## [Group Panel](/docs/DataHUB-Manual/datahub-groupsPanel.html)
+### [Create a new user group](/docs/DataHUB-Manual/datahub-CreateGroup.html)
+
+
 # [Guides](/docs/guides/index.html)
 ## [ARC User Journey](/docs/guides/ARCUserJourney.html)
 ## [Create your ARC](/docs/guides/index-CreateYourARC.html)
