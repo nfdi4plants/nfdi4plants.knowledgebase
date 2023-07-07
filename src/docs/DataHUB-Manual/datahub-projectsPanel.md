@@ -13,5 +13,14 @@ add sidebar: _sidebars/mainSidebar.md
 
 The projects panel lists all you ARC projects.
 
-<img src="./img/datahub-projectsPanel.drawio.svg" style="width:75%;display: block;margin: 20px auto;">
+<img src="./img/datahub-projectsPanel.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
 
+
+1. Choose a tab (1) to see only your ARCs, or explore other publicly available ARCs. 
+2. The main panel (2) lists all ARCs
+3. Here you can also see, the visibility level (3), and 
+4. your permission or role (4) for the listed ARC. 
+5. You can create a **New Project** in the top-right corner (5).
+
+
+Once you click one of the listed ARCs, you are directed to the [ARC panel](./datahub-ARCPanel.html).
