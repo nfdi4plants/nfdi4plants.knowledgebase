@@ -79,6 +79,7 @@
 # [DataHUB Manual](/docs/DataHUB-Manual/index.html)
 ## [Overview](/docs/DataHUB-Manual/datahub-overview.html)
 ## [User Settings](/docs/DataHUB-Manual/datahub-userSettings.html)
+### [Generate a Personal Access Token (PAT)](/docs/guides/datahub-GeneratePAT.html)
 ## [Projects Panel](/docs/DataHUB-Manual/datahub-projectsPanel.html)
 ## [ARC Panel](/docs/DataHUB-Manual/datahub-ARCPanel.html)
 ### [ARC Settings](/docs/DataHUB-Manual/datahub-ARCSettings.html)
