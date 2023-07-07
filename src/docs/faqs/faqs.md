@@ -1,11 +1,11 @@
 ---
 layout: docs
 title: Frequently Asked Questions
-published: 2023-05-11
+date: 2023-05-11
 add toc: true 
 add support: true 
 add sidebar: _sidebars/mainSidebar.md
-article_status: published
+status: published
 ---
 
 ## General
@@ -63,6 +63,15 @@ To properly re-use and reference such a dataset, we recommend to add a `study` t
 Are there any recommendations for titles or identifiers?
 </summary>
 Avoid using spaces in the identifier. Use underscores and capital letters instead. There are no specific restrictions regarding the title. Although it is possible to fill in the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
+</details>
+
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+How often should I sync my ARC?
+</summary>
+We would not want to recommend a fixed time interval (once every hour / day / week) for how often you ideally sync the ARC. In general, the more you work with your ARC, the more you add or update, annotate or analyze data, the more you will want to make sure these changes are saved. Consider the syncing as a way to backup your project's progress as well as an "undo button".
+
+:bulb: For more details, check out the [Syncing Recommendations](./../guides/arc_SyncingRecommendation.html)
+
 </details>
 
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">

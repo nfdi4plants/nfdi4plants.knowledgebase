@@ -10,9 +10,10 @@ style: ' footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {heigh
   0.5;} '
 layout: slides
 title: lesson_030_BigPicture_ARC_DataPLANT
-author: Cristina Martins Rodrigues
-author_orcid: https://orcid.org/0000-0002-4849-1537
-author_github: CMR248
+author: 
+- name: Cristina Martins Rodrigues
+  orcid: https://orcid.org/0000-0002-4849-1537
+  github: CMR248
 images_used:
 - User_Challenges_002.svg
 - DataPLANT_BigPicture_seq1.png

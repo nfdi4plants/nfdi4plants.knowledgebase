@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: "Installing the ARC Commander - MacOS"
-published: 2022-12-20
+date: 2022-12-20
 add toc: false
 add support: false
 add sidebar: _sidebars/mainSidebar.md
@@ -53,4 +53,4 @@ You should see the following or similar message:
 > v0.4.0  
 > Done processing command.  
 
-> :bulb: A global config file will be created the first time you use the ARC Commander in the folder `~/.config/DataPLANT/ArcCommander/`
+> :bulb: A global config file will be created the first time you use the ARC Commander at `~/.config/DataPLANT/ArcCommander/ArcCommander.config`

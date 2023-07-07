@@ -9,9 +9,10 @@ footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="./../../.
 style: 'footer {height: 30px; padding: 10px; bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 20px; padding-left: 20px; opacity: 0.5;}'
 layout: slides
 title: "Annotated Research Context - Folder Structure"
-contributor_name: Cristina Martins Rodrigues  
-contributor_orcid: https://orcid.org/0000-0002-4849-1537  
-contributor_github: CMR248
+author: 
+- name: Cristina Martins Rodrigues
+  orcid: https://orcid.org/0000-0002-4849-1537
+  github: CMR248
 images_used:
   - ARC_DataCentricIntegration_img1.png
   - ARC_fillWithData_seq1.png

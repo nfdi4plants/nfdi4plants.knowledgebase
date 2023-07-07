@@ -1,13 +1,14 @@
 ---
 layout: docs
 title: Introduction to Markdown
-published: 2022-07-06
-author: Dominik Brilhaus
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
+date: 2022-07-06
+author:
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
-article_status: not published
+status: published
 ---
 
 - [What is Markdown?](#what-is-markdown)

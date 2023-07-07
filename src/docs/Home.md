@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Home
-published: 2022-12-14
+date: 2022-12-14
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
 add support: false

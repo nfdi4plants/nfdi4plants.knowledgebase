@@ -4,10 +4,11 @@ marp: true
 theme: dataplant_marp-theme
 layout: slides
 title: Feedback Circle
-author: "Dominik Brilhaus"
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
-license: [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+author:
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
+license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 duration_minutes: 10
 date: 2022-10-12
 ---

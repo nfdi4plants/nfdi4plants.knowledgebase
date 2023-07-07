@@ -1,12 +1,14 @@
 ---
 layout: docs
 title: Swate QuickStart
-published: 2022-08-05
-author: Martin Kuhl
-author_github: martin-kuhl
+date: 2022-08-05
+author:
+- name: Martin Kuhl
+  github: https://github.com/Martin-Kuhl
+  orcid: https://orcid.org/0000-0002-8493-1077
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
-article_status: published
+status: published
 todo:
 ---
 

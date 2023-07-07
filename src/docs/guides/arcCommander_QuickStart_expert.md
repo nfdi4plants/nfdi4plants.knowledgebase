@@ -1,14 +1,15 @@
 ---
 layout: docs
 title: ARC Commander QuickStart (Experts)
-published: 2023-01-27
-author: "Dominik Brilhaus"
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
+date: 2023-01-27
+author:
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
 add toc: true
 add support: true
 add sidebar: _sidebars/mainSidebar.md
-article_status: published
+status: published
 ---
 
 ## About this guide

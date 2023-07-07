@@ -1,21 +1,33 @@
 ---
 layout: docs
 title: Knowledge Base Contribution Guide
-published: 2022-12-14
+date: 2022-12-14
 add toc: true
 add support: true
 add sidebar: _sidebars/mainSidebar.md
-article_status: published
-todo:  
+status: published
+author:
+- name: Kevin Frey
+  github: https://github.com/Freymaurer
+  orcid: https://orcid.org/0000-0002-8510-6810
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
+- name: Martin Kuhl
+  github: https://github.com/Martin-Kuhl
+  orcid: https://orcid.org/0000-0002-8493-1077
 ---
 
 ## About this guide
 
-Your contribution to the DataPLANT Knowledge Base is highly appreciated. This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones. For changes and suggestions, feel free to open an issue or to open a pull request.
-
-<span class="badge-category">User</span><span class="badge-selected" id="badge-datasteward">Data Steward</span>  <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
+Your contribution to the DataPLANT Knowledge Base is highly appreciated. This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones. For changes and suggestions, feel free to open a GitHub issue or pull request.
 
 
+<a href="./index.html">
+  <span class="badge-category">User</span><span class="badge-selected" id="badge-datasteward">Data Steward</span>  
+  <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
+</a>
+<br>
 <br>
 
 ## Before we start
@@ -34,24 +46,22 @@ Before contributing to the knowledge base, you should have
 
 - :ballot_box_with_check: a [GitHub](https://github.com) account and some routine with GitHub
 - :ballot_box_with_check: an up-to-date version of [Node.JS](https://nodejs.org/) installed
+- :ballot_box_with_check: an up-to-date version of [.NET](https://dotnet.microsoft.com/en-us/download) installed
 
 - :bulb: We recommend working with [VS Code](https://code.visualstudio.com/download), with extensions for easy markdown editing and spell check.
-- :bulb: Feel free to contact us for Data Steward support.
+- :bulb: For a general introduction to writing markdown, see the [markdown tutorial](./guides/tutorial_IntroductionToMarkdown.html) and references therein.
+- :rocket: Feel free to contact us for Data Steward support.
 
 </div>
+<br>
 
 ## Introduction
 
 The DataPLANT Knowledge Base is built on [nfdi-web-components](https://nfdi4plants.github.io/web-components-docs/) which fit **markdown** content into this "framework".
-For a general introduction to writing markdown, see: [Markdown tutorial](./guides/tutorial_IntroductionToMarkdown.html) and references therein.
-
-## Authoring Content
-
-Read more about authoring content in the fornax section of the nfdi4plants web components docs [here](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax)
-
-:warning: Please make sure to especially follow the markdown syntax section of the [nfdi4plants web components docs](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#markdown-syntax). 
 
 ## GitHub Routines
+
+Please follow these steps to fork the knowledge base repository and clone your fork to your computer. 
 
 1. [Fork](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/fork) the Knowledge Base Git repository.
    
@@ -70,30 +80,30 @@ Read more about authoring content in the fornax section of the nfdi4plants web c
 
 4. If edited or added existing content, please assign the original author during your pull-request to review your changes.
   
-  - The github user name of the original author is stored in the yaml block on top under `author_github`
+  - The github user name of the original author is stored in the yaml block on top under `author // github`
   - During the pull-request mention the author via `@<author_github>`.
 
 > :warning: This is not a full-fledged GitHub tutorial. Please refer to available tutorials online or contact the Knowledge Base curators.
 
 ## Local testing
 
-The following instructions allow you to test and see how your changes come into play and whether everything renders correctly.
+The following instructions allow you to test and see how your changes come into play and check whether everything renders correctly.
 
 > :warning: It's highly recommended to *frequently* check your changes locally. Please **do not** produce and submit a lot of content without prior local testing.
 
 ### Setup
-
-This needs to be done only once after downloading.
 
 1. Download the repo.
 2. Run `dotnet tool restore` in root directory.
 3. Run `dotnet paket install` in root directory.
 4. Run `npm install` in root directory.
 
+:bulb: This needs to be done only once after cloning the repo.
+
 ### Run
 
 1. Run `npm run fornax`.
-2. Open page in browser [http://127.0.0.1:8080/](http://127.0.0.1:8080/).
+2. Open the page in your browser [http://127.0.0.1:8080/](http://127.0.0.1:8080/).
 
 ### Routines
 
@@ -121,13 +131,62 @@ Index created html files. Creates `src/_public/pagefind` folder. **MUST** be use
 npm run index
 ```
 
-Same as `npm run index` but starts local server to test searchbar. Currently the only way to test searchbar locally, **but will not** allow to track changes in markdown files like `npm run fornax` does (If you want to combine both a PR would be more than welcome). 
+Same as `npm run index` but starts local server to test search bar. Currently the only way to test search bar locally, **but will not** allow to track changes in markdown files like `npm run fornax` does (If you want to combine both a PR would be more than welcome). 
 
 ```bash
 npm run indexserve
 ```
 
-## Common Errors
+---
+
+## Authoring Content
+
+Read more about authoring content in the fornax section of the nfdi4plants web components docs [here](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax)
+
+:warning: Please make sure to especially follow the markdown syntax section. 
+
+:bulb: The following sections refer to contents with `layout: docs` as used for articles and guides. 
+
+:construction: Contribution of slides (i.e. in folder `src/docs/teaching-materials/` and sidebar section "Teaching Materials") is currently under construction. See the additional guide on [slide deck](./guides/contribute_slide-decks.html). 
+
+### Knowledge Base repo structure
+
+- The source to all content shown at the public website https://nfdi4plants.org/nfdi4plants.knowledgebase/ resides in the folder `src/docs`
+- All other files are mostly "backend", help to render the content to html and can safely be ignored by most contributors
+- The `src/docs` structure (as of June 29th, 2023) looks like this
+
+```
+src/docs
+├── ArcCommanderManual
+├── CONTRIBUTING.md
+├── Home.md
+├── SwateManual
+├── _ignored
+├── _sidebars
+├── faqs
+│   └── faqs.md
+├── fundamentals
+│   ├── DataManagementPlan.md
+│   ├── DataPublications.md
+│   ├── ...
+├── guides
+│   ├── ARCUserJourney.md
+│   ├── BestPracticesForDataAnnotation.md
+│   ├── ...
+├── img
+├── implementation
+│   ├── AnnotatedResearchContext.md
+│   ├── AnnotationPatterns.md
+│   ├── ArcCommander.md
+│   ├── ...
+├── teaching-materials
+└── tutorials
+```
+
+:bulb: For easier findability we try to align the folder structure with how the content is presented in the sidebar of the public site. This is however not always feasible or sensible (for reasons). 
+
+
+### Common Errors
 
 - Missing metadata block
 - Missing or false required (`MUST`) attribute in metadata block
@@ -136,9 +195,9 @@ npm run indexserve
   - to sidebar elements
   - to images
 
-## Markdown to HTML Rendering Rules
+### Markdown to HTML Rendering Rules
 
-Every markdown document stored in `/nfdi4plants.knowledgebase/src/docs` or any subfolder 
+Every markdown document with the YAML key `layout: docs` stored in `/nfdi4plants.knowledgebase/src/docs` or any subfolder 
 (except `_ignored`) will be rendered to html and become publicly available once pushed to the main repository.
 
 ### Ignored Content
@@ -153,6 +212,8 @@ Every markdown document stored in `/nfdi4plants.knowledgebase/src/docs` or any s
 Although most markdown content will be rendered and published, it will not prominently be visible to all visitors.
 It will only become visible in the sidebar once the article is linked in the respective sidebar 
 (typically `add sidebar: _sidebars/mainSidebar.md`)
+
+---
 
 ## Content Design Principles
 
@@ -175,31 +236,58 @@ In the following, some ideas are described on how to deal with this:
 - **Basic relative paths:** These will look like this: `[Test](/README.html)`. 
 By starting with `/` we implicitly say "start at host". 
 So in development it will start with `http://127.0.0.1:8080/`, in production it will start with `https://nfdi4plants.github.io/`. 
-Because in production we also need `https://nfdi4plants.github.io/nfdi4plants.knowledgebase/`, this type of relative paths can create issues! ⚠️
-- **Relative paths in sidebar:** The sidebars actually check if you are currently in `dotnet fornax watch` mode. So you can use basic relative paths here. Example `
-    ```markdown
-    ```Fundamentals
-    # Introduction:/docs/Home.html
-    ```!
-    ```
-    `/docs/Home.html` will be parsed to `/nfdi4plants.knowledgebase/docs/Home.html`.
+Since in production we also need `https://nfdi4plants.org/nfdi4plants.knowledgebase/`, this type of relative paths can create issues! ⚠️
+- **Relative paths in sidebar:** The sidebars actually check if you are currently in `npm run fornax` mode. So you can use basic relative paths here. 
+
+For example
+
+```markdown
+```Fundamentals
+# [Fundamentals](/docs/fundamentals/index.html)
+```!
+```
+`/docs/fundamentals/index.html` will be parsed to `/nfdi4plants.knowledgebase/docs/fundamentals/index.html`.
     
 - **Relative paths from current file:** These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". Example: `[Test](./ResearchDataManagement.html)`. Starting with `./` translates to "coming from the position of this file". We can even go up in the file hierarchy, like `[Test](./../docs/README.html)`. This translates to "coming from the position of this file, go one folder higher and into the docs directory to find the [Introduction](./../docs/Home.html) there."
-<!--The last example link links now to "README.md" as the Contribution guide currently linked to from the website it the README within the repo and not shown on the website. If the contribution guide is moved in the future, this needs to be changed.-->
-### Structure and Format
+
+### Document structure and format
 
 Try to avoid deep structures by using no more than two headline levels, i.e.
 
 <pre><code>```
-## Headline level 2 <!-- omit in toc -->
-### Headline level 3 <!-- omit in toc -->
+## Headline level 2
+### Headline level 3
 ```</code></pre>
 
-Level 1 is automatically generated from the article's `title: `.
+Headline level 1 is automatically generated from the article's `title: `.
 
-### Images
+### Images / figures
 
-- simple markdown logic (not HTML): `![name_of_image](path_to_image.png)`
+Images can be linked
+
+1. via simple markdown logic: `![name_of_image](path_to_image.png)`
+2. via html: `<img src="path_to_image.png">` 
+
+:bulb: Please store images in `src/docs/img`. 
+
+- The folder `src/docs/img` holds image files (preferably *.svg, *.png) or the original source file (.pptx, .drawio.svg) used to create the image file(s)
+- Avoid adding captions or links to figure files
+- If powerpoint was used to create a figure
+  - the pptx stored in `src/docs/img` is supposed to be a file of only a single slide or slide sequence (i.e. consecutive slides, where one image builds on the previous)
+  - the name of the resulting figure file (e.g. "FAIRprinciples.png") MUST be aligned with the source file (e.g. "FAIRprinciples.pptx")
+    - a consecutive number is suffixed to images from slide sequences (e.g. "FAIRprinciples_seq1.png", "FAIRprinciples_seq2.png")
+
+
+### Licensed material
+
+- Make sure you are allowed to add the content. If you reuse any content from other sources, make sure to reference the source and / or license, if applicable. 
+- In particular, when adding images that you did not create yourself, please clearly state this by
+  1. adding the source to the [`src/docs/img/_ImageIndex.md`](./img/_ImageIndex.html), 
+  2. adding a link / license (however applicable) to the content (artilce, tutorial, slide deck, etc.) where you use the image, and
+  3. reminding the knowledge base curators during your pull request.
+
+
+---
 
 ## File Name Requirements
 
@@ -210,88 +298,46 @@ File names:
 - MUST NOT contain spaces
 - MUST use [snake_case](https://en.wikipedia.org/wiki/Snake_case) (lower_case_with_underscores) OR [PascalCase](https://techterms.com/definition/pascalcase) (UpperCase)
 
-> Remember: Changing file names (and paths) means changing URLs and can easily lead to dead links.
+> :warning: Changing file names (and paths) means changing URLs and can easily lead to dead links.
 
-## Addressing Readers
+
+## Avoiding dead links
+
+Once in a while we (need to) restructure the `/nfdi4plants.knowledgebase/src/docs` folder a bit, which includes changes to file and folder names, i.e. producing dead links. 
+In this case, the least we can do, is to keep the knowledge base itself intact:
+
+1. Carefully check **all markdown documents** for cross-links to the original file name (this can easily be done via e.g. VS Code). 
+2. Remember to check for both file endings `.md` and `.html`.
+3. Replace with the new file name / path. 
+
+This however does not help for articles, tutorials, etc. that have been shared with the community (via mail, in slide decks, etc.). 
+In this case, please leave a markdown with the original file name and path and just fill it with the following
+
+```markdown
+---
+layout: docs
+date: 2023-06-07
+status: prevent-dead-link
+title: Sorry, this site moved...
+---
+
+The site you are looking for was moved [here](./../path/to/new/file).
+```
+
+This is not the most beautiful solution as it clutters the knowledge base, but it helps against user frustration and should be done for frequently shared articles.
+Adding a date helps us clean up those files after a certain time interval.
+
+:bulb: If you're sharing content with the users, it might be best to only share the link to the knowledge base https://nfdi4plants.org/nfdi4plants.knowledgebase/, rather than a concrete link to a tutorial (e.g. https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html).
+
+### Addressing Readers
 
 We generally try to address users and readers directly.
 Use "you can", not "the user can" or "one can..."
 
-## Language
+### Language
 
 British English
 
 > Note: If you work with Visual Studio Code -
 > Check out the extension "Code Spell Checker" https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
 > with British English ("cSpell.language": "en-GB") support.
-
-## Link Collection
-
-> Note: This is just a link collection for recurrent use in KB articles
-> Nothing automatized. Just copy/paste.
-
-⚠️ Must be read from [markdown](https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/main/src/docs/CONTRIBUTING.md), will not be shown in html.
-
-<!-- Links to DataPLANT Knowledge Base (kb-) -->
-
-<!-- kb-Fundamentals -->
-
-[kb-DataManagementPlan]: ../fundamentals/DataManagementPlan.html "Data Management Plan"
-[kb-DataPublications]: ../fundamentals/DataPublications.html "Data Publication"
-[kb-DataSharing]: ../fundamentals/DataSharing.html "Data Sharing"
-[kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
-[kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
-[kb-PersistentIdentifiers]: ../fundamentals/PersistentIdentifiers.html "Persistent Identifiers"
-[kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
-[kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
-[kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
-
-<!-- kb-Implementation -->
-[kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
-[kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
-[kb-ArcCommander]: ../implementation/ArcCommander.html "DataPLANT ARC Commander"
-[kb-Swate]: ../implementation/Swate.html "DataPLANT Swate"
-
-<!-- kb-Tutorials -->
-[kb-QuickStart_arc]: ../tutorials/ARCUserJourney.html "ARC User Journey"
-[kb-swate_QuickStart]: ../tutorials/swate_QuickStart.html "Quickstart Swate"
-[kb-arcCommander_QuickStart]: ../tutorials/arcCommander_QuickStart.html "QuickStart ARC Commander"
-
-<!-- Links to DataPLANT Homepage (hp-) -->
-
-[hp-Registration]: <https://register.nfdi4plants.org/> "DataPLANT Registration"
-[hp-DataHUB]: <https://git.nfdi4plants.org> "DataPLANT DataHUB"
-[hp-HelpDesk]: <https://helpdesk.nfdi4plants.org> "DataPLANT Help Desk"
-
-<!-- Links to DataPLANT GitHub (gh-) -->
-
-[gh-DataPlant]: <https://github.com/nfdi4plants/> "GitHub DataPLANT"
-[gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
-[gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/> "ArcCommander"
-[kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
-[gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
-
-<!-- Links to external (ext-) sources -->
-
-[ext-github-join]: <https://github.com/join/> "Join GitHub"
-[ext-github-desktop]: <https://desktop.github.com/> "GitHub Desktop"
-[ext-git]: <https://git-scm.com/download/> "Git"
-[ext-git-lfs]: <https://git-lfs.github.com/> "Git-LFS"
-[ext-excel-online]: <https://www.microsoft.com/en-us/microsoft-365/excel> "Excel online"
-
-[ext-VSCode]: https://code.visualstudio.com/ "Visual Studio Code"
-
-[ext-galaxy]: <https://plants.usegalaxy.eu/> "Galaxy Plants"
-[ext-omero]: <https://www.openmicroscopy.org/omero/> "Omero"
-[ext-zenodo]: <https://zenodo.org/> "Zenodo"
-[ext-invenio]: <https://inveniosoftware.org/products/rdm/> "Invenio"
-[ext-DataJournals]: https://www.researchdata.uni-jena.de/en/information/data-publication "RDM Jena Data Journals"
-
-[ext-EBI-PRIDE]: https://www.ebi.ac.uk/pride/ "EBI PRIDE"
-[ext-re3data]: https://www.re3data.org/ "re3data.org"
-[ext-CreativeCommons]: https://creativecommons.org/ "Creative Commons"
-[ext-DublinCore]: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/> "DublinCore"
-[ext-DataCite]: <https://schema.datacite.org>  "DataCite"
-[fairsharing.org]: https://fairsharing.org/search?fairsharingRegistry=Standard "Standards at fairsharing.org"
-[doi]: https://www.doi.org/ "Digital Object Identifier"
-[orcid]: https://www.orcid.org/ "ORCID"
