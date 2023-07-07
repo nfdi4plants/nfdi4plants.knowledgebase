@@ -82,7 +82,7 @@
 ## [Projects Panel](/docs/DataHUB-Manual/datahub-projectsPanel.html)
 ## [ARC Panel](/docs/DataHUB-Manual/datahub-ARCPanel.html)
 ### [ARC Settings](/docs/DataHUB-Manual/datahub-ARCSettings.html)
-## [Group Panel](/docs/DataHUB-Manual/datahub-groupsPanel.html)
+## [Groups Panel](/docs/DataHUB-Manual/datahub-groupsPanel.html)
 ### [Create a new user group](/docs/DataHUB-Manual/datahub-CreateGroup.html)
 
 
