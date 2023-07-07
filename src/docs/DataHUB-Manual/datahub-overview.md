@@ -14,7 +14,7 @@ add sidebar: _sidebars/mainSidebar.md
 
 ## Navigation Bar
 
-<img src="./img/datahub-navbar.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
+<img src="./../img/datahub-navbar.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
 
 From the navigation bar you can
 
@@ -28,11 +28,11 @@ From the navigation bar you can
 
 From the hamburger menu in the top-left corner (1) you can navigate to the [projects](./datahub-projectsPanel.html) (2) or [groups](datahub-groupsPanel.html)(3) panels, respectively, by clicking "View all projects (groups)" (4).
 
-<img src="./img/datahub-hamburgerMenu.drawio.svg" style="width:55%;display: block;margin: 20px auto;">
+<img src="./../img/datahub-hamburgerMenu.drawio.svg" style="width:55%;display: block;margin: 20px auto;">
 
 
 ## Avatar Menu
 
 In the avatar menu in the top-right corner (1) you can find your profile name and user name (2), navigate to the [user settings](./datahub-userSettings.html) (3) or sign out (4) of the DataHUB.
 
-<img src="./img/datahub-avatarMenu.drawio.svg" style="width:40%;display: block;margin: 20px auto;">
+<img src="./../img/datahub-avatarMenu.drawio.svg" style="width:40%;display: block;margin: 20px auto;">

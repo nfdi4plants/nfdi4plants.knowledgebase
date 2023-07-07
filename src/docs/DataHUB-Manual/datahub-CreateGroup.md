@@ -14,7 +14,7 @@ add sidebar: _sidebars/mainSidebar.md
 Working with user groups helps to organize multiple ARCs for your lab or consortium. 
 You can create a new group from the [groups panel](datahub-groupsPanel.html). 
 
-<img src="./img/datahub-groupPanel-createGroup.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
+<img src="./../img/datahub-groupPanel-createGroup.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
 
 To create group, 
 

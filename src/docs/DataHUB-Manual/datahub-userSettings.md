@@ -27,7 +27,7 @@ add sidebar: _sidebars/mainSidebar.md
   </div>
 
   <div class="columns-right">
-  <img src="./img/datahub-avatarMenu.drawio.svg" style="width:90%;display: block;margin: 20px auto;">
+  <img src="./../img/datahub-avatarMenu.drawio.svg" style="width:90%;display: block;margin: 20px auto;">
   </div>
 
 </div>
@@ -36,7 +36,7 @@ add sidebar: _sidebars/mainSidebar.md
 <div class="columns">
   
   <div class="columns-left">
-  <img src="./img/datahub-preferences.drawio.svg" style="width:70%;display: block;margin: 20px auto;">
+  <img src="./../img/datahub-preferences.drawio.svg" style="width:70%;display: block;margin: 20px auto;">
   </div>
 
   <div class="columns-right">

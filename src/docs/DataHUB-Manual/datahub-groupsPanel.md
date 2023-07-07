@@ -13,7 +13,7 @@ add sidebar: _sidebars/mainSidebar.md
 
 The groups panel lists all user groups.
 
-<img src="./img/datahub-groupPanel.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
+<img src="./../img/datahub-groupPanel.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
 
 
 1. Choose a tab (1) to see your groups, or explore public groups

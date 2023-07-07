@@ -13,7 +13,7 @@ add sidebar: _sidebars/mainSidebar.md
 
 The ARC Panel is the main working area for your ARC. 
 
-<img src="./img/datahub-ARC-overview.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
+<img src="./../img/datahub-ARC-overview.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
 
 
 In the sidebar to the left, you can

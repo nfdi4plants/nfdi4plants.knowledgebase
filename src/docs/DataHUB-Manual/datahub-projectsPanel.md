@@ -13,7 +13,7 @@ add sidebar: _sidebars/mainSidebar.md
 
 The projects panel lists all you ARC projects.
 
-<img src="./img/datahub-projectsPanel.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
+<img src="./../img/datahub-projectsPanel.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
 
 
 1. Choose a tab (1) to see only your ARCs, or explore other publicly available ARCs. 
