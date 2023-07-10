@@ -25,6 +25,43 @@ July 20th, 2023
 - Intro to elabFTW
 - 
 
+
+
+--- 
+
+## Protocols &ndash; Recipes to Knowledge
+
+
+
+
+---
+
+## Cut protocols into pieces (processes)
+
+![bg right w:90%](./images/define-processes-01.drawio.svg)
+
+---
+
+## Define inputs and outputs
+
+![bg right w:90%](./images/define-processes-02.drawio.svg)
+
+---
+
+## Cut protocols into pieces
+
+![bg right w:90%](./images/define-processes-03.drawio.svg)
+
+---
+
+## Cut protocols into pieces
+
+![bg right w:90%](./images/define-processes-04.drawio.svg)
+
+
+
+
+
 ---
 
 ## Example Scenario
@@ -59,20 +96,20 @@ July 20th, 2023
 
 ## Local ARCs - <br> Project overview
 
-![bg right:50% w:600](images/arc-local-overview.png)
+![bg right:50% w:600](./images/arc-local-overview.png)
 
 
 ---
 
 ## Local ARCs - <br> Project overview
 
-![bg right:50% w:600](images/arc-local-details1.png)
+![bg right:50% w:600](./images/arc-local-details1.png)
 
 ---
 
 ## Local ARCs - <br> Protocols
 
-![bg right:50% w:550](images/arc-local-details2.png)
+![bg right:50% w:550](./images/arc-local-details2.png)
 
 
 ---
@@ -86,40 +123,40 @@ https://git.nfdi4plants.org
 
 ## Example ARC DataHUB - project overview
 
-![w:800](images/datahub-project-overview.png)
+![w:800](./images/datahub-project-overview.png)
 
 
 ---
 
 ## Example ARC DataHUB - ARC overview
 
-![w:800](images/datahub-arc-root.png)
+![w:800](./images/datahub-arc-root.png)
 
 
 ---
 
 ## Example ARC DataHUB - assay protocols
 
-![w:800](images/datahub-arc-assay-protocols.png)
+![w:800](./images/datahub-arc-assay-protocols.png)
 
 
 ---
 
 ## Example ARC DataHUB - protocol detail
 
-![w:800](images/datahub-arc-study-protocol-view.png)
+![w:800](./images/datahub-arc-study-protocol-view.png)
 
 
 ---
 
 ## elabFTW - Overview
 
-![bg right:60% w:700](images/elabFTW-overview-panels.drawio.png)
+![bg right:60% w:700](./images/elabFTW-overview-panels.drawio.png)
 
-elabFTW data is mainly divided in two main categories (panels)
+elabFTW data is mainly divided in two main panels
 
 > `Experiments`  
-> 
+
 > `Database`
 
 
@@ -128,7 +165,7 @@ elabFTW data is mainly divided in two main categories (panels)
 
 ## Experiment Panel
 
-![bg right:60% w:700](images/elabFTW-experiment-list-view.png)
+![bg right:60% w:700](./images/elabFTW-experiment-list-view.png)
 
 The `Experiment` panel is the default "working area" for protocols of daily lab work
 
@@ -136,19 +173,18 @@ The `Experiment` panel is the default "working area" for protocols of daily lab 
 
 ## Database Panel
 
-![bg right:60% w:700](images/elabFTW-database-list-view.png)
+![bg right:60% w:700](./images/elabFTW-database-list-view.png)
 
-The `Database` panel is elabFTW`s place to categorize contents
+The `Database` panel is elabFTW's place to categorize contents
 
 ---
 
 ## Database item types
 
-:bulb: Item types can be defined in the `Admin Panel` (bottom)
+:bulb: Item types can be defined in the `Admin Panel`
 
-1. Admin customizes types of items
 
-![bg right  w:600](images/elabFTW-adminpanel-item-types.png)
+![bg right  w:600](./images/elabFTW-adminpanel-item-types.png)
 
 
 ---
@@ -167,7 +203,7 @@ The `Database` panel is elabFTW`s place to categorize contents
 
 ## Database import
 
-![](images/elabFTW-database-import.png)
+![](./images/elabFTW-database-import.png)
 
 ---
 
@@ -198,19 +234,19 @@ sty03-aba-timeseries | inv001-talinum-cam | sty03-aba-timeseries | Time series e
 
 ## Database import
 
-![w:700](images/elabFTW-database-import-menu.png)
+![w:700](./images/elabFTW-database-import-menu.png)
 
 ---
 
 ## Database import
 
-![w:700](images/elabFTW-database-import-success.png)
+![w:700](./images/elabFTW-database-import-success.png)
 
 ---
 
 ## Database Panel
 
-![w:700](images/elabFTW-database-list-view.png)
+![w:700](./images/elabFTW-database-list-view.png)
 
 
 ---
@@ -231,13 +267,13 @@ sty03-aba-timeseries | inv001-talinum-cam | sty03-aba-timeseries | Time series e
 
 In edit mode
 
-![bg right:70%  w:700](images/elabFTW-experiment-linking-items.png)
+![bg right:70%  w:700](./images/elabFTW-experiment-linking-items.png)
 
 ---
 
 ## Linked items
 
-![bg right:70% w:700](images/elabFTW-experiment-linked-items.png)
+![bg right:70% w:700](./images/elabFTW-experiment-linked-items.png)
 
 
 
