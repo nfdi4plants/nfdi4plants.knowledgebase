@@ -58,18 +58,20 @@ July 11th, 2023
 
 ---
 
+## Community-effort: Share materials
+
+- Content produced in this circle should directly contribute to [Knowledge Base](https://nfdi4plants.org/nfdi4plants.knowledgebase/index.html)
+
+---
+
 ## Communication within the Data Steward Circle
 
 - [MS Teams channel - DataSteward Circle](https://teams.microsoft.com/l/team/19%3a5ZS-JrXjWBtOAJ9zC6c98CC2Bcf0sdkbWl9GH0e-dG81%40thread.tacv2/conversations?groupId=c2ddd330-6865-41c5-9830-bd92d2cef7c6&tenantId=9071867c-98f0-4006-89aa-4e4fd55af39d)
 - Rhythm: bi-weekly, tuesdays
 - Time: 13:30 - 15:30
 - Invition via the new Team
+- Add all present today to an mailing list
 
----
-
-## Community-effort: Share materials
-
-- Content produced in this circle should directly contribute to [Knowledge Base](https://nfdi4plants.org/nfdi4plants.knowledgebase/index.html)
 
 <!--
 ---
