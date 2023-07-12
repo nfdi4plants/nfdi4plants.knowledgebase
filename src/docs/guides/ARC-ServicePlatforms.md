@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: ARCs in service platforms
+title: ARCs in Service Platforms
 date: 2023-07-12
 author:
 - name: Dominik Brilhaus
@@ -13,7 +13,7 @@ add sidebar: _sidebars/mainSidebar.md
 
 ## About this guide
 
-In this guide we explore how the ARC can help streamline data flows and project management in a core facility.
+In this guide we explore how the ARC can help streamline data flows and project management in service platforms.
 
 <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
@@ -35,48 +35,29 @@ It helps to be familiar with
 - :ballot_box_with_check: the [DataHUB](./../implementation/DataHub.html)
 <br>
 <br>
-- :bulb: Note that this guide can only stay at a very abstract level. Feel free to contact us to work out a suitable solution for your facility together.
+- :bulb: Note that this guide can only stay at a very abstract level. Feel free to contact us to work out a suitable solution for your platform together.
 - :warning: In part, this guide presents interim solutions for which we are working on more user-friendly implementations. Your feedback helps!
 
 </div>
 
-
 ## Legend and definition
 
-
-
+With central *service platforms*, we try to cover a range from single-lab services to larger instrumentation-based research infrastructures such as core facilities &ndash; any platform that offers a specific set of methods or assays as a routine service to a community of researchers. Typical examples with application in plant sciences include omics technologies (genome, transcriptome, proteome, metabolome), phenotyping, (microscopic) imaging, genetic engineering or plant growth facilities. 
 
 <div style="height:40px; display: flex; align-items: center; justify-content: left;">
-  <img src="./ARC-ServicePlatforms-images/icons-characters-PhDStudent.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">Customer (i.e. researcher asking for core facility service)
+  <img src="./ARC-ServicePlatforms-images/icons-characters-PhDStudent.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">Customer (i.e. researcher asking for service)
 </div>
 <div style="height:40px; display: flex; align-items: center; justify-content: left;">
-  <img src="./ARC-ServicePlatforms-images/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">Core facility team
+  <img src="./ARC-ServicePlatforms-images/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">Service platform team
 </div>
-
-
-## Core facilities
-
-Core facilities are instrumentation-based research infrastructures, that provide a specific set of methods or assays. 
-
-
-to routinely measure biological samples
-
-
-- examples are core facilities for omics technologies and imaging
-- different (business) models of running a core facility
-
-- lot of customer interaction
-- 
-
-
-
-
-
-
 
 ## Project initiation
 
-Most core facilities have a more or less established routine for submission of samples to be assayed
+to routinely measure biological samples
+
+Service platforms interact with many versatile collaboration partners or users of the provided service. For simplicity, we call them "customer". 
+
+Most service platforms have a more or less established routine for submission of samples to be assayed
 This includes a ping-pong of meetings to find out
   - what is the biological question, what does the researcher want to find out, what is the most suitable method
   - how do the samples need to be prepared and submitted
@@ -110,7 +91,7 @@ During this time a lot of metadata is exchanged
 
 ## What about non-plant-scientists / non-ARC users 
 
-Although we're doing our best to promote the ARC idea and adapt it to a diverse range of use-cases, there will always be users (or customers), who do not actively use the ARC or associated tools. Still, running a core facility, you want to interact with those users mostly in the same routines employed with everyone else.
+Although we're doing our best to promote the ARC idea and adapt it to a diverse range of use-cases, there will always be users (or customers), who do not actively use the ARC or associated tools. Still, running a service platform, you want to interact with those users mostly in the same routines employed with everyone else.
 
 Luckily the DataHUB comes with built-in, intuitive features that 
 
