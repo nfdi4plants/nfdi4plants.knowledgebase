@@ -24,7 +24,7 @@ h1, p{
 
 </style>
 
-![bg fit](./../img/DataPLANT-Background.png)
+![bg fit](./../../../../img/DataPLANT-Background.png)
 
 Kick-Off Meeting
 July 11th, 2023
@@ -52,7 +52,7 @@ July 11th, 2023
 
 ## Topics
 
-- [DataSteward-Circle_Topic-Collection](https://nfdi4plant.sharepoint.com/:x:/s/dp-datatewards/EcSs7PRZ2tJFltWqgQfpc7ABv8t7jfGkyl4dMHZVwWR6bw?e=gPFhhe)
+- DataSteward-Circle_Topic-Collection
 
 <!--(could also be iframe-embedded....)-->
 
@@ -66,7 +66,7 @@ July 11th, 2023
 
 ## Communication within the Data Steward Circle
 
-- [MS Teams channel - DataSteward Circle](https://teams.microsoft.com/l/team/19%3a5ZS-JrXjWBtOAJ9zC6c98CC2Bcf0sdkbWl9GH0e-dG81%40thread.tacv2/conversations?groupId=c2ddd330-6865-41c5-9830-bd92d2cef7c6&tenantId=9071867c-98f0-4006-89aa-4e4fd55af39d)
+- MS Teams channel - DataSteward Circle
 - Rhythm: bi-weekly, tuesdays
 - Time: 13:30 - 15:30
 - Invition via the new Team
