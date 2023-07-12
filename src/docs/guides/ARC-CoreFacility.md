@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: ARC for Core Facilities
-published: 2023-07-06
+title: ARCs in Core Facilities
+date: 2023-07-12
 author:
 - name: Dominik Brilhaus
   orcid: https://orcid.org/0000-0001-9021-3197
@@ -23,19 +23,48 @@ In this guide we explore how the ARC can help streamline data flows and project 
 <br>
 <br>
 
-:warning:
-This guide presents an interim solution. We are working on a more user-friendly implementation.
 
 ## Before we can start
 
-:ballot_box_with_check: 
-:ballot_box_with_check: 
+<div id="before-start">
+
+It helps to be familiar with
+
+- :ballot_box_with_check: the concept of the [ARC](./../implementation/AnnotatedResearchContext.html)
+- :ballot_box_with_check: the different [ISA file types](./isa_FileTypes.html)
+- :ballot_box_with_check: the [DataHUB](./../implementation/DataHub.html)
+<br>
+<br>
+- :bulb: Note that this guide can only stay at a very abstract level. Feel free to contact us to work out a suitable solution for your facility together.
+- :warning: In part, this guide presents interim solutions for which we are working on more user-friendly implementations. Your feedback helps!
+
+</div>
+
+
+## definition
+
+customer = researcher who wants to measure samples
 
 
 ## Core facilities
 
-- centers that focus on a specific set of methods to routinely measure biological samples
+Core facilities are instrumentation-based research infrastructures, that provide a specific set of methods or assays. 
+
+
+to routinely measure biological samples
+
+
 - examples are core facilities for omics technologies and imaging
+- different (business) models of running a core facility
+
+- lot of customer interaction
+- 
+
+
+
+
+
+
 
 ## Project initiation
 
@@ -71,10 +100,19 @@ During this time a lot of metadata is exchanged
   - across ARCs covering routine measurements
 
 
-## What about non-plant-scientist / non-ARC users 
+## What about non-plant-scientists / non-ARC users 
 
-- the DataHUB comes with built-in, intuitive features 
+Although we're doing our best to promote the ARC idea and adapt it to a diverse range of use-cases, there will always be users (or customers), who do not actively use the ARC or associated tools. Still, running a core facility, you want to interact with those users mostly in the same routines employed with everyone else.
+
+Luckily the DataHUB comes with built-in, intuitive features that 
+
+
 - users only need access
+  - sign up with orcid
+  - sign up with...
+
+
+## 
 
 
 - you decide wether you meet the researchers half the way, let them initiate the ARC or
@@ -86,4 +124,13 @@ who initiates the ARC
 ## Benefits for the researcher
 
 - already described investigation (and study) for another facility, would not want to double the work for another assay
-- 
+
+
+
+## Recommended steps
+
+- generate templates for sample annotation
+- prepare an example ARC in the DataHUB
+  - An example ARC helps to show users the ARC concept and structure
+  - Where can they find what information (protocols, the datasets)
+  - How can they interact with the ARC
