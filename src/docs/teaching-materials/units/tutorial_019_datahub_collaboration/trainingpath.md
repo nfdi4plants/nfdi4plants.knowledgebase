@@ -1,9 +1,10 @@
 ---
 layout: slides
 title: tutorial_019_datahub_collaboration
-author: Cristina Martins Rodrigues
-author_orcid: https://orcid.org/0000-0002-4849-1537
-author_github: CMR248
+author: 
+- name: Cristina Martins Rodrigues
+  orcid: https://orcid.org/0000-0002-4849-1537
+  github: CMR248
 images_used:
 - datahub_members_seq2.png
 - datahub_members_seq3.png

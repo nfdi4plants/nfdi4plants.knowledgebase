@@ -1,14 +1,14 @@
 ---
 layout: docs
 title: DataPLAN
-published: 2022-12-06
-author: Xiaoran Zhou
-author_orcid: https://orcid.org/0000-0002-5622-3348
-author_github: xiaoranzhou
+date: 2022-12-06
+author:
+- name: Xiaoran Zhou
+  github: https://github.com/xiaoranzhou
+  orcid: https://orcid.org/0000-0002-5622-3348
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
-article_status: published
-todo:
+status: published
 ---
 
 [DataPLAN][hp-DataPLAN] is a [Data Management Plan][kb-DataManagementPlan] generator, which can help users creating a plan for their [research data management][kb-ResearchDataManagement]. By using DataPLAN, standardized DMPs for Horizon Europe and Deutsche Forschungsgemeinschaft (DFG) can be generated in five minutes. The fast generation speed is enabled by a template design with integratable answers and single-page web application technology. 

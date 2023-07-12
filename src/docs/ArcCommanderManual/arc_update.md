@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: "Update ISA metadata"
-published: 2022-12-21
+date: 2022-12-21
 add toc: false
 add support: false
 add sidebar: _sidebars/mainSidebar.md

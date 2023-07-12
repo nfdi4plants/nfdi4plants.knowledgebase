@@ -6,10 +6,14 @@ headingDivider:
     - 3
 layout: docs
 title: Contribution Swate Templates
-published: 2023-04-18
+date: 2023-04-18
 author: 
-    - Kevin Frey
-    - Dominik Brilhaus
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
+- name: Kevin Frey
+  github: https://github.com/Freymaurer
+  orcid: https://orcid.org/0000-0002-8510-6810
 add toc: true
 add sidebar: _sidebars\mainSidebar.md
 ---
@@ -111,11 +115,12 @@ figcaption {
 
 ### Recommendations for template design
 
-- keep the template as concise as possible
-- finding suitable building blocks is not always straight-forward
+- Keep the template as concise as possible
+- Finding suitable building blocks is not always straight-forward
 - 👀 If you miss a term or ontology, please follow the [DPBO contribution guide](https://github.com/nfdi4plants/nfdi4plants_ontology) to let us know
-- if you add a template to address a missing method, try to add building blocks that cover experimental procedures (as Parameters) and features of the sample (as Characteristics) that the experimenter would do when working on an experiment of that type
-- if you add a template with a specific endpoint repository (ER) in mind, you may want to add building blocks that match the required fields of this ER
+- If you add a template to address a missing method, try to add building blocks that cover experimental procedures (as Parameters) and features of the sample (as Characteristics) that the experimenter would do when working on an experiment of that type
+- If you add a template with a specific endpoint repository (ER) in mind, you may want to add building blocks that match the required fields of this ER
+- Avoid using the building block type `Factor` in templates. Any given characteristic or parameter in one study or assay can become a factor in another study or assay depending on the experimental context or scientific question. E.g. in one study all samples originate from the same `species` (-> Characteristic) whereas in another study multiple `species` where assayed (-> Factor). 
 
 ### Add Template Metadata
 

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Swate Organization-wide Installation
-published: 2023-02-01
+date: 2023-02-01
 add toc: false
 add sidebar: _sidebars\mainSidebar.md
 ---
