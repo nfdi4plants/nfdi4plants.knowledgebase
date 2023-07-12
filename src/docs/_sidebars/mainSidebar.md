@@ -109,7 +109,7 @@
 ### [Keep files from syncing to the DataHUB](/docs/guides/arc_gitignore.html)
 ### [Working with large data files](/docs/guides/arc_WorkingWithLargeDataFiles.html)
 ### [Adding external data to the ARC](/docs/guides/arc_AddingExternalData.html)
-### [ARCs in Core Facilities](/docs/guides/ARC-CoreFacility.html)
+### [ARCs in Core Facilities](/docs/guides/ARC-ServicePlatforms.html)
 
 
 ## [Contribute](/docs/guides/index-Contribute.html)

@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: ARCs in Core Facilities
+title: ARCs in service platforms
 date: 2023-07-12
 author:
 - name: Dominik Brilhaus
@@ -41,9 +41,17 @@ It helps to be familiar with
 </div>
 
 
-## definition
+## Legend and definition
 
-customer = researcher who wants to measure samples
+
+
+
+<div style="height:40px; display: flex; align-items: center; justify-content: left;">
+  <img src="./ARC-ServicePlatforms-images/icons-characters-PhDStudent.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">Customer (i.e. researcher asking for core facility service)
+</div>
+<div style="height:40px; display: flex; align-items: center; justify-content: left;">
+  <img src="./ARC-ServicePlatforms-images/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">Core facility team
+</div>
 
 
 ## Core facilities
