@@ -50,6 +50,7 @@ In order to work with the VS Code marp extension (i.e. preview and export slides
     "src/docs/teaching-materials/style/dataplant_marp-theme-CMR.css",
     "src/docs/teaching-materials/style/dataplant_marp-theme-Intro.css",
     "src/docs/teaching-materials/style/marp-theme_dataplant-ceplas-ccby"
+    
   ],
   "markdown.marp.enableHtml": true,
   "markdown.marp.exportType": "html",
