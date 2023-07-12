@@ -48,14 +48,14 @@ With central *service platforms*, we try to cover a range from single-lab servic
   <img src="./ARC-ServicePlatforms-images/icons-characters-PhDStudent.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">Customer (i.e. researcher asking for service)
 </div>
 <div style="height:40px; display: flex; align-items: center; justify-content: left;">
-  <img src="./ARC-ServicePlatforms-images/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">Service platform team
+  <img src="./ARC-ServicePlatforms-images/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">Service provider
 </div>
 
 ## Project initiation
 
 to routinely measure biological samples
 
-Service platforms interact with many versatile collaboration partners or users of the provided service. For simplicity, we call them "customer". 
+Service platforms interact with many versatile collaboration partners or users of the provided service. 
 
 Most service platforms have a more or less established routine for submission of samples to be assayed
 This includes a ping-pong of meetings to find out
@@ -67,6 +67,10 @@ During this time a lot of metadata is exchanged
   - meeting minutes could be attached to the ARC's wiki
 
 - typically 
+
+
+## Use of identifiers
+for ISA
 
 
 ## templates for sample submission 
@@ -101,7 +105,11 @@ Luckily the DataHUB comes with built-in, intuitive features that
   - sign up with...
 
 
-## 
+## Meeting your customers in an ARC
+
+
+![Alt text](ARC-ServicePlatforms-images/servicePlatform-Timeline.drawio.png)
+
 
 
 - you decide wether you meet the researchers half the way, let them initiate the ARC or
