@@ -11,8 +11,7 @@ add support: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-## 👥Cooperation with the CEPLAS Metabolomics and Metabolism Laboratory (CMML)
-
+## 👥Cooperation - User regulation
 All cooperations are incumbent upon the ["Nutzerordnung"](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung).
 
 Excerpt of ["Nutzerordnung"](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung):
