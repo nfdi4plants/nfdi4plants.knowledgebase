@@ -47,11 +47,12 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 > ![dataHUB/gitLab Mail](nfdi4plants.knowledgebase/../Images/1688635732619.png)
 
-5. Read and follow the next instructions - 📘 Introduction to the folder structure(#-introduction-to-the-folder-structure) and 📙 User guide(#-user-guide).
+1. Read and follow the next instructions - 📘 [Introduction and User Guide]()
+2. ##-introduction-and-User-Guide)  
 
 <!--
 
 -->
 ***
-
+## 📘 Introduction and User Guide
 
