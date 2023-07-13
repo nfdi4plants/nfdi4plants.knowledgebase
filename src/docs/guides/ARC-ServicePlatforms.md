@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: ARCs in Service Platforms
+title: ARCs in Enabling Platforms
 date: 2023-07-12
 author:
 - name: Dominik Brilhaus
@@ -8,12 +8,12 @@ author:
   github: brilator
 add toc: true
 add support: true
-add sidebar: _sidebars/mainSidebar.md
+# add sidebar: _sidebars/mainSidebar.md
 ---
 
 ## About this guide
 
-In this guide we explore how the ARC can help streamline data flows and project management in service platforms.
+In this guide we explore how the ARC can help streamline data flows and project management in enabling platforms.
 
 <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
@@ -40,51 +40,51 @@ It helps to be familiar with
 
 </div>
 
-## Service Platforms
+## Enabling Platforms
 
-Central *service platforms* can a range from smaller single-lab services to larger instrumentation-based research infrastructures such as core facilities &ndash; any platform that offers a specific set of methods or assays as a routine service to a community of researchers. Typical examples with application in plant sciences include platforms offering omics technologies (genome, transcriptome, proteome, metabolome), phenotyping, (microscopic) imaging, genetic engineering or plant growth facilities. 
+Central *enabling platforms* can range from small single-lab services to larg instrumentation-based research infrastructures such as core facilities. Platforms offer a specific set of methods and assays as a routine support to a community of researchers. Typical examples with application in plant sciences include platforms offering omics technologies (genome, transcriptome, proteome, metabolome), phenotyping, (microscopic) imaging, genetic engineering or plant growth facilities. 
 
-*In the following we call researchers approaching the service platform "customers".*
+*In the following we call researchers approaching the platforms "clients".*
 
-<!-- 
+
 <div style="height:40px; display: flex; align-items: center; justify-content: left;">
-  <img src="./ARC-ServicePlatforms-images/icons-characters-PhDStudent.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">Customer (i.e. researcher asking for service)
+  <img src="./ARC-ServicePlatforms-images/icons-characters-PhDStudent.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">client
 </div>
 <div style="height:40px; display: flex; align-items: center; justify-content: left;">
-  <img src="./ARC-ServicePlatforms-images/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">Service provider
-</div> -->
+  <img src="./ARC-ServicePlatforms-images/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">platform team
+</div>
 
-## Project initiation
+## Project communication and data flow
 
-to routinely measure biological samples
-
-Service platforms interact with many versatile collaboration partners or customers of the provided service. 
-
-Most service platforms have a more or less established routine for submission of samples to be assayed
-This includes a ping-pong of meetings to find out
-  - what is the biological question, what does the researcher want to find out, what is the most suitable method
-  - how do the samples need to be prepared and submitted
-  - what data 
+Central platforms interact with many versatile collaboration partners or clients. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings or emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted. 
 
 During this time a lot of metadata is exchanged
-  - meeting minutes could be attached to the ARC's wiki
-
-- typically 
+  - meeting minutes could be collected in the ARC's wiki
 
 
-## Use of identifiers
+## Streamlined data exchange
+
+
+<div>
+  <img src="./ARC-ServicePlatforms-images/servicePlatform-FileShare.drawio.png" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
+  <figcaption>  </figcaption>
+</div>
+
+
+Data exchange between client and platform occurs via the DataHUB. Depending on the phase of the project this involves different data and information. The client primarily describes the investigation's goal and study design, annotates the submitted samples with metadata and adds associated protocols (1a).
+Once available the client receives assayed data and relevant information. The platform team receives relevant sample metadata to run the respective assay and complements with platform-specific assay metadata and protocols (1b). 
+
+
+
+
+## Use of identifiers  / Project management
 for ISA
-
 
 ## templates for sample submission 
 
 - Use templates
   - user-targeted templates
   - templates for your routine measurements can be stored as a reusable JSON file
-- metadata in
-
-- assay data out
-
 
 ## routine computational workflows
 
@@ -95,19 +95,7 @@ for ISA
   - across ARCs covering routine measurements
 
 
-## What about non-plant-scientists / non-ARC customers 
-
-Not all of your customers are used to work with ARCs and associated tools or are planning to learn it. Still, running a service platform, you want to interact with those customers mostly in the same routines employed with everyone else.
-
-Luckily the DataHUB comes with built-in, intuitive features that 
-
-
-- customers only need access
-  - sign up with orcid
-  - sign up with...
-
-
-## Meet your customers in an ARC
+## Meet your clients in an ARC
 
 
 ![](ARC-ServicePlatforms-images/servicePlatform-Timeline.drawio.png)
@@ -116,7 +104,24 @@ Luckily the DataHUB comes with built-in, intuitive features that
 - you decide wether you meet the researchers half the way, let them initiate the ARC or
 
 who initiates the ARC
-  - researcher 
+  - researcher
+
+
+A major difference 
+
+Fork the client's project, rename it to your need, put everything irrelevant to .gitignore
+
+
+## What about non-plant-scientists / non-ARC clients 
+
+Not all of your clients are used to work with ARCs and associated tools or are planning to learn it. Still, running a service platform, you want to interact with those clients mostly in the same routines employed with everyone else.
+
+Luckily the DataHUB comes with built-in, intuitive features that 
+
+
+- clients only need access
+  - sign up with orcid
+  - sign up with...
 
 
 ## Benefits for the researcher
@@ -124,15 +129,21 @@ who initiates the ARC
 - already described investigation (and study) for another facility, would not want to double the work for another assay
 
 
+## Preparing your platform to benefit from the ARC
 
-## Preparing your service platform to implement the ARC
-
-- Start creating your projects as ARCs
-  - You 
+1. Start creating your projects as ARCs
+   - 
+2. [Create a group](./../DataHUB-Manual/datahub-CreateGroup.html) in the DataHUB for your platform
+   - A platform group 
+   - If desired, you can easily set up an automated synchronization between your local (file share) and remote (DataHUB) ARCs
 - Design [metadata templates](./../guides/swate_template-contribution.html) for sample annotation
+  - Let your clients know, what information you need from them
 - Share an example ARC in the [DataHUB](https://git.nfdi4plants.org)
-  - An example ARC helps to show customers the ARC concept and structure
-  - Where can they find what information (protocols, the datasets)
+  - An example ARC helps to show clients the ARC concept and structure
+  - Where can they find what information (protocols, datasets, results)
   - How can they interact with the ARC
 
-- Write a guide to tell your customers
+- Write a guide to tell your clients
+
+
+
