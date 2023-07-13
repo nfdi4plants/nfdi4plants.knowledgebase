@@ -4,8 +4,8 @@ title: 🚀 QuickStart for Cooperation with CMML 🌱
 published: 2023-07-12
 author:
 - name: Lea Wirth
-  orcid: 
-  github: 
+  orcid: https://orcid.org/0009-0009-6869-5746
+  github: lewir101
 add toc: true
 add support: true
 add sidebar: _sidebars/mainSidebar.md
