@@ -22,9 +22,14 @@ No. Although it is possible to fill in the workbook manually, we recommend using
 ## Annotated Research Context
 
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
-Should the metadata annotation be made in the same document in which the dataset resides? 
+Where should the metadata annotation be made. In the same documents containing the data? 
 </summary>
-No. The metadata describing the data is annotated in a separate xlsx-file that resides in the parent folder of the data sets.
+
+No. The metadata describing the data is collected in a separate xlsx-file &ndash; called `isa.assay.xlsx` &ndash; that resides in the parent folder of the dataset.
+
+:bulb: For more information, check out our guides on [annotating data in your ARC](./../guides/index-AnnotateDataInYourARC.html). 
+<br>
+<br>
 </details>
 
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
