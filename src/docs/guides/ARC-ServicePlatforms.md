@@ -23,7 +23,6 @@ In this guide we explore how the ARC can help streamline data flows and project 
 <br>
 <br>
 
-
 ## Before we can start
 
 <div id="before-start">
@@ -51,7 +50,6 @@ Central *enabling platforms* can range from small single-lab services to large i
   <img src="./ARC-ServicePlatforms-images/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">platform team
 </div>
 
-
 ## Project communication and data flow
 
 Central platforms interact with many versatile collaboration partners or clients. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings or emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted. 
@@ -75,7 +73,6 @@ Here's an idea what your data flow could look like with the ARC:
   <img src="./ARC-ServicePlatforms-images/servicePlatform-FileShare.drawio.png" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
   <figcaption>  </figcaption>
 </div>
-
 
 1. Data exchange between client and platform occurs through the ARC shared via the DataHUB. Depending on the phase of the project this involves different data and information.  
    (1a) The client primarily describes the investigation's goal and study design, annotates the submitted samples with metadata and adds associated protocols. Once available the client receives assayed data and relevant information.  
@@ -118,15 +115,18 @@ You already need to store your project data somewhere
   - within one ARC
   - across ARCs covering routine measurements
 
-## Publication
+## Data publication
 
-At some point you or your clients will want to publish the project
+At some point you or your client want to publish the project
 
-:warning: Both these routines are work in progress.
+There are two options
+1. Publish a snapshot of your ARC repository and get a DOI (coming soon)
+2. Publish the dataset at a [domain-specific repository](./../fundamentals/PublicDataRepositories.md), established for your platform's type of assay
+  :bulb: We are working on converters to read and reshape the relevant data and metadata of your ARC into a format accepted by the public repositories
 
+:warning: Both these routines are work in progress! 
 
 ## Meet your clients in an ARC
-
 
 ![](ARC-ServicePlatforms-images/servicePlatform-Timeline.drawio.png)
 
@@ -134,7 +134,6 @@ At some point you or your clients will want to publish the project
 
 who initiates the ARC
   - researcher
-
 
 A major difference 
 
