@@ -34,7 +34,7 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
     ✉️ You will recieve an e-mail after the access for the ARC was granted
 
-4. Follow the link (green arrow) in the e-mail and log in with your DataPLANT account.
+4. Follow the link (green arrow) in the e-mail and log in with your DataHUB account.
 
 > ![dataHUB/gitLab Mail](nfdi4plants.knowledgebase/../Images/1688635732619.png)
 
