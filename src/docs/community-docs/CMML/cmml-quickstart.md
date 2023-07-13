@@ -47,12 +47,33 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 > ![dataHUB/gitLab Mail](nfdi4plants.knowledgebase/../Images/1688635732619.png)
 
-1. Read and follow the next instructions - 📘 [Introduction and User Guide]()
-2. ##-introduction-and-User-Guide)  
+5. Read and follow the next instructions - 📘 [Introduction and User Guide](cmml-quickstart.md/#📘-introduction-and-user-guide)
 
-<!--
-
--->
 ***
-## 📘 Introduction and User Guide
+## 📘 User Guide
 
+### 📖 Introduction
+The ARC always has a specific folder structure that consists of: 
+- studies
+- assays
+- workflows 
+- runs 
+   
+It can also contain project-specific folders like 'images' or 'literature'
+
+
+ > ![1689255800549](image/cmml-quickstart/1689255800549.png)
+
+
+
+### 📖 isa.investigations.xlsx
+
+This workbook records the metadata of the whole project. In the first part it stores information about the whole project. It includes an Identifier, Title and Description and also publication data - if published. There is also a part for personal data. Here each column is deticated to a person and it can be filled out manually.
+
+![Alt text](image.png)
+
+❗ For the other parts it is recommended to use ARC Commander (**done by the CMML**) for adding the metadata and it should not be filled out manually. 
+
+Please follow the next instructions: 
+
+1. 
