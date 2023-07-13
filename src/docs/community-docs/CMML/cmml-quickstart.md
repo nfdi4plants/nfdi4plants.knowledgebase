@@ -59,14 +59,15 @@ The ARC always has a specific folder structure that consists of:
 - workflows 
 - runs 
    
-It can also contain project-specific folders like 'images' or 'literature'
+It can also contain project-specific folders like 'images' or 'literature'.
 
 
  > ![1689255800549](image/cmml-quickstart/1689255800549.png)
 
-
+The following guide will help you to get started to work with ARC.
 
 ### 📖 isa.investigations.xlsx
+<!-- 
 
 This workbook records the metadata of the whole project. In the first part it stores information about the whole project. It includes an Identifier, Title and Description and also publication data - if published. There is also a part for personal data. Here each column is deticated to a person and it can be filled out manually.
 
@@ -76,4 +77,5 @@ This workbook records the metadata of the whole project. In the first part it st
 
 Please follow the next instructions: 
 
-1. 
+
+-->
