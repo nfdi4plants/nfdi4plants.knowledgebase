@@ -40,22 +40,25 @@ It helps to be familiar with
 
 </div>
 
-## Legend and definition
+## Service Platforms
 
-With central *service platforms*, we try to cover a range from single-lab services to larger instrumentation-based research infrastructures such as core facilities &ndash; any platform that offers a specific set of methods or assays as a routine service to a community of researchers. Typical examples with application in plant sciences include omics technologies (genome, transcriptome, proteome, metabolome), phenotyping, (microscopic) imaging, genetic engineering or plant growth facilities. 
+Central *service platforms* can a range from smaller single-lab services to larger instrumentation-based research infrastructures such as core facilities &ndash; any platform that offers a specific set of methods or assays as a routine service to a community of researchers. Typical examples with application in plant sciences include platforms offering omics technologies (genome, transcriptome, proteome, metabolome), phenotyping, (microscopic) imaging, genetic engineering or plant growth facilities. 
 
+*In the following we call researchers approaching the service platform "customers".*
+
+<!-- 
 <div style="height:40px; display: flex; align-items: center; justify-content: left;">
   <img src="./ARC-ServicePlatforms-images/icons-characters-PhDStudent.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">Customer (i.e. researcher asking for service)
 </div>
 <div style="height:40px; display: flex; align-items: center; justify-content: left;">
   <img src="./ARC-ServicePlatforms-images/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">Service provider
-</div>
+</div> -->
 
 ## Project initiation
 
 to routinely measure biological samples
 
-Service platforms interact with many versatile collaboration partners or users of the provided service. 
+Service platforms interact with many versatile collaboration partners or customers of the provided service. 
 
 Most service platforms have a more or less established routine for submission of samples to be assayed
 This includes a ping-pong of meetings to find out
@@ -83,7 +86,6 @@ for ISA
 - assay data out
 
 
-
 ## routine computational workflows
 
 - the ARC model and 
@@ -93,23 +95,22 @@ for ISA
   - across ARCs covering routine measurements
 
 
-## What about non-plant-scientists / non-ARC users 
+## What about non-plant-scientists / non-ARC customers 
 
-Although we're doing our best to promote the ARC idea and adapt it to a diverse range of use-cases, there will always be users (or customers), who do not actively use the ARC or associated tools. Still, running a service platform, you want to interact with those users mostly in the same routines employed with everyone else.
+Not all of your customers are used to work with ARCs and associated tools or are planning to learn it. Still, running a service platform, you want to interact with those customers mostly in the same routines employed with everyone else.
 
 Luckily the DataHUB comes with built-in, intuitive features that 
 
 
-- users only need access
+- customers only need access
   - sign up with orcid
   - sign up with...
 
 
-## Meeting your customers in an ARC
+## Meet your customers in an ARC
 
 
-![Alt text](ARC-ServicePlatforms-images/servicePlatform-Timeline.drawio.png)
-
+![](ARC-ServicePlatforms-images/servicePlatform-Timeline.drawio.png)
 
 
 - you decide wether you meet the researchers half the way, let them initiate the ARC or
@@ -124,10 +125,14 @@ who initiates the ARC
 
 
 
-## Recommended steps
+## Preparing your service platform to implement the ARC
 
-- generate templates for sample annotation
-- prepare an example ARC in the DataHUB
-  - An example ARC helps to show users the ARC concept and structure
+- Start creating your projects as ARCs
+  - You 
+- Design [metadata templates](./../guides/swate_template-contribution.html) for sample annotation
+- Share an example ARC in the [DataHUB](https://git.nfdi4plants.org)
+  - An example ARC helps to show customers the ARC concept and structure
   - Where can they find what information (protocols, the datasets)
   - How can they interact with the ARC
+
+- Write a guide to tell your customers
