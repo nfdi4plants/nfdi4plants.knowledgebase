@@ -47,7 +47,7 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 > ![dataHUB/gitLab Mail](nfdi4plants.knowledgebase/../Images/1688635732619.png)
 
-5. Read and follow the next instructions - 📘 [Introduction and User Guide](cmml-quickstart.md/#📘-introduction-and-user-guide)
+5. Read and follow the next instructions - 📘 [User Guide](cmml-quickstart.md/#📘-user-guide)
 
 ***
 ## 📘 User Guide
