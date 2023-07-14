@@ -117,14 +117,16 @@ You already need to store your project data somewhere
 
 Your platform is specialized on a specific set of methods and assays. You perform routine assays, follow established protocols and SOPs to produce specific types of data.
 
-- simplify (always same structure)
+- simplify (ARC = always same structure)
 - make reproducible
 - quality control and validate
   - within one ARC
   - across ARCs covering routine measurements
 - automate
 
-- the ARC model and
+- link to reproducibility
+- link to CWL
+
 
 ### Data publication
 
@@ -151,7 +153,7 @@ A major difference
 Fork the client's project, rename it to your need, put everything irrelevant to .gitignore
 
 
-## What about non-plant-scientists / non-ARC clients 
+## What about non-ARC clients
 
 Not all of your clients are used to work with ARCs and associated tools or are planning to learn it. Still, running a service platform, you want to interact with those clients mostly in the same routines employed with everyone else.
 
