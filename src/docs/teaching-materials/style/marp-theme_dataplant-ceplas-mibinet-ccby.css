@@ -61,3 +61,15 @@ section::after {
   font-size: 20px;
   color: #2D3E50  
 }
+
+
+.profile-picture {
+  position:relative;
+  overflow:hidden;
+  border-radius: 50%;
+  border-color: black;
+  height: 75px;
+  width: 75px;
+  margin: 10px;
+  display: block;  
+}

@@ -10,18 +10,37 @@ author:
   orcid: https://orcid.org/0000-0001-9021-3197
 ---
 
-# Start Your ARC Workshop
+# Block 0 &ndash; Preparation
 
 <style scoped>section {background: none; background-color: white}</style>
 <!-- _paginate: false -->
 
-Block 0 &ndash; Preparation
 **before** September 21st, 2023
+ 
 
-<br>
+<div style="position: fixed; bottom: 10%; right: 35%;">
+  <div class="profile-picture">
+    <img src="https://www.biological-data-science.hhu.de/fileadmin/_processed_/8/c/csm_Sabrina_Zander_3c8daca973.jpg" alt="Sabrina Zander" style="position:absolute; height: auto; width: auto; top:65%; left: 0%; transform:translateY(-50%);"> 
+  </div>
 
-> Sabrina Zander &ndash; MibiNet Data Management
-> Dominik Brilhaus &ndash; CEPLAS Data Science
+  <div>
+
+  Sabrina Zander <br> [MibiNet](https://www.sfb1535.hhu.de/projects/research-area-z/z03)
+  </div>
+</div>
+
+<div style="position: fixed; bottom: 10%; right: 10%;">
+  <div class="profile-picture">
+    <img src="https://www.ceplas.eu/fileadmin/_processed_/d/c/csm_Brilhaus_Dominik_4fd48a61a2.jpeg" alt="Dominik Brilhaus">
+  </div>
+
+  <div>
+
+  Dominik Brilhaus <br> [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-science-and-data-management/)
+
+  </div>
+
+</div>
 
 ---
 
