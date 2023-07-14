@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Data Steward Circle
-published: 2023-07-11
+date: 2023-07-11
 add toc: true
 add support: false
 add sidebar: _sidebars/mainSidebar.md

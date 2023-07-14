@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: ARC Panel
-date: 2023-07-07
+title: Working with files
+date: 2023-07-14
 author:
 - name: Dominik Brilhaus
   orcid: https://orcid.org/0000-0001-9021-3197
