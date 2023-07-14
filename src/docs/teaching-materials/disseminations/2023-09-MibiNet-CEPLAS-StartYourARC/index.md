@@ -12,7 +12,7 @@ Here you can find the slides prepared for the September 2023 MibiNet/CEPLAS *Sta
 :warning: This is not a permanent link. Slides may move elsewhere or be updated. We do our best to keep the knowledge base up-to-date - so you will find all relevant information here. 
 
 
-## Block 0: Preparation
+## Block 0 &ndash; Preparation
 
 <iframe src="./Block00-Preparation.html" style="height:225px; width:400px;" ></iframe>
 
@@ -20,7 +20,7 @@ Here you can find the slides prepared for the September 2023 MibiNet/CEPLAS *Sta
 
 <hr>
 
-## Block 1: Welcome and intro to RDM
+## Block 1 &ndash; Welcome and intro to RDM
 
 <iframe src="./Block01-WelcomeIntro.html" style="height:225px; width:400px;" ></iframe>
 
@@ -28,7 +28,7 @@ Here you can find the slides prepared for the September 2023 MibiNet/CEPLAS *Sta
 
 <hr>
 
-## Block 2: Intro to DataPLANT and ARC
+## Block 2 &ndash; Intro to DataPLANT and ARC
 
 <iframe src="./Block02-DataPLANT-ARC.html" style="height:225px; width:400px;" ></iframe>
 
@@ -36,7 +36,7 @@ Here you can find the slides prepared for the September 2023 MibiNet/CEPLAS *Sta
 
 <hr>
 
-## Block 3: ARC demo and hands-on
+## Block 3 &ndash; ARC demo and hands-on
 
 <iframe src="./Block03-ARCDemo-HandsOn.html" style="height:225px; width:400px;" ></iframe>
 
@@ -44,7 +44,7 @@ Here you can find the slides prepared for the September 2023 MibiNet/CEPLAS *Sta
 
 <hr>
 
-## Block 4: ARC your own data (AYOD)
+## Block 4 &ndash; ARC your own data (AYOD)
 
 <iframe src="./Block04-ARCYourOwnData.html" style="height:225px; width:400px;" ></iframe>
 
@@ -52,7 +52,7 @@ Here you can find the slides prepared for the September 2023 MibiNet/CEPLAS *Sta
 
 <hr>
 
-## Block 5: Metadata and ISA
+## Block 5 &ndash; Metadata and ISA
 
 <iframe src="./Block05-MetadataISA.html" style="height:225px; width:400px;" ></iframe>
 
@@ -61,7 +61,7 @@ Here you can find the slides prepared for the September 2023 MibiNet/CEPLAS *Sta
 <hr>
 
 
-## Block 6: Hands-on Swate
+## Block 6 &ndash; Swate hands-on
 
 <iframe src="./Block06-Swate-HandsOn.html" style="height:225px; width:400px;" ></iframe>
 

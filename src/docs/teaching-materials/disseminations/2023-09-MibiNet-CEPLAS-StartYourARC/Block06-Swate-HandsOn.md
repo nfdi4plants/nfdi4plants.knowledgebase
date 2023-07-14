@@ -3,7 +3,7 @@ marp: true
 theme: marp-theme_dataplant-ceplas-mibinet-ccby
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-title: Swate Hands-on
+title: Swate hands-on
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -12,7 +12,7 @@ author:
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
 
-# Block 6 &ndash; Swate Hands-on
+# Block 6 &ndash; Swate hands-on
 
 <style scoped>section {background: none; background-color: white}</style>
 <!-- _paginate: false -->
