@@ -82,6 +82,7 @@
 ### [Generate a Personal Access Token (PAT)](/docs/guides/datahub-GeneratePAT.html)
 ## [Projects Panel](/docs/DataHUB-Manual/datahub-projectsPanel.html)
 ## [ARC Panel](/docs/DataHUB-Manual/datahub-ARCPanel.html)
+### [Working with files](/docs/DataHUB-Manual/datahub-files.html)
 ### [ARC Settings](/docs/DataHUB-Manual/datahub-ARCSettings.html)
 ### [ARC Wiki](/docs/DataHUB-Manual/datahub-ARCWiki.html)
 ## [Groups Panel](/docs/DataHUB-Manual/datahub-groupsPanel.html)
