@@ -28,12 +28,12 @@ GitHub Desktop is a user-friendly software to help you synchronize (pull, commit
    2. Expiration date (optional)
    3. Select scope: `api`
 
-![Access Token](./../img/datahub_accessToken.png)
+![Access Token](./../img/datahub-accessToken01.drawio.svg)
 
 5. Click "Create personal access token"
 6. `Your new personal access token` appears on top. Copy it somewhere for later use.
 
-![Access Token](./../img/datahub_accessToken_02.png)
+![Access Token](./../img/datahub-accessToken02.drawio.svg)
 
 7. Within the DataHUB, go to your ARC.
 8. Click on `Clone` and copy the HTTPS url, e.g. `https://git.nfdi4plants.org/<yourUserName>/<yourArc>.git`

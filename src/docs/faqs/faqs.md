@@ -22,9 +22,14 @@ No. Although it is possible to fill in the workbook manually, we recommend using
 ## Annotated Research Context
 
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
-Should the metadata annotation be made in the same document in which the dataset resides? 
+Where should the metadata annotation be made. In the same documents containing the data? 
 </summary>
-No. The metadata describing the data is annotated in a separate xlsx-file that resides in the parent folder of the data sets.
+
+No. The metadata describing the data is collected in a separate xlsx-file &ndash; called `isa.assay.xlsx` &ndash; that resides in the parent folder of the dataset.
+
+:bulb: For more information, check out our guides on [annotating data in your ARC](./../guides/index-AnnotateDataInYourARC.html). 
+<br>
+<br>
 </details>
 
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
@@ -70,7 +75,7 @@ How often should I sync my ARC?
 </summary>
 We would not want to recommend a fixed time interval (once every hour / day / week) for how often you ideally sync the ARC. In general, the more you work with your ARC, the more you add or update, annotate or analyze data, the more you will want to make sure these changes are saved. Consider the syncing as a way to backup your project's progress as well as an "undo button".
 
-:bulb: For more details, check out the [Syncing Recommendations](./../guides/arc_SyncingRecommendations.html)
+:bulb: For more details, check out the [Syncing Recommendations](./../guides/arc_SyncingRecommendation.html)
 
 </details>
 
