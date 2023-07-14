@@ -120,6 +120,7 @@
 ### [Annotated Research Context](/docs/teaching-materials/slides/ARC.html)
 ### [Events](/docs/teaching-materials/slides/Events.html)
 #### [CEPLAS Start Your ARC Series](/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html)
+#### [MibiNet CEPLAS Workshop Sept 2023](/docs/teaching-materials/disseminations/2023-09-MibiNet-CEPLAS-StartYourARC/index.html)
 #### [Data Steward Circle](/docs/teaching-materials/disseminations/DataSteward-Circle/index.html)
 ## [Videos](/docs/teaching-materials/videos.html)
 ### [Start Your ARC Series](/docs/teaching-materials/videos/StartYourARC.html)
