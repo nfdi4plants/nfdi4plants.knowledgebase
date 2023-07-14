@@ -3,7 +3,7 @@ marp: true
 theme: marp-theme_dataplant-ceplas-mibinet-ccby
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-title: 01 Welcome and Intro
+title: Welcome and Intro
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator

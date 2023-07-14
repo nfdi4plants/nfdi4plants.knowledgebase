@@ -3,7 +3,7 @@ marp: true
 paginate: true
 theme: marp-theme_dataplant-ceplas-mibinet-ccby
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-title: 00 Preparation
+title: Preparation
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator

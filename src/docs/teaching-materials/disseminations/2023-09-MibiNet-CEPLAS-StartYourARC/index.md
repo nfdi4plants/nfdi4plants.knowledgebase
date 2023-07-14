@@ -14,7 +14,7 @@ Here you can find the slides prepared for the September 2023 MibiNet/CEPLAS *Sta
 
 ## Block 0: Preparation
 
-<iframe src="./00-Preparation.html" style="height:225px; width:400px;" ></iframe>
+<iframe src="./Block00-Preparation.html" style="height:225px; width:400px;" ></iframe>
 
 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), [MibiNet](https://www.sfb1535.hhu.de) 📆 September 21st, 2023
 
@@ -22,7 +22,7 @@ Here you can find the slides prepared for the September 2023 MibiNet/CEPLAS *Sta
 
 ## Block 1: Welcome and intro to RDM
 
-<iframe src="./01-WelcomeIntro.html" style="height:225px; width:400px;" ></iframe>
+<iframe src="./Block01-WelcomeIntro.html" style="height:225px; width:400px;" ></iframe>
 
 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), [MibiNet](https://www.sfb1535.hhu.de) 📆 September 21st, 2023
 
@@ -30,23 +30,41 @@ Here you can find the slides prepared for the September 2023 MibiNet/CEPLAS *Sta
 
 ## Block 2: Intro to DataPLANT and ARC
 
+<iframe src="./Block01-WelcomeIntro.html" style="height:225px; width:400px;" ></iframe>
 
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), [MibiNet](https://www.sfb1535.hhu.de) 📆 September 21st, 2023
 
-## Block 3: ARC Demo and ARC Hands-on
+<hr>
 
+## Block 3: ARC demo and hands-on
 
+<iframe src="./Block03-ARCDemo-HandsOn.html" style="height:225px; width:400px;" ></iframe>
 
-## Block 4: "Homework" 
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), [MibiNet](https://www.sfb1535.hhu.de) 📆 September 21st, 2023
 
+<hr>
 
-- Let people generate ARCs between Day 1 and Day 2
-- Start Day 2 with "ARC Feedback session"
-  - learn from things that did / did not go well
-  - collect issues and "live" transfer them to GitHub => open source your research
+## Block 4: ARC your own data (AYOD)
 
+<iframe src="./Block04-ARCYourOwnData.html" style="height:225px; width:400px;" ></iframe>
 
-## Block 5: ISA and Metadata
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), [MibiNet](https://www.sfb1535.hhu.de) 📆 September 21st, 2023
 
+<hr>
+
+## Block 5: Metadata and ISA
+
+<iframe src="./Block05-MetadataISA.html" style="height:225px; width:400px;" ></iframe>
+
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), [MibiNet](https://www.sfb1535.hhu.de) 📆 September 21st, 2023
+
+<hr>
 
 
 ## Block 6: Hands-on Swate
+
+<iframe src="./Block06-Swate-HandsOn.html" style="height:225px; width:400px;" ></iframe>
+
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), [MibiNet](https://www.sfb1535.hhu.de) 📆 September 21st, 2023
+
+<hr>
