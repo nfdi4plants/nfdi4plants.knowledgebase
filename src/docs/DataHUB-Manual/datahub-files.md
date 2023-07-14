@@ -11,24 +11,35 @@ add support: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-The ARC Panel is the main working area for your ARC. 
+The DataHUB allows to directly operate files and folders without using any other tools similar to what you are used to from your computer's file explorer or finder.
 
-<img src="./../img/datahub-ARC-overview.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
+## Add files or folders
 
+<img src="./../img/datahub-addFiles.drawio.png" style="width:100%;display: block;margin: 20px auto;">
 
-In the sidebar to the left, you can
+1. From the [ARC panel](./datahub-ARCPanel.html), navigate to subdirectory of your ARC. 
+2. Click the plus sign next to your ARC's name (1).
+3. Select to upload a file (2) or create a new directory (3) in the current directory. 
+4. This will open a new menu where you can upload your file or choose a name for your new directory. 
 
-1. access the project information (1), e.g. invite members to the ARC
-2. follow the progress of your ARC repository (2),
-3. organize tasks in issue lists and boards (3), 
-4. take notes in a wiki to your ARC (4),
-5. adapt the [settings (5) of the ARC](datahub-ARCSettings.html). 
+## Replace, delete or download single files
 
- 
-In the main panel, you can
+<img src="./../img/datahub-deleteFile01.drawio.png" style="width:100%;display: block;margin: 20px auto;">
 
-6. see the ARC's name and visibility level (6),
-7. follow the ARC's commit history (7),
-8. see files contained in your ARC just like on your computer (8),
-9. add new files or directories (9), and
-10. download or clone your ARC (10). 
+1. Select a file (1) that you want to change or download
+
+<img src="./../img/datahub-deleteFile02.drawio.png" style="width:90%;display: block;margin: 20px auto;">
+
+2. From the next view you can choose to replace (2) a file via upload, delete (3) or download (4) the file. 
+
+:bulb: By selecting replace (2) you can simply upload another version of the same file. The name of the original file is kept. 
+
+## Download folders
+
+<img src="./../img/datahub-download.drawio.png" style="width:100%;display: block;margin: 20px auto;">
+
+1. From the [ARC panel](./datahub-ARCPanel.html), navigate to subdirectory of your ARC that you would like to download
+2. From the download menu, you can
+   1. download the complete ARC including all data files (1) or 
+   2. download only the currently displayed directory including all its files (2)
+
