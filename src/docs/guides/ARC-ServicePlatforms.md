@@ -50,11 +50,11 @@ Central *enabling platforms* can range from small single-lab services to large i
   <img src="./ARC-ServicePlatforms-images/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">platform team
 </div>
 
-## Project communication and data flow
+### Project communication and data flow
 
 Central platforms interact with many versatile collaboration partners or clients. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings or emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted. 
 
-## Project management
+### Project management
 
 As a platform you manage a lot of projects in parallel. Keeping these projects up-to-date and coordinated between clients and platform team members is challenging.
 Here's a few tips to support your project management:
@@ -64,29 +64,29 @@ Here's a few tips to support your project management:
 - You can use your established system of identifiers (e.g. for projects, samples) in [ISA metadata](./../guides/isa_FileTypes.html)
 - You can also keep naming your ARCs with the same way you are used to name your project folders
 
-## Streamlined data exchange
+### Streamlined data exchange
  
 During project collaboration a lot of information and metadata is exchanged.  
 Here's an idea what your data flow could look like with the ARC:
 
 <div>
-  <img src="./ARC-ServicePlatforms-images/servicePlatform-FileShare.drawio.png" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
+  <img src="./ARC-ServicePlatforms-images/servicePlatform-FileShare.drawio.png" style="width:60%;display: block;margin-left: auto;margin-right: auto;">
   <figcaption>  </figcaption>
 </div>
 
 1. Data exchange between client and platform occurs through the ARC shared via the DataHUB. Depending on the phase of the project this involves different data and information.  
    (1a) The client primarily describes the investigation's goal and study design, annotates the submitted samples with metadata and adds associated protocols. Once available the client receives assayed data and relevant information.  
-   (1b) The platform team receives relevant sample metadata to run the respective assay and complements the ARC with platform-specific assay metadata and protocols
-2. A clone of the ARC is stored on the platform's file share (see also [data storage](#data-storage))
-3. From the platform workstation, i.e. a computer attached to your assay device, the generated data can directly be written or transferred to the assay dataset folder of your ARC stored in he file share
+   (1b) The platform team receives relevant sample metadata to run the respective assay and complements the ARC with platform-specific assay metadata, protocols and standard operating procedures (SOPs)
+2. A clone of the ARC is stored locally at the platform (see also [data storage](#data-storage))
+3. From the platform workstation, i.e. a computer attached to your assay device, the generated data can directly be written or transferred to the assay dataset folder of your ARC stored in the file share
 
 Here's a few tips to streamline your data exchange:
 
 - You can [create metadata templates](./../SwateManual/Docs05-Templates.html)
-  - to let your clients know, which metadata is crucial for your specific assay
-- You can also store filled-out templates for your routine measurements as a reusable [JSON files](./../SwateManual/Docs06-ISA-JSON.html)
+  - to communicate with clients and team members, which metadata is crucial for specific assays
+- You can also store filled-out templates for your routine measurements as a reusable [JSON file](./../SwateManual/Docs06-ISA-JSON.html)
 
-## Data storage, handling and transfer
+### Data storage, handling and transfer
 
 File share: 
 - This can be an institutional file server offered by your organisation or computing center
@@ -98,24 +98,35 @@ You already need to store your project data somewhere
 - Depending on the type of offered technology, workstations are some for security 
 - workstations need quickest data rates => write on close file share first, then transer to Hub
 
-
 - the DataHUB is your geo-redundant backup
   - and it comes with revert
 
-## Provenance
+### Track changes and provenance
 
-- name your team members
+- many projects, many stakeholders / people involved (team members, clients, etc.)
+- need to be able to retrace, who's done what, when, why
+
+- name your team members / credit
 - track changes
 
-## Routine computational workflows
+- ARC comes with [version control](./../fundamentals/VersionControlGit.html)
+  - contribution by commit
+- [ISA metadata model](./isa_FileTypes.html) allows to associate people with investigations and studies
 
-- the ARC model and 
+### Routine computations
 
-- quality control
+Your platform is specialized on a specific set of methods and assays. You perform routine assays, follow established protocols and SOPs to produce specific types of data.
+
+- simplify (always same structure)
+- make reproducible
+- quality control and validate
   - within one ARC
   - across ARCs covering routine measurements
+- automate
 
-## Data publication
+- the ARC model and
+
+### Data publication
 
 At some point you or your client want to publish the project
 
