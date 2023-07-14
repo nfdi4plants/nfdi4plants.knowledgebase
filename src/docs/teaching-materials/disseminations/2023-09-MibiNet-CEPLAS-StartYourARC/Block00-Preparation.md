@@ -18,7 +18,7 @@ author:
 **before** September 21st, 2023
  
 
-<div style="position: fixed; bottom: 10%; right: 35%;">
+<div style="position: fixed; bottom: 10%; right: 40%;">
   <div class="profile-picture">
     <img src="https://www.biological-data-science.hhu.de/fileadmin/_processed_/8/c/csm_Sabrina_Zander_3c8daca973.jpg" alt="Sabrina Zander" style="position:absolute; height: auto; width: auto; top:65%; left: 0%; transform:translateY(-50%);"> 
   </div>
