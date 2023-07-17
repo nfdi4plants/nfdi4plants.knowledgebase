@@ -150,22 +150,20 @@ Read more about authoring content in the fornax section of the nfdi4plants web c
 
 :bulb: The following sections refer to contents with `layout: docs` as used for articles and guides. 
 
-:construction: Contribution of slides (i.e. in folder `src/docs/teaching-materials/` and sidebar section "Teaching Materials") is currently under construction. See the additional guide on [slide deck](./guides/contribute_slide-decks.html). 
+:construction: Contribution of slides (i.e. in folder `src/docs/teaching-materials/` and sidebar section "Teaching Materials") is currently under construction. See the additional guide on [slide decks](./guides/contribute_slide-decks.html). 
 
 ### Knowledge Base repo structure
 
 - The source to all content shown at the public website https://nfdi4plants.org/nfdi4plants.knowledgebase/ resides in the folder `src/docs`
 - All other files are mostly "backend", help to render the content to html and can safely be ignored by most contributors
-- The `src/docs` structure (as of June 29th, 2023) looks like this
+- The `src/docs` structure (as of July 17th, 2023) looks like this
 
 ```
 src/docs
-├── ArcCommanderManual
-├── CONTRIBUTING.md
-├── Home.md
-├── SwateManual
 ├── _ignored
 ├── _sidebars
+├── ArcCommanderManual
+├── DataHUB-Manual
 ├── faqs
 │   └── faqs.md
 ├── fundamentals
@@ -182,8 +180,11 @@ src/docs
 │   ├── AnnotationPatterns.md
 │   ├── ArcCommander.md
 │   ├── ...
+├── SwateManual
 ├── teaching-materials
-└── tutorials
+├── tutorials
+├── CONTRIBUTING.md
+└── Home.md
 ```
 
 :bulb: For easier findability we try to align the folder structure with how the content is presented in the sidebar of the public site. This is however not always feasible or sensible (for reasons). 
