@@ -54,6 +54,11 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 ### 📖 Introduction
 The ARC always has a specific folder structure that consists of: 
+
+ > ![1689255800549](nfdi4plants.knowledgebase/../image/cmml-quickstart/ARC-Folder-structure.png)
+
+Each folder has a specific 
+
 - studies
 - assays
 - workflows 
@@ -61,11 +66,9 @@ The ARC always has a specific folder structure that consists of:
    
 It can also contain project-specific folders like 'images' or 'literature'.
 
-
- > ![1689255800549](nfdi4plants.knowledgebase/../image/cmml-quickstart/ARC-Folder-structure.png)
-
-
 The following guide will help you to get started to work with ARC.
+
+***
 
 ### 📖 isa.investigations.xlsx
 
@@ -83,6 +86,8 @@ This workbook records the metadata of the whole project. In the first part it st
 
 ❗ For the other parts below the personal data it is recommended to use ARC Commander (**done by the CMML**) for adding the metadata and it should not be filled out manually. 
 
+***
+
 ### 📖 Studies
 
 A study always consists of the following structures: 
@@ -92,7 +97,10 @@ A study always consists of the following structures:
 - isa.study.xlsx: samplesheet, (meta-)data
 - README.md
 
-![1689256862555](image/cmml-quickstart/1689256862555.png)
+> ![1689256862555](image/cmml-quickstart/1689256862555.png)
+
+***
+++
 
 
 ### 📖 Assays 
@@ -103,4 +111,5 @@ A study always consists of the following structures:
  - protocols
  - isa.assay.xlsx: samplesheet, (meta-)data
  - README.md
-![1689256959242](image/cmml-quickstart/1689256959242.png)
+  
+> ![1689256959242](image/cmml-quickstart/1689256959242.png)
