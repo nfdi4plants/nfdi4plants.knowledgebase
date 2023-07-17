@@ -225,6 +225,16 @@ It will only become visible in the sidebar once the article is linked in the res
 
 - **Literature / information references:** additional bibliography block below
 - **External links (tools, sites, platforms):** as hyper-link
+  - E.g. like this:  
+    ```
+    [CLICKABLE TEXT](https://daringfireball.net/projects/markdown/syntax#link)
+    ```  
+    resulting in [CLICKABLE TEXT](https://daringfireball.net/projects/markdown/syntax#link)
+  - or like this e.g. in the FAQ.md file:  
+    ```
+    <a href="https://en.wikipedia.org/wiki/Hyperlink">CLICKABLE TEXT</a>
+    ```  
+    resulting in: <a href="https://en.wikipedia.org/wiki/Hyperlink">CLICKABLE TEXT</a>
 - **Knowledge Base cross-references:** relative path to *.md document, **BUT** replace the `.md` file extension 
 with `.html`, as the markdown files are parsed to html.
 
