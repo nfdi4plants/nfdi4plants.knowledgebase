@@ -66,6 +66,11 @@ It can also contain project-specific folders like 'images' or 'literature'.
 
 The following guide will help you to get started to work with ARC.
 
+<!-- 
+
+@note for lea: Missing - context of the structures
+-->
+
 ***
 
 ### 📖 isa.investigations.xlsx
@@ -90,15 +95,20 @@ This workbook records the metadata of the whole project. In the first part it st
 
 A study always consists of the following structures: 
 
-- protocols: 
+- protocols:  
 - resources
 - isa.study.xlsx: samplesheet, (meta-)data
 - README.md
 
+<!-- 
+
+@note for lea: Missing - explanation of each structure
+-->
+
+
 > ![1689256862555](image/cmml-quickstart/1689256862555.png)
 
 ***
-++
 
 
 ### 📖 Assays 
@@ -110,4 +120,16 @@ A study always consists of the following structures:
  - isa.assay.xlsx: samplesheet, (meta-)data
  - README.md
   
+<!-- 
+
+@note for lea: Missing - explanation of each structure
+-->
+  
 > ![1689256959242](image/cmml-quickstart/1689256959242.png)
+
+
+<!--
+
+@Dominik: part mit deleting/adding/changing files and folders
+
+-->
