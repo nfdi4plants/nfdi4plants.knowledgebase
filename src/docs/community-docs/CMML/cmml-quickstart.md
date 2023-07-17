@@ -37,7 +37,7 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 2. If you have sucessfully created your account you can check on the website at the top left (yellow arrow) your _@username_ (blue arrow).
 
-> ![find your username](nfdi4plants.knowledgebase/../image/cmml-quickstart/DataHUB-Username.png)
+> ![find your username](./image/cmml-quickstart/DataHUB-Username.png)
 
 3. __Commit__ this _@username_ to the CMML to get started with the common ARC
 
@@ -45,7 +45,7 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 4. __Follow__ the link (green arrow) in the e-mail and log in with your DataHUB account.
 
-> ![dataHUB/gitLab Mail](nfdi4plants.knowledgebase/../image/cmml-quickstart/DataHUB-Access-Mail.png)
+> ![dataHUB/gitLab Mail](./image/cmml-quickstart/DataHUB-Access-Mail.png)
 
 5. __Read and follow__ the next instructions - __📘 User Guide__
 
@@ -62,7 +62,7 @@ The ARC always has a specific folder structure that consists of:
    
 It can also contain project-specific folders like 'images' or 'literature'.
 
- > ![](nfdi4plants.knowledgebase/../image/cmml-quickstart/ARC-Folder-structure.png)
+ > ![](./image/cmml-quickstart/ARC-Folder-structure.png)
 
 The following guide will help you to get started to work with ARC.
 
@@ -77,7 +77,7 @@ The following guide will help you to get started to work with ARC.
 
 This workbook records the metadata of the whole project. In the first part it stores information about the whole project. It includes an Identifier, Title and Description and also publication data - if published. There is also a part for personal data. Here each column is deticated to a person and it can be filled out manually.
 
-> ![](nfdi4plants.knowledgebase/../image/cmml-quickstart/isa-investigation.png)
+> ![](./image/cmml-quickstart/isa-investigation.png)
 
 :pen: __Fill out__ the part **'INVESTIGATION CONTACTS'** with your personal data (the following are mandatory):
    - First and Last Name 
