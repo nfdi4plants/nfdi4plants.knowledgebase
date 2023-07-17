@@ -256,17 +256,17 @@ In the following, some ideas are described on how to deal with this:
   The sidebars actually checks if you are currently in `npm run fornax` mode. 
   Therefore, you can use basic relative paths for this. (mainSidebar.md)  
 
-For example
+    For example
 
-```markdown
-```Fundamentals
-# [Fundamentals](/docs/fundamentals/index.html)
-```!
-```
-`/docs/fundamentals/index.html` will be parsed to `/nfdi4plants.knowledgebase/docs/fundamentals/index.html`.
+    ```markdown
+    ```Fundamentals
+    # [Fundamentals](/docs/fundamentals/index.html)
+    ```!
+    ```
+    `/docs/fundamentals/index.html` will be parsed to `/nfdi4plants.knowledgebase/docs/fundamentals/index.html`.
     
 - **Relative paths from current file:**  
-  These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". 
+  These might be easier to handle but need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". 
   ***Examples:*** 
   - `[Test](./ResearchDataManagement.html)`. Starting with `./` translates to "coming from the position of this file". 
   - We can go up in the file hierarchy, like `[Test](./../docs/README.html)`. 
