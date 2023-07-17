@@ -31,7 +31,7 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 ## 👣 Setup
 
-1. At first you have to create a DataHUB account. Sign up [here](https://auth.nfdi4plants.org/realms/dataplant/protocol/openid-connect/auth?client_id=gitlab-fr&nonce=356a5879964601fc6c507a0e1b9338d3&redirect_uri=https%3A%2F%2Fgit.nfdi4plants.org%2Fusers%2Fauth%2Fopenid_connect%2Fcallback&response_type=code&scope=openid%20profile%20email&state=38af8e237dfa652df91fa72afb2eeb66)!
+1. At first you have to __create a DataHUB account__. Sign up [here](https://auth.nfdi4plants.org/realms/dataplant/protocol/openid-connect/auth?client_id=gitlab-fr&nonce=356a5879964601fc6c507a0e1b9338d3&redirect_uri=https%3A%2F%2Fgit.nfdi4plants.org%2Fusers%2Fauth%2Fopenid_connect%2Fcallback&response_type=code&scope=openid%20profile%20email&state=38af8e237dfa652df91fa72afb2eeb66)!
 
     :bulb: You can also log in with your scientific account ORCID or Life Sciences!
 
@@ -39,15 +39,15 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 > ![find your username](nfdi4plants.knowledgebase/../image/cmml-quickstart/DataHUB-Username.png)
 
-1. Commit this _@username_ to the CMML to get started with the common ARC
+3. __Commit__ this _@username_ to the CMML to get started with the common ARC
 
     ✉️ You will recieve an e-mail after the access for the ARC was granted
 
-2. Follow the link (green arrow) in the e-mail and log in with your DataHUB account.
+4. __Follow__ the link (green arrow) in the e-mail and log in with your DataHUB account.
 
 > ![dataHUB/gitLab Mail](nfdi4plants.knowledgebase/../image/cmml-quickstart/DataHUB-Access-Mail.png)
 
-1. Read and follow the next instructions - __📘 User Guide__
+5. __Read and follow__ the next instructions - __📘 User Guide__
 
 ***
 ## 📘 User Guide
@@ -73,8 +73,7 @@ This workbook records the metadata of the whole project. In the first part it st
 
 > ![Alt text](nfdi4plants.knowledgebase/../image/cmml-quickstart/isa-investigation.png)
 
-:pen: __Fill out__ the following parts:
-'INVESTIGATION CONTACTS' with your personal data (the following are mandatory):
+:pen: __Fill out__ the part **'INVESTIGATION CONTACTS'** with your personal data (the following are mandatory):
    - First and Last Name 
    - Email
    - Phone
@@ -82,7 +81,7 @@ This workbook records the metadata of the whole project. In the first part it st
    - Affiliation
 
 
-❗ For the other parts it is recommended to use ARC Commander (**done by the CMML**) for adding the metadata and it should not be filled out manually. 
+❗ For the other parts below the personal data it is recommended to use ARC Commander (**done by the CMML**) for adding the metadata and it should not be filled out manually. 
 
 ### 📖 studies
 
