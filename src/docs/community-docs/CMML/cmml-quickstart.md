@@ -55,16 +55,14 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 ### 📖 Introduction
 The ARC always has a specific folder structure that consists of: 
 
- > ![1689255800549](nfdi4plants.knowledgebase/../image/cmml-quickstart/ARC-Folder-structure.png)
-
-Each folder has a specific 
-
 - studies
 - assays
 - workflows 
 - runs 
    
 It can also contain project-specific folders like 'images' or 'literature'.
+
+ > ![1689255800549](nfdi4plants.knowledgebase/../image/cmml-quickstart/ARC-Folder-structure.png)
 
 The following guide will help you to get started to work with ARC.
 
@@ -84,7 +82,7 @@ This workbook records the metadata of the whole project. In the first part it st
    - Affiliation
 
 
-❗ For the other parts below the personal data it is recommended to use ARC Commander (**done by the CMML**) for adding the metadata and it should not be filled out manually. 
+❗ For the other parts below the personal data it is recommended to use ARC Commander  for adding the metadata and it should not be filled out manually. 
 
 ***
 
