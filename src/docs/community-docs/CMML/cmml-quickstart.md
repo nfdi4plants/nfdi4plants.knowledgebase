@@ -62,7 +62,7 @@ The ARC always has a specific folder structure that consists of:
    
 It can also contain project-specific folders like 'images' or 'literature'.
 
- > ![1689255800549](nfdi4plants.knowledgebase/../image/cmml-quickstart/ARC-Folder-structure.png)
+ > ![](nfdi4plants.knowledgebase/../image/cmml-quickstart/ARC-Folder-structure.png)
 
 The following guide will help you to get started to work with ARC.
 
@@ -77,7 +77,7 @@ The following guide will help you to get started to work with ARC.
 
 This workbook records the metadata of the whole project. In the first part it stores information about the whole project. It includes an Identifier, Title and Description and also publication data - if published. There is also a part for personal data. Here each column is deticated to a person and it can be filled out manually.
 
-> ![Alt text](nfdi4plants.knowledgebase/../image/cmml-quickstart/isa-investigation.png)
+> ![](nfdi4plants.knowledgebase/../image/cmml-quickstart/isa-investigation.png)
 
 :pen: __Fill out__ the part **'INVESTIGATION CONTACTS'** with your personal data (the following are mandatory):
    - First and Last Name 
@@ -108,7 +108,7 @@ A study always consists of the following structures:
 -->
 
 
-> ![1689256862555](image/cmml-quickstart/1689256862555.png)
+> ![](image/cmml-quickstart/1689256862555.png)
 
 ***
 
@@ -129,7 +129,7 @@ A study always consists of the following structures:
 @note for lea: Missing - explanation of each structure
 -->
   
-> ![1689256959242](image/cmml-quickstart/1689256959242.png)
+> ![](image/cmml-quickstart/1689256959242.png)
 
 
 <!--
