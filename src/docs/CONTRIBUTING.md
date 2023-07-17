@@ -251,7 +251,7 @@ In the following, some ideas are described on how to deal with this:
 By starting with `/` we implicitly say "start at host". 
 So in development it will start with `http://127.0.0.1:8080/`, in production it will start with `https://nfdi4plants.github.io/`. 
 Since in production we also need `https://nfdi4plants.org/nfdi4plants.knowledgebase/`, this type of relative paths can create issues! ⚠️
-- **Relative paths in sidebar:** The sidebars actually check if you are currently in `npm run fornax` mode. So you can use basic relative paths here. 
+- **Relative paths in sidebar:** The sidebars actually checks if you are currently in `npm run fornax` mode. So you can use basic relative paths here. 
 
 For example
 
