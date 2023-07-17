@@ -16,6 +16,9 @@ author:
 - name: Martin Kuhl
   github: https://github.com/Martin-Kuhl
   orcid: https://orcid.org/0000-0002-8493-1077
+- name: Andrea Schrader
+  github: https://github.com/andreaschrader
+  orcid: https://orcid.org/0000-0002-3879-7057
 ---
 
 ## About this guide
