@@ -98,14 +98,14 @@ ___TLDR:___
 - Clone a GitLab repo with adjusted address (one for which you have the respective access rights):  
 
 ```BASH
-git clone https://oauth2:TOKENSTRING@git.nfdi4plants.org/abc/xyz
+git clone https://oauth2:TOKENSTRING@git.nfdi4plants.org/abc/xyz  
 ```
 
 <br>
 In case you created a <i>project access token</i> instead of a <i>personal access token</i>, a <a href="https://docs.gitlab.com/ee/user/project/settings/project_access_tokens.html#bot-users-for-projects">GitLab bot</a> will join your project as a member.  
-Please note that this is supportive and not a “negative” bot in case you are not familiar with this. (Thanks to @Zerskk and @j-bauer for providing the background knowledge on this.)  
+Please note that this is supportive and not a “negative” bot in case you are not familiar with this. (Thanks to <a href="https://github.com/Zerskk">@Zerskk</a> and <a href="https://github.com/j-bauer">@j-bauer</a> for providing the background knowledge on this.)  
 <br>
-However, for the steps below, you want to create a <b>personal access token</b>.
+However, for the steps below, you want to create a <b>personal access token</b>.  
 <br>
 </details>
 
