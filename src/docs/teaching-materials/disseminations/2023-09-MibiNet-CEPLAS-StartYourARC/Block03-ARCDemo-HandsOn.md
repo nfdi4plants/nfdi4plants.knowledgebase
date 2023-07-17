@@ -74,7 +74,7 @@ September 21st, 2023
 
 ## You just received your data
 
-![bg right width:400](./../../../../img/demo_data_screenshot.png)
+![bg right width:400](./../../../img/demo_data_screenshot.png)
 
 ---
 
@@ -101,7 +101,7 @@ September 21st, 2023
 
 ## Structure your data
 
-![width:800](./../../../../img/ARC_fillWithData_experimental.png)
+![width:800](./../../../img/ARC_fillWithData_experimental.png)
 
 ---
 
@@ -119,7 +119,7 @@ object-position: 50% 60%;
 }
 </style>
 
-![](./../../../../img/Swate_metadataTemplates.png)
+![](./../../../img/Swate_metadataTemplates.png)
 
 <!-- 
 1. Fill study characteristics (completely manually)
@@ -145,7 +145,7 @@ object-position: 50% 30%;
 </style>
 
 
-![](./../../../../img/ARC_DataSharing_Experts02_img1.png)
+![](./../../../img/ARC_DataSharing_Experts02_img1.png)
 
 
 ---
@@ -208,8 +208,8 @@ arc assay add -s talinum_drought -a metabolomics
 
 ## Your ARC is ready
 
-![bg 80% right:75%](./../../../../img/demo_data_screenshot.png)
-![bg 80%](./../../../../img/demo_arc_screenshot.png)
+![bg 80% right:75%](./../../../img/demo_data_screenshot.png)
+![bg 80%](./../../../img/demo_arc_screenshot.png)
 
 ---
 
@@ -233,7 +233,7 @@ section p br {
 <br>
 🌐 Shared with collaborators
 
-![bg right width:400](./../../../../img/demo_arc_screenshot.png)
+![bg right width:400](./../../../img/demo_arc_screenshot.png)
 
 
 <!-- ## Outlook
@@ -311,7 +311,7 @@ section {
 }
 </style>
 
-![width:800px](./../../../../img/feedback01_FiveFinger.drawio.svg)
+![width:800px](./../../../img/feedback01_FiveFinger.drawio.svg)
 
 <!-- 
 - Invite participants to give feedback
@@ -324,9 +324,6 @@ section {
 ... | ... | ... | ... | ...
 
 -->
-
-<!-- Source to slide(s) -->
-<!-- ../../../bricks/feedback_002_FiveFinger.md -->
 
 ---
 

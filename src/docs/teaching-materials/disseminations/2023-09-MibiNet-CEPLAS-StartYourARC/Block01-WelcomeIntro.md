@@ -68,70 +68,7 @@ September 21st, 2023
 
 ---
 
-# Shared notes and feedback
 
-We collect notes during the course in an online pad:
-
-https://pad.hhu.de/Aem023liTWKyfPysU0H8Gw?view
-
-
-
-
----
-
-# Research Data
-
-- Any information;
-  - Collected
-  - Observed
-  - Generated
-  - Created
-- ...to validate research findings
-- Types of research data
-  - Digital
-  - Non-digital
-
----
-
-# Forms and formats of research data
-
-<style scoped>
-ul {
-  column-count: 3;
-  list-style-type: square;
-}
-</style>
-
-- Documents
-- Spreadsheets
-- Laboratory Notebooks
-- Field Notebooks
-- Diaries
-- Questionnaires
-- Transcripts
-- Codebooks
-- Audiotapes
-- SOPs
-- Videotapes
-- Photographs
-- Films
-- Test Responses
-- Slides
-- Artifacts
-- Specimens
-- Models
-- Protocols
-- Algorithms
-- Scripts
-- Contents Of An Application
-- Analysis Software
-- Simulation Software
-- Schemas
-- Methodologies
-- Workflows
-- ...
-
----
 
 # CEPLAS: Versatile data types and sources <!-- fit -->
 
@@ -296,4 +233,163 @@ object-fit: cover;
 </style>
 
 ![](./../../../img/FAIR_unFAIR_Stories.png)
+
+
+
+
+
+---
+
+# 3-2-1 backup rule
+<!--replace figure-->
+- **Three** different copies
+- **Two** storage media
+- **One** copy offsite
+
+![bg w:1200](./../../../img/backup_3-2-1rule_img1.png)
+
+
+
+
+--- 
+
+
+# Version control / Track changes
+
+It’s good practice to document:
+- What was changed?
+- Who is responsible?
+- When did it happen?
+- Why the changes?
+
+---
+
+
+
+# Data Sharing - while working collaboratively
+
+---
+
+# Sharing is caring
+
+- Research = Collaboration = Sharing
+  - interaction
+  - knowledge exchange
+  - input from peers
+  - elaborate, initiate or expand collaborations
+- Sharing saves time and resources
+  - common pipelines for data analysis
+  - prevent redundant or overlapping investigations
+
+**Sharing research data is the key to every successful research project.**
+
+---
+
+# Collaborative platforms
+
+### Personal use
+- GoogleDrive <https://drive.google.com/>
+- Microsoft OneDrive / Sharepoint /Teams <https://onedrive.live.com/>
+- Apple iCloud <https://www.icloud.com>
+
+### Business solutions
+- Owncloud https://owncloud.com/
+- Nextcloud https://nextcloud.com/de/
+- google cloud, aws, azure, etc.
+
+---
+
+# Collaborative platforms
+### Institute's solutions
+- local clouds, NAS server
+- regional cloud solutions
+- are guests allowed?
+
+---
+
+# Cloud Services
+
+![bg right:50% w:800](./../../../img/DataSharing_Cloud_img6.png)
+
+<span style="color:#B4CE82">✓ Documents</span>  
+<span style="color:#B4CE82">✓ Small data</span>  
+<span style="color:#B4CE82">✓ Presentations</span>  
+
+<span style="color:#c21f3a">X  Code</span>  
+<span style="color:#c21f3a">X  Data analytical projects</span>  
+<span style="color:#c21f3a">X  Big (“raw”) data</span>  
+
+---
+
+
+
+
+
+
+# Using cloud services for text documents
+
+<style scoped>
+.columns {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+ul {
+    margin: 5; padding: 0;
+}
+</style>
+
+<div class="columns">
+<div class="columns-left">
+
+### <span style="color:#B4CE82">Good</span>
+
+- Collaborative writing
+- Shared text
+- Easy format, and conversion
+
+</div>
+<div class="columns-right">
+
+### <span style="color:#F9CD69">Intermediate</span>
+
+- Flexibility in drawing, editing
+- Sometimes learning curve
+
+</div>
+
+<div class="columns-right">
+
+### <span style="color:#c21f3a">Limited</span>  
+
+- Too large files
+- Security issues
+- Proprietary documents
+
+</div>
+</div>
+
+---
+
+# Collaborative platforms
+
+- Easy sharing and online collaboration
+- Cloud based
+- Unlimited open sharing (any one with link can edit)
+- Closed sharing (sharing upon invitation)
+- Limited project size (e.g. not suitable for large projects with many files/folders) 
+- Paid
+- Version control
+- Easy format conversion
+- Sustainable format
+- Security?
+
+---
+
+
+# HHU Düsseldorf - Links
+
+- Research Data Management Competence Center: https://www.fdm.hhu.de
+- Support for research including HPC: https://www.zim.hhu.de/servicekatalog/forschungsunterstuetzung 
+- Processing & storing data: https://www.zim.hhu.de/servicekatalog/rechnen-und-speichern
 
