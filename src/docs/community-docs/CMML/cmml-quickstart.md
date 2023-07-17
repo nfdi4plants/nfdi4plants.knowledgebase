@@ -87,7 +87,7 @@ This workbook records the metadata of the whole project. In the first part it st
    - Affiliation
 
 
-❗ For the other parts below the personal data it is recommended to use ARC Commander  for adding the metadata and it should not be filled out manually. 
+:bulb: For the other parts below the **'INVESTIGATION CONTACTS'** sections it is recommended to use [ARC Commander](./../../implementation/ArcCommander.html) for adding the metadata. This is less error-prone than filling it out manually.
 
 ***
 
