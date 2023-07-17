@@ -23,7 +23,7 @@ Excerpt of ["Nutzerordnung"](https://www.plant-biochemistry.hhu.de/facilities/me
 
 DataPLANT provides with the Annotated Research Context (ARC) an Research Data Management (RDM) platform after the FAIR principle. The CMML  implements the ARC for cooperations. The aim is to exchange samplesheets, workflows, protocols and share (meta-)data inside a common and shareable folder structure.
 
-:bulb: For more information about ARC click [here](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html).
+:bulb: For more information about ARC click [here](./../../implementation/AnnotatedResearchContext.html).
 
 The previously created ARC will be shared with you over the [DataHUB platform](https://git.nfdi4plants.org/). Please read the following setup and complete the next steps.
 
@@ -31,7 +31,7 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 ## 👣 Setup
 
-1. At first you have to __create a DataHUB account__. Sign up [here](https://auth.nfdi4plants.org/realms/dataplant/protocol/openid-connect/auth?client_id=gitlab-fr&nonce=356a5879964601fc6c507a0e1b9338d3&redirect_uri=https%3A%2F%2Fgit.nfdi4plants.org%2Fusers%2Fauth%2Fopenid_connect%2Fcallback&response_type=code&scope=openid%20profile%20email&state=38af8e237dfa652df91fa72afb2eeb66)!
+1. At first you have to [__create a DataHUB account__](https://register.nfdi4plants.org)!
 
     :bulb: You can also log in with your scientific account ORCID or Life Sciences!
 
