@@ -187,14 +187,14 @@ src/docs
 └── Home.md
 ```
 
-:bulb: For easier findability we try to align the folder structure with how the content is presented in the sidebar of the public site. This is however not always feasible or sensible (for reasons). 
+:bulb: For easier findability, we try to align the folder structure with how the content is presented in the sidebar of the public site. However, this is not always feasible or sensible (for reasons).  
 
 
 ### Common Errors
 
 - Missing metadata block
 - Missing or false required (`MUST`) attribute in metadata block
-- Using a layout in metadata block that does not exist
+- Using a layout in metadata block that does not exist or is deprecated
 - Wrong links
   - to sidebar elements
   - to images
@@ -252,7 +252,7 @@ For example
 ```
 `/docs/fundamentals/index.html` will be parsed to `/nfdi4plants.knowledgebase/docs/fundamentals/index.html`.
     
-- **Relative paths from current file:** These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". Example: `[Test](./ResearchDataManagement.html)`. Starting with `./` translates to "coming from the position of this file". We can even go up in the file hierarchy, like `[Test](./../docs/README.html)`. This translates to "coming from the position of this file, go one folder higher and into the docs directory to find the [Introduction](./../docs/Home.html) there."
+- **Relative paths from current file:** These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". Example: `[Test](./ResearchDataManagement.html)`. Starting with `./` translates to "coming from the position of this file". We can even go up in the file hierarchy, like `[Test](./../docs/README.html)`. For the link "./../docs/Home.html", this translates to "coming from the position of this file, go one folder higher and into the docs directory to find the [Introduction](./../docs/Home.html) which is named "Home" there."
 
 ### Document structure and format
 
