@@ -240,18 +240,21 @@ with `.html`, as the markdown files are parsed to html.
 
 ### Relative Paths
 
-We SHOULD always try to use relative paths, as they are easier to maintain. 
-Although useful, they need a bit more fine tuning, as there are several options.
+We SHOULD always try to use relative paths, as they are easier to maintain.  
+Although useful, they need a bit more fine tuning for different purposes.
 
-One of the major issues with relative paths is that during development the pages are accessed by `/`, for example `/docs/README.html`. 
+Relative paths in production are differently accessed than in development. One of the major issues with relative paths is that during development the pages are accessed by `/`, for example `/docs/README.html`. 
 Published they will be accessed by `/nfdi4plants.knowledgebase` (`/nfdi4plants.knowledgebase/docs/README.html`). 
 In the following, some ideas are described on how to deal with this:
 
-- **Basic relative paths:** These will look like this: `[Test](/README.html)`. 
-By starting with `/` we implicitly say "start at host". 
-So in development it will start with `http://127.0.0.1:8080/`, in production it will start with `https://nfdi4plants.github.io/`. 
-Since in production we also need `https://nfdi4plants.org/nfdi4plants.knowledgebase/`, this type of relative paths can create issues! ⚠️
-- **Relative paths in sidebar:** The sidebars actually checks if you are currently in `npm run fornax` mode. So you can use basic relative paths here. 
+- **Basic relative paths:** 
+  A basic relative path looks like this: `[Test](/README.html)`.  
+  By starting with `/` we implicitly say "start at host".  
+  In development the same path will start with `http://127.0.0.1:8080/`, in production it will start with `https://nfdi4plants.github.io/`.   
+  In production we also use `https://nfdi4plants.org/nfdi4plants.knowledgebase/`.
+- **Relative paths in sidebar:** 
+  The sidebars actually checks if you are currently in `npm run fornax` mode. 
+  Therefore, you can use basic relative paths for this. (mainSidebar.md)  
 
 For example
 
@@ -262,7 +265,12 @@ For example
 ```
 `/docs/fundamentals/index.html` will be parsed to `/nfdi4plants.knowledgebase/docs/fundamentals/index.html`.
     
-- **Relative paths from current file:** These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". Example: `[Test](./ResearchDataManagement.html)`. Starting with `./` translates to "coming from the position of this file". We can even go up in the file hierarchy, like `[Test](./../docs/README.html)`. For the link "./../docs/Home.html", this translates to "coming from the position of this file, go one folder higher and into the docs directory to find the [Introduction](./../docs/Home.html) which is named "Home" there."
+- **Relative paths from current file:**  
+  These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of "Basic relative paths". 
+  ***Examples:*** 
+  - `[Test](./ResearchDataManagement.html)`. Starting with `./` translates to "coming from the position of this file". 
+  - We can go up in the file hierarchy, like `[Test](./../docs/README.html)`. 
+  - For the link "./../docs/Home.html", this translates to "coming from the position of this file, go one folder higher and into the docs directory to find the [Introduction](./../docs/Home.html) which is named "Home" there."
 
 ### Document structure and format
 
@@ -284,11 +292,11 @@ Images can be linked
 
 :bulb: Please store images in `src/docs/img`. 
 
-- The folder `src/docs/img` holds image files (preferably *.svg, *.png) or the original source file (.pptx, .drawio.svg) used to create the image file(s)
-- Avoid adding captions or links to figure files
-- If powerpoint was used to create a figure
-  - the pptx stored in `src/docs/img` is supposed to be a file of only a single slide or slide sequence (i.e. consecutive slides, where one image builds on the previous)
-  - the name of the resulting figure file (e.g. "FAIRprinciples.png") MUST be aligned with the source file (e.g. "FAIRprinciples.pptx")
+- The folder `src/docs/img` holds image files (preferably *.svg, *.png) or the original source file (.pptx, .drawio.svg) used to create the image file(s).
+- Avoid adding captions or links to figure files.
+- If powerpoint was used to create a figure:
+  - The pptx stored in `src/docs/img` is supposed to be a file of only a single slide or slide sequence (i.e. consecutive slides, where one image builds on the previous)
+  - The name of the resulting figure file (e.g. "FAIRprinciples.png") MUST be aligned with the source file (e.g. "FAIRprinciples.pptx")
     - a consecutive number is suffixed to images from slide sequences (e.g. "FAIRprinciples_seq1.png", "FAIRprinciples_seq2.png")
 
 
@@ -297,7 +305,7 @@ Images can be linked
 - Make sure you are allowed to add the content. If you reuse any content from other sources, make sure to reference the source and / or license, if applicable. 
 - In particular, when adding images that you did not create yourself, please clearly state this by
   1. adding the source to the [`src/docs/img/_ImageIndex.md`](./img/_ImageIndex.html), 
-  2. adding a link / license (however applicable) to the content (artilce, tutorial, slide deck, etc.) where you use the image, and
+  2. adding a link / license (however applicable) to the content (article, tutorial, slide deck, etc.) where you use the image, and
   3. reminding the knowledge base curators during your pull request.
 
 
@@ -317,7 +325,7 @@ File names:
 
 ## Avoiding dead links
 
-Once in a while we (need to) restructure the `/nfdi4plants.knowledgebase/src/docs` folder a bit, which includes changes to file and folder names, i.e. producing dead links. 
+Once in a while, we (need to) restructure the `/nfdi4plants.knowledgebase/src/docs` folder a bit, which includes changes to file and folder names, i.e. producing dead links. 
 In this case, the least we can do, is to keep the knowledge base itself intact:
 
 1. Carefully check **all markdown documents** for cross-links to the original file name (this can easily be done via e.g. VS Code). 
