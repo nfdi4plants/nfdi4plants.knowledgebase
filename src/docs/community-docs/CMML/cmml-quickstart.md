@@ -83,12 +83,24 @@ This workbook records the metadata of the whole project. In the first part it st
 
 ❗ For the other parts below the personal data it is recommended to use ARC Commander (**done by the CMML**) for adding the metadata and it should not be filled out manually. 
 
-### 📖 studies
+### 📖 Studies
+
+A study always consists of the following structures: 
+
+- protocols: 
+- resources
+- isa.study.xlsx: samplesheet, (meta-)data
+- README.md
 
 ![1689256862555](image/cmml-quickstart/1689256862555.png)
 
 
-### 📖 assays 
+### 📖 Assays 
 
- 
+ An assay always consists of the following structures:
+
+ - dataset
+ - protocols
+ - isa.assay.xlsx: samplesheet, (meta-)data
+ - README.md
 ![1689256959242](image/cmml-quickstart/1689256959242.png)
