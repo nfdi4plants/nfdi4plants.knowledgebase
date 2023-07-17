@@ -91,7 +91,9 @@ This workbook records the metadata of the whole project. In the first part it st
 
 ***
 
-### 📖 Studies
+### 📖 Studies 
+
+<!-- not ready yet -->
 
 A study always consists of the following structures: 
 
@@ -112,6 +114,8 @@ A study always consists of the following structures:
 
 
 ### 📖 Assays 
+
+<!-- not ready yet -->
 
  An assay always consists of the following structures:
 
