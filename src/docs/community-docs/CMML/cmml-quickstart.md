@@ -118,6 +118,9 @@ This workbook records the metadata of the whole project. In the first part it st
 
 A study always consists of the following structures:
 
+![Study folder structure](./image/cmml-quickstart/Study_FolderStructure.png)
+
+
 - protocols:  
 - resources
 - isa.study.xlsx: samplesheet, (meta-)data
@@ -132,8 +135,6 @@ foto vom datahub machen
 ebenfalls bei dem Assay
 -->
 
-> ![Study-folder-structure](image/cmml-quickstart/Study-folder-structure.png)
-
 ***
 
 ### 📖 Assays
@@ -141,6 +142,8 @@ ebenfalls bei dem Assay
 <!-- not ready yet -->
 
  An assay always consists of the following structures:
+
+ ![Assay-folder-structure](image/cmml-quickstart/Assay_FolderStructure.png)
 
 - dataset
 - protocols
@@ -151,8 +154,6 @@ ebenfalls bei dem Assay
 
 @note for lea: Missing - explanation of each structure
 -->
-  
-> ![Assay-folder-structure](image/cmml-quickstart/Assay-folder-structure.png)
 
 <!--
 
