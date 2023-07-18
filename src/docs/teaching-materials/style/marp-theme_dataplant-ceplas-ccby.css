@@ -61,3 +61,8 @@ section::after {
   font-size: 20px;
   color: #2D3E50  
 }
+
+ul{
+  margin-left: 0px;
+  padding-left: 5;
+}

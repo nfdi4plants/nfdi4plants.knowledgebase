@@ -66,7 +66,6 @@ section {background: none;}
   - [create and push more arcs (for loop)](#create-and-push-more-arcs-for-loop)
 
 
-
 ---
 
 # RDM in practice &ndash; Electronic lab notebooks
@@ -78,36 +77,38 @@ July 20th, 2023
 
 --- 
 
-## Challenges
-
-- machine-readability
-  - schemata
-- PIDs
-
-## Benefits
-
-### political, legal
-
-- time-stamping
-- S1 regulations 
-- 
-
-## Exchange formats
-
-- .eln format
-- yet another standard..
-
-## Content
+# Content
 
 - Intro to elabFTW as one example for electronic lab notebooks
 - pro / con of elabFTW
 - shaping your lab documentation towards FAIR
 
 ---
+<!-- 
+# Challenges
 
-# Introduction
+- machine-readability
+  - schemata
+- PIDs
 
-## Create an account
+# Benefits
+
+## political, legal
+
+- time-stamping
+- S1 regulations 
+- 
+
+# Exchange formats
+
+- .eln format
+- yet another standard..
+
+---
+
+-->
+
+# Check-in
 
 elabFTW @ RPTU: https://elab.rptu.de/
 
@@ -117,29 +118,50 @@ Demo elabFTW: https://demo.elabftw.net/
 
 &emsp; :warning: this is a public demo &rarr; All changes are public
 
---- 
-   
-# General overview
+---
 
---- 
 
-## Experiment panel
 
-- Experiments list
+# Experiments panel
+<!-- 
+<style scoped>
+
+section{
+   background: url(./images/elabFTW-experiment-list-view.drawio.svg);
+   background-repeat: no-repeat;
+   background-size: 50%;
+   background-position: 2% 99%;   
+}
+
+</style> -->
+
 - Create an experiment
 - View / edit mode
 
+
+![w:600 bg right:50%](./images/elabFTW-experiment-list-view.drawio.svg)
+
+
+
 --- 
 
-## Exercise: Create an experiment "Baking pancakes"
-   1. Ingredients
-      1. Flour
-      2. Eggs
-      3. Milk
-   2. Steps
-      1. Mix ingredients
-      2. Fry in pan
-      3. Serve with maple syrup
+# 👩‍💻 Exercise
+
+Create an experiment **Baking pancakes**
+
+```yaml
+1. Ingredients
+   - Flour
+   - Eggs
+   - Milk
+2. Procedure
+   - Mix ingredients
+   - Fry in pan
+   - Serve with maple syrup
+3. ...
+```
+
+![bg right:40% w:350px](./images/pancakes-cc0.jpg)
 
 ---
 
@@ -151,14 +173,53 @@ Demo elabFTW: https://demo.elabftw.net/
 
 ---
 
-## Categorize
-   1. Use of tags -> "baking recipes"
-   2. Use of database -> "ingredients"
-   3. Linking items
+# Categorize
+
+- Tags
+- Database
+- Link items
 
 ---
 
-## Exercise: Categorize your experiment items
+## Tags
+
+![w:900](images/elabFTW-experiment-tags.png)
+
+<br>
+
+![w:900](images/elabFTW-experiment-tags2.png)
+
+---
+
+## Database
+
+![w:900](images/elabFTW-database-list-view2.png)
+
+<br>
+
+![w:900](images/elabFTW-adminpanel-item-types2.png)
+
+
+---
+
+## Linking items
+
+![w:900](images/elabFTW-experiment-linkedItems.png)
+
+<br>
+
+![w:900](images/elabFTW-database-linkedItems.png)
+
+
+---
+
+# 👩‍💻 Exercise
+
+**Categorize** your experiment items
+
+- Use tags &rarr; "baking recipes"
+- Create database entries &rarr; "ingredients"
+- link items
 
 ---
 
@@ -169,26 +230,34 @@ Demo elabFTW: https://demo.elabftw.net/
 
 ---
 
-1. Exercise: Start another experiment "Baking a chocolate cake"
-   1. Grocery list (inputs)
-      1. Flour
-      2. Sugar
-      3. Eggs
-      4. Butter
-      5. Milk
-      6. Chocolate
-   2. Steps
-      1. Mix ingredients
-         1. type of mixer
-         2. speed
-         3. type of beater
-      2. Cake pan
-         1. type of cake pan
-         2. butter cake pan
-      3. Bake
-         1. temperature
-         2. top heat / circulating air
-         3. Cooling phase
+# 👩‍💻 Exercise
+
+Start another experiment **Baking a chocolate cake**
+
+```yaml
+1. Grocery list (inputs)
+   1. Flour
+   2. Sugar
+   3. Eggs
+   4. Butter
+   5. Milk
+   6. Chocolate
+2. Steps
+   1. Mix ingredients
+      1. type of mixer
+      2. speed
+      3. type of beater
+   2. Prepare cake pan
+      1. type of cake pan
+      2. butter cake pan
+   3. Bake
+      1. temperature
+      2. top heat / circulating air
+      3. Cooling phase
+```
+
+![bg right:40% w:350px](./images/chocolate-cake-cc0.jpg)
+
 
 ---
 
@@ -200,13 +269,16 @@ Demo elabFTW: https://demo.elabftw.net/
 
 ---
 
-## Schematize
-  1. Use of templates
-  2. Use of json templates
+# Schematize
+
+- Use of templates
+
 
 ---
 
-## Exercise: Create an experiment template "baking recipes"
+# 👩‍💻 Exercise
+
+Create an experiment template for **baking recipes**
 
 ---
 
@@ -216,7 +288,35 @@ Demo elabFTW: https://demo.elabftw.net/
 
 ---
 
-## Sharing an experiment
+# Cut protocols into pieces (processes)
+
+![](./images/define-processes-01.drawio.svg)
+
+---
+
+# Define inputs and outputs
+
+![](./images/define-processes-02.drawio.svg)
+
+---
+
+# Cut protocols into pieces
+
+![](./images/define-processes-03.drawio.svg)
+
+---
+
+# Cut protocols into pieces
+
+![](./images/define-processes-04.drawio.svg)
+
+
+---
+
+# Sharing an experiment
+
+<!-- _background-color: red -->
+
 - visibility
 - write access
 - version history
@@ -232,59 +332,29 @@ Demo elabFTW: https://demo.elabftw.net/
 
 ---
 
-
 1. Exercise: Extend the experiment
    1. Cut and serve
    2. Prepare coffee
    3. Set the table
 
+---
 
 # Pro 
 
 - flexible
 - version history
 
-
 ---
 
+# Towards a **FAIR** elabFTW
 
+- Use of json templates
 
-# Towards FAIR
 
 --- 
 
-## Protocols &ndash; Recipes to Knowledge
 
-
----
-
-## Cut protocols into pieces (processes)
-
-![bg right w:90%](./images/define-processes-01.drawio.svg)
-
----
-
-## Define inputs and outputs
-
-![bg right w:90%](./images/define-processes-02.drawio.svg)
-
----
-
-## Cut protocols into pieces
-
-![bg right w:90%](./images/define-processes-03.drawio.svg)
-
----
-
-## Cut protocols into pieces
-
-![bg right w:90%](./images/define-processes-04.drawio.svg)
-
-
-
----
-
-## Example Scenario
+# Example Scenario
 
 1. You use **ARCs** to
 
@@ -300,7 +370,7 @@ Demo elabFTW: https://demo.elabftw.net/
 
 ---
 
-## Goals
+# Goals
 
 1. Benefit from "both worlds" (ARC and elabFTW)
 
@@ -314,62 +384,62 @@ Demo elabFTW: https://demo.elabftw.net/
 
 ---
 
-## Local ARCs - <br> Project overview
+# Local ARCs - <br> Project overview
 
 ![bg right:50% w:600](./images/arc-local-overview.png)
 
 
 ---
 
-## Local ARCs - <br> Project overview
+# Local ARCs - <br> Project overview
 
 ![bg right:50% w:600](./images/arc-local-details1.png)
 
 ---
 
-## Local ARCs - <br> Protocols
+# Local ARCs - <br> Protocols
 
 ![bg right:50% w:550](./images/arc-local-details2.png)
 
 
 ---
 
-## DataHUB
+# DataHUB
 
 https://git.nfdi4plants.org
 
 
 ---
 
-## Example ARC DataHUB - project overview
+# Example ARC DataHUB - project overview
 
 ![w:800](./images/datahub-project-overview.png)
 
 
 ---
 
-## Example ARC DataHUB - ARC overview
+# Example ARC DataHUB - ARC overview
 
 ![w:800](./images/datahub-arc-root.png)
 
 
 ---
 
-## Example ARC DataHUB - assay protocols
+# Example ARC DataHUB - assay protocols
 
 ![w:800](./images/datahub-arc-assay-protocols.png)
 
 
 ---
 
-## Example ARC DataHUB - protocol detail
+# Example ARC DataHUB - protocol detail
 
 ![w:800](./images/datahub-arc-study-protocol-view.png)
 
 
 ---
 
-## elabFTW - Overview
+# elabFTW - Overview
 
 ![bg right:60% w:700](./images/elabFTW-overview-panels.drawio.png)
 
@@ -383,7 +453,7 @@ elabFTW data is mainly divided in two main panels
 ---
 
 
-## Experiment Panel
+# Experiment Panel
 
 ![bg right:60% w:700](./images/elabFTW-experiment-list-view.png)
 
@@ -391,7 +461,7 @@ The `Experiment` panel is the default "working area" for protocols of daily lab 
 
 ---
 
-## Database Panel
+# Database Panel
 
 ![bg right:60% w:700](./images/elabFTW-database-list-view.png)
 
@@ -399,7 +469,7 @@ The `Database` panel is elabFTW's place to categorize contents
 
 ---
 
-## Database item types
+# Database item types
 
 :bulb: Item types can be defined in the `Admin Panel`
 
@@ -409,7 +479,7 @@ The `Database` panel is elabFTW's place to categorize contents
 
 ---
 
-## Preparing database lists for elabFTW import
+# Preparing database lists for elabFTW import
 
 :bulb: elabFTW offers batch-import from csv.
 
@@ -421,13 +491,13 @@ The `Database` panel is elabFTW's place to categorize contents
 
 ---
 
-## Database import
+# Database import
 
 ![](./images/elabFTW-database-import.png)
 
 ---
 
-## Database import example - Investigations
+# Database import example - Investigations
 
 `db_investigations.csv`
 
@@ -439,7 +509,7 @@ inv003-welwitschia-clock | inv003-welwitschia-clock | inv003-welwitschia-clock |
 
 ---
 
-## Database import example - Studies
+# Database import example - Studies
 
 `exp_inv001-talinum-cam_studies.csv`
 
@@ -452,26 +522,26 @@ sty03-aba-timeseries | inv001-talinum-cam | sty03-aba-timeseries | Time series e
 
 ---
 
-## Database import
+# Database import
 
 ![w:700](./images/elabFTW-database-import-menu.png)
 
 ---
 
-## Database import
+# Database import
 
 ![w:700](./images/elabFTW-database-import-success.png)
 
 ---
 
-## Database Panel
+# Database Panel
 
 ![w:700](./images/elabFTW-database-list-view.png)
 
 
 ---
 
-## Linking / grouping items
+# Linking / grouping items
 
 :bulb: Two mechanisms
 
@@ -483,7 +553,7 @@ sty03-aba-timeseries | inv001-talinum-cam | sty03-aba-timeseries | Time series e
 
 ---
 
-## Linking items
+# Linking items
 
 In edit mode
 
@@ -491,27 +561,40 @@ In edit mode
 
 ---
 
-## Linked items
+# Linked items
 
 ![bg right:70% w:700](./images/elabFTW-experiment-linked-items.png)
 
+---
+
+# Conclusion
+
+
+
 
 
 ---
+
+
+
+
+
+
+
 ---
 
-## Demo
+# Demo
 
 :construction: The following slides are attached to prep a demo 
 
 
 ---
 
-## Creating the ARC structure locally (demo)
+# Creating the ARC structure locally (demo)
 
 ---
 
-## settings
+# settings
 
 ```bash
 gitlab_base_url=https://git.nfdi4plants.org/elab-demo-arcs/
@@ -520,7 +603,7 @@ arc_dir_local=~/gitlab_dataplant/elab-demo-arcs
 
 ---
 
-## create a first arc
+# create a first arc
 
 :bulb: This is a line-by-line example to initiate and share an ARC with a few studies and assays
 
@@ -555,7 +638,7 @@ arc sync -f -r "$gitlab_base_url""$arc_name" -m "initialize ARC structure"
 
 ---
 
-## create and push more arcs (for loop)
+# create and push more arcs (for loop)
 
 ```bash
 for arc_name in inv002-arabidopsis-heat inv003-welwitschia-clock; do
