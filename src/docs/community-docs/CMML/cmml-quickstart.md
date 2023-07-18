@@ -118,7 +118,7 @@ This workbook records the metadata of the whole project. In the first part it st
 
 A study always consists of the following structures:
 
-![Study folder structure](./image/cmml-quickstart/Study_FolderStructure.png)
+> ![Study folder structure](./image/cmml-quickstart/Study_FolderStructure.png)
 
 
 - protocols:  
@@ -143,7 +143,7 @@ ebenfalls bei dem Assay
 
  An assay always consists of the following structures:
 
- ![Assay-folder-structure](image/cmml-quickstart/Assay_FolderStructure.png)
+ > ![Assay-folder-structure](image/cmml-quickstart/Assay_FolderStructure.png)
 
 - dataset
 - protocols
