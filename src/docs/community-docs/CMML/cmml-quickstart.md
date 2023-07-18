@@ -63,7 +63,7 @@ The ARC always has a specific folder structure that consists of:
    
 It can also contain project-specific folders like 'images' or 'literature'.
 
- > ![](./image/cmml-quickstart/ARC-Folder-structure.png)
+ > ![arc-folder-structure](./image/cmml-quickstart/ARC-Folder-structure.png)
 
 The following guide will help you to get started to work with ARC.
 
@@ -109,7 +109,7 @@ A study always consists of the following structures:
 -->
 
 
-> ![](image/cmml-quickstart/1689256862555.png)
+> ![](image/cmml-quickstart/Study-folder-structure.png)
 
 ***
 
@@ -130,7 +130,7 @@ A study always consists of the following structures:
 @note for lea: Missing - explanation of each structure
 -->
   
-> ![](image/cmml-quickstart/1689256959242.png)
+> ![](image/cmml-quickstart/Assay-folder-structure.png)
 
 
 <!--
