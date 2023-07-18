@@ -50,6 +50,7 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 5. __Read and follow__ the next instructions - __📘 User Guide__
 
 ***
+
 ## 📘 User Guide
 
 ### 📖 Introduction
