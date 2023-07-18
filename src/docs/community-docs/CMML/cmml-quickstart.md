@@ -25,12 +25,8 @@ Excerpt of ["Nutzerordnung"](https://www.plant-biochemistry.hhu.de/facilities/me
 
 DataPLANT provides with the Annotated Research Context (ARC) an Research Data Management (RDM) platform after the FAIR principle. The CMML  implements the ARC for cooperations.
 
->![ARC for Collaborators](./image/cmml-quickstart/ARC_DataSharing_Collaborators_img2.png)
+<img src="./src/../../../../_public/docs/img/ARC_DataSharing_Collaborators_img2.png" style="width:65%; display: block; margin: 20px auto;">
 
-<!--
-
-Frage an @brillator: kann ich dieses Bild verwenden?
--->
 The aim is to exchange samplesheets, workflows, protocols and share (meta-)data inside a common and shareable folder structure.
 
 :bulb: For more information about ARC click [here](./../../implementation/AnnotatedResearchContext.html).
@@ -47,15 +43,17 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 2. If you have sucessfully created your account you can check on the website at the top left (yellow arrow) your _@username_ (blue arrow).
 
-> ![find your username](./image/cmml-quickstart/DataHUB-Username.png)
+<img src="./image/cmml-quickstart/DataHUB-Username.png" style="width:45%; display: block; margin: 20px auto;">
 
-3. __Commit__ this _@username_ to the CMML to get started with the common ARC.
+1. __Commit__ this _@username_ to the CMML to get started with the common ARC.
 
     ✉️ You will recieve an e-mail after the access for the ARC was granted.
 
-4. __Follow__ the link (green arrow) in the e-mail and log in with your DataHUB account.
+2. __Follow__ the link (green arrow) in the e-mail and log in with your DataHUB account.
 
-> ![dataHUB/gitLab Mail](./image/cmml-quickstart/DataHUB-Access-Mail.png)
+> ![dataHUB/gitLab Mail]()
+
+<img src="./image/cmml-quickstart/DataHUB-Access-Mail.png" style="width:95%;display: block; margin: 20px auto;">
 
 5. __Read and follow__ the next instructions - __📘 User Guide__.
 
@@ -74,7 +72,7 @@ The ARC always has a specific folder structure that consists of:
 
 It can also contain project-specific folders like 'images' or 'literature'.
 
- > ![arc-folder-structure](./image/cmml-quickstart/ARC-Folder-structure.png)
+<img src="./image/cmml-quickstart/ARC-Folder-structure.png" style="width:45%; display: block; margin: 20px auto;">
 
  Those folders contain specific parts of a research project.
 > Example:
@@ -122,7 +120,7 @@ A study always consists of the following structures:
 > ![Study folder structure](./image/cmml-quickstart/Study_FolderStructure.png)
 --> 
 
-> <img src="./image/cmml-quickstart/Study_FolderStructure.png" style="width:65%">
+> <img src="./image/cmml-quickstart/Study_FolderStructure.png" style="width:45%; display: block; margin: 20px auto;">
 
 - protocols:  
 - resources
@@ -149,7 +147,7 @@ ebenfalls bei dem Assay
  > ![Assay-folder-structure](image/cmml-quickstart/Assay_FolderStructure.png)
 -->
 
- > <img src ="image/cmml-quickstart/Assay_FolderStructure.png" style="width:65%; display: block; margin: 20px auto;">
+ > <img src ="image/cmml-quickstart/Assay_FolderStructure.png" style="width:45%; display: block; margin: 20px auto;">
 
 - dataset
 - protocols
