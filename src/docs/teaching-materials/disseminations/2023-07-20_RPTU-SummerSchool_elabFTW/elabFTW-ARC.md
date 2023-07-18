@@ -129,7 +129,7 @@ Demo elabFTW: https://demo.elabftw.net/
 - Create an experiment
 - View / edit mode
 
-
+--- 
 
 ## Exercise: Create an experiment "Baking pancakes"
    1. Ingredients
@@ -140,30 +140,44 @@ Demo elabFTW: https://demo.elabftw.net/
       1. Mix ingredients
       2. Fry in pan
       3. Serve with maple syrup
+
+---
+
 <!-- FAIR Recap 1: 
 - inputs
 - outputs
 - reusability (of items)
 -->
-3. Categorize
+
+---
+
+## Categorize
    1. Use of tags -> "baking recipes"
    2. Use of database -> "ingredients"
    3. Linking items
-1. Exercise: Categorize your experiment items
+
+---
+
+## Exercise: Categorize your experiment items
+
+---
+
 <!-- FAIR Recap 2: 
 - PIDs
 - CV / ontology
 -->
 
-2. Exercise: Start another experiment "Baking a chocolate cake"
-   2. Grocery list (inputs)
+---
+
+1. Exercise: Start another experiment "Baking a chocolate cake"
+   1. Grocery list (inputs)
       1. Flour
       2. Sugar
       3. Eggs
       4. Butter
       5. Milk
       6. Chocolate
-   3. Steps
+   2. Steps
       1. Mix ingredients
          1. type of mixer
          2. speed
@@ -175,27 +189,40 @@ Demo elabFTW: https://demo.elabftw.net/
          1. temperature
          2. top heat / circulating air
          3. Cooling phase
+
+---
+
+
 <!-- FAIR Recap 3: 
 - re-use process (-> function "duplicate")
 - re-use items
 -->
 
-# Schematize
+---
+
+## Schematize
   1. Use of templates
   2. Use of json templates
 
-Exercise: Create an experiment template "baking recipes"
+---
 
+## Exercise: Create an experiment template "baking recipes"
+
+---
 
 <!-- FAIR Recap 4: 
 - everyone comes up with their own template
 -->
 
-# Sharing an experiment
+---
+
+## Sharing an experiment
 - visibility
 - write access
 - version history
 - options to export
+
+---
 
 <!-- FAIR Recap 5: 
 - can only collaborate within instance -> complicated user management
@@ -203,6 +230,7 @@ Exercise: Create an experiment template "baking recipes"
 - provenance / reuse / contribution -> compare vdersioning to git (graph)
 -->
 
+---
 
 
 1. Exercise: Extend the experiment
@@ -217,8 +245,7 @@ Exercise: Create an experiment template "baking recipes"
 - version history
 
 
-
-
+---
 
 
 
