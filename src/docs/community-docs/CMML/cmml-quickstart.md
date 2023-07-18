@@ -23,7 +23,15 @@ Excerpt of ["Nutzerordnung"](https://www.plant-biochemistry.hhu.de/facilities/me
 
 ## 🌐 ARC - Annotated Research Context
 
-DataPLANT provides with the Annotated Research Context (ARC) an Research Data Management (RDM) platform after the FAIR principle. The CMML  implements the ARC for cooperations. The aim is to exchange samplesheets, workflows, protocols and share (meta-)data inside a common and shareable folder structure.
+DataPLANT provides with the Annotated Research Context (ARC) an Research Data Management (RDM) platform after the FAIR principle. The CMML  implements the ARC for cooperations. 
+
+>![ARC for Collaborators](./image/cmml-quickstart/ARC_DataSharing_Collaborators_img2.png)
+
+<!--
+
+Frage an @brillator: kann ich dieses Bild verwenden?
+-->
+The aim is to exchange samplesheets, workflows, protocols and share (meta-)data inside a common and shareable folder structure.
 
 :bulb: For more information about ARC click [here](./../../implementation/AnnotatedResearchContext.html).
 
@@ -67,6 +75,15 @@ The ARC always has a specific folder structure that consists of:
 It can also contain project-specific folders like 'images' or 'literature'.
 
  > ![arc-folder-structure](./image/cmml-quickstart/ARC-Folder-structure.png)
+
+ Those folders contain specific parts of a research project.
+> Example:
+> - studies: Cultivation and sampling of plants
+> - assays: Extraction, derivatization and measuring of the samples
+
+<!--
+ > ![Folder Structure](./image/cmml-quickstart/ARC_IllustratedFolderStructure.jpg)
+--> 
 
 The following guide will help you to get started to work with ARC.
 
