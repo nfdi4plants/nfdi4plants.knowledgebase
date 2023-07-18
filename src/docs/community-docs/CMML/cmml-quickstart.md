@@ -12,6 +12,7 @@ add sidebar: _sidebars/mainSidebar.md
 ---
 
 ## 👥Cooperation - User regulation
+
 __All cooperations__ are incumbent upon the ["Nutzerordnung"](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung).
 
 Excerpt of ["Nutzerordnung"](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung):
@@ -19,6 +20,7 @@ Excerpt of ["Nutzerordnung"](https://www.plant-biochemistry.hhu.de/facilities/me
 >Das CEPLAS metabolomics & metabolism laboratory (CMML) ist Teil der Infrastruktureinheit „Technologie-Plattform: Pflanzenstoffwechsel und Metabolomik“ des Cluster of Excellence on Plant Sciences (CEPLAS) sowie des Instituts Biochemie der Pflanzen. Die Aufgabe des CMML ist die Bereitstellung und Entwicklung analytischer Methoden im Bereich Stoffwechselanalytik (Metabolomics) mit besonderem Fokus auf sogenannte Primärmetabolite. Des Weiteren unterstützen wir Forschende des Clusters und der Heinrich-Heine-Universität im Bereich Experimentdesign und Probenaufarbeitung in dem interdisziplinären Umfeld der Lebenswissenschaften (v.a. Pflanzenbiologie, Mikrobiologie, Medizin). Eine Nutzung durch externe Forschergruppen ist nach Absprache ebenfalls möglich.
 
 ***
+
 ## 🌐 ARC - Annotated Research Context
 
 DataPLANT provides with the Annotated Research Context (ARC) an Research Data Management (RDM) platform after the FAIR principle. The CMML  implements the ARC for cooperations. The aim is to exchange samplesheets, workflows, protocols and share (meta-)data inside a common and shareable folder structure.
@@ -54,13 +56,14 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 ## 📘 User Guide
 
 ### 📖 Introduction
-The ARC always has a specific folder structure that consists of: 
+
+The ARC always has a specific folder structure that consists of:
 
 - studies
 - assays
-- workflows 
-- runs 
-   
+- workflows
+- runs
+
 It can also contain project-specific folders like 'images' or 'literature'.
 
  > ![arc-folder-structure](./image/cmml-quickstart/ARC-Folder-structure.png)
@@ -78,26 +81,25 @@ The following guide will help you to get started to work with ARC.
 
 This workbook records the metadata of the whole project. In the first part it stores information about the whole project. It includes an Identifier, Title and Description and also publication data - if published. There is also a part for personal data. Here each column is deticated to a person and it can be filled out manually.
 
-> ![](./image/cmml-quickstart/isa-investigation.png)
+> ![isa-investigation](./image/cmml-quickstart/isa-investigation.png)
 
-:pen: __Fill out__ the part **'INVESTIGATION CONTACTS'** with your personal data (the following are mandatory):
+:pen: __Fill out__ the part __'INVESTIGATION CONTACTS'__ with your personal data (the following are mandatory):
 
-   - First and Last Name 
-   - Email
-   - Phone
-   - Address
-   - Affiliation
+- First and Last Name
+- Email
+- Phone
+- Address
+- Affiliation
 
-
-:bulb: For the other parts below the **'INVESTIGATION CONTACTS'** sections it is recommended to use [ARC Commander](./../../implementation/ArcCommander.html) for adding the metadata. This is less error-prone than filling it out manually.
+:bulb: For the other parts below the __'INVESTIGATION CONTACTS'__ sections it is recommended to use [ARC Commander](./../../implementation/ArcCommander.html) for adding the metadata. This is less error-prone than filling it out manually.
 
 ***
 
-### 📖 Studies 
+### 📖 Studies
 
 <!-- not ready yet -->
 
-A study always consists of the following structures: 
+A study always consists of the following structures:
 
 - protocols:  
 - resources
@@ -113,30 +115,27 @@ foto vom datahub machen
 ebenfalls bei dem Assay
 -->
 
-
-> ![](image/cmml-quickstart/Study-folder-structure.png)
+> ![Study-folder-structure](image/cmml-quickstart/Study-folder-structure.png)
 
 ***
 
-
-### 📖 Assays 
+### 📖 Assays
 
 <!-- not ready yet -->
 
  An assay always consists of the following structures:
 
- - dataset
- - protocols
- - isa.assay.xlsx: samplesheet, (meta-)data
- - README.md
+- dataset
+- protocols
+- isa.assay.xlsx: samplesheet, (meta-)data
+- README.md
   
 <!-- 
 
 @note for lea: Missing - explanation of each structure
 -->
   
-> ![](image/cmml-quickstart/Assay-folder-structure.png)
-
+> ![Assay-folder-structure](image/cmml-quickstart/Assay-folder-structure.png)
 
 <!--
 
