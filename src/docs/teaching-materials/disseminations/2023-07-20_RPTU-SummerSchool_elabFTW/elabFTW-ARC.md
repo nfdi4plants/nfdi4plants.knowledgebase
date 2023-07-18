@@ -1,5 +1,5 @@
 ---
-# marp: true
+marp: true
 theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 author:
@@ -11,6 +11,13 @@ license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 title: promotion_elabFTW-ARC
 date: 2023-07-20
 ---
+
+<style>
+
+section {background: none;}
+
+</style>
+
 
 - [RDM in practice](#rdm-in-practice)
   - [Challenges](#challenges)
@@ -62,12 +69,11 @@ date: 2023-07-20
 
 ---
 
-# RDM in practice
+# RDM in practice &ndash; Electronic lab notebooks
 
 Dominik Brilhaus &ndash; [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-science-and-data-management/)
 
 RPTU Summer School
-
 July 20th, 2023
 
 --- 
@@ -86,40 +92,46 @@ July 20th, 2023
 - S1 regulations 
 - 
 
-
 ## Exchange formats
 
 - .eln format
 - yet another standard..
 
-
-
----
-
 ## Content
 
 - Intro to elabFTW as one example for electronic lab notebooks
 - pro / con of elabFTW
-- shaping your lab documentation towards 
+- shaping your lab documentation towards FAIR
+
+---
+
+# Introduction
+
+## Create an account
+
+elabFTW @ RPTU: https://elab.rptu.de/
+
+&emsp; :warning: this is the RPTU elabFTW instance &rarr; Changes cannot be deleted. 
+
+Demo elabFTW: https://demo.elabftw.net/
+
+&emsp; :warning: this is a public demo &rarr; All changes are public
+
+--- 
+   
+# General overview
+
+--- 
+
+## Experiment panel
+
+- Experiments list
+- Create an experiment
+- View / edit mode
 
 
 
-
-
-# Preparation / sign-in
-
-RPTU elabFTW: https://elab.rptu.de/login.php
-
-1. Login possible for all users and tutors?
-2. Is there a test instance or (preferred) can we generate a "summer school demo team"? 
-
-
-## Structure 
-
-1. Introduction
-   1. General overview
-   2. Experiment panel
-2. Exercise: Create an experiment "Baking pancakes"
+## Exercise: Create an experiment "Baking pancakes"
    1. Ingredients
       1. Flour
       2. Eggs
