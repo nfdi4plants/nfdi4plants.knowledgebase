@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: marp-theme_dataplant-ceplas-ccby
+# theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 author:
 - name: Dominik Brilhaus
@@ -14,59 +14,12 @@ date: 2023-07-20
 
 <style>
 
-section {background: none;}
+section {
+   /* background: none; */
+   /* background-color: white; */
+}
 
 </style>
-
-
-- [RDM in practice](#rdm-in-practice)
-  - [Challenges](#challenges)
-  - [Benefits](#benefits)
-  - [Exchange formats](#exchange-formats)
-  - [Content](#content)
-- [Preparation / sign-in](#preparation--sign-in)
-  - [Structure](#structure)
-- [Schematize](#schematize)
-- [Sharing an experiment](#sharing-an-experiment)
-- [Pro](#pro)
-- [Towards FAIR](#towards-fair)
-  - [Protocols – Recipes to Knowledge](#protocols--recipes-to-knowledge)
-  - [Cut protocols into pieces (processes)](#cut-protocols-into-pieces-processes)
-  - [Define inputs and outputs](#define-inputs-and-outputs)
-  - [Cut protocols into pieces](#cut-protocols-into-pieces)
-  - [Cut protocols into pieces](#cut-protocols-into-pieces-1)
-  - [Example Scenario](#example-scenario)
-  - [Goals](#goals)
-  - [Local ARCs -  Project overview](#local-arcs----project-overview)
-  - [Local ARCs -  Project overview](#local-arcs----project-overview-1)
-  - [Local ARCs -  Protocols](#local-arcs----protocols)
-  - [DataHUB](#datahub)
-  - [Example ARC DataHUB - project overview](#example-arc-datahub---project-overview)
-  - [Example ARC DataHUB - ARC overview](#example-arc-datahub---arc-overview)
-  - [Example ARC DataHUB - assay protocols](#example-arc-datahub---assay-protocols)
-  - [Example ARC DataHUB - protocol detail](#example-arc-datahub---protocol-detail)
-  - [elabFTW - Overview](#elabftw---overview)
-  - [Experiment Panel](#experiment-panel)
-  - [Database Panel](#database-panel)
-  - [Database item types](#database-item-types)
-  - [Preparing database lists for elabFTW import](#preparing-database-lists-for-elabftw-import)
-  - [Database import](#database-import)
-  - [Database import example - Investigations](#database-import-example---investigations)
-  - [Database import example - Studies](#database-import-example---studies)
-  - [Database import](#database-import-1)
-  - [Database import](#database-import-2)
-  - [Database Panel](#database-panel-1)
-  - [Linking / grouping items](#linking--grouping-items)
-  - [Linking items](#linking-items)
-  - [Linked items](#linked-items)
-  - [Demo](#demo)
-  - [Creating the ARC structure locally (demo)](#creating-the-arc-structure-locally-demo)
-  - [settings](#settings)
-  - [create a first arc](#create-a-first-arc)
-  - [create and push more arcs (for loop)](#create-and-push-more-arcs-for-loop)
-
-
----
 
 # RDM in practice &ndash; Electronic lab notebooks
 
@@ -78,6 +31,8 @@ July 20th, 2023
 --- 
 
 # Content
+
+<!-- _backgroundColor: lightgrey -->
 
 - Intro to elabFTW as one example for electronic lab notebooks
 - pro / con of elabFTW
@@ -123,27 +78,15 @@ Demo elabFTW: https://demo.elabftw.net/
 
 
 # Experiments panel
-<!-- 
-<style scoped>
-
-section{
-   background: url(./images/elabFTW-experiment-list-view.drawio.svg);
-   background-repeat: no-repeat;
-   background-size: 50%;
-   background-position: 2% 99%;   
-}
-
-</style> -->
 
 - Create an experiment
 - View / edit mode
-
 
 ![w:600 bg right:50%](./images/elabFTW-experiment-list-view.drawio.svg)
 
 
 
---- 
+---
 
 # 👩‍💻 Exercise
 
@@ -165,7 +108,10 @@ Create an experiment **Baking pancakes**
 
 ---
 
-<!-- FAIR Recap 1: 
+# :bulb: Recap
+
+
+<!-- FAIR Recap: 
 - inputs
 - outputs
 - reusability (of items)
@@ -223,7 +169,9 @@ Create an experiment **Baking pancakes**
 
 ---
 
-<!-- FAIR Recap 2: 
+# :bulb: Recap
+
+<!-- FAIR Recap: 
 - PIDs
 - CV / ontology
 -->
@@ -235,13 +183,8 @@ Create an experiment **Baking pancakes**
 Start another experiment **Baking a chocolate cake**
 
 ```yaml
-1. Grocery list (inputs)
-   1. Flour
-   2. Sugar
-   3. Eggs
-   4. Butter
-   5. Milk
-   6. Chocolate
+1. Grocery list
+   - Flour, Sugar, Eggs, Butter, Milk, Chocolate
 2. Steps
    1. Mix ingredients
       1. type of mixer
@@ -258,33 +201,45 @@ Start another experiment **Baking a chocolate cake**
 
 ![bg right:40% w:350px](./images/chocolate-cake-cc0.jpg)
 
-
 ---
 
+# :bulb: Recap
 
-<!-- FAIR Recap 3: 
+<!-- FAIR Recap: 
 - re-use process (-> function "duplicate")
 - re-use items
 -->
 
 ---
 
-# Schematize
+# Schematize: Use of templates
 
-- Use of templates
+<!-- _backgroundColor: lightgrey -->
 
 
 ---
 
 # 👩‍💻 Exercise
 
+<!-- _backgroundColor: lightgrey -->
+
 Create an experiment template for **baking recipes**
 
 ---
 
-<!-- FAIR Recap 4: 
+# :bulb: Recap
+
+<!-- FAIR Recap 
 - everyone comes up with their own template
 -->
+
+---
+
+# Add data to your experiment
+
+<!-- _backgroundColor: lightgrey -->
+
+
 
 ---
 
@@ -313,9 +268,9 @@ Create an experiment template for **baking recipes**
 
 ---
 
-# Sharing an experiment
+# Collaborating
 
-<!-- _background-color: red -->
+<!-- _backgroundColor: lightgrey -->
 
 - visibility
 - write access
@@ -324,7 +279,9 @@ Create an experiment template for **baking recipes**
 
 ---
 
-<!-- FAIR Recap 5: 
+# :bulb: Recap
+
+<!-- FAIR Recap: 
 - can only collaborate within instance -> complicated user management
 - no re-usable format -> 
 - provenance / reuse / contribution -> compare vdersioning to git (graph)
@@ -346,9 +303,14 @@ Create an experiment template for **baking recipes**
 
 ---
 
-# Towards a **FAIR** elabFTW
+# Towards **FAIR** elabFTW
 
-- Use of json templates
+
+## Schematize: json (templates)
+
+<!-- _backgroundColor: lightgrey -->
+
+
 
 
 --- 
@@ -567,7 +529,58 @@ In edit mode
 
 ---
 
-# Conclusion
+# elabFTW &ndash; Conclusion
+
+<!-- _backgroundColor: lightgrey -->
+
+
+<style scoped>
+.columns {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+ul {
+    margin: 5; padding: 0;
+}
+</style>
+
+<div class="columns">
+<div class="columns-left">
+
+### <span style="color:#B4CE82">Good</span>
+
+- Documenting daily lab routine
+- Lab methods & protocols
+- Lab inventory (biologicals, chemicals, instruments)
+- Local sharing & collaboration
+- Backup (locally)
+
+</div>
+<div class="columns-right">
+
+### <span style="color:#F9CD69">Intermediate</span>
+
+- Version control
+- Track changes / contributions
+- use of IDs
+- External sharing
+
+</div>
+
+<div class="columns-right">
+
+### <span style="color:#c21f3a">Limited</span>  
+
+- Data storage
+- Analyses
+- Structured metadata
+- PIDs
+
+</div>
+</div>
+
+
 
 
 
