@@ -105,6 +105,10 @@ A study always consists of the following structures:
 <!-- 
 
 @note for lea: Missing - explanation of each structure
+
+foto bringt mir ja garnichts 
+foto vom datahub machen 
+ebenfalls bei dem Assay
 -->
 
 
