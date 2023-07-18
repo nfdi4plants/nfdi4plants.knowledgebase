@@ -23,7 +23,7 @@ Excerpt of ["Nutzerordnung"](https://www.plant-biochemistry.hhu.de/facilities/me
 
 ## 🌐 ARC - Annotated Research Context
 
-DataPLANT provides with the Annotated Research Context (ARC) an Research Data Management (RDM) platform after the FAIR principle. The CMML  implements the ARC for cooperations. 
+DataPLANT provides with the Annotated Research Context (ARC) an Research Data Management (RDM) platform after the FAIR principle. The CMML  implements the ARC for cooperations.
 
 >![ARC for Collaborators](./image/cmml-quickstart/ARC_DataSharing_Collaborators_img2.png)
 
@@ -78,12 +78,13 @@ It can also contain project-specific folders like 'images' or 'literature'.
 
  Those folders contain specific parts of a research project.
 > Example:
+>
 > - studies: Cultivation and sampling of plants
 > - assays: Extraction, derivatization and measuring of the samples
 
 <!--
  > ![Folder Structure](./image/cmml-quickstart/ARC_IllustratedFolderStructure.jpg)
---> 
+-->
 
 The following guide will help you to get started to work with ARC.
 
@@ -117,9 +118,11 @@ This workbook records the metadata of the whole project. In the first part it st
 <!-- not ready yet -->
 
 A study always consists of the following structures:
-
+<!--
 > ![Study folder structure](./image/cmml-quickstart/Study_FolderStructure.png)
+--> 
 
+> <img src="./image/cmml-quickstart/Study_FolderStructure.png" style="width:65%">
 
 - protocols:  
 - resources
@@ -142,8 +145,11 @@ ebenfalls bei dem Assay
 <!-- not ready yet -->
 
  An assay always consists of the following structures:
-
+<!--
  > ![Assay-folder-structure](image/cmml-quickstart/Assay_FolderStructure.png)
+-->
+
+ > <img src ="image/cmml-quickstart/Assay_FolderStructure.png" style="width:65%; display: block; margin: 20px auto;">
 
 - dataset
 - protocols
