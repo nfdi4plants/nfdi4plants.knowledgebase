@@ -104,7 +104,7 @@ The following guide will help you to get started to work with ARC.
 
 This workbook records the metadata of the whole project. In the first part it stores information about the whole project. It includes an Identifier, Title and Description and also publication data - if published. There is also a part for personal data. Here each column is deticated to a person and it can be filled out manually.
 
-> <img src="./image/cmml-quickstart/isa-investigation.png" style="width:45%; display: block; margin: 20px auto;">
+<img src="./image/cmml-quickstart/isa-investigation.png" style="width:45%; display: block; margin: 20px auto;">
 
 :pen: __Fill out__ the part __'INVESTIGATION CONTACTS'__ with your personal data (the following are mandatory):
 
@@ -147,7 +147,6 @@ A study always consists of the following structures:
 
 @note for lea: Missing - explanation of each structure
 
-
 <!--
 
 @Dominik: part mit deleting/adding/changing files and folders
@@ -156,7 +155,7 @@ A study always consists of the following structures:
 
 ***
 
-## 🌱 CMML Support 
+## 🌱 CMML Support
 
 <!--
 - feel free to contact
@@ -164,4 +163,3 @@ A study always consists of the following structures:
 - link shouldn´t change so you can always come back 
 
 -->
-
