@@ -111,7 +111,7 @@ A study and assay always consist of the following structures:
 
 <img src="image/cmml-quickstart/1689767362252.png" style="width:65%; display: block; margin: 20px auto;">
 
-Every part of a research finds a place to be put in:
+Every part of a research project finds a place to be put in:
 
 1. __isa.study.xlsx__ or __isa.assay.xlsx__:
     - samplesheet: here you describe the samples in details, how they have been processed and give them a __CMML-specific label__
@@ -134,7 +134,7 @@ Every part of a research finds a place to be put in:
 
 ### 📖 Introduction to DataHUB
 
-This section has the aim to give you a short introduction to some helpful parts of DataHUB. The sidebar is found at the left of the website.
+This section gives you a short introduction to some helpful parts of DataHUB. The sidebar is found on the left side of the website.
 
 <img src="image/cmml-quickstart/ARC_Menu.png" style="width:25%; display: block; margin: 20px auto;">
 
