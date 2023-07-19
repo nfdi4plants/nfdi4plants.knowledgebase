@@ -120,16 +120,13 @@ Every part of a research finds a place to be put in:
 
 2. __Resources__ (only in studies):
 
-3. __Dataset__ (only in assays):
-   - here the raw data is stored  
+3. __Dataset__ (only in assays): here the raw data is stored  
 
 4. __isa.study.xlsx__ or __isa.assay.xlsx__:
-    - samplesheet: here you describe the samples in details and how they have been processed
+    - samplesheet: here you describe the samples in details, how they have been processed and give them a __CMML-specific label__
     - (meta-)data
   
-5. __README.md__:
-    - description and notes for the specific study or assay
-
+5. __README.md__: description and notes for the specific study or assay
 
 ***
 
