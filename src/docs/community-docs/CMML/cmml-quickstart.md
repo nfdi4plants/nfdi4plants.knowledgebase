@@ -191,12 +191,4 @@ The DataHUB allows to directly operate files and folders without using any other
 
 ## 🌱 CMML Support
 
-<!--
-- feel free to contact
-- any problem also the possibility to go to common knowledgebase and look if there is an answer to upcoming questions
-- if problems where the knowledgebase can´t help we hope you contact us so we can try to solve it 
-- link shouldn´t change so you can always come back to the quickstart 
-- we always want to improve the guide or quickstart to make collaboration easier
-- if there are any ideas for improvement we are open for it 
-
--->
+If any problems occur there is the possibility to check the common [__Knowledgebase__](https://nfdi4plants.org/nfdi4plants.knowledgebase/index.html) from DataPLANT for solutions. Otherwise contact the CMML so the problems can be solved together. You can always come back to the __Qickstart__ and we are open for any suggestions on it to improve it.
