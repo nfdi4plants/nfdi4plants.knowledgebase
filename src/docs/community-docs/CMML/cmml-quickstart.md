@@ -68,9 +68,9 @@ This section has the AIM to give you a short introduction to some helpful parts 
 <!-- not ready yet -->
 1. If you click on the __name of the ARC__ you can always return to the front page.
 2. Under __'Project information'__ in the section __'Members'__ you can see all members involved in the ARC and there is also the possibility to add other members.
-3. The section __'Issues'__ should help to collaborate on ideas, solve problems, and plan work
-4. Under __'Wiki'__ you can create or edit a 'Page' for protocolling meetings or writing down sharable notes
-5. At the Front Page there is also the possibility to search for sepcific files with __'Find Files'__
+3. The section __'Issues'__ should help to collaborate on ideas, solve problems, and plan work.
+4. Under __'Wiki'__ you can create or edit a 'Page' for protocolling meetings or writing down sharable notes.
+5. At the Front Page there is also the possibility to search for sepcific files with __'Find Files'__.
 
 ***
 
