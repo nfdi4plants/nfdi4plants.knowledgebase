@@ -67,7 +67,7 @@ This section has the aim to give you a short introduction to some helpful parts 
 
 1. If you click on the __name of the ARC__ you can always return to the front page.
    
-   :arrow_right: At the front page there is also the possibility to search for sepcific files with __'Find Files'__.
+   :arrow_right: At the front page there is also the possibility to search for specific files with __'Find Files'__.
 
 2. Under __'Project information'__ in the section __'Members'__ you can see all members involved in the ARC and there is also the possibility to add other members.
 
