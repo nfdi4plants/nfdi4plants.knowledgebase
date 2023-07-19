@@ -73,7 +73,7 @@ This section has the aim to give you a short introduction to some helpful parts 
 
 3. The section __'Issues'__ should help to collaborate on ideas, solve problems, and plan work.
 
-4. Under __'Wiki'__ you can create or edit a 'Page' for protocolling meetings or writing down sharable notes.
+4. Under __'Wiki'__ you can create or edit a 'Page' for meeting-protocols or writing down sharable notes.
 
 ***
 
