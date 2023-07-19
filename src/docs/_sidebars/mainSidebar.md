@@ -122,7 +122,7 @@
 ## [Videos](/docs/teaching-materials/videos.html)
 ### [Start Your ARC Series](/docs/teaching-materials/videos/StartYourARC.html)
 ## [Events](/docs/teaching-materials/slides/Events.html)
-### [RPTU Summerschool on RDM](/docs/teaching-materials/disseminations/2023-07-17_rptu-summerschool-on-rdm\index.html)
+### [RPTU Summer school on RDM](/docs/teaching-materials/disseminations/2023-07-17_rptu-summerschool-on-rdm/index.html)
 ### [Data Steward Circle](/docs/teaching-materials/disseminations/DataSteward-Circle/index.html)
 ### [CEPLAS Start Your ARC Series](/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html)
 
