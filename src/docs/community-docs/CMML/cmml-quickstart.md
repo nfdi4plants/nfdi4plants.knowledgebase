@@ -60,14 +60,14 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 ## 📘 User Guide
 
 ### 📖 Introduction to DataHUB
-This section has the AIM to give you a short introduction to some helpful parts of DataHUB. The sidebar is found at the left of the website.
+
+This section has the aim to give you a short introduction to some helpful parts of DataHUB. The sidebar is found at the left of the website.
 
 <img src="image/cmml-quickstart/ARC_Menu.png" style="width:25%; display: block; margin: 20px auto;">
 
-<!-- not ready yet -->
 1. If you click on the __name of the ARC__ you can always return to the front page.
    
-   :arrow_right: At the Front Page there is also the possibility to search for sepcific files with __'Find Files'__.
+   :arrow_right: At the front page there is also the possibility to search for sepcific files with __'Find Files'__.
 
 2. Under __'Project information'__ in the section __'Members'__ you can see all members involved in the ARC and there is also the possibility to add other members.
 
@@ -91,9 +91,10 @@ It can also contain project-specific folders like 'images' or 'literature'.
 <img src="./image/cmml-quickstart/ARC-Folder-structure.png" style="width:25%; display: block; margin: 20px auto;">
 
  Those folders contain specific parts of a research project.
+
 > Example:
 >
-> - studies: Cultivation and sampling of plants
+> - studies: Cultivation and sampling of plants or cells
 > - assays: Extraction, derivatization and measuring of the samples
 
 The following guide will help you to get started to work with ARC.
@@ -136,7 +137,6 @@ A study always consists of the following structures:
 
  <img src ="image/cmml-quickstart/Assay_FolderStructure.png" style="width:35%; display: block; margin: 20px auto;">
 
-
 - protocols:  
 - resources (only in studies):
 - dataset (only in assays):
@@ -159,7 +159,11 @@ A study always consists of the following structures:
 
 <!--
 - feel free to contact
-- if problems occur we hope you contact us so we can solve and improve the guide or quickstart
-- link shouldn´t change so you can always come back 
+- any problem also the possibility to go to common knowledgebase and look if there is an answer to upcoming questions
+- if problems where the knowledgebase can´t help we hope you contact us so we can try to solve it 
+- link shouldn´t change so you can always come back to the quickstart 
+- we always want to improve the guide or quickstart to make collaboration easier
+- if there are any ideas for improvement we are open for it 
+ 
 
 -->
