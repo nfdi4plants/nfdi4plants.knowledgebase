@@ -147,9 +147,7 @@ A study always consists of the following structures:
 
 @note for lea: Missing - explanation of each structure
 
--->
 
-***
 <!--
 
 @Dominik: part mit deleting/adding/changing files and folders
