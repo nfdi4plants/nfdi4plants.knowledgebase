@@ -16,7 +16,7 @@ date: 2023-07-20
 
 section {
    background: none;
-   /* background-color: white; */
+   background-color: white;
 }
 
 </style>
@@ -74,6 +74,14 @@ Demo elabFTW: https://demo.elabftw.net/
 &emsp; :warning: this is a public demo &rarr; All changes are public
 
 ---
+
+# Hands-on Circle
+
+![w:500](images/hands-on-circle.drawio.svg)
+
+
+---
+
 
 # Experiments panel
 
@@ -296,12 +304,6 @@ Create an experiment template for **baking recipes**
 
 ---
 
-# Pro 
-
-- flexible
-- version history
-
----
 
 # Towards **FAIR** elabFTW
 ---
@@ -335,7 +337,6 @@ Create an experiment template for **baking recipes**
 ## Schematize: json (templates)
 
 <!-- _backgroundColor: lightgrey -->
-
 
 
 
