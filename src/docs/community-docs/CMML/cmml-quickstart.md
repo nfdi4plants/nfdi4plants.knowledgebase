@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 🚀 QuickStart for Cooperation with CMML 🌱
+title: 🚀 QuickStart for Cooperation with CMML
 published: 2023-07-12
 author:
 - name: Lea Wirth
@@ -26,7 +26,7 @@ Excerpt of ["Nutzerordnung"](https://www.plant-biochemistry.hhu.de/facilities/me
 
 ## 🌐 ARC - Annotated Research Context
 
-DataPLANT provides with the Annotated Research Context (ARC) an Research Data Management (RDM) platform after the FAIR principle. The CMML  implements the ARC for cooperations.
+DataPLANT provides with the Annotated Research Context (ARC) a Research Data Management (RDM) platform after the FAIR principle. The CMML  implements the ARC for cooperations.
 
 <img src="../../img/ARC_DataSharing_Collaborators_img2.png" style="width:65%; display: block; margin: 20px auto;">
 
@@ -113,8 +113,6 @@ A study and assay always consist of the following structures:
 <!-- not ready yet 
 - down under explanation of the different parts (no repetition for a few folders/files)
 
--->
-
 Each part ?
 
 - protocols:  
@@ -122,6 +120,7 @@ Each part ?
 - dataset (only in assays):
 - isa.study.xlsx or isa.assay.xlsx: samplesheet, (meta-)data
 - README.md
+-->
 
 ## 📙 User Guide - DataHUB
 
@@ -142,8 +141,6 @@ This section has the aim to give you a short introduction to some helpful parts 
 4. Under __'Wiki'__ you can create or edit a 'Page' for meeting-protocols or writing down sharable notes.
 
 <!-- 
-
-@note for lea: Missing - explanation of each structure
 
 @Dominik: part mit deleting/adding/changing files and folders
 ---
