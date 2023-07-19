@@ -62,9 +62,6 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 ## 📘 User Guide - ARC
 
-
-***
-
 ### 📖 Introduction to ARC
 
 The ARC always has a specific folder structure that consists of:
