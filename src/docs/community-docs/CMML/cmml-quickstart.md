@@ -60,23 +60,8 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 ***
 
-## 📘 User Guide
+## 📘 User Guide - ARC
 
-### 📖 Introduction to DataHUB
-
-This section has the aim to give you a short introduction to some helpful parts of DataHUB. The sidebar is found at the left of the website.
-
-<img src="image/cmml-quickstart/ARC_Menu.png" style="width:25%; display: block; margin: 20px auto;">
-
-1. If you click on the __name of the ARC__ you can always return to the front page.
-
-   :arrow_right: At the front page there is also the possibility to search for specific files with __'Find Files'__.
-
-2. Under __'Project information'__ in the section __'Members'__ you can see all members involved in the ARC and there is also the possibility to add other members.
-
-3. The section __'Issues'__ should help to collaborate on ideas, solve problems, and plan work.
-
-4. Under __'Wiki'__ you can create or edit a 'Page' for meeting-protocols or writing down sharable notes.
 
 ***
 
@@ -140,6 +125,24 @@ Each part ?
 - dataset (only in assays):
 - isa.study.xlsx or isa.assay.xlsx: samplesheet, (meta-)data
 - README.md
+
+## 📙 User Guide - DataHUB
+
+### 📖 Introduction to DataHUB
+
+This section has the aim to give you a short introduction to some helpful parts of DataHUB. The sidebar is found at the left of the website.
+
+<img src="image/cmml-quickstart/ARC_Menu.png" style="width:25%; display: block; margin: 20px auto;">
+
+1. If you click on the __name of the ARC__ you can always return to the front page.
+
+   :arrow_right: At the front page there is also the possibility to search for specific files with __'Find Files'__.
+
+2. Under __'Project information'__ in the section __'Members'__ you can see all members involved in the ARC and there is also the possibility to add other members.
+
+3. The section __'Issues'__ should help to collaborate on ideas, solve problems, and plan work.
+
+4. Under __'Wiki'__ you can create or edit a 'Page' for meeting-protocols or writing down sharable notes.
 
 <!-- 
 
