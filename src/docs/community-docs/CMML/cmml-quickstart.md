@@ -78,14 +78,6 @@ It can also contain project-specific folders like 'images' or 'literature'.
 > - studies: Cultivation and sampling of plants
 > - assays: Extraction, derivatization and measuring of the samples
 
-### Meeting Notes ARC-Wiki
-
-<!-- not ready yet -->
-
-<img src="image/cmml-quickstart/ARC_Menu.png" style="width:25%">
-
-
-
 The following guide will help you to get started to work with ARC.
 
 
@@ -111,7 +103,13 @@ This workbook records the metadata of the whole project. In the first part it st
 
 ### 📖 Studies
 
-<!-- not ready yet -->
+<!-- not ready yet 
+
+Idea - combined section for study and assay 
+
+- Tabelle with pictures of structure 
+- down under explanation of the different parts (no repetition for a few folders/files)
+-->
 
 A study always consists of the following structures:
 
@@ -153,5 +151,24 @@ A study always consists of the following structures:
 @Dominik: part mit deleting/adding/changing files and folders
 
 -->
+
+***
+
+### 📖 Sidebar and helpfull "stuff"
+
+<!-- not ready yet -->
+
+- Arc_name (ex. demo_ARC) > Front page of the ARC
+
+- Project Information > Members > Invite Members
+
+- Issues:  collaborate on ideas, solve problems, and plan work
+
+- Wiki > Create or Edit Page for Meeting-notes
+  
+- Find File at Front Page to search specific documents
+
+<img src="image/cmml-quickstart/ARC_Menu.png" style="width:25%">
+
 
 
