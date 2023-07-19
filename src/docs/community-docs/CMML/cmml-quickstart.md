@@ -37,7 +37,7 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 ## 👣 Setup
 
-1. At first you have to [__create a DataHUB account__](https://register.nfdi4plants.org)!
+1. At first you have to [__create a DataHUB account!__](https://register.nfdi4plants.org)
 
     :bulb: You can also log in with your scientific account ORCID or Life Sciences!
 
