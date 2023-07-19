@@ -1,13 +1,13 @@
 ---
 layout: docs
-title: RPTU Summerschool on RDM
+title: RPTU Summer School on RDM
 date: 2023-07-17
 add toc: true
 add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-Here you can find the slides showed during the RPTU Summerschool on RDM.   
+Here you can find the slides shown during the RPTU Summer School on RDM.   
 
 <!--
 ## RDM Planning
