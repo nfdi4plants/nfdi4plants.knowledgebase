@@ -113,18 +113,18 @@ A study and assay always consist of the following structures:
 
 Every part of a research finds a place to be put in:
 
-1. __Protocols__:  
+1. __isa.study.xlsx__ or __isa.assay.xlsx__:
+    - samplesheet: here you describe the samples in details, how they have been processed and give them a __CMML-specific label__
+    - (meta-)data
+
+2. __Protocols__:  
    - "substitute" for Lab-book
    - here you should write down the used method, but also put in for example plasmid-cards that are specific for this part of the research
    - most optimal file-format would be .txt, but a Word-file can also be possible
 
-2. __Resources__ (only in studies):
+3. __Resources__ (only in studies):
 
-3. __Dataset__ (only in assays): here the raw data is stored  
-
-4. __isa.study.xlsx__ or __isa.assay.xlsx__:
-    - samplesheet: here you describe the samples in details, how they have been processed and give them a __CMML-specific label__
-    - (meta-)data
+4. __Dataset__ (only in assays): here the raw data is stored  
   
 5. __README.md__: description and notes for the specific study or assay
 
