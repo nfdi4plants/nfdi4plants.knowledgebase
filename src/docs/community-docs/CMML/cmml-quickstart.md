@@ -88,7 +88,7 @@ The ARC always has a specific folder structure that consists of:
 
 It can also contain project-specific folders like 'images' or 'literature'.
 
-<img src="./image/cmml-quickstart/ARC-Folder-structure.png" style="width:25%">
+<img src="./image/cmml-quickstart/ARC-Folder-structure.png" style="width:25%; display: block; margin: 20px auto;">
 
  Those folders contain specific parts of a research project.
 > Example:
@@ -97,7 +97,6 @@ It can also contain project-specific folders like 'images' or 'literature'.
 > - assays: Extraction, derivatization and measuring of the samples
 
 The following guide will help you to get started to work with ARC.
-
 
 ***
 
@@ -119,7 +118,7 @@ This workbook records the metadata of the whole project. In the first part it st
 
 ***
 
-### 📖 Studies
+### 📖 Studies and Assays
 
 <!-- not ready yet 
 
@@ -131,11 +130,17 @@ Idea - combined section for study and assay
 
 A study always consists of the following structures:
 
-> <img src="./image/cmml-quickstart/Study_FolderStructure.png" style="width:40%; display: block; margin: 20px auto;">
+ <img src="./image/cmml-quickstart/Study_FolderStructure.png" style="width:40%; display: block; margin: 20px auto;">
+
+ An assay always consists of the following structures:
+
+ <img src ="image/cmml-quickstart/Assay_FolderStructure.png" style="width:35%; display: block; margin: 20px auto;">
+
 
 - protocols:  
-- resources
-- isa.study.xlsx: samplesheet, (meta-)data
+- resources (only in studies):
+- dataset (only in assays):
+- isa.study.xlsx or isa.assay.xlsx: samplesheet, (meta-)data
 - README.md
 
 <!-- 
@@ -145,25 +150,6 @@ A study always consists of the following structures:
 -->
 
 ***
-
-### 📖 Assays
-
-<!-- not ready yet -->
-
- An assay always consists of the following structures:
-
- > <img src ="image/cmml-quickstart/Assay_FolderStructure.png" style="width:35%; display: block; margin: 20px auto;">
-
-- dataset
-- protocols
-- isa.assay.xlsx: samplesheet, (meta-)data
-- README.md
-  
-<!-- 
-
-@note for lea: Missing - explanation of each structure
--->
-
 <!--
 
 @Dominik: part mit deleting/adding/changing files and folders
