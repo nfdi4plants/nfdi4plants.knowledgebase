@@ -59,7 +59,7 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 ## 📘 User Guide
 
-### 📖 Introduction
+### 📖 Introduction 
 
 The ARC always has a specific folder structure that consists of:
 
@@ -78,16 +78,16 @@ It can also contain project-specific folders like 'images' or 'literature'.
 > - studies: Cultivation and sampling of plants
 > - assays: Extraction, derivatization and measuring of the samples
 
-<!--
- > ![Folder Structure](./image/cmml-quickstart/ARC_IllustratedFolderStructure.jpg)
--->
+### Meeting Notes ARC-Wiki
+
+<!-- not ready yet -->
+
+<img src="image/cmml-quickstart/ARC_Menu.png" style="width:25%">
+
+
 
 The following guide will help you to get started to work with ARC.
 
-<!-- 
-
-@note for lea: Missing - context of the structures
--->
 
 ***
 
@@ -114,9 +114,6 @@ This workbook records the metadata of the whole project. In the first part it st
 <!-- not ready yet -->
 
 A study always consists of the following structures:
-<!--
-> ![Study folder structure](./image/cmml-quickstart/Study_FolderStructure.png)
---> 
 
 > <img src="./image/cmml-quickstart/Study_FolderStructure.png" style="width:40%; display: block; margin: 20px auto;">
 
@@ -129,9 +126,6 @@ A study always consists of the following structures:
 
 @note for lea: Missing - explanation of each structure
 
-foto bringt mir ja garnichts 
-foto vom datahub machen 
-ebenfalls bei dem Assay
 -->
 
 ***
@@ -141,9 +135,6 @@ ebenfalls bei dem Assay
 <!-- not ready yet -->
 
  An assay always consists of the following structures:
-<!--
- > ![Assay-folder-structure](image/cmml-quickstart/Assay_FolderStructure.png)
--->
 
  > <img src ="image/cmml-quickstart/Assay_FolderStructure.png" style="width:35%; display: block; margin: 20px auto;">
 
@@ -162,3 +153,5 @@ ebenfalls bei dem Assay
 @Dominik: part mit deleting/adding/changing files and folders
 
 -->
+
+
