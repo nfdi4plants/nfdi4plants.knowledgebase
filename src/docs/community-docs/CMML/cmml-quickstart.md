@@ -59,7 +59,22 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 ## 📘 User Guide
 
-### 📖 Introduction 
+### 📖 Introduction to DataHUB
+This section has the AIM to give you a short intro to the most important parts of the Sidebar and introduce you to some helpful parts of DataHUB. The sidebar is found at the left of the website.
+
+<img src="image/cmml-quickstart/ARC_Menu.png" style="width:25%; display: block; margin: 20px auto;">
+
+
+<!-- not ready yet -->
+1. If you click on the __name of the ARC__ you can always return to the front page.
+2. Under __'Project information'__ in the section __'Members'__ you can see all members involved in the ARC and there is also the possibility to add other members.
+3. The section __'Issues'__ should help collaborate on ideas, solve problems, and plan work
+4. Under __'Wiki'__ you can create or edit a Page for protocolling meetings or writing down sharable notes
+5. At the Front Page there is also the possibility to search for sepcific files with __'Find Files'__
+
+***
+
+### 📖 Introduction to ARC
 
 The ARC always has a specific folder structure that consists of:
 
@@ -154,21 +169,6 @@ A study always consists of the following structures:
 
 ***
 
-### 📖 Sidebar and helpfull "stuff"
-
-<!-- not ready yet -->
-
-- Arc_name (ex. demo_ARC) > Front page of the ARC
-
-- Project Information > Members > Invite Members
-
-- Issues:  collaborate on ideas, solve problems, and plan work
-
-- Wiki > Create or Edit Page for Meeting-notes
-  
-- Find File at Front Page to search specific documents
-
-<img src="image/cmml-quickstart/ARC_Menu.png" style="width:25%">
 
 
 
