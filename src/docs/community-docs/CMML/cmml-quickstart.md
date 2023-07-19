@@ -81,6 +81,7 @@ It can also contain project-specific folders like 'images' or 'literature'.
 >
 > - studies: Cultivation and sampling of plants or cells
 > - assays: Extraction, derivatization and measuring of the samples
+>
 
 The following guide will help you to get started to work with ARC.
 
@@ -110,17 +111,27 @@ A study and assay always consist of the following structures:
 
 <img src="image/cmml-quickstart/1689767362252.png" style="width:65%; display: block; margin: 20px auto;">
 
-<!-- not ready yet 
-- down under explanation of the different parts (no repetition for a few folders/files)
+Every part of a research finds a place to be put in:
 
-Each part ?
+1. __Protocols__:  
+   - "substitute" for Lab-book
+   - here you should write down the used method, but also put in for example plasmid-cards that are specific for this part of the research
+   - most optimal file-format would be .txt, but a Word-file can also be possible
 
-- protocols:  
-- resources (only in studies):
-- dataset (only in assays):
-- isa.study.xlsx or isa.assay.xlsx: samplesheet, (meta-)data
-- README.md
--->
+2. __Resources__ (only in studies):
+
+3. __Dataset__ (only in assays):
+   - here the raw data is stored  
+
+4. __isa.study.xlsx__ or __isa.assay.xlsx__:
+    - samplesheet: here you describe the samples in details and how they have been processed
+    - (meta-)data
+  
+5. __README.md__:
+    - description and notes for the specific study or assay
+
+
+***
 
 ## 📙 User Guide - DataHUB
 
