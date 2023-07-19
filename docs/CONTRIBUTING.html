@@ -471,7 +471,7 @@
         Knowledge Base Contribution Guide
       </h1>
       <i class="help">
-        last updated at 2022-12-14
+        last updated at 2023-07-19
       </i>
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
@@ -581,20 +581,18 @@
 <p>Read more about authoring content in the fornax section of the nfdi4plants web components docs <a href="https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax">here</a></p>
 <p>⚠️ Please make sure to especially follow the markdown syntax section.</p>
 <p>💡 The following sections refer to contents with <code>layout: docs</code> as used for articles and guides.</p>
-<p>🚧 Contribution of slides (i.e. in folder <code>src/docs/teaching-materials/</code> and sidebar section &quot;Teaching Materials&quot;) is currently under construction. See the additional guide on <a href="./guides/contribute_slide-decks.html">slide deck</a>.</p>
+<p>🚧 Contribution of slides (i.e. in folder <code>src/docs/teaching-materials/</code> and sidebar section &quot;Teaching Materials&quot;) is currently under construction. See the additional guide on <a href="./guides/contribute_slide-decks.html">slide decks</a>.</p>
 <nfdi-h3 id="knowledge-base-repo-structure">Knowledge Base repo structure</nfdi-h3>
 <ul>
 <li>The source to all content shown at the public website <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/">https://nfdi4plants.org/nfdi4plants.knowledgebase/</a> resides in the folder <code>src/docs</code></li>
 <li>All other files are mostly &quot;backend&quot;, help to render the content to html and can safely be ignored by most contributors</li>
-<li>The <code>src/docs</code> structure (as of June 29th, 2023) looks like this</li>
+<li>The <code>src/docs</code> structure (as of July 17th, 2023) looks like this</li>
 </ul>
 <nfdi-code>src/docs
-├── ArcCommanderManual
-├── CONTRIBUTING.md
-├── Home.md
-├── SwateManual
 ├── _ignored
 ├── _sidebars
+├── ArcCommanderManual
+├── DataHUB-Manual
 ├── faqs
 │   └── faqs.md
 ├── fundamentals
@@ -611,15 +609,18 @@
 │   ├── AnnotationPatterns.md
 │   ├── ArcCommander.md
 │   ├── ...
+├── SwateManual
 ├── teaching-materials
-└── tutorials
+├── tutorials
+├── CONTRIBUTING.md
+└── Home.md
 </nfdi-code>
-<p>💡 For easier findability we try to align the folder structure with how the content is presented in the sidebar of the public site. This is however not always feasible or sensible (for reasons).</p>
+<p>💡 For easier findability, we try to align the folder structure with how the content is presented in the sidebar of the public site. However, this is not always feasible or sensible (for reasons).</p>
 <nfdi-h3 id="common-errors">Common Errors</nfdi-h3>
 <ul>
 <li>Missing metadata block</li>
 <li>Missing or false required (<code>MUST</code>) attribute in metadata block</li>
-<li>Using a layout in metadata block that does not exist</li>
+<li>Using a layout in metadata block that does not exist or is deprecated</li>
 <li>Wrong links
 <ul>
 <li>to sidebar elements</li>
@@ -649,31 +650,51 @@ It will only become visible in the sidebar once the article is linked in the res
 <nfdi-h3 id="references">References</nfdi-h3>
 <ul>
 <li><strong>Literature / information references:</strong> additional bibliography block below</li>
-<li><strong>External links (tools, sites, platforms):</strong> as hyper-link</li>
+<li><strong>External links (tools, sites, platforms):</strong> as hyper-link
+<ul>
+<li>E.g. like this:<nfdi-code>[CLICKABLE TEXT](https://daringfireball.net/projects/markdown/syntax#link)
+</nfdi-code>
+resulting in <a href="https://daringfireball.net/projects/markdown/syntax#link">CLICKABLE TEXT</a></li>
+<li>or like this e.g. in the FAQ.md file:<nfdi-code>&lt;a href="https://en.wikipedia.org/wiki/Hyperlink">CLICKABLE TEXT&lt;/a>
+</nfdi-code>
+resulting in: <a href="https://en.wikipedia.org/wiki/Hyperlink">CLICKABLE TEXT</a></li>
+</ul>
+</li>
 <li><strong>Knowledge Base cross-references:</strong> relative path to *.md document, <strong>BUT</strong> replace the <code>.md</code> file extension
 with <code>.html</code>, as the markdown files are parsed to html.</li>
 </ul>
 <nfdi-h3 id="relative-paths">Relative Paths</nfdi-h3>
-<p>We SHOULD always try to use relative paths, as they are easier to maintain.
-Although useful, they need a bit more fine tuning, as there are several options.</p>
-<p>One of the major issues with relative paths is that during development the pages are accessed by <code>/</code>, for example <code>/docs/README.html</code>.
+<p>We SHOULD always try to use relative paths, as they are easier to maintain.<br />
+Although useful, they need a bit more fine tuning for different purposes.</p>
+<p>Relative paths in production are differently accessed than in development. One of the major issues with relative paths is that during development the pages are accessed by <code>/</code>, for example <code>/docs/README.html</code>.
 Published they will be accessed by <code>/nfdi4plants.knowledgebase</code> (<code>/nfdi4plants.knowledgebase/docs/README.html</code>).
 In the following, some ideas are described on how to deal with this:</p>
 <ul>
-<li><strong>Basic relative paths:</strong> These will look like this: <code>[Test](/README.html)</code>.
-By starting with <code>/</code> we implicitly say &quot;start at host&quot;.
-So in development it will start with <code>http://127.0.0.1:8080/</code>, in production it will start with <code>https://nfdi4plants.github.io/</code>.
-Since in production we also need <code>https://nfdi4plants.org/nfdi4plants.knowledgebase/</code>, this type of relative paths can create issues! ⚠️</li>
-<li><strong>Relative paths in sidebar:</strong> The sidebars actually check if you are currently in <code>npm run fornax</code> mode. So you can use basic relative paths here.</li>
-</ul>
+<li><p><strong>Basic relative paths:</strong>
+A basic relative path looks like this: <code>[Test](/README.html)</code>.<br />
+By starting with <code>/</code> we implicitly say &quot;start at host&quot;.<br />
+In development the same path will start with <code>http://127.0.0.1:8080/</code>, in production it will start with <code>https://nfdi4plants.github.io/</code>.<br />
+In production we also use <code>https://nfdi4plants.org/nfdi4plants.knowledgebase/</code>.</p>
+</li>
+<li><p><strong>Relative paths in sidebar:</strong>
+The sidebars actually checks if you are currently in <code>npm run fornax</code> mode.
+Therefore, you can use basic relative paths for this. (mainSidebar.md)</p>
 <p>For example</p>
 <nfdi-code class="language-markdown">```Fundamentals
 # [Fundamentals](/docs/fundamentals/index.html)
 ```!
 </nfdi-code>
 <p><code>/docs/fundamentals/index.html</code> will be parsed to <code>/nfdi4plants.knowledgebase/docs/fundamentals/index.html</code>.</p>
+</li>
+<li><p><strong>Relative paths from current file:</strong><br />
+These might be easier to handle but need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of &quot;Basic relative paths&quot;.
+<em><strong>Examples:</strong></em></p>
 <ul>
-<li><strong>Relative paths from current file:</strong> These need more maintenance as they MUST be changed when the folder/file structure changes, but they circumvent the basepath issue of &quot;Basic relative paths&quot;. Example: <code>[Test](./ResearchDataManagement.html)</code>. Starting with <code>./</code> translates to &quot;coming from the position of this file&quot;. We can even go up in the file hierarchy, like <code>[Test](./../docs/README.html)</code>. This translates to &quot;coming from the position of this file, go one folder higher and into the docs directory to find the <a href="./../docs/Home.html">Introduction</a> there.&quot;</li>
+<li><code>[Test](./ResearchDataManagement.html)</code>. Starting with <code>./</code> translates to &quot;coming from the position of this file&quot;.</li>
+<li>We can go up in the file hierarchy, like <code>[Test](./../docs/README.html)</code>.</li>
+<li>For the link &quot;./../docs/Home.html&quot;, this translates to &quot;coming from the position of this file, go one folder higher and into the docs directory to find the <a href="./../docs/Home.html">Introduction</a> which is named &quot;Home&quot; there.&quot;</li>
+</ul>
+</li>
 </ul>
 <nfdi-h3 id="document-structure-and-format">Document structure and format</nfdi-h3>
 <p>Try to avoid deep structures by using no more than two headline levels, i.e.</p>
@@ -690,12 +711,12 @@ Since in production we also need <code>https://nfdi4plants.org/nfdi4plants.knowl
 </ol>
 <p>💡 Please store images in <code>src/docs/img</code>.</p>
 <ul>
-<li>The folder <code>src/docs/img</code> holds image files (preferably *.svg, *.png) or the original source file (.pptx, .drawio.svg) used to create the image file(s)</li>
-<li>Avoid adding captions or links to figure files</li>
-<li>If powerpoint was used to create a figure
+<li>The folder <code>src/docs/img</code> holds image files (preferably *.svg, *.png) or the original source file (.pptx, .drawio.svg) used to create the image file(s).</li>
+<li>Avoid adding captions or links to figure files.</li>
+<li>If powerpoint was used to create a figure:
 <ul>
-<li>the pptx stored in <code>src/docs/img</code> is supposed to be a file of only a single slide or slide sequence (i.e. consecutive slides, where one image builds on the previous)</li>
-<li>the name of the resulting figure file (e.g. &quot;FAIRprinciples.png&quot;) MUST be aligned with the source file (e.g. &quot;FAIRprinciples.pptx&quot;)
+<li>The pptx stored in <code>src/docs/img</code> is supposed to be a file of only a single slide or slide sequence (i.e. consecutive slides, where one image builds on the previous)</li>
+<li>The name of the resulting figure file (e.g. &quot;FAIRprinciples.png&quot;) MUST be aligned with the source file (e.g. &quot;FAIRprinciples.pptx&quot;)
 <ul>
 <li>a consecutive number is suffixed to images from slide sequences (e.g. &quot;FAIRprinciples_seq1.png&quot;, &quot;FAIRprinciples_seq2.png&quot;)</li>
 </ul>
@@ -709,7 +730,7 @@ Since in production we also need <code>https://nfdi4plants.org/nfdi4plants.knowl
 <li>In particular, when adding images that you did not create yourself, please clearly state this by
 <ol>
 <li>adding the source to the <a href="./img/_ImageIndex.html"><code>src/docs/img/_ImageIndex.md</code></a>,</li>
-<li>adding a link / license (however applicable) to the content (artilce, tutorial, slide deck, etc.) where you use the image, and</li>
+<li>adding a link / license (however applicable) to the content (article, tutorial, slide deck, etc.) where you use the image, and</li>
 <li>reminding the knowledge base curators during your pull request.</li>
 </ol>
 </li>
@@ -727,7 +748,7 @@ Since in production we also need <code>https://nfdi4plants.org/nfdi4plants.knowl
 <p>⚠️ Changing file names (and paths) means changing URLs and can easily lead to dead links.</p>
 </blockquote>
 <nfdi-h2 id="avoiding-dead-links">Avoiding dead links</nfdi-h2>
-<p>Once in a while we (need to) restructure the <code>/nfdi4plants.knowledgebase/src/docs</code> folder a bit, which includes changes to file and folder names, i.e. producing dead links.
+<p>Once in a while, we (need to) restructure the <code>/nfdi4plants.knowledgebase/src/docs</code> folder a bit, which includes changes to file and folder names, i.e. producing dead links.
 In this case, the least we can do, is to keep the knowledge base itself intact:</p>
 <ol>
 <li>Carefully check <strong>all markdown documents</strong> for cross-links to the original file name (this can easily be done via e.g. VS Code).</li>
