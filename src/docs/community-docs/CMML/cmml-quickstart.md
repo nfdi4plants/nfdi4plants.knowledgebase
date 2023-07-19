@@ -169,6 +169,12 @@ A study always consists of the following structures:
 
 ***
 
+## 🌱 CMML Support 
 
+<!--
+- feel free to contact
+- if problems occur we hope you contact us so we can solve and improve the guide or quickstart
+- link shouldn´t change so you can always come back 
 
+-->
 
