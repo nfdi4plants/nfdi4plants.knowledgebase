@@ -1,6 +1,6 @@
 ---
 marp: true
-# theme: marp-theme_dataplant-ceplas-ccby
+theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 author:
 - name: Dominik Brilhaus
@@ -15,7 +15,7 @@ date: 2023-07-20
 <style>
 
 section {
-   /* background: none; */
+   background: none;
    /* background-color: white; */
 }
 
@@ -74,8 +74,6 @@ Demo elabFTW: https://demo.elabftw.net/
 &emsp; :warning: this is a public demo &rarr; All changes are public
 
 ---
-
-
 
 # Experiments panel
 
@@ -212,16 +210,18 @@ Start another experiment **Baking a chocolate cake**
 
 ---
 
-# Schematize: Use of templates
+# Provide structure: Create templates
 
-<!-- _backgroundColor: lightgrey -->
+![w:800](images/elabFTW-templates-create.png)
+
+<br>
+
+![w:800](images/elabFTW-templates-edit.png)
 
 
 ---
 
 # 👩‍💻 Exercise
-
-<!-- _backgroundColor: lightgrey -->
 
 Create an experiment template for **baking recipes**
 
@@ -231,16 +231,79 @@ Create an experiment template for **baking recipes**
 
 <!-- FAIR Recap 
 - everyone comes up with their own template
+- need for schema
+- need for CV / ontology
 -->
 
 ---
 
 # Add data to your experiment
 
+![w:1100](images/elabFTW-experiment-attachFile.png)
+
+---
+
+# :bulb: Recap
+
+<!-- FAIR Recap 
+- small data ok, large data impossible, but
+- process / protocol and data are all dumped together
+- linking data?
+-->
+
+---
+
+# Collaborating
+
 <!-- _backgroundColor: lightgrey -->
 
+---
+
+## Visibility and write access
+
+![w:1000](images/elabFTW-experiment-rights.png)
+
+---
+
+# Version history
 
 
+![w:1000](images/elabFTW-experiment-changelogRevision1.png)
+![w:1000](images/elabFTW-experiment-changelogRevision2.png)
+
+---
+
+# Restore revision
+
+![w:1000](images/elabFTW-experiment-changelogRevision3.png)
+
+
+---
+
+# Export experiments
+
+![w:1000](images/elabFTW-experiment-export.png)
+
+---
+
+# :bulb: Recap
+
+<!-- FAIR Recap: 
+- can only collaborate within instance -> complicated user management
+- no re-usable format -> 
+- provenance / reuse / contribution -> compare versioning to git (graph)
+-->
+
+---
+
+# Pro 
+
+- flexible
+- version history
+
+---
+
+# Towards **FAIR** elabFTW
 ---
 
 # Cut protocols into pieces (processes)
@@ -267,43 +330,6 @@ Create an experiment template for **baking recipes**
 
 
 ---
-
-# Collaborating
-
-<!-- _backgroundColor: lightgrey -->
-
-- visibility
-- write access
-- version history
-- options to export
-
----
-
-# :bulb: Recap
-
-<!-- FAIR Recap: 
-- can only collaborate within instance -> complicated user management
-- no re-usable format -> 
-- provenance / reuse / contribution -> compare vdersioning to git (graph)
--->
-
----
-
-1. Exercise: Extend the experiment
-   1. Cut and serve
-   2. Prepare coffee
-   3. Set the table
-
----
-
-# Pro 
-
-- flexible
-- version history
-
----
-
-# Towards **FAIR** elabFTW
 
 
 ## Schematize: json (templates)
