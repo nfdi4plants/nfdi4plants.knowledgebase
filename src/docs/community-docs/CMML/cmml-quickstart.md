@@ -43,17 +43,17 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 2. If you have sucessfully created your account you can check on the website at the top left (yellow arrow) your _@username_ (blue arrow).
 
-<img src="./image/cmml-quickstart/DataHUB-Username.png" style="width:45%; display: block; margin: 20px auto;">
+<img src="./image/cmml-quickstart/DataHUB-Username.png" style="width:35%; display: block; margin: 20px auto;">
 
-1. __Commit__ this _@username_ to the CMML to get started with the common ARC.
+3. __Commit__ this _@username_ to the CMML to get started with the common ARC.
 
     ✉️ You will recieve an e-mail after the access for the ARC was granted.
 
-2. __Follow__ the link (green arrow) in the e-mail and log in with your DataHUB account.
+4. __Follow__ the link (green arrow) in the e-mail and log in with your DataHUB account.
 
 > ![dataHUB/gitLab Mail]()
 
-<img src="./image/cmml-quickstart/DataHUB-Access-Mail.png" style="width:95%;display: block; margin: 20px auto;">
+<img src="./image/cmml-quickstart/DataHUB-Access-Mail.png" style="width:85%;display: block; margin: 20px auto;">
 
 5. __Read and follow__ the next instructions - __📘 User Guide__.
 
@@ -72,7 +72,7 @@ The ARC always has a specific folder structure that consists of:
 
 It can also contain project-specific folders like 'images' or 'literature'.
 
-<img src="./image/cmml-quickstart/ARC-Folder-structure.png" style="width:45%; display: block; margin: 20px auto;">
+<img src="./image/cmml-quickstart/ARC-Folder-structure.png" style="width:25%">
 
  Those folders contain specific parts of a research project.
 > Example:
@@ -97,7 +97,7 @@ The following guide will help you to get started to work with ARC.
 
 This workbook records the metadata of the whole project. In the first part it stores information about the whole project. It includes an Identifier, Title and Description and also publication data - if published. There is also a part for personal data. Here each column is deticated to a person and it can be filled out manually.
 
-> ![isa-investigation](./image/cmml-quickstart/isa-investigation.png)
+> <img src="./image/cmml-quickstart/isa-investigation.png" style="width:45%; display: block; margin: 20px auto;">
 
 :pen: __Fill out__ the part __'INVESTIGATION CONTACTS'__ with your personal data (the following are mandatory):
 
@@ -120,7 +120,7 @@ A study always consists of the following structures:
 > ![Study folder structure](./image/cmml-quickstart/Study_FolderStructure.png)
 --> 
 
-> <img src="./image/cmml-quickstart/Study_FolderStructure.png" style="width:45%; display: block; margin: 20px auto;">
+> <img src="./image/cmml-quickstart/Study_FolderStructure.png" style="width:40%; display: block; margin: 20px auto;">
 
 - protocols:  
 - resources
@@ -147,7 +147,7 @@ ebenfalls bei dem Assay
  > ![Assay-folder-structure](image/cmml-quickstart/Assay_FolderStructure.png)
 -->
 
- > <img src ="image/cmml-quickstart/Assay_FolderStructure.png" style="width:45%; display: block; margin: 20px auto;">
+ > <img src ="image/cmml-quickstart/Assay_FolderStructure.png" style="width:35%; display: block; margin: 20px auto;">
 
 - dataset
 - protocols
