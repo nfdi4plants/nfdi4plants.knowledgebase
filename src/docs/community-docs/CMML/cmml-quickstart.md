@@ -130,6 +130,10 @@ Every part of a research project finds a place to be put in:
 
 ***
 
+<!--
+ - missing part: SWATE templates
+-->
+
 ## 📙 User Guide - DataHUB
 
 ### 📖 Introduction to DataHUB
