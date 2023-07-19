@@ -51,7 +51,7 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 4. __Follow__ the link (green arrow) in the e-mail and log in with your DataHUB account.
 
-<img src="./image/cmml-quickstart/DataHUB-Access-Mail.png" style="width:85%;display: block; margin: 20px auto;">
+<img src="./image/cmml-quickstart/DataHUB-Access-Mail.png" style="width:65%;display: block; margin: 20px auto;">
 
 5. __Read and follow__ the next instructions - __📘 User Guide__.
 
@@ -66,7 +66,7 @@ This section has the aim to give you a short introduction to some helpful parts 
 <img src="image/cmml-quickstart/ARC_Menu.png" style="width:25%; display: block; margin: 20px auto;">
 
 1. If you click on the __name of the ARC__ you can always return to the front page.
-   
+
    :arrow_right: At the front page there is also the possibility to search for specific files with __'Find Files'__.
 
 2. Under __'Project information'__ in the section __'Members'__ you can see all members involved in the ARC and there is also the possibility to add other members.
@@ -159,6 +159,5 @@ Each part ?
 - link shouldn´t change so you can always come back to the quickstart 
 - we always want to improve the guide or quickstart to make collaboration easier
 - if there are any ideas for improvement we are open for it 
- 
 
 -->
