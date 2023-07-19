@@ -73,7 +73,7 @@ The ARC always has a specific folder structure that consists of:
 
 It can also contain project-specific folders like 'images' or 'literature'.
 
-<img src="./image/cmml-quickstart/ARC-Folder-structure.png" style="width:25%; display: block; margin: 20px auto;">
+<img src="./image/cmml-quickstart/ARC-Folder-structure.png" style="width:30%; display: block; margin: 20px auto;">
 
  Those folders contain specific parts of a research project.
 
