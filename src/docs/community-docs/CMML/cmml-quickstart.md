@@ -121,13 +121,16 @@ This workbook records the metadata of the whole project. In the first part it st
 
 ### 📖 Studies and Assays
 
+A study and assay always consist of the following structures:
+
+<img src="image/cmml-quickstart/1689767362252.png" style="width:65%; display: block; margin: 20px auto;">
+
 <!-- not ready yet 
 
 Idea - combined section for study and assay 
 
 - Tabelle with pictures of structure 
 - down under explanation of the different parts (no repetition for a few folders/files)
--->
 
 A study always consists of the following structures:
 
@@ -136,6 +139,11 @@ A study always consists of the following structures:
  An assay always consists of the following structures:
 
  <img src ="image/cmml-quickstart/Assay_FolderStructure.png" style="width:35%; display: block; margin: 20px auto;">
+
+
+-->
+
+Each part ?
 
 - protocols:  
 - resources (only in studies):
