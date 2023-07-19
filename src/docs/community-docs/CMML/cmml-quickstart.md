@@ -56,7 +56,7 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 <img src="./image/cmml-quickstart/DataHUB-Access-Mail.png" style="width:65%;display: block; margin: 20px auto;">
 
-5. __Read and follow__ the next instructions - __📘 User Guide__.
+5. __Read and follow__ the next instructions - __📘 User Guide - ARC__ and __:orange_book: User Guide - DataHUB__.
 
 ***
 
