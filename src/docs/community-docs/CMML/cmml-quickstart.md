@@ -122,9 +122,9 @@ Every part of a research project finds a place to be put in:
    - here you should write down the used method, but also put in for example plasmid-cards that are specific for this part of the research
    - most optimal file-format would be .txt, but a Word-file can also be possible
 
-3. __Resources__ (only in studies):
+3. __Resources__ (only in studies)
 
-4. __Dataset__ (only in assays): here the raw data is stored  
+4. __Dataset__ (only in assays) 
   
 5. __README.md__: description and notes for the specific study or assay
 
