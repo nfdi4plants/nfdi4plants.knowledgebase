@@ -51,8 +51,6 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 
 4. __Follow__ the link (green arrow) in the e-mail and log in with your DataHUB account.
 
-> ![dataHUB/gitLab Mail]()
-
 <img src="./image/cmml-quickstart/DataHUB-Access-Mail.png" style="width:85%;display: block; margin: 20px auto;">
 
 5. __Read and follow__ the next instructions - __📘 User Guide__.
