@@ -32,11 +32,9 @@ July 20th, 2023
 
 # Content
 
-<!-- _backgroundColor: lightgrey -->
-
-- Intro to elabFTW as one example for electronic lab notebooks
-- pro / con of elabFTW
-- shaping your lab documentation towards FAIR
+* Intro to elabFTW as one example for electronic lab notebooks
+* Pros & Cons of elabFTW
+* shaping your lab documentation towards FAIR
 
 ---
 <!-- 
@@ -72,6 +70,10 @@ elabFTW @ RPTU: https://elab.rptu.de/
 Demo elabFTW: https://demo.elabftw.net/
 
 &emsp; :warning: this is a public demo &rarr; All changes are public
+
+<hr>
+
+:rocket: **For today:** https://clerk.cs.uni-kl.de/
 
 ---
 
@@ -261,13 +263,11 @@ Create an experiment template for **baking recipes**
 
 ---
 
-# Collaborating
-
-<!-- _backgroundColor: lightgrey -->
+# Share & Collaborate
 
 ---
 
-## Visibility and write access
+# Visibility and write access
 
 ![w:1000](images/elabFTW-experiment-rights.png)
 
@@ -333,7 +333,7 @@ Create an experiment template for **baking recipes**
 
 ---
 
-## Schematize: JSON templates
+# Schematize: JSON templates
 
 
 <style scoped>
@@ -364,6 +364,12 @@ Create an experiment template for **baking recipes**
 
 
 </div>
+
+
+---
+
+# Bridging elabFTW and ARC
+
 
 
 
@@ -584,8 +590,6 @@ In edit mode
 ---
 
 # elabFTW &ndash; Conclusion
-
-<!-- _backgroundColor: lightgrey -->
 
 
 <style scoped>
