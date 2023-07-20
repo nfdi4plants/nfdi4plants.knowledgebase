@@ -19,9 +19,10 @@ Here you can find the slides shown during the RPTU Summer School on RDM.
     height="255px"
 />
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/)  📆 July 21th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 21th, 2023
 <hr>
-
+-->
+<!--
 ## RDM in Practice
 
 <embed
@@ -31,21 +32,27 @@ Here you can find the slides shown during the RPTU Summer School on RDM.
     height="255px"
 />
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/)  📆 July 20th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [CEPLAS](https://ceplas.eu) 📆 July 20th, 2023
 <hr>
+-->
 
 ## Workflows and Data Processing
 
 <embed
-    src="./???"
+    src="./2023-07-20_CWLSession.pdf"
     type="application/pdf"
     width="400px"
     height="255px"
 />
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/)  📆 July 20th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 20th, 2023
+
+**Included Resources:**   
+
+* "Introduction to the Common Workflow Language (CWL) Project" YouTube, uploaded by BioExcel CoE, 30 Jun 2017, [www.youtube.com/watch?v=jfQb1HJWRac](www.youtube.com/watch?v=jfQb1HJWRac)
 <hr>
 
+<!--
 ## Databases
 
 <embed
@@ -55,21 +62,22 @@ Here you can find the slides shown during the RPTU Summer School on RDM.
     height="255px"
 />
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/)  📆 July 19th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 19th, 2023
 <hr>
-
+-->
 ## Organization and Archives
 
 <embed
-    src="./???"
+    src="./2023-07_Organizations-and-Archives.pdf"
     type="application/pdf"
     width="400px"
     height="255px"
 />
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/)  📆 July 19th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 19th, 2023
 <hr>
 
+<!--
 ## Galaxy
 
 <embed
@@ -79,21 +87,24 @@ Here you can find the slides shown during the RPTU Summer School on RDM.
     height="255px"
 />
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/)  📆 July 18th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 18th, 2023
 <hr>
-
+-->
 ## Versioning & Collaboration 
 
-<embed
-    src="./???"
-    type="application/pdf"
-    width="400px"
-    height="255px"
-/>
+This is an interactive session, the contents of which can be found by following these links:
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/)  📆 July 18th, 2023
+* [Intro to Git](https://simson.io/intro-to-git/)
+* [Git for Scientists](https://milesmcbain.github.io/git_4_sci/)
+* [Git & GitHub Tutorial for Scientists](https://gitbookdown.dallasdatascience.com/)
+
+**Interactive (fun):**
+
+* [ohmygit.org](https://ohmygit.org/)
+* [Learn Git Branching](https://learngitbranching.js.org/)
 <hr>
 
+<!--
 ## Process Models 
 
 <embed
@@ -103,7 +114,16 @@ Here you can find the slides shown during the RPTU Summer School on RDM.
     height="255px"
 />
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/)  📆 July 17th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 17th, 2023
+<hr>
+
+**Relevant Links:**   
+
+* [ARCitect - Latest Release](https://github.com/nfdi4plants/ARCitect/releases/latest) (still in development)
+* [Swate - Latest Release](https://github.com/nfdi4plants/swate/releases/latest) 
+* [ARC Commander - Latest Release](https://github.com/nfdi4plants/arcCommander/releases/latest)
+* [ARC - Knowledge Base Article](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html)
+
 <hr>
 -->
 
@@ -116,7 +136,7 @@ Here you can find the slides shown during the RPTU Summer School on RDM.
     height="300px"
 />
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/)  📆 July 17th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 17th, 2023
    
 
 **Included Resources:**   
