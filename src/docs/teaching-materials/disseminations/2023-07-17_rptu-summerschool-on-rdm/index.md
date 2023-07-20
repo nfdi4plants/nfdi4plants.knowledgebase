@@ -52,11 +52,22 @@ Here you can find the slides shown during the RPTU Summer School on RDM.
 * "Introduction to the Common Workflow Language (CWL) Project" YouTube, uploaded by BioExcel CoE, 30 Jun 2017, [www.youtube.com/watch?v=jfQb1HJWRac](www.youtube.com/watch?v=jfQb1HJWRac)
 <hr>
 
-<!--
+
 ## Databases
 
 <embed
-    src="./???"
+    src="./2023-07_Databases2.pdf"
+    type="application/pdf"
+    width="400px"
+    height="255px"
+/>
+
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 20th, 2023
+
+<br>
+
+<embed
+    src="./2023-07_Databases.pdf"
     type="application/pdf"
     width="400px"
     height="255px"
@@ -64,7 +75,7 @@ Here you can find the slides shown during the RPTU Summer School on RDM.
 
 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 19th, 2023
 <hr>
--->
+
 ## Organization and Archives
 
 <embed
