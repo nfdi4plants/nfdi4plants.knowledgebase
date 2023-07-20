@@ -333,15 +333,42 @@ Create an experiment template for **baking recipes**
 
 ---
 
-
-## Schematize: json (templates)
-
-<!-- _backgroundColor: lightgrey -->
+## Schematize: JSON templates
 
 
+<style scoped>
+.columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+</style>
 
---- 
+<br>
 
+
+<div class="columns">
+
+<div class="columns-right">
+
+<img src="./images/elabFTW-templates-json.png" style="width:80%">
+
+</div>
+
+
+<div class="columns-left">
+
+<img src="./images/elabFTW-templates-extraFields.png" style="width:40%">
+
+</div>
+
+
+</div>
+
+
+
+
+---
 
 # Example Scenario
 
