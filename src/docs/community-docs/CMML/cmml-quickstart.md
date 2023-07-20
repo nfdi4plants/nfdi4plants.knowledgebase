@@ -59,6 +59,7 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 5. __Read and follow__ the next instructions - __📘 User Guide - ARC__ and __📙 User Guide - DataHUB__.
 
 ***
+
 ## 📙 User Guide - DataHUB
 
 ### 📖 Introduction to DataHUB
@@ -184,6 +185,7 @@ Every part of a research project finds a place to be put in:
    :arrow_right: for this describtion go to the [next](#📖-isastudyxlsx-or-isaassayxlsx) part of the instruction
 
 2. __Protocols__:  
+
    - "substitute" for Lab-book
    - here you should write down the used method, but also put in for example plasmid-cards that are specific for this part of the research
    - most optimal file-format would be .txt, but a Word-file can also be possible
@@ -205,7 +207,8 @@ The isa.study- and isa.assay-file consist of two excel-sheet
   :arrow_right: Here you __describe__ the samples in details, how they have been processed and give them a __CMML-specific label__ that consists of your project-number and a following numbering
 
 __:exclamation: The samples must be labelled with the last digits and the box with the project-number and sampleset.__
-> Example: 
+> Example:
+>
 > - The __first sampleset__ has 20 samples and your project-number is: 23-0065
 > - The final numbering in the samplesheet would be: __23-0065_001__ up to __23-0065_020__
 > - The samplebox must be labbeled with __23-0065_01__
@@ -222,7 +225,6 @@ __:exclamation: The samples must be labelled with the last digits and the box wi
   - STUDY CONTACTS
 - __for assays__:
   - ASSAY PERFORMERS
-
 
 ***
 
