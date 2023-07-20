@@ -34,32 +34,9 @@ July 20th, 2023
 
 * Intro to elabFTW as one example for electronic lab notebooks
 * Pros & Cons of elabFTW
-* shaping your lab documentation towards FAIR
+* Shaping your lab documentation towards FAIR
 
 ---
-<!-- 
-# Challenges
-
-- machine-readability
-  - schemata
-- PIDs
-
-# Benefits
-
-## political, legal
-
-- time-stamping
-- S1 regulations 
-- 
-
-# Exchange formats
-
-- .eln format
-- yet another standard..
-
----
-
--->
 
 # Check-in
 
@@ -81,9 +58,7 @@ Demo elabFTW: https://demo.elabftw.net/
 
 ![w:500](images/hands-on-circle.drawio.svg)
 
-
 ---
-
 
 # Experiments panel
 
@@ -333,6 +308,46 @@ Create an experiment template for **baking recipes**
 
 ---
 
+
+# Bridging elabFTW and ARC
+
+![w:800](images/elabFTW-ARC.drawio.png)
+
+
+
+---
+
+# Example Scenario
+
+1. You use **ARCs** to
+
+   - organize and store your (raw) data locally
+   - share and communicate data with collaboration partners
+   - annotate and prepare your data for publication
+
+2. You use **elabFTW** to
+
+   - document your daily lab work "on the fly"
+   - organize lab routines with colleagues
+
+
+---
+
+# Goals
+
+1. Benefit from "both worlds" (ARC and elabFTW)
+
+   - iteratively work on protocols
+   - be able to associate metadata to the raw data
+
+2. Align elabFTW structure and ARCs
+
+<!-- :bulb: Note, the following slides outline the overlapping concepts of elabFTW a manual approach. -->
+
+
+---
+
+
 # Schematize: JSON templates
 
 
@@ -368,40 +383,15 @@ Create an experiment template for **baking recipes**
 
 ---
 
-# Bridging elabFTW and ARC
 
 
+# Catalog your lab
 
+1. Which items want to be shared and cataloged? 
+2. catalog: Name / ID items
+3. Create item database 
 
-
----
-
-# Example Scenario
-
-1. You use **ARCs** to
-
-   - organize and store your (raw) data locally
-   - share and communicate data with collaboration partners
-   - annotate and prepare your data for publication
-
-2. You use **elabFTW** to
-
-   - document your daily lab work "on the fly"
-   - organize lab routines with colleagues
-
-
----
-
-# Goals
-
-1. Benefit from "both worlds" (ARC and elabFTW)
-
-   - iteratively work on protocols
-   - be able to associate metadata to the raw data
-
-2. Align elabFTW structure and ARCs
-
-<!-- :bulb: Note, the following slides outline the overlapping concepts of elabFTW a manual approach. -->
+![w:600px](./images/elabFTW-cataloging.drawio.svg)
 
 
 ---
@@ -596,10 +586,10 @@ In edit mode
 .columns {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
+    gap: rem;
 }
 ul {
-    margin: 5; padding: 0;
+    /* margin: 5; padding: 0; */
 }
 </style>
 
@@ -621,7 +611,7 @@ ul {
 
 - Version control
 - Track changes / contributions
-- use of IDs
+- Use of IDs
 - External sharing
 
 </div>
