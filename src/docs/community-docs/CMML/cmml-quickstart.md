@@ -59,7 +59,63 @@ The previously created ARC will be shared with you over the [DataHUB platform](h
 5. __Read and follow__ the next instructions - __📘 User Guide - ARC__ and __📙 User Guide - DataHUB__.
 
 ***
+## 📙 User Guide - DataHUB
 
+### 📖 Introduction to DataHUB
+
+This section gives you a short introduction to some helpful parts of DataHUB. The sidebar is found on the left side of the website.
+
+<img src="image/cmml-quickstart/ARC_Menu.png" style="width:25%; display: block; margin: 20px auto;">
+
+1. If you click on the __name of the ARC__ you can always return to the front page.
+
+   :arrow_right: At the front page there is also the possibility to search for specific files with __'Find Files'__.
+
+2. Under __'Project information'__ in the section __'Members'__ you can see all members involved in the ARC and there is also the possibility to add other members.
+
+3. The section __'Issues'__ should help to collaborate on ideas, solve problems, and plan work.
+
+4. Under __'Wiki'__ you can create or edit a 'Page' for meeting-protocols or writing down sharable notes.
+
+<!-- 
+
+@Dominik: part mit deleting/adding/changing files and folders
+---
+
+The DataHUB allows to directly operate files and folders without using any other tools similar to what you are used to from your computer's file explorer or finder.
+-->
+### 📖 Add files or folders
+<!-- 
+<img src="./../img/datahub-addFiles.drawio.png" style="width:100%;display: block;margin: 20px auto;">
+
+1. From the [ARC panel](./datahub-ARCPanel.html), navigate to subdirectory of your ARC. 
+2. Click the plus sign next to your ARC's name (1).
+3. Select to upload a file (2) or create a new directory (3) in the current directory. 
+4. This will open a new menu where you can upload your file or choose a name for your new directory. 
+-->
+### 📖 Replace, delete or download single files
+<!-- 
+<img src="./../img/datahub-deleteFile01.drawio.png" style="width:100%;display: block;margin: 20px auto;">
+
+1. Select a file (1) that you want to change or download
+
+<img src="./../img/datahub-deleteFile02.drawio.png" style="width:90%;display: block;margin: 20px auto;">
+
+2. From the next view you can choose to replace (2) a file via upload, delete (3) or download (4) the file. 
+
+:bulb: By selecting replace (2) you can simply upload another version of the same file. The name of the original file is kept. 
+-->
+### 📖 Download folders
+<!-- 
+<img src="./../img/datahub-download.drawio.png" style="width:100%;display: block;margin: 20px auto;">
+
+1. From the [ARC panel](./datahub-ARCPanel.html), navigate to subdirectory of your ARC that you would like to download
+2. From the download menu, you can
+   1. download the complete ARC including all data files (1) or 
+   2. download only the currently displayed directory including all its files (2)
+
+-->
+***
 ## 📘 User Guide - ARC
 
 ### 📖 Introduction to ARC
@@ -130,7 +186,7 @@ Every part of a research project finds a place to be put in:
 
 ***
 
-### 📖 __isa.study.xlsx__ or __isa.assay.xlsx__
+### 📖 isa.study.xlsx and isa.assay.xlsx
 
 The isa.study- and isa.assay-file consist of two excel-sheet
 
@@ -157,62 +213,6 @@ __:exclamation: The samples must be labelled with the last digits and the box wi
 - __for assays__:
   - ASSAY PERFORMERS
 
-## 📙 User Guide - DataHUB
-
-### 📖 Introduction to DataHUB
-
-This section gives you a short introduction to some helpful parts of DataHUB. The sidebar is found on the left side of the website.
-
-<img src="image/cmml-quickstart/ARC_Menu.png" style="width:25%; display: block; margin: 20px auto;">
-
-1. If you click on the __name of the ARC__ you can always return to the front page.
-
-   :arrow_right: At the front page there is also the possibility to search for specific files with __'Find Files'__.
-
-2. Under __'Project information'__ in the section __'Members'__ you can see all members involved in the ARC and there is also the possibility to add other members.
-
-3. The section __'Issues'__ should help to collaborate on ideas, solve problems, and plan work.
-
-4. Under __'Wiki'__ you can create or edit a 'Page' for meeting-protocols or writing down sharable notes.
-
-<!-- 
-
-@Dominik: part mit deleting/adding/changing files and folders
----
-
-The DataHUB allows to directly operate files and folders without using any other tools similar to what you are used to from your computer's file explorer or finder.
-
-## Add files or folders
-
-<img src="./../img/datahub-addFiles.drawio.png" style="width:100%;display: block;margin: 20px auto;">
-
-1. From the [ARC panel](./datahub-ARCPanel.html), navigate to subdirectory of your ARC. 
-2. Click the plus sign next to your ARC's name (1).
-3. Select to upload a file (2) or create a new directory (3) in the current directory. 
-4. This will open a new menu where you can upload your file or choose a name for your new directory. 
-
-## Replace, delete or download single files
-
-<img src="./../img/datahub-deleteFile01.drawio.png" style="width:100%;display: block;margin: 20px auto;">
-
-1. Select a file (1) that you want to change or download
-
-<img src="./../img/datahub-deleteFile02.drawio.png" style="width:90%;display: block;margin: 20px auto;">
-
-2. From the next view you can choose to replace (2) a file via upload, delete (3) or download (4) the file. 
-
-:bulb: By selecting replace (2) you can simply upload another version of the same file. The name of the original file is kept. 
-
-## Download folders
-
-<img src="./../img/datahub-download.drawio.png" style="width:100%;display: block;margin: 20px auto;">
-
-1. From the [ARC panel](./datahub-ARCPanel.html), navigate to subdirectory of your ARC that you would like to download
-2. From the download menu, you can
-   1. download the complete ARC including all data files (1) or 
-   2. download only the currently displayed directory including all its files (2)
-
--->
 
 ***
 
