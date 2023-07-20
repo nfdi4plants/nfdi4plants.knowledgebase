@@ -84,6 +84,9 @@ This section gives you a short introduction to some helpful parts of DataHUB. Th
 
 The DataHUB allows to directly operate files and folders without using any other tools similar to what you are used to from your computer's file explorer or finder.
 -->
+
+***
+
 ### 📖 Add files or folders
 <!-- 
 <img src="./../img/datahub-addFiles.drawio.png" style="width:100%;display: block;margin: 20px auto;">
@@ -93,6 +96,9 @@ The DataHUB allows to directly operate files and folders without using any other
 3. Select to upload a file (2) or create a new directory (3) in the current directory. 
 4. This will open a new menu where you can upload your file or choose a name for your new directory. 
 -->
+
+***
+
 ### 📖 Replace, delete or download single files
 <!-- 
 <img src="./../img/datahub-deleteFile01.drawio.png" style="width:100%;display: block;margin: 20px auto;">
@@ -105,6 +111,9 @@ The DataHUB allows to directly operate files and folders without using any other
 
 :bulb: By selecting replace (2) you can simply upload another version of the same file. The name of the original file is kept. 
 -->
+
+***
+
 ### 📖 Download folders
 <!-- 
 <img src="./../img/datahub-download.drawio.png" style="width:100%;display: block;margin: 20px auto;">
@@ -116,6 +125,7 @@ The DataHUB allows to directly operate files and folders without using any other
 
 -->
 ***
+
 ## 📘 User Guide - ARC
 
 ### 📖 Introduction to ARC
