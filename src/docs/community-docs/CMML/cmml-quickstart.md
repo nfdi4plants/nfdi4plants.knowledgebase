@@ -79,8 +79,8 @@ It can also contain project-specific folders like 'images' or 'literature'.
 
 > Example:
 >
-> - studies: Cultivation and sampling of plants or cells
-> - assays: Extraction, derivatization and measuring of the samples
+> - studies: Cultivation and sampling of plants or cells (mostly done by collaboration partners)
+> - assays: Extraction, derivatization and measuring of the samples (mostly done by CMML)
 >
 
 The following guide will help you to get started to work with ARC.
@@ -113,9 +113,9 @@ A study and assay always consist of the following structures:
 
 Every part of a research project finds a place to be put in:
 
-1. __isa.study.xlsx__ or __isa.assay.xlsx__:
-    - samplesheet: here you describe the samples in details, how they have been processed and give them a __CMML-specific label__
-    - (meta-)data
+1. __isa.study.xlsx__ or __isa.assay.xlsx__:  
+
+   :arrow_right: for this describtion go to the [next](#📖-isastudyxlsx-or-isaassayxlsx) part of the instruction
 
 2. __Protocols__:  
    - "substitute" for Lab-book
@@ -124,15 +124,38 @@ Every part of a research project finds a place to be put in:
 
 3. __Resources__ (only in studies)
 
-4. __Dataset__ (only in assays) 
+4. __Dataset__ (only in assays)
   
 5. __README.md__: description and notes for the specific study or assay
 
 ***
 
-<!--
- - missing part: SWATE templates
--->
+### 📖 __isa.study.xlsx__ or __isa.assay.xlsx__
+
+The isa.study- and isa.assay-file consist of two excel-sheet
+
+1. __Samplesheet__ that holds the name of the study or assay
+
+  :arrow_right: Here you __describe__ the samples in details, how they have been processed and give them a __CMML-specific label__ that consists of your project-number and a following numbering
+
+__:exclamation: The samples must be labelled with the last digits and the box with the project-number and sampleset.__
+> Example: 
+> - The __first sampleset__ has 20 samples and your project-number is: 23-0065
+> - The final numbering in the samplesheet would be: __23-0065_001__ up to __23-0065_020__
+> - The samplebox must be labbeled with __23-0065_01__
+> - The sampletubes must then be labelled with __001__ up to __020__
+>
+
+2. __Metadata__ - the sheet is called 'Study' or 'Assay'
+
+ :pen: __Fill out__ the Metadata as best as you can (the following parts are mandatory):
+
+- __for studies__:
+  - Study Title
+  - Study Description
+  - STUDY CONTACTS
+- __for assays__:
+  - ASSAY PERFORMERS
 
 ## 📙 User Guide - DataHUB
 
