@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Syncing recommendation
-published: 2023-06-27
+date: 2023-06-27
 author:
 - name: Dominik Brilhaus
   orcid: https://orcid.org/0000-0001-9021-3197
