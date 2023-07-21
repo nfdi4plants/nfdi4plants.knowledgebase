@@ -124,6 +124,3 @@
 ### [Start Your ARC Series](/docs/teaching-materials/videos/StartYourARC.html)
 
 # [Frequently Asked Questions](/docs/faqs/faqs.html)
-
-# [Community Docs]()
-## [CMML Quickstart](/docs/community-docs/CMML/cmml-quickstart.html)
