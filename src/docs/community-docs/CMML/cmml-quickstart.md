@@ -146,8 +146,8 @@ It can also contain project-specific folders like 'images' or 'literature'.
 
 > Example:
 >
-> - studies: Cultivation and sampling of plants or cells (mostly done by collaboration partners)
-> - assays: Extraction, derivatization and measuring of the samples (mostly done by CMML)
+> - studies: Cultivation and sampling of plants or cells 
+> - assays: Extraction, derivatization and measuring of the samples 
 >
 
 The following guide will help you to get started to work with ARC.
@@ -206,13 +206,14 @@ The isa.study- and isa.assay-file consist of two excel-sheet
 
   :arrow_right: Here you __describe__ the samples in details, how they have been processed and give them a __CMML-specific label__ that consists of your project-number and a following numbering
 
-__:exclamation: The samples must be labelled with the last digits and the box with the project-number and sampleset.__
+__:pen: The samples must be labelled with the last digits and the box with the project-number and sampleset.__
 > Example:
 >
 > - The __first sampleset__ has 20 samples and your project-number is: 23-0065
 > - The final numbering in the samplesheet would be: __23-0065_001__ up to __23-0065_020__
 > - The samplebox must be labbeled with __23-0065_01__
 > - The sampletubes must then be labelled with __001__ up to __020__
+> - If you provide another sampleset, the numbering on the tubes are consecutive for all samples.
 >
 
 2. __Metadata__ - the sheet is called 'Study' or 'Assay'
