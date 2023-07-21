@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: 🚀 QuickStart for Cooperation with CMML
-date: 2023-07-12
+date: 2023-07-21
 author:
 - name: Lea Wirth
   orcid: https://orcid.org/0009-0009-6869-5746
@@ -14,19 +14,30 @@ add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-## 👥Cooperation - User regulation
+## About this guide
 
-__All cooperations__ are incumbent upon the ["Nutzerordnung"](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung).
+This quick start introduces how to cooperate with the [CEPLAS metabolomics & metabolism laboratory (CMML)](https://www.ceplas.eu/en/research/plant-metabolism-and-metabolomics-facility) at Heinrich-Heine-University in Düsseldorf.
 
-Excerpt of ["Nutzerordnung"](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung):
+Major focus here is on exchange of data between CMML and the user using tools and services provided by DataPLANT. 
 
->Das CEPLAS metabolomics & metabolism laboratory (CMML) ist Teil der Infrastruktureinheit „Technologie-Plattform: Pflanzenstoffwechsel und Metabolomik“ des Cluster of Excellence on Plant Sciences (CEPLAS) sowie des Instituts Biochemie der Pflanzen. Die Aufgabe des CMML ist die Bereitstellung und Entwicklung analytischer Methoden im Bereich Stoffwechselanalytik (Metabolomics) mit besonderem Fokus auf sogenannte Primärmetabolite. Des Weiteren unterstützen wir Forschende des Clusters und der Heinrich-Heine-Universität im Bereich Experimentdesign und Probenaufarbeitung in dem interdisziplinären Umfeld der Lebenswissenschaften (v.a. Pflanzenbiologie, Mikrobiologie, Medizin). Eine Nutzung durch externe Forschergruppen ist nach Absprache ebenfalls möglich.
 
-***
+### Contact the CMML
+
+Please check the CMML websites for contact options: 
+
+- at CEPLAS: https://www.ceplas.eu/en/research/plant-metabolism-and-metabolomics-facility
+- at HHU: https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling
+
+
+### 👥Cooperation &ndash; User regulation
+
+Please note that __all cooperations__ are incumbent upon the [User regulation ("Nutzerordnung")](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung).
+
+
 
 ## 🌐 ARC - Annotated Research Context
 
-DataPLANT provides with the Annotated Research Context (ARC) a Research Data Management (RDM) platform after the FAIR principle. The CMML  implements the ARC for cooperations.
+CMML implements the Annotated Research Context (ARC) for cooperations. DataPLANT provides with the  a Research Data Management (RDM) platform after the FAIR principle. 
 
 <img src="../../img/ARC_DataSharing_Collaborators_img2.png" style="width:65%; display: block; margin: 20px auto;">
 
