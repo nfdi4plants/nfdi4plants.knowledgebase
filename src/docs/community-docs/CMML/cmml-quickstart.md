@@ -18,8 +18,7 @@ add sidebar: _sidebars/mainSidebar.md
 
 This quick start introduces how to cooperate with the [CEPLAS metabolomics & metabolism laboratory (CMML)](https://www.ceplas.eu/en/research/plant-metabolism-and-metabolomics-facility) at Heinrich-Heine-University in Düsseldorf.
 
-Major focus here is on exchange of data between CMML and the user using tools and services provided by DataPLANT. 
-
+Major focus here is on exchange of data between CMML and the user using tools and services provided by DataPLANT.
 
 ### Contact the CMML
 
@@ -29,7 +28,7 @@ Please check the CMML websites for contact options:
 - at HHU: https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling
 
 
-### 👥Cooperation &ndash; User regulation
+### 👥 Cooperation &ndash; User regulation
 
 Please note that __all cooperations__ are incumbent upon the [User regulation ("Nutzerordnung")](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung).
 
@@ -60,21 +59,25 @@ The CMML creates an ARC for your project at the [DataHUB](https://git.nfdi4plant
 3. Please __email__ this _@username_ to the CMML.   
 4. The CMML will invite you to a shared ARC for your project.
 5. Once the access to your ARC was granted, you will receive an e-mail.
-6. Please follow the link (green arrow) in the e-mail and log in with your DataHUB account.
+6. Please follow the link in the e-mail (green arrow) and log in with your DataHUB account.
 
 <img src="./image/cmml-quickstart/DataHUB-Access-Mail.png" style="width:65%;display: block; margin: 20px auto;">
 
-5. __Read and follow__ the next instructions - __📘 User Guide - ARC__ and __📙 User Guide - DataHUB__.
+<!-- 5. __Read and follow__ the next instructions - __📘 User Guide - ARC__ and __📙 User Guide - DataHUB__. -->
 
 ***
 
-## 📙 User Guide - DataHUB
+## 📙 User Guide &ndash; DataHUB
 
-### 📖 Introduction to DataHUB
+### 📖 Introduction to the DataHUB
 
-This section gives you a short introduction to some helpful parts of DataHUB. The sidebar is found on the left side of the website.
+This section gives you a short introduction to some helpful parts of the DataHUB.
 
-<img src="image/cmml-quickstart/ARC_Menu.png" style="width:25%; display: block; margin: 20px auto;">
+:bulb: Please check out the [DataHUB manual](./../../DataHUB-Manual/index.html) for more details.
+
+The sidebar is found on the left side of your ARC.
+
+<img src="./image/cmml-quickstart/ARC_Menu.png" style="width:25%; display: block; margin: 20px auto;">
 
 1. If you click on the __name of the ARC__ you can always return to the front page.
 
@@ -86,77 +89,33 @@ This section gives you a short introduction to some helpful parts of DataHUB. Th
 
 4. Under __'Wiki'__ you can create or edit a 'Page' for meeting-protocols or writing down sharable notes.
 
-<!-- 
 
-@Dominik: part mit deleting/adding/changing files and folders
----
+:bulb: The DataHUB allows to directly operate files and folders without using any other tools similar to what you are used to from your computer's file explorer or finder.
 
-The DataHUB allows to directly operate files and folders without using any other tools similar to what you are used to from your computer's file explorer or finder.
--->
+:bulb: For details, please check out the [DataHUB manual](./../../DataHUB-Manual/datahub-files.html).
 
-***
-
-### 📖 Add files or folders
-<!-- 
-<img src="./../img/datahub-addFiles.drawio.png" style="width:100%;display: block;margin: 20px auto;">
-
-1. From the [ARC panel](./datahub-ARCPanel.html), navigate to subdirectory of your ARC. 
-2. Click the plus sign next to your ARC's name (1).
-3. Select to upload a file (2) or create a new directory (3) in the current directory. 
-4. This will open a new menu where you can upload your file or choose a name for your new directory. 
--->
-
-***
-
-### 📖 Replace, delete or download single files
-<!-- 
-<img src="./../img/datahub-deleteFile01.drawio.png" style="width:100%;display: block;margin: 20px auto;">
-
-1. Select a file (1) that you want to change or download
-
-<img src="./../img/datahub-deleteFile02.drawio.png" style="width:90%;display: block;margin: 20px auto;">
-
-2. From the next view you can choose to replace (2) a file via upload, delete (3) or download (4) the file. 
-
-:bulb: By selecting replace (2) you can simply upload another version of the same file. The name of the original file is kept. 
--->
-
-***
-
-### 📖 Download folders
-<!-- 
-<img src="./../img/datahub-download.drawio.png" style="width:100%;display: block;margin: 20px auto;">
-
-1. From the [ARC panel](./datahub-ARCPanel.html), navigate to subdirectory of your ARC that you would like to download
-2. From the download menu, you can
-   1. download the complete ARC including all data files (1) or 
-   2. download only the currently displayed directory including all its files (2)
-
--->
-***
 
 ## 📘 User Guide - ARC
 
 ### 📖 Introduction to ARC
 
-The ARC always has a specific folder structure that consists of:
+The basic ARC folder structure consists of:
 
 - studies
 - assays
 - workflows
 - runs
 
-It can also contain project-specific folders like 'images' or 'literature'.
-
-<img src="./image/cmml-quickstart/ARC-Folder-structure.png" style="width:30%; display: block; margin: 20px auto;">
-
- Those folders contain specific parts of a research project.
+Those folders contain specific parts of a research project.
 
 > Example:
 >
 > - studies: Cultivation and sampling of plants or cells 
 > - assays: Metabolite extraction and derivatization or measurements of the samples
 
+It can also contain project-specific folders like 'images' or 'literature'.
+
+<img src="./image/cmml-quickstart/ARC-Folder-structure.png" style="width:30%; display: block; margin: 20px auto;">
 
 The following guide will help you to get started to work with ARC.
 
@@ -184,26 +143,7 @@ This workbook records the metadata of the whole project. In the first part it st
 
 Study and assay folders always consist of the following structures:
 
-
-
-```markdown
-└── <StudyName>
-    ├── README.md
-    ├── isa.study.xlsx
-    ├── protocols
-    └── resources
-```
-
-```markdown
-└── <AssayName>
-    ├── README.md
-    ├── isa.assay.xlsx
-    ├── protocols
-    └── dataset
-```
-
-<!-- 
-<img src="image/cmml-quickstart/1689767362252.png" style="width:55%; display: block; margin: 20px auto;"> -->
+<img src="image/cmml-quickstart/1689767362252.png" style="width:55%; display: block; margin: 20px auto;">
 
 Every part of a research project finds a place to be put in:
 
@@ -227,23 +167,23 @@ Every part of a research project finds a place to be put in:
 
 ### 📖 isa.study.xlsx and isa.assay.xlsx
 
-The isa.study- and isa.assay-file consist of two excel-sheet
+The isa.study.xlsx and isa.assay.xlsx files consist of two excel sheets
 
-1. __Samplesheet__ that holds the name of the study or assay
+1. __Sample sheet__ that holds the name of the study or assay
 
-  :arrow_right: Here you __describe__ the samples in details, how they have been processed and give them a __CMML-specific label__ that consists of your project-number and a following numbering
+  :arrow_right: Here you __describe__ your samples, how they have been processed and give them a __CMML-specific label__ that consists of your project-number and a following numbering
 
-__:pen: The samples must be labelled with the last digits and the box with the project-number and sampleset.__
+__:pen: The samples must be labelled with the last digits and the box with the project-number and sample set.__
 > Example:
 >
 > - The __first sampleset__ has 20 samples and your project-number is: 23-0065
 > - The final numbering in the samplesheet would be: __23-0065_001__ up to __23-0065_020__
-> - The samplebox must be labbeled with __23-0065_01__
-> - The sampletubes must then be labelled with __001__ up to __020__
-> - If you provide another sampleset, the numbering on the tubes are consecutive for all samples.
+> - The sample box must be labeled with __23-0065_01__
+> - The sample tubes must then be labelled with __001__ up to __020__
+> - If you provide another sample set, the numbering on the tubes are consecutive for all samples.
 >
 
-2. __Metadata__ - the sheet is called 'Study' or 'Assay'
+1. __Metadata__ - the sheet is called 'Study' or 'Assay'
 
  :pen: __Fill out__ the Metadata as best as you can (the following parts are mandatory):
 
@@ -258,4 +198,4 @@ __:pen: The samples must be labelled with the last digits and the box with the p
 
 ## 🌱 CMML Support
 
-If any problems occur there is the possibility to check the common [__Knowledgebase__](https://nfdi4plants.org/nfdi4plants.knowledgebase/index.html) from DataPLANT for solutions. Otherwise contact the CMML so the problems can be solved together. You can always come back to the __Qickstart__ with the shared link and we are open for any suggestions on it to improve it.
+If any problems occur there is the possibility to check the common [__Knowledgebase__](./../../index.html) from DataPLANT for solutions. Otherwise contact the CMML so the problems can be solved together. You can always come back to this __Qickstart__ with the shared link and we are open for any suggestions to improve it.
