@@ -143,7 +143,7 @@ This workbook records the metadata of the whole project. In the first part it st
 
 Study and assay folders always consist of the following structures:
 
-<img src="image/cmml-quickstart/1689767362252.png" style="width:55%; display: block; margin: 20px auto;">
+<img src="image/cmml-quickstart/datahub-ISA-subfolders.png" style="width:55%; display: block; margin: 20px auto;">
 
 Every part of a research project finds a place to be put in:
 
