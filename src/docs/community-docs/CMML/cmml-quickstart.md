@@ -34,35 +34,33 @@ Please check the CMML websites for contact options:
 Please note that __all cooperations__ are incumbent upon the [User regulation ("Nutzerordnung")](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung).
 
 
+## Data Flow between CMML and the user
 
-## 🌐 ARC - Annotated Research Context
+### 🌐 ARC - Annotated Research Context
 
 The CMML uses the [Annotated Research Context (ARC)](./../../implementation/AnnotatedResearchContext.html) for data exchange.
-Wit the ARC we can easily exchange sample sheets, workflows, protocols and share (meta-)data inside a common and shareable folder structure.
+With the ARC we can easily exchange sample sheets, workflows, protocols and share (meta-)data inside a common and shareable folder structure. The ARC is shared via DataPLANT's [DataHUB](./../../implementation/DataHub.html).
 
 <img src="../../img/ARC_DataSharing_Collaborators_img2.png" style="width:65%; display: block; margin: 20px auto;">
 
-
-
-The previously created ARC will be shared with you over the [DataHUB platform](https://git.nfdi4plants.org/). Please read the following setup and complete the next steps.
+The CMML creates an ARC for your project at the [DataHUB](https://git.nfdi4plants.org/) and invites you to the ARC. In order to do so, please complete the following setup.
 
 ***
 
-## 👣 Setup
+### 👣 Setup
 
-1. At first you have to [__create a DataHUB account!__](https://register.nfdi4plants.org)
+1. Please [__create a DataHUB account!__](https://register.nfdi4plants.org)
 
     :bulb: You can also log in with your scientific account ORCID or Life Sciences!
 
-2. If you have sucessfully created your account you can check on the website at the top left (yellow arrow) your _@username_ (blue arrow).
+2. Once you successfully created your account and logged in, you can find your _@username_ (blue arrow) in the avatar menu in the top right of the website (yellow arrow).
 
 <img src="./image/cmml-quickstart/DataHUB-Username.png" style="width:35%; display: block; margin: 20px auto;">
 
-3. __Commit__ this _@username_ to the CMML to get started with the common ARC.
-
-    ✉️ You will recieve an e-mail after the access for the ARC was granted.
-
-4. __Follow__ the link (green arrow) in the e-mail and log in with your DataHUB account.
+3. Please __email__ this _@username_ to the CMML.   
+4. The CMML will invite you to a shared ARC for your project.
+5. Once the access to your ARC was granted, you will receive an e-mail.
+6. Please follow the link (green arrow) in the e-mail and log in with your DataHUB account.
 
 <img src="./image/cmml-quickstart/DataHUB-Access-Mail.png" style="width:65%;display: block; margin: 20px auto;">
 
@@ -157,8 +155,8 @@ It can also contain project-specific folders like 'images' or 'literature'.
 > Example:
 >
 > - studies: Cultivation and sampling of plants or cells 
-> - assays: Extraction, derivatization and measuring of the samples 
->
+> - assays: Metabolite extraction and derivatization or measurements of the samples
+
 
 The following guide will help you to get started to work with ARC.
 
@@ -184,15 +182,34 @@ This workbook records the metadata of the whole project. In the first part it st
 
 ### 📖 Studies and Assays
 
-A study and assay always consist of the following structures:
+Study and assay folders always consist of the following structures:
 
-<img src="image/cmml-quickstart/1689767362252.png" style="width:55%; display: block; margin: 20px auto;">
+
+
+```markdown
+└── <StudyName>
+    ├── README.md
+    ├── isa.study.xlsx
+    ├── protocols
+    └── resources
+```
+
+```markdown
+└── <AssayName>
+    ├── README.md
+    ├── isa.assay.xlsx
+    ├── protocols
+    └── dataset
+```
+
+<!-- 
+<img src="image/cmml-quickstart/1689767362252.png" style="width:55%; display: block; margin: 20px auto;"> -->
 
 Every part of a research project finds a place to be put in:
 
 1. __isa.study.xlsx__ or __isa.assay.xlsx__:  
 
-   :arrow_right: for this describtion go to the [next](#📖-isastudyxlsx-or-isaassayxlsx) part of the instruction
+   :arrow_right: for this description go to the [next](#📖-isastudyxlsx-or-isaassayxlsx) part of the instruction
 
 2. __Protocols__:  
 
