@@ -8,7 +8,7 @@ author:
   orcid: https://orcid.org/0000-0001-9021-3197
 layout: slides
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-title: promotion_elabFTW-ARC
+title: elabFTW-ARC
 date: 2023-07-20
 ---
 
@@ -20,6 +20,7 @@ section {
 }
 
 </style>
+
 
 # RDM in practice &ndash; Electronic lab notebooks
 
@@ -51,6 +52,8 @@ Demo elabFTW: https://demo.elabftw.net/
 <hr>
 
 :rocket: **For today:** https://clerk.cs.uni-kl.de/
+
+&emsp; :bulb: this instance will be deleted after the summer school
 
 ---
 
@@ -93,11 +96,15 @@ Create an experiment **Baking pancakes**
 
 # :bulb: Recap
 
+- keine Metadaten
+- Freitext
+- JSON hilfreich
+- Daten nicht verlinkt
+
 
 <!-- FAIR Recap: 
-- inputs
-- outputs
-- reusability (of items)
+
+
 -->
 
 ---
@@ -154,10 +161,14 @@ Create an experiment **Baking pancakes**
 
 # :bulb: Recap
 
-<!-- FAIR Recap: 
+- 2x selbes Item
+- Capitalization
+- using items in an experiment
+- different approaches of linking / resuing items (from database)
+- which metadata to add where
+- "different ways to do it"
+- CV / ontologies
 - PIDs
-- CV / ontology
--->
 
 ---
 
@@ -188,6 +199,8 @@ Start another experiment **Baking a chocolate cake**
 
 # :bulb: Recap
 
+- 
+
 <!-- FAIR Recap: 
 - re-use process (-> function "duplicate")
 - re-use items
@@ -213,6 +226,11 @@ Create an experiment template for **baking recipes**
 ---
 
 # :bulb: Recap
+
+- user-friendly ++
+- but a lot of free-text
+- templating helps towards reusable structure
+
 
 <!-- FAIR Recap 
 - everyone comes up with their own template
