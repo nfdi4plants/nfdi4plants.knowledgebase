@@ -37,13 +37,12 @@ Please note that __all cooperations__ are incumbent upon the [User regulation ("
 
 ## 🌐 ARC - Annotated Research Context
 
-CMML implements the Annotated Research Context (ARC) for cooperations. DataPLANT provides with the  a Research Data Management (RDM) platform after the FAIR principle. 
+The CMML uses the [Annotated Research Context (ARC)](./../../implementation/AnnotatedResearchContext.html) for data exchange.
+Wit the ARC we can easily exchange sample sheets, workflows, protocols and share (meta-)data inside a common and shareable folder structure.
 
 <img src="../../img/ARC_DataSharing_Collaborators_img2.png" style="width:65%; display: block; margin: 20px auto;">
 
-The aim is to exchange samplesheets, workflows, protocols and share (meta-)data inside a common and shareable folder structure.
 
-:bulb: For more information about ARC click [here](./../../implementation/AnnotatedResearchContext.html).
 
 The previously created ARC will be shared with you over the [DataHUB platform](https://git.nfdi4plants.org/). Please read the following setup and complete the next steps.
 
