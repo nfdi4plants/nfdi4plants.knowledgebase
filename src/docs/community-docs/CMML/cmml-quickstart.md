@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: 🚀 QuickStart for Cooperation with CMML
-published: 2023-07-12
+date: 2023-07-12
 author:
 - name: Lea Wirth
   orcid: https://orcid.org/0009-0009-6869-5746
@@ -10,7 +10,7 @@ author:
   orcid: https://orcid.org/0000-0001-9021-3197
   github: brilator
 add toc: true
-add support: true
+add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
