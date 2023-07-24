@@ -144,7 +144,7 @@ npm run indexserve
 
 ## Authoring Content
 
-Read more about authoring content in the fornax section of the nfdi4plants web components docs [here](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax)
+Read more about authoring content in the fornax section of the [nfdi4plants web components docs](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax)
 
 :warning: Please make sure to especially follow the markdown syntax section. 
 
