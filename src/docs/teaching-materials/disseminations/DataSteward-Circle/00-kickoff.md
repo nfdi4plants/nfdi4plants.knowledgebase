@@ -25,7 +25,7 @@ h1, p{
 
 </style>
 
-![bg fit](./../../../../img/DataPLANT-Background.png)
+![bg fit](./../../../img/DataPLANT-Background.png)
 
 Kick-Off Meeting
 July 11th, 2023
