@@ -1,5 +1,6 @@
 ---
 marp: true
+layout: slides
 title: Contribution to DataPLANT
 theme: marp-theme_dataplant-ceplas-ccby
 author: 
@@ -7,6 +8,7 @@ author:
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
 paginate: true
+date: 2023-07-25
 ---
 
 # Data Steward Circle
@@ -276,18 +278,18 @@ date: 2023-07-25
 
 <div class="column" style="width:500px">
 
-  ```yaml
-  ---
-  layout: docs
-  title: Metadata
-  date: 2022-05-09
-  author: FirstName LastName
-  add toc: true
-  add sidebar: _sidebars/mainSidebar.md
-  ---
-  ```
+```yaml
+---
+layout: docs
+title: Metadata
+date: 2022-05-09
+author: FirstName LastName
+add toc: true
+add sidebar: _sidebars/mainSidebar.md
+---
+```
 
-  :bulb: Check 
+  :bulb: Check also
   - [contribution guide](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/CONTRIBUTING.html) and 
   - [nfdi4plants web components docs](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax). 
 
