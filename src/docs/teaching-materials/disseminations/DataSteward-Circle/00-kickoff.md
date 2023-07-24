@@ -2,6 +2,7 @@
 marp: true
 title: DataSteward Circle Kick-off
 theme: dataplant_marp-theme
+date: 2023-07-11
 author: 
 - name: Cristina Martins Rodrigues
   github: https://github.com/CMR248
