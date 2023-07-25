@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - RPTU Summer School on RDM
+      DataPLANT documentation - Electronic Lab Notebooks (ELNs)
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -468,142 +468,251 @@
         </a>
       </nfdi-sidebar-eleneo>
       <h1 class="front-header">
-        RPTU Summer School on RDM
+        Electronic Lab Notebooks (ELNs)
       </h1>
       <i class="help">
-        last updated at 2023-07-17
+        last updated at 2023-02-10
       </i>
-      <nfdi-toc></nfdi-toc>
-      <p>Here you can find the slides shown during the RPTU Summer School on RDM.</p>
-<!--
-## RDM Planning
-
-<embed
-    src="./???"
-    type="application/pdf"
-    width="400px"
-    height="255px"
-/>
-
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 21th, 2023
-<hr>
--->
-<nfdi-h2 id="rdm-in-practice-electronic-lab-notebooks">RDM in Practice – Electronic Lab Notebooks</nfdi-h2>
-<p><embed
-src="./2023-07-20_elabFTW-ARC.pdf"
-type="application/pdf"
-width="400px"
-height="255px"
-/></p>
-<p><a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> <a href="https://ceplas.eu">CEPLAS</a> 📆 July 20th, 2023</p>
-<hr>
-<nfdi-h2 id="workflows-and-data-processing">Workflows and Data Processing</nfdi-h2>
-<p><embed
-src="./2023-07-20_CWLSession.pdf"
-type="application/pdf"
-width="400px"
-height="255px"
-/></p>
-<p><a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> <a href="https://nfdi4plants.org/">DataPLANT</a> 📆 July 20th, 2023</p>
-<p><strong>Included Resources:</strong></p>
+      <ul>
+<li><a href="#protocols---recipes-to-knowledge">Protocols - Recipes to Knowledge</a></li>
+<li><a href="#eln---digital-protocol-editors">ELN - Digital Protocol Editors</a></li>
+<li><a href="#arcs---packaging-eln-protocols-with-the-data">ARCs - Packaging ELN protocols with the data</a></li>
+<li><a href="#actions-to-make-the-best-of-using-elns-with-arcs">Actions to make the best of using ELNs with ARCs</a>
 <ul>
-<li>&quot;Introduction to the Common Workflow Language (CWL) Project&quot; YouTube, uploaded by BioExcel CoE, 30 Jun 2017, <a href="www.youtube.com/watch?v=jfQb1HJWRac">www.youtube.com/watch?v=jfQb1HJWRac</a></li>
+<li><a href="#structure-your-eln-un-mix-and-disentangle">Structure your ELN: un-mix and disentangle</a></li>
+<li><a href="#review-protocol-habits">Review protocol habits</a>
+<ul>
+<li><a href="#cut-protocols-into-pieces">cut protocols into pieces</a></li>
 </ul>
-<hr>
-<nfdi-h2 id="databases">Databases</nfdi-h2>
-<p><embed
-src="./2023-07_Databases2.pdf"
-type="application/pdf"
-width="400px"
-height="255px"
-/></p>
-<p><a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> <a href="https://nfdi4plants.org/">DataPLANT</a> 📆 July 20th, 2023</p>
-<br>
-<p><embed
-src="./2023-07_Databases.pdf"
-type="application/pdf"
-width="400px"
-height="255px"
-/></p>
-<p><a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> <a href="https://nfdi4plants.org/">DataPLANT</a> 📆 July 19th, 2023</p>
-<hr>
-<nfdi-h2 id="organization-and-archives">Organization and Archives</nfdi-h2>
-<p><embed
-src="./2023-07_Organizations-and-Archives.pdf"
-type="application/pdf"
-width="400px"
-height="255px"
-/></p>
-<p><a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> <a href="https://nfdi4plants.org/">DataPLANT</a> 📆 July 19th, 2023</p>
-<hr>
-<!--
-## Galaxy
-
-<embed
-    src="./???"
-    type="application/pdf"
-    width="400px"
-    height="255px"
-/>
-
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 18th, 2023
-<hr>
--->
-<nfdi-h2 id="versioning-collaboration">Versioning &amp; Collaboration</nfdi-h2>
-<p>This is an interactive session, the contents of which can be found by following these links:</p>
-<ul>
-<li><a href="https://simson.io/intro-to-git/">Intro to Git</a></li>
-<li><a href="https://milesmcbain.github.io/git_4_sci/">Git for Scientists</a></li>
-<li><a href="https://gitbookdown.dallasdatascience.com/">Git &amp; GitHub Tutorial for Scientists</a></li>
-</ul>
-<p><strong>Interactive (fun):</strong></p>
-<ul>
-<li><a href="https://ohmygit.org/">ohmygit.org</a></li>
-<li><a href="https://learngitbranching.js.org/">Learn Git Branching</a></li>
-</ul>
-<hr>
-<!--
-## Process Models 
-
-<embed
-    src="./???"
-    type="application/pdf"
-    width="400px"
-    height="255px"
-/>
-
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 17th, 2023
-<hr>
-
-**Relevant Links:**   
-
-* [ARCitect - Latest Release](https://github.com/nfdi4plants/ARCitect/releases/latest) (still in development)
-* [Swate - Latest Release](https://github.com/nfdi4plants/swate/releases/latest) 
-* [ARC Commander - Latest Release](https://github.com/nfdi4plants/arcCommander/releases/latest)
-* [ARC - Knowledge Base Article](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html)
-
-<hr>
--->
-<nfdi-h2 id="opening-session">Opening Session</nfdi-h2>
-<p><embed
-src="./2023-07_OpeningSession.pdf"
-type="application/pdf"
-width="450px"
-height="300px"
-/></p>
-<p><a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> <a href="https://nfdi4plants.org/">DataPLANT</a> 📆 July 17th, 2023</p>
-<p><strong>Included Resources:</strong></p>
-<ul>
-<li><p>&quot;Data Sharing and Management Snafu in 3 Short Acts&quot; YouTube, uploaded by NYU Health Sciences Library, 19 Dec 2012, <a href="www.youtube.com/watch?v=N2zK3sAtr-4">www.youtube.com/watch?v=N2zK3sAtr-4</a></p>
 </li>
-<li><p>&quot;What is the National Research Data Infrastructure (NFDI)?&quot; YouTube, uploaded by
-DFG bewegt, 7 Oct 2021, <a href="www.youtube.com/watch?v=uJ01g9m8uE4">www.youtube.com/watch?v=uJ01g9m8uE4</a></p>
+<li><a href="#identify-your-projects-and-resources">Identify your projects and resources</a></li>
+<li><a href="#align-annotations">Align annotations</a></li>
+<li><a href="#isa">ISA</a></li>
+<li><a href="#export-protocols-to-arc">Export protocols to ARC</a></li>
+</ul>
+</li>
+<li><a href="#outlook">Outlook</a></li>
+</ul>
+<nfdi-h2 id="protocols-recipes-to-knowledge">Protocols - Recipes to Knowledge</nfdi-h2>
+<p>Protocols form the basis to laboratory procedures. In a kitchen a recipe defines what inputs (<em>flour, milk, eggs, ...</em>) and steps (<em>mix, bake...</em>) are required to achieve what expected outcome (<em>chocolate cake</em>). Just like that a laboratory protocol defines what samples, materials, and components (<em>plant leaves, buffer, centrifuge, ...</em>) can be processed (<em>homogenize, mix, extract, ...</em>) to generate a desired outcome (<em>plant leaf extract</em>). Depending on the type of laboratory procedure, the protocol outcomes may be samples or data. In both cases the protocol is <strong>metadata</strong>.</p>
+<p>Protocols are the key to generate knowledge via predefined experimental processes. Since protocols are key to reproducibility and integrity of scientific results, they are an integral part of publications (<em>materials and methods</em> section) to share, evaluate and reuse these methods with peers and communities.</p>
+<p>Every lab builds on a collection of protocols. Some protocols may describe routinely performed <em>standard operating procedures</em>, while others may be continuously evolving and adapted to a specific use-case. In pre-digital times, protocols for a scientific project were collected in classical pen-and-paper lab notebooks. By design, the metadata knowledge collected in these single-copy protocols was hard to access (hidden in a shelf), maintain (over generations of researchers) or share and communicate (hand-written notes, post-its) with peers during the ongoing scientific process. <!-- (unless published) --></p>
+<nfdi-h2 id="eln-digital-protocol-editors">ELN - Digital Protocol Editors</nfdi-h2>
+<p>Once a protocol is digitalized, the information that used be stuck in a single-copy paper can be replicated with ease, facilitating quicker collaboration, sharing, and reuse (of those laboratory-central processes). This can be done via a combination of text software, local or cloud servers, wiki platforms or by using a specialized software - the <strong>electronic</strong> lab notebook (ELN).</p>
+<p>ELNs were developed (designed) to help overcome the limitations of classical pen-and-paper lab notebooks and align well with daily wet-lab routines. ELNs facilitate the editing and sharing of protocols, usually in a closed environment such as a lab or consortium.</p>
+<p>Designed as lightweight (low-burden, free-text) protocol editors, ELNs are a major step towards digitalization of laboratory processes.</p>
+<nfdi-h2 id="arcs-packaging-eln-protocols-with-the-data">ARCs - Packaging ELN protocols with the data</nfdi-h2>
+<p>Protocols generated in ELNs integrate well with the ARC. Protocols and the metadata they contain have a dedicated place and schema within the ARC. Every study and assay (subfolder) in the ARC comes with a folder called <code>protocols</code>. This folder collects all protocols directly associated with a specific set of data files in the parallel <code>dataset</code> folder. In addition, the <code>isa.study.xlsx</code> and <code>isa.assay.xlsx</code> workbooks associated to each study or assay, help to communicate the protocol's metadata in a structured and machine-readable way.</p>
+<p>Since ARCs (are designed as FAIR digital objects, which) combine the data files with the metadata in one research data package, they facilitate to store, share and reuse the research data as a whole. <!-- rather than just the protocol // just the data without metadata  --></p>
+<nfdi-h2 id="actions-to-make-the-best-of-using-elns-with-arcs">Actions to make the best of using ELNs with ARCs</nfdi-h2>
+<p>In the following sections we outline recommendations to take full advantage of ELNs together with ARCs. These recommendations include conceptual measures or organizational decisions that are independent of the use of an ELN or ARC as well as manual practices that one could implement immediately to facilitate their integration. Further we will explore possible routes towards automated and tool-aided integrations and interfaces. We try to highlight, where the ARC and a typical ELN conceptually mean the same thing or in technical terms <em>could write to and read from the same file</em>.</p>
+<p>The goal of bridging the use of ELNs with ARCs is to foster FAIRness in an approach that reduces the documentation work by minimizing duplications and redundancies. To achieve this, the approach needs to integrate smoothly with daily routines of both wet-lab and computational biologists.</p>
+<!-- an intuitive and unblocked / unhindered mechanisms to "along the way" -->
+<nfdi-h3 id="structure-your-eln-un-mix-and-disentangle">Structure your ELN: un-mix and disentangle</nfdi-h3>
+<ol>
+<li>sharing with others is easier when we agree on a system (to name and structure)</li>
+<li>the ARC structure / naming convention is built on the ISA metadata model
+<ul>
+<li>hierarchy / taxonomy</li>
+<li>naming</li>
+<li>linking</li>
+<li>referencing</li>
+</ul>
+</li>
+<li>the ISA structure can easily be</li>
+</ol>
+<p>Independent of the ELN software you use or whether you prefer another digital routine -cloud, local file server or wiki- to structure and share your lab protocols, the intuitive ISA structure can easily be implemented.</p>
+<p>Most ELN software allow some routine to structure / associate entries.</p>
+<nfdi-h3 id="review-protocol-habits">Review protocol habits</nfdi-h3>
+<p>Before (re-)structuring a whole laboratory's protocol collection, it helps to revise the strengths of the ISA model.</p>
+<p>Protocols usually describe a single process. In rare cases a combination of multiple processes are combined to one protocol.</p>
+<ul>
+<li>define where a process (protocol) starts and where it ends</li>
+</ul>
+<p>what are inputs and outputs:</p>
+<ul>
+<li>define clear process inputs and outputs</li>
+</ul>
+<nfdi-h4 id="cut-protocols-into-pieces">cut protocols into pieces</nfdi-h4>
+<p>There is no clear &quot;ruling&quot; as to what defines as a single process.</p>
+<p>Looking back at the kitchen analogy: If you're baking a chocolate cake, then going to the grocery store to buy the required ingredients could vaguely be defined as part of the process &quot;chocolate cake baking&quot;. However, at the latest once you want to reuse some of the ingredients to cook another dish (process &quot;crumbing a fish filet&quot;), it would become hard to reference the process' (sub)part (&quot;buying groceries&quot;). Certainly, brewing coffee and setting the table should be defined as separate processes.</p>
+<p>As vague rules of thumb, in a laboratory context one can recognize a process by either of the following criteria</p>
+<ul>
+<li>you can safely store away the input or output sample, material under suitable conditions (e.g. dry/wet, room temperature / freezer)</li>
+<li>someone else or you yourself could be interested in the output sample, material or data of your process for another purpose (frozen leaf powder for different extractions and assays)</li>
+<li>steps are performed across multiple days</li>
+</ul>
+<p>As a counter example: centrifugation or incubation and setting samples aside during an extraction.</p>
+<p><img src="define-processes.drawio.svg" alt="" /></p>
+<nfdi-h3 id="identify-your-projects-and-resources">Identify your projects and resources</nfdi-h3>
+<p>Once we have clearly defined modular processes, we can start to label them.</p>
+<ul>
+<li><p>project ID ⇒ INV ID</p>
+</li>
+<li><p>Here's a strength in electronic lab notebooks</p>
+</li>
+<li><p>samples, primers, materials ⇒ resources</p>
+</li>
+<li><p>the definition of what defines a project can vary greatly from a small side project during a bachelor thesis with only the student and a supervisor involved towards multi-lab efforts and should not be enforced</p>
+</li>
+<li><p>Note however: the smaller and more concise the project is defined, the more actionable it will be. Just as the ARC, laboratory projects are <em>immutable, but evolving</em>.</p>
+</li>
+<li><p>use identifiers</p>
+<ul>
+<li>some ELN tools allow the use of tags or labels</li>
+<li></li>
+</ul>
+</li>
+<li><p>cross-referencing</p>
+</li>
+<li><p>identifiers allow us to ... <em>identify</em> &quot;things&quot;</p>
 </li>
 </ul>
-<hr>
+<nfdi-h3 id="align-annotations">Align annotations</nfdi-h3>
+<ul>
+<li>wording (ISA grammar, annotation principles)</li>
+<li>use templates</li>
+</ul>
+<nfdi-h3 id="isa">ISA</nfdi-h3>
+<p><code>./isa.investigation.xlsx</code></p>
+<p>INVESTIGATION
+Investigation Identifier
+Investigation Title
+Investigation Description
+...
+INVESTIGATION CONTACTS
+Investigation Person Last Name
+Investigation Person First Name
+...
+Investigation Person Email
+...</p>
+<p><code>./studies/&lt;YourStudyName&gt;/isa.study.xlsx</code></p>
+<p>STUDY
+Study Identifier
+Study Title
+Study Description
+...</p>
+<p>STUDY FACTORS
+Study Factor Name
+Study Factor Type
+...
+STUDY ASSAYS
+Study Assay Measurement Type
+...
+Study Assay Technology Type
+...
+Study Assay Technology Platform
+Study Assay File Name
+STUDY PROTOCOLS
+Study Protocol Name
+...</p>
+<nfdi-h3 id="export-protocols-to-arc">Export protocols to ARC</nfdi-h3>
+<ol>
+<li>Take advantage of ARC's version control system</li>
+<li>ARC: structured ELN backup</li>
+<li>Just like an ELN, the ARC can parallel your lab work</li>
+<li>Daily routine: Export protocol to the ARC of the respective project
+<ol>
+<li>Things are often &quot;work in progress&quot;</li>
+<li>ARC allows to &quot;end-of-day-dump&quot; your protocols into a subdir</li>
+</ol>
+</li>
+</ol>
+<nfdi-h2 id="outlook">Outlook</nfdi-h2>
+<ul>
+<li>(local) ELN-ARC interface
+<ul>
+<li>read-write protocols</li>
+<li>read-write isa.*.xlsx / isa.json</li>
+</ul>
+</li>
+<li>automated ARC-ELN synchronization</li>
+<li>using isa templates in an ELN</li>
+<li>integrate ontology API into ELN</li>
+<li>access management</li>
+</ul>
+<!-- 
 
+Notes
+
+
+
+1. Protocols: basis to lab procedures
+2. Key to knowledge of a biological laboratory
+3. Protocols = Metadata
+
+4. Key to reproducibility and as such to a FAIR scientific process
+  - mixed types of protocols
+  - some routine, some continuously evolving
+  - some protocols form the base to very central experiments and assays
+  - Protocols are an integral part of publications (*materials and methods* section). Methods are shared with peers 
+1. classical pen-and-paper lab note book
+   1. metadata knowledge stuck in a single copy
+   2. hard to access (hidden in a shelf)
+   3. hard to maintain (over generations of researchers)
+   4. hard to communicate adaptations (stickers, post-its, hand-written notes) -->
+<!-- 
+
+In protocols we document exactly how a planned lab process was followed for a dedicated set of samples.
+While a well established method for RNA extraction may state that "between 20 and 30 mg" of a ground leaf shall be used as the starting material, we would denote that RNA was extracted from exactly "23.6 mg" of leaf material for one identifiable sample.
+While the method may generally recommend five technical replicates, the protocol would associate the five replicates with information 
+
+
+Definitions:
+
+Method: how an experiment could be done (compare: recipe for baking a cake)
+Protocol: how an experiment was done (used this type of flour, baked for 45 instead of 40 minutes)
+
+
+the fact that the digitalized form of what used to be on **one** paper can now be replicated with ease facilitates quicker collaboration, sharing, and reuse of those central entities at least within 
+
+
+
+
+
+Tools to edit and share protocols 
+
+With the purpose of protocol editors 
+
+1. the closed lab context
+2. the exchange on laboratory protocols
+3. ELNs d
+
+
+
+- good tool to digitalize your protocols
+- good protocol editor
+- allows free / flexible editing of protocols
+- sharing protocols with close surrounding / your lab
+  - easy to reuse
+- time stamping
+
+
+
+<!-- Where is the bridge between ELNs and ARCs? (ELNs = Protocols = Metadata) -->
+<!-- integration (Using an ELN with your ARC) -->
+<!-- you can take to make pave the way towards ELN-ARC integration (Using an ELN with your ARC) -->
+<!-- - the ARC is your place to structure, store, annotate, share and evolve all data to your research project -->
+<!-- 1:1 Project : ARC -->
+
+      <h3>
+        DataPLANT Support
+      </h3>
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/teaching-materials/disseminations/2023-07-17_rptu-summerschool-on-rdm/index.md" style="margin-left: auto; display: block; width: 130px;">
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <span style="display: inline-flex; flex-wrap: wrap;">
+          <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+            directly
+          </a>
+          .
+        </span>
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/teaching-materials/disseminations/2023-07-20_rptu-summerschool-elabFTW/ElectronicLabNotebooks.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>
