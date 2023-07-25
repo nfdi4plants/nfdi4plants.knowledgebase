@@ -15,7 +15,7 @@ date: 2023-07-20
 <style>
 
 section {
-   background: none;
+   /* background: none; */
    background-color: white;
 }
 
