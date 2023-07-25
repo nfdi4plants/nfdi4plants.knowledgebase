@@ -40,15 +40,6 @@ Dominik Brilhaus
 
 ---
 
-# Content
-
-- Git-Basics (Issues, Pull Requests)
-- Contribute to Knowledge Base (Docs, Videos, Slides)
-- Markdown specifics for KB
-  - local testing
-  - slides, etc.
----
-
 # Resources
 
 Contents shown here are (in part) already somewhere in the [Knowledge Base](https://nfdi4plants.org/nfdi4plants.knowledgebase/) or at least in the [GitHub repo](https://github.com/nfdi4plants/nfdi4plants.knowledgebase). However, :warning: Links there are somewhat volatile :warning:
@@ -72,11 +63,15 @@ Contents shown here are (in part) already somewhere in the [Knowledge Base](http
 
 # Recommended software
 
-<br>
-
 :ballot_box_with_check: [GitHub Desktop](https://desktop.github.com)
-:ballot_box_with_check: [Visual Studio Code](https://code.visualstudio.com/)
+  - git synchronization
+  - pull requests
+  - manage (local and remote) branches
 
+:ballot_box_with_check: [Visual Studio Code](https://code.visualstudio.com/)
+  - all-in-one: text editor + file explorer + command line + git + ...
+  - code highlighting and linting
+  - many extensions available
 
 --- 
 
@@ -96,7 +91,7 @@ Contents shown here are (in part) already somewhere in the [Knowledge Base](http
 
 ---
 
-# Recommended VS code extensions: marp
+# Creating markdown slides in VS code: marp
 
 [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)
 
@@ -117,7 +112,7 @@ Contents shown here are (in part) already somewhere in the [Knowledge Base](http
 
 # Markdown Slides (with Marp)
 
-- add `marp: true` YAML metadata
+- add `marp: true` to YAML metadata
 
 :bulb: See the [Marp slide decks tutorial](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/contribute_slide-decks.html)
 
@@ -168,6 +163,8 @@ The DataPLANT GitHub organization (https://github.com/nfdi4plants) and repositor
 2. Fork the repo (i.e. create a copy under your user name)
 3. Clone your fork locally (to your machine)
 
+![w:800px](./../../../img/contribution_git.png)
+
 ---
 
 # 👩‍💻 Exercise: Create a new article (markdown)
@@ -213,10 +210,14 @@ date: 2023-07-25
 
 &emsp; :bulb: Both required for local testing of [Knowledge Base](https://nfdi4plants.org/nfdi4plants.knowledgebase/)
 
-
 ---
 
-## Local Testing
+## Knowledge Base backend: Fornax
+
+![w:700px](./../../../img/knowledgeBase-fornax.drawio.svg)
+
+
+:bulb: See [nfdi4plants web components docs](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax)
 
 ---
 
@@ -231,13 +232,18 @@ date: 2023-07-25
 
 ---
 
-## Run
+## Knowledge base local test
 
 1. Run `npm run fornax`.
 2. Open the page in your browser [http://127.0.0.1:8080/](http://127.0.0.1:8080/).
 
-
 --- 
+
+
+## Let's have a look at your articles (pull-requests)
+
+
+---
 
 ## Markdown syntax
 
@@ -289,11 +295,32 @@ add sidebar: _sidebars/mainSidebar.md
 ---
 ```
 
-  :bulb: Check also
+  :bulb: For details, check
   - [contribution guide](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/CONTRIBUTING.html) and 
-  - [nfdi4plants web components docs](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax). 
+  - [nfdi4plants web components docs](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax)
 
   </div>
 
 </div>
 
+---
+
+## Slide decks &ndash; work in progress :construction: 
+
+- Fornax currently does not auto-convert `marp.md` to `marp.html`
+- Slides are mostly stored in `src/docs/teaching-materials`
+  - based on the concept [presented before](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/2023-05-09_teaching-materials-concept/teaching-materials-concept.html#1)
+- Naming convention and YAML header are up for discussion
+
+<br>
+
+:bulb: Feel free to create slide decks how and where you need them! 
+ 
+---
+## Now it's your turn
+
+- Read and use the knowledge base
+- Raise issues
+- Open pull-requests to
+  - suggest changes
+  - create or edit articles, guides, tutorials
