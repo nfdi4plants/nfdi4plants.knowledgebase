@@ -33,7 +33,20 @@ Dominik Brilhaus
 
 ---
 
-# Goals
+# Knowledge Base
+
+Create, share, reuse, collaborate on
+- articles
+- guides
+- images
+- slides
+- ...
+
+DataPLANT Knowledge Base: https://nfdi4plants.org/nfdi4plants.knowledgebase/
+
+---
+
+# Content
 
 - How to contribute to the DataPLANT [Knowledge Base](https://nfdi4plants.org/nfdi4plants.knowledgebase/)
 - ... and DataPLANT [projects](https://github.com/nfdi4plants) in general
