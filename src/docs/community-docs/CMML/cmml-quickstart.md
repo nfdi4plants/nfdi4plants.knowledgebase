@@ -14,7 +14,7 @@ add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-## About this guide for cmml
+## About this guide 
 
 This quick start introduces how to cooperate with the [CEPLAS metabolomics & metabolism laboratory (CMML)](https://www.ceplas.eu/en/research/plant-metabolism-and-metabolomics-facility) at Heinrich-Heine-University in Düsseldorf.
 
@@ -147,45 +147,26 @@ Study and assay folders always consist of the following structures:
 
 Every part of a research project finds a place to be put in:
 
-1. __isa.study.xlsx__ or __isa.assay.xlsx__:  
+1. __isa.study.xlsx__ or __isa.assay.xlsx__ consist of two excel sheets:  
 
-   :arrow_right: for this description go to the [next](#📖-isastudyxlsx-or-isaassayxlsx) part of the instruction
-
-2. __Protocols__:  
-
-   - "substitute" for Lab-book
-   - here you should write down the used method, but also put in for example plasmid-cards that are specific for this part of the research
-   - most optimal file-format would be .txt, but a Word-file can also be possible
-
-3. __Resources__ (only in studies)
-
-4. __Dataset__ (only in assays)
+- __Sample sheet__ that holds the name of the study or assay
   
-5. __README.md__: description and notes for the specific study or assay
+:arrow_right: Here you __describe__ your samples, how they have been processed and give them a __CMML-specific label__ that consists of your project-number and a following numbering
 
-***
-
-### 📖 isa.study.xlsx and isa.assay.xlsx
-
-The isa.study.xlsx and isa.assay.xlsx files consist of two excel sheets
-
-1. __Sample sheet__ that holds the name of the study or assay
-
-  :arrow_right: Here you __describe__ your samples, how they have been processed and give them a __CMML-specific label__ that consists of your project-number and a following numbering
-
-__:pen: The samples must be labelled with the last digits and the box with the project-number and sample set.__
+:pen: The samples must be __labelled with the last digits and the box with the project-number and sample set.__
 > Example:
 >
 > - The __first sampleset__ has 20 samples and your project-number is: 23-0065
 > - The final numbering in the samplesheet would be: __23-0065_001__ up to __23-0065_020__
 > - The sample box must be labeled with __23-0065_01__
 > - The sample tubes must then be labelled with __001__ up to __020__
-> - If you provide another sample set, the numbering on the tubes are consecutive for all samples.
->
+> - If you provide another sample set, the numbering on the tubes are consecutive for all samples. 
 
-1. __Metadata__ - the sheet is called 'Study' or 'Assay'
+<!--
+-->
+- __Metadata__ - the sheet is called 'Study' or 'Assay'
 
- :pen: __Fill out__ the Metadata as best as you can (the following parts are mandatory):
+:pen: __Fill out__ the Metadata as best as you can (the following parts are mandatory):
 
 - __for studies__:
   - Study Title
@@ -193,6 +174,20 @@ __:pen: The samples must be labelled with the last digits and the box with the p
   - STUDY CONTACTS
 - __for assays__:
   - ASSAY PERFORMERS
+
+
+2. __Protocols__:  
+
+   - "substitute" for Lab-book
+   - here you should write down the used method, but also put in for example plasmid-cards that are specific for this part of the research
+   - most optimal file-format would be .txt, but a Word-file can also be possible
+
+
+3. __Resources__ (only in studies)
+
+4. __Dataset__ (only in assays)
+  
+5. __README.md__: description and notes for the specific study or assay
 
 ***
 
