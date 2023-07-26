@@ -14,7 +14,7 @@ add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-## About this guide 
+## About this guide
 
 This quick start introduces how to cooperate with the [CEPLAS metabolomics & metabolism laboratory (CMML)](https://www.ceplas.eu/en/research/plant-metabolism-and-metabolomics-facility) at Heinrich-Heine-University in Düsseldorf.
 
@@ -22,7 +22,7 @@ Major focus here is on exchange of data between CMML and the user using tools an
 
 ### Contact the CMML
 
-Please check the CMML websites for contact options: 
+Please check the CMML websites for contact options:
 
 - at CEPLAS: https://www.ceplas.eu/en/research/plant-metabolism-and-metabolomics-facility
 - at HHU: https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling
@@ -63,8 +63,6 @@ The CMML creates an ARC for your project at the [DataHUB](https://git.nfdi4plant
 
 <img src="./image/cmml-quickstart/DataHUB-Access-Mail.png" style="width:65%;display: block; margin: 20px auto;">
 
-<!-- 5. __Read and follow__ the next instructions - __📘 User Guide - ARC__ and __📙 User Guide - DataHUB__. -->
-
 ***
 
 ## 📙 User Guide &ndash; DataHUB
@@ -89,11 +87,9 @@ The sidebar is found on the left side of your ARC.
 
 4. Under __'Wiki'__ you can create or edit a 'Page' for meeting-protocols or writing down sharable notes.
 
-
 :bulb: The DataHUB allows to directly operate files and folders without using any other tools similar to what you are used to from your computer's file explorer or finder.
 
 :bulb: For details, please check out the [DataHUB manual](./../../DataHUB-Manual/datahub-files.html).
-
 
 ## 📘 User Guide - ARC
 
@@ -153,23 +149,22 @@ Every part of a research project finds a place to be put in:
   
 :arrow_right: Here you __describe__ your samples, how they have been processed and give them a __CMML-specific label__ that consists of your project-number and a following numbering
 
-:pen: The samples must be __labelled with the last digits and the box with the project-number and sample set.__
+:pen: The samples must be __labelled with a continous number and the box with the project-number and sample set.__
 > Example:
 >
 > - The __first sampleset__ has 20 samples and your project-number is: 23-0065
 > - The final numbering in the samplesheet would be: __23-0065_001__ up to __23-0065_020__
 > - The sample box must be labeled with __23-0065_01__
 > - The sample tubes must then be labelled with __001__ up to __020__
-> - If you provide another sample set, the numbering on the tubes are consecutive for all samples. 
+> - If you provide another sample set, the numbering on the tubes are consecutive for all samples.
 
 - __Metadata__ - the sheet is called 'Study' or 'Assay'
 
 2️⃣ __Protocols__:  
 
-   - "substitute" for Lab-book
-   - here you should write down the used method, but also put in for example plasmid-cards that are specific for this part of the research
-   - most optimal file-format would be .txt, but a Word-file can also be possible
-
+    - "substitute" for Lab-book
+    - here you should write down the used method, but also put in for example plasmid-cards that are specific for this part of the research
+    - most optimal file-format would be .txt, but a Word-file can also be possible
 
 3️⃣ __Resources__ (only in studies)
 
