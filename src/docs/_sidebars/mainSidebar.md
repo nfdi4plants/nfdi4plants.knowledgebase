@@ -128,5 +128,4 @@
 
 # [Frequently Asked Questions](/docs/faqs/faqs.html)
 
-# [CMML Qickstart](/docs/community-docs/CMML/cmml-quickstart.md)
-
+# [CMML Qickstart](/docs/community-docs/CMML/cmml-quickstart.html)
