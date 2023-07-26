@@ -20,7 +20,7 @@ This quick start introduces how to cooperate with the [CEPLAS metabolomics & met
 
 Major focus here is on exchange of data between CMML and the user using tools and services provided by DataPLANT.
 
-### Contact the CMML
+### ☎️ Contact the CMML
 
 Please check the CMML websites for contact options:
 
@@ -31,7 +31,6 @@ Please check the CMML websites for contact options:
 ### 👥 Cooperation &ndash; User regulation
 
 Please note that __all cooperations__ are incumbent upon the [User regulation ("Nutzerordnung")](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung).
-
 
 ## Data Flow between CMML and the user
 
@@ -123,7 +122,7 @@ This workbook records the metadata of the whole project. In the first part it st
 
 <img src="./image/cmml-quickstart/isa-investigation.png" style="width:45%; display: block; margin: 20px auto;">
 
-:pen: __Fill out__ the part __'INVESTIGATION CONTACTS'__ with your personal data (the following are mandatory):
+:pen: __Fill out__ the part __'INVESTIGATION CONTACTS'__ with your personal data. You can download the file and replace the online-version afterwards. The following are mandatory:
 
 - First and Last Name
 - Email
@@ -147,9 +146,10 @@ Every part of a research project finds a place to be put in:
 
 - __Sample sheet__ that holds the name of the study or assay
   
-:arrow_right: Here you __describe__ your samples, how they have been processed and give them a __CMML-specific label__ that consists of your project-number and a following numbering
+:arrow_right: Here you __describe__ your samples, how they have been processed and give them a __CMML-specific label__ that consists of your project-number and a following numbering. You can download the file and replace the online-version afterwards.
 
 :pen: The samples must be __labelled with a continous number and the box with the project-number and sample set.__
+
 > Example:
 >
 > - The __first sampleset__ has 20 samples and your project-number is: 23-0065
