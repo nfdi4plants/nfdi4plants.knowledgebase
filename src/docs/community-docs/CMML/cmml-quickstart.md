@@ -147,7 +147,7 @@ Study and assay folders always consist of the following structures:
 
 Every part of a research project finds a place to be put in:
 
-1. __isa.study.xlsx__ or __isa.assay.xlsx__ consist of two excel sheets:  
+1️⃣ __isa.study.xlsx__ or __isa.assay.xlsx__ consist of two excel sheets:  
 
 - __Sample sheet__ that holds the name of the study or assay
   
@@ -162,32 +162,20 @@ Every part of a research project finds a place to be put in:
 > - The sample tubes must then be labelled with __001__ up to __020__
 > - If you provide another sample set, the numbering on the tubes are consecutive for all samples. 
 
-<!--
--->
 - __Metadata__ - the sheet is called 'Study' or 'Assay'
 
-:pen: __Fill out__ the Metadata as best as you can (the following parts are mandatory):
-
-- __for studies__:
-  - Study Title
-  - Study Description
-  - STUDY CONTACTS
-- __for assays__:
-  - ASSAY PERFORMERS
-
-
-2. __Protocols__:  
+2️⃣ __Protocols__:  
 
    - "substitute" for Lab-book
    - here you should write down the used method, but also put in for example plasmid-cards that are specific for this part of the research
    - most optimal file-format would be .txt, but a Word-file can also be possible
 
 
-3. __Resources__ (only in studies)
+3️⃣ __Resources__ (only in studies)
 
-4. __Dataset__ (only in assays)
+4️⃣ __Dataset__ (only in assays)
   
-5. __README.md__: description and notes for the specific study or assay
+5️⃣ __README.md__: description and notes for the specific study or assay
 
 ***
 
