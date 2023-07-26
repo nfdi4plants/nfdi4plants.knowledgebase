@@ -1,0 +1,104 @@
+{
+    "elabftw": {
+        "extra_fields_groups": [
+            {
+                "id": 1,
+                "name": "INVESTIGATION"
+            },
+            {
+                "id": 2,
+                "name": "INVESTIGATION PUBLICATIONS"
+            },
+            {
+                "id": 3,
+                "name": "INVESTIGATION CONTACTS"
+            }
+        ]
+    },
+    "extra_fields": {
+        "Investigation Title": {
+            "type": "text",
+            "value": "",
+            "group_id": "1",
+            "blank_value_on_duplicate": true
+        },
+        "Investigation Identifier": {
+            "type": "text",
+            "value": "",
+            "group_id": "1",
+            "blank_value_on_duplicate": true
+        },
+        "Investigation Description": {
+            "type": "text",
+            "value": "",
+            "group_id": "1",
+            "blank_value_on_duplicate": true
+        },
+        "Investigation Person Email": {
+            "type": "text",
+            "value": "",
+            "group_id": "3",
+            "blank_value_on_duplicate": true
+        },
+        "Investigation Person Phone": {
+            "type": "text",
+            "value": "",
+            "group_id": "3",
+            "blank_value_on_duplicate": true
+        },
+        "Investigation Publication DOI": {
+            "type": "text",
+            "value": "",
+            "group_id": "2",
+            "blank_value_on_duplicate": true
+        },
+        "Investigation Submission Date": {
+            "type": "text",
+            "value": "",
+            "group_id": "1",
+            "blank_value_on_duplicate": true
+        },
+        "Investigation Person Last Name": {
+            "type": "text",
+            "value": "",
+            "group_id": "3",
+            "blank_value_on_duplicate": true
+        },
+        "Investigation Person First Name": {
+            "type": "text",
+            "value": "",
+            "group_id": "3",
+            "blank_value_on_duplicate": true
+        },
+        "Investigation Publication Title": {
+            "type": "text",
+            "value": "",
+            "group_id": "2",
+            "blank_value_on_duplicate": true
+        },
+        "Investigation Person Affiliation": {
+            "type": "text",
+            "value": "",
+            "group_id": "3",
+            "blank_value_on_duplicate": true
+        },
+        "Investigation Public Release Date": {
+            "type": "text",
+            "value": "",
+            "group_id": "1",
+            "blank_value_on_duplicate": true
+        },
+        "Investigation Publication PubMed ID": {
+            "type": "text",
+            "value": "",
+            "group_id": "2",
+            "blank_value_on_duplicate": true
+        },
+        "Investigation Publication Author List": {
+            "type": "text",
+            "value": "",
+            "group_id": "2",
+            "blank_value_on_duplicate": true
+        }
+    }
+}

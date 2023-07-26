@@ -22,11 +22,11 @@ Here you can find the slides shown during the RPTU Summer School on RDM.
 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 21th, 2023
 <hr>
 -->
-<!--
-## RDM in Practice
+
+## RDM in Practice &ndash; Electronic Lab Notebooks
 
 <embed
-    src="./???"
+    src="./2023-07-20_elabFTW-ARC.pdf"
     type="application/pdf"
     width="400px"
     height="255px"
@@ -34,7 +34,6 @@ Here you can find the slides shown during the RPTU Summer School on RDM.
 
 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/_logos/CreativeCommons/by.svg" style="height:15px"></a> [CEPLAS](https://ceplas.eu) 📆 July 20th, 2023
 <hr>
--->
 
 ## Workflows and Data Processing
 
