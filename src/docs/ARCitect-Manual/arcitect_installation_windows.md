@@ -2,6 +2,10 @@
 layout: docs
 title: ARCitect Installation - Windows
 date: 2023-07-27
+author:
+- name: Dominik Brilhaus
+  orcid: https://orcid.org/0000-0001-9021-3197
+  github: brilator
 add toc: false
 add support: false
 add sidebar: _sidebars/mainSidebar.md
