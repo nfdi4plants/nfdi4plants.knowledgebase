@@ -18,3 +18,12 @@ Please explore the sections on the left to find guides on
 - Functions to fill and work on ISA Metadata within your ARC. -->
 
 > **Developers**, please check out the [ARCitect GitHub repository](https://nfdi4plants.github.io/ARCitect/).
+
+
+<!-- 
+Add to sidebar once to be published
+
+# [ARCitect Manual](/docs/ARCitect-Manual/index.html)
+## [Installation - Windows](/docs/ARCitect-Manual/arcitect_installation_windows.html)
+## [Installation - macOS](/docs/ARCitect-Manual/arcitect_installation_macos.html)
+ -->
