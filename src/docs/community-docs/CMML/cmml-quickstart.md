@@ -164,7 +164,7 @@ Every part of a research project finds a place to be put in:
 
     :pen: Here you should __write down__ the used method, but also put in for example plasmid-cards that are specific for this part of the research.
 
-    :arrow_right: Most optimal __file-format__ would be __.txt__, but a Word-file can also be possible.
+    :arrow_right: Most optimal __file-format__ would be __.txt__, but a Word-file and other formats can also be possible.
 
 3. __Resources__ (only in studies)
 
