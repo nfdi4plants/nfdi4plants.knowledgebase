@@ -20,7 +20,7 @@ This quick start introduces how to cooperate with the [CEPLAS metabolomics & met
 
 Major focus here is on exchange of data between CMML and the user using tools and services provided by DataPLANT.
 
-### ☎️ Contact the CMML
+### Contact the CMML
 
 Please check the CMML websites for contact options:
 
@@ -28,13 +28,13 @@ Please check the CMML websites for contact options:
 - at HHU: https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling
 
 
-### 👥 Cooperation &ndash; User regulation
+### Cooperation &ndash; User regulation
 
 Please note that __all cooperations__ are incumbent upon the [User regulation ("Nutzerordnung")](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung).
 
 ## Data Flow between CMML and the user
 
-### 🌐 ARC - Annotated Research Context
+### ARC - Annotated Research Context
 
 The CMML uses the [Annotated Research Context (ARC)](./../../implementation/AnnotatedResearchContext.html) for data exchange.
 With the ARC we can easily exchange sample sheets, workflows, protocols and share (meta-)data inside a common and shareable folder structure. The ARC is shared via DataPLANT's [DataHUB](./../../implementation/DataHub.html).
@@ -45,7 +45,7 @@ The CMML creates an ARC for your project at the [DataHUB](https://git.nfdi4plant
 
 ***
 
-### 👣 Setup
+### Setup
 
 1. Please [__create a DataHUB account!__](https://register.nfdi4plants.org)
 
@@ -64,9 +64,9 @@ The CMML creates an ARC for your project at the [DataHUB](https://git.nfdi4plant
 
 ***
 
-## 📙 User Guide &ndash; DataHUB
+## User Guide &ndash; DataHUB
 
-### 📖 Introduction to the DataHUB
+### Introduction to the DataHUB
 
 This section gives you a short introduction to some helpful parts of the DataHUB.
 
@@ -90,9 +90,9 @@ The sidebar is found on the left side of your ARC.
 
 :bulb: For details, please check out the [DataHUB manual](./../../DataHUB-Manual/datahub-files.html).
 
-## 📘 User Guide - ARC
+## User Guide - ARC
 
-### 📖 Introduction to ARC
+### Introduction to ARC
 
 The basic ARC folder structure consists of:
 
@@ -116,7 +116,7 @@ The following guide will help you to get started to work with ARC.
 
 ***
 
-### 📖 isa.investigations.xlsx
+### isa.investigations.xlsx
 
 This workbook records the metadata of the whole project. In the first part it stores information about the whole project. It includes an Identifier, Title and Description and also publication data - if published. There is also a part for personal data. Here each column is deticated to a person and it can be filled out manually.
 
@@ -134,7 +134,7 @@ This workbook records the metadata of the whole project. In the first part it st
 
 ***
 
-### 📖 Studies and Assays
+### Studies and Assays
 
 Study and assay folders always consist of the following structures:
 
@@ -174,6 +174,6 @@ Every part of a research project finds a place to be put in:
 
 ***
 
-## 🌱 CMML Support
+## CMML Support 🌱
 
 If any problems occur there is the possibility to check the common [__Knowledgebase__](./../../index.html) from DataPLANT for solutions. Otherwise contact the CMML so the problems can be solved together. You can always come back to this __Qickstart__ with the shared link and we are open for any suggestions to improve it.
