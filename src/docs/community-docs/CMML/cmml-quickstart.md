@@ -142,35 +142,35 @@ Study and assay folders always consist of the following structures:
 
 Every part of a research project finds a place to be put in:
 
-1️⃣ __isa.study.xlsx__ or __isa.assay.xlsx__ consist of two excel sheets:  
+1. __isa.study.xlsx__ or __isa.assay.xlsx__ consist of two excel sheets:  
 
-- __Sample sheet__ that holds the name of the study or assay
+  - __Sample sheet__ that holds the name of the study or assay
   
-:arrow_right: Here you __describe__ your samples, how they have been processed and give them a __CMML-specific label__ that consists of your project-number and a following numbering. You can download the file and replace the online-version afterwards.
+      :arrow_right: Here you __describe__ your samples, how they have been processed and give them a __CMML-specific label__ that consists of your project-number and a following numbering. You can download the file and replace the online-version afterwards.
 
-:pen: The samples must be __labelled with a continous number and the box with the project-number and sample set.__
+      :pen: The samples must be __labelled with a continous number and the box with the project-number and sample set.__
 
-> Example:
+> Example &ndash; The first sampleset has 20 samples and your project-number is 23-0065:
 >
-> - The __first sampleset__ has 20 samples and your project-number is: 23-0065
 > - The final numbering in the samplesheet would be: __23-0065_001__ up to __23-0065_020__
 > - The sample box must be labeled with __23-0065_01__
 > - The sample tubes must then be labelled with __001__ up to __020__
-> - If you provide another sample set, the numbering on the tubes are consecutive for all samples.
+> - If you provide another sample set, the numbering on the tubes and in the samplesheet are consecutive for all samples.
+>
 
 - __Metadata__ - the sheet is called 'Study' or 'Assay'
 
-2️⃣ __Protocols__:  
+2. __Protocols__: xyz 
 
-    - "substitute" for Lab-book
-    - here you should write down the used method, but also put in for example plasmid-cards that are specific for this part of the research
-    - most optimal file-format would be .txt, but a Word-file can also be possible
+    :pen: Here you should __write down__ the used method, but also put in for example plasmid-cards that are specific for this part of the research 
 
-3️⃣ __Resources__ (only in studies)
+    :arrow_right: Most optimal __file-format__ would be __.txt__, but a Word-file can also be possible
 
-4️⃣ __Dataset__ (only in assays)
+3. __Resources__ (only in studies)
+
+4. __Dataset__ (only in assays)
   
-5️⃣ __README.md__: description and notes for the specific study or assay
+5. __README.md__: description and notes for the specific study or assay
 
 ***
 
