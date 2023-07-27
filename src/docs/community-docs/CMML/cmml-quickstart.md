@@ -160,11 +160,11 @@ Every part of a research project finds a place to be put in:
 
 - __Metadata__ - the sheet is called 'Study' or 'Assay'
 
-2. __Protocols__: xyz 
+2. __Protocols__:
 
-    :pen: Here you should __write down__ the used method, but also put in for example plasmid-cards that are specific for this part of the research 
+    :pen: Here you should __write down__ the used method, but also put in for example plasmid-cards that are specific for this part of the research.
 
-    :arrow_right: Most optimal __file-format__ would be __.txt__, but a Word-file can also be possible
+    :arrow_right: Most optimal __file-format__ would be __.txt__, but a Word-file can also be possible.
 
 3. __Resources__ (only in studies)
 
