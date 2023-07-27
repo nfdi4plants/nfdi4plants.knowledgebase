@@ -22,9 +22,14 @@ No. Although it is possible to fill in the workbook manually, we recommend using
 ## Annotated Research Context
 
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
-Should the metadata annotation be made in the same document in which the dataset resides? 
+Where should the metadata annotation be made. In the same documents containing the data? 
 </summary>
-No. The metadata describing the data is annotated in a separate xlsx-file that resides in the parent folder of the data sets.
+
+No. The metadata describing the data is collected in a separate xlsx-file &ndash; called `isa.assay.xlsx` &ndash; that resides in the parent folder of the dataset.
+
+:bulb: For more information, check out our guides on [annotating data in your ARC](./../guides/index-AnnotateDataInYourARC.html). 
+<br>
+<br>
 </details>
 
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
@@ -77,6 +82,7 @@ We would not want to recommend a fixed time interval (once every hour / day / we
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
 How to retrieve a valid access token?
 </summary>
+<br>
 Please follow the short instructions below.  
 
 Alternatively, please visit <a href="https://github.com/nfdi4plants/arcCommander/discussions/157English">#157 in the ARC Commander repository's discussion section</a> for detailed instructions.  
@@ -87,13 +93,20 @@ Note: This also works for "arc get"
 ___TLDR:___  
 
 - Have a GitLab account (here: <a href="https://git.nfdi4plants.org/explore">DataPLANT DataHUB</a>)  
-- Generate a GitLab access token (Preferences -> Access Tokens) (with API and read/write repository)  
+- Generate a personal GitLab access token (Preferences -> Access Tokens) (with API and read/write repository)  
 - Copy token string  
 - Clone a GitLab repo with adjusted address (one for which you have the respective access rights):  
 
 ```BASH
-git clone https://oauth2:TOKENSTRING@git.nfdi4plants.org/abc/xyz
+git clone https://oauth2:TOKENSTRING@git.nfdi4plants.org/abc/xyz  
 ```
+
+<br>
+In case you created a <i>project access token</i> instead of a <i>personal access token</i>, a <a href="https://docs.gitlab.com/ee/user/project/settings/project_access_tokens.html#bot-users-for-projects">GitLab bot</a> will join your project as a member.  
+Please note that this is supportive and not a “negative” bot in case you are not familiar with this. (Thanks to <a href="https://github.com/Zerskk">@Zerskk</a> and <a href="https://github.com/j-bauer">@j-bauer</a> for providing the background knowledge on this.)  
+<br>
+However, for the steps above, you want to create a <b>personal access token</b>.  
+<br>
 </details>
 
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">

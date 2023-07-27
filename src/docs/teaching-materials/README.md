@@ -35,3 +35,22 @@ In `dotnet fornax watch` mode, navigate to http://127.0.0.1:8080/docs/teaching-m
 > - this is not a slide deck
 > - this is just to get a quick overview of available bricks
 > - the file (bricks-gallery.md) can be auto-generated and will likely be overwritten
+
+## VS Code Marp Settings
+
+In order to work with the VS Code marp extension (i.e. preview and export slides to pdf, html, etc.), you might want to add the following to the gitignored VSC settings (`.vscode/settings.json`) of this repo:
+
+```
+{
+  "markdown.marp.themes": [
+    "src/docs/teaching-materials/style/dataplant_marp-theme.css",
+    "src/docs/teaching-materials/style/dataplant_marp-theme-CMR.css",
+    "src/docs/teaching-materials/style/dataplant_marp-theme-Intro.css",
+    "src/docs/teaching-materials/style/marp-theme_dataplant-ceplas-ccby"
+    
+  ],
+  "markdown.marp.enableHtml": true,
+  "markdown.marp.exportType": "html",
+  "markdown.marp.pdf.noteAnnotations": false
+}
+```

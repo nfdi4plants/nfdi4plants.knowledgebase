@@ -53,7 +53,6 @@
 ### [Update](/docs/ArcCommanderManual/arc_update.html)
 ### [Export](/docs/ArcCommanderManual/arc_export.html)
 
-
 # [Swate Manual](/docs/SwateManual/index.html)
 ## [Setup](/docs/SwateManual/Docs01-Installing-Swate.html)
 ### [Installing Swate](/docs/SwateManual/Docs01-Installing-Swate.html)
@@ -76,6 +75,19 @@
 ## [Expert Features](/docs/SwateManual/Docs06-ISA-JSON.html)
 ### [ISA-JSON](/docs/SwateManual/Docs06-ISA-JSON.html)
 
+# [DataHUB Manual](/docs/DataHUB-Manual/index.html)
+## [Overview](/docs/DataHUB-Manual/datahub-overview.html)
+## [User Settings](/docs/DataHUB-Manual/datahub-userSettings.html)
+### [Generate a Personal Access Token (PAT)](/docs/guides/datahub-GeneratePAT.html)
+## [Projects Panel](/docs/DataHUB-Manual/datahub-projectsPanel.html)
+## [ARC Panel](/docs/DataHUB-Manual/datahub-ARCPanel.html)
+### [Working with files](/docs/DataHUB-Manual/datahub-files.html)
+### [ARC Settings](/docs/DataHUB-Manual/datahub-ARCSettings.html)
+### [ARC Wiki](/docs/DataHUB-Manual/datahub-ARCWiki.html)
+## [Groups Panel](/docs/DataHUB-Manual/datahub-groupsPanel.html)
+### [Create a new user group](/docs/DataHUB-Manual/datahub-CreateGroup.html)
+
+
 # [Guides](/docs/guides/index.html)
 ## [ARC User Journey](/docs/guides/ARCUserJourney.html)
 ## [Create your ARC](/docs/guides/index-CreateYourARC.html)
@@ -96,6 +108,7 @@
 ### [Syncing recommendation](/docs/guides/arc_SyncingRecommendation.html)
 ### [Keep files from syncing to the DataHUB](/docs/guides/arc_gitignore.html)
 ### [Working with large data files](/docs/guides/arc_WorkingWithLargeDataFiles.html)
+### [Adding external data to the ARC](/docs/guides/arc_AddingExternalData.html)
 
 ## [Contribute](/docs/guides/index-Contribute.html)
 ### [Swate Templates](/docs/guides/swate_template-contribution.html)
@@ -105,9 +118,11 @@
 ## [Slides](/docs/teaching-materials/slides.html)
 ### [DataPLANT](/docs/teaching-materials/slides/DataPLANT.html)
 ### [Annotated Research Context](/docs/teaching-materials/slides/ARC.html)
-### [Events](/docs/teaching-materials/slides/Events.html)
-#### [CEPLAS Start Your ARC Series](/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html)
 ## [Videos](/docs/teaching-materials/videos.html)
 ### [Start Your ARC Series](/docs/teaching-materials/videos/StartYourARC.html)
+## [Events](/docs/teaching-materials/slides/Events.html)
+### [RPTU Summer School on RDM](/docs/teaching-materials/disseminations/2023-07-17_rptu-summerschool-on-rdm/index.html)
+### [Data Steward Circle](/docs/teaching-materials/disseminations/DataSteward-Circle/index.html)
+### [CEPLAS Start Your ARC Series](/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html)
 
 # [Frequently Asked Questions](/docs/faqs/faqs.html)
