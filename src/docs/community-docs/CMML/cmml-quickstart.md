@@ -58,6 +58,8 @@ The CMML creates an ARC for your project at the [DataHUB](https://git.nfdi4plant
 3. Please __email__ this _@username_ to the CMML.   
 4. The CMML will invite you to a shared ARC for your project.
 5. Once the access to your ARC was granted, you will receive an e-mail.
+
+   :arrow_right: The Name of your ARC is your __project-number__.
 6. Please follow the link in the e-mail (green arrow) and log in with your DataHUB account.
 
 <img src="./image/cmml-quickstart/DataHUB-Access-Mail.png" style="width:65%;display: block; margin: 20px auto;">
@@ -112,7 +114,7 @@ It can also contain project-specific folders like 'images' or 'literature'.
 
 <img src="./image/cmml-quickstart/ARC-Folder-structure.png" style="width:30%; display: block; margin: 20px auto;">
 
-The following guide will help you to get started to work with ARC.
+
 
 ***
 
@@ -150,7 +152,7 @@ Every part of a research project finds a place to be put in:
 
       :pen: The samples must be __labelled with a continous number and the box with the project-number and sample set.__
 
-> Example &ndash; The first sampleset has 20 samples and your project-number is 23-0065:
+> Example &ndash; the first sampleset has 20 samples and your project-number is 23-0065:
 >
 > - The final numbering in the samplesheet would be: __23-0065_001__ up to __23-0065_020__
 > - The sample box must be labeled with __23-0065_01__
