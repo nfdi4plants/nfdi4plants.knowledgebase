@@ -11,6 +11,8 @@ add support: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
+:construction: work in progress :construction:
+
 ## About this guide
 
 In this guide we explore how the ARC can help streamline data flows and project management in enabling platforms.
@@ -52,11 +54,12 @@ Central *enabling platforms* can range from small single-lab services to large i
 
 ### Project communication and data flow
 
-Central platforms interact with many versatile collaboration partners or clients. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings or emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted. 
+Central platforms interact with many versatile collaboration partners or clients. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings and emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted. 
 
 ### Project management
 
 As a platform you manage a lot of projects in parallel. Keeping these projects up-to-date and coordinated between clients and platform team members is challenging.
+
 Here's a few tips to support your project management:
 
 - You can use the [wiki associated to the ARC](./../DataHUB-Manual/datahub-ARCWiki.html) to collect meeting minutes with your clients
@@ -66,7 +69,7 @@ Here's a few tips to support your project management:
 
 ### Streamlined data exchange
  
-During project collaboration a lot of information and metadata is exchanged.  
+During project collaboration a lot of information and metadata is exchanged. 
 Here's an idea what your data flow could look like with the ARC:
 
 <div>
@@ -77,10 +80,10 @@ Here's an idea what your data flow could look like with the ARC:
 1. Data exchange between client and platform occurs through the ARC shared via the DataHUB. Depending on the phase of the project this involves different data and information.  
    (1a) The client primarily describes the investigation's goal and study design, annotates the submitted samples with metadata and adds associated protocols. Once available the client receives assayed data and relevant information.  
    (1b) The platform team receives relevant sample metadata to run the respective assay and complements the ARC with platform-specific assay metadata, protocols and standard operating procedures (SOPs)
-2. A clone of the ARC is stored locally at the platform (see also [data storage](#data-storage))
+2. A clone of the ARC is stored locally at the platform
 3. From the platform workstation, i.e. a computer attached to your assay device, the generated data can directly be written or transferred to the assay dataset folder of your ARC stored in the file share
 
-Here's a few tips to streamline your data exchange:
+A few tips to streamline your data exchange:
 
 - You can [create metadata templates](./../SwateManual/Docs05-Templates.html)
   - to communicate with clients and team members, which metadata is crucial for specific assays
@@ -88,26 +91,24 @@ Here's a few tips to streamline your data exchange:
 
 ### Data storage, handling and transfer
 
-File share: 
-- This can be an institutional file server offered by your organisation or computing center
-- lab internal file share
-- depending on your needs this can also 
+Your platform produces a lot of valuable raw data. Depending on your setup and the type of data you generate, the data is stored on individual machines, hard drives, institutional or internal file shares. For instance, workstations directly associated with measuring devices require quickest data transfer rates or specific security restrictions and write data to proximal data stores rather than a cloud storage. 
 
-You already need to store your project data somewhere
-
-- Depending on the type of offered technology, workstations are some for security 
-- workstations need quickest data rates => write on close file share first, then transer to Hub
-
-- the DataHUB is your geo-redundant backup
-  - and it comes with revert
+The DataHUB can help as a platform to centralize data from different sources and function as a geo-redundant backup with tracked changes. 
 
 ### Track changes and provenance
 
-- many projects, many stakeholders / people involved (team members, clients, etc.)
+Many people are involved in your projects from team members to internal and external collaboration partners (clients). 
+
+Collaborating on ma
+
+- access management across institute boarders, 
+
 - need to be able to retrace, who's done what, when, why
 
 - name your team members / credit
 - track changes
+
+The ARC supports 
 
 - ARC comes with [version control](./../fundamentals/VersionControlGit.html)
   - contribution by commit
@@ -130,7 +131,7 @@ Your platform is specialized on a specific set of methods and assays. You perfor
 
 ### Data publication
 
-At some point you or your client want to publish the project
+At some point you or your client wants to publish the project
 
 There are two options
 1. Publish a snapshot of your ARC repository and get a DOI (coming soon)
