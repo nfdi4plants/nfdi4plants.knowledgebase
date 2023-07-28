@@ -1,0 +1,302 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="972px" height="474px" viewBox="-0.5 -0.5 972 474" content="&lt;mxfile&gt;&lt;diagram id=&quot;ior7EC7l0bAa89xW-muC&quot; name=&quot;Page-1&quot;&gt;7Vttj9o4EP41ke4+UIUEAnxkYWnvVE690mp7n5BxhsTCsTnHIXC//uzEIQlvu233tLoE7UrY4xnH88yMnTwEy51E+/cCbcM594Faju3vLXdqOU6333PVh5YcjGTQ7+WSQBDfyErBgvwDRmgbaUJ8iGuKknMqybYuxJwxwLImQ0LwtK625rR+1S0K4EywwIieS5+IL0Mj9Wy7HPgAJAjNpUfFQIQKZSOIQ+TztCJyHy13IjiXeSvaT4Bq9ApccrvZldHjwgQw+RIDg/sO0cT4ZjkeVaYPPtnp9cmDcdr7O9GLesCccmG5YzUogtUv/ZHlTFS7/PxVKanGCuFNIHjC/M6JidPv57rVhrFacyY7axQResgN5sAoz7XmnCFs2mo9KNoqG7OqCU8EAaFG/oD0dDA3iTjj8RZhqFwpzlJLX6frbPf5ACUMOqGJXjY0NEPecT4vMJ83obpuodbBfgbda/OuCkEssAq6z3FcDKnu6lRdyfKVnIkzl17mZQZkWsGLcREh+tP+W47rrvTf5ZkeHWvUs0YT0xjaZcOxxwJPeBQh5oOYI5ao5TTd5SmS6MPXh05L3F2kSEJLfF2rTRRFakdHNG68s+Zsb4ybQyfTzP5v71mfJ19jEL+rk4zB4V3ktxCDB4jlJ4GwJBjiGRd6UxszxiWShLN2YoIqZ9nyz4TgzUIiIe9gVMBYwn4LLcZkOfZ9woLHvQTBENVl014sFgeGFRifAatMAXV0tnrvWD5xsVFwPBEZfkQiAJ0cM0Ihbicksb5xXKaIbmSoHk+DsJ0wyERyQRBd/sak4H6CdZF84XMkNj5PG18uvdugfAnBHDMfCYNGgXElH0gUtMDHLYXsOUone4PcvZLNgHCodv5OpHY8ndY/9lR1KnVqa3Yk7LU8DYmERU6vTVOBNP0WykghMO0ezaq8pKEqd+q2DfYVkeEp3wOPQIqDUilGPcOZGtb4yAanJQXrFrxqWGFf3YERIkP7Bse5S2ZUNQw5epko7d+J0gYTpcttsqLkTpneKdMGu3unTBvq7J0yzSnT7H6jfSg8Q5q2FJVrtOkdjkvEaXtRuUSdthiNy+RpiwG5Tp+2FJRzArWlQDxHoTYelu8jUZsFx51GvdOo/0sadTB6AY3a+69o1OGZ4+AHsDBdxhnUHYY9kd8q7b9U237XN72p9skuOoeio7bjw7dqp2Klu6VZ1ivsdPLNDKM6nSBKVoIYsXkF2dVqOBE78J8LSKyeSbFx0TOvKOvbB6M1yEXa+ZtBE0BVle3q7x1fCkBmOhYCHSoKW06YjCszf9KCMhc8t54L3frbwqqRz1iG9ri0F0Xbu0qaa1Cv7wAl2+zaZ5SyvUa4blPE6qywa9/b5Ze8XX6xOsg36tTKNo4iHdXsAVNdrGIMQq+RUHqiU0lZXYoEIzo2ZhHxfX2Zi7Wd8f5ZNtmvU97HbyqKkHrn5d0dXSrvV6juwRvH++QWox0RH3pvGPHRG0d8xtVD+751Me/3TjbuC4f4a8Vcdcvfo+SHQPmzHvfxXw==&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <rect x="0" y="102" width="320" height="370" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 318px; height: 1px; padding-top: 109px; margin-left: 2px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <div style="color: rgb(59, 59, 59); background-color: rgb(255, 255, 255); font-family: Menlo, Monaco, &quot;Courier New&quot;, monospace; font-size: 12px; line-height: 18px;">
+                                    <div style="">
+                                        <span style="color: rgb(59, 59, 59);">
+                                            <b>
+                                                src/docs
+                                            </b>
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            ├── ArcCommanderManual
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            ├── DataHUB-Manual
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            ├── SwateManual
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            ├── fundamentals
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            ├── guides
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   ├── ARCUserJourney.md
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   ├── BestPracticesForDataAnnotation.md
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   ├── arcCommander_QuickStart.md
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   ├── arcCommander_QuickStart_expert.md
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   ├── arc_AddingExternalData.md
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   ├── arc_SyncingRecommendation.md
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   ├── arc_WorkingWithLargeDataFiles.md
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   ├── swate_walkthrough.md
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   ├── tutorial_IntroductionToMarkdown.md
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   └── tutorial_TheCommandLine.md
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            ├── img
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            ├── implementation
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            └── teaching-materials
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="2" y="121" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px">
+                    src/docs...
+                </text>
+            </switch>
+        </g>
+        <rect x="630" y="102" width="340" height="370" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 338px; height: 1px; padding-top: 109px; margin-left: 632px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <div style="color: rgb(59, 59, 59); background-color: rgb(255, 255, 255); font-family: Menlo, Monaco, &quot;Courier New&quot;, monospace; font-size: 12px; line-height: 18px;">
+                                    <div style="">
+                                        <span style="color: rgb(59, 59, 59);">
+                                            <b>
+                                                src/_public/docs
+                                            </b>
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            ├── ArcCommanderManual
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            ├── DataHUB-Manual
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            ├── SwateManual
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            ├── fundamentals
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            ├── guides
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   ├── ARCUserJourney.html
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   ├── BestPracticesForDataAnnotation.html
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   ├── arcCommander_QuickStart.html
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   ├── arcCommander_QuickStart_expert.html
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   ├── arc_AddingExternalData.html
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   ├── arc_SyncingRecommendation.html
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   ├── arc_WorkingWithLargeDataFiles.html
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   ├── swate_walkthrough.html
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   ├── tutorial_IntroductionToMarkdown.html
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            │   └── tutorial_TheCommandLine.html
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            ├── img
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            ├── implementation
+                                        </span>
+                                    </div>
+                                    <div style="font-weight: normal;">
+                                        <span style="color: #3b3b3b;">
+                                            └── teaching-materials
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="632" y="121" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px">
+                    src/_public/docs...
+                </text>
+            </switch>
+        </g>
+        <path d="M 255 67 Q 470 12 698.8 65.55" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 703.91 66.75 L 696.3 68.56 L 698.8 65.55 L 697.89 61.74 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="65" y="52" width="190" height="30" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 67px; margin-left: 66px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <font face="Calibri" style="font-size: 30px;">
+                                    md
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="160" y="71" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    md
+                </text>
+            </switch>
+        </g>
+        <rect x="705" y="52" width="190" height="30" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 67px; margin-left: 706px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <font face="Calibri" style="font-size: 30px;">
+                                    html
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="800" y="71" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    html
+                </text>
+            </switch>
+        </g>
+        <rect x="380" y="2" width="190" height="30" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 17px; margin-left: 381px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <font face="Calibri" style="font-size: 30px;">
+                                    Fornax
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="475" y="21" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Fornax
+                </text>
+            </switch>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
+</svg>

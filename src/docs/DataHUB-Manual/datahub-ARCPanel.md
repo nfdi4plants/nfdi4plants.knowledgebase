@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: ARC Panel
-published: 2023-07-07
+date: 2023-07-07
 author:
 - name: Dominik Brilhaus
   orcid: https://orcid.org/0000-0001-9021-3197
