@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Keep files from syncing to the DataHUB
-published: 2023-06-28
+date: 2023-06-28
 author:
 - name: Dominik Brilhaus
   orcid: https://orcid.org/0000-0001-9021-3197
