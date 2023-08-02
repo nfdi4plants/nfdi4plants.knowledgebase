@@ -79,9 +79,9 @@ Here's an idea what your data flow could look like with the ARC:
 
 1. Data exchange between client and platform occurs through the ARC shared via the DataHUB. Depending on the phase of the project this involves different data and information.  
    (1a) The client primarily describes the investigation's goal and study design, annotates the submitted samples with metadata and adds associated protocols. Once available the client receives assayed data and relevant information.  
-   (1b) The platform team receives relevant sample metadata to run the respective assay and complements the ARC with platform-specific assay metadata, protocols and standard operating procedures (SOPs)
-2. A clone of the ARC is stored locally at the platform
-3. From the platform workstation, i.e. a computer attached to your assay device, the generated data can directly be written or transferred to the assay dataset folder of your ARC stored in the file share
+   (1b) The platform team receives relevant sample metadata to run the respective assay and complements the ARC with platform-specific assay metadata, protocols and standard operating procedures (SOPs).
+2. A clone of the ARC is stored locally at the platform.
+3. From the platform data source, e.g. a workstation attached to your assay device, the generated data can directly be written or transferred to the assay dataset folder of your ARC stored in the file storage
 
 A few tips to streamline your data exchange:
 
@@ -91,32 +91,33 @@ A few tips to streamline your data exchange:
 
 ### Data storage, handling and transfer
 
-Your platform produces a lot of valuable raw data. Depending on your setup and the type of data you generate, the data is stored on individual machines, hard drives, institutional or internal file shares. For instance, workstations directly associated with measuring devices require quickest data transfer rates or specific security restrictions and write data to proximal data stores rather than a cloud storage. 
+Your platform produces a lot of valuable raw data. Depending on your setup and the type of data you generate, the data is stored on individual machines, hard drives, institutional or internal file shares. For instance, workstations directly associated with measuring devices require quickest data transfer rates or specific security restrictions and write data to proximal data stores rather than a cloud storage.
 
-The DataHUB can help as a platform to centralize data from different sources and function as a geo-redundant backup with tracked changes. 
+The DataHUB can help as a platform to centralize data from different sources and function as a geo-redundant backup with tracked changes:
+
+- ARCs come with [version control](./../fundamentals/VersionControlGit.html)
+  - contribution by commit
 
 ### Track changes and provenance
 
-Many people are involved in your projects from team members to internal and external collaboration partners (clients). 
+Different people are involved in the projects passing your platform. From team members to internal and external collaboration partners (clients).
+This makes it sometimes hard to keep track of who contributed how, what, when, why and to manage who needs access to which data.
 
-Collaborating on ma
+The ARC supports
 
-- access management across institute boarders, 
-
-- need to be able to retrace, who's done what, when, why
-
-- name your team members / credit
-- track changes
-
-The ARC supports 
-
-- ARC comes with [version control](./../fundamentals/VersionControlGit.html)
-  - contribution by commit
-- [ISA metadata model](./isa_FileTypes.html) allows to associate people with investigations and studies
+- The [DataHUB](./../implementation/DataHub.html) facilitates access management across institute boarders
+- ARCs document [changes and contributions](./../fundamentals/VersionControlGit.html)
+- The [ISA metadata model](./isa_FileTypes.html) allows to associate contributors with investigations and studies. List your team members to ensure proper credit for their contributions.
 
 ### Routine computations
 
-Your platform is specialized on a specific set of methods and assays. You perform routine assays, follow established protocols and SOPs to produce specific types of data.
+Your platform supports researchers with a specific set of methods and assays. You perform routine measurements, follow established protocols and SOPs to generate specific types of samples and data.
+
+- same types of raw data, same types of processing and analysis
+- You want to reuse computations (across projects)
+  - to ensure comprehensibility for your clients
+  - to ensure always the same quality for your data
+- You want to be able to 
 
 - simplify (ARC = always same structure)
 - make reproducible
@@ -128,19 +129,44 @@ Your platform is specialized on a specific set of methods and assays. You perfor
 - link to reproducibility
 - link to CWL
 
-
 ### Data publication
 
 At some point you or your client wants to publish the project
 
 There are two options
-1. Publish a snapshot of your ARC repository and get a DOI (coming soon)
+1. Publish a snapshot of your ARC repository and get a DOI
 2. Publish the dataset at a [domain-specific repository](./../fundamentals/PublicDataRepositories.md), established for your platform's type of assay
   :bulb: We are working on converters to read and reshape the relevant data and metadata of your ARC into a format accepted by the public repositories
 
-:warning: Both these routines are work in progress! 
+:warning: Both these routines are work in progress!
+
+---
+
+## Preparing your platform to benefit from the ARC
+
+In the following, we recommend steps that you **can** take to prepare your platform towards using ARCs.
+They are optional and it depends on your platform, whether these are suitable.
+
+
+1. [Create](./../guides/index-CreateYourARC.html) an example ARC
+   1. Try to structure typical
+2. Share your example ARC in the [DataHUB](https://git.nfdi4plants.org)
+  - An example ARC helps clients understand the ARC concept and structure with your type of data and metadata
+  - Where can they find what information (protocols, datasets, results)
+  - How can they interact with the ARC
+3. [Create a group](./../DataHUB-Manual/datahub-CreateGroup.html) in the DataHUB for your platform
+   - A platform group
+   - If desired, you can easily set up an automated synchronization between your local (file share) and remote (DataHUB) ARCs
+4. Design [metadata templates](./../guides/swate_template-contribution.html) for sample annotation
+  - Let your clients know, what information you need from them
+5. Write a short guide to tell your clients
+6. Start creating your projects as ARCs
+
 
 ## Meet your clients in an ARC
+
+Once you are ready to use ARCs for your
+
 
 ![](ARC-ServicePlatforms-images/servicePlatform-Timeline.drawio.png)
 
@@ -164,30 +190,6 @@ Luckily the DataHUB comes with built-in, intuitive features that
   - sign up with orcid
   - sign up with...
 
-
 ## Benefits for the researcher
 
 - already described investigation (and study) for another facility, would not want to double the work for another assay
-
-
-## Preparing your platform to benefit from the ARC
-
-In the following, we recommend steps that you **can** take to prepare your platform towards using ARCs. 
-Except for step 1, they are all optional and it depends on the platform, whether these are useful. 
-
-1. Start creating your projects as ARCs
-   - You'd be surprised how 
-2. [Create a group](./../DataHUB-Manual/datahub-CreateGroup.html) in the DataHUB for your platform
-   - A platform group 
-   - If desired, you can easily set up an automated synchronization between your local (file share) and remote (DataHUB) ARCs
-3. Design [metadata templates](./../guides/swate_template-contribution.html) for sample annotation
-  - Let your clients know, what information you need from them
-4. Share an example ARC in the [DataHUB](https://git.nfdi4plants.org)
-  - An example ARC helps to show clients the ARC concept and structure
-  - Where can they find what information (protocols, datasets, results)
-  - How can they interact with the ARC
-
-- Write a guide to tell your clients
-
-
-
