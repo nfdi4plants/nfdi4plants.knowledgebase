@@ -189,4 +189,4 @@ Every part of a research project finds a place to be put in:
 
 ## CMML Support 🌱
 
-If any problems occur there is the possibility to check the common [__Knowledgebase__](./../../index.html) from DataPLANT for solutions. Otherwise contact the CMML so the problems can be solved together. You can always come back to this __Qickstart__ with the shared link and we are open for any suggestions to improve it.
+If any problems occur please also check the common [DataPLANT Knowledgebase](./../../index.html) for solutions. Otherwise contact the CMML so the problems can be solved together. You can always come back to this __Quickstart__ with the shared link and we are open for any suggestions to improve it.
