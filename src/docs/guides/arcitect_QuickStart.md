@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: ARCitect QuickStart
-date: 2023-07-28
+date: 2023-08-01
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -25,6 +25,8 @@ In this guide we focus on how to use the [ARCitect](./../ARCitect-Manual/index.h
 <br>
 
 ## Before we can start
+
+Please make sure
 
 :ballot_box_with_check: The latest version of the [ARCitect](./../ARCitect-Manual/index.html) is installed on your computer  
 :ballot_box_with_check: You have a [DataPLANT](https://register.nfdi4plants.org) account
