@@ -151,6 +151,8 @@ Every part of a research project finds a place to be put in:
       :arrow_right: Here you __describe__ your samples, how they have been processed and give them a __CMML-specific label__ that consists of your project-number and a following numbering. You can download the file and replace the online-version afterwards.
 
       :pen: The samples must be __labelled with a continous number and the box with the project-number and sample set.__
+      
+      :arrow_right: Also give us the information about __storage of the samples__ or if they can be __destroyed afterwards__!
 
 > Example &ndash; the first sampleset has 20 samples and your project-number is 23-0065:
 >
@@ -160,7 +162,7 @@ Every part of a research project finds a place to be put in:
 > - If you provide another sample set, the numbering on the tubes and in the samplesheet are consecutive for all samples.
 >
 
-  :arrow_right: Also give us the information about __storage of the samples__ or if they can be __destroyed afterwards__!
+  
 
 - __Metadata__ - the sheet is called 'Study' or 'Assay'
 
