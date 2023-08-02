@@ -145,7 +145,7 @@ Every part of a research project finds a place to be put in:
 
   - __Sample sheet__ that holds the name of the study or assay
   
-      :arrow_right: Here you __describe__ your samples, how they have been processed and give them a __CMML-specific label__ that consists of your project-number and a following numbering. You can download the file and replace the online-version afterwards.
+      :arrow_right: Here you __describe__ your samples, how they have been processed and give them a __CMML-specific identifier__ that consists of your project-number and a following numbering. You can download the file and replace the online-version afterwards.
 
       :pen: The samples must be __labelled with a continous number and the box with the project-number and sample set.__
       
@@ -183,7 +183,8 @@ Every part of a research project finds a place to be put in:
 - Access to your ARC.
 - Fill out in the isa.investigations.xlsx the part __'INVESTIGATION CONTACTS'__ with the mandatory information.
 - Fill out in the isa.study/assay.xlsx the __Sample sheet__.
-- Give us the information about __storage of the samples__ or if they can be __destroyed afterwards__!
+- Give us the information about __storage of the samples__ or if they can be __destroyed afterwards__.
+- Labelling the samples with CMML-specific identifier
 
 ## CMML Support 🌱
 
