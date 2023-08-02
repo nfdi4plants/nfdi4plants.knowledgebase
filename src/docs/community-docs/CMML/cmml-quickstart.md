@@ -47,7 +47,7 @@ The CMML creates an ARC for your project at the [DataHUB](https://git.nfdi4plant
 
 ### Setup
 
-1. Please [__create a DataHUB account!__](https://register.nfdi4plants.org)
+1. Please __create__  a [DataHUB account!](https://register.nfdi4plants.org)
 
     :bulb: You can also log in with your scientific account ORCID or Life Sciences!
 
@@ -68,13 +68,11 @@ The CMML creates an ARC for your project at the [DataHUB](https://git.nfdi4plant
 
 ## User Guide &ndash; DataHUB
 
-### Introduction to the DataHUB
-
-This section gives you a short introduction to some helpful parts of the DataHUB.
+This section gives you a short introduction to some helpful features of the DataHUB.
 
 :bulb: Please check out the [DataHUB manual](./../../DataHUB-Manual/index.html) for more details.
 
-The sidebar is found on the left side of your ARC.
+You can find the sidebar on the left side of your ARC.
 
 <img src="./image/cmml-quickstart/ARC_Menu.png" style="width:25%; display: block; margin: 20px auto;">
 
@@ -86,7 +84,7 @@ The sidebar is found on the left side of your ARC.
 
 3. The section __'Issues'__ should help to collaborate on ideas, solve problems, and plan work.
 
-4. Under __'Wiki'__ you can create or edit a 'Page' for meeting-protocols or writing down sharable notes.
+4. Under __'Wiki'__ you can find 'Page'. Here we can create or edit a 'Page' to summarize meeting minutes or write down sharable notes.
 
 :bulb: The DataHUB allows to directly operate files and folders without using any other tools similar to what you are used to from your computer's file explorer or finder.
 
@@ -94,7 +92,7 @@ The sidebar is found on the left side of your ARC.
 
 ## User Guide - ARC
 
-### Introduction to ARC
+### Introduction to the ARC
 
 The basic ARC folder structure consists of:
 
