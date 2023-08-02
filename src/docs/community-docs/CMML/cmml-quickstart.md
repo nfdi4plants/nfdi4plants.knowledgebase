@@ -115,7 +115,6 @@ It can also contain project-specific folders like 'images' or 'literature'.
 <img src="./image/cmml-quickstart/ARC-Folder-structure.png" style="width:30%; display: block; margin: 20px auto;">
 
 
-
 ***
 
 ### isa.investigations.xlsx
@@ -154,15 +153,12 @@ Every part of a research project finds a place to be put in:
       
       :arrow_right: Also give us the information about __storage of the samples__ or if they can be __destroyed afterwards__!
 
-> Example &ndash; the first sampleset has 20 samples and your project-number is 23-0065:
+> Example &ndash; the first sample set has 20 samples and your project-number is 23-0065:
 >
-> - The final numbering in the samplesheet would be: __23-0065_001__ up to __23-0065_020__
+> - The final numbering in the sample sheet would be: __23-0065_001__ up to __23-0065_020__
 > - The sample box must be labeled with __23-0065_01__
 > - The sample tubes must then be labelled with __001__ up to __020__
-> - If you provide another sample set, the numbering on the tubes and in the samplesheet are consecutive for all samples.
->
-
-  
+> - If you provide another sample set, the numbering on the tubes and in the sample sheet are consecutive for all samples.
 
 - __Metadata__ - the sheet is called 'Study' or 'Assay'
 
@@ -179,20 +175,17 @@ Every part of a research project finds a place to be put in:
 5. __README.md__: description and notes for the specific study or assay
 
 ***
-<!--
 
-## Checklist 
+## Checklist
 
-:bulb: Before the samples can be accepted and processed all points of the following checklist must be fullfilled:
+:bulb: Before the samples can be accepted and processed all points of the following checklist must be fulfilled:
 
--  Read the [User regulation ("Nutzerordnung")](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung)
--  [DataHUB account](https://register.nfdi4plants.org)
+- Read the [User regulation ("Nutzerordnung")](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung)
+- [DataHUB account](https://register.nfdi4plants.org)
 - Access to your ARC.
-- Fill out in the isa.investigations.xlsx the part __'INVESTIGATION CONTACTS'__ with the mandatory informations.
+- Fill out in the isa.investigations.xlsx the part __'INVESTIGATION CONTACTS'__ with the mandatory information.
 - Fill out in the isa.study/assay.xlsx the __Sample sheet__.
 - Give us the information about __storage of the samples__ or if they can be __destroyed afterwards__!
-
--->
 
 ## CMML Support 🌱
 
