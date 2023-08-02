@@ -13,12 +13,14 @@ add toc: true
 add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
-
+<!--
+http://127.0.0.1:8080/docs/community-docs/CMML/cmml-quickstart.html
+-->
 ## About this guide
 
 This quick start introduces how to cooperate with the [CEPLAS metabolomics & metabolism laboratory (CMML)](https://www.ceplas.eu/en/research/plant-metabolism-and-metabolomics-facility) at Heinrich-Heine-University in Düsseldorf.
 
-Major focus here is on exchange of data between CMML and the user using tools and services provided by DataPLANT.
+The primary focus is on the exchange of data between CMML and the user by applying tools and services provided by DataPLANT.
 
 ### Contact the CMML
 
@@ -70,7 +72,7 @@ The CMML creates an ARC for your project at the [DataHUB](https://git.nfdi4plant
 
 This section gives you a short introduction to some helpful features of the DataHUB.
 
-:bulb: Please check out the [DataHUB manual](./../../DataHUB-Manual/index.html) for more details.
+:bulb: The DataHUB allows to directly operate files and folders without using any other tools similar to what you are used to from your computer's file explorer or finder.
 
 You can find the sidebar on the left side of your ARC.
 
@@ -85,8 +87,6 @@ You can find the sidebar on the left side of your ARC.
 3. The section 'Issues' helps to collaborate on ideas, solve problems, and plan work.
 
 4. Under 'Wiki' you can find 'Page'. Here we can create or edit a 'Page' to summarize meeting minutes or write down sharable notes.
-
-:bulb: The DataHUB allows to directly operate files and folders without using any other tools similar to what you are used to from your computer's file explorer or finder.
 
 :bulb: For details, please check out the [DataHUB manual](./../../DataHUB-Manual/datahub-files.html).
 
@@ -121,7 +121,7 @@ This workbook records the metadata of the whole project. In the first part it st
 
 <img src="./image/cmml-quickstart/isa-investigation.png" style="width:45%; display: block; margin: 20px auto;">
 
-:pen: __Fill out__ the part __'INVESTIGATION CONTACTS'__ with your personal data. You can download the file and replace the online-version afterwards. The following information are mandatory:
+:pen: __Fill out__ the part __INVESTIGATION CONTACTS__ with your personal data. You can download the file and replace the online-version afterwards. The following information are mandatory:
 
 - First and Last Name
 - Email
@@ -129,7 +129,9 @@ This workbook records the metadata of the whole project. In the first part it st
 - Address
 - Affiliation
 
-:bulb: For the other parts below the __'INVESTIGATION CONTACTS'__ sections it is recommended to use [ARC Commander](./../../implementation/ArcCommander.html) for adding the metadata. This is less error-prone than filling it out manually.
+<!--
+:bulb: For the other parts below the __INVESTIGATION CONTACTS__ sections it is recommended to use [ARC Commander](./../../implementation/ArcCommander.html) for adding the metadata. This is less error-prone than filling it out manually.
+-->
 
 ***
 
