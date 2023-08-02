@@ -76,21 +76,21 @@ You can find the sidebar on the left side of your ARC.
 
 <img src="./image/cmml-quickstart/ARC_Menu.png" style="width:25%; display: block; margin: 20px auto;">
 
-1. If you click on the __name of the ARC__ you can always return to the front page.
+1. If you click on the name of the ARC you can always return to the front page.
 
-   :arrow_right: At the front page there is also the possibility to search for specific files with __'Find Files'__.
+   :arrow_right: At the front page there is also the possibility to search for specific files with 'Find Files'.
 
-2. Under __'Project information'__ in the section __'Members'__ you can see all members involved in the ARC and there is also the possibility to add other members.
+2. Under 'Project information' in the section 'Members' you can see all members involved in the ARC and there is also the possibility to add other members.
 
-3. The section __'Issues'__ should help to collaborate on ideas, solve problems, and plan work.
+3. The section 'Issues' helps to collaborate on ideas, solve problems, and plan work.
 
-4. Under __'Wiki'__ you can find 'Page'. Here we can create or edit a 'Page' to summarize meeting minutes or write down sharable notes.
+4. Under 'Wiki' you can find 'Page'. Here we can create or edit a 'Page' to summarize meeting minutes or write down sharable notes.
 
 :bulb: The DataHUB allows to directly operate files and folders without using any other tools similar to what you are used to from your computer's file explorer or finder.
 
 :bulb: For details, please check out the [DataHUB manual](./../../DataHUB-Manual/datahub-files.html).
 
-## User Guide - ARC
+## User Guide - the ARC
 
 ### Introduction to the ARC
 
@@ -121,7 +121,7 @@ This workbook records the metadata of the whole project. In the first part it st
 
 <img src="./image/cmml-quickstart/isa-investigation.png" style="width:45%; display: block; margin: 20px auto;">
 
-:pen: __Fill out__ the part __'INVESTIGATION CONTACTS'__ with your personal data. You can download the file and replace the online-version afterwards. The following are mandatory:
+:pen: __Fill out__ the part __'INVESTIGATION CONTACTS'__ with your personal data. You can download the file and replace the online-version afterwards. The following information are mandatory:
 
 - First and Last Name
 - Email
@@ -149,7 +149,7 @@ Every part of a research project finds a place to be put in:
 
       :pen: The samples must be __labelled with a continous number and the box with the project-number and sample set.__
       
-      :arrow_right: Also give us the information about __storage of the samples__ or if they can be __destroyed afterwards__!
+      :arrow_right: Also give us the information about __storage of the samples__ or if they can be __destroyed afterwards__.
 
 > Example &ndash; the first sample set has 20 samples and your project-number is 23-0065:
 >
