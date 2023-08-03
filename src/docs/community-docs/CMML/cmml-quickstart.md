@@ -184,7 +184,7 @@ Every part of a research project finds a place to be put in:
 1. Access to your ARC.
 1. __isa.investigations.xlsx__: Fill out the part INVESTIGATION CONTACTS with the mandatory information.
 1. __isa.study/assay.xlsx__: Fill out the Sample sheet.
-1. Labelling the samples with CMML-specific identifier.
+1. Labelling of the samples with CMML-specific identifier.
 1. Also let us know whether the samples should be stored after processing, picked up or whether they can be destroyed.
 
 ## CMML Support 🌱
