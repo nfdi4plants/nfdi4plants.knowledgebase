@@ -129,3 +129,6 @@
 ### [CEPLAS Start Your ARC Series](/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html)
 
 # [Frequently Asked Questions](/docs/faqs/faqs.html)
+
+<!-- # [Community Docs](/docs/community-docs/index.html) -->
+<!-- ## [CMML Quickstart](/docs/community-docs/CMML/cmml-quickstart.html) -->
