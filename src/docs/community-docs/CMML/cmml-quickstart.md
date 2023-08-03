@@ -60,7 +60,8 @@ The CMML creates an ARC for your project at the [DataHUB](https://git.nfdi4plant
 4. The CMML will invite you to a shared ARC for your project.
 5. Once the access to your ARC was granted, you will receive an e-mail.
 
-   :arrow_right: The Name of your ARC is your __project-number__.
+   :arrow_right: The name of your ARC is your __project-number__ followed by your last name.
+
 6. Please follow the link in the e-mail (green arrow) and log in with your DataHUB account.
 
 <img src="./image/cmml-quickstart/DataHUB-Access-Mail.png" style="width:65%;display: block; margin: 20px auto;">
@@ -79,7 +80,7 @@ On the website you can find the sidebar on the left side of your ARC.
 
 1. If you click on the name of the ARC you can always return to the front page.
 
-   :arrow_right: At the front page there is also the possibility to search for specific files with 'Find Files'.
+   :bulb: At the front page there is also the possibility to search for specific files with 'Find Files'.
 
 2. Under 'Project information' in the section 'Members' you can see all members involved in the ARC and there is also the possibility to add other members.
 
@@ -109,7 +110,7 @@ Those folders contain specific parts of a research project.
 
 It is also possible to add additional folder structures like "_literature" to the ARC so it can be adapted for the project.
 
-<img src="./image/cmml-quickstart/1691045293651.png" style="width:30%; display: block; margin: 20px auto;">
+<img src="./image/cmml-quickstart/ARC_folders.png" style="width:30%; display: block; margin: 20px auto;">
 
 ***
 
