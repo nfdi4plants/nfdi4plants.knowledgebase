@@ -162,7 +162,7 @@ Every part of a research project finds a place to be put in:
 
 2. __Protocols__:
 
-    :pen: Here you should __write down__ the used method, but also put in for example plasmid-cards that are specific for this part of the research.
+    :pen: Here you should __write down__ the used method, but also put in for example plasmid-cards or images that are specific for this part of the research.
 
     :arrow_right: Most optimal __file-format__ would be __.txt__ or __.md__, but a Word-file and other formats can also be possible.
 
