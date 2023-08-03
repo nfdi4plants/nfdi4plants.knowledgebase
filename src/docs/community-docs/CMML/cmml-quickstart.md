@@ -143,13 +143,13 @@ Every part of a research project finds a place to be put in:
 
 1. __isa.study.xlsx__ or __isa.assay.xlsx__ consist of two excel sheets:  
 
-  - __Sample sheet__ that holds the name of the study or assay
+- __Sample sheet__ that holds the name of the study or assay
   
-      :arrow_right: Here you __describe__ your samples, how they have been processed and give them a __CMML-specific identifier__ that consists of your project-number and a following numbering. You can download the file and replace the online-version afterwards.
+    :arrow_right: Here you __describe__ your samples, how they have been processed and give them a __CMML-specific identifier__ that consists of your project-number and a following numbering. You can download the file and replace the online-version afterwards.
 
-      :pen: The samples must be __labelled with a continous number and the box with the project-number and sample set.__
-      
-      :arrow_right: Also let us know whether the samples should be stored after processing, picked up or whether they can be destroyed.
+    :pen: The samples must be __labelled with a continous number and the box with the project-number and sample set.__
+
+    :arrow_right: Also let us know whether the samples should be stored after processing, picked up or whether they can be destroyed.
 
 > Example &ndash; the first sample set has 20 samples and your project-number is 23-0065:
 >
@@ -185,7 +185,6 @@ Every part of a research project finds a place to be put in:
 1. Fill out in the isa.study/assay.xlsx the sample sheet.
 1. Labelling the samples with CMML-specific identifier
 1. Also let us know whether the samples should be stored after processing, picked up or whether they can be destroyed.
-
 
 ## CMML Support 🌱
 
