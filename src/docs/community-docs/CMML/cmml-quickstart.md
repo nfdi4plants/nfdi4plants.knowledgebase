@@ -107,7 +107,7 @@ Those folders contain specific parts of a research project.
 > - studies: Cultivation and sampling of plants or cells 
 > - assays: Metabolite extraction and derivatization or measurements of the samples
 
-It can also contain additional folders like '_literature'.
+It can also contain additional folders like "_literature".
 
 <img src="./image/cmml-quickstart/1691045293651.png" style="width:30%; display: block; margin: 20px auto;">
 
