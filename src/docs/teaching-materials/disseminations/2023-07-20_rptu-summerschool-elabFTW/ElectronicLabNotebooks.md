@@ -1,26 +1,22 @@
 ---
 layout: docs
 title: Electronic Lab Notebooks (ELNs)
-author: Dominik Brilhaus
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
+author:
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
-date: 2023-02-10
-article_status: draft
+date: 2023-08-01
+status: draft
 ---
+
+:construction: work in progress :construction:
 
 - [Protocols - Recipes to Knowledge](#protocols---recipes-to-knowledge)
 - [ELN - Digital Protocol Editors](#eln---digital-protocol-editors)
 - [ARCs - Packaging ELN protocols with the data](#arcs---packaging-eln-protocols-with-the-data)
 - [Actions to make the best of using ELNs with ARCs](#actions-to-make-the-best-of-using-elns-with-arcs)
-  - [Structure your ELN: un-mix and disentangle](#structure-your-eln-un-mix-and-disentangle)
-  - [Review protocol habits](#review-protocol-habits)
-    - [cut protocols into pieces](#cut-protocols-into-pieces)
-  - [Identify your projects and resources](#identify-your-projects-and-resources)
-  - [Align annotations](#align-annotations)
-  - [ISA](#isa)
-  - [Export protocols to ARC](#export-protocols-to-arc)
 - [Outlook](#outlook)
 
 ## Protocols - Recipes to Knowledge
@@ -175,11 +171,13 @@ Study Protocol Name
    1. Things are often "work in progress"
    2. ARC allows to "end-of-day-dump" your protocols into a subdir
 
+
 ## Outlook
 
 - (local) ELN-ARC interface
   - read-write protocols
   - read-write isa.*.xlsx / isa.json
+- create json templates in elabFTW
 - automated ARC-ELN synchronization
 - using isa templates in an ELN
 - integrate ontology API into ELN
@@ -202,7 +200,7 @@ Notes
   - some routine, some continuously evolving
   - some protocols form the base to very central experiments and assays
   - Protocols are an integral part of publications (*materials and methods* section). Methods are shared with peers 
-1. classical pen-and-paper lab note book
+5. classical pen-and-paper lab note book
    1. metadata knowledge stuck in a single copy
    2. hard to access (hidden in a shelf)
    3. hard to maintain (over generations of researchers)
