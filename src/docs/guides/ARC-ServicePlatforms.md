@@ -13,13 +13,15 @@ add sidebar: _sidebars/mainSidebar.md
 
 :construction: work in progress :construction:
 
+<!-- http://127.0.0.1:8080/docs/guides/ARC-ServicePlatforms.html -->
+
 ## About this guide
 
 In this guide we explore how the ARC can help streamline data flows and project management in enabling platforms.
 
 <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>    
+    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
 </a>
 
 <br>
@@ -43,7 +45,7 @@ It helps to be familiar with
 
 ## Enabling Platforms
 
-Central *enabling platforms* can range from small single-lab services to large instrumentation-based research infrastructures such as core facilities. Platforms offer a specific set of methods and assays as a routine support to a community of researchers. Typical examples with application in plant sciences include platforms offering "omics" technologies (genome, transcriptome, proteome, metabolome), phenotyping, (microscopic) imaging, genetic engineering or plant growth facilities. 
+Central *enabling platforms* can range from small single-lab services to large instrumentation-based research infrastructures such as core facilities. Platforms offer a specific set of methods and assays as a routine support to a community of researchers. Typical examples with application in plant sciences include platforms offering "omics" technologies (genome, transcriptome, proteome, metabolome), phenotyping, (microscopic) imaging, genetic engineering or plant growth facilities.
 
 *For simplicity, in this guide we call researchers approaching the platforms "clients".*
 
@@ -54,7 +56,7 @@ Central *enabling platforms* can range from small single-lab services to large i
 
 ### Project communication and data flow
 
-Central platforms interact with many versatile collaboration partners or clients. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings and emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted. 
+Central platforms interact with many versatile collaboration partners or clients. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings and emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted.
 
 ### Project management
 
@@ -68,8 +70,8 @@ Here's a few tips to support your project management:
 - You can also keep naming your ARCs with the same way you are used to name your project folders
 
 ### Streamlined data exchange
- 
-During project collaboration a lot of information and metadata is exchanged. 
+
+During project collaboration a lot of information and metadata is exchanged.
 Here's an idea what your data flow could look like with the ARC:
 
 <div>
@@ -105,91 +107,93 @@ This makes it sometimes hard to keep track of who contributed how, what, when, w
 
 The ARC supports
 
-- The [DataHUB](./../implementation/DataHub.html) facilitates access management across institute boarders
+- The [DataHUB](./../implementation/DataHub.html) facilitates access management across institute boarders.
 - ARCs document [changes and contributions](./../fundamentals/VersionControlGit.html)
 - The [ISA metadata model](./isa_FileTypes.html) allows to associate contributors with investigations and studies. List your team members to ensure proper credit for their contributions.
 
 ### Routine computations
 
-Your platform supports researchers with a specific set of methods and assays. You perform routine measurements, follow established protocols and SOPs to generate specific types of samples and data.
+Your platform supports researchers with a specific set of methods and assays. You perform routine measurements, follow established protocols and SOPs to generate specific types of samples and data. Aligned with your lab workflows, you also follow computational routines: For the same types of (raw) data you re-use computational steps for processing and analysis.
+Reusing computational workflows across projects helps comprehensibility for your clients and ensures reproducibility and quality for your data.
 
-- same types of raw data, same types of processing and analysis
-- You want to reuse computations (across projects)
-  - to ensure comprehensibility for your clients
-  - to ensure always the same quality for your data
-- You want to be able to 
+The standardized ARC structure helps with routine computations:
 
-- simplify (ARC = always same structure)
+- The simple structure itself
+  - Clients
+  - automate
 - make reproducible
 - quality control and validate
   - within one ARC
   - across ARCs covering routine measurements
-- automate
 
 - link to reproducibility
 - link to CWL
 
 ### Data publication
 
-At some point you or your client wants to publish the project
+At some point you or your client wants to publish the data resulting from the project
 
 There are two options
+
 1. Publish a snapshot of your ARC repository and get a DOI
-2. Publish the dataset at a [domain-specific repository](./../fundamentals/PublicDataRepositories.md), established for your platform's type of assay
+2. Publish the dataset at a [domain-specific repository](./../fundamentals/PublicDataRepositories.html), established for your platform's type of assay
   :bulb: We are working on converters to read and reshape the relevant data and metadata of your ARC into a format accepted by the public repositories
 
-:warning: Both these routines are work in progress!
+:construction: Both these routines are work in progress!
 
 ---
 
 ## Preparing your platform to benefit from the ARC
 
-In the following, we recommend steps that you **can** take to prepare your platform towards using ARCs.
+Here we recommend steps that you *can* take to prepare your platform towards using ARCs.
 They are optional and it depends on your platform, whether these are suitable.
 
-
 1. [Create](./../guides/index-CreateYourARC.html) an example ARC
-   1. Try to structure typical
+   - Try to structure a typical experiment run in your platform as an ARC
+   - Consider what information is required to reproduce the experiment from *source-to-data*
+     - What information is provided by the client or by the platform?
+     - Which protocols (materials and methods) are required?
+     - At what step and how does the client "hand over" or submit?
 2. Share your example ARC in the [DataHUB](https://git.nfdi4plants.org)
-  - An example ARC helps clients understand the ARC concept and structure with your type of data and metadata
-  - Where can they find what information (protocols, datasets, results)
-  - How can they interact with the ARC
+   - An example ARC helps clients understand the ARC concept and structure with your type of data and metadata
+   - Where can they find what information (protocols, datasets, results)
+   - How can they interact with the ARC
 3. [Create a group](./../DataHUB-Manual/datahub-CreateGroup.html) in the DataHUB for your platform
-   - A platform group
+   - A group can help you organize all running projects in one place
+   - You can easily manage access for multiple ARCs
    - If desired, you can easily set up an automated synchronization between your local (file share) and remote (DataHUB) ARCs
 4. Design [metadata templates](./../guides/swate_template-contribution.html) for sample annotation
-  - Let your clients know, what information you need from them
-5. Write a short guide to tell your clients
-6. Start creating your projects as ARCs
-
+   - Let your clients know, what information you need from them
+5. Write a short guide for your clients
+   - How can they 
+6. Start packaging your projects as ARCs
 
 ## Meet your clients in an ARC
 
 Once you are ready to use ARCs for your
-
 
 ![](ARC-ServicePlatforms-images/servicePlatform-Timeline.drawio.png)
 
 - you decide wether you meet the researchers half the way, let them initiate the ARC or
 
 who initiates the ARC
-  - researcher
 
-A major difference 
+- researcher
+
+A major difference
 
 Fork the client's project, rename it to your need, put everything irrelevant to .gitignore
 
-
-## What about non-ARC clients
+### What about non-ARC clients
 
 Not all of your clients are used to work with ARCs and associated tools or are planning to learn it. Still, running a service platform, you want to interact with those clients mostly in the same routines employed with everyone else.
 
-Luckily the DataHUB comes with built-in, intuitive features that 
+Luckily the DataHUB comes with built-in, intuitive features that
 
 - clients only need access
   - sign up with orcid
   - sign up with...
 
-## Benefits for the researcher
+### Benefits for the researcher
 
 - already described investigation (and study) for another facility, would not want to double the work for another assay
