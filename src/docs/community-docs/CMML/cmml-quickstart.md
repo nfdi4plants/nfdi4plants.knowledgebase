@@ -35,7 +35,7 @@ Please note that __all cooperations__ are incumbent upon the [User regulation ("
 
 ## Data Flow between CMML and the user
 
-### ARC - Annotated Research Context
+### ARC &ndash; Annotated Research Context
 
 The CMML uses the [Annotated Research Context (ARC)](./../../implementation/AnnotatedResearchContext.html) for data exchange.
 With the ARC we can easily exchange sample sheets, workflows, protocols and share (meta-)data inside a common and shareable folder structure. The ARC is shared via DataPLANT's [DataHUB](./../../implementation/DataHub.html).
@@ -174,15 +174,15 @@ Every part of a research project finds a place to be put in:
 
 ***
 
-## Checklist
+## Checklist for Cooperations with CMML
 
 :bulb: Our department is only able to accept and process the samples if the following checklist is fulfilled:
 
 1. Read the [User regulation ("Nutzerordnung")](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung).
 1. Setup a [DataHUB account](https://register.nfdi4plants.org)
 1. Access to your ARC.
-1. Fill out in the isa.investigations.xlsx the part INVESTIGATION CONTACTS with the mandatory information.
-1. Fill out in the isa.study/assay.xlsx the sample sheet.
+1. __isa.investigations.xlsx__: Fill out the part INVESTIGATION CONTACTS with the mandatory information.
+1. __isa.study/assay.xlsx__: Fill out the sample sheet.
 1. Labelling the samples with CMML-specific identifier
 1. Also let us know whether the samples should be stored after processing, picked up or whether they can be destroyed.
 
