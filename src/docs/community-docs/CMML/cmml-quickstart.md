@@ -143,7 +143,7 @@ Every part of a research project finds a place to be put in:
 
 1. __isa.study.xlsx__ or __isa.assay.xlsx__ consist of two excel sheets:  
 
-- __Sample sheet__ that holds the name of the study or assay
+- __Sample sheet__ that holds the name of the study or assay.
   
     :arrow_right: Here you __describe__ your samples, how they have been processed and give them a __CMML-specific identifier__ that consists of your project-number and a following numbering. You can download the file and replace the online-version afterwards.
 
@@ -158,7 +158,7 @@ Every part of a research project finds a place to be put in:
 > - The sample tubes must then be labelled with __001__ up to __020__
 > - If you provide another sample set, the numbering on the tubes and in the sample sheet are consecutive for all samples.
 
-- __Metadata__ - the sheet is called 'Study' or 'Assay'
+- __Metadata__ - the sheet is called 'Study' or 'Assay'.
 
 2. __Protocols__:
 
@@ -179,11 +179,11 @@ Every part of a research project finds a place to be put in:
 :bulb: Our department is only able to accept and process the samples if the following checklist is fulfilled:
 
 1. Read the [User regulation ("Nutzerordnung")](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung).
-1. Setup a [DataHUB account](https://register.nfdi4plants.org)
+1. Setup a [DataHUB account](https://register.nfdi4plants.org).
 1. Access to your ARC.
 1. __isa.investigations.xlsx__: Fill out the part INVESTIGATION CONTACTS with the mandatory information.
-1. __isa.study/assay.xlsx__: Fill out the sample sheet.
-1. Labelling the samples with CMML-specific identifier
+1. __isa.study/assay.xlsx__: Fill out the Sample sheet.
+1. Labelling the samples with CMML-specific identifier.
 1. Also let us know whether the samples should be stored after processing, picked up or whether they can be destroyed.
 
 ## CMML Support 🌱
