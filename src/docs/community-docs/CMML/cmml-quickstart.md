@@ -170,7 +170,7 @@ Every part of a research project finds a place to be put in:
 
 4. __Dataset__ (only in assays)
   
-5. __README.md__: This file can be used to describe different "studies" and "assays" and take notes for the specific section of the experiment. The document is then visible on the website in the lower area when opening the respective structure.
+5. __README.md__: This file can be used to describe different "studies" and "assays" and take notes for this specific section of the experiment. The document is then visible on the website in the lower area when opening the respective structure.
 
 ***
 
