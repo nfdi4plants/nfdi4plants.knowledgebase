@@ -29,7 +29,6 @@ Please check the CMML websites for contact options:
 - at CEPLAS: https://www.ceplas.eu/en/research/plant-metabolism-and-metabolomics-facility
 - at HHU: https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling
 
-
 ### Cooperation &ndash; User regulation
 
 Please note that __all cooperations__ are incumbent upon the [User regulation ("Nutzerordnung")](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung).
@@ -108,10 +107,9 @@ Those folders contain specific parts of a research project.
 > - studies: Cultivation and sampling of plants or cells 
 > - assays: Metabolite extraction and derivatization or measurements of the samples
 
-It can also contain project-specific folders like 'images' or 'literature'.
+It can also contain additional folders like '_literature'.
 
-<img src="./image/cmml-quickstart/ARC-Folder-structure.png" style="width:30%; display: block; margin: 20px auto;">
-
+<img src="./image/cmml-quickstart/1691045293651.png" style="width:30%; display: block; margin: 20px auto;">
 
 ***
 
@@ -151,7 +149,7 @@ Every part of a research project finds a place to be put in:
 
       :pen: The samples must be __labelled with a continous number and the box with the project-number and sample set.__
       
-      :arrow_right: Also give us the information about __storage of the samples__ or if they can be __destroyed afterwards__.
+      :arrow_right: Also let us know whether the samples should be stored after processing, picked up or whether they can be destroyed.
 
 > Example &ndash; the first sample set has 20 samples and your project-number is 23-0065:
 >
@@ -166,27 +164,28 @@ Every part of a research project finds a place to be put in:
 
     :pen: Here you should __write down__ the used method, but also put in for example plasmid-cards that are specific for this part of the research.
 
-    :arrow_right: Most optimal __file-format__ would be __.txt__, but a Word-file and other formats can also be possible.
+    :arrow_right: Most optimal __file-format__ would be __.txt__ or __.md__, but a Word-file and other formats can also be possible.
 
 3. __Resources__ (only in studies)
 
 4. __Dataset__ (only in assays)
   
-5. __README.md__: description and notes for the specific study or assay
+5. __README.md__: This file can be used to describe different "studies" and "assays" and take notes for the specific section of the experiment. The document is then visible on the website in the lower area when opening the respective structure.
 
 ***
 
 ## Checklist
 
-:bulb: Before the samples can be accepted and processed all points of the following checklist must be fulfilled:
+:bulb: Our department is only able to accept and process the samples if the following checklist is fulfilled:
 
-- Read the [User regulation ("Nutzerordnung")](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung)
-- [DataHUB account](https://register.nfdi4plants.org)
-- Access to your ARC.
-- Fill out in the isa.investigations.xlsx the part __'INVESTIGATION CONTACTS'__ with the mandatory information.
-- Fill out in the isa.study/assay.xlsx the __Sample sheet__.
-- Give us the information about __storage of the samples__ or if they can be __destroyed afterwards__.
-- Labelling the samples with CMML-specific identifier
+1. Read the [User regulation ("Nutzerordnung")](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung).
+1. Setup a [DataHUB account](https://register.nfdi4plants.org)
+1. Access to your ARC.
+1. Fill out in the isa.investigations.xlsx the part INVESTIGATION CONTACTS with the mandatory information.
+1. Fill out in the isa.study/assay.xlsx the sample sheet.
+1. Labelling the samples with CMML-specific identifier
+1. Also let us know whether the samples should be stored after processing, picked up or whether they can be destroyed.
+
 
 ## CMML Support 🌱
 
