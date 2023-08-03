@@ -89,7 +89,7 @@ On the website you can find the sidebar on the left side of your ARC.
 
 :bulb: For more details about DataHUB &ndash; please check out the [DataHUB manual](./../../DataHUB-Manual/datahub-files.html).
 
-## User Guide - the ARC
+## User Guide &ndash; the ARC
 
 ### Introduction to the ARC
 
