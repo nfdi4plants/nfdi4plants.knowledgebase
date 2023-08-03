@@ -73,7 +73,7 @@ This section gives you a short introduction to some helpful features of the Data
 
 :bulb: The DataHUB allows to directly operate files and folders without using any other tools similar to what you are used to from your computer's file explorer or finder.
 
-You can find the sidebar on the left side of your ARC.
+On the website you can find the sidebar on the left side of your ARC.
 
 <img src="./image/cmml-quickstart/ARC_Menu.png" style="width:25%; display: block; margin: 20px auto;">
 
@@ -87,13 +87,13 @@ You can find the sidebar on the left side of your ARC.
 
 4. Under 'Wiki' you can find 'Page'. Here we can create or edit a 'Page' to summarize meeting minutes or write down sharable notes.
 
-:bulb: For details, please check out the [DataHUB manual](./../../DataHUB-Manual/datahub-files.html).
+:bulb: For more details about DataHUB &ndash; please check out the [DataHUB manual](./../../DataHUB-Manual/datahub-files.html).
 
 ## User Guide - the ARC
 
 ### Introduction to the ARC
 
-The basic ARC folder structure consists of:
+The ARC is made up of several folders. The basic ARC folder structure consists of:
 
 - studies
 - assays
@@ -107,7 +107,7 @@ Those folders contain specific parts of a research project.
 > - studies: Cultivation and sampling of plants or cells 
 > - assays: Metabolite extraction and derivatization or measurements of the samples
 
-It can also contain additional folders like "_literature".
+It is also possible to add additional folder structures like "_literature" to the ARC.
 
 <img src="./image/cmml-quickstart/1691045293651.png" style="width:30%; display: block; margin: 20px auto;">
 
