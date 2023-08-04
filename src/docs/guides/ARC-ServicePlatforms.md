@@ -87,7 +87,7 @@ Here's an idea what your data flow could look like with the ARC:
 
 A few tips to streamline your data exchange:
 
-- You can [create metadata templates](./../SwateManual/Docs05-Templates.html)
+- You can [use metadata templates](./../SwateManual/Docs05-Templates.html)
   - to communicate with clients and team members, which metadata is crucial for specific assays
 - You can also store filled-out templates for your routine measurements as a reusable [JSON file](./../SwateManual/Docs06-ISA-JSON.html)
 
@@ -97,15 +97,12 @@ Your platform produces a lot of valuable raw data. Depending on your setup and t
 
 The DataHUB can help as a platform to centralize data from different sources and function as a geo-redundant backup with tracked changes:
 
-- ARCs come with [version control](./../fundamentals/VersionControlGit.html)
-  - contribution by commit
+- No matter where you work (office desktop, remote laptop, workstation), you can always sync your current state of the ARC via the [DataHUB](./../implementation/DataHub.html)
+- You can follow the evolution of a project via ARC's [version control](./../fundamentals/VersionControlGit.html)
 
 ### Track changes and provenance
 
-Different people are involved in the projects passing your platform. From team members to internal and external collaboration partners (clients).
-This makes it sometimes hard to keep track of who contributed how, what, when, why and to manage who needs access to which data.
-
-The ARC supports
+Different people are involved in the projects passing your platform. From team members to internal and external collaboration partners (clients). This makes it sometimes hard to keep track of who contributed how, what, when, why and to manage who needs access to which data.
 
 - The [DataHUB](./../implementation/DataHub.html) facilitates access management across institute boarders.
 - ARCs document [changes and contributions](./../fundamentals/VersionControlGit.html)
@@ -118,28 +115,24 @@ Reusing computational workflows across projects helps comprehensibility for your
 
 The standardized ARC structure helps with routine computations:
 
-- The simple structure itself
-  - Clients
-  - automate
-- make reproducible
-- quality control and validate
-  - within one ARC
-  - across ARCs covering routine measurements
+- The ARC's simple [directory structure](./../implementation/AnnotatedResearchContext.html) itself helps building routines, no matter whether you work with code or licensed software. Across projects, you and your collaborators know, where to find metadata and raw data, where to store processed data and results.
+- The ARC facilitates task automation such as quality control and validation within one project or across multiple ARCs covering routine measurements
+- Code-based computations can be designed as reusable and reproducible workflows using Common Workflow Language (CWL)
 
-- link to reproducibility
-- link to CWL
+<!-- TODO: Link to CWL article / guide -->
+:construction: Articles and guides on CWL are currently work in progress.
 
 ### Data publication
 
-At some point you or your client wants to publish the data resulting from the project
+At some point you and your client want to [publish the data](./../fundamentals/DataPublications.html) resulting from the project.
 
-There are two options
+There are two major options: You can publish the current version of the ARC and receive a [DOI](./../fundamentals/PersistentIdentifiers.html). Some scientific journals require data to be published in  [domain-specific repositories](./../fundamentals/PublicDataRepositories.html), specialized for a certain type of assay. For this purpose converters help you export the relevant dataset and metadata into a repository-accepted format.
 
-1. Publish a snapshot of your ARC repository and get a DOI
-2. Publish the dataset at a [domain-specific repository](./../fundamentals/PublicDataRepositories.html), established for your platform's type of assay
-  :bulb: We are working on converters to read and reshape the relevant data and metadata of your ARC into a format accepted by the public repositories
+<!-- TODO: Link to DOI and converter article / guide -->
+:construction: Both these routines are work in progress.
 
-:construction: Both these routines are work in progress!
+:bulb: We are working on converters to read and reshape the relevant data and metadata of your ARC into a format accepted by domain-specific repositories. You can support this by telling us relevant repositories for your type of data or help creating [templates](./../SwateManual/Docs05-Templates.html).
+
 
 ---
 
