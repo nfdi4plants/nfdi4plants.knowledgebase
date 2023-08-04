@@ -30,9 +30,9 @@ Please install the latest version of [Node.js](https://nodejs.org/en/download).
 
 5. Open the folder in a terminal (right click -> services -> `New Terminal at Folder`)
 
-<img src="./../img/arcitect-terminal.png" style="width:70%;display: block; margin: 20px">
+<img src="./../img/arcitect-macos-terminal.png" style="width:70%;display: block; margin: 20px">
 
-6. In the terminal, check that node.js is installed by executing 
+1. In the terminal, check that node.js is installed by executing 
 
 ```bash
 node -v
@@ -57,13 +57,13 @@ npm install
 npm run debug
 ```
 
-<img src="./../img/arcitect-incomingConnections.png" style="width:40%;display: block; margin: 20px">
+<img src="./../img/arcitect-macos-incomingConnections.png" style="width:40%;display: block; margin: 20px">
 
 
 :bulb: A window will pop-up asking whether you want to accept incoming network connections. This needs to be allowed for communication with the [DataHUB](./../implementation/DataHub.html).
 
-2. You can leave the terminal running in the background. Once you close the terminal, the ARCitect quits.
+1. You can leave the terminal running in the background. Once you close the terminal, the ARCitect quits.
 
-3. Switch to the ARCitect app. 
+2. Switch to the ARCitect app.
 
-:bulb: On macOS you might have to select the app from your dock. 
+:bulb: You might have to select the app from your dock.
