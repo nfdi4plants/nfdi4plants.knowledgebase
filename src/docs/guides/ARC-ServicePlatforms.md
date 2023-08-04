@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: ARCs in Enabling Platforms
-date: 2023-07-12
+date: 2023-08-04
 author:
 - name: Dominik Brilhaus
   orcid: https://orcid.org/0000-0001-9021-3197
