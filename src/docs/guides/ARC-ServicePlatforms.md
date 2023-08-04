@@ -47,25 +47,25 @@ It helps to be familiar with
 
 Central *enabling platforms* can range from small single-lab services to large instrumentation-based research infrastructures such as core facilities. Platforms offer a specific set of methods and assays as a routine support to a community of researchers. Typical examples with application in plant sciences include platforms offering "omics" technologies (genome, transcriptome, proteome, metabolome), phenotyping, (microscopic) imaging, genetic engineering or plant growth facilities.
 
-*For simplicity, in this guide we call researchers approaching the platforms "clients".*
+*For simplicity, in this guide we call researchers, clients, customers approaching the platform "collaborators".*
 
 <div style="height:40px; display: flex; align-items: center; justify-content: left;">
-  <img src="./ARC-ServicePlatforms-images/icons-characters-PhDStudent.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">client
+  <img src="./ARC-ServicePlatforms-images/icons-characters-PhDStudent.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">collaborator
   <img src="./ARC-ServicePlatforms-images/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">platform team
 </div>
 
 ### Project communication and data flow
 
-Central platforms interact with many versatile collaboration partners or clients. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings and emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted.
+Central platforms interact with many versatile collaborators. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings and emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted.
 
 ### Project management
 
-As a platform you manage a lot of projects in parallel. Keeping these projects up-to-date and coordinated between clients and platform team members is challenging.
+As a platform you manage a lot of projects in parallel. Keeping these projects up-to-date and coordinated between collaborators and platform team members is challenging.
 
 Here's a few tips to support your project management:
 
-- You can use the [wiki associated to the ARC](./../DataHUB-Manual/datahub-ARCWiki.html) to collect meeting minutes with your clients
-- You can use the [ARC's issue board](./../DataHUB-Manual/datahub-ARCPanel.html) to coordinate tasks between clients, team members, data analysts and others involved
+- You can use the [wiki associated to the ARC](./../DataHUB-Manual/datahub-ARCWiki.html) to collect meeting minutes with your collaborators
+- You can use the [ARC's issue board](./../DataHUB-Manual/datahub-ARCPanel.html) to coordinate tasks between collaborators, team members, data analysts and others involved
 - You can use your established system of identifiers (e.g. for projects, samples) in [ISA metadata](./../guides/isa_FileTypes.html)
 - You can also keep naming your ARCs with the same way you are used to name your project folders
 
@@ -79,8 +79,8 @@ Here's an idea what your data flow could look like with the ARC:
   <figcaption>  </figcaption>
 </div>
 
-1. Data exchange between client and platform occurs through the ARC shared via the DataHUB. Depending on the phase of the project this involves different data and information.  
-   (1a) The client primarily describes the investigation's goal and study design, annotates the submitted samples with metadata and adds associated protocols. Once available the client receives assayed data and relevant information.  
+1. Data exchange between collaborator and platform occurs through the ARC shared via the DataHUB. Depending on the phase of the project this involves different data and information.  
+   (1a) The collaborator primarily describes the investigation's goal and study design, annotates the submitted samples with metadata and adds associated protocols. Once available the collaborator receives assayed data and relevant information.  
    (1b) The platform team receives relevant sample metadata to run the respective assay and complements the ARC with platform-specific assay metadata, protocols and standard operating procedures (SOPs).
 2. A clone of the ARC is stored locally at the platform.
 3. From the platform data source, e.g. a workstation attached to your assay device, the generated data can directly be written or transferred to the assay dataset folder of your ARC stored in the file storage
@@ -88,7 +88,7 @@ Here's an idea what your data flow could look like with the ARC:
 A few tips to streamline your data exchange:
 
 - You can [use metadata templates](./../SwateManual/Docs05-Templates.html)
-  - to communicate with clients and team members, which metadata is crucial for specific assays
+  - to communicate with collaborators and team members, which metadata is crucial for specific assays
 - You can also store filled-out templates for your routine measurements as a reusable [JSON file](./../SwateManual/Docs06-ISA-JSON.html)
 
 ### Data storage, handling and transfer
@@ -102,7 +102,7 @@ The DataHUB can help as a platform to centralize data from different sources and
 
 ### Track changes and provenance
 
-Different people are involved in the projects passing your platform. From team members to internal and external collaboration partners (clients). This makes it sometimes hard to keep track of who contributed how, what, when, why and to manage who needs access to which data.
+Different people are involved in the projects passing your platform. From team members to internal and external collaboration partners (collaborators). This makes it sometimes hard to keep track of who contributed how, what, when, why and to manage who needs access to which data.
 
 - The [DataHUB](./../implementation/DataHub.html) facilitates access management across institute boarders.
 - ARCs document [changes and contributions](./../fundamentals/VersionControlGit.html)
@@ -111,7 +111,7 @@ Different people are involved in the projects passing your platform. From team m
 ### Routine computations
 
 Your platform supports researchers with a specific set of methods and assays. You perform routine measurements, follow established protocols and SOPs to generate specific types of samples and data. Aligned with your lab workflows, you also follow computational routines: For the same types of (raw) data you re-use computational steps for processing and analysis.
-Reusing computational workflows across projects helps comprehensibility for your clients and ensures reproducibility and quality for your data.
+Reusing computational workflows across projects helps comprehensibility for your collaborators and ensures reproducibility and quality for your data.
 
 The standardized ARC structure helps with routine computations:
 
@@ -124,7 +124,7 @@ The standardized ARC structure helps with routine computations:
 
 ### Data publication
 
-At some point you and your client want to [publish the data](./../fundamentals/DataPublications.html) resulting from the project.
+At some point you and your collaborator want to [publish the data](./../fundamentals/DataPublications.html) resulting from the project.
 
 There are two major options: You can publish the current version of the ARC and receive a [DOI](./../fundamentals/PersistentIdentifiers.html). Some scientific journals require data to be published in  [domain-specific repositories](./../fundamentals/PublicDataRepositories.html), specialized for a certain type of assay. For this purpose converters help you export the relevant dataset and metadata into a repository-accepted format.
 
@@ -132,7 +132,6 @@ There are two major options: You can publish the current version of the ARC and 
 :construction: Both these routines are work in progress.
 
 :bulb: We are working on converters to read and reshape the relevant data and metadata of your ARC into a format accepted by domain-specific repositories. You can support this by telling us relevant repositories for your type of data or help creating [templates](./../SwateManual/Docs05-Templates.html).
-
 
 ---
 
@@ -144,28 +143,35 @@ They are optional and it depends on your platform, whether these are suitable.
 1. [Create](./../guides/index-CreateYourARC.html) an example ARC
    - Try to structure a typical experiment run in your platform as an ARC
    - Consider what information is required to reproduce the experiment from *source-to-data*
-     - What information is provided by the client or by the platform?
-     - Which protocols (materials and methods) are required?
-     - At what step and how does the client "hand over" or submit?
-2. Share your example ARC in the [DataHUB](https://git.nfdi4plants.org)
-   - An example ARC helps clients understand the ARC concept and structure with your type of data and metadata
-   - Where can they find what information (protocols, datasets, results)
-   - How can they interact with the ARC
-3. [Create a group](./../DataHUB-Manual/datahub-CreateGroup.html) in the DataHUB for your platform
+   - What information is provided by the collaborator or by the platform?
+   - Which protocols (materials and methods) are required?
+   - At what step and how does the collaborator "hand over" or submit?
+2. Share your example ARC via the [DataHUB](https://git.nfdi4plants.org)
+   - An example ARC helps collaborators understand the ARC concept and structure with your type of data and metadata
+   - Where can they find what information (protocols, datasets, results)?
+   - How can they interact with the ARC (upload, download, edit)
+3. [Create a DataHUB group](./../DataHUB-Manual/datahub-CreateGroup.html) for your platform
    - A group can help you organize all running projects in one place
    - You can easily manage access for multiple ARCs
-   - If desired, you can easily set up an automated synchronization between your local (file share) and remote (DataHUB) ARCs
 4. Design [metadata templates](./../guides/swate_template-contribution.html) for sample annotation
-   - Let your clients know, what information you need from them
-5. Write a short guide for your clients
-   - How can they 
+   - Let your collaborators know, what information you need from them
+   - You can either use those templates yourself, when initiating a new ARC for collaboration or let collaborators select the template directly via [Swate](./../implementation/Swate.html)
+5. Write a short guide for your collaborators
+   - Especially for new collaboration partners, it helps to summarize your platforms routine with a short guide.
+   - How does your platform incorporate ARCs and what are the exact steps for interaction between you and the collaboration partner?
+   - You could share this guide via this knowledge base or attach it to your example ARC or group in the DataHUB.
 6. Start packaging your projects as ARCs
 
-## Meet your clients in an ARC
+## Meet your collaborators in an ARC
 
 Once you are ready to use ARCs for your
 
 ![](ARC-ServicePlatforms-images/servicePlatform-Timeline.drawio.png)
+
+
+If you prefer to follow a specific naming convention for your ARCs 
+
+
 
 - you decide wether you meet the researchers half the way, let them initiate the ARC or
 
@@ -175,15 +181,15 @@ who initiates the ARC
 
 A major difference
 
-Fork the client's project, rename it to your need, put everything irrelevant to .gitignore
+Fork the collaborator's project, rename it to your need, put everything irrelevant to .gitignore
 
-### What about non-ARC clients
+### What about non-ARC collaborators
 
-Not all of your clients are used to work with ARCs and associated tools or are planning to learn it. Still, running a service platform, you want to interact with those clients mostly in the same routines employed with everyone else.
+Not all of your collaborators are used to work with ARCs and associated tools or are planning to learn it. Still, running a service platform, you want to interact with those collaborators mostly in the same routines employed with everyone else.
 
 Luckily the DataHUB comes with built-in, intuitive features that
 
-- clients only need access
+- collaborators only need access
   - sign up with orcid
   - sign up with...
 
