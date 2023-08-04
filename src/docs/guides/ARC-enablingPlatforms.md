@@ -13,7 +13,7 @@ add sidebar: _sidebars/mainSidebar.md
 
 :construction: work in progress :construction:
 
-<!-- http://127.0.0.1:8080/docs/guides/ARC-ServicePlatforms.html -->
+<!-- http://127.0.0.1:8080/docs/guides/ARC-enablingPlatforms.html -->
 
 ## About this guide
 
@@ -50,8 +50,8 @@ Central *enabling platforms* can range from small single-lab services to large i
 *For simplicity, in this guide we call researchers, clients, customers approaching the platform "collaborators".*
 
 <div style="height:40px; display: flex; align-items: center; justify-content: left;">
-  <img src="./ARC-ServicePlatforms-images/icons-characters-PhDStudent.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">collaborator
-  <img src="./ARC-ServicePlatforms-images/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">platform team
+  <img src="./../img/icons-characters-PhDStudent.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">collaborator
+  <img src="./../img/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">platform team
 </div>
 
 ## Project communication and data flow
@@ -75,7 +75,7 @@ During project collaboration a lot of information and metadata is exchanged.
 Here's an idea what your data flow could look like with the ARC:
 
 <div>
-  <img src="./ARC-ServicePlatforms-images/servicePlatform-FileShare.drawio.png" style="width:60%;display: block;margin-left: auto;margin-right: auto;">
+  <img src="./../img/enablingPlatform-FileShare.drawio.png" style="width:60%;display: block;margin-left: auto;margin-right: auto;">
   <figcaption>  </figcaption>
 </div>
 
@@ -179,7 +179,7 @@ Here we try to address a few questions from discussions with platform heads.
 You decide whether you prepare the ARC for you collaborators (scenario A) or meet them half the way (scenario B).
 Eventually this depends on different factors, e.g. the type of collaboration you agreed upon or whether or not the collaborators are used to work with the ARC and associated tools.
 
-![](ARC-ServicePlatforms-images/servicePlatform-Timeline.drawio.png)
+![](../img/enablingPlatform-Timeline.drawio.png)
 
 Following the exemplary scenario A, you could setup the ARC for your collaboration (1), add the relevant studies and assays (2) as well as templates (3) as discussed with them and ask them to complement the required metadata (4) and protocols (5) before you can run the assays and add the dataset (6).
 
