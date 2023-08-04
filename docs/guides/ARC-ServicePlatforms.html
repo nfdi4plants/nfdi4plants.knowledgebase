@@ -474,15 +474,16 @@
         ARCs in Enabling Platforms
       </h1>
       <i class="help">
-        last updated at 2023-07-12
+        last updated at 2023-08-04
       </i>
       <nfdi-toc></nfdi-toc>
       <p>🚧 work in progress 🚧</p>
+<!-- http://127.0.0.1:8080/docs/guides/ARC-ServicePlatforms.html -->
 <nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
 <p>In this guide we explore how the ARC can help streamline data flows and project management in enabling platforms.</p>
 <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>    
+    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
 </a>
 <br>
 <br>
@@ -501,19 +502,19 @@
 </div>
 <nfdi-h2 id="enabling-platforms">Enabling Platforms</nfdi-h2>
 <p>Central <em>enabling platforms</em> can range from small single-lab services to large instrumentation-based research infrastructures such as core facilities. Platforms offer a specific set of methods and assays as a routine support to a community of researchers. Typical examples with application in plant sciences include platforms offering &quot;omics&quot; technologies (genome, transcriptome, proteome, metabolome), phenotyping, (microscopic) imaging, genetic engineering or plant growth facilities.</p>
-<p><em>For simplicity, in this guide we call researchers approaching the platforms &quot;clients&quot;.</em></p>
+<p><em>For simplicity, in this guide we call researchers, clients, customers approaching the platform &quot;collaborators&quot;.</em></p>
 <div style="height:40px; display: flex; align-items: center; justify-content: left;">
-  <img src="./ARC-ServicePlatforms-images/icons-characters-PhDStudent.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">client
+  <img src="./ARC-ServicePlatforms-images/icons-characters-PhDStudent.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">collaborator
   <img src="./ARC-ServicePlatforms-images/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">platform team
 </div>
-<nfdi-h3 id="project-communication-and-data-flow">Project communication and data flow</nfdi-h3>
-<p>Central platforms interact with many versatile collaboration partners or clients. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings and emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted.</p>
+<nfdi-h2 id="project-communication-and-data-flow">Project communication and data flow</nfdi-h2>
+<p>Central platforms interact with many versatile collaborators. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings and emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted.</p>
 <nfdi-h3 id="project-management">Project management</nfdi-h3>
-<p>As a platform you manage a lot of projects in parallel. Keeping these projects up-to-date and coordinated between clients and platform team members is challenging.</p>
+<p>As a platform you manage a lot of projects in parallel. Keeping these projects up-to-date and coordinated between collaborators and platform team members is challenging.</p>
 <p>Here's a few tips to support your project management:</p>
 <ul>
-<li>You can use the <a href="./../DataHUB-Manual/datahub-ARCWiki.html">wiki associated to the ARC</a> to collect meeting minutes with your clients</li>
-<li>You can use the <a href="./../DataHUB-Manual/datahub-ARCPanel.html">ARC's issue board</a> to coordinate tasks between clients, team members, data analysts and others involved</li>
+<li>You can use the <a href="./../DataHUB-Manual/datahub-ARCWiki.html">wiki associated to the ARC</a> to collect meeting minutes with your collaborators</li>
+<li>You can use the <a href="./../DataHUB-Manual/datahub-ARCPanel.html">ARC's issue board</a> to coordinate tasks between collaborators, team members, data analysts and others involved</li>
 <li>You can use your established system of identifiers (e.g. for projects, samples) in <a href="./../guides/isa_FileTypes.html">ISA metadata</a></li>
 <li>You can also keep naming your ARCs with the same way you are used to name your project folders</li>
 </ul>
@@ -525,134 +526,110 @@ Here's an idea what your data flow could look like with the ARC:</p>
   <figcaption>  </figcaption>
 </div>
 <ol>
-<li>Data exchange between client and platform occurs through the ARC shared via the DataHUB. Depending on the phase of the project this involves different data and information.<br />
-(1a) The client primarily describes the investigation's goal and study design, annotates the submitted samples with metadata and adds associated protocols. Once available the client receives assayed data and relevant information.<br />
-(1b) The platform team receives relevant sample metadata to run the respective assay and complements the ARC with platform-specific assay metadata, protocols and standard operating procedures (SOPs)</li>
-<li>A clone of the ARC is stored locally at the platform</li>
-<li>From the platform workstation, i.e. a computer attached to your assay device, the generated data can directly be written or transferred to the assay dataset folder of your ARC stored in the file share</li>
+<li>Data exchange between collaborator and platform occurs through the ARC shared via the DataHUB. Depending on the phase of the project this involves different data and information.<br />
+(1a) The collaborator primarily describes the investigation's goal and study design, annotates the submitted samples with metadata and adds associated protocols. Once available the collaborator receives assayed data and relevant information.<br />
+(1b) The platform team receives relevant sample metadata to run the respective assay and complements the ARC with platform-specific assay metadata, protocols and standard operating procedures (SOPs).</li>
+<li>A clone of the ARC is stored locally at the platform.</li>
+<li>From the platform data source, e.g. a workstation attached to your assay device, the generated data can directly be written or transferred to the assay dataset folder of your ARC stored in the file storage</li>
 </ol>
 <p>A few tips to streamline your data exchange:</p>
 <ul>
-<li>You can <a href="./../SwateManual/Docs05-Templates.html">create metadata templates</a>
+<li>You can <a href="./../SwateManual/Docs05-Templates.html">use metadata templates</a>
 <ul>
-<li>to communicate with clients and team members, which metadata is crucial for specific assays</li>
+<li>to communicate with collaborators and team members, which metadata is crucial for specific assays</li>
 </ul>
 </li>
 <li>You can also store filled-out templates for your routine measurements as a reusable <a href="./../SwateManual/Docs06-ISA-JSON.html">JSON file</a></li>
 </ul>
 <nfdi-h3 id="data-storage-handling-and-transfer">Data storage, handling and transfer</nfdi-h3>
 <p>Your platform produces a lot of valuable raw data. Depending on your setup and the type of data you generate, the data is stored on individual machines, hard drives, institutional or internal file shares. For instance, workstations directly associated with measuring devices require quickest data transfer rates or specific security restrictions and write data to proximal data stores rather than a cloud storage.</p>
-<p>The DataHUB can help as a platform to centralize data from different sources and function as a geo-redundant backup with tracked changes.</p>
+<p>The DataHUB can help as a platform to centralize data from different sources and function as a geo-redundant backup with tracked changes:</p>
+<ul>
+<li>No matter where you work (office desktop, remote laptop, workstation), you can always sync your current state of the ARC via the <a href="./../implementation/DataHub.html">DataHUB</a></li>
+<li>You can follow the evolution of a project via ARC's <a href="./../fundamentals/VersionControlGit.html">version control</a></li>
+</ul>
 <nfdi-h3 id="track-changes-and-provenance">Track changes and provenance</nfdi-h3>
-<p>Many people are involved in your projects from team members to internal and external collaboration partners (clients).</p>
-<p>Collaborating on ma</p>
+<p>Different people are involved in the projects passing your platform. From team members to internal and external collaboration partners (collaborators). This makes it sometimes hard to keep track of who contributed how, what, when, why and to manage who needs access to which data.</p>
 <ul>
-<li><p>access management across institute boarders,</p>
-</li>
-<li><p>need to be able to retrace, who's done what, when, why</p>
-</li>
-<li><p>name your team members / credit</p>
-</li>
-<li><p>track changes</p>
-</li>
-</ul>
-<p>The ARC supports</p>
-<ul>
-<li>ARC comes with <a href="./../fundamentals/VersionControlGit.html">version control</a>
-<ul>
-<li>contribution by commit</li>
-</ul>
-</li>
-<li><a href="./isa_FileTypes.html">ISA metadata model</a> allows to associate people with investigations and studies</li>
+<li>The <a href="./../implementation/DataHub.html">DataHUB</a> facilitates access management across institute boarders.</li>
+<li>ARCs document <a href="./../fundamentals/VersionControlGit.html">changes and contributions</a></li>
+<li>The <a href="./isa_FileTypes.html">ISA metadata model</a> allows to associate contributors with investigations and studies. List your team members to ensure proper credit for their contributions.</li>
 </ul>
 <nfdi-h3 id="routine-computations">Routine computations</nfdi-h3>
-<p>Your platform is specialized on a specific set of methods and assays. You perform routine assays, follow established protocols and SOPs to produce specific types of data.</p>
+<p>Your platform supports researchers with a specific set of methods and assays. You perform routine measurements, follow established protocols and SOPs to generate specific types of samples and data. Aligned with your lab workflows, you also follow computational routines: For the same types of (raw) data you re-use computational steps for processing and analysis.
+Reusing computational workflows across projects helps comprehensibility for your collaborators and ensures reproducibility and quality for your data.</p>
+<p>The standardized ARC structure helps with routine computations:</p>
 <ul>
-<li><p>simplify (ARC = always same structure)</p>
-</li>
-<li><p>make reproducible</p>
-</li>
-<li><p>quality control and validate</p>
-<ul>
-<li>within one ARC</li>
-<li>across ARCs covering routine measurements</li>
+<li>The ARC's simple <a href="./../implementation/AnnotatedResearchContext.html">directory structure</a> itself helps building routines, no matter whether you work with code or licensed software. Across projects, you and your collaborators know, where to find metadata and raw data, where to store processed data and results.</li>
+<li>The ARC facilitates task automation such as quality control and validation within one project or across multiple ARCs covering routine measurements</li>
+<li>Code-based computations can be designed as reusable and reproducible workflows using Common Workflow Language (CWL)</li>
 </ul>
-</li>
-<li><p>automate</p>
-</li>
-<li><p>link to reproducibility</p>
-</li>
-<li><p>link to CWL</p>
-</li>
-</ul>
+<!-- TODO: Link to CWL article / guide -->
+<p>🚧 Articles and guides on CWL are currently work in progress.</p>
 <nfdi-h3 id="data-publication">Data publication</nfdi-h3>
-<p>At some point you or your client wants to publish the project</p>
-<p>There are two options</p>
-<ol>
-<li>Publish a snapshot of your ARC repository and get a DOI (coming soon)</li>
-<li>Publish the dataset at a <a href="./../fundamentals/PublicDataRepositories.md">domain-specific repository</a>, established for your platform's type of assay
-💡 We are working on converters to read and reshape the relevant data and metadata of your ARC into a format accepted by the public repositories</li>
-</ol>
-<p>⚠️ Both these routines are work in progress!</p>
-<nfdi-h2 id="meet-your-clients-in-an-arc">Meet your clients in an ARC</nfdi-h2>
-<p><img src="ARC-ServicePlatforms-images/servicePlatform-Timeline.drawio.png" alt="" /></p>
-<ul>
-<li>you decide wether you meet the researchers half the way, let them initiate the ARC or</li>
-</ul>
-<p>who initiates the ARC</p>
-<ul>
-<li>researcher</li>
-</ul>
-<p>A major difference</p>
-<p>Fork the client's project, rename it to your need, put everything irrelevant to .gitignore</p>
-<nfdi-h2 id="what-about-non-arc-clients">What about non-ARC clients</nfdi-h2>
-<p>Not all of your clients are used to work with ARCs and associated tools or are planning to learn it. Still, running a service platform, you want to interact with those clients mostly in the same routines employed with everyone else.</p>
-<p>Luckily the DataHUB comes with built-in, intuitive features that</p>
-<ul>
-<li>clients only need access
-<ul>
-<li>sign up with orcid</li>
-<li>sign up with...</li>
-</ul>
-</li>
-</ul>
-<nfdi-h2 id="benefits-for-the-researcher">Benefits for the researcher</nfdi-h2>
-<ul>
-<li>already described investigation (and study) for another facility, would not want to double the work for another assay</li>
-</ul>
+<p>At some point you and your collaborator want to <a href="./../fundamentals/DataPublications.html">publish the data</a> resulting from the project.</p>
+<p>There are two major options: You can publish the current version of the ARC and receive a <a href="./../fundamentals/PersistentIdentifiers.html">DOI</a>. Some scientific journals require data to be published in  <a href="./../fundamentals/PublicDataRepositories.html">domain-specific repositories</a>, specialized for a certain type of assay. For this purpose converters help you export the relevant dataset and metadata into a repository-accepted format.</p>
+<!-- TODO: Link to DOI and converter article / guide -->
+<p>🚧 Both these routines are work in progress.</p>
+<p>💡 We are working on converters to read and reshape the relevant data and metadata of your ARC into a format accepted by domain-specific repositories. You can support this by telling us relevant repositories for your type of data or help creating <a href="./../SwateManual/Docs05-Templates.html">templates</a>.</p>
 <nfdi-h2 id="preparing-your-platform-to-benefit-from-the-arc">Preparing your platform to benefit from the ARC</nfdi-h2>
-<p>In the following, we recommend steps that you <strong>can</strong> take to prepare your platform towards using ARCs.
-Except for step 1, they are all optional and it depends on the platform, whether these are useful.</p>
-<ol>
-<li>Start creating your projects as ARCs
+<p>Here we recommend steps that you <em>can</em> take to prepare your platform towards using ARCs.
+They are optional and it depends on your platform, whether these are suitable.</p>
+<p>☑️ <strong><a href="./../guides/index-CreateYourARC.html">Create</a> an example ARC</strong></p>
 <ul>
-<li>You'd be surprised how</li>
+<li>Try to structure a typical experiment run in your platform as an ARC</li>
+<li>Consider what information is required to reproduce the experiment from <em>source-to-data</em></li>
+<li>What information is provided by the collaborator or by the platform?</li>
+<li>Which protocols (materials and methods) are required?</li>
+<li>At what step and how does the collaborator &quot;hand over&quot; or submit?</li>
 </ul>
-</li>
-<li><a href="./../DataHUB-Manual/datahub-CreateGroup.html">Create a group</a> in the DataHUB for your platform
+<p>☑️ <strong>Share your example ARC via the <a href="https://git.nfdi4plants.org">DataHUB</a></strong></p>
 <ul>
-<li>A platform group</li>
-<li>If desired, you can easily set up an automated synchronization between your local (file share) and remote (DataHUB) ARCs</li>
+<li>An example ARC helps collaborators understand the ARC concept and structure with your type of data and metadata</li>
+<li>Where can they find what information (protocols, datasets, results)?</li>
+<li>How can they interact with the ARC (upload, download, edit)</li>
 </ul>
-</li>
-<li>Design <a href="./../guides/swate_template-contribution.html">metadata templates</a> for sample annotation</li>
-</ol>
+<p>☑️ <strong><a href="./../DataHUB-Manual/datahub-CreateGroup.html">Create a DataHUB group</a> for your platform</strong></p>
 <ul>
-<li>Let your clients know, what information you need from them</li>
+<li>A group can help you organize all running projects in one place</li>
+<li>You can easily manage access for multiple ARCs</li>
 </ul>
-<ol start="4">
-<li>Share an example ARC in the <a href="https://git.nfdi4plants.org">DataHUB</a></li>
-</ol>
+<p>☑️ <strong>Design <a href="./../guides/swate_template-contribution.html">metadata templates</a> for sample annotation</strong></p>
 <ul>
-<li><p>An example ARC helps to show clients the ARC concept and structure</p>
-</li>
-<li><p>Where can they find what information (protocols, datasets, results)</p>
-</li>
-<li><p>How can they interact with the ARC</p>
-</li>
-<li><p>Write a guide to tell your clients</p>
-</li>
+<li>Let your collaborators know, what information you need from them</li>
+<li>You can either use those templates yourself, when initiating a new ARC for collaboration or let collaborators select the template directly via <a href="./../implementation/Swate.html">Swate</a></li>
 </ul>
+<p>☑️ <strong>Write a short guide for your collaborators</strong></p>
+<ul>
+<li>Especially for new collaboration partners, it helps to summarize your platforms routine with a short guide.</li>
+<li>How does your platform incorporate ARCs and what are the exact steps for interaction between you and the collaboration partner?</li>
+<li>You could share this guide via this knowledge base or attach it to your example ARC or group in the DataHUB.</li>
+</ul>
+<p>☑️ <strong>Start packaging your projects as ARCs 🚀</strong></p>
+<nfdi-h2 id="meet-your-collaborators-in-an-arc">Meet your collaborators in an ARC</nfdi-h2>
+<p>You are all set and ready to use ARCs for collaboration in your platform.
+Here we try to address a few questions from discussions with platform heads.</p>
+<p><strong>Who initiates the ARC: platform or collaborator?</strong></p>
+<p>You decide whether you prepare the ARC for you collaborators (scenario A) or meet them half the way (scenario B).
+Eventually this depends on different factors, e.g. the type of collaboration you agreed upon or whether or not the collaborators are used to work with the ARC and associated tools.</p>
+<p><img src="ARC-ServicePlatforms-images/servicePlatform-Timeline.drawio.png" alt="" /></p>
+<p>Following the exemplary scenario A, you could setup the ARC for your collaboration (1), add the relevant studies and assays (2) as well as templates (3) as discussed with them and ask them to complement the required metadata (4) and protocols (5) before you can run the assays and add the dataset (6).</p>
+<p>Alternatively, collaborators already working with ARCs could invite you to &quot;their&quot; ARC (exemplary scenario B). They can independently set up the ARC and fill metadata (4) based on your prepared templates (3).</p>
+<p>💡 In scenario B the collaborator might invite you to a very large ARC with data not really relevant for your platform-specific collaboration. In this case you might want to <a href="./../guides/arc_gitignore.html">exclude irrelevant data</a> or <a href="./../guides/arc_gitignore.html">avoid downloading large data</a> when syncing the ARC.</p>
+<p><strong>Can I retain my established naming convention for project management and data storage?</strong></p>
+<p>Running a central platform, you probably follow an established project management system or naming convention.
+This is particularly important for how project folders are named on your platform's data storage. When implementing ARCs, <strong>you do not need to change</strong> this system.
+You can simply name the ARCs the same way you are used to name your project folders.</p>
+<p>This is also true for scenario B exemplified above. You can simply <a href="./../DataHUB-Manual/datahub-fork.html">fork</a> the collaborator's ARC and rename it according to your system.</p>
+<p>💡 You might want to consider requiring your collaborators to name the assays (folder name or assay identifier) according to your project management system.</p>
+<p><strong>How can I share ARCs with non-ARC collaborators?</strong></p>
+<p>Not all of your collaborators use ARCs or are planning to do so, but you still want to interact with those collaborators in the same routines employed with everyone else. They only need a DataHUB account and they can simply sign in with their existing scientific account.</p>
+<p>The DataHUB comes with <a href="./../DataHUB-Manual/datahub-files.html">built-in features</a> that allow interaction with the ARC solely via the web browser without any addional tools.</p>
+<!-- 
+
+### Benefits for the researcher
+
+- already described investigation (and study) for another facility, would not want to double the work for another assay -->
 
       <h3>
         DataPLANT Support
