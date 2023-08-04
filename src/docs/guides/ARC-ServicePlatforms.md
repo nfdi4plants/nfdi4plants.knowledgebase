@@ -54,7 +54,7 @@ Central *enabling platforms* can range from small single-lab services to large i
   <img src="./ARC-ServicePlatforms-images/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">platform team
 </div>
 
-### Project communication and data flow
+## Project communication and data flow
 
 Central platforms interact with many versatile collaborators. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings and emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted.
 
@@ -133,66 +133,78 @@ There are two major options: You can publish the current version of the ARC and 
 
 :bulb: We are working on converters to read and reshape the relevant data and metadata of your ARC into a format accepted by domain-specific repositories. You can support this by telling us relevant repositories for your type of data or help creating [templates](./../SwateManual/Docs05-Templates.html).
 
----
-
 ## Preparing your platform to benefit from the ARC
 
 Here we recommend steps that you *can* take to prepare your platform towards using ARCs.
 They are optional and it depends on your platform, whether these are suitable.
 
-1. [Create](./../guides/index-CreateYourARC.html) an example ARC
-   - Try to structure a typical experiment run in your platform as an ARC
-   - Consider what information is required to reproduce the experiment from *source-to-data*
-   - What information is provided by the collaborator or by the platform?
-   - Which protocols (materials and methods) are required?
-   - At what step and how does the collaborator "hand over" or submit?
-2. Share your example ARC via the [DataHUB](https://git.nfdi4plants.org)
-   - An example ARC helps collaborators understand the ARC concept and structure with your type of data and metadata
-   - Where can they find what information (protocols, datasets, results)?
-   - How can they interact with the ARC (upload, download, edit)
-3. [Create a DataHUB group](./../DataHUB-Manual/datahub-CreateGroup.html) for your platform
-   - A group can help you organize all running projects in one place
-   - You can easily manage access for multiple ARCs
-4. Design [metadata templates](./../guides/swate_template-contribution.html) for sample annotation
-   - Let your collaborators know, what information you need from them
-   - You can either use those templates yourself, when initiating a new ARC for collaboration or let collaborators select the template directly via [Swate](./../implementation/Swate.html)
-5. Write a short guide for your collaborators
-   - Especially for new collaboration partners, it helps to summarize your platforms routine with a short guide.
-   - How does your platform incorporate ARCs and what are the exact steps for interaction between you and the collaboration partner?
-   - You could share this guide via this knowledge base or attach it to your example ARC or group in the DataHUB.
-6. Start packaging your projects as ARCs
+☑️ **[Create](./../guides/index-CreateYourARC.html) an example ARC**
+- Try to structure a typical experiment run in your platform as an ARC
+- Consider what information is required to reproduce the experiment from *source-to-data*
+- What information is provided by the collaborator or by the platform?
+- Which protocols (materials and methods) are required?
+- At what step and how does the collaborator "hand over" or submit?
+
+☑️ **Share your example ARC via the [DataHUB](https://git.nfdi4plants.org)**
+
+- An example ARC helps collaborators understand the ARC concept and structure with your type of data and metadata
+- Where can they find what information (protocols, datasets, results)?
+- How can they interact with the ARC (upload, download, edit)
+
+☑️ **[Create a DataHUB group](./../DataHUB-Manual/datahub-CreateGroup.html) for your platform**
+
+- A group can help you organize all running projects in one place
+- You can easily manage access for multiple ARCs
+
+☑️ **Design [metadata templates](./../guides/swate_template-contribution.html) for sample annotation**
+
+- Let your collaborators know, what information you need from them
+- You can either use those templates yourself, when initiating a new ARC for collaboration or let collaborators select the template directly via [Swate](./../implementation/Swate.html)
+
+☑️ **Write a short guide for your collaborators**
+
+- Especially for new collaboration partners, it helps to summarize your platforms routine with a short guide.
+- How does your platform incorporate ARCs and what are the exact steps for interaction between you and the collaboration partner?
+- You could share this guide via this knowledge base or attach it to your example ARC or group in the DataHUB.
+
+☑️ **Start packaging your projects as ARCs :rocket:**
 
 ## Meet your collaborators in an ARC
 
-Once you are ready to use ARCs for your
+You are all set and ready to use ARCs for collaboration in your platform.
+Here we try to address a few questions from discussions with platform heads.
+
+**Who initiates the ARC: platform or collaborator?**
+
+You decide whether you prepare the ARC for you collaborators (scenario A) or meet them half the way (scenario B).
+Eventually this depends on different factors, e.g. the type of collaboration you agreed upon or whether or not the collaborators are used to work with the ARC and associated tools.
 
 ![](ARC-ServicePlatforms-images/servicePlatform-Timeline.drawio.png)
 
+Following the exemplary scenario A, you could setup the ARC for your collaboration (1), add the relevant studies and assays (2) as well as templates (3) as discussed with them and ask them to complement the required metadata (4) and protocols (5) before you can run the assays and add the dataset (6).
 
-If you prefer to follow a specific naming convention for your ARCs 
+Alternatively, collaborators already working with ARCs could invite you to "their" ARC (exemplary scenario B). They can independently set up the ARC and fill metadata (4) based on your prepared templates (3).
 
+:bulb: In scenario B the collaborator might invite you to a very large ARC with data not really relevant for your platform-specific collaboration. In this case you might want to [exclude irrelevant data](./../guides/arc_gitignore.html) or [avoid downloading large data](./../guides/arc_gitignore.html) when syncing the ARC.
 
+**Can I retain my established naming convention for project management and data storage?**
 
-- you decide wether you meet the researchers half the way, let them initiate the ARC or
+Running a central platform, you probably follow an established project management system or naming convention.
+This is particularly important for how project folders are named on your platform's data storage. When implementing ARCs, **you do not need to change** this system.
+You can simply name the ARCs the same way you are used to name your project folders.
 
-who initiates the ARC
+This is also true for scenario B exemplified above. You can simply [fork](./../DataHUB-Manual/datahub-fork.html) the collaborator's ARC and rename it according to your system.
 
-- researcher
+:bulb: You might want to consider requiring your collaborators to name the assays (folder name or assay identifier) according to your project management system.
 
-A major difference
+**How can I share ARCs with non-ARC collaborators?**
 
-Fork the collaborator's project, rename it to your need, put everything irrelevant to .gitignore
+Not all of your collaborators use ARCs or are planning to do so, but you still want to interact with those collaborators in the same routines employed with everyone else. They only need a DataHUB account and they can simply sign in with their existing scientific account.
 
-### What about non-ARC collaborators
+The DataHUB comes with [built-in features](./../DataHUB-Manual/datahub-files.html) that allow interaction with the ARC solely via the web browser without any addional tools. 
 
-Not all of your collaborators are used to work with ARCs and associated tools or are planning to learn it. Still, running a service platform, you want to interact with those collaborators mostly in the same routines employed with everyone else.
-
-Luckily the DataHUB comes with built-in, intuitive features that
-
-- collaborators only need access
-  - sign up with orcid
-  - sign up with...
+<!-- 
 
 ### Benefits for the researcher
 
-- already described investigation (and study) for another facility, would not want to double the work for another assay
+- already described investigation (and study) for another facility, would not want to double the work for another assay -->
