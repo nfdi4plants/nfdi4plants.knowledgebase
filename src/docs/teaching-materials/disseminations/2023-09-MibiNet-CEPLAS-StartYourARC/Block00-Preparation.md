@@ -16,7 +16,7 @@ author:
 <!-- _paginate: false -->
 
 **before** September 21st, 2023
- 
+
 
 <div style="position: fixed; bottom: 10%; right: 40%;">
   <div class="profile-picture">
@@ -53,15 +53,19 @@ ul{
 }
 </style>
 
+:bulb: Please prepare the following before the workshop:
 
-:bulb: Please follow the next slides to register with DataPLANT and install some helper tools on your computer
+Required:
 
-- :white_check_mark: Register at DataPLANT
-- :white_check_mark: Find your terminal
-- :white_check_mark: Install ARC Commander and dependencies on your computer
-- :white_check_mark: Install ARCitect on your computer
-- :white_check_mark: Install Swate on your computer
+- :white_check_mark: [Register at DataPLANT](#dataplant-registration)
+- :white_check_mark: [Install ARCitect on your computer](#arcitect-installation)
+- :white_check_mark: [Install Swate on your computer](#swate-installation)
+- :white_check_mark: [Bring your own data](#hands-on-bring-your-own-data)
 
+Recommended (for trouble-shooting):
+- :white_check_mark: Find your [command line](#the-command-line)
+- :white_check_mark: Install [ARC Commander](#arc-commander-installation) and dependencies on your computer
+- :white_check_mark: [Install VS Code](#have-a-simple-text-editor-ready)
 
 ---
 
@@ -73,7 +77,7 @@ If you do not have a DataPLANT account, please register at the [DataPLANT websit
 
 ---
 
-# Role and consortium
+## Role and consortium
 
 Please add your `Project/consortium` (e.g. CEPLAS, SFB, TRR) and choose the role `Guest`
 
@@ -81,7 +85,37 @@ Please add your `Project/consortium` (e.g. CEPLAS, SFB, TRR) and choose the role
 
 ---
 
-# The command line
+# ARCitect Installation
+
+Please follow the instructions to install the latest version of ARCitect.
+
+- [macOS](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/arcitect_installation_macos.html)
+- [Windows](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/arcitect_installation_windows.html)
+
+---
+
+# Swate Installation
+
+Please follow [these instructions](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html) to install the latest version of Swate.
+
+---
+
+# Hands-on: Bring your own data
+
+In the hands-on session, we would like to start creating an ARC together.
+To do so, please bring some data!
+
+This can be data of your current research project or an already published manuscript with supplemental data. Anything that you feel familiar with.
+
+---
+
+# Recommended for trouble-shooting
+
+:bulb: We will likely not use the tools on the next few slides. However, as of now (early September 2023), it's probably better to have them ready for trouble-shooting and to show some inner workings of the ARC.
+
+---
+
+## The command line
 
 Find the **command-line interface (CLI)** on your system.
 
@@ -108,28 +142,14 @@ arc --version
 
 ---
 
-# ARCitect Installation
+## Have a simple text editor ready
 
-:warning: work in progress :construction:
+- Windows Notepad
+- MacOS TextEdit
 
-https://github.com/nfdi4plants/ARCitect
+Recommended text editor with code highlighting, git support, terminal, etc.
 
-<span style="color:red">TODO: add link to installation instructions</span>
-
----
-
-# Swate Installation
-
-Please follow [these instructions](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html) to install the latest version of Swate.
-
----
-
-# Hands-on: Bring your own data
-
-In the hands-on session, we would like to start creating an ARC together.
-To do so, please bring some data!
-
-This can be data of your current research project or an already published manuscript with supplemental data. Anything that you feel familiar with.
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 ---
 
