@@ -64,15 +64,7 @@ September 21st, 2023
 
 <br>
   
-  :bulb: In this workshop we focus more on **how** and less on **why**
-
----
-
-
-
-# CEPLAS: Versatile data types and sources <!-- fit -->
-
-![width:1000](./../../../img/dataTypes_img1.png)
+:bulb: In this workshop we focus more on **how** and less on **why**
 
 ---
 
@@ -86,7 +78,7 @@ September 21st, 2023
 - Facilitate future reuse and sharing
 - Improve citations
 
-![bg right:40% w:400](./../../../img/comic_futureself.png)
+![bg right:40% w:400](https://rdmpromotion.rbind.io/material/CC-BY-NC/futureself.png)
 
 ---
 
@@ -210,13 +202,13 @@ object-fit: cover;
 
 # Scattered Data Silos
  
-![w:900](./../../../img/data_fragmentation_CEPLAS_seq1.png)
+![w:900](./custom/data_fragmentation_CEPLAS_seq1.png)
 
 ---
 
 # Scattered Data Silos
 
-![w:900](./../../../img/data_fragmentation_CEPLAS_seq2.png)
+![w:900](./custom/data_fragmentation_CEPLAS_seq2.png)
 
 ---
 
@@ -233,9 +225,6 @@ object-fit: cover;
 </style>
 
 ![](./../../../img/FAIR_unFAIR_Stories.png)
-
-
-
 
 
 ---
