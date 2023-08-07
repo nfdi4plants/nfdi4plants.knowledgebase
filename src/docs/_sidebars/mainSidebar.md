@@ -81,6 +81,7 @@
 ### [Generate a Personal Access Token (PAT)](/docs/guides/datahub-GeneratePAT.html)
 ## [Projects Panel](/docs/DataHUB-Manual/datahub-projectsPanel.html)
 ## [ARC Panel](/docs/DataHUB-Manual/datahub-ARCPanel.html)
+### [Forks](/docs/DataHUB-Manual/datahub-fork.html)
 ### [Working with files](/docs/DataHUB-Manual/datahub-files.html)
 ### [ARC Settings](/docs/DataHUB-Manual/datahub-ARCSettings.html)
 ### [ARC Wiki](/docs/DataHUB-Manual/datahub-ARCWiki.html)
@@ -128,3 +129,6 @@
 ### [CEPLAS Start Your ARC Series](/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html)
 
 # [Frequently Asked Questions](/docs/faqs/faqs.html)
+
+<!-- # [Community Docs](/docs/community-docs/index.html) -->
+<!-- ## [CMML Quickstart](/docs/community-docs/CMML/cmml-quickstart.html) -->
