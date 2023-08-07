@@ -12,8 +12,6 @@ author:
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
 
----
-
 # Persistent Identifiers (PIDs)
 
 ---
@@ -29,7 +27,6 @@ author:
 ![](./../../../img/exercise_PIDs_solution_img1.png)
 
 ---
-
 
 # Globally unique, stable, persistent identifiers (PIDs)
 
@@ -55,8 +52,6 @@ E.g. CEPLAS:
 - Clickable (resolvable)
 
 ---
-
-
 
 # Good URIs (Uniform Resource Identifiers)
 
@@ -130,31 +125,12 @@ Repository | Description | Biological data domain
 [EBI-ENA](<https://www.ebi.ac.uk/ena/>) | European Nucleotide Archive | genome / transcriptome sequences
 [NCBI-SRA](<https://www.ncbi.nlm.nih.gov/sra/>) | Sequence Read Archive | genome / transcriptome sequences
 [NCBI-GenBank](<https://www.ncbi.nlm.nih.gov/genbank/>) | Genetic Sequence Database | genome
-
-
-
-
----
-
-# Domain-specific data repositories
-Repository | Description | Biological data domain
--- | -- | --
 [EBI-ArrayExpress](<https://www.ebi.ac.uk/arrayexpress/>) | Archive of Functional Genomics Data | transcriptome  
 [NCBI-GEO](<https://www.ncbi.nlm.nih.gov/geo/>) | Gene Expression Omnibus | transcriptome
 [e!DAL-PGP](<https://edal.ipk-gatersleben.de/index.html>) | Plant Genomics & Phenomics Research Data Repository | phenome
-
-
----
-
-# Domain-specific data repositories
-Repository | Description | Biological data domain
--- | -- | --
 [EBI-MetaboLights](<https://www.ebi.ac.uk/metabolights/>) | Database of Metabolomics | metabolome
 [EBI-PRIDE](<https://www.ebi.ac.uk/pride/>) | PRoteomics IDEntifications Database | proteome
 [EBI-BioImage Archive](<https://www.ebi.ac.uk/bioimage-archive/>) | Stores & distributes biological images | imaging, microscopy
-
-
-
 
 ---
 
@@ -172,5 +148,3 @@ Repository | Description | Biological data domain
 
 - Only generic / high-level metadata schema
 - Limited reusability
-
-

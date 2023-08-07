@@ -219,3 +219,63 @@ Simplifies concurrent work & merging changes
 
 
 
+
+---
+---
+
+
+# Code Notebooks
+
+- <https://jupyter.org/>
+- <http://rmarkdown.rstudio.com>
+
+**Good**
+
+- Document and comment code
+- Local sharing (mostly reproducible, executable code)
+- Interactive (good start for non-coders)
+
+**Intermediate**
+
+- Reproducibility (package / library dependencies)
+- Version control (e.g. git plugin)
+
+---
+
+# Computational workflow languages
+
+<style scoped>
+.columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6em;
+}
+</style>
+
+<div class="columns">
+<div class="columns-left">
+
+- Describe analysis workflows and tools
+- Make them portable and scalable
+- Across a variety of environments (software and hardware)
+
+</div>
+
+<div class="columns-right">
+
+<!-- - <https://www.docker.com>
+- singularity -->
+<https://www.commonwl.org>
+<https://www.nextflow.io>
+<https://nf-co.re/>
+<https://snakemake.github.io>
+<br>
+<https://galaxyproject.eu/>
+
+</div>
+
+<!-- ################# -->
+<!-- Source to following slide(s) -->
+<!-- ./bricks/exercise_017_FAIRProject_final.md -->
+<!-- ################# -->
+
