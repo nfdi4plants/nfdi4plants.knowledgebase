@@ -17,7 +17,6 @@ author:
 
 **before** September 21st, 2023
 
-
 <div style="position: fixed; bottom: 10%; right: 40%;">
   <div class="profile-picture">
     <img src="https://www.biological-data-science.hhu.de/fileadmin/_processed_/8/c/csm_Sabrina_Zander_3c8daca973.jpg" alt="Sabrina Zander" style="position:absolute; height: auto; width: auto; top:65%; left: 0%; transform:translateY(-50%);"> 
@@ -57,21 +56,21 @@ ul{
 
 Required:
 
-- :white_check_mark: [Register at DataPLANT](#dataplant-registration)
-- :white_check_mark: [Install ARCitect on your computer](#arcitect-installation)
-- :white_check_mark: [Install Swate on your computer](#swate-installation)
-- :white_check_mark: [Bring your own data](#hands-on-bring-your-own-data)
+- :white_check_mark: Register at DataPLANT
+- :white_check_mark: Install ARCitect on your computer
+- :white_check_mark: Install Swate on your computer
+- :white_check_mark: Bring your own data
 
 Recommended (for trouble-shooting):
-- :white_check_mark: Find your [command line](#the-command-line)
-- :white_check_mark: Install [ARC Commander](#arc-commander-installation) and dependencies on your computer
-- :white_check_mark: [Install VS Code](#have-a-simple-text-editor-ready)
+- :white_check_mark: Find your command line
+- :white_check_mark: Install ARC Commander and dependencies on your computer
+- :white_check_mark: Install VS Code
 
 ---
 
 # DataPLANT Registration
 
-If you do not have a DataPLANT account, please register at the [DataPLANT website](<https://register.nfdi4plants.org>).
+If you do not have a DataPLANT account, please register at the <a href="https://register.nfdi4plants.org" target="_blank">DataPLANT website</a>.
 
 ![w:800](./../../../img/dataplant_registration.png)
 
@@ -89,14 +88,14 @@ Please add your `Project/consortium` (e.g. CEPLAS, SFB, TRR) and choose the role
 
 Please follow the instructions to install the latest version of ARCitect.
 
-- [macOS](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/arcitect_installation_macos.html)
-- [Windows](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/arcitect_installation_windows.html)
+- <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/arcitect_installation_macos.html" target="_blank">macOS</a>
+- <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/arcitect_installation_windows.html" target="_blank">Windows</a>
 
 ---
 
 # Swate Installation
 
-Please follow [these instructions](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html) to install the latest version of Swate.
+Please follow <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html" target="_blank">these instructions</a> to install the latest version of Swate.
 
 ---
 
@@ -130,7 +129,7 @@ Find the **command-line interface (CLI)** on your system.
 
 # ARC Commander Installation
 
-Please install the latest version of the ARC Commander and dependencies for your operating system according to the [manual's setup instructions](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index.html).
+Please install the latest version of the ARC Commander and dependencies for your operating system according to the <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index.html" target="_blank">manual's setup instructions</a>.
 
 Check if the ARC Commander is functional by displaying the ARC Commander version and help menu:
 
@@ -147,9 +146,7 @@ arc --version
 - Windows Notepad
 - MacOS TextEdit
 
-Recommended text editor with code highlighting, git support, terminal, etc.
-
-- [Visual Studio Code](https://code.visualstudio.com/)
+Recommended text editor with code highlighting, git support, terminal, etc: <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
 
 ---
 
@@ -157,7 +154,7 @@ Recommended text editor with code highlighting, git support, terminal, etc.
 
 ### <img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
 
-> Website: https://nfdi4plants.org/
-> Knowledge Base: https://nfdi4plants.org/nfdi4plants.knowledgebase/ 
-> DataHUB: https://git.nfdi4plants.org
-> GitHub: https://github.com/nfdi4plants
+Website: <a href="https://nfdi4plants.org/" target="_blank">https://nfdi4plants.org/</a>
+Knowledge Base: <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/" target="_blank">https://nfdi4plants.org/nfdi4plants.knowledgebase/</a>
+DataHUB: <a href="https://git.nfdi4plants.org" target="_blank">https://git.nfdi4plants.org</a>
+GitHub: <a href="https://github.com/nfdi4plants" target="_blank">https://github.com/nfdi4plants</a>
