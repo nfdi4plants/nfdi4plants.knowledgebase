@@ -81,6 +81,7 @@
 ### [Generate a Personal Access Token (PAT)](/docs/guides/datahub-GeneratePAT.html)
 ## [Projects Panel](/docs/DataHUB-Manual/datahub-projectsPanel.html)
 ## [ARC Panel](/docs/DataHUB-Manual/datahub-ARCPanel.html)
+### [Forks](/docs/DataHUB-Manual/datahub-fork.html)
 ### [Working with files](/docs/DataHUB-Manual/datahub-files.html)
 ### [ARC Settings](/docs/DataHUB-Manual/datahub-ARCSettings.html)
 ### [ARC Wiki](/docs/DataHUB-Manual/datahub-ARCWiki.html)
@@ -109,6 +110,8 @@
 ### [Keep files from syncing to the DataHUB](/docs/guides/arc_gitignore.html)
 ### [Working with large data files](/docs/guides/arc_WorkingWithLargeDataFiles.html)
 ### [Adding external data to the ARC](/docs/guides/arc_AddingExternalData.html)
+<!-- ### [ARCs in Service Platforms](/docs/guides/ARC-ServicePlatforms.html) -->
+
 
 ## [Contribute](/docs/guides/index-Contribute.html)
 ### [Swate Templates](/docs/guides/swate_template-contribution.html)
@@ -126,3 +129,6 @@
 ### [CEPLAS Start Your ARC Series](/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html)
 
 # [Frequently Asked Questions](/docs/faqs/faqs.html)
+
+<!-- # [Community Docs](/docs/community-docs/index.html) -->
+<!-- ## [CMML Quickstart](/docs/community-docs/CMML/cmml-quickstart.html) -->

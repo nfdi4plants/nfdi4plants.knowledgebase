@@ -13,29 +13,29 @@ add toc: true
 add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
-
+<!--
+http://127.0.0.1:8080/docs/community-docs/CMML/cmml-quickstart.html
+-->
 ## About this guide
 
 This quick start introduces how to cooperate with the [CEPLAS metabolomics & metabolism laboratory (CMML)](https://www.ceplas.eu/en/research/plant-metabolism-and-metabolomics-facility) at Heinrich-Heine-University in Düsseldorf.
 
-Major focus here is on exchange of data between CMML and the user using tools and services provided by DataPLANT.
+The primary focus is on the exchange of data between CMML and the user by applying tools and services provided by DataPLANT.
 
 ### Contact the CMML
 
-Please check the CMML websites for contact options: 
+Please check the CMML websites for contact options:
 
 - at CEPLAS: https://www.ceplas.eu/en/research/plant-metabolism-and-metabolomics-facility
 - at HHU: https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling
 
-
-### 👥 Cooperation &ndash; User regulation
+### Cooperation &ndash; User regulation
 
 Please note that __all cooperations__ are incumbent upon the [User regulation ("Nutzerordnung")](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung).
 
-
 ## Data Flow between CMML and the user
 
-### 🌐 ARC - Annotated Research Context
+### ARC &ndash; Annotated Research Context
 
 The CMML uses the [Annotated Research Context (ARC)](./../../implementation/AnnotatedResearchContext.html) for data exchange.
 With the ARC we can easily exchange sample sheets, workflows, protocols and share (meta-)data inside a common and shareable folder structure. The ARC is shared via DataPLANT's [DataHUB](./../../implementation/DataHub.html).
@@ -46,9 +46,9 @@ The CMML creates an ARC for your project at the [DataHUB](https://git.nfdi4plant
 
 ***
 
-### 👣 Setup
+### Setup
 
-1. Please [__create a DataHUB account!__](https://register.nfdi4plants.org)
+1. Please __create__  a [DataHUB account!](https://register.nfdi4plants.org)
 
     :bulb: You can also log in with your scientific account ORCID or Life Sciences!
 
@@ -59,47 +59,42 @@ The CMML creates an ARC for your project at the [DataHUB](https://git.nfdi4plant
 3. Please __email__ this _@username_ to the CMML.   
 4. The CMML will invite you to a shared ARC for your project.
 5. Once the access to your ARC was granted, you will receive an e-mail.
+
+   :arrow_right: The name of your ARC is your __project-number__ followed by your last name.
+
 6. Please follow the link in the e-mail (green arrow) and log in with your DataHUB account.
 
 <img src="./image/cmml-quickstart/DataHUB-Access-Mail.png" style="width:65%;display: block; margin: 20px auto;">
 
-<!-- 5. __Read and follow__ the next instructions - __📘 User Guide - ARC__ and __📙 User Guide - DataHUB__. -->
-
 ***
 
-## 📙 User Guide &ndash; DataHUB
+## User Guide &ndash; DataHUB
 
-### 📖 Introduction to the DataHUB
-
-This section gives you a short introduction to some helpful parts of the DataHUB.
-
-:bulb: Please check out the [DataHUB manual](./../../DataHUB-Manual/index.html) for more details.
-
-The sidebar is found on the left side of your ARC.
-
-<img src="./image/cmml-quickstart/ARC_Menu.png" style="width:25%; display: block; margin: 20px auto;">
-
-1. If you click on the __name of the ARC__ you can always return to the front page.
-
-   :arrow_right: At the front page there is also the possibility to search for specific files with __'Find Files'__.
-
-2. Under __'Project information'__ in the section __'Members'__ you can see all members involved in the ARC and there is also the possibility to add other members.
-
-3. The section __'Issues'__ should help to collaborate on ideas, solve problems, and plan work.
-
-4. Under __'Wiki'__ you can create or edit a 'Page' for meeting-protocols or writing down sharable notes.
-
+This section gives you a short introduction to some helpful features of the DataHUB.
 
 :bulb: The DataHUB allows to directly operate files and folders without using any other tools similar to what you are used to from your computer's file explorer or finder.
 
-:bulb: For details, please check out the [DataHUB manual](./../../DataHUB-Manual/datahub-files.html).
+On the website you can find the sidebar on the left side of your ARC.
 
+<img src="./image/cmml-quickstart/ARC_Menu.png" style="width:25%; display: block; margin: 20px auto;">
 
-## 📘 User Guide - ARC
+1. If you click on the name of the ARC you can always return to the front page.
 
-### 📖 Introduction to ARC
+   :bulb: At the front page there is also the possibility to search for specific files with 'Find Files'.
 
-The basic ARC folder structure consists of:
+2. Under 'Project information' in the section 'Members' you can see all members involved in the ARC and there is also the possibility to add other members.
+
+3. The section 'Issues' helps to collaborate on ideas, solve problems, and plan work.
+
+4. Under 'Wiki' you can find 'Page'. Here we can create or edit a 'Page' to summarize meeting minutes or write down sharable notes.
+
+:bulb: For more details about DataHUB &ndash; please check out the [DataHUB manual](./../../DataHUB-Manual/datahub-files.html).
+
+## User Guide &ndash; the ARC
+
+### Introduction to the ARC
+
+The ARC is made up of several folders. The basic ARC folder structure consists of:
 
 - studies
 - assays
@@ -113,21 +108,19 @@ Those folders contain specific parts of a research project.
 > - studies: Cultivation and sampling of plants or cells 
 > - assays: Metabolite extraction and derivatization or measurements of the samples
 
-It can also contain project-specific folders like 'images' or 'literature'.
+It is also possible to add additional folder structures like "_literature" to the ARC so it can be adapted for the project.
 
-<img src="./image/cmml-quickstart/ARC-Folder-structure.png" style="width:30%; display: block; margin: 20px auto;">
-
-The following guide will help you to get started to work with ARC.
+<img src="./image/cmml-quickstart/ARC_folders.png" style="width:30%; display: block; margin: 20px auto;">
 
 ***
 
-### 📖 isa.investigations.xlsx
+### isa.investigations.xlsx
 
 This workbook records the metadata of the whole project. In the first part it stores information about the whole project. It includes an Identifier, Title and Description and also publication data - if published. There is also a part for personal data. Here each column is deticated to a person and it can be filled out manually.
 
 <img src="./image/cmml-quickstart/isa-investigation.png" style="width:45%; display: block; margin: 20px auto;">
 
-:pen: __Fill out__ the part __'INVESTIGATION CONTACTS'__ with your personal data (the following are mandatory):
+:pen: __Fill out__ the part __INVESTIGATION CONTACTS__ with your personal data. You can download the file and replace the online-version afterwards. The following information are mandatory:
 
 - First and Last Name
 - Email
@@ -135,11 +128,13 @@ This workbook records the metadata of the whole project. In the first part it st
 - Address
 - Affiliation
 
-:bulb: For the other parts below the __'INVESTIGATION CONTACTS'__ sections it is recommended to use [ARC Commander](./../../implementation/ArcCommander.html) for adding the metadata. This is less error-prone than filling it out manually.
+<!--
+:bulb: For the other parts below the __INVESTIGATION CONTACTS__ sections it is recommended to use [ARC Commander](./../../implementation/ArcCommander.html) for adding the metadata. This is less error-prone than filling it out manually.
+-->
 
 ***
 
-### 📖 Studies and Assays
+### Studies and Assays
 
 Study and assay folders always consist of the following structures:
 
@@ -147,55 +142,51 @@ Study and assay folders always consist of the following structures:
 
 Every part of a research project finds a place to be put in:
 
-1. __isa.study.xlsx__ or __isa.assay.xlsx__:  
+1. __isa.study.xlsx__ or __isa.assay.xlsx__ consist of two excel sheets:  
 
-   :arrow_right: for this description go to the [next](#📖-isastudyxlsx-or-isaassayxlsx) part of the instruction
+- __Sample sheet__ that holds the name of the study or assay.
+  
+    :arrow_right: Here you __describe__ your samples, how they have been processed and give them a __CMML-specific identifier__ that consists of your project-number and a following numbering. You can download the file and replace the online-version afterwards.
 
-2. __Protocols__:  
+    :pen: The samples must be __labelled with a continous number and the box with the project-number and sample set.__
 
-   - "substitute" for Lab-book
-   - here you should write down the used method, but also put in for example plasmid-cards that are specific for this part of the research
-   - most optimal file-format would be .txt, but a Word-file can also be possible
+    :arrow_right: Also let us know whether the samples should be stored after processing, picked up or whether they can be destroyed.
+
+> Example &ndash; the first sample set has 20 samples and your project-number is 23-0065:
+>
+> - The final numbering in the sample sheet would be: __23-0065_001__ up to __23-0065_020__
+> - The sample box must be labeled with __23-0065_01__
+> - The sample tubes must then be labelled with __001__ up to __020__
+> - If you provide another sample set, the numbering on the tubes and in the sample sheet are consecutive for all samples.
+
+- __Metadata__ - the sheet is called 'Study' or 'Assay'.
+
+2. __Protocols__:
+
+    :pen: Here you should __write down__ the used method, but also put in for example plasmid-cards or images that are specific for this part of the research.
+
+    :arrow_right: Most optimal __file-format__ would be __.txt__ or __.md__, but a Word-file and other formats can also be possible.
 
 3. __Resources__ (only in studies)
 
 4. __Dataset__ (only in assays)
   
-5. __README.md__: description and notes for the specific study or assay
+5. __README.md__: This file can be used to describe different "studies" and "assays" and take notes for this specific section of the experiment. The document is then visible on the website in the lower area when opening the respective structure.
 
 ***
 
-### 📖 isa.study.xlsx and isa.assay.xlsx
+## Checklist for Cooperations with CMML
 
-The isa.study.xlsx and isa.assay.xlsx files consist of two excel sheets
+:bulb: Our department is only able to accept and process the samples if the following checklist is fulfilled:
 
-1. __Sample sheet__ that holds the name of the study or assay
+1. Read the [User regulation ("Nutzerordnung")](https://www.plant-biochemistry.hhu.de/facilities/metabolic-profiling/nutzerordnung).
+1. Setup a [DataHUB account](https://register.nfdi4plants.org).
+1. Access to your ARC.
+1. __isa.investigations.xlsx__: Fill out the part INVESTIGATION CONTACTS with the mandatory information.
+1. __isa.study/assay.xlsx__: Fill out the Sample sheet.
+1. Labelling of the samples with CMML-specific identifier.
+1. Also let us know whether the samples should be stored after processing, picked up or whether they can be destroyed.
 
-  :arrow_right: Here you __describe__ your samples, how they have been processed and give them a __CMML-specific label__ that consists of your project-number and a following numbering
+## CMML Support 🌱
 
-__:pen: The samples must be labelled with the last digits and the box with the project-number and sample set.__
-> Example:
->
-> - The __first sampleset__ has 20 samples and your project-number is: 23-0065
-> - The final numbering in the samplesheet would be: __23-0065_001__ up to __23-0065_020__
-> - The sample box must be labeled with __23-0065_01__
-> - The sample tubes must then be labelled with __001__ up to __020__
-> - If you provide another sample set, the numbering on the tubes are consecutive for all samples.
->
-
-1. __Metadata__ - the sheet is called 'Study' or 'Assay'
-
- :pen: __Fill out__ the Metadata as best as you can (the following parts are mandatory):
-
-- __for studies__:
-  - Study Title
-  - Study Description
-  - STUDY CONTACTS
-- __for assays__:
-  - ASSAY PERFORMERS
-
-***
-
-## 🌱 CMML Support
-
-If any problems occur there is the possibility to check the common [__Knowledgebase__](./../../index.html) from DataPLANT for solutions. Otherwise contact the CMML so the problems can be solved together. You can always come back to this __Qickstart__ with the shared link and we are open for any suggestions to improve it.
+If any problems occur please also check the common [DataPLANT Knowledgebase](./../../index.html) for solutions. Otherwise contact the CMML so the problems can be solved together. You can always come back to this __Quickstart__ with the shared link and we are open for any suggestions to improve it.
