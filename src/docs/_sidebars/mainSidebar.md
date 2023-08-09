@@ -53,6 +53,10 @@
 ### [Update](/docs/ArcCommanderManual/arc_update.html)
 ### [Export](/docs/ArcCommanderManual/arc_export.html)
 
+# [ARCitect Manual](/docs/ARCitect-Manual/index.html)
+## [Installation - Windows](/docs/ARCitect-Manual/arcitect_installation_windows.html)
+## [Installation - macOS](/docs/ARCitect-Manual/arcitect_installation_macos.html)
+
 # [Swate Manual](/docs/SwateManual/index.html)
 ## [Setup](/docs/SwateManual/Docs01-Installing-Swate.html)
 ### [Installing Swate](/docs/SwateManual/Docs01-Installing-Swate.html)
