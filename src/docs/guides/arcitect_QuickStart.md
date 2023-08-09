@@ -1,5 +1,5 @@
 ---
-layout: docs
+layout: none
 title: ARCitect QuickStart
 date: 2023-08-01
 author:
@@ -9,7 +9,7 @@ author:
 add toc: true
 add support: true
 add sidebar: _sidebars/mainSidebar.md
-status: published
+status: draft
 ---
 
 ## About this guide
@@ -38,9 +38,10 @@ Please make sure
 3. Select a location and give your ARC a name
 
 💡 By default, this name will be used
-  - for the ARC folder on your machine
-  - to create your ARC in the DataHUB at `https://git.nfdi4plants.org/<YourUserName>/<YourARC>` (see next steps)
-  - as the Identifier for your ARC
+   - for the ARC folder on your machine
+   - to create your ARC in the DataHUB at `https://git.nfdi4plants.org/<YourUserName>/<YourARC>` (see next steps)
+   - as the identifier for your investigation
+
 💡 Make sure that no ARC exists at `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`. Otherwise you will sync to that ARC.
 
-4. Click on the 
+1. Click on the 
