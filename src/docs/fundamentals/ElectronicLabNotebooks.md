@@ -1,5 +1,5 @@
 ---
-layout: docs
+layout: none
 title: Electronic Lab Notebooks (ELNs)
 author:
 - name: Dominik Brilhaus
@@ -7,7 +7,7 @@ author:
   orcid: https://orcid.org/0000-0001-9021-3197
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
-date: 2023-08-01
+date: 2023-08-09
 status: draft
 ---
 
@@ -16,8 +16,6 @@ status: draft
 - [Protocols - Recipes to Knowledge](#protocols---recipes-to-knowledge)
 - [ELN - Digital Protocol Editors](#eln---digital-protocol-editors)
 - [ARCs - Packaging ELN protocols with the data](#arcs---packaging-eln-protocols-with-the-data)
-- [Actions to make the best of using ELNs with ARCs](#actions-to-make-the-best-of-using-elns-with-arcs)
-- [Outlook](#outlook)
 
 ## Protocols - Recipes to Knowledge
 
@@ -41,13 +39,15 @@ Protocols generated in ELNs integrate well with the ARC. Protocols and the metad
 
 Since ARCs (are designed as FAIR digital objects, which) combine the data files with the metadata in one research data package, they facilitate to store, share and reuse the research data as a whole. <!-- rather than just the protocol // just the data without metadata  -->
 
+<!-- 
 
 ## Actions to make the best of using ELNs with ARCs
 
 In the following sections we outline recommendations to take full advantage of ELNs together with ARCs. These recommendations include conceptual measures or organizational decisions that are independent of the use of an ELN or ARC as well as manual practices that one could implement immediately to facilitate their integration. Further we will explore possible routes towards automated and tool-aided integrations and interfaces. We try to highlight, where the ARC and a typical ELN conceptually mean the same thing or in technical terms *could write to and read from the same file*.
 
 The goal of bridging the use of ELNs with ARCs is to foster FAIRness in an approach that reduces the documentation work by minimizing duplications and redundancies. To achieve this, the approach needs to integrate smoothly with daily routines of both wet-lab and computational biologists. 
-<!-- an intuitive and unblocked / unhindered mechanisms to "along the way" -->
+
+an intuitive and unblocked / unhindered mechanisms to "along the way"
 
 ### Structure your ELN: un-mix and disentangle
 
@@ -183,6 +183,7 @@ Study Protocol Name
 - integrate ontology API into ELN
 - access management
 
+-->
 
 
 <!-- 
