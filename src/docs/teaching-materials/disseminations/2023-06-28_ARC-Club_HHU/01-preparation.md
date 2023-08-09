@@ -42,7 +42,6 @@ Required:
 - :white_check_mark: Register at DataPLANT
 - :white_check_mark: Install ARCitect on your computer
 - :white_check_mark: Install Swate on your computer
-- :white_check_mark: Bring your own data
 
 Recommended (for trouble-shooting):
 - :white_check_mark: Find your command line
