@@ -25,7 +25,7 @@ a two-day adventure to prepare your lab for the ARC universe
 <br>
 <br>
 
-Dominik Brilhaus &ndash; CEPLAS Data Science 
+Dominik Brilhaus &ndash; CEPLAS Data Science
 June 28th, 2023
 
 # Annotated Research Context (ARC)
@@ -54,7 +54,6 @@ section {
 
 ![](./../../../img/DataHUB_LandingPage.png)
 
- <!-- <iframe src="https://git.nfdi4plants.org/explore" width="1100" height="400"></iframe> -->
 
 DataHUB: https://git.nfdi4plants.org/
 
@@ -64,7 +63,6 @@ DataHUB: https://git.nfdi4plants.org/
 
 ![w:900](images/InsituteFileShare01.drawio.svg)
 
-[smb://weberdata.ad.hhu.de/agweber/ht_data/](https://webdav-linux.hhu.de/metdata/agweber/ht_data/)
 
 ## Moving from FileShare to DataHUB
 
@@ -100,14 +98,6 @@ DataHUB: https://git.nfdi4plants.org/
 - Data users can pick them up from there
 
 
-<!--  TODO -->
-
-<!-- Draw image: lift project over the line: below / above : with / without ARC.
-Above line => Autobahn / Rocket / project liftin off (into a good future)
-
-Starting point -->
-
-
 ## The ARC Club &ndash; Rules
 
 You do not talk about **ARC Club**
@@ -128,10 +118,10 @@ You do not talk about **ARC Club**
 - DataHUB user accounts https://register.nfdi4plants.org/
 - DataHUB user group: https://git.nfdi4plants.org/hhu-plant-biochemistry
 - Installation
-  - [ARC Commander](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index-setup.html)
+  - [ARCitect](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html)
   - [Swate](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html)
+  - [ARC Commander](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index-setup.html)  
 - List of projects to be ARCified
-  - @Nicole, @Urte, @Dominik
 
 ## Why you want to join the **ARC Club**
 
@@ -144,7 +134,7 @@ You do not talk about **ARC Club**
 - Your contribution to the ARC will be visible
 - Food :pizza:
 - Drinks :beers:
-- After-ARCathon Party 🥳 
+- After-ARCathon Party 🥳
 
 ## Rough Schedule
 
@@ -189,64 +179,14 @@ Evening | *tbd* :beers:
 </div>
 </div>
 
-
 ## Volunteers
 
-Coders, data handlers, data users, ARC early adopters, long-term Weberlab-associated
-
-<style scoped>
-.columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-</style>
-
-<div class="columns">
-<div class="columns-left">
-
-- Sebastian
-- Krzysztof
-- Hanna
-- Jose
-- Lea
-</div>
-<div class="columns-right">
-
-- Philipp
-- Nicole
-- Urte
-- Franzi K.
-- Dominik
-- ...`<your Name>`
-</div>
-</div>
+- coders
+- data handlers
+- data users
+- ARC early adopters
+- long-term lab-associates
 
 ## Dates
 
 August 16/17 or August 17/18
-
-
-
-
-
-
-
-<!-- 
-## "easy" catches
-
-- published data
-- why even ARC them?
-
-
-## more challenging ARCs
-
-- (unpublished) left-overs of colleagues who have since moved
-
-
-
-## perspective
-
-- This is just a start
-- Appreciate change
-
- -->
