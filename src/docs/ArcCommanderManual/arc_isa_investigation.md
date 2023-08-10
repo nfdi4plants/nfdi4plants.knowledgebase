@@ -16,6 +16,8 @@ add sidebar: _sidebars/mainSidebar.md
 
 > :warning: Avoid using spaces in the identifier. Use underscores and capital letters instead.
 
+> Suggestion: Use your ARC name (without spaces) as your temporary identifier. 
+
 | Field                   | Description                                                          | Input                                                                                                                 |
 |-------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | Identifier (Mandatory)  | A identifier or an accession number provided by a repository.        | 2021_TestARC05                                                                                                        |
