@@ -10,7 +10,7 @@ add sidebar: _sidebars/mainSidebar.md
 1. Download the latest ARC Commander release
 
     ```bash
-    wget https://github.com/nfdi4plants/arcCommander/releases/download/v0.4.0-linux.x64/arc
+    wget https://github.com/nfdi4plants/arcCommander/releases/download/v0.5.0-linux.x64/arc
     ```
 
 1. Make it executable
@@ -38,7 +38,7 @@ You should see the following or similar message:
 
 > Start processing parameterless command.  
 > Start Arc Version  
-> v0.4.0
+> v0.5.0
 > Done processing command.  
 
 > :bulb: A global config file will be created the first time you use the ARC Commander at `~/.config/DataPLANT/ArcCommander/ArcCommander.config`
