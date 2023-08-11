@@ -22,7 +22,7 @@ add sidebar: _sidebars/mainSidebar.md
 
 > :warning: An assay identifier also sets the folder name, so ensure to avoid special characters!
 
-> :warning: If you only initiated a study and assay but did not yet register it, arc update will overwrite the study name in arcCommander 0.4.0. This is solved in [0.5.0](https://github.com/nfdi4plants/arcCommander/releases/tag/v0.5.0-preview2-fat) which is currently available as a preview Version. This problem does not occur when you use `arc a add` (see above and an example below the table).
+> :warning: If you only initiated a study and assay but did not yet register it, arc update will overwrite the study name in ARC Commander v0.4.0. This is solved in [v0.5.0](https://github.com/nfdi4plants/arcCommander/releases/tag/v0.5.0-preview2-fat) which is currently available as a preview Version. This problem does not occur when you use `arc a add` (see above and an example below the table).
 
 |     Field                                 |     Description                                                                                                                                                                                                                                                                                                                    |     Input                   |
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
