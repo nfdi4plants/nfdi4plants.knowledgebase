@@ -1,12 +1,7 @@
 ---
-marp: true
-headingDivider: 
-    - 1
-    - 2
-    - 3
 layout: docs
-title: Contribution Swate Templates
-date: 2023-04-18
+title: Swate Templates Contribution Guide
+date: 2023-08-14
 author: 
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -55,9 +50,9 @@ Before contributing Swate templates you ideally have
 
 ## Git Workflow to add or edit templates
 
-1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) the [Swate-templates repository](https://github.com/nfdi4plants/Swate-templates).
-2. (Recommended) [Create an issue](https://github.com/nfdi4plants/Swate-templates/issues/new/choose) with background information about the template you want to add. This also serves as a place for discussion.
-3. (Recommended) Create a feature branch on your fork.
+1. (Recommended) [Create an issue](https://github.com/nfdi4plants/Swate-templates/issues/new/choose) with background information about the template you want to add. This also serves as a place for discussion.
+2. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) the [Swate-templates repository](https://github.com/nfdi4plants/Swate-templates).
+3. (Recommended) Create a feature branch (e.g. "template-xy") on your fork.
 4. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) your fork-branch
 5. Add/update **ONE** template ([see steps below](#creating-a-new-swate-template))
 6. Commit, push and [sync your branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork).
