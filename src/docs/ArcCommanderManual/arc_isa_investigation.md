@@ -88,7 +88,7 @@ add sidebar: _sidebars/mainSidebar.md
 | Title                      | The title of publication associated with the investigation.                                                                                                                                 |                         |
 | Status                     | A term describing the status of that publication (i.e. submitted, in preparation, published).                                                                                               | in preparation          |
 | StatusTermAccessionNumber  | The accession number from the Term Source associated with the selected term.                                                                                                                |   http://www.ebi.ac.uk/efo/EFO_0001795                      |
-| StatusTermSourceREF        | Identifies the controlled vocabulary or ontology that this term comes from. The Source REF has to match one of the Term Source Names declared in the in the Ontology Source Reference section. The [Experimental Factor Ontology](https://www.ebi.ac.uk/ols/ontologies/efo) (EFO) could be used for describing the status.  | EFO                        |
+| StatusTermSourceREF        | Identifies the controlled vocabulary or ontology that this term comes from. The Source REF has to match one of the Term Source Names declared in the Ontology Source Reference section. The [Experimental Factor Ontology](https://www.ebi.ac.uk/ols/ontologies/efo) (EFO) could be used for describing the status.  | EFO                        |
 
 ### Listing and inspecting registered publications
 
