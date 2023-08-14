@@ -7,9 +7,10 @@ headingDivider:
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 layout: slides
-author: Dominik Brilhaus
-author_orcid: https://orcid.org/0000-0001-9021-3197
-author_github: brilator
+author:
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
 date: 2023-06-28
 status: ready
 title: ARC Club
@@ -88,7 +89,6 @@ DataHUB: https://git.nfdi4plants.org/
 - Technical *ad-hoc* support by DataPLANT
 
 ![bg right:40% w:450px](./images/ARCClub.drawio.svg)
-
 
 ## The ARC Club &ndash; Goals
 
