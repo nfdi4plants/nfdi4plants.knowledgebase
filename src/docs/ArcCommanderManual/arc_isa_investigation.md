@@ -56,6 +56,8 @@ add sidebar: _sidebars/mainSidebar.md
 - Instead of using the editor, the following command can be used:  
 `arc i person register -l Doe -f John -m P --email jpdoe@mail.com --phone "+49(0)631 205 3045" --address "Paul-Ehrlich-Straße 23, 67663 Kaiserslautern" --affiliation "Department of M21 Measurements, Technische Universität Kaiserslautern, Germany" --roles "supervisor"`
 
+- optional: You can add with `--orcid XXXX-XXXX-XXXX-XXXX` the respective ORCID iD of the person to be registered as a comment (only possible via command line).
+
 ### Listing and inspecting registered persons
 
 - Registered persons can be listed by `arc i person list`.
