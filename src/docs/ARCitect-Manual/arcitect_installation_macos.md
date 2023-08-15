@@ -14,12 +14,18 @@ add sidebar: _sidebars/mainSidebar.md
 
 🚧 The ARCitect is currently being developed and not fully user-ready, yet. Installation for beta-testing requires an admin account.
 
-## Prerequisite: Install Node.js
+## Prerequisites
+
+### Install Node.js
 
 Please install the latest version of [Node.js](https://nodejs.org/en/download).
 
 1. Download the installer for your operating system (e.g. macOS Installer)
 2. Once downloaded, open the `node-x.x.x.pkg` from your downloads folder and follow the "Install Node.js" instructions.
+
+### Install ARC Commander and Git
+
+Please follow the [ARC Commander Setup](./../ArcCommanderManual/index-setup.html) to install the latest version of ARC Commander and its dependencies.
 
 ## Install the ARCitect
 
