@@ -513,12 +513,12 @@
 </div>
 <nfdi-h2 id="enabling-platforms">Enabling Platforms</nfdi-h2>
 <p>Central <em>enabling platforms</em> can range from small single-lab services to large instrumentation-based research infrastructures such as core facilities. Platforms offer a specific set of methods and assays as a routine support to a community of researchers. Typical examples with application in plant sciences include platforms offering &quot;omics&quot; technologies (genome, transcriptome, proteome, metabolome), phenotyping, (microscopic) imaging, genetic engineering or plant growth facilities.</p>
-<p><em>For simplicity, in this guide we call researchers, clients, customers approaching the platform &quot;collaborators&quot;.</em></p>
+<nfdi-h2 id="project-communication-and-data-flow">Project communication and data flow</nfdi-h2>
+<p><em>For simplicity, in this guide we call researchers, clients and customers approaching the platform &quot;collaborators&quot;.</em></p>
 <div style="height:40px; display: flex; align-items: center; justify-content: left;">
   <img src="./../img/icons-characters-PhDStudent.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">collaborator
   <img src="./../img/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">platform team
 </div>
-<nfdi-h2 id="project-communication-and-data-flow">Project communication and data flow</nfdi-h2>
 <p>Central platforms interact with many versatile collaborators. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings and emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted.</p>
 <nfdi-h3 id="project-management">Project management</nfdi-h3>
 <p>As a platform you manage a lot of projects in parallel. Keeping these projects up-to-date and coordinated between collaborators and platform team members is challenging.</p>
@@ -530,7 +530,7 @@
 <li>You can also keep naming your ARCs with the same way you are used to name your project folders</li>
 </ul>
 <nfdi-h3 id="streamlined-data-exchange">Streamlined data exchange</nfdi-h3>
-<p>During project collaboration a lot of information and metadata is exchanged.
+<p>During project collaboration a lot of information including metadata is exchanged.
 Here's an idea what your data flow could look like with the ARC:</p>
 <div>
   <img src="./../img/enablingPlatform-FileShare.drawio.png" style="width:60%;display: block;margin-left: auto;margin-right: auto;">
@@ -562,9 +562,9 @@ Here's an idea what your data flow could look like with the ARC:</p>
 <nfdi-h3 id="track-changes-and-provenance">Track changes and provenance</nfdi-h3>
 <p>Different people are involved in the projects passing your platform. From team members to internal and external collaboration partners (collaborators). This makes it sometimes hard to keep track of who contributed how, what, when, why and to manage who needs access to which data.</p>
 <ul>
-<li>The <a href="./../implementation/DataHub.html">DataHUB</a> facilitates access management across institute boarders.</li>
+<li>The <a href="./../implementation/DataHub.html">DataHUB</a> facilitates access management across institute boarders</li>
 <li>ARCs document <a href="./../fundamentals/VersionControlGit.html">changes and contributions</a></li>
-<li>The <a href="./isa_FileTypes.html">ISA metadata model</a> allows to associate contributors with investigations and studies. List your team members to ensure proper credit for their contributions.</li>
+<li>The <a href="./isa_FileTypes.html">ISA metadata model</a> allows to associate contributors with investigations and studies. List your team members to ensure proper credit for their contributions</li>
 </ul>
 <nfdi-h3 id="routine-computations">Routine computations</nfdi-h3>
 <p>Your platform supports researchers with a specific set of methods and assays. You perform routine measurements, follow established protocols and SOPs to generate specific types of samples and data. Aligned with your lab workflows, you also follow computational routines: For the same types of (raw) data you re-use computational steps for processing and analysis.
@@ -626,7 +626,7 @@ Eventually this depends on different factors, e.g. the type of collaboration you
 <p><img src="../img/enablingPlatform-Timeline.drawio.png" alt="" /></p>
 <p>Following the exemplary scenario A, you could setup the ARC for your collaboration (1), add the relevant studies and assays (2) as well as templates (3) as discussed with them and ask them to complement the required metadata (4) and protocols (5) before you can run the assays and add the dataset (6).</p>
 <p>Alternatively, collaborators already working with ARCs could invite you to &quot;their&quot; ARC (exemplary scenario B). They can independently set up the ARC and fill metadata (4) based on your prepared templates (3).</p>
-<p>💡 In scenario B the collaborator might invite you to a very large ARC with data not really relevant for your platform-specific collaboration. In this case you might want to <a href="./../guides/arc_gitignore.html">exclude irrelevant data</a> or <a href="./../guides/arc_gitignore.html">avoid downloading large data</a> when syncing the ARC.</p>
+<p>💡 In scenario B the collaborator might invite you to a very large ARC with data not really relevant for your platform-specific collaboration. In this case you might want to <a href="./../guides/arc_gitignore.html">exclude irrelevant data or avoid downloading large data</a> when syncing the ARC.</p>
 <p><strong>Can I retain my established naming convention for project management and data storage?</strong></p>
 <p>Running a central platform, you probably follow an established project management system or naming convention.
 This is particularly important for how project folders are named on your platform's data storage. When implementing ARCs, <strong>you do not need to change</strong> this system.
