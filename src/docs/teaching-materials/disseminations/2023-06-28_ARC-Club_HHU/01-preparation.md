@@ -1,7 +1,7 @@
 ---
 marp: true
 paginate: true
-theme: marp-theme_dataplant-ceplas-mibinet-ccby
+theme: marp-theme_dataplant-ceplas-ccby
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 title: Preparation
 author:
@@ -11,18 +11,17 @@ author:
 date: 2023-09-08
 ---
 
-# Preparation
+# The ARC Club
 
 <style scoped>section {background: none; background-color: white}</style>
 <!-- _paginate: false -->
 
+Preparation
 **before** August 16th, 2023
 
 <br>
-<br>
 
 Dominik Brilhaus &ndash; CEPLAS Data Science
-August 9th, 2023
 
 ---
 
