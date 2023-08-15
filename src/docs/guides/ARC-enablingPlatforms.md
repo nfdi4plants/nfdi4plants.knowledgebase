@@ -47,14 +47,14 @@ It helps to be familiar with
 
 Central *enabling platforms* can range from small single-lab services to large instrumentation-based research infrastructures such as core facilities. Platforms offer a specific set of methods and assays as a routine support to a community of researchers. Typical examples with application in plant sciences include platforms offering "omics" technologies (genome, transcriptome, proteome, metabolome), phenotyping, (microscopic) imaging, genetic engineering or plant growth facilities.
 
-*For simplicity, in this guide we call researchers, clients, customers approaching the platform "collaborators".*
+## Project communication and data flow
+
+*For simplicity, in this guide we call researchers, clients and customers approaching the platform "collaborators".*
 
 <div style="height:40px; display: flex; align-items: center; justify-content: left;">
   <img src="./../img/icons-characters-PhDStudent.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">collaborator
   <img src="./../img/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">platform team
 </div>
-
-## Project communication and data flow
 
 Central platforms interact with many versatile collaborators. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings and emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted.
 
@@ -71,7 +71,7 @@ Here's a few tips to support your project management:
 
 ### Streamlined data exchange
 
-During project collaboration a lot of information and metadata is exchanged.
+During project collaboration a lot of information including metadata is exchanged.
 Here's an idea what your data flow could look like with the ARC:
 
 <div>
@@ -104,9 +104,9 @@ The DataHUB can help as a platform to centralize data from different sources and
 
 Different people are involved in the projects passing your platform. From team members to internal and external collaboration partners (collaborators). This makes it sometimes hard to keep track of who contributed how, what, when, why and to manage who needs access to which data.
 
-- The [DataHUB](./../implementation/DataHub.html) facilitates access management across institute boarders.
+- The [DataHUB](./../implementation/DataHub.html) facilitates access management across institute boarders
 - ARCs document [changes and contributions](./../fundamentals/VersionControlGit.html)
-- The [ISA metadata model](./isa_FileTypes.html) allows to associate contributors with investigations and studies. List your team members to ensure proper credit for their contributions.
+- The [ISA metadata model](./isa_FileTypes.html) allows to associate contributors with investigations and studies. List your team members to ensure proper credit for their contributions
 
 ### Routine computations
 
@@ -185,7 +185,7 @@ Following the exemplary scenario A, you could setup the ARC for your collaborati
 
 Alternatively, collaborators already working with ARCs could invite you to "their" ARC (exemplary scenario B). They can independently set up the ARC and fill metadata (4) based on your prepared templates (3).
 
-:bulb: In scenario B the collaborator might invite you to a very large ARC with data not really relevant for your platform-specific collaboration. In this case you might want to [exclude irrelevant data](./../guides/arc_gitignore.html) or [avoid downloading large data](./../guides/arc_gitignore.html) when syncing the ARC.
+:bulb: In scenario B the collaborator might invite you to a very large ARC with data not really relevant for your platform-specific collaboration. In this case you might want to [exclude irrelevant data or avoid downloading large data](./../guides/arc_gitignore.html) when syncing the ARC.
 
 **Can I retain my established naming convention for project management and data storage?**
 
