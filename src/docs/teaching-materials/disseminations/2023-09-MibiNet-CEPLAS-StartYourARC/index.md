@@ -20,6 +20,8 @@ Here you can find the slides prepared for the September 2023 MibiNet/CEPLAS *Sta
 
 <hr>
 
+<!-- 
+
 ## Block 1 &ndash; Welcome and intro to RDM
 
 <iframe src="./Block01-WelcomeIntro.html" style="height:430px; width:750px;" ></iframe>
@@ -68,3 +70,6 @@ Here you can find the slides prepared for the September 2023 MibiNet/CEPLAS *Sta
 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), [MibiNet](https://www.sfb1535.hhu.de) 📆 September 21st, 2023
 
 <hr>
+
+
+ -->
