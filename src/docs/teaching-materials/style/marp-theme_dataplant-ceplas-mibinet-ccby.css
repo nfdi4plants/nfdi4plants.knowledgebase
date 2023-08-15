@@ -1,0 +1,75 @@
+/* @theme marp-theme_dataplant-ceplas-mibinet-ccby */
+
+@import 'default';
+
+/* @import url('./../../../style/style.css'); */
+
+section {    
+  background: url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/5dba3b88b4f9eada59064a5eed60b5a9dca21ef9/src/docs/img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"), url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/main/src/docs/img/_logos/CEPLAS/CEPLAS_Icon.jpeg"), url("https://www.sfb1535.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Biologie/SFB1535/Bilder/MibiNet.png"), url("https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg");
+  background-repeat: no-repeat;
+  background-size: 3%, 2%, 4%, 5%;
+  background-position: 2% 99%, 6.5% 99%, 10% 99%, 15% 99%;
+  background-color: white;
+  font-size: 30px;
+  font-family: Calibri, sans-serif;
+  color: #2D3E50;
+}
+
+header {
+  top: 30px;
+  height: 60px;
+}
+
+footer {
+  height: 60px;
+  padding: 10px;
+  bottom: 00px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: Calibri, sans-serif;
+  color: #2D3E50;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: Calibri, sans-serif;
+  color: #2D3E50;  
+}
+
+code {
+  /* font-size: 20px; */
+  /* color: #c21f3a; */
+}
+
+
+/* Center images in the main section ("block") */
+
+section p img {
+  display: block;
+  margin: 0px auto 0px auto;  /* top right bottom left*/ 
+}
+
+img.emoji {
+  display: inline;
+  }
+
+/* Styling page number */
+section::after {
+  font-family: Calibri, sans-serif;
+  font-size: 20px;
+  color: #2D3E50  
+}
+
+
+.profile-picture {
+  position:relative;
+  overflow:hidden;
+  border-radius: 50%;
+  border-color: black;
+  height: 75px;
+  width: 75px;
+  margin: 10px;
+  display: block;  
+}
