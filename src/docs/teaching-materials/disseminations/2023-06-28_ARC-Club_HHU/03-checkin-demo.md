@@ -180,38 +180,5 @@ arc sync -m "sorted the demo data"
 
 ## Check the ARC in the DataHUB
 
+- Navigate to https://git.nfdi4plants.org/<username>/arc-demo to visit your ARC in the DataHUB
 
-## Round 2: *via* ARCitect
-
-<span style="color:red">TODO</span>
-
----
-
-## Initiate the ARC folder structure
-
----
-
-## Create an investigation
-
-TalinumPhotosynthesis
-
----
-
-## Add a study
-
-talinum_drought
-
----
-
-## Add assays
-
-rnaseq
-arc assay add -s  -a metabolomics
-
-:bulb: Link them to the study "talinum_drought"
-
----
-
-# Upload your local ARC to the DataHUB
-
-https://git.nfdi4plants.org/<username>/arc-demo
