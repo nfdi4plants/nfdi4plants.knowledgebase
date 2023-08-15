@@ -28,10 +28,6 @@ August 16th, 2023
 
 ---
 
-## ARCitect
-
----
-
 ## Installation
 
 Open a terminal and one after the other execute
@@ -90,6 +86,12 @@ For this workshop, create a new folder somewhere on your machine where you want 
 
 ---
 
+# Hands-on with demo data
+
+First steps towards your ARC using the **ARC Commander**
+
+---
+
 ## Download the demo data
 
 ```bash
@@ -98,7 +100,28 @@ git clone "https://demo-user:1_eznikmzxzARAbUxxnF@git.nfdi4plants.org/teaching/d
 
 ---
 
-# Hands-on with demo data
+## You just received your data
+
+![bg right width:400](./../../../img/demo_data_screenshot.png)
+
+---
+
+## Goal
+
+- Structure,
+- Annotate, and
+- Share your experimental data.
+
+<br>
+
+:bulb: We'll talk about data annotation later
+
+---
+
+
+## Structure your data
+
+![width:800](./../../../img/ARC_fillWithData_experimental.png)
 
 ---
 
@@ -113,9 +136,6 @@ mkdir -p ~/Desktop/workshop-arcs/arc-demo
 cd ~/Desktop/workshop-arcs/arc-demo
 ```
 
----
-
-## Round 1: *via* ARC Commander
 
 ---
 
@@ -152,6 +172,27 @@ arc assay add -s talinum_drought -a metabolomics
 
 ---
 
+## Collaborate and share
+
+<style scoped>
+
+section p img {
+width: 1000px;
+height: 400px;
+object-fit: cover;
+object-position: 50% 30%;
+/* display: block; */;
+}
+</style>
+
+
+![](./../../../img/ARC_DataSharing_Experts02_img1.png)
+
+
+---
+
+
+
 # Upload your local ARC to the DataHUB
 
 ```bash
@@ -168,6 +209,7 @@ Identify "raw dataset(s)" and "protocols" and move them to the proper subfolders
 
 ---
 
+
 ## Sync your ARC to the DataHUB
 
 To save the changes, sync the ARC to the DataHUB including a message.
@@ -182,3 +224,33 @@ arc sync -m "sorted the demo data"
 
 - Navigate to https://git.nfdi4plants.org/<username>/arc-demo to visit your ARC in the DataHUB
 
+---
+
+## Your ARC is ready
+
+![bg 80% right:75%](./../../../img/demo_data_screenshot.png)
+![bg 80%](./../../../img/demo_arc_screenshot.png)
+
+---
+
+
+## Your ARC is ready
+
+<style scoped>
+
+section p br {
+   display: block;
+   margin-top: 20px;
+   content: "";
+}
+</style>
+
+👩‍💻 Initiated an ARC
+<br>
+📂 Structured and ...  
+<br>
+<img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate_c_40x40.png'/> ... annotated experimental data
+<br>
+🌐 Shared with collaborators
+
+![bg right width:400](./../../../img/demo_arc_screenshot.png)
