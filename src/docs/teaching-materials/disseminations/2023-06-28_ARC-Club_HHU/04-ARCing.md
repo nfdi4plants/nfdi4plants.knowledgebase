@@ -21,11 +21,47 @@ August 16th, 2023
 
 ---
 
-## Step 0: Assign yourself to the project
+## Moving from FileShare to DataHUB &ndash; *via* ARCs
+
+![w:900](images/InsituteFileShare03toDataHUBviaARC.drawio.svg)
 
 ---
 
-## Step 1: Collect / derive as much info about the **investigation** as possible. <!-- fit -->
+## Assign projects
+
+
+---
+
+## Rough routine for each project
+
+1. Identify the available data and resources
+2. Create the ARC
+3. Add metadata and data
+4. Share via DataHUB group https://git.nfdi4plants.org/hhu-plant-biochemistry/
+
+---
+
+## Low(er) hanging fruits: published projects
+
+1. Add the authors
+2. Add the publication(s)
+   1. Add citation and DOI
+   2. Add supplemental
+   3. Convert M&M to *protocols*
+3. Reference data in public repositories
+4. Add large data (e.g. from file share)
+5. Set ARC to **public!**
+
+---
+
+## More challenging ARCs
+
+- (unpublished) left-overs of colleagues who have since moved
+- unclear
+
+---
+
+## Collect / derive as much info about the **investigation** as possible
 
 **MUST** haves
 
@@ -43,42 +79,30 @@ Investigation Person First Name
 
 ---
 
-## Step 2: Create and share the ARC
+## Create and share the ARC
 
 ```bash
 arc init
 arc sync -f -r https://git.nfdi4plants.org/hhu-plant-biochemistry/<InvestigationID>
 ```
 
-:warning:
+---
+
+## Copy data
+
+1. **Copy** data to the ARC, do not **move** data from original source  
+(we'll take care of that later)
+2. Ideally use `rsync` rather than copying manually
+3. Ideally use `md5` or `md5sum` to check for correct file transfer
+
+:bulb: Ask the coders for help!
 
 ---
 
-## Step 3: Copy data
-
-:warning: Do not **move** data from original source
-
-
-<!-- 
----
-
-## "easy" catches
-
-- published data
-- why even ARC them?
+## Perspective and administration in the future
 
 ---
 
-## more challenging ARCs
+## Administration / Backup
 
-- (unpublished) left-overs of colleagues who have since moved
-
-
----
-
-## perspective
-
-- This is just a start
-- Appreciate change
-
- -->
+![Alt text](images/InsituteFileShare04-backupClones.drawio.svg)
