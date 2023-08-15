@@ -499,6 +499,9 @@
 <blockquote>
 <p>⚠️ Avoid using spaces in the identifier. Use underscores and capital letters instead.</p>
 </blockquote>
+<blockquote>
+<p>💡 Suggestion: Use your ARC name (without spaces) as your temporary identifier.</p>
+</blockquote>
 <table>
 <thead>
 <tr>
@@ -600,6 +603,11 @@
 <td>Department of M21 Measurements, Technische Universität Kaiserslautern, Germany</td>
 </tr>
 <tr>
+<td>ORCID <br> <em>(not ISA-Tab format, will be added as a comment)</em></td>
+<td>The ORCID iD of the person</td>
+<td>XXXX-XXXX-XXXX-XXXX</td>
+</tr>
+<tr>
 <td>Roles</td>
 <td>Term to classify the role(s) performed by this person in the context of the investigation, which means that the roles reported here need not correspond to roles held withing their affiliated organization. Multiple annotations or values attached to one person can be provided by using a semicolon (“;”) Unicode (U0003+B) as a separator (e.g.: submitter;funder;sponsor). The term can be free text or from, for example, a controlled vocabulary or an ontology. If the latter source is used the Term Accession Number and Term Source REF fields below are required.</td>
 <td>supervisor</td>
@@ -611,14 +619,17 @@
 </tr>
 <tr>
 <td>RolesTermSourceREF</td>
-<td>Identifies the controlled vocabulary or ontology that this term comes from. The Source REF has to match one of the Term Source Names declared in the Ontology Source Reference section.  RolesTermSourceREF: <a href="https://sparontologies.github.io/scoro/current/scoro.xml">https://sparontologies.github.io/scoro/current/scoro.xml</a></td>
-<td></td>
+<td>Identifies the controlled vocabulary or ontology that this term comes from. The Source REF has to match one of the Term Source Names declared in the Ontology Source Reference section.  RolesTermSourceREF: e.g. <a href="https://sparontologies.github.io/scoro/current/scoro.html">https://sparontologies.github.io/scoro/current/scoro.html</a></td>
+<td>SCORO</td>
 </tr>
 </tbody>
 </table>
 <ul>
-<li>Instead of using the editor, the following command can be used:<br />
-<code>arc i person register -l Doe -f John -m P --email jpdoe@mail.com --phone &quot;+49(0)631 205 3045&quot; --address &quot;Paul-Ehrlich-Straße 23, 67663 Kaiserslautern&quot; --affiliation &quot;Department of M21 Measurements, Technische Universität Kaiserslautern, Germany&quot; --roles &quot;supervisor&quot;</code></li>
+<li><p>Instead of using the editor, the following command can be used:<br />
+<code>arc i person register -l Doe -f John -m P --email jpdoe@mail.com --phone &quot;+49(0)631 205 3045&quot; --address &quot;Paul-Ehrlich-Straße 23, 67663 Kaiserslautern&quot; --affiliation &quot;Department of M21 Measurements, Technische Universität Kaiserslautern, Germany&quot; --roles &quot;supervisor&quot;</code></p>
+</li>
+<li><p>optional: You can add with <code>--orcid XXXX-XXXX-XXXX-XXXX</code> the respective ORCID iD of the person to be registered as a comment (only possible via command line).</p>
+</li>
 </ul>
 <nfdi-h3 id="listing-and-inspecting-registered-persons">Listing and inspecting registered persons</nfdi-h3>
 <ul>
@@ -684,12 +695,12 @@
 <tr>
 <td>StatusTermAccessionNumber</td>
 <td>The accession number from the Term Source associated with the selected term.</td>
-<td></td>
+<td><a href="http://www.ebi.ac.uk/efo/EFO_0001795">http://www.ebi.ac.uk/efo/EFO_0001795</a></td>
 </tr>
 <tr>
 <td>StatusTermSourceREF</td>
-<td>Identifies the controlled vocabulary or ontology that this term comes from. The Source REF has to match one the Term Source Name declared in the in the Ontology Source Reference section.</td>
-<td></td>
+<td>Identifies the controlled vocabulary or ontology that this term comes from. The Source REF has to match one of the Term Source Names declared in the Ontology Source Reference section. The <a href="https://www.ebi.ac.uk/ols/ontologies/efo">Experimental Factor Ontology</a> (EFO) is an example for describing the status.</td>
+<td>EFO</td>
 </tr>
 </tbody>
 </table>
