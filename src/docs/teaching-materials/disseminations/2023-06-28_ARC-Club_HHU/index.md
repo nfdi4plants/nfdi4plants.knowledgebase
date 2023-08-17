@@ -53,3 +53,11 @@ Here you can find the slides prepared for the **ARC Club** (August 2023 @HHU-Pla
 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), 📆 August 16th, 2023
 
 <hr>
+
+## ARCing
+
+<iframe src="./06-annotation.html" style="height:430px; width:750px;" ></iframe>
+
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), 📆 August 16th, 2023
+
+<hr>
