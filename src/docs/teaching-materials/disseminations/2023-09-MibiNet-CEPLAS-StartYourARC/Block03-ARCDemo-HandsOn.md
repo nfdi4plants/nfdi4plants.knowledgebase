@@ -179,8 +179,155 @@ https://git.nfdi4plants.org/brilator/demo-arc
 
 ---
 
+## Initiate the ARC folder structure
 
-## Using the ARC Commander to setup an ARC
+![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
+
+1. Create a **New ARC** (2)
+2. Select a location and name **TalinumPhotosynthesis** 
+
+---
+
+## Your ARC's name
+
+💡 By default, your ARC's name will be used
+   - for the ARC folder on your machine
+   - to create your ARC in the DataHUB at `https://git.nfdi4plants.org/<YourUserName>/<YourARC>` (see next steps)
+   - as the identifier for your investigation
+
+💡 Make sure that no ARC exists at  `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`. Otherwise you will sync to that ARC.
+
+![bg right:30% w:450](ARCitect_TalinumPhotosynthesis.png)
+
+---
+
+## Add a study
+
+by clicking "Add Study" and entering an identifier for your study
+
+Use **talinum_drought** as an identifier
+
+![bg right w:500](ARCitect_TalinumPhotosynthesis_Study.png)
+
+---
+
+## Study panel
+
+In the study panel you can add
+
+- general metadata,
+- people, and
+- publications
+
+![bg right w:500](ARCitect_TalinumPhotosynthesis_StudyPanel.png)
+
+---
+
+
+## Add an assay
+
+by clicking "Add Assay" and entering an identifier for your assay
+
+Add two assays with **rnaseq** and **metabolomics** as an identifier
+![bg right w:500](ARCitect_TalinumPhotosynthesis_Assay.png)
+
+---
+
+## Link your assay to a study
+
+You can either
+- link your new assay to an existing study in your ARC or
+- create a new one
+  
+Link your assays to your **talinum_drought** study
+
+
+![bg right w:500](ARCitect_TalinumPhotosynthesis_Assay2.png)
+
+---
+
+## Add information about your assay
+
+In the assay panel you can
+
+1. link or unlink the assay to studies, and
+2. define the assay's
+   - measurement type
+   - technology type, and
+   - technology platform.
+
+![bg right w:700](./../../../img/arcitect-AssayPanel.png)
+
+---
+
+## Add protocols
+
+You can either
+- directly write a **new protocol** within the ARCitect or
+- import an existing one from your computer
+
+![w:800](./../../../img/arcitect-ARCPanel-protocol.png)
+
+
+
+---
+
+## Add protocols and datasets
+
+In the file tree you can
+  - **add a dataset** and 
+  - **protocols** associated to that dataset.
+
+:bulb: **Add Dataset** allows to import data from any location on your computer into the ARC.
+
+:warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
+
+![bg right:40% w:400](./../../../img/arcitect-ARCPanel-assay03.png)
+
+---
+
+## Add Demo Data to your ARC
+
+
+---
+
+## Login to the DataHUB
+
+Click **Login** (1) in the sidebar to login to the DataHUB.
+
+:bulb: This automatically opens your browser at the DataHUB (https://git.nfdi4plants.org) and asks you to login, if you are not already logged in. 
+
+![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
+
+---
+
+## Upload your local ARC to the DataHUB
+
+From the sidebar, navigate to **Versions** (6)
+
+![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
+
+---
+
+## Versions
+
+The versions panel allows you to
+- store the local changes to your ARC in form of "commits",
+- sync the changes to the DataHUB, and
+- check the history of your ARC
+
+![bg right w:650](./../../../img/arcitect-VersionsPanel.png)
+
+---
+
+## Connection to the DataHUB
+
+If you are logged in, the versions panel shows
+- your DataHUB's *Full Name* and *eMail*
+- the URL of the current ARC in the DataHUB `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`
+
+![bg right w:650](./../../../img/arcitect-VersionsPanel.png)
+
 
 <!-- *Create and navigate to a new folder* -->
 <!-- 
@@ -188,31 +335,89 @@ https://git.nfdi4plants.org/brilator/demo-arc
 mkdir ~/Desktop/demo-arc; cd ~/Desktop/demo-arc
 ``` -->
 
-*Initiate the ARC folder structure*
-
-```bash
-arc init
-```
-
-*Add metadata structure*
-
-```bash
-arc investigation create -i TalinumPhotosynthesis
-arc study add -s talinum_drought
-arc assay add -s talinum_drought -a rnaseq
-arc assay add -s talinum_drought -a metabolomics
-```
 
 ---
 
+## Invite collaborators
 
-## Your ARC is ready
-
-![bg 80% right:75%](./../../../img/demo_data_screenshot.png)
-![bg 80%](./../../../img/demo_arc_screenshot.png)
+* Unless changed, your ARC is set to private by default. 
+* To collaborate, you can invite lab colleagues or project partners to your ARC by following the steps on the subsequent slides. 
+* To get started [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB and open the ARC you want to share.
 
 ---
 
+1. Click on **Project Information** in the left navigation panel
+
+![fit w:1050](./../../../img/datahub_members_seq2.png)
+
+---
+
+2. Click on **Members**
+
+![fit w:1050](./../../../img/datahub_members_seq3.png)
+
+---
+
+3. Click on **Invite members**
+
+![fit w:1050](./../../../img/datahub_members_seq4.png)
+
+---
+
+4. Search for potential collaborators
+
+![fit w:1050](./../../../img/datahub_members_seq5.png)
+
+---
+
+5. Select a role 
+
+![fit w:1050](./../../../img/datahub_members_seq6.png)
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/datahub_invite-collaborators.md -->
+
+
+---
+
+## Choosing the proper role
+
+<u>Guest</u>
+Have the least rights. This is recommended for people you ask for consultancy.
+
+<u>Developers</u> 
+The choice for most people you want to invite to your ARC. Developers have read and write access, but cannot maintain the project on the DataHUB, e.g. inviting others.
+
+<u>Maintainers</u> 
+Gives the person the same rights as you have (except of removing you from your own project). This is recommended for inviting PIs or group leaders allowing them to add their group members for data upload or analysis to the project as well.
+
+*A detailed list of all permissions for the individual roles can be found [here](https://docs.gitlab.com/ee/user/permissions.html)*
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/datahub_choose-collaborator-role.md -->
+
+---
+
+## <div align="center">Congratulations!</div>
+<div align="center">You have just shared your ARC with a collaborator.</div>
+
+<style scoped>
+
+section p img {
+width: 1000px;
+height: 300px;
+object-fit: cover;
+object-position: 100% 45%;
+/* display: block; */;
+}
+</style>
+
+![](./../../../img/ARC_Sharing_img1.png)
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/datahub_congrats-for-sharing.md -->
+
+---
 
 ## Your ARC is ready
 
@@ -299,31 +504,6 @@ Freiburg: Dirk von Suchodeletz
 <!-- Source to slide(s) -->
 <!-- ../custom/bricks/acknowledgements.md -->
 
-
----
-
-# Five-Finger-Feedback
-
-<style scoped>
-section {
-  text-align: center;
-  /* background: #F9CD69; */
-}
-</style>
-
-![width:800px](./../../../img/feedback01_FiveFinger.drawio.svg)
-
-<!-- 
-- Invite participants to give feedback
-- If feasible, collect transparently on a board or in a markdown pad, etc. 
-
-# Five-Finger-Feedback
-
-...was too short | I'm happy with... | I did not like at all ...| This idea or advice was good: ... | I really liked ...  
----|---|---|---|---
-... | ... | ... | ... | ...
-
--->
 
 ---
 
