@@ -181,7 +181,7 @@ https://git.nfdi4plants.org/brilator/demo-arc
 
 ## Initiate the ARC folder structure
 
-![bg right:40% w:250](ARCitect-Quickstart/ARCitect-help-Sidebar.drawio.svg)
+![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
 
 1. Create a **New ARC** (2)
 2. Select a location and name **TalinumPhotosynthesis** 
@@ -256,7 +256,7 @@ In the assay panel you can
    - technology type, and
    - technology platform.
 
-![bg right w:700](ARCitect-Quickstart/arcitect-AssayPanel.png)
+![bg right w:700](./../../../img/arcitect-AssayPanel.png)
 
 ---
 
@@ -266,7 +266,7 @@ You can either
 - directly write a **new protocol** within the ARCitect or
 - import an existing one from your computer
 
-![w:800](ARCitect-Quickstart/arcitect-ARCPanel-protocol.png)
+![w:800](./../../../img/arcitect-ARCPanel-protocol.png)
 
 
 
@@ -282,7 +282,7 @@ In the file tree you can
 
 :warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
 
-![bg right:40% w:400](ARCitect-Quickstart/arcitect-ARCPanel-assay03.png)
+![bg right:40% w:400](./../../../img/arcitect-ARCPanel-assay03.png)
 
 ---
 
@@ -297,7 +297,7 @@ Click **Login** (1) in the sidebar to login to the DataHUB.
 
 :bulb: This automatically opens your browser at the DataHUB (https://git.nfdi4plants.org) and asks you to login, if you are not already logged in. 
 
-![bg right:40% w:250](ARCitect-Quickstart/ARCitect-help-Sidebar.drawio.svg)
+![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
 
 ---
 
@@ -305,7 +305,7 @@ Click **Login** (1) in the sidebar to login to the DataHUB.
 
 From the sidebar, navigate to **Versions** (6)
 
-![bg right:40% w:250](ARCitect-Quickstart/ARCitect-help-Sidebar.drawio.svg)
+![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
 
 ---
 
@@ -316,7 +316,7 @@ The versions panel allows you to
 - sync the changes to the DataHUB, and
 - check the history of your ARC
 
-![bg right w:650](ARCitect-Quickstart/arcitect-VersionsPanel.png)
+![bg right w:650](./../../../img/arcitect-VersionsPanel.png)
 
 ---
 
@@ -326,7 +326,7 @@ If you are logged in, the versions panel shows
 - your DataHUB's *Full Name* and *eMail*
 - the URL of the current ARC in the DataHUB `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`
 
-![bg right w:650](ARCitect-Quickstart/arcitect-VersionsPanel.png)
+![bg right w:650](./../../../img/arcitect-VersionsPanel.png)
 
 
 <!-- *Create and navigate to a new folder* -->
