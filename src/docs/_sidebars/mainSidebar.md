@@ -131,6 +131,7 @@
 ### [RPTU Summer School on RDM](/docs/teaching-materials/disseminations/2023-07-17_rptu-summerschool-on-rdm/index.html)
 ### [Data Steward Circle](/docs/teaching-materials/disseminations/DataSteward-Circle/index.html)
 ### [CEPLAS Start Your ARC Series](/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html)
+### [MBS Onboarding](/docs/teaching-materials/disseminations/2023-04-27_MBS-Onboarding/index.html)
 
 # [Frequently Asked Questions](/docs/faqs/faqs.html)
 
