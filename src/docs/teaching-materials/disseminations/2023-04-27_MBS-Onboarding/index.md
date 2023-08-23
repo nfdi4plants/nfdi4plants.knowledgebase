@@ -20,7 +20,7 @@ Here you can find the slides shown during the MBS Onboarding.
 
 **Downloads:**   
 Click on the presentation logo to download the slides in .pptx format:   
-<a id="download-link" href="./MBS_Onboarding.pdf" download>
+<a id="download-link" href="../teaching-materials/disseminations/2023-04-27_MBS-Onboarding/MBS_Onboarding.pdf" download>
   <img src="/docs/img/Emojis/presentation.svg" alt="MBS Onboarding" width="104" height="142">
 </a>
 <hr>
