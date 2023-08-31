@@ -235,9 +235,7 @@ object-fit: cover;
 - **Two** storage media
 - **One** copy offsite
 
-![bg w:1200](./../../../img/backup_3-2-1rule_img1.png)
-
-
+![bg w:500](./custom/backup_rule.png)
 
 
 --- 
