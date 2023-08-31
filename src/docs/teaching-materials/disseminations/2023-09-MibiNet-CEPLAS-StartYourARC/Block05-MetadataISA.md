@@ -47,7 +47,7 @@ September 28th, 2023
 ---
 
 
-# Part 1: Metadata
+# Metadata
 
 ---
 
@@ -701,7 +701,7 @@ https://schema.datacite.org/meta/kernel-4.3/example/datacite-example-dataset-v4.
 
 ---
 
-# Part 2: ISA
+# ISA
 
 ---
 
@@ -797,7 +797,7 @@ Output building blocks:
 
 
 
-# Part 3: Swate
+# Swate
 
 
 
