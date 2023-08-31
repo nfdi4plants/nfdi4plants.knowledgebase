@@ -19,4 +19,4 @@ Please explore the sections on the left to find guides on
 
 :bulb: After installation, please check the ARCitect's help menu for further documentation and guides.
 
-> **Developers**, please check out the [ARCitect GitHub repository](https://nfdi4plants.github.io/ARCitect/).
+> **Developers**, please check out the [ARCitect GitHub repository](https://github.com/nfdi4plants/ARCitect/).
