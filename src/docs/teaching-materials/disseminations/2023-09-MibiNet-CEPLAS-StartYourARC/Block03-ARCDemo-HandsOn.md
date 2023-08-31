@@ -259,8 +259,9 @@ In the assay panel you can
    - measurement type
    - technology type, and
    - technology platform.
+3. add data
 
-![bg right w:700](./../../../img/arcitect-AssayPanel.png)
+![bg right w:500](ARCitect_TalinumPhotosynthesis_AssayPanel.png)
 
 ---
 
