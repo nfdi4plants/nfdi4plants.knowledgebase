@@ -52,8 +52,7 @@ September 21st, 2023
 
 ## Your fresh ARC folder
 
-![bg right:40% w:250](ARCitect-Quickstart/ARCitect-help-Sidebar.drawio.svg)
-
+![bg right:50% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
 1. Create a **New ARC** (2)
 2. Select a location and name for your ARC
 
@@ -86,7 +85,7 @@ The versions panel allows you to
 - sync the changes to the DataHUB, and
 - check the history of your ARC
 
-![bg right w:650](ARCitect-Quickstart/arcitect-VersionsPanel.png)
+![bg right w:650](./../../../img/arcitect-VersionsPanel.png)
 
 ---
 
