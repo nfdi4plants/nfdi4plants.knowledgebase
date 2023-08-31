@@ -208,7 +208,7 @@ object-fit: cover;
 
 # Scattered Data Silos
 
-![w:900](./custom/data_fragmentation_CEPLAS_seq2.png)
+![w:900](./custom/data_fragmentation_CEPLAS_MibiNet_TRR.png)
 
 ---
 
