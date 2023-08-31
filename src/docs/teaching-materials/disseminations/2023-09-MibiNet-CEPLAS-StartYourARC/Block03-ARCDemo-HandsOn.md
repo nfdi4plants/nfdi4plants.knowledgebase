@@ -179,6 +179,21 @@ https://git.nfdi4plants.org/brilator/demo-arc
 
 ---
 
+
+
+## Download demo data 
+
+TODO edit link
+
+---
+
+## Sort demo data in an ARC
+
+![bg right width:400](./../../../img/demo_data_screenshot.png)
+
+
+---
+
 ## Initiate the ARC folder structure
 
 ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
@@ -221,7 +236,7 @@ In the study panel you can add
 - general metadata,
 - people, and
 - publications
-- data
+- data process information
 
 ![bg right w:500](ARCitect_TalinumPhotosynthesis_StudyPanel.png)
 
@@ -259,7 +274,7 @@ In the assay panel you can
    - measurement type
    - technology type, and
    - technology platform.
-3. add data
+3. add data process information
 
 ![bg right w:500](ARCitect_TalinumPhotosynthesis_AssayPanel.png)
 
