@@ -181,13 +181,13 @@ https://git.nfdi4plants.org/brilator/demo-arc
 
 
 
-## Download demo data 
+## Download Demo data 
 
 TODO edit link
 
 ---
 
-## Sort demo data in an ARC
+## Sort Demo data in an ARC
 
 ![bg right width:400](./../../../img/demo_data_screenshot.png)
 
@@ -306,7 +306,7 @@ In the file tree you can
 
 ---
 
-## Add Demo Data to your ARC
+## Sort Demo Data to your ARC
 
 
 ---
