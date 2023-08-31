@@ -105,7 +105,7 @@ git clone "https://demo-user:5ehDYeHcqP2MqVXsNNPu@git.nfdi4plants.org/teaching/d
 
 ![bg right:40% width:400](./../../../img/demo_arc_screenshot.png)
 
-
+---
 
 # Swate hands-on with demo data
 
@@ -113,10 +113,8 @@ git clone "https://demo-user:5ehDYeHcqP2MqVXsNNPu@git.nfdi4plants.org/teaching/d
 
 ## Swate Overview
 
-<figure>
-  <img src="./../../../img/Swate-Overlay-Exp.jpg?v27.01.202" style="height: 400px">
-  <figcaption>Major areas of the Swate user interface.</figcaption>
-</figure>
+![ width:1700](Swate_Overview.png)
+
 
 
 ---
