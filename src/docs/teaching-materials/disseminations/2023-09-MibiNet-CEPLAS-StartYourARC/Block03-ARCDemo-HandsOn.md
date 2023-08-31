@@ -185,6 +185,9 @@ https://git.nfdi4plants.org/brilator/demo-arc
 
 1. Create a **New ARC** (2)
 2. Select a location and name **TalinumPhotosynthesis** 
+<!-- 
+## make sure that you use no spaces in the name
+-->
 
 ---
 
@@ -197,7 +200,7 @@ https://git.nfdi4plants.org/brilator/demo-arc
 
 💡 Make sure that no ARC exists at  `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`. Otherwise you will sync to that ARC.
 
-![bg right:30% w:450](ARCitect_TalinumPhotosynthesis.png)
+![bg right:30% w:500](ARCitect_TalinumPhotosynthesis.png)
 
 ---
 
@@ -218,6 +221,7 @@ In the study panel you can add
 - general metadata,
 - people, and
 - publications
+- data
 
 ![bg right w:500](ARCitect_TalinumPhotosynthesis_StudyPanel.png)
 
