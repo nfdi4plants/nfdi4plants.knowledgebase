@@ -342,6 +342,10 @@ mkdir ~/Desktop/demo-arc; cd ~/Desktop/demo-arc
 
 ---
 
+## Check if your ARC is successfully uploaded
+
+1. [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB 
+2. Check your projects
 ---
 
 ## Invite collaborators
