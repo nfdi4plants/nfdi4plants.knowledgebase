@@ -275,12 +275,17 @@ In the file tree you can
 
 :warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
 
+<!-- Demo dataset cannot be added via add dataset. Only individual files can be added, not multiple folders -->
+
 ![bg right:40% w:400](./../../../img/arcitect-ARCPanel-assay03.png)
 
 ---
 
 ## Sort Demo Data to your ARC
 
+💡 protocols can directly imported via ARCitect
+
+💡 to add multiple datasets folders, they have to be added manually via file browser 
 
 ---
 
