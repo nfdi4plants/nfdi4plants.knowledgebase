@@ -150,35 +150,6 @@ object-position: 50% 30%;
 
 ---
 
-## Sync your ARC to the DataHUB
-
-```bash
-arc sync -f -r https://git.nfdi4plants.org/brilator/demo-arc
-```
-
-<!-- 
-:bulb: The URL decomposed:
-- `https://git.nfdi4plants.org/` = DataHUB
-- `brilator/` = username @ DataHUB  
-- `demo-arc` = name of the ARC @ DataHUB   -->
-
----
-
-
-## Invite collaborators to your ARC
-
-https://git.nfdi4plants.org/brilator/demo-arc
-
-<!-- 
-## Check your progress at the DataHUB
-
-- Open your ARC at https://git.nfdi4plants.org/brilator/demo-arc/ and click the `commits` link below the project avatar
-- Or directly navigate to https://git.nfdi4plants.org/brilator/demo-arc/-/commits/main 
-
--->
-
----
-
 
 
 ## Download Demo data 
@@ -199,7 +170,7 @@ TODO edit link
 ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
 
 1. Create a **New ARC** (2)
-2. Select a location and name **TalinumPhotosynthesis** 
+2. Select a location and name it **TalinumPhotosynthesis** 
 <!-- 
 ## make sure that you use no spaces in the name
 -->
@@ -214,6 +185,8 @@ TODO edit link
    - as the identifier for your investigation
 
 💡 Make sure that no ARC exists at  `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`. Otherwise you will sync to that ARC.
+
+💡Don't use spaces in ARC's name
 
 ![bg right:30% w:500](ARCitect_TalinumPhotosynthesis.png)
 
