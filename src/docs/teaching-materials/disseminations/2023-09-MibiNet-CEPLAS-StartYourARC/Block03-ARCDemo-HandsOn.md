@@ -162,6 +162,13 @@ TODO edit link
 
 ![bg right width:400](./../../../img/demo_data_screenshot.png)
 
+---
+
+## Open ARCitect 
+
+
+1. Login to DataHUB (1)
+   ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
 
 ---
 
@@ -333,6 +340,7 @@ If you are logged in, the versions panel shows
 mkdir ~/Desktop/demo-arc; cd ~/Desktop/demo-arc
 ``` -->
 
+---
 
 ---
 
