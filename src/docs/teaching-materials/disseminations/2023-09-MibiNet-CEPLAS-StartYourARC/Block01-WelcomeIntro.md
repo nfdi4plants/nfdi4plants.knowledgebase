@@ -210,6 +210,12 @@ object-fit: cover;
 
 ![w:900](./custom/data_fragmentation_CEPLAS_MibiNet_TRR.png)
 
+<!-- TODO
+
+- enlarge picture 
+
+ -->
+
 ---
 
 # FAIR Data for everyone
