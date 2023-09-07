@@ -271,7 +271,7 @@ Examples from Minimum Information for Biological and Biomedical Investigations (
 *Check: https://fairsharing.org/*
 
 ---
-
+<!-- Remove? TODO
 ## A closer look at MIAPE 
 
 (*MIAPPE = Minimum Information About a **Proteomics** Experiment*)
@@ -334,8 +334,6 @@ http://doi.org/10.1111/nph.16544
 <!-- Source to following slide(s) -->
 <!-- ./bricks/lesson_002_ontology.md -->
 <!-- ################# -->
-
-
 
 ---
 
@@ -453,7 +451,8 @@ TODO:
 
 
 
----
+
+<!-- Remove? TODO
 
 # Example ontologies
 
@@ -483,11 +482,11 @@ LIVE-Demo
 - Show the graph view (and expand it interactively)
 - Mention that terms (subjects, objects) and properties (predicates) have "URIs", "PIDs"
 - Show that terms can have alternative / external IDs and link to "outdated" ontologies
--->
+
 
 --- 
 
-
+<!-- Remove? TODO
 # Schemas and machine-readability
 
 
@@ -508,11 +507,12 @@ Schema.org
 <!-- 
 TODO: 
 Source: bioschemas.org
- -->
+ 
 
 
 --- 
 
+<!-- Delete? TODO
 
 ## Structured data and the internet: Schema.org
 
@@ -571,8 +571,7 @@ https://bioschemas.org
 
 --- 
 
-
-
+<!-- DELETE? TODO
 
 ## JSON-LD
 
@@ -700,6 +699,7 @@ https://schema.datacite.org/meta/kernel-4.3/example/datacite-example-dataset-v4.
 
 
 ---
+--> 
 
 # ISA
 
