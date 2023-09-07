@@ -329,9 +329,20 @@ Example workflows with three *processes* each:
 >           └─── table  (e.g. "annotationTable")
 
 
+---
+
+# Annotation with ARCitect
 
 --- 
 
+## Process Information
+
+![w:700](./custom/ARCitect_Assay_Data.png)
+
+<!-- TODO Update ARCitect Annotation 
+Examples, Excelsheet... --> 
+
+---
 ## Contributors 
 
 Slides presented here include contributions by 
