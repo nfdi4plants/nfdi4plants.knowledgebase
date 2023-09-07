@@ -792,6 +792,11 @@ Output building blocks:
 <!-- Source to slide(s) -->
 <!-- ../../bricks/lesson_Swate_DataPLANT-Annotation_Building_Block_types.md -->
 
+---
+
+## Annotation Principles
+
+![w:900](./custom/Annotation_Principle%20(2).png)
 
 ---
 
