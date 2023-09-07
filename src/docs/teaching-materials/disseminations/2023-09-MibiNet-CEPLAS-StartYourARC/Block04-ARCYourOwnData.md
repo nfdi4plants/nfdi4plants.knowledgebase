@@ -67,6 +67,8 @@ September 21st, 2023
 
 💡 Make sure that no ARC exists at  `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`. Otherwise you will sync to that ARC.
 
+💡 Use no spaces in your ARC's name
+
 ![bg right:30% w:450](ARCitect-Quickstart/arcitect-ARCPanel.png)
 
 ---
@@ -186,4 +188,3 @@ Slides presented here include contributions by
   - learn from things that did / did not go well
   - collect issues and "live" transfer them to GitHub => open source your research
 
----
