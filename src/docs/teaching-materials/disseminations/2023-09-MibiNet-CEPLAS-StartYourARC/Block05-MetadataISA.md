@@ -270,7 +270,6 @@ Examples from Minimum Information for Biological and Biomedical Investigations (
 
 *Check: https://fairsharing.org/*
 
----
 <!-- Remove? TODO
 ## A closer look at MIAPE 
 
@@ -772,38 +771,7 @@ Output building blocks:
 ---
 
 
-# Annotation Building Block types <!--fit-->
-
-![bg right:40% w:520](./../../../img/Swate_Overview.svg)
-
-- Source Name (Input)
-- Protocol Columns
-  - Protocol Type, Protocol Ref
-- Characteristic
-- Parameter
-- Factor
-- Component
-- Output Columns
-  - Sample Name, Raw Data File, Derived Data File
-
-
-:bulb: For details, check out the [Annotation Principles](https://nfdi4plants.github.io/AnnotationPrinciples/).
-
-<!-- Source to slide(s) -->
-<!-- ../../bricks/lesson_Swate_DataPLANT-Annotation_Building_Block_types.md -->
-
----
-
-## Annotation Principles
-
-![w:900](./custom/Annotation_Principle%20(2).png)
-
----
-
-
-
 # Swate
-
 
 
 
@@ -854,6 +822,19 @@ section p img{
 - Component
 - Output Columns
   - Sample Name, Raw Data File, Derived Data File
+
+
+:bulb: For details, check out the [Annotation Principles](https://nfdi4plants.github.io/AnnotationPrinciples/).
+
+<!-- Source to slide(s) -->
+<!-- ../../bricks/lesson_Swate_DataPLANT-Annotation_Building_Block_types.md -->
+
+---
+
+## Annotation Principles
+
+![w:900](./custom/Annotation_Principle%20(2).png)
+
 
 ---
 
@@ -947,5 +928,3 @@ section {
 
 
 ---
-
-# Annotation Principles
