@@ -45,6 +45,8 @@ Once you double-checked the metadata, you can proceed to submitting the ARC.
 - **(9)**: You can only publish an ARC if you agree to the terms of use of the ARChive and made sure to include all authors.
 - **(10)**: Clicking on the _publish button_ will submit the ARC to the ARChive.
 
+After clicking on the _publish button_ (**10**), your ARC is officially in Request For Publication (**RFP**) stage. You will receive a confirmation mail with a link to the publication status page of your ARC.
+
 ## Publication status
 
 Once you clicked on the _publish button_ (**10**), you will be redirected to the submission ticket, and receive a confirmation mail. For more information on tracking the publication progress, refer to this [guide](datahub-data-publications-status.html).
