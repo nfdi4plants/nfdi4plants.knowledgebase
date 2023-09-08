@@ -6,7 +6,7 @@ author:
 - name: Kevin Schneider
   orcid: https://orcid.org/0000-0002-2198-5262
   github: kMutagene
-add toc: false
+add toc: true
 add support: true
 add sidebar: _sidebars/mainSidebar.md
 ---
@@ -52,6 +52,10 @@ Clicking on **(7)** will open the CQC pipeline, where each step can be viewed in
 - **(11)** _CQC step 2_: ARC metadata is subjected to a set of quality checks, e.g., if ORCIDs associated with persons are valid or if each author has a contact email. 
 - **(12)** _CQC step 3_: The ARC metadata is converted to a metadata record, which is used by subsequent tools to trigger the data publication and associated creation of a DOI via DataCite for that record.
 - **(13)**: _Test tab_ shows the results of each individual test performed in _CQC step 2_ **(11)**
+
+## Starting the publication process
+
+Clicking on the _publish button_ **(2)** on the ARC homepage will start the publication process. Refer to the [ARChigator guide](datahub-data-publications-archigator.html) for more information on the publication process.
 
 ## What to do when the CQC pipeline fails?
 
