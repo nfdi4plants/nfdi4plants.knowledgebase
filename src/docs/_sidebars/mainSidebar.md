@@ -91,6 +91,13 @@
 ### [ARC Wiki](/docs/DataHUB-Manual/datahub-ARCWiki.html)
 ## [Groups Panel](/docs/DataHUB-Manual/datahub-groupsPanel.html)
 ### [Create a new user group](/docs/DataHUB-Manual/datahub-CreateGroup.html)
+## [Data publications](/docs/DataHUB-Manual/datahub-data-publications.html)
+### [Passing Continuous Quality Control](/docs/DataHUB-Manual/datahub-data-publications-cqc.html)
+### [Submitting ARCs with ARChigator](/docs/DataHUB-Manual/datahub-data-publications-archigator.html)
+### [Track publication status](/docs/DataHUB-Manual/datahub-data-publications-status.html)
+### [Use your DOIs](/docs/DataHUB-Manual/datahub-data-publications-dois.html)
+
+
 
 
 # [Guides](/docs/guides/index.html)
