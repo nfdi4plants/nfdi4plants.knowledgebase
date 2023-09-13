@@ -54,14 +54,10 @@ ul{
 
 :bulb: Please prepare the following before the workshop:
 
-Required:
-
 - :white_check_mark: Register at DataPLANT
 - :white_check_mark: Install ARCitect on your computer
 - :white_check_mark: Install Swate on your computer
 - :white_check_mark: Bring your own data
-
-Recommended (for trouble-shooting):
 - :white_check_mark: Find your command line
 - :white_check_mark: Install ARC Commander and dependencies on your computer
 - :white_check_mark: Install VS Code
@@ -110,7 +106,7 @@ This can be data of your current research project or an already published manusc
 
 # Recommended for trouble-shooting
 
-:bulb: We will likely not use the tools on the next few slides. However, as of now (early September 2023), it's probably better to have them ready for trouble-shooting and to show some inner workings of the ARC.
+:bulb: We will likely not use the tools on the next few slides. However, as of now (September 2023), it's probably better to have them ready for trouble-shooting and to show some inner workings of the ARC.
 
 ---
 

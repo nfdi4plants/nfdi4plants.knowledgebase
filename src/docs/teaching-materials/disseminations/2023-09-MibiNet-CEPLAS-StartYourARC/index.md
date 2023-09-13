@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: MibiNet/CEPLAS Start Your ARC Workshop
-date: 2023-07-04
+date: 2023-09-13
 add toc: true
 add support: false
 add sidebar: _sidebars/mainSidebar.md
@@ -9,7 +9,7 @@ add sidebar: _sidebars/mainSidebar.md
 
 Here you can find the slides prepared for the September 2023 MibiNet/CEPLAS *Start Your ARC Workshop*.
 
-:warning: This is not a permanent link. Slides may move elsewhere or be updated. We do our best to keep the knowledge base up-to-date - so you will find all relevant information here. 
+:warning: This is not a permanent link. Slides may move elsewhere or be updated. We do our best to keep the knowledge base up-to-date - so you will find all relevant information here.
 
 
 ## Block 0 &ndash; Preparation
