@@ -509,7 +509,7 @@
       </i>
       <nfdi-toc></nfdi-toc>
       <p>Continuous Quality Control (<strong>CQC</strong>) is a process that ensures the quality of the metadata of an ARC meets certain standards.</p>
-<p>CQC i performed on each commit to an ARC, and the results are displayed on the ARC homepage:</p>
+<p>CQC is performed on each commit to an ARC, and the results are displayed on the ARC homepage:</p>
 <nfdi-h2 id="arc-homepage">ARC homepage</nfdi-h2>
 <img src="./../img/data-publication/cqc-results.png" style="width:100%;display: block;margin: 20px auto;">
 <ul>
@@ -548,7 +548,7 @@
 <nfdi-h3 id="cqc-step-1-fails">CQC step 1 fails</nfdi-h3>
 <p><em>CQC step 1</em> <strong>(10)</strong>, should never fail, as it usually creates a json file even when there is no ARC in the repository. If this step fails, please contact the DataHUB support team, as there is something fundamentally wrong with your repository.</p>
 <nfdi-h3 id="cqc-step-2-fails">CQC step 2 fails</nfdi-h3>
-<p><em>CQC step 2</em> <strong>(11)</strong>, is the most common step to fail. This step contains a set of critical quality checks that <strong>MUST</strong> pass in order for the ARC to be eligible for publication, and a set of non-critical checks that signify metadata quality. Only failed critical tests lead to a failed CQC pipeline. If this happens, investigate the failed tests in the <em>Test tab</em> <strong>(13)</strong>, and fix the issues based on the information displayed there. An example could for example be a person not having a First name in your investigation metadata. Commit your changes and check wether the tests pass.</p>
+<p><em>CQC step 2</em> <strong>(11)</strong>, is the most common step to fail. This step contains a set of critical quality checks that <strong>MUST</strong> pass in order for the ARC to be eligible for publication, and a set of non-critical checks that signify metadata quality. Only failed critical tests lead to a failed CQC pipeline. If this happens, investigate the failed tests in the <em>Test tab</em> <strong>(13)</strong>, and fix the issues based on the information displayed there. An example could for example be a person not having a first name in your investigation metadata. Commit your changes and check wether the tests pass.</p>
 <nfdi-h3 id="cqc-step-3-fails">CQC step 3 fails</nfdi-h3>
 <p>As <em>CQC step 3</em> <strong>(12)</strong> is only performed after the ARC has passed all critical tests <strong>(10)</strong>, it is very unlikely that this step fails. If it does, please contact the DataHUB support team.</p>
 
