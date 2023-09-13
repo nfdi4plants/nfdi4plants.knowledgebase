@@ -25,7 +25,7 @@ This is achieved by a set of services and tools that are integrated into DataPLA
 
 ## Continuous Quality Control (CQC)
 
-_practical guide: [passing cqc](datahub-data-publications-cqc.html)_ 
+_practical guide: [passing cqc](datahub-data-publications-cqc.html)_
 
 Upon every commit to an ARC repository, PLANTdataHUB can perform automated quality control measures based on the committed changes. 
 

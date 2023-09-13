@@ -11,7 +11,7 @@ add support: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-ARChigator is a tool for submitting ARCs hosted on DataHUB for publication in the [ARChive](https://archive.nfdi4plants.org/communities/dataplant).
+ARChigator is a tool for submitting ARCs hosted on DataHUB for publication to the [ARChive](https://archive.nfdi4plants.org/communities/dataplant).
 
 ## Start the publication process
 
@@ -36,7 +36,6 @@ After clicking the _publish button_ (**2**), you will be redirected to the ARChi
 Once you double-checked the metadata, you can proceed to submitting the ARC.
 
 ## Submit the ARC
-
 
 <img src="./../img/data-publication/archigator-submit.png" style="width:50%;display: block;margin: 20px auto;">
 
