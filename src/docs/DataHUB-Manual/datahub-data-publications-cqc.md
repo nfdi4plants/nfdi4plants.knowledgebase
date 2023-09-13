@@ -13,7 +13,7 @@ add sidebar: _sidebars/mainSidebar.md
 
 Continuous Quality Control (**CQC**) is a process that ensures the quality of the metadata of an ARC meets certain standards.
 
-CQC i performed on each commit to an ARC, and the results are displayed on the ARC homepage:
+CQC is performed on each commit to an ARC, and the results are displayed on the ARC homepage:
 
 ## ARC homepage
 
@@ -67,7 +67,7 @@ _CQC step 1_ **(10)**, should never fail, as it usually creates a json file even
 
 ### CQC step 2 fails
 
-_CQC step 2_ **(11)**, is the most common step to fail. This step contains a set of critical quality checks that **MUST** pass in order for the ARC to be eligible for publication, and a set of non-critical checks that signify metadata quality. Only failed critical tests lead to a failed CQC pipeline. If this happens, investigate the failed tests in the _Test tab_ **(13)**, and fix the issues based on the information displayed there. An example could for example be a person not having a First name in your investigation metadata. Commit your changes and check wether the tests pass.
+_CQC step 2_ **(11)**, is the most common step to fail. This step contains a set of critical quality checks that **MUST** pass in order for the ARC to be eligible for publication, and a set of non-critical checks that signify metadata quality. Only failed critical tests lead to a failed CQC pipeline. If this happens, investigate the failed tests in the _Test tab_ **(13)**, and fix the issues based on the information displayed there. An example could for example be a person not having a first name in your investigation metadata. Commit your changes and check wether the tests pass.
 
 ### CQC step 3 fails
 
