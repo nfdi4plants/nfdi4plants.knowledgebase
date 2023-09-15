@@ -27,24 +27,7 @@ figcaption {
 
 </style>
 
-
 ---
-
-# test page
-
-![bg right w:400](./images/cyra_et_al-2022-GitLab-FAIR.png)
-
-<footer>
-    <div id="footer-ref">
-    Cyra et al. 2022. A push for better RDM: Erfahrungsbericht aus dem Einsatz von git für Forschungsdaten. DOI: 10.17192/bfdm.2022.2.8435.
-    </div>
-</footer>
-
-
-
-
----
-
 
 # Annotated Research Contexts (ARCs)
 
@@ -74,15 +57,31 @@ September 19th, 2023
 
 ---
 
+# Annotated Research Contexts (ARCs)
+
+## A FAIR RDM journey along a mutable data life cycle
+
+<style scoped>h1,h2,p {color: grey} section {background: none; background-color: white}</style>
+<!-- _paginate: false -->
+
+<br>
+
+fdm.nrw
+"Best <span style="color:#C21F3A;font-size: 40px;font-weight: bold;">Practice</span> Day &ndash; die <span style="color:#C21F3A;font-size: 40px;font-weight: bold;">Tools</span> des FDMs"
+September 19th, 2023
+
+---
+
+
 ## Annotated Research Contexts (ARCs)
 
 ---
 
-## data life cycle
+## Data life cycle
 
 ---
 
-## Just published
+# Just published
 
 The Plant Journal
 
@@ -97,10 +96,40 @@ Weil, Schneider *et al.* (2023)
 
 ![bg right:40% w:400](./images/cyra_et_al-2022-GitLab-FAIR.png)
 
-
 Cyra et al. 2022. A push for better RDM: Erfahrungsbericht aus dem Einsatz von git für Forschungsdaten. DOI: 10.17192/bfdm.2022.2.8435.
 
 ---
+
+# Plan
+
+- create empty ARC
+- use wiki, use issues
+
+---
+
+# Collect (and annotate)
+
+- create study folder
+- take a picture (add more demo pictures)
+- annotate using SWATE
+
+---
+
+# Collect (and annotate)
+
+- create assay folder
+- annotate rnaseq extraction
+- add fastq data
+
+---
+
+# Analyse
+
+- run fastqc
+- receive back results
+
+---
+
 
 # Validate
 
@@ -110,15 +139,16 @@ adapted from
 
 ---
 
-# Publish
+# Share (publish and preserve)
 
 ![h:400](./images/Figures-DataHUB-Fig6.png)
 
 ---
 
-# Find: ARC Metadata Registry
+# (Find and) Reuse: ARC Metadata Registry
 
 https://arcregistry.nfdi4plants.org/arcsearch
+https://arcregistry.nfdi4plants.org/isasearch
 
 
 ---
