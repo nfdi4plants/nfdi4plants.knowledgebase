@@ -28,8 +28,6 @@ event: https://fdm-nrw.coscine.de/#/?id=best-practice-day-die-tools-des-fdms
 
 - demo upload pictures from lab
 
-
-
 ## 
 
 1. ARC tool chain
@@ -38,7 +36,14 @@ event: https://fdm-nrw.coscine.de/#/?id=best-practice-day-die-tools-des-fdms
 4. 
 
 
-support researchers throughout the entire project and data life cycle
+## support researchers throughout the entire project and data life cycle
+
+1. Plan
+   - Create empty ARC
+   - Discuss, collect meeting minutes in Wiki
 
 
 Researchers can use the ARC on the DataHUB platform to plan their project and invite collaborating partners. Studies can be designed collaboratively in the same structured format, where data, once collected, is annotated with relevant metadata, ontology-backed, readable and comprehensible by both machines and humans. Reusability of data processing and analysis workflows is facilitated by integration of workflow management systems. Once validated, ARCs can be assigned a DOI, exported to a long-term archivable standard for preservation and public sharing. A levelled metadata registry further facilitates the discoverability and reuse of ARCs.
+
+
+

@@ -102,11 +102,30 @@ Cyra et al. 2022. A push for better RDM: Erfahrungsbericht aus dem Einsatz von g
 
 ---
 
+# Validate
+
+![h:400](images/Figures-DataHUB-Fig6a.png)
+
+adapted from
+
+---
+
+# Publish
+
+![h:400](./images/Figures-DataHUB-Fig6.png)
+
+---
+
+# Find: ARC Metadata Registry
+
+https://arcregistry.nfdi4plants.org/arcsearch
+
+
+---
 
 # **mutable** data life cycle
 
 "immutable, but evolving"
-
 
 ---
 
