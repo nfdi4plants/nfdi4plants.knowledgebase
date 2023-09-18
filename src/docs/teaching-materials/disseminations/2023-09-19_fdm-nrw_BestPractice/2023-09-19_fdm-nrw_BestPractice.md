@@ -85,7 +85,7 @@ September 19th, 2023
 # Goal
 
 - Illustrate current state of DataPLANT **tools** and concepts
-- with a **practical** example
+- with one **practical** example
 
 ---
 
@@ -103,11 +103,6 @@ September 19th, 2023
 
 # A FAIR RDM journey along a (mutable) data life cycle
 
-
-<style>
-
-</style>
-
 ![bg right w:450](images/RDMkit-data_life_cycle_9.svg)
 
 
@@ -123,7 +118,12 @@ September 19th, 2023
     <figcaption align=right> rdmkit.elixir-europe.org, CC BY 4.0 </figcaption>
 </figure>
 
-<!-- 
+
+![w:900](images/Figures-DataHUB-Fig5.png)
+
+<span class="reference"> **Weil, Schneider *et al.*** (2023) "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474 (*in production*) </span>
+
+<!--
  
  - **ARCitect**: Create empty ARC
    - description
@@ -147,10 +147,14 @@ September 19th, 2023
     <figcaption align=right> rdmkit.elixir-europe.org, CC BY 4.0 </figcaption>
 </figure>
 
+<!-- 
+
 - create study folder
   - take a picture (add more demo pictures)
 - create assay folder
   - add fastq data
+
+-->
 
 ---
 
@@ -178,6 +182,13 @@ September 19th, 2023
 - receive back results
 -->
 
+![w:800](images/Figures-DataHUB-Fig3.png)
+
+
+<!-- ![w:500](../../../img/DataPLANT_ARC_SinglePointofEntry.svg)
+
+![w:700](../../../img/DataPLANT_ARC_Workflows.svg) -->
+
 ---
 
 # Preserve
@@ -199,6 +210,25 @@ September 19th, 2023
 
 ---
 
+# Preserve
+
+
+<figure style="position: fixed; top: 0px; right: 0px; width: 150px">
+    <img src="images/Screenshot-RDMkit-05-preserve.png"></img>
+    <figcaption align=right style="font"> rdmkit.elixir-europe.org, CC BY 4.0 </figcaption>
+</figure>
+
+<!--
+1. Validation: CQC on each DataHUB commit
+2. Publication: DOI
+-->
+
+![h:400](./images/Figures-DataHUB-Fig6.png)
+
+<span class="reference"> **Weil, Schneider *et al.*** (2023) "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474 (*in production*) </span>
+
+---
+
 # Share
 
 <figure style="position: fixed; top: 0px; right: 0px; width: 150px">
@@ -206,9 +236,7 @@ September 19th, 2023
   <figcaption align=right style="font"> rdmkit.elixir-europe.org, CC BY 4.0 </figcaption>
 </figure>
 
-![h:400](./images/Figures-DataHUB-Fig6.png)
-
-<span class="reference"> **Weil, Schneider *et al.*** (2023) "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474 (*in production*) </span>
+![w:700](./../../../img/ARC_DataSharing_Experts02_img1.png)
 
 ---
 
@@ -219,16 +247,28 @@ September 19th, 2023
   <figcaption align=right style="font"> rdmkit.elixir-europe.org, CC BY 4.0 </figcaption>
 </figure>
 
-- Find ARCs *via* Metadata Registry
+![w:800](images/Figures-DataHUB-Fig7.png)
 
-  - ARC https://arcregistry.nfdi4plants.org/arcsearch
-  - via https://arcregistry.nfdi4plants.org/isasearch
+<!-- 
+- via ARC https://arcregistry.nfdi4plants.org/arcsearch
+- via ISA https://arcregistry.nfdi4plants.org/isasearch 
+-->
+
+<span class="reference"> **Weil, Schneider *et al.*** (2023) "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474 (*in production*) </span>
 
 ---
 
-# **mutable** data life cycle
+# **Mutable** data life cycle
 
-*Immutable, but evolving*
+![w:700](images/Figures-DataHUB-Fig4.png)
+
+<!-- 
+
+- Invite other (demo) account
+- add notes from there
+
+-->
+
 
 ---
 
@@ -243,7 +283,45 @@ Knowledge Base: <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/" tar
 DataHUB: <a href="https://git.nfdi4plants.org" target="_blank">https://git.nfdi4plants.org</a>
 GitHub: <a href="https://github.com/nfdi4plants" target="_blank">https://github.com/nfdi4plants</a>
 
---- 
+---
+
+# Acknowledgements
+
+<style scoped>
+
+section {
+  font-size: 22px;  
+}
+
+</style>
+
+**CEPLAS**
+
+Björn Usadel, Andrea Schrader, Hajira Jabeen (until 2021)
+
+**DataPLANT**
+
+Kaiserslautern: Timo Mühlhaus, Christoph Garth
+- Kevin Frey, Lukas Weil, Oliver Maus, Kevin Schneider  
+(`ARC Commander`, `Swate`, `ARChigator`)
+- Jonas Lukasczyk (`ARCitect`)
+
+Freiburg: Dirk von Suchodeletz
+- Jonathan Bauer, Marcel Tschöpe (`DataHUB`, `Swobup`)
+- Cristina Martins Rodrigues (`Knowledge Base`)
+
+![bg right:40% w:550](./../custom/img/hackathon_group.png)
+
+---
+
+## Contributors 
+
+Slides presented here include contributions by 
+
+- Dominik Brilhaus | [GitHub](https://github.com/brilator) | [ORCID](https://orcid.org/0000-0001-9021-3197)
+- Cristina Martins Rodrigues  | [GitHub](https://github.com/CMR248) | [ORCID](https://orcid.org/0000-0002-4849-1537)
+- Martin Kuhl  | [GitHub](https://github.com/Martin-Kuhl) | [ORCID](https://orcid.org/0000-0002-8493-1077)
+
 
 
 --- 
