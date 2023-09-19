@@ -811,7 +811,15 @@ section p img{
 
 # Annotation Building Block types <!--fit-->
 
-![bg right w:620](./../../../img/Swate_Overview.svg)
+<style scoped>
+
+section{
+    font-size: 25px
+}
+
+</style>
+
+![bg right w:700](./../../../img/Swate_Overview.svg)
 
 - Source Name (Input)
 - Protocol Columns
@@ -824,17 +832,7 @@ section p img{
   - Sample Name, Raw Data File, Derived Data File
 
 
-:bulb: For details, check out the [Annotation Principles](https://nfdi4plants.github.io/AnnotationPrinciples/).
-
-<!-- Source to slide(s) -->
-<!-- ../../bricks/lesson_Swate_DataPLANT-Annotation_Building_Block_types.md -->
-
----
-
-## Annotation Principles
-
-![w:900](./custom/Annotation_Principle%20(2).png)
-
+Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/isa_AnnotationPrinciples.html) | [slides](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/units/AnnotationPrinciples/isa_AnnotationPrinciples-slides.html)
 
 ---
 
