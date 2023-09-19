@@ -85,67 +85,50 @@ September 19th, 2023
 # Goal
 
 - Illustrate current state of DataPLANT **tools** and concepts
-- with one **practical** example
+- with a **practical** example
 
 ---
+
+# Data Stewardship between DataPLANT and the community  <!-- fit -->
+
+![w:700](./images/DataPLANT-collaboration01.drawio.png)
+
+---
+
+# Annotated Research Context (ARC)
+
+![width:950](./../../../img/ARC_DataCentricIntegration_img1.png)
+
+---
+
+# The ARC &ndash; a package for your research data
+
+![width:950](./../../../img/ARC_fillWithData_seq8.png)
+
+<!-- --- 
+
 
 # Annotated Research Contexts (ARCs)
 
----
+![w:600](images/Figures-DataHUB-Fig1.png)
 
-# Intro
-
-- ARC
-- ISA
-- DataHUB
+<span class="reference"> **Weil, Schneider *et al.*** (2023) "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474 (*in production*) </span> -->
 
 ---
 
-# A FAIR RDM journey along a (mutable) data life cycle
+# "A FAIR RDM journey along a (mutable) data life cycle" <!-- fit -->
 
-![bg right w:450](images/RDMkit-data_life_cycle_9.svg)
+<br>
 
+![w:350](images/RDMkit-data_life_cycle_9.svg)
 
-
-<span class="reference-bgright"> https://rdmkit.elixir-europe.org, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
-
----
-
-# Plan
-
-<figure style="position: fixed; top: 0px; right: 0px; width: 150px">
-    <img src="images/Screenshot-RDMkit-01-plan.png"></img>
-    <figcaption align=right> rdmkit.elixir-europe.org, CC BY 4.0 </figcaption>
-</figure>
-
-
-![w:900](images/Figures-DataHUB-Fig5.png)
-
-<span class="reference"> **Weil, Schneider *et al.*** (2023) "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474 (*in production*) </span>
-
-<!--
- 
- - **ARCitect**: Create empty ARC
-   - description
-   - author
-     - first name
-     - last name
-     - email
- - **ARCitect**: Upload ARC to DataHUB
- - **DataHUB**
-   - Discuss, collect meeting minutes in Wiki
-   - design / plant investigation (datahub wiki, issues)
-
--->
+<span class="reference"> https://rdmkit.elixir-europe.org, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
 
 ---
 
-# Collect
+# Collect <img align="left" class="center" style="height:75px" src='images/Screenshot-RDMkit-02-collect.png'/>
 
-<figure style="position: fixed; top: 0px; right: 0px; width: 150px">
-    <img src="images/Screenshot-RDMkit-02-collect.png"></img>
-    <figcaption align=right> rdmkit.elixir-europe.org, CC BY 4.0 </figcaption>
-</figure>
+![width:800](./../../../img/ARC_fillWithData_experimental.png)
 
 <!-- 
 
@@ -158,24 +141,30 @@ September 19th, 2023
 
 ---
 
-# Process (e.g. annotate)
+# Process (e.g. annotate)  <img align="left" class="center" style="height:75px" src='images/Screenshot-RDMkit-03-process.png'/>
 
-- annotate
-- annotate rnaseq extraction
+<style scoped>
 
-<figure style="position: fixed; top: 0px; right: 0px; width: 150px">
-    <img src="images/Screenshot-RDMkit-03-process.png"></img>
-    <figcaption align=right> rdmkit.elixir-europe.org, CC BY 4.0 </figcaption>
-</figure>
+section p img {
+width: 900px;
+height: 400px;
+object-fit: cover;
+object-position: 50% 60%;
+/* display: block; */;
+}
+</style>
+
+
+![](./../../../img/Swate_metadataTemplates.png)
+
+<!-- 
+
+- annotate plant samples
+- annotate rnaseq extraction -->
 
 ---
 
-# Analyse
-
-<figure style="position: fixed; top: 0px; right: 0px; width: 150px">
-    <img src="images/Screenshot-RDMkit-04-analyse.png"></img>
-    <figcaption align=right> rdmkit.elixir-europe.org, CC BY 4.0 </figcaption>
-</figure>
+# Analyse <img align="left" class="center" style="height:75px" src='images/Screenshot-RDMkit-04-analyse.png'/>
 
 <!-- 
 - run fastqc
@@ -186,18 +175,11 @@ September 19th, 2023
 
 
 <!-- ![w:500](../../../img/DataPLANT_ARC_SinglePointofEntry.svg)
-
 ![w:700](../../../img/DataPLANT_ARC_Workflows.svg) -->
 
 ---
 
-# Preserve
-
-
-<figure style="position: fixed; top: 0px; right: 0px; width: 150px">
-    <img src="images/Screenshot-RDMkit-05-preserve.png"></img>
-    <figcaption align=right style="font"> rdmkit.elixir-europe.org, CC BY 4.0 </figcaption>
-</figure>
+# Preserve  <img align="left" class="center" style="height:75px" src='images/Screenshot-RDMkit-05-preserve.png'/>
 
 <!--
 1. Validation: CQC on each DataHUB commit
@@ -210,13 +192,7 @@ September 19th, 2023
 
 ---
 
-# Preserve
-
-
-<figure style="position: fixed; top: 0px; right: 0px; width: 150px">
-    <img src="images/Screenshot-RDMkit-05-preserve.png"></img>
-    <figcaption align=right style="font"> rdmkit.elixir-europe.org, CC BY 4.0 </figcaption>
-</figure>
+# Preserve and publish <img align="left" class="center" style="height:75px" src='images/Screenshot-RDMkit-05-preserve.png'/>
 
 <!--
 1. Validation: CQC on each DataHUB commit
@@ -229,23 +205,13 @@ September 19th, 2023
 
 ---
 
-# Share
-
-<figure style="position: fixed; top: 0px; right: 0px; width: 150px">
-  <img src="images/Screenshot-RDMkit-06-share.png"></img>
-  <figcaption align=right style="font"> rdmkit.elixir-europe.org, CC BY 4.0 </figcaption>
-</figure>
+# Share and collaborate <img align="left" class="center" style="height:75px" src='images/Screenshot-RDMkit-06-share.png'/>
 
 ![w:700](./../../../img/ARC_DataSharing_Experts02_img1.png)
 
 ---
 
-# Reuse
-
-<figure style="position: fixed; top: 0px; right: 0px; width: 150px">
-  <img src="images/Screenshot-RDMkit-07-reuse.png"></img>
-  <figcaption align=right style="font"> rdmkit.elixir-europe.org, CC BY 4.0 </figcaption>
-</figure>
+# Reuse <img align="left" class="center" style="height:75px" src='images/Screenshot-RDMkit-07-reuse.png'/>
 
 ![w:800](images/Figures-DataHUB-Fig7.png)
 
@@ -266,8 +232,48 @@ September 19th, 2023
 
 - Invite other (demo) account
 - add notes from there
+-->
+
+---
+
+# Plan (ARC scale) <img align="left" class="center" style="height:75px" src='images/Screenshot-RDMkit-01-plan.png'/>
+
+![w:800](images/Figures-DataHUB-Fig5.png)
+
+<span class="reference"> **Weil, Schneider *et al.*** (2023) "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474 (*in production*) </span>
+
+<!--
+ 
+ - **ARCitect**: Create empty ARC
+   - description
+   - author
+     - first name
+     - last name
+     - email
+ - **ARCitect**: Upload ARC to DataHUB
+ - **DataHUB**
+   - Discuss, collect meeting minutes in Wiki
+   - design / plant investigation (datahub wiki, issues)
 
 -->
+
+---
+
+# Plan (proposal scale) <img align="left" class="center" style="height:75px" src='images/Screenshot-RDMkit-01-plan.png'/>
+
+<span class="reference">**Zhou *et al.* (2023)**, DataPLAN: a web-based data management plan generator for the plant sciences, bioRxiv 2023.07.07.548147; doi: https://doi.org/10.1101/2023.07.07.548147 </span>
+
+https://dmpg.nfdi4plants.org
+
+![w:800](./images/zhou2023-dataplan.png)
+
+---
+
+## Conclusion
+
+- ARC ecosystem support the full data life cycle
+- **Data-centric**: it's more about the data than tools or implementations
+- 
 
 
 ---
@@ -310,32 +316,27 @@ Freiburg: Dirk von Suchodeletz
 - Jonathan Bauer, Marcel Tschöpe (`DataHUB`, `Swobup`)
 - Cristina Martins Rodrigues (`Knowledge Base`)
 
-![bg right:40% w:550](./../custom/img/hackathon_group.png)
+![bg right:40% w:550](./../../../img/hackathon_group.png)
 
 ---
 
-## Contributors 
+---
 
-Slides presented here include contributions by 
+# ARCs build on standards
 
-- Dominik Brilhaus | [GitHub](https://github.com/brilator) | [ORCID](https://orcid.org/0000-0001-9021-3197)
-- Cristina Martins Rodrigues  | [GitHub](https://github.com/CMR248) | [ORCID](https://orcid.org/0000-0002-4849-1537)
-- Martin Kuhl  | [GitHub](https://github.com/Martin-Kuhl) | [ORCID](https://orcid.org/0000-0002-8493-1077)
+![w:700](./../../../img/ARC.jpg)
 
-
-
---- 
-
+---
 
 # Is GitLab FAIR?
 
-![bg right:50% w:400](./images/cyra_et_al-2022-GitLab-FAIR.png)
+![w:400](./images/cyra_et_al-2022-GitLab-FAIR.png)
 
-Cyra et al. 2022. A push for better RDM: Erfahrungsbericht aus dem Einsatz von git für Forschungsdaten. DOI: 10.17192/bfdm.2022.2.8435.
+<span class="reference"> Cyra et al. 2022. A push for better RDM: Erfahrungsbericht aus dem Einsatz von git für Forschungsdaten. DOI: 10.17192/bfdm.2022.2.8435. </span>
 
 ---
 
-# PLANTdataHUB publication
+# 
 
 **Weil, Schneider *et al.* (2023)** "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474
 (*in production*)
