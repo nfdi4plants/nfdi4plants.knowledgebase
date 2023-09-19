@@ -185,7 +185,7 @@ TODO edit link
 
 💡Don't use spaces in ARC's name
 
-![bg right:30% w:500](ARCitect_TalinumPhotosynthesis.png)
+![bg right:30% w:500](./custom/ARCitect_TalinumPhotosynthesis.png)
 
 ---
 
@@ -195,7 +195,7 @@ by clicking "Add Study" and entering an identifier for your study
 
 Use **talinum_drought** as an identifier
 
-![bg right w:500](ARCitect_TalinumPhotosynthesis_Study.png)
+![bg right w:500](./custom/ARCitect_TalinumPhotosynthesis_Study.png)
 
 ---
 
@@ -208,7 +208,7 @@ In the study panel you can add
 - publications
 - data process information
 
-![bg right w:500](ARCitect_TalinumPhotosynthesis_StudyPanel.png)
+![bg right w:500](./custom/ARCitect_TalinumPhotosynthesis_StudyPanel.png)
 
 ---
 
@@ -218,7 +218,7 @@ In the study panel you can add
 by clicking "Add Assay" and entering an identifier for your assay
 
 Add two assays with **rnaseq** and **metabolomics** as an identifier
-![bg right w:500](ARCitect_TalinumPhotosynthesis_Assay.png)
+![bg right w:500](./custom/ARCitect_TalinumPhotosynthesis_Assay.png)
 
 ---
 
@@ -231,7 +231,7 @@ You can either
 Link your assays to your **talinum_drought** study
 
 
-![bg right w:500](ARCitect_TalinumPhotosynthesis_Assay2.png)
+![bg right w:500](./custom/ARCitect_TalinumPhotosynthesis_Assay2.png)
 
 ---
 
@@ -246,7 +246,7 @@ In the assay panel you can
    - technology platform.
 3. add data process information
 
-![bg right w:500](ARCitect_TalinumPhotosynthesis_AssayPanel.png)
+![bg right w:500](./custom/ARCitect_TalinumPhotosynthesis_AssayPanel.png)
 
 ---
 
