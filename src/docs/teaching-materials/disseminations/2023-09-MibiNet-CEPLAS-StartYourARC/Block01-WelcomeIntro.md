@@ -236,16 +236,14 @@ object-fit: cover;
 ---
 
 # 3-2-1 backup rule
-<!--replace figure-->
-- **Three** different copies
+
+<!-- - **Three** different copies
 - **Two** storage media
-- **One** copy offsite
+- **One** copy offsite -->
 
-![bg w:500](./custom/backup_rule.png)
-
+![w:800](./custom/3-2-1-backup-rule.drawio.svg)
 
 --- 
-
 
 # Version control / Track changes
 
