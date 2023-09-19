@@ -3,9 +3,11 @@
 event: https://fdm-nrw.coscine.de/#/?id=best-practice-day-die-tools-des-fdms
 
 
-# Publication pipeline
+## Publication pipeline
 
 ## Required terms
+
+
 
 ## If pipeline failed
 
@@ -13,4 +15,3 @@ event: https://fdm-nrw.coscine.de/#/?id=best-practice-day-die-tools-des-fdms
 2. expand "Auto DevOps"
 3. check box "Default to Auto DevOps pipeline"
 4. Save changes
-

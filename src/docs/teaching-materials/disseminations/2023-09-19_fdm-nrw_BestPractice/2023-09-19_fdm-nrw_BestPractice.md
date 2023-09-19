@@ -308,28 +308,3 @@ Freiburg: Dirk von Suchodeletz
 - Cristina Martins Rodrigues (`Knowledge Base`)
 
 ![bg right:40% w:550](./../../../img/hackathon_group.png)
-
----
-
----
-
-# ARCs build on standards
-
-![w:700](./../../../img/ARC.jpg)
-
----
-
-# Is GitLab FAIR?
-
-![w:400](./images/cyra_et_al-2022-GitLab-FAIR.png)
-
-<span class="reference"> Cyra et al. 2022. A push for better RDM: Erfahrungsbericht aus dem Einsatz von git für Forschungsdaten. DOI: 10.17192/bfdm.2022.2.8435. </span>
-
----
-
-# 
-
-**Weil, Schneider *et al.* (2023)** "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474
-(*in production*)
-
----
