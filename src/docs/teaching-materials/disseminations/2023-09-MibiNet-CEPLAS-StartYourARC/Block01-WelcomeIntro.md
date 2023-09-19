@@ -197,24 +197,17 @@ object-fit: cover;
 
 ![](./../../../img/FAIR_Benefits.png)
 
-
 ---
 
 # Scattered Data Silos
- 
-![w:900](./custom/data_fragmentation_CEPLAS_seq1.png)
+
+![w:900](./custom/data_fragmentation_CEPLAS.png)
 
 ---
 
 # Scattered Data Silos
 
 ![w:900](./custom/data_fragmentation_CEPLAS_MibiNet_TRR.png)
-
-<!-- TODO
-
-- enlarge picture 
-
- -->
 
 ---
 
@@ -254,8 +247,6 @@ It’s good practice to document:
 - Why the changes?
 
 ---
-
-
 
 # Data Sharing - while working collaboratively
 
