@@ -102,7 +102,7 @@ provide support in being FAIR
 </span>
 </h1>
 
-![bg w:1200](./../../../img/Tools-and-Services_DataPLANT.png)
+![bg w:1200](./../../../img/Tools-and-Services-new_DataPLANT.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/DataPLANT_Tools-and-Services.md -->
