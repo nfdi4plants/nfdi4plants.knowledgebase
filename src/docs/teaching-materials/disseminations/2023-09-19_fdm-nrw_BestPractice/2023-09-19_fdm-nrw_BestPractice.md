@@ -82,13 +82,6 @@ September 19th, 2023
 
 ---
 
-# Goal
-
-- Illustrate current state of DataPLANT **tools** and concepts
-- with a **practical** example
-
----
-
 # Data Stewardship between DataPLANT and the community  <!-- fit -->
 
 ![w:700](./images/DataPLANT-collaboration01.drawio.png)
@@ -273,8 +266,6 @@ https://dmpg.nfdi4plants.org
 
 - ARC ecosystem support the full data life cycle
 - **Data-centric**: it's more about the data than tools or implementations
-- 
-
 
 ---
 
