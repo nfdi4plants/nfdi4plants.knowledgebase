@@ -113,9 +113,7 @@ git clone "https://demo-user:5ehDYeHcqP2MqVXsNNPu@git.nfdi4plants.org/teaching/d
 
 ## Swate Overview
 
-![ width:1700](Swate_Overview.png)
-
-
+![width:1000](./../../../img/Swate_Overview.png)
 
 ---
 
