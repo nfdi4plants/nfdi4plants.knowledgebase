@@ -98,19 +98,8 @@ object-position: 50% 60%;
 
 ## Collaborate and share
 
-<style scoped>
 
-section p img {
-width: 1000px;
-height: 400px;
-object-fit: cover;
-object-position: 50% 30%;
-/* display: block; */;
-}
-</style>
-
-
-![](./../../../img/ARC_DataSharing_Experts02_img1.png)
+![w:650](./../../../img/ARC_DataSharing_Experts02_img1.png)
 
 
 ---
