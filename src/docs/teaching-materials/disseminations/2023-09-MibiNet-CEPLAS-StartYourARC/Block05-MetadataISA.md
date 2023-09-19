@@ -47,7 +47,7 @@ September 28th, 2023
 ---
 
 
-# Part 1: Metadata
+# Metadata
 
 ---
 
@@ -270,8 +270,7 @@ Examples from Minimum Information for Biological and Biomedical Investigations (
 
 *Check: https://fairsharing.org/*
 
----
-
+<!-- Remove? TODO
 ## A closer look at MIAPE 
 
 (*MIAPPE = Minimum Information About a **Proteomics** Experiment*)
@@ -334,8 +333,6 @@ http://doi.org/10.1111/nph.16544
 <!-- Source to following slide(s) -->
 <!-- ./bricks/lesson_002_ontology.md -->
 <!-- ################# -->
-
-
 
 ---
 
@@ -453,7 +450,8 @@ TODO:
 
 
 
----
+
+<!-- Remove? TODO
 
 # Example ontologies
 
@@ -483,11 +481,11 @@ LIVE-Demo
 - Show the graph view (and expand it interactively)
 - Mention that terms (subjects, objects) and properties (predicates) have "URIs", "PIDs"
 - Show that terms can have alternative / external IDs and link to "outdated" ontologies
--->
+
 
 --- 
 
-
+<!-- Remove? TODO
 # Schemas and machine-readability
 
 
@@ -508,11 +506,12 @@ Schema.org
 <!-- 
 TODO: 
 Source: bioschemas.org
- -->
+ 
 
 
 --- 
 
+<!-- Delete? TODO
 
 ## Structured data and the internet: Schema.org
 
@@ -571,8 +570,7 @@ https://bioschemas.org
 
 --- 
 
-
-
+<!-- DELETE? TODO
 
 ## JSON-LD
 
@@ -700,8 +698,9 @@ https://schema.datacite.org/meta/kernel-4.3/example/datacite-example-dataset-v4.
 
 
 ---
+--> 
 
-# Part 2: ISA
+# ISA
 
 ---
 
@@ -772,33 +771,7 @@ Output building blocks:
 ---
 
 
-# Annotation Building Block types <!--fit-->
-
-![bg right:40% w:520](./../../../img/Swate_Overview.svg)
-
-- Source Name (Input)
-- Protocol Columns
-  - Protocol Type, Protocol Ref
-- Characteristic
-- Parameter
-- Factor
-- Component
-- Output Columns
-  - Sample Name, Raw Data File, Derived Data File
-
-
-:bulb: For details, check out the [Annotation Principles](https://nfdi4plants.github.io/AnnotationPrinciples/).
-
-<!-- Source to slide(s) -->
-<!-- ../../bricks/lesson_Swate_DataPLANT-Annotation_Building_Block_types.md -->
-
-
----
-
-
-
-# Part 3: Swate
-
+# Swate
 
 
 
@@ -838,7 +811,15 @@ section p img{
 
 # Annotation Building Block types <!--fit-->
 
-![bg right w:620](./../../../img/Swate_Overview.svg)
+<style scoped>
+
+section{
+    font-size: 25px
+}
+
+</style>
+
+![bg right w:700](./../../../img/Swate_Overview.svg)
 
 - Source Name (Input)
 - Protocol Columns
@@ -849,6 +830,9 @@ section p img{
 - Component
 - Output Columns
   - Sample Name, Raw Data File, Derived Data File
+
+
+Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/isa_AnnotationPrinciples.html) | [slides](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/units/AnnotationPrinciples/isa_AnnotationPrinciples-slides.html)
 
 ---
 
@@ -942,5 +926,3 @@ section {
 
 
 ---
-
-# Annotation Principles

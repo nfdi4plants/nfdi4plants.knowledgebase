@@ -52,8 +52,7 @@ September 21st, 2023
 
 ## Your fresh ARC folder
 
-![bg right:40% w:250](ARCitect-Quickstart/ARCitect-help-Sidebar.drawio.svg)
-
+![bg right:50% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
 1. Create a **New ARC** (2)
 2. Select a location and name for your ARC
 
@@ -67,6 +66,8 @@ September 21st, 2023
    - as the identifier for your investigation
 
 💡 Make sure that no ARC exists at  `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`. Otherwise you will sync to that ARC.
+
+💡 Use no spaces in your ARC's name
 
 ![bg right:30% w:450](ARCitect-Quickstart/arcitect-ARCPanel.png)
 
@@ -86,7 +87,7 @@ The versions panel allows you to
 - sync the changes to the DataHUB, and
 - check the history of your ARC
 
-![bg right w:650](ARCitect-Quickstart/arcitect-VersionsPanel.png)
+![bg right w:650](./../../../img/arcitect-VersionsPanel.png)
 
 ---
 
@@ -187,4 +188,3 @@ Slides presented here include contributions by
   - learn from things that did / did not go well
   - collect issues and "live" transfer them to GitHub => open source your research
 
----

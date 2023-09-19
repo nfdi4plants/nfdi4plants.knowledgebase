@@ -197,18 +197,17 @@ object-fit: cover;
 
 ![](./../../../img/FAIR_Benefits.png)
 
-
----
-
-# Scattered Data Silos
- 
-![w:900](./custom/data_fragmentation_CEPLAS_seq1.png)
-
 ---
 
 # Scattered Data Silos
 
-![w:900](./custom/data_fragmentation_CEPLAS_seq2.png)
+![w:900](./custom/data_fragmentation_CEPLAS.png)
+
+---
+
+# Scattered Data Silos
+
+![w:900](./custom/data_fragmentation_CEPLAS_MibiNet_TRR.png)
 
 ---
 
@@ -230,18 +229,14 @@ object-fit: cover;
 ---
 
 # 3-2-1 backup rule
-<!--replace figure-->
-- **Three** different copies
+
+<!-- - **Three** different copies
 - **Two** storage media
-- **One** copy offsite
+- **One** copy offsite -->
 
-![bg w:1200](./../../../img/backup_3-2-1rule_img1.png)
-
-
-
+![w:800](./custom/3-2-1-backup-rule.drawio.svg)
 
 --- 
-
 
 # Version control / Track changes
 
@@ -252,8 +247,6 @@ It’s good practice to document:
 - Why the changes?
 
 ---
-
-
 
 # Data Sharing - while working collaboratively
 

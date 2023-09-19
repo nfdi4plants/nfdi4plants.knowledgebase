@@ -140,32 +140,25 @@ object-position: 50% 60%;
 
 ---
 
-## Sync your ARC to the DataHUB
 
-```bash
-arc sync -f -r https://git.nfdi4plants.org/brilator/demo-arc
-```
 
-<!-- 
-:bulb: The URL decomposed:
-- `https://git.nfdi4plants.org/` = DataHUB
-- `brilator/` = username @ DataHUB  
-- `demo-arc` = name of the ARC @ DataHUB   -->
+## Download Demo data 
+
+TODO edit link
 
 ---
 
+## Sort Demo data in an ARC
 
-## Invite collaborators to your ARC
+![bg right width:400](./../../../img/demo_data_screenshot.png)
 
-https://git.nfdi4plants.org/brilator/demo-arc
+---
 
-<!-- 
-## Check your progress at the DataHUB
+## Open ARCitect 
 
-- Open your ARC at https://git.nfdi4plants.org/brilator/demo-arc/ and click the `commits` link below the project avatar
-- Or directly navigate to https://git.nfdi4plants.org/brilator/demo-arc/-/commits/main 
 
--->
+1. Login to DataHUB (1)
+   ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
 
 ---
 
@@ -174,7 +167,10 @@ https://git.nfdi4plants.org/brilator/demo-arc
 ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
 
 1. Create a **New ARC** (2)
-2. Select a location and name **TalinumPhotosynthesis** 
+2. Select a location and name it **TalinumPhotosynthesis** 
+<!-- 
+## make sure that you use no spaces in the name
+-->
 
 ---
 
@@ -187,7 +183,9 @@ https://git.nfdi4plants.org/brilator/demo-arc
 
 💡 Make sure that no ARC exists at  `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`. Otherwise you will sync to that ARC.
 
-![bg right:30% w:450](ARCitect_TalinumPhotosynthesis.png)
+💡Don't use spaces in ARC's name
+
+![bg right:30% w:500](./custom/ARCitect_TalinumPhotosynthesis.png)
 
 ---
 
@@ -197,7 +195,7 @@ by clicking "Add Study" and entering an identifier for your study
 
 Use **talinum_drought** as an identifier
 
-![bg right w:500](ARCitect_TalinumPhotosynthesis_Study.png)
+![bg right w:500](./custom/ARCitect_TalinumPhotosynthesis_Study.png)
 
 ---
 
@@ -208,8 +206,9 @@ In the study panel you can add
 - general metadata,
 - people, and
 - publications
+- data process information
 
-![bg right w:500](ARCitect_TalinumPhotosynthesis_StudyPanel.png)
+![bg right w:500](./custom/ARCitect_TalinumPhotosynthesis_StudyPanel.png)
 
 ---
 
@@ -219,7 +218,7 @@ In the study panel you can add
 by clicking "Add Assay" and entering an identifier for your assay
 
 Add two assays with **rnaseq** and **metabolomics** as an identifier
-![bg right w:500](ARCitect_TalinumPhotosynthesis_Assay.png)
+![bg right w:500](./custom/ARCitect_TalinumPhotosynthesis_Assay.png)
 
 ---
 
@@ -232,7 +231,7 @@ You can either
 Link your assays to your **talinum_drought** study
 
 
-![bg right w:500](ARCitect_TalinumPhotosynthesis_Assay2.png)
+![bg right w:500](./custom/ARCitect_TalinumPhotosynthesis_Assay2.png)
 
 ---
 
@@ -245,8 +244,9 @@ In the assay panel you can
    - measurement type
    - technology type, and
    - technology platform.
+3. add data process information
 
-![bg right w:700](./../../../img/arcitect-AssayPanel.png)
+![bg right w:500](./custom/ARCitect_TalinumPhotosynthesis_AssayPanel.png)
 
 ---
 
@@ -272,12 +272,17 @@ In the file tree you can
 
 :warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
 
+<!-- Demo dataset cannot be added via add dataset. Only individual files can be added, not multiple folders -->
+
 ![bg right:40% w:400](./../../../img/arcitect-ARCPanel-assay03.png)
 
 ---
 
-## Add Demo Data to your ARC
+## Sort Demo Data to your ARC
 
+💡 protocols can directly imported via ARCitect
+
+💡 to add multiple datasets folders, they have to be added manually via file browser 
 
 ---
 
@@ -325,7 +330,12 @@ If you are logged in, the versions panel shows
 mkdir ~/Desktop/demo-arc; cd ~/Desktop/demo-arc
 ``` -->
 
+---
 
+## Check if your ARC is successfully uploaded
+
+1. [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB 
+2. Check your projects
 ---
 
 ## Invite collaborators
