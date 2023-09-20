@@ -231,6 +231,8 @@ arc sync -m "sorted the demo data"
 
 ---
 
+---
+
 # Contributors
 
 Slides presented here include contributions by

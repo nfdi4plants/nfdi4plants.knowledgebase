@@ -335,6 +335,8 @@ section {font-size: 25px;}
 
 ---
 
+---
+
 # Contributors
 
 Slides presented here include contributions by
