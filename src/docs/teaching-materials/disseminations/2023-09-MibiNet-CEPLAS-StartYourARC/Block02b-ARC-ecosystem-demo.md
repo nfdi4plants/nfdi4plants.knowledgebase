@@ -1,9 +1,10 @@
 ---
 marp: true
 paginate: true
-theme: marp-theme_dataplant-ceplas-ccby
+theme: marp-theme_dataplant-ceplas-mibinet-ccby
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-title: Annotated Research Contexts (ARCs) – A FAIR research data management journey along a mutable data life cycle
+title: ARC Ecosystem Demo
+date: 2023-09-20
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -39,83 +40,17 @@ figcaption {
 
 </style>
 
-# Annotated Research Contexts (ARCs)
+# ARC Ecosystem Demo
 
-## A FAIR RDM journey along a mutable data life cycle
+"A FAIR RDM journey along a (mutable) data life cycle"
 
-<style scoped>section {background: none; background-color: white}</style>
-<!-- _paginate: false -->
-
-<br>
-
-fdm.nrw
-"Best Practice Day &ndash; die Tools des FDMs"
-September 19th, 2023
-
-<div style="position: fixed; bottom: 10%; right: 10%;">
-  <div class="profile-picture">
-    <img src="https://www.ceplas.eu/fileadmin/_processed_/d/c/csm_Brilhaus_Dominik_4fd48a61a2.jpeg" alt="Dominik Brilhaus">
-  </div>
-
-  <div>
-
-  Dominik Brilhaus <br> [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-science-and-data-management/)
-
-  </div>
-
-</div>
-
----
-
-# Annotated Research Contexts (ARCs)
-
-## A FAIR RDM journey along a mutable data life cycle
-
-<style scoped>h1,h2,p {color: grey} section {background: none; background-color: white}</style>
-<!-- _paginate: false -->
+Dominik Brilhaus
 
 <br>
 
-fdm.nrw
-"Best <span style="color:#C21F3A;font-size: 40px;font-weight: bold;">Practice</span> Day &ndash; die <span style="color:#C21F3A;font-size: 40px;font-weight: bold;">Tools</span> des FDMs"
-September 19th, 2023
+![bg left w:350](./../../../img/RDMkit-data_life_cycle_9.svg)
 
----
-
-# Data Stewardship between DataPLANT and the community  <!-- fit -->
-
-![w:700](./images/DataPLANT-collaboration01.drawio.png)
-
----
-
-# Annotated Research Context (ARC)
-
-![width:950](./../../../img/ARC_DataCentricIntegration_img1.png)
-
----
-
-# The ARC &ndash; a package for your research data
-
-![width:950](./../../../img/ARC_fillWithData_seq8.png)
-
-<!-- --- 
-
-
-# Annotated Research Contexts (ARCs)
-
-![w:600](./../../../img/Weil2023-TPJ-PlantDataHub-Fig1.png)
-
-<span class="reference"> **Weil, Schneider *et al.*** (2023) "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474 (*in production*) </span> -->
-
----
-
-# "A FAIR RDM journey along a (mutable) data life cycle" <!-- fit -->
-
-<br>
-
-![w:350](./../../../img/RDMkit-data_life_cycle_9.svg)
-
-<span class="reference"> https://rdmkit.elixir-europe.org, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
+<span class="reference">https://rdmkit.elixir-europe.org, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
 
 ---
 
@@ -166,9 +101,7 @@ object-position: 50% 60%;
 
 ![w:800](./../../../img/Weil2023-TPJ-PlantDataHub-Fig3.png)
 
-
-<!-- ![w:500](../../../img/DataPLANT_ARC_SinglePointofEntry.svg)
-![w:700](../../../img/DataPLANT_ARC_Workflows.svg) -->
+<span class="reference"> **Weil, Schneider *et al.*** (2023) "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474 (*in production*) </span>
 
 ---
 
@@ -227,6 +160,8 @@ object-position: 50% 60%;
 - add notes from there
 -->
 
+<span class="reference"> **Weil, Schneider *et al.*** (2023) "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474 (*in production*) </span>
+
 ---
 
 # Plan (ARC scale) <img align="left" class="center" style="height:75px" src='./../../../img/Screenshot-RDMkit-01-plan.png'/>
@@ -262,49 +197,10 @@ https://dmpg.nfdi4plants.org
 
 ---
 
-## Conclusion
+# Contributors
 
-- ARC ecosystem support the full data life cycle
-- **Data-centric**: it's more about the data than tools or implementations
+Slides presented here include contributions by
 
----
-
-# Resources
-
-### <img align="left" style="height:35px" src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
-
-
-
-Website: <a href="https://nfdi4plants.org/" target="_blank">https://nfdi4plants.org/</a>
-Knowledge Base: <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/" target="_blank">https://nfdi4plants.org/nfdi4plants.knowledgebase/</a>
-DataHUB: <a href="https://git.nfdi4plants.org" target="_blank">https://git.nfdi4plants.org</a>
-GitHub: <a href="https://github.com/nfdi4plants" target="_blank">https://github.com/nfdi4plants</a>
-
----
-
-# Acknowledgements
-
-<style scoped>
-
-section {
-  font-size: 22px;  
-}
-
-</style>
-
-**CEPLAS**
-
-Björn Usadel, Andrea Schrader, Hajira Jabeen (until 2021)
-
-**DataPLANT**
-
-Kaiserslautern: Timo Mühlhaus, Christoph Garth
-- Kevin Frey, Lukas Weil, Oliver Maus, Kevin Schneider  
-(`ARC Commander`, `Swate`, `ARChigator`)
-- Jonas Lukasczyk (`ARCitect`)
-
-Freiburg: Dirk von Suchodeletz
-- Jonathan Bauer, Marcel Tschöpe (`DataHUB`, `Swobup`)
-- Cristina Martins Rodrigues (`Knowledge Base`)
-
-![bg right:40% w:550](./../../../img/hackathon_group.png)
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197

@@ -173,18 +173,13 @@ section {
 
 ---
 
-## Contributors 
+# Contributors
 
-Slides presented here include contributions by 
+Slides presented here include contributions by
 
-- Dominik Brilhaus | [GitHub](https://github.com/brilator) | [ORCID](https://orcid.org/0000-0001-9021-3197)
-- Cristina Martins Rodrigues  | [GitHub](https://github.com/CMR248) | [ORCID](https://orcid.org/0000-0002-4849-1537)
-- Martin Kuhl  | [GitHub](https://github.com/Martin-Kuhl) | [ORCID](https://orcid.org/0000-0002-8493-1077)
-
----
-
-- Let people generate ARCs between Day 1 and Day 2
-- Start Day 2 with "ARC Feedback session"
-  - learn from things that did / did not go well
-  - collect issues and "live" transfer them to GitHub => open source your research
-
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
+- name: Sabrina Zander
+  github: https://github.com/SabrinaZander
+  orcid: https://orcid.org/0009-0000-4569-6126

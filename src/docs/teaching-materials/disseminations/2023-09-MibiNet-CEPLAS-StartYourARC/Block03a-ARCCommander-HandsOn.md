@@ -8,27 +8,23 @@ author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
-date: 2023-08-14
-title: ARC Club - Check-in and Demo
+date: 2023-09-20
+title: Check-in and ARC Commander Hands-on
 ---
 
-# The ARC Club
-
-Check-in and Demo
+# Check-in and ARC Commander Hands-on
 
 Dominik Brilhaus &ndash; CEPLAS Data Science
-August 16th, 2023
 
 ---
 
 ## Registration
 
-- Everyone <a href="https://register.nfdi4plants.org" target="_blank">signed-up</a>
-- and joined the group [HHU Plant Biochemistry](https://git.nfdi4plants.org/hhu-plant-biochemistry)
+Everyone <a href="https://register.nfdi4plants.org" target="_blank">signed-up</a> at the DataHUB?
 
 ---
 
-## Installation
+## Check your installation
 
 Open a terminal and one after the other execute
 
@@ -44,7 +40,7 @@ git-lfs --version
 arc --version
 ```
 
-:bulb: If you see a warning at any of these, let me know.
+:bulb: If you see a warning at any of these, let us know.
 
 ---
 
@@ -67,22 +63,14 @@ Recommended text editor with code highlighting, git support, terminal, etc: <a h
 
 ---
 
-## Communication
-
-- Chat / channel
-  - Notes
-  - Project List
-
-<span style="color:red">TODO</span>
-
----
-
 ## Create a fresh folder for your ARCs
 
-For this workshop, create a new folder somewhere on your machine where you want to store ARCs, e.g. on the desktop:
+For this workshop, create a new folder somewhere on your machine where you want to store ARCs, e.g. in your documents folder:
 
-- `C:\Users\<username>\Desktop\workshop-arcs` (windows)
-- `~/Desktop/workshop-arcs` (mac)
+- `C:\Users\<username>\Documents\workshop-arcs` (windows)
+- `~/Documents/workshop-arcs` (mac)
+
+:warning: Ideally this folder is not "watched" by any cloud service (Sciebo, google drive, iCloud, etc.)
 
 ---
 
@@ -132,8 +120,8 @@ git clone "https://demo-user:1_eznikmzxzARAbUxxnF@git.nfdi4plants.org/teaching/d
 
 For example:
 ```bash
-mkdir -p ~/Desktop/workshop-arcs/arc-demo
-cd ~/Desktop/workshop-arcs/arc-demo
+mkdir -p ~/Documents/workshop-arcs/arc-demo
+cd ~/Documents/workshop-arcs/arc-demo
 ```
 
 
@@ -150,8 +138,28 @@ arc init
 ## Create an investigation
 
 ```bash
-arc investigation create -i TalinumPhotosynthesis
+arc investigation create -identifier TalinumPhotosynthesis
 ```
+
+---
+
+## Add a description to your investigation
+
+```bash
+arc investigation update --description "This is a very interesting investigation about life and photosynthesis"
+```
+---
+
+## Add (at least one) person
+
+```bash
+arc i person register --lastname Brilhaus --firstname Dominik --email brilhaus@hhu.de --affiliation CEPLAS
+```
+
+<br>
+
+> :bulb: For each person added, the minimum information is
+> lastname | firstname | email | affiliation
 
 ---
 
@@ -212,7 +220,7 @@ arc sync -m "sorted the demo data"
 
 ## Check the ARC in the DataHUB
 
-- Navigate to https://git.nfdi4plants.org/<username>/arc-demo to visit your ARC in the DataHUB
+- Navigate to `https://git.nfdi4plants.org/<username>/arc-demo`` to visit your ARC in the DataHUB
 
 ---
 
@@ -223,24 +231,10 @@ arc sync -m "sorted the demo data"
 
 ---
 
+# Contributors
 
-## Your ARC is ready
+Slides presented here include contributions by
 
-<style scoped>
-
-section p br {
-   display: block;
-   margin-top: 20px;
-   content: "";
-}
-</style>
-
-👩‍💻 Initiated an ARC
-<br>
-📂 Structured and ...  
-<br>
-<img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate_c_40x40.png'/> ... annotated experimental data
-<br>
-🌐 Shared with collaborators
-
-![bg right width:400](./../../../img/demo_arc_screenshot.png)
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
