@@ -173,6 +173,8 @@ section {
 
 ---
 
+---
+
 # Contributors
 
 Slides presented here include contributions by

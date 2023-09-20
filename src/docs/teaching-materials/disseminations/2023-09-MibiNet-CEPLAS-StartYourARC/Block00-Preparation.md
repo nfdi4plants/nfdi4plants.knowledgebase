@@ -157,6 +157,8 @@ GitHub: <a href="https://github.com/nfdi4plants" target="_blank">https://github.
 
 ---
 
+---
+
 # Contributors
 
 Slides presented here include contributions by

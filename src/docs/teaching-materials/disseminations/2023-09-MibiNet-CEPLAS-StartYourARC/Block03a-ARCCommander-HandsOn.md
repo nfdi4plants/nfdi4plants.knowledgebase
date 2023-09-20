@@ -123,8 +123,6 @@ For example:
 mkdir -p ~/Documents/workshop-arcs/arc-demo
 cd ~/Documents/workshop-arcs/arc-demo
 ```
-
-
 ---
 
 ## Initiate the ARC folder structure
@@ -138,22 +136,15 @@ arc init
 ## Create an investigation
 
 ```bash
-arc investigation create -identifier TalinumPhotosynthesis
+arc investigation create -i TalinumPhotosynthesis --title TalinumPhotosynthesis --description "This is a very interesting investigation about life and photosynthesis"
 ```
 
----
-
-## Add a description to your investigation
-
-```bash
-arc investigation update --description "This is a very interesting investigation about life and photosynthesis"
-```
 ---
 
 ## Add (at least one) person
 
 ```bash
-arc i person register --lastname Brilhaus --firstname Dominik --email brilhaus@hhu.de --affiliation CEPLAS
+arc investigation person register --lastname Brilhaus --firstname Dominik --email brilhaus@hhu.de --affiliation CEPLAS
 ```
 
 <br>
@@ -182,20 +173,42 @@ arc assay add -s talinum_drought -a metabolomics
 
 ## Collaborate and share
 
-
-
 ![w:650](./../../../img/ARC_DataSharing_Experts02_img1.png)
 
-
 ---
-
-
 
 # Upload your local ARC to the DataHUB
 
 ```bash
 arc sync -r https://git.nfdi4plants.org/<username>/arc-demo
 ```
+
+---
+
+# Received two emails from "GitLab" about a failed pipeline? <!-- fit -->
+
+![w:600](custom/cqc-error-email.png)
+
+:fire: Don't worry :smile:
+
+---
+
+## Pipeline Failed
+
+![bg right w:700](custom/cqc-error-badges.png)
+
+- a "continuous quality control" (CQC) pipeline validates your ARC
+- This fails if one of the following metadata items is missing:
+
+    ```bash
+    Investigation Identifier
+    Investigation Title
+    Investigation Description
+    Investigation Person Last Name
+    Investigation Person First Name
+    Investigation Person Email
+    Investigation Person Affiliation
+    ```  
 
 ---
 
@@ -220,7 +233,7 @@ arc sync -m "sorted the demo data"
 
 ## Check the ARC in the DataHUB
 
-- Navigate to `https://git.nfdi4plants.org/<username>/arc-demo`` to visit your ARC in the DataHUB
+- Navigate to `https://git.nfdi4plants.org/<username>/arc-demo` to visit your ARC in the DataHUB
 
 ---
 
@@ -228,6 +241,8 @@ arc sync -m "sorted the demo data"
 
 ![bg 80% right:75%](./../../../img/demo_data_screenshot.png)
 ![bg 80%](./../../../img/demo_arc_screenshot.png)
+
+---
 
 ---
 

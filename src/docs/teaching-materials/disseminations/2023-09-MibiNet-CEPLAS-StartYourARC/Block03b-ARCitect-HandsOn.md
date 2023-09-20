@@ -8,6 +8,9 @@ author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
+- name: Cristina Martins Rodrigues
+  github: https://github.com/CMR248
+  orcid: https://orcid.org/0000-0002-4849-1537
 - name: Sabrina Zander
   github: https://github.com/SabrinaZander
   orcid: https://orcid.org/0009-0000-4569-6126
@@ -78,14 +81,18 @@ git clone "https://demo-user:1_eznikmzxzARAbUxxnF@git.nfdi4plants.org/teaching/d
 
 ---
 
-# Add (at least one) contributor
+# Add a description to your investigation
 
-
-
-
+![w:800](custom/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
 
 ---
 
+# Add (at least one) contributor
+
+
+![bg right w:500](custom/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
+
+---
 
 # Add a study
 
@@ -225,6 +232,59 @@ If you are logged in, the versions panel shows
 
 1. [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB 
 2. Check your projects
+
+---
+
+# Received two emails from "GitLab" about a failed pipeline? <!-- fit -->
+
+![w:600](custom/cqc-error-email.png)
+
+:fire: Don't worry :smile:
+
+--- 
+
+## Pipeline Failed
+
+![bg right w:700](custom/cqc-error-badges.png)
+
+- a "continuous quality control" (CQC) pipeline validates your ARC
+- This fails if one of the following metadata items is missing:
+
+    ```bash
+    Investigation Identifier
+    Investigation Title
+    Investigation Description
+    Investigation Person Last Name
+    Investigation Person First Name
+    Investigation Person Email
+    Investigation Person Affiliation
+    ```  
+
+---
+
+## Pipeline Failed
+
+If the pipeline has failed once, it is disabled by default
+
+![bg right w:500](./custom/cqc-error-email2.png)
+
+---
+
+## Reactivate the CQC pipeline
+
+<style scoped>
+section {font-size: 22px;}
+</style>
+
+To reactivate it and let the DataHUB validate your ARC again:
+  
+  1. navigate to CI/CD setting `<arc-url>/-/settings/ci_cd`
+  2. expand "Auto DevOps"
+  3. check box "Default to Auto DevOps pipeline"
+  4. Save changes
+
+![bg right:60% w:600](custom/cqc-activate-autodevops.png)
+
 ---
 
 # Collaborate and share
@@ -269,9 +329,6 @@ If you are logged in, the versions panel shows
 
 ![fit w:1050](./../../../img/datahub_members_seq6.png)
 
-<!-- Source to slide(s) -->
-<!-- ../../bricks/datahub_invite-collaborators.md -->
-
 
 ---
 
@@ -287,9 +344,6 @@ The choice for most people you want to invite to your ARC. Developers have read 
 Gives the person the same rights as you have (except of removing you from your own project). This is recommended for inviting PIs or group leaders allowing them to add their group members for data upload or analysis to the project as well.
 
 *A detailed list of all permissions for the individual roles can be found [here](https://docs.gitlab.com/ee/user/permissions.html)*
-
-<!-- Source to slide(s) -->
-<!-- ../../bricks/datahub_choose-collaborator-role.md -->
 
 ---
 
@@ -335,6 +389,8 @@ section p br {
 
 ---
 
+---
+
 # Contributors
 
 Slides presented here include contributions by
@@ -342,6 +398,9 @@ Slides presented here include contributions by
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
+- name: Cristina Martins Rodrigues
+  github: https://github.com/CMR248
+  orcid: https://orcid.org/0000-0002-4849-1537
 - name: Sabrina Zander
   github: https://github.com/SabrinaZander
   orcid: https://orcid.org/0009-0000-4569-6126

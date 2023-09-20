@@ -250,7 +250,9 @@ Ideally, PIDs are
 
 ---
 
-# Storage media
+# Data stores
+
+![w:900](./custom/data-stores.drawio.svg)
 
 ---
 
@@ -332,6 +334,8 @@ section {font-size: 25px;}
 - RDM Competence Center: https://www.fdm.hhu.de
 - Support for research including HPC: https://www.zim.hhu.de/servicekatalog/forschungsunterstuetzung 
 - Processing & storing data: https://www.zim.hhu.de/servicekatalog/rechnen-und-speichern
+
+---
 
 ---
 
