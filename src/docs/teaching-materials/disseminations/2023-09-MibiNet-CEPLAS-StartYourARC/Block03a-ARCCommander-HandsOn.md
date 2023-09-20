@@ -8,16 +8,13 @@ author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
-date: 2023-08-14
+date: 2023-09-20
 title: Check-in and ARC Commander Hands-on
 ---
 
 # Check-in and ARC Commander Hands-on
 
-Check-in and Demo
-
 Dominik Brilhaus &ndash; CEPLAS Data Science
-August 16th, 2023
 
 ---
 
