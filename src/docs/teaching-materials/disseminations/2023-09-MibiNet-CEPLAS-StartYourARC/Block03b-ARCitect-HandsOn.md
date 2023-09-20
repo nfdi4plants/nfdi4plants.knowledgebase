@@ -3,7 +3,7 @@ marp: true
 theme: marp-theme_dataplant-ceplas-mibinet-ccby
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-title: ARC demo and hands-on
+title: ARCitect and hands-on
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -13,148 +13,38 @@ author:
 ---
 
 
-
-# Block 3 &ndash; ARC demo and hands-on
+# Block 3 &ndash; ARCitect and hands-on
 
 <style scoped>section {background: none; background-color: white}</style>
 <!-- _paginate: false -->
 
-September 21st, 2023
- 
+---
 
-<div style="position: fixed; bottom: 10%; right: 40%;">
-  <div class="profile-picture">
-    <img src="https://www.biological-data-science.hhu.de/fileadmin/_processed_/8/c/csm_Sabrina_Zander_3c8daca973.jpg" alt="Sabrina Zander" style="position:absolute; height: auto; width: auto; top:65%; left: 0%; transform:translateY(-50%);"> 
-  </div>
+# ARCitect installation
 
-  <div>
+Please install the latest version of the ARCitect: https://github.com/nfdi4plants/ARCitect
 
-  Sabrina Zander <br> [MibiNet](https://www.sfb1535.hhu.de/projects/research-area-z/z03)
-  </div>
-</div>
-
-<div style="position: fixed; bottom: 10%; right: 10%;">
-  <div class="profile-picture">
-    <img src="https://www.ceplas.eu/fileadmin/_processed_/d/c/csm_Brilhaus_Dominik_4fd48a61a2.jpeg" alt="Dominik Brilhaus">
-  </div>
-
-  <div>
-
-  Dominik Brilhaus <br> [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-science-and-data-management/)
-
-  </div>
-
-</div>
+:fire: (released September 20th, 2023) :fire:
 
 ---
 
-<!-- 
+# Download the demo data
 
-## Tutor prep:
-
-- change `<username>` in `arc sync` steps
-- make sure no `demo-arc` exists at given URL or adapt URL in sync steps
-
-- download the folder with unstructured sample data
-    ```bash
-    git clone "https://demo-user:1_eznikmzxzARAbUxxnF@git.nfdi4plants.org/teaching/demo-arc_level0.git"
-    ```
-
-    > no access needed, "read_registry" token is part of command
-    > Note: If you want to provide another dataset for download. 
-    > 1. Create a new DataHUB project with the data. 
-    > 2. Create an access token only for that project with role "maintainer" and scopes "read_repository".
-    > 3. Adapt the URL `https://<tokenname>:<token>@git.nfdi4plants.org/<username>/<projectname>.git`
-
- -->
-
-# First steps towards your ARC
+```bash
+git clone "https://demo-user:1_eznikmzxzARAbUxxnF@git.nfdi4plants.org/teaching/demo-arc_level0.git"
+```
 
 ---
 
-## You just received your data
+# Sort Demo data in an ARC
 
 ![bg right width:400](./../../../img/demo_data_screenshot.png)
 
----
-
-## Goal
-
-- Structure,
-- Annotate, and
-- Share **your experimental data**.
+![width:900](./../../../img/ARC_fillWithData_experimental.png)
 
 ---
 
-
-<!-- 
-## Tools and software
-
-📂 Explorer or Finder on your local computer
-<br>
-<img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate_c_40x40.png'/> DataPLANT's Excel-Plugin SWATE
-<br>
-🌐 DataPLANT's [DataHUB](https://git.nfdi4plants.org/)
-<br>
-👩‍💻 "Terminal" or "command prompt" on your local computer 
--->
-
-## Structure your data
-
-![width:800](./../../../img/ARC_fillWithData_experimental.png)
-
----
-
-
-## Annotate your data
-
-<style scoped>
-
-section p img {
-width: 900px;
-height: 400px;
-object-fit: cover;
-object-position: 50% 60%;
-/* display: block; */;
-}
-</style>
-
-![](./../../../img/Swate_metadataTemplates.png)
-
-<!-- 
-1. Fill study characteristics (completely manually)
-
-2. Fill assay parameters (by template, copy paste metadata from sheet, link files by picker)
-
-3. Fill assay parameters (by json import, link files by picker) -->
-
----
-
-
-## Collaborate and share
-
-
-
-![w:650](./../../../img/ARC_DataSharing_Experts02_img1.png)
-
-
----
-
-
-
-## Download Demo data 
-
-TODO edit link
-
----
-
-## Sort Demo data in an ARC
-
-![bg right width:400](./../../../img/demo_data_screenshot.png)
-
----
-
-## Open ARCitect 
+# Open ARCitect
 
 
 1. Login to DataHUB (1)
@@ -162,19 +52,18 @@ TODO edit link
 
 ---
 
-## Initiate the ARC folder structure
+# Initiate the ARC folder structure
 
 ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
 
 1. Create a **New ARC** (2)
-2. Select a location and name it **TalinumPhotosynthesis** 
-<!-- 
-## make sure that you use no spaces in the name
--->
+2. Select a location and name it **TalinumPhotosynthesis**
 
 ---
 
-## Your ARC's name
+# Your ARC's name
+
+<style scoped>section {font-size: 25px;}</style>
 
 💡 By default, your ARC's name will be used
    - for the ARC folder on your machine
@@ -189,7 +78,16 @@ TODO edit link
 
 ---
 
-## Add a study
+# Add (at least one) contributor
+
+
+
+
+
+---
+
+
+# Add a study
 
 by clicking "Add Study" and entering an identifier for your study
 
@@ -199,7 +97,7 @@ Use **talinum_drought** as an identifier
 
 ---
 
-## Study panel
+# Study panel
 
 In the study panel you can add
 
@@ -213,7 +111,7 @@ In the study panel you can add
 ---
 
 
-## Add an assay
+# Add an assay
 
 by clicking "Add Assay" and entering an identifier for your assay
 
@@ -222,7 +120,7 @@ Add two assays with **rnaseq** and **metabolomics** as an identifier
 
 ---
 
-## Link your assay to a study
+# Link your assay to a study
 
 You can either
 - link your new assay to an existing study in your ARC or
@@ -235,7 +133,7 @@ Link your assays to your **talinum_drought** study
 
 ---
 
-## Add information about your assay
+# Add information about your assay
 
 In the assay panel you can
 
@@ -250,7 +148,7 @@ In the assay panel you can
 
 ---
 
-## Add protocols
+# Add protocols
 
 You can either
 - directly write a **new protocol** within the ARCitect or
@@ -258,11 +156,9 @@ You can either
 
 ![w:800](./../../../img/arcitect-ARCPanel-protocol.png)
 
-
-
 ---
 
-## Add protocols and datasets
+# Add protocols and datasets
 
 In the file tree you can
   - **add a dataset** and 
@@ -278,7 +174,7 @@ In the file tree you can
 
 ---
 
-## Sort Demo Data to your ARC
+# Sort Demo Data to your ARC
 
 💡 protocols can directly imported via ARCitect
 
@@ -286,7 +182,7 @@ In the file tree you can
 
 ---
 
-## Login to the DataHUB
+# Login to the DataHUB
 
 Click **Login** (1) in the sidebar to login to the DataHUB.
 
@@ -296,7 +192,7 @@ Click **Login** (1) in the sidebar to login to the DataHUB.
 
 ---
 
-## Upload your local ARC to the DataHUB
+# Upload your local ARC to the DataHUB
 
 From the sidebar, navigate to **Versions** (6)
 
@@ -304,7 +200,7 @@ From the sidebar, navigate to **Versions** (6)
 
 ---
 
-## Versions
+# Versions
 
 The versions panel allows you to
 - store the local changes to your ARC in form of "commits",
@@ -315,7 +211,7 @@ The versions panel allows you to
 
 ---
 
-## Connection to the DataHUB
+# Connection to the DataHUB
 
 If you are logged in, the versions panel shows
 - your DataHUB's *Full Name* and *eMail*
@@ -323,22 +219,21 @@ If you are logged in, the versions panel shows
 
 ![bg right w:650](./../../../img/arcitect-VersionsPanel.png)
 
-
-<!-- *Create and navigate to a new folder* -->
-<!-- 
-```bash
-mkdir ~/Desktop/demo-arc; cd ~/Desktop/demo-arc
-``` -->
-
 ---
 
-## Check if your ARC is successfully uploaded
+# Check if your ARC is successfully uploaded
 
 1. [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB 
 2. Check your projects
 ---
 
-## Invite collaborators
+# Collaborate and share
+
+![w:650](./../../../img/ARC_DataSharing_Experts02_img1.png)
+
+---
+
+# Invite collaborators
 
 * Unless changed, your ARC is set to private by default. 
 * To collaborate, you can invite lab colleagues or project partners to your ARC by following the steps on the subsequent slides. 
@@ -380,7 +275,7 @@ mkdir ~/Desktop/demo-arc; cd ~/Desktop/demo-arc
 
 ---
 
-## Choosing the proper role
+# Choosing the proper role
 
 <u>Guest</u>
 Have the least rights. This is recommended for people you ask for consultancy.
@@ -398,7 +293,7 @@ Gives the person the same rights as you have (except of removing you from your o
 
 ---
 
-## <div align="center">Congratulations!</div>
+# <div align="center">Congratulations!</div>
 <div align="center">You have just shared your ARC with a collaborator.</div>
 
 <style scoped>
@@ -414,12 +309,10 @@ object-position: 100% 45%;
 
 ![](./../../../img/ARC_Sharing_img1.png)
 
-<!-- Source to slide(s) -->
-<!-- ../../bricks/datahub_congrats-for-sharing.md -->
 
 ---
 
-## Your ARC is ready
+# Your ARC is ready
 
 <style scoped>
 
@@ -439,78 +332,3 @@ section p br {
 🌐 Shared with collaborators
 
 ![bg right width:400](./../../../img/demo_arc_screenshot.png)
-
-
-<!-- ## Outlook
-
-1. Data analysis: add workflows and runs (scripts + external data)
-2. Iterative and reproducible data analysis: add runs (CWL)
-3. Publish your ARC and get a DOI -->
-
-<!-- Source to slide(s) -->
-<!-- ../../../units/promotion_arc-demo/promotion_arc-demo.md -->
-
-
----
-
-# Resources
-
-### <img align="left" height=35px src='../img/CEPLAS_Icon.jpeg'/> CEPLAS Data Science
-
-> Website: https://www.ceplas.eu/en/research/data-science-and-data-management/
-
-### <img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
-
-> Website: https://nfdi4plants.org/
-> Knowledge Base: https://nfdi4plants.org/nfdi4plants.knowledgebase/ 
-> DataHUB: https://git.nfdi4plants.org
-> GitHub: https://github.com/nfdi4plants
-
-<!-- Source to slide(s) -->
-<!-- ../custom/bricks/links-resources.md -->
-
-
----
-
-# Acknowledgements
-
-<style scoped>
-section {
-  font-size: 22px;  
-}
-ul {
-    margin: 10; padding: 0;
-}
-</style>
-
-**CEPLAS**
-
-Björn Usadel, Andrea Schrader, Hajira Jabeen (until 2021)
-
-**DataPLANT**
-
-Kaiserslautern: Timo Mühlhaus, Christoph Garth
-- Kevin Frey, Lukas Weil, Oliver Maus, Kevin Schneider  
-(`ARC Commander`, `Swate`)
-- Martin Kuhl (`Knowledge Base`)
-- Jonas Lukasczyk (`ARCitect`)
-
-Freiburg: Dirk von Suchodeletz
-- Jonathan Bauer, Marcel Tschöpe (`DataHUB`, `Swobup`)
-- Cristina Martins Rodrigues (`Knowledge Base`)
-
-![bg right:40% w:550](./../custom/img/hackathon_group.png)
-
-<!-- Source to slide(s) -->
-<!-- ../custom/bricks/acknowledgements.md -->
-
-
----
-
-## Contributors 
-
-Slides presented here include contributions by 
-
-- Dominik Brilhaus | [GitHub](https://github.com/brilator) | [ORCID](https://orcid.org/0000-0001-9021-3197)
-- Cristina Martins Rodrigues  | [GitHub](https://github.com/CMR248) | [ORCID](https://orcid.org/0000-0002-4849-1537)
-- Martin Kuhl  | [GitHub](https://github.com/Martin-Kuhl) | [ORCID](https://orcid.org/0000-0002-8493-1077)
