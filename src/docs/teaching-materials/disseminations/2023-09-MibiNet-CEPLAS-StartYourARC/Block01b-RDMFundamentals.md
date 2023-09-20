@@ -260,8 +260,7 @@ section {font-size: 25px;}
 
 Ideally, PIDs are
 
-- Globally unique
-- stable and permanent
+- Stable and permanent
 - Location-independent
 - Globally unique and valid
 - Addressable (citable)
@@ -287,7 +286,6 @@ Ideally, PIDs are
 
 # Backup vs. Archive
 
-
    <br>    |    Backup     |    Archive
 -------|-----------|-----------
 Storage type  | Short-, mid-term  | Long-term
@@ -298,9 +296,7 @@ Changes  | Short-term updates  | No updates
 Trend  | Cyclic, Replacement  | Growing
 Latency  | Short/Costly  | High/Cheaper
 
-
 ---
-
 
 # 3-2-1 backup rule
 
