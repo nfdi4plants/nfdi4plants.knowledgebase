@@ -45,6 +45,87 @@ September 21st, 2023
 
 # Welcome
 
+---
+
+# House-keeping
+
+Pad: https://pad.hhu.de/Aem023liTWKyfPysU0H8Gw
+ 
+---
+
+# Your motivation
+
+<style scoped>
+
+section {
+    font-size: 24px;
+}
+</style>
+
+- how to **organise** and handle the data collected from my experiments
+- grasp important concepts on **research data management**
+- make data **available to the others** in the work group
+- store the data in a sorted way to allow **reproducibilty** and **not loose any important data**
+- learn how to **store** my data correctly
+- help others to **find** important data
+- familiarize myself with systems and organizing data in an easy but also **time efficient way**
+- data has to be **accessible and usable** for other members of the project
+- generate data that can be used by the **other projects**
+- know how **data (including metadata)** should be structured and integrated uniformly in the ARC
+- learn to build **ARCs** in order to have the data produced during the PhD in an organised manner
+- ...
+
+---
+
+# Tentative agenda
+
+<style scoped>
+.columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    font-size: 20px;
+}
+</style>
+
+<div class="columns">
+<div class="columns-left">
+
+## Day 1
+
+Time | Topics
+-------- | --------
+09:30 - 10:45 | Welcome and intro to RDM
+10:45 - 11:00 | *Short break*
+11:00 - 12:00 | Intro to DataPLANT and ARC
+12:00 - 13:00 | *Lunch*
+13:00 - 15:30 | ARC Demo and ARC Hands-on
+
+</div>
+
+<div class="columns-right">
+
+## Day 2
+
+Time | Topics
+-------- | --------
+09:30 - 10:30 | ARC Feedback session
+10:30 - 10:45 | *Short break*
+10:45 - 12:00 | ISA and Metadata
+12:00 - 13:00 | *Lunch*
+13:00 - 15:00 | Hands-on Swate
+15:00 - 15:30 | Wrap-up
+
+</div>
+</div>
+
+---
+
+# Introduce yourselves
+
+- UoC / HHU
+- CEPLAS / MibiNet
+- Used code / programming language before
+- Has an ORCID
 
 ---
 
@@ -117,7 +198,7 @@ September 21st, 2023
 
 ---
 
-# The Research Data Lifecycle 
+# The Research Data Lifecycle ***is mutable***
 
 ![h:500](./../../../img/ResearchDataLifecycle_seq9.png)
 
