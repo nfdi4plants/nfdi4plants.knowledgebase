@@ -150,8 +150,6 @@ Check out: https://creativecommons.org/about/cclicenses/
 
 ---
 
----
-
 # Public data repositories
 
 ---
@@ -226,7 +224,52 @@ Repository | Description | Biological data domain
 
 ---
 
-## PIDs
+# Peristent Identifiers (PIDs)
+
+
+--- 
+
+# Spot the PIDs
+
+![w:900](./custom/exercise_PIDs_img1.png)
+
+<span class="reference"> https://doi.org/10.1093/plcell/koab243</span>
+
+---
+
+# Globally unique, stable, persistent identifiers (PIDs)
+
+- Long-term findability
+- Make data, digital objects, people, … uniquely identifiable
+- Diminish “dead links”
+- Cope with name changes
+
+![bg right width:500](./custom/pid_collage.drawio.svg)
+
+---
+
+# Properties of a PID
+
+Ideally, PIDs are 
+- Globally unique
+- stable and permanent
+- Location-independent
+- Globally unique and valid
+- Addressable (citable)
+- Clickable (resolvable)
+
+<span class="reference">Adapted from https://www.ebi.ac.uk/rdf/documentation/good_practice_uri/<span>
+
+---
+
+# Additional resources
+
+- https://www.doi.org
+- https://www.orcid.org
+- https://pidservices.org/
+- https://datacite.org
+- https://www.project-freya.eu/en
+
 
 ---
 
@@ -238,35 +281,11 @@ Repository | Description | Biological data domain
 
 ![w:800](./custom/3-2-1-backup-rule.drawio.svg)
 
----
-
-# Version control / Track changes
-
-It’s good practice to document:
-
-- What was changed?
-- Who is responsible?
-- When did it happen?
-- Why the changes?
 
 ---
 
 # Data Sharing - while working collaboratively
 
----
-
-# Sharing is caring
-
-- Research = Collaboration = Sharing
-  - interaction
-  - knowledge exchange
-  - input from peers
-  - elaborate, initiate or expand collaborations
-- Sharing saves time and resources
-  - common pipelines for data analysis
-  - prevent redundant or overlapping investigations
-
-**Sharing research data is the key to every successful research project.**
 
 ---
 
@@ -284,14 +303,6 @@ It’s good practice to document:
 
 ---
 
-# Collaborative platforms
-### Institute's solutions
-- local clouds, NAS server
-- regional cloud solutions
-- are guests allowed?
-
----
-
 # Cloud Services
 
 ![bg right:50% w:800](./../../../img/DataSharing_Cloud_img6.png)
@@ -305,10 +316,6 @@ It’s good practice to document:
 <span style="color:#c21f3a">X  Big (“raw”) data</span>  
 
 ---
-
-
-
-
 
 
 # Using cloud services for text documents
@@ -379,3 +386,13 @@ ul {
 - Support for research including HPC: https://www.zim.hhu.de/servicekatalog/forschungsunterstuetzung 
 - Processing & storing data: https://www.zim.hhu.de/servicekatalog/rechnen-und-speichern
 
+---
+
+# Version control and track changes
+
+It’s good practice to document:
+
+- What was changed?
+- Who is responsible?
+- When did it happen?
+- Why the changes?
