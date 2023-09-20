@@ -14,7 +14,6 @@ author:
 
 <style scoped>section {font-size: 10px;}</style>
 
-
 - [RDM fundamentals](#rdm-fundamentals)
 - [Legal aspects of RDM](#legal-aspects-of-rdm)
 - [Different laws touched by RDM](#different-laws-touched-by-rdm)
