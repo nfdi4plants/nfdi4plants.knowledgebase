@@ -171,4 +171,15 @@ section {
 
 -->
 
+---
 
+# Contributors
+
+Slides presented here include contributions by
+
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
+- name: Sabrina Zander
+  github: https://github.com/SabrinaZander
+  orcid: https://orcid.org/0009-0000-4569-6126

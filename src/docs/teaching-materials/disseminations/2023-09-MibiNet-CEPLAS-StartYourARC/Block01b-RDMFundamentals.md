@@ -8,44 +8,15 @@ author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
+- name: Hajira Jabeen
+  github: https://github.com/HajiraJabeen
+  orcid: https://orcid.org/0000-0003-1476-2121
 ---
 
 # RDM fundamentals
 
-<style scoped>section {font-size: 10px;}</style>
-
-- [RDM fundamentals](#rdm-fundamentals)
-- [Legal aspects of RDM](#legal-aspects-of-rdm)
-- [Different laws touched by RDM](#different-laws-touched-by-rdm)
-- [Open Access (OA) categories](#open-access-oa-categories)
-- [Open Science is more than Open Access](#open-science-is-more-than-open-access)
-- [Creative commons](#creative-commons)
-- [Data protection](#data-protection)
-- [Use of biological materials](#use-of-biological-materials)
-- [FAIR and CARE](#fair-and-care)
-- [CARE principles](#care-principles)
-- [Research Data policies](#research-data-policies)
-- [CEPLAS relevant data handling guidelines \& policies](#ceplas-relevant-data-handling-guidelines--policies)
-- [The Data Management Plan (DMP)](#the-data-management-plan-dmp)
-- [DMP tools](#dmp-tools)
-- [Public data repositories](#public-data-repositories)
-- [Domain-specific data repositories](#domain-specific-data-repositories)
-- [Choosing a data repository](#choosing-a-data-repository)
-- [Domain-specific data repositories](#domain-specific-data-repositories-1)
-- [Generic data repositories](#generic-data-repositories)
-- [Peristent Identifiers (PIDs)](#peristent-identifiers-pids)
-- [Spot the PIDs](#spot-the-pids)
-- [Globally unique, stable, persistent identifiers (PIDs)](#globally-unique-stable-persistent-identifiers-pids)
-- [Properties of a PID](#properties-of-a-pid)
-- [Additional resources](#additional-resources)
-- [Storage media](#storage-media)
-- [Backup vs. Archive](#backup-vs-archive)
-- [3-2-1 backup rule](#3-2-1-backup-rule)
-- [Version control and track changes](#version-control-and-track-changes)
-- [Types of Version Control](#types-of-version-control)
-- [Data Sharing](#data-sharing)
-- [Cloud Services](#cloud-services)
-- [Overview of Institutional services at UoC and HHU](#overview-of-institutional-services-at-uoc-and-hhu)
+Dominik Brilhaus
+Sept 20th, 2023
 
 ---
 
@@ -361,3 +332,16 @@ section {font-size: 25px;}
 - RDM Competence Center: https://www.fdm.hhu.de
 - Support for research including HPC: https://www.zim.hhu.de/servicekatalog/forschungsunterstuetzung 
 - Processing & storing data: https://www.zim.hhu.de/servicekatalog/rechnen-und-speichern
+
+---
+
+# Contributors
+
+Slides presented here include contributions by
+
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
+- name: Hajira Jabeen
+  github: https://github.com/HajiraJabeen
+  orcid: https://orcid.org/0000-0003-1476-2121

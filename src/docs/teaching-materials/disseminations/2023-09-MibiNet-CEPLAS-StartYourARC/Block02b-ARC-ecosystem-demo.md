@@ -4,6 +4,7 @@ paginate: true
 theme: marp-theme_dataplant-ceplas-mibinet-ccby
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 title: ARC Ecosystem Demo
+date: 2023-09-20
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -43,11 +44,13 @@ figcaption {
 
 "A FAIR RDM journey along a (mutable) data life cycle"
 
+Dominik Brilhaus
+
 <br>
 
-![w:350](./../../../img/RDMkit-data_life_cycle_9.svg)
+![bg left w:350](./../../../img/RDMkit-data_life_cycle_9.svg)
 
-<span class="reference"> https://rdmkit.elixir-europe.org, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
+<span class="reference">https://rdmkit.elixir-europe.org, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
 
 ---
 
@@ -98,9 +101,7 @@ object-position: 50% 60%;
 
 ![w:800](./../../../img/Weil2023-TPJ-PlantDataHub-Fig3.png)
 
-
-<!-- ![w:500](../../../img/DataPLANT_ARC_SinglePointofEntry.svg)
-![w:700](../../../img/DataPLANT_ARC_Workflows.svg) -->
+<span class="reference"> **Weil, Schneider *et al.*** (2023) "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474 (*in production*) </span>
 
 ---
 
@@ -159,6 +160,8 @@ object-position: 50% 60%;
 - add notes from there
 -->
 
+<span class="reference"> **Weil, Schneider *et al.*** (2023) "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474 (*in production*) </span>
+
 ---
 
 # Plan (ARC scale) <img align="left" class="center" style="height:75px" src='./../../../img/Screenshot-RDMkit-01-plan.png'/>
@@ -191,3 +194,13 @@ object-position: 50% 60%;
 https://dmpg.nfdi4plants.org
 
 ![w:800](././../../../img/zhou2023-dataplan.png)
+
+---
+
+# Contributors
+
+Slides presented here include contributions by
+
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197

@@ -8,39 +8,15 @@ author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
+- name: Cristina Martins Rodrigues
+  github: https://github.com/CMR248
+  orcid: https://orcid.org/0000-0002-4849-1537
+- name: Martin Kuhl
+  github: https://github.com/Martin-Kuhl
+  orcid: https://orcid.org/0000-0002-8493-1077
 ---
 
-
 # Block 2 &ndash; Intro to DataPLANT and ARC
-
-<style scoped>section {background: none; background-color: white}</style>
-
-<!-- _paginate: false -->
-September 21st, 2023
- 
-<div style="position: fixed; bottom: 10%; right: 40%;">
-  <div class="profile-picture">
-    <img src="https://www.biological-data-science.hhu.de/fileadmin/_processed_/8/c/csm_Sabrina_Zander_3c8daca973.jpg" alt="Sabrina Zander" style="position:absolute; height: auto; width: auto; top:65%; left: 0%; transform:translateY(-50%);"> 
-  </div>
-
-  <div>
-
-  Sabrina Zander <br> [MibiNet](https://www.sfb1535.hhu.de/projects/research-area-z/z03)
-  </div>
-</div>
-
-<div style="position: fixed; bottom: 10%; right: 10%;">
-  <div class="profile-picture">
-    <img src="https://www.ceplas.eu/fileadmin/_processed_/d/c/csm_Brilhaus_Dominik_4fd48a61a2.jpeg" alt="Dominik Brilhaus">
-  </div>
-
-  <div>
-
-  Dominik Brilhaus <br> [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-science-and-data-management/)
-
-  </div>
-
-</div>
 
 ---
 
@@ -50,7 +26,6 @@ September 21st, 2023
 
 - NFDI: "Nationale Forschungsdaten Infrastruktur" &ndash; [www.nfdi.de](https://www.nfdi.de/)
 - Funded since end of 2020
-
 
 ---
 
@@ -138,10 +113,17 @@ September 21st, 2023
 
 ---
 
-## Contributors
+# Contributors
 
 Slides presented here include contributions by
 
-- Dominik Brilhaus | [GitHub](https://github.com/brilator) | [ORCID](https://orcid.org/0000-0001-9021-3197)
-- Cristina Martins Rodrigues  | [GitHub](https://github.com/CMR248) | [ORCID](https://orcid.org/0000-0002-4849-1537)
-- Martin Kuhl  | [GitHub](https://github.com/Martin-Kuhl) | [ORCID](https://orcid.org/0000-0002-8493-1077)
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
+- name: Cristina Martins Rodrigues
+  github: https://github.com/CMR248
+  orcid: https://orcid.org/0000-0002-4849-1537
+- name: Martin Kuhl
+  github: https://github.com/Martin-Kuhl
+  orcid: https://orcid.org/0000-0002-8493-1077
+
