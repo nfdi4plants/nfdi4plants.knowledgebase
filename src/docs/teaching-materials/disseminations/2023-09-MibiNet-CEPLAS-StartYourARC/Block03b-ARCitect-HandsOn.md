@@ -81,14 +81,18 @@ git clone "https://demo-user:1_eznikmzxzARAbUxxnF@git.nfdi4plants.org/teaching/d
 
 ---
 
-# Add (at least one) contributor
+# Add a description to your investigation
 
-
-
-
+![w:800](custom/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
 
 ---
 
+# Add (at least one) contributor
+
+
+![bg right w:500](custom/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
+
+---
 
 # Add a study
 
