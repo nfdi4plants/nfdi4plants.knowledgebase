@@ -250,7 +250,9 @@ Ideally, PIDs are
 
 ---
 
-# Storage media
+# Data stores
+
+![w:900](./custom/data-stores.drawio.svg)
 
 ---
 
