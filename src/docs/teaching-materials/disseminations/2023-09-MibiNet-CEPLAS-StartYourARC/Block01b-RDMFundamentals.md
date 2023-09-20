@@ -12,24 +12,41 @@ author:
 
 # RDM fundamentals
 
+<style scoped>section {font-size: 10px;}</style>
+
+
 - [RDM fundamentals](#rdm-fundamentals)
-- [Storage](#storage)
-- [sharing](#sharing)
-- [Data Management Plan](#data-management-plan)
-- [Version Control](#version-control)
-- [Data Repositories](#data-repositories)
-- [PIDs](#pids)
+- [Legal aspects of RDM](#legal-aspects-of-rdm)
+- [Different laws touched by RDM](#different-laws-touched-by-rdm)
+- [Open Access (OA) categories](#open-access-oa-categories)
+- [Open Science is more than Open Access](#open-science-is-more-than-open-access)
+- [Creative commons](#creative-commons)
+- [Data protection](#data-protection)
+- [Use of biological materials](#use-of-biological-materials)
+- [FAIR and CARE](#fair-and-care)
+- [CARE principles](#care-principles)
+- [Research Data policies](#research-data-policies)
+- [CEPLAS relevant data handling guidelines \& policies](#ceplas-relevant-data-handling-guidelines--policies)
+- [The Data Management Plan (DMP)](#the-data-management-plan-dmp)
+- [DMP tools](#dmp-tools)
+- [Public data repositories](#public-data-repositories)
+- [Domain-specific data repositories](#domain-specific-data-repositories)
+- [Choosing a data repository](#choosing-a-data-repository)
+- [Domain-specific data repositories](#domain-specific-data-repositories-1)
+- [Generic data repositories](#generic-data-repositories)
+- [Peristent Identifiers (PIDs)](#peristent-identifiers-pids)
+- [Spot the PIDs](#spot-the-pids)
+- [Globally unique, stable, persistent identifiers (PIDs)](#globally-unique-stable-persistent-identifiers-pids)
+- [Properties of a PID](#properties-of-a-pid)
+- [Additional resources](#additional-resources)
+- [Storage media](#storage-media)
+- [Backup vs. Archive](#backup-vs-archive)
 - [3-2-1 backup rule](#3-2-1-backup-rule)
-- [Version control / Track changes](#version-control--track-changes)
-- [Data Sharing - while working collaboratively](#data-sharing---while-working-collaboratively)
-- [Sharing is caring](#sharing-is-caring)
-- [Collaborative platforms](#collaborative-platforms)
-- [Collaborative platforms](#collaborative-platforms-1)
+- [Version control and track changes](#version-control-and-track-changes)
+- [Types of Version Control](#types-of-version-control)
+- [Data Sharing](#data-sharing)
 - [Cloud Services](#cloud-services)
-- [Using cloud services for text documents](#using-cloud-services-for-text-documents)
-- [Collaborative platforms](#collaborative-platforms-2)
-- [Your local support](#your-local-support)
-- [HHU Düsseldorf - Links](#hhu-düsseldorf---links)
+- [Overview of Institutional services at UoC and HHU](#overview-of-institutional-services-at-uoc-and-hhu)
 
 ---
 
@@ -78,16 +95,14 @@ Check out: https://creativecommons.org/about/cclicenses/
 # Data protection
 
 [GDPR](https://gdpr-info.eu/): General Data Protection Regulation
-
 [DS-GVO](https://www.datenschutz-wiki.de/Datenschutz-Grundverordnung) (german): Datenschutz-Grundverordnung
-- required measures: "Technische und organisatorische Maßnahmen" [(TOMs)](https://www.datenschutz-wiki.de/Technische_und_organisatorische_Ma%c3%9fnahmen)
 
 ---
 
 # Use of biological materials
 
 - MTA: material transfer agreement
-- [Nagoya Protocol](https://www.cbd.int/abs/about/)
+- Nagoya Protocol: https://www.cbd.int/abs/about/
 - DSI: [Digital sequence information](https://www.genres.de/en/access-and-benefit-sharing/digital-sequence-information)
 
 ---
@@ -105,6 +120,14 @@ Check out: https://creativecommons.org/about/cclicenses/
 ![bg right w:450](https://storage.googleapis.com/jnl-up-j-dsj-files/journals/1/articles/1158/submission/proof/1158-10-8531-1-17-20201104.png)
 
 <span class="reference">https://datascience.codata.org/articles/10.5334/dsj-2020-043/</span>
+
+---
+
+# Research Data policies
+![w:500](custom/Forschungsdaten-Policy-Kit-Abb2.png)
+
+
+<span class="reference">Hiemenz, Bea & Kuberek, Monika (2018) http://dx.doi.org/10.14279/depositonce-7521</span>
 
 ---
 
@@ -132,55 +155,7 @@ Check out: https://creativecommons.org/about/cclicenses/
 
 ---
 
-# Storage
-
----
-
-# Data sharing
-
----
-
-# Versioning
-
----
-
-# Publication
-
-## Data publications
-
----
-
 # Public data repositories
-
----
-
-# Domain-specific data repositories
-
-**Good**
-
-- Assign PIDs / DOIs
-- Long-term accessible
-- Data type specific
-- Apply metadata standards
-- Usually recommended / required by journals
-- Mostly accepted by the community
-
-**Intermediate**
-
-- User-friendliness
-- Different metadata schema
-- Complex and versatile submission routines
-
----
-
-# Choosing a data repository
-
-Domain-specific >> Generic >> Institutional
-
-*Find repositories at:*
-
-- <https://www.re3data.org>
-- <https://fairsharing.org>
 
 ---
 
@@ -207,6 +182,40 @@ Repository | Description | Biological data domain
 
 ---
 
+# Choosing a data repository
+
+Domain-specific >> Generic >> Institutional
+
+*Find repositories at:*
+
+- <https://www.re3data.org>
+- <https://fairsharing.org>
+
+---
+
+# Domain-specific data repositories
+
+<style scoped>
+section {font-size: 25px;}
+</style>
+
+**Good**
+
+- Assign PIDs / DOIs
+- Long-term accessible
+- Data type specific
+- Apply metadata standards
+- Usually recommended / required by journals
+- Mostly accepted by the community
+
+**Intermediate**
+
+- User-friendliness
+- Different metadata schema
+- Complex and versatile submission routines
+
+---
+
 # Generic data repositories
 
 ![bg right:40% width:400](./../../../img/repositories_genericRepos_collage.drawio.svg)
@@ -225,7 +234,6 @@ Repository | Description | Biological data domain
 ---
 
 # Peristent Identifiers (PIDs)
-
 
 --- 
 
@@ -250,7 +258,8 @@ Repository | Description | Biological data domain
 
 # Properties of a PID
 
-Ideally, PIDs are 
+Ideally, PIDs are
+
 - Globally unique
 - stable and permanent
 - Location-independent
@@ -270,36 +279,57 @@ Ideally, PIDs are
 - https://datacite.org
 - https://www.project-freya.eu/en
 
+---
+
+# Storage media
 
 ---
+
+# Backup vs. Archive
+
+
+   <br>    |    Backup     |    Archive
+-------|-----------|-----------
+Storage type  | Short-, mid-term  | Long-term
+Purpose  | Disaster recovery | Long-term storage, compliance
+Reason  | Duplication  | Migration
+Usage  | Work in progress  | Cold, Unused data
+Changes  | Short-term updates  | No updates
+Trend  | Cyclic, Replacement  | Growing
+Latency  | Short/Costly  | High/Cheaper
+
+
+---
+
 
 # 3-2-1 backup rule
 
-<!-- - **Three** different copies
-- **Two** storage media
-- **One** copy offsite -->
-
 ![w:800](./custom/3-2-1-backup-rule.drawio.svg)
 
+---
+
+# Version control and track changes
+
+It’s good practice to document:
+
+- What was changed?
+- Who is responsible?
+- When did it happen?
+- Why the changes?
 
 ---
 
-# Data Sharing - while working collaboratively
+# Types of Version Control
 
+- by file name (_v1, _v2)
+- cloud services
+  - dropbox, icloud, gdrive
+- distributed version control system
+  - e.g. Git
 
 ---
 
-# Collaborative platforms
-
-### Personal use
-- GoogleDrive <https://drive.google.com/>
-- Microsoft OneDrive / Sharepoint /Teams <https://onedrive.live.com/>
-- Apple iCloud <https://www.icloud.com>
-
-### Business solutions
-- Owncloud https://owncloud.com/
-- Nextcloud https://nextcloud.com/de/
-- google cloud, aws, azure, etc.
+# Data Sharing
 
 ---
 
@@ -317,82 +347,22 @@ Ideally, PIDs are
 
 ---
 
-
-# Using cloud services for text documents
+# Overview of Institutional services at UoC and HHU
 
 <style scoped>
-.columns {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
-}
-ul {
-    margin: 5; padding: 0;
-}
+section {font-size: 25px;}
 </style>
 
-<div class="columns">
-<div class="columns-left">
 
-### <span style="color:#B4CE82">Good</span>
+### UoC
 
-- Collaborative writing
-- Shared text
-- Easy format, and conversion
+- C3RDM: https://fdm.uni-koeln.de/en/home
+- Data storage and sharing: https://rrzk.uni-koeln.de/daten-speichern-teilen
+- HPC: https://rrzk.uni-koeln.de/hpc-projekte 
+- service overview: https://fdm.uni-koeln.de/en/rdm-services/service-catalogue
 
-</div>
-<div class="columns-right">
+### HHU
 
-### <span style="color:#F9CD69">Intermediate</span>
-
-- Flexibility in drawing, editing
-- Sometimes learning curve
-
-</div>
-
-<div class="columns-right">
-
-### <span style="color:#c21f3a">Limited</span>  
-
-- Too large files
-- Security issues
-- Proprietary documents
-
-</div>
-</div>
-
----
-
-# Collaborative platforms
-
-- Easy sharing and online collaboration
-- Cloud based
-- Unlimited open sharing (any one with link can edit)
-- Closed sharing (sharing upon invitation)
-- Limited project size (e.g. not suitable for large projects with many files/folders) 
-- Paid
-- Version control
-- Easy format conversion
-- Sustainable format
-- Security?
-
----
-
-# Your local support
-
-# HHU Düsseldorf - Links
-
-- Research Data Management Competence Center: https://www.fdm.hhu.de
+- RDM Competence Center: https://www.fdm.hhu.de
 - Support for research including HPC: https://www.zim.hhu.de/servicekatalog/forschungsunterstuetzung 
 - Processing & storing data: https://www.zim.hhu.de/servicekatalog/rechnen-und-speichern
-
----
-
-# Version control and track changes
-
-It’s good practice to document:
-
-- What was changed?
-- Who is responsible?
-- When did it happen?
-- Why the changes?
