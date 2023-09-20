@@ -10,7 +10,6 @@ author:
   orcid: https://orcid.org/0000-0001-9021-3197
 ---
 
-
 # Block 1 &ndash; Welcome and Intro
 
 <style scoped>section {background: none; background-color: white}</style>
@@ -18,7 +17,6 @@ author:
 
 September 21st, 2023
  
-
 <div style="position: fixed; bottom: 10%; right: 40%;">
   <div class="profile-picture">
     <img src="https://www.biological-data-science.hhu.de/fileadmin/_processed_/8/c/csm_Sabrina_Zander_3c8daca973.jpg" alt="Sabrina Zander" style="position:absolute; height: auto; width: auto; top:65%; left: 0%; transform:translateY(-50%);"> 
@@ -46,11 +44,6 @@ September 21st, 2023
 ---
 
 # Welcome
-
----
-
-# About us
-
 
 
 ---
@@ -128,12 +121,6 @@ September 21st, 2023
 
 ![h:500](./../../../img/ResearchDataLifecycle_seq9.png)
 
-<!-- ################# -->
-<!-- Source to following slide(s) -->
-<!-- ./bricks/exercise_014_fair.md -->
-<!-- ################# -->
-
-
 ---
 
 # Have you ever heard about the <br> **FAIR principles**?
@@ -151,35 +138,18 @@ footer {
 }
 </style>
 
-
-<!-- 
-Exercise: Association map
--->
-
-<!-- ################# -->
-<!-- Source to following slide(s) -->
-<!-- ./bricks/lesson_018_FAIR_intro.md -->
-<!-- ################# -->
-
-
-<!-- TODO
-
-- Illustrate the development since
-- tentatively touch on the implications
-  - researchers
-  - infrastructures
-  - stakeholders
-
- -->
-
 ---
 
-# The FAIR guiding principles for scientific data management and stewardship
+# FAIR
 
-![bg right fit](./../../../img/FAIR_Principles_002.svg)
+- **F**indable
+- **A**ccessible
+- **I**nteroperable
+- **R**eusable
 
 https://doi.org/10.1038/sdata.2016.18
 
+![bg right w:600](custom/wilkinson2016-FAIR.png)
 
 ---
 
@@ -198,6 +168,76 @@ object-fit: cover;
 ![](./../../../img/FAIR_Benefits.png)
 
 ---
+
+# Is your data FAIR?
+
+**F**indable | **A**ccessible | **I**nteroperable | **R**eusable
+
+- Where do you store your data?
+- How do you share your data?
+- What tools do you use to analyse your data?
+- How do you reuse other people's data?
+
+---
+
+## Findable
+
+> The first step in (re)using data is to find them. Metadata and data should be easy to find for both humans and computers. Machine-readable metadata are essential for automatic discovery of datasets and services, so this is an essential component of the FAIRification process.
+
+- F1. (Meta)data are assigned a globally unique and persistent identifier.
+- F2. Data are described with rich metadata (defined by R1 below).
+- F3. Metadata clearly and explicitly include the identifier of the data they describe.
+- F4. (Meta)data are registered or indexed in a searchable resource.
+
+<span class="reference">https://www.go-fair.org/fair-principles/<span>
+
+---
+
+## Accessible
+
+> Once the user finds the required data, she/he/they need to know how they can be accessed, possibly including authentication and authorisation.
+
+- A1. (Meta)data are retrievable by their identifier using a standardised communications protocol
+  - A1.1 The protocol is open, free, and universally implementable
+  - A1.2 The protocol allows for an authentication and authorisation procedure, where necessary
+- A2. Metadata are accessible, even when the data are no longer available
+
+<span class="reference">https://www.go-fair.org/fair-principles/<span>
+
+---
+
+## Interoperable
+
+> The data usually need to be integrated with other data. In addition, the data need to interoperate with applications or workflows for analysis, storage, and processing.
+
+- I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.
+- I2. (Meta)data use vocabularies that follow FAIR principles.
+- I3. (Meta)data include qualified references to other (meta)data.
+
+<span class="reference">https://www.go-fair.org/fair-principles/<span>
+
+---
+
+## Reusable
+
+> The ultimate goal of FAIR is to optimise the reuse of data. To achieve this, metadata and data should be well-described so that they can be replicated and/or combined in different settings.
+
+- R1. (Meta)data are richly described with a plurality of accurate and relevant attributes
+- R1.1. (Meta)data are released with a clear and accessible data usage license
+- R1.2. (Meta)data are associated with detailed provenance
+- R1.3. (Meta)data meet domain-relevant community standards
+
+<span class="reference">https://www.go-fair.org/fair-principles/<span>
+
+---
+
+# FAIR on multiple layers
+
+> The principles refer to three types of entities: **data** (or any digital object), **metadata** (information about that digital object), and **infrastructure**.
+
+<span class="reference">https://www.go-fair.org/fair-principles/<span>
+
+--- 
 
 # Scattered Data Silos
 
@@ -225,8 +265,8 @@ object-fit: cover;
 
 ![](./../../../img/FAIR_unFAIR_Stories.png)
 
-
 ---
+
 
 # 3-2-1 backup rule
 
@@ -236,7 +276,7 @@ object-fit: cover;
 
 ![w:800](./custom/3-2-1-backup-rule.drawio.svg)
 
---- 
+---
 
 # Version control / Track changes
 
