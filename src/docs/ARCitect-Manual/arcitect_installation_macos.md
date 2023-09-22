@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: ARCitect Installation - macOS
-date: 2023-07-27
+date: 2023-09-22
 author:
 - name: Dominik Brilhaus
   orcid: https://orcid.org/0000-0001-9021-3197
@@ -11,6 +11,10 @@ add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
+:bulb: Updated for ARCitect v0.0.8 and higher :bulb:
+1. You do not need to have ARC Commander installed
+
+:fire: Note, that the current .dmg releases are not stable on all macOS systems. 
 
 🚧 The ARCitect is currently being developed and not fully user-ready, yet. Installation for beta-testing requires an admin account.
 
@@ -23,9 +27,9 @@ Please install the latest version of [Node.js](https://nodejs.org/en/download).
 1. Download the installer for your operating system (e.g. macOS Installer)
 2. Once downloaded, open the `node-x.x.x.pkg` from your downloads folder and follow the "Install Node.js" instructions.
 
-### Install ARC Commander and Git
+### Install Git
 
-Please follow the [ARC Commander Setup](./../ArcCommanderManual/index-setup.html) to install the latest version of ARC Commander and its dependencies.
+Please [install](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_dependencies.html) and [configure](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/git_config.html) Git and Git LFS before using the ARCitect. 
 
 ## Install the ARCitect
 
