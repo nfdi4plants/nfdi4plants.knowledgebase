@@ -139,7 +139,7 @@
 ### [Data Steward Circle](/docs/teaching-materials/disseminations/DataSteward-Circle/index.html)
 ### [CEPLAS Start Your ARC Series](/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html)
 ### [MibiNet CEPLAS Start Your ARC](/docs/teaching-materials/disseminations/2023-09-MibiNet-CEPLAS-StartYourARC/index.html)
-### [CSCS CEPLAS Start Your ARC](/docs/teaching-materials/disseminations/2023-10-CSCS-CEPLAS-StartYourARC/Block00-Preparation.html)
+### [CSCS CEPLAS Start Your ARC](/docs/teaching-materials/disseminations/2023-10-CSCS-CEPLAS-StartYourARC/index.html)
 
 # [Frequently Asked Questions](/docs/faqs/faqs.html)
 
