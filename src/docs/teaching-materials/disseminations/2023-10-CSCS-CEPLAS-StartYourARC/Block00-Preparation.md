@@ -72,7 +72,7 @@ Find the **command-line interface (CLI)** on your system.
 
 # Git Installation
 
-Please install [Git](https://git-scm.com/downloads) and [Git LFS](https://git-lfs.github.com/) on your system
+Please install <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.github.com/" target="_blank">Git LFS</a> on your system
 
 :bulb: Git LFS may already be installed with your Git installation (at least on Windows)
 
