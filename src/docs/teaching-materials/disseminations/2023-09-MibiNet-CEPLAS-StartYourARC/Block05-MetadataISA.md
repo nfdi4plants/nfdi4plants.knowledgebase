@@ -8,6 +8,9 @@ author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
+- name: Martin Kuhl
+  github: https://github.com/Martin-Kuhl
+  orcid: https://orcid.org/0000-0002-8493-1077
 - name: Sabrina Zander
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
@@ -21,7 +24,7 @@ September 28th, 2023
 
 <div style="position: fixed; bottom: 10%; right: 40%;">
   <div class="profile-picture">
-    <img src="https://www.biological-data-science.hhu.de/fileadmin/_processed_/8/c/csm_Sabrina_Zander_3c8daca973.jpg" alt="Sabrina Zander" style="position:absolute; height: auto; width: auto; top:65%; left: 0%; transform:translateY(-50%);"> 
+    <img src="https://www.biological-data-science.hhu.de/fileadmin/_processed_/8/c/csm_Sabrina_Zander_3c8daca973.jpg" alt="Sabrina Zander" style="position:absolute; height: auto; width: auto; top:65%; left: 0%; transform:translateY(-50%);">
   </div>
 
   <div>
@@ -44,7 +47,6 @@ September 28th, 2023
 </div>
 
 ---
-
 
 # Metadata
 
@@ -98,11 +100,6 @@ section {
 </style>
 
 `Viola` investigates the `effect of the plant circadian clock` on `sugar metabolism` in *`W. mirabilis`*. For her `PhD project`, which is part of an `EU-funded consortium` in `Prof. Beetroot's lab`, she acquires `seeds` from a `South-African botanical society`. Viola `grows the plants` under `different light regimes`, harvests `leaves` from a `two-day time series experiment`, extracts `polar metabolites` as well as `RNA` and submits the samples to nearby `core facilities for metabolomics and transcriptomics` measurements, respectively. `After a few weeks` of iterative consultation with the facilities' heads as well as `technicians` and `computational biologists` involved, Viola receives back a wealth of `raw and processed data`. From the data she `produces figures` and wraps everything up to `publish the results in the Journal of Wonderful Plant Sciences`.
-
-<!-- ################# -->
-<!-- Source to following slide(s) -->
-<!-- ./bricks/lesson_009_metadata.md -->
-<!-- ################# -->
 
 ---
 
@@ -256,12 +253,13 @@ ul {
 # Metadata "Standards"
 
 Examples from Minimum Information for Biological and Biomedical Investigations (MIBBI):
-- MIAPPE | Minimum Information About a Plant Phenotyping Experiment https://www.miappe.org
-- MIAME | Minimum Information About a Microarray Experiment https://www.fged.org/projects/miame/
-- MIAPE | Minimum Information About a Proteomics Experiment https://www.psidev.info/miape
-- MINSEQE | Minimum Information about a high-throughput SEQuencing Experiment https://www.fged.org/projects/minseqe
 
-:bulb: Check out https://fairsharing.org/ for more examples
+- MIAPPE | Minimum Information About a Plant Phenotyping Experiment <https://www.miappe.org>
+- MIAME | Minimum Information About a Microarray Experiment <https://www.fged.org/projects/miame/>
+- MIAPE | Minimum Information About a Proteomics Experiment <https://www.psidev.info/miape>
+- MINSEQE | Minimum Information about a high-throughput SEQuencing Experiment <https://www.fged.org/projects/minseqe>
+
+:bulb: Check out <https://fairsharing.org/> for more examples
 
 ---
 
@@ -272,16 +270,208 @@ Examples from Minimum Information for Biological and Biomedical Investigations (
 
 ---
 
-# Connecting (i.e. “mapping”) MIAPPE and ISA
+# A small Interactive detour
 
-![w:400](./../../../img/metadata_MIAPPE_mappingISA.png)
+-> favorite Movie
 
-http://doi.org/10.1111/nph.16544
+<!-- 
 
-<!-- ################# -->
-<!-- Source to following slide(s) -->
-<!-- ./bricks/lesson_002_ontology.md -->
-<!-- ################# -->
+- let participant name a movie
+- how do you find out the actors, director, release year, etc.? 
+- => google.com
+- google movie - see knowledge graph to the right
+  - how does google know all that?!
+- ===> schema.org
+
+ -->
+
+---
+
+# How does google "know"?!
+
+![w:800](custom/googlecom-screenshot-kg.png)
+
+---
+
+# Schemas and machine-readability
+
+---
+
+## Structured data and the internet
+
+Schema.org
+
+- create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, ...
+- Structured data can be used to ***mark up*** all kinds of items from products to events to recipes
+- Communicate with search engines (-> SEO, search engine optimization)
+- Enhance findability from search engine results
+- Provide context to an ambigous webpage
+- Metadata interoperability and standardization across all website using schema.org
+
+--- 
+
+## Structured data and the internet: Schema.org
+
+<style scoped>
+code {
+    display: inline-block;
+    width: 700px;
+    font-size: 18px;
+}
+</style>
+
+<https://schema.org/Person>
+
+```json
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VisualArtwork",
+      "name": "La trahison des images",
+      "alternateName": "The Treachery of Images",
+      "image": "http://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg",
+      "description": "The painting shows a pipe. Below it, Magritte...",
+      "creator": [
+        {
+          "@type": "Person",
+          "name": "René Magritte",
+          "sameAs": "https://www.freebase.com/m/06h88"
+        }
+      ],
+      "width": [
+        {
+          "@type": "Distance",
+          "name": "940 mm"
+        }
+      ],
+      "height": [
+        {
+          "@type": "Distance",
+          "name": "635 mm"
+        }
+      ],
+      "artMedium": "oil",
+      "artworkSurface": "canvas"
+    }
+    </script>
+```
+
+---
+
+## JSON-LD
+
+<style scoped>
+code {
+    display: inline-block;
+    width: 700px;
+}
+</style>
+
+JSON-LD = JavaScript Object Notation for Linked Data
+
+```json
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "San Francisco 49ers",
+    "member": {
+      "@type": "OrganizationRole",
+      "member": {
+        "@type": "Person",
+        "name": "Joe Montana"
+      },
+      "startDate": "1979",
+      "endDate": "1992",
+      "roleName": "Quarterback"
+    }
+  }
+</script>
+```
+
+---
+
+## RDFa
+
+RDFa = Resource Description Framework in Attributes
+
+```
+<div vocab="http://schema.org/" typeof="SportsTeam">
+  <span property="name">San Francisco 49ers</span>
+  <div property="member" typeof="OrganizationRole">
+    <div property="member" typeof="http://schema.org/Person">
+      <span property="name">Joe Montana</span>
+    </div>
+    <span property="startDate">1979</span>
+    <span property="endDate">1992</span>
+    <span property="roleName">Quarterback</span>
+  </div>
+</div>
+```
+
+---
+
+# Standards
+
+### Dublin Core
+
+<https://www.dublincore.org/schemas/>
+
+### DataCite Schema
+
+- Schema: <http://schema.datacite.org/meta/kernel-4.3/metadata.xsd>
+- Full Example: <https://schema.datacite.org/meta/kernel-4.3/example/datacite-example-full-v4.xml>
+
+---
+
+## DataCite Schema: Simple Example
+
+<style scoped>
+code {
+    /*display: inline-block;*/
+    font-size: 12px;
+}
+</style>
+
+```xml
+...
+  <identifier identifierType="DOI">10.5072/D3P26Q35R-Test</identifier>
+  <creators>
+    <creator>
+      <creatorName nameType="Personal">Fosmire, Michael</creatorName>
+      <givenName>Michael</givenName>
+      <familyName>Fosmire</familyName>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Wertz, Ruth</creatorName>
+      <givenName>Ruth</givenName>
+      <familyName>Wertz</familyName>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Purzer, Senay</creatorName>
+      <givenName>Senay</givenName>
+      <familyName>Purzer</familyName>
+    </creator>
+  </creators>
+  <titles>
+    <title xml:lang="en">Critical Engineering Literacy Test (CELT)</title>
+  </titles>
+  <publisher xml:lang="en">Purdue University Research Repository (PURR)</publisher>
+  <publicationYear>2013</publicationYear>
+  <subjects>
+    <subject xml:lang="en">Assessment</subject>
+    <subject xml:lang="en">Information Literacy</subject>
+    <subject xml:lang="en">Engineering</subject>
+    <subject xml:lang="en">Undergraduate Students</subject>
+    <subject xml:lang="en">CELT</subject>
+    <subject xml:lang="en">Purdue University</subject>
+  </subjects>
+  <language>en</language>
+  <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+...
+```
+
+<https://schema.datacite.org/meta/kernel-4.3/example/datacite-example-dataset-v4.xml>
 
 ---
 
@@ -295,7 +485,7 @@ An ontology combines features of
 - a **taxonomy**, and
 - a **thesaurus**
 
---- 
+---
 
 ## Dictionary
 
@@ -304,8 +494,7 @@ Alphabetically lists terms and their definitions
 
 **Pizza**: *"a dish made typically of flattened bread dough spread with a savory mixture usually including tomatoes and cheese and often other toppings and baked"*
 
---- 
-
+---
 
 ## Taxonomy
 
@@ -313,8 +502,7 @@ Hierarchy or classification
 
 ![bg right:60% w:780](./../../../img/Ontologies_pizzaAnalogy_seq1.png)
 
-
---- 
+---
 
 ## Thesaurus
 
@@ -388,35 +576,34 @@ An ontology can be queried:
 <!-- 
 TODO: 
 - This is actually not a proper ontology(!), but rather a knowledge graph (= ontology + data)
- -->
+
+-->
 
 ---
 
 # The Pizza Ontology
 
-- Example from protege: https://protege.stanford.edu/ontologies/pizza/pizza.owl
-- Visualize viw WebVOWL http://vowl.visualdataweb.org/webvowl.html
+- Example from protege: <https://protege.stanford.edu/ontologies/pizza/pizza.owl>
+- Visualize viw WebVOWL <http://vowl.visualdataweb.org/webvowl.html>
 
-
-
-
-<!-- Remove? TODO
+---
 
 # Example ontologies
 
 ### EDAM ontology
 
-- Description: http://edamontology.org/page
-- Browser: https://edamontology.github.io/edam-browser
+- Description: <http://edamontology.org/page>
+- Browser: <https://edamontology.github.io/edam-browser>
 
 ### PECO ontology
 
-- Human-readble: https://www.ebi.ac.uk/ols/ontologies/peco
-- Raw (OWL): http://purl.obolibrary.org/obo/peco.owl
+- Human-readble: <https://www.ebi.ac.uk/ols/ontologies/peco>
+- Raw (OWL): <http://purl.obolibrary.org/obo/peco.owl>
 
 > Explore more examples
-> - https://www.ebi.ac.uk/ols/
-> - https://bioportal.bioontology.org
+>
+> - <https://www.ebi.ac.uk/ols/>
+> - <https://bioportal.bioontology.org>
 
 <!-- 
 LIVE-Demo 
@@ -431,236 +618,15 @@ LIVE-Demo
 - Mention that terms (subjects, objects) and properties (predicates) have "URIs", "PIDs"
 - Show that terms can have alternative / external IDs and link to "outdated" ontologies
 
-
---- 
-
-<!-- Remove? TODO
-# Schemas and machine-readability
-
-
---- 
-
-
-
-## Structured data and the internet
-
-Schema.org
-- create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, ...
-- Structured data can be used to ***mark up*** all kinds of items from products to events to recipes
-- Communicate with search engines (-> SEO, search engine optimization)
-- Enhance findability from search engine results
-- Provide context to an ambigous webpage
-- Metadata interoperability and standardization across all website using schema.org
-
-<!-- 
-TODO: 
-Source: bioschemas.org
- 
-
-
---- 
-
-<!-- Delete? TODO
-
-## Structured data and the internet: Schema.org
-
-<style scoped>
-code {
-    display: inline-block;
-    width: 700px;
-    font-size: 18px;
-}
-</style>
-
-https://schema.org/Person
-
-```json
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      "name": "La trahison des images",
-      "alternateName": "The Treachery of Images",
-      "image": "http://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg",
-      "description": "The painting shows a pipe. Below it, Magritte...",
-      "creator": [
-        {
-          "@type": "Person",
-          "name": "René Magritte",
-          "sameAs": "https://www.freebase.com/m/06h88"
-        }
-      ],
-      "width": [
-        {
-          "@type": "Distance",
-          "name": "940 mm"
-        }
-      ],
-      "height": [
-        {
-          "@type": "Distance",
-          "name": "635 mm"
-        }
-      ],
-      "artMedium": "oil",
-      "artworkSurface": "canvas"
-    }
-    </script>
-```
-
-<!-- 
-## Google Knowledge Graph
-
-## Bioschemas.org
-
-https://bioschemas.org 
 -->
 
-
---- 
-
-<!-- DELETE? TODO
-
-## JSON-LD
-
-<style scoped>
-code {
-    display: inline-block;
-    width: 700px;
-}
-</style>
-
-JSON-LD = JavaScript Object Notation for Linked Data
-
-```json
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SportsTeam",
-    "name": "San Francisco 49ers",
-    "member": {
-      "@type": "OrganizationRole",
-      "member": {
-        "@type": "Person",
-        "name": "Joe Montana"
-      },
-      "startDate": "1979",
-      "endDate": "1992",
-      "roleName": "Quarterback"
-    }
-  }
-</script>
-```
-
-
---- 
-
-
-
-## RDFa
-
-RDFa = Resource Description Framework in Attributes
-
-```
-<div vocab="http://schema.org/" typeof="SportsTeam">
-  <span property="name">San Francisco 49ers</span>
-  <div property="member" typeof="OrganizationRole">
-    <div property="member" typeof="http://schema.org/Person">
-      <span property="name">Joe Montana</span>
-    </div>
-    <span property="startDate">1979</span>
-    <span property="endDate">1992</span>
-    <span property="roleName">Quarterback</span>
-  </div>
-</div>
-```
-
 ---
 
-# Standards
-
-### Dublin Core
-
-https://www.dublincore.org/schemas/
-
-### DataCite Schema
-
-- Schema: http://schema.datacite.org/meta/kernel-4.3/metadata.xsd
-- Full Example: https://schema.datacite.org/meta/kernel-4.3/example/datacite-example-full-v4.xml
-
---- 
-
-## DataCite Schema: Simple Example
-
-<style scoped>
-code {
-    /* display: inline-block; */
-    font-size: 12px;
-}
-</style>
-
-```xml
-...
-  <identifier identifierType="DOI">10.5072/D3P26Q35R-Test</identifier>
-  <creators>
-    <creator>
-      <creatorName nameType="Personal">Fosmire, Michael</creatorName>
-      <givenName>Michael</givenName>
-      <familyName>Fosmire</familyName>
-    </creator>
-    <creator>
-      <creatorName nameType="Personal">Wertz, Ruth</creatorName>
-      <givenName>Ruth</givenName>
-      <familyName>Wertz</familyName>
-    </creator>
-    <creator>
-      <creatorName nameType="Personal">Purzer, Senay</creatorName>
-      <givenName>Senay</givenName>
-      <familyName>Purzer</familyName>
-    </creator>
-  </creators>
-  <titles>
-    <title xml:lang="en">Critical Engineering Literacy Test (CELT)</title>
-  </titles>
-  <publisher xml:lang="en">Purdue University Research Repository (PURR)</publisher>
-  <publicationYear>2013</publicationYear>
-  <subjects>
-    <subject xml:lang="en">Assessment</subject>
-    <subject xml:lang="en">Information Literacy</subject>
-    <subject xml:lang="en">Engineering</subject>
-    <subject xml:lang="en">Undergraduate Students</subject>
-    <subject xml:lang="en">CELT</subject>
-    <subject xml:lang="en">Purdue University</subject>
-  </subjects>
-  <language>en</language>
-  <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
-...
-```
-
-https://schema.datacite.org/meta/kernel-4.3/example/datacite-example-dataset-v4.xml
-
-
-
-
-
-
-
-
----
---> 
-
-# ISA
-
----
-
-## ARC builds on ISA
+# ARC builds on ISA
 
 ![w:900](./../../../img/ISAmodel_ARC01_img01.svg)
 
-https://isa-tools.org/format/specification.html
-
-<!-- Source to slide(s) -->
-<!-- ../../bricks/ARC_ISAmodel.md -->
+<https://isa-tools.org/format/specification.html>
 
 ---
 
@@ -668,19 +634,11 @@ https://isa-tools.org/format/specification.html
 
 ![w:1100](./../../../img/ISAmodel_ARC01_img02.svg)
 
-<!-- Source to slide(s) -->
-<!-- ../../bricks/ARC_ISA-tab.md -->
-
-
 ---
 
 # isa.<>.xlsx files within ARCs
 
 ![w:1000](./../../../img/ISAmodel_ARC01_img03.svg)
-
-<!-- Source to slide(s) -->
-<!-- ../../bricks/ARC_ISAxlsx01.md -->
-
 
 ---
 
@@ -688,42 +646,27 @@ https://isa-tools.org/format/specification.html
 
 ![w:950](./../../../img/ISAmodel_ARC01_img04.svg)
 
-<!-- Source to slide(s) -->
-<!-- ../../bricks/ARC_ISAxlsx02.md -->
-
-
 ---
 
-# The output of a study or assay file can function as input for a new isa.assay.xlsx 
+# The output of a study or assay file can function as input for a new isa.assay.xlsx
 
 Output building blocks:
+
 - Sample Name
 - Raw Data File
 - Derived Data File
 
 ![bg right w:600](./../../../img/ISAmodel_ARC01_img05.svg)
 
-<!-- Source to slide(s) -->
-<!-- ../../bricks/ARC_ISAxlsx03.md -->
-
-
 ---
 
-# 
+#
 
 ![bg w:1050](./../../../img/ISAmodel_ARC01_img6.svg)
 
-<!-- Source to slide(s) -->
-<!-- ../../bricks/ARC_ISAxlsx04.md -->
-
-
 ---
 
-
 # Swate
-
-
-
 
 ---
 
@@ -743,6 +686,7 @@ section p img{
   /* padding-left: 230px */
 }  
 </style> -->
+
 ![w:650](./../../../img/Swate_ParentChildTerm2.svg)
 
 - Low-friction metadata annotation
@@ -786,7 +730,6 @@ Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plan
 
 # Ontology term search
 
-
 <style scoped>
 h1{
   text-align: left
@@ -813,12 +756,6 @@ Enable **related term directed search** to directly fill cells with child terms
 ![w:800](./../../../img/Swate_OntologyCombination.svg)
 
 <!-- combination of ISA (Characteristics, Parameter, Factor) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter \[temperature\] or Factor \[temperature\]). -->
-
-<!-- ################# -->
-<!-- Source to following slide(s) -->
-<!-- ./bricks/lesson_025_SwateTemplates_DataPLANT.md -->
-<!-- ################# -->
-
 
 ---
 
@@ -867,10 +804,20 @@ section {
 
 ![bg right w:450](./../../../img/Swate_Templates.svg)
 
-<!-- ################# -->
-<!-- Source to following slide(s) -->
-<!-- ./bricks/lesson_031_annotationPrinciples.md -->
-<!-- ################# -->
-
+---
 
 ---
+
+# Contributors
+
+Slides presented here include contributions by
+
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
+- name: Martin Kuhl
+  github: https://github.com/Martin-Kuhl
+  orcid: https://orcid.org/0000-0002-8493-1077
+- name: Sabrina Zander
+  orcid: https://orcid.org/0009-0000-4569-6126
+  
