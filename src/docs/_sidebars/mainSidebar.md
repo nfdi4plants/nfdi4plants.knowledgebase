@@ -135,11 +135,11 @@
 ## [Videos](/docs/teaching-materials/videos.html)
 ### [Start Your ARC Series](/docs/teaching-materials/videos/StartYourARC.html)
 ## [Events](/docs/teaching-materials/slides/Events.html)
+### [CSCS CEPLAS Start Your ARC](/docs/teaching-materials/disseminations/2023-10-CSCS-CEPLAS-StartYourARC/index.html)
+### [MibiNet CEPLAS Start Your ARC](/docs/teaching-materials/disseminations/2023-09-MibiNet-CEPLAS-StartYourARC/index.html)
 ### [RPTU Summer School on RDM](/docs/teaching-materials/disseminations/2023-07-17_rptu-summerschool-on-rdm/index.html)
 ### [Data Steward Circle](/docs/teaching-materials/disseminations/DataSteward-Circle/index.html)
 ### [CEPLAS Start Your ARC Series](/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html)
-### [MibiNet CEPLAS Start Your ARC](/docs/teaching-materials/disseminations/2023-09-MibiNet-CEPLAS-StartYourARC/index.html)
-### [CSCS CEPLAS Start Your ARC](/docs/teaching-materials/disseminations/2023-10-CSCS-CEPLAS-StartYourARC/index.html)
 
 # [Frequently Asked Questions](/docs/faqs/faqs.html)
 
