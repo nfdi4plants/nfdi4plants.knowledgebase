@@ -18,7 +18,6 @@ author:
 <!-- _paginate: false -->
 
 September 28th, 2023
- 
 
 <div style="position: fixed; bottom: 10%; right: 40%;">
   <div class="profile-picture">
@@ -73,12 +72,6 @@ Online: Let participants annotate (via video conference tool)
 Presence: Draw map on (white) board
 
 -->
-
-<!-- ################# -->
-<!-- Source to following slide(s) -->
-<!-- ./bricks/exercise_012_metadataViola.md -->
-<!-- ################# -->
-
 
 ---
 
@@ -264,61 +257,17 @@ ul {
 
 Examples from Minimum Information for Biological and Biomedical Investigations (MIBBI):
 - MIAPPE | Minimum Information About a Plant Phenotyping Experiment https://www.miappe.org
-- MIAME | Minimum Information About a Microarray Experiment http://fged.org/projects/miame/
-- MIAPE | Minimum Information About a Proteomics Experiment http://www.psidev.info/miape
-- MINSEQE | Minimum Information about a high-throughput SEQuencing Experiment http://fged.org/projects/minseqe/
+- MIAME | Minimum Information About a Microarray Experiment https://www.fged.org/projects/miame/
+- MIAPE | Minimum Information About a Proteomics Experiment https://www.psidev.info/miape
+- MINSEQE | Minimum Information about a high-throughput SEQuencing Experiment https://www.fged.org/projects/minseqe
 
-*Check: https://fairsharing.org/*
-
-<!-- Remove? TODO
-## A closer look at MIAPE 
-
-(*MIAPPE = Minimum Information About a **Proteomics** Experiment*)
-
-<style scoped>
-  section p img {
-  width: 1000px;
-  height: 400px;
-  object-fit: cover;
-  object-position: 100% 10%;
-  margin: 0 auto 0 auto ;
-  }
-</style>
-
-![](./../../../img/metadata_MIAPE_MS_2.98_excerpt.png)
-
-> Note: This is just an excerpt!
-
-https://www.psidev.info/sites/default/files/2018-03/MIAPE_MS_2.98.pdf
-
+:bulb: Check out https://fairsharing.org/ for more examples
 
 ---
 
-# A closer look at MIAPPE
+# Metadata standards ≈ Checklists
 
-(*MIAPPE = Minimum Information About a **Plant Phenotyping** Experiment*)
-
-<style scoped>
-  section p img {
-  width: 1000px;
-  height: 400px;
-  object-fit: cover;
-  object-position: 100% 10%;
-  margin: 0 auto 0 auto ;
-  }
-</style>
-
-![](./../../../img/metadata_MIAPPE_Checklist.png)
-
-> Note: This is just a tiny excerpt!
-
-http://doi.org/10.1111/nph.16544
-
----
-
-# Metadata standards ~ Checklists
-
-- Determine the (minimal) required information (content)
+- Determine (minimal) required information
 - Usually **do not** determine the format (i.e. shape or file type)
 
 ---
@@ -830,7 +779,6 @@ section{
 - Component
 - Output Columns
   - Sample Name, Raw Data File, Derived Data File
-
 
 Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/isa_AnnotationPrinciples.html) | [slides](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/units/AnnotationPrinciples/isa_AnnotationPrinciples-slides.html)
 
