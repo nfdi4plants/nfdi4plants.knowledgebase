@@ -11,8 +11,8 @@ Here you can find the slides prepared for the September 2023 MibiNet/CEPLAS *Sta
 
 ## Organizers
 
-- [Sabrina Zander](https://www.sfb1535.hhu.de/projects/research-area-z/z03) (sabrina.zander@hhu.de), MibiNet
-- [Dominik Brilhaus](https://www.ceplas.eu/en/research/data-science-and-data-management/) (brilhaus@hhu.de), CEPLAS
+- [Sabrina Zander](https://www.sfb1535.hhu.de/projects/research-area-z/z03), MibiNet
+- [Dominik Brilhaus](https://www.ceplas.eu/en/research/data-science-and-data-management/), CEPLAS
 
 ## Slide decks
 
