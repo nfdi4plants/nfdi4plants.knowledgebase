@@ -37,6 +37,7 @@ rm .tmp_all-*
 
 
 grep -v "_ImageIndex" _ImageIndex.md > tmpfile && mv tmpfile _ImageIndex.md
+grep -v ".DS_Store" _ImageIndex.md > tmpfile && mv tmpfile _ImageIndex.md
 
 
 ```
