@@ -11,8 +11,8 @@ Here you can find the slides prepared for the October 2023 CSCS *Start Your ARC 
 
 ## Organizers
 
-- Dominik Brilhaus, CEPLAS
-- Cristina Martins Rodrigues, DataPLANT
+- <a href="javascript:location='mailto:\u0062\u0072\u0069\u006c\u0068\u0061\u0075\u0073\u0040\u0068\u0068\u0075\u002e\u0064\u0065';void 0">Dominik Brilhaus</a>, CEPLAS
+- <a href="javascript:location='mailto:\u0063\u006d\u0072\u006f\u0064\u0072\u0069\u0067\u0075\u0065\u0073\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">Cristina Martins Rodrigues</a>, DataPLANT
 
 ## Slide decks
 
