@@ -177,6 +177,17 @@ Do I have to fill in all columns when using a template?
 </summary>
 No. However, if you want to submit your data to a <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">public data repository</a>, these will require specific metadata. For this purpose we provide the corresponding templates helping you to annotate your data accordingly.
 </details>
+<details><summary><span style="color: #1fc2a7;font-size:1.2em">
+Installation (Windows, manual): How and where to create a shared folder?
+</summary>
+Wherever you created your <b>folder-to-be-shared</b> according to <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_manual.html">these instructions</a>, you need to have the right to <a href="https://learn.microsoft.com/en-us/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins#share-a-folder">share a folder</a> at this particular location.  
+<br>
+<br>
+This might not be possible at <span style="background-color: grey">'C:\folder-to-be-shared'</span> but, when you go one level down, into <span style="background-color: grey">'Users'</span>, <span style="background-color:grey">'C:\Users\folder-to-be-shared'</span> might be sharable. You can share a folder when the <span style="background-color:grey">'Sharing'</span> tab is shown next to the <span style="background-color:grey">'General'</span> tab in the properties dialog window (right click on the <b>folder-to-be-shared</b>, select 'properties').  
+<br>
+<br>
+When you created a <b>folder-to-be-shared</b>, placed the latest manifest(s) from the zip-extracted <a href="https://github.com/nfdi4plants/Swate/blob/developer/.assets/swate-win.zip?raw=true">download</a> into it (<span style="background-color:grey">'core_manifest.xml'</span>, and optional: <span style="background-color:grey">'experts_manifest.xml'</span>), finished <a href="https://learn.microsoft.com/en-us/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins#share-a-folder">these steps</a> and continue with <a href="https://learn.microsoft.com/en-us/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins#configure-the-trust-manually">these steps</a> in Excel, you should be ready to dive into Swate. - Enjoy 🚀
+</details>
 <br>
 
 ## ISA
