@@ -48,10 +48,6 @@ September 28th, 2023
 
 ---
 
-# Metadata
-
----
-
 # What is <br> **metadata**?
 
 <style scoped>
@@ -252,7 +248,7 @@ ul {
 
 # Metadata "Standards"
 
-Examples from Minimum Information for Biological and Biomedical Investigations (MIBBI):
+Examples from [Minimum Information for Biological and Biomedical Investigations (MIBBI)](https://fairsharing.org/3518):
 
 - MIAPPE | Minimum Information About a Plant Phenotyping Experiment <https://www.miappe.org>
 - MIAME | Minimum Information About a Microarray Experiment <https://www.fged.org/projects/miame/>
@@ -323,37 +319,29 @@ code {
 <https://schema.org/Person>
 
 ```json
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      "name": "La trahison des images",
-      "alternateName": "The Treachery of Images",
-      "image": "http://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg",
-      "description": "The painting shows a pipe. Below it, Magritte...",
-      "creator": [
-        {
-          "@type": "Person",
-          "name": "René Magritte",
-          "sameAs": "https://www.freebase.com/m/06h88"
-        }
-      ],
-      "width": [
-        {
-          "@type": "Distance",
-          "name": "940 mm"
-        }
-      ],
-      "height": [
-        {
-          "@type": "Distance",
-          "name": "635 mm"
-        }
-      ],
-      "artMedium": "oil",
-      "artworkSurface": "canvas"
-    }
-    </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Seattle",
+    "addressRegion": "WA",
+    "postalCode": "98052",
+    "streetAddress": "20341 Whitworth Institute 405 N. Whitworth"
+  },
+  "colleague": [
+    "http://www.xyz.edu/students/alicejones.html",
+    "http://www.xyz.edu/students/bobsmith.html"
+  ],
+  "email": "mailto:jane-doe@xyz.edu",
+  "image": "janedoe.jpg",
+  "jobTitle": "Professor",
+  "name": "Jane Doe",
+  "telephone": "(425) 123-4567",
+  "url": "http://www.janedoe.com"
+}
+</script>
 ```
 
 ---
@@ -584,7 +572,7 @@ TODO:
 # The Pizza Ontology
 
 - Example from protege: <https://protege.stanford.edu/ontologies/pizza/pizza.owl>
-- Visualize viw WebVOWL <http://vowl.visualdataweb.org/webvowl.html>
+- Visualize via WebVOWL <http://vowl.visualdataweb.org/webvowl.html>
 
 ---
 
@@ -782,7 +770,7 @@ section {
 
 # Realization of lab-specific metadata templates
 
-![w:650px](./../../../img/Swate_LabTemplates.svg)
+![w:850px](./../../../img/SWATE_metadataTemplates.png)
 
 Facilities can define their most common workflows as templates
 
