@@ -8,6 +8,12 @@ author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
+- name: Kevin Frey
+  github: https://github.com/Freymaurer
+  orcid: https://orcid.org/0000-0002-8493-1077
+- name: Martin Kuhl
+  github: https://github.com/Martin-Kuhl
+  orcid: https://orcid.org/0000-0002-8493-1077
 - name: Sabrina Zander
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
@@ -341,10 +347,21 @@ Example workflows with three *processes* each:
 Examples, Excelsheet... --> 
 
 ---
-## Contributors 
 
-Slides presented here include contributions by 
+---
 
-- Dominik Brilhaus | [GitHub](https://github.com/brilator) | [ORCID](https://orcid.org/0000-0001-9021-3197)
-- Kevin Frey  | [GitHub](https://github.com/Freymaurer) | [ORCID](https://orcid.org/0000-0002-8510-6810)
-- Martin Kuhl  | [GitHub](https://github.com/Martin-Kuhl) | [ORCID](https://orcid.org/0000-0002-8493-1077)
+# Contributors
+
+Slides presented here include contributions by
+
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
+- name: Kevin Frey
+  github: https://github.com/Freymaurer
+  orcid: https://orcid.org/0000-0002-8493-1077
+- name: Martin Kuhl
+  github: https://github.com/Martin-Kuhl
+  orcid: https://orcid.org/0000-0002-8493-1077
+- name: Sabrina Zander
+  orcid: https://orcid.org/0009-0000-4569-6126
