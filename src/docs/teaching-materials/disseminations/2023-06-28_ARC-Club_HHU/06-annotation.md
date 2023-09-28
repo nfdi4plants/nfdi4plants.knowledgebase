@@ -267,7 +267,7 @@ Click the <kbd>Update Ontology Terms</kbd> quick access buttons.
 
 At this point. Your table should look similar to this:
 
-![w:1000](./../custom/demo_isa.study1.png)
+![w:1000](./../../../img/demo_isa.study1.png)
 
 ---
 
