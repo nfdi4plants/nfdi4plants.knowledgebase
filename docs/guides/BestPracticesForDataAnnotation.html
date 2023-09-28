@@ -512,7 +512,7 @@
       </i>
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
-<p>In this guide, we will take a closer look at some experimental scenarios that every scientist might face on a more or less regular basis. With these examples, we aim to provide you with the best practices for  data annotation in isa.study.xlsx and isa.assay.xlsx files allowing you to generate machine-readable and thereby, interoperable and reproducible data. Do not hesitate to contact us if you think that we are missing some urgent examples or if you have any further questions.</p>
+<p>In this guide, we will take a closer look at some experimental scenarios that every scientist might face on a more or less regular basis. With these examples, we aim to provide you with the best practices for data annotation in isa.study.xlsx and isa.assay.xlsx files allowing you to generate machine-readable and thereby, interoperable and reproducible data. Do not hesitate to contact us if you think that we are missing some urgent examples or if you have any further questions.</p>
 <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
     <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
@@ -520,12 +520,12 @@
 <br>
 <br>
 <nfdi-h2 id="annotation-of-biological-and-technical-replicates">Annotation of biological and technical replicates</nfdi-h2>
-<p>In our first scenario we focus on annotating the origin and relationship between biological and technical replicates within a fictional study. We started with three biological replicates (Plant A, Plant B, and Plant C) of the model organism <em>Arabidsopis thaliana</em> (Characteristic [Organism]), which were grown under particular conditions (Characteristic [growth day length]). Harvesting of the plants or particular parts resulted in three samples: S1, S2, and S3. These information were stored within the isa.study.xlsx file.</p>
+<p>In our first scenario we focus on annotating the origin and relationship between biological and technical replicates within a fictional study. We started with three biological replicates (Plant A, Plant B, and Plant C) of the model organism <em>Arabidopsis thaliana</em> (Characteristic [Organism]), which were grown under particular conditions (Characteristic [growth day length]). Harvesting of the plants or particular parts resulted in three samples: S1, S2, and S3. These information were stored within the isa.study.xlsx file.</p>
 <p>Subsequent proccesing steps, mostly omitted here for better clarity, are stored within one or multiple isa.assay.xlsx files. In our scenario, three technical replicates of each sample were analyzed via LC/MS (Parameter [instrument model]), generating nine raw data files.</p>
 <p><img src="./../img/ISA_AnnotationPattern_Replicates.svg" alt="replicates" /></p>
 <p><strong>It is very important to group these technical replicates and thus annotate their common origin.</strong> If you would falsely name the individual technical replicates as A, B and C, you could run into trouble during your computational analysis.</p>
 <nfdi-h2 id="annotation-of-time-series-experiments">Annotation of time series experiments</nfdi-h2>
-<p>In this rather simple scenario we take a look at the annotation of time coure patterns. Let's imagine a study in which our plant (Sample A) was exposed to stress (high light, salt, ...) for a given time. To investigate the cellular response, you harvested samples at various time points after exposure to the stressor: S1 is harvested after 5 minutes, S2 after 10 minutes, and so on.</p>
+<p>In this rather simple scenario we take a look at the annotation of time course patterns. Let's imagine a study in which our plant (Sample A) was exposed to stress (high light, salt, ...) for a given time. To investigate the cellular response, you harvested samples at various time points after exposure to the stressor: S1 is harvested after 5 minutes, S2 after 10 minutes, and so on.</p>
 <p><img src="./../img/ISA_AnnotationPattern_TimeSeries.svg" alt="TimeSeries" /></p>
 <p>You should use the Factor building block in such a case to annotate the time after exposure and thereby the sampling point in the isa.study.xlsx file, as this time period will ultimately result in the given output, when all remaining parameters for treatment and analysis were identical.</p>
 <nfdi-h2 id="annotation-of-mixed-samples">Annotation of mixed samples</nfdi-h2>
