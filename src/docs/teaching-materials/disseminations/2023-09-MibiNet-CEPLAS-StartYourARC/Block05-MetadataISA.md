@@ -11,8 +11,6 @@ author:
 - name: Martin Kuhl
   github: https://github.com/Martin-Kuhl
   orcid: https://orcid.org/0000-0002-8493-1077
-- name: Sabrina Zander
-  orcid: https://orcid.org/0009-0000-4569-6126
 ---
 
 # Block 5 &ndash; Metadata and ISA
@@ -806,6 +804,4 @@ Slides presented here include contributions by
 - name: Martin Kuhl
   github: https://github.com/Martin-Kuhl
   orcid: https://orcid.org/0000-0002-8493-1077
-- name: Sabrina Zander
-  orcid: https://orcid.org/0009-0000-4569-6126
   
