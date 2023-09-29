@@ -341,7 +341,7 @@ Example workflows with three *processes* each:
 
 ## Process Information
 
-![w:700](./custom/ARCitect_Assay_Data.png)
+![w:700](././../../../img/ARCitect_Assay_Data.png)
 
 <!-- TODO Update ARCitect Annotation 
 Examples, Excelsheet... --> 

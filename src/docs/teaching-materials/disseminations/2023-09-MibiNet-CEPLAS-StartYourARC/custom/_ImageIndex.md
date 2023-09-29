@@ -4,6 +4,10 @@ layout: docs
 date: 2023-06-29
 ---
 
+
+Thumbnail |  Image URL | Source  / Citation | License
+
+
 path to image | source | license
 --- | --- | ---
 ./creative_commons_brochure.png | adapted from https://wiki.creativecommons.org/images/0/01/6licenses-folded.pdf | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode)

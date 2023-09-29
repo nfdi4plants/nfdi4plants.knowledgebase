@@ -283,7 +283,7 @@ Examples from [Minimum Information for Biological and Biomedical Investigations 
 
 # How does google "know"?!
 
-![w:800](custom/googlecom-screenshot-kg.png)
+![w:800](./../../../img/googlecom-screenshot-kg.png)
 
 ---
 

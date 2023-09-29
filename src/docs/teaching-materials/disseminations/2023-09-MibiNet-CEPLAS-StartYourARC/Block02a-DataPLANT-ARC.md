@@ -31,7 +31,7 @@ author:
 
 # Data Stewardship between DataPLANT and the community  <!-- fit -->
 
-![w:880](./custom/DataPLANT-collaboration01.drawio.png)
+![w:880](././../../../img/DataPLANT-collaboration01.drawio.png)
 
 ---
 
