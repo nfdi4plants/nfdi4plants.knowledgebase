@@ -35,7 +35,7 @@ Dominik Brilhaus, [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-s
 
 # Data Stewardship between DataPLANT and the community  <!-- fit -->
 
-![w:880](./custom/DataPLANT-collaboration01.drawio.png)
+![w:880](./custom/DataPLANT-collaboration-cscs.drawio.png)
 
 ---
 

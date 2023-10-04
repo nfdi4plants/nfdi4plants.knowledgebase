@@ -3,7 +3,7 @@ marp: true
 theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-title: ARCitect and hands-on
+title: ARCitect Hands-on
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -16,7 +16,7 @@ author:
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
 
-# Block 3 &ndash; ARCitect and hands-on
+# Block 3 &ndash; ARCitect Hands-on
 
 <style scoped>section {background: none; background-color: white}</style>
 <!-- _paginate: false -->
@@ -27,7 +27,17 @@ Dominik Brilhaus, [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-s
 
 ---
 
-# ARCitect installation
+# Check-in
+
+---
+
+## Registration
+
+Did everyone <a href="https://register.nfdi4plants.org" target="_blank">sign-up</a> at the DataHUB?
+
+---
+
+## ARCitect installation
 
 Please install the latest version of the ARCitect: https://github.com/nfdi4plants/ARCitect
 
@@ -35,27 +45,38 @@ Please install the latest version of the ARCitect: https://github.com/nfdi4plant
 
 ---
 
-# Download the demo data
+## Download the demo data <!-- fit -->
 
-```bash
-git clone "https://demo-user:1_eznikmzxzARAbUxxnF@git.nfdi4plants.org/teaching/demo-arc_level0.git"
-```
+
+https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZlS_Kzf7psk-5w-xg?e=u0sADd
+
+![bg right w:600](./../../../img/download-demo-data.png)
 
 ---
 
-# Sort Demo data in an ARC
+## You just received your data
 
 ![bg right width:400](./../../../img/demo_data_screenshot.png)
 
-![width:900](./../../../img/ARC_fillWithData_experimental.png)
+---
+
+## Goal
+
+- Structure,
+- (Annotate, and)
+- Share your experimental data.
+
+<br>
+
+:bulb: We'll talk about data annotation later
+
+![bg right width:600](./../../../img/ARC_fillWithData_experimental.png)
 
 ---
 
-# Open ARCitect
+# Open the ARCitect
 
 
-1. Login to DataHUB (1)
-   ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
 
 ---
 
@@ -70,31 +91,40 @@ git clone "https://demo-user:1_eznikmzxzARAbUxxnF@git.nfdi4plants.org/teaching/d
 
 # Your ARC's name
 
-<style scoped>section {font-size: 25px;}</style>
+<style scoped>section {font-size: 23px;}</style>
 
-💡 By default, your ARC's name will be used
-   - for the ARC folder on your machine
-   - to create your ARC in the DataHUB at `https://git.nfdi4plants.org/<YourUserName>/<YourARC>` (see next steps)
-   - as the identifier for your investigation
+💡 By default, your ARC's name will be used:
+
+  1. for the ARC folder on your machine
+  2. to create your ARC in the DataHUB at `https://git.nfdi4plants.org/<YourUserName>/<YourARC>` (see next steps)
+  3. as the identifier for your investigation
 
 💡 Make sure that no ARC exists at  `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`. Otherwise you will sync to that ARC.
 
-💡Don't use spaces in ARC's name
+💡 Avoid spaces in your ARC's name
 
-![bg right:30% w:500](./custom/ARCitect_TalinumPhotosynthesis.png)
+![bg right:30% w:500](./../../../img/ARCitect_TalinumPhotosynthesis.png)
 
 ---
 
 # Add a description to your investigation
 
-![w:800](custom/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
+Click on your ARC's name to add details, such as
+
+- a title
+- a description
+
+![bg right w:700](./../../../img/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
 
 ---
 
-# Add (at least one) contributor
+# Add contributors
 
+In the section "People" click "ADD PERSON" to add at least one contributor
 
-![bg right w:500](custom/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
+![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
+
+:bulb: For each person that you add, make sure to add **Last Name, First Name, Email, and Affiliation**
 
 ---
 
@@ -104,7 +134,7 @@ by clicking "Add Study" and entering an identifier for your study
 
 Use **talinum_drought** as an identifier
 
-![bg right w:500](./custom/ARCitect_TalinumPhotosynthesis_Study.png)
+![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_Study.png)
 
 ---
 
@@ -117,17 +147,41 @@ In the study panel you can add
 - publications
 - data process information
 
-![bg right w:500](./custom/ARCitect_TalinumPhotosynthesis_StudyPanel.png)
+![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_StudyPanel.png)
 
 ---
 
+# Add a protocol to the study
+
+![bg right w:500](../../../img/ARCitect_TalinumPhotosynthesis_Study-protocol.png)
+
+Click "Add Protocol" in the sidebar to add a protocol to your study
+
+---
+
+# Adding protocols
+
+You can either
+
+- directly write a **new protocol** within the ARCitect or
+- import an existing one from your computer
+
+![w:800](./../../../img/arcitect-ARCPanel-protocol.png)
+
+---
+
+# Transfer the protocol information into the study
+
+
+
+---
 
 # Add an assay
 
 by clicking "Add Assay" and entering an identifier for your assay
 
 Add two assays with **rnaseq** and **metabolomics** as an identifier
-![bg right w:500](./custom/ARCitect_TalinumPhotosynthesis_Assay.png)
+![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_Assay.png)
 
 ---
 
@@ -140,7 +194,7 @@ You can either
 Link your assays to your **talinum_drought** study
 
 
-![bg right w:500](./custom/ARCitect_TalinumPhotosynthesis_Assay2.png)
+![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_Assay2.png)
 
 ---
 
@@ -155,17 +209,8 @@ In the assay panel you can
    - technology platform.
 3. add data process information
 
-![bg right w:500](./custom/ARCitect_TalinumPhotosynthesis_AssayPanel.png)
+![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_AssayPanel.png)
 
----
-
-# Add protocols
-
-You can either
-- directly write a **new protocol** within the ARCitect or
-- import an existing one from your computer
-
-![w:800](./../../../img/arcitect-ARCPanel-protocol.png)
 
 ---
 
@@ -177,19 +222,15 @@ In the file tree you can
 
 :bulb: **Add Dataset** allows to import data from any location on your computer into the ARC.
 
-:warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
-
-<!-- Demo dataset cannot be added via add dataset. Only individual files can be added, not multiple folders -->
-
 ![bg right:40% w:400](./../../../img/arcitect-ARCPanel-assay03.png)
 
 ---
 
 # Sort Demo Data to your ARC
 
-💡 protocols can directly imported via ARCitect
+💡 protocols can directly be imported via ARCitect
 
-💡 to add multiple datasets folders, they have to be added manually via file browser 
+💡 to add multiple dataset folders, they have to be added manually via file explorer
 
 ---
 
@@ -241,7 +282,7 @@ If you are logged in, the versions panel shows
 
 # Received two emails from "GitLab" about a failed pipeline? <!-- fit -->
 
-![w:600](custom/cqc-error-email.png)
+![w:600](./../../../img/cqc-error-email.png)
 
 :fire: Don't worry :smile:
 
@@ -249,7 +290,7 @@ If you are logged in, the versions panel shows
 
 ## Pipeline Failed
 
-![bg right w:700](custom/cqc-error-badges.png)
+![bg right w:700](./../../../img/cqc-error-badges.png)
 
 - a "continuous quality control" (CQC) pipeline validates your ARC
 - This fails if one of the following metadata items is missing:
@@ -270,7 +311,7 @@ If you are logged in, the versions panel shows
 
 If the pipeline has failed once, it is disabled by default
 
-![bg right w:500](./custom/cqc-error-email2.png)
+![bg right w:500](./../../../img/cqc-error-email2.png)
 
 ---
 
@@ -287,7 +328,7 @@ To reactivate it and let the DataHUB validate your ARC again:
   3. check box "Default to Auto DevOps pipeline"
   4. Save changes
 
-![bg right:60% w:600](custom/cqc-activate-autodevops.png)
+![bg right:60% w:600](./../../../img/cqc-activate-autodevops.png)
 
 ---
 

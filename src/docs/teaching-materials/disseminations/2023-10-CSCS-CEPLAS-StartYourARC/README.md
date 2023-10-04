@@ -2,6 +2,10 @@
 title: README 2023-10-CSCS-CEPLAS-StartYourARC
 ---
 
+Audience:
+    - CSCS https://cerealstemcells.de/
+    - PhD / PostDoc / PI
+
 ## See website locally
 
 1. Execute `npm run fornax`
