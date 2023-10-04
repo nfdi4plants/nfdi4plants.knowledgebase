@@ -265,7 +265,7 @@ In the assay panel you can
 
 ---
 
-## Login to the DataHUB
+## Share your ARC
 
 <div class="container">
   <div style="padding-right: 50px">
@@ -284,7 +284,7 @@ In the assay panel you can
 
 ---
 
-### Upload your local ARC to the DataHUB
+### Versions: Connection to the DataHUB
 
 <div class="container">
   <div style="padding-right: 50px">
@@ -304,6 +304,7 @@ In the assay panel you can
 ### Connection to the DataHUB
 
 If you are logged in, the versions panel shows
+
 - your DataHUB's *Full Name* and *eMail*
 - the URL of the current ARC in the DataHUB  
   `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`
@@ -314,31 +315,24 @@ If you are logged in, the versions panel shows
 
 ### Upload your ARC to the DataHUB
 
-<div class="container">
-  <div style="padding-right: 50px">
+The versions panel allows you to
 
-  The versions panel allows you to
+- store the local changes to your ARC in form of "commits",
+- sync the changes to the DataHUB, and
+- check the history of your ARC
 
-  - store the local changes to your ARC in form of "commits",
-  - sync the changes to the DataHUB, and
-  - check the history of your ARC
+To upload your ARC:
 
-    1. Enter a "commit message" to comment the changes to your ARC
-    2. Click "commit" to save your changes locally
-    3. Click upload to upload your ARC to the DataHUB
+  1. Enter a "commit message" to shortly describe the changes to your ARC
+  2. Click "commit" to save your changes locally
+  3. Click upload to upload your ARC to the DataHUB
 
-  </div>
 
-  <div>
-    <img src="./../img/arcitect-VersionsPanel.png" width="650px">
-  </div>
-
-</div>
-
+<img src="./../img/arcitect-VersionsPanel.png" width="850px">
 
 ### Check if your ARC is successfully uploaded
 
-1. [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB 
+1. [sign in](https://git.nfdi4plants.org) to the DataHUB
 2. Check your projects
 
 ---
