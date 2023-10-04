@@ -230,7 +230,7 @@ footer {
 
 https://doi.org/10.1038/sdata.2016.18
 
-![bg right w:600](custom/wilkinson2016-FAIR.png)
+![bg right w:600](./../../../img/wilkinson2016-FAIR.png)
 
 ---
 
@@ -322,13 +322,13 @@ object-fit: cover;
 
 # Scattered Data Silos
 
-![w:900](./custom/data_fragmentation_CEPLAS.png)
+![w:900](././../../../img/data_fragmentation_CEPLAS.png)
 
 ---
 
 # Scattered Data Silos
 
-![w:900](./custom/data_fragmentation_CEPLAS_MibiNet_TRR.png)
+![w:900](././../../../img/data_fragmentation_CEPLAS_MibiNet_TRR.png)
 
 ---
 

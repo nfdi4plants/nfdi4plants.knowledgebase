@@ -187,7 +187,7 @@ arc sync -r https://git.nfdi4plants.org/<username>/arc-demo
 
 # Received two emails from "GitLab" about a failed pipeline? <!-- fit -->
 
-![w:600](custom/cqc-error-email.png)
+![w:600](./../../../img/cqc-error-email.png)
 
 :fire: Don't worry :smile:
 
@@ -195,7 +195,7 @@ arc sync -r https://git.nfdi4plants.org/<username>/arc-demo
 
 ## Pipeline Failed
 
-![bg right w:700](custom/cqc-error-badges.png)
+![bg right w:700](./../../../img/cqc-error-badges.png)
 
 - a "continuous quality control" (CQC) pipeline validates your ARC
 - This fails if one of the following metadata items is missing:

@@ -24,7 +24,6 @@ Here you can find the slides prepared for the September 2023 MibiNet/CEPLAS *Sta
 - <a href="./Block02b-ARC-ecosystem-demo.html" target="_blank">Block 2b  &ndash; ARC-ecosystem-demo</a>
 - <a href="./Block03a-ARCCommander-HandsOn.html" target="_blank">Block 3a  &ndash; ARCCommander-HandsOn</a>
 - <a href="./Block03b-ARCitect-HandsOn.html" target="_blank">Block 3b  &ndash; ARCitect-HandsOn</a>
-<!-- - <a href="./Block04-ARCYourOwnData.html" target="_blank">Block 4  &ndash; ARCYourOwnData</a> -->
 - <a href="./Block05-MetadataISA.html" target="_blank">Block 5  &ndash; MetadataISA</a>
 - <a href="./Block06-Swate-HandsOn.html" target="_blank">Block 6 &ndash; Swate-HandsOn</a>
 
