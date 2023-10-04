@@ -98,13 +98,12 @@
 ### [Use your DOIs](/docs/DataHUB-Manual/datahub-data-publications-dois.html)
 
 
-
-
 # [Guides](/docs/guides/index.html)
 ## [ARC User Journey](/docs/guides/ARCUserJourney.html)
 ## [Create your ARC](/docs/guides/index-CreateYourARC.html)
 ### [ARC Commander QuickStart](/docs/guides/arcCommander_QuickStart.html)
 ### [ARC Commander QuickStart (Experts)](/docs/guides/arcCommander_QuickStart_expert.html)
+### [ARCitect QuickStart](/docs/guides/arcitect_QuickStart.html)
 ## [Annotate Data in your ARC](/docs/guides/index-AnnotateDataInYourARC.html)
 ### [Annotation Principles](/docs/guides/isa_AnnotationPrinciples.html)
 ### [ISA File Types](/docs/guides/isa_FileTypes.html)
