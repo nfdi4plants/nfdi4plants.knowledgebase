@@ -50,7 +50,7 @@ Please install the latest version of the ARCitect: https://github.com/nfdi4plant
 
 https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZlS_Kzf7psk-5w-xg?e=u0sADd
 
-![bg right w:600](./../../../img/download-demo-data.png)
+![bg right w:600](./custom/download-demo-data.png)
 
 ---
 
