@@ -67,3 +67,17 @@ Create ARCs to share research data
 <br>
   
 :bulb: In this workshop we focus more on **how** and less on **why**
+
+---
+
+# Tentative agenda
+
+Time | Topics
+-------- | --------
+13:00 - 14:00 | Welcome and intro
+14:00 - 14:15 | *Short break*
+14:15 - 16:00 | ARC and ARCitect Hands-on
+16:00 - 16:15 | *Short break*
+16:15 - 17:00 | Q & A
+
+:bulb: Please try to prepare your own ARC until the next session

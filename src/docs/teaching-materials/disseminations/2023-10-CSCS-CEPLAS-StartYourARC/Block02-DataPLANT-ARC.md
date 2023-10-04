@@ -45,6 +45,42 @@ Dominik Brilhaus, [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-s
 
 ---
 
+![left h:640](./../../../img/User_Challenges_002.svg)
+
+---
+
+![bg cover](./../../../img/DataPLANT_BigPicture_seq1.png)
+
+---
+
+![bg cover](./../../../img/DataPLANT_BigPicture_seq2.png)
+
+---
+
+![bg cover](./../../../img/DataPLANT_BigPicture_seq3.png)
+
+---
+
+![bg cover](./../../../img/DataPLANT_BigPicture_seq4.png)
+
+---
+
+![bg cover](./../../../img/DataPLANT_BigPicture_seq5.png)
+
+---
+
+![bg cover](./../../../img/DataPLANT_BigPicture_seq6.png)
+
+---
+
+![bg cover](./../../../img/DataPLANT_BigPicture_seq7.png)
+
+---
+
+![bg cover](./../../../img/DataPLANT_BigPicture_seq8.png)
+
+---
+
 # What does an ARC look like?
 
 ![width:950](./../../../img/ARC_fillWithData_seq1.png)
@@ -81,41 +117,6 @@ Dominik Brilhaus, [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-s
 
 ---
 
-![left h:640](./../../../img/User_Challenges_002.svg)
-
----
-
-![bg cover](./../../../img/DataPLANT_BigPicture_seq1.png)
-
----
-
-![bg cover](./../../../img/DataPLANT_BigPicture_seq2.png)
-
----
-
-![bg cover](./../../../img/DataPLANT_BigPicture_seq3.png)
-
----
-
-![bg cover](./../../../img/DataPLANT_BigPicture_seq4.png)
-
----
-
-![bg cover](./../../../img/DataPLANT_BigPicture_seq5.png)
-
----
-
-![bg cover](./../../../img/DataPLANT_BigPicture_seq6.png)
-
----
-
-![bg cover](./../../../img/DataPLANT_BigPicture_seq7.png)
-
----
-
-![bg cover](./../../../img/DataPLANT_BigPicture_seq8.png)
-
----
 
 ---
 
