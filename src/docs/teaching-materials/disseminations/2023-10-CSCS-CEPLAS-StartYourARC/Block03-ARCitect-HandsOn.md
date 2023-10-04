@@ -107,12 +107,12 @@ https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZl
 
 ---
 
-# Add a description to your investigation
+# Add a description and title to the investigation
 
-Click on your ARC's name to add details, such as
-
-- a title
-- a description
+1. Click on the ARC's name
+2. Add a title (e.g. "Talinum Photosynsthesis")
+3. Add a description
+4. Click "Update" to save your changes
 
 ![bg right w:700](./../../../img/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
 
@@ -122,17 +122,27 @@ Click on your ARC's name to add details, such as
 
 In the section "People" click "ADD PERSON" to add at least one contributor
 
+<br>
+
+![w:1000](./../../../img/ARCitect_TalinumPhotosynthesis_addPerson.png)
+
+---
+
+# Add contributor details
+
 ![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
 
-:bulb: For each person that you add, make sure to add **Last Name, First Name, Email, and Affiliation**
+:bulb: For each person that you add, make sure to add
+- First Name
+- Last Name
+- Email
+- Affiliation
 
 ---
 
 # Add a study
 
-by clicking "Add Study" and entering an identifier for your study
-
-Use **talinum_drought** as an identifier
+by clicking "Add Study" and entering **talinum_drought** as identifier for the study
 
 ![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_Study.png)
 
@@ -155,7 +165,7 @@ In the study panel you can add
 
 ![bg right w:500](../../../img/ARCitect_TalinumPhotosynthesis_Study-protocol.png)
 
-Click "Add Protocol" in the sidebar to add a protocol to your study
+Click "Add Protocol" in the sidebar to add a protocol to the study
 
 ---
 
@@ -170,35 +180,31 @@ You can either
 
 ---
 
-# Transfer the protocol information into the study
+# Transfer the protocol information
 
+From the demo data, transfer the lab notes stored in `plant_material.txt` to the **talinum_drought** study.
+
+---
+
+# Add an assay to the ARC
+
+Click "Add Assay" in the sidebar
+
+![bg right:45% w:500](../../../img/ARCitect_TalinumPhotosynthesis_addAssay.png)
 
 
 ---
 
-# Add an assay
+# Name and link the assay
 
-by clicking "Add Assay" and entering an identifier for your assay
+1. Enter **rnaseq** as the identifier
+2. Link the assay to the study **talinum_drought**
 
-Add two assays with **rnaseq** and **metabolomics** as an identifier
-![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_Assay.png)
-
----
-
-# Link your assay to a study
-
-You can either
-- link your new assay to an existing study in your ARC or
-- create a new one
-  
-Link your assays to your **talinum_drought** study
-
-
-![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_Assay2.png)
+![bg right:45%  w:600](./../../../img/ARCitect_TalinumPhotosynthesis_Assay2.png)
 
 ---
 
-# Add information about your assay
+# Add information about the assay
 
 In the assay panel you can
 
@@ -214,23 +220,52 @@ In the assay panel you can
 
 ---
 
+# Add information about the assay
+
+1. Add the following information: 
+   - Measurement Type: `Gene Expression Analysis`
+   - Technology type: `Next Generation Sequencing`
+   - Technology platform: `Illumina HiSeq 2500`
+2. Click "Update" to save your changes
+
+---
+
+
 # Add protocols and datasets
 
 In the file tree you can
   - **add a dataset** and 
-  - **protocols** associated to that dataset.
+  - **protocols** associated with that dataset
 
-:bulb: **Add Dataset** allows to import data from any location on your computer into the ARC.
-
-![bg right:40% w:400](./../../../img/arcitect-ARCPanel-assay03.png)
+![bg right:40% w:400](../../../img/ARCitect_TalinumPhotosynthesis_Assay3.png)
 
 ---
 
-# Sort Demo Data to your ARC
+# Import the demo dataset to the ARC
 
-💡 protocols can directly be imported via ARCitect
+1. Cick "Add Dataset"
+2. Select the *.fastq.gz files from the demo data
 
-💡 to add multiple dataset folders, they have to be added manually via file explorer
+![bg right w:300](../../../img/ARCitect_TalinumPhotosynthesis_Assay4.png)
+![bg right w:300](../../../img/ARCitect_TalinumPhotosynthesis_Assay5.png)
+
+---
+
+# Import the protocols
+
+From the demo data, import the lab notes related to the `rnaseq` assay:
+  
+  - RNA_extraction.txt
+  - Illumina_libraries.txt
+  - NGS_SampleSheet.xlsx
+
+![bg right w:500](../../../img/ARCitect_TalinumPhotosynthesis_Assay6.png)
+
+---
+
+# Collaborate and share
+
+![w:650](./../../../img/ARC_DataSharing_Experts02_img1.png)
 
 ---
 
@@ -244,9 +279,9 @@ Click **Login** (1) in the sidebar to login to the DataHUB.
 
 ---
 
-# Upload your local ARC to the DataHUB
+# Versions: Connection to the DataHUB
 
-From the sidebar, navigate to **Versions** (6)
+To communicate with the DataHUB, navigate to **Versions** (6)
 
 ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
 
@@ -255,6 +290,7 @@ From the sidebar, navigate to **Versions** (6)
 # Versions
 
 The versions panel allows you to
+
 - store the local changes to your ARC in form of "commits",
 - sync the changes to the DataHUB, and
 - check the history of your ARC
@@ -273,9 +309,19 @@ If you are logged in, the versions panel shows
 
 ---
 
-# Check if your ARC is successfully uploaded
+# Upload your ARC to the DataHUB
 
-1. [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB 
+1. Enter a "commit message" to shortly describe the changes to your ARC
+2. Click "commit" to save your changes locally
+3. Click upload to upload your ARC to the DataHUB
+
+![bg right w:700](./../../../img/arcitect-VersionsPanel.png)
+
+---
+
+# Check whether your ARC was uploaded successfully
+
+1. [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB
 2. Check your projects
 
 ---
