@@ -82,7 +82,6 @@ Before creating your own ARC, invest some time to think about the following ques
 
 </div>
 
-
 ---
 
 ### Your ARC's name
@@ -141,7 +140,7 @@ In the section "People" click "ADD PERSON" to add at least one contributor
   </div>
 
   <div>
-    <img src="./../img/arcitect-ARCPanel-study01.png" width="650px">
+    <img src="./../img/arcitect-ARCPanel-study01.png" width="450px">
   </div>
 
 </div>
@@ -201,7 +200,7 @@ You can either
   </div>
 
   <div>
-    <img src="./../img/arcitect-ARCPanel-assay01.png" width="650px">
+    <img src="./../img/arcitect-ARCPanel-assay01.png" width="450px">
   </div>
 
 </div>
@@ -313,7 +312,6 @@ If you are logged in, the versions panel shows
 
 ---
 
-
 ### Upload your ARC to the DataHUB
 
 <div class="container">
@@ -324,6 +322,10 @@ If you are logged in, the versions panel shows
   - store the local changes to your ARC in form of "commits",
   - sync the changes to the DataHUB, and
   - check the history of your ARC
+
+    1. Enter a "commit message" to comment the changes to your ARC
+    2. Click "commit" to save your changes locally
+    3. Click upload to upload your ARC to the DataHUB
 
   </div>
 
@@ -339,9 +341,9 @@ If you are logged in, the versions panel shows
 1. [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB 
 2. Check your projects
 
-
 ---
 
+<!-- 
 ## Adding sub-folders for your data
 
 add studies and assays according to your needs
@@ -356,4 +358,4 @@ Try to place your resources, datasets and protocols for each study and assay in 
 >
 > - You might need to add new studies and assays or revise your overall structure during the process
 > - Sometimes you might not immediately find a suitable position for your data
->
+> -->
