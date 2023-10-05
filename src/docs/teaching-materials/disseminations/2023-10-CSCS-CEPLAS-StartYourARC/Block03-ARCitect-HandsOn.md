@@ -50,7 +50,7 @@ Please install the latest version of the ARCitect: https://github.com/nfdi4plant
 
 https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZlS_Kzf7psk-5w-xg?e=u0sADd
 
-![bg right w:600](./../../../img/download-demo-data.png)
+![bg right w:600](./custom/download-demo-data.png)
 
 ---
 
@@ -312,8 +312,8 @@ If you are logged in, the versions panel shows
 # Upload your ARC to the DataHUB
 
 1. Enter a "commit message" to shortly describe the changes to your ARC
-2. Click "commit" to save your changes locally
-3. Click upload to upload your ARC to the DataHUB
+2. Click "COMMIT" to save your changes locally
+3. Click "UPLOAD" to upload your ARC to the DataHUB
 
 ![bg right w:700](./../../../img/arcitect-VersionsPanel.png)
 
@@ -321,7 +321,7 @@ If you are logged in, the versions panel shows
 
 # Check whether your ARC was uploaded successfully
 
-1. [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB
+1. [sign in](https://git.nfdi4plants.org/) to the DataHUB
 2. Check your projects
 
 ---
@@ -386,9 +386,8 @@ To reactivate it and let the DataHUB validate your ARC again:
 
 # Invite collaborators
 
-* Unless changed, your ARC is set to private by default. 
-* To collaborate, you can invite lab colleagues or project partners to your ARC by following the steps on the subsequent slides. 
-* To get started [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB and open the ARC you want to share.
+* Unless changed, your ARC is set to private by default
+* To collaborate, you can invite lab colleagues or project partners to your ARC
 
 ---
 
@@ -416,7 +415,7 @@ To reactivate it and let the DataHUB validate your ARC again:
 
 ---
 
-5. Select a role 
+5. Select a role
 
 ![fit w:1050](./../../../img/datahub_members_seq6.png)
 
@@ -457,6 +456,29 @@ object-position: 100% 45%;
 
 ---
 
+# Add the remaining data
+
+1. Add another assay (`metabolomics`)
+   1. Add the protocols
+   2. Add the dataset
+2. Go to the Versions panel
+   1. Add a "commit message"
+   2. Upload your changes to the DataHUB
+
+![bg right:40% w:400](../../../img/ARCitect_TalinumPhotosynthesis_Assay3.png)
+
+---
+
+# Check the progress of your ARC
+
+1. Navigate to Versions
+2. Check the History panel at the bottom
+
+![w:650](./../../../img/ARCitect_TalinumPhotosynthesis_History.png)
+
+---
+
+
 # Your ARC is ready
 
 <style scoped>
@@ -480,7 +502,63 @@ section p br {
 
 ---
 
+# DataHUB
+
+
 ---
+
+## Deleting an ARC
+
+<style scoped>section ul li{margin-left: 0px;} </style>
+
+1. Click on *Settings* in the sidebar of your ARC
+2. Navigate to the general (1) settings
+3. In the advanced section (4) you can **delete** your ARC
+
+![bg right w:600](./../../../img/datahub-ARC-settings.drawio.svg)
+
+---
+
+## Follow your progress in the DataHUB
+
+1. Open your ARC in the [DataHUB](https://git.nfdi4plants.org/) 
+2. In the sidebar on the left, navigate to `Repository` &rarr; `Commits`
+3. There you find a chronological list of syncing messages together with who synced and when
+
+![bg right w:600](./../../../img/datahub-commits.png)
+
+---
+
+## Undo latest changes
+
+4. Click on the latest (i.e. uppermost) commit.
+5. In the top-right corner select `Revert` from the drop-down menu `Options`.
+
+<img src="./../../../img/datahub-commits-revert01.png" style="width:75%;display: block;margin-left: auto;margin-right: auto;">
+
+
+--- 
+## Undo latest changes
+
+6. Un-check the box "Start a new merge request with these changes".
+7. Click "Revert"
+
+<img src="./../../../img/datahub-commits-revert02.png" style="width:55%;display: block;margin-left: auto;margin-right: auto;">
+
+
+---
+
+## Update your local ARC
+
+If your ARC has changed in the DataHUB (by yourself or collaborators), you need to update your "local" version of the ARC. 
+
+1. Navigate to Versions
+2. Click "Download"
+
+
+--- 
+
+--- 
 
 # Contributors
 
