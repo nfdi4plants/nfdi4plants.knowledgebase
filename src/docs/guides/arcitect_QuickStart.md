@@ -58,7 +58,7 @@ Before creating your own ARC, invest some time to think about the following ques
 - What is my **study**?
 - Which **assay** did I perform?
   - What is my (raw) **dataset**?
-  - What **protocol**s did I use?
+  - What **protocols** did I use?
 
 :bulb: It might help to have this info ready in a text file. In particular, try to think about useful names (identifiers) for investigation, study and assay.
 
@@ -152,8 +152,8 @@ In the section "People" click "ADD PERSON" to add at least one contributor
 Click on your study's name to add details, such as
 
 - general metadata,
-- people, and
-- publications
+- people, 
+- publications and
 - data process information
 
 <img src="./../img/arcitect-StudyPanel.png" width="650px">
@@ -233,8 +233,8 @@ In the assay panel you can
 
 1. link or unlink the assay to studies, and
 2. define the assay's
-   - measurement type
-   - technology type, and
+   - measurement type,
+   - technology type and
    - technology platform.
 3. add data process information
 
@@ -249,10 +249,11 @@ In the assay panel you can
 
   In the file tree you can
   
-  - **add a dataset**, and
+  - **add a dataset** and
   - **protocols** associated to that dataset.
   
   :bulb: **Add Dataset** allows to import data from any location on your computer into the ARC.  
+  
   :warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
 
   </div>
@@ -289,7 +290,7 @@ In the assay panel you can
 <div class="container">
   <div style="padding-right: 50px">
   
-  To communicate with the DataHUB, navigate to Versions (6)
+  To communicate with the DataHUB, navigate to **Versions** (6)
   
   </div>
 
@@ -324,8 +325,8 @@ The versions panel allows you to
 To upload your ARC:
 
   1. Enter a "commit message" to shortly describe the changes to your ARC
-  2. Click "commit" to save your changes locally
-  3. Click upload to upload your ARC to the DataHUB
+  2. Click COMMIT to save your changes locally
+  3. Click UPLOAD to upload your ARC to the DataHUB
 
 
 <img src="./../img/arcitect-VersionsPanel.png" width="850px">
