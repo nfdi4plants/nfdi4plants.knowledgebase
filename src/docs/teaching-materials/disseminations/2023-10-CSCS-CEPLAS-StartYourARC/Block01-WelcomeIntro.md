@@ -10,14 +10,21 @@ author:
   orcid: https://orcid.org/0000-0001-9021-3197
 ---
 
-# Block 1 &ndash; Welcome and Intro
+
+# Start your ARC Workshop
 
 <style scoped>section {background: none; background-color: white}</style>
 <!-- _paginate: false -->
 
+for CSCS
+
 October 5th, 2023
 
 Dominik Brilhaus, [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-science-and-data-management/)
+
+---
+# Block 1 &ndash; Welcome and Intro
+
 
 ---
 
@@ -44,7 +51,7 @@ Please introduce yourselves
 I will cut out all participant chat, video, audio, etc. or ask for permission before sharing any recordings
 
 ---
-## This is an interactive workshop
+## Let's make this an interactive workshop
 
 Please feel free to use the chat, raise hands, discuss, etc.
 
