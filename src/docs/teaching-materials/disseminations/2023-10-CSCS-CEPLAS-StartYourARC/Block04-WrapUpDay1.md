@@ -35,7 +35,7 @@ Time | Topics
 
 # Preparation for next week
 
-- Please try to prepare your own AR
+- Please try to prepare your own ARC
 - Please install SWATE
 
 ---

@@ -55,25 +55,22 @@ Dominik Brilhaus, [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-s
 - Windows Notepad
 - MacOS TextEdit
 
-Recommended text editors with code highlighting:
-
-- Visual Studio Code <https://code.visualstudio.com/>
-- BBEdit <https://www.barebones.com/products/bbedit/>
-- Sublime <https://www.sublimetext.com/>
+Recommended text editor with code highlighting, git support, terminal, etc: <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
 
 ---
 
 
 ## Download the demo data
 
-```bash
-git clone "https://demo-user:5ehDYeHcqP2MqVXsNNPu@git.nfdi4plants.org/teaching/demo-arc_level1.git"
-```
+https://nfdi4plant.sharepoint.com/:f:/s/Teaching/EoOr6sG87u1Fsm9rY1lziKwBy1yy3tRe0EVNeg_wypF04A?e=Z7zqgP
+
+![bg right w:600](./custom/download-demo-data1.png)
+
+:bulb: This is the ARC we created last session.
 
 ---
 
 ## Where we left off last time
-
 
 👩‍💻 Initiated an ARC
 📂 Structured and ...  
@@ -81,7 +78,7 @@ git clone "https://demo-user:5ehDYeHcqP2MqVXsNNPu@git.nfdi4plants.org/teaching/d
 
 <br>
 
-**Today** we want to 
+**Today** we want to
 
 <img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate_c_40x40.png'/> ... **annotate the experimental data**
 
@@ -313,14 +310,8 @@ Example workflows with three *processes* each:
 
 # Annotation with ARCitect
 
---- 
+:construction: Is not yet available.
 
-## Process Information
-
-![w:700](./custom/ARCitect_Assay_Data.png)
-
-<!-- TODO Update ARCitect Annotation 
-Examples, Excelsheet... --> 
 
 ---
 
