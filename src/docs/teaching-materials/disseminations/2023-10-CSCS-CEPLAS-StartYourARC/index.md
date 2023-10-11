@@ -20,6 +20,9 @@ Here you can find the slides prepared for the October 2023 CSCS *Start Your ARC 
 - <a href="./Block01-WelcomeIntro.html" target="_blank">Block 1  &ndash; Welcome and intro</a>
 - <a href="./Block02-DataPLANT-ARC.html" target="_blank">Block 2  &ndash; DataPLANT and ARCs</a>
 - <a href="./Block03-ARCitect-HandsOn.html" target="_blank">Block 3  &ndash; ARC and ARCitect Hands-On</a>
+- <a href="./Block06-MetadataISA.html" target="_blank">Block 6  &ndash; Metadata and ISA</a>
+- <a href="./Block07-Swate-HandsOn.html" target="_blank">Block 7  &ndash; Swate Hands-On</a>
+- <a href="./Block08-ARC-ecosystem-demo.html" target="_blank">Block 8  &ndash; ARC ecosystem</a>
 
 :warning: Links are not permanent. Slides may move elsewhere or be updated. We do our best to keep the knowledge base up-to-date &ndash; so you will find all relevant information here.
 
