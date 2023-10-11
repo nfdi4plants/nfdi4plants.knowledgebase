@@ -64,10 +64,6 @@ section {
 -->
 
 
-
-
-
-
 ---
 
 # Resources

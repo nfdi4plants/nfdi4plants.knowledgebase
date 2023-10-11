@@ -18,7 +18,7 @@ author:
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
 
-# Block 6 &ndash; Swate hands-on
+# Block 7 &ndash; Swate hands-on
 
 <style scoped>section {background: none; background-color: white}</style>
 <!-- _paginate: false -->
@@ -29,7 +29,6 @@ Dominik Brilhaus, [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-s
 
 ---
 
-
 # Goals
 
 - Get familiar with ISA metadata and Swate
@@ -39,7 +38,7 @@ Dominik Brilhaus, [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-s
 
 ## Check Swate installation
 
-:ballot_box_with_check: Make sure [Swate is installed](./../SwateManual/Docs01-Installing-Swate.html):
+:ballot_box_with_check: Make sure [Swate is installed](./../../../SwateManual/Docs01-Installing-Swate.html):
 
 1. Open Excel (online or Desktop)
 2. Go to the `Insert` tab: Click the arrow next to "My Add-ins". There you should be able to select Swate.
@@ -216,7 +215,7 @@ At this point. Your table should look similar to this:
 
 Click the <kbd>Autoformat Table</kbd> quick access button without holding <kbd>Ctrl</kbd> to hide all reference columns.
 
---- 
+---
 
 ## Exercise :pencil:
 
@@ -232,7 +231,6 @@ Try to add suitable *building blocks* for other pieces of metadata from the plan
 3. Open the empty `assays/rnaseq/isa.assay.xlsx)` workbook in Excel.
 
 ---
-
 
 ## Use a template
 
@@ -273,7 +271,7 @@ If there are any Building Blocks which do not fit your experiment you can use th
 1. Add a new sheet to the `assays/rnaseq/isa.assay.xlsx)` workbook.
 2. Add the template "RNASeq Assay"
 
---- 
+---
 
 ## Exercise :pencil:
 
@@ -311,7 +309,6 @@ Example workflows with three *processes* each:
 # Annotation with ARCitect
 
 :construction: Is not yet available.
-
 
 ---
 
