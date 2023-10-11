@@ -15,7 +15,7 @@ author:
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
 
-# Block 5 &ndash; Metadata and ISA
+# Block 6 &ndash; Metadata and ISA
 
 <style scoped>section {background: none; background-color: white}</style>
 <!-- _paginate: false -->

@@ -31,3 +31,15 @@ for unit in *.md; do
 
 done
 ```
+
+
+## Run one slide deck in watch / server mode
+
+```bash
+unit=Block05-Intro-Day2.md
+marpTheme=../../style/marp-theme_dataplant-ceplas-ccby.css
+
+
+marp --html $unit --allow-local-files --theme-set $marpTheme --watch
+
+```

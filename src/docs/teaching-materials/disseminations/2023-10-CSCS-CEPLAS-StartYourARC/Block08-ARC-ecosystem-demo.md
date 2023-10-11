@@ -44,7 +44,7 @@ figcaption {
 
 "A FAIR RDM journey along a (mutable) data life cycle"
 
-October 5th, 2023
+October 11th, 2023
 
 Dominik Brilhaus, [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-science-and-data-management/)
 
