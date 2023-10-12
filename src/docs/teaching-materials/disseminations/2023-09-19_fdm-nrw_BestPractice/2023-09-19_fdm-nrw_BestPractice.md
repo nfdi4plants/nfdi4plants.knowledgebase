@@ -103,9 +103,9 @@ September 19th, 2023
 
 # Annotated Research Contexts (ARCs)
 
-![w:600](./../../../img/Weil2023-TPJ-PlantDataHub-Fig1.png)
+![w:600](./../../../img/tpj16474-fig-0003-m.jpg)
 
-<span class="reference"> **Weil, Schneider *et al.*** (2023) "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474 (*in production*) </span> -->
+<span class="reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span> -->
 
 ---
 
@@ -164,7 +164,7 @@ object-position: 50% 60%;
 - receive back results
 -->
 
-![w:800](./../../../img/Weil2023-TPJ-PlantDataHub-Fig3.png)
+![w:800](./../../../img/tpj16474-fig-0005-m.jpg)
 
 
 <!-- ![w:500](../../../img/DataPLANT_ARC_SinglePointofEntry.svg)
@@ -179,9 +179,9 @@ object-position: 50% 60%;
 2. Publication: DOI
 -->
 
-![h:400](./../../../img/Weil2023-TPJ-PlantDataHub-Fig6a.png)
+![h:400](./../../../img/tpj16474-fig-0008-m-modified.png)
 
-<span class="reference"> adapted from **Weil, Schneider *et al.*** (2023) "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474 (*in production*) </span>
+<span class="reference"> adapted from Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
 ---
 
@@ -192,9 +192,9 @@ object-position: 50% 60%;
 2. Publication: DOI
 -->
 
-![h:400](././../../../img/Weil2023-TPJ-PlantDataHub-Fig6.png)
+![h:400](././../../../img/tpj16474-fig-0008-m.jpg)
 
-<span class="reference"> **Weil, Schneider *et al.*** (2023) "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474 (*in production*) </span>
+<span class="reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
 ---
 
@@ -206,20 +206,20 @@ object-position: 50% 60%;
 
 # Reuse <img align="left" class="center" style="height:75px" src='./../../../img/Screenshot-RDMkit-07-reuse.png'/>
 
-![w:800](./../../../img/Weil2023-TPJ-PlantDataHub-Fig7.png)
+![w:800](./../../../img/tpj16474-fig-0001-m.jpg)
 
 <!-- 
 - via ARC https://arcregistry.nfdi4plants.org/arcsearch
 - via ISA https://arcregistry.nfdi4plants.org/isasearch 
 -->
 
-<span class="reference"> **Weil, Schneider *et al.*** (2023) "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474 (*in production*) </span>
+<span class="reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
 ---
 
 # **Mutable** data life cycle
 
-![w:700](./../../../img/Weil2023-TPJ-PlantDataHub-Fig4.png)
+![w:700](./../../../img/tpj16474-fig-0006-m.jpg)
 
 <!-- 
 
@@ -231,9 +231,9 @@ object-position: 50% 60%;
 
 # Plan (ARC scale) <img align="left" class="center" style="height:75px" src='./../../../img/Screenshot-RDMkit-01-plan.png'/>
 
-![w:800](./../../../img/Weil2023-TPJ-PlantDataHub-Fig5.png)
+![w:800](./../../../img/tpj16474-fig-0007-m.jpg)
 
-<span class="reference"> **Weil, Schneider *et al.*** (2023) "PLANTdataHUB: A collaborative platform for continuous FAIR data sharing in plant research",  The Plant Journal, https://doi.org/10.1111/tpj.16474 (*in production*) </span>
+<span class="reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
 <!--
  
