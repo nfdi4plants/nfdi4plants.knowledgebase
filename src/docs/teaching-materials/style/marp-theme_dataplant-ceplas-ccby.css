@@ -66,3 +66,14 @@ ul{
   margin-left: 0px;
   padding-left: 5;
 }
+
+.profile-picture {
+  position:relative;
+  overflow:hidden;
+  border-radius: 50%;
+  border-color: black;
+  height: 75px;
+  width: 75px;
+  margin: 10px;
+  display: block;  
+}

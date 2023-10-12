@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: ARCitect Installation - macOS
-date: 2023-07-27
+date: 2023-09-22
 author:
 - name: Dominik Brilhaus
   orcid: https://orcid.org/0000-0001-9021-3197
@@ -11,15 +11,25 @@ add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
+:bulb: Updated for ARCitect v0.0.8 and higher :bulb:
+1. You do not need to have ARC Commander installed
+
+:fire: Note, that the current .dmg releases are not stable on all macOS systems. 
 
 🚧 The ARCitect is currently being developed and not fully user-ready, yet. Installation for beta-testing requires an admin account.
 
-## Prerequisite: Install Node.js
+## Prerequisites
+
+### Install Node.js
 
 Please install the latest version of [Node.js](https://nodejs.org/en/download).
 
 1. Download the installer for your operating system (e.g. macOS Installer)
 2. Once downloaded, open the `node-x.x.x.pkg` from your downloads folder and follow the "Install Node.js" instructions.
+
+### Install Git
+
+Please [install](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_dependencies.html) and [configure](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/git_config.html) Git and Git LFS before using the ARCitect. 
 
 ## Install the ARCitect
 
@@ -30,9 +40,9 @@ Please install the latest version of [Node.js](https://nodejs.org/en/download).
 
 5. Open the folder in a terminal (right click -> services -> `New Terminal at Folder`)
 
-<img src="./../img/arcitect-terminal.png" style="width:70%;display: block; margin: 20px">
+<img src="./../img/arcitect-macos-terminal.png" style="width:70%;display: block; margin: 20px">
 
-6. In the terminal, check that node.js is installed by executing 
+1. In the terminal, check that node.js is installed by executing 
 
 ```bash
 node -v
@@ -57,13 +67,13 @@ npm install
 npm run debug
 ```
 
-<img src="./../img/arcitect-incomingConnections.png" style="width:40%;display: block; margin: 20px">
+<img src="./../img/arcitect-macos-incomingConnections.png" style="width:40%;display: block; margin: 20px">
 
 
 :bulb: A window will pop-up asking whether you want to accept incoming network connections. This needs to be allowed for communication with the [DataHUB](./../implementation/DataHub.html).
 
-2. You can leave the terminal running in the background. Once you close the terminal, the ARCitect quits.
+1. You can leave the terminal running in the background. Once you close the terminal, the ARCitect quits.
 
-3. Switch to the ARCitect app. 
+2. Switch to the ARCitect app.
 
-:bulb: On macOS you might have to select the app from your dock. 
+:bulb: You might have to select the app from your dock.

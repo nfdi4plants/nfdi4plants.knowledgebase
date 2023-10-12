@@ -54,6 +54,10 @@
 ### [Update](/docs/ArcCommanderManual/arc_update.html)
 ### [Export](/docs/ArcCommanderManual/arc_export.html)
 
+# [ARCitect Manual](/docs/ARCitect-Manual/index.html)
+## [Installation - Windows](/docs/ARCitect-Manual/arcitect_installation_windows.html)
+## [Installation - macOS](/docs/ARCitect-Manual/arcitect_installation_macos.html)
+
 # [Swate Manual](/docs/SwateManual/index.html)
 ## [Setup](/docs/SwateManual/Docs01-Installing-Swate.html)
 ### [Installing Swate](/docs/SwateManual/Docs01-Installing-Swate.html)
@@ -82,11 +86,17 @@
 ### [Generate a Personal Access Token (PAT)](/docs/guides/datahub-GeneratePAT.html)
 ## [Projects Panel](/docs/DataHUB-Manual/datahub-projectsPanel.html)
 ## [ARC Panel](/docs/DataHUB-Manual/datahub-ARCPanel.html)
+### [Forks](/docs/DataHUB-Manual/datahub-fork.html)
 ### [Working with files](/docs/DataHUB-Manual/datahub-files.html)
 ### [ARC Settings](/docs/DataHUB-Manual/datahub-ARCSettings.html)
 ### [ARC Wiki](/docs/DataHUB-Manual/datahub-ARCWiki.html)
 ## [Groups Panel](/docs/DataHUB-Manual/datahub-groupsPanel.html)
 ### [Create a new user group](/docs/DataHUB-Manual/datahub-CreateGroup.html)
+## [Data publications](/docs/DataHUB-Manual/datahub-data-publications.html)
+### [Passing Continuous Quality Control](/docs/DataHUB-Manual/datahub-data-publications-cqc.html)
+### [Submitting ARCs with ARChigator](/docs/DataHUB-Manual/datahub-data-publications-archigator.html)
+### [Track publication status](/docs/DataHUB-Manual/datahub-data-publications-status.html)
+### [Use your DOIs](/docs/DataHUB-Manual/datahub-data-publications-dois.html)
 
 
 # [Guides](/docs/guides/index.html)
@@ -94,6 +104,7 @@
 ## [Create your ARC](/docs/guides/index-CreateYourARC.html)
 ### [ARC Commander QuickStart](/docs/guides/arcCommander_QuickStart.html)
 ### [ARC Commander QuickStart (Experts)](/docs/guides/arcCommander_QuickStart_expert.html)
+### [ARCitect QuickStart](/docs/guides/arcitect_QuickStart.html)
 ## [Annotate Data in your ARC](/docs/guides/index-AnnotateDataInYourARC.html)
 ### [Annotation Principles](/docs/guides/isa_AnnotationPrinciples.html)
 ### [ISA File Types](/docs/guides/isa_FileTypes.html)
@@ -124,8 +135,13 @@
 ## [Videos](/docs/teaching-materials/videos.html)
 ### [Start Your ARC Series](/docs/teaching-materials/videos/StartYourARC.html)
 ## [Events](/docs/teaching-materials/slides/Events.html)
+### [CSCS CEPLAS Start Your ARC](/docs/teaching-materials/disseminations/2023-10-CSCS-CEPLAS-StartYourARC/index.html)
+### [MibiNet CEPLAS Start Your ARC](/docs/teaching-materials/disseminations/2023-09-MibiNet-CEPLAS-StartYourARC/index.html)
 ### [RPTU Summer School on RDM](/docs/teaching-materials/disseminations/2023-07-17_rptu-summerschool-on-rdm/index.html)
 ### [Data Steward Circle](/docs/teaching-materials/disseminations/DataSteward-Circle/index.html)
 ### [CEPLAS Start Your ARC Series](/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html)
 
 # [Frequently Asked Questions](/docs/faqs/faqs.html)
+
+<!-- # [Community Docs](/docs/community-docs/index.html) -->
+<!-- ## [CMML Quickstart](/docs/community-docs/CMML/cmml-quickstart.html) -->
