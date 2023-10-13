@@ -559,15 +559,15 @@ git add .gitattributes
 In this case, you can add the <code>-n</code> or <code>--nolfs</code> flag to your <code>arc get</code> command:</p>
 <nfdi-code class="language-bash">arc get --nolfs -r https://git.nfdi4plants.org/&lt;YourUser>/&lt;YourARC>
 </nfdi-code>
-<p>For example, have a look at the example ARC <a href="https://git.nfdi4plants.org/brilator/samplearc_rnaseq">https://git.nfdi4plants.org/brilator/samplearc_rnaseq</a>.
-In the DataHUB this ARC has a storage volume of ~11GB, a lot of which comes from the <a href="https://git.nfdi4plants.org/brilator/samplearc_rnaseq/-/tree/main/assays/Talinum_RNASeq_minimal/dataset">large RNASeq data files</a> flagged as &quot;LFS&quot;.</p>
+<p>For example, have a look at the example ARC <a href="https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum">https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum</a>.
+In the DataHUB this ARC has a storage volume of ~11GB, a lot of which comes from the <a href="https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum/-/tree/main/assays/Talinum_RNASeq_minimal/dataset">large RNASeq data files</a> flagged as &quot;LFS&quot;.</p>
 <p>You can download this ARC without the LFS objects via</p>
-<nfdi-code class="language-bash">arc get --nolfs -r https://git.nfdi4plants.org/brilator/samplearc_rnaseq
+<nfdi-code class="language-bash">arc get --nolfs -r https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum
 </nfdi-code>
 <p>⚠️ Even without LFS objects this ARC still takes ~1GB of space.</p>
 <nfdi-h2 id="keep-lfs-objects-from-syncing">Keep LFS objects from syncing</nfdi-h2>
 <p>To make sure that also during an upcoming <code>arc sync</code>, LFS objects are not downloaded, you need to change the LFS option on that particular machine for this ARC.
-Navigate to your ARC (<code>samplearc_rnaseq</code>) and execute the following two commands:</p>
+Navigate to your ARC (<code>Facultative-CAM-in-Talinum</code>) and execute the following two commands:</p>
 <nfdi-code class="language-bash">git config --local filter.lfs.smudge "git-lfs smudge --skip -- %f"
 git config --local filter.lfs.process "git-lfs filter-process --skip"
 </nfdi-code>
