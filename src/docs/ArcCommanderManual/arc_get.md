@@ -19,7 +19,7 @@ arc get -r https://github.com/nfdi4plants/ARC.git
 
 > :bulb: Adding a `-n` flag to the get command allows you to download the ARC without large data files, e.g.
 > ```bash 
-> arc get -n -r https://git.nfdi4plants.org/brilator/samplearc_rnaseq
+> arc get -n -r https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum
 > ```
 
 > :warning: In previous versions of the ARC Commander, the subcommand `get` allowed you to retrieve information from the ARC, e.g., `arc assay get` or `arc study person get`.  

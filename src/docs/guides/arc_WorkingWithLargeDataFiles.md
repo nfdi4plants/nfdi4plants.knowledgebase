@@ -77,13 +77,13 @@ In this case, you can add the `-n` or `--nolfs` flag to your `arc get` command:
 arc get --nolfs -r https://git.nfdi4plants.org/<YourUser>/<YourARC>
 ```
 
-For example, have a look at the example ARC https://git.nfdi4plants.org/brilator/samplearc_rnaseq. 
-In the DataHUB this ARC has a storage volume of ~11GB, a lot of which comes from the [large RNASeq data files](https://git.nfdi4plants.org/brilator/samplearc_rnaseq/-/tree/main/assays/Talinum_RNASeq_minimal/dataset) flagged as "LFS". 
+For example, have a look at the example ARC https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum. 
+In the DataHUB this ARC has a storage volume of ~11GB, a lot of which comes from the [large RNASeq data files](https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum/-/tree/main/assays/Talinum_RNASeq_minimal/dataset) flagged as "LFS". 
 
 You can download this ARC without the LFS objects via
 
 ```bash
-arc get --nolfs -r https://git.nfdi4plants.org/brilator/samplearc_rnaseq
+arc get --nolfs -r https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum
 ```
 
 :warning: Even without LFS objects this ARC still takes ~1GB of space.
@@ -91,7 +91,7 @@ arc get --nolfs -r https://git.nfdi4plants.org/brilator/samplearc_rnaseq
 ## Keep LFS objects from syncing
 
 To make sure that also during an upcoming `arc sync`, LFS objects are not downloaded, you need to change the LFS option on that particular machine for this ARC.
-Navigate to your ARC (`samplearc_rnaseq`) and execute the following two commands:
+Navigate to your ARC (`Facultative-CAM-in-Talinum`) and execute the following two commands:
 
 ```bash
 git config --local filter.lfs.smudge "git-lfs smudge --skip -- %f"
