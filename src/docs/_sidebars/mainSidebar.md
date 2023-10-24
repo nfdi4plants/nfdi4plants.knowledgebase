@@ -120,8 +120,7 @@
 ### [Keep files from syncing to the DataHUB](/docs/guides/arc_gitignore.html)
 ### [Working with large data files](/docs/guides/arc_WorkingWithLargeDataFiles.html)
 ### [Adding external data to the ARC](/docs/guides/arc_AddingExternalData.html)
-<!-- ### [ARCs in Service Platforms](/docs/guides/ARC-ServicePlatforms.html) -->
-
+### [ARCs in Enabling Platforms](/docs/guides/ARC-enablingPlatforms.html)
 
 ## [Contribute](/docs/guides/index-Contribute.html)
 ### [Swate Templates](/docs/guides/swate_template-contribution.html)
