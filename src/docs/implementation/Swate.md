@@ -86,7 +86,7 @@ After reading this article, you should
 <!-- Links to DataPLANT GitHub (gh-) -->
 
 [gh-DataPlant]: <https://github.com/nfdi4plants/> "GitHub DataPLANT"
-[gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
+[kb-ArcSpecs]: ./../implementation/ARC-specification.html "ARC specification"
 [gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/> "ArcCommander"
 [kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"

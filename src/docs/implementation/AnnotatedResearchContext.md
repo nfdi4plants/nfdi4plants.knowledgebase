@@ -47,7 +47,7 @@ We highly recommend to include a reproducible execution environment description 
 <!-- TODOs: add link to Docker -->
 Runs in an ARC represent all artefacts that derive from computations on assay and external data. Plots, tables, or similar results, specific to certain runs need to be saved in a subdirectory of the top-level "runs" directory.
 
-Detailed information can be found in the official [ARC Specification][gh-ArcSpecs].
+Detailed information can be found in the official [ARC Specification][kb-ArcSpecs].
 <!-- TODOs:
 - there's quite some redundancy between the previous two paragraphs
  -->
@@ -117,7 +117,7 @@ Name | Type | Tasks on metadata
 
 <!-- DataPLANT web links -->
 
-[gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
+[kb-ArcSpecs]: ./../implementation/ARC-specification.html "ARC specification"
 [kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
 

@@ -87,7 +87,7 @@ Give [DataPLAN][hp-DataPLAN] a try and share your feedback or feature request wi
 <!-- Links to DataPLANT GitHub (gh-) -->
 
 [gh-DataPlant]: <https://github.com/nfdi4plants/ARC-specification/> "GitHub DataPLANT"
-[gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
+[kb-ArcSpecs]: ./../implementation/ARC-specification.html "ARC specification"
 [kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 
 
