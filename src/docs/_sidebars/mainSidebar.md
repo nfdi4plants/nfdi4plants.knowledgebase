@@ -18,6 +18,7 @@
 # [DataPLANT Implementations](/docs/implementation/index.html)
 ## [Annotated Research Context](/docs/implementation/AnnotatedResearchContext.html)
 ### [User Journey](/docs/guides/ARCUserJourney.html)
+### [ARC specification](/docs/implementation/ARC-specification.html)
 ## [ARC Commander](/docs/implementation/ArcCommander.html)
 ### [QuickStart](/docs/guides/arcCommander_QuickStart.html)
 ### [QuickStart (Experts)](/docs/guides/arcCommander_QuickStart_expert.html)
