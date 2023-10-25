@@ -56,6 +56,7 @@
 # [ARCitect Manual](/docs/ARCitect-Manual/index.html)
 ## [Installation - Windows](/docs/ARCitect-Manual/arcitect_installation_windows.html)
 ## [Installation - macOS](/docs/ARCitect-Manual/arcitect_installation_macos.html)
+## [QuickStart](/docs/guides/arcitect_QuickStart.html)
 
 # [Swate Manual](/docs/SwateManual/index.html)
 ## [Setup](/docs/SwateManual/Docs01-Installing-Swate.html)
