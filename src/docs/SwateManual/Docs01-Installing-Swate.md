@@ -25,3 +25,5 @@ If you want to use Swate in your Excel desktop application, you can use the foll
   - [Installation](./swate_installation_manual.html): Recommended for **Windows** :bulb: 
   - [Installation](./swate_installation_manual_macos.html): Recommended for **MacOS** :bulb: 
 - [Organization-wide Desktop Installation](./swate_installation_organization.html) :bulb: Requires administrative access in your organization :bulb:
+
+:warning: Please note that we cannot guarantee compatibility of Swate with Excel versions that are *not* part of MS 365.
