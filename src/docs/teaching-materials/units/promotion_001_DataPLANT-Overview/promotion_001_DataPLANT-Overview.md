@@ -21,7 +21,7 @@ duration_minutes: 3
 
 <br>
 
-![w:500](./../../../img/_logos/DataPLANT/DataPLANT_logo_bg_transparent.svg) 
+![w:500](./../../../img/logos/DataPLANT/DataPLANT_logo_bg_transparent.svg) 
 
 <p style=
 "color:white; text-align:center;  font-variant: small-caps; font-size: 50px"
@@ -138,7 +138,7 @@ https://www.nfdi4plants.org/
 <br>
 <br>
 
-![](./../../../img/_qr-codes/QR_DataPLANT_Linktree.svg)
+![](./../../../img/qr-codes/QR_DataPLANT_Linktree.svg)
 </div>
 
 <!-- Source to slide(s) -->

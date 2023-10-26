@@ -202,7 +202,7 @@ section {
 
 some content
 
-![w:600](./../img/_logos/DataPLANT/DataPLANT_logo_bg_black.svg)
+![w:600](./../img/logos/DataPLANT/DataPLANT_logo_bg_black.svg)
 
 ---
 
@@ -217,7 +217,7 @@ img {
 }
 </style>
 
-![w:600](./../img/_logos/DataPLANT/DataPLANT_logo_bg_black.svg)
+![w:600](./../img/logos/DataPLANT/DataPLANT_logo_bg_black.svg)
 
 > Note, this will also center **all** images on the slide (including those in the footer)!
 
@@ -233,7 +233,7 @@ section p img {
 }
 </style>
 
-![w:600](./../img/_logos/DataPLANT/DataPLANT_logo_bg_black.svg)
+![w:600](./../img/logos/DataPLANT/DataPLANT_logo_bg_black.svg)
 
 
 ---
@@ -255,7 +255,7 @@ object-position: 100% 100%;
 *E.g. a figure coming from what used to be a slide with header/footer*
 
 
-![](./../img/_logos/DataPLANT/DataPLANT_logo_bg_black.svg)
+![](./../img/logos/DataPLANT/DataPLANT_logo_bg_black.svg)
 
 
 ---
@@ -297,7 +297,7 @@ figcaption {
 </style>
 
 <figure>
-  <img src="./../img/_logos/DataPLANT/DataPLANT_logo_bg_black.svg">
+  <img src="./../img/logos/DataPLANT/DataPLANT_logo_bg_black.svg">
   <figcaption>This is the caption This is the caption This is the caption This is the caption This is the caption </figcaption>
 </figure>
 
@@ -322,7 +322,7 @@ figcaption {
 </style>
 
 <figure>
-  <img src="./../img/_logos/DataPLANT/DataPLANT_logo_bg_black.svg">
+  <img src="./../img/logos/DataPLANT/DataPLANT_logo_bg_black.svg">
   <figcaption>This is the caption This is the caption This is the caption This is the caption This is the caption </figcaption>
 </figure>
 
@@ -367,7 +367,7 @@ figcaption {
 <div class="columns-right">
 
 <figure>
-  <img src="./../img/_logos/DataPLANT/DataPLANT_logo_bg_black.svg">
+  <img src="./../img/logos/DataPLANT/DataPLANT_logo_bg_black.svg">
   <figcaption>This is the caption This is the caption This is the caption This is the caption This is the caption </figcaption>
 </figure>
 

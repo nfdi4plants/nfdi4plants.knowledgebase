@@ -16,7 +16,7 @@ title: tutorial_arc_init-ARC_initialization
 
 # ARC initialization
 
-![bg right w:500](./../../img/_logos/ARCCommander/ARCCommander_Logo1.svg)
+![bg right w:500](./../../img/logos/ARCCommander/ARCCommander_Logo1.svg)
 
 # ARC initialization
 

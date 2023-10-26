@@ -15,7 +15,7 @@ date: 2023-03-23
 
 <br>
 
-![w:500](./../../img/_logos/DataPLANT/DataPLANT_logo_bg_transparent.svg) 
+![w:500](./../../img/logos/DataPLANT/DataPLANT_logo_bg_transparent.svg) 
 
 <p style=
 "color:white; text-align:center;  font-variant: small-caps; font-size: 50px"
