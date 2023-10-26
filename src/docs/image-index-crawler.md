@@ -10,14 +10,19 @@ author:
 
 Note, this is just a quick and dirty crawler to list all images and add them to the $indexfile
 
-# Crawl images and add to $indexfile
+# Define output
 
 ```bash
 cd src/docs/
 indexfile=image-index.md
+sep=" | "
 ```
 
+# Crawl images and add to $indexfile
+
 ```bash
+
+touch $indexfile
 
 find img -type f > .tmp_all-files
 grep -v '.pptx' .tmp_all-files > .tmp_all-images-only
@@ -28,14 +33,12 @@ do
     if [ $(grep -c "$img" $indexfile) -eq 0 ]
         then
     
-        echo '<a href="'$img'" target="_blank"><img src="'$img'" width="50px" alt="'$img'"/></a> | <a href="'$img'" target="_blank">https://nfdi4plants.org/nfdi4plants.knowledgebase'$img'</a> |  |  ' >> $indexfile
+        echo '<a href="'$img'" target="_blank"><img src="'$img'" width="50px" alt="'$img'"/></a>'$sep'<a href="'$img'" target="_blank">https://nfdi4plants.org/nfdi4plants.knowledgebase'$img'</a>'$sep''$sep'' >> $indexfile
    fi
 done < .tmp_all-images-relative
 
 rm .tmp_all-*
 
-
 grep -v ".DS_Store" $indexfile > tmpfile && mv tmpfile $indexfile
-
 
 ```
