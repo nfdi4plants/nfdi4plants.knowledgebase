@@ -33,7 +33,7 @@ do
     if [ $(grep -c "$img" $indexfile) -eq 0 ]
         then
     
-        echo '<a href="'$img'" target="_blank"><img src="'$img'" width="150px" alt="'$img'"/></a>'$sep'<a href="'$img'" target="_blank">https://nfdi4plants.org/nfdi4plants.knowledgebase'$img'</a>'$sep''$sep'' >> $indexfile
+        echo '<a href="'$img'" target="_blank"><img src="'$img'" width="150px" alt="'$img'"/></a>'$sep'<a href="'$img'" target="_blank">https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/'$img'</a>'$sep''$sep'' >> $indexfile
    fi
 done < .tmp_all-images-relative
 
