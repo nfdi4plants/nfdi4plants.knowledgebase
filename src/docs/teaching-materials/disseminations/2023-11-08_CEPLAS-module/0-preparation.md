@@ -34,11 +34,12 @@ ul{
 }
 </style>
 
-:bulb: Please prepare the following before the workshop:
+:bulb: Please prepare the following before the class:
 
 - :white_check_mark: Register at DataPLANT
 - :white_check_mark: Find your command line
 - :white_check_mark: Install and configure Git on your computer
+- :white_check_mark: Install ARC Commander on your computer
 - :white_check_mark: Install ARCitect on your computer
 - :white_check_mark: Install Swate on your computer
 - :white_check_mark: (optional) Install VS Code
@@ -118,6 +119,20 @@ git config --global user.email "Your Email"
 
 ---
 
+# ARC Commander Installation
+
+Please install the latest version of the ARC Commander and dependencies for your operating system according to the <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index.html" target="_blank">manual's setup instructions</a>.
+
+Check if the ARC Commander is functional by displaying the ARC Commander version and help menu:
+
+```bash
+arc --version
+```
+
+![bg right:30% width:300](./../../../img/arc-manual-setup.png)
+
+---
+
 # ARCitect Installation
 
 Please follow the instructions to install the latest version of ARCitect.
@@ -153,12 +168,3 @@ GitHub: <a href="https://github.com/nfdi4plants" target="_blank">https://github.
 
 ---
 
----
-
-# Contributors
-
-Slides presented here include contributions by
-
-- name: Dominik Brilhaus
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197

@@ -1,3 +1,7 @@
+---
+title: README pad
+---
+
 # CEPLAS - Good Data Management Practices
 
 # Key Dates
