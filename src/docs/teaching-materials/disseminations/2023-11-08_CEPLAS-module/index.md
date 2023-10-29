@@ -7,7 +7,7 @@ add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-Here you can find the slides prepared for the November 2023 CEPLAS Module *Good Data Management Practices*.
+Here you can find the slides prepared for the November 2023 CEPLAS Module &ndash; *Good Data Management Practices*.
 
 ## Slide decks
 

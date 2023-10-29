@@ -15,7 +15,7 @@ author:
 <!--  _color: white; -->
 <!-- _paginate: false -->
 
-<!-- <style scoped>section {background: none; background-color: white;}</style> -->
+<style scoped>section {background: none; background-color: white;}</style>
 
 **before** November 8th, 2023
 
