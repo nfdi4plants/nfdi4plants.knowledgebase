@@ -69,66 +69,18 @@ DataHUB: https://git.nfdi4plants.org/
 - Agile, communicative, collaborative, positive
 - Technical *ad-hoc* support by DataPLANT
 
-![bg right:40% w:450px](./../../../img/ARCClub.drawio.svg)
-
-## Rough Schedule
-
-<style scoped>
-.columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 50px;
-    margin-left: 10px;
-}
-table {
-  height: 350px;
-  font-size: 20px;
-}
-</style>
-
-<div class="columns">
-<div>
-
-### Day 1
-
-Time | Content
---- | ---
-Morning | - Tech-check (Installation) <br> - Intro ARC, ARC Commander & DataHUB <br> - hands-on with dummy data
-Lunch | *tbd* :hamburger:
-Afternoon | - Discuss / assign projects <br> - Start creating ARCs
-Evening | *tbd* :tropical_drink:
-
-</div>
-
-<div>
-
-### Day 2
-
-Time | Content
---- | ---
-Morning | - Present project status <br> - Intro Swate <br> - hands-on with dummy data
-Lunch | *tbd* :pizza: 
-Afternoon | - Annotate experimental data <br> - Start creating ARCs
-Evening | *tbd* :beers:
-
-</div>
-</div>
-
 ## Participants
 
 This event benefits from a good mix of participants from you lab.
 
-- wet
+- wet lab biologists
+- coders
 - data handlers, data users
 - long-term lab-associates
 
 Group size: 5-10
 
-## Data
-
-## Preparation
-
-### Participants
+## Preparation by participants
 
 Please prepare the following before the workshop
 
@@ -136,21 +88,20 @@ Please prepare the following before the workshop
 - Bring datasets to be ARCified
 - Sign up for a DataHUB user account https://register.nfdi4plants.org/
   - Please add your `Project/consortium` (e.g. CEPLAS, SFB, TRR) and choose the role `Guest`
-
-- Find the **command-line interface (CLI)** on your system.
+- Find the command-line on your machine
   - On Windows: Enter `powershell` or `cmd` into the explorer path
   - On MacOS: Search `terminal` via spotlight (&#8984; + &#9251;) or navigate to `Applications` -> `Utilities` -> `Terminal`
   - No worries, we will not be using this a lot during the workshop. It's more for setup and trouble-shooting.
 - Install <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.github.com/" target="_blank">Git LFS</a>
-  - :bulb: Git LFS may already be installed with your Git installation (at least on Windows)
-  - :bulb: For macOS we recommend to install via homebrew as described on the site above
+  - Git LFS may already be installed with your Git installation (at least on Windows)
+  - For macOS we recommend to install via homebrew as described on the site above
 - Install <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index-setup.html" target="_blank">ARC Commander</a>
 - Install <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html" target="_blank">ARCitect</a>
 - Install <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html" target="_blank">Swate</a>
 
 :bulb: Not all installations are perfectly straight-forward. We will start the first day with a tech-check to make sure your machine is up and running.
 
-### Co-organizer (from lab)
+## Preparation by co-organizer (from lab)
 
 - Room with good internet connection
   - Wifi via Eduroam
@@ -158,7 +109,7 @@ Please prepare the following before the workshop
 - LAN cables
   - if good wifi is not available
 - Multi-outlet power strip
-- (optional) Coffee, Tea, Drinks, fruits and snacks
 - Discuss putative datasets or projects to be ARCified (with the PI or the participants)
 - Create a [DataHUB user group](./../../../DataHUB-Manual/datahub-CreateGroup.html)
   - (optional) invite members from your lab
+- (optional) coffee, tea, drinks, fruits and snacks, options for lunch or dinner
