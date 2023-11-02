@@ -6,7 +6,7 @@ author:
 - name: Dominik Brilhaus
   orcid: https://orcid.org/0000-0001-9021-3197
   github: brilator
-add toc: false
+add toc: true
 add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
@@ -16,7 +16,7 @@ add sidebar: _sidebars/mainSidebar.md
 - The ARCitect is currently being developed and not fully user-ready, yet.
 - Installation for beta-testing requires an admin account.
 
-## Install Git <!-- omit in toc -->
+## Install Git
 
 Please install <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.github.com/" target="_blank">Git LFS</a> before using the ARCitect.
 
@@ -24,16 +24,15 @@ Please install <a href="https://git-scm.com/downloads" target="_blank">Git</a> a
 
 ## Install ARCitect via installer
 
-1. Head to the ARCitect's GitHub [release page](https://github.com/nfdi4plants/ARCitect/releases/latest).
+1. Head to the ARCitect's GitHub <a href="https://github.com/nfdi4plants/ARCitect/releases/latest" target="_blank">release page</a>.
 2. Download the macOS installer ARCitect-x.x.x.dmg
 3. Double-click the installer ARCitect-x.x.x.dmg and move the app to your Applications folder.
-
 
 ## Starting the ARCitect for the first time
 
 When starting the ARCitect for the first time, you are warned about an unidentified developer
 
-<img src="./../img/arcitect-macos-popup-dev.png" style="width:30%;display: block; margin: 20px">
+<img src="./../img/arcitect-macos-popup-dev.png" style="width:25%;display: block; margin: 20px">
 
 Please navigate to the Privacy & Security panel in your System Settings to "Open Anyway".
 
@@ -43,7 +42,7 @@ Please navigate to the Privacy & Security panel in your System Settings to "Open
 
 Every time you start the ARCitect, you are asked to allow
 
-<img src="./../img/arcitect-macos-popup-network.png" style="width:30%;display: block; margin: 20px">
+<img src="./../img/arcitect-macos-popup-network.png" style="width:25%;display: block; margin: 20px">
 
 This enables communication with the DataHUB.
 
@@ -92,7 +91,7 @@ npm install
 
 :bulb: This may take some seconds to minutes depending on your internet connection.
 
-## Start the ARCitect <!-- omit in toc -->
+### Start the ARCitect
 
 1. In the terminal, execute the following command to **start** the ARCitect
 
