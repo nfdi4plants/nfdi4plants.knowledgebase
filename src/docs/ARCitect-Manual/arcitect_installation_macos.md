@@ -11,11 +11,6 @@ add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-:bulb: Please note
-
-- The ARCitect is currently being developed and not fully user-ready, yet.
-- Installation for beta-testing requires an admin account.
-
 ## Install Git
 
 Please install <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.github.com/" target="_blank">Git LFS</a> before using the ARCitect.
