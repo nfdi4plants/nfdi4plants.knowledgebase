@@ -517,24 +517,39 @@
         ARCitect Installation - macOS
       </h1>
       <i class="help">
-        last updated at 2023-09-22
+        last updated at 2023-11-02
       </i>
-      <p>💡 Updated for ARCitect v0.0.8 and higher 💡</p>
+      <nfdi-toc></nfdi-toc>
+      <nfdi-h2 id="install-git">Install Git</nfdi-h2>
+<p>Please install <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.github.com/" target="_blank">Git LFS</a> before using the ARCitect.</p>
+<p>💡 For macOS we recommend to install via homebrew as described on the site above.</p>
+<nfdi-h2 id="install-arcitect-via-installer">Install ARCitect via installer</nfdi-h2>
 <ol>
-<li>You do not need to have ARC Commander installed</li>
+<li>Head to the ARCitect's GitHub <a href="https://github.com/nfdi4plants/ARCitect/releases/latest" target="_blank">release page</a>.</li>
+<li>Download the macOS installer ARCitect-x.x.x.dmg</li>
+<li>Double-click the installer ARCitect-x.x.x.dmg and move the app to your Applications folder.</li>
 </ol>
-<p>🔥 Note, that the current .dmg releases are not stable on all macOS systems.</p>
-<p>🚧 The ARCitect is currently being developed and not fully user-ready, yet. Installation for beta-testing requires an admin account.</p>
-<nfdi-h2 id="prerequisites">Prerequisites</nfdi-h2>
+<nfdi-h2 id="starting-the-arcitect-for-the-first-time">Starting the ARCitect for the first time</nfdi-h2>
+<p>When starting the ARCitect for the first time, you are warned about an unidentified developer</p>
+<img src="./../img/arcitect-macos-popup-dev.png" style="width:25%;display: block; margin: 20px">
+<p>Please navigate to the Privacy &amp; Security panel in your System Settings to &quot;Open Anyway&quot;.</p>
+<img src="./../img/arcitect-macos-security.png" style="width:50%;display: block; margin: 20px">
+<nfdi-h2 id="incoming-network-connections">Incoming network connections</nfdi-h2>
+<p>Every time you start the ARCitect, you are asked to allow</p>
+<img src="./../img/arcitect-macos-popup-network.png" style="width:25%;display: block; margin: 20px">
+<p>This enables communication with the DataHUB.</p>
+<nfdi-h2 id="alternative-installation-from-source">Alternative installation from source</nfdi-h2>
+<p>💡 If the installation via installer does not work or the app seems buggy, please</p>
+<details>
+<summary>install ARCitect from source</summary>
+<p>Installation from source requires Node.js</p>
 <nfdi-h3 id="install-node.js">Install Node.js</nfdi-h3>
 <p>Please install the latest version of <a href="https://nodejs.org/en/download">Node.js</a>.</p>
 <ol>
 <li>Download the installer for your operating system (e.g. macOS Installer)</li>
 <li>Once downloaded, open the <code>node-x.x.x.pkg</code> from your downloads folder and follow the &quot;Install Node.js&quot; instructions.</li>
 </ol>
-<nfdi-h3 id="install-git">Install Git</nfdi-h3>
-<p>Please <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_dependencies.html">install</a> and <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/git_config.html">configure</a> Git and Git LFS before using the ARCitect.</p>
-<nfdi-h2 id="install-the-arcitect">Install the ARCitect</nfdi-h2>
+<nfdi-h3 id="install-arcitect">Install ARCitect</nfdi-h3>
 <ol>
 <li><p>Head to the ARCitect's GitHub <a href="https://github.com/nfdi4plants/ARCitect/releases/latest">release page</a>.</p>
 </li>
@@ -563,11 +578,14 @@
 <nfdi-code class="language-bash">npm install
 </nfdi-code>
 <p>💡 This may take some seconds to minutes depending on your internet connection.</p>
-<nfdi-h2 id="start-the-arcitect">Start the ARCitect</nfdi-h2>
+<nfdi-h3 id="start-the-arcitect">Start the ARCitect</nfdi-h3>
 <ol>
 <li>In the terminal, execute the following command to <strong>start</strong> the ARCitect</li>
 </ol>
 <nfdi-code class="language-bash">npm run debug
+</nfdi-code>
+<p>or</p>
+<nfdi-code class="language-bash">npm start
 </nfdi-code>
 <img src="./../img/arcitect-macos-incomingConnections.png" style="width:40%;display: block; margin: 20px">
 <p>💡 A window will pop-up asking whether you want to accept incoming network connections. This needs to be allowed for communication with the <a href="./../implementation/DataHub.html">DataHUB</a>.</p>
@@ -578,6 +596,7 @@
 </li>
 </ol>
 <p>💡 You might have to select the app from your dock.</p>
+</details>
 
       <div style="display: flex; align-items: flex-end; justify-content: space-between; margin: 1rem 0 1rem 0;">
         <div>
