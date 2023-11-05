@@ -2,6 +2,13 @@
 title: README 2023-11-08_CEPLAS-module
 ---
 
+## Add sections from last year
+
+- git / version control
+- FAIR project exercises
+- 
+
+
 ## See website locally
 
 1. Execute `npm run fornax`
