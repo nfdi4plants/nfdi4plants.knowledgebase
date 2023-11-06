@@ -3,7 +3,7 @@ marp: true
 theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-title: ARCitect and hands-on
+title: ARCitect hands-on
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -16,7 +16,7 @@ author:
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
 
-# Block 3 &ndash; ARCitect and hands-on
+# ARCitect hands-on
 
 <style scoped>section {background: none; background-color: white}</style>
 <!-- _paginate: false -->
@@ -31,11 +31,11 @@ Please install the latest version of the ARCitect: https://github.com/nfdi4plant
 
 ---
 
-# Download the demo data
+## Download the demo data <!-- fit -->
 
-```bash
-git clone "https://demo-user:1_eznikmzxzARAbUxxnF@git.nfdi4plants.org/teaching/demo-arc_level0.git"
-```
+https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZlS_Kzf7psk-5w-xg?e=u0sADd
+
+![bg right w:600](./../custom/download-demo-data.png)
 
 ---
 

@@ -3,21 +3,14 @@ marp: true
 theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-title: ARCitect Hands-on
+title: Q&A and Wrap-up Day1
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
-- name: Cristina Martins Rodrigues
-  github: https://github.com/CMR248
-  orcid: https://orcid.org/0000-0002-4849-1537
-- name: Sabrina Zander
-  github: https://github.com/SabrinaZander
-  orcid: https://orcid.org/0009-0000-4569-6126
 ---
 
-# Q&A and Wrap-up
-
+# Q&A and Wrap-up Day1
 
 ---
 
@@ -33,7 +26,7 @@ Time | Topics
 
 ---
 
-# Preparation for next week
+# Preparation for next day
 
 - Please try to prepare your own ARC
 - Please install SWATE

@@ -1,13 +1,13 @@
 ---
-title: README 2023-11-08_CEPLAS-module
+title: "README 2023-11-08_CEPLAS-module"
+layout: none
+date: 2023-11-06
 ---
 
 ## Add sections from last year
 
 - git / version control
 - FAIR project exercises
-
-
 
 ## See website locally
 
@@ -20,8 +20,6 @@ title: README 2023-11-08_CEPLAS-module
 ```bash
 cd src/docs/teaching-materials/disseminations/2023-11-08_CEPLAS-module
 ```
-
-
 
 ```bash
 
@@ -40,6 +38,7 @@ done
 ## automate hidden index
 
 ```bash
+
 echo "---\nlayout: docs\ntitle: CEPLAS Module 2023\ndate: 2023-11-08\nadd sidebar: _sidebars/mainSidebar.md\n---\n\n## Slide decks\n" > hidden-index.md
 
 for unit in *.html; do
