@@ -8,16 +8,18 @@ add sidebar: _sidebars/mainSidebar.md
 ## Slide decks
 
 - <a href=./00-Preparation.html target=_blank>00-Preparation</a>
-- <a href=./01-WelcomeIntro.html target=_blank>01-WelcomeIntro</a>
-- <a href=./01.5-exercise_FAIRProject.html target=_blank>01.5-exercise_FAIRProject</a>
-- <a href=./02-RDMFundamentals.html target=_blank>02-RDMFundamentals</a>
-- <a href=./03-DataPLANT-ARC.html target=_blank>03-DataPLANT-ARC</a>
-- <a href=./04-ARCCommander-HandsOn.html target=_blank>04-ARCCommander-HandsOn</a>
-- <a href=./05-ARCitect-HandsOn.html target=_blank>05-ARCitect-HandsOn</a>
-- <a href=./05.5-exercise_FAIRProject_ARC.html target=_blank>05.5-exercise_FAIRProject_ARC</a>
-- <a href=./06-WrapUpDay1.html target=_blank>06-WrapUpDay1</a>
-- <a href=./12-MetadataISA.html target=_blank>12-MetadataISA</a>
-- <a href=./13-Swate-HandsOn.html target=_blank>13-Swate-HandsOn</a>
-- <a href=./13.5-exercise_FAIRProject_SWATE.html target=_blank>13.5-exercise_FAIRProject_SWATE</a>
-- <a href=./16-exercise_FAIRProject_final.html target=_blank>16-exercise_FAIRProject_final</a>
-- <a href=./20-ARC-ecosystem-demo.html target=_blank>20-ARC-ecosystem-demo</a>
+- <a href=./10-WelcomeIntro.html target=_blank>10-WelcomeIntro</a>
+- <a href=./100-ARC-ecosystem-demo.html target=_blank>100-ARC-ecosystem-demo</a>
+- <a href=./20-DataPLANT-ARC.html target=_blank>20-DataPLANT-ARC</a>
+- <a href=./30-ARCCommander-HandsOn.html target=_blank>30-ARCCommander-HandsOn</a>
+- <a href=./35-git-concept-detail.html target=_blank>35-git-concept-detail</a>
+- <a href=./40-ARCitect-HandsOn.html target=_blank>40-ARCitect-HandsOn</a>
+- <a href=./45-exercise_FAIRProject_ARC.html target=_blank>45-exercise_FAIRProject_ARC</a>
+- <a href=./49-WrapUpDay1.html target=_blank>49-WrapUpDay1</a>
+- <a href=./50-WelcomeIntroDay2.html target=_blank>50-WelcomeIntroDay2</a>
+- <a href=./60-MetadataISA.html target=_blank>60-MetadataISA</a>
+- <a href=./70-Swate-HandsOn.html target=_blank>70-Swate-HandsOn</a>
+- <a href=./75-exercise_FAIRProject_SWATE.html target=_blank>75-exercise_FAIRProject_SWATE</a>
+- <a href=./80-exercise_FAIRProject_final.html target=_blank>80-exercise_FAIRProject_final</a>
+- <a href=./85-exercise_FAIRProject.html target=_blank>85-exercise_FAIRProject</a>
+- <a href=./90-RDMFundamentals.html target=_blank>90-RDMFundamentals</a>
