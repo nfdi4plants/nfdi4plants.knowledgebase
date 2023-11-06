@@ -33,7 +33,7 @@ Time | Topics
 
 ---
 
-# ✍️ Structure your project as an ARC ✍️
+# :pencil: Structure your project as an ARC :pencil:
 
 
 
