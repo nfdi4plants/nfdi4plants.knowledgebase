@@ -56,8 +56,8 @@ Time | Topics
 10:45 - 11:00 | *Short break*
 11:00 - 12:00 | Intro to DataPLANT and ARC
 12:00 - 13:00 | *Lunch*
-13:00 - 15:00 | ARC Demo and Hands-on
-15:00 - 15:30 | Wrap-up
+13:00 - 15:30 | ARC Demo and Hands-on
+15:30 - 16:00 | Wrap-up
 
 </div>
 
@@ -72,7 +72,8 @@ Time | Topics
 10:45 - 12:00 | ISA and Metadata
 12:00 - 13:00 | *Lunch*
 13:00 - 15:00 | Hands-on Swate
-15:00 - 15:30 | Wrap-up
+15:00 - 15:30 | ARC ecosystem: Additional features
+15:30 - 16:00 | Wrap-up
 
 </div>
 </div>
@@ -159,7 +160,7 @@ Time | Topics
 
 https://doi.org/10.1038/sdata.2016.18
 
-![bg right w:600](./../../../img/wilkinson2016-FAIR.png)
+![bg right:45% w:600](./../../../img/wilkinson2016-FAIR.png)
 
 ---
 

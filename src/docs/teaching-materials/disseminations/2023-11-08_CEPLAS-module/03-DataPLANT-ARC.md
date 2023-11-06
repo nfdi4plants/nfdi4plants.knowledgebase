@@ -16,7 +16,7 @@ author:
   orcid: https://orcid.org/0000-0002-8493-1077
 ---
 
-# Block 2 &ndash; Intro to DataPLANT and ARC
+# Intro to DataPLANT and ARC
 
 ---
 
