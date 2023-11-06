@@ -21,6 +21,8 @@ title: README 2023-11-08_CEPLAS-module
 cd src/docs/teaching-materials/disseminations/2023-11-08_CEPLAS-module
 ```
 
+
+
 ```bash
 
 marpTheme=../../style/marp-theme_dataplant-ceplas-ccby.css
@@ -34,14 +36,15 @@ for unit in *.md; do
 
 done
 ```
-<!-- 
-## Run one slide deck in watch / server mode
+
+## automate hidden index
 
 ```bash
-unit=Block05-Intro-Day2.md
-marpTheme=../../style/marp-theme_dataplant-ceplas-ccby.css
+echo "---\nlayout: docs\ntitle: CEPLAS Module 2023\ndate: 2023-11-08\nadd sidebar: _sidebars/mainSidebar.md\n---\n\n## Slide decks\n" > hidden-index.md
 
+for unit in *.html; do
+    
+    echo "- <a href="./$unit" target="_blank">${unit%.*}</a>" >> hidden-index.md
 
-marp --html $unit --allow-local-files --theme-set $marpTheme --watch
-
-``` -->
+done
+```
