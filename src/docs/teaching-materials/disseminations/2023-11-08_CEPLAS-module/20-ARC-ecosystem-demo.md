@@ -1,7 +1,7 @@
 ---
 marp: true
 paginate: true
-theme: marp-theme_dataplant-ceplas-mibinet-ccby
+theme: marp-theme_dataplant-ceplas-ccby
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 title: ARC Ecosystem Demo
 date: 2023-09-20
