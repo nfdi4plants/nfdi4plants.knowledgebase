@@ -6,7 +6,7 @@ title: README 2023-11-08_CEPLAS-module
 
 - git / version control
 - FAIR project exercises
-- 
+
 
 
 ## See website locally
