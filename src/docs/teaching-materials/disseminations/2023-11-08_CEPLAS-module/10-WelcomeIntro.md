@@ -35,6 +35,12 @@ Pad: https://pad.hhu.de/oI-NjeUtSHSMzk5huWRkJw
  
 ---
 
+# Materials
+
+Slides will be shared via DataPLANT knowledge base and the Sciebo folder
+
+---
+
 # Tentative agenda
 
 <style scoped>

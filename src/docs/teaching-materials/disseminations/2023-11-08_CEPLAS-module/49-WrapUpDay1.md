@@ -33,16 +33,6 @@ Time | Topics
 
 ---
 
-# :pencil: Structure your project as an ARC :pencil:
-
-
-
-1. Follow the slides to build an ARC for your project
-1. Go back to the shared folder prepared before class
-1. Add data from your project to your ARC
-
----
-
 # Five-Finger-Feedback
 
 <style scoped>

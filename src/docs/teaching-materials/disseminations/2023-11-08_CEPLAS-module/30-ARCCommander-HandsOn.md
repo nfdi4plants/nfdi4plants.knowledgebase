@@ -180,7 +180,7 @@ arc assay add -s talinum_drought -a metabolomics
 # Upload your local ARC to the DataHUB
 
 ```bash
-arc sync -r https://git.nfdi4plants.org/<username>/arc-demo
+arc sync -f -r https://git.nfdi4plants.org/<username>/arc-demo
 ```
 
 ---
