@@ -3,7 +3,7 @@ marp: true
 theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-title: ARCitect Hands-on
+title: ARCitect hands-on
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -16,28 +16,14 @@ author:
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
 
-# Block 3 &ndash; ARCitect Hands-on
+# ARCitect hands-on
 
 <style scoped>section {background: none; background-color: white}</style>
 <!-- _paginate: false -->
 
-October 5th, 2023
-
-Dominik Brilhaus, [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-science-and-data-management/)
-
 ---
 
-# Check-in
-
----
-
-## Registration
-
-Did everyone <a href="https://register.nfdi4plants.org" target="_blank">sign-up</a> at the DataHUB?
-
----
-
-## ARCitect installation
+# ARCitect installation
 
 Please install the latest version of the ARCitect: https://github.com/nfdi4plants/ARCitect
 
@@ -47,36 +33,25 @@ Please install the latest version of the ARCitect: https://github.com/nfdi4plant
 
 ## Download the demo data <!-- fit -->
 
-
 https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZlS_Kzf7psk-5w-xg?e=u0sADd
 
 ![bg right w:600](./../../../img/demo-data-download.png)
 
 ---
 
-## You just received your data
+# Sort Demo data in an ARC
 
 ![bg right width:400](./../../../img/demo_data_screenshot.png)
 
----
-
-## Goal
-
-- Structure,
-- (Annotate, and)
-- Share your experimental data.
-
-<br>
-
-:bulb: We'll talk about data annotation later
-
-![bg right width:600](./../../../img/ARC_fillWithData_experimental.png)
+![width:900](./../../../img/ARC_fillWithData_experimental.png)
 
 ---
 
-# Open the ARCitect
+# Open ARCitect
 
 
+1. Login to DataHUB (1)
+   ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
 
 ---
 
@@ -91,60 +66,41 @@ https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZl
 
 # Your ARC's name
 
-<style scoped>section {font-size: 23px;}</style>
+<style scoped>section {font-size: 25px;}</style>
 
-💡 By default, your ARC's name will be used:
-
-  1. for the ARC folder on your machine
-  2. to create your ARC in the DataHUB at `https://git.nfdi4plants.org/<YourUserName>/<YourARC>` (see next steps)
-  3. as the identifier for your investigation
+💡 By default, your ARC's name will be used
+   - for the ARC folder on your machine
+   - to create your ARC in the DataHUB at `https://git.nfdi4plants.org/<YourUserName>/<YourARC>` (see next steps)
+   - as the identifier for your investigation
 
 💡 Make sure that no ARC exists at  `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`. Otherwise you will sync to that ARC.
 
-💡 Avoid spaces in your ARC's name
+💡Don't use spaces in ARC's name
 
-![bg right:30% w:500](./../../../img/ARCitect_TalinumPhotosynthesis.png)
-
----
-
-# Add a description and title to the investigation
-
-1. Click on the ARC's name
-2. Add a title (e.g. "Talinum Photosynsthesis")
-3. Add a description
-4. Click "Update" to save your changes
-
-![bg right w:700](./../../../img/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
+![bg right:30% w:500](././../../../img/ARCitect_TalinumPhotosynthesis.png)
 
 ---
 
-# Add contributors
+# Add a description to your investigation
 
-In the section "People" click "ADD PERSON" to add at least one contributor
-
-<br>
-
-![w:1000](./../../../img/ARCitect_TalinumPhotosynthesis_addPerson.png)
+![w:800](./../../../img/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
 
 ---
 
-# Add contributor details
+# Add (at least one) contributor
+
 
 ![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
-
-:bulb: For each person that you add, make sure to add
-- First Name
-- Last Name
-- Email
-- Affiliation
 
 ---
 
 # Add a study
 
-by clicking "Add Study" and entering **talinum_drought** as identifier for the study
+by clicking "Add Study" and entering an identifier for your study
 
-![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_Study.png)
+Use **talinum_drought** as an identifier
+
+![bg right w:500](././../../../img/ARCitect_TalinumPhotosynthesis_Study.png)
 
 ---
 
@@ -157,54 +113,34 @@ In the study panel you can add
 - publications
 - data process information
 
-![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_StudyPanel.png)
+![bg right w:500](././../../../img/ARCitect_TalinumPhotosynthesis_StudyPanel.png)
 
 ---
 
-# Add a protocol to the study
 
-![bg right w:500](../../../img/ARCitect_TalinumPhotosynthesis_Study-protocol.png)
+# Add an assay
 
-Click "Add Protocol" in the sidebar to add a protocol to the study
+by clicking "Add Assay" and entering an identifier for your assay
+
+Add two assays with **rnaseq** and **metabolomics** as an identifier
+![bg right w:500](././../../../img/ARCitect_TalinumPhotosynthesis_Assay.png)
 
 ---
 
-# Adding protocols
+# Link your assay to a study
 
 You can either
+- link your new assay to an existing study in your ARC or
+- create a new one
+  
+Link your assays to your **talinum_drought** study
 
-- directly write a **new protocol** within the ARCitect or
-- import an existing one from your computer
 
-![w:800](./../../../img/arcitect-ARCPanel-protocol.png)
-
----
-
-# Transfer the protocol information
-
-From the demo data, transfer the lab notes stored in `plant_material.txt` to the **talinum_drought** study.
+![bg right w:500](././../../../img/ARCitect_TalinumPhotosynthesis_Assay2.png)
 
 ---
 
-# Add an assay to the ARC
-
-Click "Add Assay" in the sidebar
-
-![bg right:45% w:500](../../../img/ARCitect_TalinumPhotosynthesis_addAssay.png)
-
-
----
-
-# Name and link the assay
-
-1. Enter **rnaseq** as the identifier
-2. Link the assay to the study **talinum_drought**
-
-![bg right:45%  w:600](./../../../img/ARCitect_TalinumPhotosynthesis_Assay2.png)
-
----
-
-# Add information about the assay
+# Add information about your assay
 
 In the assay panel you can
 
@@ -215,57 +151,41 @@ In the assay panel you can
    - technology platform.
 3. add data process information
 
-![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_AssayPanel.png)
-
-
----
-
-# Add information about the assay
-
-1. Add the following information: 
-   - Measurement Type: `Gene Expression Analysis`
-   - Technology type: `Next Generation Sequencing`
-   - Technology platform: `Illumina HiSeq 2500`
-2. Click "Update" to save your changes
+![bg right w:500](././../../../img/ARCitect_TalinumPhotosynthesis_AssayPanel.png)
 
 ---
 
+# Add protocols
+
+You can either
+- directly write a **new protocol** within the ARCitect or
+- import an existing one from your computer
+
+![w:800](./../../../img/arcitect-ARCPanel-protocol.png)
+
+---
 
 # Add protocols and datasets
 
 In the file tree you can
   - **add a dataset** and 
-  - **protocols** associated with that dataset
+  - **protocols** associated to that dataset.
 
-![bg right:40% w:400](../../../img/ARCitect_TalinumPhotosynthesis_Assay3.png)
+:bulb: **Add Dataset** allows to import data from any location on your computer into the ARC.
 
----
+:warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
 
-# Import the demo dataset to the ARC
+<!-- Demo dataset cannot be added via add dataset. Only individual files can be added, not multiple folders -->
 
-1. Cick "Add Dataset"
-2. Select the *.fastq.gz files from the demo data
-
-![bg right w:300](../../../img/ARCitect_TalinumPhotosynthesis_Assay4.png)
-![bg right w:300](../../../img/ARCitect_TalinumPhotosynthesis_Assay5.png)
+![bg right:40% w:400](./../../../img/arcitect-ARCPanel-assay03.png)
 
 ---
 
-# Import the protocols
+# Sort Demo Data to your ARC
 
-From the demo data, import the lab notes related to the `rnaseq` assay:
-  
-  - RNA_extraction.txt
-  - Illumina_libraries.txt
-  - NGS_SampleSheet.xlsx
+💡 protocols can directly imported via ARCitect
 
-![bg right w:500](../../../img/ARCitect_TalinumPhotosynthesis_Assay6.png)
-
----
-
-# Collaborate and share
-
-![w:650](./../../../img/ARC_DataSharing_Experts02_img1.png)
+💡 to add multiple datasets folders, they have to be added manually via file browser 
 
 ---
 
@@ -279,9 +199,9 @@ Click **Login** (1) in the sidebar to login to the DataHUB.
 
 ---
 
-# Versions: Connection to the DataHUB
+# Upload your local ARC to the DataHUB
 
-To communicate with the DataHUB, navigate to **Versions** (6)
+From the sidebar, navigate to **Versions** (6)
 
 ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
 
@@ -290,7 +210,6 @@ To communicate with the DataHUB, navigate to **Versions** (6)
 # Versions
 
 The versions panel allows you to
-
 - store the local changes to your ARC in form of "commits",
 - sync the changes to the DataHUB, and
 - check the history of your ARC
@@ -309,19 +228,9 @@ If you are logged in, the versions panel shows
 
 ---
 
-# Upload your ARC to the DataHUB
+# Check if your ARC is successfully uploaded
 
-1. Enter a "commit message" to shortly describe the changes to your ARC
-2. Click "COMMIT" to save your changes locally
-3. Click "UPLOAD" to upload your ARC to the DataHUB
-
-![bg right w:700](./../../../img/arcitect-VersionsPanel.png)
-
----
-
-# Check whether your ARC was uploaded successfully
-
-1. [sign in](https://git.nfdi4plants.org/) to the DataHUB
+1. [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB 
 2. Check your projects
 
 ---
@@ -357,7 +266,7 @@ If you are logged in, the versions panel shows
 
 If the pipeline has failed once, it is disabled by default
 
-![bg right w:500](./../../../img/cqc-error-email2.png)
+![bg right w:500](././../../../img/cqc-error-email2.png)
 
 ---
 
@@ -386,8 +295,9 @@ To reactivate it and let the DataHUB validate your ARC again:
 
 # Invite collaborators
 
-* Unless changed, your ARC is set to private by default
-* To collaborate, you can invite lab colleagues or project partners to your ARC
+* Unless changed, your ARC is set to private by default. 
+* To collaborate, you can invite lab colleagues or project partners to your ARC by following the steps on the subsequent slides. 
+* To get started [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB and open the ARC you want to share.
 
 ---
 
@@ -415,7 +325,7 @@ To reactivate it and let the DataHUB validate your ARC again:
 
 ---
 
-5. Select a role
+5. Select a role 
 
 ![fit w:1050](./../../../img/datahub_members_seq6.png)
 
@@ -461,29 +371,6 @@ object-position: 100% 45%;
 
 ---
 
-# Add the remaining data
-
-1. Add another assay (`metabolomics`)
-   1. Add the protocols
-   2. Add the dataset
-2. Go to the Versions panel
-   1. Add a "commit message"
-   2. Upload your changes to the DataHUB
-
-![bg right:40% w:400](../../../img/ARCitect_TalinumPhotosynthesis_Assay3.png)
-
----
-
-# Check the progress of your ARC
-
-1. Navigate to Versions
-2. Check the History panel at the bottom
-
-![w:650](./../../../img/ARCitect_TalinumPhotosynthesis_History.png)
-
----
-
-
 # Your ARC is ready
 
 <style scoped>
@@ -507,63 +394,7 @@ section p br {
 
 ---
 
-# DataHUB
-
-
 ---
-
-## Deleting an ARC
-
-<style scoped>section ul li{margin-left: 0px;} </style>
-
-1. Click on *Settings* in the sidebar of your ARC
-2. Navigate to the general (1) settings
-3. In the advanced section (4) you can **delete** your ARC
-
-![bg right w:600](./../../../img/datahub-ARC-settings.drawio.svg)
-
----
-
-## Follow your progress in the DataHUB
-
-1. Open your ARC in the [DataHUB](https://git.nfdi4plants.org/) 
-2. In the sidebar on the left, navigate to `Repository` &rarr; `Commits`
-3. There you find a chronological list of syncing messages together with who synced and when
-
-![bg right w:600](./../../../img/datahub-commits.png)
-
----
-
-## Undo latest changes
-
-4. Click on the latest (i.e. uppermost) commit.
-5. In the top-right corner select `Revert` from the drop-down menu `Options`.
-
-<img src="./../../../img/datahub-commits-revert01.png" style="width:75%;display: block;margin-left: auto;margin-right: auto;">
-
-
---- 
-## Undo latest changes
-
-6. Un-check the box "Start a new merge request with these changes".
-7. Click "Revert"
-
-<img src="./../../../img/datahub-commits-revert02.png" style="width:55%;display: block;margin-left: auto;margin-right: auto;">
-
-
----
-
-## Update your local ARC
-
-If your ARC has changed in the DataHUB (by yourself or collaborators), you need to update your "local" version of the ARC. 
-
-1. Navigate to Versions
-2. Click "Download"
-
-
---- 
-
---- 
 
 # Contributors
 
