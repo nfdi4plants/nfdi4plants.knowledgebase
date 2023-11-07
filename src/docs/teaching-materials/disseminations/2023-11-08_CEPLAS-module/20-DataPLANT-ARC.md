@@ -77,6 +77,9 @@ author:
 
 ---
 
+# ARC builds on standards
+
+![w:1000](./../../../img/ARC_BuildsOnStandards1.png)
 
 ---
 
