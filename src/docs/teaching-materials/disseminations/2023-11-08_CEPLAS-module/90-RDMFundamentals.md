@@ -13,13 +13,6 @@ author:
   orcid: https://orcid.org/0000-0003-1476-2121
 ---
 
-# RDM fundamentals
-
-Dominik Brilhaus
-Sept 20th, 2023
-
----
-
 # Legal aspects of RDM
 
 ---
