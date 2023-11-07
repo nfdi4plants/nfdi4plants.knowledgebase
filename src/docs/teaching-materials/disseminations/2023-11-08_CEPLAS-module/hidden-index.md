@@ -8,6 +8,7 @@ add sidebar: _sidebars/mainSidebar.md
 ## Slide decks
 
 - <a href=./00-Preparation.html target=_blank>00-Preparation</a>
+- <a href=./000-Title.html target=_blank>000-Title</a>
 - <a href=./10-WelcomeIntro.html target=_blank>10-WelcomeIntro</a>
 - <a href=./15-exercise_FAIRProject.html target=_blank>15-exercise_FAIRProject</a>
 - <a href=./20-DataPLANT-ARC.html target=_blank>20-DataPLANT-ARC</a>

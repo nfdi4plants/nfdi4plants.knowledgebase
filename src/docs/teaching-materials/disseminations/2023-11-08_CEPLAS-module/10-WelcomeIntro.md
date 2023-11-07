@@ -191,6 +191,7 @@ object-fit: cover;
 **F**indable | **A**ccessible | **I**nteroperable | **R**eusable
 
 - Where do you store your data?
+- How do you annotate your data?
 - How do you share your data?
 - What tools do you use to analyse your data?
 - How do you reuse other people's data?
