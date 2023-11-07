@@ -3,7 +3,7 @@ marp: true
 theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-title: DataHub
+title: DataHub Hands-On
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -13,6 +13,89 @@ author:
   orcid: https://orcid.org/0000-0002-4849-1537
 ---
 
+# DataHub Hands-On
+
+---
+
+# Navigation Bar
+
+![](./../../../img/datahub-navbar.drawio.svg)
+
+1. navigate directly to the [projects panel](./../../../../../../DataHUB-Manual/datahub-Manual/datahub-projectsPanel.html) via the icon in the top-left (1)
+2. open the [hamburger Menu](#hamburger-menu) (2)
+3. use the search field (3) to find ARCs, users and groups
+4. open the [avatar Menu](#avatar-menu) (4)
+
+---
+
+# Hamburger Menu
+
+1. From the hamburger menu (1) you can
+2. navigate to the [projects](./../../../DataHUB-Manual/datahub-projectsPanel.html) (2)
+3. or [groups](datahub-groupsPanel.html) (3) panels
+
+![bg right w:500](./../../../img/datahub-hamburgerMenu.drawio.svg)
+
+---
+
+# Avatar Menu
+
+1. In the avatar menu (1) you can
+2. find your profile name and user name (2), 
+3. navigate to the [user settings](./../../../DataHUB-Manual/datahub-userSettings.html) (3) 
+4. or sign out (4) of the DataHUB.
+
+![bg right w:500](./../../../img/datahub-avatarMenu.drawio.svg)
+
+---
+
+# Projects Panel
+
+![](./../../../img/datahub-projectsPanel.drawio.svg)
+
+1. Choose a tab (1) to see only your ARCs, or explore other publicly available ARCs. 
+2. The main panel (2) lists all ARCs
+3. Here you can also see, the visibility level (3), and 
+4. your permission or role (4) for the listed ARC. 
+5. You can create a **New Project** in the top-right corner (5).
+
+---
+
+# ARC Panel
+
+The ARC Panel is the main working area for your ARC.
+
+![w:1000](./../../../img/datahub-ARC-overview.drawio.svg)
+
+---
+
+# ARC Panel &ndash; sidebar <!-- fit -->
+
+<style scoped> section {font-size: 23px;} </style>
+
+![bg right w:600](./../../../img/datahub-ARC-overview.drawio.svg)
+
+1. access the project information (1), e.g. invite members to the ARC
+2. follow the progress of your ARC repository (2),
+3. organize tasks in issue lists and boards (3),
+4. take notes in a wiki to your ARC (4),
+5. adapt the [settings (5) of the ARC](datahub-ARCSettings.html).
+
+---
+
+# ARC Panel &ndash; main panel <!-- fit -->
+
+<style scoped> section {font-size: 23px;} </style>
+
+![bg right w:600](./../../../img/datahub-ARC-overview.drawio.svg)
+
+6. see the ARC's name and visibility level (6),
+7. follow the ARC's commit history (7),
+8. see files contained in your ARC just like on your computer (8),
+9. add new files or directories (9), and
+10. download or clone your ARC (10).
+
+---
 
 # Collaborate and share
 
@@ -97,12 +180,23 @@ object-position: 100% 45%;
 ---
 
 
+# Version control
+
+- Commit history
+
+---
+
 # Project Management
 
 - Issues
 
 ---
 
-# Version control
+# ARCs come with their own wiki space
 
-- Commit history
+- directly associated to your ARC
+- same access rights as your ARC
+- share meeting minutes or ideas with collaboration partners
+- keep ARC clean of files that are not considered "research data"
+
+![bg right w:600](./../../../img/datahub-wiki.png)

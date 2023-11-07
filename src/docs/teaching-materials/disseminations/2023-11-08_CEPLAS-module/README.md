@@ -34,7 +34,7 @@ for unit in *.md; do
 
 done
 ```
-
+<!-- 
 ## automate hidden index
 
 ```bash
@@ -43,7 +43,11 @@ echo "---\nlayout: docs\ntitle: CEPLAS Module 2023\ndate: 2023-11-08\nadd sideba
 
 for unit in *.html; do
     
-    echo "- <a href="./$unit" target="_blank">${unit%.*}</a>" >> hidden-index.md
+    noPrefix=${unit#*-}
+    noSuffix=${noPrefix%.*}
+
+    echo "- <a href="./$unit" target="_blank">$noSuffix</a>" >> hidden-index.md
+   
 
 done
-```
+``` -->

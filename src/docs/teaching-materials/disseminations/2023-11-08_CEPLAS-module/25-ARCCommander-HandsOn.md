@@ -9,12 +9,10 @@ author:
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
 date: 2023-09-20
-title: Check-in and ARC Commander Hands-on
+title: ARC Commander Hands-on
 ---
 
-# Check-in and ARC Commander Hands-on
-
-Dominik Brilhaus &ndash; CEPLAS Data Science
+# ARC Commander Hands-on
 
 ---
 
@@ -136,21 +134,17 @@ arc init
 ## Create an investigation
 
 ```bash
-arc investigation create -i TalinumPhotosynthesis --title TalinumPhotosynthesis --description "This is a very interesting investigation about life and photosynthesis"
+arc investigation create -i TalinumPhotosynthesis
 ```
 
 ---
 
-## Add (at least one) person
+## Add a person
 
 ```bash
-arc investigation person register --lastname Brilhaus --firstname Dominik --email brilhaus@hhu.de --affiliation CEPLAS
+arc i person register --lastname Brilhaus --firstname Dominik --email brilhaus@hhu.de --affiliation CEPLAS
 ```
 
-<br>
-
-> :bulb: For each person added, the minimum information is
-> lastname | firstname | email | affiliation
 
 ---
 
@@ -185,33 +179,6 @@ arc sync -f -r https://git.nfdi4plants.org/<username>/arc-demo
 
 ---
 
-# Received two emails from "GitLab" about a failed pipeline? <!-- fit -->
-
-![w:600](./../../../img/cqc-error-email.png)
-
-:fire: Don't worry :smile:
-
----
-
-## Pipeline Failed
-
-![bg right w:700](./../../../img/cqc-error-badges.png)
-
-- a "continuous quality control" (CQC) pipeline validates your ARC
-- This fails if one of the following metadata items is missing:
-
-    ```bash
-    Investigation Identifier
-    Investigation Title
-    Investigation Description
-    Investigation Person Last Name
-    Investigation Person First Name
-    Investigation Person Email
-    Investigation Person Affiliation
-    ```  
-
----
-
 ## Sort the demo data into the ARC
 
 Identify "raw dataset(s)" and "protocols" and move them to the proper subfolders in the ARC.
@@ -233,7 +200,7 @@ arc sync -m "sorted the demo data"
 
 ## Check the ARC in the DataHUB
 
-- Navigate to `https://git.nfdi4plants.org/<username>/arc-demo` to visit your ARC in the DataHUB
+Navigate to `https://git.nfdi4plants.org/<username>/arc-demo` to visit your ARC in the DataHUB
 
 ---
 

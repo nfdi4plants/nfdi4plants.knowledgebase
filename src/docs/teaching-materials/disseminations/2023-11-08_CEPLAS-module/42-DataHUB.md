@@ -13,27 +13,19 @@ author:
   orcid: https://orcid.org/0000-0002-4849-1537
 ---
 
-<style>
+# ARC builds on standards + Git
 
-.reference {
-  font-size:15px;
-  line-height: 1.2em;
-  position: fixed;
-  left: 50%;
-  bottom: 0px;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
-}
-
-</style>
-
-![left h:640](./../../../img/User_Challenges_002.svg)
+![w:900](./../../../img/ARC_BuildsOnStandards2.png)
 
 ---
 
-![bg cover](./../../../img/DataPLANT_BigPicture_seq1.png)
+# The DataPLANT DataHUB &ndash; a GitLab ***Plus***
+
+![](./../../../img/DataHUB-GitLab.drawio.png)
+
 
 ---
+
 
 ![bg cover](./../../../img/DataPLANT_BigPicture_seq2.png)
 
@@ -77,10 +69,9 @@ author:
 
 ---
 
-# Plan (ARC scale) <img align="left" class="center" style="height:75px" src='./../../../img/Screenshot-RDMkit-01-plan.png'/>
+# Project management
 
 ![w:800](./../../../img/tpj16474-fig-0007-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
-
 
