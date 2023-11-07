@@ -60,3 +60,27 @@ GitHub: <a href="https://github.com/nfdi4plants" target="_blank">https://github.
 HelpDesk: <a href="https://helpdesk.nfdi4plants.org" target="_blank">https://helpdesk.nfdi4plants.org</a>
 
 :bulb: You can help us by raising issues, bugs, ideas...
+
+---
+
+# Overview of Institutional services at UoC and HHU
+
+<style scoped>
+section {font-size: 25px;}
+</style>
+
+
+### UoC
+
+- C3RDM: https://fdm.uni-koeln.de/en/home
+- Data storage and sharing: https://rrzk.uni-koeln.de/daten-speichern-teilen
+- HPC: https://rrzk.uni-koeln.de/hpc-projekte 
+- service overview: https://fdm.uni-koeln.de/en/rdm-services/service-catalogue
+
+### HHU
+
+- RDM Competence Center: https://www.fdm.hhu.de
+- Support for research including HPC: https://www.zim.hhu.de/servicekatalog/forschungsunterstuetzung 
+- Processing & storing data: https://www.zim.hhu.de/servicekatalog/rechnen-und-speichern
+
+---
