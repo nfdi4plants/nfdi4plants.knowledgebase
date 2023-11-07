@@ -11,7 +11,7 @@ Here you can find the slides prepared for the November 2023 CEPLAS Module &ndash
 
 ## Slide decks
 
-- <a href="./00-preparation.html" target="_blank">Preparation</a>
+- <a href="./00-Preparation.html" target="_blank">Preparation</a>
 
 
 :warning: Links are not permanent. Slides may move elsewhere or be updated. We do our best to keep the knowledge base up-to-date &ndash; so you will find all relevant information here.
