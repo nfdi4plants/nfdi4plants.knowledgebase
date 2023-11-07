@@ -1,13 +1,63 @@
 ---
 marp: true
 theme: marp-theme_dataplant-ceplas-ccby
-title: Git concept
+paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+title: Data Storage and Versioning
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
-date: 2023-03-16
+- name: Hajira Jabeen
+  github: https://github.com/HajiraJabeen
+  orcid: https://orcid.org/0000-0003-1476-2121
+---
+
+# Data stores
+
+![w:900](././../../../img/data-stores.drawio.svg)
+
+---
+
+# Backup vs. Archive
+
+   <br>    |    Backup     |    Archive
+-------|-----------|-----------
+Storage type  | Short-, mid-term  | Long-term
+Purpose  | Disaster recovery | Long-term storage, compliance
+Reason  | Duplication  | Migration
+Usage  | Work in progress  | Cold, Unused data
+Changes  | Short-term updates  | No updates
+Trend  | Cyclic, Replacement  | Growing
+Latency  | Short/Costly  | High/Cheaper
+
+---
+
+# 3-2-1 backup rule
+
+![w:800](././../../../img/3-2-1-backup-rule.drawio.svg)
+
+---
+
+# Version control and track changes
+
+It’s good practice to document:
+
+- What was changed?
+- Who is responsible?
+- When did it happen?
+- Why the changes?
+
+---
+
+# Types of Version Control
+
+- by file name (_v1, _v2)
+- cloud services
+  - dropbox, icloud, gdrive
+- distributed version control system
+  - e.g. Git
+
 ---
 
 # Concept of Git and git-based platforms
