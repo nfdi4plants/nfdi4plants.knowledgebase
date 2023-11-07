@@ -31,7 +31,7 @@ author:
 
 # Data Stewardship between DataPLANT and the community  <!-- fit -->
 
-![w:880](././../../../img/DataPLANT-collaboration01.drawio.png)
+![w:880](././../../../img/DataPLANT-collaborationCEPLAS.drawio.png)
 
 ---
 
@@ -77,6 +77,17 @@ author:
 
 ---
 
+# ARC builds on standards
+
+![w:900](./../../../img/ARC_BuildsOnStandards1.png)
+
+---
+
+# ARC builds on standards + Git
+
+![w:900](./../../../img/ARC_BuildsOnStandards2.png)
+
+---
 
 ---
 

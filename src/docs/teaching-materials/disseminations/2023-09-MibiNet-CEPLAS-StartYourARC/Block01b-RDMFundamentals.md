@@ -28,7 +28,7 @@ Sept 20th, 2023
 
 ![w:700](././../../../img/Hartmann_TerraIncognita-Forschungsdaten-RechtlicheHeimat.png)
 
-<span class="reference">Hartmann, Thomas. (2019). Rechtsfragen: Institutioneller Rahmen und Handlungsoptionen für universitäres FDM. Zenodo. https://doi.org/10.5281/zenodo.2654306</span>
+<span class="footer-reference">Hartmann, Thomas. (2019). Rechtsfragen: Institutioneller Rahmen und Handlungsoptionen für universitäres FDM. Zenodo. https://doi.org/10.5281/zenodo.2654306</span>
 
 ---
 
@@ -40,7 +40,7 @@ Sept 20th, 2023
 - Bronze: Free to read on the publisher page, but without a clearly identifiable license.
 - Closed: All other articles, including those shared only on an Academic Social Network or in Sci-Hub.
 
-<span class="reference">Piwowar H et al. (2018), PeerJ https://doi.org/10.7717/peerj.4375</span>
+<span class="footer-reference">Piwowar H et al. (2018), PeerJ https://doi.org/10.7717/peerj.4375</span>
 
 ---
 
@@ -48,7 +48,7 @@ Sept 20th, 2023
 
 ![w:900](https://www.frontiersin.org/files/Articles/855198/frma-07-855198-HTML/image_m/frma-07-855198-g001.jpg)
 
-<span class="reference">Okafor et al. (2022) https://doi.org/10.3389/frma.2022.855198, Figure 1</span>
+<span class="footer-reference">Okafor et al. (2022) https://doi.org/10.3389/frma.2022.855198, Figure 1</span>
 
 ---
 
@@ -58,7 +58,7 @@ Check out: https://creativecommons.org/about/cclicenses/
 
 ![w:400](././../../../img/creative_commons_brochure.png)
 
-<span class="reference">adapted from https://wiki.creativecommons.org/images/0/01/6licenses-folded.pdf</span>
+<span class="footer-reference">adapted from https://wiki.creativecommons.org/images/0/01/6licenses-folded.pdf</span>
 
 ---
 
@@ -81,7 +81,7 @@ Check out: https://creativecommons.org/about/cclicenses/
 
 ![](https://images.squarespace-cdn.com/content/v1/5d3799de845604000199cd24/1567592451970-2R8XFL670QNMAGDRV7ED/Be+FAIR+and+CARE.png?format=2500w)
 
-<span class="reference">https://www.gida-global.org/care</span>
+<span class="footer-reference">https://www.gida-global.org/care</span>
 
 ---
 
@@ -89,7 +89,7 @@ Check out: https://creativecommons.org/about/cclicenses/
 
 ![bg right w:450](https://storage.googleapis.com/jnl-up-j-dsj-files/journals/1/articles/1158/submission/proof/1158-10-8531-1-17-20201104.png)
 
-<span class="reference">https://datascience.codata.org/articles/10.5334/dsj-2020-043/</span>
+<span class="footer-reference">https://datascience.codata.org/articles/10.5334/dsj-2020-043/</span>
 
 ---
 
@@ -97,7 +97,7 @@ Check out: https://creativecommons.org/about/cclicenses/
 ![w:500](./../../../img/Forschungsdaten-Policy-Kit-Abb2.png)
 
 
-<span class="reference">Hiemenz, Bea & Kuberek, Monika (2018) http://dx.doi.org/10.14279/depositonce-7521</span>
+<span class="footer-reference">Hiemenz, Bea & Kuberek, Monika (2018) http://dx.doi.org/10.14279/depositonce-7521</span>
 
 ---
 
@@ -211,7 +211,7 @@ section {font-size: 25px;}
 
 ![w:900](././../../../img/exercise_PIDs_img1.png)
 
-<span class="reference"> https://doi.org/10.1093/plcell/koab243</span>
+<span class="footer-reference"> https://doi.org/10.1093/plcell/koab243</span>
 
 ---
 
@@ -236,7 +236,7 @@ Ideally, PIDs are
 - Addressable (citable)
 - Clickable (resolvable)
 
-<span class="reference">Adapted from https://www.ebi.ac.uk/rdf/documentation/good_practice_uri/<span>
+<span class="footer-reference">Adapted from https://www.ebi.ac.uk/rdf/documentation/good_practice_uri/<span>
 
 ---
 

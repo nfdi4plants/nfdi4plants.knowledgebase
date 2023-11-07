@@ -16,7 +16,7 @@ author:
 <!-- _paginate: false -->
 <style scoped>section {background: none; background-color: white;}</style>
 
-part of *M4468 &ndash; Plant developmental genetics, evolution and biostatistics in the CEPLAS research program*
+*part of M4468 &ndash; Plant developmental genetics, evolution<br>and biostatistics in the CEPLAS research program*
 <br>
 November 9<sup>th</sup>, 2023
 Dominik Brilhaus, CEPLAS Data Science
@@ -33,32 +33,6 @@ Pad: https://pad.hhu.de/oI-NjeUtSHSMzk5huWRkJw
 
 # Tentative agenda
 
-<style scoped>
-.columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    font-size: 20px;
-}
-</style>
-
-<div class="columns">
-<div class="columns-left">
-
-## Day 1
-
-Time | Topics
--------- | --------
-09:30 - 10:45 | Welcome and intro to RDM
-10:45 - 11:00 | *Short break*
-11:00 - 12:00 | Intro to DataPLANT and ARC
-12:00 - 13:00 | *Lunch*
-13:00 - 15:30 | ARC Demo and Hands-on
-15:30 - 16:00 | Wrap-up
-
-</div>
-
-<div class="columns-right">
-
 ## Day 2
 
 Time | Topics
@@ -71,9 +45,4 @@ Time | Topics
 15:00 - 15:30 | ARC ecosystem: Additional features
 15:30 - 16:00 | Wrap-up
 
-</div>
-</div>
-
-
 # ARC Feedback
-

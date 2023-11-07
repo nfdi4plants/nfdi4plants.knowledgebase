@@ -15,6 +15,16 @@ section {
   color: #2D3E50;
 }
 
+.footer-reference {
+  font-size:15px;
+  line-height: 1.2em;
+  position: fixed;
+  left: 50%;
+  bottom: 0px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
 header {
   top: 30px;
   height: 60px;

@@ -52,10 +52,9 @@ author:
 
 ---
 
-5. Select a role 
+5. Select a role
 
 ![fit w:1050](./../../../img/datahub_members_seq6.png)
-
 
 ---
 
@@ -95,5 +94,15 @@ object-position: 100% 45%;
 
 ![](./../../../img/ARC_Sharing_img1.png)
 
+---
+
+
+# Project Management
+
+- Issues
 
 ---
+
+# Version control
+
+- Commit history
