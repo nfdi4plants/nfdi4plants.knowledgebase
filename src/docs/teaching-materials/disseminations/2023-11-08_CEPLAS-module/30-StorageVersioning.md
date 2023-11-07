@@ -21,15 +21,15 @@ author:
 
 # Backup vs. Archive
 
-   <br>    |    Backup     |    Archive
--------|-----------|-----------
-Storage type  | Short-, mid-term  | Long-term
-Purpose  | Disaster recovery | Long-term storage, compliance
-Reason  | Duplication  | Migration
-Usage  | Work in progress  | Cold, Unused data
-Changes  | Short-term updates  | No updates
-Trend  | Cyclic, Replacement  | Growing
-Latency  | Short/Costly  | High/Cheaper
+| <br>         | Backup              | Archive                       |
+|--------------|---------------------|-------------------------------|
+| Storage type | Short-, mid-term    | Long-term                     |
+| Purpose      | Disaster recovery   | Long-term storage, compliance |
+| Reason       | Duplication         | Migration                     |
+| Usage        | Work in progress    | Cold, Unused data             |
+| Changes      | Short-term updates  | No updates                    |
+| Trend        | Cyclic, Replacement | Growing                       |
+| Latency      | Short/Costly        | High/Cheaper                  |
 
 ---
 
@@ -92,7 +92,6 @@ things you use and ignore
 - calendar invitations
 
 -->
-
 
 ---
 

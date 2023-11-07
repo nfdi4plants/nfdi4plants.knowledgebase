@@ -241,7 +241,7 @@ If you are logged in, the versions panel shows
 
 :fire: Don't worry :smile:
 
---- 
+---
 
 ## Pipeline Failed
 
@@ -286,7 +286,6 @@ To reactivate it and let the DataHUB validate your ARC again:
 ![bg right:60% w:600](./../../../img/cqc-activate-autodevops.png)
 
 ---
-
 
 # Your ARC is ready
 

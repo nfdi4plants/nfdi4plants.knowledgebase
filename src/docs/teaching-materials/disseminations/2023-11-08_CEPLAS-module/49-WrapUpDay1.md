@@ -13,37 +13,11 @@ author:
 # Q&A and Wrap-up Day1
 
 ---
-
+    
 # Preparation for next day
 
 - Please try to prepare your own ARC
 - Please install SWATE
-
----
-
-# Five-Finger-Feedback
-
-<style scoped>
-section {
-  text-align: center;
-  /* background: #F9CD69; */
-}
-</style>
-
-![width:800px](./../../../img/feedback01_FiveFinger.drawio.svg)
-
-<!-- 
-- Invite participants to give feedback
-- If feasible, collect transparently on a board or in a markdown pad, etc. 
-
-# Five-Finger-Feedback
-
-...was too short | I'm happy with... | I did not like at all ...| This idea or advice was good: ... | I really liked ...  
----|---|---|---|---
-... | ... | ... | ... | ...
-
--->
-
 
 ---
 
@@ -84,3 +58,26 @@ section {font-size: 25px;}
 - Processing & storing data: https://www.zim.hhu.de/servicekatalog/rechnen-und-speichern
 
 ---
+
+# Five-Finger-Feedback
+
+<style scoped>
+section {
+  text-align: center;
+  /* background: #F9CD69; */
+}
+</style>
+
+![width:800px](./../../../img/feedback01_FiveFinger.drawio.svg)
+
+<!-- 
+- Invite participants to give feedback
+- If feasible, collect transparently on a board or in a markdown pad, etc. 
+
+# Five-Finger-Feedback
+
+...was too short | I'm happy with... | I did not like at all ...| This idea or advice was good: ... | I really liked ...  
+---|---|---|---|---
+... | ... | ... | ... | ...
+
+-->
