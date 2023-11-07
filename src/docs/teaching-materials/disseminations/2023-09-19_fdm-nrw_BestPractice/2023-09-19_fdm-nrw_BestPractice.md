@@ -84,7 +84,7 @@ September 19th, 2023
 
 # Data Stewardship between DataPLANT and the community  <!-- fit -->
 
-![w:700](./images/DataPLANT-collaboration01.drawio.png)
+![w:700](./images/DataPLANT-collaborationCEPLAS.drawio.png)
 
 ---
 
