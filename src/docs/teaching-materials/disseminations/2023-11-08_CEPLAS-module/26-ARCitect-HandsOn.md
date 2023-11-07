@@ -25,7 +25,7 @@ author:
 
 # ARCitect installation
 
-Please install the latest version of the ARCitect: https://github.com/nfdi4plants/ARCitect
+Please install version **v0.0.10** of the ARCitect: https://github.com/nfdi4plants/ARCitect/releases/tag/v0.0.10
 
 :fire: (released September 20th, 2023) :fire:
 
@@ -87,7 +87,7 @@ https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZl
 
 ---
 
-# Add (at least one) contributor
+# Add a contributor
 
 
 ![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
@@ -183,9 +183,9 @@ In the file tree you can
 
 # Sort Demo Data to your ARC
 
-💡 protocols can directly imported via ARCitect
+💡 protocols can directly be imported via ARCitect
 
-💡 to add multiple datasets folders, they have to be added manually via file browser 
+💡 to add multiple datasets folders, they have to be added manually via file browser
 
 ---
 
@@ -232,6 +232,31 @@ If you are logged in, the versions panel shows
 
 1. [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB 
 2. Check your projects
+
+---
+
+# Your ARC is ready
+
+<style scoped>
+
+section p br {
+   display: block;
+   margin-top: 20px;
+   content: "";
+}
+</style>
+
+👩‍💻 Initiated an ARC
+<br>
+📂 Structured and ...  
+<br>
+<img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate_c_40x40.png'/> ... annotated experimental data
+<br>
+🌐 Shared with collaborators
+
+![bg right width:400](./../../../img/demo_arc_screenshot.png)
+
+---
 
 ---
 
@@ -284,29 +309,6 @@ To reactivate it and let the DataHUB validate your ARC again:
   4. Save changes
 
 ![bg right:60% w:600](./../../../img/cqc-activate-autodevops.png)
-
----
-
-# Your ARC is ready
-
-<style scoped>
-
-section p br {
-   display: block;
-   margin-top: 20px;
-   content: "";
-}
-</style>
-
-👩‍💻 Initiated an ARC
-<br>
-📂 Structured and ...  
-<br>
-<img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate_c_40x40.png'/> ... annotated experimental data
-<br>
-🌐 Shared with collaborators
-
-![bg right width:400](./../../../img/demo_arc_screenshot.png)
 
 ---
 
