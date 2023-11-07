@@ -13,6 +13,19 @@ author:
   orcid: https://orcid.org/0000-0002-4849-1537
 ---
 
+<style>
+
+.reference {
+  font-size:15px;
+  line-height: 1.2em;
+  position: fixed;
+  left: 50%;
+  bottom: 0px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+</style>
 
 ![left h:640](./../../../img/User_Challenges_002.svg)
 
@@ -50,12 +63,24 @@ author:
 
 ---
 
-# Project Management
+# **Mutable** data life cycle
 
-- Issues
+![w:700](./../../../img/tpj16474-fig-0006-m.jpg)
+
+<!-- 
+
+- Invite other (demo) account
+- add notes from there
+-->
+
+<span class="reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
 ---
 
-# Version control
+# Plan (ARC scale) <img align="left" class="center" style="height:75px" src='./../../../img/Screenshot-RDMkit-01-plan.png'/>
 
-- Commit history
+![w:800](./../../../img/tpj16474-fig-0007-m.jpg)
+
+<span class="reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
+
+

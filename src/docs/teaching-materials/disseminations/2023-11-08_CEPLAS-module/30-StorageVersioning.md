@@ -60,6 +60,42 @@ It’s good practice to document:
 
 ---
 
+# Which files need to be "versioned"? :pencil: 
+
+- paper manuscript (.docx)
+- single-cell RNASeq reads (.fastq.gz)
+- spread sheet with photometer measurements (.xlsx)
+- calendar invitation (.ical)
+- photo of SDS-PAGE (.jpeg)
+- excel workbook with calculations (.xlsx)
+- presentation for a conference (.pdf)
+- data analysis script (.py)
+
+<!--
+
+## No versioning
+
+- "Raw data" or "original data" > backup and do not touch
+- do not calculate anything in measurement excel workbooks
+
+## Versioning
+
+anything that is (frequently) updated
+- manuscripts
+- calculations
+- workflows
+- scripts
+
+## Does not matter
+
+things you use and ignore
+- calendar invitations
+
+-->
+
+
+---
+
 # Concept of Git and git-based platforms
 
 ---

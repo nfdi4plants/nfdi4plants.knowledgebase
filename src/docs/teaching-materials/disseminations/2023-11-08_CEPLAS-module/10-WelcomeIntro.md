@@ -58,11 +58,11 @@ Slides will be shared via DataPLANT knowledge base and the Sciebo folder
 
 Time | Topics
 -------- | --------
-09:30 - 10:45 | Welcome and intro to RDM
+09:30 - 10:45 | Intro to RDM and ARC
 10:45 - 11:00 | *Short break*
-11:00 - 12:00 | Intro to DataPLANT and ARC
-12:00 - 13:00 | *Lunch*
-13:00 - 15:30 | ARC Demo and Hands-on
+11:00 - 12:00 | ARC Hands-on
+12:30 - 13:30 | *Lunch*
+13:00 - 15:30 | Data storage and sharing
 15:30 - 16:00 | Wrap-up
 
 </div>
@@ -76,7 +76,7 @@ Time | Topics
 09:30 - 10:30 | ARC Feedback session
 10:30 - 10:45 | *Short break*
 10:45 - 12:00 | ISA and Metadata
-12:00 - 13:00 | *Lunch*
+12:30 - 13:30 | *Lunch*
 13:00 - 15:00 | Hands-on Swate
 15:00 - 15:30 | ARC ecosystem: Additional features
 15:30 - 16:00 | Wrap-up

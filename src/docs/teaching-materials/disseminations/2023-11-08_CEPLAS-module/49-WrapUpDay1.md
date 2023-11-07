@@ -14,18 +14,6 @@ author:
 
 ---
 
-# Tentative agenda
-
-Time | Topics
--------- | --------
-13:00 - 14:00 | Welcome and intro
-14:00 - 14:15 | *Short break*
-14:15 - 16:00 | ARC and ARCitect Hands-on
-16:00 - 16:15 | *Short break*
-16:15 - 17:00 | Q&A
-
----
-
 # Preparation for next day
 
 - Please try to prepare your own ARC
