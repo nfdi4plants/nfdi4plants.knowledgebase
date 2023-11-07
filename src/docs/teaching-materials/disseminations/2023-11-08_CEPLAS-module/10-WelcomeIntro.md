@@ -207,7 +207,7 @@ object-fit: cover;
 - F3. Metadata clearly and explicitly include the identifier of the data they describe.
 - F4. (Meta)data are registered or indexed in a searchable resource.
 
-<span class="reference">https://www.go-fair.org/fair-principles/<span>
+<span class="footer-reference">https://www.go-fair.org/fair-principles/<span>
 
 ---
 
@@ -220,7 +220,7 @@ object-fit: cover;
   - A1.2 The protocol allows for an authentication and authorisation procedure, where necessary
 - A2. Metadata are accessible, even when the data are no longer available
 
-<span class="reference">https://www.go-fair.org/fair-principles/<span>
+<span class="footer-reference">https://www.go-fair.org/fair-principles/<span>
 
 ---
 
@@ -232,7 +232,7 @@ object-fit: cover;
 - I2. (Meta)data use vocabularies that follow FAIR principles.
 - I3. (Meta)data include qualified references to other (meta)data.
 
-<span class="reference">https://www.go-fair.org/fair-principles/<span>
+<span class="footer-reference">https://www.go-fair.org/fair-principles/<span>
 
 ---
 
@@ -245,7 +245,7 @@ object-fit: cover;
 - R1.2. (Meta)data are associated with detailed provenance
 - R1.3. (Meta)data meet domain-relevant community standards
 
-<span class="reference">https://www.go-fair.org/fair-principles/<span>
+<span class="footer-reference">https://www.go-fair.org/fair-principles/<span>
 
 ---
 
@@ -253,7 +253,7 @@ object-fit: cover;
 
 > The principles refer to three types of entities: **data** (or any digital object), **metadata** (information about that digital object), and **infrastructure**.
 
-<span class="reference">https://www.go-fair.org/fair-principles/<span>
+<span class="footer-reference">https://www.go-fair.org/fair-principles/<span>
 
 --- 
 

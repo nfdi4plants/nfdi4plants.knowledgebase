@@ -69,7 +69,7 @@ R1.1. (Meta)data are released with a clear and accessible data usage license
 R1.2. (Meta)data are associated with detailed provenance
 R1.3. (Meta)data meet domain-relevant community standards
 
-<span class="reference">*FAIR classified by https://www.go-fair.org/fair-principles/<span>
+<span class="footer-reference">*FAIR classified by https://www.go-fair.org/fair-principles/<span>
 
 ---
 
@@ -82,7 +82,7 @@ R1.3. (Meta)data meet domain-relevant community standards
 | F3. Metadata clearly and explicitly include the identifier of the data they describe. | 🟠 / 🔴 |
 | F4. (Meta)data are registered or indexed in a searchable resource.                    | 🔴      |
 
-<span class="reference">*FAIR classified by https://www.go-fair.org/fair-principles/<span>
+<span class="footer-reference">*FAIR classified by https://www.go-fair.org/fair-principles/<span>
 
 --- 
 
@@ -95,7 +95,7 @@ R1.3. (Meta)data meet domain-relevant community standards
 | A1.2 The protocol allows for an authentication and authorisation procedure, where necessary     | ❓
 | A2. Metadata are accessible, even when the data are no longer available                         | ❓
 
-<span class="reference">*FAIR classified by https://www.go-fair.org/fair-principles/<span>
+<span class="footer-reference">*FAIR classified by https://www.go-fair.org/fair-principles/<span>
 
 --- 
 
@@ -107,7 +107,7 @@ R1.3. (Meta)data meet domain-relevant community standards
 | I2. (Meta)data use vocabularies that follow FAIR principles.                                                   | 🔴
 | I3. (Meta)data include qualified references to other (meta)data.                                               | 🔴
 
-<span class="reference">*FAIR classified by https://www.go-fair.org/fair-principles/<span>
+<span class="footer-reference">*FAIR classified by https://www.go-fair.org/fair-principles/<span>
 
 ---
 
@@ -120,4 +120,4 @@ R1.3. (Meta)data meet domain-relevant community standards
 | R1.2. (Meta)data are associated with detailed provenance                                 | 🔴
 | R1.3. (Meta)data meet domain-relevant community standards                                | 🔴
 
-<span class="reference">*FAIR classified by https://www.go-fair.org/fair-principles/<span>
+<span class="footer-reference">*FAIR classified by https://www.go-fair.org/fair-principles/<span>

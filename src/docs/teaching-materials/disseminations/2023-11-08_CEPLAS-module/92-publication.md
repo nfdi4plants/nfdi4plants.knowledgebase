@@ -12,7 +12,54 @@ title: Data Publications
 date: 2023-11-07
 ---
 
-# Public data repositories
+# Data publication and repositories
+
+---
+
+# Peristent Identifiers (PIDs)
+
+---
+
+# Spot the PIDs
+
+![w:900](././../../../img/exercise_PIDs_img1.png)
+
+<span class="footer-reference"> https://doi.org/10.1093/plcell/koab243</span>
+
+---
+
+# Globally unique, stable, persistent identifiers (PIDs)
+
+- Long-term findability
+- Make data, digital objects, people, … uniquely identifiable
+- Diminish “dead links”
+- Cope with name changes
+
+![bg right width:500](././../../../img/pid_collage.drawio.svg)
+
+---
+
+# Properties of a PID
+
+Ideally, PIDs are
+
+- Stable and permanent
+- Location-independent
+- Globally unique and valid
+- Addressable (citable)
+- Clickable (resolvable)
+
+<span class="footer-reference">Adapted from https://www.ebi.ac.uk/rdf/documentation/good_practice_uri/<span>
+
+---
+
+# Additional resources
+
+- https://www.doi.org
+- https://www.orcid.org
+- https://pidservices.org/
+- https://datacite.org
+- https://www.project-freya.eu/en
 
 ---
 
@@ -90,60 +137,11 @@ section {font-size: 25px;}
 
 ---
 
-# Peristent Identifiers (PIDs)
-
---- 
-
-# Spot the PIDs
-
-![w:900](././../../../img/exercise_PIDs_img1.png)
-
-<span class="reference"> https://doi.org/10.1093/plcell/koab243</span>
-
----
-
-# Globally unique, stable, persistent identifiers (PIDs)
-
-- Long-term findability
-- Make data, digital objects, people, … uniquely identifiable
-- Diminish “dead links”
-- Cope with name changes
-
-![bg right width:500](././../../../img/pid_collage.drawio.svg)
-
----
-
-# Properties of a PID
-
-Ideally, PIDs are
-
-- Stable and permanent
-- Location-independent
-- Globally unique and valid
-- Addressable (citable)
-- Clickable (resolvable)
-
-<span class="reference">Adapted from https://www.ebi.ac.uk/rdf/documentation/good_practice_uri/<span>
-
----
-
-# Additional resources
-
-- https://www.doi.org
-- https://www.orcid.org
-- https://pidservices.org/
-- https://datacite.org
-- https://www.project-freya.eu/en
-
----
-
 # From ARC to repositories
 
 ![](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/ARC_Repository03_img1.png)
 
-
 ---
-
 
 ---
 
@@ -177,7 +175,7 @@ Ideally, PIDs are
 
 ![h:400](./../../../img/tpj16474-fig-0008-m-modified.png)
 
-<span class="reference"> adapted from Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
+<span class="footer-reference"> adapted from Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
 ---
 
@@ -186,10 +184,9 @@ Ideally, PIDs are
 
 ![h:400](././../../../img/tpj16474-fig-0008-m.jpg)
 
-<span class="reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
+<span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
 ---
-
 
 # Receive a DOI
 
