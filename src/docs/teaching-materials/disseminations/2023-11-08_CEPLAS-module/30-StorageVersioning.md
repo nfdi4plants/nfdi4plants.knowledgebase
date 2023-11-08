@@ -13,6 +13,10 @@ author:
   orcid: https://orcid.org/0000-0003-1476-2121
 ---
 
+# Data Storage and Versioning
+
+---
+
 # Data stores
 
 ![w:900](././../../../img/data-stores.drawio.svg)
@@ -297,3 +301,18 @@ Simplifies concurrent work & merging changes
 # Cloud vs. Git
 
 ![w:1000](./../../../img/git_cloud_comparison.png)
+
+--- 
+
+--- 
+
+# Contributors
+
+Slides presented here include contributions by
+
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
+- name: Hajira Jabeen
+  github: https://github.com/HajiraJabeen
+  orcid: https://orcid.org/0000-0003-1476-2121

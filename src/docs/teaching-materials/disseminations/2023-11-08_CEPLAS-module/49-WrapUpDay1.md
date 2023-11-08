@@ -13,7 +13,7 @@ author:
 # Q&A and Wrap-up Day1
 
 ---
-    
+
 # Preparation for next day
 
 - Please try to prepare your own ARC
