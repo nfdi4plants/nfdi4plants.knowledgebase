@@ -11,8 +11,29 @@ Here you can find the slides prepared for the November 2023 CEPLAS Module &ndash
 
 ## Slide decks
 
-- <a href="./00-Preparation.html" target="_blank">Preparation</a>
+- <a href=./00-Preparation.html target=_blank>Preparation</a>
 
+## Day 1
+
+- <a href=./10-WelcomeIntro.html target=_blank>WelcomeIntro</a>
+- <a href=./15-exercise_FAIRProject.html target=_blank>exercise_FAIRProject</a>
+- <a href=./20-DataPLANT-ARC.html target=_blank>DataPLANT-ARC</a>
+- <a href=./25-ARCCommander-HandsOn.html target=_blank>ARCCommander-HandsOn</a>
+
+#### :coffee: Short break :coffee:
+
+- <a href=./26-ARCitect-HandsOn.html target=_blank>ARCitect-HandsOn</a>
+- <a href=./30-StorageVersioning.html target=_blank>StorageVersioning</a>
+
+#### :pizza: Lunch :pizza:
+
+- <a href=./42-DataHUB.html target=_blank>DataHUB</a>
+- <a href=./43-DataHUB-HandsOn.html target=_blank>DataHUB-HandsOn</a>
+
+#### :coffee: Short break :coffee:
+
+- <a href=./45-exercise_FAIRProject_ARC.html target=_blank>exercise_FAIRProject_ARC</a>
+- <a href=./49-WrapUpDay1.html target=_blank>WrapUpDay1</a>
 
 :warning: Links are not permanent. Slides may move elsewhere or be updated. We do our best to keep the knowledge base up-to-date &ndash; so you will find all relevant information here.
 
