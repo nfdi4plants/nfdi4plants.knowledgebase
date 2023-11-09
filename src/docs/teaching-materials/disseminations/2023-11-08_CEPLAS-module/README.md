@@ -34,7 +34,7 @@ for unit in *.md; do
 
 done
 ```
-<!-- 
+
 ## automate hidden index
 
 ```bash
@@ -50,4 +50,4 @@ for unit in *.html; do
    
 
 done
-``` -->
+```
