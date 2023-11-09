@@ -45,4 +45,6 @@ Time | Topics
 15:00 - 15:30 | Data Publication
 15:30 - 16:00 | Wrap-up
 
+---
+
 # Points to discuss from and since day 1

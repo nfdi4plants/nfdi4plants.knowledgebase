@@ -26,4 +26,5 @@ add sidebar: _sidebars/mainSidebar.md
 - <a href=./90-exercise_FAIRProject_final.html target=_blank>exercise_FAIRProject_final</a>
 - <a href=./91-ELNs.html target=_blank>ELNs</a>
 - <a href=./92-DataPublications.html target=_blank>DataPublications</a>
+- <a href=./93-CodeReproducibility.html target=_blank>CodeReproducibility</a>
 - <a href=./95-ARC-ecosystem-demo.html target=_blank>ARC-ecosystem-demo</a>
