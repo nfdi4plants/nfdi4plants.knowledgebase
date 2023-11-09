@@ -9,7 +9,7 @@ author:
 layout: slides
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 title: Data Publications
-date: 2023-11-07
+date: 2023-11-09
 ---
 
 # Data publication and repositories
@@ -63,6 +63,41 @@ Ideally, PIDs are
 
 ---
 
+
+# Institutional publication guidelines
+
+HHU Düsseldorf recommends use of ORCID and other PIDs
+
+Publikationsrichtlinie der Heinrich-Heine-Universität Düsseldorf vom 09.11.2023: 
+
+https://www.hhu.de/die-hhu/kontakt-und-services/zentrale-und-amtliche-bekanntmachungen/nr-34-2023
+
+
+---
+
+# Domain-specific data repositories
+
+<style scoped>
+section {font-size: 25px;}
+</style>
+
+**Good**
+
+- Assign PIDs / DOIs
+- Long-term accessible
+- Data type specific
+- Apply metadata standards
+- Usually recommended / required by journals
+- Mostly accepted by the community
+
+**Intermediate**
+
+- User-friendliness
+- Different metadata schema
+- Complex and versatile submission routines
+
+---
+
 # Domain-specific data repositories
 
 <style scoped>
@@ -97,29 +132,6 @@ Domain-specific >> Generic >> Institutional
 
 ---
 
-# Domain-specific data repositories
-
-<style scoped>
-section {font-size: 25px;}
-</style>
-
-**Good**
-
-- Assign PIDs / DOIs
-- Long-term accessible
-- Data type specific
-- Apply metadata standards
-- Usually recommended / required by journals
-- Mostly accepted by the community
-
-**Intermediate**
-
-- User-friendliness
-- Different metadata schema
-- Complex and versatile submission routines
-
----
-
 # Generic data repositories
 
 ![bg right:40% width:400](./../../../img/repositories_genericRepos_collage.drawio.svg)
@@ -139,12 +151,20 @@ section {font-size: 25px;}
 
 # From ARC to repositories
 
+<style scoped>
+
+section p img {
+width: 1000px;
+height: 400px;
+object-fit: cover;
+object-position: 100% 80%;
+/* display: block; */;
+}
+</style>
+
 ![](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/ARC_Repository03_img1.png)
 
 ---
-
----
-
 
 # Moving from paper to data publications
 
@@ -166,7 +186,7 @@ section {font-size: 25px;}
 
 # Publish your ARC with a few clicks
 
-![w:700px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/cqc-results.png)
+![w:900px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/cqc-results.png)
 
 ---
 
