@@ -18,7 +18,7 @@ author:
 
 *part of M4468 &ndash; Plant developmental genetics, evolution<br>and biostatistics in the CEPLAS research program*
 <br>
-November 9<sup>th</sup>, 2023
+November 10<sup>th</sup>, 2023
 Dominik Brilhaus, CEPLAS Data Science
 
 ![bg fit](./images/background_title_ceplas.drawio.svg)

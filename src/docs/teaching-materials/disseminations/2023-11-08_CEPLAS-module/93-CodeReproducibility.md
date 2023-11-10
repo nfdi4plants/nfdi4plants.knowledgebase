@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: dataplant_marp-theme
+theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 author:
 - name: Dominik Brilhaus
@@ -25,8 +25,8 @@ title: Code Reproducibility
 <div class="columns-left">
 
 - Visual Studio Code: https://code.visualstudio.com/
-- RMarkdown: https://jupyter.org/
-- Jupyter Notebooks: http://rmarkdown.rstudio.com
+- RMarkdown: http://rmarkdown.rstudio.com
+- Jupyter Notebooks: https://jupyter.org/ 
 
 </div>
 
