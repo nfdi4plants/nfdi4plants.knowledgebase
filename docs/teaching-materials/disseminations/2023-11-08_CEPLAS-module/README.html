@@ -94,11 +94,8 @@ for unit in *.md; do
 
 done
 </nfdi-code>
-<!-- 
-## automate hidden index
-
-```bash
-
+<nfdi-h2 id="automate-hidden-index">automate hidden index</nfdi-h2>
+<nfdi-code class="language-bash">
 echo "---\nlayout: docs\ntitle: CEPLAS Module 2023\ndate: 2023-11-08\nadd sidebar: _sidebars/mainSidebar.md\n---\n\n## Slide decks\n" > hidden-index.md
 
 for unit in *.html; do
@@ -106,11 +103,11 @@ for unit in *.html; do
     noPrefix=${unit#*-}
     noSuffix=${noPrefix%.*}
 
-    echo "- <a href="./$unit" target="_blank">$noSuffix</a>" >> hidden-index.md
+    echo "- &lt;a href="./$unit" target="_blank">$noSuffix&lt;/a>" >> hidden-index.md
    
 
 done
-``` -->
+</nfdi-code>
 
       <h3>
         DataPLANT Support
