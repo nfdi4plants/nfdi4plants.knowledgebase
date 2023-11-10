@@ -18,7 +18,7 @@ author:
 
 *part of M4468 &ndash; Plant developmental genetics, evolution<br>and biostatistics in the CEPLAS research program*
 <br>
-November 9<sup>th</sup>, 2023
+November 10<sup>th</sup>, 2023
 Dominik Brilhaus, CEPLAS Data Science
 
 ![bg fit](./images/background_title_ceplas.drawio.svg)
@@ -37,12 +37,14 @@ Pad: https://pad.hhu.de/oI-NjeUtSHSMzk5huWRkJw
 
 Time | Topics
 -------- | --------
-09:30 - 10:30 | ARC Feedback session
+09:30 - 10:30 | Feedback session
 10:30 - 10:45 | *Short break*
-10:45 - 12:00 | ISA and Metadata
-12:00 - 13:00 | *Lunch*
-13:00 - 15:00 | Hands-on Swate
-15:00 - 15:30 | ARC ecosystem: Additional features
+10:45 - 12:30 | ISA, Metadata and Swate
+12:30 - 13:30 | *Lunch*
+13:30 - 15:00 | Hands-on Swate
+15:00 - 15:30 | Data Publication
 15:30 - 16:00 | Wrap-up
 
-# ARC Feedback
+---
+
+# Points to discuss from and since day 1

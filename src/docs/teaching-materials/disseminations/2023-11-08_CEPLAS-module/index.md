@@ -32,6 +32,13 @@ Here you can find the slides prepared for the November 2023 CEPLAS Module &ndash
 
 ### Day 2
 
+- <a href=./50-WelcomeIntroDay2.html target=_blank>WelcomeIntroDay2</a>
+- <a href=./60-MetadataISA.html target=_blank>MetadataISA</a>
+- <a href=./70-Swate-HandsOn.html target=_blank>Swate-HandsOn</a>
+- <a href=./80-LegalAspects.html target=_blank>LegalAspects</a>
+- <a href=./91-ELNs.html target=_blank>ELNs</a>
+- <a href=./92-DataPublications.html target=_blank>DataPublications</a>
+- <a href=./93-CodeReproducibility.html target=_blank>CodeReproducibility</a>
 
 :warning: Links are not permanent. Slides may move elsewhere or be updated. We do our best to keep the knowledge base up-to-date &ndash; so you will find all relevant information here.
 

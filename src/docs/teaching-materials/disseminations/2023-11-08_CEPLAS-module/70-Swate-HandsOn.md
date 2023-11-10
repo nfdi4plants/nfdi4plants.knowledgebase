@@ -20,9 +20,6 @@ author:
 
 # Swate hands-on
 
-<style scoped>section {background: none; background-color: white}</style>
-<!-- _paginate: false -->
-
 ---
 
 # Goals
@@ -34,7 +31,7 @@ author:
 
 ## Check Swate installation
 
-:ballot_box_with_check: Make sure [Swate is installed](./../SwateManual/Docs01-Installing-Swate.html):
+:ballot_box_with_check: Make sure [Swate is installed](./../../../SwateManual/Docs01-Installing-Swate.html):
 
 1. Open Excel (online or Desktop)
 2. Go to the `Insert` tab: Click the arrow next to "My Add-ins". There you should be able to select Swate.
@@ -50,25 +47,32 @@ author:
 - Windows Notepad
 - MacOS TextEdit
 
-Recommended text editors with code highlighting:
-
-- Visual Studio Code <https://code.visualstudio.com/>
-- BBEdit <https://www.barebones.com/products/bbedit/>
-- Sublime <https://www.sublimetext.com/>
+Recommended text editor with code highlighting, git support, terminal, etc: <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
 
 ---
 
+## Download the demo data
+
+![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
+
+1. Open the ARCitect
+2. Login (1) to your DataHUB account
+3. Navigate to **Download ARC** (4)
+
+---
 
 ## Download the demo data
 
-```bash
-git clone "https://demo-user:5ehDYeHcqP2MqVXsNNPu@git.nfdi4plants.org/teaching/demo-arc_level1.git"
-```
+4. Search for **Talinum-CAM-Photosynthesis**
+5. Click the download button, select a location and open the ARC.
+
+![w:700](./../../../img/arcitect-download-TalinumARC.png)
+
+:bulb: This is basically the ARC we created last session.
 
 ---
 
 ## Where we left off last time
-
 
 👩‍💻 Initiated an ARC
 📂 Structured and ...  
@@ -76,11 +80,11 @@ git clone "https://demo-user:5ehDYeHcqP2MqVXsNNPu@git.nfdi4plants.org/teaching/d
 
 <br>
 
-**Today** we want to 
+**Today** we want to
 
 <img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate_c_40x40.png'/> ... **annotate the experimental data**
 
-![bg right:40% width:400](./../../../img/demo_arc_screenshot.png)
+![bg right:40% width:400](./../../../img/arcitect-talinum-demo-ARC.png)
 
 ---
 
@@ -214,7 +218,7 @@ At this point. Your table should look similar to this:
 
 Click the <kbd>Autoformat Table</kbd> quick access button without holding <kbd>Ctrl</kbd> to hide all reference columns.
 
---- 
+---
 
 ## Exercise :pencil:
 
@@ -230,7 +234,6 @@ Try to add suitable *building blocks* for other pieces of metadata from the plan
 3. Open the empty `assays/rnaseq/isa.assay.xlsx)` workbook in Excel.
 
 ---
-
 
 ## Use a template
 
@@ -271,7 +274,7 @@ If there are any Building Blocks which do not fit your experiment you can use th
 1. Add a new sheet to the `assays/rnaseq/isa.assay.xlsx)` workbook.
 2. Add the template "RNASeq Assay"
 
---- 
+---
 
 ## Exercise :pencil:
 
@@ -303,19 +306,13 @@ Example workflows with three *processes* each:
 >  └─── worksheet       (e.g. "plant_growth")
 >           └─── table  (e.g. "annotationTable")
 
-
 ---
 
-# Annotation with ARCitect
+# :construction: Known issues with ARCitect and Swate (Nov 2023)
 
---- 
+1. Annotation within ARCitect is not yet available.
+2. Swate and ARCitect handle isa.study.xlsx / isa.assay.xlsx files differently.
 
-## Process Information
-
-![w:700](././../../../img/ARCitect_Assay_Data.png)
-
-<!-- TODO Update ARCitect Annotation 
-Examples, Excelsheet... --> 
 
 ---
 

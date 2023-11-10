@@ -432,6 +432,10 @@ code {
 
 ---
 
+# Ontologies
+
+---
+
 # Ontology
 
 (Sometimes also referred to "semantic model")
