@@ -1,3 +1,8 @@
+---
+layout: none
+title: CEPLAS Good Data Management Practices
+---
+
 # Good Data Management Practices
 
 - [Good Data Management Practices](#good-data-management-practices)
