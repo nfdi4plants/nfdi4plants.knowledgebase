@@ -20,7 +20,7 @@ author:
 <!-- _paginate: false -->
 <!-- _footer: "" -->
 
-![bg fit](./../custom/img/background_title_ceplas.drawio.svg)
+![bg fit](./../../../../img/background_title_ceplas.drawio.svg)
 
 **Preparation for** Session 02 &ndash; "Build your ARC"
 (May 31st, 2023)

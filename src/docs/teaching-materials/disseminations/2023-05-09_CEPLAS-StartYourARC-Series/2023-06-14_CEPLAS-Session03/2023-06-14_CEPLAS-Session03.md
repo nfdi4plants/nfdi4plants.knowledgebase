@@ -27,7 +27,7 @@ date: 2023-06-14
 <!-- _paginate: false -->
 <!-- _footer: "" -->
 
-![bg fit](./../custom/img/background_title_ceplas.drawio.svg)
+![bg fit](./../../../../img/background_title_ceplas.drawio.svg)
 
 Session 03 - Annotate your data
 June 14th, 2023
