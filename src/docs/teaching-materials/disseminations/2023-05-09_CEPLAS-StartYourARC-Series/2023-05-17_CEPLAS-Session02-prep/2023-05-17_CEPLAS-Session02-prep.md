@@ -131,7 +131,7 @@ This can be data of your current research project or an already published manusc
 
 # Resources
 
-### <img align="left" height=35px src='../custom/img/CEPLAS_Icon.jpeg'/> CEPLAS Data Science
+### <img align="left" height=35px src='./../../../../img/logos/CEPLAS/CEPLAS_Icon.jpeg'/> CEPLAS Data Science
 
 > Website: https://www.ceplas.eu/en/research/data-science-and-data-management/
 
