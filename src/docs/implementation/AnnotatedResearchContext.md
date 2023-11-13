@@ -29,7 +29,7 @@ The ARC concept relies on a structure that partitions studies, assays, workflows
 
 This results in standardized RDM procedures being process-oriented, meaning that each tool realizes or supports the researcher in a distinct task within the RDM cycle. As a consequence, this enables the desired mixed mode of application, in which both human and machine can operate processes simultaneously or asynchronously while avoiding technological barriers.
 
-![ARC](./../img/ARC.jpg)
+![ARC](./../img/ARC_BuildsOnStandards1.png)
 Figure 1: Basic ARC folder structure.
 
 ## Technical implementations
