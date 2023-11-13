@@ -104,6 +104,11 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 ---
 
+Live Demo
+
+---
+
+
 # Collect <img align="left" class="center" style="height:75px" src='./../../../img/Screenshot-RDMkit-02-collect.png'/>
 
 ![width:800](./../../../img/ARC_fillWithData_experimental.png)
@@ -153,57 +158,6 @@ object-position: 50% 60%;
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
 ---
-
-# Moving from paper to data publications
-
-![w:400px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/DataPLANT_LandingPage_Mission.svg)
-
-<!-- 
-![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/FAIRData_ClassicalPublication.svg)
-
---- -->
-
----
-
-# Publish your ARC, get a DOI
-
-![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/ARC_SeamlessPublication.svg)
-
-
----
-
-# Publish your ARC with a few clicks
-
-![w:900px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/cqc-results.png)
-
----
-
-# Validation
-
-
-![h:400](./../../../img/tpj16474-fig-0008-m-modified.png)
-
-<span class="footer-reference"> adapted from Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
-
----
-
-# Validate & publish
-
-
-![h:400](././../../../img/tpj16474-fig-0008-m.jpg)
-
-<span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
-
----
-
-# Receive a DOI
-
-![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/doi-accession.png)
-
-
----
-
-
 
 # Preserve  <img align="left" class="center" style="height:75px" src='./../../../img/Screenshot-RDMkit-05-preserve.png'/>
 
@@ -264,7 +218,7 @@ object-position: 50% 60%;
 
 ---
 
-# Plan (ARC scale) <img align="left" class="center" style="height:75px" src='./../../../img/Screenshot-RDMkit-01-plan.png'/>
+# Plan &ndash; ARC scale <img align="left" class="center" style="height:75px" src='./../../../img/Screenshot-RDMkit-01-plan.png'/>
 
 ![w:800](./../../../img/tpj16474-fig-0007-m.jpg)
 
@@ -287,7 +241,7 @@ object-position: 50% 60%;
 
 ---
 
-# Plan (proposal scale) <img align="left" class="center" style="height:75px" src='./../../../img/Screenshot-RDMkit-01-plan.png'/>
+# Plan  &ndash; proposal scale <img align="left" class="center" style="height:75px" src='./../../../img/Screenshot-RDMkit-01-plan.png'/>
 
 <span class="footer-reference">**Zhou *et al.* (2023)**, DataPLAN: a web-based data management plan generator for the plant sciences, bioRxiv 2023.07.07.548147; doi: https://doi.org/10.1101/2023.07.07.548147 </span>
 
