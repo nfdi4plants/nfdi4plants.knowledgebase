@@ -21,7 +21,7 @@ author:
 November 8th and 9th, 2023
 Dominik Brilhaus, CEPLAS Data Science
 
-![bg fit](./../images/background_title_ceplas.drawio.svg)
+![bg fit](./../../../../img/background_title_ceplas.drawio.svg)
 
 ---
 
@@ -36,7 +36,7 @@ Dominik Brilhaus, CEPLAS Data Science
 
 Dominik Brilhaus, [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-science-and-data-management/)
 
-![bg fit](./../images/background_title_ceplas.drawio.svg)
+![bg fit](./../../../../img/background_title_ceplas.drawio.svg)
 
 ---
 
@@ -201,7 +201,7 @@ GitHub: <a href="https://github.com/nfdi4plants" target="_blank">https://github.
 November 8<sup>th</sup>, 2023
 Dominik Brilhaus, CEPLAS Data Science
 
-![bg fit](./../images/background_title_ceplas.drawio.svg)
+![bg fit](./../../../../img/background_title_ceplas.drawio.svg)
 
 ---
 
@@ -1840,7 +1840,7 @@ section {
 November 10<sup>th</sup>, 2023
 Dominik Brilhaus, CEPLAS Data Science
 
-![bg fit](./../images/background_title_ceplas.drawio.svg)
+![bg fit](./../../../../img/background_title_ceplas.drawio.svg)
 
 ---
 

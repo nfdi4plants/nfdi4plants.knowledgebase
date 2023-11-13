@@ -21,7 +21,7 @@ author:
 
 Dominik Brilhaus, [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-science-and-data-management/)
 
-![bg fit](./images/background_title_ceplas.drawio.svg)
+![bg fit](./../../../img/background_title_ceplas.drawio.svg)
 
 ---
 
