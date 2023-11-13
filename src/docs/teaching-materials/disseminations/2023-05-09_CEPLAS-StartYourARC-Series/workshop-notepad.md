@@ -112,7 +112,7 @@ https://hhu.webex.com/hhu-en/j.php?MTID=me5501c7ea1607b9ee3e1edfe401598f3
 
 ## Slides
 
-... are availble in the [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/index.html). 
+... are availble in the [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/2023-05-09_CEPLAS-StartYourARC-Series/index.html). 
 
 
 ## Session 1 (May 10th)
@@ -145,7 +145,7 @@ Please let me know, if you want to join the tech check meeting - May 30th, 3-4 p
 
 ### During the workshop
 
-- [Today's slides](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/CEPLAS-StartYourARC-Series/2023-06-14_CEPLAS-Session03/2023-06-14_CEPLAS-Session03.html#30)
+- [Today's slides](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/2023-05-09_CEPLAS-StartYourARC-Series/2023-06-14_CEPLAS-Session03/2023-06-14_CEPLAS-Session03.html#30)
 - [Screen-sharing](https://hhu.webex.com/hhu-en/j.php?MTID=me5501c7ea1607b9ee3e1edfe401598f3)
 - Please download the demo data
 

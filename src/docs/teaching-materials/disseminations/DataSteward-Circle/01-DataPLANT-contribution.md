@@ -1,6 +1,5 @@
 ---
 marp: true
-layout: slides
 title: Contribution to DataPLANT
 theme: marp-theme_dataplant-ceplas-ccby
 author: 
