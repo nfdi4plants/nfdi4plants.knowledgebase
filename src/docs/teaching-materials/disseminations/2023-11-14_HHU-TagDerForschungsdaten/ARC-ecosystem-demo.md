@@ -30,15 +30,14 @@ figcaption {
 
 </style>
 
-
-# Annotated Research Contexts (ARCs)
+## Annotated Research Contexts (ARCs)
 
 <!--  _color: white; -->
 <!-- _paginate: false -->
 
 <style scoped>section {background: none; background-color: white;}</style>
 
-*A FAIR RDM journey along a (mutable) data life cycle*
+### *A FAIR RDM journey along a (mutable) data life cycle*
 
 <br>
 Tag der Forschungsdaten in NRW 2023
@@ -50,19 +49,19 @@ Dominik Brilhaus, CEPLAS Data Science
 
 ---
 
-# Annotated Research Contexts
-
-"A FAIR RDM journey along a (mutable) data life cycle"
-
-![bg left w:350](./../../../img/RDMkit-data_life_cycle_9.svg)
-
-<span class="footer-reference">https://rdmkit.elixir-europe.org, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
-
----
-
 # Data Stewardship between DataPLANT and the community  <!-- fit -->
 
 ![w:880](././../../../img/DataPLANT-collaborationCEPLAS.drawio.png)
+
+---
+
+# The research data life cycle
+
+<br>
+
+![w:350](./../../../img/RDMkit-data_life_cycle_9.svg)
+
+<span class="footer-reference">https://rdmkit.elixir-europe.org, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
 
 ---
 
@@ -78,31 +77,19 @@ Dominik Brilhaus, CEPLAS Data Science
 
 ---
 
-# What does an ARC look like?
-
-![width:950](./../../../img/ARC_fillWithData_seq2.png)
-
----
-
-# What does an ARC look like?
+# ARCs store experimental data
 
 ![width:950](./../../../img/ARC_fillWithData_seq3.png)
 
 ---
 
-# What does an ARC look like?
-
-![width:950](./../../../img/ARC_fillWithData_seq4.png)
-
----
-
-# What does an ARC look like?
+# Computations can be run inside ARCs
 
 ![width:950](./../../../img/ARC_fillWithData_seq5.png)
 
 ---
 
-# What does an ARC look like?
+# ARCs come with comprehensive metadata
 
 ![width:950](./../../../img/ARC_fillWithData_seq6.png)
 
@@ -110,16 +97,12 @@ Dominik Brilhaus, CEPLAS Data Science
 
 # ARC builds on standards
 
-![w:900](./../../../img/ARC_BuildsOnStandards1.png)
+![w:880](./../../../img/ARC_BuildsOnStandards2.png)
+
+<span class="footer-reference">https://isa-tools.org/ | https://www.commonwl.org/
+https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 ---
-
-# ARC builds on standards + Git
-
-![w:900](./../../../img/ARC_BuildsOnStandards2.png)
-
----
-
 
 # Collect <img align="left" class="center" style="height:75px" src='./../../../img/Screenshot-RDMkit-02-collect.png'/>
 
@@ -133,20 +116,6 @@ Dominik Brilhaus, CEPLAS Data Science
   - add fastq data
 
 -->
-
----
-
-# ARC builds on ISA
-
-![w:900](./../../../img/ISAmodel_ARC01_img01.svg)
-
-<span class="footer-reference">https://isa-tools.org/format/specification.html></span>
-
----
-
-# ARC builds on ISA
-
-![w:900](./../../../img/ISAmodel_ARC01_img02.svg)
 
 ---
 
@@ -171,14 +140,6 @@ object-position: 50% 60%;
 - annotate rnaseq extraction -->
 
 ---
-
-# Simple metadata annotation with Swate
-
-![width:1000](./../../../img/Swate_Overview.png)
-
----
-
-
 
 # Analyse <img align="left" class="center" style="height:75px" src='./../../../img/Screenshot-RDMkit-04-analyse.png'/>
 
@@ -333,6 +294,24 @@ object-position: 50% 60%;
 https://dmpg.nfdi4plants.org
 
 ![w:800](././../../../img/zhou2023-dataplan.png)
+
+---
+
+# The ARC ecosystem
+
+![w:850](./images/ARC-ecosystem-07.drawio.svg)
+
+---
+
+# The ARC ecosystem
+
+![w:850](./images/ARC-ecosystem-09.drawio.svg)
+
+---
+
+# The ARC ecosystem
+
+![w:850](./images/ARC-ecosystem-10.drawio.svg)
 
 ---
 
