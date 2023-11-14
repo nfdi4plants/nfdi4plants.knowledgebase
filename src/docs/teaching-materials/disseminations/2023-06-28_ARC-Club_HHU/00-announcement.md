@@ -88,7 +88,7 @@ DataHUB: https://git.nfdi4plants.org/
 - Agile, communicative, collaborative, positive
 - Technical *ad-hoc* support by DataPLANT
 
-![bg right:40% w:450px](./images/ARCClub.drawio.svg)
+![bg right:40% w:450px](./../../../img/ARCClub.drawio.svg)
 
 ## The ARC Club &ndash; Goals
 
