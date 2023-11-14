@@ -6,8 +6,11 @@ date: 2023-11-15
 
 ## See website locally
 
-1. Execute `npm run fornax`
-2. Open http://127.0.0.1:8080/docs/teaching-materials/disseminations/2023-11-15_CEPLAS-ARC-Clubs
+1. Execute
+```bash
+npm run fornax
+```
+3. Open http://127.0.0.1:8080/docs/teaching-materials/disseminations/2023-11-15_CEPLAS-ARC-Clubs/index.html
 
 
 ## Batch-compile marp slide decks to html

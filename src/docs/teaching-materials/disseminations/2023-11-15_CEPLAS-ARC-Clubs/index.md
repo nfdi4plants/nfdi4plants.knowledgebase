@@ -9,15 +9,15 @@ add sidebar: _sidebars/mainSidebar.md
 
 Here you can find the slides prepared for the November / December 2023 CEPLAS ARC Clubs
 
+## Announcement
+
 - <a href=./announcement.html target=_blank>Announcement</a>
 
 ## Slide decks
 
-### Day 1
-
 - <a href=./10-WelcomeIntro.html target=_blank>WelcomeIntro</a>
 
-### Day 2
+
 
 :warning: Links are not permanent. Slides may move elsewhere or be updated. We do our best to keep the knowledge base up-to-date &ndash; so you will find all relevant information here.
 
