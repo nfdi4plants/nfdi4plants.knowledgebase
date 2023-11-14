@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - CEPLAS ARC Clubs
+      DataPLANT documentation - CEPLAS ARC Clubs 2023
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -517,118 +517,26 @@
         </a>
       </nfdi-sidebar-eleneo>
       <h1 class="front-header">
-        CEPLAS ARC Clubs
+        CEPLAS ARC Clubs 2023
       </h1>
       <i class="help">
-        last updated at 2023-10-31
+        last updated at 2023-11-15
       </i>
       <nfdi-toc></nfdi-toc>
-      <style>
-.columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 50px;
-}
-</style>
-<p>This is a two-day adventure to prepare your lab for the ARC universe.</p>
-<p>Contact: Dominik Brilhaus; <a href="https://www.ceplas.eu/en/research/data-science-and-data-management">CEPLAS Data Science</a></p>
-<nfdi-h2 id="goals">Goals</nfdi-h2>
-<div class="columns">
-<div class="columns-left">
+      <p>Here you can find the slides prepared for the November / December 2023 CEPLAS ARC Clubs</p>
+<nfdi-h2 id="announcement">Announcement</nfdi-h2>
 <ul>
-<li>Move existing datasets into <a href="./../../../implementation/AnnotatedResearchContext.html">ARCs</a></li>
-<li>Share them via the <a href="./../../../implementation/DataHub.html">DataHUB</a>
+<li><a href=./announcement.html target=_blank>Announcement</a></li>
+</ul>
+<nfdi-h2 id="slide-decks">Slide decks</nfdi-h2>
 <ul>
-<li>This can be done privately, group-internally or publicly</li>
+<li><a href=./10-WelcomeIntro.html target=_blank>WelcomeIntro</a></li>
 </ul>
-</li>
-<li>First few steps into the ARC ecosystem
-<ul>
-<li>We will not produce &quot;perfect&quot; or &quot;final&quot; ARCs</li>
-<li>You or collaborators can pick them up from there in the future</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="columns-right">
-<img style="height:250px" src='./../../../img/ceplas-ARCs.drawio.svg'/>
-</div>
-</div>
-<nfdi-h2 id="setting">Setting</nfdi-h2>
-<div class="columns">
-<div class="columns-left">
-<ul>
-<li>Good internet connection</li>
-<li>Ideally isolated from lab // office // daily duties</li>
-<li>Access to the data to be ARCified (file share, hard disks, cloud, ...)</li>
-<li>Agile, communicative, collaborative, positive</li>
-<li>Technical <em>ad-hoc</em> support by DataPLANT</li>
-</ul>
-</div>
-<div class="columns-right">
-<img style="height:250px" src='./../../../img/ARCClub.drawio.svg'>
-</div>
-</div>
-<nfdi-h2 id="participants">Participants</nfdi-h2>
-<p>This event benefits from a good mix of participants from you lab:</p>
-<ul>
-<li>wet lab biologists</li>
-<li>dry lab biologists, coders</li>
-<li>data handlers, data users</li>
-<li>long-term lab-associates with a good project overview</li>
-</ul>
-<p>Group size: 5-10</p>
-<nfdi-h2 id="checklist-for-participants">Checklist for participants</nfdi-h2>
-<p>Please prepare the following <strong>before the workshop</strong>.</p>
-<ul>
-<li>Bring your laptop / computer</li>
-<li>Bring datasets to be ARCified</li>
-<li>Sign up for a DataHUB user account <a href="https://register.nfdi4plants.org/">https://register.nfdi4plants.org/</a>
-<ul>
-<li>Please add your <code>Project/consortium</code> (e.g. CEPLAS, SFB, TRR) and choose the role <code>Guest</code></li>
-</ul>
-</li>
-<li>Find the command-line on your machine
-<ul>
-<li>On Windows: Enter <code>powershell</code> or <code>cmd</code> into the explorer path</li>
-<li>On MacOS: Search <code>terminal</code> via spotlight (⌘ + ␣) or navigate to <code>Applications</code> → <code>Utilities</code> → <code>Terminal</code></li>
-<li>💡 No worries, we will not be using this a lot during the workshop. It's more for setup and trouble-shooting.</li>
-</ul>
-</li>
-<li>Install <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.github.com/" target="_blank">Git LFS</a>
-<ul>
-<li>Git LFS may already be installed with your Git installation (at least on Windows)</li>
-<li>For macOS we recommend to install via homebrew as described on the site above</li>
-</ul>
-</li>
-<li>Install <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index-setup.html" target="_blank">ARC Commander</a></li>
-<li>Install <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html" target="_blank">ARCitect</a></li>
-<li>Install <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html" target="_blank">Swate</a></li>
-</ul>
-<p>💡 Not all installations are perfectly straight-forward. We will start the first day with a tech-check to make sure your machine is up and running.</p>
-<nfdi-h2 id="checklist-for-co-organizers-from-lab">Checklist for co-organizers (from lab)</nfdi-h2>
-<p>To make this as smooth as possible and create an enjoyable atmosphere, we ideally need</p>
-<ul>
-<li>a room with good internet connection
-<ul>
-<li>Wifi (via Eduroam?)</li>
-<li>or LAN sockets (might require to setup LAN  network with local computing center)</li>
-<li>(optional) LAN cables</li>
-</ul>
-</li>
-<li>multi-outlet power strips</li>
-<li>a list of putative datasets or projects to be ARCified
-<ul>
-<li>discuss with the PI or participants</li>
-</ul>
-</li>
-<li>a <a href="./../../../DataHUB-Manual/datahub-CreateGroup.html" target="_blank">DataHUB user group</a> for your lab
-<ul>
-<li>(optional) invite members from your lab</li>
-</ul>
-</li>
-<li>(optional) coffee, tea, drinks, fruits and snacks, options for lunch or dinner</li>
-</ul>
+<p>⚠️ Links are not permanent. Slides may move elsewhere or be updated. We do our best to keep the knowledge base up-to-date – so you will find all relevant information here.</p>
+<nfdi-h2 id="reusing-materials">Reusing materials</nfdi-h2>
+<p>All material presented here is shared under CC BY 4.0 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a>.</p>
+<p>Contributions by <a href="https://nfdi4plants.org/">DataPLANT</a>, <a href="https://ceplas.eu">CEPLAS</a>, 📆 November, 2023.
+See individual slide decks for authors and contributions.</p>
 
       <div style="display: flex; align-items: flex-end; justify-content: space-between; margin: 1rem 0 1rem 0;">
         <div>
@@ -637,7 +545,7 @@
           </a>
         </div>
         <div>
-          <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/teaching-materials/disseminations/2023-11-15_CEPLAS-ARC-Clubs/announcement.md" style="display: block;">
+          <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/teaching-materials/disseminations/2023-11-15_CEPLAS-ARC-Clubs/index.md" style="display: block;">
             ✏️ Edit this page
           </a>
         </div>
