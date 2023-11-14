@@ -10,7 +10,7 @@ author:
   orcid: https://orcid.org/0000-0001-9021-3197
 ---
 
-# ARC Club
+# The ARC Club
 
 <!--  _color: white; -->
 <!-- _paginate: false -->
@@ -24,13 +24,23 @@ Dominik Brilhaus, CEPLAS Data Science
 
 ---
 
-# Welcome
+# Get-to-know
+
+- Lab
+- CEPLAS / TRR / MibiNet / ?
+- Favorite lab assay
+- Used code / programming language before
+- Has an ORCID
 
 ---
 
 # House-keeping
 
-Pad: 
+Pad: https://pad.hhu.de/ZG0nGuRyRo2D0T0vHnkTpQ?view
+
+- take notes
+- ask questions
+- copy / paste links, etc.
  
 ---
 
@@ -46,7 +56,6 @@ Slides will be shared via DataPLANT knowledge base
 .columns {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    font-size: 20px;
 }
 </style>
 
@@ -55,14 +64,10 @@ Slides will be shared via DataPLANT knowledge base
 
 ## Day 1
 
-Time | Topics
--------- | --------
-09:30 - 10:45 | Intro to RDM and ARC
-10:45 - 11:00 | *Short break*
-11:00 - 12:00 | ARC Hands-on
-12:30 - 13:30 | *Lunch*
-13:00 - 15:30 | Data storage and sharing
-15:30 - 16:00 | Wrap-up
+- Intro to ARC and demo
+- ARCitect Hands-on
+- Create your ARCs
+- DataHUB Features
 
 </div>
 
@@ -70,25 +75,51 @@ Time | Topics
 
 ## Day 2
 
-Time | Topics
--------- | --------
-09:30 - 10:30 | ARC Feedback session
-10:30 - 10:45 | *Short break*
-10:45 - 12:00 | ISA and Metadata
-12:30 - 13:30 | *Lunch*
-13:00 - 15:00 | Hands-on Swate
-15:00 - 15:30 | ARC ecosystem: Additional features
-15:30 - 16:00 | Wrap-up
+- ARC recap session
+- ISA and Metadata
+- Swate Hands-on
+- Annotate data in your ARC
 
 </div>
 </div>
 
 ---
 
+# The ARC Club  &ndash; Goals
 
+- Move existing datasets into ARCs
+- Share them via the DataHUB
+- First few steps into ARCs
+- You or collaborators can pick them up from there
 
+![bg right w:500](./../../../img/ceplas-ARCs.drawio.svg)
 
+---
 
+# The ARC Club &ndash; Rules
+
+1. You do not talk about **ARC Club**
+2. You **do not** talk about **ARC Club**
+
+---
+
+# Rules: perfect is the enemy of good
+
+- There is no perfect ARC
+- There is no complete ARC
+- The only bad ARCs are those that don't exist yet.
+
+<br>
+
+:rocket: Let's get started, the rest is easy :rocket:
+
+---
+
+# Let's draw a typical lab workflow from your lab :pencil:
+
+---
+
+---
 
 # Contributors
 
