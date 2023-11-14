@@ -4,7 +4,7 @@ paginate: true
 theme: marp-theme_dataplant-ceplas-ccby
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 title: ARC Ecosystem Demo
-date: 2023-09-20
+date: 2023-11-14
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -30,7 +30,7 @@ figcaption {
 
 </style>
 
-## Annotated Research Contexts (ARCs)
+# Annotated Research Contexts (ARCs)
 
 <!--  _color: white; -->
 <!-- _paginate: false -->
@@ -43,7 +43,7 @@ figcaption {
 Tag der Forschungsdaten in NRW 2023
 
 November 14<sup>th</sup>, 2023
-Dominik Brilhaus, CEPLAS Data Science
+Dominik Brilhaus, CEPLAS Data Science & Data Management
 
 ![bg fit](./../../../img/background_title_ceplas.drawio.svg)
 
@@ -104,7 +104,9 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 ---
 
-Live Demo
+<!-- _paginate: false -->
+
+<style scoped>section {background: none; background-color: white;}</style>
 
 ---
 
@@ -253,19 +255,19 @@ https://dmpg.nfdi4plants.org
 
 # The ARC ecosystem
 
-![w:850](./images/ARC-ecosystem-07.drawio.svg)
+![w:850](./images/ARC-ecosystem-07.drawio.png)
 
 ---
 
 # The ARC ecosystem
 
-![w:850](./images/ARC-ecosystem-09.drawio.svg)
+![w:850](./images/ARC-ecosystem-09.drawio.png)
 
 ---
 
 # The ARC ecosystem
 
-![w:850](./images/ARC-ecosystem-10.drawio.svg)
+![w:850](./images/ARC-ecosystem-10.drawio.png)
 
 ---
 
