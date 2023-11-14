@@ -20,7 +20,7 @@ author:
 <!-- _paginate: false -->
 <!-- _footer: "" -->
 
-![bg fit](./../custom/img/background_title_ceplas.drawio.svg)
+![bg fit](./../../../../img/background_title_ceplas.drawio.svg)
 
 **Preparation for** Session 02 &ndash; "Build your ARC"
 (May 31st, 2023)
@@ -131,7 +131,7 @@ This can be data of your current research project or an already published manusc
 
 # Resources
 
-### <img align="left" height=35px src='../custom/img/CEPLAS_Icon.jpeg'/> CEPLAS Data Science
+### <img align="left" height=35px src='./../../../../img/logos/CEPLAS/CEPLAS_Icon.jpeg'/> CEPLAS Data Science
 
 > Website: https://www.ceplas.eu/en/research/data-science-and-data-management/
 
