@@ -30,7 +30,7 @@ figcaption {
 
 </style>
 
-# Annotated Research Contexts (ARCs)
+# The ARC ecosystem
 
 <!--  _color: white; -->
 <!-- _paginate: false -->
@@ -40,10 +40,6 @@ figcaption {
 ### *A FAIR RDM journey along a (mutable) data life cycle*
 
 <br>
-Tag der Forschungsdaten in NRW 2023
-
-November 14<sup>th</sup>, 2023
-Dominik Brilhaus, CEPLAS Data Science & Data Management
 
 ![bg fit](./../../../img/background_title_ceplas.drawio.svg)
 

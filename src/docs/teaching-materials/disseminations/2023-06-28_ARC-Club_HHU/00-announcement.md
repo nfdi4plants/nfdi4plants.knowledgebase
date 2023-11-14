@@ -44,7 +44,7 @@ June 28th, 2023
 <style scoped>
 
 section {
-  background-image: url('./images/DataHUB-icon-placeholder.drawio.svg');
+  background-image: url('././../../../img/DataHUB-icon-placeholder.drawio.svg');
   background-repeat: no-repeat;  
   background-size: 10%;
   background-position: 96% 5%;
@@ -62,16 +62,16 @@ DataHUB: https://git.nfdi4plants.org/
 
 ## Status quo: Institute FileShare
 
-![w:900](images/InsituteFileShare01.drawio.svg)
+![w:900](./../../../img/InsituteFileShare01.drawio.svg)
 
 
 ## Moving from FileShare to DataHUB
 
-![w:900](images/InsituteFileShare02toDataHUB.drawio.svg)
+![w:900](./../../../img/InsituteFileShare02toDataHUB.drawio.svg)
 
 ## Moving from FileShare to DataHUB &ndash; *via* ARCs
 
-![w:900](images/InsituteFileShare03toDataHUBviaARC.drawio.svg)
+![w:900](./../../../img/InsituteFileShare03toDataHUBviaARC.drawio.svg)
 
 
 ## There's a tiny burden
@@ -88,7 +88,7 @@ DataHUB: https://git.nfdi4plants.org/
 - Agile, communicative, collaborative, positive
 - Technical *ad-hoc* support by DataPLANT
 
-![bg right:40% w:450px](./images/ARCClub.drawio.svg)
+![bg right:40% w:450px](./../../../img/ARCClub.drawio.svg)
 
 ## The ARC Club &ndash; Goals
 

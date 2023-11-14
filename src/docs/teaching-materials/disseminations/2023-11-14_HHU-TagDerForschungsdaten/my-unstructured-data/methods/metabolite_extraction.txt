@@ -1,0 +1,9 @@
+# Metabolite Profiling - Extraction
+
+Each of the samples was analyzed one time via gas chromatography-mass spectrometry (GC-MS) using an adapted protocol from Lisec et al. (2006). Metabolites were extracted from
+4.9 - 8.2 mg dry samples with 1.5 ml of a 1:2.5:1 H2O:methanol:chloroform (v:v:v) mixture pre-cooled to -20 ◦C, then mixed on a rotator for 10 min and centrifuged at
+20,000 g for 2 min (both at 4 ◦C). A total of 50 μl of the supernatant were dried completely in a vacuum concentrator and derivatized in two steps via an MPS-Dual-head
+autosampler (Gerstel): (1) with 10 μl methoxyamine hydrochloride (Acros organics; freshly prepared at 20 mg/ml in pure pyridine (Sigma-Aldrich)) and shaking at 37 ◦C
+for 90 min, (2) adding 90 μl N-Methyl-N-(trimethylsilyl)trifluoroacetamide (MSTFA; Macherey-Nagel) and shaking at 37 ◦C for 30 min. 
+
+Lisec, J., Schauer, N., Kopka, J., Willmitzer, L., and Fernie, A. R. (2006). Gas chromatography mass spectrometry-based metabolite profiling in plants. Nature Protocols, 1(1):387–396.
