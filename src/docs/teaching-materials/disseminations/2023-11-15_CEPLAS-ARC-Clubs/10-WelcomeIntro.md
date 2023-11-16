@@ -29,9 +29,10 @@ Dominik Brilhaus, CEPLAS Data Science
 
 - Lab
 - CEPLAS / TRR / MibiNet / ?
-- Favorite lab assay
+- My favorite lab assay
 - Used code / programming language before
-- Has an ORCID
+- Have an ORCID
+- My motivation / expectation
 
 ---
 

@@ -12,3 +12,6 @@ add sidebar: _sidebars/mainSidebar.md
 - <a href=./26-ARCitect-HandsOn.html target=_blank>ARCitect-HandsOn</a>
 - <a href=./42-DataHUB.html target=_blank>DataHUB</a>
 - <a href=./43-DataHUB-HandsOn.html target=_blank>DataHUB-HandsOn</a>
+- <a href=./60-MetadataISA.html target=_blank>MetadataISA</a>
+- <a href=./70-Swate-HandsOn.html target=_blank>Swate-HandsOn</a>
+- <a href=./90-ARCing.html target=_blank>ARCing</a>
