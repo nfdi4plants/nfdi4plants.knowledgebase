@@ -23,7 +23,9 @@ Please install <a href="https://git-scm.com/downloads" target="_blank">Git</a> a
 2. Download the Linux AppImage ARCitect-x.x.x.AppImage
 
 ### Make the ARCitect executable
-##### (A) with the user interface
+
+#### (A) with the user interface
+
 - open the folder where the AppImage is currently saved (likely in Downloads)
 - (optional) move the file to a location where you want it saved
 - right-click the file and select properties
@@ -38,7 +40,8 @@ Please install <a href="https://git-scm.com/downloads" target="_blank">Git</a> a
 
 <img src="./../img/arcitect_linux_checkbox.png" style="width:50%;display: block; margin: 20px">
 
-##### (B) from the command line (you might need specific rights for this)
+#### (B) from the command line (you might need specific rights for this)
+
 - open a terminal
 - move to the directory where you have saved your AppImage (e.g. Downloads)
 ```
