@@ -28,15 +28,15 @@ Please install <a href="https://git-scm.com/downloads" target="_blank">Git</a> a
 - (optional) move the file to a location where you want it saved
 - right-click the file and select properties
 
-<img src="./../arcitect_linux_rightclick.png" style="width:50%;display: block; margin: 20px">
+<img src="./../img/arcitect_linux_rightclick.png" style="width:50%;display: block; margin: 20px">
 
 - go to the "permissions" tab and tick the field "execute"
 
-<img src="./../arcitect_linux_permissions.png" style="width:50%;display: block; margin: 20px">
+<img src="./../img/arcitect_linux_permissions.png" style="width:50%;display: block; margin: 20px">
 
 - now double-clicking the AppImage should start the ARCitect
 
-<img src="./../arcitect_linux_checkbox.png" style="width:50%;display: block; margin: 20px">
+<img src="./../img/arcitect_linux_checkbox.png" style="width:50%;display: block; margin: 20px">
 
 ##### (B) from the command line (you might need specific rights for this)
 - open a terminal
