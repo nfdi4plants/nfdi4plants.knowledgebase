@@ -75,7 +75,33 @@ This event benefits from a good mix of participants from you lab:
 - data handlers, data users
 - long-term lab-associates with a good project overview
 
-Group size: 5-10
+Group size: 5-10 (for the interactive parts)
+
+## Tentative agenda
+
+We will mostly introduce concepts and tools in the mornings.  
+The afternoons focus on interactive parts. Here you have the chance to use the tools with your own data while we are there to help. 
+
+**Day 1**
+
+Morning
+- Intro to ARC and demo
+- ARCitect Hands-on
+
+Afternoon
+- Create your ARCs
+- DataHUB Features
+
+**Day 2**
+
+Morning
+- ARC recap session
+- ISA and Metadata
+- Swate Hands-on
+
+Afternoon
+- Annotate data in your ARC
+- Wrap-up
 
 ## Checklist for participants
 
@@ -85,6 +111,13 @@ Please prepare the following **before the workshop**.
 - Bring datasets to be ARCified
 - Sign up for a DataHUB user account https://register.nfdi4plants.org/
   - Please add your `Project/consortium` (e.g. CEPLAS, SFB, TRR) and choose the role `Guest`
+- Install <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html" target="_blank">ARCitect</a>
+- Install <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html" target="_blank">Swate</a>
+
+:bulb: Not all installations are perfectly straight-forward. We will start the first day with a tech-check to make sure your machine is up and running.
+
+### Optional (for coders or trouble-shooting)
+
 - Find the command-line on your machine
   - On Windows: Enter `powershell` or `cmd` into the explorer path
   - On MacOS: Search `terminal` via spotlight (&#8984; + &#9251;) or navigate to `Applications` -> `Utilities` -> `Terminal`
@@ -93,10 +126,6 @@ Please prepare the following **before the workshop**.
   - Git LFS may already be installed with your Git installation (at least on Windows)
   - For macOS we recommend to install via homebrew as described on the site above
 - Install <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index-setup.html" target="_blank">ARC Commander</a>
-- Install <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html" target="_blank">ARCitect</a>
-- Install <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html" target="_blank">Swate</a>
-
-:bulb: Not all installations are perfectly straight-forward. We will start the first day with a tech-check to make sure your machine is up and running.
 
 ## Checklist for co-organizers (from lab)
 
@@ -111,4 +140,3 @@ To make this as smooth as possible and create an enjoyable atmosphere, we ideall
   - discuss with the PI or participants
 - a <a href="./../../../DataHUB-Manual/datahub-CreateGroup.html" target="_blank">DataHUB user group</a> for your lab
   - (optional) invite members from your lab
-- (optional) coffee, tea, drinks, fruits and snacks, options for lunch or dinner
