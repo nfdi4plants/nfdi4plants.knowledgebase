@@ -117,7 +117,7 @@ The following table gives an overview of ontologies included in the SwateDB that
 *Plant-specific and general scientific ontologies included in the SwateDB*
 </br>
 
-|**Ontology ID**|**Ontology Name**|**Domain**|**ISA Entity**|
+|Ontology ID|Ontology Name|Domain|ISA Entity|
 |:----|:----|:----|:----|
 |**Plant-specific ontologies**| | | |
 |DPBO|DataPLANT Biology Ontology|Broker ontology for plant sciences|Investigation, Study, Assay|
@@ -136,6 +136,7 @@ The following table gives an overview of ontologies included in the SwateDB that
 |OBI|Ontology for Biomedical Investigations|Life-science and clinical investigations|Investigation, Study, Assay|
 |PATO|Phenotype And Trait Ontology|Phenotypic qualities (properties, attributes or characteristics)|Assay|
 |UO|Unit Ontology|Metrical units for use in conjunction with PATO|Study, Assay|
+
 </br>
 
 ### **Plant-specific ontologies**
