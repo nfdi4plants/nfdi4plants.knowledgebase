@@ -27,6 +27,7 @@
 ### [Best Practices For Data Annotation](/docs/guides/BestPracticesForDataAnnotation.html)
 ## [DataHUB](/docs/implementation/DataHub.html)
 ## [DataPLAN](/docs/implementation/DataPLAN.html)
+## [Ontology Service Landscape](/docs/implementation/OntologyServiceLandscape.html)
 
 # [ARC Commander Manual](/docs/ArcCommanderManual/index.html)
 ## [Setup](/docs/ArcCommanderManual/index-setup.html)
