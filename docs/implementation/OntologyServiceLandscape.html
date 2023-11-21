@@ -1,0 +1,801 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - Ontology Service Lanscape
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="./../../style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <div slot="searchbar">
+        <link href="/nfdi4plants.knowledgebase/pagefind/pagefind-ui.css" rel="stylesheet"/>
+        <script src="/nfdi4plants.knowledgebase/pagefind/pagefind-ui.js" type="text/javascript"></script>
+        <div id="search"></div>
+        <script>
+          window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ 
+        element: "#search",
+        baseUrl: "/nfdi4plants.knowledgebase"
+    });
+});
+        </script>
+      </div>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/index.html">
+          Home
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/fundamentals/index.html">
+          Fundamentals
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/ResearchDataManagement.html">
+          Research Data Management
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/FairDataPrinciples.html">
+          FAIR Data Principles
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/Metadata.html">
+          Metadata
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/Ontologies.html">
+          Ontologies
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataSharing.html">
+          Data Sharing
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataPublications.html">
+          Data Publications
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataManagementPlan.html">
+          Data Management Plan
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/VersionControlGit.html">
+          Version Control & Git
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">
+          Public Data Repositories
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/PersistentIdentifiers.html">
+          Persistent Identifiers
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/implementation/index.html">
+          DataPLANT Implementations
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">
+            Annotated Research Context
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ARCUserJourney.html">
+            User Journey
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">
+            ARC Commander
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html">
+            QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart_expert.html">
+            QuickStart (Experts)
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/implementation/Swate.html">
+            Swate
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
+            QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_walkthrough.html">
+            Walk-through
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/BestPracticesForDataAnnotation.html">
+            Best Practices For Data Annotation
+          </a>
+        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/DataHub.html">
+          DataHUB
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/DataPLAN.html">
+          DataPLAN
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/OntologyServiceLandscape.html">
+          Ontology Service Landscape
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index.html">
+          ARC Commander Manual
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index-setup.html">
+            Setup
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_dependencies.html">
+            Installing Dependencies
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/git_config.html">
+            Configure Git
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation.html">
+              Installing the ARC Commander
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_windows.html">
+              Windows
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_macos.html">
+              MacOS
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_linux.html">
+              Linux
+            </a>
+          </nfdi-sidebar-eleneo>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_access.html">
+            DataHUB Access
+          </a>
+        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_before_we_start.html">
+          Before we start
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_initialization.html">
+            Central Functions
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_initialization.html">
+            Initialize
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_get.html">
+            Clone
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_connect.html">
+            Connect
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_synchronization.html">
+            Synchronize
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_config.html">
+            Configure
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_branch.html">
+            Branch
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa.html">
+            ISA Metadata Functions
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa.html">
+              ISA Metadata
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa_investigation.html">
+              Investigation
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa_study.html">
+              Study
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa_assay.html">
+              Assay
+            </a>
+          </nfdi-sidebar-eleneo>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_update.html">
+            Update
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_export.html">
+            Export
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html">
+          ARCitect Manual
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCitect-Manual/arcitect_installation_windows.html">
+          Installation - Windows
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCitect-Manual/arcitect_installation_macos.html">
+          Installation - macOS
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCitect-Manual/arcitect_installation_linux.html">
+          Installation - Linux
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart.html">
+          QuickStart
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/SwateManual/index.html">
+          Swate Manual
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html">
+            Setup
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html">
+            Installing Swate
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_browser.html">
+            Browser
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_desktop.html">
+            Windows Desktop via installer (beta-stage)
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_manual.html">
+            Windows Desktop manually (recommended)
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_manual_macos.html">
+            macOS Desktop manually (recommended)
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_organization.html">
+            Organization-wide
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs02-Annotation-Table.html">
+            Core Features
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs02-Annotation-Table.html">
+            Annotation tables
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs03-Building-Blocks.html">
+              Building blocks
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_types.html">
+              Building Block Types
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_add.html">
+              Adding a Building Block
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_units.html">
+              Using Units with Building Blocks
+            </a>
+          </nfdi-sidebar-eleneo>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs04-Ontology-Term-Search.html">
+            Filling cells with ontology terms
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs07-Advanced-Term-Search.html">
+            Advanced Term Search
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs05-Templates.html">
+              Templates
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_template-contribution.html">
+              Contribute Templates
+            </a>
+          </nfdi-sidebar-eleneo>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Using-the-File-Picker.html">
+            File Picker
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs06-ISA-JSON.html">
+            Expert Features
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs06-ISA-JSON.html">
+            ISA-JSON
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/index.html">
+          DataHUB Manual
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-overview.html">
+          Overview
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-userSettings.html">
+            User Settings
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub-GeneratePAT.html">
+            Generate a Personal Access Token (PAT)
+          </a>
+        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-projectsPanel.html">
+          Projects Panel
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-ARCPanel.html">
+            ARC Panel
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-fork.html">
+            Forks
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-files.html">
+            Working with files
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-ARCSettings.html">
+            ARC Settings
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-ARCWiki.html">
+            ARC Wiki
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-groupsPanel.html">
+            Groups Panel
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-CreateGroup.html">
+            Create a new user group
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-data-publications.html">
+            Data publications
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-data-publications-cqc.html">
+            Passing Continuous Quality Control
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-data-publications-archigator.html">
+            Submitting ARCs with ARChigator
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-data-publications-status.html">
+            Track publication status
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-data-publications-dois.html">
+            Use your DOIs
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/guides/index.html">
+          Guides
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ARCUserJourney.html">
+          ARC User Journey
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-CreateYourARC.html">
+            Create your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html">
+            ARC Commander QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart_expert.html">
+            ARC Commander QuickStart (Experts)
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart.html">
+            ARCitect QuickStart
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-AnnotateDataInYourARC.html">
+            Annotate Data in your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/isa_AnnotationPrinciples.html">
+            Annotation Principles
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/isa_FileTypes.html">
+            ISA File Types
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/BestPracticesForDataAnnotation.html">
+            Best Practices For Data Annotation
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
+            Swate QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_walkthrough.html">
+            Swate Walk-through
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-ShareYourARC.html">
+            Share your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub_register.html">
+            Register at the DataHUB
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub_InviteCollaborators.html">
+            Invite collaborators to your ARC
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-RecommendedARCPractices.html">
+            Recommended ARC practices
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_SyncingRecommendation.html">
+            Syncing recommendation
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_gitignore.html">
+            Keep files from syncing to the DataHUB
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_WorkingWithLargeDataFiles.html">
+            Working with large data files
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_AddingExternalData.html">
+            Adding external data to the ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ARC-enablingPlatforms.html">
+            ARCs in Enabling Platforms
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-Contribute.html">
+            Contribute
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_template-contribution.html">
+            Swate Templates
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/CONTRIBUTING.html">
+            Knowledge Base
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/index.html">
+          Teaching Materials
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/slides.html">
+            Slides
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/slides/DataPLANT.html">
+            DataPLANT
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/slides/ARC.html">
+            Annotated Research Context
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/videos.html">
+            Videos
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/videos/StartYourARC.html">
+            Start Your ARC Series
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/slides/Events.html">
+            Events 2023
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/2023-11-08_CEPLAS-module/index.html">
+            Nov: CEPLAS PhD Module
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/2023-10-CSCS-CEPLAS-StartYourARC/index.html">
+            Oct: CSCS CEPLAS Start Your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/2023-09-MibiNet-CEPLAS-StartYourARC/index.html">
+            Sept: MibiNet CEPLAS Start Your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/2023-07-17_rptu-summerschool-on-rdm/index.html">
+            July: RPTU Summer School on RDM
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/DataSteward-Circle/index.html">
+            July: Data Steward Circle
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/2023-05-09_CEPLAS-StartYourARC-Series/index.html">
+            May: CEPLAS Start Your ARC Series
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/faqs/faqs.html">
+          Frequently Asked Questions
+        </a>
+      </nfdi-sidebar-eleneo>
+      <h1 class="front-header">
+        Ontology Service Lanscape
+      </h1>
+      <i class="help">
+        last updated at 2023-11-21
+      </i>
+      <nfdi-toc></nfdi-toc>
+      <nfdi-h1 id="the-dataplant-metadata-annotation-and-ontology-service-landscape">The DataPLANT Metadata Annotation and Ontology Service Landscape</nfdi-h1>
+<p>The <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">Annotated Research Context (ARC) </a> as a concept for systematic storage of data and metadata contributes to FAIRness (findability, accessibility, interoperability and reusability) of data throughout the whole research data life cycle. This is achieved by relying on established standards, which include the use of unambiguous language for the description of the data via ontologies and controlled vocabularies. <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/fundamentals/Ontologies.html">Ontologies</a> are collections of concepts, or terms, relevant to a specific research domain, as well as the relations between them. Terms can include additional annotations, such as a human readable label, definition, synonyms and equivalent terms. Most importantly, each term must include a unique, permanent identifier, such as a persistent identifier (PID), which allows for the term to be forever identified. By defining a common vocabulary, ontologies enable data to be shared, integrated, and reused across different systems and applications in a standardized way. They help to ensure that data is semantically interoperable, which means that it can be understood and interpreted consistently by different users and applications. In order to allow ontology-driven metadata annotation, DataPLANT provides a dynamic service and tool <a href="https://doi.org/10.48550/arXiv.2309.07129">landscape</a>.
+</br></p>
+<p><img src="./../img/Ontology_landscape_Fig1.png" alt="Alt-Text" />
+</br></p>
+<p><em>Tools and components of the DataPLANT metadata annotation toolchain</em>
+</br></p>
+<nfdi-h2 id="swate">Swate</nfdi-h2>
+<p>The spreadsheet-based tool Swate allows ontology-driven metadata annotation of experimental workflows. It links Microsoft Excel to a set of ontologies (saved in the Swate database SwateDB) that can be searched for terms when generating metadata description files. Swate already provides a selection of different templates for metadata description that e.g. fulfill requirements for endpoint repositories, but it is also possible to generate own templates. More information on how to use Swate (including best practices for data annotation) can be found <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/Swate.html">here</a>.
+</br></p>
+<nfdi-h3 id="swatedb-and-swobup">SwateDB and Swobup</nfdi-h3>
+<p>A collection of ontologies that can be used to annotate metadata sheets via Swate are stored and structured within the SwateDB. These include a collection of external ontologies relevant to plant data as well as the DataPLANT Biology Ontology (DPBO). Detailed descriptions of the ontologies that are currently included in the SwateDB can be found below. The <a href="https://github.com/nfdi4plants/Swobup">Swate OBO Updater</a> (Swobup) facilitates the integration of new ontologies by automatically reading newly added ontologies in the database.
+</br></p>
+<nfdi-h2 id="ontologies-in-dataplant-best-practices">Ontologies in DataPLANT – Best practices</nfdi-h2>
+<p>Please consider reading our background article about <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/fundamentals/Ontologies.html">ontologies</a> before continuing.
+</br></p>
+<nfdi-h3 id="how-can-i-find-a-certain-ontology-term-for-my-data-annotation">How can I find a certain ontology term for my data annotation?</nfdi-h3>
+<p>Let‘s imagine you decide to use Swate to annotate metadata of your next specific investigation. Swate provides the possibility to use ontologies via the <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs04-Ontology-Term-Search.html">‘Ontology term search’</a> tab. There are several external ontologies as well as our own DPBO available in the SwateDB. When searching for terms, vocabulary from these ontologies will be suggested.
+</br></p>
+<p>Since not every term or ontology is currently available in Swate, you can contribute to the SwateDB and DPBO by requesting terms or ontologies to be added.
+</br></p>
+<nfdi-h3 id="your-contribution-missing-ontologies-and-terms">Your contribution – Missing ontologies and terms</nfdi-h3>
+<p><em>Do you need many or all terms from another external ontology?</em></br>
+<em>Do you miss a specific term or a specific definition for a term?</em></br>
+<em>Do you want to improve an existing term?</em></br>
+<em>Do you miss a relation between terms?</em></br></p>
+<p>If you have answered yes to any of these questions, then we invite you to contribute to the DataPLANT Ontology Landscape!
+</br></p>
+<p><em>But how can you contribute?</em>
+</br></p>
+<p>You can either open an issue on <a href="https://github.com/nfdi4plants/nfdi4plants_ontology">GitHub</a> or you can contact us via the <a href="https://support.nfdi4plants.org/">Helpdesk</a>. A detailed description of how to contribute via a GitHub issue can be found <a href="https://github.com/nfdi4plants/nfdi4plants_ontology/blob/main/README.md">here</a>.
+On our GitHub page we provide a few instructions and issue templates that offer guidance for your contribution:
+</br></p>
+<p><img src="./../img/Ontology_landscape_Fig2.png" alt="Alt-Text" />
+</br></p>
+<p><em>Issue templates for importing or changing terms and ontologies in the SwateDB</em>
+</br></p>
+<p>If you are unsure about what kind of issue template to use, you can always use an empty issue to explain your wishes.
+</br></p>
+<p><em>What happens after you have submitted an issue?</em>
+</br></p>
+<p>Our DataPLANT ontology curation team reviews your suggestion and then incorporates the term (including any relations that are necessary) into the DPBO or the full ontology into the SwateDB.
+</br></p>
+<p><img src="./../img/Ontology_landscape_Fig3.png" alt="Alt-Text" />
+</br></p>
+<p><em>Integration of new terms into the DPBO</em>
+</br></p>
+<p>The term or ontology is then directly available in Swate via the “Ontology Term Search” tab. If the term is considered to be relevant for the general scientific community, we will also suggest the integration of this term to a suitable external ontology.
+</br></p>
+<nfdi-h3 id="terminology-services">Terminology services</nfdi-h3>
+<p>Several ontology search services (also called terminology services) are available that offer definitions of searched terms, list related terms and provide extensive information on the listed ontologies. These can be helpful when deciding on terms for metadata annotation or when suggesting terms or ontologies to be added to the SwateDB.
+</br></p>
+<p>Some relevant ontology search services for plant sciences are:</p>
+<ul>
+<li><a href="https://obofoundry.org/">Open Biological and Biomedical Ontology (OBO) Foundry</a></li>
+<li><a href="http://agroportal.lirmm.fr/">Agroportal</a></li>
+<li><a href="https://planteome.org/">Planteome</a></li>
+<li><a href="https://ontobee.org/">Ontobee</a></li>
+<li><a href="https://www.bioontology.org/">BioPortal</a></li>
+<li><a href="https://www.ebi.ac.uk/ols/index">The Ontology Lookup Service</a></li>
+<li><a href="https://terminology.tib.eu/ts">TIB Terminology Service</a></li>
+</ul>
+<nfdi-h2 id="ontologies-included-in-the-swatedb">Ontologies included in the SwateDB</nfdi-h2>
+<p>Plant investigations are often complex, incorporating a diverse range of methods and techniques. For this reason, it will often be necessary to use terms from a variety of ontologies when annotating metadata for a plant experiment, as illustrated in the figure below. The review by <a href="https://doi.org/10.48550/arXiv.2309.07129">Dumschott et al. 2023</a> provides an overview of relevant ontologies and their application for metadata annotation in the field of plant sciences.
+</br></p>
+<p><img src="./../img/Ontology_landscape_Fig4.png" alt="Alt-Text" />
+</br></p>
+<p><em>Figure from <a href="https://doi.org/10.48550/arXiv.2309.07129">Dumschott et al. 2023</a>, depicting how ontologies are used to annotate different aspects of an investigation.</em>
+</br></p>
+<p>The ontologies in the SwateDB can be categorized into general scientific ontologies and plant-specific ontologies. General scientific ontologies are those that can be applied to the broader scientific domain and not just to a specific field of research such as plant sciences. They include upper-level ontologies (foundational frameworks for other ontologies to build upon in order to increase their interoperability) and ontologies that focus on a specific domain, such as environmental conditions, traits and phenotypes of organisms, or experimental methods and setups. Several ontologies are particularly well-suited for describing and annotating experiments, phenotypic traits, structures and experimental conditions relating to plant research, which we categorize as plant-specific ontologies.
+</br></p>
+<p>The following table gives an overview of ontologies included in the SwateDB that are relevant to experiment descriptions within the plant sciences as well as the <a href="https://isa-specs.readthedocs.io/en/latest/isamodel.html">ISA entity</a> (investigation, study, assay) they will most likely be of relevance for. A more detailed description of the listed ontologies is given below.
+</br></p>
+<p><em>Plant-specific and general scientific ontologies included in the SwateDB</em>
+</br></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Ontology ID</th>
+<th style="text-align: left;">Ontology Name</th>
+<th style="text-align: left;">Domain</th>
+<th style="text-align: left;">ISA Entity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Plant-specific ontologies</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">DPBO</td>
+<td style="text-align: left;">DataPLANT Biology Ontology</td>
+<td style="text-align: left;">Broker ontology for plant sciences</td>
+<td style="text-align: left;">Investigation, Study, Assay</td>
+</tr>
+<tr>
+<td style="text-align: left;">PECO</td>
+<td style="text-align: left;">Plant Experimental Conditions Ontology</td>
+<td style="text-align: left;">Plant experimental conditions</td>
+<td style="text-align: left;">Investigation, Study</td>
+</tr>
+<tr>
+<td style="text-align: left;">PPEO</td>
+<td style="text-align: left;">Plant Phenotype Experiment Ontology</td>
+<td style="text-align: left;">Plant phenotypes and traits (implementation of the Minimal Information About Plant Phenotyping Experiment)</td>
+<td style="text-align: left;">Investigation, Study, Assay</td>
+</tr>
+<tr>
+<td style="text-align: left;">PO</td>
+<td style="text-align: left;">Plant Ontology</td>
+<td style="text-align: left;">Plant anatomy, morphology and growth and development</td>
+<td style="text-align: left;">Study</td>
+</tr>
+<tr>
+<td style="text-align: left;">TO</td>
+<td style="text-align: left;">Plant Trait Ontology</td>
+<td style="text-align: left;">Phenotypic traits in plants</td>
+<td style="text-align: left;">Study, Assay</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>General scientific ontologies-domain specific</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">ChEBI</td>
+<td style="text-align: left;">Chemical Entities of Biological Interest Ontology</td>
+<td style="text-align: left;">Molecular entities of biological interest</td>
+<td style="text-align: left;">Assay</td>
+</tr>
+<tr>
+<td style="text-align: left;">EFO</td>
+<td style="text-align: left;">Experimental Factor Ontology</td>
+<td style="text-align: left;">Experimental variables</td>
+<td style="text-align: left;">Investigation, Study</td>
+</tr>
+<tr>
+<td style="text-align: left;">ENVO</td>
+<td style="text-align: left;">Environment Ontology</td>
+<td style="text-align: left;">Environmental systems, components and processes</td>
+<td style="text-align: left;">Investigation, Study</td>
+</tr>
+<tr>
+<td style="text-align: left;">MOD</td>
+<td style="text-align: left;">Protein modification (PSI-MOD)</td>
+<td style="text-align: left;">Protein chemical modifications, classified by molecular structure or amino acid</td>
+<td style="text-align: left;">Study, Assay</td>
+</tr>
+<tr>
+<td style="text-align: left;">MS</td>
+<td style="text-align: left;">PSI Mass Spectrometry Ontology</td>
+<td style="text-align: left;">Proteomics mass spectrometry</td>
+<td style="text-align: left;">Assay</td>
+</tr>
+<tr>
+<td style="text-align: left;">NCBITAXON</td>
+<td style="text-align: left;">National Center for Biotechnology Information (NCBI) Organismal Classification</td>
+<td style="text-align: left;">NCBI organismal taxonomy</td>
+<td style="text-align: left;">Investigation, Study</td>
+</tr>
+<tr>
+<td style="text-align: left;">NCIT</td>
+<td style="text-align: left;">National Cancer Institute Thesaurus</td>
+<td style="text-align: left;">Broad coverage of the cancer domain</td>
+<td style="text-align: left;">Study, Assay</td>
+</tr>
+<tr>
+<td style="text-align: left;">OBI</td>
+<td style="text-align: left;">Ontology for Biomedical Investigations</td>
+<td style="text-align: left;">Life-science and clinical investigations</td>
+<td style="text-align: left;">Investigation, Study, Assay</td>
+</tr>
+<tr>
+<td style="text-align: left;">PATO</td>
+<td style="text-align: left;">Phenotype And Trait Ontology</td>
+<td style="text-align: left;">Phenotypic qualities (properties, attributes or characteristics)</td>
+<td style="text-align: left;">Assay</td>
+</tr>
+<tr>
+<td style="text-align: left;">UO</td>
+<td style="text-align: left;">Unit Ontology</td>
+<td style="text-align: left;">Metrical units for use in conjunction with PATO</td>
+<td style="text-align: left;">Study, Assay</td>
+</tr>
+</tbody>
+</table>
+</br>
+<nfdi-h3 id="plant-specific-ontologies">Plant-specific ontologies</nfdi-h3>
+<nfdi-h4 id="the-dataplant-biology-ontology-dpbo"><a href="https://github.com/nfdi4plants/nfdi4plants_ontology">The DataPLANT Biology Ontology (DPBO)</a></nfdi-h4>
+<p>The DPBO is a broker ontology that collects missing vocabulary that is required by plant scientists for annotating their metadata. Users can suggest new terms or improvements to already existing terms by posting an issue with the relevant information to <a href="https://github.com/nfdi4plants/nfdi4plants_ontology">GitHub</a>. Once a term suggestion or improvement has been submitted, the ontology team incorporates the information into the DPBO. This process involves assigning a unique ID to the term, adding the term definition and relevant synonyms, and incorporating the term into the ontology structure by defining relationships to other terms. The team will also suggest the term to be added to the relevant external ontology.
+</br></p>
+<nfdi-h4 id="plant-experimental-conditions-ontology-peco"><a href="https://obofoundry.org/ontology/peco.html">Plant Experimental Conditions Ontology (PECO)</a></nfdi-h4>
+<p>The PECO is a standardized and structured vocabulary used to describe experimental conditions in plant research. It provides a set of terms and definitions that researchers can use to annotate their experiments, allowing for consistent and detailed reporting of key variables such as growth conditions, treatments, and environmental factors in plant-related studies. PECO facilitates data integration, sharing, and analysis across different plant research studies and databases.
+</br></p>
+<nfdi-h4 id="plant-phenotype-experiment-ontology-ppeo"><a href="https://agroportal.lirmm.fr/ontologies/PPEO">Plant Phenotype Experiment Ontology (PPEO)</a></nfdi-h4>
+<p>For ensuring sufficient description of metadata for plant phenotyping experiments, the <a href="https://www.miappe.org/">‘Minimum Information About a Plant Phenotype Experiment’ (MIAPPE) standards</a> <a href="https://doi.org/10.1111/nph.16544">(Papoutsoglou et al. 2020)</a> have been developed. For easier implementation of MIAPPE for metadata description the associated ontology PPEO was generated. It covers the different sections and associated attributes necessary for describing plant phenotyping experiments in accordance with MIAPPE, and focuses on the MIAPPE structure rather than defining terms for metadata description. In Swate, the ontology ‘MIAPPE’ is used in the place of PPEO.
+</br></p>
+<nfdi-h4 id="plant-ontology-po"><a href="https://obofoundry.org/ontology/po.html">Plant Ontology (PO)</a></nfdi-h4>
+<p>The PO covers plant anatomy, morphology and developmental stages of both plants and plant parts. The primary aim of the PO is to bridge the diversity of data that can be collected during plant research- from genetics, molecular and cellular biology to taxonomy and botany research. The PO is divided into two main branches: ‘plant anatomical entity’ and ‘plant structure development stage’. The branch ‘plant anatomical entity’ includes terms for plant morphology and anatomy, such as structures, whereas the branch ‘plant structure development stage’ includes terms for developmental stages of different plant parts.
+</br></p>
+<nfdi-h4 id="plant-trait-ontology-to"><a href="https://obofoundry.org/ontology/to.html">Plant Trait Ontology (TO)</a></nfdi-h4>
+<p>The TO is a standardized vocabulary used to describe and categorize various traits and characteristics observed in plants. It provides a structured set of terms and definitions that researchers can use to annotate plant phenotyping data, encompassing a wide range of traits, including morphological, physiological, and ecological features. The TO facilitates data integration, sharing, and analysis across different plant research studies and databases, promoting better understanding and comparison of plant traits among various species and experimental conditions.
+</br></p>
+<nfdi-h3 id="general-scientific-ontologies">General scientific ontologies</nfdi-h3>
+<nfdi-h4 id="chemical-entities-of-biological-interest-chebi"><a href="https://obofoundry.org/ontology/chebi.html">Chemical Entities of Biological Interest (ChEBI)</a></nfdi-h4>
+<p>ChEBI is a freely available database and ontology of small molecular entities that play a significant role in biological systems. It provides detailed information and standardized annotations for chemical compounds, including their structures, names, and biological activities. ChEBI serves as a valuable resource for researchers in various fields, facilitating the understanding of the chemical diversity and complexity of biological processes, such as metabolism, signaling, and drug interactions.
+</br></p>
+<nfdi-h4 id="experimental-factor-ontology-efo"><a href="https://ontobee.org/ontology/EFO">Experimental Factor Ontology (EFO)</a></nfdi-h4>
+<p>The EFO is a controlled vocabulary of terms and relationships that describes experimental variables or factors (e.g. genetic variations, environmental exposures, etc.) to facilitate data integration and interoperability across different scientific domains. EFO is also used to annotate data in public data repositories, such as the European Bioinformatics Institute (EBI) and the National Center for Biotechnology Information (NCBI), to ensure that data is annotated with standardized terms and can be easily searched and retrieved.
+</br></p>
+<nfdi-h4 id="environment-ontology-envo"><a href="https://obofoundry.org/ontology/envo.html">Environment Ontology (ENVO)</a></nfdi-h4>
+<p>The ENVO is a structured vocabulary that aims to provide a standardized and comprehensive representation of environmental concepts. It encompasses terms and relationships related to biotic and abiotic entities, environmental materials, habitats, and processes, facilitating the integration and sharing of environmental data across diverse research domains and applications.
+</br></p>
+<nfdi-h4 id="protein-modification-ontology-mod"><a href="https://bioportal.bioontology.org/ontologies/PSIMOD">Protein Modification Ontology (MOD)</a></nfdi-h4>
+<p>The PSI MOD is a controlled vocabulary that provides standardized terms and definitions for describing post-translational modifications of proteins. It encompasses a wide range of modifications, such as phosphorylation, glycosylation, acetylation, and ubiquitination. MOD enables researchers to annotate and share information about protein modifications consistently, allowing for better understanding of the functional implications of post-translational modifications in biological processes and disease mechanisms.
+</br></p>
+<nfdi-h4 id="mass-spectrometry-ontology-ms"><a href="https://obofoundry.org/ontology/ms.html">Mass Spectrometry Ontology (MS)</a></nfdi-h4>
+<p>The PSI MS is a controlled vocabulary of terms and relationships describing research aspects for the field of mass spectrometry. Mass spectrometry is an analytical technique used to identify and quantify the chemical and biological properties of samples based on their mass-to-charge ratio. The MS ontology provides a standardized and structured way to describe mass spectrometry data, including, for example, instrumentation and experimental protocols, as well as data analysis.
+</br></p>
+<nfdi-h4 id="national-center-of-biotechnology-information-organismal-classification-ncbitaxon"><a href="https://bioportal.bioontology.org/ontologies/NCBITAXON/?p=summary">National Center of Biotechnology Information Organismal Classification (NCBITaxon)</a></nfdi-h4>
+<p>The NCBITaxon is a database that contains a nomenclature and classification for all organisms in public sequencing databases. It is needed for the annotation of species names and their placement in the taxonomy tree. In the SwateDB we currently use the ontology NCBITaxonmin, which we created as a minimized version of the NCBITaxon database. It contains the 20,000 species names most commonly used in research papers.
+</br></p>
+<nfdi-h4 id="national-cancer-institute-thesaurus-ncit"><a href="https://ncithesaurus.nci.nih.gov/ncitbrowser/">National Cancer Institute Thesaurus (NCIT)</a></nfdi-h4>
+<p>The NCIT is a broad biomedical ontology and reference terminology for the cancer domain. It includes terms of several biological processes, biochemical pathways, gene products as well as chemicals that can be of relevance for the general scientific community when describing experiments and data.
+</br></p>
+<nfdi-h4 id="ontology-for-biomedical-investigations-obi"><a href="http://obofoundry.org/ontology/obi.html">Ontology for Biomedical Investigations (OBI)</a></nfdi-h4>
+<p>The OBI is a formal ontology that provides a comprehensive representation of the entities and processes involved in biomedical experiments and investigations. It aims to standardize the description and integration of data from various biomedical studies, including genomics, proteomics, and clinical research, fostering interoperability and facilitating the interpretation and sharing of experimental results across different domains and disciplines.
+</br></p>
+<nfdi-h4 id="phenotype-and-trait-ontology-pato"><a href="https://obofoundry.org/ontology/pato.html">Phenotype And Trait Ontology (PATO)</a></nfdi-h4>
+<p>The PATO is a standardized ontology that serves as a controlled vocabulary for describing phenotypic qualities and traits in biological organisms. It provides a set of terms and definitions that researchers can use to annotate and characterize various observable characteristics, such as physical features, behaviors, and physiological properties. PATO enables the consistent and structured representation of phenotype data, allowing for efficient data integration and comparison across different species and experimental studies.
+</br></p>
+<nfdi-h4 id="units-of-measurement-ontology-uo"><a href="https://obofoundry.org/ontology/uo.html">Units of Measurement Ontology (UO)</a></nfdi-h4>
+<p>The UO is a controlled vocabulary of terms for describing units of measurement and their relationships. It is intended to provide a standardized and structured way to describe measurements in scientific data and to support interoperability and data integration across different scientific domains. The UO provides a hierarchy of classes and subclasses that represent different categories of units, such as length, mass, time, and temperature.
+</br></p>
+
+      <h3>
+        DataPLANT Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <span style="display: inline-flex; flex-wrap: wrap;">
+          <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+            directly
+          </a>
+          .
+        </span>
+      </div>
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; margin: 1rem 0 1rem 0;">
+        <div>
+          <a target="_blank" href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/CONTRIBUTING.html" style="display: block;">
+            Contribution Guide 📖
+          </a>
+        </div>
+        <div>
+          <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/implementation/OntologyServiceLandscape.md" style="display: block;">
+            ✏️ Edit this page
+          </a>
+        </div>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>
