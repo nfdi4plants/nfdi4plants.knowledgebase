@@ -1,3 +1,8 @@
+---
+layout: none
+title: The ARC Club Notepad 
+---
+
 # The ARC Club
 
 
