@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Ontology Service Lanscape
+title: Ontology Service Landscape
 published: 2023-11-21
 author: 
 - name: Angela Kranz
