@@ -102,7 +102,7 @@ Name | Type | Tasks on metadata
 
 [hp-Registration]: <https://register.nfdi4plants.org/> "DataPLANT Registration"
 [hp-DataHUB]: <https://git.nfdi4plants.org> "DataHUB"
-[gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
+[kb-ArcSpecs]: ./../implementation/ARC-specification.html "ARC specification"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
 [kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 
