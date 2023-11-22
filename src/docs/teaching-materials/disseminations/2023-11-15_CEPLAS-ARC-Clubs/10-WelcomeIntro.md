@@ -18,7 +18,7 @@ author:
 
 <br>
 
-November 15<sup>th</sup>, 2023
+November 22<sup>nd</sup>, 2023
 Dominik Brilhaus, CEPLAS Data Science
 
 ![bg fit](./../../../img/background_title_ceplas.drawio.svg)
@@ -38,12 +38,12 @@ Dominik Brilhaus, CEPLAS Data Science
 
 # House-keeping
 
-Pad: https://pad.hhu.de/ZG0nGuRyRo2D0T0vHnkTpQ?view
+Pad: https://pad.hhu.de/OIn_kTxmQEyuYQyjuHy-CQ
 
 - take notes
 - ask questions
 - copy / paste links, etc.
- 
+
 ---
 
 # Materials
