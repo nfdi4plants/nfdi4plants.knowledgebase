@@ -77,9 +77,9 @@
 ### [Filling cells with ontology terms](/docs/SwateManual/Docs04-Ontology-Term-Search.html)
 ### [Advanced Term Search](/docs/SwateManual/Docs07-Advanced-Term-Search.html)
 ### [Templates](/docs/SwateManual/Docs05-Templates.html)
-#### [Contribute Templates](/docs/guides/swate_template-contribution.html)
 ### [File Picker](/docs/SwateManual/Using-the-File-Picker.html)
 ## [Expert Features](/docs/SwateManual/Docs06-ISA-JSON.html)
+### [Contribute Templates](/docs/guides/swate_template-contribution.html)
 ### [ISA-JSON](/docs/SwateManual/Docs06-ISA-JSON.html)
 
 # [DataHUB Manual](/docs/DataHUB-Manual/index.html)
