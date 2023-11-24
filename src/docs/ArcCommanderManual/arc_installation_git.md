@@ -2,7 +2,7 @@
 layout: docs
 title: Installation of Git and Git LFS
 date: 2023-11-24
-add toc: false
+add toc: true
 add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
