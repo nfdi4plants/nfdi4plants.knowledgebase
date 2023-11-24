@@ -32,8 +32,8 @@
 
 # [ARC Commander Manual](/docs/ArcCommanderManual/index.html)
 ## [Setup](/docs/ArcCommanderManual/index-setup.html)
-### [Installing Dependencies](/docs/ArcCommanderManual/arc_installation_dependencies.html)
-### [Configure Git](/docs/ArcCommanderManual/git_config.html)
+### [Installing Dependencies](/docs/ArcCommanderManual/arc_installation_git.html)
+### [Configure Git](/docs/ArcCommanderManual/arc_installation_git.html)
 ### [Installing the ARC Commander](/docs/ArcCommanderManual/arc_installation.html)
 #### [Windows](/docs/ArcCommanderManual/arc_installation_windows.html)
 #### [MacOS](/docs/ArcCommanderManual/arc_installation_macos.html)
