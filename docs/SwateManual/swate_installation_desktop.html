@@ -256,26 +256,28 @@
         </a>
         <nfdi-sidebar-eleneo slot="child">
           <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html">
-            Setup
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html">
             Swate Installation
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_browser.html">
-            Browser
+            Excel Browser
           </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_desktop.html">
-            Windows Desktop via installer (beta-stage)
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_manual.html">
-            Windows Desktop manually (recommended)
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_manual_macos.html">
-            macOS Desktop manually (recommended)
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_organization.html">
-            Organization-wide
-          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_desktop.html">
+              Excel Desktop
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_desktop-win-installer.html">
+              Windows &ndash; installer
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_desktop-win-manually.html">
+              Windows &ndash; manually
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_desktop-macos-manually.html">
+              macOS &ndash; manually
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_organization.html">
+              Organization-wide
+            </a>
+          </nfdi-sidebar-eleneo>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
           <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs02-Annotation-Table.html">
@@ -527,43 +529,24 @@
         Swate Desktop Installation
       </h1>
       <i class="help">
-        last updated at 2023-02-01
+        last updated at 2023-11-23
       </i>
-      <blockquote>
-<p>⚠️ Currently there is no installer available for Linux or MacOS. Please check out the alternatives.</p>
-</blockquote>
-<blockquote>
-<p>💡 As a university trying to publish to the Excel add-in store we encountered some legal roadblocks. Hence the current installer is far from perfect. Please check out the <em>Alternatives</em> (noted below), if the installer does not work for your setup. This especially applies to standalone MS Excel versions (e.g. <em><strong>Excel 2019</strong></em>, <em><strong>Excel 2021</strong></em>, etc.), too.<br />
-Please note that we cannot guarantee compatibility of Swate with Excel versions that are <em>not</em> part of MS 365.</p>
-</blockquote>
-<blockquote>
-<p>⚠️ <strong>If you have an older Swate version installed already, it <u>might</u> be necessary to <a href="https://docs.microsoft.com/de-de/office/dev/add-ins/testing/clear-cache#manually-clear-the-cache-in-excel-word-and-powerpoint">clear the cache</a> to apply the changes to Swate.</strong></p>
-</blockquote>
+      <nfdi-toc></nfdi-toc>
+      <p>If you want to use Swate in your Excel desktop application, you can use the following options:</p>
+<nfdi-h2 id="windows">Windows</nfdi-h2>
 <ul>
-<li>Download the <a href="https://github.com/nfdi4plants/Swate/blob/developer/.assets/swate-win.zip?raw=true">Windows Installer</a>.</li>
-<li>Close all Office instances (Excel, Powerpoint, Word, ...)</li>
-<li>Unzip (<code>Right click</code> ➞ <code>Extract All..</code>)</li>
-<li>Double click the <code>install.cmd</code>. You will be asked to give administrative permissions and in the end to allow changes to the registry. Allow both and you are good to go!</li>
-<li>Open Excel, go to <code>Insert</code> ➞ <code>My Add-ins</code> ➞ <code>Shared Folder</code>. There you should see both <code>Swate</code> and <code>Swate.Experts</code>.</li>
+<li><a href="./swate_installation_desktop-win-installer.html">Desktop installation via installer</a></li>
+<li><a href="./swate_installation_desktop-win-manually.html">Desktop installation manually</a> Recommended for <strong>Windows</strong> 💡</li>
 </ul>
-<details><summary>Alternative | Using the previous Swate installer</summary>
-<p>
-<p><a href="https://github.com/omaus/Swate_Install#swate-installer">Swate installer</a></p>
-</p>
-</details>
-<details><summary>Alternative | Using the release archive</summary>
-<p>
-    
-⚠️ This method might not be accessible anymore.
-<p>Using the release archive</p>
+<nfdi-h2 id="macos">macOS</nfdi-h2>
 <ul>
-<li>Install <a href="https://nodejs.org/en/">node.js LTS</a> (needed for office addin related tooling)</li>
-<li>Download the <a href="https://github.com/nfdi4plants/Swate/releases">latest test release archive</a> and extract it</li>
-<li>Execute the test.cmd (windows, as administrator) or test.sh (macOS, you will need to make it executable via chmod
-a+x) script.</li>
+<li><a href="./swate_installation_desktop-macos-manually.html">Desktop installation manually</a></li>
 </ul>
-</p>
-</details>
+<nfdi-h2 id="organization-wide">Organization-wide</nfdi-h2>
+<ul>
+<li><a href="./swate_installation_organization.html">Desktop Installation</a></li>
+</ul>
+<p>💡 Requires administrative access in your organization 💡</p>
 
       <h3>
         DataPLANT Support
