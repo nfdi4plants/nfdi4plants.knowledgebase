@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Git and Git LFS Installation
+title: Installation of Git and Git LFS
 date: 2023-11-24
 add toc: false
 add support: false

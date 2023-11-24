@@ -32,9 +32,8 @@
 
 # [ARC Commander Manual](/docs/ArcCommanderManual/index.html)
 ## [Setup](/docs/ArcCommanderManual/index-setup.html)
-### [Installing Dependencies](/docs/ArcCommanderManual/arc_installation_git.html)
-### [Configure Git](/docs/ArcCommanderManual/arc_installation_git.html)
-### [Installing the ARC Commander](/docs/ArcCommanderManual/arc_installation.html)
+### [Git Installation](/docs/ArcCommanderManual/arc_installation_git.html)
+### [ARC Commander Installation](/docs/ArcCommanderManual/arc_installation.html)
 #### [Windows](/docs/ArcCommanderManual/arc_installation_windows.html)
 #### [MacOS](/docs/ArcCommanderManual/arc_installation_macos.html)
 #### [Linux](/docs/ArcCommanderManual/arc_installation_linux.html)
@@ -63,7 +62,7 @@
 
 # [Swate Manual](/docs/SwateManual/index.html)
 ## [Setup](/docs/SwateManual/Docs01-Installing-Swate.html)
-### [Installing Swate](/docs/SwateManual/Docs01-Installing-Swate.html)
+### [Swate Installation](/docs/SwateManual/Docs01-Installing-Swate.html)
 ### [Browser](/docs/SwateManual/swate_installation_browser.html)
 ### [Windows Desktop via installer (beta-stage)](/docs/SwateManual/swate_installation_desktop.html)
 ### [Windows Desktop manually (recommended)](/docs/SwateManual/swate_installation_manual.html)
