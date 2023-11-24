@@ -6,18 +6,18 @@ add toc: false
 add sidebar: _sidebars\mainSidebar.md
 ---
 
-> :warning: Currently there is no installer available for Linux or MacOS. Please check out the alternatives.
+:warning: Currently there is no installer available for Linux or MacOS. Please check out the alternatives.
 
-> :bulb: As a university trying to publish to the Excel add-in store we encountered some legal roadblocks. Hence the current installer is far from perfect. Please check out the _Alternatives_ (noted below), if the installer does not work for your setup. This especially applies to standalone MS Excel versions (e.g. ***Excel 2019***, ***Excel 2021***, etc.), too.  
+:bulb: As a university trying to publish to the Excel add-in store we encountered some legal roadblocks. Hence the current installer is far from perfect. Please check out the _Alternatives_ (noted below), if the installer does not work for your setup. This especially applies to standalone MS Excel versions (e.g. ***Excel 2019***, ***Excel 2021***, etc.), too.  
 Please note that we cannot guarantee compatibility of Swate with Excel versions that are *not* part of MS 365.
 
-> ⚠️ **If you have an older Swate version installed already, it <u>might</u> be necessary to [clear the cache](https://docs.microsoft.com/de-de/office/dev/add-ins/testing/clear-cache#manually-clear-the-cache-in-excel-word-and-powerpoint) to apply the changes to Swate.**
+⚠️ **If you have an older Swate version installed already, it <u>might</u> be necessary to [clear the cache](https://docs.microsoft.com/de-de/office/dev/add-ins/testing/clear-cache#manually-clear-the-cache-in-excel-word-and-powerpoint) to apply the changes to Swate.**
 
-- Download the [Windows Installer](https://github.com/nfdi4plants/Swate/blob/developer/.assets/swate-win.zip?raw=true).
-- Close all Office instances (Excel, Powerpoint, Word, ...)
-- Unzip (`Right click` ➞ `Extract All..`)
-- Double click the `install.cmd`. You will be asked to give administrative permissions and in the end to allow changes to the registry. Allow both and you are good to go!
-- Open Excel, go to `Insert` ➞ `My Add-ins` ➞ `Shared Folder`. There you should see both `Swate` and `Swate.Experts`.
+1. Download the [Windows Installer](https://github.com/nfdi4plants/Swate/blob/developer/.assets/swate1.win.zip?raw=true).
+1. Close all Office instances (Excel, Powerpoint, Word, ...)
+1. Unzip (`Right click` ➞ `Extract All..`)
+1. Double click the `install.cmd`. You will be asked to give administrative permissions and in the end to allow changes to the registry. Allow both and you are good to go!
+1. Open Excel, go to `Insert` ➞ `My Add1.ins` ➞ `Shared Folder`. There you should see both `Swate` and `Swate.Experts`.
 
 <details><summary>Alternative | Using the previous Swate installer</summary>
 <p>
