@@ -180,7 +180,7 @@ No. However, if you want to submit your data to a <a href="https://nfdi4plants.o
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
 Installation (Windows, manual): How and where to create a shared folder?
 </summary>
-Wherever you created your <b>folder-to-be-shared</b> according to <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_manual.html">these instructions</a>, you need to have the right to <a href="https://learn.microsoft.com/en-us/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins#share-a-folder">share a folder</a> at this particular location.  
+Wherever you created your <b>folder-to-be-shared</b> according to <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_desktop-win-manually.html">these instructions</a>, you need to have the right to <a href="https://learn.microsoft.com/en-us/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins#share-a-folder">share a folder</a> at this particular location.  
 <br>
 <br>
 This might not be possible at <span style="background-color: grey">'C:\folder-to-be-shared'</span> but, when you go one level down, into <span style="background-color: grey">'Users'</span>, <span style="background-color:grey">'C:\Users\folder-to-be-shared'</span> might be sharable. You can share a folder when the <span style="background-color:grey">'Sharing'</span> tab is shown next to the <span style="background-color:grey">'General'</span> tab in the properties dialog window (right click on the <b>folder-to-be-shared</b>, select 'properties').  
