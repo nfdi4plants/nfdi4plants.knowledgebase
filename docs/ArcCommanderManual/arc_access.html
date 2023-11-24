@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - DataHUB access for ARC synchronization
+      DataPLANT documentation - ARC Commander DataHUB access
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -160,15 +160,12 @@
           <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index-setup.html">
             Setup
           </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_dependencies.html">
-            Installing Dependencies
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/git_config.html">
-            Configure Git
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_git.html">
+            Git Installation
           </a>
           <nfdi-sidebar-eleneo slot="child">
             <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation.html">
-              Installing the ARC Commander
+              ARC Commander Installation
             </a>
             <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_windows.html">
               Windows
@@ -181,7 +178,7 @@
             </a>
           </nfdi-sidebar-eleneo>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_access.html">
-            DataHUB Access
+            ARC Commander DataHUB Access
           </a>
         </nfdi-sidebar-eleneo>
         <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_before_we_start.html">
@@ -262,7 +259,7 @@
             Setup
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html">
-            Installing Swate
+            Swate Installation
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_browser.html">
             Browser
@@ -524,47 +521,34 @@
         </a>
       </nfdi-sidebar-eleneo>
       <h1 class="front-header">
-        DataHUB access for ARC synchronization
+        ARC Commander DataHUB access
       </h1>
       <i class="help">
-        last updated at 2022-12-20
+        last updated at 2023-11-23
       </i>
-      <blockquote>
-<p>✅ In case you are not a member of DataPLANT yet, please <a href="https://register.nfdi4plants.org">sign up</a>. Afterwards, you will be granted access to DataPLANT’s <a href="https://git.nfdi4plants.org">DataHUB</a>. The DataHUB allows you to share your ARCs with registered lab or project partners.</p>
-</blockquote>
-<nfdi-h2 id="arc-commander-authentication">ARC Commander authentication</nfdi-h2>
-<p>After successful registration, setup your machine for smooth ARC synchronization using the ARC Commander</p>
-<ol>
-<li><p>Allow git to store credentials on your machine.</p>
-<p><em><strong>Windows</strong></em></p>
+      <nfdi-toc></nfdi-toc>
+      <p>The <a href="https://git.nfdi4plants.org">DataHUB</a> allows you to share your ARCs with registered lab or project partners. After <a href="https://register.nfdi4plants.org">registration</a>, you need to setup the ARC Commander for smooth ARC synchronization between your computer and the DataHUB.</p>
+<p>💡 This needs to be done only once per computer.</p>
+<nfdi-h2 id="enable-git-to-store-credentials-on-your-computer">Enable Git to store credentials on your computer</nfdi-h2>
+<p>Open a command prompt or terminal and execute the following command(s)</p>
+<nfdi-h3 id="windows">Windows</nfdi-h3>
 <nfdi-code class="language-bash">git config --global credential.helper cache
 </nfdi-code>
-<p>or</p>
+<p>and / or</p>
 <nfdi-code class="language-bash">git config --global credential.helper store
 </nfdi-code>
-<p><em><strong>MacOS</strong></em></p>
+<nfdi-h3 id="macos">MacOS</nfdi-h3>
 <nfdi-code class="language-bash">git config --global credential.helper osxkeychain
 </nfdi-code>
-<p><em><strong>Linux</strong></em></p>
+<nfdi-h3 id="linux">Linux</nfdi-h3>
 <nfdi-code class="language-bash">git config --global credential.helper store
 </nfdi-code>
-</li>
-<li><p>Create and set an access token</p>
+<nfdi-h2 id="receive-and-store-a-datahub-access-token">Receive and store a DataHUB access token</nfdi-h2>
 <nfdi-code class="language-bash">arc remote accesstoken get -s https://git.nfdi4plants.org
 </nfdi-code>
-</li>
-</ol>
-<blockquote>
-<p>💡 This authenticates your machine to communicate with your personal DataHUB account</p>
-</blockquote>
-<blockquote>
-<p>💡 This step needs to be done only once per machine, unless you delete the token from your DataHUB account.</p>
-</blockquote>
-<p>A window within your browser will open, asking for your DataPLANT login. In case you are already logged in, the browser will directly display a plain <code>Success</code> message to you.</p>
-<!-- TODO
-Andrea: I suggest to directly add a linnk to the trouble shooting for authentication problems...
-In case an authentification error occured please follow these instructions for the authentification step. (link to the FAQ for the access TOKEN)
- -->
+<p>A browser window will open asking for your DataPLANT login. After login you are asked to authorize your computer to communicate with the DataHUB.<br />
+In case you are already logged in, the browser will directly display a plain <code>Success</code> message to you.</p>
+<p>💡 This authenticates your computer to communicate with your personal DataHUB account</p>
 
       <div style="display: flex; align-items: flex-end; justify-content: space-between; margin: 1rem 0 1rem 0;">
         <div>
