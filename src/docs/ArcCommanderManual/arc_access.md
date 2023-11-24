@@ -1,56 +1,58 @@
 ---
 layout: docs
-title: "DataHUB access for ARC synchronization"
-date: 2022-12-20
+title: ARC Commander DataHUB access
+date: 2023-11-23
 author:
 - name: Martin Kuhl
   github: https://github.com/Martin-Kuhl
   orcid: https://orcid.org/0000-0002-8493-1077
-add toc: false
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
+add toc: true
 add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-> :white_check_mark: In case you are not a member of DataPLANT yet, please [sign up](<https://register.nfdi4plants.org>). Afterwards, you will be granted access to DataPLANT’s [DataHUB](<https://git.nfdi4plants.org>). The DataHUB allows you to share your ARCs with registered lab or project partners.
+The [DataHUB](<https://git.nfdi4plants.org>) allows you to share your ARCs with registered lab or project partners. After [registration](<https://register.nfdi4plants.org>), you need to setup the ARC Commander for smooth ARC synchronization between your computer and the DataHUB.
 
-## ARC Commander authentication
+:bulb: This needs to be done only once per computer.
 
-After successful registration, setup your machine for smooth ARC synchronization using the ARC Commander
+## Enable Git to store credentials on your computer
 
-1. Allow git to store credentials on your machine.
+Open a command prompt or terminal and execute the following command(s)
 
-    ***Windows***  
-    ```bash
-    git config --global credential.helper cache
-    ```
+### Windows
 
-    or  
-    ```bash
-    git config --global credential.helper store
-    ```
+```bash
+git config --global credential.helper cache
+```
 
-    ***MacOS***  
-    ```bash
-    git config --global credential.helper osxkeychain
-    ```
+and / or  
 
-    ***Linux***  
-    ```bash
-    git config --global credential.helper store
-    ```
+```bash
+git config --global credential.helper store
+```
 
-2. Create and set an access token
-     ```bash
-    arc remote accesstoken get -s https://git.nfdi4plants.org
-    ```
+### MacOS
 
-> :bulb: This authenticates your machine to communicate with your personal DataHUB account  
+```bash
+git config --global credential.helper osxkeychain
+```
 
-> :bulb: This step needs to be done only once per machine, unless you delete the token from your DataHUB account.
+### Linux
 
-A window within your browser will open, asking for your DataPLANT login. In case you are already logged in, the browser will directly display a plain `Success` message to you.
+```bash
+git config --global credential.helper store
+```
 
-<!-- TODO
-Andrea: I suggest to directly add a linnk to the trouble shooting for authentication problems...
-In case an authentification error occured please follow these instructions for the authentification step. (link to the FAQ for the access TOKEN)
- -->
+## Receive and store a DataHUB access token
+
+```bash
+arc remote accesstoken get -s https://git.nfdi4plants.org
+```
+
+A browser window will open asking for your DataPLANT login. After login you are asked to authorize your computer to communicate with the DataHUB.  
+In case you are already logged in, the browser will directly display a plain `Success` message to you.
+
+:bulb: This authenticates your computer to communicate with your personal DataHUB account
