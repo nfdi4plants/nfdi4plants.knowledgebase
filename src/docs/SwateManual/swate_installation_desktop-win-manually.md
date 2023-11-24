@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: Swate Manual Installation
-date: 2023-02-01
+title: Swate Installation &ndash; Windows Excel Desktop
+date: 2023-11-23
 add toc: false
 add sidebar: _sidebars\mainSidebar.md
 ---

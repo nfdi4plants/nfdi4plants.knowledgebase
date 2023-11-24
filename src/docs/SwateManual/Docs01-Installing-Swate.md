@@ -27,15 +27,4 @@ On macOS, some features are only available with the browser [Microsoft Edge](htt
 
 ## Desktop Installation
 
-To most easily annotate data in the ARC stored on your computer, we recommend installing the Swate plugin in your Excel desktop application. This allows you to open the relevant isa.assay.xlsx or isa.study.xlsx workbook for Swate annotation directly from your ARC.
-
-
-
-If you want to use Swate in your Excel desktop application, you can use the following options:
-
-- [Desktop Installation via installer](./swate_installation_desktop.html) :bulb: Only for **Windows** :bulb:
-- Manual Desktop Installation
-  - [Installation](./swate_installation_manual.html): Recommended for **Windows** :bulb: 
-  - [Installation](./swate_installation_manual_macos.html): Recommended for **MacOS** :bulb: 
-- [Organization-wide Desktop Installation](./swate_installation_organization.html) :bulb: Requires administrative access in your organization :bulb:
-
+To most easily annotate data in the ARC stored on your computer, we recommend installing the [Swate plugin in your Excel desktop application](./swate_installation_desktop.html). This allows you to open the relevant isa.assay.xlsx or isa.study.xlsx workbook for Swate annotation directly from your ARC.

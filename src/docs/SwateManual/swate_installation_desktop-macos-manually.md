@@ -1,12 +1,10 @@
 ---
 layout: docs
-title: Swate Manual Installation for macOS Excel Desktop
+title: Swate Installation &ndash; macOS Excel Desktop
 date: 2023-02-01
 add toc: false
 add sidebar: _sidebars\mainSidebar.md
 ---
-
-> Adapted from: https://learn.microsoft.com/en-us/office/dev/add-ins/testing/sideload-an-office-add-in-on-mac
 
 ## Prerequisites
 
@@ -23,3 +21,6 @@ add sidebar: _sidebars\mainSidebar.md
 6. Open a fresh Workbook in Excel, go to the `Insert` tab. 
 7. Click the arrow next to `My Add-ins`. There you should be able to select `Swate` (and optionally `Swate.Experts`).
 8. Once selected, Swate appears in the `Data` tab. ![Swate.Core Icon](https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate_c_48x48.png)
+
+
+> Adapted from: https://learn.microsoft.com/en-us/office/dev/add-ins/testing/sideload-an-office-add-in-on-mac
