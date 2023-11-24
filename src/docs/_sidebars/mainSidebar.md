@@ -37,7 +37,7 @@
 #### [Windows](/docs/ArcCommanderManual/arc_installation_windows.html)
 #### [MacOS](/docs/ArcCommanderManual/arc_installation_macos.html)
 #### [Linux](/docs/ArcCommanderManual/arc_installation_linux.html)
-### [DataHUB Access](/docs/ArcCommanderManual/arc_access.html)
+### [ARC Commander DataHUB Access](/docs/ArcCommanderManual/arc_access.html)
 ## [Before we start](/docs/ArcCommanderManual/arc_before_we_start.html)
 ## [Central Functions](/docs/ArcCommanderManual/arc_initialization.html)
 ### [Initialize](/docs/ArcCommanderManual/arc_initialization.html)
