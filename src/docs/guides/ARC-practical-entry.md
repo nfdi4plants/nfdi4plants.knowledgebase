@@ -50,7 +50,7 @@ One goal of the ARC is to be able to tell, which finding or result originated fr
 
 Before creating an ARC for an existing dataset, it might help to visualize what was done in the lab.  The following is very simplified example that most plant biologists can hopefully relate to.
 
-### Green-house to qRT-PCR results
+### Green-house to gene expression
 
 Consider you want to investigate the effect of drought stress on the transcript levels of you gene of interest (GOI) via qRT-PCR. You grow plants from seeds, drought-stress the plants and collect leaves at the end of the growth study. From the leave samples &ndash; homogenized to powder and stored in a freezer &ndash; you take an aliquot to extract RNA, from which you synthesize cDNA. The cDNA (together with other biologicals and chemicals) is the input for a qRT-PCR yielding relative transcript levels as the output.
 
@@ -104,9 +104,9 @@ flowchart LR
 
 ```
 
-### Confirm your findings on protein level
+### Confirm findings on protein level
 
-You found your GOI affected by drought stress on transcript level. To confirm that the protein encoded by the gene is likewise affected, you take another aliquot from the same leave samples, extract proteins, separate them by SDS-PAGE and immunoblot the SDS gel with antibodies specific for your GOI.
+You found your GOI affected by drought stress on transcript level. To confirm that the expression of the encoded protein is likewise affected, you take another aliquot from the same leave samples, extract proteins, separate them by SDS-PAGE and immunoblot the SDS gel with antibodies specific for your GOI.
 
 ```mermaid
 
@@ -172,9 +172,9 @@ graph LR
 
 ```
 
+### Global overview of gene expression
 
-### Same samples, new assay
-
+You could show that the expression of your GOI was affected by drought on both transcript and protein level. In order to identify transcripts that correlate with your GOI under drought stress, you prepare RNA extracted earlier and submit it to a company for mRNA-Seq.
 
 
 ```mermaid
@@ -191,7 +191,83 @@ graph LR
 }%%
 
 
-graph TD
+graph LR
+
+%% Nodes
+  S1(Seeds)
+
+  S2(Leaves)
+  
+  M1(RNA)
+  M2(protein)
+  M3(cDNA)
+  M4(RNASeq Libraries)
+  M5(SDS-gel)
+  M6(Western blot)
+  
+  P1>plant growth]
+  P2>RNA extraction]
+  P3>protein extraction]
+  P4>cDNA synthesis]
+  P5>qRT-PCR]
+  P6>Library preparation]
+  P7>Next Generation Sequencing]
+  P8>SDS Page]
+  P9>photo]
+  P10>Immunoblotting]
+    
+  D1("qRT results (xlsx)")
+  D2(fastq files)
+  D3(Image of \n SDS gel)  
+
+%% Links
+
+S1 ---P1--drought\nstress--> S2
+
+  S2 ---P2--> M1
+  S2 ---P3--> M2
+  M1 ---P4--> M3
+  M3 ---P5--> D1
+  M1 ---P6--> M4
+  M4 ---P7--> D2  
+  M2 ---P8--> M5
+  M5 ---P9--> D3
+  M5 ---P10--> M6
+
+%% Defining node styles
+  classDef S fill:#b4ce82, stroke:#333;
+  classDef M fill:#ffc000;
+  classDef D fill:#c21f3a,color:white;
+  classDef P stroke-width:0px;  
+
+%% Assigning styles to nodes
+  class Sx,S1,S2,S4 S;
+  class Mx,M1,M2,M3,M4,M5,M6 M;
+  class Dx,D1,D2,D3,D4,D5 D;
+  class Px,P1,P2,P3,P4,P5,P6,P7,P8,P9,P10,P11,P12,P13 P;
+
+```
+
+### Adding external data
+
+From the company you receive the RNA-Seq reads in form of fastq files. In order to quantify the reads and generate a count table, you map them against a suitable reference genome downloaded from an online database or publication's supplemental data.
+
+
+```mermaid
+
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'background': '#fff',
+      'lineColor': '#2d3e50',
+      'primaryTextColor': '#2d3e50'
+    }
+  }
+}%%
+
+
+graph LR
 
 %% Nodes
   S1(Seeds)
@@ -224,27 +300,10 @@ graph TD
   D5(count table)  
 
 %% Links
-
-subgraph Studies
-  subgraph drought
     S1 ---P1--drought\nstress--> S2
-  end
-  
-  subgraph Time Series
-    P13>plant growth] 
-
-    S1 ---P13--Heat\nstress--> S4(Leaves)
-  end
-
-  subgraph External Study
     P12>Download]
     x(Paper supplement) ---P12--> D4
-  end
 
-end
-
-
-subgraph Assays
   S2 ---P2--> M1
   S2 ---P3--> M2
   M1 ---P4--> M3
@@ -257,6 +316,113 @@ subgraph Assays
   M2 ---P8--> M5
   M5 ---P9--> D3
   M5 ---P10--> M6
+
+
+%% Defining node styles
+  classDef S fill:#b4ce82, stroke:#333;
+  classDef M fill:#ffc000;
+  classDef D fill:#c21f3a,color:white;
+  classDef P stroke-width:0px;  
+
+%% Assigning styles to nodes
+  class Sx,S1,S2,S4 S;
+  class Mx,M1,M2,M3,M4,M5,M6 M;
+  class Dx,D1,D2,D3,D4,D5 D;
+  class Px,P1,P2,P3,P4,P5,P6,P7,P8,P9,P10,P11,P12,P13 P;
+
+```
+
+### What this could look like in an ARC
+
+
+```mermaid
+
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'background': '#fff',
+      'lineColor': '#2d3e50',
+      'primaryTextColor': '#2d3e50'
+    }
+  }
+}%%
+
+
+graph LR
+
+%% Nodes
+  S1(Seeds)
+
+  S2(Leaves)
+  
+  M1(RNA)
+  M2(protein)
+  M3(cDNA)
+  M4(RNASeq Libraries)
+  M5(SDS-gel)
+  M6(Western blot)
+  
+  P1>plant growth]
+  P2>RNA extraction]
+  P3>protein extraction]
+  P4>cDNA synthesis]
+  P5>qRT-PCR]
+  P6>Library preparation]
+  P7>Next Generation Sequencing]
+  P8>SDS Page]
+  P9>photo]
+  P10>Immunoblotting]
+  P11>Mapping]
+  
+  D1("qRT results (xlsx)")
+  D2(fastq files)
+  D3(Image of \n SDS gel)
+  D4(reference \n genome)
+  D5(count table)  
+
+
+%% Links
+
+subgraph Studies
+  subgraph study:drought
+    S1 ---P1--drought\nstress--> S2
+  end
+
+  subgraph study:genome-ref
+    P12>Download]
+    x(Paper supplement) ---P12--> D4
+  end
+
+end
+
+
+subgraph Assays
+  
+  subgraph assay:qRT-PCR
+  S2 ---P2--> M1
+  M1 ---P4--> M3
+  M3 ---P5--> D1
+  end
+  
+  subgraph assay:SDS-gel
+    S2 ---P3--> M2
+    M2 ---P8--> M5
+    M5 ---P9--> D3
+  end
+    
+  subgraph assay:RNA-Seq
+    M1 ---P6--> M4
+    M4 ---P7--> D2
+    D2 --- P11
+    D4 --- P11
+    P11 --> D5
+  end
+  
+  subgraph assay:Western Blot
+    M5 ---P10--> M6
+  end
+
 end
 
 
@@ -279,6 +445,144 @@ end
   class Mx,M1,M2,M3,M4,M5,M6 M;
   class Dx,D1,D2,D3,D4,D5 D;
   class Px,P1,P2,P3,P4,P5,P6,P7,P8,P9,P10,P11,P12,P13 P;
+
+%% Box style
+style Studies fill:#fff, stroke-width:2px, stroke:#333;
+style Assays fill:#fff, stroke-width:2px, stroke:#333;
+
+```
+
+
+### Add a new study and sample set
+
+
+```mermaid
+
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'background': '#fff',
+      'lineColor': '#2d3e50',
+      'primaryTextColor': '#2d3e50'
+    }
+  }
+}%%
+
+
+graph LR
+
+%% Nodes
+  S1(Seeds)
+
+  S2(Leaves)
+  
+  M1(RNA)
+  M2(protein)
+  M3(cDNA)
+  M4(RNASeq Libraries)
+  M5(SDS-gel)
+  M6(Western blot)
+  
+  P1>plant growth]
+  P2>RNA extraction]
+  P3>protein extraction]
+  P4>cDNA synthesis]
+  P5>qRT-PCR]
+  P6>Library preparation]
+  P7>Next Generation Sequencing]
+  P8>SDS Page]
+  P9>photo]
+  P10>Immunoblotting]
+  P11>Mapping]
+  
+  D1("qRT results (xlsx)")
+  D2(fastq files)
+  D3(Image of \n SDS gel)
+  D4(reference \n genome)
+  D5(count table)  
+
+
+%% Links
+
+subgraph Studies
+  subgraph study:drought
+    S1 ---P1--drought\nstress--> S2
+  end
+  
+  subgraph study:heat
+    P13>plant growth] 
+
+    S1 ---P13--heat\nstress--> S4(Leaves)
+  end
+
+  subgraph study:genome-ref
+    P12>Download]
+    x(Paper supplement) ---P12--> D4
+  end
+
+end
+
+
+subgraph Assays
+  
+  subgraph assay:Another Assay
+    P14>Process XY]
+    D6(Output XY)
+
+    S4 ---P14--> D6
+  end
+
+  subgraph assay:qRT-PCR
+    S2 ---P2--> M1
+    M1 ---P4--> M3
+    M3 ---P5--> D1
+  end
+  
+  subgraph assay:SDS-gel
+    S2 ---P3--> M2
+    M2 ---P8--> M5
+    M5 ---P9--> D3
+  end
+    
+  subgraph assay:RNA-Seq
+    M1 ---P6--> M4
+    M4 ---P7--> D2
+    D2 --- P11
+    D4 --- P11
+    P11 --> D5
+  end
+  
+  subgraph assay:Western Blot
+    M5 ---P10--> M6
+  end
+
+end
+
+
+%% Add legend
+subgraph Legend
+    Sx(Sample)    
+    Px>Process]
+    Mx(Material)    
+    Dx(Data)
+end
+
+%% Defining node styles
+  classDef S fill:#b4ce82, stroke:#333;
+  classDef M fill:#ffc000;
+  classDef D fill:#c21f3a,color:white;
+  classDef P stroke-width:0px;  
+
+%% Assigning styles to nodes
+  class Sx,S1,S2,S4 S;
+  class Mx,M1,M2,M3,M4,M5,M6 M;
+  class Dx,D1,D2,D3,D4,D5,D6 D;
+  class Px,P1,P2,P3,P4,P5,P6,P7,P8,P9,P10,P11,P12,P13,P14 P;
+
+%% Box style
+style Studies fill:#fff, stroke-width:2px, stroke:#333;
+style Assays fill:#fff, stroke-width:2px, stroke:#333;
 
 ```
 
