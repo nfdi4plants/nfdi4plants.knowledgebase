@@ -164,6 +164,46 @@ source: https://stackoverflow.com/questions/6887228/git-hangs-while-writing-obje
 
 <br>
 
+
+## ARCitect
+
+<details>
+<summary><span style="color: #1fc2a7;font-size:1.2em">
+I already committed my changes, but they are still displayed in the ARCitect and are not uploaded to the DataHUB.
+</summary>
+
+Sometimes, the ARCitect does not "accept" a commit or when writing a commit message and hitting the "commit" button the changes are still displayed. You can try the following:
+
+1. Close all windows (e.g. windows explorer) and files (in particular Excel workbooks) related to the ARC
+2. Try to commit again.
+
+:bulb: In general, we recommend to close all isa.investigation.xlsx, isa.study.xlsx and isa.assay.xlsx workbooks when working on your ARC using ARCitect.
+
+</details>
+
+<details>
+<summary><span style="color: #1fc2a7;font-size:1.2em">
+Why is the file tree flickering in ARCitect?
+</summary>
+
+So far we only saw this bug on macOS with ARCs stored in a folder that is watched and synced by iCloud (typically the `Desktop` and `Documents` folder and sub-folders). Please store your ARCs in folders outside iCloud.
+
+</details>
+
+<details>
+<summary><span style="color: #1fc2a7;font-size:1.2em">
+Why do I get the warning "Clone succeeded, but checkout failed."?
+</summary>
+
+This warning is likely due to an issue with your Git or Git LFS installation.
+If you see this error, when using ARCitect (version ≥ 0.0.21) under Windows or Linux, please let us know via e.g. helpdesk.
+
+On macOS ARCitect's git dependency is not yet in place.
+Please follow [this workaround](https://github.com/nfdi4plants/ARCitect/discussions/88).
+
+</details>
+
+
 ## Swate
 
 <details><summary><span style="color: #1fc2a7;font-size:1.2em">
