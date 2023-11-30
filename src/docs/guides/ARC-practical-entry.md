@@ -335,7 +335,6 @@ graph LR
 
 ### What this could look like in an ARC
 
-
 ```mermaid
 
 %%{
@@ -415,13 +414,23 @@ subgraph Assays
   subgraph assay:RNA-Seq
     M1 ---P6--> M4
     M4 ---P7--> D2
-    D2 --- P11
-    D4 --- P11
-    P11 --> D5
   end
-  
+
   subgraph assay:Western Blot
     M5 ---P10--> M6
+  end
+
+end
+
+subgraph Worklows/Runs
+
+  subgraph workflow:mapping
+      D2 --- P11
+      D4 --- P11    
+  end
+  
+  subgraph run
+    P11 --> D5
   end
 
 end
@@ -448,6 +457,7 @@ end
   class Px,P1,P2,P3,P4,P5,P6,P7,P8,P9,P10,P11,P12,P13 P;
 
 %% Box style
+style Worklows/Runs fill:#fff, stroke-width:2px, stroke:#333;
 style Studies fill:#fff, stroke-width:2px, stroke:#333;
 style Assays fill:#fff, stroke-width:2px, stroke:#333;
 
@@ -455,7 +465,6 @@ style Assays fill:#fff, stroke-width:2px, stroke:#333;
 
 
 ### Add a new study and sample set
-
 
 ```mermaid
 
@@ -549,9 +558,6 @@ subgraph Assays
   subgraph assay:RNA-Seq
     M1 ---P6--> M4
     M4 ---P7--> D2
-    D2 --- P11
-    D4 --- P11
-    P11 --> D5
   end
   
   subgraph assay:Western Blot
@@ -559,6 +565,21 @@ subgraph Assays
   end
 
 end
+
+subgraph Worklows/Runs
+
+  subgraph workflow:mapping
+      D2 --- P11
+      D4 --- P11    
+  end
+  
+  subgraph run
+    P11 --> D5
+  end
+
+end
+
+
 
 
 %% Add legend
@@ -582,6 +603,7 @@ end
   class Px,P1,P2,P3,P4,P5,P6,P7,P8,P9,P10,P11,P12,P13,P14 P;
 
 %% Box style
+style Worklows/Runs fill:#fff, stroke-width:2px, stroke:#333;
 style Studies fill:#fff, stroke-width:2px, stroke:#333;
 style Assays fill:#fff, stroke-width:2px, stroke:#333;
 
