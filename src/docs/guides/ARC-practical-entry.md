@@ -82,7 +82,7 @@ flowchart LR
   P4>cDNA synthesis]
   P5>qRT-PCR]
   
-  D1("qRT results (xlsx)")
+  D1("qRT results")
 
 %% Links
 
@@ -133,7 +133,7 @@ graph LR
   M2(protein)
   M3(cDNA)
   M5(SDS-gel)
-  M6(Western blot)
+  M6(western blot)
   
   P1>plant growth]
   P2>RNA extraction]
@@ -141,10 +141,10 @@ graph LR
   P4>cDNA synthesis]
   P5>qRT-PCR]
   P8>SDS Page]
-  P9>photo]
+  P9>taking a photo]
   P10>Immunoblotting]
   
-  D1("qRT results (xlsx)")
+  D1("qRT results")
   D3(Image of \n SDS gel)
 
 %% Links
@@ -204,7 +204,7 @@ graph LR
   M3(cDNA)
   M4(RNASeq Libraries)
   M5(SDS-gel)
-  M6(Western blot)
+  M6(western blot)
   
   P1>plant growth]
   P2>RNA extraction]
@@ -214,10 +214,10 @@ graph LR
   P6>Library preparation]
   P7>Next Generation Sequencing]
   P8>SDS Page]
-  P9>photo]
+  P9>taking a photo]
   P10>Immunoblotting]
     
-  D1("qRT results (xlsx)")
+  D1("qRT results")
   D2(fastq files)
   D3(Image of \n SDS gel)  
 
@@ -280,7 +280,7 @@ graph LR
   M3(cDNA)
   M4(RNASeq Libraries)
   M5(SDS-gel)
-  M6(Western blot)
+  M6(western blot)
   
   P1>plant growth]
   P2>RNA extraction]
@@ -290,11 +290,11 @@ graph LR
   P6>Library preparation]
   P7>Next Generation Sequencing]
   P8>SDS Page]
-  P9>photo]
+  P9>taking a photo]
   P10>Immunoblotting]
-  P11>Mapping]
+  P11>mapping]
   
-  D1("qRT results (xlsx)")
+  D1("qRT results")
   D2(fastq files)
   D3(Image of \n SDS gel)
   D4(reference \n genome)
@@ -361,7 +361,7 @@ graph LR
   M3(cDNA)
   M4(RNASeq Libraries)
   M5(SDS-gel)
-  M6(Western blot)
+  M6(western blot)
   
   P1>plant growth]
   P2>RNA extraction]
@@ -371,11 +371,11 @@ graph LR
   P6>Library preparation]
   P7>Next Generation Sequencing]
   P8>SDS Page]
-  P9>photo]
+  P9>taking a photo]
   P10>Immunoblotting]
-  P11>Mapping]
+  P11>mapping]
   
-  D1("qRT results (xlsx)")
+  D1("qRT results")
   D2(fastq files)
   D3(Image of \n SDS gel)
   D4(reference \n genome)
@@ -416,7 +416,7 @@ subgraph Assays
     M4 ---P7--> D2
   end
 
-  subgraph assay:Western Blot
+  subgraph assay:western Blot
     M5 ---P10--> M6
   end
 
@@ -492,7 +492,7 @@ graph LR
   M3(cDNA)
   M4(RNASeq Libraries)
   M5(SDS-gel)
-  M6(Western blot)
+  M6(western blot)
   
   P1>plant growth]
   P2>RNA extraction]
@@ -502,11 +502,11 @@ graph LR
   P6>Library preparation]
   P7>Next Generation Sequencing]
   P8>SDS Page]
-  P9>photo]
+  P9>taking a photo]
   P10>Immunoblotting]
-  P11>Mapping]
+  P11>mapping]
   
-  D1("qRT results (xlsx)")
+  D1("qRT results")
   D2(fastq files)
   D3(Image of \n SDS gel)
   D4(reference \n genome)
@@ -560,7 +560,7 @@ subgraph Assays
     M4 ---P7--> D2
   end
   
-  subgraph assay:Western Blot
+  subgraph assay:western Blot
     M5 ---P10--> M6
   end
 
