@@ -43,7 +43,6 @@ This guide assumes you know
 
 Sketch / screenshots unstructured - ARCed
 
-
 ## Sketch your laboratory workflows
 
 One goal of the ARC is to be able to tell, which finding or result originated from which biological experiment. This would ultimately require to link the dataset files back to the individual sample. To do so, we essentially follow a path of *processes* with *inputs* and *outputs*. Some of the inputs and outputs want to be reused or reproduced, some of the processes want to be applied to other inputs.
@@ -54,7 +53,7 @@ Before creating an ARC for an existing dataset, it might help to visualize what 
 
 Consider you want to investigate the effect of drought stress on the transcript levels of you gene of interest (GOI) via qRT-PCR. You grow plants from seeds, drought-stress the plants and collect leaves at the end of the growth study. From the leave samples &ndash; homogenized to powder and stored in a freezer &ndash; you take an aliquot to extract RNA, from which you synthesize cDNA. The cDNA (together with other biologicals and chemicals) is the input for a qRT-PCR yielding relative transcript levels as the output.
 
-```mermaid
+<div class="mermaid">
 
 %%{
   init: {
@@ -102,13 +101,13 @@ flowchart LR
   class Dx,D1,D2,D3,D4,D5 D;
   class Px,P1,P2,P3,P4,P5,P6,P7,P8,P9,P10,P11,P12,P13 P;
 
-```
+</div>
 
 ### Confirm findings on protein level
 
 You found your GOI affected by drought stress on transcript level. To confirm that the expression of the encoded protein is likewise affected, you take another aliquot from the same leave samples, extract proteins, separate them by SDS-PAGE and immunoblot the SDS gel with antibodies specific for your GOI.
 
-```mermaid
+<div class="mermaid">
 
 %%{
   init: {
@@ -170,14 +169,14 @@ graph LR
   class Dx,D1,D2,D3,D4,D5 D;
   class Px,P1,P2,P3,P4,P5,P6,P7,P8,P9,P10,P11,P12,P13 P;
 
-```
+</div>
 
 ### Global overview of gene expression
 
 You could show that the expression of your GOI was affected by drought on both transcript and protein level. In order to identify transcripts that correlate with your GOI under drought stress, you prepare RNA extracted earlier and submit it to a company for mRNA-Seq.
 
 
-```mermaid
+<div class="mermaid">
 
 %%{
   init: {
@@ -246,14 +245,14 @@ S1 ---P1--drought\nstress--> S2
   class Dx,D1,D2,D3,D4,D5 D;
   class Px,P1,P2,P3,P4,P5,P6,P7,P8,P9,P10,P11,P12,P13 P;
 
-```
+</div>
 
 ### Adding external data
 
 From the company you receive the RNA-Seq reads in form of fastq files. In order to quantify the reads and generate a count table, you map them against a suitable reference genome downloaded from an online database or publication's supplemental data.
 
 
-```mermaid
+<div class="mermaid">
 
 %%{
   init: {
@@ -330,12 +329,12 @@ graph LR
   class Dx,D1,D2,D3,D4,D5 D;
   class Px,P1,P2,P3,P4,P5,P6,P7,P8,P9,P10,P11,P12,P13 P;
 
-```
+</div>
 
 ### What this could look like in an ARC
 
 
-```mermaid
+<div class="mermaid">
 
 %%{
   init: {
@@ -450,13 +449,13 @@ end
 style Studies fill:#fff, stroke-width:2px, stroke:#333;
 style Assays fill:#fff, stroke-width:2px, stroke:#333;
 
-```
+</div>
 
 
 ### Add a new study and sample set
 
 
-```mermaid
+<div class="mermaid">
 
 %%{
   init: {
@@ -584,7 +583,7 @@ end
 style Studies fill:#fff, stroke-width:2px, stroke:#333;
 style Assays fill:#fff, stroke-width:2px, stroke:#333;
 
-```
+</div>
 
 
 :bulb: Conceptually, the same applies to computational workflows.
