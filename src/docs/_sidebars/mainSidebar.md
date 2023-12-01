@@ -14,6 +14,7 @@
 ## [Version Control & Git](/docs/fundamentals/VersionControlGit.html)
 ## [Public Data Repositories](/docs/fundamentals/PublicDataRepositories.html)
 ## [Persistent Identifiers](/docs/fundamentals/PersistentIdentifiers.html)
+## [Electronic Lab Notebooks (ELN)](/docs/fundamentals/ElectronicLabNotebooks.html)
 
 # [DataPLANT Implementations](/docs/implementation/index.html)
 ## [Annotated Research Context](/docs/implementation/AnnotatedResearchContext.html)
