@@ -21,15 +21,15 @@ Every lab builds on a collection of protocols. Some protocols may describe routi
 
 ## ELN &ndash; Digital protocol editors
 
-Once a protocol is digitalized, the information that used be stuck in a single-copy paper can be replicated with ease, facilitating quicker collaboration, sharing, and reuse. This can be done via a combination of text software, local or cloud servers, wiki platforms or by using a specialized software  &ndash; the **electronic** lab notebook (ELN).
+Once a protocol is digitalized, the information that used to be stuck in a single copy of paper can be easily replicated, enabling faster collaboration, sharing, and reuse. This can be done via a combination of text software, local or cloud servers, wiki platforms or by using a specialized software such as &ndash; **electronic** lab notebooks (ELNs).
 
 ELNs are designed to help overcome the limitations of classical pen-and-paper lab notebooks and to align with daily wet-lab routines. ELNs facilitate the editing and sharing of protocols, usually in a closed environment such as a lab or consortium. Designed as lightweight (low-burden, free-text) protocol editors, ELNs are a major step towards digitalization of laboratory processes.
 
-## ARCs &ndash; Packaging protocols with the data
+## ARCs &ndash; Packaging protocols combined with the data
 
-Protocols generated in ELNs integrate well with the ARC. Protocols and the metadata they contain have a dedicated place and schema within the ARC. Every study and assay subfolder in the ARC comes with a folder called `protocols`. This folder collects all protocols associated with a specific set of data files in the `dataset` folder. In addition, the `isa.study.xlsx` and `isa.assay.xlsx` workbooks associated to each study or assay, help to communicate the protocol's metadata in a structured and machine-readable way.
+Protocols generated in ELNs integrate well with the [Annotated Research Context (ARC)](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html). Protocols and the metadata they contain have a dedicated place and schema within the ARC. Each study and assay subfolder in the ARC comes with a folder called `protocols`. This folder collects all protocols associated with a particular set of data files in the `dataset` folder. In addition, the `isa.study.xlsx` and `isa.assay.xlsx` workbooks associated with each study or assay, help to communicate the protocol metadata in a structured and machine-readable way.
 
-Since ARCs are designed as FAIR digital objects, which combine the data files with the metadata in one research data package, they facilitate to store, share and reuse the research data as a whole.
+Since ARCs are designed as FAIR digital objects which combine the data files with the metadata into one research data package, they facilitate the storage, shareing, and reuse of the research data as a whole.
 
 ![](./../img/protocols2arc.drawio.svg)
 
