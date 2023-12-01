@@ -39,17 +39,19 @@ This guide assumes you know
 
 </div>
 
-## Goal: structure your current project folder into an ARC
+## Convert your project into an ARC
 
-
-
+- you have files and folders
+- they are stored somewhere
+- pack them / decorate them in an ARC. 
 
 
 ## Sketch your laboratory workflows
 
 One goal of the ARC is to be able to tell, which finding or result originated from which biological experiment. This would ultimately require to link the dataset files back to the individual sample. To do so, we essentially follow a path of *processes* with *inputs* and *outputs*. Some of the inputs and outputs want to be reused or reproduced, some of the processes want to be applied to other inputs.
 
-Before creating an ARC for an existing dataset, it might help to visualize what was done in the lab.  The following is very simplified example that most plant biologists can hopefully relate to.
+Before creating an ARC for an existing dataset, it might help to visualize what was done in the lab. The following is very simplified example that most plant biologists can hopefully relate to.
+
 
 ### Green-house to gene expression
 
