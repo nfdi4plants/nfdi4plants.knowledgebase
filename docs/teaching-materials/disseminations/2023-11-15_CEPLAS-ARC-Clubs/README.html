@@ -66,7 +66,7 @@
         README 2023-11-15_CEPLAS-ARC-Clubs
       </h1>
       <i class="help">
-        last updated at 2023-11-15
+        last updated at 2023-12-04
       </i>
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="see-website-locally">See website locally</nfdi-h2>
@@ -88,7 +88,7 @@ for unit in *.md; do
     
     if grep -q "^marp: true" "$unit"
     then
-        marp --html $unit --allow-local-files --theme-set $marpTheme
+        npx @marp-team/marp-cli@latest --html $unit --allow-local-files --theme-set $marpTheme
     fi
 
 done
