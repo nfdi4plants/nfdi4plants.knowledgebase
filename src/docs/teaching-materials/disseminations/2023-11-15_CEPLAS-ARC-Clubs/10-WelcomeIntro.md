@@ -38,7 +38,7 @@ Dominik Brilhaus, CEPLAS Data Science
 
 # House-keeping
 
-Pad: https://pad.hhu.de/OIn_kTxmQEyuYQyjuHy-CQ
+Pad: https://pad.hhu.de/lhxZ_1GCRAa9ROHmj0zuYQ
 
 - take notes
 - ask questions
@@ -98,14 +98,7 @@ Slides will be shared via DataPLANT knowledge base
 
 ---
 
-# The ARC Club &ndash; Rules
-
-1. You do not talk about **ARC Club**
-2. You **do not** talk about **ARC Club**
-
----
-
-# Rules: perfect is the enemy of good
+# Perfect is the enemy of good
 
 - There is no perfect ARC
 - There is no complete ARC
