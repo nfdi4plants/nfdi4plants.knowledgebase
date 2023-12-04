@@ -347,6 +347,22 @@ Try to fill the two sheets with the protocol details:
 
 ---
 
+## Link dataset files to samples
+
+1. In the *Building Blocks* tab, select *Output Columns* -> *Raw Data File*.
+2. Click <kbd>Add building block</kbd>.
+
+:bulb: You see a warning about a changed output column.
+
+3. Click <kbd>Continue</kbd>.
+4. Go to the *File Picker* tab and click <kbd>Pick file names</kbd>.
+5. Select and open the *fastq.gz files from the dataset folder.
+6. Copy / paste them to the `Raw Data File`. 
+
+:bulb: This allows you to link your samples to the resulting raw data files.
+
+---
+
 ## Your ISA table is ready 🎉
 
 Go ahead, adjust the Building Blocks you want to use to describe your experiment as you see fit.
