@@ -128,9 +128,9 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 
 <br>
 
-> :bulb: Each table is by default created with one input (`Source Name`) and one output (`Sample Name`) column  
+:bulb: Each table is by default created with one input (`Source Name`) and one output (`Sample Name`) column  
 
-> :bulb: Only one annotation table can be added per Excel sheet
+:bulb: Only one annotation table can be added per Excel sheet
 
 </div>
 
@@ -150,20 +150,20 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 4. Select the Term with the id `OBI:0100026` and, 
 5. Click <kbd>Add building block</kbd>.
 
-> :bulb: This adds three columns to your table, one visible and **two** hidden.
+:bulb: This adds three columns to your table, one visible and **two** hidden.
 
 ![bg right:30% w:400](./../../../img/Swate-AddBuildingBlock-Exp.jpg?v31.01.22)
 
-
 ---
+
 ## Insert values to annotate your data
 
 1. Navigate to the *Terms* tab in the Navbar
 2. In the annotation table, select any number of cells below `Characteristic [organism]`
 3. Click into the search field in Swate.
 
-> :bulb: You should see `organism` showing in a field in front of the search field  
-> :bulb: The search will now yield results related to `organism`
+:bulb: You should see `organism` showing in a field in front of the search field  
+:bulb: The search will now yield results related to `organism`
 
 4. In the search field, search for "Talinum fruticosum"
 5. Select the first hit and click <kbd>Fill selected cells with this term</kbd>
@@ -177,7 +177,7 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 3. Select `UO:0000160`.
 4. Click <kbd>Add building block</kbd>.
 
-> :bulb: This adds four columns to your table, one visible and **three** hidden.
+:bulb: This adds four columns to your table, one visible and **three** hidden.
 
 ---
 
@@ -185,7 +185,7 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 
 In the annotation table, select any cell below `Parameter [light intensity exposure]` and add "425" as light intensity.
 
-> :bulb: You can see the numbers being complemented with the chosen unit, e.g. `425.00 microeinstein per square meter per second`
+:bulb: You can see the numbers being complemented with the chosen unit, e.g. `425.00 microeinstein per square meter per second`
 
 ---
 
@@ -193,8 +193,9 @@ In the annotation table, select any cell below `Parameter [light intensity expos
 
 Hold <kbd>Ctrl</kbd> and click the *Autoformat Table* quick access button to adjust column widths and un-hide all hidden columns.
 
-> :bulb: You can see that your organism of choice was added with id and source Ontology in the reference (hidden) columns.  
-> :warning: This feature is currently not supported on MacOS
+:bulb: You can see that your organism of choice was added with id and source Ontology in the reference (hidden) columns.
+
+:warning: This feature is currently not supported on MacOS
 
 ---
 
@@ -202,7 +203,7 @@ Hold <kbd>Ctrl</kbd> and click the *Autoformat Table* quick access button to adj
 
 Click the <kbd>Update Ontology Terms</kbd> quick access buttons.
 
-> :bulb: This updates all reference columns according to the main column. In this case the reference columns for `Parameter [light intensity exposure]` are updated with the id and source ontology of the `microeinstein per square meter per second` unit.
+:bulb: This updates all reference columns according to the main column. In this case the reference columns for `Parameter [light intensity exposure]` are updated with the id and source ontology of the `microeinstein per square meter per second` unit.
 
 ---
 
@@ -226,11 +227,39 @@ Try to add suitable *building blocks* for other pieces of metadata from the plan
 
 ---
 
+## Add a factor building block
+
+1. In the *Building Blocks* tab, select *Factor*, search for `watering exposure` and select the term with id `PECO:0007383`.
+2. Click <kbd>Add building block</kbd>.
+3. Add the drought treatment ("no water for 12 days", "re-water for 2 days") to the respective samples
+
+:bulb: There are different options to add the drought treatment.
+
+---
+
+## Link the protocol to the isa table
+
+1. In the *Building Blocks* tab, select *Protocol Columns* -> *Protocol REF*.
+2. Click <kbd>Add building block</kbd>.
+3. Add the name of the protocol file (plant_material.txt) to the *Protocol REF* column.
+
+:bulb: This allows you to reference the free-text, human-readable protocol.
+
+---
+
+## Fill out source name and sample name
+
+Transfer the sample ids from the protocol.
+
+1. Invent names for `Source Name` (we do not have this information)
+2. Use the sample names (DB_*) as `Sample Name`
+
+---
 
 ## Let's annotate the RNA Seq data
 
 1. Navigate to the demo ARC. 
-2. Open the lab notes `assays/rnaseq/protocols/RNA_extraction.txt` in a text editor. 
+2. Open the lab notes `assays/rnaseq/protocols/RNA_extraction.txt` in a text editor.
 3. Open the empty `assays/rnaseq/isa.assay.xlsx)` workbook in Excel.
 
 ---
@@ -239,7 +268,7 @@ Try to add suitable *building blocks* for other pieces of metadata from the plan
 
 1. Navigate to *Templates* in the Navbar and click *Browse database* in the first function block.
 
-> :bulb: Here you can find community created workflow annotation templates
+:bulb: Here you can find community created workflow annotation templates
 
 1. Search for `RNA extraction` and click <kbd>select</kbd> 
     - You will see a preview of all building blocks which are part of this template.
@@ -284,10 +313,74 @@ Try to fill the two sheets with the protocol details:
 
 ---
 
+## Link samples across studies and assays
+
+1. Use the `Sample Name` of studies/talinum_drought/isa.study.xlsx as the `Source Name` to **rna-extraction**.
+1. Use the `Sample Name` of **rna-extraction** as the `Source Name` to **illumina-libraries**.
+
+---
+
+## Link samples across studies and assays
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+<section>
+  <div class="mermaid" style="width: 900px">
+  flowchart LR
+  %% Nodes
+    S1(Seeds)
+    S2(Leaves)  
+    M1(RNA)
+    P1>plant growth]
+    P2>RNA extraction]
+    P6>Illumina]
+    D2(fastq files)
+  %% Links
+  S1 ---P1--> S2
+  S2 ---P2--> M1
+  M1 ---P6--> D2
+  </div>
+</section>
+
+---
+
+## Link dataset files to samples
+
+1. In the *Building Blocks* tab, select *Output Columns* -> *Raw Data File*.
+2. Click <kbd>Add building block</kbd>.
+
+:bulb: You see a warning about a changed output column.
+
+3. Click <kbd>Continue</kbd>.
+4. Go to the *File Picker* tab and click <kbd>Pick file names</kbd>.
+5. Select and open the *fastq.gz files from the dataset folder.
+6. Copy / paste them to the `Raw Data File`. 
+
+:bulb: This allows you to link your samples to the resulting raw data files.
+
+---
+
 ## Your ISA table is ready 🎉
 
 Go ahead, adjust the Building Blocks you want to use to describe your experiment as you see fit.
 Insert values using Swate Term search and add input and output.
+
+---
+
+## Re-use a protocol (process.json)
+
+1. Open the empty `assays/metabolomics/isa.assay.xlsx)` workbook in Excel.
+2. Navigate to *Templates* in the Navbar and scroll down to "Add template(s) from file."
+3. Click <kbd>Upload protocol</kbd>
+4. Select the file "swate_agilent_gc.json" from the demo data.
+5. Click <kbd>Insert json</kbd>
+
+![bg right:25% w:300px](./../../../img/swate-tab-templates.png)
+
+:bulb: This adds not only an empty template, but a filled out table with keys (headers) and values (cells).
 
 ---
 
@@ -300,7 +393,7 @@ Example workflows with three *processes* each:
 - Plant growth &rarr; sampling &rarr; extraction
 - Measured data files  &rarr; statistical analysis  &rarr; result files
 
-> :bulb: Excel tables allow to group data that belongs together inside one sheet. This is not to be confused with a (work)sheet or workbook.
+:bulb: Excel tables allow to group data that belongs together inside one sheet. This is not to be confused with a (work)sheet or workbook.
 > ```bash
 > workbook              (e.g. "isa.assay.xlsx")
 >  └─── worksheet       (e.g. "plant_growth")
@@ -312,7 +405,6 @@ Example workflows with three *processes* each:
 
 1. Annotation within ARCitect is not yet available.
 2. Swate and ARCitect handle isa.study.xlsx / isa.assay.xlsx files differently.
-
 
 ---
 
