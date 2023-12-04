@@ -1,7 +1,7 @@
 ---
 title: "README 2023-11-15_CEPLAS-ARC-Clubs"
 layout: none
-date: 2023-11-15
+date: 2023-12-04
 ---
 
 ## See website locally
@@ -27,7 +27,7 @@ for unit in *.md; do
     
     if grep -q "^marp: true" "$unit"
     then
-        marp --html $unit --allow-local-files --theme-set $marpTheme
+        npx @marp-team/marp-cli@latest --html $unit --allow-local-files --theme-set $marpTheme
     fi
 
 done
