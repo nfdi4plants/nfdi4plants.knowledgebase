@@ -357,11 +357,14 @@ Insert values using Swate Term search and add input and output.
 ## Re-use a protocol (process.json)
 
 1. Open the empty `assays/metabolomics/isa.assay.xlsx)` workbook in Excel.
-2. Navigate to *Templates* in the Navbar.
+2. Navigate to *Templates* in the Navbar and scroll down to "Add template(s) from file."
+3. Click <kbd>Upload protocol</kbd>
+4. Select the file "swate_agilent_gc.json" from the demo data.
+5. Click <kbd>Insert json</kbd>
 
+![bg right:25% w:300px](./../../../img/swate-tab-templates.png)
 
-![bg right:30% w:350px](./../../../img/swate_templates.svg)
-
+:bulb: This adds not only an empty template, but a filled out table with keys (headers) and values (cells).
 
 ---
 
