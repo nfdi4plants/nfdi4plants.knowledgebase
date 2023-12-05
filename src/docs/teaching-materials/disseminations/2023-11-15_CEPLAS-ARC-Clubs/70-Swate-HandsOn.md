@@ -318,32 +318,26 @@ Try to fill the two sheets with the protocol details:
 1. Use the `Sample Name` of studies/talinum_drought/isa.study.xlsx as the `Source Name` to **rna-extraction**.
 1. Use the `Sample Name` of **rna-extraction** as the `Source Name` to **illumina-libraries**.
 
----
-
-## Link samples across studies and assays
-
 <script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: true });
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+mermaid.initialize({ startOnLoad: true });
 </script>
 
-<section>
-  <div class="mermaid" style="width: 900px">
-  flowchart LR
-  %% Nodes
-    S1(Seeds)
-    S2(Leaves)  
-    M1(RNA)
-    P1>plant growth]
-    P2>RNA extraction]
-    P6>Illumina]
-    D2(fastq files)
-  %% Links
-  S1 ---P1--> S2
-  S2 ---P2--> M1
-  M1 ---P6--> D2
-  </div>
-</section>
+<div class="mermaid">
+flowchart LR
+%% Nodes
+  S1(Seeds)
+  S2(Leaves)  
+  M1(RNA)
+  P1>plant growth]
+  P2>RNA extraction]
+  P6>Illumina]
+  D2(fastq files)
+%% Links
+S1 ---P1--> S2
+S2 ---P2--> M1
+M1 ---P6--> D2
+</div>
 
 ---
 
