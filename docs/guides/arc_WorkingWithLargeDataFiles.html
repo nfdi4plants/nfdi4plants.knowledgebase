@@ -532,19 +532,18 @@
         Working with large data files
       </h1>
       <i class="help">
-        last updated at 2023-06-28
+        last updated at 2023-12-05
       </i>
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
-<p>In this guide we show you how you can actively handle large data files in your ARC.</p>
+<p>In this guide we show you how you can actively handle large data files in your ARC using <strong><a href="./../implementation/ArcCommander.html">ARC Commander</a></strong>.</p>
+<p>💡 If you use <strong><a href="./../ARCitect-Manual/index.html">ARCitect</a></strong> to manage your ARCs, make sure to select or unselect the boxes <code>LFS</code> (in the &quot;Download ARC&quot; panel) or <code>Download LFS Files</code> (in the &quot;Versions&quot; panel) in order to allow or prevent syncing large files (LFS = large file storage).</p>
 <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>    
+    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
 </a>
 <br>
 <br>
-<p>⚠️
-This guide presents an interim solution. We are working on a more user-friendly implementation.</p>
 <nfdi-h2 id="before-we-can-start">Before we can start</nfdi-h2>
 <p>☑️ You have created an ARC before using the <a href="./../implementation/ArcCommander.html">ARC Commander</a><br />
 ☑️ The latest version of the <a href="https://github.com/nfdi4plants/arcCommander/releases">ARC Commander</a> is installed on your computer<br />
@@ -580,22 +579,19 @@ git add .gitattributes
 In this case, you can add the <code>-n</code> or <code>--nolfs</code> flag to your <code>arc get</code> command:</p>
 <nfdi-code class="language-bash">arc get --nolfs -r https://git.nfdi4plants.org/&lt;YourUser>/&lt;YourARC>
 </nfdi-code>
-<p>For example, have a look at the example ARC <a href="https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum">https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum</a>.
-In the DataHUB this ARC has a storage volume of ~11GB, a lot of which comes from the <a href="https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum/-/tree/main/assays/Talinum_RNASeq_minimal/dataset">large RNASeq data files</a> flagged as &quot;LFS&quot;.</p>
+<p>For example, have a look at the ARC <a href="https://git.nfdi4plants.org/shiltemann/physcomitrium-patens-light-signaling-2022/">https://git.nfdi4plants.org/shiltemann/physcomitrium-patens-light-signaling-2022/</a>.
+In the DataHUB this ARC has a storage volume of ~84GB (December 2023), most of which comes from the <a href="https://git.nfdi4plants.org/shiltemann/physcomitrium-patens-light-signaling-2022/-/tree/main/assays/RNASeq/dataset">large RNASeq data files</a> flagged as &quot;LFS&quot;.</p>
 <p>You can download this ARC without the LFS objects via</p>
-<nfdi-code class="language-bash">arc get --nolfs -r https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum
-</nfdi-code>
-<p>⚠️ Even without LFS objects this ARC still takes ~1GB of space.</p>
-<nfdi-h2 id="keep-lfs-objects-from-syncing">Keep LFS objects from syncing</nfdi-h2>
-<p>To make sure that also during an upcoming <code>arc sync</code>, LFS objects are not downloaded, you need to change the LFS option on that particular machine for this ARC.
-Navigate to your ARC (<code>Facultative-CAM-in-Talinum</code>) and execute the following two commands:</p>
-<nfdi-code class="language-bash">git config --local filter.lfs.smudge "git-lfs smudge --skip -- %f"
-git config --local filter.lfs.process "git-lfs filter-process --skip"
+<nfdi-code class="language-bash">arc get --nolfs -r https://git.nfdi4plants.org/shiltemann/physcomitrium-patens-light-signaling-2022/
 </nfdi-code>
 <nfdi-h2 id="selectively-download-large-files">Selectively download large files</nfdi-h2>
 <p>If at some point you wish to selectively download one or more of the LFS objects of your ARC to that machine, you can do so via <code>git lfs pull --include &quot;&lt;path/to/fileOrFolder&gt;&quot;</code></p>
 <p>For example, the following command will download one of the large RNASeq data files.</p>
-<nfdi-code class="language-bash">git lfs pull --include "assays/Talinum_RNASeq_minimal/dataset/DB_097_CAMMD_CAGATC_L001_R1_001.fastq.gz"
+<nfdi-code class="language-bash">git lfs pull --include "assays/RNASeq/dataset/R19/R19_1.fq.gz"
+</nfdi-code>
+<nfdi-h2 id="download-all-large-files-in-the-arc">Download all large files in the ARC</nfdi-h2>
+<p>If at some point you wish to download <strong>all</strong> LFS files of your ARC, you can use the following command</p>
+<nfdi-code class="language-bash">git lfs pull --include "*"
 </nfdi-code>
 
       <h3>
