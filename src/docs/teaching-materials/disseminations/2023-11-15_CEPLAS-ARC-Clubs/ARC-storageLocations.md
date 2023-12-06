@@ -16,15 +16,19 @@ author:
 
 ---
 
-# DataHUB as the *"ground truth"*
+# ARC storage and sharing
 
-![w:600px](./../../../img/ARC-storageLocations-withNotes.drawio.png)
+![w:650](./../../../img/ARC-storageLocations-withNotes.drawio.png)
 
-:bulb: ARCitect and ARC commander provide options to avoid syncing large files (LFS = Large file storage)
+- DataHUB as "ground truth" / original clone
+- You can sync and communicate all changes to your ARC via the DataHUB
+
+<span style="font-size:0.8em"> :bulb: ARCitect and ARC commander provide options to avoid syncing large files (LFS = Large file storage) </span>
+
 
 ---
 
-- Laptop
+- Personal computer
   - work on small files
   - annotate metadata
   - add scripts
@@ -32,11 +36,10 @@ author:
 
 :bulb: also applies to other ARCs where you would not want to download the large files
 
-- Desktop
+- Workstation
   - work on large files
   - run analyses
   
 - mount file server / HPC
 - direct connection HPC to DataHUB (depends on security settings)
 
-:bulb: This is just one example. Details may differ.
