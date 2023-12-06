@@ -8,4 +8,5 @@ section {
   background-repeat: no-repeat;
   background-size: 3%, 2%, 4%, 5%;
   background-position: 2% 99%, 6.5% 99%, 10% 99%, 15% 99%;
+  background-color: white;
 }
