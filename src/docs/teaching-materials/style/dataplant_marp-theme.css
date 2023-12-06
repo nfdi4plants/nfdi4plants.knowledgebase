@@ -2,16 +2,41 @@
 
 @import 'default';
 
+/* Header section */
+
 header {
   top: 30px;
   height: 60px;
 }
+
+/* Footer section*/
 
 footer {
   height: 60px;
   padding: 10px;
   bottom: 00px;
 }
+
+/* Styling page number */
+section::after {
+  font-family: Calibri, sans-serif;
+  font-size: 20px;
+  color: #2D3E50  
+}
+
+/* add a reference to slide bottom */
+
+.footer-reference {
+  font-size:15px;
+  line-height: 1.2em;
+  position: fixed;
+  left: 50%;
+  bottom: 0px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+/* headings */
 
 h1 {
   font-size: 50px;
@@ -25,39 +50,35 @@ h2 {
   color: #2D3E50;  
 }
 
+/* ul = unordered list (bullet points) */
+
+ul{
+  margin-left: 0px;
+  padding-left: 5;
+}
+
+/* Section is the main body of the slide */
+
 section {
   font-size: 30px;
   font-family: Calibri, sans-serif;
   color: #2D3E50;
 }
 
-/* Center images in the main section ("block") */
+/* Center images in section ("block") */
 
 section p img {
   display: block;
   margin: 0px auto 0px auto;  /* top right bottom left*/ 
 }
 
+/* Display emojis inline  (instead of on their own line as an image) */
+
 img.emoji {
   display: inline;
   }
 
-/* Styling page number */
-section::after {
-  font-family: Calibri, sans-serif;
-  font-size: 20px;
-  color: #2D3E50  
-}
-
-.footer-reference {
-  font-size:15px;
-  line-height: 1.2em;
-  position: fixed;
-  left: 50%;
-  bottom: 0px;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
-}
+/* Add columns - useful in sections, e.g. picture left, text right */
 
 .three-columns {
   display: grid;
@@ -71,6 +92,7 @@ section::after {
   gap: 1em;
 }
 
+/* highlight words as keyboard keys */
 
 kbd {
   padding:0.1em 0.6em;
@@ -92,11 +114,7 @@ kbd {
   white-space:nowrap;
 }
 
-
-ul{
-  margin-left: 0px;
-  padding-left: 5;
-}
+/* Can be used to add e.g. faces to title slide  */
 
 .profile-picture {
   position:relative;
