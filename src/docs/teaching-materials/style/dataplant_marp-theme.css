@@ -38,6 +38,10 @@ section p img {
   margin: 0px auto 0px auto;  /* top right bottom left*/ 
 }
 
+img.emoji {
+  display: inline;
+  }
+
 /* Styling page number */
 section::after {
   font-family: Calibri, sans-serif;
