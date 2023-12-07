@@ -25,9 +25,9 @@ author:
 
 # ARCitect installation
 
-Please install version **v0.0.10** of the ARCitect: https://github.com/nfdi4plants/ARCitect/releases/tag/v0.0.10
+Please install version **v0.0.21** (or later) of the ARCitect: https://github.com/nfdi4plants/ARCitect/releases/tag/v0.0.21
 
-:fire: (released September 20th, 2023) :fire:
+:fire: (released November 23rd, 2023) :fire:
 
 ---
 

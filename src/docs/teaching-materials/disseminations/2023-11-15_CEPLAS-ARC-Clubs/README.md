@@ -21,13 +21,11 @@ cd src/docs/teaching-materials/disseminations/2023-11-15_CEPLAS-ARC-Clubs
 
 ```bash
 
-marpTheme=../../style/marp-theme_dataplant-ceplas-ccby.css
-
 for unit in *.md; do
     
     if grep -q "^marp: true" "$unit"
     then
-        npx @marp-team/marp-cli@latest --html $unit --allow-local-files --theme-set $marpTheme
+        npx @marp-team/marp-cli@latest --html --allow-local-files $unit --theme-set $marpTheme ../../style/ --
     fi
 
 done
