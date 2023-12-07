@@ -188,16 +188,6 @@ In the file tree you can
 
 ---
 
-# Login to the DataHUB
-
-Click **Login** (1) in the sidebar to login to the DataHUB.
-
-:bulb: This automatically opens your browser at the DataHUB (https://git.nfdi4plants.org) and asks you to login, if you are not already logged in. 
-
-![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
-
----
-
 # Upload your local ARC to the DataHUB
 
 From the sidebar, navigate to **Versions** (6)

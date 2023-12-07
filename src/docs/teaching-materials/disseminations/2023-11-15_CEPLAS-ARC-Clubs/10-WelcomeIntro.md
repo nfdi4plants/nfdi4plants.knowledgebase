@@ -25,6 +25,16 @@ Dominik Brilhaus, CEPLAS Data Science
 
 ---
 
+# House-keeping
+
+Pad: https://pad.hhu.de/lhxZ_1GCRAa9ROHmj0zuYQ
+
+- take notes
+- ask questions
+- copy / paste links, etc.
+
+---
+
 # Get-to-know
 
 - Lab
@@ -33,16 +43,6 @@ Dominik Brilhaus, CEPLAS Data Science
 - Used code / programming language before
 - Have an ORCID
 - My motivation / expectation
-
----
-
-# House-keeping
-
-Pad: https://pad.hhu.de/lhxZ_1GCRAa9ROHmj0zuYQ
-
-- take notes
-- ask questions
-- copy / paste links, etc.
 
 ---
 
