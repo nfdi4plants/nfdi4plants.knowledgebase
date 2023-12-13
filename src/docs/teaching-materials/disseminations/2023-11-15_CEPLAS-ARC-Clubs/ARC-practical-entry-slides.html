@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en-US"><head><title>Metadata and ISA</title><meta property="og:title" content="Metadata and ISA"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><style>@media screen{body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{-webkit-tap-highlight-color:transparent;-webkit-appearance:none;appearance:none;background-color:transparent;border:0;color:inherit;cursor:pointer;font-size:inherit;opacity:.8;outline:none;padding:0;transition:opacity .2s linear}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:disabled{cursor:not-allowed;opacity:.15!important}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover{opacity:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:active{opacity:.6}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:not(:disabled){transition:none}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-prev{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNNjggOTAgMjggNTBsNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-next{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJtMzIgOTAgNDAtNDAtNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNNDAgNzBIMjBWNTBtMjAgMEwyMCA3MG00MC00MGgyMHYyMG0tMjAgMCAyMC0yMCIgY2xhc3M9ImEiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen]{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNMjAgNTBoMjB2MjBtLTIwIDAgMjAtMjBtNDAgMEg2MFYzMG0yMCAwTDYwIDUwIiBjbGFzcz0iYSIvPjwvc3ZnPg==")}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNODcuOCA0Ny41Qzg5IDUwIDg3LjcgNTIgODUgNTJIMzVhOC43IDguNyAwIDAgMS03LjItNC41bC0xNS42LTMxQzExIDE0IDEyLjIgMTIgMTUgMTJoNTBhOC44IDguOCAwIDAgMSA3LjIgNC41ek02MCA1MnYzNm0tMTAgMGgyME00NSA0MmgyMCIvPjwvc3ZnPg==") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-bigger{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODBNNTIgOTBWMTAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-smaller{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}}@keyframes __bespoke_marp_transition_reduced_outgoing__{0%{opacity:1}to{opacity:0}}@keyframes __bespoke_marp_transition_reduced_incoming__{0%{mix-blend-mode:plus-lighter;opacity:0}to{mix-blend-mode:plus-lighter;opacity:1}}.bespoke-marp-note,.bespoke-marp-osc,.bespoke-progress-parent{display:none;transition:none}@media screen{::view-transition-group(*){animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-timing-function:ease}::view-transition-new(*),::view-transition-old(*){animation-delay:0s;animation-direction:var(--marp-bespoke-transition-animation-direction,normal);animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-fill-mode:both;animation-name:var(--marp-bespoke-transition-animation-name,var(--marp-bespoke-transition-animation-name-fallback,__bespoke_marp_transition_no_animation__));mix-blend-mode:normal}::view-transition-old(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_outgoing__;animation-timing-function:ease}::view-transition-new(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_incoming__;animation-timing-function:ease}::view-transition-new(root),::view-transition-old(root){animation-timing-function:linear}::view-transition-new(__bespoke_marp_transition_osc__),::view-transition-old(__bespoke_marp_transition_osc__){animation-duration:0s!important;animation-name:__bespoke_marp_transition_osc__!important}::view-transition-new(__bespoke_marp_transition_osc__){opacity:0!important}.bespoke-marp-transition-warming-up::view-transition-group(*),.bespoke-marp-transition-warming-up::view-transition-new(*),.bespoke-marp-transition-warming-up::view-transition-old(*){animation-play-state:paused!important}body,html{height:100%;margin:0}body{background:#000;overflow:hidden}svg.bespoke-marp-slide{content-visibility:hidden;opacity:0;pointer-events:none;z-index:-1}svg.bespoke-marp-slide:not(.bespoke-marp-active) *{view-transition-name:none!important}svg.bespoke-marp-slide.bespoke-marp-active{content-visibility:visible;opacity:1;pointer-events:auto;z-index:0}svg.bespoke-marp-slide.bespoke-marp-active.bespoke-marp-active-ready *{animation-name:__bespoke_marp__!important}@supports not (content-visibility:hidden){svg.bespoke-marp-slide[data-bespoke-marp-load=hideable]{display:none}svg.bespoke-marp-slide[data-bespoke-marp-load=hideable].bespoke-marp-active{display:block}}}@media screen and (prefers-reduced-motion:reduce){svg.bespoke-marp-slide *{view-transition-name:none!important}}@media screen{[data-bespoke-marp-fragment=inactive]{visibility:hidden}body[data-bespoke-view=""] .bespoke-marp-parent,body[data-bespoke-view=next] .bespoke-marp-parent{inset:0;position:absolute}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc{view-transition-name:__bespoke_marp_transition_osc__;background:rgba(0,0,0,.65);border-radius:7px;bottom:50px;color:#fff;contain:paint;display:block;font-family:Helvetica,Arial,sans-serif;font-size:16px;left:50%;line-height:0;opacity:1;padding:12px;position:absolute;touch-action:manipulation;transform:translateX(-50%);transition:opacity .2s linear;-webkit-user-select:none;user-select:none;white-space:nowrap;will-change:transform;z-index:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>*,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>*{margin-left:6px}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>:first-child,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>:first-child{margin-left:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span{opacity:.8}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page]{display:inline-block;min-width:140px;text-align:center}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev]{height:32px;line-height:32px;width:32px}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive{cursor:none}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc{opacity:0;pointer-events:none}body[data-bespoke-view=""] svg.bespoke-marp-slide,body[data-bespoke-view=next] svg.bespoke-marp-slide{height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent{background:#222;display:flex;height:5px;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent+.bespoke-marp-parent{top:5px}body[data-bespoke-view=""] .bespoke-progress-parent .bespoke-progress-bar{background:#0288d1;flex:0 0 0;transition:flex-basis .2s cubic-bezier(0,1,1,1)}body[data-bespoke-view=next]{background:transparent}body[data-bespoke-view=presenter]{background:#161616}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container{display:grid;font-family:Helvetica,Arial,sans-serif;grid-template:"current dragbar next" minmax(140px,1fr) "current dragbar note" 2fr "info    dragbar note" 3em;grid-template-columns:minmax(3px,var(--bespoke-marp-presenter-split-ratio,66%)) 0 minmax(3px,1fr);height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent{grid-area:current;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide{height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide.bespoke-marp-active{filter:drop-shadow(0 3px 10px rgba(0,0,0,.5))}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container{background:#0288d1;cursor:col-resize;grid-area:dragbar;margin-left:-3px;opacity:0;position:relative;transition:opacity .4s linear .1s;width:6px;z-index:10}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container:hover{opacity:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container.active{opacity:1;transition-delay:0s}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container{background:#222;cursor:pointer;display:none;grid-area:next;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container iframe.bespoke-marp-presenter-next{background:transparent;border:0;display:block;filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container{background:#222;color:#eee;grid-area:note;position:relative;z-index:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper{display:block;inset:0;position:absolute}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons{background:rgba(0,0,0,.65);border-radius:4px;bottom:0;display:flex;gap:4px;margin:12px;opacity:0;padding:6px;pointer-events:none;position:absolute;right:0;transition:opacity .2s linear}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons:focus-within,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper:focus-within+.bespoke-marp-presenter-note-buttons,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container:hover .bespoke-marp-presenter-note-buttons{opacity:1;pointer-events:auto}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note{word-wrap:break-word;box-sizing:border-box;font-size:calc(1.1em*var(--bespoke-marp-note-font-scale, 1));height:calc(100% - 40px);margin:20px;overflow:auto;padding-right:3px;scrollbar-color:hsla(0,0%,93%,.5) transparent;scrollbar-width:thin;white-space:pre-wrap;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar{width:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-track{background:transparent}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-thumb{background:hsla(0,0%,93%,.5);border-radius:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note:empty{pointer-events:none}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:first-child{margin-top:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:last-child{margin-bottom:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container{align-items:center;box-sizing:border-box;color:#eee;display:flex;flex-wrap:nowrap;grid-area:info;justify-content:center;overflow:hidden;padding:0 10px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{box-sizing:border-box;display:block;padding:0 10px;white-space:nowrap;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page{order:2;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page .bespoke-marp-presenter-info-page-text{display:inline-block;min-width:120px;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time{color:#999;order:1;text-align:left}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{color:#999;order:3;text-align:right}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer:hover{cursor:pointer}}@media print{.bespoke-marp-presenter-info-container,.bespoke-marp-presenter-next-container,.bespoke-marp-presenter-note-container{display:none}}</style><style>div#\:\$p>svg>foreignObject>section{width:1280px;height:720px;box-sizing:border-box;overflow:hidden;position:relative;scroll-snap-align:center center}div#\:\$p>svg>foreignObject>section:after{bottom:0;content:attr(data-marpit-pagination);padding:inherit;pointer-events:none;position:absolute;right:0}div#\:\$p>svg>foreignObject>section:not([data-marpit-pagination]):after{display:none}/* Normalization */div#\:\$p>svg>foreignObject>section :is(h1,marp-h1){font-size:2em;margin:0.67em 0}div#\:\$p>svg>foreignObject>section video::-webkit-media-controls{will-change:transform}@page{size:1280px 720px;margin:0}@media print{body,html{background-color:#fff;margin:0;page-break-inside:avoid;break-inside:avoid-page}div#\:\$p>svg>foreignObject>section{page-break-before:always;break-before:page}div#\:\$p>svg>foreignObject>section,div#\:\$p>svg>foreignObject>section *{-webkit-print-color-adjust:exact!important;animation-delay:0s!important;animation-duration:0s!important;color-adjust:exact!important;transition:none!important}div#\:\$p>svg[data-marpit-svg]{display:block;height:100vh;width:100vw}}
+<!DOCTYPE html><html lang="en-US"><head><title>Practical Guide into the ARC ecosystem slides</title><meta property="og:title" content="Practical Guide into the ARC ecosystem slides"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><style>@media screen{body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{-webkit-tap-highlight-color:transparent;-webkit-appearance:none;appearance:none;background-color:transparent;border:0;color:inherit;cursor:pointer;font-size:inherit;opacity:.8;outline:none;padding:0;transition:opacity .2s linear}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:disabled{cursor:not-allowed;opacity:.15!important}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover{opacity:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:active{opacity:.6}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:not(:disabled){transition:none}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-prev{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNNjggOTAgMjggNTBsNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-next{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJtMzIgOTAgNDAtNDAtNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNNDAgNzBIMjBWNTBtMjAgMEwyMCA3MG00MC00MGgyMHYyMG0tMjAgMCAyMC0yMCIgY2xhc3M9ImEiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen]{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNMjAgNTBoMjB2MjBtLTIwIDAgMjAtMjBtNDAgMEg2MFYzMG0yMCAwTDYwIDUwIiBjbGFzcz0iYSIvPjwvc3ZnPg==")}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNODcuOCA0Ny41Qzg5IDUwIDg3LjcgNTIgODUgNTJIMzVhOC43IDguNyAwIDAgMS03LjItNC41bC0xNS42LTMxQzExIDE0IDEyLjIgMTIgMTUgMTJoNTBhOC44IDguOCAwIDAgMSA3LjIgNC41ek02MCA1MnYzNm0tMTAgMGgyME00NSA0MmgyMCIvPjwvc3ZnPg==") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-bigger{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODBNNTIgOTBWMTAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-smaller{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}}@keyframes __bespoke_marp_transition_reduced_outgoing__{0%{opacity:1}to{opacity:0}}@keyframes __bespoke_marp_transition_reduced_incoming__{0%{mix-blend-mode:plus-lighter;opacity:0}to{mix-blend-mode:plus-lighter;opacity:1}}.bespoke-marp-note,.bespoke-marp-osc,.bespoke-progress-parent{display:none;transition:none}@media screen{::view-transition-group(*){animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-timing-function:ease}::view-transition-new(*),::view-transition-old(*){animation-delay:0s;animation-direction:var(--marp-bespoke-transition-animation-direction,normal);animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-fill-mode:both;animation-name:var(--marp-bespoke-transition-animation-name,var(--marp-bespoke-transition-animation-name-fallback,__bespoke_marp_transition_no_animation__));mix-blend-mode:normal}::view-transition-old(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_outgoing__;animation-timing-function:ease}::view-transition-new(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_incoming__;animation-timing-function:ease}::view-transition-new(root),::view-transition-old(root){animation-timing-function:linear}::view-transition-new(__bespoke_marp_transition_osc__),::view-transition-old(__bespoke_marp_transition_osc__){animation-duration:0s!important;animation-name:__bespoke_marp_transition_osc__!important}::view-transition-new(__bespoke_marp_transition_osc__){opacity:0!important}.bespoke-marp-transition-warming-up::view-transition-group(*),.bespoke-marp-transition-warming-up::view-transition-new(*),.bespoke-marp-transition-warming-up::view-transition-old(*){animation-play-state:paused!important}body,html{height:100%;margin:0}body{background:#000;overflow:hidden}svg.bespoke-marp-slide{content-visibility:hidden;opacity:0;pointer-events:none;z-index:-1}svg.bespoke-marp-slide:not(.bespoke-marp-active) *{view-transition-name:none!important}svg.bespoke-marp-slide.bespoke-marp-active{content-visibility:visible;opacity:1;pointer-events:auto;z-index:0}svg.bespoke-marp-slide.bespoke-marp-active.bespoke-marp-active-ready *{animation-name:__bespoke_marp__!important}@supports not (content-visibility:hidden){svg.bespoke-marp-slide[data-bespoke-marp-load=hideable]{display:none}svg.bespoke-marp-slide[data-bespoke-marp-load=hideable].bespoke-marp-active{display:block}}}@media screen and (prefers-reduced-motion:reduce){svg.bespoke-marp-slide *{view-transition-name:none!important}}@media screen{[data-bespoke-marp-fragment=inactive]{visibility:hidden}body[data-bespoke-view=""] .bespoke-marp-parent,body[data-bespoke-view=next] .bespoke-marp-parent{inset:0;position:absolute}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc{view-transition-name:__bespoke_marp_transition_osc__;background:rgba(0,0,0,.65);border-radius:7px;bottom:50px;color:#fff;contain:paint;display:block;font-family:Helvetica,Arial,sans-serif;font-size:16px;left:50%;line-height:0;opacity:1;padding:12px;position:absolute;touch-action:manipulation;transform:translateX(-50%);transition:opacity .2s linear;-webkit-user-select:none;user-select:none;white-space:nowrap;will-change:transform;z-index:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>*,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>*{margin-left:6px}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>:first-child,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>:first-child{margin-left:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span{opacity:.8}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page]{display:inline-block;min-width:140px;text-align:center}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev]{height:32px;line-height:32px;width:32px}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive{cursor:none}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc{opacity:0;pointer-events:none}body[data-bespoke-view=""] svg.bespoke-marp-slide,body[data-bespoke-view=next] svg.bespoke-marp-slide{height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent{background:#222;display:flex;height:5px;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent+.bespoke-marp-parent{top:5px}body[data-bespoke-view=""] .bespoke-progress-parent .bespoke-progress-bar{background:#0288d1;flex:0 0 0;transition:flex-basis .2s cubic-bezier(0,1,1,1)}body[data-bespoke-view=next]{background:transparent}body[data-bespoke-view=presenter]{background:#161616}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container{display:grid;font-family:Helvetica,Arial,sans-serif;grid-template:"current dragbar next" minmax(140px,1fr) "current dragbar note" 2fr "info    dragbar note" 3em;grid-template-columns:minmax(3px,var(--bespoke-marp-presenter-split-ratio,66%)) 0 minmax(3px,1fr);height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent{grid-area:current;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide{height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide.bespoke-marp-active{filter:drop-shadow(0 3px 10px rgba(0,0,0,.5))}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container{background:#0288d1;cursor:col-resize;grid-area:dragbar;margin-left:-3px;opacity:0;position:relative;transition:opacity .4s linear .1s;width:6px;z-index:10}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container:hover{opacity:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container.active{opacity:1;transition-delay:0s}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container{background:#222;cursor:pointer;display:none;grid-area:next;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container iframe.bespoke-marp-presenter-next{background:transparent;border:0;display:block;filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container{background:#222;color:#eee;grid-area:note;position:relative;z-index:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper{display:block;inset:0;position:absolute}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons{background:rgba(0,0,0,.65);border-radius:4px;bottom:0;display:flex;gap:4px;margin:12px;opacity:0;padding:6px;pointer-events:none;position:absolute;right:0;transition:opacity .2s linear}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons:focus-within,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper:focus-within+.bespoke-marp-presenter-note-buttons,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container:hover .bespoke-marp-presenter-note-buttons{opacity:1;pointer-events:auto}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note{word-wrap:break-word;box-sizing:border-box;font-size:calc(1.1em*var(--bespoke-marp-note-font-scale, 1));height:calc(100% - 40px);margin:20px;overflow:auto;padding-right:3px;scrollbar-color:hsla(0,0%,93%,.5) transparent;scrollbar-width:thin;white-space:pre-wrap;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar{width:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-track{background:transparent}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-thumb{background:hsla(0,0%,93%,.5);border-radius:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note:empty{pointer-events:none}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:first-child{margin-top:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:last-child{margin-bottom:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container{align-items:center;box-sizing:border-box;color:#eee;display:flex;flex-wrap:nowrap;grid-area:info;justify-content:center;overflow:hidden;padding:0 10px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{box-sizing:border-box;display:block;padding:0 10px;white-space:nowrap;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page{order:2;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page .bespoke-marp-presenter-info-page-text{display:inline-block;min-width:120px;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time{color:#999;order:1;text-align:left}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{color:#999;order:3;text-align:right}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer:hover{cursor:pointer}}@media print{.bespoke-marp-presenter-info-container,.bespoke-marp-presenter-next-container,.bespoke-marp-presenter-note-container{display:none}}</style><style>div#\:\$p>svg>foreignObject>section{width:1280px;height:720px;box-sizing:border-box;overflow:hidden;position:relative;scroll-snap-align:center center}div#\:\$p>svg>foreignObject>section:after{bottom:0;content:attr(data-marpit-pagination);padding:inherit;pointer-events:none;position:absolute;right:0}div#\:\$p>svg>foreignObject>section:not([data-marpit-pagination]):after{display:none}/* Normalization */div#\:\$p>svg>foreignObject>section :is(h1,marp-h1){font-size:2em;margin:0.67em 0}div#\:\$p>svg>foreignObject>section video::-webkit-media-controls{will-change:transform}@page{size:1280px 720px;margin:0}@media print{body,html{background-color:#fff;margin:0;page-break-inside:avoid;break-inside:avoid-page}div#\:\$p>svg>foreignObject>section{page-break-before:always;break-before:page}div#\:\$p>svg>foreignObject>section,div#\:\$p>svg>foreignObject>section *{-webkit-print-color-adjust:exact!important;animation-delay:0s!important;animation-duration:0s!important;color-adjust:exact!important;transition:none!important}div#\:\$p>svg[data-marpit-svg]{display:block;height:100vh;width:100vw}}
 /*!
  * Marp default theme.
  *
@@ -49,530 +49,457 @@
 
 /* Can be used to add e.g. faces to title slide  */div#\:\$p>svg>foreignObject>section .profile-picture{position:relative;overflow:hidden;border-radius:50%;border-color:black;height:75px;width:75px;margin:10px;display:block}div#\:\$p>svg>foreignObject>:where(section){container-type:size}div#\:\$p>svg>foreignObject>section img[data-marp-twemoji]{background:transparent;height:1em;margin:0 .05em 0 .1em;vertical-align:-.1em;width:1em}
 
-/* @theme marp-theme_dataplant-ceplas-ccby */div#\:\$p>svg>foreignObject>section{background:url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/45bdd7650da78e918346f7e5a168e34200d380ce/src/docs/img/logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"),url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/main/src/docs/img/logos/CEPLAS/CEPLAS_Icon.jpeg"),url("https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg");background-repeat:no-repeat;background-size:3%,2%,5%;background-position:2% 99%,7% 99%,11% 99%;background-color:white}div#\:\$p>svg>foreignObject>section[data-marpit-scope-pDPYRPLX]{text-align:center;background:#F9CD69}div#\:\$p>svg>foreignObject>section[data-marpit-scope-pDPYRPLX]:after{display:none}div#\:\$p>svg>foreignObject>section[data-marpit-scope-pDPYRPLX] footer{display:none}div#\:\$p>svg>foreignObject>section[data-marpit-scope-zvC0mvlV]{text-align:justify}div#\:\$p>svg>foreignObject>section[data-marpit-scope-ldpHaujY]{text-align:justify}div#\:\$p>svg>foreignObject>section[data-marpit-scope-eI59tcd5] .columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:calc(var(--marpit-root-font-size, 1rem) * 1)}div#\:\$p>svg>foreignObject>section[data-marpit-scope-eI59tcd5] ul{margin:5;padding:0}div#\:\$p>svg>foreignObject>section[data-marpit-scope-m87YlT9Q] .columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:calc(var(--marpit-root-font-size, 1rem) * 1)}div#\:\$p>svg>foreignObject>section[data-marpit-scope-m87YlT9Q] ul{margin:5;padding:0}div#\:\$p>svg>foreignObject>section[data-marpit-scope-K2OkF0Kq] .columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:calc(var(--marpit-root-font-size, 1rem) * 4)}div#\:\$p>svg>foreignObject>section[data-marpit-scope-QBUq5Svy] code{display:inline-block;width:700px;font-size:18px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-yN1JDP3h] code{display:inline-block;width:700px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-nNZF6bAf] code{
-    /*display: inline-block;*/font-size:12px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-IxEgWwmB]{font-size:25px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-IxEgWwmB]{--marpit-root-font-size:25px}div#\:\$p>svg>foreignObject>section[data-marpit-scope-XnyVRvkB] :is(h1,marp-h1){text-align:left}div#\:\$p>svg>foreignObject>section[data-marpit-scope-XnyVRvkB]{text-align:center}div#\:\$p>svg>foreignObject>section[data-marpit-scope-ZHQ6mb3k] :is(h1,marp-h1){text-align:left}div#\:\$p>svg>foreignObject>section[data-marpit-scope-ZHQ6mb3k]{text-align:center}div#\:\$p>svg>foreignObject>section[data-marpit-scope-D6IIyugc] :is(h1,marp-h1){text-align:left}div#\:\$p>svg>foreignObject>section[data-marpit-scope-D6IIyugc]{text-align:center}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]{columns:initial!important;display:block!important;padding:0!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure>figcaption{position:absolute;border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;white-space:nowrap;width:1px}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content],div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#\:\$p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id=":$p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="1" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="metadata-and-isa">Metadata and ISA</h1>
+/* @theme marp-theme_dataplant-ceplas-ccby */div#\:\$p>svg>foreignObject>section{background:url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/45bdd7650da78e918346f7e5a168e34200d380ce/src/docs/img/logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"),url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/main/src/docs/img/logos/CEPLAS/CEPLAS_Icon.jpeg"),url("https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg");background-repeat:no-repeat;background-size:3%,2%,5%;background-position:2% 99%,7% 99%,11% 99%;background-color:white}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]{columns:initial!important;display:block!important;padding:0!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure>figcaption{position:absolute;border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;white-space:nowrap;width:1px}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content],div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#\:\$p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id=":$p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" data-heading-divider="1,2" lang="en-US" data-marpit-pagination="1" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--heading-divider:1,2;" data-marpit-pagination-total="9">
+<h1 id="structure-your-current-project-folder-into-an-arc">Structure your current project folder into an ARC</h1>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+mermaid.initialize({ startOnLoad: true });
+</script>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-marpit-scope-pDPYRPLX="" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="2" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="what-is-br-metadata">What is <br /> <strong>metadata</strong>?</h1>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" data-heading-divider="1,2" lang="en-US" data-marpit-pagination="2" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--heading-divider:1,2;" data-marpit-pagination-total="9">
+<h1 id="sketch-your-laboratory-workflows">Sketch your laboratory workflows</h1>
+<p>The ARC helps</p>
+<ul>
+<li>to tell, which finding or result originated from which biological experiment</li>
+<li>link dataset files to the individual sample</li>
+<li>to follow a path of <em>processes</em> with <em>inputs</em> and <em>outputs</em></li>
+<li>allow inputs and outputs want to be reused or reproduced, some of the processes want to be applied to other inputs</li>
+</ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-marpit-scope-zvC0mvlV="" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="3" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="violas-phd-project">Viola's PhD Project</h1>
-<p>Exercise: Take 5 minutes to note down the metadata</p>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" data-heading-divider="1,2" lang="en-US" data-marpit-pagination="3" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--heading-divider:1,2;" data-marpit-pagination-total="9">
+<h1 id="green-house-to-gene-expression">Green-house to gene expression</h1>
+<script type="module">
 
-<p>Viola investigates the effect of the plant circadian clock on sugar metabolism in <em>W. mirabilis</em>. For her PhD project, which is part of an EU-funded consortium in Prof. Beetroot's lab, she acquires seeds from a South-African botanical society. Viola grows the plants under different light regimes, harvests leaves from a two-day time series experiment, extracts polar metabolites as well as RNA and submits the samples to nearby core facilities for metabolomics and transcriptomics measurements, respectively. After a few weeks of iterative consultation with the facilities' heads as well as technicians and computational biologists involved, Viola receives back a wealth of raw and processed data. From the data she produces figures and wraps everything up to publish the results in the Journal of Wonderful Plant Sciences.</p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-marpit-scope-ldpHaujY="" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="4" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="metadata-everywhere">Metadata everywhere</h1>
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
 
-<p><code>Viola</code> investigates the <code>effect of the plant circadian clock</code> on <code>sugar metabolism</code> in <em><code>W. mirabilis</code></em>. For her <code>PhD project</code>, which is part of an <code>EU-funded consortium</code> in <code>Prof. Beetroot's lab</code>, she acquires <code>seeds</code> from a <code>South-African botanical society</code>. Viola <code>grows the plants</code> under <code>different light regimes</code>, harvests <code>leaves</code> from a <code>two-day time series experiment</code>, extracts <code>polar metabolites</code> as well as <code>RNA</code> and submits the samples to nearby <code>core facilities for metabolomics and transcriptomics</code> measurements, respectively. <code>After a few weeks</code> of iterative consultation with the facilities' heads as well as <code>technicians</code> and <code>computational biologists</code> involved, Viola receives back a wealth of <code>raw and processed data</code>. From the data she <code>produces figures</code> and wraps everything up to <code>publish the results in the Journal of Wonderful Plant Sciences</code>.</p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-marpit-scope-eI59tcd5="" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="5" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="project-metadata">Project metadata</h1>
-<div class="columns">
-<div class="columns-left">
-<h3 id="project-design">project design</h3>
-<ul>
-<li>researcher</li>
-<li>institute and project</li>
-<li>biological context</li>
-<li>research question</li>
-<li>purpose of data collection</li>
-<li>...</li>
-</ul>
-</div>
-<div class="columns-right">
-<h3 id="experimental-processes">experimental processes</h3>
-<ul>
-<li>origin and nature of the biological material</li>
-<li>lab protocols</li>
-<li>instrument model</li>
-<li>...</li>
-</ul>
-</div>
-<div class="columns-right">
-<h3 id="data-analytical-processes">data-analytical processes</h3>
-<ul>
-<li>algorithms</li>
-<li>tools</li>
-<li>software versions and dependencies employed</li>
-<li>...</li>
-</ul>
-</div>
+mermaid.initialize({ startOnLoad: true });
+</script>
+<div class="mermaid" style="min-width: 480px; max-width: 960px; min-height: 360px;max-height: 600px;">
+flowchart LR
+%% Nodes
+  S1(Seeds)
+  S2(Leaves)
+  M1(RNA)
+  M3(cDNA)
+  P1&gt;plant growth]
+  P2&gt;RNA extraction]
+  P4&gt;cDNA synthesis]
+  P5&gt;qRT-PCR]
+  D1("qRT results")
+%% Links
+  S1 ---P1--drought\nstress--&gt; S2
+  S2 ---P2--&gt; M1
+  M1 ---P4--&gt; M3
+  M3 ---P5--&gt; D1
+%% Defining node styles
+  classDef S fill:#b4ce82, stroke:#333;
+  classDef M fill:#ffc000;
+  classDef D fill:#c21f3a,color:white;
+  classDef P stroke-width:0px;  
+%% Assigning styles to nodes
+  class Sx,S1,S2 S;
+  class Mx,M1,M2,M3,M4,M5,M6 M;
+  class Dx,D1,D2,D3,D4,D5 D;
+  class Px,P1,P2,P3,P4,P5,P6,P7,P8,P9,P10,P11,P12,P13 P;
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-marpit-scope-m87YlT9Q="" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="6" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="other-types-of-metadata">Other types of metadata</h1>
-<div class="columns">
-<div class="columns-left">
-<h3 id="bibliographic">bibliographic</h3>
-<ul>
-<li>Title</li>
-<li>Publication date and title</li>
-<li>Description</li>
-<li>Author</li>
-<li>Contacts</li>
-<li>Keywords</li>
-<li>...</li>
-</ul>
-</div>
-<div class="columns-right">
-<h3 id="legal-or-administrative">legal or administrative</h3>
-<ul>
-<li>data origin, ownership, rovenance,</li>
-<li>licensing</li>
-<li>ethical aspects</li>
-<li>...</li>
-</ul>
-</div>
-<div class="columns-right">
-<h3 id="technical">technical</h3>
-<ul>
-<li>expected data volume</li>
-<li>storage location</li>
-<li>file formats</li>
-<li>...</li>
-</ul>
-</div>
-</div>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-marpit-scope-K2OkF0Kq="" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="7" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="metadata-from-a-fair-perspective">Metadata from a FAIR perspective</h1>
-<div class="columns">
-<div class="columns-left">
-<p><strong>Findable</strong></p>
-<ul>
-<li>metadata names the content of the data</li>
-<li>basis for search engines</li>
-<li>makes it categorizable for people and machines</li>
-</ul>
-<p><strong>Accessible</strong></p>
-<ul>
-<li>information about origin</li>
-<li>location of storage</li>
-<li>access rights</li>
-</ul>
-</div>
-<div class="columns-right">
-<p><strong>Interoperable</strong></p>
-<ul>
-<li>metadata identifies software and file formats</li>
-<li>required conversions between file formats</li>
-</ul>
-<p><strong>Reusable</strong></p>
-<ul>
-<li>obtain and reuse research data according to clear rules described in licenses</li>
-</ul>
-</div>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" data-heading-divider="1,2" lang="en-US" data-marpit-pagination="4" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--heading-divider:1,2;" data-marpit-pagination-total="9">
+<h1 id="confirm-findings-on-protein-level">Confirm findings on protein level</h1>
+<div class="mermaid">
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'background': '#fff',
+      'lineColor': '#2d3e50',
+      'primaryTextColor': '#2d3e50'
+    }
+  }
+}%%
+graph LR
+%% Nodes
+  S1(Seeds)
+  S2(Leaves)
+  M1(RNA)
+  M2(protein)
+  M3(cDNA)
+  M5(SDS-gel)
+  M6(western blot)
+  P1&gt;plant growth]
+  P2&gt;RNA extraction]
+  P3&gt;protein extraction]
+  P4&gt;cDNA synthesis]
+  P5&gt;qRT-PCR]
+  P8&gt;SDS Page]
+  P9&gt;taking a photo]
+  P10&gt;Immunoblotting]
+  D1("qRT results")
+  D3(Image of \n SDS gel)
+%% Links
+  S1 ---P1--drought\nstress--&gt; S2
+  S2 ---P2--&gt; M1
+  S2 ---P3--&gt; M2
+  M1 ---P4--&gt; M3
+  M3 ---P5--&gt; D1
+  M2 ---P8--&gt; M5
+  M5 ---P9--&gt; D3
+  M5 ---P10--&gt; M6
+%% Defining node styles
+  classDef S fill:#b4ce82, stroke:#333;
+  classDef M fill:#ffc000;
+  classDef D fill:#c21f3a,color:white;
+  classDef P stroke-width:0px;  
+%% Assigning styles to nodes
+  class Sx,S1,S2 S;
+  class Mx,M1,M2,M3,M4,M5,M6 M;
+  class Dx,D1,D2,D3,D4,D5 D;
+  class Px,P1,P2,P3,P4,P5,P6,P7,P8,P9,P10,P11,P12,P13 P;
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="8" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="metadata-standards">Metadata &quot;Standards&quot;</h1>
-<p>Examples from <a href="https://fairsharing.org/3518">Minimum Information for Biological and Biomedical Investigations (MIBBI)</a>:</p>
-<ul>
-<li>MIAPPE | Minimum Information About a Plant Phenotyping Experiment <a href="https://www.miappe.org">https://www.miappe.org</a></li>
-<li>MIAME | Minimum Information About a Microarray Experiment <a href="https://www.fged.org/projects/miame/">https://www.fged.org/projects/miame/</a></li>
-<li>MIAPE | Minimum Information About a Proteomics Experiment <a href="https://www.psidev.info/miape">https://www.psidev.info/miape</a></li>
-<li>MINSEQE | Minimum Information about a high-throughput SEQuencing Experiment <a href="https://www.fged.org/projects/minseqe">https://www.fged.org/projects/minseqe</a></li>
-</ul>
-<p><img class="emoji" draggable="false" alt="💡" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4a1.svg" data-marp-twemoji=""/> Check out <a href="https://fairsharing.org/">https://fairsharing.org/</a> for more examples</p>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" data-heading-divider="1,2" lang="en-US" data-marpit-pagination="5" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--heading-divider:1,2;" data-marpit-pagination-total="9">
+<h1 id="global-overview-of-gene-expression">Global overview of gene expression</h1>
+<div class="mermaid" style="width: 900px">
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'fontSize': '5px',
+      'background': '#fff',
+      'lineColor': '#2d3e50',
+      'primaryTextColor': '#2d3e50'
+    }
+  }
+}%%
+graph LR
+%% Nodes
+  S1(Seeds)
+  S2(Leaves)
+  M1(RNA)
+  M2(protein)
+  M3(cDNA)
+  M4(RNASeq Libraries)
+  M5(SDS-gel)
+  M6(western blot)
+  P1&gt;plant growth]
+  P2&gt;RNA extraction]
+  P3&gt;protein extraction]
+  P4&gt;cDNA synthesis]
+  P5&gt;qRT-PCR]
+  P6&gt;Library preparation]
+  P7&gt;Next Generation Sequencing]
+  P8&gt;SDS Page]
+  P9&gt;taking a photo]
+  P10&gt;Immunoblotting]
+  D1("qRT results")
+  D2(fastq files)
+  D3(Image of \n SDS gel)  
+%% Links
+S1 ---P1--drought\nstress--&gt; S2
+  S2 ---P2--&gt; M1
+  S2 ---P3--&gt; M2
+  M1 ---P4--&gt; M3
+  M3 ---P5--&gt; D1
+  M1 ---P6--&gt; M4
+  M4 ---P7--&gt; D2  
+  M2 ---P8--&gt; M5
+  M5 ---P9--&gt; D3
+  M5 ---P10--&gt; M6
+%% Defining node styles
+  classDef S fill:#b4ce82, stroke:#333;
+  classDef M fill:#ffc000;
+  classDef D fill:#c21f3a,color:white;
+  classDef P stroke-width:0px;  
+%% Assigning styles to nodes
+  class Sx,S1,S2,S4 S;
+  class Mx,M1,M2,M3,M4,M5,M6 M;
+  class Dx,D1,D2,D3,D4,D5 D;
+  class Px,P1,P2,P3,P4,P5,P6,P7,P8,P9,P10,P11,P12,P13 P;
+</div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="9" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="metadata-standards-%E2%89%88-checklists">Metadata standards ≈ Checklists</h1>
-<ul>
-<li>Determine (minimal) required information</li>
-<li>Usually <strong>do not</strong> determine the format (i.e. shape or file type)</li>
-</ul>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" data-heading-divider="1,2" lang="en-US" data-marpit-pagination="6" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--heading-divider:1,2;" data-marpit-pagination-total="9">
+<h1 id="adding-external-data">Adding external data</h1>
+<div class="mermaid">
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'background': '#fff',
+      'lineColor': '#2d3e50',
+      'primaryTextColor': '#2d3e50'
+    }
+  }
+}%%
+graph LR
+%% Nodes
+  S1(Seeds)
+  S2(Leaves)
+  M1(RNA)
+  M2(protein)
+  M3(cDNA)
+  M4(RNASeq Libraries)
+  M5(SDS-gel)
+  M6(western blot)
+  P1&gt;plant growth]
+  P2&gt;RNA extraction]
+  P3&gt;protein extraction]
+  P4&gt;cDNA synthesis]
+  P5&gt;qRT-PCR]
+  P6&gt;Library preparation]
+  P7&gt;Next Generation Sequencing]
+  P8&gt;SDS Page]
+  P9&gt;taking a photo]
+  P10&gt;Immunoblotting]
+  P11&gt;mapping]
+  D1("qRT results")
+  D2(fastq files)
+  D3(Image of \n SDS gel)
+  D4(reference \n genome)
+  D5(count table)  
+%% Links
+    S1 ---P1--drought\nstress--&gt; S2
+    P12&gt;Download]
+    x(Paper supplement) ---P12--&gt; D4
+  S2 ---P2--&gt; M1
+  S2 ---P3--&gt; M2
+  M1 ---P4--&gt; M3
+  M3 ---P5--&gt; D1
+  M1 ---P6--&gt; M4
+  M4 ---P7--&gt; D2
+  D2 --- P11
+  D4 --- P11
+  P11 --&gt; D5
+  M2 ---P8--&gt; M5
+  M5 ---P9--&gt; D3
+  M5 ---P10--&gt; M6
+%% Defining node styles
+  classDef S fill:#b4ce82, stroke:#333;
+  classDef M fill:#ffc000;
+  classDef D fill:#c21f3a,color:white;
+  classDef P stroke-width:0px;  
+%% Assigning styles to nodes
+  class Sx,S1,S2,S4 S;
+  class Mx,M1,M2,M3,M4,M5,M6 M;
+  class Dx,D1,D2,D3,D4,D5 D;
+  class Px,P1,P2,P3,P4,P5,P6,P7,P8,P9,P10,P11,P12,P13 P;
+</div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="10" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="a-small-interactive-detour">A small Interactive detour</h1>
-<p>-&gt; favorite Movie</p>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" data-heading-divider="1,2" lang="en-US" data-marpit-pagination="7" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--heading-divider:1,2;" data-marpit-pagination-total="9">
+<h1 id="what-this-could-look-like-in-an-arc">What this could look like in an ARC</h1>
+<div class="mermaid">
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'background': '#fff',
+      'lineColor': '#2d3e50',
+      'primaryTextColor': '#2d3e50'
+    }
+  }
+}%%
+graph LR
+%% Nodes
+  S1(Seeds)
+  S2(Leaves)
+  M1(RNA)
+  M2(protein)
+  M3(cDNA)
+  M4(RNASeq Libraries)
+  M5(SDS-gel)
+  M6(western blot)
+  P1&gt;plant growth]
+  P2&gt;RNA extraction]
+  P3&gt;protein extraction]
+  P4&gt;cDNA synthesis]
+  P5&gt;qRT-PCR]
+  P6&gt;Library preparation]
+  P7&gt;Next Generation Sequencing]
+  P8&gt;SDS Page]
+  P9&gt;taking a photo]
+  P10&gt;Immunoblotting]
+  P11&gt;mapping]
+  D1("qRT results")
+  D2(fastq files)
+  D3(Image of \n SDS gel)
+  D4(reference \n genome)
+  D5(count table)  
+%% Links
+subgraph Studies
+  subgraph study:drought
+    S1 ---P1--drought\nstress--&gt; S2
+  end
+  subgraph study:genome-ref
+    P12&gt;Download]
+    x(Paper supplement) ---P12--&gt; D4
+  end
+end
+subgraph Assays
+  subgraph assay:qRT-PCR
+  S2 ---P2--&gt; M1
+  M1 ---P4--&gt; M3
+  M3 ---P5--&gt; D1
+  end
+  subgraph assay:SDS-gel
+    S2 ---P3--&gt; M2
+    M2 ---P8--&gt; M5
+    M5 ---P9--&gt; D3
+  end
+  subgraph assay:RNA-Seq
+    M1 ---P6--&gt; M4
+    M4 ---P7--&gt; D2
+  end
+  subgraph assay:western Blot
+    M5 ---P10--&gt; M6
+  end
+end
+subgraph Worklows/Runs
+  subgraph workflow:mapping
+      D2 --- P11
+      D4 --- P11    
+  end
+  subgraph run
+    P11 --&gt; D5
+  end
+end
+%% Add legend
+subgraph Legend
+    Sx(Sample)    
+    Px&gt;Process]
+    Mx(Material)    
+    Dx(Data)
+end
+%% Defining node styles
+  classDef S fill:#b4ce82, stroke:#333;
+  classDef M fill:#ffc000;
+  classDef D fill:#c21f3a,color:white;
+  classDef P stroke-width:0px;  
+%% Assigning styles to nodes
+  class Sx,S1,S2,S4 S;
+  class Mx,M1,M2,M3,M4,M5,M6 M;
+  class Dx,D1,D2,D3,D4,D5 D;
+  class Px,P1,P2,P3,P4,P5,P6,P7,P8,P9,P10,P11,P12,P13 P;
+%% Box style
+style Worklows/Runs fill:#fff, stroke-width:2px, stroke:#333;
+style Studies fill:#fff, stroke-width:2px, stroke:#333;
+style Assays fill:#fff, stroke-width:2px, stroke:#333;
+</div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="11" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="how-does-google-know">How does google &quot;know&quot;?!</h1>
-<p><img src="./../../../img/googlecom-screenshot-kg.png" alt="" style="width:800px;" /></p>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" data-heading-divider="1,2" lang="en-US" data-marpit-pagination="8" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--heading-divider:1,2;" data-marpit-pagination-total="9">
+<h1 id="add-a-new-study-and-sample-set">Add a new study and sample set</h1>
+<div class="mermaid">
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'background': '#fff',
+      'lineColor': '#2d3e50',
+      'primaryTextColor': '#2d3e50'
+    }
+  }
+}%%
+graph LR
+%% Nodes
+  S1(Seeds)
+  S2(Leaves)
+  M1(RNA)
+  M2(protein)
+  M3(cDNA)
+  M4(RNASeq Libraries)
+  M5(SDS-gel)
+  M6(western blot)
+  P1&gt;plant growth]
+  P2&gt;RNA extraction]
+  P3&gt;protein extraction]
+  P4&gt;cDNA synthesis]
+  P5&gt;qRT-PCR]
+  P6&gt;Library preparation]
+  P7&gt;Next Generation Sequencing]
+  P8&gt;SDS Page]
+  P9&gt;taking a photo]
+  P10&gt;Immunoblotting]
+  P11&gt;mapping]
+  D1("qRT results")
+  D2(fastq files)
+  D3(Image of \n SDS gel)
+  D4(reference \n genome)
+  D5(count table)  
+%% Links
+subgraph Studies
+  subgraph study:drought
+    S1 ---P1--drought\nstress--&gt; S2
+  end
+  subgraph study:heat
+    P13&gt;plant growth] 
+    S1 ---P13--heat\nstress--&gt; S4(Leaves)
+  end
+  subgraph study:genome-ref
+    P12&gt;Download]
+    x(Paper supplement) ---P12--&gt; D4
+  end
+end
+subgraph Assays
+  subgraph assay:Another Assay
+    P14&gt;Process XY]
+    D6(Output XY)
+    S4 ---P14--&gt; D6
+  end
+  subgraph assay:qRT-PCR
+    S2 ---P2--&gt; M1
+    M1 ---P4--&gt; M3
+    M3 ---P5--&gt; D1
+  end
+  subgraph assay:SDS-gel
+    S2 ---P3--&gt; M2
+    M2 ---P8--&gt; M5
+    M5 ---P9--&gt; D3
+  end
+  subgraph assay:RNA-Seq
+    M1 ---P6--&gt; M4
+    M4 ---P7--&gt; D2
+  end
+  subgraph assay:western Blot
+    M5 ---P10--&gt; M6
+  end
+end
+subgraph Worklows/Runs
+  subgraph workflow:mapping
+      D2 --- P11
+      D4 --- P11    
+  end
+  subgraph run
+    P11 --&gt; D5
+  end
+end
+%% Add legend
+subgraph Legend
+    Sx(Sample)    
+    Px&gt;Process]
+    Mx(Material)    
+    Dx(Data)
+end
+%% Defining node styles
+  classDef S fill:#b4ce82, stroke:#333;
+  classDef M fill:#ffc000;
+  classDef D fill:#c21f3a,color:white;
+  classDef P stroke-width:0px;  
+%% Assigning styles to nodes
+  class Sx,S1,S2,S4 S;
+  class Mx,M1,M2,M3,M4,M5,M6 M;
+  class Dx,D1,D2,D3,D4,D5,D6 D;
+  class Px,P1,P2,P3,P4,P5,P6,P7,P8,P9,P10,P11,P12,P13,P14 P;
+%% Box style
+style Worklows/Runs fill:#fff, stroke-width:2px, stroke:#333;
+style Studies fill:#fff, stroke-width:2px, stroke:#333;
+style Assays fill:#fff, stroke-width:2px, stroke:#333;
+</div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="12" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="schemas-and-machine-readability">Schemas and machine-readability</h1>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="13" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h2 id="structured-data-and-the-internet">Structured data and the internet</h2>
-<p>Schema.org</p>
-<ul>
-<li>create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, ...</li>
-<li>Structured data can be used to <em><strong>mark up</strong></em> all kinds of items from products to events to recipes</li>
-<li>Communicate with search engines (-&gt; SEO, search engine optimization)</li>
-<li>Enhance findability from search engine results</li>
-<li>Provide context to an ambigous webpage</li>
-<li>Metadata interoperability and standardization across all website using schema.org</li>
-</ul>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-marpit-scope-QBUq5Svy="" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="14" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h2 id="structured-data-and-the-internet-schemaorg">Structured data and the internet: Schema.org</h2>
-
-<p><a href="https://schema.org/Person">https://schema.org/Person</a></p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-json">&lt;script type=<span class="hljs-string">&quot;application/ld+json&quot;</span>&gt;
-<span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">&quot;@context&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;https://schema.org&quot;</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;@type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Person&quot;</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;address&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-    <span class="hljs-attr">&quot;@type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;PostalAddress&quot;</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">&quot;addressLocality&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Seattle&quot;</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">&quot;addressRegion&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;WA&quot;</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">&quot;postalCode&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;98052&quot;</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">&quot;streetAddress&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;20341 Whitworth Institute 405 N. Whitworth&quot;</span>
-  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;colleague&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
-    <span class="hljs-string">&quot;http://www.xyz.edu/students/alicejones.html&quot;</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-string">&quot;http://www.xyz.edu/students/bobsmith.html&quot;</span>
-  <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;email&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;mailto:jane-doe@xyz.edu&quot;</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;image&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;janedoe.jpg&quot;</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;jobTitle&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Professor&quot;</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Jane Doe&quot;</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;telephone&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;(425) 123-4567&quot;</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">&quot;url&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;http://www.janedoe.com&quot;</span>
-<span class="hljs-punctuation">}</span>
-&lt;/script&gt;
-</code></pre>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-marpit-scope-yN1JDP3h="" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="15" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h2 id="json-ld">JSON-LD</h2>
-
-<p>JSON-LD = JavaScript Object Notation for Linked Data</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-json">&lt;script type=<span class="hljs-string">&quot;application/ld+json&quot;</span>&gt;
-  <span class="hljs-punctuation">{</span>
-    <span class="hljs-attr">&quot;@context&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;https://schema.org&quot;</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">&quot;@type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;SportsTeam&quot;</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;San Francisco 49ers&quot;</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">&quot;member&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-      <span class="hljs-attr">&quot;@type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;OrganizationRole&quot;</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">&quot;member&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-        <span class="hljs-attr">&quot;@type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Person&quot;</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Joe Montana&quot;</span>
-      <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">&quot;startDate&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;1979&quot;</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">&quot;endDate&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;1992&quot;</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">&quot;roleName&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Quarterback&quot;</span>
-    <span class="hljs-punctuation">}</span>
-  <span class="hljs-punctuation">}</span>
-&lt;/script&gt;
-</code></pre>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="16" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h2 id="rdfa">RDFa</h2>
-<p>RDFa = Resource Description Framework in Attributes</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code>&lt;div vocab=&quot;http://schema.org/&quot; typeof=&quot;SportsTeam&quot;&gt;
-  &lt;span property=&quot;name&quot;&gt;San Francisco 49ers&lt;/span&gt;
-  &lt;div property=&quot;member&quot; typeof=&quot;OrganizationRole&quot;&gt;
-    &lt;div property=&quot;member&quot; typeof=&quot;http://schema.org/Person&quot;&gt;
-      &lt;span property=&quot;name&quot;&gt;Joe Montana&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;span property=&quot;startDate&quot;&gt;1979&lt;/span&gt;
-    &lt;span property=&quot;endDate&quot;&gt;1992&lt;/span&gt;
-    &lt;span property=&quot;roleName&quot;&gt;Quarterback&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="17" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="standards">Standards</h1>
-<h3 id="dublin-core">Dublin Core</h3>
-<p><a href="https://www.dublincore.org/schemas/">https://www.dublincore.org/schemas/</a></p>
-<h3 id="datacite-schema">DataCite Schema</h3>
-<ul>
-<li>Schema: <a href="http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">http://schema.datacite.org/meta/kernel-4.3/metadata.xsd</a></li>
-<li>Full Example: <a href="https://schema.datacite.org/meta/kernel-4.3/example/datacite-example-full-v4.xml">https://schema.datacite.org/meta/kernel-4.3/example/datacite-example-full-v4.xml</a></li>
-</ul>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-marpit-scope-nNZF6bAf="" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="18" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h2 id="datacite-schema-simple-example">DataCite Schema: Simple Example</h2>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-xml">...
-  <span class="hljs-tag">&lt;<span class="hljs-name">identifier</span> <span class="hljs-attr">identifierType</span>=<span class="hljs-string">&quot;DOI&quot;</span>&gt;</span>10.5072/D3P26Q35R-Test<span class="hljs-tag">&lt;/<span class="hljs-name">identifier</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">creators</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">creator</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">creatorName</span> <span class="hljs-attr">nameType</span>=<span class="hljs-string">&quot;Personal&quot;</span>&gt;</span>Fosmire, Michael<span class="hljs-tag">&lt;/<span class="hljs-name">creatorName</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">givenName</span>&gt;</span>Michael<span class="hljs-tag">&lt;/<span class="hljs-name">givenName</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">familyName</span>&gt;</span>Fosmire<span class="hljs-tag">&lt;/<span class="hljs-name">familyName</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">creator</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">creator</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">creatorName</span> <span class="hljs-attr">nameType</span>=<span class="hljs-string">&quot;Personal&quot;</span>&gt;</span>Wertz, Ruth<span class="hljs-tag">&lt;/<span class="hljs-name">creatorName</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">givenName</span>&gt;</span>Ruth<span class="hljs-tag">&lt;/<span class="hljs-name">givenName</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">familyName</span>&gt;</span>Wertz<span class="hljs-tag">&lt;/<span class="hljs-name">familyName</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">creator</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">creator</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">creatorName</span> <span class="hljs-attr">nameType</span>=<span class="hljs-string">&quot;Personal&quot;</span>&gt;</span>Purzer, Senay<span class="hljs-tag">&lt;/<span class="hljs-name">creatorName</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">givenName</span>&gt;</span>Senay<span class="hljs-tag">&lt;/<span class="hljs-name">givenName</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">familyName</span>&gt;</span>Purzer<span class="hljs-tag">&lt;/<span class="hljs-name">familyName</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">creator</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">creators</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">titles</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span> <span class="hljs-attr">xml:lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>Critical Engineering Literacy Test (CELT)<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">titles</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">publisher</span> <span class="hljs-attr">xml:lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>Purdue University Research Repository (PURR)<span class="hljs-tag">&lt;/<span class="hljs-name">publisher</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">publicationYear</span>&gt;</span>2013<span class="hljs-tag">&lt;/<span class="hljs-name">publicationYear</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">subjects</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">subject</span> <span class="hljs-attr">xml:lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>Assessment<span class="hljs-tag">&lt;/<span class="hljs-name">subject</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">subject</span> <span class="hljs-attr">xml:lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>Information Literacy<span class="hljs-tag">&lt;/<span class="hljs-name">subject</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">subject</span> <span class="hljs-attr">xml:lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>Engineering<span class="hljs-tag">&lt;/<span class="hljs-name">subject</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">subject</span> <span class="hljs-attr">xml:lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>Undergraduate Students<span class="hljs-tag">&lt;/<span class="hljs-name">subject</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">subject</span> <span class="hljs-attr">xml:lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>CELT<span class="hljs-tag">&lt;/<span class="hljs-name">subject</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">subject</span> <span class="hljs-attr">xml:lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>Purdue University<span class="hljs-tag">&lt;/<span class="hljs-name">subject</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">subjects</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">language</span>&gt;</span>en<span class="hljs-tag">&lt;/<span class="hljs-name">language</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">resourceType</span> <span class="hljs-attr">resourceTypeGeneral</span>=<span class="hljs-string">&quot;Dataset&quot;</span>&gt;</span>Dataset<span class="hljs-tag">&lt;/<span class="hljs-name">resourceType</span>&gt;</span>
-...
-</code></pre>
-<p><a href="https://schema.datacite.org/meta/kernel-4.3/example/datacite-example-dataset-v4.xml">https://schema.datacite.org/meta/kernel-4.3/example/datacite-example-dataset-v4.xml</a></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="19" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="ontologies">Ontologies</h1>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="20" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="ontology">Ontology</h1>
-<p>(Sometimes also referred to &quot;semantic model&quot;)</p>
-<p>An ontology combines features of</p>
-<ul>
-<li>a <strong>dictionary</strong>,</li>
-<li>a <strong>taxonomy</strong>, and</li>
-<li>a <strong>thesaurus</strong></li>
-</ul>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="21" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h2 id="dictionary">Dictionary</h2>
-<p>Alphabetically lists terms and their definitions<br />
-<br /></p>
-<p><strong>Pizza</strong>: <em>&quot;a dish made typically of flattened bread dough spread with a savory mixture usually including tomatoes and cheese and often other toppings and baked&quot;</em></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="22" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--marpit-advanced-background-split:60%;" data-marpit-pagination-total="54" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;./../../../img/Ontologies_pizzaAnalogy_seq1.png&quot;);background-size:780px auto;"></figure></div></section></foreignObject><foreignObject width="40%" height="720"><section id="22" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="22" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--marpit-advanced-background-split:60%;" data-marpit-pagination-total="54" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
-<h2 id="taxonomy">Taxonomy</h2>
-<p>Hierarchy or classification</p>
-</section>
-</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="22" style="" data-marpit-pagination-total="54" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="23" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h2 id="thesaurus">Thesaurus</h2>
-<p>Dictionary of synonyms and relations<br />
-<br /></p>
-<p><strong>Pizza</strong> ≈ Lahmacun ≈ Focaccia ≈ Flammkuchen</p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="24" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="ontology-1">Ontology</h1>
-<ul>
-<li>Structures a set of <strong>concepts</strong> in a particular area and the relations between them in a <strong>graph-like manner</strong></li>
-<li>Can be used in disambiguation, defining hierarchies, a standard to define terms</li>
-<li>Define a common vocabulary of concepts and their relationships to <strong>model</strong> a particular domain while making it <strong>machine understandable</strong></li>
-</ul>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="25" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="the-semantic-triple">The semantic triple</h1>
-<p><img src="./../../../img/Ontologies_pizzaAnalogy_seq2.png" alt="" style="width:1000px;" /></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="26" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="modeling-a-pizza-menu">Modeling a pizza menu</h1>
-<p><img src="./../../../img/Ontologies_pizzaAnalogy_seq3.png" alt="" style="width:1000px;" /></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="27" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="modeling-a-pizza-menu-1">Modeling a pizza menu</h1>
-<p><img src="./../../../img/Ontologies_pizzaAnalogy_seq4.png" alt="" style="width:1000px;" /></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="28" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="modeling-a-pizza-menu-2">Modeling a pizza menu</h1>
-<p><img src="./../../../img/Ontologies_pizzaAnalogy_seq5.png" alt="" style="width:1000px;" /></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="29" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="predicates-have-two-directions">Predicates have two directions</h1>
-<p><img src="./../../../img/Ontologies_pizzaAnalogy_seq6.png" alt="" style="width:1000px;" /></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="30" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="30" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="looking-at-the-menu-from-a-different-perspective">Looking at the menu from a different perspective</h1>
-<p>An object of one triplet can be the subject to another</p>
-<p><img src="./../../../img/Ontologies_pizzaAnalogy_seq7.png" alt="" style="width:1000px;" /></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="31" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="31" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="towards-a-knowledge-graph">(Towards) a knowledge graph</h1>
-<p><img src="./../../../img/Ontologies_pizzaAnalogy_seq8.png" alt="" style="width:1020px;" /></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="32" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--marpit-advanced-background-split:50%;" data-marpit-pagination-total="54" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;./../../../img/Ontologies_pizzaAnalogy_seq9.png&quot;);background-size:1020px auto;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="32" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="32" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--marpit-advanced-background-split:50%;" data-marpit-pagination-total="54" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
-<h1 id="searching-the-menu">Searching the menu</h1>
-<p>An ontology can be queried:</p>
-<ul>
-<li><em>&quot;name all pizzas with topping mushrooms&quot;</em></li>
-</ul>
-</section>
-</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="32" style="" data-marpit-pagination-total="54" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="33" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="33" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="the-pizza-ontology">The Pizza Ontology</h1>
-<ul>
-<li>Example from protege: <a href="https://protege.stanford.edu/ontologies/pizza/pizza.owl">https://protege.stanford.edu/ontologies/pizza/pizza.owl</a></li>
-<li>Visualize via WebVOWL <a href="http://vowl.visualdataweb.org/webvowl.html">http://vowl.visualdataweb.org/webvowl.html</a></li>
-</ul>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="34" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="34" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="example-ontologies">Example ontologies</h1>
-<h3 id="edam-ontology">EDAM ontology</h3>
-<ul>
-<li>Description: <a href="http://edamontology.org/page">http://edamontology.org/page</a></li>
-<li>Browser: <a href="https://edamontology.github.io/edam-browser">https://edamontology.github.io/edam-browser</a></li>
-</ul>
-<h3 id="peco-ontology">PECO ontology</h3>
-<ul>
-<li>Human-readble: <a href="https://www.ebi.ac.uk/ols/ontologies/peco">https://www.ebi.ac.uk/ols/ontologies/peco</a></li>
-<li>Raw (OWL): <a href="http://purl.obolibrary.org/obo/peco.owl">http://purl.obolibrary.org/obo/peco.owl</a></li>
-</ul>
-<blockquote>
-<p>Explore more examples</p>
-<ul>
-<li><a href="https://www.ebi.ac.uk/ols/">https://www.ebi.ac.uk/ols/</a></li>
-<li><a href="https://bioportal.bioontology.org">https://bioportal.bioontology.org</a></li>
-</ul>
-</blockquote>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="35" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="arc-builds-on-isa">ARC builds on ISA</h1>
-<p><img src="./../../../img/ISAmodel_ARC01_img01.svg" alt="" style="width:900px;" /></p>
-<p><a href="https://isa-tools.org/format/specification.html">https://isa-tools.org/format/specification.html</a></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="36" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="arc-builds-on-isa-1">ARC builds on ISA</h1>
-<p><img src="./../../../img/ISAmodel_ARC01_img02.svg" alt="" style="width:1100px;" /></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="37" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="isaxlsx-files-within-arcs">isa.&lt;&gt;.xlsx files within ARCs</h1>
-<p><img src="./../../../img/ISAmodel_ARC01_img03.svg" alt="" style="width:1000px;" /></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="38" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="38" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 is="marp-h1" data-auto-scaling id="study-and-assay-files-are-registered-in-the-investigation-file">Study and assay files are registered in the investigation file </h1>
-<p><img src="./../../../img/ISAmodel_ARC01_img04.svg" alt="" style="width:950px;" /></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="39" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--marpit-advanced-background-split:50%;" data-marpit-pagination-total="54" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;./../../../img/ISAmodel_ARC01_img05.svg&quot;);background-size:600px auto;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="39" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="39" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--marpit-advanced-background-split:50%;" data-marpit-pagination-total="54" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
-<h1 id="the-output-of-a-study-or-assay-file-can-function-as-input-for-a-new-isaassayxlsx">The output of a study or assay file can function as input for a new isa.assay.xlsx</h1>
-<p>Output building blocks:</p>
-<ul>
-<li>Sample Name</li>
-<li>Raw Data File</li>
-<li>Derived Data File</li>
-</ul>
-</section>
-</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="39" style="" data-marpit-pagination-total="54" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="40" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54" data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;./../../../img/ISAmodel_ARC01_img6.svg&quot;);background-size:1050px auto;"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="40" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="40" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54" data-marpit-advanced-background="content">
-<h1 id=""></h1>
-</section>
-</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="40" style="" data-marpit-pagination-total="54" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="41" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="41" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="swate">Swate</h1>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="42" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="42" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="annotation-by-flattening-the-knowledge-graph">Annotation by flattening the knowledge graph</h1>
-<p><img src="./../../../img/Swate_ParentChildTerm.svg" alt="" style="width:800px;" /></p>
-<ul>
-<li>Low-friction metadata annotation</li>
-<li>Familiar spreadsheet, row/column-based environment</li>
-</ul>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="43" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="43" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="annotation-principle">Annotation principle</h1>
-
-<p><img src="./../../../img/Swate_ParentChildTerm2.svg" alt="" style="width:650px;" /></p>
-<ul>
-<li>Low-friction metadata annotation</li>
-<li>Familiar spreadsheet, row/column-based environment</li>
-</ul>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="44" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="44" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="adding-new-building-blocks-columns">Adding new building blocks (columns)</h1>
-<p><img src="./../../../img/Swate_NewParameter.svg" alt="" style="width:750px;" /></p>
-<ul>
-<li>Swate can be used for the annotation of <strong>isa.study.xlsx and isa.assay.xlsx</strong> files</li>
-</ul>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-scope-IxEgWwmB="" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="45" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--marpit-advanced-background-split:50%;" data-marpit-pagination-total="54" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;./../../../img/Swate_Overview.svg&quot;);background-size:700px auto;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="45" data-marpit-scope-IxEgWwmB="" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="45" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--marpit-advanced-background-split:50%;" data-marpit-pagination-total="54" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
-<h1 is="marp-h1" data-auto-scaling id="annotation-building-block-types">Annotation Building Block types </h1>
-
-<ul>
-<li>Source Name (Input)</li>
-<li>Protocol Columns
-<ul>
-<li>Protocol Type, Protocol Ref</li>
-</ul>
-</li>
-<li>Characteristic</li>
-<li>Parameter</li>
-<li>Factor</li>
-<li>Component</li>
-<li>Output Columns
-<ul>
-<li>Sample Name, Raw Data File, Derived Data File</li>
-</ul>
-</li>
-</ul>
-<p>Let's take a detour on <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/isa_AnnotationPrinciples.html">Annotation Principles</a> | <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/units/AnnotationPrinciples/isa_AnnotationPrinciples-slides.html">slides</a></p>
-</section>
-</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-marpit-scope-IxEgWwmB="" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="45" style="" data-marpit-pagination-total="54" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="46" data-marpit-scope-XnyVRvkB="" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="46" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="ontology-term-search">Ontology term search</h1>
-
-<p><img src="./../../../img/Swate_OntologyTermSearch.svg" alt="" style="width:750px;" /></p>
-<p>Enable <strong>related term directed search</strong> to directly fill cells with child terms</p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="47" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="47" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="fill-your-table-with-ontology-terms">Fill your table with ontology terms</h1>
-<p><img src="./../../../img/Swate_OntologyTermSearch2.svg" alt="" style="width:800px;" /></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="48" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="48" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="hierarchical-combination-of-ontologies">Hierarchical combination of ontologies</h1>
-<p><img src="./../../../img/Swate_OntologyCombination.svg" alt="" style="width:800px;" /></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="49" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="49" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="swate-templates">Swate templates</h1>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="50" data-marpit-scope-ZHQ6mb3k="" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="50" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="checklists-and-templates">Checklists and Templates</h1>
-<p><img src="./../../../img/swate_TemplatesChecklists.svg" alt="" style="width:800px;" /></p>
-<p>Metadata standards or repository requirements can be represented as templates</p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="51" data-marpit-scope-D6IIyugc="" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="51" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="realization-of-lab-specific-metadata-templates">Realization of lab-specific metadata templates</h1>
-<p><img src="./../../../img/SWATE_metadataTemplates.png" alt="" style="width:850px;" /></p>
-<p>Facilities can define their most common workflows as templates</p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="52" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--marpit-advanced-background-split:50%;" data-marpit-pagination-total="54" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;./../../../img/Swate_Templates.svg&quot;);background-size:450px auto;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="52" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="52" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--marpit-advanced-background-split:50%;" data-marpit-pagination-total="54" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
-<h1 id="directly-import-templates-via-swate">Directly import templates via Swate</h1>
-<ul>
-<li>DataPLANT curated</li>
-<li>Community templates</li>
-</ul>
-</section>
-</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="52" style="" data-marpit-pagination-total="54" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="53" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="53" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54"></section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="54" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" lang="en-US" data-marpit-pagination="54" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;" data-marpit-pagination-total="54">
-<h1 id="contributors">Contributors</h1>
-<p>Slides presented here include contributions by</p>
-<ul>
-<li>name: Dominik Brilhaus<br />
-github: <a href="https://github.com/brilator">https://github.com/brilator</a><br />
-orcid: <a href="https://orcid.org/0000-0001-9021-3197">https://orcid.org/0000-0001-9021-3197</a></li>
-<li>name: Martin Kuhl<br />
-github: <a href="https://github.com/Martin-Kuhl">https://github.com/Martin-Kuhl</a><br />
-orcid: <a href="https://orcid.org/0000-0002-8493-1077">https://orcid.org/0000-0002-8493-1077</a></li>
-</ul>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-theme="marp-theme_dataplant-ceplas-ccby" data-heading-divider="1,2" lang="en-US" data-marpit-pagination="9" style="--paginate:true;--theme:marp-theme_dataplant-ceplas-ccby;--heading-divider:1,2;" data-marpit-pagination-total="9">
+<h1 id="what-about-computational-workflows">What about computational workflows?</h1>
+<p><img class="emoji" draggable="false" alt="💡" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4a1.svg" data-marp-twemoji=""/> On a side note, the above is a very wet-lab heavy example. However, conceptually the same applies to computational workflows. Coders oftentimes design their scripts, workflows and pipelines in successive modules with defined inputs and outputs.</p>
 </section>
 <script>!function(){"use strict";const t={h1:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"1"},style:"display: block; font-size: 2em; margin-block-start: 0.67em; margin-block-end: 0.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h2:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"2"},style:"display: block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h3:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"3"},style:"display: block; font-size: 1.17em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h4:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"4"},style:"display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h5:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"5"},style:"display: block; font-size: 0.83em; margin-block-start: 1.67em; margin-block-end: 1.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h6:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"6"},style:"display: block; font-size: 0.67em; margin-block-start: 2.33em; margin-block-end: 2.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},span:{proto:()=>HTMLSpanElement},pre:{proto:()=>HTMLElement,style:"display: block; font-family: monospace; white-space: pre; margin: 1em 0; --marp-auto-scaling-white-space: pre;"}},e="data-marp-auto-scaling-wrapper",i="data-marp-auto-scaling-svg",n="data-marp-auto-scaling-container";class s extends HTMLElement{constructor(){super(),this.svgPreserveAspectRatio="xMinYMid meet";const t=t=>([e])=>{const{width:i,height:n}=e.contentRect;this[t]={width:i,height:n},this.updateSVGRect()};this.attachShadow({mode:"open"}),this.containerObserver=new ResizeObserver(t("containerSize")),this.wrapperObserver=new ResizeObserver(((...e)=>{t("wrapperSize")(...e),this.flushSvgDisplay()}))}static get observedAttributes(){return["data-downscale-only"]}connectedCallback(){var t,s,o,r,a;this.shadowRoot.innerHTML=`\n<style>\n  svg[${i}] { display: block; width: 100%; height: auto; vertical-align: top; }\n  span[${n}] { display: table; white-space: var(--marp-auto-scaling-white-space, nowrap); width: max-content; }\n</style>\n<div ${e}>\n  <svg part="svg" ${i}>\n    <foreignObject><span ${n}><slot></slot></span></foreignObject>\n  </svg>\n</div>\n    `.split(/\n\s*/).join(""),this.wrapper=null!==(t=this.shadowRoot.querySelector(`div[${e}]`))&&void 0!==t?t:void 0;const l=this.svg;this.svg=null!==(o=null===(s=this.wrapper)||void 0===s?void 0:s.querySelector(`svg[${i}]`))&&void 0!==o?o:void 0,this.svg!==l&&(this.svgComputedStyle=this.svg?window.getComputedStyle(this.svg):void 0),this.container=null!==(a=null===(r=this.svg)||void 0===r?void 0:r.querySelector(`span[${n}]`))&&void 0!==a?a:void 0,this.observe()}disconnectedCallback(){this.svg=void 0,this.svgComputedStyle=void 0,this.wrapper=void 0,this.container=void 0,this.observe()}attributeChangedCallback(){this.observe()}flushSvgDisplay(){const{svg:t}=this;t&&(t.style.display="inline",requestAnimationFrame((()=>{t.style.display=""})))}observe(){this.containerObserver.disconnect(),this.wrapperObserver.disconnect(),this.wrapper&&this.wrapperObserver.observe(this.wrapper),this.container&&this.containerObserver.observe(this.container),this.svgComputedStyle&&this.observeSVGStyle(this.svgComputedStyle)}observeSVGStyle(t){const e=()=>{const i=(()=>{const e=t.getPropertyValue("--preserve-aspect-ratio");if(e)return e.trim();return`x${(({textAlign:t,direction:e})=>{if(t.endsWith("left"))return"Min";if(t.endsWith("right"))return"Max";if("start"===t||"end"===t){let i="rtl"===e;return"end"===t&&(i=!i),i?"Max":"Min"}return"Mid"})(t)}YMid meet`})();i!==this.svgPreserveAspectRatio&&(this.svgPreserveAspectRatio=i,this.updateSVGRect()),t===this.svgComputedStyle&&requestAnimationFrame(e)};e()}updateSVGRect(){var t,e,i,n,s,o,r;let a=Math.ceil(null!==(e=null===(t=this.containerSize)||void 0===t?void 0:t.width)&&void 0!==e?e:0);const l=Math.ceil(null!==(n=null===(i=this.containerSize)||void 0===i?void 0:i.height)&&void 0!==n?n:0);void 0!==this.dataset.downscaleOnly&&(a=Math.max(a,null!==(o=null===(s=this.wrapperSize)||void 0===s?void 0:s.width)&&void 0!==o?o:0));const c=null===(r=this.svg)||void 0===r?void 0:r.querySelector(":scope > foreignObject");if(null==c||c.setAttribute("width",`${a}`),null==c||c.setAttribute("height",`${l}`),this.svg&&(this.svg.setAttribute("viewBox",`0 0 ${a} ${l}`),this.svg.setAttribute("preserveAspectRatio",this.svgPreserveAspectRatio),this.svg.style.height=a<=0||l<=0?"0":""),this.container){const t=this.svgPreserveAspectRatio.toLowerCase();this.container.style.marginLeft=t.startsWith("xmid")||t.startsWith("xmax")?"auto":"0",this.container.style.marginRight=t.startsWith("xmi")?"auto":"0"}}}const o=(t,{attrs:e={},style:i})=>class extends t{constructor(...t){super(...t);for(const[t,i]of Object.entries(e))this.hasAttribute(t)||this.setAttribute(t,i);this.attachShadow({mode:"open"})}static get observedAttributes(){return["data-auto-scaling"]}connectedCallback(){this._update()}attributeChangedCallback(){this._update()}_update(){const t=i?`<style>:host { ${i} }</style>`:"";let e="<slot></slot>";const{autoScaling:n}=this.dataset;if(void 0!==n){e=`<marp-auto-scaling exportparts="svg:auto-scaling" ${"downscale-only"===n?"data-downscale-only":""}>${e}</marp-auto-scaling>`}this.shadowRoot.innerHTML=t+e}};let r;const a=Symbol();let l;const c="marpitSVGPolyfill:setZoomFactor,",d=Symbol(),g=Symbol();const h=()=>{const t="Apple Computer, Inc."===navigator.vendor,e=t?[u]:[],i={then:e=>(t?(async()=>{if(void 0===l){const t=document.createElement("canvas");t.width=10,t.height=10;const e=t.getContext("2d"),i=new Image(10,10),n=new Promise((t=>{i.addEventListener("load",(()=>t()))}));i.crossOrigin="anonymous",i.src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%201%201%22%3E%3CforeignObject%20width%3D%221%22%20height%3D%221%22%20requiredExtensions%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%20style%3D%22width%3A%201px%3B%20height%3A%201px%3B%20background%3A%20red%3B%20position%3A%20relative%22%3E%3C%2Fdiv%3E%3C%2FforeignObject%3E%3C%2Fsvg%3E",await n,e.drawImage(i,0,0),l=e.getImageData(5,5,1,1).data[3]<128}return l})().then((t=>{null==e||e(t?[u]:[])})):null==e||e([]),i)};return Object.assign(e,i)};let p,m;function u(t){const e="object"==typeof t&&t.target||document,i="object"==typeof t?t.zoom:t;window[g]||(Object.defineProperty(window,g,{configurable:!0,value:!0}),document.body.style.zoom=1.0001,document.body.offsetHeight,document.body.style.zoom=1,window.addEventListener("message",(({data:t,origin:e})=>{if(e===window.origin)try{if(t&&"string"==typeof t&&t.startsWith(c)){const[,e]=t.split(","),i=Number.parseFloat(e);Number.isNaN(i)||(m=i)}}catch(t){console.error(t)}})));let n=!1;Array.from(e.querySelectorAll("svg[data-marpit-svg]"),(t=>{var e,s,o,r;t.style.transform||(t.style.transform="translateZ(0)");const a=i||m||t.currentScale||1;p!==a&&(p=a,n=a);const l=t.getBoundingClientRect(),{length:c}=t.children;for(let i=0;i<c;i+=1){const n=t.children[i];if(n.getScreenCTM){const t=n.getScreenCTM();if(t){const i=null!==(s=null===(e=n.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==s?s:0,c=null!==(r=null===(o=n.y)||void 0===o?void 0:o.baseVal.value)&&void 0!==r?r:0,d=n.children.length;for(let e=0;e<d;e+=1){const s=n.children[e];if("SECTION"===s.tagName){const{style:e}=s;e.transformOrigin||(e.transformOrigin=`${-i}px ${-c}px`),e.transform=`scale(${a}) matrix(${t.a}, ${t.b}, ${t.c}, ${t.d}, ${t.e-l.left}, ${t.f-l.top}) translateZ(0.0001px)`;break}}}}}})),!1!==n&&Array.from(e.querySelectorAll("iframe"),(({contentWindow:t})=>{null==t||t.postMessage(`${c}${n}`,"null"===window.origin?"*":window.origin)}))}function v({once:t=!1,target:e=document}={}){const i=function(t=document){if(t[d])return t[d];let e=!0;const i=()=>{e=!1,delete t[d]};Object.defineProperty(t,d,{configurable:!0,value:i});let n=[],s=!1;(async()=>{try{n=await h()}finally{s=!0}})();const o=()=>{for(const e of n)e({target:t});s&&0===n.length||e&&window.requestAnimationFrame(o)};return o(),i}(e);return t?(i(),()=>{}):i}p=1,m=void 0;const b=Symbol(),w=(e=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(((e=document)=>{const i=window[a];i||customElements.define("marp-auto-scaling",s);for(const n of Object.keys(t)){const s=`marp-${n}`,a=t[n].proto();null!=r||(r=!!document.createElement("div",{is:"marp-auto-scaling"}).outerHTML.startsWith("<div is")),r&&a!==HTMLElement?i||customElements.define(s,o(a,{style:t[n].style}),{extends:n}):(i||customElements.define(s,o(HTMLElement,t[n])),e.querySelectorAll(`${n}[is="${s}"]`).forEach((t=>{t.outerHTML=t.outerHTML.replace(new RegExp(`^<${n}`,"i"),`<${s}`).replace(new RegExp(`</${n}>$`,"i"),`</${s}>`)})))}window[a]=!0})(e),e[b])return e[b];const i=v({target:e}),n=()=>{i(),delete e[b]},l=Object.assign(n,{cleanup:n,update:()=>w(e)});return Object.defineProperty(e,b,{configurable:!0,value:l}),l},y=document.currentScript;w(y?y.getRootNode():document)}();
-</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="1" tabindex="0"><p>Exercise: Association map
-
-Online: Let participants annotate (via video conference tool)
-Presence: Draw map on (white) board</p></div><div class="bespoke-marp-note" data-index="9" tabindex="0"><p>- let participant name a movie
-- how do you find out the actors, director, release year, etc.? 
-- =&gt; google.com
-- google movie - see knowledge graph to the right
-  - how does google know all that?!
-- ===&gt; schema.org</p></div><div class="bespoke-marp-note" data-index="31" tabindex="0"><p>TODO: 
-- This is actually not a proper ontology(!), but rather a knowledge graph (= ontology + data)</p></div><div class="bespoke-marp-note" data-index="33" tabindex="0"><p>LIVE-Demo 
-- Search an &quot;interesting&quot; term from PECO in browser (EBI OLS)
-  - Example: 
-    - plant exposure
-       abiotic plant exposure
-          physical plant exposure
-            water environment exposure
-              drought environment exposure
-- Show the graph view (and expand it interactively)
-- Mention that terms (subjects, objects) and properties (predicates) have &quot;URIs&quot;, &quot;PIDs&quot;
-- Show that terms can have alternative / external IDs and link to &quot;outdated&quot; ontologies</p></div><div class="bespoke-marp-note" data-index="42" tabindex="0"><p>&lt;style scoped&gt;
-section p img{
-  /* padding-left: 230px */
-}  
-&lt;/style&gt;</p></div><div class="bespoke-marp-note" data-index="47" tabindex="0"><p>combination of ISA (Characteristics, Parameter, Factor) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter \[temperature\] or Factor \[temperature\]).</p></div><script>/*!! License: https://unpkg.com/@marp-team/marp-cli@3.4.0/lib/bespoke.js.LICENSE.txt */
+</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="0" tabindex="0"><p>Note this slide deck is buggy. 
+- The mermaid graphs display well in vscode preview (with mermaid extension installed)
+- Slides can be exported to html or pdf using the vscode marp extension or marp-cli, but:
+  - in the pdf version font size is not properly adapted
+  - in the html version one has to reload / refresh (browser) each mermaid-containing slide to load the graphic</p></div><div class="bespoke-marp-note" data-index="1" tabindex="0"><p>Before creating an ARC for an existing dataset, it might help to visualize what was done in the lab.  The following is very simplified example that most plant biologists can hopefully relate to.</p></div><div class="bespoke-marp-note" data-index="2" tabindex="0"><p>Consider you want to investigate the effect of drought stress on the transcript levels of you gene of interest (GOI) via qRT-PCR. You grow plants from seeds, drought-stress the plants and collect leaves at the end of the growth study. From the leave samples &amp;ndash; homogenized to powder and stored in a freezer &amp;ndash; you take an aliquot to extract RNA, from which you synthesize cDNA. The cDNA (together with other biologicals and chemicals) is the input for a qRT-PCR yielding relative transcript levels as the output.</p></div><div class="bespoke-marp-note" data-index="3" tabindex="0"><p>You found your GOI affected by drought stress on transcript level. To confirm that the expression of the encoded protein is likewise affected, you take another aliquot from the same leave samples, extract proteins, separate them by SDS-PAGE and immunoblot the SDS gel with antibodies specific for your GOI.</p></div><div class="bespoke-marp-note" data-index="4" tabindex="0"><p>You could show that the expression of your GOI was affected by drought on both transcript and protein level. In order to identify transcripts that correlate with your GOI under drought stress, you prepare RNA extracted earlier and submit it to a company for mRNA-Seq.</p></div><div class="bespoke-marp-note" data-index="5" tabindex="0"><p>From the company you receive the RNA-Seq reads in form of fastq files. In order to quantify the reads and generate a gene expression count table, you map them against a suitable reference genome downloaded from an online database or publication's supplemental data.</p></div><script>/*!! License: https://unpkg.com/@marp-team/marp-cli@3.4.0/lib/bespoke.js.LICENSE.txt */
 !function(){"use strict";function e(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}var t={from:function(e,t){var n,r=1===(e.parent||e).nodeType?e.parent||e:document.querySelector(e.parent||e),o=[].filter.call("string"==typeof e.slides?r.querySelectorAll(e.slides):e.slides||r.children,(function(e){return"SCRIPT"!==e.nodeName})),i={},a=function(e,t){return(t=t||{}).index=o.indexOf(e),t.slide=e,t},s=function(e,t){i[e]=(i[e]||[]).filter((function(e){return e!==t}))},l=function(e,t){return(i[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},c=function(e,t){o[e]&&(n&&l("deactivate",a(n,t)),n=o[e],l("activate",a(n,t)))},d=function(e,t){var r=o.indexOf(n)+e;l(e>0?"next":"prev",a(n,t))&&c(r,t)},u={off:s,on:function(e,t){return(i[e]||(i[e]=[])).push(t),s.bind(null,e,t)},fire:l,slide:function(e,t){if(!arguments.length)return o.indexOf(n);l("slide",a(o[e],t))&&c(e,t)},next:d.bind(null,1),prev:d.bind(null,-1),parent:r,slides:o,destroy:function(e){l("destroy",a(n,e)),i={}}};return(t||[]).forEach((function(e){e(u)})),n||c(0),u}},n=e(t);const r=document.body,o=(...e)=>history.replaceState(...e),i="presenter",a="next",s=["",i,a],l="bespoke-marp-",c=`data-${l}`,d=(e,{protocol:t,host:n,pathname:r,hash:o}=location)=>{const i=e.toString();return`${t}//${n}${r}${i?"?":""}${i}${o}`},u=()=>r.dataset.bespokeView,f=e=>new URLSearchParams(location.search).get(e),m=(e,t={})=>{var n;const r={location,setter:o,...t},i=new URLSearchParams(r.location.search);for(const t of Object.keys(e)){const n=e[t];"string"==typeof n?i.set(t,n):i.delete(t)}try{r.setter({...null!==(n=window.history.state)&&void 0!==n?n:{}},"",d(i,r.location))}catch(e){console.error(e)}},g=(()=>{const e="bespoke-marp";try{return localStorage.setItem(e,e),localStorage.removeItem(e),!0}catch(e){return!1}})(),p=e=>{try{return localStorage.getItem(e)}catch(e){return null}},v=(e,t)=>{try{return localStorage.setItem(e,t),!0}catch(e){return!1}},h=e=>{try{return localStorage.removeItem(e),!0}catch(e){return!1}},y=(e,t)=>{const n="aria-hidden";t?e.setAttribute(n,"true"):e.removeAttribute(n)},b=e=>{e.parent.classList.add(`${l}parent`),e.slides.forEach((e=>e.classList.add(`${l}slide`))),e.on("activate",(t=>{const n=`${l}active`,r=t.slide,o=r.classList,i=!o.contains(n);if(e.slides.forEach((e=>{e.classList.remove(n),y(e,!0)})),o.add(n),y(r,!1),i){const e=`${n}-ready`;o.add(e),document.body.clientHeight,o.remove(e)}}))},w=e=>{let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map((e=>[null,...e.querySelectorAll("[data-marpit-fragment]")]))});const r=r=>void 0!==e.fragments[t][n+r],o=(r,o)=>{t=r,n=o,e.fragments.forEach(((e,t)=>{e.forEach(((e,n)=>{if(null==e)return;const i=t<r||t===r&&n<=o;e.setAttribute(`${c}fragment`,(i?"":"in")+"active");const a=`${c}current-fragment`;t===r&&n===o?e.setAttribute(a,"current"):e.removeAttribute(a)}))})),e.fragmentIndex=o;const i={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:o};e.fire("fragment",i)};e.on("next",(({fragment:i=!0})=>{if(i){if(r(1))return o(t,n+1),!1;const i=t+1;e.fragments[i]&&o(i,0)}else{const r=e.fragments[t].length;if(n+1<r)return o(t,r-1),!1;const i=e.fragments[t+1];i&&o(t+1,i.length-1)}})),e.on("prev",(({fragment:i=!0})=>{if(r(-1)&&i)return o(t,n-1),!1;const a=t-1;e.fragments[a]&&o(a,e.fragments[a].length-1)})),e.on("slide",(({index:t,fragment:n})=>{let r=0;if(void 0!==n){const o=e.fragments[t];if(o){const{length:e}=o;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}o(t,r)})),o(0,0)},x=document,k=()=>!(!x.fullscreenEnabled&&!x.webkitFullscreenEnabled),$=()=>!(!x.fullscreenElement&&!x.webkitFullscreenElement),E=e=>{e.fullscreen=()=>{k()&&(async()=>{return $()?null===(e=x.exitFullscreen||x.webkitExitFullscreen)||void 0===e?void 0:e.call(x):((e=x.body)=>{var t;return null===(t=e.requestFullscreen||e.webkitRequestFullscreen)||void 0===t?void 0:t.call(e)})();var e})()},document.addEventListener("keydown",(t=>{"f"!==t.key&&"F11"!==t.key||t.altKey||t.ctrlKey||t.metaKey||!k()||(e.fullscreen(),t.preventDefault())}))},L=`${l}inactive`,S=(e=2e3)=>({parent:t,fire:n})=>{const r=t.classList,o=e=>n(`marp-${e?"":"in"}active`);let i;const a=()=>{i&&clearTimeout(i),i=setTimeout((()=>{r.add(L),o()}),e),r.contains(L)&&(r.remove(L),o(!0))};for(const e of["mousedown","mousemove","touchend"])document.addEventListener(e,a);setTimeout(a,0)},P=["AUDIO","BUTTON","INPUT","SELECT","TEXTAREA","VIDEO"],_=e=>{e.parent.addEventListener("keydown",(e=>{if(!e.target)return;const t=e.target;(P.includes(t.nodeName)||"true"===t.contentEditable)&&e.stopPropagation()}))},T=e=>{window.addEventListener("load",(()=>{for(const t of e.slides){const e=t.querySelector("marp-auto-scaling, [data-auto-scaling], [data-marp-fitting]");t.setAttribute(`${c}load`,e?"":"hideable")}}))},I=({interval:e=250}={})=>t=>{document.addEventListener("keydown",(e=>{if(" "===e.key&&e.shiftKey)t.prev();else if("ArrowLeft"===e.key||"ArrowUp"===e.key||"PageUp"===e.key)t.prev({fragment:!e.shiftKey});else if(" "!==e.key||e.shiftKey)if("ArrowRight"===e.key||"ArrowDown"===e.key||"PageDown"===e.key)t.next({fragment:!e.shiftKey});else if("End"===e.key)t.slide(t.slides.length-1,{fragment:-1});else{if("Home"!==e.key)return;t.slide(0)}else t.next();e.preventDefault()}));let n,r,o=0;t.parent.addEventListener("wheel",(i=>{let a=!1;const s=(e,t)=>{e&&(a=a||((e,t)=>((e,t)=>{const n="X"===t?"Width":"Height";return e[`client${n}`]<e[`scroll${n}`]})(e,t)&&((e,t)=>{const{overflow:n}=e,r=e[`overflow${t}`];return"auto"===n||"scroll"===n||"auto"===r||"scroll"===r})(getComputedStyle(e),t))(e,t)),(null==e?void 0:e.parentElement)&&s(e.parentElement,t)};if(0!==i.deltaX&&s(i.target,"X"),0!==i.deltaY&&s(i.target,"Y"),a)return;i.preventDefault();const l=Math.sqrt(i.deltaX**2+i.deltaY**2);if(void 0!==i.wheelDelta){if(void 0===i.webkitForce&&Math.abs(i.wheelDelta)<40)return;if(i.deltaMode===i.DOM_DELTA_PIXEL&&l<4)return}else if(i.deltaMode===i.DOM_DELTA_PIXEL&&l<12)return;r&&clearTimeout(r),r=setTimeout((()=>{n=0}),e);const c=Date.now()-o<e,d=l<=n;if(n=l,c||d)return;let u;(i.deltaX>0||i.deltaY>0)&&(u="next"),(i.deltaX<0||i.deltaY<0)&&(u="prev"),u&&(t[u](),o=Date.now())}))},M=(e=`.${l}osc`)=>{const t=document.querySelector(e);if(!t)return()=>{};const n=(e,n)=>{t.querySelectorAll(`[${c}osc=${JSON.stringify(e)}]`).forEach(n)};return k()||n("fullscreen",(e=>e.style.display="none")),g||n("presenter",(e=>{e.disabled=!0,e.title="Presenter view is disabled due to restricted localStorage."})),e=>{t.addEventListener("click",(t=>{if(t.target instanceof HTMLElement){const{bespokeMarpOsc:n}=t.target.dataset;n&&t.target.blur();const r={fragment:!t.shiftKey};"next"===n?e.next(r):"prev"===n?e.prev(r):"fullscreen"===n?null==e||e.fullscreen():"presenter"===n&&e.openPresenterView()}})),e.parent.appendChild(t),e.on("activate",(({index:t})=>{n("page",(n=>n.textContent=`Page ${t+1} of ${e.slides.length}`))})),e.on("fragment",(({index:t,fragments:r,fragmentIndex:o})=>{n("prev",(e=>e.disabled=0===t&&0===o)),n("next",(n=>n.disabled=t===e.slides.length-1&&o===r.length-1))})),e.on("marp-active",(()=>y(t,!1))),e.on("marp-inactive",(()=>y(t,!0))),k()&&(e=>{for(const t of["","webkit"])x.addEventListener(t+"fullscreenchange",e)})((()=>n("fullscreen",(e=>e.classList.toggle("exit",k()&&$())))))}},O=e=>{window.addEventListener("message",(t=>{if(t.origin!==window.origin)return;const[n,r]=t.data.split(":");if("navigate"===n){const[t,n]=r.split(",");let o=Number.parseInt(t,10),i=Number.parseInt(n,10)+1;i>=e.fragments[o].length&&(o+=1,i=0),e.slide(o,{fragment:i})}}))};var A=["area","base","br","col","command","embed","hr","img","input","keygen","link","meta","param","source","track","wbr"];let C=e=>String(e).replace(/[&<>"']/g,(e=>`&${D[e]};`)),D={"&":"amp","<":"lt",">":"gt",'"':"quot","'":"apos"},N="dangerouslySetInnerHTML",B={className:"class",htmlFor:"for"},q={};function K(e,t){let n=[],r="";t=t||{};for(let e=arguments.length;e-- >2;)n.push(arguments[e]);if("function"==typeof e)return t.children=n.reverse(),e(t);if(e){if(r+="<"+e,t)for(let e in t)!1!==t[e]&&null!=t[e]&&e!==N&&(r+=` ${B[e]?B[e]:C(e)}="${C(t[e])}"`);r+=">"}if(-1===A.indexOf(e)){if(t[N])r+=t[N].__html;else for(;n.length;){let e=n.pop();if(e)if(e.pop)for(let t=e.length;t--;)n.push(e[t]);else r+=!0===q[e]?e:C(e)}r+=e?`</${e}>`:""}return q[r]=!0,r}const j=({children:e})=>K(null,null,...e),F=`${l}presenter-`,V={container:`${F}container`,dragbar:`${F}dragbar-container`,next:`${F}next`,nextContainer:`${F}next-container`,noteContainer:`${F}note-container`,noteWrapper:`${F}note-wrapper`,noteButtons:`${F}note-buttons`,infoContainer:`${F}info-container`,infoPage:`${F}info-page`,infoPageText:`${F}info-page-text`,infoPagePrev:`${F}info-page-prev`,infoPageNext:`${F}info-page-next`,noteButtonsBigger:`${F}note-bigger`,noteButtonsSmaller:`${F}note-smaller`,infoTime:`${F}info-time`,infoTimer:`${F}info-timer`},U=e=>{const{title:t}=document;document.title="[Presenter view]"+(t?` - ${t}`:"");const n={},r=e=>(n[e]=n[e]||document.querySelector(`.${e}`),n[e]);document.body.appendChild((e=>{const t=document.createElement("div");return t.className=V.container,t.appendChild(e),t.insertAdjacentHTML("beforeend",K(j,null,K("div",{class:V.nextContainer},K("iframe",{class:V.next,src:"?view=next"})),K("div",{class:V.dragbar}),K("div",{class:V.noteContainer},K("div",{class:V.noteWrapper}),K("div",{class:V.noteButtons},K("button",{class:V.noteButtonsSmaller,tabindex:"-1",title:"Smaller notes font size"},"Smaller notes font size"),K("button",{class:V.noteButtonsBigger,tabindex:"-1",title:"Bigger notes font size"},"Bigger notes font size"))),K("div",{class:V.infoContainer},K("div",{class:V.infoPage},K("button",{class:V.infoPagePrev,tabindex:"-1",title:"Previous"},"Previous"),K("span",{class:V.infoPageText}),K("button",{class:V.infoPageNext,tabindex:"-1",title:"Next"},"Next")),K("time",{class:V.infoTime,title:"Current time"}),K("time",{class:V.infoTimer,title:"Timer"})))),t})(e.parent)),(e=>{let t=!1;r(V.dragbar).addEventListener("mousedown",(()=>{t=!0,r(V.dragbar).classList.add("active")})),window.addEventListener("mouseup",(()=>{t=!1,r(V.dragbar).classList.remove("active")})),window.addEventListener("mousemove",(e=>{if(!t)return;const n=e.clientX/document.documentElement.clientWidth*100;r(V.container).style.setProperty("--bespoke-marp-presenter-split-ratio",`${Math.max(0,Math.min(100,n))}%`)})),r(V.nextContainer).addEventListener("click",(()=>e.next()));const n=r(V.next),o=(i=n,(e,t)=>{var n;return null===(n=i.contentWindow)||void 0===n?void 0:n.postMessage(`navigate:${e},${t}`,"null"===window.origin?"*":window.origin)});var i;n.addEventListener("load",(()=>{r(V.nextContainer).classList.add("active"),o(e.slide(),e.fragmentIndex),e.on("fragment",(({index:e,fragmentIndex:t})=>o(e,t)))}));const a=document.querySelectorAll(".bespoke-marp-note");a.forEach((e=>{e.addEventListener("keydown",(e=>e.stopPropagation())),r(V.noteWrapper).appendChild(e)})),e.on("activate",(()=>a.forEach((t=>t.classList.toggle("active",t.dataset.index==e.slide())))));let s=0;const l=e=>{s=Math.max(-5,s+e),r(V.noteContainer).style.setProperty("--bespoke-marp-note-font-scale",(1.2**s).toFixed(4))},c=()=>l(1),d=()=>l(-1),u=r(V.noteButtonsBigger),f=r(V.noteButtonsSmaller);u.addEventListener("click",(()=>{u.blur(),c()})),f.addEventListener("click",(()=>{f.blur(),d()})),document.addEventListener("keydown",(e=>{"+"===e.key&&c(),"-"===e.key&&d()}),!0),e.on("activate",(({index:t})=>{r(V.infoPageText).textContent=`${t+1} / ${e.slides.length}`}));const m=r(V.infoPagePrev),g=r(V.infoPageNext);m.addEventListener("click",(t=>{m.blur(),e.prev({fragment:!t.shiftKey})})),g.addEventListener("click",(t=>{g.blur(),e.next({fragment:!t.shiftKey})})),e.on("fragment",(({index:t,fragments:n,fragmentIndex:r})=>{m.disabled=0===t&&0===r,g.disabled=t===e.slides.length-1&&r===n.length-1}));let p=new Date;const v=()=>{const e=new Date,t=e=>`${Math.floor(e)}`.padStart(2,"0"),n=e.getTime()-p.getTime(),o=t(n/1e3%60),i=t(n/1e3/60%60),a=t(n/36e5%24);r(V.infoTime).textContent=e.toLocaleTimeString(),r(V.infoTimer).textContent=`${a}:${i}:${o}`};v(),setInterval(v,250),r(V.infoTimer).addEventListener("click",(()=>{p=new Date}))})(e)},X=e=>{if(!(e=>e.syncKey&&"string"==typeof e.syncKey)(e))throw new Error("The current instance of Bespoke.js is invalid for Marp bespoke presenter plugin.");Object.defineProperties(e,{openPresenterView:{enumerable:!0,value:H},presenterUrl:{enumerable:!0,get:R}}),g&&document.addEventListener("keydown",(t=>{"p"!==t.key||t.altKey||t.ctrlKey||t.metaKey||(t.preventDefault(),e.openPresenterView())}))};function H(){const{max:e,floor:t}=Math,n=e(t(.85*window.innerWidth),640),r=e(t(.85*window.innerHeight),360);return window.open(this.presenterUrl,F+this.syncKey,`width=${n},height=${r},menubar=no,toolbar=no`)}function R(){const e=new URLSearchParams(location.search);return e.set("view","presenter"),e.set("sync",this.syncKey),d(e)}const W=e=>{const t=u();return t===a&&e.appendChild(document.createElement("span")),{"":X,[i]:U,[a]:O}[t]},J=e=>{e.on("activate",(t=>{document.querySelectorAll(".bespoke-progress-parent > .bespoke-progress-bar").forEach((n=>{n.style.flexBasis=100*t.index/(e.slides.length-1)+"%"}))}))},Y=e=>{const t=Number.parseInt(e,10);return Number.isNaN(t)?null:t},z=(e={})=>{const t={history:!0,...e};return e=>{let n=!0;const r=e=>{const t=n;try{return n=!0,e()}finally{n=t}},o=(t={fragment:!0})=>{let n=t.fragment?Y(f("f")||""):null;((t,n)=>{const{min:r,max:o}=Math,{fragments:i,slides:a}=e,s=o(0,r(t,a.length-1)),l=o(0,r(n||0,i[s].length-1));s===e.slide()&&l===e.fragmentIndex||e.slide(s,{fragment:l})})((()=>{var t,r;if(location.hash){const[o]=location.hash.slice(1).split(":~:");if(/^\d+$/.test(o))return(null!==(t=Y(o))&&void 0!==t?t:1)-1;const i=document.getElementById(o)||document.querySelector(`a[name="${CSS.escape(o)}"]`);if(i){const{length:t}=e.slides;for(let o=0;o<t;o+=1)if(e.slides[o].contains(i)){const t=null===(r=e.fragments)||void 0===r?void 0:r[o],a=i.closest("[data-marpit-fragment]");if(t&&a){const e=t.indexOf(a);e>=0&&(n=e)}return o}}}return 0})(),n)};e.on("fragment",(({index:e,fragmentIndex:r})=>{n||m({f:0===r||r.toString()},{location:{...location,hash:`#${e+1}`},setter:(...e)=>t.history?history.pushState(...e):history.replaceState(...e)})})),setTimeout((()=>{o(),window.addEventListener("hashchange",(()=>r((()=>{o({fragment:!1}),m({f:void 0})})))),window.addEventListener("popstate",(()=>{n||r((()=>o()))})),n=!1}),0)}},G=(e={})=>{var t;const n=e.key||(null===(t=window.history.state)||void 0===t?void 0:t.marpBespokeSyncKey)||Math.random().toString(36).slice(2),r=`bespoke-marp-sync-${n}`;var i;i={marpBespokeSyncKey:n},m({},{setter:(e,...t)=>o({...e,...i},...t)});const a=()=>{const e=p(r);return e?JSON.parse(e):Object.create(null)},s=e=>{const t=a(),n={...t,...e(t)};return v(r,JSON.stringify(n)),n},l=()=>{window.removeEventListener("pageshow",l),s((e=>({reference:(e.reference||0)+1})))};return e=>{l(),Object.defineProperty(e,"syncKey",{value:n,enumerable:!0});let t=!0;setTimeout((()=>{e.on("fragment",(e=>{t&&s((()=>({index:e.index,fragmentIndex:e.fragmentIndex})))}))}),0),window.addEventListener("storage",(n=>{if(n.key===r&&n.oldValue&&n.newValue){const r=JSON.parse(n.oldValue),o=JSON.parse(n.newValue);if(r.index!==o.index||r.fragmentIndex!==o.fragmentIndex)try{t=!1,e.slide(o.index,{fragment:o.fragmentIndex,forSync:!0})}finally{t=!0}}}));const o=()=>{const{reference:e}=a();void 0===e||e<=1?h(r):s((()=>({reference:e-1})))};window.addEventListener("pagehide",(e=>{e.persisted&&window.addEventListener("pageshow",l),o()})),e.on("destroy",o)}},{PI:Q,abs:Z,sqrt:ee,atan2:te}=Math,ne={passive:!0},re=({slope:e=-.7,swipeThreshold:t=30}={})=>n=>{let r;const o=n.parent,i=e=>{const t=o.getBoundingClientRect();return{x:e.pageX-(t.left+t.right)/2,y:e.pageY-(t.top+t.bottom)/2}};o.addEventListener("touchstart",(({touches:e})=>{r=1===e.length?i(e[0]):void 0}),ne),o.addEventListener("touchmove",(e=>{if(r)if(1===e.touches.length){e.preventDefault();const t=i(e.touches[0]),n=t.x-r.x,o=t.y-r.y;r.delta=ee(Z(n)**2+Z(o)**2),r.radian=te(n,o)}else r=void 0})),o.addEventListener("touchend",(o=>{if(r){if(r.delta&&r.delta>=t&&r.radian){const t=(r.radian-e+Q)%(2*Q)-Q;n[t<0?"next":"prev"](),o.stopPropagation()}r=void 0}}),ne)},oe=new Map;oe.clear(),oe.set("none",{backward:{both:void 0,incoming:void 0,outgoing:void 0},forward:{both:void 0,incoming:void 0,outgoing:void 0}});const ie={both:"",outgoing:"outgoing-",incoming:"incoming-"},ae={forward:"",backward:"-backward"},se=e=>`--marp-bespoke-transition-animation-${e}`,le=e=>`--marp-transition-${e}`,ce=se("name"),de=se("duration"),ue=e=>new Promise((t=>{const n={},r=document.createElement("div"),o=e=>{r.remove(),t(e)};r.addEventListener("animationstart",(()=>o(n))),Object.assign(r.style,{animationName:e,animationDuration:"1s",animationFillMode:"both",animationPlayState:"paused",position:"absolute",pointerEvents:"none"}),document.body.appendChild(r);const i=getComputedStyle(r).getPropertyValue(le("duration"));i&&(n.defaultDuration=i),((e,t)=>{requestAnimationFrame((()=>{e.style.animationPlayState="running",requestAnimationFrame((()=>t(void 0)))}))})(r,o)})),fe=async e=>oe.has(e)?oe.get(e):(e=>{const t={},n=[];for(const[r,o]of Object.entries(ie))for(const[i,a]of Object.entries(ae)){const s=`marp-${o}transition${a}-${e}`;n.push(ue(s).then((e=>{t[i]=t[i]||{},t[i][r]=e?{...e,name:s}:void 0})))}return Promise.all(n).then((()=>t))})(e).then((t=>(oe.set(e,t),t))),me=e=>Object.values(e).flatMap(Object.values).every((e=>!e)),ge=(e,{type:t,backward:n})=>{const r=e[n?"backward":"forward"],o=(()=>{const e=r[t],n=e=>({[ce]:e.name});if(e)return n(e);if(r.both){const e=n(r.both);return"incoming"===t&&(e[se("direction")]="reverse"),e}})();return!o&&n?ge(e,{type:t,backward:!1}):o||{[ce]:"__bespoke_marp_transition_no_animation__"}},pe=e=>{if(e)try{const t=JSON.parse(e);if((e=>{if("object"!=typeof e)return!1;const t=e;return"string"==typeof t.name&&(void 0===t.duration||"string"==typeof t.duration)})(t))return t}catch(e){}},ve="_tSId",he="_tA",ye="bespoke-marp-transition-warming-up",be=window.matchMedia("(prefers-reduced-motion: reduce)"),we="__bespoke_marp_transition_reduced_outgoing__",xe="__bespoke_marp_transition_reduced_incoming__",ke={forward:{both:void 0,incoming:{name:xe},outgoing:{name:we}},backward:{both:void 0,incoming:{name:xe},outgoing:{name:we}}},$e=e=>{if(!document.startViewTransition)return;const t=t=>(void 0!==t&&(e._tD=t),e._tD);let n;t(!1),((...e)=>{const t=[...new Set(e).values()];return Promise.all(t.map((e=>fe(e)))).then()})(...Array.from(document.querySelectorAll("section[data-transition], section[data-transition-back]")).flatMap((e=>[e.dataset.transition,e.dataset.transitionBack].flatMap((e=>{const t=pe(e);return[null==t?void 0:t.name,(null==t?void 0:t.builtinFallback)?`__builtin__${t.name}`:void 0]})).filter((e=>!!e))))).then((()=>{document.querySelectorAll("style").forEach((e=>{e.innerHTML=e.innerHTML.replace(/--marp-transition-duration:[^;}]*[;}]/g,(e=>e.slice(0,-1)+"!important"+e.slice(-1)))}))}));const r=(n,{back:r,cond:o})=>i=>{var a;const s=t();if(s)return!!i[he]||!("object"!=typeof s||(s.skipTransition(),!i.forSync));if(!o(i))return!0;const l=e.slides[e.slide()],c=()=>{var e;return null!==(e=i.back)&&void 0!==e?e:r},d="data-transition"+(c()?"-back":""),u=l.querySelector(`section[${d}]`);if(!u)return!0;const f=pe(null!==(a=u.getAttribute(d))&&void 0!==a?a:void 0);return!f||((async(e,{builtinFallback:t=!0}={})=>{let n=await fe(e);if(me(n)){if(!t)return;return n=await fe(`__builtin__${e}`),me(n)?void 0:n}return n})(f.name,{builtinFallback:f.builtinFallback}).then((e=>{if(!e){t(!0);try{n(i)}finally{t(!1)}return}let r=e;be.matches&&(console.warn("Use a constant animation to transition because preferring reduced motion by viewer has detected."),r=ke);const o=document.getElementById(ve);o&&o.remove();const a=document.createElement("style");a.id=ve,document.head.appendChild(a),((e,t)=>{const n=[`:root{${le("direction")}:${t.backward?-1:1};}`,":root:has(.bespoke-marp-inactive){cursor:none;}"],r=t=>{var n,o,i;const a=(null===(n=e[t].both)||void 0===n?void 0:n.defaultDuration)||(null===(o=e[t].outgoing)||void 0===o?void 0:o.defaultDuration)||(null===(i=e[t].incoming)||void 0===i?void 0:i.defaultDuration);return"forward"===t?a:a||r("forward")},o=t.duration||r(t.backward?"backward":"forward");void 0!==o&&n.push(`::view-transition-group(*){${de}:${o};}`);const i=e=>Object.entries(e).map((([e,t])=>`${e}:${t};`)).join("");return n.push(`::view-transition-old(root){${i(ge(e,{...t,type:"outgoing"}))}}`,`::view-transition-new(root){${i(ge(e,{...t,type:"incoming"}))}}`),n})(r,{backward:c(),duration:f.duration}).forEach((e=>{var t;return null===(t=a.sheet)||void 0===t?void 0:t.insertRule(e)}));const s=document.documentElement.classList;s.add(ye);let l=!1;const d=()=>{l||(n(i),l=!0,s.remove(ye))},u=()=>{t(!1),a.remove(),s.remove(ye)};try{t(!0);const e=document.startViewTransition(d);t(e),e.finished.finally(u)}catch(e){console.error(e),d(),u()}})),!1)};e.on("prev",r((t=>e.prev({...t,[he]:!0})),{back:!0,cond:e=>{var t;return e.index>0&&!((null===(t=e.fragment)||void 0===t||t)&&n.fragmentIndex>0)}})),e.on("next",r((t=>e.next({...t,[he]:!0})),{cond:t=>t.index+1<e.slides.length&&!(n.fragmentIndex+1<n.fragments.length)})),setTimeout((()=>{e.on("slide",r((t=>e.slide(t.index,{...t,[he]:!0})),{cond:t=>{const n=e.slide();return t.index!==n&&(t.back=t.index<n,!0)}}))}),0),e.on("fragment",(e=>{n=e}))};let Ee;const Le=()=>(void 0===Ee&&(Ee="wakeLock"in navigator&&navigator.wakeLock),Ee),Se=async()=>{const e=Le();if(e)try{return await e.request("screen")}catch(e){console.warn(e)}return null},Pe=async()=>{if(!Le())return;let e;const t=()=>{e&&"visible"===document.visibilityState&&Se()};for(const e of["visibilitychange","fullscreenchange"])document.addEventListener(e,t);return e=await Se(),e};((e=document.getElementById(":$p"))=>{(()=>{const e=f("view");r.dataset.bespokeView=e===a||e===i?e:""})();const t=(e=>{const t=f(e);return m({[e]:void 0}),t})("sync")||void 0;n.from(e,((...e)=>{const t=s.findIndex((e=>u()===e));return e.map((([e,n])=>e[t]&&n)).filter((e=>e))})([[1,1,0],G({key:t})],[[1,1,1],W(e)],[[1,1,0],_],[[1,1,1],b],[[1,0,0],S()],[[1,1,1],T],[[1,1,1],z({history:!1})],[[1,1,0],I()],[[1,1,0],E],[[1,0,0],J],[[1,1,0],re()],[[1,0,0],M()],[[1,0,0],$e],[[1,1,1],w],[[1,1,0],Pe]))})()}();</script></body></html>

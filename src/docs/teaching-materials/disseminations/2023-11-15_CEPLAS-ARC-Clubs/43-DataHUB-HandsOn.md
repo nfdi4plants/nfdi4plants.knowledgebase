@@ -30,22 +30,45 @@ author:
 
 # Hamburger Menu
 
+<div class="two-columns">
+
+<div style="padding: 100px 0;">
+
 1. From the hamburger menu (1) you can
 2. navigate to the [projects](./../../../DataHUB-Manual/datahub-projectsPanel.html) (2)
 3. or [groups](datahub-groupsPanel.html) (3) panels
 
-![bg right w:500](./../../../img/datahub-hamburgerMenu.drawio.svg)
+</div>
+
+<div>
+
+![](./../../../img/datahub-hamburgerMenu.drawio.svg)
+
+</div>
+</div>
+
 
 ---
 
 # Avatar Menu
+
+<div class="two-columns">
+
+<div>
 
 1. In the avatar menu (1) you can
 2. find your profile name and user name (2), 
 3. navigate to the [user settings](./../../../DataHUB-Manual/datahub-userSettings.html) (3) 
 4. or sign out (4) of the DataHUB.
 
-![bg right w:500](./../../../img/datahub-avatarMenu.drawio.svg)
+</div>
+
+<div>
+
+![w:400](./../../../img/datahub-avatarMenu.drawio.svg)
+
+</div>
+</div>
 
 ---
 
@@ -69,11 +92,12 @@ The ARC Panel is the main working area for your ARC.
 
 ---
 
-# ARC Panel &ndash; sidebar <!-- fit -->
+# ARC Panel &ndash; sidebar
 
-<style scoped> section {font-size: 23px;} </style>
 
-![bg right w:600](./../../../img/datahub-ARC-overview.drawio.svg)
+<div class="two-columns">
+
+<div>
 
 1. access the project information (1), e.g. invite members to the ARC
 2. follow the progress of your ARC repository (2),
@@ -81,19 +105,38 @@ The ARC Panel is the main working area for your ARC.
 4. take notes in a wiki to your ARC (4),
 5. adapt the [settings (5) of the ARC](datahub-ARCSettings.html).
 
+</div>
+
+<div>
+
+![w:600](./../../../img/datahub-ARC-overview.drawio.svg)
+
+</div>
+</div>
+
+
 ---
 
-# ARC Panel &ndash; main panel <!-- fit -->
+# ARC Panel &ndash; main panel
 
-<style scoped> section {font-size: 23px;} </style>
+<div class="two-columns">
 
-![bg right w:600](./../../../img/datahub-ARC-overview.drawio.svg)
+<div>
 
 6. see the ARC's name and visibility level (6),
 7. follow the ARC's commit history (7),
 8. see files contained in your ARC just like on your computer (8),
 9. add new files or directories (9), and
 10. download or clone your ARC (10).
+
+</div>
+
+<div>
+
+![w:600](./../../../img/datahub-ARC-overview.drawio.svg)
+
+</div>
+</div>
 
 ---
 
@@ -188,18 +231,29 @@ object-position: 100% 45%;
 
 # Project Management
 
-- Issues
+- You can use issues
 
 ---
 
 # ARCs come with their own wiki space
+
+<div class="two-columns">
+
+<div style="font-size: 27px">
 
 - directly associated to your ARC
 - same access rights as your ARC
 - share meeting minutes or ideas with collaboration partners
 - keep ARC clean of files that are not considered "research data"
 
-![bg right w:600](./../../../img/datahub-wiki.png)
+</div>
+
+<div>
+
+![w:600](./../../../img/datahub-wiki.png)
+
+</div>
+</div>
 
 ---
 
