@@ -99,7 +99,7 @@ Some relevant ontology search services for plant sciences are:
 - [TIB Terminology Service](https://terminology.tib.eu/ts)
 
 ## Ontologies included in the SwateDB
-Plant investigations are often complex, incorporating a diverse range of methods and techniques. For this reason, it will often be necessary to use terms from a variety of ontologies when annotating metadata for a plant experiment, as illustrated in the figure below. The review by [Dumschott et al. 2023]( https://doi.org/10.3389/fpls.2023.1279694) provides an overview of relevant ontologies and their application for metadata annotation in the field of plant sciences. 
+Plant investigations are often complex, incorporating a diverse range of methods and techniques. For this reason, it will often be necessary to use terms from a variety of ontologies when annotating metadata for a plant experiment, as illustrated in the figure below. The review by [Dumschott et al. 2023](https://doi.org/10.3389/fpls.2023.1279694) provides an overview of relevant ontologies and their application for metadata annotation in the field of plant sciences. 
 </br>
 
 ![Alt-Text](./../img/Ontology_landscape_Fig4.png)
