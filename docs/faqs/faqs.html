@@ -632,13 +632,11 @@ Why do I get the error `'arc' is not recognized as an internal or external comma
 Why do I get the error `ERROR: GIT: fatal: detected dubious ownership`?
 </summary>
 <br>
-Possible reasons:
-<ul>
-<li>You tried to work on an ARC that belongs to another person, e.g. another user account on the same computer or in the same file share - or vice versa.</li>
-<li>This issues might occur when working on a network drive (Fileshare, File Server, NAS) that has been mounted by another user account.</li>
-</ul>
-<p>💡 We need more info to learn what causes this issue. Please let us know, if you run into that error!
-<br></p>
+<p>This error occurs when working on a mounted network drive (Fileshare, File Server, NAS). Very simplified: the user on the computer and the owner of the network drive differ and git tries to safe you from working in a folder you do not own.</p>
+<p>You can circumvent this error by adding <strong>all directories</strong> to your list of safe directories via the following command:</p>
+<nfdi-code class="language-bash">git config --global --add safe.directory *
+</nfdi-code>
+<p>This might however pose a safety risk. Please read the details here: <a href="https://www.git-scm.com/docs/git-config#Documentation/git-config.txt-safedirectory">https://www.git-scm.com/docs/git-config#Documentation/git-config.txt-safedirectory</a></p>
 </details>
 <details><summary><span style="color: #1fc2a7">
 Syncing my ARC to the DataHUB takes forever or gets stuck. What can I do?
