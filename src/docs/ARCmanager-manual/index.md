@@ -38,6 +38,4 @@ https://github.com/nfdi4plants/arcmanager_frontend
 
 https://github.com/nfdi4plants/arcmanager_backend
 
-Alternatively, you can get into contact with our developers directly via the email address alexander.kirbis@uni-tuebingen.de or receive help via the [DataPLANT helpdesk](https://helpdesk.nfdi4plants.org/).
-
 -------------------------
