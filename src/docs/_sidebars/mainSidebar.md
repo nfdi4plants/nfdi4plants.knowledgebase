@@ -116,6 +116,7 @@
 
 ## [Share your ARC](/docs/guides/index-ShareYourARC.html)
 ### [Register at the DataHUB](/docs/guides/datahub_register.html)
+### [DataPLANT account](/docs/guides/datahub_account.html)
 ### [Invite collaborators to your ARC](/docs/guides/datahub_InviteCollaborators.html)
 
 ## [Recommended ARC practices](/docs/guides/index-RecommendedARCPractices.html)
