@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: "CWL runner installation"
+title: "CWL Examples"
 date: 2024-01-18
 add toc: false
 add support: false
@@ -31,13 +31,5 @@ The installation can be done following the guide [here](https://github.com/commo
    - Select "Enable Integration with my default distro" in the resources tab under WSL Integration
     ![Docker WSL Integration](./../img/docker_wsl_integration.png)
  - Start WSL
- - Follow the Instructions for Linux (Debian/Ubuntu)
-
- ## Installation Linux (Debian/Ubuntu)
- 
  - Run `sudo apt-get update`
- - Install Python 3 if it is not already preinstalled `sudo apt install python3`
- - Install python virtual environment `sudo apt install python3.8-venv`
- - Create a virtual environment `python3 -m venv env` (named env here, name can vary)
- - Activate the virtual environment `source env/bin/activate`
- - Install the cwltool with pip `pip install cwltool`
+ - Run `sudo apt-get install cwltool`

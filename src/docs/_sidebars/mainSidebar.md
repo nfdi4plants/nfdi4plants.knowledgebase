@@ -86,6 +86,7 @@
 # [Workflows Manual](/docs/SwateManual/index.html)
 ## [CWL Introduction](/docs/WorkflowsManual/cwl_introduction.html)
 ## [CWL runner installation](/docs/WorkflowsManual/cwl_runner_installation.html)
+## [CWL Examples](/docs/WorkflowsManual/cwl_examples.html)
 
 # [DataHUB Manual](/docs/DataHUB-Manual/index.html)
 ## [Overview](/docs/DataHUB-Manual/datahub-overview.html)
