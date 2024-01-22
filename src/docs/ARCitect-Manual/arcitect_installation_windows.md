@@ -11,12 +11,6 @@ add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-## Install Git
-
-Please install <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.github.com/" target="_blank">Git LFS</a> before using the ARCitect.
-
-:bulb: On Windows, Git LFS maybe offered as part of the Git installation.
-
 ## Install ARCitect via installer
 
 1. Head to the ARCitect's GitHub [release page](https://github.com/nfdi4plants/ARCitect/releases/latest).
