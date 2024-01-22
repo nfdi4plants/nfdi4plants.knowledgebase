@@ -61,6 +61,10 @@
 ## [Installation - Linux](/docs/ARCitect-Manual/arcitect_installation_linux.html)
 ## [QuickStart](/docs/guides/arcitect_QuickStart.html)
 
+# [ARCmanager Manual](/docs/ARCmanager-manual/index.html)
+## [What is the ARCmanager?](/docs/ARCmanager-manual/intro.html)
+## [How to use the ARCmanager](/docs/ARCmanager-manual/how_to.html)
+
 # [Swate Manual](/docs/SwateManual/index.html)
 ## [Swate Installation](/docs/SwateManual/Docs01-Installing-Swate.html)
 ### [Excel Browser](/docs/SwateManual/swate_installation_browser.html)
