@@ -7,15 +7,15 @@ author:
   github: https://github.com/TetraW
   orcid: https://orcid.org/0009-0005-7138-4763
 add toc: true
-add support: false
+add support: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
 ## Access ARCs from Galaxy
 
-To access the data of an ARC, you must first provide a GitLab access token in Galaxy, which is used to authenticate Galaxy to GitLab. To create a new token and add it to [Galaxy](https://usegalaxy.eu/), you can proceed as described below.
+To access the data of an ARC, you must first provide a DataHUB access token in Galaxy, which is used to authenticate Galaxy to DataHUB. To create a new token and add it to [Galaxy](https://usegalaxy.eu/), you can proceed as described below.
 
-### Create an access token in GitLab
+### Create an access token in DataHUB
 
 ![image](./../img/ARCfs_KB_01_blurred_marked.png)
 ![image](./../img/ARCfs_KB_02_blurred_marked.png)
