@@ -11,11 +11,24 @@ add support: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-## Access ARCs from Galaxy
+## About this guide
 
-To access the data of an ARC, you must first provide a DataHUB access token in Galaxy, which is used to authenticate Galaxy to DataHUB. To create a new token and add it to [Galaxy](https://usegalaxy.eu/), you can proceed as described below.
+In this guide we introduce how to access ARCs from Galaxy. To access the data of an ARC, you must first provide a DataHUB access token in Galaxy, which is used to authenticate Galaxy to DataHUB. To create a new token and add it to [Galaxy](https://usegalaxy.eu/), you can proceed as described below.
 
-### Create an access token in DataHUB
+<a href="./index.html">
+    <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
+    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
+</a>
+
+<br>
+<br>
+
+## Before we can start
+
+:ballot_box_with_check: You have created an ARC before using the [ARC Commander](./../implementation/ArcCommander.html) or [ARCitect](./../ARCitect-Manual/index.html)  
+:ballot_box_with_check: You have a [DataPLANT](https://register.nfdi4plants.org) account  
+
+## Create an access token in DataHUB
 
 ![image](./../img/ARCfs_KB_01_blurred_marked.png)
 ![image](./../img/ARCfs_KB_02_blurred_marked.png)
@@ -27,11 +40,11 @@ To access the data of an ARC, you must first provide a DataHUB access token in G
 5. Set a expiration date.
 6. Select the authorization scope. 
 
-**Note:** Only the scopes "api" (for write access) and "read_api" (for read access) are relevant for ARCfs.  
+:bulb: Only the scopes "api" (for write access) and "read_api" (for read access) are relevant for ARCfs.  
 **Important:** After you crated the token, you can copy and view it. After you leave the
 site, you will **not** be able to do so again.
 
-### Add the token to Galaxy
+## Add the token to Galaxy
 
 
 ![image](./../img/ARCfs_KB_03_blurred_marked.png)
@@ -45,9 +58,9 @@ site, you will **not** be able to do so again.
 4. In the user preference settings, select "Manage Information".
 5. Copy your token into the "API read access token" field. This filed is located at the bottom of the "User preferences" menu. Click "Save" to adopt your changes.
 
-**Note:** Despite the name "API **read** access token", tokens with write access rights (like those with the scope "api") will also work or, respectively, are required.
+:bulb: Despite the name "API **read** access token", tokens with write access rights (like those with the scope "api") will also work or, respectively, are required.
 
-### Data import
+## Data import
 
 With the token available to Galaxy, you are now able to import data. You can do this as described below.
 
@@ -65,7 +78,7 @@ With the token available to Galaxy, you are now able to import data. You can do 
 7. Click start to begin the import process to Galaxy. This may take some time, depending
    on the workload on the Galaxy server and the size of your file.
 
-### Data export
+## Data export
 
 It is also possible to export datasets back to an ARC. You can do this as described below.
 
