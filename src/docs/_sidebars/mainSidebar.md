@@ -125,6 +125,9 @@
 ### [DataPLANT account](/docs/guides/datahub_account.html)
 ### [Invite collaborators to your ARC](/docs/guides/datahub_InviteCollaborators.html)
 
+## [Work with your ARC](/docs/guides/index-WorkWithYourARC.html)
+### [Using ARCs with Galaxy](/docs/guides/ARCs-galaxy.html)
+
 ## [Recommended ARC practices](/docs/guides/index-RecommendedARCPractices.html)
 ### [Syncing recommendation](/docs/guides/arc_SyncingRecommendation.html)
 ### [Keep files from syncing to the DataHUB](/docs/guides/arc_gitignore.html)

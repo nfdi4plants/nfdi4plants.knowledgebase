@@ -8,6 +8,7 @@ author:
   orcid: https://orcid.org/0009-0005-7138-4763
 add toc: true
 add support: false
+add sidebar: _sidebars/mainSidebar.md
 ---
 
 ## Access ARCs from Galaxy
@@ -84,5 +85,3 @@ It is also possible to export datasets back to an ARC. You can do this as descri
 7. Choose the dataset you want to export,
 8. Clock on "Run Tool" to start the export process. This may take some time, depending
    on the workload on the Galaxy server and the size of your file.
-
-
