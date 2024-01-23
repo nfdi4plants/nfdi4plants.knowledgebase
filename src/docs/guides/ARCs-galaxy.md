@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: ARCfs usage
+title: Using ARCs with Galaxy
 date: 2024-01-23
 author:
 - name: Julian Weidhase
@@ -9,8 +9,6 @@ author:
 add toc: true
 add support: false
 ---
-
-# Use ARCfs in Galaxy to access ARCs
 
 ## Access ARCs from Galaxy
 
