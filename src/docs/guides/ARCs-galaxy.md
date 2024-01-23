@@ -22,7 +22,7 @@ To access the data of an ARC, you must first provide a DataHUB access token in G
 
 1. Open the dropdown menu for your personal settings.
 2. Open the "Preferences" menu.
-3. Change to tab "Acess Tokens".
+3. Change to tab "Access Tokens".
 4. Choose a name for the new token.
 5. Set a expiration date.
 6. Select the authorization scope. 
@@ -39,15 +39,13 @@ site, you will **not** be able to do so again.
 ![image](./../img/ARCfs_KB_07_blurred_marked_cut.png)
 ![image](./../img/ARCfs_KB_08_cut_marked.png)
 
-
-
 1. Visit [usegalaxy.eu](https://usegalaxy.eu/) and log in or create an account. It is possible to log in using your DataPlant account.
 2. Open the "User" drop down menu and
 3. select "Preferences".
 4. In the user preference settings, select "Manage Information".
-5. Copy your token into the "API read access token" field. This filed is located at the bottom of the "User preferences" menu. Klick "Save" to adopt your changes.
+5. Copy your token into the "API read access token" field. This filed is located at the bottom of the "User preferences" menu. Click "Save" to adopt your changes.
 
-**Note:** Despite the name "API **read** access token", tokens with write access rights (like those with the scope "api") will also work or, respectively, are requiered.
+**Note:** Despite the name "API **read** access token", tokens with write access rights (like those with the scope "api") will also work or, respectively, are required.
 
 ### Data import
 
@@ -58,7 +56,7 @@ With the token available to Galaxy, you are now able to import data. You can do 
 ![image](./../img/ARCfs_KB_12_13_marked.png)
 ![image](./../img/ARCfs_KB_14_15_marked.png)
 
-1. Klick on the "Upload Data".
+1. Click on the "Upload Data".
 2. Pick "Choose remote files".
 3. Scroll down and select "DataPLANT DataHub ARRCs".
 4. Explore ARCs or
@@ -81,7 +79,7 @@ It is also possible to export datasets back to an ARC. You can do this as descri
 3. In the opening menu, select "DataPLANT DataHUB ARCs".
 4. Select or
 5. search for an ARC.
-6. Choss a directory insdine an ARC where your dataset should be stored.
+6. Chose a directory inside an ARC where your dataset should be stored.
 7. Choose the dataset you want to export,
 8. Clock on "Run Tool" to start the export process. This may take some time, depending
    on the workload on the Galaxy server and the size of your file.
