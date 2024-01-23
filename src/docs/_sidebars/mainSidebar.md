@@ -105,6 +105,8 @@
 ### [Track publication status](/docs/DataHUB-Manual/datahub-data-publications-status.html)
 ### [Use your DOIs](/docs/DataHUB-Manual/datahub-data-publications-dois.html)
 
+<!-- ## [ARCfs Usage](/docs/ARCfs/ARCfs.html) -->
+
 # [Guides](/docs/guides/index.html)
 ## [ARC User Journey](/docs/guides/ARCUserJourney.html)
 ## [Create your ARC](/docs/guides/index-CreateYourARC.html)
@@ -122,6 +124,9 @@
 ### [Register at the DataHUB](/docs/guides/datahub_register.html)
 ### [DataPLANT account](/docs/guides/datahub_account.html)
 ### [Invite collaborators to your ARC](/docs/guides/datahub_InviteCollaborators.html)
+
+## [Work with your ARC](/docs/guides/index-WorkWithYourARC.html)
+### [Using ARCs with Galaxy](/docs/guides/ARCs-galaxy.html)
 
 ## [Recommended ARC practices](/docs/guides/index-RecommendedARCPractices.html)
 ### [Syncing recommendation](/docs/guides/arc_SyncingRecommendation.html)
