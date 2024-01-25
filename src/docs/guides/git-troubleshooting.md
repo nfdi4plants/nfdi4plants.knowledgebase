@@ -27,7 +27,7 @@ add sidebar: _sidebars/mainSidebar.md
 Some reasons, why we now sometimes run into git issues
 
 - Over the past years we asked users (e.g. during trainings) to install git with minium required guidance
-- Even though more advanced tools (ARCitect) now bring there own git installation, there might still be interferences with older installations
+- Even though more advanced tools (ARCitect) now bring their own git installation, there might still occur interferences with older installations
 - There might also be issues of tools (e.g. ARCitect and ARC commander) or different versions of those tools handling git-related tasks a bit differently or more / less strict (e.g. things like `main` as the default branch)
 - The current (versions of) tools were not really built for collaboration with many people on one ARC (at least not with default settings from DataHUB side). So common errors are related to merge conflicts (multiple users changing files) and divergent branches (e.g. between local and remote clones of the ARC).
 - Some behaviors are simply very use-case or setup specific and will in any case and even with the best tooling require some stewardship
@@ -45,17 +45,9 @@ Some reasons, why we now sometimes run into git issues
 - On windows: open folder via Explorer; type "cmd" or "powershell" into the address field on top of Explorer
 - On linux / macOS terminal: `cd path/to/ARC`
 
-1. try some of the git commands below
+3. try some of the git commands below
 
 :bulb: This is not an exhaustive trouble-shooting list. In most cases git and google are your friends. Most Git error messages (displayed in the command line or inside ARCitect) include helpful commands to solve the problem or can easily be searched for in the internet.
-<!-- 
-## Common error messages
-
-- Commit changes before push
-  - Possible issue
-  - Possible solution
-- Access denied
-- Dubious ownership -->
 
 ## Your two favorite Git commands: status and log
 
@@ -129,14 +121,21 @@ Typical settings to explore and trouble-shoot
 
 ### Changing git config
 
-Editing the respective gitconfig is ideally done via command line (quick internet search helps), e.g. to adapt user name and email
+Editing the respective gitconfig is ideally done via command line (quick internet search helps).
+:bulb: One could edit the file (listed in `git config --list --show-origin`) via a text editor. However, this is rather error-prone.
+
+#### Adapt user name and email
 
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "Your eMail"
 ```
 
-:bulb: One could edit the file (listed in `git config --list --show-origin`) via a text editor. However, this is rather error-prone.
+#### Set `main` as default branch
+
+```bash
+git config --global init.defaultBranch main
+```
 
 ## Git remote
 
@@ -180,3 +179,57 @@ If you also want to display branches that exist on the remote (but not locally),
 ```bash
 git branch --all
 ```
+
+
+## Common issues and error messages
+
+### Commit changes before push
+
+Your local ARC is likely out of sync with the remote. Before working on your ARC, update the local clone via one of these
+
+- ARCitect Pull
+- `arc sync`
+- `git pull` (-> this would also prompt a message if changes need to be merged)
+
+### Access denied
+
+Sometimes you run into permission issues such as
+
+> remote: HTTP Basic: Access denied. The provided password or token is incorrect or your account has 2FA enabled and you must use a personal access token instead of a password.
+
+> fatal: Authentication failed for 'https://git.nfdi4plants.org/UserName/ARCName.git/'
+
+This is due to missing or outdated DataHUB credentials on your computer.
+It usually helps to remove existing credentials stored on your computer and retrieve new ones.
+
+#### Authenticate the computer
+
+Option 1: [via ARC Commander](./../ArcCommanderManual/arc_access.html)
+
+Option 2: "by hand"
+  1. Login to the [DataHUB](https://git.nfdi4plants.org/)
+  2. Create a new [Personal Access Token (PAT)](https://git.nfdi4plants.org/-/profile/personal_access_tokens) with scope `api`
+  3. Run a git command (e.g. `arc sync`, `git pull`) to trigger being asked for git credentials
+     1. Provide your DataHUB username
+     2. Use the token instead of your password
+
+#### Delete stored credentials
+
+If (new) authentication alone does not help, you might need to delete existing tokens or passwords first.
+
+1. Run `git config --get-regexp "credential"` to find out whether and where credentials are stored
+2. This typically displays one of the following
+   > credential.helper store
+
+   > credential.helper osxkeychain (only on macOS)
+
+3. If `credential.helper store` is displayed, the credentials are typically stored in `~/.git-credentials`, a hidden text file stored in the user's home folder. Edit this file and delete the row(s) containing "git.nfdi4plants.org" (`https://<UserName>:<Token>@git.nfdi4plants.org`).
+
+4. On macOS (if `credential.helper osxkeychain` is displayed) open the app "Keychain Access", search and delete passwords for "git.nfdi4plants.org".
+<!-- 
+
+### Dubious ownership
+
+###
+
+Avoid running multiple git processes in one ARC in parallel or looking . Even though  -->
