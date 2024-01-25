@@ -59,7 +59,7 @@ In case you are already logged in, the browser will directly display a plain `Su
 
 :bulb: After two hours you have to repeat this process as this token will expire. Have a look at the next section to learn how to create a longer lasting token.
 
-## Create and Store a Configurable DataHUB Access Token for your project
+## Create and store a configurable DataHUB access token for your project
 
 Access tokens created with the ARCommander expire after two hours. To create a longer-lasting access token for your project, follow these steps:
 
