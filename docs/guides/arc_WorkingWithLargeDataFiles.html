@@ -578,8 +578,8 @@
 <li>All files stored in an assay's <code>dataset</code> folder, and</li>
 <li>All files with a size larger than 150 MB.</li>
 </ol>
-<p>The threshold of 150 MB can easily be adjusted using the ARC Commander. For instance, if you want to increase it to 250 MB (i.e. 250000000 bytes), run</p>
-<nfdi-code class="language-bash">arc config set -g -n "general.gitlfsbytethreshold" -v "250000000"
+<p>The threshold of 150 MB can easily be adjusted using the ARC Commander. For instance, if you want to decrease it to 5 MB (i.e. 5000000 bytes), run</p>
+<nfdi-code class="language-bash">arc config set -g -n "general.gitlfsbytethreshold" -v "5000000"
 </nfdi-code>
 <p>💡 The LFS system is also the reason why <a href="https://git-lfs.github.com/">git LFS</a> needs to be installed prior to using the ARC Commander.</p>
 <nfdi-h2 id="track-files-via-lfs">Track files via LFS</nfdi-h2>
