@@ -40,10 +40,10 @@ By default, the ARC Commander tracks the following files via LFS:
   1. All files stored in an assay's `dataset` folder, and
   2. All files with a size larger than 150 MB. 
 
-The threshold of 150 MB can easily be adjusted using the ARC Commander. For instance, if you want to increase it to 250 MB (i.e. 250000000 bytes), run
+The threshold of 150 MB can easily be adjusted using the ARC Commander. For instance, if you want to decrease it to 5 MB (i.e. 5000000 bytes), run
 
 ```bash
-arc config set -g -n "general.gitlfsbytethreshold" -v "250000000"
+arc config set -g -n "general.gitlfsbytethreshold" -v "5000000"
 ```
 
 :bulb: The LFS system is also the reason why [git LFS](https://git-lfs.github.com/) needs to be installed prior to using the ARC Commander. 
