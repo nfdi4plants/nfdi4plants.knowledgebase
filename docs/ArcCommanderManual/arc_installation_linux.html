@@ -554,34 +554,37 @@
         Installing the ARC Commander - Linux
       </h1>
       <i class="help">
-        last updated at 2022-12-20
+        last updated at 2024-01-25
       </i>
       <ol>
-<li><p>Download the latest ARC Commander release</p>
-<nfdi-code class="language-bash">wget https://github.com/nfdi4plants/arcCommander/releases/download/v0.5.0-linux.x64/arc
+<li>Download the latest ARC Commander release</li>
+</ol>
+<nfdi-code class="language-bash">wget https://github.com/nfdi4plants/ARCCommander/releases/download/v1.0.0/arc_linux-x64
 </nfdi-code>
-</li>
-<li><p>Make it executable</p>
-<nfdi-code class="language-bash">chmod u+x arc
+<ol start="2">
+<li>Make it executable</li>
+</ol>
+<nfdi-code class="language-bash">chmod u+x arc_linux-x64
 </nfdi-code>
-</li>
-<li><p>Move to suitable place (e.g. in your home directory or to <code>/home/bin/</code> to make it accessible for all users)</p>
+<ol start="3">
+<li>Move to suitable place (e.g. in your home directory or to <code>/home/bin/</code> to make it accessible for all users)</li>
+</ol>
 <nfdi-code class="language-bash">if ! [ -d "$HOME/bin" ]; then mkdir "$HOME/bin"; fi # If it does not exist, create a folder `bin` in your home directory. 
-mv arc $HOME/bin/ # move executable to that folder
+mv arc_linux-x64 $HOME/bin/arc # move executable to that folder
 </nfdi-code>
-</li>
+<ol start="4">
 <li><p>You might have to start a fresh terminal or <code>source ~/.profile</code></p>
 </li>
 <li><p>Test that ARC Commander is properly installed</p>
-<nfdi-code class="language-bash">arc --version # check the current version 
-</nfdi-code>
 </li>
 </ol>
+<nfdi-code class="language-bash">arc --version
+</nfdi-code>
 <p>You should see the following or similar message:</p>
 <blockquote>
 <p>Start processing parameterless command.<br />
 Start Arc Version<br />
-v0.5.0
+v1.0.0
 Done processing command.</p>
 </blockquote>
 <blockquote>

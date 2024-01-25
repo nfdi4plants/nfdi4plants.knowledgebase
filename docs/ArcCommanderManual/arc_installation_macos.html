@@ -554,51 +554,60 @@
         Installing the ARC Commander - MacOS
       </h1>
       <i class="help">
-        last updated at 2022-12-20
+        last updated at 2024-01-25
       </i>
       <ol>
 <li><p>Open a Terminal (Applications → Utilities → Terminal)</p>
 </li>
 <li><p>Copy/paste the following commands into your terminal and execute them to (a) download the latest ARC Commander release, (b) change permissions to make the ARC Commander executable and (c) move the ARC Commander program to a location from where it is executable via the terminal:</p>
-<nfdi-code class="language-bash">curl -LO https://github.com/nfdi4plants/arcCommander/releases/download/v0.5.0-osx.x64/arc
-chmod a+x ./arc
-mv ./arc /usr/local/bin/
-</nfdi-code>
 </li>
 </ol>
+<p>For AMD / x86 processors</p>
+<nfdi-code class="language-bash">curl -LO https://github.com/nfdi4plants/ARCCommander/releases/download/v1.0.0/arc_osx-x64
+chmod a+x ./arc_osx-x64
+mv ./arc_osx-x64 /usr/local/bin/arc
+</nfdi-code>
+<p>For ARM processors</p>
+<nfdi-code class="language-bash">curl -LO https://github.com/nfdi4plants/ARCCommander/releases/download/v1.0.0/arc_osx-arm64
+chmod a+x ./arc_osx-arm64
+mv ./arc_osx-arm64 /usr/local/bin/arc
+</nfdi-code>
 <blockquote>
 <p>⚠️ By moving the ARC commander binary to <code>/usr/local/bin/</code> it also becomes available to other users on your machine.</p>
 </blockquote>
 <ol start="3">
-<li><p>Run ARC Commander from the terminal by executing:</p>
+<li>Run ARC Commander from the terminal by executing:</li>
+</ol>
 <nfdi-code class="language-bash">arc
 </nfdi-code>
-</li>
-<li><p>MacOS security note: On first execution, MacOS will not allow arc to be run. Instead it opens a pop-up:</p>
+<ol start="4">
+<li>MacOS security note: On first execution, MacOS will not allow arc to be run. Instead it opens a pop-up:</li>
+</ol>
 <blockquote>
 <p>&quot;arc&quot; cannot be opened because it is from an unidentified developer</p>
 </blockquote>
-</li>
-<li><p>Open the Security Panel in system Preferences (Applications → System Preferences → &quot;Security &amp; Privacy&quot;) or by executing the following command in your terminal:</p>
+<ol start="5">
+<li>Open the Security Panel in system Preferences (Applications → System Preferences → &quot;Security &amp; Privacy&quot;) or by executing the following command in your terminal:</li>
+</ol>
 <nfdi-code class="language-bash">open "x-apple.systempreferences:com.apple.preference.security"
 </nfdi-code>
 <p>In the &quot;General&quot; tab click the bottom-right button &quot;Allow Anyway&quot; right next to</p>
 <blockquote>
 <p>arc was blocked from use because it is not from an identified developer.</p>
 </blockquote>
-</li>
+<ol start="6">
 <li><p>Head back to the terminal and execute <code>arc</code> again. Another pop-up will ask you to confirm by clicking &quot;Open&quot;.</p>
 </li>
 <li><p>Check that arc is properly installed by executing</p>
-<nfdi-code class="language-bash">arc --version
-</nfdi-code>
 </li>
 </ol>
+<nfdi-code class="language-bash">arc --version
+</nfdi-code>
 <p>You should see the following or similar message:</p>
 <blockquote>
 <p>Start processing parameterless command.<br />
 Start Arc Version<br />
-v0.5.0<br />
+v1.0.0<br />
 Done processing command.</p>
 </blockquote>
 <blockquote>
