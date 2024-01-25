@@ -572,7 +572,7 @@
 <p>Some reasons, why we now sometimes run into git issues</p>
 <ul>
 <li>Over the past years we asked users (e.g. during trainings) to install git with minium required guidance</li>
-<li>Even though more advanced tools (ARCitect) now bring there own git installation, there might still be interferences with older installations</li>
+<li>Even though more advanced tools (ARCitect) now bring their own git installation, there might still occur interferences with older installations</li>
 <li>There might also be issues of tools (e.g. ARCitect and ARC commander) or different versions of those tools handling git-related tasks a bit differently or more / less strict (e.g. things like <code>main</code> as the default branch)</li>
 <li>The current (versions of) tools were not really built for collaboration with many people on one ARC (at least not with default settings from DataHUB side). So common errors are related to merge conflicts (multiple users changing files) and divergent branches (e.g. between local and remote clones of the ARC).</li>
 <li>Some behaviors are simply very use-case or setup specific and will in any case and even with the best tooling require some stewardship</li>
@@ -591,18 +591,10 @@
 <li>On windows: open folder via Explorer; type &quot;cmd&quot; or &quot;powershell&quot; into the address field on top of Explorer</li>
 <li>On linux / macOS terminal: <code>cd path/to/ARC</code></li>
 </ul>
-<ol>
+<ol start="3">
 <li>try some of the git commands below</li>
 </ol>
 <p>💡 This is not an exhaustive trouble-shooting list. In most cases git and google are your friends. Most Git error messages (displayed in the command line or inside ARCitect) include helpful commands to solve the problem or can easily be searched for in the internet.</p>
-<!-- 
-## Common error messages
-
-- Commit changes before push
-  - Possible issue
-  - Possible solution
-- Access denied
-- Dubious ownership -->
 <nfdi-h2 id="your-two-favorite-git-commands-status-and-log">Your two favorite Git commands: status and log</nfdi-h2>
 <p>Whenever your asked for ARC support likely related to a git issue, the first thing you want to explore is the state of the ARC.</p>
 <nfdi-h3 id="git-status">git status</nfdi-h3>
@@ -668,21 +660,26 @@ So if the top commit message of the local ARC is different from the last commit 
 <li>if users keep being asked for passwords during sync with the DataHUB, they might not store their credentials via a <code>credential.helper</code>.</li>
 </ul>
 <nfdi-h3 id="changing-git-config">Changing git config</nfdi-h3>
-<p>Editing the respective gitconfig is ideally done via command line (quick internet search helps), e.g. to adapt user name and email</p>
+<p>Editing the respective gitconfig is ideally done via command line (quick internet search helps).
+💡 One could edit the file (listed in <code>git config --list --show-origin</code>) via a text editor. However, this is rather error-prone.</p>
+<nfdi-h4 id="adapt-user-name-and-email">Adapt user name and email</nfdi-h4>
 <nfdi-code class="language-bash">git config --global user.name "Your Name"
 git config --global user.email "Your eMail"
 </nfdi-code>
-<p>💡 One could edit the file (listed in <code>git config --list --show-origin</code>) via a text editor. However, this is rather error-prone.</p>
+<nfdi-h4 id="set-main-as-default-branch">Set main as default branch</nfdi-h4>
+<nfdi-code class="language-bash">git config --global init.defaultBranch main
+</nfdi-code>
 <nfdi-h2 id="git-remote">Git remote</nfdi-h2>
 <p>For ARCs the remote is the DataHUB. The remote address (ARC url) is stored in the git of the local ARC.
 Display the URL, to which the local ARC is connected via</p>
 <nfdi-code class="language-bash">git remote -v
 </nfdi-code>
-<nfdi-h3 id="adding-editing-a-remote">Adding / editing a remote</nfdi-h3>
+<nfdi-h3 id="adding-a-remote">Adding a remote</nfdi-h3>
 <p>A remote is usually added during <code>arc sync</code> or via ARCitect.</p>
 <p>If above command does not display any remote, you can add one via</p>
 <nfdi-code class="language-bash">git remote add origin https://git.nfdi4plants.org/&lt;UserName>/&lt;ARCName>
 </nfdi-code>
+<nfdi-h3 id="editing-a-remote">Editing a remote</nfdi-h3>
 <p>You can edit a remote via</p>
 <nfdi-code class="language-bash">git remote set-url origin https://git.nfdi4plants.org/&lt;UserName>/&lt;ARCName>
 </nfdi-code>
@@ -696,6 +693,64 @@ To display the branches of the local ARC, use</p>
 <p>If you also want to display branches that exist on the remote (but not locally), use</p>
 <nfdi-code class="language-bash">git branch --all
 </nfdi-code>
+<nfdi-h2 id="common-issues-and-error-messages">Common issues and error messages</nfdi-h2>
+<nfdi-h3 id="commit-changes-before-push">Commit changes before push</nfdi-h3>
+<p>Your local ARC is likely out of sync with the remote. Before working on your ARC, update the local clone via one of these</p>
+<ul>
+<li>ARCitect Pull</li>
+<li><code>arc sync</code></li>
+<li><code>git pull</code> (-&gt; this would also prompt a message if changes need to be merged)</li>
+</ul>
+<nfdi-h3 id="access-denied">Access denied</nfdi-h3>
+<p>Sometimes you run into permission issues such as</p>
+<blockquote>
+<p>remote: HTTP Basic: Access denied. The provided password or token is incorrect or your account has 2FA enabled and you must use a personal access token instead of a password.</p>
+</blockquote>
+<blockquote>
+<p>fatal: Authentication failed for 'https://git.nfdi4plants.org/UserName/ARCName.git/'</p>
+</blockquote>
+<p>This is due to missing or outdated DataHUB credentials on your computer.
+It usually helps to remove existing credentials stored on your computer and retrieve new ones.</p>
+<nfdi-h4 id="authenticate-the-computer">Authenticate the computer</nfdi-h4>
+<p>Option 1: <a href="./../ArcCommanderManual/arc_access.html">via ARC Commander</a></p>
+<p>Option 2: &quot;by hand&quot;</p>
+<ol>
+<li>Login to the <a href="https://git.nfdi4plants.org/">DataHUB</a></li>
+<li>Create a new <a href="https://git.nfdi4plants.org/-/profile/personal_access_tokens">Personal Access Token (PAT)</a> with scope <code>api</code></li>
+<li>Run a git command (e.g. <code>arc sync</code>, <code>git pull</code>) to trigger being asked for git credentials
+<ol>
+<li>Provide your DataHUB username</li>
+<li>Use the token instead of your password</li>
+</ol>
+</li>
+</ol>
+<nfdi-h4 id="delete-stored-credentials">Delete stored credentials</nfdi-h4>
+<p>If (new) authentication alone does not help, you might need to delete existing tokens or passwords first.</p>
+<ol>
+<li><p>Run <code>git config --get-regexp &quot;credential&quot;</code> to find out whether and where credentials are stored</p>
+</li>
+<li><p>This typically displays one of the following</p>
+<blockquote>
+<p>credential.helper store</p>
+</blockquote>
+<blockquote>
+<p>credential.helper osxkeychain (only on macOS)</p>
+</blockquote>
+</li>
+<li><p>If <code>credential.helper store</code> is displayed, the credentials are typically stored in <code>~/.git-credentials</code>, a hidden text file stored in the user's home folder. Edit this file and delete the row(s) containing &quot;git.nfdi4plants.org&quot; (<code>https://&lt;UserName&gt;:&lt;Token&gt;@git.nfdi4plants.org</code>).</p>
+</li>
+<li><p>On macOS (if <code>credential.helper osxkeychain</code> is displayed) open the app &quot;Keychain Access&quot;, search and delete passwords for &quot;git.nfdi4plants.org&quot;.</p>
+</li>
+</ol>
+<nfdi-h3 id="dubious-ownership">Dubious ownership</nfdi-h3>
+<p>The error <code>ERROR: GIT: fatal: detected dubious ownership</code> typically occurs when working on a mounted network drive (Fileshare, File Server, NAS). Very simplified: the user on the computer and the owner of the network drive differ and git tries to safe you from working in a folder you do not own.</p>
+<p>You can add the path to the ARC to the list of safe directories via the command</p>
+<nfdi-code class="language-bash">git config --global --add safe.directory %(prefix)///servername/share/path/to/ARC/
+</nfdi-code>
+<p>You can circumvent this error by adding <strong>all directories</strong> to your list of safe directories via the command</p>
+<nfdi-code class="language-bash">git config --global --add safe.directory *
+</nfdi-code>
+<p>⚠️ This might however pose a safety risk. Please read the details here: <a href="https://www.git-scm.com/docs/git-config#Documentation/git-config.txt-safedirectory">https://www.git-scm.com/docs/git-config#Documentation/git-config.txt-safedirectory</a></p>
 
       <h3>
         DataPLANT Support
