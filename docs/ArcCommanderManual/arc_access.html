@@ -554,24 +554,18 @@
         ARC Commander DataHUB access
       </h1>
       <i class="help">
-        last updated at 2023-11-23
+        last updated at 2024-01-25
       </i>
       <nfdi-toc></nfdi-toc>
       <p>The <a href="https://git.nfdi4plants.org">DataHUB</a> allows you to share your ARCs with registered lab or project partners. After <a href="https://register.nfdi4plants.org">registration</a>, you need to setup the ARC Commander for smooth ARC synchronization between your computer and the DataHUB.</p>
 <p>💡 This needs to be done only once per computer.</p>
 <nfdi-h2 id="enable-git-to-store-credentials-on-your-computer">Enable Git to store credentials on your computer</nfdi-h2>
 <p>Open a command prompt or terminal and execute the following command(s)</p>
-<nfdi-h3 id="windows">Windows</nfdi-h3>
-<nfdi-code class="language-bash">git config --global credential.helper cache
-</nfdi-code>
-<p>and / or</p>
+<nfdi-h3 id="windows-linux">Windows / Linux</nfdi-h3>
 <nfdi-code class="language-bash">git config --global credential.helper store
 </nfdi-code>
 <nfdi-h3 id="macos">MacOS</nfdi-h3>
 <nfdi-code class="language-bash">git config --global credential.helper osxkeychain
-</nfdi-code>
-<nfdi-h3 id="linux">Linux</nfdi-h3>
-<nfdi-code class="language-bash">git config --global credential.helper store
 </nfdi-code>
 <nfdi-h2 id="receive-and-store-a-datahub-access-token">Receive and store a DataHUB access token</nfdi-h2>
 <nfdi-code class="language-bash">arc remote accesstoken get -s https://git.nfdi4plants.org
