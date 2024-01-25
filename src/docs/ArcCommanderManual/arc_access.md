@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: ARC Commander DataHUB access
-date: 2023-11-23
+date: 2024-01-25
 author:
 - name: Martin Kuhl
   github: https://github.com/Martin-Kuhl
@@ -22,13 +22,7 @@ The [DataHUB](<https://git.nfdi4plants.org>) allows you to share your ARCs with 
 
 Open a command prompt or terminal and execute the following command(s)
 
-### Windows
-
-```bash
-git config --global credential.helper cache
-```
-
-and / or  
+### Windows / Linux
 
 ```bash
 git config --global credential.helper store
@@ -38,12 +32,6 @@ git config --global credential.helper store
 
 ```bash
 git config --global credential.helper osxkeychain
-```
-
-### Linux
-
-```bash
-git config --global credential.helper store
 ```
 
 ## Receive and store a DataHUB access token
