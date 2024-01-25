@@ -567,12 +567,34 @@
 <nfdi-h3 id="macos">MacOS</nfdi-h3>
 <nfdi-code class="language-bash">git config --global credential.helper osxkeychain
 </nfdi-code>
-<nfdi-h2 id="receive-and-store-a-datahub-access-token">Receive and store a DataHUB access token</nfdi-h2>
+<nfdi-h2 id="receive-and-store-a-datahub-temporary-2-hour-access-token">Receive and store a DataHUB temporary (2 hour) access token</nfdi-h2>
 <nfdi-code class="language-bash">arc remote accesstoken get -s https://git.nfdi4plants.org
 </nfdi-code>
 <p>A browser window will open asking for your DataPLANT login. After login you are asked to authorize your computer to communicate with the DataHUB.<br />
 In case you are already logged in, the browser will directly display a plain <code>Success</code> message to you.</p>
 <p>💡 This authenticates your computer to communicate with your personal DataHUB account</p>
+<p>💡 After two hours you have to repeat this process as this token will expire. Have a look at the next section to learn how to create a longer lasting token.</p>
+<nfdi-h2 id="create-and-store-a-configurable-datahub-access-token-for-your-project">Create and store a configurable DataHUB access token for your project</nfdi-h2>
+<p>Access tokens created with the ARCommander expire after two hours. To create a longer-lasting access token for your project, follow these steps:</p>
+<ol>
+<li><p>In your browser, visit your ARC in the DataHub instance of your choice, e.g.:
+<img src="../img/ArcCommander_access_1.png" alt="Alt text" /></p>
+</li>
+<li><p>Select 'Settings' (1), then 'Access Tokens' (2):
+<img src="../img/ArcCommander_access_2.png" alt="Alt text" /></p>
+</li>
+<li><p>Choose a name for your token (1), set an expiration date (2), assign a role (3), configure permissions (4), and create your token (5):
+<img src="../img/ArcCommander_access_3.png" alt="Alt text" /></p>
+</li>
+<li><p>Once created, you can copy the token:
+<img src="../img/ArcCommander_access_4.png" alt="Alt text" /></p>
+</li>
+<li><p>Finally, save the token by opening a command-line interface and navigating to the root of your project. Then, execute to save your token locally:</p>
+</li>
+</ol>
+<nfdi-code class="language-bash">arc remoteaccess accesstoken store --token &lt;replaceWithYourToken>
+</nfdi-code>
+<p>Once set up, you will not need to authenticate yourself (e.g., by manually retrieving a token through 'arc remote token get') until the token expires. When switching to another machine you have to repeat the process.</p>
 
       <div style="display: flex; align-items: flex-end; justify-content: space-between; margin: 1rem 0 1rem 0;">
         <div>
