@@ -131,7 +131,7 @@ git config --global user.name "Your Name"
 git config --global user.email "Your eMail"
 ```
 
-#### Set `main` as default branch
+#### Set main as default branch
 
 ```bash
 git config --global init.defaultBranch main
@@ -146,7 +146,7 @@ Display the URL, to which the local ARC is connected via
 git remote -v
 ```
 
-### Adding / editing a remote
+### Adding a remote
 
 A remote is usually added during `arc sync` or via ARCitect.
 
@@ -155,6 +155,8 @@ If above command does not display any remote, you can add one via
 ```bash
 git remote add origin https://git.nfdi4plants.org/<UserName>/<ARCName>
 ```
+
+### Editing a remote
 
 You can edit a remote via
 
