@@ -180,7 +180,6 @@ If you also want to display branches that exist on the remote (but not locally),
 git branch --all
 ```
 
-
 ## Common issues and error messages
 
 ### Commit changes before push
@@ -226,10 +225,22 @@ If (new) authentication alone does not help, you might need to delete existing t
 3. If `credential.helper store` is displayed, the credentials are typically stored in `~/.git-credentials`, a hidden text file stored in the user's home folder. Edit this file and delete the row(s) containing "git.nfdi4plants.org" (`https://<UserName>:<Token>@git.nfdi4plants.org`).
 
 4. On macOS (if `credential.helper osxkeychain` is displayed) open the app "Keychain Access", search and delete passwords for "git.nfdi4plants.org".
-<!-- 
 
 ### Dubious ownership
 
-###
+The error `ERROR: GIT: fatal: detected dubious ownership` typically occurs when working on a mounted network drive (Fileshare, File Server, NAS). Very simplified: the user on the computer and the owner of the network drive differ and git tries to safe you from working in a folder you do not own.
 
-Avoid running multiple git processes in one ARC in parallel or looking . Even though  -->
+
+You can add the path to the ARC to the list of safe directories via the command
+
+```bash
+git config --global --add safe.directory %(prefix)///servername/share/path/to/ARC/
+```
+
+You can circumvent this error by adding **all directories** to your list of safe directories via the command
+
+```bash
+git config --global --add safe.directory *
+```
+
+:warning: This might however pose a safety risk. Please read the details here: https://www.git-scm.com/docs/git-config#Documentation/git-config.txt-safedirectory
