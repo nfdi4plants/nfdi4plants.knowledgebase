@@ -46,8 +46,6 @@ This guide assumes you know
 
 - Upload ARC to [DataHUB](https://git.nfdi4plants.org/)
 
-  - :bulb: Note the current [ARCitect workaround](https://github.com/nfdi4plants/ARCitect/issues/56#issuecomment-1777360514), if you share your ARC with a group
-
 - Add README.md 
     <details><summary>README template (click &#x25B6; to display)</summary>
 

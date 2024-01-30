@@ -246,3 +246,44 @@ git config --global --add safe.directory *
 ```
 
 :warning: This might however pose a safety risk. Please read the details here: https://www.git-scm.com/docs/git-config#Documentation/git-config.txt-safedirectory
+
+### Git LFS
+
+[Git LFS](./arc_WorkingWithLargeDataFiles.html) is basically the system in the back to simplify working with (ARCs containing) large data files.
+ARC commander and ARCitect offer options to download (clone) an ARC without large files; speeding up the process and avoiding waste of data storage, if you are only interested e.g. in the metadata.
+
+If you have downloaded (cloned) an ARC without large files and try to upload it to a new location (i.e. new remote due to a transfer to other user, group, etc.), you will see the following or similar error
+
+```bash
+hint: Your push was rejected due to missing or corrupt local objects.
+error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCName.git'
+```
+
+In this case you would have to download all LFS objects from the original remote first -> ask a data steward for help.
+
+#### List LFS-tracked files
+
+To get a list of LFS-tracked files including the size of the original file, run
+
+```bash
+git lfs ls-files -ls
+```
+
+This will display the object ID (oid), the relative path to the file and the object size.
+The oid is also stored in the pointer file at the file's position.
+
+:bulb: If checked-out and downloaded, a file with an oid `77080c4dc5820ede3e992e8116772ae6ec6ba6096e05df4e49fbb5f0665544b2` would be in the folder `.git/lfs/objects/77/08/`. So the first 4 characters of the OiD are split into two subfolders of `.git/lfs/objects/` (i.e. `/77/08/`).
+
+#### Debug LFS-tracked files
+
+To get a report of all LFS-tracked files including there status, use
+
+```bash
+git lfs ls-files -d
+```
+
+Amongst others, this report will print for every LFS file, whether it is downloaded (`checkout: true; download: true`) to the local ARC or not (`checkout: false; download: false`).
+
+### Open Files
+
+Before "syncing" an ARC, close all windows of office software (Excel, Word, LibreOffice, etc.), where a file stored in the ARC is opened.
