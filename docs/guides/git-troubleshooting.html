@@ -554,7 +554,7 @@
         Git troubleshooting
       </h1>
       <i class="help">
-        last updated at 2024-01-19
+        last updated at 2024-01-30
       </i>
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
@@ -592,9 +592,42 @@
 <li>On linux / macOS terminal: <code>cd path/to/ARC</code></li>
 </ul>
 <ol start="3">
-<li>try some of the git commands below</li>
+<li>try some of the git commands and debugging below</li>
 </ol>
-<p>💡 This is not an exhaustive trouble-shooting list. In most cases git and google are your friends. Most Git error messages (displayed in the command line or inside ARCitect) include helpful commands to solve the problem or can easily be searched for in the internet.</p>
+<p>💡 This is not an exhaustive trouble-shooting list. In most cases git and search machines are your friends. Most Git error messages (displayed in the command line or inside ARCitect) include helpful commands to solve the problem or can easily be searched for in the internet.</p>
+<nfdi-h2 id="error-messages">Error messages</nfdi-h2>
+<table>
+<thead>
+<tr>
+<th>error message*</th>
+<th>possible reason</th>
+<th>possible solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>remote: HTTP Basic: Access denied</code> <br><br> <code>fatal: Authentication failed for 'https://git.nfdi4plants.org/.../...'</code></td>
+<td>Your computer is not &quot;linked&quot; to your DataHUB account</td>
+<td><a href="#access-denied">Access Denied</a></td>
+</tr>
+<tr>
+<td><code>error: failed to push some refs to 'https://git.nfdi4plants.org/.../...' hint: Your push was rejected due to missing or corrupt local objects.</code></td>
+<td>You tried to upload LFS-tracked files that are not present on your computer</td>
+<td><a href="#git-lfs">Git-LFS</a></td>
+</tr>
+<tr>
+<td><code>error: failed to push some refs to 'https://git.nfdi4plants.org/.../...' hint: Updates were rejected because the remote contains work that you do not have locally.</code></td>
+<td>Your local ARC is out of sync with the remote.</td>
+<td><a href="#arc-not-in-sync-with-the-datahub">ARC not in sync with the DataHUB</a></td>
+</tr>
+<tr>
+<td><code>ERROR: GIT: fatal: detected dubious ownership</code></td>
+<td>This is an error typically seen when working on mounted network drives</td>
+<td><a href="#dubious-ownership">Dubious ownership</a></td>
+</tr>
+</tbody>
+</table>
+<p>💡 *typically displayed during synchronization via ARCitect (Versining --&gt; push / pull) or <code>arc sync</code>. Even if ARCitect shows &quot;Complete&quot;, it's sometimes worth it to scroll up and see these errors.</p>
 <nfdi-h2 id="your-two-favorite-git-commands-status-and-log">Your two favorite Git commands: status and log</nfdi-h2>
 <p>Whenever your asked for ARC support likely related to a git issue, the first thing you want to explore is the state of the ARC.</p>
 <nfdi-h3 id="git-status">git status</nfdi-h3>
@@ -694,23 +727,21 @@ To display the branches of the local ARC, use</p>
 <nfdi-code class="language-bash">git branch --all
 </nfdi-code>
 <nfdi-h2 id="common-issues-and-error-messages">Common issues and error messages</nfdi-h2>
-<nfdi-h3 id="commit-changes-before-push">Commit changes before push</nfdi-h3>
-<p>Your local ARC is likely out of sync with the remote. Before working on your ARC, update the local clone via one of these</p>
+<nfdi-h3 id="arc-not-in-sync-with-the-datahub">ARC not in sync with the DataHUB</nfdi-h3>
+<p>Your local ARC is likely out of sync with the remote. This happens, if you or an invited colleague work(s) on the same ARC from a different location (e.g. the DataHUB or another computer). Before working on your ARC, make sure to update the local clone via one of these</p>
 <ul>
-<li>ARCitect Pull</li>
+<li>ARCitect --&gt; Versioning --&gt; Pull</li>
 <li><code>arc sync</code></li>
 <li><code>git pull</code> (-&gt; this would also prompt a message if changes need to be merged)</li>
 </ul>
 <nfdi-h3 id="access-denied">Access denied</nfdi-h3>
 <p>Sometimes you run into permission issues such as</p>
-<blockquote>
-<p>remote: HTTP Basic: Access denied. The provided password or token is incorrect or your account has 2FA enabled and you must use a personal access token instead of a password.</p>
-</blockquote>
-<blockquote>
-<p>fatal: Authentication failed for 'https://git.nfdi4plants.org/UserName/ARCName.git/'</p>
-</blockquote>
+<nfdi-code class="language-bash">remote: HTTP Basic: Access denied. The provided password or token is incorrect or your account has 2FA enabled and you must use a personal access token instead of a password.
+</nfdi-code>
+<nfdi-code class="language-bash">fatal: Authentication failed for 'https://git.nfdi4plants.org/UserName/ARCName.git/'
+</nfdi-code>
 <p>This is due to missing or outdated DataHUB credentials on your computer.
-It usually helps to remove existing credentials stored on your computer and retrieve new ones.</p>
+It usually helps to just retrieve new ones. If not, you might have to remove existing credentials stored on your computer.</p>
 <nfdi-h4 id="authenticate-the-computer">Authenticate the computer</nfdi-h4>
 <p>Option 1: <a href="./../ArcCommanderManual/arc_access.html">via ARC Commander</a></p>
 <p>Option 2: &quot;by hand&quot;</p>
