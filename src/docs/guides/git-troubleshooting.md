@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Git troubleshooting
-date: 2024-01-19
+date: 2024-01-30
 author: 
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -45,9 +45,20 @@ Some reasons, why we now sometimes run into git issues
 - On windows: open folder via Explorer; type "cmd" or "powershell" into the address field on top of Explorer
 - On linux / macOS terminal: `cd path/to/ARC`
 
-3. try some of the git commands below
+3. try some of the git commands and debugging below
 
-:bulb: This is not an exhaustive trouble-shooting list. In most cases git and google are your friends. Most Git error messages (displayed in the command line or inside ARCitect) include helpful commands to solve the problem or can easily be searched for in the internet.
+:bulb: This is not an exhaustive trouble-shooting list. In most cases git and search machines are your friends. Most Git error messages (displayed in the command line or inside ARCitect) include helpful commands to solve the problem or can easily be searched for in the internet.
+
+## Error messages
+
+error message* | possible reason | possible solution
+--- | --- | ---
+`remote: HTTP Basic: Access denied` <br><br> `fatal: Authentication failed for 'https://git.nfdi4plants.org/.../...'` | Your computer is not "linked" to your DataHUB account | [Access Denied](#access-denied)
+`error: failed to push some refs to 'https://git.nfdi4plants.org/.../...' hint: Your push was rejected due to missing or corrupt local objects.` | You tried to upload LFS-tracked files that are not present on your computer | [Git-LFS](#git-lfs)
+`error: failed to push some refs to 'https://git.nfdi4plants.org/.../...' hint: Updates were rejected because the remote contains work that you do not have locally.` | Your local ARC is out of sync with the remote. | [ARC not in sync with the DataHUB](#arc-not-in-sync-with-the-datahub)
+`ERROR: GIT: fatal: detected dubious ownership` | This is an error typically seen when working on mounted network drives | [Dubious ownership](#dubious-ownership)
+
+:bulb: *typically displayed during synchronization via ARCitect (Versining --> push / pull) or `arc sync`. Even if ARCitect shows "Complete", it's sometimes worth it to scroll up and see these errors.
 
 ## Your two favorite Git commands: status and log
 
@@ -184,11 +195,11 @@ git branch --all
 
 ## Common issues and error messages
 
-### Commit changes before push
+### ARC not in sync with the DataHUB
 
-Your local ARC is likely out of sync with the remote. Before working on your ARC, update the local clone via one of these
+Your local ARC is likely out of sync with the remote. This happens, if you or an invited colleague work(s) on the same ARC from a different location (e.g. the DataHUB or another computer). Before working on your ARC, make sure to update the local clone via one of these
 
-- ARCitect Pull
+- ARCitect --> Versioning --> Pull
 - `arc sync`
 - `git pull` (-> this would also prompt a message if changes need to be merged)
 
@@ -196,12 +207,16 @@ Your local ARC is likely out of sync with the remote. Before working on your ARC
 
 Sometimes you run into permission issues such as
 
-> remote: HTTP Basic: Access denied. The provided password or token is incorrect or your account has 2FA enabled and you must use a personal access token instead of a password.
+```bash error
+remote: HTTP Basic: Access denied. The provided password or token is incorrect or your account has 2FA enabled and you must use a personal access token instead of a password.
+```
 
-> fatal: Authentication failed for 'https://git.nfdi4plants.org/UserName/ARCName.git/'
+```bash error
+fatal: Authentication failed for 'https://git.nfdi4plants.org/UserName/ARCName.git/'
+```
 
 This is due to missing or outdated DataHUB credentials on your computer.
-It usually helps to remove existing credentials stored on your computer and retrieve new ones.
+It usually helps to just retrieve new ones. If not, you might have to remove existing credentials stored on your computer.
 
 #### Authenticate the computer
 
@@ -232,7 +247,6 @@ If (new) authentication alone does not help, you might need to delete existing t
 
 The error `ERROR: GIT: fatal: detected dubious ownership` typically occurs when working on a mounted network drive (Fileshare, File Server, NAS). Very simplified: the user on the computer and the owner of the network drive differ and git tries to safe you from working in a folder you do not own.
 
-
 You can add the path to the ARC to the list of safe directories via the command
 
 ```bash
@@ -254,7 +268,7 @@ ARC commander and ARCitect offer options to download (clone) an ARC without larg
 
 If you have downloaded (cloned) an ARC without large files and try to upload it to a new location (i.e. new remote due to a transfer to other user, group, etc.), you will see the following or similar error
 
-```bash
+```bash error
 hint: Your push was rejected due to missing or corrupt local objects.
 error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCName.git'
 ```
