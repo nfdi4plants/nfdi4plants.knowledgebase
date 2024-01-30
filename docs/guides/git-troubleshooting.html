@@ -751,6 +751,28 @@ It usually helps to remove existing credentials stored on your computer and retr
 <nfdi-code class="language-bash">git config --global --add safe.directory *
 </nfdi-code>
 <p>⚠️ This might however pose a safety risk. Please read the details here: <a href="https://www.git-scm.com/docs/git-config#Documentation/git-config.txt-safedirectory">https://www.git-scm.com/docs/git-config#Documentation/git-config.txt-safedirectory</a></p>
+<nfdi-h3 id="git-lfs">Git LFS</nfdi-h3>
+<p><a href="./arc_WorkingWithLargeDataFiles.html">Git LFS</a> is basically the system in the back to simplify working with (ARCs containing) large data files.
+ARC commander and ARCitect offer options to download (clone) an ARC without large files; speeding up the process and avoiding waste of data storage, if you are only interested e.g. in the metadata.</p>
+<p>If you have downloaded (cloned) an ARC without large files and try to upload it to a new location (i.e. new remote due to a transfer to other user, group, etc.), you will see the following or similar error</p>
+<nfdi-code class="language-bash">hint: Your push was rejected due to missing or corrupt local objects.
+error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCName.git'
+</nfdi-code>
+<p>In this case you would have to download all LFS objects from the original remote first → ask a data steward for help.</p>
+<nfdi-h4 id="list-lfs-tracked-files">List LFS-tracked files</nfdi-h4>
+<p>To get a list of LFS-tracked files including the size of the original file, run</p>
+<nfdi-code class="language-bash">git lfs ls-files -ls
+</nfdi-code>
+<p>This will display the object ID (oid), the relative path to the file and the object size.
+The oid is also stored in the pointer file at the file's position.</p>
+<p>💡 If checked-out and downloaded, a file with an oid <code>77080c4dc5820ede3e992e8116772ae6ec6ba6096e05df4e49fbb5f0665544b2</code> would be in the folder <code>.git/lfs/objects/77/08/</code>. So the first 4 characters of the OiD are split into two subfolders of <code>.git/lfs/objects/</code> (i.e. <code>/77/08/</code>).</p>
+<nfdi-h4 id="debug-lfs-tracked-files">Debug LFS-tracked files</nfdi-h4>
+<p>To get a report of all LFS-tracked files including there status, use</p>
+<nfdi-code class="language-bash">git lfs ls-files -d
+</nfdi-code>
+<p>Amongst others, this report will print for every LFS file, whether it is downloaded (<code>checkout: true; download: true</code>) to the local ARC or not (<code>checkout: false; download: false</code>).</p>
+<nfdi-h3 id="open-files">Open Files</nfdi-h3>
+<p>Before &quot;syncing&quot; an ARC, close all windows of office software (Excel, Word, LibreOffice, etc.), where a file stored in the ARC is opened.</p>
 
       <h3>
         DataPLANT Support
