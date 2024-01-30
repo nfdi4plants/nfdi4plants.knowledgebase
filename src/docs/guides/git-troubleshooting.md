@@ -53,9 +53,11 @@ Some reasons, why we now sometimes run into git issues
 
 error message* | possible reason | possible solution
 --- | --- | ---
-`remote: HTTP Basic: Access denied` <br><br> `fatal: Authentication failed for 'https://git.nfdi4plants.org/.../...'` | Your computer is not "linked" to your DataHUB account | [Access Denied](#access-denied)
-`error: failed to push some refs to 'https://git.nfdi4plants.org/.../...' hint: Your push was rejected due to missing or corrupt local objects.` | You tried to upload LFS-tracked files that are not present on your computer | [Git-LFS](#git-lfs)
-`error: failed to push some refs to 'https://git.nfdi4plants.org/.../...' hint: Updates were rejected because the remote contains work that you do not have locally.` | Your local ARC is out of sync with the remote. | [ARC not in sync with the DataHUB](#arc-not-in-sync-with-the-datahub)
+`remote: HTTP Basic: Access denied` <br><br> `fatal: Authentication failed for 'https://git.nfdi4plants.org/UserName/ARCname'` | Your computer is not "linked" to your DataHUB account | [Access Denied](#access-denied)
+`error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCname' hint: Your push was rejected due to missing or corrupt local objects.` | You tried to upload LFS-tracked files that are not present on your computer | [Git-LFS](#git-lfs)
+`error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCname' hint: Updates were rejected because the remote contains work that you do not have locally.` | Your local ARC is out of sync with the remote. | [ARC not in sync with the DataHUB](#arc-not-in-sync-with-the-datahub)
+`ERROR: Can not sync with remote as no remote repository address was specified.` | There is no URL specified for your ARC's remote | [Git remote](#git-remote)
+`ERROR: GIT: fatal: repository 'https://git.nfdi4plants.org/UserName/ARCname.git' not found` | The remote URL does not exist | [Git remote](#git-remote)
 `ERROR: GIT: fatal: detected dubious ownership` | This is an error typically seen when working on mounted network drives | [Dubious ownership](#dubious-ownership)
 
 :bulb: *typically displayed during synchronization via ARCitect (Versining --> push / pull) or `arc sync`. Even if ARCitect shows "Complete", it's sometimes worth it to scroll up and see these errors.
@@ -150,16 +152,30 @@ git config --global init.defaultBranch main
 
 ## Git remote
 
-For ARCs the remote is the DataHUB. The remote address (ARC url) is stored in the git of the local ARC.
+For ARCs the "remote" is the DataHUB. The remote address (ARC url) is stored in the git of the local ARC.
 Display the URL, to which the local ARC is connected via
 
 ```bash
 git remote -v
 ```
 
-### Adding a remote
+### Adding a remote during arc sync
 
-A remote is usually added during `arc sync` or via ARCitect.
+A default remote is usually added by ARC Commander or ARCitect.
+If the ARC does not yet exist in the DataHUB, and you created it via ARC Commander and synced it via `arc sync`, you will see this error:
+
+```bash error
+ERROR: GIT: fatal: repository 'https://git.nfdi4plants.org/UserName/ARCname.git/' not found 
+GIT: warning: redirecting to https://git.nfdi4plants.org/UserName/ARCname.git/
+...
+GIT: remote: The private project UserName/ARCname was successfully created.  
+```
+
+This is not to worry about, the ARC was created in the DataHUB during this process.
+
+If you only see the error `ERROR: GIT: fatal: repository 'https://git.nfdi4plants.org/UserName/ARCname.git/' not found`, but not the following lines mentioning that the ARC was created automatically, make sure to use the "force", i.e. `arc sync --force ...`. 
+
+### Adding a remote via git
 
 If above command does not display any remote, you can add one via
 
