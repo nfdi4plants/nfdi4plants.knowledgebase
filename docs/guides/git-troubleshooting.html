@@ -606,19 +606,29 @@
 </thead>
 <tbody>
 <tr>
-<td><code>remote: HTTP Basic: Access denied</code> <br><br> <code>fatal: Authentication failed for 'https://git.nfdi4plants.org/.../...'</code></td>
+<td><code>remote: HTTP Basic: Access denied</code> <br><br> <code>fatal: Authentication failed for 'https://git.nfdi4plants.org/UserName/ARCname'</code></td>
 <td>Your computer is not &quot;linked&quot; to your DataHUB account</td>
 <td><a href="#access-denied">Access Denied</a></td>
 </tr>
 <tr>
-<td><code>error: failed to push some refs to 'https://git.nfdi4plants.org/.../...' hint: Your push was rejected due to missing or corrupt local objects.</code></td>
+<td><code>error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCname' hint: Your push was rejected due to missing or corrupt local objects.</code></td>
 <td>You tried to upload LFS-tracked files that are not present on your computer</td>
 <td><a href="#git-lfs">Git-LFS</a></td>
 </tr>
 <tr>
-<td><code>error: failed to push some refs to 'https://git.nfdi4plants.org/.../...' hint: Updates were rejected because the remote contains work that you do not have locally.</code></td>
+<td><code>error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCname' hint: Updates were rejected because the remote contains work that you do not have locally.</code></td>
 <td>Your local ARC is out of sync with the remote.</td>
 <td><a href="#arc-not-in-sync-with-the-datahub">ARC not in sync with the DataHUB</a></td>
+</tr>
+<tr>
+<td><code>ERROR: Can not sync with remote as no remote repository address was specified.</code></td>
+<td>There is no URL specified for your ARC's remote</td>
+<td><a href="#git-remote">Git remote</a></td>
+</tr>
+<tr>
+<td><code>ERROR: GIT: fatal: repository 'https://git.nfdi4plants.org/UserName/ARCname.git' not found</code></td>
+<td>The remote URL does not exist</td>
+<td><a href="#git-remote">Git remote</a></td>
 </tr>
 <tr>
 <td><code>ERROR: GIT: fatal: detected dubious ownership</code></td>
@@ -703,12 +713,21 @@ git config --global user.email "Your eMail"
 <nfdi-code class="language-bash">git config --global init.defaultBranch main
 </nfdi-code>
 <nfdi-h2 id="git-remote">Git remote</nfdi-h2>
-<p>For ARCs the remote is the DataHUB. The remote address (ARC url) is stored in the git of the local ARC.
+<p>For ARCs the &quot;remote&quot; is the DataHUB. The remote address (ARC url) is stored in the git of the local ARC.
 Display the URL, to which the local ARC is connected via</p>
 <nfdi-code class="language-bash">git remote -v
 </nfdi-code>
-<nfdi-h3 id="adding-a-remote">Adding a remote</nfdi-h3>
-<p>A remote is usually added during <code>arc sync</code> or via ARCitect.</p>
+<nfdi-h3 id="adding-a-remote-during-arc-sync">Adding a remote during arc sync</nfdi-h3>
+<p>A default remote is usually added by ARC Commander or ARCitect.
+If the ARC does not yet exist in the DataHUB, and you created it via ARC Commander and synced it via <code>arc sync</code>, you will see this error:</p>
+<nfdi-code class="language-bash">ERROR: GIT: fatal: repository 'https://git.nfdi4plants.org/UserName/ARCname.git/' not found 
+GIT: warning: redirecting to https://git.nfdi4plants.org/UserName/ARCname.git/
+...
+GIT: remote: The private project UserName/ARCname was successfully created.  
+</nfdi-code>
+<p>This is not to worry about, the ARC was created in the DataHUB during this process.</p>
+<p>If you only see the error <code>ERROR: GIT: fatal: repository 'https://git.nfdi4plants.org/UserName/ARCname.git/' not found</code>, but not the following lines mentioning that the ARC was created automatically, make sure to use the &quot;force&quot;, i.e. <code>arc sync --force ...</code>.</p>
+<nfdi-h3 id="adding-a-remote-via-git">Adding a remote via git</nfdi-h3>
 <p>If above command does not display any remote, you can add one via</p>
 <nfdi-code class="language-bash">git remote add origin https://git.nfdi4plants.org/&lt;UserName>/&lt;ARCName>
 </nfdi-code>
