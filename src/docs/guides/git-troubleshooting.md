@@ -211,6 +211,17 @@ git branch --all
 
 ## Common issues and error messages
 
+### ARC (files) open in multiple programs
+
+A common source for issues are multiple programs that work on the ARC in parallel.
+
+- In particular, working on the ARC with multiple softwares that have Git integration may lead to confusion. For instance, while you sync the ARC using ARCitect or ARC Commander, the changes may still be displayed as un-committed in VSCode, RStudio, PyCharm or other third-party software.
+
+- Many softwares produce hidden temporary files. By default these files are not shown or synced by the ARCitect or ARC Commander. They might still sometimes lead to confusion, e.g. not being able to commit changes. This is especially the case for office software (Excel, Word, LibreOffice, etc.), where e.g. one of the ISA files (`isa.investigation.xlsx`, `isa.study.xlsx`, `isa.assay.xlsx`) or another office file stored in the ARC may be open. However, also ARCs opened in Windows Explorer or macOS Finder sometimes led to issues.
+
+- Before syncing an ARC, close all ARC-files and Explorer / Finder windows
+- Avoid to edit, delete, or move files, while the ARC is being synced to the DataHUB
+
 ### ARC not in sync with the DataHUB
 
 Your local ARC is likely out of sync with the remote. This happens, if you or an invited colleague work(s) on the same ARC from a different location (e.g. the DataHUB or another computer). Before working on your ARC, make sure to update the local clone via one of these
@@ -313,7 +324,3 @@ git lfs ls-files -d
 ```
 
 Amongst others, this report will print for every LFS file, whether it is downloaded (`checkout: true; download: true`) to the local ARC or not (`checkout: false; download: false`).
-
-### Open Files
-
-Before "syncing" an ARC, close all windows of office software (Excel, Word, LibreOffice, etc.), where a file stored in the ARC is opened.
