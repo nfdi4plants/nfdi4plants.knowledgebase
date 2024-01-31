@@ -23,9 +23,9 @@ This monthly user meeting is primarily intended for ARC users in Düsseldorf and
 
 - Every second Friday of the month from 1 pm - 2pm (<a href="webcal://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/arc-user-meeting-hhu.ics"><i class="fa fa-calendar" aria-hidden="true"></i> Download invitation to your calendar</a>)
   - Upcoming dates:
-    - February 9th
     - March 8th
     - April 12th
+    - May 10th
 - Online [via WebEx](https://hhu.webex.com/hhu-en/j.php?MTID=m37ec02b7a7afdc4b0e1b310bd693ac0c)
 - No registration required
 
