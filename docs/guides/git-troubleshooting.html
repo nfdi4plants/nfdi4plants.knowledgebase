@@ -746,6 +746,18 @@ To display the branches of the local ARC, use</p>
 <nfdi-code class="language-bash">git branch --all
 </nfdi-code>
 <nfdi-h2 id="common-issues-and-error-messages">Common issues and error messages</nfdi-h2>
+<nfdi-h3 id="arc-files-open-in-multiple-programs">ARC (files) open in multiple programs</nfdi-h3>
+<p>A common source for issues are multiple programs that work on the ARC in parallel.</p>
+<ul>
+<li><p>In particular, working on the ARC with multiple softwares that have Git integration may lead to confusion. For instance, while you sync the ARC using ARCitect or ARC Commander, the changes may still be displayed as un-committed in VSCode, RStudio, PyCharm or other third-party software.</p>
+</li>
+<li><p>Many softwares produce hidden temporary files. By default these files are not shown or synced by the ARCitect or ARC Commander. They might still sometimes lead to confusion, e.g. not being able to commit changes. This is especially the case for office software (Excel, Word, LibreOffice, etc.), where e.g. one of the ISA files (<code>isa.investigation.xlsx</code>, <code>isa.study.xlsx</code>, <code>isa.assay.xlsx</code>) or another office file stored in the ARC may be open. However, also ARCs opened in Windows Explorer or macOS Finder sometimes led to issues.</p>
+</li>
+<li><p>Before syncing an ARC, close all ARC-files and Explorer / Finder windows</p>
+</li>
+<li><p>Avoid to edit, delete, or move files, while the ARC is being synced to the DataHUB</p>
+</li>
+</ul>
 <nfdi-h3 id="arc-not-in-sync-with-the-datahub">ARC not in sync with the DataHUB</nfdi-h3>
 <p>Your local ARC is likely out of sync with the remote. This happens, if you or an invited colleague work(s) on the same ARC from a different location (e.g. the DataHUB or another computer). Before working on your ARC, make sure to update the local clone via one of these</p>
 <ul>
@@ -821,8 +833,6 @@ The oid is also stored in the pointer file at the file's position.</p>
 <nfdi-code class="language-bash">git lfs ls-files -d
 </nfdi-code>
 <p>Amongst others, this report will print for every LFS file, whether it is downloaded (<code>checkout: true; download: true</code>) to the local ARC or not (<code>checkout: false; download: false</code>).</p>
-<nfdi-h3 id="open-files">Open Files</nfdi-h3>
-<p>Before &quot;syncing&quot; an ARC, close all windows of office software (Excel, Word, LibreOffice, etc.), where a file stored in the ARC is opened.</p>
 
       <h3>
         DataPLANT Support
