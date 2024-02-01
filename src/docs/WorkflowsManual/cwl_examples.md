@@ -80,6 +80,87 @@ outputs:
       glob: $(runtime.outdir)
 ```
 
+### With a fixed script file
+
+Oftentimes, individual analysis is done within scripts for the flexibility, instead of tools with 
+fixed tasks. In this case, it is recommended to encode the script as a fixed part of the cwl description. 
+The script is then accessible in the cwl description and can be calles as part of the `baseCommand`. It can be 
+a script that functions as a command line and still expects inputs, or as a self contained analysis without further input requirements.
+
+```yaml
+cwlVersion: v1.2
+class: CommandLineTool
+hints:
+  DockerRequirement:
+    dockerPull: address/to/my/docker
+requirements:
+  - class: InitialWorkDirRequirement
+    listing:
+      - entryname: myAnalysis.script
+        entry:
+          $include: myAnalysis.script
+  - class: NetworkAccess
+    networkAccess: true
+baseCommand: [run, myAnalysis.script]
+inputs:
+  input1:
+    type: File
+    inputBinding:
+      position: 1
+  input2:
+    type: Directory
+    inputBinding:
+      position: 2
+      # prefix is optional
+      prefix: -i
+outputs:
+  myOutput:
+    type: Directory
+    outputBinding:
+      # this returns the whole working directory
+      glob: $(runtime.outdir)
+```
+
+### Within an ARC with a devcontainer
+
+Within the context of an ARC, researches often work within devcontainers or the ARC environment. CWL is able to replicate 
+this workflow under the premise, that in the end everything can be executed in one go. The entire arc directory can be mounted 
+into the working directory of the CWL process.
+
+```yaml
+cwlVersion: v1.2
+class: CommandLineTool
+hints:
+  DockerRequirement:
+    dockerPull: address/to/my/docker
+requirements:
+  - class: InitialWorkDirRequirement
+    listing:
+      - entryname: myAnalysis.script
+        entry:
+          $include: myAnalysis.script
+  - class: NetworkAccess
+    networkAccess: true
+baseCommand: [run, myAnalysis.script]
+inputs:
+  input1:
+    type: File
+    inputBinding:
+      position: 1
+  input2:
+    type: Directory
+    inputBinding:
+      position: 2
+      # prefix is optional
+      prefix: -i
+outputs:
+  myOutput:
+    type: Directory
+    outputBinding:
+      # this returns the whole working directory
+      glob: $(runtime.outdir)
+```
+
 ## Workflows
 
 Workflows can connect multiple command line tools, for example. It is possible to use the output of a 

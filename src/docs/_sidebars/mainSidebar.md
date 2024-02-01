@@ -87,6 +87,7 @@
 ## [CWL Introduction](/docs/WorkflowsManual/cwl_introduction.html)
 ## [CWL runner installation](/docs/WorkflowsManual/cwl_runner_installation.html)
 ## [CWL Examples](/docs/WorkflowsManual/cwl_examples.html)
+## [CWL Metadata](/docs/WorkflowsManual/cwl_metadata.html)
 
 # [DataHUB Manual](/docs/DataHUB-Manual/index.html)
 ## [Overview](/docs/DataHUB-Manual/datahub-overview.html)
