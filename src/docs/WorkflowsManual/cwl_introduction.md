@@ -59,3 +59,7 @@ information to be executed. It consists of inputs and outputs.
  - https://github.com/common-workflow-language/
  - https://github.com/common-workflow-lab
  - https://github.com/common-workflow-library
+
+# Image Sources
+
+- https://www.commonwl.org/
