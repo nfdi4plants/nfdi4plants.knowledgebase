@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: "CWL Metadata"
-date: 2024-01-18
+date: 2024-02-05
 add toc: false
 add support: false
 add sidebar: _sidebars/mainSidebar.md
@@ -87,10 +87,10 @@ $schemas:
 ```
 This metadata section provides information about the technology platform and the person executing the workflow. It also provides information about the tool input 
 and output files, as well as the operations that are applied to the data. In this case, everything is encoded in the executed script and there are no variable inputs. 
-Therefore, all metadata is written in the cwl file. An example for this can be found [here](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/ARCMount).
+Therefore, all metadata is written in the CWL file. An example for this can be found [here](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/ARCMount).
 
 Frequently though, tools have input parameters, that alter the tools execution or input and output files. In this case, the metadata has to be written in the right location. For a tool with 
-varying inputs and specifiable output location, this could look as the following for the cwl file:
+varying inputs and specifiable output location, this could look as the following for the CWL file:
 ```yaml
 arc:has technology type:
   - class: arc:technology type

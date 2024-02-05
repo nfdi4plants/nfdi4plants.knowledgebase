@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: "CWL Examples"
-date: 2024-01-18
+date: 2024-02-05
 add toc: false
 add support: false
 add sidebar: _sidebars/mainSidebar.md
@@ -120,7 +120,7 @@ outputs:
       # this returns the whole working directory
       glob: $(runtime.outdir)
 ```
-
+[Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/FixedScript)
 ### Within an ARC with a devcontainer
 
 Within the context of an ARC, researches often work within devcontainers or the ARC environment. CWL is able to replicate 
@@ -131,8 +131,8 @@ into the working directory of the CWL process.
 cwlVersion: v1.2
 class: CommandLineTool
 hints:
-  DockerRequirement:
-    dockerPull: address/to/my/docker
+    dockerImageId: "devcontainer"
+    dockerFile: {$include: "devcontainer/Dockerfile"}
 requirements:
   - class: InitialWorkDirRequirement
     listing:
@@ -160,7 +160,11 @@ outputs:
       # this returns the whole working directory
       glob: $(runtime.outdir)
 ```
+The Dockerfile should only include operations that reference resources that are available online or within the baseimage. COPY operations that point to local files for 
+example won't work in the context of CWL. If they are necessary for the execution in the devcontainer context (e.g. configuration for editors), but not the execution of the script, they 
+can be prefixed with a `*` to make the execution of the operation optional.
 
+[Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/Devcontainer)
 ## Workflows
 
 Workflows can connect multiple command line tools, for example. It is possible to use the output of a 
