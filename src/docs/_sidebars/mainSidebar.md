@@ -87,7 +87,7 @@
 ### [Contribute Templates](/docs/guides/swate_template-contribution.html)
 ### [ISA-JSON](/docs/SwateManual/Docs06-ISA-JSON.html)
 
-# [Workflows Manual](/docs/SwateManual/index.html)
+# [Workflows Manual](/docs/WorkflowsManual/index.html)
 ## [CWL Introduction](/docs/WorkflowsManual/cwl_introduction.html)
 ## [CWL runner installation](/docs/WorkflowsManual/cwl_runner_installation.html)
 ## [CWL Examples](/docs/WorkflowsManual/cwl_examples.html)
