@@ -16,7 +16,7 @@ Welcome to the ARCitect Manual.
 
 Please explore the sections on the left to find guides on
 
-- Installation ([Windows](./arcitect_installation_windows.html), [macOS](./arcitect_installation_macos.html), [Linux](./arcitect_installation_Linux.html)) to use the ARCitect
+- Installation ([Windows](./arcitect_installation_windows.html), [macOS](./arcitect_installation_macos.html), [Linux](./arcitect_installation_linux.html)) to use the ARCitect
 - A [quickstart](./../guides/arcitect_QuickStart.html) to learn major ARCitect functions
 
 :bulb: After installation, please check the ARCitect's help menu for further documentation and guides.
