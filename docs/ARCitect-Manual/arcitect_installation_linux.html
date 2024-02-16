@@ -581,7 +581,10 @@
 <ol>
 <li>Head to the ARCitect's GitHub <a href="https://github.com/nfdi4plants/ARCitect/releases/latest" target="_blank">release page</a>.</li>
 <li>Download the Linux AppImage ARCitect-x.x.x.AppImage</li>
+<li>(optional) If you run Ubuntu 22.04 you need to download an additional library. Ubuntu 22.04 can't run AppImage files without the not natively installed FUSE library. To fix this, install the necessary library. To do this you need root permissions.</li>
 </ol>
+<nfdi-code>sudo apt install libfuse2
+</nfdi-code>
 <nfdi-h3 id="make-the-arcitect-executable">Make the ARCitect executable</nfdi-h3>
 <nfdi-h4 id="a-with-the-user-interface">(A) with the user interface</nfdi-h4>
 <ul>
