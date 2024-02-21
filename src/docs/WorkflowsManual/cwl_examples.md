@@ -121,28 +121,33 @@ outputs:
       glob: $(runtime.outdir)
 ```
 [Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/FixedScript)
-### Within an ARC with a devcontainer
 
-Within the context of an ARC, researches often work within devcontainers or the ARC environment. CWL is able to replicate 
-this workflow under the premise, that in the end everything can be executed in one go. The entire arc directory can be mounted 
-into the working directory of the CWL process.
+### With a fixed script in a mounted arc
+
+When scripting, it is convenient to work within the environment of the ARC (e.g. location of files, writing results in the runs 
+folder and so on). When the ARC is mounted within the CWL process, the script can be ran in that environment and the corresponding runs folder 
+is then returned as an output.
 
 ```yaml
 cwlVersion: v1.2
 class: CommandLineTool
 hints:
-    dockerImageId: "devcontainer"
-    dockerFile: {$include: "devcontainer/Dockerfile"}
+  DockerRequirement:
+    dockerPull: address/to/my/docker
 requirements:
   - class: InitialWorkDirRequirement
     listing:
-      - entryname: myAnalysis.script
-        entry:
-          $include: myAnalysis.script
+      # this specifies the name of the root folder
+      - entryname: arc
+        entry: $(inputs.arcDirectory)
+        writable: true
   - class: NetworkAccess
     networkAccess: true
-baseCommand: [run, myAnalysis.script]
+baseCommand: [run, ./arc/workflows/myWorkflow/myAnalysis.script]
 inputs:
+  # the arc root directory is given as an input, but not called by the process
+  arcDirectory:
+    type: Directory
   input1:
     type: File
     inputBinding:
@@ -157,8 +162,52 @@ outputs:
   myOutput:
     type: Directory
     outputBinding:
-      # this returns the whole working directory
-      glob: $(runtime.outdir)
+      glob: "./arc/runs/myRun"
+```
+
+[Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/ARCMount)
+### Within an ARC with a devcontainer
+
+Within the context of an ARC, researches often work within devcontainers or the ARC environment. CWL is able to replicate 
+this workflow under the premise, that in the end everything can be executed in one go by including the Dockerfile of the devcontainer. 
+The entire arc directory can be mounted into the working directory of the CWL process as well, making the script for the devcontainer 
+and CWL process identical. This enables explorative work in scripts which can then be executed with CWL after completion without much overhead.
+
+```yaml
+cwlVersion: v1.2
+class: CommandLineTool
+hints:
+    dockerImageId: "devcontainer"
+    dockerFile: {$include: "devcontainer/Dockerfile"}
+requirements:
+  - class: InitialWorkDirRequirement
+    listing:
+      # this specifies the name of the root folder
+      - entryname: arc
+        entry: $(inputs.arcDirectory)
+        writable: true
+  - class: NetworkAccess
+    networkAccess: true
+baseCommand: [run, ./arc/workflows/myWorkflow/myAnalysis.script]
+inputs:
+  # the arc root directory is given as an input, but not called by the process
+  arcDirectory:
+    type: Directory
+  input1:
+    type: File
+    inputBinding:
+      position: 1
+  input2:
+    type: Directory
+    inputBinding:
+      position: 2
+      # prefix is optional
+      prefix: -i
+outputs:
+  myOutput:
+    type: Directory
+    outputBinding:
+      glob: "./arc/runs/myRun"
 ```
 The Dockerfile should only include operations that reference resources that are available online or within the baseimage. COPY operations that point to local files for 
 example won't work in the context of CWL. If they are necessary for the execution in the devcontainer context (e.g. configuration for editors), but not the execution of the script, they 
