@@ -604,10 +604,21 @@ reference implementation for cwl-runners.</p>
 <ul>
 <li>Run <code>sudo apt-get update</code></li>
 <li>Install Python 3 if it is not already preinstalled <code>sudo apt install python3</code></li>
-<li>Install python virtual environment <code>sudo apt install python3.8-venv</code></li>
+<li>Install python virtual environment <code>sudo apt install python3.[your version here]-venv</code></li>
 <li>Create a virtual environment <code>python3 -m venv env</code> (named env here, name can vary)</li>
 <li>Activate the virtual environment <code>source env/bin/activate</code></li>
 <li>Install the cwltool with pip <code>pip install cwltool</code></li>
+</ul>
+<nfdi-h2 id="cwltool-usage">cwltool usage</nfdi-h2>
+<ul>
+<li>If you are on Windows, start the WSL</li>
+<li>Activate the virtual environment <code>source env/bin/activate</code></li>
+<li>Navigate to the results destination directory</li>
+<li>Run the cwltool with the cwl file and the job file <code>cwltool uri/to/cwlfile.cwl uri/to/jobfile.yml</code>
+<ul>
+<li>Important: cwltool requires <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier">URIs</a> for the input files</li>
+</ul>
+</li>
 </ul>
 
       <div style="display: flex; align-items: flex-end; justify-content: space-between; margin: 1rem 0 1rem 0;">
