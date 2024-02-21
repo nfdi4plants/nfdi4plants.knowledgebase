@@ -37,7 +37,15 @@ The installation can be done following the guide [here](https://github.com/commo
  
  - Run `sudo apt-get update`
  - Install Python 3 if it is not already preinstalled `sudo apt install python3`
- - Install python virtual environment `sudo apt install python3.8-venv`
+ - Install python virtual environment `sudo apt install python3.[your version here]-venv`
  - Create a virtual environment `python3 -m venv env` (named env here, name can vary)
  - Activate the virtual environment `source env/bin/activate`
  - Install the cwltool with pip `pip install cwltool`
+
+ ## cwltool usage
+ 
+ - If you are on Windows, start the WSL
+ - Activate the virtual environment `source env/bin/activate`
+ - Navigate to the results destination directory
+ - Run the cwltool with the cwl file and the job file `cwltool uri/to/cwlfile.cwl uri/to/jobfile.yml`
+   - Important: cwltool requires [URIs](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) for the input files 
