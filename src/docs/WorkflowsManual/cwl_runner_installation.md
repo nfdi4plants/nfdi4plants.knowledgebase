@@ -47,5 +47,5 @@ The installation can be done following the guide [here](https://github.com/commo
  - If you are on Windows, start the WSL
  - Activate the virtual environment `source env/bin/activate`
  - Navigate to the results destination directory
- - Run the cwltool with the cwl file and the job file `cwltool uri/to/cwlfile.cwl uri/to/jobfile.yml`
-   - Important: cwltool requires [URIs](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) for the input files 
+ - Run the cwltool with the cwl file and the job file `cwltool file:///full/path/to/cwlfile.cwl file:///full/path/to/jobfile.yml`
+   - Important: cwltool requires [URIs](https://en.wikipedia.org/wiki/File_URI_scheme) for the input files 
