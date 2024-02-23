@@ -19,9 +19,9 @@ This page primarily addresses ARC users in Düsseldorf, Cologne and close by (CE
 
 ## Support chat
 
-The easiest way to directly contact us for data stewardship is via our slack workspace: [arc-user-support.slack.com](https://join.slack.com/t/arc-user-suppport/shared_invite/zt-2cadwq8cx-azPsJhUF8m0ukXsrstNc0A).
+The easiest way to directly contact us for data stewardship is via our slack workspace: [arc-user-support.slack.com](https://join.slack.com/t/arc-user-support/shared_invite/zt-2d515orv8-TEEPkZ2Ka~aA0W8Z15UmAg).
 
-There we try to quickly answer questions and keep you up-to-date with latest developments. Feel free to [join the workspace](https://join.slack.com/t/arc-user-suppport/shared_invite/zt-2cadwq8cx-azPsJhUF8m0ukXsrstNc0A), discuss with us, raise questions and topics for upcoming user meetings.
+There we try to quickly answer questions and keep you up-to-date with latest developments. Feel free to [join the workspace](https://join.slack.com/t/arc-user-support/shared_invite/zt-2d515orv8-TEEPkZ2Ka~aA0W8Z15UmAg), discuss with us, raise questions and topics for upcoming user meetings.
 
 ## Monthly user meeting
 
