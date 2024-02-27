@@ -7,15 +7,21 @@ add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
+
 <!-- Check site locally at http://127.0.0.1:8080/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-support.html -->
 
 This page primarily addresses ARC users in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TRR341).
+
+<img style="height:50px; margin:10px" src='../../../img/logos/CEPLAS/CEPLAS_Icon.jpeg'/>
+<img style="height:50px; margin:10px" src='https://www.sfb1535.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Biologie/SFB1535/Bilder/MibiNet.png'/>
+<img style="height:50px; margin:10px" src='https://trr341.uni-koeln.de/sites/crc_trr_341/TRR341_logo.png'/>
 
 ## Data management contacts
 
 - Dominik Brilhaus ([CEPLAS](https://www.ceplas.eu/en/research/data-science-and-data-management))
 - Sabrina Zander ([MibiNet](https://www.sfb1535.hhu.de/projects/research-area-z/z03))
 - Eik Dahms ([TRR341](https://trr341.uni-koeln.de/projects/data-management-z3))
+
 
 ## Support chat
 
