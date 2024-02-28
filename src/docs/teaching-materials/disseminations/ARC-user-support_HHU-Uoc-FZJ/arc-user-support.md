@@ -21,6 +21,7 @@ This page primarily addresses ARC users in Düsseldorf, Cologne, Jülich and clo
 - Dominik Brilhaus ([CEPLAS](https://www.ceplas.eu/en/research/data-science-and-data-management))
 - Sabrina Zander ([MibiNet](https://www.sfb1535.hhu.de/projects/research-area-z/z03))
 - Eik Dahms ([TRR341](https://trr341.uni-koeln.de/projects/data-management-z3))
+- Stella Eggels, Angela Kranz ([FZJ](https://www.fz-juelich.de/en/ibg/ibg-4/research/research-projects/projects-usadel-group/dataplant-1))
 
 
 ## Support chat
