@@ -136,13 +136,18 @@ If this does not do the trick, please follow these steps towards debugging (on W
 Why do I get the error `ERROR: GIT: fatal: detected dubious ownership`?
 </summary>
 <br>
-Possible reasons:
 
-- You tried to work on an ARC that belongs to another person, e.g. another user account on the same computer or in the same file share - or vice versa.
-- This issues might occur when working on a network drive (Fileshare, File Server, NAS) that has been mounted by another user account.
+This error occurs when working on a mounted network drive (Fileshare, File Server, NAS). Very simplified: the user on the computer and the owner of the network drive differ and git tries to safe you from working in a folder you do not own. 
 
-:bulb: We need more info to learn what causes this issue. Please let us know, if you run into that error! 
-<br>
+You can circumvent this error by adding **all directories** to your list of safe directories via the following command: 
+
+```bash
+git config --global --add safe.directory *
+```
+
+This might however pose a safety risk. Please read the details here: https://www.git-scm.com/docs/git-config#Documentation/git-config.txt-safedirectory
+
+
 </details>
 
 <details><summary><span style="color: #1fc2a7">

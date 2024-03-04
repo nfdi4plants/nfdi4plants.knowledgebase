@@ -99,13 +99,13 @@ Some relevant ontology search services for plant sciences are:
 - [TIB Terminology Service](https://terminology.tib.eu/ts)
 
 ## Ontologies included in the SwateDB
-Plant investigations are often complex, incorporating a diverse range of methods and techniques. For this reason, it will often be necessary to use terms from a variety of ontologies when annotating metadata for a plant experiment, as illustrated in the figure below. The review by [Dumschott et al. 2023](https://doi.org/10.48550/arXiv.2309.07129) provides an overview of relevant ontologies and their application for metadata annotation in the field of plant sciences. 
+Plant investigations are often complex, incorporating a diverse range of methods and techniques. For this reason, it will often be necessary to use terms from a variety of ontologies when annotating metadata for a plant experiment, as illustrated in the figure below. The review by [Dumschott et al. 2023](https://doi.org/10.3389/fpls.2023.1279694) provides an overview of relevant ontologies and their application for metadata annotation in the field of plant sciences. 
 </br>
 
 ![Alt-Text](./../img/Ontology_landscape_Fig4.png)
 </br>
 
-*Figure from [Dumschott et al. 2023](https://doi.org/10.48550/arXiv.2309.07129), depicting how ontologies are used to annotate different aspects of an investigation.*
+*Figure from [Dumschott et al. 2023](https://doi.org/10.3389/fpls.2023.1279694), depicting how ontologies are used to annotate different aspects of an investigation.*
 </br>
 
 The ontologies in the SwateDB can be categorized into general scientific ontologies and plant-specific ontologies. General scientific ontologies are those that can be applied to the broader scientific domain and not just to a specific field of research such as plant sciences. They include upper-level ontologies (foundational frameworks for other ontologies to build upon in order to increase their interoperability) and ontologies that focus on a specific domain, such as environmental conditions, traits and phenotypes of organisms, or experimental methods and setups. Several ontologies are particularly well-suited for describing and annotating experiments, phenotypic traits, structures and experimental conditions relating to plant research, which we categorize as plant-specific ontologies.

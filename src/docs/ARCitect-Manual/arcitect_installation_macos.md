@@ -11,12 +11,6 @@ add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-## Install Git
-
-Please install <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.github.com/" target="_blank">Git LFS</a> before using the ARCitect.
-
-:bulb: For macOS we recommend to install via homebrew as described on the site above.
-
 ## Install ARCitect via installer
 
 1. Head to the ARCitect's GitHub <a href="https://github.com/nfdi4plants/ARCitect/releases/latest" target="_blank">release page</a>.
@@ -49,7 +43,13 @@ This enables communication with the DataHUB.
 <details>
 <summary>install ARCitect from source</summary>
 
-Installation from source requires Node.js
+Installation from source requires Git, Git LFS and Node.js
+
+## Install Git and Git LFS
+
+Please install <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.github.com/" target="_blank">Git LFS</a> before using the ARCitect.
+
+:bulb: For macOS we recommend to install via homebrew as described on the site above.
 
 ### Install Node.js
 

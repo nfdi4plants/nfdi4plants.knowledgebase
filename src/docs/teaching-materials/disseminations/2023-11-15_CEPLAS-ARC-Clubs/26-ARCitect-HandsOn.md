@@ -25,9 +25,9 @@ author:
 
 # ARCitect installation
 
-Please install version **v0.0.10** of the ARCitect: https://github.com/nfdi4plants/ARCitect/releases/tag/v0.0.10
+Please install version **v0.0.21** (or later) of the ARCitect: https://github.com/nfdi4plants/ARCitect/releases/tag/v0.0.21
 
-:fire: (released September 20th, 2023) :fire:
+:fire: (released November 23rd, 2023) :fire:
 
 ---
 
@@ -185,16 +185,6 @@ In the file tree you can
 💡 protocols can directly be imported via ARCitect
 
 💡 to add multiple datasets folders, they have to be added manually via file browser
-
----
-
-# Login to the DataHUB
-
-Click **Login** (1) in the sidebar to login to the DataHUB.
-
-:bulb: This automatically opens your browser at the DataHUB (https://git.nfdi4plants.org) and asks you to login, if you are not already logged in. 
-
-![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
 
 ---
 

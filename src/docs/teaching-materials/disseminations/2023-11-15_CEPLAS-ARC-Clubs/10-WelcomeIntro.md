@@ -18,10 +18,20 @@ author:
 
 <br>
 
-November 22<sup>nd</sup>, 2023
+December 7<sup>th</sup>, 2023
 Dominik Brilhaus, CEPLAS Data Science
 
 ![bg fit](./../../../img/background_title_ceplas.drawio.svg)
+
+---
+
+# House-keeping
+
+Pad: https://pad.hhu.de/lhxZ_1GCRAa9ROHmj0zuYQ
+
+- take notes
+- ask questions
+- copy / paste links, etc.
 
 ---
 
@@ -33,16 +43,6 @@ Dominik Brilhaus, CEPLAS Data Science
 - Used code / programming language before
 - Have an ORCID
 - My motivation / expectation
-
----
-
-# House-keeping
-
-Pad: https://pad.hhu.de/OIn_kTxmQEyuYQyjuHy-CQ
-
-- take notes
-- ask questions
-- copy / paste links, etc.
 
 ---
 
@@ -98,14 +98,7 @@ Slides will be shared via DataPLANT knowledge base
 
 ---
 
-# The ARC Club &ndash; Rules
-
-1. You do not talk about **ARC Club**
-2. You **do not** talk about **ARC Club**
-
----
-
-# Rules: perfect is the enemy of good
+# Perfect is the enemy of good
 
 - There is no perfect ARC
 - There is no complete ARC

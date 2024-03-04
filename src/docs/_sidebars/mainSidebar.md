@@ -61,6 +61,10 @@
 ## [Installation - Linux](/docs/ARCitect-Manual/arcitect_installation_linux.html)
 ## [QuickStart](/docs/guides/arcitect_QuickStart.html)
 
+# [ARCmanager Manual](/docs/ARCmanager-manual/index.html)
+## [What is the ARCmanager?](/docs/ARCmanager-manual/intro.html)
+## [How to use the ARCmanager](/docs/ARCmanager-manual/how_to.html)
+
 # [Swate Manual](/docs/SwateManual/index.html)
 ## [Swate Installation](/docs/SwateManual/Docs01-Installing-Swate.html)
 ### [Excel Browser](/docs/SwateManual/swate_installation_browser.html)
@@ -83,6 +87,12 @@
 ### [Contribute Templates](/docs/guides/swate_template-contribution.html)
 ### [ISA-JSON](/docs/SwateManual/Docs06-ISA-JSON.html)
 
+# [Workflows Manual](/docs/WorkflowsManual/index.html)
+## [CWL Introduction](/docs/WorkflowsManual/cwl_introduction.html)
+## [CWL runner installation](/docs/WorkflowsManual/cwl_runner_installation.html)
+## [CWL Examples](/docs/WorkflowsManual/cwl_examples.html)
+## [CWL Metadata](/docs/WorkflowsManual/cwl_metadata.html)
+
 # [DataHUB Manual](/docs/DataHUB-Manual/index.html)
 ## [Overview](/docs/DataHUB-Manual/datahub-overview.html)
 ## [User Settings](/docs/DataHUB-Manual/datahub-userSettings.html)
@@ -101,6 +111,8 @@
 ### [Track publication status](/docs/DataHUB-Manual/datahub-data-publications-status.html)
 ### [Use your DOIs](/docs/DataHUB-Manual/datahub-data-publications-dois.html)
 
+<!-- ## [ARCfs Usage](/docs/ARCfs/ARCfs.html) -->
+
 # [Guides](/docs/guides/index.html)
 ## [ARC User Journey](/docs/guides/ARCUserJourney.html)
 ## [Create your ARC](/docs/guides/index-CreateYourARC.html)
@@ -116,7 +128,11 @@
 
 ## [Share your ARC](/docs/guides/index-ShareYourARC.html)
 ### [Register at the DataHUB](/docs/guides/datahub_register.html)
+### [DataPLANT account](/docs/guides/datahub_account.html)
 ### [Invite collaborators to your ARC](/docs/guides/datahub_InviteCollaborators.html)
+
+## [Work with your ARC](/docs/guides/index-WorkWithYourARC.html)
+### [Using ARCs with Galaxy](/docs/guides/ARCs-galaxy.html)
 
 ## [Recommended ARC practices](/docs/guides/index-RecommendedARCPractices.html)
 ### [Syncing recommendation](/docs/guides/arc_SyncingRecommendation.html)
