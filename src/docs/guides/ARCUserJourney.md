@@ -33,7 +33,7 @@ To answer this question, we will first take a look back at Viola's [metadata][kb
 
 > Viola investigates the effect of the plant circadian clock on sugar metabolism in *W. mirabilis*. For her PhD project, which is part of an EU-funded consortium in Prof. Beetroot's lab, she acquires seeds from a South-African Botanical Society. Viola grows the plants under different light regimes, harvests leaves from a two-day time series experiment, extracts polar metabolites as well as RNA and submits the samples to nearby core facilities for metabolomics and transcriptomics measurements, respectively. After a few weeks of iterative consultation with the facilities' heads as well as technicians and computational biologists involved, Viola receives back a wealth of raw and processed data. From the data she produces figures and wraps everything up to publish the results in the *Journal of Wonderful Plant Sciences*.
 
-The entire information given in this example can be stored within an ARC. To illustrate the [ARC specifications][gh-ArcSpecs], we will highlight and explain every (sub)directory and ISA-file of the ARC with references to Viola's example.
+The entire information given in this example can be stored within an ARC. To illustrate the [ARC specifications][kb-ArcSpecs], we will highlight and explain every (sub)directory and ISA-file of the ARC with references to Viola's example.
 
 ## isa.investigation.xlsx
 
@@ -102,4 +102,4 @@ We hope that these examples nicely illustrated the ARC structure and that you ar
 [kb-ArcCommander]: ../implementation/ArcCommander.html "DataPLANT ARC Commander"
 [kb-swate_QuickStart]: ../tutorials/swate_QuickStart.html "Quickstart Swate"
 [kb-arcCommander_QuickStart]: ../tutorials/arcCommander_QuickStart.html "QuickStart ARC Commander"
-[gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
+[kb-ArcSpecs]: ./../implementation/ARC-specification.html "ARC specification"

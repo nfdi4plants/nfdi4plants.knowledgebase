@@ -1,0 +1,26 @@
+# Plant Material and Growth Conditions
+
+### Plants
+  - Species: Arabidopsis thaliana
+  - Tissue: leaves
+
+### Drought treatment
+
+  - no water for 12 days
+  - re-water for 2 days
+
+Sampling:
+  - Leaves: topmost mature unshaded leaves, ca. 3–4.5 cm (see pictures)
+  - shock-frozen in liquid N2
+
+## drought samples
+
+Sample001
+Sample002
+Sample003
+
+## watered samples
+
+Sample004
+Sample005
+Sample006

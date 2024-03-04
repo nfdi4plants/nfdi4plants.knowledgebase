@@ -1,0 +1,133 @@
+{
+    "characteristicCategories": [],
+    "processSequence": [
+        {
+            "name": "Sheet1_0",
+            "executesProtocol": {
+                "name": "Sheet1",
+                "parameters": [
+                    {
+                        "parameterName": {
+                            "annotationValue": "light intensity exposure",
+                            "termSource": "PECO",
+                            "termAccession": "http://purl.obolibrary.org/obo/PECO_0007224",
+                            "comments": [
+                                {
+                                    "name": "ValueIndex",
+                                    "value": "0"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "parameterName": {
+                            "annotationValue": "humidity day",
+                            "termSource": "DPBO",
+                            "termAccession": "http://purl.obolibrary.org/obo/DPBO_0000005",
+                            "comments": [
+                                {
+                                    "name": "ValueIndex",
+                                    "value": "1"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "parameterName": {
+                            "annotationValue": "temperature day",
+                            "termSource": "DPBO",
+                            "termAccession": "http://purl.obolibrary.org/obo/DPBO_0000007",
+                            "comments": [
+                                {
+                                    "name": "ValueIndex",
+                                    "value": "2"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "comments": [
+                    {
+                        "name": "RowRange",
+                        "value": "0:0"
+                    }
+                ]
+            },
+            "parameterValues": [
+                {
+                    "category": {
+                        "parameterName": {
+                            "annotationValue": "light intensity exposure",
+                            "termSource": "PECO",
+                            "termAccession": "http://purl.obolibrary.org/obo/PECO_0007224",
+                            "comments": [
+                                {
+                                    "name": "ValueIndex",
+                                    "value": "0"
+                                }
+                            ]
+                        }
+                    },
+                    "value": 200,
+                    "unit": {
+                        "annotationValue": "microeinstein per square meter per second",
+                        "termSource": "UO",
+                        "termAccession": "http://purl.obolibrary.org/obo/UO_0000160"
+                    }
+                },
+                {
+                    "category": {
+                        "parameterName": {
+                            "annotationValue": "humidity day",
+                            "termSource": "DPBO",
+                            "termAccession": "http://purl.obolibrary.org/obo/DPBO_0000005",
+                            "comments": [
+                                {
+                                    "name": "ValueIndex",
+                                    "value": "1"
+                                }
+                            ]
+                        }
+                    },
+                    "value": 60,
+                    "unit": {
+                        "annotationValue": "percent",
+                        "termSource": "UO",
+                        "termAccession": "http://purl.obolibrary.org/obo/UO_0000187"
+                    }
+                },
+                {
+                    "category": {
+                        "parameterName": {
+                            "annotationValue": "temperature day",
+                            "termSource": "DPBO",
+                            "termAccession": "http://purl.obolibrary.org/obo/DPBO_0000007",
+                            "comments": [
+                                {
+                                    "name": "ValueIndex",
+                                    "value": "2"
+                                }
+                            ]
+                        }
+                    },
+                    "value": 21,
+                    "unit": {
+                        "annotationValue": "degree celsius",
+                        "termSource": "UO",
+                        "termAccession": "http://purl.obolibrary.org/obo/UO_0000027"
+                    }
+                }
+            ],
+            "inputs": [
+                {}
+            ],
+            "outputs": [
+                {
+                    "derivesFrom": [
+                        {}
+                    ]
+                }
+            ]
+        }
+    ]
+}

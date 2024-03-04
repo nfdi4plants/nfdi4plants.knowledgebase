@@ -17,5 +17,3 @@ Please explore the sections on the left to find guides on
 - Installation of Swate,
 - Swate Core Features and how to use them, and
 - Swate Expert Features (for Data Stewards).
-
-> **Developers**, please check out the [Swate Dev Docs](https://nfdi4plants.github.io/Swate-docs/).

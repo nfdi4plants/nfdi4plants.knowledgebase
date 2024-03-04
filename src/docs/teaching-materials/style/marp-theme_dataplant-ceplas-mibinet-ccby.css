@@ -1,0 +1,12 @@
+/* @theme marp-theme_dataplant-ceplas-mibinet-ccby */
+
+@import 'default';
+@import 'dataplant_marp-theme';
+
+section {    
+  background: url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/45bdd7650da78e918346f7e5a168e34200d380ce/src/docs/img/logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"), url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/main/src/docs/img/logos/CEPLAS/CEPLAS_Icon.jpeg"), url("https://www.sfb1535.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Biologie/SFB1535/Bilder/MibiNet.png"), url("https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg");
+  background-repeat: no-repeat;
+  background-size: 3%, 2%, 4%, 5%;
+  background-position: 2% 99%, 6.5% 99%, 10% 99%, 15% 99%;
+  background-color: white;
+}

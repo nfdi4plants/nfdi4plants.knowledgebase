@@ -184,7 +184,8 @@ arc config setgituser
 You can invite lab-colleagues or project partners to join your ARC for collaboration. While inside your ARC on the DataHUB, click on *Project information -\> Members* in the left navigation panel. Search for registered researchers and select a role for each individually. These roles come along with different rights.  
 Briefly:
 
-- *Guests:* Have the least rights. This is recommended for people you ask for consultancy.
+- *Guests:* Have the least rights. They will not be able to see the content of your ARC (only the wiki page).
+- *Reporters*: Have read access to your ARC. This is recommended for people you ask for consultancy.
 - *Developers:* The choice for most people you want to invite to your ARC. Developers have read and write access, but cannot maintain the project on the DataHUB, e.g. inviting others.  
 - *Maintainers:* Gives the person the same rights as you have (except of removing you from your own project). This is recommended for inviting PIs or group leaders allowing them to add their group members for data upload or analysis to the project as well.
 

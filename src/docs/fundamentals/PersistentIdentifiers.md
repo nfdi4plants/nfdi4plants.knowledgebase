@@ -99,7 +99,7 @@ Name | Type | Tasks on metadata
 <!-- Links to DataPLANT GitHub (gh-) -->
 
 [gh-DataPlant]: <https://github.com/nfdi4plants/ARC-specification/> "GitHub DataPLANT"
-[gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
+[kb-ArcSpecs]: ./../implementation/ARC-specification.html "ARC specification"
 [kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 
 [PURLs]: https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator "Wikipedia PURLs"

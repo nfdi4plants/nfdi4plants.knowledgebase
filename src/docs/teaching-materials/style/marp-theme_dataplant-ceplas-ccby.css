@@ -1,63 +1,12 @@
 /* @theme marp-theme_dataplant-ceplas-ccby */
 
 @import 'default';
-
-/* @import url('./../../../style/style.css'); */
+@import 'dataplant_marp-theme';
 
 section {    
-  background: url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/5dba3b88b4f9eada59064a5eed60b5a9dca21ef9/src/docs/img/_logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"), url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/main/src/docs/img/_logos/CEPLAS/CEPLAS_Icon.jpeg"), url("https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg");
+  background: url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/45bdd7650da78e918346f7e5a168e34200d380ce/src/docs/img/logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"), url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/main/src/docs/img/logos/CEPLAS/CEPLAS_Icon.jpeg"), url("https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg");
   background-repeat: no-repeat;
   background-size: 3%, 2%, 5%;
   background-position: 2% 99%, 7% 99%, 11% 99%;
   background-color: white;
-  font-size: 30px;
-  font-family: Calibri, sans-serif;
-  color: #2D3E50;
-}
-
-header {
-  top: 30px;
-  height: 60px;
-}
-
-footer {
-  height: 60px;
-  padding: 10px;
-  bottom: 00px;
-}
-
-h1 {
-  font-size: 50px;
-  font-family: Calibri, sans-serif;
-  color: #2D3E50;
-}
-
-h2 {
-  font-size: 40px;
-  font-family: Calibri, sans-serif;
-  color: #2D3E50;  
-}
-
-code {
-  /* font-size: 20px; */
-  /* color: #c21f3a; */
-}
-
-
-/* Center images in the main section ("block") */
-
-section p img {
-  display: block;
-  margin: 0px auto 0px auto;  /* top right bottom left*/ 
-}
-
-img.emoji {
-  display: inline;
-  }
-
-/* Styling page number */
-section::after {
-  font-family: Calibri, sans-serif;
-  font-size: 20px;
-  color: #2D3E50  
 }

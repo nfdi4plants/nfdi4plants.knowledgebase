@@ -1,0 +1,17 @@
+Illumina Library prep
+
+- Kit: TruSeq RNA Sample Prep Kit v2
+
+- Samples and barcodes used
+
+DB_097	CAGATC
+DB_099	CTTGTA
+DB_103	AGTCAA
+DB_161	GTCCGC
+DB_163	GTGAAA
+DB_165	GTGAAA
+
+- Sequencing notes 
+ - multiplexing: 12 libraries pooled
+ - single-end, 150 bp
+ - Illumina HiSeq 2000

@@ -13,4 +13,4 @@ title: lesson_Swate_DataPLANT-Swate_workflow_annotation_tool_for_Excel
 
 # Swate workflow annotation tool for Excel
 
-![](./../../img/_logos/Swate/Swate_logo_for_excel.svg)
+![](./../../img/logos/Swate/Swate_logo_for_excel.svg)

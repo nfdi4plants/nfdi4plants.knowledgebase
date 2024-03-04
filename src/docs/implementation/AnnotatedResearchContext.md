@@ -29,7 +29,7 @@ The ARC concept relies on a structure that partitions studies, assays, workflows
 
 This results in standardized RDM procedures being process-oriented, meaning that each tool realizes or supports the researcher in a distinct task within the RDM cycle. As a consequence, this enables the desired mixed mode of application, in which both human and machine can operate processes simultaneously or asynchronously while avoiding technological barriers.
 
-![ARC](./../img/ARC.jpg)
+![ARC](./../img/ARC_BuildsOnStandards1.png)
 Figure 1: Basic ARC folder structure.
 
 ## Technical implementations
@@ -47,7 +47,7 @@ We highly recommend to include a reproducible execution environment description 
 <!-- TODOs: add link to Docker -->
 Runs in an ARC represent all artefacts that derive from computations on assay and external data. Plots, tables, or similar results, specific to certain runs need to be saved in a subdirectory of the top-level "runs" directory.
 
-Detailed information can be found in the official [ARC Specification][gh-ArcSpecs].
+Detailed information can be found in the official [ARC Specification][kb-ArcSpecs].
 <!-- TODOs:
 - there's quite some redundancy between the previous two paragraphs
  -->
@@ -117,7 +117,7 @@ Name | Type | Tasks on metadata
 
 <!-- DataPLANT web links -->
 
-[gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
+[kb-ArcSpecs]: ./../implementation/ARC-specification.html "ARC specification"
 [kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
 

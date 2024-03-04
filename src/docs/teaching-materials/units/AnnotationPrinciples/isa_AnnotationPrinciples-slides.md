@@ -26,7 +26,7 @@ section, p, h1{
 
 h1 {
     display: block;
-    font-size: 32px;
+    font-size: 42px;
     margin-top: 0px;
     padding-top: 0px;
 }
@@ -165,6 +165,4 @@ The value of this column must be a unique identifier.
 
 
 <img src="./../../../img/AnnotationPrinciples/Output.svg">
-
-
  

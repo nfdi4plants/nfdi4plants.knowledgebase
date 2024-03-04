@@ -16,7 +16,7 @@ title: tutorial_arc_sync-title
 
 # ARC synchronization
 
-![bg right w:500](./../../img/_logos/ARCCommander/ARCCommander_Logo1.svg)
+![bg right w:500](./../../img/logos/ARCCommander/ARCCommander_Logo1.svg)
 
 # ARC synchronization
 

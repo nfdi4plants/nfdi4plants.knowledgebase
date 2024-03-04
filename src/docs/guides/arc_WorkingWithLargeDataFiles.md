@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Working with large data files
-published: 2023-06-28
+date: 2023-12-05
 author:
 - name: Dominik Brilhaus
   orcid: https://orcid.org/0000-0001-9021-3197
@@ -13,19 +13,17 @@ add sidebar: _sidebars/mainSidebar.md
 
 ## About this guide
 
-In this guide we show you how you can actively handle large data files in your ARC. 
+In this guide we show you how you can actively handle large data files in your ARC using **[ARC Commander](./../implementation/ArcCommander.html)**.
+
+:bulb: If you use **[ARCitect](./../ARCitect-Manual/index.html)** to manage your ARCs, make sure to select or unselect the boxes `LFS` (in the "Download ARC" panel) or `Download LFS Files` (in the "Versions" panel) in order to allow or prevent syncing large files (LFS = large file storage).
 
 <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>    
+    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
 </a>
 
 <br>
 <br>
-
-
-:warning:
-This guide presents an interim solution. We are working on a more user-friendly implementation.
 
 ## Before we can start
 
@@ -33,7 +31,6 @@ This guide presents an interim solution. We are working on a more user-friendly 
 :ballot_box_with_check: The latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) is installed on your computer  
 :ballot_box_with_check: You have a [DataPLANT](https://register.nfdi4plants.org) account  
 :ballot_box_with_check: Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via personal access token
-
 
 ## Large File Storage (LFS)
 
@@ -43,10 +40,10 @@ By default, the ARC Commander tracks the following files via LFS:
   1. All files stored in an assay's `dataset` folder, and
   2. All files with a size larger than 150 MB. 
 
-The threshold of 150 MB can easily be adjusted using the ARC Commander. For instance, if you want to increase it to 250 MB (i.e. 250000000 bytes), run
+The threshold of 150 MB can easily be adjusted using the ARC Commander. For instance, if you want to decrease it to 5 MB (i.e. 5000000 bytes), run
 
 ```bash
-arc config set -g -n "general.gitlfsbytethreshold" -v "250000000"
+arc config set -g -n "general.gitlfsbytethreshold" -v "5000000"
 ```
 
 :bulb: The LFS system is also the reason why [git LFS](https://git-lfs.github.com/) needs to be installed prior to using the ARC Commander. 
@@ -72,30 +69,17 @@ git add .gitattributes
 Sometimes you may want to download your ARC to a smaller computer, where you do not need a full copy of your ARC including all its large data files. For instance, you just want to work with smaller derived data sets or want to update ISA metadata. 
 In this case, you can add the `-n` or `--nolfs` flag to your `arc get` command: 
 
-
 ```bash
 arc get --nolfs -r https://git.nfdi4plants.org/<YourUser>/<YourARC>
 ```
 
-For example, have a look at the example ARC https://git.nfdi4plants.org/brilator/samplearc_rnaseq. 
-In the DataHUB this ARC has a storage volume of ~11GB, a lot of which comes from the [large RNASeq data files](https://git.nfdi4plants.org/brilator/samplearc_rnaseq/-/tree/main/assays/Talinum_RNASeq_minimal/dataset) flagged as "LFS". 
+For example, have a look at the ARC https://git.nfdi4plants.org/shiltemann/physcomitrium-patens-light-signaling-2022/. 
+In the DataHUB this ARC has a storage volume of ~84GB (December 2023), most of which comes from the [large RNASeq data files](https://git.nfdi4plants.org/shiltemann/physcomitrium-patens-light-signaling-2022/-/tree/main/assays/RNASeq/dataset) flagged as "LFS".
 
 You can download this ARC without the LFS objects via
 
 ```bash
-arc get --nolfs -r https://git.nfdi4plants.org/brilator/samplearc_rnaseq
-```
-
-:warning: Even without LFS objects this ARC still takes ~1GB of space.
-
-## Keep LFS objects from syncing
-
-To make sure that also during an upcoming `arc sync`, LFS objects are not downloaded, you need to change the LFS option on that particular machine for this ARC.
-Navigate to your ARC (`samplearc_rnaseq`) and execute the following two commands:
-
-```bash
-git config --local filter.lfs.smudge "git-lfs smudge --skip -- %f"
-git config --local filter.lfs.process "git-lfs filter-process --skip"
+arc get --nolfs -r https://git.nfdi4plants.org/shiltemann/physcomitrium-patens-light-signaling-2022/
 ```
 
 ## Selectively download large files
@@ -105,5 +89,13 @@ If at some point you wish to selectively download one or more of the LFS objects
 For example, the following command will download one of the large RNASeq data files.
 
 ```bash
-git lfs pull --include "assays/Talinum_RNASeq_minimal/dataset/DB_097_CAMMD_CAGATC_L001_R1_001.fastq.gz"
+git lfs pull --include "assays/RNASeq/dataset/R19/R19_1.fq.gz"
+```
+
+## Download all large files in the ARC
+
+If at some point you wish to download **all** LFS files of your ARC, you can use the following command
+
+```bash
+git lfs pull --include "*"
 ```

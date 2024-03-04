@@ -2,16 +2,41 @@
 
 @import 'default';
 
+/* Header section */
+
 header {
   top: 30px;
   height: 60px;
 }
+
+/* Footer section*/
 
 footer {
   height: 60px;
   padding: 10px;
   bottom: 00px;
 }
+
+/* Styling page number */
+section::after {
+  font-family: Calibri, sans-serif;
+  font-size: 20px;
+  color: #2D3E50  
+}
+
+/* add a reference to slide bottom */
+
+.footer-reference {
+  font-size:15px;
+  line-height: 1.2em;
+  position: fixed;
+  left: 50%;
+  bottom: 0px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+/* headings */
 
 h1 {
   font-size: 50px;
@@ -25,31 +50,85 @@ h2 {
   color: #2D3E50;  
 }
 
-code {
-  /* font-size: 20px; */
-  /* color: #c21f3a; */
+/* ul = unordered list (bullet points) */
+
+ul{
+  margin-left: 0px;
+  padding-left: 5;
 }
+
+/* Section is the main body of the slide */
 
 section {
   font-size: 30px;
   font-family: Calibri, sans-serif;
   color: #2D3E50;
-  /* padding: 40px; */
+  background: url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/45bdd7650da78e918346f7e5a168e34200d380ce/src/docs/img/logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"), url("https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg");
+  background-repeat: no-repeat;
+  background-size: 3%, 5%;
+  background-position: 2% 99%, 6% 99%;
+  background-color: white;
 }
 
-/* Center images in the main section ("block") */
+
+/* Center images in section ("block") */
 
 section p img {
   display: block;
   margin: 0px auto 0px auto;  /* top right bottom left*/ 
 }
+
+/* Display emojis inline  (instead of on their own line as an image) */
+
 img.emoji {
   display: inline;
   }
 
-/* Styling page number */
-section::after {
-  font-family: Calibri, sans-serif;
-  font-size: 20px;
-  color: #2D3E50  
+/* Add columns - useful in sections, e.g. picture left, text right */
+
+.three-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1em;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1em;
+}
+
+/* highlight words as keyboard keys */
+
+kbd {
+  padding:0.1em 0.6em;
+  border:1px solid #ccc;
+  font-size:0.75em;
+  font-family:Arial,Helvetica,sans-serif;
+  background-color:#f7f7f7;
+  color:#333;
+  -moz-box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+  -webkit-box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+  box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  display:inline-block;
+  margin:0 0.1em;
+  text-shadow:0 1px 0 #fff;
+  line-height:1.4;
+  white-space:nowrap;
+}
+
+/* Can be used to add e.g. faces to title slide  */
+
+.profile-picture {
+  position:relative;
+  overflow:hidden;
+  border-radius: 50%;
+  border-color: black;
+  height: 75px;
+  width: 75px;
+  margin: 10px;
+  display: block;  
 }

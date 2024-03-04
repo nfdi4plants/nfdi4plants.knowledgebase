@@ -13,4 +13,4 @@ title: tutorial_swate_firstSteps-First_steps
 
 # First steps
 
-![](./../../img/_logos/Swate/Swate_logo_for_excel.svg)
+![](./../../img/logos/Swate/Swate_logo_for_excel.svg)

@@ -45,5 +45,5 @@ https://www.nfdi4plants.org/
 <br>
 <br>
 
-![](./../../img/_qr-codes/QR_DataPLANT_Linktree.svg)
+![](./../../img/qr-codes/QR_DataPLANT_Linktree.svg)
 </div>
