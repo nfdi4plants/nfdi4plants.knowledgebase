@@ -11,7 +11,7 @@ add support: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-<!-- Check site locally at http://127.0.0.1:8080/docs/guides/arc-sharing.html -->
+<!-- Check site locally at http://127.0.0.1:8080/docs/guides/datahub-arc-sharing.html -->
 
 ## About this guide
 
@@ -27,11 +27,48 @@ In this guide we explain the different ways offered by the DataHUB to share an A
 ## Before we can start
 
 :ballot_box_with_check: You have a [DataPLANT](https://register.nfdi4plants.org) account  
-:bulb: [DataHUB manual](./../DataHUB-Manual/index.html)
+:bulb: See the [DataHUB manual](./../DataHUB-Manual/index.html) for tutorials
 
 ## Multiple ways to share an ARC via the DataHUB
 
+To suit a wide range of collaborative scenarios, the DataHUB offers multiple, flexible ways of sharing an ARC.
+This flexibility can be confusing at first. 
+The figure below is supposed to give a quick overview. 
+
+Starting 
+
+1. invite member
+2. invite group
+3. fork
+   2. This is now a new ARC, with a new address (URL), new members, etc.
+   3. forked from ..., linked to original ARC
+   4. Keeping these ARCs in sync is done via merge requests
+4. Transfer an ARC
+   1. Needs at least maintainer permission
+
+:bulb: You can also directly 
+
 <img src="./../img/arc-sharing.drawio.png" style="width:70%; display: block; margin: auto">
+
+
+
+
+## The difference between "projects" and "groups"
+
+- In the DataHUB, ARCs are called "projects"; they are the same.
+- "Groups" are a group of users (members) with specific permissions.
+- A DataHUB group (e.g. your lab or consortium) can share ARCs. Depending on their assigned role, members of the group can view, edit, delete, maintain the ARC.
+- An ARC can be shared with individual users (members) or a group.
+
+## Visibility levels
+
+The visibility of ARCs and groups is managed for each ARC (see [ARC settings](./../DataHUB-Manual/datahub-ARCSettings.html)) or group see ([Creating a Group](./../DataHUB-Manual/datahub-CreateGroup.html)) individually.
+
+- Private – Access must be granted explicitly to each user or a group.
+- Internal – Can be accessed by any logged in user.
+- Public – Can be accessed without authentication.  
+
+:bulb: By default every ARC and every group is set to **private**.
 
 ## Privately work on a group-shared ARC
 
