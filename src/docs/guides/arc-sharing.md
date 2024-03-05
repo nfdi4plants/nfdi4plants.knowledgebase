@@ -12,6 +12,19 @@ add sidebar: _sidebars/mainSidebar.md
 ---
 
 
+<!-- Check site locally at http://127.0.0.1:8080/docs/guides/arc-sharing.html -->
+
+
+![alt text](./../img/arc-sharing.drawio.png)
+
+
+
+![alt text](./../img/arc-sharing-forkSelective.drawio.png)
+
+
+
+<!-- 
+
 ## Concepts
 
 1. Visibility levels
@@ -40,46 +53,4 @@ add sidebar: _sidebars/mainSidebar.md
    1. add secrets
 9. Show from "other-user" perspective
    1.  cannot see secret
-
-
-
-## 5 shades of sharing
-
-
-
-```mermaid
-graph TD
-
-subgraph user
-
-    subgraph git.nfdi4plants.org/user/ARC
-       u1[members]
-       u2[repository]
-    end
-
-end
-
-
-
-subgraph group    
-    g1[members]
-
-    subgraph g2[git.nfdi4plants.org/group/ARC]
-       g3[members]
-       g4[repository]
-
-    end
-
-end
-
-g1 ---> g3
-
-c1 --- g1
-u2 --fork repository--> g2
-c1 --invite user--> u1
-g1 --invite group--> u1
-
-c1[individual-collaborator]
-
-
-```
+ -->
