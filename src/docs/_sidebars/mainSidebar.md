@@ -130,6 +130,7 @@
 ### [Register at the DataHUB](/docs/guides/datahub_register.html)
 ### [DataPLANT account](/docs/guides/datahub_account.html)
 ### [Invite collaborators to your ARC](/docs/guides/datahub_InviteCollaborators.html)
+### [Sharing ARCs via the DataHUB](/docs/guides/datahub-arc-sharing.html)
 
 ## [Work with your ARC](/docs/guides/index-WorkWithYourARC.html)
 ### [Using ARCs with Galaxy](/docs/guides/ARCs-galaxy.html)

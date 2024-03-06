@@ -23,7 +23,7 @@ In this guide we show you how to invite lab colleagues or project partners to yo
 
 ## Before we can start
 
-:ballot_box_with_check: You have a [DataPLANT account](https://register.nfdi4plants.org)   
+:ballot_box_with_check: You have a [DataPLANT account](https://register.nfdi4plants.org)
 :ballot_box_with_check: You have created an ARC  
 :bulb: Unless changed, your ARC is set to private by default. 
 
