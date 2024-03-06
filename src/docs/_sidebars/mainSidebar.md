@@ -142,6 +142,9 @@
 ### [ARCs in Enabling Platforms](/docs/guides/ARC-enablingPlatforms.html)
 ### [Publication to ARC](/docs/guides/publicationToARC.html)
 
+## [Troubleshooting](/docs/guides/index-Troubleshooting.html)
+### [Git Troubleshooting](../guides/git-troubleshooting.html)
+
 ## [Contribute](/docs/guides/index-Contribute.html)
 ### [Swate Templates](/docs/guides/swate_template-contribution.html)
 ### [Knowledge Base](/docs/CONTRIBUTING.html)
