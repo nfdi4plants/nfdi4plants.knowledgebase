@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Sharing ARCs via the DataHUB
-date: 2024-03-05
+date: 2024-03-06
 author:
 - name: Dominik Brilhaus
   orcid: https://orcid.org/0000-0001-9021-3197
@@ -32,26 +32,22 @@ In this guide we explain the different ways offered by the DataHUB to share an A
 ## Multiple ways to share an ARC via the DataHUB
 
 To suit a wide range of collaborative scenarios, the DataHUB offers multiple, flexible ways of sharing an ARC.
-This flexibility can be confusing at first. 
-The figure below is supposed to give a quick overview. 
+This flexibility can be confusing at first. Generally, ARCs can be uploaded to the DataHUB and (a) associated to a user account (the default) or (b) associated with a group of users.
 
-Starting 
+<!-- namespace / URL -->
 
-1. invite member
-2. invite group
-3. fork
-   2. This is now a new ARC, with a new address (URL), new members, etc.
-   3. forked from ..., linked to original ARC
-   4. Keeping these ARCs in sync is done via merge requests
-4. Transfer an ARC
-   1. Needs at least maintainer permission
+The figure below is supposed to give a quick overview. Once an ARC exists in the DataHUB, you can choose between these options to share the ARC with collaborators. 
+
+You can invite individual users (1). This is helpful to share an ARC with selected colleagues. To share an ARC with a group of users (e.g. a lab or consortium), you can invite a group (2). In both cases (1 and 2), the ARC "stays" associated with  the original owner only (visible by the namespace and URL address). Furthermore the [roles and permissions](#roles-and-permissions) can be set for individual users and groups.
+
+Alternatively, you can create a *fork* of your ARC (3). This generates a copy linked to the original ARC, but now associated with the group. This can be used to share an ARC at a certain stage, without sharing the full progress after that stage. However, since the two ARCs (the original and the fork) can now be developed independently, this can easily lead to divergence and requires a bit more technical expertise to keep both ARCs in sync (if desired).
+
+Finally, you can transfer your ARC to a group (4). This moves the ARC to a new namespace (that of the group). 
+In both cases 3 and 4, you must have at least [maintainer access](#roles-and-permissions) to the group.
 
 :bulb: You can also directly 
 
 <img src="./../img/arc-sharing.drawio.png" style="width:70%; display: block; margin: auto">
-
-
-
 
 ## The difference between "projects" and "groups"
 
@@ -59,6 +55,8 @@ Starting
 - "Groups" are a group of users (members) with specific permissions.
 - A DataHUB group (e.g. your lab or consortium) can share ARCs. Depending on their assigned role, members of the group can view, edit, delete, maintain the ARC.
 - An ARC can be shared with individual users (members) or a group.
+
+## Location and namespace
 
 ## Visibility levels
 
@@ -69,6 +67,15 @@ The visibility of ARCs and groups is managed for each ARC (see [ARC settings](./
 - Public – Can be accessed without authentication.  
 
 :bulb: By default every ARC and every group is set to **private**.
+
+## Roles and permissions
+
+If you create or upload an ARC to the DataHUB, you are the *Owner* by default.
+
+:bulb: Transferring an ARC to a group can make
+
+
+
 
 ## Privately work on a group-shared ARC
 
