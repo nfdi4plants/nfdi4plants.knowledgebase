@@ -147,18 +147,14 @@
 ### [Knowledge Base](/docs/CONTRIBUTING.html)
 
 # [Teaching Materials](/docs/teaching-materials/index.html)
-## [Slides](/docs/teaching-materials/slides.html)
-### [DataPLANT](/docs/teaching-materials/slides/DataPLANT.html)
-### [Annotated Research Context](/docs/teaching-materials/slides/ARC.html)
-## [Videos](/docs/teaching-materials/videos.html)
-### [Start Your ARC Series](/docs/teaching-materials/videos/StartYourARC.html)
-## [Events 2023](/docs/teaching-materials/slides/Events.html)
+## [Events 2023](/docs/teaching-materials/disseminations/events-index.html)
 ### [Nov: CEPLAS PhD Module](/docs/teaching-materials/disseminations/2023-11-08_CEPLAS-module/index.html)
 ### [Oct: CSCS CEPLAS Start Your ARC](/docs/teaching-materials/disseminations/2023-10-CSCS-CEPLAS-StartYourARC/index.html)
 ### [Sept: MibiNet CEPLAS Start Your ARC](/docs/teaching-materials/disseminations/2023-09-MibiNet-CEPLAS-StartYourARC/index.html)
 ### [July: RPTU Summer School on RDM](/docs/teaching-materials/disseminations/2023-07-17_rptu-summerschool-on-rdm/index.html)
 ### [July: Data Steward Circle](/docs/teaching-materials/disseminations/DataSteward-Circle/index.html)
 ### [May: CEPLAS Start Your ARC Series](/docs/teaching-materials/disseminations/2023-05-09_CEPLAS-StartYourARC-Series/index.html)
+#### [Start Your ARC Series - Videos](/docs/teaching-materials/disseminations/2023-05-09_CEPLAS-StartYourARC-Series/StartYourARC-Videos.html)
 
 # [Frequently Asked Questions](/docs/faqs/faqs.html)
 
