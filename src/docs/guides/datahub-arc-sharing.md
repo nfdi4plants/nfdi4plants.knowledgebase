@@ -29,6 +29,83 @@ In this guide we explain the different ways offered by the DataHUB to share an A
 :ballot_box_with_check: You have a [DataPLANT](https://register.nfdi4plants.org) account  
 :bulb: See the [DataHUB manual](./../DataHUB-Manual/index.html) for tutorials
 
+## DataHUB concepts and terminology
+
+Before jumping into the details of data sharing, we need to introduce a few DataHUB concepts, settings and terms that tend to be confusing for new users.
+
+### "Projects" and "Groups" are not the same
+
+#### Project = ARC
+
+- In the DataHUB, ARCs are called "projects"; they are the same.
+- An ARC can be shared with individual users (invited as "members") or a group.
+
+#### DataHUB Groups
+
+- A "Group" is a group of users (then "members" of that group) with specific [permissions](#roles-and-permissions).
+- A group (e.g. your lab or consortium) can share ARCs.
+- Groups help you communicate with all group members and manage permissions for the ARCs shared in that group.
+- Depending on their assigned roles, members of the group can view, edit, delete, and / or maintain the ARCs of that group.
+- If someone has access to a group, they get access to all the ARC in the group.
+- The group Owner(s) can adjust group settings and manage group memberships.
+- Groups can have subgroups (with a subset of members). Subgroups have the same features as groups.  
+
+### Namespaces
+
+- In the DataHUB, namespaces help organize related projects.
+- Every user has a personal namespace, where they can upload or create new ARCs.
+- Every [group and subgroup](#datahub-groups) has an own namespace, respectively.
+
+You can check the namespace by looking at the URL. For example:
+
+Type | URL | Namespace
+--- | --- | ---
+A **personal** ARC | https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum | `brilator` 
+An **group**-shared ARC | https://git.nfdi4plants.org/hhu-plant-biochemistry/Samuilov-2018-BOU-PSP | `hhu-plant-biochemistry`
+
+:bulb: "Personal" is not the same as "private", see [visibility](#visibility).
+
+### Visibility
+
+The visibility of ARCs and groups is managed for each ARC (see [ARC settings](./../DataHUB-Manual/datahub-ARCSettings.html)) or group see ([Creating a Group](./../DataHUB-Manual/datahub-CreateGroup.html)) individually.
+
+- Private – Access must be granted explicitly to each user or a group.
+- Internal – Can be accessed by any logged in user.
+- Public – Can be accessed without authentication.  
+
+:bulb: By default every ARC and every group is set to **private**.
+
+### Roles and permissions
+
+If you create or upload an ARC to the DataHUB, you are the *Owner* by default.
+When inviting new members to an ARC or group, you can choose between different levels.
+
+- Guest: Have the least rights. They will not be able to see the content of an ARC (only the wiki page).
+- Reporter: Have **read access** to your ARC. This is recommended for people you ask for consultancy.
+- Developer: The choice for most people you want to invite to your ARC. Developers have **read and write access**, but cannot maintain the project on the DataHUB, e.g. invite new members.
+- Maintainer: Gives the person the same rights as you have (except of removing you from your own project). This is recommended for inviting PIs or group leaders allowing them to add their group members for data upload or analysis to the project as well.
+- Owner: An owner has basically all rights to the ARC. They can delete or transfer the ARC and manage user memberships.
+
+:bulb: A detailed list of all permissions for the individual roles can be found [here](https://docs.gitlab.com/ee/user/permissions.html)
+
+### ARC members in the DataHUB vs. ARC contacts in ISA metadata
+
+The data in an ARC is ideally annotated with proper metadata, including the contributors or creators of individual datasets or samples. The ISA metadata model used in the ARC contains 
+
+- assay performers
+- investigation contacts
+
+as the common ground for metadata forms 
+
+
+This does not mean that every contact added to an ARC receives an email. 
+
+Creating an ARC with contributors and uploading it to the DataHUB is conceptually, the same as creating a manuscript with authors for publication and sharing it via any cloud service. You can invite members to your DataHUB-shared ARC just as you can invite collaborators to your cloud-shared manuscript and these may not be the same legal people as added to your investigation contacts (ARC) or author list (manuscript).
+
+:bulb: Members, groups, and roles set via the DataHUB can easily be confused with contributors added as ISA metadata to an ARC, e.g. collaborators in an investiagtion or study or assay performers.
+
+
+
 ## Multiple ways to share an ARC via the DataHUB
 
 To suit a wide range of collaborative scenarios, the DataHUB offers multiple, flexible ways of sharing an ARC.
@@ -49,30 +126,6 @@ In both cases 3 and 4, you must have at least [maintainer access](#roles-and-per
 
 <img src="./../img/arc-sharing.drawio.png" style="width:70%; display: block; margin: auto">
 
-## The difference between "projects" and "groups"
-
-- In the DataHUB, ARCs are called "projects"; they are the same.
-- "Groups" are a group of users (members) with specific permissions.
-- A DataHUB group (e.g. your lab or consortium) can share ARCs. Depending on their assigned role, members of the group can view, edit, delete, maintain the ARC.
-- An ARC can be shared with individual users (members) or a group.
-
-## Location and namespace
-
-## Visibility levels
-
-The visibility of ARCs and groups is managed for each ARC (see [ARC settings](./../DataHUB-Manual/datahub-ARCSettings.html)) or group see ([Creating a Group](./../DataHUB-Manual/datahub-CreateGroup.html)) individually.
-
-- Private – Access must be granted explicitly to each user or a group.
-- Internal – Can be accessed by any logged in user.
-- Public – Can be accessed without authentication.  
-
-:bulb: By default every ARC and every group is set to **private**.
-
-## Roles and permissions
-
-If you create or upload an ARC to the DataHUB, you are the *Owner* by default.
-
-:bulb: Transferring an ARC to a group can make
 
 
 
@@ -83,9 +136,7 @@ If you create or upload an ARC to the DataHUB, you are the *Owner* by default.
 ![alt text](./../img/arc-sharing-forkSelective.drawio.png)
 
 
-## DataHUB people ~ ARC contributors
 
-:bulb: Members, groups, and roles set via the DataHUB can easily be confused with contributors added as ISA metadata to an ARC, e.g. collaborators in an investiagtion or study or assay performers.
 
 
 
