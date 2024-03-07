@@ -111,8 +111,6 @@
 ### [Track publication status](/docs/DataHUB-Manual/datahub-data-publications-status.html)
 ### [Use your DOIs](/docs/DataHUB-Manual/datahub-data-publications-dois.html)
 
-<!-- ## [ARCfs Usage](/docs/ARCfs/ARCfs.html) -->
-
 # [Guides](/docs/guides/index.html)
 ## [ARC User Journey](/docs/guides/ARCUserJourney.html)
 ## [Create your ARC](/docs/guides/index-CreateYourARC.html)
@@ -144,7 +142,7 @@
 ### [Publication to ARC](/docs/guides/publicationToARC.html)
 
 ## [Troubleshooting](/docs/guides/index-Troubleshooting.html)
-### [Git Troubleshooting](../guides/git-troubleshooting.html)
+### [Git Troubleshooting](/docs/guides/git-troubleshooting.html)
 
 ## [Contribute](/docs/guides/index-Contribute.html)
 ### [Swate Templates](/docs/guides/swate_template-contribution.html)
