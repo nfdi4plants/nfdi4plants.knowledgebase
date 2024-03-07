@@ -67,16 +67,16 @@ Contact: Dominik Brilhaus; [CEPLAS Data Science](https://www.ceplas.eu/en/resear
 
  Date  | Type |  Time  |  Location  |  Room
 -------|------|--------|------------|-------
-03.04.2024 (Wed)  | Full-day |  09:00 - 17:00  |  HHU  |  [22.07.U1.21](https://www.ceplas.eu/en/contact/how-to-get-there)
-04.04.2024 (Thu)  | Full-day |  09:00 - 17:00  |  HHU  |  [22.07.U1.21](https://www.ceplas.eu/en/contact/how-to-get-there)
+03.04.2024 (Wed)  | Full-day |  09:00 - 17:00  |  HHU  |  [ZSL 22.07, Room U1.21](https://www.ceplas.eu/en/contact/how-to-get-there)
+04.04.2024 (Thu)  | Full-day |  09:00 - 17:00  |  HHU  |  [ZSL 22.07, Room U1.21](https://www.ceplas.eu/en/contact/how-to-get-there)
 11.04.2024 (Thu) :star:  | Half-day |  09:00 - 13:00  |  HHU  |  26.24.U1.018
 18.04.2024 (Thu) :star:  | Full-day |  09:00 - 17:00  |  HHU  |  28.01.00.011
-25.04.2024 (Thu)  | Full-day |  09:00 - 17:00  |  UoC  |  *tbd*
-26.04.2024 (Fri)  | Half-day |  09:00 - 12:00  |  UoC  |  *tbd*
+25.04.2024 (Thu)  | Full-day |  09:00 - 17:00  |  UoC  | Biozentrum, Bldg 304, Room 1.007
+26.04.2024 (Fri)  | Half-day |  09:00 - 12:00  |  UoC  | Biozentrum, Bldg 304, Room 1.007
 30.04.2024 (Thu) :star:  | Full-day |  09:00 - 17:00  |  HHU  |  26.21.01.36
-23.05.2024 (Thu)  | Full-day |  09:00 - 17:00  |  HHU  |  [22.07.U1.25](https://www.ceplas.eu/en/contact/how-to-get-there)
-24.05.2024 (Fri)  | Half-day |  09:00 - 12:00  |  HHU  |  [22.07.U1.21](https://www.ceplas.eu/en/contact/how-to-get-there)
- 
+23.05.2024 (Thu)  | Full-day |  09:00 - 17:00  |  HHU  |  [ZSL 22.07, Room U1.25](https://www.ceplas.eu/en/contact/how-to-get-there)
+24.05.2024 (Fri)  | Half-day |  09:00 - 12:00  |  HHU  |  [ZSL 22.07, Room U1.21](https://www.ceplas.eu/en/contact/how-to-get-there)
+
 :star: Workshop with MibiNet. See details and registration [here](https://pad.hhu.de/gXvgd5yETWa3Ks34dM3KCw?view)
 
 ## Tentative agenda
