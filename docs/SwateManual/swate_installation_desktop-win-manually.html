@@ -571,10 +571,13 @@
         last updated at 2023-11-23
       </i>
       <ol>
-<li>Download the latest <a href="https://github.com/nfdi4plants/Swate/blob/developer/.assets/swate-win.zip?raw=true">Swate manifests</a></li>
+<li>Download the latest <a href="https://github.com/nfdi4plants/Swate/blob/developer/.assets/swate-win.zip?raw=true">Swate manifests</a> and unzip it.</li>
+<li>(optional) You might have to add <code>swate-win</code> to your <code>programs</code> directory before you have the option to share the folder using network access. Using <code>Sharepoint</code> and the Swate repo inside the <code>Downloads</code> directory might not work (See Fig. 1).</li>
 <li>Follow the official microsoft docs to <a href="https://learn.microsoft.com/de-de/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins">sideload Swate in Excel</a>.</li>
 <li>You will need to add the <code>core_manifest.xml</code> (and optionally the <code>experts_manifest.xml</code>) to your shared folder.</li>
 </ol>
+<p><img src="./../img/SWATE_sideloading_settings.png" alt="img1" /></p>
+<p>Fig. 1: Sideloading SWATE in Excel might only work correctly when <code>swate-win</code> is located in the <code>programs</code> directory using <code>network access</code>, but not using <code>sharepoint</code> and a different directory.</p>
 
       <h3>
         DataPLANT Support
