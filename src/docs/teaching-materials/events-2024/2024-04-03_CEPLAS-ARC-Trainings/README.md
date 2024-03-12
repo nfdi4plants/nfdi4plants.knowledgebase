@@ -20,8 +20,6 @@ date: 2023-12-04
 80 Swate
 90 Create your own ARC
 
-
-
 ## See website locally
 
 1. Execute
