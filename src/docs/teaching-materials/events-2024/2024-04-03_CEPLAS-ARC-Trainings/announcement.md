@@ -62,7 +62,6 @@ Contact: Dominik Brilhaus; [CEPLAS Data Science](https://www.ceplas.eu/en/resear
 </div>
 </div>
 
-
 ## Dates and Locations
 
  Date  | Type |  Time  |  Location  |  Room
@@ -81,15 +80,17 @@ Contact: Dominik Brilhaus; [CEPLAS Data Science](https://www.ceplas.eu/en/resear
 
 ## Tentative agenda
 
+We will mostly introduce concepts and tools in the mornings (half-day and full-day). The afternoons (full-day only) focus on interactive parts. Here you have the chance to use the tools with your own data while we are there to help.
+
 ### Half-day
 
 Time | Topics
 -------- | --------
-09:00 - 09:15 | Welcome and intro to DataPLANT
-09:15 - 09:30 | Overview DataPLANT Tool chain
-09:30 - 10:15 | ARCitect and DataHUB
+09:00 - 09:15 | Welcome, Intro RDM and NFDI
+09:15 - 09:30 | Overview DataPLANT, and DataPLANT Tool chain
+09:30 - 10:15 | Demo ARCitect and DataHUB
 10:15 - 10:30 | *Short break*
-10:30 - 11:45 | Metadata annotation with SWATE
+10:30 - 11:45 | Demo Metadata annotation with SWATE
 11:45 - 12:00 | Q & A
 
 ### Full-day (continues half-day)
@@ -102,22 +103,6 @@ Time | Topics
 15:15 - 16:30 | Create your own ARC
 16:30 - 17:00 | Q & A and wrap-up
 
-## Continuous support  
-
-Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TRR341) offer *ad hoc* support, see [details here](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-support.html).
-
-## Resources
-
-> Website: https://nfdi4plants.org/
-> Knowledge Base: https://nfdi4plants.org/nfdi4plants.knowledgebase/ 
-> DataHUB: https://git.nfdi4plants.org
-> GitHub: https://github.com/nfdi4plants
-
-## Tentative agenda
-
-We will mostly introduce concepts and tools in the mornings.  
-The afternoons focus on interactive parts. Here you have the chance to use the tools with your own data while we are there to help. 
-
 ## Checklist for participants
 
 Please prepare the following **before the workshop**.
@@ -127,6 +112,9 @@ Please prepare the following **before the workshop**.
 - Sign up for a DataHUB user account https://register.nfdi4plants.org/
   - Please add your `Project/consortium` (e.g. CEPLAS, SFB, TRR) and choose the role `Guest`
 - Install <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html" target="_blank">ARCitect</a>
-- Install <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html" target="_blank">Swate</a>
 
-:bulb: Not all installations are perfectly straight-forward. We will be available half an hour before the workshops to make sure your machine is up and running.
+:bulb: Not all installations are perfectly straight-forward. We will be available **half an hour before the workshops** to help you get your machine up and running.
+
+## Continuous support  
+
+Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TRR341) offer *ad hoc* support, see [details here](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-support.html).
