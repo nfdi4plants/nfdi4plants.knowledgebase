@@ -3,7 +3,7 @@ marp: true
 theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-title: ARCitect hands-on
+title: ARCitect Hands-on
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -16,7 +16,7 @@ author:
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
 
-# ARCitect hands-on
+# ARCitect Hands-on
 
 <style scoped>section {background: none; background-color: white}</style>
 <!-- _paginate: false -->
@@ -25,9 +25,7 @@ author:
 
 # ARCitect installation
 
-Please install version **v0.0.21** (or later) of the ARCitect: https://github.com/nfdi4plants/ARCitect/releases/tag/v0.0.21
-
-:fire: (released November 23rd, 2023) :fire:
+Please install version **v0.0.31** (or later) of the ARCitect: https://github.com/nfdi4plants/ARCitect/releases/latest
 
 ---
 

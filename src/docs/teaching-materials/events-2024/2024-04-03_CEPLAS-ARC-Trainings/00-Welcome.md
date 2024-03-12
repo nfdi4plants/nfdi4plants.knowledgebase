@@ -10,7 +10,15 @@ author:
   orcid: https://orcid.org/0000-0001-9021-3197
 ---
 
-# The ARC Club
+
+<!-- 
+TODO before final
+- add pad link
+- update agenda
+
+ -->
+
+# CEPLAS ARC Training
 
 <!--  _color: white; -->
 <!-- _paginate: false -->
@@ -18,37 +26,10 @@ author:
 
 <br>
 
-December 7<sup>th</sup>, 2023
+April, 2024
 Dominik Brilhaus, CEPLAS Data Science
 
 ![bg fit](./../../../img/background_title_ceplas.drawio.svg)
-
----
-
-# House-keeping
-
-Pad: https://pad.hhu.de/lhxZ_1GCRAa9ROHmj0zuYQ
-
-- take notes
-- ask questions
-- copy / paste links, etc.
-
----
-
-# Get-to-know
-
-- Lab
-- CEPLAS / TRR / MibiNet / ?
-- My favorite lab assay
-- Used code / programming language before
-- Have an ORCID
-- My motivation / expectation
-
----
-
-# Materials
-
-Slides will be shared via DataPLANT knowledge base
 
 ---
 
@@ -64,7 +45,7 @@ Slides will be shared via DataPLANT knowledge base
 <div class="columns">
 <div class="columns-left">
 
-## Day 1
+## Half-day
 
 - Intro to ARC and demo
 - ARCitect Hands-on
@@ -75,7 +56,7 @@ Slides will be shared via DataPLANT knowledge base
 
 <div class="columns-right">
 
-## Day 2
+## Full-day
 
 - ARC recap session
 - ISA and Metadata
@@ -87,30 +68,9 @@ Slides will be shared via DataPLANT knowledge base
 
 ---
 
-# The ARC Club  &ndash; Goals
+# Materials
 
-- Move existing datasets into ARCs
-- Share them via the DataHUB
-- First few steps into ARCs
-- You or collaborators can pick them up from there
-
-![bg right w:500](./../../../img/ceplas-ARCs.drawio.svg)
-
----
-
-# Perfect is the enemy of good
-
-- There is no perfect ARC
-- There is no complete ARC
-- The only bad ARCs are those that don't exist yet.
-
-<br>
-
-:rocket: Let's get started, the rest is easy :rocket:
-
----
-
-# Let's draw a typical lab workflow from your lab :pencil: <!-- fit -->
+Slides will be shared via DataPLANT knowledge base
 
 ---
 
@@ -129,6 +89,15 @@ HelpDesk: <a href="https://helpdesk.nfdi4plants.org" target="_blank">https://hel
 :bulb: You can help us by raising issues, bugs, ideas...
 
 ---
+
+## Continuous support  
+
+Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TRR341) offer support.
+
+1. Slack Workspace for ad hoc support
+2. Monthly user meeting (2nd Friday of the month)
+
+[&rarr; Details](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-support.html).
 
 ---
 

@@ -11,39 +11,10 @@ author:
   orcid: https://orcid.org/0000-0001-9021-3197
 ---
 
-<style>
-
-figcaption {
-  font-size: 10px;
-  font-style: italic;
-}
-
-.reference-bgright {
-  font-size:15px;
-  line-height: 1.2em;
-  position: fixed;
-  right: 0px;
-  bottom: 0px;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
-}
-
-</style>
-
-# The ARC ecosystem
-
-<!--  _color: white; -->
-<!-- _paginate: false -->
-
-<style scoped>section {background: none; background-color: white;}</style>
-
-### *A FAIR RDM journey along a (mutable) data life cycle*
-
-<br>
-
-![bg fit](./../../../img/background_title_ceplas.drawio.svg)
+# DataPLANT
 
 ---
+
 
 # Data Stewardship between DataPLANT and the community  <!-- fit -->
 
