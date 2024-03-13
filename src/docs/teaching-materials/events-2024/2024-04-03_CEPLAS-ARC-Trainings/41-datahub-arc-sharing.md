@@ -2,6 +2,7 @@
 layout: docs
 title: Sharing ARCs via the DataHUB
 marp: true
+theme: marp-theme_dataplant-ceplas-ccby
 date: 2024-03-12
 author:
 - name: Dominik Brilhaus
@@ -34,33 +35,26 @@ add sidebar: _sidebars/mainSidebar.md
 
 ---
 
-### DataHUB Groups
+## DataHUB Groups
 
-- A "Group" is a group of users (then "members" of that group) with specific [permissions](#roles-and-permissions).
-- A group (e.g. your lab or consortium) can share ARCs.
-
-- Groups help you communicate with all group members and manage permissions for the ARCs shared in that group.
-- Depending on their assigned roles, members of the group can view, edit, delete, and / or maintain the ARCs of that group.
-- If someone has access to a group, they get access to all the ARC in the group.
-- The group Owner(s) can adjust group settings and manage group memberships.
-- Groups can have subgroups (with a subset of members). Subgroups have the same features as groups.  
+- A "Group" is a group of users with specific [permissions](#roles-and-permissions)
+- A group can share ARCs
+- A group can be invited to an ARC
+- Groups can have subgroups
 
 ---
 
-## Namespaces
+# Namespaces
 
-- In the DataHUB, namespaces help organize related projects.
 - Every user has a personal namespace, where they can upload or create new ARCs.
 - Every [group and subgroup](#datahub-groups) has an own namespace, respectively.
 
-You can check the namespace by looking at the URL. For example:
+<div class="table-container" style="font-size: 25px">
 
-<div class="table-container">
-
-Type | URL | Namespace
---- | --- | ---
-A **personal** ARC | https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum | `brilator` 
-An **group**-shared ARC | https://git.nfdi4plants.org/hhu-plant-biochemistry/Samuilov-2018-BOU-PSP | `hhu-plant-biochemistry`
+Type | URL | Namespace | Name
+--- | --- | --- | --- 
+A **personal** ARC | https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum | `brilator` | Dominik Brilhaus
+An **group**-shared ARC | https://git.nfdi4plants.org/hhu-plant-biochemistry/Samuilov-2018-BOU-PSP | `hhu-plant-biochemistry` | HHU Plant Biochemistry
 
 </div>
 
