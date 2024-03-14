@@ -61,6 +61,7 @@ error message* | possible reason | possible solution
 `ERROR: GIT: fatal: detected dubious ownership` | This is an error typically seen when working on mounted network drives | [Dubious ownership](#dubious-ownership)
 `fatal: credential-cache unavailable; no unix socket support` | Likely happens on Windows, if a gitconfig `credential.helper=cache` | Adjust the [Git Credential helper](#git-credential-helper) setting
 `fatal: Need to specify how to reconcile divergent branches.` | Your ARC contains multiple branches that progressed independently and need to be merged | Contact a data steward.
+`error: unable to create file <path/to/file> : Filename too long` | Likely occurs on Windows, if your ARC is stored in a deeply nested folder, i.e. a folder in a folder in a folder ...| Store the ARC on a higher level.
 
 :bulb: *typically displayed during synchronization via ARCitect (DataHUB Sync --> push / pull) or `arc sync`. Even if ARCitect shows "Complete", it's sometimes worth it to scroll up and see these errors.
 
