@@ -16,6 +16,15 @@ author:
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
 
+<!-- TODO 
+
+- more to remote?
+- add history panel
+- add Swate alpha examples in ARCitect ???
+- check linking studies and assays -->
+
+
+
 # ARCitect Hands-on
 
 <style scoped>section {background: none; background-color: white}</style>
