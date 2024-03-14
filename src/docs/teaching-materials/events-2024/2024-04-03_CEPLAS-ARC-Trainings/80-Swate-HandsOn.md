@@ -22,6 +22,8 @@ author:
 - delete SWATE Excel Installation?
 - check sample data and delete tables, isa.study can not be opened by Swate alpha
 - export functions? 
+- Include Update Column
+- Include Right Click menu in general 
 - -->
 
 # Swate hands-on
