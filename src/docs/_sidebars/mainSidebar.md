@@ -126,11 +126,11 @@
 
 ## [Work with your ARC](/docs/guides/index-WorkWithYourARC.html)
 ### [Using ARCs with Galaxy](/docs/guides/ARCs-galaxy.html)
-### [Computational Workflows](/docs/guides/ComputationalWorkflowsindex.html)
-#### [CWL Introduction](/docs/guides/ComputationalWorkflowscwl_introduction.html)
-#### [CWL runner installation](/docs/guides/ComputationalWorkflowscwl_runner_installation.html)
-#### [CWL Examples](/docs/guides/ComputationalWorkflowscwl_examples.html)
-#### [CWL Metadata](/docs/guides/ComputationalWorkflowscwl_metadata.html)
+### [Computational Workflows](/docs/guides/ComputationalWorkflows/index.html)
+#### [CWL Introduction](/docs/guides/ComputationalWorkflows/cwl_introduction.html)
+#### [CWL runner installation](/docs/guides/ComputationalWorkflows/cwl_runner_installation.html)
+#### [CWL Examples](/docs/guides/ComputationalWorkflows/cwl_examples.html)
+#### [CWL Metadata](/docs/guides/ComputationalWorkflows/cwl_metadata.html)
 
 ## [Recommended ARC practices](/docs/guides/index-RecommendedARCPractices.html)
 ### [Syncing recommendation](/docs/guides/arc_SyncingRecommendation.html)
