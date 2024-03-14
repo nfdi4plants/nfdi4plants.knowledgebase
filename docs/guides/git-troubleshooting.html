@@ -659,6 +659,11 @@
 <td>Your ARC contains multiple branches that progressed independently and need to be merged</td>
 <td>Contact a data steward.</td>
 </tr>
+<tr>
+<td><code>error: unable to create file &lt;path/to/file&gt; : Filename too long</code></td>
+<td>Likely occurs on Windows, if your ARC is stored in a deeply nested folder, i.e. a folder in a folder in a folder ...</td>
+<td>Store the ARC on a higher level.</td>
+</tr>
 </tbody>
 </table>
 <p>💡 *typically displayed during synchronization via ARCitect (DataHUB Sync --&gt; push / pull) or <code>arc sync</code>. Even if ARCitect shows &quot;Complete&quot;, it's sometimes worth it to scroll up and see these errors.</p>
