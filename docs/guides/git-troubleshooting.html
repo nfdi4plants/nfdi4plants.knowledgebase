@@ -649,9 +649,19 @@
 <td>This is an error typically seen when working on mounted network drives</td>
 <td><a href="#dubious-ownership">Dubious ownership</a></td>
 </tr>
+<tr>
+<td><code>fatal: credential-cache unavailable; no unix socket support</code></td>
+<td>Likely happens on Windows, if a gitconfig <code>credential.helper=cache</code></td>
+<td>Adjust the <a href="#git-credential-helper">Git Credential helper</a> setting</td>
+</tr>
+<tr>
+<td><code>fatal: Need to specify how to reconcile divergent branches.</code></td>
+<td>Your ARC contains multiple branches that progressed independently and need to be merged</td>
+<td>Contact a data steward.</td>
+</tr>
 </tbody>
 </table>
-<p>💡 *typically displayed during synchronization via ARCitect (Versining --&gt; push / pull) or <code>arc sync</code>. Even if ARCitect shows &quot;Complete&quot;, it's sometimes worth it to scroll up and see these errors.</p>
+<p>💡 *typically displayed during synchronization via ARCitect (DataHUB Sync --&gt; push / pull) or <code>arc sync</code>. Even if ARCitect shows &quot;Complete&quot;, it's sometimes worth it to scroll up and see these errors.</p>
 <nfdi-h2 id="your-two-favorite-git-commands-status-and-log">Your two favorite Git commands: status and log</nfdi-h2>
 <p>Whenever your asked for ARC support likely related to a git issue, the first thing you want to explore is the state of the ARC.</p>
 <nfdi-h3 id="git-status">git status</nfdi-h3>
@@ -726,6 +736,15 @@ git config --global user.email "Your eMail"
 <nfdi-h4 id="set-main-as-default-branch">Set main as default branch</nfdi-h4>
 <nfdi-code class="language-bash">git config --global init.defaultBranch main
 </nfdi-code>
+<nfdi-h4 id="git-credential-helper">Git Credential Helper</nfdi-h4>
+<p>The gitconfig contains a setting, whether and how to save git credentials on your machine called <code>credential.helper</code>.</p>
+<p>On Windows, you might run into the error <code>fatal: credential-cache unavailable; no unix socket support</code>, if it is set to <code>credential.helper=cache</code>.</p>
+<p>This can be solved by either of the following:</p>
+<ol>
+<li>Remove &quot;credential.helper=cache&quot; via <code>git config --global --unset credential.helper</code>.</li>
+<li>Overwrite the setting with &quot;store&quot; instead of &quot;cache&quot; via <code>git config --global credential.helper store</code>.</li>
+</ol>
+<p>💡 If you use ARC commander, we recommend to use the second approach to keep storing your credentials for DataHUB synchronization.</p>
 <nfdi-h2 id="git-remote">Git remote</nfdi-h2>
 <p>For ARCs the &quot;remote&quot; is the DataHUB. The remote address (ARC url) is stored in the git of the local ARC.
 Display the URL, to which the local ARC is connected via</p>
