@@ -17,6 +17,11 @@ author:
 - name: Sabrina Zander
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
+<!-- TODO 
+
+- delete SWATE Excel Installation?
+- check sample data and delete tables, isa.study can not be opened by Swate alpha
+- -->
 
 # Swate hands-on
 
@@ -30,6 +35,8 @@ author:
 ---
 
 ## Check Swate installation
+
+<!-- TODO only use SWATE alpha? -->
 
 :ballot_box_with_check: Make sure [Swate is installed](./../../../SwateManual/Docs01-Installing-Swate.html):
 
@@ -53,7 +60,7 @@ Recommended text editor with code highlighting, git support, terminal, etc: <a h
 
 ## Download the demo data
 
-![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
+![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
 
 1. Open the ARCitect
 2. Login (1) to your DataHUB account
@@ -68,11 +75,11 @@ Recommended text editor with code highlighting, git support, terminal, etc: <a h
 
 ![w:700](./../../../img/arcitect-download-TalinumARC.png)
 
-:bulb: This is basically the ARC we created last session.
+:bulb: This is basically the ARC we created in the morning.
 
 ---
 
-## Where we left off last time
+## Where we left off last time <!-- TODO delete? Because only one day course? -->
 
 👩‍💻 Initiated an ARC
 📂 Structured and ...  
@@ -94,7 +101,7 @@ Recommended text editor with code highlighting, git support, terminal, etc: <a h
 
 ## Swate Overview
 
-![width:1000](./../../../img/Swate_Overview.png)
+![width:1300](./../../../img/Swate_a_Overview.png)
 
 ---
 
@@ -102,82 +109,65 @@ Recommended text editor with code highlighting, git support, terminal, etc: <a h
 
 1. Navigate to the demo ARC. 
 2. Open the lab notes `studies/talinum_drought/protocols/plant_material.txt` in a text editor. 
-3. Open the empty `studies/talinum_drought/isa.study.xlsx` workbook in Excel.
+   Import the empty `studies/talinum_drought/isa.study.xlsx` file in Swate.
 
+![width:600](./../../../img/Swate_a_Home.png)
 
 ---
 
 ## Create an annotation table
 
-<br>
 
-<style scoped>
-.columns {
-    /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
-    grid-template-columns: 500px 500px;
-    gap: 30px;
-    display: flex;
-    justify-content: center;
-}
-</style>
 
-<div class="columns">
-<div class="columns-left">
+Create a Swate annotation table by adding **Buiding blocks** via the widget (A) or the side panel (B)
 
-Create a Swate annotation table via the <kbd>create annotation table</kbd> button in the yellow pop-up box *OR* click the <kbd>Create Annotation Table</kbd> quick access button.
 
-<br>
 
-:bulb: Each table is by default created with one input (`Source Name`) and one output (`Sample Name`) column  
+:bulb: Each table can contain only one *Input* and one *Output* column  
 
-:bulb: Only one annotation table can be added per Excel sheet
+:bulb: different *Input* and *Output* options: `Source Name`, `Sample Name`, `Material`, `Raw Data File`, `Derived Data File`, `Image File`
 
-</div>
+![w:600](./../../../img/Swate_a_Building_blocks.png)
 
-<div class="columns-right">
-    <img src="./../../../img/Swate-CreateAnnotationTable-Exp.jpg" style="width: 1200px">
-</div>
 
-</div>
 
 ---
 
-## Add a building block
+## Add more building blocks
 
-1. Navigate to the *Building Blocks* tab via the navbar. Here you can add *Building Blocks* to the table.
-2. Instead of *Parameter* select *Characteristic* from the drop-down menu (A)
-3. Search for `organism` in the search bar (B). This search looks for suitable *Terms* in our *Ontology* database.
+1. Add an *Input* (`Source Name`) and *Output* (`Sample Name`) column
+2. Select *Characteristic* from the drop-down menu
+3. Enter `organism` in the search bar. This search looks for suitable *Terms* in our *Ontology* database.
 4. Select the Term with the id `OBI:0100026` and, 
-5. Click <kbd>Add building block</kbd>.
+5. Click Add Column
 
-:bulb: This adds three columns to your table, one visible and **two** hidden.
+:bulb: This adds four columns to your table, one visible and **three** hidden.
 
-![bg right:30% w:400](./../../../img/Swate-AddBuildingBlock-Exp.jpg?v31.01.22)
+![bg right:40% w:500](./../../../img/Swate_a_addBuildngBlock.png)
 
 ---
 
 ## Insert values to annotate your data
 
-1. Navigate to the *Terms* tab in the Navbar
-2. In the annotation table, select any number of cells below `Characteristic [organism]`
-3. Click into the search field in Swate.
+1. Insert values by selecting any cell below `Characteristic [organism]`
+2. Use free text or activate the magnifying glass to activate *Term* search
+3. Write "Talinum fruticosum" and enable *Term* search
+4. Select the hit 
 
-:bulb: You should see `organism` showing in a field in front of the search field  
-:bulb: The search will now yield results related to `organism`
 
-4. In the search field, search for "Talinum fruticosum"
-5. Select the first hit and click <kbd>Fill selected cells with this term</kbd>
+![bg right:40% w:500](./../../../img/Swate_a_addCharacteristic.png)
 
 ---
 
 ## Add a building block with a unit
 
-1. In the *Building Blocks* tab, select *Parameter*, search for `light intensity exposure` and select the term with id `PECO:0007224`.
-2. Check the box for *This Parameter has a unit* and search for `microeinstein per square meter per second` in the adjacent search bar.
+1. In the *Building Blocks* widget, select *Parameter*, search for `light intensity exposure` and select the term with id `PECO:0007224`.
+2. Check the box for *Unit* and search for `microeinstein per square meter per second` in the adjacent search bar.
 3. Select `UO:0000160`.
-4. Click <kbd>Add building block</kbd>.
+4. Click Add Column.
 
-:bulb: This adds four columns to your table, one visible and **three** hidden.
+:bulb: This also adds four columns to your table, one visible and **three** hidden.
+
 
 ---
 
@@ -185,20 +175,22 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 
 In the annotation table, select any cell below `Parameter [light intensity exposure]` and add "425" as light intensity.
 
-:bulb: You can see the numbers being complemented with the chosen unit, e.g. `425.00 microeinstein per square meter per second`
+:bulb: You can see the numbers being complemented with the chosen unit, e.g. `425 microeinstein per square meter per second`
 
 ---
 
 ## Showing ontology reference columns
 
-Hold <kbd>Ctrl</kbd> and click the *Autoformat Table* quick access button to adjust column widths and un-hide all hidden columns.
+Use double pointed quotation mark to un-hide hidden columns. 
 
 :bulb: You can see that your organism of choice was added with id and source Ontology in the reference (hidden) columns.
 
-:warning: This feature is currently not supported on MacOS
+
+![w:900](./../../../img/Swate_a_reference_column.png)
+
 
 ---
-
+<!-- TODO delete? Because only one day course? 
 ## Update ontology reference columns
 
 Click the <kbd>Update Ontology Terms</kbd> quick access buttons.
@@ -207,17 +199,14 @@ Click the <kbd>Update Ontology Terms</kbd> quick access buttons.
 
 ---
 
+-->
 ## Your ISA table is growing
 
 At this point. Your table should look similar to this:
 
 ![w:1000](./../../../img/demo_isa.study1.png)
 
----
 
-## Hiding ontology reference columns
-
-Click the <kbd>Autoformat Table</kbd> quick access button without holding <kbd>Ctrl</kbd> to hide all reference columns.
 
 ---
 
@@ -229,8 +218,8 @@ Try to add suitable *building blocks* for other pieces of metadata from the plan
 
 ## Add a factor building block
 
-1. In the *Building Blocks* tab, select *Factor*, search for `watering exposure` and select the term with id `PECO:0007383`.
-2. Click <kbd>Add building block</kbd>.
+1. In the *Building Blocks* widget, select *Factor*, search for `watering exposure` and select the term with id `PECO:0007383`.
+2. Click <kbd>Add Column</kbd>.
 3. Add the drought treatment ("no water for 12 days", "re-water for 2 days") to the respective samples
 
 :bulb: There are different options to add the drought treatment.
@@ -239,8 +228,8 @@ Try to add suitable *building blocks* for other pieces of metadata from the plan
 
 ## Link the protocol to the isa table
 
-1. In the *Building Blocks* tab, select *Protocol Columns* -> *Protocol REF*.
-2. Click <kbd>Add building block</kbd>.
+1. In the *Building Blocks* tab, select *More* -> *Protocol REF*.
+2. Click <kbd>Add Column</kbd>.
 3. Add the name of the protocol file (plant_material.txt) to the *Protocol REF* column.
 
 :bulb: This allows you to reference the free-text, human-readable protocol.
@@ -260,7 +249,7 @@ Transfer the sample ids from the protocol.
 
 1. Navigate to the demo ARC. 
 2. Open the lab notes `assays/rnaseq/protocols/RNA_extraction.txt` in a text editor.
-3. Open the empty `assays/rnaseq/isa.assay.xlsx)` workbook in Excel.
+3. Open the empty `assays/rnaseq/isa.assay.xlsx` workbook in Excel.
 
 ---
 
