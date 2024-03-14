@@ -51,7 +51,7 @@ The step processing units can be present in any configuration. It's basic struct
 This processing object is intended as a placeholder during development or for visualization. It does not contain enough 
 information to be executed. It consists of inputs and outputs.
 
-# Usefull Links
+# Useful Links
 
  - https://www.commonwl.org/
  - https://www.commonwl.org/v1.2/CommandLineTool.html

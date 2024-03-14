@@ -16,9 +16,9 @@ are made using double spaces.
 ### Without docker
 
 A command line tool requires a `baseCommand` which is used to call the tool. This can be 
-the name of the tool, if it is added to the PATH, or a relative/absolute path to the `.exe`. 
+the name of the tool, if it is added to the PATH, or a relative/absolute path to the executable (`.exe`). 
 If the basecommand consists of multiple words, it can be written as a list: `[my, Tool]`. The next part is the `inputs` 
-section. It consists of a variable number of arguments required for the tool to run. Each input can specify 
+section. It consists of a variable number of arguments required for the tool to run. For each input you can specify 
 the type, position and prefix of the input. The last part is the `outputs` section. Multiple outputs can be specified by 
 name, type and their location.
 
@@ -47,7 +47,7 @@ outputs:
 
 ### With a docker container
 
-To ensure reproducibility of the tools execution on any system, it is recommended to pack it in a docker 
+To ensure reproducibility of the tool's execution on any system, it is recommended to pack it in a docker 
 container. The docker container is automatically pulled with a reference to the container under 
 either `requirements` or `hints`. Additional requirements, such as network access, can be specified as well.
 
@@ -83,8 +83,8 @@ outputs:
 ### With a fixed script file
 
 Oftentimes, individual analysis is done within scripts for the flexibility, instead of tools with 
-fixed tasks. In this case, it is recommended to encode the script as a fixed part of the cwl description. 
-The script is then accessible in the cwl description and can be calles as part of the `baseCommand`. It can be 
+fixed tasks. In this case, it is recommended to encode the script as a fixed part of the CWL description. 
+The script is then accessible in the CWL description and can be called as part of the `baseCommand`. It can be 
 a script that functions as a command line and still expects inputs, or as a self contained analysis without further input requirements.
 
 ```yaml
@@ -166,6 +166,7 @@ outputs:
 ```
 
 [Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/ARCMount)
+
 ### Within an ARC with a devcontainer
 
 Within the context of an ARC, researches often work within devcontainers or the ARC environment. CWL is able to replicate 
@@ -214,6 +215,7 @@ example won't work in the context of CWL. If they are necessary for the executio
 can be prefixed with a `*` to make the execution of the operation optional.
 
 [Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/Devcontainer)
+
 ## Workflows
 
 Workflows can connect multiple command line tools, for example. It is possible to use the output of a 
