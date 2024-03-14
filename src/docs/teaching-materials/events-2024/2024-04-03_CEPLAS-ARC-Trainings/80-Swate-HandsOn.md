@@ -21,6 +21,7 @@ author:
 
 - delete SWATE Excel Installation?
 - check sample data and delete tables, isa.study can not be opened by Swate alpha
+- export functions? 
 - -->
 
 # Swate hands-on
@@ -190,7 +191,7 @@ Use double pointed quotation mark to un-hide hidden columns.
 
 
 ---
-<!-- TODO delete? Because only one day course? 
+<!-- TODO delete? ? 
 ## Update ontology reference columns
 
 Click the <kbd>Update Ontology Terms</kbd> quick access buttons.
@@ -255,18 +256,18 @@ Transfer the sample ids from the protocol.
 
 ## Use a template
 
-1. Navigate to *Templates* in the Navbar and click *Browse database* in the first function block.
+1. Open the *Templates* widget in the Bar 
 
-:bulb: Here you can find community created workflow annotation templates
+:bulb: Here you can find DataPLANT and community created workflow annotation templates
 
 1. Search for `RNA extraction` and click <kbd>select</kbd> 
     - You will see a preview of all building blocks which are part of this template.
 2. Click <kbd>Add template</kbd> to add all Building Blocks from the template to your table, which <u>do not exist yet</u>.
 
-![bg right:30% w:350px](./../../../img/swate_templates.svg)
+![bg right:40% w:500px](./../../../img/swate_a_templates.png)
 
 ---
-
+<!-- TODO delete? ? 
 ## Adding / Updating unit references
 
 Sometimes you need to add or update the unit of an existing building block. 
@@ -278,18 +279,18 @@ Sometimes you need to add or update the unit of an existing building block.
 4. Click the *Update Ontology Terms* <a href="./../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
    
 ---
-
+-->
 ## Remove building blocks
 
-If there are any Building Blocks which do not fit your experiment you can use the <kbd>Remove Building Block</kbd> quick access button to remove it including all related (hidden) reference columns.
+If there are any Building Blocks which do not fit your experiment you can use right click --> Delete Column to remove it including all related (hidden) reference columns.
 
-:warning: Due to the hidden reference columns, we recommend not to delete table columns via usual Excel functions. 
+
 
 ---
 
 ## New process, new worksheet
 
-1. Add a new sheet to the `assays/rnaseq/isa.assay.xlsx)` workbook.
+1. Add a new sheet to the `assays/rnaseq/isa.assay.xlsx` workbook.
 2. Add the template "RNASeq Assay"
 
 ---
@@ -332,8 +333,8 @@ M1 ---P6--> D2
 
 ## Link dataset files to samples
 
-1. In the *Building Blocks* tab, select *Output Columns* -> *Raw Data File*.
-2. Click <kbd>Add building block</kbd>.
+1. In the *Building Blocks* widget select *Output* -> *Raw Data File*.
+2. Click <kbd>Add Column</kbd>.
 
 :bulb: You see a warning about a changed output column.
 
@@ -352,10 +353,13 @@ Go ahead, adjust the Building Blocks you want to use to describe your experiment
 Insert values using Swate Term search and add input and output.
 
 ---
+## File Export ??
 
+---
+<!-- TODO check again, did not work out 20240314, add template button is disabled in Swate alpha -->
 ## Re-use a protocol (process.json)
 
-1. Open the empty `assays/metabolomics/isa.assay.xlsx)` workbook in Excel.
+1. Import the empty `assays/metabolomics/isa.assay.xlsx)` workbook in Swate.
 2. Navigate to *Templates* in the Navbar and scroll down to "Add template(s) from file."
 3. Click <kbd>Upload protocol</kbd>
 4. Select the file "swate_agilent_gc.json" from the demo data.
@@ -366,7 +370,7 @@ Insert values using Swate Term search and add input and output.
 :bulb: This adds not only an empty template, but a filled out table with keys (headers) and values (cells).
 
 ---
-
+<!-- TODO delete or change to tables? ? -->
 ## A small detour on "Excel Tables"
 
 Swate uses Excel's "table" feature to annotate workflows. Each table represents one *process* from input (e.g. plant leaf material) to output (e.g. leaf extract).
@@ -384,10 +388,9 @@ Example workflows with three *processes* each:
 
 ---
 
-# :construction: Known issues with ARCitect and Swate (Nov 2023)
+# :construction: Known issues with ARCitect and Swate (April 2024)
 
-1. Annotation within ARCitect is not yet available.
-2. Swate and ARCitect handle isa.study.xlsx / isa.assay.xlsx files differently.
+
 
 ---
 
