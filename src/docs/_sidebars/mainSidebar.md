@@ -87,12 +87,6 @@
 ### [Contribute Templates](/docs/guides/swate_template-contribution.html)
 ### [ISA-JSON](/docs/SwateManual/Docs06-ISA-JSON.html)
 
-# [Workflows Manual](/docs/WorkflowsManual/index.html)
-## [CWL Introduction](/docs/WorkflowsManual/cwl_introduction.html)
-## [CWL runner installation](/docs/WorkflowsManual/cwl_runner_installation.html)
-## [CWL Examples](/docs/WorkflowsManual/cwl_examples.html)
-## [CWL Metadata](/docs/WorkflowsManual/cwl_metadata.html)
-
 # [DataHUB Manual](/docs/DataHUB-Manual/index.html)
 ## [Overview](/docs/DataHUB-Manual/datahub-overview.html)
 ## [User Settings](/docs/DataHUB-Manual/datahub-userSettings.html)
@@ -132,6 +126,11 @@
 
 ## [Work with your ARC](/docs/guides/index-WorkWithYourARC.html)
 ### [Using ARCs with Galaxy](/docs/guides/ARCs-galaxy.html)
+### [Computational Workflows](/docs/guides/ComputationalWorkflows/index.html)
+#### [CWL Introduction](/docs/guides/ComputationalWorkflows/cwl_introduction.html)
+#### [CWL runner installation](/docs/guides/ComputationalWorkflows/cwl_runner_installation.html)
+#### [CWL Examples](/docs/guides/ComputationalWorkflows/cwl_examples.html)
+#### [CWL Metadata](/docs/guides/ComputationalWorkflows/cwl_metadata.html)
 
 ## [Recommended ARC practices](/docs/guides/index-RecommendedARCPractices.html)
 ### [Syncing recommendation](/docs/guides/arc_SyncingRecommendation.html)
