@@ -4,7 +4,7 @@ author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
-date: 2024-03-18
+date: 2024-03-06
 title: CEPLAS ARC Trainings &ndash; Spring 2024
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 add toc: true
@@ -26,11 +26,11 @@ This workshop demonstrates the ARC concept and introduces the DataPLANT tools an
 
 ## Organizer(s)
 
-Contact: Dominik Brilhaus, [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-science-and-data-management)
+Contact: Dominik Brilhaus; [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-science-and-data-management)
 
 ## Registration
 
-➡️ [Please register](https://terminplaner6.dfn.de/de/b/87c954f819c87b27797bc747db30003b-603458) latest **two weeks** before the workshop date.  
+➡️ [Please register](https://terminplaner6.dfn.de/de/b/87c954f819c87b27797bc747db30003b-603458) latest **two weeks** before the workshop date.
 :bulb: Maximum 12 participants per session.
 
 **Full-day**
@@ -103,7 +103,7 @@ Time | Topics
 15:15 - 16:30 | Create your own ARC
 16:30 - 17:00 | Q & A and wrap-up
 
-## Checklist for participants (Full-day only)
+## Checklist for participants
 
 Please prepare the following **before the workshop**.
 
