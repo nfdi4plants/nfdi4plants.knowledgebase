@@ -22,8 +22,7 @@ author:
 - delete SWATE Excel Installation?
 - check sample data and delete tables, isa.study can not be opened by Swate alpha
 - export functions? 
-- Include Update Column
-- Include Right Click menu in general 
+- Move some slides to Swate-Demo?
 - -->
 
 # Swate hands-on
@@ -37,18 +36,17 @@ author:
 
 ---
 
-## Check Swate installation
+## Open Swate standalone
 
 <!-- TODO only use SWATE alpha? -->
 
-:ballot_box_with_check: Make sure [Swate is installed](./../../../SwateManual/Docs01-Installing-Swate.html):
 
-1. Open Excel (online or Desktop)
-2. Go to the `Insert` tab: Click the arrow next to "My Add-ins". There you should be able to select Swate.
-3. Go to the `Data` tab: you should see the Swate (Core) add-in.
 
-:bulb: Alternatively, you can use [Swate standalone](https://swate-alpha.nfdi4plants.org)  
-(:warning: this is however *work in progress* and likely to change)
+  Open [Swate standalone](https://swate-alpha.nfdi4plants.org)  in web browser 
+
+
+:bulb: Alternatively, you can use Swate as [Excel Plugin](./../../../SwateManual/Docs01-Installing-Swate.html), but this is outdated 
+
 
 ---
 
@@ -78,25 +76,10 @@ Recommended text editor with code highlighting, git support, terminal, etc: <a h
 
 ![w:700](./../../../img/arcitect-download-TalinumARC.png)
 
-:bulb: This is basically the ARC we created in the morning.
+:bulb: This is basically the ARC we created in the last session.
 
 ---
 
-## Where we left off last time <!-- TODO delete? Because only one day course? -->
-
-👩‍💻 Initiated an ARC
-📂 Structured and ...  
-🌐 Shared with collaborators
-
-<br>
-
-**Today** we want to
-
-<img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate_c_40x40.png'/> ... **annotate the experimental data**
-
-![bg right:40% width:400](./../../../img/arcitect-talinum-demo-ARC.png)
-
----
 
 # Swate hands-on with demo data
 
@@ -112,7 +95,7 @@ Recommended text editor with code highlighting, git support, terminal, etc: <a h
 
 1. Navigate to the demo ARC. 
 2. Open the lab notes `studies/talinum_drought/protocols/plant_material.txt` in a text editor. 
-   Import the empty `studies/talinum_drought/isa.study.xlsx` file in Swate.
+3. Import the empty `studies/talinum_drought/isa.study.xlsx` file in Swate.
 
 ![width:600](./../../../img/Swate_a_Home.png)
 
@@ -122,7 +105,7 @@ Recommended text editor with code highlighting, git support, terminal, etc: <a h
 
 
 
-Create a Swate annotation table by adding **Buiding blocks** via the widget (A) or the side panel (B)
+Create a Swate annotation table by adding **Buiding blocks** via the widget (A) or the sidebar (B)
 
 
 
@@ -286,7 +269,19 @@ Sometimes you need to add or update the unit of an existing building block.
 
 If there are any Building Blocks which do not fit your experiment you can use right click --> Delete Column to remove it including all related (hidden) reference columns.
 
+---
 
+## Move building blocks
+If the order of the Building blocks should be adjusted you can use right click --> Move Column
+![bg right:40% w:500px](./../../../img/Swate_a_moveColumn.png)
+
+---
+
+## Replace multiple names 
+
+Right click --> Update Column can be used to replace names in batches
+:bulb: this only works on Input columns
+![bg right:40% w:500px](./../../../img/Swate_a_updateColumn.png)
 
 ---
 
@@ -355,8 +350,10 @@ Go ahead, adjust the Building Blocks you want to use to describe your experiment
 Insert values using Swate Term search and add input and output.
 
 ---
-## File Export ??
+## File Export 
 
+- Click **save** button to download the file 
+- can also be exported as [ISA-JSON](https://isa-specs.readthedocs.io/en/latest/isajson.html#) file  
 ---
 <!-- TODO check again, did not work out 20240314, add template button is disabled in Swate alpha -->
 ## Re-use a protocol (process.json)
