@@ -59,8 +59,11 @@ error message* | possible reason | possible solution
 `ERROR: Can not sync with remote as no remote repository address was specified.` | There is no URL specified for your ARC's remote | [Git remote](#git-remote)
 `ERROR: GIT: fatal: repository 'https://git.nfdi4plants.org/UserName/ARCname.git' not found` | The remote URL does not exist | [Git remote](#git-remote)
 `ERROR: GIT: fatal: detected dubious ownership` | This is an error typically seen when working on mounted network drives | [Dubious ownership](#dubious-ownership)
+`fatal: credential-cache unavailable; no unix socket support` | Likely happens on Windows, if a gitconfig `credential.helper=cache` | Adjust the [Git Credential helper](#git-credential-helper) setting
+`fatal: Need to specify how to reconcile divergent branches.` | Your ARC contains multiple branches that progressed independently and need to be merged | Contact a data steward.
+`error: unable to create file <path/to/file> : Filename too long` | Likely occurs on Windows, if your ARC is stored in a deeply nested folder, i.e. a folder in a folder in a folder ...| Store the ARC on a higher level.
 
-:bulb: *typically displayed during synchronization via ARCitect (Versining --> push / pull) or `arc sync`. Even if ARCitect shows "Complete", it's sometimes worth it to scroll up and see these errors.
+:bulb: *typically displayed during synchronization via ARCitect (DataHUB Sync --> push / pull) or `arc sync`. Even if ARCitect shows "Complete", it's sometimes worth it to scroll up and see these errors.
 
 ## Your two favorite Git commands: status and log
 
@@ -149,6 +152,19 @@ git config --global user.email "Your eMail"
 ```bash
 git config --global init.defaultBranch main
 ```
+
+#### Git Credential Helper
+
+The gitconfig contains a setting, whether and how to save git credentials on your machine called `credential.helper`.
+
+On Windows, you might run into the error `fatal: credential-cache unavailable; no unix socket support`, if it is set to `credential.helper=cache`. 
+
+This can be solved by either of the following:
+
+1. Remove "credential.helper=cache" via `git config --global --unset credential.helper`.
+2. Overwrite the setting with "store" instead of "cache" via `git config --global credential.helper store`.
+
+:bulb: If you use ARC commander, we recommend to use the second approach to keep storing your credentials for DataHUB synchronization. 
 
 ## Git remote
 
