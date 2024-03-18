@@ -11,10 +11,14 @@ author:
 - name: Martin Kuhl
   github: https://github.com/Martin-Kuhl
   orcid: https://orcid.org/0000-0002-8493-1077
+-name: Sabrina Zander
+  github: https://github.com/SabrinaZander
+  orcid: https://orcid.org/0009-0000-4569-6126
 ---
 <!-- TODO 
 - change .isa files to Swate alpha Layout?
 - discuss registry of studies and assays -->
+  
 # Metadata and ISA
 
 ---
