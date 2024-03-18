@@ -12,7 +12,9 @@ author:
   github: https://github.com/Martin-Kuhl
   orcid: https://orcid.org/0000-0002-8493-1077
 ---
-
+<!-- TODO 
+- change .isa files to Swate alpha Layout?
+- discuss registry of studies and assays -->
 # Metadata and ISA
 
 ---
@@ -91,7 +93,7 @@ section p img{
 
 # Adding new building blocks (columns)
 
-![w:750](./../../../img/Swate_NewParameter.svg)
+![w:1000](./../../../img/Swate_a_newBuildingBlocks.png)
 
 - Swate can be used for the annotation of **isa.study.xlsx and isa.assay.xlsx** files
 
@@ -107,7 +109,7 @@ section{
 
 </style>
 
-![bg right w:700](./../../../img/Swate_Overview.svg)
+![bg right w:600](./../../../img/Swate_a_Overview.png)
 
 - Source Name (Input)
 - Protocol Columns
@@ -134,7 +136,7 @@ section {
 }
 </style>
 
-![w:750](./../../../img/Swate_OntologyTermSearch.svg)
+![w:750](./../../../img/Swate_a_OntologyTermSearch.png)
 
 Enable **related term directed search** to directly fill cells with child terms
 
@@ -142,7 +144,7 @@ Enable **related term directed search** to directly fill cells with child terms
 
 # Fill your table with ontology terms
 
-![w:800](./../../../img/Swate_OntologyTermSearch2.svg)
+![w:800](./../../../img/Swate_a_OntologyTermSearch2.png)
 
 ---
 
@@ -197,7 +199,7 @@ section {
 - DataPLANT curated
 - Community templates
 
-![bg right w:450](./../../../img/Swate_Templates.svg)
+![bg right w:450](./../../../img/Swate_a_templates.png)
 
 ---
 
@@ -213,4 +215,7 @@ Slides presented here include contributions by
 - name: Martin Kuhl
   github: https://github.com/Martin-Kuhl
   orcid: https://orcid.org/0000-0002-8493-1077
+- name: Sabrina Zander
+  github: https://github.com/SabrinaZander
+  orcid: https://orcid.org/0009-0000-4569-6126
   
