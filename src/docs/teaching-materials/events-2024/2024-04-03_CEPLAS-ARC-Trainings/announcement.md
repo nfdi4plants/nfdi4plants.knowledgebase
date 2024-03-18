@@ -30,7 +30,7 @@ Contact: Dominik Brilhaus; [CEPLAS Data Science](https://www.ceplas.eu/en/resear
 
 ## Registration
 
-➡️ [Please register](https://terminplaner6.dfn.de/de/b/87c954f819c87b27797bc747db30003b-603458) latest **two weeks** before the workshop date.
+➡️ [Please register](https://terminplaner6.dfn.de/de/b/87c954f819c87b27797bc747db30003b-603458) latest **two weeks** before the workshop date.  
 :bulb: Maximum 12 participants per session.
 
 **Full-day**
@@ -103,7 +103,7 @@ Time | Topics
 15:15 - 16:30 | Create your own ARC
 16:30 - 17:00 | Q & A and wrap-up
 
-## Checklist for participants
+## Checklist for participants (full-day)
 
 Please prepare the following **before the workshop**.
 
