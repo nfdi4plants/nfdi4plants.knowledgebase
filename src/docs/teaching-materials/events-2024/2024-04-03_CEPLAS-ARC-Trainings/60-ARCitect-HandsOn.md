@@ -16,6 +16,15 @@ author:
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
 
+<!-- TODO 
+
+- more to remote?
+- add history panel
+- add Swate alpha examples in ARCitect ???
+- check linking studies and assays -->
+
+
+
 # ARCitect Hands-on
 
 <style scoped>section {background: none; background-color: white}</style>
@@ -48,13 +57,14 @@ https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZl
 # Open ARCitect
 
 1. Login to DataHUB (1)
-   ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
-
+   ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
+2. Select `git.nfdi4plants.org` as Host 
+    ![w:800](./../../../img/ARCitect_Choose_DataHUB.png)
 ---
 
 # Initiate the ARC folder structure
 
-![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
+![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
 
 1. Create a **New ARC** (2)
 2. Select a location and name it **TalinumPhotosynthesis**
@@ -72,7 +82,6 @@ https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZl
 
 💡 Make sure that no ARC exists at  `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`. Otherwise you will sync to that ARC.
 
-💡Don't use spaces in ARC's name
 
 ![bg right:30% w:500](./../../../img/ARCitect_TalinumPhotosynthesis.png)
 
@@ -80,15 +89,15 @@ https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZl
 
 # Add a description to your investigation
 
-![w:800](./../../../img/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
+![w:900](./../../../img/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
 
 ---
 
 # Add a contributor
 
 
-![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
-
+![bg right w:600](./../../../img/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
+- you could also add the contacts directly via ORCID
 ---
 
 # Add a study
@@ -111,7 +120,7 @@ In the study panel you can add
 - data process information
 
 ![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_StudyPanel.png)
-
+<!-- TODO show connected assays -->
 ---
 
 
@@ -141,14 +150,14 @@ Link your assays to your **talinum_drought** study
 
 In the assay panel you can
 
-1. link or unlink the assay to studies, and
-2. define the assay's
+<!-- TODO, not possible at the moment or?  1. link or unlink the assay to studies, and --> 
+1. define the assay's
    - measurement type
    - technology type, and
    - technology platform.
 3. add data process information
 
-![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_AssayPanel.png)
+![bg right w:600](./../../../img/ARCitect_TalinumPhotosynthesis_AssayPanel.png)
 
 ---
 
@@ -165,14 +174,13 @@ You can either
 # Add protocols and datasets
 
 In the file tree you can
-  - **add a dataset** and 
+  - **import dataset files or folders** and 
   - **protocols** associated to that dataset.
 
-:bulb: **Add Dataset** allows to import data from any location on your computer into the ARC.
+:bulb: **Import Dataset** allows to import data from any location on your computer into the ARC.
 
 :warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
 
-<!-- Demo dataset cannot be added via add dataset. Only individual files can be added, not multiple folders -->
 
 ![bg right:40% w:400](./../../../img/arcitect-ARCPanel-assay03.png)
 
@@ -180,40 +188,61 @@ In the file tree you can
 
 # Sort Demo Data to your ARC
 
-💡 protocols can directly be imported via ARCitect
+💡 protocols and multiple datasets can directly be imported via ARCitect
 
-💡 to add multiple datasets folders, they have to be added manually via file browser
+
+---
+
+# Explorer
+
+The **Explorer (6)** button directly opens your ARC locally
+
+![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
+
+---
+
+# Commit panel (7)
+
+You have to commit changes before you can upload to the DataHUB
+
+![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
+
+---
+If you are logged in, the **Commit panel** shows
+- your DataHUB's *Full Name* and *eMail*
+
+It allows you to
+- track changes of the ARC with git
+- add a commit message 
+- use different branches 
+
+![bg right:50% w:500](./../../../img/ARCitect_Commit_panel.png)
+
 
 ---
 
 # Upload your local ARC to the DataHUB
 
-From the sidebar, navigate to **Versions** (6)
+From the sidebar, navigate to **DataHUB Sync** (8)
 
-![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
-
----
-
-# Versions
-
-The versions panel allows you to
-- store the local changes to your ARC in form of "commits",
-- sync the changes to the DataHUB, and
-- check the history of your ARC
-
-![bg right w:650](./../../../img/arcitect-VersionsPanel.png)
+![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
 
 ---
 
-# Connection to the DataHUB
 
-If you are logged in, the versions panel shows
-- your DataHUB's *Full Name* and *eMail*
-- the URL of the current ARC in the DataHUB `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`
+# DataHUB Sync
 
-![bg right w:650](./../../../img/arcitect-VersionsPanel.png)
+The DataHUB Sync panel allows you to
+- sync the changes to the DataHUB: **Push**
+- sync from the DataHUB: **Pull**, and
+- change the Remote for the synchronization
 
+
+![bg right:50% w:500](./../../../img/ARCitect_DataHUB_Sync.png) 
+
+<!-- TODO more to remote?-->
 ---
+
 
 # Check if your ARC is successfully uploaded
 

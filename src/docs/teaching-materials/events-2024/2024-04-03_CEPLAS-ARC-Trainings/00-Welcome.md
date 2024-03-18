@@ -38,7 +38,8 @@ Dominik Brilhaus, CEPLAS Data Science
 <style scoped>
 .columns {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 2fr));
+    font-size: 18px;
 }
 </style>
 
@@ -47,21 +48,28 @@ Dominik Brilhaus, CEPLAS Data Science
 
 ## Half-day
 
-- Intro to ARC and demo
-- ARCitect Hands-on
-- Create your ARCs
-- DataHUB Features
+Time | Topics
+-------- | --------
+09:00 - 09:15 | Welcome, Intro RDM and NFDI
+09:15 - 09:30 | Overview DataPLANT, and DataPLANT Tool chain
+09:30 - 10:15 | Demo ARCitect and DataHUB
+10:15 - 10:30 | *Short break*
+10:30 - 11:45 | Demo Metadata annotation with SWATE
+11:45 - 12:00 | Q & A
 
 </div>
 
 <div class="columns-right">
 
-## Full-day
+## Full-day (continues half-day)
 
-- ARC recap session
-- ISA and Metadata
-- Swate Hands-on
-- Annotate data in your ARC
+Time | Topics
+-------- | --------
+12:00 - 13:00 | *Lunch break*
+13:00 - 15:00 | Hands-on ARCitect, DataHUB and Swate
+15:00 - 15:15 | *Short break*
+15:15 - 16:30 | Create your own ARC
+16:30 - 17:00 | Q & A and wrap-up
 
 </div>
 </div>
@@ -98,6 +106,8 @@ Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TR
 2. Monthly user meeting (2nd Friday of the month)
 
 [&rarr; Details](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-support.html).
+
+---
 
 ---
 
