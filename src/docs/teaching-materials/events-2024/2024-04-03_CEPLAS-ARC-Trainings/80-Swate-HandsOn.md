@@ -23,7 +23,7 @@ author:
 - check sample data and delete tables, isa.study can not be opened by Swate alpha
 - export functions? 
 - Include Update Column
-- Include Right Click menu in general 
+- Move some slides to Swate-Demo?
 - -->
 
 # Swate hands-on
@@ -122,7 +122,7 @@ Recommended text editor with code highlighting, git support, terminal, etc: <a h
 
 
 
-Create a Swate annotation table by adding **Buiding blocks** via the widget (A) or the side panel (B)
+Create a Swate annotation table by adding **Buiding blocks** via the widget (A) or the sidebar (B)
 
 
 
@@ -286,7 +286,19 @@ Sometimes you need to add or update the unit of an existing building block.
 
 If there are any Building Blocks which do not fit your experiment you can use right click --> Delete Column to remove it including all related (hidden) reference columns.
 
+---
 
+## Move building blocks
+If the order of the Building blocks should be adjusted you can use right click --> Move Column
+![bg right:40% w:500px](./../../../img/Swate_a_moveColumn.png)
+
+---
+
+## Replace multiple names 
+
+Right click --> Update Column can be used to replace names in batches
+:bulb: this only works on Input columns
+![bg right:40% w:500px](./../../../img/Swate_a_updateColumn.png)
 
 ---
 
