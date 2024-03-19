@@ -95,18 +95,9 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 # Process (e.g. annotate)  <img align="left" class="center" style="height:75px" src='./../../../img/Screenshot-RDMkit-03-process.png'/>
 
-<style scoped>
 
-section p img {
-width: 900px;
-height: 400px;
-object-fit: cover;
-object-position: 50% 60%;
-/* display: block; */;
-}
-</style>
 
-![](./../../../img/Swate_metadataTemplates.png)
+![w:650](./../../../img/Swate_metadataTemplates.png)
 
 <!-- 
 
