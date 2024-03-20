@@ -24,9 +24,13 @@ add sidebar: _sidebars/mainSidebar.md
 
 This workshop demonstrates the ARC concept and introduces the DataPLANT tools and services **ARCitect**, **SWATE** and **DataHUB**. In the hands-on sessions (full-day workshop only) you learn how to build a first ARC for your own research project and annotate the data in your ARC.
 
-## Organizer(s)
+## Organizers
 
-Contact: Dominik Brilhaus; [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-science-and-data-management)
+- Contact: Dominik Brilhaus; [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-science-and-data-management)
+- Additional support by
+  - Sabrina Zander ([MibiNet](https://www.sfb1535.hhu.de/projects/research-area-z/z03))
+  - Eik Dahms, Dan Wang ([TRR341](https://trr341.uni-koeln.de/projects/data-management-z3))
+  - Stella Eggels ([FZJ](https://www.fz-juelich.de/en/ibg/ibg-4/research/research-projects/projects-usadel-group/dataplant-1))
 
 ## Registration
 
@@ -72,7 +76,7 @@ Contact: Dominik Brilhaus; [CEPLAS Data Science](https://www.ceplas.eu/en/resear
 18.04.2024 (Thu) :star:  | Full-day |  09:00 - 17:00  |  HHU  |  28.01.00.011
 25.04.2024 (Thu)  | Full-day |  09:00 - 17:00  |  UoC  | Biozentrum, Bldg 304, Room 1.007
 26.04.2024 (Fri)  | Half-day |  09:00 - 12:00  |  UoC  | Biozentrum, Bldg 304, Room 1.007
-30.04.2024 (Thu) :star:  | Full-day |  09:00 - 17:00  |  HHU  |  26.21.01.36
+30.04.2024 (Tue) :star:  | Full-day |  09:00 - 17:00  |  HHU  |  22.07.U1.025
 23.05.2024 (Thu)  | Full-day |  09:00 - 17:00  |  HHU  |  [ZSL 22.07, Room U1.25](https://www.ceplas.eu/en/contact/how-to-get-there)
 24.05.2024 (Fri)  | Half-day |  09:00 - 12:00  |  HHU  |  [ZSL 22.07, Room U1.21](https://www.ceplas.eu/en/contact/how-to-get-there)
 
