@@ -10,6 +10,11 @@ author:
   orcid: https://orcid.org/0000-0001-9021-3197
 ---
 
+# Introduction to RDM and NFDI
+<!-- _paginate: false -->
+
+---
+
 
 # The research data life cycle
 
@@ -27,29 +32,75 @@ author:
 - Data Life Cycle
 - Status quo HHU / UoC / Jülich
 
+# FAIR
+
+- **F**indable
+- **A**ccessible
+- **I**nteroperable
+- **R**eusable
+
+https://doi.org/10.1038/sdata.2016.18
+
+![bg right:45% w:600](./../nfdi4plants.knowledgebase/src/docs/img/wilkinson2016-FAIR.png)
+
 ---
 
-# NFDI &ndash; 
+# The FAIR principles
+
+<style scoped>
+
+section p img {
+width: 1100px;
+height: 450px;
+object-fit: cover;
+/* object-position: 100% 100%; */
+}
+</style>
+
+![](./../nfdi4plants.knowledgebase/src/docs/img/FAIR_Benefits.png)
 
 ---
 
-# NFDI Constortia
+# Is your data FAIR?
+
+**F**indable | **A**ccessible | **I**nteroperable | **R**eusable
+
+- Where do you store your data?
+- How do you annotate your data?
+- How do you share your data?
+- What tools do you use to analyse your data?
+- How do you reuse other people's data?
+
+![bg right:40% w:500](./../nfdi4plants.knowledgebase/src/docs/img/User_Challenges_002.svg)
 
 ---
 
+# NFDI &ndash; Nationale Forschungsdaten Infrastruktur
 
-# Base4NFDI
+![w:800](./../nfdi4plants.knowledgebase/src/docs/img/nfdi.drawio.png)
 
-![w:700](./../../../img/Base4NFDI_Intro_Poster-RDA-2024_JanderRitter-excerpt.png)
+---
 
-<span class="footer-reference">adapted from Jander, M., & Ritter, X. (2024). Base4NFDI - General Introduction - RDA DE 2024 (Version 1). Research Data Alliance DE, Potsdam. Zenodo. https://doi.org/10.5281/zenodo.10691410</span>
+# NFDI consortia
+
+![w:800](./../nfdi4plants.knowledgebase/src/docs/img/nfdi-consortia.drawio.png)
 
 ---
 
 # NFDI sections
 
+![w:700](././../nfdi4plants.knowledgebase/src/docs/img/nfdi-sections.drawio.png)
 
-![w:700](https://www.base4nfdi.de/images/nicepage-images/MicrosoftTeams-image.png)
+---
 
-<span class="footer-reference">https://www.nfdi.de</span>
+# Base4NFDI
 
+![w:700](./../nfdi4plants.knowledgebase/src/docs/img/Base4NFDI_Intro_Poster-RDA-2024_JanderRitter-excerpt.png)
+
+---
+
+# NFDI activities @ HHU
+
+![w:800](../my-images/nfdi-consortia-hhu.drawio.png)
+
+---
