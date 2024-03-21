@@ -41,7 +41,7 @@ author:
 
 https://doi.org/10.1038/sdata.2016.18
 
-![bg right:45% w:600](./../nfdi4plants.knowledgebase/src/docs/img/wilkinson2016-FAIR.png)
+![bg right:45% w:600](./../../../img/wilkinson2016-FAIR.png)
 
 ---
 
@@ -57,7 +57,7 @@ object-fit: cover;
 }
 </style>
 
-![](./../nfdi4plants.knowledgebase/src/docs/img/FAIR_Benefits.png)
+![](./../../../img/FAIR_Benefits.png)
 
 ---
 
@@ -71,36 +71,30 @@ object-fit: cover;
 - What tools do you use to analyse your data?
 - How do you reuse other people's data?
 
-![bg right:40% w:500](./../nfdi4plants.knowledgebase/src/docs/img/User_Challenges_002.svg)
+![bg right:40% w:500](./../../../img/User_Challenges_002.svg)
 
 ---
 
 # NFDI &ndash; Nationale Forschungsdaten Infrastruktur
 
-![w:800](./../nfdi4plants.knowledgebase/src/docs/img/nfdi.drawio.png)
+![w:800](./../../../img/nfdi.drawio.png)
 
 ---
 
 # NFDI consortia
 
-![w:800](./../nfdi4plants.knowledgebase/src/docs/img/nfdi-consortia.drawio.png)
+![w:800](./../../../img/nfdi-consortia.drawio.png)
 
 ---
 
 # NFDI sections
 
-![w:700](././../nfdi4plants.knowledgebase/src/docs/img/nfdi-sections.drawio.png)
+![w:700](././../../../img/nfdi-sections.drawio.png)
 
 ---
 
 # Base4NFDI
 
-![w:700](./../nfdi4plants.knowledgebase/src/docs/img/Base4NFDI_Intro_Poster-RDA-2024_JanderRitter-excerpt.png)
-
----
-
-# NFDI activities @ HHU
-
-![w:800](../my-images/nfdi-consortia-hhu.drawio.png)
+![w:700](./../../../img/Base4NFDI_Intro_Poster-RDA-2024_JanderRitter-excerpt.png)
 
 ---
