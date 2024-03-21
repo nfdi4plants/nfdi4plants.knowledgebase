@@ -18,11 +18,8 @@ author:
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
 <!-- TODO 
-
-- delete SWATE Excel Installation?
-- check sample data and delete tables, isa.study can not be opened by Swate alpha
-- export functions? 
 - Move some slides to Swate-Demo?
+- Re-use a protocol (process.json) did not work 
 - -->
 
 # Swate hands-on
@@ -105,7 +102,7 @@ Recommended text editor with code highlighting, git support, terminal, etc: <a h
 
 
 
-Create a Swate annotation table by adding **Buiding blocks** via the widget (A) or the sidebar (B)
+Create a Swate annotation table by adding *Buiding blocks* via the widget (A) or the sidebar (B)
 
 
 
@@ -119,7 +116,7 @@ Create a Swate annotation table by adding **Buiding blocks** via the widget (A) 
 
 ---
 
-## Add more building blocks
+## Add more Building blocks
 
 1. Add an *Input* (`Source Name`) and *Output* (`Sample Name`) column
 2. Select *Characteristic* from the drop-down menu
@@ -136,7 +133,7 @@ Create a Swate annotation table by adding **Buiding blocks** via the widget (A) 
 ## Insert values to annotate your data
 
 1. Insert values by selecting any cell below `Characteristic [organism]`
-2. Use free text or activate the magnifying glass to activate *Term* search
+2. Use free text or use the magnifying glass to activate *Term* search
 3. Write "Talinum fruticosum" and enable *Term* search
 4. Select the hit 
 
@@ -145,7 +142,7 @@ Create a Swate annotation table by adding **Buiding blocks** via the widget (A) 
 
 ---
 
-## Add a building block with a unit
+## Add a Building block with a unit
 
 1. In the *Building Blocks* widget, select *Parameter*, search for `light intensity exposure` and select the term with id `PECO:0007224`.
 2. Check the box for *Unit* and search for `microeinstein per square meter per second` in the adjacent search bar.
@@ -176,16 +173,7 @@ Use double pointed quotation mark to un-hide hidden columns.
 
 
 ---
-<!-- TODO delete? ? 
-## Update ontology reference columns
 
-Click the <kbd>Update Ontology Terms</kbd> quick access buttons.
-
-:bulb: This updates all reference columns according to the main column. In this case the reference columns for `Parameter [light intensity exposure]` are updated with the id and source ontology of the `microeinstein per square meter per second` unit.
-
----
-
--->
 ## Your ISA table is growing
 
 At this point. Your table should look similar to this:
@@ -198,7 +186,7 @@ At this point. Your table should look similar to this:
 
 ## Exercise :pencil:
 
-Try to add suitable *building blocks* for other pieces of metadata from the plant growth protocol (`studies/talinum_drought/protocols/plant_material.txt`).
+Try to add suitable *Building Blocks* for other pieces of metadata from the plant growth protocol (`studies/talinum_drought/protocols/plant_material.txt`).
 
 ---
 
@@ -235,7 +223,7 @@ Transfer the sample ids from the protocol.
 
 1. Navigate to the demo ARC. 
 2. Open the lab notes `assays/rnaseq/protocols/RNA_extraction.txt` in a text editor.
-3. Open the empty `assays/rnaseq/isa.assay.xlsx` workbook in Excel.
+3. Import the empty `assays/rnaseq/isa.assay.xlsx` workbook in Swate.
 
 ---
 
@@ -246,40 +234,28 @@ Transfer the sample ids from the protocol.
 :bulb: Here you can find DataPLANT and community created workflow annotation templates
 
 1. Search for `RNA extraction` and click <kbd>select</kbd> 
-    - You will see a preview of all building blocks which are part of this template.
-2. Click <kbd>Add template</kbd> to add all Building Blocks from the template to your table, which <u>do not exist yet</u>.
+    - You will see a preview of all *Building Blocks* which are part of this template.
+2. Click <kbd>Add template</kbd> to add all *Building Blocks* from the template to your table, which <u>do not exist yet</u>.
 
 ![bg right:40% w:500px](./../../../img/swate_a_templates.png)
 
 ---
-<!-- TODO delete? ? 
-## Adding / Updating unit references
 
-Sometimes you need to add or update the unit of an existing building block. 
+## Remove Building blocks
 
-1. Select any number of rows of the `Parameter [biosource amount]` building block to mark it for the next steps.
-2. Open the *Building Blocks* tab
-3. In the bottom panel "Add/Update unit reference to existing building block", search for the unit "milligram". Select the unit term and click <kbd>Update unit for cells</kbd>.
-:bulb: If you already had values in the main column they will be updated automatically.
-4. Click the *Update Ontology Terms* <a href="./../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
-   
----
--->
-## Remove building blocks
-
-If there are any Building Blocks which do not fit your experiment you can use right click --> Delete Column to remove it including all related (hidden) reference columns.
+If there are any *Building Blocks* which do not fit to your experiment you can use right click --> "Delete Column" to remove it including all related (hidden) reference columns.
 
 ---
 
-## Move building blocks
-If the order of the Building blocks should be adjusted you can use right click --> Move Column
+## Move Building blocks
+If the order of the *Building Blocks* should be adjusted you can use right click --> "Move Column"
 ![bg right:40% w:500px](./../../../img/Swate_a_moveColumn.png)
 
 ---
 
 ## Replace multiple names 
 
-Right click --> Update Column can be used to replace names in batches
+Right click --> "Update Column" can be used to replace names in batches
 :bulb: this only works on Input columns
 ![bg right:40% w:500px](./../../../img/Swate_a_updateColumn.png)
 
@@ -346,16 +322,16 @@ M1 ---P6--> D2
 
 ## Your ISA table is ready 🎉
 
-Go ahead, adjust the Building Blocks you want to use to describe your experiment as you see fit.
+Go ahead, adjust the *Building Blocks* you want to use to describe your experiment as you see fit.
 Insert values using Swate Term search and add input and output.
 
 ---
 ## File Export 
 
 - Click **save** button to download the file 
-- can also be exported as [ISA-JSON](https://isa-specs.readthedocs.io/en/latest/isajson.html#) file  
+- file can also be exported as [ISA-JSON](https://isa-specs.readthedocs.io/en/latest/isajson.html#) file  
 ---
-<!-- TODO check again, did not work out 20240314, add template button is disabled in Swate alpha -->
+<!-- TODO check again, did not work out 2024-03-14, add template button is disabled in Swate alpha -->
 ## Re-use a protocol (process.json)
 
 1. Import the empty `assays/metabolomics/isa.assay.xlsx)` workbook in Swate.
