@@ -100,10 +100,7 @@ Recommended text editor with code highlighting, git support, terminal, etc: <a h
 
 ## Create an annotation table
 
-
-
-Create a Swate annotation table by adding *Buiding blocks* via the widget (A) or the sidebar (B)
-
+Create a Swate annotation table by adding **Building blocks** via the widget (A) or the sidebar (B)
 
 
 :bulb: Each table can contain only one *Input* and one *Output* column  
@@ -366,6 +363,7 @@ Example workflows with three *processes* each:
 # :construction: Known issues with ARCitect and Swate (April 2024)
 
 
+:bulb: Swate Desktop outdated
 
 ---
 

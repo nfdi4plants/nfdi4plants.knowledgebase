@@ -186,7 +186,7 @@ section {
 
 # Realization of lab-specific metadata templates
 
-![w:850px](./../../../img/SWATE_metadataTemplates.png)
+![w:650px](./../../../img/SWATE_metadataTemplates.png)
 
 Facilities can define their most common workflows as templates
 
