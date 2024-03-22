@@ -31,8 +31,8 @@ Before contributing Swate templates you ideally have
 
 - :ballot_box_with_check: Access to [Swate-alpha](https://swate-alpha.nfdi4plants.org/)
 - :ballot_box_with_check: Some routine with Swate (e.g. from the Swate manual and quickstarts)
-  - you know how to create an [Annotation Table](./../SwateManual/Docs02-Annotation-Table.html)
-  - you know how to [add building blocks](./../SwateManual/Docs03-Building-Blocks.html) to your annotation table
+  - you know how to create an [Annotation Table](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs02-Annotation-Table.html)
+  - you know how to [add building blocks](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs03-Building-Blocks.html) to your annotation table
   - you know the annotation principles
 - :ballot_box_with_check: A [GitHub](https://github.com) account and some routine with GitHub
 - :bulb: Feel free to contact us for Data Steward support, if you are not familiar to GitHub or Swate, but would like to contribute a Swate template for your community
@@ -106,8 +106,8 @@ To add the building blocks of your actual template, you need to switch from the 
 - Keep the template as concise as possible
 - 👀 If you miss a term or ontology, please follow the [DPBO contribution guide](https://github.com/nfdi4plants/nfdi4plants_ontology) to let us know
 - If you add a template to address a missing method, try to add building blocks that cover experimental procedures (as Parameters) and features of the sample (as Characteristics) that the experimenter would use when working on an experiment of that type
-- Try to think about in which order the experimenter in the lab will do their work. Try to match this chronological order from left to right. The normal order of the columns is: **Input** -> (all the Parameters and Characteristics in between in chronological order) -> **Output** -or- **Raw Data File** -or- **Derived Data File**. This step is optional and only meant to increase readability.
-- If you would like to save any background information on your template, that would help others reconstruct the creation of the template, you can save it in the [Swate-templates GitHub repository](https://github.com/nfdi4plants/Swate-templates). For this, please create a folder with the name of your template in the "Background information" folder. 
+- The normal order of the columns is: **Input** -> (all the Parameters and Characteristics in between in chronological order) -> **Output** -or- **Raw Data File** -or- **Derived Data File**. Try to think about in which order the experimenter in the lab will do their work. Try to match this chronological order from left to right. This step is optional and only meant to increase readability.
+- If you would like to save any background information on your template, that would help others reconstruct the creation of the template, you can save it in the [Swate-templates GitHub repository](https://github.com/nfdi4plants/Swate-templates/tree/main/background%20information). For this, please create a folder with the name of your template in the "Background information" folder. 
 - Avoid using the building block type `Factor` in templates. Any given characteristic or parameter in one study or assay can become a factor in another study or assay depending on the experimental context or scientific question. E.g. in one study all samples originate from the same `species` (-> Characteristic) whereas in another study multiple `species` where assayed (-> Factor). 
 </br>
 
@@ -124,7 +124,7 @@ To add the building blocks of your actual template, you need to switch from the 
 ### Save your template
 
 Save your template by clicking on the disc symbol in the top right corner. This will download an xlsx-file. Please adjust the name of the file to correspond to the name of the template, but use underscores instead of spaces.
-Save the Excel file in a suitable folder within your local clone of the Swate templates repository.
+Save the file in a suitable folder within your local clone of the Swate templates repository.
 </br>
 
 
