@@ -65,7 +65,7 @@ Before contributing Swate templates you ideally have
 ### Create or open a Swate template
 
 Open [Swate-alpha](https://swate-alpha.nfdi4plants.org/). To create a new template click "New File" and select "Template". If you want to edit an existing template, click "Import" and select the respective file. 
-![img1](./../img/Swate-alpha-newtemplate.png) 
+<img src="./../img/Swate-alpha-newtemplate.png" style="height: 100px">
 
 ### Add Template Metadata
 
