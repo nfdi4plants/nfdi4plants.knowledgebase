@@ -22,20 +22,10 @@ This tutorial guides you how to create Swate metadata templates with [Swate-alph
   <span class="badge-category">User</span><span class="badge-selected" id="badge-datasteward">Data Steward</span>
   <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
 </a>
-<br>
-<br>
+ </br>
+ </br>
 
 ## Before we can start
-
-<style scoped>
-#before-start ul{
-    list-style-type: none;
-    margin-left: 0px;
-    padding-left: 10;
-}
-</style>
-
-<div id="before-start">
 
 Before contributing Swate templates you ideally have
 
@@ -47,7 +37,7 @@ Before contributing Swate templates you ideally have
 - :ballot_box_with_check: A [GitHub](https://github.com) account and some routine with GitHub
 - :bulb: Feel free to contact us for Data Steward support, if you are not familiar to GitHub or Swate, but would like to contribute a Swate template for your community
 
-</div>
+ </br>
 
 ## Git Workflow to add or edit templates
 
@@ -59,7 +49,8 @@ Before contributing Swate templates you ideally have
 6. Commit, push and [sync your branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork).
 7. Open a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
    > 👀 You can **reference your issue** typing `#` in the pull request's commenting dialog
- </br>
+
+</br>
 
 ## Creating a new Swate template
 
@@ -76,7 +67,6 @@ Open [Swate-alpha](https://swate-alpha.nfdi4plants.org/). To create a new templa
 
 Once you open a new template, you will see a "Metadata" sheet. Here you will enter a name for the template as well as further information describing the template. You can find explanations of the necessary information in the table below.
 </br> 
-</br>
 
 
 #### Template Metadata Explanation
@@ -91,9 +81,8 @@ Key | Definition | Tip :bulb:
 **Tags** |  You can add any number of tags here. These tags are the basis to search for your template. | If possible add them as ontology terms with source ontology (TSR) and unique identifier (TAN). If similar tags already exist, consider reusing the existing ones.
 **Endpoint Repositories** |  If your template complies with the requirements of an endpoint repository, you can add the respective repository here. | You may want to add them as ontology terms with source (TSR) and identifier (TAN).
 **Authors** |  Add your name/alias here with as much information as you like.
-</br>
-</br>
 
+</br>
 
 #### Template Metadata Example
 
@@ -101,6 +90,7 @@ Here is an example for filled out template metadata and how it helps in Swate's 
 </br>
 
 ![img1](./../img/Swate-alpha-metadata.png) 
+ </br>
 
 ### Add building blocks
 
@@ -120,7 +110,7 @@ To add the building blocks of your actual template, you need to switch from the 
 - If you would like to save any background information on your template, that would help others reconstruct the creation of the template, you can save it in the [Swate-templates GitHub repository](https://github.com/nfdi4plants/Swate-templates). For this, please create a folder with the name of your template in the "Background information" folder. 
 - Avoid using the building block type `Factor` in templates. Any given characteristic or parameter in one study or assay can become a factor in another study or assay depending on the experimental context or scientific question. E.g. in one study all samples originate from the same `species` (-> Characteristic) whereas in another study multiple `species` where assayed (-> Factor). 
 </br>
-</br>
+
 
 #### Recommendations for adding endpoint repository templates
 - When creating a template to comply with repository requirements, please follow the following naming pattern: "Repository" - "Assay", e.g. MetaboLights - MS measurement
@@ -130,21 +120,19 @@ To add the building blocks of your actual template, you need to switch from the 
 - If applicable, templates should be split into different assays.
 - Templates should be checked for validity of requirements every ~ 6 months.
 </br>
-</br>
 
 ### Save your template
 
 Save your template by clicking on the disc symbol in the top right corner. This will download an xlsx-file. Please adjust the name of the file to correspond to the name of the template, but use underscores instead of spaces.
 Save the Excel file in a suitable folder within your local clone of the Swate templates repository.
 </br>
-</br>
+
 
 ### Your template is ready for upload :tada:
 
 - Well done! You created a new template.
 - You can now submit your template via the git workflow described above.
 - Once your pull request is merged, you will receive an Email from "Swobup Commit Report"
-</br>
 </br>
 
 
