@@ -43,12 +43,15 @@ author:
 
 ---
 
-# Study and assay files are registered in the investigation file <!-- fit -->
+<!-- # Study and assay files are registered in the investigation file 
+
+not true at the moment !!!!
 
 ![w:950](./../../../img/ISAmodel_ARC01_img04.svg)
 
----
 
+---
+-->
 # The output of a study or assay file can function as input for a new isa.assay.xlsx
 
 Output building blocks:
@@ -183,7 +186,7 @@ section {
 
 # Realization of lab-specific metadata templates
 
-![w:850px](./../../../img/SWATE_metadataTemplates.png)
+![w:650px](./../../../img/SWATE_metadataTemplates.png)
 
 Facilities can define their most common workflows as templates
 

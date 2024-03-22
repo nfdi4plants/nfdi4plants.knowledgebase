@@ -73,18 +73,7 @@ date: 2023-02-02
 
 ## Annotate your data
 
-<style scoped>
-
-section p img {
-width: 900px;
-height: 400px;
-object-fit: cover;
-object-position: 50% 60%;
-/* display: block; */;
-}
-</style>
-
-![](./../../../img/Swate_metadataTemplates.png)
+![w:700](./../../../img/Swate_metadataTemplates.png)
 
 <!-- 
 1. Fill study characteristics (completely manually)

@@ -147,7 +147,7 @@ $schemas:
 Examples for this can be found [here](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/blob/CWLExamples/workflows/FixedScript/FSharpArcCapsule.cwl) 
 for the cwl file and [here](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/blob/CWLExamples/runs/FSharpArcCapsule.yml) for the job file.
 
-An application example including metadata can be found [here](https://git.nfdi4plants.org/zimmer/TurboIDSampleArc/-/tree/CWL). It contains a [CWL](https://git.nfdi4plants.org/zimmer/TurboIDSampleArc/-/blob/CWL/workflows/EvalTurboID/TurboIDSampleArc.cwl) 
-file with the ARC mounted and a fixed script. The CWL file has two mandatory and one optional parameter. There is one [job file](https://git.nfdi4plants.org/zimmer/TurboIDSampleArc/-/blob/CWL/runs/TurboIDSampleArc.yml) 
-for the execution without the optional parameter and one [job file](https://git.nfdi4plants.org/zimmer/TurboIDSampleArc/-/blob/CWL/runs/TurboIDSampleArcFDR.yml) for 
+An application example including metadata can be found [here](https://git.nfdi4plants.org/zimmer/TurboIDSampleArc/-/tree/main). It contains a [CWL](https://git.nfdi4plants.org/zimmer/TurboIDSampleArc/-/blob/main/workflows/EvalTurboID/TurboIDSampleArc.cwl) 
+file with the ARC mounted and a fixed script. The CWL file has two mandatory and one optional parameter. There is one [job file](https://git.nfdi4plants.org/zimmer/TurboIDSampleArc/-/blob/main/runs/TurboIDSampleArc.yml) 
+for the execution without the optional parameter and one [job file](https://git.nfdi4plants.org/zimmer/TurboIDSampleArc/-/blob/main/runs/TurboIDSampleArcFDR.yml) for 
 the execution with the optional parameter. The metadata between the two job files differs by the metadata concerning the optional parameter.
