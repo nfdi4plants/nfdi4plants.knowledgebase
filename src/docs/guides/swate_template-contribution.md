@@ -89,28 +89,9 @@ Key | Definition | Tip :bulb:
 
 #### Template Metadata Example
 
-<style scoped>
-.columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 50px;
-}
-
-</style>
 
 Here is an example for filled out template metadata and how it helps in Swate's template search.
-
-<div class="columns">
-
-<div class="columns-left">
-<img src="./../img/Swate-alpha-metadata-example.png">
-</div>
-
-<div class="columns-right">
-<img src="./../img/Swate-alpha-templateselection.png">
-</div>
-
-</div>
+![img1](./../img/Swate-alpha-metadata.png) 
 
 
 ### Add building blocks
