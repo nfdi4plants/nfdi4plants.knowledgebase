@@ -28,12 +28,6 @@ author:
 
 # FAIR data stewardship
 
-- FAIR
-- Data Life Cycle
-- Status quo HHU / UoC / Jülich
-
-# FAIR
-
 - **F**indable
 - **A**ccessible
 - **I**nteroperable
@@ -42,6 +36,13 @@ author:
 https://doi.org/10.1038/sdata.2016.18
 
 ![bg right:45% w:600](./../../../img/wilkinson2016-FAIR.png)
+
+
+# FAIR data stewardship
+
+- FAIR
+- Data Life Cycle
+- Status quo HHU / UoC / Jülich
 
 ---
 
