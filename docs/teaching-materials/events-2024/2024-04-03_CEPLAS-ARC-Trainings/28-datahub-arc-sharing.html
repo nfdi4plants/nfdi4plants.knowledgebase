@@ -571,13 +571,89 @@
         last updated at 2024-03-12
       </i>
       <nfdi-toc></nfdi-toc>
-      <nfdi-h1 id="on-premise-datahubs">On premise DataHUBs</nfdi-h1>
+      <nfdi-h1 id="sharing-arcs-via-the-datahub">Sharing ARCs via the DataHUB</nfdi-h1>
+<hr />
+<nfdi-h1 id="datahub-concepts-and-terminology">DataHUB concepts and terminology</nfdi-h1>
+<hr />
+<nfdi-h1 id="projects-and-groups-are-not-the-same"><strong>Projects</strong> and <strong>Groups</strong> are not the same</nfdi-h1>
 <ul>
-<li>central DataHUB:</li>
+<li>Project = ARC</li>
+<li>Groups = Group of users</li>
 </ul>
 <hr />
-<nfdi-h1 id="hhu-datahub-planned">HHU-DataHUB (planned)</nfdi-h1>
-<p><img src="HHU-DataHUB.drawio.png" alt="w:800" /></p>
+<nfdi-h2 id="project-arc">Project = ARC</nfdi-h2>
+<ul>
+<li>In the DataHUB, ARCs are called &quot;projects&quot;; they are the same.</li>
+<li>An ARC can be shared with individual users (invited as &quot;members&quot;) or a group.</li>
+</ul>
+<hr />
+<nfdi-h2 id="datahub-groups">DataHUB Groups</nfdi-h2>
+<ul>
+<li>A &quot;Group&quot; is a group of users with specific <a href="#roles-and-permissions">permissions</a></li>
+<li>A group can share ARCs</li>
+<li>A group can be invited to an ARC</li>
+<li>Groups can have subgroups</li>
+</ul>
+<hr />
+<nfdi-h1 id="namespaces">Namespaces</nfdi-h1>
+<ul>
+<li>Every user has a personal namespace, where they can upload or create new ARCs.</li>
+<li>Every <a href="#datahub-groups">group and subgroup</a> has an own namespace, respectively.</li>
+</ul>
+<div class="table-container" style="font-size: 25px">
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>URL</th>
+<th>Namespace</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A <strong>personal</strong> ARC</td>
+<td><a href="https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum">https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum</a></td>
+<td><code>brilator</code></td>
+<td>Dominik Brilhaus</td>
+</tr>
+<tr>
+<td>An <strong>group</strong>-shared ARC</td>
+<td><a href="https://git.nfdi4plants.org/hhu-plant-biochemistry/Samuilov-2018-BOU-PSP">https://git.nfdi4plants.org/hhu-plant-biochemistry/Samuilov-2018-BOU-PSP</a></td>
+<td><code>hhu-plant-biochemistry</code></td>
+<td>HHU Plant Biochemistry</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>💡 &quot;Personal&quot; is not the same as &quot;private&quot;, see <a href="#visibility">visibility</a>.</p>
+<hr />
+<nfdi-h2 id="visibility">Visibility</nfdi-h2>
+<p>The visibility of ARCs and groups can be managed individually for each ARC (see <a href="./../DataHUB-Manual/datahub-ARCSettings.html">ARC settings</a>) or group see (<a href="./../DataHUB-Manual/datahub-CreateGroup.html">Creating a Group</a>).</p>
+<ul>
+<li><strong>Private</strong> – Access must be granted explicitly to each user or a group.</li>
+<li><strong>Internal</strong> – Can be accessed by any logged in user.</li>
+<li><strong>Public</strong> – Can be accessed without authentication.</li>
+</ul>
+<p>💡 By default every ARC and every group is set to <strong>private</strong>.</p>
+<hr />
+<nfdi-h2 id="roles-and-permissions">Roles and permissions</nfdi-h2>
+<p>If you create or upload an ARC to the DataHUB, you are the <em>Owner</em> by default.
+When inviting new members to an ARC or group, you can choose between different levels.</p>
+<ul>
+<li><strong>Guest</strong> – Has the least rights. They will not be able to see the content of an ARC (only the wiki page).</li>
+<li><strong>Reporter</strong> – Has read access to your ARC. This is recommended for people you ask for consultancy.</li>
+<li><strong>Developer</strong> – The choice for most people you want to invite to your ARC. Developers have read and write access, but cannot maintain the project on the DataHUB, e.g. invite new members.</li>
+<li><strong>Maintainer</strong> – Has read and write access and can add or remove members, except for yourself. This is the minimum role recommended for inviting group leaders as it allows them to add their group members for data upload or analysis to the project.</li>
+<li><strong>Owner</strong> – An owner has basically all rights to the ARC. They can delete or transfer the ARC and manage user memberships.</li>
+</ul>
+<p>💡 A detailed list of all permissions for the individual roles can be found <a href="https://docs.gitlab.com/ee/user/permissions.html">here</a></p>
+<hr />
+<nfdi-h2 id="arc-members-in-the-datahub-are-not-the-same-as-arc-contacts-in-isa-metadata">ARC members in the DataHUB are not the same as ARC contacts in ISA metadata</nfdi-h2>
+<p>💡 Members, groups, and roles set via the DataHUB can easily be confused with contributors added as ISA metadata to an ARC, e.g. collaborators added to investigation, study or assay. These are not the same and they are not automatically synced.</p>
+<hr />
+<nfdi-h2 id="options-to-share-an-arc-via-the-datahub">Options to share an ARC via the DataHUB</nfdi-h2>
+<img src="./../../../img/arc-sharing.drawio.png" style="display: block; margin: auto; object-fit: cover; object-position: 100% 0%; width: 600px; height: 450px;">
 
       <h3>
         DataPLANT Support
@@ -602,7 +678,7 @@
           </a>
         </div>
         <div>
-          <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/teaching-materials/events-2024/2024-04-03_CEPLAS-ARC-Trainings/42-DataHUB-onPremise-CEPLAS-TRR.md" style="display: block;">
+          <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/teaching-materials/events-2024/2024-04-03_CEPLAS-ARC-Trainings/28-datahub-arc-sharing.md" style="display: block;">
             ✏️ Edit this page
           </a>
         </div>
