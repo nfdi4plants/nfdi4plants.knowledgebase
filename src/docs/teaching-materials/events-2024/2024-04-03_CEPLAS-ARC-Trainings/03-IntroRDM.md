@@ -35,14 +35,6 @@ https://doi.org/10.1038/sdata.2016.18
 
 ---
 
-# FAIR data stewardship
-
-- FAIR
-- Data Life Cycle
-- Status quo HHU / UoC / Jülich
-
----
-
 # The FAIR principles
 
 <style scoped>
