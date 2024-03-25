@@ -10,15 +10,11 @@ author:
   orcid: https://orcid.org/0000-0001-9021-3197
 ---
 
-# Introduction to RDM and NFDI
-<!-- _paginate: false -->
+# Introduction to RDM
 
 ---
 
-
 # The research data life cycle
-
-<br>
 
 ![w:350](./../../../img/RDMkit-data_life_cycle_9.svg)
 
@@ -27,12 +23,6 @@ author:
 ---
 
 # FAIR data stewardship
-
-- FAIR
-- Data Life Cycle
-- Status quo HHU / UoC / Jülich
-
-# FAIR
 
 - **F**indable
 - **A**ccessible
@@ -72,29 +62,3 @@ object-fit: cover;
 - How do you reuse other people's data?
 
 ![bg right:40% w:500](./../../../img/User_Challenges_002.svg)
-
----
-
-# NFDI &ndash; Nationale Forschungsdaten Infrastruktur
-
-![w:800](./../../../img/nfdi.drawio.png)
-
----
-
-# NFDI consortia
-
-![w:800](./../../../img/nfdi-consortia.drawio.png)
-
----
-
-# NFDI sections
-
-![w:700](././../../../img/nfdi-sections.drawio.png)
-
----
-
-# Base4NFDI
-
-![w:700](./../../../img/Base4NFDI_Intro_Poster-RDA-2024_JanderRitter-excerpt.png)
-
----
