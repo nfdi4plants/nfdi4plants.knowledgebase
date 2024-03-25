@@ -3,7 +3,7 @@ marp: true
 paginate: true
 theme: marp-theme_dataplant-ceplas-ccby
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-title: ARC Ecosystem Demo
+title: Overview DataPLANT
 date: 2023-11-14
 author:
 - name: Dominik Brilhaus
@@ -15,7 +15,7 @@ author:
 
 ---
 
-# Data Stewardship between DataPLANT and the community  <!-- fit -->
+# Data Stewardship between DataPLANT and the community
 
 ![w:880](./../../../img/DataPLANT-collaborationCEPLAS.drawio.png)
 
@@ -60,7 +60,6 @@ Your entire investigation in a single unified bag
 <span class="footer-reference">https://isa-tools.org/ | https://www.commonwl.org/
 https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
-
 ---
 
 # The DataPLANT DataHUB &ndash; a GitLab ***Plus***
@@ -93,16 +92,6 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 ---
 
-<!-- 
-
-
-# Share and collaborate
-
-![w:700](./../../../img/ARC_DataSharing_Experts02_img1.png)
-
---- -->
-
-
 # Tool assistance
 
 ![w:1000](./../../../img/arc-tool-assistance.drawio.png)
@@ -128,17 +117,58 @@ Facilities and labs can define their common workflows as templates
 
 ---
 
-# Preserve and publish
 
-![h:400](./../../../img/tpj16474-fig-0008-m.jpg)
+# From ARC to repositories
 
-<span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
+<style scoped>
+
+section p img {
+width: 1000px;
+height: 400px;
+object-fit: cover;
+object-position: 100% 80%;
+/* display: block; */;
+}
+</style>
+
+![](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/ARC_Repository03_img1.png)
 
 ---
 
-# ARC as single-entry point
+# Moving from paper to data publications
 
-![w:900](./../../../img/ARC-publication-outlets.drawio.png)
+![w:400px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/DataPLANT_LandingPage_Mission.svg)
+
+
+---
+
+# Publish your ARC, get a DOI
+
+![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/ARC_SeamlessPublication.svg)
+
+---
+
+# Publish your ARC with a few clicks
+
+![w:900px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/cqc-results.png)
+
+---
+
+# Validation
+
+
+![h:400](./../../../img/tpj16474-fig-0008-m-modified.png)
+
+<span class="footer-reference"> adapted from Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
+
+---
+
+# Validate & publish
+
+
+![h:400](././../../../img/tpj16474-fig-0008-m.jpg)
+
+<span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
 ---
 
@@ -148,24 +178,23 @@ Facilities and labs can define their common workflows as templates
 
 ---
 
-<!-- 
-# Reuse
+# Receive a DOI
 
-![w:800](./../../../img/tpj16474-fig-0001-m.jpg)
-
-<span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
+![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/doi-accession.png)
 
 ---
 
--->
+# ARC as single-entry point
+
+![w:900](./../../../img/ARC-publication-outlets.drawio.png)
+
+---
 
 # Enabling platforms
 
 ![w:800](./../my-images/ceplas-enablingPlatforms.drawio.png)
 
-
 ---
-
 
 # Mutable data life cycle
 
@@ -197,7 +226,6 @@ https://dmpg.nfdi4plants.org
 
 ![w:850](./../../../img/ARC-ecosystem-10.drawio.png)
 
----
 
 ---
 
