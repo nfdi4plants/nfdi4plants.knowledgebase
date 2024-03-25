@@ -568,40 +568,32 @@
         Swate Templates Contribution Guide
       </h1>
       <i class="help">
-        last updated at 2023-08-14
+        last updated at 2024-03-22
       </i>
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
-<p>This tutorial guides you how to create and share Swate metadata templates.</p>
+<p>This tutorial guides you how to create Swate metadata templates with <a href="https://swate-alpha.nfdi4plants.org/">Swate-alpha</a>.</p>
 <a href="./index.html">
   <span class="badge-category">User</span><span class="badge-selected" id="badge-datasteward">Data Steward</span>
   <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
 </a>
-<br>
-<br>
+ </br>
+ </br>
 <nfdi-h2 id="before-we-can-start">Before we can start</nfdi-h2>
-<style scoped>
-#before-start ul{
-    list-style-type: none;
-    margin-left: 0px;
-    padding-left: 10;
-}
-</style>
-<div id="before-start">
 <p>Before contributing Swate templates you ideally have</p>
 <ul>
-<li>☑️ Access to an up-to-date <a href="./../SwateManual/Docs01-Installing-Swate.html">installation</a> of <strong>Swate Core</strong> and <strong>Swate Experts</strong></li>
+<li>☑️ Access to <a href="https://swate-alpha.nfdi4plants.org/">Swate-alpha</a></li>
 <li>☑️ Some routine with Swate (e.g. from the Swate manual and quickstarts)
 <ul>
-<li>you know how to create an <a href="./../SwateManual/Docs02-Annotation-Table.html">Annotation Table</a></li>
-<li>you know how to <a href="./../SwateManual/Docs03-Building-Blocks.html">add building blocks</a> to your annotation table</li>
+<li>you know how to create an <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs02-Annotation-Table.html">Annotation Table</a></li>
+<li>you know how to <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs03-Building-Blocks.html">add building blocks</a> to your annotation table</li>
 <li>you know the annotation principles</li>
 </ul>
 </li>
 <li>☑️ A <a href="https://github.com">GitHub</a> account and some routine with GitHub</li>
 <li>💡 Feel free to contact us for Data Steward support, if you are not familiar to GitHub or Swate, but would like to contribute a Swate template for your community</li>
 </ul>
-</div>
+ </br>
 <nfdi-h2 id="git-workflow-to-add-or-edit-templates">Git Workflow to add or edit templates</nfdi-h2>
 <ol>
 <li>(Recommended) <a href="https://github.com/nfdi4plants/Swate-templates/issues/new/choose">Create an issue</a> with background information about the template you want to add. This also serves as a place for discussion.</li>
@@ -616,89 +608,18 @@
 </blockquote>
 </li>
 </ol>
+</br>
 <nfdi-h2 id="creating-a-new-swate-template">Creating a new Swate template</nfdi-h2>
-<nfdi-h3 id="create-a-new-annotation-table-in-a-fresh-excel-workbook">Create a new Annotation Table in a fresh Excel workbook</nfdi-h3>
-<style scoped>
-.columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    /* grid-template-columns: 700px 400px; */
-    gap: 20px;
-}
-figure {
-  position: relative;
-  width: 350px;
-}
-
-figcaption {
-  position: absolute;
-  top: 0;
-  right: 0;
-  /* width: 40px; */
-  padding-left: 60px;
-  font-size: 20px;
-  writing-mode: vertical-rl;
-}
-</style>
-<div class="columns">
-<div class="columns-left">
-<ul>
-<li><p>Open a new Excel workbook <code>&lt;template&gt;.xlsx</code></p>
-</li>
-<li><p>Create an <a href="./Docs02-Annotation-Table.html">Annotation Table</a></p>
-</li>
-<li><p>Save the Excel file in a suitable folder within your local clone of the Swate templates repository</p>
-<ul>
-<li>💡 check the subfolder README.md`s</li>
-<li>🚧 naming convention for files and directories is work in progress</li>
-</ul>
-</li>
-<li><p><a href="./Docs03-Building-Blocks.html">Add building blocks</a> to your template's Annotation Table</p>
-</li>
-</ul>
-</div>
-<div class="columns-right">
-<figure>
-  <img src="./../img/swate-templates_repo_local.png">
-  <figcaption>Local clone of Swate templates repository (April 19, 2023)</figcaption>
-</figure>
-</div>
-</div>
-<nfdi-h3 id="recommendations-for-template-design">Recommendations for template design</nfdi-h3>
-<ul>
-<li>Keep the template as concise as possible</li>
-<li>Finding suitable building blocks is not always straight-forward</li>
-<li>👀 If you miss a term or ontology, please follow the <a href="https://github.com/nfdi4plants/nfdi4plants_ontology">DPBO contribution guide</a> to let us know</li>
-<li>If you add a template to address a missing method, try to add building blocks that cover experimental procedures (as Parameters) and features of the sample (as Characteristics) that the experimenter would do when working on an experiment of that type</li>
-<li>If you add a template with a specific endpoint repository (ER) in mind, you may want to add building blocks that match the required fields of this ER</li>
-<li>Avoid using the building block type <code>Factor</code> in templates. Any given characteristic or parameter in one study or assay can become a factor in another study or assay depending on the experimental context or scientific question. E.g. in one study all samples originate from the same <code>species</code> (-&gt; Characteristic) whereas in another study multiple <code>species</code> where assayed (-&gt; Factor).</li>
-</ul>
+<nfdi-h3 id="create-or-open-a-swate-template">Create or open a Swate template</nfdi-h3>
+<p>Open <a href="https://swate-alpha.nfdi4plants.org/">Swate-alpha</a>. To create a new template click &quot;New File&quot; and select &quot;Template&quot;. If you want to edit an existing template, click &quot;Import&quot; and select the respective file.
+</br></p>
+<img src="./../img/Swate-alpha-newtemplate.png" style="height: 300px">
+</br>
+</br>
 <nfdi-h3 id="add-template-metadata">Add Template Metadata</nfdi-h3>
-<style scoped>
-.columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-}
-
-</style>
-<ul>
-<li>Open the &quot;Template Metadata&quot; tab in <strong>Swate Experts</strong> <img height=10px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Experts/swate_e_40x40.png'/></li>
-<li>Click &quot;Create Metadata&quot;</li>
-<li>A new worksheet will open called &quot;SwateMetadataSheet&quot;</li>
-</ul>
-<div class="columns">
-<div class="columns-left">
-<img src="./../img/swateExperts-tab-templateMetadata.png" style="height: 300px">
-</div>
-<div class="columns-right">
-<img src="./../img/swate-templates-metadata.png" style="height: 300px">
-</div>
-</div>
-<blockquote>
-<p>⚠️ Make sure to never change any of the fields in the first column. These &quot;key&quot; fields must exist to create a functional template. Always only change the &quot;value&quot; fields (second and following columns).</p>
-</blockquote>
-<nfdi-h3 id="template-metadata-explanation">Template Metadata Explanation</nfdi-h3>
+<p>Once you open a new template, you will see a &quot;Metadata&quot; sheet. Here you will enter a name for the template as well as further information describing the template. You can find explanations of the necessary information in the table below.
+</br></p>
+<nfdi-h4 id="template-metadata-explanation">Template Metadata Explanation</nfdi-h4>
 <table>
 <thead>
 <tr>
@@ -709,24 +630,19 @@ figcaption {
 </thead>
 <tbody>
 <tr>
-<td><strong>Id</strong></td>
+<td><strong>Identifier</strong></td>
 <td></td>
 <td>Do not change this field. It maps your template to a database entry ⚠️</td>
 </tr>
 <tr>
 <td><strong>Name</strong></td>
 <td>This is the first info Swate users see about your template</td>
-<td>Try using a short, descriptive and human readable name. (Think YouTube video title)</td>
-</tr>
-<tr>
-<td><strong>Version</strong></td>
-<td>The version of the template following the <a href="https://semver.org/">SemVer</a> convention.</td>
-<td>For a new template use <code>1.0.0</code>. Raise the version number when updating an existing template</td>
+<td>Try using a short, descriptive and human readable name. Capitalize the first letter of the first word.</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
-<td>Here you can describe your template</td>
-<td>Users interested in your template can read this in Swate, but not search by it</td>
+<td>Here you can describe your template.</td>
+<td>Users interested in your template can read this in Swate, but not search by it.</td>
 </tr>
 <tr>
 <td><strong>Organisation</strong></td>
@@ -734,63 +650,73 @@ figcaption {
 <td>Templates with the organisation &quot;DataPLANT&quot; are listed as <code>curated</code> in the Swate template database. All other templates are listed as <code>community</code>.</td>
 </tr>
 <tr>
-<td><strong>Table</strong></td>
-<td>This value <strong>must match</strong> the name of the annotation table you want to use as a template</td>
-<td>To find the name click on any field in your annotation table, then open the <code>Table Design</code> (on macOS: <code>Table</code>) tab. Copy the name to the &quot;Table&quot; value field <img src="./../img/Swate-templates_find_table_name.jpg" style="height: 150px"  /></td>
+<td><strong>Version</strong></td>
+<td>The version of the template following the <a href="https://semver.org/">SemVer</a> convention.</td>
+<td>For a new template use <code>1.0.0</code>. Raise the version number when updating an existing template.</td>
 </tr>
 <tr>
-<td><strong>ER list</strong></td>
-<td>You can add any number of endpoint repositories to which your template complies here</td>
-<td>You may want to add them as ontology terms with unique identifier and source</td>
+<td><strong>Tags</strong></td>
+<td>You can add any number of tags here. These tags are the basis to search for your template.</td>
+<td>If possible add them as ontology terms with source ontology (TSR) and unique identifier (TAN). If similar tags already exist, consider reusing the existing ones.</td>
 </tr>
 <tr>
-<td><strong>TAGS list</strong></td>
-<td>You can add any number of tags here. These tags are the basis to search for your template</td>
-<td>You may want to add them as ontology terms with unique identifier and source</td>
+<td><strong>Endpoint Repositories</strong></td>
+<td>If your template complies with the requirements of an endpoint repository, you can add the respective repository here.</td>
+<td>You may want to add them as ontology terms with source (TSR) and identifier (TAN).</td>
 </tr>
 <tr>
-<td><strong>AUTHORS list</strong></td>
+<td><strong>Authors</strong></td>
 <td>Add your name/alias here with as much information as you like.</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<nfdi-h3 id="template-metadata-example">Template Metadata Example</nfdi-h3>
-<style scoped>
-.columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 50px;
-}
-
-</style>
-<p>Here is an example for filled out template metadata and how it helps in Swate's template search.</p>
-<div class="columns">
-<div class="columns-left">
-<img src="./../img/Swate-templates_example_metadata.jpg">
-</div>
-<div class="columns-right">
-<img src="./../img/swate-tab-templates_example.png">
-</div>
-</div>
+</br>
+<nfdi-h4 id="template-metadata-example">Template Metadata Example</nfdi-h4>
+<p>Here is an example for filled out template metadata and how it helps in Swate's template search.
+</br></p>
+<p><img src="./../img/Swate-alpha-metadata.png" alt="img1" />
+</br></p>
+<nfdi-h3 id="add-building-blocks">Add building blocks</nfdi-h3>
+<p>To add the building blocks of your actual template, you need to switch from the &quot;Metadata&quot; sheet to the &quot;New Table&quot; sheet on the bottom left. Using the &quot;Add Building Block&quot; button, you can add your desired building blocks with or without a unit.
+</br></p>
+<img src="./../img/Swate-alpha-buildingblock.png" style="height: 400px">
+</br>
+</br>
+<nfdi-h4 id="recommendations-for-template-design">Recommendations for template design</nfdi-h4>
+<ul>
+<li>Keep the template as concise as possible</li>
+<li>👀 If you miss a term or ontology, please follow the <a href="https://github.com/nfdi4plants/nfdi4plants_ontology">DPBO contribution guide</a> to let us know</li>
+<li>If you add a template to address a missing method, try to add building blocks that cover experimental procedures (as Parameters) and features of the sample (as Characteristics) that the experimenter would use when working on an experiment of that type</li>
+<li>The normal order of the columns is: <strong>Input</strong> → (all the Parameters and Characteristics in between in chronological order) → <strong>Output</strong> -or- <strong>Raw Data File</strong> -or- <strong>Derived Data File</strong>. Try to think about in which order the experimenter in the lab will do their work. Try to match this chronological order from left to right. This step is optional and only meant to increase readability.</li>
+<li>If you would like to save any background information on your template, that would help others reconstruct the creation of the template, you can save it in the <a href="https://github.com/nfdi4plants/Swate-templates/tree/main/background%20information">Swate-templates GitHub repository</a>. For this, please create a folder with the name of your template in the &quot;Background information&quot; folder.</li>
+<li>Avoid using the building block type <code>Factor</code> in templates. Any given characteristic or parameter in one study or assay can become a factor in another study or assay depending on the experimental context or scientific question. E.g. in one study all samples originate from the same <code>species</code> (-&gt; Characteristic) whereas in another study multiple <code>species</code> where assayed (-&gt; Factor).
+</br></li>
+</ul>
+<nfdi-h4 id="recommendations-for-adding-endpoint-repository-templates">Recommendations for adding endpoint repository templates</nfdi-h4>
+<ul>
+<li>When creating a template to comply with repository requirements, please follow the following naming pattern: &quot;Repository&quot; - &quot;Assay&quot;, e.g. MetaboLights - MS measurement</li>
+<li>The endpoint repository tag should be added ONLY in the &quot;Endpoint repository&quot; category in the metadata sheet</li>
+<li>By default repository templates should contain only mandatory information. In this case, please add &quot;mandatory&quot; as a tag.</li>
+<li>Optional or recommended information can be added with an extension template that contains ONLY the optional/recommended information. In this case, please add &quot;-extension&quot; to the template name.</li>
+<li>If applicable, templates should be split into different assays.</li>
+<li>Templates should be checked for validity of requirements every ~ 6 months.
+</br></li>
+</ul>
+<nfdi-h3 id="save-your-template">Save your template</nfdi-h3>
+<p>Save your template by clicking on the disc symbol in the top right corner. This will download an xlsx-file. Please adjust the name of the file to correspond to the name of the template, but use underscores instead of spaces.
+Save the file in a suitable folder within your local clone of the Swate templates repository.
+</br></p>
 <nfdi-h3 id="your-template-is-ready-for-upload">Your template is ready for upload 🎉</nfdi-h3>
 <ul>
 <li>Well done! You created a new template.</li>
 <li>You can now submit your template via the git workflow described above.</li>
-<li>Once your pull request is merged, you will receive an Email from &quot;Swobup Commit Report&quot;</li>
-</ul>
-<nfdi-h2 id="recommended-best-practices">Recommended best practices</nfdi-h2>
-<ul>
-<li>Try to think about in which order the experimenter in the lab will do their work. Try to match this chronological order from left to right. The normal order of the columns is: <strong>Source Name</strong> → (all the Parameters and Characteristics in between in chronological order) → <strong>Sample Name</strong> -or- <strong>Raw Data File</strong> -or- <strong>Derived Data File</strong>. This step is optional and only meant to increase readability.</li>
-<li>Below the header you can add exemplary terms as in this example:<br />
-<img src="https://user-images.githubusercontent.com/47781170/146252236-0dd11621-76e9-4d28-b5fe-b495362a1cc5.png" alt="image" /><br />
-These examples help as additional information for other Data Stewards and are not transferred into the Swate template database.</li>
-<li>Use ontology terms for <strong>ER list</strong> and <strong>TAGS list</strong>.</li>
-<li>Add protocol type and any <a href="https://en.wikipedia.org/wiki/Minimum_information_standard">minimal information standards</a> your template complies with to the <strong>TAGS list</strong>.</li>
+<li>Once your pull request is merged, you will receive an Email from &quot;Swobup Commit Report&quot;
+</br></li>
 </ul>
 <nfdi-h2 id="known-pitfalls-with-swate-templates">Known pitfalls with Swate Templates</nfdi-h2>
 <ul>
-<li>Opening and saving a Swate template .xlsx file with a program other than Microsoft Excel (e.g. LibreOffice, python script, R script) often destroys the template (backend). Please, avoid to upload this file into the GitHub repository, even if the annotation table itself looks intact and can be worked on with the Swate plugin</li>
+<li>Opening and saving a Swate template .xlsx file with a program other than Microsoft Excel (e.g. LibreOffice, python script, R script) often destroys the template (backend). Please, avoid to upload this file into the GitHub repository.</li>
 </ul>
 
       <h3>
