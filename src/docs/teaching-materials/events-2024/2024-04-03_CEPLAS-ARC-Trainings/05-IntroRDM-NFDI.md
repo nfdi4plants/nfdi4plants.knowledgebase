@@ -11,14 +11,10 @@ author:
 ---
 
 # Introduction to RDM and NFDI
-<!-- _paginate: false -->
 
 ---
 
-
 # The research data life cycle
-
-<br>
 
 ![w:350](./../../../img/RDMkit-data_life_cycle_9.svg)
 
@@ -37,6 +33,7 @@ https://doi.org/10.1038/sdata.2016.18
 
 ![bg right:45% w:600](./../../../img/wilkinson2016-FAIR.png)
 
+---
 
 # FAIR data stewardship
 
