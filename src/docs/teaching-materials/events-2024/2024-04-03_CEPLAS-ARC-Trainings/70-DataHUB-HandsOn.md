@@ -47,7 +47,6 @@ author:
 </div>
 </div>
 
-
 ---
 
 # Avatar Menu
@@ -58,7 +57,7 @@ author:
 
 1. In the avatar menu (1) you can
 2. find your profile name and user name (2), 
-3. navigate to the [user settings](./../../../DataHUB-Manual/datahub-userSettings.html) (3) 
+3. navigate to the [user settings](./../../../DataHUB-Manual/datahub-userSettings.html) (3)
 4. or sign out (4) of the DataHUB.
 
 </div>

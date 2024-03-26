@@ -10,13 +10,11 @@ author:
   orcid: https://orcid.org/0000-0001-9021-3197
 ---
 
-
 <!-- 
 TODO before final
-- add pad link
 - update agenda
 
- -->
+-->
 
 # CEPLAS ARC Training
 
@@ -35,39 +33,31 @@ Dominik Brilhaus, CEPLAS Data Science
 
 # Tentative agenda
 
-<style scoped>
-.columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 2fr));
-    font-size: 18px;
-}
-</style>
-
-<div class="columns">
+<div class="two-columns" style="font-size: 18px">
 <div class="columns-left">
 
-## Half-day
+### Morning
 
 Time | Topics
 -------- | --------
 09:00 - 09:15 | Welcome, Intro RDM and NFDI
-09:15 - 09:30 | Overview DataPLANT, and DataPLANT Tool chain
-09:30 - 10:15 | Demo ARCitect and DataHUB
-10:15 - 10:30 | *Short break*
-10:30 - 11:45 | Demo Metadata annotation with SWATE
-11:45 - 12:00 | Q & A
+09:15 - 09:45 | Overview DataPLANT, and DataPLANT Tool chain
+09:45 - 10:30 | Demo ARCitect and Metadata annotation with SWATE
+10:30 - 10:40 | *Short break* :coffee:
+10:40 - 11:40 | Intro and Demo DataHUB
+11:40 - 12:00 | Q & A
 
 </div>
 
 <div class="columns-right">
 
-## Full-day (continues half-day)
+### Afternoon
 
 Time | Topics
 -------- | --------
-12:00 - 13:00 | *Lunch break*
+12:00 - 13:00 | *Lunch break* :pizza:
 13:00 - 15:00 | Hands-on ARCitect, DataHUB and Swate
-15:00 - 15:15 | *Short break*
+15:00 - 15:15 | *Short break* :coffee:
 15:15 - 16:30 | Create your own ARC
 16:30 - 17:00 | Q & A and wrap-up
 
@@ -76,9 +66,37 @@ Time | Topics
 
 ---
 
-# Materials
+# House-keeping
 
-Slides will be shared via DataPLANT knowledge base
+<div class="two-columns">
+  <div>
+
+  - Use the pad to raise questions and feedback
+  - Copy / paste links (hands-on)
+
+  </div>
+
+  <div>
+  <a href="https://pad.hhu.de/8bwBC7pyRL2tFFOWMQzm1Q?edit" target="_blank"> <img src="./qr-code-pad.png"></a>
+  </div>
+</div>
+
+---
+
+# Training Materials
+
+Slides are shared via [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/2024-04-03_CEPLAS-ARC-Trainings/)
+
+---
+
+# Continuous support
+
+Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TRR341) offer support.
+
+1. Slack Workspace for ad hoc support
+2. Monthly user meeting (2nd Friday of the month)
+
+<a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-support.html" target="_blank">&rarr; Details</a>
 
 ---
 
@@ -95,17 +113,6 @@ GitHub: <a href="https://github.com/nfdi4plants" target="_blank">https://github.
 HelpDesk: <a href="https://helpdesk.nfdi4plants.org" target="_blank">https://helpdesk.nfdi4plants.org</a>
 
 :bulb: You can help us by raising issues, bugs, ideas...
-
----
-
-## Continuous support  
-
-Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TRR341) offer support.
-
-1. Slack Workspace for ad hoc support
-2. Monthly user meeting (2nd Friday of the month)
-
-[&rarr; Details](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-support.html).
 
 ---
 

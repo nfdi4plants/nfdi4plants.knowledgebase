@@ -17,6 +17,7 @@ author:
 - name: Sabrina Zander
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
+
 <!-- TODO 
 - Move some slides to Swate-Demo?
 - Re-use a protocol (process.json) did not work 
@@ -102,14 +103,11 @@ Recommended text editor with code highlighting, git support, terminal, etc: <a h
 
 Create a Swate annotation table by adding **Building blocks** via the widget (A) or the sidebar (B)
 
-
 :bulb: Each table can contain only one *Input* and one *Output* column  
 
 :bulb: different *Input* and *Output* options: `Source Name`, `Sample Name`, `Material`, `Raw Data File`, `Derived Data File`, `Image File`
 
-![w:600](./../../../img/Swate_a_Building_blocks.png)
-
-
+![bg right w:600](./../../../img/Swate_a_Building_blocks.png)
 
 ---
 

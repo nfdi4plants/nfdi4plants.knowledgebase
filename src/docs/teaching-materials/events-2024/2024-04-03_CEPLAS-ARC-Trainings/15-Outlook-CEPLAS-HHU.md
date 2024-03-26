@@ -56,6 +56,14 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 ---
 
+# On-premise DataHUBs
+
+![alt text](../../../img/DataHUB-onPremise.drawio.png)
+
+ARC services are available as on-premise option
+
+---
+
 # HHU-DataHUB
 
 ![w:800](./../../../img/HHU-DataHUB.drawio.png)
@@ -79,13 +87,11 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 ![w:900](./../../../img/ceplas-enablingPlatforms-logos.drawio.png)
 
-
 ---
 
 # Embedded into an RDM network
 
 ![w:600](./../../../img/DataHUB-Network-putative.drawio.png)
-
 
 ---
 
@@ -109,4 +115,3 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
     
   </div>
 </div>
-

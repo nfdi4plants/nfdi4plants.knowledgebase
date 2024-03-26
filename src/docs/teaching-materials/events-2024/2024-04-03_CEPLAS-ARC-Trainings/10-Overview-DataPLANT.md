@@ -23,8 +23,6 @@ TODO
 -->
 
 
-
-
 ---
 
 # Data Stewardship between DataPLANT and the community
@@ -80,27 +78,39 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 ---
 
-![](./../../../img/DataPLANT_BigPicture_seq2.png)
+# You can store your ARC in the DataHUB
+
+![w:800](./../../../img/DataPLANT_BigPicture_seq2.png)
 
 ---
 
-![](./../../../img/DataPLANT_BigPicture_seq3.png)
+# ARCs are versioned
+
+![w:800](./../../../img/DataPLANT_BigPicture_seq3.png)
 
 ---
 
-![](./../../../img/DataPLANT_BigPicture_seq4.png)
+# You can invite collaborators
+
+![w:800](./../../../img/DataPLANT_BigPicture_seq4.png)
 
 ---
 
-![](./../../../img/DataPLANT_BigPicture_seq5.png)
+# Collaborate and contribute
+
+![w:800](./../../../img/DataPLANT_BigPicture_seq5.png)
 
 ---
 
-![](./../../../img/DataPLANT_BigPicture_seq6.png)
+# Reuse data in ARCs
+
+![w:800](./../../../img/DataPLANT_BigPicture_seq6.png)
 
 ---
 
-![](./../../../img/DataPLANT_BigPicture_seq7.png)
+# Publish your ARC
+
+![w:800](./../../../img/DataPLANT_BigPicture_seq7.png)
 
 ---
 
@@ -187,21 +197,59 @@ Facilities and labs can define their common workflows as templates
 
 ---
 
-
 # Data analysis and workflows
 
 ![w:800](./../../../img/tpj16474-fig-0005-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
+
+---
+
+# Galaxy integration: Extra value for plant research
+
+<div class="two-columns">
+<div>
+
+![](./../../../img/galaxy-integration.drawio.png)
+
+</div>
+
+<div>
+
+- Full ARC compatibility
+- Automated metadata generation
+- Specialized tools and workflows for ‘omics processing and analysis
+- Public repository compatibility
+- Galaxy teaching resource for data analysis
+
+</div>
+</div>
+
+
 ---
 
 # Enabling platforms
 
-![bg right w:600](./../../../img/ceplas-enablingPlatforms.drawio.png)
 
-- Streamlined exchange of (meta)data
-- Communication and project management
+<div class="two-columns">
+  <div>
+  
+  - Streamlined exchange of (meta)data
+  - Communication and project management
+  
+  </div><div>
+  
+  ![](./../../../img/ceplas-enablingPlatforms.drawio.png)
+  
+  </div>
+</div>
+
+
+
+
+
+
 
 ---
 

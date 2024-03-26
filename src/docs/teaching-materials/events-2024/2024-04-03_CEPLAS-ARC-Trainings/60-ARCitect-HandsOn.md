@@ -21,7 +21,9 @@ author:
 - more to remote?
 - add history panel
 - add Swate alpha examples in ARCitect ???
-- check linking studies and assays -->
+- check linking studies and assays
+
+-->
 
 
 
