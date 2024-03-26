@@ -56,6 +56,14 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 ---
 
+# On-premise DataHUBs
+
+![alt text](../../../img/DataHUB-onPremise.drawio.png)
+
+ARC services are available as on-premise option
+
+---
+
 # HHU-DataHUB
 
 ![w:800](./../../../img/HHU-DataHUB.drawio.png)
@@ -85,7 +93,6 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 # Embedded into an RDM network
 
 ![w:600](./../../../img/DataHUB-Network-putative.drawio.png)
-
 
 ---
 

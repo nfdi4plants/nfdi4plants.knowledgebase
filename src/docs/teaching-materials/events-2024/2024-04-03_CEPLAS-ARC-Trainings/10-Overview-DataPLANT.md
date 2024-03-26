@@ -203,14 +203,53 @@ Facilities and labs can define their common workflows as templates
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
+
+---
+
+# Galaxy integration: Extra value for plant research
+
+<div class="two-columns">
+<div>
+
+![](./../../../img/galaxy-integration.drawio.png)
+
+</div>
+
+<div>
+
+- Full ARC compatibility
+- Automated metadata generation
+- Specialized tools and workflows for ‘omics processing and analysis
+- Public repository compatibility
+- Galaxy teaching resource for data analysis
+
+</div>
+</div>
+
+
 ---
 
 # Enabling platforms
 
-![bg right w:600](./../../../img/ceplas-enablingPlatforms.drawio.png)
 
-- Streamlined exchange of (meta)data
-- Communication and project management
+<div class="two-columns">
+  <div>
+  
+  - Streamlined exchange of (meta)data
+  - Communication and project management
+  
+  </div><div>
+  
+  ![](./../../../img/ceplas-enablingPlatforms.drawio.png)
+  
+  </div>
+</div>
+
+
+
+
+
+
 
 ---
 
