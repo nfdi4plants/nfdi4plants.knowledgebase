@@ -23,6 +23,7 @@ author:
 - commit
 - repository / repo
 - push / pull
+- branch / fork
 
 # add comparison GitLab vs. Cloud Services
 

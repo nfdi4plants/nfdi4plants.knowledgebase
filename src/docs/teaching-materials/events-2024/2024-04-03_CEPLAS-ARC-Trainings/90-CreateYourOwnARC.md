@@ -15,7 +15,7 @@ Recommended first steps to your ARC
 
 ## Sketch your ARC
 
-Try to draw a little map of what your project could look like as an ARC
+Try to sketch a little map of what your project could look like as an ARC
 
 ## Create a new ARC
 
@@ -39,7 +39,6 @@ Adding a license is easy via the DataHUB:
 
 :bulb: There is no template for CC-BY 4.0. You can add the license text from https://choosealicense.com/licenses/cc-by-4.0/.
 
-
 ## Add metadata to ISA Investigation
 
 - [ ] Add a **Title**: e.g. the project or publication title
@@ -50,39 +49,39 @@ Adding a license is easy via the DataHUB:
 - [ ] Add Publication(s)
   1. DOI, Title, Authors, Status = Published
 
-## Add assay data
+## Add a study
 
-The publication may contain a section ""data availability"" or ""data accession"" or similar that references external links (typically a large data repository).
-
-Try to find and transfer info (sample accessions, IDs, metadata, links, etc.) into the ARC. This would typically be an assay.
-"
-
-## File names
-
-- Avoid spaces in file names. We recommend to use camelCase or PascalCase for file names
-- However, in order to keep track of links and data origin, it is recommended to keep the original name of data files (i.e. if a publisher or repository stores files with spaces).
-
-## Add Study high-level metadata
-
-- [ ] if the study is internal (i.e. a dataset from **this** publication)
+- [ ] if the study is internal (i.e. a dataset from **this** project or publication)
   - Think of a suitable study identifier and title
-  - Transfer only the people from investigation-level to study
-  - Description: write a short summary / bullet points, e.g. if the study describes the growth of plant samples, summarize sample types, treatments (no need to repeat full protocols)
+  - Add contacts (e.g. transfer contacts from investigation-level to study)
+  - Description: write a short summary / bullet points
 
-- [ ] if the study is external (i.e. a dataset from **another** publication)
+- [ ] if the study is external (i.e. a dataset from **another**  project or publication)
   - Add Title: publication title
   - Add Description: publication abstract
   - Add Public Release Date: publication online date
   - Add People: authors in same order as on publication
   - Add Publication(s): DOI, Title, Authors, Status = Published
-"
 
-8. Add Assay high-level metadata,"
+## Add samples to your study
+
+
+
+
+## Add an assay
+
 - [ ] add Measurement Type, Technology Type, Technology Platform for every assay (ideally backed by ontology terms)
 - [ ] if applicable, add people (assay performers)
-"
 
-9. Annotate ISA studies and assays,"
+## Add assay data
+
+- [ ] 
+
+:bulb: If your data is very large, take only a subset or use dummy files during the hands-on session.
+
+
+## Annotate ISA studies and assays
+
 Describe the sample-to-data flow using ISA
 
 - [ ] the `./assays/<assayName>/isa.assay.xlsx` should relate to the ./assays/<assayName>/protocols
@@ -97,10 +96,14 @@ Describe the sample-to-data flow using ISA
     - data from samples: e.g. `Input [Sample Name]` cDNA libraries -> `Output [Raw Data File]` qRT-PCR results
     - data from data: e.g. `Input [Raw Data File]` qRT-PCR results -> `Output [Derived Data File]` Plot of relative gene expression
 
-- [ ] use Sample/Material/Data nodes (Input [ ] / Output[ ]) ... 
+- [ ] use Sample/Material/Data nodes (Input [ ] / Output[ ]) ...
   - ... to link between processes (sheets) **within** one study/assay
   - ... to link **across** multiple studies and / or assays
 
 The final result (across all isa.*.xlsx sheets) should be a gapless connection from `isa.study.xlsx`-sheets through `isa.assay.xlsx`-sheets representing the flow through the various Input/Output nodes of sample/material --> through processes/protocols --> to Input/Output nodes of sample/material/raw data/derived data.
 So that any file stored in a `./assays/<assayName>/dataset` can be traced back along the chain of processes to the original sample in the lab. 
-"
+
+## File names
+
+- Avoid spaces in file names. We recommend to use camelCase or PascalCase for file names
+- However, in order to keep track of links and data origin, it is recommended to keep the original name of data files (i.e. if a publisher or repository stores files with spaces).
