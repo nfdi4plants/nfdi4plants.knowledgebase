@@ -14,7 +14,7 @@ author:
 TODO before final
 - update agenda
 
- -->
+-->
 
 # CEPLAS ARC Training
 
@@ -33,26 +33,18 @@ Dominik Brilhaus, CEPLAS Data Science
 
 # Tentative agenda
 
-<style scoped>
-.columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 2fr));
-    font-size: 18px;
-}
-</style>
-
-<div class="columns">
+<div class="two-columns" style="font-size: 18px">
 <div class="columns-left">
 
 ## Morning
 
 Time | Topics
 -------- | --------
-09:00 - 09:20 | Welcome, Intro RDM and NFDI
-09:20 - 10:00 | Overview DataPLANT, and DataPLANT Tool chain
-10:00 - 10:30 | Demo ARCitect and DataHUB
+09:00 - 09:15 | Welcome, Intro RDM and NFDI
+09:15 - 09:45 | Overview DataPLANT, and DataPLANT Tool chain
+09:45 - 10:30 | Demo ARCitect and Metadata annotation with SWATE
 10:30 - 10:40 | *Short break* :coffee:
-10:40 - 11:40 | Demo Metadata annotation with SWATE
+10:40 - 11:40 | Intro and Demo DataHUB
 11:40 - 12:00 | Q & A
 
 </div>
@@ -74,12 +66,20 @@ Time | Topics
 
 ---
 
-# Feel free to raise questions and feedback
+# House-keeping
 
+<div class="two-columns">
+  <div>
 
-![alt text](qr-code-pad.png)
+  - Use the pad to raise questions and feedback
+  - Copy / paste links (hands-on)
 
-https://pad.hhu.de/8bwBC7pyRL2tFFOWMQzm1Q?edit
+  </div>
+
+  <div>
+  <a href="https://pad.hhu.de/8bwBC7pyRL2tFFOWMQzm1Q?edit" target="_blank"> <img src="./qr-code-pad.png"></a>
+  </div>
+</div>
 
 ---
 
@@ -89,14 +89,14 @@ Slides are shared via [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4pl
 
 ---
 
-# Continuous support  
+# Continuous support
 
 Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TRR341) offer support.
 
 1. Slack Workspace for ad hoc support
 2. Monthly user meeting (2nd Friday of the month)
 
-[&rarr; Details](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-support.html)
+<a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-support.html" target="_blank">&rarr; Details</a>
 
 ---
 

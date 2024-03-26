@@ -1,6 +1,6 @@
 ---
-layout: none
-title: ARC storage locations
+layout: slides
+title: DataHUB concepts and terminology
 marp: true
 theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
