@@ -35,6 +35,33 @@ for unit in *.md; do
 done
 ```
 
+
+## Combine all slide decks into one
+
+```zsh
+cd src/docs/teaching-materials/events-2024/2024-04-03_CEPLAS-ARC-Trainings
+
+mkdir -p _combined-slides
+
+echo "---\nmarp: true\nlayout: slides\ntheme: marp-theme_dataplant-ceplas-ccby\npaginate: true\ntitle: \ndate: \n---\n" > _combined-slides/combined-slides.md
+
+for unit in *.md; do
+    
+    if grep -q "^marp: true" "$unit"
+    then
+      yamlEnd=$(awk '/---/{++n; if (n==2) { print NR; exit}}' $unit)
+      tail -n +$((yamlEnd+1)) $unit >> _combined-slides/combined-slides.md
+      echo "---" >> _combined-slides/combined-slides.md
+
+    fi
+
+done
+
+sed "s|\.\./\.\./\.\./img/|\.\./\.\./\.\./\.\./img/|g" _combined-slides/combined-slides.md > tmp
+mv tmp _combined-slides/combined-slides.md
+
+```
+
 ## automate adding slides to index
 
 ```bash
