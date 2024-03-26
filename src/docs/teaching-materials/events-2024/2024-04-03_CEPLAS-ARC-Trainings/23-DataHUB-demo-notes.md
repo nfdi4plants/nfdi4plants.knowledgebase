@@ -1,9 +1,8 @@
 ---
-marp: true
-theme: marp-theme_dataplant-ceplas-ccby
-paginate: true
+layout: docs
+marp: false
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-title: DataHub Hands-On
+title: DataPLANT DataHUB
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -12,6 +11,7 @@ author:
   github: https://github.com/CMR248
   orcid: https://orcid.org/0000-0002-4849-1537
 ---
+
 
 # DataHub Hands-On
 
@@ -235,36 +235,3 @@ object-position: 100% 45%;
 ---
 
 # ARCs come with their own wiki space
-
-<div class="two-columns">
-
-<div style="font-size: 27px">
-
-- directly associated to your ARC
-- same access rights as your ARC
-- share meeting minutes or ideas with collaboration partners
-- keep ARC clean of files that are not considered "research data"
-
-</div>
-
-<div>
-
-![w:600](./../../../img/datahub-wiki.png)
-
-</div>
-</div>
-
----
-
----
-
-# Contributors
-
-Slides presented here include contributions by
-
-- name: Dominik Brilhaus
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197
-- name: Cristina Martins Rodrigues
-  github: https://github.com/CMR248
-  orcid: https://orcid.org/0000-0002-4849-1537

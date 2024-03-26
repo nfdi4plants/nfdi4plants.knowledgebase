@@ -1,7 +1,5 @@
 ---
-marp: false
-paginate: true
-theme: marp-theme_dataplant-ceplas-ccby
+layout: docs
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 title: 
 date: 2024-03-25
@@ -33,6 +31,7 @@ cd <path/to/YourARCFolder>
 ```bash
 arc init
 arc investigation create -i <YourInvestigationID>
+arc study add -s <YourStudyID>
 arc assay add -s <YourStudyID> -a <YourAssayID>
 
 arc sync -f -r https://git.nfdi4plants.org/<YourUserName>/<YourARC> -m "initialize ARC structure"

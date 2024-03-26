@@ -15,6 +15,8 @@ author:
 
 ## Investigation
 
+:warning: make extra sure to highlight, that this is the investigation level
+
 1. id / title: talinum-drought / Talinum drought STRI
 2. description: talinum project initiated with STRI, Panama
 3. contacts
@@ -26,7 +28,7 @@ author:
 
 ## Add Study
 
-1. id / title: talinum-samples-STRI
+1. id / title: Talinum-samples-STRI
 2. Sample input
 3. Organism by hand
    1. fill out with sidebar - link to NCBI
@@ -35,7 +37,14 @@ author:
 6. add sample outputs
 7. Save ARC
 8. Show ARC in explorer
-9. Commit
+9. Commit with message
+
+## Edit ARC by hand via explorer / excel
+
+1. Add some people to investigation
+2. Add more samples
+3. Show how this is automatically reflected in ARCitect
+4. Warning: rename the study to break the ARC
 
 ## Assay 1
 
@@ -45,11 +54,11 @@ author:
 4. add fastq dataset
 5. add rnaseq template
 6. use file picker
+7. Save ARC
+8. Commit with message
 
 ## DataHUB
 
-1. push to hub
-2. open ARC in hub
-   1. invite members
-3. show validation results
-4. publish ARC to get a DOI
+1. Push to DataHUB
+2. Open ARC in DataHUB
+3. Leave rest for DataHUB Demo

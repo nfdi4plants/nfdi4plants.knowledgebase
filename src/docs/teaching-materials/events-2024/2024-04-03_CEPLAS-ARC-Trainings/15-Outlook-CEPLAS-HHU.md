@@ -87,7 +87,6 @@ ARC services are available as on-premise option
 
 ![w:900](./../../../img/ceplas-enablingPlatforms-logos.drawio.png)
 
-
 ---
 
 # Embedded into an RDM network
@@ -116,4 +115,3 @@ ARC services are available as on-premise option
     
   </div>
 </div>
-

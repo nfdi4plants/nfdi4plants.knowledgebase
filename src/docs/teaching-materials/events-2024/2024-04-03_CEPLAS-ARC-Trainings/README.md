@@ -35,9 +35,10 @@ for unit in *.md; do
 done
 ```
 
-## automate hidden index
+## automate adding slides to index
 
 ```bash
+
 
 echo "---\nlayout: docs\ntitle: \ndate: \nadd sidebar: _sidebars/mainSidebar.md\n---\n\n## Slide decks\n" > hidden-index.md
 
