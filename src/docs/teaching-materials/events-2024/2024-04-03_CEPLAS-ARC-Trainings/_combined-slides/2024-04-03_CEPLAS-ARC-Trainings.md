@@ -133,8 +133,6 @@ Slides presented here include contributions by
 
 # Why research data management (RDM)?
 
-
-
 ---
 
 # FAIR data stewardship
@@ -235,6 +233,8 @@ object-fit: cover;
 # Base4NFDI
 
 ![w:700](./../../../../img/Base4NFDI_Intro_Poster-RDA-2024_JanderRitter-excerpt.png)
+
+<span class="footer-reference">adapted from https://base4nfdi.de/</span>
 
 ---
 
@@ -1813,14 +1813,11 @@ Recommended text editor with code highlighting, git support, terminal, etc: <a h
 
 Create a Swate annotation table by adding **Building blocks** via the widget (A) or the sidebar (B)
 
-
 :bulb: Each table can contain only one *Input* and one *Output* column  
 
 :bulb: different *Input* and *Output* options: `Source Name`, `Sample Name`, `Material`, `Raw Data File`, `Derived Data File`, `Image File`
 
-![w:600](./../../../../img/Swate_a_Building_blocks.png)
-
-
+![bg right w:600](./../../../../img/Swate_a_Building_blocks.png)
 
 ---
 
