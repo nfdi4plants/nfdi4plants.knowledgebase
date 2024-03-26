@@ -3,8 +3,8 @@ marp: true
 layout: slides
 theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
-title: 
-date: 
+title: 2024-04-03_CEPLAS-ARC-Trainings
+date: 2024-03-26
 ---
 
 
@@ -34,7 +34,7 @@ Dominik Brilhaus, CEPLAS Data Science
 <div class="two-columns" style="font-size: 18px">
 <div class="columns-left">
 
-## Morning
+### Morning
 
 Time | Topics
 -------- | --------
@@ -49,7 +49,7 @@ Time | Topics
 
 <div class="columns-right">
 
-## Afternoon
+### Afternoon
 
 Time | Topics
 -------- | --------
@@ -75,7 +75,7 @@ Time | Topics
   </div>
 
   <div>
-  <a href="https://pad.hhu.de/8bwBC7pyRL2tFFOWMQzm1Q?edit" target="_blank"> <img src="./qr-code-pad.png"></a>
+  <a href="https://pad.hhu.de/8bwBC7pyRL2tFFOWMQzm1Q?edit" target="_blank"> <img src="./../qr-code-pad.png"></a>
   </div>
 </div>
 
@@ -123,7 +123,9 @@ Slides presented here include contributions by
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
+
 ---
+
 
 # Introduction to RDM
 
@@ -184,7 +186,8 @@ object-fit: cover;
 
 <span class="footer-reference">https://rdmkit.elixir-europe.org, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
 
-------
+---
+
 
 # CEPLAS &ndash; One cluster, four locations
 
@@ -207,7 +210,9 @@ object-fit: cover;
 # Missing interfaces impede collaboration
 
 ![w:800](./../../../../img/HHU-services-withoutDataHUB.drawio.png)
+
 ---
+
 
 # NFDI &ndash; Nationale Forschungsdaten Infrastruktur
 
@@ -232,7 +237,9 @@ object-fit: cover;
 ![w:700](./../../../../img/Base4NFDI_Intro_Poster-RDA-2024_JanderRitter-excerpt.png)
 
 ---
+
 ---
+
 
 # Overview DataPLANT
 
@@ -590,7 +597,9 @@ Slides presented here include contributions by
 - name: Martin Kuhl
   github: https://github.com/Martin-Kuhl
   orcid: https://orcid.org/0000-0002-8493-1077
+
 ---
+
 
 # CEPLAS RDM &ndash; Outlook
 
@@ -696,7 +705,9 @@ ARC services are available as on-premise option
     
   </div>
 </div>
+
 ---
+
 
 # DataHUB concepts and terminology
 
@@ -844,7 +855,9 @@ When inviting new members to an ARC or group, you can choose between different l
 # Options to share an ARC via the DataHUB
 
 <img src="./../../../../img/arc-sharing-Options.drawio.png" style="display: block; margin: auto" width=700px>
+
 ---
+
 <!-- TODO 
 - change .isa files to Swate alpha Layout?
 - discuss registry of studies and assays -->
@@ -1055,7 +1068,9 @@ Slides presented here include contributions by
 - name: Sabrina Zander
   github: https://github.com/SabrinaZander
   orcid: https://orcid.org/0009-0000-4569-6126
-  ---
+  
+---
+
 
 
 # CEPLAS ARC Training &ndash; Hands-on part
@@ -1117,7 +1132,9 @@ Slides presented here include contributions by
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
+
 ---
+
 
 <!-- TODO 
 
@@ -1448,7 +1465,9 @@ Slides presented here include contributions by
 - name: Sabrina Zander
   github: https://github.com/SabrinaZander
   orcid: https://orcid.org/0009-0000-4569-6126
+
 ---
+
 
 # DataHub Hands-On
 
@@ -1705,7 +1724,9 @@ Slides presented here include contributions by
 - name: Cristina Martins Rodrigues
   github: https://github.com/CMR248
   orcid: https://orcid.org/0000-0002-4849-1537
+
 ---
+
 
 <!-- TODO 
 - Move some slides to Swate-Demo?
@@ -2074,7 +2095,9 @@ Slides presented here include contributions by
   orcid: https://orcid.org/0000-0002-8493-1077
 - name: Sabrina Zander
   orcid: https://orcid.org/0009-0000-4569-6126
+
 ---
+
 
 # Electronic Lab Notebooks (ELNs)
 
@@ -2197,7 +2220,9 @@ Slides presented here include contributions by
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
+
 ---
+
 
 # Creating Swate Templates
 
@@ -2319,4 +2344,6 @@ Example template metadata and how it helps in Swate's template search
 ## Known pitfalls with Swate Templates
 
 - Opening and saving a Swate template .xlsx file with a program other than Microsoft Excel (e.g. LibreOffice, python script, R script) often destroys the template (backend). Please, avoid to upload this file into the GitHub repository.
+
 ---
+

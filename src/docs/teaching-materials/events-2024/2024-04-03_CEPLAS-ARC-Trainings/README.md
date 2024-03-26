@@ -35,30 +35,33 @@ for unit in *.md; do
 done
 ```
 
-
 ## Combine all slide decks into one
 
 ```zsh
-cd src/docs/teaching-materials/events-2024/2024-04-03_CEPLAS-ARC-Trainings
+selectMarpTheme=marp-theme_dataplant-ceplas-ccby
+outfolder=_combined-slides
 
-mkdir -p _combined-slides
+mkdir -p $outfolder
+title=$(pwd | xargs basename)
+outfile="$outfolder"/"$title".md
+currentDate=$(date +"%Y-%m-%d")
 
-echo "---\nmarp: true\nlayout: slides\ntheme: marp-theme_dataplant-ceplas-ccby\npaginate: true\ntitle: \ndate: \n---\n" > _combined-slides/combined-slides.md
+echo "---\nmarp: true\nlayout: slides\ntheme: $selectMarpTheme\npaginate: true\ntitle: $title\ndate: $currentDate\n---\n" > $outfile
 
-for unit in *.md; do
-    
+for unit in *.md; do    
     if grep -q "^marp: true" "$unit"
     then
       yamlEnd=$(awk '/---/{++n; if (n==2) { print NR; exit}}' $unit)
-      tail -n +$((yamlEnd+1)) $unit >> _combined-slides/combined-slides.md
-      echo "---" >> _combined-slides/combined-slides.md
-
+      tail -n +$((yamlEnd+1)) $unit >> $outfile
+      echo "\n---\n" >> $outfile
     fi
-
 done
 
-sed "s|\.\./\.\./\.\./img/|\.\./\.\./\.\./\.\./img/|g" _combined-slides/combined-slides.md > tmp
-mv tmp _combined-slides/combined-slides.md
+sed "s|\.\./\.\./\.\./img/|\.\./\.\./\.\./\.\./img/|g" $outfile > tmp; mv tmp $outfile
+sed "s|\./qr-code|\./\.\./qr-code|g" $outfile > tmp; mv tmp $outfile
+
+marp --html --allow-local-files $outfile --theme-set $marpTheme ../../style/ --
+marp --html --allow-local-files --pdf $outfile --theme-set $marpTheme ../../style/ --
 
 ```
 

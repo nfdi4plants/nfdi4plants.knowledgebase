@@ -16,8 +16,6 @@ author:
 
 # Why research data management (RDM)?
 
-
-
 ---
 
 # FAIR data stewardship
@@ -68,5 +66,3 @@ object-fit: cover;
 ![w:350](./../../../img/RDMkit-data_life_cycle_9.svg)
 
 <span class="footer-reference">https://rdmkit.elixir-europe.org, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
-
----

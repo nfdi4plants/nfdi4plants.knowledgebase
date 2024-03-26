@@ -36,7 +36,7 @@ Dominik Brilhaus, CEPLAS Data Science
 <div class="two-columns" style="font-size: 18px">
 <div class="columns-left">
 
-## Morning
+### Morning
 
 Time | Topics
 -------- | --------
@@ -51,7 +51,7 @@ Time | Topics
 
 <div class="columns-right">
 
-## Afternoon
+### Afternoon
 
 Time | Topics
 -------- | --------
