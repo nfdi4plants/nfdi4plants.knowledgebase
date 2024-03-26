@@ -14,11 +14,9 @@ author:
 
 ---
 
-# The research data life cycle
+# Why research data management (RDM)?
 
-![w:350](./../../../img/RDMkit-data_life_cycle_9.svg)
 
-<span class="footer-reference">https://rdmkit.elixir-europe.org, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
 
 ---
 
@@ -62,3 +60,13 @@ object-fit: cover;
 - How do you reuse other people's data?
 
 ![bg right:40% w:500](./../../../img/User_Challenges_002.svg)
+
+---
+
+# The research data life cycle
+
+![w:350](./../../../img/RDMkit-data_life_cycle_9.svg)
+
+<span class="footer-reference">https://rdmkit.elixir-europe.org, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
+
+---

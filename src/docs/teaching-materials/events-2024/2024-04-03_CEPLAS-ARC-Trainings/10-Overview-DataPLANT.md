@@ -23,8 +23,6 @@ TODO
 -->
 
 
-
-
 ---
 
 # Data Stewardship between DataPLANT and the community
@@ -80,27 +78,39 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 ---
 
-![](./../../../img/DataPLANT_BigPicture_seq2.png)
+# You can store your ARC in the DataHUB
+
+![w:800](./../../../img/DataPLANT_BigPicture_seq2.png)
 
 ---
 
-![](./../../../img/DataPLANT_BigPicture_seq3.png)
+# ARCs are versioned
+
+![w:800](./../../../img/DataPLANT_BigPicture_seq3.png)
 
 ---
 
-![](./../../../img/DataPLANT_BigPicture_seq4.png)
+# You can invite collaborators
+
+![w:800](./../../../img/DataPLANT_BigPicture_seq4.png)
 
 ---
 
-![](./../../../img/DataPLANT_BigPicture_seq5.png)
+# Collaborate and contribute
+
+![w:800](./../../../img/DataPLANT_BigPicture_seq5.png)
 
 ---
 
-![](./../../../img/DataPLANT_BigPicture_seq6.png)
+# Reuse data in ARCs
+
+![w:800](./../../../img/DataPLANT_BigPicture_seq6.png)
 
 ---
 
-![](./../../../img/DataPLANT_BigPicture_seq7.png)
+# Publish your ARC
+
+![w:800](./../../../img/DataPLANT_BigPicture_seq7.png)
 
 ---
 
@@ -186,7 +196,6 @@ Facilities and labs can define their common workflows as templates
 ![w:800](./../../../img/arc-validation-cqc.drawio.png)
 
 ---
-
 
 # Data analysis and workflows
 
