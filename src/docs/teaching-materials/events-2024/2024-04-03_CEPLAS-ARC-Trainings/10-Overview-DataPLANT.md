@@ -299,33 +299,164 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 ![](./../../../img/DataHUB-GitLab.drawio.png)
 
+---
+ 
+# ARC builds on ISA
+
+![w:900](./../../../img/ISAmodel_ARC01_img01.svg)
+
+<span class="footer-reference">ISA Tools: https://isa-tools.org/format/specification.html</span>
 
 ---
 
-# Resources &ndash; join the open source movement
+# ARC builds on ISA to connect data
 
-<style scoped>section,p {text-align: left;} </style>
-
-<img align="left" style="height:35px" src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
-
-Website: <a href="https://nfdi4plants.org/" target="_blank">https://nfdi4plants.org/</a>
-Knowledge Base: <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/" target="_blank">https://nfdi4plants.org/nfdi4plants.knowledgebase/</a>
-DataHUB: <a href="https://git.nfdi4plants.org" target="_blank">https://git.nfdi4plants.org</a>
-GitHub: <a href="https://github.com/nfdi4plants" target="_blank">https://github.com/nfdi4plants</a>
+![w:1000](./../../../img/ISAmodel_ARC01_img02.svg)
 
 ---
 
-# Continuous support
+# ARC builds on ISA to link data
 
-Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TRR341) offer support.
+<div class="two-columns">
 
-1. Slack Workspace for ad hoc support
-2. Monthly user meeting (2nd Friday of the month)
+  <div>
 
-[&rarr; Details](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-support.html).
+  - Samples are linked study-to-assay, assay-to-assay
+  - Raw data is linked to assays
+  - Protocols can be referenced
+  - ...
 
-<div>
-  <img style="height:40px;margin-right:50px" src='https://www.ceplas.eu/typo3conf/ext/fksitepackage/Resources/Public/Images/CEPLAS-Logo.svg'/>
-  <img style="height:100px;margin-right:50px" src='https://trr341.uni-koeln.de/sites/crc_trr_341/TRR341_logo.png'/>
-  <img style="height:70px;margin-right:50px" src='https://www.sfb1535.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Biologie/SFB1535/Bilder/MibiNet.png'/>
+  </div>
+
+  <div>
+  
+  ![w:800](./../../../img/ISAmodel_ARC01_img02.svg)
+  
+  </div>
 </div>
+
+
+
+---
+
+# Swate
+
+**S**wate **w**orkflow **a**nnotation **t**ool for (**E**xcel / **e**veryone)
+
+https://github.com/nfdi4plants/Swate
+
+---
+
+# Annotation by flattening the knowledge graph
+
+![w:800](./../../../img/Swate_ParentChildTerm.svg)
+
+- Low-friction metadata annotation
+- Familiar spreadsheet, row/column-based environment
+
+---
+
+# Annotation principle
+
+![w:650](./../../../img/Swate_ParentChildTerm2.svg)
+
+- Low-friction metadata annotation
+- Familiar spreadsheet, row/column-based environment
+
+---
+
+# Adding new building blocks
+
+![w:1000](./../../../img/Swate_a_newBuildingBlocks.png)
+
+Swate can be used for the annotation of **isa.study.xlsx and isa.assay.xlsx** files
+
+---
+
+# Annotation Building Block types
+
+<div class="two-columns" style="font-size: 25px">
+  
+  <div>
+  
+- Input (e.g. Source Name, Sample Name)
+- Protocol columns
+- Characteristic // Parameter // Factor
+- Output (e.g. Sample Name, Raw Data File, Derived Data File)
+
+</div>
+  
+  <div>
+  
+  ![w:600px](./../../../img/Swate_a_Overview.png)
+    
+  </div>
+</div>
+
+
+Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/units/AnnotationPrinciples/isa_AnnotationPrinciples-slides.html)
+
+---
+
+# Ontology term search
+
+<style scoped>
+h1{
+  text-align: left
+}
+section {
+  text-align: center;
+}
+</style>
+
+![w:750](./../../../img/Swate_a_OntologyTermSearch.png)
+
+Enable **related term directed search** to directly fill cells with child terms
+
+---
+
+# Fill your table with ontology terms
+
+![w:800](./../../../img/Swate_a_OntologyTermSearch2.png)
+
+---
+
+# Hierarchical combination of ontologies
+
+![w:800](./../../../img/Swate_OntologyCombination.svg)
+
+<!-- combination of ISA (Characteristics, Parameter, Factor) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter \[temperature\] or Factor \[temperature\]). -->
+
+---
+
+# Checklists and Templates
+
+![w:800px](./../../../img/swate_TemplatesChecklists.svg)
+
+Metadata standards or repository requirements can be represented as templates
+
+---
+
+# Realization of lab-specific metadata templates
+
+![w:650px](./../../../img/SWATE_metadataTemplates.png)
+
+Facilities can define their most common workflows as templates
+
+<style scoped>
+h1{
+  text-align: left
+}
+section {
+  text-align: center;
+}
+</style>
+
+---
+
+# Directly import templates via Swate
+
+- DataPLANT curated
+- Community templates
+
+![bg right w:450](./../../../img/Swate_a_templates.png)
