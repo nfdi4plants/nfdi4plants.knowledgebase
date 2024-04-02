@@ -11,18 +11,15 @@ author:
 - name: Martin Kuhl
   github: https://github.com/Martin-Kuhl
   orcid: https://orcid.org/0000-0002-8493-1077
--name: Sabrina Zander
+- name: Sabrina Zander
   github: https://github.com/SabrinaZander
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
+
 <!-- TODO 
 - change .isa files to Swate alpha Layout?
 - discuss registry of studies and assays -->
-  
-# Metadata and ISA
-
----
-
+ 
 # ARC builds on ISA
 
 ![w:900](./../../../img/ISAmodel_ARC01_img01.svg)
@@ -33,7 +30,7 @@ author:
 
 # ARC builds on ISA
 
-![w:1100](./../../../img/ISAmodel_ARC01_img02.svg)
+![w:1000](./../../../img/ISAmodel_ARC01_img02.svg)
 
 ---
 
@@ -49,9 +46,9 @@ not true at the moment !!!!
 
 ![w:950](./../../../img/ISAmodel_ARC01_img04.svg)
 
-
 ---
 -->
+
 # The output of a study or assay file can function as input for a new isa.assay.xlsx
 
 Output building blocks:
@@ -72,6 +69,10 @@ Output building blocks:
 
 # Swate
 
+**S**wate **w**orkflow **a**nnotation **t**ool for (**E**xcel / **e**veryone)
+
+https://github.com/nfdi4plants/Swate
+
 ---
 
 # Annotation by flattening the knowledge graph
@@ -85,12 +86,6 @@ Output building blocks:
 
 # Annotation principle
 
-<!-- <style scoped>
-section p img{
-  /* padding-left: 230px */
-}  
-</style> -->
-
 ![w:650](./../../../img/Swate_ParentChildTerm2.svg)
 
 - Low-friction metadata annotation
@@ -102,22 +97,16 @@ section p img{
 
 ![w:1000](./../../../img/Swate_a_newBuildingBlocks.png)
 
-- Swate can be used for the annotation of **isa.study.xlsx and isa.assay.xlsx** files
+Swate can be used for the annotation of **isa.study.xlsx and isa.assay.xlsx** files
 
 ---
 
-# Annotation Building Block types <!--fit-->
+# Annotation Building Block types
 
-<style scoped>
-
-section{
-    font-size: 25px
-}
-
-</style>
-
-![bg right w:600](./../../../img/Swate_a_Overview.png)
-
+<div class="two-columns" style="font-size: 18px">
+  
+  <div>
+  
 - Source Name (Input)
 - Protocol Columns
   - Protocol Type, Protocol Ref
@@ -128,7 +117,16 @@ section{
 - Output Columns
   - Sample Name, Raw Data File, Derived Data File
 
-Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/isa_AnnotationPrinciples.html) | [slides](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/units/AnnotationPrinciples/isa_AnnotationPrinciples-slides.html)
+Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/units/AnnotationPrinciples/isa_AnnotationPrinciples-slides.html)
+
+</div>
+  
+  <div>
+  
+  ![w:600px](./../../../img/Swate_a_Overview.png)
+    
+  </div>
+</div>
 
 ---
 
@@ -163,24 +161,11 @@ Enable **related term directed search** to directly fill cells with child terms
 
 ---
 
-# Swate templates
-
----
-
 # Checklists and Templates
 
 ![w:800px](./../../../img/swate_TemplatesChecklists.svg)
 
 Metadata standards or repository requirements can be represented as templates
-
-<style scoped>
-h1{
-  text-align: left
-}
-section {
-  text-align: center;
-}
-</style>
 
 ---
 
@@ -207,22 +192,3 @@ section {
 - Community templates
 
 ![bg right w:450](./../../../img/Swate_a_templates.png)
-
----
-
----
-
-# Contributors
-
-Slides presented here include contributions by
-
-- name: Dominik Brilhaus
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197
-- name: Martin Kuhl
-  github: https://github.com/Martin-Kuhl
-  orcid: https://orcid.org/0000-0002-8493-1077
-- name: Sabrina Zander
-  github: https://github.com/SabrinaZander
-  orcid: https://orcid.org/0009-0000-4569-6126
-  

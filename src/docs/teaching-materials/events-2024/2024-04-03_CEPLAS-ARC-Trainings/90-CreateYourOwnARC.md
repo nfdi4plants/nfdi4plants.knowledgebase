@@ -21,8 +21,9 @@ Try to sketch a little map of what your project could look like as an ARC
 
 - Create a new ARC on your computer using ARCitect or ARC commander
 - Upload the ARC to the DataHUB
+- Save intermediate steps and commit them with a message
 
-## Add README.md
+## Add a README.md
 
 - The README.md is the first thing everyone sees when opening your ARC in the DataHUB
 - This is an easy-to-use place for notes or info about your ARC
@@ -64,7 +65,6 @@ Adding a license is easy via the DataHUB:
   - Add Publication(s): DOI, Title, Authors, Status = Published
 
 ## Add samples to your study
-
 
 
 

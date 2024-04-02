@@ -25,7 +25,9 @@ TODO before final
 <br>
 
 April, 2024
-Dominik Brilhaus, CEPLAS Data Science
+
+Dominik Brilhaus, CEPLAS
+Sabrina Zander, MibiNet
 
 ![bg fit](./../../../img/background_title_ceplas.drawio.svg)
 
@@ -43,9 +45,9 @@ Time | Topics
 09:00 - 09:15 | Welcome, Intro RDM and NFDI
 09:15 - 09:45 | Overview DataPLANT, and DataPLANT Tool chain
 09:45 - 10:30 | Demo ARCitect and Metadata annotation with SWATE
-10:30 - 10:40 | *Short break* :coffee:
-10:40 - 11:40 | Intro and Demo DataHUB
-11:40 - 12:00 | Q & A
+10:30 - 10:45 | *Short break* :coffee:
+10:45 - 11:45 | Intro and Demo DataHUB
+11:45 - 12:00 | Q & A
 
 </div>
 
@@ -86,6 +88,17 @@ Time | Topics
 # Training Materials
 
 Slides are shared via [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/2024-04-03_CEPLAS-ARC-Trainings/)
+
+---
+
+# Get-to-know
+
+- Lab
+- CEPLAS / TRR / MibiNet / ?
+- My favorite lab assay
+- Used code / programming language before
+- Have an ORCID
+- My motivation / expectation
 
 ---
 

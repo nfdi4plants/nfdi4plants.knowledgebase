@@ -3,29 +3,24 @@ marp: true
 theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-title: 
+title: Introduction to RDM
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
 ---
 
-# Introduction to RDM
-
----
-
-# Get-to-know
-
-- Lab
-- CEPLAS / TRR / MibiNet / ?
-- My favorite lab assay
-- Used code / programming language before
-- Have an ORCID
-- My motivation / expectation
-
----
-
 # Why research data management (RDM)?
+
+- Increase transparency
+- Make data accessible
+- Save time (writing, reusing)
+- Reduce the risk of data loss
+- Optimize the costs
+- Facilitate future reuse and sharing
+- Improve citations
+
+![bg right:40% w:400](https://rdmpromotion.rbind.io/material/CC-BY-NC/futureself.png)
 
 ---
 
