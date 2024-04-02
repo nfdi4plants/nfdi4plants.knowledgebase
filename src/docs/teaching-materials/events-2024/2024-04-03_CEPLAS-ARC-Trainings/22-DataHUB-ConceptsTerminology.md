@@ -30,8 +30,6 @@ author:
 ---
 -->
 
----
-
 # Where do I store my ARC?
 
 ![](./../../../img/ARC-storageLocations-withNotes.drawio.png)

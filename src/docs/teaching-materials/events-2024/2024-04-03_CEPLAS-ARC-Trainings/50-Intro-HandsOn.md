@@ -59,14 +59,3 @@ Dominik Brilhaus, CEPLAS Data Science
 ---
 
 # Let's draw a typical lab workflow :pencil: 
-
----
----
-
-# Contributors
-
-Slides presented here include contributions by
-
-- name: Dominik Brilhaus
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197

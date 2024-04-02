@@ -18,12 +18,8 @@ author:
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
 
-<!-- TODO 
-- Move some slides to Swate-Demo?
-- Re-use a protocol (process.json) did not work 
-- -->
 
-# Swate hands-on
+# Swate hands-on with demo data
 
 ---
 
@@ -34,30 +30,7 @@ author:
 
 ---
 
-## Open Swate standalone
-
-<!-- TODO only use SWATE alpha? -->
-
-
-
-  Open [Swate standalone](https://swate-alpha.nfdi4plants.org)  in web browser 
-
-
-:bulb: Alternatively, you can use Swate as [Excel Plugin](./../../../SwateManual/Docs01-Installing-Swate.html), but this is outdated 
-
-
----
-
-## Have a simple text editor ready
-
-- Windows Notepad
-- MacOS TextEdit
-
-Recommended text editor with code highlighting, git support, terminal, etc: <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
-
----
-
-## Download the demo data
+# Download the demo data
 
 ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
 
@@ -67,10 +40,11 @@ Recommended text editor with code highlighting, git support, terminal, etc: <a h
 
 ---
 
-## Download the demo data
+# Download the demo data
 
 4. Search for **Talinum-CAM-Photosynthesis**
 5. Click the download button, select a location and open the ARC.
+6. Open the downloaded ARC
 
 ![w:700](./../../../img/arcitect-download-TalinumARC.png)
 
@@ -78,24 +52,46 @@ Recommended text editor with code highlighting, git support, terminal, etc: <a h
 
 ---
 
+# Alternative: Use Swate standalone
 
-# Swate hands-on with demo data
+Open [Swate standalone](https://swate-alpha.nfdi4plants.org) in web browser
+
+:bulb: Alternatively, you can use Swate as [Excel Plugin](./../../../SwateManual/Docs01-Installing-Swate.html), but this is outdated
 
 ---
 
-## Swate Overview
+# Swate Overview
 
 ![width:1300](./../../../img/Swate_a_Overview.png)
 
 ---
 
-## Let's annotate the plant samples first
+# Let's annotate the plant samples first
 
-1. Navigate to the demo ARC. 
-2. Open the lab notes `studies/talinum_drought/protocols/plant_material.txt` in a text editor. 
-3. Import the empty `studies/talinum_drought/isa.study.xlsx` file in Swate.
+1. Check out the lab notes `studies/talinum_drought/protocols/plant_material.txt`
+
+<div class="two-columns">
+
+<div>
+
+*ARCitect*
+
+2. Select the study `talinum_drought`
+3. Add a new table
+
+</div>
+
+<div>
+
+*Swate standalone*
+
+Import the empty `studies/talinum_drought/isa.study.xlsx`
 
 ![width:600](./../../../img/Swate_a_Home.png)
+
+</div>
+
+</div>
 
 ---
 
@@ -273,29 +269,11 @@ Try to fill the two sheets with the protocol details:
 
 ## Link samples across studies and assays
 
-1. Use the `Sample Name` of studies/talinum_drought/isa.study.xlsx as the `Source Name` to **rna-extraction**.
-1. Use the `Sample Name` of **rna-extraction** as the `Source Name` to **illumina-libraries**.
+1. Use the `Output [Sample Name]` of studies/talinum_drought/isa.study.xlsx as the `Input [Sample Name]` to **rna-extraction**.
+1. Use the `Output [Sample Name]` of **rna-extraction** as the `Input [Sample Name]` to **illumina-libraries**.
 
-<script type="module">
-import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-mermaid.initialize({ startOnLoad: true });
-</script>
+**Seeds** &mdash;*Plant growth*&#x21FE; **Leaves** &mdash;*RNA Extraction*&#x21FE; **RNA** &mdash;*Illumina*&#x21FE; **fastq files**
 
-<div class="mermaid">
-flowchart LR
-%% Nodes
-  S1(Seeds)
-  S2(Leaves)  
-  M1(RNA)
-  P1>plant growth]
-  P2>RNA extraction]
-  P6>Illumina]
-  D2(fastq files)
-%% Links
-S1 ---P1--> S2
-S2 ---P2--> M1
-M1 ---P6--> D2
-</div>
 
 ---
 
@@ -319,14 +297,16 @@ M1 ---P6--> D2
 
 Go ahead, adjust the *Building Blocks* you want to use to describe your experiment as you see fit.
 Insert values using Swate Term search and add input and output.
+<!-- 
 
 ---
+
 ## File Export 
 
 - Click **save** button to download the file 
 - file can also be exported as [ISA-JSON](https://isa-specs.readthedocs.io/en/latest/isajson.html#) file  
 ---
-<!-- TODO check again, did not work out 2024-03-14, add template button is disabled in Swate alpha -->
+
 ## Re-use a protocol (process.json)
 
 1. Import the empty `assays/metabolomics/isa.assay.xlsx)` workbook in Swate.
@@ -340,7 +320,7 @@ Insert values using Swate Term search and add input and output.
 :bulb: This adds not only an empty template, but a filled out table with keys (headers) and values (cells).
 
 ---
-<!-- TODO delete or change to tables? ? -->
+
 ## A small detour on "Excel Tables"
 
 Swate uses Excel's "table" feature to annotate workflows. Each table represents one *process* from input (e.g. plant leaf material) to output (e.g. leaf extract).
@@ -358,27 +338,10 @@ Example workflows with three *processes* each:
 
 ---
 
+-->
+
+---
+
 # :construction: Known issues with ARCitect and Swate (April 2024)
 
-
 :bulb: Swate Desktop outdated
-
----
-
----
-
-# Contributors
-
-Slides presented here include contributions by
-
-- name: Dominik Brilhaus
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197
-- name: Kevin Frey
-  github: https://github.com/Freymaurer
-  orcid: https://orcid.org/0000-0002-8493-1077
-- name: Martin Kuhl
-  github: https://github.com/Martin-Kuhl
-  orcid: https://orcid.org/0000-0002-8493-1077
-- name: Sabrina Zander
-  orcid: https://orcid.org/0009-0000-4569-6126

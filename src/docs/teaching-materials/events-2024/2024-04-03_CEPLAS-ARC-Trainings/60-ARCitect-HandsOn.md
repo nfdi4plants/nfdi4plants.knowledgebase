@@ -150,14 +150,10 @@ Link your assays to your **talinum_drought** study
 
 # Add information about your assay
 
-In the assay panel you can
-
-<!-- TODO, not possible at the moment or?  1. link or unlink the assay to studies, and --> 
-1. define the assay's
-   - measurement type
-   - technology type, and
-   - technology platform.
-3. add data process information
+In the assay panel you can define the assay's
+ - measurement type
+ - technology type, and
+ - technology platform
 
 ![bg right w:600](./../../../img/ARCitect_TalinumPhotosynthesis_AssayPanel.png)
 
@@ -191,7 +187,6 @@ In the file tree you can
 # Sort Demo Data to your ARC
 
 💡 protocols and multiple datasets can directly be imported via ARCitect
-
 
 ---
 
@@ -327,21 +322,3 @@ To reactivate it and let the DataHUB validate your ARC again:
   4. Save changes
 
 ![bg right:60% w:600](./../../../img/cqc-activate-autodevops.png)
-
----
-
----
-
-# Contributors
-
-Slides presented here include contributions by
-
-- name: Dominik Brilhaus
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197
-- name: Cristina Martins Rodrigues
-  github: https://github.com/CMR248
-  orcid: https://orcid.org/0000-0002-4849-1537
-- name: Sabrina Zander
-  github: https://github.com/SabrinaZander
-  orcid: https://orcid.org/0009-0000-4569-6126
