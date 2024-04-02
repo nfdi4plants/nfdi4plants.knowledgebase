@@ -11,8 +11,6 @@ author:
   orcid: https://orcid.org/0000-0001-9021-3197
 ---
 
-# Overview DataPLANT
-
 <!-- 
 
 TODO 
@@ -22,10 +20,7 @@ TODO
 
 -->
 
-
----
-
-# Data Stewardship between DataPLANT and the community
+# Data Stewardship between DataPLANT and the community <!-- fit -->
 
 ![w:880](./../../../img/DataPLANT-collaborationCEPLAS.drawio.png)
 
@@ -36,45 +31,6 @@ TODO
 ![width:850](./../../../img/ARC-data-cycle-bag.drawio.png)
 
 Your entire investigation in a single unified bag
-
----
-
-# What does an ARC look like?
-
-![width:950](./../../../img/ARC_fillWithData_seq1.png)
-
----
-
-# ARCs store experimental data
-
-![width:950](./../../../img/ARC_fillWithData_seq3.png)
-
----
-
-# Computations can be run inside ARCs
-
-![width:950](./../../../img/ARC_fillWithData_seq5.png)
-
----
-
-# ARCs come with comprehensive metadata
-
-![width:950](./../../../img/ARC_fillWithData_seq6.png)
-
----
-
-# ARC builds on standards
-
-![w:600](./../../../img/ARC_BuildsOnStandards3.png)
-
-<span class="footer-reference">https://isa-tools.org/ | https://www.commonwl.org/
-https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
-
----
-
-# The DataPLANT DataHUB &ndash; a GitLab ***Plus***
-
-![](./../../../img/DataHUB-GitLab.drawio.png)
 
 ---
 
@@ -119,7 +75,6 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 ![w:900](./../../../img/ARC-publication-outlets.drawio.png)
 
 ---
-
 
 # From ARC to repositories
 
@@ -172,7 +127,6 @@ Facilities and labs can define their common workflows as templates
 
 ---
 
-
 # Validation
 
 
@@ -202,7 +156,6 @@ Facilities and labs can define their common workflows as templates
 ![w:800](./../../../img/tpj16474-fig-0005-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
-
 
 ---
 
@@ -246,11 +199,6 @@ Facilities and labs can define their common workflows as templates
 </div>
 
 
-
-
-
-
-
 ---
 
 # Streamlined data exchange
@@ -265,14 +213,14 @@ Facilities and labs can define their common workflows as templates
 
 
 ---
-
+<!-- 
 # Mutable data life cycle
 
 ![w:700](./../../../img/tpj16474-fig-0006-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
----
+--- -->
 
 # Project management
 
@@ -292,11 +240,19 @@ https://dmpg.nfdi4plants.org
 
 ---
 
-# Tool assistance
+# Everything is a file
+
+DataPLANT employs a **data-centric** approach to RDM
+
+![w:800](./../../../img/ARC-data-centric_everything-is-a-file.drawio.png)
+
+---
+
+# No technical lock-in
 
 ![w:1000](./../../../img/arc-tool-assistance.drawio.png)
 
-(Meta)data transparency with tool assistance but no technical lock-in
+(Meta)data transparency with tool assistance but **no technical lock-in**
 
 ---
 
@@ -306,64 +262,201 @@ https://dmpg.nfdi4plants.org
 
 ---
 
-# Tool assistance &ndash; but no tool lock-in
+# What does an ARC look like?
 
-- **Data-centric**: it's more about the data than tools or implementations
-
----
-
-# Conclusion
-
-- ARC ecosystem supports the full data life cycle
+![width:950](./../../../img/ARC_fillWithData_seq1.png)
 
 ---
 
-# *Everything is a file*
+# ARCs store experimental data
 
-DataPLANT employs a **data-centric** approach to RDM
-
-![w:800](./../../../img/ARC-data-centric_everything-is-a-file.drawio.png)
+![width:950](./../../../img/ARC_fillWithData_seq3.png)
 
 ---
 
-# Resources &ndash; join the open source movement
+# Computations can be run inside ARCs
 
-<style scoped>section,p {text-align: left;} </style>
-
-<img align="left" style="height:35px" src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
-
-Website: <a href="https://nfdi4plants.org/" target="_blank">https://nfdi4plants.org/</a>
-Knowledge Base: <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/" target="_blank">https://nfdi4plants.org/nfdi4plants.knowledgebase/</a>
-DataHUB: <a href="https://git.nfdi4plants.org" target="_blank">https://git.nfdi4plants.org</a>
-GitHub: <a href="https://github.com/nfdi4plants" target="_blank">https://github.com/nfdi4plants</a>
+![width:950](./../../../img/ARC_fillWithData_seq5.png)
 
 ---
 
-# Continuous support  
+# ARCs come with comprehensive metadata
 
-<style scoped>section,p {text-align: left;} </style>
-
-Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TRR341) offer support.
-
-1. Slack Workspace for ad hoc support
-2. Monthly user meeting (2nd Friday of the month)
-
-[&rarr; Details](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-support.html).
+![width:950](./../../../img/ARC_fillWithData_seq6.png)
 
 ---
 
+# ARC builds on standards
+
+![w:600](./../../../img/ARC_BuildsOnStandards3.png)
+
+<span class="footer-reference">https://isa-tools.org/ | https://www.commonwl.org/
+https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
+
 ---
 
-# Contributors
+# The DataPLANT DataHUB &ndash; a GitLab ***Plus***
 
-Slides presented here include contributions by
+![](./../../../img/DataHUB-GitLab.drawio.png)
 
-- name: Dominik Brilhaus
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197
-- name: Cristina Martins Rodrigues
-  github: https://github.com/CMR248
-  orcid: https://orcid.org/0000-0002-4849-1537
-- name: Martin Kuhl
-  github: https://github.com/Martin-Kuhl
-  orcid: https://orcid.org/0000-0002-8493-1077
+---
+ 
+# ARC builds on ISA
+
+![w:900](./../../../img/ISAmodel_ARC01_img01.svg)
+
+<span class="footer-reference">ISA Tools: https://isa-tools.org/format/specification.html</span>
+
+---
+
+# ARC builds on ISA to connect data
+
+![w:1000](./../../../img/ISAmodel_ARC01_img02.svg)
+
+---
+
+# ARC builds on ISA to link data
+
+<div class="two-columns">
+
+  <div>
+
+  - Samples are linked study-to-assay, assay-to-assay
+  - Raw data is linked to assays
+  - Protocols can be referenced
+  - ...
+
+  </div>
+
+  <div>
+  
+  ![w:800](./../../../img/ISAmodel_ARC01_img02.svg)
+  
+  </div>
+</div>
+
+
+
+---
+
+# Swate
+
+**S**wate **w**orkflow **a**nnotation **t**ool for (**E**xcel / **e**veryone)
+
+https://github.com/nfdi4plants/Swate
+
+---
+
+# Annotation by flattening the knowledge graph
+
+![w:800](./../../../img/Swate_ParentChildTerm.svg)
+
+- Low-friction metadata annotation
+- Familiar spreadsheet, row/column-based environment
+
+---
+
+# Annotation principle
+
+![w:650](./../../../img/Swate_ParentChildTerm2.svg)
+
+- Low-friction metadata annotation
+- Familiar spreadsheet, row/column-based environment
+
+---
+
+# Adding new building blocks
+
+![w:1000](./../../../img/Swate_a_newBuildingBlocks.png)
+
+Swate can be used for the annotation of **isa.study.xlsx and isa.assay.xlsx** files
+
+---
+
+# Annotation Building Block types
+
+<div class="two-columns" style="font-size: 25px">
+  
+  <div>
+  
+- Input (e.g. Source Name, Sample Name)
+- Protocol columns
+- Characteristic // Parameter // Factor
+- Output (e.g. Sample Name, Raw Data File, Derived Data File)
+
+</div>
+  
+  <div>
+  
+  ![w:600px](./../../../img/Swate_a_Overview.png)
+    
+  </div>
+</div>
+
+
+Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/units/AnnotationPrinciples/isa_AnnotationPrinciples-slides.html)
+
+---
+
+# Ontology term search
+
+<style scoped>
+h1{
+  text-align: left
+}
+section {
+  text-align: center;
+}
+</style>
+
+![w:750](./../../../img/Swate_a_OntologyTermSearch.png)
+
+Enable **related term directed search** to directly fill cells with child terms
+
+---
+
+# Fill your table with ontology terms
+
+![w:800](./../../../img/Swate_a_OntologyTermSearch2.png)
+
+---
+
+# Hierarchical combination of ontologies
+
+![w:800](./../../../img/Swate_OntologyCombination.svg)
+
+<!-- combination of ISA (Characteristics, Parameter, Factor) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter \[temperature\] or Factor \[temperature\]). -->
+
+---
+
+# Checklists and Templates
+
+![w:800px](./../../../img/swate_TemplatesChecklists.svg)
+
+Metadata standards or repository requirements can be represented as templates
+
+---
+
+# Realization of lab-specific metadata templates
+
+![w:650px](./../../../img/SWATE_metadataTemplates.png)
+
+Facilities can define their most common workflows as templates
+
+<style scoped>
+h1{
+  text-align: left
+}
+section {
+  text-align: center;
+}
+</style>
+
+---
+
+# Directly import templates via Swate
+
+- DataPLANT curated
+- Community templates
+
+![bg right w:450](./../../../img/Swate_a_templates.png)

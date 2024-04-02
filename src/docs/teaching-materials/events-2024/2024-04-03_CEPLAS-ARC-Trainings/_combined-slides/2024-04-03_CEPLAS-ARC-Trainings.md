@@ -4,7 +4,7 @@ layout: slides
 theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 title: 2024-04-03_CEPLAS-ARC-Trainings
-date: 2024-03-26
+date: 2024-04-02
 ---
 
 
@@ -23,7 +23,9 @@ TODO before final
 <br>
 
 April, 2024
-Dominik Brilhaus, CEPLAS Data Science
+
+Dominik Brilhaus, CEPLAS
+Sabrina Zander, MibiNet
 
 ![bg fit](./../../../../img/background_title_ceplas.drawio.svg)
 
@@ -41,9 +43,9 @@ Time | Topics
 09:00 - 09:15 | Welcome, Intro RDM and NFDI
 09:15 - 09:45 | Overview DataPLANT, and DataPLANT Tool chain
 09:45 - 10:30 | Demo ARCitect and Metadata annotation with SWATE
-10:30 - 10:40 | *Short break* :coffee:
-10:40 - 11:40 | Intro and Demo DataHUB
-11:40 - 12:00 | Q & A
+10:30 - 10:45 | *Short break* :coffee:
+10:45 - 11:45 | Intro and Demo DataHUB
+11:45 - 12:00 | Q & A
 
 </div>
 
@@ -87,18 +89,18 @@ Slides are shared via [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4pl
 
 ---
 
-# Continuous support
+# Get-to-know
 
-Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TRR341) offer support.
-
-1. Slack Workspace for ad hoc support
-2. Monthly user meeting (2nd Friday of the month)
-
-<a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-support.html" target="_blank">&rarr; Details</a>
+- Lab
+- CEPLAS / TRR / MibiNet / ?
+- My favorite lab assay
+- Used code / programming language before
+- Have an ORCID
+- My motivation / expectation
 
 ---
 
-# Resources
+# Resources &ndash; join the open source movement
 
 ### <img align="left" style="height:35px" src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
 
@@ -114,24 +116,35 @@ HelpDesk: <a href="https://helpdesk.nfdi4plants.org" target="_blank">https://hel
 
 ---
 
+# Continuous support
+
+Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TRR341) offer support.
+
+1. Slack Workspace for ad hoc support
+2. Monthly user meeting (2nd Friday of the month)
+
+[&rarr; Details](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-support.html).
+
+<div>
+  <img style="height:40px;margin-right:50px" src='https://www.ceplas.eu/typo3conf/ext/fksitepackage/Resources/Public/Images/CEPLAS-Logo.svg'/>
+  <img style="height:100px;margin-right:50px" src='https://trr341.uni-koeln.de/sites/crc_trr_341/TRR341_logo.png'/>
+  <img style="height:70px;margin-right:50px" src='https://www.sfb1535.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Biologie/SFB1535/Bilder/MibiNet.png'/>
+</div>
+
 ---
 
-# Contributors
-
-Slides presented here include contributions by
-
-- name: Dominik Brilhaus
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197
-
----
-
-
-# Introduction to RDM
-
----
 
 # Why research data management (RDM)?
+
+- Increase transparency
+- Make data accessible
+- Save time (writing, reusing)
+- Reduce the risk of data loss
+- Optimize the costs
+- Facilitate future reuse and sharing
+- Improve citations
+
+![bg right:40% w:400](https://rdmpromotion.rbind.io/material/CC-BY-NC/futureself.png)
 
 ---
 
@@ -238,10 +251,6 @@ object-fit: cover;
 
 ---
 
----
-
-
-# Overview DataPLANT
 
 <!-- 
 
@@ -252,10 +261,7 @@ TODO
 
 -->
 
-
----
-
-# Data Stewardship between DataPLANT and the community
+# Data Stewardship between DataPLANT and the community <!-- fit -->
 
 ![w:880](./../../../../img/DataPLANT-collaborationCEPLAS.drawio.png)
 
@@ -266,45 +272,6 @@ TODO
 ![width:850](./../../../../img/ARC-data-cycle-bag.drawio.png)
 
 Your entire investigation in a single unified bag
-
----
-
-# What does an ARC look like?
-
-![width:950](./../../../../img/ARC_fillWithData_seq1.png)
-
----
-
-# ARCs store experimental data
-
-![width:950](./../../../../img/ARC_fillWithData_seq3.png)
-
----
-
-# Computations can be run inside ARCs
-
-![width:950](./../../../../img/ARC_fillWithData_seq5.png)
-
----
-
-# ARCs come with comprehensive metadata
-
-![width:950](./../../../../img/ARC_fillWithData_seq6.png)
-
----
-
-# ARC builds on standards
-
-![w:600](./../../../../img/ARC_BuildsOnStandards3.png)
-
-<span class="footer-reference">https://isa-tools.org/ | https://www.commonwl.org/
-https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
-
----
-
-# The DataPLANT DataHUB &ndash; a GitLab ***Plus***
-
-![](./../../../../img/DataHUB-GitLab.drawio.png)
 
 ---
 
@@ -349,7 +316,6 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 ![w:900](./../../../../img/ARC-publication-outlets.drawio.png)
 
 ---
-
 
 # From ARC to repositories
 
@@ -402,7 +368,6 @@ Facilities and labs can define their common workflows as templates
 
 ---
 
-
 # Validation
 
 
@@ -432,7 +397,6 @@ Facilities and labs can define their common workflows as templates
 ![w:800](./../../../../img/tpj16474-fig-0005-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
-
 
 ---
 
@@ -476,11 +440,6 @@ Facilities and labs can define their common workflows as templates
 </div>
 
 
-
-
-
-
-
 ---
 
 # Streamlined data exchange
@@ -495,14 +454,14 @@ Facilities and labs can define their common workflows as templates
 
 
 ---
-
+<!-- 
 # Mutable data life cycle
 
 ![w:700](./../../../../img/tpj16474-fig-0006-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
----
+--- -->
 
 # Project management
 
@@ -522,11 +481,19 @@ https://dmpg.nfdi4plants.org
 
 ---
 
-# Tool assistance
+# Everything is a file
+
+DataPLANT employs a **data-centric** approach to RDM
+
+![w:800](./../../../../img/ARC-data-centric_everything-is-a-file.drawio.png)
+
+---
+
+# No technical lock-in
 
 ![w:1000](./../../../../img/arc-tool-assistance.drawio.png)
 
-(Meta)data transparency with tool assistance but no technical lock-in
+(Meta)data transparency with tool assistance but **no technical lock-in**
 
 ---
 
@@ -536,74 +503,207 @@ https://dmpg.nfdi4plants.org
 
 ---
 
-# Tool assistance &ndash; but no tool lock-in
+# What does an ARC look like?
 
-- **Data-centric**: it's more about the data than tools or implementations
-
----
-
-# Conclusion
-
-- ARC ecosystem supports the full data life cycle
+![width:950](./../../../../img/ARC_fillWithData_seq1.png)
 
 ---
 
-# *Everything is a file*
+# ARCs store experimental data
 
-DataPLANT employs a **data-centric** approach to RDM
-
-![w:800](./../../../../img/ARC-data-centric_everything-is-a-file.drawio.png)
+![width:950](./../../../../img/ARC_fillWithData_seq3.png)
 
 ---
 
-# Resources &ndash; join the open source movement
+# Computations can be run inside ARCs
 
-<style scoped>section,p {text-align: left;} </style>
-
-<img align="left" style="height:35px" src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
-
-Website: <a href="https://nfdi4plants.org/" target="_blank">https://nfdi4plants.org/</a>
-Knowledge Base: <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/" target="_blank">https://nfdi4plants.org/nfdi4plants.knowledgebase/</a>
-DataHUB: <a href="https://git.nfdi4plants.org" target="_blank">https://git.nfdi4plants.org</a>
-GitHub: <a href="https://github.com/nfdi4plants" target="_blank">https://github.com/nfdi4plants</a>
+![width:950](./../../../../img/ARC_fillWithData_seq5.png)
 
 ---
 
-# Continuous support  
+# ARCs come with comprehensive metadata
 
-<style scoped>section,p {text-align: left;} </style>
-
-Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TRR341) offer support.
-
-1. Slack Workspace for ad hoc support
-2. Monthly user meeting (2nd Friday of the month)
-
-[&rarr; Details](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-support.html).
+![width:950](./../../../../img/ARC_fillWithData_seq6.png)
 
 ---
 
----
+# ARC builds on standards
 
-# Contributors
+![w:600](./../../../../img/ARC_BuildsOnStandards3.png)
 
-Slides presented here include contributions by
-
-- name: Dominik Brilhaus
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197
-- name: Cristina Martins Rodrigues
-  github: https://github.com/CMR248
-  orcid: https://orcid.org/0000-0002-4849-1537
-- name: Martin Kuhl
-  github: https://github.com/Martin-Kuhl
-  orcid: https://orcid.org/0000-0002-8493-1077
+<span class="footer-reference">https://isa-tools.org/ | https://www.commonwl.org/
+https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 ---
 
+# The DataPLANT DataHUB &ndash; a GitLab ***Plus***
 
-# CEPLAS RDM &ndash; Outlook
+![](./../../../../img/DataHUB-GitLab.drawio.png)
 
 ---
+ 
+# ARC builds on ISA
+
+![w:900](./../../../../img/ISAmodel_ARC01_img01.svg)
+
+<span class="footer-reference">ISA Tools: https://isa-tools.org/format/specification.html</span>
+
+---
+
+# ARC builds on ISA to connect data
+
+![w:1000](./../../../../img/ISAmodel_ARC01_img02.svg)
+
+---
+
+# ARC builds on ISA to link data
+
+<div class="two-columns">
+
+  <div>
+
+  - Samples are linked study-to-assay, assay-to-assay
+  - Raw data is linked to assays
+  - Protocols can be referenced
+  - ...
+
+  </div>
+
+  <div>
+  
+  ![w:800](./../../../../img/ISAmodel_ARC01_img02.svg)
+  
+  </div>
+</div>
+
+
+
+---
+
+# Swate
+
+**S**wate **w**orkflow **a**nnotation **t**ool for (**E**xcel / **e**veryone)
+
+https://github.com/nfdi4plants/Swate
+
+---
+
+# Annotation by flattening the knowledge graph
+
+![w:800](./../../../../img/Swate_ParentChildTerm.svg)
+
+- Low-friction metadata annotation
+- Familiar spreadsheet, row/column-based environment
+
+---
+
+# Annotation principle
+
+![w:650](./../../../../img/Swate_ParentChildTerm2.svg)
+
+- Low-friction metadata annotation
+- Familiar spreadsheet, row/column-based environment
+
+---
+
+# Adding new building blocks
+
+![w:1000](./../../../../img/Swate_a_newBuildingBlocks.png)
+
+Swate can be used for the annotation of **isa.study.xlsx and isa.assay.xlsx** files
+
+---
+
+# Annotation Building Block types
+
+<div class="two-columns" style="font-size: 25px">
+  
+  <div>
+  
+- Input (e.g. Source Name, Sample Name)
+- Protocol columns
+- Characteristic // Parameter // Factor
+- Output (e.g. Sample Name, Raw Data File, Derived Data File)
+
+</div>
+  
+  <div>
+  
+  ![w:600px](./../../../../img/Swate_a_Overview.png)
+    
+  </div>
+</div>
+
+
+Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/units/AnnotationPrinciples/isa_AnnotationPrinciples-slides.html)
+
+---
+
+# Ontology term search
+
+<style scoped>
+h1{
+  text-align: left
+}
+section {
+  text-align: center;
+}
+</style>
+
+![w:750](./../../../../img/Swate_a_OntologyTermSearch.png)
+
+Enable **related term directed search** to directly fill cells with child terms
+
+---
+
+# Fill your table with ontology terms
+
+![w:800](./../../../../img/Swate_a_OntologyTermSearch2.png)
+
+---
+
+# Hierarchical combination of ontologies
+
+![w:800](./../../../../img/Swate_OntologyCombination.svg)
+
+<!-- combination of ISA (Characteristics, Parameter, Factor) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter \[temperature\] or Factor \[temperature\]). -->
+
+---
+
+# Checklists and Templates
+
+![w:800px](./../../../../img/swate_TemplatesChecklists.svg)
+
+Metadata standards or repository requirements can be represented as templates
+
+---
+
+# Realization of lab-specific metadata templates
+
+![w:650px](./../../../../img/SWATE_metadataTemplates.png)
+
+Facilities can define their most common workflows as templates
+
+<style scoped>
+h1{
+  text-align: left
+}
+section {
+  text-align: center;
+}
+</style>
+
+---
+
+# Directly import templates via Swate
+
+- DataPLANT curated
+- Community templates
+
+![bg right w:450](./../../../../img/Swate_a_templates.png)
+
+---
+
 
 # CEPLAS connection to the NFDI
 
@@ -727,8 +827,6 @@ ARC services are available as on-premise option
 ---
 -->
 
----
-
 # Where do I store my ARC?
 
 ![](./../../../../img/ARC-storageLocations-withNotes.drawio.png)
@@ -806,6 +904,12 @@ ARC services are available as on-premise option
 
 ---
 
+# Options to share an ARC via the DataHUB
+
+<img src="./../../../../img/arc-sharing-Options.drawio.png" style="display: block; margin: auto" width=700px>
+
+---
+
 # Namespaces
 
 - Every user has a personal namespace, where they can upload or create new ARCs
@@ -850,225 +954,6 @@ When inviting new members to an ARC or group, you can choose between different l
 
 :bulb: Investigation contacts are not automatically invited as members to the ARC.
 
----
-
-# Options to share an ARC via the DataHUB
-
-<img src="./../../../../img/arc-sharing-Options.drawio.png" style="display: block; margin: auto" width=700px>
-
----
-
-<!-- TODO 
-- change .isa files to Swate alpha Layout?
-- discuss registry of studies and assays -->
-  
-# Metadata and ISA
-
----
-
-# ARC builds on ISA
-
-![w:900](./../../../../img/ISAmodel_ARC01_img01.svg)
-
-<https://isa-tools.org/format/specification.html>
-
----
-
-# ARC builds on ISA
-
-![w:1100](./../../../../img/ISAmodel_ARC01_img02.svg)
-
----
-
-# isa.<>.xlsx files within ARCs
-
-![w:1000](./../../../../img/ISAmodel_ARC01_img03.svg)
-
----
-
-<!-- # Study and assay files are registered in the investigation file 
-
-not true at the moment !!!!
-
-![w:950](./../../../../img/ISAmodel_ARC01_img04.svg)
-
-
----
--->
-# The output of a study or assay file can function as input for a new isa.assay.xlsx
-
-Output building blocks:
-
-- Sample Name
-- Raw Data File
-- Derived Data File
-
-![bg right w:600](./../../../../img/ISAmodel_ARC01_img05.svg)
-
----
-
-#
-
-![bg w:1050](./../../../../img/ISAmodel_ARC01_img6.svg)
-
----
-
-# Swate
-
----
-
-# Annotation by flattening the knowledge graph
-
-![w:800](./../../../../img/Swate_ParentChildTerm.svg)
-
-- Low-friction metadata annotation
-- Familiar spreadsheet, row/column-based environment
-
----
-
-# Annotation principle
-
-<!-- <style scoped>
-section p img{
-  /* padding-left: 230px */
-}  
-</style> -->
-
-![w:650](./../../../../img/Swate_ParentChildTerm2.svg)
-
-- Low-friction metadata annotation
-- Familiar spreadsheet, row/column-based environment
-
----
-
-# Adding new building blocks (columns)
-
-![w:1000](./../../../../img/Swate_a_newBuildingBlocks.png)
-
-- Swate can be used for the annotation of **isa.study.xlsx and isa.assay.xlsx** files
-
----
-
-# Annotation Building Block types <!--fit-->
-
-<style scoped>
-
-section{
-    font-size: 25px
-}
-
-</style>
-
-![bg right w:600](./../../../../img/Swate_a_Overview.png)
-
-- Source Name (Input)
-- Protocol Columns
-  - Protocol Type, Protocol Ref
-- Characteristic
-- Parameter
-- Factor
-- Component
-- Output Columns
-  - Sample Name, Raw Data File, Derived Data File
-
-Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/isa_AnnotationPrinciples.html) | [slides](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/units/AnnotationPrinciples/isa_AnnotationPrinciples-slides.html)
-
----
-
-# Ontology term search
-
-<style scoped>
-h1{
-  text-align: left
-}
-section {
-  text-align: center;
-}
-</style>
-
-![w:750](./../../../../img/Swate_a_OntologyTermSearch.png)
-
-Enable **related term directed search** to directly fill cells with child terms
-
----
-
-# Fill your table with ontology terms
-
-![w:800](./../../../../img/Swate_a_OntologyTermSearch2.png)
-
----
-
-# Hierarchical combination of ontologies
-
-![w:800](./../../../../img/Swate_OntologyCombination.svg)
-
-<!-- combination of ISA (Characteristics, Parameter, Factor) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter \[temperature\] or Factor \[temperature\]). -->
-
----
-
-# Swate templates
-
----
-
-# Checklists and Templates
-
-![w:800px](./../../../../img/swate_TemplatesChecklists.svg)
-
-Metadata standards or repository requirements can be represented as templates
-
-<style scoped>
-h1{
-  text-align: left
-}
-section {
-  text-align: center;
-}
-</style>
-
----
-
-# Realization of lab-specific metadata templates
-
-![w:650px](./../../../../img/SWATE_metadataTemplates.png)
-
-Facilities can define their most common workflows as templates
-
-<style scoped>
-h1{
-  text-align: left
-}
-section {
-  text-align: center;
-}
-</style>
-
----
-
-# Directly import templates via Swate
-
-- DataPLANT curated
-- Community templates
-
-![bg right w:450](./../../../../img/Swate_a_templates.png)
-
----
-
----
-
-# Contributors
-
-Slides presented here include contributions by
-
-- name: Dominik Brilhaus
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197
-- name: Martin Kuhl
-  github: https://github.com/Martin-Kuhl
-  orcid: https://orcid.org/0000-0002-8493-1077
-- name: Sabrina Zander
-  github: https://github.com/SabrinaZander
-  orcid: https://orcid.org/0009-0000-4569-6126
-  
 ---
 
 
@@ -1121,17 +1006,6 @@ Dominik Brilhaus, CEPLAS Data Science
 ---
 
 # Let's draw a typical lab workflow :pencil: 
-
----
----
-
-# Contributors
-
-Slides presented here include contributions by
-
-- name: Dominik Brilhaus
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197
 
 ---
 
@@ -1270,14 +1144,10 @@ Link your assays to your **talinum_drought** study
 
 # Add information about your assay
 
-In the assay panel you can
-
-<!-- TODO, not possible at the moment or?  1. link or unlink the assay to studies, and --> 
-1. define the assay's
-   - measurement type
-   - technology type, and
-   - technology platform.
-3. add data process information
+In the assay panel you can define the assay's
+ - measurement type
+ - technology type, and
+ - technology platform
 
 ![bg right w:600](./../../../../img/ARCitect_TalinumPhotosynthesis_AssayPanel.png)
 
@@ -1311,7 +1181,6 @@ In the file tree you can
 # Sort Demo Data to your ARC
 
 💡 protocols and multiple datasets can directly be imported via ARCitect
-
 
 ---
 
@@ -1447,24 +1316,6 @@ To reactivate it and let the DataHUB validate your ARC again:
   4. Save changes
 
 ![bg right:60% w:600](./../../../../img/cqc-activate-autodevops.png)
-
----
-
----
-
-# Contributors
-
-Slides presented here include contributions by
-
-- name: Dominik Brilhaus
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197
-- name: Cristina Martins Rodrigues
-  github: https://github.com/CMR248
-  orcid: https://orcid.org/0000-0002-4849-1537
-- name: Sabrina Zander
-  github: https://github.com/SabrinaZander
-  orcid: https://orcid.org/0009-0000-4569-6126
 
 ---
 
@@ -1712,28 +1563,9 @@ object-position: 100% 45%;
 
 ---
 
----
-
-# Contributors
-
-Slides presented here include contributions by
-
-- name: Dominik Brilhaus
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197
-- name: Cristina Martins Rodrigues
-  github: https://github.com/CMR248
-  orcid: https://orcid.org/0000-0002-4849-1537
-
----
 
 
-<!-- TODO 
-- Move some slides to Swate-Demo?
-- Re-use a protocol (process.json) did not work 
-- -->
-
-# Swate hands-on
+# Swate hands-on with demo data
 
 ---
 
@@ -1744,30 +1576,7 @@ Slides presented here include contributions by
 
 ---
 
-## Open Swate standalone
-
-<!-- TODO only use SWATE alpha? -->
-
-
-
-  Open [Swate standalone](https://swate-alpha.nfdi4plants.org)  in web browser 
-
-
-:bulb: Alternatively, you can use Swate as [Excel Plugin](./../../../SwateManual/Docs01-Installing-Swate.html), but this is outdated 
-
-
----
-
-## Have a simple text editor ready
-
-- Windows Notepad
-- MacOS TextEdit
-
-Recommended text editor with code highlighting, git support, terminal, etc: <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
-
----
-
-## Download the demo data
+# Download the demo data
 
 ![bg right:40% w:250](./../../../../img/ARCitect-help-Sidebar.png)
 
@@ -1777,10 +1586,11 @@ Recommended text editor with code highlighting, git support, terminal, etc: <a h
 
 ---
 
-## Download the demo data
+# Download the demo data
 
 4. Search for **Talinum-CAM-Photosynthesis**
 5. Click the download button, select a location and open the ARC.
+6. Open the downloaded ARC
 
 ![w:700](./../../../../img/arcitect-download-TalinumARC.png)
 
@@ -1788,24 +1598,46 @@ Recommended text editor with code highlighting, git support, terminal, etc: <a h
 
 ---
 
+# Alternative: Use Swate standalone
 
-# Swate hands-on with demo data
+Open [Swate standalone](https://swate-alpha.nfdi4plants.org) in web browser
+
+:bulb: Alternatively, you can use Swate as [Excel Plugin](./../../../SwateManual/Docs01-Installing-Swate.html), but this is outdated
 
 ---
 
-## Swate Overview
+# Swate Overview
 
 ![width:1300](./../../../../img/Swate_a_Overview.png)
 
 ---
 
-## Let's annotate the plant samples first
+# Let's annotate the plant samples first
 
-1. Navigate to the demo ARC. 
-2. Open the lab notes `studies/talinum_drought/protocols/plant_material.txt` in a text editor. 
-3. Import the empty `studies/talinum_drought/isa.study.xlsx` file in Swate.
+1. Check out the lab notes `studies/talinum_drought/protocols/plant_material.txt`
+
+<div class="two-columns">
+
+<div>
+
+*ARCitect*
+
+2. Select the study `talinum_drought`
+3. Add a new table
+
+</div>
+
+<div>
+
+*Swate standalone*
+
+Import the empty `studies/talinum_drought/isa.study.xlsx`
 
 ![width:600](./../../../../img/Swate_a_Home.png)
+
+</div>
+
+</div>
 
 ---
 
@@ -1983,29 +1815,11 @@ Try to fill the two sheets with the protocol details:
 
 ## Link samples across studies and assays
 
-1. Use the `Sample Name` of studies/talinum_drought/isa.study.xlsx as the `Source Name` to **rna-extraction**.
-1. Use the `Sample Name` of **rna-extraction** as the `Source Name` to **illumina-libraries**.
+1. Use the `Output [Sample Name]` of studies/talinum_drought/isa.study.xlsx as the `Input [Sample Name]` to **rna-extraction**.
+1. Use the `Output [Sample Name]` of **rna-extraction** as the `Input [Sample Name]` to **illumina-libraries**.
 
-<script type="module">
-import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-mermaid.initialize({ startOnLoad: true });
-</script>
+**Seeds** &mdash;*Plant growth*&#x21FE; **Leaves** &mdash;*RNA Extraction*&#x21FE; **RNA** &mdash;*Illumina*&#x21FE; **fastq files**
 
-<div class="mermaid">
-flowchart LR
-%% Nodes
-  S1(Seeds)
-  S2(Leaves)  
-  M1(RNA)
-  P1>plant growth]
-  P2>RNA extraction]
-  P6>Illumina]
-  D2(fastq files)
-%% Links
-S1 ---P1--> S2
-S2 ---P2--> M1
-M1 ---P6--> D2
-</div>
 
 ---
 
@@ -2029,14 +1843,16 @@ M1 ---P6--> D2
 
 Go ahead, adjust the *Building Blocks* you want to use to describe your experiment as you see fit.
 Insert values using Swate Term search and add input and output.
+<!-- 
 
 ---
+
 ## File Export 
 
 - Click **save** button to download the file 
 - file can also be exported as [ISA-JSON](https://isa-specs.readthedocs.io/en/latest/isajson.html#) file  
 ---
-<!-- TODO check again, did not work out 2024-03-14, add template button is disabled in Swate alpha -->
+
 ## Re-use a protocol (process.json)
 
 1. Import the empty `assays/metabolomics/isa.assay.xlsx)` workbook in Swate.
@@ -2050,7 +1866,7 @@ Insert values using Swate Term search and add input and output.
 :bulb: This adds not only an empty template, but a filled out table with keys (headers) and values (cells).
 
 ---
-<!-- TODO delete or change to tables? ? -->
+
 ## A small detour on "Excel Tables"
 
 Swate uses Excel's "table" feature to annotate workflows. Each table represents one *process* from input (e.g. plant leaf material) to output (e.g. leaf extract).
@@ -2068,30 +1884,13 @@ Example workflows with three *processes* each:
 
 ---
 
+-->
+
+---
+
 # :construction: Known issues with ARCitect and Swate (April 2024)
 
-
 :bulb: Swate Desktop outdated
-
----
-
----
-
-# Contributors
-
-Slides presented here include contributions by
-
-- name: Dominik Brilhaus
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197
-- name: Kevin Frey
-  github: https://github.com/Freymaurer
-  orcid: https://orcid.org/0000-0002-8493-1077
-- name: Martin Kuhl
-  github: https://github.com/Martin-Kuhl
-  orcid: https://orcid.org/0000-0002-8493-1077
-- name: Sabrina Zander
-  orcid: https://orcid.org/0009-0000-4569-6126
 
 ---
 
@@ -2206,17 +2005,6 @@ R1.3. (Meta)data meet domain-relevant community standards
 | R1.3. (Meta)data meet domain-relevant community standards                                | 🔴
 
 <span class="footer-reference">*FAIR classified by https://www.go-fair.org/fair-principles/<span>
----
-
----
-
-# Contributors
-
-Slides presented here include contributions by
-
-- name: Dominik Brilhaus
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197
 
 ---
 
@@ -2341,6 +2129,29 @@ Example template metadata and how it helps in Swate's template search
 ## Known pitfalls with Swate Templates
 
 - Opening and saving a Swate template .xlsx file with a program other than Microsoft Excel (e.g. LibreOffice, python script, R script) often destroys the template (backend). Please, avoid to upload this file into the GitHub repository.
+
+---
+
+
+# Contributors
+
+If not referenced otherwise, figures and slides presented here were created by members of DataPLANT (https://nfdi4plants.org).
+Additional slides were contributed by
+
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
+- name: Cristina Martins Rodrigues
+  github: https://github.com/CMR248
+  orcid: https://orcid.org/0000-0002-4849-1537
+- name: Kevin Frey
+  github: https://github.com/Freymaurer
+  orcid: https://orcid.org/0000-0002-8493-1077
+- name: Sabrina Zander
+  orcid: https://orcid.org/0009-0000-4569-6126
+- name: Martin Kuhl
+  github: https://github.com/Martin-Kuhl
+  orcid: https://orcid.org/0000-0002-8493-1077
 
 ---
 

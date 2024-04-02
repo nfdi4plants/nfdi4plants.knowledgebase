@@ -17,7 +17,6 @@ author:
 
 ## Sign-up / Login / 2FA
 
-
 ## Overview
 
 ### Navigation Bar

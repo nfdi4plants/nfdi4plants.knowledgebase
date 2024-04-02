@@ -1,9 +1,8 @@
 ---
 title: "README 2024-04-03_CEPLAS-ARC-Trainings"
 layout: none
-date: 2023-12-04
+date: 2024-04-03
 ---
-
 
 ## See website locally
 
@@ -20,10 +19,10 @@ npm run fornax
 
 ```bash
 cd src/docs/teaching-materials/events-2024/2024-04-03_CEPLAS-ARC-Trainings
-rm ./*.html
 ```
 
 ```bash
+rm ./*.html
 
 for unit in *.md; do
     
@@ -33,6 +32,32 @@ for unit in *.md; do
     fi
 
 done
+```
+
+## automate adding slides to index
+
+Slides will be placed between two tags <!-- linked-slides -->
+
+```bash
+
+linkedSlidesBegin=$(awk '/<!-- linked-slides -->/{++n; if (n==1) { print NR; exit}}' index.md)
+linkedSlidesEnd=$(awk '/<!-- linked-slides -->/{++n; if (n==2) { print NR; exit}}' index.md)
+
+head -n $linkedSlidesBegin index.md > tmp
+
+for unit in *.html; do
+    
+    noPrefix=${unit#*-}
+    noSuffix=${noPrefix%.*}
+
+    echo "- <a href="./$unit" target="_blank">$noSuffix</a>" >> tmp
+   
+done
+
+tail -n +$linkedSlidesEnd index.md >> tmp
+
+mv tmp index.md
+
 ```
 
 ## Combine all slide decks into one
@@ -63,22 +88,4 @@ sed "s|\./qr-code|\./\.\./qr-code|g" $outfile > tmp; mv tmp $outfile
 marp --html --allow-local-files $outfile --theme-set $marpTheme ../../style/ --
 marp --html --allow-local-files --pdf $outfile --theme-set $marpTheme ../../style/ --
 
-```
-
-## automate adding slides to index
-
-```bash
-
-
-echo "---\nlayout: docs\ntitle: \ndate: \nadd sidebar: _sidebars/mainSidebar.md\n---\n\n## Slide decks\n" > hidden-index.md
-
-for unit in *.html; do
-    
-    noPrefix=${unit#*-}
-    noSuffix=${noPrefix%.*}
-
-    echo "- <a href="./$unit" target="_blank">$noSuffix</a>" >> hidden-index.md
-   
-
-done
 ```

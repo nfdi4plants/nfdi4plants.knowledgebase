@@ -25,7 +25,9 @@ TODO before final
 <br>
 
 April, 2024
-Dominik Brilhaus, CEPLAS Data Science
+
+Dominik Brilhaus, CEPLAS
+Sabrina Zander, MibiNet
 
 ![bg fit](./../../../img/background_title_ceplas.drawio.svg)
 
@@ -43,9 +45,9 @@ Time | Topics
 09:00 - 09:15 | Welcome, Intro RDM and NFDI
 09:15 - 09:45 | Overview DataPLANT, and DataPLANT Tool chain
 09:45 - 10:30 | Demo ARCitect and Metadata annotation with SWATE
-10:30 - 10:40 | *Short break* :coffee:
-10:40 - 11:40 | Intro and Demo DataHUB
-11:40 - 12:00 | Q & A
+10:30 - 10:45 | *Short break* :coffee:
+10:45 - 11:45 | Intro and Demo DataHUB
+11:45 - 12:00 | Q & A
 
 </div>
 
@@ -89,18 +91,18 @@ Slides are shared via [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4pl
 
 ---
 
-# Continuous support
+# Get-to-know
 
-Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TRR341) offer support.
-
-1. Slack Workspace for ad hoc support
-2. Monthly user meeting (2nd Friday of the month)
-
-<a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-support.html" target="_blank">&rarr; Details</a>
+- Lab
+- CEPLAS / TRR / MibiNet / ?
+- My favorite lab assay
+- Used code / programming language before
+- Have an ORCID
+- My motivation / expectation
 
 ---
 
-# Resources
+# Resources &ndash; join the open source movement
 
 ### <img align="left" style="height:35px" src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
 
@@ -116,12 +118,17 @@ HelpDesk: <a href="https://helpdesk.nfdi4plants.org" target="_blank">https://hel
 
 ---
 
----
+# Continuous support
 
-# Contributors
+Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TRR341) offer support.
 
-Slides presented here include contributions by
+1. Slack Workspace for ad hoc support
+2. Monthly user meeting (2nd Friday of the month)
 
-- name: Dominik Brilhaus
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197
+[&rarr; Details](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-support.html).
+
+<div>
+  <img style="height:40px;margin-right:50px" src='https://www.ceplas.eu/typo3conf/ext/fksitepackage/Resources/Public/Images/CEPLAS-Logo.svg'/>
+  <img style="height:100px;margin-right:50px" src='https://trr341.uni-koeln.de/sites/crc_trr_341/TRR341_logo.png'/>
+  <img style="height:70px;margin-right:50px" src='https://www.sfb1535.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Biologie/SFB1535/Bilder/MibiNet.png'/>
+</div>

@@ -16,12 +16,23 @@ Here you can find the slides prepared for the CEPLAS ARC Trainings &ndash; Sprin
 ## Slide decks
 
 <!-- linked-slides -->
-
+- <a href=./00-Welcome.html target=_blank>Welcome</a>
+- <a href=./03-IntroRDM.html target=_blank>IntroRDM</a>
+- <a href=./04-CEPLAS-CurrentState.html target=_blank>CEPLAS-CurrentState</a>
+- <a href=./05-NFDI.html target=_blank>NFDI</a>
+- <a href=./10-Overview-DataPLANT.html target=_blank>Overview-DataPLANT</a>
+- <a href=./15-Outlook-CEPLAS-HHU.html target=_blank>Outlook-CEPLAS-HHU</a>
+- <a href=./22-DataHUB-ConceptsTerminology.html target=_blank>DataHUB-ConceptsTerminology</a>
+- <a href=./50-Intro-HandsOn.html target=_blank>Intro-HandsOn</a>
+- <a href=./60-ARCitect-HandsOn.html target=_blank>ARCitect-HandsOn</a>
+- <a href=./70-DataHUB-HandsOn.html target=_blank>DataHUB-HandsOn</a>
+- <a href=./80-Swate-HandsOn.html target=_blank>Swate-HandsOn</a>
+- <a href=./91-ELNs.html target=_blank>ELNs</a>
+- <a href=./95-Swate_templates-HandsOn.html target=_blank>Swate_templates-HandsOn</a>
+- <a href=./99-Contributors.html target=_blank>Contributors</a>
 <!-- linked-slides -->
 
 :warning: Links are not permanent. Slides may move elsewhere or be updated. We do our best to keep the knowledge base up-to-date &ndash; so you will find all relevant information here.
-
-
 
 ## Reusing materials
 
