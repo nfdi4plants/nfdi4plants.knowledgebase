@@ -107,6 +107,12 @@ author:
 
 ---
 
+# Options to share an ARC via the DataHUB
+
+<img src="./../../../img/arc-sharing-Options.drawio.png" style="display: block; margin: auto" width=700px>
+
+---
+
 # Namespaces
 
 - Every user has a personal namespace, where they can upload or create new ARCs
@@ -150,9 +156,3 @@ When inviting new members to an ARC or group, you can choose between different l
 ![](./../../../img/arc-sharing-MembersVsContacts.drawio.png)
 
 :bulb: Investigation contacts are not automatically invited as members to the ARC.
-
----
-
-# Options to share an ARC via the DataHUB
-
-<img src="./../../../img/arc-sharing-Options.drawio.png" style="display: block; margin: auto" width=700px>
