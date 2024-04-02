@@ -4,7 +4,7 @@ layout: slides
 theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 title: 2024-04-03_CEPLAS-ARC-Trainings
-date: 2024-03-26
+date: 2024-04-02
 ---
 
 
@@ -131,6 +131,17 @@ Slides presented here include contributions by
 
 ---
 
+# Get-to-know
+
+- Lab
+- CEPLAS / TRR / MibiNet / ?
+- My favorite lab assay
+- Used code / programming language before
+- Have an ORCID
+- My motivation / expectation
+
+---
+
 # Why research data management (RDM)?
 
 ---
@@ -241,8 +252,6 @@ object-fit: cover;
 ---
 
 
-# Overview DataPLANT
-
 <!-- 
 
 TODO 
@@ -252,10 +261,9 @@ TODO
 
 -->
 
-
 ---
 
-# Data Stewardship between DataPLANT and the community
+# Data Stewardship between DataPLANT and the community <!-- fit -->
 
 ![w:880](./../../../../img/DataPLANT-collaborationCEPLAS.drawio.png)
 
@@ -266,45 +274,6 @@ TODO
 ![width:850](./../../../../img/ARC-data-cycle-bag.drawio.png)
 
 Your entire investigation in a single unified bag
-
----
-
-# What does an ARC look like?
-
-![width:950](./../../../../img/ARC_fillWithData_seq1.png)
-
----
-
-# ARCs store experimental data
-
-![width:950](./../../../../img/ARC_fillWithData_seq3.png)
-
----
-
-# Computations can be run inside ARCs
-
-![width:950](./../../../../img/ARC_fillWithData_seq5.png)
-
----
-
-# ARCs come with comprehensive metadata
-
-![width:950](./../../../../img/ARC_fillWithData_seq6.png)
-
----
-
-# ARC builds on standards
-
-![w:600](./../../../../img/ARC_BuildsOnStandards3.png)
-
-<span class="footer-reference">https://isa-tools.org/ | https://www.commonwl.org/
-https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
-
----
-
-# The DataPLANT DataHUB &ndash; a GitLab ***Plus***
-
-![](./../../../../img/DataHUB-GitLab.drawio.png)
 
 ---
 
@@ -476,11 +445,6 @@ Facilities and labs can define their common workflows as templates
 </div>
 
 
-
-
-
-
-
 ---
 
 # Streamlined data exchange
@@ -495,14 +459,14 @@ Facilities and labs can define their common workflows as templates
 
 
 ---
-
+<!-- 
 # Mutable data life cycle
 
 ![w:700](./../../../../img/tpj16474-fig-0006-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
----
+--- -->
 
 # Project management
 
@@ -522,11 +486,19 @@ https://dmpg.nfdi4plants.org
 
 ---
 
-# Tool assistance
+# Everything is a file
+
+DataPLANT employs a **data-centric** approach to RDM
+
+![w:800](./../../../../img/ARC-data-centric_everything-is-a-file.drawio.png)
+
+---
+
+# No technical lock-in
 
 ![w:1000](./../../../../img/arc-tool-assistance.drawio.png)
 
-(Meta)data transparency with tool assistance but no technical lock-in
+(Meta)data transparency with tool assistance but **no technical lock-in**
 
 ---
 
@@ -536,23 +508,43 @@ https://dmpg.nfdi4plants.org
 
 ---
 
-# Tool assistance &ndash; but no tool lock-in
+# What does an ARC look like?
 
-- **Data-centric**: it's more about the data than tools or implementations
-
----
-
-# Conclusion
-
-- ARC ecosystem supports the full data life cycle
+![width:950](./../../../../img/ARC_fillWithData_seq1.png)
 
 ---
 
-# *Everything is a file*
+# ARCs store experimental data
 
-DataPLANT employs a **data-centric** approach to RDM
+![width:950](./../../../../img/ARC_fillWithData_seq3.png)
 
-![w:800](./../../../../img/ARC-data-centric_everything-is-a-file.drawio.png)
+---
+
+# Computations can be run inside ARCs
+
+![width:950](./../../../../img/ARC_fillWithData_seq5.png)
+
+---
+
+# ARCs come with comprehensive metadata
+
+![width:950](./../../../../img/ARC_fillWithData_seq6.png)
+
+---
+
+# ARC builds on standards
+
+![w:600](./../../../../img/ARC_BuildsOnStandards3.png)
+
+<span class="footer-reference">https://isa-tools.org/ | https://www.commonwl.org/
+https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
+
+---
+
+# The DataPLANT DataHUB &ndash; a GitLab ***Plus***
+
+![](./../../../../img/DataHUB-GitLab.drawio.png)
+
 
 ---
 
@@ -569,9 +561,7 @@ GitHub: <a href="https://github.com/nfdi4plants" target="_blank">https://github.
 
 ---
 
-# Continuous support  
-
-<style scoped>section,p {text-align: left;} </style>
+# Continuous support
 
 Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TRR341) offer support.
 
@@ -580,23 +570,11 @@ Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TR
 
 [&rarr; Details](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-support.html).
 
----
-
----
-
-# Contributors
-
-Slides presented here include contributions by
-
-- name: Dominik Brilhaus
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197
-- name: Cristina Martins Rodrigues
-  github: https://github.com/CMR248
-  orcid: https://orcid.org/0000-0002-4849-1537
-- name: Martin Kuhl
-  github: https://github.com/Martin-Kuhl
-  orcid: https://orcid.org/0000-0002-8493-1077
+<div>
+  <img style="height:40px;margin-right:50px" src='https://www.ceplas.eu/typo3conf/ext/fksitepackage/Resources/Public/Images/CEPLAS-Logo.svg'/>
+  <img style="height:100px;margin-right:50px" src='https://trr341.uni-koeln.de/sites/crc_trr_341/TRR341_logo.png'/>
+  <img style="height:70px;margin-right:50px" src='https://www.sfb1535.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Biologie/SFB1535/Bilder/MibiNet.png'/>
+</div>
 
 ---
 

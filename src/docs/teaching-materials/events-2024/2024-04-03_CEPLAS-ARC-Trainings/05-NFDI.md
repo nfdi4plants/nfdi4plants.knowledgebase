@@ -33,5 +33,3 @@ author:
 ![w:700](./../../../img/Base4NFDI_Intro_Poster-RDA-2024_JanderRitter-excerpt.png)
 
 <span class="footer-reference">adapted from https://base4nfdi.de/</span>
-
----
