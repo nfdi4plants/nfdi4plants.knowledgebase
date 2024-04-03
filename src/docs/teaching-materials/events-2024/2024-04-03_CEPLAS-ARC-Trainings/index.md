@@ -28,11 +28,8 @@ Here you can find the slides prepared for the CEPLAS ARC Trainings &ndash; Sprin
 - <a href=./70-DataHUB-HandsOn.html target=_blank>DataHUB-HandsOn</a>
 - <a href=./80-Swate-HandsOn.html target=_blank>Swate-HandsOn</a>
 - <a href=./91-Appendix-ELNs.html target=_blank>Appendix-ELNs</a>
-- <a href=./91-ELNs.html target=_blank>ELNs</a>
 - <a href=./95-Appendix-Swate_templates-HandsOn.html target=_blank>Appendix-Swate_templates-HandsOn</a>
-- <a href=./95-Swate_templates-HandsOn.html target=_blank>Swate_templates-HandsOn</a>
 - <a href=./99-Appendix-Contributors.html target=_blank>Appendix-Contributors</a>
-- <a href=./99-Contributors.html target=_blank>Contributors</a>
 <!-- linked-slides -->
 
 :warning: Links are not permanent. Slides may move elsewhere or be updated. We do our best to keep the knowledge base up-to-date &ndash; so you will find all relevant information here.

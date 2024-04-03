@@ -4,7 +4,7 @@ layout: slides
 theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 title: 2024-04-03_CEPLAS-ARC-Trainings
-date: 2024-04-02
+date: 2024-04-03
 ---
 
 
@@ -1531,13 +1531,17 @@ object-position: 100% 45%;
 
 # Version control
 
-- Commit history
+Check out the **commit history** of your ARC via Repository (2) or directly via commits (7)
+
+![w:1000](./../../../../img/datahub-ARC-overview.drawio.svg)
 
 ---
 
 # Project Management
 
-- You can use issues
+Add issues to your ARC (3)
+
+![w:1000](./../../../../img/datahub-ARC-overview.drawio.svg)
 
 ---
 
@@ -2134,6 +2138,8 @@ Example template metadata and how it helps in Swate's template search
 
 
 # Contributors
+
+<style scoped> section{font-size:20px}</style>
 
 If not referenced otherwise, figures and slides presented here were created by members of DataPLANT (https://nfdi4plants.org).
 Additional slides were contributed by
