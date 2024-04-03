@@ -9,6 +9,8 @@ author:
 
 # Contributors
 
+<style scoped> section{font-size:20px}</style>
+
 If not referenced otherwise, figures and slides presented here were created by members of DataPLANT (https://nfdi4plants.org).
 Additional slides were contributed by
 

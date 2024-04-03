@@ -17,6 +17,11 @@ author:
 
 ## Sign-up / Login / 2FA
 
+- http://register.nfdi4plants.org/
+- DataPLANT account management
+  - Password
+  - 2FA
+
 ## Overview
 
 ### Navigation Bar
@@ -35,6 +40,7 @@ author:
 - profile name
 - user name
 - user settings
+  - Show left sidebar: profile, account, access tokens, notifications, ...
 - sign out
 
 ### Projects Panel
@@ -42,7 +48,9 @@ author:
 - tabs yours / all ARCs
 - visibility levels
 - permissions or role
+- stats: stars, forks, merge requests, issues, activity
 - create a **New Project**
+
 
 ### ARC Panel
 
