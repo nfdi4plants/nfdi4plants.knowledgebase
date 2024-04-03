@@ -339,14 +339,6 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 ---
 
-# Swate
-
-**S**wate **w**orkflow **a**nnotation **t**ool for (**E**xcel / **e**veryone)
-
-https://github.com/nfdi4plants/Swate
-
----
-
 # Annotation by flattening the knowledge graph
 
 ![w:800](./../../../img/Swate_ParentChildTerm.svg)
@@ -424,8 +416,6 @@ Enable **related term directed search** to directly fill cells with child terms
 # Hierarchical combination of ontologies
 
 ![w:800](./../../../img/Swate_OntologyCombination.svg)
-
-<!-- combination of ISA (Characteristics, Parameter, Factor) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter \[temperature\] or Factor \[temperature\]). -->
 
 ---
 
