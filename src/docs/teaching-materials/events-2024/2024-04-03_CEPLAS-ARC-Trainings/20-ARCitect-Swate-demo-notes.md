@@ -50,7 +50,7 @@ author:
 
 1. id / title: BMFZ-RNASeq
 2. add contacts from BMFZ
-3. copy / paste sample outputs
+3. copy / paste study sample outputs to inputs
 4. add fastq dataset
 5. add rnaseq template
 6. use file picker
@@ -62,3 +62,14 @@ author:
 1. Push to DataHUB
 2. Open ARC in DataHUB
 3. Leave rest for DataHUB Demo
+
+## Assay 2
+
+1. id / title: CMML-metabolomics
+2. copy / paste study sample outputs to inputs
+3. add gc-ms folders
+4. add metabolomics template
+5. Save ARC
+6. Commit with message
+
+

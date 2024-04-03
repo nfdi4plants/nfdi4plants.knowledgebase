@@ -224,13 +224,17 @@ object-position: 100% 45%;
 
 # Version control
 
-- Commit history
+Check out the **commit history** of your ARC via Repository (2) or directly via commits (7)
+
+![w:1000](./../../../img/datahub-ARC-overview.drawio.svg)
 
 ---
 
 # Project Management
 
-- You can use issues
+Add issues to your ARC (3)
+
+![w:1000](./../../../img/datahub-ARC-overview.drawio.svg)
 
 ---
 
