@@ -114,7 +114,7 @@ Please prepare the following **before the workshop**.
 - Bring your laptop / computer
 - Bring datasets to be ARCified
 - Sign up for a DataHUB user account https://register.nfdi4plants.org/
-  - Please add your `Project/consortium` (e.g. CEPLAS, SFB, TRR) and choose the role `Guest`
+  - Please add your `Project/consortium` (e.g. CEPLAS, SFB, TRR) and choose the role `Guest` or `User`
 - Install <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html" target="_blank">ARCitect</a>
 
 :bulb: Not all installations are perfectly straight-forward. We will be available **half an hour before the workshops** to help you get your machine up and running.
