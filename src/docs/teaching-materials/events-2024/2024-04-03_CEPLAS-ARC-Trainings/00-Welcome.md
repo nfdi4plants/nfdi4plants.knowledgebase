@@ -44,9 +44,9 @@ Time | Topics
 -------- | --------
 09:00 - 09:15 | Welcome, Intro RDM and NFDI
 09:15 - 09:45 | Overview DataPLANT, and DataPLANT Tool chain
-09:45 - 10:30 | Demo ARCitect and Metadata annotation with SWATE
+09:45 - 10:30 | Hands-on ARCitect
 10:30 - 10:45 | *Short break* :coffee:
-10:45 - 11:45 | Intro and Demo DataHUB
+10:45 - 11:45 | Intro and Hands-on DataHUB
 11:45 - 12:00 | Q & A
 
 </div>
@@ -58,7 +58,8 @@ Time | Topics
 Time | Topics
 -------- | --------
 12:00 - 13:00 | *Lunch break* :pizza:
-13:00 - 15:00 | Hands-on ARCitect, DataHUB and Swate
+13:00 - 14:00 | Intro and Hands-on Metadata annotation with SWATE
+14:00 - 15:00 | Create your own ARC
 15:00 - 15:15 | *Short break* :coffee:
 15:15 - 16:30 | Create your own ARC
 16:30 - 17:00 | Q & A and wrap-up
