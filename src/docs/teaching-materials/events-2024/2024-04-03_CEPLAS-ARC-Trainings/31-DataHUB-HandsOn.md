@@ -257,3 +257,17 @@ Add issues to your ARC (3)
 
 </div>
 </div>
+
+---
+
+# Publish your ARC with a few clicks
+
+![w:900px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/cqc-results.png)
+
+---
+
+
+# Receive a DOI
+
+![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/doi-accession.png)
+
