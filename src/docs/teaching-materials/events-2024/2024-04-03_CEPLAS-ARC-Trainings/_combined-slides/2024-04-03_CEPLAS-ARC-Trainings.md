@@ -4,7 +4,7 @@ layout: slides
 theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 title: 2024-04-03_CEPLAS-ARC-Trainings
-date: 2024-04-03
+date: 2024-04-04
 ---
 
 
@@ -89,17 +89,6 @@ Slides are shared via [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4pl
 
 ---
 
-# Get-to-know
-
-- Lab
-- CEPLAS / TRR / MibiNet / ?
-- My favorite lab assay
-- Used code / programming language before
-- Have an ORCID
-- My motivation / expectation
-
----
-
 # Resources &ndash; join the open source movement
 
 ### <img align="left" style="height:35px" src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
@@ -107,7 +96,6 @@ Slides are shared via [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4pl
 Website: <a href="https://nfdi4plants.org/" target="_blank">https://nfdi4plants.org/</a>
 Knowledge Base: <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/" target="_blank">https://nfdi4plants.org/nfdi4plants.knowledgebase/</a>
 DataHUB: <a href="https://git.nfdi4plants.org" target="_blank">https://git.nfdi4plants.org</a>
-
 
 GitHub: <a href="https://github.com/nfdi4plants" target="_blank">https://github.com/nfdi4plants</a>
 HelpDesk: <a href="https://helpdesk.nfdi4plants.org" target="_blank">https://helpdesk.nfdi4plants.org</a>
@@ -133,7 +121,35 @@ Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TR
 
 ---
 
+# Introduce yourself
 
+- Lab
+- CEPLAS / TRR / MibiNet / ?
+- Used code / programming language before
+- Experience with Git / GitLab / GitHub?
+- Have an ORCID
+- My motivation / expectation
+- My favorite lab assay
+
+---
+
+# Let's draw a typical lab workflow :pencil:
+
+---
+
+# BYOD &ndash; Goals
+
+- Move existing datasets into ARCs
+- Share them via the DataHUB
+- First few steps into ARCs
+- You or collaborators can pick them up from there
+
+![bg right w:500](./../../../../img/ceplas-ARCs.drawio.svg)
+
+---
+
+
+<!-- 
 # Why research data management (RDM)?
 
 - Increase transparency
@@ -146,7 +162,7 @@ Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TR
 
 ![bg right:40% w:400](https://rdmpromotion.rbind.io/material/CC-BY-NC/futureself.png)
 
----
+--- -->
 
 # FAIR data stewardship
 
@@ -189,13 +205,16 @@ object-fit: cover;
 
 ![bg right:40% w:500](./../../../../img/User_Challenges_002.svg)
 
+<!-- 
 ---
 
 # The research data life cycle
 
 ![w:350](./../../../../img/RDMkit-data_life_cycle_9.svg)
 
-<span class="footer-reference">https://rdmkit.elixir-europe.org, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
+<span class="footer-reference">https://rdmkit.elixir-europe.org, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span> 
+
+-->
 
 ---
 
@@ -221,33 +240,6 @@ object-fit: cover;
 # Missing interfaces impede collaboration
 
 ![w:800](./../../../../img/HHU-services-withoutDataHUB.drawio.png)
-
----
-
-
-# NFDI &ndash; Nationale Forschungsdaten Infrastruktur
-
-![w:800](./../../../../img/nfdi.drawio.png)
-
----
-
-# NFDI consortia
-
-![w:800](./../../../../img/nfdi-consortia.drawio.png)
-
----
-
-# NFDI sections
-
-![w:700](././../../../../img/nfdi-sections.drawio.png)
-
----
-
-# Base4NFDI
-
-![w:700](./../../../../img/Base4NFDI_Intro_Poster-RDA-2024_JanderRitter-excerpt.png)
-
-<span class="footer-reference">adapted from https://base4nfdi.de/</span>
 
 ---
 
@@ -344,19 +336,6 @@ object-position: 100% 80%;
 # Publish your ARC, get a DOI
 
 ![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/ARC_SeamlessPublication.svg)
-
----
-
-# Publish your ARC with a few clicks
-
-![w:900px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/cqc-results.png)
-
----
-
-
-# Receive a DOI
-
-![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/doi-accession.png)
 
 ---
 
@@ -529,196 +508,6 @@ DataPLANT employs a **data-centric** approach to RDM
 
 # ARC builds on standards
 
-![w:600](./../../../../img/ARC_BuildsOnStandards3.png)
-
-<span class="footer-reference">https://isa-tools.org/ | https://www.commonwl.org/
-https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
-
----
-
-# The DataPLANT DataHUB &ndash; a GitLab ***Plus***
-
-![](./../../../../img/DataHUB-GitLab.drawio.png)
-
----
- 
-# ARC builds on ISA
-
-![w:900](./../../../../img/ISAmodel_ARC01_img01.svg)
-
-<span class="footer-reference">ISA Tools: https://isa-tools.org/format/specification.html</span>
-
----
-
-# ARC builds on ISA to connect data
-
-![w:1000](./../../../../img/ISAmodel_ARC01_img02.svg)
-
----
-
-# ARC builds on ISA to link data
-
-<div class="two-columns">
-
-  <div>
-
-  - Samples are linked study-to-assay, assay-to-assay
-  - Raw data is linked to assays
-  - Protocols can be referenced
-  - ...
-
-  </div>
-
-  <div>
-  
-  ![w:800](./../../../../img/ISAmodel_ARC01_img02.svg)
-  
-  </div>
-</div>
-
-
-
----
-
-# Swate
-
-**S**wate **w**orkflow **a**nnotation **t**ool for (**E**xcel / **e**veryone)
-
-https://github.com/nfdi4plants/Swate
-
----
-
-# Annotation by flattening the knowledge graph
-
-![w:800](./../../../../img/Swate_ParentChildTerm.svg)
-
-- Low-friction metadata annotation
-- Familiar spreadsheet, row/column-based environment
-
----
-
-# Annotation principle
-
-![w:650](./../../../../img/Swate_ParentChildTerm2.svg)
-
-- Low-friction metadata annotation
-- Familiar spreadsheet, row/column-based environment
-
----
-
-# Adding new building blocks
-
-![w:1000](./../../../../img/Swate_a_newBuildingBlocks.png)
-
-Swate can be used for the annotation of **isa.study.xlsx and isa.assay.xlsx** files
-
----
-
-# Annotation Building Block types
-
-<div class="two-columns" style="font-size: 25px">
-  
-  <div>
-  
-- Input (e.g. Source Name, Sample Name)
-- Protocol columns
-- Characteristic // Parameter // Factor
-- Output (e.g. Sample Name, Raw Data File, Derived Data File)
-
-</div>
-  
-  <div>
-  
-  ![w:600px](./../../../../img/Swate_a_Overview.png)
-    
-  </div>
-</div>
-
-
-Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/units/AnnotationPrinciples/isa_AnnotationPrinciples-slides.html)
-
----
-
-# Ontology term search
-
-<style scoped>
-h1{
-  text-align: left
-}
-section {
-  text-align: center;
-}
-</style>
-
-![w:750](./../../../../img/Swate_a_OntologyTermSearch.png)
-
-Enable **related term directed search** to directly fill cells with child terms
-
----
-
-# Fill your table with ontology terms
-
-![w:800](./../../../../img/Swate_a_OntologyTermSearch2.png)
-
----
-
-# Hierarchical combination of ontologies
-
-![w:800](./../../../../img/Swate_OntologyCombination.svg)
-
-<!-- combination of ISA (Characteristics, Parameter, Factor) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter \[temperature\] or Factor \[temperature\]). -->
-
----
-
-# Checklists and Templates
-
-![w:800px](./../../../../img/swate_TemplatesChecklists.svg)
-
-Metadata standards or repository requirements can be represented as templates
-
----
-
-# Realization of lab-specific metadata templates
-
-![w:650px](./../../../../img/SWATE_metadataTemplates.png)
-
-Facilities can define their most common workflows as templates
-
-<style scoped>
-h1{
-  text-align: left
-}
-section {
-  text-align: center;
-}
-</style>
-
----
-
-# Directly import templates via Swate
-
-- DataPLANT curated
-- Community templates
-
-![bg right w:450](./../../../../img/Swate_a_templates.png)
-
----
-
-
-# CEPLAS connection to the NFDI
-
-![](../../../../img/ceplas-NFDI-connection-light.drawio.png)
-
----
-
-# Data Stewardship between DataPLANT and the community <!-- fit -->
-
-![w:880](./../../../../img/DataPLANT-collaborationCEPLAS.drawio.png)
-
----
-
-# ARC builds on standards
-
 <div class="two-columns">
   <div>
   
@@ -737,6 +526,25 @@ section {
 
 <span class="footer-reference">https://isa-tools.org/ | https://www.commonwl.org/
 https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
+
+---
+
+# The DataPLANT DataHUB &ndash; a GitLab ***Plus***
+
+![](./../../../../img/DataHUB-GitLab.drawio.png)
+
+---
+
+
+# CEPLAS connection to the NFDI
+
+![](../../../../img/ceplas-NFDI-connection-light.drawio.png)
+
+---
+
+# Data Stewardship between DataPLANT and the community <!-- fit -->
+
+![w:880](./../../../../img/DataPLANT-collaborationCEPLAS.drawio.png)
 
 ---
 
@@ -805,207 +613,6 @@ ARC services are available as on-premise option
     
   </div>
 </div>
-
----
-
-
-# DataHUB concepts and terminology
-
----
-
-<!-- TODO 
-
-# Terminology
-
-- commit
-- repository / repo
-- push / pull
-- branch / fork
-
-# add comparison GitLab vs. Cloud Services
-
----
--->
-
-# Where do I store my ARC?
-
-![](./../../../../img/ARC-storageLocations-withNotes.drawio.png)
-
----
-
-# ARC storage and sharing
-
-![w:600](./../../../../img/ARC-storageLocations-withNotes.drawio.png)
-
-- DataHUB as "ground truth" / original clone
-- You can sync and communicate all changes to your ARC via the DataHUB
-
-<span style="font-size:0.8em"> :bulb: ARCitect and ARC commander provide options to avoid syncing large files (LFS = Large file storage) </span>
-
----
-
-# Example setup to store and use ARCs
-
-<div class=two-columns style="font-size: 25px">
-
-  <div>
-  
-  ### Personal computer
-
-  - work on small files
-  - annotate metadata
-  - add scripts, protocols
-  
-  ### Workstation / Server
-
-  - work on large files
-  - run computations
-  
-  </div>
-  <div>
-
-  ### FileShare
-  
-  - mount to local machine, sync ARC from there
-  
-  ### HPC
-
-  - direct connection HPC to DataHUB (depends on security settings)
-  - or mount to local machine and sync, ARC from there
-  
-  
-  </div>
-
-</div>
-
----
-
-
-# **Projects** and **Groups** are not the same
-
-- "Project" = ARC
-- "Groups" = Group of users
-
----
-
-## Project = ARC
-
-- In the DataHUB, ARCs are called "projects"; they are the same.
-- An ARC can be shared with individual users (invited as "members") or a group.
-
----
-
-## DataHUB Groups
-
-- A "Group" is a group of users with specific [permissions](#roles-and-permissions)
-- A group can share ARCs
-- A group can be invited to an ARC
-- Groups can have subgroups
-
----
-
-# Options to share an ARC via the DataHUB
-
-<img src="./../../../../img/arc-sharing-Options.drawio.png" style="display: block; margin: auto" width=700px>
-
----
-
-# Namespaces
-
-- Every user has a personal namespace, where they can upload or create new ARCs
-- Every group and subgroup has its own namespace
-
-<div class="table-container" style="font-size: 25px">
-
-Type | URL | Namespace | Name
---- | --- | --- | --- 
-A **personal** ARC | https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum | `brilator` | Dominik Brilhaus
-An **group**-shared ARC | https://git.nfdi4plants.org/hhu-plant-biochemistry/Samuilov-2018-BOU-PSP | `hhu-plant-biochemistry` | HHU Plant Biochemistry
-
-</div>
-
-:bulb: **Personal** is not the same as **private**
-
----
-
-# Visibility
-
-The visibility of ARCs and groups can be managed individually for each ARC or group
-  
-<img src="./../../../../img/arc-sharing-Visibility.drawio.png" style="display: block; margin: auto" width=800px>
-
-:bulb: By default every ARC and every group is set to **private**.
-
----
-
-# Permissions & Roles
-
-When inviting new members to an ARC or group, you can choose between different levels.
-
-<img src="./../../../../img/arc-sharing-PermissionsRoles.drawio.png" style="display: block; margin: auto" width=800px>
-
-:bulb: By default you are **Owner** of an ARC you create or upload to the DataHUB.
-
----
-
-# ARC DataHUB members // ARC Investigation contacts <!-- fit -->
-
-![](./../../../../img/arc-sharing-MembersVsContacts.drawio.png)
-
-:bulb: Investigation contacts are not automatically invited as members to the ARC.
-
----
-
-
-
-# CEPLAS ARC Training &ndash; Hands-on part
-
-<!--  _color: white; -->
-<!-- _paginate: false -->
-<style scoped>section {background: none; background-color: white;}</style>
-
-<br>
-
-April, 2024
-Dominik Brilhaus, CEPLAS Data Science
-
-![bg fit](./../../../../img/background_title_ceplas.drawio.svg)
-
----
-
-# Get-to-know
-
-- Lab
-- CEPLAS / TRR / MibiNet / ?
-- My favorite lab assay
-- Used code / programming language before
-- Have an ORCID
-- My motivation / expectation
-
----
-
-# BYOD &ndash; Goals
-
-- Move existing datasets into ARCs
-- Share them via the DataHUB
-- First few steps into ARCs
-- You or collaborators can pick them up from there
-
-![bg right w:500](./../../../../img/ceplas-ARCs.drawio.svg)
-
----
-
-# Perfect is the enemy of good
-
-- There is no perfect ARC
-- There is no complete ARC
-- The only bad ARCs are those that don't exist yet.
-
-:rocket: Let's get started, the rest is easy :rocket:
-
----
-
-# Let's draw a typical lab workflow :pencil: 
 
 ---
 
@@ -1320,6 +927,154 @@ To reactivate it and let the DataHUB validate your ARC again:
 ---
 
 
+# DataHUB concepts and terminology
+
+---
+
+<!-- TODO 
+
+# Terminology
+
+- commit
+- repository / repo
+- push / pull
+- branch / fork
+
+# add comparison GitLab vs. Cloud Services
+
+---
+-->
+
+# Where do I store my ARC?
+
+![](./../../../../img/ARC-storageLocations-withNotes.drawio.png)
+
+---
+
+# ARC storage and sharing
+
+![w:600](./../../../../img/ARC-storageLocations-withNotes.drawio.png)
+
+- DataHUB as "ground truth" / original clone
+- You can sync and communicate all changes to your ARC via the DataHUB
+
+<span style="font-size:0.8em"> :bulb: ARCitect and ARC commander provide options to avoid syncing large files (LFS = Large file storage) </span>
+
+---
+
+# Example setup to store and use ARCs
+
+<div class=two-columns style="font-size: 25px">
+
+  <div>
+  
+  ### Personal computer
+
+  - work on small files
+  - annotate metadata
+  - add scripts, protocols
+  
+  ### Workstation / Server
+
+  - work on large files
+  - run computations
+  
+  </div>
+  <div>
+
+  ### FileShare
+  
+  - mount to local machine, sync ARC from there
+  
+  ### HPC
+
+  - direct connection HPC to DataHUB (depends on security settings)
+  - or mount to local machine and sync, ARC from there
+  
+  
+  </div>
+
+</div>
+
+---
+
+
+# **Projects** and **Groups** are not the same
+
+- "Project" = ARC
+- "Groups" = Group of users
+
+---
+
+## Project = ARC
+
+- In the DataHUB, ARCs are called "projects"; they are the same.
+- An ARC can be shared with individual users (invited as "members") or a group.
+
+---
+
+## DataHUB Groups
+
+- A "Group" is a group of users with specific [permissions](#roles-and-permissions)
+- A group can share ARCs
+- A group can be invited to an ARC
+- Groups can have subgroups
+
+---
+
+# Options to share an ARC via the DataHUB
+
+<img src="./../../../../img/arc-sharing-Options.drawio.png" style="display: block; margin: auto" width=700px>
+
+---
+
+# Namespaces
+
+- Every user has a personal namespace, where they can upload or create new ARCs
+- Every group and subgroup has its own namespace
+
+<div class="table-container" style="font-size: 25px">
+
+Type | URL | Namespace | Name
+--- | --- | --- | --- 
+A **personal** ARC | https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum | `brilator` | Dominik Brilhaus
+An **group**-shared ARC | https://git.nfdi4plants.org/hhu-plant-biochemistry/Samuilov-2018-BOU-PSP | `hhu-plant-biochemistry` | HHU Plant Biochemistry
+
+</div>
+
+:bulb: **Personal** is not the same as **private**
+
+---
+
+# Visibility
+
+The visibility of ARCs and groups can be managed individually for each ARC or group
+  
+<img src="./../../../../img/arc-sharing-Visibility.drawio.png" style="display: block; margin: auto" width=800px>
+
+:bulb: By default every ARC and every group is set to **private**.
+
+---
+
+# Permissions & Roles
+
+When inviting new members to an ARC or group, you can choose between different levels.
+
+<img src="./../../../../img/arc-sharing-PermissionsRoles.drawio.png" style="display: block; margin: auto" width=800px>
+
+:bulb: By default you are **Owner** of an ARC you create or upload to the DataHUB.
+
+---
+
+# ARC DataHUB members // ARC Investigation contacts <!-- fit -->
+
+![](./../../../../img/arc-sharing-MembersVsContacts.drawio.png)
+
+:bulb: Investigation contacts are not automatically invited as members to the ARC.
+
+---
+
+
 # DataHub Hands-On
 
 ---
@@ -1564,6 +1319,189 @@ Add issues to your ARC (3)
 
 </div>
 </div>
+
+---
+
+# Publish your ARC with a few clicks
+
+![w:900px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/cqc-results.png)
+
+---
+
+
+# Receive a DOI
+
+![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/doi-accession.png)
+
+
+---
+
+
+
+# ARCs come with comprehensive metadata
+
+![width:950](./../../../../img/ARC_fillWithData_seq6.png)
+
+---
+
+# ARC builds on standards
+
+![w:600](./../../../../img/ARC_BuildsOnStandards3.png)
+
+<span class="footer-reference">https://isa-tools.org/ | https://www.commonwl.org/
+https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
+
+---
+ 
+# ARC builds on ISA
+
+![w:900](./../../../../img/ISAmodel_ARC01_img01.svg)
+
+<span class="footer-reference">ISA Tools: https://isa-tools.org/format/specification.html</span>
+
+---
+
+# ARC builds on ISA to connect data
+
+![w:1000](./../../../../img/ISAmodel_ARC01_img02.svg)
+
+---
+
+# ARC builds on ISA to link data
+
+<div class="two-columns">
+
+  <div>
+
+  - Samples are linked study-to-assay, assay-to-assay
+  - Raw data is linked to assays
+  - Protocols can be referenced
+  - ...
+
+  </div>
+
+  <div>
+  
+  ![w:800](./../../../../img/ISAmodel_ARC01_img02.svg)
+  
+  </div>
+</div>
+
+
+
+---
+
+# Annotation by flattening the knowledge graph
+
+![w:800](./../../../../img/Swate_ParentChildTerm.svg)
+
+- Low-friction metadata annotation
+- Familiar spreadsheet, row/column-based environment
+
+---
+
+# Annotation principle
+
+![w:650](./../../../../img/Swate_ParentChildTerm2.svg)
+
+- Low-friction metadata annotation
+- Familiar spreadsheet, row/column-based environment
+
+---
+
+# Adding new building blocks
+
+![w:1000](./../../../../img/Swate_a_newBuildingBlocks.png)
+
+Swate can be used for the annotation of **isa.study.xlsx and isa.assay.xlsx** files
+
+---
+
+# Annotation Building Block types
+
+<div class="two-columns" style="font-size: 25px">
+  
+  <div>
+  
+- Input (e.g. Source Name, Sample Name)
+- Protocol columns
+- Characteristic // Parameter // Factor
+- Output (e.g. Sample Name, Raw Data File, Derived Data File)
+
+</div>
+  
+  <div>
+  
+  ![w:600px](./../../../../img/Swate_a_Overview.png)
+    
+  </div>
+</div>
+
+
+Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/units/AnnotationPrinciples/isa_AnnotationPrinciples-slides.html)
+
+---
+
+# Ontology term search
+
+<style scoped>
+h1{
+  text-align: left
+}
+section {
+  text-align: center;
+}
+</style>
+
+![w:750](./../../../../img/Swate_a_OntologyTermSearch.png)
+
+Enable **related term directed search** to directly fill cells with child terms
+
+---
+
+# Fill your table with ontology terms
+
+![w:800](./../../../../img/Swate_a_OntologyTermSearch2.png)
+
+---
+
+# Hierarchical combination of ontologies
+
+![w:800](./../../../../img/Swate_OntologyCombination.svg)
+
+---
+
+# Checklists and Templates
+
+![w:800px](./../../../../img/swate_TemplatesChecklists.svg)
+
+Metadata standards or repository requirements can be represented as templates
+
+---
+
+# Realization of lab-specific metadata templates
+
+![w:650px](./../../../../img/SWATE_metadataTemplates.png)
+
+Facilities can define their most common workflows as templates
+
+<style scoped>
+h1{
+  text-align: left
+}
+section {
+  text-align: center;
+}
+</style>
+
+---
+
+# Directly import templates via Swate
+
+- DataPLANT curated
+- Community templates
+
+![bg right w:450](./../../../../img/Swate_a_templates.png)
 
 ---
 
@@ -1895,6 +1833,33 @@ Example workflows with three *processes* each:
 # :construction: Known issues with ARCitect and Swate (April 2024)
 
 :bulb: Swate Desktop outdated
+
+---
+
+
+# NFDI &ndash; Nationale Forschungsdaten Infrastruktur
+
+![w:800](./../../../../img/nfdi.drawio.png)
+
+---
+
+# NFDI consortia
+
+![w:800](./../../../../img/nfdi-consortia.drawio.png)
+
+---
+
+# NFDI sections
+
+![w:700](././../../../../img/nfdi-sections.drawio.png)
+
+---
+
+# Base4NFDI
+
+![w:700](./../../../../img/Base4NFDI_Intro_Poster-RDA-2024_JanderRitter-excerpt.png)
+
+<span class="footer-reference">adapted from https://base4nfdi.de/</span>
 
 ---
 
