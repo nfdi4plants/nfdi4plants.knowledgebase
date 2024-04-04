@@ -294,8 +294,11 @@ DataPLANT employs a **data-centric** approach to RDM
 <span class="footer-reference">https://isa-tools.org/ | https://www.commonwl.org/
 https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
+<!-- 
 ---
 
 # The DataPLANT DataHUB &ndash; a GitLab ***Plus***
 
-![](./../../../img/DataHUB-GitLab.drawio.png)
+![](./../../../img/DataHUB-GitLab.drawio.png) 
+
+-->
