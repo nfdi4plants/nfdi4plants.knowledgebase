@@ -1,24 +1,8 @@
 ---
 title: "README 2024-04-03_CEPLAS-ARC-Trainings"
 layout: none
-date: 2023-12-04
+date: 2024-04-03
 ---
-
-## Training path
-
-00 Welcome
-05 Intro RDM NFDI
-10 Overview DataPLANT, and DataPLANT Tool chain
-20 ARCitect
-25 DataHUB
-30 SWATE
-40 Conclusion, Q&A
-
-50 Intro hands-on
-60 ARCitect
-70 DataHUB
-80 Swate
-90 Create your own ARC
 
 ## See website locally
 
@@ -38,6 +22,7 @@ cd src/docs/teaching-materials/events-2024/2024-04-03_CEPLAS-ARC-Trainings
 ```
 
 ```bash
+rm ./*.html
 
 for unit in *.md; do
     
@@ -49,19 +34,58 @@ for unit in *.md; do
 done
 ```
 
-## automate hidden index
+## automate adding slides to index
+
+Slides will be placed between two tags <!-- linked-slides -->
 
 ```bash
 
-echo "---\nlayout: docs\ntitle: \ndate: \nadd sidebar: _sidebars/mainSidebar.md\n---\n\n## Slide decks\n" > hidden-index.md
+linkedSlidesBegin=$(awk '/<!-- linked-slides -->/{++n; if (n==1) { print NR; exit}}' index.md)
+linkedSlidesEnd=$(awk '/<!-- linked-slides -->/{++n; if (n==2) { print NR; exit}}' index.md)
+
+head -n $linkedSlidesBegin index.md > tmp
 
 for unit in *.html; do
     
     noPrefix=${unit#*-}
     noSuffix=${noPrefix%.*}
 
-    echo "- <a href="./$unit" target="_blank">$noSuffix</a>" >> hidden-index.md
+    echo "- <a href="./$unit" target="_blank">$noSuffix</a>" >> tmp
    
-
 done
+
+tail -n +$linkedSlidesEnd index.md >> tmp
+
+mv tmp index.md
+
+```
+
+## Combine all slide decks into one
+
+```zsh
+selectMarpTheme=marp-theme_dataplant-ceplas-ccby
+outfolder=_combined-slides
+
+mkdir -p $outfolder
+title=$(pwd | xargs basename)
+outfile="$outfolder"/"$title".md
+currentDate=$(date +"%Y-%m-%d")
+
+echo "---\nmarp: true\nlayout: slides\ntheme: $selectMarpTheme\npaginate: true\ntitle: $title\ndate: $currentDate\n---\n" > $outfile
+
+for unit in *.md; do    
+    if grep -q "^marp: true" "$unit"
+    then
+      yamlEnd=$(awk '/---/{++n; if (n==2) { print NR; exit}}' $unit)
+      tail -n +$((yamlEnd+1)) $unit >> $outfile
+      echo "\n---\n" >> $outfile
+    fi
+done
+
+sed "s|\.\./\.\./\.\./img/|\.\./\.\./\.\./\.\./img/|g" $outfile > tmp; mv tmp $outfile
+sed "s|\./qr-code|\./\.\./qr-code|g" $outfile > tmp; mv tmp $outfile
+
+marp --html --allow-local-files $outfile --theme-set $marpTheme ../../style/ --
+marp --html --allow-local-files --pdf $outfile --theme-set $marpTheme ../../style/ --
+
 ```
