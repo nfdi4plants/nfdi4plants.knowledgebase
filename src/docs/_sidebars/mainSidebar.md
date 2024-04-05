@@ -60,6 +60,7 @@
 ## [Installation - macOS](/docs/ARCitect-Manual/arcitect_installation_macos.html)
 ## [Installation - Linux](/docs/ARCitect-Manual/arcitect_installation_linux.html)
 ## [QuickStart](/docs/guides/arcitect_QuickStart.html)
+## [QuickStart - Videos](/docs/guides/arcitect_QuickStart_Videos.html)
 
 # [ARCmanager Manual](/docs/ARCmanager-manual/index.html)
 ## [What is the ARCmanager?](/docs/ARCmanager-manual/intro.html)
