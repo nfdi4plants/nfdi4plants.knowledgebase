@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: marp-theme_dataplant-ceplas-ccby
+theme: marp-theme_dataplant-ceplas-mibinet-ccby
 paginate: true
 author:
 - name: Dominik Brilhaus

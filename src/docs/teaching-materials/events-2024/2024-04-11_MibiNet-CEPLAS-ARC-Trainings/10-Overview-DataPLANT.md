@@ -1,7 +1,7 @@
 ---
 marp: true
 paginate: true
-theme: marp-theme_dataplant-ceplas-ccby
+theme: marp-theme_dataplant-ceplas-mibinet-ccby
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 title: Overview DataPLANT
 date: 2023-11-14

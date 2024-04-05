@@ -2,7 +2,7 @@
 layout: slides
 marp: true
 title: Swate Templates Hands On
-theme: marp-theme_dataplant-ceplas-ccby
+theme: marp-theme_dataplant-ceplas-mibinet-ccby
 date: 2024-03-25
 author: 
 - name: Dominik Brilhaus
