@@ -35,37 +35,16 @@ Sabrina Zander, MibiNet
 
 # Tentative agenda
 
-<div class="two-columns" style="font-size: 18px">
-<div class="columns-left">
-
-### Morning
 
 Time | Topics
 -------- | --------
-09:00 - 09:15 | Welcome, Intro RDM and NFDI
-09:15 - 09:45 | Overview DataPLANT, and DataPLANT Tool chain
-09:45 - 10:30 | Hands-on ARCitect
-10:30 - 10:45 | *Short break* :coffee:
-10:45 - 11:45 | Intro and Hands-on DataHUB
-11:45 - 12:00 | Q & A
+09:00 - 09:20 | Welcome and intro to RDM and NFDI
+09:20 - 10:00 | Overview DataPLANT Tool chain
+10:00 - 11:00 | Introduction to ARCitect and DataHUB
+11:00 - 11:15 | *Short break*
+11:15 - 12:30 | Demo Metadata annotation with SWATE
+12:30 - 13:00 | Q & A
 
-</div>
-
-<div class="columns-right">
-
-### Afternoon
-
-Time | Topics
--------- | --------
-12:00 - 13:00 | *Lunch break* :pizza:
-13:00 - 14:00 | Intro and Hands-on Metadata annotation with SWATE
-14:00 - 15:00 | Create your own ARC
-15:00 - 15:15 | *Short break* :coffee:
-15:15 - 16:30 | Create your own ARC
-16:30 - 17:00 | Q & A and wrap-up
-
-</div>
-</div>
 
 ---
 
@@ -88,7 +67,7 @@ Time | Topics
 
 # Training Materials
 
-Slides are shared via [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/2024-04-03_CEPLAS-ARC-Trainings/)
+Slides are shared via [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/2024-04-11_MibiNet-CEPLAS-ARC-Trainings/)
 
 ---
 
@@ -138,7 +117,10 @@ Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TR
 
 # Let's draw a typical lab workflow :pencil:
 
----
+
+<!-- 
+TODO only for fullday
+
 
 # BYOD &ndash; Goals
 
@@ -148,3 +130,5 @@ Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TR
 - You or collaborators can pick them up from there
 
 ![bg right w:500](./../../../img/ceplas-ARCs.drawio.svg)
+
+-->
