@@ -113,7 +113,7 @@ object-position: 100% 80%;
 Facilities and labs can define their common workflows as templates
 
 ---
-
+<!-- 
 # Validation
 
 
@@ -122,7 +122,7 @@ Facilities and labs can define their common workflows as templates
 <span class="footer-reference"> adapted from Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
 ---
-
+-->
 # Validate & publish
 
 
