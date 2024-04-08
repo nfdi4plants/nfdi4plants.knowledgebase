@@ -22,7 +22,7 @@ TODO
 
 # Data Stewardship between DataPLANT and the community <!-- fit -->
 
-![w:880](./../../../img/DataPLANT-collaborationCEPLAS.drawio.png)
+![w:880](./../../../img/DataPLANT_big_collaboration.drawio.png)
 
 ---
 
