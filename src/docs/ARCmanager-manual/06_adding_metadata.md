@@ -118,7 +118,7 @@ You can import a term by clicking on it and pressing the "INSERT" button, simila
 If you want to search for a specific term you can fill out the search bar (#3) and click the "SEARCH" button afterwards. \
 This will search for every fitting term with that given name. (Or for any type of term with that name if you check the "extended search" box)
 
-Per default the term will be inserted into row number 1 of the corresponding column. But if you want to add the term to another row you need to select the row first from the selector (#4). Afterwards when you press the "INSERT" button from the terms list, the term will be added to the selected row.
+Per default the term will be inserted into row number 1 of the corresponding column. But if you want to add the term to another row you need to select the row first from the selector. Afterwards when you press the "INSERT" button from the terms list, the term will be added to the selected row.
 
 <img src="./img/6-metadata/exp-term-insrtd.png" width="500px" style="float: left;margin-right: 7px; margin-top:5px" />
 
