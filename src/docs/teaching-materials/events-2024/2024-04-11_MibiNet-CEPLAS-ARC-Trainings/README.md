@@ -1,5 +1,5 @@
 ---
-title: "README 2024-04-03_CEPLAS-ARC-Trainings"
+title: "README 2024-04-11_MibiNet-CEPLAS-ARC-Trainings"
 layout: none
 date: 2024-04-03
 ---
@@ -12,13 +12,13 @@ date: 2024-04-03
 npm run fornax
 ```
 
-2. Open http://127.0.0.1:8080/docs/teaching-materials/events-2024/2024-04-03_CEPLAS-ARC-Trainings/index.html
+2. Open http://127.0.0.1:8080/docs/teaching-materials/events-2024/2024-04-11_MibiNet-CEPLAS-ARC-Trainings/index.html
 
 
 ## Batch-compile marp slide decks to html
 
 ```bash
-cd src/docs/teaching-materials/events-2024/2024-04-03_CEPLAS-ARC-Trainings
+cd src/docs/teaching-materials/events-2024/2024-04-11_MibiNet-CEPLAS-ARC-Trainings
 ```
 
 ```bash
