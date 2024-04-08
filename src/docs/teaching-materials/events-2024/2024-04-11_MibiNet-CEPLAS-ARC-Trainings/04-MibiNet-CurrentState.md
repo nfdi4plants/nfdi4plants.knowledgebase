@@ -11,21 +11,16 @@ author:
   orcid: https://orcid.org/0000-0001-9021-3197
 ---
 
-# CEPLAS &ndash; One cluster, four locations
+# MibiNet &ndash; One SFB, six locations
 
-![w:800](./../../../img/data-fragmentation-ceplas00.drawio.png)
-
----
-
-# Data silos impede collaboration
-
-![w:800](./../../../img/data-fragmentation-ceplas01.drawio.png)
+![w:800](./../../../img/data-fragmentation-mibinet00.drawio.png)
 
 ---
 
 # Data silos impede collaboration
 
-![w:800](./../../../img/data-fragmentation-ceplas02.drawio.png)
+![w:800](./../../../img/data-fragmentation-mibinet01.drawio.png)
+
 
 ---
 

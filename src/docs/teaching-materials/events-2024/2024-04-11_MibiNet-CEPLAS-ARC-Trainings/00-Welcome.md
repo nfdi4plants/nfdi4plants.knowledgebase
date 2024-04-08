@@ -16,7 +16,7 @@ TODO before final
 
 -->
 
-# MibiNet CEPLAS ARC Training
+# DataPLANT Tool-Workshop
 
 <!--  _color: white; -->
 <!-- _paginate: false -->
