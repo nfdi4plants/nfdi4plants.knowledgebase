@@ -217,7 +217,15 @@ It allows you to
 
 
 ---
+# History panel (9)
 
+In the History panel you can inspect your ARCs history with all commits 
+
+
+![bg right:55% w:500](./../../../img/ARCitect-History_panel.png)
+
+
+---
 # Upload your local ARC to the DataHUB
 
 From the sidebar, navigate to **DataHUB Sync** (8)
