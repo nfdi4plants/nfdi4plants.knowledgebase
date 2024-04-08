@@ -16,7 +16,7 @@ TODO before final
 
 -->
 
-# CEPLAS ARC Training
+# MibiNet CEPLAS ARC Training
 
 <!--  _color: white; -->
 <!-- _paginate: false -->
@@ -26,10 +26,11 @@ TODO before final
 
 April, 2024
 
-Dominik Brilhaus, CEPLAS
 Sabrina Zander, MibiNet
+Dominik Brilhaus, CEPLAS
 
-![bg fit](./../../../img/background_title_ceplas.drawio.svg)
+
+![bg fit](./../../../img/background_title_MibiNet_ceplas.drawio.svg)
 
 ---
 
@@ -59,7 +60,7 @@ Time | Topics
   </div>
 
   <div>
-  <a href="https://pad.hhu.de/8bwBC7pyRL2tFFOWMQzm1Q?edit" target="_blank"> <img src="./qr-code-pad.png"></a>
+  <a href="https://pad.hhu.de/gXvgd5yETWa3Ks34dM3KCw?view" target="_blank"> <img src="./qr-code_pad_mibinet.png"></a>
   </div>
 </div>
 
@@ -106,7 +107,7 @@ Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TR
 # Introduce yourself
 
 - Lab
-- CEPLAS / TRR / MibiNet / ?
+- MibiNet / CEPLAS / TRR / ?
 - Used code / programming language before
 - Experience with Git / GitLab / GitHub?
 - Have an ORCID
