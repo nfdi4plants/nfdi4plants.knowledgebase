@@ -39,11 +39,12 @@ Dominik Brilhaus, CEPLAS
 
 Time | Topics
 -------- | --------
-09:00 - 09:20 | Welcome and intro to RDM and NFDI
-09:20 - 10:00 | Overview DataPLANT Tool chain
-10:00 - 11:00 | Introduction to ARCitect and DataHUB
+09:00 - 09:45 | Welcome and intro to RDM and NFDI
+09:45 - 10:30 | Overview DataPLANT Tool chain
+10:00 - 11:00 | Introduction and Demo of ARCitect 
 11:00 - 11:15 | *Short break*
-11:15 - 12:30 | Demo Metadata annotation with SWATE
+11:15 - 11:45 | DataHUB Concept and Demo 
+11:45 - 12:30 | Demo Metadata annotation with SWATE
 12:30 - 13:00 | Q & A
 
 
