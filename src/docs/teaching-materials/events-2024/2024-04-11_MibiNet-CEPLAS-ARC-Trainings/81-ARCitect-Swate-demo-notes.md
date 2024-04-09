@@ -22,9 +22,12 @@ author:
 3. contacts
    1. APMW: 0000-0003-0970-4672
    2. DB: 0000-0001-9021-3197, add email by hand
-4. Save ARC
-5. Show ARC in explorer
-6. Commit
+4. Add publication 
+   1. DOI 10.1104/pp.15.01076
+   2. PubMedID 26530316 
+5. Save ARC
+6. Show ARC in explorer
+7. Commit
 
 ## Add Study
 
