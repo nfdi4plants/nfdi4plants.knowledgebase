@@ -1,13 +1,18 @@
 ---
 layout: docs
-title: CEPLAS ARC Trainings &ndash; Spring 2024
+title: MibiNet CEPLAS DataPLANT Tool-Workshops
 date: 2024-03-06
 add toc: true
 add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-Here you can find the slides prepared for the CEPLAS ARC Trainings &ndash; Spring 2024
+Here you can find the slides prepared for the MibiNet CEPLAS DataPLANT Tool-Workshop &ndash; April 2024
+
+## Organizers
+
+- Sabrina Zander ([MibiNet](https://www.sfb1535.hhu.de/projects/research-area-z/z03))
+- Dominik Brilhaus ([CEPLAS](https://www.ceplas.eu/en/research/data-science-and-data-management))
 
 ## Announcement
 
