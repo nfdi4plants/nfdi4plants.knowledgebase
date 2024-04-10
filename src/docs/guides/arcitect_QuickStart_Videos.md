@@ -128,11 +128,7 @@ In this video, we will see how you can add a study to your ARC:
 
 ### Add details about your study
 
-Click on your study's name to add details, such as
-
-- general metadata,
-- people, 
-- publications 
+In this video you will learn how to add details about your study:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/L3RebdWzg10?si=YaHfDvNcQPcK61_i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
