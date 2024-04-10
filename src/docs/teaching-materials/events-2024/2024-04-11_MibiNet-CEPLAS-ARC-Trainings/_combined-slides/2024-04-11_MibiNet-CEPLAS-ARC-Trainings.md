@@ -4,7 +4,7 @@ layout: slides
 theme: marp-theme_dataplant-ceplas-mibinet-ccby
 paginate: true
 title: 2024-04-11_MibiNet-CEPLAS-ARC-Trainings
-date: 2024-04-08
+date: 2024-04-10
 ---
 
 
@@ -14,7 +14,7 @@ TODO before final
 
 -->
 
-# CEPLAS ARC Training
+# DataPLANT Tool-Workshop
 
 <!--  _color: white; -->
 <!-- _paginate: false -->
@@ -24,10 +24,11 @@ TODO before final
 
 April, 2024
 
-Dominik Brilhaus, CEPLAS
 Sabrina Zander, MibiNet
+Dominik Brilhaus, CEPLAS
 
-![bg fit](./../../../../img/background_title_ceplas.drawio.svg)
+
+![bg fit](./../../../../img/background_title_MibiNet_ceplas.drawio.svg)
 
 ---
 
@@ -36,11 +37,12 @@ Sabrina Zander, MibiNet
 
 Time | Topics
 -------- | --------
-09:00 - 09:20 | Welcome and intro to RDM and NFDI
-09:20 - 10:00 | Overview DataPLANT Tool chain
-10:00 - 11:00 | Introduction to ARCitect and DataHUB
+09:00 - 09:45 | Welcome and intro to RDM and NFDI
+09:45 - 10:30 | Overview DataPLANT Tool chain
+10:00 - 11:00 | Introduction and Demo of ARCitect 
 11:00 - 11:15 | *Short break*
-11:15 - 12:30 | Demo Metadata annotation with SWATE
+11:15 - 11:45 | DataHUB Concept and Demo 
+11:45 - 12:30 | Demo Metadata annotation with SWATE
 12:30 - 13:00 | Q & A
 
 
@@ -57,7 +59,7 @@ Time | Topics
   </div>
 
   <div>
-  <a href="https://pad.hhu.de/8bwBC7pyRL2tFFOWMQzm1Q?edit" target="_blank"> <img src="./../qr-code-pad.png"></a>
+  <a href="https://pad.hhu.de/gXvgd5yETWa3Ks34dM3KCw?view" target="_blank"> <img src="./../qr-code_pad_mibinet.png"></a>
   </div>
 </div>
 
@@ -104,7 +106,7 @@ Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TR
 # Introduce yourself
 
 - Lab
-- CEPLAS / TRR / MibiNet / ?
+- MibiNet / CEPLAS / TRR / ?
 - Used code / programming language before
 - Experience with Git / GitLab / GitHub?
 - Have an ORCID
@@ -203,21 +205,16 @@ object-fit: cover;
 ---
 
 
-# CEPLAS &ndash; One cluster, four locations
+# MibiNet &ndash; One SFB, six locations
 
-![w:800](./../../../../img/data-fragmentation-ceplas00.drawio.png)
-
----
-
-# Data silos impede collaboration
-
-![w:800](./../../../../img/data-fragmentation-ceplas01.drawio.png)
+![w:800](./../../../../img/data-fragmentation-mibinet00.drawio.png)
 
 ---
 
 # Data silos impede collaboration
 
-![w:800](./../../../../img/data-fragmentation-ceplas02.drawio.png)
+![w:800](./../../../../img/data-fragmentation-mibinet01.drawio.png)
+
 
 ---
 
@@ -239,7 +236,7 @@ TODO
 
 # Data Stewardship between DataPLANT and the community <!-- fit -->
 
-![w:880](./../../../../img/DataPLANT-collaborationCEPLAS.drawio.png)
+![w:880](./../../../../img/DataPLANT_big_collaboration.drawio.png)
 
 ---
 
@@ -523,15 +520,15 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 ---
 
 
-# CEPLAS connection to the NFDI
+# Connection to the NFDI
 
-![](../../../../img/ceplas-NFDI-connection-light.drawio.png)
+![](../../../../img/connection_NFDI.drawio.png)
 
 ---
 
 # Data Stewardship between DataPLANT and the community <!-- fit -->
 
-![w:880](./../../../../img/DataPLANT-collaborationCEPLAS.drawio.png)
+![w:880](./../../../../img/DataPLANT_big_collaboration.drawio.png)
 
 ---
 
@@ -805,7 +802,15 @@ It allows you to
 
 
 ---
+# History panel (9)
 
+In the History panel you can inspect your ARCs history with all commits 
+
+
+![bg right:55% w:500](./../../../../img/ARCitect-History_panel.png)
+
+
+---
 # Upload your local ARC to the DataHUB
 
 From the sidebar, navigate to **DataHUB Sync** (8)

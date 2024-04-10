@@ -18,9 +18,9 @@ Here you can find the slides prepared for the CEPLAS ARC Trainings &ndash; Sprin
 <!-- linked-slides -->
 - <a href=./00-Welcome.html target=_blank>Welcome</a>
 - <a href=./03-IntroRDM.html target=_blank>IntroRDM</a>
-- <a href=./04-CEPLAS-CurrentState.html target=_blank>CEPLAS-CurrentState</a>
+- <a href=./04-MibiNet-CurrentState.html target=_blank>MibiNet-CurrentState</a>
 - <a href=./10-Overview-DataPLANT.html target=_blank>Overview-DataPLANT</a>
-- <a href=./15-Outlook-CEPLAS-HHU.html target=_blank>Outlook-CEPLAS-HHU</a>
+- <a href=./15-Outlook-MibiNet-CEPLAS-HHU.html target=_blank>Outlook-MibiNet-CEPLAS-HHU</a>
 - <a href=./20-ARCitect-HandsOn.html target=_blank>ARCitect-HandsOn</a>
 - <a href=./30-DataHUB-ConceptsTerminology.html target=_blank>DataHUB-ConceptsTerminology</a>
 - <a href=./31-DataHUB-HandsOn.html target=_blank>DataHUB-HandsOn</a>
