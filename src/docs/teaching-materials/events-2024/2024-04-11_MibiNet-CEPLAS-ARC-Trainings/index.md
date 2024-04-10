@@ -11,7 +11,7 @@ Here you can find the slides prepared for the CEPLAS ARC Trainings &ndash; Sprin
 
 ## Announcement
 
-- <a href=./announcement.html target=_blank>Announcement</a>
+See details and registration [here](https://pad.hhu.de/gXvgd5yETWa3Ks34dM3KCw?view).
 
 ## Slide decks
 
