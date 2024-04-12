@@ -9,9 +9,9 @@ According to the  [ISA Metadata Model](https://www.nfdi4plants.de/nfdi4plants.kn
 
       <p float="center">
         <img src="./img/add_assay.png" width="600" height="300" style="border: 2px solid  gray;" />
-    </p>
+    </p> </br>
 
-2. Now according to the ISA model, the investigation, studies, and assays should be linked to each others, studies to investigation and assays to studies. The **SYNC** fonctions do these tasks. 
+2. Now according to the ISA model, the investigation, studies, and assays should be linked to each other, studies to investigation and assays to studies. The **SYNC** fonctions perform these tasks. 
 
     In the project folder, click on `SYNC STUDY/INVEST` and choose the study created before.  Then click on `SYNC ASSY/STUDY` and link the relanavt studies and assays.  
 
@@ -22,7 +22,7 @@ According to the  [ISA Metadata Model](https://www.nfdi4plants.de/nfdi4plants.kn
     <img src="./img/sync_assay.png" width="600" height="300" style="border: 2px solid  gray;"/>
     </p>
 
-3. Assume we need to add some raw data in the assay folder. Then, in the relavent assay, go to `dataset` folder and use the `UPLOAD File(s)` botton. Then, in the local system, select the data files.
+3. Assume we need to add some raw data in the assay folder. Then, in the relavent assay, go to the `dataset` folder and use the `UPLOAD File(s)` botton. Then, in the local system, select the data files.
 
     <p float="center">
         <img src="./img/upload_command.png" width="600" height="300" style="border: 2px solid  gray;" /> 
