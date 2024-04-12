@@ -1,7 +1,7 @@
 According to the  [ISA Metadata Model](https://www.nfdi4plants.de/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa.html), each `study` is connected to an `Ivestigation` and can contain several `assays`.  Generally the raw data should be uploaded into  `assay` folder. Therefore, we need to first create the  `study`  folder and its relevant `assays`.  
 
 
-1. In the `studies` folder, click on the `ADD` bottom to create a study. Then, follow the same procedure in the `assays` folder.
+1. In the `studies` folder, click on the `ADD` botton to create a study. Then, follow the same procedure in the `assays` folder.
    </br>
     <p float="center">
         <img src="./img/add_study.png" width="600" height="300"  style="border: 2px solid  gray;" /> 
@@ -22,7 +22,7 @@ According to the  [ISA Metadata Model](https://www.nfdi4plants.de/nfdi4plants.kn
     <img src="./img/sync_assay.png" width="600" height="300" style="border: 2px solid  gray;"/>
     </p>
 
-3. Assume we need to add some raw data in the assay folder. Then, in the relavent assay, go to `dataset` folder and use the `UPLOAD File(s)` bottom. Then, in the local system, select the data files.
+3. Assume we need to add some raw data in the assay folder. Then, in the relavent assay, go to `dataset` folder and use the `UPLOAD File(s)` botton. Then, in the local system, select the data files.
 
     <p float="center">
         <img src="./img/upload_command.png" width="600" height="300" style="border: 2px solid  gray;" /> 

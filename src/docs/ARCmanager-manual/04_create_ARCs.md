@@ -2,11 +2,11 @@
 
 To create an ARC in ARCmanager, you can follow the below steps:
 
-1. On the left side of the homepage, click on `New ARC` bottom:
+1. On the left side of the homepage, click on the `New ARC` botton:
     <p float="center">
         <img src="./img/New_ARC.png" width="300" height="200" align="center" style="border: 2px solid  gray;"/>
     </p>
-
+    </br>
 2. In the new page, there are some fields that should be filled out:
      <p float="center">
         <img src="./img/ARC_Create.png" width="400" height="200" align="center" style="border: 2px solid  gray;" />
@@ -26,7 +26,7 @@ To create an ARC in ARCmanager, you can follow the below steps:
     </br>
     Click on the created project to explore it.
 
-4. The created ARC has contains four folders: *studies*, *assays* , *workflows*, and *runs*.  To get familiar with these folders, visit the [Annotated Research Context](https://www.nfdi4plants.de/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html).
+4. The created ARC contains four folders: *studies*, *assays* , *workflows*, and *runs*.  To get familiar with these folders, visit the [Annotated Research Context](https://www.nfdi4plants.de/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html).
 
     </br>
     <p float="center">
@@ -45,7 +45,7 @@ To create an ARC in ARCmanager, you can follow the below steps:
     </p>
     </br>
 
-6. By clicking on the `OPEN` bottom on the top of the page, you can open the related  `GitLab` page of the projec:
+6. By clicking on the `OPEN` botton at the top of the page, you can open the related  `GitLab` page of the projec:
     </br>
     <p float="center">
         <img src="./img/gitlab.png" width="600" height="300" align="center" style="border: 2px solid  gray;"/>
