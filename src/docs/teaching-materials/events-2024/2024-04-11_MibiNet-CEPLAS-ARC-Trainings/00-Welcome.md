@@ -36,17 +36,37 @@ Dominik Brilhaus, CEPLAS
 
 # Tentative agenda
 
+<div class="two-columns" style="font-size: 18px">
+<div class="columns-left">
+
+### Morning
 
 Time | Topics
 -------- | --------
-09:00 - 09:45 | Welcome and intro to RDM and NFDI
-09:45 - 10:30 | Overview DataPLANT Tool chain
-10:00 - 11:00 | Introduction and Demo of ARCitect 
-11:00 - 11:15 | *Short break*
-11:15 - 11:45 | DataHUB Concept and Demo 
-11:45 - 12:30 | Demo Metadata annotation with SWATE
-12:30 - 13:00 | Q & A
+09:00 - 09:15 | Welcome, Intro RDM and NFDI
+09:15 - 09:45 | Overview DataPLANT, and DataPLANT Tool chain
+09:45 - 10:30 | Hands-on ARCitect
+10:30 - 10:45 | *Short break* :coffee:
+10:45 - 11:45 | Intro and Hands-on DataHUB
+11:45 - 12:00 | Q & A
 
+</div>
+
+<div class="columns-right">
+
+### Afternoon
+
+Time | Topics
+-------- | --------
+12:00 - 13:00 | *Lunch break* :pizza:
+13:00 - 14:00 | Intro and Hands-on Metadata annotation with SWATE
+14:00 - 15:00 | Create your own ARC
+15:00 - 15:15 | *Short break* :coffee:
+15:15 - 16:30 | Create your own ARC
+16:30 - 17:00 | Q & A and wrap-up
+
+</div>
+</div>
 
 ---
 
@@ -120,8 +140,7 @@ Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TR
 # Let's draw a typical lab workflow :pencil:
 
 
-<!-- 
-TODO only for fullday
+---
 
 
 # BYOD &ndash; Goals
@@ -133,4 +152,3 @@ TODO only for fullday
 
 ![bg right w:500](./../../../img/ceplas-ARCs.drawio.svg)
 
--->
