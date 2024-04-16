@@ -19,6 +19,11 @@ TODO
 - ARC / metadata registry
 
 -->
+# MibiNet connection to NFDIs
+
+![](../../../img/connection_NFDI.drawio.png)
+
+---
 
 # Data Stewardship between DataPLANT and the community <!-- fit -->
 
