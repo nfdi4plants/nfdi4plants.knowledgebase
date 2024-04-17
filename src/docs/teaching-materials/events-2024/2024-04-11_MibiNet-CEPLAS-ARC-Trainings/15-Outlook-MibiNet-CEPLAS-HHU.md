@@ -10,18 +10,20 @@ author:
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
 ---
-
+<!--
 # Connection to the NFDI
 
 ![](../../../img/connection_NFDI.drawio.png)
 
 ---
 
-# Data Stewardship between DataPLANT and the community <!-- fit -->
+# Data Stewardship between DataPLANT and the community <!-- fit 
 
 ![w:880](./../../../img/DataPLANT_big_collaboration.drawio.png)
 
+
 ---
+-->
 
 # The DataPLANT DataHUB &ndash; a GitLab ***Plus***
 
@@ -72,6 +74,7 @@ ARC services are available as on-premise option
 
 ![w:700](./../../../img/DataPLANT-collaborationCEPLAS-NFDI4BI.drawio.png)
 
+<!--
 ---
 
 # CEPLAS Research Data Policy
@@ -88,3 +91,5 @@ ARC services are available as on-premise option
     
   </div>
 </div>
+
+-->
