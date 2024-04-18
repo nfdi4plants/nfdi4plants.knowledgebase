@@ -28,6 +28,7 @@ DataPLANT provides the tool [Swate](./../implementation/Swate.html) to support y
 ## Before we can start
 
 :bulb: Consider reading about [Swate](./../implementation/Swate.html)
+<br>
 :bulb: We assume that you already created an ARC that contains one or more isa.study.xlsx and isa.assay.xlsx file(s), respectively.
 
 ## Swate
@@ -39,18 +40,19 @@ DataPLANT provides the tool [Swate](./../implementation/Swate.html) to support y
 
 - To create an annotation table within ARCitect, add a new table to your assay or study by clicking the plus (+) symbol next to your metadata sheet
 
-<img src="./../img/Swate_a_Arcitect_newTable.png" style="height: 600px">
+<img src="./../img/Swate_a_Arcitect_newTable.png" style="height: 500px">
 <br>
 
 - Fill in the metadata sheet of your study or assay
 
 - Create and fill your annotation table with help of the [annotation principles](https://nfdi4plants.github.io/AnnotationPrinciples/).  
 Briefly:
-  - *Characteristics* are used for study descriptions and describe inherent properties of the source material (e.g. a certain strain).  
-  - *Parameters* describe steps in your experimental workflow (e.g. an instrument model or a growth temperature), and  
-  - *Factors* describe independent variables that result in a specific output (e.g. the light intensity).
+  - *Characteristics* are used for study descriptions and describe inherent properties of the source material (e.g. a certain strain)  
+  - *Parameters* describe steps in your experimental workflow (e.g. a measurement temperature) 
+  - *Components* describe physical obsjects of your protocol (e.g. an instrument name) 
+  - *Factors* describe independent variables that result in a specific output (e.g. the light intensity)
 
-- The combination of ISA terms (Characteristics, Parameter, Factor) and biological or technological ontology terms (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter \[temperature\] or Factor \[temperature\]).
+- The combination of ISA terms (Characteristics, Parameter, Component, Factor) and biological or technological ontology terms (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter \[temperature\] or Factor \[temperature\]).
 
 ## Customize your table by adding building blocks
 
@@ -75,7 +77,7 @@ Alternatively, you can also use one of DataPLANT’s [Swate templates](./SwateMa
 
 ## Annotate your samples and data
 
-Add rows beneath the building blocks with the plus symbol ( A ) and fill the cells with ontology terms to note the respective *Characteristics, Parameter,* and *Factor* values of your experiment. By activating the ontology term search function (magnifying glass, B), you can fill cells with ontology terms.
+Add rows beneath the building blocks with the plus symbol ( A ) and fill the cells with ontology terms to note the respective *Characteristics, Parameter,* *Component* and *Factor* values of your experiment. By activating the ontology term search function (magnifying glass, B), you can fill cells with ontology terms.
 
 1. When *Ontology term search* ( B ) is enabled, Swate  will suggest a selection of suitable terms from the ontology database for the column header, e.g. *TripleTOF* *5600* for *instrument model.* Alternatively to activating the *Ontology term search* within the cells of your annotation table, you can use the ontology term search panel on the right side after expanding it with the arrow on the bottom right ( C ).
 
