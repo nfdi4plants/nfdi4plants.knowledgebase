@@ -29,7 +29,7 @@ Users can add and delete building blocks to their ISA compliant annotation table
 Combination of ISA terms (Characteristic, Parameter, Factor, Component) and biological or technological ontology terms (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on within your annotation table (Parameter [temperature] or Factor [temperature]). For more information on these building blocks, please check our [annotation principles](https://nfdi4plants.github.io/AnnotationPrinciples/). 
 
 
-![Building Blocks](./../img/Swate_a_buildingblockcategories.png)
+![Building Blocks](./../img/Swate_a_buildingblockcategories.PNG)
 
 Ontology terms within the Swate database can not only be used to standardize the headers of your annotation table, but also for standardization of the respective values. When filling in metadata via the "ontology term search", which can be activated by clicking the magnifying glass symbol, Swate will suggest matching metadata terms for the respective building block. Of course, users are not forced to use this feature in case they opt for more flexibility.
 

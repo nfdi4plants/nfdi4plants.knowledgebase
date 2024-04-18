@@ -35,7 +35,7 @@ DataPLANT provides the tool [Swate](./../implementation/Swate.html) to support y
 
 - To create an annotation table with the [Swate standalone](https://swate-alpha.nfdi4plants.org/) in your browser, click "New File" and select which kind of annotation table you want to create. If you already created a isa.study.xlsx or isa.assay.xlsx file, you can select "Import File" to modify and add to it.
 
-<img src="./../img/Swate_a_NewFile.png" style="height: 250px">
+<img src="./../img/Swate_a_NewFile.PNG" style="height: 250px">
 <br>
 
 - To create an annotation table within ARCitect, add a new table to your assay or study by clicking the plus (+) symbol next to your metadata sheet
