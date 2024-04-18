@@ -582,11 +582,11 @@
         Swate QuickStart
       </h1>
       <i class="help">
-        last updated at 2022-08-05
+        last updated at 2024-04-18
       </i>
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
-<p>DataPLANT provides the Excel Add-In Swate to support you in data annotation. In this guide we focus on adding metadata to your studies and assays with our excel tool <a href="./../implementation/Swate.html">Swate</a>. Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses.</p>
+<p>DataPLANT provides the tool <a href="./../implementation/Swate.html">Swate</a> to support you in data annotation. In this guide, we focus on adding metadata to your studies and assays with our tool. Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses.</p>
 <a href="./index.html">
   <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
   <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
@@ -594,62 +594,65 @@
 <br>
 <br>
 <nfdi-h2 id="before-we-can-start">Before we can start</nfdi-h2>
-<p>☑️ Please <a href="./../SwateManual/Docs01-Installing-Swate.html">install Swate</a>
-<br>
-💡 Consider reading about <a href="./../implementation/Swate.html">Swate</a>
+<p>💡 Consider reading about <a href="./../implementation/Swate.html">Swate</a>
 <br>
 💡 We assume that you already created an ARC that contains one or more isa.study.xlsx and isa.assay.xlsx file(s), respectively.</p>
 <nfdi-h2 id="swate">Swate</nfdi-h2>
 <ul>
-<li>Use the <em>create annotation table</em> button in the yellow pop-up box (this only appears if you start Swate on an Excel worksheet without an existing annotation table). An annotation table with the building blocks <em>Source Name</em> and <em>Sample Name</em> will be generated.</li>
+<li>To create an annotation table with the <a href="https://swate-alpha.nfdi4plants.org/">Swate standalone</a> in your browser, click &quot;New File&quot; and select which kind of annotation table you want to create. If you already created a isa.study.xlsx or isa.assay.xlsx file, you can select &quot;Import File&quot; to modify and add to it.</li>
 </ul>
-<p><img src="./../img/Swate-CreateAnnotationTable-Exp.jpg" alt="" /></p>
+<img src="./../img/Swate_a_NewFile.png" style="height: 250px">
+<br>
 <ul>
-<li><p>Annotate your table with help of the <a href="https://nfdi4plants.github.io/AnnotationPrinciples/">annotation principles</a>.<br />
+<li>To create an annotation table within ARCitect, add a new table to your assay or study by clicking the plus (+) symbol next to your metadata sheet</li>
+</ul>
+<img src="./../img/Swate_a_Arcitect_newTable.png" style="height: 500px">
+<br>
+<ul>
+<li><p>Fill in the metadata sheet of your study or assay</p>
+</li>
+<li><p>Create and fill your annotation table with help of the <a href="https://nfdi4plants.github.io/AnnotationPrinciples/">annotation principles</a>.<br />
 Briefly:</p>
 <ul>
-<li><em>Characteristics</em> are used for study descriptions and describe inherent properties of the source material (e.g. a certain strain).</li>
-<li><em>Parameters</em> describe steps in your experimental workflow (e.g. an instrument model or a growth chamber), and</li>
-<li><em>Factors</em> describe independent variables that result in a specific output (e.g. the light intensity).</li>
+<li><em>Characteristics</em> are used for study descriptions and describe inherent properties of the source material (e.g. a certain strain)</li>
+<li><em>Parameters</em> describe steps in your experimental workflow (e.g. a measurement temperature)</li>
+<li><em>Components</em> describe physical obsjects of your protocol (e.g. an instrument name)</li>
+<li><em>Factors</em> describe independent variables that result in a specific output (e.g. the light intensity)</li>
 </ul>
 </li>
-<li><p>The combination of ISA (Characteristics, Parameter, Factor) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter [temperature] or Factor [temperature]).</p>
+<li><p>The combination of ISA terms (Characteristics, Parameter, Component, Factor) and biological or technological ontology terms (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter [temperature] or Factor [temperature]).</p>
 </li>
 </ul>
 <nfdi-h2 id="customize-your-table-by-adding-building-blocks">Customize your table by adding building blocks</nfdi-h2>
 <ol>
-<li><p>Choose the type of building block you want to add (A).</p>
+<li><p>To add a building block, click the &quot;add building block&quot; symbol ( a ) in the top left corner.</p>
 </li>
-<li><p>If you chose a descriptive building block type (building blocks besides Sample Name, Source Name, and Data File Name), use search field (B) to search for an Ontology Term. Swate accesses the SwateDB with a list of established external ontologies designated suitable for use in plant science. In addition, we feature our own ontology DPBO to extend the DB with missing, but necessary terms.</p>
+<li><p>Choose the type of building block you want to add ( b ).</p>
 </li>
-<li><p>If you want to add a building block with a unit, check box (C) and use search field (D) to look for a fitting unit term, e.g. degree Celsius as unit for Parameter [temperature].</p>
+<li><p>If you chose a descriptive building block type (building blocks besides Input and Output), use search field ( c ) to search for an ontology term. Swate accesses the SwateDB with a list of established external ontologies designated suitable for use in plant science. In addition, we feature our own ontology DPBO to extend the DB with missing, but necessary terms.</p>
 </li>
-<li><p>If you could not find a fitting term, you can use the Advanced Term Search with the blue links above the <em>Add building block</em> button. If you still could not find a fitting term, use free text input.</p>
+<li><p>If you want to add a building block with a unit, activate the unit box ( d ) and use the search field to look for a fitting unit term, e.g. degree Celsius as unit for Parameter [temperature].</p>
 </li>
 </ol>
-<p><img src="./../img/Swate-AddBuildingBlock-Exp.jpg" alt="" /></p>
+<img src="./../img/Swate_a_Addbuildingblock_2.png" style="height: 300px">
+<br>
 <ol start="5">
 <li>For more information on customizing your annotation table click <a href="./SwateManual/Docs03-Building-Blocks.html">here</a>.</li>
 </ol>
 <nfdi-h2 id="use-templates">Use templates</nfdi-h2>
-<p>Alternatively, you can also use one of DataPLANT’s <a href="./SwateManual/Docs05-Templates.html">Swate templates</a>. You can find them under the <em>Protocol Insert</em> tab in Swate.</p>
-<p><img src="https://user-images.githubusercontent.com/39732517/128495178-cc14690a-fc8a-4a3c-b591-365176ea2b00.png" alt="" /></p>
+<p>Alternatively, you can also use one of DataPLANT’s <a href="./SwateManual/Docs05-Templates.html">Swate templates</a>. You can find them via the &quot;add template&quot; button, next to the &quot;add building block&quot; button.</p>
+<img src="./../img/Swate_a_Addtemplate.png" style="height: 500px">
 <nfdi-h2 id="annotate-your-samples-and-data">Annotate your samples and data</nfdi-h2>
-<p>Fill the cells beneath each building block with ontology terms to note the respective <em>Characteristics, Parameter,</em> and <em>Factor</em> values of your experiment. Using the ontology term search function, you can fill multiple cells at once.</p>
+<p>Add rows beneath the building blocks with the plus symbol ( A ) and fill the cells with ontology terms to note the respective <em>Characteristics, Parameter,</em> <em>Component</em> and <em>Factor</em> values of your experiment. By activating the ontology term search function (magnifying glass, B), you can fill cells with ontology terms.</p>
 <ol>
-<li><p>When <em>Use related term directed search</em> (A) is enabled, Swate
-will suggest a selection of suitable terms within the ontology
-for the column header, e.g. <em>TripleTOF</em> <em>5600</em> for <em>instrument
-model.</em></p>
+<li><p>When <em>Ontology term search</em> ( B ) is enabled, Swate  will suggest a selection of suitable terms from the ontology database for the column header, e.g. <em>TripleTOF</em> <em>5600</em> for <em>instrument model.</em> Alternatively to activating the <em>Ontology term search</em> within the cells of your annotation table, you can use the ontology term search panel on the right side after expanding it with the arrow on the bottom right ( C ).</p>
 </li>
-<li><p>When term directed search (A) is disabled, Swate will still
-suggest ontology terms, but without relation to the column
-header.</p>
+<li><p>If you could not find a fitting term, you can use the advanced term search with the blue link (&quot;use advanced search&quot;, D) below the ontology term search field in the right panel.</p>
 </li>
-<li><p>If you could not find a fitting term, use free text input.</p>
+<li><p>If you still could not find a fitting term, use free text input.</p>
 </li>
 </ol>
-<p><img src="./../img/swate_ontologyTermSearch2.png" alt="" /></p>
+<p><img src="./../img/Swate_a_ontologytermsearch3.png" alt="" /></p>
 <blockquote>
 <p>Note: More information on how to use Swate can be found <a href="../SwateManual/index.html" title="Swate Manual">here</a>.</p>
 </blockquote>
