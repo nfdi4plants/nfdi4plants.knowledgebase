@@ -13,43 +13,38 @@ date: 2024-04-07
 
 ## Adding Metadata
 
-There are two different types of metadata stored inside the ISA files.\
-There are the administrative metadata and the experimental metadata.
-Every ISA file has the administrative data described in the first sheet of the excel file.\
-Every study and assay file should have at least one more sheet annotating the experimental metadata, maintained through SWATE.\
-With the ARCmanager you are able to edit and annotate both types of metadata.
+Two different types of metadata are stored in ISA files: administrative and experimental metadata. Administrative metadata covers IDs, descriptions, contact details, connected publications and more, while experimental metadata is describing experimental procedures and similar processes. ISA files are normally stored in an Excel format (.xlsx) but can also be edited directly through the ARCmanager.
+
+A typical ISA file has the administrative metadata recorded in the first sheet of the Excel file. In addition, every isa.study.xlsx and isa.assay.xlsx file should have at least one more sheet where the experimental metadata is annotated, that is maintained through SWATE. Both types of metadata can be edited with the ARCmanager.
 
 ### Administrative Metadata
 
-When you click normally on an ISA file, the right side will open up and present to you the administrative metadata.
+When you left-click on an ISA file, the right side will open up and show the administrative metadata:
 
 ![admin-invest](./img/6-metadata/admin-meta.png)
 
 The metadata is separated into three parts:
 
-- the main/important data
-- the publication data
-- the contact data
+1. Main information
+2. Publications
+3. Contact details
 
----
-
-The main part contains the mandatory data, which are the title, identifier and description of the respective ISA file.\
-For assay files these are the measurement types and technology types.
-Also assay files have no publication data, just contact data.
+The **main information** part contains mandatory data like the title, identifier and description of the respective ISA file.\
+In isa.assay.xlsx files, it contains information about measurement types and technology types, instead:
 
 <img src="./img/6-metadata/assay-meta.png" />
 
-In the second part the publication data is stored for the investigation/study.\
-It contains the PubMed ID(s) for the publications associated with the investigation/study.
-Additionally, it also contains information like the DOI(s) and author list associated with these publications.
+The **publication** part contains information about DOIs, publication titles, authors, etc. of publications that are associated with the experimental data stored inside the study/investigation.
 
-The contact part contains the names associated with the investigation/study/assay.
-It contains information like the full name, email, address and the affiliation. Every ISA file has a contact section.
+Isa.assay.xlsx files do not contain publication data, which is instead recorded in the connected study. 
 
-Fill out the cells as you see fit (but please fill them out properly). Mandatory cells are marked red if not filled out yet.\
-When you are done, just press the "save" button on the bottom to save your data.
+The **contact details** part contains data bout researchers associated with the investigation/study/assay. It contains information like first and last name, email, work address, and affiliation. Every ISA file has a contact section.
 
----
+You can fill out the metadata fields gradually as the research progresses. Make sure to keep the metadata record as complete as possible to enhance findability and reusability of your data.
+
+When you are done with your changes, just click the `SAVE` button on the bottom to save your data and send it to the respective DataHUB.
+
+#### Alternative view
 
 To edit any not field not listed in the main view, you can click the checkmark on the top right named "alternative" to open up a different view of the data stored inside.
 
