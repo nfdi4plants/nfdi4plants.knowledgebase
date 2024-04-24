@@ -40,7 +40,7 @@ DataPLANT provides the tool [Swate](./../implementation/Swate.html) to support y
 
 - To create an annotation table within ARCitect, add a new table to your assay or study by clicking the plus (+) symbol next to your metadata sheet
 
-<img src="./../img/Swate_a_Arcitect_newTable.png" style="height: 500px">
+<img src="./../img/Swate_a_Arcitect_newTable.png" style="height: 400px">
 <br>
 
 - Fill in the metadata sheet of your study or assay
