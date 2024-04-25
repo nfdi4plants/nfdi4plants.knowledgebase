@@ -88,9 +88,8 @@ Now, let's add a descriptive building block.
 3. Select `UO:0000101`.
 4. Click <kbd>Add column</kbd>.
 
-> :bulb: This adds four columns to your table, one visible and **three** hidden.
-<br>
-> :bulb: When filling any cell below `Parameter [sample volume]` you can now see the numbers being complemented with the chosen unit, e.g. `10.00 microliter`.
+> :bulb: This adds four columns to your table, one visible and **three** hidden. 
+When filling any cell below `Parameter [sample volume]` you can now see the numbers being complemented with the chosen unit, e.g. `10.00 microliter`.
 <br>
 
 ## Change the order of your columns or delete columns
