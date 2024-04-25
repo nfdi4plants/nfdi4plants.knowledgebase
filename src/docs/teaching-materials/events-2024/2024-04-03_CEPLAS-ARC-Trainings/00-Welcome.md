@@ -26,8 +26,8 @@ TODO before final
 
 April, 2024
 
-Dominik Brilhaus, CEPLAS
-Sabrina Zander, MibiNet
+Dominik Brilhaus (CEPLAS)
+Dan Wang, Eik Dahms (TRR341)
 
 ![bg fit](./../../../img/background_title_ceplas.drawio.svg)
 
