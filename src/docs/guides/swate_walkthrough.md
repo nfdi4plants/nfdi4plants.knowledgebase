@@ -34,6 +34,7 @@ In this walk-through, we guide you through annotating data using [Swate](./../im
 - :bulb: Consider reading about [Swate](./../implementation/Swate.html)
 
 Create and/or open an annotation table as described in the [Swate Quickstart](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html)
+<br>
 
 ## Swate Overview
 
@@ -41,6 +42,7 @@ Create and/or open an annotation table as described in the [Swate Quickstart](ht
   <img src="./../img/Swate_a_overview2.png">
   <figcaption>Major areas of the Swate user interface.</figcaption>
 </figure>
+<br>
 
 <!-- 
 ## A small detour on "Excel Tables"
@@ -68,6 +70,7 @@ Each annotation should start with an *Input* and end with an *Output* column. To
 <br>
 
 > :bulb: Only one *Input*, one *Output* and one of each *Protocol* columns can be added per table.
+<br>
 
 Now, let's add a descriptive building block.
 1. Select *Component* from the drop-down menu.
@@ -86,8 +89,9 @@ Now, let's add a descriptive building block.
 4. Click <kbd>Add column</kbd>.
 
 > :bulb: This adds four columns to your table, one visible and **three** hidden.
+<br>
 > :bulb: When filling any cell below `Parameter [sample volume]` you can now see the numbers being complemented with the chosen unit, e.g. `10.00 microliter`.
-
+<br>
 
 ## Change the order of your columns or delete columns
 
@@ -96,7 +100,7 @@ At this point, your table should look similar to this:
 ![Alt-Text](./../img/Swate_a_movecolumn2.png)
 
 We now want to move the *Output* column to the end of your table. For this, right-click into any cell (except the header) of the column that you want to move. Now you can click "Move Column" and select the position that the column should be moved to (in this case: 3). If your table does not contain empty cells yet, you can add any number of rows with the plus symbol. Right-clicking into cells also gives the option of deleting a column or row.
-
+<br>
 
 ## Use a template
 
@@ -107,6 +111,7 @@ We now want to move the *Output* column to the end of your table. For this, righ
 3. Click <kbd>Add template</kbd> to add all building blocks from the template to your table, which <u>do not exist yet</u>.
 
 If there are any building blocks which do not fit your experiment you can delete the columns as described above.
+<br>
 
 ## Your ISA table is ready to fill 🎉
 
