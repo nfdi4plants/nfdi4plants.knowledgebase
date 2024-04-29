@@ -99,7 +99,7 @@ Swate can be used for the annotation of **isa.study.xlsx and isa.assay.xlsx** fi
   
 - Input (e.g. Source Name, Sample Name)
 - Protocol columns
-- Characteristic // Parameter // Factor
+- Characteristic // Parameter // Factor // Component
 - Output (e.g. Sample Name, Raw Data File, Derived Data File)
 
 </div>

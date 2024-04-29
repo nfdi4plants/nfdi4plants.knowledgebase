@@ -41,7 +41,7 @@ Please install version **v0.0.31** (or later) of the ARCitect: https://github.co
 
 ## Download the demo data <!-- fit -->
 
-https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZlS_Kzf7psk-5w-xg?e=u0sADd
+https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2 
 
 ![bg right w:600](./../../../img/demo-data-download.png)
 
