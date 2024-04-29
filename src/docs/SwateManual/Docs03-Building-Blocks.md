@@ -17,4 +17,4 @@ Building Blocks are necessary to sustain ontology information in an [annotation 
 
 ## Usage in Swate
 
-Click the "Add Building Block" <a href="./../img/Swate_a_overview2.png" target="_blank">Widget</a> or navigate to the "Building Blocks" tab in the <a href="./../img/Swate_a_overview2.png" target="_blank">Sidebar</a>. This tab allows you to [add a new building block](./swate_blocks_add.html) with or without a [unit](./swate_blocks_units.html).
+Click the "Add Building Block" <a href="./../img/Swate_a_overview2.png" target="_blank">Widget</a> or navigate to the "Building Blocks" tab in the <a href="./../img/Swate_a_overview2.png" target="_blank">Sidebar</a>. This tab allows you to [add a new building block](./swate_blocks_add.html) with or without a unit.

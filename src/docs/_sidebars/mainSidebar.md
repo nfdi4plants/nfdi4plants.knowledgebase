@@ -72,7 +72,6 @@
 ### [Building blocks](/docs/SwateManual/Docs03-Building-Blocks.html)
 #### [Building Block Types](/docs/SwateManual/swate_blocks_types.html)
 #### [Adding a Building Block](/docs/SwateManual/swate_blocks_add.html)
-#### [Using Units with Building Blocks](/docs/SwateManual/swate_blocks_units.html)
 ### [Filling cells with ontology terms](/docs/SwateManual/Docs04-Ontology-Term-Search.html)
 ### [Advanced Term Search](/docs/SwateManual/Docs07-Advanced-Term-Search.html)
 ### [Templates](/docs/SwateManual/Docs05-Templates.html)
