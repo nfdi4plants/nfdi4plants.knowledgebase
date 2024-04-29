@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: "Swate Manual"
-date: 2022-02-14
+date: 2024-04-26
 add toc: false
 add support: false
 add sidebar: _sidebars/mainSidebar.md
@@ -14,6 +14,5 @@ Here you can find documentation about Swate features and best practices. If you 
 
 Please explore the sections on the left to find guides on
 
-- Installation of Swate,
 - Swate Core Features and how to use them, and
 - Swate Expert Features (for Data Stewards).
