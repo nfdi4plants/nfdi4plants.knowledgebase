@@ -67,13 +67,6 @@
 ## [How to use the ARCmanager](/docs/ARCmanager-manual/how_to.html)
 
 # [Swate Manual](/docs/SwateManual/index.html)
-## [Swate Installation](/docs/SwateManual/Docs01-Installing-Swate.html)
-### [Excel Browser](/docs/SwateManual/swate_installation_browser.html)
-### [Excel Desktop](/docs/SwateManual/swate_installation_desktop.html)
-#### [Windows &ndash; installer](/docs/SwateManual/swate_installation_desktop-win-installer.html)
-#### [Windows &ndash; manually](/docs/SwateManual/swate_installation_desktop-win-manually.html)
-#### [macOS &ndash; manually](/docs/SwateManual/swate_installation_desktop-macos-manually.html)
-#### [Organization-wide](/docs/SwateManual/swate_installation_organization.html)
 ## [Core Features](/docs/SwateManual/Docs02-Annotation-Table.html)
 ### [Annotation tables](/docs/SwateManual/Docs02-Annotation-Table.html)
 ### [Building blocks](/docs/SwateManual/Docs03-Building-Blocks.html)
