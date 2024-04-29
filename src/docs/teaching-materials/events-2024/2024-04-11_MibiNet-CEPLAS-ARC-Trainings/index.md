@@ -31,9 +31,6 @@ See details and registration [here](https://pad.hhu.de/gXvgd5yETWa3Ks34dM3KCw?vi
 - <a href=./31-DataHUB-HandsOn.html target=_blank>DataHUB-HandsOn</a>
 - <a href=./50-Swate-Intro.html target=_blank>Swate-Intro</a>
 - <a href=./51-Swate-HandsOn.html target=_blank>Swate-HandsOn</a>
-- <a href=./91-Appendix-NFDI.html target=_blank>Appendix-NFDI</a>
-- <a href=./92-Appendix-ELNs.html target=_blank>Appendix-ELNs</a>
-- <a href=./95-Appendix-Swate_templates-HandsOn.html target=_blank>Appendix-Swate_templates-HandsOn</a>
 - <a href=./99-Appendix-Contributors.html target=_blank>Appendix-Contributors</a>
 <!-- linked-slides -->
 
