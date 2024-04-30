@@ -221,6 +221,20 @@ Please follow [this workaround](https://github.com/nfdi4plants/ARCitect/discussi
 </details>
 
 
+<details>
+<summary><span style="color: #1fc2a7">
+What does the "Credential Helper Selector" mean?
+</summary>
+<br>
+
+During ARCitect login, Windows asks you wether you want to use a "Credential Helper". This can be used to store your DataHUB credentials. You do not need this for ARCitect to work. You can choose "no helper" or "manager" and tick the check box "always use this from now on" to avoid the popup in the future.
+
+![](./../img/faq-CredentialHelperSelector.png)
+
+<br>
+</details>
+
+
 ## Swate
 
 <details><summary><span style="color: #1fc2a7">
