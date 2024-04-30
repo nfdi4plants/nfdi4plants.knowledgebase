@@ -50,7 +50,7 @@ You can find ontology term search fields on the *Building Blocks* and on the *On
 - Type in the search field to trigger the auto-complete function and find terms. Select the term you want. When using the ontology term search in the sidebar, click "Fill selected cells with this term" to add it to your table. When using the term search within your table, the term will automatically be added in the proper format once you select the term. 
 - Terms will be added to the selected rows in the format:
 
-        `| term name | term source ontology | term id |`
+        | term name | term source ontology | term id |
        
 <br>
 
@@ -66,4 +66,4 @@ Let's look at this with an example:
 
 If a user wants to fill in cells of the column `Component [instrument model]`, they are most likely looking for the instrument model used in their experimental workflow. In this example the instrument model series and the exact instrument models are so-called child terms of `instrument model (MS:1000031)` because they are connected to `instrument model (MS:1000031)` via [`is_a` relationships](./../img/Swate-RelationshipGraph-Exp.jpg). When a cell of the column `Component [instrument model]` is selected, the respective child terms can be shown by double clicking into the empty search field.
 
-When you start typing a word to search for a specific term, both child terms and unrelated terms will be suggested. You can recognize the terms that are related to your building block header (parent term, b) by the symbol in front of the terms ( c ).
+When you start typing a word to search for a specific term, both child terms and unrelated terms will be suggested. You can recognize the terms that are related to your building block header (parent term, b) by the symbol in front of the terms ( c ). To switch off this feature in your annotation table you can deactivate the magnifying glass symbol by clicking the symbol or by pressing <kbd>Tab</kbd>.
