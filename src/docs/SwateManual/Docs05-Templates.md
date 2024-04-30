@@ -21,7 +21,7 @@ A good starting point for your data annotation is using a predefined template. Y
 
 In the template browser, you can:
 
-1. **Sort** the templates by names according to the search input.
+1. **Sort** the templates by names according to the search input. While the search default is by template name, you can also search by authors or organisation. For this, in the search field type: <kbd>/a</kbd> to search authors, <kbd>/o</kbd> to search organisations, or <kbd>/n</kbd> to search template names.
 
 2. Filter the templates by **tags**.
 
