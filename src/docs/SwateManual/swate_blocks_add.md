@@ -12,12 +12,12 @@ add sidebar: _sidebars\mainSidebar.md
 ---
 
 <p style="display: flex; justify-content: center">
-<img src="./../img/Swate_a_Addbuildingblock_2.png" >
+<img src="./../img/Swate_a_Addbuildingblock_3.png" >
 </p>
 
-1. Click on "Add building block" in the top bar ( a ) or in the sidebar.
-2. Choose the type of building block you want to add ( b ). For more information on building block types, click [here](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_types.html).
-3. If you chose a descriptive building block type, use search field ( c ) to [search for an ontology term](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs04-Ontology-Term-Search.html). This term together with your building block type describes your workflow. If you want to add a building block with a unit, activate the unit box ( d ) and use the search field to look for a fitting unit term.
+1. Click on "Add building block" in the top bar or in the sidebar.
+2. Choose the type of building block you want to add ( a ). For more information on building block types, click [here](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_types.html).
+3. If you chose a descriptive building block type, use search field ( b ) to [search for an ontology term](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs04-Ontology-Term-Search.html). This term together with your building block type describes your workflow. If you want to add a building block with a unit, activate the unit box ( c ) and use the search field to look for a fitting unit term.
     - Example 1: `Component [instrument model]` will describe any mass spectrometry instrument model used in your workflow ([source](http://www.ontobee.org/ontology/MS?iri=http://purl.obolibrary.org/obo/MS_1000031)).
     - <details><summary>Example 1 | Table</summary>
         <p>
