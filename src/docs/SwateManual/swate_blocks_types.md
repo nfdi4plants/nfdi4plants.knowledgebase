@@ -12,7 +12,7 @@ add sidebar: _sidebars\mainSidebar.md
 ---
 
 
-Swate and the ARC feature a set of six defined building block types. They can be split into input, descriptive and output building blocks and you can find additional information on the [DataPLANT](https://nfdi4plants.github.io/AnnotationPrinciples/) website. Additionally, different protocol columns are available to facilitate submission to endpoint repositories.
+Swate and the ARC feature a set of defined building block types. They can be split into input, descriptive and output building blocks and you can find additional information on the [DataPLANT](https://nfdi4plants.github.io/AnnotationPrinciples/) website and the [ISA-XLSX specification](https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md). Additionally, different protocol columns are available to facilitate submission to endpoint repositories.
 
 ## Input Building Block
 
@@ -259,7 +259,7 @@ These columns have been added to better support conversion to endpoint repositor
 
 **Definition:** The type of protocol described with the assay. This building block is handled by Swate as a [descriptive building block](#descriptive-building-blocks).
 
-**Expected Values:** **MUST** be a *Protocol Type* child term.
+**Expected Values:** **MUST** be string, in the form of free text or an ontology term.
 
 **Examples**
 
