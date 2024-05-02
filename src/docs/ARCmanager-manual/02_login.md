@@ -44,6 +44,7 @@ If you are using the ARCmanager for the first time, you will see a window (Fig. 
 
 
 ![login_2b](./img/02-login/01_login_2b.png)
+
 Fig. 4 Authorization screen for ARCmanager to use a DataHUB user account.
 
 
