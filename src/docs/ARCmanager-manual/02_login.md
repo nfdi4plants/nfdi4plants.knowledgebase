@@ -33,7 +33,7 @@ At present, there are three different DataHUBs available for managing research d
 
 
 
-![login_2.png](./img/02-login/01-login_2.png)
+![login_2](./img/02-login/01-login_2.png)
 Fig. 3 Logging into the selected DataHUB.
 
 
