@@ -56,6 +56,7 @@ Different login option can be used for the same DataHUB user, if the logins of t
 
 
 ![login_3](./img/02-login/01_login_3.png)
+
 Fig. 5 Login options.
 
 
