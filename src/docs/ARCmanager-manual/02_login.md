@@ -17,6 +17,8 @@ To be able to use the [ARCmanager](https://nfdi4plants.de/arcmanager/app/index.h
 
 ![](https://github.com/akirbis/nfdi4plants.knowledgebase/blob/main/src/docs/ARCmanager-manual/img/01-login/01_login_1.png)(Fig. 1 Starting the login process.)
 
+<img src="./img/01-login_1b.png" />
+
 Pressing the the 'DataHUB' button (Fig. 1) brings you to the drop down menu of available DataHubs. The currently selected DataHUB is shaded in grey (Fig. 2).
 
 ![\src\docs\ARCmanager-manual\img\01-login\src\docs\ARCmanager-manual\img\01-login_1b.png](Fig. 2 Selecting the DataHUB.)
