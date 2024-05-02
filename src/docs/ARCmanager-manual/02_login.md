@@ -33,7 +33,7 @@ At present, there are three different DataHUBs available for managing research d
 
 
 
-![login_2](./img/02-login/01-login_2.png)
+![login_2](./img/02-login/01_login_2.png)
 Fig. 3 Logging into the selected DataHUB.
 
 
@@ -43,7 +43,7 @@ If you are using the ARCmanager for the first time, you will see a window (Fig. 
 
 
 
-![01-login_2b.png](./img/02-login/01-login_2b.png)
+![login_2b](./img/02-login/01_login_2b.png)
 Fig. 4 Authorization screen for ARCmanager to use a DataHUB user account.
 
 
@@ -54,14 +54,14 @@ Different login option can be used for the same DataHUB user, if the logins of t
 
 
 
-![01-login_3.png](./img/02-login/01-login_3.png)
+![login_3](./img/02-login/01_login_3.png)
 Fig. 5 Login options.
 
 
 
 After successful login, you see the former lilac Login button change to a pink Logout button (Fig. 6).
 
-![01-login_4.png](./img/02-login/01_login_4.png)
+![login_4](./img/02-login/01_login_4.png)
 Fig. 6 Welcome screen after login. The presence of the pink Logout button (arrow) is a useful indicator for showing that you are logged in.
 
 
