@@ -15,7 +15,7 @@ date:
 
 To be able to use the [ARCmanager](https://nfdi4plants.de/arcmanager/app/index.html), you need to have registered to one of the DataHUBs. Information on the different DataHUBss can be found on https://www.nfdi4plants.de/content/datahub.html. 
 
-<img src="./img/01-login_1a.png" /> (Fig. 1 Starting the login process.)
+<img src="./img/01-login/01-login_1a.png" /> (Fig. 1 Starting the login process.)
 
 ![/src/docs/ARCmanager-manual/img/01-login/src/docs/ARCmanager-manual/img/01-login_1a.png](Fig. 1 Starting the login process.)
 
