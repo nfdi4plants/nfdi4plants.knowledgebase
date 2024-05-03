@@ -17,35 +17,63 @@ For the sake of simplicity, we are here using the term "ARC" for (DataHUB) "Proj
 The ARCmanager is for viewing and manipulating ARCs.
 
 Once you are logged in, you have got several options for selecting which ARCs (Projects) to view (Fig. 1):
-</br>
-![view_1](./img/03-view/003_view_1.png)
-</br>
+
+![view_1](./img/03-view/03_view_1b.png)
+Fig. 1 Loading ARCS.
 
 1. By pressing the button "Load ARCS" you are offered a list of all ARCs (Projects) of the DataHUB you have got the rights to view. These are the ARCs (Projects) that are either public, public within the DataHub, or of which you are a member. ARCs (Projects) owned by you are highlighted in colour.
+
+![view_2](./img/03-view/03_view_2.png)
+Fig. 2 Loading your ARCS only.
 
 2. By ticking the box "Your ARCs". This restricts the list to the ARCs(Projects) in which you are member. Again, ARCs owned by you are highlighted in colour.
 
 By default, the ARCs (Project) are sorted by the timing of the last changes, in descending order from latest to earliest.
 
+![view_3](./img/03-view/03_view_3.png)
+Fig. 3 Arc viewing options
+
 On the right hand side of each ARC (Project) in the list, there are two buttons:
 
-- the lense button (Fig. xxxx) which takes you to the ARC (Project) on the DataHUB page.
+- the lense button (Fig. 3, 1) which takes you to the ARC (Project) on the DataHUB page.
 
-- the downward arrow button (Fig.) which expands the ARC (Project) within the ARCmanager.
+- the downward arrow button (Fig.3, 2) which expands the ARC (Project) within the ARCmanager.
 
 ### Viewing the ARC (Project) contents
 
-Once you have expanded the ARC (Project) you will get a list of files and folders that are included in the ARC. 
+![view_4](./img/03-view/03_view_4.png)
+Fig. 4 Expanded ARC showing directories and files.
 
-Clicking anywhere in the header row (Fig. xxx) will hide this list.
+Once you have expanded the ARC (Fig. 4) you will get a list of files and folders that are included in the ARC (the same applies to all Projects). 
 
+![view_5](./img/03-view/03_view_5.png)
+Fig. 5 Hiding directories and files.
 
-If you are selecting a file that can be read by ARCmanager (.xlsx, any kind of text file including e.g. .md), the content of the file can be displayed within the ARCmanager.
+Clicking anywhere in the header row (Fig. 6) will hide this list.
 
-- for text files, upon clicking on the file name, the contents of the file can be viewed and edited in the panel to the right.
-- the administrative page of of isa formatted .xlsx files, upon clicking on the file name, the contents can be viewed and edited in the  panel to the right
+If you are selecting a file that can be read by ARCmanager (.xlsx, any kind of text file including e.g. .md), the content of the file can be displayed within the ARCmanager (Fig. 6 and 7).
 
-If no readable file is selected, the button xxx (Fig. xxx) will display the list of changes of the ARC (Project) if this option is ticked.
+![view_6b](./img/03-view/03_view_6b.png)
+
+Fig. 6 ARCmanager, displaying the content of README.md in the panel on the right.
+
+For text files, upon clicking on the file name, the contents of the file can be viewed and edited in the panel to the right (Fig. 6).
+
+![view_7](./img/03-view/03_view_7.png)
+
+Fig. 7 ARCmanager, displaying the administrative worksheet of the isa.assay.xlsx file in the panel on the right. 
+
+The administrative page of of isa formatted .xlsx files, upon clicking on the file name, can be viewed and edited in the  panel to the right (Fig. 7). Ticking "alternative" will show the fields in list view.
+
+![view_7b](./img/03-view/03_view_7b.png)
+
+Fig. 8 ARCmanager with the button opening the righthand panel highlighted.
+
+If no readable file is selected, the button (Fig. 8) will display the list of changes (i.e. merge comments) of the ARC (Project) if this option is ticked.
+
+![view_8](./img/03-view/03_view_8.png)
+
+Fig. 9 ARCmanager, the return button (highlighted) will bring you back to the file and folder list of the ARC (Project).
 
 Fig. xxxx, the button xxx will open a panel on the right. If now i
 
