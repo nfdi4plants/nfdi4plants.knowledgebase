@@ -18,10 +18,8 @@ The ARCmanager is for viewing and manipulating ARCs.
 
 Once you are logged in, you have got several options for selecting which ARCs (Projects) to view (Fig. 1):
 </br>
-    <p float="center">
-        <img src="./img/03-img/003_view_1.png" width="400" align="center"  style="border: 2px solid  gray;"/>
-    </p>
-    </br>
+![view_1](./img/03-view/003_view_1.png)
+</br>
 
 1. By pressing the button "Load ARCS" you are offered a list of all ARCs (Projects) of the DataHUB you have got the rights to view. These are the ARCs (Projects) that are either public, public within the DataHub, or of which you are a member. ARCs (Projects) owned by you are highlighted in colour.
 
