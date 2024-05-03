@@ -20,6 +20,3 @@ The "File Export" function can be found in the <a href="./../img/Swate_a_overvie
 </p>
 
 You can follow the development in the [Swate GitHub repository](https://github.com/nfdi4plants/Swate/issues).
-
-
-

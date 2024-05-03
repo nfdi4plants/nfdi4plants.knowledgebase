@@ -50,8 +50,10 @@ You can find ontology term search fields on the *Building Blocks* and on the *On
 - Type in the search field to trigger the auto-complete function and find terms. Select the term you want. When using the ontology term search in the sidebar, click "Fill selected cells with this term" to add it to your table. When using the term search within your table, the term will automatically be added in the proper format once you select the term. 
 - Terms will be added to the selected rows in the format:
 
-        | term name | term source ontology | term id |
-       
+```
+| term name | term source ontology | term id |
+```  
+
 <br>
 
 ## Relationship-Directed Search 
