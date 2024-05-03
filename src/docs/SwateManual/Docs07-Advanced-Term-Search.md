@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Advanced Term Search
-date: 2022-09-21
+date: 2024-04-26
 author: 
 - name: Kevin Frey
   github: https://github.com/Freymaurer
@@ -20,7 +20,6 @@ When using the advanced term search there are four options to further define wha
 
 - **Term name keywords:** Uses Apache Lucene query parser syntax on the term names.
 - **Term definition keywords:** Uses Apache Lucene query parser syntax on the term definitions.
-- **Ontology** dropdown: Search for the above keywords in only one specific ontology.
 - **Keep obsolete terms:** To show obsolete terms in search results or not.
 
 ## Apache Lucene query parser syntax
