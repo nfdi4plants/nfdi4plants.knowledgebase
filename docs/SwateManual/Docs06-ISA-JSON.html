@@ -271,76 +271,38 @@
         <a href="/nfdi4plants.knowledgebase/docs/SwateManual/index.html">
           Swate Manual
         </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs02-Annotation-Table.html">
+          Annotation tables
+        </a>
         <nfdi-sidebar-eleneo slot="child">
-          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html">
-            Swate Installation
+          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs03-Building-Blocks.html">
+            Building blocks
           </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_browser.html">
-            Excel Browser
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_types.html">
+            Building Block Types
           </a>
-          <nfdi-sidebar-eleneo slot="child">
-            <a href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_desktop.html">
-              Excel Desktop
-            </a>
-            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_desktop-win-installer.html">
-              Windows &ndash; installer
-            </a>
-            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_desktop-win-manually.html">
-              Windows &ndash; manually
-            </a>
-            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_desktop-macos-manually.html">
-              macOS &ndash; manually
-            </a>
-            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_organization.html">
-              Organization-wide
-            </a>
-          </nfdi-sidebar-eleneo>
-        </nfdi-sidebar-eleneo>
-        <nfdi-sidebar-eleneo slot="child">
-          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs02-Annotation-Table.html">
-            Core Features
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs02-Annotation-Table.html">
-            Annotation tables
-          </a>
-          <nfdi-sidebar-eleneo slot="child">
-            <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs03-Building-Blocks.html">
-              Building blocks
-            </a>
-            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_types.html">
-              Building Block Types
-            </a>
-            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_add.html">
-              Adding a Building Block
-            </a>
-            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_units.html">
-              Using Units with Building Blocks
-            </a>
-          </nfdi-sidebar-eleneo>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs04-Ontology-Term-Search.html">
-            Filling cells with ontology terms
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs07-Advanced-Term-Search.html">
-            Advanced Term Search
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs05-Templates.html">
-            Templates
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Using-the-File-Picker.html">
-            File Picker
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_add.html">
+            Adding a Building Block
           </a>
         </nfdi-sidebar-eleneo>
-        <nfdi-sidebar-eleneo slot="child">
-          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs06-ISA-JSON.html">
-            Expert Features
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_template-contribution.html">
-            Contribute Templates
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs06-ISA-JSON.html">
-            ISA-JSON
-          </a>
-        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs04-Ontology-Term-Search.html">
+          Filling cells with ontology terms
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs07-Advanced-Term-Search.html">
+          Advanced Term Search
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Using-the-File-Picker.html">
+          File Picker
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs05-Templates.html">
+          Templates
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_template-contribution.html">
+          Contribute Templates
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs06-ISA-JSON.html">
+          ISA-JSON
+        </a>
       </nfdi-sidebar-eleneo>
       <nfdi-sidebar-eleneo slot="sidebar">
         <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/index.html">
@@ -582,38 +544,15 @@
         ISA-JSON import and export
       </h1>
       <i class="help">
-        last updated at 2022-09-19
+        last updated at 2024-04-30
       </i>
       <br>
-<p>It is possible to export and import your Swate annotation tables to ISA-JSON conform .json files.</p>
-<nfdi-h2 id="isa-json-and-isadotnet">ISA-JSON and ISADotNet</nfdi-h2>
-<p>We follow ISA-JSON <a href="https://isa-specs.readthedocs.io/en/latest/isajson.html#schemas">schemas</a>. To ensure correct Swate import we need to add additional information to the json files.</p>
-<p>For example:</p>
-<ul>
-<li>Add comments to remember column position.</li>
-</ul>
-<nfdi-code class="language-json">"comments": [
-    {
-        "name": "ValueIndex",
-        "value": "0"
-    }
-]
-</nfdi-code>
-<ul>
-<li>Add the term accession to the name to store the unique identifier of ontology terms.</li>
-</ul>
-<nfdi-code class="language-json">"componentName": "LECO instrument model (MS:1001800)",
-</nfdi-code>
-<nfdi-h2 id="export">Export</nfdi-h2>
-<p>This is done via the Swate.Experts interface under the <em>Json Exporter</em> tab.
-You can choose multiple option to export your Swate tables:</p>
-<ul>
-<li>Export the active table or all annotation tables in the workbook.</li>
-<li>Export as <a href="https://isa-specs.readthedocs.io/en/latest/isajson.html#assay-schema-json">assay.json</a> or <a href="https://isa-specs.readthedocs.io/en/latest/isajson.html#process-schema-json">sequence of process.json</a>.</li>
-</ul>
-<nfdi-h2 id="import">Import</nfdi-h2>
-<p>You can import all files created by the Swate export function by using the Swate.Core &quot;Add template(s) from file&quot; option under the &quot;Templates&quot; tab.</p>
-<p>The app will try to fit the imported json to any supported information and directly insert all tables into the excel workbook.</p>
+<p>🚧 The function to export your Swate annotation tables to ISA-JSON conform .json files and to import .json files is currently under development. 🚧
+The &quot;File Export&quot; function can be found in the <a href="./../img/Swate_a_overview2.png" target="_blank">Sidebar</a>.</p>
+<p style="justify-content: center; display: flex">
+<img src="./../img/Swate_a_FileExport.PNG" style="height: 300px"  />
+</p>
+<p>You can follow the development in the <a href="https://github.com/nfdi4plants/Swate/issues">Swate GitHub repository</a>.</p>
 
       <h3>
         DataPLANT Support

@@ -271,76 +271,38 @@
         <a href="/nfdi4plants.knowledgebase/docs/SwateManual/index.html">
           Swate Manual
         </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs02-Annotation-Table.html">
+          Annotation tables
+        </a>
         <nfdi-sidebar-eleneo slot="child">
-          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs01-Installing-Swate.html">
-            Swate Installation
+          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs03-Building-Blocks.html">
+            Building blocks
           </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_browser.html">
-            Excel Browser
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_types.html">
+            Building Block Types
           </a>
-          <nfdi-sidebar-eleneo slot="child">
-            <a href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_desktop.html">
-              Excel Desktop
-            </a>
-            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_desktop-win-installer.html">
-              Windows &ndash; installer
-            </a>
-            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_desktop-win-manually.html">
-              Windows &ndash; manually
-            </a>
-            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_desktop-macos-manually.html">
-              macOS &ndash; manually
-            </a>
-            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_installation_organization.html">
-              Organization-wide
-            </a>
-          </nfdi-sidebar-eleneo>
-        </nfdi-sidebar-eleneo>
-        <nfdi-sidebar-eleneo slot="child">
-          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs02-Annotation-Table.html">
-            Core Features
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs02-Annotation-Table.html">
-            Annotation tables
-          </a>
-          <nfdi-sidebar-eleneo slot="child">
-            <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs03-Building-Blocks.html">
-              Building blocks
-            </a>
-            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_types.html">
-              Building Block Types
-            </a>
-            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_add.html">
-              Adding a Building Block
-            </a>
-            <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_units.html">
-              Using Units with Building Blocks
-            </a>
-          </nfdi-sidebar-eleneo>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs04-Ontology-Term-Search.html">
-            Filling cells with ontology terms
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs07-Advanced-Term-Search.html">
-            Advanced Term Search
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs05-Templates.html">
-            Templates
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Using-the-File-Picker.html">
-            File Picker
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_add.html">
+            Adding a Building Block
           </a>
         </nfdi-sidebar-eleneo>
-        <nfdi-sidebar-eleneo slot="child">
-          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs06-ISA-JSON.html">
-            Expert Features
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_template-contribution.html">
-            Contribute Templates
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs06-ISA-JSON.html">
-            ISA-JSON
-          </a>
-        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs04-Ontology-Term-Search.html">
+          Filling cells with ontology terms
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs07-Advanced-Term-Search.html">
+          Advanced Term Search
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Using-the-File-Picker.html">
+          File Picker
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs05-Templates.html">
+          Templates
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_template-contribution.html">
+          Contribute Templates
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs06-ISA-JSON.html">
+          ISA-JSON
+        </a>
       </nfdi-sidebar-eleneo>
       <nfdi-sidebar-eleneo slot="sidebar">
         <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/index.html">
@@ -582,30 +544,26 @@
         Annotation Table
       </h1>
       <i class="help">
-        last updated at 2022-09-19
+        last updated at 2024-04-25
       </i>
-      <ul>
-<li><a href="#creating-an-annotation-table">Creating an Annotation Table</a></li>
-<li><a href="#definition">Definition</a></li>
-</ul>
-<nfdi-h2 id="creating-an-annotation-table">Creating an Annotation Table</nfdi-h2>
+      <nfdi-h2 id="before-we-can-start">Before we can start</nfdi-h2>
+<p>💡 Consider reading about <a href="./../implementation/Swate.html">Swate</a></p>
+<nfdi-h2 id="open-or-create-an-assay-or-study-file">Open or create an assay or study file</nfdi-h2>
 <ul>
-<li>Use the <em>create annotation table</em> button in the yellow pop-up box.
+<li>To create an annotation table file with the <a href="https://swate-alpha.nfdi4plants.org/">Swate standalone</a> in your browser, click &quot;New File&quot; and select which kind of file (investigation, study, assay) you want to create. If you already created a isa.study.xlsx or isa.assay.xlsx file, you can select &quot;Import File&quot; to modify and add to it.</li>
+</ul>
+<img src="./../img/Swate_a_NewFile.PNG" style="height: 250px">
+<br>
 <ul>
-<li>This only appears if you start Swate on a Excel worksheet without an existing annotation table.</li>
+<li>In the &quot;Metadata&quot; sheet, you can fill in general metadata about your investigation, study or assay.</li>
 </ul>
-</li>
-<li>Click on the <a href="./../img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a> <em>Create Annotation Table</em>.
+<nfdi-h2 id="add-an-annotation-table">Add an annotation table</nfdi-h2>
 <ul>
-<li>👀 You can hold <kbd>Ctrl</kbd> and click on <em>Create Annotation Table</em> to automatically transfer all <strong>output</strong> values from any existing annotation table in the worksheet <strong>before the active one</strong> into the to-be-created-annotation table.</li>
+<li>In the &quot;New Table&quot; sheet, you can create your annotation table by adding <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs03-Building-Blocks.html">building blocks</a>. Your annotation table should consist of an <em>Input</em>, multiple descriptive building blocks (<em>Characteristics, Parameters, Components</em>) and an <em>Output</em>.</li>
+<li>To create an annotation table within ARCitect, add a new table to your assay or study by clicking the plus (+) symbol next to your metadata sheet. Here, you can build your annotation table by adding <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs03-Building-Blocks.html">building blocks</a> the same way as in the Swate standalone.</li>
 </ul>
-</li>
-</ul>
-<p style="display: flex; justify-content: center">
-<img src="./../img/Swate-CreateAnnotationTable-Exp.jpg?v28.01.202" style="height: 300px">
-</p>
-<nfdi-h2 id="definition">Definition</nfdi-h2>
-<p>Swate handles any Excel table, with a name starting with <code>annotationTable</code>, as an Swate annotation table. Currently, we use a small random name generator to extend that name to keep it unique. So you might find some funny names such as <code>annotationTableSpicyWalrus61</code> or <code>annotationTableQuickMoth47</code>.</p>
+<img src="./../img/Swate_a_Arcitect_newTable.png" style="height: 400px">
+<br>
 
       <h3>
         DataPLANT Support
