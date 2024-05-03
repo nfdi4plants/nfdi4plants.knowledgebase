@@ -67,12 +67,12 @@ After successful login, you see the former lilac Login button change to a pink L
 Fig. 6 Welcome screen after login. The presence of the pink Logout button (arrow) is a useful indicator for showing that you are logged in.
 
 
+### Searching for and in ARCs
 
-Once you are logged in, the green "Load ARCS" button (Fig. 6, 1) gives you a list of all projects (ARCs or other GitLab projects) of the DataHUB that are visible to you, with the projects in your namespace highlighted in yellow. 
+![login_5](./img/02-login/01_login_5.png)
+Fig. 7 Searching for published ARCs.
 
-Ticking "Your Arcs" (Fig. 6, 2) will return only the projects/ARCs from your own namespace.
-
-The search window (Fig. 6, 3) allows you to search for expressions in project/ARC names.
+Without logging onto any DataHub, the ARC search button (Fig. 1) provides a list of published ARCs that can be searched using the ISA Metadata Search via the [ARC Metadata Registry](https://arc-metadata-registry.readthedocs.io/en/latest/), a service under construction.
 
 
 
