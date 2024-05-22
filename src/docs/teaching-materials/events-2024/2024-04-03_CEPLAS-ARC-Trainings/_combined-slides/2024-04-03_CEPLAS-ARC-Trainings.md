@@ -4,7 +4,7 @@ layout: slides
 theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 title: 2024-04-03_CEPLAS-ARC-Trainings
-date: 2024-04-24
+date: 2024-05-22
 ---
 
 
@@ -22,10 +22,10 @@ TODO before final
 
 <br>
 
-April, 2024
+May, 2024
 
 Dominik Brilhaus (CEPLAS)
-Dan Wang, Eik Dahms (TRR341)
+Stella Eggels (DataPLANT)
 
 ![bg fit](./../../../../img/background_title_ceplas.drawio.svg)
 
