@@ -24,10 +24,10 @@ TODO before final
 
 <br>
 
-April, 2024
+May, 2024
 
 Dominik Brilhaus (CEPLAS)
-Dan Wang, Eik Dahms (TRR341)
+Stella Eggels (DataPLANT)
 
 ![bg fit](./../../../img/background_title_ceplas.drawio.svg)
 
