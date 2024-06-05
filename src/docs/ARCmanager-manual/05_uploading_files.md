@@ -3,8 +3,8 @@ layout: docs
 title: Uploading files
 author:
   - name: Hamed Jalali
-    github: 
-    orcid: 
+    github: https://github.com/hamedjalali1982
+    orcid: https://orcid.org/0000-0002-1190-5652
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
 status: published
@@ -17,11 +17,11 @@ According to the  [ISA Metadata Model](https://www.nfdi4plants.de/nfdi4plants.kn
 1. In the `studies` folder, click on the `ADD` button to create a study. Then, follow the same procedure in the `assays` folder.
    </br>
     <p float="center">
-        <img src="./img/add_study.png" width="500" style="border: 2px solid  gray;" /> 
+        <img src="./img/05_uploading_files/add_study.png" width="500" style="border: 2px solid  gray;" /> 
     </p>
 
       <p float="center">
-        <img src="./img/add_assay.png" width="500" style="border: 2px solid  gray;" />
+        <img src="./img/05_uploading_files/add_assay.png" width="500" style="border: 2px solid  gray;" />
     </p> </br>
 
 2. Now according to the ISA model, the investigation, studies, and assays should be linked to each other, studies to investigation and assays to studies. The **SYNC** functions perform these tasks. 
@@ -29,26 +29,26 @@ According to the  [ISA Metadata Model](https://www.nfdi4plants.de/nfdi4plants.kn
     In the project folder, click on `SYNC STUDY/INVEST` and choose the study created before.  Then click on `SYNC ASSAY/STUDY` and link the relevant studies and assays.  
 
     <p float="center">
-        <img src="./img/sync_study.png" width="500" style="border: 2px solid  gray;"  /> 
+        <img src="./img/05_uploading_files/sync_study.png" width="500" style="border: 2px solid  gray;"  /> 
     </p>
 
     <p float="center">
-    <img src="./img/sync_assay.png" width="500" style="border: 2px solid  gray;"/>
+    <img src="./img/05_uploading_files/sync_assay.png" width="500" style="border: 2px solid  gray;"/>
     </p>
 
 3. Assume we need to add some raw data in the assay folder. Then, in the relevant assay, go to the `dataset` folder and use the `UPLOAD File(s)` button. Then, in the local system, select the data files.
 
     <p float="center">
-        <img src="./img/upload_command.png" width="500" style="border: 2px solid  gray;" /> 
+        <img src="./img/05_uploading_files/upload_command.png" width="500" style="border: 2px solid  gray;" /> 
     </p>
     <p float="center">
-        <img src="./img/upload_data.png" width="500" style="border: 2px solid  gray;"/>
+        <img src="./img/05_uploading_files/upload_data.png" width="500" style="border: 2px solid  gray;"/>
     </p>
 
-If the size of the data files is large (>100Mb), the  large file system package in Git is needed. To use this function for an upload, check the  `LFS` option:
+    If the size of the data files is large (>100Mb), the  large file system package in Git is needed. To use this function for an upload, check the  `LFS` option:
 
-<p float="center">
-        <img src="./img/lfs.png" width="500" style="border: 2px solid  gray;" />
+    <p float="center">
+        <img src="./img/05_uploading_files/lfs.png" width="500" style="border: 2px solid  gray;" />
     </p>
 
 

@@ -21,7 +21,7 @@ A typical ISA file has the administrative metadata recorded in the first sheet o
 
 When you left-click on an ISA file, the right side will open up and show the administrative metadata:
 
-![admin-invest](./img/6-metadata/admin-meta.png)
+![admin-invest](./img/06_adding_metadata/admin-meta.png)
 
 The metadata is separated into three parts:
 
@@ -29,10 +29,10 @@ The metadata is separated into three parts:
 2. Publications
 3. Contact details
 
-The **main information** part contains mandatory data like the title, identifier and description of the respective ISA file.\
+The **main information** part contains mandatory data like the title, identifier and description of the respective fields ISA file.\
 In isa.assay.xlsx files, it contains information about measurement types and technology types, instead:
 
-<img src="./img/6-metadata/assay-meta.png" />
+<img src="./img/06_adding_metadata/assay-meta.png" />
 
 The **publication** part contains information about DOIs, publication titles, authors, etc. of publications that are associated with the experimental data stored inside the study/investigation.
 
@@ -48,7 +48,7 @@ When you are done with your changes, just click the `SAVE` button on the bottom 
 
 To edit any not field not listed in the main view, you can click the checkmark on the top right named "alternative" to open up a different view of the data stored inside.
 
-<img src="./img/6-metadata/admin-alt.png" width="400" style="float: left;margin-right: 7px; margin-bottom:5px" />
+<img src="./img/06_adding_metadata/admin-alt.png" width="400" style="float: left;margin-right: 7px; margin-bottom:5px" />
 
 Here you have every row listed similar to excel. With this view you are able to edit rows like "Comment[ORCID]".\
 To edit the row simply click on it.
@@ -58,7 +58,7 @@ For every column inside of the isa file there will be an input field. So if you,
 You can extend these by pressing the "+" button which in return will add a new column to the isa file.\
 When you are done filling out the data, again simply press the "save" button below to save your data.
 
-<img src="./img/6-metadata/alt-edit.png" style="margin-right: 7px; margin-bottom:5px" />
+<img src="./img/06_adding_metadata/alt-edit.png" style="margin-right: 7px; margin-bottom:5px" />
 
 Every time you press "save" the data will be written into the excel file and afterwards be uploaded to your ARC inside the DataHUB.
 
@@ -67,12 +67,12 @@ Every time you press "save" the data will be written into the excel file and aft
 When you want to edit/create experimental metadata, you need to go into either an assay or a study folder.
 Inside you have your ISA file as usual, but with the additional fields called "ADD SHEET" and "EDIT SHEET".
 
-![exp-select](./img/6-metadata/exp-select.png)
+![exp-select](./img/06_adding_metadata/exp-select.png)
 
 If you already have some annotation sheets in your study/assay you can click "EDIT SHEET" and select the sheet from the list on the right side.\
 Otherwise you need to click "ADD SHEET". This will open up a list of templates on the right side.
 
-<img src="./img/6-metadata/exp-template.png" width="300" style="float: left;margin-right: 7px;" />
+<img src="./img/06_adding_metadata/exp-template.png" width="300" style="float: left;margin-right: 7px;" />
 
 Here you can select any desired template. Use the search bar on top to find any template you are looking for.\
 If you want to start from scratch select the "Empty Template", the first entry in the list.\
@@ -84,7 +84,7 @@ If you found your desired template, press the "IMPORT" button after expand it (s
 
 After importing the template you will see a table similar to the picture below.
 
-<img src="./img/6-metadata/exp-swate-view.png" style="margin-right: 7px; margin-top:5px" />
+<img src="./img/06_adding_metadata/exp-swate-view.png" style="margin-right: 7px; margin-top:5px" />
 
 In this case it's the template "RNA extraction (DataPLANT) 1.2.0", extended to eight rows.\
 The following will explain the different interfaces:
@@ -99,14 +99,14 @@ The following will explain the different interfaces:
 <li>Extend the table: This button simply adds a new row to table.</li>
 </ol>
 
-<img src="./img/6-metadata/exp-term-srch.png" width="500px" style="float: left;margin-right: 7px; margin-top:5px" />
+<img src="./img/06_adding_metadata/exp-term-srch.png" width="500px" style="float: left;margin-right: 7px; margin-top:5px" />
 When clicking the search term button mentioned with "#1" you can start searching for specific terms.
 
 In this case we are searching for a "library strategy". (from the template "RNASeq Assay (DataPLANT) 1.2.0")
 
 When you press the button "GET SUGGESTIONS" (#2) you will get a list of terms on the right side filled with fitting terms.
 
-<img src="./img/6-metadata/exp-term-selct.png" width="500px" style="float: left;margin-right: 7px; margin-top:5px" />
+<img src="./img/06_adding_metadata/exp-term-selct.png" width="500px" style="float: left;margin-right: 7px; margin-top:5px" />
 
 You can import a term by clicking on it and pressing the "INSERT" button, similar to how it is done with the list of templates.
 
@@ -115,7 +115,7 @@ This will search for every fitting term with that given name. (Or for any type o
 
 Per default the term will be inserted into row number 1 of the corresponding column. But if you want to add the term to another row you need to select the row first from the selector. Afterwards when you press the "INSERT" button from the terms list, the term will be added to the selected row.
 
-<img src="./img/6-metadata/exp-term-insrtd.png" width="500px" style="float: left;margin-right: 7px; margin-top:5px" />
+<img src="./img/06_adding_metadata/exp-term-insrtd.png" width="500px" style="float: left;margin-right: 7px; margin-top:5px" />
 
 When you uncheck the "Hide Terms" box you can also see, that the term columns are filled out properly after inserting the term.
 
@@ -126,7 +126,7 @@ The first column of the table is always the "input" column. In the squared brack
 Same goes for the output column. The output is always at the end of the table and has the placeholder "Sample name", indicating a general sample. \
 You can read more about this in the [ARC-specification](https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md#inputs-and-outputs).
 
-<img src="./img/6-metadata/exp-bb-add.png" width="500px" style="float: left;margin-right: 7px; margin-top:5px" />
+<img src="./img/06_adding_metadata/exp-bb-add.png" width="500px" style="float: left;margin-right: 7px; margin-top:5px" />
 
 When you press the "Building Block" button mentioned before, a new input view will open up.\
 It includes a selector for you to select the fitting type, like "Parameter" or "Characteristic". (#1)\

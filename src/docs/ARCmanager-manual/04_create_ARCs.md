@@ -1,10 +1,10 @@
 ---
 layout: docs
-title: Uploading files
+title: Create ARCs
 author:
   - name: Hamed Jalali
-    github: 
-    orcid: 
+    github: https://github.com/hamedjalali1982
+    orcid: https://orcid.org/0000-0002-1190-5652
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
 status: published
@@ -17,12 +17,12 @@ To create a new ARC in ARCmanager, you can follow the below steps:
 
 1. On the left side of the homepage, click on the `New ARC` button:
     <p float="center">
-        <img src="./img/New_ARC.png" width="300" align="center" style="border: 2px solid  gray;"/>
+        <img src="./img/04_create_ARCs/New_ARC.png" width="300" align="center" style="border: 2px solid  gray;"/>
     </p>
     </br>
 2. In the new page, there are some fields that should be filled out:
      <p float="center">
-        <img src="./img/ARC_Create.png" width="400" align="center" style="border: 2px solid  gray;" />
+        <img src="./img/04_create_ARCs/ARC_Create.png" width="400" align="center" style="border: 2px solid  gray;" />
     </p>
 
 - `Name of the ARC`: A name for your project in the DataHUB
@@ -34,7 +34,7 @@ To create a new ARC in ARCmanager, you can follow the below steps:
 3. After submitting the form, you can see the new ARC when selecting `Your ARCs` in the List ARCs window.
     </br>
     <p float="center">
-        <img src="./img/Created_ARC.png" width="400" align="center" style="border: 2px solid  gray;" />
+        <img src="./img/04_create_ARCs/Created_ARC.png" width="400" align="center" style="border: 2px solid  gray;" />
     </p>
     </br>
     Click on the created project to explore it.
@@ -43,25 +43,25 @@ To create a new ARC in ARCmanager, you can follow the below steps:
 
     </br>
     <p float="center">
-        <img src="./img/ARC_explore.png" width="500" align="center"  style="border: 2px solid  gray;"/>
+        <img src="./img/04_create_ARCs/ARC_explore.png" width="500" align="center"  style="border: 2px solid  gray;"/>
     </p>
     </br>
 
 5.  To add/remove/edit members in the project, use the `MEMBERS` tab: 
     <p float="center">
-        <img src="./img/members.png" width="400" align="center" style="border: 2px solid  gray;"/>
+        <img src="./img/04_create_ARCs/members.png" width="400" align="center" style="border: 2px solid  gray;"/>
     </p>
     </br>
     For instance, new users and their roles can be added in `Add User` option:  
     <p float="center">
-        <img src="./img/add_user.png" width="300" align="center" style="border: 2px solid  gray;"/>
+        <img src="./img/04_create_ARCs/add_user.png" width="300" align="center" style="border: 2px solid  gray;"/>
     </p>
     </br>
 
 6. By clicking on the `OPEN` button at the top of the page, you can open the new ARC directly in the respective DataHUB:
     </br>
     <p float="center">
-        <img src="./img/gitlab.png" width="600" align="center" style="border: 2px solid  gray;"/>
+        <img src="./img/04_create_ARCs/gitlab.png" width="600" align="center" style="border: 2px solid  gray;"/>
     </p>
     </br>
 
