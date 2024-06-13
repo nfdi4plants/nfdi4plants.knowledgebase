@@ -23,29 +23,6 @@ author:
 
 ---
 
-# ARC builds on standards
-
-<div class="two-columns">
-  <div>
-  
-  ![w:500](./../../../img/ARC_BuildsOnStandards3.png)
-  
-  </div>
-  <div>
-  
-  - RO-Crate: standardized exchange
-  - ISA: structured, machine-readable metadata
-  - CWL: reproducible, re-usable data analysis
-  - Git: version control
-  
-  </div>
-</div>
-
-<span class="footer-reference">https://isa-tools.org/ | https://www.commonwl.org/
-https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
-
----
-
 # The DataPLANT DataHUB &ndash; a GitLab ***Plus***
 
 ![](./../../../img/DataHUB-GitLab.drawio.png)

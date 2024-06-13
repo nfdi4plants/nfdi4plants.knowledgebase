@@ -55,10 +55,12 @@ arc init
 
 ### ISA investigation
 
-The ISA investigation (`-i`) workbook allows you to record administrative metadata of your project. Add the isa.investigation.xlsx workbook including an identifier to your ARC with
+The ISA investigation (`-i`) workbook allows you to record administrative metadata of your project.
+The isa.investigation.xlsx workbook including an identifier to your ARC has been added to the project during initialization.
+You can update the identifier of your ARC with
 
 ```bash
-arc investigation create -i QuickStartInvestigation
+arc investigation update -i QuickStartInvestigation
 ```
 > :bulb: Avoid using spaces in the identifier. Use underscores and capital letters instead.
 

@@ -1,46 +1,47 @@
 ---
 layout: docs
 title: Swate
-date: 2022-08-1
+date: 2024-04-17
 author:
 - name: Martin Kuhl
   github: https://github.com/Martin-Kuhl
   orcid: https://orcid.org/0000-0002-8493-1077
+- name: Stella Eggels
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
 status: published
 ---
 
-Swate (Swate workflow annotation tool for Excel) is one of two central DataPLANT tools designed for convenient interaction with your [ARC][kb-AnnotatedResearchContext] (the other one being the [ARC Commander][kb-ArcCommander]).
-Swate simplifies adding standardized metadata for your experimental workflows by leveraging a simple use of ontologies. <!-- link to ontology --> 
-
+Swate (Swate workflow annotation tool for Excel) is one of three central DataPLANT tools designed for convenient interaction with your [ARC][kb-AnnotatedResearchContext] (the other ones being [ARCitect](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html) and [ARC Commander][kb-ArcCommander]). Swate simplifies adding standardized metadata for your experimental workflows by leveraging a simple use of [ontologies](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/fundamentals/Ontologies.html). Swate is integrated into ARCitect and will automatically be used when adding metadata to your studies and assays from within ARCitect, but it can also be used as a [standalone tool](https://swate-alpha.nfdi4plants.org/) in your browser.
 
 ## Swate for ontology driven metadata annotation
 A key factor in the development of research data management tools is finding the balance between standardization and the requirements of researchers for annotating their experimental workflows. The spreadsheet-based version of the well-established ISA framework allows for ontology-driven metadata annotation of these workflows in a simple and accessible way. However, finding the appropriate ontology term can be extremely tedious and often results in incomplete metadata annotation. To overcome this hurdle, DataPLANT offers SWATE to facilitate the generation of ISA-Tab annotation tables with an integrated search function and an ontology guided metadata annotation. 
 
-Fully integrated in Microsoft Excel (Excel online, Excel 365, and Excel 2019), Swate leverages standard spreadsheet features, such as color coding or highlighting (increasing user experience and acceptance) without polluting the actual metadata information. Users can add and delete building blocks to their ISA compliant annotation tables, describing the data in a clear representation. These building blocks can either represent a 
-- `Source Name` (input, one per table), 
+Users can add and delete building blocks to their ISA compliant annotation tables, describing the data in a clear representation. These building blocks can either represent a 
+- `Input Column` (Source Name/Sample Name/Material/Raw Data File/Derived Data File/Image File, one per table), 
 - `Characteristic`, 
 - `Parameter`, 
 - `Factor`, 
 - `Component`, 
 - `Protocol Column` (Protocol REF/Protocol Type), or an
-- `Output Column` (Sample Name/Raw Data File//Derived Data File, one per table).  
+- `Output Column` (Sample Name/Material/Raw Data File/Derived Data File/Image File, one per table).  
 
-Combination of ISA (Characteristic, Parameter, Factor, Component) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on within your annotation table (Parameter [temperature] or Factor [temperature]). For more information on these building blocks, please check our [annotation principles](https://nfdi4plants.github.io/AnnotationPrinciples/). 
+Combination of ISA terms (Characteristic, Parameter, Factor, Component) and biological or technological ontology terms (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on within your annotation table (Parameter [temperature] or Factor [temperature]). For more information on these building blocks, please check our [annotation principles](https://nfdi4plants.github.io/AnnotationPrinciples/). 
 
 
-![Building Blocks](./../img/Swate_BuildingBlocks.jpg)
+![Building Blocks](./../img/Swate_a_buildingblockcategories.PNG)
 
-Ontology terms within the Swate database can not only be used to standardize the headers of your annotation table, but also for standardization of the respective values. When filling in metadata via the "related term directed search", Swate will suggest matching metadata terms for the respective building block within the database. Of course, users are not forced to use this feature in case they opt for more flexibility.
+Ontology terms within the Swate database can not only be used to standardize the headers of your annotation table, but also for standardization of the respective values. When filling in metadata via the "ontology term search", which can be activated by clicking the magnifying glass symbol, Swate will suggest matching metadata terms for the respective building block. Of course, users are not forced to use this feature in case they opt for more flexibility.
 
-![TermRelatedSearch](./../img/Swate_TermRelatedSearch.jpg)
+<img src="./../img/Swate_a_addCharacteristic.png" style="height: 200px">
+</br>
 
 ## Templates for convenient metadata annotation
-Metadata annotation as part of the data submission routine to public repositories is often bothersome due to a high variability between repository requirements. This can become particularly inconvenient when the same metadata is submitted repeatedly, e.g. to unrelated public repositories. To assist researchers in this process, DataPLANT provides a growing collection of templates as a starting point for their annotation tables. The template design process is initiated “backwards”, starting from the requirements of public repositories and thereby, compliance with metadata standards. Our Data stewards supervise the metadata harmonization between template and target repository and simultaneously contribute to the development of the DataPLANT broker ontology <!-- linkt to DPBO-->.  
-From a technical perspective, these templates are ISA Protocols containing various Characteristics, Parameters, and the Study specific Factor. DataPLANT provides checklists and requirements of public repositories as templates that are considered useful for various technologies and common standards, e.g. MIAPPE or MINSEQE. The templates can directly be integrated to the isa.study.xlsx and isa.assay.xlsx files using Swate. Once loaded into the table, they still can be modified to special needs in the sense of adding or deleting annotation building blocks. The modularity of the system also gives labs and institutions the possibility to create their own lab specific templates for experiments that are frequently run in the lab, e.g. a metabolomics experiment of a measurement facility. High flexibility is fostered by offering a manual or Swate-supported template customization, distribution, and use.
+Metadata annotation as part of the data submission routine to public repositories is often bothersome due to a high variability between repository requirements. This can become particularly inconvenient when the same metadata is submitted repeatedly, e.g. to unrelated public repositories. To assist researchers in this process, DataPLANT provides a growing collection of templates as a starting point for their annotation tables. The template design process is initiated “backwards”, starting from the requirements of public repositories and thereby, compliance with metadata standards. Our Data stewards supervise the metadata harmonization between template and target repository and simultaneously contribute to the development of the DataPLANT biology ontology [(DPBO)](https://github.com/nfdi4plants/nfdi4plants_ontology).  
+From a technical perspective, these templates are ISA Protocols containing various Characteristics, Parameters, and the Study specific Factor. DataPLANT provides checklists and requirements of public repositories as templates that are considered useful for various technologies and common standards, e.g. MIAPPE. The templates can directly be integrated to the isa.study.xlsx and isa.assay.xlsx files using Swate. Once loaded into the table, they still can be modified to special needs in the sense of adding or deleting annotation building blocks. The modularity of the system also gives labs and institutions the possibility to create their own lab specific templates for experiments that are frequently run in the lab, e.g. a metabolomics experiment of a measurement facility. High flexibility is fostered by offering a manual or Swate-supported template customization, distribution, and use.
 
-![SwateTemplates](./../img/Swate_Templates.jpg)
+<img src="./../img/swate_a_templates.png" style="height: 300px">
+</br>
 
 ## There is no wrong or right
 Neither does DataPLANT tell you which building blocks or terms you should use for your data annotation, nor do we enforce the usage of our templates. These shall only serve as a starting point for your annotation table and CAN assist you during data submission to specific endpoint repositories.

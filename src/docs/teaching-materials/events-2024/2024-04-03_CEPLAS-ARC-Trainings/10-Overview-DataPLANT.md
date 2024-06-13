@@ -106,19 +106,6 @@ object-position: 100% 80%;
 
 ---
 
-# Publish your ARC with a few clicks
-
-![w:900px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/cqc-results.png)
-
----
-
-
-# Receive a DOI
-
-![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/doi-accession.png)
-
----
-
 # Metadata templates
 
 ![w:700](./../../../img/Swate_metadataTemplates.png)
@@ -288,175 +275,30 @@ DataPLANT employs a **data-centric** approach to RDM
 
 # ARC builds on standards
 
-![w:600](./../../../img/ARC_BuildsOnStandards3.png)
+<div class="two-columns">
+  <div>
+  
+  ![w:500](./../../../img/ARC_BuildsOnStandards3.png)
+  
+  </div>
+  <div>
+  
+  - RO-Crate: standardized exchange
+  - ISA: structured, machine-readable metadata
+  - CWL: reproducible, re-usable data analysis
+  - Git: version control
+  
+  </div>
+</div>
 
 <span class="footer-reference">https://isa-tools.org/ | https://www.commonwl.org/
 https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
+<!-- 
 ---
 
 # The DataPLANT DataHUB &ndash; a GitLab ***Plus***
 
-![](./../../../img/DataHUB-GitLab.drawio.png)
+![](./../../../img/DataHUB-GitLab.drawio.png) 
 
----
- 
-# ARC builds on ISA
-
-![w:900](./../../../img/ISAmodel_ARC01_img01.svg)
-
-<span class="footer-reference">ISA Tools: https://isa-tools.org/format/specification.html</span>
-
----
-
-# ARC builds on ISA to connect data
-
-![w:1000](./../../../img/ISAmodel_ARC01_img02.svg)
-
----
-
-# ARC builds on ISA to link data
-
-<div class="two-columns">
-
-  <div>
-
-  - Samples are linked study-to-assay, assay-to-assay
-  - Raw data is linked to assays
-  - Protocols can be referenced
-  - ...
-
-  </div>
-
-  <div>
-  
-  ![w:800](./../../../img/ISAmodel_ARC01_img02.svg)
-  
-  </div>
-</div>
-
-
-
----
-
-# Swate
-
-**S**wate **w**orkflow **a**nnotation **t**ool for (**E**xcel / **e**veryone)
-
-https://github.com/nfdi4plants/Swate
-
----
-
-# Annotation by flattening the knowledge graph
-
-![w:800](./../../../img/Swate_ParentChildTerm.svg)
-
-- Low-friction metadata annotation
-- Familiar spreadsheet, row/column-based environment
-
----
-
-# Annotation principle
-
-![w:650](./../../../img/Swate_ParentChildTerm2.svg)
-
-- Low-friction metadata annotation
-- Familiar spreadsheet, row/column-based environment
-
----
-
-# Adding new building blocks
-
-![w:1000](./../../../img/Swate_a_newBuildingBlocks.png)
-
-Swate can be used for the annotation of **isa.study.xlsx and isa.assay.xlsx** files
-
----
-
-# Annotation Building Block types
-
-<div class="two-columns" style="font-size: 25px">
-  
-  <div>
-  
-- Input (e.g. Source Name, Sample Name)
-- Protocol columns
-- Characteristic // Parameter // Factor
-- Output (e.g. Sample Name, Raw Data File, Derived Data File)
-
-</div>
-  
-  <div>
-  
-  ![w:600px](./../../../img/Swate_a_Overview.png)
-    
-  </div>
-</div>
-
-
-Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/units/AnnotationPrinciples/isa_AnnotationPrinciples-slides.html)
-
----
-
-# Ontology term search
-
-<style scoped>
-h1{
-  text-align: left
-}
-section {
-  text-align: center;
-}
-</style>
-
-![w:750](./../../../img/Swate_a_OntologyTermSearch.png)
-
-Enable **related term directed search** to directly fill cells with child terms
-
----
-
-# Fill your table with ontology terms
-
-![w:800](./../../../img/Swate_a_OntologyTermSearch2.png)
-
----
-
-# Hierarchical combination of ontologies
-
-![w:800](./../../../img/Swate_OntologyCombination.svg)
-
-<!-- combination of ISA (Characteristics, Parameter, Factor) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter \[temperature\] or Factor \[temperature\]). -->
-
----
-
-# Checklists and Templates
-
-![w:800px](./../../../img/swate_TemplatesChecklists.svg)
-
-Metadata standards or repository requirements can be represented as templates
-
----
-
-# Realization of lab-specific metadata templates
-
-![w:650px](./../../../img/SWATE_metadataTemplates.png)
-
-Facilities can define their most common workflows as templates
-
-<style scoped>
-h1{
-  text-align: left
-}
-section {
-  text-align: center;
-}
-</style>
-
----
-
-# Directly import templates via Swate
-
-- DataPLANT curated
-- Community templates
-
-![bg right w:450](./../../../img/Swate_a_templates.png)
+-->
