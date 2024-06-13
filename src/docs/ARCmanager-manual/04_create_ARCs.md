@@ -8,7 +8,7 @@ author:
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
 status: published
-date: 
+date: 2024-06-13
 ---
 
 ## Create ARCs in ARCmanager

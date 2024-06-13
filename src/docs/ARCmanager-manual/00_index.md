@@ -24,8 +24,6 @@ For further details, please visit our sub pages:
 
 The ARCmanager is a web service that allows DataPLANT users to create and modify ARCs in a web browser environment. Edits done with the ARCmanager will be directly applied to the copy of your ARC on the respective DataHUB.
 
-The primary purpose of the ARCmanager is to create new ARCs and edit existing ones. A particular focus is on the administrative metadata associated with ARCs, but we are currently exploring solutions to provide the function to upload large experimental datasets as well.
-
 -----------------------
 
 :bulb: IMPORTANT NOTE
