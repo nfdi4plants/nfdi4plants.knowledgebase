@@ -13,12 +13,16 @@ date: 2024-01-08
 
 Welcome to the ARCmanager manual!
 
-Here, you can find detailed information about the ARCmanager web service.
+Here, you can find detailed information about using the ARCmanager web service.
 
-For further details, please visit our sub pages:
+Contents:
 
-1. [What is the ARCmanager?](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCmanager-manual/intro.html)
-2. [How to use the ARCmanager](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCmanager-manual/how_to.html)
+1. [What is the ARCmanager?](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCmanager-manual/01_intro.html)
+2. [Connect to your DataHUB](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCmanager-manual/02_login.html)
+3. [View ARCs](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCmanager-manual/03_view_ARCs.html)
+4. [Create new ARCs](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCmanager-manual/04_create_ARCs.html)
+5. [Upload files](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCmanager-manual/05_uploading_files.html)
+6. [Add metadata to your ARCs](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCmanager-manual/06_adding_metadata.html)
 
 ## What is the ARCmanager?
 

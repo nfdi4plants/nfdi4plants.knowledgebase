@@ -11,8 +11,6 @@ status: published
 date: 2024-06-13
 ---
 
-## Adding Metadata
-
 Two different types of metadata are stored in ISA files: administrative and experimental metadata. Administrative metadata covers IDs, descriptions, contact details, connected publications and more, while experimental metadata is describing experimental procedures and similar processes. ISA files are normally stored in an Excel format (.xlsx) but can also be edited directly through the ARCmanager.
 
 A typical ISA file has the administrative metadata recorded in the first sheet of the Excel file. In addition, every isa.study.xlsx and isa.assay.xlsx file should have at least one more sheet where the experimental metadata is annotated, that is maintained through SWATE. Both types of metadata can be edited with the ARCmanager.
@@ -46,7 +44,7 @@ When you are done with your changes, just click the `SAVE` button on the bottom 
 
 #### Alternative view
 
-To edit any not field not listed in the main view, you can click the checkmark on the top right named "alternative" to open up a different view of the data stored inside.
+To edit any field not listed in the main view, you can click the checkmark on the top right named "alternative" to open up a different view of the data stored inside.
 
 <img src="./img/06_adding_metadata/admin-alt.png" width="400" style="float: left;margin-right: 7px; margin-bottom:5px" />
 

@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Create ARCs
+title: Create new ARCs
 author:
   - name: Hamed Jalali
     github: https://github.com/hamedjalali1982
@@ -10,8 +10,6 @@ add sidebar: _sidebars/mainSidebar.md
 status: published
 date: 2024-06-13
 ---
-
-## Create ARCs in ARCmanager
 
 To create a new ARC in ARCmanager, you can follow the below steps:
 

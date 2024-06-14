@@ -42,7 +42,7 @@ According to the  [ISA Metadata Model](https://www.nfdi4plants.de/nfdi4plants.kn
         <img src="./img/05_uploading_files/upload_command.png" width="500" style="border: 2px solid  gray;" /> 
     </p>
     <p float="center">
-        <img src="./img/05_uploading_files/upload_data.png" width="500" style="border: 2px solid  gray;"/>
+        <img src="./img/05_uploading_files/upload_data.png" width="500" style="border: 2px solid  gray;" />
     </p>
 
     If the size of the data files is large (>100Mb), the  large file system package in Git is needed. To use this function for an upload, check the  `LFS` option:
