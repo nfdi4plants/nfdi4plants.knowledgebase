@@ -67,6 +67,7 @@
 ## [How to use the ARCmanager](/docs/ARCmanager-manual/how_to.html)
 
 # [Swate Manual](/docs/SwateManual/index.html)
+## [QuickStart - Videos](/docs/guides/swate_QuickStart_Videos.html)
 ## [Annotation tables](/docs/SwateManual/Docs02-Annotation-Table.html)
 ## [Building blocks](/docs/SwateManual/Docs03-Building-Blocks.html)
 ### [Building Block Types](/docs/SwateManual/swate_blocks_types.html)
