@@ -30,7 +30,7 @@ DataPLANT provides the tool [Swate](./../implementation/Swate.html) to support y
 
 :bulb: Consider reading about [Swate](./../implementation/Swate.html)
 <br>
-:bulb: We assume that you already created an ARC that contains one or more studies and assays. If not consider watching the [ARCitect Quickstart Videos](./arcitect_Quickstart_Videos.html)
+:bulb: We assume that you already created an ARC that contains one or more studies and assays. If not consider watching the [ARCitect Quickstart Videos](./arcitect_QuickStart_Videos.html)
 first.
 
 ---
