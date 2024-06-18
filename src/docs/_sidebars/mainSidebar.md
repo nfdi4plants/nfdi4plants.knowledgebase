@@ -148,10 +148,12 @@
 ### [July: Data Steward Circle](/docs/teaching-materials/events-2023/DataSteward-Circle/index.html)
 ### [May: CEPLAS Start Your ARC Series](/docs/teaching-materials/events-2023/2023-05-09_CEPLAS-StartYourARC-Series/index.html)
 #### [Start Your ARC Series - Videos](/docs/teaching-materials/events-2023/2023-05-09_CEPLAS-StartYourARC-Series/StartYourARC-Videos.html)
-
+C:\Users\david\source\repos\nfdi4plants.knowledgebase\src\docs\teaching-materials\events-2024\2024-02-13-TRR175-Becoming-FAIR\index.md
 ## [Events 2024](/docs/teaching-materials/events-2024/index.html)
+### [TRR175 Becoming FAIR](/docs/teaching-materials/events-2024/2024-02-13-TRR175-Becoming-FAIR/index.html)
 ### [CEPLAS ARC Trainings – Spring 2024](/docs/teaching-materials/events-2024/2024-04-03_CEPLAS-ARC-Trainings/index.html)
 ### [MibiNet CEPLAS DataPLANT Tool-Workshops](/docs/teaching-materials/events-2024/2024-04-11_MibiNet-CEPLAS-ARC-Trainings/index.html)
+### [TRR175 Tutzing Retreat](/docs/teaching-materials/events-2024/2024-06-19-TRR175-Tutzing-Retreat/index.html)
 
 
 
