@@ -2,7 +2,7 @@
 layout: docs
 title: "CWL Examples"
 date: 2024-02-05
-add toc: false
+add toc: true
 add support: false
 add sidebar: _sidebars/mainSidebar.md
 ---
