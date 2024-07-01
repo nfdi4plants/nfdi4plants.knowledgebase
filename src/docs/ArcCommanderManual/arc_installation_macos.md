@@ -11,6 +11,14 @@ add sidebar: _sidebars/mainSidebar.md
 
 2. Copy/paste the following commands into your terminal and execute them to (a) download the latest ARC Commander release, (b) change permissions to make the ARC Commander executable and (c) move the ARC Commander program to a location from where it is executable via the terminal:
 
+First, you need to verify if your machine is using an AMD / x86 processor or ARM processor.
+
+```bash
+uname -m
+```
+
+This command will return the processor type. If it returns x86_64 , your system is x86. If it returns arm64 , armv7l , or similar, it is ARM.
+
 For AMD / x86 processors
 
 ```bash
