@@ -143,10 +143,10 @@ inputs:
       prefix: -i
 outputs:
   myOutput:
-    type: Directory
+    type: File
     outputBinding:
-      # this returns the whole working directory
-      glob: $(runtime.outdir)
+      glob: "result.csv"
+
 ```
 [Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/main/workflows/FixedScript)
 
@@ -188,9 +188,9 @@ inputs:
       prefix: -i
 outputs:
   myOutput:
-    type: Directory
+    type: File
     outputBinding:
-      glob: "./arc/runs/myRun"
+      glob: "./arc/runs/myRun/result.csv"
 ```
 
 [Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/main/workflows/ARCMount)
@@ -234,9 +234,9 @@ inputs:
       prefix: -i
 outputs:
   myOutput:
-    type: Directory
+    type: File
     outputBinding:
-      glob: "./arc/runs/myRun"
+      glob: "./arc/runs/myRun/result.csv"
 ```
 The Dockerfile should only include operations that reference resources that are available online or within the baseimage. COPY operations that point to local files for 
 example won't work in the context of CWL. If they are necessary for the execution in the devcontainer context (e.g. configuration for editors), but not the execution of the script, they 
