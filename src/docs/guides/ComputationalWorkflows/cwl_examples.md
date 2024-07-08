@@ -56,7 +56,9 @@ outputs:
 ```
 
 There are several possibilities to retrieve the output of a tool. Common options would be `File`, `File[]`, or `Directory`. 
-For usage in workflows and provenance tracking, it is recommended to use `File` as the output type. This way, several output files can be 
+Depending on your tool or script, the output varies. If your tool returns a fixed number of known files, you should specify them as `File`. If it has a variable number of 
+files with a known extension, you should specify them as `File[]`. If it has a variable output structure, you should specify it as `Directory`.
+For usage in workflows and provenance tracking, if your tool or script allows it, it is recommended to use `File` as the output type. This way, several output files can be 
 specified and used in the following workflow steps.
 
 ### With a docker container
@@ -105,7 +107,9 @@ outputs:
 ```
 
 There are several possibilities to retrieve the output of a tool. Common options would be `File`, `File[]`, or `Directory`. 
-For usage in workflows and provenance tracking, it is recommended to use `File` as the output type. This way, several output files can be 
+Depending on your tool or script, the output varies. If your tool returns a fixed number of known files, you should specify them as `File`. If it has a variable number of 
+files with a known extension, you should specify them as `File[]`. If it has a variable output structure, you should specify it as `Directory`.
+For usage in workflows and provenance tracking, if your tool or script allows it, it is recommended to use `File` as the output type. This way, several output files can be 
 specified and used in the following workflow steps.
 
 ### With a fixed script file
