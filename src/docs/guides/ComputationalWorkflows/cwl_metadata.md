@@ -144,8 +144,8 @@ $namespaces:
 $schemas:
   - https://raw.githubusercontent.com/nfdi4plants/ARC_ontology/main/ARC_v2.0.owl
 ```
-Examples for this can be found [here](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/blob/CWLExamples/workflows/FixedScript/FSharpArcCapsule.cwl) 
-for the cwl file and [here](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/blob/CWLExamples/runs/FSharpArcCapsule.yml) for the job file.
+Examples for this can be found [here](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/blob/main/workflows/FixedScript/FSharpArcCapsule.cwl) 
+for the cwl file and [here](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/blob/main/runs/FSharpArcCapsule.yml) for the job file.
 
 An application example including metadata can be found [here](https://git.nfdi4plants.org/zimmer/TurboIDSampleArc/-/tree/main). It contains a [CWL](https://git.nfdi4plants.org/zimmer/TurboIDSampleArc/-/blob/main/workflows/EvalTurboID/TurboIDSampleArc.cwl) 
 file with the ARC mounted and a fixed script. The CWL file has two mandatory and one optional parameter. There is one [job file](https://git.nfdi4plants.org/zimmer/TurboIDSampleArc/-/blob/main/runs/TurboIDSampleArc.yml) 
