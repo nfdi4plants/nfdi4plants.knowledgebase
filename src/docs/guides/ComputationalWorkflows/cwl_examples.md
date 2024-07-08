@@ -120,7 +120,7 @@ outputs:
       # this returns the whole working directory
       glob: $(runtime.outdir)
 ```
-[Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/FixedScript)
+[Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/main/workflows/FixedScript)
 
 ### With a fixed script in a mounted arc
 
@@ -165,7 +165,7 @@ outputs:
       glob: "./arc/runs/myRun"
 ```
 
-[Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/ARCMount)
+[Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/main/workflows/ARCMount)
 
 ### Within an ARC with a devcontainer
 
@@ -214,7 +214,7 @@ The Dockerfile should only include operations that reference resources that are 
 example won't work in the context of CWL. If they are necessary for the execution in the devcontainer context (e.g. configuration for editors), but not the execution of the script, they 
 can be prefixed with a `*` to make the execution of the operation optional.
 
-[Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/Devcontainer)
+[Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/main/workflows/Devcontainer)
 
 ## Workflows
 
