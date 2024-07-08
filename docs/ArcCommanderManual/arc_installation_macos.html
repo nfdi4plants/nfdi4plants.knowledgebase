@@ -561,6 +561,10 @@
 <li><p>Copy/paste the following commands into your terminal and execute them to (a) download the latest ARC Commander release, (b) change permissions to make the ARC Commander executable and (c) move the ARC Commander program to a location from where it is executable via the terminal:</p>
 </li>
 </ol>
+<p>First, you need to verify if your machine is using an AMD / x86 processor or ARM processor.</p>
+<nfdi-code class="language-bash">uname -m
+</nfdi-code>
+<p>This command will return the processor type. If it returns x86_64 , your system is x86. If it returns arm64 , armv7l , or similar, it is ARM.</p>
 <p>For AMD / x86 processors</p>
 <nfdi-code class="language-bash">curl -LO https://github.com/nfdi4plants/ARCCommander/releases/download/v1.0.0/arc_osx-x64
 chmod a+x ./arc_osx-x64
