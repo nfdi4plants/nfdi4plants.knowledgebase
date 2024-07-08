@@ -87,7 +87,7 @@ $schemas:
 ```
 This metadata section provides information about the technology platform and the person executing the workflow. It also provides information about the tool input 
 and output files, as well as the operations that are applied to the data. In this case, everything is encoded in the executed script and there are no variable inputs. 
-Therefore, all metadata is written in the CWL file. An example for this can be found [here](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/ARCMount).
+Therefore, all metadata is written in the CWL file. An example for this can be found [here](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/main/workflows/ARCMount).
 
 Frequently though, tools have input parameters, that alter the tools execution or input and output files. In this case, the metadata has to be written in the right location. For a tool with 
 varying inputs and specifiable output location, this could look as the following for the CWL file:
