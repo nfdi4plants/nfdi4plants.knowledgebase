@@ -632,7 +632,7 @@ $schemas:
 </nfdi-code>
 <p>This metadata section provides information about the technology platform and the person executing the workflow. It also provides information about the tool input
 and output files, as well as the operations that are applied to the data. In this case, everything is encoded in the executed script and there are no variable inputs.
-Therefore, all metadata is written in the CWL file. An example for this can be found <a href="https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/ARCMount">here</a>.</p>
+Therefore, all metadata is written in the CWL file. An example for this can be found <a href="https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/main/workflows/ARCMount">here</a>.</p>
 <p>Frequently though, tools have input parameters, that alter the tools execution or input and output files. In this case, the metadata has to be written in the right location. For a tool with
 varying inputs and specifiable output location, this could look as the following for the CWL file:</p>
 <nfdi-code class="language-yaml">arc:has technology type:
@@ -686,8 +686,8 @@ $namespaces:
 $schemas:
   - https://raw.githubusercontent.com/nfdi4plants/ARC_ontology/main/ARC_v2.0.owl
 </nfdi-code>
-<p>Examples for this can be found <a href="https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/blob/CWLExamples/workflows/FixedScript/FSharpArcCapsule.cwl">here</a>
-for the cwl file and <a href="https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/blob/CWLExamples/runs/FSharpArcCapsule.yml">here</a> for the job file.</p>
+<p>Examples for this can be found <a href="https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/blob/main/workflows/FixedScript/FSharpArcCapsule.cwl">here</a>
+for the cwl file and <a href="https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/blob/main/runs/FSharpArcCapsule.yml">here</a> for the job file.</p>
 <p>An application example including metadata can be found <a href="https://git.nfdi4plants.org/zimmer/TurboIDSampleArc/-/tree/main">here</a>. It contains a <a href="https://git.nfdi4plants.org/zimmer/TurboIDSampleArc/-/blob/main/workflows/EvalTurboID/TurboIDSampleArc.cwl">CWL</a>
 file with the ARC mounted and a fixed script. The CWL file has two mandatory and one optional parameter. There is one <a href="https://git.nfdi4plants.org/zimmer/TurboIDSampleArc/-/blob/main/runs/TurboIDSampleArc.yml">job file</a>
 for the execution without the optional parameter and one <a href="https://git.nfdi4plants.org/zimmer/TurboIDSampleArc/-/blob/main/runs/TurboIDSampleArcFDR.yml">job file</a> for

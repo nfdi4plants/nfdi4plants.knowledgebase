@@ -656,7 +656,7 @@ outputs:
       # this returns the whole working directory
       glob: $(runtime.outdir)
 </nfdi-code>
-<p><a href="https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/FixedScript">Example</a></p>
+<p><a href="https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/main/workflows/FixedScript">Example</a></p>
 <nfdi-h3 id="with-a-fixed-script-in-a-mounted-arc">With a fixed script in a mounted arc</nfdi-h3>
 <p>When scripting, it is convenient to work within the environment of the ARC (e.g. location of files, writing results in the runs
 folder and so on). When the ARC is mounted within the CWL process, the script can be ran in that environment and the corresponding runs folder
@@ -696,7 +696,7 @@ outputs:
     outputBinding:
       glob: "./arc/runs/myRun"
 </nfdi-code>
-<p><a href="https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/ARCMount">Example</a></p>
+<p><a href="https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/main/workflows/ARCMount">Example</a></p>
 <nfdi-h3 id="within-an-arc-with-a-devcontainer">Within an ARC with a devcontainer</nfdi-h3>
 <p>Within the context of an ARC, researches often work within devcontainers or the ARC environment. CWL is able to replicate
 this workflow under the premise, that in the end everything can be executed in one go by including the Dockerfile of the devcontainer.
@@ -740,7 +740,7 @@ outputs:
 <p>The Dockerfile should only include operations that reference resources that are available online or within the baseimage. COPY operations that point to local files for
 example won't work in the context of CWL. If they are necessary for the execution in the devcontainer context (e.g. configuration for editors), but not the execution of the script, they
 can be prefixed with a <code>*</code> to make the execution of the operation optional.</p>
-<p><a href="https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/Devcontainer">Example</a></p>
+<p><a href="https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/main/workflows/Devcontainer">Example</a></p>
 <nfdi-h2 id="workflows">Workflows</nfdi-h2>
 <p>Workflows can connect multiple command line tools, for example. It is possible to use the output of a
 tool as an input for the following tool and return them as intermediate results as well.</p>
