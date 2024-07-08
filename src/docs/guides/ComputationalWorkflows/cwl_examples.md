@@ -38,12 +38,26 @@ inputs:
       # prefix is optional
       prefix: -i
 outputs:
-  myOutput:
+  myFileOutput:
+	type: File
+	outputBinding:
+      # this returns a specific file
+	  glob: myOutput.txt
+  myFileArrayOutput:
+    type: File[]
+    outputBinding:
+	  # this returns all files with the extension .txt
+	  glob: $(runtime.outdir)/*.txt
+  myDirectoryOutput:
     type: Directory
     outputBinding:
-      # this returns the whole working directory
-      glob: $(runtime.outdir)
+      # this returns a specific directory
+      glob: $(runtime.outdir)/myDirectory
 ```
+
+There are several possibilities to retrieve the output of a tool. Common options would be `File`, `File[]`, or `Directory`. 
+For usage in workflows and provenance tracking, it is recommended to use `File` as the output type. This way, several output files can be 
+specified and used in the following workflow steps.
 
 ### With a docker container
 
@@ -73,12 +87,26 @@ inputs:
       # prefix is optional
       prefix: -i
 outputs:
-  myOutput:
+  myFileOutput:
+	type: File
+	outputBinding:
+      # this returns a specific file
+	  glob: myOutput.txt
+  myFileArrayOutput:
+    type: File[]
+    outputBinding:
+	  # this returns all files with the extension .txt
+	  glob: $(runtime.outdir)/*.txt
+  myDirectoryOutput:
     type: Directory
     outputBinding:
-      # this returns the whole working directory
-      glob: $(runtime.outdir)
+      # this returns a specific directory
+      glob: $(runtime.outdir)/myDirectory
 ```
+
+There are several possibilities to retrieve the output of a tool. Common options would be `File`, `File[]`, or `Directory`. 
+For usage in workflows and provenance tracking, it is recommended to use `File` as the output type. This way, several output files can be 
+specified and used in the following workflow steps.
 
 ### With a fixed script file
 
@@ -249,9 +277,9 @@ steps:
     out: [myOutput2]
 outputs:
   outputTool1:
-    type: Directory
+    type: File
     outputSource: myTool1/myOutput1
-  outputTool1:
+  outputTool2:
     type: Directory
     outputSource: myTool2/myOutput2
 ```
