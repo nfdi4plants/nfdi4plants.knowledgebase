@@ -27,6 +27,7 @@
 ### [QuickStart](/docs/guides/swate_QuickStart.html)
 ### [Walk-through](/docs/guides/swate_walkthrough.html)
 ### [Best Practices For Data Annotation](/docs/guides/BestPracticesForDataAnnotation.html)
+## [MetadataQuiz](/docs/implementation/MetadataQuiz.html)
 ## [DataHUB](/docs/implementation/DataHub.html)
 ## [DataPLAN](/docs/implementation/DataPLAN.html)
 ## [Ontology Service Landscape](/docs/implementation/OntologyServiceLandscape.html)
