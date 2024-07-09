@@ -582,12 +582,27 @@ inputs:
       # prefix is optional
       prefix: -i
 outputs:
-  myOutput:
+  myFileOutput:
+	type: File
+	outputBinding:
+      # this returns a specific file
+	  glob: myOutput.txt
+  myFileArrayOutput:
+    type: File[]
+    outputBinding:
+	  # this returns all files with the extension .txt
+	  glob: $(runtime.outdir)/*.txt
+  myDirectoryOutput:
     type: Directory
     outputBinding:
-      # this returns the whole working directory
-      glob: $(runtime.outdir)
+      # this returns a specific directory
+      glob: $(runtime.outdir)/myDirectory
 </nfdi-code>
+<p>There are several possibilities to retrieve the output of a tool. Common options would be <code>File</code>, <code>File[]</code>, or <code>Directory</code>.
+Depending on your tool or script, the output varies. If your tool returns a fixed number of known files, you should specify them as <code>File</code>. If it has a variable number of
+files with a known extension, you should specify them as <code>File[]</code>. If it has a variable output structure, you should specify it as <code>Directory</code>.
+For usage in workflows and provenance tracking, if your tool or script allows it, it is recommended to use <code>File</code> as the output type. This way, several output files can be
+specified and used in the following workflow steps.</p>
 <nfdi-h3 id="with-a-docker-container">With a docker container</nfdi-h3>
 <p>To ensure reproducibility of the tool's execution on any system, it is recommended to pack it in a docker
 container. The docker container is automatically pulled with a reference to the container under
@@ -613,12 +628,27 @@ inputs:
       # prefix is optional
       prefix: -i
 outputs:
-  myOutput:
+  myFileOutput:
+	type: File
+	outputBinding:
+      # this returns a specific file
+	  glob: myOutput.txt
+  myFileArrayOutput:
+    type: File[]
+    outputBinding:
+	  # this returns all files with the extension .txt
+	  glob: $(runtime.outdir)/*.txt
+  myDirectoryOutput:
     type: Directory
     outputBinding:
-      # this returns the whole working directory
-      glob: $(runtime.outdir)
+      # this returns a specific directory
+      glob: $(runtime.outdir)/myDirectory
 </nfdi-code>
+<p>There are several possibilities to retrieve the output of a tool. Common options would be <code>File</code>, <code>File[]</code>, or <code>Directory</code>.
+Depending on your tool or script, the output varies. If your tool returns a fixed number of known files, you should specify them as <code>File</code>. If it has a variable number of
+files with a known extension, you should specify them as <code>File[]</code>. If it has a variable output structure, you should specify it as <code>Directory</code>.
+For usage in workflows and provenance tracking, if your tool or script allows it, it is recommended to use <code>File</code> as the output type. This way, several output files can be
+specified and used in the following workflow steps.</p>
 <nfdi-h3 id="with-a-fixed-script-file">With a fixed script file</nfdi-h3>
 <p>Oftentimes, individual analysis is done within scripts for the flexibility, instead of tools with
 fixed tasks. In this case, it is recommended to encode the script as a fixed part of the CWL description.
@@ -651,10 +681,10 @@ inputs:
       prefix: -i
 outputs:
   myOutput:
-    type: Directory
+    type: File
     outputBinding:
-      # this returns the whole working directory
-      glob: $(runtime.outdir)
+      glob: "result.csv"
+
 </nfdi-code>
 <p><a href="https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/main/workflows/FixedScript">Example</a></p>
 <nfdi-h3 id="with-a-fixed-script-in-a-mounted-arc">With a fixed script in a mounted arc</nfdi-h3>
@@ -692,9 +722,9 @@ inputs:
       prefix: -i
 outputs:
   myOutput:
-    type: Directory
+    type: File
     outputBinding:
-      glob: "./arc/runs/myRun"
+      glob: "./arc/runs/myRun/result.csv"
 </nfdi-code>
 <p><a href="https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/main/workflows/ARCMount">Example</a></p>
 <nfdi-h3 id="within-an-arc-with-a-devcontainer">Within an ARC with a devcontainer</nfdi-h3>
@@ -733,9 +763,9 @@ inputs:
       prefix: -i
 outputs:
   myOutput:
-    type: Directory
+    type: File
     outputBinding:
-      glob: "./arc/runs/myRun"
+      glob: "./arc/runs/myRun/result.csv"
 </nfdi-code>
 <p>The Dockerfile should only include operations that reference resources that are available online or within the baseimage. COPY operations that point to local files for
 example won't work in the context of CWL. If they are necessary for the execution in the devcontainer context (e.g. configuration for editors), but not the execution of the script, they
@@ -771,9 +801,9 @@ steps:
     out: [myOutput2]
 outputs:
   outputTool1:
-    type: Directory
+    type: File
     outputSource: myTool1/myOutput1
-  outputTool1:
+  outputTool2:
     type: Directory
     outputSource: myTool2/myOutput2
 </nfdi-code>
