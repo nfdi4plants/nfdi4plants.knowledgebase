@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Data publications
-date: 2023-09-07
+date: 2024-07-10
 author:
 - name: Kevin Schneider
   orcid: https://orcid.org/0000-0002-2198-5262
@@ -10,6 +10,8 @@ add toc: true
 add support: true
 add sidebar: _sidebars/mainSidebar.md
 ---
+
+_**Note:** All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](cqc-pipelines/validation-packages.html) to learn how to opt-in._
 
 # Introduction
 
@@ -25,16 +27,11 @@ This is achieved by a set of services and tools that are integrated into DataPLA
 
 ## Continuous Quality Control (CQC)
 
+_**Note:** All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](cqc-pipelines/validation-packages.html) to learn how to opt-in._
+
 _practical guide: [passing cqc](datahub-data-publications-cqc.html)_
 
-Upon every commit to an ARC repository, PLANTdataHUB can perform automated quality control measures based on the committed changes. 
-
-ARCs that pass a CQC pipeline with the following steps are eligible for a data publication: 
-- **(1)** a machine-readable representation (JSON) of the ARC metadata is created and linked with the commit, which makes it discoverable for search tools. 
-- **(2)** ARC metadata is subjected to a set of quality checks, e.g., if ORCIDs associated with persons are valid or if each author has a contact email. 
-- **(3)** The ARC metadata is converted to a metadata record, which is used by subsequent tools to trigger the data publication and associated creation of a DOI via DataCite for that record.
-
-There are many use cases and scenarios for quality control of research data. Beyond allowing implementation of an abstract measure of quality, an immediate practical application in plant biology is to ensure that it is always possible to export project data and metadata into another format to deposition into a research repository.
+Upon every commit to an ARC repository, PLANTdataHUB can perform automated quality control measures based on the committed changes. Form more information, have a look at [Continuous Quality Control (CQC) pipelines & ARC validation](cqc-pipelines/cqc-pipelines.html).
 
 ## ARChigator: the ARC submission service
 

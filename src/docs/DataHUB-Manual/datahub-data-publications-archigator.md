@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Submitting ARCs with ARChigator
-date: 2023-09-07
+date: 2024-07-10
 author:
 - name: Kevin Schneider
   orcid: https://orcid.org/0000-0002-2198-5262
@@ -11,21 +11,17 @@ add support: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-ARChigator is a tool for submitting ARCs hosted on DataHUB for publication to the [ARChive](https://archive.nfdi4plants.org/communities/dataplant).
+_**Note:** All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](cqc-pipelines/validation-packages.html) to learn how to opt-in._
+
+ARChigator is a tool for submitting ARCs hosted on DataHUB for publication in the [ARChive](https://archive.nfdi4plants.org/communities/dataplant).
 
 ## Start the publication process
 
-To start the publication process, click on the _publish button_ (**2**) on the ARC homepage. Make sure that the test pipeline (**1**) passes, otherwise you will not be able to proceed to the next steps.
-
-<img src="./../img/data-publication/cqc-results.png" style="width:100%;display: block;margin: 20px auto;">
-
-- **(1)**: The _pipeline badge_ indicates wether all steps of CQC have passed, or if there are any failures.
-- **(2)**: The _publish button_ is used to submit the ARC to the ARChive via [ARChigator](datahub-data-publications-archigator.html). Note that ARCs that fail CQC are not eligible for publication.
-- **(3)**: The _arc quality badge_ indicates the overall metadata quality of the ARC. This is calculated based on the results of the CQC pipeline, and signifies how many of the performed tests have passed. The badge is color-coded, and the color indicates the quality of the ARC.
+To start the publication process, first make sure to install the [invenio validation package](https://avpr.nfdi4plants.org/package/invenio). On the commit click on the _invenio badge_ on the ARC homepage. Make sure that the validation against the invenio package  passes (indicated by a green badge), otherwise you will not be able to proceed to the next steps.
 
 ## Review record metadata
 
-After clicking the _publish button_ (**2**), you will be redirected to the ARChigator page, where you can review the metadata of the record that will be created in the ARChive. Note that you can only proceed to this page if you are logged in to DataHUB.
+After clicking the badge, you will be redirected to the ARChigator page, where you can review the metadata of the record that will be created in the ARChive. Note that you can only proceed to this page if you are logged in to DataHUB.
 
 <img src="./../img/data-publication/archigator-metadata-review.png" style="width:100%;display: block;margin: 20px auto;">
 
@@ -36,6 +32,7 @@ After clicking the _publish button_ (**2**), you will be redirected to the ARChi
 Once you double-checked the metadata, you can proceed to submitting the ARC.
 
 ## Submit the ARC
+
 
 <img src="./../img/data-publication/archigator-submit.png" style="width:50%;display: block;margin: 20px auto;">
 
