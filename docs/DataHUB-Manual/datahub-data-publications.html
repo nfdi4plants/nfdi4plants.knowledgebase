@@ -351,6 +351,14 @@
           </a>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/cqc-pipelines/cqc-pipelines.html">
+            CQC Pipelines & validation
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/cqc-pipelines/cqc-pipelines.html">
+            Find and use ARC validation packages
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
           <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-data-publications.html">
             Data publications
           </a>
@@ -553,25 +561,20 @@
         Data publications
       </h1>
       <i class="help">
-        last updated at 2023-09-07
+        last updated at 2024-07-10
       </i>
       <nfdi-toc></nfdi-toc>
-      <nfdi-h1 id="introduction">Introduction</nfdi-h1>
+      <p><em><strong>Note:</strong> All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head <a href="cqc-pipelines/validation-packages.html">here</a> to learn how to opt-in.</em></p>
+<nfdi-h1 id="introduction">Introduction</nfdi-h1>
 <p><em>This page gives a general overview on DataPLANT's data publication process. For more practical guides on each step, check out the sidebar or refer to the guide links in this document.</em></p>
 <p>Data is usually the primary output of scientific research; in contrast, the universal measurement of research success is the publication. In the past, accessing the underlying data of a published research paper required the tedious process of contacting the original authors and asking for access.</p>
 <p>ARCs are <a href="https://nfdi4plants.org/content/learn-more/annotated-research-context.html">FAIR Digital Objects (FDOs)</a>. One of DataPLANTS main goal is facilitating the publication of ARCs as data publications.</p>
 <p>This is achieved by a set of services and tools that are integrated into DataPLANT's DataHUB.</p>
 <nfdi-h1 id="data-publication-services-and-tools">Data publication services and tools</nfdi-h1>
 <nfdi-h2 id="continuous-quality-control-cqc">Continuous Quality Control (CQC)</nfdi-h2>
+<p><em><strong>Note:</strong> All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head <a href="cqc-pipelines/validation-packages.html">here</a> to learn how to opt-in.</em></p>
 <p><em>practical guide: <a href="datahub-data-publications-cqc.html">passing cqc</a></em></p>
-<p>Upon every commit to an ARC repository, PLANTdataHUB can perform automated quality control measures based on the committed changes.</p>
-<p>ARCs that pass a CQC pipeline with the following steps are eligible for a data publication:</p>
-<ul>
-<li><strong>(1)</strong> a machine-readable representation (JSON) of the ARC metadata is created and linked with the commit, which makes it discoverable for search tools.</li>
-<li><strong>(2)</strong> ARC metadata is subjected to a set of quality checks, e.g., if ORCIDs associated with persons are valid or if each author has a contact email.</li>
-<li><strong>(3)</strong> The ARC metadata is converted to a metadata record, which is used by subsequent tools to trigger the data publication and associated creation of a DOI via DataCite for that record.</li>
-</ul>
-<p>There are many use cases and scenarios for quality control of research data. Beyond allowing implementation of an abstract measure of quality, an immediate practical application in plant biology is to ensure that it is always possible to export project data and metadata into another format to deposition into a research repository.</p>
+<p>Upon every commit to an ARC repository, PLANTdataHUB can perform automated quality control measures based on the committed changes. Form more information, have a look at <a href="cqc-pipelines/cqc-pipelines.html">Continuous Quality Control (CQC) pipelines &amp; ARC validation</a>.</p>
 <nfdi-h2 id="archigator-the-arc-submission-service">ARChigator: the ARC submission service</nfdi-h2>
 <p><em>practical guide: <a href="datahub-data-publications-archigator.html">Submitting ARCs with ARChigator</a></em></p>
 <p>ARChigator is a tool for submitting ARCs hosted on DataHUB for publication in the <a href="https://archive.nfdi4plants.org/communities/dataplant">ARChive</a>. Only ARCs that pass CQC are eligible for submission.</p>

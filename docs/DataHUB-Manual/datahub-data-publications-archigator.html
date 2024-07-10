@@ -351,6 +351,14 @@
           </a>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/cqc-pipelines/cqc-pipelines.html">
+            CQC Pipelines & validation
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/cqc-pipelines/cqc-pipelines.html">
+            Find and use ARC validation packages
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
           <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-data-publications.html">
             Data publications
           </a>
@@ -553,20 +561,15 @@
         Submitting ARCs with ARChigator
       </h1>
       <i class="help">
-        last updated at 2023-09-07
+        last updated at 2024-07-10
       </i>
       <nfdi-toc></nfdi-toc>
-      <p>ARChigator is a tool for submitting ARCs hosted on DataHUB for publication to the <a href="https://archive.nfdi4plants.org/communities/dataplant">ARChive</a>.</p>
+      <p><em><strong>Note:</strong> All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head <a href="cqc-pipelines/validation-packages.html">here</a> to learn how to opt-in.</em></p>
+<p>ARChigator is a tool for submitting ARCs hosted on DataHUB for publication in the <a href="https://archive.nfdi4plants.org/communities/dataplant">ARChive</a>.</p>
 <nfdi-h2 id="start-the-publication-process">Start the publication process</nfdi-h2>
-<p>To start the publication process, click on the <em>publish button</em> (<strong>2</strong>) on the ARC homepage. Make sure that the test pipeline (<strong>1</strong>) passes, otherwise you will not be able to proceed to the next steps.</p>
-<img src="./../img/data-publication/cqc-results.png" style="width:100%;display: block;margin: 20px auto;">
-<ul>
-<li><strong>(1)</strong>: The <em>pipeline badge</em> indicates wether all steps of CQC have passed, or if there are any failures.</li>
-<li><strong>(2)</strong>: The <em>publish button</em> is used to submit the ARC to the ARChive via <a href="datahub-data-publications-archigator.html">ARChigator</a>. Note that ARCs that fail CQC are not eligible for publication.</li>
-<li><strong>(3)</strong>: The <em>arc quality badge</em> indicates the overall metadata quality of the ARC. This is calculated based on the results of the CQC pipeline, and signifies how many of the performed tests have passed. The badge is color-coded, and the color indicates the quality of the ARC.</li>
-</ul>
+<p>To start the publication process, first make sure to install the <a href="https://avpr.nfdi4plants.org/package/invenio">invenio validation package</a>. On the commit click on the <em>invenio badge</em> on the ARC homepage. Make sure that the validation against the invenio package  passes (indicated by a green badge), otherwise you will not be able to proceed to the next steps.</p>
 <nfdi-h2 id="review-record-metadata">Review record metadata</nfdi-h2>
-<p>After clicking the <em>publish button</em> (<strong>2</strong>), you will be redirected to the ARChigator page, where you can review the metadata of the record that will be created in the ARChive. Note that you can only proceed to this page if you are logged in to DataHUB.</p>
+<p>After clicking the badge, you will be redirected to the ARChigator page, where you can review the metadata of the record that will be created in the ARChive. Note that you can only proceed to this page if you are logged in to DataHUB.</p>
 <img src="./../img/data-publication/archigator-metadata-review.png" style="width:100%;display: block;margin: 20px auto;">
 <ul>
 <li><strong>(4)</strong>: The source of your ARC</li>
