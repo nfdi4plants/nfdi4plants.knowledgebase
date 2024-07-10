@@ -91,6 +91,9 @@
 ### [ARC Wiki](/docs/DataHUB-Manual/datahub-ARCWiki.html)
 ## [Groups Panel](/docs/DataHUB-Manual/datahub-groupsPanel.html)
 ### [Create a new user group](/docs/DataHUB-Manual/datahub-CreateGroup.html)
+## [CQC Pipelines & validation](/docs/DataHUB-Manual/cqc-pipelines/cqc-pipelines.html)
+### [Find and use ARC validation packages](/docs/DataHUB-Manual/cqc-pipelines/cqc-pipelines.html)
+Continuous Quality Control (CQC) p
 ## [Data publications](/docs/DataHUB-Manual/datahub-data-publications.html)
 ### [Passing Continuous Quality Control](/docs/DataHUB-Manual/datahub-data-publications-cqc.html)
 ### [Submitting ARCs with ARChigator](/docs/DataHUB-Manual/datahub-data-publications-archigator.html)
