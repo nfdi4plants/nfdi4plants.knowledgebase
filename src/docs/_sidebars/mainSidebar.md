@@ -27,6 +27,7 @@
 ### [QuickStart](/docs/guides/swate_QuickStart.html)
 ### [Walk-through](/docs/guides/swate_walkthrough.html)
 ### [Best Practices For Data Annotation](/docs/guides/BestPracticesForDataAnnotation.html)
+## [MetadataQuiz](/docs/implementation/MetadataQuiz.html)
 ## [DataHUB](/docs/implementation/DataHub.html)
 ## [DataPLAN](/docs/implementation/DataPLAN.html)
 ## [Ontology Service Landscape](/docs/implementation/OntologyServiceLandscape.html)
@@ -91,6 +92,9 @@
 ### [ARC Wiki](/docs/DataHUB-Manual/datahub-ARCWiki.html)
 ## [Groups Panel](/docs/DataHUB-Manual/datahub-groupsPanel.html)
 ### [Create a new user group](/docs/DataHUB-Manual/datahub-CreateGroup.html)
+## [CQC Pipelines & validation](/docs/DataHUB-Manual/cqc-pipelines/cqc-pipelines.html)
+### [Find and use ARC validation packages](/docs/DataHUB-Manual/cqc-pipelines/validation-packages.html)
+Continuous Quality Control (CQC) p
 ## [Data publications](/docs/DataHUB-Manual/datahub-data-publications.html)
 ### [Passing Continuous Quality Control](/docs/DataHUB-Manual/datahub-data-publications-cqc.html)
 ### [Submitting ARCs with ARChigator](/docs/DataHUB-Manual/datahub-data-publications-archigator.html)
