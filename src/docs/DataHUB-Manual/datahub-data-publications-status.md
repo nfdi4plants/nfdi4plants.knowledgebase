@@ -11,6 +11,10 @@ add support: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
+_**Note:** All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](cqc-pipelines/validation-packages.html) to learn how to opt-in._
+
+# Track your publication status
+
 Once you submitted a record to the ARChive, it is in **RFP** (Request For Publication) stage. You can track the publication status of your record. To do so, click on the link you received in the confirmation mail after submitting the record.
 
 Once an ARC is in **RFP** (Request For Publication) stage, emails are sent to the addresses registered in the ARCs metadata that contain a link to the ARCs publication status update page. **RFP**s are reviewed by the ARChive's editorial board, which might request changes to certain metadata entries to meet our quality criteria.

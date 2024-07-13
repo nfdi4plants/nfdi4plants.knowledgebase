@@ -11,9 +11,13 @@ add support: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
+_**Note:** All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](cqc-pipelines/validation-packages.html) to learn how to opt-in._
+
 Continuous Quality Control (**CQC**) is a process that ensures the quality of the metadata of an ARC meets certain standards.
 
-CQC is performed on each commit to an ARC, and the results are displayed on the ARC homepage:
+Read more about the general CQC process [here]().
+
+in short the CQC pipeline is performed on each commit to an ARC, and the results of each step (e.g., validation against a user-selected validation package) are displayed on the ARC homepage:
 
 ## ARC homepage
 
@@ -26,7 +30,6 @@ CQC is performed on each commit to an ARC, and the results are displayed on the 
 For more details, you can click on the pipeline badge **(1)**, and investigate the steps of the CQC pipeline details:
 
 ## CQC pipeline details
-
 
 <img src="./../img/data-publication/cqc-pipeline-path-1.png" style="width:100%;display: block;margin: 20px auto;">
 
@@ -55,7 +58,7 @@ Clicking on **(7)** will open the CQC pipeline, where each step can be viewed in
 
 ## Starting the publication process
 
-Clicking on the _publish button_ **(2)** on the ARC homepage will start the publication process. Refer to the [ARChigator guide](datahub-data-publications-archigator.html) for more information on the publication process.
+To start the publication process, first make sure to install the [invenio validation package](https://avpr.nfdi4plants.org/package/invenio). Clicking on the _publish button_ **(2)** on the ARC homepage will start the publication process. Refer to the [ARChigator guide](datahub-data-publications-archigator.html) for more information on the publication process.
 
 ## What to do when the CQC pipeline fails?
 
@@ -67,7 +70,7 @@ _CQC step 1_ **(10)**, should never fail, as it usually creates a json file even
 
 ### CQC step 2 fails
 
-_CQC step 2_ **(11)**, is the most common step to fail. This step contains a set of critical quality checks that **MUST** pass in order for the ARC to be eligible for publication, and a set of non-critical checks that signify metadata quality. Only failed critical tests lead to a failed CQC pipeline. If this happens, investigate the failed tests in the _Test tab_ **(13)**, and fix the issues based on the information displayed there. An example could for example be a person not having a first name in your investigation metadata. Commit your changes and check wether the tests pass.
+_CQC step 2_ **(11)**, is the most common step to fail. This step contains a set of critical quality checks that **MUST** pass in order for the ARC to be eligible for publication, and a set of non-critical checks that signify metadata quality. Only failed critical tests lead to a failed CQC pipeline. If this happens, investigate the failed tests in the _Test tab_ **(13)**, and fix the issues based on the information displayed there. An example could for example be a person not having a First name in your investigation metadata. Commit your changes and check wether the tests pass.
 
 ### CQC step 3 fails
 
