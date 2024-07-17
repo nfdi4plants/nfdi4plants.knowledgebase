@@ -27,13 +27,13 @@ In this walk-through, we guide you through annotating data using [Swate](./../im
 </div>
 
 
-
-
 ## Before we can start
 
 <div id="before-start">
 
 - :bulb: Consider reading about [Swate](./../implementation/Swate.html)
+
+</div>
 
 Create and/or open an annotation table as described in the [Swate Quickstart](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html)
 
@@ -69,10 +69,7 @@ Each annotation should start with an *Input* and end with an *Output* column. To
 
 ![Alt-Text](./../img/Swate_a_buildingblockcategories2.png)
 
-
-
 > :bulb: Only one *Input*, one *Output* and one of each *Protocol* columns can be added per table.
-
 
 Now, let's add a descriptive building block.
 1. Select *Component* from the drop-down menu.
@@ -102,7 +99,6 @@ At this point, your table should look similar to this:
 
 We now want to move the *Output* column to the end of your table. For this, right-click into any cell (except the header) of the column that you want to move. Now you can click "Move Column" and select the position that the column should be moved to (in this case: 3). If your table does not contain empty cells yet, you can add any number of rows with the plus symbol. Right-clicking into cells also gives the option of deleting a column or row.
 
-
 ## Use a template
 
 1. Use the "Add Template" widget on the top or navigate to "Templates" in the sidebar and click <kbd>Browse database</kbd>.
@@ -113,8 +109,6 @@ We now want to move the *Output* column to the end of your table. For this, righ
 
 If there are any building blocks which do not fit your experiment you can delete the columns as described above.
 
-
 ## Your ISA table is ready to fill 🎉
 
 Go ahead, adjust the building blocks you want to use to describe your experiment as you see fit. Insert values for *Input* and *Output* and fill the cells of your *Parameter*, *Characteristic* or *Component* columns using the ontology term search. You can activate the ontology term search directly in the cells of your table with the magnifying glass symbol or you can use the "Ontology term search" in the side bar. Instructions for annotating your data can also be found in the [Swate Quickstart](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html) and in the Swate Manual ([Filling cells with ontology terms](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs04-Ontology-Term-Search.html)).
-

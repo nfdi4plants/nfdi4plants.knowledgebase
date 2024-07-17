@@ -25,8 +25,7 @@ In this guide we focus on how to use the [ARC Commander](./../implementation/Arc
 
 ## Before we can start
 
-:ballot_box_with_check: You know how to use a <a href="./tutorial_TheCommandLine.html" target="_blank">command line    </a>
-</div>  
+:ballot_box_with_check: You know how to use a <a href="./tutorial_TheCommandLine.html" target="_blank">command line</a>  
 :ballot_box_with_check: You have created an ARC before  
 :ballot_box_with_check: The latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) is installed on your computer  
 :ballot_box_with_check: You have a [DataPLANT](https://register.nfdi4plants.org) account  
