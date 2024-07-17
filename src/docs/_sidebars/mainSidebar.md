@@ -131,6 +131,7 @@ Continuous Quality Control (CQC) p
 ## [Recommended ARC practices](/docs/guides/index-RecommendedARCPractices.html)
 ### [Syncing recommendation](/docs/guides/arc_SyncingRecommendation.html)
 ### [Keep files from syncing to the DataHUB](/docs/guides/arc_gitignore.html)
+### [Managing ARCs across locations](/docs/guides/arc_locations.html)
 ### [Working with large data files](/docs/guides/arc_WorkingWithLargeDataFiles.html)
 ### [Adding external data to the ARC](/docs/guides/arc_AddingExternalData.html)
 ### [ARCs in Enabling Platforms](/docs/guides/ARC-enablingPlatforms.html)
