@@ -41,7 +41,7 @@ A few things are important when maintaining ARCs in multiple locations:
 1. Try to keep your ARC in sync via the DataHUB
 2. Make sure to sync large files properly
 
-As with any cloud service, when a single file is edited from multiple locations, you can run into merge conflicts. To avoid these, make sure to [sync your ARC with the DataHUB](./arc_SyncingRecommendation.html) and from there sync with your (other) locations before adding or editing data.  
+As with any cloud service, when a single file is edited from multiple locations, you can run into merge conflicts. To avoid these, make sure to regularly [sync your ARC with the DataHUB](./arc_SyncingRecommendation.html) and from there sync with your (other) locations before adding or editing data.  
 In order to have the large files only where you need them and not where you do not (e.g. your personal computer), the ARC and DataHUB implement the LFS (Large file storage) system. The ARCitect and ARC commander provide options to properly handle [LFS-tagged files](./arc_WorkingWithLargeDataFiles.html).
 
 <!-- 
@@ -49,4 +49,4 @@ TODO
 notes on working with branches
 -->
 
-<img src="./../img/ARC-storageLocations-withNotes.drawio.png" style="width:90%; display: block; margin: auto">
+<img src="./../img/ARC-storageLocations-withNotes.drawio.png" style="width:70%; display: block; margin: auto">
