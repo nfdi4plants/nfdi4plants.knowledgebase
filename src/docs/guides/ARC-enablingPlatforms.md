@@ -19,13 +19,12 @@ add sidebar: _sidebars/mainSidebar.md
 
 In this guide we explore how the ARC can help streamline data flows and project management in enabling platforms.
 
-<a href="./index.html">
-    <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
-</a>
-
-<br>
-<br>
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
+        <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
+        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
+    </a>
+</div>
 
 ## Before we can start
 
@@ -36,8 +35,6 @@ It helps to be familiar with
 - :ballot_box_with_check: the concept of the [ARC](./../implementation/AnnotatedResearchContext.html)
 - :ballot_box_with_check: the different [ISA file types](./isa_FileTypes.html)
 - :ballot_box_with_check: the [DataHUB](./../implementation/DataHub.html)
-<br>
-<br>
 - :bulb: Note that this guide can only stay at a very abstract level. Feel free to contact us to work out a suitable solution for your platform together.
 - :warning: In part, this guide presents interim solutions for which we are working on more user-friendly implementations. Your feedback helps!
 

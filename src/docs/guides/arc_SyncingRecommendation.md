@@ -15,18 +15,12 @@ add sidebar: _sidebars/mainSidebar.md
 
 In this guide we elaborate recommendations on syncing your ARC via the [ARC Commander](./../implementation/ArcCommander.html) 
 
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
     <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>    
-</a>
-
-<br>
-<br>
-
-
-:warning:
-This guide presents an interim solution. We are working on a more user-friendly implementation.
-
+    </a>
+</div>
 
 ## Before we can start
 
@@ -83,8 +77,6 @@ You can actually see all `arc sync` actions (i.e. commits) to your ARC in the Da
 
 <img src="./../img/datahub-commits.png" style="width:75%;display: block;margin-left: auto;margin-right: auto;">
 
-
-
 ## Undo latest changes
 
 4. Click on the latest (i.e. uppermost) commit.
@@ -96,7 +88,3 @@ You can actually see all `arc sync` actions (i.e. commits) to your ARC in the Da
 7. Click "Revert"
 
 <img src="./../img/datahub-commits-revert02.png" style="width:55%;display: block;margin-left: auto;margin-right: auto;">
-
-
-
-

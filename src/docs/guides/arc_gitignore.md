@@ -15,17 +15,12 @@ add sidebar: _sidebars/mainSidebar.md
 
 In this guide we show you how to keep files from syncing to the DataHUB. This can help to keep large intermediate, sensitive or unpublished data from uploading to the DataHUB. 
 
-<a href="./index.html">
-    <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>    
-</a>
-
-<br>
-<br>
-
-
-:warning:
-This guide presents an interim solution. We are working on a more user-friendly implementation.
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
+        <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
+        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
+    </a>
+</div>
 
 ## Before we can start
 
@@ -33,7 +28,6 @@ This guide presents an interim solution. We are working on a more user-friendly 
 :ballot_box_with_check: The latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) is installed on your computer  
 :ballot_box_with_check: You have a [DataPLANT](https://register.nfdi4plants.org) account  
 :ballot_box_with_check: Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via personal access token
-
 
 ## The .gitignore file
 

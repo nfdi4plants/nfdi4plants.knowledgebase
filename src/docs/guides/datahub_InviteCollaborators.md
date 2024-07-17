@@ -14,12 +14,14 @@ add sidebar: _sidebars/mainSidebar.md
 
 In this guide we show you how to invite lab colleagues or project partners to your ARC for collaboration. 
 
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
     <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-</a>
-<br>
-<br>
+    </a>
+</div>
+
+
 
 ## Before we can start
 
@@ -52,7 +54,7 @@ In this guide we show you how to invite lab colleagues or project partners to yo
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_invite-collaborators.md -->
-<br>
+
 
 ## Choosing the proper role
 
@@ -73,7 +75,7 @@ Gives the person the same rights as you have (except of removing you from your o
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_choose-collaborator-role.md -->
 
-<br>
+
 
 <div align="center"><b><font size="6">Congratulations!</b></font></div>
 <div align="center">You have just shared your ARC with a collaborator.</div>

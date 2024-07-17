@@ -32,13 +32,15 @@ img, figcaption{
 
 In this guide we introduce the different ISA file types used in the ARC.
 
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
     <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
-</a>
+    </a>
+</div>
 
-<br>
-<br>
+
+
 
 ---
 
@@ -56,12 +58,14 @@ In this guide we introduce the different ISA file types used in the ARC.
 
 ## ARC builds on ISA
 
-The ARC builds on the <a href="https://isa-specs.readthedocs.io/en/latest/isamodel.html" target="_blank">ISA Abstract Model</a> for metadata annotation.
+The ARC builds on the <a href="https://isa-specs.readthedocs.io/en/latest/isamodel.html" target="_blank">ISA Abstract Model    </a>
+</div> for metadata annotation.
 Briefly, the ISA model comes with a hierarchy (ISA: Investigation - Study - Assay) that aligns well with most projects in (plant) biology labs. It allows to group multiple assays to one study, and multiple studies to one investigation.
 
 <div>
   <img src="./../img/ISAmodel_ARC01_img01.svg">
-  <figcaption> Image source (left panel): <a href="https://isa-tools.org/format/specification.html" target="_blank">https://isa-tools.org/format/specification.html</a></figcaption>
+  <figcaption> Image source (left panel): <a href="https://isa-tools.org/format/specification.html" target="_blank">https://isa-tools.org/format/specification.html    </a>
+</div></figcaption>
 </div>
 
 Your ARC has one `isa.investigation.xlsx` workbook at its root (i.e. every ARC collects the data to one investigation). Each study or assay that you add to your ARC contains one `isa.study.xlsx` or `isa.assay.xlsx`, respectively. 
@@ -71,7 +75,8 @@ Your ARC has one `isa.investigation.xlsx` workbook at its root (i.e. every ARC c
 
 ## ISA-Tab for intuitive collection of metadata
 
-The most user-intuitive format of the ISA metadata framework is <a href="https://isa-specs.readthedocs.io/en/latest/isatab.html" target="_blank">ISA-Tab</a>. As the name suggest, it's a tabular format. Hence, you can view the files in a spread-sheet program of choice. 
+The most user-intuitive format of the ISA metadata framework is <a href="https://isa-specs.readthedocs.io/en/latest/isatab.html" target="_blank">ISA-Tab    </a>
+</div>. As the name suggest, it's a tabular format. Hence, you can view the files in a spread-sheet program of choice. 
 
 
 <div>

@@ -16,12 +16,12 @@ todo:
 
 In this guide we focus on explaining the ARC structure and its different components.
 
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
     <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
-</a>
-<br>
-<br>
+    </a>
+</div>
 
 ## Viola's ARC
 

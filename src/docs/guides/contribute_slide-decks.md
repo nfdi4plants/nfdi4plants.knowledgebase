@@ -16,12 +16,14 @@ This guide tries to describe the current way to prepare and contribute slide dec
 
 :construction: The mechanism to prepare and render slide decks in the knowledge base is currently under construction. So this guide is incomplete.
 
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
   <span class="badge-category">User</span><span class="badge-selected" id="badge-datasteward">Data Steward</span>  
   <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Tutorial</span>
-</a>
-<br>
-<br>
+    </a>
+</div>
+
+
 
 ## Before we start
 
@@ -33,7 +35,7 @@ This guide tries to describe the current way to prepare and contribute slide dec
 - :bulb: Check out https://marp.app for official docs and tutorials
 
 </div>
-<br>
+
 
 
 ## Creating a marp slide decks

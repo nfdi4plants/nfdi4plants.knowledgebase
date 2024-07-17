@@ -17,18 +17,20 @@ todo:
 
 DataPLANT provides the tool [Swate](./../implementation/Swate.html) to support you in data annotation. In this guide, we focus on adding metadata to your studies and assays with our tool. Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses.
 
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
   <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
   <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-</a>
+    </a>
+</div>
 
-<br>
-<br>
+
+
 
 ## Before we can start
 
 :bulb: Consider reading about [Swate](./../implementation/Swate.html)
-<br>
+
 :bulb: We assume that you already created an ARC that contains one or more isa.study.xlsx and isa.assay.xlsx file(s), respectively.
 
 ## Open or create an annotation table
@@ -36,12 +38,12 @@ DataPLANT provides the tool [Swate](./../implementation/Swate.html) to support y
 - To create an annotation table with the [Swate standalone](https://swate-alpha.nfdi4plants.org/) in your browser, click "New File" and select which kind of annotation table you want to create. If you already created a isa.study.xlsx or isa.assay.xlsx file, you can select "Import File" to modify and add to it.
 
 <img src="./../img/Swate_a_NewFile.PNG" style="height: 250px">
-<br>
+
 
 - To create an annotation table within ARCitect, add a new table to your assay or study by clicking the plus (+) symbol next to your metadata sheet
 
 <img src="./../img/Swate_a_Arcitect_newTable.png" style="height: 400px">
-<br>
+
 
 - Fill in the metadata sheet of your study or assay
 
@@ -65,7 +67,7 @@ Briefly:
 4. If you want to add a building block with a unit, activate the unit box ( d ) and use the search field to look for a fitting unit term, e.g. degree Celsius as unit for Parameter \[temperature\].
 
 <img src="./../img/Swate_a_Addbuildingblock_2.png" style="height: 300px">
-<br>
+
 
 5. For more information on customizing your annotation table click [here](./SwateManual/Docs03-Building-Blocks.html).
 
