@@ -26,16 +26,23 @@ In this guide we show you how you can actively handle large data files in your A
 
 ## Before we can start
 
-:ballot_box_with_check: You have created an ARC before using the [ARC Commander](./../implementation/ArcCommander.html)  
-:ballot_box_with_check: The latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) is installed on your computer  
+:ballot_box_with_check: You have created an ARC before using the [ARCitect](./../ARCitect-Manual/index.html) or [ARC Commander](./../implementation/ArcCommander.html)  
 :ballot_box_with_check: You have a [DataPLANT](https://register.nfdi4plants.org) account  
 :ballot_box_with_check: Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via personal access token
 
 ## Large File Storage (LFS)
 
-ARCs and the DataHUB come with a mechanism to sync and store large files called *Large File Storage (LFS)*. LFS is an efficient way to store your large data files. These files are called "LFS objects". Rather than checking every file during every `arc sync`, the ARC Commander first checks *wether there was a change at all*. And only if this is the case, it scans *what* was changed. This way it saves time and computing power compared to always scanning all large files for possible changes. 
+ARCs and the DataHUB come with a mechanism to sync and store large files called *Large File Storage (LFS)*. LFS is an efficient way to store your large data files. These files are called "LFS objects". Rather than checking every file during every `arc sync`, the ARCitect or ARC Commander first checks *wether there was a change at all*. And only if this is the case, it scans *what* was changed. This way it saves time and computing power compared to always scanning all large files for possible changes.
 
-By default, the ARC Commander tracks the following files via LFS: 
+### ARCitect
+
+- The ARCitect offers to activate or deactivate the use of LFS via checkboxes in the "Download" as well as the "DataHUB sync" menus, respectively.
+- In addition you can set a threshold for what you consider a large file in the "Commit" menu.
+- Finally, you can individually download large files via right-click -> "Download LFS File"
+
+### ARC Commander
+
+By default, the ARC Commander tracks the following files via LFS:
   1. All files stored in an assay's `dataset` folder, and
   2. All files with a size larger than 150 MB. 
 
@@ -45,11 +52,11 @@ The threshold of 150 MB can easily be adjusted using the ARC Commander. For inst
 arc config set -g -n "general.gitlfsbytethreshold" -v "5000000"
 ```
 
-:bulb: The LFS system is also the reason why [git LFS](https://git-lfs.github.com/) needs to be installed prior to using the ARC Commander. 
+:bulb: The LFS system is also the reason why [git LFS](https://git-lfs.github.com/) needs to be installed prior to using the ARC Commander.
 
-## Track files via LFS
+#### Track files via LFS
 
-In addition to the defaults, you can also actively choose, which files to track via LFS. 
+In addition to the defaults, you can also actively choose, which files to track via LFS.
 
 1. Update your local ARC via `arc sync`
 2. Add large files or folders by copying or moving them to your ARC
@@ -63,7 +70,7 @@ git add .gitattributes
 4. Sync your ARC to the DataHUB via `arc sync`
 5. Open your ARC in the DataHUB and navigate to the folder with LFS objects and see them flagged as "LFS".
 
-## Downloading an ARC without large data files
+#### Downloading an ARC without large data files
 
 Sometimes you may want to download your ARC to a smaller computer, where you do not need a full copy of your ARC including all its large data files. For instance, you just want to work with smaller derived data sets or want to update ISA metadata. 
 In this case, you can add the `-n` or `--nolfs` flag to your `arc get` command: 
@@ -81,7 +88,7 @@ You can download this ARC without the LFS objects via
 arc get --nolfs -r https://git.nfdi4plants.org/shiltemann/physcomitrium-patens-light-signaling-2022/
 ```
 
-## Selectively download large files
+#### Selectively download large files
 
 If at some point you wish to selectively download one or more of the LFS objects of your ARC to that machine, you can do so via `git lfs pull --include "<path/to/fileOrFolder>"`
 
@@ -91,7 +98,7 @@ For example, the following command will download one of the large RNASeq data fi
 git lfs pull --include "assays/RNASeq/dataset/R19/R19_1.fq.gz"
 ```
 
-## Download all large files in the ARC
+#### Download all large files in the ARC
 
 If at some point you wish to download **all** LFS files of your ARC, you can use the following command
 
