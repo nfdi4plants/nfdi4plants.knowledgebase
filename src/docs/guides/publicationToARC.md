@@ -18,13 +18,15 @@ add sidebar: _sidebars/mainSidebar.md
 In this guide we collect recommendations and thoughts on creating an ARC based on a publication and associated published datasets.
 This is not the typical entry into an ARC, but rather retrospective. It might however help to build community-tailored showcases; i.e. showing what a project could look like as an ARC.
 
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
   <span class="badge-category">User</span><span class="badge-selected" id="badge-datasteward">Data Steward</span>
   <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-</a>
+    </a>
+</div>
 
-<br>
-<br>
+
+
 
 ## Before we can start
 
@@ -36,7 +38,7 @@ This guide assumes you know
 - :ballot_box_with_check: the different [ISA file types](./isa_FileTypes.html)
 - :ballot_box_with_check: which tools to use (e.g. [ARC Commander](./../ArcCommanderManual/index.html), [ARCitect](./../ARCitect-Manual/index.html), [DataHUB](./../DataHUB-Manual/index.html)) and how.
 
-<br>
+
 
 </div>
 

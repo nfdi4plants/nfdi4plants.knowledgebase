@@ -18,18 +18,20 @@ todo:
 
 DataPLANT provides the tool [Swate](./../implementation/Swate.html) to support you in data annotation. In this guide, we want to introduce you to basic functionalities of SWATE which you can use to on add metadata to your studies and assays. 
 
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
   <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
   <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-</a>
+    </a>
+</div>
 
-<br>
-<br>
+
+
 
 ## Before we can start
 
 :bulb: Consider reading about [Swate](./../implementation/Swate.html)
-<br>
+
 :bulb: We assume that you already created an ARC that contains one or more studies and assays. If not consider watching the [ARCitect Quickstart Videos](./arcitect_QuickStart_Videos.html)
 first.
 

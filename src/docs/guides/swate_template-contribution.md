@@ -18,10 +18,12 @@ add sidebar: _sidebars\mainSidebar.md
 
 This tutorial guides you how to create Swate metadata templates with [Swate-alpha](https://swate-alpha.nfdi4plants.org/).
 
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
   <span class="badge-category">User</span><span class="badge-selected" id="badge-datasteward">Data Steward</span>
   <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-</a>
+    </a>
+</div>
  </br>
  </br>
 

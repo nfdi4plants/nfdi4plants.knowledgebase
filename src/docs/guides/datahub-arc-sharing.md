@@ -18,10 +18,12 @@ add sidebar: _sidebars/mainSidebar.md
 In this guide we explain the different ways offered by the DataHUB to share an ARC with collaborators.
 
 <div style="padding-bottom: 20px">
+    <div style="padding-bottom: 20px">
     <a href="./index.html">
         <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
         <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
-    </a>
+        </a>
+</div>
 </div>
 
 ## Before we can start

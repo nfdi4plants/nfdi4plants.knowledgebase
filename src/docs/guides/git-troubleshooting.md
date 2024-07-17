@@ -15,12 +15,14 @@ add sidebar: _sidebars/mainSidebar.md
 - This is mostly for data stewards.
 - This is not a git tutorial, but rather a small start for troubleshooting.
 
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
   <span class="badge-category">User</span><span class="badge-selected" id="badge-datasteward">Data Steward</span>  
   <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Tutorial</span>
-</a>
-<br>
-<br>
+    </a>
+</div>
+
+
 
 ## Background
 
@@ -53,7 +55,7 @@ Some reasons, why we now sometimes run into git issues
 
 error message* | possible reason | possible solution
 --- | --- | ---
-`remote: HTTP Basic: Access denied` <br><br> `fatal: Authentication failed for 'https://git.nfdi4plants.org/UserName/ARCname'` | Your computer is not "linked" to your DataHUB account | [Access Denied](#access-denied)
+`remote: HTTP Basic: Access denied`  `fatal: Authentication failed for 'https://git.nfdi4plants.org/UserName/ARCname'` | Your computer is not "linked" to your DataHUB account | [Access Denied](#access-denied)
 `error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCname' hint: Your push was rejected due to missing or corrupt local objects.` | You tried to upload LFS-tracked files that are not present on your computer | [Git-LFS](#git-lfs)
 `error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCname' hint: Updates were rejected because the remote contains work that you do not have locally.` | Your local ARC is out of sync with the remote. | [ARC not in sync with the DataHUB](#arc-not-in-sync-with-the-datahub)
 `ERROR: Can not sync with remote as no remote repository address was specified.` | There is no URL specified for your ARC's remote | [Git remote](#git-remote)

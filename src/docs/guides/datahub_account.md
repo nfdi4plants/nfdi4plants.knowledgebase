@@ -14,12 +14,14 @@ add sidebar: _sidebars/mainSidebar.md
 
 In this guide we show you how to change the password or enable Two Factor Authentication (2FA) to secure your DataPLANT account.
 
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
     <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-</a>
-<br>
-<br>
+    </a>
+</div>
+
+
 
 ## DataPLANT account settings
 

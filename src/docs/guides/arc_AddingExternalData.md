@@ -15,16 +15,12 @@ add sidebar: _sidebars/mainSidebar.md
 
 In this guide we recommend routines to properly add data from external sources to your ARC. 
 
-<a href="./index.html">
-    <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>    
-</a>
-
-<br>
-<br>
-
-:warning:
-This guide presents an interim solution. We are working on a more user-friendly implementation.
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
+        <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
+        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>    
+    </a>
+</div>
 
 ## Before we can start
 

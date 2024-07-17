@@ -11,21 +11,18 @@ add support: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-:construction: work in progress :construction:
-
 <!-- http://127.0.0.1:8080/docs/guides/ARC-enablingPlatforms.html -->
 
 ## About this guide
 
 In this guide we explore how the ARC can help streamline data flows and project management in enabling platforms.
 
-<a href="./index.html">
-    <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
-</a>
-
-<br>
-<br>
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
+        <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
+        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
+    </a>
+</div>
 
 ## Before we can start
 
@@ -36,10 +33,7 @@ It helps to be familiar with
 - :ballot_box_with_check: the concept of the [ARC](./../implementation/AnnotatedResearchContext.html)
 - :ballot_box_with_check: the different [ISA file types](./isa_FileTypes.html)
 - :ballot_box_with_check: the [DataHUB](./../implementation/DataHub.html)
-<br>
-<br>
 - :bulb: Note that this guide can only stay at a very abstract level. Feel free to contact us to work out a suitable solution for your platform together.
-- :warning: In part, this guide presents interim solutions for which we are working on more user-friendly implementations. Your feedback helps!
 
 </div>
 
@@ -117,19 +111,13 @@ The standardized ARC structure helps with routine computations:
 
 - The ARC's simple [directory structure](./../implementation/AnnotatedResearchContext.html) itself helps building routines, no matter whether you work with code or licensed software. Across projects, you and your collaborators know, where to find metadata and raw data, where to store processed data and results.
 - The ARC facilitates task automation such as quality control and validation within one project or across multiple ARCs covering routine measurements
-- Code-based computations can be designed as reusable and reproducible workflows using Common Workflow Language (CWL)
-
-<!-- TODO: Link to CWL article / guide -->
-:construction: Articles and guides on CWL are currently work in progress.
+- Code-based computations can be designed as reusable and reproducible workflows using [Common Workflow Language (CWL)](./ComputationalWorkflows/index.html)
 
 ### Data publication
 
 At some point you and your collaborator want to [publish the data](./../fundamentals/DataPublications.html) resulting from the project.
 
-There are two major options: You can publish the current version of the ARC and receive a [DOI](./../fundamentals/PersistentIdentifiers.html). Some scientific journals require data to be published in  [domain-specific repositories](./../fundamentals/PublicDataRepositories.html), specialized for a certain type of assay. For this purpose converters help you export the relevant dataset and metadata into a repository-accepted format.
-
-<!-- TODO: Link to DOI and converter article / guide -->
-:construction: Both these routines are work in progress.
+There are two major options: You can publish the current version of the ARC and receive a [DOI](./../DataHUB-Manual/datahub-data-publications.html). Some scientific journals require data to be published in  [domain-specific repositories](./../fundamentals/PublicDataRepositories.html), specialized for a certain type of assay. For this purpose converters help you export the relevant dataset and metadata into a repository-accepted format.
 
 :bulb: We are working on converters to read and reshape the relevant data and metadata of your ARC into a format accepted by domain-specific repositories. You can support this by telling us relevant repositories for your type of data or help creating [templates](./../SwateManual/Docs05-Templates.html).
 
