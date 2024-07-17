@@ -113,38 +113,16 @@
           <a href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">
             Annotated Research Context
           </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ARCUserJourney.html">
-            User Journey
-          </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/ARC-specification.html">
             ARC specification
           </a>
         </nfdi-sidebar-eleneo>
-        <nfdi-sidebar-eleneo slot="child">
-          <a href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">
-            ARC Commander
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html">
-            QuickStart
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart_expert.html">
-            QuickStart (Experts)
-          </a>
-        </nfdi-sidebar-eleneo>
-        <nfdi-sidebar-eleneo slot="child">
-          <a href="/nfdi4plants.knowledgebase/docs/implementation/Swate.html">
-            Swate
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
-            QuickStart
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_walkthrough.html">
-            Walk-through
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/BestPracticesForDataAnnotation.html">
-            Best Practices For Data Annotation
-          </a>
-        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">
+          ARC Commander
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/Swate.html">
+          Swate
+        </a>
         <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/MetadataQuiz.html">
           MetadataQuiz
         </a>
@@ -274,6 +252,9 @@
         <a href="/nfdi4plants.knowledgebase/docs/SwateManual/index.html">
           Swate Manual
         </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
+          QuickStart
+        </a>
         <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart_Videos.html">
           QuickStart - Videos
         </a>
@@ -390,14 +371,17 @@
           <a href="/nfdi4plants.knowledgebase/docs/guides/index-CreateYourARC.html">
             Create your ARC
           </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart.html">
+            ARCitect QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart_Videos.html">
+            ARCitect QuickStart - Videos
+          </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html">
             ARC Commander QuickStart
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart_expert.html">
             ARC Commander QuickStart (Experts)
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart.html">
-            ARCitect QuickStart
           </a>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
@@ -415,6 +399,9 @@
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
             Swate QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart_Videos.html">
+            Swate QuickStart - Videos
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_walkthrough.html">
             Swate Walk-through
@@ -583,12 +570,12 @@ img, figcaption{
 </style>
 <nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
 <p>In this guide we introduce the different ISA file types used in the ARC.</p>
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
     <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
-</a>
-<br>
-<br>
+    </a>
+</div>
 <hr />
 <nfdi-h2 id="before-we-can-start">Before we can start</nfdi-h2>
 <div id="before-start">
@@ -600,16 +587,19 @@ img, figcaption{
 </div>
 <hr />
 <nfdi-h2 id="arc-builds-on-isa">ARC builds on ISA</nfdi-h2>
-<p>The ARC builds on the <a href="https://isa-specs.readthedocs.io/en/latest/isamodel.html" target="_blank">ISA Abstract Model</a> for metadata annotation.
-Briefly, the ISA model comes with a hierarchy (ISA: Investigation - Study - Assay) that aligns well with most projects in (plant) biology labs. It allows to group multiple assays to one study, and multiple studies to one investigation.</p>
+<p>The ARC builds on the <a href="https://isa-specs.readthedocs.io/en/latest/isamodel.html" target="_blank">ISA Abstract Model    </a></p>
+</div> for metadata annotation.
+Briefly, the ISA model comes with a hierarchy (ISA: Investigation - Study - Assay) that aligns well with most projects in (plant) biology labs. It allows to group multiple assays to one study, and multiple studies to one investigation.
 <div>
   <img src="./../img/ISAmodel_ARC01_img01.svg">
-  <figcaption> Image source (left panel): <a href="https://isa-tools.org/format/specification.html" target="_blank">https://isa-tools.org/format/specification.html</a></figcaption>
+  <figcaption> Image source (left panel): <a href="https://isa-tools.org/format/specification.html" target="_blank">https://isa-tools.org/format/specification.html    </a>
+</div></figcaption>
 </div>
 <p>Your ARC has one <code>isa.investigation.xlsx</code> workbook at its root (i.e. every ARC collects the data to one investigation). Each study or assay that you add to your ARC contains one <code>isa.study.xlsx</code> or <code>isa.assay.xlsx</code>, respectively.</p>
 <hr />
 <nfdi-h2 id="isa-tab-for-intuitive-collection-of-metadata">ISA-Tab for intuitive collection of metadata</nfdi-h2>
-<p>The most user-intuitive format of the ISA metadata framework is <a href="https://isa-specs.readthedocs.io/en/latest/isatab.html" target="_blank">ISA-Tab</a>. As the name suggest, it's a tabular format. Hence, you can view the files in a spread-sheet program of choice.</p>
+<p>The most user-intuitive format of the ISA metadata framework is <a href="https://isa-specs.readthedocs.io/en/latest/isatab.html" target="_blank">ISA-Tab    </a></p>
+</div>. As the name suggest, it's a tabular format. Hence, you can view the files in a spread-sheet program of choice. 
 <div>
   <img src="./../img/ISAmodel_ARC01_img02.svg">
   <figcaption>Comparison of the ISA file types. Grey cells: keys. White cells: values.</figcaption>

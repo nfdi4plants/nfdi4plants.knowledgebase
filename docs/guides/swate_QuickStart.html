@@ -113,38 +113,16 @@
           <a href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">
             Annotated Research Context
           </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ARCUserJourney.html">
-            User Journey
-          </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/ARC-specification.html">
             ARC specification
           </a>
         </nfdi-sidebar-eleneo>
-        <nfdi-sidebar-eleneo slot="child">
-          <a href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">
-            ARC Commander
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html">
-            QuickStart
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart_expert.html">
-            QuickStart (Experts)
-          </a>
-        </nfdi-sidebar-eleneo>
-        <nfdi-sidebar-eleneo slot="child">
-          <a href="/nfdi4plants.knowledgebase/docs/implementation/Swate.html">
-            Swate
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
-            QuickStart
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_walkthrough.html">
-            Walk-through
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/BestPracticesForDataAnnotation.html">
-            Best Practices For Data Annotation
-          </a>
-        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">
+          ARC Commander
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/Swate.html">
+          Swate
+        </a>
         <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/MetadataQuiz.html">
           MetadataQuiz
         </a>
@@ -274,6 +252,9 @@
         <a href="/nfdi4plants.knowledgebase/docs/SwateManual/index.html">
           Swate Manual
         </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
+          QuickStart
+        </a>
         <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart_Videos.html">
           QuickStart - Videos
         </a>
@@ -390,14 +371,17 @@
           <a href="/nfdi4plants.knowledgebase/docs/guides/index-CreateYourARC.html">
             Create your ARC
           </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart.html">
+            ARCitect QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart_Videos.html">
+            ARCitect QuickStart - Videos
+          </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html">
             ARC Commander QuickStart
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart_expert.html">
             ARC Commander QuickStart (Experts)
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart.html">
-            ARCitect QuickStart
           </a>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
@@ -415,6 +399,9 @@
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
             Swate QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart_Videos.html">
+            Swate QuickStart - Videos
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_walkthrough.html">
             Swate Walk-through
@@ -572,27 +559,24 @@
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
 <p>DataPLANT provides the tool <a href="./../implementation/Swate.html">Swate</a> to support you in data annotation. In this guide, we focus on adding metadata to your studies and assays with our tool. Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses.</p>
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
   <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
   <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-</a>
-<br>
-<br>
+    </a>
+</div>
 <nfdi-h2 id="before-we-can-start">Before we can start</nfdi-h2>
-<p>💡 Consider reading about <a href="./../implementation/Swate.html">Swate</a>
-<br>
-💡 We assume that you already created an ARC that contains one or more isa.study.xlsx and isa.assay.xlsx file(s), respectively.</p>
+<p>💡 Consider reading about <a href="./../implementation/Swate.html">Swate</a></p>
+<p>💡 We assume that you already created an ARC that contains one or more isa.study.xlsx and isa.assay.xlsx file(s), respectively.</p>
 <nfdi-h2 id="open-or-create-an-annotation-table">Open or create an annotation table</nfdi-h2>
 <ul>
 <li>To create an annotation table with the <a href="https://swate-alpha.nfdi4plants.org/">Swate standalone</a> in your browser, click &quot;New File&quot; and select which kind of annotation table you want to create. If you already created a isa.study.xlsx or isa.assay.xlsx file, you can select &quot;Import File&quot; to modify and add to it.</li>
 </ul>
 <img src="./../img/Swate_a_NewFile.PNG" style="height: 250px">
-<br>
 <ul>
 <li>To create an annotation table within ARCitect, add a new table to your assay or study by clicking the plus (+) symbol next to your metadata sheet</li>
 </ul>
 <img src="./../img/Swate_a_Arcitect_newTable.png" style="height: 400px">
-<br>
 <ul>
 <li><p>Fill in the metadata sheet of your study or assay</p>
 </li>
@@ -620,7 +604,6 @@ Briefly:</p>
 </li>
 </ol>
 <img src="./../img/Swate_a_Addbuildingblock_2.png" style="height: 300px">
-<br>
 <ol start="5">
 <li>For more information on customizing your annotation table click <a href="./SwateManual/Docs03-Building-Blocks.html">here</a>.</li>
 </ol>

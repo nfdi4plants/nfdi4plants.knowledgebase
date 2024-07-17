@@ -113,38 +113,16 @@
           <a href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">
             Annotated Research Context
           </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ARCUserJourney.html">
-            User Journey
-          </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/ARC-specification.html">
             ARC specification
           </a>
         </nfdi-sidebar-eleneo>
-        <nfdi-sidebar-eleneo slot="child">
-          <a href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">
-            ARC Commander
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html">
-            QuickStart
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart_expert.html">
-            QuickStart (Experts)
-          </a>
-        </nfdi-sidebar-eleneo>
-        <nfdi-sidebar-eleneo slot="child">
-          <a href="/nfdi4plants.knowledgebase/docs/implementation/Swate.html">
-            Swate
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
-            QuickStart
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_walkthrough.html">
-            Walk-through
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/BestPracticesForDataAnnotation.html">
-            Best Practices For Data Annotation
-          </a>
-        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">
+          ARC Commander
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/Swate.html">
+          Swate
+        </a>
         <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/MetadataQuiz.html">
           MetadataQuiz
         </a>
@@ -274,6 +252,9 @@
         <a href="/nfdi4plants.knowledgebase/docs/SwateManual/index.html">
           Swate Manual
         </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
+          QuickStart
+        </a>
         <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart_Videos.html">
           QuickStart - Videos
         </a>
@@ -390,14 +371,17 @@
           <a href="/nfdi4plants.knowledgebase/docs/guides/index-CreateYourARC.html">
             Create your ARC
           </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart.html">
+            ARCitect QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart_Videos.html">
+            ARCitect QuickStart - Videos
+          </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html">
             ARC Commander QuickStart
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart_expert.html">
             ARC Commander QuickStart (Experts)
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart.html">
-            ARCitect QuickStart
           </a>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
@@ -415,6 +399,9 @@
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
             Swate QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart_Videos.html">
+            Swate QuickStart - Videos
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_walkthrough.html">
             Swate Walk-through
@@ -572,36 +559,34 @@
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
 <p>In this guide we show you how to keep files from syncing to the DataHUB. This can help to keep large intermediate, sensitive or unpublished data from uploading to the DataHUB.</p>
-<a href="./index.html">
-    <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>    
-</a>
-<br>
-<br>
-<p>⚠️
-This guide presents an interim solution. We are working on a more user-friendly implementation.</p>
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
+        <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
+        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
+    </a>
+</div>
 <nfdi-h2 id="before-we-can-start">Before we can start</nfdi-h2>
 <p>☑️ You have created an ARC before using the <a href="./../implementation/ArcCommander.html">ARC Commander</a><br />
 ☑️ The latest version of the <a href="https://github.com/nfdi4plants/arcCommander/releases">ARC Commander</a> is installed on your computer<br />
 ☑️ You have a <a href="https://register.nfdi4plants.org">DataPLANT</a> account<br />
 ☑️ Your computer is linked to the <a href="https://git.nfdi4plants.org">DataHUB</a> via personal access token</p>
 <nfdi-h2 id="the.gitignore-file">The .gitignore file</nfdi-h2>
-<p>Every ARC comes with a special file called <code>.gitignore</code>, that resides in the root of your ARC. Files and folders listed in your ARC's <code>.gitignore</code> will be <em>ignored</em> by the ARC's version control system. That means changes to those files will not be tracked by the ARC Commander nor will the files be synced to the DataHUB.</p>
-<p>💡 If <code>.gitignore</code> does not exist in your ARC, you can simply create it in your ARC's root using a text editor.</p>
+<p>Every ARC comes with a special file called <code>.gitignore</code>, that resides in the root of your ARC. Files and folders listed in your ARC's <code>.gitignore</code> will be <em>ignored</em> by the ARC's version control system. That means changes to those files will not be tracked by ARC tools (e.g. ARC Commander or ARCitect) nor will the files be synced to the DataHUB.</p>
+<p>💡 If <code>.gitignore</code> does not exist in your ARC, you can simply create it in your ARC's root using a text editor or the ARCitect.</p>
 <p>💡 By default, this file is hidden from your File Explorer (<a href="https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5#WindowsVersion=Windows_11">Windows</a>) or Finder (<a href="https://nordlocker.com/blog/how-to-show-hidden-files-mac/">macOS</a>).</p>
-<p>💡 Since files added to <code>.gitignore</code> on one machine will not be synced to the DataHUB, they will also not automatically become available on another machine, where you work with your ARC.</p>
+<p>💡 Since files added to <code>.gitignore</code> on one machine will not be synced to the DataHUB, they will also become available on another machine, to where you sync your ARC.</p>
 <p>⚠️ If a file in your ARC was already synced to the DataHUB, adding it to <code>.gitignore</code> will only keep it from future syncs, it will however not remove the existing file.</p>
 <nfdi-h2 id="adding-files-to.gitignore">Adding files to .gitignore</nfdi-h2>
 <ol>
-<li>Open your ARC in your File Explorer (Windows) or Finder (macOS)</li>
+<li>Open your ARC in the ARCitect or in your File Explorer (Windows) or Finder (macOS)</li>
 <li>Add a new file <code>my-personal-notes.txt</code> or folder <code>intermediate-results</code> to the ARC</li>
-<li>Open <code>.gitignore</code> in a text editor.
+<li>Open <code>.gitignore</code> via ARCitect or a text editor.
 <ol>
 <li>Add a new line <code>my-personal-notes.txt</code> or <code>intermediate-results/</code> at the end of the file</li>
 <li>Save and close the file.</li>
 </ol>
 </li>
-<li>Sync the ARC via <code>arc sync</code></li>
+<li>Sync the ARC via ARC commander or ARCitect.</li>
 <li>Check your ARC in the DataHUB, to see that the file <code>my-personal-notes.txt</code> or folder <code>intermediate-results/</code> does not exist there.</li>
 </ol>
 <nfdi-h2 id="allowing-files-to-sync">Allowing files to sync</nfdi-h2>

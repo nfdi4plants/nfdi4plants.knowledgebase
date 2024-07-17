@@ -113,38 +113,16 @@
           <a href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">
             Annotated Research Context
           </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ARCUserJourney.html">
-            User Journey
-          </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/ARC-specification.html">
             ARC specification
           </a>
         </nfdi-sidebar-eleneo>
-        <nfdi-sidebar-eleneo slot="child">
-          <a href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">
-            ARC Commander
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html">
-            QuickStart
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart_expert.html">
-            QuickStart (Experts)
-          </a>
-        </nfdi-sidebar-eleneo>
-        <nfdi-sidebar-eleneo slot="child">
-          <a href="/nfdi4plants.knowledgebase/docs/implementation/Swate.html">
-            Swate
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
-            QuickStart
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_walkthrough.html">
-            Walk-through
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/BestPracticesForDataAnnotation.html">
-            Best Practices For Data Annotation
-          </a>
-        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">
+          ARC Commander
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/Swate.html">
+          Swate
+        </a>
         <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/MetadataQuiz.html">
           MetadataQuiz
         </a>
@@ -274,6 +252,9 @@
         <a href="/nfdi4plants.knowledgebase/docs/SwateManual/index.html">
           Swate Manual
         </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
+          QuickStart
+        </a>
         <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart_Videos.html">
           QuickStart - Videos
         </a>
@@ -390,14 +371,17 @@
           <a href="/nfdi4plants.knowledgebase/docs/guides/index-CreateYourARC.html">
             Create your ARC
           </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart.html">
+            ARCitect QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart_Videos.html">
+            ARCitect QuickStart - Videos
+          </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html">
             ARC Commander QuickStart
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart_expert.html">
             ARC Commander QuickStart (Experts)
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart.html">
-            ARCitect QuickStart
           </a>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
@@ -415,6 +399,9 @@
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
             Swate QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart_Videos.html">
+            Swate QuickStart - Videos
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_walkthrough.html">
             Swate Walk-through
@@ -573,25 +560,24 @@
       <nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
 <p>DataPLANT provides the tool <a href="./../implementation/Swate.html">Swate</a> to support you in data annotation. It is both integrated into <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html">ARCitect</a> and available as a <a href="https://swate-alpha.nfdi4plants.org/">browser version</a>.
 In this walk-through, we guide you through annotating data using <a href="./../implementation/Swate.html">Swate</a> with a show-case example.</p>
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
     <span class="badge-category">Mode</span><span class="badge-selected" id="badge-walkthrough">Walk-through</span>
-</a>
-<br>
-<br>
+    </a>
+</div>
 <nfdi-h2 id="before-we-can-start">Before we can start</nfdi-h2>
 <div id="before-start">
 <ul>
 <li>💡 Consider reading about <a href="./../implementation/Swate.html">Swate</a></li>
 </ul>
-<p>Create and/or open an annotation table as described in the <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">Swate Quickstart</a>
-<br></p>
+</div>
+<p>Create and/or open an annotation table as described in the <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">Swate Quickstart</a></p>
 <nfdi-h2 id="swate-overview">Swate Overview</nfdi-h2>
 <figure>
   <img src="./../img/Swate_a_overview2.png">
   <figcaption>Major areas of the Swate user interface.</figcaption>
 </figure>
-<br>
 <!-- 
 ## A small detour on "Excel Tables"
 
@@ -611,10 +597,8 @@ Example workflows with three *processes* each:
 <nfdi-h2 id="add-building-blocks-to-create-your-annotation-table">Add building blocks to create your annotation table</nfdi-h2>
 <p>Each annotation should start with an <em>Input</em> and end with an <em>Output</em> column. To add and specify your <em>Input</em> building block, click either the &quot;Add Building Block&quot; widget on the top (A) or use the &quot;Building Blocks&quot; function in the sidebar (B). Select <em>Input</em> from the drop-down menu instead of <em>Parameter</em> and select <em>Source Name</em> as input type. Then click <kbd>Add column</kbd>. Add <em>Output [Sample Name]</em> analogously.</p>
 <p><img src="./../img/Swate_a_buildingblockcategories2.png" alt="Alt-Text" /></p>
-<br>
 <blockquote>
-<p>💡 Only one <em>Input</em>, one <em>Output</em> and one of each <em>Protocol</em> columns can be added per table.
-<br></p>
+<p>💡 Only one <em>Input</em>, one <em>Output</em> and one of each <em>Protocol</em> columns can be added per table.</p>
 </blockquote>
 <p>Now, let's add a descriptive building block.</p>
 <ol>
@@ -635,14 +619,12 @@ Example workflows with three *processes* each:
 </ol>
 <blockquote>
 <p>💡 This adds four columns to your table, one visible and <strong>three</strong> hidden.
-When filling any cell below <code>Parameter [sample volume]</code> you can now see the numbers being complemented with the chosen unit, e.g. <code>10.00 microliter</code>.
-<br></p>
+When filling any cell below <code>Parameter [sample volume]</code> you can now see the numbers being complemented with the chosen unit, e.g. <code>10.00 microliter</code>.</p>
 </blockquote>
 <nfdi-h2 id="change-the-order-of-your-columns-or-delete-columns">Change the order of your columns or delete columns</nfdi-h2>
 <p>At this point, your table should look similar to this:</p>
 <p><img src="./../img/Swate_a_movecolumn2.png" alt="Alt-Text" /></p>
-<p>We now want to move the <em>Output</em> column to the end of your table. For this, right-click into any cell (except the header) of the column that you want to move. Now you can click &quot;Move Column&quot; and select the position that the column should be moved to (in this case: 3). If your table does not contain empty cells yet, you can add any number of rows with the plus symbol. Right-clicking into cells also gives the option of deleting a column or row.
-<br></p>
+<p>We now want to move the <em>Output</em> column to the end of your table. For this, right-click into any cell (except the header) of the column that you want to move. Now you can click &quot;Move Column&quot; and select the position that the column should be moved to (in this case: 3). If your table does not contain empty cells yet, you can add any number of rows with the plus symbol. Right-clicking into cells also gives the option of deleting a column or row.</p>
 <nfdi-h2 id="use-a-template">Use a template</nfdi-h2>
 <ol>
 <li><p>Use the &quot;Add Template&quot; widget on the top or navigate to &quot;Templates&quot; in the sidebar and click <kbd>Browse database</kbd>.</p>
@@ -655,8 +637,7 @@ When filling any cell below <code>Parameter [sample volume]</code> you can now s
 <li><p>Click <kbd>Add template</kbd> to add all building blocks from the template to your table, which <u>do not exist yet</u>.</p>
 </li>
 </ol>
-<p>If there are any building blocks which do not fit your experiment you can delete the columns as described above.
-<br></p>
+<p>If there are any building blocks which do not fit your experiment you can delete the columns as described above.</p>
 <nfdi-h2 id="your-isa-table-is-ready-to-fill">Your ISA table is ready to fill 🎉</nfdi-h2>
 <p>Go ahead, adjust the building blocks you want to use to describe your experiment as you see fit. Insert values for <em>Input</em> and <em>Output</em> and fill the cells of your <em>Parameter</em>, <em>Characteristic</em> or <em>Component</em> columns using the ontology term search. You can activate the ontology term search directly in the cells of your table with the magnifying glass symbol or you can use the &quot;Ontology term search&quot; in the side bar. Instructions for annotating your data can also be found in the <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">Swate Quickstart</a> and in the Swate Manual (<a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs04-Ontology-Term-Search.html">Filling cells with ontology terms</a>).</p>
 
