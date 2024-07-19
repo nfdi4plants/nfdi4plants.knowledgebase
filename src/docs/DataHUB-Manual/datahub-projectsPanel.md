@@ -11,7 +11,7 @@ add support: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-The projects panel lists all you ARC projects.
+The projects panel lists all ARCs you have access to.
 
 <img src="./../img/datahub-projectsPanel.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
 

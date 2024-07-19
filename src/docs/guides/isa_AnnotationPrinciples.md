@@ -15,13 +15,15 @@ add sidebar: _sidebars/mainSidebar.md
 
 Annotation of data and workflows within the ARC builds on the ISA model. In this guide we introduce the different building blocks available to annotate your workflows in isa.study.xlsx and isa.assay.xlsx workbooks. 
 
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
   <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
   <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
-</a>
+    </a>
+</div>
 
-<br>
-<br>
+
+
 
 
 <style>

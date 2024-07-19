@@ -16,13 +16,12 @@ status: published
 
 In this guide we focus on how to use the [ARC Commander](./../implementation/ArcCommander.html) to create your ARC and structure, store and share your data.
 
-<a href="./index.html">
-    <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-</a>
-
-<br>
-<br>
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
+        <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
+        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
+    </a>
+</div>
 
 ## Before we can start
 

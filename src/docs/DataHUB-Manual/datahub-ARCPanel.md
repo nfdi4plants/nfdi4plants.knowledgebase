@@ -18,17 +18,15 @@ The ARC Panel is the main working area for your ARC.
 
 In the sidebar to the left, you can
 
-1. access the project information (1), e.g. invite members to the ARC
-2. follow the progress of your ARC repository (2),
-3. organize tasks in issue lists and boards (3), 
-4. take notes in a wiki to your ARC (4),
-5. adapt the [settings (5) of the ARC](datahub-ARCSettings.html). 
+1. manage the project (1), e.g. invite members to the ARC (click on Manage to reveal the drop down menu with all functionalities; applies to (2), (3) and (4)),
+2. plan (2) and organize tasks in issue lists and boards or take notes in a wiki to your ARC,
+3. check any merge requests or commit history (3),
+4. adapt the [settings (4) of the ARC](datahub-ARCSettings.html). 
 
  
 In the main panel, you can
 
-6. see the ARC's name and visibility level (6),
-7. follow the ARC's commit history (7),
-8. see files contained in your ARC just like on your computer (8),
-9. add new files or directories (9), and
-10. download or clone your ARC (10). 
+5. see the ARC's name and visibility level (5),
+6. see files contained in your ARC just like on your computer (6),
+7. add new files or directories (7), and
+8. download or clone your ARC (8). 

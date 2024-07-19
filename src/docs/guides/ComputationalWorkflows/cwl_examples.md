@@ -38,12 +38,28 @@ inputs:
       # prefix is optional
       prefix: -i
 outputs:
-  myOutput:
+  myFileOutput:
+	type: File
+	outputBinding:
+      # this returns a specific file
+	  glob: myOutput.txt
+  myFileArrayOutput:
+    type: File[]
+    outputBinding:
+	  # this returns all files with the extension .txt
+	  glob: $(runtime.outdir)/*.txt
+  myDirectoryOutput:
     type: Directory
     outputBinding:
-      # this returns the whole working directory
-      glob: $(runtime.outdir)
+      # this returns a specific directory
+      glob: $(runtime.outdir)/myDirectory
 ```
+
+There are several possibilities to retrieve the output of a tool. Common options would be `File`, `File[]`, or `Directory`. 
+Depending on your tool or script, the output varies. If your tool returns a fixed number of known files, you should specify them as `File`. If it has a variable number of 
+files with a known extension, you should specify them as `File[]`. If it has a variable output structure, you should specify it as `Directory`.
+For usage in workflows and provenance tracking, if your tool or script allows it, it is recommended to use `File` as the output type. This way, several output files can be 
+specified and used in the following workflow steps.
 
 ### With a docker container
 
@@ -73,12 +89,28 @@ inputs:
       # prefix is optional
       prefix: -i
 outputs:
-  myOutput:
+  myFileOutput:
+	type: File
+	outputBinding:
+      # this returns a specific file
+	  glob: myOutput.txt
+  myFileArrayOutput:
+    type: File[]
+    outputBinding:
+	  # this returns all files with the extension .txt
+	  glob: $(runtime.outdir)/*.txt
+  myDirectoryOutput:
     type: Directory
     outputBinding:
-      # this returns the whole working directory
-      glob: $(runtime.outdir)
+      # this returns a specific directory
+      glob: $(runtime.outdir)/myDirectory
 ```
+
+There are several possibilities to retrieve the output of a tool. Common options would be `File`, `File[]`, or `Directory`. 
+Depending on your tool or script, the output varies. If your tool returns a fixed number of known files, you should specify them as `File`. If it has a variable number of 
+files with a known extension, you should specify them as `File[]`. If it has a variable output structure, you should specify it as `Directory`.
+For usage in workflows and provenance tracking, if your tool or script allows it, it is recommended to use `File` as the output type. This way, several output files can be 
+specified and used in the following workflow steps.
 
 ### With a fixed script file
 
@@ -115,12 +147,12 @@ inputs:
       prefix: -i
 outputs:
   myOutput:
-    type: Directory
+    type: File
     outputBinding:
-      # this returns the whole working directory
-      glob: $(runtime.outdir)
+      glob: "result.csv"
+
 ```
-[Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/FixedScript)
+[Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/main/workflows/FixedScript)
 
 ### With a fixed script in a mounted arc
 
@@ -160,12 +192,12 @@ inputs:
       prefix: -i
 outputs:
   myOutput:
-    type: Directory
+    type: File
     outputBinding:
-      glob: "./arc/runs/myRun"
+      glob: "./arc/runs/myRun/result.csv"
 ```
 
-[Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/ARCMount)
+[Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/main/workflows/ARCMount)
 
 ### Within an ARC with a devcontainer
 
@@ -206,15 +238,15 @@ inputs:
       prefix: -i
 outputs:
   myOutput:
-    type: Directory
+    type: File
     outputBinding:
-      glob: "./arc/runs/myRun"
+      glob: "./arc/runs/myRun/result.csv"
 ```
 The Dockerfile should only include operations that reference resources that are available online or within the baseimage. COPY operations that point to local files for 
 example won't work in the context of CWL. If they are necessary for the execution in the devcontainer context (e.g. configuration for editors), but not the execution of the script, they 
 can be prefixed with a `*` to make the execution of the operation optional.
 
-[Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/CWLExamples/workflows/Devcontainer)
+[Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/main/workflows/Devcontainer)
 
 ## Workflows
 
@@ -249,9 +281,9 @@ steps:
     out: [myOutput2]
 outputs:
   outputTool1:
-    type: Directory
+    type: File
     outputSource: myTool1/myOutput1
-  outputTool1:
+  outputTool2:
     type: Directory
     outputSource: myTool2/myOutput2
 ```
