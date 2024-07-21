@@ -14,7 +14,7 @@ add sidebar: _sidebars/mainSidebar.md
 
 ## Navigation Bar
 
-<img src="./../img/datahub-navbar.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
+<img src="./../img/datahub-navbar.drawio.svg" style="width:55%;display: block;margin: 20px auto;">
 
 From the navigation bar you can
 
@@ -26,9 +26,9 @@ From the navigation bar you can
 
 ## Side Bar
 
-From the side bar in the top-left corner (1) you can navigate to the [projects](./datahub-projectsPanel.html) (2) or [groups](datahub-groupsPanel.html)(3) panels, respectively, by clicking "View all projects (groups)" (4).
+From the side bar in the top-left corner (1) you can navigate to the [projects](./datahub-projectsPanel.html) (2) or [groups](datahub-groupsPanel.html)(3) panels.
 
-<img src="./../img/datahub-hamburgerMenu.drawio.svg" style="width:55%;display: block;margin: 20px auto;">
+<img src="./../img/datahub-hamburgerMenu.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
 
 
 ## Avatar Menu
