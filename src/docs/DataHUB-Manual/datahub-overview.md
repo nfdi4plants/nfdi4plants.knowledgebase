@@ -33,6 +33,6 @@ From the side bar in the top-left corner (1) you can navigate to the [projects](
 
 ## Avatar Menu
 
-In the avatar menu in the top-right corner (1) you can find your profile name and user name (2), navigate to the [user settings](./datahub-userSettings.html) (3) or sign out (4) of the DataHUB.
+In the avatar menu (1) in the top-right corner of the navigation bar you can find your profile name and user name (2), navigate to the [user settings](./datahub-userSettings.html) (3) or sign out (4) of the DataHUB.
 
-<img src="./../img/datahub-avatarMenu.drawio.svg" style="width:40%;display: block;margin: 20px auto;">
+<img src="./../img/datahub-avatarMenu.drawio.svg" style="width:50%;display: block;margin: 20px auto;">
