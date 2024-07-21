@@ -32,25 +32,25 @@ In this guide we show you how to invite lab colleagues or project partners to yo
 ## Inviting collaborators
 
 1. [Sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB and open the ARC you want to share.
-2. Click on **Project Information** in the left navigation panel
+2. Click on **Manage** in the left navigation panel
 
-<img src="./../img/datahub_members_seq2.png" style="width:85%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../img/datahub_members_seq2.png" style="width:100%;display: block;margin-left: auto;margin-right: auto;">
 
 3. Click on **Members**
 
-<img src="./../img/datahub_members_seq3.png" style="width:85%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../img/datahub_members_seq3.png" style="width:100%;display: block;margin-left: auto;margin-right: auto;">
 
 4. Click on **Invite members**
 
-<img src="./../img/datahub_members_seq4.png" style="width:85%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../img/datahub_members_seq4.png" style="width:100%;display: block;margin-left: auto;margin-right: auto;">
 
 5. Search for potential collaborators
 
-<img src="./../img/datahub_members_seq5.png" style="width:85%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../img/datahub_members_seq5.png" style="width:65%;display: block;margin-left: auto;margin-right: auto;">
 
 6. **Select a role** and click <kbd>Invite</kbd>
 
-<img src="./../img/datahub_members_seq6.png" style="width:85%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../img/datahub_members_seq6.png" style="width:65%;display: block;margin-left: auto;margin-right: auto;">
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_invite-collaborators.md -->
