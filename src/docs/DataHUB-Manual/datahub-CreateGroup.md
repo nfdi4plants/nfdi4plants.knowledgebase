@@ -1,11 +1,13 @@
 ---
 layout: docs
 title: Create a new user group
-date: 2023-07-07
+date: 2024-07-22
 author:
 - name: Dominik Brilhaus
   orcid: https://orcid.org/0000-0001-9021-3197
   github: brilator
+- name: Viktoria Petrova
+  github: toriapetrova
 add toc: true
 add support: true
 add sidebar: _sidebars/mainSidebar.md
@@ -16,7 +18,7 @@ You can create a new group from the [groups panel](datahub-groupsPanel.html).
 
 <img src="./../img/datahub-groupPanel-createGroup.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
 
-To create group, 
+To create group,
 
 1. choose a suitable name (1),
 2. adapt the url if needed (2),
