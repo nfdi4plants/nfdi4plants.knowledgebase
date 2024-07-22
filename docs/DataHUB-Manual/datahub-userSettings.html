@@ -554,31 +554,33 @@
         User Settings
       </h1>
       <i class="help">
-        last updated at 2023-07-07
+        last updated at 2024-07-22
       </i>
       <nfdi-toc></nfdi-toc>
-      <style scoped>
-.columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
+      <style>
+
+.container {
+  display: flex;
+  align-items: center;
+  /*justify-content: center;*/
 }
+
 </style>
-<br>
-<div class="columns">
-  <div class="columns-left">
-  In the avatar menu click on "Edit profile" or "Preferences" (3) to open the User Settings in a sidebar panel on the left. 
-  </div>
-  <div class="columns-right">
-  <img src="./../img/datahub-avatarMenu.drawio.svg" style="width:90%;display: block;margin: 20px auto;">
-  </div>
-</div>
-<div class="columns">
+<div class="container">
   
-  <div class="columns-left">
-  <img src="./../img/datahub-preferences.drawio.svg" style="width:70%;display: block;margin: 20px auto;">
+  <div style="padding: 20px;">
+  
+  In the avatar menu click on "Edit profile" or "Preferences" (3) to open the User Settings in a sidebar panel on the left.
+  
   </div>
-  <div class="columns-right">
+  <img src="./../img/datahub-avatarMenu.drawio.svg" style="width: 300px; padding: 20px;">
+</div>
+<div class="container">
+  
+  <div style="padding: 20px;">
+  <img src="./../img/datahub-preferences.drawio.svg" style="width: 400px; padding: 20px;">
+  </div>
+  <div style="padding: 20px;">
 <p>In the user settings you can</p>
 <ol>
 <li>Edit your <strong>profile</strong> (1), e.g. adapt your profile name and avatar</li>
