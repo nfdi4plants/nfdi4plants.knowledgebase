@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      DataPLANT documentation - Git troubleshooting
+      DataPLANT documentation - Git Troubleshooting & Tips
     </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -480,7 +480,7 @@
             Troubleshooting
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/git-troubleshooting.html">
-            Git Troubleshooting
+            Git Troubleshooting & Tips
           </a>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
@@ -551,10 +551,10 @@
         </a>
       </nfdi-sidebar-eleneo>
       <h1 class="front-header">
-        Git troubleshooting
+        Git Troubleshooting & Tips
       </h1>
       <i class="help">
-        last updated at 2024-01-30
+        last updated at 2024-07-22
       </i>
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
@@ -838,13 +838,25 @@ It usually helps to just retrieve new ones. If not, you might have to remove exi
 </nfdi-code>
 <p>⚠️ This might however pose a safety risk. Please read the details here: <a href="https://www.git-scm.com/docs/git-config#Documentation/git-config.txt-safedirectory">https://www.git-scm.com/docs/git-config#Documentation/git-config.txt-safedirectory</a></p>
 <nfdi-h3 id="git-lfs">Git LFS</nfdi-h3>
-<p><a href="./arc_WorkingWithLargeDataFiles.html">Git LFS</a> is basically the system in the back to simplify working with (ARCs containing) large data files.
+<p><a href="./arc_WorkingWithLargeDataFiles.html">Git LFS</a> is basically the system in the back to simplify working with git and (ARCs containing) large data files.
 ARC commander and ARCitect offer options to download (clone) an ARC without large files; speeding up the process and avoiding waste of data storage, if you are only interested e.g. in the metadata.</p>
 <p>If you have downloaded (cloned) an ARC without large files and try to upload it to a new location (i.e. new remote due to a transfer to other user, group, etc.), you will see the following or similar error</p>
 <nfdi-code class="language-bash">hint: Your push was rejected due to missing or corrupt local objects.
 error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCName.git'
 </nfdi-code>
 <p>In this case you would have to download all LFS objects from the original remote first → ask a data steward for help.</p>
+<nfdi-h4 id="step-by-step-track-large-files-via-lfs">Step-by-step track large file(s) via lfs</nfdi-h4>
+<p>Done in small steps plus capturing log</p>
+<nfdi-code class="language-bash">git lfs track "assays/RNAseq_RawData/dataset/**"  ## Track files via LFS (this adds them to .gitattributes)
+git add .gitattributes  ## git track .gitattributes first
+git add assays/RNAseq_RawData/dataset/* ## git track the large files
+
+GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1 git commit -m "add rnaseq files to LFS" -v >> git-commit-LFS.log 2>&amp;1 &amp;
+GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1 git push -v >> git-push-LFS.log 2>&amp;1 &amp;
+</nfdi-code>
+<nfdi-h4 id="check-the-status-of-lfs-files">Check the status of lfs files</nfdi-h4>
+<nfdi-code class="language-bash">git lfs status
+</nfdi-code>
 <nfdi-h4 id="list-lfs-tracked-files">List LFS-tracked files</nfdi-h4>
 <p>To get a list of LFS-tracked files including the size of the original file, run</p>
 <nfdi-code class="language-bash">git lfs ls-files -ls
@@ -857,6 +869,10 @@ The oid is also stored in the pointer file at the file's position.</p>
 <nfdi-code class="language-bash">git lfs ls-files -d
 </nfdi-code>
 <p>Amongst others, this report will print for every LFS file, whether it is downloaded (<code>checkout: true; download: true</code>) to the local ARC or not (<code>checkout: false; download: false</code>).</p>
+<nfdi-h3 id="get-more-log">Get more log</nfdi-h3>
+<p>To help troubleshooting add (some or all) variables <code>GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1</code> before your git command to get more info, e.g.</p>
+<nfdi-code class="language-bash">GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1 git push -v >> git-push-LFS.log 2>&amp;1 &amp;
+</nfdi-code>
 
       <h3>
         DataPLANT Support
