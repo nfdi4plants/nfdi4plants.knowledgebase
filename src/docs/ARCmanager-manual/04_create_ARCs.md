@@ -11,7 +11,7 @@ status: published
 date: 2024-06-13
 ---
 
-To create a new ARC in ARCmanager, you can follow the below steps:
+To create a new ARC in ARCmanager, follow the steps below:
 
 1. On the left side of the homepage, click on the `New ARC` button:
 

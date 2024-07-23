@@ -62,6 +62,7 @@
 ## [Connect to your DataHUB](/docs/ARCmanager-manual/02_login.html)
 ## [View your ARCs](/docs/ARCmanager-manual/03_view_ARCs.html)
 ## [Create new ARCs](/docs/ARCmanager-manual/04_create_ARCs.html)
+## [Add new studies and assays](/docs/ARCmanager-manual/05_studies_assays.html)
 ## [Upload files](/docs/ARCmanager-manual/05_uploading_files.html)
 ## [Add metadata to your ARCs](/docs/ARCmanager-manual/06_adding_metadata.html)
 
