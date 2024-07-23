@@ -11,83 +11,112 @@ status: published
 date: 2024-06-13
 ---
 
-For the sake of simplicity, we are here using the term "ARC" for (DataHUB) "Project", because the DataHUB does not make any distinction between Projects that have the ARC folder and file structure and those that have not. Both are initially shown in the ARCmanager, but the ARCmanager has not been created for manipulating Projects which are not ARCs. These are better viewed and modified in the DataHUB directly. 
+For the sake of simplicity, we are here using the term "ARC" for (DataHUB) "Project", because the DataHUB does not make any distinction between Projects that have the ARC folder and file structure and those that have not. Both are initially shown in the ARCmanager, but the ARCmanager has not been created for manipulating Projects which are not ARCs.
 
-The ARCmanager is for viewing and manipulating ARCs.
+The ARCmanager is for viewing and editing ARCs.
 
-Once you are logged in, you have got several options for selecting which ARCs (Projects) to view:
+### List and filter ARCs
+
+Once you are logged in, you have several options for selecting which ARCs to view:
+
+With the `LOAD ARC` button (Fig. 1), all ARCs on the DataHUB will be listed for which you have at least viewing rights. This includes ARCs that are set to public, ARCs to which you were added as a member, and ARCs owned by you. Your own ARCs are additionally highlighted in color.
+
+---
 
 <img src="./img/03_view_ARCs/03_view_1b.png" style="border: 1px solid  black;" />
 
-**Fig. 1** Loading ARCS.
+**Fig. 1** Get a list of all publicly visible ARCs and your private ARCs with the `LOAD ARCS` button.
 
-By pressing the button "Load ARCS" (Fig. 1), you are offered a list of all ARCs (Projects) of the DataHUB you have got the rights to view. These are the ARCs (Projects) that are either public, public within the DataHub, or of which you are a member. ARCs (Projects) owned by you are highlighted in colour.
+---
+
+Use the `Your Arcs` check-box (Fig. 2) to filter the list of ARCs for those in which you are member and your own ARCs. Your own ARCs are again highlighted in yellow. 
+
+---
 
 <img src="./img/03_view_ARCs/03_view_2.png" style="border: 1px solid  black;" />
 
-**Fig. 2** Loading your ARCS only.
+**Fig. 2** Only show your own ARCs and those to which you were added as a member by using the `Your Arcs` check-box.
 
-By ticking the box "Your ARCs" (Fig. 2). This restricts the list to the ARCs(Projects) in which you are member. Again, ARCs owned by you are highlighted in colour.
+---
 
-By default, the ARCs (Project) are sorted by the date of the last changes, in descending order from latest to earliest.
+By default, the ARCs are sorted by the date of the last changes in descending order from latest to earliest.
 
+If you are looking for a specific ARC, use the search bar above the ARC list to search for the title of the ARC.
+
+Next to each listed ARC are two buttons to access the following functions:
+
+- the lense button (Fig. 3, 1) will open the DataHUB page of your ARC in a new browser window
+
+- the downward arrow button (Fig.3, 2) expands the ARC and allows you to browse its contents and interact with it
+
+---
 
 <img src="./img/03_view_ARCs/03_view_3.png" style="border: 1px solid  black;" />
 
-**Fig. 3** Arc viewing options
+**Fig. 3** List of ARCs and buttons to interact with them. (1) Open DataHUB page of the ARC in a new browser window, (2) View ARC contents inside ARCmanager.
 
-On the right hand side of each ARC (Project) in the list, there are two buttons:
+---
 
-- the lense button (Fig. 3, 1) which takes you to the ARC (Project) on the DataHUB page.
+### View ARC contents
 
-- the downward arrow button (Fig.3, 2) which expands the ARC (Project) within the ARCmanager.
+After expanding an ARC, you will see a list of directories and files that are included in the ARC (Fig. 4), as well as buttons to access additional functions. The additional functions are explained in detail later in this manual. For now, we will focus on the files and directories included in the ARC.
 
-### Viewing the ARC (Project) contents
+---
 
 <img src="./img/03_view_ARCs/03_view_4.png" style="border: 1px solid  black;" />
 
-**Fig. 4** Expanded ARC showing directories and files.
+**Fig. 4** Detailed view of ARC contents after expanding an ARC with the corresponding button (Fig. 3, 2). Files and directories can be accessed with a left-click.
 
-Once you have expanded the ARC (Fig. 4) you will get a list of files and folders that are included in the ARC (the same applies to all Projects). 
+---
+
+You can hide the ARC contents by clicking inside the `List ARC content` field above the list of files and directories (Fig. 5).
+
+---
 
 <img src="./img/03_view_ARCs/03_view_5.png" style="border: 1px solid  black;" />
 
-**Fig. 5** Hiding directories and files.
+**Fig. 5** A Left-click inside the highlighted area hides ARC contents. Click again to bring back the list of files and directories.
 
-Clicking anywhere in the header row (Fig. 5) will hide this list.
+---
 
-<img src="./img/03_view_ARCs/03_view_6a.png" style="border: 1px solid  black;" />
+Navigate through the ARC directories with a left-click. After clicking a directory, its contents will be displayed. You can go back one level in the directory hierarchy by using the `Return` field above the list of files (Fig. 6).
 
-**Fig. 6** ARCmanager, displaying the content of README.md in the panel on the right.
-
-If you are selecting a file that can be read by ARCmanager (.xlsx, any kind of text file including e.g. .md), the content of the file can be displayed within the ARCmanager (Fig. 6 and 7). For text files, upon clicking on the file name, the contents of the file can be viewed and edited in the panel to the right (Fig. 6).
-
-<img src="./img/03_view_ARCs/03_view_7.png" style="border: 1px solid  black;" />
-
-**Fig. 7** ARCmanager, displaying the administrative worksheet of the isa.assay.xlsx file in the panel on the right. 
-
-The administrative page of of isa formatted .xlsx files, upon clicking on the file name, can be viewed and edited in the  panel to the right (Fig. 7). Ticking "alternative" will show the fields in list view.
-
-<img src="./img/03_view_ARCs/03_view_7b.png" style="border: 1px solid  black;" />
-
-**Fig. 8** ARCmanager with the button opening the righthand panel highlighted.
-
-If no readable file is selected, the button (Fig. 8) will display the list of changes (i.e. commit messages) of the ARC (Project) if this option is ticked. Try it out!
+---
 
 <img src="./img/03_view_ARCs/03_view_8.png" style="border: 1px solid  black;" />
 
-**Fig. 9** ARCmanager with the return button highlighted.
+**Fig. 6** Use the `Return` field to go back one step in the directory hierarchy of your ARC.
 
-The return button will take you up one level in the folder hierarchy up to the file and folder list of the ARC (Project).
+---
 
+When you click on a file instead of a directory, another panel on the right side will open that allows you to edit the selected file (Fig. 7). Plain text files (.md, .txt or similar) can be changed directly in this editor. Do not forget to save your changes and synchronize with the DataHUB by using the `SAVE` button when you are done.
 
+---
 
+<img src="./img/03_view_ARCs/03_view_6a.png" style="border: 1px solid  black;" />
 
+**Fig. 7** When selecting a text file with a left-click, a text editor panel will open on the right side of the browser window. Here, you can edit the file directly and save changes.
 
+---
 
+When selecting an ISA file, the editor panel will open as well, but instead of a text editor you will see a form that allows you to add metadata entries to the ISA file (Fig. 8). To learn more about adding metadata using the ARCmanager, visit the corresponding [Manual page](/docs/ARCmanager-manual/06_adding_metadata.html).
 
+---
 
+<img src="./img/03_view_ARCs/03_view_7.png" style="border: 1px solid  black;" />
 
+**Fig. 8** Opening an ISA file with a left-click will bring up a form that can be used to add metadata entries to the file.
 
+---
 
+You can hide/view the editor panel by clicking on the double arrow symbol at the top of the panel (Fig. 9).
 
+---
+
+<img src="./img/03_view_ARCs/03_view_7b.png" style="border: 1px solid  black;" />
+
+**Fig. 9** The panel on the right side of the browser window can be hidden/displayed with the double arrow symbol.
+
+---
+
+When you expand the editor window without selecting a file to be edited first, a list of recent changes to the ARC will be shown instead.

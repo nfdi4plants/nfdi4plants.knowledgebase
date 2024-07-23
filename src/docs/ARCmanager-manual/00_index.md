@@ -17,18 +17,15 @@ Here, you can find detailed information about using the ARCmanager web service.
 
 Contents:
 
-1. [What is the ARCmanager?](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCmanager-manual/01_intro.html)
-2. [Connect to your DataHUB](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCmanager-manual/02_login.html)
-3. [View ARCs](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCmanager-manual/03_view_ARCs.html)
-4. [Create new ARCs](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCmanager-manual/04_create_ARCs.html)
-5. [Upload files](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCmanager-manual/05_uploading_files.html)
-6. [Add metadata to your ARCs](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCmanager-manual/06_adding_metadata.html)
+- [What is the ARCmanager?](/docs/ARCmanager-manual/01_intro.html)
+- [Connect to your DataHUB](/docs/ARCmanager-manual/02_login.html)
+- [View ARCs](/docs/ARCmanager-manual/03_view_ARCs.html)
+- [Create new ARCs](/docs/ARCmanager-manual/04_create_ARCs.html)
+- [Add new studies and assays](/docs/ARCmanager-manual/05_studies_assays.html)
+- [Upload files](/docs/ARCmanager-manual/05_uploading_files.html)
+- [Add metadata to your ARCs](/docs/ARCmanager-manual/06_adding_metadata.html)
 
-## What is the ARCmanager?
-
-The ARCmanager is a web service that allows DataPLANT users to create and modify ARCs in a web browser environment. Edits done with the ARCmanager will be directly applied to the copy of your ARC on the respective DataHUB.
-
------------------------
+---
 
 :bulb: IMPORTANT NOTE
 
@@ -40,4 +37,4 @@ https://github.com/nfdi4plants/arcmanager_frontend
 
 https://github.com/nfdi4plants/arcmanager_backend
 
--------------------------
+---
