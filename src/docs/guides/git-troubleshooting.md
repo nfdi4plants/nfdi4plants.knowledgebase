@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: Git troubleshooting
-date: 2024-01-30
+title: Git Troubleshooting & Tips 
+date: 2024-07-22
 author: 
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -21,8 +21,6 @@ add sidebar: _sidebars/mainSidebar.md
   <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Tutorial</span>
     </a>
 </div>
-
-
 
 ## Background
 
@@ -308,7 +306,7 @@ git config --global --add safe.directory *
 
 ### Git LFS
 
-[Git LFS](./arc_WorkingWithLargeDataFiles.html) is basically the system in the back to simplify working with (ARCs containing) large data files.
+[Git LFS](./arc_WorkingWithLargeDataFiles.html) is basically the system in the back to simplify working with git and (ARCs containing) large data files.
 ARC commander and ARCitect offer options to download (clone) an ARC without large files; speeding up the process and avoiding waste of data storage, if you are only interested e.g. in the metadata.
 
 If you have downloaded (cloned) an ARC without large files and try to upload it to a new location (i.e. new remote due to a transfer to other user, group, etc.), you will see the following or similar error
@@ -319,6 +317,26 @@ error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCName
 ```
 
 In this case you would have to download all LFS objects from the original remote first -> ask a data steward for help.
+
+#### Step-by-step track large file(s) via lfs
+
+Done in small steps plus capturing log
+
+```bash
+git lfs track "assays/RNAseq_RawData/dataset/**"  ## Track files via LFS (this adds them to .gitattributes)
+git add .gitattributes  ## git track .gitattributes first
+git add assays/RNAseq_RawData/dataset/* ## git track the large files
+
+GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1 git commit -m "add rnaseq files to LFS" -v >> git-commit-LFS.log 2>&1 &
+GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1 git push -v >> git-push-LFS.log 2>&1 &
+```
+
+#### Check the status of lfs files
+
+
+```bash
+git lfs status
+```
 
 #### List LFS-tracked files
 
@@ -342,3 +360,12 @@ git lfs ls-files -d
 ```
 
 Amongst others, this report will print for every LFS file, whether it is downloaded (`checkout: true; download: true`) to the local ARC or not (`checkout: false; download: false`).
+
+
+### Get more log
+
+To help troubleshooting add (some or all) variables `GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1` before your git command to get more info, e.g.
+
+```bash
+GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1 git push -v >> git-push-LFS.log 2>&1 &
+```
