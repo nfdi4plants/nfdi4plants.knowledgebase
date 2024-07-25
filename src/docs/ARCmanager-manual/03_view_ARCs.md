@@ -23,7 +23,7 @@ With the `LOAD ARC` button (Fig. 1), all ARCs on the DataHUB will be listed for 
 
 ---
 
-<img src="./img/03_view_ARCs/03_view_1b.png" style="border: 1px solid  black;" />
+<img src="../img/ARCmanager_view_1b.png" style="border: 1px solid  black;" />
 
 **Fig. 1** Get a list of all publicly visible ARCs and your private ARCs with the `LOAD ARCS` button.
 
@@ -33,7 +33,7 @@ Use the `Your Arcs` check-box (Fig. 2) to filter the list of ARCs for those in w
 
 ---
 
-<img src="./img/03_view_ARCs/03_view_2.png" style="border: 1px solid  black;" />
+<img src="../img/ARCmanager_view_2.png" style="border: 1px solid  black;" />
 
 **Fig. 2** Only show your own ARCs and those to which you were added as a member by using the `Your Arcs` check-box.
 
@@ -51,7 +51,7 @@ Next to each listed ARC are two buttons to access the following functions:
 
 ---
 
-<img src="./img/03_view_ARCs/03_view_3.png" style="border: 1px solid  black;" />
+<img src="../img/ARCmanager_view_3.png" style="border: 1px solid  black;" />
 
 **Fig. 3** List of ARCs and buttons to interact with them. (1) Open DataHUB page of the ARC in a new browser window, (2) View ARC contents inside ARCmanager.
 
@@ -63,7 +63,7 @@ After expanding an ARC, you will see a list of directories and files that are in
 
 ---
 
-<img src="./img/03_view_ARCs/03_view_4.png" style="border: 1px solid  black;" />
+<img src="../img/ARCmanager_view_4.png" style="border: 1px solid  black;" />
 
 **Fig. 4** Detailed view of ARC contents after expanding an ARC with the corresponding button (Fig. 3, 2). Files and directories can be accessed with a left-click.
 
@@ -73,7 +73,7 @@ You can hide the ARC contents by clicking inside the `List ARC content` field ab
 
 ---
 
-<img src="./img/03_view_ARCs/03_view_5.png" style="border: 1px solid  black;" />
+<img src="../img/ARCmanager_view_5.png" style="border: 1px solid  black;" />
 
 **Fig. 5** A Left-click inside the highlighted area hides ARC contents. Click again to bring back the list of files and directories.
 
@@ -83,7 +83,7 @@ Navigate through the ARC directories with a left-click. After clicking a directo
 
 ---
 
-<img src="./img/03_view_ARCs/03_view_8.png" style="border: 1px solid  black;" />
+<img src="../img/ARCmanager_view_8.png" style="border: 1px solid  black;" />
 
 **Fig. 6** Use the `Return` field to go back one step in the directory hierarchy of your ARC.
 
@@ -93,7 +93,7 @@ When you click on a file instead of a directory, another panel on the right side
 
 ---
 
-<img src="./img/03_view_ARCs/03_view_6a.png" style="border: 1px solid  black;" />
+<img src="../img/ARCmanager_view_6a.png" style="border: 1px solid  black;" />
 
 **Fig. 7** When selecting a text file with a left-click, a text editor panel will open on the right side of the browser window. Here, you can edit the file directly and save changes.
 
@@ -103,7 +103,7 @@ When selecting an ISA file, the editor panel will open as well, but instead of a
 
 ---
 
-<img src="./img/03_view_ARCs/03_view_7.png" style="border: 1px solid  black;" />
+<img src="../img/ARCmanager_view_7.png" style="border: 1px solid  black;" />
 
 **Fig. 8** Opening an ISA file with a left-click will bring up a form that can be used to add metadata entries to the file.
 
@@ -113,7 +113,7 @@ You can hide/view the editor panel by clicking on the double arrow symbol at the
 
 ---
 
-<img src="./img/03_view_ARCs/03_view_7b.png" style="border: 1px solid  black;" />
+<img src="../img/ARCmanager_view_7b.png" style="border: 1px solid  black;" />
 
 **Fig. 9** The panel on the right side of the browser window can be hidden/displayed with the double arrow symbol.
 

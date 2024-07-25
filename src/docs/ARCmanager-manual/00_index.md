@@ -8,7 +8,7 @@ author:
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
 status: published
-date: 2024-01-08
+date: 2024-07-25
 ---
 
 Welcome to the ARCmanager manual!
