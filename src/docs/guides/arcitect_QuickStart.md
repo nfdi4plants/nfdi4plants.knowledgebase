@@ -1,13 +1,14 @@
 ---
 layout: docs
 title: ARCitect QuickStart
-date: 2023-08-01
+date: 2024-05-03
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
 - name: Sabrina Zander
   orcid: https://orcid.org/0009-0000-4569-6126
+- name: Stella Eggels
 add toc: true
 add support: true
 add sidebar: _sidebars/mainSidebar.md
@@ -30,13 +31,12 @@ status: draft
 
 In this guide we focus on how to use the [ARCitect](./../ARCitect-Manual/index.html) to create your ARC and structure, store and share your data.
 
-<a href="./index.html">
-    <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-</a>
-
-<br>
-<br>
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
+        <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
+        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
+    </a>
+</div>
 
 ---
 
@@ -154,9 +154,17 @@ Click on your study's name to add details, such as
 - general metadata,
 - people, 
 - publications and
-- data process information
+- factors
 
-<img src="./../img/arcitect-StudyPanel.png" width="650px">
+Here you can also link different assays to your study.
+
+<img src="./../img/Arcitect_Studymetadata.png">
+
+---
+
+### Add an annotation table to your study
+
+To add detailed metadata on your study, you can create an additional table sheet and create an annotation table. For this, click the plus symbol next to "Metadata" at the bottom of your window. The tool [Swate](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/Swate.html) is integrated into ARCitect and will automatically be used, when creating an annotation table. Please check the [Swate Quickstart](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html) and the [Swate Manual](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/index.html) for detailed information and guides.
 
 ---
 
@@ -229,16 +237,18 @@ You can either
 
 ### Add information about your assay
 
-In the assay panel you can
-
-1. link or unlink the assay to studies, and
-2. define the assay's
+In the assay panel you can define the assay's
    - measurement type,
    - technology type and
    - technology platform.
-3. add data process information
 
-<img src="./../img/arcitect-AssayPanel.png" width="650px">
+<img src="./../img/Arcitect_Assaymetadata.png" width="650px">
+
+---
+
+### Add an annotation table to your assay
+
+To add detailed metadata about your assay, you can create an additional table sheet and add an annotation table. For this, click the plus symbol next to "Metadata" at the bottom of your window. You can find guides on creating and filling annotation tables in the [Swate Quickstart](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html) and the [Swate Manual](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/index.html).
 
 ---
 

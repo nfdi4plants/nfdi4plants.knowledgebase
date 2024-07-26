@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: Git troubleshooting
-date: 2024-01-30
+title: Git Troubleshooting & Tips 
+date: 2024-07-22
 author: 
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -15,12 +15,12 @@ add sidebar: _sidebars/mainSidebar.md
 - This is mostly for data stewards.
 - This is not a git tutorial, but rather a small start for troubleshooting.
 
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
   <span class="badge-category">User</span><span class="badge-selected" id="badge-datasteward">Data Steward</span>  
   <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Tutorial</span>
-</a>
-<br>
-<br>
+    </a>
+</div>
 
 ## Background
 
@@ -53,14 +53,17 @@ Some reasons, why we now sometimes run into git issues
 
 error message* | possible reason | possible solution
 --- | --- | ---
-`remote: HTTP Basic: Access denied` <br><br> `fatal: Authentication failed for 'https://git.nfdi4plants.org/UserName/ARCname'` | Your computer is not "linked" to your DataHUB account | [Access Denied](#access-denied)
+`remote: HTTP Basic: Access denied`  `fatal: Authentication failed for 'https://git.nfdi4plants.org/UserName/ARCname'` | Your computer is not "linked" to your DataHUB account | [Access Denied](#access-denied)
 `error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCname' hint: Your push was rejected due to missing or corrupt local objects.` | You tried to upload LFS-tracked files that are not present on your computer | [Git-LFS](#git-lfs)
 `error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCname' hint: Updates were rejected because the remote contains work that you do not have locally.` | Your local ARC is out of sync with the remote. | [ARC not in sync with the DataHUB](#arc-not-in-sync-with-the-datahub)
 `ERROR: Can not sync with remote as no remote repository address was specified.` | There is no URL specified for your ARC's remote | [Git remote](#git-remote)
 `ERROR: GIT: fatal: repository 'https://git.nfdi4plants.org/UserName/ARCname.git' not found` | The remote URL does not exist | [Git remote](#git-remote)
 `ERROR: GIT: fatal: detected dubious ownership` | This is an error typically seen when working on mounted network drives | [Dubious ownership](#dubious-ownership)
+`fatal: credential-cache unavailable; no unix socket support` | Likely happens on Windows, if a gitconfig `credential.helper=cache` | Adjust the [Git Credential helper](#git-credential-helper) setting
+`fatal: Need to specify how to reconcile divergent branches.` | Your ARC contains multiple branches that progressed independently and need to be merged | Contact a data steward.
+`error: unable to create file <path/to/file> : Filename too long` | Likely occurs on Windows, if your ARC is stored in a deeply nested folder, i.e. a folder in a folder in a folder ...| Store the ARC on a higher level.
 
-:bulb: *typically displayed during synchronization via ARCitect (Versining --> push / pull) or `arc sync`. Even if ARCitect shows "Complete", it's sometimes worth it to scroll up and see these errors.
+:bulb: *typically displayed during synchronization via ARCitect (DataHUB Sync --> push / pull) or `arc sync`. Even if ARCitect shows "Complete", it's sometimes worth it to scroll up and see these errors.
 
 ## Your two favorite Git commands: status and log
 
@@ -149,6 +152,19 @@ git config --global user.email "Your eMail"
 ```bash
 git config --global init.defaultBranch main
 ```
+
+#### Git Credential Helper
+
+The gitconfig contains a setting, whether and how to save git credentials on your machine called `credential.helper`.
+
+On Windows, you might run into the error `fatal: credential-cache unavailable; no unix socket support`, if it is set to `credential.helper=cache`. 
+
+This can be solved by either of the following:
+
+1. Remove "credential.helper=cache" via `git config --global --unset credential.helper`.
+2. Overwrite the setting with "store" instead of "cache" via `git config --global credential.helper store`.
+
+:bulb: If you use ARC commander, we recommend to use the second approach to keep storing your credentials for DataHUB synchronization. 
 
 ## Git remote
 
@@ -290,7 +306,7 @@ git config --global --add safe.directory *
 
 ### Git LFS
 
-[Git LFS](./arc_WorkingWithLargeDataFiles.html) is basically the system in the back to simplify working with (ARCs containing) large data files.
+[Git LFS](./arc_WorkingWithLargeDataFiles.html) is basically the system in the back to simplify working with git and (ARCs containing) large data files.
 ARC commander and ARCitect offer options to download (clone) an ARC without large files; speeding up the process and avoiding waste of data storage, if you are only interested e.g. in the metadata.
 
 If you have downloaded (cloned) an ARC without large files and try to upload it to a new location (i.e. new remote due to a transfer to other user, group, etc.), you will see the following or similar error
@@ -301,6 +317,26 @@ error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCName
 ```
 
 In this case you would have to download all LFS objects from the original remote first -> ask a data steward for help.
+
+#### Step-by-step track large file(s) via lfs
+
+Done in small steps plus capturing log
+
+```bash
+git lfs track "assays/RNAseq_RawData/dataset/**"  ## Track files via LFS (this adds them to .gitattributes)
+git add .gitattributes  ## git track .gitattributes first
+git add assays/RNAseq_RawData/dataset/* ## git track the large files
+
+GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1 git commit -m "add rnaseq files to LFS" -v >> git-commit-LFS.log 2>&1 &
+GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1 git push -v >> git-push-LFS.log 2>&1 &
+```
+
+#### Check the status of lfs files
+
+
+```bash
+git lfs status
+```
 
 #### List LFS-tracked files
 
@@ -324,3 +360,12 @@ git lfs ls-files -d
 ```
 
 Amongst others, this report will print for every LFS file, whether it is downloaded (`checkout: true; download: true`) to the local ARC or not (`checkout: false; download: false`).
+
+
+### Get more log
+
+To help troubleshooting add (some or all) variables `GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1` before your git command to get more info, e.g.
+
+```bash
+GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1 git push -v >> git-push-LFS.log 2>&1 &
+```

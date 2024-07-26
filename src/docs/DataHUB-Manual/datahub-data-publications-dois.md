@@ -11,6 +11,8 @@ add support: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
+_**Note:** All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](cqc-pipelines/validation-packages.html) to learn how to opt-in._
+
 Once your data publication is published on the ARChive, you can use its digital object identifier (DOI) to cite your data publication. The DOI is a [persistent identifier](./../fundamentals/PersistentIdentifiers.html) and will always resolve to the data publication. The DOI is also registered with DataCite and will be indexed by DataCite and other DOI registration agencies. This means that your data publication will be findable and citable by other researchers.
 
 ## How to cite your data publication

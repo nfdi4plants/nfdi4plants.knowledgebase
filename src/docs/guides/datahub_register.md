@@ -14,12 +14,14 @@ add sidebar: _sidebars/mainSidebar.md
 
 In this guide we show you how to register at the [DataHUB](https://git.nfdi4plants.org/) to be able to share your ARC for collaboration. 
 
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
     <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-</a>
-<br>
-<br>
+    </a>
+</div>
+
+
 
 ## Registration
 
@@ -45,7 +47,7 @@ During the registration you can "Choose your role in DataPLANT"
 - Guest
   - Guest users who want to use the DataPLANT tools and services
 
-<br>
+
 
 
 <img src="./../img/DataPLANT_registration_roles.png" style="width:70%;display: block;margin-left: auto;margin-right: auto;">

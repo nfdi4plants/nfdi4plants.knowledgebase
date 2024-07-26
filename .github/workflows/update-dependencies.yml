@@ -5,8 +5,8 @@ name: update-dependencies
 # Controls when the workflow will run
 on:
   # Triggers the workflow at 20pm thursday (depends on timezone) (0 18 * * THU)
-  schedule:
-    - cron: '0 21 * * THU'
+  # schedule:
+  #   - cron: '0 21 * * THU'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:

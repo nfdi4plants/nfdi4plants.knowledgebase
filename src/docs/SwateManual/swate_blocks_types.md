@@ -1,21 +1,22 @@
 ---
 layout: docs
 title: Building Block Types
-date: 2023-02-15
+date: 2024-04-25
 author: 
 - name: Kevin Frey
   github: https://github.com/Freymaurer
   orcid: https://orcid.org/0000-0002-8510-6810
+- name: Stella Eggels
 add toc: true
 add sidebar: _sidebars\mainSidebar.md
 ---
 
 
-Swate and the ARC feature a set of six defined Building Block types. They can be split into input, descriptive and output Building Blocks and you can find additional information on the [nfdi4plant](https://nfdi4plants.github.io/AnnotationPrinciples/) website.
+Swate and the ARC feature a set of defined building block types. They can be split into input, descriptive and output building blocks and you can find additional information on the [DataPLANT](https://nfdi4plants.github.io/AnnotationPrinciples/) website and the [ISA-XLSX specification](https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md). Additionally, different protocol columns are available to facilitate submission to endpoint repositories.
 
-## Input Building Block/Source Name
+## Input Building Block
 
-**Definition:** This is the only input column type and each *Annotation Table* **MUST** contain this column once. 
+**Definition:** Each *Annotation Table* **MUST** contain ONE *Input* column, which defines the input of your annotation table. Different input types can be selected, which include *Source name, Sample name, Material, Raw Data File, Derived Data File* and *Image File*.
 
 **Expected Values:** Unique identifier for input.
 - **MUST** be unique in the overlaying ARC.
@@ -27,14 +28,14 @@ Swate and the ARC feature a set of six defined Building Block types. They can be
 <details><summary>Example | Sample pooling.</summary>
 <p>
 
-| Source Name  	| Parameter [...]  	| Sample Name  	|
+| Input [Sample Name]  	| Parameter [...]  	| Output [Sample Name]  	|
 |---	|---	|---	|
 | MinimalChlamy1  	| ...  	|  MinimalChlamyHarvested1 	|
 | MinimalChlamy2  	| ...  	|  MinimalChlamyHarvested1 	|
 | MinimalChlamy3  	| ...  	|  MinimalChlamyHarvested2 	|
 | MinimalChlamy4  	| ...  	|  MinimalChlamyHarvested2 	|
 
-- 👀 This example shows a sample pooling, in which two source samples are pooled into one output sample. This can also be done in reverse, where one source can be split into multiple output samples.
+- 👀 This example shows a sample pooling, in which two input samples are pooled into one output sample. This can also be done in reverse, where one input can be split into multiple output samples.
 
 </p>
 </details>
@@ -42,7 +43,7 @@ Swate and the ARC feature a set of six defined Building Block types. They can be
 <details><summary>Example | From physical sample to data file.</summary>
 <p>
 
-| Source Name  	| Parameter [...]  	| Data File Name  	|
+| Input [Sample Name]  	| Parameter [...]  	| Output [Raw Data File]  	|
 |---	|---	|---	|
 | MinimalChlamyProteins1  	| ...  	|  minimal1.mzLite 	|
 | MinimalChlamyProteins2  	| ...  	|  minimal2.mzLite 	|
@@ -55,7 +56,7 @@ Swate and the ARC feature a set of six defined Building Block types. They can be
 <details><summary>Example | From data file to data file.</summary>
 <p>
 
-| Source Name  	| Parameter [...]  	| Data File Name  	|
+| Input [Raw Data File]  	| Parameter [...]  	| Output [Derived Data File]  	|
 |---	|---	|---	|
 |  minimal1.mzLite  	| ...  	|  minimal1.prot 	|
 |  minimal2.mzLite  	| ...  	|  minimal2.prot 	|
@@ -70,53 +71,43 @@ Swate and the ARC feature a set of six defined Building Block types. They can be
 ## Descriptive Building Blocks
 
 **General Definition:** 
-- These Building Blocks **MAY** be added multiple times, but each Building Block combination **MUST** be unique.
-- These Building Blocks **MUST** concist of either <u>three</u> columns, or <u>four</u> columns in case they are created with the unit option. 
-    - Of which one column, the <u>main column</u> is visible, while the othere <u>reference columns</u> are hidden by default. 
+- These building blocks **MAY** be added multiple times, but each building block combination **MUST** be unique.
+- These building blocks **MUST** consist of either <u>three</u> columns, or <u>four</u> columns in case they are created with the unit option. Out of these, one column, the <u>main column</u>, is visible, while the other <u>reference columns</u> are hidden by default. 
 <details><summary>Additional in-depth information.</summary>
 <p>
 
 #### About Table Headers
 
-- The main column **MUST** start with `Parameter `, `Characteristic `, `Component ` or `Factor `. This **MUST** be followed by squared brackets containing a Term name (`[term name]`). 
+- The main column **MUST** start with `Parameter`, `Characteristic`, `Component` or `Factor`. This **MUST** be followed by squared brackets containing a Term name (`[term name]`). 
 An exception to this rule are so called *featured building blocks* which are handled just like descriptive building blocks. They have 3 or 4 columns and can be used for relationship-directed term search. An example would be `Protocol Type`.
-    - In the abstract case we have for example `Parameter` and `Factor` with the same Term, only the reference columns would not be unique, in this case we add a id to the reference columns, as excel does not allow non-unique column headers: Add the `#number` to all reference column headers, such as: `Component [instrument model]`, `Term Source REF (MS:1000031#2)`, `Term Accession Number (MS:1000031#2)`. `#number` must be an positive integer.
-- The columns of a building block **MUST** always be in the following order: main column, unit column (optional), Term Source REF, Term Accession Number.
-- Unit column headers **MUST** start with `Unit ` and be made unique with a `(#number)`, such as `Unit`, `Unit (#1)`, `Unit (#2)`, `Unit (#42)`. They **MAY** use ascending numbers. `#number` must be an positive integer.
-- The Term Source REF column header **MUST** start with `Term Source REF `, followed by a bracket which **MUST** contain the short Term identifier for the main column, if existing.
-    - Example: `Parameter [instrument model]` is the main column, then `Term Source REF (MS:1000031)` must be the Term Source REF.
-    - Example free text input. If the main column was created with free text input, such as `Characteristics [free text input]`, the Term Source REF **MUST** be created with an empty bracket `Term Source REF ()`. In this case, headers **MUST** be made unique, by adding `#number` in the empty brackets. For example `Parameter [free text input]`, `Term Source REF ()`, .. and `Parameter [another one]`, `Term Source REF (#2)`, .. .
-- The Term Accession Number column header **MUST** follow the same rules as Term Source REF column headers, with the only difference to replace `Term Source REF ` with `Term Accession Number `.
+- The columns of a building block **MUST** always be in the following order: main column, unit column (optional), Term Source REF (TSR), Term Accession Number (TAN).
+- Unit column headers **MUST** start with `Unit `.
+- The Term Source REF column header **MUST** start with `TSR `, followed by a bracket which **MUST** contain the short term identifier for the main column, if existing.
+    - Example: `Parameter [instrument model]` is the main column, then `TSR (MS:1000031)` must be the Term Source REF.
+    - Example free text input: If the main column was created with free text input, such as `Characteristic [free text input]`, the Term Source REF **MUST** be created with an empty bracket `TSR ()`.
+- The Term Accession Number column header **MUST** follow the same rules as Term Source REF column headers, with the only difference to replace `TSR ` with `TAN `.
 
 #### About Table Body
 
 - The table body for a main column with unit **MUST** have the unit as custom number format. This has to be done in the following format `0,00 "unit term name"`.
-- Any building block **MAY** contain a Term as value or free text input.
-- If a building block has an unit, the unit term name **MUST** be written in the unit column. In this case unit term source ontology and `purl.obolibrary.org` link must be written in Term Source REF and Term Accession Number.
+- Any building block **MAY** contain an ontology term as value or free text input.
+- If a building block has a unit, the unit term name **MUST** be written in the unit column. In this case, unit term source ontology and the unit term identifier must be written in the TSR and TAN column.
 
-| Parameter [temperature] 	| Unit           	| Term Source REF (PATO:0000146) 	| Term Accession Number (PATO:0000146)      	|
+| Parameter [temperature] 	| Unit           	| TSR (PATO:0000146) 	| TAN (PATO:0000146)      	|
 |-------------------------	|----------------	|--------------------------------	|-------------------------------------------	|
-| 12,00 degree Celsius    	| degree Celsius 	| UO                             	| http://purl.obolibrary.org/obo/UO_0000027 	|
+| 12,00 degree Celsius    	| degree Celsius 	| UO                             	| UO:0000027 	|
 
-- If a building block contains an existing Term it **MUST** contain the source ontology name under Term Source REF and a `purl.obolibrary.org` link under Term Accession Number. The link must be created, such as `http://purl.obolibrary.org/obo/{ontology identifier}`, where `{ontology identifier}` **MUST** be replaced with the term unique identifier, with an underscore instead of a colon.
-    - Example: `SCIEX instrument model (MS:1000121)` would result in `http://purl.obolibrary.org/obo/MS_1000121`
-    - Full example:
+- If a building block contains an existing ontology term, it **MUST** contain the source ontology name under TSR and the term identifier under TAN. 
 
-| Parameter [instrument model] 	| Term Source REF (MS:1000031) 	| Term Accession Number (MS:1000031)        	|
+| Component [instrument model] 	| TSR (MS:1000031) 	| TAN (MS:1000031)        	|
 |------------------------------	|------------------------------	|-------------------------------------------	|
-| SCIEX instrument model       	| MS                           	| http://purl.obolibrary.org/obo/MS_1000121 	|
+| SCIEX instrument model       	| MS                           	| MS:1000121 	|
 
-- In the case of any free text input all missing information **MUST** be filled with `user-specific`. Example: 
+- In the case of any free text input the TSR and TAN columns will stay empty.
 
-| Parameter [instrument model] 	| Term Source REF (MS:1000031) 	| Term Accession Number (MS:1000031) 	|
+| Component [instrument model] 	| TSR (MS:1000031) 	| TAN (MS:1000031) 	|
 |------------------------------	|------------------------------	|------------------------------------	|
-| free text input              	| user-specific                	| user-specific                      	|
-
-- Example with unit free text input:
-
-| Parameter [day light exposure] 	| Unit    	| Term Source REF (PECO:0007163) 	| Term Accession Number (PECO:0007163) 	|
-|--------------------------------	|---------	|--------------------------------	|--------------------------------------	|
-| 12,00 bananas                  	| bananas 	| user-specific                  	| user-specific                        	|
+| free text input              	|                	|                      	|
 
 
 </p>
@@ -132,14 +123,12 @@ An exception to this rule are so called *featured building blocks* which are han
 
 **Examples**
 
-Centrifugation Time
-
 <details><summary>Example | Centrifugation Time.</summary>
 <p>
 
-| Parameter [Centrifugation Time] 	| Unit | Term Source REF (NCIT:C178881) 	| Term Accession Number (NCIT:C178881)        	|
+| Parameter [Centrifugation Time] 	| Unit | TSR (NCIT:C178881) 	| TAN (NCIT:C178881)        	|
 |------------------------------	| --- | ------------------------------	|-------------------------------------------	|
-| 1,00 minute       	| minute |  UO                           	| http://purl.obolibrary.org/obo/UO_0000031	|
+| 1,00 minute       	| minute |  UO                           	| UO:0000031	|
 
 </p>
 </details>
@@ -147,16 +136,12 @@ Centrifugation Time
 <details><summary>Example | Free text input.</summary>
 <p>
 
-| Parameter [Very important unknown parameter] 	| Term Source REF () 	| Term Accession Number () 	|
+| Parameter [Very important unknown parameter] 	| TSR () 	| TAN () 	|
 |------------------------------------------------	|--------------------	|--------------------------	|
-| very important unknown value                   	| user-specific      	| user-specific            	|
+| very important unknown value                   	|     	|         	|
 
-- 👀 This example shows free text input. If you cannot find any fitting Ontology Term for either/both Building Block or value you can simply insert free text input. The above table shows how such input would be inserted into an annotation table.
-- If you use *Add Building Block* or/and *Term search* to insert your free text input, Swate will handle all formatting for you.
+- 👀 This example shows free text input. If you cannot find any fitting ontology term for either/both building block or value you can simply insert free text input. The above table shows how such input would be inserted into an annotation table.
 
-<p style="display: flex; justify-content: center">
-<img src="./../img/Swate-FreeTextInput-Exp.jpg?v31.01.202" style="height: 200px">
-</p>
 
 </p>
 </details>
@@ -165,7 +150,7 @@ Centrifugation Time
 
 ### Component
 
-**Definition:** Aynthing physical, which can also be used up during the experiment, e.g. instrument names, software names, and reagents names.
+**Definition:** Anything physical, which can also be used up during the experiment, e.g. instrument names, software names, and reagents names.
 
 **Expected Values:** **MAY** be any from text, integer or float numbers with or without unit.
 
@@ -174,9 +159,9 @@ Centrifugation Time
 <details><summary>Example | Instrument Model.</summary>
 <p>
 
-| Component [instrument model] 	| Term Source REF (MS:1000031) 	| Term Accession Number (MS:1000031)        	|
+| Component [instrument model] 	| TSR (MS:1000031) 	| TAN (MS:1000031)        	|
 |------------------------------	|------------------------------	|-------------------------------------------	|
-| SCIEX instrument model       	| MS                           	| http://purl.obolibrary.org/obo/MS_1000121 	|
+| SCIEX instrument model       	| MS                           	| MS:1000121 	|
 
 </p>
 </details>
@@ -187,7 +172,7 @@ Centrifugation Time
 
 **Definition:** While *Parameter* and *Characteristic* will be used to describe so called <u>controlled variables</u>, *Factor* **MUST** be used to describe <u>independent variable</u> of your experiment
 
-> **Example: Effect of fertilizer on plant growths.**
+> **Example: Effect of fertilizer on plant growth.**
 In a study measuring the influence of different quantities of fertilizer on plant growth, the <u>independent</u> variable would be the amount of fertilizer used. The <u>dependent variable</u> would be the growth in height or mass of the plant. The <u>controlled variables</u> would be the type of plant, the type of fertilizer, the amount of sunlight the plant gets, the size of the pots, etc. [(source)](https://en.wikipedia.org/wiki/Dependent_and_independent_variables#Examples)
 
 **Expected Values:** **MAY** be any from text, integer or float numbers with or without unit.
@@ -197,7 +182,7 @@ In a study measuring the influence of different quantities of fertilizer on plan
 <details><summary>Example | Temperature.</summary>
 <p>
 
-| Source Name 	| Factor [temperature] 	| Parameter [biological replicate] 	| Sample Name 	|
+| Input [Source Name] 	| Factor [temperature] 	| Parameter [biological replicate] 	| Output [Sample Name] 	|
 |-------------	|----------------------	|----------------------------------	|-------------	|
 | plant1      	| 10.00 degree Celsius 	| 1                                	| extract1    	|
 | plant2      	| 10.00 degree Celsius 	| 1                                	| extract2    	|
@@ -209,14 +194,14 @@ In a study measuring the influence of different quantities of fertilizer on plan
 <details><summary>Extended table.</summary>
 <p>
 
-| Source Name 	| Factor [temperature] 	| Unit           	| Term Source REF (PATO:0000146) 	| Term Accession Number (PATO:0000146)      	| Parameter [biological replicate] 	| Term Source REF (MS:1001809) 	| Term Accession Number (MS:1001809) 	| Sample Name 	|
+| Input [Source Name] 	| Factor [temperature] 	| Unit           	| TSR (PATO:0000146) 	| TAN (PATO:0000146)      	| Parameter [biological replicate] 	| TSR (MS:1001809) 	| TAN (MS:1001809) 	| Output [Sample Name] 	|
 |-------------	|----------------------	|----------------	|--------------------------------	|-------------------------------------------	|----------------------------------	|------------------------------	|------------------------------------	|-------------	|
-| plant1      	| 10,00 degree Celsius 	| degree Celsius 	| UO                             	| http://purl.obolibrary.org/obo/UO_0000027 	| 1                                	| user-specific                	| user-specific                      	| extract1    	|
-| plant2      	| 10,00 degree Celsius 	| degree Celsius 	| UO                             	| http://purl.obolibrary.org/obo/UO_0000027 	| 1                                	| user-specific                	| user-specific                      	| extract2    	|
-| plant3      	| 10,00 degree Celsius 	| degree Celsius 	| UO                             	| http://purl.obolibrary.org/obo/UO_0000027 	| 1                                	| user-specific                	| user-specific                      	| extract3    	|
-| plant4      	| 28,00 degree Celsius 	| degree Celsius 	| UO                             	| http://purl.obolibrary.org/obo/UO_0000027 	| 2                                	| user-specific                	| user-specific                      	| extract4    	|
-| plant5      	| 28,00 degree Celsius 	| degree Celsius 	| UO                             	| http://purl.obolibrary.org/obo/UO_0000027 	| 2                                	| user-specific                	| user-specific                      	| extract5    	|
-| plant6      	| 28,00 degree Celsius 	| degree Celsius 	| UO                             	| http://purl.obolibrary.org/obo/UO_0000027 	| 2                                	| user-specific                	| user-specific                      	| extract6    	|
+| plant1      	| 10,00 degree Celsius 	| degree Celsius 	| UO                             	| UO:0000027 	| 1                                	|                 	|                       	| extract1    	|
+| plant2      	| 10,00 degree Celsius 	| degree Celsius 	| UO                             	| UO:0000027 	| 1                                	|                	|                       	| extract2    	|
+| plant3      	| 10,00 degree Celsius 	| degree Celsius 	| UO                             	| UO:0000027 	| 1                                	|                 	|                      	| extract3    	|
+| plant4      	| 28,00 degree Celsius 	| degree Celsius 	| UO                             	| UO:0000027 	| 2                                	|                 	|                       	| extract4    	|
+| plant5      	| 28,00 degree Celsius 	| degree Celsius 	| UO                             	| UO:0000027 	| 2                                	|                 	|                       	| extract5    	|
+| plant6      	| 28,00 degree Celsius 	| degree Celsius 	| UO                             	| UO:0000027 	| 2                                	|                 	|                       	| extract6    	|
 
 </p>
 </details>
@@ -228,7 +213,7 @@ In a study measuring the influence of different quantities of fertilizer on plan
 
 ### Characteristic
 
-**Definition:** Any workflow parameters describing the source sample.  
+**Definition:** Any characteristics describing the source sample.  
 
 **Expected Values:** **MAY** be any from text, integer or float numbers with or without unit.
 
@@ -237,7 +222,7 @@ In a study measuring the influence of different quantities of fertilizer on plan
 <details><summary>Example | Plant Growth template.</summary>
 <p>
 
-| Characteristics [Organism part] 	| Characteristics [age]       	| Characteristics [Developmental Stage] 	|
+| Characteristic [Organism part] 	| Characteristic [age]       	| Characteristic [plant structure development stage] 	|
 |---------------------------------	|-----------------------------	|---------------------------------------	|
 | Leaf                            	| 28 days after germination   	| Mature                                	|
 | Leaf                            	| 28 days after   germination 	| Mature                                	|
@@ -249,14 +234,14 @@ In a study measuring the influence of different quantities of fertilizer on plan
 <details><summary>Extended table.</summary>
 <p>
 
-| Characteristics [Organism part] 	| Term Source REF (DPBO:0000032) 	| Term Accession Number (DPBO:0000032)  	| Characteristics [age]       	| Term Source REF (DPBO:0000033) 	| Term Accession Number (DPBO:0000033) 	| Characteristics [Developmental Stage] 	| Term Source REF (DPBO:0000070) 	| Term Accession Number (DPBO:0000070) 	|
+| Characteristic [Organism part] 	| TSR (DPBO:0000032) 	| TAN (DPBO:0000032)  	| Characteristic [age]       	| TSR (DPBO:0000033) 	| TAN (DPBO:0000033) 	| Characteristic [plant structure development stage] 	| TSR (PO:0009012) 	| TAN (PO:0009012) 	|
 |---------------------------------	|------------------------------------	|-------------------------------------------	|-----------------------------	|------------------------------------	|------------------------------------------	|---------------------------------------	|------------------------------------	|------------------------------------------	|
-| Leaf                            	| PO                                 	| http://purl.obolibrary.org/obo/PO_0025034 	| 28 days after germination   	| user-specific                      	| user-specific                            	| Mature                                	| user-specific                      	| user-specific                            	|
-| Leaf                            	| PO                                 	| http://purl.obolibrary.org/obo/PO_0025034 	| 28 days after   germination 	| user-specific                      	| user-specific                            	| Mature                                	| user-specific                      	| user-specific                            	|
-| Leaf                            	| PO                                 	| http://purl.obolibrary.org/obo/PO_0025034 	| 28 days after germination   	| user-specific                      	| user-specific                            	| Mature                                	| user-specific                      	| user-specific                            	|
-| Leaf                            	| PO                                 	| http://purl.obolibrary.org/obo/PO_0025034 	| 28 days after   germination 	| user-specific                      	| user-specific                            	| Mature                                	| user-specific                      	| user-specific                            	|
-| Leaf                            	| PO                                 	| http://purl.obolibrary.org/obo/PO_0025034 	| 28 days after germination   	| user-specific                      	| user-specific                            	| Mature                                	| user-specific                      	| user-specific                            	|
-| Leaf                            	| PO                                 	| http://purl.obolibrary.org/obo/PO_0025034 	| 28 days after   germination 	| user-specific                      	| user-specific                            	| Mature                                	| user-specific                      	| user-specific                            	|
+| Leaf                            	| PO                                 	| PO:0025034 	| 28 days after germination   	|                       	|                             	| Mature                                	|                       	|                             	|
+| Leaf                            	| PO                                 	| PO:0025034 	| 28 days after   germination 	|                       	|                             	| Mature                                	|                       	|                             	|
+| Leaf                            	| PO                                 	| PO:0025034 	| 28 days after germination   	|                      	|                             	| Mature                                	|                       	|                             	|
+| Leaf                            	| PO                                 	| PO:0025034 	| 28 days after   germination 	|                       	|                             	| Mature                                	|                       	|                             	|
+| Leaf                            	| PO                                 	| PO:0025034 	| 28 days after germination   	|                       	|                             	| Mature                                	|                       	|                             	|
+| Leaf                            	| PO                                 	| PO:0025034	| 28 days after   germination 	|                       	|                             	| Mature                                	|                       	|                            	|
 
 </p>
 </details>
@@ -274,16 +259,16 @@ These columns have been added to better support conversion to endpoint repositor
 
 **Definition:** The type of protocol described with the assay. This building block is handled by Swate as a [descriptive building block](#descriptive-building-blocks).
 
-**Expected Values:** **MUST** be a *Protocol Type* child term.
+**Expected Values:** **MUST** be string, in the form of free text or an ontology term.
 
 **Examples**
 
 <details><summary>Example | Growth Protocol.</summary>
 <p>
 
-| Protocol Type	| Term Source REF (DPBO:1000161) 	| Term Accession Number (DPBO:1000161)        	|
+| Protocol Type	| TSR () 	| TAN ()        	|
 |------------------------------	| ------------------------------	|-------------------------------------------	|
-| growth protocol   | DPBO | http://purl.obolibrary.org/obo/DPBO_1000162	|
+| growth protocol   | DPBO | DPBO:1000162	|
 
 </p>
 </details>
@@ -291,17 +276,18 @@ These columns have been added to better support conversion to endpoint repositor
 
 ### Protocol REF
 
-**Definition:** The name of the protocol. By default the name is inferred by the name of the Excel worksheet. To circumvent some limitations (lenght, etc.) we also offer this column as alternative. This building block comprises only one column.
+**Definition:** The name of the protocol. This building block comprises only one column.
 
 **Expected Values:** **MUST** be string.
+<br>
 
-## Output Building Blocks
+## Output Building Block
 
-**General Definition:** Each *Annotation Table* **MUST** contain exactly one output column.
+**General Definition:** Each annotation table **MUST** contain exactly one *Output* column.
 
-**Expected Values:** as in [Source Name](#input-building-blocksource-name).
+**Expected Values:** as in [Input](#input-building-block).
 
-**Examples:** as in [Source Name](#input-building-blocksource-name).
+**Examples:** as in [Input](#input-building-block).
 
 ### Sample Name
 
@@ -309,8 +295,8 @@ These columns have been added to better support conversion to endpoint repositor
 
 ### Raw Data File
 
-**Definition:** Use this building block type to reference any untransformed and unprocessed samples you have produced.
+**Definition:** Use this building block type to reference any untransformed and unprocessed data files you have produced.
 
 ### Derived Data File
 
-**Definition:** Use this building block type to reference any samples your computational workflow produced.
+**Definition:** Use this building block type to reference any data files your computational workflow produced.

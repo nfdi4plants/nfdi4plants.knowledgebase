@@ -15,13 +15,12 @@ add sidebar: _sidebars/mainSidebar.md
 
 In this guide we introduce how to access ARCs from Galaxy. To access the data of an ARC, you must first provide a DataHUB access token in Galaxy, which is used to authenticate Galaxy to DataHUB. To create a new token and add it to [Galaxy](https://usegalaxy.eu/), you can proceed as described below.
 
-<a href="./index.html">
-    <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-</a>
-
-<br>
-<br>
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
+        <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
+        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
+    </a>
+</div>
 
 ## Before we can start
 

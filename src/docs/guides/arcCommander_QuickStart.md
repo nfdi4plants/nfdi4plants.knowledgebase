@@ -15,18 +15,18 @@ date: 2023-06-09
 
 In this guide we focus on how to use the [ARC Commander](./../implementation/ArcCommander.html) to create your ARC and structure, store and share your data.
 
-<a href="./index.html">
-    <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-</a>
-
-<br>
-<br>
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
+        <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
+        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
+    </a>
+</div>
 
 ## Before we can start
 
 :ballot_box_with_check: Please [install ARC Commander](./../ArcCommanderManual/index-setup.html)  
-:ballot_box_with_check: Find <a href="./tutorial_TheCommandLine.html" target="_blank">the command line</a> on your system  
+:ballot_box_with_check: Find <a href="./tutorial_TheCommandLine.html" target="_blank">the command line    </a>
+</div> on your system  
 :bulb: Consider reading about [ARC](./../implementation/AnnotatedResearchContext.html) and the [ARC Commander](./../implementation/ArcCommander.html)  
 :bulb: After concluding this quickstart, consider exploring the [ARC Commander manual](./../ArcCommanderManual/index.html) for a more detailed usage instruction.
 
@@ -55,10 +55,12 @@ arc init
 
 ### ISA investigation
 
-The ISA investigation (`-i`) workbook allows you to record administrative metadata of your project. Add the isa.investigation.xlsx workbook including an identifier to your ARC with
+The ISA investigation (`-i`) workbook allows you to record administrative metadata of your project.
+The isa.investigation.xlsx workbook including an identifier to your ARC has been added to the project during initialization.
+You can update the identifier of your ARC with
 
 ```bash
-arc investigation create -i QuickStartInvestigation
+arc investigation update -i QuickStartInvestigation
 ```
 > :bulb: Avoid using spaces in the identifier. Use underscores and capital letters instead.
 

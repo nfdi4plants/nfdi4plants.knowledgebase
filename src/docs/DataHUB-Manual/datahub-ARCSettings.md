@@ -1,11 +1,13 @@
 ---
 layout: docs
 title: ARC settings
-date: 2023-07-07
+date: 2024-07-22
 author:
 - name: Dominik Brilhaus
   orcid: https://orcid.org/0000-0001-9021-3197
   github: brilator
+- name: Viktoria Petrova
+  github: toriapetrova
 add toc: true
 add support: true
 add sidebar: _sidebars/mainSidebar.md

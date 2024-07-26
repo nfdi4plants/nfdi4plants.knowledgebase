@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Swate Walk-through
-date: 2023-06-13
+date: 2024-04-24
 author: 
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -9,46 +9,42 @@ author:
 - name: Kevin Frey
   github: https://github.com/Freymaurer
   orcid: https://orcid.org/0000-0002-8510-6810
+- name: Stella Eggels
 add toc: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
 ## About this guide
 
-DataPLANT provides the Excel Add-In [Swate](./../implementation/Swate.html) to support you in data annotation.
-In this walk-through, we guide you on annotating data using [Swate](./../implementation/Swate.html) with a show-case example.
+DataPLANT provides the tool [Swate](./../implementation/Swate.html) to support you in data annotation. It is both integrated into [ARCitect](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html) and available as a [browser version](https://swate-alpha.nfdi4plants.org/).
+In this walk-through, we guide you through annotating data using [Swate](./../implementation/Swate.html) with a show-case example.
 
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
     <span class="badge-category">Mode</span><span class="badge-selected" id="badge-walkthrough">Walk-through</span>
-</a>
+    </a>
+</div>
 
-<br>
-<br>
 
 ## Before we can start
 
 <div id="before-start">
 
-- :ballot_box_with_check: Please [install Swate](./../SwateManual/Docs01-Installing-Swate.html)
 - :bulb: Consider reading about [Swate](./../implementation/Swate.html)
 
 </div>
 
-## Starting Swate
+Create and/or open an annotation table as described in the [Swate Quickstart](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html)
 
-1. Open a fresh Excel workbook
-2. Load the Swate plug-in from Excel's "Data" tab ![Swate.Core Icon](https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate_c_24x24.png)
-
-:bulb: Depending on your Swate setup, the way to load Swate may differ.  
-:bulb: Alternatively you can open a `isa.study.xlsx` or `isa.assay.xlsx` file from your existing ARC to annotate your ARC's data. 
 
 ## Swate Overview
 
 <figure>
-  <img src="./../img/Swate-Overlay-Exp.jpg?v27.01.202" style="height: 400px">
+  <img src="./../img/Swate_a_overview2.png">
   <figcaption>Major areas of the Swate user interface.</figcaption>
 </figure>
+
 
 <!-- 
 ## A small detour on "Excel Tables"
@@ -67,144 +63,52 @@ Example workflows with three *processes* each:
 >           └─── table  (e.g. "annotationTable")
 > ``` -->
 
-## Create an annotation table
+## Add building blocks to create your annotation table
 
-<br>
+Each annotation should start with an *Input* and end with an *Output* column. To add and specify your *Input* building block, click either the "Add Building Block" widget on the top (A) or use the "Building Blocks" function in the sidebar (B). Select *Input* from the drop-down menu instead of *Parameter* and select *Source Name* as input type. Then click <kbd>Add column</kbd>. Add *Output [Sample Name]* analogously. 
 
-<style scoped>
-.columns {
-    /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
-    grid-template-columns: 500px 500px;
-    gap: 30px;
-    display: flex;
-    justify-content: center;
-}
-</style>
+![Alt-Text](./../img/Swate_a_buildingblockcategories2.png)
 
-<div class="columns">
-<div class="columns-left">
+> :bulb: Only one *Input*, one *Output* and one of each *Protocol* columns can be added per table.
 
-Create a Swate annotation table via the <kbd>create annotation table</kbd> button in the yellow pop-up box *OR* click the <kbd>Create Annotation Table</kbd> quick access button.
+Now, let's add a descriptive building block.
+1. Select *Component* from the drop-down menu.
+2. Search for `instrument model` in the search bar. This search looks for suitable terms in our ontology database.
+3. Select the term with the id `MS:1000031` and, 
+4. Click <kbd>Add column</kbd>.
 
-<br>
+> :bulb: This adds three columns to your table, one visible and **two** hidden. The hidden columns contain the ontology references. You can view the hidden columns by clicking the two arrows (>>) in the first column.
 
-> :bulb: Each table is by default created with one input (`Source Name`) and one output (`Sample Name`) column  
-
-> :bulb: Only one annotation table can be added per Excel sheet
-
-</div>
-
-<div class="columns-right">
-    <img src="./../img/Swate-CreateAnnotationTable-Exp.jpg" style="width: 1200px">
-</div>
-
-</div>
-
-## Add a building block
-
-<style scoped>
-.columns {
-    grid-template-columns: 500px 300px;
-    gap: 30px;
-    display: flex;
-    justify-content: center;
-}
-</style>
-
-<div class="columns">
-<div class="columns-left">
-
-1. Navigate to the *Building Blocks* tab via the navbar. Here you can add *Building Blocks* to the table.
-2. Instead of *Parameter* select *Component* from the drop-down menu (A)
-3. Search for `instrument model` in the search bar (B). This search looks for suitable *Terms* in our *Ontology* database.
-4. Select the Term with the id `MS:1000031` and, 
-5. Click <kbd>Add building block</kbd>.
-
-> :bulb: This adds three columns to your table, one visible and **two** hidden.
-
-</div>
-
-<div class="columns-right">
-    <img src="./../img/Swate-AddBuildingBlock-Exp.jpg?v31.01.22" style="width:1200px;">
-</div>
-
-</div>
-
-## Insert values to annotate your data
-
-1. Navigate to the *Terms* tab in the Navbar
-2. In the annotation table, select any number of cells below `Component [instrument model]`
-3. Click into the search field in Swate.
-
-> :bulb: You should see `instrument model` showing in a field in front of the search field  
-> :bulb: The search will now yield results related to `instrument model`
-
-4. You can search or double click into the search field to show all related terms. Select any instrument model and click <kbd>Fill selected cells with this term*</kbd>
 
 ## Add a building block with a unit
 
-1. In the *Building Blocks* tab, re-select *Parameter*, search for `sample volume` and select the term with id `MS:1000005`.
-2. Check the box for *This Parameter has a unit* and search for `microliter` in the adjacent search bar.
+1. In the "Building Blocks" tab, re-select *Parameter*, search for `sample volume` and select the term with id `MS:1000005`.
+2. Activate the "Unit" box and search for `microliter` in the adjacent search bar.
 3. Select `UO:0000101`.
-4. Click <kbd>Add building block</kbd>.
+4. Click <kbd>Add column</kbd>.
 
-> :bulb: This adds four columns to your table, one visible and **three** hidden.
+> :bulb: This adds four columns to your table, one visible and **three** hidden. 
+When filling any cell below `Parameter [sample volume]` you can now see the numbers being complemented with the chosen unit, e.g. `10.00 microliter`.
 
-## Insert unit-values to annotate your data
 
-In the annotation table, select any cell below `Parameter [sample volume]` and add any numbers as volume.
+## Change the order of your columns or delete columns
 
-> :bulb: You can see the numbers being complemented with the chosen unit, e.g. `10.00 microliter`
+At this point, your table should look similar to this:
 
-## Showing ontology reference columns
+![Alt-Text](./../img/Swate_a_movecolumn2.png)
 
-Hold <kbd>Ctrl</kbd> and click the *Autoformat Table* quick access button to adjust column widths and un-hide all hidden columns.
-
-> :bulb: You can see that your instrument model of choice was added with id and source Ontology in the reference (hidden) columns.  
-> :warning: This feature is currently not supported on MacOS
-
-## Update ontology reference columns
-
-Click the <kbd>Update Ontology Terms</kbd> quick access buttons.
-
-> :bulb: This updates all reference columns according to the main column. In this case the reference columns for `Parameter [sample volume]` are updated with the id and source ontology of the `microliter` unit.
-
-## Your ISA table is growing
-
-At this point. Your table should look similar to this
-
-<div class="table-container" style="height: 400px">
-
-| Source Name 	| Parameter [instrument model] 	| Term Source REF (MS:1000031) 	| Term Accession Number (MS:1000031)        	| Parameter [sample volume] 	| Unit       	| Term Source REF (MS:1000005) 	| Term Accession Number (MS:1000005)        	| Sample Name 	|
-|-------------	|------------------------------	|------------------------------	|-------------------------------------------	|---------------------------	|------------	|------------------------------	|-------------------------------------------	|-------------	|
-|             	| SCIEX instrument model       	| MS                           	| http://purl.obolibrary.org/obo/MS_1000121 	| 10.00 microliter          	| microliter 	| UO                           	| http://purl.obolibrary.org/obo/UO_0000101 	|             	|
-|             	| SCIEX instrument model       	| MS                           	| http://purl.obolibrary.org/obo/MS_1000121 	| 5.00 microliter           	| microliter 	| UO                           	| http://purl.obolibrary.org/obo/UO_0000101 	|             	|
-|             	| SCIEX instrument model       	| MS                           	| http://purl.obolibrary.org/obo/MS_1000121 	| 5.00 microliter           	| microliter 	| UO                           	| http://purl.obolibrary.org/obo/UO_0000101 	|             	|
-|             	| SCIEX instrument model       	| MS                           	| http://purl.obolibrary.org/obo/MS_1000121 	| 5.00 microliter           	| microliter 	| UO                           	| http://purl.obolibrary.org/obo/UO_0000101 	|             	|
-
-</div>
-
-## Hiding ontology reference columns
-
-Click the <kbd>Autoformat Table</kbd> quick access button without holding <kbd>Ctrl</kbd> to hide all reference columns.
+We now want to move the *Output* column to the end of your table. For this, right-click into any cell (except the header) of the column that you want to move. Now you can click "Move Column" and select the position that the column should be moved to (in this case: 3). If your table does not contain empty cells yet, you can add any number of rows with the plus symbol. Right-clicking into cells also gives the option of deleting a column or row.
 
 ## Use a template
 
-1. Navigate to *Templates* in the Navbar and click *Browse database* in the first function block.
+1. Use the "Add Template" widget on the top or navigate to "Templates" in the sidebar and click <kbd>Browse database</kbd>.
 
-> :bulb: Here you can find community created workflow annotation templates
-
-2. Search for and select `Proteomics MassSpec Assay` (name may be issue to change in future updates, pls let us know if there are problems).
+2. Search for and select `Proteomics MassSpec assay` .
     - You will see a preview of all building blocks which are part of this template.
-3. Click <kbd>Add template</kbd> to add all Building Blocks from the template to your table, which <u>do not exist yet</u>.
+3. Click <kbd>Add template</kbd> to add all building blocks from the template to your table, which <u>do not exist yet</u>.
 
-## Remove building blocks
+If there are any building blocks which do not fit your experiment you can delete the columns as described above.
 
-If there are any Building Blocks which do not fit your experiment you can use the <kbd>Remove Building Block</kbd> quick access button to remove it including all related (hidden) reference columns.
+## Your ISA table is ready to fill 🎉
 
-:warning: Due to the hidden reference columns, we recommend not to delete table columns via usual Excel functions. 
-
-## Your ISA table is ready 🎉
-
-Go ahead, adjust the Building Blocks you want to use to describe your experiment as you see fit.
-Insert values using Swate Term search and add input and output.
+Go ahead, adjust the building blocks you want to use to describe your experiment as you see fit. Insert values for *Input* and *Output* and fill the cells of your *Parameter*, *Characteristic* or *Component* columns using the ontology term search. You can activate the ontology term search directly in the cells of your table with the magnifying glass symbol or you can use the "Ontology term search" in the side bar. Instructions for annotating your data can also be found in the [Swate Quickstart](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html) and in the Swate Manual ([Filling cells with ontology terms](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs04-Ontology-Term-Search.html)).

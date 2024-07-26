@@ -221,6 +221,20 @@ Please follow [this workaround](https://github.com/nfdi4plants/ARCitect/discussi
 </details>
 
 
+<details>
+<summary><span style="color: #1fc2a7">
+What does the "Credential Helper Selector" mean?
+</summary>
+<br>
+
+During ARCitect login, Windows asks you wether you want to use a "Credential Helper". This can be used to store your DataHUB credentials. You do not need this for ARCitect to work. You can choose "no helper" or "manager" and tick the check box "always use this from now on" to avoid the popup in the future.
+
+![](./../img/faq-CredentialHelperSelector.png)
+
+<br>
+</details>
+
+
 ## Swate
 
 <details><summary><span style="color: #1fc2a7">
@@ -262,26 +276,26 @@ String formatted as ISO8601 date: YYYY-MM-DD
 <br>
 </details>
 <br>
-<!--
-## ARCitect
 
-<details><summary><span style="color: #1fc2a7">
-Question
-</summary>
-<br>
-Answer
-<br>
-</details>
 
 ## DataHUB
 
 <details><summary><span style="color: #1fc2a7">
-Question
+Why do I see banners about "SSH Key", "SAML", "Personal Access Tokens" when logging into the DataHUB?
 </summary>
 <br>
-Answer
+
+After login to the DataHUB you see the following banners
+
+![](./../img/faq-DataHUB-Tokens.png)
+
+If you use DataPLANT tools (ARCitect or ARC commander) to sync your ARC with the DataHUB, you can safely ignore them and click "Don't show again".
+
+
 <br>
 </details>
+
+<!--
 
 ## DataPLAN
 
@@ -289,7 +303,10 @@ Answer
 Question
 </summary>
 <br>
+
 Answer
+
+
 <br>
 </details>
 
@@ -298,5 +315,7 @@ Answer
 **Q:**  Which format must be used to enter a date?
 
 **A:**  String formatted as ISO8601 date: YYYY-MM-DD-->
+
+<br>
 
 Already got an answer to a question or figured out the answer yourself? Please let others benefit from it by adding your suggestion [here](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/issues/new?assignees=CMR248&labels=FAQ&projects=&template=contribution-to-the-faq-section.md&title=%5BFAQ%5D).

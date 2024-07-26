@@ -18,13 +18,15 @@ This guide shows you how to generate a Personal Access Token (PAT). The PAT can 
 
 :bulb: You need to do this only once per machine (unless you specify an expiration date)
 
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
     <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-</a>
+    </a>
+</div>
 
-<br>
-<br>
+
+
 
 
 1. Sign in to the [DataHUB](https://git.nfdi4plants.org/)

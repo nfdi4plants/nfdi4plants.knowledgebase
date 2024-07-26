@@ -38,9 +38,10 @@ With a monthly ARC user meeting we try to regularly answer questions, demonstrat
 
 - Every second Friday of the month from 1 pm - 2pm (<a href="webcal://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-meeting.ics"><i class="fa fa-calendar" aria-hidden="true"></i> Download invitation to your calendar</a>)
   - Upcoming dates:
-    - April 12<sup>th</sup>
-    - May 10<sup>th</sup>
-    - June 14<sup>th</sup>
+    - July 12<sup>th</sup>
+    - August 9<sup>th</sup>
+    - September 13<sup>th</sup>
+    - October 11<sup>th</sup>
 - Online [via WebEx](https://hhu.webex.com/hhu-en/j.php?MTID=m37ec02b7a7afdc4b0e1b310bd693ac0c)
 - No registration required
 

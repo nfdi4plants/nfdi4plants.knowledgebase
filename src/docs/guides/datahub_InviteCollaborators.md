@@ -14,45 +14,47 @@ add sidebar: _sidebars/mainSidebar.md
 
 In this guide we show you how to invite lab colleagues or project partners to your ARC for collaboration. 
 
-<a href="./index.html">
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
     <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
     <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-</a>
-<br>
-<br>
+    </a>
+</div>
+
+
 
 ## Before we can start
 
-:ballot_box_with_check: You have a [DataPLANT account](https://register.nfdi4plants.org)   
+:ballot_box_with_check: You have a [DataPLANT account](https://register.nfdi4plants.org)
 :ballot_box_with_check: You have created an ARC  
 :bulb: Unless changed, your ARC is set to private by default. 
 
 ## Inviting collaborators
 
 1. [Sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB and open the ARC you want to share.
-2. Click on **Project Information** in the left navigation panel
+2. Click on **Manage** in the left navigation panel
 
-<img src="./../img/datahub_members_seq2.png" style="width:85%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../img/datahub_members_seq2.png" style="width:100%;display: block;margin-left: auto;margin-right: auto;">
 
 3. Click on **Members**
 
-<img src="./../img/datahub_members_seq3.png" style="width:85%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../img/datahub_members_seq3.png" style="width:100%;display: block;margin-left: auto;margin-right: auto;">
 
 4. Click on **Invite members**
 
-<img src="./../img/datahub_members_seq4.png" style="width:85%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../img/datahub_members_seq4.png" style="width:100%;display: block;margin-left: auto;margin-right: auto;">
 
 5. Search for potential collaborators
 
-<img src="./../img/datahub_members_seq5.png" style="width:85%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../img/datahub_members_seq5.png" style="width:65%;display: block;margin-left: auto;margin-right: auto;">
 
 6. **Select a role** and click <kbd>Invite</kbd>
 
-<img src="./../img/datahub_members_seq6.png" style="width:85%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../img/datahub_members_seq6.png" style="width:65%;display: block;margin-left: auto;margin-right: auto;">
 
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_invite-collaborators.md -->
-<br>
+
 
 ## Choosing the proper role
 
@@ -73,7 +75,7 @@ Gives the person the same rights as you have (except of removing you from your o
 <!-- Source to slide(s) -->
 <!-- ../../bricks/datahub_choose-collaborator-role.md -->
 
-<br>
+
 
 <div align="center"><b><font size="6">Congratulations!</b></font></div>
 <div align="center">You have just shared your ARC with a collaborator.</div>
