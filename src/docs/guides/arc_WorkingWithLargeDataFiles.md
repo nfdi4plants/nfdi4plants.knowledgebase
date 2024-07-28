@@ -36,7 +36,13 @@ ARCs and the DataHUB come with a mechanism to sync and store large files called 
 
 ### ARCitect
 
-- The ARCitect offers to activate or deactivate the use of LFS via checkboxes in the "Download" as well as the "DataHUB sync" menus, respectively.
+The ARCitect offers to activate or deactivate the use of LFS: 
+- in the "Download ARC" (1) menu via the "LFS" checkbox (2)
+<img src="./../img/ARCitect-download-lfs.drawio.svg" style="width:100%;display: block;margin-left: auto;margin-right: auto;">
+
+- as well as in the "DataHUB Sync" menu (1) via the "Use Large File Storage" checkbox (2), which are available once an ARC has been open in ARCitect.
+<img src="./../img/ARCitect-datahub-sync-lfs.drawio.svg" style="width:100%;display: block;margin-left: auto;margin-right: auto;">
+
 - In addition you can set a threshold for what you consider a large file in the "Commit" menu.
 - Finally, you can individually download large files via right-click -> "Download LFS File"
 
