@@ -81,7 +81,7 @@ git add .gitattributes
 <img src="./../img/ARCitect-lfs-flagged.drawio.svg" style="width:100%;display: block;margin-left: auto;margin-right: auto;">
 
 
-:bulb: Avoid uploading large files without [git LFS](https://git-lfs.github.com/).
+:warning: Please avoid uploading large files without [git LFS](https://git-lfs.github.com/) (i.e. accidentally with pure git, when git-lfs is not available).
 
 
 #### Downloading an ARC without large data files
