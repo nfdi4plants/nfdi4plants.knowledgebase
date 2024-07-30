@@ -43,8 +43,11 @@ The ARCitect offers to activate or deactivate the use of LFS:
 - as well as in the "DataHUB Sync" menu (1) via the "Use Large File Storage" checkbox (2), which are available once an ARC has been open in ARCitect.
 <img src="./../img/ARCitect-datahub-sync-lfs.drawio.svg" style="width:100%;display: block;margin-left: auto;margin-right: auto;">
 
-- In addition you can set a threshold for what you consider a large file in the "Commit" menu.
-- Finally, you can individually download large files via right-click -> "Download LFS File"
+In addition you can set a threshold (2) for what you consider a large file in the "Commit" menu (1).
+<img src="./../img/ARCitect-lfs-threshold.drawio.svg" style="width:100%;display: block;margin-left: auto;margin-right: auto;">
+
+Finally, you can individually download large files via right-click -> "Download LFS File" (1)
+<img src="./../img/ARCitect-download-lfs-file-right-click.drawio.svg" style="width:100%;display: block;margin-left: auto;margin-right: auto;">
 
 ### ARC Commander
 
@@ -74,7 +77,12 @@ git add .gitattributes
 ```
 
 4. Sync your ARC to the DataHUB via `arc sync`
-5. Open your ARC in the DataHUB and navigate to the folder with LFS objects and see them flagged as "LFS".
+5. Open your ARC in the DataHUB and navigate to the folder with LFS objects and see them flagged as "LFS" (1).
+<img src="./../img/ARCitect-lfs-flagged.drawio.svg" style="width:100%;display: block;margin-left: auto;margin-right: auto;">
+
+
+:bulb: Avoid uploading large files without [git LFS](https://git-lfs.github.com/).
+
 
 #### Downloading an ARC without large data files
 
@@ -111,3 +119,7 @@ If at some point you wish to download **all** LFS files of your ARC, you can use
 ```bash
 git lfs pull --include "*"
 ```
+
+#### Checking usage quoteas of LFS
+
+If at some point you would like to check how much free storage you have for your ARC, you can easily do so by navigating to your ARC in the DataHUB and clicking on "Project Storage" in the right sidebar (1).
