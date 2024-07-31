@@ -128,3 +128,4 @@ git lfs pull --include "*"
 #### Checking usage quota of LFS
 
 If at some point you would like to check how much free storage you have for your ARC, you can easily do so by navigating to your ARC in the DataHUB and clicking on "Project Storage" in the right sidebar (1).
+<img src="./../img/ARCitect-lfs-project-storage.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
