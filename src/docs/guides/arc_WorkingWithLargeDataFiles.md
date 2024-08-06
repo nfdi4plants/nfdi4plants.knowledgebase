@@ -32,19 +32,33 @@ In this guide we show you how you can actively handle large data files in your A
 
 ## Large File Storage (LFS)
 
-ARCs and the DataHUB come with a mechanism to sync and store large files called *Large File Storage (LFS)*. LFS is an efficient way to store your large data files. These files are called "LFS objects". Rather than checking every file during every `arc sync`, the ARCitect or ARC Commander first checks *wether there was a change at all*. And only if this is the case, it scans *what* was changed. This way it saves time and computing power compared to always scanning all large files for possible changes.
+ARCs and the DataHUB come with a mechanism to sync and store large files called *Large File Storage (LFS)*. LFS is an efficient way to store your large data files. These files are called "LFS objects". Rather than checking every file during every `arc sync` (ARC Commander) or DataHUB Sync (ARCitect), the tools first check *whether there was a change at all*. And only if this is the case, it scans *what* was changed. This way it saves time and computing power compared to always scanning all large files for possible changes.
 
 ### ARCitect
 
-- The ARCitect offers to activate or deactivate the use of LFS via checkboxes in the "Download" as well as the "DataHUB sync" menus, respectively.
-- In addition you can set a threshold for what you consider a large file in the "Commit" menu.
-- Finally, you can individually download large files via right-click -> "Download LFS File"
+The ARCitect offers to activate or deactivate the use of LFS: 
+- in the "Download ARC" (1) menu via the "LFS" checkbox (2)
+
+<img src="./../img/ARCitect-download-lfs.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
+
+- as well as in the "DataHUB Sync" menu (1) via the "Use Large File Storage" checkbox (2), which are available once an ARC has been open in ARCitect.
+
+<img src="./../img/ARCitect-datahub-sync-lfs.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
+
+In addition you can set a threshold (2) in megabytes (MB) for what you consider a large file in the "Commit" menu (1).
+
+<img src="./../img/ARCitect-lfs-threshold.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
+
+Finally, you can individually download large files via right-click -> "Download LFS File" (1)
+
+<img src="./../img/ARCitect-download-lfs-file-right-click.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
 
 ### ARC Commander
 
 By default, the ARC Commander tracks the following files via LFS:
+  
   1. All files stored in an assay's `dataset` folder, and
-  2. All files with a size larger than 150 MB. 
+  2. All files with a size larger than 150 MB.
 
 The threshold of 150 MB can easily be adjusted using the ARC Commander. For instance, if you want to decrease it to 5 MB (i.e. 5000000 bytes), run
 
@@ -68,7 +82,12 @@ git add .gitattributes
 ```
 
 4. Sync your ARC to the DataHUB via `arc sync`
-5. Open your ARC in the DataHUB and navigate to the folder with LFS objects and see them flagged as "LFS".
+5. Open your ARC in the DataHUB and navigate to the folder with LFS objects and see them flagged as "LFS" (1).
+<img src="./../img/ARCitect-lfs-flagged.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
+
+
+:warning: Please avoid uploading large files without [git LFS](https://git-lfs.github.com/) (i.e. accidentally with pure git, when git-lfs is not available).
+
 
 #### Downloading an ARC without large data files
 
@@ -105,3 +124,8 @@ If at some point you wish to download **all** LFS files of your ARC, you can use
 ```bash
 git lfs pull --include "*"
 ```
+
+#### Checking usage quota of LFS
+
+If at some point you would like to check how much free storage you have for your ARC, you can easily do so by navigating to your ARC in the DataHUB and clicking on "Project Storage" in the right sidebar (1).
+<img src="./../img/ARCitect-lfs-project-storage.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
