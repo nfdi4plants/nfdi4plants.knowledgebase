@@ -571,13 +571,21 @@
 ☑️ You have a <a href="https://register.nfdi4plants.org">DataPLANT</a> account<br />
 ☑️ Your computer is linked to the <a href="https://git.nfdi4plants.org">DataHUB</a> via personal access token</p>
 <nfdi-h2 id="large-file-storage-lfs">Large File Storage (LFS)</nfdi-h2>
-<p>ARCs and the DataHUB come with a mechanism to sync and store large files called <em>Large File Storage (LFS)</em>. LFS is an efficient way to store your large data files. These files are called &quot;LFS objects&quot;. Rather than checking every file during every <code>arc sync</code>, the ARCitect or ARC Commander first checks <em>wether there was a change at all</em>. And only if this is the case, it scans <em>what</em> was changed. This way it saves time and computing power compared to always scanning all large files for possible changes.</p>
+<p>ARCs and the DataHUB come with a mechanism to sync and store large files called <em>Large File Storage (LFS)</em>. LFS is an efficient way to store your large data files. These files are called &quot;LFS objects&quot;. Rather than checking every file during every <code>arc sync</code> (ARC Commander) or DataHUB Sync (ARCitect), the tools first check <em>whether there was a change at all</em>. And only if this is the case, it scans <em>what</em> was changed. This way it saves time and computing power compared to always scanning all large files for possible changes.</p>
 <nfdi-h3 id="arcitect">ARCitect</nfdi-h3>
+<p>The ARCitect offers to activate or deactivate the use of LFS:</p>
 <ul>
-<li>The ARCitect offers to activate or deactivate the use of LFS via checkboxes in the &quot;Download&quot; as well as the &quot;DataHUB sync&quot; menus, respectively.</li>
-<li>In addition you can set a threshold for what you consider a large file in the &quot;Commit&quot; menu.</li>
-<li>Finally, you can individually download large files via right-click → &quot;Download LFS File&quot;</li>
+<li>in the &quot;Download ARC&quot; (1) menu via the &quot;LFS&quot; checkbox (2)</li>
 </ul>
+<img src="./../img/ARCitect-download-lfs.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
+<ul>
+<li>as well as in the &quot;DataHUB Sync&quot; menu (1) via the &quot;Use Large File Storage&quot; checkbox (2), which are available once an ARC has been open in ARCitect.</li>
+</ul>
+<img src="./../img/ARCitect-datahub-sync-lfs.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
+<p>In addition you can set a threshold (2) in megabytes (MB) for what you consider a large file in the &quot;Commit&quot; menu (1).</p>
+<img src="./../img/ARCitect-lfs-threshold.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
+<p>Finally, you can individually download large files via right-click → &quot;Download LFS File&quot; (1)</p>
+<img src="./../img/ARCitect-download-lfs-file-right-click.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
 <nfdi-h3 id="arc-commander">ARC Commander</nfdi-h3>
 <p>By default, the ARC Commander tracks the following files via LFS:</p>
 <ol>
@@ -600,8 +608,10 @@ git add .gitattributes
 </nfdi-code>
 <ol start="4">
 <li>Sync your ARC to the DataHUB via <code>arc sync</code></li>
-<li>Open your ARC in the DataHUB and navigate to the folder with LFS objects and see them flagged as &quot;LFS&quot;.</li>
+<li>Open your ARC in the DataHUB and navigate to the folder with LFS objects and see them flagged as &quot;LFS&quot; (1).
+<img src="./../img/ARCitect-lfs-flagged.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;"></li>
 </ol>
+<p>⚠️ Please avoid uploading large files without <a href="https://git-lfs.github.com/">git LFS</a> (i.e. accidentally with pure git, when git-lfs is not available).</p>
 <nfdi-h4 id="downloading-an-arc-without-large-data-files">Downloading an ARC without large data files</nfdi-h4>
 <p>Sometimes you may want to download your ARC to a smaller computer, where you do not need a full copy of your ARC including all its large data files. For instance, you just want to work with smaller derived data sets or want to update ISA metadata.
 In this case, you can add the <code>-n</code> or <code>--nolfs</code> flag to your <code>arc get</code> command:</p>
@@ -621,6 +631,9 @@ In the DataHUB this ARC has a storage volume of ~84GB (December 2023), most of w
 <p>If at some point you wish to download <strong>all</strong> LFS files of your ARC, you can use the following command</p>
 <nfdi-code class="language-bash">git lfs pull --include "*"
 </nfdi-code>
+<nfdi-h4 id="checking-usage-quota-of-lfs">Checking usage quota of LFS</nfdi-h4>
+<p>If at some point you would like to check how much free storage you have for your ARC, you can easily do so by navigating to your ARC in the DataHUB and clicking on &quot;Project Storage&quot; in the right sidebar (1).
+<img src="./../img/ARCitect-lfs-project-storage.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;"></p>
 
       <h3>
         DataPLANT Support
