@@ -31,7 +31,7 @@ In our first scenario we focus on annotating the origin and relationship between
 
 Subsequent proccesing steps, mostly omitted here for better clarity, are stored within one or multiple isa.assay.xlsx files. In our scenario, three technical replicates of each sample were analyzed via LC/MS (Parameter [instrument model]), generating nine raw data files. 
 
-![replicates](./../img/ISA_AnnotationPattern_Replicates.png)
+<img src="./../img/ISA_AnnotationPattern_Replicates.png" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
 
 
 **It is very important to group these technical replicates and thus annotate their common origin.** If you would falsely name the individual technical replicates as A, B and C, you could run into trouble during your computational analysis.
