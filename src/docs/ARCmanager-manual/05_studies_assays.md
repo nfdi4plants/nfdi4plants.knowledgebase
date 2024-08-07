@@ -11,7 +11,7 @@ status: published
 date: 2024-06-13
 ---
 
-According to the  [ISA Metadata Model](/docs/ArcCommanderManual/arc_isa.html), each **study** is connected to an **Investigation** and can contain several **assays**. Follow the steps below to learn how to create new studies and assays and how to register them in the _isa.investigation.xlsx_ file.  
+According to the  [ISA Metadata Model](./../guides/index-AnnotateDataInYourARC.html), each **study** is connected to an **Investigation** and can contain several **assays**. Follow the steps below to learn how to create new studies and assays and how to register them in the _isa.investigation.xlsx_ file.  
 
 1. Navigate to the **studies** folder of your ARC. Then, click on the green `ADD` button to create a new study. A new input field will appear in which you need to specify a name for the study. Avoid whitespace characters when choosing a name for the study.
 
