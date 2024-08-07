@@ -57,9 +57,14 @@
 ## [QuickStart](/docs/guides/arcitect_QuickStart.html)
 ## [QuickStart - Videos](/docs/guides/arcitect_QuickStart_Videos.html)
 
-# [ARCmanager Manual](/docs/ARCmanager-manual/index.html)
-## [What is the ARCmanager?](/docs/ARCmanager-manual/intro.html)
-## [How to use the ARCmanager](/docs/ARCmanager-manual/how_to.html)
+# [ARCmanager Manual](/docs/ARCmanager-manual/00_index.html)
+## [What is the ARCmanager?](/docs/ARCmanager-manual/01_intro.html)
+## [Connect to your DataHUB](/docs/ARCmanager-manual/02_login.html)
+## [View your ARCs](/docs/ARCmanager-manual/03_view_ARCs.html)
+## [Create new ARCs](/docs/ARCmanager-manual/04_create_ARCs.html)
+## [Add new studies and assays](/docs/ARCmanager-manual/05_studies_assays.html)
+## [Upload files](/docs/ARCmanager-manual/05_uploading_files.html)
+## [Add metadata to your ARCs](/docs/ARCmanager-manual/06_adding_metadata.html)
 
 # [Swate Manual](/docs/SwateManual/index.html)
 ## [QuickStart](/docs/guides/swate_QuickStart.html)
