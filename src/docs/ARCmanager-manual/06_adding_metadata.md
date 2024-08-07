@@ -13,18 +13,12 @@ date: 2024-06-13
 
 Two different types of metadata are stored in ISA files: administrative and experimental metadata. Administrative metadata covers IDs, descriptions, contact details, connected publications and more, while experimental metadata is describing experimental procedures and similar processes. ISA files are normally stored in an Excel format (.xlsx) and need to adhere to the [ISA-XLSX specification](https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md).
 
-A typical ISA file has the administrative metadata recorded in the first sheet of the Excel file (top-level metadata sheet). In addition, every _isa.study.xlsx_ and _isa.assay.xlsx_ file should have at least one more sheet where the experimental metadata is annotated (annotation table sheets), that is maintained through SWATE. Both types of metadata can be edited with the ARCmanager. You can find more information about ISA file types and metadata sheets in the corresponding [knowledgebase article](/docs/guides/isa_FileTypes.html) and the [ISA-XLSX specification](https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md).
+A typical ISA file has the administrative metadata recorded in the first sheet of the Excel file (top-level metadata sheet). In addition, every _isa.study.xlsx_ and _isa.assay.xlsx_ file should have at least one more sheet where the experimental metadata is annotated (annotation table sheets), that is maintained through Swate. Both types of metadata can be edited with the ARCmanager. You can find more information about ISA file types and metadata sheets in the corresponding [knowledge base article](/docs/guides/isa_FileTypes.html) and the [ISA-XLSX specification](https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md).
 
 #### Contents:
 
-- [Administrative metadata (top-level metadata sheets)](#administrative-metadata-top-level-metadata-sheets)
-   * [Alternative view](#alternative-view) 
-- [Experimental metadata (annotation table sheets)](#experimental-metadata-annotation-table-sheets)
-   * [Add new annotation table sheets](#add-new-annotation-table-sheets)
-   * [Import annotation table templates](#import-annotation-table-templates)
-   * [Edit annotation table sheets](#edit-annotation-table-sheets)
-   * [Ontology term search](#ontology-term-search)
-   * [Adding new building blocks to annotation tables](#adding-new-building-blocks-to-annotation-tables)
+- [Administrative Metadata (top-level metadata sheets)](#administrative-metadata-top-level-metadata-sheets)
+- [Experimental Metadata (annotation table sheets)](#experimental-metadata-annotation-table-sheets)
 
 ### Administrative Metadata (top-level metadata sheets)
 

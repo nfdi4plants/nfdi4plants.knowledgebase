@@ -17,13 +17,13 @@ Here, you can find detailed information about using the ARCmanager web service.
 
 Contents:
 
-- [What is the ARCmanager?](/docs/ARCmanager-manual/01_intro.html)
-- [Connect to your DataHUB](/docs/ARCmanager-manual/02_login.html)
-- [View ARCs](/docs/ARCmanager-manual/03_view_ARCs.html)
-- [Create new ARCs](/docs/ARCmanager-manual/04_create_ARCs.html)
-- [Add new studies and assays](/docs/ARCmanager-manual/05_studies_assays.html)
-- [Upload files](/docs/ARCmanager-manual/05_uploading_files.html)
-- [Add metadata to your ARCs](/docs/ARCmanager-manual/06_adding_metadata.html)
+- [What is the ARCmanager?](./01_intro.html)
+- [Connect to your DataHUB](./02_login.html)
+- [View ARCs](./03_view_ARCs.html)
+- [Create new ARCs](./04_create_ARCs.html)
+- [Add new studies and assays](./05_studies_assays.html)
+- [Upload files](./05_uploading_files.html)
+- [Add metadata to your ARCs](./06_adding_metadata.html)
 
 ---
 
