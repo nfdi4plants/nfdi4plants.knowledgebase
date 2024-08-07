@@ -17,8 +17,14 @@ A typical ISA file has the administrative metadata recorded in the first sheet o
 
 #### Contents:
 
-- [Administrative Metadata (top-level metadata sheets)](#administrative-metadata-top-level-metadata-sheets)
-- [Experimental Metadata (annotation table sheets)](#experimental-metadata-annotation-table-sheets)
+- [Administrative metadata (top-level metadata sheets)](#administrative-metadata-top-level-metadata-sheets)
+   * [Alternative view](#alternative-view) 
+- [Experimental metadata (annotation table sheets)](#experimental-metadata-annotation-table-sheets)
+   * [Add new annotation table sheets](#add-new-annotation-table-sheets)
+   * [Import annotation table templates](#import-annotation-table-templates)
+   * [Edit annotation table sheets](#edit-annotation-table-sheets)
+   * [Ontology term search](#ontology-term-search)
+   * [Adding new building blocks to annotation tables](#adding-new-building-blocks-to-annotation-tables)
 
 ### Administrative Metadata (top-level metadata sheets)
 
