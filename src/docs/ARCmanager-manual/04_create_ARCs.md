@@ -39,7 +39,7 @@ To create a new ARC in ARCmanager, follow the steps below:
 
     Click on the created project to explore it.
 
-4. The created ARC contains four folders: *studies*, *assays* , *workflows*, and *runs*.  To get familiar with these folders, visit the [Annotated Research Context knowledge base article](/docs/implementation/AnnotatedResearchContext.html).
+4. The created ARC contains four folders: *studies*, *assays* , *workflows*, and *runs*.  To get familiar with these folders, visit the [Annotated Research Context knowledge base article](./../implementation/AnnotatedResearchContext.html).
 
     <p float="center">
         <img src="../img/ARCmanager_createARCs_ARC_explore.png" width="500" align="center"  style="border: 1px solid  black;"/>

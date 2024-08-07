@@ -99,7 +99,7 @@ When you click on a file instead of a directory, another panel on the right side
 
 ---
 
-When selecting an ISA file, the editor panel will open as well, but instead of a text editor you will see a form that allows you to add metadata entries to the ISA file (Fig. 8). To learn more about adding metadata using the ARCmanager, visit the corresponding [Manual page](/docs/ARCmanager-manual/06_adding_metadata.html).
+When selecting an ISA file, the editor panel will open as well, but instead of a text editor you will see a form that allows you to add metadata entries to the ISA file (Fig. 8). To learn more about adding metadata using the ARCmanager, visit the corresponding [Manual page](./06_adding_metadata.html).
 
 ---
 
