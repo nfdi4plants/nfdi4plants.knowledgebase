@@ -1,0 +1,757 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - Adding Metadata
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="./../../style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <div slot="searchbar">
+        <link href="/nfdi4plants.knowledgebase/pagefind/pagefind-ui.css" rel="stylesheet"/>
+        <script src="/nfdi4plants.knowledgebase/pagefind/pagefind-ui.js" type="text/javascript"></script>
+        <div id="search"></div>
+        <script>
+          window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ 
+        element: "#search",
+        baseUrl: "/nfdi4plants.knowledgebase"
+    });
+});
+        </script>
+      </div>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/index.html">
+          Home
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/fundamentals/index.html">
+          Fundamentals
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/ResearchDataManagement.html">
+          Research Data Management
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/FairDataPrinciples.html">
+          FAIR Data Principles
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/Metadata.html">
+          Metadata
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/Ontologies.html">
+          Ontologies
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataSharing.html">
+          Data Sharing
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataPublications.html">
+          Data Publications
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataManagementPlan.html">
+          Data Management Plan
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/VersionControlGit.html">
+          Version Control & Git
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">
+          Public Data Repositories
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/PersistentIdentifiers.html">
+          Persistent Identifiers
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/ElectronicLabNotebooks.html">
+          Electronic Lab Notebooks (ELN)
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/implementation/index.html">
+          DataPLANT Implementations
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">
+            Annotated Research Context
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/ARC-specification.html">
+            ARC specification
+          </a>
+        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">
+          ARC Commander
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/Swate.html">
+          Swate
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/MetadataQuiz.html">
+          MetadataQuiz
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/DataHub.html">
+          DataHUB
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/DataPLAN.html">
+          DataPLAN
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/OntologyServiceLandscape.html">
+          Ontology Service Landscape
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index.html">
+          ARC Commander Manual
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index-setup.html">
+            Setup
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_git.html">
+            Git Installation
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation.html">
+              ARC Commander Installation
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_windows.html">
+              Windows
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_macos.html">
+              MacOS
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_linux.html">
+              Linux
+            </a>
+          </nfdi-sidebar-eleneo>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_access.html">
+            ARC Commander DataHUB Access
+          </a>
+        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_before_we_start.html">
+          Before we start
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_initialization.html">
+            Central Functions
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_initialization.html">
+            Initialize
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_get.html">
+            Clone
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_connect.html">
+            Connect
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_synchronization.html">
+            Synchronize
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_config.html">
+            Configure
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_branch.html">
+            Branch
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa.html">
+            ISA Metadata Functions
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa.html">
+              ISA Metadata
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa_investigation.html">
+              Investigation
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa_study.html">
+              Study
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa_assay.html">
+              Assay
+            </a>
+          </nfdi-sidebar-eleneo>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_update.html">
+            Update
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_export.html">
+            Export
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html">
+          ARCitect Manual
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCitect-Manual/arcitect_installation_windows.html">
+          Installation - Windows
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCitect-Manual/arcitect_installation_macos.html">
+          Installation - macOS
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCitect-Manual/arcitect_installation_linux.html">
+          Installation - Linux
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart.html">
+          QuickStart
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart_Videos.html">
+          QuickStart - Videos
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/ARCmanager-manual/00_index.html">
+          ARCmanager Manual
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCmanager-manual/01_intro.html">
+          What is the ARCmanager?
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCmanager-manual/02_login.html">
+          Connect to your DataHUB
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCmanager-manual/03_view_ARCs.html">
+          View your ARCs
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCmanager-manual/04_create_ARCs.html">
+          Create new ARCs
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCmanager-manual/05_studies_assays.html">
+          Add new studies and assays
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCmanager-manual/05_uploading_files.html">
+          Upload files
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCmanager-manual/06_adding_metadata.html">
+          Add metadata to your ARCs
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/SwateManual/index.html">
+          Swate Manual
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
+          QuickStart
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart_Videos.html">
+          QuickStart - Videos
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs02-Annotation-Table.html">
+          Annotation tables
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs03-Building-Blocks.html">
+            Building blocks
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_types.html">
+            Building Block Types
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_add.html">
+            Adding a Building Block
+          </a>
+        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs04-Ontology-Term-Search.html">
+          Filling cells with ontology terms
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs07-Advanced-Term-Search.html">
+          Advanced Term Search
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Using-the-File-Picker.html">
+          File Picker
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs05-Templates.html">
+          Templates
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_template-contribution.html">
+          Contribute Templates
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs06-ISA-JSON.html">
+          ISA-JSON
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/index.html">
+          DataHUB Manual
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-overview.html">
+          Overview
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-userSettings.html">
+            User Settings
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub-GeneratePAT.html">
+            Generate a Personal Access Token (PAT)
+          </a>
+        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-projectsPanel.html">
+          Projects Panel
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-ARCPanel.html">
+            ARC Panel
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-fork.html">
+            Forks
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-files.html">
+            Working with files
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-ARCSettings.html">
+            ARC Settings
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-ARCWiki.html">
+            ARC Wiki
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-groupsPanel.html">
+            Groups Panel
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-CreateGroup.html">
+            Create a new user group
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/cqc-pipelines/cqc-pipelines.html">
+            CQC Pipelines & validation
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/cqc-pipelines/validation-packages.html">
+            Find and use ARC validation packages
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-data-publications.html">
+            Data publications
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-data-publications-cqc.html">
+            Passing Continuous Quality Control
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-data-publications-archigator.html">
+            Submitting ARCs with ARChigator
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-data-publications-status.html">
+            Track publication status
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-data-publications-dois.html">
+            Use your DOIs
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/guides/index.html">
+          Guides
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ARCUserJourney.html">
+          ARC User Journey
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-CreateYourARC.html">
+            Create your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart.html">
+            ARCitect QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart_Videos.html">
+            ARCitect QuickStart - Videos
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html">
+            ARC Commander QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart_expert.html">
+            ARC Commander QuickStart (Experts)
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-AnnotateDataInYourARC.html">
+            Annotate Data in your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/isa_AnnotationPrinciples.html">
+            Annotation Principles
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/isa_FileTypes.html">
+            ISA File Types
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/BestPracticesForDataAnnotation.html">
+            Best Practices For Data Annotation
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
+            Swate QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart_Videos.html">
+            Swate QuickStart - Videos
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_walkthrough.html">
+            Swate Walk-through
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-ShareYourARC.html">
+            Share your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub_register.html">
+            Register at the DataHUB
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub_account.html">
+            DataPLANT account
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub_InviteCollaborators.html">
+            Invite collaborators to your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub-arc-sharing.html">
+            Sharing ARCs via the DataHUB
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-WorkWithYourARC.html">
+            Work with your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ARCs-galaxy.html">
+            Using ARCs with Galaxy
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/guides/ComputationalWorkflows/index.html">
+              Computational Workflows
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ComputationalWorkflows/cwl_introduction.html">
+              CWL Introduction
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ComputationalWorkflows/cwl_runner_installation.html">
+              CWL runner installation
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ComputationalWorkflows/cwl_examples.html">
+              CWL Examples
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ComputationalWorkflows/cwl_metadata.html">
+              CWL Metadata
+            </a>
+          </nfdi-sidebar-eleneo>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-RecommendedARCPractices.html">
+            Recommended ARC practices
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_SyncingRecommendation.html">
+            Syncing recommendation
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_gitignore.html">
+            Keep files from syncing to the DataHUB
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_locations.html">
+            Managing ARCs across locations
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_WorkingWithLargeDataFiles.html">
+            Working with large data files
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_AddingExternalData.html">
+            Adding external data to the ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ARC-enablingPlatforms.html">
+            ARCs in Enabling Platforms
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/publicationToARC.html">
+            Publication to ARC
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-Troubleshooting.html">
+            Troubleshooting
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/git-troubleshooting.html">
+            Git Troubleshooting & Tips
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-Contribute.html">
+            Contribute
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_template-contribution.html">
+            Swate Templates
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/CONTRIBUTING.html">
+            Knowledge Base
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/index.html">
+          Teaching Materials
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2023/index.html">
+            Events 2023
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2023/2023-11-08_CEPLAS-module/index.html">
+            Nov: CEPLAS PhD Module
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2023/2023-10-CSCS-CEPLAS-StartYourARC/index.html">
+            Oct: CSCS CEPLAS Start Your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2023/2023-09-MibiNet-CEPLAS-StartYourARC/index.html">
+            Sept: MibiNet CEPLAS Start Your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2023/2023-07-17_rptu-summerschool-on-rdm/index.html">
+            July: RPTU Summer School on RDM
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2023/DataSteward-Circle/index.html">
+            July: Data Steward Circle
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2023/2023-05-09_CEPLAS-StartYourARC-Series/index.html">
+              May: CEPLAS Start Your ARC Series
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2023/2023-05-09_CEPLAS-StartYourARC-Series/StartYourARC-Videos.html">
+              Start Your ARC Series - Videos
+            </a>
+          </nfdi-sidebar-eleneo>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/index.html">
+            Events 2024
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/2024-02-13-TRR175-Becoming-FAIR/index.html">
+            TRR175 Becoming FAIR
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/2024-04-03_CEPLAS-ARC-Trainings/index.html">
+            CEPLAS ARC Trainings – Spring 2024
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/2024-04-11_MibiNet-CEPLAS-ARC-Trainings/index.html">
+            MibiNet CEPLAS DataPLANT Tool-Workshops
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/2024-06-19-TRR175-Tutzing-Retreat/index.html">
+            TRR175 Tutzing Retreat
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/faqs/faqs.html">
+          Frequently Asked Questions
+        </a>
+      </nfdi-sidebar-eleneo>
+      <h1 class="front-header">
+        Adding Metadata
+      </h1>
+      <i class="help">
+        last updated at 2024-06-13
+      </i>
+      <p>Two different types of metadata are stored in ISA files: administrative and experimental metadata. Administrative metadata covers IDs, descriptions, contact details, connected publications and more, while experimental metadata is describing experimental procedures and similar processes. ISA files are normally stored in an Excel format (.xlsx) and need to adhere to the <a href="https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md">ISA-XLSX specification</a>.</p>
+<p>A typical ISA file has the administrative metadata recorded in the first sheet of the Excel file (top-level metadata sheet). In addition, every <em>isa.study.xlsx</em> and <em>isa.assay.xlsx</em> file should have at least one more sheet where the experimental metadata is annotated (annotation table sheets), that is maintained through SWATE. Both types of metadata can be edited with the ARCmanager. You can find more information about ISA file types and metadata sheets in the corresponding <a href="/docs/guides/isa_FileTypes.html">knowledgebase article</a> and the <a href="https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md">ISA-XLSX specification</a>.</p>
+<nfdi-h4 id="contents">Contents:</nfdi-h4>
+<ul>
+<li><a href="#administrative-metadata-top-level-metadata-sheets">Administrative metadata (top-level metadata sheets)</a>
+<ul>
+<li><a href="#alternative-view">Alternative view</a></li>
+</ul>
+</li>
+<li><a href="#experimental-metadata-annotation-table-sheets">Experimental metadata (annotation table sheets)</a>
+<ul>
+<li><a href="#add-new-annotation-table-sheets">Add new annotation table sheets</a></li>
+<li><a href="#import-annotation-table-templates">Import annotation table templates</a></li>
+<li><a href="#edit-annotation-table-sheets">Edit annotation table sheets</a></li>
+<li><a href="#ontology-term-search">Ontology term search</a></li>
+<li><a href="#adding-new-building-blocks-to-annotation-tables">Adding new building blocks to annotation tables</a></li>
+</ul>
+</li>
+</ul>
+<nfdi-h3 id="administrative-metadata-top-level-metadata-sheets">Administrative Metadata (top-level metadata sheets)</nfdi-h3>
+<p>When you left-click on an ISA file, the right side will open up and a form to edit administrative metadata is shown:</p>
+<hr />
+<img src="../img/ARCmanager_addingmetadata_admin_meta.png" style="border: 1px solid  black;" />
+<p><strong>Fig. 1</strong> Default view of administrative metadata inside <em>isa.investigation.xlsx</em> files displayed in the ARCmanager web application. (1) General information, (2) related publication information, (3) contact details of associated persons.</p>
+<hr />
+<p>The metadata is separated into three parts:</p>
+<ol>
+<li>General Information</li>
+<li>Publications</li>
+<li>Contact details</li>
+</ol>
+<p>The <strong>general information</strong> part contains mandatory data like the title, identifier and description of the respective investigation/study.</p>
+<p>In assay metadata files (<em>isa.assay.xlsx</em>), it contains information about measurement types and technology types, instead:</p>
+<hr />
+<img src="../img/ARCmanager_addingmetadata_assay_meta.png" style="border: 1px solid  black;" />
+<p><strong>Fig. 2</strong> Default view of top-level metadata sheet inside an <em>isa.assay.xlsx</em> file displayed in ARCmanager.</p>
+<hr />
+<p>The <strong>publication</strong> part contains information about DOIs, publication titles, authors, etc. of publications that are associated with the experimental data stored inside the study/investigation.</p>
+<p><em>isa.assay.xlsx</em> files do not contain publication data, which is instead recorded in the connected study.</p>
+<p>The <strong>contact details</strong> part contains data about researchers associated with the investigation/study/assay. It contains information like first and last name, email, work address, and affiliation. Every ISA file has a contact section.</p>
+<p>You can fill out the metadata fields gradually as the research progresses. Make sure to keep the metadata record as complete as possible to enhance findability and reusability of your data.</p>
+<p>When you are done with your changes, just click the <code>SAVE</code> button in the bottom to save your data and send it to the respective DataHUB.</p>
+<div style="text-align: right">
+<p><a href="#contents">Back to table of contents</a></p>
+</div>
+<nfdi-h4 id="alternative-view">Alternative view</nfdi-h4>
+<p>To edit additional metadata entries not listed in the main view, you can click the checkmark on the top right named <code>alternative</code> to open up a different view of the data stored inside.</p>
+<hr />
+<img src="../img/ARCmanager_addingmetadata_admin_alt.png" width="400" style="border: 1px solid  black;" />
+<p><strong>Fig. 3</strong> Alternative view of ISA file contents which can be used to edit additional fields not displayed in the default view. (1) General information, (2) related publication information, (3) contact details of associated persons.</p>
+<hr />
+<p>In this alternative view, all metadata fields that are included in the original .xlsx file are shown. This allows adding additional information, like the ORCID of associated persons (<code>Comment[ORCID]</code>)</p>
+<p>To edit a metadata field, select it with a left-click. This will open a new input field in the main part in the middle of the browser window:</p>
+<hr />
+<img src="../img/ARCmanager_addingmetadata_alt_edit.png" style="border: 1px solid  black;" />
+<p><strong>Fig. 4</strong> Input field to add data to ISA files using the alternative view. The <code>+</code> button adds additional fields, while <code>SAVE</code> is used to apply changes to the ISA file.</p>
+<hr />
+<p>For every column inside of the ISA file there will be an input field. So if you, for example, have added five contacts to an investigation file already and want to add the respective ORCIDs for these contacts, you will have five rows of input. You can add new entries by clicking the <code>+</code> button which will add a new column to the ISA file in return.</p>
+<p>When you are done filling out the data, click the <code>SAVE</code> button below to add the changes to the ISA file.</p>
+<p>Every time you click <code>SAVE</code>, the data is written into the excel file and changes are synchronized with your ARC on the corresponding DataHUB.</p>
+<div style="text-align: right">
+<p><a href="#contents">Back to table of contents</a></p>
+</div>
+<nfdi-h3 id="experimental-metadata-annotation-table-sheets">Experimental Metadata (annotation table sheets)</nfdi-h3>
+<nfdi-h4 id="add-new-annotation-table-sheets">Add new annotation table sheets</nfdi-h4>
+<p>When you want to edit/create experimental metadata, you need to go into either an assay or a study folder.
+Inside you have your ISA file as usual, but with the additional fields called <code>ADD SHEET</code> and <code>EDIT SHEET</code>.</p>
+<hr />
+<img src="../img/ARCmanager_addingmetadata_exp_select.png" style="border: 1px solid  black;" />
+<p><strong>Fig. 5</strong> Buttons to add additional metadata sheets to ISA files and to access editing of existing sheets.</p>
+<hr />
+<p>If you already have some annotation sheets in your study/assay you can click <code>EDIT SHEET</code> and select the sheet from the list on the right side.</p>
+<div style="text-align: right">
+<p><a href="#contents">Back to table of contents</a></p>
+</div>
+<nfdi-h4 id="import-annotation-table-templates">Import annotation table templates</nfdi-h4>
+<p>To add additional metadata sheets, click <code>ADD SHEET</code>. This will open up a list of templates on the right side.</p>
+<hr />
+<img src="../img/ARCmanager_addingmetadata_exp_template.png" width="300" style="border: 1px solid  black;" />
+<p><strong>Fig. 6</strong> List of existing templates for annotation table sheets. Clicking on the template displays additional information. The <code>IMPORT</code> button loads the selected template into the metadata sheet.</p>
+<hr />
+<p>Here, you can select any desired template. Use the search bar on top to find any template you are looking for. If you want to start from scratch select the &quot;Empty Template&quot;, the first entry in the list.</p>
+<p>Every Template is listed with its title, the organisation where its originating from, as well as the current version. When you expand a template you also can read the description and the author list.</p>
+<p>If you found your desired template, click on the <code>IMPORT</code> button after expand it.</p>
+<div style="text-align: right">
+<p><a href="#contents">Back to table of contents</a></p>
+</div>
+<nfdi-h4 id="edit-annotation-table-sheets">Edit annotation table sheets</nfdi-h4>
+<p>After importing a template, you will see a table similar to the picture below. In this case it's the template &quot;RNA extraction (DataPLANT) 1.2.0&quot;, extended to eight rows.</p>
+<hr />
+<img src="../img/ARCmanager_addingmetadata_exp_swate_view.png" style="border: 1px solid  black;" />
+<p><strong>Fig. 7</strong> Metadata sheet editing view inside ARCmanager.</p>
+<hr />
+<p>The following will explain the different interfaces:</p>
+<ol>
+<li><p><strong>Search term:</strong> A click on the magnifying glass symbols opens a search bar above the sheet name bar (4). The search bar allows you to search for specific ontology terms or to get suggestions for terms that fit the parameter.</p>
+</li>
+<li><p><strong>Add building block:</strong> Clicking this button will open up additional input fields above that allow adding new columns to the metadata table.</p>
+</li>
+<li><p><strong>Delete row/column:</strong> Clicking the red &quot;X&quot; will delete the corresponding row or building block. The deletion of elements has to be confirmed in a pop-up menu before the action takes effect.</p>
+</li>
+<li><p><strong>Sheet name:</strong> This input field allows you to name your metadata sheet. It is mandatory to fill this field in before saving a newly created metadata sheet. Do not use whitespace characters when naming the sheet.</p>
+</li>
+<li><p><strong>Hide Terms:</strong> This checkbox is enabled by default and hides the &quot;Term Source REF&quot; and &quot;Term Accession Number&quot; column for every parameter/characteristic. Hiding these columns is meant to improve readability of annotation tables. By unchecking the box, the otherwise hidden columns will be displayed.</p>
+</li>
+<li><p><strong>Ontology links:</strong> These links will direct you to either the ontology lookup site or the DataPLANT ontology repository on GitHub.</p>
+</li>
+<li><p><strong>Extend the table:</strong> This button adds a new row to table.</p>
+</li>
+</ol>
+<div style="text-align: right">
+<p><a href="#contents">Back to table of contents</a></p>
+</div>
+<nfdi-h4 id="ontology-term-search">Ontology term search</nfdi-h4>
+<hr />
+<img src="../img/ARCmanager_addingmetadata_exp_term_srch.png" width="500px" style="border: 1px solid  black;" />
+<p><strong>Fig. 8</strong> Ontology term look-up functions of the annotation table editing view in ARCmanager. (1) Access ontology term search function, (2) Get ontology term suggestions, (3) Search bar for finding specific terms.</p>
+<hr />
+<p>By clicking on the magnifying glass (Fig. 8, 1) you can start searching for ontology terms for the corresponding building block. In the example shown in Fig.8, we are searching for a &quot;library strategy&quot; inside the &quot;RNASeq Assay (DataPLANT) 1.2.0&quot; template.</p>
+<p>Clicking the <code>GET SUGGESTIONS</code> button (Fig. 8, 2) will display a list of terms on the right side of the browser window with terms that are connected to the higher level term of the building block (Fig. 9).</p>
+<hr />
+<img src="../img/ARCmanager_addingmetadata_exp_term_selct.png" width="500px" style="border: 1px solid  black;" />
+<p><strong>Fig. 9</strong> List of suggested ontology terms related to &quot;library strategy&quot;. (1) Ontology term and link to the corresponding ontology entry, (2) drop-down menu to choose annotation table row where the term will be added, (3) button to insert the selected term into the table.</p>
+<hr />
+<p>When expanding a term from the suggestion list by clicking on it, a short definition and additional options are shown. You can insert the selected term into the metadata annotation table with the <code>INSERT</code> button (Fig. 9, 3).</p>
+<p>If you want to search for a specific term you can type it directly in the search bar (Fig. 8, 3) and click the <code>SEARCH</code> button afterwards. In this default search mode only terms connected to the higher level ontology term of the building block are considered. If you want to expand the search to all possible terms, check the box labeled &quot;Extended search&quot;.</p>
+<p>By default, the term will be inserted into the first row of the corresponding column. If you want to add the term to another row, select the row number with the drop-down menu (Fig. 9, 2). Clicking the <code>INSERT</code> button will add the term to the annotation table sheet.</p>
+<hr />
+<img src="../img/ARCmanager_addingmetadata_exp_term_insrtd.png" width="500px" style="border: 1px solid  black;" />
+<p><strong>Fig. 10</strong> Additional columns with ontology term information will be displayed when unchecking the &quot;Hide Terms&quot; box.</p>
+<hr />
+<p>Every cell of the annotation table sheets can also be filled out manually, instead of using the integrated ontology term search function. To do so, click inside a cell and start typing.</p>
+<div style="text-align: right">
+<p><a href="#contents">Back to table of contents</a></p>
+</div>
+<nfdi-h4 id="adding-new-building-blocks-to-annotation-tables">Adding new building blocks to annotation tables</nfdi-h4>
+<p>The first and last column of each annotation table sheet must be &quot;Input&quot; and &quot;Output&quot; columns, respectively. These columns should contain distinct descriptors of entities that served as an input and output of the workflow described in the annotation table sheet.</p>
+<p>By default, input columns have the type &quot;Source Name&quot; and output columns have the type &quot;Sample Name&quot;. The type of input and output columns can be changed manually by clicking into the respective header field and changing the text between the squared brackets. Valid column types for input and output columns are: [Source Name], [Sample Name], [Material Name], and [Data]. You can find more details about this in the <a href="https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md#inputs-and-outputs">ISA-XLSX specification</a>.</p>
+<hr />
+<img src="../img/ARCmanager_addingmetadata_exp_bb_add.png" width="500px" style="border: 1px solid  black;" />
+<p><strong>Fig. 11</strong> Interface for adding new building blocks to annotation table sheets. (1) Drop-down menu for selection of column type, (2) Ontology term search bar, (3) Check-box for adding a unit to a building block and search bar for unit terms.</p>
+<hr />
+<p>To add additional attribute columns to the annotation sheet, click the <code>+BUILDING BLOCK</code> button. A new input area (Fig. 11) will open above the annotation table that assists you in designing the attribute column according to the ISA-XLSX specifications.</p>
+<p>First, select a type for the new column from the drop-down menu (Fig. 11, 1). Available column types are <a href="https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md#characteristics">Characteristic</a>, <a href="https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md#factors">Factor</a>, <a href="https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md#components">Component</a>, <a href="https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md#parameters">Parameter</a>, <a href="https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md#comments">Comment</a>, and <a href="https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md#protocol-columns">Protocol</a>.</p>
+<p>Below the column type drop-down menu is a search bar that can be used to search for ontology terms that specify the contents of the new building block (Fig. 11, 2).</p>
+<p>If the new building block will contain numeric values that have a unit, check the &quot;Unit?&quot; checkbox above (Fig. 11, 3). This will add a second search bar where you can search the ontology database for unit terms, like &quot;liter&quot; for the parameter &quot;volume&quot;.</p>
+<p>Search results will be displayed on the right side and can be applied to the annotation table with the <code>SELECT</code> button. When adding a unit to a building block, make sure to select a building block term first, and afterwards search for a unit and apply it to the annotation table.</p>
+<p>When you are done with editing the annotation table, name your sheet and click the <code>SAVE</code> button. This will create a new sheet with the annotation table in the ISA Excel file or update an existing one if you were editing. The changes will be directly applied to the remote copy of your ARC on the corresponding DataHUB.</p>
+<div style="text-align: right">
+<p><a href="#contents">Back to table of contents</a></p>
+</div>
+
+      <h3>
+        DataPLANT Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <span style="display: inline-flex; flex-wrap: wrap;">
+          <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+            directly
+          </a>
+          .
+        </span>
+      </div>
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; margin: 1rem 0 1rem 0;">
+        <div>
+          <a target="_blank" href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/CONTRIBUTING.html" style="display: block;">
+            Contribution Guide 📖
+          </a>
+        </div>
+        <div>
+          <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/ARCmanager-manual/06_adding_metadata.md" style="display: block;">
+            ✏️ Edit this page
+          </a>
+        </div>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>

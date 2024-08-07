@@ -1,0 +1,665 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      DataPLANT documentation - View ARCs
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="./../../style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+    <script type="module" src="/web-components-docs/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <nfdi-body class="content" hasSidebar="true">
+      <div slot="searchbar">
+        <link href="/nfdi4plants.knowledgebase/pagefind/pagefind-ui.css" rel="stylesheet"/>
+        <script src="/nfdi4plants.knowledgebase/pagefind/pagefind-ui.js" type="text/javascript"></script>
+        <div id="search"></div>
+        <script>
+          window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ 
+        element: "#search",
+        baseUrl: "/nfdi4plants.knowledgebase"
+    });
+});
+        </script>
+      </div>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/index.html">
+          Home
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/fundamentals/index.html">
+          Fundamentals
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/ResearchDataManagement.html">
+          Research Data Management
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/FairDataPrinciples.html">
+          FAIR Data Principles
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/Metadata.html">
+          Metadata
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/Ontologies.html">
+          Ontologies
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataSharing.html">
+          Data Sharing
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataPublications.html">
+          Data Publications
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/DataManagementPlan.html">
+          Data Management Plan
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/VersionControlGit.html">
+          Version Control & Git
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">
+          Public Data Repositories
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/PersistentIdentifiers.html">
+          Persistent Identifiers
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/fundamentals/ElectronicLabNotebooks.html">
+          Electronic Lab Notebooks (ELN)
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/implementation/index.html">
+          DataPLANT Implementations
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">
+            Annotated Research Context
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/ARC-specification.html">
+            ARC specification
+          </a>
+        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">
+          ARC Commander
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/Swate.html">
+          Swate
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/MetadataQuiz.html">
+          MetadataQuiz
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/DataHub.html">
+          DataHUB
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/DataPLAN.html">
+          DataPLAN
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/implementation/OntologyServiceLandscape.html">
+          Ontology Service Landscape
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index.html">
+          ARC Commander Manual
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index-setup.html">
+            Setup
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_git.html">
+            Git Installation
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation.html">
+              ARC Commander Installation
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_windows.html">
+              Windows
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_macos.html">
+              MacOS
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_installation_linux.html">
+              Linux
+            </a>
+          </nfdi-sidebar-eleneo>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_access.html">
+            ARC Commander DataHUB Access
+          </a>
+        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_before_we_start.html">
+          Before we start
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_initialization.html">
+            Central Functions
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_initialization.html">
+            Initialize
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_get.html">
+            Clone
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_connect.html">
+            Connect
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_synchronization.html">
+            Synchronize
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_config.html">
+            Configure
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_branch.html">
+            Branch
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa.html">
+            ISA Metadata Functions
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa.html">
+              ISA Metadata
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa_investigation.html">
+              Investigation
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa_study.html">
+              Study
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_isa_assay.html">
+              Assay
+            </a>
+          </nfdi-sidebar-eleneo>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_update.html">
+            Update
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/ArcCommanderManual/arc_export.html">
+            Export
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html">
+          ARCitect Manual
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCitect-Manual/arcitect_installation_windows.html">
+          Installation - Windows
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCitect-Manual/arcitect_installation_macos.html">
+          Installation - macOS
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCitect-Manual/arcitect_installation_linux.html">
+          Installation - Linux
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart.html">
+          QuickStart
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart_Videos.html">
+          QuickStart - Videos
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/ARCmanager-manual/00_index.html">
+          ARCmanager Manual
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCmanager-manual/01_intro.html">
+          What is the ARCmanager?
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCmanager-manual/02_login.html">
+          Connect to your DataHUB
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCmanager-manual/03_view_ARCs.html">
+          View your ARCs
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCmanager-manual/04_create_ARCs.html">
+          Create new ARCs
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCmanager-manual/05_studies_assays.html">
+          Add new studies and assays
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCmanager-manual/05_uploading_files.html">
+          Upload files
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/ARCmanager-manual/06_adding_metadata.html">
+          Add metadata to your ARCs
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/SwateManual/index.html">
+          Swate Manual
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
+          QuickStart
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart_Videos.html">
+          QuickStart - Videos
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs02-Annotation-Table.html">
+          Annotation tables
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs03-Building-Blocks.html">
+            Building blocks
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_types.html">
+            Building Block Types
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/swate_blocks_add.html">
+            Adding a Building Block
+          </a>
+        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs04-Ontology-Term-Search.html">
+          Filling cells with ontology terms
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs07-Advanced-Term-Search.html">
+          Advanced Term Search
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Using-the-File-Picker.html">
+          File Picker
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs05-Templates.html">
+          Templates
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_template-contribution.html">
+          Contribute Templates
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/SwateManual/Docs06-ISA-JSON.html">
+          ISA-JSON
+        </a>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/index.html">
+          DataHUB Manual
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-overview.html">
+          Overview
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-userSettings.html">
+            User Settings
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub-GeneratePAT.html">
+            Generate a Personal Access Token (PAT)
+          </a>
+        </nfdi-sidebar-eleneo>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-projectsPanel.html">
+          Projects Panel
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-ARCPanel.html">
+            ARC Panel
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-fork.html">
+            Forks
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-files.html">
+            Working with files
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-ARCSettings.html">
+            ARC Settings
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-ARCWiki.html">
+            ARC Wiki
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-groupsPanel.html">
+            Groups Panel
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-CreateGroup.html">
+            Create a new user group
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/cqc-pipelines/cqc-pipelines.html">
+            CQC Pipelines & validation
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/cqc-pipelines/validation-packages.html">
+            Find and use ARC validation packages
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-data-publications.html">
+            Data publications
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-data-publications-cqc.html">
+            Passing Continuous Quality Control
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-data-publications-archigator.html">
+            Submitting ARCs with ARChigator
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-data-publications-status.html">
+            Track publication status
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-data-publications-dois.html">
+            Use your DOIs
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/guides/index.html">
+          Guides
+        </a>
+        <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ARCUserJourney.html">
+          ARC User Journey
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-CreateYourARC.html">
+            Create your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart.html">
+            ARCitect QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcitect_QuickStart_Videos.html">
+            ARCitect QuickStart - Videos
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart.html">
+            ARC Commander QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arcCommander_QuickStart_expert.html">
+            ARC Commander QuickStart (Experts)
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-AnnotateDataInYourARC.html">
+            Annotate Data in your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/isa_AnnotationPrinciples.html">
+            Annotation Principles
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/isa_FileTypes.html">
+            ISA File Types
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/BestPracticesForDataAnnotation.html">
+            Best Practices For Data Annotation
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html">
+            Swate QuickStart
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart_Videos.html">
+            Swate QuickStart - Videos
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_walkthrough.html">
+            Swate Walk-through
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-ShareYourARC.html">
+            Share your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub_register.html">
+            Register at the DataHUB
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub_account.html">
+            DataPLANT account
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub_InviteCollaborators.html">
+            Invite collaborators to your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub-arc-sharing.html">
+            Sharing ARCs via the DataHUB
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-WorkWithYourARC.html">
+            Work with your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ARCs-galaxy.html">
+            Using ARCs with Galaxy
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/guides/ComputationalWorkflows/index.html">
+              Computational Workflows
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ComputationalWorkflows/cwl_introduction.html">
+              CWL Introduction
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ComputationalWorkflows/cwl_runner_installation.html">
+              CWL runner installation
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ComputationalWorkflows/cwl_examples.html">
+              CWL Examples
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ComputationalWorkflows/cwl_metadata.html">
+              CWL Metadata
+            </a>
+          </nfdi-sidebar-eleneo>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-RecommendedARCPractices.html">
+            Recommended ARC practices
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_SyncingRecommendation.html">
+            Syncing recommendation
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_gitignore.html">
+            Keep files from syncing to the DataHUB
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_locations.html">
+            Managing ARCs across locations
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_WorkingWithLargeDataFiles.html">
+            Working with large data files
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_AddingExternalData.html">
+            Adding external data to the ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/ARC-enablingPlatforms.html">
+            ARCs in Enabling Platforms
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/publicationToARC.html">
+            Publication to ARC
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-Troubleshooting.html">
+            Troubleshooting
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/git-troubleshooting.html">
+            Git Troubleshooting & Tips
+          </a>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/guides/index-Contribute.html">
+            Contribute
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/swate_template-contribution.html">
+            Swate Templates
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/CONTRIBUTING.html">
+            Knowledge Base
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/index.html">
+          Teaching Materials
+        </a>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2023/index.html">
+            Events 2023
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2023/2023-11-08_CEPLAS-module/index.html">
+            Nov: CEPLAS PhD Module
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2023/2023-10-CSCS-CEPLAS-StartYourARC/index.html">
+            Oct: CSCS CEPLAS Start Your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2023/2023-09-MibiNet-CEPLAS-StartYourARC/index.html">
+            Sept: MibiNet CEPLAS Start Your ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2023/2023-07-17_rptu-summerschool-on-rdm/index.html">
+            July: RPTU Summer School on RDM
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2023/DataSteward-Circle/index.html">
+            July: Data Steward Circle
+          </a>
+          <nfdi-sidebar-eleneo slot="child">
+            <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2023/2023-05-09_CEPLAS-StartYourARC-Series/index.html">
+              May: CEPLAS Start Your ARC Series
+            </a>
+            <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2023/2023-05-09_CEPLAS-StartYourARC-Series/StartYourARC-Videos.html">
+              Start Your ARC Series - Videos
+            </a>
+          </nfdi-sidebar-eleneo>
+        </nfdi-sidebar-eleneo>
+        <nfdi-sidebar-eleneo slot="child">
+          <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/index.html">
+            Events 2024
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/2024-02-13-TRR175-Becoming-FAIR/index.html">
+            TRR175 Becoming FAIR
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/2024-04-03_CEPLAS-ARC-Trainings/index.html">
+            CEPLAS ARC Trainings – Spring 2024
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/2024-04-11_MibiNet-CEPLAS-ARC-Trainings/index.html">
+            MibiNet CEPLAS DataPLANT Tool-Workshops
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/2024-06-19-TRR175-Tutzing-Retreat/index.html">
+            TRR175 Tutzing Retreat
+          </a>
+        </nfdi-sidebar-eleneo>
+      </nfdi-sidebar-eleneo>
+      <nfdi-sidebar-eleneo slot="sidebar">
+        <a href="/nfdi4plants.knowledgebase/docs/faqs/faqs.html">
+          Frequently Asked Questions
+        </a>
+      </nfdi-sidebar-eleneo>
+      <h1 class="front-header">
+        View ARCs
+      </h1>
+      <i class="help">
+        last updated at 2024-06-13
+      </i>
+      <p>For the sake of simplicity, we are here using the term &quot;ARC&quot; for (DataHUB) &quot;Project&quot;, because the DataHUB does not make any distinction between Projects that have the ARC folder and file structure and those that have not. Both are initially shown in the ARCmanager, but the ARCmanager has not been created for manipulating Projects which are not ARCs.</p>
+<p>The ARCmanager is for viewing and editing ARCs.</p>
+<nfdi-h3 id="list-and-filter-arcs">List and filter ARCs</nfdi-h3>
+<p>Once you are logged in, you have several options for selecting which ARCs to view:</p>
+<p>With the <code>LOAD ARC</code> button (Fig. 1), all ARCs on the DataHUB will be listed for which you have at least viewing rights. This includes ARCs that are set to public, ARCs to which you were added as a member, and ARCs owned by you. Your own ARCs are additionally highlighted in color.</p>
+<hr />
+<img src="../img/ARCmanager_view_1b.png" style="border: 1px solid  black;" />
+<p><strong>Fig. 1</strong> Get a list of all publicly visible ARCs and your private ARCs with the <code>LOAD ARCS</code> button.</p>
+<hr />
+<p>Use the <code>Your Arcs</code> check-box (Fig. 2) to filter the list of ARCs for those in which you are member and your own ARCs. Your own ARCs are again highlighted in yellow.</p>
+<hr />
+<img src="../img/ARCmanager_view_2.png" style="border: 1px solid  black;" />
+<p><strong>Fig. 2</strong> Only show your own ARCs and those to which you were added as a member by using the <code>Your Arcs</code> check-box.</p>
+<hr />
+<p>By default, the ARCs are sorted by the date of the last changes in descending order from latest to earliest.</p>
+<p>If you are looking for a specific ARC, use the search bar above the ARC list to search for the title of the ARC.</p>
+<p>Next to each listed ARC are two buttons to access the following functions:</p>
+<ul>
+<li><p>the lense button (Fig. 3, 1) will open the DataHUB page of your ARC in a new browser window</p>
+</li>
+<li><p>the downward arrow button (Fig.3, 2) expands the ARC and allows you to browse its contents and interact with it</p>
+</li>
+</ul>
+<hr />
+<img src="../img/ARCmanager_view_3.png" style="border: 1px solid  black;" />
+<p><strong>Fig. 3</strong> List of ARCs and buttons to interact with them. (1) Open DataHUB page of the ARC in a new browser window, (2) View ARC contents inside ARCmanager.</p>
+<hr />
+<nfdi-h3 id="view-arc-contents">View ARC contents</nfdi-h3>
+<p>After expanding an ARC, you will see a list of directories and files that are included in the ARC (Fig. 4), as well as buttons to access additional functions. The additional functions are explained in detail later in this manual. For now, we will focus on the files and directories included in the ARC.</p>
+<hr />
+<img src="../img/ARCmanager_view_4.png" style="border: 1px solid  black;" />
+<p><strong>Fig. 4</strong> Detailed view of ARC contents after expanding an ARC with the corresponding button (Fig. 3, 2). Files and directories can be accessed with a left-click.</p>
+<hr />
+<p>You can hide the ARC contents by clicking inside the <code>List ARC content</code> field above the list of files and directories (Fig. 5).</p>
+<hr />
+<img src="../img/ARCmanager_view_5.png" style="border: 1px solid  black;" />
+<p><strong>Fig. 5</strong> A Left-click inside the highlighted area hides ARC contents. Click again to bring back the list of files and directories.</p>
+<hr />
+<p>Navigate through the ARC directories with a left-click. After clicking a directory, its contents will be displayed. You can go back one level in the directory hierarchy by using the <code>Return</code> field above the list of files (Fig. 6).</p>
+<hr />
+<img src="../img/ARCmanager_view_8.png" style="border: 1px solid  black;" />
+<p><strong>Fig. 6</strong> Use the <code>Return</code> field to go back one step in the directory hierarchy of your ARC.</p>
+<hr />
+<p>When you click on a file instead of a directory, another panel on the right side will open that allows you to edit the selected file (Fig. 7). Plain text files (.md, .txt or similar) can be changed directly in this editor. Do not forget to save your changes and synchronize with the DataHUB by using the <code>SAVE</code> button when you are done.</p>
+<hr />
+<img src="../img/ARCmanager_view_6a.png" style="border: 1px solid  black;" />
+<p><strong>Fig. 7</strong> When selecting a text file with a left-click, a text editor panel will open on the right side of the browser window. Here, you can edit the file directly and save changes.</p>
+<hr />
+<p>When selecting an ISA file, the editor panel will open as well, but instead of a text editor you will see a form that allows you to add metadata entries to the ISA file (Fig. 8). To learn more about adding metadata using the ARCmanager, visit the corresponding <a href="/docs/ARCmanager-manual/06_adding_metadata.html">Manual page</a>.</p>
+<hr />
+<img src="../img/ARCmanager_view_7.png" style="border: 1px solid  black;" />
+<p><strong>Fig. 8</strong> Opening an ISA file with a left-click will bring up a form that can be used to add metadata entries to the file.</p>
+<hr />
+<p>You can hide/view the editor panel by clicking on the double arrow symbol at the top of the panel (Fig. 9).</p>
+<hr />
+<img src="../img/ARCmanager_view_7b.png" style="border: 1px solid  black;" />
+<p><strong>Fig. 9</strong> The panel on the right side of the browser window can be hidden/displayed with the double arrow symbol.</p>
+<hr />
+<p>When you expand the editor window without selecting a file to be edited first, a list of recent changes to the ARC will be shown instead.</p>
+
+      <h3>
+        DataPLANT Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <span style="display: inline-flex; flex-wrap: wrap;">
+          <a href="javascript:location='mailto:info@nfdi4plants.org';void 0">
+            directly
+          </a>
+          .
+        </span>
+      </div>
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; margin: 1rem 0 1rem 0;">
+        <div>
+          <a target="_blank" href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/CONTRIBUTING.html" style="display: block;">
+            Contribution Guide 📖
+          </a>
+        </div>
+        <div>
+          <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/src/docs/ARCmanager-manual/03_view_ARCs.md" style="display: block;">
+            ✏️ Edit this page
+          </a>
+        </div>
+      </div>
+    </nfdi-body>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>
