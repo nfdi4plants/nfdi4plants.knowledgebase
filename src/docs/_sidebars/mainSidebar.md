@@ -138,6 +138,7 @@ Continuous Quality Control (CQC) p
 ### [Adding external data to the ARC](/docs/guides/arc_AddingExternalData.html)
 ### [ARCs in Enabling Platforms](/docs/guides/ARC-enablingPlatforms.html)
 ### [Publication to ARC](/docs/guides/publicationToARC.html)
+### [Working with branches](/docs/guides/arc_WorkingWithBranches.html)
 
 ## [Troubleshooting](/docs/guides/index-Troubleshooting.html)
 ### [Git Troubleshooting & Tips](/docs/guides/git-troubleshooting.html)
