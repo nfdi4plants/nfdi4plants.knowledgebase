@@ -34,12 +34,6 @@ Imagine you're writing a book. The main path you're working on is the main story
 
 In Git, branches help you experiment and develop different features or ideas in isolation, without messing up the main codebase. In addition, multiple people can work on different tasks within the same project without interfering with each other. You can switch between branches, merge them together, or delete them when they're no longer needed. 
 
-In the example below, you can see how branches have been used to work on developing an ARC in parallel. The ARC is created within the "main" branch and some metadata and microscopy images are uploaded. A new branch called "plant material" is generated to describe the process of growing the plants, later used in the experimental assays, in a study. Moreover, another branch named "RNA-seq" deals with the description of the actual sequencing assay and the data generated from it. After completion, branches are merged into "main".
-
-:warning: Don't forget to sync your branch with the "parent" branch to avoid merging conflicts.
-
-<img src="./../img/git-branches.png" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
-
 ## Git platforms: GitHub and GitLab
 
 Although Git could be used locally as a standalone tool, its full power is unfolded via git platforms such as [GitHub] and [GitLab]. Similar to the typical cloud services for file sharing and collaboration, these platforms function as remote share-points for git repositories. They allow data access management (permission control) to share data privately with selected collaborators or the public. Individual contributions and changes by multiple collaborators can be tracked. On top of versioned data sharing, additional features, such as discussing and tracking project tasks and contributions, and wiki-based documentation render these git platforms very valuable for project and research (data) management. Consequently, they nowadays enjoy great popularity outside of software development.
