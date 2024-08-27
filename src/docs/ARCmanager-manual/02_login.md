@@ -2,9 +2,9 @@
 layout: docs
 title: Connect to your DataHUB
 author:
-- name: Ursula Eberhardt
-  github: https://github.com/UrsulaE/
-  orcid: https://orcid.org/0000-0003-1221-7074
+  - name: Ursula Eberhardt
+    github: https://github.com/UrsulaE/
+    orcid: https://orcid.org/0000-0003-1221-7074
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
 status: published
@@ -27,7 +27,7 @@ Clicking on the the `DataHUB` button (Fig. 1) brings you to the drop down menu o
 
 ---
 
-At present, there are three different DataHUBs available for managing research data. The DataHUBs "reference" and "federated" are available to all researchers, whereas the TRR356 PlantMicrobe DataHUB is only available for members of this project.  Members of the TRR356 project are advised to use this DataHUB. 
+At present, there are three different DataHUBs available for managing research data. The DataHUBs "reference" and "federated" are available to all researchers, whereas the TRR356 PlantMicrobe DataHUB is only available for members of this project. Members of the TRR356 project are advised to use this DataHUB.
 
 <!--Collaborators of TRR356 research are welcome to the TRR356 PlantMicrobe DataHUB and will be admitted upon request to (**whose email?**).-->
 
@@ -51,8 +51,8 @@ If you are using the ARCmanager for the first time, you will see a window (Fig. 
 
 ---
 
-For the login process, you are presented with a selection of authentication options. Select one that you have used before in the registration process and enter your credentials (Fig. 5). 
-    
+For the login process, you are presented with a selection of authentication options. Select one that you have used before in the registration process and enter your credentials (Fig. 5).
+
 Different authentication options can be used for the same DataHUB user, if the logins of the different providers have been merged. This process is mediated by Life Science RI. If you are not presented with the option to merge your identities during the registration of an additional identity via another provider, you will have to get in touch with support@aai.lifescience-ri.eu for merging the identities. "Unmerged" identities will be treated as two different users in the DataHUB. Having different users complicates working with GitLab projects locally on your computer and is not recommended.
 
 ---
@@ -84,3 +84,12 @@ Without logging in to any DataHUB, the ARC search button (Fig. 1) provides a lis
 **Fig. 7** Searching for published ARCs.
 
 ---
+
+### Session Timer
+
+After logging in, this session timer will display the remaining time left for the current session.
+Every session is limited to two hours by gitlab.
+
+<img src="../img/ARCmanager_sessiontimer.png" style="border: 1px solid  black;" />
+
+**Fig. 8** Session timer
