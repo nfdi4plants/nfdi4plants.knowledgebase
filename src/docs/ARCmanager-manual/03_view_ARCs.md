@@ -11,7 +11,7 @@ author:
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
 status: published
-date: 2024-08-27
+date: 2024-08-28
 ---
 
 For the sake of simplicity, we are here using the term "ARC" for (DataHUB) "Project", because the DataHUB does not make any distinction between Projects that have the ARC folder and file structure and those that have not. Both are initially shown in the ARCmanager, but the ARCmanager has not been created for manipulating Projects which are not ARCs.

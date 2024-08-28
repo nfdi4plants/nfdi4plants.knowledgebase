@@ -11,7 +11,7 @@ author:
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
 status: published
-date: 2024-08-27
+date: 2024-08-28
 ---
 
 To be able to use the [ARCmanager](https://nfdi4plants.de/arcmanager/app/index.html), you need to have registered to one of the DataHUBs. Information on the different DataHUBs can be found [here](https://www.nfdi4plants.de/content/datahub.html).
@@ -92,6 +92,8 @@ Without logging in to any DataHUB, the ARC search button (Fig. 1) provides a lis
 
 After logging in, this session timer will display the remaining time left for the current session.
 Every session is limited to two hours by gitlab.
+When the timer expires your current session has expired as well, meaning you have to logout and login back to use the site normally again. <br />
+This timer serves only as an indicator and will not interfere with your session in any way.
 
 <img src="../img/ARCmanager_sessiontimer.png" style="border: 1px solid  black;" />
 
