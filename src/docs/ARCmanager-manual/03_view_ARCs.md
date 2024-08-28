@@ -120,8 +120,6 @@ When selecting an ISA file, the editor panel will open as well, but instead of a
 
 You can hide/view the editor panel by clicking on the double arrow symbol at the top of the panel (Fig. 9).
 
----
-
 <img src="../img/ARCmanager_view_7b.png" style="border: 1px solid  black;" />
 
 **Fig. 10** The panel on the right side of the browser window can be hidden/displayed with the double arrow symbol.
@@ -136,6 +134,15 @@ After switching the branch you need to reload the ARC through the reload button.
 <img src="../img/ARCmanager_view_9.png" style="border: 1px solid  black;" />
 
 **Fig. 11** The right side contains a list of changes by default, as well as the option to switch branches
+
+---
+
+Below the ARC contents is a button able to create new custom folders for things such as custom upload space and more (#1).
+
+<img src="../img/ARCmanager_view_12.png" style="border: 1px solid  black;" />
+
+These custom folders can be renamed (#2) or deleted (#3), such as it is possible with custom uploaded folders.
+Folders named like necessary ARC folders, such as assays and dataset, cannot be renamed or deleted directly to prevent loss of important data.
 
 ---
 
