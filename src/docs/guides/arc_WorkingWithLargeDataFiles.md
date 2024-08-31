@@ -49,9 +49,18 @@ In addition you can set a threshold (2) in megabytes (MB) for what you consider 
 
 <img src="./../img/ARCitect-lfs-threshold.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
 
+You can also easily check which files in your ARC are flagged as LFS, by looking in the ARCitect tree panel (1).
+
+<img src="./../img/ARCitect-lfs-flag.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
+
 Finally, you can individually download large files via right-click -> "Download LFS File" (1)
 
 <img src="./../img/ARCitect-download-lfs-file-right-click.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
+
+or you can also choose to download all large files from a directory by right clicking on the folder in the panel tree (1) and then "Download LFS Files" (2).
+
+<img src="./../img/ARCitect-download-lfs-from-directory.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
+
 
 ### ARC Commander
 
