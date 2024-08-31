@@ -35,3 +35,9 @@ In ARCitect you can create a new branch or switch to already existing ones by na
 
 ## ARC Commander
 
+You can work on your ARC locally and once you are done you can commit your changes to a different branch. 
+
+```bash
+arc sync -b SecondBranchName
+```
+This will create a commit with your newest changes and push the commit to a new branch with the given name. When you finished editing your ARC, you can merge your progress into the main branch.
