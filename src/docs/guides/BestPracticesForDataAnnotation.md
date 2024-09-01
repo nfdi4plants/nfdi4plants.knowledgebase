@@ -23,30 +23,96 @@ In this guide, we will take a closer look at some experimental scenarios that ev
     </a>
 </div>
 
-
-
-## Annotation of biological and technical replicates
-
-In our first scenario we focus on annotating the origin and relationship between biological and technical replicates within a fictional study. We started with three biological replicates (Plant A, Plant B, and Plant C) of the model organism *Arabidopsis thaliana* (Characteristic [Organism]), which were grown under particular conditions (Characteristic [growth day length]). Harvesting of the plants or particular parts resulted in three samples: S1, S2, and S3. These information were stored within the isa.study.xlsx file.
-
-Subsequent proccesing steps, mostly omitted here for better clarity, are stored within one or multiple isa.assay.xlsx files. In our scenario, three technical replicates of each sample were analyzed via LC/MS (Parameter [instrument model]), generating nine raw data files. 
-
-<img src="./../img/ISA_AnnotationPattern_Replicates.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
-
-
-**It is very important to group these technical replicates and thus annotate their common origin.** If you would falsely name the individual technical replicates as A, B and C, you could run into trouble during your computational analysis.
-
 ## Annotation of time series experiments
-In this rather simple scenario we take a look at the annotation of time course patterns. Let's imagine a study in which our plant (Sample A) was exposed to stress (high light, salt, ...) for a given time. To investigate the cellular response, you harvested samples at various time points after exposure to the stressor: S1 is harvested after 5 minutes, S2 after 10 minutes, and so on. 
+
+As an example, we will walk you through a simple ARC and discuss good practices for annotation along the way. In our first scenario we take a look at the annotation of time course patterns. Let's imagine a study in which our plant of interest (plant1), Arabidopsis thaliana (Characteristic [Organism]), was exposed to salt stress (Component [Ingredient]) for a given time. To investigate the cellular response, you harvested samples at various time points after exposure to the stressor: S1 is harvested right away, S2 after 10 minutes, and so on. This information was stored within the isa.study.xlsx file.
 
 <img src="./../img/ISA_AnnotationPattern_TimeSeries.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
 
 You should use the Factor building block in such a case to annotate the time after exposure and thereby the sampling point in the isa.study.xlsx file, as this time period will ultimately result in the given output, when all remaining parameters for treatment and analysis were identical.
 
 ## Annotation of mixed samples
-This example can be of relevance when you are carrying out labeling experiments or when you are spiking your samples with an internal standard for absolute quantification. The isa.assay.xlsx file below displays the best practice for annotating the mixing of experimental samples with a reference prior to LC/MS analysis.  
+
+This example can be of relevance when you are carrying out labeling experiments or when you are spiking your samples with an internal standard for absolute quantification. The isa.assay.xlsx file below displays the best practice for annotating the mixing of experimental samples with a reference prior to LC/MS analysis (Component [Instrumentation]). By listing every data file twice, it becomes clear that the analyzed files originated from the combination of an experimental sample and a reference, e.g. spiking of S1 with the reference resulted in the output file name S1R.wiff.
 
 <img src="./../img/ISA_AnnotationPattern_MixingSamples.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
 
-By listing every raw data file twice, it becomes clear that the analyzed samples originated from the combination of an experimental sample and a reference, e.g. spiking of S1 with the reference resulted in the data file S1R.wiff.  
+## Annotation of biological/technical replicates and subprocessing
+
+In the following scenario we focus on annotating the origin and relationship between biological/technical replicates and managing subprocesses within an assay. We start with the five samples (S1, S2, ..., S5), originating from the isa.study.xlsx file. We want to perform a transcriptomics analysis but before that we have to extract RNA from our samples. Some processes and lab procedures cannot be described coherently in one isa table, even though they are part of the same assay. In such case, you can split subprocesses into different sheets of the same isa table. For example, here the extraction of RNA is described in the first sheet with an output being the RNA samples (rna_sample1, ...). Then on the next sheet is the table representing the seqiencing itself. As you can see, the input becomes the output from the previous sheet, thus, indicating the processes are sequential. In the same manner, samples and processes are being connected across studies and assays within an ARC. While performing the RNA sequencing, three technical replicates per sample are generated (Characteristic [technical replicate]). However, each replicate results in its own data file.
+
+<img src="./../img/ISA_AnnotationPattern_Replicates.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
+
+:warning: Don't forget to rename your sheets according to the subprocess they are describing.
+
+## Connecting inputs and outputs
+
+A key objective of the ARC is to trace each finding or result back to its specific biological experiment. Achieving this requires linking dataset files to their corresponding individual samples. To accomplish this, we follow a sequence of processes with defined inputs and outputs. Certain inputs and outputs may need to be reused or reproduced, while some processes may need to be applied to different inputs.
+
+This is a graph representing the structure of the ARC created for these examples. As you can see, samples flow seamlessly through studies and assays, ending with data files as an output. You should always aim for such connection of input and output throughout all isa tables. 
+
+``` mermaid
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'background': '#fff',
+      'lineColor': '#2d3e50',
+      'primaryTextColor': '#2d3e50'
+    }
+  }
+}%%
+
+graph LR
+
+subgraph study\StressMetabolomics
+s1(plants)---s>salt stress]
+s-->isa1(PlantMaterialAndGrowthConditions)
+end
+
+subgraph assay\ExtractionOfProteins
+isa1--->isa2(ProteinExtraction)
+end
+
+subgraph assay\LC-MSAnalysis
+isa2-->isa3(LC-MS)-->f1[S1R.wiff
+S2R.wiff
+S3R.wiff
+S4R.wiff
+S5R.wiff]
+end
+
+subgraph assay\RNA-seq
+isa1-->isa4(RNA-extraction)
+isa4-->isa5(RNA-sequencing)
+isa5-->f2[plant1_1.fastq.gz
+plant1_1.fastq.gz
+plant1_2.fastq.gz
+plant1_3.fastq.gz
+plant2_1.fastq.gz
+plant2_2.fastq.gz
+plant2_3.fastq.gz
+plant3_1.fastq.gz
+plant3_2.fastq.gz
+plant3_3.fastq.gz
+plant4_1.fastq.gz
+plant4_2.fastq.gz
+plant4_3.fastq.gz
+plant5_1.fastq.gz
+plant5_2.fastq.gz
+plant5_3.fastq.gz]
+end
+
+%% Defining node styles
+  classDef S fill:#b4ce82,stroke:#333;
+  classDef M fill:#ffc000;
+  classDef D fill:#c21f3a,color:white;
+  classDef P stroke-width:0px;  
+
+%% Assigning styles to nodes
+  class s1 S;
+  class isa1,isa2,isa3,isa4,isa5 M;
+  class f1,f2 D;
+  class s P;
+```
 
