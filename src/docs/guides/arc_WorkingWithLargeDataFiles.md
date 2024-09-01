@@ -53,6 +53,14 @@ You can also easily check which files in your ARC are flagged as LFS, by looking
 
 <img src="./../img/ARCitect-lfs-flag.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
 
+If you haven't downloaded the LFS file you can only open its pointer file. Unfortunately, this pointer file cannot be displayed in ARCitect but if you try to open it with a text editor (e.g. Notepad) it looks something like this:
+
+```bash
+version https://git-lfs.github.com/spec/v1
+oid sha256:dfc4d259bb70ab93915fe6fd91df33017b09f9208d94b48d7c9a789dd35d65bc
+size 22973898
+```
+
 Finally, you can individually download large files via right-click -> "Download LFS File" (1)
 
 <img src="./../img/ARCitect-download-lfs-file-right-click.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
