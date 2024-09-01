@@ -116,3 +116,6 @@ end
   class s P;
 ```
 
+<img src="./../img/ISA_AnnotationPattern_Replicates.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
+
+:warning: Don't forget to rename your sheets according to the subprocess they are describing.
