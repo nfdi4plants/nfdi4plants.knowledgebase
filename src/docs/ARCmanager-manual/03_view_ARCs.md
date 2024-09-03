@@ -80,31 +80,27 @@ You can hide the ARC contents by clicking inside the `List ARC content` field ab
 
 **Fig. 5** A Left-click inside the highlighted area hides ARC contents. Click again to bring back the list of files and directories.
 
-<img src="../img/ARCmanager_view_5b.png" style="border: 1px solid  black;" />
-
-**Fig. 6** A Left-click on the highlighted area brings you back to the list of ARCs.
-
 ---
 
-Navigate through the ARC directories with a left-click. After clicking a directory, its contents will be displayed. You can go back one level in the directory hierarchy by using the `Return` field above the list of files (Fig. 6).
+Navigate through the ARC directories with a left-click. After clicking a directory, its contents will be displayed. You can go back one level in the directory hierarchy by using the `Return` field above the list of files (Fig. 6). Alternatively, you can click on the respective subdirectory in the path displayed above the `Return` field to jump directly to this position.
 
 ---
 
 <img src="../img/ARCmanager_view_8.png" style="border: 1px solid  black;" />
 
-**Fig. 7** Use the `Return` field to go back one step in the directory hierarchy of your ARC.
+**Fig. 6** Use the `Return` field to go back one step in the directory hierarchy of your ARC.
 
 ---
 
-When you click on a file instead of a directory, another panel on the right side will open that allows you to view the selected file (Fig. 7). You can display images, pdfs, text based files and more.
+When you click on a file instead of a directory, another panel on the right side will open that allows you to view the selected file (Fig. 7). You can display images, pdf files, text based files, and more.
 
-Plain text files (.md, .txt or similar) can also be changed directly in this editor. Do not forget to save your changes and synchronize with the DataHUB by using the `SAVE` button when you are done.
+Plain text files (.md, .txt or similar) can be modified directly in this editor. Do not forget to save your changes and synchronize with the DataHUB by using the `SAVE` button when you are done.
 
 ---
 
 <img src="../img/ARCmanager_view_6a.png" style="border: 1px solid  black;" />
 
-**Fig. 8** When selecting a text file with a left-click, a text editor panel will open on the right side of the browser window. Here, you can edit the file directly and save changes.
+**Fig. 7** When selecting a text file with a left-click, a text editor panel will open on the right side of the browser window. Here, you can edit the file directly and save changes.
 
 ---
 
@@ -114,47 +110,60 @@ When selecting an ISA file, the editor panel will open as well, but instead of a
 
 <img src="../img/ARCmanager_view_7.png" style="border: 1px solid  black;" />
 
-**Fig. 9** Opening an ISA file with a left-click will bring up a form that can be used to add metadata entries to the file.
+**Fig. 8** Opening an ISA file with a left-click will bring up a form that can be used to add metadata entries to the file.
 
 ---
 
-You can hide/view the editor panel by clicking on the double arrow symbol at the top of the panel (Fig. 9).
+You can hide/view the editor panel by clicking the double arrow symbol at the top of the panel (Fig. 9).
 
 <img src="../img/ARCmanager_view_7b.png" style="border: 1px solid  black;" />
 
-**Fig. 10** The panel on the right side of the browser window can be hidden/displayed with the double arrow symbol.
+**Fig. 9** The panel on the right side of the browser window can be hidden/displayed with the double arrow symbol.
 
 ---
 
-When you expand the editor window without selecting a file to be edited first, a list of recent changes to the ARC will be shown instead.
+When you expand the editor window without selecting a file to be edited first, a list of recent changes to the ARC will be shown instead (Fig. 10).
 
 You can hide them by unchecking the checkbox, as well as switch to a different branch in the ARC (highlighted in red).
 After switching the branch you need to reload the ARC through the reload button.
 
+---
+
 <img src="../img/ARCmanager_view_9.png" style="border: 1px solid  black;" />
 
-**Fig. 11** The right side contains a list of changes by default, as well as the option to switch branches
+**Fig. 10** The right side contains a list of changes by default, as well as the option to switch branches
 
 ---
 
-Below the ARC contents is a button able to create new custom folders for things such as custom upload space and more (#1).
+The `NEW FOLDER` button below the listed ARC content (Fig. 11, #1) can be used to create new folders, e.g. to further organize raw data inside the dataset subdirectories. 
+
+These custom folders can be renamed (Fig. 11, #2) or deleted (Fig. 11, #3). This is in contrast to the directories which are part of the ARC specification (e.g. studies, assays, etc.), which can not be renamed or deleted via the ARCmanager.
+
+---
 
 <img src="../img/ARCmanager_view_12.png" style="border: 1px solid  black;" />
 
-These custom folders can be renamed (#2) or deleted (#3), such as it is possible with custom uploaded folders.
-Folders named like necessary ARC folders, such as assays and dataset, cannot be renamed or deleted directly to prevent loss of important data.
+**Fig. 11** UI elements to create (#1), edit (#2), and delete (#3) custom folders in an ARC using the ARCmanager.
 
 ---
 
-When you press the "Validate" button, a simple validation process is started checking your ARC.
+### ARC quick validation
+
+When you click the `Validate` button, a basic validation process is started that checks your ARC.
+
+---
 
 <img src="../img/ARCmanager_view_10.png" style="border: 1px solid  black;" />
 
-**Fig. 12** Start the validation process by clicking the highlighted button
+**Fig. 12** Start the validation process by clicking the highlighted button.
 
-Different requirements for a publication ready ARC are checked, like complete ARC-structure (all necessary folders and files), all necessary fields filled out in the investigation file, all contacts have names, email and affiliation and more is checked.
+---
 
-Afterwards a highlighted card structure will show you the different results telling you what is missing or that your ARC passed validation.
+Different requirements for a publication ready ARC are checked, like complete ARC structure (all necessary folders and files), all necessary fields filled out in the isa.investigation file, all contacts have names, email, and affiliation and more.
+
+Afterwards, a highlighted card structure will show you the results of the validation process. In case your ARC did not pass the validation test, the results will tell you exactly which information or element is missing.
+
+---
 
 <img src="../img/ARCmanager_view_10b.png" style="border: 1px solid  black;" />
 

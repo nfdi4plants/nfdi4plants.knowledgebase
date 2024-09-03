@@ -171,8 +171,8 @@ The following will explain the different interfaces:
 
 1. **Search term:** A click on the magnifying glass symbols opens a search bar above the sheet name bar (4). The search bar allows you to search for specific ontology terms or to get suggestions for terms that fit the parameter.
 
-2. **Add building block or custom column:** Clicking **Building Block** will open up additional input fields above that allow adding new columns to the metadata table. You can search for terms and add a new parameter or more.
-   Clicking **Custom Column** will open up a different input field above with which you can add a fully customizable columns (with term columns or unit column if desired).
+2. **Add building block or custom column:** <br>Clicking `Building Block` will open up additional input fields above that allow adding new columns to the metadata table. You can search for terms and add a new parameter or more. <br>
+Clicking `Custom Column` will open up a different input field above with which you can add a fully customizable columns (with term columns or unit column if desired).
 
 3. **Delete row/column:** Clicking the red "X" will delete the corresponding row or building block. The deletion of elements has to be confirmed in a pop-up menu before the action takes effect.
 

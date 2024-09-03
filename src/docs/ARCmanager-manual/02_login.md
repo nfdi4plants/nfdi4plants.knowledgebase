@@ -76,25 +76,16 @@ After successful login, you see the former lilac `Login` button change to a pink
 
 ---
 
-### Accessing the ISA metadata search
-
-Without logging in to any DataHUB, the ARC search button (Fig. 1) provides a list of published ARCs that can be searched using the ISA metadata search via the [ARC Metadata Registry](https://arc-metadata-registry.readthedocs.io/en/latest/).
-
----
-
-<img src="../img/ARCmanager_login_5.png" style="border: 1px solid  black;" />
-
-**Fig. 7** Searching for published ARCs.
-
----
-
 ### Session Timer
 
-After logging in, this session timer will display the remaining time left for the current session.
-Every session is limited to two hours by gitlab.
-When the timer expires your current session has expired as well, meaning you have to logout and login back to use the site normally again. <br />
-This timer serves only as an indicator and will not interfere with your session in any way.
+After logging in, a session timer will display the remaining time left for the current user session. Your most recent activities are stored in this session to ensure proper function of the web service.
+
+When the timer reaches 0:00:00, your current session has expired. To initialize a new session, logout and login again. Make sure to save any forms that you are editing during a session before it expires, otherwise input data may get lost.
+
+---
 
 <img src="../img/ARCmanager_sessiontimer.png" style="border: 1px solid  black;" />
 
 **Fig. 8** Session timer
+
+---
