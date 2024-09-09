@@ -8,7 +8,7 @@ author:
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
 status: published
-date: 2024-06-13
+date: 2024-08-27
 ---
 
 Two different types of metadata are stored in ISA files: administrative and experimental metadata. Administrative metadata covers IDs, descriptions, contact details, connected publications and more, while experimental metadata is describing experimental procedures and similar processes. ISA files are normally stored in an Excel format (.xlsx) and need to adhere to the [ISA-XLSX specification](https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md).
@@ -18,13 +18,13 @@ A typical ISA file has the administrative metadata recorded in the first sheet o
 #### Contents:
 
 - [Administrative metadata (top-level metadata sheets)](#administrative-metadata-top-level-metadata-sheets)
-   * [Alternative view](#alternative-view) 
+  - [Alternative view](#alternative-view)
 - [Experimental metadata (annotation table sheets)](#experimental-metadata-annotation-table-sheets)
-   * [Add new annotation table sheets](#add-new-annotation-table-sheets)
-   * [Import annotation table templates](#import-annotation-table-templates)
-   * [Edit annotation table sheets](#edit-annotation-table-sheets)
-   * [Ontology term search](#ontology-term-search)
-   * [Adding new building blocks to annotation tables](#adding-new-building-blocks-to-annotation-tables)
+  - [Add new annotation table sheets](#add-new-annotation-table-sheets)
+  - [Import annotation table templates](#import-annotation-table-templates)
+  - [Edit annotation table sheets](#edit-annotation-table-sheets)
+  - [Ontology term search](#ontology-term-search)
+  - [Adding new building blocks to annotation tables](#adding-new-building-blocks-to-annotation-tables)
 
 ### Administrative Metadata (top-level metadata sheets)
 
@@ -58,7 +58,7 @@ In assay metadata files (_isa.assay.xlsx_), it contains information about measur
 
 The **publication** part contains information about DOIs, publication titles, authors, etc. of publications that are associated with the experimental data stored inside the study/investigation.
 
-_isa.assay.xlsx_ files do not contain publication data, which is instead recorded in the connected study. 
+_isa.assay.xlsx_ files do not contain publication data, which is instead recorded in the connected study.
 
 The **contact details** part contains data about researchers associated with the investigation/study/assay. It contains information like first and last name, email, work address, and affiliation. Every ISA file has a contact section.
 
@@ -68,7 +68,7 @@ When you are done with your changes, just click the `SAVE` button in the bottom 
 
 <div style="text-align: right">
 
-[Back to table of contents](#contents) 
+[Back to table of contents](#contents)
 
 </div>
 
@@ -104,7 +104,7 @@ Every time you click `SAVE`, the data is written into the excel file and changes
 
 <div style="text-align: right">
 
-[Back to table of contents](#contents) 
+[Back to table of contents](#contents)
 
 </div>
 
@@ -127,7 +127,7 @@ If you already have some annotation sheets in your study/assay you can click `ED
 
 <div style="text-align: right">
 
-[Back to table of contents](#contents) 
+[Back to table of contents](#contents)
 
 </div>
 
@@ -149,16 +149,15 @@ Every Template is listed with its title, the organisation where its originating 
 
 If you found your desired template, click on the `IMPORT` button after expand it.
 
-
 <div style="text-align: right">
 
-[Back to table of contents](#contents) 
+[Back to table of contents](#contents)
 
 </div>
 
 #### Edit annotation table sheets
 
-After importing a template, you will see a table similar to the picture below. In this case it's the template "RNA extraction (DataPLANT) 1.2.0", extended to eight rows.
+After importing a template, you will see a table similar to the picture below. In this case it's the template "RNA extraction (DataPLANT) 1.2.1", extended to eight rows.
 
 ---
 
@@ -172,7 +171,8 @@ The following will explain the different interfaces:
 
 1. **Search term:** A click on the magnifying glass symbols opens a search bar above the sheet name bar (4). The search bar allows you to search for specific ontology terms or to get suggestions for terms that fit the parameter.
 
-2. **Add building block:** Clicking this button will open up additional input fields above that allow adding new columns to the metadata table.
+2. **Add building block or custom column:** <br>Clicking `Building Block` will open up additional input fields above that allow adding new columns to the metadata table. You can search for terms and add a new parameter or more. <br>
+Clicking `Custom Column` will open up a different input field above with which you can add a fully customizable columns (with term columns or unit column if desired).
 
 3. **Delete row/column:** Clicking the red "X" will delete the corresponding row or building block. The deletion of elements has to be confirmed in a pop-up menu before the action takes effect.
 
@@ -184,9 +184,13 @@ The following will explain the different interfaces:
 
 7. **Extend the table:** This button adds a new row to table.
 
+8. **Move a column:** You can shift a column to the left or right by clicking the respective arrow.
+
+9. **Template Name:** The name of the template currently in use is displayed next to the sheet name field.
+
 <div style="text-align: right">
 
-[Back to table of contents](#contents) 
+[Back to table of contents](#contents)
 
 </div>
 
@@ -230,7 +234,7 @@ Every cell of the annotation table sheets can also be filled out manually, inste
 
 <div style="text-align: right">
 
-[Back to table of contents](#contents) 
+[Back to table of contents](#contents)
 
 </div>
 
@@ -248,11 +252,11 @@ By default, input columns have the type "Source Name" and output columns have th
 
 ---
 
-To add additional attribute columns to the annotation sheet, click the `+BUILDING BLOCK` button. A new input area (Fig. 11) will open above the annotation table that assists you in designing the attribute column according to the ISA-XLSX specifications. 
+To add additional attribute columns to the annotation sheet, click the `+BUILDING BLOCK` button. A new input area (Fig. 11) will open above the annotation table that assists you in designing the attribute column according to the ISA-XLSX specifications.
 
 First, select a type for the new column from the drop-down menu (Fig. 11, 1). Available column types are [Characteristic](https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md#characteristics), [Factor](https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md#factors), [Component](https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md#components), [Parameter](https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md#parameters), [Comment](https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md#comments), and [Protocol](https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md#protocol-columns).
 
-Below the column type drop-down menu is a search bar that can be used to search for ontology terms that specify the contents of the new building block (Fig. 11, 2). 
+Below the column type drop-down menu is a search bar that can be used to search for ontology terms that specify the contents of the new building block (Fig. 11, 2).
 
 If the new building block will contain numeric values that have a unit, check the "Unit?" checkbox above (Fig. 11, 3). This will add a second search bar where you can search the ontology database for unit terms, like "liter" for the parameter "volume".
 
@@ -262,6 +266,6 @@ When you are done with editing the annotation table, name your sheet and click t
 
 <div style="text-align: right">
 
-[Back to table of contents](#contents) 
+[Back to table of contents](#contents)
 
 </div>
