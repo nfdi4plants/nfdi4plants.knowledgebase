@@ -569,7 +569,7 @@
         View ARCs
       </h1>
       <i class="help">
-        last updated at 2024-06-13
+        last updated at 2024-08-28
       </i>
       <p>For the sake of simplicity, we are here using the term &quot;ARC&quot; for (DataHUB) &quot;Project&quot;, because the DataHUB does not make any distinction between Projects that have the ARC folder and file structure and those that have not. Both are initially shown in the ARCmanager, but the ARCmanager has not been created for manipulating Projects which are not ARCs.</p>
 <p>The ARCmanager is for viewing and editing ARCs.</p>
@@ -609,12 +609,13 @@
 <img src="../img/ARCmanager_view_5.png" style="border: 1px solid  black;" />
 <p><strong>Fig. 5</strong> A Left-click inside the highlighted area hides ARC contents. Click again to bring back the list of files and directories.</p>
 <hr />
-<p>Navigate through the ARC directories with a left-click. After clicking a directory, its contents will be displayed. You can go back one level in the directory hierarchy by using the <code>Return</code> field above the list of files (Fig. 6).</p>
+<p>Navigate through the ARC directories with a left-click. After clicking a directory, its contents will be displayed. You can go back one level in the directory hierarchy by using the <code>Return</code> field above the list of files (Fig. 6). Alternatively, you can click on the respective subdirectory in the path displayed above the <code>Return</code> field to jump directly to this position.</p>
 <hr />
 <img src="../img/ARCmanager_view_8.png" style="border: 1px solid  black;" />
 <p><strong>Fig. 6</strong> Use the <code>Return</code> field to go back one step in the directory hierarchy of your ARC.</p>
 <hr />
-<p>When you click on a file instead of a directory, another panel on the right side will open that allows you to edit the selected file (Fig. 7). Plain text files (.md, .txt or similar) can be changed directly in this editor. Do not forget to save your changes and synchronize with the DataHUB by using the <code>SAVE</code> button when you are done.</p>
+<p>When you click on a file instead of a directory, another panel on the right side will open that allows you to view the selected file (Fig. 7). You can display images, pdf files, text based files, and more.</p>
+<p>Plain text files (.md, .txt or similar) can be modified directly in this editor. Do not forget to save your changes and synchronize with the DataHUB by using the <code>SAVE</code> button when you are done.</p>
 <hr />
 <img src="../img/ARCmanager_view_6a.png" style="border: 1px solid  black;" />
 <p><strong>Fig. 7</strong> When selecting a text file with a left-click, a text editor panel will open on the right side of the browser window. Here, you can edit the file directly and save changes.</p>
@@ -624,12 +625,34 @@
 <img src="../img/ARCmanager_view_7.png" style="border: 1px solid  black;" />
 <p><strong>Fig. 8</strong> Opening an ISA file with a left-click will bring up a form that can be used to add metadata entries to the file.</p>
 <hr />
-<p>You can hide/view the editor panel by clicking on the double arrow symbol at the top of the panel (Fig. 9).</p>
-<hr />
+<p>You can hide/view the editor panel by clicking the double arrow symbol at the top of the panel (Fig. 9).</p>
 <img src="../img/ARCmanager_view_7b.png" style="border: 1px solid  black;" />
 <p><strong>Fig. 9</strong> The panel on the right side of the browser window can be hidden/displayed with the double arrow symbol.</p>
 <hr />
-<p>When you expand the editor window without selecting a file to be edited first, a list of recent changes to the ARC will be shown instead.</p>
+<p>When you expand the editor window without selecting a file to be edited first, a list of recent changes to the ARC will be shown instead (Fig. 10).</p>
+<p>You can hide them by unchecking the checkbox, as well as switch to a different branch in the ARC (highlighted in red).
+After switching the branch you need to reload the ARC through the reload button.</p>
+<hr />
+<img src="../img/ARCmanager_view_9.png" style="border: 1px solid  black;" />
+<p><strong>Fig. 10</strong> The right side contains a list of changes by default, as well as the option to switch branches</p>
+<hr />
+<p>The <code>NEW FOLDER</code> button below the listed ARC content (Fig. 11, #1) can be used to create new folders, e.g. to further organize raw data inside the dataset subdirectories.</p>
+<p>These custom folders can be renamed (Fig. 11, #2) or deleted (Fig. 11, #3). This is in contrast to the directories which are part of the ARC specification (e.g. studies, assays, etc.), which can not be renamed or deleted via the ARCmanager.</p>
+<hr />
+<img src="../img/ARCmanager_view_12.png" style="border: 1px solid  black;" />
+<p><strong>Fig. 11</strong> UI elements to create (#1), edit (#2), and delete (#3) custom folders in an ARC using the ARCmanager.</p>
+<hr />
+<nfdi-h3 id="arc-quick-validation">ARC quick validation</nfdi-h3>
+<p>When you click the <code>Validate</code> button, a basic validation process is started that checks your ARC.</p>
+<hr />
+<img src="../img/ARCmanager_view_10.png" style="border: 1px solid  black;" />
+<p><strong>Fig. 12</strong> Start the validation process by clicking the highlighted button.</p>
+<hr />
+<p>Different requirements for a publication ready ARC are checked, like complete ARC structure (all necessary folders and files), all necessary fields filled out in the isa.investigation file, all contacts have names, email, and affiliation and more.</p>
+<p>Afterwards, a highlighted card structure will show you the results of the validation process. In case your ARC did not pass the validation test, the results will tell you exactly which information or element is missing.</p>
+<hr />
+<img src="../img/ARCmanager_view_10b.png" style="border: 1px solid  black;" />
+<p><strong>Fig. 13</strong> Validation results displayed in a card view</p>
 
       <h3>
         DataPLANT Support

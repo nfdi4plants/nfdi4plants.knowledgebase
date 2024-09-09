@@ -569,7 +569,7 @@
         Adding Metadata
       </h1>
       <i class="help">
-        last updated at 2024-06-13
+        last updated at 2024-08-27
       </i>
       <p>Two different types of metadata are stored in ISA files: administrative and experimental metadata. Administrative metadata covers IDs, descriptions, contact details, connected publications and more, while experimental metadata is describing experimental procedures and similar processes. ISA files are normally stored in an Excel format (.xlsx) and need to adhere to the <a href="https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md">ISA-XLSX specification</a>.</p>
 <p>A typical ISA file has the administrative metadata recorded in the first sheet of the Excel file (top-level metadata sheet). In addition, every <em>isa.study.xlsx</em> and <em>isa.assay.xlsx</em> file should have at least one more sheet where the experimental metadata is annotated (annotation table sheets), that is maintained through Swate. Both types of metadata can be edited with the ARCmanager. You can find more information about ISA file types and metadata sheets in the corresponding <a href="./../guides/isa_FileTypes.html">knowledge base article</a> and the <a href="https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md">ISA-XLSX specification</a>.</p>
@@ -659,7 +659,7 @@ Inside you have your ISA file as usual, but with the additional fields called <c
 <p><a href="#contents">Back to table of contents</a></p>
 </div>
 <nfdi-h4 id="edit-annotation-table-sheets">Edit annotation table sheets</nfdi-h4>
-<p>After importing a template, you will see a table similar to the picture below. In this case it's the template &quot;RNA extraction (DataPLANT) 1.2.0&quot;, extended to eight rows.</p>
+<p>After importing a template, you will see a table similar to the picture below. In this case it's the template &quot;RNA extraction (DataPLANT) 1.2.1&quot;, extended to eight rows.</p>
 <hr />
 <img src="../img/ARCmanager_addingmetadata_exp_swate_view.png" style="border: 1px solid  black;" />
 <p><strong>Fig. 7</strong> Metadata sheet editing view inside ARCmanager.</p>
@@ -668,7 +668,8 @@ Inside you have your ISA file as usual, but with the additional fields called <c
 <ol>
 <li><p><strong>Search term:</strong> A click on the magnifying glass symbols opens a search bar above the sheet name bar (4). The search bar allows you to search for specific ontology terms or to get suggestions for terms that fit the parameter.</p>
 </li>
-<li><p><strong>Add building block:</strong> Clicking this button will open up additional input fields above that allow adding new columns to the metadata table.</p>
+<li><p><strong>Add building block or custom column:</strong> <br>Clicking <code>Building Block</code> will open up additional input fields above that allow adding new columns to the metadata table. You can search for terms and add a new parameter or more. <br>
+Clicking <code>Custom Column</code> will open up a different input field above with which you can add a fully customizable columns (with term columns or unit column if desired).</p>
 </li>
 <li><p><strong>Delete row/column:</strong> Clicking the red &quot;X&quot; will delete the corresponding row or building block. The deletion of elements has to be confirmed in a pop-up menu before the action takes effect.</p>
 </li>
@@ -679,6 +680,10 @@ Inside you have your ISA file as usual, but with the additional fields called <c
 <li><p><strong>Ontology links:</strong> These links will direct you to either the ontology lookup site or the DataPLANT ontology repository on GitHub.</p>
 </li>
 <li><p><strong>Extend the table:</strong> This button adds a new row to table.</p>
+</li>
+<li><p><strong>Move a column:</strong> You can shift a column to the left or right by clicking the respective arrow.</p>
+</li>
+<li><p><strong>Template Name:</strong> The name of the template currently in use is displayed next to the sheet name field.</p>
 </li>
 </ol>
 <div style="text-align: right">
