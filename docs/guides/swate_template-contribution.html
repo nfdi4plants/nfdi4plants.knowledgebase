@@ -569,7 +569,7 @@
         Swate Templates Contribution Guide
       </h1>
       <i class="help">
-        last updated at 2024-03-22
+        last updated at 2024-09-04
       </i>
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="about-this-guide">About this guide</nfdi-h2>
@@ -693,7 +693,7 @@
 <li>If you add a template to address a missing method, try to add building blocks that cover experimental procedures (as Parameters) and features of the sample (as Characteristics) that the experimenter would use when working on an experiment of that type</li>
 <li>The normal order of the columns is: <strong>Input</strong> → (all the Parameters and Characteristics in between in chronological order) → <strong>Output</strong> -or- <strong>Raw Data File</strong> -or- <strong>Derived Data File</strong>. Try to think about in which order the experimenter in the lab will do their work. Try to match this chronological order from left to right. This step is optional and only meant to increase readability.</li>
 <li>If you would like to save any background information on your template, that would help others reconstruct the creation of the template, you can save it in the <a href="https://github.com/nfdi4plants/Swate-templates/tree/main/background%20information">Swate-templates GitHub repository</a>. For this, please create a folder with the name of your template in the &quot;Background information&quot; folder.</li>
-<li>Avoid using the building block type <code>Factor</code> in templates. Any given characteristic or parameter in one study or assay can become a factor in another study or assay depending on the experimental context or scientific question. E.g. in one study all samples originate from the same <code>species</code> (-&gt; Characteristic) whereas in another study multiple <code>species</code> where assayed (-&gt; Factor).
+<li>Avoid using the building block type <code>Factor</code> in templates. Any given characteristic or parameter in one study or assay can become a factor in another study or assay depending on the experimental context or scientific question. E.g. in one study all samples originate from the same <code>species</code> (-&gt; Characteristic) whereas in another study multiple <code>species</code> were assayed (-&gt; Factor).
 </br></li>
 </ul>
 <nfdi-h4 id="recommendations-for-adding-endpoint-repository-templates">Recommendations for adding endpoint repository templates</nfdi-h4>
@@ -706,6 +706,8 @@
 <li>Templates should be checked for validity of requirements every ~ 6 months.
 </br></li>
 </ul>
+<nfdi-h3 id="add-example-values">Add example values</nfdi-h3>
+<p>Once the building blocks are established, please fill in one row of the table with example values. This will help the users interpret the building blocks and fill in the template in the intended way.</p>
 <nfdi-h3 id="save-your-template">Save your template</nfdi-h3>
 <p>Save your template by clicking on the disc symbol in the top right corner. This will download an xlsx-file. Please adjust the name of the file to correspond to the name of the template, but use underscores instead of spaces.
 Save the file in a suitable folder within your local clone of the Swate templates repository.
