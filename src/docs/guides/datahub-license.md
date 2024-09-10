@@ -10,19 +10,21 @@ add support: true
 add sidebar: _sidebars/mainSidebar.md
 ---
 
-
-<!-- TODO article about licensing  -->
-
 ## Why is a LICENSE important?
 
-Licenses in projects and repositories are essential for defining how others can use, modify, and distribute the code or content within that project. When you create an ARC and make it public, it automatically implies that others can see the content, but without a license, the legal permissions are unclear. A license provides a formal framework that protects the creator’s rights while also clarifying the terms of use for the content. For example, some licenses allow free use and modification with few restrictions (like MIT or Apache 2.0), while others may require derivative works to also be open source (such as the GPL). Therefore, a license is crucial for fostering collaboration while ensuring legal protection and clarity for both creators and users.
+Licenses in are essential for defining how others can use, modify, and distribute the code or data within a project. When you create and share an ARC, a license provides the formal framework that protects the data creators’ rights while clarifying the terms of use for the content. For example, some licenses allow free use and modification with few restrictions (like MIT or Apache 2.0), while others may require derivative works to also be open source (such as the GPL). Therefore, a license is crucial for fostering collaboration while ensuring legal protection and clarity for both creators and users.
 
 ## Adding a LICENSE to your ARC
 
-To add a `LICENSE` (which is essentially just a text file), navigate to your ARC in DataHUB and click on "Add LICENSE" on the right sidebar menu(1).
+In the DataHUB, a license is essentially just a standardized text file. 
+To add a `LICENSE` to your ARC
+
+1. navigate to your ARC in the DataHUB,
+2. click on "Add LICENSE" on the right sidebar menu(1),
+3. use a provided license template or enter the license text.
 
 <img src="./../img/datahub-add-license.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
 
-:bulb: We recommend to use a CC-BY license (not offered as template by GitLab). See e.g. https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum/-/blob/main/LICENSE for a CC-BY 4.0 license.
+:bulb: We recommend to use a CC-BY license, which is not offered as a template by DataHUB. For a CC-BY 4.0 license, you can copy the legal code from https://creativecommons.org/licenses/by/4.0/legalcode.txt. 
 
-:warning: Don't forget to sync your local ARC (via ARC Commander or ARCitect) after creating a `LICENSE` file in DataHUB.
+:bulb: Remember to sync your local ARC (via ARC Commander or ARCitect) after creating a `LICENSE` file in the DataHUB.
