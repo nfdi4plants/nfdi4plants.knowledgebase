@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Swate Templates Contribution Guide
-date: 2024-03-22
+date: 2024-09-04
 author: 
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -110,7 +110,7 @@ To add the building blocks of your actual template, you need to switch from the 
 - If you add a template to address a missing method, try to add building blocks that cover experimental procedures (as Parameters) and features of the sample (as Characteristics) that the experimenter would use when working on an experiment of that type
 - The normal order of the columns is: **Input** -> (all the Parameters and Characteristics in between in chronological order) -> **Output** -or- **Raw Data File** -or- **Derived Data File**. Try to think about in which order the experimenter in the lab will do their work. Try to match this chronological order from left to right. This step is optional and only meant to increase readability.
 - If you would like to save any background information on your template, that would help others reconstruct the creation of the template, you can save it in the [Swate-templates GitHub repository](https://github.com/nfdi4plants/Swate-templates/tree/main/background%20information). For this, please create a folder with the name of your template in the "Background information" folder. 
-- Avoid using the building block type `Factor` in templates. Any given characteristic or parameter in one study or assay can become a factor in another study or assay depending on the experimental context or scientific question. E.g. in one study all samples originate from the same `species` (-> Characteristic) whereas in another study multiple `species` where assayed (-> Factor). 
+- Avoid using the building block type `Factor` in templates. Any given characteristic or parameter in one study or assay can become a factor in another study or assay depending on the experimental context or scientific question. E.g. in one study all samples originate from the same `species` (-> Characteristic) whereas in another study multiple `species` were assayed (-> Factor). 
 </br>
 
 
@@ -122,6 +122,10 @@ To add the building blocks of your actual template, you need to switch from the 
 - If applicable, templates should be split into different assays.
 - Templates should be checked for validity of requirements every ~ 6 months.
 </br>
+
+### Add example values
+
+Once the building blocks are established, please fill in one row of the table with example values. This will help the users interpret the building blocks and fill in the template in the intended way.
 
 ### Save your template
 

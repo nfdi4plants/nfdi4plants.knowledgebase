@@ -2,13 +2,16 @@
 layout: docs
 title: View ARCs
 author:
-- name: Ursula Eberhardt
-  github: https://github.com/UrsulaE/
-  orcid: https://orcid.org/0000-0003-1221-7074
+  - name: Ursula Eberhardt
+    github: https://github.com/UrsulaE/
+    orcid: https://orcid.org/0000-0003-1221-7074
+  - name: Lucas Beuter
+    github: https://github.com/Lu98Be
+    orcid: https://orcid.org/0009-0008-8744-825X
 add toc: false
 add sidebar: _sidebars/mainSidebar.md
 status: published
-date: 2024-06-13
+date: 2024-08-28
 ---
 
 For the sake of simplicity, we are here using the term "ARC" for (DataHUB) "Project", because the DataHUB does not make any distinction between Projects that have the ARC folder and file structure and those that have not. Both are initially shown in the ARCmanager, but the ARCmanager has not been created for manipulating Projects which are not ARCs.
@@ -29,7 +32,7 @@ With the `LOAD ARC` button (Fig. 1), all ARCs on the DataHUB will be listed for 
 
 ---
 
-Use the `Your Arcs` check-box (Fig. 2) to filter the list of ARCs for those in which you are member and your own ARCs. Your own ARCs are again highlighted in yellow. 
+Use the `Your Arcs` check-box (Fig. 2) to filter the list of ARCs for those in which you are member and your own ARCs. Your own ARCs are again highlighted in yellow.
 
 ---
 
@@ -79,7 +82,7 @@ You can hide the ARC contents by clicking inside the `List ARC content` field ab
 
 ---
 
-Navigate through the ARC directories with a left-click. After clicking a directory, its contents will be displayed. You can go back one level in the directory hierarchy by using the `Return` field above the list of files (Fig. 6).
+Navigate through the ARC directories with a left-click. After clicking a directory, its contents will be displayed. You can go back one level in the directory hierarchy by using the `Return` field above the list of files (Fig. 6). Alternatively, you can click on the respective subdirectory in the path displayed above the `Return` field to jump directly to this position.
 
 ---
 
@@ -89,7 +92,9 @@ Navigate through the ARC directories with a left-click. After clicking a directo
 
 ---
 
-When you click on a file instead of a directory, another panel on the right side will open that allows you to edit the selected file (Fig. 7). Plain text files (.md, .txt or similar) can be changed directly in this editor. Do not forget to save your changes and synchronize with the DataHUB by using the `SAVE` button when you are done.
+When you click on a file instead of a directory, another panel on the right side will open that allows you to view the selected file (Fig. 7). You can display images, pdf files, text based files, and more.
+
+Plain text files (.md, .txt or similar) can be modified directly in this editor. Do not forget to save your changes and synchronize with the DataHUB by using the `SAVE` button when you are done.
 
 ---
 
@@ -109,9 +114,7 @@ When selecting an ISA file, the editor panel will open as well, but instead of a
 
 ---
 
-You can hide/view the editor panel by clicking on the double arrow symbol at the top of the panel (Fig. 9).
-
----
+You can hide/view the editor panel by clicking the double arrow symbol at the top of the panel (Fig. 9).
 
 <img src="../img/ARCmanager_view_7b.png" style="border: 1px solid  black;" />
 
@@ -119,4 +122,49 @@ You can hide/view the editor panel by clicking on the double arrow symbol at the
 
 ---
 
-When you expand the editor window without selecting a file to be edited first, a list of recent changes to the ARC will be shown instead.
+When you expand the editor window without selecting a file to be edited first, a list of recent changes to the ARC will be shown instead (Fig. 10).
+
+You can hide them by unchecking the checkbox, as well as switch to a different branch in the ARC (highlighted in red).
+After switching the branch you need to reload the ARC through the reload button.
+
+---
+
+<img src="../img/ARCmanager_view_9.png" style="border: 1px solid  black;" />
+
+**Fig. 10** The right side contains a list of changes by default, as well as the option to switch branches
+
+---
+
+The `NEW FOLDER` button below the listed ARC content (Fig. 11, #1) can be used to create new folders, e.g. to further organize raw data inside the dataset subdirectories. 
+
+These custom folders can be renamed (Fig. 11, #2) or deleted (Fig. 11, #3). This is in contrast to the directories which are part of the ARC specification (e.g. studies, assays, etc.), which can not be renamed or deleted via the ARCmanager.
+
+---
+
+<img src="../img/ARCmanager_view_12.png" style="border: 1px solid  black;" />
+
+**Fig. 11** UI elements to create (#1), edit (#2), and delete (#3) custom folders in an ARC using the ARCmanager.
+
+---
+
+### ARC quick validation
+
+When you click the `Validate` button, a basic validation process is started that checks your ARC.
+
+---
+
+<img src="../img/ARCmanager_view_10.png" style="border: 1px solid  black;" />
+
+**Fig. 12** Start the validation process by clicking the highlighted button.
+
+---
+
+Different requirements for a publication ready ARC are checked, like complete ARC structure (all necessary folders and files), all necessary fields filled out in the isa.investigation file, all contacts have names, email, and affiliation and more.
+
+Afterwards, a highlighted card structure will show you the results of the validation process. In case your ARC did not pass the validation test, the results will tell you exactly which information or element is missing.
+
+---
+
+<img src="../img/ARCmanager_view_10b.png" style="border: 1px solid  black;" />
+
+**Fig. 13** Validation results displayed in a card view

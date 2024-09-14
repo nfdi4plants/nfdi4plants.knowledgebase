@@ -24,13 +24,13 @@ The following table lists examples of relevant endpoint repositories (ER) for da
 Repository | Description | Biological data domain | DataPLANT Templates available
 -- | -- | -- | -- | -- |
 [EBI-ENA](<https://www.ebi.ac.uk/ena/>) | European Nucleotide Archive | genome / transcriptome sequences | :white_check_mark:
-[EBI-ArrayExpress](<https://www.ebi.ac.uk/arrayexpress/>) | Archive of Functional Genomics Data | transcriptome  
+[EBI-ArrayExpress](<https://www.ebi.ac.uk/arrayexpress/>) | Archive of Functional Genomics Data | transcriptome  | :white_check_mark:
 [EBI-MetaboLights](<https://www.ebi.ac.uk/metabolights/>) | Database of Metabolomics | metabolome | :white_check_mark:
 [EBI-PRIDE](<https://www.ebi.ac.uk/pride/>) | PRoteomics IDEntifications Database | proteome | :white_check_mark:
 [EBI-BioImage Archive](<https://www.ebi.ac.uk/bioimage-archive/>) | Stores and distributes biological images | imaging, microscopy | 
-[e!DAL-PGP](<https://edal.ipk-gatersleben.de/index.html>) | Plant Genomics & Phenomics Research Data Repository | phenome | 
+[e!DAL-PGP](<https://edal.ipk-gatersleben.de/index.html>) | Plant Genomics & Phenomics Research Data Repository | phenome | :white_check_mark:
 [NCBI-GEO](<https://www.ncbi.nlm.nih.gov/geo/>) | Gene Expression Omnibus | transcriptome | :white_check_mark:
-[NCBI-GenBank](<https://www.ncbi.nlm.nih.gov/genbank/>) | Genetic Sequence Database | genome | :white_check_mark:
+[NCBI-GenBank](<https://www.ncbi.nlm.nih.gov/genbank/>) | Genetic Sequence Database | genome |
 [NCBI-SRA](<https://www.ncbi.nlm.nih.gov/sra/>) | Sequence Read Archive | genome / transcriptome sequences | :white_check_mark:
 
 ### General-purpose repositories
@@ -47,6 +47,7 @@ Examples for general-purpose repositories include
 
 The following resources provide good starting points to seek a suitable repository for your research data.
 
+- DataPLANT's Metadata recommendation quiz: <https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/MetadataQuiz.html>
 - FAIRsharing: <https://fairsharing.org>
 - re3data (Registry of Research Data Repositories): <https://www.re3data.org>
 - Overview of EMBL-EBI repositories: <https://www.ebi.ac.uk/services/all>
@@ -74,6 +75,7 @@ Name | Type | Tasks on metadata
 ----------------|-----------|------------------ 
 **[ARC][kb-AnnotatedResearchContext]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
 **[Swate][gh-Swate]** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
+**[Metadata quiz](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/MetadataQuiz.html)** | Tool | **Identify:** <ul><li>Identify relevant metadata standards, data repositories and Swate templates for your data</li></ul>
 **[ARC Commander][kb-ArcCommander-Manual]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
 **[DataHUB][kb-DataHub]** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 <!-- ~~Converter~~ | Tool under construction | **Curate:** <ul><li>Harmonize and migrate between metadata schema</li><li>Manage who can view or access your ARC</li></ul>

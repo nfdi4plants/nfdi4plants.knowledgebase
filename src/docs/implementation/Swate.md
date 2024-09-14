@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Swate
-date: 2024-04-17
+date: 2024-09-04
 author:
 - name: Martin Kuhl
   github: https://github.com/Martin-Kuhl
@@ -38,7 +38,7 @@ Ontology terms within the Swate database can not only be used to standardize the
 
 ## Templates for convenient metadata annotation
 Metadata annotation as part of the data submission routine to public repositories is often bothersome due to a high variability between repository requirements. This can become particularly inconvenient when the same metadata is submitted repeatedly, e.g. to unrelated public repositories. To assist researchers in this process, DataPLANT provides a growing collection of templates as a starting point for their annotation tables. The template design process is initiated “backwards”, starting from the requirements of public repositories and thereby, compliance with metadata standards. Our Data stewards supervise the metadata harmonization between template and target repository and simultaneously contribute to the development of the DataPLANT biology ontology [(DPBO)](https://github.com/nfdi4plants/nfdi4plants_ontology).  
-From a technical perspective, these templates are ISA Protocols containing various Characteristics, Parameters, and the Study specific Factor. DataPLANT provides checklists and requirements of public repositories as templates that are considered useful for various technologies and common standards, e.g. MIAPPE. The templates can directly be integrated to the isa.study.xlsx and isa.assay.xlsx files using Swate. Once loaded into the table, they still can be modified to special needs in the sense of adding or deleting annotation building blocks. The modularity of the system also gives labs and institutions the possibility to create their own lab specific templates for experiments that are frequently run in the lab, e.g. a metabolomics experiment of a measurement facility. High flexibility is fostered by offering a manual or Swate-supported template customization, distribution, and use.
+From a technical perspective, these templates are ISA Protocols containing various Characteristics, Parameters, and the Study specific Factor. DataPLANT provides checklists and requirements of public repositories as templates that are considered useful for various technologies and common standards, e.g. MIAPPE. For finding metadata checklists and Swate templates that are suitable for your data, you might want to use the [Metadata recommendation quiz](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/MetadataQuiz.html). Swate templates can directly be integrated to the isa.study.xlsx and isa.assay.xlsx files using Swate. Once loaded into the table, they still can be modified to special needs in the sense of adding or deleting annotation building blocks. The modularity of the system also gives labs and institutions the possibility to create their own lab specific templates for experiments that are frequently run in the lab, e.g. a metabolomics experiment of a measurement facility. High flexibility is fostered by offering a manual or Swate-supported template customization, distribution, and use.
 
 <img src="./../img/swate_a_templates.png" style="height: 300px">
 </br>
