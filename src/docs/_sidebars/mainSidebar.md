@@ -94,7 +94,6 @@
 ### [Create a new user group](/docs/DataHUB-Manual/datahub-CreateGroup.html)
 ## [CQC Pipelines & validation](/docs/DataHUB-Manual/cqc-pipelines/cqc-pipelines.html)
 ### [Find and use ARC validation packages](/docs/DataHUB-Manual/cqc-pipelines/validation-packages.html)
-Continuous Quality Control (CQC) p
 ## [Data publications](/docs/DataHUB-Manual/datahub-data-publications.html)
 ### [Passing Continuous Quality Control](/docs/DataHUB-Manual/datahub-data-publications-cqc.html)
 ### [Submitting ARCs with ARChigator](/docs/DataHUB-Manual/datahub-data-publications-archigator.html)
@@ -160,7 +159,7 @@ Continuous Quality Control (CQC) p
 ### [CEPLAS ARC Trainings – Spring 2024](/docs/teaching-materials/events-2024/2024-04-03_CEPLAS-ARC-Trainings/index.html)
 ### [MibiNet CEPLAS DataPLANT Tool-Workshops](/docs/teaching-materials/events-2024/2024-04-11_MibiNet-CEPLAS-ARC-Trainings/index.html)
 ### [TRR175 Tutzing Retreat](/docs/teaching-materials/events-2024/2024-06-19-TRR175-Tutzing-Retreat/index.html)
-
+### [CEPLAS iHEAD ARC Training](/docs/teaching-materials/events-2024/2024-09-25_CEPLAS-iHeads-ARC-Training/index.html)
 
 
 # [Frequently Asked Questions](/docs/faqs/faqs.html)
