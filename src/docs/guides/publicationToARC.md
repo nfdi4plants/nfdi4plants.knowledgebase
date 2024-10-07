@@ -83,7 +83,13 @@ This guide assumes you know
   1. this must be according to the publisher's license usually found on the publisher / journal website of the publication
   2. See e.g. https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum/-/blob/main/LICENSE for a CC-BY 4.0 license
 
+- To add a `LICENSE`, navigate to your ARC in DataHUB and click on "Add LICENSE" on the right sidebar menu(1).
+
+<img src="./../img/datahub-add-license.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
+
 :bulb: We recommend to focus on open access / CC-BY publications and datasets, unless you explicitly know, whether and how to re-use the data published elsewhere.
+
+:warning: Don't forget to sync your local ARC (via ARC Commander or ARCitect) after creating a `LICENSE` file in DataHUB.
 
 ## ISA - investigation / isa.investigation.xlsx
 

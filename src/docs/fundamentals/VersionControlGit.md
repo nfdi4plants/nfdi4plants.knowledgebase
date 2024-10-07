@@ -26,6 +26,14 @@ By taking chronological snapshots of a complete project (termed "git repository"
 
 ![Git and Git Platforms](./../img/git_github_gitlab.png)
 
+## Git branches
+
+Branches in Git allow users to work on and develop new features of their projects without affecting or changing other branches in the repository. 
+
+Imagine you're writing a book. The main path you're working on is the main storyline, which we'll call the main branch. But at some point, you get a new idea for an alternative storyline. Instead of changing the main storyline right away, you create a new path (or branch). Now, you can write and develop this new idea without affecting the main storyline. If you like how the alternative idea turns out, you can merge it back into the main storyline. If not, you can simply discard it, and the main storyline remains untouched.
+
+In Git, branches help you experiment and develop different features or ideas in isolation, without messing up the main codebase. In addition, multiple people can work on different tasks within the same project without interfering with each other. You can switch between branches, merge them together, or delete them when they're no longer needed. 
+
 ## Git platforms: GitHub and GitLab
 
 Although Git could be used locally as a standalone tool, its full power is unfolded via git platforms such as [GitHub] and [GitLab]. Similar to the typical cloud services for file sharing and collaboration, these platforms function as remote share-points for git repositories. They allow data access management (permission control) to share data privately with selected collaborators or the public. Individual contributions and changes by multiple collaborators can be tracked. On top of versioned data sharing, additional features, such as discussing and tracking project tasks and contributions, and wiki-based documentation render these git platforms very valuable for project and research (data) management. Consequently, they nowadays enjoy great popularity outside of software development.
