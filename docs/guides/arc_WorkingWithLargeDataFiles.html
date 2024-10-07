@@ -443,6 +443,9 @@
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub-arc-sharing.html">
             Sharing ARCs via the DataHUB
           </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub-license.html">
+            Adding a LICENSE to your ARC
+          </a>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
           <a href="/nfdi4plants.knowledgebase/docs/guides/index-WorkWithYourARC.html">
@@ -493,6 +496,9 @@
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/publicationToARC.html">
             Publication to ARC
+          </a>
+          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_WorkingWithBranches.html">
+            Working with branches
           </a>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
@@ -604,8 +610,17 @@
 <img src="./../img/ARCitect-datahub-sync-lfs.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
 <p>In addition you can set a threshold (2) in megabytes (MB) for what you consider a large file in the &quot;Commit&quot; menu (1).</p>
 <img src="./../img/ARCitect-lfs-threshold.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
+<p>You can also easily check which files in your ARC are flagged as LFS, by looking in the ARCitect tree panel (1).</p>
+<img src="./../img/ARCitect-lfs-flag.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
+<p>If you haven't downloaded the LFS file you can only open its pointer file. Unfortunately, this pointer file cannot be displayed in ARCitect but if you try to open it with a text editor (e.g. Notepad) it looks something like this:</p>
+<nfdi-code class="language-bash">version https://git-lfs.github.com/spec/v1
+oid sha256:dfc4d259bb70ab93915fe6fd91df33017b09f9208d94b48d7c9a789dd35d65bc
+size 22973898
+</nfdi-code>
 <p>Finally, you can individually download large files via right-click → &quot;Download LFS File&quot; (1)</p>
 <img src="./../img/ARCitect-download-lfs-file-right-click.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
+<p>or you can also choose to download all large files from a directory by right clicking on the folder in the panel tree (1) and then &quot;Download LFS Files&quot; (2).</p>
+<img src="./../img/ARCitect-download-lfs-from-directory.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
 <nfdi-h3 id="arc-commander">ARC Commander</nfdi-h3>
 <p>By default, the ARC Commander tracks the following files via LFS:</p>
 <ol>
