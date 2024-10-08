@@ -11,6 +11,8 @@ add sidebar: _sidebars/mainSidebar.md
 
 2. Copy/paste the following commands into your terminal and execute them to (a) download the latest ARC Commander release, (b) change permissions to make the ARC Commander executable and (c) move the ARC Commander program to a location from where it is executable via the terminal:
 
+<!--  
+
 First, you need to verify if your machine is using an AMD / x86 processor or ARM processor.
 
 ```bash
@@ -21,19 +23,24 @@ This command will return the processor type. If it returns x86_64 , your system 
 
 For AMD / x86 processors
 
+-->
+
 ```bash
-curl -LO https://github.com/nfdi4plants/ARCCommander/releases/download/v1.0.0/arc_osx-x64
+curl -LO https://github.com/nfdi4plants/ARCCommander/releases/download/v1.0.2/arc_osx-x64
 chmod a+x ./arc_osx-x64
 mv ./arc_osx-x64 /usr/local/bin/arc
 ```
 
+<!-- 
+
 For ARM processors
 
 ```bash
-curl -LO https://github.com/nfdi4plants/ARCCommander/releases/download/v1.0.0/arc_osx-arm64
+curl -LO https://github.com/nfdi4plants/ARCCommander/releases/download/v1.0.2/arc_osx-arm64
 chmod a+x ./arc_osx-arm64
 mv ./arc_osx-arm64 /usr/local/bin/arc
 ```
+-->
 
 > :warning: By moving the ARC commander binary to `/usr/local/bin/` it also becomes available to other users on your machine.
 
@@ -68,7 +75,7 @@ You should see the following or similar message:
 
 > Start processing parameterless command.  
 > Start Arc Version  
-> v1.0.0  
+> v1.0.2  
 > Done processing command.  
 
 > :bulb: A global config file will be created the first time you use the ARC Commander at `~/.config/DataPLANT/ArcCommander/ArcCommander.config`
