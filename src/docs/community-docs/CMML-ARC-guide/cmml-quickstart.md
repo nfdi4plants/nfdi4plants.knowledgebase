@@ -38,7 +38,7 @@ Please note that __all cooperations__ are incumbent upon the [User regulation ("
 ### ARC &ndash; Annotated Research Context
 
 The CMML uses the [Annotated Research Context (ARC)](./../../implementation/AnnotatedResearchContext.html) for data exchange.
-With the ARC we can easily exchange sample sheets, workflows, protocols and share (meta-)data inside a common and shareable folder structure. The ARC is shared via DataPLANT's [DataHUB](./../../implementation/DataHub.html).
+With the ARC we can easily exchange project metadata, sample sheets, protocols, workflows and measured data via a common and shareable folder structure. The ARC is shared via this [DataHUB](./../../implementation/DataHub.html).
 
 <img src="../../img/ARC_DataSharing_Collaborators_img2.png" style="width:65%; display: block; margin: 20px auto;">
 
