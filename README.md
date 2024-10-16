@@ -1,33 +1,55 @@
-# DataPLANT Knowledge Base
+# Starlight Starter Kit: Basics
 
-[![CC BY 4.0][cc-by-shield]][cc-by]
+[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-Welcome to the [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4plants.knowledgebase/index.html)! 👋
+```
+npm create astro@latest -- --template starlight
+```
 
-This knowledge base combines articles on
-- **fundamental** topics on research data management (RDM) and
-- how **DataPLANT implements** these aspects to support plant researchers with RDM tools and services.
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/withastro/starlight&create_from_path=examples/basics)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
 
-## Feedback & Contribution
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-The DataPLANT knowledge base is a community effort and improves with every feedback we receive from readers and users.
-**Your contribution is highly appreciated** no matter how little it may seem!
+## 🚀 Project Structure
 
-If you just want to ask a question, recommend missing topics or tutorials, raise awareness for inconsistencies, typos, missing links, errors in training materials or tutorials, feel free to
+Inside of your Astro + Starlight project, you'll see the following folders and files:
 
-- submit a ticket to our [helpdesk](https://helpdesk.nfdi4plants.org/?topic=Documentation_KnowledgeBase),
-- [open an issue](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/issues/new/) at GitHub or
-- write us an <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">email</a>.
+```
+.
+├── public/
+├── src/
+│   ├── assets/
+│   ├── content/
+│   │   ├── docs/
+│   │   └── config.ts
+│   └── env.d.ts
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
+```
 
-For all other contributions, please refer to the [contribution guide](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/CONTRIBUTING.html).
+Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
 
-## License
+Images can be added to `src/assets/` and embedded in Markdown with a relative link.
 
-This work is licensed under a
-[Creative Commons Attribution 4.0 International License][cc-by].
+Static assets, like favicons, can be placed in the `public/` directory.
 
-[![CC BY 4.0][cc-by-image]][cc-by]
+## 🧞 Commands
 
-[cc-by]: http://creativecommons.org/licenses/by/4.0/
-[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).

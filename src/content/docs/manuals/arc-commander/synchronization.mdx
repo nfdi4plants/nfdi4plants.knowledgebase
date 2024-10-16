@@ -1,0 +1,25 @@
+---
+title: "Sychronize an ARC"
+lastUpdated: 2022-12-13
+---
+
+The command `arc sync` handles multiple operations for your ARC in one step. It will
+
+```bash
+arc sync [-m]
+```
+
+- track LFS files,
+- stage changes,
+- commit changes,
+- pull changes from the remote repository, and
+- push changes from your local repository. 
+
+Using the flag `-m` allows you to add a message to your synchronization, e.g.,
+
+```bash
+arc sync -m "addition of proteomics dataset"
+```
+
+If no message was added, the Commander will generate a message by itself. 
+
