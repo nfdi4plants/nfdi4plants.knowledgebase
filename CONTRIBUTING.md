@@ -27,6 +27,8 @@ In `.mdx` you can not only link to other content, but also directly insert other
 
 ### How to store
 
+Try to use `.svg` files for icons, graphics and logos. Use any other file format for screenshots or tutorial images.
+
 Images should be stored in the `src/assets/images` directory. If your image has a obvious context, you SHOULD create a subdirectory for it. 
 
 ```txt title="Example"
