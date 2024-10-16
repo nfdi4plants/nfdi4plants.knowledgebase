@@ -7,3 +7,9 @@
 - [] Improve composition
   - [] OntologyAnnotation (Term?)
   - [] ARCCommander objects? (person, OntologyAnnotation, publication)
+  - [] SwateDB
+  - [] Example Swate table
+
+## Images
+
+- [] `Swate_a_Addtemplate.png` is not dark mode compatible

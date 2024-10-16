@@ -4,6 +4,7 @@ import starlight from '@astrojs/starlight';
 import rehypeSlug from 'rehype-slug';
 import { rehypeAutolink } from './plugins/rehype-autolink';
 import tailwind from '@astrojs/tailwind';
+import starlightLinksValidator from 'starlight-links-validator'
 
 // https://astro.build/config
 export default defineConfig({
@@ -23,6 +24,9 @@ export default defineConfig({
       social: {
         github: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase',
       },
+      plugins: [
+        starlightLinksValidator()
+      ],
       expressiveCode: {
         defaultProps: {
           // Enable wrap for specific languages
