@@ -1,0 +1,110 @@
+---
+title: Linux
+lastUpdated: 2023-11-20
+authors:
+  - hannah-dörpholz
+---
+
+import { Steps } from '@astrojs/starlight/components';
+
+## Install Git
+
+Please install <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.github.com/" target="_blank">Git LFS</a> before using the ARCitect.
+
+:::tip
+For Linux we recommend to install via homebrew as described on the site above.
+:::
+
+## Install ARCitect via installer
+
+<Steps>
+
+1. Head to the ARCitect's GitHub <a href="https://github.com/nfdi4plants/ARCitect/releases/latest" target="_blank">release page</a>.
+2. Download the Linux AppImage ARCitect-x.x.x.AppImage
+3. (optional) If you run Ubuntu 22.04 you need to download an additional library. Ubuntu 22.04 can't run AppImage files without the not natively installed FUSE library. To fix this, install the necessary library. To do this you need root permissions.
+
+    ```bash title="Requires root permission"
+    sudo apt install libfuse2
+    ```
+
+</Steps>
+
+## Make the ARCitect executable
+
+You need to make the downloaded AppImage executable before you can run it.
+You can use the user interface or the command line to do this.
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+<Tabs>
+<TabItem label="User interface">
+
+
+<Steps>
+1. open the folder where the AppImage is currently saved (likely in Downloads)
+2. (optional) move the file to a location where you want it saved
+3. right-click the file and select properties
+
+    ![](@images/arcitect_linux_rightclick.png)
+
+4. go to the "permissions" tab and tick the field "execute"
+
+    ![](@images/arcitect_linux_permissions.png)
+
+5. now double-clicking the AppImage should start the ARCitect
+
+    ![](@images/arcitect_linux_checkbox.png)
+
+</Steps>
+
+</TabItem>
+<TabItem label="Command line">
+
+
+<Steps>
+
+1. open a terminal
+2. move to the directory where you have saved your AppImage (e.g. Downloads)
+
+    ```bash
+    cd Downloads
+    ```
+
+3. Make the file executable (use the appropriate name of the file)
+
+    ```bash
+    chmod u+x ARCitect-x.x.x.AppImage
+    ```
+
+4. Now double-clicking the AppImage or running the following command (with the appropriate file name) should start the ARCitect
+
+    ```bash
+    ./ARCitect-x.x.x.AppImage
+    ```
+
+
+</Steps>
+
+</TabItem>
+</Tabs>
+
+### with the user interface
+
+
+### from the command line
+
+
+- open a terminal
+- move to the directory where you have saved your AppImage (e.g. Downloads)
+```
+cd Downloads
+```
+- make the file executable (use the appropriate name of the file)
+```
+chmod u+x ARCitect-x.x.x.AppImage
+```
+- now double-clicking the AppImage or running the following command (with the appropriate file name) should start the ARCitect
+
+```
+./ARCitect-x.x.x.AppImage
+```

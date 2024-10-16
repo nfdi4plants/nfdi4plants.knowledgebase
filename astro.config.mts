@@ -13,7 +13,7 @@ interface StarlightUtilsConfig {
   navLinks?: { leading?: { useSidebarLabelled: string; } | undefined; } | undefined; }
 
 const StarlightUtilsConfig: StarlightUtilsConfig = {
-  multiSidebar: {switcherStyle: "horizontalList"},
+  multiSidebar: {switcherStyle: "dropdown"},
   navLinks: {
     leading: { useSidebarLabelled: "leadingNavLinks" }
   }
