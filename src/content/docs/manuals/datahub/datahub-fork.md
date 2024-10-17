@@ -19,9 +19,13 @@ The DataHUB allows to "fork" an ARC. This creates an exact copy of an ARC under 
    - adapt the project slug (3)
    - select which branches to fork (4)
 
-:bulb: Note that these options change the display name and URL of your fork of the ARC. The original ARC stays unchanged.
+:::tip
+Note that these options change the display name and URL of your fork of the ARC. The original ARC stays unchanged.
+:::
 
-:bulb: The visibility level (5) and access permissions are inherited from the original ARC. 
+:::tip
+The visibility level (5) and access permissions are inherited from the original ARC.
+:::
 
 ![](@images/datahub/datahub-fork02.drawio.png)
 
