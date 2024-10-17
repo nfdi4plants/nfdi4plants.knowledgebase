@@ -23,5 +23,5 @@
 
 ## Duplicated info
 
-- datahub/datahub-register/ | datahub/datahub-arc-sharing/ | datahub/datahub-invite-collaborators/
+- datahub/datahub-arc-sharing/ | datahub/datahub-invite-collaborators/
 - 
