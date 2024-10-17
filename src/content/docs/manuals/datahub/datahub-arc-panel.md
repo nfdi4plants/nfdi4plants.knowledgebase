@@ -15,7 +15,7 @@ In the sidebar to the left, you can
 1. manage the project (1), e.g. invite members to the ARC
 2. plan (2) and organize tasks in issue lists and boards or take notes in a wiki to your ARC,
 3. check any merge requests or commit history (3),
-4. adapt the [settings (4) of the ARC](datahub-ARCSettings).
+4. adapt the [settings (4) of the ARC](../datahub-arc-settings/).
 
 :bulb: A click on these menu options reveals a drop down menu with the respective functionalities.
 

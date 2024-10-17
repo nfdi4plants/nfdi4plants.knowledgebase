@@ -6,7 +6,7 @@ authors:
   - viktoria-petrova
 ---
 
-To open your ARC's settings click on *Settings* in the sidebar of your [ARC panel](./datahub-ARCPanel.html).
+To open your ARC's settings click on *Settings* in the sidebar of your [ARC panel](../datahub-arc-panel).
 
 ![](@images/datahub/datahub-ARC-settings.drawio.png)
 
