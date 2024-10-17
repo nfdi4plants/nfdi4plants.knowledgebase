@@ -20,6 +20,9 @@
 
 - [ ] Align file names with sidebar order ? e.g. in steps of 10 to leave space?
 
+## Naming
+
+- [ ] Call tool-directed guides "How to"? e.g. swate-contribution guides
 
 ## Duplicated info
 
