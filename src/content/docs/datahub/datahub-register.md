@@ -1,16 +1,11 @@
 ---
-title: Register at the DataHUB
+title: How to register for DataPLANT
 lastUpdated: 2023-06-14
 authors: 
   - cristina-martins-rodrigues
-sidebar:
-  badge:
-    text: Beginners
-    variant: note
 ---
 
 :::note[About this guide]
-
 In this guide we show you how to register at the [DataHUB](https://git.nfdi4plants.org/) to be able to share your ARC for collaboration.
 :::
 

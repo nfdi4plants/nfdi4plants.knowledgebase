@@ -3,10 +3,6 @@ title: DataPLANT account
 lastUpdated: 2024-01-22
 authors: 
   - dominik-brilhaus
-sidebar:
-  badge:
-    text: Beginners
-    variant: note
 ---
 
 :::note[About this guide]

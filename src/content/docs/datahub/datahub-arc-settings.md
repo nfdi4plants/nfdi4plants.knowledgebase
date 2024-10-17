@@ -4,6 +4,8 @@ lastUpdated: 2024-07-22
 authors:
   - dominik-brilhaus
   - viktoria-petrova
+sidebar:
+  order: 5
 ---
 
 To open your ARC's settings click on *Settings* in the sidebar of your [ARC panel](../datahub-arc-panel).

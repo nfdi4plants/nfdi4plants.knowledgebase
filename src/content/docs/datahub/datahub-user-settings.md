@@ -1,50 +1,32 @@
 ---
-title: User Settings
+title: User settings
 lastUpdated: 2024-07-22
 authors:
   - dominik-brilhaus
   - viktoria-petrova
+sidebar:
+  order: 2
 ---
 
-<style>
+import { Steps } from '@astrojs/starlight/components';
 
-.container {
-  display: flex;
-  align-items: center;
-  /*justify-content: center;*/
-}
+You can adapt the user settings
 
-</style>
-
-<div class="container">
+In the avatar menu click on "Edit profile" or "Preferences" (3) to open the User Settings in a sidebar panel on the left.
   
-  <div style="padding: 20px;">
+
+![](@images/datahub/datahub-avatar-menu.drawio.png)
+
   
-  In the avatar menu click on "Edit profile" or "Preferences" (3) to open the User Settings in a sidebar panel on the left.
+![](@images/datahub/datahub-preferences.drawio.png)
   
-  </div>
+In the user settings you can
 
-  ![](@images/datahub/datahub-avatar-menu.drawio.png)
+<Steps>  
 
-</div>
+1. Edit your **profile** (1), e.g. adapt your profile name and avatar
+2. Change **account** settings (2), e.g. change your account's username or delete your account
+3. Generate **access tokens** (3) for your account
+4. Decide how you want to receive DataHUB **notifications** (4)
 
-
-<div class="container">
-  
-  <div style="padding: 20px;">
-  
-  ![](@images/datahub/datahub-preferences.drawio.png)
-  
-  </div>
-
-  <div style="padding: 20px;">
-
-  In the user settings you can
-  1. Edit your **profile** (1), e.g. adapt your profile name and avatar
-  2. Change **account** settings (2), e.g. change your account's username or delete your account
-  3. Generate **access tokens** (3) for your account
-  4. Decide how you want to receive DataHUB **notifications** (4)
-
-  </div>
-
-</div>
+</Steps>
