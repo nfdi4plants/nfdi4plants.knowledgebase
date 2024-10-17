@@ -5,10 +5,6 @@ authors:
   - dominik-brilhaus
   - kevin-frey
   - stella-eggels
-sidebar:
-  badge:
-    text: Beginners
-    variant: note
 ---
 
 :::note[About this guide]

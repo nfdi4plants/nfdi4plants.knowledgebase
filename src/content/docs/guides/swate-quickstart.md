@@ -4,10 +4,6 @@ lastUpdated: 2024-04-18
 authors:
   - martin-kuhl
   - stella-eggels
-sidebar:
-  badge:
-    text: Beginners
-    variant: note
 ---
 
 :::note[About this guide]

@@ -5,10 +5,6 @@ authors:
   - martin-kuhl
   - stella-eggels
   - david-zimmer
-sidebar:
-  badge:
-    text: Beginners
-    variant: note
 ---
 
 :::note[About this guide]

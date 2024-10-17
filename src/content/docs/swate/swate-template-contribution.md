@@ -5,19 +5,13 @@ authors:
   - dominik-brilhaus
   - kevin-frey
   - stella-eggels
-sidebar:
-  badge:
-    text: DataStewards
-    variant: tip
 ---
 
 :::note[About this guide]
-
 This tutorial guides you how to create Swate metadata templates with [Swate-alpha](https://swate-alpha.nfdi4plants.org/).
 :::
 
 :::tip[Before we can start]
-
 Before contributing Swate templates you ideally have
 
 - Access to [Swate-alpha](https://swate-alpha.nfdi4plants.org/)
