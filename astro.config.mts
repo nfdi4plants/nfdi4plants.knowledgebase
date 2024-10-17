@@ -6,73 +6,53 @@ import { rehypeAutolink } from './plugins/rehype-autolink';
 import tailwind from '@astrojs/tailwind';
 import starlightLinksValidator from 'starlight-links-validator'
 import starlightImageZoom from 'starlight-image-zoom'
-import starlightUtils from "@lorenzo_lewis/starlight-utils";
-
-interface StarlightUtilsConfig { 
-  multiSidebar?: { switcherStyle: boolean | "horizontalList" | "hidden" | "dropdown"; } | { switcherStyle: "horizontalList"; } | undefined; 
-  navLinks?: { leading?: { useSidebarLabelled: string; } | undefined; } | undefined; }
-
-const StarlightUtilsConfig: StarlightUtilsConfig = {
-  multiSidebar: {switcherStyle: "horizontalList"},
-  navLinks: {
-    leading: { useSidebarLabelled: "leadingNavLinks" }
-  }
-}
 
 const SidebarConfig = [
-  // the ``leadingNavLinks`` label is used to define the links that will be displayed in the navbar after the site title
   {
-    label: "leadingNavLinks",
-    items: [
-      { label: "Docs", link: "/docs" },
-      { label: "Manuals", link: "/manuals" }
-    ]
+    label: 'Start Here',
+    autogenerate: { directory: 'start-here' },
   },
   {
-    label: "Docs",
-    items: [
-      {label: "General", link: "/docs"},
-      {
-        label: "Start Here",
-        badge: "New",
-        collapsed: false,
-        autogenerate: { directory: '/docs/start-here' },
-      },
-      {
-        label: "Fundamentals",
-        collapsed: true,
-        autogenerate: { directory: '/docs/fundamentals' },
-      }
-    ],
+    label: 'Guides',
+    autogenerate: { directory: 'guides' },
   },
   {
-    label: "Manuals",
-    items: [
-      {label: "General", link: "/manuals"},
-      {
-        label: "ARCitect",
-        collapsed: true,
-        autogenerate: { directory: '/manuals/arcitect' },
-      },
-      {
-        label: "DataHUB",
-        collapsed: true,
-        autogenerate: { directory: '/manuals/datahub' },
-      },
-      {
-        label: "ARC Commander",
-        collapsed: true,
-        autogenerate: { directory: '/manuals/arc-commander' },
-      },
-      {
-        label: "Swate",
-        collapsed: true,
-        autogenerate: { directory: '/manuals/swate' },
-      }
-    ]
+    label: 'Fundamentals',
+    // Collapse the group by default.
+    collapsed: true,
+    autogenerate: { directory: 'fundamentals' },
+  },
+  {
+    label: 'ARCitect',
+    // Collapse the group by default.
+    collapsed: true,
+    autogenerate: { directory: 'arcitect' },
+  },
+  {
+    label: 'ARC Validation',
+    // Collapse the group by default.
+    collapsed: true,
+    autogenerate: { directory: 'arc-validation' },
+  },
+  {
+    label: 'DataHUB',
+    // Collapse the group by default.
+    collapsed: true,
+    autogenerate: { directory: 'datahub' },
+  },
+  {
+    label: 'ARC Commander',
+    // Collapse the group by default.
+    collapsed: true,
+    autogenerate: { directory: 'arc-commander' },
+  },
+  {
+    label: 'Swate',
+    // Collapse the group by default.
+    collapsed: true,
+    autogenerate: { directory: 'swate' },
   },
 ]
-
 
 // https://astro.build/config
 export default defineConfig({
@@ -94,7 +74,6 @@ export default defineConfig({
         github: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase',
       },
       plugins: [
-        starlightUtils(StarlightUtilsConfig),
         starlightLinksValidator(),
         starlightImageZoom(),
       ],
