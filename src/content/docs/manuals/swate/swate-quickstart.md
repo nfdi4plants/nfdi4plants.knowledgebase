@@ -39,7 +39,7 @@ DataPLANT provides the tool [Swate](../../docs/implementation/swate) to support 
 Briefly:
   - *Characteristics* are used for study descriptions and describe inherent properties of the source material (e.g. a certain strain)  
   - *Parameters* describe steps in your experimental workflow (e.g. a measurement temperature) 
-  - *Components* describe physical obsjects of your protocol (e.g. an instrument name) 
+  - *Components* describe physical objects of your protocol (e.g. an instrument name) 
   - *Factors* describe independent variables that result in a specific output (e.g. the light intensity)
 
 - The combination of ISA terms (Characteristics, Parameter, Component, Factor) and biological or technological ontology terms (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter \[temperature\] or Factor \[temperature\]).
@@ -54,14 +54,14 @@ Briefly:
 
 4. If you want to add a building block with a unit, activate the unit box ( d ) and use the search field to look for a fitting unit term, e.g. degree Celsius as unit for Parameter \[temperature\].
 
-![](@images/swate-alpha-add-building-block-02.png)
+![](@images/swate-alpha-add-building-block02.png)
 
 
-5. For more information on customizing your annotation table click [here](./SwateManual/Docs03-Building-Blocks.html).
+5. For more information on customizing your annotation table click [here](../building-blocks).
 
 ## Use templates
 
-Alternatively, you can also use one of DataPLANT’s [Swate templates](./SwateManual/Docs05-Templates.html). You can find them via the "add template" button, next to the "add building block" button.  
+Alternatively, you can also use one of DataPLANT’s [Swate templates](../templates). You can find them via the "add template" button, next to the "add building block" button.  
 
 ![](@images/swate-alpha-add-template.png)
 
@@ -71,7 +71,7 @@ Add rows beneath the building blocks with the plus symbol ( A ) and fill the cel
 
 1. When *Ontology term search* ( B ) is enabled, Swate  will suggest a selection of suitable terms from the ontology database for the column header, e.g. *TripleTOF* *5600* for *instrument model.* Alternatively to activating the *Ontology term search* within the cells of your annotation table, you can use the ontology term search panel on the right side after expanding it with the arrow on the bottom right ( C ).
 
-2. If you could not find a fitting term, you can use the advanced term search with the blue link ("use advanced search", D) below the ontology term search field in the right panel. 
+2. If you could not find a fitting term, you can use the advanced term search with the blue link ("use advanced search", D) below the ontology term search field in the right panel.
 
 3. If you still could not find a fitting term, use free text input.
 
