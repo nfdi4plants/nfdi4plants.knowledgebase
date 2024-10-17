@@ -9,9 +9,10 @@ sidebar:
     variant: note
 ---
 
-## About this guide
+:::note[About this guide]
 
 In this guide we show you how to register at the [DataHUB](https://git.nfdi4plants.org/) to be able to share your ARC for collaboration.
+:::
 
 ## Registration
 

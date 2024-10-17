@@ -9,15 +9,17 @@ sidebar:
     variant: note
 ---
 
-## About this guide
+:::note[About this guide]
 
 In this guide we show you how to invite lab colleagues or project partners to your ARC for collaboration. 
+:::
 
-## Before we can start
+:::tip[Before we can start]
 
-:ballot_box_with_check: You have a [DataPLANT account](https://register.nfdi4plants.org)
-:ballot_box_with_check: You have created an ARC  
-:bulb: Unless changed, your ARC is set to private by default.
+- You have a [DataPLANT account](https://register.nfdi4plants.org)
+- You have created an ARC  
+- Unless changed, your ARC is set to private by default.
+:::
 
 ## Inviting collaborators
 

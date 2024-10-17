@@ -9,9 +9,9 @@ sidebar:
     variant: note
 ---
 
-## About this guide
-
+:::note[About this guide]
 In this guide we show you how to change the password or enable Two Factor Authentication (2FA) to secure your DataPLANT account.
+:::
 
 
 ## DataPLANT account settings
