@@ -25,12 +25,12 @@ DataPLANT provides the tool [Swate](../../docs/implementation/swate) to support 
 
 - To create an annotation table with the [Swate standalone](https://swate-alpha.nfdi4plants.org/) in your browser, click "New File" and select which kind of annotation table you want to create. If you already created a isa.study.xlsx or isa.assay.xlsx file, you can select "Import File" to modify and add to it.
 
-<img src="./../img/Swate_a_NewFile.PNG
+<img src="./../img/swate-alpha-NewFile.PNG
 
 
 - To create an annotation table within ARCitect, add a new table to your assay or study by clicking the plus (+) symbol next to your metadata sheet
 
-<img src="./../img/Swate_a_Arcitect_newTable.png" style="height: 400px">
+<img src="./../img/swate-alpha-Arcitect_newTable.png" style="height: 400px">
 
 
 - Fill in the metadata sheet of your study or assay
@@ -54,7 +54,7 @@ Briefly:
 
 4. If you want to add a building block with a unit, activate the unit box ( d ) and use the search field to look for a fitting unit term, e.g. degree Celsius as unit for Parameter \[temperature\].
 
-<img src="./../img/Swate_a_Addbuildingblock_2.png" style="height: 300px">
+<img src="./../img/swate-alpha-add-buildingblock_2.png" style="height: 300px">
 
 
 5. For more information on customizing your annotation table click [here](./SwateManual/Docs03-Building-Blocks.html).
@@ -63,7 +63,7 @@ Briefly:
 
 Alternatively, you can also use one of DataPLANT’s [Swate templates](./SwateManual/Docs05-Templates.html). You can find them via the "add template" button, next to the "add building block" button.  
 
-<img src="./../img/Swate_a_Addtemplate.png" style="height: 500px">
+<img src="./../img/swate-alpha-add-template.png" style="height: 500px">
 
 ## Annotate your samples and data
 
@@ -75,7 +75,7 @@ Add rows beneath the building blocks with the plus symbol ( A ) and fill the cel
 
 3. If you still could not find a fitting term, use free text input.
 
-![](./../img/Swate_a_ontologytermsearch3.png)
+![](./../img/swate-alpha-ontologytermsearch3.png)
 
 
 > Note: More information on how to use Swate can be found [here][kb-SwateManual].

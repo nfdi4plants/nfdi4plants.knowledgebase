@@ -26,7 +26,7 @@ Create and/or open an annotation table as described in the [Swate Quickstart](ht
 ## Swate Overview
 
 <figure>
-  <img src="./../img/Swate_a_overview2.png">
+  <img src="./../img/swate-alpha-overview2.png">
   <figcaption>Major areas of the Swate user interface.</figcaption>
 </figure>
 
@@ -34,7 +34,7 @@ Create and/or open an annotation table as described in the [Swate Quickstart](ht
 
 Each annotation should start with an *Input* and end with an *Output* column. To add and specify your *Input* building block, click either the "Add Building Block" widget on the top (A) or use the "Building Blocks" function in the sidebar (B). Select *Input* from the drop-down menu instead of *Parameter* and select *Source Name* as input type. Then click <kbd>Add column</kbd>. Add *Output [Sample Name]* analogously. 
 
-![Alt-Text](./../img/Swate_a_buildingblockcategories2.png)
+![Alt-Text](./../img/swate-alpha-buildingblockcategories2.png)
 
 > :bulb: Only one *Input*, one *Output* and one of each *Protocol* columns can be added per table.
 
@@ -62,7 +62,7 @@ When filling any cell below `Parameter [sample volume]` you can now see the numb
 
 At this point, your table should look similar to this:
 
-![Alt-Text](./../img/Swate_a_movecolumn2.png)
+![Alt-Text](./../img/swate-alpha-movecolumn2.png)
 
 We now want to move the *Output* column to the end of your table. For this, right-click into any cell (except the header) of the column that you want to move. Now you can click "Move Column" and select the position that the column should be moved to (in this case: 3). If your table does not contain empty cells yet, you can add any number of rows with the plus symbol. Right-clicking into cells also gives the option of deleting a column or row.
 
