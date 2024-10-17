@@ -17,7 +17,7 @@ In this guide we show you how to register at the [DataHUB](https://git.nfdi4plan
 
 If you do not have a DataPLANT account, please register [here](<https://register.nfdi4plants.org>).
 
-![](@images/teaching/dataplant-registration.png)
+![](@images/datahub/dataplant-registration.png)
 
 ## DataPLANT Roles
 
@@ -34,4 +34,4 @@ During the registration you can "Choose your role in DataPLANT"
 - Guest
   - Guest users who want to use the DataPLANT tools and services
 
-![](@images/teaching/dataplant-registration-roles.png)
+![](@images/datahub/dataplant-registration-roles.png)
