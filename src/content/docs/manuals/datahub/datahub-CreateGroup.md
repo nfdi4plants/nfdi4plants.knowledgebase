@@ -9,7 +9,7 @@ authors:
 Working with user groups helps to organize multiple ARCs for your lab or consortium. 
 You can create a new group from the [groups panel](datahub-groupsPanel.html). 
 
-![](@images/datahub/datahub-groupPanel-createGroup.drawio.svg)
+![](@images/datahub/datahub-groupPanel-createGroup.drawio.png)
 
 To create group,
 

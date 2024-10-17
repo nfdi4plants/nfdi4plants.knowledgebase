@@ -8,7 +8,7 @@ authors:
 
 The projects panel lists all ARCs you have access to.
 
-![](@images/datahub/datahub-projectsPanel.drawio.svg)
+![](@images/datahub/datahub-projectsPanel.drawio.png)
 
 1. Choose a tab (1) to see `Your` or `Starred` ARCs.
 2. The main panel (2) lists all ARCs

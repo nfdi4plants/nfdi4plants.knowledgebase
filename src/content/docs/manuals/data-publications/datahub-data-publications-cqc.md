@@ -15,7 +15,7 @@ in short the CQC pipeline is performed on each commit to an ARC, and the results
 
 ## ARC homepage
 
-![](@images/data-publications/data-publication/cqc-results.png)
+![](@images/data-publications/cqc-results.png)
 
 - **(1)**: The _pipeline badge_ indicates wether all steps of CQC have passed, or if there are any failures.
 - **(2)**: The _publish button_ is used to submit the ARC to the ARChive via [ARChigator](datahub-data-publications-archigator.html). Note that ARCs that fail CQC are not eligible for publication.
@@ -25,7 +25,7 @@ For more details, you can click on the pipeline badge **(1)**, and investigate t
 
 ## CQC pipeline details
 
-![](@images/data-publications/data-publication/cqc-pipeline-path-1.png)
+![](@images/data-publications/cqc-pipeline-path-1.png)
 
 - **(4)**: List of commits, with the most recent commit on top.
 - **(5)**: _Pipeline result_: If the pipeline passed, it shows a green checkmark.
@@ -35,7 +35,7 @@ Click on a _pipeline result_ (e.g., **(4)**) of a commit of choice to open the C
 
 On the next page, you can see the details of the CQC pipeline for the selected commit:
 
-![](@images/data-publications/data-publication/cqc-pipeline-path-2.png)
+![](@images/data-publications/cqc-pipeline-path-2.png)
 
 - **(7)**: overall pipeline result
 - **(8)**: associated commit information
@@ -43,7 +43,7 @@ On the next page, you can see the details of the CQC pipeline for the selected c
 
 Clicking on **(7)** will open the CQC pipeline, where each step can be viewed in detail:
 
-![](@images/data-publications/data-publication/cqc-pipeline-steps.png)
+![](@images/data-publications/cqc-pipeline-steps.png)
 
 - **(10)** _CQC step 1_: a machine-readable representation (JSON) of the ARC metadata is created and linked with the commit, which makes it discoverable for search tools. 
 - **(11)** _CQC step 2_: ARC metadata is subjected to a set of quality checks, e.g., if ORCIDs associated with persons are valid or if each author has a contact email. 
