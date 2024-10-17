@@ -17,7 +17,10 @@ In the sidebar to the left, you can
 3. check any merge requests or commit history (3),
 4. adapt the [settings (4) of the ARC](../datahub-arc-settings/).
 
-:bulb: A click on these menu options reveals a drop down menu with the respective functionalities.
+:::tip
+A click on these menu options reveals a drop down menu with the respective functionalities.
+:::
+
 
 In the main panel, you can
 
