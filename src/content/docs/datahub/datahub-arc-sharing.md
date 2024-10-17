@@ -7,13 +7,13 @@ sidebar:
   order: 1
 ---
 
-## About this guide
-
+:::note[About this guide]
 In this guide we explain the different ways offered by the DataHUB to share an ARC with collaborators.
+:::
 
-## Before we can start
-
-:ballot_box_with_check: You have a [DataPLANT](https://register.nfdi4plants.org) account
+:::tip[Before we can start]
+You have a [DataPLANT](https://register.nfdi4plants.org) account
+:::
 
 ## DataHUB concepts and terminology
 
@@ -44,14 +44,12 @@ Before jumping into the details of data sharing, we need to introduce a few Data
 
 You can check the namespace by looking at the URL. For example:
 
-<div class="table-container">
 
 Type | URL | Namespace
 --- | --- | ---
 A **personal** ARC | https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum | `brilator` 
 An **group**-shared ARC | https://git.nfdi4plants.org/hhu-plant-biochemistry/Samuilov-2018-BOU-PSP | `hhu-plant-biochemistry`
 
-</div>
 
 :::tip
 "Personal" is not the same as "private", see [visibility](#visibility).
