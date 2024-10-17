@@ -24,13 +24,13 @@ Create and/or open an annotation table as described in the [Swate QuickStart](..
 
 ## Swate Overview
 
-![](@images/swate/swate-alpha-overview01.png)
+![](@images/swate/overview.png)
 
 ## Add building blocks to create your annotation table
 
 Each annotation should start with an *Input* and end with an *Output* column. To add and specify your *Input* building block, click either the "Add Building Block" widget on the top (A) or use the "Building Blocks" function in the sidebar (B). Select *Input* from the drop-down menu instead of *Parameter* and select *Source Name* as input type. Then click <kbd>Add column</kbd>. Add *Output [Sample Name]* analogously.
 
-![](@images/swate/swate-alpha-building-block-categories02.png)
+![](@images/swate/building-block-categories.png)
 
 > :bulb: Only one *Input*, one *Output* and one of each *Protocol* columns can be added per table.
 

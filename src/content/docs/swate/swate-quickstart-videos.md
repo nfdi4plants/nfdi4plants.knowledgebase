@@ -13,7 +13,7 @@ sidebar:
 
 ## About this guide
 
-DataPLANT provides the tool [Swate](../../docs/implementation/swate) to support you in data annotation. In this guide, we want to introduce you to basic functionalities of SWATE which you can use to on add metadata to your studies and assays. 
+DataPLANT provides the tool [Swate](../../docs/implementation/swate) to support you in data annotation. In this guide, we want to introduce you to basic functionalities of Swate which you can use to on add metadata to your studies and assays. 
 
 ## Before we can start
 
@@ -24,9 +24,9 @@ first.
 
 ---
 
-## SWATE availability
+## Swate availability
 
-In this video we are going to briefly talk about how you can get your hands on SWATE:
+In this video we are going to briefly talk about how you can get your hands on Swate:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fbWEoGw6rDw?si=JbBEhUYBL6rk0z3_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -34,7 +34,7 @@ In this video we are going to briefly talk about how you can get your hands on S
 
 ## Open or create an annotation table
 
-In this video we will learn how to add an annotation table to an existing assay or study using SWATE:
+In this video we will learn how to add an annotation table to an existing assay or study using Swate:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1cp2_ZnAeXI?si=U2Vt2biBIR2_yUdy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -42,7 +42,7 @@ In this video we will learn how to add an annotation table to an existing assay 
 
 ## Add and fill input and output columns to an annotation table
 
-In this video we will learn how to add content to our table using SWATE:
+In this video we will learn how to add content to our table using Swate:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/x03FW1wpXtc?si=hoY5dwMFLRY1mL3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
