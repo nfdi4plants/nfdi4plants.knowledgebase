@@ -3,6 +3,8 @@ title: Sharing ARCs via the DataHUB
 lastUpdated: 2024-03-06
 authors:
   - dominik-brilhaus
+sidebar:
+  order: 1
 ---
 
 ## About this guide
