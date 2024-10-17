@@ -13,7 +13,7 @@ interface StarlightUtilsConfig {
   navLinks?: { leading?: { useSidebarLabelled: string; } | undefined; } | undefined; }
 
 const StarlightUtilsConfig: StarlightUtilsConfig = {
-  multiSidebar: {switcherStyle: "dropdown"},
+  multiSidebar: {switcherStyle: "horizontalList"},
   navLinks: {
     leading: { useSidebarLabelled: "leadingNavLinks" }
   }
@@ -30,14 +30,41 @@ const SidebarConfig = [
   },
   {
     label: "Docs",
-    collapsed: true,
-    autogenerate: { directory: "/docs" },
+    items: [
+      {label: "General", link: "/docs"},
+      {
+        label: "Start Here",
+        badge: "New",
+        collapsed: false,
+        autogenerate: { directory: '/docs/start-here' },
+      },
+      {
+        label: "Fundamentals",
+        collapsed: true,
+        autogenerate: { directory: '/docs/fundamentals' },
+      }
+    ],
   },
   {
     label: "Manuals",
-    collapsed: true,
-    autogenerate: { directory: "/manuals" },
-    badge: "New",
+    items: [
+      {label: "General", link: "/manuals"},
+      {
+        label: "ARCitect",
+        collapsed: true,
+        autogenerate: { directory: '/manuals/arcitect' },
+      },
+      {
+        label: "ARC Commander",
+        collapsed: true,
+        autogenerate: { directory: '/manuals/arc-commander' },
+      },
+      {
+        label: "Swate",
+        collapsed: true,
+        autogenerate: { directory: '/manuals/swate' },
+      }
+    ]
   },
 ]
 
