@@ -44,7 +44,7 @@ Before contributing Swate templates you ideally have
 
 Open [Swate-alpha](https://swate-alpha.nfdi4plants.org/). To create a new template click "New File" and select "Template". If you want to edit an existing template, click "Import" and select the respective file.
 
-![](@images/swate-alpha-newtemplate.png" style="height: 300px">
+![](@images/swate-alpha-template-new.png)
 
 ### Add Template Metadata
 
@@ -67,13 +67,13 @@ Key | Definition | Tip :bulb:
 
 Here is an example for filled out template metadata and how it helps in Swate's template search.
 
-![img1](./../img/Swate-alpha-metadata.png)
+![](@images/swate/swate-alpha-template-metadata.png)
 
 ### Add building blocks
 
 To add the building blocks of your actual template, you need to switch from the "Metadata" sheet to the "New Table" sheet on the bottom left. Using the "Add Building Block" button, you can add your desired building blocks with or without a unit.
 
-![](@images/swate-alpha-buildingblock.png" style="height: 400px">
+![](@images/swate-alpha-building-block.png)
 
 #### Recommendations for template design
 
@@ -102,7 +102,7 @@ Once the building blocks are established, please fill in one row of the table wi
 Save your template by clicking on the disc symbol in the top right corner. This will download an xlsx-file. Please adjust the name of the file to correspond to the name of the template, but use underscores instead of spaces.
 Save the file in a suitable folder within your local clone of the Swate templates repository.
 
-### Your template is ready for upload :tada:
+### Your template is ready for upload
 
 - Well done! You created a new template.
 - You can now submit your template via the git workflow described above.
