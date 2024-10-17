@@ -20,21 +20,17 @@ In this walk-through, we guide you through annotating data using [Swate](../../d
 
 :bulb: Consider reading about [Swate](../../docs/implementation/swate)
 
-Create and/or open an annotation table as described in the [Swate Quickstart](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html)
-
+Create and/or open an annotation table as described in the [Swate QuickStart](../swate-quickstart)
 
 ## Swate Overview
 
-<figure>
-  ![](@images/swate-alpha-overview2.png">
-  <figcaption>Major areas of the Swate user interface.</figcaption>
-</figure>
+![](@images/swate-alpha-overview01.png)
 
 ## Add building blocks to create your annotation table
 
-Each annotation should start with an *Input* and end with an *Output* column. To add and specify your *Input* building block, click either the "Add Building Block" widget on the top (A) or use the "Building Blocks" function in the sidebar (B). Select *Input* from the drop-down menu instead of *Parameter* and select *Source Name* as input type. Then click <kbd>Add column</kbd>. Add *Output [Sample Name]* analogously. 
+Each annotation should start with an *Input* and end with an *Output* column. To add and specify your *Input* building block, click either the "Add Building Block" widget on the top (A) or use the "Building Blocks" function in the sidebar (B). Select *Input* from the drop-down menu instead of *Parameter* and select *Source Name* as input type. Then click <kbd>Add column</kbd>. Add *Output [Sample Name]* analogously.
 
-![Alt-Text](./../img/swate-alpha-buildingblockcategories2.png)
+![](@images/swate/swate-alpha-building-block-categories02.png)
 
 > :bulb: Only one *Input*, one *Output* and one of each *Protocol* columns can be added per table.
 
@@ -57,14 +53,15 @@ Now, let's add a descriptive building block.
 > :bulb: This adds four columns to your table, one visible and **three** hidden. 
 When filling any cell below `Parameter [sample volume]` you can now see the numbers being complemented with the chosen unit, e.g. `10.00 microliter`.
 
-
 ## Change the order of your columns or delete columns
 
 At this point, your table should look similar to this:
 
-![Alt-Text](./../img/swate-alpha-movecolumn2.png)
-
 We now want to move the *Output* column to the end of your table. For this, right-click into any cell (except the header) of the column that you want to move. Now you can click "Move Column" and select the position that the column should be moved to (in this case: 3). If your table does not contain empty cells yet, you can add any number of rows with the plus symbol. Right-clicking into cells also gives the option of deleting a column or row.
+
+![](@images/swate/swate-alpha-move-column1.png)
+
+![](@images/swate/swate-alpha-move-column2.png)
 
 ## Use a template
 
@@ -78,4 +75,4 @@ If there are any building blocks which do not fit your experiment you can delete
 
 ## Your ISA table is ready to fill 🎉
 
-Go ahead, adjust the building blocks you want to use to describe your experiment as you see fit. Insert values for *Input* and *Output* and fill the cells of your *Parameter*, *Characteristic* or *Component* columns using the ontology term search. You can activate the ontology term search directly in the cells of your table with the magnifying glass symbol or you can use the "Ontology term search" in the side bar. Instructions for annotating your data can also be found in the [Swate Quickstart](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html) and in the Swate Manual ([Filling cells with ontology terms](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/Docs04-Ontology-Term-Search.html)).
+Go ahead, adjust the building blocks you want to use to describe your experiment as you see fit. Insert values for *Input* and *Output* and fill the cells of your *Parameter*, *Characteristic* or *Component* columns using the ontology term search. You can activate the ontology term search directly in the cells of your table with the magnifying glass symbol or you can use the "Ontology term search" in the side bar. Instructions for annotating your data can also be found in the [Swate QuickStart](../swate-quickstart) and in the Swate Manual ([Filling cells with ontology terms](../term-search)).
