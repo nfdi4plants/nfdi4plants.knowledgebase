@@ -12,4 +12,4 @@
 
 ## Images
 
-- [] `Swate_a_Addtemplate.png` is not dark mode compatible
+- [] `swate-alpha-add-template.png` is not dark mode compatible

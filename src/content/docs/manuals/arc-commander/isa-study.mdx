@@ -5,7 +5,9 @@ tableOfContents:
   maxHeadingLevel: 4
 ---
 
-> :warning: Make sure to close all isa.*.xlsx files before submitting a new command to the command line, as otherwise the information cannot be saved by the ARC Commander.
+:::caution
+Make sure to close all isa.*.xlsx files before submitting a new command to the command line, as otherwise the information cannot be saved by the ARC Commander.
+:::
 
 An investigation may contain several studies, which in turn can include multiple assays.
 
@@ -18,7 +20,7 @@ There is no need for a folder structure that represents a study since all data a
 A study consists of a single isa.study.xlsx file, can be created by using:
   
 ```bash
-`arc s init`.
+arc s init
 ```
 
 ### `arc s register` (Register Study)
