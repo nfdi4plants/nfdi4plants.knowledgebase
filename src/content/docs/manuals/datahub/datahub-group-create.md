@@ -9,7 +9,7 @@ authors:
 Working with user groups helps to organize multiple ARCs for your lab or consortium. 
 You can create a new group from the [groups panel](datahub-groupsPanel.html). 
 
-![](@images/datahub/datahub-groupPanel-createGroup.drawio.png)
+![](@images/datahub/datahub-group-panel-create.drawio.png)
 
 To create group,
 
@@ -18,5 +18,6 @@ To create group,
 3. set the visibility level (3), and 
 4. invite members with a specified role and permission (4).
 
-
-:bulb: When syncing an ARC shared with a group, the group's url rather than your user url is used to generate the ARC's address. 
+:::tip
+When syncing an ARC shared with a group, the group's url rather than your user url is used to generate the ARC's address. 
+:::

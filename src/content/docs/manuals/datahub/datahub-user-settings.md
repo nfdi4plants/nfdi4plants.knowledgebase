@@ -24,7 +24,7 @@ authors:
   
   </div>
 
-  ![](@images/datahub/datahub-avatarMenu.drawio.png)
+  ![](@images/datahub/datahub-avatar-menu.drawio.png)
 
 </div>
 
