@@ -31,7 +31,7 @@ authors:
 
   </div>
 
-  <img src="./../img/datahub-navbar.drawio.svg" style="width: 400px; padding: 20px;">
+  ![](@images/datahub/datahub-navbar.drawio.svg)
 
 </div>
 
@@ -39,7 +39,7 @@ authors:
 
 From the side bar in the top-left corner (1) you can navigate to the [projects](./datahub-projectsPanel.html) (2) or [groups](datahub-groupsPanel.html) (3) panels.
 
-<img src="./../img/datahub-hamburgerMenu.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
+![](@images/datahub/datahub-hamburgerMenu.drawio.svg)
 
 :bulb: Once you navigate to an ARC ("Project") or group, the sidebar shows other options.
 
@@ -57,6 +57,6 @@ From the side bar in the top-left corner (1) you can navigate to the [projects](
   
   </div>
 
-  <img src="./../img/datahub-avatarMenu.drawio.svg" style="width: 300px; padding: 20px;">
+  ![](@images/datahub/datahub-avatarMenu.drawio.svg)
 
 </div>

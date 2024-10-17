@@ -10,7 +10,7 @@ The DataHUB allows to directly operate files and folders without using any other
 
 ## Add files or folders
 
-<img src="./../img/datahub-addFiles.drawio.png" style="width:100%;display: block;margin: 20px auto;">
+![](@images/datahub/datahub-addFiles.drawio.png)
 
 1. From the [ARC panel](./datahub-ARCPanel.html), navigate to subdirectory of your ARC. 
 2. Click the plus sign next to your ARC's name (1).
@@ -19,11 +19,11 @@ The DataHUB allows to directly operate files and folders without using any other
 
 ## Replace, delete or download single files
 
-<img src="./../img/datahub-deleteFile01.drawio.png" style="width:100%;display: block;margin: 20px auto;">
+![](@images/datahub/datahub-deleteFile01.drawio.png)
 
 1. Select a file (1) that you want to change or download
 
-<img src="./../img/datahub-deleteFile02.drawio.png" style="width:90%;display: block;margin: 20px auto;">
+![](@images/datahub/datahub-deleteFile02.drawio.png)
 
 2. From the next view you can choose to replace (2) a file via upload, delete (3) or download (4) the file. 
 
@@ -31,7 +31,7 @@ The DataHUB allows to directly operate files and folders without using any other
 
 ## Download folders
 
-<img src="./../img/datahub-download.drawio.png" style="width:100%;display: block;margin: 20px auto;">
+![](@images/datahub/datahub-download.drawio.png)
 
 1. From the [ARC panel](./datahub-ARCPanel.html), navigate to subdirectory of your ARC that you would like to download
 2. From the code menu, you can

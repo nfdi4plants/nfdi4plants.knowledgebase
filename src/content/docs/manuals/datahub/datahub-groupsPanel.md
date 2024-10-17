@@ -8,7 +8,7 @@ authors:
 
 The groups panel lists all user groups.
 
-<img src="./../img/datahub-groupPanel.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
+![](@images/datahub/datahub-groupPanel.drawio.svg)
 
 
 1. Choose a tab (1) to see your groups, or explore public groups (2)

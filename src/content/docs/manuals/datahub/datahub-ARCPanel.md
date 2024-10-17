@@ -8,7 +8,7 @@ authors:
 
 The ARC Panel is the main working area for your ARC. 
 
-<img src="./../img/datahub-ARC-overview.drawio.svg" style="width:100%;display: block;margin: 20px auto;">
+![](@images/datahub/datahub-ARC-overview.drawio.png)
 
 In the sidebar to the left, you can
 

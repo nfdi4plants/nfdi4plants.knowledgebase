@@ -24,7 +24,7 @@ authors:
   
   </div>
 
-  <img src="./../img/datahub-avatarMenu.drawio.svg" style="width: 300px; padding: 20px;">
+  ![](@images/datahub/datahub-avatarMenu.drawio.svg)
 
 </div>
 
@@ -32,7 +32,7 @@ authors:
 <div class="container">
   
   <div style="padding: 20px;">
-  <img src="./../img/datahub-preferences.drawio.svg" style="width: 400px; padding: 20px;">
+  ![](@images/datahub/datahub-preferences.drawio.svg)
   </div>
 
   <div style="padding: 20px;">
