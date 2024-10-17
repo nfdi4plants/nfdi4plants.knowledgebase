@@ -24,7 +24,7 @@ Create and/or open an annotation table as described in the [Swate QuickStart](..
 
 ## Swate Overview
 
-![](@images/swate-alpha-overview01.png)
+![](@images/swate/swate-alpha-overview01.png)
 
 ## Add building blocks to create your annotation table
 

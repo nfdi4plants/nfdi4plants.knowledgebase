@@ -25,12 +25,12 @@ DataPLANT provides the tool [Swate](../../docs/implementation/swate) to support 
 
 - To create an annotation table with the [Swate standalone](https://swate-alpha.nfdi4plants.org/) in your browser, click "New File" and select which kind of annotation table you want to create. If you already created a isa.study.xlsx or isa.assay.xlsx file, you can select "Import File" to modify and add to it.
 
-![](@images/swate-alpha-newfile.png)
+![](@images/swate/swate-alpha-new-file.png)
 
 
 - To create an annotation table within ARCitect, add a new table to your assay or study by clicking the plus (+) symbol next to your metadata sheet
 
-![](@images/swate-alpha-arcitect-newtable.png)
+![](@images/swate/swate-alpha-arcitect-newtable.png)
 
 
 - Fill in the metadata sheet of your study or assay
@@ -54,7 +54,7 @@ Briefly:
 
 4. If you want to add a building block with a unit, activate the unit box ( d ) and use the search field to look for a fitting unit term, e.g. degree Celsius as unit for Parameter \[temperature\].
 
-![](@images/swate-alpha-add-building-block02.png)
+![](@images/swate/swate-alpha-add-building-block02.png)
 
 
 5. For more information on customizing your annotation table click [here](../building-blocks).
@@ -63,7 +63,7 @@ Briefly:
 
 Alternatively, you can also use one of DataPLANT’s [Swate templates](../templates). You can find them via the "add template" button, next to the "add building block" button.  
 
-![](@images/swate-alpha-add-template.png)
+![](@images/swate/swate-alpha-add-template.png)
 
 ## Annotate your samples and data
 
