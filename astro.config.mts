@@ -55,6 +55,11 @@ const SidebarConfig = [
         autogenerate: { directory: '/manuals/arcitect' },
       },
       {
+        label: "DataHUB",
+        collapsed: true,
+        autogenerate: { directory: '/manuals/datahub' },
+      },
+      {
         label: "ARC Commander",
         collapsed: true,
         autogenerate: { directory: '/manuals/arc-commander' },
