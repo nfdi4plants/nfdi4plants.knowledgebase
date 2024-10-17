@@ -5,7 +5,7 @@ authors:
   - kevin-schneider
 ---
 
-_**Note:** All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](cqc-pipelines/validation-packages.html) to learn how to opt-in._
+_**Note:** All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](../../arc-validation/validation-packages) to learn how to opt-in._
 
 ARChigator is a tool for submitting ARCs hosted on DataHUB for publication in the [ARChive](https://archive.nfdi4plants.org/communities/dataplant).
 
@@ -39,4 +39,4 @@ After clicking on the _publish button_ (**10**), your ARC is officially in Reque
 
 ## Publication status
 
-Once you clicked on the _publish button_ (**10**), you will be redirected to the submission ticket, and receive a confirmation mail. For more information on tracking the publication progress, refer to this [guide](datahub-data-publications-status.html).
+Once you clicked on the _publish button_ (**10**), you will be redirected to the submission ticket, and receive a confirmation mail. For more information on tracking the publication progress, refer to this [guide](../datahub-data-publications-status).
