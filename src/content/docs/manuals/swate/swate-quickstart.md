@@ -25,12 +25,12 @@ DataPLANT provides the tool [Swate](../../docs/implementation/swate) to support 
 
 - To create an annotation table with the [Swate standalone](https://swate-alpha.nfdi4plants.org/) in your browser, click "New File" and select which kind of annotation table you want to create. If you already created a isa.study.xlsx or isa.assay.xlsx file, you can select "Import File" to modify and add to it.
 
-<img src="./../img/swate-alpha-NewFile.PNG
+![](@images/swate-alpha-newfile.png)
 
 
 - To create an annotation table within ARCitect, add a new table to your assay or study by clicking the plus (+) symbol next to your metadata sheet
 
-<img src="./../img/swate-alpha-Arcitect_newTable.png" style="height: 400px">
+![](@images/swate-alpha-arcitect-newtable.png)
 
 
 - Fill in the metadata sheet of your study or assay
@@ -54,7 +54,7 @@ Briefly:
 
 4. If you want to add a building block with a unit, activate the unit box ( d ) and use the search field to look for a fitting unit term, e.g. degree Celsius as unit for Parameter \[temperature\].
 
-<img src="./../img/swate-alpha-add-buildingblock_2.png" style="height: 300px">
+![](@images/swate-alpha-add-building-block-02.png)
 
 
 5. For more information on customizing your annotation table click [here](./SwateManual/Docs03-Building-Blocks.html).
@@ -63,7 +63,7 @@ Briefly:
 
 Alternatively, you can also use one of DataPLANT’s [Swate templates](./SwateManual/Docs05-Templates.html). You can find them via the "add template" button, next to the "add building block" button.  
 
-<img src="./../img/swate-alpha-add-template.png" style="height: 500px">
+![](@images/swate-alpha-add-template.png)
 
 ## Annotate your samples and data
 
@@ -75,50 +75,4 @@ Add rows beneath the building blocks with the plus symbol ( A ) and fill the cel
 
 3. If you still could not find a fitting term, use free text input.
 
-![](./../img/swate-alpha-ontologytermsearch3.png)
-
-
-> Note: More information on how to use Swate can be found [here][kb-SwateManual].
-
-<div style="page-break-after: always;"></div>
-
-<!-- Links to DataPLANT knowledge base (kb-) -->
-
-<!-- kb-Fundamentals -->
-
-[kb-DataManagementPlan]: ../fundamentals/DataManagementPlan.html "Data Management Plan"
-[kb-DataPublications]: ../fundamentals/DataPublications.html "Data Publication"
-[kb-DataSharing]: ../fundamentals/DataSharing.html "Data Sharing"
-[kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
-[kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
-[kb-PersistentIdentifiers]: ../fundamentals/PersistentIdentifiers.html "Persistent Identifiers"
-[kb-PublicDataRepositories]: ../fundamentals/PublicDataRepositories.html "Repositories"
-[kb-ResearchDataManagement]: ../fundamentals/ResearchDataManagement.html "Research Data Management"
-[kb-VersionControlGit]: ../fundamentals/VersionControlGit.html "Version Control and Git"
-[kb-SwateManual]: ../SwateManual/index.html "Swate Manual"
-
-<!-- kb-Implementation -->
-[kb-AnnotatedResearchContext]: ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
-[kb-DataHub]: ../implementation/DataHub.html "DataPLANT DataHUB"
-[kb-ArcCommander]: ../implementation/ArcCommander.html "ARC Commander"
-
-<!-- kb-Tutorials -->
-[kb-QuickStart_arc]: ../tutorials/arcCommander_QuickStart.html "ARC User Journey"
-[kb-swate_QuickStart]: ../tutorials/swate_QuickStart.html "Swate QuickStart"
-
-
-<!-- Links to DataPLANT Homepage (hp-) -->
-
-[hp-Registration]: <https://register.nfdi4plants.org/> "DataPLANT Registration"
-[hp-DataHUB]: <https://git.nfdi4plants.org> "DataPLANT DataHUB"
-[hp-HelpDesk]: <https://helpdesk.nfdi4plants.org> "DataPLANT Help Desk"
-
-<!-- Links to DataPLANT GitHub (gh-) -->
-
-[gh-DataPlant]: <https://github.com/nfdi4plants/> "GitHub DataPLANT"
-[kb-ArcSpecs]: ./../implementation/ARC-specification.html "ARC specification"
-[gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/> "ArcCommander"
-[kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
-[gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
-
-<!-- Links to external (ext-) sources -->
+![](@images/swate/swate-alpha-ontology-termsearch3.png)

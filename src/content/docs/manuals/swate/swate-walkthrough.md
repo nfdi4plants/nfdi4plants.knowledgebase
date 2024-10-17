@@ -26,7 +26,7 @@ Create and/or open an annotation table as described in the [Swate Quickstart](ht
 ## Swate Overview
 
 <figure>
-  <img src="./../img/swate-alpha-overview2.png">
+  ![](@images/swate-alpha-overview2.png">
   <figcaption>Major areas of the Swate user interface.</figcaption>
 </figure>
 
