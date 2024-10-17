@@ -10,12 +10,12 @@ sidebar:
     variant: note
 ---
 
-## About this guide
+:::note[About this guide]
 
 DataPLANT provides the tool [Swate](../../docs/implementation/swate) to support you in data annotation. In this guide, we focus on adding metadata to your studies and assays with our tool. Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses.
 
 
-## Before we can start
+:::tip[Before we can start]
 
 :bulb: Consider reading about [Swate](../../docs/implementation/swate)
 

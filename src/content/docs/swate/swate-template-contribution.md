@@ -11,21 +11,23 @@ sidebar:
     variant: tip
 ---
 
-## About this guide
+:::note[About this guide]
 
 This tutorial guides you how to create Swate metadata templates with [Swate-alpha](https://swate-alpha.nfdi4plants.org/).
+:::
 
-## Before we can start
+:::tip[Before we can start]
 
 Before contributing Swate templates you ideally have
 
-- :ballot_box_with_check: Access to [Swate-alpha](https://swate-alpha.nfdi4plants.org/)
-- :ballot_box_with_check: Some routine with Swate (e.g. from the Swate manual and quickstarts)
+- Access to [Swate-alpha](https://swate-alpha.nfdi4plants.org/)
+- Some routine with Swate (e.g. from the Swate manual and quickstarts)
   - you know how to create an [Annotation Table](../annotation-table)
   - you know how to [add building blocks](../building-blocks) to your annotation table
   - you know the annotation principles
-- :ballot_box_with_check: A [GitHub](https://github.com) account and some routine with GitHub
-- :bulb: Feel free to contact us for Data Steward support, if you are not familiar to GitHub or Swate, but would like to contribute a Swate template for your community
+- A [GitHub](https://github.com) account and some routine with GitHub
+- Feel free to contact us for Data Steward support, if you are not familiar to GitHub or Swate, but would like to contribute a Swate template for your community
+:::
 
 ## Git Workflow to add or edit templates
 

@@ -11,14 +11,17 @@ sidebar:
     variant: note
 ---
 
-## About this guide
+:::note[About this guide]
 
 DataPLANT provides the tool [Swate](../../docs/implementation/swate) to support you in data annotation. It is both integrated into [ARCitect](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html) and available as a [browser version](https://swate-alpha.nfdi4plants.org/).
 In this walk-through, we guide you through annotating data using [Swate](../../docs/implementation/swate) with a show-case example.
+:::
 
-## Before we can start
 
-:bulb: Consider reading about [Swate](../../docs/implementation/swate)
+:::tip[Before we can start]
+
+Consider reading about [Swate](../../docs/implementation/swate)
+:::
 
 Create and/or open an annotation table as described in the [Swate QuickStart](../swate-quickstart)
 
