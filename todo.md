@@ -13,3 +13,15 @@
 ## Images
 
 - [] `swate-alpha-add-template.png` is not dark mode compatible
+- [] Adapt image size of small images e.g. http://localhost:4321/datahub/datahub-overview/
+
+
+## Sidebar
+
+- [ ] Align file names with sidebar order ? e.g. in steps of 10 to leave space?
+
+
+## Duplicated info
+
+- datahub/datahub-arc-sharing/ | datahub/datahub-invite-collaborators/
+- 
