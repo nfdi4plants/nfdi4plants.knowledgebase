@@ -41,6 +41,12 @@ const SidebarConfig = [
     autogenerate: { directory: 'datahub' },
   },
   {
+    label: 'DataPLAN',
+    // Collapse the group by default.
+    collapsed: true,
+    autogenerate: { directory: 'dataplan' },
+  },
+  {
     label: 'ARC Commander',
     // Collapse the group by default.
     collapsed: true,

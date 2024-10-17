@@ -54,7 +54,7 @@ Briefly:
 
 4. If you want to add a building block with a unit, activate the unit box ( d ) and use the search field to look for a fitting unit term, e.g. degree Celsius as unit for Parameter \[temperature\].
 
-![](@images/swate/swate-alpha-add-building-block02.png)
+![](@images/swate/swate-alpha-add-building-block.png)
 
 
 5. For more information on customizing your annotation table click [here](../building-blocks).
@@ -63,7 +63,7 @@ Briefly:
 
 Alternatively, you can also use one of DataPLANT’s [Swate templates](../templates). You can find them via the "add template" button, next to the "add building block" button.  
 
-![](@images/swate/swate-alpha-add-template.png)
+![](@images/swate/swate-add-template.png)
 
 ## Annotate your samples and data
 
