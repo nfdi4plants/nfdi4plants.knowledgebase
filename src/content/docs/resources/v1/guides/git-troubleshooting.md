@@ -5,17 +5,10 @@ authors:
   - dominik-brilhaus
 ---
 
-## About this guide
-
+:::note[About this guide]
 - This is mostly for data stewards.
 - This is not a git tutorial, but rather a small start for troubleshooting.
-
-<div style="padding-bottom: 20px">
-    <a href="./index.html">
-  <span class="badge-category">User</span><span class="badge-selected" id="badge-datasteward">Data Steward</span>  
-  <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Tutorial</span>
-    </a>
-</div>
+:::
 
 ## Background
 

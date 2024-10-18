@@ -5,20 +5,13 @@ authors:
   - dominik-brilhaus
 ---
 
-## About this guide
-
+:::note[About this guide]
 This guide presents recommendations on managing one ARC on different devices and locations
+:::
 
-<div style="padding-bottom: 20px">
-    <a href="./index.html">
-        <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
-        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
-    </a>
-</div>
-
-## Before we can start
-
-:ballot_box_with_check: You have a [DataPLANT](https://register.nfdi4plants.org) account
+:::tip[Before we can start]
+You have a [DataPLANT](https://register.nfdi4plants.org) account
+:::
 
 ## Where do I store my ARC?
 

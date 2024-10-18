@@ -3,19 +3,11 @@ title: Best Practices For Data Annotation
 lastUpdated: 2022-11-07
 authors:
   - martin-kuhl
-# todo:
 ---
 
-## About this guide
-
+:::note[About this guide]
 In this guide, we will take a closer look at some experimental scenarios that every scientist might face on a more or less regular basis. With these examples, we aim to provide you with the best practices for data annotation in isa.study.xlsx and isa.assay.xlsx files allowing you to generate machine-readable and thereby, interoperable and reproducible data. Do not hesitate to contact us if you think that we are missing some urgent examples or if you have any further questions.
-
-<div style="padding-bottom: 20px">
-    <a href="./index.html">
-    <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
-    </a>
-</div>
+:::
 
 ## Annotation of time series experiments
 

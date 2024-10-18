@@ -5,20 +5,13 @@ authors:
   - dominik-brilhaus
 ---
 
-## About this guide
+:::note[About this guide]
+In this guide we recommend routines to properly add data from external sources to your ARC.
+:::
 
-In this guide we recommend routines to properly add data from external sources to your ARC. 
-
-<div style="padding-bottom: 20px">
-    <a href="./index.html">
-        <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>    
-    </a>
-</div>
-
-## Before we can start
-
-:ballot_box_with_check: You are familiar with the [ARC](./../implementation/AnnotatedResearchContext.html) concept and [ISA file types](./isa_FileTypes.html)
+:::tip[Before we can start]
+You are familiar with the [ARC](./../implementation/AnnotatedResearchContext.html) concept and [ISA file types](./isa_FileTypes.html)
+:::
 
 Research projects rarely start out of the blue. Rather every project builds on previous findings and published or unpublished datasets.
 

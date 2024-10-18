@@ -5,23 +5,16 @@ authors:
   - dominik-brilhaus
 ---
 
-## About this guide
+:::note[About this guide]
+In this guide we elaborate recommendations on syncing your ARC via the [ARC Commander](./../implementation/ArcCommander.html)
+:::
 
-In this guide we elaborate recommendations on syncing your ARC via the [ARC Commander](./../implementation/ArcCommander.html) 
-
-<div style="padding-bottom: 20px">
-    <a href="./index.html">
-    <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>    
-    </a>
-</div>
-
-## Before we can start
-
-:ballot_box_with_check: You have created an ARC before using the [ARC Commander](./../implementation/ArcCommander.html)  
-:ballot_box_with_check: The latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) is installed on your computer  
-:ballot_box_with_check: You have a [DataPLANT](https://register.nfdi4plants.org) account  
-:ballot_box_with_check: Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via personal access token
+:::tip[Before we can start]
+- You have created an ARC before using the [ARC Commander](./../implementation/ArcCommander.html)  
+- The latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) is installed on your computer  
+- You have a [DataPLANT](https://register.nfdi4plants.org) account  
+- Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via personal access token
+:::
 
 ## You have full control
 

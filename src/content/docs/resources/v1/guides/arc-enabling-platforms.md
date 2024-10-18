@@ -5,31 +5,21 @@ authors:
   - dominik-brilhaus
 ---
 
-<!-- http://127.0.0.1:8080/docs/guides/ARC-enablingPlatforms.html -->
-
-## About this guide
-
+:::note[About this guide]
 In this guide we explore how the ARC can help streamline data flows and project management in enabling platforms.
+:::
 
-<div style="padding-bottom: 20px">
-    <a href="./index.html">
-        <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
-    </a>
-</div>
-
-## Before we can start
-
-<div id="before-start">
-
+:::tip[Before we can start]
 It helps to be familiar with
+- the concept of the [ARC](./../implementation/AnnotatedResearchContext.html)
+- the different [ISA file types](./isa_FileTypes.html)
+- the [DataHUB](./../implementation/DataHub.html)
+:::
 
-- :ballot_box_with_check: the concept of the [ARC](./../implementation/AnnotatedResearchContext.html)
-- :ballot_box_with_check: the different [ISA file types](./isa_FileTypes.html)
-- :ballot_box_with_check: the [DataHUB](./../implementation/DataHub.html)
-- :bulb: Note that this guide can only stay at a very abstract level. Feel free to contact us to work out a suitable solution for your platform together.
+:::note
+This guide can only stay at a very abstract level. Feel free to contact us to work out a suitable solution for your platform together.
+:::
 
-</div>
 
 ## Enabling Platforms
 

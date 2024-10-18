@@ -20,14 +20,10 @@ authors:
   - [Phrase Emphasis](#phrase-emphasis)
   - [Headers](#headers)
   - [Lists](#lists)
-    - [Ordered, without paragraphs:](#ordered-without-paragraphs)
-    - [Unordered, with paragraphs:](#unordered-with-paragraphs)
   - [Blockquotes](#blockquotes)
   - [Manual Line Breaks](#manual-line-breaks)
   - [Links](#links)
   - [Images](#images)
-
-
 
 ## What is Markdown?
 

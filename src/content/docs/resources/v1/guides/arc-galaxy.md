@@ -5,21 +5,14 @@ authors:
   - julian-weidhase
 ---
 
-## About this guide
-
+:::note[About this guide]
 In this guide we introduce how to access ARCs from Galaxy. To access the data of an ARC, you must first provide a DataHUB access token in Galaxy, which is used to authenticate Galaxy to DataHUB. To create a new token and add it to [Galaxy](https://usegalaxy.eu/), you can proceed as described below.
+:::
 
-<div style="padding-bottom: 20px">
-    <a href="./index.html">
-        <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-    </a>
-</div>
-
-## Before we can start
-
-:ballot_box_with_check: You have created an ARC before using the [ARC Commander](./../implementation/ArcCommander.html) or [ARCitect](./../ARCitect-Manual/index.html)  
-:ballot_box_with_check: You have a [DataPLANT](https://register.nfdi4plants.org) account  
+:::tip[Before we can start]
+- You have created an ARC before using the [ARC Commander](./../implementation/ArcCommander.html) or [ARCitect](./../ARCitect-Manual/index.html)  
+- You have a [DataPLANT](https://register.nfdi4plants.org) account
+:::
 
 ## Create an access token in DataHUB
 
@@ -38,7 +31,6 @@ In this guide we introduce how to access ARCs from Galaxy. To access the data of
 site, you will **not** be able to do so again.
 
 ## Add the token to Galaxy
-
 
 ![image](./../img/ARCfs_KB_03_blurred_marked.png)
 ![image](./../img/ARCfs_KB_06_blurred_marked.png)
