@@ -5,6 +5,8 @@ authors:
   - dominik-brilhaus
 ---
 
+import { Steps } from '@astrojs/starlight/components';
+
 :::note[About this guide]
 In this guide we show you how to keep files from syncing to the DataHUB. This can help to keep large intermediate, sensitive or unpublished data from uploading to the DataHUB.
 :::
@@ -38,6 +40,8 @@ If a file in your ARC was already synced to the DataHUB, adding it to `.gitignor
 
 ## Adding files to .gitignore
 
+<Steps>
+
 1. Open your ARC in the ARCitect or in your File Explorer (Windows) or Finder (macOS)
 2. Add a new file `my-personal-notes.txt` or folder `intermediate-results` to the ARC
 3. Open `.gitignore` via ARCitect or a text editor.
@@ -45,6 +49,8 @@ If a file in your ARC was already synced to the DataHUB, adding it to `.gitignor
    2. Save and close the file.
 4. Sync the ARC via ARC commander or ARCitect.
 5. Check your ARC in the DataHUB, to see that the file `my-personal-notes.txt` or folder `intermediate-results/` does not exist there.
+
+</Steps>
 
 ## Allowing files to sync
 
