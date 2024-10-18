@@ -7,8 +7,6 @@ import AuthorCard from '@components/AuthorCard.astro';
 
 // Resolve an array of references
 const authors: CollectionEntry<'authors'>[] = Astro.props.entry.data.authors ? await getEntries(Astro.props.entry.data.authors) : [];
-
-console.log(authors)
 ---
 
 <footer class="flex gap-4 flex-col">
