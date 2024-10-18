@@ -1,11 +1,11 @@
 ---
-title: Annotated Research Context
-lastUpdated: 2022-05-25
+title: ARC
+lastUpdated: 2023-05-25
 authors:
   - martin-kuhl
 ---
 
-# Annotated Research Context
+# Annotated Research Context (ARC)
 
 The importance of [Research Data Management (RDM)][kb-ResearchDataManagement] systems steadily increases, as scientists and institutions generate big, heterogeneous data nowadays. According to the [FAIR principles][kb-FairDataPrinciples] such data should be available in open, public archives, stored in contextualized, non-proprietary formats. With the **Annotated Research Context** (ARC), DataPLANT provides an RDM platform to answer these requirements and to support machine-readability, as the system is entirely based on established standards. ARCs will be tagged with a persistent and unique identifier and contain, besides raw data, the entire information (metadata, external files, and code for computations) needed to reproduce the mapped studies. These can range from a single publication up to a multi-lab, long-term project. Thus, ARCs are FAIR Digital Objects (FDOs) and drive FAIRification of research data for fundamental plant research.
 
@@ -22,14 +22,17 @@ The ARC concept relies on a structure that partitions studies, assays, workflows
 
 This results in standardized RDM procedures being process-oriented, meaning that each tool realizes or supports the researcher in a distinct task within the RDM cycle. As a consequence, this enables the desired mixed mode of application, in which both human and machine can operate processes simultaneously or asynchronously while avoiding technological barriers.
 
-![ARC](@images/ARC_BuildsOnStandards1.png)
-*Figure 1: Basic ARC folder structure.*
-
 ## Technical implementations
 
 ### Framework
 
-Every ARC follows a distinct scheme with a specific directory and file structure, including the sub-directories "studies", "assays", "workflows", and "runs".
+Every ARC follows a distinct scheme with a specific directory and file structure, including the sub-directories `studies`, `assays`, `workflows`, and `runs`.
+
+import BaseARC from '@components/mdx/BaseARC.mdx';
+
+Basic ARC structure:
+
+<BaseARC /> 
 
 Studies are collections of material and resources used within the investigation. You need to place each study in a unique subdirectory. Material or experimental samples, as well as external data files, can be stored as virtual sample files (containing unique identifiers) in the "resources" directory. To describe the sample or material creation process, protocols can be stored in the designated sub-directory.
 
@@ -136,3 +139,10 @@ Name | Type | Tasks on metadata
 [kb-ArcSpecs]: ./../implementation/ARC-specification.html "ARC specification"
 [kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
+
+The official ARC specification can be found at:
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+<LinkButton href='https://github.com/nfdi4plants/ARC-specification' icon="external" variant="primary">GitHub</LinkButton> 
+<LinkButton href='https://zenodo.org/doi/10.5281/zenodo.8302661' icon="external" variant="primary">Zenodo</LinkButton>

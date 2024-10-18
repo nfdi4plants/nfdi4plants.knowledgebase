@@ -13,6 +13,10 @@ const SidebarConfig = [
     autogenerate: { directory: 'start-here' },
   },
   {
+    label: 'Core Concepts',
+    autogenerate: { directory: 'core-concepts' },
+  },
+  {
     label: 'Guides',
     autogenerate: { directory: 'guides' },
   },
@@ -65,6 +69,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'DataPLANT',
+      favicon: "favicon.png",
       customCss: [
         // Relative path to your custom CSS file
         './src/styles/tailwind.css',
