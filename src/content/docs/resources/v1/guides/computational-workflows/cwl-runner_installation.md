@@ -1,6 +1,8 @@
 ---
 title: "CWL Runner Installation"
 lastUpdated: 2024-01-18
+authors:
+  - caro-ott
 ---
 
 # CWL runner installation

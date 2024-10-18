@@ -1,6 +1,8 @@
 ---
 title: "CWL Introduction"
 lastUpdated: 2024-01-18
+authors:
+  - caro-ott
 ---
 
 # What is CWL?
