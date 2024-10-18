@@ -1,5 +1,5 @@
 ---
-title: Introduction to Markdown
+title: Markdown
 lastUpdated: 2022-07-06
 authors:
   - dominik-brilhaus
@@ -329,7 +329,7 @@ Violets are blue.
 ### Images
 
 ```bash
-![alt text](./images/ARC_BuildsOnStandards1.png "This is an ARC")
+![alt text](../../../../../assets/images/core-concepts/arc-builds-on-standards.png "This is an ARC")
 ```
 
-![alt text](./images/ARC_BuildsOnStandards1.png "This is an ARC")
+![alt text](../../../../../assets/images/core-concepts/arc-builds-on-standards.png "This is an ARC")

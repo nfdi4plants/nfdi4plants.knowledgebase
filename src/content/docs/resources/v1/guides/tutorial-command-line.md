@@ -1,7 +1,7 @@
 ---
+title: Command line
 authors:
   - dominik-brilhaus
-title: The command line
 lastUpdated: 2023-03-16
 ---
 
