@@ -17,7 +17,7 @@ You have a [DataPLANT](https://register.nfdi4plants.org) account
 
 As with projects and data shared via cloud services or other platforms, ARCs do not exist in just one location. Depending on your preferences and current use-case you can choose one of various starting points: you can create your ARC in different locations (e.g. personal computer, shared server or directly in the DataHUB) and to do so you can use different tools (e.g. ARC Commander, ARCitect, by hand).
 
-![](./images/ARC-storageLocations-timeline.drawio.png)
+![](@images/guides/ARC-storageLocations-timeline.drawio.png)
 
 A typical scenario could look like this: You create your ARC on you personal computer, add structure with studies and assays as you see fit and upload the ARC to the DataHUB to have a save copy and be able to share it with collaboration partners. You acquire some large dataset, e.g. from an OMICS assay, which you do not want to store or analyze on your computer. Instead you keep this on a larger workstation in the lab or a server or high performance computing (HPC) cluster, where you would also run data analysis workflows. With the DataHUB as the meeting point, you can keep your ARC in sync across these locations. Simply download the ARC from the DataHUB to your server, add the dataset from there and synchronize it back to the DataHUB. You could consider your ARC stored in the DataHUB as the "ground truth" &ndash; even if you delete the ARCs on your local computer or the server, it will still be available in the DataHUB including the change history from those source locations.
 
@@ -36,4 +36,4 @@ TODO
 notes on working with branches
 -->
 
-![](./images/ARC-storageLocations-withNotes.drawio.png)
+![](@images/guides/ARC-storageLocations-withNotes.drawio.png)

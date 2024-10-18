@@ -30,9 +30,9 @@ Central *enabling platforms* can range from small single-lab services to large i
 *For simplicity, in this guide we call researchers, clients and customers approaching the platform "collaborators".*
 
 collaborator
-  ![](./images/icons-characters-PhDStudent.drawio.png)
+  ![](@images/guides/icons-characters-PhDStudent.drawio.png)
 platform team
-  ![](./images/icons-characters-serviceProvider.drawio.png)
+  ![](@images/guides/icons-characters-serviceProvider.drawio.png)
 
 Central platforms interact with many versatile collaborators. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings and emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted.
 
@@ -52,7 +52,7 @@ Here's a few tips to support your project management:
 During project collaboration a lot of information including metadata is exchanged.
 Here's an idea what your data flow could look like with the ARC:
 
-![](./images/enablingPlatform-FileShare.drawio.png)
+![](@images/guides/enablingPlatform-FileShare.drawio.png)
 
 1. Data exchange between collaborator and platform occurs through the ARC shared via the DataHUB. Depending on the phase of the project this involves different data and information.  
    (1a) The collaborator primarily describes the investigation's goal and study design, annotates the submitted samples with metadata and adds associated protocols. Once available the collaborator receives assayed data and relevant information.  
@@ -150,7 +150,7 @@ Here we try to address a few questions from discussions with platform heads.
 You decide whether you prepare the ARC for you collaborators (scenario A) or meet them half the way (scenario B).
 Eventually this depends on different factors, e.g. the type of collaboration you agreed upon or whether or not the collaborators are used to work with the ARC and associated tools.
 
-![](./images/enablingPlatform-Timeline.drawio.png)
+![](@images/guides/enablingPlatform-Timeline.drawio.png)
 
 Following the exemplary scenario A, you could setup the ARC for your collaboration (1), add the relevant studies and assays (2) as well as templates (3) as discussed with them and ask them to complement the required metadata (4) and protocols (5) before you can run the assays and add the dataset (6).
 
