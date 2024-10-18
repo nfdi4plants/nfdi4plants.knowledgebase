@@ -23,6 +23,10 @@ If you use **[ARCitect](./../ARCitect-Manual/index.html)** to manage your ARCs, 
 
 ARCs and the DataHUB come with a mechanism to sync and store large files called *Large File Storage (LFS)*. LFS is an efficient way to store your large data files. These files are called "LFS objects". Rather than checking every file during every `arc sync` (ARC Commander) or DataHUB Sync (ARCitect), the tools first check *whether there was a change at all*. And only if this is the case, it scans *what* was changed. This way it saves time and computing power compared to always scanning all large files for possible changes.
 
+
+<!-- TODO: Explain concept here and move instructions to ARCitect and ARC Commander manual -->
+
+
 ### ARCitect
 
 The ARCitect offers to activate or deactivate the use of LFS: 
