@@ -29,10 +29,10 @@ Central *enabling platforms* can range from small single-lab services to large i
 
 *For simplicity, in this guide we call researchers, clients and customers approaching the platform "collaborators".*
 
-<div style="height:40px; display: flex; align-items: center; justify-content: left;">
-  <img src="./images/icons-characters-PhDStudent.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">collaborator
-  <img src="./images/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">platform team
-</div>
+collaborator
+  ![](./images/icons-characters-PhDStudent.drawio.png)
+platform team
+  ![](./images/icons-characters-serviceProvider.drawio.png)
 
 Central platforms interact with many versatile collaborators. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings and emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted.
 
@@ -52,10 +52,7 @@ Here's a few tips to support your project management:
 During project collaboration a lot of information including metadata is exchanged.
 Here's an idea what your data flow could look like with the ARC:
 
-<div>
-  <img src="./images/enablingPlatform-FileShare.drawio.png" style="width:60%;display: block;margin-left: auto;margin-right: auto;">
-  <figcaption>  </figcaption>
-</div>
+![](./images/enablingPlatform-FileShare.drawio.png)
 
 1. Data exchange between collaborator and platform occurs through the ARC shared via the DataHUB. Depending on the phase of the project this involves different data and information.  
    (1a) The collaborator primarily describes the investigation's goal and study design, annotates the submitted samples with metadata and adds associated protocols. Once available the collaborator receives assayed data and relevant information.  
