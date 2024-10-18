@@ -1,5 +1,5 @@
 ---
-title: How to share your ARC via the DataHUB
+title: Options to share your ARC
 lastUpdated: 2024-03-06
 authors:
   - dominik-brilhaus
@@ -48,8 +48,7 @@ You can check the namespace by looking at the URL. For example:
 Type | URL | Namespace
 --- | --- | ---
 A **personal** ARC | https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum | `brilator` 
-An **group**-shared ARC | https://git.nfdi4plants.org/hhu-plant-biochemistry/Samuilov-2018-BOU-PSP | `hhu-plant-biochemistry`
-
+A **group**-shared ARC | https://git.nfdi4plants.org/hhu-plant-biochemistry/Samuilov-2018-BOU-PSP | `hhu-plant-biochemistry`
 
 :::tip
 "Personal" is not the same as "private", see [visibility](#visibility).
@@ -57,7 +56,7 @@ An **group**-shared ARC | https://git.nfdi4plants.org/hhu-plant-biochemistry/Sam
 
 ### Visibility
 
-The visibility of ARCs and groups can be managed individually for each ARC (see [ARC settings](../datahub-arc-settings)) or group see ([Creating a Group](../datahub-group-create)).
+The visibility of ARCs and groups can be managed individually for each ARC (see [ARC settings](../datahub-arc-settings)) or group see ([Creating a Group](../datahub-groups)).
 
 - **Private** &ndash; Access must be granted explicitly to each user or a group.
 - **Internal** &ndash; Can be accessed by any logged in user.
