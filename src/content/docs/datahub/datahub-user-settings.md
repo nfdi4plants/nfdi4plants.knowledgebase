@@ -14,10 +14,9 @@ You can adapt the user settings
 
 In the avatar menu click on "Edit profile" or "Preferences" (3) to open the User Settings in a sidebar panel on the left.
   
-
 ![](@images/datahub/datahub-avatar-menu.drawio.png)
 
-  
+
 ![](@images/datahub/datahub-preferences.drawio.png)
   
 In the user settings you can
