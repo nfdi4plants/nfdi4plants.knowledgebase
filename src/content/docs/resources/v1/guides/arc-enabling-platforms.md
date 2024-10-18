@@ -27,12 +27,9 @@ Central *enabling platforms* can range from small single-lab services to large i
 
 ## Project communication and data flow
 
-*For simplicity, in this guide we call researchers, clients and customers approaching the platform "collaborators".*
-
-collaborator
-  ![](@images/guides/icons-characters-PhDStudent.drawio.png)
-platform team
-  ![](@images/guides/icons-characters-serviceProvider.drawio.png)
+:::note
+For simplicity, in this guide we call researchers, clients and customers approaching the platform "collaborators".
+:::
 
 Central platforms interact with many versatile collaborators. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings and emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted.
 
