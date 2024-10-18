@@ -18,7 +18,7 @@ This guide presents recommendations on managing one ARC on different devices and
 
 ## Before we can start
 
-:ballot_box_with_check: You have a [DataPLANT](https://register.nfdi4plants.org) account
+☑️ You have a [DataPLANT](https://register.nfdi4plants.org) account
 
 ## Where do I store my ARC?
 

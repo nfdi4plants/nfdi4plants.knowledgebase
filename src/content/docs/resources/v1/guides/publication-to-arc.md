@@ -28,9 +28,9 @@ This is not the typical entry into an ARC, but rather retrospective. It might ho
 
 This guide assumes you know
 
-- :ballot_box_with_check: the concept of the [ARC](./../implementation/AnnotatedResearchContext.html)
-- :ballot_box_with_check: the different [ISA file types](./isa_FileTypes.html)
-- :ballot_box_with_check: which tools to use (e.g. [ARC Commander](./../ArcCommanderManual/index.html), [ARCitect](./../ARCitect-Manual/index.html), [DataHUB](./../DataHUB-Manual/index.html)) and how.
+- ☑️ the concept of the [ARC](./../implementation/AnnotatedResearchContext.html)
+- ☑️ the different [ISA file types](./isa_FileTypes.html)
+- ☑️ which tools to use (e.g. [ARC Commander](./../ArcCommanderManual/index.html), [ARCitect](./../ARCitect-Manual/index.html), [DataHUB](./../DataHUB-Manual/index.html)) and how.
 
 
 
@@ -68,7 +68,7 @@ This guide assumes you know
   2. supplemental files (as offered on publication page)
   3. add a `_publication/README.md` with a table of links (file | url)
 
-:bulb: the underscore "_" could help to distinguish additional folders (["additional payload"](https://github.com/nfdi4plants/ARC-specification/blob/main/ARC%20specification.md#additional-payload)) from default ARC folders
+💡 the underscore "_" could help to distinguish additional folders (["additional payload"](https://github.com/nfdi4plants/ARC-specification/blob/main/ARC%20specification.md#additional-payload)) from default ARC folders
 
 ## Legal
 
@@ -81,9 +81,9 @@ This guide assumes you know
 
 <img src="./../img/datahub-add-license.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
 
-:bulb: We recommend to focus on open access / CC-BY publications and datasets, unless you explicitly know, whether and how to re-use the data published elsewhere.
+💡 We recommend to focus on open access / CC-BY publications and datasets, unless you explicitly know, whether and how to re-use the data published elsewhere.
 
-:warning: Don't forget to sync your local ARC (via ARC Commander or ARCitect) after creating a `LICENSE` file in DataHUB.
+⚠️ Don't forget to sync your local ARC (via ARC Commander or ARCitect) after creating a `LICENSE` file in DataHUB.
 
 ## ISA - investigation / isa.investigation.xlsx
 
@@ -97,7 +97,7 @@ This guide assumes you know
 - Add Publication
   1. DOI, Title, Authors, Status = Published
 
-:bulb: Can be done via ARCitect, ARC Commander or Excel (manually editing the isa.investigation.xlsx file)
+💡 Can be done via ARCitect, ARC Commander or Excel (manually editing the isa.investigation.xlsx file)
 
 ## ISA - studies and assays
 
@@ -123,7 +123,7 @@ The publication may contain a section "data availability" or "data accession" or
 
 - Try to find and transfer info (sample accessions, IDs, metadata, links, etc.) into the ARC. This would typically be an assay.
 
-:bulb: There is no clear rule, whether data already published in a public repository should be imported (i.e. copied) into the ARC. Discussion ongoing.
+💡 There is no clear rule, whether data already published in a public repository should be imported (i.e. copied) into the ARC. Discussion ongoing.
   
 - For showcasing, it makes sense to build a "complete" ARC.
 - To minimize data duplication and save storage space, this should be avoided.

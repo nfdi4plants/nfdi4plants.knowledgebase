@@ -37,9 +37,9 @@ In this guide we focus on how to use the [ARCitect](./../ARCitect-Manual/index.h
 
 Please make sure
 
-:ballot_box_with_check: The latest version of the [ARCitect](./../ARCitect-Manual/index.html) is installed on your computer  
-:ballot_box_with_check: You have a [DataPLANT](https://register.nfdi4plants.org) account  
-:bulb: Consider reading about the [ARC](./../implementation/AnnotatedResearchContext.html)  
+☑️ The latest version of the [ARCitect](./../ARCitect-Manual/index.html) is installed on your computer  
+☑️ You have a [DataPLANT](https://register.nfdi4plants.org) account  
+💡 Consider reading about the [ARC](./../implementation/AnnotatedResearchContext.html)  
 
 ---
 
@@ -53,7 +53,7 @@ Before creating your own ARC, invest some time to think about the following ques
   - What is my (raw) **dataset**?
   - What **protocols** did I use?
 
-:bulb: It might help to have this info ready in a text file. In particular, try to think about useful names (identifiers) for investigation, study and assay.
+💡 It might help to have this info ready in a text file. In particular, try to think about useful names (identifiers) for investigation, study and assay.
 
 ---
 
@@ -206,7 +206,7 @@ add studies and assays according to your needs
 
 Try to place your resources, datasets and protocols for each study and assay in the respective folders.
 
-> :bulb: This part will likely require some iteration. 🗣️ Talk to us.
+> 💡 This part will likely require some iteration. 🗣️ Talk to us.
 >
 > - You might need to add new studies and assays or revise your overall structure during the process
 > - Sometimes you might not immediately find a suitable position for your data

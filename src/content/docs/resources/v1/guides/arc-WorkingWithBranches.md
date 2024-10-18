@@ -14,7 +14,7 @@ Branches in Git allow users to work on and develop new features of their project
 
 In the example below, you can see how branches have been used to work on developing an ARC in parallel. The ARC is created within the "main" branch and some metadata and microscopy images are uploaded. A new branch called "plant material" is generated to describe the process of growing the plants, later used in the experimental assays, in a study. Moreover, another branch named "RNA-seq" deals with the description of the actual sequencing assay and the data generated from it. After completion, branches are merged into "main".
 
-:warning: Don't forget to sync your branch with the "parent" branch to avoid merging conflicts.
+⚠️ Don't forget to sync your branch with the "parent" branch to avoid merging conflicts.
 
 <img src="./../img/git-branches.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
 

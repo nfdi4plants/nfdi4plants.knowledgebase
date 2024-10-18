@@ -1,5 +1,5 @@
 ---
-title: Swate QuickStart
+title: Swate QuickStart Videos
 lastUpdated: 2024-04-18
 authors:
   - martin-kuhl

@@ -31,7 +31,7 @@ Each annotation should start with an *Input* and end with an *Output* column. To
 
 ![](@images/swate/building-block-categories.png)
 
-> :bulb: Only one *Input*, one *Output* and one of each *Protocol* columns can be added per table.
+> 💡 Only one *Input*, one *Output* and one of each *Protocol* columns can be added per table.
 
 Now, let's add a descriptive building block.
 1. Select *Component* from the drop-down menu.
@@ -39,7 +39,7 @@ Now, let's add a descriptive building block.
 3. Select the term with the id `MS:1000031` and, 
 4. Click <kbd>Add column</kbd>.
 
-> :bulb: This adds three columns to your table, one visible and **two** hidden. The hidden columns contain the ontology references. You can view the hidden columns by clicking the two arrows (>>) in the first column.
+> 💡 This adds three columns to your table, one visible and **two** hidden. The hidden columns contain the ontology references. You can view the hidden columns by clicking the two arrows (>>) in the first column.
 
 
 ## Add a building block with a unit
@@ -49,7 +49,7 @@ Now, let's add a descriptive building block.
 3. Select `UO:0000101`.
 4. Click <kbd>Add column</kbd>.
 
-> :bulb: This adds four columns to your table, one visible and **three** hidden. 
+> 💡 This adds four columns to your table, one visible and **three** hidden. 
 When filling any cell below `Parameter [sample volume]` you can now see the numbers being complemented with the chosen unit, e.g. `10.00 microliter`.
 
 ## Change the order of your columns or delete columns

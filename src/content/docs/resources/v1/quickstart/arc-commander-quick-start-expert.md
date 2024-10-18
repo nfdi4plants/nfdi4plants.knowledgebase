@@ -9,20 +9,13 @@ authors:
 
 In this guide we focus on how to use the [ARC Commander](./../implementation/ArcCommander.html) to create your ARC and structure, store and share your data.
 
-<div style="padding-bottom: 20px">
-    <a href="./index.html">
-        <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-    </a>
-</div>
-
 ## Before we can start
 
-:ballot_box_with_check: You know how to use a <a href="./tutorial_TheCommandLine.html" target="_blank">command line</a>  
-:ballot_box_with_check: You have created an ARC before  
-:ballot_box_with_check: The latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) is installed on your computer  
-:ballot_box_with_check: You have a [DataPLANT](https://register.nfdi4plants.org) account  
-:ballot_box_with_check: Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via personal access token
+☑️ You know how to use a <a href="./tutorial_TheCommandLine.html" target="_blank">command line</a>  
+☑️ You have created an ARC before  
+☑️ The latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) is installed on your computer  
+☑️ You have a [DataPLANT](https://register.nfdi4plants.org) account  
+☑️ Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via personal access token
 
 :rocket: Voila! You are ready to follow these few steps to create a minimal ARC sharable via DataPLANT's DataHUB.
 
