@@ -3,39 +3,40 @@ title: DataPLANT Knowledgebase
 description: Welcome to the DataPLANT Knowledgebase! This is a collection of resources to help you get started with the DataPLANT project.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Welcome to the DataPLANT Knowledgebase!
   image:
-    file: "@images/houston.webp"
+    file: "@images/banner.svg"
   actions:
-    - text: Example Guide
-      link: /fundamentals
+    - text: Getting Started
+      link: /start-here
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
-sidebar:
-  # Add a badge to the link
-  badge:
-    text: New
-    variant: tip
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkButton  } from '@astrojs/starlight/components';
 
 ## Next steps
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="Getting Started" icon="open-book">
+		Find a opinionated guide to getting started with DataPLANT tools.
+    <LinkButton
+      href="/start-here"
+      variant="minimal"
+      icon="right-caret"
+      iconPlacement="start" 
+    >
+      Getting Started
+    </LinkButton>
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Ask for help" icon="comment-alt">
+		Get in contact with us! We are happy to help you with your questions.
+    <LinkButton
+      href="https://nfdi4plants.github.io/support/"
+      variant="minimal"
+      icon="external"
+      iconPlacement="start" 
+    >
+      Support
+    </LinkButton>
 	</Card>
 </CardGrid>
