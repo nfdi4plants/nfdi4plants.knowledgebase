@@ -12,7 +12,7 @@ Descriptions in CWL are portable across a variety of platforms that support the 
 standards. It enables scaling of complex workflows from single user workstations to hpc environments.
 
 The goals of CWL align with the FAIR principles:
-![CWL Goals](./../images/cwl_goals.png)
+![CWL Goals](../images/cwl/cwl-goals.png)
 
 # Processing objects in CWL
 
@@ -25,7 +25,7 @@ This processing object is a wrapper for command like arguments, such as `ls`, `e
 command line tools. The executed command is defined in the `baseCommand` attribute. It's basic structure 
 consists of a base command, inputs and outputs.
 
-![CWL Command-Line Tool](./../images/cwl_command_line_tool.png)
+![CWL Command-Line Tool](../images/cwl/cwl-command-line-tool.png)
 
 ## Expression Tool
 
@@ -33,14 +33,14 @@ This process executes a pure JavaScript expression. It is used for complex expre
 that operate on the input data and produce an output. It's basic structure consists of an JavaScript expression, 
 inputs and outputs.
 
-![CWL Expression Tool](./../images/cwl_expression_tool.png)
+![CWL Expression Tool](../images/cwl/cwl-expression-tool.png)
 
 ## Workflows
 
 A workflow is a processing object that can execute command-line tools, expressions tools, or workflows as steps. 
 The step processing units can be present in any configuration. It's basic structure consists of steps, inputs and outputs.
 
-![CWL Workflow](./../images/cwl_workflow.png)
+![CWL Workflow](../images/cwl/cwl-workflow.png)
 
 ## Operation
 
