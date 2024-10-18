@@ -18,10 +18,6 @@ Annotation of data and workflows within the ARC builds on the ISA model. In this
     </a>
 </div>
 
-
-
-
-
 <style>
 
 img {
