@@ -1,30 +1,35 @@
 import { z, defineCollection, reference } from 'astro:content';
 import { docsSchema } from '@astrojs/starlight/schema';
 
-const docs = defineCollection({
+const authors = defineCollection({
+  type: 'data',
+  schema: ({ image }) => z.object({
+    name: z.string(),
+    image: image().optional(),
+    socials: z.array(
+      z.object({
+        icon: z.string(),
+        href: z.string().url(),
+      })
+    ).optional(),
+    styling: z.object({
+      text: z.string().max(3),
+      color: z.string(),
+      background: z.string(),
+    }).partial().optional(),
+    affiliation: z.string().max(20).optional(),
+  }),
+});
+
+const extendedDocsSchema = defineCollection({ 
   schema: docsSchema({
     extend: z.object({
       authors: z.array(reference('authors')).optional(),
     }),
-  }),
-})
-
-const authors = defineCollection({
-  type: 'data',
-  schema: z.object({
-    name: z.string(),
-    image: z.string().optional(),
-    socials: z.object({
-      twitter: z.string().optional(),
-      github: z.string().optional(),
-      linkedin: z.string().optional(),
-      website: z.string().optional(),
-      orcid: z.string().optional()
-    }).optional(),
-  }),
+  })
 });
 
 export const collections = {
-	docs: defineCollection({ schema: docsSchema() }),
+	docs: extendedDocsSchema,
   authors: authors,
 };
