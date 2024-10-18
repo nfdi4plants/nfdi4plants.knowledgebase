@@ -100,7 +100,9 @@ At some point you and your collaborator want to [publish the data](./../fundamen
 
 There are two major options: You can publish the current version of the ARC and receive a [DOI](./../DataHUB-Manual/datahub-data-publications.html). Some scientific journals require data to be published in  [domain-specific repositories](./../fundamentals/PublicDataRepositories.html), specialized for a certain type of assay. For this purpose converters help you export the relevant dataset and metadata into a repository-accepted format.
 
-:bulb: We are working on converters to read and reshape the relevant data and metadata of your ARC into a format accepted by domain-specific repositories. You can support this by telling us relevant repositories for your type of data or help creating [templates](./../SwateManual/Docs05-Templates.html).
+:::tip
+We are working on converters to read and reshape the relevant data and metadata of your ARC into a format accepted by domain-specific repositories. You can support this by telling us relevant repositories for your type of data or help creating [templates](./../SwateManual/Docs05-Templates.html).
+:::
 
 ## Preparing your platform to benefit from the ARC
 
@@ -154,7 +156,9 @@ Following the exemplary scenario A, you could setup the ARC for your collaborati
 
 Alternatively, collaborators already working with ARCs could invite you to "their" ARC (exemplary scenario B). They can independently set up the ARC and fill metadata (4) based on your prepared templates (3).
 
-:bulb: In scenario B the collaborator might invite you to a very large ARC with data not really relevant for your platform-specific collaboration. In this case you might want to [exclude irrelevant data or avoid downloading large data](./../guides/arc_gitignore.html) when syncing the ARC.
+:::tip
+In scenario B the collaborator might invite you to a very large ARC with data not really relevant for your platform-specific collaboration. In this case you might want to [exclude irrelevant data or avoid downloading large data](./../guides/arc_gitignore.html) when syncing the ARC.
+:::
 
 **Can I retain my established naming convention for project management and data storage?**
 
@@ -164,7 +168,9 @@ You can simply name the ARCs the same way you are used to name your project fold
 
 This is also true for scenario B exemplified above. You can simply [fork](./../DataHUB-Manual/datahub-fork.html) the collaborator's ARC and rename it according to your system.
 
-:bulb: You might want to consider requiring your collaborators to name the assays (folder name or assay identifier) according to your project management system.
+:::tip
+You might want to consider requiring your collaborators to name the assays (folder name or assay identifier) according to your project management system.
+:::
 
 **How can I share ARCs with non-ARC collaborators?**
 

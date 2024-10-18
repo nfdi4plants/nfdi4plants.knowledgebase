@@ -29,7 +29,9 @@ In the following scenario we focus on annotating the origin and relationship bet
 
 <img src="./images/ISA_AnnotationPattern_Replicates.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
 
-:bulb: We recommend to rename the sheets according to the subprocess they are describing.
+:::tip
+We recommend to rename the sheets according to the subprocess they describe.
+:::
 
 ## Connecting inputs and outputs
 

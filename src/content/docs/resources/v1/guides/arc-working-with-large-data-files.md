@@ -72,7 +72,9 @@ The threshold of 150 MB can easily be adjusted using the ARC Commander. For inst
 arc config set -g -n "general.gitlfsbytethreshold" -v "5000000"
 ```
 
-:bulb: The LFS system is also the reason why [git LFS](https://git-lfs.github.com/) needs to be installed prior to using the ARC Commander.
+:::tip
+The LFS system is also the reason why [git LFS](https://git-lfs.github.com/) needs to be installed prior to using the ARC Commander.
+:::
 
 #### Track files via LFS
 
@@ -92,7 +94,9 @@ git add .gitattributes
 <img src="./images/ARCitect-lfs-flagged.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
 
 
-:warning: Please avoid uploading large files without [git LFS](https://git-lfs.github.com/) (i.e. accidentally with pure git, when git-lfs is not available).
+:::caution
+Please avoid uploading large files without [git LFS](https://git-lfs.github.com/) (i.e. accidentally with pure git, when git-lfs is not available).
+:::
 
 
 #### Downloading an ARC without large data files

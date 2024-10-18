@@ -26,9 +26,13 @@ In this guide we introduce how to access ARCs from Galaxy. To access the data of
 5. Set a expiration date.
 6. Select the authorization scope. 
 
-:bulb: Only the scopes "api" (for write access) and "read_api" (for read access) are relevant for ARCfs.  
-**Important:** After you crated the token, you can copy and view it. After you leave the
-site, you will **not** be able to do so again.
+:::tip
+Only the scopes "api" (for write access) and "read_api" (for read access) are relevant for ARCfs.
+:::
+
+:::caution
+After you crated the token, you can copy and view it. After you leave the site, you will **not** be able to do so again.
+:::
 
 ## Add the token to Galaxy
 
@@ -43,7 +47,9 @@ site, you will **not** be able to do so again.
 4. In the user preference settings, select "Manage Information".
 5. Copy your token into the "API read access token" field. This filed is located at the bottom of the "User preferences" menu. Click "Save" to adopt your changes.
 
-:bulb: Despite the name "API **read** access token", tokens with write access rights (like those with the scope "api") will also work or, respectively, are required.
+:::tip
+Despite the name "API **read** access token", tokens with write access rights (like those with the scope "api") will also work or, respectively, are required.
+:::
 
 ## Data import
 
