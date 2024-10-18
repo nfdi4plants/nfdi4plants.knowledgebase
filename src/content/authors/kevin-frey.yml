@@ -1,4 +1,10 @@
 name: Kevin Frey
+image: "@images/authors/kevin-frey.jpg"
 socials:
-  github: https://github.com/Freymaurer
-  orcid: https://orcid.org/0000-0002-8510-6810
+  - icon: simple-icons:github
+    href: https://github.com/Freymaurer
+  - icon: simple-icons:orcid
+    href: https://orcid.org/0000-0002-8510-6810
+affiliation: DataPLANT
+styling:
+  text: KFR

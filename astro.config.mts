@@ -6,11 +6,16 @@ import { rehypeAutolink } from './plugins/rehype-autolink';
 import tailwind from '@astrojs/tailwind';
 import starlightLinksValidator from 'starlight-links-validator'
 import starlightImageZoom from 'starlight-image-zoom'
+import icon from "astro-icon";
 
 const SidebarConfig = [
   {
     label: 'Start Here',
     autogenerate: { directory: 'start-here' },
+  },
+  {
+    label: 'Core Concepts',
+    autogenerate: { directory: 'core-concepts' },
   },
   {
     label: 'Guides',
@@ -63,8 +68,10 @@ const SidebarConfig = [
 // https://astro.build/config
 export default defineConfig({
   integrations: [
+    icon(),
     starlight({
       title: 'DataPLANT',
+      favicon: "favicon.png",
       customCss: [
         // Relative path to your custom CSS file
         './src/styles/tailwind.css',
@@ -72,6 +79,7 @@ export default defineConfig({
       ],
       components: {
         MarkdownContent: './src/components/Starlight/MarkdownContent.astro',
+        Footer: '@components/starlight/Footer.astro',
       },
       editLink: {
         baseUrl: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase/edit/main/docs/'

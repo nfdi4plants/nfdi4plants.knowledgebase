@@ -1,3 +1,4 @@
 name: David Zimmer
 socials: 
-  github: https://github.com/ZimmerD
+  - icon: simple-icons:github
+    href: https://github.com/ZimmerD
