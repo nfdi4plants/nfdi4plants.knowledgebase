@@ -28,19 +28,19 @@ ARCs and the DataHUB come with a mechanism to sync and store large files called 
 The ARCitect offers to activate or deactivate the use of LFS: 
 - in the "Download ARC" (1) menu via the "LFS" checkbox (2)
 
-![](./images/ARCitect-download-lfs.drawio.svg)
+![](./images/arcitect-download-lfs.drawio.png)
 
 - as well as in the "DataHUB Sync" menu (1) via the "Use Large File Storage" checkbox (2), which are available once an ARC has been open in ARCitect.
 
-![](./images/ARCitect-datahub-sync-lfs.drawio.svg)
+![](./images/arcitect-datahub-sync-lfs.drawio.png)
 
 In addition you can set a threshold (2) in megabytes (MB) for what you consider a large file in the "Commit" menu (1).
 
-![](./images/ARCitect-lfs-threshold.drawio.svg)
+![](./images/arcitect-lfs-threshold.drawio.png)
 
 You can also easily check which files in your ARC are flagged as LFS, by looking in the ARCitect tree panel (1).
 
-![](./images/ARCitect-lfs-flag.drawio.svg)
+![](./images/arcitect-lfs-flag.drawio.png)
 
 If you haven't downloaded the LFS file you can only open its pointer file. Unfortunately, this pointer file cannot be displayed in ARCitect but if you try to open it with a text editor (e.g. Notepad) it looks something like this:
 
@@ -52,11 +52,11 @@ size 22973898
 
 Finally, you can individually download large files via right-click -> "Download LFS File" (1)
 
-![](./images/ARCitect-download-lfs-file-right-click.drawio.svg)
+![](./images/arcitect-download-lfs-file-right-click.drawio.png)
 
 or you can also choose to download all large files from a directory by right clicking on the folder in the panel tree (1) and then "Download LFS Files" (2).
 
-![](./images/ARCitect-download-lfs-from-directory.drawio.svg)
+![](./images/arcitect-download-lfs-from-directory.drawio.png)
 
 
 ### ARC Commander
@@ -91,13 +91,12 @@ git add .gitattributes
 
 4. Sync your ARC to the DataHUB via `arc sync`
 5. Open your ARC in the DataHUB and navigate to the folder with LFS objects and see them flagged as "LFS" (1).
-![](./images/ARCitect-lfs-flagged.drawio.svg)
 
+![](./images/arcitect-lfs-flagged.drawio.png)
 
 :::caution
 Please avoid uploading large files without [git LFS](https://git-lfs.github.com/) (i.e. accidentally with pure git, when git-lfs is not available).
 :::
-
 
 #### Downloading an ARC without large data files
 
@@ -138,4 +137,4 @@ git lfs pull --include "*"
 #### Checking usage quota of LFS
 
 If at some point you would like to check how much free storage you have for your ARC, you can easily do so by navigating to your ARC in the DataHUB and clicking on "Project Storage" in the right sidebar (1).
-![](./images/ARCitect-lfs-project-storage.drawio.svg)
+![](./images/arcitect-lfs-project-storage.drawio.png)
