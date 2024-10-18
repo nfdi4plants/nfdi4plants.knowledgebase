@@ -15,13 +15,13 @@ In the example below, you can see how branches have been used to work on develop
 Don't forget to sync your branch with the "parent" branch to avoid merging conflicts.
 :::
 
-![](./images/git-branches.drawio.svg)
+![](./images/branches-concept.drawio.png)
 
 ## ARCitect
 
 In ARCitect you can create a new branch or switch to already existing ones by navigating to "Commit" on the left sidebar (1), then clicking on the dropdown menu (2) and selecting "Add Branch" (3) or the name of an already existing branch respectively (4). 
 
-![](./images/arcitect-branches.drawio.svg)
+![](./images/branches-arcitect.drawio.png)
 
 ## ARC Commander
 
