@@ -25,3 +25,4 @@
 ## Core concept
 
 - [ ] ISA file types and how they are connected
+- [ ] ISA annotation principles
