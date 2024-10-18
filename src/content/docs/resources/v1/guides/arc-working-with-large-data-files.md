@@ -9,7 +9,7 @@ authors:
 
 In this guide we show you how you can actively handle large data files in your ARC using **[ARC Commander](./../implementation/ArcCommander.html)**.
 
-:bulb: If you use **[ARCitect](./../ARCitect-Manual/index.html)** to manage your ARCs, make sure to select or unselect the boxes `LFS` (in the "Download ARC" panel) or `Download LFS Files` (in the "Versions" panel) in order to allow or prevent syncing large files (LFS = large file storage).
+💡 If you use **[ARCitect](./../ARCitect-Manual/index.html)** to manage your ARCs, make sure to select or unselect the boxes `LFS` (in the "Download ARC" panel) or `Download LFS Files` (in the "Versions" panel) in order to allow or prevent syncing large files (LFS = large file storage).
 
 <div style="padding-bottom: 20px">
     <a href="./index.html">
@@ -20,9 +20,9 @@ In this guide we show you how you can actively handle large data files in your A
 
 ## Before we can start
 
-:ballot_box_with_check: You have created an ARC before using the [ARCitect](./../ARCitect-Manual/index.html) or [ARC Commander](./../implementation/ArcCommander.html)  
-:ballot_box_with_check: You have a [DataPLANT](https://register.nfdi4plants.org) account  
-:ballot_box_with_check: Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via personal access token
+☑️ You have created an ARC before using the [ARCitect](./../ARCitect-Manual/index.html) or [ARC Commander](./../implementation/ArcCommander.html)  
+☑️ You have a [DataPLANT](https://register.nfdi4plants.org) account  
+☑️ Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via personal access token
 
 ## Large File Storage (LFS)
 
@@ -77,7 +77,7 @@ The threshold of 150 MB can easily be adjusted using the ARC Commander. For inst
 arc config set -g -n "general.gitlfsbytethreshold" -v "5000000"
 ```
 
-:bulb: The LFS system is also the reason why [git LFS](https://git-lfs.github.com/) needs to be installed prior to using the ARC Commander.
+💡 The LFS system is also the reason why [git LFS](https://git-lfs.github.com/) needs to be installed prior to using the ARC Commander.
 
 #### Track files via LFS
 
@@ -97,7 +97,7 @@ git add .gitattributes
 <img src="./../img/ARCitect-lfs-flagged.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
 
 
-:warning: Please avoid uploading large files without [git LFS](https://git-lfs.github.com/) (i.e. accidentally with pure git, when git-lfs is not available).
+⚠️ Please avoid uploading large files without [git LFS](https://git-lfs.github.com/) (i.e. accidentally with pure git, when git-lfs is not available).
 
 
 #### Downloading an ARC without large data files

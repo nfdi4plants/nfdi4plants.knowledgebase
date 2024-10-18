@@ -41,9 +41,9 @@ In this guide we introduce the different ISA file types used in the ARC.
 
 <div id="before-start">
 
-- :bulb: Consider reading about the [ARC](./../implementation/AnnotatedResearchContext.html)
-- :bulb: This guide only shows the ISA file types and only slightly touches their content. Check out the [annotation principles](./isa_AnnotationPrinciples.html) to learn more about the building blocks used in ISA files. 
-- :bulb: For more details about the ISA model, please also refer to ISA tools (https://isa-tools.org/) and ISA specifications (https://isa-specs.readthedocs.io/).
+- 💡 Consider reading about the [ARC](./../implementation/AnnotatedResearchContext.html)
+- 💡 This guide only shows the ISA file types and only slightly touches their content. Check out the [annotation principles](./isa_AnnotationPrinciples.html) to learn more about the building blocks used in ISA files. 
+- 💡 For more details about the ISA model, please also refer to ISA tools (https://isa-tools.org/) and ISA specifications (https://isa-specs.readthedocs.io/).
 
 </div>
 
@@ -96,7 +96,7 @@ Each study (`isa.study.xlsx`) and assay (`isa.assay.xlsx`) of your ARC as well a
 </div>
 
 
-:bulb: When opening the `isa.investigation.xlsx` for the first time, it may be necessary to widen the first column to make the entries visible.
+💡 When opening the `isa.investigation.xlsx` for the first time, it may be necessary to widen the first column to make the entries visible.
 
 ---
 

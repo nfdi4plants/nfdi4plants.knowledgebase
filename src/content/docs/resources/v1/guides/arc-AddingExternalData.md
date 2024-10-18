@@ -18,7 +18,7 @@ In this guide we recommend routines to properly add data from external sources t
 
 ## Before we can start
 
-:ballot_box_with_check: You are familiar with the [ARC](./../implementation/AnnotatedResearchContext.html) concept and [ISA file types](./isa_FileTypes.html)
+☑️ You are familiar with the [ARC](./../implementation/AnnotatedResearchContext.html) concept and [ISA file types](./isa_FileTypes.html)
 
 Research projects rarely start out of the blue. Rather every project builds on previous findings and published or unpublished datasets.
 
@@ -40,11 +40,11 @@ To properly re-use and reference such a dataset, we recommend to add a `study` t
 - Finally, the `README.md` is a good option to let other viewers of your ARC know the source and details to the external study. This file is also prominently displayed in the respective folder in the [DataHUB](./../implementation/DataHub.html). 
 
 
-:bulb: The easiest way to [add a new study](./../ArcCommanderManual/arc_isa_study.html) is by using the ARC Commander's function:
+💡 The easiest way to [add a new study](./../ArcCommanderManual/arc_isa_study.html) is by using the ARC Commander's function:
 ```
 arc study add --identifier <StudyName>
 ``` 
 
-:bulb: As with any other routine used by researchers to share scientific results and data, the responsibility to acknowledge scientific integrity, follow guidelines of good scientific practice, institutional guidelines for data handling, and respective laws for licensing, and &ndash; if applicable  &ndash; to properly reference or cite the data source lies with the individual researcher.
+💡 As with any other routine used by researchers to share scientific results and data, the responsibility to acknowledge scientific integrity, follow guidelines of good scientific practice, institutional guidelines for data handling, and respective laws for licensing, and &ndash; if applicable  &ndash; to properly reference or cite the data source lies with the individual researcher.
 
-:bulb: You can add datasets to the [.gitignore](./arc_gitignore.html) file, if you are unsure about the conditions to reuse data from an external source. 
+💡 You can add datasets to the [.gitignore](./arc_gitignore.html) file, if you are unsure about the conditions to reuse data from an external source. 
