@@ -24,9 +24,13 @@ Some reasons, why we now sometimes run into git issues
 
 1. (if required) [Install Git](https://git-scm.com) on user machine
 
+<<<<<<< HEAD
     :::tip
     check installation via `git --version` in a fresh command line / terminal / powershell window
     :::
+=======
+    💡 check installation via `git --version` in a fresh command line / terminal / powershell window
+>>>>>>> 1b59fefe0d3dbc6b5ad9d5b70f0baa3482da83a0
 
 2. navigate to the ARC in trouble (via one of many options below)
 
@@ -37,9 +41,13 @@ Some reasons, why we now sometimes run into git issues
 
 3. try some of the git commands and debugging below
 
+<<<<<<< HEAD
 :::tip
 This is not an exhaustive trouble-shooting list. In most cases git and search machines are your friends. Most Git error messages (displayed in the command line or inside ARCitect) include helpful commands to solve the problem or can easily be searched for in the internet.
 :::
+=======
+💡 This is not an exhaustive trouble-shooting list. In most cases git and search machines are your friends. Most Git error messages (displayed in the command line or inside ARCitect) include helpful commands to solve the problem or can easily be searched for in the internet.
+>>>>>>> 1b59fefe0d3dbc6b5ad9d5b70f0baa3482da83a0
 
 ## Error messages
 
@@ -55,9 +63,13 @@ error message* | possible reason | possible solution
 `fatal: Need to specify how to reconcile divergent branches.` | Your ARC contains multiple branches that progressed independently and need to be merged | Contact a data steward.
 `error: unable to create file <path/to/file> : Filename too long` | Likely occurs on Windows, if your ARC is stored in a deeply nested folder, i.e. a folder in a folder in a folder ...| Store the ARC on a higher level.
 
+<<<<<<< HEAD
 :::tip
 *typically displayed during synchronization via ARCitect (DataHUB Sync --> push / pull) or `arc sync`. Even if ARCitect shows "Complete", it's sometimes worth it to scroll up and see these errors.
 :::
+=======
+💡 *typically displayed during synchronization via ARCitect (DataHUB Sync --> push / pull) or `arc sync`. Even if ARCitect shows "Complete", it's sometimes worth it to scroll up and see these errors.
+>>>>>>> 1b59fefe0d3dbc6b5ad9d5b70f0baa3482da83a0
 
 ## Your two favorite Git commands: status and log
 
@@ -115,9 +127,13 @@ The following command lists all configurations and where they originate (--show-
 git config --list --show-origin --show-scope
 ```
 
+<<<<<<< HEAD
 :::tip
 The output will be different depending on wether you are inside or outside an ARC (git repository).
 :::
+=======
+💡 The output will be different depending on wether you are inside or outside an ARC (git repository).
+>>>>>>> 1b59fefe0d3dbc6b5ad9d5b70f0baa3482da83a0
 
 In order to only show e.g. the global gitconfig use
 
@@ -134,10 +150,14 @@ Typical settings to explore and trouble-shoot
 ### Changing git config
 
 Editing the respective gitconfig is ideally done via command line (quick internet search helps).
+<<<<<<< HEAD
 
 :::tip
 One could edit the file (listed in `git config --list --show-origin`) via a text editor. However, this is rather error-prone.
 :::
+=======
+💡 One could edit the file (listed in `git config --list --show-origin`) via a text editor. However, this is rather error-prone.
+>>>>>>> 1b59fefe0d3dbc6b5ad9d5b70f0baa3482da83a0
 
 #### Adapt user name and email
 
@@ -163,9 +183,13 @@ This can be solved by either of the following:
 1. Remove "credential.helper=cache" via `git config --global --unset credential.helper`.
 2. Overwrite the setting with "store" instead of "cache" via `git config --global credential.helper store`.
 
+<<<<<<< HEAD
 :::tip
 If you use ARC commander, we recommend to use the second approach to keep storing your credentials for DataHUB synchronization. 
 :::
+=======
+💡 If you use ARC commander, we recommend to use the second approach to keep storing your credentials for DataHUB synchronization. 
+>>>>>>> 1b59fefe0d3dbc6b5ad9d5b70f0baa3482da83a0
 
 ## Git remote
 
@@ -218,9 +242,13 @@ To display the branches of the local ARC, use
 git branch
 ```
 
+<<<<<<< HEAD
 :::tip
 the current branch is marked with an asterisk (*) to the left
 :::
+=======
+💡 the current branch is marked with an asterisk (*) to the left
+>>>>>>> 1b59fefe0d3dbc6b5ad9d5b70f0baa3482da83a0
 
 If you also want to display branches that exist on the remote (but not locally), use
 
@@ -305,9 +333,13 @@ You can circumvent this error by adding **all directories** to your list of safe
 git config --global --add safe.directory *
 ```
 
+<<<<<<< HEAD
 :::caution
 This might however pose a safety risk. Please read the details here: https://www.git-scm.com/docs/git-config#Documentation/git-config.txt-safedirectory
 :::
+=======
+⚠️ This might however pose a safety risk. Please read the details here: https://www.git-scm.com/docs/git-config#Documentation/git-config.txt-safedirectory
+>>>>>>> 1b59fefe0d3dbc6b5ad9d5b70f0baa3482da83a0
 
 ### Git LFS
 
@@ -354,9 +386,13 @@ git lfs ls-files -ls
 This will display the object ID (oid), the relative path to the file and the object size.
 The oid is also stored in the pointer file at the file's position.
 
+<<<<<<< HEAD
 :::tip
 If checked-out and downloaded, a file with an oid `77080c4dc5820ede3e992e8116772ae6ec6ba6096e05df4e49fbb5f0665544b2` would be in the folder `.git/lfs/objects/77/08/`. So the first 4 characters of the OiD are split into two subfolders of `.git/lfs/objects/` (i.e. `/77/08/`).
 :::
+=======
+💡 If checked-out and downloaded, a file with an oid `77080c4dc5820ede3e992e8116772ae6ec6ba6096e05df4e49fbb5f0665544b2` would be in the folder `.git/lfs/objects/77/08/`. So the first 4 characters of the OiD are split into two subfolders of `.git/lfs/objects/` (i.e. `/77/08/`).
+>>>>>>> 1b59fefe0d3dbc6b5ad9d5b70f0baa3482da83a0
 
 #### Debug LFS-tracked files
 

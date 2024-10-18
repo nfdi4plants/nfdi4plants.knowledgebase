@@ -23,23 +23,15 @@ status: draft
 ## About this guide
 
 In this guide we focus on how to use the [ARCitect](./../ARCitect-Manual/index.html) to create your ARC and structure, store and share your data.
-
-<div style="padding-bottom: 20px">
-    <a href="./index.html">
-        <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
-        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-    </a>
-</div>
-
 ---
 
 ## Before we can start
 
 Please make sure
 
-:ballot_box_with_check: The latest version of the [ARCitect](./../ARCitect-Manual/index.html) is installed on your computer  
-:ballot_box_with_check: You have a [DataPLANT](https://register.nfdi4plants.org) account  
-:bulb: Consider reading about the [ARC](./../implementation/AnnotatedResearchContext.html)  
+☑️ The latest version of the [ARCitect](./../ARCitect-Manual/index.html) is installed on your computer  
+☑️ You have a [DataPLANT](https://register.nfdi4plants.org) account  
+💡 Consider reading about the [ARC](./../implementation/AnnotatedResearchContext.html)  
 
 ---
 
@@ -53,52 +45,30 @@ Before creating your own ARC, invest some time to think about the following ques
   - What is my (raw) **dataset**?
   - What **protocols** did I use?
 
-:bulb: It might help to have this info ready in a text file. In particular, try to think about useful names (identifiers) for investigation, study and assay.
+💡 It might help to have this info ready in a text file. In particular, try to think about useful names (identifiers) for investigation, study and assay.
 
 ---
 
 ## Initiate the ARC folder structure
 
-<div class="container">
-
-  <div style="padding-right: 50px">
-
-  1. Start the ARCitect
-  2. Create a **New ARC** (2)
-  3. Select a location and name for your ARC
-
-  </div>
-
-  <div style="width: 150px">
-    <img src="./../img/ARCitect-help-Sidebar.drawio.svg">
-  </div>
-
-</div>
+1. Start the ARCitect
+2. Create a **New ARC** (2)
+3. Select a location and name for your ARC
 
 ---
 
 ### Your ARC's name
 
-<div class="container">
-  <div style="padding-right: 50px">
 
-  💡 By default, your ARC's name will be used:
+💡 By default, your ARC's name will be used:
 
-   1. for the ARC folder on your machine
-   2. to create your ARC in the DataHUB at `https://git.nfdi4plants.org/<YourUserName>/<YourARC>` (see next steps)
-   3. as the identifier for your investigation
+  1. for the ARC folder on your machine
+  2. to create your ARC in the DataHUB at `https://git.nfdi4plants.org/<YourUserName>/<YourARC>` (see next steps)
+  3. as the identifier for your investigation
 
-  💡 Make sure that no ARC exists at  `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`. Otherwise you will sync to that ARC.
+💡 Make sure that no ARC exists at  `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`. Otherwise you will sync to that ARC.
 
-  💡 Avoid spaces in your ARC's name
-
-  </div>
-
-  <div>
-    <img src="./../img/arcitect-ARCPanel.png" width="650px">
-  </div>
-
-</div>
+💡 Avoid spaces in your ARC's name
 
 
 ---
@@ -110,8 +80,6 @@ Click on your ARC's name to add details, such as
 - a title
 - a description
 
-<img src="./../img/arcitect-ARCPanel-Investigation.png" width="650px">
-
 
 ---
 
@@ -119,24 +87,11 @@ Click on your ARC's name to add details, such as
 
 In the section "People" click "ADD PERSON" to add at least one contributor
 
-<img src="./../img/arcitect-ARCPanel-Investigation-people.png" width="650px">
-
 ---
 
 ## Add a study to your ARC
 
-<div class="container">
-  <div style="padding-right: 50px">
-
-  Click "Add Study" in the sidebar and enter an identifier
-
-  </div>
-
-  <div>
-    <img src="./../img/arcitect-ARCPanel-study01.png" width="450px">
-  </div>
-
-</div>
+Click "Add Study" in the sidebar and enter an identifier
 
 ---
 
@@ -151,8 +106,6 @@ Click on your study's name to add details, such as
 
 Here you can also link different assays to your study.
 
-<img src="./../img/Arcitect_Studymetadata.png">
-
 ---
 
 ### Add an annotation table to your study
@@ -163,19 +116,8 @@ To add detailed metadata on your study, you can create an additional table sheet
 
 ### Add a protocol to your study
 
+Click "Add Protocol" in the sidebar to add a protocol to your study
 
-<div class="container">
-  <div style="padding-right: 50px">
-
-  Click "Add Protocol" in the sidebar to add a protocol to your study
-
-  </div>
-
-  <div>
-    <img src="./../img/arcitect-ARCPanel-study-protocol.png" width="650px">
-  </div>
-
-</div>
 
 
 ---
@@ -186,44 +128,21 @@ You can either
 - directly write a **new protocol** within the ARCitect or
 - **import** an existing one from your computer
 
-<img src="./../img/arcitect-ARCPanel-protocol.png" width="550px">
-
-
 ---
 
 ## Add an assay to your ARC
 
-<div class="container">
-  <div style="padding-right: 50px">
 
-  Click "Add Assay" in the sidebar and enter an identifier
+Click "Add Assay" in the sidebar and enter an identifier
 
-  </div>
-
-  <div>
-    <img src="./../img/arcitect-ARCPanel-assay01.png" width="450px">
-  </div>
-
-</div>
 
 ---
 
 ### Link your assay to a study
 
-<div class="container">
-  <div style="padding-right: 50px">
-
-  You can either
-  - link your new assay to an existing study in your ARC or
-  - create a new one (with the same name as the assay)
-
-  </div>
-
-  <div>
-    <img src="./../img/arcitect-ARCPanel-assay02.png" width="650px">
-  </div>
-
-</div>
+You can either
+- link your new assay to an existing study in your ARC or
+- create a new one (with the same name as the assay)
 
 
 ---
@@ -235,8 +154,6 @@ In the assay panel you can define the assay's
    - technology type and
    - technology platform.
 
-<img src="./../img/Arcitect_Assaymetadata.png" width="650px">
-
 ---
 
 ### Add an annotation table to your assay
@@ -247,61 +164,31 @@ To add detailed metadata about your assay, you can create an additional table sh
 
 ### Add protocols and datasets to your assay
 
-<div class="container">
-  <div style="padding-right: 50px">
+In the file tree you can
 
-  In the file tree you can
-  
-  - **add a dataset** and
-  - **protocols** associated to that dataset.
-  
-  :bulb: **Add Dataset** allows to import data from any location on your computer into the ARC.  
-  
-  :warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
+- **add a dataset** and
+- **protocols** associated to that dataset.
 
-  </div>
+💡 **Add Dataset** allows to import data from any location on your computer into the ARC.  
 
-  <div>
-    <img src="./../img/arcitect-ARCPanel-assay03.png" width="450px">
-  </div>
+⚠️ Depending on the file size, this may take a while. Test this with a small batch of files first.
 
-</div>
 
 ---
 
 ## Share your ARC
 
-<div class="container">
-  <div style="padding-right: 50px">
 
-  Click **Login** (1) in the sidebar to login to the DataHUB.
+Click **Login** (1) in the sidebar to login to the DataHUB.
 
-  :bulb: This automatically opens your browser at the DataHUB (https://git.nfdi4plants.org) and asks you to login, if you are not already logged in.
-
-  </div>
-
-  <div>
-    <img src="./../img/ARCitect-help-Sidebar.drawio.svg" width="150px">
-  </div>
-
-</div>
+💡 This automatically opens your browser at the DataHUB (https://git.nfdi4plants.org) and asks you to login, if you are not already logged in.
 
 ---
 
 ### Versions: Connection to the DataHUB
 
-<div class="container">
-  <div style="padding-right: 50px">
-  
-  To communicate with the DataHUB, navigate to **Versions** (6)
-  
-  </div>
+To communicate with the DataHUB, navigate to **Versions** (6)
 
-  <div>
-    <img src="./../img/ARCitect-help-Sidebar.drawio.svg" width="150px">
-  </div>
-
-</div>
 
 ---
 
@@ -312,8 +199,6 @@ If you are logged in, the versions panel shows
 - your DataHUB's *Full Name* and *eMail*
 - the URL of the current ARC in the DataHUB  
   `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`
-
-![bg right w:650](./../img/arcitect-VersionsPanel.png)
 
 ---
 
@@ -331,8 +216,6 @@ To upload your ARC:
   2. Click COMMIT to save your changes locally
   3. Click UPLOAD to upload your ARC to the DataHUB
 
-
-<img src="./../img/arcitect-VersionsPanel.png" width="850px">
 
 ### Check if your ARC is successfully uploaded
 
@@ -352,7 +235,7 @@ add studies and assays according to your needs
 
 Try to place your resources, datasets and protocols for each study and assay in the respective folders.
 
-> :bulb: This part will likely require some iteration. 🗣️ Talk to us.
+> 💡 This part will likely require some iteration. 🗣️ Talk to us.
 >
 > - You might need to add new studies and assays or revise your overall structure during the process
 > - Sometimes you might not immediately find a suitable position for your data
