@@ -23,7 +23,7 @@ The ARC builds on the <a href="https://isa-specs.readthedocs.io/en/latest/isamod
 Briefly, the ISA model comes with a hierarchy (ISA: Investigation - Study - Assay) that aligns well with most projects in (plant) biology labs. It allows to group multiple assays to one study, and multiple studies to one investigation.
 
 <div>
-  <img src="./../img/ISAmodel_ARC01_img01.svg">
+  <img src="./images/ISAmodel_ARC01_img01.svg">
   <figcaption> Image source (left panel): <a href="https://isa-tools.org/format/specification.html" target="_blank">https://isa-tools.org/format/specification.html    </a>
 </div></figcaption>
 </div>
@@ -36,7 +36,7 @@ The most user-intuitive format of the ISA metadata framework is <a href="https:/
 </div>. As the name suggest, it's a tabular format. Hence, you can view the files in a spread-sheet program of choice.
 
 <div>
-  <img src="./../img/ISAmodel_ARC01_img02.svg">
+  <img src="./images/ISAmodel_ARC01_img02.svg">
   <figcaption>Comparison of the ISA file types. Grey cells: keys. White cells: values.</figcaption>
 </div>
 
@@ -52,7 +52,7 @@ The `isa.investigation.xlsx` allows to store metadata relevant on the investigat
 Each study (`isa.study.xlsx`) and assay (`isa.assay.xlsx`) of your ARC as well as a summary of metadata contained in them are registered and listed in the `isa.investigation.xlsx`.
 
 <div>
-  <img src="./../img/ISAmodel_ARC01_img04.svg">
+  <img src="./images/ISAmodel_ARC01_img04.svg">
   <figcaption>The isa.investigation.xlsx functions as registry to your ARC.</figcaption>
 </div>
 
@@ -62,7 +62,7 @@ The output of one study or assay can function as the input to another study or a
 you can communicate how the experimental processes and workflows connect.
 
 <div>
-  <img src="./../img/ISAmodel_ARC01_img05.svg">
+  <img src="./images/ISAmodel_ARC01_img05.svg">
   <figcaption>Use unique identifiers across ISA files to connect your workflows.</figcaption>
 </div>
 
@@ -71,6 +71,6 @@ you can communicate how the experimental processes and workflows connect.
 By linking files stored in your ARC (e.g. raw data files in a dataset folder), you can let others know which experimental workflow was followed to produce these data files.
 
 <div>
-  <img src="./../img/ISAmodel_ARC01_img6.svg">
+  <img src="./images/ISAmodel_ARC01_img6.svg">
   <figcaption></figcaption>
 </div>

@@ -16,8 +16,8 @@ In this guide we introduce how to access ARCs from Galaxy. To access the data of
 
 ## Create an access token in DataHUB
 
-![image](./../img/ARCfs_KB_01_blurred_marked.png)
-![image](./../img/ARCfs_KB_02_blurred_marked.png)
+![image](./images/ARCfs_KB_01_blurred_marked.png)
+![image](./images/ARCfs_KB_02_blurred_marked.png)
 
 1. Open the dropdown menu for your personal settings.
 2. Open the "Preferences" menu.
@@ -32,10 +32,10 @@ site, you will **not** be able to do so again.
 
 ## Add the token to Galaxy
 
-![image](./../img/ARCfs_KB_03_blurred_marked.png)
-![image](./../img/ARCfs_KB_06_blurred_marked.png)
-![image](./../img/ARCfs_KB_07_blurred_marked_cut.png)
-![image](./../img/ARCfs_KB_08_cut_marked.png)
+![image](./images/ARCfs_KB_03_blurred_marked.png)
+![image](./images/ARCfs_KB_06_blurred_marked.png)
+![image](./images/ARCfs_KB_07_blurred_marked_cut.png)
+![image](./images/ARCfs_KB_08_cut_marked.png)
 
 1. Visit [usegalaxy.eu](https://usegalaxy.eu/) and log in or create an account. It is possible to log in using your DataPlant account.
 2. Open the "User" drop down menu and
@@ -49,10 +49,10 @@ site, you will **not** be able to do so again.
 
 With the token available to Galaxy, you are now able to import data. You can do this as described below.
 
-![image](./../img/ARCfs_KB_09_marked.png)
-![image](./../img/ARCfs_KB_10_11_marked.png)
-![image](./../img/ARCfs_KB_12_13_marked.png)
-![image](./../img/ARCfs_KB_14_15_marked.png)
+![image](./images/ARCfs_KB_09_marked.png)
+![image](./images/ARCfs_KB_10_11_marked.png)
+![image](./images/ARCfs_KB_12_13_marked.png)
+![image](./images/ARCfs_KB_14_15_marked.png)
 
 1. Click on the "Upload Data".
 2. Pick "Choose remote files".
@@ -67,9 +67,9 @@ With the token available to Galaxy, you are now able to import data. You can do 
 
 It is also possible to export datasets back to an ARC. You can do this as described below.
 
-![image](./../img/ARCfs_KB_16_17_marked.png)
-![image](./../img/ARCfs_KB_18_19_marked.png)
-![image](./../img/ARCfs_KB_20_21_marked_1.png)
+![image](./images/ARCfs_KB_16_17_marked.png)
+![image](./images/ARCfs_KB_18_19_marked.png)
+![image](./images/ARCfs_KB_20_21_marked_1.png)
 
 
 1. On the left sidebar, open the menu "Send Data".
