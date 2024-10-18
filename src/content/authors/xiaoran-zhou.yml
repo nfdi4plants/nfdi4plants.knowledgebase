@@ -1,4 +1,6 @@
 name: Xiaoran Zhou
 socials:
-  github: https://github.com/xiaoranzhou
-  orcid: https://orcid.org/0000-0002-5622-3348
+  - icon: simple-icons:github
+    href: https://github.com/xiaoranzhou
+  - icon: simple-icons:orcid
+    href: https://orcid.org/0000-0002-5622-3348

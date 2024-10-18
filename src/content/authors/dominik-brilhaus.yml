@@ -1,4 +1,6 @@
 name: Dominik Brilhaus
 socials:
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197
+  - icon: simple-icons:github
+    href: https://github.com/brilator
+  - icon: simple-icons:orcid
+    href: https://orcid.org/0000-0001-9021-3197
