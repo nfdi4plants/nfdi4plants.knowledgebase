@@ -5,36 +5,19 @@ authors:
   - dominik-brilhaus
 ---
 
-<!-- http://127.0.0.1:8080/docs/guides/publicationToARC.html -->
-
-## About this guide
+:::note[About this guide]
 
 In this guide we collect recommendations and thoughts on creating an ARC based on a publication and associated published datasets.
 This is not the typical entry into an ARC, but rather retrospective. It might however help to build community-tailored showcases; i.e. showing what a project could look like as an ARC.
+:::
 
-<div style="padding-bottom: 20px">
-    <a href="./index.html">
-  <span class="badge-category">User</span><span class="badge-selected" id="badge-datasteward">Data Steward</span>
-  <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-    </a>
-</div>
-
-
-
-
-## Before we can start
-
-<div id="before-start">
-
+:::tip[Before we can start]
 This guide assumes you know
+- the concept of the [ARC](./../implementation/AnnotatedResearchContext.html)
+- the different [ISA file types](./isa_FileTypes.html)
+- which tools to use (e.g. [ARC Commander](./../ArcCommanderManual/index.html), [ARCitect](./../ARCitect-Manual/index.html), [DataHUB](./../DataHUB-Manual/index.html)) and how.
+:::
 
-- ☑️ the concept of the [ARC](./../implementation/AnnotatedResearchContext.html)
-- ☑️ the different [ISA file types](./isa_FileTypes.html)
-- ☑️ which tools to use (e.g. [ARC Commander](./../ArcCommanderManual/index.html), [ARCitect](./../ARCitect-Manual/index.html), [DataHUB](./../DataHUB-Manual/index.html)) and how.
-
-
-
-</div>
 
 ## ARC setup
 
@@ -68,7 +51,9 @@ This guide assumes you know
   2. supplemental files (as offered on publication page)
   3. add a `_publication/README.md` with a table of links (file | url)
 
-💡 the underscore "_" could help to distinguish additional folders (["additional payload"](https://github.com/nfdi4plants/ARC-specification/blob/main/ARC%20specification.md#additional-payload)) from default ARC folders
+:::tip
+the underscore "_" could help to distinguish additional folders (["additional payload"](https://github.com/nfdi4plants/ARC-specification/blob/main/ARC%20specification.md#additional-payload)) from default ARC folders
+:::
 
 ## Legal
 
@@ -79,11 +64,13 @@ This guide assumes you know
 
 - To add a `LICENSE`, navigate to your ARC in DataHUB and click on "Add LICENSE" on the right sidebar menu(1).
 
-<img src="./../img/datahub-add-license.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
+:::tip
+We recommend to focus on open access / CC-BY publications and datasets, unless you explicitly know, whether and how to re-use the data published elsewhere.
+:::
 
-💡 We recommend to focus on open access / CC-BY publications and datasets, unless you explicitly know, whether and how to re-use the data published elsewhere.
-
-⚠️ Don't forget to sync your local ARC (via ARC Commander or ARCitect) after creating a `LICENSE` file in DataHUB.
+:::caution
+Don't forget to sync your local ARC (via ARC Commander or ARCitect) after creating a `LICENSE` file in DataHUB.
+:::
 
 ## ISA - investigation / isa.investigation.xlsx
 
@@ -97,7 +84,9 @@ This guide assumes you know
 - Add Publication
   1. DOI, Title, Authors, Status = Published
 
-💡 Can be done via ARCitect, ARC Commander or Excel (manually editing the isa.investigation.xlsx file)
+:::tip
+Can be done via ARCitect, ARC Commander or Excel (manually editing the isa.investigation.xlsx file)
+:::
 
 ## ISA - studies and assays
 
@@ -123,7 +112,9 @@ The publication may contain a section "data availability" or "data accession" or
 
 - Try to find and transfer info (sample accessions, IDs, metadata, links, etc.) into the ARC. This would typically be an assay.
 
-💡 There is no clear rule, whether data already published in a public repository should be imported (i.e. copied) into the ARC. Discussion ongoing.
+:::tip
+There is no clear rule, whether data already published in a public repository should be imported (i.e. copied) into the ARC. Discussion ongoing.
+:::
   
 - For showcasing, it makes sense to build a "complete" ARC.
 - To minimize data duplication and save storage space, this should be avoided.

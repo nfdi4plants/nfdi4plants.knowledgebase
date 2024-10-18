@@ -1,6 +1,8 @@
 ---
-title: "CWL runner installation"
+title: "CWL Runner Installation"
 lastUpdated: 2024-01-18
+authors:
+  - caro-ott
 ---
 
 # CWL runner installation
@@ -14,18 +16,18 @@ The installation can be done following the guide [here](https://cwltool.readthed
 
  - Install Windows Subsystem for Linux from the Microsoft Store
  
- ![WSL](./../../img/wsl.png)
+ ![WSL](.@images/guides/cwl/wsl.png)
  
  - Install Debian from the Microsoft Store
  
- ![Debian](./../../img/debian.png)
+ ![Debian](.@images/guides/cwl/debian.png)
  - Set Debian as your default WSL 2 distro: `wsl --set-default debian`
  - Install [Docker Desktop for Windows](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)
    - Start Docker Desktop and Navigate to Settings
    - Select "Use WSL 2 based engine" in the general tab and apply
-    ![Docker WSL2](./../../img/docker_wsl2.png)
+    ![Docker WSL2](.@images/guides/cwl/docker-wsl2.png)
    - Select "Enable Integration with my default distro" in the resources tab under WSL Integration
-    ![Docker WSL Integration](./../../img/docker_wsl_integration.png)
+    ![Docker WSL Integration](.@images/guides/cwl/docker-wsl-integration.png)
  - Start WSL
  - Follow the Instructions for Linux (Debian/Ubuntu)
 

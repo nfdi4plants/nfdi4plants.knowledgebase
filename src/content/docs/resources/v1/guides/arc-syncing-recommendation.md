@@ -5,29 +5,24 @@ authors:
   - dominik-brilhaus
 ---
 
-## About this guide
+:::note[About this guide]
+In this guide we elaborate recommendations on syncing your ARC via the [ARC Commander](./../implementation/ArcCommander.html)
+:::
 
-In this guide we elaborate recommendations on syncing your ARC via the [ARC Commander](./../implementation/ArcCommander.html) 
-
-<div style="padding-bottom: 20px">
-    <a href="./index.html">
-    <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>    
-    </a>
-</div>
-
-## Before we can start
-
-☑️ You have created an ARC before using the [ARC Commander](./../implementation/ArcCommander.html)  
-☑️ The latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) is installed on your computer  
-☑️ You have a [DataPLANT](https://register.nfdi4plants.org) account  
-☑️ Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via personal access token
+:::tip[Before we can start]
+- You have created an ARC before using the [ARC Commander](./../implementation/ArcCommander.html)  
+- The latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) is installed on your computer  
+- You have a [DataPLANT](https://register.nfdi4plants.org) account  
+- Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via personal access token
+:::
 
 ## You have full control
 
 Unlike what you are used to from common cloud services, none of the ARC tools *automatically* or *passively* syncs your ARC between your computer and the DataHUB. You have to actively sync it. What may appear as a burden &ndash; "*Why do I have to do this myself?*" &ndash; actually grants you full access over what is happening with your ARC. First, it allows you to avoid syncing unwanted changes. For instance, consider adding a large amount of data, that may take some time to upload to the DataHUB. You surely would want to decide yourself when to start the upload. Secondly, it allows you document your ARC's progress step by step. In general, the more you work with your ARC, the more you add or update, annotate or analyze data, the more you will want to make sure these changes are saved. Consider the syncing as a way to backup your project's progress as well as an "undo button".
 
-💡 In the DataHUB, the individual sync steps are called "commit".
+:::tip
+In the DataHUB, the individual sync steps are called "commit".
+:::
 
 ## Add a message to communicate your ARC's evolution
 
@@ -61,7 +56,9 @@ arc sync -m "added RNAseq dataset"
 arc sync -m "annotate RNAseq samples"
 ```
 
-💡 If no commit message is added, the ARC Commander by default adds the commit message "Update" during `arc sync`. 
+:::tip
+If no commit message is added, the ARC Commander by default adds the commit message "Update" during `arc sync`. 
+:::
 
 ## Follow your progress in the DataHUB
 
@@ -71,16 +68,16 @@ You can actually see all `arc sync` actions (i.e. commits) to your ARC in the Da
 2. In the sidebar on the left, navigate to `Repository` &rarr; `Commits`. 
 3. There you find a chronological list of syncing messages together with who synced (if you collaborate with others on an ARC) and when.
 
-<img src="./../img/datahub-commits.png" style="width:75%;display: block;margin-left: auto;margin-right: auto;">
+![](@images/guides/datahub-commits.png)
 
 ## Undo latest changes
 
 4. Click on the latest (i.e. uppermost) commit.
 5. In the top-right corner select `Revert` from the drop-down menu `Options`. 
 
-<img src="./../img/datahub-commits-revert01.png" style="width:75%;display: block;margin-left: auto;margin-right: auto;">
+![](@images/guides/datahub-commits-revert01.png)
 
 6. Un-check the box "Start a new merge request with these changes".
 7. Click "Revert"
 
-<img src="./../img/datahub-commits-revert02.png" style="width:55%;display: block;margin-left: auto;margin-right: auto;">
+![](@images/guides/datahub-commits-revert02.png)

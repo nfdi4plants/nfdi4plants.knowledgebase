@@ -1,5 +1,5 @@
 ---
-title: Introduction to Markdown
+title: Markdown
 lastUpdated: 2022-07-06
 authors:
   - dominik-brilhaus
@@ -20,14 +20,10 @@ authors:
   - [Phrase Emphasis](#phrase-emphasis)
   - [Headers](#headers)
   - [Lists](#lists)
-    - [Ordered, without paragraphs:](#ordered-without-paragraphs)
-    - [Unordered, with paragraphs:](#unordered-with-paragraphs)
   - [Blockquotes](#blockquotes)
   - [Manual Line Breaks](#manual-line-breaks)
   - [Links](#links)
   - [Images](#images)
-
-
 
 ## What is Markdown?
 
@@ -333,7 +329,7 @@ Violets are blue.
 ### Images
 
 ```bash
-![alt text](./../img/ARC_BuildsOnStandards1.png "This is an ARC")
+![alt text](../../../../../assets/images/core-concepts/arc-builds-on-standards.png "This is an ARC")
 ```
 
-![alt text](./../img/ARC_BuildsOnStandards1.png "This is an ARC")
+![alt text](../../../../../assets/images/core-concepts/arc-builds-on-standards.png "This is an ARC")

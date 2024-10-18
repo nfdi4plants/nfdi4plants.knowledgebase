@@ -5,26 +5,19 @@ authors:
   - dominik-brilhaus
 ---
 
-## About this guide
-
+:::note[About this guide]
 This guide presents recommendations on managing one ARC on different devices and locations
+:::
 
-<div style="padding-bottom: 20px">
-    <a href="./index.html">
-        <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
-        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
-    </a>
-</div>
-
-## Before we can start
-
-☑️ You have a [DataPLANT](https://register.nfdi4plants.org) account
+:::tip[Before we can start]
+You have a [DataPLANT](https://register.nfdi4plants.org) account
+:::
 
 ## Where do I store my ARC?
 
 As with projects and data shared via cloud services or other platforms, ARCs do not exist in just one location. Depending on your preferences and current use-case you can choose one of various starting points: you can create your ARC in different locations (e.g. personal computer, shared server or directly in the DataHUB) and to do so you can use different tools (e.g. ARC Commander, ARCitect, by hand).
 
-<img src="./../img/ARC-storageLocations-timeline.drawio.png" style="width:90%; display: block; margin: auto; padding: 20 0">
+![](@images/guides/ARC-storageLocations-timeline.drawio.png)
 
 A typical scenario could look like this: You create your ARC on you personal computer, add structure with studies and assays as you see fit and upload the ARC to the DataHUB to have a save copy and be able to share it with collaboration partners. You acquire some large dataset, e.g. from an OMICS assay, which you do not want to store or analyze on your computer. Instead you keep this on a larger workstation in the lab or a server or high performance computing (HPC) cluster, where you would also run data analysis workflows. With the DataHUB as the meeting point, you can keep your ARC in sync across these locations. Simply download the ARC from the DataHUB to your server, add the dataset from there and synchronize it back to the DataHUB. You could consider your ARC stored in the DataHUB as the "ground truth" &ndash; even if you delete the ARCs on your local computer or the server, it will still be available in the DataHUB including the change history from those source locations.
 
@@ -43,4 +36,4 @@ TODO
 notes on working with branches
 -->
 
-<img src="./../img/ARC-storageLocations-withNotes.drawio.png" style="width:70%; display: block; margin: auto">
+![](@images/guides/ARC-storageLocations-withNotes.drawio.png)

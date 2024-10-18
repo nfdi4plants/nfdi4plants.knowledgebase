@@ -1,6 +1,8 @@
 ---
 title: "CWL Examples"
 lastUpdated: 2024-02-05
+authors:
+  - caro-ott
 ---
 
 # CWL Examples
