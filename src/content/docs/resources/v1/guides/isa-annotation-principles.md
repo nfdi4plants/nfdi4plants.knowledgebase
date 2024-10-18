@@ -50,7 +50,7 @@ div {
 Every annotation table must start with the Source Name column, which defines the input of your table. This input value must be a unique identifier for an organism or a sample.  
 The number of Source Name columns per table is limited to one.
 
-<img src="./images/AnnotationPrinciples/Source.svg">
+![](./images/AnnotationPrinciples/Source.svg">
 
 </div>
 
@@ -61,7 +61,7 @@ The number of Source Name columns per table is limited to one.
 Characteristic columns describe inherent properties of the source material, e.g., a certain strain or ecotype, but also the temperature an organism was exposed to.  
 You can use any number of Characteristic columns.
 
-<img src="./images/AnnotationPrinciples/Characteristics.svg">
+![](./images/AnnotationPrinciples/Characteristics.svg">
 
 </div>
 
@@ -72,7 +72,7 @@ You can use any number of Characteristic columns.
 Use Factor columns to describe independent variables that determine the specific output of your experiment when process and analysis were identical.  
 Most of the time, Factors are the most important building blocks for downstream computational analysis.
 
-<img src="./images/AnnotationPrinciples/Factor.svg">
+![](./images/AnnotationPrinciples/Factor.svg">
 
 </div>
 
@@ -84,7 +84,7 @@ Parameter columns describe steps in your experimental workflow, e.g., the temper
 You can use any number of Parameter columns.
 
 
-<img src="./images/AnnotationPrinciples/Parameter.svg">
+![](./images/AnnotationPrinciples/Parameter.svg">
 
 </div>
 
@@ -95,7 +95,7 @@ You can use any number of Parameter columns.
 Use these columns to list anything physical of a protocol that can be consumed, e.g. instrument names, software names, or reagents names.  
 You can use any number of Component columns.
 
-<img src="./images/AnnotationPrinciples/Component.svg">
+![](./images/AnnotationPrinciples/Component.svg">
 
 </div>
 
@@ -106,7 +106,7 @@ You can use any number of Component columns.
 Use Protocol REF columns to reference the protocol used in this table, i.e., the name of the protocol. Protocol Type columns define the type according to your preferred public repository, e.g., a growth protocol.  
 The number of columns for each subtype is limited to one per table.
 
-<img src="./images/AnnotationPrinciples/Protocol.svg">
+![](./images/AnnotationPrinciples/Protocol.svg">
 
 </div>
 
@@ -117,7 +117,7 @@ The number of columns for each subtype is limited to one per table.
 Per table only one output column is allowed, which can either be a Sample Name, a Raw Data File or a Derived Data File. Data files can be sources for computational workflows.  
 The value of this column must be a unique identifier.
 
-<img src="./images/AnnotationPrinciples/Output.svg">
+![](./images/AnnotationPrinciples/Output.svg">
 
 </div>
  

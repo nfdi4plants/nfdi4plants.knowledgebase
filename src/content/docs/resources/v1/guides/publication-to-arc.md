@@ -63,7 +63,7 @@ the underscore "_" could help to distinguish additional folders (["additional pa
 
 - To add a `LICENSE`, navigate to your ARC in DataHUB and click on "Add LICENSE" on the right sidebar menu(1).
 
-<img src="./images/datahub-add-license.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
+![](./images/datahub-add-license.drawio.svg)
 
 :::tip
 We recommend to focus on open access / CC-BY publications and datasets, unless you explicitly know, whether and how to re-use the data published elsewhere.
