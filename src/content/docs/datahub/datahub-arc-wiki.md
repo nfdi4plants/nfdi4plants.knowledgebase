@@ -1,5 +1,5 @@
 ---
-title: How to use your ARC's wiki
+title: Your ARC's wiki
 lastUpdated: 2024-07-22
 authors:
   - dominik-brilhaus
