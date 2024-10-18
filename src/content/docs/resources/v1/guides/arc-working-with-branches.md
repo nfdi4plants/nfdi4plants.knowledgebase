@@ -21,7 +21,7 @@ Don't forget to sync your branch with the "parent" branch to avoid merging confl
 
 In ARCitect you can create a new branch or switch to already existing ones by navigating to "Commit" on the left sidebar (1), then clicking on the dropdown menu (2) and selecting "Add Branch" (3) or the name of an already existing branch respectively (4). 
 
-![](./images/ARCitect_branches.drawio.svg)
+![](./images/arcitect-branches.drawio.svg)
 
 ## ARC Commander
 
