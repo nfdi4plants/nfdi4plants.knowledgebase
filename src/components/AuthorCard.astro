@@ -15,15 +15,12 @@ const {author} = Astro.props;
     <div class="flex items-center gap-3">
       {
         author.data.image ? (
-          <div class="rounded">
-            <div class="h-12 w-12">
-              <Image
-                height={48}
-                width={48}
-                src={author.data.image}
-                alt="Avatar Tailwind CSS Component" />
-            </div>
-          </div>
+          <Image
+            height={48}
+            width={48}
+            src={author.data.image}
+            alt="Avatar Tailwind CSS Component" 
+            class="rounded" />
         ) : (
           <div class="rounded defaultColor">
             <div class="h-12 w-12 flex items-center justify-center" class:list={[author.data.styling?.background, author.data.styling?.color]}>
