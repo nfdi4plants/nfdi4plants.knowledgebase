@@ -5,47 +5,46 @@ authors:
   - dominik-brilhaus
 ---
 
-## About this guide
-
+:::note[About this guide]
 In this guide we show you how you can actively handle large data files in your ARC using **[ARC Commander](./../implementation/ArcCommander.html)**.
+:::
 
-💡 If you use **[ARCitect](./../ARCitect-Manual/index.html)** to manage your ARCs, make sure to select or unselect the boxes `LFS` (in the "Download ARC" panel) or `Download LFS Files` (in the "Versions" panel) in order to allow or prevent syncing large files (LFS = large file storage).
+:::tip
+If you use **[ARCitect](./../ARCitect-Manual/index.html)** to manage your ARCs, make sure to select or unselect the boxes `LFS` (in the "Download ARC" panel) or `Download LFS Files` (in the "Versions" panel) in order to allow or prevent syncing large files (LFS = large file storage).
+:::
 
-<div style="padding-bottom: 20px">
-    <a href="./index.html">
-        <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-    </a>
-</div>
-
-## Before we can start
-
-☑️ You have created an ARC before using the [ARCitect](./../ARCitect-Manual/index.html) or [ARC Commander](./../implementation/ArcCommander.html)  
-☑️ You have a [DataPLANT](https://register.nfdi4plants.org) account  
-☑️ Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via personal access token
+:::tip[Before we can start]
+- You have created an ARC before using the [ARCitect](./../ARCitect-Manual/index.html) or [ARC Commander](./../implementation/ArcCommander.html)  
+- You have a [DataPLANT](https://register.nfdi4plants.org) account  
+- Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via personal access token
+:::
 
 ## Large File Storage (LFS)
 
 ARCs and the DataHUB come with a mechanism to sync and store large files called *Large File Storage (LFS)*. LFS is an efficient way to store your large data files. These files are called "LFS objects". Rather than checking every file during every `arc sync` (ARC Commander) or DataHUB Sync (ARCitect), the tools first check *whether there was a change at all*. And only if this is the case, it scans *what* was changed. This way it saves time and computing power compared to always scanning all large files for possible changes.
+
+
+<!-- TODO: Explain concept here and move instructions to ARCitect and ARC Commander manual -->
+
 
 ### ARCitect
 
 The ARCitect offers to activate or deactivate the use of LFS: 
 - in the "Download ARC" (1) menu via the "LFS" checkbox (2)
 
-<img src="./../img/ARCitect-download-lfs.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
+![](@images/guides/arcitect-download-lfs.drawio.png)
 
 - as well as in the "DataHUB Sync" menu (1) via the "Use Large File Storage" checkbox (2), which are available once an ARC has been open in ARCitect.
 
-<img src="./../img/ARCitect-datahub-sync-lfs.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
+![](@images/guides/arcitect-datahub-sync-lfs.drawio.png)
 
 In addition you can set a threshold (2) in megabytes (MB) for what you consider a large file in the "Commit" menu (1).
 
-<img src="./../img/ARCitect-lfs-threshold.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
+![](@images/guides/arcitect-lfs-threshold.drawio.png)
 
 You can also easily check which files in your ARC are flagged as LFS, by looking in the ARCitect tree panel (1).
 
-<img src="./../img/ARCitect-lfs-flag.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
+![](@images/guides/arcitect-lfs-flag.drawio.png)
 
 If you haven't downloaded the LFS file you can only open its pointer file. Unfortunately, this pointer file cannot be displayed in ARCitect but if you try to open it with a text editor (e.g. Notepad) it looks something like this:
 
@@ -57,11 +56,11 @@ size 22973898
 
 Finally, you can individually download large files via right-click -> "Download LFS File" (1)
 
-<img src="./../img/ARCitect-download-lfs-file-right-click.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
+![](@images/guides/arcitect-download-lfs-file-right-click.drawio.png)
 
 or you can also choose to download all large files from a directory by right clicking on the folder in the panel tree (1) and then "Download LFS Files" (2).
 
-<img src="./../img/ARCitect-download-lfs-from-directory.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
+![](@images/guides/arcitect-download-lfs-from-directory.drawio.png)
 
 
 ### ARC Commander
@@ -77,7 +76,9 @@ The threshold of 150 MB can easily be adjusted using the ARC Commander. For inst
 arc config set -g -n "general.gitlfsbytethreshold" -v "5000000"
 ```
 
-💡 The LFS system is also the reason why [git LFS](https://git-lfs.github.com/) needs to be installed prior to using the ARC Commander.
+:::tip
+The LFS system is also the reason why [git LFS](https://git-lfs.github.com/) needs to be installed prior to using the ARC Commander.
+:::
 
 #### Track files via LFS
 
@@ -94,11 +95,12 @@ git add .gitattributes
 
 4. Sync your ARC to the DataHUB via `arc sync`
 5. Open your ARC in the DataHUB and navigate to the folder with LFS objects and see them flagged as "LFS" (1).
-<img src="./../img/ARCitect-lfs-flagged.drawio.svg" style="width:100%;display: block;margin: auto;padding: 30px 0px;">
 
+![](@images/guides/arcitect-lfs-flagged.drawio.png)
 
-⚠️ Please avoid uploading large files without [git LFS](https://git-lfs.github.com/) (i.e. accidentally with pure git, when git-lfs is not available).
-
+:::caution
+Please avoid uploading large files without [git LFS](https://git-lfs.github.com/) (i.e. accidentally with pure git, when git-lfs is not available).
+:::
 
 #### Downloading an ARC without large data files
 
@@ -139,4 +141,4 @@ git lfs pull --include "*"
 #### Checking usage quota of LFS
 
 If at some point you would like to check how much free storage you have for your ARC, you can easily do so by navigating to your ARC in the DataHUB and clicking on "Project Storage" in the right sidebar (1).
-<img src="./../img/ARCitect-lfs-project-storage.drawio.svg" style="width:100%;display: block;margin: auto; padding: 30px 0px;">
+![](@images/guides/arcitect-lfs-project-storage.drawio.png)

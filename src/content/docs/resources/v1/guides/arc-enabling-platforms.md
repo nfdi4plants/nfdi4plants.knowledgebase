@@ -5,31 +5,21 @@ authors:
   - dominik-brilhaus
 ---
 
-<!-- http://127.0.0.1:8080/docs/guides/ARC-enablingPlatforms.html -->
-
-## About this guide
-
+:::note[About this guide]
 In this guide we explore how the ARC can help streamline data flows and project management in enabling platforms.
+:::
 
-<div style="padding-bottom: 20px">
-    <a href="./index.html">
-        <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
-        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-read">Read</span>
-    </a>
-</div>
-
-## Before we can start
-
-<div id="before-start">
-
+:::tip[Before we can start]
 It helps to be familiar with
+- the concept of the [ARC](./../implementation/AnnotatedResearchContext.html)
+- the different [ISA file types](./isa_FileTypes.html)
+- the [DataHUB](./../implementation/DataHub.html)
+:::
 
-- ☑️ the concept of the [ARC](./../implementation/AnnotatedResearchContext.html)
-- ☑️ the different [ISA file types](./isa_FileTypes.html)
-- ☑️ the [DataHUB](./../implementation/DataHub.html)
-- 💡 Note that this guide can only stay at a very abstract level. Feel free to contact us to work out a suitable solution for your platform together.
+:::note
+This guide can only stay at a very abstract level. Feel free to contact us to work out a suitable solution for your platform together.
+:::
 
-</div>
 
 ## Enabling Platforms
 
@@ -37,12 +27,9 @@ Central *enabling platforms* can range from small single-lab services to large i
 
 ## Project communication and data flow
 
-*For simplicity, in this guide we call researchers, clients and customers approaching the platform "collaborators".*
-
-<div style="height:40px; display: flex; align-items: center; justify-content: left;">
-  <img src="./../img/icons-characters-PhDStudent.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">collaborator
-  <img src="./../img/icons-characters-serviceProvider.drawio.png" style="width:30px; margin-left: 10px; margin-right:10px">platform team
-</div>
+:::note
+For simplicity, in this guide we call researchers, clients and customers approaching the platform "collaborators".
+:::
 
 Central platforms interact with many versatile collaborators. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings and emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted.
 
@@ -62,10 +49,7 @@ Here's a few tips to support your project management:
 During project collaboration a lot of information including metadata is exchanged.
 Here's an idea what your data flow could look like with the ARC:
 
-<div>
-  <img src="./../img/enablingPlatform-FileShare.drawio.png" style="width:60%;display: block;margin-left: auto;margin-right: auto;">
-  <figcaption>  </figcaption>
-</div>
+![](@images/guides/enablingPlatform-FileShare.drawio.png)
 
 1. Data exchange between collaborator and platform occurs through the ARC shared via the DataHUB. Depending on the phase of the project this involves different data and information.  
    (1a) The collaborator primarily describes the investigation's goal and study design, annotates the submitted samples with metadata and adds associated protocols. Once available the collaborator receives assayed data and relevant information.  
@@ -113,7 +97,9 @@ At some point you and your collaborator want to [publish the data](./../fundamen
 
 There are two major options: You can publish the current version of the ARC and receive a [DOI](./../DataHUB-Manual/datahub-data-publications.html). Some scientific journals require data to be published in  [domain-specific repositories](./../fundamentals/PublicDataRepositories.html), specialized for a certain type of assay. For this purpose converters help you export the relevant dataset and metadata into a repository-accepted format.
 
-💡 We are working on converters to read and reshape the relevant data and metadata of your ARC into a format accepted by domain-specific repositories. You can support this by telling us relevant repositories for your type of data or help creating [templates](./../SwateManual/Docs05-Templates.html).
+:::tip
+We are working on converters to read and reshape the relevant data and metadata of your ARC into a format accepted by domain-specific repositories. You can support this by telling us relevant repositories for your type of data or help creating [templates](./../SwateManual/Docs05-Templates.html).
+:::
 
 ## Preparing your platform to benefit from the ARC
 
@@ -161,13 +147,15 @@ Here we try to address a few questions from discussions with platform heads.
 You decide whether you prepare the ARC for you collaborators (scenario A) or meet them half the way (scenario B).
 Eventually this depends on different factors, e.g. the type of collaboration you agreed upon or whether or not the collaborators are used to work with the ARC and associated tools.
 
-![](../img/enablingPlatform-Timeline.drawio.png)
+![](@images/guides/enablingPlatform-Timeline.drawio.png)
 
 Following the exemplary scenario A, you could setup the ARC for your collaboration (1), add the relevant studies and assays (2) as well as templates (3) as discussed with them and ask them to complement the required metadata (4) and protocols (5) before you can run the assays and add the dataset (6).
 
 Alternatively, collaborators already working with ARCs could invite you to "their" ARC (exemplary scenario B). They can independently set up the ARC and fill metadata (4) based on your prepared templates (3).
 
-💡 In scenario B the collaborator might invite you to a very large ARC with data not really relevant for your platform-specific collaboration. In this case you might want to [exclude irrelevant data or avoid downloading large data](./../guides/arc_gitignore.html) when syncing the ARC.
+:::tip
+In scenario B the collaborator might invite you to a very large ARC with data not really relevant for your platform-specific collaboration. In this case you might want to [exclude irrelevant data or avoid downloading large data](./../guides/arc_gitignore.html) when syncing the ARC.
+:::
 
 **Can I retain my established naming convention for project management and data storage?**
 
@@ -177,7 +165,9 @@ You can simply name the ARCs the same way you are used to name your project fold
 
 This is also true for scenario B exemplified above. You can simply [fork](./../DataHUB-Manual/datahub-fork.html) the collaborator's ARC and rename it according to your system.
 
-💡 You might want to consider requiring your collaborators to name the assays (folder name or assay identifier) according to your project management system.
+:::tip
+You might want to consider requiring your collaborators to name the assays (folder name or assay identifier) according to your project management system.
+:::
 
 **How can I share ARCs with non-ARC collaborators?**
 
