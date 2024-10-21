@@ -6,6 +6,9 @@ sidebar:
   order: 1
 ---
 
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+
 Welcome to the DataPLANT "Getting Started" to create your own ARC's!
 
 ARCs are structured data containers that help you to organize your research data in a standardized way. They are based on existing standards, unifying machine and human readability!
@@ -18,8 +21,6 @@ Together we will follow a fictional researcher **Viola** on her journey to creat
 
 ## ARC structure 
 
-import ViolaSays from '@components/ViolaSays.astro'
-
 <ViolaSays>
 I recently attended a conference where my project partner introduced me to the Annotated Research Context (ARC). Intrigued by its potential, I was eager to set up my first ARC as soon as I got back to my lab. However, once there, I realized I only remembered the basic ARC structure and something about some isa.xlsx files. 😕
 
@@ -30,13 +31,18 @@ Follow me on my journey to create my first ARC!
 </ViolaSays>
 
 
-A basic ARC consists of the following components:
+![](@images/start-here/newDPfigures/arc-bag.svg)
 
-import BaseArc from '@components/mdx/BaseARC.mdx'
 
-<BaseArc />
+## Viola's project
 
-Note the four main folder types: `studies`, `assays`, `workflows`, and `runs`. Each of these folders contains specific information about the project, its studies, assays, and workflows.
+
+<ViolaSays>
+
+> I investigate the effect of the plant circadian clock on sugar metabolism in *W. mirabilis*. For my PhD project, which is part of an EU-funded consortium in Prof. Beetroot's lab, I acquired seeds from a South-African Botanical Society. I grew the plants under different light regimes, harvested leaves from a two-day time series experiment, extracted polar metabolites as well as RNA and submitted the samples to nearby core facilities for metabolomics and transcriptomics measurements, respectively. After a few weeks of iterative consultation with the facilities' heads as well as technicians and computational biologists involved, I received back a wealth of raw and processed data. From the data I produced figures and wrapped everything up to publish the results in the *Journal of Wonderful Plant Sciences*.
+
+</ViolaSays>
+
 
 
 
