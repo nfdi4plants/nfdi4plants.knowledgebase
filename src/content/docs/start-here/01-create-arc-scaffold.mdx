@@ -1,14 +1,14 @@
 ---
-title: Create an ARC Scaffold
+title: Create an ARC
 sidebar:
   order: 1
-  
+authors:
+  - dominik-brilhaus
 ---
 
 import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
-
 
 ## The ARC Scaffold
 
@@ -17,13 +17,11 @@ import { Card } from '@astrojs/starlight/components';
 
 ## Everything is a file
 
-A new ARC consists of the following components:
-
 import NewARC from '@components/mdx/NewARC.mdx'
 
 <NewARC />
 
-Each of the folders contains specific information about the project, its studies, assays, and workflows.
+An ARC represents an entire investigation. At the top level, it includes directories named “studies,” “assays,” “workflows,” and “runs,” along with an investigation metadata table that holds all administrative metadata.
 
 ## Create a new ARC using ARCitect
 
@@ -46,8 +44,30 @@ import ARCitectInstallation from '../arcitect/installation.mdx'
 
 <Steps>
 
-1. Open the ARCitect
+1. Start the **ARCitect** app
 2. In the sidebar on the left, click on `New ARC`
-3. ...
+3. Select a location and name for your ARC
 
 </Steps>
+
+<Card title="Your ARC's name">
+
+By default, your ARC's name will be used:
+
+1. for the ARC folder on your computer
+2. as the identifier for your investigation
+
+:::tip
+- Use a short acronym  
+- Avoid spaces and special characters in your ARC's name
+- Avoid administrative metadata (name, data, etc.)
+- Use a combination of keywords maybe grant number
+:::
+
+</Card>
+
+<ViolaSays>
+
+To keep it simple, I call my ARC "AthalianaSugarClock"
+
+</ViolaSays>
