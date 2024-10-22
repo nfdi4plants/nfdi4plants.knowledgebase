@@ -2,23 +2,25 @@
 title: Getting Started
 authors:
   - kevin-frey
+  - dominik-brilhaus
 sidebar:
-  order: 1
+  order: 0
 ---
 
-Welcome to the DataPLANT "Getting Started" to create your own ARC's!
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
 
-ARCs are structured data containers that help you to organize your research data in a standardized way. They are based on existing standards, unifying machine and human readability!
+Welcome to the DataPLANT "Getting Started" to create your own ARCs!
 
-Starting out with ARCs can be a bit overwhelming, but don't worry! We are here to help you with the first steps. This guide will walk you through the process of creating your first ARC, adding data to it, and uploading it to the DataHub.
+ARCs are structured data containers that help you organize your research data in a standardized way. They are based on existing standards, unifying machine and human readability!
+
+Starting out with ARCs can be a bit overwhelming, but don't worry! We are here to help you with the first steps. This guide will walk you through the process of creating your first ARC, adding data to it, and uploading it to the DataHUB.
 
 Together we will follow a fictional researcher **Viola** on her journey to create her first ARC. Viola is a plant scientist and has heard about ARCs and wants to give them a try.
 
 ---
 
 ## ARC structure 
-
-import ViolaSays from '@components/ViolaSays.astro'
 
 <ViolaSays>
 I recently attended a conference where my project partner introduced me to the Annotated Research Context (ARC). Intrigued by its potential, I was eager to set up my first ARC as soon as I got back to my lab. However, once there, I realized I only remembered the basic ARC structure and something about some isa.xlsx files. 😕
@@ -29,16 +31,13 @@ Follow me on my journey to create my first ARC!
 
 </ViolaSays>
 
-
-A basic ARC consists of the following components:
-
-import BaseArc from '@components/mdx/BaseARC.mdx'
-
-<BaseArc />
-
-Note the four main folder types: `studies`, `assays`, `workflows`, and `runs`. Each of these folders contains specific information about the project, its studies, assays, and workflows.
+![](@images/start-here/newDPfigures/arc-bag.svg)
 
 
+## Viola's project
 
+<ViolaSays>
 
+In my project I investigate the effect of the plant circadian clock on sugar metabolism in *W. mirabilis*. For my PhD project, which is part of an EU-funded consortium in Prof. Beetroot's lab, I acquired seeds from a South-African Botanical Society. I grew the plants under different light regimes, harvested leaves from a two-day time series experiment, extracted polar metabolites as well as RNA and submitted the samples to nearby core facilities for metabolomics and transcriptomics measurements, respectively. After a few weeks of iterative consultation with the facilities' heads as well as technicians and computational biologists involved, I received back a wealth of raw and processed data. From the data I produced figures and wrapped everything up to publish the results in the *Journal of Wonderful Plant Sciences*.
 
+</ViolaSays>
