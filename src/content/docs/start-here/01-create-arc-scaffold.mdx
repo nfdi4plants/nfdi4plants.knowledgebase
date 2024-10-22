@@ -10,24 +10,28 @@ import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 
-## The ARC Scaffold
+import NewARC from '@components/mdx/NewARC.mdx'
+
+
+{/* ## The ARC Scaffold */}
 
 ![](@images/start-here/arc-scaffold.svg)
 
+{/* 
 
 ## Everything is a file
 
-import NewARC from '@components/mdx/NewARC.mdx'
 
-<NewARC />
+
+<NewARC /> */}
 
 An ARC represents an entire investigation. At the top level, it includes directories named “studies,” “assays,” “workflows,” and “runs,” along with an investigation metadata table that holds all administrative metadata.
 
-## Create a new ARC using ARCitect
+{/* ## Create a new ARC */}
 
-The easiest way to create a new ARC is via ARCitect.
+The easiest way to create a new ARC is via **ARCitect**.
 
-<Card title="ARCitect installation">
+<Card title="ARCitect installation" icon="setting">
 
 If ARCitect is not yet installed on your computer, 
 
@@ -42,20 +46,30 @@ import ARCitectInstallation from '../arcitect/installation.mdx'
 
 </Card>
 
+<Card icon="pen" title="ARCitect">
 <Steps>
 
 1. Start the **ARCitect** app
 2. In the sidebar on the left, click on `New ARC`
 3. Select a location and name for your ARC
+4. Click `Save`
+5. ARCitect creates the base ARC folder on your computer and opens it right away
+  
+    <NewARC />
+
+    :::note
+    The `isa.investigation.xlsx` is not displayed inside ARCitect.
+    :::
 
 </Steps>
+</Card>
 
-<Card title="Your ARC's name">
+<Card title="Your ARC's name" icon="approve-check" >
 
 By default, your ARC's name will be used:
 
 1. for the ARC folder on your computer
-2. as the identifier for your investigation
+2. as the **investigation identifier** 
 
 :::tip
 - Use a short acronym  
@@ -64,10 +78,11 @@ By default, your ARC's name will be used:
 - Use a combination of keywords maybe grant number
 :::
 
-</Card>
-
 <ViolaSays>
 
 To keep it simple, I call my ARC "AthalianaSugarClock"
 
 </ViolaSays>
+
+</Card>
+

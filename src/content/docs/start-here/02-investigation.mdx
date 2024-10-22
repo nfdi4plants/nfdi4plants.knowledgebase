@@ -12,40 +12,56 @@ import { Card } from '@astrojs/starlight/components';
 
 The investigation level allows you to record project metadata such as the project title and description, responsible contacts and associated publications.
 
+<Card icon="pen" title="ARCitect">
+
 <Steps>
 
 1. Inside **ARCitect**, click on the ARC's name on top of the file tree
 2. The right panel shows the investigation form
+3. Here you can add the metadata about your investigation
 
 </Steps>
-
-
-<Card title="Investigation Metadata">
-
-##### Identifier
-
-:::note
-The Investigation identifier was automatically added based on your ARC's name
-:::
-
-##### Title
-
-- Meaningful project title (with blanks)
-- Avoid administrative metadata
-
-##### Description
-
-- Concise project abstract 
-
-##### Contacts
-
-- Persons responsible for the project 
 
 </Card>
 
 
+<Card icon="approve-check" title="Investigation Metadata">
+
+:::note[Identifier]
+The Investigation identifier was automatically added based on your ARC's name
+:::
+
+#### Title
+
+- Meaningful project title (with blanks)
+- Avoid administrative metadata
+
 <ViolaSays>
 
-The **Title** of my project is "The effect of the circadian clock on sugar metabolism in *A. thaliana*".
+The **Title** of my project is _The effect of the circadian clock on sugar metabolism in *A. thaliana*_.
 
 </ViolaSays>
+
+#### Description
+
+- Concise project abstract 
+
+<ViolaSays>
+
+We investigate the effect of the plant circadian clock on sugar metabolism in *A. thaliana*. We grew *A. thaliana* plants under diurnal vs. continuous-light conditions in a two-day time series experiment. Leave protein and sugar pools were assayed via proteomics and metabolomics.
+
+</ViolaSays>
+
+#### Contacts
+
+- Persons responsible for the project 
+
+<ViolaSays>
+
+I add my PI *Prof. Jasmine Beetroot*, our collaboration partner *Oliver Sage* and myself as **Contacts**.
+
+</ViolaSays>
+
+</Card>
+
+
