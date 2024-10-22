@@ -1,5 +1,5 @@
 ---
-title: Describe the study samples
+title: Add a study
 sidebar:
   order: 3
 authors:
@@ -9,35 +9,100 @@ authors:
 import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
 
-In `studies` you can describe material and resources used within your studies.
+In `studies` you can describe materials and resources. In case your investigation contains multiple studies, each of these is placed in an individual subdirectory.
 
+![](@images/start-here/arc-prototypic-study-divide-conquer.svg)
+
+<Card icon="pen" title="ARCitect">
+
+<Steps>
+
+1. Click on the plus icon next to `studies`
+2. Enter a name for the `New Study`
+
+    <ViolaSays>
+
+    AthalianaColdStress
+
+    </ViolaSays>
+
+3. Click `New Study`
+4. ARCitect adds the study `AthalianaColdStress` including the `Protocols` and `Resources` folders
+  
+    <FileTree>
+    
+    - AthalianaColdStressSugar
+      - **studies**
+        - **AthalianaColdStress**
+          - **Protocols**
+          - **Resources**
+          - README.md
+          - isa.study.xlsx
+
+      - ...
+    
+    </FileTree>
+
+    :::note
+    The `isa.study.xlsx` is not displayed inside ARCitect.
+    :::
+
+5. Click on the study's name (`AthalianaColdStress`) in the file tree to open the study form in the right panel
+6. Here you can add metadata about your study
+
+</Steps>
+
+</Card>
+
+{/* 
 <ViolaSays>
 
-- the source of my seeds (South-African Botanical Society)
 - how I grew the plants
 - the design of my experiment (two-day time series, etc.)
 
 </ViolaSays>
-
-![](@images/start-here/arc-prototypic-study-divide-conquer.svg)
-
-In case your investigation contains more than one study, each of these studies is placed in an individual subdirectory. The "resources" directory allows you to store material samples or external data as virtual sample files. 
+ */}
 
 
-
-{/* Every study contains one `isa.study.xlsx` file to specify the characteristics of all material and resources. Resources described in a study file can be the input for one or multiple assays or workflows. The workbook contains (at least) two worksheets:
-
-- "CircadianClock_Light regimes": One or more worksheets, depending on the number of used protocols, to annotate the properties of your source material following the ISA model. The sheet name is not obligatory to be the exact same as the "Study Identifier". 
-
-*/}
-
-![](@images/start-here/arc-prototypic-study-identify.svg)
-
-## Protocols
+<Card icon="approve-check" title="Protocols">
 
 You can use the protocol subdirectory to store free-text protocols that describe how the samples or materials were created.
 
+![](@images/start-here/arc-prototypic-study-identify.svg)
+
+</Card>
+
+<Card icon="pen" title="ARCitect">
+
+<Steps>
+
+1. Richt-click on the `Protocols` folder and select `Import Files` from the context menu 
+3. Select the file `growth_protocol.md` from the demo data and click `Open`.
+4. The file is added to your ARC.
+  
+    <FileTree>
+    
+    - AthalianaColdStressSugar
+      - **studies**
+        - **AthalianaColdStress**
+          - **Protocols**
+            - growth_protocol.md
+
+      - ...
+    
+    </FileTree>
+
+5. A click on the protocol's file name opens a text editor in the right panel.
+
+
+</Steps>
+
+</Card>
+
+
+<Card icon="approve-check" title="Table representation">
 
 ![](@images/start-here/arc-prototypic-metadata-table-representation.svg)
 
@@ -48,6 +113,8 @@ You can use the protocol subdirectory to store free-text protocols that describe
 :::tip
 While it is recommended to store the protocol in an open format (`.md`, `.txt`, `.docx`, …), everything is possible also an URI to an electronic lab notebook.
 :::
+
+</Card>
 
 ## Parameterizing the study
 

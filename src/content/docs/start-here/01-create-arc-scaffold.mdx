@@ -9,6 +9,7 @@ authors:
 import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
 
 import NewARC from '@components/mdx/NewARC.mdx'
 
@@ -20,8 +21,6 @@ import NewARC from '@components/mdx/NewARC.mdx'
 {/* 
 
 ## Everything is a file
-
-
 
 <NewARC /> */}
 
@@ -52,10 +51,26 @@ import ARCitectInstallation from '../arcitect/installation.mdx'
 1. Start the **ARCitect** app
 2. In the sidebar on the left, click on `New ARC`
 3. Select a location and name for your ARC
+
+    <ViolaSays>
+
+    To keep it simple, I call my ARC "AthalianaColdStressSugar"
+
+    </ViolaSays>
+
 4. Click `Save`
 5. ARCitect creates the base ARC folder on your computer and opens it right away
   
-    <NewARC />
+    <FileTree>
+    
+    - AthalianaColdStressSugar
+      - **studies**
+      - **assays**
+      - **workflows**
+      - **runs**
+      - isa.investigation.xlsx
+    
+    </FileTree>
 
     :::note
     The `isa.investigation.xlsx` is not displayed inside ARCitect.
@@ -77,12 +92,6 @@ By default, your ARC's name will be used:
 - Avoid administrative metadata (name, data, etc.)
 - Use a combination of keywords maybe grant number
 :::
-
-<ViolaSays>
-
-To keep it simple, I call my ARC "AthalianaColdStressSugar"
-
-</ViolaSays>
 
 </Card>
 

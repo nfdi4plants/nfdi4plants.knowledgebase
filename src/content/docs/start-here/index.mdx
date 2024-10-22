@@ -9,6 +9,7 @@ sidebar:
 
 import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
 
 Welcome to the DataPLANT "Getting Started" guide to create your own ARC!
 
@@ -19,7 +20,6 @@ ARCs are structured data containers, so-called FAIR Digital Objects. ARCs help y
 Starting out with ARCs can be a bit overwhelming, but don't worry! We are here to help you with the first steps. This guide will walk you through the process of creating your first ARC, adding data to it, and sharing it with collaborators.
 
 Together we will follow a fictional researcher **Viola** on her journey to create her first ARC. Viola is a plant scientist and has heard about ARCs and wants to give them a try.
-
 
 <ViolaSays>
 I recently attended a conference where my project partner introduced me to the Annotated Research Context (ARC). Intrigued by its potential, I was eager to set up my first ARC as soon as I got back to my lab. However, once there, I realized I only remembered the basic ARC structure and something about some ISA metadata. 😕
@@ -33,11 +33,27 @@ Follow me on my journey to create my first ARC!
 
 ## Viola's PhD Project
 
+![](@images/start-here/arc-prototypic.svg)
+
 <ViolaSays>
 
 For my PhD I investigate the effect of cold stress on sugar metabolism in *A. thaliana*. I grew the plants under ambient (25 °C) and cold stress (6 °C) conditions, harvested leaves from a two-day time series experiment, extracted proteins and soluble sugars and submitted the samples to nearby core facilities for proteomics and metabolomics measurements, respectively. After a few weeks of iterative consultation with the facilities' heads as well as technicians and computational biologists, I received back a wealth of raw and processed data. From the data I produced figures using a mix of code and statistical software. Now we want to wrap everything up to publish the results in the *Journal of Wonderful Plant Sciences*.
 
 </ViolaSays>
+
+
+<Card title="Demo data" icon="setting">
+
+{/* TODO: make public */}
+
+Please download and unzip this unstructured demo data set: 
+
+https://git.nfdi4plants.org/teaching/Violas-PhD-Project/-/archive/main/Violas-PhD-Project-main.zip
+
+
+</Card>
+
+
 
 
 
