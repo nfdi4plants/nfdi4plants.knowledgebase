@@ -1,0 +1,158 @@
+---
+title: Installation
+lastUpdated: 2024-10-22
+authors:
+  - dominik-brilhaus
+  - hannah-dörpholz
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+
+<Tabs syncKey="os">
+<TabItem label="Windows" icon='seti:windows'>
+
+<Steps>
+1. Head to the ARCitect's GitHub [release page](https://github.com/nfdi4plants/ARCitect/releases/latest).
+2. Under "Assets" Download the latest release for Windows (`ARCitect-x.x.x-win.zip`).
+3. In Windows Explorer, open the folder where you downloaded the ARCitect
+4. Unzip (`Right click` ➞ `Extract All..`) the folder (`ARCitect-x.x.x-win.zip`). You can move this folder to another location (e.g. `Program files`).
+5. Start the ARCitect, by clicking the `ARCitect` application.
+
+6. Once started, you see a Windows Defender warning. To proceed, click "More info" and then "Run anyway".
+
+    ![](@images/arcitect/win-defender.png)
+
+7. Windows Defender Firewall further asks you to allow network communication. This enables communication with the [DataHUB](./../implementation/DataHub.html).
+
+    ![](@images/arcitect/win-firewall.png)
+
+    :::tip
+    You might have to select the app from your taskbar.
+    :::
+</Steps>
+
+</TabItem>
+<TabItem label="Macos" icon="apple">
+
+
+:::note[Git Installation]
+Please install <a href="https://git-scm.com/downloads" target="_blank">Git</a> before installing the ARCitect.
+    :::tip
+    For macOS we recommend to install via homebrew as described on the site above.
+:::
+
+<Steps>
+
+import MacOSPopup from "@images/arcitect/macos-popup-dev.png"
+import MacOSSecurity from "@images/arcitect/macos-security.png"
+import MacOSPopupNetwork from "@images/arcitect/macos-popup-network.png"
+
+1. Head to the ARCitect's GitHub <a href="https://github.com/nfdi4plants/ARCitect/releases/latest" target="_blank">release page</a>.
+
+2. Download the macOS installer ARCitect-x.x.x.dmg
+
+3. Double-click the installer ARCitect-x.x.x.dmg and move the app to your Applications folder.
+
+4. Starting the ARCitect for the first time
+
+    :::note[Unidentified developer]
+    When starting the ARCitect for the first time, you are warned about an unidentified developer
+
+    <img src={MacOSPopup.src} style="width:25%;display: block; margin: 20px" />
+
+    Please navigate to the Privacy & Security panel in your System Settings to "Open Anyway".
+
+    <img src={MacOSSecurity.src} style="width:50%;display: block; margin: 20px" />
+    :::
+
+    :::note[Incoming network connections]
+    Every time you start the ARCitect, you are asked to accept incoming network connections.
+
+    <img src={MacOSPopupNetwork.src} style="width:25%;display: block; margin: 20px" />
+
+        :::tip
+        This enables communication with the DataHUB.
+    
+</Steps>
+
+
+
+</TabItem>
+
+<TabItem label="Linux" icon='linux'>
+
+:::note[Git Installation]
+Please install <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.github.com/" target="_blank">Git LFS</a> before installing the ARCitect.
+    :::tip
+    For Linux we recommend to install via homebrew as described on the site above.
+    :::
+
+<Steps>
+
+1. Head to the ARCitect's GitHub <a href="https://github.com/nfdi4plants/ARCitect/releases/latest" target="_blank">release page</a>.
+2. Download the Linux AppImage ARCitect-x.x.x.AppImage
+3. (optional) If you run Ubuntu 22.04 you need to download an additional library. Ubuntu 22.04 can't run AppImage files without the not natively installed FUSE library. To fix this, install the necessary library. To do this you need root permissions.
+
+    ```bash title="Requires root permission"
+    sudo apt install libfuse2
+    ```
+
+4. Make the ARCitect executable
+
+    You need to make the downloaded AppImage executable before you can run it.
+    You can use the user interface or the command line to do this.
+    
+    <Tabs>
+
+    <TabItem label="User Interface">
+    <Steps>
+    1. open the folder where the AppImage is currently saved (likely in Downloads)
+    2. (optional) move the file to a location where you want it saved
+    3. right-click the file and select properties
+
+        ![](@images/arcitect/linux-rightclick.png)
+
+    4. go to the "permissions" tab and tick the field "execute"
+
+        ![](@images/arcitect/linux-permissions.png)
+
+    5. now double-clicking the AppImage should start the ARCitect
+
+        ![](@images/arcitect/linux-checkbox.png)
+
+    </Steps>
+    </TabItem>
+
+    <TabItem label="Command Line">
+    <Steps>
+
+    1. open a terminal
+    2. move to the directory where you have saved your AppImage (e.g. Downloads)
+
+        ```bash
+        cd Downloads
+        ```
+
+    3. Make the file executable (use the appropriate name of the file)
+
+        ```bash
+        chmod u+x ARCitect-x.x.x.AppImage
+        ```
+
+    4. Now double-clicking the AppImage or running the following command (with the appropriate file name) should start the ARCitect
+
+        ```bash
+        ./ARCitect-x.x.x.AppImage
+        ```
+
+    </Steps>
+    </TabItem>
+
+    </Tabs>
+</Steps>
+
+</TabItem>
+
+</Tabs>
