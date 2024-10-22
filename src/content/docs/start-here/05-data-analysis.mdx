@@ -6,13 +6,16 @@ sidebar:
 
 import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 
 ![](@images/start-here/arc-prototypic-workflows1.svg)
 
 ![](@images/start-here/arc-prototypic-workflows2.svg)
 
-## Option I: Create a virtual assay
+
+<Tabs syncKey="os">
+<TabItem label="Option I: Create a virtual assay">
 
 
 ![](@images/start-here/arc-prototypic-workflows-virtual.svg)
@@ -21,7 +24,10 @@ import { Steps } from '@astrojs/starlight/components';
 A computational workflow can be treated as a protocol
 :::
 
-## Option II: Create a run and a workflow
+</TabItem>
+
+
+<TabItem label="Option II: Create a run and a workflow">
 
 ![](@images/start-here/arc-prototypic-workflows-cwl1.svg)
 
@@ -44,3 +50,7 @@ Viola received for her transcriptome and metabolome assays various processed dat
 ### Runs
 
 After Viola generated her plots, she placed them in individual subdirectories, specific to the run they were generated with. In general, you can use the runs folder to store plots, tables, or similar result files that derive from computations on study, assay, external data or other runs.
+
+</TabItem>
+
+</Tabs>

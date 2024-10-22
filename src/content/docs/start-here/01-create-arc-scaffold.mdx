@@ -1,11 +1,13 @@
 ---
 title: Create an ARC Scaffold
 sidebar:
-  order: 1.5
+  order: 1
+  
 ---
 
 import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
 
 
 ## The ARC Scaffold
@@ -23,7 +25,24 @@ import NewARC from '@components/mdx/NewARC.mdx'
 
 Each of the folders contains specific information about the project, its studies, assays, and workflows.
 
-## Create the ARC via ARCitect
+## Create a new ARC using ARCitect
+
+The easiest way to create a new ARC is via ARCitect.
+
+<Card title="ARCitect installation">
+
+If ARCitect is not yet installed on your computer, 
+
+<details>
+<summary>please follow these instructions to install ARCitect</summary>
+
+import ARCitectInstallation from '../arcitect/installation.mdx'
+
+<ARCitectInstallation />
+
+</details>
+
+</Card>
 
 <Steps>
 

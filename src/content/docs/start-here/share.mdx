@@ -6,6 +6,7 @@ sidebar:
 
 import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
 
 
 ## Using the PLANTDataHUB for collaboration
@@ -25,13 +26,18 @@ import { Steps } from '@astrojs/starlight/components';
 ![](@images/start-here/collabotarion-git-toBeReplaced.svg) */
 }
 
-## Register with DataPLANT
+
+<Card title="DataPLANT Account">
+
+If you do not have an account, please register with DataPLANT to use the PLANTDataHUB
 
 <details>
-<summary>If you do not have an account, please register with DataPLANT to use the PLANTDataHUB</summary>
+<summary>Follow these instructions to sign up</summary>
 
 import DataHUBAccount from '../datahub/datahub-account.mdx'
 
 <DataHUBAccount />
 
 </details>
+
+</Card>
