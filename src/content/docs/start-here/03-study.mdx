@@ -10,26 +10,35 @@ import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 
+
+In `studies` you can collect material and resources used within your studies.
+
+<ViolaSays>
+
+- the source of my seeds (South-African Botanical Society)
+- how I grew the plants
+- the design of my experiment (two-day time series, etc.)
+
+</ViolaSays>
+
 ![](@images/start-here/arc-prototypic-study-divide-conquer.svg)
 
-## Studies
+In case your investigation contains more than one study, each of these studies is placed in an individual subdirectory. The "resources" directory allows you to store material samples or external data as virtual sample files. 
 
-In the `studies` (sub)folders you can collect material and resources used within your studies. 
 
-Corresponding information in Viola's project include the source of her seeds (South-African Botanical Society), how she grew the plants, and the design of the experiment (two-day time series, etc.). 
 
-In case your investigation contains more than one study, each of these studies is placed in an individual subdirectory. The "resources" directory allows you to store material samples or external data as virtual sample files. You can use the protocol subdirectory to store free-text protocols that describe how the samples or materials were created.
+{/* Every study contains one `isa.study.xlsx` file to specify the characteristics of all material and resources. Resources described in a study file can be the input for one or multiple assays or workflows. The workbook contains (at least) two worksheets:
+
+- "CircadianClock_Light regimes": One or more worksheets, depending on the number of used protocols, to annotate the properties of your source material following the ISA model. The sheet name is not obligatory to be the exact same as the "Study Identifier". 
+
+*/}
 
 ![](@images/start-here/arc-prototypic-study-identify.svg)
 
-## isa.study.xlsx
-
-Every study contains one `isa.study.xlsx` file to specify the characteristics of all material and resources. Resources described in a study file can be the input for one or multiple assays or workflows. The workbook contains (at least) two worksheets:
-
-- "CircadianClock_Light regimes": One or more worksheets, depending on the number of used protocols, to annotate the properties of your source material following the ISA model. The sheet name is not obligatory to be the exact same as the "Study Identifier". While this can be done manually, we recommend using our ontology supported annotation tool [Swate](swate_QuickStart.html).
-- "Study": Viola collected the administrative metadata of her study in this worksheet. This information can later be transferred into the `isa.investigation.xlsx` using the [ARC Commander][kb-ArcCommander].
-
 ## Protocols
+
+You can use the protocol subdirectory to store free-text protocols that describe how the samples or materials were created.
+
 
 ![](@images/start-here/arc-prototypic-metadata-table-representation.svg)
 
