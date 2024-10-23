@@ -2,7 +2,7 @@
 layout: slides
 title: DataHUB concepts and terminology
 marp: true
-theme: marp-theme_dataplant-ceplas-mibinet-ccby
+theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 date: 2023-12-05

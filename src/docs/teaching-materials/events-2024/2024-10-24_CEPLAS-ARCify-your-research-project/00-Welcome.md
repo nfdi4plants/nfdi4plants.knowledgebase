@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: marp-theme_dataplant-ceplas-mibinet-ccby
+theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 title: Welcome and Intro
@@ -10,13 +10,7 @@ author:
   orcid: https://orcid.org/0000-0001-9021-3197
 ---
 
-<!-- 
-TODO before final
-- update agenda
-
--->
-
-# DataPLANT Tool-Workshop
+# CEPLAS ARC Training
 
 <!--  _color: white; -->
 <!-- _paginate: false -->
@@ -24,49 +18,23 @@ TODO before final
 
 <br>
 
-April, 2024
+October, 2024
 
-Sabrina Zander, MibiNet
-Dominik Brilhaus, CEPLAS
+Dominik Brilhaus (CEPLAS)
+Sabrina Zander (MibiNet)
 
-
-![bg fit](./../../../img/background_title_MibiNet_ceplas.drawio.svg)
+![bg fit](./../../../img/background_title_ceplas.drawio.svg)
 
 ---
 
-# Tentative agenda
+# BYOD &ndash; Goals
 
-<div class="two-columns" style="font-size: 18px">
-<div class="columns-left">
+- First few steps into ARC ecosystem
+- Move existing datasets into ARCs
+- Share them via the DataHUB
+- Annotate with metadata
 
-### Morning
-
-Time | Topics
--------- | --------
-09:00 - 09:15 | Welcome, Intro RDM and NFDI
-09:15 - 09:45 | Overview DataPLANT, and DataPLANT Tool chain
-09:45 - 10:30 | Hands-on ARCitect
-10:30 - 10:45 | *Short break* :coffee:
-10:45 - 11:45 | Intro and Hands-on DataHUB
-11:45 - 12:00 | Q & A
-
-</div>
-
-<div class="columns-right">
-
-### Afternoon
-
-Time | Topics
--------- | --------
-12:00 - 13:00 | *Lunch break* :pizza:
-13:00 - 14:00 | Intro and Hands-on Metadata annotation with SWATE
-14:00 - 15:00 | Create your own ARC
-15:00 - 15:15 | *Short break* :coffee:
-15:15 - 16:30 | Create your own ARC
-16:30 - 17:00 | Q & A and wrap-up
-
-</div>
-</div>
+![bg right w:500](./../../../img/ceplas-ARCs.drawio.svg)
 
 ---
 
@@ -81,7 +49,7 @@ Time | Topics
   </div>
 
   <div>
-  <a href="https://pad.hhu.de/gXvgd5yETWa3Ks34dM3KCw?view" target="_blank"> <img src="./qr-code_pad_mibinet.png"></a>
+  <a href="https://pad.hhu.de/8bwBC7pyRL2tFFOWMQzm1Q?edit" target="_blank"> <img src="./qr-code-pad.png"></a>
   </div>
 </div>
 
@@ -89,7 +57,7 @@ Time | Topics
 
 # Training Materials
 
-Slides are shared via [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/2024-04-11_MibiNet-CEPLAS-ARC-Trainings/)
+Slides are shared via [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/2024-10-24_CEPLAS-ARCify-your-research-project/)
 
 ---
 
@@ -122,33 +90,3 @@ Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TR
   <img style="height:100px;margin-right:50px" src='https://trr341.uni-koeln.de/sites/crc_trr_341/TRR341_logo.png'/>
   <img style="height:70px;margin-right:50px" src='https://www.sfb1535.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Biologie/SFB1535/Bilder/MibiNet.png'/>
 </div>
-
----
-
-# Introduce yourself
-
-- Lab
-- MibiNet / CEPLAS / TRR / ?
-- Used code / programming language before
-- Experience with Git / GitLab / GitHub?
-- Have an ORCID
-- My motivation / expectation
-- My favorite lab assay
-
----
-
-# Let's draw a typical lab workflow :pencil:
-
-
----
-
-
-# BYOD &ndash; Goals
-
-- Move existing datasets into ARCs
-- Share them via the DataHUB
-- First few steps into ARCs
-- You or collaborators can pick them up from there
-
-![bg right w:500](./../../../img/ceplas-ARCs.drawio.svg)
-

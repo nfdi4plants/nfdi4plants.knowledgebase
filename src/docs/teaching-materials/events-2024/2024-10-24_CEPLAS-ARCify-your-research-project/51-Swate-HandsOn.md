@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: marp-theme_dataplant-ceplas-mibinet-ccby
+theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 title: Swate hands-on
@@ -10,9 +10,6 @@ author:
   orcid: https://orcid.org/0000-0001-9021-3197
 - name: Kevin Frey
   github: https://github.com/Freymaurer
-  orcid: https://orcid.org/0000-0002-8493-1077
-- name: Martin Kuhl
-  github: https://github.com/Martin-Kuhl
   orcid: https://orcid.org/0000-0002-8493-1077
 - name: Sabrina Zander
   orcid: https://orcid.org/0009-0000-4569-6126
@@ -52,14 +49,6 @@ author:
 
 ---
 
-# Alternative: Use Swate standalone
-
-Open [Swate standalone](https://swate-alpha.nfdi4plants.org) in web browser
-
-:bulb: Alternatively, you can use Swate as [Excel Plugin](./../../../SwateManual/Docs01-Installing-Swate.html), but this is outdated
-
----
-
 # Swate Overview
 
 ![width:1300](./../../../img/Swate_a_Overview.png)
@@ -69,29 +58,8 @@ Open [Swate standalone](https://swate-alpha.nfdi4plants.org) in web browser
 # Let's annotate the plant samples first
 
 1. Check out the lab notes `studies/talinum_drought/protocols/plant_material.txt`
-
-<div class="two-columns">
-
-<div>
-
-*ARCitect*
-
 2. Select the study `talinum_drought`
-3. Add a new table
-
-</div>
-
-<div>
-
-*Swate standalone*
-
-Import the empty `studies/talinum_drought/isa.study.xlsx`
-
-![width:600](./../../../img/Swate_a_Home.png)
-
-</div>
-
-</div>
+3. Add a new table sheet at the bottom
 
 ---
 
@@ -297,51 +265,3 @@ Try to fill the two sheets with the protocol details:
 
 Go ahead, adjust the *Building Blocks* you want to use to describe your experiment as you see fit.
 Insert values using Swate Term search and add input and output.
-<!-- 
-
----
-
-## File Export 
-
-- Click **save** button to download the file 
-- file can also be exported as [ISA-JSON](https://isa-specs.readthedocs.io/en/latest/isajson.html#) file  
----
-
-## Re-use a protocol (process.json)
-
-1. Import the empty `assays/metabolomics/isa.assay.xlsx)` workbook in Swate.
-2. Navigate to *Templates* in the Navbar and scroll down to "Add template(s) from file."
-3. Click <kbd>Upload protocol</kbd>
-4. Select the file "swate_agilent_gc.json" from the demo data.
-5. Click <kbd>Insert json</kbd>
-
-![bg right:25% w:300px](./../../../img/swate-tab-templates.png)
-
-:bulb: This adds not only an empty template, but a filled out table with keys (headers) and values (cells).
-
----
-
-## A small detour on "Excel Tables"
-
-Swate uses Excel's "table" feature to annotate workflows. Each table represents one *process* from input (e.g. plant leaf material) to output (e.g. leaf extract).
-
-Example workflows with three *processes* each:
-
-- Plant growth &rarr; sampling &rarr; extraction
-- Measured data files  &rarr; statistical analysis  &rarr; result files
-
-:bulb: Excel tables allow to group data that belongs together inside one sheet. This is not to be confused with a (work)sheet or workbook.
-> ```bash
-> workbook              (e.g. "isa.assay.xlsx")
->  └─── worksheet       (e.g. "plant_growth")
->           └─── table  (e.g. "annotationTable")
-
----
-
--->
-
----
-
-# :construction: Known issues with ARCitect and Swate (April 2024)
-
-:bulb: Swate Desktop outdated

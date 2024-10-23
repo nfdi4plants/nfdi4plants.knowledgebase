@@ -63,7 +63,7 @@ mv tmp index.md
 ## Combine all slide decks into one
 
 ```zsh
-selectMarpTheme=marp-theme_dataplant-ceplas-mibinet-ccby
+selectMarpTheme=marp-theme_dataplant-ceplas-ccby
 outfolder=_combined-slides
 
 mkdir -p $outfolder

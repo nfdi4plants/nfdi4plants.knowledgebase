@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: marp-theme_dataplant-ceplas-mibinet-ccby
+theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 title: DataHub Hands-On
@@ -73,13 +73,12 @@ author:
 
 # Projects Panel
 
-![](./../../../img/datahub-projectsPanel.drawio.svg)
+![bg right w:600](./../../../img/datahub-projectsPanel.drawio.svg)
 
 1. Choose a tab (1) to see only your ARCs, or explore other publicly available ARCs. 
 2. The main panel (2) lists all ARCs
 3. Here you can also see, the visibility level (3), and 
 4. your permission or role (4) for the listed ARC. 
-5. You can create a **New Project** in the top-right corner (5).
 
 ---
 
@@ -185,21 +184,11 @@ The ARC Panel is the main working area for your ARC.
 
 # Choosing the proper role
 
-<style scoped> section{font-size: 22px;}</style>
+When inviting new members to an ARC or group, you can choose between different levels.
 
-<u>Guests</u>
-Have the least rights. They will not be able to see the content of your ARC (only the wiki page).
+<img src="./../../../img/arc-sharing-PermissionsRoles.drawio.png" style="display: block; margin: auto" width=800px>
 
-<u>Reporters</u>
-Have **read access** to your ARC. This is recommended for people you ask for consultancy.
-
-<u>Developers</u>
-The choice for most people you want to invite to your ARC. Developers have **read and write access**, but cannot maintain the project on the DataHUB, e.g. inviting others.
-
-<u>Maintainers</u> 
-Gives the person the same rights as you have (except of removing you from your own project). This is recommended for inviting PIs or group leaders allowing them to add their group members for data upload or analysis to the project as well.
-
-*A detailed list of all permissions for the individual roles can be found [here](https://docs.gitlab.com/ee/user/permissions.html)*
+:bulb: By default you are **Owner** of an ARC you create or upload to the DataHUB.
 
 ---
 

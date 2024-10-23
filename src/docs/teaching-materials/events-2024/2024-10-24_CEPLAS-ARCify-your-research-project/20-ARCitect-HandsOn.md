@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: marp-theme_dataplant-ceplas-mibinet-ccby
+theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 title: ARCitect Hands-on
@@ -35,7 +35,7 @@ author:
 
 # ARCitect installation
 
-Please install version **v0.0.31** (or later) of the ARCitect: https://github.com/nfdi4plants/ARCitect/releases/latest
+Please install version **v0.0.48** (or later) of the ARCitect: https://github.com/nfdi4plants/ARCitect/releases/latest
 
 ---
 
@@ -275,57 +275,3 @@ section p br {
 🌐 Shared with collaborators
 
 ![bg right width:400](./../../../img/demo_arc_screenshot.png)
-
----
-
----
-
-# Received two emails from "GitLab" about a failed pipeline? <!-- fit -->
-
-![w:600](./../../../img/cqc-error-email.png)
-
-:fire: Don't worry :smile:
-
----
-
-## Pipeline Failed
-
-![bg right w:700](./../../../img/cqc-error-badges.png)
-
-- a "continuous quality control" (CQC) pipeline validates your ARC
-- This fails if one of the following metadata items is missing:
-
-    ```bash
-    Investigation Identifier
-    Investigation Title
-    Investigation Description
-    Investigation Person Last Name
-    Investigation Person First Name
-    Investigation Person Email
-    Investigation Person Affiliation
-    ```  
-
----
-
-## Pipeline Failed
-
-If the pipeline has failed once, it is disabled by default
-
-![bg right w:500](./../../../img/cqc-error-email2.png)
-
----
-
-## Reactivate the CQC pipeline
-
-<style scoped>
-section {font-size: 22px;}
-</style>
-
-To reactivate it and let the DataHUB validate your ARC again:
-  
-  1. navigate to CI/CD setting `<arc-url>/-/settings/ci_cd`
-  2. expand "Auto DevOps"
-  3. check box "Default to Auto DevOps pipeline"
-  4. Save changes
-
-![bg right:60% w:600](./../../../img/cqc-activate-autodevops.png)

@@ -1,7 +1,7 @@
 ---
 marp: true
 paginate: true
-theme: marp-theme_dataplant-ceplas-mibinet-ccby
+theme: marp-theme_dataplant-ceplas-ccby
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 title: Overview DataPLANT
 date: 2023-11-14
@@ -11,23 +11,10 @@ author:
   orcid: https://orcid.org/0000-0001-9021-3197
 ---
 
-<!-- 
-
-TODO 
-
-- Galaxy
-- ARC / metadata registry
-
--->
-# MibiNet connection to NFDIs
-
-![](../../../img/connection_NFDI.drawio.png)
-
----
 
 # Data Stewardship between DataPLANT and the community <!-- fit -->
 
-![w:880](./../../../img/DataPLANT_big_collaboration.drawio.png)
+![w:880](./../../../img/DataPLANT-collaborationCEPLAS.drawio.png)
 
 ---
 
@@ -118,7 +105,7 @@ object-position: 100% 80%;
 Facilities and labs can define their common workflows as templates
 
 ---
-<!-- 
+
 # Validation
 
 
@@ -127,19 +114,13 @@ Facilities and labs can define their common workflows as templates
 <span class="footer-reference"> adapted from Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
 ---
--->
+
 # Validate & publish
 
 
 ![h:400](././../../../img/tpj16474-fig-0008-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
-
----
-
-# Learning from Open-Source-Software development
-
-![w:800](./../../../img/arc-validation-cqc.drawio.png)
 
 ---
 
@@ -203,16 +184,7 @@ Facilities and labs can define their common workflows as templates
 
 <img src="./../../../img/enablingPlatform-Timeline.drawio.png" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
 
-
 ---
-<!-- 
-# Mutable data life cycle
-
-![w:700](./../../../img/tpj16474-fig-0006-m.jpg)
-
-<span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
-
---- -->
 
 # Project management
 
@@ -229,22 +201,6 @@ Facilities and labs can define their common workflows as templates
 https://dmpg.nfdi4plants.org
 
 ![w:800](./../../../img/zhou2023-dataplan.png)
-
----
-
-# Everything is a file
-
-DataPLANT employs a **data-centric** approach to RDM
-
-![w:800](./../../../img/ARC-data-centric_everything-is-a-file.drawio.png)
-
----
-
-# No technical lock-in
-
-![w:1000](./../../../img/arc-tool-assistance.drawio.png)
-
-(Meta)data transparency with tool assistance but **no technical lock-in**
 
 ---
 
@@ -299,11 +255,20 @@ DataPLANT employs a **data-centric** approach to RDM
 <span class="footer-reference">https://isa-tools.org/ | https://www.commonwl.org/
 https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
-<!-- 
 ---
 
-# The DataPLANT DataHUB &ndash; a GitLab ***Plus***
+# Everything is a file
 
-![](./../../../img/DataHUB-GitLab.drawio.png) 
+DataPLANT employs a **data-centric** approach to RDM
 
--->
+![w:800](./../../../img/ARC-data-centric_everything-is-a-file.drawio.png)
+
+---
+
+# No technical lock-in
+
+![w:1000](./../../../img/arc-tool-assistance.drawio.png)
+
+(Meta)data transparency with tool assistance but **no technical lock-in**
+
+---
