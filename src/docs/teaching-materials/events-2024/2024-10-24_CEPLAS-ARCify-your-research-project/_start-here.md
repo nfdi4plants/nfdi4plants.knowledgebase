@@ -4,35 +4,8 @@ theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 --- 
 
-## 
 
-![](./start-here/arc-prototypic-assay-identify.svg)
 
----
-
-## 
-
-![](./start-here/arc-prototypic-assay-labprocess-parameters1.svg)
-
----
-
-## 
-
-![](./start-here/arc-prototypic-assay-labprocess-parameters2.svg)
-
----
-
-## 
-
-![](./start-here/arc-prototypic-assay-modular1.svg)
-
----
-
-## 
-
-![](./start-here/arc-prototypic-assay-modular2.svg)
-
----
 
 ## 
 
@@ -55,12 +28,6 @@ paginate: true
 ## 
 
 ![](./start-here/arc-prototypic-assay-sop3.svg)
-
----
-
-## 
-
-![](./start-here/arc-prototypic-assay-sugar.svg)
 
 ---
 

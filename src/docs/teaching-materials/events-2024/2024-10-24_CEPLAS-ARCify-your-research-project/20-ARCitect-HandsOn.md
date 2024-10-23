@@ -51,7 +51,7 @@ author:
 </style>
 
 
-## ARCitect Hands-on
+## Hands-on demo
 
 <style scoped>section {background: none; background-color: white}</style>
 <!-- _paginate: false -->
@@ -220,6 +220,17 @@ In the study panel you can add
 ## A table-based organization schema
 
 ![w:700](./start-here/arc-prototypic-metadata-table-representation.svg)
+
+---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Fill out source name and sample name
+
+Transfer the sample ids from the protocol.
+
+1. Invent names for `Source Name` (we do not have this information)
+2. Use the sample names from the protocol (DB_*) as `Sample Name`
 
 ---
 
@@ -406,8 +417,6 @@ This allows you to reference the free-text, human-readable protocol.
 
 ---
 
-
-
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Insert values to annotate your data
@@ -421,8 +430,6 @@ This allows you to reference the free-text, human-readable protocol.
 ![bg right:40% w:500](./../../../img/Swate_a_addCharacteristic.png)
 
 ---
-
-
 
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
@@ -448,6 +455,38 @@ In the annotation table, select any cell below `Parameter [light intensity expos
 
 ---
 
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Your annotation table is growing
+
+At this point. Your table should look similar to this:
+
+![w:1000](./../../../img/demo_isa.study1.png)
+
+---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Exercise :pencil:
+
+Try to add suitable *Building Blocks* for other pieces of metadata from the plant growth protocol (`studies/talinum_drought/protocols/plant_material.txt`).
+
+---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Add a factor building block
+
+1. In the *Building Blocks* widget, select *Factor*, search for `watering exposure` and select the term with id `PECO:0007383`.
+2. Click <kbd>Add Column</kbd>.
+3. Add the drought treatment ("no water for 12 days", "re-water for 2 days") to the respective samples
+
+:bulb: There are different options to add the drought treatment.
+
+---
+
+
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Showing ontology reference columns
@@ -460,6 +499,13 @@ Use double pointed quotation mark to un-hide hidden columns.
 ![w:900](./../../../img/Swate_a_reference_column.png)
 
 ---
+
+## Identifying assays
+
+![](./start-here/arc-prototypic-assay-identify.svg)
+
+---
+
 
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
@@ -474,7 +520,7 @@ Add two assays with **rnaseq** and **metabolomics** as an identifier
 
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
-## Add information about your assay
+## Add information about your assay <!-- fit -->
 
 In the assay panel you can define the assay's
  - measurement type
@@ -485,6 +531,139 @@ In the assay panel you can define the assay's
 
 ---
 
+## Assay for sugar measurement
+
+![w:900](./start-here/arc-prototypic-assay-sugar.svg)
+
+---
+
+## Isolating the lab processes in an assay
+
+![w:800](./start-here/arc-prototypic-assay-modular1.svg)
+
+---
+
+## Separating different assay elements
+
+![w:800](./start-here/arc-prototypic-assay-modular2.svg)
+
+---
+
+
+## Parametric description of the lab process
+
+![](./start-here/arc-prototypic-assay-labprocess-parameters1.svg)
+
+---
+
+## Parametric description of the lab process
+
+![](./start-here/arc-prototypic-assay-labprocess-parameters2.svg)
+
+---
+
+
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Let's annotate the RNA Seq assay
+
+1. Navigate to the demo ARC. 
+2. Open the lab notes `assays/rnaseq/protocols/RNA_extraction.txt` in a text editor.
+3. Import the empty `assays/rnaseq/isa.assay.xlsx` workbook in Swate.
+
+---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Use a template
+
+1. Open the *Templates* widget in the Bar 
+
+:bulb: Here you can find DataPLANT and community created workflow annotation templates
+
+1. Search for `RNA extraction` and click <kbd>select</kbd> 
+    - You will see a preview of all *Building Blocks* which are part of this template.
+2. Click <kbd>Add template</kbd> to add all *Building Blocks* from the template to your table, which <u>do not exist yet</u>.
+
+![bg right:40% w:500px](./../../../img/swate_a_templates.png)
+
+---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Remove Building blocks
+
+If there are any *Building Blocks* which do not fit to your experiment you can use right click --> "Delete Column" to remove it including all related (hidden) reference columns.
+
+---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Move Building blocks
+If the order of the *Building Blocks* should be adjusted you can use right click --> "Move Column"
+![bg right:40% w:500px](./../../../img/Swate_a_moveColumn.png)
+
+---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Replace multiple names 
+
+Right click --> "Update Column" can be used to replace names in batches
+:bulb: this only works on Input columns
+![bg right:40% w:500px](./../../../img/Swate_a_updateColumn.png)
+
+---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## New process, new worksheet
+
+1. Add a new sheet to the `assays/rnaseq/isa.assay.xlsx` workbook.
+2. Add the template "RNASeq Assay"
+
+---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Exercise :pencil:
+
+Try to fill the two sheets with the protocol details:
+  - `assays/rnaseq/protocols/RNA_extraction.txt` and
+  - `assays/rnaseq/protocols/Illumina_libraries.txt`
+
+---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Link samples across studies and assays
+
+1. Use the `Output [Sample Name]` of studies/talinum_drought/isa.study.xlsx as the `Input [Sample Name]` to **rna-extraction**.
+1. Use the `Output [Sample Name]` of **rna-extraction** as the `Input [Sample Name]` to **illumina-libraries**.
+
+**Seeds** &mdash;*Plant growth*&#x21FE; **Leaves** &mdash;*RNA Extraction*&#x21FE; **RNA** &mdash;*Illumina*&#x21FE; **fastq files**
+
+
+---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Link dataset files to samples
+
+1. In the *Building Blocks* widget select *Output* -> *Raw Data File*.
+2. Click <kbd>Add Column</kbd>.
+
+:bulb: You see a warning about a changed output column.
+
+3. Click <kbd>Continue</kbd>.
+4. Go to the *File Picker* tab and click <kbd>Pick file names</kbd>.
+5. Select and open the *fastq.gz files from the dataset folder.
+6. Copy / paste them to the `Raw Data File`. 
+
+:bulb: This allows you to link your samples to the resulting raw data files.
+
+---
 
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
