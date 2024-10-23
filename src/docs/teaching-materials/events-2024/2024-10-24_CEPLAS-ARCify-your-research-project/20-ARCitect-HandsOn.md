@@ -393,6 +393,32 @@ This allows you to reference the free-text, human-readable protocol.
 
 ---
 
+
+
+# Annotation Building Block types
+
+<div class="two-columns" style="font-size: 25px">
+  
+  <div>
+  
+- Input (e.g. Source Name, Sample Name)
+- Protocol columns
+- Characteristic // Parameter // Factor // Component
+- Output (e.g. Sample Name, Raw Data File, Derived Data File)
+
+</div>
+  
+  <div>
+  
+  ![w:600px](./../../../img/Swate_a_Overview.png)
+    
+  </div>
+</div>
+
+Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/units/AnnotationPrinciples/isa_AnnotationPrinciples-slides.html)
+
+---
+
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Add Characteristics
@@ -410,13 +436,12 @@ This allows you to reference the free-text, human-readable protocol.
 
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
-## Insert values to annotate your data
+## Insert ontology terms
 
 1. Insert values by selecting any cell below `Characteristic [organism]`
 2. Use free text or use the magnifying glass to activate *Term* search
 3. Write "Talinum fruticosum" and enable *Term* search
-4. Select the hit 
-
+4. Select the hit
 
 ![bg right:40% w:500](./../../../img/Swate_a_addCharacteristic.png)
 
@@ -571,6 +596,35 @@ In the assay panel you can define the assay's
 
 ---
 
+
+# Realization of lab-specific metadata templates
+
+![w:650px](./../../../img/SWATE_metadataTemplates.png)
+
+Facilities can define their most common workflows as templates
+
+<style scoped>
+h1{
+  text-align: left
+}
+section {
+  text-align: center;
+}
+</style>
+
+---
+
+
+# Import templates from a database
+
+- DataPLANT curated
+- Community templates
+
+![bg right w:450](./../../../img/Swate_a_templates.png)
+
+
+---
+
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Let's annotate the RNA Seq assay
@@ -640,6 +694,35 @@ Try to fill the two sheets with the protocol details:
 
 ---
 
+
+# ARC builds on ISA to connect data
+
+![w:1000](./../../../img/ISAmodel_ARC01_img02.svg)
+
+---
+
+# ARC builds on ISA to link data
+
+<div class="two-columns">
+
+  <div>
+
+  - Samples are linked study-to-assay, assay-to-assay
+  - Raw data is linked to assays
+  - Protocols can be referenced
+  - ...
+
+  </div>
+
+  <div>
+  
+  ![w:800](./../../../img/ISAmodel_ARC01_img02.svg)
+  
+  </div>
+</div>
+
+---
+
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Link samples across studies and assays
@@ -648,7 +731,6 @@ Try to fill the two sheets with the protocol details:
 1. Use the `Output [Sample Name]` of **rna-extraction** as the `Input [Sample Name]` to **illumina-libraries**.
 
 **Seeds** &mdash;*Plant growth*&#x21FE; **Leaves** &mdash;*RNA Extraction*&#x21FE; **RNA** &mdash;*Illumina*&#x21FE; **fastq files**
-
 
 ---
 
@@ -671,7 +753,7 @@ Try to fill the two sheets with the protocol details:
 ---
 
 
-# Everything is a file
+## Everything is a file
 
 
 ---
@@ -692,11 +774,6 @@ The **Explorer (6)** button directly opens your ARC locally
 
 ---
 
-## Collaboration Workflows
-
-![](./start-here/collaboration-git-toBeReplaced.svg)
-
----
 
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
@@ -718,6 +795,8 @@ You have to commit changes before you can upload to the DataHUB
 ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
 
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Commit your changes
 
@@ -769,9 +848,7 @@ The DataHUB Sync panel allows you to
 
 ![bg right:50% w:500](./../../../img/ARCitect_DataHUB_Sync.png) 
 
-<!-- TODO more to remote?-->
 ---
-
 
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
@@ -781,9 +858,6 @@ The DataHUB Sync panel allows you to
 2. Check your projects
 
 ---
-
-
-
 
 
 

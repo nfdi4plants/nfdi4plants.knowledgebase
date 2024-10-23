@@ -13,6 +13,18 @@ author:
   orcid: https://orcid.org/0000-0002-4849-1537
 ---
 
+<style>
+
+.arcitectLogo {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  width: 100px;
+  }
+
+</style>
+
+
 # DataHub Hands-On
 
 ---
@@ -166,19 +178,19 @@ The ARC Panel is the main working area for your ARC.
 
 3. Click on **Invite members**
 
-![fit w:1050](./../../../img/datahub_members_seq4.png)
+![w:950](./../../../img/datahub_members_seq4.png)
 
 ---
 
 4. Search for potential collaborators
 
-![fit w:1050](./../../../img/datahub_members_seq5.png)
+![w:650](./../../../img/datahub_members_seq5.png)
 
 ---
 
 5. Select a role
 
-![fit w:1050](./../../../img/datahub_members_seq6.png)
+![w:650](./../../../img/datahub_members_seq6.png)
 
 ---
 
@@ -218,6 +230,13 @@ Check out the **commit history** of your ARC via Repository (2) or directly via 
 ![w:1000](./../../../img/datahub-ARC-overview.drawio.svg)
 
 ---
+
+## Collaboration Workflows
+
+![](./start-here/collaboration-git-toBeReplaced.svg)
+
+---
+
 
 # Project Management
 
