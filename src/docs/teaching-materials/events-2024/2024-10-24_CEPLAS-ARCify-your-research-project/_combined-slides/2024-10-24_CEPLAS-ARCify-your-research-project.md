@@ -8,13 +8,11 @@ date: 2024-10-23
 ---
 
 
-# CEPLAS ARC Training
+#  ARCify your research project
 
 <!--  _color: white; -->
 <!-- _paginate: false -->
 <style scoped>section {background: none; background-color: white;}</style>
-
-<br>
 
 October, 2024
 
@@ -25,7 +23,7 @@ Sabrina Zander (MibiNet)
 
 ---
 
-# BYOD &ndash; Goals
+# Goals
 
 - First few steps into ARC ecosystem
 - Move existing datasets into ARCs
@@ -63,7 +61,7 @@ Slides are shared via [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4pl
 
 ### <img align="left" style="height:35px" src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
 
-Website: <a href="https://nfdi4plants.org/" target="_blank">https://nfdi4plants.org/</a>
+DataPLANT Website: <a href="https://nfdi4plants.org/" target="_blank">https://nfdi4plants.org/</a>
 Knowledge Base: <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/" target="_blank">https://nfdi4plants.org/nfdi4plants.knowledgebase/</a>
 DataHUB: <a href="https://git.nfdi4plants.org" target="_blank">https://git.nfdi4plants.org</a>
 
@@ -71,6 +69,8 @@ GitHub: <a href="https://github.com/nfdi4plants" target="_blank">https://github.
 HelpDesk: <a href="https://helpdesk.nfdi4plants.org" target="_blank">https://helpdesk.nfdi4plants.org</a>
 
 :bulb: You can help us by raising issues, bugs, ideas...
+
+:rocket: NEW! ARC website: <a href="https://arc-rdm.org" target="_blank">https://arc-rdm.org</a>
 
 ---
 
@@ -168,35 +168,6 @@ Your entire investigation in a single unified bag
 
 ---
 
-# ARC as single-entry point
-
-![w:900](./../../../../img/ARC-publication-outlets.drawio.png)
-
----
-
-# From ARC to repositories
-
-<style scoped>
-
-section p img {
-width: 1000px;
-height: 400px;
-object-fit: cover;
-object-position: 100% 80%;
-/* display: block; */;
-}
-</style>
-
-![](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/ARC_Repository03_img1.png)
-
----
-
-# Moving from paper to data publications
-
-![w:400px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/DataPLANT_LandingPage_Mission.svg)
-
-
----
 
 # Publish your ARC, get a DOI
 
@@ -204,29 +175,9 @@ object-position: 100% 80%;
 
 ---
 
-# Metadata templates
+# ARC as single-entry point
 
-![w:700](./../../../../img/Swate_metadataTemplates.png)
-
-Facilities and labs can define their common workflows as templates
-
----
-
-# Validation
-
-
-![h:400](./../../../../img/tpj16474-fig-0008-m-modified.png)
-
-<span class="footer-reference"> adapted from Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
-
----
-
-# Validate & publish
-
-
-![h:400](././../../../../img/tpj16474-fig-0008-m.jpg)
-
-<span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
+![w:900](./../../../../img/ARC-publication-outlets.drawio.png)
 
 ---
 
@@ -289,24 +240,6 @@ Facilities and labs can define their common workflows as templates
 # Meet your collaborators in an ARC
 
 <img src="./../../../../img/enablingPlatform-Timeline.drawio.png" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
-
----
-
-# Project management
-
-![w:800](./../../../../img/tpj16474-fig-0007-m.jpg)
-
-<span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
-
----
-
-# DataPLAN &ndash; a DataPLANT DMP generator
-
-<span class="footer-reference">**Zhou *et al.* (2023)**, DataPLAN: a web-based data management plan generator for the plant sciences, bioRxiv 2023.07.07.548147; doi: https://doi.org/10.1101/2023.07.07.548147 </span>
-
-https://dmpg.nfdi4plants.org
-
-![w:800](./../../../../img/zhou2023-dataplan.png)
 
 ---
 
@@ -1177,7 +1110,6 @@ In the History panel you can inspect your ARCs history with all commits
 
 ![bg right:55% w:500](./../../../../img/ARCitect-History_panel.png)
 
-
 ---
 
 
@@ -1215,61 +1147,10 @@ The DataHUB Sync panel allows you to
 2. Check your projects
 
 ---
-
-
-
-## Options to annotate the data analysis
-
-![](./../start-here/arc-prototypic-workflows1.svg)
-
----
-
-## A computational workflow is like a protocol
-
-![](./../start-here/arc-prototypic-workflows2.svg)
-
----
-
-## Option I: Create a virtual assay
-
-![](./../start-here/arc-prototypic-workflows-virtual.svg)
-
----
-
-## Option II: Create a workflow and run
-
-![](./../start-here/arc-prototypic-workflows-cwl1.svg)
-
----
-
-## Use CWL to wrap your workflow
-
-![](./../start-here/arc-prototypic-workflows-cwl2.svg)
-
----
-
-
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
-
-## Add datasets
-
-In the file tree you can
-  - **import dataset files or folders** and 
-  - **protocols** associated to that dataset.
-
-:bulb: **Import Dataset** allows to import data from any location on your computer into the ARC.
-
-:warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
-
-![bg right:40% w:400](./../../../../img/arcitect-ARCPanel-assay03.png)
-
-
-
 ---
 
 # Backup Slides
 
----
 ---
 
 <img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
@@ -1295,32 +1176,6 @@ In the file tree you can
 ![w:700](./../../../../img/arcitect-download-TalinumARC.png)
 
 :bulb: This is basically the ARC we created in the last session.
-
----
-
-
----
-
-
----
-
-## Annotation of the result data points
-
-![w:700](./../start-here/arc-prototypic-datamap.svg)
-
-Persistence from sample to data point using fragment selectors
-
----
-
-## Point into results - Fragment selectors
-
-![w:700](./../start-here/arc-prototypic-datamap-fragment-selectors1.svg)
-
----
-
-## DataMAP: Annotation for the fragment selectors
-
-![w:700](./../start-here/arc-prototypic-datamap-fragment-selectors2.svg)
 
 ---
 
@@ -1671,26 +1526,45 @@ Add issues to your ARC (3)
 
 ---
 
-<div class="datahubicon">DataHUB</div>
 
-## Publish your ARC with a few clicks
 
-![w:900px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/cqc-results.png)
+
+# Moving from paper to FAIR data publication
+
+![w:900](./../start-here/fair-data-publication.svg)
+
+
+---
+
+# Publish your ARC, get a DOI
+
+![w:800px](./../../../../img/ARC_SeamlessPublication.svg)
+
+---
+
+# Validate & publish
+
+
+![h:400](././../../../../img/tpj16474-fig-0008-m.jpg)
+
+<span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
 ---
 
 <div class="datahubicon">DataHUB</div>
 
+## Validation towards publication
+
+![w:900px](./../start-here/publication-validation.svg)
+
+---
 
 ## Receive a DOI
 
 ![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/doi-accession.png)
 
 
---- 
-
-
-
+---
 ---
 
 ## Backup
@@ -1751,6 +1625,145 @@ Add issues to your ARC (3)
 </div>
 
 ---
+---
+
+
+<style>
+
+.datahubicon {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  width: 100px;
+  background-color: #2D3E50;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  }
+
+</style>
+
+---
+
+
+<style>
+
+.arcitectLogo {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  width: 100px;
+
+}
+
+</style>
+
+
+## Options to annotate the data analysis
+
+![](./../start-here/arc-prototypic-workflows1.svg)
+
+---
+
+## A computational workflow is like a protocol
+
+![](./../start-here/arc-prototypic-workflows2.svg)
+
+---
+
+## Option I: Create a virtual assay
+
+![](./../start-here/arc-prototypic-workflows-virtual.svg)
+
+---
+
+## Option II: Create a workflow and run
+
+![](./../start-here/arc-prototypic-workflows-cwl1.svg)
+
+---
+
+## Use CWL to wrap your workflow
+
+![](./../start-here/arc-prototypic-workflows-cwl2.svg)
+
+---
+
+
+<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+
+## Add datasets
+
+In the file tree you can
+  - **import dataset files or folders** and 
+  - **protocols** associated to that dataset.
+
+:bulb: **Import Dataset** allows to import data from any location on your computer into the ARC.
+
+:warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
+
+![bg right:40% w:400](./../../../../img/arcitect-ARCPanel-assay03.png)
+
+
+---
+---
+
+# Backup Slides
+
+
+---
+
+<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+
+## Download the demo data
+
+![bg right:40% w:250](./../../../../img/ARCitect-help-Sidebar.png)
+
+1. Open the ARCitect
+2. Login (1) to your DataHUB account
+3. Navigate to **Download ARC** (4)
+
+---
+
+<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+
+## Download the demo data
+
+4. Search for **Talinum-CAM-Photosynthesis**
+5. Click the download button, select a location and open the ARC.
+6. Open the downloaded ARC
+
+![w:700](./../../../../img/arcitect-download-TalinumARC.png)
+
+:bulb: This is basically the ARC we created in the last session.
+
+---
+
+
+---
+
+
+---
+
+## Annotation of the result data points
+
+![w:700](./../start-here/arc-prototypic-datamap.svg)
+
+Persistence from sample to data point using fragment selectors
+
+---
+
+## Point into results - Fragment selectors
+
+![w:700](./../start-here/arc-prototypic-datamap-fragment-selectors1.svg)
+
+---
+
+## DataMAP: Annotation for the fragment selectors
+
+![w:700](./../start-here/arc-prototypic-datamap-fragment-selectors2.svg)
+
 ---
 
 
