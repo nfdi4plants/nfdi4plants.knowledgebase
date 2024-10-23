@@ -144,3 +144,37 @@ import IMG from "@images/start-here/arc-prototypic-assay-modular1.svg"
 
 
 
+----
+----
+
+
+## ARC builds on ISA to link data
+
+  - Samples are linked study-to-assay, assay-to-assay
+  - Raw data is linked to assays
+  - Protocols can be referenced
+  - ...
+
+  
+  {/* ![](./../../../img/ISAmodel_ARC01_img02.svg) */}
+
+## Link samples across studies and assays
+
+1. Use the `Output [Sample Name]` of studies/talinum_drought/isa.study.xlsx as the `Input [Sample Name]` to **rna-extraction**.
+1. Use the `Output [Sample Name]` of **rna-extraction** as the `Input [Sample Name]` to **illumina-libraries**.
+
+**Seeds** &mdash;*Plant growth*&#x21FE; **Leaves** &mdash;*RNA Extraction*&#x21FE; **RNA** &mdash;*Illumina*&#x21FE; **fastq files**
+
+## Link dataset files to samples
+
+1. In the *Building Blocks* widget select *Output* -> *Raw Data File*.
+2. Click <kbd>Add Column</kbd>.
+
+:bulb: You see a warning about a changed output column.
+
+3. Click <kbd>Continue</kbd>.
+4. Go to the *File Picker* tab and click <kbd>Pick file names</kbd>.
+5. Select and open the *fastq.gz files from the dataset folder.
+6. Copy / paste them to the `Raw Data File`. 
+
+:bulb: This allows you to link your samples to the resulting raw data files.
