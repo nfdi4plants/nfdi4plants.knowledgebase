@@ -15,13 +15,28 @@ author:
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
 
-##  Let's annotate the plant samples first
+<style>
+
+.arcitectLogo {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  width: 100px;
+  }
+
+</style>
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Let's annotate the plant samples first
 
 1. Check out the lab notes `studies/talinum_drought/protocols/plant_material.txt`
 2. Select the study `talinum_drought`
 3. Add a new table sheet at the bottom
 
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Create an annotation table
 
@@ -34,6 +49,8 @@ Create a Swate annotation table by adding **Building blocks** via the widget (A)
 ![bg right w:600](./../../../img/Swate_a_Building_blocks.png)
 
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Add more Building blocks
 
@@ -49,6 +66,8 @@ Create a Swate annotation table by adding **Building blocks** via the widget (A)
 
 ---
 
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
 ## Insert values to annotate your data
 
 1. Insert values by selecting any cell below `Characteristic [organism]`
@@ -60,6 +79,8 @@ Create a Swate annotation table by adding **Building blocks** via the widget (A)
 ![bg right:40% w:500](./../../../img/Swate_a_addCharacteristic.png)
 
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Add a Building block with a unit
 
@@ -73,6 +94,8 @@ Create a Swate annotation table by adding **Building blocks** via the widget (A)
 
 ---
 
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
 ## Insert unit-values to annotate your data
 
 In the annotation table, select any cell below `Parameter [light intensity exposure]` and add "425" as light intensity.
@@ -80,6 +103,8 @@ In the annotation table, select any cell below `Parameter [light intensity expos
 :bulb: You can see the numbers being complemented with the chosen unit, e.g. `425 microeinstein per square meter per second`
 
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Showing ontology reference columns
 
@@ -93,6 +118,8 @@ Use double pointed quotation mark to un-hide hidden columns.
 
 ---
 
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
 ## Your ISA table is growing
 
 At this point. Your table should look similar to this:
@@ -103,11 +130,15 @@ At this point. Your table should look similar to this:
 
 ---
 
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
 ## Exercise :pencil:
 
 Try to add suitable *Building Blocks* for other pieces of metadata from the plant growth protocol (`studies/talinum_drought/protocols/plant_material.txt`).
 
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Add a factor building block
 
@@ -119,6 +150,8 @@ Try to add suitable *Building Blocks* for other pieces of metadata from the plan
 
 ---
 
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
 ## Link the protocol to the isa table
 
 1. In the *Building Blocks* tab, select *More* -> *Protocol REF*.
@@ -129,6 +162,8 @@ Try to add suitable *Building Blocks* for other pieces of metadata from the plan
 
 ---
 
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
 ## Fill out source name and sample name
 
 Transfer the sample ids from the protocol.
@@ -138,13 +173,17 @@ Transfer the sample ids from the protocol.
 
 ---
 
-## Let's annotate the RNA Seq data
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Let's annotate the RNA Seq assay
 
 1. Navigate to the demo ARC. 
 2. Open the lab notes `assays/rnaseq/protocols/RNA_extraction.txt` in a text editor.
 3. Import the empty `assays/rnaseq/isa.assay.xlsx` workbook in Swate.
 
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Use a template
 
@@ -160,17 +199,23 @@ Transfer the sample ids from the protocol.
 
 ---
 
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
 ## Remove Building blocks
 
 If there are any *Building Blocks* which do not fit to your experiment you can use right click --> "Delete Column" to remove it including all related (hidden) reference columns.
 
 ---
 
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
 ## Move Building blocks
 If the order of the *Building Blocks* should be adjusted you can use right click --> "Move Column"
 ![bg right:40% w:500px](./../../../img/Swate_a_moveColumn.png)
 
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Replace multiple names 
 
@@ -180,12 +225,16 @@ Right click --> "Update Column" can be used to replace names in batches
 
 ---
 
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
 ## New process, new worksheet
 
 1. Add a new sheet to the `assays/rnaseq/isa.assay.xlsx` workbook.
 2. Add the template "RNASeq Assay"
 
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Exercise :pencil:
 
@@ -194,6 +243,8 @@ Try to fill the two sheets with the protocol details:
   - `assays/rnaseq/protocols/Illumina_libraries.txt`
 
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Link samples across studies and assays
 
@@ -204,6 +255,8 @@ Try to fill the two sheets with the protocol details:
 
 
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Link dataset files to samples
 
