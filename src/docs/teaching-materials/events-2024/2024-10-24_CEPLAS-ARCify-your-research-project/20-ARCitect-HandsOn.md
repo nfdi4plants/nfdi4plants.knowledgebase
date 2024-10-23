@@ -14,6 +14,9 @@ author:
 - name: Sabrina Zander
   github: https://github.com/SabrinaZander
   orcid: https://orcid.org/0009-0000-4569-6126
+- name: Kevin Frey
+- name: Lukas Weil
+- name: Timo Mühlhaus
 ---
 
 
@@ -752,9 +755,19 @@ Try to fill the two sheets with the protocol details:
 
 ---
 
+# Everything is a file
 
-## Everything is a file
+The ARC is a **data-centric** approach to RDM
 
+![w:800](./../../../img/ARC-data-centric_everything-is-a-file.drawio.png)
+
+---
+
+# No technical lock-in
+
+![w:1000](./../../../img/arc-tool-assistance.drawio.png)
+
+(Meta)data transparency with tool assistance but **no technical lock-in**
 
 ---
 
@@ -964,5 +977,3 @@ Persistence from sample to data point using fragment selectors
 ## DataMAP: Annotation for the fragment selectors
 
 ![w:700](./start-here/arc-prototypic-datamap-fragment-selectors2.svg)
-
-

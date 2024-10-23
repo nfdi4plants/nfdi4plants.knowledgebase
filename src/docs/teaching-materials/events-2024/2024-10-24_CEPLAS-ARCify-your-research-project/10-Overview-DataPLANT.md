@@ -254,21 +254,3 @@ https://dmpg.nfdi4plants.org
 
 <span class="footer-reference">https://isa-tools.org/ | https://www.commonwl.org/
 https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
-
----
-
-# Everything is a file
-
-DataPLANT employs a **data-centric** approach to RDM
-
-![w:800](./../../../img/ARC-data-centric_everything-is-a-file.drawio.png)
-
----
-
-# No technical lock-in
-
-![w:1000](./../../../img/arc-tool-assistance.drawio.png)
-
-(Meta)data transparency with tool assistance but **no technical lock-in**
-
----

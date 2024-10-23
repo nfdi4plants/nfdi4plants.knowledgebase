@@ -8,28 +8,32 @@ author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
-- name: Cristina Martins Rodrigues
-  github: https://github.com/CMR248
-  orcid: https://orcid.org/0000-0002-4849-1537
 ---
 
 <style>
 
-.arcitectLogo {
+.datahubicon {
   position: absolute;
   top: 1%;
   left: 1%;
   width: 100px;
+  background-color: #2D3E50;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
   }
 
 </style>
 
 
-# DataHub Hands-On
+## DataHub Hands-On
 
 ---
 
-# Navigation Bar
+<div class="datahubicon">DataHUB</div>
+
+## Navigation Bar
 
 ![](./../../../img/datahub-navbar.drawio.svg)
 
@@ -40,7 +44,9 @@ author:
 
 ---
 
-# Hamburger Menu
+<div class="datahubicon">DataHUB</div>
+
+## Hamburger Menu
 
 <div class="two-columns">
 
@@ -61,7 +67,9 @@ author:
 
 ---
 
-# Avatar Menu
+<div class="datahubicon">DataHUB</div>
+
+## Avatar Menu
 
 <div class="two-columns">
 
@@ -83,7 +91,9 @@ author:
 
 ---
 
-# Projects Panel
+<div class="datahubicon">DataHUB</div>
+
+## Projects Panel
 
 ![bg right w:600](./../../../img/datahub-projectsPanel.drawio.svg)
 
@@ -94,7 +104,9 @@ author:
 
 ---
 
-# ARC Panel
+<div class="datahubicon">DataHUB</div>
+
+## ARC Panel
 
 The ARC Panel is the main working area for your ARC.
 
@@ -102,7 +114,9 @@ The ARC Panel is the main working area for your ARC.
 
 ---
 
-# ARC Panel &ndash; sidebar
+<div class="datahubicon">DataHUB</div>
+
+## ARC Panel &ndash; sidebar
 
 
 <div class="two-columns">
@@ -127,7 +141,9 @@ The ARC Panel is the main working area for your ARC.
 
 ---
 
-# ARC Panel &ndash; main panel
+<div class="datahubicon">DataHUB</div>
+
+## ARC Panel &ndash; main panel
 
 <div class="two-columns">
 
@@ -150,19 +166,13 @@ The ARC Panel is the main working area for your ARC.
 
 ---
 
-# Collaborate and share
+## Collaborate and share
 
-![w:650](./../../../img/ARC_DataSharing_Experts02_img1.png)
-
----
-
-# Invite collaborators
-
-* Unless changed, your ARC is set to private by default.
-* To collaborate, you can invite lab colleagues or project partners to your ARC by following the steps on the subsequent slides. 
-* To get started [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB and open the ARC you want to share.
+![](./start-here/collaboration-plantdatahub.svg)
 
 ---
+
+<div class="datahubicon">DataHUB</div>
 
 1. Click on **Project Information** in the left navigation panel
 
@@ -170,11 +180,15 @@ The ARC Panel is the main working area for your ARC.
 
 ---
 
+<div class="datahubicon">DataHUB</div>
+
 2. Click on **Members**
 
 ![fit w:1050](./../../../img/datahub_members_seq3.png)
 
 ---
+
+<div class="datahubicon">DataHUB</div>
 
 3. Click on **Invite members**
 
@@ -182,11 +196,15 @@ The ARC Panel is the main working area for your ARC.
 
 ---
 
+<div class="datahubicon">DataHUB</div>
+
 4. Search for potential collaborators
 
 ![w:650](./../../../img/datahub_members_seq5.png)
 
 ---
+
+<div class="datahubicon">DataHUB</div>
 
 5. Select a role
 
@@ -194,7 +212,9 @@ The ARC Panel is the main working area for your ARC.
 
 ---
 
-# Choosing the proper role
+<div class="datahubicon">DataHUB</div>
+
+## Choosing the proper role
 
 When inviting new members to an ARC or group, you can choose between different levels.
 
@@ -204,26 +224,78 @@ When inviting new members to an ARC or group, you can choose between different l
 
 ---
 
-# <div align="center">Congratulations!</div>
-<div align="center">You have just shared your ARC with a collaborator.</div>
 
-<style scoped>
 
-section p img {
-width: 1000px;
-height: 300px;
-object-fit: cover;
-object-position: 100% 45%;
-/* display: block; */;
-}
-</style>
+## **Projects** and **Groups** are not the same
 
-![](./../../../img/ARC_Sharing_img1.png)
+- "Project" = ARC
+- "Groups" = Group of users
 
 ---
 
+## Project = ARC
 
-# Version control
+- In the DataHUB, ARCs are called "projects"; they are the same.
+- An ARC can be shared with individual users (invited as "members") or a group.
+
+---
+
+## DataHUB Groups = Group of members (e.g. lab)
+
+- A "Group" is a group of users with specific [permissions](#roles-and-permissions)
+- A group can share ARCs
+- A group can be invited to an ARC
+- Groups can have subgroups
+
+---
+
+## Options to share an ARC via the DataHUB
+
+<img src="./../../../img/arc-sharing-Options.drawio.png" style="display: block; margin: auto" width=700px>
+
+---
+
+## Namespaces
+
+- Every user has a personal namespace, where they can upload or create new ARCs
+- Every group and subgroup has its own namespace
+
+<div class="table-container" style="font-size: 25px">
+
+Type | URL | Namespace | Name
+--- | --- | --- | --- 
+A **personal** ARC | https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum | `brilator` | Dominik Brilhaus
+An **group**-shared ARC | https://git.nfdi4plants.org/hhu-plant-biochemistry/Samuilov-2018-BOU-PSP | `hhu-plant-biochemistry` | HHU Plant Biochemistry
+
+</div>
+
+:bulb: **Personal** is not the same as **private**
+
+---
+
+## Visibility
+
+The visibility of ARCs and groups can be managed individually for each ARC or group
+  
+<img src="./../../../img/arc-sharing-Visibility.drawio.png" style="display: block; margin: auto" width=800px>
+
+:bulb: By default every ARC and every group is set to **private**.
+
+---
+
+## ARC DataHUB members // ARC Investigation contacts <!-- fit -->
+
+![w:1100](./../../../img/arc-sharing-MembersVsContacts.drawio.png)
+
+:bulb: Investigation contacts are not automatically invited as members to the ARC.
+
+
+---
+
+<div class="datahubicon">DataHUB</div>
+
+
+## Version control
 
 Check out the **commit history** of your ARC via Repository (2) or directly via commits (7)
 
@@ -231,14 +303,28 @@ Check out the **commit history** of your ARC via Repository (2) or directly via 
 
 ---
 
+<div class="datahubicon">DataHUB</div>
+
 ## Collaboration Workflows
 
 ![](./start-here/collaboration-git-toBeReplaced.svg)
 
 ---
 
+<div class="datahubicon">DataHUB</div>
 
-# Project Management
+## Project management
+
+![w:800](./../../../img/tpj16474-fig-0007-m.jpg)
+
+<span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
+
+---
+
+<div class="datahubicon">DataHUB</div>
+
+
+## Project Management
 
 Add issues to your ARC (3)
 
@@ -246,7 +332,9 @@ Add issues to your ARC (3)
 
 ---
 
-# ARCs come with their own wiki space
+<div class="datahubicon">DataHUB</div>
+
+## ARCs come with their own wiki space
 
 <div class="two-columns">
 
@@ -268,14 +356,83 @@ Add issues to your ARC (3)
 
 ---
 
-# Publish your ARC with a few clicks
+<div class="datahubicon">DataHUB</div>
+
+## Publish your ARC with a few clicks
 
 ![w:900px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/cqc-results.png)
 
 ---
 
+<div class="datahubicon">DataHUB</div>
 
-# Receive a DOI
+
+## Receive a DOI
 
 ![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/doi-accession.png)
 
+
+--- 
+
+
+
+---
+
+## Backup
+
+---
+
+
+
+## Where do I store my ARC?
+
+![](./../../../img/ARC-storageLocations-withNotes.drawio.png)
+
+---
+
+## ARC storage and sharing
+
+![w:600](./../../../img/ARC-storageLocations-withNotes.drawio.png)
+
+- DataHUB as "ground truth" / original clone
+- You can sync and communicate all changes to your ARC via the DataHUB
+
+<span style="font-size:0.8em"> :bulb: ARCitect and ARC commander provide options to avoid syncing large files (LFS = Large file storage) </span>
+
+---
+
+## Example setup to store and use ARCs
+
+<div class=two-columns style="font-size: 25px">
+
+  <div>
+  
+  ### Personal computer
+
+  - work on small files
+  - annotate metadata
+  - add scripts, protocols
+  
+  ### Workstation / Server
+
+  - work on large files
+  - run computations
+  
+  </div>
+  <div>
+
+  ### FileShare
+  
+  - mount to local machine, sync ARC from there
+  
+  ### HPC
+
+  - direct connection HPC to DataHUB (depends on security settings)
+  - or mount to local machine and sync, ARC from there
+  
+  
+  </div>
+
+</div>
+
+---
