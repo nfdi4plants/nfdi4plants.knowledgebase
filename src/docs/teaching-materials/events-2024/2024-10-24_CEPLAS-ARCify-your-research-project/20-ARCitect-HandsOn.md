@@ -17,14 +17,27 @@ author:
 ---
 
 
-# ARCitect Hands-on
+<style>
+
+.arcitectLogo {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  width: 100px;
+  }
+
+</style>
+
+
+
+## ARCitect Hands-on
 
 <style scoped>section {background: none; background-color: white}</style>
 <!-- _paginate: false -->
 
 ---
 
-# ARCitect installation
+## ARCitect installation
 
 Please install version **v0.0.48** (or later) of the ARCitect: https://github.com/nfdi4plants/ARCitect/releases/latest
 
@@ -56,7 +69,7 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ---
 
-# Sort Demo data in an ARC <!-- fit -->
+## Sort Demo data in an ARC <!-- fit -->
 
 ![bg right width:400](./../../../img/demo_data_screenshot.png)
 
@@ -64,7 +77,7 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ---
 
-# Open ARCitect
+## Open ARCitect
 
 1. Login to DataHUB (1)
    ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
@@ -72,7 +85,7 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
     ![w:800](./../../../img/ARCitect_Choose_DataHUB.png)
 ---
 
-# Initiate the ARC folder structure
+## Initiate the ARC folder structure
 
 ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
 
@@ -81,7 +94,7 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ---
 
-# Your ARC's name
+## Your ARC's name
 
 <style scoped>section {font-size: 25px;}</style>
 
@@ -97,13 +110,13 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ---
 
-# Add a description to your investigation
+## Add a description to your investigation
 
 ![w:900](./../../../img/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
 
 ---
 
-# Add contributors
+## Add contributors
 
 
 ![bg right w:600](./../../../img/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
@@ -124,7 +137,7 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 ---
 
 
-# Add a study
+## Add a study
 
 by clicking "Add Study" and entering an identifier for your study
 
@@ -134,7 +147,7 @@ Use **talinum_drought** as an identifier
 
 ---
 
-# Study panel
+## Study panel
 
 In the study panel you can add
 
@@ -148,7 +161,7 @@ In the study panel you can add
 ---
 
 
-# Add protocols
+## Add protocols
 
 You can either
 - directly write a **new protocol** within the ARCitect or
@@ -159,7 +172,7 @@ You can either
 ---
 
 
-# Add an assay
+## Add an assay
 
 by clicking "Add Assay" and entering an identifier for your assay
 
@@ -168,7 +181,7 @@ Add two assays with **rnaseq** and **metabolomics** as an identifier
 
 ---
 
-# Add information about your assay
+## Add information about your assay
 
 In the assay panel you can define the assay's
  - measurement type
@@ -180,7 +193,7 @@ In the assay panel you can define the assay's
 ---
 
 
-# Explorer
+## Explorer
 
 The **Explorer (6)** button directly opens your ARC locally
 
@@ -188,7 +201,7 @@ The **Explorer (6)** button directly opens your ARC locally
 
 ---
 
-# Commit panel (7)
+## Commit panel (7)
 
 You have to commit changes before you can upload to the DataHUB
 
@@ -207,7 +220,7 @@ It allows you to
 
 
 ---
-# History panel (9)
+## History panel (9)
 
 In the History panel you can inspect your ARCs history with all commits 
 
@@ -216,7 +229,7 @@ In the History panel you can inspect your ARCs history with all commits
 
 
 ---
-# Upload your local ARC to the DataHUB
+## Upload your local ARC to the DataHUB
 
 From the sidebar, navigate to **DataHUB Sync** (8)
 
@@ -225,7 +238,7 @@ From the sidebar, navigate to **DataHUB Sync** (8)
 ---
 
 
-# DataHUB Sync
+## DataHUB Sync
 
 The DataHUB Sync panel allows you to
 - sync the changes to the DataHUB: **Push**
@@ -239,7 +252,7 @@ The DataHUB Sync panel allows you to
 ---
 
 
-# Check if your ARC is successfully uploaded
+## Check if your ARC is successfully uploaded
 
 1. [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB 
 2. Check your projects
@@ -248,7 +261,7 @@ The DataHUB Sync panel allows you to
 
 ---
 
-# Add protocols and datasets
+## Add protocols and datasets
 
 In the file tree you can
   - **import dataset files or folders** and 
@@ -268,7 +281,7 @@ In the file tree you can
 ---
 ---
 
-# Download the demo data
+## Download the demo data
 
 ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
 
@@ -278,7 +291,7 @@ In the file tree you can
 
 ---
 
-# Download the demo data
+## Download the demo data
 
 4. Search for **Talinum-CAM-Photosynthesis**
 5. Click the download button, select a location and open the ARC.
