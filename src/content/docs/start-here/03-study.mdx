@@ -11,6 +11,7 @@ import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
 
+
 In `studies` you can describe materials and resources. In case your investigation contains multiple studies, each of these is placed in its own subdirectory.
 
 ![](@images/start-here/arc-prototypic-study-divide-conquer.svg)
@@ -51,21 +52,17 @@ In `studies` you can describe materials and resources. In case your investigatio
 5. Click on the study's name (`AthalianaColdStress`) in the file tree to open the study form in the right panel
 6. Here you can add metadata about your study
 
+    :::note
+    On the study level, you can add the same metadata as on the investigation level in the step before.
+    :::
+    
+    :::tip
+    If you add data from an external source or database, this is a good place to reference the data source or associated publications.
+    :::
+
 </Steps>
 
 </Card>
-
-{/* 
-<ViolaSays>
-
-- how I grew the plants
-- the design of my experiment (two-day time series, etc.)
-
-</ViolaSays>
- */}
-
-
-{/* <Card icon="approve-check" title="Protocols"> */}
 
 ## Protocols
 
@@ -73,12 +70,18 @@ You can use the protocol subdirectory to store free-text protocols that describe
 
 ![](@images/start-here/arc-prototypic-study-identify.svg)
 
-{/* </Card> */}
 
 <Card icon="pen" title="ARCitect">
 <Steps>
 
-1. Right-click on the `Protocols` folder and select `Import Files` from the context menu 
+1. Right-click on the `Protocols` folder and select `Import Files` from the context menu
+
+    <ViolaSays>
+    I saved my lab notes about the plant growth in growth_protocol.md
+
+    </ViolaSays>
+
+
 3. Select the file `growth_protocol.md` from the demo data and click `Open`.
 4. The file is added to your ARC.
   
@@ -97,7 +100,9 @@ You can use the protocol subdirectory to store free-text protocols that describe
 </Steps>
 </Card>
 
-## From free-text protocol to structured metadata
+## Add samples to your study
+
+Structured metadata annotation in the ARC is mostly achieved via spreadsheet tables.
 
 <Card icon="pen" title="ARCitect">
 <Steps>
@@ -165,30 +170,135 @@ While it is recommended to store the protocol in an open format (`.md`, `.txt`, 
 </Steps>
 </Card>
 
-## Parameterizing the study
+## From free-text protocol to structured metadata
 
 ![](@images/start-here/arc-prototypic-study-parameterization.svg)
 
-## Finding the right metadata vocabulary
+### Finding the metadata vocabulary and descriptors
 
-![](@images/start-here/arc-prototypic-study-parameterization1.svg)
+The ARC builds on standards and leverages ontologies for metadata annotation. 
 
-## Finding the metadata vocabulary and descriptors
+The details are out of the scope of this getting-started guide. However, it is good to know that a combination of structural and biological ontologies are combined ...
 
-![](@images/start-here/arc-prototypic-study-parameterization2.svg)
+{/* TODO: explain or delete */}
 
-![](@images/start-here/arc-prototypic-study-parameterization3.svg)
+import XY from "@images/start-here/arc-prototypic-metadata.svg"
 
-## Adding a parameter to the study table 
-
-![](@images/start-here/arc-prototypic-metadata-table-add-parameter.svg)
-
-## Adding a characteristic to the study table 
-
-![](@images/start-here/arc-prototypic-metadata-table-add-characteristic.svg)
+<img src={XY.src} style="width:80%;display: block; margin: 20px" />
 
 
 
-{/* ## Use a template
+### Parameterizing the study
 
-![](@images/start-here/swate-templates.svg) */}
+{/* TODO!!! I know, I should avoid html and could do this better with css  */}
+
+<div style="  display: grid;grid-template-columns: repeat(2, minmax(0, 1fr));gap: 1em;padding:30px">
+
+  <div>
+  
+  ##### Characteristics [ ]
+  
+  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> Organism
+    - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> Arabidopsis thaliana
+  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> Tissue
+    - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> Leaf
+  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> Growth medium
+    - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> Hydroponic culture
+  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> Ecotype
+    - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> Columbia
+  
+  </div>
+  <div>
+  
+  ##### Parameters [ ]
+  
+  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> Light intensity
+    - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> 200 µEinstein
+  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> Temperature  
+    - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> 6°C / 25°C
+  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> Growth time
+    - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> 4d
+  
+  </div>
+
+</div>
+
+
+## Add characteristics
+
+<Card icon="pen" title="ARCitect">
+<Steps>
+
+1. On top of the annotation table, open the `Add Building Block` widget
+1. From the dropdown menu select `Characteristic` and click <btn>Add Column</btn> 
+    
+    <ViolaSays>
+    I worked on *Arabidopsis thaliana* plants
+    </ViolaSays>
+
+1. Enter `organism` in the search bar. This search looks for suitable *terms* in the *ontology* database.
+1. Select the Term with the id `OBI:0100026` and click <btn>Add Column</btn>
+1. In the table, insert values by selecting any cell below `Characteristic [organism]`
+2. Click the magnifying glass to activate *Term* search
+3. Search for Arabidopsis thaliana and select a suitable hit
+
+    `Input[Source Name]` | `Characteristic [organism]` | `Output[Sample Name]`
+    -------------------- |  --------------------   |  --------------------
+    Cold1                |  Arabidopsis thaliana  | Cold1_leaf
+    Cold2                |                        | Cold2_leaf
+    Cold3                |                        | Cold3_leaf
+    RT1                  |                        | RT1_leaf
+    RT2                  |                        | RT2_leaf
+    RT3                  |                        | RT3_leaf
+
+3. To fill the complete column with the same value, right-click on a cell and select `Fill Column`
+
+    `Input[Source Name]` | `Characteristic [organism]` | `Output[Sample Name]`
+    -------------------- |  --------------------       |  --------------------
+    Cold1                |  Arabidopsis thaliana       | Cold1_leaf
+    Cold2                |  Arabidopsis thaliana       | Cold2_leaf
+    Cold3                |  Arabidopsis thaliana       | Cold3_leaf
+    RT1                  |  Arabidopsis thaliana       | RT1_leaf
+    RT2                  |  Arabidopsis thaliana       | RT2_leaf
+    RT3                  |  Arabidopsis thaliana       | RT3_leaf
+
+    <ViolaSays>
+    Great, I've got this! 
+    
+    Now I can add building blocks for the characteristics "tissue" and "growth medium" and enter the values "leaf" and "hydroponic plant culture media", respectively. 
+
+    </ViolaSays>
+
+</Steps>
+</Card>
+
+
+## Add parameters
+
+### Free text 
+
+- Parameter [Growth time] of 4 days
+
+### with unit
+
+- Parameter [Light intensity] of 200 microeinstein per square meter per second
+
+## Add factors
+
+- Factor [Temperature] of 25 vs 6 degree Celsius
+
+    `Input[Source Name]` | `Characteristic [organism]` | `Factor [growth temperature]` | `Output[Sample Name]`
+    -------------------- |  --------------------       | --------------------          |  --------------------
+    Cold1                |  Arabidopsis thaliana       | 6 degree celsius              | Cold1_leaf
+    Cold2                |  Arabidopsis thaliana       | 6 degree celsius              | Cold2_leaf
+    Cold3                |  Arabidopsis thaliana       | 6 degree celsius              | Cold3_leaf
+    RT1                  |  Arabidopsis thaliana       | 25 degree celsius             | RT1_leaf
+    RT2                  |  Arabidopsis thaliana       | 25 degree celsius             | RT2_leaf
+    RT3                  |  Arabidopsis thaliana       | 25 degree celsius             | RT3_leaf
+
+## Re-organize the table
+
+- Move output column to "correct" place
+- Delete column
+
+
