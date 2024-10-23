@@ -838,7 +838,7 @@ In the assay panel you can define the assay's
 
 ## Isolating the lab processes in an assay
 
-![w:800](./../start-here/arc-prototypic-assay-modular1.svg)
+![w:600](./../start-here/arc-prototypic-assay-modular1.svg)
 
 ---
 
@@ -856,7 +856,7 @@ In the assay panel you can define the assay's
 
 ## Applying standard procedures to sample record
 
-![](./../start-here/arc-prototypic-assay-sop3.svg)
+![w:700](./../start-here/arc-prototypic-assay-sop3.svg)
 
 ---
 
@@ -961,7 +961,7 @@ Try to fill the two sheets with the protocol details:
 
 # ARC builds on ISA to connect data
 
-![w:1000](./../../../../img/ISAmodel_ARC01_img02.svg)
+![w:800](./../../../../img/ISAmodel_ARC01_img02.svg)
 
 ---
 
@@ -1533,31 +1533,31 @@ Add issues to your ARC (3)
 
 ## Options to annotate the data analysis
 
-![](./../start-here/arc-prototypic-workflows1.svg)
+![w:900](./../start-here/arc-prototypic-workflows1.svg)
 
 ---
 
 ## A computational workflow is like a protocol
 
-![](./../start-here/arc-prototypic-workflows2.svg)
+![w:900](./../start-here/arc-prototypic-workflows2.svg)
 
 ---
 
 ## Option I: Create a virtual assay
 
-![](./../start-here/arc-prototypic-workflows-virtual.svg)
+![w:900](./../start-here/arc-prototypic-workflows-virtual.svg)
 
 ---
 
 ## Option II: Create a workflow and run
 
-![](./../start-here/arc-prototypic-workflows-cwl1.svg)
+![w:900](./../start-here/arc-prototypic-workflows-cwl1.svg)
 
 ---
 
 ## Use CWL to wrap your workflow
 
-![](./../start-here/arc-prototypic-workflows-cwl2.svg)
+![w:900](./../start-here/arc-prototypic-workflows-cwl2.svg)
 
 ---
 

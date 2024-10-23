@@ -562,7 +562,7 @@ In the assay panel you can define the assay's
 
 ## Isolating the lab processes in an assay
 
-![w:800](./start-here/arc-prototypic-assay-modular1.svg)
+![w:600](./start-here/arc-prototypic-assay-modular1.svg)
 
 ---
 
@@ -580,7 +580,7 @@ In the assay panel you can define the assay's
 
 ## Applying standard procedures to sample record
 
-![](./start-here/arc-prototypic-assay-sop3.svg)
+![w:700](./start-here/arc-prototypic-assay-sop3.svg)
 
 ---
 
@@ -685,7 +685,7 @@ Try to fill the two sheets with the protocol details:
 
 # ARC builds on ISA to connect data
 
-![w:1000](./../../../img/ISAmodel_ARC01_img02.svg)
+![w:800](./../../../img/ISAmodel_ARC01_img02.svg)
 
 ---
 

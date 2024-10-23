@@ -21,31 +21,31 @@ title: ARCitect Hands-on
 
 ## Options to annotate the data analysis
 
-![](./start-here/arc-prototypic-workflows1.svg)
+![w:900](./start-here/arc-prototypic-workflows1.svg)
 
 ---
 
 ## A computational workflow is like a protocol
 
-![](./start-here/arc-prototypic-workflows2.svg)
+![w:900](./start-here/arc-prototypic-workflows2.svg)
 
 ---
 
 ## Option I: Create a virtual assay
 
-![](./start-here/arc-prototypic-workflows-virtual.svg)
+![w:900](./start-here/arc-prototypic-workflows-virtual.svg)
 
 ---
 
 ## Option II: Create a workflow and run
 
-![](./start-here/arc-prototypic-workflows-cwl1.svg)
+![w:900](./start-here/arc-prototypic-workflows-cwl1.svg)
 
 ---
 
 ## Use CWL to wrap your workflow
 
-![](./start-here/arc-prototypic-workflows-cwl2.svg)
+![w:900](./start-here/arc-prototypic-workflows-cwl2.svg)
 
 ---
 
