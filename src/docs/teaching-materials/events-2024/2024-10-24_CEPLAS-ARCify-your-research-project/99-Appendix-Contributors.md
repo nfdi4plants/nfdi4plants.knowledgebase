@@ -4,7 +4,6 @@ theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 title: Contributors
-author:
 ---
 
 # Contributors

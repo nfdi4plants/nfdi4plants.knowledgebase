@@ -17,8 +17,6 @@ author:
 - name: Kevin Frey
   github: https://github.com/Freymaurer
   orcid: https://orcid.org/0000-0002-8493-1077
-- name: Lukas Weil
-- name: Timo Mühlhaus
 ---
 
 <style>

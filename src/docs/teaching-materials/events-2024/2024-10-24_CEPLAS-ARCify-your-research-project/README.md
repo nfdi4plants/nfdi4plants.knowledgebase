@@ -15,11 +15,11 @@ npm run fornax
 2. Open http://127.0.0.1:8080/docs/teaching-materials/events-2024/2024-10-24_CEPLAS-ARCify-your-research-project/index.html
 
 
-## Batch-compile marp slide decks to html
-
 ```bash
 cd src/docs/teaching-materials/events-2024/2024-10-24_CEPLAS-ARCify-your-research-project
 ```
+
+## Batch-compile marp slide decks to html
 
 ```bash
 rm ./*.html

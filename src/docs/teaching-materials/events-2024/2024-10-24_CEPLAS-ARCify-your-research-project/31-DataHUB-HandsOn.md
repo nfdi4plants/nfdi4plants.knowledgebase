@@ -357,8 +357,6 @@ Add issues to your ARC (3)
 ---
 
 
-
-
 # Moving from paper to FAIR data publication
 
 ![w:900](./start-here/fair-data-publication.svg)
