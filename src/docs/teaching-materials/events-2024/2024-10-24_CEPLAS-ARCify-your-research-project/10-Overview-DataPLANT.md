@@ -62,35 +62,6 @@ Your entire investigation in a single unified bag
 
 ---
 
-# ARC as single-entry point
-
-![w:900](./../../../img/ARC-publication-outlets.drawio.png)
-
----
-
-# From ARC to repositories
-
-<style scoped>
-
-section p img {
-width: 1000px;
-height: 400px;
-object-fit: cover;
-object-position: 100% 80%;
-/* display: block; */;
-}
-</style>
-
-![](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/ARC_Repository03_img1.png)
-
----
-
-# Moving from paper to data publications
-
-![w:400px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/DataPLANT_LandingPage_Mission.svg)
-
-
----
 
 # Publish your ARC, get a DOI
 
@@ -98,29 +69,9 @@ object-position: 100% 80%;
 
 ---
 
-# Metadata templates
+# ARC as single-entry point
 
-![w:700](./../../../img/Swate_metadataTemplates.png)
-
-Facilities and labs can define their common workflows as templates
-
----
-
-# Validation
-
-
-![h:400](./../../../img/tpj16474-fig-0008-m-modified.png)
-
-<span class="footer-reference"> adapted from Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
-
----
-
-# Validate & publish
-
-
-![h:400](././../../../img/tpj16474-fig-0008-m.jpg)
-
-<span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
+![w:900](./../../../img/ARC-publication-outlets.drawio.png)
 
 ---
 
@@ -183,24 +134,6 @@ Facilities and labs can define their common workflows as templates
 # Meet your collaborators in an ARC
 
 <img src="./../../../img/enablingPlatform-Timeline.drawio.png" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
-
----
-
-# Project management
-
-![w:800](./../../../img/tpj16474-fig-0007-m.jpg)
-
-<span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
-
----
-
-# DataPLAN &ndash; a DataPLANT DMP generator
-
-<span class="footer-reference">**Zhou *et al.* (2023)**, DataPLAN: a web-based data management plan generator for the plant sciences, bioRxiv 2023.07.07.548147; doi: https://doi.org/10.1101/2023.07.07.548147 </span>
-
-https://dmpg.nfdi4plants.org
-
-![w:800](./../../../img/zhou2023-dataplan.png)
 
 ---
 

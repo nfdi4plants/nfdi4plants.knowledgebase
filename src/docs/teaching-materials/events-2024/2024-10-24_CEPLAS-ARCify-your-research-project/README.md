@@ -84,8 +84,9 @@ done
 
 sed "s|\.\./\.\./\.\./img/|\.\./\.\./\.\./\.\./img/|g" $outfile > tmp; mv tmp $outfile
 sed "s|\./qr-code|\./\.\./qr-code|g" $outfile > tmp; mv tmp $outfile
+sed "s|\./start-here|\./\.\./start-here|g" $outfile > tmp; mv tmp $outfile
 
-marp --html --allow-local-files $outfile --theme-set $marpTheme ../../style/ --
-marp --html --allow-local-files --pdf $outfile --theme-set $marpTheme ../../style/ --
+npx @marp-team/marp-cli@latest --html --allow-local-files $outfile --theme-set $marpTheme ../../style/ --
+npx @marp-team/marp-cli@latest --html --allow-local-files --pdf $outfile --theme-set $marpTheme ../../style/ --
 
 ```

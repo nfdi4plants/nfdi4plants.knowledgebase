@@ -372,10 +372,7 @@ Add issues to your ARC (3)
 ![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/doi-accession.png)
 
 
---- 
-
-
-
+---
 ---
 
 ## Backup
