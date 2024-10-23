@@ -834,7 +834,6 @@ In the History panel you can inspect your ARCs history with all commits
 
 ![bg right:55% w:500](./../../../img/ARCitect-History_panel.png)
 
-
 ---
 
 

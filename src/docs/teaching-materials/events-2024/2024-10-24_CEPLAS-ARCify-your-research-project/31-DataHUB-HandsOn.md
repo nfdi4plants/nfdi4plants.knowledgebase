@@ -356,16 +356,38 @@ Add issues to your ARC (3)
 
 ---
 
-<div class="datahubicon">DataHUB</div>
 
-## Publish your ARC with a few clicks
 
-![w:900px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/cqc-results.png)
+
+# Moving from paper to FAIR data publication
+
+![w:900](./start-here/fair-data-publication.svg)
+
+
+---
+
+# Publish your ARC, get a DOI
+
+![w:800px](./../../../img/ARC_SeamlessPublication.svg)
+
+---
+
+# Validate & publish
+
+
+![h:400](././../../../img/tpj16474-fig-0008-m.jpg)
+
+<span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
 ---
 
 <div class="datahubicon">DataHUB</div>
 
+## Validation towards publication
+
+![w:900px](./start-here/publication-validation.svg)
+
+---
 
 ## Receive a DOI
 
