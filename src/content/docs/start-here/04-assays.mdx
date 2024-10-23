@@ -1,5 +1,5 @@
 ---
-title: Add Assay Data
+title: Add assay data
 sidebar:
   order: 4
 ---
@@ -14,111 +14,133 @@ import { FileTree } from '@astrojs/starlight/components';
 In `assays` you can store data and metadata from measurements.
 
 
-## Assay 1: sugar measurement
+## Assay 1: Sugar Measurement
 
 ![](@images/start-here/arc-prototypic-assay-sugar.svg)
 
 
-## Add a new assay
-
-- Identifier
-- Measurement Type
-- Technology Type
-- Technology platform
-- Performer
-
+### Add a new assay
 
 <Card icon="pen" title="ARCitect">
 
 <Steps>
 
 1. add "SugarMeasurement" assay
-    - Fill out top-level metadata:
-        - Measurement type = `sugar measurement`
-        - Technology type = `photometry`
-        - Technology platform = `Infinite M200 plate reader (Tecan)`
-2. import [data file](./sugar_result.csv) into dataset
-3. import [extraction protocol file](./sugar_extraction_protocol.md) into protocols
+2. Fill out top-level metadata:
+    - Measurement type = `sugar measurement`
+    - Technology type = `photometry`
+    - Technology platform = `Infinite M200 plate reader (Tecan)`
 
 </Steps>
 
 </Card>
 
 
-
-## Isolating the lab processes in an assay
-
-import IMG from "@images/start-here/arc-prototypic-assay-modular1.svg"
-
-<img src={IMG.src} style="width:80%;display: block; margin: 20px" />
-
-## Separating different assay elements
+### Separate different assay elements
 
 import IMG2 from "@images/start-here/arc-prototypic-assay-modular2.svg"
 
 <img src={IMG2.src} style="width:80%;display: block; margin: 20px" />
 
 
-## Add one annotation table for each lab process
-
+### Add assay data and protocols
 
 <Card icon="pen" title="ARCitect">
+    <Steps>
 
-<Steps>
+    1. import [data file](./sugar_result.csv) into dataset
+    2. import [extraction protocol file](./sugar_extraction_protocol.md) into protocols
 
-1. add "SugarExtraction" table
-2. add "SugarMeasurement" table
-
-</Steps>
-
+    </Steps>
 </Card>
 
 
-## Parametric description of the lab process
 
-### Sugar extraction
+### Isolate the lab processes in an assay
+
+- reusablity
+
+import IMG from "@images/start-here/arc-prototypic-assay-modular1.svg"
+
+<img src={IMG.src} style="width:80%;display: block; margin: 20px" />
+
+
+### Add one annotation table for each lab process
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+
+    1. add "SugarExtraction" table
+    2. add "SugarMeasurement" table
+
+    </Steps>
+</Card>
+
+
+### Parametric description of the lab process
+
+#### Sugar extraction
 
 ![](@images/start-here/arc-prototypic-assay-labprocess-parameters1.svg)
 
-### Sugar measurement
+#### Sugar measurement
 
 ![](@images/start-here/arc-prototypic-assay-labprocess-parameters2.svg)
 
 
-## Use templates to describe the lab processes
+### Use templates to describe the lab processes
 
 <Card icon="pen" title="ARCitect">
+    <Steps>
 
-<Steps>
+    1. select "SugarExtraction" table
+        - Load template `RPTU - PP, Sugar extraction`
+        - Input [Sample name] of normal and cold sample
+        - Protocol REF with file picker to protocol file
+        - Parameter [`Vorex Mixer`] of 3 `second`
+        - Parameter [`Temperature`] of 95 `degree celsius`
+        - Output [Sample name] of normal and cold extraction
+    2. select "SugarMeasurement" table
+        - Load template `RPTU - PP, Sugar measurement`
+        - Input [Sample name] of 3xNormal and 3xCold sample
+        - Parameter [`technical replicate`] of 1,2,3,1,2,3
+        - Parameter [`sample volume`] of 10 `microliter`
+        - Parameter [`buffer volume`] of 190 `microliter`
+        - Parameter [cycle count] of 5
+        - Output [Data] with Filepicker to imported sugar data file
 
-1. select "SugarExtraction" table
-    - Load template `RPTU - PP, Sugar extraction`
-    - Input [Sample name] of normal and cold sample
-    - Protocol REF with file picker to protocol file
-    - Parameter [`Vorex Mixer`] of 3 `second`
-    - Parameter [`Temperature`] of 95 `degree celsius`
-    - Output [Sample name] of normal and cold extraction
-2. select "SugarMeasurement" table
-    - Load template `RPTU - PP, Sugar measurement`
-    - Input [Sample name] of 3xNormal and 3xCold sample
-    - Parameter [`technical replicate`] of 1,2,3,1,2,3
-    - Parameter [`sample volume`] of 10 `microliter`
-    - Parameter [`buffer volume`] of 190 `microliter`
-    - Parameter [cycle count] of 5
-    - Output [Data] with Filepicker to imported sugar data file
-
-</Steps>
-
+    </Steps>
 </Card>
 
+---
 
-------
-------
-
-## Save time using standard methods and SOPs
+## Assay 2: Proteomics Assays
 
 ![](@images/start-here/arc-prototypic-assay-sop1.svg)
+
+### Save time using standard methods and SOPs
+
 ![](@images/start-here/arc-prototypic-assay-sop2.svg)
 ![](@images/start-here/arc-prototypic-assay-sop3.svg)
 
-## Applying standard procedures to sample record
+### Apply standard procedures to sample records
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+
+    1. add `Proteomics_MS` assay (NAMING!)
+        - import raw data folder (./MS_Raw/) into dataset
+        - import [local assay template](./AssayTemplate_Proteomics_MS.json)(formatted as ARCtrl json)
+        - fill out the two tables (tables might be in wrong order!)
+
+    2. add `Proteomics_DataAnalysis` assay
+        - import [dummy fasta](./dummy.fasta) into dataset
+        - import [proteomics result](./MSFraggerOutput/combined_protein.tsv.csv) into dataset
+        - import [local assay template](./AssayTemplate_Proteomics_DataAnalysis.json)(formatted as ARCtrl json)
+        - fill out table
+
+    </Steps>
+</Card>
+
+
+

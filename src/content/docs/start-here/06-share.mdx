@@ -1,7 +1,7 @@
 ---
 title: Share your ARC
 sidebar:
-  order: 10
+  order: 6
 ---
 
 import ViolaSays from '@components/ViolaSays.astro'
@@ -27,7 +27,7 @@ import { Card } from '@astrojs/starlight/components';
 }
 
 
-<Card title="DataPLANT Account">
+<Card title="DataPLANT Account" icon="setting">
 
 If you do not have an account, please register with DataPLANT to use the PLANTDataHUB
 
@@ -40,4 +40,32 @@ import DataHUBAccount from '../datahub/datahub-account.mdx'
 
 </details>
 
+</Card>
+
+
+## Upload your ARC to the PLANTDataHUB
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+
+    1. commit (with explanation)
+    2. "DATAHub Sync" tab
+        - add a remote
+        - push
+    3. use direct link to repository website
+
+    </Steps>
+</Card>
+
+
+## Checkout your ARC in the PLANTDataHUB
+
+<Card icon="globe" title="PLANTDataHUB">
+    <Steps>
+    
+    1. Browse files (mimics local folder structure)
+    2. add members
+    3. File an Issue ("Would be good to have summary statistics for sugar measurement...") and link someone
+
+    </Steps>
 </Card>
