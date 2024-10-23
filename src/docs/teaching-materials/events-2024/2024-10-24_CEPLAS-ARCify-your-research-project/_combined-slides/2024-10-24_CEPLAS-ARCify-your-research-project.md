@@ -297,6 +297,7 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 ---
 
 
+
 <style>
 
 .arcitectLogo {
@@ -311,6 +312,7 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
   color: rgba(0, 0, 0, 0);
   width: 1em;
   height: 1em;
+  padding-left: 20px; 
   background-color: #FFC000;
 }
 
@@ -331,7 +333,7 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 </style>
 
 
-## Hands-on demo
+## ARCitect Hands-on
 
 <style scoped>section {background: none; background-color: white}</style>
 <!-- _paginate: false -->
@@ -586,44 +588,35 @@ This allows you to reference the free-text, human-readable protocol.
 ## Finding the metadata vocabulary and descriptors
 
 <div class="two-columns">
+
   <div>
   
   ### Parameters []
   
-  - <div class="yellowblock"></div>
-
-    - <div class="blueblock"></div> Light intensity 200 µEinstein
-
-  - <div class="yellowblock"></div>  
-
-    - <div class="blueblock"></div> Temperature 6°C / 25°C
-
-  - <div class="yellowblock"></div>
-
-    - <div class="blueblock"></div> Growing 4d
+  - <span class="yellowblock"></span>
+    - <span class="blueblock"></span> Light intensity 200 µEinstein
+  - <span class="yellowblock"></span>  
+    - <span class="blueblock"></span> Temperature 6°C / 25°C
+  - <span class="yellowblock"></span>
+    - <span class="blueblock"></span> Growing 4d
   
   </div>  
+
   <div>
   
   ### Characteristics []
   
-  - <div class="yellowblock"></div>
-
-    - <div class="blueblock"></div> Arabidopsis thaliana
-
-  - <div class="yellowblock"></div>
-
-    - <div class="blueblock"></div> Leaf
-  
-  - <div class="yellowblock"></div>
-  
-    - <div class="blueblock"></div> Hydroponic culture
-  
-  - <div class="yellowblock"></div>
-
-    - <div class="blueblock"></div> Columbia
+  - <span class="yellowblock"></span>
+    - <span class="blueblock"></span> Arabidopsis thaliana
+  - <span class="yellowblock"></span>
+    - <span class="blueblock"></span> Leaf
+  - <span class="yellowblock"></span>
+    - <span class="blueblock"></span> Hydroponic culture
+  - <span class="yellowblock"></span>
+    - <span class="blueblock"></span> Columbia
   
   </div>
+
 </div>
 
 ---
@@ -631,44 +624,35 @@ This allows you to reference the free-text, human-readable protocol.
 ## Finding the metadata vocabulary and descriptors
 
 <div class="two-columns">
+
   <div>
   
   ### Parameters []
   
-  - <div class="yellowblock"></div> Light intensity
-
-    - <div class="blueblock"></div> 200 µEinstein
-
-  - <div class="yellowblock"></div> Temperature  
-
-    - <div class="blueblock"></div> 6°C / 25°C
-
-  - <div class="yellowblock"></div> Growth time
-
-    - <div class="blueblock"></div> 4d
+  - <span class="yellowblock"></span> Light intensity
+    - <span class="blueblock"></span> 200 µEinstein
+  - <span class="yellowblock"></span> Temperature  
+    - <span class="blueblock"></span> 6°C / 25°C
+  - <span class="yellowblock"></span> Growth time
+    - <span class="blueblock"></span> 4d
   
-  </div>  
+  </div>
+
   <div>
   
   ### Characteristics []
   
-  - <div class="yellowblock"></div> Organism
-
-    - <div class="blueblock"></div> Arabidopsis thaliana
-
-  - <div class="yellowblock"></div> Tissue
-
-    - <div class="blueblock"></div> Leaf
-  
-  - <div class="yellowblock"></div> Growth medium
-  
-    - <div class="blueblock"></div> Hydroponic culture
-  
-  - <div class="yellowblock"></div> Ecotype
-
-    - <div class="blueblock"></div> Columbia
+  - <span class="yellowblock"></span> Organism
+    - <span class="blueblock"></span> Arabidopsis thaliana
+  - <span class="yellowblock"></span> Tissue
+    - <span class="blueblock"></span> Leaf
+  - <span class="yellowblock"></span> Growth medium
+    - <span class="blueblock"></span> Hydroponic culture
+  - <span class="yellowblock"></span> Ecotype
+    - <span class="blueblock"></span> Columbia
   
   </div>
+
 </div>
 
 ---
@@ -1147,37 +1131,6 @@ The DataHUB Sync panel allows you to
 2. Check your projects
 
 ---
----
-
-# Backup Slides
-
----
-
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
-
-## Download the demo data
-
-![bg right:40% w:250](./../../../../img/ARCitect-help-Sidebar.png)
-
-1. Open the ARCitect
-2. Login (1) to your DataHUB account
-3. Navigate to **Download ARC** (4)
-
----
-
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
-
-## Download the demo data
-
-4. Search for **Talinum-CAM-Photosynthesis**
-5. Click the download button, select a location and open the ARC.
-6. Open the downloaded ARC
-
-![w:700](./../../../../img/arcitect-download-TalinumARC.png)
-
-:bulb: This is basically the ARC we created in the last session.
-
----
 
 
 <style>
@@ -1527,8 +1480,6 @@ Add issues to your ARC (3)
 ---
 
 
-
-
 # Moving from paper to FAIR data publication
 
 ![w:900](./../start-here/fair-data-publication.svg)
@@ -1563,86 +1514,6 @@ Add issues to your ARC (3)
 
 ![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/doi-accession.png)
 
-
----
----
-
-## Backup
-
----
-
-
-
-## Where do I store my ARC?
-
-![](./../../../../img/ARC-storageLocations-withNotes.drawio.png)
-
----
-
-## ARC storage and sharing
-
-![w:600](./../../../../img/ARC-storageLocations-withNotes.drawio.png)
-
-- DataHUB as "ground truth" / original clone
-- You can sync and communicate all changes to your ARC via the DataHUB
-
-<span style="font-size:0.8em"> :bulb: ARCitect and ARC commander provide options to avoid syncing large files (LFS = Large file storage) </span>
-
----
-
-## Example setup to store and use ARCs
-
-<div class=two-columns style="font-size: 25px">
-
-  <div>
-  
-  ### Personal computer
-
-  - work on small files
-  - annotate metadata
-  - add scripts, protocols
-  
-  ### Workstation / Server
-
-  - work on large files
-  - run computations
-  
-  </div>
-  <div>
-
-  ### FileShare
-  
-  - mount to local machine, sync ARC from there
-  
-  ### HPC
-
-  - direct connection HPC to DataHUB (depends on security settings)
-  - or mount to local machine and sync, ARC from there
-  
-  
-  </div>
-
-</div>
-
----
----
-
-
-<style>
-
-.datahubicon {
-  position: absolute;
-  top: 1%;
-  left: 1%;
-  width: 100px;
-  background-color: #2D3E50;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  }
-
-</style>
 
 ---
 
@@ -1707,14 +1578,60 @@ In the file tree you can
 
 
 ---
+
+
+## Where do I store my ARC?
+
+![](./../../../../img/ARC-storageLocations-withNotes.drawio.png)
+
 ---
 
-# Backup Slides
+## ARC storage and sharing
 
+![w:600](./../../../../img/ARC-storageLocations-withNotes.drawio.png)
+
+- DataHUB as "ground truth" / original clone
+- You can sync and communicate all changes to your ARC via the DataHUB
+
+<span style="font-size:0.8em"> :bulb: ARCitect and ARC commander provide options to avoid syncing large files (LFS = Large file storage) </span>
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+## Example setup to store and use ARCs
+
+<div class=two-columns style="font-size: 25px">
+
+  <div>
+  
+  ### Personal computer
+
+  - work on small files
+  - annotate metadata
+  - add scripts, protocols
+  
+  ### Workstation / Server
+
+  - work on large files
+  - run computations
+  
+  </div>
+  <div>
+
+  ### FileShare
+  
+  - mount to local machine, sync ARC from there
+  
+  ### HPC
+
+  - direct connection HPC to DataHUB (depends on security settings)
+  - or mount to local machine and sync, ARC from there
+  
+  
+  </div>
+
+</div>
+
+---
 
 ## Download the demo data
 
@@ -1726,7 +1643,7 @@ In the file tree you can
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+
 
 ## Download the demo data
 
@@ -1737,12 +1654,6 @@ In the file tree you can
 ![w:700](./../../../../img/arcitect-download-TalinumARC.png)
 
 :bulb: This is basically the ARC we created in the last session.
-
----
-
-
----
-
 
 ---
 

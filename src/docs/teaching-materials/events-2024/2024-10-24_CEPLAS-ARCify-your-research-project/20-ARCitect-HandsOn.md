@@ -17,7 +17,10 @@ author:
 - name: Kevin Frey
   github: https://github.com/Freymaurer
   orcid: https://orcid.org/0000-0002-8493-1077
+- name: Lukas Weil
+- name: Timo Mühlhaus
 ---
+
 
 <style>
 
@@ -54,7 +57,7 @@ author:
 </style>
 
 
-## Hands-on demo
+## ARCitect Hands-on
 
 <style scoped>section {background: none; background-color: white}</style>
 <!-- _paginate: false -->
@@ -850,34 +853,3 @@ The DataHUB Sync panel allows you to
 
 1. [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB 
 2. Check your projects
-
----
----
-
-# Backup Slides
-
----
-
-<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
-
-## Download the demo data
-
-![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
-
-1. Open the ARCitect
-2. Login (1) to your DataHUB account
-3. Navigate to **Download ARC** (4)
-
----
-
-<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
-
-## Download the demo data
-
-4. Search for **Talinum-CAM-Photosynthesis**
-5. Click the download button, select a location and open the ARC.
-6. Open the downloaded ARC
-
-![w:700](./../../../img/arcitect-download-TalinumARC.png)
-
-:bulb: This is basically the ARC we created in the last session.

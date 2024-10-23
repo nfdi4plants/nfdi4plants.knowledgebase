@@ -26,7 +26,6 @@ See details and registration [here](https://nfdi4plants.org/events/2024-10-24_ce
 - <a href=./10-Overview-DataPLANT.html target=_blank>Overview-DataPLANT</a>
 - <a href=./20-ARCitect-HandsOn.html target=_blank>ARCitect-HandsOn</a>
 - <a href=./31-DataHUB-HandsOn.html target=_blank>DataHUB-HandsOn</a>
-- <a href=./32-data-publication.html target=_blank>data-publication</a>
 - <a href=./33-data-analysis.html target=_blank>data-analysis</a>
 - <a href=./34-appendix.html target=_blank>appendix</a>
 - <a href=./99-Appendix-Contributors.html target=_blank>Appendix-Contributors</a>
