@@ -16,15 +16,6 @@ author:
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
 
-<!-- TODO 
-
-- more to remote?
-- add Swate alpha examples in ARCitect ???
-- check linking studies and assays
-
--->
-
-
 
 # ARCitect Hands-on
 
@@ -39,15 +30,33 @@ Please install version **v0.0.48** (or later) of the ARCitect: https://github.co
 
 ---
 
-## Download the demo data <!-- fit -->
+## Download the demo data
 
 https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2 
 
-![bg right w:600](./../../../img/demo-data-download.png)
+<!-- ![bg right w:600](./../../../img/demo-data-download.png) -->
 
 ---
 
-# Sort Demo data in an ARC
+## A small prototypic project
+
+![](./start-here/arc-prototypic.svg)
+
+---
+
+## ARC: Annotated research context
+
+![](./start-here/arc-bag.svg)
+
+---
+
+## The ARC scaffold structure
+
+![](./start-here/arc-scaffold.svg)
+
+---
+
+# Sort Demo data in an ARC <!-- fit -->
 
 ![bg right width:400](./../../../img/demo_data_screenshot.png)
 
@@ -94,12 +103,26 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ---
 
-# Add a contributor
+# Add contributors
 
 
 ![bg right w:600](./../../../img/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
 - you could also add the contacts directly via ORCID
+
 ---
+
+## Divide and conquer for reproducibility
+
+![](./start-here/arc-prototypic-study-divide-conquer.svg)
+
+---
+
+## Identifying the ‘study’ part
+
+![w:900](./start-here/arc-prototypic-study-identify.svg)
+
+---
+
 
 # Add a study
 
@@ -121,7 +144,18 @@ In the study panel you can add
 - data process information
 
 ![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_StudyPanel.png)
-<!-- TODO show connected assays -->
+
+---
+
+
+# Add protocols
+
+You can either
+- directly write a **new protocol** within the ARCitect or
+- import an existing one from your computer
+
+![w:800](./../../../img/arcitect-ARCPanel-protocol.png)
+
 ---
 
 
@@ -131,19 +165,6 @@ by clicking "Add Assay" and entering an identifier for your assay
 
 Add two assays with **rnaseq** and **metabolomics** as an identifier
 ![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_Assay.png)
-
----
-
-# Link your assay to a study
-
-You can either
-- link your new assay to an existing study in your ARC or
-- create a new one
-  
-Link your assays to your **talinum_drought** study
-
-
-![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_Assay2.png)
 
 ---
 
@@ -158,36 +179,6 @@ In the assay panel you can define the assay's
 
 ---
 
-# Add protocols
-
-You can either
-- directly write a **new protocol** within the ARCitect or
-- import an existing one from your computer
-
-![w:800](./../../../img/arcitect-ARCPanel-protocol.png)
-
----
-
-# Add protocols and datasets
-
-In the file tree you can
-  - **import dataset files or folders** and 
-  - **protocols** associated to that dataset.
-
-:bulb: **Import Dataset** allows to import data from any location on your computer into the ARC.
-
-:warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
-
-
-![bg right:40% w:400](./../../../img/arcitect-ARCPanel-assay03.png)
-
----
-
-# Sort Demo Data to your ARC
-
-💡 protocols and multiple datasets can directly be imported via ARCitect
-
----
 
 # Explorer
 
@@ -253,25 +244,48 @@ The DataHUB Sync panel allows you to
 1. [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB 
 2. Check your projects
 
+
+
 ---
 
-# Your ARC is ready
+# Add protocols and datasets
 
-<style scoped>
+In the file tree you can
+  - **import dataset files or folders** and 
+  - **protocols** associated to that dataset.
 
-section p br {
-   display: block;
-   margin-top: 20px;
-   content: "";
-}
-</style>
+:bulb: **Import Dataset** allows to import data from any location on your computer into the ARC.
 
-👩‍💻 Initiated an ARC
-<br>
-📂 Structured and ...  
-<br>
-<img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate_c_40x40.png'/> ... annotated experimental data
-<br>
-🌐 Shared with collaborators
+:warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
 
-![bg right width:400](./../../../img/demo_arc_screenshot.png)
+
+![bg right:40% w:400](./../../../img/arcitect-ARCPanel-assay03.png)
+
+---
+
+
+
+---
+---
+
+# Download the demo data
+
+![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
+
+1. Open the ARCitect
+2. Login (1) to your DataHUB account
+3. Navigate to **Download ARC** (4)
+
+---
+
+# Download the demo data
+
+4. Search for **Talinum-CAM-Photosynthesis**
+5. Click the download button, select a location and open the ARC.
+6. Open the downloaded ARC
+
+![w:700](./../../../img/arcitect-download-TalinumARC.png)
+
+:bulb: This is basically the ARC we created in the last session.
+
+---

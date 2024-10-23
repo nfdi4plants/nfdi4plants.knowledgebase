@@ -20,7 +20,7 @@ author:
 
 # Annotated Research Context (ARC)
 
-![width:850](./../../../img/ARC-data-cycle-bag.drawio.png)
+![width:800](./start-here/arc-bag.svg)
 
 Your entire investigation in a single unified bag
 

@@ -15,47 +15,7 @@ author:
   orcid: https://orcid.org/0009-0000-4569-6126
 ---
 
-
-# Swate hands-on with demo data
-
----
-
-# Goals
-
-- Get familiar with ISA metadata and Swate
-- Annotate data in your ARC
-
----
-
-# Download the demo data
-
-![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
-
-1. Open the ARCitect
-2. Login (1) to your DataHUB account
-3. Navigate to **Download ARC** (4)
-
----
-
-# Download the demo data
-
-4. Search for **Talinum-CAM-Photosynthesis**
-5. Click the download button, select a location and open the ARC.
-6. Open the downloaded ARC
-
-![w:700](./../../../img/arcitect-download-TalinumARC.png)
-
-:bulb: This is basically the ARC we created in the last session.
-
----
-
-# Swate Overview
-
-![width:1300](./../../../img/Swate_a_Overview.png)
-
----
-
-# Let's annotate the plant samples first
+##  Let's annotate the plant samples first
 
 1. Check out the lab notes `studies/talinum_drought/protocols/plant_material.txt`
 2. Select the study `talinum_drought`
@@ -259,9 +219,3 @@ Try to fill the two sheets with the protocol details:
 
 :bulb: This allows you to link your samples to the resulting raw data files.
 
----
-
-## Your ISA table is ready 🎉
-
-Go ahead, adjust the *Building Blocks* you want to use to describe your experiment as you see fit.
-Insert values using Swate Term search and add input and output.
