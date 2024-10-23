@@ -33,6 +33,7 @@ author:
   color: rgba(0, 0, 0, 0);
   width: 1em;
   height: 1em;
+  padding-left: 20px; 
   background-color: #FFC000;
 }
 
@@ -308,44 +309,35 @@ This allows you to reference the free-text, human-readable protocol.
 ## Finding the metadata vocabulary and descriptors
 
 <div class="two-columns">
+
   <div>
   
   ### Parameters []
   
-  - <div class="yellowblock"></div>
-
-    - <div class="blueblock"></div> Light intensity 200 µEinstein
-
-  - <div class="yellowblock"></div>  
-
-    - <div class="blueblock"></div> Temperature 6°C / 25°C
-
-  - <div class="yellowblock"></div>
-
-    - <div class="blueblock"></div> Growing 4d
+  - <span class="yellowblock"></span>
+    - <span class="blueblock"></span> Light intensity 200 µEinstein
+  - <span class="yellowblock"></span>  
+    - <span class="blueblock"></span> Temperature 6°C / 25°C
+  - <span class="yellowblock"></span>
+    - <span class="blueblock"></span> Growing 4d
   
   </div>  
+
   <div>
   
   ### Characteristics []
   
-  - <div class="yellowblock"></div>
-
-    - <div class="blueblock"></div> Arabidopsis thaliana
-
-  - <div class="yellowblock"></div>
-
-    - <div class="blueblock"></div> Leaf
-  
-  - <div class="yellowblock"></div>
-  
-    - <div class="blueblock"></div> Hydroponic culture
-  
-  - <div class="yellowblock"></div>
-
-    - <div class="blueblock"></div> Columbia
+  - <span class="yellowblock"></span>
+    - <span class="blueblock"></span> Arabidopsis thaliana
+  - <span class="yellowblock"></span>
+    - <span class="blueblock"></span> Leaf
+  - <span class="yellowblock"></span>
+    - <span class="blueblock"></span> Hydroponic culture
+  - <span class="yellowblock"></span>
+    - <span class="blueblock"></span> Columbia
   
   </div>
+
 </div>
 
 ---
@@ -353,44 +345,35 @@ This allows you to reference the free-text, human-readable protocol.
 ## Finding the metadata vocabulary and descriptors
 
 <div class="two-columns">
+
   <div>
   
   ### Parameters []
   
-  - <div class="yellowblock"></div> Light intensity
-
-    - <div class="blueblock"></div> 200 µEinstein
-
-  - <div class="yellowblock"></div> Temperature  
-
-    - <div class="blueblock"></div> 6°C / 25°C
-
-  - <div class="yellowblock"></div> Growth time
-
-    - <div class="blueblock"></div> 4d
+  - <span class="yellowblock"></span> Light intensity
+    - <span class="blueblock"></span> 200 µEinstein
+  - <span class="yellowblock"></span> Temperature  
+    - <span class="blueblock"></span> 6°C / 25°C
+  - <span class="yellowblock"></span> Growth time
+    - <span class="blueblock"></span> 4d
   
-  </div>  
+  </div>
+
   <div>
   
   ### Characteristics []
   
-  - <div class="yellowblock"></div> Organism
-
-    - <div class="blueblock"></div> Arabidopsis thaliana
-
-  - <div class="yellowblock"></div> Tissue
-
-    - <div class="blueblock"></div> Leaf
-  
-  - <div class="yellowblock"></div> Growth medium
-  
-    - <div class="blueblock"></div> Hydroponic culture
-  
-  - <div class="yellowblock"></div> Ecotype
-
-    - <div class="blueblock"></div> Columbia
+  - <span class="yellowblock"></span> Organism
+    - <span class="blueblock"></span> Arabidopsis thaliana
+  - <span class="yellowblock"></span> Tissue
+    - <span class="blueblock"></span> Leaf
+  - <span class="yellowblock"></span> Growth medium
+    - <span class="blueblock"></span> Hydroponic culture
+  - <span class="yellowblock"></span> Ecotype
+    - <span class="blueblock"></span> Columbia
   
   </div>
+
 </div>
 
 ---
