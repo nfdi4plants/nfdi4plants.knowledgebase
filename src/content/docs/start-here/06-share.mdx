@@ -43,33 +43,97 @@ import DataHUBAccount from '../datahub/datahub-account.mdx'
 </Card>
 
 
+## Commit panel
+
+You have to commit changes before you can upload to the DataHUB
+
+## Commit your changes
+
+If you are logged in, the **Commit panel** shows
+- your DataHUB's *Full Name* and *eMail*
+
+It allows you to
+- track changes of the ARC with git
+- add a commit message 
+- use different branches 
+
+## History panel
+
+In the History panel you can inspect your ARCs history with all commits 
+
 ## Upload your ARC to the PLANTDataHUB
 
 <Card icon="pen" title="ARCitect">
     <Steps>
-
-    1. commit (with explanation)
-    2. "DATAHub Sync" tab
+    1. From the sidebar, navigate to the `Login Menu`
+        - Login to DataHUB
+        - Select `git.nfdi4plants.org` as Host
+    1. From the sidebar, navigate to the `DataHUB Sync` menu
         - add a remote
         - push
-    3. use direct link to repository website
+        
+            :::note
+            The DataHUB Sync panel allows you to
+                - sync the changes to the DataHUB: **Push**
+                - sync from the DataHUB: **Pull**, and
+                - change the Remote for the synchronization
+            :::
+
+    1. use direct link to repository website
 
     </Steps>
 </Card>
-
 
 ## Checkout your ARC in the PLANTDataHUB
 
 <Card icon="gitlab" title="PLANTDataHUB">
     <Steps>
     
-    1. Browse files (mimics local folder structure)
+    1. [sign in](https://git.nfdi4plants.org)
+    1. Browse files of your ARC
+       - mimics local folder structure
 
     </Steps>
 </Card>
 
 
-2. add members
+## Add members to your ARC
+
+<Card icon="gitlab" title="PLANTDataHUB">
+    <Steps>
+
+    1. Click on **Project Information** in the left navigation panel
+    2. Click on **Members**
+    3. Click on **Invite members**
+    4. Search for potential collaborators
+    5. Select a role
+
+        :::note[Choosing the proper role]
+        When inviting new members to an ARC or group, you can choose between different levels.
+        :::
+
+        {/* <img src="./../../../img/arc-sharing-PermissionsRoles.drawio.png" style="display: block; margin: auto" width=800px> */}
+
+        :::note
+        By default you are **Owner** of an ARC you create or upload to the DataHUB.
+        :::  
+
+    </Steps>
+</Card>
 
 
-3. File an Issue ("Would be good to have summary statistics for sugar measurement...") and link someone
+## Project Management
+
+<Card icon="gitlab" title="PLANTDataHUB">
+    <Steps>
+
+        1. File an Issue ("Would be good to have summary statistics for sugar measurement...") and link someone
+
+    </Steps>
+</Card>
+
+
+
+
+
+
