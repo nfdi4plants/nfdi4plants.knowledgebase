@@ -26,97 +26,8 @@ author:
 
 </style>
 
-<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
-
-## Let's annotate the plant samples first
-
-1. Check out the lab notes `studies/talinum_drought/protocols/plant_material.txt`
-2. Select the study `talinum_drought`
-3. Add a new table sheet at the bottom
-
 ---
 
-<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
-
-## Create an annotation table
-
-Create a Swate annotation table by adding **Building blocks** via the widget (A) or the sidebar (B)
-
-:bulb: Each table can contain only one *Input* and one *Output* column  
-
-:bulb: different *Input* and *Output* options: `Source Name`, `Sample Name`, `Material`, `Raw Data File`, `Derived Data File`, `Image File`
-
-![bg right w:600](./../../../img/Swate_a_Building_blocks.png)
-
----
-
-<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
-
-## Add more Building blocks
-
-1. Add an *Input* (`Source Name`) and *Output* (`Sample Name`) column
-2. Select *Characteristic* from the drop-down menu
-3. Enter `organism` in the search bar. This search looks for suitable *Terms* in our *Ontology* database.
-4. Select the Term with the id `OBI:0100026` and, 
-5. Click Add Column
-
-:bulb: This adds four columns to your table, one visible and **three** hidden.
-
-![bg right:40% w:500](./../../../img/Swate_a_addBuildngBlock.png)
-
----
-
-<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
-
-## Insert values to annotate your data
-
-1. Insert values by selecting any cell below `Characteristic [organism]`
-2. Use free text or use the magnifying glass to activate *Term* search
-3. Write "Talinum fruticosum" and enable *Term* search
-4. Select the hit 
-
-
-![bg right:40% w:500](./../../../img/Swate_a_addCharacteristic.png)
-
----
-
-<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
-
-## Add a Building block with a unit
-
-1. In the *Building Blocks* widget, select *Parameter*, search for `light intensity exposure` and select the term with id `PECO:0007224`.
-2. Check the box for *Unit* and search for `microeinstein per square meter per second` in the adjacent search bar.
-3. Select `UO:0000160`.
-4. Click Add Column.
-
-:bulb: This also adds four columns to your table, one visible and **three** hidden.
-
-
----
-
-<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
-
-## Insert unit-values to annotate your data
-
-In the annotation table, select any cell below `Parameter [light intensity exposure]` and add "425" as light intensity.
-
-:bulb: You can see the numbers being complemented with the chosen unit, e.g. `425 microeinstein per square meter per second`
-
----
-
-<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
-
-## Showing ontology reference columns
-
-Use double pointed quotation mark to un-hide hidden columns. 
-
-:bulb: You can see that your organism of choice was added with id and source Ontology in the reference (hidden) columns.
-
-
-![w:900](./../../../img/Swate_a_reference_column.png)
-
-
----
 
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
@@ -147,18 +58,6 @@ Try to add suitable *Building Blocks* for other pieces of metadata from the plan
 3. Add the drought treatment ("no water for 12 days", "re-water for 2 days") to the respective samples
 
 :bulb: There are different options to add the drought treatment.
-
----
-
-<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
-
-## Link the protocol to the isa table
-
-1. In the *Building Blocks* tab, select *More* -> *Protocol REF*.
-2. Click <kbd>Add Column</kbd>.
-3. Add the name of the protocol file (plant_material.txt) to the *Protocol REF* column.
-
-:bulb: This allows you to reference the free-text, human-readable protocol.
 
 ---
 

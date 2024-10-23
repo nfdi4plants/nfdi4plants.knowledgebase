@@ -100,25 +100,7 @@ paginate: true
 
 ---
 
-## 
 
-![](./start-here/arc-prototypic-metadata-table-representation.svg)
-
----
-
-## 
-
-![](./start-here/arc-prototypic-metadata.svg)
-
----
-
-
-
-## 
-
-![](./start-here/arc-prototypic-study-parameterization.svg)
-
----
 
 ## 
 
@@ -135,12 +117,6 @@ paginate: true
 ## 
 
 ![](./start-here/arc-prototypic-study-parameterization3.svg)
-
----
-
-## 
-
-![](./start-here/arc-prototypic-study-protocolref.svg)
 
 ---
 
@@ -190,12 +166,6 @@ paginate: true
 
 ![](./start-here/collaboration-plantdatahub.svg)
  [alt text](<DataPLANT - workshop active.pptx>)
-
----
-
-## 
-
-![](./start-here/ontology-lookup-service.svg)
 
 ---
 

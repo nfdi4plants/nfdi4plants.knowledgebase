@@ -26,8 +26,29 @@ author:
   width: 100px;
   }
 
-</style>
+.yellowblock {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0);
+  width: 1em;
+  height: 1em;
+  background-color: #FFC000;
+}
 
+.blueblock {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0);
+  width: 1em;
+  height: 1em;
+  background-color: #2D3E50;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1em;
+}
+
+</style>
 
 
 ## ARCitect Hands-on
@@ -36,6 +57,8 @@ author:
 <!-- _paginate: false -->
 
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## ARCitect installation
 
@@ -47,8 +70,6 @@ Please install version **v0.0.48** (or later) of the ARCitect: https://github.co
 
 https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2 
 
-<!-- ![bg right w:600](./../../../img/demo-data-download.png) -->
-
 ---
 
 ## A small prototypic project
@@ -59,13 +80,13 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ## ARC: Annotated research context
 
-![](./start-here/arc-bag.svg)
+![w:900](./start-here/arc-bag.svg)
 
 ---
 
 ## The ARC scaffold structure
 
-![](./start-here/arc-scaffold.svg)
+![w:900](./start-here/arc-scaffold.svg)
 
 ---
 
@@ -77,6 +98,8 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ---
 
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
 ## Open ARCitect
 
 1. Login to DataHUB (1)
@@ -84,6 +107,8 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 2. Select `git.nfdi4plants.org` as Host 
     ![w:800](./../../../img/ARCitect_Choose_DataHUB.png)
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Initiate the ARC folder structure
 
@@ -93,6 +118,8 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 2. Select a location and name it **TalinumPhotosynthesis**
 
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Your ARC's name
 
@@ -110,11 +137,15 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ---
 
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
 ## Add a description to your investigation
 
 ![w:900](./../../../img/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
 
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Add contributors
 
@@ -136,6 +167,7 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ---
 
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Add a study
 
@@ -147,6 +179,8 @@ Use **talinum_drought** as an identifier
 
 ---
 
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
 ## Study panel
 
 In the study panel you can add
@@ -156,10 +190,40 @@ In the study panel you can add
 - publications
 - data process information
 
-![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_StudyPanel.png)
+![bg right w:600](./../../../img/ARCitect_TalinumPhotosynthesis_StudyPanel.png)
 
 ---
 
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Let's annotate the plant samples
+
+1. Check out the lab notes `studies/talinum_drought/protocols/plant_material.txt`
+2. Select the study `talinum_drought`
+3. Add a new table sheet at the bottom
+
+---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Create an annotation table
+
+1. Create a annotation table by adding **Building blocks** via the widget (A) or the sidebar (B)
+1. Add an *Input* (`Source Name`) and *Output* (`Sample Name`) column
+
+:bulb: Each table can contain only one *Input* and one *Output* column  
+
+![bg right w:600](./../../../img/Swate_a_Building_blocks.png)
+
+---
+
+## A table-based organization schema
+
+![w:700](./start-here/arc-prototypic-metadata-table-representation.svg)
+
+---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Add protocols
 
@@ -171,6 +235,233 @@ You can either
 
 ---
 
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Link the protocol to the isa table
+
+1. In the *Building Blocks* tab, select *More* -> *Protocol REF*.
+2. Click <kbd>Add Column</kbd>.
+3. Add the name of the protocol file (plant_material.txt) to the *Protocol REF* column.
+
+---
+
+## Referencing a protocol
+
+This allows you to reference the free-text, human-readable protocol.
+
+
+![w:700](./start-here/arc-prototypic-study-protocolref.svg)
+
+:bulb: It is recommended that the protocol is in an open format (.md|.txt|.docx|…)
+:bulb: But everything is possible also an URI to an electronic lab notebook
+
+---
+
+## Parameterizing the ‘study’
+
+![w:900](./start-here/arc-prototypic-study-parameterization.svg)
+
+---
+
+## Finding the right metadata vocabulary
+
+<div class="two-columns">
+  <div>
+  
+  ### Parameters []
+  
+  - Light intensity 200 µEinstein
+  - Temperature 6°C / 25°C
+  - Growing 4d
+  
+  </div>  
+  <div>
+  
+  ### Characteristics []
+  
+  - Arabidopsis thaliana
+  - Leaf
+  - Hydroponic culture
+  - Columbia
+  
+  </div>
+</div>
+
+---
+
+## OLS: Finding the right metadata vocabulary
+
+![w:1000](./start-here/ontology-lookup-service.svg)
+
+---
+
+## Finding the metadata vocabulary and descriptors
+
+![](./start-here/arc-prototypic-metadata.svg)
+
+---
+
+## Finding the metadata vocabulary and descriptors
+
+<div class="two-columns">
+  <div>
+  
+  ### Parameters []
+  
+  - <div class="yellowblock"></div>
+
+    - <div class="blueblock"></div> Light intensity 200 µEinstein
+
+  - <div class="yellowblock"></div>  
+
+    - <div class="blueblock"></div> Temperature 6°C / 25°C
+
+  - <div class="yellowblock"></div>
+
+    - <div class="blueblock"></div> Growing 4d
+  
+  </div>  
+  <div>
+  
+  ### Characteristics []
+  
+  - <div class="yellowblock"></div>
+
+    - <div class="blueblock"></div> Arabidopsis thaliana
+
+  - <div class="yellowblock"></div>
+
+    - <div class="blueblock"></div> Leaf
+  
+  - <div class="yellowblock"></div>
+  
+    - <div class="blueblock"></div> Hydroponic culture
+  
+  - <div class="yellowblock"></div>
+
+    - <div class="blueblock"></div> Columbia
+  
+  </div>
+</div>
+
+---
+
+## Finding the metadata vocabulary and descriptors
+
+<div class="two-columns">
+  <div>
+  
+  ### Parameters []
+  
+  - <div class="yellowblock"></div> Light intensity
+
+    - <div class="blueblock"></div> 200 µEinstein
+
+  - <div class="yellowblock"></div> Temperature  
+
+    - <div class="blueblock"></div> 6°C / 25°C
+
+  - <div class="yellowblock"></div> Growth time
+
+    - <div class="blueblock"></div> 4d
+  
+  </div>  
+  <div>
+  
+  ### Characteristics []
+  
+  - <div class="yellowblock"></div> Organism
+
+    - <div class="blueblock"></div> Arabidopsis thaliana
+
+  - <div class="yellowblock"></div> Tissue
+
+    - <div class="blueblock"></div> Leaf
+  
+  - <div class="yellowblock"></div> Growth medium
+  
+    - <div class="blueblock"></div> Hydroponic culture
+  
+  - <div class="yellowblock"></div> Ecotype
+
+    - <div class="blueblock"></div> Columbia
+  
+  </div>
+</div>
+
+---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Add Characteristics
+
+1. Select *Characteristic* from the drop-down menu
+1. Enter `organism` in the search bar. This search looks for suitable *Terms* in our *Ontology* database.
+1. Select the Term with the id `OBI:0100026` and, 
+1. Click <kbd>Add Column</kbd>
+
+:bulb: This adds four columns to your table, one visible and **three** hidden.
+
+![bg right:40% w:500](./../../../img/Swate_a_addBuildngBlock.png)
+
+---
+
+
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Insert values to annotate your data
+
+1. Insert values by selecting any cell below `Characteristic [organism]`
+2. Use free text or use the magnifying glass to activate *Term* search
+3. Write "Talinum fruticosum" and enable *Term* search
+4. Select the hit 
+
+
+![bg right:40% w:500](./../../../img/Swate_a_addCharacteristic.png)
+
+---
+
+
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Add a Parameter building block with a unit
+
+1. In the *Building Blocks* widget, select *Parameter*, search for `light intensity exposure` and select the term with id `PECO:0007224`.
+2. Check the box for *Unit* and search for `microeinstein per square meter per second` in the adjacent search bar.
+3. Select `UO:0000160`.
+4. Click Add Column.
+
+:bulb: This also adds four columns to your table, one visible and **three** hidden.
+
+
+---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Insert unit-values
+
+In the annotation table, select any cell below `Parameter [light intensity exposure]` and add "425" as light intensity.
+
+:bulb: You can see the numbers being complemented with the chosen unit, e.g. `425 microeinstein per square meter per second`
+
+---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Showing ontology reference columns
+
+Use double pointed quotation mark to un-hide hidden columns. 
+
+:bulb: You can see that your organism of choice was added with id and source Ontology in the reference (hidden) columns.
+
+
+![w:900](./../../../img/Swate_a_reference_column.png)
+
+---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Add an assay
 
@@ -180,6 +471,8 @@ Add two assays with **rnaseq** and **metabolomics** as an identifier
 ![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_Assay.png)
 
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Add information about your assay
 
@@ -193,6 +486,8 @@ In the assay panel you can define the assay's
 ---
 
 
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
 ## Explorer
 
 The **Explorer (6)** button directly opens your ARC locally
@@ -200,6 +495,8 @@ The **Explorer (6)** button directly opens your ARC locally
 ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
 
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Commit panel (7)
 
@@ -220,6 +517,8 @@ It allows you to
 
 
 ---
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
 ## History panel (9)
 
 In the History panel you can inspect your ARCs history with all commits 
@@ -229,6 +528,8 @@ In the History panel you can inspect your ARCs history with all commits
 
 
 ---
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
 ## Upload your local ARC to the DataHUB
 
 From the sidebar, navigate to **DataHUB Sync** (8)
@@ -237,6 +538,8 @@ From the sidebar, navigate to **DataHUB Sync** (8)
 
 ---
 
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## DataHUB Sync
 
@@ -252,6 +555,8 @@ The DataHUB Sync panel allows you to
 ---
 
 
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
 ## Check if your ARC is successfully uploaded
 
 1. [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB 
@@ -260,6 +565,8 @@ The DataHUB Sync panel allows you to
 
 
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Add protocols and datasets
 
@@ -281,6 +588,8 @@ In the file tree you can
 ---
 ---
 
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
 ## Download the demo data
 
 ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
@@ -290,6 +599,8 @@ In the file tree you can
 3. Navigate to **Download ARC** (4)
 
 ---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Download the demo data
 
