@@ -11,7 +11,7 @@ import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
 
-In `studies` you can describe materials and resources. In case your investigation contains multiple studies, each of these is placed in an individual subdirectory.
+In `studies` you can describe materials and resources. In case your investigation contains multiple studies, each of these is placed in its own subdirectory.
 
 ![](@images/start-here/arc-prototypic-study-divide-conquer.svg)
 
@@ -36,8 +36,8 @@ In `studies` you can describe materials and resources. In case your investigatio
     - AthalianaColdStressSugar
       - **studies**
         - **AthalianaColdStress**
-          - **Protocols**
-          - **Resources**
+          - **protocols**
+          - **resources**
           - README.md
           - isa.study.xlsx
       - ...
@@ -65,13 +65,15 @@ In `studies` you can describe materials and resources. In case your investigatio
  */}
 
 
-<Card icon="approve-check" title="Protocols">
+{/* <Card icon="approve-check" title="Protocols"> */}
+
+## Protocols
 
 You can use the protocol subdirectory to store free-text protocols that describe how the samples or materials were created.
 
 ![](@images/start-here/arc-prototypic-study-identify.svg)
 
-</Card>
+{/* </Card> */}
 
 <Card icon="pen" title="ARCitect">
 <Steps>
@@ -81,15 +83,12 @@ You can use the protocol subdirectory to store free-text protocols that describe
 4. The file is added to your ARC.
   
     <FileTree>
-    
     - AthalianaColdStressSugar
       - **studies**
         - **AthalianaColdStress**
-          - **Protocols**
+          - **protocols**
             - growth_protocol.md
-
       - ...
-    
     </FileTree>
 
 5. A click on the protocol's file name opens a text editor in the right panel.
@@ -98,6 +97,7 @@ You can use the protocol subdirectory to store free-text protocols that describe
 </Steps>
 </Card>
 
+## From free-text protocol to structured metadata
 
 <Card icon="pen" title="ARCitect">
 <Steps>
@@ -109,44 +109,60 @@ You can use the protocol subdirectory to store free-text protocols that describe
 5. From the dropdown menu in the `Add Building Block` widget:
     - select `Input` -> `Source Name` and click `Add Column`
     - select `Output` -> `Sample Name` and click `Add Column`
-6. At the bottom of the table, type `2` in the text field and click the plus button to add two rows to your table
+6. At the bottom of the table, type `6` in the text field and click the plus button to add six rows to your table
 
     <ViolaSays>
 
-    I called my plants Cold1, Cold2, Cold3 and RT1, RT2, RT3.  
-    And the leaf samples accordingly: Cold1_leaf, Cold2_leaf, Cold3_leaf and RT1_leaf, RT2_leaf, RT3_leaf. 
+    I called my plants 
+    - Cold1, Cold2, Cold3 and RT1, RT2, RT3  
+    
+    And the leaf samples accordingly
+    - Cold1_leaf, Cold2_leaf, Cold3_leaf and RT1_leaf, RT2_leaf, RT3_leaf. 
 
     </ViolaSays>
 
+7. Add the sample identifiers into the columns `Input[Source Name]` and `Output[Sample Name]`.
+
+    `Input[Source Name]` | `Output[Sample Name]`
+    -------------------- |  --------------------
+    Cold1                |  Cold1_leaf
+    Cold2                |  Cold2_leaf
+    Cold3                |  Cold3_leaf
+    RT1                  |  RT1_leaf
+    RT2                  |  RT2_leaf
+    RT3                  |  RT3_leaf
 
 </Steps>
 </Card>
 
-<Card icon="approve-check" title="Table representation">
+## Referencing the protocol
 
-![](@images/start-here/arc-prototypic-metadata-table-representation.svg)
-
-</Card>
-
-
-<Card icon="pen" title="ARCitect">
-<Steps>
-
-1. Add building block `ProtocolREF`
-1. Use file picker widget
-2. Select the file `Protocols/growth_protocol.md`
-
-</Steps>
-</Card>
-
-<Card icon="approve-check" title="Referencing the protocol">
-
-![](@images/start-here/arc-prototypic-study-protocolref.svg)
+You can reference the protocol in the annotation table to draw a link between the original protocol and the structured metadata. 
 
 :::tip
 While it is recommended to store the protocol in an open format (`.md`, `.txt`, `.docx`, …), everything is possible also an URI to an electronic lab notebook.
 :::
 
+<Card icon="pen" title="ARCitect">
+<Steps>
+
+1. On top of the annotation table, click `Add Building Block`
+1. From the dropdown menu select `More` -> `ProtocolREF` and click `Add Column`
+1. On top, click `File Picker`
+1. In the `File Picker` widget, click `Pick Files`
+2. From the ARC select the file `protocols/growth_protocol.md` and click `Open`
+1. Select a cell in the `Protocol REF` column and click `Insert file names`
+
+    `Input[Source Name]` | `ProtocolREF` | `Output[Sample Name]`
+    -------------------- |  --------------------   |  --------------------
+    Cold1                |  protocols/growth_protocol.md | Cold1_leaf
+    Cold2                |  protocols/growth_protocol.md | Cold2_leaf
+    Cold3                |  protocols/growth_protocol.md | Cold3_leaf
+    RT1                  |  protocols/growth_protocol.md | RT1_leaf
+    RT2                  |  protocols/growth_protocol.md | RT2_leaf
+    RT3                  |  protocols/growth_protocol.md | RT3_leaf
+
+</Steps>
 </Card>
 
 ## Parameterizing the study
@@ -171,6 +187,8 @@ While it is recommended to store the protocol in an open format (`.md`, `.txt`, 
 
 ![](@images/start-here/arc-prototypic-metadata-table-add-characteristic.svg)
 
-## Use a template
 
-![](@images/start-here/swate-templates.svg)
+
+{/* ## Use a template
+
+![](@images/start-here/swate-templates.svg) */}
