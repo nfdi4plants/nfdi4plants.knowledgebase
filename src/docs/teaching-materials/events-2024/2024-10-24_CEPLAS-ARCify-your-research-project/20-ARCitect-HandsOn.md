@@ -100,22 +100,13 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
-## Open ARCitect
-
-1. Login to DataHUB (1)
-   ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
-2. Select `git.nfdi4plants.org` as Host 
-    ![w:800](./../../../img/ARCitect_Choose_DataHUB.png)
----
-
-<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
-
 ## Initiate the ARC folder structure
 
 ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
 
-1. Create a **New ARC** (2)
-2. Select a location and name it **TalinumPhotosynthesis**
+1. Open ARCitect
+2. Create a **New ARC** (2)
+3. Select a location and name it **TalinumPhotosynthesis**
 
 ---
 
@@ -537,12 +528,6 @@ In the assay panel you can define the assay's
 
 ---
 
-## Isolating the lab processes in an assay
-
-![w:800](./start-here/arc-prototypic-assay-modular1.svg)
-
----
-
 ## Separating different assay elements
 
 ![w:800](./start-here/arc-prototypic-assay-modular2.svg)
@@ -562,15 +547,35 @@ In the assay panel you can define the assay's
 
 ---
 
+## Isolating the lab processes in an assay
 
+![w:800](./start-here/arc-prototypic-assay-modular1.svg)
+
+---
+
+## Save time using standard methods and SOPs
+
+![](./start-here/arc-prototypic-assay-sop1.svg)
+
+---
+
+## Save time using standard methods and SOPs
+
+![](./start-here/arc-prototypic-assay-sop2.svg)
+
+---
+
+## Applying standard procedures to sample record
+
+![](./start-here/arc-prototypic-assay-sop3.svg)
+
+---
 
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Let's annotate the RNA Seq assay
 
-1. Navigate to the demo ARC. 
-2. Open the lab notes `assays/rnaseq/protocols/RNA_extraction.txt` in a text editor.
-3. Import the empty `assays/rnaseq/isa.assay.xlsx` workbook in Swate.
+Open the lab notes `assays/rnaseq/protocols/`
 
 ---
 
@@ -582,9 +587,9 @@ In the assay panel you can define the assay's
 
 :bulb: Here you can find DataPLANT and community created workflow annotation templates
 
-1. Search for `RNA extraction` and click <kbd>select</kbd> 
+2. Search for `RNA extraction` and click <kbd>select</kbd> 
     - You will see a preview of all *Building Blocks* which are part of this template.
-2. Click <kbd>Add template</kbd> to add all *Building Blocks* from the template to your table, which <u>do not exist yet</u>.
+3. Click <kbd>Add template</kbd> to add all *Building Blocks* from the template to your table
 
 ![bg right:40% w:500px](./../../../img/swate_a_templates.png)
 
@@ -665,6 +670,12 @@ Try to fill the two sheets with the protocol details:
 
 ---
 
+
+# Everything is a file
+
+
+---
+
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
 ## Explorer
@@ -672,6 +683,29 @@ Try to fill the two sheets with the protocol details:
 The **Explorer (6)** button directly opens your ARC locally
 
 ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
+
+---
+
+## Using the DataHUB to collaborate
+
+![](./start-here/collaboration-plantdatahub.svg)
+
+---
+
+## Collaboration Workflows
+
+![](./start-here/collaboration-git-toBeReplaced.svg)
+
+---
+
+<img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
+## Login to DataHUB
+
+1. Login to DataHUB (1)
+   ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
+2. Select `git.nfdi4plants.org` as Host 
+    ![w:800](./../../../img/ARCitect_Choose_DataHUB.png)
 
 ---
 
@@ -684,6 +718,9 @@ You have to commit changes before you can upload to the DataHUB
 ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
 
 ---
+
+## Commit your changes
+
 If you are logged in, the **Commit panel** shows
 - your DataHUB's *Full Name* and *eMail*
 
@@ -693,7 +730,6 @@ It allows you to
 - use different branches 
 
 ![bg right:50% w:500](./../../../img/ARCitect_Commit_panel.png)
-
 
 ---
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
@@ -707,7 +743,10 @@ In the History panel you can inspect your ARCs history with all commits
 
 
 ---
+
+
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
+
 
 ## Upload your local ARC to the DataHUB
 
@@ -741,13 +780,47 @@ The DataHUB Sync panel allows you to
 1. [sign in](https://auth.nfdi4plants.org/realms/dataplant/login-actions/registration?client_id=account&tab_id=4bQkU161waI) to the DataHUB 
 2. Check your projects
 
+---
 
+
+
+
+
+
+## Options to annotate the data analysis
+
+![](./start-here/arc-prototypic-workflows1.svg)
 
 ---
 
+## A computational workflow is like a protocol
+
+![](./start-here/arc-prototypic-workflows2.svg)
+
+---
+
+## Option I: Create a virtual assay
+
+![](./start-here/arc-prototypic-workflows-virtual.svg)
+
+---
+
+## Option II: Create a workflow and run
+
+![](./start-here/arc-prototypic-workflows-cwl1.svg)
+
+---
+
+## Use CWL to wrap your workflow
+
+![](./start-here/arc-prototypic-workflows-cwl2.svg)
+
+---
+
+
 <img class="arcitectLogo" src="./start-here/arcitectLogo.png"/>
 
-## Add protocols and datasets
+## Add datasets
 
 In the file tree you can
   - **import dataset files or folders** and 
@@ -757,12 +830,13 @@ In the file tree you can
 
 :warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
 
-
 ![bg right:40% w:400](./../../../img/arcitect-ARCPanel-assay03.png)
+
+
 
 ---
 
-
+# Backup Slides
 
 ---
 ---
@@ -792,3 +866,29 @@ In the file tree you can
 :bulb: This is basically the ARC we created in the last session.
 
 ---
+
+
+---
+
+
+---
+
+## Annotation of the result data points
+
+![w:700](./start-here/arc-prototypic-datamap.svg)
+
+Persistence from sample to data point using fragment selectors
+
+---
+
+## Point into results - Fragment selectors
+
+![w:700](./start-here/arc-prototypic-datamap-fragment-selectors1.svg)
+
+---
+
+## DataMAP: Annotation for the fragment selectors
+
+![w:700](./start-here/arc-prototypic-datamap-fragment-selectors2.svg)
+
+
