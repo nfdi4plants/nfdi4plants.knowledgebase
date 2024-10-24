@@ -45,48 +45,100 @@ import DataHUBAccount from '../datahub/datahub-account.mdx'
 </Card>
 
 
-## Commit panel
+## Track changes
 
-You have to commit changes before you can upload to the DataHUB
+Versioning helps you keep track of your ARC's changes.
 
-## Commit your changes
+- version control based on git
 
-If you are logged in, the **Commit panel** shows
-- your DataHUB's *Full Name* and *eMail*
+:::note
+Ideally done during every step
+{/* TODO: maybe move this to beginning of the guide and
+close every major step with viola committing this with a message
+*/}
+:::
 
-It allows you to
-- track changes of the ARC with git
-- add a commit message 
-- use different branches 
 
-## History panel
+### Login to DataHUB
 
-In the History panel you can inspect your ARCs history with all commits 
+<Card icon="pen" title="ARCitect">
+    <Steps>
+        
+    1. Click `Login` in the sidebar
+    2. Select `git.nfdi4plants.org` as DataHUB from the dropdown menu
+    3. Click <btn>Login</btn> 
+
+        :::note
+        This automatically opens your browser at the DataHUB (https://git.nfdi4plants.org) and asks you to login. If you are not already logged in at the DataHUB, you can directly return to ARCitect. Otherwise you need to login first.
+        :::
+
+        :::note
+        The first time you login using ARCitect from a new computer, you are asked to authorize this computer's ARCitect to communicate with your DataHUB account.
+        :::
+
+        <ViolaSays>
+
+        </ViolaSays>
+
+    </Steps>
+</Card>
+
+### Commit your changes
+
+The commit menu allows you to "commit" your changes locally. This saves the changes of your local ARC together with your DataHUB credentials (Name and eMail).
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+    
+    1. Navigate to the `Commit` menu
+    2. Since you are logged in, the `Name` and `eMail` of your DataHUB account are automatically added
+    3. Add a commit message
+
+        <ViolaSays>
+            Created my first ARC and added data.
+        </ViolaSays>
+    3. Click <btn>Commit</btn> to store your changes locally
+        
+    </Steps>
+</Card>
+
+
+### History menu
+
+In the History menu you can inspect your ARCs history with all commit messages and 
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+    
+    1. Navigate to the `History` menu
+    2. Find your previous commit messages
+
+        <ViolaSays>
+            Great, so I even in five years I will know what I did in every step.
+        </ViolaSays>
+        
+    </Steps>
+</Card>
 
 ## Upload your ARC to the PLANTDataHUB
 
 <Card icon="pen" title="ARCitect">
     <Steps>
-    1. From the sidebar, navigate to the `Login Menu`
-        - Login to DataHUB
-        - Select `git.nfdi4plants.org` as Host
     1. From the sidebar, navigate to the `DataHUB Sync` menu
-        - add a remote
-        - push
-        
-            :::note
-            The DataHUB Sync panel allows you to
-                - sync the changes to the DataHUB: **Push**
-                - sync from the DataHUB: **Pull**, and
-                - change the Remote for the synchronization
-            :::
+    2. In the grey `Remote` box, click <btn>+</btn> to add a remote
+    3. In the `Add Remote` dialog, use the defaults for `Remote Name` ("origin"), `DataHUB Account` ("viola") and `URL` ("https://git.nfdi4plants.org/viola/AthalianaColdStressSugar.git")
+    4. Click <btn>Add Remote</btn>
+        <ViolaSays>
+          So my ARC will be synced to https://git.nfdi4plants.org/viola/AthalianaColdStressSugar.git
+        </ViolaSays>
 
-    1. use direct link to repository website
+    5. Click <btn>Push</btn> to upload your ARC to the DataHUB     
+    6. In the grey `Remote` box, click the globe icon to be directed to your ARC in the DataHUB
 
     </Steps>
 </Card>
 
-## Checkout your ARC in the PLANTDataHUB
+## Explore your ARC in the PLANTDataHUB
 
 <Card icon="gitlab" title="PLANTDataHUB">
     <Steps>
@@ -122,6 +174,12 @@ In the History panel you can inspect your ARCs history with all commits
 
     </Steps>
 </Card>
+
+
+## DataHUB Roles
+
+
+
 
 
 ## Project Management
