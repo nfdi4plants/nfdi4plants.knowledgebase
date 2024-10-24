@@ -1,0 +1,79 @@
+---
+import violaAvatar from '@images/viola/viola-avatar.jpg';
+import {Image} from 'astro:assets'
+---
+
+<div class="chat chat-start">
+  <div class="chat-image avatar">
+    <div class="w-10 rounded-full">
+      <Image
+        alt="Tailwind CSS chat bubble component"
+        src={violaAvatar} />
+    </div>
+  </div>
+  <div class="chat-bubble text-lg">
+    <slot />
+  </div>
+</div>
+
+<style>
+.chat-start {
+    place-items: start;
+    grid-template-columns: auto 1fr;
+}
+.chat {
+    display: grid;
+    /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
+    column-gap: .75rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+
+.chat-start .chat-image {
+    grid-column-start: 1;
+}
+.chat-image {
+    grid-row: span 2 / span 2;
+    align-self: flex-end;
+}
+.avatar {
+    position: relative;
+    display: inline-flex;
+}
+.avatar>div {
+    display: block;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+.avatar img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.chat-start .chat-bubble {
+    grid-column-start: 2;
+    border-end-start-radius: 0;
+}
+.chat-bubble {
+    position: relative;
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: .5rem 1rem;
+    max-width: 90%;
+    border-radius: var(--rounded-box, 1rem);
+    min-height: 2.75rem;
+    min-width: 2.75rem;
+    --tw-bg-opacity: 1;
+    background-color: #106154;
+    --tw-text-opacity: 1;
+    color: white !important; 
+}
+
+.chat-start .chat-bubble:before {
+    -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMycgaGVpZ2h0PSczJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxwYXRoIGZpbGw9J2JsYWNrJyBkPSdtIDAgMyBMIDMgMyBMIDMgMCBDIDMgMSAxIDMgMCAzJy8+PC9zdmc+);
+    mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMycgaGVpZ2h0PSczJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxwYXRoIGZpbGw9J2JsYWNrJyBkPSdtIDAgMyBMIDMgMyBMIDMgMCBDIDMgMSAxIDMgMCAzJy8+PC9zdmc+);
+    inset-inline-start: -.749rem;
+}
+</style>

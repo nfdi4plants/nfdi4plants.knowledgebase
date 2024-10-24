@@ -4,3 +4,9 @@ socials:
     href: https://github.com/brilator
   - icon: simple-icons:orcid
     href: https://orcid.org/0000-0001-9021-3197
+  # - icon: 
+  #   href: https://www.ceplas.eu/en/research/data-science-and-data-management
+affiliation: CEPLAS
+image: "@images/authors/ceplas-demo-user.png"
+
+
