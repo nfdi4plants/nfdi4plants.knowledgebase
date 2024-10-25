@@ -13,61 +13,56 @@ import { Card } from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
 
 
-In `studies` you can describe materials and resources. 
+With **studies** you can describe materials and resources. 
 
 ![](@images/start-here/arc-prototypic-study-divide-conquer.svg)
 
 <Card icon="pen" title="ARCitect">
+  <Steps>
 
-<Steps>
+  1. Click on the plus icon next to `studies` to add a new study
+  2. Enter a name for the `New Study`
 
-1. Click on the plus icon next to `studies`
-2. Enter a name for the `New Study`
+      <ViolaSays>
+        AthalianaColdStress
+      </ViolaSays>
 
-    <ViolaSays>
-
-    AthalianaColdStress
-
-    </ViolaSays>
-
-3. Click `New Study`
-4. ARCitect adds the study `AthalianaColdStress` including the `Protocols` and `Resources` folders
-  
-    <FileTree>
+  3. Click `New Study`
+  4. ARCitect adds the study `AthalianaColdStress` including the folders `protocols` and `resources` as well as a `README.md` and the `isa.study.xlsx` workbook. 
     
-    - AthalianaColdStressSugar
-      - **studies**
-        - **AthalianaColdStress**
-          - **protocols**
-          - **resources**
-          - README.md
-          - isa.study.xlsx
-      - ...
-    
-    </FileTree>
+      <FileTree>
+      - AthalianaColdStressSugar
+        - studies
+          - **AthalianaColdStress**
+            - protocols
+              - ...
+            - resources
+              - ...
+            - isa.study.xlsx
+            - README.md
+        - ...
+      </FileTree>
 
-    :::note
-    The `isa.study.xlsx` is not displayed inside ARCitect.
-    :::
+      :::note
+      The `isa.study.xlsx` is not displayed inside ARCitect.
+      :::
 
-5. Click on the study's name (`AthalianaColdStress`) in the file tree to open the study form in the right panel
-6. Here you can add metadata about your study
+  5. Click on the study's name (`AthalianaColdStress`) in the file tree to edit the study metadata in the right panel
+  6. Here you can add metadata about your study
 
-    <ViolaSays>
-    My **description**: "Cold acclimation analysis of Arabidopsis leaf tissue"
-    </ViolaSays>
+      <ViolaSays>
+        My **description**: "Cold acclimation analysis of Arabidopsis leaf tissue"
+      </ViolaSays>
 
-    :::note
-    On the study level, you can add the same metadata as on the investigation level in the step before.
-    :::
-    
-    :::tip
-    If you add data from an external source or database, this is a good place to reference the data source or associated publications.
-    :::
+      :::note
+      On the study level, you can add the same type of metadata as on the investigation level in the previous step.
+      :::
+      
+      :::tip
+      If you add data from an external source or database, this is a good place to reference the data source or associated publications.
+      :::
 
-
-</Steps>
-
+  </Steps>
 </Card>
 
 ## Protocols
@@ -83,24 +78,22 @@ You can use the protocol subdirectory to store free-text protocols that describe
   1. Right-click on the `Protocols` folder and select `Import Files` from the context menu
 
       <ViolaSays>
-      I saved my lab notes about the plant growth in the file growth_protocol.md
+        I saved my lab notes about the plant growth in the file growth_protocol.md
       </ViolaSays>
-
 
   3. Select the file `growth_protocol.md` from the demo data and click `Open`.
   4. The file is added to your ARC.
     
       <FileTree>
       - AthalianaColdStressSugar
-        - **studies**
-          - **AthalianaColdStress**
-            - **protocols**
-              - growth_protocol.md
+        - studies
+          - AthalianaColdStress
+            - protocols
+              - **growth_protocol.md**
         - ...
       </FileTree>
 
   5. A click on the protocol's file name opens a text editor in the right panel.
-
 
   </Steps>
 </Card>
@@ -149,10 +142,6 @@ Structured metadata annotation in the ARC is mostly achieved via spreadsheet tab
 
 You can reference the protocol in the annotation table to draw a link between the original protocol and the structured metadata. 
 
-:::tip
-While it is recommended to store the protocol in an open format (`.md`, `.txt`, `.docx`, …), everything is possible also an URI to an electronic lab notebook.
-:::
-
 <Card icon="pen" title="ARCitect">
   <Steps>
 
@@ -175,17 +164,19 @@ While it is recommended to store the protocol in an open format (`.md`, `.txt`, 
   </Steps>
 </Card>
 
+:::tip
+While it is recommended to store the protocol in an open format (`.md`, `.txt`, `.docx`, …), everything is possible also an URI to an electronic lab notebook.
+:::
+
 ## From free-text protocol to structured metadata
 
 ![](@images/start-here/arc-prototypic-study-parameterization.svg)
 
 ### Finding the metadata vocabulary and descriptors
 
-The ARC builds on standards and leverages ontologies for metadata annotation. 
+The ARC builds on standards and leverages ontologies for metadata annotation. The details are out of the scope of this guide. However, it is good to know that a combination of structural and biological ontologies are combined to semantically structure the metadata.
 
-The details are out of the scope of this getting-started guide. However, it is good to know that a combination of structural and biological ontologies are combined ...
-
-{/* TODO: explain or delete */}
+{/* TODO: explain better or delete */}
 
 import XY from "@images/start-here/arc-prototypic-metadata.svg"
 
@@ -313,7 +304,6 @@ import XY from "@images/start-here/arc-prototypic-metadata.svg"
 
 ## Add a factor building block
 
-
 <Card icon="pen" title="ARCitect">
   <Steps>       
 
@@ -338,7 +328,7 @@ import XY from "@images/start-here/arc-prototypic-metadata.svg"
 </Card>
 
 
-## Showing ontology information
+## Show ontology information
 
 <Card icon="pen" title="ARCitect">
   <Steps>
@@ -354,6 +344,11 @@ import XY from "@images/start-here/arc-prototypic-metadata.svg"
           Arabidopsis thaliana       | -      | NCBITaxon           |  NCBITaxon:3702
           Arabidopsis thaliana       | -      | NCBITaxon           |  NCBITaxon:3702
 
+
+        <ViolaSays>
+          So if someone needs to lookup my species, they will find it in an online ontology database.
+        </ViolaSays>
+
         :::note
         You can see that `Arabidopsis thaliana` was added with id and source ontology in the reference (hidden) columns.
         :::
@@ -366,17 +361,20 @@ import XY from "@images/start-here/arc-prototypic-metadata.svg"
 </Card>
 
 
-## Re-organize the table
+## Re-organize the annotation table
 
-### Remove Building blocks
+If the order of the building blocks needs to be adjusted, you can delete or move them from your annotation table.
 
-If there are any *Building Blocks* which do not fit to your experiment, right-click a column and select `Delete Column` to remove it including all related ontology reference columns.
+<Card icon="pen" title="ARCitect">
+  <Steps>
+  1. Right-click a column and select 
+      - `Delete Column` to remove it including all related ontology reference columns
+      - `Move Column` to move a column to another position
 
-### Move Building blocks
+  </Steps>
+</Card>
 
-If the order of the *Building Blocks* needs to be adjusted, right-click a column and select `Move Column`
-
-- Move output column to right end of table
+{/* 
 
 ### Replace multiple names
 
@@ -385,3 +383,4 @@ Right-click --> `Update Column` on a cell to replace names in batches
 :::note
 This only works on `Input[Sample Name]` or `Input[Source Name]` columns
 :::
+ */}
