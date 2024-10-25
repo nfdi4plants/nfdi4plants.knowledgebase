@@ -12,53 +12,50 @@ import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
 
-The investigation level allows you to record project metadata such as the project title and description, responsible contacts and associated publications.
+At the investigation level cou can record project metadata such as the project title and description, responsible contacts and associated publications.
 
 <Card icon="pen" title="ARCitect">
+  <Steps>
 
-<Steps>
+  1. Click on the ARC's name (`AthalianaColdStressSugar`) on top of the file tree
+  2. A panel opening to the right shows the investigation form
+  3. Here you can add metadata about your investigation
 
-1. Click on the ARC's name (`AthalianaColdStressSugar`) on top of the file tree
-2. A panel opening to the right shows the investigation form
-3. Here you can add metadata about your investigation
+      :::note[Identifier]
+      The Investigation identifier was automatically added based on your ARC's name
+      :::
 
-    :::note[Identifier]
-    The Investigation identifier was automatically added based on your ARC's name
-    :::
+  4. Add a **Title**
 
-4. Add a **Title**
+      :::tip[Title]
+      This should be a meaningful project title. Here you can add blanks or special characters.
+      :::
 
-    - Meaningful project title (with blanks)
-    - Avoid administrative metadata
+      <ViolaSays>
+        The **Title** of my project is _The effect of cold stress on sugar metabolism in *A. thaliana*_.
+      </ViolaSays>
 
-    <ViolaSays>
+  4. Add a **Description**
 
-    The **Title** of my project is _The effect of cold stress on sugar metabolism in *A. thaliana*_.
+      :::tip[Description]
+      Add a concise description about your project. This can be an abstract. 
+      :::
 
-    </ViolaSays>
+      <ViolaSays>
+        We investigate the effect of cold stress on sugar metabolism in *A. thaliana*. We grew *A. thaliana* plants under cold and ambient conditions in a two-day time series experiment. Leave protein and sugar pools were assayed via proteomics and metabolomics.
+      </ViolaSays>
 
-4. Add a **Description**
+  4. Add **Contacts**
 
-    - Concise project abstract 
+      :::tip
+      Add persons responsible for the project
+      :::
 
-    <ViolaSays>
+      <ViolaSays>
+        I add my PI *Prof. Jasmine Beetroot*, our collaboration partner *Oliver Sage* and myself as **Contacts**.
+      </ViolaSays>
 
-    We investigate the effect of cold stress on sugar metabolism in *A. thaliana*. We grew *A. thaliana* plants under cold and ambient conditions in a two-day time series experiment. Leave protein and sugar pools were assayed via proteomics and metabolomics.
-
-    </ViolaSays>
-
-4. Add a **Contacts**
-
-    - Persons responsible for the project 
-
-    <ViolaSays>
-
-    I add my PI *Prof. Jasmine Beetroot*, our collaboration partner *Oliver Sage* and myself as **Contacts**.
-
-    </ViolaSays>
-
-</Steps>
-
+  </Steps>
 </Card>
 
 

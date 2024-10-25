@@ -78,32 +78,31 @@ You can use the protocol subdirectory to store free-text protocols that describe
 
 
 <Card icon="pen" title="ARCitect">
-<Steps>
+  <Steps>
 
-1. Right-click on the `Protocols` folder and select `Import Files` from the context menu
+  1. Right-click on the `Protocols` folder and select `Import Files` from the context menu
 
-    <ViolaSays>
-    I saved my lab notes about the plant growth in the file growth_protocol.md
-
-    </ViolaSays>
-
-
-3. Select the file `growth_protocol.md` from the demo data and click `Open`.
-4. The file is added to your ARC.
-  
-    <FileTree>
-    - AthalianaColdStressSugar
-      - **studies**
-        - **AthalianaColdStress**
-          - **protocols**
-            - growth_protocol.md
-      - ...
-    </FileTree>
-
-5. A click on the protocol's file name opens a text editor in the right panel.
+      <ViolaSays>
+      I saved my lab notes about the plant growth in the file growth_protocol.md
+      </ViolaSays>
 
 
-</Steps>
+  3. Select the file `growth_protocol.md` from the demo data and click `Open`.
+  4. The file is added to your ARC.
+    
+      <FileTree>
+      - AthalianaColdStressSugar
+        - **studies**
+          - **AthalianaColdStress**
+            - **protocols**
+              - growth_protocol.md
+        - ...
+      </FileTree>
+
+  5. A click on the protocol's file name opens a text editor in the right panel.
+
+
+  </Steps>
 </Card>
 
 ## Add samples to your study
@@ -111,39 +110,39 @@ You can use the protocol subdirectory to store free-text protocols that describe
 Structured metadata annotation in the ARC is mostly achieved via spreadsheet tables.
 
 <Card icon="pen" title="ARCitect">
-<Steps>
+  <Steps>
 
-1. Click on the study's name (`AthalianaColdStress`) in the file tree
-2. At the bottom of the right panel, click on the plus icon right next to the `Metadata` sheet
-3. This adds a new table sheet
-4. In the `New Table!` widget, click on the `Add Building Block` button next to `Or start from scratch!`
-5. From the dropdown menu in the `Add Building Block` widget:
-    - select `Input` -> `Source Name` and click `Add Column`
-    - select `Output` -> `Sample Name` and click `Add Column`
-6. At the bottom of the table, type `6` in the text field and click the plus button to add six rows to your table
+  1. Click on the study's name (`AthalianaColdStress`) in the file tree
+  2. At the bottom of the right panel, click on the plus icon right next to the `Metadata` sheet
+  3. This adds a new table sheet
+  4. In the `New Table!` widget, click on the `Add Building Block` button next to `Or start from scratch!`
+  5. From the dropdown menu in the `Add Building Block` widget:
+      - select `Input` -> `Source Name` and click `Add Column`
+      - select `Output` -> `Sample Name` and click `Add Column`
+  6. At the bottom of the table, type `6` in the text field and click the plus button to add six rows to your table
 
-    <ViolaSays>
+      <ViolaSays>
 
-    I called my plants 
-    - Cold1, Cold2, Cold3 and RT1, RT2, RT3  
-    
-    And the leaf samples accordingly
-    - Cold1_leaf, Cold2_leaf, Cold3_leaf and RT1_leaf, RT2_leaf, RT3_leaf. 
+      I called my plants 
+      - Cold1, Cold2, Cold3 and RT1, RT2, RT3  
+      
+      And the leaf samples accordingly
+      - Cold1_leaf, Cold2_leaf, Cold3_leaf and RT1_leaf, RT2_leaf, RT3_leaf. 
 
-    </ViolaSays>
+      </ViolaSays>
 
-7. Add the sample identifiers into the columns `Input[Source Name]` and `Output[Sample Name]`.
+  7. Add the sample identifiers into the columns `Input[Source Name]` and `Output[Sample Name]`.
 
-    `Input[Source Name]` | `Output[Sample Name]`
-    -------------------- |  --------------------
-    Cold1                |  Cold1_leaf
-    Cold2                |  Cold2_leaf
-    Cold3                |  Cold3_leaf
-    RT1                  |  RT1_leaf
-    RT2                  |  RT2_leaf
-    RT3                  |  RT3_leaf
+      `Input[Source Name]` | `Output[Sample Name]`
+      -------------------- |  --------------------
+      Cold1                |  Cold1_leaf
+      Cold2                |  Cold2_leaf
+      Cold3                |  Cold3_leaf
+      RT1                  |  RT1_leaf
+      RT2                  |  RT2_leaf
+      RT3                  |  RT3_leaf
 
-</Steps>
+  </Steps>
 </Card>
 
 ## Referencing the protocol
@@ -155,25 +154,25 @@ While it is recommended to store the protocol in an open format (`.md`, `.txt`, 
 :::
 
 <Card icon="pen" title="ARCitect">
-<Steps>
+  <Steps>
 
-1. On top of the annotation table, click `Add Building Block`
-1. From the dropdown menu select `More` -> `ProtocolREF` and click `Add Column`
-1. On top, click `File Picker`
-1. In the `File Picker` widget, click `Pick Files`
-2. From the ARC select the file `protocols/growth_protocol.md` and click `Open`
-1. Select a cell in the `Protocol REF` column and click `Insert file names`
+  1. On top of the annotation table, click `Add Building Block`
+  1. From the dropdown menu select `More` -> `ProtocolREF` and click `Add Column`
+  1. On top, click `File Picker`
+  1. In the `File Picker` widget, click `Pick Files`
+  2. From the ARC select the file `protocols/growth_protocol.md` and click `Open`
+  1. Select a cell in the `Protocol REF` column and click `Insert file names`
 
-    `Input[Source Name]` | `ProtocolREF` | `Output[Sample Name]`
-    -------------------- |  --------------------   |  --------------------
-    Cold1                |  protocols/growth_protocol.md | Cold1_leaf
-    Cold2                |  protocols/growth_protocol.md | Cold2_leaf
-    Cold3                |  protocols/growth_protocol.md | Cold3_leaf
-    RT1                  |  protocols/growth_protocol.md | RT1_leaf
-    RT2                  |  protocols/growth_protocol.md | RT2_leaf
-    RT3                  |  protocols/growth_protocol.md | RT3_leaf
+      `Input[Source Name]` | `ProtocolREF` | `Output[Sample Name]`
+      -------------------- |  --------------------   |  --------------------
+      Cold1                |  protocols/growth_protocol.md | Cold1_leaf
+      Cold2                |  protocols/growth_protocol.md | Cold2_leaf
+      Cold3                |  protocols/growth_protocol.md | Cold3_leaf
+      RT1                  |  protocols/growth_protocol.md | RT1_leaf
+      RT2                  |  protocols/growth_protocol.md | RT2_leaf
+      RT3                  |  protocols/growth_protocol.md | RT3_leaf
 
-</Steps>
+  </Steps>
 </Card>
 
 ## From free-text protocol to structured metadata

@@ -14,7 +14,6 @@ import { Card } from '@astrojs/starlight/components';
 
 ## Using the PLANTDataHUB for collaboration
 
-
 - ARCs are the basis of the collaborative research platform
 - ARCs can be seamlessly shared between researchers
 
@@ -95,7 +94,7 @@ The commit menu allows you to "commit" your changes locally. This saves the chan
     3. Add a commit message
 
         <ViolaSays>
-            Created my first ARC and added data.
+            "Created my first ARC and added data."
         </ViolaSays>
     3. Click <btn>Commit</btn> to store your changes locally
         
@@ -111,10 +110,10 @@ In the History menu you can inspect your ARCs history with all commit messages a
     <Steps>
     
     1. Navigate to the `History` menu
-    2. Find your previous commit messages
+    2. Find your commit messages
 
         <ViolaSays>
-            Great, so I even in five years I will know what I did in every step.
+            Great, so even in five years I will know what I did in every step.
         </ViolaSays>
         
     </Steps>
@@ -126,12 +125,17 @@ In the History menu you can inspect your ARCs history with all commit messages a
     <Steps>
     1. From the sidebar, navigate to the `DataHUB Sync` menu
     2. In the grey `Remote` box, click <btn>+</btn> to add a remote
-    3. In the `Add Remote` dialog, use the defaults for `Remote Name` ("origin"), `DataHUB Account` ("viola") and `URL` ("https://git.nfdi4plants.org/viola/AthalianaColdStressSugar.git")
-    4. Click <btn>Add Remote</btn>
+    3. In the `Add Remote` dialog, leave the defaults for `Remote Name`, `DataHUB Account` and `URL`
+
+        :::note
+        By default, your ARC will be synced privately to your personal DataHUB Account.
+        :::
+
         <ViolaSays>
           So my ARC will be synced to https://git.nfdi4plants.org/viola/AthalianaColdStressSugar.git
         </ViolaSays>
 
+    4. Click <btn>Add Remote</btn>
     5. Click <btn>Push</btn> to upload your ARC to the DataHUB     
     6. In the grey `Remote` box, click the globe icon to be directed to your ARC in the DataHUB
 
