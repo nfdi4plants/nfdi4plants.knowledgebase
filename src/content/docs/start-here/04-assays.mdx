@@ -67,6 +67,7 @@ In **assays** you can store data and metadata from measurements.
 
 ## Separate different assay elements
 
+- reusablity
 
 import IMG2 from "@images/start-here/arc-prototypic-assay-modular2.svg"
 
@@ -75,37 +76,53 @@ import IMG2 from "@images/start-here/arc-prototypic-assay-modular2.svg"
 
 ### Add assay data and protocols
 
+
 <Card icon="pen" title="ARCitect">
-    <Steps>
+  <Steps>
 
-    1. import [data file](./sugar_result.csv) into dataset
-    2. import [extraction protocol file](./sugar_extraction_protocol.md) into protocols
+  1. Right-click on the `dataset` folder and select `Import Files`
+  2. Select the file `sugar_result.csv` from the demo data and click `Open`.
+  3. Right-click on the `protocols` folder and select `Import Files`
+  4. Select the file `sugar_extraction_protocol.md` from the demo data and click `Open`.
+  5. The files are added to your ARC.
+    
+        <FileTree>
+        - assays
+            - SugarMeasurement
+                - dataset
+                    - **sugar_result.csv**
+                - protocols
+                    - **sugar_extraction_protocol.md**
+                - isa.assay.xlsx
+                - README.md
+        - ...
+        </FileTree>
 
-    </Steps>
+  </Steps>
 </Card>
-
 
 
 ### Isolate the lab processes in an assay
 
-- reusablity
-
 import IMG from "@images/start-here/arc-prototypic-assay-modular1.svg"
 
 <img src={IMG.src} style="width:80%;display: block; margin: 20px" />
-
 
 ### Add one annotation table for each lab process
 
 <Card icon="pen" title="ARCitect">
     <Steps>
 
-    1. add "SugarExtraction" table
-    2. add "SugarMeasurement" table
+    1. Click on the assay's name (`SugarMeasurement`) in the file tree
+    2. At the bottom of the right panel, click on the plus icon right next to the `Metadata` sheet to add one sheet for each lab process
+        
+        <ViolaSays>
+            I add two tables: one for "SugarExtraction" and one for "SugarMeasurement"
+        </ViolaSays>
 
+    3. After adding the tables, right-click on each sheet's tab to rename them accorindly.
     </Steps>
 </Card>
-
 
 ### Parametric description of the lab process
 
