@@ -25,21 +25,48 @@ In **assays** you can store data and metadata from measurements.
 ### Add a new assay
 
 <Card icon="pen" title="ARCitect">
+    <Steps>
 
-<Steps>
+    1. Click on the plus icon next to `assays` to add a new assay
+    2. Enter a name for the `New Assay`
 
-1. add "SugarMeasurement" assay
-2. Fill out top-level metadata:
-    - Measurement type = `sugar measurement`
-    - Technology type = `photometry`
-    - Technology platform = `Infinite M200 plate reader (Tecan)`
+        <ViolaSays>
+            SugarMeasurement
+        </ViolaSays>
 
-</Steps>
+    3. Click `New Assay`
+    4. ARCitect adds the assay `SugarMeasurement` including the folders `dataset` and `protocols` as well as a `README.md` and the `isa.assay.xlsx` workbook.
+    
+        <FileTree>
+        - assays
+            - **SugarMeasurement**
+                - dataset
+                    - ...
+                - protocols
+                    - ...
+                - isa.assay.xlsx
+                - README.md
+            - ...
+        </FileTree>
 
+        :::note
+        The `isa.assay.xlsx` is not displayed inside ARCitect.
+        :::
+
+    5. Click on the assay's name (`SugarMeasurement`) in the file tree to edit the assay metadata in the right panel
+    6. Here you can add metadata about your assay
+
+        <ViolaSays>
+            Ok, so my **measurement type** is "sugar measurement". 
+            And to specify the device I used for my measurement, I add "photometry" and "Infinite M200 plate reader (Tecan)" as the **technology type** and **technology platform**, respectively.
+        </ViolaSays>
+
+    </Steps>
 </Card>
 
 
-### Separate different assay elements
+## Separate different assay elements
+
 
 import IMG2 from "@images/start-here/arc-prototypic-assay-modular2.svg"
 
