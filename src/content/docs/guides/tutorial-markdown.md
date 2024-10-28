@@ -3,6 +3,8 @@ title: Markdown
 lastUpdated: 2022-07-06
 authors:
   - dominik-brilhaus
+sidebar:
+  hidden: true
 ---
 
 - [What is Markdown?](#what-is-markdown)
