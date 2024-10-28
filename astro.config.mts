@@ -78,7 +78,7 @@ export default defineConfig({
         './src/styles/custom.css',
       ],
       components: {
-        MarkdownContent: './src/components/Starlight/MarkdownContent.astro',
+        MarkdownContent: '@components/starlight/MarkdownContent.astro',
         Footer: '@components/starlight/Footer.astro',
       },
       editLink: {
