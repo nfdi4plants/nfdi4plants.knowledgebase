@@ -2,7 +2,6 @@
 title: Frequently Asked Questions
 lastUpdated: 2023-11-30
 pagefind: false
-banner: {content: "contents shown here maybe old"}
 ---
 
 
