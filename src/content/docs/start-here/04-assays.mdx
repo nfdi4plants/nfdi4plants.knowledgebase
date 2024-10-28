@@ -1,0 +1,236 @@
+---
+title: Add assay data
+sidebar:
+  order: 4
+authors:
+  - dominik-brilhaus
+  - lukas-weil
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+
+
+In **assays** you can store data and metadata from measurements.
+
+![](@images/start-here/arc-prototypic-assay-identify.svg)
+
+## Assay 1: Sugar Measurement
+
+![](@images/start-here/arc-prototypic-assay-sugar.svg)
+
+
+### Add a new assay
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+
+    1. Click on the plus icon next to `assays` to add a new assay
+    2. Enter a name for the `New Assay`
+
+        <ViolaSays>
+            SugarMeasurement
+        </ViolaSays>
+
+    3. Click `New Assay`
+    4. ARCitect adds the assay `SugarMeasurement` including the folders `dataset` and `protocols` as well as a `README.md` and the `isa.assay.xlsx` workbook.
+    
+        <FileTree>
+        - assays
+            - **SugarMeasurement**
+                - dataset
+                    - ...
+                - protocols
+                    - ...
+                - isa.assay.xlsx
+                - README.md
+            - ...
+        </FileTree>
+
+        :::note
+        The `isa.assay.xlsx` is not displayed inside ARCitect.
+        :::
+
+    5. Click on the assay's name (`SugarMeasurement`) in the file tree to edit the assay metadata in the right panel
+    6. Here you can add metadata about your assay
+
+        <ViolaSays>
+            Ok, so my **measurement type** is "sugar measurement". 
+            And to specify the device I used for my measurement, I add "photometry" and "Infinite M200 plate reader (Tecan)" as the **technology type** and **technology platform**, respectively.
+        </ViolaSays>
+
+    </Steps>
+</Card>
+
+
+## Separate different assay elements
+
+- reusablity
+
+import IMG2 from "@images/start-here/arc-prototypic-assay-modular2.svg"
+
+<img src={IMG2.src} style="width:80%;display: block; margin: 20px" />
+
+
+### Add assay data and protocols
+
+
+<Card icon="pen" title="ARCitect">
+  <Steps>
+
+  1. Right-click on the `dataset` folder and select `Import Files`
+  2. Select the file `sugar_result.csv` from the demo data and click `Open`.
+  3. Right-click on the `protocols` folder and select `Import Files`
+  4. Select the file `sugar_extraction_protocol.md` from the demo data and click `Open`.
+  5. The files are added to your ARC.
+    
+        <FileTree>
+        - assays
+            - SugarMeasurement
+                - dataset
+                    - **sugar_result.csv**
+                - protocols
+                    - **sugar_extraction_protocol.md**
+                - isa.assay.xlsx
+                - README.md
+        - ...
+        </FileTree>
+
+  </Steps>
+</Card>
+
+
+### Isolate the lab processes in an assay
+
+import IMG from "@images/start-here/arc-prototypic-assay-modular1.svg"
+
+<img src={IMG.src} style="width:80%;display: block; margin: 20px" />
+
+### Add one annotation table for each lab process
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+
+    1. Click on the assay's name (`SugarMeasurement`) in the file tree
+    2. At the bottom of the right panel, click on the plus icon right next to the `Metadata` sheet to add one sheet for each lab process
+        
+        <ViolaSays>
+            I add two tables: one for "SugarExtraction" and one for "SugarMeasurement"
+        </ViolaSays>
+
+    3. After adding the tables, right-click on each sheet's tab to rename them accorindly.
+    </Steps>
+</Card>
+
+### Parametric description of the lab process
+
+#### Sugar extraction
+
+![](@images/start-here/arc-prototypic-assay-labprocess-parameters1.svg)
+
+#### Sugar measurement
+
+![](@images/start-here/arc-prototypic-assay-labprocess-parameters2.svg)
+
+
+### Use templates to describe the lab processes
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+
+    1. Click on the assay's name (`SugarMeasurement`) in the file tree
+    2. Select the "SugarExtraction" table added in the previous step
+    4. In the `New Table!` widget, click on the `Add Template` button next to `Start from an existing template!`
+
+        {/* TODO Move templates to community "Teaching / Training" */}
+
+    3. Load template `RPTU - PP, Sugar extraction`
+        - Input [Sample name] of normal and cold sample
+        - Protocol REF with file picker to protocol file
+        - Parameter [`Vorex Mixer`] of 3 `second`
+        - Parameter [`Temperature`] of 95 `degree celsius`
+        - Output [Sample name] of normal and cold extraction
+    2. select "SugarMeasurement" table
+        - Load template `RPTU - PP, Sugar measurement`
+        - Input [Sample name] of 3xNormal and 3xCold sample
+        - Parameter [`technical replicate`] of 1,2,3,1,2,3
+        - Parameter [`sample volume`] of 10 `microliter`
+        - Parameter [`buffer volume`] of 190 `microliter`
+        - Parameter [cycle count] of 5
+        - Output [Data] with Filepicker to imported sugar data file
+
+    </Steps>
+</Card>
+
+---
+
+## Assay 2: Proteomics Assays
+
+<ViolaSays>
+    Alright, this all makes sense. However, it seems a bit tedious, if I want to achieve this in detail for more complex assays. And besides, I'm honestly not an expert of proteomics data and I am not sure I can fill out all information about my proteomics assay. 
+</ViolaSays>
+
+![](@images/start-here/arc-prototypic-assay-sop1.svg)
+
+### Save time using standard methods and SOPs
+
+![](@images/start-here/arc-prototypic-assay-sop2.svg)
+![](@images/start-here/arc-prototypic-assay-sop3.svg)
+
+### Apply standard procedures to sample records
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+
+    1. add `Proteomics_MS` assay (NAMING!)
+        - import raw data folder (./MS_Raw/) into dataset
+        - import [local assay template](./AssayTemplate_Proteomics_MS.json)(formatted as ARCtrl json)
+        - fill out the two tables (tables might be in wrong order!)
+
+    2. add `Proteomics_DataAnalysis` assay
+        - import [dummy fasta](./dummy.fasta) into dataset
+        - import [proteomics result](./MSFraggerOutput/combined_protein.tsv.csv) into dataset
+        - import [local assay template](./AssayTemplate_Proteomics_DataAnalysis.json)(formatted as ARCtrl json)
+        - fill out table
+
+    </Steps>
+</Card>
+
+
+
+----
+----
+
+
+## ARC builds on ISA to link data
+
+  - Samples are linked study-to-assay, assay-to-assay
+  - Raw data is linked to assays
+  - Protocols can be referenced
+  - ...
+
+  
+  {/* ![](./../../../img/ISAmodel_ARC01_img02.svg) */}
+
+## Link samples across studies and assays
+
+1. Use the `Output [Sample Name]` of studies/talinum_drought/isa.study.xlsx as the `Input [Sample Name]` to **rna-extraction**.
+1. Use the `Output [Sample Name]` of **rna-extraction** as the `Input [Sample Name]` to **illumina-libraries**.
+
+**Seeds** &mdash;*Plant growth*&#x21FE; **Leaves** &mdash;*RNA Extraction*&#x21FE; **RNA** &mdash;*Illumina*&#x21FE; **fastq files**
+
+## Link dataset files to samples
+
+1. In the *Building Blocks* widget select *Output* -> *Raw Data File*.
+2. Click <kbd>Add Column</kbd>.
+
+:bulb: You see a warning about a changed output column.
+
+3. Click <kbd>Continue</kbd>.
+4. Go to the *File Picker* tab and click <kbd>Pick file names</kbd>.
+5. Select and open the *fastq.gz files from the dataset folder.
+6. Copy / paste them to the `Raw Data File`. 
+
+:bulb: This allows you to link your samples to the resulting raw data files.

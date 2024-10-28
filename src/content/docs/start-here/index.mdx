@@ -2,31 +2,58 @@
 title: Getting Started
 authors:
   - kevin-frey
+  - dominik-brilhaus
 sidebar:
-  order: 1
+  order: 0
 ---
 
-Welcome to the DataPLANT "Getting Started" to create your own ARC's!
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
 
-ARCs are structured data containers that help you to organize your research data in a standardized way. They are based on existing standards, unifying machine and human readability!
+Welcome to the DataPLANT "Getting Started" guide to create your own ARC!
 
-Starting out with ARCs can be a bit overwhelming, but don't worry! We are here to help you with the first steps. This guide will walk you through the process of creating your first ARC, adding data to it, and uploading it to the DataHub.
+ARCs are structured data containers, so-called FAIR Digital Objects. ARCs help you organize your research data in a standardized way. They are based on existing standards, unifying machine and human readability!
+
+![](@images/start-here/arc-bag.svg)
+
+Starting out with ARCs can be a bit overwhelming, but don't worry! We are here to help you with the first steps. This guide will walk you through the process of creating your first ARC, adding data to it, and sharing it with collaborators.
 
 Together we will follow a fictional researcher **Viola** on her journey to create her first ARC. Viola is a plant scientist and has heard about ARCs and wants to give them a try.
 
----
+<ViolaSays>
+I recently attended a conference where my project partner introduced me to the Annotated Research Context (ARC). Intrigued by its potential, I was eager to set up my first ARC as soon as I got back to my lab. However, once there, I realized I only remembered the basic ARC structure and something about some ISA metadata. 😕
 
-## ARC structure 
+:::tip[Come along!]
+Follow me on my journey to create my first ARC!
+:::
 
-Let's follow Viola, our fictional plant scientist, who recently attended a conference where her project partner introduced her to the Annotated Research Context (ARC). Intrigued by the promise, Viola is eager to set up her first ARC upon returning to her lab. However, once back, she only recalls the basic ARC structure and something about some isa.xlsx files. 
+</ViolaSays>
 
-A basic ARC consists of the following components:
 
-import BaseArc from '@components/mdx/BaseARC.mdx'
+## Viola's PhD Project
 
-<BaseArc />
+![](@images/start-here/arc-prototypic.svg)
 
-Note the four main folder types: `studies`, `assays`, `workflows`, and `runs`. Each of these folders contains specific information about the project, its studies, assays, and workflows.
+<ViolaSays>
+
+{/* TODO align text with new example */}
+
+For my PhD I investigate the effect of cold stress on sugar metabolism in *A. thaliana*. I grew the plants under ambient (25 °C) and cold stress (6 °C) conditions, harvested leaves from a two-day time series experiment, extracted proteins and soluble sugars and submitted the samples to nearby core facilities for proteomics and metabolomics measurements, respectively. After a few weeks of iterative consultation with the facilities' heads as well as technicians and computational biologists, I received back a wealth of raw and processed data. From the data I produced figures using a mix of code and statistical software. Now we want to wrap everything up to publish the results in the *Journal of Wonderful Plant Sciences*.
+
+</ViolaSays>
+
+
+<Card title="Demo data" icon="setting">
+
+To follow along this guide:
+
+  <Steps>
+  1. Please download <a href="/public/Violas-PhD-Project.zip" download>this unstructured demo dataset</a>
+  2. Unzip the folder `Violas-PhD-Project.zip` and store it somewhere ready for the next steps
+  </Steps>
+
+</Card>
 
 
 

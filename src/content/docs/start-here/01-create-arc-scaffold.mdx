@@ -1,0 +1,88 @@
+---
+title: Create an ARC
+sidebar:
+  order: 1
+authors:
+  - dominik-brilhaus
+  - lukas-weil
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+
+import NewARC from '@components/mdx/NewARC.mdx'
+
+
+An ARC represents an entire investigation. At the top level, it includes directories named “studies,” “assays,” “workflows,” and “runs,” along with an investigation metadata table that holds all administrative metadata.
+
+![](@images/start-here/arc-scaffold.svg)
+
+The easiest way to create a new ARC is via **ARCitect**.
+
+<Card title="ARCitect installation" icon="setting">
+
+If ARCitect is not yet installed on your computer, 
+
+<details>
+<summary>please follow these instructions to install ARCitect</summary>
+
+import ARCitectInstallation from '../arcitect/installation.mdx'
+
+<ARCitectInstallation />
+
+</details>
+
+</Card>
+
+<Card icon="pen" title="ARCitect">
+<Steps>
+
+1. Start the **ARCitect** app
+2. In the sidebar on the left, click on `New ARC`
+3. Select a location and name for your ARC
+
+    <ViolaSays>
+
+    To keep it simple, I call my ARC "AthalianaColdStressSugar"
+
+    </ViolaSays>
+
+4. Click `Save`
+5. ARCitect creates the base ARC folder on your computer and opens it right away
+  
+    <FileTree>
+    
+    - AthalianaColdStressSugar
+      - **studies**
+      - **assays**
+      - **workflows**
+      - **runs**
+      - isa.investigation.xlsx
+    
+    </FileTree>
+
+    :::note
+    The `isa.investigation.xlsx` is not displayed inside ARCitect.
+    :::
+
+</Steps>
+</Card>
+
+<Card title="Your ARC's name" icon="approve-check" >
+
+By default, your ARC's name will be used:
+
+1. for the ARC folder on your computer
+2. as the **investigation identifier** 
+
+:::tip
+- Use a short acronym  
+- Avoid spaces and special characters in your ARC's name
+- Avoid administrative metadata (name, data, etc.)
+- Use a combination of keywords maybe grant number
+:::
+
+</Card>
+
