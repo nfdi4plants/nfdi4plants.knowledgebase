@@ -3,6 +3,7 @@ title: ARC Commander QuickStart (Experts)
 lastUpdated: 2023-01-27
 authors:
   - dominik-brilhaus
+pagefind: false 
 ---
 
 ## About this guide

@@ -5,7 +5,7 @@ authors:
   - dominik-brilhaus
   - sabrina-zander
   - david-zimmer
-status: draft
+pagefind: false
 ---
 
 <style>
