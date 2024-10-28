@@ -1,7 +1,6 @@
 ---
 title: Computational Workflows
 lastUpdated: 2023-02-05
-status: draft 
 ---
 
 Welcome to the section on Computational Workflows.
