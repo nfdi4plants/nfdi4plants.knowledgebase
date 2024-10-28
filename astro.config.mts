@@ -19,6 +19,7 @@ const SidebarConfig = [
   },
   {
     label: 'Guides',
+    collapsed: true,
     autogenerate: { directory: 'guides' },
   },
   {
@@ -52,16 +53,17 @@ const SidebarConfig = [
     autogenerate: { directory: 'arc-commander' },
   },
   {
-    label: 'Resources',
-    // Collapse the group by default.
-    collapsed: true,
-    autogenerate: { directory: 'resources' },
-  },
-  {
     label: 'Swate',
     // Collapse the group by default.
     collapsed: true,
     autogenerate: { directory: 'swate' },
+  },
+   {
+    label: 'Vault',
+    // Collapse the group by default.
+    collapsed: true,
+    badge: {text: "outdated", variant: "note"}, 
+    autogenerate: { directory: 'vault' },
   },
 ]
 
