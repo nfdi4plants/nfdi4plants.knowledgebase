@@ -29,8 +29,8 @@ As a platform you manage a lot of projects in parallel. Keeping these projects u
 
 Here's a few tips to support your project management:
 
-- You can use the [wiki associated to the ARC](../../datahub/datahub-arc-wiki) to collect meeting minutes with your collaborators
-- You can use the [ARC's issue board](../../datahub/datahub-arc-panel) to coordinate tasks between collaborators, team members, data analysts and others involved
+- You can use the [wiki associated to the ARC](/datahub/datahub-arc-wiki) to collect meeting minutes with your collaborators
+- You can use the [ARC's issue board](/datahub/datahub-arc-panel) to coordinate tasks between collaborators, team members, data analysts and others involved
 - You can use your established system of identifiers (e.g. for projects, samples) in [ISA metadata](../../core-concepts/isa-file-types)
 - You can also keep naming your ARCs with the same way you are used to name your project folders
 

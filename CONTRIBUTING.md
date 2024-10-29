@@ -101,3 +101,10 @@ Please explore the sections on the left to find guides on:
 - To create the folder structure and afterwards register the new assay `arc a add` can be used. This command combines init and register.
 ```
 </details>
+
+## Article cross-references
+
+Avoid relative paths when cross-referencing another knowledge base article.
+Instead, use references starting from the `docs` folder as root, e.g.
+
+[wiki associated to the ARC](/datahub/datahub-arc-wiki), not [wiki associated to the ARC](../../datahub/datahub-arc-wiki)
