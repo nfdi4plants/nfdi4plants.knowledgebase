@@ -39,7 +39,7 @@ Please make sure
 
 ☑️ The latest version of the [ARCitect](/arcitect) is installed on your computer  
 ☑️ You have a [DataPLANT](https://register.nfdi4plants.org) account  
-💡 Consider reading about the [ARC](./../implementation/AnnotatedResearchContext.html)  
+💡 Consider reading about the [ARC](/core-concepts/arc)  
 
 ---
 

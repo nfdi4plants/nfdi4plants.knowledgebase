@@ -3,6 +3,10 @@ title: Syncing recommendation
 lastUpdated: 2023-06-27
 authors:
   - dominik-brilhaus
+sidebar:
+  badge:
+    text: wip
+    variant: note
 ---
 
 :::note[About this guide]
@@ -26,7 +30,7 @@ In the DataHUB, the individual sync steps are called "commit".
 
 ## Add a message to communicate your ARC's evolution
 
-We recommend [adding a message](./../ArcCommanderManual/arc_synchronization.html) that shortly summarizes, what you did since you last synced your ARC.
+We recommend [adding a message](/arc-commander/synchronization) that shortly summarizes, what you did since you last synced your ARC.
 
 The following exemplifies adding commit messages via the ARC commander. The same function is provided by the ARCitect via the "Commit" menu.
 
