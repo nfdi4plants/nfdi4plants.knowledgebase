@@ -10,7 +10,7 @@ authors:
 ## Scientific iteration and versioning
 
 Science is highly iterative. Most outcomes along the data life cycle (between an initial idea and the final publication, see also [RDM](/fundamentals/research-data-management)) are iterated through multiple cycles of design-test-repeat (e.g. laboratory experiments) or draft-review-publish (e.g. manuscripts) and mixes thereof. During these iterations multiple versions of the different outcomes are produced.  
-There are different options to keep track of these versions. The seemingly simplest option is to duplicate a file and rename it by attaching a version, e.g. `manuscript.txt` &ndash; `manuscript_v2.txt` &ndash; `manuscript_final.txt`. Although this may work acceptably for individual use it quickly becomes confusing when sharing with other researchers. Cloud services offer options to keep track of changes (what was changed and by whom) within collaborative, multi-party projects (see also [Data Sharing][kb-DataSharing]). Here, versioning is usually taken care of automatically by the cloud service with little to no control by the user. However, these services are helpful only for version histories of typical office data (documents, presentations) or small datasets and within low-complexity projects.
+There are different options to keep track of these versions. The seemingly simplest option is to duplicate a file and rename it by attaching a version, e.g. `manuscript.txt` &ndash; `manuscript_v2.txt` &ndash; `manuscript_final.txt`. Although this may work acceptably for individual use it quickly becomes confusing when sharing with other researchers. Cloud services offer options to keep track of changes (what was changed and by whom) within collaborative, multi-party projects (see also [Data Sharing](/fundamentals/data-sharing/)). Here, versioning is usually taken care of automatically by the cloud service with little to no control by the user. However, these services are helpful only for version histories of typical office data (documents, presentations) or small datasets and within low-complexity projects.
 
 ![Cloud Services](@images/fundamentals/git-cloud-services.png)
 
@@ -40,25 +40,25 @@ The following table gives an overview about DataPLANT tools and services related
 
 Name | Type | Tasks on data sharing
 ----------------|-----------|------------------
-**[ARC Commander][kb-ArcCommander-Manual]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
+**[ARC Commander](/arc-commander)** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
 **[ARC](/core-concepts/arc)**  <br /> (Annotated Research Context) | Standard | **Structure:** <ul><li>ARCs are git repositories</li><li>Package data with metadata in a defined format</li></ul>
 **[DataHUB](/datahub)** | Service | **Share:** <ul><li>DataPLANT-customized GitLab instance</li><li>Infrastructure-as-code: on-premise solution</li><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 
 
 ### Register with DataPLANT
 
-In order to use the [DataHUB][hp-DataHUB] and other DataPLANT infrastructure and services, please [sign up][hp-Registration]: with DataPLANT.  
+In order to use the [DataHUB](/datahub) and other DataPLANT infrastructure and services, please [sign up](/datahub/datahub-account): with DataPLANT.  
 
 [kb-FairDataPrinciples]: ../fundamentals/FairDataPrinciples.html "FAIR Data principles"
 [kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
 (/core-concepts/arc): ../implementation/AnnotatedResearchContext.html "Annotated Research Context"
 (/fundamentals/research-data-management): ../fundamentals/ResearchDataManagement.html "Research Data Management"
-[kb-DataSharing]: ../fundamentals/DataSharing.html "Data Sharing"
+(/fundamentals/data-sharing/): ../fundamentals/DataSharing.html "Data Sharing"
 (/datahub): ../implementation/DataHub.html "DataPLANT DataHUB"
 
-[hp-Registration]: <https://register.nfdi4plants.org/> "DataPLANT Registration"
-[hp-DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"
-[kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
+(/datahub/datahub-account): <https://register.nfdi4plants.org/> "DataPLANT Registration"
+(/datahub): <https://git.nfdi4plants.org> "ARC DataHUB"
+(/arc-commander): ../ArcCommanderManual/index.html "ARC Commander Manual"
 
 [Git]: <https://git-scm.com> "Git"
 [GitLab]: <https://gitlab.com> "GitLab"
