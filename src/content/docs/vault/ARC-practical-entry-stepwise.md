@@ -1,14 +1,11 @@
 ---
-layout: docs
 title: Practical Guide into the ARC ecosystem
-date: 2023-11-29
-author:
-- name: Dominik Brilhaus
-  orcid: https://orcid.org/0000-0001-9021-3197
-  github: brilator
-add toc: true
-add support: true
-add sidebar: _sidebars/mainSidebar.md
+lastUpdated: 2023-11-29
+authors:
+ - dominik-brilhaus
+draft: true
+hidden: true
+pagefind: false
 ---
 
 <!-- http://127.0.0.1:8080/docs/guides/ARC-practical-entry.html -->

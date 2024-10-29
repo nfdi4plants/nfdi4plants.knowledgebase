@@ -1,14 +1,11 @@
 ---
-layout: docs
 title: Reproduce and reuse
-date: 2022-08-08
-author:
-- name: Dominik Brilhaus
-  github: https://github.com/brilator
-  orcid: https://orcid.org/0000-0001-9021-3197
-add toc: true
-add sidebar: _sidebars/mainSidebar.md
-status: draft
+lastUpdated: 2022-08-08
+authors:
+ - dominik-brilhaus
+draft: true
+hidden: true
+pagefind: false
 ---
 
 > Note: This is just a first collection of thoughts.
