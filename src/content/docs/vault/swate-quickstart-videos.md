@@ -15,7 +15,7 @@ DataPLANT provides the tool [Swate](/swate) to support you in data annotation. I
 
 :::tip[Before we can start]
 - Consider reading about [Swate](/swate)
-- We assume that you already created an ARC that contains one or more studies and assays. If not consider watching the [ARCitect Quickstart Videos](./arcitect_QuickStart_Videos.html)
+- We assume that you already created an ARC that contains one or more studies and assays. If not consider watching the [ARCitect Quickstart Videos](/vault/arcitect-quick-start-videos)
 first.
 :::
 

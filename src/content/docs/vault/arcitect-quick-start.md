@@ -110,7 +110,7 @@ Here you can also link different assays to your study.
 
 ### Add an annotation table to your study
 
-To add detailed metadata on your study, you can create an additional table sheet and create an annotation table. For this, click the plus symbol next to "Metadata" at the bottom of your window. The tool [Swate](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/Swate.html) is integrated into ARCitect and will automatically be used, when creating an annotation table. Please check the [Swate Quickstart](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html) and the [Swate Manual](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/index.html) for detailed information and guides.
+To add detailed metadata on your study, you can create an additional table sheet and create an annotation table. For this, click the plus symbol next to "Metadata" at the bottom of your window. The tool [Swate](/swate) is integrated into ARCitect and will automatically be used, when creating an annotation table. Please check the [Swate Quickstart](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/swate_QuickStart.html) and the [Swate Manual](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/SwateManual/index.html) for detailed information and guides.
 
 ---
 

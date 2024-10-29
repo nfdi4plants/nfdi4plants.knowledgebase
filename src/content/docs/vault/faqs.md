@@ -13,15 +13,13 @@ Where should the metadata annotation be made. In the same documents containing t
 
 No. The metadata describing the data is collected in a separate xlsx-file &ndash; called `isa.assay.xlsx` &ndash; that resides in the parent folder of the dataset.
 
-:bulb: For more information, check out our guides on [annotating data in your ARC](./../guides/index-AnnotateDataInYourARC.html). 
-
 </details>
 
 <details><summary><span style="color: #1fc2a7">
 Is it necessary to fill in the empty fields in the investigation-file manually? 
 </summary>
 
-No. Although it is possible to fill out the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> or <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html">ARCitect</a> to add this metadata.
+No. Although it is possible to fill out the workbook manually, we recommend using [ARC Commander](/arc-commander) or [ARCitect](/arcitect) to add this metadata.
 
 </details>
 
@@ -52,7 +50,7 @@ To properly re-use and reference such a dataset, we recommend to add a `study` t
 Are there any recommendations for titles or identifiers?
 </summary>
 
-Avoid using spaces in the identifier. Use underscores and capital letters instead. There are no specific restrictions regarding the title. Although it is possible to fill in the workbook manually, we recommend using <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/ArcCommander.html">ARC Commander</a> to add this metadata.
+Avoid using spaces in the identifier. Use underscores and capital letters instead. There are no specific restrictions regarding the title. Although it is possible to fill in the workbook manually, we recommend using <a href="/arc-commander">ARC Commander</a> to add this metadata.
 
 </details>
 
@@ -62,7 +60,7 @@ How often should I sync my ARC?
 
 We would not want to recommend a fixed time interval (once every hour / day / week) for how often you ideally sync the ARC. In general, the more you work with your ARC, the more you add or update, annotate or analyze data, the more you will want to make sure these changes are saved. Consider the syncing as a way to backup your project's progress as well as an "undo button".
 
-:bulb: For more details, check out the [Syncing Recommendations](./../guides/arc_SyncingRecommendation.html)
+:bulb: For more details, check out the [Syncing Recommendations](/guides/arc-syncing-recommendation)
 
 </details>
 
@@ -100,7 +98,7 @@ Why do I get the error `'arc' is not recognized as an internal or external comma
 
 Your machine cannot find your ARC commander executable. Possible reasons are that you have not yet installed the ARC commander or that the `arc` executable was not added to your path. 
 
-Please carefully retry the [ARC Commander setup](./../ArcCommanderManual/index-setup.html). 
+Please carefully retry the [ARC Commander setup](/arc-commander/installation). 
 
 If this does not do the trick, please follow these steps towards debugging (on Windows): 
 
@@ -108,7 +106,7 @@ If this does not do the trick, please follow these steps towards debugging (on W
 2. Next, execute `path` to check wether the folder (e.g. `C:\Programs\ArcCommander`) appears in your path.
 3. Adapt the user's path (not admin)
    
-:bulb: If you do not have admin rights on the computer, please open the settings "Edit environment variables for your account" and follow steps described in the [ARC Commander setup](./../ArcCommanderManual/index-setup.html).
+:bulb: If you do not have admin rights on the computer, please open the settings "Edit environment variables for your account" and follow steps described in the [ARC Commander setup](/arc-commander/installation).
 
 </details>
 

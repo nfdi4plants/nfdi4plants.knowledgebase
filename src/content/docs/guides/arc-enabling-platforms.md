@@ -79,7 +79,7 @@ The standardized ARC structure helps with routine computations:
 
 - The ARC's simple [directory structure](/core-concepts/arc) itself helps building routines, no matter whether you work with code or licensed software. Across projects, you and your collaborators know, where to find metadata and raw data, where to store processed data and results.
 - The ARC facilitates task automation such as quality control and validation within one project or across multiple ARCs covering routine measurements
-- Code-based computations can be designed as reusable and reproducible workflows using [Common Workflow Language (CWL)](./ComputationalWorkflows/index.html)
+- Code-based computations can be designed as reusable and reproducible workflows using [Common Workflow Language (CWL)](/guides/data-analysis/computational-workflows)
 
 ### Data publication
 
