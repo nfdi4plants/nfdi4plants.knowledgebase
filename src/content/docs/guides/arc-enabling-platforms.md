@@ -85,7 +85,7 @@ The standardized ARC structure helps with routine computations:
 
 At some point you and your collaborator want to [publish the data](./../fundamentals/DataPublications.html) resulting from the project.
 
-There are two major options: You can publish the current version of the ARC and receive a [DOI](./../DataHUB-Manual/datahub-data-publications.html). Some scientific journals require data to be published in  [domain-specific repositories](./../fundamentals/PublicDataRepositories.html), specialized for a certain type of assay. For this purpose converters help you export the relevant dataset and metadata into a repository-accepted format.
+There are two major options: You can publish the current version of the ARC and receive a (https://www.doi.org/)(./../DataHUB-Manual/datahub-data-publications.html). Some scientific journals require data to be published in  [domain-specific repositories](./../fundamentals/PublicDataRepositories.html), specialized for a certain type of assay. For this purpose converters help you export the relevant dataset and metadata into a repository-accepted format.
 
 :::tip
 We are working on converters to read and reshape the relevant data and metadata of your ARC into a format accepted by domain-specific repositories. You can support this by telling us relevant repositories for your type of data or help creating [templates](./../SwateManual/Docs05-Templates.html).

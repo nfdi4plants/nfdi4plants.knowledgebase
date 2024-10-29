@@ -27,7 +27,7 @@ The entire information given in this example can be stored within an ARC. To ill
 
 ## isa.investigation.xlsx
 
-The ISA investigation workbook allows you to record administrative metadata of your project. In Viola's example, the title of the project, the contact persons, and related publications correspond to such metadata. Besides that, the workbook can also contain a short description of your project, but also lists included studies with respective design types, assays, protocols, etc.. Although we recommend to use the [ARC Commander][kb-ArcCommander] for adding these metadata, you can of course fill the workbook (and also the [isa.study.xlsx](#isastudyxlsx) and [isa.assay.xlsx](#isaassayxlsx)) manually.
+The ISA investigation workbook allows you to record administrative metadata of your project. In Viola's example, the title of the project, the contact persons, and related publications correspond to such metadata. Besides that, the workbook can also contain a short description of your project, but also lists included studies with respective design types, assays, protocols, etc.. Although we recommend to use the [ARC Commander](/arc-commander) for adding these metadata, you can of course fill the workbook (and also the [isa.study.xlsx](#isastudyxlsx) and [isa.assay.xlsx](#isaassayxlsx)) manually.
 
 ## Studies
 
@@ -40,7 +40,7 @@ In case your investigation contains more than one study, each of these studies i
 Every study contains one `isa.study.xlsx` file to specify the characteristics of all material and resources. Resources described in a study file can be the input for one or multiple assays or workflows. The workbook contains (at least) two worksheets:
 
 - "CircadianClock_Light regimes": One or more worksheets, depending on the number of used protocols, to annotate the properties of your source material following the ISA model. The sheet name is not obligatory to be the exact same as the "Study Identifier". While this can be done manually, we recommend using our ontology supported annotation tool [Swate](swate_QuickStart.html).
-- "Study": Viola collected the administrative metadata of her study in this worksheet. This information can later be transferred into the `isa.investigation.xlsx` using the [ARC Commander][kb-ArcCommander].
+- "Study": Viola collected the administrative metadata of her study in this worksheet. This information can later be transferred into the `isa.investigation.xlsx` using the [ARC Commander](/arc-commander).
 
 ## Assays
 
@@ -70,8 +70,8 @@ After Viola generated her plots, she placed them in individual subdirectories, s
 
 We hope that these examples nicely illustrated the ARC structure and that you are now ready to produce your own ARCs. Use the figure below as a cheat sheet to remember where to store which files. Or follow the [ARC Commander QuickStart](/guides/arc-commander-quick-start) to try it out yourself.
 
-[kb-Metadata]: ../fundamentals/Metadata.html "Metadata"
-[kb-ArcCommander]: ../implementation/ArcCommander.html "DataPLANT ARC Commander"
+(/fundamentals/metadata): ../fundamentals/Metadata.html "Metadata"
+(/arc-commander): ../implementation/ArcCommander.html "DataPLANT ARC Commander"
 [kb-swate_QuickStart]: ../tutorials/swate_QuickStart.html "Quickstart Swate"
 (/guides/arc-commander-quick-start): ../tutorials/arcCommander_QuickStart.html "QuickStart ARC Commander"
 (/core-concepts/arc/#arc-specification): ./../implementation/ARC-specification.html "ARC specification"
