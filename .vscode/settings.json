@@ -3,7 +3,7 @@
       "style/dataplant_marp-theme.css",
       "style/dataplant_marp-theme-CMR.css",
       "style/dataplant_marp-theme-Intro.css",
-      "style/marp-theme_dataplant-ceplas-ccby",
+      "style/marp-theme_dataplant-ceplas-ccby.css",
       "style/marp-theme_dataplant-ceplas-mibinet-ccby.css",      
     ],
     "markdown.marp.enableHtml": true,
