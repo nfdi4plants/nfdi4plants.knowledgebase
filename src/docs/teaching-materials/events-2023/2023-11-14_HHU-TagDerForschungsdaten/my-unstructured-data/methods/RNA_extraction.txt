@@ -1,0 +1,24 @@
+RNA Extraction
+
+- Grind frozen material with mortar and pestle
+- Kit: GeneMatrix Universal RNA Purification Kit
+- Buffer volume: 300 µl
+
+- Samples
+    DB_097 80.0 mg
+    DB_099 78.00 mg
+    DB_103 93.00 mg
+    DB_161 82 mg
+    DB_163 96.00 mg
+    DB_165 78.00 mg
+
+- QC
+ - Agilent 2100 Bioanalyzer, chip expert_Plant RNA Nano
+ - RIN = RNA integrity number
+
+    DB_097  RIN 7.6
+    DB_099	RIN 7.7 
+    DB_103	RIN 6.5 
+    DB_161	RIN 7.8 
+    DB_163	RIN 7.6 
+    DB_165	RIN 7.6 

@@ -1,43 +1,41 @@
 ---
-layout: none
+layout: docs
 title: Electronic Lab Notebooks (ELNs)
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
-add toc: false
+add toc: true
 add sidebar: _sidebars/mainSidebar.md
-date: 2023-08-09
+date: 2023-12-01
 status: draft
 ---
 
-:construction: work in progress :construction:
+## Protocols &ndash; Recipes to knowledge
 
-- [Protocols - Recipes to Knowledge](#protocols---recipes-to-knowledge)
-- [ELN - Digital Protocol Editors](#eln---digital-protocol-editors)
-- [ARCs - Packaging ELN protocols with the data](#arcs---packaging-eln-protocols-with-the-data)
+Protocols form the basis to laboratory procedures. In a kitchen a recipe defines what inputs (*flour, milk, eggs, ...*) and steps (*mix, bake...*) are required to achieve what expected outcome (*chocolate cake*). Just like that a laboratory protocol defines what samples, materials, and components (*plant leaves, buffer, centrifuge, ...*) can be processed (*homogenize, mix, extract, ...*) to generate a desired outcome (*plant leaf extract*). Depending on the type of laboratory procedure, the protocol outcomes may be samples or data. In both cases the protocol is or contains **metadata**.
 
-## Protocols - Recipes to Knowledge
+Protocols are the key to generate knowledge via predefined experimental processes. Since protocols are key to reproducibility and integrity of scientific results, they are an integral part of publications (e.g. the *materials and methods* section) to share, evaluate and reuse these methods with peers and communities.
 
-Protocols form the basis to laboratory procedures. In a kitchen a recipe defines what inputs (*flour, milk, eggs, ...*) and steps (*mix, bake...*) are required to achieve what expected outcome (*chocolate cake*). Just like that a laboratory protocol defines what samples, materials, and components (*plant leaves, buffer, centrifuge, ...*) can be processed (*homogenize, mix, extract, ...*) to generate a desired outcome (*plant leaf extract*). Depending on the type of laboratory procedure, the protocol outcomes may be samples or data. In both cases the protocol is **metadata**.
+Every lab builds on a collection of protocols. Some protocols may describe routinely performed *standard operating procedures*, while others may be continuously evolving and adapted to a specific use-case. In pre-digital times, protocols for a scientific project were collected in classical pen-and-paper lab notebooks. By design, the metadata knowledge collected in these single-copy protocols was hard to access (hidden in a shelf) and hard to maintain over generations of researchers or share and communicate with peers during the ongoing scientific process. 
 
-Protocols are the key to generate knowledge via predefined experimental processes. Since protocols are key to reproducibility and integrity of scientific results, they are an integral part of publications (*materials and methods* section) to share, evaluate and reuse these methods with peers and communities.
+## ELN &ndash; Digital protocol editors
 
-Every lab builds on a collection of protocols. Some protocols may describe routinely performed *standard operating procedures*, while others may be continuously evolving and adapted to a specific use-case. In pre-digital times, protocols for a scientific project were collected in classical pen-and-paper lab notebooks. By design, the metadata knowledge collected in these single-copy protocols was hard to access (hidden in a shelf), maintain (over generations of researchers) or share and communicate (hand-written notes, post-its) with peers during the ongoing scientific process. <!-- (unless published) -->
+Once a protocol is digitalized, the information that used to be stuck in a single copy of paper can be easily replicated, enabling faster collaboration, sharing, and reuse. This can be done via a combination of text software, local or cloud servers, wiki platforms or by using a specialized software such as &ndash; **electronic** lab notebooks (ELNs).
 
-## ELN - Digital Protocol Editors
+ELNs are designed to help overcome the limitations of classical pen-and-paper lab notebooks and to align with daily wet-lab routines. ELNs facilitate the editing and sharing of protocols, usually in a closed environment such as a lab or consortium. Designed as lightweight (low-burden, free-text) protocol editors, ELNs are a major step towards digitalization of laboratory processes.
 
-Once a protocol is digitalized, the information that used be stuck in a single-copy paper can be replicated with ease, facilitating quicker collaboration, sharing, and reuse (of those laboratory-central processes). This can be done via a combination of text software, local or cloud servers, wiki platforms or by using a specialized software - the **electronic** lab notebook (ELN).
+## ARCs &ndash; Packaging protocols combined with the data
 
-ELNs were developed (designed) to help overcome the limitations of classical pen-and-paper lab notebooks and align well with daily wet-lab routines. ELNs facilitate the editing and sharing of protocols, usually in a closed environment such as a lab or consortium.
+Protocols generated in ELNs integrate well with the [Annotated Research Context (ARC)](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html). Protocols and the metadata they contain have a dedicated place and schema within the ARC. Each study and assay subfolder in the ARC comes with a folder called `protocols`. This folder collects all protocols associated with a particular set of data files in the `dataset` folder. In addition, the `isa.study.xlsx` and `isa.assay.xlsx` workbooks associated with each study or assay, help to communicate the protocol metadata in a structured and machine-readable way.
 
-Designed as lightweight (low-burden, free-text) protocol editors, ELNs are a major step towards digitalization of laboratory processes.
+Since ARCs are designed as FAIR digital objects which combine the data files with the metadata into one research data package, they facilitate the storage, shareing, and reuse of the research data as a whole.
 
-## ARCs - Packaging ELN protocols with the data
+![](./../img/protocols2arc.drawio.svg)
 
-Protocols generated in ELNs integrate well with the ARC. Protocols and the metadata they contain have a dedicated place and schema within the ARC. Every study and assay (subfolder) in the ARC comes with a folder called `protocols`. This folder collects all protocols directly associated with a specific set of data files in the parallel `dataset` folder. In addition, the `isa.study.xlsx` and `isa.assay.xlsx` workbooks associated to each study or assay, help to communicate the protocol's metadata in a structured and machine-readable way.
 
-Since ARCs (are designed as FAIR digital objects, which) combine the data files with the metadata in one research data package, they facilitate to store, share and reuse the research data as a whole. <!-- rather than just the protocol // just the data without metadata  -->
+
+<!-- rather than just the protocol // just the data without metadata  -->
 
 <!-- 
 

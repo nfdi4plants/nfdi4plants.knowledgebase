@@ -15,18 +15,18 @@ date: 2023-06-09
 
 In this guide we focus on how to use the [ARC Commander](./../implementation/ArcCommander.html) to create your ARC and structure, store and share your data.
 
-<a href="./index.html">
-    <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
-    <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
-</a>
-
-<br>
-<br>
+<div style="padding-bottom: 20px">
+    <a href="./index.html">
+        <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
+        <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
+    </a>
+</div>
 
 ## Before we can start
 
 :ballot_box_with_check: Please [install ARC Commander](./../ArcCommanderManual/index-setup.html)  
-:ballot_box_with_check: Find <a href="./tutorial_TheCommandLine.html" target="_blank">the command line</a> on your system  
+:ballot_box_with_check: Find <a href="./tutorial_TheCommandLine.html" target="_blank">the command line    </a>
+</div> on your system  
 :bulb: Consider reading about [ARC](./../implementation/AnnotatedResearchContext.html) and the [ARC Commander](./../implementation/ArcCommander.html)  
 :bulb: After concluding this quickstart, consider exploring the [ARC Commander manual](./../ArcCommanderManual/index.html) for a more detailed usage instruction.
 
@@ -55,10 +55,12 @@ arc init
 
 ### ISA investigation
 
-The ISA investigation (`-i`) workbook allows you to record administrative metadata of your project. Add the isa.investigation.xlsx workbook including an identifier to your ARC with
+The ISA investigation (`-i`) workbook allows you to record administrative metadata of your project.
+The isa.investigation.xlsx workbook including an identifier to your ARC has been added to the project during initialization.
+You can update the identifier of your ARC with
 
 ```bash
-arc investigation create -i QuickStartInvestigation
+arc investigation update -i QuickStartInvestigation
 ```
 > :bulb: Avoid using spaces in the identifier. Use underscores and capital letters instead.
 
@@ -184,7 +186,8 @@ arc config setgituser
 You can invite lab-colleagues or project partners to join your ARC for collaboration. While inside your ARC on the DataHUB, click on *Project information -\> Members* in the left navigation panel. Search for registered researchers and select a role for each individually. These roles come along with different rights.  
 Briefly:
 
-- *Guests:* Have the least rights. This is recommended for people you ask for consultancy.
+- *Guests:* Have the least rights. They will not be able to see the content of your ARC (only the wiki page).
+- *Reporters*: Have read access to your ARC. This is recommended for people you ask for consultancy.
 - *Developers:* The choice for most people you want to invite to your ARC. Developers have read and write access, but cannot maintain the project on the DataHUB, e.g. inviting others.  
 - *Maintainers:* Gives the person the same rights as you have (except of removing you from your own project). This is recommended for inviting PIs or group leaders allowing them to add their group members for data upload or analysis to the project as well.
 

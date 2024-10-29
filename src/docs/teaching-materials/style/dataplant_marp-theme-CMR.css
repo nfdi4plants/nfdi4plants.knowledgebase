@@ -2,6 +2,17 @@
 
 @import 'default';
 
+section {    
+  background: url("https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/45bdd7650da78e918346f7e5a168e34200d380ce/src/docs/img/logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"), url("https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg");
+  background-repeat: no-repeat;
+  background-size: 3%, 5%;
+  background-position: 2% 99%, 6.5% 99%;
+  background-color: white;
+  font-size: 30px;
+  font-family: Calibri, sans-serif;
+  color: #2D3E50;
+}
+
 header {
   top: 30px;
   height: 60px;

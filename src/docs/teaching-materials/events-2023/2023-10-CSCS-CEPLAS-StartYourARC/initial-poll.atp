@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<POLL TYPE="anonymous" SHOWTIMER="yes" ALARM="3:0" NOANSWER="yes" SHOWRESPONSE="yes">
+
+<QUESTION TYPE="mcone" TITLE="Do&nbsp;you&nbsp;have&nbsp;an&nbsp;ORCID&nbsp;(https://orcid.org)?">
+<ANSWER ISCORRECT="false">Yes</ANSWER>
+<ANSWER ISCORRECT="false">No</ANSWER>
+</QUESTION>
+
+<QUESTION TYPE="text" TITLE="Name&nbsp;your&nbsp;favorite&nbsp;assay&nbsp;or&nbsp;measurement&nbsp;technique&nbsp;(e.g.&nbsp;&quot;RNASeq&quot;,&nbsp;&quot;Confocal&quot;)">
+<ANSWER ISCORRECT="true">Your&nbsp;Answer</ANSWER>
+</QUESTION>
+
+<QUESTION TYPE="text" TITLE="Try&nbsp;to&nbsp;summarize&nbsp;your&nbsp;study&nbsp;design&nbsp;in&nbsp;less&nbsp;than&nbsp;180&nbsp;characters&nbsp;(e.g.&nbsp;&quot;Arabidopsis,&nbsp;WT&nbsp;vs.&nbsp;Mutants;&nbsp;Ambient&nbsp;CO2&nbsp;vs.&nbsp;High&nbsp;CO2;&nbsp;midday&nbsp;and&nbsp;midnight&quot;)">
+<ANSWER ISCORRECT="true">Your&nbsp;Answer</ANSWER>
+</QUESTION>
+
+<QUESTION TYPE="mcmany" TITLE="How&nbsp;do&nbsp;you&nbsp;typically&nbsp;share&nbsp;research&nbsp;data?">
+<ANSWER ISCORRECT="false">Email</ANSWER>
+<ANSWER ISCORRECT="false">Cloud</ANSWER>
+<ANSWER ISCORRECT="false">Hard&nbsp;drive</ANSWER>
+<ANSWER ISCORRECT="false">Other</ANSWER>
+</QUESTION>
+
+<QUESTION TYPE="mcone" TITLE="Did&nbsp;you&nbsp;ever&nbsp;publish&nbsp;or&nbsp;submit&nbsp;data&nbsp;in&nbsp;a&nbsp;data&nbsp;repository?&nbsp;(e.g.&nbsp;at&nbsp;NCBI,&nbsp;EBI,&nbsp;zenodo)">
+<ANSWER ISCORRECT="false">Yes</ANSWER>
+<ANSWER ISCORRECT="false">No</ANSWER>
+<ANSWER ISCORRECT="false">I&nbsp;am&nbsp;not&nbsp;sure</ANSWER>
+</QUESTION>
+
+<QUESTION TYPE="mcone" TITLE="Did&nbsp;you&nbsp;use&nbsp;a&nbsp;programming&nbsp;language&nbsp;or&nbsp;code&nbsp;before?">
+<ANSWER ISCORRECT="false">Yes</ANSWER>
+<ANSWER ISCORRECT="false">No</ANSWER>
+<ANSWER ISCORRECT="false">I&nbsp;am&nbsp;not&nbsp;sure</ANSWER>
+</QUESTION>
+
+</POLL>

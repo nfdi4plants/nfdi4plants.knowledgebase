@@ -54,7 +54,7 @@ The diversity of metadata types, sources and stakeholders highlights that collec
 Metadata stakeholders from different environments have different understandings of what metadata is required for comprehension of the annotated data. As plant biologists we probably agree that, when retrieving data from a public repository or publication, it is beneficial to know what type of measurement was performed on what species of plants. By contrast, a computational biologist and a librarian might emphasize the importance of the programming environment required to interpret a script or the contributing authors and licenses, respectively.  
 
 As plant biologists, we frequently experience how hard it is (if at all possible) to reproduce an experiment described with too little information in a publication. So, the more metadata the merrier &ndash; wouldn't it be great to capture *all* metadata about a project? Realistically we can only collect a portion of metadata. To guide users on what metadata is encouraged to collect, different domains of data experts have formulated these requirements into what is often referred to as "metadata standards" or "minimum information standards".
-Examples for bibliographic and administrative metadata standards include [DublinCore][ext-DublinCore] and [DataCite][ext-DataCite]. Prominent standards to annotate data relevant to different plant science domains are grouped under the "Minimum Information for Biological and Biomedical Investigations" ([MIBBI]) and define e.g. minimum information about a high-throughput SEQuencing Experiment ([MINSEQE]), Proteomics Experiment ([MIAPE]) or a Plant Phenotyping Experiment ([MIAPPE]). There are many more metadata standards available which can be explored at [fairsharing.org].  
+Examples for bibliographic and administrative metadata standards include [DublinCore][ext-DublinCore] and [DataCite][ext-DataCite]. Prominent standards to annotate data relevant to different plant science domains are grouped under the "Minimum Information for Biological and Biomedical Investigations" ([MIBBI]) and define e.g. minimum information about a high-throughput SEQuencing Experiment ([MINSEQE]), Proteomics Experiment ([MIAPE]) or a Plant Phenotyping Experiment ([MIAPPE]). There are many more metadata standards available which can be explored at [fairsharing.org]. You can also use DataPLANT's [Metadata recommendation quiz](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/MetadataQuiz.html) for finding suitable metadata standards, metadata checklists for repositories as well as corresponding [Swate](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/Swate.html) templates for your data.
 The metadata standards can be regarded as "checklists", which, when followed, provide that the data is annotated with the required metadata attributes to make it comprehensible at least in the current context.
 
 ### Structuring
@@ -79,6 +79,7 @@ Name | Type | Tasks on metadata
 ----------------|-----------|------------------ 
 **[ARC][kb-AnnotatedResearchContext]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
 **[Swate][gh-Swate]** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
+**[Metadata quiz](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/MetadataQuiz.html)** | Tool | **Identify:** <ul><li>Identify relevant metadata standards, data repositories and Swate templates for your data</li></ul>
 **[ARC Commander][kb-ArcCommander-Manual]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
 **[DataHUB][kb-DataHub]** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 <!-- ~~Converter~~ | Tool under construction | **Curate:** <ul><li>Harmonize and migrate between metadata schema</li><li>Manage who can view or access your ARC</li></ul> -->
@@ -119,7 +120,7 @@ Name | Type | Tasks on metadata
 <!-- DataPLANT weblinks -->
 
 [hp-DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"
-[gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
+[kb-ArcSpecs]: ./../implementation/ARC-specification.html "ARC specification"
 [kb-ArcCommander-Manual]: ../ArcCommanderManual/index.html "ARC Commander Manual"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/> "GitHub Swate"
 
