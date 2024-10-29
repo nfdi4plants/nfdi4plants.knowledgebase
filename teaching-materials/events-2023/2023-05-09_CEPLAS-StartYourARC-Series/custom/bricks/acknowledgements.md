@@ -1,7 +1,6 @@
 ---
 marp: true
 theme: dataplant_marp-theme
-layout: slides
 title: Acknowledgements
 ---
 

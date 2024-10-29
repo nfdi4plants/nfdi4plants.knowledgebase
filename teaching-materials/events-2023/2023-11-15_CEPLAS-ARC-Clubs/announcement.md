@@ -1,6 +1,5 @@
 ---
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-layout: docs
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -8,9 +7,6 @@ author:
 date: 2023-10-31
 status: ready
 title: CEPLAS ARC Clubs
-add toc: true
-add support: false
-add sidebar: _sidebars/mainSidebar.md
 ---
 
 <style>

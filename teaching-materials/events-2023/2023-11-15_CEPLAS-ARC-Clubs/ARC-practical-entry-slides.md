@@ -1,5 +1,4 @@
 ---
-layout: none
 title: Practical Guide into the ARC ecosystem slides
 marp: true
 theme: marp-theme_dataplant-ceplas-ccby

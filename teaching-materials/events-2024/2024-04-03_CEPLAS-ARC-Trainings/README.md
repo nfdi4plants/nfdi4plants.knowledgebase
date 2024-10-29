@@ -1,6 +1,5 @@
 ---
 title: "README 2024-04-03_CEPLAS-ARC-Trainings"
-layout: none
 date: 2024-04-03
 ---
 
@@ -71,8 +70,7 @@ title=$(pwd | xargs basename)
 outfile="$outfolder"/"$title".md
 currentDate=$(date +"%Y-%m-%d")
 
-echo "---\nmarp: true\nlayout: slides\ntheme: $selectMarpTheme\npaginate: true\ntitle: $title\ndate: $currentDate\n---\n" > $outfile
-
+echo "---\nmarp: true\n
 for unit in *.md; do    
     if grep -q "^marp: true" "$unit"
     then

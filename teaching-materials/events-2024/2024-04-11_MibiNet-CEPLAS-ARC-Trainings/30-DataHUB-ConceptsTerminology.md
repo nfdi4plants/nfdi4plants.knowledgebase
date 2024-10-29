@@ -1,5 +1,4 @@
 ---
-layout: slides
 title: DataHUB concepts and terminology
 marp: true
 theme: marp-theme_dataplant-ceplas-mibinet-ccby

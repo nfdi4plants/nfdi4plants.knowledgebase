@@ -1,6 +1,5 @@
 ---
 marp: true
-layout: slides
 theme: marp-theme_dataplant-ceplas-mibinet-ccby
 paginate: true
 title: 2024-04-11_MibiNet-CEPLAS-ARC-Trainings

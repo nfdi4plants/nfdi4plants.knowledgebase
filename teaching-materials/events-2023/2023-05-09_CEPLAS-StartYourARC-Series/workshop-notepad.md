@@ -1,14 +1,10 @@
 ---
-layout: docs
 title: workshop-notepad
 date: 2023-06-14
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
-add toc: false
-add support: false
-add sidebar: _sidebars/mainSidebar.md
 ---
 
 # Start-Your-ARC - Workshop Series

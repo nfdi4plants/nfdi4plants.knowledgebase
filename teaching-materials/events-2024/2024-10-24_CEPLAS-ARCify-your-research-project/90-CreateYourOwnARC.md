@@ -1,5 +1,4 @@
 ---
-layout: docs
 marp: false
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 title: Create your own ARC

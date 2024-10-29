@@ -1,10 +1,6 @@
 ---
-layout: docs
 title: Data Steward Circle
 date: 2023-07-11
-add toc: true
-add support: false
-add sidebar: _sidebars/mainSidebar.md
 ---
 
 Here you can find the slides showed during the Data Steward Circle.   

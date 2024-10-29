@@ -1,7 +1,6 @@
 ---
 marp: true
 theme: marp-theme_dataplant-ceplas-ccby
-layout: slides
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator

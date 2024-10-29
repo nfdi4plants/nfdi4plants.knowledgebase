@@ -1,10 +1,6 @@
 ---
-layout: docs
 title: Start your ARC Series
 date: 2023-06-01
-add toc: false
-add support: false
-add sidebar: _sidebars/mainSidebar.md
 ---
 
 The Videos linked here were recorded during a [CEPLAS](https://ceplas.eu) workshop in May 2023.  

@@ -1,10 +1,6 @@
 ---
-layout: docs
 title: CEPLAS ARC Trainings &ndash; Spring 2024
 date: 2024-03-06
-add toc: true
-add support: false
-add sidebar: _sidebars/mainSidebar.md
 ---
 
 Here you can find the slides prepared for the CEPLAS ARC Trainings &ndash; Spring 2024

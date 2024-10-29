@@ -1,10 +1,6 @@
 ---
-layout: docs
 title: TRR175 Retreat - Akademie Tutzing
 date: 2024-03-06
-add toc: true
-add support: false
-add sidebar: _sidebars/mainSidebar.md
 ---
 
 Here you can find information shared at the TRR175 retreat in Tutzing July 2024. 

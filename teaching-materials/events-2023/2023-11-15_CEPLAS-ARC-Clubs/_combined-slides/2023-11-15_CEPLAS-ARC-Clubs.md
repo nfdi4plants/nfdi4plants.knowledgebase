@@ -1,6 +1,5 @@
 ---
 marp: true
-layout: slides
 theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 title: 2023-11-15_CEPLAS-ARC-Clubs

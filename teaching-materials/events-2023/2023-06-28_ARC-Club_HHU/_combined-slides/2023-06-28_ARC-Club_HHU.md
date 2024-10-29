@@ -1,6 +1,5 @@
 ---
 marp: true
-layout: slides
 theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 title: 2023-06-28_ARC-Club_HHU

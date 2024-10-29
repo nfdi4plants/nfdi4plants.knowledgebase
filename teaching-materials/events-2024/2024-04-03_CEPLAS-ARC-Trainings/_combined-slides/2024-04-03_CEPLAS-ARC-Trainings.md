@@ -1,6 +1,5 @@
 ---
 marp: true
-layout: slides
 theme: marp-theme_dataplant-ceplas-ccby
 paginate: true
 title: 2024-04-03_CEPLAS-ARC-Trainings

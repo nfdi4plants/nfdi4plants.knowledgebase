@@ -248,8 +248,7 @@ July 25th, 2023</p>
 <div class="column" style="font-size:17px; width:800px">
 <ul>
 <li><strong>MUST</strong> start and end with <code>---</code> .</li>
-<li><strong>MUST</strong> contain <code>layout: docs</code>.
-<ul>
+<li><strong>MUST</strong> contain <code><ul>
 <li>This triggers fornax parsing to html.</li>
 </ul>
 </li>
@@ -261,18 +260,15 @@ July 25th, 2023</p>
 </li>
 <li><strong>MUST</strong> contain <code>date: yyyy-MM-dd</code></li>
 <li>MAY contain author: xxxx.</li>
-<li>MAY contain <code>add toc: true</code>.
-<ul>
+<li>MAY contain <code><ul>
 <li>If true, adds automated table of contents from all found headers in content.</li>
 </ul>
 </li>
-<li>MAY contain <code>add support: true</code>.
-<ul>
+<li>MAY contain <code><ul>
 <li>If true adds DataPlant support component at the bottom.</li>
 </ul>
 </li>
-<li>MAY contain <code>add sidebar: relative/path/to/sidebar.md</code> to add the sidebar element to the page.</li>
-<li>MAY contain any other metadata. The information will be read but will not affect the generated html.</li>
+<li>MAY contain <code><li>MAY contain any other metadata. The information will be read but will not affect the generated html.</li>
 <li>Keys (<code>layout</code>, <code>author</code>, etc.) are NOT case sensitive.</li>
 <li>Fields MAY be in any order.</li>
 </ul>

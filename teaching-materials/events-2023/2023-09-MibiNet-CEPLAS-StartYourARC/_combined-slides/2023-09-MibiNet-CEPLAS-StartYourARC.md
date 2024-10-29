@@ -1,6 +1,5 @@
 ---
 marp: true
-layout: slides
 theme: marp-theme_dataplant-ceplas-mibinet-ccby
 paginate: true
 title: 2023-09-MibiNet-CEPLAS-StartYourARC

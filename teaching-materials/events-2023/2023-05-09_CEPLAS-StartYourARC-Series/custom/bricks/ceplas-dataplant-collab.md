@@ -1,7 +1,6 @@
 ---
 marp: true
 theme: dataplant_marp-theme
-layout: slide
 title: CEPLAS_DataPLANT
 author: 
 - name: Dominik Brilhaus

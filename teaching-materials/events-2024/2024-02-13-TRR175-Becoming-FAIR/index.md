@@ -1,10 +1,6 @@
 ---
-layout: docs
 title: Becoming FAIR - Utilizing ARCs and the PLANTdataHUB for collaborative research in the TRR175
 date: 2024-03-06
-add toc: true
-add support: false
-add sidebar: _sidebars/mainSidebar.md
 ---
 
 Here you can find information shared at the "Becoming FAIR - Utilizing ARCs and the PLANTdataHUB for collaborative research in the TRR175" workshop &ndash; February 2024

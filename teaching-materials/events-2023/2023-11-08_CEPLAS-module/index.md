@@ -1,10 +1,6 @@
 ---
-layout: docs
 title: CEPLAS Module 2023
 date: 2023-10-29
-add toc: true
-add support: false
-add sidebar: _sidebars/mainSidebar.md
 ---
 
 Here you can find the slides prepared for the November 2023 CEPLAS Module &ndash; *Good Data Management Practices*.

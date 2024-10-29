@@ -1,13 +1,9 @@
 ---
-layout: docs
 title: ARC Club (@HHU Plant Biochemistry)
 date: 2023-08-09
 - name: Dominik Brilhaus
   github: https://github.com/brilator
   orcid: https://orcid.org/0000-0001-9021-3197
-add toc: true
-add support: false
-add sidebar: _sidebars/mainSidebar.md
 ---
 
 Here you can find the slides prepared for the **ARC Club** (August 2023 @HHU-Plant-Biochemistry).

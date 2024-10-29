@@ -1,10 +1,6 @@
 ---
-layout: docs
 title: MibiNet/CEPLAS Start Your ARC Workshop
 date: 2023-09-20
-add toc: true
-add support: false
-add sidebar: _sidebars/mainSidebar.md
 ---
 
 Here you can find the slides prepared for the September 2023 MibiNet/CEPLAS *Start Your ARC Workshop*.

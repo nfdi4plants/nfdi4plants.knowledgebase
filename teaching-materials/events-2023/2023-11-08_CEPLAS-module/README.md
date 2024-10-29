@@ -1,6 +1,5 @@
 ---
 title: "README 2023-11-08_CEPLAS-module"
-layout: none
 date: 2023-11-06
 ---
 
@@ -39,8 +38,7 @@ done
 
 ```bash
 
-echo "---\nlayout: docs\ntitle: CEPLAS Module 2023\ndate: 2023-11-08\nadd sidebar: _sidebars/mainSidebar.md\n---\n\n## Slide decks\n" > hidden-index.md
-
+echo "---\n
 for unit in *.html; do
     
     noPrefix=${unit#*-}

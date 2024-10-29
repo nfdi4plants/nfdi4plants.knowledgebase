@@ -1,10 +1,6 @@
 ---
-layout: docs
 title: MibiNet CEPLAS DataPLANT Tool-Workshops
 date: 2024-03-06
-add toc: true
-add support: false
-add sidebar: _sidebars/mainSidebar.md
 ---
 
 Here you can find the slides prepared for the MibiNet CEPLAS DataPLANT Tool-Workshop &ndash; April 2024

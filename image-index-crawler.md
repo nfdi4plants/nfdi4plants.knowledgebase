@@ -1,6 +1,5 @@
 ---
 title: Image Index crawler
-layout: none
 date: 2023-09-26
 author:
 - name: Dominik Brilhaus

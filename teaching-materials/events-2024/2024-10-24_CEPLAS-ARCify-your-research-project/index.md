@@ -1,10 +1,6 @@
 ---
-# layout: docs
-title: ARCify your research project
+# title: ARCify your research project
 date: 2024-10-24
-add toc: true
-add support: false
-add sidebar: _sidebars/mainSidebar.md
 ---
 
 Here you can find the slides prepared for the CEPLAS workshop *ARCify your research project* &ndash; October 2024

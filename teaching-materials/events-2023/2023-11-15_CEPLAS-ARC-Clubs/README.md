@@ -1,6 +1,5 @@
 ---
 title: "README 2023-11-15_CEPLAS-ARC-Clubs"
-layout: none
 date: 2023-12-04
 ---
 
@@ -35,8 +34,7 @@ done
 
 ```bash
 
-echo "---\nlayout: docs\ntitle: CEPLAS ARC Clubs 2023\ndate: 2023-11-15\nadd sidebar: _sidebars/mainSidebar.md\n---\n\n## Slide decks\n" > hidden-index.md
-
+echo "---\n
 for unit in *.html; do
     
     noPrefix=${unit#*-}
@@ -59,8 +57,7 @@ title=$(pwd | xargs basename)
 outfile="$outfolder"/"$title".md
 currentDate=$(date +"%Y-%m-%d")
 
-echo "---\nmarp: true\nlayout: slides\ntheme: $selectMarpTheme\npaginate: true\ntitle: $title\ndate: $currentDate\n---\n" > $outfile
-
+echo "---\nmarp: true\n
 for unit in *.md; do    
     if grep -q "^marp: true" "$unit"
     then

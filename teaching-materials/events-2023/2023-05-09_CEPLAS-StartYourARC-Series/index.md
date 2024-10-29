@@ -1,10 +1,6 @@
 ---
-layout: docs
 title: CEPLAS Start Your ARC Workshop Series
 date: 2023-06-13
-add toc: true
-add support: false
-add sidebar: _sidebars/mainSidebar.md
 ---
 
 Here you can find the slides prepared for the May / June 2023 CEPLAS *Start Your ARC Workshop Series*.

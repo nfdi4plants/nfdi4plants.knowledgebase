@@ -1,5 +1,4 @@
 ---
-layout: docs
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 title: 
 date: 2024-03-25

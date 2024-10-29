@@ -1,5 +1,4 @@
 ---
-layout: slides
 marp: true
 title: Swate Templates Hands On
 theme: marp-theme_dataplant-ceplas-mibinet-ccby
@@ -12,8 +11,6 @@ author:
   github: https://github.com/Freymaurer
   orcid: https://orcid.org/0000-0002-8510-6810
 - name: Stella Eggels
-add toc: true
-add sidebar: _sidebars\mainSidebar.md
 ---
 
 # Creating Swate Templates

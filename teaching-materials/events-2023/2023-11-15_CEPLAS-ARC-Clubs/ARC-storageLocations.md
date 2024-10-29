@@ -1,5 +1,4 @@
 ---
-layout: none
 title: ARC storage locations
 marp: true
 theme: marp-theme_dataplant-ceplas-ccby

@@ -1,10 +1,6 @@
 ---
-layout: docs
 title: CSCS Start Your ARC Workshop
 date: 2023-09-25
-add toc: true
-add support: false
-add sidebar: _sidebars/mainSidebar.md
 ---
 
 Here you can find the slides prepared for the October 2023 CSCS *Start Your ARC Workshop*.

@@ -1,6 +1,5 @@
 ---
 title: "README 2023-11-14_HHU-TagDerForschungsdaten"
-layout: none
 date: 2023-11-14
 ---
 

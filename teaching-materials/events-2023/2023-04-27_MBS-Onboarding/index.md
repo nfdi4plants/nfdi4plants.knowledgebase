@@ -1,10 +1,6 @@
 ---
-layout: docs
 title:  MBS Onboarding
 date: 2023-04-27
-add toc: true
-add support: false
-add sidebar: _sidebars/mainSidebar.md
 ---
 Here you can find the slides shown during the MBS Onboarding.   
 <embed

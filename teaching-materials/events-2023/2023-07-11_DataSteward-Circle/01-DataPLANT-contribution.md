@@ -187,7 +187,6 @@ The DataPLANT GitHub organization (https://github.com/nfdi4plants) and repositor
 
 ```yaml
 ---
-layout: docs
 title: <YourTitle>
 author: <YourName>
 date: 2023-07-25
@@ -276,19 +275,15 @@ date: 2023-07-25
 <div class="column" style="font-size:17px; width:800px">
 
 - **MUST** start and end with `---` .
-- **MUST** contain `layout: docs`.
-    - This triggers fornax parsing to html.
+- **MUST** contain `    - This triggers fornax parsing to html.
 - **MUST** contain `title: xxxx`.
     - added as "# xxxx" to the html
     - used to name the generated webpage.
 - **MUST** contain `date: yyyy-MM-dd`
 - MAY contain author: xxxx.
-- MAY contain `add toc: true`.
-    - If true, adds automated table of contents from all found headers in content.
-- MAY contain `add support: true`.
-    - If true adds DataPlant support component at the bottom.
-- MAY contain `add sidebar: relative/path/to/sidebar.md` to add the sidebar element to the page.
-- MAY contain any other metadata. The information will be read but will not affect the generated html.
+- MAY contain `    - If true, adds automated table of contents from all found headers in content.
+- MAY contain `    - If true adds DataPlant support component at the bottom.
+- MAY contain `- MAY contain any other metadata. The information will be read but will not affect the generated html.
 - Keys (`layout`, `author`, etc.) are NOT case sensitive.
 - Fields MAY be in any order.
 
@@ -298,12 +293,9 @@ date: 2023-07-25
 
 ```yaml
 ---
-layout: docs
 title: Metadata
 date: 2022-05-09
 author: FirstName LastName
-add toc: true
-add sidebar: _sidebars/mainSidebar.md
 ---
 ```
 

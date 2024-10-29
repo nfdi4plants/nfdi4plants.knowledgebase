@@ -1,10 +1,6 @@
 ---
-layout: docs
 title: CEPLAS ARC Clubs 2023
 date: 2023-11-21
-add toc: true
-add support: false
-add sidebar: _sidebars/mainSidebar.md
 ---
 
 Here you can find the slides prepared for the November / December 2023 CEPLAS ARC Clubs

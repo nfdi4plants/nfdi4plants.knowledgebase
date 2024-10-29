@@ -1,5 +1,4 @@
 ---
-layout: docs
 author:
 - name: Dominik Brilhaus
   github: https://github.com/brilator
@@ -7,9 +6,6 @@ author:
 date: 2024-03-06
 title: CEPLAS ARC Trainings &ndash; Spring 2024
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-add toc: true
-add support: false
-add sidebar: _sidebars/mainSidebar.md
 ---
 
 <style>
