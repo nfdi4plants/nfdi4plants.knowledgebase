@@ -1,10 +1,4 @@
----
-title: Image Index
-layout: docs
-date: 2023-06-29
----
 
-This index should list all images used in the knowledge base.
 :bulb: Scroll table to right for more information.
 
 <div class="table-container">
