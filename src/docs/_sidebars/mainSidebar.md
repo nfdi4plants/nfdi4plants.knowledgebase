@@ -158,7 +158,7 @@
 ### [July: Data Steward Circle](/docs/teaching-materials/events-2023/DataSteward-Circle/index.html)
 ### [May: CEPLAS Start Your ARC Series](/docs/teaching-materials/events-2023/2023-05-09_CEPLAS-StartYourARC-Series/index.html)
 #### [Start Your ARC Series - Videos](/docs/teaching-materials/events-2023/2023-05-09_CEPLAS-StartYourARC-Series/StartYourARC-Videos.html)
-### [April: MBS Onboarding](/docs/teaching-materials/disseminations/2023-04-27_MBS-Onboarding/index.html)
+### [April: MBS Onboarding](/docs/teaching-materials/events-2023/2023-04-27_MBS-Onboarding/index.html)
 ## [Events 2024](/docs/teaching-materials/events-2024/index.html)
 ### [TRR175 Becoming FAIR](/docs/teaching-materials/events-2024/2024-02-13-TRR175-Becoming-FAIR/index.html)
 ### [CEPLAS ARC Trainings – Spring 2024](/docs/teaching-materials/events-2024/2024-04-03_CEPLAS-ARC-Trainings/index.html)
