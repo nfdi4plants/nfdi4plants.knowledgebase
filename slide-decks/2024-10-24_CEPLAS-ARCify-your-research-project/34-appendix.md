@@ -89,7 +89,7 @@ author:
 
 ## Annotation of the result data points
 
-![w:700](./start-here/arc-prototypic-datamap.svg)
+![w:700](../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-datamap.svg)
 
 Persistence from sample to data point using fragment selectors
 
@@ -97,10 +97,10 @@ Persistence from sample to data point using fragment selectors
 
 ## Point into results - Fragment selectors
 
-![w:700](./start-here/arc-prototypic-datamap-fragment-selectors1.svg)
+![w:700](../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-datamap-fragment-selectors1.svg)
 
 ---
 
 ## DataMAP: Annotation for the fragment selectors
 
-![w:700](./start-here/arc-prototypic-datamap-fragment-selectors2.svg)
+![w:700](../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-datamap-fragment-selectors2.svg)

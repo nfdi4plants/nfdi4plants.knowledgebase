@@ -168,7 +168,7 @@ The ARC Panel is the main working area for your ARC.
 
 ## Collaborate and share
 
-![](./start-here/collaboration-plantdatahub.svg)
+![](../../nfdi4plants.knowledgebase/src/assets/images/start-here/collaboration-plantdatahub.svg)
 
 ---
 
@@ -307,7 +307,7 @@ Check out the **commit history** of your ARC via Repository (2) or directly via 
 
 ## Collaboration Workflows
 
-![](./start-here/collaboration-git-toBeReplaced.svg)
+![](../../nfdi4plants.knowledgebase/src/assets/images/start-here/collaboration-git-toBeReplaced.svg)
 
 ---
 
@@ -359,7 +359,7 @@ Add issues to your ARC (3)
 
 # Moving from paper to FAIR data publication
 
-![w:900](./start-here/fair-data-publication.svg)
+![w:900](../../nfdi4plants.knowledgebase/src/assets/images/start-here/fair-data-publication.svg)
 
 
 ---
@@ -383,7 +383,7 @@ Add issues to your ARC (3)
 
 ## Validation towards publication
 
-![w:900px](./start-here/publication-validation.svg)
+![w:900px](../../nfdi4plants.knowledgebase/src/assets/images/start-here/publication-validation.svg)
 
 ---
 

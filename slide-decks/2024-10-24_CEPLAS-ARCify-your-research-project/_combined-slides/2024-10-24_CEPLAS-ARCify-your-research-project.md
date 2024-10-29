@@ -125,7 +125,7 @@ Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TR
 
 # Annotated Research Context (ARC)
 
-![width:800](./../start-here/arc-bag.svg)
+![width:800](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-bag.svg)
 
 Your entire investigation in a single unified bag
 
@@ -339,7 +339,7 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## ARCitect installation
 
@@ -355,19 +355,19 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ## A small prototypic project
 
-![](./../start-here/arc-prototypic.svg)
+![](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic.svg)
 
 ---
 
 ## ARC: Annotated research context
 
-![w:900](./../start-here/arc-bag.svg)
+![w:900](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-bag.svg)
 
 ---
 
 ## The ARC scaffold structure
 
-![w:900](./../start-here/arc-scaffold.svg)
+![w:900](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-scaffold.svg)
 
 ---
 
@@ -379,7 +379,7 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Initiate the ARC folder structure
 
@@ -391,7 +391,7 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Your ARC's name
 
@@ -409,7 +409,7 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Add a description to your investigation
 
@@ -417,7 +417,7 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Add contributors
 
@@ -429,17 +429,17 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ## Divide and conquer for reproducibility
 
-![](./../start-here/arc-prototypic-study-divide-conquer.svg)
+![](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-study-divide-conquer.svg)
 
 ---
 
 ## Identifying the ‘study’ part
 
-![w:900](./../start-here/arc-prototypic-study-identify.svg)
+![w:900](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-study-identify.svg)
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Add a study
 
@@ -451,7 +451,7 @@ Use **talinum_drought** as an identifier
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Study panel
 
@@ -466,7 +466,7 @@ In the study panel you can add
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Let's annotate the plant samples
 
@@ -476,7 +476,7 @@ In the study panel you can add
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Create an annotation table
 
@@ -491,11 +491,11 @@ In the study panel you can add
 
 ## A table-based organization schema
 
-![w:700](./../start-here/arc-prototypic-metadata-table-representation.svg)
+![w:700](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-metadata-table-representation.svg)
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Fill out source name and sample name
 
@@ -506,7 +506,7 @@ Transfer the sample ids from the protocol.
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Add protocols
 
@@ -518,7 +518,7 @@ You can either
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Link the protocol to the isa table
 
@@ -533,7 +533,7 @@ You can either
 This allows you to reference the free-text, human-readable protocol.
 
 
-![w:700](./../start-here/arc-prototypic-study-protocolref.svg)
+![w:700](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-study-protocolref.svg)
 
 :bulb: It is recommended that the protocol is in an open format (.md|.txt|.docx|…)
 :bulb: But everything is possible also an URI to an electronic lab notebook
@@ -542,7 +542,7 @@ This allows you to reference the free-text, human-readable protocol.
 
 ## Parameterizing the ‘study’
 
-![w:900](./../start-here/arc-prototypic-study-parameterization.svg)
+![w:900](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-study-parameterization.svg)
 
 ---
 
@@ -574,13 +574,13 @@ This allows you to reference the free-text, human-readable protocol.
 
 ## OLS: Finding the right metadata vocabulary
 
-![w:1000](./../start-here/ontology-lookup-service.svg)
+![w:1000](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/ontology-lookup-service.svg)
 
 ---
 
 ## Finding the metadata vocabulary and descriptors
 
-![](./../start-here/arc-prototypic-metadata.svg)
+![](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-metadata.svg)
 
 ---
 
@@ -682,7 +682,7 @@ Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plan
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Add Characteristics
 
@@ -697,7 +697,7 @@ Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plan
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Insert ontology terms
 
@@ -710,7 +710,7 @@ Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plan
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Add a Parameter building block with a unit
 
@@ -724,7 +724,7 @@ Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plan
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Insert unit-values
 
@@ -735,7 +735,7 @@ In the annotation table, select any cell below `Parameter [light intensity expos
 ---
 
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Your annotation table is growing
 
@@ -745,7 +745,7 @@ At this point. Your table should look similar to this:
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Exercise :pencil:
 
@@ -753,7 +753,7 @@ Try to add suitable *Building Blocks* for other pieces of metadata from the plan
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Add a factor building block
 
@@ -766,7 +766,7 @@ Try to add suitable *Building Blocks* for other pieces of metadata from the plan
 ---
 
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Showing ontology reference columns
 
@@ -781,12 +781,12 @@ Use double pointed quotation mark to un-hide hidden columns.
 
 ## Identifying assays
 
-![](./../start-here/arc-prototypic-assay-identify.svg)
+![](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-assay-identify.svg)
 
 ---
 
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Add an assay
 
@@ -797,7 +797,7 @@ Add two assays with **rnaseq** and **metabolomics** as an identifier
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Add information about your assay <!-- fit -->
 
@@ -812,50 +812,50 @@ In the assay panel you can define the assay's
 
 ## Assay for sugar measurement
 
-![w:900](./../start-here/arc-prototypic-assay-sugar.svg)
+![w:900](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-assay-sugar.svg)
 
 ---
 
 ## Separating different assay elements
 
-![w:800](./../start-here/arc-prototypic-assay-modular2.svg)
+![w:800](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-assay-modular2.svg)
 
 ---
 
 
 ## Parametric description of the lab process
 
-![](./../start-here/arc-prototypic-assay-labprocess-parameters1.svg)
+![](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-assay-labprocess-parameters1.svg)
 
 ---
 
 ## Parametric description of the lab process
 
-![](./../start-here/arc-prototypic-assay-labprocess-parameters2.svg)
+![](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-assay-labprocess-parameters2.svg)
 
 ---
 
 ## Isolating the lab processes in an assay
 
-![w:600](./../start-here/arc-prototypic-assay-modular1.svg)
+![w:600](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-assay-modular1.svg)
 
 ---
 
 ## Save time using standard methods and SOPs
 
-![](./../start-here/arc-prototypic-assay-sop1.svg)
+![](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-assay-sop1.svg)
 
 ---
 
 ## Save time using standard methods and SOPs
 
-![](./../start-here/arc-prototypic-assay-sop2.svg)
+![](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-assay-sop2.svg)
 
 ---
 
 ## Applying standard procedures to sample record
 
-![w:700](./../start-here/arc-prototypic-assay-sop3.svg)
+![w:700](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-assay-sop3.svg)
 
 ---
 
@@ -888,7 +888,7 @@ section {
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Let's annotate the RNA Seq assay
 
@@ -896,7 +896,7 @@ Open the lab notes `assays/rnaseq/protocols/`
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Use a template
 
@@ -912,7 +912,7 @@ Open the lab notes `assays/rnaseq/protocols/`
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Remove Building blocks
 
@@ -920,7 +920,7 @@ If there are any *Building Blocks* which do not fit to your experiment you can u
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Move Building blocks
 If the order of the *Building Blocks* should be adjusted you can use right click --> "Move Column"
@@ -928,7 +928,7 @@ If the order of the *Building Blocks* should be adjusted you can use right click
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Replace multiple names 
 
@@ -938,7 +938,7 @@ Right click --> "Update Column" can be used to replace names in batches
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## New process, new worksheet
 
@@ -947,7 +947,7 @@ Right click --> "Update Column" can be used to replace names in batches
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Exercise :pencil:
 
@@ -986,7 +986,7 @@ Try to fill the two sheets with the protocol details:
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Link samples across studies and assays
 
@@ -997,7 +997,7 @@ Try to fill the two sheets with the protocol details:
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Link dataset files to samples
 
@@ -1031,7 +1031,7 @@ The ARC is a **data-centric** approach to RDM
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Explorer
 
@@ -1043,12 +1043,12 @@ The **Explorer (6)** button directly opens your ARC locally
 
 ## Using the DataHUB to collaborate
 
-![](./../start-here/collaboration-plantdatahub.svg)
+![](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/collaboration-plantdatahub.svg)
 
 ---
 
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Login to DataHUB
 
@@ -1059,7 +1059,7 @@ The **Explorer (6)** button directly opens your ARC locally
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Commit panel (7)
 
@@ -1069,7 +1069,7 @@ You have to commit changes before you can upload to the DataHUB
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Commit your changes
 
@@ -1084,7 +1084,7 @@ It allows you to
 ![bg right:50% w:500](./../../../img/ARCitect_Commit_panel.png)
 
 ---
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## History panel (9)
 
@@ -1096,7 +1096,7 @@ In the History panel you can inspect your ARCs history with all commits
 ---
 
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 
 ## Upload your local ARC to the DataHUB
@@ -1108,7 +1108,7 @@ From the sidebar, navigate to **DataHUB Sync** (8)
 ---
 
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## DataHUB Sync
 
@@ -1122,7 +1122,7 @@ The DataHUB Sync panel allows you to
 
 ---
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Check if your ARC is successfully uploaded
 
@@ -1290,7 +1290,7 @@ The ARC Panel is the main working area for your ARC.
 
 ## Collaborate and share
 
-![](./../start-here/collaboration-plantdatahub.svg)
+![](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/collaboration-plantdatahub.svg)
 
 ---
 
@@ -1429,7 +1429,7 @@ Check out the **commit history** of your ARC via Repository (2) or directly via 
 
 ## Collaboration Workflows
 
-![](./../start-here/collaboration-git-toBeReplaced.svg)
+![](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/collaboration-git-toBeReplaced.svg)
 
 ---
 
@@ -1481,7 +1481,7 @@ Add issues to your ARC (3)
 
 # Moving from paper to FAIR data publication
 
-![w:900](./../start-here/fair-data-publication.svg)
+![w:900](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/fair-data-publication.svg)
 
 
 ---
@@ -1505,7 +1505,7 @@ Add issues to your ARC (3)
 
 ## Validation towards publication
 
-![w:900px](./../start-here/publication-validation.svg)
+![w:900px](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/publication-validation.svg)
 
 ---
 
@@ -1532,36 +1532,36 @@ Add issues to your ARC (3)
 
 ## Options to annotate the data analysis
 
-![w:900](./../start-here/arc-prototypic-workflows1.svg)
+![w:900](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-workflows1.svg)
 
 ---
 
 ## A computational workflow is like a protocol
 
-![w:900](./../start-here/arc-prototypic-workflows2.svg)
+![w:900](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-workflows2.svg)
 
 ---
 
 ## Option I: Create a virtual assay
 
-![w:900](./../start-here/arc-prototypic-workflows-virtual.svg)
+![w:900](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-workflows-virtual.svg)
 
 ---
 
 ## Option II: Create a workflow and run
 
-![w:900](./../start-here/arc-prototypic-workflows-cwl1.svg)
+![w:900](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-workflows-cwl1.svg)
 
 ---
 
 ## Use CWL to wrap your workflow
 
-![w:900](./../start-here/arc-prototypic-workflows-cwl2.svg)
+![w:900](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-workflows-cwl2.svg)
 
 ---
 
 
-<img class="arcitectLogo" src="./../start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
 
 ## Add datasets
 
@@ -1658,7 +1658,7 @@ In the file tree you can
 
 ## Annotation of the result data points
 
-![w:700](./../start-here/arc-prototypic-datamap.svg)
+![w:700](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-datamap.svg)
 
 Persistence from sample to data point using fragment selectors
 
@@ -1666,13 +1666,13 @@ Persistence from sample to data point using fragment selectors
 
 ## Point into results - Fragment selectors
 
-![w:700](./../start-here/arc-prototypic-datamap-fragment-selectors1.svg)
+![w:700](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-datamap-fragment-selectors1.svg)
 
 ---
 
 ## DataMAP: Annotation for the fragment selectors
 
-![w:700](./../start-here/arc-prototypic-datamap-fragment-selectors2.svg)
+![w:700](../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-prototypic-datamap-fragment-selectors2.svg)
 
 ---
 

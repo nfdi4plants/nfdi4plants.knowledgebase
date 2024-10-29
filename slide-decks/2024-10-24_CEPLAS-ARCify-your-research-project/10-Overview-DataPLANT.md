@@ -20,7 +20,7 @@ author:
 
 # Annotated Research Context (ARC)
 
-![width:800](./start-here/arc-bag.svg)
+![width:800](../../nfdi4plants.knowledgebase/src/assets/images/start-here/arc-bag.svg)
 
 Your entire investigation in a single unified bag
 
