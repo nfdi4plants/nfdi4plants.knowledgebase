@@ -11,6 +11,7 @@ import icon from "astro-icon";
 const SidebarConfig = [
   {
     label: 'Start Here',
+    badge: {text: 'NEW!', variant: 'tip' }, 
     autogenerate: { directory: 'start-here' },
   },
   {
@@ -62,7 +63,7 @@ const SidebarConfig = [
     label: 'Vault',
     // Collapse the group by default.
     collapsed: true,
-    badge: {text: "outdated", variant: "note"}, 
+    badge: {text: 'outdated', variant: 'note'}, 
     autogenerate: { directory: 'vault' },
   },
 ]
