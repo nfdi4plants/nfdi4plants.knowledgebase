@@ -1,17 +1,9 @@
 ---
-layout: docs
 title: Connect to your DataHUB
-author:
-  - name: Ursula Eberhardt
-    github: https://github.com/UrsulaE/
-    orcid: https://orcid.org/0000-0003-1221-7074
-  - name: Lucas Beuter
-    github: https://github.com/Lu98Be
-    orcid: https://orcid.org/0009-0008-8744-825X
-add toc: false
-add sidebar: _sidebars/mainSidebar.md
-status: published
-date: 2024-08-28
+authors:
+  - ursula-eberhardt
+  - lucas-beuter
+lastUpdated: 2024-08-28
 ---
 
 To be able to use the [ARCmanager](https://nfdi4plants.de/arcmanager/app/index.html), you need to have registered to one of the DataHUBs. Information on the different DataHUBs can be found [here](https://www.nfdi4plants.de/content/datahub.html).

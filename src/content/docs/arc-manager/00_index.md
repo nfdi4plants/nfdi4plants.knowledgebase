@@ -1,14 +1,8 @@
 ---
-layout: docs
 title: ARCmanager manual
-author:
-- name: Alexander Kirbis
-  github: https://github.com/akirbis
-  orcid: https://orcid.org/0000-0002-5667-3103
-add toc: false
-add sidebar: _sidebars/mainSidebar.md
-status: published
-date: 2024-07-25
+authors:
+  - alexander-kirbis
+lastUpdated: 2024-07-25
 ---
 
 Welcome to the ARCmanager manual!

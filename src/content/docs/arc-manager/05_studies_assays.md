@@ -1,14 +1,8 @@
 ---
-layout: docs
 title: Add new studies and assays
-author:
-  - name: Hamed Jalali
-    github: https://github.com/hamedjalali1982
-    orcid: https://orcid.org/0000-0002-1190-5652
-add toc: false
-add sidebar: _sidebars/mainSidebar.md
-status: published
-date: 2024-06-13
+authors:
+ - hamed-jalali
+lastUpdated: 2024-06-13
 ---
 
 According to the  [ISA Metadata Model](./../guides/index-AnnotateDataInYourARC.html), each **study** is connected to an **Investigation** and can contain several **assays**. Follow the steps below to learn how to create new studies and assays and how to register them in the _isa.investigation.xlsx_ file.  

@@ -1,17 +1,9 @@
 ---
-layout: docs
 title: Create new ARCs
-author:
- - name: Hamed Jalali
-   github: https://github.com/hamedjalali1982
-   orcid: https://orcid.org/0000-0002-1190-5652
- - name: Ursula Eberhardt
-   github: https://github.com/UrsulaE
-   orcid: https://orcid.org/0000-0003-1221-7074
-add toc: false
-add sidebar: _sidebars/mainSidebar.md
-status: published
-date: 2024-08-27
+authors:
+ - hamed-jalali
+ - ursula-eberhardt
+lastUpdated: 2024-08-27
 ---
 
 To create a new ARC in ARCmanager, follow the steps below:

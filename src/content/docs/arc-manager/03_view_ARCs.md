@@ -1,17 +1,9 @@
 ---
-layout: docs
 title: View ARCs
-author:
-  - name: Ursula Eberhardt
-    github: https://github.com/UrsulaE/
-    orcid: https://orcid.org/0000-0003-1221-7074
-  - name: Lucas Beuter
-    github: https://github.com/Lu98Be
-    orcid: https://orcid.org/0009-0008-8744-825X
-add toc: false
-add sidebar: _sidebars/mainSidebar.md
-status: published
-date: 2024-08-28
+authors:
+  - ursula-eberhardt
+  - lucas-beuter
+lastUpdated: 2024-08-28
 ---
 
 For the sake of simplicity, we are here using the term "ARC" for (DataHUB) "Project", because the DataHUB does not make any distinction between Projects that have the ARC folder and file structure and those that have not. Both are initially shown in the ARCmanager, but the ARCmanager has not been created for manipulating Projects which are not ARCs.

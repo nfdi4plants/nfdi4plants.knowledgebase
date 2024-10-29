@@ -1,14 +1,8 @@
 ---
-layout: docs
 title: What is the ARCmanager?
-author:
-- name: Alexander Kirbis
-  github: https://github.com/akirbis
-  orcid: https://orcid.org/0000-0002-5667-3103
-add toc: true
-add sidebar: _sidebars/mainSidebar.md
-status: published
-date: 2024-01-08
+authors:
+  - alexander-kirbis
+lastUpdated: 2024-01-08
 ---
 
 The ARCmanager is a web service that allows DataPLANT users to create and modify ARCs in a web browser environment. Edits done with the ARCmanager will be directly applied to the copy of your ARC on the respective DataHUB.
