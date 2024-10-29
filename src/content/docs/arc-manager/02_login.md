@@ -12,11 +12,11 @@ Clicking on the the `DataHUB` button (Fig. 1) brings you to the drop down menu o
 
 ---
 
-<img src="../img/ARCmanager_login_1a.png" style="border: 1px solid  black;" />
+![](@images/arc-manager/arc-manager-login-1a.png)
 
 **Fig. 1** Open the drop-down menu to select a DataHUB.
 
-<img src="../img/ARCmanager_login_1b.png" style="border: 1px solid  black;" />
+![](@images/arc-manager/arc-manager-login-1b.png)
 
 **Fig. 2** List of available DataHUBs.
 
@@ -30,7 +30,7 @@ After selecting a DataHUB that you want to access, click on the `Login` button t
 
 ---
 
-<img src="../img/ARCmanager_login_2.png" style="border: 1px solid  black;" />
+![](@images/arc-manager/arc-manager-login-2.png)
 
 **Fig. 3** Start login process for the selected DataHUB.
 
@@ -40,7 +40,7 @@ If you are using the ARCmanager for the first time, you will see a window (Fig. 
 
 ---
 
-<img src="../img/ARCmanager_login_2b.png" width="400" style="border: 1px solid  black;" />
+![](@images/arc-manager/arc-manager-login-2b.png)
 
 **Fig. 4** Authorization screen for ARCmanager to use a DataHUB user account.
 
@@ -52,7 +52,7 @@ Different authentication options can be used for the same DataHUB user, if the l
 
 ---
 
-<img src="../img/ARCmanager_login_3.png" width="400" style="border: 1px solid  black;" />
+![](@images/arc-manager/arc-manager-login-3.png)
 
 **Fig. 5** Login options.
 
@@ -62,7 +62,7 @@ After successful login, you see the former lilac `Login` button change to a pink
 
 ---
 
-<img src="../img/ARCmanager_login_4.png" style="border: 1px solid  black;" />
+![](@images/arc-manager/arc-manager-login-4.png)
 
 **Fig. 6** Welcome screen after login. The presence of the pink `Logout` button is a useful indicator for showing that you are logged in.
 
@@ -76,7 +76,7 @@ When the timer reaches 0:00:00, your current session has expired. To initialize 
 
 ---
 
-<img src="../img/ARCmanager_sessiontimer.png" style="border: 1px solid  black;" />
+![](@images/arc-manager/arc-manager-sessiontimer.png)
 
 **Fig. 8** Session timer
 

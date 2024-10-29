@@ -20,7 +20,7 @@ When you left-click on an ISA file, the right side will open up and a form to ed
 
 ---
 
-<img src="../img/ARCmanager_addingmetadata_admin_meta.png" style="border: 1px solid  black;" />
+![](@images/arc-manager/arc-manager-addingmetadata-admin-meta.png)
 
 **Fig. 1** Default view of administrative metadata inside _isa.investigation.xlsx_ files displayed in the ARCmanager web application. (1) General information, (2) related publication information, (3) contact details of associated persons.
 
@@ -38,7 +38,7 @@ In assay metadata files (_isa.assay.xlsx_), it contains information about measur
 
 ---
 
-<img src="../img/ARCmanager_addingmetadata_assay_meta.png" style="border: 1px solid  black;" />
+![](@images/arc-manager/arc-manager-addingmetadata-assay-meta.png)
 
 **Fig. 2** Default view of top-level metadata sheet inside an _isa.assay.xlsx_ file displayed in ARCmanager.
 
@@ -66,7 +66,7 @@ To edit additional metadata entries not listed in the main view, you can click t
 
 ---
 
-<img src="../img/ARCmanager_addingmetadata_admin_alt.png" width="400" style="border: 1px solid  black;" />
+![](@images/arc-manager/arc-manager-addingmetadata-admin-alt.png)
 
 **Fig. 3** Alternative view of ISA file contents which can be used to edit additional fields not displayed in the default view. (1) General information, (2) related publication information, (3) contact details of associated persons.
 
@@ -78,7 +78,7 @@ To edit a metadata field, select it with a left-click. This will open a new inpu
 
 ---
 
-<img src="../img/ARCmanager_addingmetadata_alt_edit.png" style="border: 1px solid  black;" />
+![](@images/arc-manager/arc-manager-addingmetadata-alt-edit.png)
 
 **Fig. 4** Input field to add data to ISA files using the alternative view. The `+` button adds additional fields, while `SAVE` is used to apply changes to the ISA file.
 
@@ -105,7 +105,7 @@ Inside you have your ISA file as usual, but with the additional fields called `A
 
 ---
 
-<img src="../img/ARCmanager_addingmetadata_exp_select.png" style="border: 1px solid  black;" />
+![](@images/arc-manager/arc-manager-addingmetadata-exp-select.png)
 
 **Fig. 5** Buttons to add additional metadata sheets to ISA files and to access editing of existing sheets.
 
@@ -125,7 +125,7 @@ To add additional metadata sheets, click `ADD SHEET`. This will open up a list o
 
 ---
 
-<img src="../img/ARCmanager_addingmetadata_exp_template.png" width="300" style="border: 1px solid  black;" />
+![](@images/arc-manager/arc-manager-addingmetadata-exp-template.png" width="300)
 
 **Fig. 6** List of existing templates for annotation table sheets. Clicking on the template displays additional information. The `IMPORT` button loads the selected template into the metadata sheet.
 
@@ -149,7 +149,7 @@ After importing a template, you will see a table similar to the picture below. I
 
 ---
 
-<img src="../img/ARCmanager_addingmetadata_exp_swate_view.png" style="border: 1px solid  black;" />
+![](@images/arc-manager/arc-manager-addingmetadata-exp-swate-view.png)
 
 **Fig. 7** Metadata sheet editing view inside ARCmanager.
 
@@ -186,7 +186,7 @@ Clicking `Custom Column` will open up a different input field above with which y
 
 ---
 
-<img src="../img/ARCmanager_addingmetadata_exp_term_srch.png" width="500px" style="border: 1px solid  black;" />
+![](@images/arc-manager/arc-manager-addingmetadata-exp-term-srch.png)
 
 **Fig. 8** Ontology term look-up functions of the annotation table editing view in ARCmanager. (1) Access ontology term search function, (2) Get ontology term suggestions, (3) Search bar for finding specific terms.
 
@@ -198,7 +198,7 @@ Clicking the `GET SUGGESTIONS` button (Fig. 8, 2) will display a list of terms o
 
 ---
 
-<img src="../img/ARCmanager_addingmetadata_exp_term_selct.png" width="500px" style="border: 1px solid  black;" />
+![](@images/arc-manager/arc-manager-addingmetadata-exp-term-selct.png)
 
 **Fig. 9** List of suggested ontology terms related to "library strategy". (1) Ontology term and link to the corresponding ontology entry, (2) drop-down menu to choose annotation table row where the term will be added, (3) button to insert the selected term into the table.
 
@@ -212,7 +212,7 @@ By default, the term will be inserted into the first row of the corresponding co
 
 ---
 
-<img src="../img/ARCmanager_addingmetadata_exp_term_insrtd.png" width="500px" style="border: 1px solid  black;" />
+![](@images/arc-manager/arc-manager-addingmetadata-exp-term-insrtd.png)
 
 **Fig. 10** Additional columns with ontology term information will be displayed when unchecking the "Hide Terms" box.
 
@@ -234,7 +234,7 @@ By default, input columns have the type "Source Name" and output columns have th
 
 ---
 
-<img src="../img/ARCmanager_addingmetadata_exp_bb_add.png" width="500px" style="border: 1px solid  black;" />
+![](@images/arc-manager/arc-manager-addingmetadata-exp-bb-add.png)
 
 **Fig. 11** Interface for adding new building blocks to annotation table sheets. (1) Drop-down menu for selection of column type, (2) Ontology term search bar, (3) Check-box for adding a unit to a building block and search bar for unit terms.
 
