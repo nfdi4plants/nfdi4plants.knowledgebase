@@ -10,7 +10,7 @@ pagefind: false
 
 :::note[About this guide]
 
-DataPLANT provides the tool [Swate](/swate) to support you in data annotation. It is both integrated into [ARCitect](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html) and available as a [browser version](https://swate-alpha.nfdi4plants.org/).
+DataPLANT provides the tool [Swate](/swate) to support you in data annotation. It is both integrated into [ARCitect](/arcitect) and available as a [browser version](https://swate-alpha.nfdi4plants.org/).
 In this walk-through, we guide you through annotating data using [Swate](/swate) with a show-case example.
 :::
 
