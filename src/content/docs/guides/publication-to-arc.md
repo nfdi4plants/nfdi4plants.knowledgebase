@@ -15,7 +15,7 @@ This is not the typical entry into an ARC, but rather retrospective. It might ho
 This guide assumes you know
 - the concept of the [ARC](./../implementation/AnnotatedResearchContext.html)
 - the different [ISA file types](./isa_FileTypes.html)
-- which tools to use (e.g. [ARC Commander](./../ArcCommanderManual/index.html), [ARCitect](/arcitect), [DataHUB](./../DataHUB-Manual/index.html)) and how.
+- which tools to use (e.g. [ARC Commander](./../ArcCommanderManual/index.html), [ARCitect](/arcitect), [DataHUB](/datahub/index.html)) and how.
 :::
 
 
