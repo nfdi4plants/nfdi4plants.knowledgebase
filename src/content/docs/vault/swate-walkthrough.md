@@ -5,6 +5,7 @@ authors:
   - dominik-brilhaus
   - kevin-frey
   - stella-eggels
+pagefind: false
 ---
 
 :::note[About this guide]

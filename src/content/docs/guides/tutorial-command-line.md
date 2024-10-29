@@ -3,6 +3,8 @@ title: Command line
 authors:
   - dominik-brilhaus
 lastUpdated: 2023-03-16
+sidebar:
+  hidden: true
 ---
 
 Find the **command-line interface (CLI)** on your system.

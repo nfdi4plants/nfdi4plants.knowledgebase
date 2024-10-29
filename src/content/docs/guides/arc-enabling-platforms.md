@@ -5,33 +5,23 @@ authors:
   - dominik-brilhaus
 ---
 
-:::note[About this guide]
-In this guide we explore how the ARC can help streamline data flows and project management in enabling platforms.
-:::
-
-:::tip[Before we can start]
-It helps to be familiar with
-- the concept of the [ARC](./../implementation/AnnotatedResearchContext.html)
-- the different [ISA file types](./isa_FileTypes.html)
-- the [DataHUB](./../implementation/DataHub.html)
-:::
-
-:::note
-This guide can only stay at a very abstract level. Feel free to contact us to work out a suitable solution for your platform together.
-:::
-
+Here we explore how the ARC can help streamline data flows and project management in enabling platforms.
 
 ## Enabling Platforms
 
 Central *enabling platforms* can range from small single-lab services to large instrumentation-based research infrastructures such as core facilities. Platforms offer a specific set of methods and assays as a routine support to a community of researchers. Typical examples with application in plant sciences include platforms offering "omics" technologies (genome, transcriptome, proteome, metabolome), phenotyping, (microscopic) imaging, genetic engineering or plant growth facilities.
 
+:::note
+This guide can only stay at a very abstract level. Feel free to contact us to work out a suitable solution for your platform together.
+:::
+
 ## Project communication and data flow
+
+Central platforms interact with many versatile collaborators. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings and emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted.
 
 :::note
 For simplicity, in this guide we call researchers, clients and customers approaching the platform "collaborators".
 :::
-
-Central platforms interact with many versatile collaborators. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings and emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted.
 
 ### Project management
 
@@ -39,9 +29,9 @@ As a platform you manage a lot of projects in parallel. Keeping these projects u
 
 Here's a few tips to support your project management:
 
-- You can use the [wiki associated to the ARC](./../DataHUB-Manual/datahub-ARCWiki.html) to collect meeting minutes with your collaborators
-- You can use the [ARC's issue board](./../DataHUB-Manual/datahub-ARCPanel.html) to coordinate tasks between collaborators, team members, data analysts and others involved
-- You can use your established system of identifiers (e.g. for projects, samples) in [ISA metadata](./../guides/isa_FileTypes.html)
+- You can use the [wiki associated to the ARC](/datahub/datahub-arc-wiki) to collect meeting minutes with your collaborators
+- You can use the [ARC's issue board](/datahub/datahub-arc-panel) to coordinate tasks between collaborators, team members, data analysts and others involved
+- You can use your established system of identifiers (e.g. for projects, samples) in [ISA metadata](../../core-concepts/isa-file-types)
 - You can also keep naming your ARCs with the same way you are used to name your project folders
 
 ### Streamlined data exchange
@@ -59,9 +49,9 @@ Here's an idea what your data flow could look like with the ARC:
 
 A few tips to streamline your data exchange:
 
-- You can [use metadata templates](./../SwateManual/Docs05-Templates.html)
+- You can [use metadata templates](../../swate/templates)
   - to communicate with collaborators and team members, which metadata is crucial for specific assays
-- You can also store filled-out templates for your routine measurements as a reusable [JSON file](./../SwateManual/Docs06-ISA-JSON.html)
+- You can also store filled-out templates for your routine measurements as a reusable [JSON file](../../swate/json)
 
 ### Data storage, handling and transfer
 
@@ -69,16 +59,16 @@ Your platform produces a lot of valuable raw data. Depending on your setup and t
 
 The DataHUB can help as a platform to centralize data from different sources and function as a geo-redundant backup with tracked changes:
 
-- No matter where you work (office desktop, remote laptop, workstation), you can always sync your current state of the ARC via the [DataHUB](./../implementation/DataHub.html)
-- You can follow the evolution of a project via ARC's [version control](./../fundamentals/VersionControlGit.html)
+- No matter where you work (office desktop, remote laptop, workstation), you can always sync your current state of the ARC via the [DataHUB](../../datahub/)
+- You can follow the evolution of a project via ARC's [version control](../../fundamentals/version-control-git)
 
 ### Track changes and provenance
 
 Different people are involved in the projects passing your platform. From team members to internal and external collaboration partners (collaborators). This makes it sometimes hard to keep track of who contributed how, what, when, why and to manage who needs access to which data.
 
-- The [DataHUB](./../implementation/DataHub.html) facilitates access management across institute boarders
-- ARCs document [changes and contributions](./../fundamentals/VersionControlGit.html)
-- The [ISA metadata model](./isa_FileTypes.html) allows to associate contributors with investigations and studies. List your team members to ensure proper credit for their contributions
+- The [DataHUB](../../datahub/) facilitates access management across institute boarders
+- ARCs document [changes and contributions](../../fundamentals/version-control-git)
+- The [ISA metadata model](../../core-concepts/isa-file-types) allows to associate contributors with investigations and studies. List your team members to ensure proper credit for their contributions
 
 ### Routine computations
 
@@ -87,7 +77,7 @@ Reusing computational workflows across projects helps comprehensibility for your
 
 The standardized ARC structure helps with routine computations:
 
-- The ARC's simple [directory structure](./../implementation/AnnotatedResearchContext.html) itself helps building routines, no matter whether you work with code or licensed software. Across projects, you and your collaborators know, where to find metadata and raw data, where to store processed data and results.
+- The ARC's simple [directory structure](../../core-concepts/arc) itself helps building routines, no matter whether you work with code or licensed software. Across projects, you and your collaborators know, where to find metadata and raw data, where to store processed data and results.
 - The ARC facilitates task automation such as quality control and validation within one project or across multiple ARCs covering routine measurements
 - Code-based computations can be designed as reusable and reproducible workflows using [Common Workflow Language (CWL)](./ComputationalWorkflows/index.html)
 

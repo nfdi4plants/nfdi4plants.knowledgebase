@@ -15,11 +15,3 @@
 - [] `swate-alpha-add-template.png` is not dark mode compatible
 - [] Adapt image size of small images e.g. http://localhost:4321/datahub/datahub-overview/
 
-
-
-
-
-## Core concept
-
-- [ ] ISA file types and how they are connected
-- [ ] ISA annotation principles

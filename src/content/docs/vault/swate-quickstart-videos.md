@@ -5,6 +5,7 @@ authors:
   - martin-kuhl
   - stella-eggels
   - david-zimmer
+pagefind: false 
 ---
 
 :::note[About this guide]

@@ -4,6 +4,7 @@ lastUpdated: 2024-04-18
 authors:
   - martin-kuhl
   - stella-eggels
+pagefind: false 
 ---
 
 :::note[About this guide]

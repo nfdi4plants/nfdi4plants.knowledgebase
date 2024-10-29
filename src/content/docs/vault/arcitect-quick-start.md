@@ -5,7 +5,7 @@ authors:
   - dominik-brilhaus
   - sabrina-zander
   - stella-eggels
-status: draft
+pagefind: false 
 ---
 
 <style>
