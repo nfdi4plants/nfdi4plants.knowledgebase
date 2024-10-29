@@ -8,7 +8,7 @@ pagefind: false
 
 ## About this guide
 
-In this guide we focus on how to use the [ARC Commander](./../implementation/ArcCommander.html) to create your ARC and structure, store and share your data.
+In this guide we focus on how to use the [ARC Commander](/arc-commander) to create your ARC and structure, store and share your data.
 
 ## Before we can start
 

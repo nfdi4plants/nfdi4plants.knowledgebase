@@ -22,14 +22,14 @@ pagefind: false
 
 ## About this guide
 
-In this guide we focus on how to use the [ARCitect](./../ARCitect-Manual/index.html) to create your ARC and structure, store and share your data.
+In this guide we focus on how to use the [ARCitect](/arcitect) to create your ARC and structure, store and share your data.
 ---
 
 ## Before we can start
 
 Please make sure
 
-☑️ The latest version of the [ARCitect](./../ARCitect-Manual/index.html) is installed on your computer  
+☑️ The latest version of the [ARCitect](/arcitect) is installed on your computer  
 ☑️ You have a [DataPLANT](https://register.nfdi4plants.org) account  
 💡 Consider reading about the [ARC](./../implementation/AnnotatedResearchContext.html)  
 

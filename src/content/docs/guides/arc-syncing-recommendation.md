@@ -6,11 +6,11 @@ authors:
 ---
 
 :::note[About this guide]
-In this guide we elaborate recommendations on syncing your ARC via the [ARC Commander](./../implementation/ArcCommander.html)
+In this guide we elaborate recommendations on syncing your ARC via the [ARC Commander](/arc-commander)
 :::
 
 :::tip[Before we can start]
-- You have created an ARC before using the [ARC Commander](./../implementation/ArcCommander.html)  
+- You have created an ARC before using the [ARC Commander](/arc-commander)  
 - The latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) is installed on your computer  
 - You have a [DataPLANT](https://register.nfdi4plants.org) account  
 - Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via personal access token
