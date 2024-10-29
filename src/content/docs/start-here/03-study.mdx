@@ -165,17 +165,35 @@ You can reference the protocol in the annotation table to draw a link between th
       `Input[Source Name]` | `ProtocolREF` | `Output[Sample Name]`
       -------------------- |  --------------------   |  --------------------
       Cold1                |  protocols/growth_protocol.md | Cold1_leaf
+      Cold2                |                               | Cold2_leaf
+      Cold3                |                               | Cold3_leaf
+      RT1                  |                               | RT1_leaf
+      RT2                  |                               | RT2_leaf
+      RT3                  |                               | RT3_leaf
+ 
+      <ViolaSays>
+
+      Is there a possibility to fill the complete column with the protocol reference? 
+           
+      </ViolaSays>
+
+  1. To fill the complete column with the same value, right-click on a cell and select `Fill Column`. 
+
+      `Input[Source Name]` | `ProtocolREF` | `Output[Sample Name]`
+      -------------------- |  --------------------   |  --------------------
+      Cold1                |  protocols/growth_protocol.md | Cold1_leaf
       Cold2                |  protocols/growth_protocol.md | Cold2_leaf
       Cold3                |  protocols/growth_protocol.md | Cold3_leaf
       RT1                  |  protocols/growth_protocol.md | RT1_leaf
       RT2                  |  protocols/growth_protocol.md | RT2_leaf
       RT3                  |  protocols/growth_protocol.md | RT3_leaf
+ 
+   </Steps>
 
-  </Steps>
 </Card>
 
 :::tip
-While it is recommended to store the protocol in an open format (`.md`, `.txt`, `.docx`, …), everything is possible also an URI to an electronic lab notebook.
+While it is recommended to store the protocol in an open format (`.md`, `.txt`, `.docx`, …), everything is possible also an URL to an electronic lab notebook.
 :::
 
 ## From free-text protocol to structured metadata
@@ -235,8 +253,8 @@ import XY from "@images/start-here/arc-prototypic-metadata.svg"
   <Steps>
 
   1. On top of the annotation table, open the `Add Building Block` widget
-  1. From the dropdown menu select `Characteristic` and click <btn>Add Column</btn> 
-    
+  1. From the dropdown menu select `Characteristic` 
+
       <ViolaSays>
         I worked on *Arabidopsis thaliana* plants
       </ViolaSays>
@@ -244,7 +262,7 @@ import XY from "@images/start-here/arc-prototypic-metadata.svg"
   1. Enter `organism` in the search bar. This search looks for suitable *terms* in the *ontology* database.
   1. Select the Term with the id `OBI:0100026` and click <btn>Add Column</btn>
   1. In the table, insert values by selecting any cell below `Characteristic [organism]`
-  1. Search for Arabidopsis thaliana and select a suitable hit
+  1. Search for Arabidopsis thaliana, select a suitable hit and again fill the complete column with right-click on a cell and select `Fill Column`
 
       `Input[Source Name]` | `Characteristic [organism]` | `Output[Sample Name]`
       -------------------- |  --------------------   |  --------------------
@@ -255,18 +273,7 @@ import XY from "@images/start-here/arc-prototypic-metadata.svg"
       RT2                  |                        | RT2_leaf
       RT3                  |                        | RT3_leaf
 
-  3. To fill the complete column with the same value, right-click on a cell and select `Fill Column`
-
-      `Input[Source Name]` | `Characteristic [organism]` | `Output[Sample Name]`
-      -------------------- |  --------------------       |  --------------------
-      Cold1                |  Arabidopsis thaliana       | Cold1_leaf
-      Cold2                |  Arabidopsis thaliana       | Cold2_leaf
-      Cold3                |  Arabidopsis thaliana       | Cold3_leaf
-      RT1                  |  Arabidopsis thaliana       | RT1_leaf
-      RT2                  |  Arabidopsis thaliana       | RT2_leaf
-      RT3                  |  Arabidopsis thaliana       | RT3_leaf
-
-      <ViolaSays>
+        <ViolaSays>
         Great, I've got this! 
         
         Now I can add building blocks for the characteristics "tissue" and "growth medium" and enter the values "leaf" and "hydroponic plant culture media", respectively.
@@ -364,7 +371,7 @@ import XY from "@images/start-here/arc-prototypic-metadata.svg"
         :::
 
         :::tip
-        go to OLS
+        go to OLS (https://www.ebi.ac.uk/ols4)
         :::
 
   </Steps>
