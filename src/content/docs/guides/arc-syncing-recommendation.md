@@ -3,14 +3,18 @@ title: Syncing recommendation
 lastUpdated: 2023-06-27
 authors:
   - dominik-brilhaus
+sidebar:
+  badge:
+    text: wip
+    variant: note
 ---
 
 :::note[About this guide]
-In this guide we elaborate recommendations on syncing your ARC via the [ARC Commander](./../implementation/ArcCommander.html)
+In this guide we elaborate recommendations on syncing your ARC via the [ARC Commander](/arc-commander)
 :::
 
 :::tip[Before we can start]
-- You have created an ARC before using the [ARC Commander](./../implementation/ArcCommander.html)  
+- You have created an ARC before using the [ARC Commander](/arc-commander)  
 - The latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) is installed on your computer  
 - You have a [DataPLANT](https://register.nfdi4plants.org) account  
 - Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via personal access token
@@ -26,7 +30,7 @@ In the DataHUB, the individual sync steps are called "commit".
 
 ## Add a message to communicate your ARC's evolution
 
-We recommend [adding a message](./../ArcCommanderManual/arc_synchronization.html) that shortly summarizes, what you did since you last synced your ARC.
+We recommend [adding a message](/arc-commander/synchronization) that shortly summarizes, what you did since you last synced your ARC.
 
 The following exemplifies adding commit messages via the ARC commander. The same function is provided by the ARCitect via the "Commit" menu.
 

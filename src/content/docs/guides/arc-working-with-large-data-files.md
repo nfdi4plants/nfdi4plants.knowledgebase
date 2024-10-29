@@ -3,18 +3,22 @@ title: Working with large data files
 lastUpdated: 2023-12-05
 authors:
   - dominik-brilhaus
+sidebar:
+  badge:
+    text: wip
+    variant: note
 ---
 
 :::note[About this guide]
-In this guide we show you how you can actively handle large data files in your ARC using **[ARC Commander](./../implementation/ArcCommander.html)**.
+In this guide we show you how you can actively handle large data files in your ARC using **[ARC Commander](/arc-commander)**.
 :::
 
 :::tip
-If you use **[ARCitect](./../ARCitect-Manual/index.html)** to manage your ARCs, make sure to select or unselect the boxes `LFS` (in the "Download ARC" panel) or `Download LFS Files` (in the "Versions" panel) in order to allow or prevent syncing large files (LFS = large file storage).
+If you use **[ARCitect](/arcitect)** to manage your ARCs, make sure to select or unselect the boxes `LFS` (in the "Download ARC" panel) or `Download LFS Files` (in the "Versions" panel) in order to allow or prevent syncing large files (LFS = large file storage).
 :::
 
 :::tip[Before we can start]
-- You have created an ARC before using the [ARCitect](./../ARCitect-Manual/index.html) or [ARC Commander](./../implementation/ArcCommander.html)  
+- You have created an ARC before using the [ARCitect](/arcitect) or [ARC Commander](/arc-commander)  
 - You have a [DataPLANT](https://register.nfdi4plants.org) account  
 - Your computer is linked to the [DataHUB](https://git.nfdi4plants.org) via personal access token
 :::
@@ -22,7 +26,6 @@ If you use **[ARCitect](./../ARCitect-Manual/index.html)** to manage your ARCs, 
 ## Large File Storage (LFS)
 
 ARCs and the DataHUB come with a mechanism to sync and store large files called *Large File Storage (LFS)*. LFS is an efficient way to store your large data files. These files are called "LFS objects". Rather than checking every file during every `arc sync` (ARC Commander) or DataHUB Sync (ARCitect), the tools first check *whether there was a change at all*. And only if this is the case, it scans *what* was changed. This way it saves time and computing power compared to always scanning all large files for possible changes.
-
 
 <!-- TODO: Explain concept here and move instructions to ARCitect and ARC Commander manual -->
 
@@ -141,4 +144,5 @@ git lfs pull --include "*"
 #### Checking usage quota of LFS
 
 If at some point you would like to check how much free storage you have for your ARC, you can easily do so by navigating to your ARC in the DataHUB and clicking on "Project Storage" in the right sidebar (1).
+
 ![](@images/guides/arcitect-lfs-project-storage.drawio.png)

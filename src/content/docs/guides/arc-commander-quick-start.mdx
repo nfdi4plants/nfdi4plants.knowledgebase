@@ -2,20 +2,23 @@
 title: ARC Commander QuickStart
 authors:
   - martin-kuhl
+  - dominik-brilhaus
 lastUpdated: 2023-06-09
-pagefind: false 
 ---
+
+import NewARC from '@components/mdx/NewARC.mdx'
+
 
 ## About this guide
 
-In this guide we focus on how to use the [ARC Commander](./../implementation/ArcCommander.html) to create your ARC and structure, store and share your data.
+In this guide we focus on how to use the [ARC Commander](/arc-commander) to create your ARC and structure, store and share your data.
 
 ## Before we can start
 
-☑️ Please [install ARC Commander](./../ArcCommanderManual/index-setup.html)  
+☑️ Please [install ARC Commander](/arc-commander/installation  
 ☑️ Find <a href="./tutorial_TheCommandLine.html" target="_blank">the command line    </a> on your system  
-💡 Consider reading about [ARC](./../implementation/AnnotatedResearchContext.html) and the [ARC Commander](./../implementation/ArcCommander.html)  
-💡 After concluding this quickstart, consider exploring the [ARC Commander manual](./../ArcCommanderManual/index.html) for a more detailed usage instruction.
+💡 Consider reading about [ARC](/core-concepts/arc) and the [ARC Commander](/arc-commander)  
+💡 After concluding this quickstart, consider exploring the [ARC Commander manual](/arc-commander) for a more detailed usage instruction.
 
 ## ARC initialization
 
@@ -34,9 +37,8 @@ arc init
 
 3. This will create the general ARC folder structure:
 
-![arc init](@images/arc-commander/arc-commander-init.png)
+<NewARC />
 
-<div style="page-break-after: always;"></div>
 
 ## Adding metadata
 
@@ -191,6 +193,4 @@ Briefly:
 - *Maintainers:* Gives the person the same rights as you have (except of removing you from your own project). This is recommended for inviting PIs or group leaders allowing them to add their group members for data upload or analysis to the project as well.
 
 
-> 💡 After concluding this quickstart, you might want to explore the [ARC Commander manual](./../ArcCommanderManual/index.html) for a more detailed usage instruction.
-
-[kb-ARC_Commander-Manual-Installation]: ./../ArcCommanderManual/arc_installation.html "ARC Commander Installation"
+> 💡 After concluding this quickstart, you might want to explore the [ARC Commander manual](/arc-commander) for a more detailed usage instruction.
