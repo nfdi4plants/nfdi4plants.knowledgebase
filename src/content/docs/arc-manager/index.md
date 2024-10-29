@@ -3,6 +3,8 @@ title: ARCmanager manual
 authors:
   - alexander-kirbis
 lastUpdated: 2024-07-25
+sidebar:
+  order: 0
 ---
 
 Welcome to the ARCmanager manual!

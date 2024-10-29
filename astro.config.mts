@@ -54,6 +54,12 @@ const SidebarConfig = [
     autogenerate: { directory: 'arc-commander' },
   },
   {
+    label: 'ARCmanager',
+    // Collapse the group by default.
+    collapsed: true,
+    autogenerate: { directory: 'arc-manager' },
+  },
+  {
     label: 'Swate',
     // Collapse the group by default.
     collapsed: true,
