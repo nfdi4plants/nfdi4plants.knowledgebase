@@ -1,0 +1,4 @@
+[submodule "nfdi4plants.knowledgebase"]
+	path = nfdi4plants.knowledgebase
+	url = https://github.com/nfdi4plants/nfdi4plants.knowledgebase/
+	branch = starlight
