@@ -8,7 +8,7 @@ sidebar:
   order: 5
 ---
 
-To open your ARC's settings click on *Settings* in the sidebar of your [ARC panel](../datahub-arc-panel).
+To open your ARC's settings click on *Settings* in the sidebar of your [ARC panel](/datahub/datahub-arc-panel).
 
 ![](@images/datahub/datahub-arc-settings.drawio.png)
 

@@ -13,9 +13,7 @@ Members, groups, and roles set via the DataHUB can easily be confused with contr
 
 ### ARC members in the DataHUB are not the same as ARC contacts in ISA metadata
 
-<!-- TODO dead link isa file types -->
-
-Data in the ARC can be annotated with metadata. Metadata annotation in the ARC is based on the [ISA metadata model](./isa_FileTypes.html) and includes several points to add the the contributors to the overall investigation (&rarr; "Investigation Contacts"), one linked study (&rarr; "Study Contacts" of that study), or one linked assay (&rarr; "Assay Performers" of that assay). For all three types of contributors, contact information (e.g. first and last name, affiliation,ORCID, email) can be added.
+Data in the ARC can be annotated with metadata. Metadata annotation in the ARC is based on the [ISA metadata model](/core-concepts/isa-file-types) and includes several points to add the the contributors to the overall investigation (&rarr; "Investigation Contacts"), one linked study (&rarr; "Study Contacts" of that study), or one linked assay (&rarr; "Assay Performers" of that assay). For all three types of contributors, contact information (e.g. first and last name, affiliation, ORCID, email) can be added.
 
 Although the contacts added to the ARC's metadata may be the same persons as those added as members to the ARC in the DataHUB, there is currently no automation involved:
 

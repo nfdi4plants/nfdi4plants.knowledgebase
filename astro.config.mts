@@ -8,66 +8,6 @@ import starlightLinksValidator from 'starlight-links-validator'
 import starlightImageZoom from 'starlight-image-zoom'
 import icon from "astro-icon";
 
-const SidebarConfig = [
-  {
-    label: 'Start Here',
-    badge: {text: 'NEW!', variant: 'tip' }, 
-    autogenerate: { directory: 'start-here' },
-  },
-  {
-    label: 'Core Concepts',
-    autogenerate: { directory: 'core-concepts' },
-  },
-  {
-    label: 'Guides',
-    collapsed: true,
-    autogenerate: { directory: 'guides' },
-  },
-  {
-    label: 'Fundamentals',
-    // Collapse the group by default.
-    collapsed: true,
-    autogenerate: { directory: 'fundamentals' },
-  },
-  {
-    label: 'ARCitect',
-    // Collapse the group by default.
-    collapsed: true,
-    autogenerate: { directory: 'arcitect' },
-  },
-  {
-    label: 'ARC Validation',
-    // Collapse the group by default.
-    collapsed: true,
-    autogenerate: { directory: 'arc-validation' },
-  },
-  {
-    label: 'DataHUB',
-    // Collapse the group by default.
-    collapsed: true,
-    autogenerate: { directory: 'datahub' },
-  },
-  {
-    label: 'ARC Commander',
-    // Collapse the group by default.
-    collapsed: true,
-    autogenerate: { directory: 'arc-commander' },
-  },
-  {
-    label: 'Swate',
-    // Collapse the group by default.
-    collapsed: true,
-    autogenerate: { directory: 'swate' },
-  },
-   {
-    label: 'Vault',
-    // Collapse the group by default.
-    collapsed: true,
-    badge: {text: 'outdated', variant: 'note'}, 
-    autogenerate: { directory: 'vault' },
-  },
-]
-
 // https://astro.build/config
 export default defineConfig({
   integrations: [
@@ -94,7 +34,65 @@ export default defineConfig({
         starlightLinksValidator(),
         starlightImageZoom(),
       ],
-      sidebar: SidebarConfig,
+      sidebar: [
+        {
+          label: 'Start Here',
+          badge: { text: 'New!', variant: 'tip' }, 
+          autogenerate: { directory: 'start-here' },
+        },
+        {
+          label: 'Core Concepts',
+          autogenerate: { directory: 'core-concepts' },
+        },
+        {
+          label: 'Guides',
+          collapsed: true,
+          autogenerate: { directory: 'guides' },
+        },
+        {
+          label: 'Fundamentals',
+          // Collapse the group by default.
+          collapsed: true,
+          autogenerate: { directory: 'fundamentals' },
+        },
+        {
+          label: 'ARCitect',
+          // Collapse the group by default.
+          collapsed: true,
+          autogenerate: { directory: 'arcitect' },
+        },
+        {
+          label: 'ARC Validation',
+          // Collapse the group by default.
+          collapsed: true,
+          autogenerate: { directory: 'arc-validation' },
+        },
+        {
+          label: 'DataHUB',
+          // Collapse the group by default.
+          collapsed: true,
+          autogenerate: { directory: 'datahub' },
+        },
+        {
+          label: 'ARC Commander',
+          // Collapse the group by default.
+          collapsed: true,
+          autogenerate: { directory: 'arc-commander' },
+        },
+        {
+          label: 'Swate',
+          // Collapse the group by default.
+          collapsed: true,
+          autogenerate: { directory: 'swate' },
+        },
+        {
+          label: 'Vault',
+          // Collapse the group by default.
+          collapsed: true,
+          badge: {text: 'Outdated', variant: 'note'}, 
+          autogenerate: { directory: 'vault' },
+        },
+      ],
       expressiveCode: {
         defaultProps: {
           // Enable wrap for specific languages

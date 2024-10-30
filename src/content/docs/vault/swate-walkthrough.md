@@ -10,17 +10,17 @@ pagefind: false
 
 :::note[About this guide]
 
-DataPLANT provides the tool [Swate](../../docs/implementation/swate) to support you in data annotation. It is both integrated into [ARCitect](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html) and available as a [browser version](https://swate-alpha.nfdi4plants.org/).
-In this walk-through, we guide you through annotating data using [Swate](../../docs/implementation/swate) with a show-case example.
+DataPLANT provides the tool [Swate](/swate) to support you in data annotation. It is both integrated into [ARCitect](/arcitect) and available as a [browser version](https://swate-alpha.nfdi4plants.org/).
+In this walk-through, we guide you through annotating data using [Swate](/swate) with a show-case example.
 :::
 
 
 :::tip[Before we can start]
 
-Consider reading about [Swate](../../docs/implementation/swate)
+Consider reading about [Swate](/swate)
 :::
 
-Create and/or open an annotation table as described in the [Swate QuickStart](../swate-quickstart)
+Create and/or open an annotation table as described in the [Swate QuickStart](/vault/swate-quickstart)
 
 ## Swate Overview
 
@@ -75,4 +75,4 @@ If there are any building blocks which do not fit your experiment you can delete
 
 ## Your ISA table is ready to fill 🎉
 
-Go ahead, adjust the building blocks you want to use to describe your experiment as you see fit. Insert values for *Input* and *Output* and fill the cells of your *Parameter*, *Characteristic* or *Component* columns using the ontology term search. You can activate the ontology term search directly in the cells of your table with the magnifying glass symbol or you can use the "Ontology term search" in the side bar. Instructions for annotating your data can also be found in the [Swate QuickStart](../swate-quickstart) and in the Swate Manual ([Filling cells with ontology terms](../term-search)).
+Go ahead, adjust the building blocks you want to use to describe your experiment as you see fit. Insert values for *Input* and *Output* and fill the cells of your *Parameter*, *Characteristic* or *Component* columns using the ontology term search. You can activate the ontology term search directly in the cells of your table with the magnifying glass symbol or you can use the "Ontology term search" in the side bar. Instructions for annotating your data can also be found in the [Swate QuickStart](/vault/swate-quickstart) and in the Swate Manual ([Filling cells with ontology terms](/swate/term-search)).

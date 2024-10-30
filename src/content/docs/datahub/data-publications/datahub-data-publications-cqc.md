@@ -5,11 +5,11 @@ authors:
   - kevin-schneider
 ---
 
-_**Note:** All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](../../arc-validation/validation-packages) to learn how to opt-in._
+_**Note:** All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](/arc-validation/validation-packages) to learn how to opt-in._
 
 Continuous Quality Control (**CQC**) is a process that ensures the quality of the metadata of an ARC meets certain standards.
 
-Read more about the general CQC process [here](../../arc-validation/validation-packages).
+Read more about the general CQC process [here](/arc-validation/validation-packages).
 
 in short the CQC pipeline is performed on each commit to an ARC, and the results of each step (e.g., validation against a user-selected validation package) are displayed on the ARC homepage:
 
@@ -18,7 +18,7 @@ in short the CQC pipeline is performed on each commit to an ARC, and the results
 ![](@images/data-publications/cqc-results.png)
 
 - **(1)**: The _pipeline badge_ indicates wether all steps of CQC have passed, or if there are any failures.
-- **(2)**: The _publish button_ is used to submit the ARC to the ARChive via [ARChigator](../datahub-data-publications-archigator). Note that ARCs that fail CQC are not eligible for publication.
+- **(2)**: The _publish button_ is used to submit the ARC to the ARChive via [ARChigator](/datahub/data-publications/datahub-data-publications-archigator). Note that ARCs that fail CQC are not eligible for publication.
 - **(3)**: The _arc quality badge_ indicates the overall metadata quality of the ARC. This is calculated based on the results of the CQC pipeline, and signifies how many of the performed tests have passed. The badge is color-coded, and the color indicates the quality of the ARC.
 
 For more details, you can click on the pipeline badge **(1)**, and investigate the steps of the CQC pipeline details:
@@ -52,7 +52,7 @@ Clicking on **(7)** will open the CQC pipeline, where each step can be viewed in
 
 ## Starting the publication process
 
-To start the publication process, first make sure to install the [invenio validation package](https://avpr.nfdi4plants.org/package/invenio). Clicking on the _publish button_ **(2)** on the ARC homepage will start the publication process. Refer to the [ARChigator guide](../datahub-data-publications-archigator) for more information on the publication process.
+To start the publication process, first make sure to install the [invenio validation package](https://avpr.nfdi4plants.org/package/invenio). Clicking on the _publish button_ **(2)** on the ARC homepage will start the publication process. Refer to the [ARChigator guide](/datahub/data-publications/datahub-data-publications-archigator) for more information on the publication process.
 
 ## What to do when the CQC pipeline fails?
 

@@ -5,7 +5,7 @@ authors:
   - kevin-schneider
 ---
 
-_**Note:** All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](../../arc-validation/validation-packages) to learn how to opt-in._
+_**Note:** All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](/arc-validation/validation-packages) to learn how to opt-in._
 
 # Track your publication status
 

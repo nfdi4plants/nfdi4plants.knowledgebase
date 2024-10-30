@@ -8,11 +8,11 @@ pagefind: false
 
 ## About this guide
 
-In this guide we focus on how to use the [ARC Commander](./../implementation/ArcCommander.html) to create your ARC and structure, store and share your data.
+In this guide we focus on how to use the [ARC Commander](/arc-commander) to create your ARC and structure, store and share your data.
 
 ## Before we can start
 
-☑️ You know how to use a <a href="./tutorial_TheCommandLine.html" target="_blank">command line</a>  
+☑️ You know how to use a command line
 ☑️ You have created an ARC before  
 ☑️ The latest version of the [ARC Commander](https://github.com/nfdi4plants/arcCommander/releases) is installed on your computer  
 ☑️ You have a [DataPLANT](https://register.nfdi4plants.org) account  
