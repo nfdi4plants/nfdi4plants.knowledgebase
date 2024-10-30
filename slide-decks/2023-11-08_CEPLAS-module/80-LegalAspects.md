@@ -19,7 +19,7 @@ author:
 
 # Different laws touched by RDM
 
-![w:700](././../../img/Hartmann_TerraIncognita-Forschungsdaten-RechtlicheHeimat.png)
+![w:700](././../../images/Hartmann_TerraIncognita-Forschungsdaten-RechtlicheHeimat.png)
 
 <span class="footer-reference">Hartmann, Thomas. (2019). Rechtsfragen: Institutioneller Rahmen und Handlungsoptionen für universitäres FDM. Zenodo. https://doi.org/10.5281/zenodo.2654306</span>
 
@@ -49,7 +49,7 @@ author:
 
 Check out: https://creativecommons.org/about/cclicenses/
 
-![w:400](././../../img/creative_commons_brochure.png)
+![w:400](././../../images/creative_commons_brochure.png)
 
 <span class="footer-reference">adapted from https://wiki.creativecommons.org/images/0/01/6licenses-folded.pdf</span>
 
@@ -87,7 +87,7 @@ Check out: https://creativecommons.org/about/cclicenses/
 ---
 
 # Research Data policies
-![w:500](./../../img/Forschungsdaten-Policy-Kit-Abb2.png)
+![w:500](./../../images/Forschungsdaten-Policy-Kit-Abb2.png)
 
 
 <span class="footer-reference">Hiemenz, Bea & Kuberek, Monika (2018) http://dx.doi.org/10.14279/depositonce-7521</span>

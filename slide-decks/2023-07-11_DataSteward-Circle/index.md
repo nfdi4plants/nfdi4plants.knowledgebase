@@ -11,7 +11,7 @@ Please feel free to <a href="javascript:location='mailto:\u0069\u006e\u0066\u006
 
 <iframe src="./00-kickoff.html" style="height:225px; width:400px;" ></iframe>
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/logos/CreativeCommons/by.svg" style="height:15px"></a> [CEPLAS](https://ceplas.eu), [DataPLANT](https://nfdi4plants.org/)  📆 July 11th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/images/logos/CreativeCommons/by.svg" style="height:15px"></a> [CEPLAS](https://ceplas.eu), [DataPLANT](https://nfdi4plants.org/)  📆 July 11th, 2023
 
 <hr>
 
@@ -19,7 +19,7 @@ Please feel free to <a href="javascript:location='mailto:\u0069\u006e\u0066\u006
 
 <iframe src="./01-DataPLANT-contribution.html" style="height:225px; width:400px;" ></iframe>
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/logos/CreativeCommons/by.svg" style="height:15px"></a> [CEPLAS](https://ceplas.eu), [DataPLANT](https://nfdi4plants.org/)  📆 July 11th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/images/logos/CreativeCommons/by.svg" style="height:15px"></a> [CEPLAS](https://ceplas.eu), [DataPLANT](https://nfdi4plants.org/)  📆 July 11th, 2023
 
 <hr>
 

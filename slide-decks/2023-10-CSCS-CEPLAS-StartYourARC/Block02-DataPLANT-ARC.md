@@ -26,7 +26,7 @@ Dominik Brilhaus, [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-s
 
 # DataPLANT &ndash; <br>The NFDI4Plants
 
-![bg right:50% width:500px](./../../img/DataPLANT_TaskAreas.svg)
+![bg right:50% width:500px](./../../images/DataPLANT_TaskAreas.svg)
 
 - NFDI: "Nationale Forschungsdaten Infrastruktur" &ndash; [www.nfdi.de](https://www.nfdi.de/)
 - Funded since end of 2020
@@ -41,79 +41,79 @@ Dominik Brilhaus, [CEPLAS Data Science](https://www.ceplas.eu/en/research/data-s
 
 # Annotated Research Context (ARC)
 
-![width:950](./../../img/ARC_DataCentricIntegration_img1.png)
+![width:950](./../../images/ARC_DataCentricIntegration_img1.png)
 
 ---
 
-![left h:640](./../../img/User_Challenges_002.svg)
+![left h:640](./../../images/User_Challenges_002.svg)
 
 ---
 
-![bg cover](./../../img/DataPLANT_BigPicture_seq1.png)
+![bg cover](./../../images/DataPLANT_BigPicture_seq1.png)
 
 ---
 
-![bg cover](./../../img/DataPLANT_BigPicture_seq2.png)
+![bg cover](./../../images/DataPLANT_BigPicture_seq2.png)
 
 ---
 
-![bg cover](./../../img/DataPLANT_BigPicture_seq3.png)
+![bg cover](./../../images/DataPLANT_BigPicture_seq3.png)
 
 ---
 
-![bg cover](./../../img/DataPLANT_BigPicture_seq4.png)
+![bg cover](./../../images/DataPLANT_BigPicture_seq4.png)
 
 ---
 
-![bg cover](./../../img/DataPLANT_BigPicture_seq5.png)
+![bg cover](./../../images/DataPLANT_BigPicture_seq5.png)
 
 ---
 
-![bg cover](./../../img/DataPLANT_BigPicture_seq6.png)
+![bg cover](./../../images/DataPLANT_BigPicture_seq6.png)
 
 ---
 
-![bg cover](./../../img/DataPLANT_BigPicture_seq7.png)
+![bg cover](./../../images/DataPLANT_BigPicture_seq7.png)
 
 ---
 
-![bg cover](./../../img/DataPLANT_BigPicture_seq8.png)
-
----
-
-# What does an ARC look like?
-
-![width:950](./../../img/ARC_fillWithData_seq1.png)
+![bg cover](./../../images/DataPLANT_BigPicture_seq8.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../img/ARC_fillWithData_seq2.png)
+![width:950](./../../images/ARC_fillWithData_seq1.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../img/ARC_fillWithData_seq3.png)
+![width:950](./../../images/ARC_fillWithData_seq2.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../img/ARC_fillWithData_seq4.png)
+![width:950](./../../images/ARC_fillWithData_seq3.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../img/ARC_fillWithData_seq5.png)
+![width:950](./../../images/ARC_fillWithData_seq4.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../img/ARC_fillWithData_seq6.png)
+![width:950](./../../images/ARC_fillWithData_seq5.png)
+
+---
+
+# What does an ARC look like?
+
+![width:950](./../../images/ARC_fillWithData_seq6.png)
 
 ---
 

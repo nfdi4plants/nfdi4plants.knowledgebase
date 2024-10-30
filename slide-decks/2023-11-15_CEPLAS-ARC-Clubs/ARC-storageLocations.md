@@ -17,13 +17,13 @@ author:
 
 # ARC storage and sharing
 
-![](./../../img/ARC-storageLocations-withNotes.drawio.png)
+![](./../../images/ARC-storageLocations-withNotes.drawio.png)
 
 ---
 
 # ARC storage and sharing
 
-![w:600](./../../img/ARC-storageLocations-withNotes.drawio.png)
+![w:600](./../../images/ARC-storageLocations-withNotes.drawio.png)
 
 - DataHUB as "ground truth" / original clone
 - You can sync and communicate all changes to your ARC via the DataHUB

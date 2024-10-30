@@ -21,7 +21,7 @@ date: 2023-11-09
 
 # Spot the PIDs
 
-![w:900](././../../img/exercise_PIDs_img1.png)
+![w:900](././../../images/exercise_PIDs_img1.png)
 
 <span class="footer-reference"> https://doi.org/10.1093/plcell/koab243</span>
 
@@ -34,7 +34,7 @@ date: 2023-11-09
 - Diminish “dead links”
 - Cope with name changes
 
-![bg right width:500](././../../img/pid_collage.drawio.svg)
+![bg right width:500](././../../images/pid_collage.drawio.svg)
 
 ---
 
@@ -133,7 +133,7 @@ Domain-specific >> Generic >> Institutional
 
 # Generic data repositories
 
-![bg right:40% width:400](./../../img/repositories_genericRepos_collage.drawio.svg)
+![bg right:40% width:400](./../../images/repositories_genericRepos_collage.drawio.svg)
 
 **Good**
 
@@ -161,16 +161,16 @@ object-position: 100% 80%;
 }
 </style>
 
-![](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/ARC_Repository03_img1.png)
+![](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/ARC_Repository03_img1.png)
 
 ---
 
 # Moving from paper to data publications
 
-![w:400px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/DataPLANT_LandingPage_Mission.svg)
+![w:400px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/DataPLANT_LandingPage_Mission.svg)
 
 <!-- 
-![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/FAIRData_ClassicalPublication.svg)
+![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/FAIRData_ClassicalPublication.svg)
 
 --- -->
 
@@ -178,21 +178,21 @@ object-position: 100% 80%;
 
 # Publish your ARC, get a DOI
 
-![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/ARC_SeamlessPublication.svg)
+![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/ARC_SeamlessPublication.svg)
 
 
 ---
 
 # Publish your ARC with a few clicks
 
-![w:900px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/cqc-results.png)
+![w:900px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/data-publication/cqc-results.png)
 
 ---
 
 # Validation
 
 
-![h:400](./../../img/tpj16474-fig-0008-m-modified.png)
+![h:400](./../../images/tpj16474-fig-0008-m-modified.png)
 
 <span class="footer-reference"> adapted from Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
@@ -201,7 +201,7 @@ object-position: 100% 80%;
 # Validate & publish
 
 
-![h:400](././../../img/tpj16474-fig-0008-m.jpg)
+![h:400](././../../images/tpj16474-fig-0008-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
@@ -209,7 +209,7 @@ object-position: 100% 80%;
 
 # Receive a DOI
 
-![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/doi-accession.png)
+![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/data-publication/doi-accession.png)
 
 
 ---

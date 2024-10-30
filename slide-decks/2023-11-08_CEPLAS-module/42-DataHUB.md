@@ -19,47 +19,47 @@ author:
 
 # ARC builds on standards + Git
 
-![w:900](./../../img/ARC_BuildsOnStandards2.png)
+![w:900](./../../images/ARC_BuildsOnStandards2.png)
 
 ---
 
 # The DataPLANT DataHUB &ndash; a GitLab ***Plus***
 
-![](./../../img/DataHUB-GitLab.drawio.png)
+![](./../../images/DataHUB-GitLab.drawio.png)
 
 ---
 
-![bg cover](./../../img/DataPLANT_BigPicture_seq2.png)
+![bg cover](./../../images/DataPLANT_BigPicture_seq2.png)
 
 ---
 
-![bg cover](./../../img/DataPLANT_BigPicture_seq3.png)
+![bg cover](./../../images/DataPLANT_BigPicture_seq3.png)
 
 ---
 
-![bg cover](./../../img/DataPLANT_BigPicture_seq4.png)
+![bg cover](./../../images/DataPLANT_BigPicture_seq4.png)
 
 ---
 
-![bg cover](./../../img/DataPLANT_BigPicture_seq5.png)
+![bg cover](./../../images/DataPLANT_BigPicture_seq5.png)
 
 ---
 
-![bg cover](./../../img/DataPLANT_BigPicture_seq6.png)
+![bg cover](./../../images/DataPLANT_BigPicture_seq6.png)
 
 ---
 
-![bg cover](./../../img/DataPLANT_BigPicture_seq7.png)
+![bg cover](./../../images/DataPLANT_BigPicture_seq7.png)
 
 ---
 
-![bg cover](./../../img/DataPLANT_BigPicture_seq8.png)
+![bg cover](./../../images/DataPLANT_BigPicture_seq8.png)
 
 ---
 
 # **Mutable** data life cycle
 
-![w:700](./../../img/tpj16474-fig-0006-m.jpg)
+![w:700](./../../images/tpj16474-fig-0006-m.jpg)
 
 <!-- 
 
@@ -73,7 +73,7 @@ author:
 
 # Project management
 
-![w:800](./../../img/tpj16474-fig-0007-m.jpg)
+![w:800](./../../images/tpj16474-fig-0007-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 

@@ -14,7 +14,7 @@ author:
 
 # Data Stewardship between DataPLANT and the community <!-- fit -->
 
-![w:880](./../../img/DataPLANT-collaborationCEPLAS.drawio.png)
+![w:880](./../../images/DataPLANT-collaborationCEPLAS.drawio.png)
 
 ---
 
@@ -28,56 +28,56 @@ Your entire investigation in a single unified bag
 
 # You can store your ARC in the DataHUB
 
-![w:800](./../../img/DataPLANT_BigPicture_seq2.png)
+![w:800](./../../images/DataPLANT_BigPicture_seq2.png)
 
 ---
 
 # ARCs are versioned
 
-![w:800](./../../img/DataPLANT_BigPicture_seq3.png)
+![w:800](./../../images/DataPLANT_BigPicture_seq3.png)
 
 ---
 
 # You can invite collaborators
 
-![w:800](./../../img/DataPLANT_BigPicture_seq4.png)
+![w:800](./../../images/DataPLANT_BigPicture_seq4.png)
 
 ---
 
 # Collaborate and contribute
 
-![w:800](./../../img/DataPLANT_BigPicture_seq5.png)
+![w:800](./../../images/DataPLANT_BigPicture_seq5.png)
 
 ---
 
 # Reuse data in ARCs
 
-![w:800](./../../img/DataPLANT_BigPicture_seq6.png)
+![w:800](./../../images/DataPLANT_BigPicture_seq6.png)
 
 ---
 
 # Publish your ARC
 
-![w:800](./../../img/DataPLANT_BigPicture_seq7.png)
+![w:800](./../../images/DataPLANT_BigPicture_seq7.png)
 
 ---
 
 
 # Publish your ARC, get a DOI
 
-![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/ARC_SeamlessPublication.svg)
+![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/ARC_SeamlessPublication.svg)
 
 ---
 
 # ARC as single-entry point
 
-![w:900](./../../img/ARC-publication-outlets.drawio.png)
+![w:900](./../../images/ARC-publication-outlets.drawio.png)
 
 ---
 
 # Data analysis and workflows
 
-![w:800](./../../img/tpj16474-fig-0005-m.jpg)
+![w:800](./../../images/tpj16474-fig-0005-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
@@ -88,7 +88,7 @@ Your entire investigation in a single unified bag
 <div class="two-columns">
 <div>
 
-![](./../../img/galaxy-integration.drawio.png)
+![](./../../images/galaxy-integration.drawio.png)
 
 </div>
 
@@ -117,7 +117,7 @@ Your entire investigation in a single unified bag
   
   </div><div>
   
-  ![](./../../img/ceplas-enablingPlatforms.drawio.png)
+  ![](./../../images/ceplas-enablingPlatforms.drawio.png)
   
   </div>
 </div>
@@ -127,43 +127,43 @@ Your entire investigation in a single unified bag
 
 # Streamlined data exchange
 
-<img src="./../../img/enablingPlatform-FileShare.drawio.png" style="width:60%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../../images/enablingPlatform-FileShare.drawio.png" style="width:60%;display: block;margin-left: auto;margin-right: auto;">
 
 ---
 
 # Meet your collaborators in an ARC
 
-<img src="./../../img/enablingPlatform-Timeline.drawio.png" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../../images/enablingPlatform-Timeline.drawio.png" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
 
 ---
 
 # The ARC ecosystem
 
-![w:850](./../../img/ARC-ecosystem-10.drawio.png)
+![w:850](./../../images/ARC-ecosystem-10.drawio.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../img/ARC_fillWithData_seq1.png)
+![width:950](./../../images/ARC_fillWithData_seq1.png)
 
 ---
 
 # ARCs store experimental data
 
-![width:950](./../../img/ARC_fillWithData_seq3.png)
+![width:950](./../../images/ARC_fillWithData_seq3.png)
 
 ---
 
 # Computations can be run inside ARCs
 
-![width:950](./../../img/ARC_fillWithData_seq5.png)
+![width:950](./../../images/ARC_fillWithData_seq5.png)
 
 ---
 
 # ARCs come with comprehensive metadata
 
-![width:950](./../../img/ARC_fillWithData_seq6.png)
+![width:950](./../../images/ARC_fillWithData_seq6.png)
 
 ---
 
@@ -172,7 +172,7 @@ Your entire investigation in a single unified bag
 <div class="two-columns">
   <div>
   
-  ![w:500](./../../img/ARC_BuildsOnStandards3.png)
+  ![w:500](./../../images/ARC_BuildsOnStandards3.png)
   
   </div>
   <div>

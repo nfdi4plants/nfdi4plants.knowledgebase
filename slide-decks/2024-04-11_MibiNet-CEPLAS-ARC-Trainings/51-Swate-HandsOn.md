@@ -32,7 +32,7 @@ author:
 
 # Download the demo data
 
-![bg right:40% w:250](./../../img/ARCitect-help-Sidebar.png)
+![bg right:40% w:250](./../../images/ARCitect-help-Sidebar.png)
 
 1. Open the ARCitect
 2. Login (1) to your DataHUB account
@@ -46,7 +46,7 @@ author:
 5. Click the download button, select a location and open the ARC.
 6. Open the downloaded ARC
 
-![w:700](./../../img/arcitect-download-TalinumARC.png)
+![w:700](./../../images/arcitect-download-TalinumARC.png)
 
 :bulb: This is basically the ARC we created in the last session.
 
@@ -62,7 +62,7 @@ Open [Swate standalone](https://swate-alpha.nfdi4plants.org) in web browser
 
 # Swate Overview
 
-![width:1300](./../../img/Swate_a_Overview.png)
+![width:1300](./../../images/Swate_a_Overview.png)
 
 ---
 
@@ -87,7 +87,7 @@ Open [Swate standalone](https://swate-alpha.nfdi4plants.org) in web browser
 
 Import the empty `studies/talinum_drought/isa.study.xlsx`
 
-![width:600](./../../img/Swate_a_Home.png)
+![width:600](./../../images/Swate_a_Home.png)
 
 </div>
 
@@ -103,7 +103,7 @@ Create a Swate annotation table by adding **Building blocks** via the widget (A)
 
 :bulb: different *Input* and *Output* options: `Source Name`, `Sample Name`, `Material`, `Raw Data File`, `Derived Data File`, `Image File`
 
-![bg right w:600](./../../img/Swate_a_Building_blocks.png)
+![bg right w:600](./../../images/Swate_a_Building_blocks.png)
 
 ---
 
@@ -117,7 +117,7 @@ Create a Swate annotation table by adding **Building blocks** via the widget (A)
 
 :bulb: This adds four columns to your table, one visible and **three** hidden.
 
-![bg right:40% w:500](./../../img/Swate_a_addBuildngBlock.png)
+![bg right:40% w:500](./../../images/Swate_a_addBuildngBlock.png)
 
 ---
 
@@ -129,7 +129,7 @@ Create a Swate annotation table by adding **Building blocks** via the widget (A)
 4. Select the hit 
 
 
-![bg right:40% w:500](./../../img/Swate_a_addCharacteristic.png)
+![bg right:40% w:500](./../../images/Swate_a_addCharacteristic.png)
 
 ---
 
@@ -160,7 +160,7 @@ Use double pointed quotation mark to un-hide hidden columns.
 :bulb: You can see that your organism of choice was added with id and source Ontology in the reference (hidden) columns.
 
 
-![w:900](./../../img/Swate_a_reference_column.png)
+![w:900](./../../images/Swate_a_reference_column.png)
 
 
 ---
@@ -169,7 +169,7 @@ Use double pointed quotation mark to un-hide hidden columns.
 
 At this point. Your table should look similar to this:
 
-![w:1000](./../../img/demo_isa.study1.png)
+![w:1000](./../../images/demo_isa.study1.png)
 
 
 
@@ -228,7 +228,7 @@ Transfer the sample ids from the protocol.
     - You will see a preview of all *Building Blocks* which are part of this template.
 2. Click <kbd>Add template</kbd> to add all *Building Blocks* from the template to your table, which <u>do not exist yet</u>.
 
-![bg right:40% w:500px](./../../img/swate_a_templates.png)
+![bg right:40% w:500px](./../../images/swate_a_templates.png)
 
 ---
 
@@ -240,7 +240,7 @@ If there are any *Building Blocks* which do not fit to your experiment you can u
 
 ## Move Building blocks
 If the order of the *Building Blocks* should be adjusted you can use right click --> "Move Column"
-![bg right:40% w:500px](./../../img/Swate_a_moveColumn.png)
+![bg right:40% w:500px](./../../images/Swate_a_moveColumn.png)
 
 ---
 
@@ -248,7 +248,7 @@ If the order of the *Building Blocks* should be adjusted you can use right click
 
 Right click --> "Update Column" can be used to replace names in batches
 :bulb: this only works on Input columns
-![bg right:40% w:500px](./../../img/Swate_a_updateColumn.png)
+![bg right:40% w:500px](./../../images/Swate_a_updateColumn.png)
 
 ---
 
@@ -315,7 +315,7 @@ Insert values using Swate Term search and add input and output.
 4. Select the file "swate_agilent_gc.json" from the demo data.
 5. Click <kbd>Insert json</kbd>
 
-![bg right:25% w:300px](./../../img/swate-tab-templates.png)
+![bg right:25% w:300px](./../../images/swate-tab-templates.png)
 
 :bulb: This adds not only an empty template, but a filled out table with keys (headers) and values (cells).
 

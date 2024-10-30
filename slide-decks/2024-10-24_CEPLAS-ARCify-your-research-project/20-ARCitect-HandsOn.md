@@ -98,9 +98,9 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ## Sort Demo data in an ARC <!-- fit -->
 
-![bg right width:400](./../../img/demo_data_screenshot.png)
+![bg right width:400](./../../images/demo_data_screenshot.png)
 
-![width:900](./../../img/ARC_fillWithData_experimental.png)
+![width:900](./../../images/ARC_fillWithData_experimental.png)
 
 ---
 
@@ -108,7 +108,7 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ## Initiate the ARC folder structure
 
-![bg right:40% w:250](./../../img/ARCitect-help-Sidebar.png)
+![bg right:40% w:250](./../../images/ARCitect-help-Sidebar.png)
 
 1. Open ARCitect
 2. Create a **New ARC** (2)
@@ -130,7 +130,7 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 💡 Make sure that no ARC exists at  `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`. Otherwise you will sync to that ARC.
 
 
-![bg right:30% w:500](./../../img/ARCitect_TalinumPhotosynthesis.png)
+![bg right:30% w:500](./../../images/ARCitect_TalinumPhotosynthesis.png)
 
 ---
 
@@ -138,7 +138,7 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ## Add a description to your investigation
 
-![w:900](./../../img/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
+![w:900](./../../images/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
 
 ---
 
@@ -147,7 +147,7 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 ## Add contributors
 
 
-![bg right w:600](./../../img/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
+![bg right w:600](./../../images/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
 - you could also add the contacts directly via ORCID
 
 ---
@@ -172,7 +172,7 @@ by clicking "Add Study" and entering an identifier for your study
 
 Use **talinum_drought** as an identifier
 
-![bg right w:500](./../../img/ARCitect_TalinumPhotosynthesis_Study.png)
+![bg right w:500](./../../images/ARCitect_TalinumPhotosynthesis_Study.png)
 
 ---
 
@@ -187,7 +187,7 @@ In the study panel you can add
 - publications
 - data process information
 
-![bg right w:600](./../../img/ARCitect_TalinumPhotosynthesis_StudyPanel.png)
+![bg right w:600](./../../images/ARCitect_TalinumPhotosynthesis_StudyPanel.png)
 
 ---
 
@@ -210,7 +210,7 @@ In the study panel you can add
 
 :bulb: Each table can contain only one *Input* and one *Output* column  
 
-![bg right w:600](./../../img/Swate_a_Building_blocks.png)
+![bg right w:600](./../../images/Swate_a_Building_blocks.png)
 
 ---
 
@@ -239,7 +239,7 @@ You can either
 - directly write a **new protocol** within the ARCitect or
 - import an existing one from your computer
 
-![w:800](./../../img/arcitect-ARCPanel-protocol.png)
+![w:800](./../../images/arcitect-ARCPanel-protocol.png)
 
 ---
 
@@ -398,7 +398,7 @@ This allows you to reference the free-text, human-readable protocol.
   
   <div>
   
-  ![w:600px](./../../img/Swate_a_Overview.png)
+  ![w:600px](./../../images/Swate_a_Overview.png)
     
   </div>
 </div>
@@ -418,7 +418,7 @@ Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plan
 
 :bulb: This adds four columns to your table, one visible and **three** hidden.
 
-![bg right:40% w:500](./../../img/Swate_a_addBuildngBlock.png)
+![bg right:40% w:500](./../../images/Swate_a_addBuildngBlock.png)
 
 ---
 
@@ -431,7 +431,7 @@ Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plan
 3. Write "Talinum fruticosum" and enable *Term* search
 4. Select the hit
 
-![bg right:40% w:500](./../../img/Swate_a_addCharacteristic.png)
+![bg right:40% w:500](./../../images/Swate_a_addCharacteristic.png)
 
 ---
 
@@ -466,7 +466,7 @@ In the annotation table, select any cell below `Parameter [light intensity expos
 
 At this point. Your table should look similar to this:
 
-![w:1000](./../../img/demo_isa.study1.png)
+![w:1000](./../../images/demo_isa.study1.png)
 
 ---
 
@@ -500,7 +500,7 @@ Use double pointed quotation mark to un-hide hidden columns.
 :bulb: You can see that your organism of choice was added with id and source Ontology in the reference (hidden) columns.
 
 
-![w:900](./../../img/Swate_a_reference_column.png)
+![w:900](./../../images/Swate_a_reference_column.png)
 
 ---
 
@@ -518,7 +518,7 @@ Use double pointed quotation mark to un-hide hidden columns.
 by clicking "Add Assay" and entering an identifier for your assay
 
 Add two assays with **rnaseq** and **metabolomics** as an identifier
-![bg right w:500](./../../img/ARCitect_TalinumPhotosynthesis_Assay.png)
+![bg right w:500](./../../images/ARCitect_TalinumPhotosynthesis_Assay.png)
 
 ---
 
@@ -531,7 +531,7 @@ In the assay panel you can define the assay's
  - technology type, and
  - technology platform
 
-![bg right w:600](./../../img/ARCitect_TalinumPhotosynthesis_AssayPanel.png)
+![bg right w:600](./../../images/ARCitect_TalinumPhotosynthesis_AssayPanel.png)
 
 ---
 
@@ -587,7 +587,7 @@ In the assay panel you can define the assay's
 
 # Realization of lab-specific metadata templates
 
-![w:650px](./../../img/SWATE_metadataTemplates.png)
+![w:650px](./../../images/SWATE_metadataTemplates.png)
 
 Facilities can define their most common workflows as templates
 
@@ -608,7 +608,7 @@ section {
 - DataPLANT curated
 - Community templates
 
-![bg right w:450](./../../img/Swate_a_templates.png)
+![bg right w:450](./../../images/Swate_a_templates.png)
 
 
 ---
@@ -633,7 +633,7 @@ Open the lab notes `assays/rnaseq/protocols/`
     - You will see a preview of all *Building Blocks* which are part of this template.
 3. Click <kbd>Add template</kbd> to add all *Building Blocks* from the template to your table
 
-![bg right:40% w:500px](./../../img/swate_a_templates.png)
+![bg right:40% w:500px](./../../images/swate_a_templates.png)
 
 ---
 
@@ -649,7 +649,7 @@ If there are any *Building Blocks* which do not fit to your experiment you can u
 
 ## Move Building blocks
 If the order of the *Building Blocks* should be adjusted you can use right click --> "Move Column"
-![bg right:40% w:500px](./../../img/Swate_a_moveColumn.png)
+![bg right:40% w:500px](./../../images/Swate_a_moveColumn.png)
 
 ---
 
@@ -659,7 +659,7 @@ If the order of the *Building Blocks* should be adjusted you can use right click
 
 Right click --> "Update Column" can be used to replace names in batches
 :bulb: this only works on Input columns
-![bg right:40% w:500px](./../../img/Swate_a_updateColumn.png)
+![bg right:40% w:500px](./../../images/Swate_a_updateColumn.png)
 
 ---
 
@@ -685,7 +685,7 @@ Try to fill the two sheets with the protocol details:
 
 # ARC builds on ISA to connect data
 
-![w:800](./../../img/ISAmodel_ARC01_img02.svg)
+![w:800](./../../images/ISAmodel_ARC01_img02.svg)
 
 ---
 
@@ -704,7 +704,7 @@ Try to fill the two sheets with the protocol details:
 
   <div>
   
-  ![w:800](./../../img/ISAmodel_ARC01_img02.svg)
+  ![w:800](./../../images/ISAmodel_ARC01_img02.svg)
   
   </div>
 </div>
@@ -744,13 +744,13 @@ Try to fill the two sheets with the protocol details:
 
 The ARC is a **data-centric** approach to RDM
 
-![w:800](./../../img/ARC-data-centric_everything-is-a-file.drawio.png)
+![w:800](./../../images/ARC-data-centric_everything-is-a-file.drawio.png)
 
 ---
 
 # No technical lock-in
 
-![w:1000](./../../img/arc-tool-assistance.drawio.png)
+![w:1000](./../../images/arc-tool-assistance.drawio.png)
 
 (Meta)data transparency with tool assistance but **no technical lock-in**
 
@@ -762,7 +762,7 @@ The ARC is a **data-centric** approach to RDM
 
 The **Explorer (6)** button directly opens your ARC locally
 
-![bg right:40% w:250](./../../img/ARCitect-help-Sidebar.png)
+![bg right:40% w:250](./../../images/ARCitect-help-Sidebar.png)
 
 ---
 
@@ -778,9 +778,9 @@ The **Explorer (6)** button directly opens your ARC locally
 ## Login to DataHUB
 
 1. Login to DataHUB (1)
-   ![bg right:40% w:250](./../../img/ARCitect-help-Sidebar.png)
+   ![bg right:40% w:250](./../../images/ARCitect-help-Sidebar.png)
 2. Select `git.nfdi4plants.org` as Host 
-    ![w:800](./../../img/ARCitect_Choose_DataHUB.png)
+    ![w:800](./../../images/ARCitect_Choose_DataHUB.png)
 
 ---
 
@@ -790,7 +790,7 @@ The **Explorer (6)** button directly opens your ARC locally
 
 You have to commit changes before you can upload to the DataHUB
 
-![bg right:40% w:250](./../../img/ARCitect-help-Sidebar.png)
+![bg right:40% w:250](./../../images/ARCitect-help-Sidebar.png)
 
 ---
 
@@ -806,7 +806,7 @@ It allows you to
 - add a commit message 
 - use different branches 
 
-![bg right:50% w:500](./../../img/ARCitect_Commit_panel.png)
+![bg right:50% w:500](./../../images/ARCitect_Commit_panel.png)
 
 ---
 <img class="arcitectLogo" src="../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
@@ -816,7 +816,7 @@ It allows you to
 In the History panel you can inspect your ARCs history with all commits 
 
 
-![bg right:55% w:500](./../../img/ARCitect-History_panel.png)
+![bg right:55% w:500](./../../images/ARCitect-History_panel.png)
 
 ---
 
@@ -828,7 +828,7 @@ In the History panel you can inspect your ARCs history with all commits
 
 From the sidebar, navigate to **DataHUB Sync** (8)
 
-![bg right:40% w:250](./../../img/ARCitect-help-Sidebar.png)
+![bg right:40% w:250](./../../images/ARCitect-help-Sidebar.png)
 
 ---
 
@@ -843,7 +843,7 @@ The DataHUB Sync panel allows you to
 - change the Remote for the synchronization
 
 
-![bg right:50% w:500](./../../img/ARCitect_DataHUB_Sync.png) 
+![bg right:50% w:500](./../../images/ARCitect_DataHUB_Sync.png) 
 
 ---
 

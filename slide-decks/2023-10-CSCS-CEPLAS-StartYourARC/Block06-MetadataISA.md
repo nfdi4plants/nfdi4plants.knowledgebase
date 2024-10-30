@@ -227,7 +227,7 @@ ul {
 
 # ARC builds on ISA
 
-![w:900](./../../img/ISAmodel_ARC01_img01.svg)
+![w:900](./../../images/ISAmodel_ARC01_img01.svg)
 
 <https://isa-tools.org/format/specification.html>
 
@@ -235,19 +235,19 @@ ul {
 
 # ARC builds on ISA
 
-![w:1100](./../../img/ISAmodel_ARC01_img02.svg)
+![w:1100](./../../images/ISAmodel_ARC01_img02.svg)
 
 ---
 
 # isa.<>.xlsx files within ARCs
 
-![w:1000](./../../img/ISAmodel_ARC01_img03.svg)
+![w:1000](./../../images/ISAmodel_ARC01_img03.svg)
 
 ---
 
 # Study and assay files are registered in the investigation file <!-- fit -->
 
-![w:950](./../../img/ISAmodel_ARC01_img04.svg)
+![w:950](./../../images/ISAmodel_ARC01_img04.svg)
 
 ---
 
@@ -259,13 +259,13 @@ Output building blocks:
 - Raw Data File
 - Derived Data File
 
-![bg right w:600](./../../img/ISAmodel_ARC01_img05.svg)
+![bg right w:600](./../../images/ISAmodel_ARC01_img05.svg)
 
 ---
 
 #
 
-![bg w:1050](./../../img/ISAmodel_ARC01_img6.svg)
+![bg w:1050](./../../images/ISAmodel_ARC01_img6.svg)
 
 ---
 
@@ -275,7 +275,7 @@ Output building blocks:
 
 # Annotation by flattening the knowledge graph
 
-![w:800](./../../img/Swate_ParentChildTerm.svg)
+![w:800](./../../images/Swate_ParentChildTerm.svg)
 
 - Low-friction metadata annotation
 - Familiar spreadsheet, row/column-based environment
@@ -290,7 +290,7 @@ section p img{
 }  
 </style> -->
 
-![w:650](./../../img/Swate_ParentChildTerm2.svg)
+![w:650](./../../images/Swate_ParentChildTerm2.svg)
 
 - Low-friction metadata annotation
 - Familiar spreadsheet, row/column-based environment
@@ -299,7 +299,7 @@ section p img{
 
 # Adding new building blocks (columns)
 
-![w:750](./../../img/Swate_NewParameter.svg)
+![w:750](./../../images/Swate_NewParameter.svg)
 
 - Swate can be used for the annotation of **isa.study.xlsx and isa.assay.xlsx** files
 
@@ -315,7 +315,7 @@ section{
 
 </style>
 
-![bg right w:700](./../../img/Swate_Overview.svg)
+![bg right w:700](./../../images/Swate_Overview.svg)
 
 - Source Name (Input)
 - Protocol Columns
@@ -342,7 +342,7 @@ section {
 }
 </style>
 
-![w:750](./../../img/Swate_OntologyTermSearch.svg)
+![w:750](./../../images/Swate_OntologyTermSearch.svg)
 
 Enable **related term directed search** to directly fill cells with child terms
 
@@ -350,13 +350,13 @@ Enable **related term directed search** to directly fill cells with child terms
 
 # Fill your table with ontology terms
 
-![w:800](./../../img/Swate_OntologyTermSearch2.svg)
+![w:800](./../../images/Swate_OntologyTermSearch2.svg)
 
 ---
 
 # Hierarchical combination of ontologies
 
-![w:800](./../../img/Swate_OntologyCombination.svg)
+![w:800](./../../images/Swate_OntologyCombination.svg)
 
 <!-- combination of ISA (Characteristics, Parameter, Factor) and a biological or technological ontology (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on (Parameter \[temperature\] or Factor \[temperature\]). -->
 
@@ -368,7 +368,7 @@ Enable **related term directed search** to directly fill cells with child terms
 
 # Checklists and Templates
 
-![w:800px](./../../img/swate_TemplatesChecklists.svg)
+![w:800px](./../../images/swate_TemplatesChecklists.svg)
 
 Metadata standards or repository requirements can be represented as templates
 
@@ -385,7 +385,7 @@ section {
 
 # Realization of lab-specific metadata templates
 
-![w:850px](./../../img/SWATE_metadataTemplates.png)
+![w:850px](./../../images/SWATE_metadataTemplates.png)
 
 Facilities can define their most common workflows as templates
 
@@ -405,7 +405,7 @@ section {
 - DataPLANT curated
 - Community templates
 
-![bg right w:450](./../../img/Swate_Templates.svg)
+![bg right w:450](./../../images/Swate_Templates.svg)
 
 ---
 

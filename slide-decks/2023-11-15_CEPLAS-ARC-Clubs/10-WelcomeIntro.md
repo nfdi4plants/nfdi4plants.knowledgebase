@@ -21,7 +21,7 @@ author:
 December 7<sup>th</sup>, 2023
 Dominik Brilhaus, CEPLAS Data Science
 
-![bg fit](./../../img/background_title_ceplas.drawio.svg)
+![bg fit](./../../images/background_title_ceplas.drawio.svg)
 
 ---
 
@@ -94,7 +94,7 @@ Slides will be shared via DataPLANT knowledge base
 - First few steps into ARCs
 - You or collaborators can pick them up from there
 
-![bg right w:500](./../../img/ceplas-ARCs.drawio.svg)
+![bg right w:500](./../../images/ceplas-ARCs.drawio.svg)
 
 ---
 

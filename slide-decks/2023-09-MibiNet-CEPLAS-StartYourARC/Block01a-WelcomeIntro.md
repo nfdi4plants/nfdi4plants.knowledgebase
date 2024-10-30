@@ -158,49 +158,49 @@ Time | Topics
 
 # The Research Data Lifecycle
 
-![h:500](./../../img/ResearchDataLifecycle_seq1.png)
+![h:500](./../../images/ResearchDataLifecycle_seq1.png)
 
 ---
 
 # The Research Data Lifecycle
 
-![h:500](./../../img/ResearchDataLifecycle_seq2.png)
+![h:500](./../../images/ResearchDataLifecycle_seq2.png)
 
 ---
 
 # The Research Data Lifecycle
 
-![h:500](./../../img/ResearchDataLifecycle_seq3.png)
+![h:500](./../../images/ResearchDataLifecycle_seq3.png)
 
 ---
 
 # The Research Data Lifecycle
 
-![h:500](./../../img/ResearchDataLifecycle_seq4.png)
+![h:500](./../../images/ResearchDataLifecycle_seq4.png)
 
 ---
 
 # The Research Data Lifecycle
 
-![h:500](./../../img/ResearchDataLifecycle_seq5.png)
+![h:500](./../../images/ResearchDataLifecycle_seq5.png)
 
 ---
 
 # The Research Data Lifecycle
 
-![h:500](./../../img/ResearchDataLifecycle_seq6.png)
+![h:500](./../../images/ResearchDataLifecycle_seq6.png)
 
 ---
 
 # The Research Data Lifecycle
 
-![h:500](./../../img/ResearchDataLifecycle_seq7.png)
+![h:500](./../../images/ResearchDataLifecycle_seq7.png)
 
 ---
 
 # The Research Data Lifecycle ***is mutable***
 
-![h:500](./../../img/ResearchDataLifecycle_seq9.png)
+![h:500](./../../images/ResearchDataLifecycle_seq9.png)
 
 ---
 
@@ -230,7 +230,7 @@ footer {
 
 https://doi.org/10.1038/sdata.2016.18
 
-![bg right w:600](./../../img/wilkinson2016-FAIR.png)
+![bg right w:600](./../../images/wilkinson2016-FAIR.png)
 
 ---
 
@@ -246,7 +246,7 @@ object-fit: cover;
 }
 </style>
 
-![](./../../img/FAIR_Benefits.png)
+![](./../../images/FAIR_Benefits.png)
 
 ---
 
@@ -322,13 +322,13 @@ object-fit: cover;
 
 # Scattered Data Silos
 
-![w:900](././../../img/data_fragmentation_CEPLAS.png)
+![w:900](././../../images/data_fragmentation_CEPLAS.png)
 
 ---
 
 # Scattered Data Silos
 
-![w:900](././../../img/data_fragmentation_CEPLAS_MibiNet_TRR.png)
+![w:900](././../../images/data_fragmentation_CEPLAS_MibiNet_TRR.png)
 
 ---
 
@@ -344,4 +344,4 @@ object-fit: cover;
 }
 </style>
 
-![](./../../img/FAIR_unFAIR_Stories.png)
+![](./../../images/FAIR_unFAIR_Stories.png)

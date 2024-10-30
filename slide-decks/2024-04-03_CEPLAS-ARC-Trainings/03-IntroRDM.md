@@ -34,7 +34,7 @@ author:
 
 https://doi.org/10.1038/sdata.2016.18
 
-![bg right:45% w:600](./../../img/wilkinson2016-FAIR.png)
+![bg right:45% w:600](./../../images/wilkinson2016-FAIR.png)
 
 ---
 
@@ -50,7 +50,7 @@ object-fit: cover;
 }
 </style>
 
-![](./../../img/FAIR_Benefits.png)
+![](./../../images/FAIR_Benefits.png)
 
 ---
 
@@ -64,14 +64,14 @@ object-fit: cover;
 - What tools do you use to analyse your data?
 - How do you reuse other people's data?
 
-![bg right:40% w:500](./../../img/User_Challenges_002.svg)
+![bg right:40% w:500](./../../images/User_Challenges_002.svg)
 
 <!-- 
 ---
 
 # The research data life cycle
 
-![w:350](./../../img/RDMkit-data_life_cycle_9.svg)
+![w:350](./../../images/RDMkit-data_life_cycle_9.svg)
 
 <span class="footer-reference">https://rdmkit.elixir-europe.org, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span> 
 

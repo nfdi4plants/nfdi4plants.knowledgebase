@@ -90,20 +90,20 @@ September 19th, 2023
 
 # Annotated Research Context (ARC)
 
-![width:950](./../../img/ARC_DataCentricIntegration_img1.png)
+![width:950](./../../images/ARC_DataCentricIntegration_img1.png)
 
 ---
 
 # The ARC &ndash; a package for your research data
 
-![width:950](./../../img/ARC_fillWithData_seq8.png)
+![width:950](./../../images/ARC_fillWithData_seq8.png)
 
 <!-- --- 
 
 
 # Annotated Research Contexts (ARCs)
 
-![w:600](./../../img/tpj16474-fig-0003-m.jpg)
+![w:600](./../../images/tpj16474-fig-0003-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span> -->
 
@@ -113,15 +113,15 @@ September 19th, 2023
 
 <br>
 
-![w:350](./../../img/RDMkit-data_life_cycle_9.svg)
+![w:350](./../../images/RDMkit-data_life_cycle_9.svg)
 
 <span class="footer-reference"> https://rdmkit.elixir-europe.org, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
 
 ---
 
-# Collect <img align="left" class="center" style="height:75px" src='./../../img/Screenshot-RDMkit-02-collect.png'/>
+# Collect <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-02-collect.png'/>
 
-![width:800](./../../img/ARC_fillWithData_experimental.png)
+![width:800](./../../images/ARC_fillWithData_experimental.png)
 
 <!-- 
 
@@ -134,9 +134,9 @@ September 19th, 2023
 
 ---
 
-# Process (e.g. annotate)  <img align="left" class="center" style="height:75px" src='./../../img/Screenshot-RDMkit-03-process.png'/>
+# Process (e.g. annotate)  <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-03-process.png'/>
 
-![w:650](./../../img/Swate_metadataTemplates.png)
+![w:650](./../../images/Swate_metadataTemplates.png)
 
 <!-- 
 
@@ -145,56 +145,56 @@ September 19th, 2023
 
 ---
 
-# Analyse <img align="left" class="center" style="height:75px" src='./../../img/Screenshot-RDMkit-04-analyse.png'/>
+# Analyse <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-04-analyse.png'/>
 
 <!-- 
 - run fastqc
 - receive back results
 -->
 
-![w:800](./../../img/tpj16474-fig-0005-m.jpg)
+![w:800](./../../images/tpj16474-fig-0005-m.jpg)
 
 
-<!-- ![w:500](../../img/DataPLANT_ARC_SinglePointofEntry.svg)
-![w:700](../../img/DataPLANT_ARC_Workflows.svg) -->
+<!-- ![w:500](../../images/DataPLANT_ARC_SinglePointofEntry.svg)
+![w:700](../../images/DataPLANT_ARC_Workflows.svg) -->
 
 ---
 
-# Preserve  <img align="left" class="center" style="height:75px" src='./../../img/Screenshot-RDMkit-05-preserve.png'/>
+# Preserve  <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-05-preserve.png'/>
 
 <!--
 1. Validation: CQC on each DataHUB commit
 2. Publication: DOI
 -->
 
-![h:400](./../../img/tpj16474-fig-0008-m-modified.png)
+![h:400](./../../images/tpj16474-fig-0008-m-modified.png)
 
 <span class="footer-reference"> adapted from Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
 ---
 
-# Preserve and publish <img align="left" class="center" style="height:75px" src='./../../img/Screenshot-RDMkit-05-preserve.png'/>
+# Preserve and publish <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-05-preserve.png'/>
 
 <!--
 1. Validation: CQC on each DataHUB commit
 2. Publication: DOI
 -->
 
-![h:400](././../../img/tpj16474-fig-0008-m.jpg)
+![h:400](././../../images/tpj16474-fig-0008-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
 ---
 
-# Share and collaborate <img align="left" class="center" style="height:75px" src='./../../img/Screenshot-RDMkit-06-share.png'/>
+# Share and collaborate <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-06-share.png'/>
 
-![w:700](./../../img/ARC_DataSharing_Experts02_img1.png)
+![w:700](./../../images/ARC_DataSharing_Experts02_img1.png)
 
 ---
 
-# Reuse <img align="left" class="center" style="height:75px" src='./../../img/Screenshot-RDMkit-07-reuse.png'/>
+# Reuse <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-07-reuse.png'/>
 
-![w:800](./../../img/tpj16474-fig-0001-m.jpg)
+![w:800](./../../images/tpj16474-fig-0001-m.jpg)
 
 <!-- 
 - via ARC https://arcregistry.nfdi4plants.org/arcsearch
@@ -207,7 +207,7 @@ September 19th, 2023
 
 # **Mutable** data life cycle
 
-![w:700](./../../img/tpj16474-fig-0006-m.jpg)
+![w:700](./../../images/tpj16474-fig-0006-m.jpg)
 
 <!-- 
 
@@ -217,9 +217,9 @@ September 19th, 2023
 
 ---
 
-# Plan (ARC scale) <img align="left" class="center" style="height:75px" src='./../../img/Screenshot-RDMkit-01-plan.png'/>
+# Plan (ARC scale) <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-01-plan.png'/>
 
-![w:800](./../../img/tpj16474-fig-0007-m.jpg)
+![w:800](./../../images/tpj16474-fig-0007-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
@@ -240,13 +240,13 @@ September 19th, 2023
 
 ---
 
-# Plan (proposal scale) <img align="left" class="center" style="height:75px" src='./../../img/Screenshot-RDMkit-01-plan.png'/>
+# Plan (proposal scale) <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-01-plan.png'/>
 
 <span class="footer-reference">**Zhou *et al.* (2023)**, DataPLAN: a web-based data management plan generator for the plant sciences, bioRxiv 2023.07.07.548147; doi: https://doi.org/10.1101/2023.07.07.548147 </span>
 
 https://dmpg.nfdi4plants.org
 
-![w:800](././../../img/zhou2023-dataplan.png)
+![w:800](././../../images/zhou2023-dataplan.png)
 
 ---
 
@@ -295,4 +295,4 @@ Freiburg: Dirk von Suchodeletz
 - Jonathan Bauer, Marcel Tschöpe (`DataHUB`, `Swobup`)
 - Cristina Martins Rodrigues (`Knowledge Base`)
 
-![bg right:40% w:550](./../../img/hackathon_group.png)
+![bg right:40% w:550](./../../images/hackathon_group.png)

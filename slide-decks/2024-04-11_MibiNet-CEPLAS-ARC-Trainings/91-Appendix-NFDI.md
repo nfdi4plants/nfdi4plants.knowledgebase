@@ -12,24 +12,24 @@ author:
 
 # NFDI &ndash; Nationale Forschungsdaten Infrastruktur
 
-![w:800](./../../img/nfdi.drawio.png)
+![w:800](./../../images/nfdi.drawio.png)
 
 ---
 
 # NFDI consortia
 
-![w:800](./../../img/nfdi-consortia.drawio.png)
+![w:800](./../../images/nfdi-consortia.drawio.png)
 
 ---
 
 # NFDI sections
 
-![w:700](././../../img/nfdi-sections.drawio.png)
+![w:700](././../../images/nfdi-sections.drawio.png)
 
 ---
 
 # Base4NFDI
 
-![w:700](./../../img/Base4NFDI_Intro_Poster-RDA-2024_JanderRitter-excerpt.png)
+![w:700](./../../images/Base4NFDI_Intro_Poster-RDA-2024_JanderRitter-excerpt.png)
 
 <span class="footer-reference">adapted from https://base4nfdi.de/</span>

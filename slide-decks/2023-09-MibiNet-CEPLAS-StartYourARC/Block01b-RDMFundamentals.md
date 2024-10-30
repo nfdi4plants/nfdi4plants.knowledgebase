@@ -26,7 +26,7 @@ Sept 20th, 2023
 
 # Different laws touched by RDM
 
-![w:700](././../../img/Hartmann_TerraIncognita-Forschungsdaten-RechtlicheHeimat.png)
+![w:700](././../../images/Hartmann_TerraIncognita-Forschungsdaten-RechtlicheHeimat.png)
 
 <span class="footer-reference">Hartmann, Thomas. (2019). Rechtsfragen: Institutioneller Rahmen und Handlungsoptionen für universitäres FDM. Zenodo. https://doi.org/10.5281/zenodo.2654306</span>
 
@@ -56,7 +56,7 @@ Sept 20th, 2023
 
 Check out: https://creativecommons.org/about/cclicenses/
 
-![w:400](././../../img/creative_commons_brochure.png)
+![w:400](././../../images/creative_commons_brochure.png)
 
 <span class="footer-reference">adapted from https://wiki.creativecommons.org/images/0/01/6licenses-folded.pdf</span>
 
@@ -94,7 +94,7 @@ Check out: https://creativecommons.org/about/cclicenses/
 ---
 
 # Research Data policies
-![w:500](./../../img/Forschungsdaten-Policy-Kit-Abb2.png)
+![w:500](./../../images/Forschungsdaten-Policy-Kit-Abb2.png)
 
 
 <span class="footer-reference">Hiemenz, Bea & Kuberek, Monika (2018) http://dx.doi.org/10.14279/depositonce-7521</span>
@@ -194,7 +194,7 @@ section {font-size: 25px;}
 
 # Generic data repositories
 
-![bg right:40% width:400](./../../img/repositories_genericRepos_collage.drawio.svg)
+![bg right:40% width:400](./../../images/repositories_genericRepos_collage.drawio.svg)
 
 **Good**
 
@@ -215,7 +215,7 @@ section {font-size: 25px;}
 
 # Spot the PIDs
 
-![w:900](././../../img/exercise_PIDs_img1.png)
+![w:900](././../../images/exercise_PIDs_img1.png)
 
 <span class="footer-reference"> https://doi.org/10.1093/plcell/koab243</span>
 
@@ -228,7 +228,7 @@ section {font-size: 25px;}
 - Diminish “dead links”
 - Cope with name changes
 
-![bg right width:500](././../../img/pid_collage.drawio.svg)
+![bg right width:500](././../../images/pid_collage.drawio.svg)
 
 ---
 
@@ -258,7 +258,7 @@ Ideally, PIDs are
 
 # Data stores
 
-![w:900](././../../img/data-stores.drawio.svg)
+![w:900](././../../images/data-stores.drawio.svg)
 
 ---
 
@@ -278,7 +278,7 @@ Latency  | Short/Costly  | High/Cheaper
 
 # 3-2-1 backup rule
 
-![w:800](././../../img/3-2-1-backup-rule.drawio.svg)
+![w:800](././../../images/3-2-1-backup-rule.drawio.svg)
 
 ---
 
@@ -309,7 +309,7 @@ It’s good practice to document:
 
 # Cloud Services
 
-![bg right:50% w:800](./../../img/DataSharing_Cloud_img6.png)
+![bg right:50% w:800](./../../images/DataSharing_Cloud_img6.png)
 
 <span style="color:#B4CE82">✓ Documents</span>  
 <span style="color:#B4CE82">✓ Small data</span>  

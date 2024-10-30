@@ -18,7 +18,7 @@ October, 2024
 Dominik Brilhaus (CEPLAS)
 Sabrina Zander (MibiNet)
 
-![bg fit](./../../../img/background_title_ceplas.drawio.svg)
+![bg fit](./../../../images/background_title_ceplas.drawio.svg)
 
 ---
 
@@ -29,7 +29,7 @@ Sabrina Zander (MibiNet)
 - Share them via the DataHUB
 - Annotate with metadata
 
-![bg right w:500](./../../../img/ceplas-ARCs.drawio.svg)
+![bg right w:500](./../../../images/ceplas-ARCs.drawio.svg)
 
 ---
 
@@ -93,25 +93,25 @@ Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TR
 
 # CEPLAS &ndash; One cluster, four locations
 
-![w:800](./../../../img/data-fragmentation-ceplas00.drawio.png)
+![w:800](./../../../images/data-fragmentation-ceplas00.drawio.png)
 
 ---
 
 # Data silos impede collaboration
 
-![w:800](./../../../img/data-fragmentation-ceplas01.drawio.png)
+![w:800](./../../../images/data-fragmentation-ceplas01.drawio.png)
 
 ---
 
 # Data silos impede collaboration
 
-![w:800](./../../../img/data-fragmentation-ceplas02.drawio.png)
+![w:800](./../../../images/data-fragmentation-ceplas02.drawio.png)
 
 ---
 
 # Missing interfaces impede collaboration
 
-![w:800](./../../../img/HHU-services-withoutDataHUB.drawio.png)
+![w:800](./../../../images/HHU-services-withoutDataHUB.drawio.png)
 
 ---
 
@@ -119,7 +119,7 @@ Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TR
 
 # Data Stewardship between DataPLANT and the community <!-- fit -->
 
-![w:880](./../../../img/DataPLANT-collaborationCEPLAS.drawio.png)
+![w:880](./../../../images/DataPLANT-collaborationCEPLAS.drawio.png)
 
 ---
 
@@ -133,56 +133,56 @@ Your entire investigation in a single unified bag
 
 # You can store your ARC in the DataHUB
 
-![w:800](./../../../img/DataPLANT_BigPicture_seq2.png)
+![w:800](./../../../images/DataPLANT_BigPicture_seq2.png)
 
 ---
 
 # ARCs are versioned
 
-![w:800](./../../../img/DataPLANT_BigPicture_seq3.png)
+![w:800](./../../../images/DataPLANT_BigPicture_seq3.png)
 
 ---
 
 # You can invite collaborators
 
-![w:800](./../../../img/DataPLANT_BigPicture_seq4.png)
+![w:800](./../../../images/DataPLANT_BigPicture_seq4.png)
 
 ---
 
 # Collaborate and contribute
 
-![w:800](./../../../img/DataPLANT_BigPicture_seq5.png)
+![w:800](./../../../images/DataPLANT_BigPicture_seq5.png)
 
 ---
 
 # Reuse data in ARCs
 
-![w:800](./../../../img/DataPLANT_BigPicture_seq6.png)
+![w:800](./../../../images/DataPLANT_BigPicture_seq6.png)
 
 ---
 
 # Publish your ARC
 
-![w:800](./../../../img/DataPLANT_BigPicture_seq7.png)
+![w:800](./../../../images/DataPLANT_BigPicture_seq7.png)
 
 ---
 
 
 # Publish your ARC, get a DOI
 
-![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/ARC_SeamlessPublication.svg)
+![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/ARC_SeamlessPublication.svg)
 
 ---
 
 # ARC as single-entry point
 
-![w:900](./../../../img/ARC-publication-outlets.drawio.png)
+![w:900](./../../../images/ARC-publication-outlets.drawio.png)
 
 ---
 
 # Data analysis and workflows
 
-![w:800](./../../../img/tpj16474-fig-0005-m.jpg)
+![w:800](./../../../images/tpj16474-fig-0005-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
@@ -193,7 +193,7 @@ Your entire investigation in a single unified bag
 <div class="two-columns">
 <div>
 
-![](./../../../img/galaxy-integration.drawio.png)
+![](./../../../images/galaxy-integration.drawio.png)
 
 </div>
 
@@ -222,7 +222,7 @@ Your entire investigation in a single unified bag
   
   </div><div>
   
-  ![](./../../../img/ceplas-enablingPlatforms.drawio.png)
+  ![](./../../../images/ceplas-enablingPlatforms.drawio.png)
   
   </div>
 </div>
@@ -232,43 +232,43 @@ Your entire investigation in a single unified bag
 
 # Streamlined data exchange
 
-<img src="./../../../img/enablingPlatform-FileShare.drawio.png" style="width:60%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../../../images/enablingPlatform-FileShare.drawio.png" style="width:60%;display: block;margin-left: auto;margin-right: auto;">
 
 ---
 
 # Meet your collaborators in an ARC
 
-<img src="./../../../img/enablingPlatform-Timeline.drawio.png" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../../../images/enablingPlatform-Timeline.drawio.png" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
 
 ---
 
 # The ARC ecosystem
 
-![w:850](./../../../img/ARC-ecosystem-10.drawio.png)
+![w:850](./../../../images/ARC-ecosystem-10.drawio.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../../img/ARC_fillWithData_seq1.png)
+![width:950](./../../../images/ARC_fillWithData_seq1.png)
 
 ---
 
 # ARCs store experimental data
 
-![width:950](./../../../img/ARC_fillWithData_seq3.png)
+![width:950](./../../../images/ARC_fillWithData_seq3.png)
 
 ---
 
 # Computations can be run inside ARCs
 
-![width:950](./../../../img/ARC_fillWithData_seq5.png)
+![width:950](./../../../images/ARC_fillWithData_seq5.png)
 
 ---
 
 # ARCs come with comprehensive metadata
 
-![width:950](./../../../img/ARC_fillWithData_seq6.png)
+![width:950](./../../../images/ARC_fillWithData_seq6.png)
 
 ---
 
@@ -277,7 +277,7 @@ Your entire investigation in a single unified bag
 <div class="two-columns">
   <div>
   
-  ![w:500](./../../../img/ARC_BuildsOnStandards3.png)
+  ![w:500](./../../../images/ARC_BuildsOnStandards3.png)
   
   </div>
   <div>
@@ -373,9 +373,9 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ## Sort Demo data in an ARC <!-- fit -->
 
-![bg right width:400](./../../../img/demo_data_screenshot.png)
+![bg right width:400](./../../../images/demo_data_screenshot.png)
 
-![width:900](./../../../img/ARC_fillWithData_experimental.png)
+![width:900](./../../../images/ARC_fillWithData_experimental.png)
 
 ---
 
@@ -383,7 +383,7 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ## Initiate the ARC folder structure
 
-![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
+![bg right:40% w:250](./../../../images/ARCitect-help-Sidebar.png)
 
 1. Open ARCitect
 2. Create a **New ARC** (2)
@@ -405,7 +405,7 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 💡 Make sure that no ARC exists at  `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`. Otherwise you will sync to that ARC.
 
 
-![bg right:30% w:500](./../../../img/ARCitect_TalinumPhotosynthesis.png)
+![bg right:30% w:500](./../../../images/ARCitect_TalinumPhotosynthesis.png)
 
 ---
 
@@ -413,7 +413,7 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 
 ## Add a description to your investigation
 
-![w:900](./../../../img/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
+![w:900](./../../../images/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
 
 ---
 
@@ -422,7 +422,7 @@ https://uni-duesseldorf.sciebo.de/s/C7ms3QA6q7OZnU2
 ## Add contributors
 
 
-![bg right w:600](./../../../img/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
+![bg right w:600](./../../../images/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
 - you could also add the contacts directly via ORCID
 
 ---
@@ -447,7 +447,7 @@ by clicking "Add Study" and entering an identifier for your study
 
 Use **talinum_drought** as an identifier
 
-![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_Study.png)
+![bg right w:500](./../../../images/ARCitect_TalinumPhotosynthesis_Study.png)
 
 ---
 
@@ -462,7 +462,7 @@ In the study panel you can add
 - publications
 - data process information
 
-![bg right w:600](./../../../img/ARCitect_TalinumPhotosynthesis_StudyPanel.png)
+![bg right w:600](./../../../images/ARCitect_TalinumPhotosynthesis_StudyPanel.png)
 
 ---
 
@@ -485,7 +485,7 @@ In the study panel you can add
 
 :bulb: Each table can contain only one *Input* and one *Output* column  
 
-![bg right w:600](./../../../img/Swate_a_Building_blocks.png)
+![bg right w:600](./../../../images/Swate_a_Building_blocks.png)
 
 ---
 
@@ -514,7 +514,7 @@ You can either
 - directly write a **new protocol** within the ARCitect or
 - import an existing one from your computer
 
-![w:800](./../../../img/arcitect-ARCPanel-protocol.png)
+![w:800](./../../../images/arcitect-ARCPanel-protocol.png)
 
 ---
 
@@ -673,7 +673,7 @@ This allows you to reference the free-text, human-readable protocol.
   
   <div>
   
-  ![w:600px](./../../../img/Swate_a_Overview.png)
+  ![w:600px](./../../../images/Swate_a_Overview.png)
     
   </div>
 </div>
@@ -693,7 +693,7 @@ Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plan
 
 :bulb: This adds four columns to your table, one visible and **three** hidden.
 
-![bg right:40% w:500](./../../../img/Swate_a_addBuildngBlock.png)
+![bg right:40% w:500](./../../../images/Swate_a_addBuildngBlock.png)
 
 ---
 
@@ -706,7 +706,7 @@ Let's take a detour on [Annotation Principles](https://nfdi4plants.org/nfdi4plan
 3. Write "Talinum fruticosum" and enable *Term* search
 4. Select the hit
 
-![bg right:40% w:500](./../../../img/Swate_a_addCharacteristic.png)
+![bg right:40% w:500](./../../../images/Swate_a_addCharacteristic.png)
 
 ---
 
@@ -741,7 +741,7 @@ In the annotation table, select any cell below `Parameter [light intensity expos
 
 At this point. Your table should look similar to this:
 
-![w:1000](./../../../img/demo_isa.study1.png)
+![w:1000](./../../../images/demo_isa.study1.png)
 
 ---
 
@@ -775,7 +775,7 @@ Use double pointed quotation mark to un-hide hidden columns.
 :bulb: You can see that your organism of choice was added with id and source Ontology in the reference (hidden) columns.
 
 
-![w:900](./../../../img/Swate_a_reference_column.png)
+![w:900](./../../../images/Swate_a_reference_column.png)
 
 ---
 
@@ -793,7 +793,7 @@ Use double pointed quotation mark to un-hide hidden columns.
 by clicking "Add Assay" and entering an identifier for your assay
 
 Add two assays with **rnaseq** and **metabolomics** as an identifier
-![bg right w:500](./../../../img/ARCitect_TalinumPhotosynthesis_Assay.png)
+![bg right w:500](./../../../images/ARCitect_TalinumPhotosynthesis_Assay.png)
 
 ---
 
@@ -806,7 +806,7 @@ In the assay panel you can define the assay's
  - technology type, and
  - technology platform
 
-![bg right w:600](./../../../img/ARCitect_TalinumPhotosynthesis_AssayPanel.png)
+![bg right w:600](./../../../images/ARCitect_TalinumPhotosynthesis_AssayPanel.png)
 
 ---
 
@@ -862,7 +862,7 @@ In the assay panel you can define the assay's
 
 # Realization of lab-specific metadata templates
 
-![w:650px](./../../../img/SWATE_metadataTemplates.png)
+![w:650px](./../../../images/SWATE_metadataTemplates.png)
 
 Facilities can define their most common workflows as templates
 
@@ -883,7 +883,7 @@ section {
 - DataPLANT curated
 - Community templates
 
-![bg right w:450](./../../../img/Swate_a_templates.png)
+![bg right w:450](./../../../images/Swate_a_templates.png)
 
 
 ---
@@ -908,7 +908,7 @@ Open the lab notes `assays/rnaseq/protocols/`
     - You will see a preview of all *Building Blocks* which are part of this template.
 3. Click <kbd>Add template</kbd> to add all *Building Blocks* from the template to your table
 
-![bg right:40% w:500px](./../../../img/swate_a_templates.png)
+![bg right:40% w:500px](./../../../images/swate_a_templates.png)
 
 ---
 
@@ -924,7 +924,7 @@ If there are any *Building Blocks* which do not fit to your experiment you can u
 
 ## Move Building blocks
 If the order of the *Building Blocks* should be adjusted you can use right click --> "Move Column"
-![bg right:40% w:500px](./../../../img/Swate_a_moveColumn.png)
+![bg right:40% w:500px](./../../../images/Swate_a_moveColumn.png)
 
 ---
 
@@ -934,7 +934,7 @@ If the order of the *Building Blocks* should be adjusted you can use right click
 
 Right click --> "Update Column" can be used to replace names in batches
 :bulb: this only works on Input columns
-![bg right:40% w:500px](./../../../img/Swate_a_updateColumn.png)
+![bg right:40% w:500px](./../../../images/Swate_a_updateColumn.png)
 
 ---
 
@@ -960,7 +960,7 @@ Try to fill the two sheets with the protocol details:
 
 # ARC builds on ISA to connect data
 
-![w:800](./../../../img/ISAmodel_ARC01_img02.svg)
+![w:800](./../../../images/ISAmodel_ARC01_img02.svg)
 
 ---
 
@@ -979,7 +979,7 @@ Try to fill the two sheets with the protocol details:
 
   <div>
   
-  ![w:800](./../../../img/ISAmodel_ARC01_img02.svg)
+  ![w:800](./../../../images/ISAmodel_ARC01_img02.svg)
   
   </div>
 </div>
@@ -1019,13 +1019,13 @@ Try to fill the two sheets with the protocol details:
 
 The ARC is a **data-centric** approach to RDM
 
-![w:800](./../../../img/ARC-data-centric_everything-is-a-file.drawio.png)
+![w:800](./../../../images/ARC-data-centric_everything-is-a-file.drawio.png)
 
 ---
 
 # No technical lock-in
 
-![w:1000](./../../../img/arc-tool-assistance.drawio.png)
+![w:1000](./../../../images/arc-tool-assistance.drawio.png)
 
 (Meta)data transparency with tool assistance but **no technical lock-in**
 
@@ -1037,7 +1037,7 @@ The ARC is a **data-centric** approach to RDM
 
 The **Explorer (6)** button directly opens your ARC locally
 
-![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
+![bg right:40% w:250](./../../../images/ARCitect-help-Sidebar.png)
 
 ---
 
@@ -1053,9 +1053,9 @@ The **Explorer (6)** button directly opens your ARC locally
 ## Login to DataHUB
 
 1. Login to DataHUB (1)
-   ![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
+   ![bg right:40% w:250](./../../../images/ARCitect-help-Sidebar.png)
 2. Select `git.nfdi4plants.org` as Host 
-    ![w:800](./../../../img/ARCitect_Choose_DataHUB.png)
+    ![w:800](./../../../images/ARCitect_Choose_DataHUB.png)
 
 ---
 
@@ -1065,7 +1065,7 @@ The **Explorer (6)** button directly opens your ARC locally
 
 You have to commit changes before you can upload to the DataHUB
 
-![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
+![bg right:40% w:250](./../../../images/ARCitect-help-Sidebar.png)
 
 ---
 
@@ -1081,7 +1081,7 @@ It allows you to
 - add a commit message 
 - use different branches 
 
-![bg right:50% w:500](./../../../img/ARCitect_Commit_panel.png)
+![bg right:50% w:500](./../../../images/ARCitect_Commit_panel.png)
 
 ---
 <img class="arcitectLogo" src="../../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
@@ -1091,7 +1091,7 @@ It allows you to
 In the History panel you can inspect your ARCs history with all commits 
 
 
-![bg right:55% w:500](./../../../img/ARCitect-History_panel.png)
+![bg right:55% w:500](./../../../images/ARCitect-History_panel.png)
 
 ---
 
@@ -1103,7 +1103,7 @@ In the History panel you can inspect your ARCs history with all commits
 
 From the sidebar, navigate to **DataHUB Sync** (8)
 
-![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
+![bg right:40% w:250](./../../../images/ARCitect-help-Sidebar.png)
 
 ---
 
@@ -1118,7 +1118,7 @@ The DataHUB Sync panel allows you to
 - change the Remote for the synchronization
 
 
-![bg right:50% w:500](./../../../img/ARCitect_DataHUB_Sync.png) 
+![bg right:50% w:500](./../../../images/ARCitect_DataHUB_Sync.png) 
 
 ---
 
@@ -1157,7 +1157,7 @@ The DataHUB Sync panel allows you to
 
 ## Navigation Bar
 
-![](./../../../img/datahub-navbar.drawio.svg)
+![](./../../../images/datahub-navbar.drawio.svg)
 
 1. navigate directly to the [projects panel](./../../../../../../DataHUB-Manual/datahub-Manual/datahub-projectsPanel.html) via the icon in the top-left (1)
 2. open the [hamburger Menu](#hamburger-menu) (2)
@@ -1182,7 +1182,7 @@ The DataHUB Sync panel allows you to
 
 <div>
 
-![](./../../../img/datahub-hamburgerMenu.drawio.svg)
+![](./../../../images/datahub-hamburgerMenu.drawio.svg)
 
 </div>
 </div>
@@ -1206,7 +1206,7 @@ The DataHUB Sync panel allows you to
 
 <div>
 
-![w:400](./../../../img/datahub-avatarMenu.drawio.svg)
+![w:400](./../../../images/datahub-avatarMenu.drawio.svg)
 
 </div>
 </div>
@@ -1217,7 +1217,7 @@ The DataHUB Sync panel allows you to
 
 ## Projects Panel
 
-![bg right w:600](./../../../img/datahub-projectsPanel.drawio.svg)
+![bg right w:600](./../../../images/datahub-projectsPanel.drawio.svg)
 
 1. Choose a tab (1) to see only your ARCs, or explore other publicly available ARCs. 
 2. The main panel (2) lists all ARCs
@@ -1232,7 +1232,7 @@ The DataHUB Sync panel allows you to
 
 The ARC Panel is the main working area for your ARC.
 
-![w:1000](./../../../img/datahub-ARC-overview.drawio.svg)
+![w:1000](./../../../images/datahub-ARC-overview.drawio.svg)
 
 ---
 
@@ -1255,7 +1255,7 @@ The ARC Panel is the main working area for your ARC.
 
 <div>
 
-![w:600](./../../../img/datahub-ARC-overview.drawio.svg)
+![w:600](./../../../images/datahub-ARC-overview.drawio.svg)
 
 </div>
 </div>
@@ -1281,7 +1281,7 @@ The ARC Panel is the main working area for your ARC.
 
 <div>
 
-![w:600](./../../../img/datahub-ARC-overview.drawio.svg)
+![w:600](./../../../images/datahub-ARC-overview.drawio.svg)
 
 </div>
 </div>
@@ -1298,7 +1298,7 @@ The ARC Panel is the main working area for your ARC.
 
 1. Click on **Project Information** in the left navigation panel
 
-![fit w:1050](./../../../img/datahub_members_seq2.png)
+![fit w:1050](./../../../images/datahub_members_seq2.png)
 
 ---
 
@@ -1306,7 +1306,7 @@ The ARC Panel is the main working area for your ARC.
 
 2. Click on **Members**
 
-![fit w:1050](./../../../img/datahub_members_seq3.png)
+![fit w:1050](./../../../images/datahub_members_seq3.png)
 
 ---
 
@@ -1314,7 +1314,7 @@ The ARC Panel is the main working area for your ARC.
 
 3. Click on **Invite members**
 
-![w:950](./../../../img/datahub_members_seq4.png)
+![w:950](./../../../images/datahub_members_seq4.png)
 
 ---
 
@@ -1322,7 +1322,7 @@ The ARC Panel is the main working area for your ARC.
 
 4. Search for potential collaborators
 
-![w:650](./../../../img/datahub_members_seq5.png)
+![w:650](./../../../images/datahub_members_seq5.png)
 
 ---
 
@@ -1330,7 +1330,7 @@ The ARC Panel is the main working area for your ARC.
 
 5. Select a role
 
-![w:650](./../../../img/datahub_members_seq6.png)
+![w:650](./../../../images/datahub_members_seq6.png)
 
 ---
 
@@ -1340,7 +1340,7 @@ The ARC Panel is the main working area for your ARC.
 
 When inviting new members to an ARC or group, you can choose between different levels.
 
-<img src="./../../../img/arc-sharing-PermissionsRoles.drawio.png" style="display: block; margin: auto" width=800px>
+<img src="./../../../images/arc-sharing-PermissionsRoles.drawio.png" style="display: block; margin: auto" width=800px>
 
 :bulb: By default you are **Owner** of an ARC you create or upload to the DataHUB.
 
@@ -1373,7 +1373,7 @@ When inviting new members to an ARC or group, you can choose between different l
 
 ## Options to share an ARC via the DataHUB
 
-<img src="./../../../img/arc-sharing-Options.drawio.png" style="display: block; margin: auto" width=700px>
+<img src="./../../../images/arc-sharing-Options.drawio.png" style="display: block; margin: auto" width=700px>
 
 ---
 
@@ -1399,7 +1399,7 @@ An **group**-shared ARC | https://git.nfdi4plants.org/hhu-plant-biochemistry/Sam
 
 The visibility of ARCs and groups can be managed individually for each ARC or group
   
-<img src="./../../../img/arc-sharing-Visibility.drawio.png" style="display: block; margin: auto" width=800px>
+<img src="./../../../images/arc-sharing-Visibility.drawio.png" style="display: block; margin: auto" width=800px>
 
 :bulb: By default every ARC and every group is set to **private**.
 
@@ -1407,7 +1407,7 @@ The visibility of ARCs and groups can be managed individually for each ARC or gr
 
 ## ARC DataHUB members // ARC Investigation contacts <!-- fit -->
 
-![w:1100](./../../../img/arc-sharing-MembersVsContacts.drawio.png)
+![w:1100](./../../../images/arc-sharing-MembersVsContacts.drawio.png)
 
 :bulb: Investigation contacts are not automatically invited as members to the ARC.
 
@@ -1421,7 +1421,7 @@ The visibility of ARCs and groups can be managed individually for each ARC or gr
 
 Check out the **commit history** of your ARC via Repository (2) or directly via commits (7)
 
-![w:1000](./../../../img/datahub-ARC-overview.drawio.svg)
+![w:1000](./../../../images/datahub-ARC-overview.drawio.svg)
 
 ---
 
@@ -1437,7 +1437,7 @@ Check out the **commit history** of your ARC via Repository (2) or directly via 
 
 ## Project management
 
-![w:800](./../../../img/tpj16474-fig-0007-m.jpg)
+![w:800](./../../../images/tpj16474-fig-0007-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
@@ -1450,7 +1450,7 @@ Check out the **commit history** of your ARC via Repository (2) or directly via 
 
 Add issues to your ARC (3)
 
-![w:1000](./../../../img/datahub-ARC-overview.drawio.svg)
+![w:1000](./../../../images/datahub-ARC-overview.drawio.svg)
 
 ---
 
@@ -1471,7 +1471,7 @@ Add issues to your ARC (3)
 
 <div>
 
-![w:600](./../../../img/datahub-wiki.png)
+![w:600](./../../../images/datahub-wiki.png)
 
 </div>
 </div>
@@ -1488,14 +1488,14 @@ Add issues to your ARC (3)
 
 # Publish your ARC, get a DOI
 
-![w:800px](./../../../img/ARC_SeamlessPublication.svg)
+![w:800px](./../../../images/ARC_SeamlessPublication.svg)
 
 ---
 
 # Validate & publish
 
 
-![h:400](././../../../img/tpj16474-fig-0008-m.jpg)
+![h:400](././../../../images/tpj16474-fig-0008-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
@@ -1511,7 +1511,7 @@ Add issues to your ARC (3)
 
 ## Receive a DOI
 
-![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/data-publication/doi-accession.png)
+![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/data-publication/doi-accession.png)
 
 
 ---
@@ -1573,7 +1573,7 @@ In the file tree you can
 
 :warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
 
-![bg right:40% w:400](./../../../img/arcitect-ARCPanel-assay03.png)
+![bg right:40% w:400](./../../../images/arcitect-ARCPanel-assay03.png)
 
 
 ---
@@ -1581,13 +1581,13 @@ In the file tree you can
 
 ## Where do I store my ARC?
 
-![](./../../../img/ARC-storageLocations-withNotes.drawio.png)
+![](./../../../images/ARC-storageLocations-withNotes.drawio.png)
 
 ---
 
 ## ARC storage and sharing
 
-![w:600](./../../../img/ARC-storageLocations-withNotes.drawio.png)
+![w:600](./../../../images/ARC-storageLocations-withNotes.drawio.png)
 
 - DataHUB as "ground truth" / original clone
 - You can sync and communicate all changes to your ARC via the DataHUB
@@ -1634,7 +1634,7 @@ In the file tree you can
 
 ## Download the demo data
 
-![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.png)
+![bg right:40% w:250](./../../../images/ARCitect-help-Sidebar.png)
 
 1. Open the ARCitect
 2. Login (1) to your DataHUB account
@@ -1650,7 +1650,7 @@ In the file tree you can
 5. Click the download button, select a location and open the ARC.
 6. Open the downloaded ARC
 
-![w:700](./../../../img/arcitect-download-TalinumARC.png)
+![w:700](./../../../images/arcitect-download-TalinumARC.png)
 
 :bulb: This is basically the ARC we created in the last session.
 

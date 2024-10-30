@@ -80,7 +80,7 @@ for unit in *.md; do
     fi
 done
 
-sed "s|\.\./\.\./\.\./img/|\.\./\.\./\.\./\.\./img/|g" $outfile > tmp; mv tmp $outfile
+sed "s|\.\./\.\./\.\./images/|\.\./\.\./\.\./\.\./images/|g" $outfile > tmp; mv tmp $outfile
 sed "s|\./qr-code|\./\.\./qr-code|g" $outfile > tmp; mv tmp $outfile
 sed "s|\./start-here|\./\.\./start-here|g" $outfile > tmp; mv tmp $outfile
 

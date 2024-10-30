@@ -50,13 +50,13 @@ Please install the latest version of the ARCitect: https://github.com/nfdi4plant
 
 https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZlS_Kzf7psk-5w-xg?e=u0sADd
 
-![bg right w:600](./../../img/demo-data-download.png)
+![bg right w:600](./../../images/demo-data-download.png)
 
 ---
 
 ## You just received your data
 
-![bg right width:400](./../../img/demo_data_screenshot.png)
+![bg right width:400](./../../images/demo_data_screenshot.png)
 
 ---
 
@@ -70,7 +70,7 @@ https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZl
 
 :bulb: We'll talk about data annotation later
 
-![bg right width:600](./../../img/ARC_fillWithData_experimental.png)
+![bg right width:600](./../../images/ARC_fillWithData_experimental.png)
 
 ---
 
@@ -82,7 +82,7 @@ https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZl
 
 # Initiate the ARC folder structure
 
-![bg right:40% w:250](./../../img/ARCitect-help-Sidebar.drawio.svg)
+![bg right:40% w:250](./../../images/ARCitect-help-Sidebar.drawio.svg)
 
 1. Create a **New ARC** (2)
 2. Select a location and name it **TalinumPhotosynthesis**
@@ -103,7 +103,7 @@ https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZl
 
 💡 Avoid spaces in your ARC's name
 
-![bg right:30% w:500](./../../img/ARCitect_TalinumPhotosynthesis.png)
+![bg right:30% w:500](./../../images/ARCitect_TalinumPhotosynthesis.png)
 
 ---
 
@@ -114,7 +114,7 @@ https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZl
 3. Add a description
 4. Click "Update" to save your changes
 
-![bg right w:700](./../../img/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
+![bg right w:700](./../../images/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
 
 ---
 
@@ -124,13 +124,13 @@ In the section "People" click "ADD PERSON" to add at least one contributor
 
 <br>
 
-![w:1000](./../../img/ARCitect_TalinumPhotosynthesis_addPerson.png)
+![w:1000](./../../images/ARCitect_TalinumPhotosynthesis_addPerson.png)
 
 ---
 
 # Add contributor details
 
-![bg right w:500](./../../img/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
+![bg right w:500](./../../images/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
 
 :bulb: For each person that you add, make sure to add
 - First Name
@@ -144,7 +144,7 @@ In the section "People" click "ADD PERSON" to add at least one contributor
 
 by clicking "Add Study" and entering **talinum_drought** as identifier for the study
 
-![bg right w:500](./../../img/ARCitect_TalinumPhotosynthesis_Study.png)
+![bg right w:500](./../../images/ARCitect_TalinumPhotosynthesis_Study.png)
 
 ---
 
@@ -157,13 +157,13 @@ In the study panel you can add
 - publications
 - data process information
 
-![bg right w:500](./../../img/ARCitect_TalinumPhotosynthesis_StudyPanel.png)
+![bg right w:500](./../../images/ARCitect_TalinumPhotosynthesis_StudyPanel.png)
 
 ---
 
 # Add a protocol to the study
 
-![bg right w:500](../../img/ARCitect_TalinumPhotosynthesis_Study-protocol.png)
+![bg right w:500](../../images/ARCitect_TalinumPhotosynthesis_Study-protocol.png)
 
 Click "Add Protocol" in the sidebar to add a protocol to the study
 
@@ -176,7 +176,7 @@ You can either
 - directly write a **new protocol** within the ARCitect or
 - import an existing one from your computer
 
-![w:800](./../../img/arcitect-ARCPanel-protocol.png)
+![w:800](./../../images/arcitect-ARCPanel-protocol.png)
 
 ---
 
@@ -190,7 +190,7 @@ From the demo data, transfer the lab notes stored in `plant_material.txt` to the
 
 Click "Add Assay" in the sidebar
 
-![bg right:45% w:500](../../img/ARCitect_TalinumPhotosynthesis_addAssay.png)
+![bg right:45% w:500](../../images/ARCitect_TalinumPhotosynthesis_addAssay.png)
 
 
 ---
@@ -200,7 +200,7 @@ Click "Add Assay" in the sidebar
 1. Enter **rnaseq** as the identifier
 2. Link the assay to the study **talinum_drought**
 
-![bg right:45%  w:600](./../../img/ARCitect_TalinumPhotosynthesis_Assay2.png)
+![bg right:45%  w:600](./../../images/ARCitect_TalinumPhotosynthesis_Assay2.png)
 
 ---
 
@@ -215,7 +215,7 @@ In the assay panel you can
    - technology platform.
 3. add data process information
 
-![bg right w:500](./../../img/ARCitect_TalinumPhotosynthesis_AssayPanel.png)
+![bg right w:500](./../../images/ARCitect_TalinumPhotosynthesis_AssayPanel.png)
 
 
 ---
@@ -237,7 +237,7 @@ In the file tree you can
   - **add a dataset** and 
   - **protocols** associated with that dataset
 
-![bg right:40% w:400](../../img/ARCitect_TalinumPhotosynthesis_Assay3.png)
+![bg right:40% w:400](../../images/ARCitect_TalinumPhotosynthesis_Assay3.png)
 
 ---
 
@@ -246,8 +246,8 @@ In the file tree you can
 1. Cick "Add Dataset"
 2. Select the *.fastq.gz files from the demo data
 
-![bg right w:300](../../img/ARCitect_TalinumPhotosynthesis_Assay4.png)
-![bg right w:300](../../img/ARCitect_TalinumPhotosynthesis_Assay5.png)
+![bg right w:300](../../images/ARCitect_TalinumPhotosynthesis_Assay4.png)
+![bg right w:300](../../images/ARCitect_TalinumPhotosynthesis_Assay5.png)
 
 ---
 
@@ -259,13 +259,13 @@ From the demo data, import the lab notes related to the `rnaseq` assay:
   - Illumina_libraries.txt
   - NGS_SampleSheet.xlsx
 
-![bg right w:500](../../img/ARCitect_TalinumPhotosynthesis_Assay6.png)
+![bg right w:500](../../images/ARCitect_TalinumPhotosynthesis_Assay6.png)
 
 ---
 
 # Collaborate and share
 
-![w:650](./../../img/ARC_DataSharing_Experts02_img1.png)
+![w:650](./../../images/ARC_DataSharing_Experts02_img1.png)
 
 ---
 
@@ -275,7 +275,7 @@ Click **Login** (1) in the sidebar to login to the DataHUB.
 
 :bulb: This automatically opens your browser at the DataHUB (https://git.nfdi4plants.org) and asks you to login, if you are not already logged in. 
 
-![bg right:40% w:250](./../../img/ARCitect-help-Sidebar.drawio.svg)
+![bg right:40% w:250](./../../images/ARCitect-help-Sidebar.drawio.svg)
 
 ---
 
@@ -283,7 +283,7 @@ Click **Login** (1) in the sidebar to login to the DataHUB.
 
 To communicate with the DataHUB, navigate to **Versions** (6)
 
-![bg right:40% w:250](./../../img/ARCitect-help-Sidebar.drawio.svg)
+![bg right:40% w:250](./../../images/ARCitect-help-Sidebar.drawio.svg)
 
 ---
 
@@ -295,7 +295,7 @@ The versions panel allows you to
 - sync the changes to the DataHUB, and
 - check the history of your ARC
 
-![bg right w:650](./../../img/arcitect-VersionsPanel.png)
+![bg right w:650](./../../images/arcitect-VersionsPanel.png)
 
 ---
 
@@ -305,7 +305,7 @@ If you are logged in, the versions panel shows
 - your DataHUB's *Full Name* and *eMail*
 - the URL of the current ARC in the DataHUB `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`
 
-![bg right w:650](./../../img/arcitect-VersionsPanel.png)
+![bg right w:650](./../../images/arcitect-VersionsPanel.png)
 
 ---
 
@@ -315,7 +315,7 @@ If you are logged in, the versions panel shows
 2. Click "COMMIT" to save your changes locally
 3. Click "UPLOAD" to upload your ARC to the DataHUB
 
-![bg right w:700](./../../img/arcitect-VersionsPanel.png)
+![bg right w:700](./../../images/arcitect-VersionsPanel.png)
 
 ---
 
@@ -328,7 +328,7 @@ If you are logged in, the versions panel shows
 
 # Received two emails from "GitLab" about a failed pipeline? <!-- fit -->
 
-![w:600](./../../img/cqc-error-email.png)
+![w:600](./../../images/cqc-error-email.png)
 
 :fire: Don't worry :smile:
 
@@ -336,7 +336,7 @@ If you are logged in, the versions panel shows
 
 ## Pipeline Failed
 
-![bg right w:700](./../../img/cqc-error-badges.png)
+![bg right w:700](./../../images/cqc-error-badges.png)
 
 - a "continuous quality control" (CQC) pipeline validates your ARC
 - This fails if one of the following metadata items is missing:
@@ -357,7 +357,7 @@ If you are logged in, the versions panel shows
 
 If the pipeline has failed once, it is disabled by default
 
-![bg right w:500](./../../img/cqc-error-email2.png)
+![bg right w:500](./../../images/cqc-error-email2.png)
 
 ---
 
@@ -374,13 +374,13 @@ To reactivate it and let the DataHUB validate your ARC again:
   3. check box "Default to Auto DevOps pipeline"
   4. Save changes
 
-![bg right:60% w:600](./../../img/cqc-activate-autodevops.png)
+![bg right:60% w:600](./../../images/cqc-activate-autodevops.png)
 
 ---
 
 # Collaborate and share
 
-![w:650](./../../img/ARC_DataSharing_Experts02_img1.png)
+![w:650](./../../images/ARC_DataSharing_Experts02_img1.png)
 
 ---
 
@@ -393,31 +393,31 @@ To reactivate it and let the DataHUB validate your ARC again:
 
 1. Click on **Project Information** in the left navigation panel
 
-![fit w:1050](./../../img/datahub_members_seq2.png)
+![fit w:1050](./../../images/datahub_members_seq2.png)
 
 ---
 
 2. Click on **Members**
 
-![fit w:1050](./../../img/datahub_members_seq3.png)
+![fit w:1050](./../../images/datahub_members_seq3.png)
 
 ---
 
 3. Click on **Invite members**
 
-![fit w:1050](./../../img/datahub_members_seq4.png)
+![fit w:1050](./../../images/datahub_members_seq4.png)
 
 ---
 
 4. Search for potential collaborators
 
-![fit w:1050](./../../img/datahub_members_seq5.png)
+![fit w:1050](./../../images/datahub_members_seq5.png)
 
 ---
 
 5. Select a role
 
-![fit w:1050](./../../img/datahub_members_seq6.png)
+![fit w:1050](./../../images/datahub_members_seq6.png)
 
 
 ---
@@ -456,7 +456,7 @@ object-position: 100% 45%;
 }
 </style>
 
-![](./../../img/ARC_Sharing_img1.png)
+![](./../../images/ARC_Sharing_img1.png)
 
 
 ---
@@ -470,7 +470,7 @@ object-position: 100% 45%;
    1. Add a "commit message"
    2. Upload your changes to the DataHUB
 
-![bg right:40% w:400](../../img/ARCitect_TalinumPhotosynthesis_Assay3.png)
+![bg right:40% w:400](../../images/ARCitect_TalinumPhotosynthesis_Assay3.png)
 
 ---
 
@@ -479,7 +479,7 @@ object-position: 100% 45%;
 1. Navigate to Versions
 2. Check the History panel at the bottom
 
-![w:650](./../../img/ARCitect_TalinumPhotosynthesis_History.png)
+![w:650](./../../images/ARCitect_TalinumPhotosynthesis_History.png)
 
 ---
 
@@ -503,7 +503,7 @@ section p br {
 <br>
 🌐 Shared with collaborators
 
-![bg right width:400](./../../img/demo_arc_screenshot.png)
+![bg right width:400](./../../images/demo_arc_screenshot.png)
 
 ---
 
@@ -520,7 +520,7 @@ section p br {
 2. Navigate to the general (1) settings
 3. In the advanced section (4) you can **delete** your ARC
 
-![bg right w:600](./../../img/datahub-ARC-settings.drawio.svg)
+![bg right w:600](./../../images/datahub-ARC-settings.drawio.svg)
 
 ---
 
@@ -530,7 +530,7 @@ section p br {
 2. In the sidebar on the left, navigate to `Repository` &rarr; `Commits`
 3. There you find a chronological list of syncing messages together with who synced and when
 
-![bg right w:600](./../../img/datahub-commits.png)
+![bg right w:600](./../../images/datahub-commits.png)
 
 ---
 
@@ -539,7 +539,7 @@ section p br {
 4. Click on the latest (i.e. uppermost) commit.
 5. In the top-right corner select `Revert` from the drop-down menu `Options`.
 
-<img src="./../../img/datahub-commits-revert01.png" style="width:75%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../../images/datahub-commits-revert01.png" style="width:75%;display: block;margin-left: auto;margin-right: auto;">
 
 
 --- 
@@ -548,7 +548,7 @@ section p br {
 6. Un-check the box "Start a new merge request with these changes".
 7. Click "Revert"
 
-<img src="./../../img/datahub-commits-revert02.png" style="width:55%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../../images/datahub-commits-revert02.png" style="width:55%;display: block;margin-left: auto;margin-right: auto;">
 
 
 ---

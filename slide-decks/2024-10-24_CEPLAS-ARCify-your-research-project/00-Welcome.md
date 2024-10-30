@@ -21,7 +21,7 @@ October, 2024
 Dominik Brilhaus (CEPLAS)
 Sabrina Zander (MibiNet)
 
-![bg fit](./../../img/background_title_ceplas.drawio.svg)
+![bg fit](./../../images/background_title_ceplas.drawio.svg)
 
 ---
 
@@ -32,7 +32,7 @@ Sabrina Zander (MibiNet)
 - Share them via the DataHUB
 - Annotate with metadata
 
-![bg right w:500](./../../img/ceplas-ARCs.drawio.svg)
+![bg right w:500](./../../images/ceplas-ARCs.drawio.svg)
 
 ---
 

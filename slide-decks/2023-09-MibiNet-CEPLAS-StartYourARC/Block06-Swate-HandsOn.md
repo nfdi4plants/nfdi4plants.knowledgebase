@@ -109,7 +109,7 @@ git clone "https://demo-user:5ehDYeHcqP2MqVXsNNPu@git.nfdi4plants.org/teaching/d
 
 <img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate_c_40x40.png'/> ... **annotate the experimental data**
 
-![bg right:40% width:400](./../../img/demo_arc_screenshot.png)
+![bg right:40% width:400](./../../images/demo_arc_screenshot.png)
 
 ---
 
@@ -119,7 +119,7 @@ git clone "https://demo-user:5ehDYeHcqP2MqVXsNNPu@git.nfdi4plants.org/teaching/d
 
 ## Swate Overview
 
-![width:1000](./../../img/Swate_Overview.png)
+![width:1000](./../../images/Swate_Overview.png)
 
 ---
 
@@ -160,7 +160,7 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 </div>
 
 <div class="columns-right">
-    <img src="./../../img/Swate-CreateAnnotationTable-Exp.jpg" style="width: 1200px">
+    <img src="./../../images/Swate-CreateAnnotationTable-Exp.jpg" style="width: 1200px">
 </div>
 
 </div>
@@ -177,7 +177,7 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 
 > :bulb: This adds three columns to your table, one visible and **two** hidden.
 
-![bg right:30% w:400](./../../img/Swate-AddBuildingBlock-Exp.jpg?v31.01.22)
+![bg right:30% w:400](./../../images/Swate-AddBuildingBlock-Exp.jpg?v31.01.22)
 
 
 ---
@@ -235,7 +235,7 @@ Click the <kbd>Update Ontology Terms</kbd> quick access buttons.
 
 At this point. Your table should look similar to this:
 
-![w:1000](./../../img/demo_isa.study1.png)
+![w:1000](./../../images/demo_isa.study1.png)
 
 ---
 
@@ -271,7 +271,7 @@ Try to add suitable *building blocks* for other pieces of metadata from the plan
     - You will see a preview of all building blocks which are part of this template.
 2. Click <kbd>Add template</kbd> to add all Building Blocks from the template to your table, which <u>do not exist yet</u>.
 
-![bg right:30% w:350px](./../../img/swate_templates.svg)
+![bg right:30% w:350px](./../../images/swate_templates.svg)
 
 ---
 
@@ -283,7 +283,7 @@ Sometimes you need to add or update the unit of an existing building block.
 2. Open the *Building Blocks* tab
 3. In the bottom panel "Add/Update unit reference to existing building block", search for the unit "milligram". Select the unit term and click <kbd>Update unit for cells</kbd>.
 :bulb: If you already had values in the main column they will be updated automatically.
-4. Click the *Update Ontology Terms* <a href="./img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
+4. Click the *Update Ontology Terms* <a href="./images/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
    
 ---
 
@@ -341,7 +341,7 @@ Example workflows with three *processes* each:
 
 ## Process Information
 
-![w:700](././../../img/ARCitect_Assay_Data.png)
+![w:700](././../../images/ARCitect_Assay_Data.png)
 
 <!-- TODO Update ARCitect Annotation 
 Examples, Excelsheet... --> 

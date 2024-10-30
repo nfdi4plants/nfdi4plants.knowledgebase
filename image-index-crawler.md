@@ -25,7 +25,7 @@ touch $indexfile
 
 find img -type f > .tmp_all-files
 grep -v '.pptx' .tmp_all-files > .tmp_all-images-only
-sed 's|^img/|./img/|g' .tmp_all-images-only > .tmp_all-images-relative
+sed 's|^img/|./images/|g' .tmp_all-images-only > .tmp_all-images-relative
 
 while IFS= read -r img; 
 do

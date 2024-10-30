@@ -15,7 +15,7 @@ Here you can find the slides shown during the RPTU Summer School on RDM.
     height="255px"
 />
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 21th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/images/logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 21th, 2023
 <hr>
 -->
 
@@ -28,7 +28,7 @@ Here you can find the slides shown during the RPTU Summer School on RDM.
     height="255px"
 />
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/logos/CreativeCommons/by.svg" style="height:15px"></a> [CEPLAS](https://ceplas.eu) 📆 July 20th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/images/logos/CreativeCommons/by.svg" style="height:15px"></a> [CEPLAS](https://ceplas.eu) 📆 July 20th, 2023
 <hr>
 
 ## Workflows and Data Processing
@@ -40,7 +40,7 @@ Here you can find the slides shown during the RPTU Summer School on RDM.
     height="255px"
 />
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 20th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/images/logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 20th, 2023
 
 **Included Resources:**   
 
@@ -57,7 +57,7 @@ Here you can find the slides shown during the RPTU Summer School on RDM.
     height="255px"
 />
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 20th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/images/logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 20th, 2023
 
 <br>
 
@@ -68,7 +68,7 @@ Here you can find the slides shown during the RPTU Summer School on RDM.
     height="255px"
 />
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 19th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/images/logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 19th, 2023
 <hr>
 
 ## Organization and Archives
@@ -80,7 +80,7 @@ Here you can find the slides shown during the RPTU Summer School on RDM.
     height="255px"
 />
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 19th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/images/logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 19th, 2023
 <hr>
 
 <!--
@@ -93,7 +93,7 @@ Here you can find the slides shown during the RPTU Summer School on RDM.
     height="255px"
 />
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 18th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/images/logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 18th, 2023
 <hr>
 -->
 ## Versioning & Collaboration 
@@ -120,7 +120,7 @@ This is an interactive session, the contents of which can be found by following 
     height="255px"
 />
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 17th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/images/logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 17th, 2023
 <hr>
 
 **Relevant Links:**   
@@ -142,7 +142,7 @@ This is an interactive session, the contents of which can be found by following 
     height="300px"
 />
 
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/img/logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 17th, 2023
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="/docs/images/logos/CreativeCommons/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/) 📆 July 17th, 2023
    
 
 **Included Resources:**   

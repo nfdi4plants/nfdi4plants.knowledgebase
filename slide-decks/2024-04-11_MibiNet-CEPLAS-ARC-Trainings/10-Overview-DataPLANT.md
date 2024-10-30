@@ -21,19 +21,19 @@ TODO
 -->
 # MibiNet connection to NFDIs
 
-![](../../img/connection_NFDI.drawio.png)
+![](../../images/connection_NFDI.drawio.png)
 
 ---
 
 # Data Stewardship between DataPLANT and the community <!-- fit -->
 
-![w:880](./../../img/DataPLANT_big_collaboration.drawio.png)
+![w:880](./../../images/DataPLANT_big_collaboration.drawio.png)
 
 ---
 
 # Annotated Research Context (ARC)
 
-![width:850](./../../img/ARC-data-cycle-bag.drawio.png)
+![width:850](./../../images/ARC-data-cycle-bag.drawio.png)
 
 Your entire investigation in a single unified bag
 
@@ -41,43 +41,43 @@ Your entire investigation in a single unified bag
 
 # You can store your ARC in the DataHUB
 
-![w:800](./../../img/DataPLANT_BigPicture_seq2.png)
+![w:800](./../../images/DataPLANT_BigPicture_seq2.png)
 
 ---
 
 # ARCs are versioned
 
-![w:800](./../../img/DataPLANT_BigPicture_seq3.png)
+![w:800](./../../images/DataPLANT_BigPicture_seq3.png)
 
 ---
 
 # You can invite collaborators
 
-![w:800](./../../img/DataPLANT_BigPicture_seq4.png)
+![w:800](./../../images/DataPLANT_BigPicture_seq4.png)
 
 ---
 
 # Collaborate and contribute
 
-![w:800](./../../img/DataPLANT_BigPicture_seq5.png)
+![w:800](./../../images/DataPLANT_BigPicture_seq5.png)
 
 ---
 
 # Reuse data in ARCs
 
-![w:800](./../../img/DataPLANT_BigPicture_seq6.png)
+![w:800](./../../images/DataPLANT_BigPicture_seq6.png)
 
 ---
 
 # Publish your ARC
 
-![w:800](./../../img/DataPLANT_BigPicture_seq7.png)
+![w:800](./../../images/DataPLANT_BigPicture_seq7.png)
 
 ---
 
 # ARC as single-entry point
 
-![w:900](./../../img/ARC-publication-outlets.drawio.png)
+![w:900](./../../images/ARC-publication-outlets.drawio.png)
 
 ---
 
@@ -94,26 +94,26 @@ object-position: 100% 80%;
 }
 </style>
 
-![](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/ARC_Repository03_img1.png)
+![](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/ARC_Repository03_img1.png)
 
 ---
 
 # Moving from paper to data publications
 
-![w:400px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/DataPLANT_LandingPage_Mission.svg)
+![w:400px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/DataPLANT_LandingPage_Mission.svg)
 
 
 ---
 
 # Publish your ARC, get a DOI
 
-![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/img/ARC_SeamlessPublication.svg)
+![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/ARC_SeamlessPublication.svg)
 
 ---
 
 # Metadata templates
 
-![w:700](./../../img/Swate_metadataTemplates.png)
+![w:700](./../../images/Swate_metadataTemplates.png)
 
 Facilities and labs can define their common workflows as templates
 
@@ -122,7 +122,7 @@ Facilities and labs can define their common workflows as templates
 # Validation
 
 
-![h:400](./../../img/tpj16474-fig-0008-m-modified.png)
+![h:400](./../../images/tpj16474-fig-0008-m-modified.png)
 
 <span class="footer-reference"> adapted from Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
@@ -131,7 +131,7 @@ Facilities and labs can define their common workflows as templates
 # Validate & publish
 
 
-![h:400](././../../img/tpj16474-fig-0008-m.jpg)
+![h:400](././../../images/tpj16474-fig-0008-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
@@ -139,13 +139,13 @@ Facilities and labs can define their common workflows as templates
 
 # Learning from Open-Source-Software development
 
-![w:800](./../../img/arc-validation-cqc.drawio.png)
+![w:800](./../../images/arc-validation-cqc.drawio.png)
 
 ---
 
 # Data analysis and workflows
 
-![w:800](./../../img/tpj16474-fig-0005-m.jpg)
+![w:800](./../../images/tpj16474-fig-0005-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
@@ -156,7 +156,7 @@ Facilities and labs can define their common workflows as templates
 <div class="two-columns">
 <div>
 
-![](./../../img/galaxy-integration.drawio.png)
+![](./../../images/galaxy-integration.drawio.png)
 
 </div>
 
@@ -185,7 +185,7 @@ Facilities and labs can define their common workflows as templates
   
   </div><div>
   
-  ![](./../../img/ceplas-enablingPlatforms.drawio.png)
+  ![](./../../images/ceplas-enablingPlatforms.drawio.png)
   
   </div>
 </div>
@@ -195,20 +195,20 @@ Facilities and labs can define their common workflows as templates
 
 # Streamlined data exchange
 
-<img src="./../../img/enablingPlatform-FileShare.drawio.png" style="width:60%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../../images/enablingPlatform-FileShare.drawio.png" style="width:60%;display: block;margin-left: auto;margin-right: auto;">
 
 ---
 
 # Meet your collaborators in an ARC
 
-<img src="./../../img/enablingPlatform-Timeline.drawio.png" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../../images/enablingPlatform-Timeline.drawio.png" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
 
 
 ---
 <!-- 
 # Mutable data life cycle
 
-![w:700](./../../img/tpj16474-fig-0006-m.jpg)
+![w:700](./../../images/tpj16474-fig-0006-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
@@ -216,7 +216,7 @@ Facilities and labs can define their common workflows as templates
 
 # Project management
 
-![w:800](./../../img/tpj16474-fig-0007-m.jpg)
+![w:800](./../../images/tpj16474-fig-0007-m.jpg)
 
 <span class="footer-reference"> Weil, H.L., Schneider, K., et al. (2023), PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research. Plant J. https://doi.org/10.1111/tpj.16474 </span>
 
@@ -228,7 +228,7 @@ Facilities and labs can define their common workflows as templates
 
 https://dmpg.nfdi4plants.org
 
-![w:800](./../../img/zhou2023-dataplan.png)
+![w:800](./../../images/zhou2023-dataplan.png)
 
 ---
 
@@ -236,13 +236,13 @@ https://dmpg.nfdi4plants.org
 
 DataPLANT employs a **data-centric** approach to RDM
 
-![w:800](./../../img/ARC-data-centric_everything-is-a-file.drawio.png)
+![w:800](./../../images/ARC-data-centric_everything-is-a-file.drawio.png)
 
 ---
 
 # No technical lock-in
 
-![w:1000](./../../img/arc-tool-assistance.drawio.png)
+![w:1000](./../../images/arc-tool-assistance.drawio.png)
 
 (Meta)data transparency with tool assistance but **no technical lock-in**
 
@@ -250,31 +250,31 @@ DataPLANT employs a **data-centric** approach to RDM
 
 # The ARC ecosystem
 
-![w:850](./../../img/ARC-ecosystem-10.drawio.png)
+![w:850](./../../images/ARC-ecosystem-10.drawio.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../img/ARC_fillWithData_seq1.png)
+![width:950](./../../images/ARC_fillWithData_seq1.png)
 
 ---
 
 # ARCs store experimental data
 
-![width:950](./../../img/ARC_fillWithData_seq3.png)
+![width:950](./../../images/ARC_fillWithData_seq3.png)
 
 ---
 
 # Computations can be run inside ARCs
 
-![width:950](./../../img/ARC_fillWithData_seq5.png)
+![width:950](./../../images/ARC_fillWithData_seq5.png)
 
 ---
 
 # ARCs come with comprehensive metadata
 
-![width:950](./../../img/ARC_fillWithData_seq6.png)
+![width:950](./../../images/ARC_fillWithData_seq6.png)
 
 ---
 
@@ -283,7 +283,7 @@ DataPLANT employs a **data-centric** approach to RDM
 <div class="two-columns">
   <div>
   
-  ![w:500](./../../img/ARC_BuildsOnStandards3.png)
+  ![w:500](./../../images/ARC_BuildsOnStandards3.png)
   
   </div>
   <div>
@@ -304,6 +304,6 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 # The DataPLANT DataHUB &ndash; a GitLab ***Plus***
 
-![](./../../img/DataHUB-GitLab.drawio.png) 
+![](./../../images/DataHUB-GitLab.drawio.png) 
 
 -->

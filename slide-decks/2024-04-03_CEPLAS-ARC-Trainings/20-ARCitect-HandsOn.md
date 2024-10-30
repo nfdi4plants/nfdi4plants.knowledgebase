@@ -44,29 +44,29 @@ Please install version **v0.0.31** (or later) of the ARCitect: https://github.co
 
 https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZlS_Kzf7psk-5w-xg?e=u0sADd
 
-![bg right w:600](./../../img/demo-data-download.png)
+![bg right w:600](./../../images/demo-data-download.png)
 
 ---
 
 # Sort Demo data in an ARC
 
-![bg right width:400](./../../img/demo_data_screenshot.png)
+![bg right width:400](./../../images/demo_data_screenshot.png)
 
-![width:900](./../../img/ARC_fillWithData_experimental.png)
+![width:900](./../../images/ARC_fillWithData_experimental.png)
 
 ---
 
 # Open ARCitect
 
 1. Login to DataHUB (1)
-   ![bg right:40% w:250](./../../img/ARCitect-help-Sidebar.png)
+   ![bg right:40% w:250](./../../images/ARCitect-help-Sidebar.png)
 2. Select `git.nfdi4plants.org` as Host 
-    ![w:800](./../../img/ARCitect_Choose_DataHUB.png)
+    ![w:800](./../../images/ARCitect_Choose_DataHUB.png)
 ---
 
 # Initiate the ARC folder structure
 
-![bg right:40% w:250](./../../img/ARCitect-help-Sidebar.png)
+![bg right:40% w:250](./../../images/ARCitect-help-Sidebar.png)
 
 1. Create a **New ARC** (2)
 2. Select a location and name it **TalinumPhotosynthesis**
@@ -85,20 +85,20 @@ https://nfdi4plant.sharepoint.com/:f:/s/Teaching/Eik7k-oJiMREgZ24kto7sIYBGxHmmZl
 💡 Make sure that no ARC exists at  `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`. Otherwise you will sync to that ARC.
 
 
-![bg right:30% w:500](./../../img/ARCitect_TalinumPhotosynthesis.png)
+![bg right:30% w:500](./../../images/ARCitect_TalinumPhotosynthesis.png)
 
 ---
 
 # Add a description to your investigation
 
-![w:900](./../../img/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
+![w:900](./../../images/ARCitect_TalinumPhotosynthesis_InvestigationMetadata.png)
 
 ---
 
 # Add a contributor
 
 
-![bg right w:600](./../../img/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
+![bg right w:600](./../../images/ARCitect_TalinumPhotosynthesis_InvestigationPerson.png)
 - you could also add the contacts directly via ORCID
 ---
 
@@ -108,7 +108,7 @@ by clicking "Add Study" and entering an identifier for your study
 
 Use **talinum_drought** as an identifier
 
-![bg right w:500](./../../img/ARCitect_TalinumPhotosynthesis_Study.png)
+![bg right w:500](./../../images/ARCitect_TalinumPhotosynthesis_Study.png)
 
 ---
 
@@ -121,7 +121,7 @@ In the study panel you can add
 - publications
 - data process information
 
-![bg right w:500](./../../img/ARCitect_TalinumPhotosynthesis_StudyPanel.png)
+![bg right w:500](./../../images/ARCitect_TalinumPhotosynthesis_StudyPanel.png)
 <!-- TODO show connected assays -->
 ---
 
@@ -131,7 +131,7 @@ In the study panel you can add
 by clicking "Add Assay" and entering an identifier for your assay
 
 Add two assays with **rnaseq** and **metabolomics** as an identifier
-![bg right w:500](./../../img/ARCitect_TalinumPhotosynthesis_Assay.png)
+![bg right w:500](./../../images/ARCitect_TalinumPhotosynthesis_Assay.png)
 
 ---
 
@@ -144,7 +144,7 @@ You can either
 Link your assays to your **talinum_drought** study
 
 
-![bg right w:500](./../../img/ARCitect_TalinumPhotosynthesis_Assay2.png)
+![bg right w:500](./../../images/ARCitect_TalinumPhotosynthesis_Assay2.png)
 
 ---
 
@@ -155,7 +155,7 @@ In the assay panel you can define the assay's
  - technology type, and
  - technology platform
 
-![bg right w:600](./../../img/ARCitect_TalinumPhotosynthesis_AssayPanel.png)
+![bg right w:600](./../../images/ARCitect_TalinumPhotosynthesis_AssayPanel.png)
 
 ---
 
@@ -165,7 +165,7 @@ You can either
 - directly write a **new protocol** within the ARCitect or
 - import an existing one from your computer
 
-![w:800](./../../img/arcitect-ARCPanel-protocol.png)
+![w:800](./../../images/arcitect-ARCPanel-protocol.png)
 
 ---
 
@@ -180,7 +180,7 @@ In the file tree you can
 :warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
 
 
-![bg right:40% w:400](./../../img/arcitect-ARCPanel-assay03.png)
+![bg right:40% w:400](./../../images/arcitect-ARCPanel-assay03.png)
 
 ---
 
@@ -194,7 +194,7 @@ In the file tree you can
 
 The **Explorer (6)** button directly opens your ARC locally
 
-![bg right:40% w:250](./../../img/ARCitect-help-Sidebar.png)
+![bg right:40% w:250](./../../images/ARCitect-help-Sidebar.png)
 
 ---
 
@@ -202,7 +202,7 @@ The **Explorer (6)** button directly opens your ARC locally
 
 You have to commit changes before you can upload to the DataHUB
 
-![bg right:40% w:250](./../../img/ARCitect-help-Sidebar.png)
+![bg right:40% w:250](./../../images/ARCitect-help-Sidebar.png)
 
 ---
 If you are logged in, the **Commit panel** shows
@@ -213,7 +213,7 @@ It allows you to
 - add a commit message 
 - use different branches 
 
-![bg right:50% w:500](./../../img/ARCitect_Commit_panel.png)
+![bg right:50% w:500](./../../images/ARCitect_Commit_panel.png)
 
 
 ---
@@ -222,7 +222,7 @@ It allows you to
 
 From the sidebar, navigate to **DataHUB Sync** (8)
 
-![bg right:40% w:250](./../../img/ARCitect-help-Sidebar.png)
+![bg right:40% w:250](./../../images/ARCitect-help-Sidebar.png)
 
 ---
 
@@ -235,7 +235,7 @@ The DataHUB Sync panel allows you to
 - change the Remote for the synchronization
 
 
-![bg right:50% w:500](./../../img/ARCitect_DataHUB_Sync.png) 
+![bg right:50% w:500](./../../images/ARCitect_DataHUB_Sync.png) 
 
 <!-- TODO more to remote?-->
 ---
@@ -267,7 +267,7 @@ section p br {
 <br>
 🌐 Shared with collaborators
 
-![bg right width:400](./../../img/demo_arc_screenshot.png)
+![bg right width:400](./../../images/demo_arc_screenshot.png)
 
 ---
 
@@ -275,7 +275,7 @@ section p br {
 
 # Received two emails from "GitLab" about a failed pipeline? <!-- fit -->
 
-![w:600](./../../img/cqc-error-email.png)
+![w:600](./../../images/cqc-error-email.png)
 
 :fire: Don't worry :smile:
 
@@ -283,7 +283,7 @@ section p br {
 
 ## Pipeline Failed
 
-![bg right w:700](./../../img/cqc-error-badges.png)
+![bg right w:700](./../../images/cqc-error-badges.png)
 
 - a "continuous quality control" (CQC) pipeline validates your ARC
 - This fails if one of the following metadata items is missing:
@@ -304,7 +304,7 @@ section p br {
 
 If the pipeline has failed once, it is disabled by default
 
-![bg right w:500](./../../img/cqc-error-email2.png)
+![bg right w:500](./../../images/cqc-error-email2.png)
 
 ---
 
@@ -321,4 +321,4 @@ To reactivate it and let the DataHUB validate your ARC again:
   3. check box "Default to Auto DevOps pipeline"
   4. Save changes
 
-![bg right:60% w:600](./../../img/cqc-activate-autodevops.png)
+![bg right:60% w:600](./../../images/cqc-activate-autodevops.png)

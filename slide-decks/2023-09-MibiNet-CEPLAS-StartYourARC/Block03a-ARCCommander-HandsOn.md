@@ -89,7 +89,7 @@ git clone "https://demo-user:1_eznikmzxzARAbUxxnF@git.nfdi4plants.org/teaching/d
 
 ## You just received your data
 
-![bg right width:400](./../../img/demo_data_screenshot.png)
+![bg right width:400](./../../images/demo_data_screenshot.png)
 
 ---
 
@@ -108,7 +108,7 @@ git clone "https://demo-user:1_eznikmzxzARAbUxxnF@git.nfdi4plants.org/teaching/d
 
 ## Structure your data
 
-![width:800](./../../img/ARC_fillWithData_experimental.png)
+![width:800](./../../images/ARC_fillWithData_experimental.png)
 
 ---
 
@@ -172,7 +172,7 @@ arc assay add -s talinum_drought -a metabolomics
 
 ## Collaborate and share
 
-![w:650](./../../img/ARC_DataSharing_Experts02_img1.png)
+![w:650](./../../images/ARC_DataSharing_Experts02_img1.png)
 
 ---
 
@@ -186,7 +186,7 @@ arc sync -r https://git.nfdi4plants.org/<username>/arc-demo
 
 # Received two emails from "GitLab" about a failed pipeline? <!-- fit -->
 
-![w:600](./../../img/cqc-error-email.png)
+![w:600](./../../images/cqc-error-email.png)
 
 :fire: Don't worry :smile:
 
@@ -194,7 +194,7 @@ arc sync -r https://git.nfdi4plants.org/<username>/arc-demo
 
 ## Pipeline Failed
 
-![bg right w:700](./../../img/cqc-error-badges.png)
+![bg right w:700](./../../images/cqc-error-badges.png)
 
 - a "continuous quality control" (CQC) pipeline validates your ARC
 - This fails if one of the following metadata items is missing:
@@ -215,7 +215,7 @@ arc sync -r https://git.nfdi4plants.org/<username>/arc-demo
 
 Identify "raw dataset(s)" and "protocols" and move them to the proper subfolders in the ARC.
 
-![bg right w:500](./../../img/demo_data_screenshot.png)
+![bg right w:500](./../../images/demo_data_screenshot.png)
 
 ---
 
@@ -238,8 +238,8 @@ arc sync -m "sorted the demo data"
 
 ## Your ARC is ready
 
-![bg 80% right:75%](./../../img/demo_data_screenshot.png)
-![bg 80%](./../../img/demo_arc_screenshot.png)
+![bg 80% right:75%](./../../images/demo_data_screenshot.png)
+![bg 80%](./../../images/demo_arc_screenshot.png)
 
 ---
 

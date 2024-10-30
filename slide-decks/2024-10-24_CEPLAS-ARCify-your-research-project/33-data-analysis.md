@@ -62,5 +62,5 @@ In the file tree you can
 
 :warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
 
-![bg right:40% w:400](./../../img/arcitect-ARCPanel-assay03.png)
+![bg right:40% w:400](./../../images/arcitect-ARCPanel-assay03.png)
 

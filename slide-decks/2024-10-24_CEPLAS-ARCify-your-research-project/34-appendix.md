@@ -12,13 +12,13 @@ author:
 
 ## Where do I store my ARC?
 
-![](./../../img/ARC-storageLocations-withNotes.drawio.png)
+![](./../../images/ARC-storageLocations-withNotes.drawio.png)
 
 ---
 
 ## ARC storage and sharing
 
-![w:600](./../../img/ARC-storageLocations-withNotes.drawio.png)
+![w:600](./../../images/ARC-storageLocations-withNotes.drawio.png)
 
 - DataHUB as "ground truth" / original clone
 - You can sync and communicate all changes to your ARC via the DataHUB
@@ -65,7 +65,7 @@ author:
 
 ## Download the demo data
 
-![bg right:40% w:250](./../../img/ARCitect-help-Sidebar.png)
+![bg right:40% w:250](./../../images/ARCitect-help-Sidebar.png)
 
 1. Open the ARCitect
 2. Login (1) to your DataHUB account
@@ -81,7 +81,7 @@ author:
 5. Click the download button, select a location and open the ARC.
 6. Open the downloaded ARC
 
-![w:700](./../../img/arcitect-download-TalinumARC.png)
+![w:700](./../../images/arcitect-download-TalinumARC.png)
 
 :bulb: This is basically the ARC we created in the last session.
 

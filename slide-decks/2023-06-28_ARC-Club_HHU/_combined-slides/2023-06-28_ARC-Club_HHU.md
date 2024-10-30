@@ -22,12 +22,12 @@ June 28th, 2023
 
 # Annotated Research Context (ARC)
 
-![width:950](./../../../img/ARC_DataCentricIntegration_img1.png)
+![width:950](./../../../images/ARC_DataCentricIntegration_img1.png)
 
 
 # The ARC &ndash; a package for your research data
 
-![width:950](./../../../img/ARC_fillWithData_seq8.png)
+![width:950](./../../../images/ARC_fillWithData_seq8.png)
 
 
 # The DataHUB &ndash; a place to share your ARCs
@@ -35,7 +35,7 @@ June 28th, 2023
 <style scoped>
 
 section {
-  background-image: url('././../../../img/DataHUB-icon-placeholder.drawio.svg');
+  background-image: url('././../../../images/DataHUB-icon-placeholder.drawio.svg');
   background-repeat: no-repeat;  
   background-size: 10%;
   background-position: 96% 5%;
@@ -44,7 +44,7 @@ section {
 
 </style>
 
-![](./../../../img/DataHUB_LandingPage.png)
+![](./../../../images/DataHUB_LandingPage.png)
 
 
 DataHUB: https://git.nfdi4plants.org/
@@ -53,21 +53,21 @@ DataHUB: https://git.nfdi4plants.org/
 
 ## Status quo: Institute FileShare
 
-![w:900](./../../../img/InsituteFileShare01.drawio.svg)
+![w:900](./../../../images/InsituteFileShare01.drawio.svg)
 
 
 ## Moving from FileShare to DataHUB
 
-![w:900](./../../../img/InsituteFileShare02toDataHUB.drawio.svg)
+![w:900](./../../../images/InsituteFileShare02toDataHUB.drawio.svg)
 
 ## Moving from FileShare to DataHUB &ndash; *via* ARCs
 
-![w:900](./../../../img/InsituteFileShare03toDataHUBviaARC.drawio.svg)
+![w:900](./../../../images/InsituteFileShare03toDataHUBviaARC.drawio.svg)
 
 
 ## There's a tiny burden
 
-![w:500](./../../../img/User_Challenges_002.svg)
+![w:500](./../../../images/User_Challenges_002.svg)
 
 
 ## The ARC Club &ndash; Setting
@@ -79,7 +79,7 @@ DataHUB: https://git.nfdi4plants.org/
 - Agile, communicative, collaborative, positive
 - Technical *ad-hoc* support by DataPLANT
 
-![bg right:40% w:450px](./../../../img/ARCClub.drawio.svg)
+![bg right:40% w:450px](./../../../images/ARCClub.drawio.svg)
 
 ## The ARC Club &ndash; Goals
 
@@ -227,7 +227,7 @@ Recommended (for trouble-shooting):
 
 If you do not have a DataPLANT account, please register at the <a href="https://register.nfdi4plants.org" target="_blank">DataPLANT website</a>.
 
-![w:800](./../../../img/dataplant_registration.png)
+![w:800](./../../../images/dataplant_registration.png)
 
 ---
 
@@ -235,7 +235,7 @@ If you do not have a DataPLANT account, please register at the <a href="https://
 
 Please add your `Project/consortium` (e.g. CEPLAS, SFB, TRR) and choose the role `Guest`
 
-![bg right:40% fit](./../../../img/dataplant_registration_roles.png)
+![bg right:40% fit](./../../../images/dataplant_registration_roles.png)
 
 ---
 
@@ -291,7 +291,7 @@ Check if the ARC Commander is functional by displaying the ARC Commander version
 arc --version
 ```
 
-![bg right:30% width:300](./../../../img/arc-manual-setup.png)
+![bg right:30% width:300](./../../../images/arc-manual-setup.png)
 
 ---
 
@@ -348,79 +348,79 @@ August 16th, 2023
 
 # Annotated Research Context (ARC)
 
-![width:950](./../../../img/ARC_DataCentricIntegration_img1.png)
+![width:950](./../../../images/ARC_DataCentricIntegration_img1.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../../img/ARC_fillWithData_seq1.png)
+![width:950](./../../../images/ARC_fillWithData_seq1.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../../img/ARC_fillWithData_seq2.png)
+![width:950](./../../../images/ARC_fillWithData_seq2.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../../img/ARC_fillWithData_seq3.png)
+![width:950](./../../../images/ARC_fillWithData_seq3.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../../img/ARC_fillWithData_seq4.png)
+![width:950](./../../../images/ARC_fillWithData_seq4.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../../img/ARC_fillWithData_seq5.png)
+![width:950](./../../../images/ARC_fillWithData_seq5.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../../img/ARC_fillWithData_seq6.png)
+![width:950](./../../../images/ARC_fillWithData_seq6.png)
 
 ---
 
-![left h:640](./../../../img/User_Challenges_002.svg)
+![left h:640](./../../../images/User_Challenges_002.svg)
 
 ---
 
-![bg cover](./../../../img/DataPLANT_BigPicture_seq1.png)
+![bg cover](./../../../images/DataPLANT_BigPicture_seq1.png)
 
 ---
 
-![bg cover](./../../../img/DataPLANT_BigPicture_seq2.png)
+![bg cover](./../../../images/DataPLANT_BigPicture_seq2.png)
 
 ---
 
-![bg cover](./../../../img/DataPLANT_BigPicture_seq3.png)
+![bg cover](./../../../images/DataPLANT_BigPicture_seq3.png)
 
 ---
 
-![bg cover](./../../../img/DataPLANT_BigPicture_seq4.png)
+![bg cover](./../../../images/DataPLANT_BigPicture_seq4.png)
 
 ---
 
-![bg cover](./../../../img/DataPLANT_BigPicture_seq5.png)
+![bg cover](./../../../images/DataPLANT_BigPicture_seq5.png)
 
 ---
 
-![bg cover](./../../../img/DataPLANT_BigPicture_seq6.png)
+![bg cover](./../../../images/DataPLANT_BigPicture_seq6.png)
 
 ---
 
-![bg cover](./../../../img/DataPLANT_BigPicture_seq7.png)
+![bg cover](./../../../images/DataPLANT_BigPicture_seq7.png)
 
 ---
 
-![bg cover](./../../../img/DataPLANT_BigPicture_seq8.png)
+![bg cover](./../../../images/DataPLANT_BigPicture_seq8.png)
 
 --- 
 
@@ -446,7 +446,7 @@ August 16th, 2023
 
 ## Initiate the ARC folder structure
 
-![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
+![bg right:40% w:250](./../../../images/ARCitect-help-Sidebar.drawio.svg)
 
 1. Create a **New ARC** (2)
 2. Select a location and name for your ARC
@@ -462,7 +462,7 @@ August 16th, 2023
 
 💡 Make sure that no ARC exists at  `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`. Otherwise you will sync to that ARC.
 
-![bg right:30% w:450](./../../../img/arcitect-ARCPanel.png)
+![bg right:30% w:450](./../../../images/arcitect-ARCPanel.png)
 
 ---
 
@@ -470,7 +470,7 @@ August 16th, 2023
 
 by clicking "Add Study" and entering an identifier for your study
 
-![bg right w:500](./../../../img/arcitect-ARCPanel-study01.png)
+![bg right w:500](./../../../images/arcitect-ARCPanel-study01.png)
 
 ---
 
@@ -482,7 +482,7 @@ In the study panel you can add
 - people, and
 - publications
 
-![bg right w:600](./../../../img/arcitect-StudyPanel.png)
+![bg right w:600](./../../../images/arcitect-StudyPanel.png)
 
 ---
 
@@ -490,7 +490,7 @@ In the study panel you can add
 
 In the file tree you can **add protocols**
 
-![bg right w:500](./../../../img/arcitect-ARCPanel-study02.png)
+![bg right w:500](./../../../images/arcitect-ARCPanel-study02.png)
 
 ---
 
@@ -500,7 +500,7 @@ You can either
 - directly write a **new protocol** within the ARCitect or
 - import an existing one from your computer
 
-![w:800](./../../../img/arcitect-ARCPanel-protocol.png)
+![w:800](./../../../images/arcitect-ARCPanel-protocol.png)
 
 ---
 
@@ -508,7 +508,7 @@ You can either
 
 by clicking "Add Assay" and entering an identifier for your assay
 
-![bg right w:500](./../../../img/arcitect-ARCPanel-assay01.png)
+![bg right w:500](./../../../images/arcitect-ARCPanel-assay01.png)
 
 ---
 
@@ -518,7 +518,7 @@ You can either
 - link your new assay to an existing study in your ARC or
 - create a new one
 
-![bg right w:500](./../../../img/arcitect-ARCPanel-assay02.png)
+![bg right w:500](./../../../images/arcitect-ARCPanel-assay02.png)
 
 ---
 
@@ -532,7 +532,7 @@ In the assay panel you can
    - technology type, and
    - technology platform.
 
-![bg right w:700](./../../../img/arcitect-AssayPanel.png)
+![bg right w:700](./../../../images/arcitect-AssayPanel.png)
 
 ---
 
@@ -546,7 +546,7 @@ In the file tree you can
 
 :warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
 
-![bg right:40% w:400](./../../../img/arcitect-ARCPanel-assay03.png)
+![bg right:40% w:400](./../../../images/arcitect-ARCPanel-assay03.png)
 
 ---
 
@@ -556,7 +556,7 @@ Click **Login** (1) in the sidebar to login to the DataHUB.
 
 :bulb: This automatically opens your browser at the DataHUB (https://git.nfdi4plants.org) and asks you to login, if you are not already logged in. 
 
-![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
+![bg right:40% w:250](./../../../images/ARCitect-help-Sidebar.drawio.svg)
 
 ---
 
@@ -564,7 +564,7 @@ Click **Login** (1) in the sidebar to login to the DataHUB.
 
 From the sidebar, navigate to **Versions** (6)
 
-![bg right:40% w:250](./../../../img/ARCitect-help-Sidebar.drawio.svg)
+![bg right:40% w:250](./../../../images/ARCitect-help-Sidebar.drawio.svg)
 
 ---
 
@@ -575,7 +575,7 @@ The versions panel allows you to
 - sync the changes to the DataHUB, and
 - check the history of your ARC
 
-![bg right w:650](./../../../img/arcitect-VersionsPanel.png)
+![bg right w:650](./../../../images/arcitect-VersionsPanel.png)
 
 ---
 
@@ -585,7 +585,7 @@ If you are logged in, the versions panel shows
 - your DataHUB's *Full Name* and *eMail*
 - the URL of the current ARC in the DataHUB `https://git.nfdi4plants.org/<YourUserName>/<YourARC>`
 
-![bg right w:650](./../../../img/arcitect-VersionsPanel.png)
+![bg right w:650](./../../../images/arcitect-VersionsPanel.png)
 ---
 
 
@@ -600,7 +600,7 @@ August 16th, 2023
 
 ## Moving from FileShare to DataHUB &ndash; *via* ARCs
 
-![w:900](./../../../img/InsituteFileShare03toDataHUBviaARC.drawio.svg)
+![w:900](./../../../images/InsituteFileShare03toDataHUBviaARC.drawio.svg)
 
 ---
 
@@ -682,7 +682,7 @@ arc sync -f -r https://git.nfdi4plants.org/hhu-plant-biochemistry/<Investigation
 
 ## Administration / Backup
 
-![Alt text](./../../../img/InsituteFileShare04-backupClones.drawio.svg)
+![Alt text](./../../../images/InsituteFileShare04-backupClones.drawio.svg)
 
 ---
 
@@ -747,7 +747,7 @@ git clone "https://demo-user:5ehDYeHcqP2MqVXsNNPu@git.nfdi4plants.org/teaching/d
 
 <img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate_c_40x40.png'/> ... **annotate the experimental data**
 
-![bg right:40% width:400](./../../../img/demo_arc_screenshot.png)
+![bg right:40% width:400](./../../../images/demo_arc_screenshot.png)
 
 ---
 
@@ -757,7 +757,7 @@ git clone "https://demo-user:5ehDYeHcqP2MqVXsNNPu@git.nfdi4plants.org/teaching/d
 
 ## ARC builds on ISA
 
-![w:900](./../../../img/ISAmodel_ARC01_img01.svg)
+![w:900](./../../../images/ISAmodel_ARC01_img01.svg)
 
 https://isa-tools.org/format/specification.html
 
@@ -765,19 +765,19 @@ https://isa-tools.org/format/specification.html
 
 # ARC builds on ISA
 
-![w:1100](./../../../img/ISAmodel_ARC01_img02.svg)
+![w:1100](./../../../images/ISAmodel_ARC01_img02.svg)
 
 ---
 
 # isa.<>.xlsx files within ARCs
 
-![w:1000](./../../../img/ISAmodel_ARC01_img03.svg)
+![w:1000](./../../../images/ISAmodel_ARC01_img03.svg)
 
 ---
 
 # Study and assay files are registered in the investigation file 
 
-![w:950](./../../../img/ISAmodel_ARC01_img04.svg)
+![w:950](./../../../images/ISAmodel_ARC01_img04.svg)
 
 ---
 
@@ -788,17 +788,17 @@ Output building blocks:
 - Raw Data File
 - Derived Data File
 
-![bg right w:600](./../../../img/ISAmodel_ARC01_img05.svg)
+![bg right w:600](./../../../images/ISAmodel_ARC01_img05.svg)
 
 ---
 
-![bg w:1050](./../../../img/ISAmodel_ARC01_img6.svg)
+![bg w:1050](./../../../images/ISAmodel_ARC01_img6.svg)
 
 ---
 
 # Annotation Building Block types
 
-![bg right:40% w:520](./../../../img/Swate_Overview.svg)
+![bg right:40% w:520](./../../../images/Swate_Overview.svg)
 
 - Source Name (Input)
 - Protocol Columns
@@ -821,7 +821,7 @@ Output building blocks:
 ## Swate Overview
 
 <figure>
-  <img src="./../../../img/Swate-Overlay-Exp.jpg?v27.01.202" style="height: 400px">
+  <img src="./../../../images/Swate-Overlay-Exp.jpg?v27.01.202" style="height: 400px">
   <figcaption>Major areas of the Swate user interface.</figcaption>
 </figure>
 
@@ -863,7 +863,7 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 </div>
 
 <div class="columns-right">
-    <img src="./../../../img/Swate-CreateAnnotationTable-Exp.jpg" style="width: 1200px">
+    <img src="./../../../images/Swate-CreateAnnotationTable-Exp.jpg" style="width: 1200px">
 </div>
 
 </div>
@@ -880,7 +880,7 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 
 > :bulb: This adds three columns to your table, one visible and **two** hidden.
 
-![bg right:30% w:400](./../../../img/Swate-AddBuildingBlock-Exp.jpg?v31.01.22)
+![bg right:30% w:400](./../../../images/Swate-AddBuildingBlock-Exp.jpg?v31.01.22)
 
 ---
 ## Insert values to annotate your data
@@ -937,7 +937,7 @@ Click the <kbd>Update Ontology Terms</kbd> quick access buttons.
 
 At this point. Your table should look similar to this:
 
-![w:1000](./../../../img/demo_isa.study1.png)
+![w:1000](./../../../images/demo_isa.study1.png)
 
 ---
 
@@ -971,7 +971,7 @@ Try to add suitable *building blocks* for other pieces of metadata from the plan
     - You will see a preview of all building blocks which are part of this template.
 2. Click <kbd>Add template</kbd> to add all Building Blocks from the template to your table, which <u>do not exist yet</u>.
 
-![bg right:30% w:350px](./../../../img/swate_templates.svg)
+![bg right:30% w:350px](./../../../images/swate_templates.svg)
 
 ---
 
@@ -983,7 +983,7 @@ Sometimes you need to add or update the unit of an existing building block.
 2. Open the *Building Blocks* tab
 3. In the bottom panel "Add/Update unit reference to existing building block", search for the unit "milligram". Select the unit term and click <kbd>Update unit for cells</kbd>.
 :bulb: If you already had values in the main column they will be updated automatically.
-4. Click the *Update Ontology Terms* <a href="./img/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
+4. Click the *Update Ontology Terms* <a href="./images/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
    
 ---
 

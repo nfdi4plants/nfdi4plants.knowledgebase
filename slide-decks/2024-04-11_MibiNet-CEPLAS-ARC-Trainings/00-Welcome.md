@@ -30,7 +30,7 @@ Sabrina Zander, MibiNet
 Dominik Brilhaus, CEPLAS
 
 
-![bg fit](./../../img/background_title_MibiNet_ceplas.drawio.svg)
+![bg fit](./../../images/background_title_MibiNet_ceplas.drawio.svg)
 
 ---
 
@@ -150,5 +150,5 @@ Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TR
 - First few steps into ARCs
 - You or collaborators can pick them up from there
 
-![bg right w:500](./../../img/ceplas-ARCs.drawio.svg)
+![bg right w:500](./../../images/ceplas-ARCs.drawio.svg)
 

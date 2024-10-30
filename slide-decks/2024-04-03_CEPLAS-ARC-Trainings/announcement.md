@@ -57,7 +57,7 @@ This workshop demonstrates the ARC concept and introduces the DataPLANT tools an
 
 <div class="columns-right">
 
-<img style="height:250px" src='./../../img/ceplas-ARCs.drawio.svg'/>
+<img style="height:250px" src='./../../images/ceplas-ARCs.drawio.svg'/>
 
 </div>
 </div>

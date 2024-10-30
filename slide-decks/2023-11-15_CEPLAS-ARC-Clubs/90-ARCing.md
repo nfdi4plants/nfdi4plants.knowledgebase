@@ -19,7 +19,7 @@ Happy ARCing
 
 ## Moving from FileShare to DataHUB &ndash; *via* ARCs
 
-![w:900](./../../img/InsituteFileShare03toDataHUBviaARC.drawio.svg)
+![w:900](./../../images/InsituteFileShare03toDataHUBviaARC.drawio.svg)
 
 ---
 
@@ -101,4 +101,4 @@ arc sync -f -r https://git.nfdi4plants.org/<GroupName>/<InvestigationID>
 
 ## Administration / Backup
 
-![Alt text](./../../img/InsituteFileShare04-backupClones.drawio.svg)
+![Alt text](./../../images/InsituteFileShare04-backupClones.drawio.svg)
