@@ -27,14 +27,14 @@ In **assays** you can store data and metadata from measurements.
 <Card icon="pen" title="ARCitect">
     <Steps>
 
-    1. Click on the plus icon next to `assays` to add a new assay
-    2. Enter a name for the `New Assay`
+    1. Click on the plus icon next to `assays` to add a new assay.
+    2. Enter a name for the `New Assay`.
 
         <ViolaSays>
             SugarMeasurement
         </ViolaSays>
 
-    3. Click `New Assay`
+    3. Click `New Assay`.
     4. ARCitect adds the assay `SugarMeasurement` including the folders `dataset` and `protocols` as well as a `README.md` and the `isa.assay.xlsx` workbook.
     
         <FileTree>
@@ -53,8 +53,8 @@ In **assays** you can store data and metadata from measurements.
         The `isa.assay.xlsx` is not displayed inside ARCitect.
         :::
 
-    5. Click on the assay's name (`SugarMeasurement`) in the file tree to edit the assay metadata in the right panel
-    6. Here you can add metadata about your assay
+    5. Click on the assay's name (`SugarMeasurement`) in the file tree to edit the assay metadata in the right panel.
+    6. Here you can add metadata about your assay.
 
         <ViolaSays>
             Ok, so my **measurement type** is "sugar measurement". 
@@ -80,9 +80,9 @@ import IMG2 from "@images/start-here/arc-prototypic-assay-modular2.svg"
 <Card icon="pen" title="ARCitect">
   <Steps>
 
-  1. Right-click on the `dataset` folder and select `Import Files`
+  1. Right-click on the `dataset` folder and select `Import Files`.
   2. Select the file `sugar_result.csv` from the demo data and click `Open`.
-  3. Right-click on the `protocols` folder and select `Import Files`
+  3. Right-click on the `protocols` folder and select `Import Files`.
   4. Select the file `sugar_extraction_protocol.md` from the demo data and click `Open`.
   5. The files are added to your ARC.
     
@@ -113,14 +113,14 @@ import IMG from "@images/start-here/arc-prototypic-assay-modular1.svg"
 <Card icon="pen" title="ARCitect">
     <Steps>
 
-    1. Click on the assay's name (`SugarMeasurement`) in the file tree
-    2. At the bottom of the right panel, click on the plus icon right next to the `Metadata` sheet to add one sheet for each lab process
+    1. Click on the assay's name (`SugarMeasurement`) in the file tree.
+    2. At the bottom of the right panel, click on the plus icon right next to the `Metadata` sheet to add one sheet for each lab process.
         
         <ViolaSays>
             I add two tables: one for "SugarExtraction" and one for "SugarMeasurement"
         </ViolaSays>
 
-    3. After adding the tables, right-click on each sheet's tab to rename them accorindly.
+    3. After adding the tables, right-click on each sheet's tab to rename them accordingly.
     </Steps>
 </Card>
 
@@ -140,26 +140,25 @@ import IMG from "@images/start-here/arc-prototypic-assay-modular1.svg"
 <Card icon="pen" title="ARCitect">
     <Steps>
 
-    1. Click on the assay's name (`SugarMeasurement`) in the file tree
-    2. Select the "SugarExtraction" table added in the previous step
-    4. In the `New Table!` widget, click on the `Add Template` button next to `Start from an existing template!`
+    1. Click on the assay's name (`SugarMeasurement`) in the file tree.
+    2. Select the "SugarExtraction" table added in the previous step.
+    4. In the `New Table!` widget, click on the `Add Template` button next to `Start from an existing template!`.
 
         {/* TODO Move templates to community "Teaching / Training" */}
-
-    3. Load template `RPTU - PP, Sugar extraction`
+    3. Load template `RPTU - PP, Sugar extraction`.
         - Input [Sample name] of normal and cold sample
-        - Protocol REF with file picker to protocol file
         - Parameter [`Vorex Mixer`] of 3 `second`
         - Parameter [`Temperature`] of 95 `degree celsius`
         - Output [Sample name] of normal and cold extraction
-    2. select "SugarMeasurement" table
+    2. Select "SugarMeasurement" table.
         - Load template `RPTU - PP, Sugar measurement`
         - Input [Sample name] of 3xNormal and 3xCold sample
         - Parameter [`technical replicate`] of 1,2,3,1,2,3
         - Parameter [`sample volume`] of 10 `microliter`
         - Parameter [`buffer volume`] of 190 `microliter`
-        - Parameter [cycle count] of 5
-        - Output [Data] with Filepicker to imported sugar data file
+        - Parameter [`measurement device`] Infinite M200 plate reader (Tecan)
+        - Parameter [`cycle count`] of 5
+        - Output [Data] with File Picker to imported sugar data file
 
     </Steps>
 </Card>
