@@ -178,7 +178,7 @@ object-position: 100% 80%;
 
 # Publish your ARC, get a DOI
 
-![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/arc-seamlesspublication.svg)
+![w:800px](../../images/arc-seamlesspublication.svg)
 
 
 ---
