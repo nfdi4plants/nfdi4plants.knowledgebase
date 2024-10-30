@@ -1,61 +1,33 @@
 ---
-title: README 2023-09-MibiNet-CEPLAS-StartYourARC
+title: MibiNet/CEPLAS Start Your ARC Workshop
+date: 2023-09-20
 ---
 
-## See website locally
+Here you can find the slides prepared for the September 2023 MibiNet/CEPLAS *Start Your ARC Workshop*.
 
-1. Execute `npm run fornax`
-2. Open http://127.0.0.1:8080/docs/teaching-materials/disseminations/2023-09-MibiNet-CEPLAS-StartYourARC/index.html
+## Organizers
 
+- [Sabrina Zander](https://www.sfb1535.hhu.de/projects/research-area-z/z03), MibiNet
+- [Dominik Brilhaus](https://www.ceplas.eu/en/research/data-science-and-data-management/), CEPLAS
 
-## Batch-compile marp slide decks to html
+## Slide decks
 
-```bash
-cd src/docs/teaching-materials/events-2023/2023-09-MibiNet-CEPLAS-StartYourARC
-```
+- <a href="./Block00-Preparation.html" target="_blank">Block 0  &ndash; Preparation</a>
+- <a href="./Block01a-WelcomeIntro.html" target="_blank">Block 1a  &ndash; WelcomeIntro</a>
 
-```bash
+- <a href="./Block01b-RDMFundamentals.html" target="_blank">Block 1b  &ndash; RDMFundamentals</a>
+- <a href="./Block02a-DataPLANT-ARC.html" target="_blank">Block 2a  &ndash; DataPLANT-ARC</a>
+- <a href="./Block02b-ARC-ecosystem-demo.html" target="_blank">Block 2b  &ndash; ARC-ecosystem-demo</a>
+- <a href="./Block03a-ARCCommander-HandsOn.html" target="_blank">Block 3a  &ndash; ARCCommander-HandsOn</a>
+- <a href="./Block03b-ARCitect-HandsOn.html" target="_blank">Block 3b  &ndash; ARCitect-HandsOn</a>
+- <a href="./Block05-MetadataISA.html" target="_blank">Block 5  &ndash; MetadataISA</a>
+- <a href="./Block06-Swate-HandsOn.html" target="_blank">Block 6 &ndash; Swate-HandsOn</a>
 
-marpTheme=../../style/marp-theme_dataplant-ceplas-mibinet-ccby.css
+:warning: Links are not permanent. Slides may move elsewhere or be updated. We do our best to keep the knowledge base up-to-date &ndash; so you will find all relevant information here.
 
-for unit in *.md; do
-    
-    if grep -q "^marp: true" "$unit"
-    then
-        marp --html $unit --allow-local-files --theme-set $marpTheme
-    fi
+## Reusing materials
 
-done
-```
+All material presented here is shared under CC BY 4.0 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a>.
 
-
-
-
-## Combine all slide decks into one
-
-```zsh
-selectMarpTheme=marp-theme_dataplant-ceplas-mibinet-ccby
-outfolder=_combined-slides
-
-mkdir -p $outfolder
-title=$(pwd | xargs basename)
-outfile="$outfolder"/"$title".md
-currentDate=$(date +"%Y-%m-%d")
-
-echo "---\nmarp: true\n
-for unit in *.md; do    
-    if grep -q "^marp: true" "$unit"
-    then
-      yamlEnd=$(awk '/---/{++n; if (n==2) { print NR; exit}}' $unit)
-      tail -n +$((yamlEnd+1)) $unit >> $outfile
-      echo "\n---\n" >> $outfile
-    fi
-done
-
-sed "s|\.\./\.\./\.\./images/|\.\./\.\./\.\./\.\./images/|g" $outfile > tmp; mv tmp $outfile
-
-
-npx @marp-team/marp-cli@latest --html --allow-local-files $outfile --theme-set $marpTheme ../../style/ --
-npx @marp-team/marp-cli@latest --html --allow-local-files --pdf $outfile --theme-set $marpTheme ../../style/ --
-
-```
+Contributions by [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), [MibiNet](https://www.sfb1535.hhu.de) 📆 September 21st, 2023.
+See individual slide decks for authors and contributions.

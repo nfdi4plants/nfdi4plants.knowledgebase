@@ -1,51 +1,46 @@
 ---
-title: "README 2023-11-08_CEPLAS-module"
-date: 2023-11-06
+title: CEPLAS Module 2023
+date: 2023-10-29
 ---
 
-## Add sections from last year
+Here you can find the slides prepared for the November 2023 CEPLAS Module &ndash; *Good Data Management Practices*.
 
-- git / version control
-- FAIR project exercises
+## Slide decks
 
-## See website locally
+### Preparation
 
-1. Execute `npm run fornax`
-2. Open http://127.0.0.1:8080/docs/teaching-materials/disseminations/2023-11-08_CEPLAS-module/index.html
+- <a href=./00-Preparation.html target=_blank>Preparation</a>
 
+### Day 1
 
-## Batch-compile marp slide decks to html
+- <a href=./10-WelcomeIntro.html target=_blank>WelcomeIntro</a>
+- <a href=./20-DataPLANT-ARC.html target=_blank>DataPLANT-ARC</a>
 
-```bash
-cd src/docs/teaching-materials/disseminations/2023-11-08_CEPLAS-module
-```
+- <a href=./25-ARCCommander-HandsOn.html target=_blank>ARCCommander-HandsOn</a>
+- <a href=./26-ARCitect-HandsOn.html target=_blank>ARCitect-HandsOn</a>
 
-```bash
+- <a href=./30-StorageVersioning.html target=_blank>StorageVersioning</a>
 
-marpTheme=../../style/marp-theme_dataplant-ceplas-ccby.css
+- <a href=./42-DataHUB.html target=_blank>DataHUB</a>
+- <a href=./43-DataHUB-HandsOn.html target=_blank>DataHUB-HandsOn</a>
 
-for unit in *.md; do
-    
-    if grep -q "^marp: true" "$unit"
-    then
-        marp --html $unit --allow-local-files --theme-set $marpTheme
-    fi
+- <a href=./49-WrapUpDay1.html target=_blank>WrapUpDay1</a>
 
-done
-```
+### Day 2
 
-## automate hidden index
+- <a href=./50-WelcomeIntroDay2.html target=_blank>WelcomeIntroDay2</a>
+- <a href=./60-MetadataISA.html target=_blank>MetadataISA</a>
+- <a href=./70-Swate-HandsOn.html target=_blank>Swate-HandsOn</a>
+- <a href=./80-LegalAspects.html target=_blank>LegalAspects</a>
+- <a href=./91-ELNs.html target=_blank>ELNs</a>
+- <a href=./92-DataPublications.html target=_blank>DataPublications</a>
+- <a href=./93-CodeReproducibility.html target=_blank>CodeReproducibility</a>
 
-```bash
+:warning: Links are not permanent. Slides may move elsewhere or be updated. We do our best to keep the knowledge base up-to-date &ndash; so you will find all relevant information here.
 
-echo "---\n
-for unit in *.html; do
-    
-    noPrefix=${unit#*-}
-    noSuffix=${noPrefix%.*}
+## Reusing materials
 
-    echo "- <a href="./$unit" target="_blank">$noSuffix</a>" >> hidden-index.md
-   
+All material presented here is shared under CC BY 4.0 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a>.
 
-done
-```
+Contributions by [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), 📆 November, 2023.
+See individual slide decks for authors and contributions.

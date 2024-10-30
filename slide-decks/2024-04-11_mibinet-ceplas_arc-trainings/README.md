@@ -1,89 +1,39 @@
 ---
-title: "README 2024-04-11_MibiNet-CEPLAS-ARC-Trainings"
-date: 2024-04-03
+title: MibiNet CEPLAS DataPLANT Tool-Workshops
+date: 2024-03-06
 ---
 
-## See website locally
+Here you can find the slides prepared for the MibiNet CEPLAS DataPLANT Tool-Workshop &ndash; April 2024
 
-1. Execute
+## Organizers
 
-```bash
-npm run fornax
-```
+- Sabrina Zander ([MibiNet](https://www.sfb1535.hhu.de/projects/research-area-z/z03))
+- Dominik Brilhaus ([CEPLAS](https://www.ceplas.eu/en/research/data-science-and-data-management))
 
-2. Open http://127.0.0.1:8080/docs/teaching-materials/events-2024/2024-04-11_MibiNet-CEPLAS-ARC-Trainings/index.html
+## Announcement
 
+See details and registration [here](https://pad.hhu.de/gXvgd5yETWa3Ks34dM3KCw?view).
 
-## Batch-compile marp slide decks to html
+## Slide decks
 
-```bash
-cd src/docs/teaching-materials/events-2024/2024-04-11_MibiNet-CEPLAS-ARC-Trainings
-```
+<!-- linked-slides -->
+- <a href=./00-Welcome.html target=_blank>Welcome</a>
+- <a href=./03-IntroRDM.html target=_blank>IntroRDM</a>
+- <a href=./04-MibiNet-CurrentState.html target=_blank>MibiNet-CurrentState</a>
+- <a href=./10-Overview-DataPLANT.html target=_blank>Overview-DataPLANT</a>
+- <a href=./15-Outlook-MibiNet-CEPLAS-HHU.html target=_blank>Outlook-MibiNet-CEPLAS-HHU</a>
+- <a href=./20-ARCitect-HandsOn.html target=_blank>ARCitect-HandsOn</a>
+- <a href=./30-DataHUB-ConceptsTerminology.html target=_blank>DataHUB-ConceptsTerminology</a>
+- <a href=./31-DataHUB-HandsOn.html target=_blank>DataHUB-HandsOn</a>
+- <a href=./50-Swate-Intro.html target=_blank>Swate-Intro</a>
+- <a href=./51-Swate-HandsOn.html target=_blank>Swate-HandsOn</a>
+- <a href=./99-Appendix-Contributors.html target=_blank>Appendix-Contributors</a>
+<!-- linked-slides -->
 
-```bash
-rm ./*.html
+:warning: Links are not permanent. Slides may move elsewhere or be updated. We do our best to keep the knowledge base up-to-date &ndash; so you will find all relevant information here.
 
-for unit in *.md; do
-    
-    if grep -q "^marp: true" "$unit"
-    then
-        npx @marp-team/marp-cli@latest --html --allow-local-files $unit --theme-set $marpTheme ../../style/ --
-    fi
+## Reusing materials
 
-done
-```
+All material presented here is shared under CC BY 4.0 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a>.
 
-## automate adding slides to index
-
-Slides will be placed between two tags <!-- linked-slides -->
-
-```bash
-
-linkedSlidesBegin=$(awk '/<!-- linked-slides -->/{++n; if (n==1) { print NR; exit}}' index.md)
-linkedSlidesEnd=$(awk '/<!-- linked-slides -->/{++n; if (n==2) { print NR; exit}}' index.md)
-
-head -n $linkedSlidesBegin index.md > tmp
-
-for unit in *.html; do
-    
-    noPrefix=${unit#*-}
-    noSuffix=${noPrefix%.*}
-
-    echo "- <a href="./$unit" target="_blank">$noSuffix</a>" >> tmp
-   
-done
-
-tail -n +$linkedSlidesEnd index.md >> tmp
-
-mv tmp index.md
-
-```
-
-## Combine all slide decks into one
-
-```zsh
-selectMarpTheme=marp-theme_dataplant-ceplas-mibinet-ccby
-outfolder=_combined-slides
-
-mkdir -p $outfolder
-title=$(pwd | xargs basename)
-outfile="$outfolder"/"$title".md
-currentDate=$(date +"%Y-%m-%d")
-
-echo "---\nmarp: true\n
-for unit in *.md; do    
-    if grep -q "^marp: true" "$unit"
-    then
-      yamlEnd=$(awk '/---/{++n; if (n==2) { print NR; exit}}' $unit)
-      tail -n +$((yamlEnd+1)) $unit >> $outfile
-      echo "\n---\n" >> $outfile
-    fi
-done
-
-sed "s|\.\./\.\./\.\./images/|\.\./\.\./\.\./\.\./images/|g" $outfile > tmp; mv tmp $outfile
-sed "s|\./qr-code|\./\.\./qr-code|g" $outfile > tmp; mv tmp $outfile
-
-marp --html --allow-local-files $outfile --theme-set $marpTheme ../../style/ --
-marp --html --allow-local-files --pdf $outfile --theme-set $marpTheme ../../style/ --
-
-```
+Contributions by [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), and [MibiNet](https://www.sfb1535.hhu.de/) 📆 April, 2024. See individual slide decks for authors and contributions.

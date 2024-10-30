@@ -1,75 +1,30 @@
 ---
-title: "README 2023-11-15_CEPLAS-ARC-Clubs"
-date: 2023-12-04
+title: CEPLAS ARC Clubs 2023
+date: 2023-11-21
 ---
 
-## See website locally
+Here you can find the slides prepared for the November / December 2023 CEPLAS ARC Clubs
 
-1. Execute
-```bash
-npm run fornax
-```
-3. Open http://127.0.0.1:8080/docs/teaching-materials/disseminations/2023-11-15_CEPLAS-ARC-Clubs/index.html
+## Announcement
+
+- <a href=./announcement.html target=_blank>Announcement</a>
+
+## Slide decks
+
+- <a href=./10-WelcomeIntro.html target=_blank>Welcome & Intro</a>
+- <a href=./20-ARC-ecosystem-demo.html target=_blank>ARC-ecosystem-demo</a>
+- <a href=./26-ARCitect-HandsOn.html target=_blank>ARCitect HandsOn</a>
+- <a href=./42-DataHUB.html target=_blank>DataHUB</a>
+- <a href=./43-DataHUB-HandsOn.html target=_blank>DataHUB HandsOn</a>
+- <a href=./60-MetadataISA.html target=_blank>MetadataISA</a>
+- <a href=./70-Swate-HandsOn.html target=_blank>Swate HandsOn</a>
 
 
-## Batch-compile marp slide decks to html
+:warning: Links are not permanent. Slides may move elsewhere or be updated. We do our best to keep the knowledge base up-to-date &ndash; so you will find all relevant information here.
 
-```bash
-cd src/docs/teaching-materials/events-2023/2023-11-15_CEPLAS-ARC-Clubs
-```
+## Reusing materials
 
-```bash
+All material presented here is shared under CC BY 4.0 <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a>.
 
-for unit in *.md; do
-    
-    if grep -q "^marp: true" "$unit"
-    then
-        npx @marp-team/marp-cli@latest --html --allow-local-files $unit --theme-set $marpTheme ../../style/ --
-    fi
-
-done
-```
-
-## automate hidden index
-
-```bash
-
-echo "---\n
-for unit in *.html; do
-    
-    noPrefix=${unit#*-}
-    noSuffix=${noPrefix%.*}
-
-    echo "- <a href="./$unit" target="_blank">$noSuffix</a>" >> hidden-index.md
-   
-
-done
-```
-
-## Combine all slide decks into one
-
-```zsh
-selectMarpTheme=marp-theme_dataplant-ceplas-ccby
-outfolder=_combined-slides
-
-mkdir -p $outfolder
-title=$(pwd | xargs basename)
-outfile="$outfolder"/"$title".md
-currentDate=$(date +"%Y-%m-%d")
-
-echo "---\nmarp: true\n
-for unit in *.md; do    
-    if grep -q "^marp: true" "$unit"
-    then
-      yamlEnd=$(awk '/---/{++n; if (n==2) { print NR; exit}}' $unit)
-      tail -n +$((yamlEnd+1)) $unit >> $outfile
-      echo "\n---\n" >> $outfile
-    fi
-done
-
-sed "s|\.\./\.\./\.\./images/|\.\./\.\./\.\./\.\./images/|g" $outfile > tmp; mv tmp $outfile
-
-npx @marp-team/marp-cli@latest --html --allow-local-files $outfile --theme-set $marpTheme ../../style/ --
-npx @marp-team/marp-cli@latest --html --allow-local-files --pdf $outfile --theme-set $marpTheme ../../style/ --
-
-```
+Contributions by [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), 📆 November, 2023.
+See individual slide decks for authors and contributions.

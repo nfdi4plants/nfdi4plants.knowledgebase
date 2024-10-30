@@ -1,60 +1,59 @@
 ---
-title: README 2023-06-28_ARC-Club_HHU
+title: ARC Club (@HHU Plant Biochemistry)
+date: 2023-08-09
+- name: Dominik Brilhaus
+  github: https://github.com/brilator
+  orcid: https://orcid.org/0000-0001-9021-3197
 ---
 
-## See website locally
+Here you can find the slides prepared for the **ARC Club** (August 2023 @HHU-Plant-Biochemistry).
 
-1. Execute `npm run fornax`
-2. Open http://127.0.0.1:8080/docs/teaching-materials/disseminations/2023-06-28_ARC-Club_HHU/index.html
+:warning: This is not a permanent link. Slides may move elsewhere or be updated. We do our best to keep the knowledge base up-to-date &ndash; so you will find all relevant information here.
 
+## Announcement
 
-## Batch-compile marp slide decks to html
+<iframe src="./00-announcement.html" style="height:430px; width:750px;" ></iframe>
 
-```bash
-cd src/docs/teaching-materials/events-2023/2023-06-28_ARC-Club_HHU
-```
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), 📆 June 28th, 2023
 
-```bash
+<hr>
 
-marpTheme=../../style/marp-theme_dataplant-ceplas-ccby.css
+## Preparation
 
-for unit in *.md; do
-    
-    if grep -q "^marp: true" "$unit"
-    then
-        marp --html $unit --allow-local-files --theme-set $marpTheme
-    fi
+<iframe src="./01-preparation.html" style="height:430px; width:750px;" ></iframe>
 
-done
-```
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), 📆 August 9th, 2023
 
+<hr>
 
+## Check-in & Demo
 
-## Combine all slide decks into one
+<iframe src="./02-intro-arc.html" style="height:430px; width:750px;" ></iframe>
 
-```zsh
-selectMarpTheme=marp-theme_dataplant-ceplas-ccby
-outfolder=_combined-slides
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), 📆 August 16th, 2023
 
-mkdir -p $outfolder
-title=$(pwd | xargs basename)
-outfile="$outfolder"/"$title".md
-currentDate=$(date +"%Y-%m-%d")
+<hr>
 
-echo "---\nmarp: true\n
-for unit in *.md; do    
-    if grep -q "^marp: true" "$unit"
-    then
-      yamlEnd=$(awk '/---/{++n; if (n==2) { print NR; exit}}' $unit)
-      tail -n +$((yamlEnd+1)) $unit >> $outfile
-      echo "\n---\n" >> $outfile
-    fi
-done
+## ARCitect QuickStart
 
-sed "s|\.\./\.\./\.\./images/|\.\./\.\./\.\./\.\./images/|g" $outfile > tmp; mv tmp $outfile
+<iframe src="./04-ARCitect-quickstart.html" style="height:430px; width:750px;" ></iframe>
 
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), 📆 August 16th, 2023
 
-npx @marp-team/marp-cli@latest --html --allow-local-files $outfile --theme-set $marpTheme ../../style/ --
-npx @marp-team/marp-cli@latest --html --allow-local-files --pdf $outfile --theme-set $marpTheme ../../style/ --
+<hr>
 
-```
+## ARCing
+
+<iframe src="./05-ARCing.html" style="height:430px; width:750px;" ></iframe>
+
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), 📆 August 16th, 2023
+
+<hr>
+
+## ARCing
+
+<iframe src="./06-annotation.html" style="height:430px; width:750px;" ></iframe>
+
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" style="height:15px"></a> [DataPLANT](https://nfdi4plants.org/), [CEPLAS](https://ceplas.eu), 📆 August 16th, 2023
+
+<hr>
