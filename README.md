@@ -1,32 +1,33 @@
-# DataPLANT Training Materials
+# DataPLANT Knowledge Base
 
-Welcome to the DataPLANT Training Materials.
+[![CC BY 4.0][cc-by-shield]][cc-by]
 
-Here you can find training materials of previous workshops and classes.
+Welcome to the [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4plants.knowledgebase/index.html)! 👋
 
-Check out the [DataPLANT Knowledge Base](https://nfdi4plants.org/nfdi4plants.knowledgebase/) for up-to-date guides and tutorials.
+This knowledge base combines articles on
+- **fundamental** topics on research data management (RDM) and
+- how **DataPLANT implements** these aspects to support plant researchers with RDM tools and services.
 
-Materials are shared here under [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
+## Feedback & Contribution
 
-## Past events
+The DataPLANT knowledge base is a community effort and improves with every feedback we receive from readers and users.
+**Your contribution is highly appreciated** no matter how little it may seem!
 
-Event | Slide decks
---------------------------|-------------------------------------------
-2024-10-24_ceplas_arcify-your-research-project | [2024-10-24_ceplas_arcify-your-research-project](slide-decks/2024-10-24_ceplas_arcify-your-research-project)
-2024-06-19_trr175_tutzing-retreat | [2024-06-19_trr175_tutzing-retreat](slide-decks/2024-06-19_trr175_tutzing-retreat)
-2024-04-11_mibinet-ceplas_arc-trainings | [2024-04-11_mibinet-ceplas_arc-trainings](slide-decks/2024-04-11_mibinet-ceplas_arc-trainings)
-2024-04-03_ceplas_arc-trainings | [2024-04-03_ceplas_arc-trainings](slide-decks/2024-04-03_ceplas_arc-trainings)
-2024-02-13_trr175_becoming-fair | [2024-02-13_trr175_becoming-fair](slide-decks/2024-02-13_trr175_becoming-fair)
-2023-11-15_ceplas_arc-clubs | [2023-11-15_ceplas_arc-clubs](slide-decks/2023-11-15_ceplas_arc-clubs)
-2023-11-14_hhu_tagderforschungsdaten | [2023-11-14_hhu_tagderforschungsdaten](slide-decks/2023-11-14_hhu_tagderforschungsdaten)
-2023-11-08_ceplas_phd-module | [2023-11-08_ceplas_phd-module](slide-decks/2023-11-08_ceplas_phd-module)
-2023-10-29_cscs-ceplas_startyourarc | [2023-10-29_cscs-ceplas_startyourarc](slide-decks/2023-10-29_cscs-ceplas_startyourarc)
-2023-09-21_mibinet-ceplas_startyourarc | [2023-09-21_mibinet-ceplas_startyourarc](slide-decks/2023-09-21_mibinet-ceplas_startyourarc)
-2023-09-19_hhu_fdm-nrw-bestpractice | [2023-09-19_hhu_fdm-nrw-bestpractice](slide-decks/2023-09-19_hhu_fdm-nrw-bestpractice)
-2023-07-20_rptu_summerschool-elabftw | [2023-07-20_rptu_summerschool-elabftw](slide-decks/2023-07-20_rptu_summerschool-elabftw)
-2023-07-17_rptu_summerschool-on-rdm | [2023-07-17_rptu_summerschool-on-rdm](slide-decks/2023-07-17_rptu_summerschool-on-rdm)
-2023-07-11_dataplant_datasteward-circle | [2023-07-11_dataplant_datasteward-circle](slide-decks/2023-07-11_dataplant_datasteward-circle)
-2023-06-28_hhu_arc-club | [2023-06-28_hhu_arc-club](slide-decks/2023-06-28_hhu_arc-club)
-2023-05-09_dataplant_teaching-materials-concept | [2023-05-09_dataplant_teaching-materials-concept](slide-decks/2023-05-09_dataplant_teaching-materials-concept)
-2023-05-09_ceplas_startyourarc-series | [2023-05-09_ceplas_startyourarc-series](slide-decks/2023-05-09_ceplas_startyourarc-series)
-2023-04-27_dataplant_mbs-onboarding | [2023-04-27_dataplant_mbs-onboarding](slide-decks/2023-04-27_dataplant_mbs-onboarding)
+If you just want to ask a question, recommend missing topics or tutorials, raise awareness for inconsistencies, typos, missing links, errors in training materials or tutorials, feel free to
+
+- submit a ticket to our [helpdesk](https://helpdesk.nfdi4plants.org/?topic=Documentation_KnowledgeBase),
+- [open an issue](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/issues/new/) at GitHub or
+- write us an <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">email</a>.
+
+For all other contributions, please refer to the [contribution guide](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/CONTRIBUTING.html).
+
+## License
+
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
