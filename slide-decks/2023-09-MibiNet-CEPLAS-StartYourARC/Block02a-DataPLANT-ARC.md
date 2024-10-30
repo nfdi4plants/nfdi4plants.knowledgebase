@@ -22,7 +22,7 @@ author:
 
 # DataPLANT &ndash; <br>The NFDI4Plants
 
-![bg right:50% width:500px](./../../images/DataPLANT_TaskAreas.svg)
+![bg right:50% width:500px](./../../images/dataplant-taskareas.svg)
 
 - NFDI: "Nationale Forschungsdaten Infrastruktur" &ndash; [www.nfdi.de](https://www.nfdi.de/)
 - Funded since end of 2020
@@ -31,85 +31,85 @@ author:
 
 # Data Stewardship between DataPLANT and the community  <!-- fit -->
 
-![w:880](././../../images/DataPLANT-collaborationCEPLAS-Mibinet.drawio.png)
+![w:880](././../../images/dataplant-collaborationceplas-mibinet.drawio.png)
 
 ---
 
 # Annotated Research Context (ARC)
 
-![width:950](./../../images/ARC_DataCentricIntegration_img1.png)
+![width:950](./../../images/arc-datacentricintegration-img1.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../images/ARC_fillWithData_seq1.png)
+![width:950](./../../images/arc-fillwithdata-seq1.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../images/ARC_fillWithData_seq2.png)
+![width:950](./../../images/arc-fillwithdata-seq2.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../images/ARC_fillWithData_seq3.png)
+![width:950](./../../images/arc-fillwithdata-seq3.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../images/ARC_fillWithData_seq4.png)
+![width:950](./../../images/arc-fillwithdata-seq4.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../images/ARC_fillWithData_seq5.png)
+![width:950](./../../images/arc-fillwithdata-seq5.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../images/ARC_fillWithData_seq6.png)
+![width:950](./../../images/arc-fillwithdata-seq6.png)
 
 ---
 
-![left h:640](./../../images/User_Challenges_002.svg)
+![left h:640](./../../images/user-challenges-002.svg)
 
 ---
 
-![bg cover](./../../images/DataPLANT_BigPicture_seq1.png)
+![bg cover](./../../images/dataplant-bigpicture-seq1.png)
 
 ---
 
-![bg cover](./../../images/DataPLANT_BigPicture_seq2.png)
+![bg cover](./../../images/dataplant-bigpicture-seq2.png)
 
 ---
 
-![bg cover](./../../images/DataPLANT_BigPicture_seq3.png)
+![bg cover](./../../images/dataplant-bigpicture-seq3.png)
 
 ---
 
-![bg cover](./../../images/DataPLANT_BigPicture_seq4.png)
+![bg cover](./../../images/dataplant-bigpicture-seq4.png)
 
 ---
 
-![bg cover](./../../images/DataPLANT_BigPicture_seq5.png)
+![bg cover](./../../images/dataplant-bigpicture-seq5.png)
 
 ---
 
-![bg cover](./../../images/DataPLANT_BigPicture_seq6.png)
+![bg cover](./../../images/dataplant-bigpicture-seq6.png)
 
 ---
 
-![bg cover](./../../images/DataPLANT_BigPicture_seq7.png)
+![bg cover](./../../images/dataplant-bigpicture-seq7.png)
 
 ---
 
-![bg cover](./../../images/DataPLANT_BigPicture_seq8.png)
+![bg cover](./../../images/dataplant-bigpicture-seq8.png)
 
 ---
 

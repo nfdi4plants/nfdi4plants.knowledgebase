@@ -19,41 +19,41 @@ author:
 
 # ARC builds on standards + Git
 
-![w:900](./../../images/ARC_BuildsOnStandards2.png)
+![w:900](./../../images/arc-buildsonstandards2.png)
 
 ---
 
 # The DataPLANT DataHUB &ndash; a GitLab ***Plus***
 
-![](./../../images/DataHUB-GitLab.drawio.png)
+![](./../../images/datahub-gitlab.drawio.png)
 
 ---
 
-![bg cover](./../../images/DataPLANT_BigPicture_seq2.png)
+![bg cover](./../../images/dataplant-bigpicture-seq2.png)
 
 ---
 
-![bg cover](./../../images/DataPLANT_BigPicture_seq3.png)
+![bg cover](./../../images/dataplant-bigpicture-seq3.png)
 
 ---
 
-![bg cover](./../../images/DataPLANT_BigPicture_seq4.png)
+![bg cover](./../../images/dataplant-bigpicture-seq4.png)
 
 ---
 
-![bg cover](./../../images/DataPLANT_BigPicture_seq5.png)
+![bg cover](./../../images/dataplant-bigpicture-seq5.png)
 
 ---
 
-![bg cover](./../../images/DataPLANT_BigPicture_seq6.png)
+![bg cover](./../../images/dataplant-bigpicture-seq6.png)
 
 ---
 
-![bg cover](./../../images/DataPLANT_BigPicture_seq7.png)
+![bg cover](./../../images/dataplant-bigpicture-seq7.png)
 
 ---
 
-![bg cover](./../../images/DataPLANT_BigPicture_seq8.png)
+![bg cover](./../../images/dataplant-bigpicture-seq8.png)
 
 ---
 

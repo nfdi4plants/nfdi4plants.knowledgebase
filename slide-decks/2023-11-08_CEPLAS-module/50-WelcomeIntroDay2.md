@@ -21,7 +21,7 @@ author:
 November 10<sup>th</sup>, 2023
 Dominik Brilhaus, CEPLAS Data Science
 
-![bg fit](./../../images/background_title_ceplas.drawio.svg)
+![bg fit](./../../images/background-title-ceplas.drawio.svg)
 
 ---
 

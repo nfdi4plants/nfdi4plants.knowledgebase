@@ -105,7 +105,7 @@ things you use and ignore
 
 # Cloud Services
 
-![bg right:50% w:800](./../../images/DataSharing_Cloud_img6.png)
+![bg right:50% w:800](./../../images/datasharing-cloud-img6.png)
 
 <span style="color:#B4CE82">✓ Documents</span>  
 <span style="color:#B4CE82">✓ Small data</span>  
@@ -119,7 +119,7 @@ things you use and ignore
 
 # Git and git platforms
 
-![bg right:50% w:800](./../../images/DataSharing_git_img1.png)
+![bg right:50% w:800](./../../images/datasharing-git-img1.png)
 
 <span style="color:#F9CD69">∼ Documents</span>
 <span style="color:#B4CE82">✓ Small data</span>  
@@ -142,31 +142,31 @@ things you use and ignore
 
 # A simple example: RNASeq project
 
-![w:900](./../../images/git_RNASeq_Example_img1.png)
+![w:900](./../../images/git-rnaseq-example-img1.png)
 
 ---
 
 # A simple example: RNASeq project
 
-![w:900](./../../images/git_RNASeq_Example_img2.png)
+![w:900](./../../images/git-rnaseq-example-img2.png)
 
 ---
 
 # A simple example: RNASeq project
 
-![w:900](./../../images/git_RNASeq_Example_img3.png)
+![w:900](./../../images/git-rnaseq-example-img3.png)
 
 ---
 
 # A simple example: RNASeq project
 
-![w:900](./../../images/git_RNASeq_Example_img4.png)
+![w:900](./../../images/git-rnaseq-example-img4.png)
 
 ---
 
 # A simple example: RNASeq project
 
-![w:900](./../../images/git_RNASeq_Example_img5.png)
+![w:900](./../../images/git-rnaseq-example-img5.png)
 
 ---
 
@@ -174,7 +174,7 @@ things you use and ignore
 
 (... as long as it works)
 
-![w:900](./../../images/git_RNASeq_Example_img6.png)
+![w:900](./../../images/git-rnaseq-example-img6.png)
 
 ---
 
@@ -182,85 +182,85 @@ things you use and ignore
 
 (... as long as it works)
 
-![w:900](./../../images/git_RNASeq_Example_img7.png)
+![w:900](./../../images/git-rnaseq-example-img7.png)
 
 ---
 
 # Scenario 1: More data
 
-![w:900](./../../images/git_RNASeq_Example_img8.png)
+![w:900](./../../images/git-rnaseq-example-img8.png)
 
 ---
 
 # Scenario 1: More data
 
-![w:900](./../../images/git_RNASeq_Example_img9.png)
+![w:900](./../../images/git-rnaseq-example-img9.png)
 
 ---
 
 # Scenario 1: More data
 
-![w:900](./../../images/git_RNASeq_Example_img10.png)
+![w:900](./../../images/git-rnaseq-example-img10.png)
 
 ---
 
 # Let git track changes and keep things clean
 
-![w:900](./../../images/git_RNASeq_Example_img11.png)
+![w:900](./../../images/git-rnaseq-example-img11.png)
 
 ---
 
 # Scenario 2: Pipeline breaks
 
-![w:900](./../../images/git_RNASeq_Example_img12.png)
+![w:900](./../../images/git-rnaseq-example-img12.png)
 
 ---
 
 # Revert to snapshot
 
-![w:900](./../../images/git_RNASeq_Example_img13.png)
+![w:900](./../../images/git-rnaseq-example-img13.png)
 
 ---
 
 # Scenario 3: New project, same type of data and analysis
 
-![w:900](./../../images/git_RNASeq_Example_img14.png)
+![w:900](./../../images/git-rnaseq-example-img14.png)
 
 ---
 
 # Scenario 3: New project, same type of data and analysis
 
-![w:900](./../../images/git_RNASeq_Example_img15.png)
+![w:900](./../../images/git-rnaseq-example-img15.png)
 
 ---
 
 # Re-use code
 
-![w:900](./../../images/git_RNASeq_ReuseCode_img1.png)
+![w:900](./../../images/git-rnaseq-reusecode-img1.png)
 
 ---
 
 # Re-use code
 
-![w:900](./../../images/git_RNASeq_ReuseCode_img2.png)
+![w:900](./../../images/git-rnaseq-reusecode-img2.png)
 
 ---
 
 # Re-use code – People have done this
 
-![w:900](./../../images/git_RNASeq_ReuseCode_img3.png)
+![w:900](./../../images/git-rnaseq-reusecode-img3.png)
 
 ---
 
 # Re-use code – People have done this
 
-![w:900](./../../images/git_RNASeq_ReuseCode_img4.png)
+![w:900](./../../images/git-rnaseq-reusecode-img4.png)
 
 ---
 
 # Re-use code – Link and contribute
 
-![w:900](./../../images/git_RNASeq_ReuseCode_img5.png)
+![w:900](./../../images/git-rnaseq-reusecode-img5.png)
 
 ---
 
@@ -300,7 +300,7 @@ Simplifies concurrent work & merging changes
 
 # Cloud vs. Git
 
-![w:1000](./../../images/git_cloud_comparison.png)
+![w:1000](./../../images/git-cloud-comparison.png)
 
 --- 
 

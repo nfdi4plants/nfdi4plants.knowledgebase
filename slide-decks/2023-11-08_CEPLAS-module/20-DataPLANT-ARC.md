@@ -22,7 +22,7 @@ author:
 
 # DataPLANT &ndash; <br>The NFDI4Plants
 
-![bg right:50% width:500px](./../../images/DataPLANT_TaskAreas.svg)
+![bg right:50% width:500px](./../../images/dataplant-taskareas.svg)
 
 - NFDI: "Nationale Forschungsdaten Infrastruktur" &ndash; [www.nfdi.de](https://www.nfdi.de/)
 - Funded since end of 2020
@@ -31,61 +31,61 @@ author:
 
 # Data Stewardship between DataPLANT and the community  <!-- fit -->
 
-![w:880](././../../images/DataPLANT-collaborationCEPLAS.drawio.png)
+![w:880](././../../images/dataplant-collaborationceplas.drawio.png)
 
 ---
 
 # Annotated Research Context (ARC)
 
-![width:950](./../../images/ARC_DataCentricIntegration_img1.png)
+![width:950](./../../images/arc-datacentricintegration-img1.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../images/ARC_fillWithData_seq1.png)
+![width:950](./../../images/arc-fillwithdata-seq1.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../images/ARC_fillWithData_seq2.png)
+![width:950](./../../images/arc-fillwithdata-seq2.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../images/ARC_fillWithData_seq3.png)
+![width:950](./../../images/arc-fillwithdata-seq3.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../images/ARC_fillWithData_seq4.png)
+![width:950](./../../images/arc-fillwithdata-seq4.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../images/ARC_fillWithData_seq5.png)
+![width:950](./../../images/arc-fillwithdata-seq5.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../images/ARC_fillWithData_seq6.png)
+![width:950](./../../images/arc-fillwithdata-seq6.png)
 
 ---
 
 # ARC builds on standards
 
-![w:900](./../../images/ARC_BuildsOnStandards1.png)
+![w:900](./../../images/arc-buildsonstandards1.png)
 
 ---
 
 # ARC builds on standards + Git
 
-![w:900](./../../images/ARC_BuildsOnStandards2.png)
+![w:900](./../../images/arc-buildsonstandards2.png)
 
 ---
 

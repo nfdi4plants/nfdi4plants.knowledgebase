@@ -63,7 +63,7 @@ Please feel free to use the chat, raise hands, discuss, etc.
 
 :bulb: Let's try to collect questions and answers in the Q&A panel =>
 
-![bg right:25% w:330](custom/webex-QA.png)
+![bg right:25% w:330](custom/webex-qa.png)
 
 ---
 

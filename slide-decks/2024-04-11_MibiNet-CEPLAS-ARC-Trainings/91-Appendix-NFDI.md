@@ -30,6 +30,6 @@ author:
 
 # Base4NFDI
 
-![w:700](./../../images/Base4NFDI_Intro_Poster-RDA-2024_JanderRitter-excerpt.png)
+![w:700](./../../images/base4nfdi-intro-poster-rda-2024-janderritter-excerpt.png)
 
 <span class="footer-reference">adapted from https://base4nfdi.de/</span>

@@ -28,7 +28,7 @@ September 28th, 2023
 
 <div style="position: fixed; bottom: 10%; right: 40%;">
   <div class="profile-picture">
-    <img src="https://www.biological-data-science.hhu.de/fileadmin/_processed_/8/c/csm_Sabrina_Zander_3c8daca973.jpg" alt="Sabrina Zander" style="position:absolute; height: auto; width: auto; top:65%; left: 0%; transform:translateY(-50%);"> 
+    <img src="https://www.biological-data-science.hhu.de/fileadmin/_processed_/8/c/csm-sabrina-zander-3c8daca973.jpg" alt="Sabrina Zander" style="position:absolute; height: auto; width: auto; top:65%; left: 0%; transform:translateY(-50%);"> 
   </div>
 
   <div>
@@ -39,7 +39,7 @@ September 28th, 2023
 
 <div style="position: fixed; bottom: 10%; right: 10%;">
   <div class="profile-picture">
-    <img src="https://www.ceplas.eu/fileadmin/_processed_/d/c/csm_Brilhaus_Dominik_4fd48a61a2.jpeg" alt="Dominik Brilhaus">
+    <img src="https://www.ceplas.eu/fileadmin/_processed_/d/c/csm-brilhaus-dominik-4fd48a61a2.jpeg" alt="Dominik Brilhaus">
   </div>
 
   <div>
@@ -107,9 +107,9 @@ git clone "https://demo-user:5ehDYeHcqP2MqVXsNNPu@git.nfdi4plants.org/teaching/d
 
 **Today** we want to 
 
-<img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate_c_40x40.png'/> ... **annotate the experimental data**
+<img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate-c-40x40.png'/> ... **annotate the experimental data**
 
-![bg right:40% width:400](./../../images/demo_arc_screenshot.png)
+![bg right:40% width:400](./../../images/demo-arc-screenshot.png)
 
 ---
 
@@ -119,7 +119,7 @@ git clone "https://demo-user:5ehDYeHcqP2MqVXsNNPu@git.nfdi4plants.org/teaching/d
 
 ## Swate Overview
 
-![width:1000](./../../images/Swate_Overview.png)
+![width:1000](./../../images/swate-overview.png)
 
 ---
 
@@ -160,7 +160,7 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 </div>
 
 <div class="columns-right">
-    <img src="./../../images/Swate-CreateAnnotationTable-Exp.jpg" style="width: 1200px">
+    <img src="./../../images/swate-createannotationtable-exp.jpg" style="width: 1200px">
 </div>
 
 </div>
@@ -177,7 +177,7 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 
 > :bulb: This adds three columns to your table, one visible and **two** hidden.
 
-![bg right:30% w:400](./../../images/Swate-AddBuildingBlock-Exp.jpg?v31.01.22)
+![bg right:30% w:400](./../../images/swate-addbuildingblock-exp.jpg?v31.01.22)
 
 
 ---
@@ -235,7 +235,7 @@ Click the <kbd>Update Ontology Terms</kbd> quick access buttons.
 
 At this point. Your table should look similar to this:
 
-![w:1000](./../../images/demo_isa.study1.png)
+![w:1000](./../../images/demo-isa.study1.png)
 
 ---
 
@@ -271,7 +271,7 @@ Try to add suitable *building blocks* for other pieces of metadata from the plan
     - You will see a preview of all building blocks which are part of this template.
 2. Click <kbd>Add template</kbd> to add all Building Blocks from the template to your table, which <u>do not exist yet</u>.
 
-![bg right:30% w:350px](./../../images/swate_templates.svg)
+![bg right:30% w:350px](./../../images/swate-templates.svg)
 
 ---
 
@@ -283,7 +283,7 @@ Sometimes you need to add or update the unit of an existing building block.
 2. Open the *Building Blocks* tab
 3. In the bottom panel "Add/Update unit reference to existing building block", search for the unit "milligram". Select the unit term and click <kbd>Update unit for cells</kbd>.
 :bulb: If you already had values in the main column they will be updated automatically.
-4. Click the *Update Ontology Terms* <a href="./images/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
+4. Click the *Update Ontology Terms* <a href="./images/swate-overlay-exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
    
 ---
 
@@ -341,7 +341,7 @@ Example workflows with three *processes* each:
 
 ## Process Information
 
-![w:700](././../../images/ARCitect_Assay_Data.png)
+![w:700](././../../images/arcitect-assay-data.png)
 
 <!-- TODO Update ARCitect Annotation 
 Examples, Excelsheet... --> 

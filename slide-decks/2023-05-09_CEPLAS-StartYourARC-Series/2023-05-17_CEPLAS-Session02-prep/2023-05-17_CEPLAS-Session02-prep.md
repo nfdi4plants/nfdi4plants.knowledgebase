@@ -3,7 +3,7 @@ marp: true
 theme: dataplant_marp-theme
 paginate: true
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="./../../../images/logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://ceplas.eu"> <img id="footer-img2" src="./../../../images/logos/CEPLAS/CEPLAS_Icon.jpeg"></a><a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img3" src="./../../../images/logos/CreativeCommons/by.svg"></a>'
+footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="./../../../images/logos/DataPLANT/dataplant-logo-square-bg-transparent.svg"></a> <a href="https://ceplas.eu"> <img id="footer-img2" src="./../../../images/logos/CEPLAS/ceplas-icon.jpeg"></a><a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img3" src="./../../../images/logos/CreativeCommons/by.svg"></a>'
 style: 'footer {height: 30px;padding: 10px;bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 30px; padding-left: 20px;opacity: 0.5;}  #footer-img3 {height: 20px;padding-left: 20px; opacity: 0.5;}'
 title: Start-Your-ARC Workshop Series - Session 02
 author:
@@ -20,7 +20,7 @@ author:
 <!-- _paginate: false -->
 <!-- _footer: "" -->
 
-![bg fit](./../../../images/background_title_ceplas.drawio.svg)
+![bg fit](./../../../images/background-title-ceplas.drawio.svg)
 
 **Preparation for** Session 02 &ndash; "Build your ARC"
 (May 31st, 2023)
@@ -62,7 +62,7 @@ ul{
 
 If you do not have a DataPLANT account, please register at the [DataPLANT website](<https://register.nfdi4plants.org>).
 
-![w:800](./../../../images/dataplant_registration.png)
+![w:800](./../../../images/dataplant-registration.png)
 
 <!-- Source to slide(s) -->
 <!-- ../../../bricks/datahub_registration.md -->
@@ -74,7 +74,7 @@ If you do not have a DataPLANT account, please register at the [DataPLANT websit
 
 Please add your `Project/consortium` (e.g. CEPLAS, SFB, TRR) and choose the role `Guest`
 
-![bg right:40% fit](./../../../images/dataplant_registration_roles.png)
+![bg right:40% fit](./../../../images/dataplant-registration-roles.png)
 
 <!-- Source to slide(s) -->
 <!-- ../custom/bricks/ceplas-datahub-registration.md -->
@@ -131,11 +131,11 @@ This can be data of your current research project or an already published manusc
 
 # Resources
 
-### <img align="left" height=35px src='./../../../images/logos/CEPLAS/CEPLAS_Icon.jpeg'/> CEPLAS Data Science
+### <img align="left" height=35px src='./../../../images/logos/CEPLAS/ceplas-icon.jpeg'/> CEPLAS Data Science
 
 > Website: https://www.ceplas.eu/en/research/data-science-and-data-management/
 
-### <img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
+### <img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/dataplant-logo-minimal-rounded-bg-darkblue.svg'/> DataPLANT (nfdi4plants)
 
 > Website: https://nfdi4plants.org/
 > Knowledge Base: https://nfdi4plants.org/nfdi4plants.knowledgebase/ 

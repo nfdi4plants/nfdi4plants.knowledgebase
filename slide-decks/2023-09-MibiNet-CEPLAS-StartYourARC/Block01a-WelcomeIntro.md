@@ -19,7 +19,7 @@ September 21st, 2023
  
 <div style="position: fixed; bottom: 10%; right: 40%;">
   <div class="profile-picture">
-    <img src="https://www.biological-data-science.hhu.de/fileadmin/_processed_/8/c/csm_Sabrina_Zander_3c8daca973.jpg" alt="Sabrina Zander" style="position:absolute; height: auto; width: auto; top:65%; left: 0%; transform:translateY(-50%);"> 
+    <img src="https://www.biological-data-science.hhu.de/fileadmin/_processed_/8/c/csm-sabrina-zander-3c8daca973.jpg" alt="Sabrina Zander" style="position:absolute; height: auto; width: auto; top:65%; left: 0%; transform:translateY(-50%);"> 
   </div>
 
   <div>
@@ -30,7 +30,7 @@ September 21st, 2023
 
 <div style="position: fixed; bottom: 10%; right: 10%;">
   <div class="profile-picture">
-    <img src="https://www.ceplas.eu/fileadmin/_processed_/d/c/csm_Brilhaus_Dominik_4fd48a61a2.jpeg" alt="Dominik Brilhaus">
+    <img src="https://www.ceplas.eu/fileadmin/_processed_/d/c/csm-brilhaus-dominik-4fd48a61a2.jpeg" alt="Dominik Brilhaus">
   </div>
 
   <div>
@@ -158,49 +158,49 @@ Time | Topics
 
 # The Research Data Lifecycle
 
-![h:500](./../../images/ResearchDataLifecycle_seq1.png)
+![h:500](./../../images/researchdatalifecycle-seq1.png)
 
 ---
 
 # The Research Data Lifecycle
 
-![h:500](./../../images/ResearchDataLifecycle_seq2.png)
+![h:500](./../../images/researchdatalifecycle-seq2.png)
 
 ---
 
 # The Research Data Lifecycle
 
-![h:500](./../../images/ResearchDataLifecycle_seq3.png)
+![h:500](./../../images/researchdatalifecycle-seq3.png)
 
 ---
 
 # The Research Data Lifecycle
 
-![h:500](./../../images/ResearchDataLifecycle_seq4.png)
+![h:500](./../../images/researchdatalifecycle-seq4.png)
 
 ---
 
 # The Research Data Lifecycle
 
-![h:500](./../../images/ResearchDataLifecycle_seq5.png)
+![h:500](./../../images/researchdatalifecycle-seq5.png)
 
 ---
 
 # The Research Data Lifecycle
 
-![h:500](./../../images/ResearchDataLifecycle_seq6.png)
+![h:500](./../../images/researchdatalifecycle-seq6.png)
 
 ---
 
 # The Research Data Lifecycle
 
-![h:500](./../../images/ResearchDataLifecycle_seq7.png)
+![h:500](./../../images/researchdatalifecycle-seq7.png)
 
 ---
 
 # The Research Data Lifecycle ***is mutable***
 
-![h:500](./../../images/ResearchDataLifecycle_seq9.png)
+![h:500](./../../images/researchdatalifecycle-seq9.png)
 
 ---
 
@@ -230,7 +230,7 @@ footer {
 
 https://doi.org/10.1038/sdata.2016.18
 
-![bg right w:600](./../../images/wilkinson2016-FAIR.png)
+![bg right w:600](./../../images/wilkinson2016-fair.png)
 
 ---
 
@@ -246,7 +246,7 @@ object-fit: cover;
 }
 </style>
 
-![](./../../images/FAIR_Benefits.png)
+![](./../../images/fair-benefits.png)
 
 ---
 
@@ -322,13 +322,13 @@ object-fit: cover;
 
 # Scattered Data Silos
 
-![w:900](././../../images/data_fragmentation_CEPLAS.png)
+![w:900](././../../images/data-fragmentation-ceplas.png)
 
 ---
 
 # Scattered Data Silos
 
-![w:900](././../../images/data_fragmentation_CEPLAS_MibiNet_TRR.png)
+![w:900](././../../images/data-fragmentation-ceplas-mibinet-trr.png)
 
 ---
 
@@ -344,4 +344,4 @@ object-fit: cover;
 }
 </style>
 
-![](./../../images/FAIR_unFAIR_Stories.png)
+![](./../../images/fair-unfair-stories.png)

@@ -21,7 +21,7 @@ author:
 December 7<sup>th</sup>, 2023
 Dominik Brilhaus, CEPLAS Data Science
 
-![bg fit](./../../images/background_title_ceplas.drawio.svg)
+![bg fit](./../../images/background-title-ceplas.drawio.svg)
 
 ---
 
@@ -94,7 +94,7 @@ Slides will be shared via DataPLANT knowledge base
 - First few steps into ARCs
 - You or collaborators can pick them up from there
 
-![bg right w:500](./../../images/ceplas-ARCs.drawio.svg)
+![bg right w:500](./../../images/ceplas-arcs.drawio.svg)
 
 ---
 
@@ -116,7 +116,7 @@ Slides will be shared via DataPLANT knowledge base
 
 # Resources
 
-### <img align="left" style="height:35px" src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
+### <img align="left" style="height:35px" src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/dataplant-logo-minimal-rounded-bg-darkblue.svg'/> DataPLANT (nfdi4plants)
 
 Website: <a href="https://nfdi4plants.org/" target="_blank">https://nfdi4plants.org/</a>
 Knowledge Base: <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/" target="_blank">https://nfdi4plants.org/nfdi4plants.knowledgebase/</a>

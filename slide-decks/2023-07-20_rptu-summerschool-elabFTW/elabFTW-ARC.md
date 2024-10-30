@@ -67,7 +67,7 @@ Demo elabFTW: https://demo.elabftw.net/
 - Create an experiment
 - View / edit mode
 
-![w:600 bg right:50%](./images/elabFTW-experiment-list-view.drawio.svg)
+![w:600 bg right:50%](./images/elabftw-experiment-list-view.drawio.svg)
 
 
 
@@ -118,32 +118,32 @@ Create an experiment **Baking pancakes**
 
 ## Tags
 
-![w:900](images/elabFTW-experiment-tags.png)
+![w:900](images/elabftw-experiment-tags.png)
 
 <br>
 
-![w:900](images/elabFTW-experiment-tags2.png)
+![w:900](images/elabftw-experiment-tags2.png)
 
 ---
 
 ## Database
 
-![w:900](images/elabFTW-database-list-view2.png)
+![w:900](images/elabftw-database-list-view2.png)
 
 <br>
 
-![w:900](images/elabFTW-adminpanel-item-types2.png)
+![w:900](images/elabftw-adminpanel-item-types2.png)
 
 
 ---
 
 ## Linking items
 
-![w:900](images/elabFTW-experiment-linkedItems.png)
+![w:900](images/elabftw-experiment-linkeditems.png)
 
 <br>
 
-![w:900](images/elabFTW-database-linkedItems.png)
+![w:900](images/elabftw-database-linkeditems.png)
 
 
 ---
@@ -209,11 +209,11 @@ Start another experiment **Baking a chocolate cake**
 
 # Provide structure: Create templates
 
-![w:800](images/elabFTW-templates-create.png)
+![w:800](images/elabftw-templates-create.png)
 
 <br>
 
-![w:800](images/elabFTW-templates-edit.png)
+![w:800](images/elabftw-templates-edit.png)
 
 
 ---
@@ -241,7 +241,7 @@ Create an experiment template for **baking recipes**
 
 # Add data to your experiment
 
-![w:1100](images/elabFTW-experiment-attachFile.png)
+![w:1100](images/elabftw-experiment-attachfile.png)
 
 ---
 
@@ -261,28 +261,28 @@ Create an experiment template for **baking recipes**
 
 # Visibility and write access
 
-![w:1000](images/elabFTW-experiment-rights.png)
+![w:1000](images/elabftw-experiment-rights.png)
 
 ---
 
 # Version history
 
 
-![w:1000](images/elabFTW-experiment-changelogRevision1.png)
-![w:1000](images/elabFTW-experiment-changelogRevision2.png)
+![w:1000](images/elabftw-experiment-changelogrevision1.png)
+![w:1000](images/elabftw-experiment-changelogrevision2.png)
 
 ---
 
 # Restore revision
 
-![w:1000](images/elabFTW-experiment-changelogRevision3.png)
+![w:1000](images/elabftw-experiment-changelogrevision3.png)
 
 
 ---
 
 # Export experiments
 
-![w:1000](images/elabFTW-experiment-export.png)
+![w:1000](images/elabftw-experiment-export.png)
 
 ---
 
@@ -328,7 +328,7 @@ Create an experiment template for **baking recipes**
 
 # Bridging elabFTW and ARC
 
-![w:800](images/elabFTW-ARC.drawio.png)
+![w:800](images/elabftw-arc.drawio.png)
 
 
 
@@ -383,14 +383,14 @@ Create an experiment template for **baking recipes**
 
 <div class="columns-right">
 
-<img src="./images/elabFTW-templates-json.png" style="width:80%">
+<img src="./images/elabftw-templates-json.png" style="width:80%">
 
 </div>
 
 
 <div class="columns-left">
 
-<img src="./images/elabFTW-templates-extraFields.png" style="width:40%">
+<img src="./images/elabftw-templates-extrafields.png" style="width:40%">
 
 </div>
 
@@ -408,7 +408,7 @@ Create an experiment template for **baking recipes**
 2. catalog: Name / ID items
 3. Create item database 
 
-![w:600px](./images/elabFTW-cataloging.drawio.svg)
+![w:600px](./images/elabftw-cataloging.drawio.svg)
 
 
 ---
@@ -470,7 +470,7 @@ https://git.nfdi4plants.org
 
 # elabFTW - Overview
 
-![bg right:60% w:700](./images/elabFTW-overview-panels.drawio.png)
+![bg right:60% w:700](./images/elabftw-overview-panels.drawio.png)
 
 elabFTW data is mainly divided in two main panels
 
@@ -484,7 +484,7 @@ elabFTW data is mainly divided in two main panels
 
 # Experiment Panel
 
-![bg right:60% w:700](./images/elabFTW-experiment-list-view.png)
+![bg right:60% w:700](./images/elabftw-experiment-list-view.png)
 
 The `Experiment` panel is the default "working area" for protocols of daily lab work
 
@@ -492,7 +492,7 @@ The `Experiment` panel is the default "working area" for protocols of daily lab 
 
 # Database Panel
 
-![bg right:60% w:700](./images/elabFTW-database-list-view.png)
+![bg right:60% w:700](./images/elabftw-database-list-view.png)
 
 The `Database` panel is elabFTW's place to categorize contents
 
@@ -503,7 +503,7 @@ The `Database` panel is elabFTW's place to categorize contents
 :bulb: Item types can be defined in the `Admin Panel`
 
 
-![bg right  w:600](./images/elabFTW-adminpanel-item-types.png)
+![bg right  w:600](./images/elabftw-adminpanel-item-types.png)
 
 
 ---
@@ -522,7 +522,7 @@ The `Database` panel is elabFTW's place to categorize contents
 
 # Database import
 
-![](./images/elabFTW-database-import.png)
+![](./images/elabftw-database-import.png)
 
 ---
 
@@ -553,19 +553,19 @@ sty03-aba-timeseries | inv001-talinum-cam | sty03-aba-timeseries | Time series e
 
 # Database import
 
-![w:700](./images/elabFTW-database-import-menu.png)
+![w:700](./images/elabftw-database-import-menu.png)
 
 ---
 
 # Database import
 
-![w:700](./images/elabFTW-database-import-success.png)
+![w:700](./images/elabftw-database-import-success.png)
 
 ---
 
 # Database Panel
 
-![w:700](./images/elabFTW-database-list-view.png)
+![w:700](./images/elabftw-database-list-view.png)
 
 
 ---
@@ -586,13 +586,13 @@ sty03-aba-timeseries | inv001-talinum-cam | sty03-aba-timeseries | Time series e
 
 In edit mode
 
-![bg right:70%  w:700](./images/elabFTW-experiment-linking-items.png)
+![bg right:70%  w:700](./images/elabftw-experiment-linking-items.png)
 
 ---
 
 # Linked items
 
-![bg right:70% w:700](./images/elabFTW-experiment-linked-items.png)
+![bg right:70% w:700](./images/elabftw-experiment-linked-items.png)
 
 ---
 

@@ -21,7 +21,7 @@ author:
 November 8<sup>th</sup>, 2023
 Dominik Brilhaus, CEPLAS Data Science
 
-![bg fit](./../../images/background_title_ceplas.drawio.svg)
+![bg fit](./../../images/background-title-ceplas.drawio.svg)
 
 ---
 
@@ -111,49 +111,49 @@ Time | Topics
 
 # The Research Data Lifecycle
 
-![h:500](./../../images/ResearchDataLifecycle_seq1.png)
+![h:500](./../../images/researchdatalifecycle-seq1.png)
 
 ---
 
 # The Research Data Lifecycle
 
-![h:500](./../../images/ResearchDataLifecycle_seq2.png)
+![h:500](./../../images/researchdatalifecycle-seq2.png)
 
 ---
 
 # The Research Data Lifecycle
 
-![h:500](./../../images/ResearchDataLifecycle_seq3.png)
+![h:500](./../../images/researchdatalifecycle-seq3.png)
 
 ---
 
 # The Research Data Lifecycle
 
-![h:500](./../../images/ResearchDataLifecycle_seq4.png)
+![h:500](./../../images/researchdatalifecycle-seq4.png)
 
 ---
 
 # The Research Data Lifecycle
 
-![h:500](./../../images/ResearchDataLifecycle_seq5.png)
+![h:500](./../../images/researchdatalifecycle-seq5.png)
 
 ---
 
 # The Research Data Lifecycle
 
-![h:500](./../../images/ResearchDataLifecycle_seq6.png)
+![h:500](./../../images/researchdatalifecycle-seq6.png)
 
 ---
 
 # The Research Data Lifecycle
 
-![h:500](./../../images/ResearchDataLifecycle_seq7.png)
+![h:500](./../../images/researchdatalifecycle-seq7.png)
 
 ---
 
 # The Research Data Lifecycle ***is mutable***
 
-![h:500](./../../images/ResearchDataLifecycle_seq9.png)
+![h:500](./../../images/researchdatalifecycle-seq9.png)
 
 ---
 
@@ -166,7 +166,7 @@ Time | Topics
 
 https://doi.org/10.1038/sdata.2016.18
 
-![bg right:45% w:600](./../../images/wilkinson2016-FAIR.png)
+![bg right:45% w:600](./../../images/wilkinson2016-fair.png)
 
 ---
 
@@ -182,7 +182,7 @@ object-fit: cover;
 }
 </style>
 
-![](./../../images/FAIR_Benefits.png)
+![](./../../images/fair-benefits.png)
 
 ---
 
@@ -259,13 +259,13 @@ object-fit: cover;
 
 # Scattered Data Silos
 
-![w:900](././../../images/data_fragmentation_CEPLAS.png)
+![w:900](././../../images/data-fragmentation-ceplas.png)
 
 ---
 
 # Scattered Data Silos
 
-![w:900](././../../images/data_fragmentation_CEPLAS_MibiNet_TRR.png)
+![w:900](././../../images/data-fragmentation-ceplas-mibinet-trr.png)
 
 ---
 
@@ -281,7 +281,7 @@ object-fit: cover;
 }
 </style>
 
-![](./../../images/FAIR_unFAIR_Stories.png)
+![](./../../images/fair-unfair-stories.png)
 
 --- 
 

@@ -21,7 +21,7 @@ October, 2024
 Dominik Brilhaus (CEPLAS)
 Sabrina Zander (MibiNet)
 
-![bg fit](./../../images/background_title_ceplas.drawio.svg)
+![bg fit](./../../images/background-title-ceplas.drawio.svg)
 
 ---
 
@@ -32,7 +32,7 @@ Sabrina Zander (MibiNet)
 - Share them via the DataHUB
 - Annotate with metadata
 
-![bg right w:500](./../../images/ceplas-ARCs.drawio.svg)
+![bg right w:500](./../../images/ceplas-arcs.drawio.svg)
 
 ---
 
@@ -61,7 +61,7 @@ Slides are shared via [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4pl
 
 # Resources &ndash; join the open source movement
 
-### <img align="left" style="height:35px" src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
+### <img align="left" style="height:35px" src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/dataplant-logo-minimal-rounded-bg-darkblue.svg'/> DataPLANT (nfdi4plants)
 
 DataPLANT Website: <a href="https://nfdi4plants.org/" target="_blank">https://nfdi4plants.org/</a>
 Knowledge Base: <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/" target="_blank">https://nfdi4plants.org/nfdi4plants.knowledgebase/</a>
@@ -86,7 +86,7 @@ Data managers in Düsseldorf, Cologne, Jülich and close by (CEPLAS, MibiNet, TR
 [&rarr; Details](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/disseminations/ARC-user-support_HHU-Uoc-FZJ/arc-user-support.html).
 
 <div>
-  <img style="height:40px;margin-right:50px" src='https://www.ceplas.eu/typo3conf/ext/fksitepackage/Resources/Public/Images/CEPLAS-Logo.svg'/>
-  <img style="height:100px;margin-right:50px" src='https://trr341.uni-koeln.de/sites/crc_trr_341/TRR341_logo.png'/>
-  <img style="height:70px;margin-right:50px" src='https://www.sfb1535.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Biologie/SFB1535/Bilder/MibiNet.png'/>
+  <img style="height:40px;margin-right:50px" src='https://www.ceplas.eu/typo3conf/ext/fksitepackage/Resources/Public/Images/ceplas-logo.svg'/>
+  <img style="height:100px;margin-right:50px" src='https://trr341.uni-koeln.de/sites/crc_trr_341/trr341-logo.png'/>
+  <img style="height:70px;margin-right:50px" src='https://www.sfb1535.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Biologie/SFB1535/Bilder/mibinet.png'/>
 </div>

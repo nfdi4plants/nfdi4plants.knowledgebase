@@ -14,7 +14,7 @@ author:
 
 # Data Stewardship between DataPLANT and the community <!-- fit -->
 
-![w:880](./../../images/DataPLANT-collaborationCEPLAS.drawio.png)
+![w:880](./../../images/dataplant-collaborationceplas.drawio.png)
 
 ---
 
@@ -28,50 +28,50 @@ Your entire investigation in a single unified bag
 
 # You can store your ARC in the DataHUB
 
-![w:800](./../../images/DataPLANT_BigPicture_seq2.png)
+![w:800](./../../images/dataplant-bigpicture-seq2.png)
 
 ---
 
 # ARCs are versioned
 
-![w:800](./../../images/DataPLANT_BigPicture_seq3.png)
+![w:800](./../../images/dataplant-bigpicture-seq3.png)
 
 ---
 
 # You can invite collaborators
 
-![w:800](./../../images/DataPLANT_BigPicture_seq4.png)
+![w:800](./../../images/dataplant-bigpicture-seq4.png)
 
 ---
 
 # Collaborate and contribute
 
-![w:800](./../../images/DataPLANT_BigPicture_seq5.png)
+![w:800](./../../images/dataplant-bigpicture-seq5.png)
 
 ---
 
 # Reuse data in ARCs
 
-![w:800](./../../images/DataPLANT_BigPicture_seq6.png)
+![w:800](./../../images/dataplant-bigpicture-seq6.png)
 
 ---
 
 # Publish your ARC
 
-![w:800](./../../images/DataPLANT_BigPicture_seq7.png)
+![w:800](./../../images/dataplant-bigpicture-seq7.png)
 
 ---
 
 
 # Publish your ARC, get a DOI
 
-![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/ARC_SeamlessPublication.svg)
+![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/arc-seamlesspublication.svg)
 
 ---
 
 # ARC as single-entry point
 
-![w:900](./../../images/ARC-publication-outlets.drawio.png)
+![w:900](./../../images/arc-publication-outlets.drawio.png)
 
 ---
 
@@ -117,7 +117,7 @@ Your entire investigation in a single unified bag
   
   </div><div>
   
-  ![](./../../images/ceplas-enablingPlatforms.drawio.png)
+  ![](./../../images/ceplas-enablingplatforms.drawio.png)
   
   </div>
 </div>
@@ -127,43 +127,43 @@ Your entire investigation in a single unified bag
 
 # Streamlined data exchange
 
-<img src="./../../images/enablingPlatform-FileShare.drawio.png" style="width:60%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../../images/enablingplatform-fileshare.drawio.png" style="width:60%;display: block;margin-left: auto;margin-right: auto;">
 
 ---
 
 # Meet your collaborators in an ARC
 
-<img src="./../../images/enablingPlatform-Timeline.drawio.png" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
+<img src="./../../images/enablingplatform-timeline.drawio.png" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
 
 ---
 
 # The ARC ecosystem
 
-![w:850](./../../images/ARC-ecosystem-10.drawio.png)
+![w:850](./../../images/arc-ecosystem-10.drawio.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../images/ARC_fillWithData_seq1.png)
+![width:950](./../../images/arc-fillwithdata-seq1.png)
 
 ---
 
 # ARCs store experimental data
 
-![width:950](./../../images/ARC_fillWithData_seq3.png)
+![width:950](./../../images/arc-fillwithdata-seq3.png)
 
 ---
 
 # Computations can be run inside ARCs
 
-![width:950](./../../images/ARC_fillWithData_seq5.png)
+![width:950](./../../images/arc-fillwithdata-seq5.png)
 
 ---
 
 # ARCs come with comprehensive metadata
 
-![width:950](./../../images/ARC_fillWithData_seq6.png)
+![width:950](./../../images/arc-fillwithdata-seq6.png)
 
 ---
 
@@ -172,7 +172,7 @@ Your entire investigation in a single unified bag
 <div class="two-columns">
   <div>
   
-  ![w:500](./../../images/ARC_BuildsOnStandards3.png)
+  ![w:500](./../../images/arc-buildsonstandards3.png)
   
   </div>
   <div>

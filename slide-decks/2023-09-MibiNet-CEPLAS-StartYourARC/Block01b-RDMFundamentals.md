@@ -26,7 +26,7 @@ Sept 20th, 2023
 
 # Different laws touched by RDM
 
-![w:700](././../../images/Hartmann_TerraIncognita-Forschungsdaten-RechtlicheHeimat.png)
+![w:700](././../../images/hartmann-terraincognita-forschungsdaten-rechtlicheheimat.png)
 
 <span class="footer-reference">Hartmann, Thomas. (2019). Rechtsfragen: Institutioneller Rahmen und Handlungsoptionen für universitäres FDM. Zenodo. https://doi.org/10.5281/zenodo.2654306</span>
 
@@ -56,7 +56,7 @@ Sept 20th, 2023
 
 Check out: https://creativecommons.org/about/cclicenses/
 
-![w:400](././../../images/creative_commons_brochure.png)
+![w:400](././../../images/creative-commons-brochure.png)
 
 <span class="footer-reference">adapted from https://wiki.creativecommons.org/images/0/01/6licenses-folded.pdf</span>
 
@@ -79,7 +79,7 @@ Check out: https://creativecommons.org/about/cclicenses/
 
 # FAIR and CARE
 
-![](https://images.squarespace-cdn.com/content/v1/5d3799de845604000199cd24/1567592451970-2R8XFL670QNMAGDRV7ED/Be+FAIR+and+CARE.png?format=2500w)
+![](https://images.squarespace-cdn.com/content/v1/5d3799de845604000199cd24/1567592451970-2R8XFL670QNMAGDRV7ED/Be+FAIR+and+care.png?format=2500w)
 
 <span class="footer-reference">https://www.gida-global.org/care</span>
 
@@ -94,7 +94,7 @@ Check out: https://creativecommons.org/about/cclicenses/
 ---
 
 # Research Data policies
-![w:500](./../../images/Forschungsdaten-Policy-Kit-Abb2.png)
+![w:500](./../../images/forschungsdaten-policy-kit-abb2.png)
 
 
 <span class="footer-reference">Hiemenz, Bea & Kuberek, Monika (2018) http://dx.doi.org/10.14279/depositonce-7521</span>
@@ -194,7 +194,7 @@ section {font-size: 25px;}
 
 # Generic data repositories
 
-![bg right:40% width:400](./../../images/repositories_genericRepos_collage.drawio.svg)
+![bg right:40% width:400](./../../images/repositories-genericrepos-collage.drawio.svg)
 
 **Good**
 
@@ -215,7 +215,7 @@ section {font-size: 25px;}
 
 # Spot the PIDs
 
-![w:900](././../../images/exercise_PIDs_img1.png)
+![w:900](././../../images/exercise-pids-img1.png)
 
 <span class="footer-reference"> https://doi.org/10.1093/plcell/koab243</span>
 
@@ -228,7 +228,7 @@ section {font-size: 25px;}
 - Diminish “dead links”
 - Cope with name changes
 
-![bg right width:500](././../../images/pid_collage.drawio.svg)
+![bg right width:500](././../../images/pid-collage.drawio.svg)
 
 ---
 
@@ -309,7 +309,7 @@ It’s good practice to document:
 
 # Cloud Services
 
-![bg right:50% w:800](./../../images/DataSharing_Cloud_img6.png)
+![bg right:50% w:800](./../../images/datasharing-cloud-img6.png)
 
 <span style="color:#B4CE82">✓ Documents</span>  
 <span style="color:#B4CE82">✓ Small data</span>  

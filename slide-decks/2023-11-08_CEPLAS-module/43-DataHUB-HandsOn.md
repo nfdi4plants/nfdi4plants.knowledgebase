@@ -34,7 +34,7 @@ author:
 2. navigate to the [projects](./../../../DataHUB-Manual/datahub-projectsPanel.html) (2)
 3. or [groups](datahub-groupsPanel.html) (3) panels
 
-![bg right w:500](./../../images/datahub-hamburgerMenu.drawio.svg)
+![bg right w:500](./../../images/datahub-hamburgermenu.drawio.svg)
 
 ---
 
@@ -45,13 +45,13 @@ author:
 3. navigate to the [user settings](./../../../DataHUB-Manual/datahub-userSettings.html) (3) 
 4. or sign out (4) of the DataHUB.
 
-![bg right w:500](./../../images/datahub-avatarMenu.drawio.svg)
+![bg right w:500](./../../images/datahub-avatarmenu.drawio.svg)
 
 ---
 
 # Projects Panel
 
-![](./../../images/datahub-projectsPanel.drawio.svg)
+![](./../../images/datahub-projectspanel.drawio.svg)
 
 1. Choose a tab (1) to see only your ARCs, or explore other publicly available ARCs. 
 2. The main panel (2) lists all ARCs
@@ -65,7 +65,7 @@ author:
 
 The ARC Panel is the main working area for your ARC.
 
-![w:1000](./../../images/datahub-ARC-overview.drawio.svg)
+![w:1000](./../../images/datahub-arc-overview.drawio.svg)
 
 ---
 
@@ -73,7 +73,7 @@ The ARC Panel is the main working area for your ARC.
 
 <style scoped> section {font-size: 23px;} </style>
 
-![bg right w:600](./../../images/datahub-ARC-overview.drawio.svg)
+![bg right w:600](./../../images/datahub-arc-overview.drawio.svg)
 
 1. access the project information (1), e.g. invite members to the ARC
 2. follow the progress of your ARC repository (2),
@@ -87,7 +87,7 @@ The ARC Panel is the main working area for your ARC.
 
 <style scoped> section {font-size: 23px;} </style>
 
-![bg right w:600](./../../images/datahub-ARC-overview.drawio.svg)
+![bg right w:600](./../../images/datahub-arc-overview.drawio.svg)
 
 6. see the ARC's name and visibility level (6),
 7. follow the ARC's commit history (7),
@@ -99,7 +99,7 @@ The ARC Panel is the main working area for your ARC.
 
 # Collaborate and share
 
-![w:650](./../../images/ARC_DataSharing_Experts02_img1.png)
+![w:650](./../../images/arc-datasharing-experts02-img1.png)
 
 ---
 
@@ -113,31 +113,31 @@ The ARC Panel is the main working area for your ARC.
 
 1. Click on **Project Information** in the left navigation panel
 
-![fit w:1050](./../../images/datahub_members_seq2.png)
+![fit w:1050](./../../images/datahub-members-seq2.png)
 
 ---
 
 2. Click on **Members**
 
-![fit w:1050](./../../images/datahub_members_seq3.png)
+![fit w:1050](./../../images/datahub-members-seq3.png)
 
 ---
 
 3. Click on **Invite members**
 
-![fit w:1050](./../../images/datahub_members_seq4.png)
+![fit w:1050](./../../images/datahub-members-seq4.png)
 
 ---
 
 4. Search for potential collaborators
 
-![fit w:1050](./../../images/datahub_members_seq5.png)
+![fit w:1050](./../../images/datahub-members-seq5.png)
 
 ---
 
 5. Select a role
 
-![fit w:1050](./../../images/datahub_members_seq6.png)
+![fit w:1050](./../../images/datahub-members-seq6.png)
 
 ---
 
@@ -175,7 +175,7 @@ object-position: 100% 45%;
 }
 </style>
 
-![](./../../images/ARC_Sharing_img1.png)
+![](./../../images/arc-sharing-img1.png)
 
 ---
 

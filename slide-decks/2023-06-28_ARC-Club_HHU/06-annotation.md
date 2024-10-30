@@ -75,9 +75,9 @@ git clone "https://demo-user:5ehDYeHcqP2MqVXsNNPu@git.nfdi4plants.org/teaching/d
 
 **Today** we want to 
 
-<img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate_c_40x40.png'/> ... **annotate the experimental data**
+<img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/master/icons/Swate/Excel/Core/swate-c-40x40.png'/> ... **annotate the experimental data**
 
-![bg right:40% width:400](./../../images/demo_arc_screenshot.png)
+![bg right:40% width:400](./../../images/demo-arc-screenshot.png)
 
 ---
 
@@ -87,7 +87,7 @@ git clone "https://demo-user:5ehDYeHcqP2MqVXsNNPu@git.nfdi4plants.org/teaching/d
 
 ## ARC builds on ISA
 
-![w:900](./../../images/ISAmodel_ARC01_img01.svg)
+![w:900](./../../images/isamodel-arc01-img01.svg)
 
 https://isa-tools.org/format/specification.html
 
@@ -95,19 +95,19 @@ https://isa-tools.org/format/specification.html
 
 # ARC builds on ISA
 
-![w:1100](./../../images/ISAmodel_ARC01_img02.svg)
+![w:1100](./../../images/isamodel-arc01-img02.svg)
 
 ---
 
 # isa.<>.xlsx files within ARCs
 
-![w:1000](./../../images/ISAmodel_ARC01_img03.svg)
+![w:1000](./../../images/isamodel-arc01-img03.svg)
 
 ---
 
 # Study and assay files are registered in the investigation file 
 
-![w:950](./../../images/ISAmodel_ARC01_img04.svg)
+![w:950](./../../images/isamodel-arc01-img04.svg)
 
 ---
 
@@ -118,17 +118,17 @@ Output building blocks:
 - Raw Data File
 - Derived Data File
 
-![bg right w:600](./../../images/ISAmodel_ARC01_img05.svg)
+![bg right w:600](./../../images/isamodel-arc01-img05.svg)
 
 ---
 
-![bg w:1050](./../../images/ISAmodel_ARC01_img6.svg)
+![bg w:1050](./../../images/isamodel-arc01-img6.svg)
 
 ---
 
 # Annotation Building Block types
 
-![bg right:40% w:520](./../../images/Swate_Overview.svg)
+![bg right:40% w:520](./../../images/swate-overview.svg)
 
 - Source Name (Input)
 - Protocol Columns
@@ -151,7 +151,7 @@ Output building blocks:
 ## Swate Overview
 
 <figure>
-  <img src="./../../images/Swate-Overlay-Exp.jpg?v27.01.202" style="height: 400px">
+  <img src="./../../images/swate-overlay-exp.jpg?v27.01.202" style="height: 400px">
   <figcaption>Major areas of the Swate user interface.</figcaption>
 </figure>
 
@@ -193,7 +193,7 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 </div>
 
 <div class="columns-right">
-    <img src="./../../images/Swate-CreateAnnotationTable-Exp.jpg" style="width: 1200px">
+    <img src="./../../images/swate-createannotationtable-exp.jpg" style="width: 1200px">
 </div>
 
 </div>
@@ -210,7 +210,7 @@ Create a Swate annotation table via the <kbd>create annotation table</kbd> butto
 
 > :bulb: This adds three columns to your table, one visible and **two** hidden.
 
-![bg right:30% w:400](./../../images/Swate-AddBuildingBlock-Exp.jpg?v31.01.22)
+![bg right:30% w:400](./../../images/swate-addbuildingblock-exp.jpg?v31.01.22)
 
 ---
 ## Insert values to annotate your data
@@ -267,7 +267,7 @@ Click the <kbd>Update Ontology Terms</kbd> quick access buttons.
 
 At this point. Your table should look similar to this:
 
-![w:1000](./../../images/demo_isa.study1.png)
+![w:1000](./../../images/demo-isa.study1.png)
 
 ---
 
@@ -301,7 +301,7 @@ Try to add suitable *building blocks* for other pieces of metadata from the plan
     - You will see a preview of all building blocks which are part of this template.
 2. Click <kbd>Add template</kbd> to add all Building Blocks from the template to your table, which <u>do not exist yet</u>.
 
-![bg right:30% w:350px](./../../images/swate_templates.svg)
+![bg right:30% w:350px](./../../images/swate-templates.svg)
 
 ---
 
@@ -313,7 +313,7 @@ Sometimes you need to add or update the unit of an existing building block.
 2. Open the *Building Blocks* tab
 3. In the bottom panel "Add/Update unit reference to existing building block", search for the unit "milligram". Select the unit term and click <kbd>Update unit for cells</kbd>.
 :bulb: If you already had values in the main column they will be updated automatically.
-4. Click the *Update Ontology Terms* <a href="./images/Swate-Overlay-Exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
+4. Click the *Update Ontology Terms* <a href="./images/swate-overlay-exp.jpg" target="_blank">quick access button</a>, to update the reference columns.
    
 ---
 

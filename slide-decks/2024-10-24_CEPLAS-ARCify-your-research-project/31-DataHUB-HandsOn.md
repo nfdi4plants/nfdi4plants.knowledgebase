@@ -60,7 +60,7 @@ author:
 
 <div>
 
-![](./../../images/datahub-hamburgerMenu.drawio.svg)
+![](./../../images/datahub-hamburgermenu.drawio.svg)
 
 </div>
 </div>
@@ -84,7 +84,7 @@ author:
 
 <div>
 
-![w:400](./../../images/datahub-avatarMenu.drawio.svg)
+![w:400](./../../images/datahub-avatarmenu.drawio.svg)
 
 </div>
 </div>
@@ -95,7 +95,7 @@ author:
 
 ## Projects Panel
 
-![bg right w:600](./../../images/datahub-projectsPanel.drawio.svg)
+![bg right w:600](./../../images/datahub-projectspanel.drawio.svg)
 
 1. Choose a tab (1) to see only your ARCs, or explore other publicly available ARCs. 
 2. The main panel (2) lists all ARCs
@@ -110,7 +110,7 @@ author:
 
 The ARC Panel is the main working area for your ARC.
 
-![w:1000](./../../images/datahub-ARC-overview.drawio.svg)
+![w:1000](./../../images/datahub-arc-overview.drawio.svg)
 
 ---
 
@@ -133,7 +133,7 @@ The ARC Panel is the main working area for your ARC.
 
 <div>
 
-![w:600](./../../images/datahub-ARC-overview.drawio.svg)
+![w:600](./../../images/datahub-arc-overview.drawio.svg)
 
 </div>
 </div>
@@ -159,7 +159,7 @@ The ARC Panel is the main working area for your ARC.
 
 <div>
 
-![w:600](./../../images/datahub-ARC-overview.drawio.svg)
+![w:600](./../../images/datahub-arc-overview.drawio.svg)
 
 </div>
 </div>
@@ -176,7 +176,7 @@ The ARC Panel is the main working area for your ARC.
 
 1. Click on **Project Information** in the left navigation panel
 
-![fit w:1050](./../../images/datahub_members_seq2.png)
+![fit w:1050](./../../images/datahub-members-seq2.png)
 
 ---
 
@@ -184,7 +184,7 @@ The ARC Panel is the main working area for your ARC.
 
 2. Click on **Members**
 
-![fit w:1050](./../../images/datahub_members_seq3.png)
+![fit w:1050](./../../images/datahub-members-seq3.png)
 
 ---
 
@@ -192,7 +192,7 @@ The ARC Panel is the main working area for your ARC.
 
 3. Click on **Invite members**
 
-![w:950](./../../images/datahub_members_seq4.png)
+![w:950](./../../images/datahub-members-seq4.png)
 
 ---
 
@@ -200,7 +200,7 @@ The ARC Panel is the main working area for your ARC.
 
 4. Search for potential collaborators
 
-![w:650](./../../images/datahub_members_seq5.png)
+![w:650](./../../images/datahub-members-seq5.png)
 
 ---
 
@@ -208,7 +208,7 @@ The ARC Panel is the main working area for your ARC.
 
 5. Select a role
 
-![w:650](./../../images/datahub_members_seq6.png)
+![w:650](./../../images/datahub-members-seq6.png)
 
 ---
 
@@ -218,7 +218,7 @@ The ARC Panel is the main working area for your ARC.
 
 When inviting new members to an ARC or group, you can choose between different levels.
 
-<img src="./../../images/arc-sharing-PermissionsRoles.drawio.png" style="display: block; margin: auto" width=800px>
+<img src="./../../images/arc-sharing-permissionsroles.drawio.png" style="display: block; margin: auto" width=800px>
 
 :bulb: By default you are **Owner** of an ARC you create or upload to the DataHUB.
 
@@ -251,7 +251,7 @@ When inviting new members to an ARC or group, you can choose between different l
 
 ## Options to share an ARC via the DataHUB
 
-<img src="./../../images/arc-sharing-Options.drawio.png" style="display: block; margin: auto" width=700px>
+<img src="./../../images/arc-sharing-options.drawio.png" style="display: block; margin: auto" width=700px>
 
 ---
 
@@ -277,7 +277,7 @@ An **group**-shared ARC | https://git.nfdi4plants.org/hhu-plant-biochemistry/Sam
 
 The visibility of ARCs and groups can be managed individually for each ARC or group
   
-<img src="./../../images/arc-sharing-Visibility.drawio.png" style="display: block; margin: auto" width=800px>
+<img src="./../../images/arc-sharing-visibility.drawio.png" style="display: block; margin: auto" width=800px>
 
 :bulb: By default every ARC and every group is set to **private**.
 
@@ -285,7 +285,7 @@ The visibility of ARCs and groups can be managed individually for each ARC or gr
 
 ## ARC DataHUB members // ARC Investigation contacts <!-- fit -->
 
-![w:1100](./../../images/arc-sharing-MembersVsContacts.drawio.png)
+![w:1100](./../../images/arc-sharing-membersvscontacts.drawio.png)
 
 :bulb: Investigation contacts are not automatically invited as members to the ARC.
 
@@ -299,7 +299,7 @@ The visibility of ARCs and groups can be managed individually for each ARC or gr
 
 Check out the **commit history** of your ARC via Repository (2) or directly via commits (7)
 
-![w:1000](./../../images/datahub-ARC-overview.drawio.svg)
+![w:1000](./../../images/datahub-arc-overview.drawio.svg)
 
 ---
 
@@ -307,7 +307,7 @@ Check out the **commit history** of your ARC via Repository (2) or directly via 
 
 ## Collaboration Workflows
 
-![](../../nfdi4plants.knowledgebase/src/assets/images/start-here/collaboration-git-toBeReplaced.svg)
+![](../../nfdi4plants.knowledgebase/src/assets/images/start-here/collaboration-git-tobereplaced.svg)
 
 ---
 
@@ -328,7 +328,7 @@ Check out the **commit history** of your ARC via Repository (2) or directly via 
 
 Add issues to your ARC (3)
 
-![w:1000](./../../images/datahub-ARC-overview.drawio.svg)
+![w:1000](./../../images/datahub-arc-overview.drawio.svg)
 
 ---
 
@@ -366,7 +366,7 @@ Add issues to your ARC (3)
 
 # Publish your ARC, get a DOI
 
-![w:800px](./../../images/ARC_SeamlessPublication.svg)
+![w:800px](./../../images/arc-seamlesspublication.svg)
 
 ---
 

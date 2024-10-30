@@ -9,11 +9,11 @@ title: Resources
 
 # Resources
 
-### <img align="left" height=35px src='img/CEPLAS_Icon.jpeg'/> CEPLAS Data Science
+### <img align="left" height=35px src='img/ceplas-icon.jpeg'/> CEPLAS Data Science
 
 > Website: https://www.ceplas.eu/en/research/data-science-and-data-management/
 
-### <img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
+### <img align="left" height=35px src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/dataplant-logo-minimal-rounded-bg-darkblue.svg'/> DataPLANT (nfdi4plants)
 
 > Website: https://nfdi4plants.org/
 > Knowledge Base: https://nfdi4plants.org/nfdi4plants.knowledgebase/ 

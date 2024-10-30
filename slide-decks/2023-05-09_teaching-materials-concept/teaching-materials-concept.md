@@ -6,7 +6,7 @@ headingDivider:
   - 1
   - 2
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
-footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="./../../images/logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg"></a> <a href="https://ceplas.eu"> <img id="footer-img2" src="./../../images/logos/CEPLAS/CEPLAS_Icon.jpeg"></a><a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img3" src="./../../images/logos/CreativeCommons/by.svg"></a>'
+footer: '<a href="https://nfdi4plants.org"> <img id="footer-img1" src="./../../images/logos/DataPLANT/dataplant-logo-square-bg-transparent.svg"></a> <a href="https://ceplas.eu"> <img id="footer-img2" src="./../../images/logos/CEPLAS/ceplas-icon.jpeg"></a><a href="https://creativecommons.org/licenses/by/4.0/"><img id="footer-img3" src="./../../images/logos/CreativeCommons/by.svg"></a>'
 style: 'footer {height: 30px;padding: 10px;bottom: 00px;} #footer-img1 {height: 30px; padding-left: 0px;} #footer-img2 {height: 30px; padding-left: 20px;opacity: 0.5;}  #footer-img3 {height: 20px;padding-left: 20px; opacity: 0.5;}'
 title: Teaching Materials Concept
 author: 
@@ -23,36 +23,36 @@ date: 2023-05-09
 
 # From bricks to disseminations
 
-![](images/teaching_concept-01.drawio.png)
+![](images/teaching-concept-01.drawio.png)
 
 
 # From Bricks to Disseminations with Metadata
 
-![](images/teaching_concept-02.drawio.png)
+![](images/teaching-concept-02.drawio.png)
 
 # Three Levels to Balance Customization and Reuse <!-- fit -->
 
-![](images/teaching_concept-03.drawio.png)
+![](images/teaching-concept-03.drawio.png)
 
 # Example “version control using Git”
 
-![](images/teaching_concept-04.drawio.png)
+![](images/teaching-concept-04.drawio.png)
 
 # Example “version control using Git”
 
-![](images/teaching_concept-05.drawio.png)
+![](images/teaching-concept-05.drawio.png)
 
 # Example “version control using Git”
 
-![](images/teaching_concept-06.drawio.png)
+![](images/teaching-concept-06.drawio.png)
 
 # Minitools to prep slides
 
-![](images/teaching_tools-01.drawio.png)
+![](images/teaching-tools-01.drawio.png)
 
 # Minitools for maintenance
 
-![](images/teaching_tools-02.drawio.png)
+![](images/teaching-tools-02.drawio.png)
 
 # Links
 

@@ -23,7 +23,7 @@ h1, p{
 
 </style>
 
-![bg fit](./../../images/DataPLANT-Background.png)
+![bg fit](./../../images/dataplant-background.png)
 
 Contribution to DataPLANT
 July 25th, 2023
@@ -175,7 +175,7 @@ The DataPLANT GitHub organization (https://github.com/nfdi4plants) and repositor
 2. Fork the repo (i.e. create a copy under your user name)
 3. Clone your fork locally (to your machine)
 
-![w:800px](./../../images/contribution_git.png)
+![w:800px](./../../images/contribution-git.png)
 
 ---
 
@@ -206,7 +206,7 @@ date: 2023-07-25
    3. via GitHub Desktop
 3. Contribute / open a PR (follow instructions on GitHub)
 
-![w:800px](./../../images/contribution_git.png)
+![w:800px](./../../images/contribution-git.png)
 
 ---
 
@@ -225,7 +225,7 @@ date: 2023-07-25
 
 ## Knowledge Base backend: Fornax
 
-![w:700px](./../../images/knowledgeBase-fornax.drawio.svg)
+![w:700px](./../../images/knowledgebase-fornax.drawio.svg)
 
 
 :bulb: See [nfdi4plants web components docs](https://nfdi4plants.github.io/web-components-docs/docs/SupportedStaticSiteGenerators.html#fornax)

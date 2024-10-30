@@ -37,7 +37,7 @@ Contact: Dominik Brilhaus; [CEPLAS Data Science](https://www.ceplas.eu/en/resear
 
 <div class="columns-right">
 
-<img style="height:250px" src='./../../images/ceplas-ARCs.drawio.svg'/>
+<img style="height:250px" src='./../../images/ceplas-arcs.drawio.svg'/>
 
 </div>
 </div>
@@ -57,7 +57,7 @@ Contact: Dominik Brilhaus; [CEPLAS Data Science](https://www.ceplas.eu/en/resear
 
 <div class="columns-right">
 
-<img style="height:250px" src='./../../images/ARCClub.drawio.svg'>
+<img style="height:250px" src='./../../images/arcclub.drawio.svg'>
 
 </div>
 </div>

@@ -54,7 +54,7 @@ September 19th, 2023
 
 <div style="position: fixed; bottom: 10%; right: 10%;">
   <div class="profile-picture">
-    <img src="https://www.ceplas.eu/fileadmin/_processed_/d/c/csm_Brilhaus_Dominik_4fd48a61a2.jpeg" alt="Dominik Brilhaus">
+    <img src="https://www.ceplas.eu/fileadmin/_processed_/d/c/csm-brilhaus-dominik-4fd48a61a2.jpeg" alt="Dominik Brilhaus">
   </div>
 
   <div>
@@ -84,19 +84,19 @@ September 19th, 2023
 
 # Data Stewardship between DataPLANT and the community  <!-- fit -->
 
-![w:700](./images/DataPLANT-collaborationCEPLAS.drawio.png)
+![w:700](./images/dataplant-collaborationceplas.drawio.png)
 
 ---
 
 # Annotated Research Context (ARC)
 
-![width:950](./../../images/ARC_DataCentricIntegration_img1.png)
+![width:950](./../../images/arc-datacentricintegration-img1.png)
 
 ---
 
 # The ARC &ndash; a package for your research data
 
-![width:950](./../../images/ARC_fillWithData_seq8.png)
+![width:950](./../../images/arc-fillwithdata-seq8.png)
 
 <!-- --- 
 
@@ -113,15 +113,15 @@ September 19th, 2023
 
 <br>
 
-![w:350](./../../images/RDMkit-data_life_cycle_9.svg)
+![w:350](./../../images/rdmkit-data-life-cycle-9.svg)
 
 <span class="footer-reference"> https://rdmkit.elixir-europe.org, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
 
 ---
 
-# Collect <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-02-collect.png'/>
+# Collect <img align="left" class="center" style="height:75px" src='./../../images/screenshot-rdmkit-02-collect.png'/>
 
-![width:800](./../../images/ARC_fillWithData_experimental.png)
+![width:800](./../../images/arc-fillwithdata-experimental.png)
 
 <!-- 
 
@@ -134,9 +134,9 @@ September 19th, 2023
 
 ---
 
-# Process (e.g. annotate)  <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-03-process.png'/>
+# Process (e.g. annotate)  <img align="left" class="center" style="height:75px" src='./../../images/screenshot-rdmkit-03-process.png'/>
 
-![w:650](./../../images/Swate_metadataTemplates.png)
+![w:650](./../../images/swate-metadatatemplates.png)
 
 <!-- 
 
@@ -145,7 +145,7 @@ September 19th, 2023
 
 ---
 
-# Analyse <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-04-analyse.png'/>
+# Analyse <img align="left" class="center" style="height:75px" src='./../../images/screenshot-rdmkit-04-analyse.png'/>
 
 <!-- 
 - run fastqc
@@ -155,12 +155,12 @@ September 19th, 2023
 ![w:800](./../../images/tpj16474-fig-0005-m.jpg)
 
 
-<!-- ![w:500](../../images/DataPLANT_ARC_SinglePointofEntry.svg)
-![w:700](../../images/DataPLANT_ARC_Workflows.svg) -->
+<!-- ![w:500](../../images/dataplant-arc-singlepointofentry.svg)
+![w:700](../../images/dataplant-arc-workflows.svg) -->
 
 ---
 
-# Preserve  <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-05-preserve.png'/>
+# Preserve  <img align="left" class="center" style="height:75px" src='./../../images/screenshot-rdmkit-05-preserve.png'/>
 
 <!--
 1. Validation: CQC on each DataHUB commit
@@ -173,7 +173,7 @@ September 19th, 2023
 
 ---
 
-# Preserve and publish <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-05-preserve.png'/>
+# Preserve and publish <img align="left" class="center" style="height:75px" src='./../../images/screenshot-rdmkit-05-preserve.png'/>
 
 <!--
 1. Validation: CQC on each DataHUB commit
@@ -186,13 +186,13 @@ September 19th, 2023
 
 ---
 
-# Share and collaborate <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-06-share.png'/>
+# Share and collaborate <img align="left" class="center" style="height:75px" src='./../../images/screenshot-rdmkit-06-share.png'/>
 
-![w:700](./../../images/ARC_DataSharing_Experts02_img1.png)
+![w:700](./../../images/arc-datasharing-experts02-img1.png)
 
 ---
 
-# Reuse <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-07-reuse.png'/>
+# Reuse <img align="left" class="center" style="height:75px" src='./../../images/screenshot-rdmkit-07-reuse.png'/>
 
 ![w:800](./../../images/tpj16474-fig-0001-m.jpg)
 
@@ -217,7 +217,7 @@ September 19th, 2023
 
 ---
 
-# Plan (ARC scale) <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-01-plan.png'/>
+# Plan (ARC scale) <img align="left" class="center" style="height:75px" src='./../../images/screenshot-rdmkit-01-plan.png'/>
 
 ![w:800](./../../images/tpj16474-fig-0007-m.jpg)
 
@@ -240,7 +240,7 @@ September 19th, 2023
 
 ---
 
-# Plan (proposal scale) <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-01-plan.png'/>
+# Plan (proposal scale) <img align="left" class="center" style="height:75px" src='./../../images/screenshot-rdmkit-01-plan.png'/>
 
 <span class="footer-reference">**Zhou *et al.* (2023)**, DataPLAN: a web-based data management plan generator for the plant sciences, bioRxiv 2023.07.07.548147; doi: https://doi.org/10.1101/2023.07.07.548147 </span>
 
@@ -259,7 +259,7 @@ https://dmpg.nfdi4plants.org
 
 # Resources
 
-### <img align="left" style="height:35px" src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
+### <img align="left" style="height:35px" src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/dataplant-logo-minimal-rounded-bg-darkblue.svg'/> DataPLANT (nfdi4plants)
 
 
 
@@ -295,4 +295,4 @@ Freiburg: Dirk von Suchodeletz
 - Jonathan Bauer, Marcel Tschöpe (`DataHUB`, `Swobup`)
 - Cristina Martins Rodrigues (`Knowledge Base`)
 
-![bg right:40% w:550](./../../images/hackathon_group.png)
+![bg right:40% w:550](./../../images/hackathon-group.png)

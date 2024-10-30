@@ -42,7 +42,7 @@ author:
 
 <div>
 
-![](./../../images/datahub-hamburgerMenu.drawio.svg)
+![](./../../images/datahub-hamburgermenu.drawio.svg)
 
 </div>
 </div>
@@ -65,7 +65,7 @@ author:
 
 <div>
 
-![w:400](./../../images/datahub-avatarMenu.drawio.svg)
+![w:400](./../../images/datahub-avatarmenu.drawio.svg)
 
 </div>
 </div>
@@ -74,7 +74,7 @@ author:
 
 # Projects Panel
 
-![](./../../images/datahub-projectsPanel.drawio.svg)
+![](./../../images/datahub-projectspanel.drawio.svg)
 
 1. Choose a tab (1) to see only your ARCs, or explore other publicly available ARCs. 
 2. The main panel (2) lists all ARCs
@@ -88,7 +88,7 @@ author:
 
 The ARC Panel is the main working area for your ARC.
 
-![w:1000](./../../images/datahub-ARC-overview.drawio.svg)
+![w:1000](./../../images/datahub-arc-overview.drawio.svg)
 
 ---
 
@@ -109,7 +109,7 @@ The ARC Panel is the main working area for your ARC.
 
 <div>
 
-![w:600](./../../images/datahub-ARC-overview.drawio.svg)
+![w:600](./../../images/datahub-arc-overview.drawio.svg)
 
 </div>
 </div>
@@ -133,7 +133,7 @@ The ARC Panel is the main working area for your ARC.
 
 <div>
 
-![w:600](./../../images/datahub-ARC-overview.drawio.svg)
+![w:600](./../../images/datahub-arc-overview.drawio.svg)
 
 </div>
 </div>
@@ -142,7 +142,7 @@ The ARC Panel is the main working area for your ARC.
 
 # Collaborate and share
 
-![w:650](./../../images/ARC_DataSharing_Experts02_img1.png)
+![w:650](./../../images/arc-datasharing-experts02-img1.png)
 
 ---
 
@@ -156,31 +156,31 @@ The ARC Panel is the main working area for your ARC.
 
 1. Click on **Project Information** in the left navigation panel
 
-![fit w:1050](./../../images/datahub_members_seq2.png)
+![fit w:1050](./../../images/datahub-members-seq2.png)
 
 ---
 
 2. Click on **Members**
 
-![fit w:1050](./../../images/datahub_members_seq3.png)
+![fit w:1050](./../../images/datahub-members-seq3.png)
 
 ---
 
 3. Click on **Invite members**
 
-![fit w:1050](./../../images/datahub_members_seq4.png)
+![fit w:1050](./../../images/datahub-members-seq4.png)
 
 ---
 
 4. Search for potential collaborators
 
-![fit w:1050](./../../images/datahub_members_seq5.png)
+![fit w:1050](./../../images/datahub-members-seq5.png)
 
 ---
 
 5. Select a role
 
-![fit w:1050](./../../images/datahub_members_seq6.png)
+![fit w:1050](./../../images/datahub-members-seq6.png)
 
 ---
 
@@ -218,7 +218,7 @@ object-position: 100% 45%;
 }
 </style>
 
-![](./../../images/ARC_Sharing_img1.png)
+![](./../../images/arc-sharing-img1.png)
 
 ---
 

@@ -45,13 +45,13 @@ Tag der Forschungsdaten in NRW 2023
 November 14<sup>th</sup>, 2023
 Dominik Brilhaus, CEPLAS Data Science & Data Management
 
-![bg fit](./../../images/background_title_ceplas.drawio.svg)
+![bg fit](./../../images/background-title-ceplas.drawio.svg)
 
 ---
 
 # Data Stewardship between DataPLANT and the community  <!-- fit -->
 
-![w:880](././../../images/DataPLANT-collaborationCEPLAS.drawio.png)
+![w:880](././../../images/dataplant-collaborationceplas.drawio.png)
 
 ---
 
@@ -59,7 +59,7 @@ Dominik Brilhaus, CEPLAS Data Science & Data Management
 
 <br>
 
-![w:350](./../../images/RDMkit-data_life_cycle_9.svg)
+![w:350](./../../images/rdmkit-data-life-cycle-9.svg)
 
 <span class="footer-reference">https://rdmkit.elixir-europe.org, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
 
@@ -67,37 +67,37 @@ Dominik Brilhaus, CEPLAS Data Science & Data Management
 
 # Annotated Research Context (ARC)
 
-![width:950](./../../images/ARC_DataCentricIntegration_img1.png)
+![width:950](./../../images/arc-datacentricintegration-img1.png)
 
 ---
 
 # What does an ARC look like?
 
-![width:950](./../../images/ARC_fillWithData_seq1.png)
+![width:950](./../../images/arc-fillwithdata-seq1.png)
 
 ---
 
 # ARCs store experimental data
 
-![width:950](./../../images/ARC_fillWithData_seq3.png)
+![width:950](./../../images/arc-fillwithdata-seq3.png)
 
 ---
 
 # Computations can be run inside ARCs
 
-![width:950](./../../images/ARC_fillWithData_seq5.png)
+![width:950](./../../images/arc-fillwithdata-seq5.png)
 
 ---
 
 # ARCs come with comprehensive metadata
 
-![width:950](./../../images/ARC_fillWithData_seq6.png)
+![width:950](./../../images/arc-fillwithdata-seq6.png)
 
 ---
 
 # ARC builds on standards
 
-![w:880](./../../images/ARC_BuildsOnStandards2.png)
+![w:880](./../../images/arc-buildsonstandards2.png)
 
 <span class="footer-reference">https://isa-tools.org/ | https://www.commonwl.org/
 https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
@@ -111,9 +111,9 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 ---
 
 
-# Collect <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-02-collect.png'/>
+# Collect <img align="left" class="center" style="height:75px" src='./../../images/screenshot-rdmkit-02-collect.png'/>
 
-![width:800](./../../images/ARC_fillWithData_experimental.png)
+![width:800](./../../images/arc-fillwithdata-experimental.png)
 
 <!-- 
 
@@ -126,7 +126,7 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 ---
 
-# Process (e.g. annotate)  <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-03-process.png'/>
+# Process (e.g. annotate)  <img align="left" class="center" style="height:75px" src='./../../images/screenshot-rdmkit-03-process.png'/>
 
 <style scoped>
 
@@ -139,7 +139,7 @@ object-position: 50% 60%;
 }
 </style>
 
-![](./../../images/Swate_metadataTemplates.png)
+![](./../../images/swate-metadatatemplates.png)
 
 <!-- 
 
@@ -148,7 +148,7 @@ object-position: 50% 60%;
 
 ---
 
-# Analyse <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-04-analyse.png'/>
+# Analyse <img align="left" class="center" style="height:75px" src='./../../images/screenshot-rdmkit-04-analyse.png'/>
 
 <!-- 
 - run fastqc
@@ -161,7 +161,7 @@ object-position: 50% 60%;
 
 ---
 
-# Preserve  <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-05-preserve.png'/>
+# Preserve  <img align="left" class="center" style="height:75px" src='./../../images/screenshot-rdmkit-05-preserve.png'/>
 
 <!--
 1. Validation: CQC on each DataHUB commit
@@ -174,7 +174,7 @@ object-position: 50% 60%;
 
 ---
 
-# Preserve and publish <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-05-preserve.png'/>
+# Preserve and publish <img align="left" class="center" style="height:75px" src='./../../images/screenshot-rdmkit-05-preserve.png'/>
 
 <!--
 1. Validation: CQC on each DataHUB commit
@@ -187,13 +187,13 @@ object-position: 50% 60%;
 
 ---
 
-# Share and collaborate <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-06-share.png'/>
+# Share and collaborate <img align="left" class="center" style="height:75px" src='./../../images/screenshot-rdmkit-06-share.png'/>
 
-![w:700](./../../images/ARC_DataSharing_Experts02_img1.png)
+![w:700](./../../images/arc-datasharing-experts02-img1.png)
 
 ---
 
-# Reuse <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-07-reuse.png'/>
+# Reuse <img align="left" class="center" style="height:75px" src='./../../images/screenshot-rdmkit-07-reuse.png'/>
 
 ![w:800](./../../images/tpj16474-fig-0001-m.jpg)
 
@@ -220,7 +220,7 @@ object-position: 50% 60%;
 
 ---
 
-# Plan &ndash; ARC scale <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-01-plan.png'/>
+# Plan &ndash; ARC scale <img align="left" class="center" style="height:75px" src='./../../images/screenshot-rdmkit-01-plan.png'/>
 
 ![w:800](./../../images/tpj16474-fig-0007-m.jpg)
 
@@ -243,7 +243,7 @@ object-position: 50% 60%;
 
 ---
 
-# Plan  &ndash; proposal scale <img align="left" class="center" style="height:75px" src='./../../images/Screenshot-RDMkit-01-plan.png'/>
+# Plan  &ndash; proposal scale <img align="left" class="center" style="height:75px" src='./../../images/screenshot-rdmkit-01-plan.png'/>
 
 <span class="footer-reference">**Zhou *et al.* (2023)**, DataPLAN: a web-based data management plan generator for the plant sciences, bioRxiv 2023.07.07.548147; doi: https://doi.org/10.1101/2023.07.07.548147 </span>
 
@@ -255,19 +255,19 @@ https://dmpg.nfdi4plants.org
 
 # The ARC ecosystem
 
-![w:850](./../../images/ARC-ecosystem-07.drawio.png)
+![w:850](./../../images/arc-ecosystem-07.drawio.png)
 
 ---
 
 # The ARC ecosystem
 
-![w:850](./../../images/ARC-ecosystem-09.drawio.png)
+![w:850](./../../images/arc-ecosystem-09.drawio.png)
 
 ---
 
 # The ARC ecosystem
 
-![w:850](./../../images/ARC-ecosystem-10.drawio.png)
+![w:850](./../../images/arc-ecosystem-10.drawio.png)
 
 ---
 

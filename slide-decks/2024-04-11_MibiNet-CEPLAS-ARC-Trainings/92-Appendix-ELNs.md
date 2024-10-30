@@ -25,7 +25,7 @@ date: 2023-11-07
 
 ✅ ELNs help to digitalize research documentation
 
-![bg right:40% w:400](./../../images/Documents_Handwritten.svg)
+![bg right:40% w:400](./../../images/documents-handwritten.svg)
 
 ---
 

@@ -14,13 +14,13 @@ author:
 
 # ARCs come with comprehensive metadata
 
-![width:950](./../../images/ARC_fillWithData_seq6.png)
+![width:950](./../../images/arc-fillwithdata-seq6.png)
 
 ---
 
 # ARC builds on standards
 
-![w:600](./../../images/ARC_BuildsOnStandards3.png)
+![w:600](./../../images/arc-buildsonstandards3.png)
 
 <span class="footer-reference">https://isa-tools.org/ | https://www.commonwl.org/
 https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
@@ -29,7 +29,7 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
  
 # ARC builds on ISA
 
-![w:900](./../../images/ISAmodel_ARC01_img01.svg)
+![w:900](./../../images/isamodel-arc01-img01.svg)
 
 <span class="footer-reference">ISA Tools: https://isa-tools.org/format/specification.html</span>
 
@@ -37,7 +37,7 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 # ARC builds on ISA to connect data
 
-![w:1000](./../../images/ISAmodel_ARC01_img02.svg)
+![w:1000](./../../images/isamodel-arc01-img02.svg)
 
 ---
 
@@ -56,7 +56,7 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
   <div>
   
-  ![w:800](./../../images/ISAmodel_ARC01_img02.svg)
+  ![w:800](./../../images/isamodel-arc01-img02.svg)
   
   </div>
 </div>
@@ -67,7 +67,7 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 # Annotation by flattening the knowledge graph
 
-![w:800](./../../images/Swate_ParentChildTerm.svg)
+![w:800](./../../images/swate-parentchildterm.svg)
 
 - Low-friction metadata annotation
 - Familiar spreadsheet, row/column-based environment
@@ -76,7 +76,7 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 # Annotation principle
 
-![w:650](./../../images/Swate_ParentChildTerm2.svg)
+![w:650](./../../images/swate-parentchildterm2.svg)
 
 - Low-friction metadata annotation
 - Familiar spreadsheet, row/column-based environment
@@ -85,7 +85,7 @@ https://www.researchobject.org/ro-crate/ | https://git-scm.com</span>
 
 # Adding new building blocks
 
-![w:1000](./../../images/Swate_a_newBuildingBlocks.png)
+![w:1000](./../../images/swate-a-newbuildingblocks.png)
 
 Swate can be used for the annotation of **isa.study.xlsx and isa.assay.xlsx** files
 
@@ -106,7 +106,7 @@ Swate can be used for the annotation of **isa.study.xlsx and isa.assay.xlsx** fi
   
   <div>
   
-  ![w:600px](./../../images/Swate_a_Overview.png)
+  ![w:600px](./../../images/swate-a-overview.png)
     
   </div>
 </div>
@@ -127,7 +127,7 @@ section {
 }
 </style>
 
-![w:750](./../../images/Swate_a_OntologyTermSearch.png)
+![w:750](./../../images/swate-a-ontologytermsearch.png)
 
 Enable **related term directed search** to directly fill cells with child terms
 
@@ -135,19 +135,19 @@ Enable **related term directed search** to directly fill cells with child terms
 
 # Fill your table with ontology terms
 
-![w:800](./../../images/Swate_a_OntologyTermSearch2.png)
+![w:800](./../../images/swate-a-ontologytermsearch2.png)
 
 ---
 
 # Hierarchical combination of ontologies
 
-![w:800](./../../images/Swate_OntologyCombination.svg)
+![w:800](./../../images/swate-ontologycombination.svg)
 
 ---
 
 # Checklists and Templates
 
-![w:800px](./../../images/swate_TemplatesChecklists.svg)
+![w:800px](./../../images/swate-templateschecklists.svg)
 
 Metadata standards or repository requirements can be represented as templates
 
@@ -155,7 +155,7 @@ Metadata standards or repository requirements can be represented as templates
 
 # Realization of lab-specific metadata templates
 
-![w:650px](./../../images/SWATE_metadataTemplates.png)
+![w:650px](./../../images/swate-metadatatemplates.png)
 
 Facilities can define their most common workflows as templates
 
@@ -175,4 +175,4 @@ section {
 - DataPLANT curated
 - Community templates
 
-![bg right w:450](./../../images/Swate_a_templates.png)
+![bg right w:450](./../../images/swate-a-templates.png)

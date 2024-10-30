@@ -50,7 +50,7 @@ title: ARCitect Hands-on
 ---
 
 
-<img class="arcitectLogo" src="../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectLogo.png"/>
+<img class="arcitectLogo" src="../../nfdi4plants.knowledgebase/src/assets/images/start-here/arcitectlogo.png"/>
 
 ## Add datasets
 
@@ -62,5 +62,5 @@ In the file tree you can
 
 :warning: Depending on the file size, this may take a while. Test this with a small batch of files first.
 
-![bg right:40% w:400](./../../images/arcitect-ARCPanel-assay03.png)
+![bg right:40% w:400](./../../images/arcitect-arcpanel-assay03.png)
 

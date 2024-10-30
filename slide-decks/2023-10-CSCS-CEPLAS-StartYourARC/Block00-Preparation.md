@@ -45,7 +45,7 @@ ul{
 
 If you do not have a DataPLANT account, please register at the <a href="https://register.nfdi4plants.org" target="_blank">DataPLANT website</a>.
 
-![w:800](./../../images/dataplant_registration.png)
+![w:800](./../../images/dataplant-registration.png)
 
 ---
 
@@ -53,7 +53,7 @@ If you do not have a DataPLANT account, please register at the <a href="https://
 
 Please add your `Project/consortium` (e.g. CEPLAS, SFB, TRR) and choose the role `Guest`
 
-![bg right:40% fit](./../../images/dataplant_registration_roles.png)
+![bg right:40% fit](./../../images/dataplant-registration-roles.png)
 
 ---
 
@@ -140,7 +140,7 @@ Recommended text editor with code highlighting, git support, terminal, etc: <a h
 
 # Resources
 
-### <img align="left" style="height:35px" src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_darkblue.svg'/> DataPLANT (nfdi4plants)
+### <img align="left" style="height:35px" src='https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/dataplant-logo-minimal-rounded-bg-darkblue.svg'/> DataPLANT (nfdi4plants)
 
 Website: <a href="https://nfdi4plants.org/" target="_blank">https://nfdi4plants.org/</a>
 Knowledge Base: <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/" target="_blank">https://nfdi4plants.org/nfdi4plants.knowledgebase/</a>

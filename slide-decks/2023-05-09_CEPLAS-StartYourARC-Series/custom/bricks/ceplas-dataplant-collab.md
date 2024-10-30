@@ -13,10 +13,10 @@ status: ready
 
 # CEPLAS collaborates with DataPLANT
 
-![w:880](./images/DataPLANT_CEPLAS_collaboration_seq1.png)
+![w:880](./images/dataplant-ceplas-collaboration-seq1.png)
 
 ---
 
 # CEPLAS collaborates with DataPLANT
 
-![w:880](./images/DataPLANT_CEPLAS_collaboration_seq2.png)
+![w:880](./images/dataplant-ceplas-collaboration-seq2.png)

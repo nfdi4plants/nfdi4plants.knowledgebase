@@ -29,4 +29,4 @@ author:
 
 # Missing interfaces impede collaboration
 
-![w:800](./../../images/HHU-services-withoutDataHUB.drawio.png)
+![w:800](./../../images/hhu-services-withoutdatahub.drawio.png)

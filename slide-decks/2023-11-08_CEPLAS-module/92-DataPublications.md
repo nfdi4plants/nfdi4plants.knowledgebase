@@ -21,7 +21,7 @@ date: 2023-11-09
 
 # Spot the PIDs
 
-![w:900](././../../images/exercise_PIDs_img1.png)
+![w:900](././../../images/exercise-pids-img1.png)
 
 <span class="footer-reference"> https://doi.org/10.1093/plcell/koab243</span>
 
@@ -34,7 +34,7 @@ date: 2023-11-09
 - Diminish “dead links”
 - Cope with name changes
 
-![bg right width:500](././../../images/pid_collage.drawio.svg)
+![bg right width:500](././../../images/pid-collage.drawio.svg)
 
 ---
 
@@ -133,7 +133,7 @@ Domain-specific >> Generic >> Institutional
 
 # Generic data repositories
 
-![bg right:40% width:400](./../../images/repositories_genericRepos_collage.drawio.svg)
+![bg right:40% width:400](./../../images/repositories-genericrepos-collage.drawio.svg)
 
 **Good**
 
@@ -161,16 +161,16 @@ object-position: 100% 80%;
 }
 </style>
 
-![](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/ARC_Repository03_img1.png)
+![](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/arc-repository03-img1.png)
 
 ---
 
 # Moving from paper to data publications
 
-![w:400px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/DataPLANT_LandingPage_Mission.svg)
+![w:400px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/dataplant-landingpage-mission.svg)
 
 <!-- 
-![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/FAIRData_ClassicalPublication.svg)
+![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/fairdata-classicalpublication.svg)
 
 --- -->
 
@@ -178,7 +178,7 @@ object-position: 100% 80%;
 
 # Publish your ARC, get a DOI
 
-![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/ARC_SeamlessPublication.svg)
+![w:800px](https://www.nfdi4plants.org/nfdi4plants.knowledgebase/docs/images/arc-seamlesspublication.svg)
 
 
 ---
