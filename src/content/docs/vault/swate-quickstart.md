@@ -56,11 +56,11 @@ Briefly:
 ![](@images/swate/swate-alpha-add-building-block.png)
 
 
-5. For more information on customizing your annotation table click [here](../building-blocks).
+5. For more information on customizing your annotation table click [here](/swate/building-blocks).
 
 ## Use templates
 
-Alternatively, you can also use one of DataPLANT’s [Swate templates](../templates). You can find them via the "add template" button, next to the "add building block" button.  
+Alternatively, you can also use one of DataPLANT’s [Swate templates](/swate/templates). You can find them via the "add template" button, next to the "add building block" button.  
 
 ![](@images/swate/swate-add-template.png)
 

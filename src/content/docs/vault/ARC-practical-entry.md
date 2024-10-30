@@ -11,14 +11,11 @@ pagefind: false
 ## About this guide
 
 In this guide we collect recommendations and considerations on creating an ARC based on your current project and datasets
-
+<!-- 
 <a href="./index.html">
   <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
   <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
 </a>
-
-<br>
-<br>
 
 ## Before we can start
 
@@ -30,9 +27,8 @@ This guide assumes you know
 - :ballot_box_with_check: the different [ISA file types](./isa_FileTypes.html)
 - :ballot_box_with_check: which tools to use (e.g. [ARC Commander](./../ArcCommanderManual/index.html), [ARCitect](./../ARCitect-Manual/index.html), [DataHUB](./../DataHUB-Manual/index.html)) and how.
 
-<br>
 
-</div>
+</div> -->
 
 ## Convert your project into an ARC
 
