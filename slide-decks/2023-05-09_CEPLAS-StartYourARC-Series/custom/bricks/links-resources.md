@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: dataplant_marp-theme
+theme: marp-theme_dataplant-ceplas-ccby
 status: ready
 license: '[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 date: 2023-05-09
