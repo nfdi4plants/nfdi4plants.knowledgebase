@@ -33,14 +33,14 @@ import { FileTree } from '@astrojs/starlight/components';
   <Card icon="pen" title="ARCitect">
       <Steps>
 
-      1. Add an assay "Visualization" 
-      2. Import python script `heatmap.py` into protocols
-      3. Import heatmap into dataset
-      4. Add a new annotation table "Visualization"
-      5. Add the
-          - Input [Data] with file picker to proteomics output file
-          - Protocol REF with file picker to python script
-          - Output [Data] with file picker to heatmap result file
+      1. Add an assay `Visualization`. 
+      2. Import python script `heatmap.py` into protocols.
+      3. Import heatmap into dataset. {/* TODO: haven't found the file in the demo data */}
+      4. Add a new annotation table `Visualization`
+      5. Add the following building blocks
+          - `Input [Data]`: Use File Picker to reference the proteomics output file.
+          - `Protocol REF`: Use File Picker to reference python script.
+          - `Output [Data]`: Use File Picker to reference to heatmap result file.
       
       </Steps>
   </Card>
