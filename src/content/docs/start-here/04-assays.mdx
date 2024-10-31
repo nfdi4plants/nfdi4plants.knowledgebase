@@ -236,6 +236,13 @@ We follow the same steps to fill the **Sugar Measurement** table
 </Card>
 
 
+## Linking samples to data – across studies and assays
+
+Following the simple approach of reusing sample and data identifiers in different parts of the ARC, we were able to consiley link the samples through the different lab processes in studies and assays to the data produced from those samples. 
+
+
+**Seeds** &mdash;*Plant growth*&#x21FE; **Leaves** &mdash;*Sugar Extraction*&#x21FE; **Sugar extract** &mdash;*Sugar Measurement*&#x21FE; **sugar_result.csv**
+
 ---
 
 ## Assay 2: Proteomics Assays
@@ -256,57 +263,41 @@ import Sop from '@images/start-here/arc-prototypic-assay-sop-proteomics.svg'
 
 ### Apply standard procedures (SOPs) to sample records
 
-
+Follow the same steps as before to ...
 
 <Card icon="pen" title="ARCitect">
+    
+    Add two assays and sort the available demo data:
+
     <Steps>
 
-    1. add `Proteomics_MS` assay (NAMING!)
-        - import raw data folder (./MS_Raw/) into dataset
-        - import local assay template: AssayTemplate_Proteomics_MS.json (formatted as ARCtrl json)
-        - fill out the two tables (tables might be in wrong order!)
-
-    2. add `Proteomics_DataAnalysis` assay
-        - import dummy.fasta into dataset
-        - import proteomics result (./MSFraggerOutput/combined_protein.tsv.csv) into dataset
-        - import local assay template (./AssayTemplate_Proteomics_DataAnalysis.json, formatted as ARCtrl json)
-        - fill out table
-
+    1. Create two assays called `Proteomics_MS` and `Proteomics_DataAnalysis`
+    2. Import the assay files from the demo data into the two assays in your ARC:
+        demo data -------> | ARC
+        --- | ---
+        `MS_Raw/` | `Proteomics_MS/dataset/`
+        `AssayTemplate_Proteomics_MS.json` | `Proteomics_MS/protocols/`
+        `combined_protein.fasta` and `MSFraggerOutput/combined_protein.csv` | `Proteomics_DataAnalysis/dataset/`
+        `AssayTemplate_Proteomics_DataAnalysis.json` | `Proteomics_DataAnalysis/protocols/`
+    
     </Steps>
+    
+    Load the data annotation into the respective annotation tables
+
+    <Steps>
+
+    1. Create a new annotation table for the assay `Proteomics_MS`
+    2. In the bottom-right corner click <btn> < </btn> to open a panel on the right
+    3. On top of the panel, navigate to the templates tab
+    4. In the "Add template(s) from file" section, select ARCtrl and click <btn>Upload protocol</btn>
+    5. Navigate to and select the file `AssayTemplate_Proteomics_MS.json` and click <btn>open</btn>
+        - Select the "Import Type" `..With Values`
+        - Check the `Import` boxes
+        - Click `Submit`
+    
+    </Steps>
+  
+    Repeat the same for the `Proteomics_DataAnalysis` assay, by importing the metadata from `AssayTemplate_Proteomics_DataAnalysis.json`.
+
 </Card>
 
-
-
-----
-----
-
-
-## ARC builds on ISA to link data
-
-  - Samples are linked study-to-assay, assay-to-assay
-  - Raw data is linked to assays
-  - Protocols can be referenced
-  - ...
-
-![](@images/core-concepts/isa-files-types/isa-files02.svg)
-
-## Link samples across studies and assays
-
-1. Use the `Output [Sample Name]` of studies/talinum_drought/isa.study.xlsx as the `Input [Sample Name]` to **rna-extraction**.
-1. Use the `Output [Sample Name]` of **rna-extraction** as the `Input [Sample Name]` to **illumina-libraries**.
-
-**Seeds** &mdash;*Plant growth*&#x21FE; **Leaves** &mdash;*RNA Extraction*&#x21FE; **RNA** &mdash;*Illumina*&#x21FE; **fastq files**
-
-## Link dataset files to samples
-
-1. In the *Building Blocks* widget select *Output* -> *Raw Data File*.
-2. Click <kbd>Add Column</kbd>.
-
-:bulb: You see a warning about a changed output column.
-
-3. Click <kbd>Continue</kbd>.
-4. Go to the *File Picker* tab and click <kbd>Pick file names</kbd>.
-5. Select and open the *fastq.gz files from the dataset folder.
-6. Copy / paste them to the `Raw Data File`. 
-
-:bulb: This allows you to link your samples to the resulting raw data files.
