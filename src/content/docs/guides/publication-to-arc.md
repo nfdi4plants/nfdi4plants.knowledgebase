@@ -5,11 +5,9 @@ authors:
   - dominik-brilhaus
 ---
 
-:::note[About this guide]
-
 In this guide we collect recommendations and thoughts on creating an ARC based on a publication and associated published datasets.
 This is not the typical entry into an ARC, but rather retrospective. It might however help to build community-tailored showcases; i.e. showing what a project could look like as an ARC.
-:::
+
 
 :::tip[Before we can start]
 This guide assumes you know

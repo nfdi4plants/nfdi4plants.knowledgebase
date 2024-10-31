@@ -6,7 +6,7 @@ let WhiteList: string list = [ ]
 let ImagesPath = "./src/assets/images"
 let ContentPath = "./src/content"
 let ComponentsPath = "./src/components"
-let PagesPath = "./src/pages"
+// let PagesPath = "./src/pages"
 
 let getAllFilesInPath = fun path -> Directory.GetFiles(path, "*", SearchOption.AllDirectories)
 
@@ -18,7 +18,7 @@ let getAllContent() =
   let contentArr = ResizeArray()
   let content = getAllFilesInPath ContentPath
   let components = getAllFilesInPath ComponentsPath
-  let pages = getAllFilesInPath PagesPath
+  // let pages = getAllFilesInPath PagesPath
   let readLinesAsync (file: string) =
     task {
       let! file = File.ReadAllLinesAsync(file)
@@ -28,8 +28,8 @@ let getAllContent() =
     (readLinesAsync file).Wait()
   for file in components do
     (readLinesAsync file).Wait()
-  for file in pages do
-    (readLinesAsync file).Wait()
+  // for file in pages do
+  //   (readLinesAsync file).Wait()
   contentArr
   |> String.concat "\n"
 
