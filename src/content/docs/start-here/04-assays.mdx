@@ -65,17 +65,16 @@ In **assays** you can store data and metadata from measurements.
 </Card>
 
 
-## Separate different assay elements
+### Separate different assay elements
 
-- reusablity
+Just as with studies, the individual assay elements (protocols, data, metadata) find a specific place in the assay subfolders. 
+This enhances the reusablity and identification of each element. 
 
 import IMG2 from "@images/start-here/arc-prototypic-assay-modular2.svg"
 
-<img src={IMG2.src} style="width:80%;display: block; margin: 20px" />
-
+<img src={IMG2.src} style="width:80%; display: block; margin: auto; " />
 
 ### Add assay data and protocols
-
 
 <Card icon="pen" title="ARCitect">
   <Steps>
@@ -104,11 +103,11 @@ import IMG2 from "@images/start-here/arc-prototypic-assay-modular2.svg"
 
 ### Isolate the lab processes in an assay
 
+In order to separate the metadata, we can add one annotation table for each isolated process
+
 import IMG from "@images/start-here/arc-prototypic-assay-modular1.svg"
 
-<img src={IMG.src} style="width:80%;display: block; margin: 20px" />
-
-### Add one annotation table for each lab process
+<img src={IMG.src} style="width:70%; display: block; margin: auto;" />
 
 <Card icon="pen" title="ARCitect">
     <Steps>
@@ -124,18 +123,22 @@ import IMG from "@images/start-here/arc-prototypic-assay-modular1.svg"
     </Steps>
 </Card>
 
-### Parametric description of the lab process
+### Use templates to describe the lab processes
 
 #### Sugar extraction
 
-![](@images/start-here/arc-prototypic-assay-labprocess-parameters1.svg)
+We annotate the the **Sugar extraction** process first.
 
-#### Sugar measurement
+![](@images/start-here/arc-prototypic-assay-labprocess1-extraction.svg)
 
-![](@images/start-here/arc-prototypic-assay-labprocess-parameters2.svg)
+Similar to the study example, we can parameterize the individual process steps, for instance:
 
+- <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> Vortex Mixer
+  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> 3 seconds
+- <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> Temperature  
+  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> 95 degree celsius
 
-### Use templates to describe the lab processes
+Instead of adding each individual building block to the table, we can use a generic template for a sugar extraction.
 
 <Card icon="pen" title="ARCitect">
     <Steps>
@@ -201,10 +204,24 @@ import IMG from "@images/start-here/arc-prototypic-assay-modular1.svg"
 </Card>
 
 
+#### Sugar measurement
+
+![](@images/start-here/arc-prototypic-assay-labprocess2-measurement.svg)
+
+We follow the same steps to fill the **Sugar Measurement** table
+
+{/* 
+- <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> technical replicate
+  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> 1,2,3,...
+- <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> sample volume 
+  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> 10 `microliter`
+- <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> buffer volume 
+  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> 190 `microliter`
+- <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> cycle count
+  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> 5
+ */}
+
 <Card icon="pen" title="ARCitect">
-
-Follow the same steps to fill the "Sugar Measurement" table
-
     <Steps>
     1. Select the "SugarMeasurement" table.
     2. Load the template `Training - Sugar measurement` 
@@ -213,7 +230,6 @@ Follow the same steps to fill the "Sugar Measurement" table
         - Parameter [`technical replicate`] of 1,2,3,1,2,3
         - Parameter [`sample volume`] of 10 `microliter`
         - Parameter [`buffer volume`] of 190 `microliter`
-        - Parameter [`measurement device`] Infinite M200 plate reader (Tecan)
         - Parameter [`cycle count`] of 5
     5. Use the `File Picker` feature to import the results of sugar measuremnt (`sugar_result.csv`) into `Output [Data]` 
     </Steps>
@@ -224,18 +240,23 @@ Follow the same steps to fill the "Sugar Measurement" table
 
 ## Assay 2: Proteomics Assays
 
-<ViolaSays>
-    Alright, this all makes sense. However, it seems a bit tedious, if I want to achieve this in detail for more complex assays. And besides, I'm honestly not an expert of proteomics data and I am not sure I can fill out all information about my proteomics assay. 
-</ViolaSays>
+import Sop from '@images/start-here/arc-prototypic-assay-sop-proteomics.svg'
 
-![](@images/start-here/arc-prototypic-assay-sop1.svg)
+<div style="display: flex;">
 
-### Save time using standard methods and SOPs
+    <ViolaSays>
+        Alright, this all makes sense. However, it seems a bit tedious, if I want to achieve this in detail for more complex assays. 
+        
+        And besides, I'm honestly not an expert of proteomics data and I am not sure I can fill out all information about my proteomics assay. 
+    </ViolaSays>
 
-![](@images/start-here/arc-prototypic-assay-sop2.svg)
-![](@images/start-here/arc-prototypic-assay-sop3.svg)
+    <img src={Sop.src} />
+</div>
 
-### Apply standard procedures to sample records
+
+### Apply standard procedures (SOPs) to sample records
+
+
 
 <Card icon="pen" title="ARCitect">
     <Steps>
