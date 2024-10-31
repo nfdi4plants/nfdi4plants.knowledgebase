@@ -142,26 +142,84 @@ import IMG from "@images/start-here/arc-prototypic-assay-modular1.svg"
 
     1. Click on the assay's name (`SugarMeasurement`) in the file tree.
     2. Select the "SugarExtraction" table added in the previous step.
-    4. In the `New Table!` widget, click on the `Add Template` button next to `Start from an existing template!`.
+    3. In the `New Table!` widget, click on the `Add Template` button next to `Start from an existing template!`.
+    4. From the `Select community` dropdown, select "Training"
+    5. Click the name of the template `Training - Sugar extraction` and <btn>select</btn>
 
-        {/* TODO Move templates to community "Teaching / Training" */}
-    3. Load template `RPTU - PP, Sugar extraction`.
-        - Input [Sample name] of normal and cold sample
-        - Parameter [`Vorex Mixer`] of 3 `second`
-        - Parameter [`Temperature`] of 95 `degree celsius`
-        - Output [Sample name] of normal and cold extraction
-    2. Select "SugarMeasurement" table.
-        - Load template `RPTU - PP, Sugar measurement`
-        - Input [Sample name] of 3xNormal and 3xCold sample
+        <ViolaSays>
+            This shows me that the template has an `Input`, `Output` as well as two `Parameter` columns: "Vortex Mixer" and "Temperature"
+        </ViolaSays>
+
+    6. Click <btn>Add template</btn> to add the columns to your table.
+
+
+        Input [Sample Name]	| Parameter [Vortex Mixer] | Parameter [Temperature] | Output [Sample Name] 
+        --- | --- | --- | --- 
+            |     |     |   
+
+    7. At the bottom of the table, type `6` in the text field and click <btn>+</btn> to add six rows to your table.
+    8. Transer the sample names of your study's `Output [Sample Name]` to the `Input [Sample Name]` column
+
+        Input [Sample Name]	| Parameter [Vortex Mixer] | Parameter [Temperature] | Output [Sample Name] 
+        --- | --- | --- | --- 
+        Cold1_leaf
+        Cold2_leaf
+        Cold3_leaf
+        RT1_leaf
+        RT2_leaf
+        RT3_leaf
+
+    9. Add information of the `sugar_extraction_protocol.md` into the table, e.g. 
+
+
+        Input [Sample Name]	| Parameter [Vortex Mixer] | Parameter [Temperature] | Output [Sample Name] 
+        --- | --- | --- | --- 
+        Cold1_leaf  | 3 seconds | 95 degree celsius | 
+        Cold2_leaf  | 3 seconds | 95 degree celsius | 
+        Cold3_leaf  | 3 seconds | 95 degree celsius | 
+        RT1_leaf    | 3 seconds | 95 degree celsius | 
+        RT2_leaf    | 3 seconds | 95 degree celsius | 
+        RT3_leaf    | 3 seconds | 95 degree celsius | 
+
+    10. Fill the `Output [Sample Name]` column: 
+        - Select the six cells from `Input`, and copy the sample names (right-click -> Copy)
+        - Select the cell below `Output [Sample Name]` and paste the sample names (right-click -> Paste all)
+        - Click Right-click -> Update on a cell below `Output [Sample Name]` to change the sample names
+        - Type "leaf" in the `Regex` and "sugar-ext" in the `Replacement` fields
+        - Click <btn>Submit</btn>
+
+        Input [Sample Name]	| Parameter [Vortex Mixer] | Parameter [Temperature] | Output [Sample Name] 
+        --- | --- | --- | --- 
+        Cold1_leaf  | 3 seconds | 95 degree celsius | Cold1_sugar-ext
+        Cold2_leaf  | 3 seconds | 95 degree celsius | Cold2_sugar-ext
+        Cold3_leaf  | 3 seconds | 95 degree celsius | Cold3_sugar-ext
+        RT1_leaf    | 3 seconds | 95 degree celsius | RT1_sugar-ext
+        RT2_leaf    | 3 seconds | 95 degree celsius | RT2_sugar-ext
+        RT3_leaf    | 3 seconds | 95 degree celsius | RT3_sugar-ext  
+
+    </Steps>
+</Card>
+
+
+<Card icon="pen" title="ARCitect">
+
+Follow the same steps to fill the "Sugar Measurement" table
+
+    <Steps>
+    1. Select the "SugarMeasurement" table.
+    2. Load the template `Training - Sugar measurement` 
+    3. Add the ` Output [Sample Name]` values (*_sugar-ext) of the "SugarExtraction" to the `Input [Sample name]` column
+    4. Fill the parameter columns
         - Parameter [`technical replicate`] of 1,2,3,1,2,3
         - Parameter [`sample volume`] of 10 `microliter`
         - Parameter [`buffer volume`] of 190 `microliter`
         - Parameter [`measurement device`] Infinite M200 plate reader (Tecan)
         - Parameter [`cycle count`] of 5
-        - Output [Data] with File Picker to imported sugar data file
-
+    5. Use the `File Picker` feature to import the results of sugar measuremnt (`sugar_result.csv`) into `Output [Data]` 
     </Steps>
 </Card>
+
+
 
 ---
 
