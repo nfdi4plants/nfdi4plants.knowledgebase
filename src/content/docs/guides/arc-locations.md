@@ -5,13 +5,7 @@ authors:
   - dominik-brilhaus
 ---
 
-:::note[About this guide]
 This guide presents recommendations on managing one ARC on different devices and locations
-:::
-
-:::tip[Before we can start]
-You have a [DataPLANT](https://register.nfdi4plants.org) account
-:::
 
 ## Where do I store my ARC?
 
@@ -29,7 +23,7 @@ A few things are important when maintaining ARCs in multiple locations:
 2. Make sure to sync large files properly
 
 As with any cloud service, when a single file is edited from multiple locations, you can run into merge conflicts. To avoid these, make sure to regularly [sync your ARC with the DataHUB](/guides/arc-syncing-recommendation) and from there sync with your (other) locations before adding or editing data.  
-In order to have the large files only where you need them and not where you do not (e.g. your personal computer), the ARC and DataHUB implement the LFS (Large file storage) system. The ARCitect and ARC commander provide options to properly handle [LFS-tagged files](/guides/arc-working-with-large-data-files).
+In order to have the large files only where you need them and not where you do not (e.g. your personal computer), the ARC and DataHUB implement the LFS (Large file storage) system. The ARCitect and ARC commander provide options to properly handle [LFS-tagged files](/guides/arc-lfs).
 
 <!-- 
 TODO

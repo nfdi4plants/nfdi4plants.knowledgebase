@@ -20,7 +20,7 @@ In this walk-through, we guide you through annotating data using [Swate](/swate)
 Consider reading about [Swate](/swate)
 :::
 
-Create and/or open an annotation table as described in the [Swate QuickStart](../swate-quickstart)
+Create and/or open an annotation table as described in the [Swate QuickStart](/vault/swate-quickstart)
 
 ## Swate Overview
 
@@ -75,4 +75,4 @@ If there are any building blocks which do not fit your experiment you can delete
 
 ## Your ISA table is ready to fill 🎉
 
-Go ahead, adjust the building blocks you want to use to describe your experiment as you see fit. Insert values for *Input* and *Output* and fill the cells of your *Parameter*, *Characteristic* or *Component* columns using the ontology term search. You can activate the ontology term search directly in the cells of your table with the magnifying glass symbol or you can use the "Ontology term search" in the side bar. Instructions for annotating your data can also be found in the [Swate QuickStart](../swate-quickstart) and in the Swate Manual ([Filling cells with ontology terms](../term-search)).
+Go ahead, adjust the building blocks you want to use to describe your experiment as you see fit. Insert values for *Input* and *Output* and fill the cells of your *Parameter*, *Characteristic* or *Component* columns using the ontology term search. You can activate the ontology term search directly in the cells of your table with the magnifying glass symbol or you can use the "Ontology term search" in the side bar. Instructions for annotating your data can also be found in the [Swate QuickStart](/vault/swate-quickstart) and in the Swate Manual ([Filling cells with ontology terms](/swate/term-search)).

@@ -1,0 +1,32 @@
+---
+title: Working with large data files
+lastUpdated: 2023-12-05
+authors:
+  - dominik-brilhaus
+---
+
+Here we explain how to handle large data files in your ARC.
+
+## Large File Storage (LFS)
+
+ARCs and the DataHUB come with a mechanism to sync and store large files called *Large File Storage (LFS)*. LFS is an efficient way to store your large data files. These files are called "LFS objects". Rather than checking every file during every `arc sync` (ARC Commander) or DataHUB Sync (ARCitect), the tools first check *whether there was a change at all*. And only if this is the case, it scans *what* was changed. This way it saves time and computing power compared to always scanning all large files for possible changes.
+
+### ARCitect
+
+import ARCitectLFS from '../arcitect/arcitect-lfs.mdx'
+
+<ARCitectLFS />
+
+### ARC Commander
+
+import ARCCommanderLFS from '../arc-commander/lfs.mdx'
+
+<ARCCommanderLFS />
+
+
+### DataHUB 
+
+import DataHUBLFS from '../datahub/datahub-lfs.mdx'
+
+<DataHUBLFS />
+

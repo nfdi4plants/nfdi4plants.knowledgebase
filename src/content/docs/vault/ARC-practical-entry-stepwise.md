@@ -8,12 +8,10 @@ hidden: true
 pagefind: false
 ---
 
-<!-- http://127.0.0.1:8080/docs/guides/ARC-practical-entry.html -->
-
 ## About this guide
 
 In this guide we collect recommendations and considerations on creating an ARC based on your current project and datasets
-
+<!-- 
 <a href="./index.html">
   <span class="badge-category">User</span><span class="badge-selected" id="badge-advanced">Advanced</span>
   <span class="badge-category">Mode</span><span class="badge-selected" id="badge-tutorial">Tutorial</span>
@@ -34,7 +32,7 @@ This guide assumes you know
 
 <br>
 
-</div>
+</div> -->
 
 ## Convert your project into an ARC
 

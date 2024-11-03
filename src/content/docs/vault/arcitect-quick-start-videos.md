@@ -23,7 +23,7 @@ pagefind: false
 ## About this guide
 
 In this guide we focus on how to use the [ARCitect](/arcitect) to create your ARC and structure, store and share your data.
-
+<!-- 
 <div style="padding-bottom: 20px">
     <a href="./index.html">
         <span class="badge-category">User</span><span class="badge-selected" id="badge-newbie">Newbie</span>
@@ -31,7 +31,7 @@ In this guide we focus on how to use the [ARCitect](/arcitect) to create your AR
     </a>
 </div>
 
----
+--- -->
 
 ## Before we can start
 
