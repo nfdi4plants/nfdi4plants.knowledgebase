@@ -80,6 +80,11 @@ export default defineConfig({
           autogenerate: { directory: 'arc-commander' },
         },
         {
+          label: 'ARCManager',
+          collapsed: true,
+          autogenerate: { directory: 'arc-manager' },
+        },
+        {
           label: 'Swate',
           // Collapse the group by default.
           collapsed: true,
