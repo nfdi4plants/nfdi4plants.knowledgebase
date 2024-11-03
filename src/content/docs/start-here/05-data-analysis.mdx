@@ -13,68 +13,83 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
 
+
+The ARC offers different options to annotate and perform data analysis.
+
 ![](@images/start-here/arc-prototypic-workflows1.svg)
 
-![](@images/start-here/arc-prototypic-workflows2.svg)
+
+## A computational workflow is like a protocol
+
+Just like laboratory workflows produce samples or data, computational workflows produce data. They represent the processing steps used in data analysis or data transformation. 
+
+import Workflows2 from "@images/start-here/arc-prototypic-workflows2.svg"
+
+<img src={Workflows2.src} style="width:70%; display: block; margin: auto;" />
 
 
-<Tabs>
-  <TabItem label="Option I: Create a virtual assay">
+## Option I: Create a virtual assay
 
-  ![](@images/start-here/arc-prototypic-workflows-virtual.svg)
+A computational workflow can simply be treated as a protocol. This can be a summary of the steps followed in any data analysis software. Or it can be a script.
+Hence the data analysis can simply be packaged as an assay, with the computational workflow stored in `protocols` and the resulting data stored in `dataset`
 
-  :::tip
-  A computational workflow can be treated as a protocol
-  :::
-
-  {/* ## Demo Time: Software (AssayTemplate_Proteomics_DataAnalysis) */}
+![](@images/start-here/arc-prototypic-workflows-virtual.svg)
 
 
-  <Card icon="pen" title="ARCitect">
-      <Steps>
+<Card icon="pen" title="ARCitect">
+    <Steps>
 
-      1. Add an assay `Visualization`. 
-      2. Import python script `heatmap.py` into protocols.
-      3. Import heatmap into dataset. {/* TODO: haven't found the file in the demo data */}
-      4. Add a new annotation table `Visualization`
-      5. Add the following building blocks
-          - `Input [Data]`: Use File Picker to reference the proteomics output file.
-          - `Protocol REF`: Use File Picker to reference python script.
-          - `Output [Data]`: Use File Picker to reference to heatmap result file.
-      
-      </Steps>
-  </Card>
+    1. Add a new assay `Visualization`. 
+    2. Import the python script `heatmap.py` into `protocols`.
+    3. Import the figure `heatmap.svg` resulting from the script into `dataset`.
 
-  </TabItem>
-  <TabItem label="Option II: Create a run and a workflow">
+        <FileTree>
+        - assays
+            - **Visualization**
+                - dataset
+                    - **heatmap.svg**
+                - protocols
+                    - **heatmap.py**
+                - isa.assay.xlsx
+                - README.md
+        - ...
+        </FileTree>
 
-  ![](@images/start-here/arc-prototypic-workflows-cwl1.svg)
+    4. Add a new annotation table to `Visualization`
+    5. Add the following building blocks
+        - `Input [Data]`: Use File Picker to reference the proteomics output file.
+        - `Protocol REF`: Use File Picker to reference python script.
+        - `Output [Data]`: Use File Picker to reference to heatmap result file.
+    
+        `Input [Data]`	 | `ProtocolREF` |  `Output [Data]` 
+        ---------------- | -----------   | -------------- 
+        sugar_result.csv | heatmap.py    | heatmap.svg
 
-  :::note
-  A computational workflow maps input data into a run result
-  :::
+    </Steps>
+</Card>
 
-  :::note[CWL]
-  You can use Common Workflow Language (CWL) to wrap your workflow.
-  CWL is out of the scope of this guide.
-  :::
+## Option II: Create a run and a workflow
 
-  ![](@images/start-here/arc-prototypic-workflows-cwl2.svg)
+If your data analysis is code-based, you likely aim to make it reusable and actionable in-place.
+To achieve this, we recommend to wrap and annotate your workflow using [Common Workflow Language (CWL)](/guides/data-analysis/computational-workflows/). Although CWL is out of the scope of this starters' guide, we want to share the basic concept here.
 
-  {/* 
-  ### Workflows
+![](@images/start-here/arc-prototypic-workflows-cwl1.svg)
 
-  In an ARC `workflows` represent the processing steps used in computational analyses and other transformations of data originating from studies and assays. Typical examples include data cleaning and preprocessing, computational analysis, or visualization. The outcomes of these workflows ("run results") are stored in [runs](#runs).
-
-  Viola received for her transcriptome and metabolome assays various processed data files, which she now can use to generate some nice plots. Additionally, the computational biologists sent her the code used for data processing, including an executable Common Workflow Language (CWL) file, which contains a standardized tool or workflow description. She stores these files in individual subdirectories for each workflow.
-
-  ### Runs
-
-  After Viola generated her plots, she placed them in individual subdirectories, specific to the run they were generated with. In general, you can use the runs folder to store plots, tables, or similar result files that derive from computations on study, assay, external data or other runs. */}
-
-  </TabItem>
-
-</Tabs>
+- In the ARC the computational workflow is placed in the `workflows` folder.
+- The results produced from workflows are stored in `runs`. Every time a workflow is employed, it creates a new run result.
 
 
+### CWL abstract – documents to describe your computational workflows
 
+The scipt file in `workflows` is accompanied with a CWL file, which contains workflow metadata to render it reusable. The specific parameters of a `run`'s execution are stored in a separate job file. 
+
+![](@images/start-here/arc-prototypic-workflows-cwl2.svg)
+
+{/* 
+### Workflows
+
+Viola received for her transcriptome and metabolome assays various processed data files, which she now can use to generate some nice plots. Additionally, the computational biologists sent her the code used for data processing, including an executable Common Workflow Language (CWL) file, which contains a standardized tool or workflow description. She stores these files in individual subdirectories for each workflow.
+
+### Runs
+
+After Viola generated her plots, she placed them in individual subdirectories, specific to the run they were generated with. In general, you can use the runs folder to store plots, tables, or similar result files that derive from computations on study, assay, external data or other runs. */}
