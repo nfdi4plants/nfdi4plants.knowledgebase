@@ -5,6 +5,7 @@ sidebar:
 authors:
   - dominik-brilhaus
   - lukas-weil
+  - sabrina-zander 
 ---
 
 import ViolaSays from '@components/ViolaSays.astro'
@@ -116,7 +117,7 @@ Structured metadata annotation in the ARC is mostly achieved via spreadsheet tab
   <Steps>
 
   1. Click on the study's name (`AthalianaColdStress`) in the file tree.
-  2. At the bottom of the right panel, click on the plus icon right next to the `Metadata` sheet.
+  2. At the bottom of the right panel, click on the <btn>+</btn> right next to the `Metadata` sheet.
   3. This adds a new table sheet.
   4. In the `New Table!` widget, click on the `Add Building Block` button next to `Or start from scratch!`.
   5. From the dropdown menu in the `Add Building Block` widget:
@@ -262,7 +263,7 @@ import XY from "@images/start-here/arc-prototypic-metadata.svg"
   1. Enter `organism` in the search bar. This search looks for suitable *terms* in the *ontology* database.
   1. Select the Term with the id `OBI:0100026` and click <btn>Add Column</btn>.
   1. In the table, insert values by selecting any cell below `Characteristic [organism]`.
-  1. Search for Arabidopsis thaliana, select a suitable hit and again fill the complete column with right-click on a cell and select `Fill Column`.
+  1. Search for _Arabidopsis thaliana_, select a suitable hit and again fill the complete column with right-click on a cell and select `Fill Column`.
 
       `Input[Source Name]` | `Characteristic [organism]` | `Output[Sample Name]`
       -------------------- |  --------------------   |  --------------------
@@ -290,7 +291,7 @@ import XY from "@images/start-here/arc-prototypic-metadata.svg"
     2. Click <btn>Add Column</btn>.
 
         <ViolaSays>
-          Parameter [Growth time] of 4 days
+          Parameter [Growth time] of 4 days.
         </ViolaSays>
 
   </Steps>
@@ -307,13 +308,13 @@ import XY from "@images/start-here/arc-prototypic-metadata.svg"
     4. Click <btn>Add Column</btn>.
 
         <ViolaSays>
-          I grew my plants at 200 microeinstein per square meter per second
+          I grew my plants at 200 microeinstein per square meter per second.
         </ViolaSays>
 
     5. In the annotation table, select any cell below `Parameter [light intensity exposure]` and add "200".
 
         :::note
-        You can see the numbers being complemented with the associated unit
+        You can see the numbers being complemented with the associated unit.
         :::
 
   </Steps>
@@ -330,7 +331,7 @@ import XY from "@images/start-here/arc-prototypic-metadata.svg"
     2. Check the box for *Unit* and search for `degree celsius` in the adjacent search bar.
     3. Select `UO:0000160`.
     4. Click <btn>Add Column</btn>.
-    5. In the annotation table, add "25" vs "6" degree celsius to the respective samples.
+    5. In the annotation table, add "25" vs. "6" degree celsius to the respective samples.
 
         `Input[Source Name]` | `Characteristic [organism]` | `Factor [growth temperature]` | `Output[Sample Name]`
         -------------------- |  --------------------       | --------------------          |  --------------------
@@ -363,7 +364,7 @@ import XY from "@images/start-here/arc-prototypic-metadata.svg"
 
 
         <ViolaSays>
-          So if someone needs to lookup my species, they will find it in an online ontology database.
+          So if someone needs to look up my species, they will find it in an online ontology database.
         </ViolaSays>
 
         :::note
@@ -371,7 +372,7 @@ import XY from "@images/start-here/arc-prototypic-metadata.svg"
         :::
 
         :::tip
-        go to OLS (https://www.ebi.ac.uk/ols4)
+        Go to OLS (https://www.ebi.ac.uk/ols4). 
         :::
 
   </Steps>
