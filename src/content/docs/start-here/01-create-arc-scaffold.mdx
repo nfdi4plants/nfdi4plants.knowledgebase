@@ -14,12 +14,22 @@ import { FileTree } from '@astrojs/starlight/components';
 
 import NewARC from '@components/mdx/NewARC.mdx'
 
+<ViolaSays>
+
+So, where do i start? What is an ARC? How do i create one?
+
+</ViolaSays>
 
 An ARC represents an entire investigation. At the top level, it includes directories named “studies,” “assays,” “workflows,” and “runs,” along with an investigation metadata table that holds all administrative metadata.
 
+It follows a very specific structure to be easily readable by machines 🤖. While it can be created by hand it is faster to use some tooling!
+
 ![](@images/start-here/arc-scaffold.svg)
 
-The easiest way to create a new ARC is via **ARCitect**.
+
+## ARCitect installation
+
+The easiest way to create a new ARC is via **ARCitect**. 
 
 <Card title="ARCitect installation" icon="setting">
 
@@ -36,6 +46,8 @@ import ARCitectInstallation from '../arcitect/installation.mdx'
 
 </Card>
 
+## Create a new ARC
+
 <Card icon="pen" title="ARCitect">
 <Steps>
 
@@ -49,8 +61,7 @@ import ARCitectInstallation from '../arcitect/installation.mdx'
 
     </ViolaSays>
 
-4. Click `Save`.
-5. ARCitect creates the base ARC folder on your computer and opens it right away.
+4. ARCitect creates the base ARC folder on your computer and opens it right away.
   
     <FileTree>
     - AthalianaColdStressSugar
@@ -62,7 +73,7 @@ import ARCitectInstallation from '../arcitect/installation.mdx'
     </FileTree>
 
     :::note
-    The `isa.investigation.xlsx` is not displayed inside ARCitect.
+    The `isa.investigation.xlsx` is not displayed inside ARCitect, but can be accessed by clicking on "AthalianaColdStressSugar" (in Violoas example).
     :::
 
 </Steps>

@@ -5,6 +5,8 @@ sidebar:
 authors:
   - dominik-brilhaus
   - lukas-weil
+tableOfContents:
+  maxHeadingLevel: 6
 ---
 
 import ViolaSays from '@components/ViolaSays.astro'
@@ -12,7 +14,15 @@ import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
 
+<ViolaSays>
+Now that i have an ARC, let's add some data. The investigation file seems to be the most top level. Let's start there!
+</ViolaSays>
+
 At the **investigation** level you can record project metadata such as the project title and description, responsible contacts and associated publications.
+
+<ViolaSays>
+So no lab work here, just some metadata. Let's see how this works.
+</ViolaSays>
 
 ![](@images/start-here/arc-prototypic.svg)
 
@@ -27,31 +37,25 @@ At the **investigation** level you can record project metadata such as the proje
       The investigation identifier was automatically added based on your ARC's name.
       :::
 
-  4. Add a **Title**.
+  4. ##### Add a Title
 
-      :::tip[Title]
       This should be a meaningful project title. Here you can add blanks or special characters.
-      :::
 
       <ViolaSays>
         The **Title** of my project is _Arabidopsis thaliana cold acclimation_.
       </ViolaSays>
 
-  4. Add a **Description**.
+  4. ##### Add a Description
 
-      :::tip[Description]
       Add a concise description about your project. This can be an abstract. 
-      :::
 
       <ViolaSays>
         This experiment investigates the response of _Arabidopsis thaliana_ to cold stress by subjecting plants to low-temperature conditions and monitoring physiological, molecular, and growth-related changes. Cold-treated plants are compared with control groups grown under optimal conditions to assess stress-related markers such as changes in protein abundance, sugar content, and growth rates. The goal is to identify key molecules and physiological responses involved in cold tolerance, contributing to the understanding of plant stress adaptation mechanisms.
       </ViolaSays>
 
-  4. Add **Contacts**.
+  4. ##### Add Contacts
 
-      :::tip
       Add persons responsible for the project.
-      :::
 
       <ViolaSays>
         I add my PI *Prof. Jasmine Beetroot*, our collaboration partner *Oliver Sage* and myself as **Contacts**.
