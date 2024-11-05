@@ -8,6 +8,7 @@ sidebar:
   badge:
     text: wip
     variant: note
+draft: true
 ---
 
 Here we introduce the different ISA file types used in the ARC.

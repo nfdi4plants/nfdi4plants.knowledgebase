@@ -7,6 +7,7 @@ sidebar:
   badge:
     text: wip
     variant: note
+draft: true
 ---
 
 Annotation of data and workflows within the ARC builds on the ISA model. In this guide we introduce the different building blocks available to annotate your workflows in isa.study.xlsx and isa.assay.xlsx workbooks. 
