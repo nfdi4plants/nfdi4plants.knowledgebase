@@ -13,10 +13,21 @@ import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
 
+<ViolaSays>
+Ok, I think i understand. The study is used to describe the overall experiment and the sample generation. Then the assays are used to describe the individual lab processes and the data generation!
+</ViolaSays>
 
-In **assays** you can store data and metadata from measurements.
+Right! In **assays** you can store data and metadata from measurements.
 
 ![](@images/start-here/arc-prototypic-assay-identify.svg)
+
+You can have multiple assays in one ARC. Each assay can have its own metadata, data, and protocols. How you structure your assays is up to you.
+
+In general it is a good approach to describe each logical process in a separate assay. 
+
+<ViolaSays>
+Then let's start with the "Sugar Measurement" assay.
+</ViolaSays>
 
 ## Assay 1: Sugar Measurement
 
@@ -114,7 +125,7 @@ import IMG from "@images/start-here/arc-prototypic-assay-modular1.svg"
     <Steps>
 
     1. Click on the assay's name (`SugarMeasurement`) in the file tree.
-    2. At the bottom of the right panel, click on the <btn>+</btn> right next to the `Metadata` sheet to add one sheet for each lab process.
+    2. At the bottom of the right panel, click on the `+` right next to the `Metadata` sheet to add one sheet for each lab process.
         
         <ViolaSays>
             I add two tables: one for "SugarExtraction" and one for "SugarMeasurement"
@@ -134,10 +145,10 @@ We annotate the **Sugar extraction** process first.
 
 Similar to the study example, we can parameterize the individual process steps, for instance:
 
-- <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> Vortex Mixer
-  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> 3 seconds
-- <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> Temperature  
-  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> 95 degree celsius
+import {ParentChild} from '@components/mdx/ParentChild.mdx'
+
+- <ParentChild parent="Vortex Mixer" child="3 seconds"/>
+- <ParentChild parent="Temperature" child="95 degree celsius"/>
 
 Instead of adding each individual building block to the table, we can use a generic template for a sugar extraction.
 
@@ -148,20 +159,20 @@ Instead of adding each individual building block to the table, we can use a gene
     2. Select the "SugarExtraction" table added in the previous step.
     3. In the `New Table!` widget, click on the `Add Template` button next to `Start from an existing template!`.
     4. From the `Select community` dropdown, select "Training".
-    5. Click the name of the template `Training - Sugar extraction` and <btn>select</btn>.
+    5. Click the name of the template `Training - Sugar extraction` and `select`.
 
         <ViolaSays>
             This shows me that the template has an `Input`, `Output` as well as two `Parameter` columns: "Vortex Mixer" and "Temperature"
         </ViolaSays>
 
-    6. Click <btn>Add template</btn> to add the columns to your table.
+    6. Click `Add template` to add the columns to your table.
 
 
         Input [Sample Name]	| Parameter [Vortex Mixer] | Parameter [Temperature] | Output [Sample Name] 
         --- | --- | --- | --- 
             |     |     |   
 
-    7. At the bottom of the table, type `6` in the text field and click <btn>+</btn> to add six rows to your table.
+    7. At the bottom of the table, type `6` in the text field and click `+` to add six rows to your table.
     8. Transfer the sample names of your study's `Output [Sample Name]` to the `Input [Sample Name]` column.
 
         Input [Sample Name]	| Parameter [Vortex Mixer] | Parameter [Temperature] | Output [Sample Name] 
@@ -190,7 +201,7 @@ Instead of adding each individual building block to the table, we can use a gene
         - Select the cell below `Output [Sample Name]` and paste the sample names (right-click -> Paste all)
         - Click Right-click -> Update on a cell below `Output [Sample Name]` to change the sample names
         - Type "leaf" in the `Regex` and "sugar-ext" in the `Replacement` fields
-        - Click <btn>Submit</btn>
+        - Click `Submit`
 
         Input [Sample Name]	| Parameter [Vortex Mixer] | Parameter [Temperature] | Output [Sample Name] 
         --- | --- | --- | --- 
@@ -288,10 +299,10 @@ Follow the same steps as before to ...
     <Steps>
 
     1. Create a new annotation table for the assay `Proteomics_MS`.
-    2. In the bottom-right corner click <btn> < </btn> to open a panel on the right.
+    2. In the bottom-right corner click `<` to open a panel on the right.
     3. On top of the panel, navigate to the templates tab.
-    4. In the "Add template(s) from file" section, select ARCtrl and click <btn>Upload protocol</btn>.
-    5. Navigate to and select the file `AssayTemplate_Proteomics_MS.json` and click <btn>open</btn>.
+    4. In the "Add template(s) from file" section, select ARCtrl and click `Upload protocol`.
+    5. Navigate to and select the file `AssayTemplate_Proteomics_MS.json` and click `open`.
         - Select the "Import Type" `..With Values`
         - Check the `Import` boxes
         - Click `Submit`

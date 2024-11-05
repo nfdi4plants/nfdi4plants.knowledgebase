@@ -1,15 +1,4 @@
-/* :root {
-  --sl-content-width: 50rem;
-  --sl-text-5xl: 3.5rem;
-}
- */
 
-.tab > [role="tab"] {
-  border-width: 1px !important;
-  border-top: unset !important;
-  border-left: unset !important;
-  border-right: unset !important;
-}
 
 btn {
   padding:0.1em 0.6em;
