@@ -1,0 +1,53 @@
+---
+title: Validate your ARC
+sidebar:
+  order: 2
+  badge:
+    text: New
+    variant: tip
+authors:
+  - dominik-brilhaus
+  - lukas-weil
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+
+## Add validation to your ARC
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+
+    1. Open your ARC in ARCitet
+    2. In the sidebar, go to the `Validation` menu
+    3. In the section "Custom Validation Packages", select the "invenio" package and click `Save`
+    4. Commit your changes via the `Commit` menu
+    5. Upload your changes via the `DataHUB Sync` menu
+    6. Open your ARC in the DataHUB
+
+    </Steps>
+</Card>
+
+
+:::note
+By default every ARC is validated against the "ARC specification" to guarantee ARC intactness.
+:::
+
+
+## Check the validation results
+
+<Card icon="gitlab" title="PLANTDataHUB">
+    <Steps>
+
+    1. Sign in to the [PLANTDataHUB](https://git.nfdi4plants.org)
+    2. Navigate to the validated ARC
+    3. In the right sidebar you find several validation badges (e.g. `arc specification` and `invenio`)
+    4. Click on the `arc specification` badge to explore the test results.
+
+    </Steps>
+</Card>
+
+:::tip
+Find out more about ARC validation [here](/arc-validation/cqc-pipelines/)
+:::

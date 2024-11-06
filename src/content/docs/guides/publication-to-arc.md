@@ -12,7 +12,7 @@ This is not the typical entry into an ARC, but rather retrospective. It might ho
 :::tip[Before we can start]
 This guide assumes you know
 - the concept of the [ARC](/core-concepts/arc)
-- the different [ISA file types](/core-concepts/isa-file-types)
+- the different [ISA file types](/core-concepts/isa)
 - which tools to use (e.g. [ARC Commander](/arc-commander), [ARCitect](/arcitect), [DataHUB](/datahub)) and how.
 :::
 
