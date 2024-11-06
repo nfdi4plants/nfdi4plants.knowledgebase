@@ -1,0 +1,33 @@
+---
+title: Selective sharing
+lastUpdated: 2024-11-06
+authors:
+  - dominik-brilhaus
+---
+
+import { Steps } from '@astrojs/starlight/components';
+
+Here we show you how to selectively share data of your ARC (e.g. with a group).
+This requires to work with [git branches](/nfdi4plants.knowledgebase/git/git-working-with-branches).
+
+## Scenario
+
+You have [shared an ARC](/nfdi4plants.knowledgebase/datahub/datahub-working-together) via fork with a group. 
+Since you forked your ARC, you have progressed on your private version of the ARC, which now includes files that should not all be visible to the group. You still want to share some data (e.g. metadata) files with the group. 
+
+## Solution
+
+The following is done locally on your computer.
+
+<Steps>
+
+1. Identify the path to the file or folder that you want to selectively share
+1. Identify via `git log` the hash of the commit, when the ARC was shared with group (or any commit before sensitive data was added)
+2. Create a new git branch `git branch selected-data <commit-hash>`
+3. Switch to the new branch `git switch selected-data`
+4. Bring the file / folder of interest from the source branch (typically "main") to the current branch `git checkout main path/to/FolderOrFile`
+5. Add the new file(s) `git add path/to/FolderOrFile`
+6. Sync the ARC with the DataHUB (e.g. via ARC Commander or ARCitect)
+7. Now in DataHUB you can open a merge request from you "personalARC:selected-data" branch to the "forked ARC:main" branch.
+
+</Steps>
