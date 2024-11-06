@@ -443,9 +443,6 @@
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub-arc-sharing.html">
             Sharing ARCs via the DataHUB
           </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub-license.html">
-            Adding a LICENSE to your ARC
-          </a>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
           <a href="/nfdi4plants.knowledgebase/docs/guides/index-WorkWithYourARC.html">
@@ -496,9 +493,6 @@
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/publicationToARC.html">
             Publication to ARC
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_WorkingWithBranches.html">
-            Working with branches
           </a>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
@@ -552,9 +546,6 @@
               Start Your ARC Series - Videos
             </a>
           </nfdi-sidebar-eleneo>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2023/2023-04-27_MBS-Onboarding/index.html">
-            April: MBS Onboarding
-          </a>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
           <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/index.html">
@@ -571,9 +562,6 @@
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/2024-06-19-TRR175-Tutzing-Retreat/index.html">
             TRR175 Tutzing Retreat
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/2024-10-24_CEPLAS-ARCify-your-research-project/index.html">
-            CEPLAS ARCify your research project
           </a>
         </nfdi-sidebar-eleneo>
       </nfdi-sidebar-eleneo>
@@ -597,10 +585,6 @@ There are different options to keep track of these versions. The seemingly simpl
 <p>A more sophisticated approach addressing the versioning needs in more complex projects originates from the field of software engineering. Software development builds on iterative design-test-repeat cycles, in which multiple versions of files (code, inputs and outputs) or directory structures emerge plus changing dependencies within (e.g. files) and outside (e.g. other software) of the project. So-called &quot;distributed version control systems&quot; (sometimes termed &quot;source control&quot; or &quot;revision control&quot;) help software developers to keep track of project changes, guaranteeing stable integrity of the software, ideally before it is rolled-out to the public. The most prominent and vastly established distributed version control system is called <a href="https://git-scm.com" title="Git">Git</a>.</p>
 <p>By taking chronological snapshots of a complete project (termed &quot;git repository&quot;) rather than single files, Git allows the user to &quot;go back in time&quot; to an earlier version of that project, e.g. when the software was properly functioning. This is further supported by options to make changes to multiple files at once in parallel, safe copies of the project (termed &quot;branch&quot; or &quot;fork&quot;) without breaking the original version. In contrast to the versioning of cloud services, active control over these snapshots lies in the user's hand, allowing to evolve a project with a well-documented version history paralleling the iterative steps.</p>
 <p><img src="./../img/git_github_gitlab.png" alt="Git and Git Platforms" /></p>
-<nfdi-h2 id="git-branches">Git branches</nfdi-h2>
-<p>Branches in Git allow users to work on and develop new features of their projects without affecting or changing other branches in the repository.</p>
-<p>Imagine you're writing a book. The main path you're working on is the main storyline, which we'll call the main branch. But at some point, you get a new idea for an alternative storyline. Instead of changing the main storyline right away, you create a new path (or branch). Now, you can write and develop this new idea without affecting the main storyline. If you like how the alternative idea turns out, you can merge it back into the main storyline. If not, you can simply discard it, and the main storyline remains untouched.</p>
-<p>In Git, branches help you experiment and develop different features or ideas in isolation, without messing up the main codebase. In addition, multiple people can work on different tasks within the same project without interfering with each other. You can switch between branches, merge them together, or delete them when they're no longer needed.</p>
 <nfdi-h2 id="git-platforms-github-and-gitlab">Git platforms: GitHub and GitLab</nfdi-h2>
 <p>Although Git could be used locally as a standalone tool, its full power is unfolded via git platforms such as <a href="https://github.com" title="GitHub">GitHub</a> and <a href="https://gitlab.com" title="GitLab">GitLab</a>. Similar to the typical cloud services for file sharing and collaboration, these platforms function as remote share-points for git repositories. They allow data access management (permission control) to share data privately with selected collaborators or the public. Individual contributions and changes by multiple collaborators can be tracked. On top of versioned data sharing, additional features, such as discussing and tracking project tasks and contributions, and wiki-based documentation render these git platforms very valuable for project and research (data) management. Consequently, they nowadays enjoy great popularity outside of software development.</p>
 <p>Software developers collaborate via git to develop a software project over time, add new features, improve software parts or embed them into other software projects, and keep it up to date. Likewise, git suits to track the evolution of your plant science project over time,  where analyses become more complex, build on top of each other or are embedded from other projects as more data from your own experiments or external resources is added. This is particularly the case, if experimental data is packaged in one git repository together with descriptive metadata, computations, analyses, and their outcomes as well as licenses for reuse.</p>

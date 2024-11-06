@@ -79,7 +79,7 @@
 <li>Open <a href="http://127.0.0.1:8080/docs/teaching-materials/disseminations/2023-11-15_CEPLAS-ARC-Clubs/index.html">http://127.0.0.1:8080/docs/teaching-materials/disseminations/2023-11-15_CEPLAS-ARC-Clubs/index.html</a></li>
 </ol>
 <nfdi-h2 id="batch-compile-marp-slide-decks-to-html">Batch-compile marp slide decks to html</nfdi-h2>
-<nfdi-code class="language-bash">cd src/docs/teaching-materials/events-2023/2023-11-15_CEPLAS-ARC-Clubs
+<nfdi-code class="language-bash">cd src/docs/teaching-materials/disseminations/2023-11-15_CEPLAS-ARC-Clubs
 </nfdi-code>
 <nfdi-code class="language-bash">
 for unit in *.md; do
@@ -104,32 +104,6 @@ for unit in *.html; do
    
 
 done
-</nfdi-code>
-<nfdi-h2 id="combine-all-slide-decks-into-one">Combine all slide decks into one</nfdi-h2>
-<nfdi-code class="language-zsh">selectMarpTheme=marp-theme_dataplant-ceplas-ccby
-outfolder=_combined-slides
-
-mkdir -p $outfolder
-title=$(pwd | xargs basename)
-outfile="$outfolder"/"$title".md
-currentDate=$(date +"%Y-%m-%d")
-
-echo "---\nmarp: true\nlayout: slides\ntheme: $selectMarpTheme\npaginate: true\ntitle: $title\ndate: $currentDate\n---\n" > $outfile
-
-for unit in *.md; do    
-    if grep -q "^marp: true" "$unit"
-    then
-      yamlEnd=$(awk '/---/{++n; if (n==2) { print NR; exit}}' $unit)
-      tail -n +$((yamlEnd+1)) $unit >> $outfile
-      echo "\n---\n" >> $outfile
-    fi
-done
-
-sed "s|\.\./\.\./\.\./img/|\.\./\.\./\.\./\.\./img/|g" $outfile > tmp; mv tmp $outfile
-
-npx @marp-team/marp-cli@latest --html --allow-local-files $outfile --theme-set $marpTheme ../../style/ --
-npx @marp-team/marp-cli@latest --html --allow-local-files --pdf $outfile --theme-set $marpTheme ../../style/ --
-
 </nfdi-code>
 
       <h3>

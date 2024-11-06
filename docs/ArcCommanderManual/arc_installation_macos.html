@@ -443,9 +443,6 @@
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub-arc-sharing.html">
             Sharing ARCs via the DataHUB
           </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/datahub-license.html">
-            Adding a LICENSE to your ARC
-          </a>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
           <a href="/nfdi4plants.knowledgebase/docs/guides/index-WorkWithYourARC.html">
@@ -496,9 +493,6 @@
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/publicationToARC.html">
             Publication to ARC
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/guides/arc_WorkingWithBranches.html">
-            Working with branches
           </a>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
@@ -552,9 +546,6 @@
               Start Your ARC Series - Videos
             </a>
           </nfdi-sidebar-eleneo>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2023/2023-04-27_MBS-Onboarding/index.html">
-            April: MBS Onboarding
-          </a>
         </nfdi-sidebar-eleneo>
         <nfdi-sidebar-eleneo slot="child">
           <a href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/index.html">
@@ -571,9 +562,6 @@
           </a>
           <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/2024-06-19-TRR175-Tutzing-Retreat/index.html">
             TRR175 Tutzing Retreat
-          </a>
-          <a slot="child" href="/nfdi4plants.knowledgebase/docs/teaching-materials/events-2024/2024-10-24_CEPLAS-ARCify-your-research-project/index.html">
-            CEPLAS ARCify your research project
           </a>
         </nfdi-sidebar-eleneo>
       </nfdi-sidebar-eleneo>
@@ -594,33 +582,20 @@
 <li><p>Copy/paste the following commands into your terminal and execute them to (a) download the latest ARC Commander release, (b) change permissions to make the ARC Commander executable and (c) move the ARC Commander program to a location from where it is executable via the terminal:</p>
 </li>
 </ol>
-<!--  
-
-First, you need to verify if your machine is using an AMD / x86 processor or ARM processor.
-
-```bash
-uname -m
-```
-
-This command will return the processor type. If it returns x86_64 , your system is x86. If it returns arm64 , armv7l , or similar, it is ARM.
-
-For AMD / x86 processors
-
--->
-<nfdi-code class="language-bash">curl -LO https://github.com/nfdi4plants/ARCCommander/releases/download/v1.0.2/arc_osx-x64
+<p>First, you need to verify if your machine is using an AMD / x86 processor or ARM processor.</p>
+<nfdi-code class="language-bash">uname -m
+</nfdi-code>
+<p>This command will return the processor type. If it returns x86_64 , your system is x86. If it returns arm64 , armv7l , or similar, it is ARM.</p>
+<p>For AMD / x86 processors</p>
+<nfdi-code class="language-bash">curl -LO https://github.com/nfdi4plants/ARCCommander/releases/download/v1.0.0/arc_osx-x64
 chmod a+x ./arc_osx-x64
 mv ./arc_osx-x64 /usr/local/bin/arc
 </nfdi-code>
-<!-- 
-
-For ARM processors
-
-```bash
-curl -LO https://github.com/nfdi4plants/ARCCommander/releases/download/v1.0.2/arc_osx-arm64
+<p>For ARM processors</p>
+<nfdi-code class="language-bash">curl -LO https://github.com/nfdi4plants/ARCCommander/releases/download/v1.0.0/arc_osx-arm64
 chmod a+x ./arc_osx-arm64
 mv ./arc_osx-arm64 /usr/local/bin/arc
-```
--->
+</nfdi-code>
 <blockquote>
 <p>⚠️ By moving the ARC commander binary to <code>/usr/local/bin/</code> it also becomes available to other users on your machine.</p>
 </blockquote>
@@ -656,7 +631,7 @@ mv ./arc_osx-arm64 /usr/local/bin/arc
 <blockquote>
 <p>Start processing parameterless command.<br />
 Start Arc Version<br />
-v1.0.2<br />
+v1.0.0<br />
 Done processing command.</p>
 </blockquote>
 <blockquote>
