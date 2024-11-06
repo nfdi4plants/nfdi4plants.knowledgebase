@@ -7,8 +7,7 @@ authors:
 
 # CWL Metadata
 
-Metadata plays a crucial role in enhancing the comprehensibility of CWL files. By embedding additional information about the performer and the process within the metadata, 
-researchers can create a more comprehensive and informative description of their workflows.
+Metadata plays a crucial role in enhancing the comprehensibility of CWL files. By embedding additional information about the performer and the process within the metadata, researchers can create a more comprehensive and informative description of their workflows.
 
 - Performer Metadata:
 

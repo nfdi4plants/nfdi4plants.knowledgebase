@@ -52,6 +52,24 @@ export default defineConfig({
           autogenerate: { directory: 'guides' },
         },
         {
+          label: 'Resources',
+          // Collapse the group by default.
+          collapsed: true,
+          autogenerate: { directory: 'resources' },
+        },
+        {
+          label: 'Git',
+          // Collapse the group by default.
+          collapsed: true,
+          autogenerate: { directory: 'git' },
+        },
+        {
+          label: 'CWL',
+          // Collapse the group by default.
+          collapsed: true,
+          autogenerate: { directory: 'cwl' },
+        },
+        {
           label: 'Fundamentals',
           // Collapse the group by default.
           collapsed: true,

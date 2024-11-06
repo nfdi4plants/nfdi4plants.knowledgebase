@@ -311,7 +311,7 @@ This might however pose a safety risk. Please read the details here: https://www
 
 ### Git LFS
 
-[Git LFS](/nfdi4plants.knowledgebase/guides/arc-lfs) is basically the system in the back to simplify working with git and (ARCs containing) large data files.
+[Git LFS](/nfdi4plants.knowledgebase/git/git-lfs) is basically the system in the back to simplify working with git and (ARCs containing) large data files.
 ARC commander and ARCitect offer options to download (clone) an ARC without large files; speeding up the process and avoiding waste of data storage, if you are only interested e.g. in the metadata.
 
 If you have downloaded (cloned) an ARC without large files and try to upload it to a new location (i.e. new remote due to a transfer to other user, group, etc.), you will see the following or similar error

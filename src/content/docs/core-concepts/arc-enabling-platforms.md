@@ -79,7 +79,7 @@ The standardized ARC structure helps with routine computations:
 
 - The ARC's simple [directory structure](/nfdi4plants.knowledgebase/core-concepts/arc) itself helps building routines, no matter whether you work with code or licensed software. Across projects, you and your collaborators know, where to find metadata and raw data, where to store processed data and results.
 - The ARC facilitates task automation such as quality control and validation within one project or across multiple ARCs covering routine measurements
-- Code-based computations can be designed as reusable and reproducible workflows using [Common Workflow Language (CWL)](/nfdi4plants.knowledgebase/guides/data-analysis/computational-workflows)
+- Code-based computations can be designed as reusable and reproducible workflows using [Common Workflow Language (CWL)](/nfdi4plants.knowledgebase/cwl)
 
 ### Data publication
 
@@ -144,7 +144,7 @@ Following the exemplary scenario A, you could setup the ARC for your collaborati
 Alternatively, collaborators already working with ARCs could invite you to "their" ARC (exemplary scenario B). They can independently set up the ARC and fill metadata (4) based on your prepared templates (3).
 
 :::tip
-In scenario B the collaborator might invite you to a very large ARC with data not really relevant for your platform-specific collaboration. In this case you might want to [exclude irrelevant data or avoid downloading large data](/nfdi4plants.knowledgebase/guides/arc-gitignore) when syncing the ARC.
+In scenario B the collaborator might invite you to a very large ARC with data not really relevant for your platform-specific collaboration. In this case you might want to [exclude irrelevant data or avoid downloading large data](/nfdi4plants.knowledgebase/git/git-gitignore) when syncing the ARC.
 :::
 
 **Can I retain my established naming convention for project management and data storage?**
