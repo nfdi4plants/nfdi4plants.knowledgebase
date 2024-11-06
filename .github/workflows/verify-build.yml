@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: PR Build Check 
 
 on:
   pull_request:
