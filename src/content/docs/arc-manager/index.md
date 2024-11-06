@@ -13,13 +13,13 @@ Here, you can find detailed information about using the ARCmanager web service.
 
 Contents:
 
-- [What is the ARCmanager?](./01_intro.html)
-- [Connect to your DataHUB](./02_login.html)
-- [View ARCs](./03_view_ARCs.html)
-- [Create new ARCs](./04_create_ARCs.html)
-- [Add new studies and assays](./05_studies_assays.html)
-- [Upload files](./05_uploading_files.html)
-- [Add metadata to your ARCs](./06_adding_metadata.html)
+- [What is the ARCmanager?](/nfdi4plants.knowledgebase/arc-manager/01-intro)
+- [Connect to your DataHUB](/nfdi4plants.knowledgebase/arc-manager/02-login)
+- [View ARCs](/nfdi4plants.knowledgebase/arc-manager/03-view-ARCs)
+- [Create new ARCs](/nfdi4plants.knowledgebase/arc-manager/04-create-ARCs)
+- [Add new studies and assays](/nfdi4plants.knowledgebase/arc-manager/05-studies-assays)
+- [Upload files](/nfdi4plants.knowledgebase/arc-manager/05-uploading-files)
+- [Add metadata to your ARCs](/nfdi4plants.knowledgebase/arc-manager/06-adding-metadata)
 
 ---
 
@@ -29,8 +29,8 @@ The ARCmanager web service is currently in development. The service can be unava
 
 If you encounter any issues or have suggestions how to improve the service, please consider opening a new issue in one of the project related github repositories:
 
-https://github.com/nfdi4plants/arcmanager_frontend
+https://github.com/nfdi4plants/arcmanager-frontend
 
-https://github.com/nfdi4plants/arcmanager_backend
+https://github.com/nfdi4plants/arcmanager-backend
 
 ---

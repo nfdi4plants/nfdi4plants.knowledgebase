@@ -39,7 +39,7 @@ Be aware that you need at least the [maintainer role](https://docs.gitlab.com/ee
 
     Click on the created project to explore it.
 
-4. The created ARC contains four folders: *studies*, *assays* , *workflows*, and *runs*.  To get familiar with these folders, visit the [Annotated Research Context knowledge base article](./../implementation/AnnotatedResearchContext.html).
+1. The created ARC contains four folders: *studies*, *assays* , *workflows*, and *runs*.  To get familiar with these folders, visit the [Annotated Research Context knowledge base article](/nfdi4plants.knowledgebase/core-concepts/arc).
 
 
 ![](@images/arc-manager/arc-manager-createarcs-arc-explore.png)

@@ -96,7 +96,7 @@ Plain text files (.md, .txt or similar) can be modified directly in this editor.
 
 ---
 
-When selecting an ISA file, the editor panel will open as well, but instead of a text editor you will see a form that allows you to add metadata entries to the ISA file (Fig. 8). To learn more about adding metadata using the ARCmanager, visit the corresponding [Manual page](./06_adding_metadata.html).
+When selecting an ISA file, the editor panel will open as well, but instead of a text editor you will see a form that allows you to add metadata entries to the ISA file (Fig. 8). To learn more about adding metadata using the ARCmanager, visit the corresponding [Manual page](/nfdi4plants.knowledgebase/arc-manager/06_adding_metadata).
 
 ---
 
