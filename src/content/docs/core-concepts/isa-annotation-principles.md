@@ -6,7 +6,7 @@ lastUpdated: 2023-06-22
 sidebar:
   badge:
     text: wip
-    variant: note
+    variant: caution
 draft: true
 ---
 
