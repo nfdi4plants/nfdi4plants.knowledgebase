@@ -3,28 +3,63 @@ title: ARC VSCode Extension
 lastUpdated: 2024-11-06
 authors:
   - dominik-brilhaus
-draft: true
+sidebar:
+  order: 1
+  badge:
+    text: New
+    variant: tip
 ---
 
-Some features you know from ARCitect are now available as a [VSCode](https://code.visualstudio.com/Download) extension. 
+import { Steps } from '@astrojs/starlight/components';
 
-## VSCode extension
+Some features you know from [ARCitect](/nfdi4plants.knowledgebase/arcitect) are now available as a [Visual Studio Code (VSCode)](https://code.visualstudio.com/Download) extension. 
 
-0. download from GitHub release page https://github.com/nfdi4plants/arc-vs-code/releases/latest
-    - `arc-vs-code-x.x.x.vsix`
-1. install in VSC local
-  - extensions
-  - three-dots menu
-  - "Install from VSIX", select the dowloaded .vsix file
+## Local installation
 
-## VS Code extension in DataHUB "Web IDE"
+<Steps>
 
-0. in user prefs: activate vscode extensions 
-1. open ARC in Web IDE
-2. go to extensions (left sidebar) 
-3. search for arc-vs-code and click "install"
+1. From the [GitHub release page](https://github.com/nfdi4plants/arc-vs-code/releases/latest) download the asset `arc-vs-code-x.x.x.vsix`
+2. Open the VSCode app
+3. Navigate to the extensions menu and from the three-dots menu select `Install from VSIX`
+4. Navigate to and select the downloaded `arc-vs-code-x.x.x.vsix` file and click "Install"
+5. The ARC VSCode extension is now available. 
 
-## User manual
+</Steps>
 
-1. right click on study / assay name or isa.investigation.xlsx to delete (from file tree) or edit (Swate view)
-2. Right-click on `studies` or `assays` to add a new study or assay.
+## DataHUB "Web IDE"
+
+You can also use the extension right away in the [DataHUB](/nfdi4plants.knowledgebase/datahub)
+
+### Activate the extension
+
+<Steps>
+
+1. Log in to the [PLANTDataHUB](https://git.nfdi4plants.org)
+2. Navigate to the [user preferences](/nfdi4plants.knowledgebase/datahub/datahub-user-settings)
+3. Scroll to the section "Integrations" at the bottom
+4. Check the box "Enable extension marketplace" to activate vscode extensions and click `Save changes`
+
+</Steps>
+
+:::note
+You only have to do this once for your account.
+::: 
+
+### Using the ARC VSCode extension the DataHUB "Web IDE"
+
+<Steps>
+
+1. Open an ARC in the DataHUB
+2. On the top of your ARC select `Web IDE` from the `Edit` dropdown or hit the `.` key to open VSCode. 
+3. In the left sidebar, open the `Extensions` menu
+4. Select the extension arc-vs-code
+5. In the main menu on the right click `install`
+
+</Steps>
+
+## Using the extension
+
+Once you open an ARC folder in VSCode, the functions become are available in the context menus of relevant files and folders in your ARC (e.g. studies and assays) via right-click: 
+
+- In the VSCode file tree, right-click on a study or assay name or the isa.investigation.xlsx to delete or edit the respective ISA metadata. 
+- Right-click on the folders `studies` or `assays` to add a new study or assay.
