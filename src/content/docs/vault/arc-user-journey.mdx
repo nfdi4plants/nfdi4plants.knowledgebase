@@ -19,15 +19,15 @@ import BaseArc from '@components/mdx/BaseARC.mdx'
 
 <BaseArc />
 
-To answer this question, we will first take a look back at Viola's [metadata](/fundamentals/metadata)example:
+To answer this question, we will first take a look back at Viola's [metadata](/nfdi4plants.knowledgebase/fundamentals/metadata)example:
 
 > Viola investigates the effect of the plant circadian clock on sugar metabolism in *W. mirabilis*. For her PhD project, which is part of an EU-funded consortium in Prof. Beetroot's lab, she acquires seeds from a South-African Botanical Society. Viola grows the plants under different light regimes, harvests leaves from a two-day time series experiment, extracts polar metabolites as well as RNA and submits the samples to nearby core facilities for metabolomics and transcriptomics measurements, respectively. After a few weeks of iterative consultation with the facilities' heads as well as technicians and computational biologists involved, Viola receives back a wealth of raw and processed data. From the data she produces figures and wraps everything up to publish the results in the *Journal of Wonderful Plant Sciences*.
 
-The entire information given in this example can be stored within an ARC. To illustrate the [ARC specifications](/core-concepts/arc/#arc-specification), we will highlight and explain every (sub)directory and ISA-file of the ARC with references to Viola's example.
+The entire information given in this example can be stored within an ARC. To illustrate the [ARC specifications](/nfdi4plants.knowledgebase/core-concepts/arc/#arc-specification), we will highlight and explain every (sub)directory and ISA-file of the ARC with references to Viola's example.
 
 ## isa.investigation.xlsx
 
-The ISA investigation workbook allows you to record administrative metadata of your project. In Viola's example, the title of the project, the contact persons, and related publications correspond to such metadata. Besides that, the workbook can also contain a short description of your project, but also lists included studies with respective design types, assays, protocols, etc.. Although we recommend to use the [ARC Commander](/arc-commander) for adding these metadata, you can of course fill the workbook (and also the [isa.study.xlsx](#isastudyxlsx) and [isa.assay.xlsx](#isaassayxlsx)) manually.
+The ISA investigation workbook allows you to record administrative metadata of your project. In Viola's example, the title of the project, the contact persons, and related publications correspond to such metadata. Besides that, the workbook can also contain a short description of your project, but also lists included studies with respective design types, assays, protocols, etc.. Although we recommend to use the [ARC Commander](/nfdi4plants.knowledgebase/arc-commander) for adding these metadata, you can of course fill the workbook (and also the [isa.study.xlsx](#isastudyxlsx) and [isa.assay.xlsx](#isaassayxlsx)) manually.
 
 ## Studies
 
@@ -39,8 +39,8 @@ In case your investigation contains more than one study, each of these studies i
 
 Every study contains one `isa.study.xlsx` file to specify the characteristics of all material and resources. Resources described in a study file can be the input for one or multiple assays or workflows. The workbook contains (at least) two worksheets:
 
-- "CircadianClock_Light regimes": One or more worksheets, depending on the number of used protocols, to annotate the properties of your source material following the ISA model. The sheet name is not obligatory to be the exact same as the "Study Identifier". While this can be done manually, we recommend using our ontology supported annotation tool [Swate](/swate).
-- "Study": Viola collected the administrative metadata of her study in this worksheet. This information can later be transferred into the `isa.investigation.xlsx` using the [ARC Commander](/arc-commander).
+- "CircadianClock_Light regimes": One or more worksheets, depending on the number of used protocols, to annotate the properties of your source material following the ISA model. The sheet name is not obligatory to be the exact same as the "Study Identifier". While this can be done manually, we recommend using our ontology supported annotation tool [Swate](/nfdi4plants.knowledgebase/swate).
+- "Study": Viola collected the administrative metadata of her study in this worksheet. This information can later be transferred into the `isa.investigation.xlsx` using the [ARC Commander](/nfdi4plants.knowledgebase/arc-commander).
 
 ## Assays
 
@@ -51,7 +51,7 @@ The `assays` folder allows you to store data and metadata from experimental proc
 Viola can annotate her experimental workflows of the metabolomics and transcriptomics assays with process parameters in the `isa.assay.xlsx` file, which needs to be present for every assay. The workbook contains two or more worksheets, depending on the number of used protocols:
 
 
-- "MetaboliteExtraction": A worksheet to annotate the experimental workflow, in this case for extraction of metabolites. While this can be done manually, we recommend using our ontology supported annotation tool [Swate](/swate).
+- "MetaboliteExtraction": A worksheet to annotate the experimental workflow, in this case for extraction of metabolites. While this can be done manually, we recommend using our ontology supported annotation tool [Swate](/nfdi4plants.knowledgebase/swate).
 > Note: Using the name of the protocol for the name of the worksheet can provide clarity. 
 - "MetaboliteMeasurement": A worksheet that describes the quantification of polar metabolites using gas-chromatography mass-spectrometry.
 - "Assay": Viola collected the administrative metadata of her assay in this worksheet. This information can later be transferred into the `isa.investigation.xlsx` using the ARC Commander.
@@ -68,4 +68,4 @@ After Viola generated her plots, she placed them in individual subdirectories, s
 
 ## Cheat sheet
 
-We hope that these examples nicely illustrated the ARC structure and that you are now ready to produce your own ARCs. Use the figure below as a cheat sheet to remember where to store which files. Or follow the [ARC Commander QuickStart](/guides/arc-commander-quick-start) to try it out yourself.
+We hope that these examples nicely illustrated the ARC structure and that you are now ready to produce your own ARCs. Use the figure below as a cheat sheet to remember where to store which files. Or follow the [ARC Commander QuickStart](/nfdi4plants.knowledgebase/guides/arc-commander-quick-start) to try it out yourself.

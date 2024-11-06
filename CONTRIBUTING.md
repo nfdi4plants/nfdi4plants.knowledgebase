@@ -1,3 +1,21 @@
+# Where should i place my content?
+
+## Start here
+
+This is a place for content required for the recommended way to work with an ARC.
+
+## Guides
+
+Here you can place content for a specific topic or task. Do not place specific tools documentation here.
+
+## <specific-tool>
+
+If you have a tool that is used in the context of an ARC, you can place the documentation here.
+
+## Core concepts
+
+Basic information about RDM, not necessary ARC related.
+
 # Style Guide
 
 ## Use Starlight components

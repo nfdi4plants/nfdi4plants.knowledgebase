@@ -29,9 +29,9 @@ As a platform you manage a lot of projects in parallel. Keeping these projects u
 
 Here's a few tips to support your project management:
 
-- You can use the [wiki associated to the ARC](/datahub/datahub-arc-wiki) to collect meeting minutes with your collaborators
-- You can use the [ARC's issue board](/datahub/datahub-arc-panel) to coordinate tasks between collaborators, team members, data analysts and others involved
-- You can use your established system of identifiers (e.g. for projects, samples) in [ISA metadata](/core-concepts/isa)
+- You can use the [wiki associated to the ARC](/nfdi4plants.knowledgebase/datahub/datahub-arc-wiki) to collect meeting minutes with your collaborators
+- You can use the [ARC's issue board](/nfdi4plants.knowledgebase/datahub/datahub-arc-panel) to coordinate tasks between collaborators, team members, data analysts and others involved
+- You can use your established system of identifiers (e.g. for projects, samples) in [ISA metadata](/nfdi4plants.knowledgebase/core-concepts/isa)
 - You can also keep naming your ARCs with the same way you are used to name your project folders
 
 ### Streamlined data exchange
@@ -49,9 +49,9 @@ Here's an idea what your data flow could look like with the ARC:
 
 A few tips to streamline your data exchange:
 
-- You can [use metadata templates](/swate/templates)
+- You can [use metadata templates](/nfdi4plants.knowledgebase/swate/templates)
   - to communicate with collaborators and team members, which metadata is crucial for specific assays
-- You can also store filled-out templates for your routine measurements as a reusable [JSON file](/swate/json)
+- You can also store filled-out templates for your routine measurements as a reusable [JSON file](/nfdi4plants.knowledgebase/swate/json)
 
 ### Data storage, handling and transfer
 
@@ -59,16 +59,16 @@ Your platform produces a lot of valuable raw data. Depending on your setup and t
 
 The DataHUB can help as a platform to centralize data from different sources and function as a geo-redundant backup with tracked changes:
 
-- No matter where you work (office desktop, remote laptop, workstation), you can always sync your current state of the ARC via the [DataHUB](/datahub)
-- You can follow the evolution of a project via ARC's [version control](/fundamentals/version-control-git)
+- No matter where you work (office desktop, remote laptop, workstation), you can always sync your current state of the ARC via the [DataHUB](/nfdi4plants.knowledgebase/datahub)
+- You can follow the evolution of a project via ARC's [version control](/nfdi4plants.knowledgebase/fundamentals/version-control-git)
 
 ### Track changes and provenance
 
 Different people are involved in the projects passing your platform. From team members to internal and external collaboration partners (collaborators). This makes it sometimes hard to keep track of who contributed how, what, when, why and to manage who needs access to which data.
 
-- The [DataHUB](/datahub/) facilitates access management across institute boarders
-- ARCs document [changes and contributions](/fundamentals/version-control-git)
-- The [ISA metadata model](/core-concepts/isa) allows to associate contributors with investigations and studies. List your team members to ensure proper credit for their contributions
+- The [DataHUB](/nfdi4plants.knowledgebase/datahub/) facilitates access management across institute boarders
+- ARCs document [changes and contributions](/nfdi4plants.knowledgebase/fundamentals/version-control-git)
+- The [ISA metadata model](/nfdi4plants.knowledgebase/core-concepts/isa) allows to associate contributors with investigations and studies. List your team members to ensure proper credit for their contributions
 
 ### Routine computations
 
@@ -77,18 +77,18 @@ Reusing computational workflows across projects helps comprehensibility for your
 
 The standardized ARC structure helps with routine computations:
 
-- The ARC's simple [directory structure](/core-concepts/arc) itself helps building routines, no matter whether you work with code or licensed software. Across projects, you and your collaborators know, where to find metadata and raw data, where to store processed data and results.
+- The ARC's simple [directory structure](/nfdi4plants.knowledgebase/core-concepts/arc) itself helps building routines, no matter whether you work with code or licensed software. Across projects, you and your collaborators know, where to find metadata and raw data, where to store processed data and results.
 - The ARC facilitates task automation such as quality control and validation within one project or across multiple ARCs covering routine measurements
-- Code-based computations can be designed as reusable and reproducible workflows using [Common Workflow Language (CWL)](/guides/data-analysis/computational-workflows)
+- Code-based computations can be designed as reusable and reproducible workflows using [Common Workflow Language (CWL)](/nfdi4plants.knowledgebase/guides/data-analysis/computational-workflows)
 
 ### Data publication
 
-At some point you and your collaborator want to [publish the data](/fundamentals/data-publications) resulting from the project.
+At some point you and your collaborator want to [publish the data](/nfdi4plants.knowledgebase/fundamentals/data-publications) resulting from the project.
 
-There are two major options: You can publish the current version of the ARC and receive a (https://www.doi.org/)(/datahub/datahub-data-publications). Some scientific journals require data to be published in  [domain-specific repositories](/fundamentals/public-data-repositories), specialized for a certain type of assay. For this purpose converters help you export the relevant dataset and metadata into a repository-accepted format.
+There are two major options: You can publish the current version of the ARC and receive a (https://www.doi.org/). Some scientific journals require data to be published in  [domain-specific repositories](/nfdi4plants.knowledgebase/fundamentals/public-data-repositories), specialized for a certain type of assay. For this purpose converters help you export the relevant dataset and metadata into a repository-accepted format.
 
 :::tip
-We are working on converters to read and reshape the relevant data and metadata of your ARC into a format accepted by domain-specific repositories. You can support this by telling us relevant repositories for your type of data or help creating [templates](/swate/templates).
+We are working on converters to read and reshape the relevant data and metadata of your ARC into a format accepted by domain-specific repositories. You can support this by telling us relevant repositories for your type of data or help creating [templates](/nfdi4plants.knowledgebase/swate/templates).
 :::
 
 ## Preparing your platform to benefit from the ARC
@@ -96,7 +96,7 @@ We are working on converters to read and reshape the relevant data and metadata 
 Here we recommend steps that you *can* take to prepare your platform towards using ARCs.
 They are optional and it depends on your platform, whether these are suitable.
 
-☑️ **[Create](/start-here) an example ARC**
+☑️ **[Create](/nfdi4plants.knowledgebase/start-here) an example ARC**
 - Try to structure a typical experiment run in your platform as an ARC
 - Consider what information is required to reproduce the experiment from *source-to-data*
 - What information is provided by the collaborator or by the platform?
@@ -109,15 +109,15 @@ They are optional and it depends on your platform, whether these are suitable.
 - Where can they find what information (protocols, datasets, results)?
 - How can they interact with the ARC (upload, download, edit)
 
-☑️ **[Create a DataHUB group](/datahub/datahub-groups) for your platform**
+☑️ **[Create a DataHUB group](/nfdi4plants.knowledgebase/datahub/datahub-groups) for your platform**
 
 - A group can help you organize all running projects in one place
 - You can easily manage access for multiple ARCs
 
-☑️ **Design [metadata templates](/swate/swate-template-contribution) for sample annotation**
+☑️ **Design [metadata templates](/nfdi4plants.knowledgebase/swate/swate-template-contribution) for sample annotation**
 
 - Let your collaborators know, what information you need from them
-- You can either use those templates yourself, when initiating a new ARC for collaboration or let collaborators select the template directly via [Swate](/swate)
+- You can either use those templates yourself, when initiating a new ARC for collaboration or let collaborators select the template directly via [Swate](/nfdi4plants.knowledgebase/swate)
 
 ☑️ **Write a short guide for your collaborators**
 
@@ -144,7 +144,7 @@ Following the exemplary scenario A, you could setup the ARC for your collaborati
 Alternatively, collaborators already working with ARCs could invite you to "their" ARC (exemplary scenario B). They can independently set up the ARC and fill metadata (4) based on your prepared templates (3).
 
 :::tip
-In scenario B the collaborator might invite you to a very large ARC with data not really relevant for your platform-specific collaboration. In this case you might want to [exclude irrelevant data or avoid downloading large data](/guides/arc-gitignore) when syncing the ARC.
+In scenario B the collaborator might invite you to a very large ARC with data not really relevant for your platform-specific collaboration. In this case you might want to [exclude irrelevant data or avoid downloading large data](/nfdi4plants.knowledgebase/guides/arc-gitignore) when syncing the ARC.
 :::
 
 **Can I retain my established naming convention for project management and data storage?**
@@ -153,7 +153,7 @@ Running a central platform, you probably follow an established project managemen
 This is particularly important for how project folders are named on your platform's data storage. When implementing ARCs, **you do not need to change** this system.
 You can simply name the ARCs the same way you are used to name your project folders.
 
-This is also true for scenario B exemplified above. You can simply [fork](/datahub/datahub-arc-fork) the collaborator's ARC and rename it according to your system.
+This is also true for scenario B exemplified above. You can simply [fork](/nfdi4plants.knowledgebase/datahub/datahub-arc-fork) the collaborator's ARC and rename it according to your system.
 
 :::tip
 You might want to consider requiring your collaborators to name the assays (folder name or assay identifier) according to your project management system.
@@ -163,4 +163,4 @@ You might want to consider requiring your collaborators to name the assays (fold
 
 Not all of your collaborators use ARCs or are planning to do so, but you still want to interact with those collaborators in the same routines employed with everyone else. They only need a DataHUB account and they can simply sign in with their existing scientific account.
 
-The DataHUB comes with [built-in features](/datahub/datahub-files) that allow interaction with the ARC solely via the web browser without any addional tools.
+The DataHUB comes with [built-in features](/nfdi4plants.knowledgebase/datahub/datahub-files) that allow interaction with the ARC solely via the web browser without any addional tools.

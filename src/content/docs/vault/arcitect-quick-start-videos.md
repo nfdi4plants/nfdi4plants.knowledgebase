@@ -22,7 +22,7 @@ pagefind: false
 
 ## About this guide
 
-In this guide we focus on how to use the [ARCitect](/arcitect) to create your ARC and structure, store and share your data.
+In this guide we focus on how to use the [ARCitect](/nfdi4plants.knowledgebase/arcitect) to create your ARC and structure, store and share your data.
 <!-- 
 <div style="padding-bottom: 20px">
     <a href="./index.html">
@@ -37,9 +37,9 @@ In this guide we focus on how to use the [ARCitect](/arcitect) to create your AR
 
 Please make sure
 
-☑️ The latest version of the [ARCitect](/arcitect) is installed on your computer  
+☑️ The latest version of the [ARCitect](/nfdi4plants.knowledgebase/arcitect) is installed on your computer  
 ☑️ You have a [DataPLANT](https://register.nfdi4plants.org) account  
-💡 Consider reading about the [ARC](/core-concepts/arc)  
+💡 Consider reading about the [ARC](/nfdi4plants.knowledgebase/core-concepts/arc)  
 
 ---
 

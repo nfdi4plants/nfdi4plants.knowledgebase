@@ -23,6 +23,6 @@ The [ARC Validation Package Registry (AVPR)](https://avpr.nfdi4plants.org) is th
 
 ## Use Validation packages in your CQC pipeline
 
-_practical guide: [find and use ARC Validation Packages](/arc-validation/validation-packages)_
+_practical guide: [find and use ARC Validation Packages](/nfdi4plants.knowledgebase/arc-validation/validation-packages)_
 
-Users can choose to validate against any validation package available on the AVPR. To do so, they need to add the package and desired version to their ARC's `validation_packages.yml` file. The CQC pipeline will then automatically validate the ARC against the selected packages on every commit. The file can be created manually or by DataPLANT tooling such as the [ARCitect](/arcitect). For more information, visit the [practical guide](/arc-validation/validation-packages).
+Users can choose to validate against any validation package available on the AVPR. To do so, they need to add the package and desired version to their ARC's `validation_packages.yml` file. The CQC pipeline will then automatically validate the ARC against the selected packages on every commit. The file can be created manually or by DataPLANT tooling such as the [ARCitect](/nfdi4plants.knowledgebase/arcitect). For more information, visit the [practical guide](/nfdi4plants.knowledgebase/arc-validation/validation-packages).
