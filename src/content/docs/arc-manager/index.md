@@ -15,8 +15,8 @@ Contents:
 
 - [What is the ARCmanager?](/nfdi4plants.knowledgebase/arc-manager/01-intro)
 - [Connect to your DataHUB](/nfdi4plants.knowledgebase/arc-manager/02-login)
-- [View ARCs](/nfdi4plants.knowledgebase/arc-manager/03-view-ARCs)
-- [Create new ARCs](/nfdi4plants.knowledgebase/arc-manager/04-create-ARCs)
+- [View ARCs](/nfdi4plants.knowledgebase/arc-manager/03-view-arcs)
+- [Create new ARCs](/nfdi4plants.knowledgebase/arc-manager/04-create-arcs)
 - [Add new studies and assays](/nfdi4plants.knowledgebase/arc-manager/05-studies-assays)
 - [Upload files](/nfdi4plants.knowledgebase/arc-manager/05-uploading-files)
 - [Add metadata to your ARCs](/nfdi4plants.knowledgebase/arc-manager/06-adding-metadata)
