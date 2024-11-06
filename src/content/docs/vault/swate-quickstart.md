@@ -9,13 +9,13 @@ pagefind: false
 
 :::note[About this guide]
 
-DataPLANT provides the tool [Swate](/swate) to support you in data annotation. In this guide, we focus on adding metadata to your studies and assays with our tool. Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses.
+DataPLANT provides the tool [Swate](/nfdi4plants.knowledgebase/swate) to support you in data annotation. In this guide, we focus on adding metadata to your studies and assays with our tool. Use the isa.study.xlsx to describe the characteristics of your samples, e.g. how you grew your plant, and isa.assay.xlsx to annotate the experimental analyses.
 :::
 
 
 :::tip[Before we can start]
 
-💡 Consider reading about [Swate](/swate)
+💡 Consider reading about [Swate](/nfdi4plants.knowledgebase/swate)
 
 💡 We assume that you already created an ARC that contains one or more isa.study.xlsx and isa.assay.xlsx file(s), respectively.
 :::
@@ -56,11 +56,11 @@ Briefly:
 ![](@images/swate/swate-alpha-add-building-block.png)
 
 
-5. For more information on customizing your annotation table click [here](/swate/building-blocks).
+5. For more information on customizing your annotation table click [here](/nfdi4plants.knowledgebase/swate/building-blocks).
 
 ## Use templates
 
-Alternatively, you can also use one of DataPLANT’s [Swate templates](/swate/templates). You can find them via the "add template" button, next to the "add building block" button.  
+Alternatively, you can also use one of DataPLANT’s [Swate templates](/nfdi4plants.knowledgebase/swate/templates). You can find them via the "add template" button, next to the "add building block" button.  
 
 ![](@images/swate/swate-add-template.png)
 

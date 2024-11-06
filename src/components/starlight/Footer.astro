@@ -13,16 +13,19 @@ const authors: CollectionEntry<'authors'>[] = Astro.props.entry.data.authors ? a
   <Default {...Astro.props}>
     <slot />
   </Default>
-  <div>
-    <p class="text-lg text">
-      Authors
-    </p>
-    <div class="flex flex-col gap-2 md:gap-4">
-      {authors.map((author) => (
-        <AuthorCard author={author} />
-      ))}
-    </div>
-  </div>
+  {
+    authors.length > 0 &&
+      <div>
+        <p class="text-lg text">
+          Authors
+        </p>
+        <div class="flex flex-col gap-2 md:gap-4">
+          {authors.map((author) => (
+            <AuthorCard author={author} />
+          ))}
+        </div>
+      </div>
+  }
 </footer>
 
 <style>

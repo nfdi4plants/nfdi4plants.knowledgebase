@@ -10,12 +10,12 @@ pagefind: false
 
 :::note[About this guide]
 
-DataPLANT provides the tool [Swate](/swate) to support you in data annotation. In this guide, we want to introduce you to basic functionalities of Swate which you can use to on add metadata to your studies and assays.
+DataPLANT provides the tool [Swate](/nfdi4plants.knowledgebase/swate) to support you in data annotation. In this guide, we want to introduce you to basic functionalities of Swate which you can use to on add metadata to your studies and assays.
 :::
 
 :::tip[Before we can start]
-- Consider reading about [Swate](/swate)
-- We assume that you already created an ARC that contains one or more studies and assays. If not consider watching the [ARCitect Quickstart Videos](/vault/arcitect-quick-start-videos)
+- Consider reading about [Swate](/nfdi4plants.knowledgebase/swate)
+- We assume that you already created an ARC that contains one or more studies and assays. If not consider watching the [ARCitect Quickstart Videos](/nfdi4plants.knowledgebase/vault/arcitect-quick-start-videos)
 first.
 :::
 

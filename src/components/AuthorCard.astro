@@ -38,7 +38,7 @@ const {author} = Astro.props;
       author.data.socials && author.data.socials.length > 0 &&
         <div class="flex grow items-center gap-2">
             {
-              author.data.socials.map((social) => (
+              author.data.socials.map((social: any) => (
                 <a href={social.href} target="_blank" class="w-7 h-7">
                   <Icon name={social.icon} class="w-7 h-7 simpleIcons" title={social.icon.split(":")[1]}/>
                 </a>

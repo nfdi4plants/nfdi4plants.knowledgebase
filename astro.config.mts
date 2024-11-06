@@ -10,6 +10,8 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://nfdi4plants.github.io",
+  base: '/nfdi4plants.knowledgebase',
   integrations: [
     icon(),
     starlight({
@@ -48,6 +50,24 @@ export default defineConfig({
           label: 'Guides',
           collapsed: true,
           autogenerate: { directory: 'guides' },
+        },
+        {
+          label: 'Resources',
+          // Collapse the group by default.
+          collapsed: true,
+          autogenerate: { directory: 'resources' },
+        },
+        {
+          label: 'Git',
+          // Collapse the group by default.
+          collapsed: true,
+          autogenerate: { directory: 'git' },
+        },
+        {
+          label: 'CWL',
+          // Collapse the group by default.
+          collapsed: true,
+          autogenerate: { directory: 'cwl' },
         },
         {
           label: 'Fundamentals',

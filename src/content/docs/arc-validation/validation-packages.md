@@ -9,7 +9,7 @@ Users can choose to validate against any validation package available on the [AR
 
 To include a validation package in a PLANTDataHUB CQC pipeline, it has to be referenced in the `validation_packages.yml` file located in the `.arc` directory in the ARC's root directory. The file can be created manually or by DataPLANT tooling such as the ARCitect.
 
-Let's for example have a look at the **[invenio validation package](https://avpr.nfdi4plants.org/package/invenio)**, which an ARC must pass to be eligible for [data publication](/datahub/data-publications). The AVPR page states that (at the time of writing this guide) the latest version is `2.0.1` and that to include this package in the CQC pipeline, the following content has to be added to the `validation_packages.yml` file:
+Let's for example have a look at the **[invenio validation package](https://avpr.nfdi4plants.org/package/invenio)**, which an ARC must pass to be eligible for [data publication](/nfdi4plants.knowledgebase/datahub/data-publications). The AVPR page states that (at the time of writing this guide) the latest version is `2.0.1` and that to include this package in the CQC pipeline, the following content has to be added to the `validation_packages.yml` file:
 
 ```yaml
 validation_packages:
