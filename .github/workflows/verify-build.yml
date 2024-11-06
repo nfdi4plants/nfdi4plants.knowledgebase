@@ -1,0 +1,27 @@
+name: PR Build Check 
+
+on:
+  pull_request:
+    branches:
+      - main
+  # Allows you to run this workflow manually from the Actions tab on GitHub.
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'  # Specify your Node.js version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Astro build check
+        run: npm run build
