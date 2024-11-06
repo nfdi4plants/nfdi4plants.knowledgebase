@@ -31,7 +31,7 @@ Here's a few tips to support your project management:
 
 - You can use the [wiki associated to the ARC](/datahub/datahub-arc-wiki) to collect meeting minutes with your collaborators
 - You can use the [ARC's issue board](/datahub/datahub-arc-panel) to coordinate tasks between collaborators, team members, data analysts and others involved
-- You can use your established system of identifiers (e.g. for projects, samples) in [ISA metadata](/core-concepts/isa-file-types)
+- You can use your established system of identifiers (e.g. for projects, samples) in [ISA metadata](/core-concepts/isa)
 - You can also keep naming your ARCs with the same way you are used to name your project folders
 
 ### Streamlined data exchange
@@ -68,7 +68,7 @@ Different people are involved in the projects passing your platform. From team m
 
 - The [DataHUB](/datahub/) facilitates access management across institute boarders
 - ARCs document [changes and contributions](/fundamentals/version-control-git)
-- The [ISA metadata model](/core-concepts/isa-file-types) allows to associate contributors with investigations and studies. List your team members to ensure proper credit for their contributions
+- The [ISA metadata model](/core-concepts/isa) allows to associate contributors with investigations and studies. List your team members to ensure proper credit for their contributions
 
 ### Routine computations
 
