@@ -123,6 +123,20 @@ Please explore the sections on the left to find guides on:
 ## Article cross-references
 
 Avoid relative paths when cross-referencing another knowledge base article.
-Instead, use references starting from the `docs` folder as root, e.g.
+Instead, use references starting from the `docs` folder as root and add `/nfdi4plants.knowledgebase/`, e.g.
 
-[wiki associated to the ARC](/datahub/datahub-arc-wiki)
+```md
+[wiki associated to the ARC](/nfdi4plants.knowledgebase/datahub/datahub-arc-wiki)
+```
+
+## Test-build locally
+
+On a fresh clone of this repository, run 
+
+1. `npm install` to install the latest package dependencies
+2. `npm run dev` to render the knowledge base in watch mode
+
+### Check for dead links
+
+Especially when editing / adding / moving files, make sure to test build the site via `npm run build`. 
+This validates all links (cross-references between articles and image links). 

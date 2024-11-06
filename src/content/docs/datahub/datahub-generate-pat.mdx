@@ -9,18 +9,13 @@ sidebar:
 
 import { Steps } from '@astrojs/starlight/components';
 
-:::note[About this guide]
 This guide shows you how to generate a Personal Access Token (PAT). The PAT can be used to authenticate your local machine to communicate with your DataHUB account. 
-:::
-
-:::note
-You need to do this only once per machine (unless you specify an expiration date)
-:::
 
 <Steps>
 
 1. Sign in to the [DataHUB](https://git.nfdi4plants.org/)
-2. Go to the [Access Tokens](https://git.nfdi4plants.org/-/profile/personal_access_tokens) settings
+2. Navigate to the [user settings](/nfdi4plants.knowledgebase/datahub/datahub-user-settings)
+2. Go to the [Access Tokens](https://git.nfdi4plants.org/-/user_settings/personal_access_tokens) settings
 3. Fill all required information:
    - Token name: e.g. the name of the machine to be linked ("Office PC") (1)
    - Expiration date (optional) (2)
@@ -34,3 +29,7 @@ You need to do this only once per machine (unless you specify an expiration date
     ![](@images/datahub/datahub-access-token02.drawio.png)
 
 </Steps>
+
+:::note
+You need to do this only once per machine (unless you specify an expiration date)
+:::
