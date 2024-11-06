@@ -39,7 +39,7 @@ Here's a few tips to support your project management:
 During project collaboration a lot of information including metadata is exchanged.
 Here's an idea what your data flow could look like with the ARC:
 
-![](@images/guides/enablingPlatform-FileShare.drawio.png)
+![](@images/guides/enablingplatform-fileshare.drawio.png)
 
 1. Data exchange between collaborator and platform occurs through the ARC shared via the DataHUB. Depending on the phase of the project this involves different data and information.  
    (1a) The collaborator primarily describes the investigation's goal and study design, annotates the submitted samples with metadata and adds associated protocols. Once available the collaborator receives assayed data and relevant information.  
