@@ -7,32 +7,14 @@ authors:
 
 import { Steps } from '@astrojs/starlight/components';
 
-:::note[About this guide]
 In this guide we introduce how to access ARCs from Galaxy. To access the data of an ARC, you must first provide a DataHUB access token in Galaxy, which is used to authenticate Galaxy to DataHUB. To create a new token and add it to [Galaxy](https://usegalaxy.eu/), you can proceed as described below.
-:::
 
-:::tip[Before we can start]
-- You have created an ARC before using the [ARC Commander](/nfdi4plants.knowledgebase/arc-commander) or [ARCitect](/nfdi4plants.knowledgebase/arcitect)  
-- You have a [DataPLANT](https://register.nfdi4plants.org) account
-:::
 
 ## Create an access token in DataHUB
 
-{/* TODO : duplicated guide on PAT */}
+import DataHubPat from '../datahub/datahub-generate-pat.mdx'
 
-![image](@images/guides/arcfs/arcfs-kb-01-blurred-marked.png)
-![image](@images/guides/arcfs/arcfs-kb-02-blurred-marked.png)
-
-<Steps>
-
-1. Open the dropdown menu for your personal settings.
-2. Open the "Preferences" menu.
-3. Change to tab "Access Tokens".
-4. Choose a name for the new token.
-5. Set a expiration date.
-6. Select the authorization scope. 
-
-</Steps>
+<DataHubPat />
 
 :::tip
 Only the scopes "api" (for write access) and "read_api" (for read access) are relevant for ARCfs.
