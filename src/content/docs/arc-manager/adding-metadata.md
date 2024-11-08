@@ -1,26 +1,24 @@
 ---
 title: Adding Metadata
+sidebar:
+  order: 7
 authors:
   - lucas-beuter
-lastUpdated: 2024-08-27
+  - alexander-kirbis
+lastUpdated: 2024-11-08
 ---
 
 Two different types of metadata are stored in ISA files: administrative and experimental metadata. Administrative metadata covers IDs, descriptions, contact details, connected publications and more, while experimental metadata is describing experimental procedures and similar processes. ISA files are normally stored in an Excel format (.xlsx) and need to adhere to the [ISA-XLSX specification](https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md).
 
 A typical ISA file has the administrative metadata recorded in the first sheet of the Excel file (top-level metadata sheet). In addition, every _isa.study.xlsx_ and _isa.assay.xlsx_ file should have at least one more sheet where the experimental metadata is annotated (annotation table sheets), that is maintained through Swate. Both types of metadata can be edited with the ARCmanager. You can find more information about ISA file types and metadata sheets in the corresponding [knowledge base article](/nfdi4plants.knowledgebase/core-concepts/isa) and the [ISA-XLSX specification](https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md).
 
-#### Contents:
-
-- [Administrative Metadata (top-level metadata sheets)](#administrative-metadata-top-level-metadata-sheets)
-- [Experimental Metadata (annotation table sheets)](#experimental-metadata-annotation-table-sheets)
-
-### Administrative Metadata (top-level metadata sheets)
+## Administrative Metadata (top-level metadata sheets)
 
 When you left-click on an ISA file, the right side will open up and a form to edit administrative metadata is shown:
 
 ---
 
-![](@images/arc-manager/arc-manager-addingmetadata-admin-meta.png)
+![](@images/arc-manager/metadata/01-view-admin-data.png)
 
 **Fig. 1** Default view of administrative metadata inside _isa.investigation.xlsx_ files displayed in the ARCmanager web application. (1) General information, (2) related publication information, (3) contact details of associated persons.
 
@@ -38,7 +36,7 @@ In assay metadata files (_isa.assay.xlsx_), it contains information about measur
 
 ---
 
-![](@images/arc-manager/arc-manager-addingmetadata-assay-meta.png)
+![](@images/arc-manager/metadata/02-view-metadata-sheet.png)
 
 **Fig. 2** Default view of top-level metadata sheet inside an _isa.assay.xlsx_ file displayed in ARCmanager.
 
@@ -54,19 +52,13 @@ You can fill out the metadata fields gradually as the research progresses. Make 
 
 When you are done with your changes, just click the `SAVE` button in the bottom to save your data and send it to the respective DataHUB.
 
-<div style="text-align: right">
-
-[Back to table of contents](#contents)
-
-</div>
-
-#### Alternative view
+### Alternative view
 
 To edit additional metadata entries not listed in the main view, you can click the checkmark on the top right named `alternative` to open up a different view of the data stored inside.
 
 ---
 
-![](@images/arc-manager/arc-manager-addingmetadata-admin-alt.png)
+![](@images/arc-manager/metadata/03-alternative-view.png)
 
 **Fig. 3** Alternative view of ISA file contents which can be used to edit additional fields not displayed in the default view. (1) General information, (2) related publication information, (3) contact details of associated persons.
 
@@ -78,7 +70,7 @@ To edit a metadata field, select it with a left-click. This will open a new inpu
 
 ---
 
-![](@images/arc-manager/arc-manager-addingmetadata-alt-edit.png)
+![](@images/arc-manager/metadata/04-alt-view-edit.png)
 
 **Fig. 4** Input field to add data to ISA files using the alternative view. The `+` button adds additional fields, while `SAVE` is used to apply changes to the ISA file.
 
@@ -90,22 +82,16 @@ When you are done filling out the data, click the `SAVE` button below to add the
 
 Every time you click `SAVE`, the data is written into the excel file and changes are synchronized with your ARC on the corresponding DataHUB.
 
-<div style="text-align: right">
+## Experimental Metadata (annotation table sheets)
 
-[Back to table of contents](#contents)
-
-</div>
-
-### Experimental Metadata (annotation table sheets)
-
-#### Add new annotation table sheets
+### Add new annotation table sheets
 
 When you want to edit/create experimental metadata, you need to go into either an assay or a study folder.
 Inside you have your ISA file as usual, but with the additional fields called `ADD SHEET` and `EDIT SHEET`.
 
 ---
 
-![](@images/arc-manager/arc-manager-addingmetadata-exp-select.png)
+![](@images/arc-manager/metadata/05-edit-sheets.png)
 
 **Fig. 5** Buttons to add additional metadata sheets to ISA files and to access editing of existing sheets.
 
@@ -113,19 +99,13 @@ Inside you have your ISA file as usual, but with the additional fields called `A
 
 If you already have some annotation sheets in your study/assay you can click `EDIT SHEET` and select the sheet from the list on the right side.
 
-<div style="text-align: right">
-
-[Back to table of contents](#contents)
-
-</div>
-
-#### Import annotation table templates
+### Import annotation table templates
 
 To add additional metadata sheets, click `ADD SHEET`. This will open up a list of templates on the right side.
 
 ---
 
-![](@images/arc-manager/arc-manager-addingmetadata-exp-template.png" width="300)
+![](@images/arc-manager/metadata/06-list-templates.png)
 
 **Fig. 6** List of existing templates for annotation table sheets. Clicking on the template displays additional information. The `IMPORT` button loads the selected template into the metadata sheet.
 
@@ -137,19 +117,13 @@ Every Template is listed with its title, the organisation where its originating 
 
 If you found your desired template, click on the `IMPORT` button after expand it.
 
-<div style="text-align: right">
-
-[Back to table of contents](#contents)
-
-</div>
-
-#### Edit annotation table sheets
+### Edit annotation table sheets
 
 After importing a template, you will see a table similar to the picture below. In this case it's the template "RNA extraction (DataPLANT) 1.2.1", extended to eight rows.
 
 ---
 
-![](@images/arc-manager/arc-manager-addingmetadata-exp-swate-view.png)
+![](@images/arc-manager/metadata/07-swate-view.png)
 
 **Fig. 7** Metadata sheet editing view inside ARCmanager.
 
@@ -176,17 +150,11 @@ Clicking `Custom Column` will open up a different input field above with which y
 
 9. **Template Name:** The name of the template currently in use is displayed next to the sheet name field.
 
-<div style="text-align: right">
-
-[Back to table of contents](#contents)
-
-</div>
-
-#### Ontology term search
+### Ontology term search
 
 ---
 
-![](@images/arc-manager/arc-manager-addingmetadata-exp-term-srch.png)
+![](@images/arc-manager/metadata/08-term-search.png)
 
 **Fig. 8** Ontology term look-up functions of the annotation table editing view in ARCmanager. (1) Access ontology term search function, (2) Get ontology term suggestions, (3) Search bar for finding specific terms.
 
@@ -198,7 +166,7 @@ Clicking the `GET SUGGESTIONS` button (Fig. 8, 2) will display a list of terms o
 
 ---
 
-![](@images/arc-manager/arc-manager-addingmetadata-exp-term-selct.png)
+![](@images/arc-manager/metadata/09-suggested-terms.png)
 
 **Fig. 9** List of suggested ontology terms related to "library strategy". (1) Ontology term and link to the corresponding ontology entry, (2) drop-down menu to choose annotation table row where the term will be added, (3) button to insert the selected term into the table.
 
@@ -212,7 +180,7 @@ By default, the term will be inserted into the first row of the corresponding co
 
 ---
 
-![](@images/arc-manager/arc-manager-addingmetadata-exp-term-insrtd.png)
+![](@images/arc-manager/metadata/10-hide-terms.png)
 
 **Fig. 10** Additional columns with ontology term information will be displayed when unchecking the "Hide Terms" box.
 
@@ -220,13 +188,7 @@ By default, the term will be inserted into the first row of the corresponding co
 
 Every cell of the annotation table sheets can also be filled out manually, instead of using the integrated ontology term search function. To do so, click inside a cell and start typing.
 
-<div style="text-align: right">
-
-[Back to table of contents](#contents)
-
-</div>
-
-#### Adding new building blocks to annotation tables
+### Adding new building blocks to annotation tables
 
 The first and last column of each annotation table sheet must be "Input" and "Output" columns, respectively. These columns should contain distinct descriptors of entities that served as an input and output of the workflow described in the annotation table sheet.
 
@@ -234,7 +196,7 @@ By default, input columns have the type "Source Name" and output columns have th
 
 ---
 
-![](@images/arc-manager/arc-manager-addingmetadata-exp-bb-add.png)
+![](@images/arc-manager/metadata/11-building-blocks.png)
 
 **Fig. 11** Interface for adding new building blocks to annotation table sheets. (1) Drop-down menu for selection of column type, (2) Ontology term search bar, (3) Check-box for adding a unit to a building block and search bar for unit terms.
 
@@ -251,9 +213,3 @@ If the new building block will contain numeric values that have a unit, check th
 Search results will be displayed on the right side and can be applied to the annotation table with the `SELECT` button. When adding a unit to a building block, make sure to select a building block term first, and afterwards search for a unit and apply it to the annotation table.
 
 When you are done with editing the annotation table, name your sheet and click the `SAVE` button. This will create a new sheet with the annotation table in the ISA Excel file or update an existing one if you were editing. The changes will be directly applied to the remote copy of your ARC on the corresponding DataHUB.
-
-<div style="text-align: right">
-
-[Back to table of contents](#contents)
-
-</div>

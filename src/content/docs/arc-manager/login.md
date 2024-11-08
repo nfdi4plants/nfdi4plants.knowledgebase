@@ -1,22 +1,25 @@
 ---
 title: Connect to your DataHUB
+sidebar:
+  order: 2
 authors:
   - ursula-eberhardt
   - lucas-beuter
-lastUpdated: 2024-08-28
+  - alexander-kirbis
+lastUpdated: 2024-11-08
 ---
 
-To be able to use the [ARCmanager](https://nfdi4plants.de/arcmanager/app/index.html), you need to have registered to one of the DataHUBs. Information on the different DataHUBs can be found [here](https://www.nfdi4plants.de/content/datahub.html).
+To be able to use the [ARCmanager](https://nfdi4plants.de/arcmanager/app/index.html), you need to have registered to one of the DataHUBs. Information on the different DataHUBs can be found [here](https://nfdi4plants.github.io/arc-data-hub/).
 
 Clicking on the the `DataHUB` button (Fig. 1) brings you to the drop down menu of available DataHUBs. The currently selected DataHUB is shaded in grey (Fig. 2).
 
 ---
 
-![](@images/arc-manager/arc-manager-login-1a.png)
+![](@images/arc-manager/login/01-drop-down.png)
 
 **Fig. 1** Open the drop-down menu to select a DataHUB.
 
-![](@images/arc-manager/arc-manager-login-1b.png)
+![](@images/arc-manager/login/02-list-hubs.png)
 
 **Fig. 2** List of available DataHUBs.
 
@@ -30,7 +33,7 @@ After selecting a DataHUB that you want to access, click on the `Login` button t
 
 ---
 
-![](@images/arc-manager/arc-manager-login-2.png)
+![](@images/arc-manager/login/03-login.png)
 
 **Fig. 3** Start login process for the selected DataHUB.
 
@@ -40,7 +43,7 @@ If you are using the ARCmanager for the first time, you will see a window (Fig. 
 
 ---
 
-![](@images/arc-manager/arc-manager-login-2b.png)
+![](@images/arc-manager/login/04-authorize.png)
 
 **Fig. 4** Authorization screen for ARCmanager to use a DataHUB user account.
 
@@ -52,7 +55,7 @@ Different authentication options can be used for the same DataHUB user, if the l
 
 ---
 
-![](@images/arc-manager/arc-manager-login-3.png)
+![](@images/arc-manager/login/05-login-options.png)
 
 **Fig. 5** Login options.
 
@@ -62,7 +65,7 @@ After successful login, you see the former lilac `Login` button change to a pink
 
 ---
 
-![](@images/arc-manager/arc-manager-login-4.png)
+![](@images/arc-manager/login/06-welcome-screen.png)
 
 **Fig. 6** Welcome screen after login. The presence of the pink `Logout` button is a useful indicator for showing that you are logged in.
 
@@ -76,7 +79,7 @@ When the timer reaches 0:00:00, your current session has expired. To initialize 
 
 ---
 
-![](@images/arc-manager/arc-manager-sessiontimer.png)
+![](@images/arc-manager/login/07-session-timer.png)
 
 **Fig. 8** Session timer
 
