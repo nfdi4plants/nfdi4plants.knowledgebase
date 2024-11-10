@@ -125,7 +125,7 @@ import IMG from "@images/start-here/arc-prototypic-assay-modular1.svg"
     <Steps>
 
     1. Click on the assay's name (`SugarMeasurement`) in the file tree.
-    2. At the bottom of the right panel, click on the `+` right next to the `Metadata` sheet to add one sheet for each lab process.
+    2. At the bottom of the right panel, click on the `+` right next to the `Assay` sheet to add one sheet for each lab process.
         
         <ViolaSays>
             I add two tables: one for "SugarExtraction" and one for "SugarMeasurement"
@@ -222,17 +222,6 @@ Instead of adding each individual building block to the table, we can use a gene
 
 We follow the same steps to fill the **Sugar Measurement** table.
 
-{/* 
-- <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> technical replicate
-  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> 1,2,3,...
-- <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> sample volume 
-  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> 10 `microliter`
-- <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> buffer volume 
-  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> 190 `microliter`
-- <span style="display: inline-block;width: 1em;height: 1em;background-color: #FFC000;"></span> cycle count
-  - <span style="display: inline-block;width: 1em;height: 1em;background-color: #2D3E50;"></span> 5
- */}
-
 <Card icon="pen" title="ARCitect">
     <Steps>
     1. Select the "SugarMeasurement" table.
@@ -243,7 +232,19 @@ We follow the same steps to fill the **Sugar Measurement** table.
         - Parameter [`sample volume`] of 10 `microliter`
         - Parameter [`buffer volume`] of 190 `microliter`
         - Parameter [`cycle count`] of 5
-    5. Use the `File Picker` feature to import the results of sugar measurement (`sugar_result.csv`) into `Output [Data]` 
+    5. Use the `File Picker` feature to import the results of sugar measurement (`sugar_result.csv`) into `Output [Data]`
+
+
+        Input [Sample Name]	| Parameter [technical replicate] | Parameter [...] | Output [Data] 
+        ---                 | ------------------------------- | --------------- | --- 
+        Cold1_sugar-ext     | 1                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+        Cold2_sugar-ext     | 2                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+        Cold3_sugar-ext     | 3                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+        RT1_sugar-ext       | 1                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+        RT2_sugar-ext       | 2                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+        RT3_sugar-ext       | 3                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+
+
     </Steps>
 </Card>
 

@@ -1,14 +1,10 @@
 ---
 title: Add a datamap
 sidebar:
-  order: 6
-  badge:
-    text: wip
-    variant: caution
+  order: 5
 authors:
   - lukas-weil
   - dominik-brilhaus
-draft: true
 ---
 
 import ViolaSays from '@components/ViolaSays.astro'
@@ -27,29 +23,65 @@ Using fragment selectors the provenence from the laboratory sample to the data p
 
 ![](@images/start-here/arc-prototypic-datamap-fragment-selectors1.svg)
 
-## DataMAP: Annotation for the fragment selectors
-
-![](@images/start-here/arc-prototypic-datamap-fragment-selectors2.svg)
-
-
 <Card icon="pen" title="ARCitect">
   <Steps>
   1. In the "SugarMeasurement" assay, open the "Sugar Measurement" table
   2. On top of the annotation table, open the "Data Annotator" tool
   3. Click `Choose a file`, find and select `sugar_result.csv` and click `Open`
   4. On top switch from "autodetect" to "output"
-  5. Select only the 6(!) Data columns (`RT_M1`, `RT_M2`, `RT_M3`, `Cold_M1`, `Cold_M2`, `Cold_M3`), as these are the direct results of the 6 samples
+  5. Select only the 6(!) Data columns (`RT_M1`, `RT_M2`, `RT_M3`, `Cold_M1`, `Cold_M2`, `Cold_M3`). These are the direct results of the 6 samples.
   6. Click `Submit`
-  7. Go back to assay metadata and add Datamap
-  8. In the datamap (table sheet at the bottom)
-      - Open "Data Annotator" tool again and from the same file select all 7 columns
-      - First column:
-          - Explication = `molecule name`
-          - Object type = `string`
-      - Other columns:
-          - Explication = `molecule count`
-          - Unit = `millimole per kilogram`
-          - Object type = `float`
+
+      :::note
+      This links the **exact columns** of the restult table to the biological samples
+      :::
+
+      Input [Sample Name] | Parameter [...] | Output [Data]          | Data Format | Data Selector Format
+      --------------------|-----------------|----------------------- |------------ |---------------------
+      Cold1_sugar-ext     | ...             | sugar_result.csv#col=2 | text/csv    | https://datatracker.ietf.org/doc/html/rfc7111
+      Cold2_sugar-ext     | ...             | sugar_result.csv#col=3 | text/csv    | https://datatracker.ietf.org/doc/html/rfc7111
+      Cold3_sugar-ext     | ...             | sugar_result.csv#col=4 | text/csv    | https://datatracker.ietf.org/doc/html/rfc7111
+      RT1_sugar-ext       | ...             | sugar_result.csv#col=5 | text/csv    | https://datatracker.ietf.org/doc/html/rfc7111
+      RT2_sugar-ext       | ...             | sugar_result.csv#col=6 | text/csv    | https://datatracker.ietf.org/doc/html/rfc7111
+      RT3_sugar-ext       | ...             | sugar_result.csv#col=7 | text/csv    | https://datatracker.ietf.org/doc/html/rfc7111
+
+
+  </Steps>
+</Card>
+
+## DataMAP: Annotation for the fragment selectors
+
+A datamap allows to add structured annotation to data in a similar manner as with biological materials.
+
+![](@images/start-here/arc-prototypic-datamap-fragment-selectors2.svg)
+
+<Card icon="pen" title="ARCitect">
+  <Steps>
+
+  7. Go back to assay metadata (the sheet named `Assay`)
+  8. In the `Datamap` section click `Add Datamap` to add a sheet `Data Map`
+  9. Open the `Data Map` table sheet at the bottom
+  10. Open the "Data Annotator" tool and select the same file (`sugar_result.csv`) as before.
+  11. Click on `Open Annotator` and this time **select all 7 columns** and click `Submit`
+  12. From the same file select all 7 columns
+
+
+      <ViolaSays>
+        The first column of my result table "sugar_result.csv" contains the name of the measured sugar, that is the `molecule name`. 
+        The other six columns contain the measured data: `molecule count` in mmol / kg. 
+      </ViolaSays>
+
+  13. Add the following annotation to describe what the columns in "sugar_result.csv" 
+      
+      Data	                  | …	  | Explication	    | Unit	                  | Object Type
+      ----------------------- | --- | --------------- | ----------------------- | -----------
+      sugar_result.csv#col=1	| …	  | molecule name		|                         | string
+      sugar_result.csv#col=2	| …	  | molecule count	| Millimole per Kilogram	| Float
+      sugar_result.csv#col=3	| …	  | molecule count	| Millimole per Kilogram	| Float
+      sugar_result.csv#col=4	| …	  | molecule count	| Millimole per Kilogram	| Float
+      sugar_result.csv#col=5	| …	  | molecule count	| Millimole per Kilogram	| Float
+      sugar_result.csv#col=6	| …	  | molecule count	| Millimole per Kilogram	| Float
+      sugar_result.csv#col=7	| …	  | molecule count	| Millimole per Kilogram	| Float
 
   </Steps>
 </Card>
