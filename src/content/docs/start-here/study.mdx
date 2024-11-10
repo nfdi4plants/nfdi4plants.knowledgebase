@@ -123,7 +123,7 @@ Let us start by adding the samples to the study.
   1. Click on the study's name (`AthalianaColdStress`) in the file tree.
   2. At the bottom of the right panel, click on the <btn>+</btn> right next to the `Metadata` sheet.
   3. This adds a new table sheet.
-  4. Click on the **"Add Building Block"** button next to "Or start from scratch!".
+  4. Click on the **"Add Building Block"** button next to **"Or start from scratch!"** option.
   5. From the dropdown menu in the `Add Building Block` widget:
       - select `Input` -> `Source Name` and click `Add Column`
       - select `Output` -> `Sample Name` and click `Add Column`
@@ -171,26 +171,25 @@ We reference the protocol in the annotation table to say:
   2. From the ARC select the file `protocols/growth_protocol.md` and click `Open`.
   1. Select a cell in the `Protocol REF` column and click `Insert file names`.
 
-      `Input[Source Name]` | `ProtocolREF` | `Output[Sample Name]`
+      `Input[Source Name]` |  `Output[Sample Name]` | `ProtocolREF`
       -------------------- |  --------------------   |  --------------------
-      Cold1                |  protocols/growth_protocol.md | Cold1_leaf
-      Cold2                |                               | Cold2_leaf
-      Cold3                |                               | Cold3_leaf
-      RT1                  |                               | RT1_leaf
-      RT2                  |                               | RT2_leaf
-      RT3                  |                               | RT3_leaf
+      Cold1                |  Cold1_leaf  | protocols/growth_protocol.md 
+      Cold2                |  Cold2_leaf  |
+      Cold3                |  Cold3_leaf  |
+      RT1                  |  RT1_leaf  |
+      RT2                  |  RT2_leaf  |
+      RT3                  |  RT3_leaf  |
  
   1. To fill the complete column with the same value, right-click on a cell and select `Fill Column`. 
 
-      `Input[Source Name]` | `ProtocolREF` | `Output[Sample Name]`
+      `Input[Source Name]` |  `Output[Sample Name]` | `ProtocolREF`
       -------------------- |  --------------------   |  --------------------
-      Cold1                |  protocols/growth_protocol.md | Cold1_leaf
-      Cold2                |  protocols/growth_protocol.md | Cold2_leaf
-      Cold3                |  protocols/growth_protocol.md | Cold3_leaf
-      RT1                  |  protocols/growth_protocol.md | RT1_leaf
-      RT2                  |  protocols/growth_protocol.md | RT2_leaf
-      RT3                  |  protocols/growth_protocol.md | RT3_leaf
- 
+      Cold1                |  Cold1_leaf  | protocols/growth_protocol.md 
+      Cold2                |  Cold2_leaf  | protocols/growth_protocol.md 
+      Cold3                |  Cold3_leaf  | protocols/growth_protocol.md 
+      RT1                  |  RT1_leaf  | protocols/growth_protocol.md 
+      RT2                  |  RT2_leaf  | protocols/growth_protocol.md 
+      RT3                  |  RT3_leaf  | protocols/growth_protocol.md 
    </Steps>
 
 </Card>
@@ -283,7 +282,7 @@ Then we need to put this information into context:
   <Steps>
 
   1. On top of the annotation table, open the `Add Building Block` widget.
-  1. From the dropdown menu select `Characteristic`. 
+  1. From the dropdown menu select `Characteristic`. The order of blocks shown below may not correspond to what you see in ARCitect but we will learn how to rearrange columns later.
 
       <ViolaSays>
         I worked on *Arabidopsis thaliana* plants
@@ -348,9 +347,9 @@ In this case, you can use a `Factor` building block. Factors are used to describ
 <Card icon="pen" title="ARCitect">
   <Steps>       
 
-    1. In the *Building Blocks* widget, select *Factor*, search for `growth temperature` and select the term with id `PECO:0007383`.       
+    1. In the *Building Blocks* widget, select *Factor*, search for `growth temperature`, if the term does not appear in the list, you can think of other names that match the *Factor*, in this case we will simply not select anything.       
     2. Check the box for *Unit* and search for `degree celsius` in the adjacent search bar.
-    3. Select `UO:0000160`.
+    3. Select `UO:0000027`.
     4. Click `Add Column`.
     5. In the annotation table, add "25" vs. "6" degree celsius to the respective samples.
 
