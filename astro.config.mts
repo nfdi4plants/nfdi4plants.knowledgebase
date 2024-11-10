@@ -106,6 +106,11 @@ export default defineConfig({
           autogenerate: { directory: 'swate' },
         },
         {
+          label: 'ARCManager',
+          collapsed: true,
+          autogenerate: { directory: 'arc-manager' },
+        },
+        {
           label: 'Vault',
           // Collapse the group by default.
           collapsed: true,
