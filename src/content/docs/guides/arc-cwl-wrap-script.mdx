@@ -1,0 +1,132 @@
+---
+title: Wrap a script with CWL
+lastUpdated: 2024-11-10
+authors:
+  - dominik-brilhaus
+sidebar:
+  order: 4
+  badge:
+    text: WIP
+    variant: caution
+draft: true
+---
+
+import { FileTree } from '@astrojs/starlight/components';
+import { Steps } from '@astrojs/starlight/components';
+
+:::note
+This builds on the ARC created in the [Start here](/nfdi4plants.knowledgebase/start-here/index.mdx)
+:::
+
+<Steps>
+
+1. Add a folder "heatmap" to `workflows`
+2. Add a folder "heatmap-run" to `runs` 
+
+</Steps>
+
+## The script
+
+`heatmap.py`
+
+```python
+import pandas as pd
+import plotly.express as px
+import sys
+
+# Read command line arguments
+MeasurementTableCSV=sys.argv[1]
+FigureFileName=sys.argv[2]
+
+# Read the CSV file
+data = pd.read_csv(MeasurementTableCSV, index_col=0, on_bad_lines='skip')
+
+# Create a heatmap
+fig = px.imshow(data, 
+                labels=dict(x="Columns", y="Rows", color="Value"),
+                x=data.columns, 
+                y=data.index)
+
+# Save heatmap to file
+fig.write_image(FigureFileName + ".svg")
+```
+
+
+## The workflow file
+
+`workflow.cwl`: 
+
+```yaml
+#!/usr/bin/env cwl-runner
+
+cwlVersion: v1.2
+class: CommandLineTool
+requirements:
+  - class: InitialWorkDirRequirement
+    listing:
+      - entryname: heatmap.py
+        entry:
+          $include: heatmap.py
+  - class: NetworkAccess
+    networkAccess: true
+baseCommand: [python3, heatmap.py]
+inputs:
+  MeasurementTableCSV:
+    type: File
+    inputBinding:
+      position: 1
+  FigureFileName:
+    type: string
+    inputBinding:
+      position: 2
+
+outputs:
+  output:
+    type: File
+    outputBinding:
+      glob: "*.svg"
+```
+
+## The job file
+
+`job.yml`:
+
+```yaml
+MeasurementTableCSV:
+    class: File
+    path: ../../assays/SugarMeasurement/dataset/sugar_result.csv
+FigureFileName: heatmap
+```
+
+
+## Isolate run parameters and workflow
+
+<Steps>
+
+1. Add the `workflow.cwl` to `workflows/heatmap`
+1. Add the `heatmap.py` to `workflows/heatmap`
+2. Add the `job.yml` to `runs/heatmap-run`
+
+</Steps>
+
+<FileTree>
+- assays
+  - SugarMeasurement
+    - dataset
+      - **sugar_result.csv**
+    - ...
+- isa.investigation.xlsx
+- runs
+    - heatmap-run
+        - **job.yml**
+- studies
+- ...
+- workflows
+  - heatmap
+    - **heatmap.py**
+    - **workflow.cwl**
+</FileTree>
+
+
+## Execute the run
+
