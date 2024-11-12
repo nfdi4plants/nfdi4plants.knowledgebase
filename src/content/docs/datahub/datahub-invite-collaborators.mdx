@@ -3,7 +3,9 @@ title: Inviting collaborators
 authors: 
   - cristina-martins-rodrigues
   - dominik-brilhaus
-lastUpdated: 2023-06-14
+lastUpdated: 2024-11-12
+sidebar:
+  order: 5.5
 ---
 
 import { Steps } from '@astrojs/starlight/components';
@@ -16,6 +18,9 @@ In this guide we show you how to invite lab colleagues or project partners to yo
 - You have a [DataPLANT account](https://register.nfdi4plants.org)
 - You have created an ARC
 :::
+
+import MemberSelect from "@images/datahub/datahub-members-seq5.png"
+import MemberRole from "@images/datahub/datahub-members-seq6.png"
 
 <Steps>
 
@@ -35,14 +40,13 @@ In this guide we show you how to invite lab colleagues or project partners to yo
 
 5. Search for potential collaborators
 
-    ![](@images/datahub/datahub-members-seq5.png)
+   <img src={MemberSelect.src} style="width:55%;display: block; margin: auto" /> 
 
 6. **Select a role** and click <kbd>Invite</kbd>
 
-    ![](@images/datahub/datahub-members-seq6.png)
+   <img src={MemberRole.src} style="width:55%;display: block; margin: auto" />
 
 </Steps>
-
 
 :::note
 For details about the roles, see [Roles and permissions](/nfdi4plants.knowledgebase/datahub/datahub-working-together#roles-and-permissions)

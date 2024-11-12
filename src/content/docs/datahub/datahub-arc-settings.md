@@ -5,7 +5,7 @@ authors:
   - dominik-brilhaus
   - viktoria-petrova
 sidebar:
-  order: 5
+  order: 4.5
 ---
 
 To open your ARC's settings click on *Settings* in the sidebar of your [ARC panel](/nfdi4plants.knowledgebase/datahub/datahub-arc-panel).
