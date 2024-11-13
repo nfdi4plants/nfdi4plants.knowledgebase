@@ -1,11 +1,11 @@
 name: Add article
-description: Add an article to the DataPLANT Knowledge Base
+description: Add an article. This is just a low-barrier entrypoint. Please consider opening a PR for contributions.
 title: "[Add article]: "
 body:
   - type: input
     id: title
     attributes:
-      label: Article Title
+      label: Article title
     validations:
       required: true
   - type: input
