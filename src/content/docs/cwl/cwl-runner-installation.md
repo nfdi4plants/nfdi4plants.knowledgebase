@@ -3,9 +3,9 @@ title: "CWL Runner Installation"
 lastUpdated: 2024-01-18
 authors:
   - caro-ott
+sidebar:
+  order: 2
 ---
-
-# CWL runner installation
 
 The recommended CWL runner is [cwltool](https://github.com/common-workflow-language/cwltool), the 
 reference implementation for the CWL standards.
