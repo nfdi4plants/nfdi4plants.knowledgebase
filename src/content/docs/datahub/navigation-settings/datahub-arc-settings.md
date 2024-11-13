@@ -8,7 +8,7 @@ sidebar:
   order: 4.5
 ---
 
-To open your ARC's settings click on *Settings* in the sidebar of your [ARC panel](/nfdi4plants.knowledgebase/datahub/datahub-arc-panel).
+To open your ARC's settings click on *Settings* in the sidebar of your [ARC panel](/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-arc-panel).
 
 ![](@images/datahub/datahub-arc-settings.drawio.png)
 

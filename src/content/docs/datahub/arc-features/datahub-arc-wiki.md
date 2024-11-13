@@ -14,4 +14,4 @@ This is particularly useful to keep the ARC clean of files that are not consider
 
 ![](@images/datahub/datahub-wiki.png)
 
-To open your ARC's wiki click on **Plan** and then **Wiki** in the sidebar of your [ARC panel](/nfdi4plants.knowledgebase/datahub/datahub-arc-panel).
+To open your ARC's wiki click on **Plan** and then **Wiki** in the sidebar of your [ARC panel](/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-arc-panel).

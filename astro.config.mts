@@ -92,7 +92,7 @@ export default defineConfig({
           collapsed: true,
           // autogenerate: { directory: 'datahub' },
           items:[
-            'datahub/index',           
+            'datahub',           
             {
               label: 'DataPLANT Account',
               collapsed: false,
