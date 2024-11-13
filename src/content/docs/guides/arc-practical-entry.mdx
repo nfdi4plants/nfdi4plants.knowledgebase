@@ -1,0 +1,40 @@
+---
+title: Practical guide into the ARC ecosystem
+lastUpdated: 2024-11-13
+authors:
+ - dominik-brilhaus
+draft: true
+hidden: true
+pagefind: false
+---
+
+In this guide we collect recommendations and considerations on creating an ARC based on your current project and datasets
+
+## A "final" ARC does not exist – Immutable, yet evolving!
+
+Filling and structuring an ARC is a gradual process
+- You (currently) won't win an award for the best ARC. And while there may be some ARCs that are more intuitive, helpful, insightful or reusable than others, at the very first they should be of help to you. Not being able to produce the perfect ARC right away should not keep you from creating an ARC at all.
+- reserachers have different affinities and priorities for what needs to be FAIR first and what can be polished later
+
+So, try to take it easy, when converting your project into an ARC
+
+1. At first you might want to just dump the files into your ARC
+  - One of the ARC's core-concepts is that "everything is a file". 
+  - Your daily work is probably a bunch of files and folders
+  - So why not just create an "empty" ARC to pack and decorate your files? 
+    - don't worry too much about where to put everything in the first place
+    - dump what you have into an "additional payload" folder inside the ARC
+  - Already by doing that, your files are version-controlled via git.
+  - If you now upload the ARC to the DataHUB, you also have a save copy. 
+  
+  :::tip
+  If you have large files (e.g. raw data). You can also dump them first anywhere. If you make sure they are properly Git LFS-tracked, it will be an easy task to later on move the LFS file pointers (rather than the actual large files). This can be done from anywhere.
+  :::
+2. Add a bit of metadata (e.g. about the project and the data creators) to your `investigation`. This makes it more sharable and citable right away. 
+2. Sketch your laboratory workflows
+  - One goal of the ARC is to be able to tell, which finding or result originated from which biological experiment. This would ultimately require to link the dataset files back to the individual sample. To do so, we essentially follow a path of *processes* with *inputs* and *outputs*. Some of the inputs and outputs want to be reused or reproduced, some of the processes want to be applied to other inputs. So before structuring your ARC for the existing dataset, it might help to sketch what was done in the lab. 
+2. Once you have a good overview and structure that suits your investigation, you can move your files into better places in `studies` and `assays`. Already at that stage, everyone will know where to find your raw data (`dataset`) and the steps you followed to create the data (`protocols`)
+3. Before breaking down ("parameterizing") your protocols or computational workflows too all detail into annotation tables, as a first step it already helps a lot to just connect your `studies` and `assays` via the `Input` and `Output` nodes. You can basically re-draw your sketch of lab workflows via tables. And then simply reference the existing free-text protocols (`Protocol REF`). 
+4. Once you decide to make the data more machine-readable and searchable, you can start to parameterize your protocols and fill out the `study` and  `assay` annotation tables.
+5. The same applies to your data analysis. No matter if it's based on clickable softwares or code and scripts. Keep it simple first: create virtual `assays` where you simply treat your data analysis as `protocols` and store the results in `dataset`
+6. If you want to make scripts more reusable and the data analysis reproducible, wrap them with CWL, use containers and other means of software dependency management
