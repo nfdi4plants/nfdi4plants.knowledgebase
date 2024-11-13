@@ -1,0 +1,53 @@
+name: Add article
+description: Add an article to the DataPLANT Knowledge Base
+title: "[Add article]: "
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Article Title
+    validations:
+      required: true
+  - type: input
+    id: section
+    attributes:
+      label: Section
+      description: Please name the section where this article should be added
+    validations:
+      required: false
+  - type: textarea
+    id: authors
+    attributes:
+      label: Name article authors
+      description: Please add the article author(s)
+      value: |
+          name: <FirstName LastName>
+          # Optionally add socials and affiliation
+          socials:
+          - icon: simple-icons:github
+            href: https://github.com/<AuthorGitHubAccount>
+          - icon: simple-icons:orcid
+            href: https://orcid.org/<AuthorORCID>
+          affiliation: <AuthorAffiliation>
+          # Optionally add author image. Can be uploaded via comment below this issue.
+          image: "@images/authors/<AuthorImage>"
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: Article content
+      value: |
+          # First level heading
+
+          ## Second level heading
+
+          <Steps>
+          1. Install ...
+          2. Open ...
+          2. Click ...
+          </Steps>          
+      render: markdown
+    validations:
+      required: true
