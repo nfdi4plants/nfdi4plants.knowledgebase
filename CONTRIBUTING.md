@@ -58,9 +58,7 @@ Recommended VSCode extensions:
 - Astro Build: https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode
 - MDX: https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx
 
-:::note
-The mdx files cannot be previewed in VSCode. Please use `npm run dev` as described above.
-:::
+💡 The mdx files cannot be previewed in VSCode. Please use `npm run dev` as described above.
 
 ## Where should I place my content?
 
