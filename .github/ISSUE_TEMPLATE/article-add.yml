@@ -2,7 +2,7 @@ name: Add article
 description: Add an article. This is just a low-barrier entrypoint. Please consider opening a PR for contributions.
 title: "[Add article]: "
 labels: 
-  - content
+  - new-content
 body:
   - type: input
     id: section
