@@ -2,7 +2,64 @@
 
 Your contribution to the DataPLANT Knowledge Base is highly appreciated. This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones. For changes and suggestions, feel free to open a GitHub issue or pull request.
 
-The DataPLANT Knowledge Base is built on [astro starlight](https://starlight.astro.build). Many features not covered here specifically, may be found in their docs.
+
+- [Setup](#setup)
+  - [Installation](#installation)
+  - [Create content and watch locally](#create-content-and-watch-locally)
+  - [Markdown](#markdown)
+  - [VSCode](#vscode)
+- [Where should I place my content?](#where-should-i-place-my-content)
+  - [Start here](#start-here)
+  - [Guides](#guides)
+  - [`<specific-tool>`](#specific-tool)
+  - [Core concepts](#core-concepts)
+- [Style Guide](#style-guide)
+  - [Use Starlight components](#use-starlight-components)
+  - [General file information](#general-file-information)
+  - [Authors](#authors)
+  - [Images](#images)
+  - [html](#html)
+  - [Tables](#tables)
+  - [Lists](#lists)
+  - [Article cross-references](#article-cross-references)
+
+## Setup
+
+The DataPLANT Knowledge Base is built on [astro starlight](https://starlight.astro.build). Many features not covered here specifically may be found in their docs.
+
+Starlight itself builds on [Astro](https://astro.build). Please check out [their website](https://docs.astro.build/en/install-and-setup/) for detailed installation instructions.
+
+### Installation
+
+1. Install [Node JS](https://nodejs.org/)
+2. Clone the Knowledge Base repository via `git clone https://github.com/nfdi4plants/nfdi4plants.knowledgebase`
+
+### Create content and watch locally
+
+1. Install package dependencies via `npm install`
+2. Start the knowledge base in watch mode via `npm run dev`
+
+#### Check for dead links
+
+Especially when moving or cross-linking files (other articles or images), make sure to test build the site via `npm run build`! This validates all links (cross-references between articles and image links).
+
+### Markdown
+
+All articles are written in markdown (.md or .mdx).
+See https://starlight.astro.build/guides/authoring-content/ for a short introduction.
+
+### VSCode
+
+We recommend working with VSCode to generate content.
+
+Recommended VSCode extensions:
+
+- Astro Build: https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode
+- MDX: https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx
+
+:::note
+The mdx files cannot be previewed in VSCode. Please use `npm run dev` as described above.
+:::
 
 ## Where should I place my content?
 
@@ -14,7 +71,7 @@ This is a place for content required for the recommended way to work with an ARC
 
 Here you can place content for a specific topic or task. Do not place specific tools documentation here.
 
-### <specific-tool>
+### `<specific-tool>`
 
 If you have a tool that is used in the context of an ARC, you can place the documentation here.
 
@@ -46,6 +103,31 @@ Always follow **DRY (Don't Repeat Yourself)** principle. If you have the same co
 
 In `.mdx` you can not only link to other content, but also directly insert other content in the current file. 
 
+### Authors
+
+Authors listed via a file in [`src/content/authors`](src/content/authors) can easily be mentioned in the yaml header of articles. 
+
+For example `src/content/authors/kevin-frey.yml`:
+
+```yaml
+name: Kevin Frey
+image: "@images/authors/kevin-frey.jpg"
+socials:
+  - icon: simple-icons:github
+    href: https://github.com/Freymaurer
+  - icon: simple-icons:orcid
+    href: https://orcid.org/0000-0002-8510-6810
+affiliation: DataPLANT
+styling:
+  text: KFR
+```
+
+The author is linked simply via yaml article metadata
+
+```yaml
+authors:
+  - kevin-frey
+```
 
 ### Images
 
@@ -83,9 +165,12 @@ import MacOSSecurity from "@images/arcitect/macos-security.png"
 <img src={MacOSSecurity.src} style="width:50%;display: block; margin: 20px" />
 ```
 
-### `<br />`
+### html
 
-Don't!
+Try to avoid html as it will usually override the consistent page design.  
+**Don't use `<br />`!**
+
+If you really need some special design or styling, raise an issue or contact the main contributors to discuss.
 
 ### Tables
 
@@ -134,15 +219,3 @@ Instead, use references starting from the `docs` folder as root and add `/nfdi4p
 ```md
 [wiki associated to the ARC](/nfdi4plants.knowledgebase/datahub/datahub-arc-wiki)
 ```
-
-### Test-build locally
-
-On a fresh clone of this repository, run 
-
-1. `npm install` to install the latest package dependencies
-2. `npm run dev` to render the knowledge base in watch mode
-
-#### Check for dead links
-
-Especially when editing / adding / moving files, make sure to test build the site via `npm run build`. 
-This validates all links (cross-references between articles and image links). 
