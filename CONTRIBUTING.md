@@ -6,6 +6,7 @@ Your contribution to the DataPLANT Knowledge Base is highly appreciated. This gu
 - [Setup](#setup)
   - [Installation](#installation)
   - [Create content and watch locally](#create-content-and-watch-locally)
+  - [Check for dead links](#check-for-dead-links)
   - [Markdown](#markdown)
   - [VSCode](#vscode)
 - [Where should I place my content?](#where-should-i-place-my-content)
@@ -39,9 +40,9 @@ Starlight itself builds on [Astro](https://astro.build). Please check out [their
 1. Install package dependencies via `npm install`
 2. Start the knowledge base in watch mode via `npm run dev`
 
-#### Check for dead links
+### Check for dead links
 
-Especially when moving or cross-linking files (other articles or images), make sure to test build the site via `npm run build`! This validates all links (cross-references between articles and image links).
+Especially when moving or cross-linking files (other articles or images), make sure to test-build the site via `npm run build`! This validates all links.
 
 ### Markdown
 
