@@ -7,6 +7,7 @@ import tailwind from '@astrojs/tailwind';
 import starlightLinksValidator from 'starlight-links-validator'
 import starlightImageZoom from 'starlight-image-zoom'
 import icon from "astro-icon";
+import remarkMermaid from 'remark-mermaidjs'
 
 // https://astro.build/config
 export default defineConfig({
@@ -160,5 +161,6 @@ export default defineConfig({
   ],
   markdown: {
     rehypePlugins: [rehypeSlug, ...rehypeAutolink()],
+    remarkPlugins: [remarkMermaid],
   },
 });
