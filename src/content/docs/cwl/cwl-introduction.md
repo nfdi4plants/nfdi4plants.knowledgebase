@@ -3,11 +3,13 @@ title: "CWL Introduction"
 lastUpdated: 2024-01-18
 authors:
   - caro-ott
+sidebar:
+  order: 1
 ---
 
 # What is CWL?
 
-CWL is short for Common Workflow Language.
+CWL is short for **Common Workflow Language**.
 It is an open standard for describing how to run command line tools and connect them to create 
 workflows, which can then be incorporated in other workflows if needed (nested workflows). 
 Descriptions in CWL are portable across a variety of platforms that support the CWL 
