@@ -1,13 +1,9 @@
 name: Add article
 description: Add an article. This is just a low-barrier entrypoint. Please consider opening a PR for contributions.
 title: "[Add article]: "
+labels: 
+  - content
 body:
-  - type: input
-    id: title
-    attributes:
-      label: Article title
-    validations:
-      required: true
   - type: input
     id: section
     attributes:
@@ -15,10 +11,16 @@ body:
       description: Please name the section where this article should be added
     validations:
       required: false
+  - type: input
+    id: title
+    attributes:
+      label: Title
+    validations:
+      required: true
   - type: textarea
     id: authors
     attributes:
-      label: Name article authors
+      label: Authors
       description: Please add the article author(s)
       value: |
           name: <FirstName LastName>
@@ -37,7 +39,7 @@ body:
   - type: textarea
     id: content
     attributes:
-      label: Article content
+      label: Content
       value: |
           # First level heading
 
