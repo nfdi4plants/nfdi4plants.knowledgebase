@@ -1,40 +1,91 @@
 ---
-title: Practical guide into the ARC ecosystem
+title: Creating an ARC for Your Project
 lastUpdated: 2024-11-13
 authors:
  - dominik-brilhaus
-draft: true
-hidden: true
-pagefind: false
+sidebar:
+  order: 0
+  badge:
+    text: new
+    variant: tip
 ---
 
-In this guide we collect recommendations and considerations on creating an ARC based on your current project and datasets
+You followed Viola's steps during the [start here](/nfdi4plants.knowledgebase/start-here/) guide and are now overwhelmed? Sure, a guide streamlined onto a demo dataset is a whole different story than achieving this with your own complex data.  
+Here we provide recommendations and considerations for structuring an ARC based on **your current project and datasets**. Remember: creating an ARC is an ongoing process, and it’s meant to evolve over time.
 
-## A "final" ARC does not exist – Immutable, yet evolving!
 
-Filling and structuring an ARC is a gradual process
-- You (currently) won't win an award for the best ARC. And while there may be some ARCs that are more intuitive, helpful, insightful or reusable than others, at the very first they should be of help to you. Not being able to produce the perfect ARC right away should not keep you from creating an ARC at all.
-- reserachers have different affinities and priorities for what needs to be FAIR first and what can be polished later
+## The "final" ARC does not exist – Immutable, Yet Evolving!
 
-So, try to take it easy, when converting your project into an ARC
+Think of your ARC as an evolving entity that adapts and improves as your project progresses.
 
-1. At first you might want to just dump the files into your ARC
-  - One of the ARC's core-concepts is that "everything is a file". 
-  - Your daily work is probably a bunch of files and folders
-  - So why not just create an "empty" ARC to pack and decorate your files? 
-    - don't worry too much about where to put everything in the first place
-    - dump what you have into an "additional payload" folder inside the ARC
-  - Already by doing that, your files are version-controlled via git.
-  - If you now upload the ARC to the DataHUB, you also have a save copy. 
-  
-  :::tip
-  If you have large files (e.g. raw data). You can also dump them first anywhere. If you make sure they are properly Git LFS-tracked, it will be an easy task to later on move the LFS file pointers (rather than the actual large files). This can be done from anywhere.
-  :::
-2. Add a bit of metadata (e.g. about the project and the data creators) to your `investigation`. This makes it more sharable and citable right away. 
-2. Sketch your laboratory workflows
-  - One goal of the ARC is to be able to tell, which finding or result originated from which biological experiment. This would ultimately require to link the dataset files back to the individual sample. To do so, we essentially follow a path of *processes* with *inputs* and *outputs*. Some of the inputs and outputs want to be reused or reproduced, some of the processes want to be applied to other inputs. So before structuring your ARC for the existing dataset, it might help to sketch what was done in the lab. 
-2. Once you have a good overview and structure that suits your investigation, you can move your files into better places in `studies` and `assays`. Already at that stage, everyone will know where to find your raw data (`dataset`) and the steps you followed to create the data (`protocols`)
-3. Before breaking down ("parameterizing") your protocols or computational workflows too all detail into annotation tables, as a first step it already helps a lot to just connect your `studies` and `assays` via the `Input` and `Output` nodes. You can basically re-draw your sketch of lab workflows via tables. And then simply reference the existing free-text protocols (`Protocol REF`). 
-4. Once you decide to make the data more machine-readable and searchable, you can start to parameterize your protocols and fill out the `study` and  `assay` annotation tables.
-5. The same applies to your data analysis. No matter if it's based on clickable softwares or code and scripts. Keep it simple first: create virtual `assays` where you simply treat your data analysis as `protocols` and store the results in `dataset`
-6. If you want to make scripts more reusable and the data analysis reproducible, wrap them with CWL, use containers and other means of software dependency management
+- **Don't aim for perfection right away:** At first, your ARC doesn't need to be flawless. You’re not expected to win an award for the best ARC from the outset. The goal is for it to be useful to **you**. As long as your ARC serves its purpose—whether by organizing data, tracking workflows, or aiding in reproducibility—that’s a win.
+- **Priorities vary across researchers:** Different people may have different ideas about what should be made FAIR first and what can be polished later. Allow yourself to start with the basics and improve it step by step.
+
+So, **don't stress** about making your ARC perfect from the get-go—focus on making it functional.
+
+## Start Simple: Just Dump the Files Into Your ARC
+
+An ARC’s core principle is that "everything is a file." It’s common to work with a collection of files and folders in your daily research. Why not just start by organizing them into an ARC?
+
+- **Initial File Dump:** At first, don’t worry too much about the precise structure. Simply place your files into an “**additional payload**” folder within the ARC. This will help you get started without overthinking the details.
+- **Version Control with Git:** By putting your files in the ARC, you instantly gain the benefit of [version control through Git](/nfdi4plants.knowledgebase/fundamentals/version-control-git). This helps you track changes and maintain a history of your files.
+- **Safe Backup via [DataHUB](/nfdi4plants.knowledgebase/datahub):** Once you upload your ARC to the [DataHUB](/nfdi4plants.knowledgebase/datahub), you’ll also have a secure backup of your files.
+
+:::tip
+If you’re dealing with large files (e.g., raw sequencing data), you can initially store them anywhere. Just make sure they’re tracked with [Git LFS (Large File Storage)](/nfdi4plants.knowledgebase/git/git-lfs.mdx). This way, you can later move the LFS pointers into your ARC without dealing with the actual large files.
+:::
+
+## Add Metadata to Make Your ARC More Shareable and Citable
+
+Next, enrich your ARC with some **basic metadata**:
+
+- **Project and Creator Info:** Include metadata about your project and the researchers involved. This step makes your ARC more sharable and **citable** from the start.
+- **Link to the Investigation:** Add this metadata to your `investigation` section. This is an easy way to ensure your work is discoverable and properly credited.
+
+## Sketch Your Laboratory Workflows
+
+A key goal of an ARC is to trace each finding or result back to its originating biological experiment. To achieve this, your ARC will need to link dataset files to individual samples through a series of **processes** (laboratory or computational steps) with defined **inputs** and **outputs**.
+
+- **Map Out Your Lab Workflows:** Before diving into the structure of your ARC, take some time to **sketch** what you did in the lab. What experiments did you perform? What samples did you analyze? Which protocols did you follow? This sketch will help you understand how to organize your data and workflows later.
+
+---
+
+## Organize Your Files into `studies` and `assays`
+
+Once you have a better understanding of your lab processes, you can begin organizing your ARC:
+
+- **Define `studies` and `assays`:** Structure your data by moving files into relevant folders, such as `studies` and `assays`. This makes it clear where the raw data (`dataset`) is stored and which protocols were used to generate that data.
+- **Reference Protocols:** As you organize, simply reference the **existing protocols** (stored as free-text documents) in your ARC. This ensures consistency without overwhelming you with unnecessary details at this stage.
+
+## Simple First: Link `Input` and `Output` Nodes
+
+Before delving into complex parameterization or detailed annotation tables, start simple:
+
+- **Connect Inputs and Outputs:** Begin by connecting your `studies` and `assays` through **input** and **output** nodes. This allows you to trace the flow of data through your workflows without getting bogged down by excessive detail.
+- **Re-draw Lab Workflows:** At this stage, you can essentially redraw your lab workflows as tables, mapping each process step to its inputs and outputs.
+
+## Parameterize Your Protocols for Machine Readability
+
+Once you have the basic structure in place, you can start making your data more **machine-readable** and **searchable**:
+
+- **Parameterize Protocols:** To improve reproducibility, break down your protocols and workflows into structured annotation tables. This will allow you to capture the parameters used at each step of your research.
+- **Make It Searchable:** This will make your study more **discoverable** and ensure that your methods are clear and reproducible.
+
+## Keep It Simple for Your Data Analysis Workflows
+
+The same approach applies to your data analysis workflows:
+
+- **Treat Data Analysis as Protocols:** Regardless of whether your data analysis involves clickable software or custom code, treat it like a **protocol**. For now, just store the results in your `dataset` folder. 
+- **Iterate as You Go:** You don’t need to go into deep detail at first. Just focus on capturing the core analysis steps, and refine them later as your project progresses.
+
+## Making Data Analysis More Reproducible: Use CWL, Containers, and Dependency Management
+
+If you want to make your data analysis more **reproducible** and ensure that your workflows are **easily reusable**, consider wrapping your analysis tools in **CWL** (Common Workflow Language) and using **containers**:
+
+- **CWL for Reproducibility:** Use CWL to describe your computational workflows in a standardized way. This ensures that others can run your analysis with the same inputs and parameters, regardless of their system.
+- **Containerization:** Leverage Docker or Singularity containers to encapsulate all software dependencies. This makes it easier to share your workflows and ensures they run consistently across different environments.
+- **Manage Dependencies:** Use tools like Conda or Docker to manage your software dependencies, avoiding issues with mismatched versions or missing libraries.
+
+## **Conclusion: The ARC is a Living FAIR Digital Object**
+
+The process of creating an ARC is **gradual** and **evolving**. Start simple, and focus on getting the basics in place. Over time, you can refine and enhance your ARC to improve its usefulness and functionality, making it a valuable tool for organizing, sharing, and reproducing your research.
