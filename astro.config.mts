@@ -88,10 +88,37 @@ export default defineConfig({
         },
         {
           label: 'DataHUB',
-          // Collapse the group by default.
           collapsed: true,
-          autogenerate: { directory: 'datahub' },
-        },
+          // autogenerate: { directory: 'datahub' },
+          items:[
+            'datahub',           
+            {
+              label: 'DataPLANT Account',
+              collapsed: false,
+              autogenerate: { directory: 'datahub/account'},
+            },
+            {
+              label: 'Navigation & Settings',
+              autogenerate: { directory: 'datahub/navigation-settings'},
+            },
+            {
+              label: 'Working together',
+              autogenerate: { directory: 'datahub/working-together'},
+            },
+            {
+              label: 'ARC files',
+              autogenerate: { directory: 'datahub/arc-files'},
+            },
+            {
+              label: 'ARC features',
+              autogenerate: { directory: 'datahub/arc-features'},
+            },
+            {
+              label: 'Data Publications',
+              autogenerate: { directory: 'datahub/data-publications'},
+            },
+          ]
+        },        
         {
           label: 'ARC Commander',
           // Collapse the group by default.
