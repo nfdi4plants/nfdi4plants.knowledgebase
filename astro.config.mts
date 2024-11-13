@@ -87,12 +87,30 @@ export default defineConfig({
           collapsed: true,
           autogenerate: { directory: 'arc-validation' },
         },
+        // {
+        //   label: 'DataHUB',
+        //   // Collapse the group by default.
+        //   collapsed: true,
+        //   autogenerate: { directory: 'datahub' },
+        // },
         {
           label: 'DataHUB',
-          // Collapse the group by default.
           collapsed: true,
-          autogenerate: { directory: 'datahub' },
-        },
+          items:[            
+            {
+              label: 'Navigation & Settings',
+              autogenerate: { directory: 'datahub/navigation-settings'},
+            },
+            {
+              label: 'Working Together',
+              autogenerate: { directory: 'datahub/working-together'},
+            },
+            {
+              label: 'Data Publications',
+              autogenerate: { directory: 'datahub/data-publications'},
+            },
+          ]
+        },        
         {
           label: 'ARC Commander',
           // Collapse the group by default.
