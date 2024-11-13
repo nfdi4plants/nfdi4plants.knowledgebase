@@ -1,0 +1,43 @@
+name: Request an article
+description: If you're missing a guide about a tool, software or concept, please let us know.
+title: "[Add article]: "
+labels: 
+  - missing-content
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: What type of article are you looking for?
+      multiple: true
+      options:
+        - guide
+        - tool tutorial
+        - introduction to concept
+        - use-case
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please describe the article you'd like to see with a few bullet points
+      value: |
+          - 
+          - 
+          - 
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: related
+    attributes:
+      label: Related to
+      description: Please link related knowledge base content or sections here.
+    validations:
+      required: false
+  - type: textarea
+    id: resources
+    attributes:
+      label: Resources
+      description: If you have suitable resources on a similar topic, please share them.
+    validations:
+      required: false
