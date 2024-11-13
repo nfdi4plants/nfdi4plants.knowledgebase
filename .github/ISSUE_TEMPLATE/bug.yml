@@ -1,0 +1,20 @@
+name: Report a bug
+title: "[bug]"
+description: If you found a bug, error, inconsistency, please let us know.
+labels: 
+  - bug
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Article URL
+      description: Please paste the URL of the buggy article
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug
+      description: Please describe the bug. 
+    validations:
+      required: true
