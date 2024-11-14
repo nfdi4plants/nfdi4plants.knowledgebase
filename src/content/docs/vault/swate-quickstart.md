@@ -62,7 +62,7 @@ Briefly:
 
 Alternatively, you can also use one of DataPLANT’s [Swate templates](/nfdi4plants.knowledgebase/swate/templates). You can find them via the "add template" button, next to the "add building block" button.  
 
-![](@images/swate/swate-add-template.png)
+![](@images/swate/swate-alpha-add-template.png)
 
 ## Annotate your samples and data
 

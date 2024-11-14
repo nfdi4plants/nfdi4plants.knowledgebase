@@ -4,15 +4,22 @@ lastUpdated: 2024-04-25
 authors: 
   - kevin-frey
   - stella-eggels
+  - patrick-blume
 ---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 :::tip
 Consider reading about [Swate](/nfdi4plants.knowledgebase/swate)
 :::
 
+<Tabs syncKey="host">
+<TabItem label="Browser">
+
 ## Open or create an assay or study file
 
-To create an annotation table file with the [Swate standalone](https://swate-alpha.nfdi4plants.org/) in your browser, click "New File" and select which kind of file (investigation, study, assay) you want to create. If you already created a `isa.study.xlsx` or `isa.assay.xlsx` file, you can select "Import File" to modify and add to it.
+To create an annotation table file with the [Swate standalone](https://swate-alpha.nfdi4plants.org/) in your browser, click "New File" and select which kind of file (investigation, study, assay) you want to create. 
+If you already created a `isa.study.xlsx` or `isa.assay.xlsx` file, you can select "Import File" to modify and add to it.
 
 ![Image showing add new file option in Swate](@images/swate/swate-alpha-new-file.png)
 
@@ -20,8 +27,43 @@ In the "Metadata" sheet, you can fill in general metadata about your investigati
 
 ## Add an annotation table
 
-In the "New Table" sheet, you can create your annotation table by adding [building blocks](/nfdi4plants.knowledgebase/swate/building-blocks). Your annotation table should consist of an "Input", multiple descriptive building blocks ("Characteristics", "Parameters", "Components") and an "Output".
+In the "New Table" sheet, you can create your annotation table by adding [building blocks](/nfdi4plants.knowledgebase/swate/building-blocks). 
+Your annotation table should consist of an "Input", multiple descriptive building blocks ("Characteristics", "Parameters", "Components") and an "Output".
 
-To create an annotation table within ARCitect, add a new table to your assay or study by clicking the plus (+) symbol next to your metadata sheet. Here, you can build your annotation table by adding [building blocks](/nfdi4plants.knowledgebase/swate/building-blocks) the same way as in the Swate standalone.
+To create an annotation table within ARCitect, add a new table to your assay or study by clicking the plus (+) symbol next to your metadata sheet. 
+Here, you can build your annotation table by adding [building blocks](/nfdi4plants.knowledgebase/swate/building-blocks) the same way as in the Swate standalone.
 
 ![Image showing Swate integration in ARCitect with focus on "add new annotation table"-button.](@images/swate/swate-alpha-arcitect-newtable.png)
+
+</TabItem>
+<TabItem label="Excel">
+
+## Add an annotation table
+
+When you have an empty excel sheet or one hat already contains an annotation table, you can click on the "Create Annotation Table" icon of the navbar of the sidebar.
+When the excel sheet contains no annotation table, a new annotation table will be created in the active excel sheet.
+When an annotation table already exists in the active excel sheet, a new excel sheet will be created, become active and a new annotation table will be created in that sheet.
+
+The new annotation table will be created in the cell that was selected, when you the "Create Annotation Table" icon was clicked.
+The newly created annotation table has a size of 1 Input [Source Name] column and row.
+
+![Image showing add new file option in Swate](@images/swate/swate-excel-add-annotation-table.png)
+
+## Top level metadata handling
+
+In contrast to [Swate standalone](https://swate-alpha.nfdi4plants.org/) in your browser, swate in excel doesn't need a metadata sheet and can be used to just store your data without any additional information.
+
+In order to export your data as [JSON](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/swate/json/) a top level metadata file is needed but it can be added afterwards and be changed any time, without affecting the rest of your data.
+
+You create by clicking the "Create Metadata" icon in the nabar of the sidebar. When a top level metadatasheet is available, the different properties of it will be loaded, enabling you to manipulate the data outside the sheet itself or delete it.
+When no top level meta data sheet is available, you can determine its [Type](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/arc-commander/isa/).
+
+![Image showing add new file option in Swate](@images/swate/swate-excel-create-top-level-metadata.png)
+
+After you decided its type, the sheet with the basic information of the top level metadata will be created. While the dialogue is open in the sidebar, changes in the sheet will not be recognized.
+When you reopen the dialogue to adapt your top level metadata, the changes in the sheet will be present now.
+
+![Image showing add new file option in Swate](@images/swate/swate-excel-update-top-level-metadata.png)
+
+</TabItem>
+</Tabs>
