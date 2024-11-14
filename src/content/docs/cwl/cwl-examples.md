@@ -9,17 +9,18 @@ sidebar:
 
 # CWL Examples
 
-CWL and job files are written in the [YAML](https://en.wikipedia.org/wiki/YAML) format. All indentations 
+CWL and job files are written in the [YAML](https://en.wikipedia.org/wiki/YAML) format. All indentations
 are made using double spaces.
 
 ## Wrapping a console tool
+
 ### Without docker
 
-A command line tool requires a `baseCommand` which is used to call the tool. This can be 
-the name of the tool, if it is added to the PATH, or a relative/absolute path to the executable (`.exe`). 
-If the basecommand consists of multiple words, it can be written as a list: `[my, Tool]`. The next part is the `inputs` 
-section. It consists of a variable number of arguments required for the tool to run. For each input you can specify 
-the type, position and prefix of the input. The last part is the `outputs` section. Multiple outputs can be specified by 
+A command line tool requires a `baseCommand` which is used to call the tool. This can be
+the name of the tool, if it is added to the PATH, or a relative/absolute path to the executable (`.exe`).
+If the basecommand consists of multiple words, it can be written as a list: `[my, Tool]`. The next part is the `inputs`
+section. It consists of a variable number of arguments required for the tool to run. For each input you can specify
+the type, position and prefix of the input. The last part is the `outputs` section. Multiple outputs can be specified by
 name, type and their location.
 
 ```yaml
@@ -39,15 +40,15 @@ inputs:
       prefix: -i
 outputs:
   myFileOutput:
-	type: File
-	outputBinding:
+  type: File
+  outputBinding:
       # this returns a specific file
-	  glob: myOutput.txt
+    glob: myOutput.txt
   myFileArrayOutput:
     type: File[]
     outputBinding:
-	  # this returns all files with the extension .txt
-	  glob: $(runtime.outdir)/*.txt
+    # this returns all files with the extension .txt
+    glob: $(runtime.outdir)/*.txt
   myDirectoryOutput:
     type: Directory
     outputBinding:
@@ -55,16 +56,16 @@ outputs:
       glob: $(runtime.outdir)/myDirectory
 ```
 
-There are several possibilities to retrieve the output of a tool. Common options would be `File`, `File[]`, or `Directory`. 
-Depending on your tool or script, the output varies. If your tool returns a fixed number of known files, you should specify them as `File`. If it has a variable number of 
+There are several possibilities to retrieve the output of a tool. Common options would be `File`, `File[]`, or `Directory`.
+Depending on your tool or script, the output varies. If your tool returns a fixed number of known files, you should specify them as `File`. If it has a variable number of
 files with a known extension, you should specify them as `File[]`. If it has a variable output structure, you should specify it as `Directory`.
-For usage in workflows and provenance tracking, if your tool or script allows it, it is recommended to use `File` as the output type. This way, several output files can be 
+For usage in workflows and provenance tracking, if your tool or script allows it, it is recommended to use `File` as the output type. This way, several output files can be
 specified and used in the following workflow steps.
 
 ### With a docker container
 
-To ensure reproducibility of the tool's execution on any system, it is recommended to pack it in a docker 
-container. The docker container is automatically pulled with a reference to the container under 
+To ensure reproducibility of the tool's execution on any system, it is recommended to pack it in a docker
+container. The docker container is automatically pulled with a reference to the container under
 either `requirements` or `hints`. Additional requirements, such as network access, can be specified as well.
 
 ```yaml
@@ -90,15 +91,15 @@ inputs:
       prefix: -i
 outputs:
   myFileOutput:
-	type: File
-	outputBinding:
+  type: File
+  outputBinding:
       # this returns a specific file
-	  glob: myOutput.txt
+    glob: myOutput.txt
   myFileArrayOutput:
     type: File[]
     outputBinding:
-	  # this returns all files with the extension .txt
-	  glob: $(runtime.outdir)/*.txt
+    # this returns all files with the extension .txt
+    glob: $(runtime.outdir)/*.txt
   myDirectoryOutput:
     type: Directory
     outputBinding:
@@ -106,17 +107,17 @@ outputs:
       glob: $(runtime.outdir)/myDirectory
 ```
 
-There are several possibilities to retrieve the output of a tool. Common options would be `File`, `File[]`, or `Directory`. 
-Depending on your tool or script, the output varies. If your tool returns a fixed number of known files, you should specify them as `File`. If it has a variable number of 
+There are several possibilities to retrieve the output of a tool. Common options would be `File`, `File[]`, or `Directory`.
+Depending on your tool or script, the output varies. If your tool returns a fixed number of known files, you should specify them as `File`. If it has a variable number of
 files with a known extension, you should specify them as `File[]`. If it has a variable output structure, you should specify it as `Directory`.
-For usage in workflows and provenance tracking, if your tool or script allows it, it is recommended to use `File` as the output type. This way, several output files can be 
+For usage in workflows and provenance tracking, if your tool or script allows it, it is recommended to use `File` as the output type. This way, several output files can be
 specified and used in the following workflow steps.
 
 ### With a fixed script file
 
-Oftentimes, individual analysis is done within scripts for the flexibility, instead of tools with 
-fixed tasks. In this case, it is recommended to encode the script as a fixed part of the CWL description. 
-The script is then accessible in the CWL description and can be called as part of the `baseCommand`. It can be 
+Oftentimes, individual analysis is done within scripts for the flexibility, instead of tools with
+fixed tasks. In this case, it is recommended to encode the script as a fixed part of the CWL description.
+The script is then accessible in the CWL description and can be called as part of the `baseCommand`. It can be
 a script that functions as a command line and still expects inputs, or as a self contained analysis without further input requirements.
 
 ```yaml
@@ -152,12 +153,13 @@ outputs:
       glob: "result.csv"
 
 ```
+
 [Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/main/workflows/FixedScript)
 
 ### With a fixed script in a mounted arc
 
-When scripting, it is convenient to work within the environment of the ARC (e.g. location of files, writing results in the runs 
-folder and so on). When the ARC is mounted within the CWL process, the script can be ran in that environment and the corresponding runs folder 
+When scripting, it is convenient to work within the environment of the ARC (e.g. location of files, writing results in the runs
+folder and so on). When the ARC is mounted within the CWL process, the script can be ran in that environment and the corresponding runs folder
 is then returned as an output.
 
 ```yaml
@@ -201,9 +203,9 @@ outputs:
 
 ### Within an ARC with a devcontainer
 
-Within the context of an ARC, researches often work within devcontainers or the ARC environment. CWL is able to replicate 
-this workflow under the premise, that in the end everything can be executed in one go by including the Dockerfile of the devcontainer. 
-The entire arc directory can be mounted into the working directory of the CWL process as well, making the script for the devcontainer 
+Within the context of an ARC, researches often work within devcontainers or the ARC environment. CWL is able to replicate
+this workflow under the premise, that in the end everything can be executed in one go by including the Dockerfile of the devcontainer.
+The entire arc directory can be mounted into the working directory of the CWL process as well, making the script for the devcontainer
 and CWL process identical. This enables explorative work in scripts which can then be executed with CWL after completion without much overhead.
 
 ```yaml
@@ -242,15 +244,16 @@ outputs:
     outputBinding:
       glob: "./arc/runs/myRun/result.csv"
 ```
-The Dockerfile should only include operations that reference resources that are available online or within the baseimage. COPY operations that point to local files for 
-example won't work in the context of CWL. If they are necessary for the execution in the devcontainer context (e.g. configuration for editors), but not the execution of the script, they 
+
+The Dockerfile should only include operations that reference resources that are available online or within the baseimage. COPY operations that point to local files for
+example won't work in the context of CWL. If they are necessary for the execution in the devcontainer context (e.g. configuration for editors), but not the execution of the script, they
 can be prefixed with a `*` to make the execution of the operation optional.
 
 [Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/main/workflows/Devcontainer)
 
 ## Workflows
 
-Workflows can connect multiple command line tools, for example. It is possible to use the output of a 
+Workflows can connect multiple command line tools, for example. It is possible to use the output of a
 tool as an input for the following tool and return them as intermediate results as well.
 
 ```yaml
