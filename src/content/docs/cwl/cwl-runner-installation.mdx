@@ -3,15 +3,20 @@ title: "CWL Runner Installation"
 lastUpdated: 2024-01-18
 authors:
   - caro-ott
+  - dominik-brilhaus
 sidebar:
   order: 2
 ---
 
-The recommended CWL runner is [cwltool](https://github.com/common-workflow-language/cwltool), the reference implementation for the CWL standards.
-
 import { Steps } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
+The recommended CWL runner is [cwltool](https://github.com/common-workflow-language/cwltool), the reference implementation for the CWL standards.
+
+:::tip
+- Please explore the [cwltool docs](https://cwltool.readthedocs.io/en/latest/) for latest installation instructions.
+- We also recommend to install a software container engine (e.g. [Docker](https://docs.docker.com/engine/install/) or [Podman](https://podman.io/getting-started/installation)).
+:::
 
 <Tabs syncKey="os">
 <TabItem label="Windows" icon='seti:windows'>
@@ -41,11 +46,6 @@ The installation on Windows can be done following the guide [here](https://cwlto
 </Steps>
 </TabItem>
 
-{/* <TabItem label="Macos" icon="apple">
-<Steps>
-</Steps>
-</TabItem> */}
-
 <TabItem label="Linux" icon='linux'>
 
 For installation on Linux (Debian/Ubuntu): 
@@ -53,7 +53,7 @@ For installation on Linux (Debian/Ubuntu):
 <Steps>
 
 1. Run `sudo apt-get update`
-2. Install Python 3 if it is not already preinstalled `sudo apt install python3`
+2. Install Python 3 if it is not already installed `sudo apt install python3`
 3. Install python virtual environment `sudo apt install python3.[your version here]-venv`
 4. Create a virtual environment `python3 -m venv env` (named env here, name can vary)
 5. Activate the virtual environment `source env/bin/activate`
@@ -63,7 +63,19 @@ For installation on Linux (Debian/Ubuntu):
 
 </TabItem>
 
+<TabItem label="Macos" icon="apple">
+
+<Steps>
+1. Install [conda-forge](https://conda-forge.org/)
+2. Install cwltool via `conda install -c conda-forge cwltool`
+</Steps>
+
+</TabItem>
+
 </Tabs>
+
+
+
 
 
 ## cwltool usage
