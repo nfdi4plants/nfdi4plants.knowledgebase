@@ -13,13 +13,23 @@ import { Card } from '@astrojs/starlight/components';
 
 import Datamap from "@images/start-here/arc-prototypic-datamap.svg"
 
-<img src={Datamap.src} style="width:50%;display: block; margin: auto;" />
+<ViolaSays>
+The data file I added contained multiple columns, but in the assay annotation, I just pointed to the file. Is there a way to specify which column belongs to which sample?
+</ViolaSays>
 
-A Datamap allows you to precisely annotate data points in dataset files.
+Yes! For this, you can make use of data fragment selectors.
+
+:::note
+A data fragment selector is a short text which can be added to a file path to specify a portion of the file. 
+:::
+
+There exist various different file formats and each requires its own format for annotating fragments as well. 
+In this case, we have a tabular file format, for which our tooling provides help.
 
 ## Point into results – Fragment selectors
 
-Using fragment selectors the provenence from the laboratory sample to the data point can persistently be described. 
+We will now add fragment selectors to the previously created annotation table to connect our sample to specific data points. 
+This way, provenance is persistently tracked. Data scientists down the line will thank you for the increase in machine-actionability.
 
 ![](@images/start-here/arc-prototypic-datamap-fragment-selectors1.svg)
 
@@ -51,7 +61,21 @@ Using fragment selectors the provenence from the laboratory sample to the data p
 
 ## DataMAP: Annotation for the fragment selectors
 
-A datamap allows to add structured annotation to data in a similar manner as with biological materials.
+<ViolaSays>
+Wow, this is very verbose, even though it only took a few clicks! And you say data scientists will now finally be content?
+</ViolaSays>
+
+Yes, but with a final bit of annotation you might even raise a smile from them. 
+Using data fragment selectors in the annotation table, you described the provenance between your samples and your data fragments.
+
+In addition, you can further annotate these data fragments and even those which do not directly originate from any of the samples. 
+For example, the column containing the names of the sugars. This annotation is done in the datamap.
+
+:::note
+A datamap is a collection of data fragment selectors with additional annotation, meant to aid with parsing and understanding the contents of the file. 
+:::
+
+We'll now use the datamap to annotate all columns in the file, even the ones we didn't cover in the annotation table.
 
 ![](@images/start-here/arc-prototypic-datamap-fragment-selectors2.svg)
 

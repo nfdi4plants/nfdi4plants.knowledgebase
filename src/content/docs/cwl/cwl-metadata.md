@@ -3,6 +3,8 @@ title: "CWL Metadata"
 lastUpdated: 2024-02-05
 authors:
   - caro-ott
+sidebar:
+  order: 3
 ---
 
 # CWL Metadata

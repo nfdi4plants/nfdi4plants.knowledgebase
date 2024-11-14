@@ -29,8 +29,8 @@ As a platform you manage a lot of projects in parallel. Keeping these projects u
 
 Here's a few tips to support your project management:
 
-- You can use the [wiki associated to the ARC](/nfdi4plants.knowledgebase/datahub/datahub-arc-wiki) to collect meeting minutes with your collaborators
-- You can use the [ARC's issue board](/nfdi4plants.knowledgebase/datahub/datahub-arc-panel) to coordinate tasks between collaborators, team members, data analysts and others involved
+- You can use the [wiki associated to the ARC](/nfdi4plants.knowledgebase/datahub/arc-features/datahub-arc-wiki) to collect meeting minutes with your collaborators
+- You can use the [ARC's issue board](/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-arc-panel) to coordinate tasks between collaborators, team members, data analysts and others involved
 - You can use your established system of identifiers (e.g. for projects, samples) in [ISA metadata](/nfdi4plants.knowledgebase/core-concepts/isa)
 - You can also keep naming your ARCs with the same way you are used to name your project folders
 
@@ -109,7 +109,7 @@ They are optional and it depends on your platform, whether these are suitable.
 - Where can they find what information (protocols, datasets, results)?
 - How can they interact with the ARC (upload, download, edit)
 
-☑️ **[Create a DataHUB group](/nfdi4plants.knowledgebase/datahub/datahub-groups) for your platform**
+☑️ **[Create a DataHUB group](/nfdi4plants.knowledgebase/datahub/working-together/datahub-groups) for your platform**
 
 - A group can help you organize all running projects in one place
 - You can easily manage access for multiple ARCs
@@ -153,7 +153,7 @@ Running a central platform, you probably follow an established project managemen
 This is particularly important for how project folders are named on your platform's data storage. When implementing ARCs, **you do not need to change** this system.
 You can simply name the ARCs the same way you are used to name your project folders.
 
-This is also true for scenario B exemplified above. You can simply [fork](/nfdi4plants.knowledgebase/datahub/datahub-arc-fork) the collaborator's ARC and rename it according to your system.
+This is also true for scenario B exemplified above. You can simply [fork](/nfdi4plants.knowledgebase/datahub/arc-features/datahub-arc-fork) the collaborator's ARC and rename it according to your system.
 
 :::tip
 You might want to consider requiring your collaborators to name the assays (folder name or assay identifier) according to your project management system.
@@ -163,4 +163,4 @@ You might want to consider requiring your collaborators to name the assays (fold
 
 Not all of your collaborators use ARCs or are planning to do so, but you still want to interact with those collaborators in the same routines employed with everyone else. They only need a DataHUB account and they can simply sign in with their existing scientific account.
 
-The DataHUB comes with [built-in features](/nfdi4plants.knowledgebase/datahub/datahub-files) that allow interaction with the ARC solely via the web browser without any addional tools.
+The DataHUB comes with [built-in features](/nfdi4plants.knowledgebase/datahub/arc-files/datahub-files) that allow interaction with the ARC solely via the web browser without any addional tools.
