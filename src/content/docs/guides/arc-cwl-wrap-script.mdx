@@ -13,6 +13,7 @@ draft: true
 
 import { FileTree } from '@astrojs/starlight/components';
 import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 import ViolasARCFinal from '@components/mdx/ViolasARC-final.mdx'
 
 :::note
@@ -44,8 +45,8 @@ File name   | Description                                   | Location in the AR
 
 </div></div>
 
-<details>
-<summary>`heatmap.py`</summary>
+<Tabs syncKey="os">
+<TabItem label="heatmap.py" icon='seti:python'>
 
 ```python
 import pandas as pd
@@ -69,11 +70,11 @@ fig = px.imshow(data,
 fig.write_image(FigureFileName + ".svg")
 ```
 
-</details>
+{/* TODO: import CWL icon from simple-icons */}
 
+</TabItem>
+<TabItem label="workflow.cwl" icon='simple-icons:commonworkflowlanguage'>
 
-<details>
-<summary>`workflow.cwl`</summary>
 
 ```yaml
 #!/usr/bin/env cwl-runner
@@ -105,10 +106,9 @@ outputs:
     outputBinding:
       glob: "*.svg"
 ```
-</details>
 
-<details>
-<summary>`job.yml`</summary>
+</TabItem>
+<TabItem label="job.yml" icon='seti:yml'>
 
 ```yaml
 MeasurementTableCSV:
@@ -117,8 +117,8 @@ MeasurementTableCSV:
 FigureFileName: heatmap
 ```
 
-</details>
-
+</TabItem>
+</Tabs>
 
 ## Isolate run parameters and workflow 
 
@@ -152,4 +152,5 @@ FigureFileName: heatmap
 
 
 ## Execute the run
+
 
