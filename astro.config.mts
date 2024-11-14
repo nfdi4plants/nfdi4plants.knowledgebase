@@ -27,7 +27,7 @@ export default defineConfig({
         Footer: '@components/starlight/Footer.astro',
       },
       editLink: {
-        baseUrl: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase/edit/main/docs/'
+        baseUrl: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase/edit/main/'
       },
       social: {
         github: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase',
