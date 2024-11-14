@@ -14,10 +14,11 @@ Your contribution to the DataPLANT Knowledge Base is highly appreciated. This gu
   - [Guides](#guides)
   - [`<specific-tool>`](#specific-tool)
   - [Core concepts](#core-concepts)
-- [Style Guide](#style-guide)
-  - [Use Starlight components](#use-starlight-components)
-  - [General file information](#general-file-information)
   - [Authors](#authors)
+- [Style Guide](#style-guide)
+  - [Composition](#composition)
+  - [Use Starlight components](#use-starlight-components)
+  - [Use Custom components](#use-custom-components)
   - [Images](#images)
   - [html](#html)
   - [Tables](#tables)
@@ -78,30 +79,6 @@ If you have a tool that is used in the context of an ARC, you can place the docu
 
 Basic information about RDM, not necessary ARC related.
 
-## Style Guide
-
-### Use Starlight components
-
-The Starlight framework has some nice components that can be used in the `.mdx` files.
-
-Have an eye on the existing components to improve the readability of the content.
-
-[Starlight components](https://starlight.astro.build/components/using-components/)
-
-### General file information
-
-- All files and folders must always be [kebap-case](https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case). This means all lower case and `-` as word separator.
-
-```txt title="Example"
-src\assets\images\arc-commander\access-2.png
-```
-
-#### Composition
-
-Always follow **DRY (Don't Repeat Yourself)** principle. If you have the same content in multiple places, consider creating a reusable component.
-
-In `.mdx` you can not only link to other content, but also directly insert other content in the current file. 
-
 ### Authors
 
 Authors listed via a file in [`src/content/authors`](src/content/authors) can easily be mentioned in the yaml header of articles. 
@@ -126,6 +103,63 @@ The author is linked simply via yaml article metadata
 ```yaml
 authors:
   - kevin-frey
+```
+
+## Style Guide
+
+
+All files and folders must always be [kebap-case](https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case). This means all lower case and `-` as word separator.
+
+```txt title="Example"
+src\assets\images\arc-commander\access-2.png
+```
+
+### Composition
+
+Always follow **DRY (Don't Repeat Yourself)** principle. If you have the same content in multiple places, consider creating a reusable component.
+
+In `.mdx` you can not only link to other content, but also directly insert other content in the current file. 
+
+
+### Use Starlight components
+
+The Starlight framework has some nice components that can be used in the `.mdx` files.
+
+Have an eye on the existing components to improve the readability of the content.
+
+[Starlight components](https://starlight.astro.build/components/using-components/)
+
+### Use Custom components
+
+Checkout the `src/components/mdx` directory for custom components.
+
+#### Mermaid
+
+Can only be used in mdx files.
+
+```mdx
+import Mermaid from '@components/mdx/Mermaid.astro'
+
+<Mermaid>
+```mermaid
+flowchart LR
+    markdown["`This **is** _Markdown_`"]
+    newLines["`Line1
+    Line 2
+    Line 3`"]
+    markdown --> newLines
+```
+</Mermaid>
+```
+
+#### Viola Says
+
+```mdx
+import ViolaSays from '@components/ViolaSays.astro'
+
+<ViolaSays>
+Ok, I think I understand. The study is used to describe the overall experiment and the sample generation. Then the assays are used to describe the individual lab processes and the data generation!
+</ViolaSays>
 ```
 
 ### Images

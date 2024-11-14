@@ -13,6 +13,25 @@ import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
 
+import Mermaid from '@components/mdx/Mermaid.astro'
+
+<Mermaid title="ARC structure" height="300">
+```mermaid
+flowchart TB
+    c1-->a2
+    subgraph one
+    a1-->a2
+    end
+    subgraph two
+    b1-->b2
+    end
+    subgraph three
+    c1-->c2
+    end
+
+``` 
+</Mermaid>
+
 <ViolaSays>
 Ok, I think I understand. The study is used to describe the overall experiment and the sample generation. Then the assays are used to describe the individual lab processes and the data generation!
 </ViolaSays>
