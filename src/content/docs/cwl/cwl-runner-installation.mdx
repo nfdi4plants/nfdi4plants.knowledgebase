@@ -75,16 +75,66 @@ For installation on Linux (Debian/Ubuntu):
 </Tabs>
 
 
-
-
-
 ## cwltool usage
  
 - If you are on Windows, start the WSL
 - Activate the virtual environment `source env/bin/activate`
-- Navigate to the results destination directory
 - Run `cwltool` by specifying the CWL `Workflow` or `CommandLineTool` description file path and the (optional) inputs file path (you can use relative or full paths): 
 
 ```bash
 cwltool path/to/cwlfile.cwl path/to/jobfile.yml
 ```
+
+### Minimal example
+
+Here is a very simplified example to check, that your cwltool installation functions
+
+<Steps>
+
+1. Store the following as `echo-tool.cwl`
+    
+    ```yaml
+    #!/usr/bin/env cwl-runner
+
+    cwlVersion: v1.2
+
+    class: CommandLineTool
+
+    baseCommand: [echo]
+
+    stdout: message.txt
+
+    inputs:
+      message:
+        type: string
+        inputBinding:
+          position: 1
+
+    outputs:
+      output:
+        type: stdout
+    ```
+
+2. In the same folder, store the following as `job.yml`
+
+    ```yaml
+    message: "I love ARCs and CWL"
+    ```
+
+3. Now you can execute the tool
+   - providing an `input` directly via CLI:  
+   
+   ```
+   cwltool echo-tool.cwl --message "ARCs are great"
+   ```
+   or
+   
+   - providing the `input` via the `job.yml`:  
+   
+   ```
+   cwltool echo-tool.cwl job.yml
+   ```
+
+4. Both create an `output` file called `message.txt` with your specified message.
+
+</Steps>
