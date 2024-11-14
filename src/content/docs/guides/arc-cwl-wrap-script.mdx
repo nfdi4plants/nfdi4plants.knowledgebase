@@ -1,6 +1,6 @@
 ---
 title: Wrapping a script with CWL
-lastUpdated: 2024-11-10
+lastUpdated: 2024-11-14
 authors:
   - dominik-brilhaus
 sidebar:
@@ -24,20 +24,28 @@ This builds on the ARC created in the [Start here](/nfdi4plants.knowledgebase/st
 <ViolasARCFinal />
 
 </details>
+
+You can also download the ARC (e.g. via [ARCitect](/nfdi4plants.knowledgebase/arcitect)) from the [DataHUB](https://git.nfdi4plants.org/training/AthalianaColdStressSugar).
+
 :::
 
+## Scripts and CWL files
 
+We generate the following three files and place them in the ARC.
 
-<Steps>
+<div class="overflow-x-auto">
+          <div class="min-w-[800px]" >
 
-1. Add a folder "heatmap" to `workflows`
-2. Add a folder "heatmap-run" to `runs` 
+File name   | Description                                   | Location in the ARC
+---         | ---                                           | ---
+`heatmap.py`  | Script used for data analysis | `workflows/heatmap/heatmap.py`
+`workflow.cwl`  | CWL document wrapping the `heatmap.py` | `workflows/heatmap/workflow.cwl`
+`job.yml`  | Yaml providing the parameters for `workflow.cwl` | `runs/heatmap-run/job.yml`
 
-</Steps>
+</div></div>
 
-## The script
-
-`heatmap.py`
+<details>
+<summary>`heatmap.py`</summary>
 
 ```python
 import pandas as pd
@@ -61,10 +69,11 @@ fig = px.imshow(data,
 fig.write_image(FigureFileName + ".svg")
 ```
 
+</details>
 
-## The workflow file
 
-`workflow.cwl`: 
+<details>
+<summary>`workflow.cwl`</summary>
 
 ```yaml
 #!/usr/bin/env cwl-runner
@@ -96,10 +105,10 @@ outputs:
     outputBinding:
       glob: "*.svg"
 ```
+</details>
 
-## The job file
-
-`job.yml`:
+<details>
+<summary>`job.yml`</summary>
 
 ```yaml
 MeasurementTableCSV:
@@ -108,13 +117,17 @@ MeasurementTableCSV:
 FigureFileName: heatmap
 ```
 
+</details>
 
-## Isolate run parameters and workflow
+
+## Isolate run parameters and workflow 
 
 <Steps>
 
+1. Add a folder "heatmap" to `workflows`
 1. Add the `workflow.cwl` to `workflows/heatmap`
 1. Add the `heatmap.py` to `workflows/heatmap`
+2. Add a folder "heatmap-run" to `runs` 
 2. Add the `job.yml` to `runs/heatmap-run`
 
 </Steps>
