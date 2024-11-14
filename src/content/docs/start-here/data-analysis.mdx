@@ -83,18 +83,8 @@ To achieve this, we recommend to wrap and annotate your workflow using [Common W
 - In the ARC the computational workflow is placed in the `workflows` folder.
 - The results produced from workflows are stored in `runs`. Every time a workflow is employed, it creates a new run result.
 
-
 ### CWL abstract – documents to describe your computational workflows
 
 The scipt file in `workflows` is accompanied with a CWL file, which contains workflow metadata to render it reusable. The specific parameters of a `run`'s execution are stored in a separate job file. 
 
 ![](@images/start-here/arc-prototypic-workflows-cwl2.svg)
-
-{/* 
-### Workflows
-
-Viola received for her transcriptome and metabolome assays various processed data files, which she now can use to generate some nice plots. Additionally, the computational biologists sent her the code used for data processing, including an executable Common Workflow Language (CWL) file, which contains a standardized tool or workflow description. She stores these files in individual subdirectories for each workflow.
-
-### Runs
-
-After Viola generated her plots, she placed them in individual subdirectories, specific to the run they were generated with. In general, you can use the runs folder to store plots, tables, or similar result files that derive from computations on study, assay, external data or other runs. */}
