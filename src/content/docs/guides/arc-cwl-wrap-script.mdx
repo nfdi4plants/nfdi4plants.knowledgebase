@@ -109,6 +109,19 @@ FigureFileName: heatmap
 </TabItem>
 </Tabs>
 
+
+Briefly summarized,
+
+- the `heatmap.py` is the example data analysis script, which creates a heatmap based on a CSV table input
+- the `workflow.cwl` is a CWL document binds the `heatmap.py`
+  - It requires two `inputs`
+    1. `MeasurementTableCSV`: the file name of the CSV table
+    2. `FigureFileName`: how the user wants to name the output file
+  - And it generates one `output`: an `.svg` file named according to `FigureFileName`
+- the `job.yml` provides the required `input` parameters for `workflow.cwl`
+  - the relative path to the CSV table input: `sugar_result.csv`
+  - the desired file name: `heatmap`
+
 <Mermaid>
 
 ```mermaid
@@ -122,18 +135,6 @@ sugar_result.csv -.- job.yml --o workflow.cwl--> heatmap.svg
 ```
 
 </Mermaid>
-
-Briefly summarized,
-
-- the `heatmap.py` is the example data analysis script, which creates a heatmap based on a CSV table input
-- the `workflow.cwl` is a CWL document binds the `heatmap.py`
-  - It requires two `inputs`
-    1. `MeasurementTableCSV`: the file name of the CSV table
-    2. `FigureFileName`: how the user wants to name the output file
-  - And it generates one `output`: an `.svg` file named according to `FigureFileName`
-- the `job.yml` provides the required `input` parameters for `workflow.cwl`
-  - the relative path to the CSV table input: `sugar_result.csv`
-  - the desired file name: `heatmap`
 
 ## Using the workflow in your ARC
 
