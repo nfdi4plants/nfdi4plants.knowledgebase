@@ -40,15 +40,15 @@ inputs:
       prefix: -i
 outputs:
   myFileOutput:
-	type: File
-	outputBinding:
+  type: File
+  outputBinding:
       # this returns a specific file
-	  glob: myOutput.txt
+    glob: myOutput.txt
   myFileArrayOutput:
     type: File[]
     outputBinding:
-	  # this returns all files with the extension .txt
-	  glob: $(runtime.outdir)/*.txt
+    # this returns all files with the extension .txt
+    glob: $(runtime.outdir)/*.txt
   myDirectoryOutput:
     type: Directory
     outputBinding:
@@ -91,15 +91,15 @@ inputs:
       prefix: -i
 outputs:
   myFileOutput:
-	type: File
-	outputBinding:
+  type: File
+  outputBinding:
       # this returns a specific file
-	  glob: myOutput.txt
+    glob: myOutput.txt
   myFileArrayOutput:
     type: File[]
     outputBinding:
-	  # this returns all files with the extension .txt
-	  glob: $(runtime.outdir)/*.txt
+    # this returns all files with the extension .txt
+    glob: $(runtime.outdir)/*.txt
   myDirectoryOutput:
     type: Directory
     outputBinding:
@@ -153,6 +153,7 @@ outputs:
       glob: "result.csv"
 
 ```
+
 [Example](https://git.nfdi4plants.org/muehlhaus/ArcPrototype/-/tree/main/workflows/FixedScript)
 
 ### With a fixed script in a mounted arc
@@ -243,6 +244,7 @@ outputs:
     outputBinding:
       glob: "./arc/runs/myRun/result.csv"
 ```
+
 The Dockerfile should only include operations that reference resources that are available online or within the baseimage. COPY operations that point to local files for
 example won't work in the context of CWL. If they are necessary for the execution in the devcontainer context (e.g. configuration for editors), but not the execution of the script, they
 can be prefixed with a `*` to make the execution of the operation optional.
