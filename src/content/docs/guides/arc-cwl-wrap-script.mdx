@@ -15,6 +15,7 @@ import { FileTree } from '@astrojs/starlight/components';
 import { Steps } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 import ViolasARCFinal from '@components/mdx/ViolasARC-final.mdx'
+import Mermaid from '@components/mdx/Mermaid.astro'
 
 :::note
 This builds on the ARC created in the [Start here](/nfdi4plants.knowledgebase/start-here/)
@@ -150,7 +151,19 @@ FigureFileName: heatmap
     - **workflow.cwl**
 </FileTree>
 
-
 ## Execute the run
 
 
+<Mermaid>
+
+```mermaid
+flowchart TD
+
+heatmap.py --o CWL
+
+sugar_result.csv ===CWL@{ shape: doc, label: "workflow.cwl" }==> heatmap.svg
+
+job.yml --o CWL
+```
+
+</Mermaid>
