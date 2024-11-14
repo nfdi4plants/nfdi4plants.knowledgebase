@@ -4,11 +4,9 @@ lastUpdated: 2024-11-14
 authors:
   - dominik-brilhaus
 sidebar:
-  order: 4
   badge:
-    text: wip
-    variant: caution
-draft: true
+    text: new
+    variant: tip
 ---
 
 import { FileTree } from '@astrojs/starlight/components';
@@ -17,34 +15,25 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 import ViolasARCFinal from '@components/mdx/ViolasARC-final.mdx'
 import Mermaid from '@components/mdx/Mermaid.astro'
 
-:::note
-This builds on the ARC created in the [Start here](/nfdi4plants.knowledgebase/start-here/)
+Here we wrap a minimal example script into a [CWL](/nfdi4plants.knowledgebase/CWL) document. We use a python script (`heatmap.py`), that creates a heatmap file (`heatmap.svg`) based on an input table containing sugar abundance assay data (`sugar_result.csv`).
+Wrappig the script in CWL makes it reusable in another ARC to generate the same type of heatmap based on another input table. For more details, checkout the [CWL](/nfdi4plants.knowledgebase/CWL)
+
+
+## Example Data
+
+This guide builds on the ARC created in the [Start here](/nfdi4plants.knowledgebase/start-here/) guide. 
+If you have not yet followed the guide, you can download the ARC (e.g. via [ARCitect](/nfdi4plants.knowledgebase/arcitect)) from the [DataHUB](https://git.nfdi4plants.org/training/AthalianaColdStressSugar).
 
 <details>
-<summary>Click here to see what the ARC looks like</summary>
+<summary>This is what the ARC looks like</summary>
 
 <ViolasARCFinal />
 
 </details>
 
-You can also download the ARC (e.g. via [ARCitect](/nfdi4plants.knowledgebase/arcitect)) from the [DataHUB](https://git.nfdi4plants.org/training/AthalianaColdStressSugar).
+## Isolate run parameters and workflow
 
-:::
-
-## Scripts and CWL files
-
-We generate the following three files and place them in the ARC.
-
-<div class="overflow-x-auto">
-          <div class="min-w-[800px]" >
-
-File name   | Description                                   | Location in the ARC
----         | ---                                           | ---
-`heatmap.py`  | Script used for data analysis | `workflows/heatmap/heatmap.py`
-`workflow.cwl`  | CWL document wrapping the `heatmap.py` | `workflows/heatmap/workflow.cwl`
-`job.yml`  | Yaml providing the parameters for `workflow.cwl` | `runs/heatmap-run/job.yml`
-
-</div></div>
+We add the following three files to the ARC. You can <a href="/nfdi4plants.knowledgebase/violas-cwl.zip">**download the files here**</a>. 
 
 <Tabs syncKey="os">
 <TabItem label="heatmap.py" icon='seti:python'>
@@ -121,17 +110,46 @@ FigureFileName: heatmap
 </TabItem>
 </Tabs>
 
-## Isolate run parameters and workflow 
+<Mermaid>
+
+```mermaid
+flowchart LR
+
+subgraph "workflow.cwl"
+  py@{ shape: doc, label: "heatmap.py" }
+end
+
+sugar_result.csv -.- job.yml --o workflow.cwl--> heatmap.svg
+```
+
+</Mermaid>
+
+Briefly summarized,
+
+- the `heatmap.py` is the example data analysis script, which creates a heatmap based on a CSV table input
+- the `workflow.cwl` is a CWL document binds the `heatmap.py`
+  - It requires two `inputs`
+    1. `MeasurementTableCSV`: the file name of the CSV table
+    2. `FigureFileName`: how the user wants to name the output file
+  - And it generates one `output`: an `.svg` file named according to `FigureFileName`
+- the `job.yml` provides the required `input` parameters for `workflow.cwl`
+  - the relative path to the CSV table input: `sugar_result.csv`
+  - the desired file name: `heatmap`
+
+## Using the workflow in your ARC
 
 <Steps>
 
+1. Open the [example ARC](#example-data)
 1. Add a folder "heatmap" to `workflows`
-1. Add the `workflow.cwl` to `workflows/heatmap`
-1. Add the `heatmap.py` to `workflows/heatmap`
+   - Import `workflow.cwl` into `workflows/heatmap`
+   - Import `heatmap.py` into `workflows/heatmap`
 2. Add a folder "heatmap-run" to `runs` 
-2. Add the `job.yml` to `runs/heatmap-run`
+   - Import `job.yml` into `runs/heatmap-run`
 
 </Steps>
+
+The ARC should now look like this:
 
 <FileTree>
 - assays
@@ -151,19 +169,23 @@ FigureFileName: heatmap
     - **workflow.cwl**
 </FileTree>
 
-## Execute the run
 
+<Steps>
 
-<Mermaid>
+3. In the ARC, navigate to the `heatmap-run` folder:
 
-```mermaid
-flowchart TD
+    ```bash
+    cd runs/heatmap-run
+    ```
 
-heatmap.py --o CWL
+4. Use the `cwltool` to run the workflow:
 
-sugar_result.csv ===CWL@{ shape: doc, label: "workflow.cwl" }==> heatmap.svg
+    ```bash
+    cwltool ../../workflows/heatmap job.yml
+    ```
+    
+    :::note[CWL]
+    This assumes that [cwltool](/nfdi4plants.knowledgebase/cwl/cwl-runner-installation) is installed on your system.
+    :::
 
-job.yml --o CWL
-```
-
-</Mermaid>
+</Steps>
