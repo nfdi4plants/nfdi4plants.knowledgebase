@@ -4,11 +4,24 @@ lastUpdated: 2024-04-26
 authors: 
   - kevin-frey
   - stella-eggels
+  - patrick-blume
 ---
+
+import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+<Tabs syncKey="swateHost">
+<TabItem label="Browser">
 
 ![](@images/swate/swate-alpha-add-building-block.png)
 
-import { Steps } from '@astrojs/starlight/components';
+</TabItem>
+<TabItem label="Excel">
+
+![](@images/swate/swate-excel-add-building-block.png)
+
+</TabItem>
+</Tabs>
 
 <Steps>
 
@@ -40,9 +53,37 @@ import { Steps } from '@astrojs/starlight/components';
       </p>
     </details>
 
+    :::note
     If you cannot find a fitting term, you can write an issue to request an ontology term [here](https://github.com/nfdi4plants/nfdi4plants_ontology/issues/new/choose) **OR** use free text input.
+    :::
+</Steps>
 
-4. Click "Add column" to insert the building block into an existing [Annotation Table](/nfdi4plants.knowledgebase/swate/annotation-table). The new building block will be added to the right side of the table. To change the position you can use the [context menu](/nfdi4plants.knowledgebase/swate/context-menu).
+<Tabs syncKey="swateHost">
+<TabItem label="Browser">
+
+<Steps>
+
+4. Click "Add column" to insert the building block into an existing [Annotation Table](/nfdi4plants.knowledgebase/swate/annotation-table). 
+The new building block will be added to the right side of the table. 
+To change the position you can use the [context menu](/nfdi4plants.knowledgebase/swate/context-menu).
+
+</Steps>
+
+</TabItem>
+<TabItem label="Excel">
+
+<Steps>
+
+4. Click "Add column" to insert the building block into an existing [Annotation Table](/nfdi4plants.knowledgebase/swate/annotation-table). 
+The new building block will be added at your selected column of the table. 
+When you have selected a column outside the table or the worksheet contains no annotation table, "Add column" fails.
+
+</Steps>
+
+</TabItem>
+</Tabs>
+
+<Steps>
 
 5. Depending on the [building block type](/nfdi4plants.knowledgebase/swate/building-blocks), multiple columns might be created.
 

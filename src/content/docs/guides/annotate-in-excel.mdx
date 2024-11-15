@@ -2,11 +2,58 @@
 title: Annotate in Excel
 authors:
   - kevin-frey
+  - patrick-blume
 sidebar:
+  order: 1
   badge:
-    text: beta
+    text: new
     variant: caution
-draft: true
 ---
 
-Lorem ipsum
+import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Installation
+
+With the help of an [Excel-Add-In](https://learn.microsoft.com/de-de/office/dev/add-ins/excel/excel-add-ins-overview) you can manage your data, utilizing the [ARC](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/core-concepts/arc/) standard, directly in excel, without the necessity to upload it anywhere. 
+The functionality the excel-add-in provides are similar to [Swate](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/swate/) and the differences will be explained in the different sections of swate.
+The excel-add-in will soon be published in the official [Microsoft Excel-Add-Ins Store](https://appsource.microsoft.com/en-us/marketplace/apps?product=excel).
+Currently, we recommend the installation using the [excel-browser version provided by microsoft](https://excel.cloud.microsoft/?wdOrigin=MARKETING.FREE.GO-TO-EXCEL) because the set up is much easier than with a local excel version.
+
+<Tabs syncKey="swateHost">
+<TabItem label="Browser">
+
+<Steps>
+
+1. In order to annotate your data in Excel, based on the DataPlant standard, you have to download the [Manifest File](https://github.com/nfdi4plants/Swate/tree/main/src/Client/public).
+2. After downloading the manifest file, you have to upload it to Excel, by clicking on the Add-Ins button (a) in the start tab of Excel.
+3. Then you click on the Additional Add-Ins button in the exanded widget
+
+    ![Swate Excel Brwoser Installation Step 1](@images/swate/swate-browser-excel-add-in-basic.png)
+
+4. In the next step you select My Add-Ins (a) and Upload My Add-In.
+
+    ![Swate Excel Brwoser Installation Step 2](@images/swate/swate-browser-excel-add-in-additional-ones.png)
+
+5. Then you select choose the folder where you have downloaded the [Manifest File](https://github.com/nfdi4plants/Swate/tree/main/src/Client/public) to and select it, in order to upload it.
+6. When the installation was successful, the icon of [Swate](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/swate/), the Excel-Add-In for annotating data, should be available in the data tab.
+7. When you click on the icon the sidebar of swate should appear. Its size is adaptable and when it is big enough, the quick icons of the navbar are visible.
+8. When everything was successful, it should look similar to this:
+
+</Steps>
+
+</TabItem>
+<TabItem label="Excel">
+
+<Steps>
+
+1. Follow the installation guide for [Excel-Add-Ins](https://support.microsoft.com/en-us/office/add-or-remove-add-ins-in-excel-0af570c4-5cf3-4fa9-9b88-403625a0b460).
+2. When the installation was successful, the icon of [Swate](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/swate/), the Excel-Add-In for annotating data, should be available in the data tab.
+3. When you click on the icon the sidebar of swate should appear. Its size is adaptable and when it is big enough, the quick icons of the navbar are visible.
+4. When everything was successful, it should look similar to this:
+
+</Steps>
+
+</TabItem>
+</Tabs>
+![Swate Sidebar Overview](@images/swate/swate-excel-overview.png)
