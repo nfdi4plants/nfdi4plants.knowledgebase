@@ -1,5 +1,5 @@
 ---
-title: ARCs in Enabling Platforms
+title: Optimizing ARC Integration
 lastUpdated: 2023-08-04
 authors:
   - dominik-brilhaus
