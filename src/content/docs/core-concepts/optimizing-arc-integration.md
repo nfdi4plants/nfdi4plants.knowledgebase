@@ -3,6 +3,8 @@ title: Optimizing ARC Integration
 lastUpdated: 2023-08-04
 authors:
   - dominik-brilhaus
+sidebar:
+  order: 4
 ---
 
 Here we explore how the ARC can help streamline data flows and project management in enabling platforms.
