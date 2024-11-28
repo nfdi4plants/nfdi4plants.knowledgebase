@@ -11,7 +11,9 @@ authors:
 
 
 ## Why is elab2ARC needed?
-Many researchers use ELNs to document their experiments. However, transferring metadata from ELNs to ARCs manually can be error-prone and time-consuming. elab2ARC addresses this gap by providing a streamlined method to extract, transform, and load data directly from ELN records into an ARC-compliant structure.
+Many researchers use electronic lab notebooks (ELNs) to document their experiments. However, transferring metadata from ELNs to ARCs manually can be error-prone and time-consuming. elab2ARC addresses this gap by providing a streamlined method to extract, transform, and load data directly from ELN records into an ARC-compliant structure.
+
+## Feature of elab2ARC
 
 ## Setting up elab2ARC
 
@@ -28,22 +30,48 @@ import DataHubPat from '../datahub/navigation-settings/datahub-generate-project-
 
 <Steps>
 1. Login to your elabFTW instance 
-2. Navigate to "User Settings". Head to the ARCitect's GitHub [release page](https://github.com/nfdi4plants/ARCitect/releases/latest).
-2. Under "Assets" Download the latest release for Windows (`ARCitect-x.x.x-win.zip`).
-3. In Windows Explorer, open the folder where you downloaded the ARCitect.
-4. Unzip (`Right click` ➞ `Extract All..`) the folder (`ARCitect-x.x.x-win.zip`). You can move this folder to another location (e.g. `Program files`).
-5. Start the ARCitect, by clicking the `ARCitect` application.
+2. Navigate to 'User Settings'  
+    ![](@images/images/guides/eLabFTW/eLabFTW-user-settings.png)
+3. Navigate to 'API KEYS' Tab. Enter a name and a **Read Only** permissions
+    ![](@images/images/guides/eLabFTW/eLabFTW-user-API-key.png)
+4. Copy key somewhere, because it will only displayed ones
+    ![](@images/images/guides/eLabFTW/eLabFTW-user-API-key-2.png)
 
-6. Once started, you see a Windows Defender warning. To proceed, click `More info` and then `Run anyway`.
-
-    ![](@images/arcitect/win-defender.png)
-
-7. Windows Defender Firewall further asks you to allow network communication. This enables communication with the [DataHUB](/nfdi4plants.knowledgebase/datahub).
-
-    ![](@images/arcitect/win-firewall.png)
-
-    :::tip
-    You might have to select the app from your taskbar.
-    :::
 </Steps>
+
+### Modify eLabFTW experiment
+
+
+<Steps>
+1. Select the eLabFTW experiment, which you want to convert and go to edit mode
+2. Add an extra field to your eLabFTW experiment (bottom)
+    ![](@images/images/guides/eLabFTW/eLabFTW-add-extra-field.png)
+3. Use field type **URL** and as a name **datahub_url** and enter the **URL of your ARC** as the default value
+    ![](@images/images/guides/eLabFTW/eLabFTW-extra-field-2.png)
+4. Save the entry
+
+</Steps>
+
+## How to use elab2ARC 
+
+<Steps>
+1. Select your elabFTW Instance [1]
+2. Paste eLabFTW API key [2]
+3. Paste DataHUB Project Access Token [3]
+    ![](@images/images/guides/eLabFTW/elab2ARC-tool-usage.png)
+
+4. Enter eLabFTW Experiment ID [4] (use comma to seperate multiple IDs) which can be found in the experiment settings. Make sure that you have added the DataHUB URL as an extra field before. 
+    ![](@images/images/guides/eLabFTW/eLabFTW-extra-field-2.png)
+5. Click **One Click Submission** [5] to start the converting. 
+
+</Steps>
+
+## Conversion 
+
+The elab2ARC tool will automatically convert your elabFTW experiments into ARC format
+- create a new assay folder with eLabFTW experiment name as assay name
+- create the assay folder structure (dataset/protocols/isa.assay)
+- convert experiment main text into a .md file and store it in the protocol folder
+- add all attachments of the eLabFTW experiment into the dataset folder
+- enter name/email/affiliation of the eLabFTW experiment metadata into the isa.assay sheet
 
