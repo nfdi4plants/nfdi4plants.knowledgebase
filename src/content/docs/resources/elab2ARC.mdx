@@ -1,0 +1,61 @@
+---
+title: elab2ARC
+lastUpdated: 2024-11-28
+description: elab2ARC is a tool for converting eLabFTW experiment data into ARC format.
+authors: 
+  - xiaoran-zhou
+  - sabrina-zander
+---
+
+[elab2ARC](http://nfdi4plants.org/elab2arc) is a tool for converting eLabFTW experiments into [ARC]() [Data Management Plan](/nfdi4plants.knowledgebase/fundamentals/data-management-plan) generator, which can help users creating a plan for their [research data management](/nfdi4plants.knowledgebase/fundamentals/research-data-management). By using DataPLAN, standardized DMPs for Horizon Europe and Deutsche Forschungsgemeinschaft (DFG) can be generated in five minutes. The fast generation speed is enabled by a template design with integratable answers and single-page web application technology. 
+
+
+## Create an access token in DataHUB
+
+import DataHubPat from '../datahub/navigation-settings/datahub-generate-pat.mdx'
+
+## Create an eLabFTW API key
+
+
+
+## Why is another DMP tool needed?
+
+From funding agencies to research institutes, DMPs are required more and more often. Generating, following up and updating a DMP has increased the cost and workload of researchers. Although many tools have been developed to help creating DMPs, most of the tools do not reduce a significant amount workload. As DataPLANT uses standardized tools, protocols and formats to manage data, planing of the data management can also be standardized. The tool DataPLAN does not only help people to answer the DMPs, but comes already with a superset of standardized answers. Thus, instead of writing their own answers from scratch, users can select predefined ones, which can save a lot of workload. In addition, DataPLAN offers a practical guide, which is a detailed and comprehensive document for the project team and data stewards to follow.   
+  
+
+## Simple layout
+DataPLAN has a two-column layout (Fig. 1). In the left column (the red box), a live-preview of the generated document is shown; in the right column (the blue box), a questionnaire is shown. While answering all the questions in the questionnaire, the DMP in the live-preview will automatically update based on the answers to the questionnaire. This live update gives users a unique What You See Is What You Get (WYSIWYG) experience.
+
+![The layout of DataPLAN](@images/dataplan/dataplan-layout.png)
+*Figure 1: Layout of DataPLAN. The red box shows a live preview of the generated document; the blue box shows the single-page questionnaire*
+
+## The answers-integrated templates
+
+Unlike other DMP tools, which only have questions in their templates, the standardized answers of the DMP questions are directly integrated into the templates with DataPLAN. The final exported DMP document will only include answers selected by the users. For example, in Fig. 2, all checkbox options of Question 2 are selected. Therefore, all the integrated answers are shown in the final DMP document (green text). In Fig. 3, some checkbox options in Question 2 are not selected. Therefore, these answers are not shown in the final DMP document. The answers prepared in the DataPLAN tool are deeply coordinated with other DataPLANT tools such as the [ARC Commander](/nfdi4plants.knowledgebase/arc-commander) and [Swate](/nfdi4plants.knowledgebase/swate).  
+
+![Before deselect checkboxes](@images/dataplan/dataplan-before-deselect.png)
+*Figure 2: If all checkboxes of question 2 are selected, all counterparts in the DMP text will be kept.*
+
+![After deselect checkboxes](@images/dataplan/dataplan-after-deselect.png)
+*Figure 3: If some of the checkboxes are not selected in question 2, the respective counterparts in the DMP text will be removed.*
+
+
+For specific information, which is unique between different projects, such as the "project name" and the "project aim", the users can use free-text for the respective input fields. The counter parts in the DMP will be updated lively as well.   
+
+## Templates can be customized
+All templates prepared and provided by DataPLAN are customizable. DataPLAN has a user-defined template section (Fig. 4), in which templates are editable and can be directly loaded into DataPLAN.   
+
+![User-defined template can also be directly used](@images/dataplan/dataplan-user-defined.png)
+*Figure 4: All  templates prepared and provided by the DataPLAN are customizable. The templates can be reused to create user-defined templates.*
+
+## Offline usable and absolute secure
+DataPLAN can be used offline conveniently. Unlike other DMP tools, which can be complicated to run in offline situations, the [DataPLAN](https://plan.nfdi4plants.org) tool itself can be saved as html file using "ctrl + s" (Fig. 5) and used subsequently. The user can also disconnect the internet after the DataPLAN website has been loaded completely. The serverless design of DataPLAN makes it absolute secure, because it prevents the loss and exposure of data during internet data transfer or online storage.  
+
+![press Ctrl + S to save the file in html and then use it later on](@images/dataplan/dataplan-save.png)
+*Figure 5: press Ctrl + S to save the file in html for using it later on.*
+
+## No registration and free to share
+Any user with or without registration can use all features of DataPLAN. The user input is saved automatically in the local storage. To share the answers or synchronize between different computers, answers can be exported in a first step and afterwards imported again into DataPLAN. 
+
+Give [DataPLAN](https://plan.nfdi4plants.org) a try and share your feedback or feature request with us. The developers of DataPLAN will be happy to hear about your needs and further improve the DataPLAN tool. 
+
