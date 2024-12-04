@@ -1,9 +1,11 @@
 ---
 title: Git Troubleshooting & Tips 
-lastUpdated: 2024-07-22
+lastUpdated: 2024-12-04
 authors: 
   - dominik-brilhaus
 ---
+
+import { Steps } from '@astrojs/starlight/components';
 
 :::note[About this guide]
 - This is mostly for data stewards.
@@ -308,16 +310,43 @@ In this case you would have to download all LFS objects from the original remote
 
 ### Step-by-step track large file(s) via LFS
 
-Done in small steps plus capturing log
+Done in small steps plus logging.
+Note this works on shells like macOS terminal, linux terminal, Git Bash (available for Windows).
+This likely does not work on Windows Powershell and definitely not in Windows command prompt.
 
-```bash
-git lfs track "assays/RNAseq_RawData/dataset/**"  ## Track files via LFS (this adds them to .gitattributes)
-git add .gitattributes  ## git track .gitattributes first
-git add assays/RNAseq_RawData/dataset/* ## git track the large files
+<Steps>
 
-GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1 git commit -m "add rnaseq files to LFS" -v >> git-commit-LFS.log 2>&1 &
-GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1 git push -v >> git-push-LFS.log 2>&1 &
-```
+1. Track files via LFS (this adds them to .gitattributes)
+
+    ```bash
+    git lfs track "assays/RNAseq_RawData/dataset/**"
+    ```
+
+2. git track the `.gitattributes` file first
+
+    ```bash
+    git add .gitattributes
+    ```
+
+3. Git add the large files
+
+    ```bash
+    git add assays/RNAseq_RawData/dataset/*
+    ```
+
+4. Git commit (and write what's happening to a log file)
+
+    ```bash
+    GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1 git commit -m "add rnaseq files to LFS" -v >> git-commit-LFS.log 2>&1 &
+    ```
+
+5. Git push (and write what's happening to a log file)
+
+    ```bash
+    GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1 git push -v >> git-push-LFS.log 2>&1 &
+    ```
+
+</Steps>
 
 ### Check the status of LFS-tracked files
 
