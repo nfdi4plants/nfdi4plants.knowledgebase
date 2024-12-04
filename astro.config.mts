@@ -89,7 +89,6 @@ export default defineConfig({
         {
           label: 'DataHUB',
           collapsed: true,
-          // autogenerate: { directory: 'datahub' },
           items:[
             'datahub',           
             {
@@ -123,7 +122,28 @@ export default defineConfig({
           label: 'ARC Commander',
           // Collapse the group by default.
           collapsed: true,
-          autogenerate: { directory: 'arc-commander' },
+          items:[
+            'arc-commander',           
+            {
+              label: 'Setup',
+              collapsed: false,
+              autogenerate: { directory: 'arc-commander/setup'},
+            },
+            'arc-commander/before-we-start',
+            'arc-commander/arc-commander-quick-start',
+            'arc-commander/arc-commander-quick-start-expert',
+            {
+              label: 'Central Functions',
+              collapsed: false,
+              autogenerate: { directory: 'arc-commander/central-functions'},
+            },
+            {
+              label: 'ISA metadata',
+              collapsed: false,
+              autogenerate: { directory: 'arc-commander/isa'},
+            },
+            'arc-commander/lfs',
+          ]
         },
         {
           label: 'Swate',

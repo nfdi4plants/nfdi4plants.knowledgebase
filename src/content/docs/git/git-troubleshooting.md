@@ -15,8 +15,8 @@ authors:
 Some reasons, why we now sometimes run into git issues
 
 - Over the past years we asked users (e.g. during trainings) to install git with minium required guidance
-- Even though more advanced tools (ARCitect) now bring their own git installation, there might still occur interferences with older installations
-- There might also be issues of tools (e.g. ARCitect and ARC commander) or different versions of those tools handling git-related tasks a bit differently or more / less strict (e.g. things like `main` as the default branch)
+- Even though more advanced tools ([ARCitect](/nfdi4plants.knowledgebase/arcitect/)) now bring their own git installation, there might still occur interferences with older installations
+- There might also be issues of tools (e.g. [ARCitect](/nfdi4plants.knowledgebase/arcitect/) and [ARC commander](/nfdi4plants.knowledgebase/arc-commander/)) or different versions of those tools handling git-related tasks a bit differently or more / less strict (e.g. things like `main` as the default branch)
 - The current (versions of) tools were not really built for collaboration with many people on one ARC (at least not with default settings from DataHUB side). So common errors are related to merge conflicts (multiple users changing files) and divergent branches (e.g. between local and remote clones of the ARC).
 - Some behaviors are simply very use-case or setup specific and will in any case and even with the best tooling require some stewardship
 
@@ -34,6 +34,7 @@ Some reasons, why we now sometimes run into git issues
 - On macOS: right-click ARC folder-->"Services"--> "New Terminal at Folder"
 - On windows: open folder via Explorer; type "cmd" or "powershell" into the address field on top of Explorer
 - On linux / macOS terminal: `cd path/to/ARC`
+- From inside ARCitect: Tools -> Command Window
 
 3. try some of the git commands and debugging below
 
@@ -266,7 +267,7 @@ It usually helps to just retrieve new ones. If not, you might have to remove exi
 
 #### Authenticate the computer
 
-Option 1: [via ARC Commander](/nfdi4plants.knowledgebase/arc-commander/access)
+Option 1: [via ARC Commander](/nfdi4plants.knowledgebase/arc-commander/setup/access)
 
 Option 2: "by hand"
   1. Login to the [DataHUB](https://git.nfdi4plants.org/)
