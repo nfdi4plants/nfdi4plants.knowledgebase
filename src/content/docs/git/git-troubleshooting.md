@@ -288,12 +288,21 @@ git config lfs.activitytimeout 0
 
 ### Missing LFS objects
 
-If you have downloaded (cloned) an ARC without large files and try to upload it to a new location (i.e. new remote due to a transfer to other user, group, etc.), you will see the following or similar error
+The following errors are related to missing LFS object: 
 
 ```bash
 hint: Your push was rejected due to missing or corrupt local objects.
 error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCName.git'
 ```
+
+```bash
+remote: GitLab: LFS objects are missing. Ensure LFS is properly set up or try a manual "git lfs push --all".
+```
+
+Possible reasons, why this happens:
+
+- you have downloaded (cloned) an ARC without the large files (i.e. only the pointer files) and try to upload it to another location on the DataHUB (i.e. new remote due to a transfer to other user, group, etc. or renamed ARC)
+- you moved a pointer file (instead of an actual large file) from one ARC on your computer to another ARC and tried to upload
 
 In this case you would have to download all LFS objects from the original remote first -> ask a data steward for help.
 
