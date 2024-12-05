@@ -13,11 +13,22 @@ import { Steps } from '@astrojs/starlight/components';
 
 
 ## Why is elab2ARC needed?
-Many researchers use electronic lab notebooks (ELNs) to document their experiments. However, transferring metadata from ELNs to ARCs manually can be error-prone and time-consuming. elab2ARC addresses this gap by providing a streamlined method to extract, transform, and load data directly from ELN records into an ARC-compliant structure.
+Many researchers rely on electronic lab notebooks (ELNs) to document their experiments due to their flexibility in handling free-form text and supporting data files up to 100 MB. However, when metadata standardization becomes necessary or when raw data files exceed the file size limit, other research data standards, such as Annotated Research Context (ARC), may be required.
+
+ARC offers robust metadata annotation tools and customizable templates that help standardize the unstructured content typically found in ELNs. Additionally, ARC supports large files up to 10 GB, making it an excellent complement to ELNs like eLabFTW, which are not designed to handle raw data storage or larger file sizes.
+
+Manually transferring metadata from ELNs to ARC can be both error-prone and time-consuming. To address this challenge, elab2ARC provides an efficient solution by automating the extraction, transformation, and loading (ETL) of data from ELN records into ARC-compliant structures. This tool streamlines the process, reduces errors, and ensures consistency, enhancing research data management workflows.
 
 ## Features of elab2ARC
 
-xxxx
+**elab2ARC** simplifies converting eLabFTW experiment data into Annotated Research Context (ARC) format. Key features include:
+
+- **Direct Data Retrieval**: Extracts experiment data from eLabFTW using experiment IDs and API keys.
+- **ARC Conversion**: Transforms data into ARC format, organizing protocols, datasets, and metadata.
+- **DataHub Integration**: Automates ARC file updates and pushes them to a DataHub repository.
+- **Multi-Instance Support**: Manages data from multiple eLabFTW instances seamlessly.
+
+These features streamline workflows, ensuring efficient and standardized data management.
 
 ## Setting up elab2ARC
 
@@ -40,7 +51,7 @@ import DataHubPat from '../datahub/navigation-settings/datahub-generate-project-
     ![](@images/elab2ARC/eLabFTW-user-settings.png)
 3. Navigate to 'API KEYS' Tab. Enter a name and a **Read Only** permissions
     ![](@images/elab2ARC/eLabFTW-user-API-key.png)
-4. Copy key somewhere, because it will only displayed ones
+4. Save the key securely, as it will only be displayed once. Treat it like a password, as it grants access to eLabFTW.
     ![](@images/elab2ARC/eLabFTW-user-API-key-2.png)
 
 </Steps>
