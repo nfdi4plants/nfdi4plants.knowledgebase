@@ -1,9 +1,11 @@
 ---
 title: Git Troubleshooting & Tips 
-lastUpdated: 2024-07-22
+lastUpdated: 2024-12-04
 authors: 
   - dominik-brilhaus
 ---
+
+import { Steps } from '@astrojs/starlight/components';
 
 :::note[About this guide]
 - This is mostly for data stewards.
@@ -15,8 +17,8 @@ authors:
 Some reasons, why we now sometimes run into git issues
 
 - Over the past years we asked users (e.g. during trainings) to install git with minium required guidance
-- Even though more advanced tools (ARCitect) now bring their own git installation, there might still occur interferences with older installations
-- There might also be issues of tools (e.g. ARCitect and ARC commander) or different versions of those tools handling git-related tasks a bit differently or more / less strict (e.g. things like `main` as the default branch)
+- Even though more advanced tools ([ARCitect](/nfdi4plants.knowledgebase/arcitect/)) now bring their own git installation, there might still occur interferences with older installations
+- There might also be issues of tools (e.g. [ARCitect](/nfdi4plants.knowledgebase/arcitect/) and [ARC commander](/nfdi4plants.knowledgebase/arc-commander/)) or different versions of those tools handling git-related tasks a bit differently or more / less strict (e.g. things like `main` as the default branch)
 - The current (versions of) tools were not really built for collaboration with many people on one ARC (at least not with default settings from DataHUB side). So common errors are related to merge conflicts (multiple users changing files) and divergent branches (e.g. between local and remote clones of the ARC).
 - Some behaviors are simply very use-case or setup specific and will in any case and even with the best tooling require some stewardship
 
@@ -34,6 +36,7 @@ Some reasons, why we now sometimes run into git issues
 - On macOS: right-click ARC folder-->"Services"--> "New Terminal at Folder"
 - On windows: open folder via Explorer; type "cmd" or "powershell" into the address field on top of Explorer
 - On linux / macOS terminal: `cd path/to/ARC`
+- From inside ARCitect: Tools -> Command Window
 
 3. try some of the git commands and debugging below
 
@@ -46,14 +49,16 @@ This is not an exhaustive trouble-shooting list. In most cases git and search ma
 error message* | possible reason | possible solution
 --- | --- | ---
 `remote: HTTP Basic: Access denied`  `fatal: Authentication failed for 'https://git.nfdi4plants.org/UserName/ARCname'` | Your computer is not "linked" to your DataHUB account | [Access Denied](#access-denied)
-`error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCname' hint: Your push was rejected due to missing or corrupt local objects.` | You tried to upload LFS-tracked files that are not present on your computer | [Git-LFS](#git-lfs)
+`error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCname' hint: Your push was rejected due to missing or corrupt local objects.` | You tried to upload LFS-tracked files that are not present on your computer | [Missing LFS Objects](#missing-lfs-objects)
+`remote: GitLab: LFS objects are missing. Ensure LFS is properly set up or try a manual "git lfs push --all"` | You tried to upload LFS-tracked files that are not present on your computer | [Missing LFS Objects](#missing-lfs-objects)
+`LFS: PUT "<https://git.nfdi4plants.org/.../...>" read tcp ... i/o timeout` | You ran into a time out, likely due to very large single files | [Prevent LFS time out error](#prevent-lfs-time-out-error)
 `error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCname' hint: Updates were rejected because the remote contains work that you do not have locally.` | Your local ARC is out of sync with the remote. | [ARC not in sync with the DataHUB](#arc-not-in-sync-with-the-datahub)
 `ERROR: Can not sync with remote as no remote repository address was specified.` | There is no URL specified for your ARC's remote | [Git remote](#git-remote)
 `ERROR: GIT: fatal: repository 'https://git.nfdi4plants.org/UserName/ARCname.git' not found` | The remote URL does not exist | [Git remote](#git-remote)
 `ERROR: GIT: fatal: detected dubious ownership` | This is an error typically seen when working on mounted network drives | [Dubious ownership](#dubious-ownership)
-`fatal: credential-cache unavailable; no unix socket support` | Likely happens on Windows, if a gitconfig `credential.helper=cache` | Adjust the [Git Credential helper](#git-credential-helper) setting
+`fatal: credential-cache unavailable; no unix socket support` | Likely happens on Windows, if a gitconfig contains `credential.helper=cache` | Adjust the [Git Credential helper](#git-credential-helper) setting
 `fatal: Need to specify how to reconcile divergent branches.` | Your ARC contains multiple branches that progressed independently and need to be merged | Contact a data steward.
-`error: unable to create file <path/to/file> : Filename too long` | Likely occurs on Windows, if your ARC is stored in a deeply nested folder, i.e. a folder in a folder in a folder ...| Store the ARC on a higher level.
+`error: unable to create file <path/to/file> : Filename too long` | Likely occurs on Windows, if your ARC or files in your ARC are stored in a deeply nested folder, i.e. a folder in a folder in a folder ...| [Allow very long file names](#allow-very-long-file-names)
 
 :::tip
 *typically displayed during synchronization via ARCitect (DataHUB Sync --> push / pull) or `arc sync`. Even if ARCitect shows "Complete", it's sometimes worth it to scroll up and see these errors.
@@ -108,6 +113,8 @@ flag | meaning
 --global | current user on that computer
 --system | system-wide (all users)
 --local | current repository (ARC)
+
+### Checking the git config
 
 The following command lists all configurations and where they originate (--show-origin) from and what there scope is (--show-scope).
 
@@ -166,6 +173,14 @@ This can be solved by either of the following:
 :::tip
 If you use ARC commander, we recommend to use the second approach to keep storing your credentials for DataHUB synchronization. 
 :::
+
+#### Allow very long file names
+
+Users (especially on windows) run into errors with long overall file names (i.e. full path). This setting should fix it:
+
+```bash
+git config --global core.longpaths true
+```
 
 ## Git remote
 
@@ -228,9 +243,146 @@ If you also want to display branches that exist on the remote (but not locally),
 git branch --all
 ```
 
+## Git LFS
+
+[Git LFS](/nfdi4plants.knowledgebase/git/git-lfs) is basically the system in the back to simplify working with git and (ARCs containing) large data files. ARC commander and ARCitect offer options to download (clone) an ARC without large files; speeding up the process and avoiding waste of data storage, if you are only interested e.g. in the metadata.
+
+In order to properly upload large(r) files to the DataHUB via "pure git" (i.e. on the command line) or via **ARC Commander** or **ARCitect**, Git-LFS needs to be initiated on every computer (and user account) before using these tools.
+
+### Initiating git-lfs
+
+#### Checking whether LFS (large file storage) works properly for your ARCs
+
+- In ARCitect, you can see large files (defined by the threshold in the commit menu) flagged as `LFS` in the file tree
+- In the DataHUB LFS files are also flagged as `LFS`. In addition, you can click in the right sidebar of your ARC in the DataHUB on "Project Storage". Here, the major amount of your data should be stored in "LFS", while only a minor part is stored in "Repository". 
+
+#### Via command line
+
+- If you have git-lfs installed and know how to use there command line, simply run `git lfs install`.
+- You can check for the proper configuration via `git config --list --show-origin --show-scope`. Amongst others, the config should contain the following lines
+
+```
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+```
+
+#### Manually
+
+In your home folder (Windows: `C:/Users/<UserName>`, macOS: `Users/<UserName>`), create or edit the file called .gitconfig to include the following lines. 
+
+```
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+```
+
+### Prevent LFS Time out error
+
+When users try to upload very large files, i.e. not the overall push size, but single-very-large-files, they might run into a time out error. This setting should fix it:
+
+```bash
+git config lfs.activitytimeout 0
+```
+
+### Missing LFS objects
+
+The following errors are related to missing LFS object: 
+
+```bash
+hint: Your push was rejected due to missing or corrupt local objects.
+error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCName.git'
+```
+
+```bash
+remote: GitLab: LFS objects are missing. Ensure LFS is properly set up or try a manual "git lfs push --all".
+```
+
+Possible reasons, why this happens:
+
+- you have downloaded (cloned) an ARC without the large files (i.e. only the pointer files) and try to upload it to another location on the DataHUB (i.e. new remote due to a transfer to other user, group, etc. or renamed ARC)
+- you moved a pointer file (instead of an actual large file) from one ARC on your computer to another ARC and tried to upload
+
+In this case you would have to download all LFS objects from the original remote first -> ask a data steward for help.
+
+### Step-by-step track large file(s) via LFS
+
+Done in small steps plus logging.
+Note this works on shells like macOS terminal, linux terminal, Git Bash (available for Windows).
+This likely does not work on Windows Powershell and definitely not in Windows command prompt.
+
+<Steps>
+
+1. Track files via LFS (this adds them to .gitattributes)
+
+    ```bash
+    git lfs track "assays/RNAseq_RawData/dataset/**"
+    ```
+
+2. git track the `.gitattributes` file first
+
+    ```bash
+    git add .gitattributes
+    ```
+
+3. Git add the large files
+
+    ```bash
+    git add assays/RNAseq_RawData/dataset/*
+    ```
+
+4. Git commit (and write what's happening to a log file)
+
+    ```bash
+    GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1 git commit -m "add rnaseq files to LFS" -v >> git-commit-LFS.log 2>&1 &
+    ```
+
+5. Git push (and write what's happening to a log file)
+
+    ```bash
+    GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1 git push -v >> git-push-LFS.log 2>&1 &
+    ```
+
+</Steps>
+
+### Check the status of LFS-tracked files
+
+```bash
+git lfs status
+```
+
+### List LFS-tracked files
+
+To get a list of LFS-tracked files including the size of the original file, run
+
+```bash
+git lfs ls-files -ls
+```
+
+This will display the object ID (oid), the relative path to the file and the object size.
+The oid is also stored in the pointer file at the file's position.
+
+:::tip
+If checked-out and downloaded, a file with an oid `77080c4dc5820ede3e992e8116772ae6ec6ba6096e05df4e49fbb5f0665544b2` would be in the folder `.git/lfs/objects/77/08/`. So the first 4 characters of the OiD are split into two subfolders of `.git/lfs/objects/` (i.e. `/77/08/`).
+:::
+
+### Debug LFS-tracked files
+
+To get a report of all LFS-tracked files including there status, use
+
+```bash
+git lfs ls-files -d
+```
+
+Amongst others, this report will print for every LFS file, whether it is downloaded (`checkout: true; download: true`) to the local ARC or not (`checkout: false; download: false`).
+
+
 ## Common issues and error messages
 
-### ARC (files) open in multiple programs
+### ARC files opened in multiple programs
 
 A common source for issues are multiple programs that work on the ARC in parallel.
 
@@ -266,7 +418,7 @@ It usually helps to just retrieve new ones. If not, you might have to remove exi
 
 #### Authenticate the computer
 
-Option 1: [via ARC Commander](/nfdi4plants.knowledgebase/arc-commander/access)
+Option 1: [via ARC Commander](/nfdi4plants.knowledgebase/arc-commander/setup/access)
 
 Option 2: "by hand"
   1. Login to the [DataHUB](https://git.nfdi4plants.org/)
@@ -308,66 +460,6 @@ git config --global --add safe.directory *
 :::caution
 This might however pose a safety risk. Please read the details here: https://www.git-scm.com/docs/git-config#Documentation/git-config.txt-safedirectory
 :::
-
-### Git LFS
-
-[Git LFS](/nfdi4plants.knowledgebase/git/git-lfs) is basically the system in the back to simplify working with git and (ARCs containing) large data files.
-ARC commander and ARCitect offer options to download (clone) an ARC without large files; speeding up the process and avoiding waste of data storage, if you are only interested e.g. in the metadata.
-
-If you have downloaded (cloned) an ARC without large files and try to upload it to a new location (i.e. new remote due to a transfer to other user, group, etc.), you will see the following or similar error
-
-```bash error
-hint: Your push was rejected due to missing or corrupt local objects.
-error: failed to push some refs to 'https://git.nfdi4plants.org/UserName/ARCName.git'
-```
-
-In this case you would have to download all LFS objects from the original remote first -> ask a data steward for help.
-
-#### Step-by-step track large file(s) via lfs
-
-Done in small steps plus capturing log
-
-```bash
-git lfs track "assays/RNAseq_RawData/dataset/**"  ## Track files via LFS (this adds them to .gitattributes)
-git add .gitattributes  ## git track .gitattributes first
-git add assays/RNAseq_RawData/dataset/* ## git track the large files
-
-GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1 git commit -m "add rnaseq files to LFS" -v >> git-commit-LFS.log 2>&1 &
-GIT_CURL_VERBOSE=1 GIT_TRACE=1 GIT_TRACE_PACKET=1 git push -v >> git-push-LFS.log 2>&1 &
-```
-
-#### Check the status of lfs files
-
-
-```bash
-git lfs status
-```
-
-#### List LFS-tracked files
-
-To get a list of LFS-tracked files including the size of the original file, run
-
-```bash
-git lfs ls-files -ls
-```
-
-This will display the object ID (oid), the relative path to the file and the object size.
-The oid is also stored in the pointer file at the file's position.
-
-:::tip
-If checked-out and downloaded, a file with an oid `77080c4dc5820ede3e992e8116772ae6ec6ba6096e05df4e49fbb5f0665544b2` would be in the folder `.git/lfs/objects/77/08/`. So the first 4 characters of the OiD are split into two subfolders of `.git/lfs/objects/` (i.e. `/77/08/`).
-:::
-
-#### Debug LFS-tracked files
-
-To get a report of all LFS-tracked files including there status, use
-
-```bash
-git lfs ls-files -d
-```
-
-Amongst others, this report will print for every LFS file, whether it is downloaded (`checkout: true; download: true`) to the local ARC or not (`checkout: false; download: false`).
-
 
 ### Get more log
 

@@ -1,8 +1,11 @@
 ---
 title: Installation of Git and Git LFS
 lastUpdated: 2023-11-24
+author:
+    - dominik-brilhaus
+sidebar:
+  order: 1
 ---
-
 
 In order to use the ARC Commander, Git (version ≥ 2.32.0) and Git LFS must be installed on your computer.
 
@@ -32,6 +35,14 @@ git-lfs --version
 :::tip
 Recommended Git version ≥ 2.32.0
 :::
+
+### Initialize Git LFS
+
+After installation of Git LFS you **must** run the following command once to make sure Git LFS is initialized on your system.
+
+```bash
+git lfs install
+```
 
 ## Configure Git
 

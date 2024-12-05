@@ -98,7 +98,7 @@ Why do I get the error `'arc' is not recognized as an internal or external comma
 
 Your machine cannot find your ARC commander executable. Possible reasons are that you have not yet installed the ARC commander or that the `arc` executable was not added to your path. 
 
-Please carefully retry the [ARC Commander setup](/nfdi4plants.knowledgebase/arc-commander/installation). 
+Please carefully retry the [ARC Commander setup](/nfdi4plants.knowledgebase/arc-commander/setup/installation). 
 
 If this does not do the trick, please follow these steps towards debugging (on Windows): 
 
@@ -106,7 +106,7 @@ If this does not do the trick, please follow these steps towards debugging (on W
 2. Next, execute `path` to check wether the folder (e.g. `C:\Programs\ArcCommander`) appears in your path.
 3. Adapt the user's path (not admin)
    
-:bulb: If you do not have admin rights on the computer, please open the settings "Edit environment variables for your account" and follow steps described in the [ARC Commander setup](/nfdi4plants.knowledgebase/arc-commander/installation).
+:bulb: If you do not have admin rights on the computer, please open the settings "Edit environment variables for your account" and follow steps described in the [ARC Commander setup](/nfdi4plants.knowledgebase/arc-commander/setup/installation).
 
 </details>
 
