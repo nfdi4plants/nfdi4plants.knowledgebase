@@ -32,10 +32,6 @@ These features streamline workflows, ensuring efficient and standardized data ma
 
 ## Setting up elab2ARC
 
-:::note
-At the moment you can only use the tool on the eLabFTW Demo or eLabFTW HHU Instance.
-:::
-
 
 ### Create an Project Access Token in DataHUB
 
@@ -72,7 +68,7 @@ import DataHubPat from '../datahub/navigation-settings/datahub-generate-project-
 ## How to use elab2ARC 
 
 <Steps>
-1. Select your elabFTW Instance [1]
+1. Select your elabFTW Instance or add your instance [1]
 2. Paste eLabFTW API key [2]
 3. Paste DataHUB Project Access Token [3]
     ![](@images/elab2ARC/elab2ARC-tool-usage.png)
@@ -85,10 +81,12 @@ import DataHubPat from '../datahub/navigation-settings/datahub-generate-project-
 
 ## Conversion 
 
+![](@images/elab2ARC/elab2ARC-conversion.png)
+
 The elab2ARC tool will automatically convert your elabFTW experiments into ARC format
-- create a new assay folder with eLabFTW experiment name as assay name
+- create a new assay folder with eLabFTW experiment name as assay name (green)
 - create the assay folder structure (dataset/protocols/isa.assay)
-- convert experiment main text into a .md file and store it in the protocol folder
-- add all attachments of the eLabFTW experiment into the dataset folder
+- convert experiment main text into a .md file and store it in the protocol folder (purple)
+- add all attachments of the eLabFTW experiment into the dataset folder (yellow)
 - enter name/email/affiliation of the eLabFTW experiment metadata into the isa.assay sheet
 
