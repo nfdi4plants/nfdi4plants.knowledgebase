@@ -11,12 +11,13 @@ Your contribution to the DataPLANT Knowledge Base is highly appreciated. This gu
   - [VSCode](#vscode)
 - [Where should I place my content?](#where-should-i-place-my-content)
   - [Start here](#start-here)
+  - [Core Concepts](#core-concepts)
   - [Guides](#guides)
   - [`<specific-tool>`](#specific-tool)
-  - [Core concepts](#core-concepts)
-  - [Authors](#authors)
+  - [Fundamentals](#fundamentals)
+- [Authorship](#authorship)
 - [Style Guide](#style-guide)
-  - [Composition](#composition)
+- [Composition](#composition)
   - [Use Starlight components](#use-starlight-components)
   - [Use Custom components](#use-custom-components)
   - [Images](#images)
@@ -67,6 +68,10 @@ Recommended VSCode extensions:
 
 This is a place for content required for the recommended way to work with an ARC.
 
+### Core Concepts
+
+DataPLANT and ARC core concepts, design decisions, etc. 
+
 ### Guides
 
 Here you can place content for a specific topic or task. Do not place specific tools documentation here.
@@ -75,11 +80,11 @@ Here you can place content for a specific topic or task. Do not place specific t
 
 If you have a tool that is used in the context of an ARC, you can place the documentation here.
 
-### Core concepts
+### Fundamentals
 
 Basic information about RDM, not necessary ARC related.
 
-### Authors
+## Authorship
 
 Authors listed via a file in [`src/content/authors`](src/content/authors) can easily be mentioned in the yaml header of articles. 
 
@@ -114,11 +119,12 @@ All files and folders must always be [kebap-case](https://developer.mozilla.org/
 src\assets\images\arc-commander\access-2.png
 ```
 
-### Composition
+
+## Composition
 
 Always follow **DRY (Don't Repeat Yourself)** principle. If you have the same content in multiple places, consider creating a reusable component.
 
-In `.mdx` you can not only link to other content, but also directly insert other content in the current file. 
+In `.mdx` you can not only link to other content, but also directly insert other content in the current file.
 
 
 ### Use Starlight components
@@ -133,9 +139,9 @@ Have an eye on the existing components to improve the readability of the content
 
 Checkout the `src/components/mdx` directory for custom components.
 
-#### Mermaid
-
 Can only be used in mdx files.
+
+#### Mermaid
 
 ```mdx
 import Mermaid from '@components/mdx/Mermaid.astro'
@@ -162,6 +168,34 @@ Ok, I think I understand. The study is used to describe the overall experiment a
 </ViolaSays>
 ```
 
+#### File Trees
+
+Example file trees can be generated with the FileTree component, e.g.
+
+```mdx
+import { FileTree } from '@astrojs/starlight/components'
+
+<FileTree>
+- assays
+    - **SugarMeasurement**
+        - dataset
+            - ...
+        - protocols
+            - ...
+        - isa.assay.xlsx
+        - README.md
+    - ...
+</FileTree>
+```
+
+The file tree of an empty ARC is available in `components/mdx/BaseARC.mdx` and can directly be included via
+
+```mdx
+import BaseARC from '@components/mdx/BaseARC.mdx';
+
+<BaseARC />
+```
+
 ### Images
 
 #### How to store
@@ -182,7 +216,7 @@ src
 
 #### Use in `.md`/`.mdx`
 
-Two options on how to insert images. 
+Two options to insert images.
 
 In markdown you can use the following syntax:
 
