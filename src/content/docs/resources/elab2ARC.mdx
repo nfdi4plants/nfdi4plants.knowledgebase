@@ -5,20 +5,16 @@ description: elab2ARC is a tool for converting eLabFTW experiment data into ARC 
 authors: 
   - xiaoran-zhou
   - sabrina-zander
-sidebar:
-   badge:
-       text: new
-       variant: tip
 ---
 
 import { Steps } from '@astrojs/starlight/components';
 
-[elab2ARC](http://nfdi4plants.org/elab2arc) is a tool for converting [eLabFTW](https://www.elabftw.net/) experiments into [Annotated Research Context (ARC)](/nfdi4plants.knowledgebase/core-concepts/arc/) format. It allows researchers to easily fetch experiment data from eLabFTW instances and update or push these files to DataHUB in ARC format. The application streamlines the management of data from lab experiments to repositories, improving efficiency in scientific data handling.
+[elab2ARC](http://nfdi4plants.org/elab2arc) is a tool for converting eLabFTW experiments into ARC format. It allows researchers to easily fetch experiment data from eLabFTW instances and update or push these files to DataHUB in ARC format. The application streamlines the management of data from lab experiments to repositories, improving efficiency in scientific data handling.
 
 
 ## Why is elab2ARC needed?
 
-Many researchers rely on [electronic lab notebooks (ELNs)](/nfdi4plants.knowledgebase/fundamentals/electronic-lab-notebooks/) to document their experiments due to their flexibility in handling free-form text and supporting data files up to 100 MB. However, when metadata standardization becomes necessary or when raw data files exceed the file size limit, other research data standards, such as Annotated Research Context (ARC), may be required.
+Many researchers rely on electronic lab notebooks (ELNs) to document their experiments due to their flexibility in handling free-form text and supporting data files up to 100 MB. However, when metadata standardization becomes necessary or when raw data files exceed the file size limit, other research data standards, such as Annotated Research Context (ARC), may be required.
 
 ARC offers robust metadata annotation tools and customizable templates that help standardize the unstructured content typically found in ELNs. Additionally, ARC supports large files up to 10 GB, making it an excellent complement to ELNs like eLabFTW, which are not designed to handle raw data storage or larger file sizes.
 
@@ -49,11 +45,11 @@ import DataHubPat from '../datahub/navigation-settings/datahub-generate-project-
 <Steps>
 1. Login to your elabFTW instance 
 2. Navigate to 'User Settings'  
-    ![](@images/elab2ARC/elabftw-user-settings.png)
+    ![](@images/elab2arc/elabftw-user-settings.png)
 3. Navigate to 'API KEYS' Tab. Enter a name and a **Read Only** permissions
-    ![](@images/elab2ARC/elabftw-user-api-key.png)
+    ![](@images/elab2arc/elabftw-user-api-key.png)
 4. Save the key securely, as it will only be displayed once. Treat it like a password, as it grants access to eLabFTW.
-    ![](@images/elab2ARC/elabftw-user-api-key-2.png)
+    ![](@images/elab2arc/elabftw-user-api-key-2.png)
 
 </Steps>
 
@@ -63,9 +59,9 @@ import DataHubPat from '../datahub/navigation-settings/datahub-generate-project-
 <Steps>
 1. Select the eLabFTW experiment, which you want to convert and go to edit mode
 2. Add an extra field to your eLabFTW experiment (bottom)
-    ![](@images/elab2ARC/elabftw-add-extra-field.png)
+    ![](@images/elab2arc/elabftw-add-extra-field.png)
 3. Use field type **URL** and as a name **datahub_url** and enter the **URL of your ARC** as the default value
-    ![](@images/elab2ARC/elabftw-extra-field-2.png)
+    ![](@images/elab2arc/elabftw-extra-field-2.png)
 4. Save the entry
 
 </Steps>
@@ -76,17 +72,17 @@ import DataHubPat from '../datahub/navigation-settings/datahub-generate-project-
 1. Select your elabFTW Instance or add your instance [1]
 2. Paste eLabFTW API key [2]
 3. Paste DataHUB Project Access Token [3]
-    ![](@images/elab2ARC/elab2arc-tool-usage.png)
+    ![](@images/elab2arc/elab2arc-tool-usage.png)
 
 4. Enter eLabFTW Experiment ID [4] (use comma to seperate multiple IDs) which can be found in the experiment settings. Make sure that you have added the DataHUB URL as an extra field before. 
-    ![](@images/elab2ARC/elabftw-id.png)
+    ![](@images/elab2arc/elabftw-id.png)
 5. Click **One Click Submission** [5] to start the converting. 
 
 </Steps>
 
 ## Conversion 
 
-![](@images/elab2ARC/elab2arc-conversion.png)
+![](@images/elab2arc/elab2arc-conversion.png)
 
 The elab2ARC tool will automatically convert your elabFTW experiments into ARC format
 - create a new assay folder with eLabFTW experiment name as assay name (green)
