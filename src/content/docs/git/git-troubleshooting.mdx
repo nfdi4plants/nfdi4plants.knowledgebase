@@ -38,7 +38,7 @@ Check commits and compare those of the local ARC vs. the ARC in the DataHUB.
 
 </Steps>
 
-The commit messages in the DataHUB should be the same as in the local ARC. 
+The commits (incl. commit message, date and committer details) in the DataHUB should be the same as in the local ARC. 
 If not, this might help to identify at what time point (i.e. between which commits) something unexpected happened.
 
 ### Size
@@ -96,25 +96,34 @@ Check the current branch.
 For most use cases, the `main` branch should be selected.
 If the branch dropdown does not display `main`, something may be wrong with the status of your ARC. Please contact a data steward for help. 
 
-### Git Status
+### Status
 
-Check the current `git status`.
+Check the current git status.
 
 <Steps>
-   1. Open ARC in command window or terminal, e.g. via ARCitect --> Tools --> Command Window
+   1. Open ARC in a command line via ARCitect --> Tools --> Command Window
    2. Run `git status`
 </Steps>
 
-Check [this section](#git-status-1) for details.
+See [Git status](#git-status) for details.
 
+### Config
 
-### Git config
+Check the git configuration
 
+<Steps>
+   1. Open ARC in a command line via ARCitect --> Tools --> Command Window
+   2. Run `git config --list`
+</Steps>
 
+See [Git config](#git-config) for details.
 
 ### Gitignore
 
+Check whether a `.gitignore` file exists in the ARC. 
+If no `.gitignore` exists, this can lead to unexpected behavior for temporary, hidden files.
 
+[This article](/nfdi4plants.knowledgebase/git/git-gitignore) explains how to add a `.gitignore` file.
 
 ### Storage
 
@@ -246,7 +255,7 @@ git config --list --show-origin --show-scope
 ```
 
 :::tip
-The output will be different depending on wether you are inside or outside an ARC (git repository).
+The output will be different depending on wether you are "inside" or "outside" an ARC folder (git repository).
 :::
 
 In order to only show e.g. the global gitconfig use
@@ -255,19 +264,23 @@ In order to only show e.g. the global gitconfig use
 git config --global --list
 ```
 
-Typical settings to explore and trouble-shoot
+### Recommended git configurations
 
-- the default branch should be: `init.defaultbranch=main`
-- `user.name` and `user.email` should be defined
-- if users keep being asked for passwords during sync with the DataHUB, they might not store their credentials via a `credential.helper`.
+When executed inside an ARC folder, the `git config --list` should contain the following configurations 
+
+configuration             | explanation                                               
+--------------            | ---
+`user.name`               | Should display the user's DataHUB account name
+`user.email`              | Should display the user's DataHUB account email address
+`credential.helper`       | Whether and how DataHUB credentials are stored. Should be `credential.helper=store` (Windows, Linux) or `credential.helper=osxkeychain` (macOS)
+`core.longpaths=true`     | Allows to have very long file names or nested folder structures.
+`init.defaultbranch=main` | Provides that newly created ARCs work on a `main` branch
+`filter.lfs.process=git-lfs filter-process`, `filter.lfs.required=true`, `filter.lfs.clean=git-lfs clean -- %f`, `filter.lfs.smudge=git-lfs smudge -- %f`             | These four settings are required for LFS
+`lfs.activitytimeout=0`   | Circumvents a time our error, when trying to push ARCs to the DataHUB with very large files.
 
 ### Changing git config
 
-Editing the respective gitconfig is ideally done via command line (quick internet search helps).
-
-:::tip
-One could edit the file (listed in `git config --list --show-origin`) via a text editor. However, this is rather error-prone.
-:::
+Editing the respective gitconfig is ideally done via command line.
 
 #### Adapt user name and email
 
