@@ -7,11 +7,144 @@ authors:
 
 import { Steps } from '@astrojs/starlight/components';
 
-:::note[About this guide]
-- This is mostly for data stewards.
-- This is not a git tutorial, but rather a small start for troubleshooting.
+This troubleshooting guide is mostly for data stewards. It is not a git tutorial, but rather a small start.
+
+## ARCitect – first aid checklist
+
+This checklist should help to identify common issues with an ARC.
+It may help data stewards and users to identify the overall status of the ARC and a user's setup.
+
+### Git installation
+
+Check whether git and git-lfs are installed and executable.
+
+<Steps>
+
+1. Open command line via ARCitect --> Tools --> Command Window
+2. Type and execute `git --version` and `git-lfs --version`
+
+</Steps>
+
+If instead of showing the versions for both tools this returns an error, something may be wrong with the Git installation or [storage location of the ARC](#storage).
+
+### Commits
+
+Check commits and compare those of the local ARC vs. the ARC in the DataHUB.
+
+<Steps>
+
+1. Local: ARCitect --> History Menu
+2. DataHUB: ARC --> right sidebar --> *Number of* Commits
+
+</Steps>
+
+The commits (incl. commit message, date and committer details) in the DataHUB should be the same as in the local ARC. 
+If not, this might help to identify at what time point (i.e. between which commits) something unexpected happened.
+
+### Size
+
+Check the ARC size and compare that of the local ARC vs. the ARC in DataHUB.
+
+<Steps>
+
+1. Local: Open the ARC folder via ARCitect --> Explorer. Right-click the folder name and inspect the size via `Properties` (Windows) or `Get Info` (macOS)
+2. DataHUB: ARC --> right sidebar --> Project storage
+
+</Steps>
+
+Note, that the size of your local ARC is approximately double the size of that in the DataHUB. This is due to git's version control mechanism.
+If the size is very different, the ARC synchronization was likely not successful.
+
+### Large files
+
+Check whether large files are properly uploaded into LFS.
+
+<Steps>
+
+   1. Local: Inside ARCitect, large files should be flagged with `LFS` in the file tree
+   2. DataHUB:
+      - ARC --> right sidebar --> Project storage: The size of `LFS` should be high, that of `Repository` should be low
+      - Just like in ARCitect, large files should be flagged with `LFS` in the file tree
+
+</Steps>
+
+If large files are unexpectedly not flagged as LFS, please check the [details on Git-LFS](/nfdi4plants.knowledgebase/git/git-lfs/) and some trouble shooting in [the section below](#git-lfs).
+
+### Remote
+
+Check the remote connection. 
+
+<Steps>
+    1. ARCitect --> DataHUB sync --> Remote
+</Steps>
+
+Make sure, that the remote URL is correct and aligns with that of the ARC in the DataHUB.
+This may not be the case, if the local ARC's folder name was changed or if the ARCs URL in the DataHUB has changed to moving the ARC or adapting the URL. 
+
+:::tip
+For large file upload, the selected remote should contain a token indicated by the key icon.
 :::
 
+### Branch
+
+Check the current branch.
+
+<Steps>
+    1. ARCitect --> Commit Menu --> Dropdown "Branch"
+</Steps>
+
+For most use cases, the `main` branch should be selected.
+If the branch dropdown does not display `main`, something may be wrong with the status of your ARC. Please contact a data steward for help. 
+
+### Status
+
+Check the current git status.
+
+<Steps>
+   1. Open ARC in a command line via ARCitect --> Tools --> Command Window
+   2. Run `git status`
+</Steps>
+
+See [Git status](#git-status) for details.
+
+### Config
+
+Check the git configuration
+
+<Steps>
+   1. Open ARC in a command line via ARCitect --> Tools --> Command Window
+   2. Run `git config --list`
+</Steps>
+
+See [Git config](#git-configuration) for details.
+
+### Gitignore
+
+Check whether a `.gitignore` file exists in the ARC. 
+If no `.gitignore` exists, this can lead to unexpected behavior for temporary, hidden files.
+
+[This article](/nfdi4plants.knowledgebase/git/git-gitignore) explains how to add a `.gitignore` file.
+
+### Storage
+
+Identify the storage location.
+
+1. Is the ARC stored on a mounted external hard drive, network or server?
+2. Is the ARC stored in a cloud folder (e.g. Dropbox, iCloud, Sciebo, OneDrive)?
+
+If so, create a new test ARC in the same and another "local-only" location (i.e. non-cloud, non-server) to check whether the issue persists.
+If this solves the issue, something may be tricky with your cloud or network connection. Please contact a data steward for help.
+
+### ARC intactness
+
+Identify whether the ARC is intact with all expected files being present.
+
+1. Was the ARC only partially moved or copied from one location to another (i.e. without the hidden `.git` folder)? 
+2. Was the ARC downloaded from the DataHUB without LFS objects and tried to upload to another remote?
+
+If so, make sure to move or copy the complete ARC folder and make sure to download the ARC including all LFS objects (not recommended for large ARCs).
+
+{/* 
 ## Background
 
 Some reasons, why we now sometimes run into git issues
@@ -21,6 +154,7 @@ Some reasons, why we now sometimes run into git issues
 - There might also be issues of tools (e.g. [ARCitect](/nfdi4plants.knowledgebase/arcitect/) and [ARC commander](/nfdi4plants.knowledgebase/arc-commander/)) or different versions of those tools handling git-related tasks a bit differently or more / less strict (e.g. things like `main` as the default branch)
 - The current (versions of) tools were not really built for collaboration with many people on one ARC (at least not with default settings from DataHUB side). So common errors are related to merge conflicts (multiple users changing files) and divergent branches (e.g. between local and remote clones of the ARC).
 - Some behaviors are simply very use-case or setup specific and will in any case and even with the best tooling require some stewardship
+*/}
 
 ## Debugging
 
@@ -46,6 +180,9 @@ This is not an exhaustive trouble-shooting list. In most cases git and search ma
 
 ## Error messages
 
+This is a list of common error messages, if there is an error with the setup or ARC synchronization. 
+The errors are displayed during synchronization via ARCitect (pop-up windows in the menus **Commit** or **DataHUB sync**) or during ARC Commander's `arc sync`.
+
 error message* | possible reason | possible solution
 --- | --- | ---
 `remote: HTTP Basic: Access denied`  `fatal: Authentication failed for 'https://git.nfdi4plants.org/UserName/ARCname'` | Your computer is not "linked" to your DataHUB account | [Access Denied](#access-denied)
@@ -59,14 +196,13 @@ error message* | possible reason | possible solution
 `fatal: credential-cache unavailable; no unix socket support` | Likely happens on Windows, if a gitconfig contains `credential.helper=cache` | Adjust the [Git Credential helper](#git-credential-helper) setting
 `fatal: Need to specify how to reconcile divergent branches.` | Your ARC contains multiple branches that progressed independently and need to be merged | Contact a data steward.
 `error: unable to create file <path/to/file> : Filename too long` | Likely occurs on Windows, if your ARC or files in your ARC are stored in a deeply nested folder, i.e. a folder in a folder in a folder ...| [Allow very long file names](#allow-very-long-file-names)
+`UNC paths are not supported. Defaulting to Windows directory.` |  Might be due to working on a network drive or server. | *tbd* Please contact a data steward for support. 
 
 :::tip
-*typically displayed during synchronization via ARCitect (DataHUB Sync --> push / pull) or `arc sync`. Even if ARCitect shows "Complete", it's sometimes worth it to scroll up and see these errors.
+Even if ARCitect shows "Complete", it's sometimes worth it to scroll up and see these errors.
 :::
 
 ## Your two favorite Git commands: status and log
-
-Whenever your asked for ARC support likely related to a git issue, the first thing you want to explore is the state of the ARC.
 
 ### git status
 
@@ -102,7 +238,7 @@ If you like it prettier, remember "a dog"...
 git log --all --decorate --oneline --graph
 ```
 
-Hit <kbd>q</kbd>to close the log.
+Hit <kbd>q</kbd> to close the log.
 
 ## Git configuration
 
@@ -123,7 +259,7 @@ git config --list --show-origin --show-scope
 ```
 
 :::tip
-The output will be different depending on wether you are inside or outside an ARC (git repository).
+The output will be different depending on wether you are "inside" or "outside" an ARC folder (git repository).
 :::
 
 In order to only show e.g. the global gitconfig use
@@ -132,19 +268,23 @@ In order to only show e.g. the global gitconfig use
 git config --global --list
 ```
 
-Typical settings to explore and trouble-shoot
+### Recommended git configurations
 
-- the default branch should be: `init.defaultbranch=main`
-- `user.name` and `user.email` should be defined
-- if users keep being asked for passwords during sync with the DataHUB, they might not store their credentials via a `credential.helper`.
+When executed inside an ARC folder, the `git config --list` should contain the following configurations 
+
+configuration             | explanation                                               
+--------------            | ---
+`user.name`               | Should display the user's DataHUB account name
+`user.email`              | Should display the user's DataHUB account email address
+`credential.helper`       | Whether and how DataHUB credentials are stored. Should be `credential.helper=store` (Windows, Linux) or `credential.helper=osxkeychain` (macOS)
+`core.longpaths=true`     | Allows to have very long file names or nested folder structures.
+`init.defaultbranch=main` | Provides that newly created ARCs work on a `main` branch
+`filter.lfs.process=git-lfs filter-process`, `filter.lfs.required=true`, `filter.lfs.clean=git-lfs clean -- %f`, `filter.lfs.smudge=git-lfs smudge -- %f`             | These four settings are required for LFS
+`lfs.activitytimeout=0`   | Circumvents a time our error, when trying to push ARCs to the DataHUB with very large files.
 
 ### Changing git config
 
-Editing the respective gitconfig is ideally done via command line (quick internet search helps).
-
-:::tip
-One could edit the file (listed in `git config --list --show-origin`) via a text editor. However, this is rather error-prone.
-:::
+Editing the respective gitconfig is ideally done via command line.
 
 #### Adapt user name and email
 
@@ -191,7 +331,7 @@ Display the URL, to which the local ARC is connected via
 git remote -v
 ```
 
-### Adding a remote during arc sync
+### Adding a remote during `arc sync`
 
 A default remote is usually added by ARC Commander or ARCitect.
 If the ARC does not yet exist in the DataHUB, and you created it via ARC Commander and synced it via `arc sync`, you will see this error:
