@@ -180,6 +180,9 @@ This is not an exhaustive trouble-shooting list. In most cases git and search ma
 
 ## Error messages
 
+This is a list of common error messages, if there is an error with the setup or ARC synchronization. 
+The errors are displayed during synchronization via ARCitect (pop-up windows in the menus **Commit** or **DataHUB sync**) or during ARC Commander's `arc sync`.
+
 error message* | possible reason | possible solution
 --- | --- | ---
 `remote: HTTP Basic: Access denied`  `fatal: Authentication failed for 'https://git.nfdi4plants.org/UserName/ARCname'` | Your computer is not "linked" to your DataHUB account | [Access Denied](#access-denied)
@@ -193,9 +196,10 @@ error message* | possible reason | possible solution
 `fatal: credential-cache unavailable; no unix socket support` | Likely happens on Windows, if a gitconfig contains `credential.helper=cache` | Adjust the [Git Credential helper](#git-credential-helper) setting
 `fatal: Need to specify how to reconcile divergent branches.` | Your ARC contains multiple branches that progressed independently and need to be merged | Contact a data steward.
 `error: unable to create file <path/to/file> : Filename too long` | Likely occurs on Windows, if your ARC or files in your ARC are stored in a deeply nested folder, i.e. a folder in a folder in a folder ...| [Allow very long file names](#allow-very-long-file-names)
+`UNC paths are not supported. Defaulting to Windows directory.` |  Might be due to working on a network drive or server. | *tbd* Please contact a data steward for support. 
 
 :::tip
-*typically displayed during synchronization via ARCitect (DataHUB Sync --> push / pull) or `arc sync`. Even if ARCitect shows "Complete", it's sometimes worth it to scroll up and see these errors.
+Even if ARCitect shows "Complete", it's sometimes worth it to scroll up and see these errors.
 :::
 
 ## Your two favorite Git commands: status and log
