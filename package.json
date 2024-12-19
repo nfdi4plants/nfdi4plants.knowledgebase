@@ -15,7 +15,7 @@
     "@astrojs/starlight-tailwind": "^2.0.3",
     "@astrojs/tailwind": "^5.1.1",
     "@iconify-json/simple-icons": "^1.2.8",
-    "astro": "^4.15.3",
+    "astro": "^4.16.18",
     "astro-icon": "^1.1.1",
     "html-escaper": "^3.0.3",
     "mermaid": "^11.4.0",
