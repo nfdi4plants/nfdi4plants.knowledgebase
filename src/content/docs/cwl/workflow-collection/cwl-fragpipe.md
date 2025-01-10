@@ -16,7 +16,7 @@ There are different settings for several analysis workflows. A collection of pre
 # Requirements for the FragPipe ARC-CWL workflow
 
 Most requirements can be downloaded from this repository: [FragPipe-CWL](https://github.com/caroott/FragPipe-CWL/tree/master). 
-FragPipe requires additional tools to run. They have to be downloaded manually due to licensing restrictions.
+FragPipe requires additional tools to run. They have to be downloaded manually due to licensing restrictions. How to download the tools is explained [here](#fragpipe-tools).
 
 ## Dockerfile
 
@@ -67,7 +67,7 @@ After obtaining all required files, your workflows directory structure should lo
 
 # Setting up the run
 
-The run requires a `run.cwl` and a `run.yml` file. The `run.cwl` file could look like this:
+The run requires a `run.cwl` and a `run.yml` file. The `run.cwl` file content could look like this:
 ```yaml
 cwlVersion: v1.2
 class: Workflow
@@ -115,8 +115,9 @@ outputs:
   FragpipeAllResult:
     type: Directory
     outputSource: FragpipeAll/result
-
 ```
+
+If you changed the name of the folder in workflows, you have to update it in `run` value of the FragpipeAll step.
 
 The run.yml file contains all the necessary information for your run. You can specify how the run should be named, 
 the name of the assay you want to analyze, the columns in your assay or study files specifying the experiment, replicate and acquisition mode, the path 
@@ -139,6 +140,11 @@ workdir: ./arc/runs/MyRun
 toolsFolder: ./arc/workflows/Fragpipe/tools
 threads: 20
 ```
+
+You have to update the paths and names in the `run.yml` file to match your ARC. The three columns specified here must exist in your assay or study files. The first part is the column name, the second the column type. 
+An experiment column could be a condition like heat or cold for example. The acquisition column specifies if the scan mode is DDA or DIA. 
+Your assay must have one sheet named "Mass spectrometry", which is linked to previous assays and studies containing the previous columns trough inputs and outputs (standard assay/study setup). The output of this sheet 
+must be of type `Data` and contain the names of your mass spectrometry files or folders (just the name, not the path, e.g. `MyRun.d`).
 
 FragPipe itself requires a `fragpipe.workflow` file, specifying the workflow settings. You can use a predesigned workflow from the FragPipe repository or create your own (this is easier with the GUI). 
 
