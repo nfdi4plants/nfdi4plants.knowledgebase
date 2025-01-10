@@ -143,7 +143,7 @@ threads: 20
 
 You have to update the paths and names in the `run.yml` file to match your ARC. The three columns specified here must exist in your assay or study files. The first part is the column name, the second the column type. 
 An experiment column could be a condition like heat or cold for example. The acquisition column specifies if the scan mode is DDA or DIA. 
-Your assay must have one sheet named "Mass spectrometry", which is linked to previous assays and studies containing the previous columns trough inputs and outputs (standard assay/study setup). The output of this sheet 
+Your assay must have one sheet named "MassSpectrometry", which is linked to previous assays and studies containing the previous columns trough inputs and outputs (standard assay/study setup). The output of this sheet 
 must be of type `Data` and contain the names of your mass spectrometry files or folders (just the name, not the path, e.g. `MyRun.d`).
 
 FragPipe itself requires a `fragpipe.workflow` file, specifying the workflow settings. You can use a predesigned workflow from the FragPipe repository or create your own (this is easier with the GUI). 
