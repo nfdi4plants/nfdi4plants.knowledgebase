@@ -4,7 +4,7 @@ lastUpdated: 2025-01-09
 authors:
   - caro-ott
 sidebar:
-  order: 1
+  order: -1
 ---
 
 # FragPipe
@@ -55,7 +55,7 @@ FragPipe GUI and mount them into the docker container. For that the tools have t
 After obtaining all required files, your workflows directory structure should look like this:
 ```
 \--- workflows  
-    \--- <Fragpipe>
+    \--- Fragpipe
             | Dockerfile
             | Fragpipe.cwl
             | ManifestAndWorkflow.cwl
