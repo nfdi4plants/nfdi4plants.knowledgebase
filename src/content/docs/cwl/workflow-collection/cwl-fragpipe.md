@@ -16,7 +16,15 @@ There are different settings for several analysis workflows. A collection of pre
 # Requirements for the FragPipe ARC-CWL workflow
 
 Most requirements can be downloaded from this repository: [FragPipe-CWL](https://github.com/caroott/FragPipe-CWL/tree/master). 
-FragPipe requires additional tools to run. They have to be downloaded manually due to licensing restrictions. How to download the tools is explained [here](#fragpipe-tools).
+FragPipe requires additional tools to run. They have to be downloaded manually due to licensing restrictions. How to download the tools is explained [here](#fragpipe-tools). It also requires an ARC 
+with assay and study files describing the experiment. 
+
+## ARC
+
+You need an ARC to run this workflow, since necessary information about the experiment is retrieved from the assay and study files by the workflow. 
+How to set up an ARC is described in this [Getting Started Guide](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/start-here/). Your assay and study files must contain columns describing 
+the experiment (e.g. hot/cold) , replicate (e.g. 1,2,3,...) and acquisition mode (DDA or DIA). Your assay must have one sheet named "MassSpectrometry", which is linked to previous assays and studies containing the before mentioned columns trough inputs and outputs (standard assay/study setup, this is described in the getting started guide). 
+The output of this sheet must be of type `Data` and contain the names of your mass spectrometry files or folders (just the name, not the path, e.g. `MyRun.d`).
 
 ## Dockerfile
 
@@ -141,10 +149,9 @@ toolsFolder: ./arc/workflows/Fragpipe/tools
 threads: 20
 ```
 
+Copy the content for the run.cwl and run.yml blocks in a text editor (e.g. Notepad) and save them in the `MyRun` folder in the `runs` directory. 
 You have to update the paths and names in the `run.yml` file to match your ARC. The three columns specified here must exist in your assay or study files. The first part is the column name, the second the column type. 
-An experiment column could be a condition like heat or cold for example. The acquisition column specifies if the scan mode is DDA or DIA. 
-Your assay must have one sheet named "MassSpectrometry", which is linked to previous assays and studies containing the previous columns trough inputs and outputs (standard assay/study setup). The output of this sheet 
-must be of type `Data` and contain the names of your mass spectrometry files or folders (just the name, not the path, e.g. `MyRun.d`).
+An experiment column could be a condition like heat or cold for example. The acquisition column specifies if the scan mode is DDA or DIA.
 
 FragPipe itself requires a `fragpipe.workflow` file, specifying the workflow settings. You can use a predesigned workflow from the FragPipe repository or create your own (this is easier with the GUI). 
 
@@ -170,7 +177,18 @@ After you obtained those files, the folder structure should look like this:
 
 # Running the workflow
 
-To run the workflow with the cwltool, you navigate to the `runs` folder and run the following command:
+A CWL runner is required to run the workflow. The installation of the cwl reference runner is covered in this tutorial here: [CWL Runner Installation](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/cwl/cwl-runner-installation/)
+
+After you have successfully installed the CWL runner, you can run the workflow by opening the command line tool and navigating to the `runs` folder. For that you can use the `cd` command:
+
+```bash
+cd path/to/your/runs
+```
+
+you also have to activate the environment in which you installed the CWL runner. This is described [here](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/cwl/cwl-runner-installation/#cwltool-usage)
+
+After you activated the environment and navigated to the `runs` folder, you can run the workflow with the following command:
+
 ```bash
 cwltool ./MyRun/run.cwl ./MyRun/run.yml
 ```
