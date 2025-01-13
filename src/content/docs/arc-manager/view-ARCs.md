@@ -5,12 +5,11 @@ sidebar:
 authors:
   - ursula-eberhardt
   - lucas-beuter
-lastUpdated: 2024-11-08
+  - alexander-kirbis
+lastUpdated: 2025-01-13
 ---
 
-For the sake of simplicity, we are here using the term "ARC" for (DataHUB) "Project", because the DataHUB does not make any distinction between Projects that have the ARC folder and file structure and those that have not. Both are initially shown in the ARCmanager, but the ARCmanager has not been created for manipulating Projects which are not ARCs.
-
-The ARCmanager is for viewing and editing ARCs.
+For the sake of simplicity, we are here using the term "ARC" for (DataHUB) "Project", because the DataHUB does not make any distinction between projects that have the ARC folder and file structure and those that have not. Both are initially shown in the ARCmanager, but the primary use case of the ARCmanager is viewing and editing ARCs 
 
 ### List and filter ARCs
 
@@ -26,7 +25,7 @@ With the `LOAD ARC` button (Fig. 1), all ARCs on the DataHUB will be listed for 
 
 ---
 
-Use the `Your Arcs` check-box (Fig. 2) to filter the list of ARCs for those in which you are member and your own ARCs. Your own ARCs are again highlighted in yellow.
+Use the `Your Arcs` check-box (Fig. 2) to filter the list of ARCs for those in which you are member and your own ARCs. Your own ARCs are again highlighted in color.
 
 ---
 
@@ -56,13 +55,15 @@ Next to each listed ARC are two buttons to access the following functions:
 
 ### View ARC contents
 
-After expanding an ARC, you will see a list of directories and files that are included in the ARC (Fig. 4), as well as buttons to access additional functions. The additional functions are explained in detail later in this manual. For now, we will focus on the files and directories included in the ARC.
+Expanding an ARC allows you to view files and directories that are contained within the ARC. The file structure of the ARC is depicted on the left side of the main window in the form of a tree view. The content of the currently selected directory is also shown in the main part of the window. Here, you can access additional features, like creating new directories or editing ISA files.
+
+On the top of the main window, multiple buttons provide access to additional functions that will be explained in detail later in the manual.
 
 ---
 
 ![](@images/arc-manager/view/04-detailed-view.png)
 
-**Fig. 4** Detailed view of ARC contents after expanding an ARC with the corresponding button (Fig. 3, 2). Files and directories can be accessed with a left-click.
+**Fig. 4** Detailed view of ARC contents and buttons to access additional functions after expanding an ARC.
 
 ---
 
@@ -76,7 +77,7 @@ You can hide the ARC contents by clicking inside the `List ARC content` field ab
 
 ---
 
-Navigate through the ARC directories with a left-click. After clicking a directory, its contents will be displayed. You can go back one level in the directory hierarchy by using the `Return` field above the list of files (Fig. 6). Alternatively, you can click on the respective subdirectory in the path displayed above the `Return` field to jump directly to this position.
+Navigate through the ARC directories with a left-click, either in the tree view or in the main window. After clicking a directory, its contents will be displayed. You can go back one level in the directory hierarchy by using the `Return` field above the list of files (Fig. 6). Alternatively, you can click on the respective subdirectory in the path displayed above the `Return` field to jump directly to this position.
 
 ---
 
@@ -86,7 +87,7 @@ Navigate through the ARC directories with a left-click. After clicking a directo
 
 ---
 
-When you click on a file instead of a directory, another panel on the right side will open that allows you to view the selected file (Fig. 7). You can display images, pdf files, text based files, and more.
+When you click on a file instead of a directory, another panel on the right side will open that allows you to view the contents of the selected file (Fig. 7). You can display images, pdf files, text based files, and more.
 
 Plain text files (.md, .txt or similar) can be modified directly in this editor. Do not forget to save your changes and synchronize with the DataHUB by using the `SAVE` button when you are done.
 
