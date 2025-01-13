@@ -11,54 +11,66 @@ import { FileTree } from '@astrojs/starlight/components';
 
 # FragPipe
 
-[FragPipe](https://fragpipe.nesvilab.org/) is a software suite for the analysis of mass spectrometry-based proteomics data. 
-It is available as a Graphical User Interface (GUI) and as a command line tool. An official docker image is available on [dockerhub](https://hub.docker.com/r/fcyucn/fragpipe).
-There are different settings for several analysis workflows. A collection of predefined workflows is available on their [github repository](https://github.com/Nesvilab/FragPipe/tree/develop/MSFragger-GUI/workflows).
+[FragPipe](https://fragpipe.nesvilab.org/) is a software suite for the analysis of mass spectrometry-based proteomics data. It integrates multiple state-of-the-art software tools and algorithms into a unified, 
+user-friendly graphical interface, allowing researchers to process raw MS data efficiently.
 
-# Requirements for the FragPipe ARC-CWL workflow
+# Setting up the FragPipe ARC-CWL workflow
 
-Most requirements can be downloaded from this repository: [FragPipe-CWL](https://github.com/caroott/FragPipe-CWL/tree/master). 
-FragPipe requires additional tools to run. They have to be downloaded manually due to licensing restrictions. How to download the tools is explained [here](#fragpipe-tools). It also requires an ARC 
-with assay and study files describing the experiment. 
+The FragPipe ARC-CWL workflow requires several files and directories to be set up correctly. The following sections will guide you through the setup process.
 
 ## ARC
 
 You need an ARC to run this workflow, since necessary information about the experiment is retrieved from the assay and study files by the workflow. 
-How to set up an ARC is described in this [Getting Started Guide](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/start-here/). Your assay and study files must contain columns describing 
-the experiment (e.g. hot/cold) , replicate (e.g. 1,2,3,...) and acquisition mode (DDA or DIA). Your assay must have one sheet named "MassSpectrometry", which is linked to previous assays and studies containing the before mentioned columns trough inputs and outputs (standard assay/study setup, this is described in the getting started guide). 
-The output of this sheet must be of type `Data` and contain the names of your mass spectrometry files or folders (just the name, not the path, e.g. `MyRun.d`).
+How to set up an ARC is described in this [Getting Started Guide](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/start-here/).
+
+Special requirements for the ARC:
+
+- Assay and study files containing columns describing the data:
+  - Experiment (e.g., hot/cold)
+  - Replicate (e.g., 1, 2, 3, ...)
+  - Acquisition mode (DDA or DIA)
+- One assay sheet named "MassSpectrometry," which is linked to previous assays and studies containing the aforementioned columns through inputs and outputs (standard assay/study setup, this is described in the Getting Started Guide):
+  - The output of this sheet must be of type `Data` and contain the names of your mass spectrometry files or folders (just the name, not the path, e.g., `MyRun.d`).
+- One folder in the `workflows` directory named "Fragpipe."
 
 ## Dockerfile
 
-The current official dockerimage is missing `curl`. Thsi can be circumvented by using an own Dockerfile based on the official one and adding the `curl` installation command to the file. 
-Such a Dockerfile can be found [here](https://github.com/caroott/FragPipe-CWL/blob/master/Dockerfile).
+The current official Docker image is missing `curl`. This can be circumvented by using your own Dockerfile based on the official one and adding the `curl` installation command to the file.
 
-## ARC parameter collection script
+- Download the Dockerfile [here](https://github.com/caroott/FragPipe-CWL/blob/master/Dockerfile) by clicking on the download button in the upper right corner.
+  ![](@images/guides/cwl/Download_github.png)
+- Place the Dockerfile in the `Fragpipe` folder within the `workflows` directory.
 
-This workflow uses a script to collect the required parameters for the FragPipe ARC-CWL workflow. The script can be found [here](https://github.com/caroott/FragPipe-CWL/blob/master/scripts/manifestAndWorkflow.fsx).
+## ARC Parameter Collection Script
+
+This workflow uses a script to collect the required parameters for the FragPipe ARC-CWL workflow. 
+
+- Download the script [here](https://github.com/caroott/FragPipe-CWL/blob/master/scripts/manifestAndWorkflow.fsx).
+- Place the script in the `scripts` folder within the `Fragpipe` directory in the `workflows` directory.
+
 This script will create the required manifest file and adapt the workflow file for the run.
 
-## CommandLineTool and Workflow descriptions
+## CommandLineTool and Workflow Descriptions
 
-The CommandLineTool and Workflow descriptions for the parameter collection can be found here:
- - [FragPipe CommandLineTool](https://github.com/caroott/FragPipe-CWL/blob/master/Fragpipe.cwl)
- - [ManifestAndWorkflow CommandLineTool](https://github.com/caroott/FragPipe-CWL/blob/master/ManifestAndWorkflow.cwl)
- - [Workflow](https://github.com/caroott/FragPipe-CWL/blob/master/Workflow.cwl)
+- Download the [FragPipe CommandLineTool](https://github.com/caroott/FragPipe-CWL/blob/master/Fragpipe.cwl).
+- Download the [ManifestAndWorkflow CommandLineTool](https://github.com/caroott/FragPipe-CWL/blob/master/ManifestAndWorkflow.cwl).
+- Download the [Workflow](https://github.com/caroott/FragPipe-CWL/blob/master/workflow.cwl).
+- Place all three files in the `Fragpipe` directory within the `workflows` directory.
 
 The workflow executes both CommandLineTool descriptions in the correct order.
 
-## FragPipe tools
+## FragPipe Tools
 
-The FragPipe tools have to be downloaded manually due to licensing restrictions. The easiest way is to download all required tools through the 
-FragPipe GUI and mount them into the docker container. For that the tools have to be placed in the `tools` directory in the workflow directory. 
+The FragPipe tools must be downloaded manually due to licensing restrictions. The easiest way is to download all required tools through the 
+FragPipe GUI and mount them into the Docker container. For this, the tools must be placed in the `tools` directory within the workflow directory.
 
-### Downloading the tools with the FragPipe GUI
+### Downloading the Tools with the FragPipe GUI
 
-1. Download the FragPipe GUI from the [FragPipe releases](https://github.com/Nesvilab/FragPipe/releases) and unzip it.
-2. Navigate to the `bin` folder and run the `fragpipe.exe`.
-3. In the config tab click on the `Download / Update` button and follow the steps
-![](@images/guides/cwl/ToolDownload.png)
-4. Copy the `tools` directory into your workflow directory.
+- Download the FragPipe GUI from the [FragPipe releases](https://github.com/Nesvilab/FragPipe/releases) and unzip it.
+- Navigate to the `bin` folder and run the `fragpipe.exe`.
+- In the Config tab, click on the `Download / Update` button and follow the steps.
+  ![](@images/guides/cwl/ToolDownload.png)
+- Copy the `tools` directory into your workflow directory.
 
 ## Directory structure
 
@@ -138,11 +150,7 @@ arc:author:
 
 ```
 
-If you changed the name of the folder in workflows, you have to update it in `run` value of the FragpipeAll step.
-
-The run.yml file contains all the necessary information for your run. You can specify how the run should be named, 
-the name of the assay you want to analyze, the columns in your assay or study files specifying the experiment, replicate and acquisition mode, the path 
-to the fasta protein database file, if you want to run DDA only, if you want to run headless, the working directory, the path to the tools folder and the number of threads to use.
+The `run.yml` file contains all the necessary information for your run. The `run.yml` file content could look like this:
 
 An example `run.yml` file could look like this:
 ```yaml
@@ -171,16 +179,36 @@ arc:performer:
     arc:affiliation: "Your institution"
 ```
 
-Copy the content for the run.cwl and run.yml blocks in a text editor (e.g. Notepad) and save them in the `MyRun` folder in the `runs` directory. 
-You have to update the paths and names in the `run.yml` file to match your ARC. The three columns specified here must exist in your assay or study files. The first part is the column name, the second the column type. 
-An experiment column could be a condition like heat or cold for example. The acquisition column specifies if the scan mode is DDA or DIA.
+- Copy the content for the `run.cwl` and `run.yml` blocks into a text editor (e.g., Notepad).
+- Save them as `run.cwl` and `run.yml` in the `MyRun` (example name) folder within the `runs` directory.
+- Update the paths and names in the `run.yml` file to match your ARC:
+  - `arcDirectory` doesn't change.
+  - Paths always start with `./arc`, since the ARC is mounted into the Docker container with that name.
+  - The `runName` is the name you want to give your run.
+    - The `workdir` name is usually the same as the `runName`.
+  - The `assayName` is the name of the assay you want to analyze.
+- Update the `experimentColumn`, `replicateColumn`, and `acquisitionColumn` values to match your assay or study files:
+  - The first part is the column name, the second part is the column type (Characteristic, Parameter or Factor).
+  - These three columns must exist in your assay or study files.
+  - These columns are the ones you specified [here](#arc).
+- `ddaOnly` can be set to "TRUE" or "FALSE":
+  - If you are analyzing DIA files, set it to "FALSE".
+- The number of threads can be set to the number of files you want to analyze in parallel:
+  - You also need to specify the number of threads in the `run.cwl` file under `ResourceRequirement`.
+    - Remove the `#` in front of the lines and set the number of cores and RAM you want to use.
 
 ## FragPipe Workflow
 
-FragPipe itself requires a `fragpipe.workflow` file, specifying the workflow settings. You can use a predesigned workflow from the FragPipe repository or create your own (this is easier with the GUI). 
-If you have the Fragpipe GUI installed, you can navigaet to the `workflows` folder and select the workflow you want to use. If you have a specific use case, you can create your own workflow following the 
-tutorials on the [FragPipe website](https://fragpipe.nesvilab.org/). After you completed the workflow, you can save it and copy it from the FragPipe `workflows` into the `MyRun` folder in the `runs` directory. Alternatively, you can 
-select to save it in a custom folder and directly save it to the `MyRun` folder.
+FragPipe requires a `fragpipe.workflow` file specifying the workflow settings. You can use a predesigned workflow from the [FragPipe repository](https://github.com/Nesvilab/FragPipe/tree/develop/MSFragger-GUI/workflows) 
+or create your own (this is easier with the GUI).
+
+### Using the GUI
+
+- Open the FragPipe GUI and navigate to the `Workflow` tab.
+- Select a workflow and press the `Load workflow` button.
+  ![](@images/guides/cwl/Select_workflow.png)
+- Follow the instructions on the [FragPipe website](https://fragpipe.nesvilab.org/) for your use case, or keep the preset workflow you selected.
+- Click on the `Save to custom folder` button in the `Workflow` tab and save it to the `runs` directory in the folder named `MyRun` (example name) under the name `fragpipe.workflow`.
 
 ## Directory structure
 
@@ -203,20 +231,20 @@ After you obtained those files, the folder structure should look like this:
           - manifestAndWorkflow.fsx
     </FileTree>
 
-# Running the workflow
+# Running the Workflow
 
-A CWL runner is required to run the workflow. The installation of the cwl reference runner is covered in this tutorial here: [CWL Runner Installation](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/cwl/cwl-runner-installation/)
+A CWL runner is required to run the workflow.
 
-After you have successfully installed the CWL runner, you can run the workflow by opening the command line tool and navigating to the `runs` folder. For that you can use the `cd` command:
-
-```bash
-cd path/to/your/runs
-```
-
-you also have to activate the environment in which you installed the CWL runner. This is described [here](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/cwl/cwl-runner-installation/#cwltool-usage)
-
-After you activated the environment and navigated to the `runs` folder, you can run the workflow with the following command:
-
-```bash
-cwltool ./MyRun/run.cwl ./MyRun/run.yml
-```
+- Install the CWL reference runner as described here: [CWL Runner Installation](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/cwl/cwl-runner-installation/).
+- Open the command-line tool.
+- Activate the environment in which you installed the CWL runner:
+  - Instructions for this can be found [here](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/cwl/cwl-runner-installation/#cwltool-usage).
+- Navigate to the `runs` folder:
+  - Use the `cd` command to navigate there:
+    ```bash
+    cd path/to/your/runs
+    ```
+- Run the workflow with the following command:
+    ```bash
+    cwltool ./MyRun/run.cwl ./MyRun/run.yml
+    ```
