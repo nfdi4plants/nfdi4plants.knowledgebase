@@ -126,6 +126,16 @@ outputs:
   FragpipeAllResult:
     type: Directory
     outputSource: FragpipeAll/result
+
+# The following is metadata for the workflow
+
+arc:performer:
+  - class: arc:Person
+    arc:first name: "Caroline"
+    arc:last name: "Ott"
+    arc:email: "caroline.ott@rptu.de"
+    arc:affiliation: "RPTU Kaiserslautern/Landau"
+
 ```
 
 If you changed the name of the folder in workflows, you have to update it in `run` value of the FragpipeAll step.
@@ -150,6 +160,15 @@ headless: true
 workdir: ./arc/runs/MyRun
 toolsFolder: ./arc/workflows/Fragpipe/tools
 threads: 20
+
+# The following is metadata for the workflow
+
+arc:performer:
+  - class: arc:Person
+    arc:first name: "Your"
+    arc:last name: "Name"
+    arc:email: "your@email"
+    arc:affiliation: "Your institution"
 ```
 
 Copy the content for the run.cwl and run.yml blocks in a text editor (e.g. Notepad) and save them in the `MyRun` folder in the `runs` directory. 
