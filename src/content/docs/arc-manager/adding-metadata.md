@@ -5,7 +5,7 @@ sidebar:
 authors:
   - lucas-beuter
   - alexander-kirbis
-lastUpdated: 2024-11-08
+lastUpdated: 2025-01-13
 ---
 
 Two different types of metadata are stored in ISA files: administrative and experimental metadata. Administrative metadata covers IDs, descriptions, contact details, connected publications and more, while experimental metadata is describing experimental procedures and similar processes. ISA files are normally stored in an Excel format (.xlsx) and need to adhere to the [ISA-XLSX specification](https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md).
@@ -131,24 +131,26 @@ After importing a template, you will see a table similar to the picture below. I
 
 The following will explain the different interfaces:
 
-1. **Search term:** A click on the magnifying glass symbols opens a search bar above the sheet name bar (4). The search bar allows you to search for specific ontology terms or to get suggestions for terms that fit the parameter.
+1. **Ontology links:** These links will direct you to either the ontology lookup site or the DataPLANT ontology repository on GitHub.
 
-2. **Add building block or custom column:** <br>Clicking `Building Block` will open up additional input fields above that allow adding new columns to the metadata table. You can search for terms and add a new parameter or more. <br>
+2. **Sheet name:** This input field allows you to name your metadata sheet. It is mandatory to fill this field in before saving a newly created metadata sheet. Do not use whitespace characters when naming the sheet.
+
+3. **Template Name:** The name of the template currently in use is displayed next to the sheet name field.
+
+4. **Add building block or custom column:** <br>Clicking `Building Block` will open up additional input fields above that allow adding new columns to the metadata table. You can search for terms and add a new parameter or more. <br>
 Clicking `Custom Column` will open up a different input field above with which you can add a fully customizable columns (with term columns or unit column if desired).
 
-3. **Delete row/column:** Clicking the red "X" will delete the corresponding row or building block. The deletion of elements has to be confirmed in a pop-up menu before the action takes effect.
+5. **Pin row or column in place:** You can lock the header row and the Input and Output columns in place by clicking the pin icons. When doing so, the respective columns/row stays always visible when scrolling through the annotation table which is particularly useful when working with large tables.
 
-4. **Sheet name:** This input field allows you to name your metadata sheet. It is mandatory to fill this field in before saving a newly created metadata sheet. Do not use whitespace characters when naming the sheet.
+6. **Hide Terms:** This checkbox is enabled by default and hides the "Term Source REF" and "Term Accession Number" column for every parameter/characteristic. Hiding these columns is meant to improve readability of annotation tables. By unchecking the box, the otherwise hidden columns will be displayed.
 
-5. **Hide Terms:** This checkbox is enabled by default and hides the "Term Source REF" and "Term Accession Number" column for every parameter/characteristic. Hiding these columns is meant to improve readability of annotation tables. By unchecking the box, the otherwise hidden columns will be displayed.
+7. **Delete row/column:** Clicking the red "X" will delete the corresponding row or building block. The deletion of elements has to be confirmed in a pop-up menu before the action takes effect.
 
-6. **Ontology links:** These links will direct you to either the ontology lookup site or the DataPLANT ontology repository on GitHub.
+8. **Move a column:** You can shift a column to the left or right by clicking the respective arrow. Supporting columns like "Unit" or term source information are moved together with the main column of the building block.
 
-7. **Extend the table:** This button adds a new row to table.
+9. **Search term:** A click on the magnifying glass symbols opens a search bar above the sheet name bar (4). The search bar allows you to search for specific ontology terms or to get suggestions for terms that fit the parameter.
 
-8. **Move a column:** You can shift a column to the left or right by clicking the respective arrow.
-
-9. **Template Name:** The name of the template currently in use is displayed next to the sheet name field.
+10. **Extend the table:** This button adds a new row to table.
 
 ### Ontology term search
 
