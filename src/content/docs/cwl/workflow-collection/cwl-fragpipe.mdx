@@ -156,7 +156,12 @@ Copy the content for the run.cwl and run.yml blocks in a text editor (e.g. Notep
 You have to update the paths and names in the `run.yml` file to match your ARC. The three columns specified here must exist in your assay or study files. The first part is the column name, the second the column type. 
 An experiment column could be a condition like heat or cold for example. The acquisition column specifies if the scan mode is DDA or DIA.
 
+## FragPipe Workflow
+
 FragPipe itself requires a `fragpipe.workflow` file, specifying the workflow settings. You can use a predesigned workflow from the FragPipe repository or create your own (this is easier with the GUI). 
+If you have the Fragpipe GUI installed, you can navigaet to the `workflows` folder and select the workflow you want to use. If you have a specific use case, you can create your own workflow following the 
+tutorials on the [FragPipe website](https://fragpipe.nesvilab.org/). After you completed the workflow, you can save it and copy it from the FragPipe `workflows` into the `MyRun` folder in the `runs` directory. Alternatively, you can 
+select to save it in a custom folder and directly save it to the `MyRun` folder.
 
 ## Directory structure
 
