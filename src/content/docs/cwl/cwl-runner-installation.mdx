@@ -1,6 +1,6 @@
 ---
 title: "CWL Runner Installation"
-lastUpdated: 2024-01-18
+lastUpdated: 2025-01-20
 authors:
   - caro-ott
   - dominik-brilhaus
@@ -33,15 +33,20 @@ The installation on Windows can be done following the guide [here](https://cwlto
 
     ![Debian](@images/guides/cwl/debian.png)
 
-3. Set Debian as your default WSL 2 distro: `wsl --set-default debian`
+3. Set Debian as your default WSL 2 distro:
+    - Open Windows PowerShell
+    - Type `wsl --set-default debian` and hit enter
 4. Install [Docker Desktop for Windows](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)
    - Start Docker Desktop and Navigate to Settings
    - Select "Use WSL 2 based engine" in the general tab and apply
       ![Docker WSL2](@images/guides/cwl/docker-wsl2.png)
    - Select "Enable Integration with my default distro" in the resources tab under WSL Integration
       ![Docker WSL Integration](@images/guides/cwl/docker-wsl-integration.png)
-5. Start WSL
-6. Follow the Instructions for Linux (Debian/Ubuntu)
+5. Start WSL:
+    - Open Windows PowerShell
+    - Type `wsl` and hit enter
+    - You may need to specify a username and password if this is your first time using WSL (the password doesn't show when typing, just type and hit enter)
+6. Follow the Instructions for Linux (Debian/Ubuntu) in this tutorial
 
 </Steps>
 </TabItem>
@@ -52,12 +57,17 @@ For installation on Linux (Debian/Ubuntu):
  
 <Steps>
 
-1. Run `sudo apt-get update`
-2. Install Python 3 if it is not already installed `sudo apt install python3`
-3. Install python virtual environment `sudo apt install python3.[your version here]-venv`
-4. Create a virtual environment `python3 -m venv env` (named env here, name can vary)
-5. Activate the virtual environment `source env/bin/activate`
-6. Install `cwltool` with pip `pip install cwltool`
+1. Run `sudo apt-get update` in the console
+2. Install Python 3 if it is not already installed by executing the command `sudo apt install python3`
+3. Install python virtual environment with `sudo apt install python3.11-venv`
+    - You may need to change the version of python, depending on your installation
+    - You can check the installed version with `python3 --version`
+4. Create a virtual environment `python3 -m venv env`
+    - The environment is named env here, the name can vary
+5. Activate the virtual environment with `source env/bin/activate`
+    - If you want to activate the environment from a different location, you must enter the full path to the installation location
+        - e.g. if you installed it in your home directory, you would use `source /home/username/env/bin/activate`
+6. Install the cwltool with pip by running `pip install cwltool`
 
 </Steps>
 
@@ -79,10 +89,19 @@ For installation on Linux (Debian/Ubuntu):
  
 - If you are on Windows, start the WSL
 - Activate the virtual environment `source env/bin/activate`
+    - If you want to activate the environment from a different location, you must enter the full path to the installation location
+        - e.g. if you installed it in your home directory, you would use `source /home/username/env/bin/activate`
 - Run `cwltool` by specifying the CWL `Workflow` or `CommandLineTool` description file path and the (optional) inputs file path (you can use relative or full paths): 
-
 ```bash
 cwltool path/to/cwlfile.cwl path/to/jobfile.yml
+```
+- If you are in an ARC, you can navigate to the runs folder and type `wsl` in the address line to start the WSL at that location and execute a typical run after activating the virtual environment (see second step) with the command:
+```bash
+cwltool ./myRun/run.cwl ./myRun/run.yml
+```
+- CWL copies the relevant files to temporary directories located on the disc where your WSL is installed. If you want them on a different disk for perfomrance/size reasons, you can use the `--tmpdir-prefix` and `--tmp-outdir-prefix` options to specify the location of the temporary directories:
+```bash
+cwltool --tmp-outdir-prefix=/mnt/c/Users/myUser/Tempdir/ --tmpdir-prefix=/mnt/c/Users/myUser/Tempdir/ ./myRun/run.cwl ./myRun/run.yml
 ```
 
 ### Minimal example
