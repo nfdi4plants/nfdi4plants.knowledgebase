@@ -1,85 +1,36 @@
 ---
-title: "Setup"
+title: "General"
 lastUpdated: 2024-12-10
 authors:
   - lukas-weil
+sidebar:
+  order: 0  
 ---
+
 
 import { Steps } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
+![ARCtrl](https://github.com/nfdi4plants/ARCtrl/raw/main/logos/ARCtrl_horizontal.png)
+
 `ARCtrl` is a software library for working with ARCs. 
-By transpilation from the `F#` source code, it is not only hosted on nuget, but also as a javascript package on npm and as a python package on pypi.
+
+By transpilation from the `F#` source code using [Fable](https://fable.io/), it is not only hosted on `nuget`, but also as a javascript package on `npm` and as a python package on `PyPI`.
 
 
-<Tabs syncKey="pl">
-
-{/* FSHARP */}
-<TabItem label="FSharp" icon='seti:'>
-
-You can find the .NET package on nuget: 
-
-<a href="https://www.nuget.org/packages/ARCtrl/"><img alt="Nuget" src="https://img.shields.io/nuget/v/ARCtrl?logo=nuget&color=%234fb3d9"/></a>
-
-For .NET projects, you can just run
-
-```shell
-dotnet add package ARCtrl
-```
-
-For working in a script, you can easily reference the ARCtrl package from nuget. 
-
-```fsharp
-#r "nuget: ARCtrl"
-
-open ARCtrl
-```
-</TabItem>
+| Version | Downloads |
+| :--------|-----------:|
+|<a href="https://www.nuget.org/packages/ARCtrl/"><img alt="Nuget" src="https://img.shields.io/nuget/v/ARCtrl?logo=nuget&color=%234fb3d9"/></a>|<a href="https://www.nuget.org/packages/ARCtrl/"><img alt="Nuget" src="https://img.shields.io/nuget/dt/ARCtrl?color=%234FB3D9"/></a>|
+|<a href="https://www.npmjs.com/package/@nfdi4plants/arctrl"><img alt="NPM" src="https://img.shields.io/npm/v/%40nfdi4plants/arctrl?logo=npm&color=%234fb3d9"/></a>|<a href="https://www.npmjs.com/package/@nfdi4plants/arctrl"><img alt="NPM" src="https://img.shields.io/npm/dt/%40nfdi4plants%2Farctrl?color=%234fb3d9"/></a>|
+|<a href="https://pypi.org/project/ARCtrl/"><img alt="PyPI" src="https://img.shields.io/pypi/v/arctrl?logo=pypi&color=%234fb3d9"/></a>|<a href="https://pypi.org/project/ARCtrl/"><img alt="PyPI" src="https://img.shields.io/pepy/dt/arctrl?color=%234fb3d9"/></a>|
 
 
+Therefore you can use `ARCtrl` either as a `.NET`, `Python` or `Javascript` developer! Yay 🎉
 
-{/* JAVASCRIPT */}
-<TabItem label="Javascript" icon='seti:javascript'>
+------- 
 
-You can find the Javascript package on npm: 
+By the way: not only the source code is being transpiled. 
+Instead, all **1500** tests are being transpiled and run too. 
+This ensures an ever growing reliability of the tool-stack.
 
-<a href="https://www.npmjs.com/package/@nfdi4plants/arctrl"><img alt="NPM" src="https://img.shields.io/npm/v/%40nfdi4plants/arctrl?logo=npm&color=%234fb3d9"/></a>
-
-To install in your module, just run
-
-```shell
-npm install @nfdi4plants/arctrl
-```
-
-You can now import the main `ARC` class in your `js` source file
-
-```js
-import {ARC} from "@nfdi4plants/arctrl";
-```
-</TabItem>
-
-
-{/* PYTHON */}
-<TabItem label="Python" icon='seti:python'>
-
-
-You can find the Python package on PyPI: 
-
-<a href="https://pypi.org/project/ARCtrl/"><img alt="PyPI" src="https://img.shields.io/pypi/v/arctrl?logo=pypi&color=%234fb3d9"/></a>
-
-To install in your environment, just run
-
-```shell
-pip install arctrl
-```
-
-
-You can now import the main `ARC` class in your `py` source file
-
-```py
-from arctrl.arc import ARC
-```
-
-</TabItem>
-</Tabs>
-
+If you still encounter bugs, unintuitive behaviours or missing functionality, feel free to open an Issue on the [GitHub page](https://github.com/nfdi4plants/ARCtrl).

@@ -2,4 +2,7 @@ name: Heinrich Lukas Weil
 socials:
   - icon: simple-icons:github
     href: https://github.com/HLWeil
+  - icon: simple-icons:orcid
+    href: https://orcid.org/0000-0003-1945-6342
 affiliation: DataPLANT
+image: https://raw.githubusercontent.com/nfdi4plants/Branding/master/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_lightblue.svg
