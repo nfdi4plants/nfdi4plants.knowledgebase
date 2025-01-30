@@ -11,4 +11,48 @@ sidebar:
 import { Steps } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
+
+At the top level of the ISA portion of the data model is the `ArcInvestigation` class. 
+It contains the experimental metadata in the major datasets `ArcAssays` and `ArcStudies`, but also organizational metadata like `Persons` and `Publications`.
+
 ![](@images/arctrl/isa-datamodel.svg)
+
+## Setting up basic Investigation
+
+<Tabs syncKey="pl">
+
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:'>
+```fsharp
+open ARCtrl
+
+let inv = ArcInvestigation("MyInvestigation", title = "My Investigation", description = "My Investigation Description")
+
+let study = inv.InitStudy("MyStudy")
+
+let lukas = Person(firstName = "Heinrich", lastName = "Weil", midInitials = "L")
+
+study.Contacts.Add(lukas)
+
+study.InitTable("Growth")
+```
+</TabItem>
+
+
+
+{/* JAVASCRIPT */}
+<TabItem label="Javascript" icon='seti:javascript'>
+```js
+import {ARC} from "@nfdi4plants/arctrl";
+```
+</TabItem>
+
+
+{/* PYTHON */}
+<TabItem label="Python" icon='seti:python'>
+```py
+from arctrl.arc import ARC
+```
+
+</TabItem>
+</Tabs>

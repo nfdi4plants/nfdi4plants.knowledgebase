@@ -13,10 +13,18 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ![ARCtrl](https://github.com/nfdi4plants/ARCtrl/raw/main/logos/ARCtrl_horizontal.png)
 
-`ARCtrl` is a software library for working with ARCs. 
+`ARCtrl` is a software library for working with Annotated Research Contexts (ARCs). 
+For this, it contains an in-memory representation of an ARC and loads of functions to 
+- manipulate and build both the ARC and its subcomponents
+- read and write different representations, including the ARC Scaffold and ARC-RO-Crate
+
+:::tip
+If you're not sure about the ARC concept, check out [arc-rdm.org](https://arc-rdm.org/details/organization-principle/)
+:::
+
+
 
 By transpilation from the `F#` source code using [Fable](https://fable.io/), it is not only hosted on `nuget`, but also as a javascript package on `npm` and as a python package on `PyPI`.
-
 
 | Version | Downloads |
 | :--------|-----------:|
