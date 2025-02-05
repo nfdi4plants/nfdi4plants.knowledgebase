@@ -43,7 +43,17 @@ study.InitTable("Growth")
 {/* JAVASCRIPT */}
 <TabItem label="Javascript" icon='seti:javascript'>
 ```js
-import {ARC} from "@nfdi4plants/arctrl";
+import {ArcInvestigation, Person} from "@nfdi4plants/arctrl";
+
+let inv = new ArcInvestigation("MyInvestigation", "My Investigation", "My Investigation Description")
+
+let study = inv.InitStudy("MyStudy")
+
+let lukas = new Person(undefined, "Weil", "Heinrich", "L")
+
+study.Contacts.push(lukas)
+
+study.InitTable("Growth")
 ```
 </TabItem>
 

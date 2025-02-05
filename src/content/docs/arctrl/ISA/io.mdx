@@ -33,7 +33,12 @@ let datamap = XlsxController.Datamap.fromXlsxFile("myPath.xlsx")
 {/* JAVASCRIPT */}
 <TabItem label="Javascript" icon='seti:javascript'>
 ```js
-import {ARC} from "@nfdi4plants/arctrl";
+import { XlsxController } from "@nfdi4plants/arctrl";
+
+let assay = XlsxController.Assay.fromXlsxFile("myPath.xlsx")
+let study = XlsxController.Study.fromXlsxFile("myPath.xlsx")
+let investigation = XlsxController.Investigation.fromXlsxFile("myPath.xlsx")
+let datamap = XlsxController.Datamap.fromXlsxFile("myPath.xlsx")
 ```
 </TabItem>
 
@@ -73,7 +78,13 @@ XlsxController.Datamap.toXlsxFile("myPath.xlsx",datamap)
 {/* JAVASCRIPT */}
 <TabItem label="Javascript" icon='seti:javascript'>
 ```js
-import {ARC} from "@nfdi4plants/arctrl";
+import { XlsxController } from "@nfdi4plants/arctrl";
+
+XlsxController.Assay.toXlsxFile("myPath.xlsx", assay)
+XlsxController.Study.toXlsxFile("myPath.xlsx", study)
+XlsxController.Investigation.toXlsxFile("myPath.xlsx", investigation)
+XlsxController.Datamap.toXlsxFile("myPath.xlsx", datamap)
+
 ```
 </TabItem>
 
@@ -116,7 +127,11 @@ let investigation = JsonController.Investigation.fromISAJsonString(myJson)
 {/* JAVASCRIPT */}
 <TabItem label="Javascript" icon='seti:javascript'>
 ```js
-import {ARC} from "@nfdi4plants/arctrl";
+import { JsonController } from "@nfdi4plants/arctrl";
+
+let assay = JsonController.Assay.fromISAJsonString(myJson)
+let study = JsonController.Study.fromISAJsonString(myJson)[0] // the second value are registered assays
+let investigation = JsonController.Investigation.fromISAJsonString(myJson)
 ```
 </TabItem>
 
@@ -129,7 +144,6 @@ from arctrl.arctrl import  JsonController
 assay = JsonController.Assay().from_json_string(myJsonString)
 study = JsonController.Study().from_json_string(myJsonString)
 investigation = JsonController.Investigation().from_json_string(myJsonString)
-datamap = JsonController.Datamap().from_json_string(myJsonString)
 ```
 
 </TabItem>
@@ -155,7 +169,11 @@ JsonController.Investigation.toISAJsonString(investigation,spaces = 2)
 {/* JAVASCRIPT */}
 <TabItem label="Javascript" icon='seti:javascript'>
 ```js
-import {ARC} from "@nfdi4plants/arctrl";
+import { JsonController } from "@nfdi4plants/arctrl";
+
+JsonController.Assay.toISAJsonString(assay)
+JsonController.Study.toISAJsonString(study)
+JsonController.Investigation.toISAJsonString(investigation)
 ```
 </TabItem>
 
@@ -168,7 +186,6 @@ from arctrl.arctrl import  JsonController
 JsonController.Assay().to_json_string(assay)
 JsonController.Study().to_json_string(study)
 JsonController.Investigation().to_json_string(investigation)
-JsonController.Datamap().to_json_string(datamap)
 ```
 
 </TabItem>

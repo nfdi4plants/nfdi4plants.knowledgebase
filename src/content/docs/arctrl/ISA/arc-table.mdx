@@ -91,7 +91,35 @@ growth.AddColumn(
 {/* JAVASCRIPT */}
 <TabItem label="Javascript" icon='seti:javascript'>
 ```js
-import {ARC} from "@nfdi4plants/arctrl";
+import {ArcTable, OntologyAnnotation, CompositeHeader, CompositeCell, IOType} from "@nfdi4plants/arctrl";
+
+
+let growth = ArcTable.init("Growth")
+
+let oa_species = new OntologyAnnotation("species", "NCIT", "NCIT:C45293")
+
+let oa_chlamy = new OntologyAnnotation("Chlamydomonas reinhardtii", "NCBITaxon", "NCBITaxon_3055")
+
+let oa_time = new OntologyAnnotation("time", "EFO", "EFO:0000721")
+
+let oa_day = new OntologyAnnotation("day", "UO", "UO:0000033")
+
+
+// This will create an input column with one row cell.
+// In xlsx this will be exactly 1 column.
+growth.AddColumn(CompositeHeader.input(IOType.source()), [CompositeCell.createFreeText("Input1")])
+
+// This will create an Characteristic [species] column with one row cell.
+// In xlsx this will be exactly 3 columns.
+growth.AddColumn(CompositeHeader.characteristic(oa_species), [CompositeCell.createTerm(oa_chlamy)])
+
+// This will create an Parameter [time] column with one row cell.
+// In xlsx this will be exactly 4 columns.
+growth.AddColumn(CompositeHeader.parameter(oa_time), [CompositeCell.createUnitized("5", oa_day)])
+
+// This will create an Output column with one row cell.
+// In xlsx this will be exactly 1 columns.
+growth.AddColumn(CompositeHeader.output(IOType.sample()), [CompositeCell.createFreeText("Output1")])
 ```
 </TabItem>
 
