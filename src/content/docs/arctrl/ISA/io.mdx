@@ -41,7 +41,12 @@ import {ARC} from "@nfdi4plants/arctrl";
 {/* PYTHON */}
 <TabItem label="Python" icon='seti:python'>
 ```py
-from arctrl.arc import ARC
+from arctrl.arctrl import XlsxController
+
+assay = XlsxController.Assay().from_xlsx_file("myPath")
+study = XlsxController.Study().from_xlsx_file("myPath.xlsx")
+investigation = XlsxController.Investigation().from_xlsx_file("myPath.xlsx")
+datamap = XlsxController.Datamap().from_xlsx_file("myPath.xlsx")
 ```
 
 </TabItem>
@@ -76,7 +81,12 @@ import {ARC} from "@nfdi4plants/arctrl";
 {/* PYTHON */}
 <TabItem label="Python" icon='seti:python'>
 ```py
-from arctrl.arc import ARC
+from arctrl.arctrl import XlsxController
+
+XlsxController.Assay().to_xlsx_file("myPath",assay)
+XlsxController.Study().to_xlsx_file("myPath.xlsx",study)
+XlsxController.Investigation().to_xlsx_file("myPath.xlsx",investigation)
+XlsxController.Datamap().to_xlsx_file("myPath.xlsx",datamap)
 ```
 
 </TabItem>
@@ -114,7 +124,12 @@ import {ARC} from "@nfdi4plants/arctrl";
 {/* PYTHON */}
 <TabItem label="Python" icon='seti:python'>
 ```py
-from arctrl.arc import ARC
+from arctrl.arctrl import  JsonController
+
+assay = JsonController.Assay().from_json_string(myJsonString)
+study = JsonController.Study().from_json_string(myJsonString)
+investigation = JsonController.Investigation().from_json_string(myJsonString)
+datamap = JsonController.Datamap().from_json_string(myJsonString)
 ```
 
 </TabItem>
@@ -148,7 +163,12 @@ import {ARC} from "@nfdi4plants/arctrl";
 {/* PYTHON */}
 <TabItem label="Python" icon='seti:python'>
 ```py
-from arctrl.arc import ARC
+from arctrl.arctrl import  JsonController
+
+JsonController.Assay().to_json_string(assay)
+JsonController.Study().to_json_string(study)
+JsonController.Investigation().to_json_string(investigation)
+JsonController.Datamap().to_json_string(datamap)
 ```
 
 </TabItem>

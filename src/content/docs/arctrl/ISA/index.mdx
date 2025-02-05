@@ -51,7 +51,17 @@ import {ARC} from "@nfdi4plants/arctrl";
 {/* PYTHON */}
 <TabItem label="Python" icon='seti:python'>
 ```py
-from arctrl.arc import ARC
+from arctrl.arctrl import ArcInvestigation, ArcStudy, Person
+
+inv = ArcInvestigation("MyInvestigation", title = "My Investigation", description = "My Investigation Description")
+
+study = inv.InitStudy("MyStudy")
+
+lukas = Person(first_name = "Heinrich", last_name = "Weil", mid_initials = "L")
+
+study.Contacts.append(lukas)
+
+study.InitTable("Growth")
 ```
 
 </TabItem>

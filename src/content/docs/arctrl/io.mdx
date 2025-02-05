@@ -43,6 +43,10 @@ import {ARC} from "@nfdi4plants/arctrl";
 
 ```py
 from arctrl.arc import ARC
+
+myArcPath = "arcs/myARC/"
+
+arc = ARC.load(myArcPath)
 ```
 
 </TabItem>
@@ -80,6 +84,10 @@ import {ARC} from "@nfdi4plants/arctrl";
 
 ```py
 from arctrl.arc import ARC
+
+myArcPath = "arcs/myARC/"
+
+arc.Write(myArcPath)
 ```
 
 </TabItem>
@@ -118,6 +126,10 @@ import {ARC} from "@nfdi4plants/arctrl";
 
 ```py
 from arctrl.arc import ARC
+
+myArcPath = "arcs/myARC/"
+
+arc.Update(myArcPath)
 ```
 
 </TabItem>

@@ -99,7 +99,35 @@ import {ARC} from "@nfdi4plants/arctrl";
 {/* PYTHON */}
 <TabItem label="Python" icon='seti:python'>
 ```py
-from arctrl.arc import ARC
+
+from arctrl.arctrl import ArcTable, OntologyAnnotation, CompositeHeader, CompositeCell, IOType
+
+growth = ArcTable.init("Growth")
+
+oa_species = OntologyAnnotation("species", "NCIT", "NCIT:C45293")
+
+oa_chlamy = OntologyAnnotation("Chlamydomonas reinhardtii", "NCBITaxon", "NCBITaxon_3055")
+
+oa_time = OntologyAnnotation("time", "EFO", "EFO:0000721")
+
+oa_day = OntologyAnnotation("day", "UO", "UO:0000033")
+
+
+# This will create an input column with one row cell.
+# In xlsx this will be exactly 1 column.
+growth.AddColumn(CompositeHeader.input(IOType.source()), [CompositeCell.create_free_text("Input1")])
+
+# This will create an Characteristic [species] column with one row cell.
+# In xlsx this will be exactly 3 columns.
+growth.AddColumn(CompositeHeader.characteristic(oa_species), [CompositeCell.create_term(oa_chlamy)])
+
+# This will create an Parameter [time] column with one row cell.
+# In xlsx this will be exactly 4 columns.
+growth.AddColumn(CompositeHeader.parameter(oa_time), [CompositeCell.create_unitized("5", oa_day)])
+
+# This will create an Output column with one row cell.
+# In xlsx this will be exactly 1 columns.
+growth.AddColumn(CompositeHeader.output(IOType.sample()), [CompositeCell.create_free_text("Output1")])
 ```
 
 </TabItem>
