@@ -24,6 +24,7 @@ Your contribution to the DataPLANT Knowledge Base is highly appreciated. This gu
   - [Tables](#tables)
   - [Lists](#lists)
   - [Article cross-references](#article-cross-references)
+  - [Multilingual Code](#multilingual-code)
 
 ## Setup
 
@@ -252,3 +253,40 @@ Instead, use references starting from the `docs` folder as root and add `/nfdi4p
 ```md
 [wiki associated to the ARC](/nfdi4plants.knowledgebase/datahub/datahub-arc-wiki)
 ```
+
+### Multilingual code
+
+Some software libraries of the DataPLANT ecosystem are transpiled and can be accessed from three different programming languages: 
+  - FSharp
+  - JavaScript
+  - Python
+
+In cases where this applies, it is recommended to present code snippets in the documentation by making use of `Tab` components.
+
+First start out by importing the components at the top of your `mdx` file:
+
+```js
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+```
+
+Then for multilanguage code blocks use the following structure:
+
+```html
+<Tabs syncKey="pl">
+
+<TabItem label="FSharp" icon='seti:'>
+// Your F# documentation here
+</TabItem>
+
+<TabItem label="JavaScript" icon='seti:javascript'>
+// Your JS documentation here
+</TabItem>
+
+<TabItem label="Python" icon='seti:python'>
+// Your Py documentation here
+</TabItem>
+
+</Tabs>
+```
+
+Make sure the `syncKey` is always `"pl"` (programming language), and the labels are written exactly as `FSharp`, `JavaScript` and `Python`.
