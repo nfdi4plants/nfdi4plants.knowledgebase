@@ -159,6 +159,7 @@ export default defineConfig({
         {
           label: 'ARCtrl',
           collapsed: true,
+          badge: {text: 'For developers', variant: 'tip'}, 
           autogenerate: { directory: 'arctrl' },
         },
         {
