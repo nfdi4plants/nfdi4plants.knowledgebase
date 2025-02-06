@@ -22,23 +22,23 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 ```fsharp
 open ARCtrl
 
-let assay = XlsxController.Assay.fromXlsxFile("myPath.xlsx")
-let study,_ = XlsxController.Study.fromXlsxFile("myPath.xlsx") // the second value are registered assays
-let investigation = XlsxController.Investigation.fromXlsxFile("myPath.xlsx")
-let datamap = XlsxController.Datamap.fromXlsxFile("myPath.xlsx")
+let investigation = XlsxController.Investigation.fromXlsxFile("isa.investigation.xlsx")
+let study,_ = XlsxController.Study.fromXlsxFile("isa.study.xlsx") // the second value are registered assays
+let assay = XlsxController.Assay.fromXlsxFile("isa.assay.xlsx")
+let datamap = XlsxController.Datamap.fromXlsxFile("isa.datamap.xlsx")
 ```
 </TabItem>
 
 
 {/* JAVASCRIPT */}
-<TabItem label="Javascript" icon='seti:javascript'>
+<TabItem label="JavaScript" icon='seti:javascript'>
 ```js
 import { XlsxController } from "@nfdi4plants/arctrl";
 
-let assay = XlsxController.Assay.fromXlsxFile("myPath.xlsx")
-let study = XlsxController.Study.fromXlsxFile("myPath.xlsx")
-let investigation = XlsxController.Investigation.fromXlsxFile("myPath.xlsx")
-let datamap = XlsxController.Datamap.fromXlsxFile("myPath.xlsx")
+let investigation = XlsxController.Investigation.fromXlsxFile("isa.investigation.xlsx")
+let study = XlsxController.Study.fromXlsxFile("isa.study.xlsx")
+let assay = XlsxController.Assay.fromXlsxFile("isa.assay.xlsx")
+let datamap = XlsxController.Datamap.fromXlsxFile("isa.datamap.xlsx")
 ```
 </TabItem>
 
@@ -48,10 +48,10 @@ let datamap = XlsxController.Datamap.fromXlsxFile("myPath.xlsx")
 ```py
 from arctrl.arctrl import XlsxController
 
-assay = XlsxController.Assay().from_xlsx_file("myPath")
-study = XlsxController.Study().from_xlsx_file("myPath.xlsx")
-investigation = XlsxController.Investigation().from_xlsx_file("myPath.xlsx")
-datamap = XlsxController.Datamap().from_xlsx_file("myPath.xlsx")
+investigation = XlsxController.Investigation().from_xlsx_file("isa.investigation.xlsx")
+study = XlsxController.Study().from_xlsx_file("isa.study.xlsx")
+assay = XlsxController.Assay().from_xlsx_file("isa.assay")
+datamap = XlsxController.Datamap().from_xlsx_file("isa.datamap.xlsx")
 ```
 
 </TabItem>
@@ -67,10 +67,10 @@ datamap = XlsxController.Datamap().from_xlsx_file("myPath.xlsx")
 ```fsharp
 open ARCtrl
 
-XlsxController.Assay.toXlsxFile("myPath.xlsx",assay)
-XlsxController.Study.toXlsxFile("myPath.xlsx",study)
-XlsxController.Investigation.toXlsxFile("myPath.xlsx",investigation)
-XlsxController.Datamap.toXlsxFile("myPath.xlsx",datamap)
+XlsxController.Investigation.toXlsxFile("isa.investigation.xlsx",investigation)
+XlsxController.Study.toXlsxFile("isa.study.xlsx",study)
+XlsxController.Assay.toXlsxFile("isa.assay.xlsx",assay)
+XlsxController.Datamap.toXlsxFile("isa.datamap.xlsx",datamap)
 ```
 </TabItem>
 
@@ -80,10 +80,10 @@ XlsxController.Datamap.toXlsxFile("myPath.xlsx",datamap)
 ```js
 import { XlsxController } from "@nfdi4plants/arctrl";
 
-XlsxController.Assay.toXlsxFile("myPath.xlsx", assay)
-XlsxController.Study.toXlsxFile("myPath.xlsx", study)
-XlsxController.Investigation.toXlsxFile("myPath.xlsx", investigation)
-XlsxController.Datamap.toXlsxFile("myPath.xlsx", datamap)
+XlsxController.Investigation.toXlsxFile("isa.investigation.xlsx", investigation)
+XlsxController.Study.toXlsxFile("isa.study.xlsx", study)
+XlsxController.Assay.toXlsxFile("isa.assay.xlsx", assay)
+XlsxController.Datamap.toXlsxFile("isa.datamap.xlsx", datamap)
 
 ```
 </TabItem>
@@ -94,10 +94,10 @@ XlsxController.Datamap.toXlsxFile("myPath.xlsx", datamap)
 ```py
 from arctrl.arctrl import XlsxController
 
-XlsxController.Assay().to_xlsx_file("myPath",assay)
-XlsxController.Study().to_xlsx_file("myPath.xlsx",study)
-XlsxController.Investigation().to_xlsx_file("myPath.xlsx",investigation)
-XlsxController.Datamap().to_xlsx_file("myPath.xlsx",datamap)
+XlsxController.Investigation().to_xlsx_file("isa.investigation.xlsx",investigation)
+XlsxController.Study().to_xlsx_file("isa.study.xlsx",study)
+XlsxController.Assay().to_xlsx_file("isa.assay.xlsx",assay)
+XlsxController.Datamap().to_xlsx_file("isa.datamap.xlsx",datamap)
 ```
 
 </TabItem>
@@ -117,9 +117,9 @@ XlsxController.Datamap().to_xlsx_file("myPath.xlsx",datamap)
 ```fsharp
 open ARCtrl
 
-let assay = JsonController.Assay.fromISAJsonString(myJson)
-let study,_ = JsonController.Study.fromISAJsonString(myJson) // the second value are registered assays
 let investigation = JsonController.Investigation.fromISAJsonString(myJson)
+let study,_ = JsonController.Study.fromISAJsonString(myJson) // the second value are registered assays
+let assay = JsonController.Assay.fromISAJsonString(myJson)
 ```
 </TabItem>
 
@@ -129,9 +129,9 @@ let investigation = JsonController.Investigation.fromISAJsonString(myJson)
 ```js
 import { JsonController } from "@nfdi4plants/arctrl";
 
-let assay = JsonController.Assay.fromISAJsonString(myJson)
-let study = JsonController.Study.fromISAJsonString(myJson)[0] // the second value are registered assays
 let investigation = JsonController.Investigation.fromISAJsonString(myJson)
+let study = JsonController.Study.fromISAJsonString(myJson)[0] // the second value are registered assays
+let assay = JsonController.Assay.fromISAJsonString(myJson)
 ```
 </TabItem>
 
@@ -141,9 +141,9 @@ let investigation = JsonController.Investigation.fromISAJsonString(myJson)
 ```py
 from arctrl.arctrl import  JsonController
 
-assay = JsonController.Assay().from_json_string(myJsonString)
-study = JsonController.Study().from_json_string(myJsonString)
 investigation = JsonController.Investigation().from_json_string(myJsonString)
+study = JsonController.Study().from_json_string(myJsonString)
+assay = JsonController.Assay().from_json_string(myJsonString)
 ```
 
 </TabItem>
@@ -159,9 +159,9 @@ investigation = JsonController.Investigation().from_json_string(myJsonString)
 ```fsharp
 open ARCtrl
 
-JsonController.Assay.toISAJsonString(assay,spaces = 2)
-JsonController.Study.toISAJsonString(study,spaces = 2)
 JsonController.Investigation.toISAJsonString(investigation,spaces = 2)
+JsonController.Study.toISAJsonString(study,spaces = 2)
+JsonController.Assay.toISAJsonString(assay,spaces = 2)
 ```
 </TabItem>
 
@@ -171,9 +171,9 @@ JsonController.Investigation.toISAJsonString(investigation,spaces = 2)
 ```js
 import { JsonController } from "@nfdi4plants/arctrl";
 
-JsonController.Assay.toISAJsonString(assay)
-JsonController.Study.toISAJsonString(study)
 JsonController.Investigation.toISAJsonString(investigation)
+JsonController.Study.toISAJsonString(study)
+JsonController.Assay.toISAJsonString(assay)
 ```
 </TabItem>
 
@@ -183,9 +183,9 @@ JsonController.Investigation.toISAJsonString(investigation)
 ```py
 from arctrl.arctrl import  JsonController
 
-JsonController.Assay().to_json_string(assay)
-JsonController.Study().to_json_string(study)
 JsonController.Investigation().to_json_string(investigation)
+JsonController.Study().to_json_string(study)
+JsonController.Assay().to_json_string(assay)
 ```
 
 </TabItem>
