@@ -1,5 +1,5 @@
 ---
-title: "General"
+title: "ISA (Investigation – Study – Assay)"
 lastUpdated: 2024-12-10
 authors:
   - lukas-weil
@@ -13,7 +13,7 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 
 At the top level of the ISA portion of the data model is the `ArcInvestigation` class. 
-It contains the experimental metadata in the major datasets `ArcAssays` and `ArcStudies`, but also organizational metadata like `Persons` and `Publications`.
+It contains organizational metadata like `Persons` and `Publications` as well as the experimental metadata in the major datasets `ArcStudies` and `ArcAssays`.
 
 ![](@images/arctrl/isa-datamodel.svg)
 
@@ -41,7 +41,7 @@ study.InitTable("Growth")
 
 
 {/* JAVASCRIPT */}
-<TabItem label="Javascript" icon='seti:javascript'>
+<TabItem label="JavaScript" icon='seti:javascript'>
 ```js
 import {ArcInvestigation, Person} from "@nfdi4plants/arctrl";
 

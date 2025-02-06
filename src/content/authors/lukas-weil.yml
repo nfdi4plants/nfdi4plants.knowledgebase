@@ -5,4 +5,4 @@ socials:
   - icon: simple-icons:orcid
     href: https://orcid.org/0000-0003-1945-6342
 affiliation: DataPLANT
-image: https://raw.githubusercontent.com/nfdi4plants/Branding/master/logos/DataPLANT/DataPLANT_logo_minimal_rounded_bg_lightblue.svg
+image: "@images/authors/DataPLANT_logo_minimal_rounded_bg_lightblue.svg"
