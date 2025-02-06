@@ -1,0 +1,192 @@
+---
+title: "Read and Write"
+lastUpdated: 2024-12-10
+authors:
+  - lukas-weil
+sidebar:
+  order: 4.2
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## XLSX
+
+#### Reading
+
+<Tabs syncKey="pl">
+
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:'>
+
+```fsharp
+open ARCtrl
+
+let investigation = XlsxController.Investigation.fromXlsxFile("isa.investigation.xlsx")
+let study,_ = XlsxController.Study.fromXlsxFile("isa.study.xlsx") // the second value are registered assays
+let assay = XlsxController.Assay.fromXlsxFile("isa.assay.xlsx")
+let datamap = XlsxController.Datamap.fromXlsxFile("isa.datamap.xlsx")
+```
+</TabItem>
+
+
+{/* JAVASCRIPT */}
+<TabItem label="JavaScript" icon='seti:javascript'>
+```js
+import { XlsxController } from "@nfdi4plants/arctrl";
+
+let investigation = XlsxController.Investigation.fromXlsxFile("isa.investigation.xlsx")
+let study = XlsxController.Study.fromXlsxFile("isa.study.xlsx")
+let assay = XlsxController.Assay.fromXlsxFile("isa.assay.xlsx")
+let datamap = XlsxController.Datamap.fromXlsxFile("isa.datamap.xlsx")
+```
+</TabItem>
+
+
+{/* PYTHON */}
+<TabItem label="Python" icon='seti:python'>
+```py
+from arctrl.arctrl import XlsxController
+
+investigation = XlsxController.Investigation().from_xlsx_file("isa.investigation.xlsx")
+study = XlsxController.Study().from_xlsx_file("isa.study.xlsx")
+assay = XlsxController.Assay().from_xlsx_file("isa.assay")
+datamap = XlsxController.Datamap().from_xlsx_file("isa.datamap.xlsx")
+```
+
+</TabItem>
+</Tabs>
+
+#### Writing
+
+<Tabs syncKey="pl">
+
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:'>
+
+```fsharp
+open ARCtrl
+
+XlsxController.Investigation.toXlsxFile("isa.investigation.xlsx",investigation)
+XlsxController.Study.toXlsxFile("isa.study.xlsx",study)
+XlsxController.Assay.toXlsxFile("isa.assay.xlsx",assay)
+XlsxController.Datamap.toXlsxFile("isa.datamap.xlsx",datamap)
+```
+</TabItem>
+
+
+{/* JAVASCRIPT */}
+<TabItem label="JavaScript" icon='seti:javascript'>
+```js
+import { XlsxController } from "@nfdi4plants/arctrl";
+
+XlsxController.Investigation.toXlsxFile("isa.investigation.xlsx", investigation)
+XlsxController.Study.toXlsxFile("isa.study.xlsx", study)
+XlsxController.Assay.toXlsxFile("isa.assay.xlsx", assay)
+XlsxController.Datamap.toXlsxFile("isa.datamap.xlsx", datamap)
+
+```
+</TabItem>
+
+
+{/* PYTHON */}
+<TabItem label="Python" icon='seti:python'>
+```py
+from arctrl.arctrl import XlsxController
+
+XlsxController.Investigation().to_xlsx_file("isa.investigation.xlsx",investigation)
+XlsxController.Study().to_xlsx_file("isa.study.xlsx",study)
+XlsxController.Assay().to_xlsx_file("isa.assay.xlsx",assay)
+XlsxController.Datamap().to_xlsx_file("isa.datamap.xlsx",datamap)
+```
+
+</TabItem>
+</Tabs>
+
+
+
+## Json
+
+#### Reading
+
+<Tabs syncKey="pl">
+
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:'>
+
+```fsharp
+open ARCtrl
+
+let investigation = JsonController.Investigation.fromISAJsonString(myJson)
+let study,_ = JsonController.Study.fromISAJsonString(myJson) // the second value are registered assays
+let assay = JsonController.Assay.fromISAJsonString(myJson)
+```
+</TabItem>
+
+
+{/* JAVASCRIPT */}
+<TabItem label="JavaScript" icon='seti:javascript'>
+```js
+import { JsonController } from "@nfdi4plants/arctrl";
+
+let investigation = JsonController.Investigation.fromISAJsonString(myJson)
+let study = JsonController.Study.fromISAJsonString(myJson)[0] // the second value are registered assays
+let assay = JsonController.Assay.fromISAJsonString(myJson)
+```
+</TabItem>
+
+
+{/* PYTHON */}
+<TabItem label="Python" icon='seti:python'>
+```py
+from arctrl.arctrl import  JsonController
+
+investigation = JsonController.Investigation().from_json_string(myJsonString)
+study = JsonController.Study().from_json_string(myJsonString)
+assay = JsonController.Assay().from_json_string(myJsonString)
+```
+
+</TabItem>
+</Tabs>
+
+#### Writing
+
+<Tabs syncKey="pl">
+
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:'>
+
+```fsharp
+open ARCtrl
+
+JsonController.Investigation.toISAJsonString(investigation,spaces = 2)
+JsonController.Study.toISAJsonString(study,spaces = 2)
+JsonController.Assay.toISAJsonString(assay,spaces = 2)
+```
+</TabItem>
+
+
+{/* JAVASCRIPT */}
+<TabItem label="JavaScript" icon='seti:javascript'>
+```js
+import { JsonController } from "@nfdi4plants/arctrl";
+
+JsonController.Investigation.toISAJsonString(investigation)
+JsonController.Study.toISAJsonString(study)
+JsonController.Assay.toISAJsonString(assay)
+```
+</TabItem>
+
+
+{/* PYTHON */}
+<TabItem label="Python" icon='seti:python'>
+```py
+from arctrl.arctrl import  JsonController
+
+JsonController.Investigation().to_json_string(investigation)
+JsonController.Study().to_json_string(study)
+JsonController.Assay().to_json_string(assay)
+```
+
+</TabItem>
+</Tabs>

@@ -157,6 +157,12 @@ export default defineConfig({
           autogenerate: { directory: 'arc-manager' },
         },
         {
+          label: 'ARCtrl',
+          collapsed: true,
+          badge: {text: 'For developers', variant: 'tip'}, 
+          autogenerate: { directory: 'arctrl' },
+        },
+        {
           label: 'Vault',
           // Collapse the group by default.
           collapsed: true,

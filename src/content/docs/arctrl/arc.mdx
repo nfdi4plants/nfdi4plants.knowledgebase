@@ -1,0 +1,59 @@
+---
+title: "ARC"
+lastUpdated: 2024-12-10
+authors:
+  - lukas-weil
+sidebar:
+  order: 2  
+---
+
+
+import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+The core entity of ARCtrl is of course the `ARC` object. It's an in-memory representation of an ARC Scaffold.
+
+This class contains three properties:
+
+- `ISA` of type `ARCInvestigation`
+- `CWL`
+- `FileSystem` of type `FileSystem`
+
+The constructor takes these three values as inputs, but you can also initialize an empty ARC in memory.
+
+<Tabs syncKey="pl">
+
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:'>
+
+```fsharp
+open ARCtrl
+
+let arc = ARC()
+```
+</TabItem>
+
+
+
+{/* JAVASCRIPT */}
+<TabItem label="JavaScript" icon='seti:javascript'>
+
+```js
+import {ARC} from "@nfdi4plants/arctrl";
+
+let arc = new ARC()
+```
+</TabItem>
+
+
+{/* PYTHON */}
+<TabItem label="Python" icon='seti:python'>
+
+```py
+from arctrl.arc import ARC
+
+arc = ARC()
+```
+
+</TabItem>
+</Tabs>
