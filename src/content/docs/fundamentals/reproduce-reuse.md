@@ -5,6 +5,10 @@ authors:
  - dominik-brilhaus
 draft: true
 pagefind: false
+sidebar:
+  badge:
+    text: wip
+    variant: note
 ---
 
 This guide outlines key principles and practical steps for achieving reproducibility in both wet-lab and computational (dry-lab) environments. It aims to help researchers in biological sciences understand and implement reproducibility in their work, ensuring that experimental outcomes, data, and analyses can be reliably repeated by others.
