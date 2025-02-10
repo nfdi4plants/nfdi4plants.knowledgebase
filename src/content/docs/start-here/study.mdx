@@ -60,6 +60,8 @@ With **studies** you can describe materials and resources. In this Violas-PhD-Pr
         My **description**: "Cold acclimation analysis of Arabidopsis leaf tissue"
       </ViolaSays>
 
+  7. Click the `Save` button to save your metadata. 
+
       :::note
       On the study level, you can add the same type of metadata as on the investigation level in the previous step.
       :::
@@ -74,7 +76,7 @@ With **studies** you can describe materials and resources. In this Violas-PhD-Pr
 ## Protocols
 
 <ViolaSays>
-  I saved my lab notes about the plant growth in the file growth_protocol.md. Can i store that somewhere?
+  I saved my lab notes about the plant growth in the file growth_protocol.md. Can I store that somewhere?
 </ViolaSays>
 
 You can use the protocol subdirectory to store free-text protocols that describe how the samples or materials were created.
@@ -110,7 +112,7 @@ You can use the protocol subdirectory to store free-text protocols that describe
 ## Add samples to your study
 
 <ViolaSays>
-And where do i note down the plants i used?
+And where do I note down the plants I used?
 </ViolaSays>
 
 Structured metadata annotation in the ARC is mostly achieved via spreadsheet tables.
@@ -123,6 +125,7 @@ Let us start by adding the samples to the study.
   1. Click on the study's name (`AthalianaColdStress`) in the file tree.
   2. At the bottom of the right panel, click on the <btn>+</btn> right next to the `Study` sheet.
   3. This adds a new table sheet.
+  4. Right-click on sheet’s tab to rename it to plant-growth. 
   4. Click on the **"Add Building Block"** button next to **"Or start from scratch!"** option.
   5. From the dropdown menu in the `Add Building Block` widget:
       - select `Input` -> `Source Name` and click `Add Column`
@@ -149,6 +152,8 @@ Let us start by adding the samples to the study.
       RT3                  |  RT3_leaf
 
       This means that input "Cold1" results in output "Cold1_leaf".
+
+  8. Click the `Save` button to save your metadata. 
 
   </Steps>
 </Card>
@@ -190,6 +195,9 @@ We reference the protocol in the annotation table to say:
       RT1                  |  RT1_leaf  | protocols/growth_protocol.md 
       RT2                  |  RT2_leaf  | protocols/growth_protocol.md 
       RT3                  |  RT3_leaf  | protocols/growth_protocol.md 
+   
+   8. Click the `Save` button to save your metadata. 
+
    </Steps>
 
 </Card>
@@ -219,7 +227,7 @@ import XY from "@images/start-here/arc-prototypic-metadata.svg"
 <img src={XY.src} style="width:80%;display: block; margin: 20px" />
 
 <ViolaSays>
-So i need to find the important information in my protocol and then add it to the metadata table?
+So I need to find the important information in my protocol and then add it to the metadata table?
 </ViolaSays>
 
 Yes! Imagine ontologies like a vocabulary. You can use them to describe your samples in a standardized way. This makes it easier for others to understand your data.
@@ -302,13 +310,15 @@ Then we need to put this information into context:
       RT2                  |                        | RT2_leaf
       RT3                  |                        | RT3_leaf
 
+  1. Click the `Save` button.
+
         <ViolaSays>
         Great, I've got this! 
-        
         Now I can add building blocks for the characteristics "tissue" and "growth medium" and enter the values "leaf" and "hydroponic plant culture media", respectively.
       </ViolaSays>
   </Steps>
 </Card>
+
 
 ## Add a parameter with a unit
 
@@ -330,7 +340,7 @@ Yes, you are right! Parameters are similar to Characteristics. To use units you 
         You can see the numbers being complemented with the associated unit.
         :::
 
-    5. Fill out the other missing parameters, except for "growth temperature"! This is a special parameter as it dictates our experiment goal.
+    5. Fill out the other missing parameters, except for "temperature"! This is a special parameter as it dictates our experiment goal.
 
   </Steps>
 </Card>
@@ -339,7 +349,7 @@ Yes, you are right! Parameters are similar to Characteristics. To use units you 
 ## Add a factor building block
 
 <ViolaSays>
-So what do i do with "growth temperature"? My experiment revolves around this specific parameter.
+So what do i do with "temperature"? My experiment revolves around this specific parameter.
 </ViolaSays>
 
 In this case, you can use a `Factor` building block. Factors are used to describe the experimental conditions that are manipulated in an experiment.
@@ -347,7 +357,7 @@ In this case, you can use a `Factor` building block. Factors are used to describ
 <Card icon="pen" title="ARCitect">
   <Steps>       
 
-    1. In the *Building Blocks* widget, select *Factor*, search for `growth temperature`, if the term does not appear in the list, you can think of other names that match the *Factor*, in this case we will simply not select anything.       
+    1. In the *Building Blocks* widget, select *Factor*, search for `temperature day`, select the term with the ID `DPBO:0000007`.        
     2. Check the box for *Unit* and search for `degree celsius` in the adjacent search bar.
     3. Select `UO:0000027`.
     4. Click `Add Column`.
@@ -355,7 +365,7 @@ In this case, you can use a `Factor` building block. Factors are used to describ
 
         <div class="overflow-x-auto">
           <div class="min-w-[800px]" > 
-          `Input[Source Name]` | `Characteristic [organism]` | `Factor [growth temperature]` | `Output[Sample Name]`
+          `Input[Source Name]` | `Characteristic [organism]` | `Factor [temperature day]` | `Output[Sample Name]`
           -------------------- |  --------------------       | --------------------          |  --------------------
           Cold1                |  Arabidopsis thaliana       | 6 degree celsius              | Cold1_leaf
           Cold2                |  Arabidopsis thaliana       | 6 degree celsius              | Cold2_leaf
@@ -365,6 +375,7 @@ In this case, you can use a `Factor` building block. Factors are used to describ
           RT3                  |  Arabidopsis thaliana       | 25 degree celsius             | RT3_leaf
           </div>
         </div>
+    6. Click the `Save` button.  
 
   </Steps>
 </Card>
