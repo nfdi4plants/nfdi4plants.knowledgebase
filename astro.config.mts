@@ -162,13 +162,13 @@ export default defineConfig({
           badge: {text: 'For developers', variant: 'tip'}, 
           autogenerate: { directory: 'arctrl' },
         },
-        {
-          label: 'Vault',
-          // Collapse the group by default.
-          collapsed: true,
-          badge: {text: 'Outdated', variant: 'note'}, 
-          autogenerate: { directory: 'vault' },
-        },
+        // {
+        //   label: 'Vault',
+        //   // Collapse the group by default.
+        //   collapsed: true,
+        //   badge: {text: 'Outdated', variant: 'note'}, 
+        //   autogenerate: { directory: 'vault' },
+        // },
       ],
       expressiveCode: {
         defaultProps: {
