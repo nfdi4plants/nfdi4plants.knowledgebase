@@ -39,15 +39,17 @@ export default defineConfig({
       sidebar: [
         {
           label: 'Start Here',
-          badge: { text: 'New!', variant: 'tip' }, 
+          badge: { text: 'For starters', variant: 'tip' }, 
           autogenerate: { directory: 'start-here' },
         },
         {
           label: 'Core Concepts',
+          collapsed: true,
           autogenerate: { directory: 'core-concepts' },
         },
         {
           label: 'Guides',
+          collapsed: true,
           autogenerate: { directory: 'guides' },
         },
         {
@@ -162,13 +164,13 @@ export default defineConfig({
           badge: {text: 'For developers', variant: 'tip'}, 
           autogenerate: { directory: 'arctrl' },
         },
-        {
-          label: 'Vault',
-          // Collapse the group by default.
-          collapsed: true,
-          badge: {text: 'Outdated', variant: 'note'}, 
-          autogenerate: { directory: 'vault' },
-        },
+        // {
+        //   label: 'Vault',
+        //   // Collapse the group by default.
+        //   collapsed: true,
+        //   badge: {text: 'Outdated', variant: 'note'}, 
+        //   autogenerate: { directory: 'vault' },
+        // },
       ],
       expressiveCode: {
         defaultProps: {
