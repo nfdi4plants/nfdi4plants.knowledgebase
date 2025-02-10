@@ -44,10 +44,12 @@ export default defineConfig({
         },
         {
           label: 'Core Concepts',
+          collapsed: true,
           autogenerate: { directory: 'core-concepts' },
         },
         {
           label: 'Guides',
+          collapsed: true,
           autogenerate: { directory: 'guides' },
         },
         {
