@@ -425,7 +425,7 @@ In your home folder (Windows: `C:/Users/<UserName>`, macOS: `Users/<UserName>`),
 When users try to upload very large files, i.e. not the overall push size, but single-very-large-files, they might run into a time out error. This setting should fix it:
 
 ```bash
-git config lfs.activitytimeout 0
+git config --global lfs.activitytimeout 0
 ```
 
 ### Missing LFS objects
