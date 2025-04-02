@@ -212,6 +212,7 @@ and CWL process identical. This enables explorative work in scripts which can th
 cwlVersion: v1.2
 class: CommandLineTool
 hints:
+  DockerRequirement:
     dockerImageId: "devcontainer"
     dockerFile: {$include: "devcontainer/Dockerfile"}
 requirements:
