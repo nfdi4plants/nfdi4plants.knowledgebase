@@ -1,60 +1,117 @@
 ---
 title: ARC Commander QuickStart
 authors:
-  - martin-kuhl
   - dominik-brilhaus
-lastUpdated: 2023-06-09
+  - martin-kuhl
+lastUpdated: 2025-05-13
 sidebar:
   order: 4.5
 ---
 
+import { Steps } from '@astrojs/starlight/components';
 import NewARC from '@components/mdx/NewARC.mdx'
 
-## About this guide
+import InstallationARCCommander from 'setup/installation.mdx'
+import InstallationGit from 'setup/installation-git.mdx'
+import Access from 'setup/access.mdx'
 
-In this guide we focus on how to use the [ARC Commander][def] to create your ARC and structure, store and share your data.
+This guide introduces the **ARC Commander**, a command line tool to create, edit and share you ARC.
+It requires some experience with the command line (command prompt, shell, terminal,...).
 
-## Before we can start
+:::tip
+Before following this guide, we recommend to explore the [Getting Started guide](/nfdi4plants.knowledgebase/start-here/) for a more comprehensive overview of ARC concepts and features. 
 
-☑️ Please [install ARC Commander](/nfdi4plants.knowledgebase/arc-commander/setup/installation)
-☑️ Find <a href="/nfdi4plants.knowledgebase/arc-commander/tutorial-command-line" target="_blank">the command line</a> on your system  
-💡 Consider reading about [ARC](/nfdi4plants.knowledgebase/core-concepts/arc) and the [ARC Commander][def]  
-💡 After concluding this quickstart, consider exploring the [ARC Commander manual][def] for a more detailed usage instruction.
+Here we reproduce parts of Viola's example ARC created there. However, the ARC Commander by design does not offer all functions you know from [ARCitect](/nfdi4plants.knowledgebase/arcitect/).
+For metadata annotations you can either work on your ARC in ARCitect as explained in the [Getting Started guide](/nfdi4plants.knowledgebase/start-here/) or explore the different options of using [Swate](/nfdi4plants.knowledgebase/swate/).
+:::
 
-## ARC initialization
+## Setup
 
-1. Create and navigate to a local folder, which you want to initialize as an ARC.
+Before using the ARC commander, please install Git, Git-LFS and ARC Commander and setup access to your DataHUB account.
 
-```bash
-mkdir ~/Desktop/QuickStart
-cd ~/Desktop/QuickStart
-```
+<Steps>
 
-2. Initialize your ARC by executing
+  1. 
+      <details>
+        <summary>Install and setup Git and Git-LFS</summary>
+        <InstallationGit />
+      </details>
+  
+  2. 
+      <details>
+        <summary>Install ARC Commander</summary>
+        <InstallationGit />
+      </details>
 
-```bash
-arc init
-```
+  3. 
+      <details>
+        <summary>Setup DataHUB access</summary>
+        <Access />
+      </details>
 
-3. This will create the general ARC folder structure:
-
-<NewARC />
+</Steps>
 
 
-## Adding metadata
+## Initialize your ARC
 
-### ISA investigation
+<Steps>
 
-The ISA investigation (`-i`) workbook allows you to record administrative metadata of your project.
-The isa.investigation.xlsx workbook including an identifier to your ARC has been added to the project during initialization.
-You can update the identifier of your ARC with
+  1. Create and navigate to a local folder, which you want to initialize as an ARC, e.g. via file explorer or
 
-```bash
-arc investigation update -i QuickStartInvestigation
-```
-> 💡 Avoid using spaces in the identifier. Use underscores and capital letters instead.
+      ```bash
+      mkdir AthalianaColdStressSugar
+      cd AthalianaColdStressSugar
+      ```
+  
+  2. Initialize your ARC by executing
 
-### ISA studies and assays
+      ```bash
+      arc init -i AthalianaColdStressSugar
+      ```
+
+      :::tip
+      Avoid using spaces or special characters in the identifier.
+      :::
+  
+  3. This creates the general ARC folder structure:
+
+      <NewARC />
+
+</Steps>
+
+:::tip
+The ISA investigation (`-i` or `--investigation`) workbook allows you to record administrative metadata of your project.
+The `isa.investigation.xlsx` workbook including an identifier to your ARC has been added to the project during initialization.
+:::
+
+## Adding investigation metadata
+
+<Steps>
+  
+  1. Add a Title
+
+      ```bash
+      arc investigation --title "Arabidopsis thaliana cold acclimation"
+      ```  
+  
+  2. Add a Description
+
+      ```bash
+      arc i --description "This experiment investigates the response of Arabidopsis thaliana to cold stress by subjecting plants to low-temperature conditions and monitoring physiological, molecular, and growth-related changes. Cold-treated plants are compared with control groups grown under optimal conditions to assess stress-related markers such as changes in protein abundance, sugar content, and growth rates. The goal is to identify key molecules and physiological responses involved in cold tolerance, contributing to the understanding of plant stress adaptation mechanisms."
+      ```
+
+  3. Add Contacts
+
+      ```bash
+      arc i person register -f Jasmine -l Beetroot
+      arc i person register -f Oliver -l Sage
+      arc i person register -f Viola -l Canina --email viola@plantscience.xyz
+      ```
+
+</Steps>
+
+
+## Adding studies and assays
 
 The ISA study (`-s`) and ISA assay (`-a`) workbooks allow you to annotate your experimental data.
 
@@ -70,7 +127,9 @@ arc study add -s QuickStartStudy
 arc assay add -s QuickStartStudy -a QuickStartAssay
 ```
 
-> 💡 An assay must be linked to a study. If a study does not exist, it will be created automatically in this step.
+:::note
+An assay must be linked to a study. If a study does not exist, it will be created automatically in this step.
+:::
 
 - The ARC Commander will add a subdirectories to the *studies* and *assays* folder. Your ARC should
     look similar to this now:  
@@ -193,9 +252,11 @@ Briefly:
 - *Developers:* The choice for most people you want to invite to your ARC. Developers have read and write access, but cannot maintain the project on the DataHUB, e.g. inviting others.  
 - *Maintainers:* Gives the person the same rights as you have (except of removing you from your own project). This is recommended for inviting PIs or group leaders allowing them to add their group members for data upload or analysis to the project as well.
 
+## What next? 
+
+💡 After concluding this quickstart, consider exploring the  for a more detailed usage instruction.
 
 :::tip
-After concluding this quickstart, you might want to explore the [ARC Commander manual][def] for a more detailed usage instruction.
+After concluding this quickstart, you might want to explore the [ARC Commander manual][ARC Commander](/nfdi4plants.knowledgebase/arc-commander) for a more detailed usage instruction.
 :::
 
-[def]: /nfdi4plants.knowledgebase/arc-commander
