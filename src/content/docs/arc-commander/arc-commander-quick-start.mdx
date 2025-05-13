@@ -14,6 +14,8 @@ import NewARC from '@components/mdx/NewARC.mdx'
 import InstallationARCCommander from 'setup/installation.mdx'
 import InstallationGit from 'setup/installation-git.mdx'
 import Access from 'setup/access.mdx'
+import DataHUBAccount from '../datahub/account/index.mdx'
+
 
 This guide introduces the **ARC Commander**, a command line tool to create, edit and share you ARC.
 It requires some experience with the command line (command prompt, shell, terminal,...).
@@ -45,9 +47,16 @@ Before using the ARC commander, please install Git, Git-LFS and ARC Commander an
 
   3. 
       <details>
+        <summary>Register for a DataPLANT account</summary>
+        <DataHUBAccount />
+      </details>
+
+  4. 
+      <details>
         <summary>Setup DataHUB access</summary>
         <Access />
       </details>
+      
 
 </Steps>
 
@@ -72,10 +81,6 @@ Before using the ARC commander, please install Git, Git-LFS and ARC Commander an
       :::tip
       Avoid using spaces or special characters in the identifier.
       :::
-  
-  3. This creates the general ARC folder structure:
-
-      <NewARC />
 
 </Steps>
 
@@ -83,6 +88,10 @@ Before using the ARC commander, please install Git, Git-LFS and ARC Commander an
 The ISA investigation (`-i` or `--investigation`) workbook allows you to record administrative metadata of your project.
 The `isa.investigation.xlsx` workbook including an identifier to your ARC has been added to the project during initialization.
 :::
+
+This created the general ARC folder structure:
+
+<NewARC />
 
 ## Adding investigation metadata
 
@@ -113,38 +122,42 @@ The `isa.investigation.xlsx` workbook including an identifier to your ARC has be
 
 ## Adding studies and assays
 
-The ISA study (`-s`) and ISA assay (`-a`) workbooks allow you to annotate your experimental data.
+<Steps>
 
-1. Add an isa.study.xlsx workbook including an identifier to your ARC with
+1. Add studies
 
-```bash
-arc study add -s QuickStartStudy
-```
+    ```bash
+    arc study add -s AthalianaColdStress
+    ```
   
-2. Add an isa.assay.xlsx workbook including an identifier to your ARC with
+2. Add assays
 
-```bash
-arc assay add -s QuickStartStudy -a QuickStartAssay
-```
+    ```bash
+    arc assay add -s AthalianaColdStress -a SugarMeasurement
+    arc assay add -s AthalianaColdStress -a Proteomics_MS
+    arc assay add -s AthalianaColdStress -a Proteomics_DataAnalysis
+    ```
 
-:::note
-An assay must be linked to a study. If a study does not exist, it will be created automatically in this step.
-:::
+    :::note
+    An assay must be linked to a study. If a study does not exist, it will be created automatically in this step.
+    :::
 
-- The ARC Commander will add a subdirectories to the *studies* and *assays* folder. Your ARC should
-    look similar to this now:  
+</Steps>
+
+The ARC Commander will add subdirectories to the *studies* and *assays* folders. Your ARC should
+look similar to this now:
 
 import { FileTree } from '@astrojs/starlight/components';
 
 <FileTree>
 - studies
-  - QuickStartStudy
+  - AthalianaColdStress
     - resources
     - protocols
     - **isa.study.xlsx**
   - ...
 - assays
-  - QuickStartAssay
+  - SugarMeasurement
     - dataset
     - protocols
     - **isa.assay.xlsx**
@@ -156,48 +169,13 @@ import { FileTree } from '@astrojs/starlight/components';
 - isa.investigation.xlsx
 </FileTree>
 
-- These steps can be repeated to add as many studies and assays as needed. Accordingly, more subdirectories will be added. Multiple assays can be grouped in a study when the same StudyIdentifier is used.
 
-3. Place the data for each assay in the respective dataset folder.
+:::note
+The ISA study (`-s`, `--study`) and ISA assay (`-a`, `--assay`) workbooks allow you to annotate your experimental data.
+:::
 
-<div style="page-break-after: always;"></div>
 
 ## Sharing your ARC
-
-### DataPLANT registration and access
-
-In case you are not a member of DataPLANT yet, please visit [sign up](<https://register.nfdi4plants.org>). Afterwards, you will be granted access to DataPLANT’s [DataHUB](<https://git.nfdi4plants.org>). The DataHUB allows you to share your ARCs with registered lab or project partners.
-
-After successful registration, setup your machine for smooth ARC synchronization using the ARC Commander
-
-1. Allow git to store credentials on your machine.
-
-    ***Windows***  
-    ```bash
-    git config --global credential.helper cache
-    ```
-
-    or  
-    ```bash
-    git config --global credential.helper store
-    ```
-
-    ***MacOS***  
-    ```bash
-    git config --global credential.helper osxkeychain
-    ```
-
-    ***Linux***  
-    ```bash
-    git config --global credential.helper store
-    ```
-
-2. Create and set an access token
-    ```bash
-    arc remote accesstoken get -s https://git.nfdi4plants.org
-    ```
-
-A window within your browser will open, asking for your DataPLANT Log In. In case you are already logged in, the browser will directly display a Success message to you:
 
 ### ARC synchronization
 
