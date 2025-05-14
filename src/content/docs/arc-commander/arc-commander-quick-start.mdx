@@ -175,66 +175,45 @@ The ISA study (`-s`, `--study`) and ISA assay (`-a`, `--assay`) workbooks allow 
 :::
 
 
-## Sharing your ARC
+## Sync with the DataHUB
 
-### ARC synchronization
+<Steps>
 
 1. Synchronize your ARCs with the DataHUB using the command
 
-```bash
-arc sync 
-```
+      ```bash
+      arc sync 
+      ```
 
 2. If you did not connect your local ARC with a remote one so far, you can specify the remote address with the flag `-r` followed by an URL, e.g.,
 
-```bash
-arc sync -r https://git.nfdi4plants.org/<YourUserName>/<YourARC>
-```
+    ```bash
+    arc sync -r https://git.nfdi4plants.org/<YourUserName>/<YourARC>
+    ```
 
 3. In case you want to create a new remote repository at this URL, it needs to be assembled as the following example: 
-```bash
-# https://git.nfdi4plants.org/<YourUserName>/<YourARC>
-```
+  
+    ```bash
+    # https://git.nfdi4plants.org/<YourUserName>/<YourARC>
+    ```
 
-4. If no repository exists under the given URL, the ARC Commander will produce an error ensuring that you spelled the URL correctly. To force synchronization, use 
+4. If no repository exists under the given URL, the ARC Commander will produce an error ensuring that you spelled the URL correctly. To force synchronization, use
 
-```bash
-arc sync -f
-```
+    ```bash
+    arc sync -f
+    ```
 
 5. Check if the upload was successful by visiting your ARC at the respective URL in your browser.
 
->Note: Alternatively, you can first create a new blank repository in the [DataHUB](https://git.nfdi4plants.org) by clicking "New project/repository" in the plus drop down menu of the navigation bar on top. Afterwards, you can sync your local ARC to the respective repository by adapting the URL to the newly generated one. 
+</Steps>
 
-### Setting a git user
-
-Some users might want to use different signatures for different repositories, e.g. for developing software on GitHub and working on ARCs on [DataPLANT's DataHUB](https://git.nfdi4plants.org). Besides your global git configuration, you can store the information you want to use for editing ARCs within the ARC Commander config:
-
-```bash
-arc config set -g -n "general.gitname" -v "Name of choice"
-arc config set -g -n "general.gitemail" -v "Email of choice"
-```
-To transfer the information from the global ARC Commander config to the local git config of the ARC use
-
-```bash
-arc config setgituser
-```
-
-### Invite collaborators
-
-You can invite lab-colleagues or project partners to join your ARC for collaboration. While inside your ARC on the DataHUB, click on *Project information -\> Members* in the left navigation panel. Search for registered researchers and select a role for each individually. These roles come along with different rights.  
-Briefly:
-
-- *Guests:* Have the least rights. They will not be able to see the content of your ARC (only the wiki page).
-- *Reporters*: Have read access to your ARC. This is recommended for people you ask for consultancy.
-- *Developers:* The choice for most people you want to invite to your ARC. Developers have read and write access, but cannot maintain the project on the DataHUB, e.g. inviting others.  
-- *Maintainers:* Gives the person the same rights as you have (except of removing you from your own project). This is recommended for inviting PIs or group leaders allowing them to add their group members for data upload or analysis to the project as well.
 
 ## What next? 
 
-💡 After concluding this quickstart, consider exploring the  for a more detailed usage instruction.
+After concluding this quickstart, you might want to explore the [ARC Commander manual](/nfdi4plants.knowledgebase/arc-commander) for a more detailed usage instruction.
 
 :::tip
-After concluding this quickstart, you might want to explore the [ARC Commander manual][ARC Commander](/nfdi4plants.knowledgebase/arc-commander) for a more detailed usage instruction.
+You were looking for even more code?
+Check out the [ARCtrl docs](/nfdi4plants.knowledgebase/arctrl/) for fully-fledged code control over ARCs. 
 :::
 
