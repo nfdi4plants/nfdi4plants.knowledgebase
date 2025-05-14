@@ -93,7 +93,7 @@ outputs:
 ```
 
 </TabItem>
-<TabItem label="job.yml" icon='seti:yml'>
+<TabItem label="run.yml" icon='seti:yml'>
 
 ```yaml
 MeasurementTableCSV:
@@ -114,7 +114,7 @@ Briefly summarized,
     1. `MeasurementTableCSV`: the file name of the CSV table
     2. `FigureFileName`: how the user wants to name the output file
   - And it generates one `output`: an `.svg` file named according to `FigureFileName`
-- the `job.yml` provides the required `input` parameters for `workflow.cwl`
+- the `run.yml` provides the required `input` parameters for `workflow.cwl`
   - the relative path to the CSV table input: `sugar_result.csv`
   - the desired file name: `heatmap`
 
@@ -127,7 +127,7 @@ subgraph "workflow.cwl"
   py@{ shape: doc, label: "heatmap.py" }
 end
 
-sugar_result.csv -.- job.yml --o workflow.cwl--> heatmap.svg
+sugar_result.csv -.- run.yml --o workflow.cwl--> heatmap.svg
 ```
 
 </Mermaid>
@@ -141,7 +141,7 @@ sugar_result.csv -.- job.yml --o workflow.cwl--> heatmap.svg
    - Import `workflow.cwl` into `workflows/heatmap`
    - Import `heatmap.py` into `workflows/heatmap`
 2. Add a folder "heatmap-run" to `runs` 
-   - Import `job.yml` into `runs/heatmap-run`
+   - Import `run.yml` into `runs/heatmap-run`
 
 </Steps>
 
@@ -156,7 +156,7 @@ The ARC should now look like this:
 - isa.investigation.xlsx
 - runs
     - heatmap-run
-        - **job.yml**
+        - **run.yml**
 - studies
 - ...
 - workflows
@@ -177,7 +177,7 @@ The ARC should now look like this:
 4. Use the `cwltool` to run the workflow:
 
     ```bash
-    cwltool ../../workflows/heatmap job.yml
+    cwltool ../../workflows/heatmap run.yml
     ```
     
     :::note[CWL]
