@@ -2,13 +2,15 @@
 title: ARC Commander DataHUB access
 lastUpdated: 2024-01-25
 author:
-- martin-kuhl
 - dominik-brilhaus
 - david-zimmer
+- martin-kuhl
 sidebar:
   order: 3
 ---
 
+import { Steps } from '@astrojs/starlight/components';
+import ProjectToken from '../../datahub/navigation-settings/datahub-generate-project-access-token.mdx'
 
 The [DataHUB](<https://git.nfdi4plants.org>) allows you to share your ARCs with registered lab or project partners. After [registration](<https://register.nfdi4plants.org>), you need to setup the ARC Commander for smooth ARC synchronization between your computer and the DataHUB.
 
@@ -32,13 +34,13 @@ git config --global credential.helper store
 git config --global credential.helper osxkeychain
 ```
 
-## Receive and store a DataHUB temporary (2 hour) access token
+## Receive and store a DataHUB access token
 
 ```bash
 arc remote accesstoken get -s https://git.nfdi4plants.org
 ```
 
-A browser window will open asking for your DataPLANT login. After login you are asked to authorize your computer to communicate with the DataHUB.  
+A browser window will open asking for your DataPLANT login. After login you are asked to authorize your computer to communicate with the DataHUB.
 In case you are already logged in, the browser will directly display a plain `Success` message to you.
 
 :::tip
@@ -46,29 +48,29 @@ This authenticates your computer to communicate with your personal DataHUB accou
 :::
 
 :::tip
-After two hours you have to repeat this process as this token will expire. Have a look at the next section to learn how to create a longer lasting token.
+After two hours you have to repeat this process as this token will expire. Have a look at the next section to learn how to create a longer lasting token (e.g. for large data uploads).
 :::
 
-## Create and store a configurable DataHUB access token for your project
+## Store a configurable DataHUB access token for your project
 
 Access tokens created with the ARCommander expire after two hours. To create a longer-lasting access token for your project, follow these steps:
 
-1. In your browser, visit your ARC in the DataHub instance of your choice, e.g.:
-![Alt text](@images/arc-commander/arc-commander-access-1.png)
+<Steps>
 
-2. Select 'Settings' (1), then 'Access Tokens' (2):
-![Alt text](@images/arc-commander/arc-commander-access-2.png)
+1. 
+    <details>
+      <summary>Create a project access token</summary>
 
-3. Choose a name for your token (1), set an expiration date (2), assign a role (3), configure permissions (4), and create your token (5):
-![Alt text](@images/arc-commander/arc-commander-access-3.png)
+      <ProjectToken />
 
-4. Once created, you can copy the token:
-![Alt text](@images/arc-commander/arc-commander-access-4.png)
+    </details>
 
-5. Finally, save the token by opening a command-line interface and navigating to the root of your project. Then, execute to save your token locally:
+2. Store the token in your local ARC
 
-```bash
-arc remoteaccess accesstoken store --token <replaceWithYourToken>
-```
+    ```bash
+    arc remoteaccess accesstoken store --token <replaceWithYourToken>
+    ```
+
+</Steps>
 
 Once set up, you will not need to authenticate yourself (e.g., by manually retrieving a token through 'arc remote token get') until the token expires. When switching to another machine you have to repeat the process.
