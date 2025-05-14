@@ -2,6 +2,12 @@
 
 cwlVersion: v1.2
 class: CommandLineTool
+
+hints:
+  DockerRequirement:
+    dockerImageId: "cwlexample"
+    dockerFile: {$include: "Dockerfile"}
+
 requirements:
   - class: InitialWorkDirRequirement
     listing:
@@ -10,7 +16,9 @@ requirements:
           $include: heatmap.py
   - class: NetworkAccess
     networkAccess: true
+
 baseCommand: [python3, heatmap.py]
+
 inputs:
   MeasurementTableCSV:
     type: File
