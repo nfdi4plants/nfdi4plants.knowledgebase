@@ -131,9 +131,8 @@ export default defineConfig({
               collapsed: false,
               autogenerate: { directory: 'arc-commander/setup'},
             },
-            'arc-commander/before-we-start',
+            'arc-commander/using-arc',
             'arc-commander/arc-commander-quick-start',
-            'arc-commander/arc-commander-quick-start-expert',
             {
               label: 'Central Functions',
               collapsed: false,
