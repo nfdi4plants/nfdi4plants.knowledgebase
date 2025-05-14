@@ -1,22 +1,9 @@
 ---
-title: Before we start
+title: Using the ARC Commander
 lastUpdated: 2023-06-14
 sidebar:
   order: 4
 ---
-
-After the setup, you're all set and ready to start using the ARC Commander. 🎉
-
-:::tip
-We recommend trying the [ARC Commander QuickStart](/nfdi4plants.knowledgebase/arc-commander/arc-commander-quick-start) for your first steps with the ARC Commander. 
-:::
-
-:::tip
-After the quickstarts, we strongly recommend to read the in-depth ARC Commander Manual here. 
-:::
-
-
-## Notes on ARC Commander Guides
 
 - For most steps in this manual and in the [ARC Commander QuickStart](/nfdi4plants.knowledgebase/arc-commander/arc-commander-quick-start), it is assumed, that you opened a [shell or command prompt](/nfdi4plants.knowledgebase/fundamentals/tutorial-command-line) within a directory you want to initiate as an ARC
 - In the shell, `arc` defines the path to the ARC Commander executable (e.g. on Windows "C:\Users\userA\programs\ArcCommander\arc.exe").
@@ -28,7 +15,7 @@ Using the ARC commander, most metadata information (e.g. the title or identifier
 
 For instance, the following command would create an investigation with the identifier `MyInv001` and title `My Investigation 001`:
 
-```bash "\"MyInv001\"" "\"My Investigation 001\""
+```bash
 arc investigation create --identifier "MyInv001" --title "My Investigation 001"
 ``` 
 
@@ -54,32 +41,3 @@ Description:
 
 After entering the required values, you can save and close the editor.
 
-## ARC Commander's Help Menu
-
-The ARC Commander comes with a leveled help menu, that suggests suitable inputs on every level of command or subcommand. You can simply add `-h` or `--help` at the end of an ARC Commander action to display the respective help menu.
-
-Some examples: 
-
-```bash
-arc --help
-```
-
-
-```bash
-arc investigation --help
-```
-```bash
-arc investigation create --help
-```
-
-```bash
-arc study --help
-```
-
-```bash
-arc study add --help
-```
-
-```bash
-arc assay remove --help
-```

@@ -6,6 +6,9 @@ authors:
 lastUpdated: 2025-05-13
 sidebar:
   order: 4.5
+  badge:
+    text: Updated
+    variant: tip
 ---
 
 import { Steps } from '@astrojs/starlight/components';
@@ -21,7 +24,7 @@ This guide introduces the **ARC Commander**, a command line tool to create, edit
 It requires some experience with the command line (command prompt, shell, terminal,...).
 
 :::tip
-Before following this guide, we recommend to explore the [Getting Started guide](/nfdi4plants.knowledgebase/start-here/) for a more comprehensive overview of ARC concepts and features. 
+Before following this guide, we recommend to explore the [Getting Started guide](/nfdi4plants.knowledgebase/start-here/) for a more comprehensive overview of ARC concepts and features.
 
 Here we reproduce parts of Viola's example ARC created there. However, the ARC Commander by design does not offer all functions you know from [ARCitect](/nfdi4plants.knowledgebase/arcitect/).
 For metadata annotations you can either work on your ARC in ARCitect as explained in the [Getting Started guide](/nfdi4plants.knowledgebase/start-here/) or explore the different options of using [Swate](/nfdi4plants.knowledgebase/swate/).
@@ -75,41 +78,43 @@ Before using the ARC commander, please install Git, Git-LFS and ARC Commander an
   2. Initialize your ARC by executing
 
       ```bash
-      arc init -i AthalianaColdStressSugar
+      arc init
       ```
 
-      :::tip
-      Avoid using spaces or special characters in the identifier.
-      :::
-
 </Steps>
-
-:::tip
-The ISA investigation (`-i` or `--investigation`) workbook allows you to record administrative metadata of your project.
-The `isa.investigation.xlsx` workbook including an identifier to your ARC has been added to the project during initialization.
-:::
 
 This created the general ARC folder structure:
 
 <NewARC />
 
-## Adding investigation metadata
+## Add investigation metadata
 
 <Steps>
   
-  1. Add a Title
+  1. Add an investigation identifier (`-i` or `--investigationidentifier`)
+
+      ```bash
+      arc investigation update -i AthalianaColdStressSugar
+      ```
+
+      :::tip
+      Avoid using spaces or special characters in the identifier.
+      :::
+  
+  
+  2. Add a Title
 
       ```bash
       arc investigation --title "Arabidopsis thaliana cold acclimation"
       ```  
   
-  2. Add a Description
+  3. Add a Description
 
       ```bash
       arc i --description "This experiment investigates the response of Arabidopsis thaliana to cold stress by subjecting plants to low-temperature conditions and monitoring physiological, molecular, and growth-related changes. Cold-treated plants are compared with control groups grown under optimal conditions to assess stress-related markers such as changes in protein abundance, sugar content, and growth rates. The goal is to identify key molecules and physiological responses involved in cold tolerance, contributing to the understanding of plant stress adaptation mechanisms."
       ```
 
-  3. Add Contacts
+  4. Add Contacts
 
       ```bash
       arc i person register -f Jasmine -l Beetroot
@@ -120,17 +125,17 @@ This created the general ARC folder structure:
 </Steps>
 
 
-## Adding studies and assays
+## Add studies and assays
 
 <Steps>
 
-1. Add studies
+1. Add a study with an identifier (`-s`, `--assayidentifier`)
 
     ```bash
     arc study add -s AthalianaColdStress
     ```
   
-2. Add assays
+2. Add assays with an identifier (`-a`, `--assay`)
 
     ```bash
     arc assay add -s AthalianaColdStress -a SugarMeasurement
@@ -170,11 +175,6 @@ import { FileTree } from '@astrojs/starlight/components';
 </FileTree>
 
 
-:::note
-The ISA study (`-s`, `--study`) and ISA assay (`-a`, `--assay`) workbooks allow you to annotate your experimental data.
-:::
-
-
 ## Sync with the DataHUB
 
 <Steps>
@@ -185,35 +185,38 @@ The ISA study (`-s`, `--study`) and ISA assay (`-a`, `--assay`) workbooks allow 
       arc sync 
       ```
 
-2. If you did not connect your local ARC with a remote one so far, you can specify the remote address with the flag `-r` followed by an URL, e.g.,
+2. If you did not connect your local ARC with a remote one so far, you can specify the remote address (`-r` or `--remote`) followed by the DataHUB URL, e.g.,
 
     ```bash
     arc sync -r https://git.nfdi4plants.org/<YourUserName>/<YourARC>
     ```
 
-3. In case you want to create a new remote repository at this URL, it needs to be assembled as the following example: 
-  
-    ```bash
-    # https://git.nfdi4plants.org/<YourUserName>/<YourARC>
-    ```
-
-4. If no repository exists under the given URL, the ARC Commander will produce an error ensuring that you spelled the URL correctly. To force synchronization, use
+3. If no ARC exists under the given URL, you can force (`-f` or `--force`) the ARC Commander to create it.
 
     ```bash
     arc sync -f
     ```
 
-5. Check if the upload was successful by visiting your ARC at the respective URL in your browser.
+    :::note
+    This will prompt an Error `ERROR: GIT: fatal: repository 'https://git.nfdi4plants.org/<YourUserName>/<YourARC>' not found` (Windows) or `ERROR: GIT: fatal: couldn't find remote ref main` (macOS). Don't worry, the ARC is being created at that DataHUB during this step.
+    :::
+
+4. Check if the upload was successful by visiting your ARC at the respective URL in your browser.
 
 </Steps>
 
-
 ## What next? 
 
-After concluding this quickstart, you might want to explore the [ARC Commander manual](/nfdi4plants.knowledgebase/arc-commander) for a more detailed usage instruction.
+Here we only introduced the basic functions. After concluding this quickstart, you might want to explore the [ARC Commander manual](/nfdi4plants.knowledgebase/arc-commander) for a more detailed usage instruction.
 
 :::tip
 You were looking for even more code?
 Check out the [ARCtrl docs](/nfdi4plants.knowledgebase/arctrl/) for fully-fledged code control over ARCs. 
 :::
+
+## Seeking help
+
+import Help from 'help.mdx'
+
+<Help />
 
