@@ -22,7 +22,7 @@ inputs:
       position: 2
 
 outputs:
-  output:
+  heatmapfile:
     type: File
     outputBinding:
       glob: "*.svg"
