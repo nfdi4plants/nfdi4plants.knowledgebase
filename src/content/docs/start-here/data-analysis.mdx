@@ -13,8 +13,6 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
 
-
-
 <ViolaSays>
 Now so far I've just added the raw data. How can I describe how I analyzed my data and created results?
 </ViolaSays>
@@ -75,8 +73,7 @@ Hence the data analysis can simply be packaged as an assay, with the computation
 
 ## Option II: Create a run and a workflow
 
-If your data analysis is code-based, you likely aim to make it reusable and actionable in-place.
-To achieve this, we recommend to wrap and annotate your workflow using [Common Workflow Language (CWL)](/nfdi4plants.knowledgebase/cwl). Although CWL is out of the scope of this starters' guide, we want to share the basic concept here.
+If your data analysis is code-based, you likely aim to make it reusable and actionable in-place. To achieve this, we recommend to wrap and annotate your workflow using [Common Workflow Language (CWL)](/nfdi4plants.knowledgebase/cwl). Although CWL is out of the scope of this starters' guide, we want to share the basic concept here.
 
 ![](@images/start-here/arc-prototypic-workflows-cwl1.svg)
 
@@ -85,6 +82,10 @@ To achieve this, we recommend to wrap and annotate your workflow using [Common W
 
 ### CWL abstract – documents to describe your computational workflows
 
-The scipt file in `workflows` is accompanied with a CWL file, which contains workflow metadata to render it reusable. The specific parameters of a `run`'s execution are stored in a separate job file. 
+The script file in `workflows` is accompanied with a CWL file, which contains workflow metadata to render it reusable. The specific parameters of a `run`'s execution are stored in a separate job file. 
 
 ![](@images/start-here/arc-prototypic-workflows-cwl2.svg)
+
+:::tip
+If you want to learn more about using CWL, please check out the [Step-by-step CWL guide](/nfdi4plants.knowledgebase/cwl/step-by-step) building on the ARC created here. 
+:::
