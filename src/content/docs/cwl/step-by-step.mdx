@@ -173,6 +173,7 @@ sugar_result.csv -.- run.yml
    - Import `workflow.cwl` into `workflows/heatmap`
    - Import `heatmap.py` into `workflows/heatmap`
 2. Add a folder "heatmap-run" to `runs` 
+   - Import `run.cwl` into `runs/heatmap-run`
    - Import `run.yml` into `runs/heatmap-run`
 
 </Steps>
@@ -210,11 +211,11 @@ The ARC should now look like this:
 4. Use the `cwltool` to run the workflow:
 
     ```bash
-    cwltool ../../workflows/heatmap run.yml
+    cwltool run.cwl run.yml
     ```
     
     :::note
-    This assumes that python and [cwltool](/nfdi4plants.knowledgebase/cwl/cwl-runner-installation) are installed on your system.
+    This assumes that [cwltool](/nfdi4plants.knowledgebase/cwl/cwl-runner-installation) and python (with packages `plotly` and `kaleido`) are installed on your system.
     :::
 
 </Steps>
