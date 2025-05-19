@@ -1,6 +1,6 @@
 ---
 title: elab2ARC
-lastUpdated: 2024-11-28
+lastUpdated: 2025-05-21
 description: elab2ARC is a tool for converting eLabFTW experiment data into ARC format.
 authors: 
   - xiaoran-zhou
@@ -30,12 +30,12 @@ Manually transferring metadata from ELNs to ARC can be both error-prone and time
 
 These features streamline workflows, ensuring efficient and standardized data management.
 
-## Setting up elab2ARC
+## Setting up Tokens for elab2ARC
 
 
-### Create an Project Access Token in DataHUB
+### Create an Personal Access Token in DataHUB
 
-import DataHubPat from '../datahub/navigation-settings/datahub-generate-project-access-token.mdx'
+import DataHubPat from '../datahub/navigation-settings/datahub-generate-pat.mdx'
 
 <DataHubPat />
 
@@ -52,30 +52,46 @@ import DataHubPat from '../datahub/navigation-settings/datahub-generate-project-
 
 </Steps>
 
-### Modify eLabFTW experiment
-
-
-<Steps>
-1. Select the eLabFTW experiment, which you want to convert and go to edit mode
-2. Add an extra field to your eLabFTW experiment (bottom)
-    ![](@images/elab2arc/elabftw-add-extra-field.png)
-3. Use field type **URL** and as a name **datahub_url** and enter the **URL of your ARC** as the default value
-    ![](@images/elab2arc/elabftw-extra-field-2.png)
-4. Save the entry
-
-</Steps>
-
 ## How to use elab2ARC 
 
+Open the tools page [elab2ARC](http://nfdi4plants.org/elab2arc). 
+
+### Add Token
+
 <Steps>
-1. Select your elabFTW Instance or add your instance [1]
+1. In the Token tab, select your elabFTW Instance or add your instance [1]
 2. Paste eLabFTW API key [2]
 3. Paste DataHUB Project Access Token [3]
     ![](@images/elab2arc/elab2arc-tool-usage.png)
 
-4. Enter eLabFTW Experiment ID [4] (use comma to seperate multiple IDs) which can be found in the experiment settings. Make sure that you have added the DataHUB URL as an extra field before. 
+</Steps>
+
+### Select elabFTW experiment/resource
+
+<Steps>
+1. In the Home tab, enter eLabFTW Experiment ID [1] or elabFTW Resource ID [2] which can be found in the experiment/resource settings. Use comma to seperate multiple IDs.  
     ![](@images/elab2arc/elabftw-id.png)
-5. Click **One Click Submission** [5] to start the converting. 
+5. Click **Submission** [3] to fetch entries. 
+3. **Check status** [4] gives detailed information. 
+
+</Steps>
+
+### View elabFTW entry
+In the eLabFTW tab, you get information about your eLabFTW entry.
+Main text of the entry [1], administrative Metadata [2], linked Resources and Experiments [3], Attachments [4].
+
+<Steps>
+1. Click *button* in the conversion field to select entry
+2. It is also possible to directly convert linked resources and experiments by using the selection button. 
+
+</Steps>
+### Select ARC & Start Conversion
+
+<Steps>
+1. In the ARCs tab, select ARC in which the elabFTW entry should be converted to. 
+2. You can use an already existing ARC by clicking the **Use This ARC** button or create a new ARC with the **Create a new ARC** button.
+3. In both cases you can select a specific folder for the conversion. 
+4. Use **Start Conversion** button
 
 </Steps>
 
