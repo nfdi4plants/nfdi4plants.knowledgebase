@@ -42,10 +42,10 @@ import DataHubPat from '../datahub/navigation-settings/datahub-generate-pat.mdx'
 ### Create an eLabFTW API key
 
 <Steps>
-1. Login to your elabFTW instance 
-2. Navigate to 'User Settings'  
+1. Login to your eLabFTW instance 
+2. Navigate to `User Settings`  
     ![](@images/elab2arc/elabftw-user-settings.png)
-3. Navigate to 'API KEYS' Tab. Enter a name and a **Read Only** permissions
+3. Navigate to `API KEYS` Tab. Enter a name and a **Read Only** permissions
     ![](@images/elab2arc/elabftw-user-api-key.png)
 4. Save the key securely, as it will only be displayed once. Treat it like a password, as it grants access to eLabFTW.
     ![](@images/elab2arc/elabftw-user-api-key-2.png)
@@ -54,52 +54,53 @@ import DataHubPat from '../datahub/navigation-settings/datahub-generate-pat.mdx'
 
 ## How to use elab2ARC 
 
-Open the tools page [elab2ARC](http://nfdi4plants.org/elab2arc). 
+Open the tools page: [elab2ARC](http://nfdi4plants.org/elab2arc). 
 
-### Add Token
+### Add Tokens
 
 <Steps>
-1. In the Token tab, select your elabFTW Instance or add your instance [1]
+1. In the `Tokens tab`, select your eLabFTW Instance or add Instance [1]
 2. Paste eLabFTW API key [2]
 3. Paste DataHUB Project Access Token [3]
-    ![](@images/elab2arc/elab2arc-tool-usage.png)
+    ![](@images/elab2arc/elab2arc-token-page.png)
 
 </Steps>
 
-### Select elabFTW experiment/resource
+### Select eLabFTW experiment/resource
 
 <Steps>
-1. In the Home tab, select [1] your eLabFTW Experiment/Resource or enter eLabFTW Experiment [2] or Resource ID [3] which can be found in the experiment/resource settings. Use comma to seperate multiple IDs.  
-    ![](@images/elab2arc/elabftw-id.png)
-5. Click **Submission** [4] to fetch entries. 
-3. **Check status** [5] gives detailed information. 
+1. In the `Home tab`, select [1] your eLabFTW Experiment/Resource or enter the corresponding ID [2]. Use commas to separate multiple IDs.  
+    ![](@images/elab2arc/elab2ARC-home-page.png)
+5. Click **Submission** [3] to fetch entries. 
+3. **Check status** [4] provides detailed information about the submission. 
+4. **Preview** [5] shows more information about the eLabFTW entry. Here you can also select linked Resources/Experiments for conversion. 
 
 </Steps>
 
-### View elabFTW entry
-In the eLabFTW tab, you get information about your eLabFTW entry.
-Main text of the entry [1], administrative Metadata [2], linked Resources and Experiments [3], Attachments [4].
+### Preview elabFTW entry
+In the `eLabFTW tab`, you get detailed information about your eLabFTW entry.
+- Main text of the entry [1]
+- administrative Metadata [2]
+- linked Resources and Experiments [3]
+- and Attachments [4]
+![](@images/elab2arc/elab2ARC-elabFTW-page.png)
+With the checkboxes, you can select entries for conversion. 
 
-<Steps>
-1. Click *button* in the conversion field to select entry
-2. It is also possible to directly convert linked resources and experiments by using the selection button. 
 
-</Steps>
 ### Select ARC & Start Conversion
 
 <Steps>
-1. In the ARCs tab, select ARC in which the elabFTW entry should be converted to. 
-2. You can use an already existing ARC by clicking the **Use This ARC** button or create a new ARC with the **Create a new ARC** button.
-3. In both cases you can select a specific folder for the conversion. 
-4. Use **Start Conversion** button
-
+1. In the `ARCs tab`, select the ARC into which the elabFTW entry should be converted. 
+2. You can use an existing ARC by clicking the **Convert to assay** button [1] or create a new ARC with the **Create a new ARC** button [2]. 
+4. Use **Start Conversion** button [3] to start the elab2ARC conversion. 
+![](@images/elab2arc/elab2ARC-ARC-page.png)
 </Steps>
 
 ## Conversion 
 
-![](@images/elab2arc/elab2arc-conversion.png)
+![](@images/elab2arc/elab2arc-output.png)
 
-The elab2ARC tool will automatically convert your elabFTW experiments into ARC format
+The elab2ARC tool will automatically convert your eLabFTW experiments into ARC format
 - create a new assay folder with eLabFTW experiment name as assay name (green)
 - create the assay folder structure (dataset/protocols/isa.assay)
 - convert experiment main text into a .md file and store it in the protocol folder (purple)
