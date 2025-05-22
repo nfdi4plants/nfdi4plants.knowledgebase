@@ -1,6 +1,6 @@
 ---
 title: How to contribute Swate templates
-lastUpdated: 2024-09-04
+lastUpdated: 2025-05-22
 authors: 
   - dominik-brilhaus
   - kevin-frey
@@ -31,8 +31,8 @@ Before contributing Swate templates you ideally have
 
 <Steps>
 
-1. (Recommended) [Create an issue](https://github.com/nfdi4plants/Swate-templates/issues/new/choose) with background information about the template you want to add. This also serves as a place for discussion.
-2. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) the [Swate-templates repository](https://github.com/nfdi4plants/Swate-templates).
+1. (Recommended) [Create an issue](https://github.com/nfdi4plants/swate-template-registry/issues) with background information about the template you want to add. This also serves as a place for discussion.
+2. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) the [swate-template-registry repository](https://github.com/nfdi4plants/swate-template-registry).
 3. (Recommended) Create a feature branch (e.g. "template-xy") on your fork.
 4. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) your fork-branch
 5. Add/update **ONE** template ([see steps below](#creating-a-new-swate-template))
@@ -115,8 +115,8 @@ You can add building blocks with or without a unit at your selected column in th
 - Keep the template as concise as possible
 - 👀 If you miss a term or ontology, please follow the [DPBO contribution guide](https://github.com/nfdi4plants/nfdi4plants_ontology) to let us know
 - If you add a template to address a missing method, try to add building blocks that cover experimental procedures (as Parameters) and features of the sample (as Characteristics) that the experimenter would use when working on an experiment of that type
-- The normal order of the columns is: **Input** -> (all the Parameters and Characteristics in between in chronological order) -> **Output** -or- **Raw Data File** -or- **Derived Data File**. Try to think about in which order the experimenter in the lab will do their work. Try to match this chronological order from left to right. This step is optional and only meant to increase readability.
-- If you would like to save any background information on your template, that would help others reconstruct the creation of the template, you can save it in the [Swate-templates GitHub repository](https://github.com/nfdi4plants/Swate-templates/tree/main/background%20information). For this, please create a folder with the name of your template in the "Background information" folder.
+- The normal order of the columns is: **Input** -> (all the Parameters and Characteristics in between in chronological order) -> **Output**. Try to think about in which order the experimenter in the lab will do their work. Try to match this chronological order from left to right. This step is optional and only meant to increase readability.
+- If you would like to save any background information on your template, that would help others reconstruct the creation of the template, you can save it in the [swate-template-registry GitHub repository](https://github.com/nfdi4plants/swate-template-registry/tree/main/background%20information). For this, please create a folder with the name of your template in the "Background information" folder.
 - Avoid using the building block type `Factor` in templates. Any given characteristic or parameter in one study or assay can become a factor in another study or assay depending on the experimental context or scientific question. E.g. in one study all samples originate from the same `species` (-> Characteristic) whereas in another study multiple `species` were assayed (-> Factor).
 
 #### Recommendations for adding endpoint repository templates
@@ -134,14 +134,13 @@ Once the building blocks are established, please fill in one row of the table wi
 
 ### Save your template
 
-Save your template by clicking on the disc symbol in the top right corner. This will download an xlsx-file. Please adjust the name of the file to correspond to the name of the template, but use underscores instead of spaces.
-Save the file in a suitable folder within your local clone of the Swate templates repository.
+Save your template by clicking on the disc symbol in the top right corner. This will download an xlsx-file. Please adjust the name of the file to correspond to the name of the template, but use underscores instead of spaces and add the version number (e.g. DNA_extraction_v1.1.7.xlsx).
+Save the file in a new subfolder named after your template in the folder corresponding to your organization within your local clone of the Swate template registry repository.
 
 ### Your template is ready for upload
 
 - Well done! You created a new template.
 - You can now submit your template via the git workflow described above.
-- Once your pull request is merged, you will receive an Email from "Swobup Commit Report"
 
 ## Known pitfalls with Swate Templates
 
