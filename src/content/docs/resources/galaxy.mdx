@@ -3,12 +3,18 @@ title: Using ARCs with Galaxy
 lastUpdated: 2024-01-23
 authors:
   - julian-weidhase
+  - dominik-brilhaus
 ---
 
 import { Steps } from '@astrojs/starlight/components';
 
-In this guide we introduce how to access ARCs from Galaxy. To access the data of an ARC, you must first provide a DataHUB access token in Galaxy, which is used to authenticate Galaxy to DataHUB. To create a new token and add it to [Galaxy](https://usegalaxy.eu/), you can proceed as described below.
+Galaxy is an online platform that allows you to easily analyze data in your ARCs with established bioinformatics tools and pipelines. 
 
+In this guide we introduce how to access ARCs from within Galaxy. To access the data of an ARC, you must first provide a DataHUB access token in Galaxy, which is used to authenticate Galaxy to DataHUB. To create a new token and add it to [Galaxy](https://usegalaxy.eu/), you can proceed as described below.
+
+:::note[DataPLANT login to Galaxy]
+You can use your DataPANT account on the Galaxy instances https://usegalaxy.eu/ and https://plants.usegalaxy.eu/.
+:::
 
 ## Create an access token in DataHUB
 
@@ -17,11 +23,11 @@ import DataHubPat from '../datahub/navigation-settings/datahub-generate-pat.mdx'
 <DataHubPat />
 
 :::tip
-Only the scopes "api" (for write access) and "read_api" (for read access) are relevant for ARCfs.
+Only the scopes "api" (for write access) and "read_api" (for read access) are relevant for Galaxy.
 :::
 
 :::caution
-After you crated the token, you can copy and view it. After you leave the site, you will **not** be able to do so again.
+After you created the token, you can copy and view it. After you leave the site, you will **not** be able to do so again.
 :::
 
 ## Add the token to Galaxy
@@ -58,9 +64,13 @@ With the token available to Galaxy, you are now able to import data. You can do 
 
 1. Click on the "Upload Data".
 2. Pick "Choose remote files".
-3. Scroll down and select "DataPLANT DataHub ARRCs".
-4. Explore ARCs or
-5. search for a specific one.
+3. Scroll down and select "DataPLANT DataHub ARCs".
+4. Explore ARCs or search for a specific one.
+   
+   :::note
+   If you receive an `Internal Server Error` during this step, your access token may have expired. Please follow the steps above to renew the access token and add it to your Galaxy Account.
+   :::
+
 6. Inside an ARC, choose the file you want to import to Galaxy. Confirm with "Ok".
 7. Click start to begin the import process to Galaxy. This may take some time, depending
    on the workload on the Galaxy server and the size of your file.

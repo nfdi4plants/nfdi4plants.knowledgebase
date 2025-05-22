@@ -448,7 +448,7 @@ Possible reasons, why this happens:
 
 In this case you would have to download all LFS objects from the original remote first -> ask a data steward for help.
 
-### Step-by-step track large file(s) via LFS
+### Step-by-step track large file(s) via Git-LFS
 
 Done in small steps plus logging.
 Note this works on shells like macOS terminal, linux terminal, Git Bash (available for Windows).
@@ -461,6 +461,10 @@ This likely does not work on Windows Powershell and definitely not in Windows co
     ```bash
     git lfs track "assays/RNAseq_RawData/dataset/**"
     ```
+
+    :::note
+    This lists the respective files in your ARC's `.gitattributes` file.
+    :::
 
 2. git track the `.gitattributes` file first
 
@@ -487,6 +491,22 @@ This likely does not work on Windows Powershell and definitely not in Windows co
     ```
 
 </Steps>
+
+### Git-LFS track files according to file size
+
+To track all files in the ARC which are above a certain size (e.g. 10 MB), you can run the following loop in bash
+
+```bash
+find . -path './.git' -prune -o -type f -size +10M -print | while read -r file; do
+    git lfs track "$file"
+done
+```
+
+:::note
+This lists the respective files in your ARC's `.gitattributes` file.
+Check or edit the `.gitattributes` file and then `git add` and `git commit` it to take effect.
+:::
+
 
 ### Check the status of LFS-tracked files
 
