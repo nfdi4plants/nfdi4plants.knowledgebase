@@ -8,183 +8,181 @@ import starlightLinksValidator from 'starlight-links-validator'
 import starlightImageZoom from 'starlight-image-zoom'
 import icon from "astro-icon";
 
+import react from '@astrojs/react';
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://nfdi4plants.github.io",
   base: '/nfdi4plants.knowledgebase',
-  integrations: [
-    icon(),
-    starlight({
-      title: 'DataPLANT',
-      favicon: "favicon.png",
-      customCss: [
-        // Relative path to your custom CSS file
-        './src/styles/tailwind.css',
-        './src/styles/custom.css',
-      ],
-      components: {
-        MarkdownContent: '@components/starlight/MarkdownContent.astro',
-        Footer: '@components/starlight/Footer.astro',
+  integrations: [icon(), starlight({
+    title: 'DataPLANT',
+    favicon: "favicon.png",
+    customCss: [
+      // Relative path to your custom CSS file
+      './src/styles/tailwind.css',
+      './src/styles/custom.css',
+    ],
+    components: {
+      MarkdownContent: '@components/starlight/MarkdownContent.astro',
+      Footer: '@components/starlight/Footer.astro',
+    },
+    editLink: {
+      baseUrl: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase/edit/main/'
+    },
+    social: {
+      github: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase',
+    },
+    plugins: [
+      starlightLinksValidator(),
+      starlightImageZoom(),
+    ],
+    sidebar: [
+      {
+        label: 'Start Here',
+        badge: { text: 'For starters', variant: 'tip' }, 
+        autogenerate: { directory: 'start-here' },
       },
-      editLink: {
-        baseUrl: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase/edit/main/'
+      {
+        label: 'Core Concepts',
+        collapsed: true,
+        autogenerate: { directory: 'core-concepts' },
       },
-      social: {
-        github: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase',
+      {
+        label: 'Guides',
+        collapsed: true,
+        autogenerate: { directory: 'guides' },
       },
-      plugins: [
-        starlightLinksValidator(),
-        starlightImageZoom(),
-      ],
-      sidebar: [
-        {
-          label: 'Start Here',
-          badge: { text: 'For starters', variant: 'tip' }, 
-          autogenerate: { directory: 'start-here' },
-        },
-        {
-          label: 'Core Concepts',
-          collapsed: true,
-          autogenerate: { directory: 'core-concepts' },
-        },
-        {
-          label: 'Guides',
-          collapsed: true,
-          autogenerate: { directory: 'guides' },
-        },
-        {
-          label: 'Resources',
-          // Collapse the group by default.
-          collapsed: true,
-          autogenerate: { directory: 'resources' },
-        },
-        {
-          label: 'Git',
-          // Collapse the group by default.
-          collapsed: true,
-          autogenerate: { directory: 'git' },
-        },
-        {
-          label: 'CWL',
-          // Collapse the group by default.
-          collapsed: true,
-          autogenerate: { directory: 'cwl' },
-        },
-        {
-          label: 'Fundamentals',
-          // Collapse the group by default.
-          collapsed: true,
-          autogenerate: { directory: 'fundamentals' },
-        },
-        {
-          label: 'ARCitect',
-          // Collapse the group by default.
-          collapsed: true,
-          autogenerate: { directory: 'arcitect' },
-        },
-        {
-          label: 'ARC Validation',
-          // Collapse the group by default.
-          collapsed: true,
-          autogenerate: { directory: 'arc-validation' },
-        },
-        {
-          label: 'DataHUB',
-          collapsed: true,
-          items:[
-            'datahub',           
-            {
-              label: 'DataPLANT Account',
-              collapsed: false,
-              autogenerate: { directory: 'datahub/account'},
-            },
-            {
-              label: 'Navigation & Settings',
-              autogenerate: { directory: 'datahub/navigation-settings'},
-            },
-            {
-              label: 'Working together',
-              autogenerate: { directory: 'datahub/working-together'},
-            },
-            {
-              label: 'ARC files',
-              autogenerate: { directory: 'datahub/arc-files'},
-            },
-            {
-              label: 'ARC features',
-              autogenerate: { directory: 'datahub/arc-features'},
-            },
-            {
-              label: 'Data Publications',
-              autogenerate: { directory: 'datahub/data-publications'},
-            },
-          ]
-        },        
-        {
-          label: 'ARC Commander',
-          // Collapse the group by default.
-          collapsed: true,
-          items:[
-            'arc-commander',           
-            {
-              label: 'Setup',
-              collapsed: false,
-              autogenerate: { directory: 'arc-commander/setup'},
-            },
-            'arc-commander/using-arc',
-            'arc-commander/arc-commander-quick-start',
-            {
-              label: 'Central Functions',
-              collapsed: false,
-              autogenerate: { directory: 'arc-commander/central-functions'},
-            },
-            {
-              label: 'ISA metadata',
-              collapsed: false,
-              autogenerate: { directory: 'arc-commander/isa'},
-            },
-            'arc-commander/lfs',
-          ]
-        },
-        {
-          label: 'Swate',
-          // Collapse the group by default.
-          collapsed: true,
-          autogenerate: { directory: 'swate' },
-        },
-        {
-          label: 'ARCManager',
-          collapsed: true,
-          autogenerate: { directory: 'arc-manager' },
-        },
-        {
-          label: 'ARCtrl',
-          collapsed: true,
-          badge: {text: 'For developers', variant: 'tip'}, 
-          autogenerate: { directory: 'arctrl' },
-        },
-        // {
-        //   label: 'Vault',
-        //   // Collapse the group by default.
-        //   collapsed: true,
-        //   badge: {text: 'Outdated', variant: 'note'}, 
-        //   autogenerate: { directory: 'vault' },
-        // },
-      ],
-      expressiveCode: {
-        defaultProps: {
-          // Enable wrap for specific languages
-          overridesByLang: {
-            'txt,md,bash': { wrap: true },
+      {
+        label: 'Resources',
+        // Collapse the group by default.
+        collapsed: true,
+        autogenerate: { directory: 'resources' },
+      },
+      {
+        label: 'Git',
+        // Collapse the group by default.
+        collapsed: true,
+        autogenerate: { directory: 'git' },
+      },
+      {
+        label: 'CWL',
+        // Collapse the group by default.
+        collapsed: true,
+        autogenerate: { directory: 'cwl' },
+      },
+      {
+        label: 'Fundamentals',
+        // Collapse the group by default.
+        collapsed: true,
+        autogenerate: { directory: 'fundamentals' },
+      },
+      {
+        label: 'ARCitect',
+        // Collapse the group by default.
+        collapsed: true,
+        autogenerate: { directory: 'arcitect' },
+      },
+      {
+        label: 'ARC Validation',
+        // Collapse the group by default.
+        collapsed: true,
+        autogenerate: { directory: 'arc-validation' },
+      },
+      {
+        label: 'DataHUB',
+        collapsed: true,
+        items:[
+          'datahub',           
+          {
+            label: 'DataPLANT Account',
+            collapsed: false,
+            autogenerate: { directory: 'datahub/account'},
           },
+          {
+            label: 'Navigation & Settings',
+            autogenerate: { directory: 'datahub/navigation-settings'},
+          },
+          {
+            label: 'Working together',
+            autogenerate: { directory: 'datahub/working-together'},
+          },
+          {
+            label: 'ARC files',
+            autogenerate: { directory: 'datahub/arc-files'},
+          },
+          {
+            label: 'ARC features',
+            autogenerate: { directory: 'datahub/arc-features'},
+          },
+          {
+            label: 'Data Publications',
+            autogenerate: { directory: 'datahub/data-publications'},
+          },
+        ]
+      },        
+      {
+        label: 'ARC Commander',
+        // Collapse the group by default.
+        collapsed: true,
+        items:[
+          'arc-commander',           
+          {
+            label: 'Setup',
+            collapsed: false,
+            autogenerate: { directory: 'arc-commander/setup'},
+          },
+          'arc-commander/using-arc',
+          'arc-commander/arc-commander-quick-start',
+          {
+            label: 'Central Functions',
+            collapsed: false,
+            autogenerate: { directory: 'arc-commander/central-functions'},
+          },
+          {
+            label: 'ISA metadata',
+            collapsed: false,
+            autogenerate: { directory: 'arc-commander/isa'},
+          },
+          'arc-commander/lfs',
+        ]
+      },
+      {
+        label: 'Swate',
+        // Collapse the group by default.
+        collapsed: true,
+        autogenerate: { directory: 'swate' },
+      },
+      {
+        label: 'ARCManager',
+        collapsed: true,
+        autogenerate: { directory: 'arc-manager' },
+      },
+      {
+        label: 'ARCtrl',
+        collapsed: true,
+        badge: {text: 'For developers', variant: 'tip'}, 
+        autogenerate: { directory: 'arctrl' },
+      },
+      // {
+      //   label: 'Vault',
+      //   // Collapse the group by default.
+      //   collapsed: true,
+      //   badge: {text: 'Outdated', variant: 'note'}, 
+      //   autogenerate: { directory: 'vault' },
+      // },
+    ],
+    expressiveCode: {
+      defaultProps: {
+        // Enable wrap for specific languages
+        overridesByLang: {
+          'txt,md,bash': { wrap: true },
         },
       },
-    }), 
-    tailwind({
-      // Disable the default base styles:
-      applyBaseStyles: false,
-    })
-  ],
+    },
+  }), tailwind({
+    // Disable the default base styles:
+    applyBaseStyles: false,
+  }), react()],
   markdown: {
     rehypePlugins: [rehypeSlug, ...rehypeAutolink()],
   },
