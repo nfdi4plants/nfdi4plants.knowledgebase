@@ -12,6 +12,8 @@ import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
+import Mermaid from '@components/mdx/Mermaid.astro'
+import Icons from '@components/swate/Icons';
 
 <ViolaSays>
 Ok, I think I understand. The study is used to describe the overall experiment and the sample generation. Then the assays are used to describe the individual lab processes and the data generation!
@@ -72,7 +74,7 @@ Then let's start with the "Sugar Measurement" assay.
             Ok, so my **measurement type** is "sugar measurement". 
             And to specify the device I used for my measurement, I add "photometry" and "Infinite M200 plate reader (Tecan)" as the **technology type** and **technology platform**, respectively.
         </ViolaSays>
-    7. Click the `Save` button.
+    7. Click <Icons.Save /> to save your metadata.
 
     </Steps>
 </Card>
@@ -81,7 +83,7 @@ Then let's start with the "Sugar Measurement" assay.
 ### Separate different assay elements
 
 Just as with studies, the individual assay elements (protocols, data, metadata) find a specific place in the assay subfolders. 
-This enhances the reusablity and identification of each element. 
+This enhances the reusability and identification of each element. 
 
 import IMG2 from "@images/start-here/arc-prototypic-assay-modular2.svg"
 
@@ -158,9 +160,9 @@ Instead of adding each individual building block to the table, we can use a gene
 
     1. Click on the assay's name (`SugarMeasurement`) in the file tree.
     2. Select the "SugarExtraction" table added in the previous step.
-    3. In the `New Table!` widget, click on the `Add Template` button next to `Start from an existing template!`.
+    3. In the `New Table!` widget, click <Icons.Templates /> to `Start from an existing template!`.
     4. Click on `Browse database`, now all DataPLANT curated templates are shown. 
-    5. To select a template from a different community click the `Settings` wheel symbol in the right corner. 
+    5. To select a template from a different community click <Icons.Settings />. 
     6. From the `Select community` dropdown, select "Training".
     7. Click the name of the template `Training - Sugar extraction` and `select`.
     8. Click `Add templates`.
@@ -218,7 +220,7 @@ Instead of adding each individual building block to the table, we can use a gene
         RT2_leaf    | 3 seconds | 95 degree celsius | RT2_sugar-ext
         RT3_leaf    | 3 seconds | 95 degree celsius | RT3_sugar-ext  
 
-    13. Click the `Save` button. 
+    13. Click <Icons.Save /> to save your metadata. 
     </Steps>
 </Card>
 
@@ -239,7 +241,7 @@ We follow the same steps to fill the **Sugar Measurement** table.
         - Parameter [`sample volume`] of 10 `microliter`
         - Parameter [`buffer volume`] of 190 `microliter`
         - Parameter [`cycle count`] of 5
-    5. Use the `File Picker` feature to import the results of sugar measurement (`sugar_result.csv`) into `Output [Data]`
+    5. Use the `File Picker` feature <Icons.FilePicker /> to import the results of sugar measurement (`sugar_result.csv`) into `Output [Data]`
 
 
         Input [Sample Name]	| Parameter [technical replicate] | Parameter [...] | Output [Data] 
@@ -251,14 +253,21 @@ We follow the same steps to fill the **Sugar Measurement** table.
         RT2_sugar-ext       | 2                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
         RT3_sugar-ext       | 3                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
 
-    6. Click the `Save` button. 
+    6. Click <Icons.Save /> to save your metadata.
     </Steps>
 </Card>
 
 
 ## Linking samples to data – across studies and assays
 
-Following the simple approach of reusing sample and data identifiers in different parts of the ARC, we were able to consiley link the samples through the different lab processes in studies and assays to the data produced from those samples. 
+Following the simple approach of reusing sample and data identifiers in different parts of the ARC, we were able to concisely link the samples through the different lab processes in studies and assays to the data produced from those samples. 
 
 
-**Seeds** &mdash;*Plant growth*&#x21FE; **Leaves** &mdash;*Sugar Extraction*&#x21FE; **Sugar extract** &mdash;*Sugar Measurement*&#x21FE; **sugar_result.csv**
+<Mermaid>
+
+```mermaid
+flowchart LR
+s1[Seeds] --Plant growth--> s2[Leaves] --Sugar Extraction--> s3[Sugar extract] --Sugar Measurement--> sugar_result.csv
+```
+
+</Mermaid>

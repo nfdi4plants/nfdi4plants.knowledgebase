@@ -12,6 +12,7 @@ import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
+import Icons from '@components/swate/Icons';
 
 <ViolaSays>
 And where do I add my experimental design? Where can I describe how I grew my plants under different conditions?
@@ -60,7 +61,7 @@ With **studies** you can describe materials and resources. In this Violas-PhD-Pr
         My **description**: "Cold acclimation analysis of Arabidopsis leaf tissue"
       </ViolaSays>
 
-  7. Click the `Save` button to save your metadata. 
+  7. Click <Icons.Save /> to save your metadata. 
 
       :::note
       On the study level, you can add the same type of metadata as on the investigation level in the previous step.
@@ -132,7 +133,7 @@ Let us start by adding the samples to the study.
   2. At the bottom of the right panel, click on the <btn>+</btn> right next to the `Study` sheet.
   3. This adds a new table sheet.
   4. Right-click on sheet’s tab to rename it to plant-growth. 
-  4. Click on the **"Add Building Block"** button next to **"Or start from scratch!"** option.
+  4. Click on the **"Add Building Block"** button <Icons.BuildingBlock />
   5. From the dropdown menu in the `Add Building Block` widget:
       - select `Input` -> `Source Name` and click `Add Column`
       - select `Output` -> `Sample Name` and click `Add Column`
@@ -159,7 +160,7 @@ Let us start by adding the samples to the study.
 
       This means that input "Cold1" results in output "Cold1_leaf".
 
-  8. Click the `Save` button to save your metadata. 
+  8. Click <Icons.Save /> to save your metadata. 
 
   </Steps>
 </Card>
@@ -175,9 +176,9 @@ We reference the protocol in the annotation table to say:
 <Card icon="pen" title="ARCitect">
   <Steps>
 
-  1. On top of the annotation table, click `Add Building Block`.
+  1. On top of the annotation table, click <Icons.BuildingBlock />.
   1. From the dropdown menu select `More` -> `ProtocolREF` and click `Add Column`.
-  1. On top, click `File Picker`.
+  1. On top click <Icons.FilePicker /> to open the `File Picker`.
   1. In the `File Picker` widget, click `Pick Files`.
   2. From the ARC select the file `protocols/growth_protocol.md` and click `Open`.
   1. Select a cell in the `Protocol REF` column and click `Insert file names`.
@@ -202,7 +203,7 @@ We reference the protocol in the annotation table to say:
       RT2                  |  RT2_leaf  | protocols/growth_protocol.md 
       RT3                  |  RT3_leaf  | protocols/growth_protocol.md 
    
-   8. Click the `Save` button to save your metadata. 
+   8. Click <Icons.Save /> to save your metadata. 
 
    </Steps>
 
@@ -295,7 +296,7 @@ Then we need to put this information into context:
 <Card icon="pen" title="ARCitect">
   <Steps>
 
-  1. On top of the annotation table, open the `Add Building Block` widget.
+  1. On top of the annotation table, open the `Add Building Block` widget <Icons.BuildingBlock />.
   1. From the dropdown menu select `Characteristic`. The order of blocks shown below may not correspond to what you see in ARCitect but we will learn how to rearrange columns later.
 
       <ViolaSays>
@@ -316,7 +317,7 @@ Then we need to put this information into context:
       RT2                  |                        | RT2_leaf
       RT3                  |                        | RT3_leaf
 
-  1. Click the `Save` button.
+  1. Click <Icons.Save /> to save your metadata. 
 
         <ViolaSays>
         Great, I've got this! 
@@ -337,7 +338,7 @@ Yes, you are right! Parameters are similar to Characteristics. To use units you 
 <Card icon="pen" title="ARCitect">
   <Steps>
 
-    1. In the *Building Blocks* widget, select *Parameter*, search for `growth time`.
+    1. In the *Building Blocks* widget <Icons.BuildingBlock />, select *Parameter*, search for `growth time`.
     2. Click `Unit` and search for `day` in the adjacent search bar. Select the term with the id "UO:0000033" from the unit ontology (UO).
     3. Click `Add Column`.
     4. In the annotation table, select any cell below `Parameter [growth time]` and add "4".
@@ -363,7 +364,7 @@ In this case, you can use a `Factor` building block. Factors are used to describ
 <Card icon="pen" title="ARCitect">
   <Steps>       
 
-    1. In the *Building Blocks* widget, select *Factor*, search for `temperature day`, select the term with the ID `DPBO:0000007`.        
+    1. In the *Building Blocks* widget <Icons.BuildingBlock />, select *Factor*, search for `temperature day`, select the term with the ID `DPBO:0000007`.        
     2. Check the box for *Unit* and search for `degree celsius` in the adjacent search bar.
     3. Select `UO:0000027`.
     4. Click `Add Column`.
@@ -381,7 +382,8 @@ In this case, you can use a `Factor` building block. Factors are used to describ
           RT3                  |  Arabidopsis thaliana       | 25 degree celsius             | RT3_leaf
           </div>
         </div>
-    6. Click the `Save` button.  
+
+    6. Click <Icons.Save /> to save your metadata.
 
   </Steps>
 </Card>
@@ -393,6 +395,8 @@ In this case, you can use a `Factor` building block. Factors are used to describ
   <Steps>
 
     1. By clicking <btn> \>> </btn> or <btn> \<< </btn> in the column headers you can show or hide the ontology information.
+
+      
     
         <div class="overflow-x-auto">
           <div class="min-w-[600px]" > 
