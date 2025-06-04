@@ -40,7 +40,28 @@ export default defineConfig({
       {
         label: 'Start Here',
         badge: { text: 'For starters', variant: 'tip' }, 
-        autogenerate: { directory: 'start-here' },
+        // autogenerate: { directory: 'start-here' },
+        items:[
+          'start-here',
+          'start-here/create-arc-scaffold',
+          'start-here/investigation',
+          'start-here/study',
+          'start-here/check-point1',
+          'start-here/assays',
+          'start-here/share',
+          'start-here/check-point2',
+          'start-here/sops',
+          {
+            label: 'Data Analysis',
+            collapsed: true,
+            autogenerate: { directory: 'start-here/data-analysis'},
+          },
+          'start-here/datamap',
+          'start-here/check-point3',
+          'start-here/validate-arc',
+          'start-here/publish-arc',
+          'start-here/check-point4',
+        ]
       },
       {
         label: 'Core Concepts',
