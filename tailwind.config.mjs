@@ -6,7 +6,7 @@ const gray = { 100: '#f3f7fb', 200: '#e6eff8', 300: '#b9c3ce', 400: '#7a8ea2', 5
 
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,yml}'],
+	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,yml}', './node_modules/@nfdi4plants/swate-components/dist/swate-components.css'],
 	theme: {
 		extend: {
       colors: { accent, gray },
