@@ -1,7 +1,8 @@
 ---
-title: Data analysis
+title: Option I – Virtual assay
+lastUpdated: 2025-06-05
 sidebar:
-  order: 6
+  order: 8.1
 authors:
   - dominik-brilhaus
   - lukas-weil
@@ -14,13 +15,8 @@ import { Card } from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
 
 <ViolaSays>
-Now so far I've just added the raw data. How can I describe how I analyzed my data and created results?
+What if I have analyzed data in a way that is not perfectly reusable or reproducible – for instance when I use a proprietary software or a colleague helped with data analysis – but I would still want to store and annotate the data analysis in a way comprehensible to others? 
 </ViolaSays>
-
-The ARC offers different options to annotate and perform data analysis.
-
-![](@images/start-here/arc-prototypic-workflows1.svg)
-
 
 ## A computational workflow is like a protocol
 
@@ -30,8 +26,7 @@ import Workflows2 from "@images/start-here/arc-prototypic-workflows2.svg"
 
 <img src={Workflows2.src} style="width:70%; display: block; margin: auto;" />
 
-
-## Option I: Create a virtual assay
+## Create a virtual assay
 
 A computational workflow can simply be treated as a protocol. This can be a summary of the steps followed in any data analysis software. Or it can be a script.
 Hence the data analysis can simply be packaged as an assay, with the computational workflow stored in `protocols` and the resulting data stored in `dataset`
@@ -70,22 +65,3 @@ Hence the data analysis can simply be packaged as an assay, with the computation
 
     </Steps>
 </Card>
-
-## Option II: Create a run and a workflow
-
-If your data analysis is code-based, you likely aim to make it reusable and actionable in-place. To achieve this, we recommend to wrap and annotate your workflow using [Common Workflow Language (CWL)](/nfdi4plants.knowledgebase/cwl). Although CWL is out of the scope of this starters' guide, we want to share the basic concept here.
-
-![](@images/start-here/arc-prototypic-workflows-cwl1.svg)
-
-- In the ARC the computational workflow is placed in the `workflows` folder.
-- The results produced from workflows are stored in `runs`. Every time a workflow is employed, it creates a new run result.
-
-### CWL abstract – documents to describe your computational workflows
-
-The script file in `workflows` is accompanied with a CWL file, which contains workflow metadata to render it reusable. The specific parameters of a `run`'s execution are stored in a separate job file. 
-
-![](@images/start-here/arc-prototypic-workflows-cwl2.svg)
-
-:::tip
-If you want to learn more about using CWL, please check out the [Step-by-step CWL guide](/nfdi4plants.knowledgebase/cwl/step-by-step) building on the ARC created here. 
-:::

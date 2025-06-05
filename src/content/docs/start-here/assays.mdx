@@ -2,6 +2,7 @@
 title: Add assay data
 sidebar:
   order: 4
+lastUpdated: 2025-06-05
 authors:
   - dominik-brilhaus
   - lukas-weil
@@ -31,7 +32,7 @@ In general it is a good approach to describe each logical process in a separate 
 Then let's start with the "Sugar Measurement" assay.
 </ViolaSays>
 
-## Assay 1: Sugar Measurement
+## Assay: Sugar Measurement
 
 ![](@images/start-here/arc-prototypic-assay-sugar.svg)
 
@@ -263,7 +264,6 @@ We follow the same steps to fill the **Sugar Measurement** table.
 Following the simple approach of reusing sample and data identifiers in different parts of the ARC, we were able to concisely link the samples through the different lab processes in studies and assays to the data produced from those samples. 
 
 
-
 <Mermaid>
 
 ```mermaid
@@ -272,62 +272,3 @@ s1[Seeds] --Plant growth--> s2[Leaves] --Sugar Extraction--> s3[Sugar extract] -
 ```
 
 </Mermaid>
-
----
-
-## Assay 2: Proteomics Assays
-
-import Sop from '@images/start-here/arc-prototypic-assay-sop-proteomics.svg'
-
-<div style="display: flex;">
-
-    <ViolaSays>
-        Alright, this all makes sense. However, it seems a bit tedious, if I want to achieve this in detail for more complex assays. 
-        
-        And besides, I'm honestly not an expert of proteomics data and I am not sure I can fill out all information about my proteomics assay. 
-    </ViolaSays>
-
-    <img src={Sop.src} />
-</div>
-
-
-### Apply standard procedures (SOPs) to sample records
-
-Follow the same steps as before to ...
-
-<Card icon="pen" title="ARCitect">
-    
-    ... add two assays and sort the available demo data:
-
-    <Steps>
-
-    1. Create two assays called `Proteomics_MS` and `Proteomics_DataAnalysis`.
-    2. Import the assay files and folders from the demo data into the two assays in your ARC. Use the Import Files and Import Directories functions accordingly:
-        demo data -------> | ARC
-        --- | ---
-        `MS_Raw/` | `Proteomics_MS/dataset/`
-        `AssayTemplate_Proteomics_MS.json` | `Proteomics_MS/protocols/`
-        `combined_protein.fasta` and `MSFraggerOutput/combined_protein.csv` | `Proteomics_DataAnalysis/dataset/`
-        `AssayTemplate_Proteomics_DataAnalysis.json` | `Proteomics_DataAnalysis/protocols/`
-    
-    </Steps>
-    
-    Load the data annotation into the respective annotation tables
-
-    <Steps>
-
-    1. Create a new annotation table for the assay `Proteomics_MS`.
-    2. In the bottom-right corner click `<` to open a panel on the right.
-    3. On top of the panel, navigate to the templates tab.
-    4. In the "Add template(s) from file" section, select ARCtrl and click `Upload protocol`.
-    5. Navigate to and select the file `AssayTemplate_Proteomics_MS.json` and click `open`.
-        - Select the "Import Type" `..With Values`
-        - Check the `Import` boxes
-        - Click `Submit`
-    
-    </Steps>
-  
-    Repeat the same for the `Proteomics_DataAnalysis` assay, by importing the metadata from `AssayTemplate_Proteomics_DataAnalysis.json`.
-
-</Card>
-
