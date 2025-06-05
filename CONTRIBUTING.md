@@ -25,7 +25,7 @@ Your contribution to the DataPLANT Knowledge Base is highly appreciated. This gu
   - [Tables](#tables)
   - [Lists](#lists)
   - [Article cross-references](#article-cross-references)
-  - [Multilingual Code](#multilingual-code)
+  - [Multilingual code](#multilingual-code)
 
 ## Setup
 
@@ -195,6 +195,52 @@ The file tree of an empty ARC is available in `components/mdx/BaseARC.mdx` and c
 import BaseARC from '@components/mdx/BaseARC.mdx';
 
 <BaseARC />
+```
+
+
+#### Use Swate Icons and other components
+
+To avoid having to describe Swate features, some Swate icons and widgets are now available as components.
+
+##### Icons
+
+```js
+import Icons from '@components/swate/Icons';
+
+<Icons.BuildingBlock />
+<Icons.FilePicker />
+<Icons.FileImport />
+<Icons.BuildingBlock />
+<Icons.FilePicker />
+<Icons.DataAnnotator />
+<Icons.FileImport />
+<Icons.FileExport />
+<Icons.Terms />
+<Icons.Templates />
+<Icons.Settings />
+<Icons.About />
+<Icons.PrivacyPolicy />
+<Icons.Docs />
+<Icons.Contact />
+<Icons.Save />
+<Icons.Delete />
+<Icons.Forward />
+<Icons.Backward />
+<Icons.BuildingBlockInformation />
+<Icons.RemoveBuildingBlock />
+<Icons.AutoformatTable />
+<Icons.CreateAnnotationTable />
+<Icons.CreateMetadata />
+<Icons.Back />
+```
+
+##### Term Search
+
+```js
+import TermSearch from '@components/swate/TermSearch';
+
+<TermSearch name={"Test"} parentId={"MS:1000031"} showTerm client:only="react"/>
+
 ```
 
 ### Images
