@@ -12,6 +12,10 @@ import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 
+import invenio from "@images/start-here/invenio-badge.svg"
+
+
+
 <ViolaSays>
 I think my ARC is now ready for publication.
 How can I submit my ARC for a data publication? 
@@ -22,7 +26,7 @@ How can I submit my ARC for a data publication?
 
     1. Sign in to the [PLANTDataHUB](https://git.nfdi4plants.org)
     2. Navigate to the ARC you want to publish
-    3. In the right sidebar click on the `Invenio` badge.
+    3. <div style="display: flex;"> In the right sidebar click on the "Invenio" badge <img src={invenio.src} style="padding-left:10px"/> </div>
     4. You are automatically redirected to the DataPLANT Publication Service (https://archigator.nfdi4plants.org).
     4. Login with your DataPLANT account
     5. A summary of the ARC is shown including the investigation metadata.
