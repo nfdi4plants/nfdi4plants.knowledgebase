@@ -11,14 +11,28 @@ import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 
+<ViolaSays>
+The ARC offers a lot of flexibility in how I structure my data and annotation.
+How can I make sure that it is intact or holds enough data to be published and receive a DOI?
+</ViolaSays>
+
+Your ARC can be validated in the PLANTDataHUB against a selection of validation packages.
+For instance, you can validate the ARC 
+1. against the `arc_specification` – to make sure that your ARC is intact
+2. against the `invenio` requirements – Invenio is the basis of DataPLANT's publication service 
+
 ## Add validation to your ARC
+
+You can simply select the validation via ARCitect.
 
 <Card icon="pen" title="ARCitect">
     <Steps>
 
-    1. Open your ARC in ARCitet
+    1. Open the ARC in ARCitet
     2. In the sidebar, go to the `Validation` menu
-    3. In the section "Custom Validation Packages", select the "invenio" package and click `Save`
+    3. Check the box next to the `arc_specification` dropdown
+    3. In the section "Custom Validation Packages", select the `invenio` package
+    4. Select the latest version for both packages and click `Save`
     4. Commit your changes via the `Commit` menu
     5. Upload your changes via the `DataHUB Sync` menu
     6. Open your ARC in the DataHUB
@@ -27,6 +41,8 @@ import { Card } from '@astrojs/starlight/components';
 </Card>
 
 ## Check the validation results
+
+The validation is being run in the PLANTDataHUB, where you can also find the validation results.
 
 <Card icon="gitlab" title="PLANTDataHUB">
     <Steps>
@@ -38,7 +54,3 @@ import { Card } from '@astrojs/starlight/components';
 
     </Steps>
 </Card>
-
-:::tip
-Find out more about ARC validation [here](/nfdi4plants.knowledgebase/arc-validation/cqc-pipelines/)
-:::

@@ -11,6 +11,10 @@ import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 
+<ViolaSays>
+I think my ARC is now ready for publication.
+How can I submit my ARC for a data publication? 
+</ViolaSays>
 
 <Card icon="gitlab" title="PLANTDataHUB">
     <Steps>
@@ -18,27 +22,17 @@ import { Card } from '@astrojs/starlight/components';
     1. Sign in to the [PLANTDataHUB](https://git.nfdi4plants.org)
     2. Navigate to the ARC you want to publish
     3. In the right sidebar click on the `Invenio` badge.
-
-        :::tip
-        You are redirected to the DataPLANT Publication Service (https://archigator.nfdi4plants.org).
-        :::
-
+    4. You are automatically redirected to the DataPLANT Publication Service (https://archigator.nfdi4plants.org).
     4. Login with your DataPLANT account
-
-        :::tip
-        A summary of the ARC is shown including the investigation metadata.
-        :::
-  
+    5. A summary of the ARC is shown including the investigation metadata.
     6. You can follow the steps in the right sidebar to publish your ARC.
-
+        
+        :::note
+        Please avoid to request a publication for your demo ARC 😉
+        :::
     </Steps>
 </Card>
 
-:::note
-Before you can publish your ARC to DataPLANT's publication service (based on Invenio), it needs to be validated.
-Follow [this guide](/nfdi4plants.knowledgebase/start-here/validate-arc) to validate your ARC for Invenio.
-:::
-
 :::tip
-Find out more about ARC data publications [here](/nfdi4plants.knowledgebase/datahub/data-publications)!
+Before you can publish your ARC to DataPLANT's publication service, it needs to be [validated](/nfdi4plants.knowledgebase/start-here/validate-arc) for Invenio.
 :::
