@@ -12,45 +12,57 @@ import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
-
-
-## Proteomics Assays
+import Mermaid from '@components/mdx/Mermaid.astro'
 
 import Sop from '@images/start-here/arc-prototypic-assay-sop-proteomics.svg'
 
 <div style="display: flex;">
 
     <ViolaSays>
-        Alright, this all makes sense. However, it seems a bit tedious, if I want to achieve this in detail for more complex assays. 
-        
-        And besides, I'm honestly not an expert of proteomics data and I am not sure I can fill out all information about my proteomics assay. 
+        My proteomics assay is a bit more complex. I'm honestly not a proteomics expert and I would not know how to annotate this in detail myself.
+        It is based on mass spectrometry and routinely performed at our proteomics facility.
     </ViolaSays>
 
     <img src={Sop.src} />
 </div>
 
+For the proteomics assay, we'll apply standard operating procedures (SOPs) to sample records provided by a proteomics facility.
 
-### Apply standard procedures (SOPs) to sample records
+## Add Proteomics Assays and apply SOPs
 
-Follow the same steps as before to ...
+Follow the same steps as before to add two assays and sort the available demo data.
+
+### Proteomics – Mass Spectrometry
 
 <Card icon="pen" title="ARCitect">
-    
-    ... add two assays and sort the available demo data:
 
     <Steps>
 
-    1. Create two assays called `Proteomics_MS` and `Proteomics_DataAnalysis`.
-    2. Import the assay files and folders from the demo data into the two assays in your ARC. Use the Import Files and Import Directories functions accordingly:
-        demo data -------> | ARC
-        --- | ---
-        `MS_Raw/` | `Proteomics_MS/dataset/`
-        `AssayTemplate_Proteomics_MS.json` | `Proteomics_MS/protocols/`
-        `combined_protein.fasta` and `MSFraggerOutput/combined_protein.csv` | `Proteomics_DataAnalysis/dataset/`
-        `AssayTemplate_Proteomics_DataAnalysis.json` | `Proteomics_DataAnalysis/protocols/`
+    1. Create an assay `Proteomics_MS`.
+    2. Import the assay files and folders from the demo data into the assay. Use the "Import Files" and "Import Directories" functions accordingly:
     
     </Steps>
     
+    <Mermaid>
+        ```mermaid
+        flowchart LR
+        subgraph d[Demo Data]
+            D1@{ shape: docs, label: MS_Raw}
+            D2@{ shape: doc, label: AssayTemplate_Proteomics_MS.json}
+        end
+        subgraph a[ARC]
+            A1@{ shape: lin-cyl, label: Proteomics_MS/dataset/}
+            A2@{ shape: lin-cyl, label: Proteomics_MS/protocols/}
+        end
+        D1 --> A1
+        D2 --> A2
+        classDef sub fill:#FFFFFF,color:#2d3e50,font-size:1.1em;
+        class d,a sub;
+        classDef item font-size:0.9em;
+        class D1,D2,A1,A2 item;
+        ```
+    </Mermaid>
+
     Load the data annotation into the respective annotation tables
 
     <Steps>
@@ -64,8 +76,48 @@ Follow the same steps as before to ...
         - Check the `Import` boxes
         - Click `Submit`
     
+    </Steps>    
+
+</Card>
+
+
+### Proteomics – Data analysis
+
+
+Repeat the same for the "Proteomics Data Analysis" files.
+
+<Card icon="pen" title="ARCitect">
+
+    <Steps>
+
+    1. Create an assay `Proteomics_DataAnalysis`.
+    2. Import the assay files and folders from the demo data into the assay
+    3. Create suitable annotation tables and import the data annotation, respectively.
+    
     </Steps>
-  
-    Repeat the same for the `Proteomics_DataAnalysis` assay, by importing the metadata from `AssayTemplate_Proteomics_DataAnalysis.json`.
+    
+    <Mermaid>
+        ```mermaid
+        flowchart LR
+        subgraph d[Demo Data]
+            D1@{ shape: doc, label: combined_protein.fasta}
+            D2@{ shape: doc, label: MSFraggerOutput/combined_protein.csv}
+            D3@{ shape: doc, label: AssayTemplate_Proteomics_DataAnalysis.json}
+        end
+        subgraph a[ARC]
+            A1@{ shape: lin-cyl, label: Proteomics_DataAnalysis/dataset/}
+            A2@{ shape: lin-cyl, label: Proteomics_DataAnalysis/protocols/}
+        end
+        D1 --> A1
+        D2 --> A1
+        D3 --> A2
+        classDef sub fill:#FFFFFF,color:#2d3e50,font-size:1.1em;
+        class d,a sub;
+        classDef item font-size:0.9em;
+        class D1,D2,D3,A1,A2 item;
+        ```
+    </Mermaid>
+
+    
 
 </Card>
