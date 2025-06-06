@@ -124,6 +124,10 @@ export default defineConfig({
             autogenerate: { directory: 'datahub/navigation-settings'},
           },
           {
+            label: 'Access Tokens',
+            autogenerate: { directory: 'datahub/access-tokens'},
+          },
+          {
             label: 'Working together',
             autogenerate: { directory: 'datahub/working-together'},
           },
