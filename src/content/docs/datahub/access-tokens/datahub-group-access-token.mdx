@@ -9,16 +9,23 @@ sidebar:
 
 import { Steps } from '@astrojs/starlight/components';
 
+:::note
 This guide shows you how to generate a Group Access Token.
+A Group Access Token can grant access to **all ARCs** of one group.
+:::
 
 <Steps>
 
 1. Sign in to the [DataHUB](https://git.nfdi4plants.org/)
-2. Navigate to the group for which you want to create an access token
-3. Navigate to 'Settings' (1), then 'Access Tokens' (2): ![Alt text](@images/datahub/datahub-access-token-project-2.png)
-3. Choose a name for your token (1), set or remove the expiration date (2), assign a role (3), select the scopes (4), and create your token (5):
-    ![Alt text](@images/datahub/datahub-access-token-project-3.png)
-4. Once created, you can copy the token:
-    ![Alt text](@images/datahub/datahub-access-token-project-4.png) 
+2. Navigate to the group's settings
+2. Open the `Access Tokens` settings in the sidebar `(1)`
+3. Enter or adapt the required token information `(2)` (more info [here](/nfdi4plants.knowledgebase/datahub/access-tokens#token-information))
+4. Click <btn>Create group access token</btn> `(3)`
+
+    ![](@images/datahub/access-tokens/datahub-access-token-group-01.drawio.png)
+
+5. Your new group access token appears on top. Copy `(4)` and use it in the desired application.
+
+    ![](@images/datahub/access-tokens/datahub-access-token-group-02.drawio.png)
 
 </Steps>
