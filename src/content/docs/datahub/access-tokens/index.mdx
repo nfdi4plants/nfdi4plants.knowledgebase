@@ -1,0 +1,97 @@
+---
+title: Access tokens
+lastUpdated: 2025-06-06
+authors:
+  - dominik-brilhaus
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+Access tokens enable programmatic communication with the DataHUB, including synchronization of ARCs from local computers or servers.
+In most scenarios, users do not have to create access tokens themselves, since [ARCitect](/nfdi4plants.knowledgebase/arcitect) and [ARC Commander](/nfdi4plants.knowledgebase/arc-commander) take care of this.
+
+
+## Use-cases for tokens
+
+- Upload of very large data files 
+
+
+
+## Token overview
+
+| **Token Type**                  | **Scope of access**                            | **Generation**                     | **Common Use Cases**                       |
+| ------------------------------- | ---------------------------------------------- | ---------------------------------- | ------------------------------------------ |
+| **Personal Access Token (PAT)** | User-level (All ARCs of one user)              | Generated in user profile settings | API, Git operations, personal integrations |
+| **Group Access Token**          | Group-level (All ARCs within one group)        | Generated in group settings        | CI/CD pipelines, group-level automation    |
+| **Project Access Token**        | Project-level access (One specific ARC)        | Generated in ARC settings          | ARC-specific |
+
+:::tip[Project = ARC]
+In the DataHUB, ARCs are called "projects".
+:::
+
+:::tip[Group = User group]
+In the DataHUB, a group is a group of users (e.g. a research group)
+:::
+
+
+## Token information
+
+### Token name
+
+When generating a token, choose a descriptive name. This helps to track its usage and identify it later, especially if multiple tokens are created.
+This could for instance be the computer ("Office Desktop"), Application ("ARCitect Office Desktop")
+
+### Token description (optional)
+
+You can add a description of your token, e.g. where it is being used.
+
+### Expiration date
+
+All tokens support expiration, allowing you to set a time limit on their validity. This is essential for maintaining security and reducing the risk of token misuse over time. The token expiration defaults to one month in the future. You can adapt or remove the expiration date, e.g. to allow only temporary or long-time access.
+
+### Role
+
+
+### Scopes
+
+Scopes define what actions the token can perform. Common scopes include:
+
+    api: Full API access
+
+    read_repository: Read access to repositories
+
+    write_repository: Write access to repositories
+    Each token type may have different available scopes based on its level (user, group, project).
+
+
+## Security & Revocation
+
+Tokens can be revoked at any time through the GitLab interface. It's critical to treat tokens like passwords—keep them secure and regularly rotate or revoke them if no longer needed. Always ensure that tokens are used in secure environments and are not exposed in public repositories or logs.
+
+:::warn
+We recommend to not "save" your token anywhere in file, especially not inside files (e.g. the `README`) of your ARC.
+Just use the token directly (e.g. in ARCitect). You can easily generate a new token, if needed.
+:::
+
+## Conclusion
+
+GitLab access tokens provide flexible and secure ways to interact with GitLab resources. Choose the appropriate token type based on the level of access required, and ensure tokens are configured with the correct scopes and expiration dates. Always be cautious with token security—tokens should be treated like passwords, with the ability to revoke them whenever necessary.
+
+
+## Creating an access token
+
+import ProjectAT from 'datahub-project-access-token.mdx'
+import GroupAT from 'datahub-group-access-token.mdx'
+import PersonalAT from 'datahub-personal-access-token.mdx'
+
+<Tabs syncKey="os">
+  <TabItem label="Project Access Token">
+    <ProjectAT />
+  </TabItem>
+  <TabItem label="Group Access Token">
+    <GroupAT />
+  </TabItem>
+  <TabItem label="Personal Access Token (PAT)">
+    <PersonalAT />
+  </TabItem>
+</Tabs>
