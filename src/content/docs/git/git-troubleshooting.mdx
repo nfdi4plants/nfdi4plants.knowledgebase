@@ -540,6 +540,47 @@ git lfs ls-files -d
 Amongst others, this report will print for every LFS file, whether it is downloaded (`checkout: true; download: true`) to the local ARC or not (`checkout: false; download: false`).
 
 
+## Use of tokens
+
+Read [this article](/nfdi4plants.knowledgebase/datahub/access-tokens) about access tokens.
+
+### Add / replace ARC remote with one that contains a project access token
+
+```bash
+projectTokenName=<yourTokenName>
+projectToken=<yourToken>
+arcUrl=git.nfdi4plants.org/<yourNamespace>/<yourARC>
+git remote rm origin
+git remote add origin https://"$projectTokenName":"$projectToken"@"$arcUrl"
+git remote -v
+```
+
+:::note
+ARC commander currently requires remote `origin`; hence the step of (first) removing an existing remote `origin`. If none exists, this throws an error, but keeps going.
+:::
+
+
+### Download ARC without LFS using a project access token
+
+```bash
+projectTokenName=<yourTokenName>
+projectToken=<yourToken>
+arcUrl=git.nfdi4plants.org/<yourNamespace>/<yourARC>
+```
+
+#### Option 1 – via ARC Commander
+
+```bash
+arc get -n -r https://"$projectTokenName":"$projectToken"@"$arcUrl"
+```
+
+#### Option 2 – via git
+
+```bash
+GIT_LFS_SKIP_SMUDGE=1 git clone --filter=blob:none https://"$projectTokenName":"$projectToken"@"$arcUrl"
+```
+
+
 ## Common issues and error messages
 
 ### ARC files opened in multiple programs
