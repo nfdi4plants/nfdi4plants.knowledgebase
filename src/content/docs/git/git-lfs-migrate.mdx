@@ -1,0 +1,144 @@
+---
+title: Migrating files to LFS
+lastUpdated: 2025-06-16
+authors:
+  - dominik-brilhaus
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+This guide shows, how to transfer file that were (accidentally) not tracked via LFS.
+[This article](/nfdi4plants.knowledgebase/datahub/arc-files/datahub-lfs#project-storage) shows how to check ARC project storage in the DataHUB. 
+
+:::note[Contact a Data Steward]
+If you are new to Git or the command line,  
+please [reach out](https://nfdi4plants.org/support/) to a data steward for **On-ARC-Support**.
+:::
+
+## Requirements
+
+- At least `Maintainer` level permission for the ARC being modified
+- `Git` and `Git-LFS` installed locally
+- Enough disk space, if downloading a fresh copy of the ARC
+
+## Migrating files to LFS
+
+<Steps>
+
+1. In the DataHUB, allow "force push" for the ARC
+
+    <details>
+      <summary>Details</summary>
+        <Steps>
+        1. Open your ARC in the DataHUB
+        2. Via the sidebar navigate to Settings --> Repository
+        2. Open the section "Protected branches"
+        3. Activate the button `Allowed to force push`
+        ![](/nfdi4plants.knowledgebase/src/assets/images/datahub/datahub-arc-settings-force-push.drawio.svg)
+        </Steps>
+    </details>
+
+2. (Recommended:) Download a fresh copy of your ARC
+
+    <details>
+      <summary>Details</summary>
+        <Tabs syncKey="os">
+          <TabItem label="via ARC Commander">
+            ```bash
+            arc get -n -r <ARC URL>
+            ```
+          </TabItem>
+          <TabItem label="via Git">
+            ```bash
+            GIT_LFS_SKIP_SMUDGE=1 git clone --filter=blob:none <ARC URL>
+            ```
+          </TabItem>
+        </Tabs>
+    </details>
+
+    :::tip
+    If you do not download a fresh copy, make sure that the local ARC is in the same stage as the ARC in the DataHUB, i.e. no unstaged or uncommitted file changes, no open merge requests, etc.
+    :::
+
+3. Migrate the files to LFS
+
+    This step uses the command `git lfs migrate`. More details [here](https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-migrate.adoc).
+
+
+        <Tabs syncKey="os">
+          <TabItem label="using a file size threshold">
+            
+            ```bash
+            git lfs migrate import --everything --above="1 MB"
+            ```
+
+          </TabItem>
+          <TabItem label="using a file name pattern">
+            **Example**: Use a pattern for a certain **file type** recognized by the file extension (here: `.tiff`)
+
+            ```bash
+            git lfs migrate import --everything --include="*.tiff"
+            ```
+
+            **Example**: Migrate all files in a **certain folder**.
+
+            ```bash
+            git lfs migrate import --everything --include="runs/run01/run_results/*"
+            ```         
+
+            :::tip
+            During this step the file pattern is added to `.gitattributes`. All files of that type are also lfs-tracked in future commits.
+            :::
+
+          </TabItem>
+        </Tabs>
+
+4. Force push the changes to the DataHUB
+
+    ```bash
+    git push --all --force
+    ```
+
+5. (Recommended:) Deactivate allowing force push (see step 1)
+
+6. (Recommended:) Run Housekeeping in the DataHUB
+
+    <details>
+      <summary>Details</summary>
+        <Steps>
+        1. Open your ARC in the DataHUB
+        2. Via the sidebar navigate to Settings --> General
+        3. Open the section "Advanced"
+        4. Click the button <btn>Run housekeeping</btn>
+        5. Click the button <btn>Prune unreachable objects</btn>
+        ![](/nfdi4plants.knowledgebase/src/assets/images/datahub/datahub-arc-settings-housekeeping.drawio.svg)
+        </Steps>
+    </details>
+
+</Steps>
+
+
+
+{/* 
+
+## Option 3: Get a list of files above a certain threshold
+
+```bash
+git rev-list --objects main \
+| git cat-file --batch-check='%(objecttype) %(objectsize) %(rest)' \
+| awk '$1 == "blob" && $2 >= 1000000 { print $3 }' \
+| sort -u \
+| > files-to-migrate.txt
+```
+
+
+:::note
+1. Adapt branch (here `main`) to the one you are currently using. 
+2. Adapt the file size (here `1000000` being 1MB)
+:::
+ */}
+
+
+
+
