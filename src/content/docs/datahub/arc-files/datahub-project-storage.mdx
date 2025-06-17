@@ -1,0 +1,20 @@
+---
+title: Project Storage
+lastUpdated: 2025-06-17
+authors:
+  - dominik-brilhaus
+---
+
+
+You can easily check the usage quota used by your ARC by navigating to your ARC in the DataHUB and clicking on "Project Storage" in the right sidebar (1).
+
+![](@images/datahub/datahub-lfs-project-storage.drawio.png)
+
+In terms of usage quota, two numbers are particularly important: **LFS** (1) and **Repository** (2)
+The majority of quota should fall into "LFS", while the size of "Repository" should be kept small. If too many files are in "Repository", this slows down the communication with and processing of your ARC.
+
+![](@images/datahub/datahub-lfs-project-storage2.drawio.png)
+
+:::tip
+As a rule of thumb, the `Repository` size should be kept below 1GB.
+:::
