@@ -1,6 +1,6 @@
 ---
 title: Migrating files to LFS
-lastUpdated: 2025-06-16
+lastUpdated: 2025-06-17
 authors:
   - dominik-brilhaus
 ---
@@ -8,7 +8,7 @@ authors:
 import { Steps } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
-This guide shows, how to transfer file that were (accidentally) not tracked via LFS.
+This guide shows how to migrate files that were (accidentally) not tracked by [Git-LFS](nfdi4plants.knowledgebase/git/git-lfs).  
 [This article](/nfdi4plants.knowledgebase/datahub/arc-files/datahub-lfs#project-storage) shows how to check ARC project storage in the DataHUB. 
 
 :::note[Contact a Data Steward]
@@ -20,7 +20,15 @@ please [reach out](https://nfdi4plants.org/support/) to a data steward for **On-
 
 - At least `Maintainer` level permission for the ARC being modified
 - `Git` and `Git-LFS` installed locally
-- Enough disk space, if downloading a fresh copy of the ARC
+- Enough disk space to download a fresh copy of the ARC
+
+## Before you start
+
+:::caution[Backup]
+This process rewrites history and can cause loss of data or issues with collaborators if not handled properly. 
+:::
+
+The selected large files in the (local) ARC are replaced by lightweight pointers. We recommend performing this on a freshly downloaded ("cloned") ARC instead of the original copy on a user's machine. For the migration, it suffices to download the ARC without already "properly LFS-tracked" large files, if the ARC is then synced back to the same remote (URL) in the DataHUB as shown below.
 
 ## Migrating files to LFS
 
@@ -39,7 +47,7 @@ please [reach out](https://nfdi4plants.org/support/) to a data steward for **On-
         </Steps>
     </details>
 
-2. (Recommended:) Download a fresh copy of your ARC
+2. Download a fresh copy of your ARC
 
     <details>
       <summary>Details</summary>
@@ -57,48 +65,58 @@ please [reach out](https://nfdi4plants.org/support/) to a data steward for **On-
         </Tabs>
     </details>
 
-    :::tip
-    If you do not download a fresh copy, make sure that the local ARC is in the same stage as the ARC in the DataHUB, i.e. no unstaged or uncommitted file changes, no open merge requests, etc.
-    :::
-
-3. Migrate the files to LFS
-
-    This step uses the command `git lfs migrate`. More details [here](https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-migrate.adoc).
-
+3. Migrate to LFS
 
         <Tabs syncKey="os">
-          <TabItem label="using a file size threshold">
+          
+          <TabItem label="specific file types">
             
+            You can use a pattern for a certain **file type** (here: `.tiff` and `.fastq.gz`) with
+
+
+            ```bash
+            git lfs migrate import --everything --include="*.tiff,*fastq.gz"
+            ```
+
+          </TabItem>
+
+          <TabItem label="specific files">
+
+            You can migrate all files in a **certain folder** (here `runs/run01/run_results/`) with
+
+            ```bash
+            git lfs migrate import --everything --include="runs/run01/run_results/*"
+            ```
+
+            or a **single file** with
+
+            ```bash
+            git lfs migrate import --everything --include="path/to/large-file.zip"
+            ```
+
+          </TabItem>
+
+          <TabItem label="by size threshold">
+
+            You can also migrate all files larger than a threshold (here `1 MB`) with
+
             ```bash
             git lfs migrate import --everything --above="1 MB"
             ```
 
           </TabItem>
-          <TabItem label="using a file name pattern">
-            **Example**: Use a pattern for a certain **file type** recognized by the file extension (here: `.tiff`)
-
-            ```bash
-            git lfs migrate import --everything --include="*.tiff"
-            ```
-
-            **Example**: Migrate all files in a **certain folder**.
-
-            ```bash
-            git lfs migrate import --everything --include="runs/run01/run_results/*"
-            ```         
-
-            :::tip
-            During this step the file pattern is added to `.gitattributes`. All files of that type are also lfs-tracked in future commits.
-            :::
-
-          </TabItem>
         </Tabs>
+
+        :::tip[Git-LFS docs]
+        For more details about `git lfs migrate` check out [the Git-LFS docs](https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-migrate.adoc).
+        :::
 
 4. Force push the changes to the DataHUB
 
     ```bash
     git push --all --force
     ```
+
 
 5. (Recommended:) Deactivate allowing force push (see step 1)
 
@@ -118,6 +136,20 @@ please [reach out](https://nfdi4plants.org/support/) to a data steward for **On-
 
 </Steps>
 
+
+:::tip[Collaborators]
+If the ARC is used by collaborators, coordinate the transition.
+A fresh download is the easiest way to have a clean ARC.
+:::
+
+:::tip[Merge and pull LFS files]
+If the migration **was not performed on a fresh copy** and the user does not want to download a fresh copy of the ARC:
+<Steps>
+  1. Locally merge the changes via `git pull origin main --allow-unrelated-histories` 
+  2. (Optional) Download the large files now migrated to LFS via `git lfs pull --include "*"`
+</Steps>
+
+:::
 
 
 {/* 
