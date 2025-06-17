@@ -145,10 +145,11 @@ A fresh download is the easiest way to have a clean ARC.
 :::tip[Merge and pull LFS files]
 If the migration **was not performed on a fresh copy** and the user does not want to download a fresh copy of the ARC:
 <Steps>
-  1. Locally merge the changes via `git pull origin main --allow-unrelated-histories` 
+  1. Re-set tracking information for the current (e.g. `main`) branch via `git branch --set-upstream-to=origin/main main`
+  2. Setup merge for divergent branches via `git config pull.rebase false`
+  2. Locally merge the changes via `git pull origin main --allow-unrelated-histories` 
   2. (Optional) Download the large files now migrated to LFS via `git lfs pull --include "*"`
 </Steps>
-
 :::
 
 
