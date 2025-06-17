@@ -46,21 +46,31 @@ export default defineConfig({
           'start-here/create-arc-scaffold',
           'start-here/investigation',
           'start-here/study',
-          'start-here/check-point1',
+          {
+          label: '– Check point 1 –', link: 'start-here/check-point1', attrs: { style: 'font-style: italic; color: grey; padding-left: 10%' },
+          },
           'start-here/assays',
           'start-here/share',
-          'start-here/check-point2',
-          'start-here/sops',
           {
-            label: 'Data Analysis',
-            collapsed: true,
-            autogenerate: { directory: 'start-here/data-analysis'},
+          label: '– Check point 2 –', link: 'start-here/check-point2', attrs: { style: 'font-style: italic; color: grey; padding-left: 10%' },
+          },
+          'start-here/sops',
+          'start-here/data-analysis',
+          {
+          label: 'Option I – Virtual assay', link: 'start-here/data-analysis/option1-virtual-assay', attrs: { style: 'padding-left: 10%' },
+          },
+          {
+          label: 'Option 2 – CWL', link: 'start-here/data-analysis/option2-cwl', attrs: { style: 'padding-left: 10%' },
           },
           'start-here/datamap',
-          'start-here/check-point3',
+          {
+          label: '– Check point 3 –', link: 'start-here/check-point3', attrs: { style: 'font-style: italic; color: grey; padding-left: 10%' },
+          },
           'start-here/validate-arc',
           'start-here/publish-arc',
-          'start-here/check-point4',
+          {
+          label: '– Check point 4 –', link: 'start-here/check-point4', attrs: { style: 'font-style: italic; color: grey; padding-left: 10%' },
+          },
         ]
       },
       {
