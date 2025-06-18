@@ -157,26 +157,3 @@ If the migration **was not performed on a fresh copy** and the user does not wan
 </Steps>
 :::
 
-
-{/* 
-
-## Option 3: Get a list of files above a certain threshold
-
-```bash
-git rev-list --objects main \
-| git cat-file --batch-check='%(objecttype) %(objectsize) %(rest)' \
-| awk '$1 == "blob" && $2 >= 1000000 { print $3 }' \
-| sort -u \
-| > files-to-migrate.txt
-```
-
-
-:::note
-1. Adapt branch (here `main`) to the one you are currently using. 
-2. Adapt the file size (here `1000000` being 1MB)
-:::
- */}
-
-
-
-
