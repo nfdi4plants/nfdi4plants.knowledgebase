@@ -38,13 +38,15 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 </TabItem>
 <TabItem label="Macos" icon="apple">
 
-:::note[Git Installation]
+### Git Installation
+
 Please install <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.com" target="_blank">Git LFS</a> before installing the ARCitect.
-:::
 
 :::tip
 For macos we recommend to install via homebrew as described on the site above.
 :::
+
+### ARCitect Installation
 
 <Steps>
 
@@ -61,6 +63,7 @@ import MacOSPopupNetwork from "@images/arcitect/macos-popup-network.png"
 </Steps>
 
 ### Unidentified developer
+
 When starting the ARCitect for the first time, you are warned about an unidentified developer.
 
 <img src={MacOSPopup.src} style="width:25%;display: block; margin: 20px" />
@@ -70,7 +73,7 @@ Please navigate to the Privacy & Security panel in your System Settings to `Open
 <img src={MacOSSecurity.src} style="width:50%;display: block; margin: 20px" />
 
 
-### Incoming network connections
+### Accept incoming network connections
 
 Every time you start the ARCitect, you are asked to accept incoming network connections.
 
@@ -83,78 +86,50 @@ This enables communication with the [DataHUB](/nfdi4plants.knowledgebase/datahub
 
 <TabItem label="Linux" icon='linux'>
 
-:::note[Git Installation]
+### Git Installation
+
 Please install <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.com" target="_blank">Git LFS</a> before installing the ARCitect.
-:::
 
 :::tip
 For Linux we recommend to install via homebrew as described on the site above.
 :::
 
+### ARCitect Installation
+
+:::note[Installation now based on DEB package]
+To avoid issues on certain Linux distributions, ARCitect installation is based on DEB package (instead of AppImage) since version 0.0.59. 
+:::
+
 <Steps>
 
-1. Head to the ARCitect's GitHub <a href="https://github.com/nfdi4plants/ARCitect/releases/latest" target="_blank">release page</a>.
-2. Download the Linux AppImage `ARCitect-x.x.x.AppImage`.
-3. (optional) If you run Ubuntu 22.04 you need to download an additional library. Ubuntu 22.04 can't run AppImage files without the not natively installed FUSE library. To fix this, install the necessary library. To do this you need root permissions.
-
-    ```bash title="Requires root permission"
-    sudo apt install libfuse2
+1. Install additional dependencies via
+    
+    ```bash
+    sudo apt-get update
+    sudo apt-get install libgtk-3-0 libnotify4 xdg-utils libsecret-1-0
     ```
 
-4. Make the ARCitect executable.
+2. Head to the ARCitect's GitHub <a href="https://github.com/nfdi4plants/ARCitect/releases/latest" target="_blank">release page</a>.
+3. Download the Linux DEB package `ARCitect-x.x.x_amd64.deb`.
+4. Install ARCitect
 
-    You need to make the downloaded AppImage executable before you can run it.
-    You can use the user interface or the command line to do this.
-    
-    <Tabs>
+    ```bash
+    sudo dpkg -i ./ARCitect-x.x.x_amd64.deb
+    ```
 
-    <TabItem label="User Interface">
-    <Steps>
-    1. Open the folder where the AppImage is currently saved (likely in Downloads).
-    2. (optional) Move the file to a location where you want it saved.
-    3. Right-click the file and select properties.
+5. Make ARCitect executable
 
-        ![](@images/arcitect/linux-rightclick.png)
+    ```bash
+    chmod u+x ./ARCitect-x.x.x_amd64.deb
+    ```
 
-    4. Go to the "permissions" tab and tick the field "execute".
+6. Start the ARCitect via 
 
-        ![](@images/arcitect/linux-permissions.png)
+    ```bash
+    ./ARCitect-x.x.x_amd64.deb
+    ```
 
-    5. Now double-clicking the AppImage should start the ARCitect.
-
-        ![](@images/arcitect/linux-checkbox.png)
-
-    </Steps>
-    </TabItem>
-
-    <TabItem label="Command Line">
-    <Steps>
-
-    1. Open a terminal.
-    2. Move to the directory where you have saved your AppImage (e.g. Downloads).
-
-        ```bash
-        cd Downloads
-        ```
-
-    3. Make the file executable (use the appropriate name of the file).
-
-        ```bash
-        chmod u+x ARCitect-x.x.x.AppImage
-        ```
-
-    4. Now double-clicking the AppImage or running the following command (with the appropriate file name) should start the ARCitect.
-
-        ```bash
-        ./ARCitect-x.x.x.AppImage
-        ```
-
-    </Steps>
-    </TabItem>
-
-    </Tabs>
 </Steps>
-
+    
 </TabItem>
-
 </Tabs>
