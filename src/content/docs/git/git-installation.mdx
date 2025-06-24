@@ -1,0 +1,68 @@
+---
+title: Git Installation
+lastUpdated: 2025-06-24
+authors:
+  - dominik-brilhaus
+---
+
+Before using [ARC Commander](/nfdi4plants.knowledgebase/arc-commander) or [ARCitect](/nfdi4plants.knowledgebase/arcitect) (except for Windows), Git and Git LFS must be installed.
+
+## Download and install Git and Git LFS
+
+import GitDownload from 'git-download.mdx'
+
+<GitDownload />
+
+## Initialize Git LFS
+
+After installation of Git LFS you **must** run the following command once to make sure Git LFS is initialized on your system.
+
+```bash
+git lfs install
+```
+
+### Check your Git installation
+
+To check, that Git and Git LFS are installed on your computer, open a **new** command prompt or terminal and execute the following two commands. These should display the installed version.
+
+```bash
+git --version
+```
+
+```bash
+git-lfs --version
+```
+
+:::tip
+Recommended Git version ≥ 2.32.0
+:::
+
+## Configure Git
+
+Git always signs "commits" with a user `name` and `e-mail address`. These are then also used by the DataHUB to associate the commits to your user account.
+
+To add your user name and email address to the git configuration on your computer, run the following two commands in a command prompt or terminal. Make sure to replace "Your DataHUB Name" and "Your DataHUB Email Address" with your information from the DataHUB.
+
+1. Your name
+
+```bash
+git config --global user.name "Your DataHUB Name"
+```
+
+2. Your email address
+
+```bash
+git config --global user.email "Your DataHUB Email Address"
+```
+
+:::tip
+Configuration needs to be done only once after installation of git on your system.
+:::
+
+### Check your Git configuration
+
+Run this command to display your user configuration
+
+```bash
+git config --global --get-regexp user
+```
