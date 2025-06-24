@@ -102,6 +102,10 @@ To avoid issues on certain Linux distributions, ARCitect installation is based o
     sudo apt-get install libgtk-3-0 libnotify4 xdg-utils libsecret-1-0
     ```
 
+    :::note
+    On some linux distributions you have to run `sudo apt --fix-broken install` afterwards.
+    :::
+
 2. Head to the ARCitect's GitHub <a href="https://github.com/nfdi4plants/ARCitect/releases/latest" target="_blank">release page</a>.
 3. Download the Linux DEB package `ARCitect-x.x.x_amd64.deb`.
 4. Install ARCitect
@@ -110,16 +114,10 @@ To avoid issues on certain Linux distributions, ARCitect installation is based o
     sudo dpkg -i ./ARCitect-x.x.x_amd64.deb
     ```
 
-5. Make ARCitect executable
+5. Start the ARCitect via
 
     ```bash
-    chmod u+x ./ARCitect-x.x.x_amd64.deb
-    ```
-
-6. Start the ARCitect via 
-
-    ```bash
-    ./ARCitect-x.x.x_amd64.deb
+    arcitect
     ```
 
 </Steps>
