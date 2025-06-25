@@ -4,8 +4,7 @@ lastUpdated: 2025-06-24
 authors:
   - dominik-brilhaus
 sidebar:
-  hidden: false
-draft: true
+  hidden: true
 ---
 
 import { Steps } from '@astrojs/starlight/components';
@@ -43,12 +42,22 @@ import ProtDigest from './ProtDigest-Trypsin.arctrl.json?raw'
 
 ## Example script
 
-- script uses the two example SOPs
+The following script is split in two parts:
+
+The first part includes the variable information, that needs to be adapted per ARC as highlighted, i.e.
+  - the path to the ARC (`arcPath`)
+  - the `persons` to be added
+  - the ARC's `title` and `identifier`
+  - the paths to existing SOPs (`studyJsonPaths` and `assayJsonPaths`)
+
+The second part creates the ARC based on the provided information and SOPs.
+
+In this example, the script uses the two example SOPs introduced above, and it adds two contact persons. Both of these types could be extended to add more SOPs or more persons one per line, respectively. 
 
 
 ### Define inputs and outputs
 
-```fsharp {8, 13, 19, 24-25, 30-31}
+```fsharp {8, 12-13, 18-19, 26, 32}
 #r "nuget: ARCtrl"
 
 open ARCtrl
@@ -57,18 +66,6 @@ open ARCtrl.Helper
 
 // Path where the ARC should be created
 let arcPath = "template-arc"
-
-// Paths to study SOP(s) of type ARCtrl.json
-let studyJsonPaths = 
-  [
-    @"PlantGrowth.arctrl.json"
-  ]
-
-// Paths to assay SOP(s) of type ARCtrl.json
-let assayJsonPaths = 
-  [
-    @"ProtDigest-Trypsin.arctrl.json"
-  ]
 
 // Contacts
 let persons = ResizeArray[
@@ -82,6 +79,18 @@ let inv = ArcInvestigation(
     title = "Arabidopsis thaliana cold acclimation",
     contacts = persons
     )
+
+// Paths to study SOP(s) of type ARCtrl.json
+let studyJsonPaths = 
+  [
+    @"PlantGrowth.arctrl.json"
+  ]
+
+// Paths to assay SOP(s) of type ARCtrl.json
+let assayJsonPaths = 
+  [
+    @"ProtDigest-Trypsin.arctrl.json"
+  ]
 
 ```
 
