@@ -1,6 +1,6 @@
 ---
-title: Git Troubleshooting & Tips 
-lastUpdated: 2024-12-04
+title: Git Tips & Troubleshooting
+lastUpdated: 2025-06-17
 authors: 
   - dominik-brilhaus
 ---
@@ -547,11 +547,8 @@ Read [this article](/nfdi4plants.knowledgebase/datahub/access-tokens) about acce
 ### Add / replace ARC remote with one that contains a project access token
 
 ```bash
-projectTokenName=<yourTokenName>
-projectToken=<yourToken>
-arcUrl=git.nfdi4plants.org/<yourNamespace>/<yourARC>
 git remote rm origin
-git remote add origin https://"$projectTokenName":"$projectToken"@"$arcUrl"
+git remote add origin https://<yourTokenName>:<yourToken>@git.nfdi4plants.org/<yourNamespace/yourARC>
 git remote -v
 ```
 
@@ -579,6 +576,24 @@ arc get -n -r https://"$projectTokenName":"$projectToken"@"$arcUrl"
 ```bash
 GIT_LFS_SKIP_SMUDGE=1 git clone --filter=blob:none https://"$projectTokenName":"$projectToken"@"$arcUrl"
 ```
+
+## File sizes
+
+Get a list of files above a certain threshold
+
+```bash
+git rev-list --objects main \
+| git cat-file --batch-check='%(objecttype) %(objectsize) %(rest)' \
+| awk '$1 == "blob" && $2 >= 1000000 { print $3 }' \
+| sort -u \
+| > files-to-migrate.txt
+```
+
+:::note
+Requires `awk`
+1. Adapt branch (here `main`) to the one you are currently using. 
+2. Adapt the file size (here `1000000` being 1MB)
+:::
 
 
 ## Common issues and error messages
