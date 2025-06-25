@@ -10,17 +10,48 @@ sidebar:
 import { Steps } from '@astrojs/starlight/components';
 import { Code } from '@astrojs/starlight/components'
 import { Tabs, TabItem } from '@astrojs/starlight/components';
+import Mermaid from '@components/mdx/Mermaid.astro'
 
-This guide exemplifies the use of ARCtrl to create an ARC from previously created SOP annotation tables.
+This guide demonstrates how to use ARCtrl to generate an ARC from previously created SOP annotation tables.
 
 ## Use-case
 
-- Labs / facilities that routinely, modular combine study and assay SOPs into new ARCs
+Labs or facilities frequently combine study and assay SOPs into new ARCs in a modular fashion.
+
+<Mermaid>
+
+```mermaid
+flowchart LR
+  subgraph ARC1
+    subgraph Study: Plant Growth
+        A1[Plant Growth]
+    end
+    subgraph Assay: Proteomics
+        B1[Protein Digest with Trypsin]
+        B2[Mass Spec Proteomics]
+    end
+    A1 --> B1
+    B1 --> B2
+  end
+  
+  subgraph ARC2
+    subgraph Study: Plant Growth
+        A2[Bacterial Growth]
+    end
+    subgraph Assay: Proteomics
+        B1[Protein Digest with Trypsin]
+        B2[Mass Spec Proteomics]
+    end
+    A2 --> B1
+    B1 --> B2
+  end
+```
+
+</Mermaid>
+
+A locally stored pool of templates or SOPs, such as one for a study on "Plant Growth" and another for the "protein digest with trypsin" assay.
 
 ## Example SOPs
-
-- Locally stored pool of templates / SOPs
-- Here e.g. one study "Plant Growth", one assay to describe the "protein digest with trypsin"
 
 import PlantGrowth from './PlantGrowth.arctrl.json?raw'
 
@@ -52,8 +83,7 @@ The first part includes the variable information, that needs to be adapted per A
 
 The second part creates the ARC based on the provided information and SOPs.
 
-In this example, the script uses the two example SOPs introduced above, and it adds two contact persons. Both of these types could be extended to add more SOPs or more persons one per line, respectively. 
-
+In this example, the script uses the two SOPs introduced above, and it adds two contact persons. Both of these types could be extended to add more SOPs or more persons one per line, respectively. 
 
 ### Define inputs and outputs
 
