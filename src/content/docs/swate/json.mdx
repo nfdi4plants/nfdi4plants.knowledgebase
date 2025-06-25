@@ -1,35 +1,49 @@
 ---
-title: JSON import and export
-lastUpdated: 2024-04-30
+title: Export and Import of filled matadata tables (JSON)
+lastUpdated: 2025-06-25
 authors: 
   - kevin-frey
   - patrick-blume
+  - stella-eggels
+  - sabrina-zander
 ---
 
 import SwateOverview from '@images/swate/swate-alpha-overview.png'
 import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Steps } from '@astrojs/starlight/components';
 
-Utilizing [ARCtrl](https://github.com/nfdi4plants/ARCtrl) all json formats Swate supports multiple different import and export formats for json.
+For reusing filled metadata tables, you can use the export and import function of swate. The file format used for this is JSON. Swate supports multiple different import and export formats for JSON, we recommend using ARCtrl JSON. 
 
 ## Export
 
-The "File Export" function can be found in the <a href={SwateOverview.src} target="_blank">Sidebar</a>.
+<Steps>
 
-<Tabs syncKey="swateHost">
-<TabItem label="Browser">
+    1. Fill out annotation table you want to reuse 
+    2. Open Sidebar (little arrrow bottom right) 
+    3. Go to JSON Export tab
+    
+        The "File Export" function can be found in the <a href={SwateOverview.src} target="_blank">Sidebar</a>.
 
-You can export your data sheet simply by clicking on "Download".
+        <Tabs syncKey="swateHost">
+        <TabItem label="Browser">
 
-</TabItem>
-<TabItem label="Excel">
+        You can export your data sheet simply by clicking on "Download".
 
-In contrast to the web version of swate, you cannot simply download your annotation tables.
-In order to do so, you have to create a [top level metadata sheet](http://localhost:4321/nfdi4plants.knowledgebase/swate/annotation-table/).
+        </TabItem>
+        <TabItem label="Excel">
 
-</TabItem>
-</Tabs>
+        In contrast to the web version of swate, you cannot simply download your annotation tables.
+        In order to do so, you have to create a [top level metadata sheet](/nfdi4plants.knowledgebase/swate/top-level-metadata).
 
-![](@images/swate/json-export.png)
+        </TabItem>
+        </Tabs>
+
+        ![](@images/swate/json-export.png)
+    4. Select ARCtrl and click download button
+    5. Move file to folder of your choice 
+    
+</Steps>
+
 
 ## Import 
 
