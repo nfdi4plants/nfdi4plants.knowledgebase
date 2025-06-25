@@ -1,0 +1,123 @@
+---
+title: Create ARCs from SOPs
+lastUpdated: 2025-06-24
+authors:
+  - dominik-brilhaus
+sidebar:
+  hidden: false
+draft: true
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import { Code } from '@astrojs/starlight/components'
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+This guide exemplifies the use of ARCtrl to create an ARC from previously created SOP annotation tables.
+
+## Use-case
+
+- Labs / facilities that routinely, modular combine study and assay SOPs into new ARCs
+
+## Example SOPs
+
+- Locally stored pool of templates / SOPs
+- Here e.g. one study "Plant Growth", one assay to describe the "protein digest with trypsin"
+
+import PlantGrowth from './PlantGrowth.arctrl.json?raw'
+
+<details>
+  <summary>Study: PlantGrowth.arctrl.json</summary>
+
+  <Code code={ PlantGrowth } lang="json"/>
+
+</details>
+
+import ProtDigest from './ProtDigest-Trypsin.arctrl.json?raw'
+
+<details>
+  <summary>Assay: ProtDigest-Trypsin.arctrl.json</summary>
+  
+  <Code code={ ProtDigest } lang="json"/>
+
+</details>
+
+## Example script
+
+- script uses the two example SOPs
+
+
+### Define inputs and outputs
+
+```fsharp {8, 13, 19, 24-25, 30-31}
+#r "nuget: ARCtrl"
+
+open ARCtrl
+open ARCtrl.Json
+open ARCtrl.Helper
+
+// Path where the ARC should be created
+let arcPath = "template-arc"
+
+// Paths to study SOP(s) of type ARCtrl.json
+let studyJsonPaths = 
+  [
+    @"PlantGrowth.arctrl.json"
+  ]
+
+// Paths to assay SOP(s) of type ARCtrl.json
+let assayJsonPaths = 
+  [
+    @"ProtDigest-Trypsin.arctrl.json"
+  ]
+
+// Contacts
+let persons = ResizeArray[
+  Person(firstName = "Viola", lastName = "Canina");
+  Person(firstName = "Jasmine", lastName = "Beetroot", midInitials = "L");
+  ]
+
+// Investigation
+let inv = ArcInvestigation(
+    identifier = "AthalianaColdStressSugar",
+    title = "Arabidopsis thaliana cold acclimation",
+    contacts = persons
+    )
+
+```
+
+### Combine and write the ARC
+
+```fsharp
+
+// Add study
+
+let addStudyFromJson (studyJsonPath : string) = 
+
+  let studyJsonString = System.IO.File.ReadAllText(studyJsonPath)
+  let studyFromJson = ArcStudy.fromJsonString(studyJsonString)
+
+  inv.AddStudy studyFromJson
+
+studyJsonPaths
+|> Seq.iter addStudyFromJson
+
+// Add assay
+
+let addAssayFromJson (assayJsonPath : string) = 
+
+  let assayJsonString = System.IO.File.ReadAllText(assayJsonPath)
+  let assayFromJson = ArcAssay.fromJsonString(assayJsonString)
+
+  inv.AddAssay assayFromJson
+
+assayJsonPaths
+|> Seq.iter addAssayFromJson
+
+// Create ARC
+
+let arc = ARC( isa = inv )
+
+// Write ARC to path
+
+arc.Write arcPath
+```
