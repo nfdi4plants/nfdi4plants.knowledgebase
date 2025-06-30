@@ -3,6 +3,7 @@ title: Getting Started
 authors:
   - kevin-frey
   - dominik-brilhaus
+lastUpdated: 2025-06-17
 sidebar:
   order: 0
 ---
@@ -11,24 +12,31 @@ import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 
-Welcome to the DataPLANT "Getting Started" guide to create your own ARC!
+Welcome to the **Getting Started** guide to create your own ARC!
 
 ARCs are structured data containers, so-called FAIR Digital Objects. ARCs help you organize your research data in a standardized way. They are based on existing standards, unifying machine and human readability!
 
-![](@images/start-here/arc-bag.svg)
+import ARCbag from "@images/start-here/arc-bag.svg"
 
-Starting out with ARCs can be a bit overwhelming, but don't worry! We are here to help you with the first steps. This guide will walk you through the process of creating your first ARC, adding data to it, and sharing it with collaborators.
+<img src={ARCbag.src} style="width:75%; display: block" />
+
+## About this guide
+
+Starting out with ARCs can be a bit overwhelming. Don't worry, we are here to help you with the first steps! This guide walks you through the process of creating your first ARC, adding data to it, and sharing it with collaborators. It is designed as a **self-paced tutorial** with a minimal demo dataset and often serves as the basis for workshops held by our data stewards (→ checkout DataPLANT [events](https://nfdi4plants.org/events/) or [support](https://nfdi4plants.org/support/)).
 
 Together we will follow a fictional researcher **Viola** on her journey to create her first ARC. Viola is a plant scientist and has heard about ARCs and wants to give them a try.
 
 <ViolaSays>
-I recently attended a conference where my project partner introduced me to the Annotated Research Context (ARC). Intrigued by its potential, I was eager to set up my first ARC as soon as I got back to my lab. However, once there, I realized I only remembered the basic ARC structure and something about some ISA metadata. 😕
+I recently attended a conference where my project partner introduced me to the Annotated Research Context (ARC). Coming back to lab I was eager to set up my first ARC. However, I only remembered the basic ARC structure and something about some ISA metadata?! 😕
 
 :::tip[Come along!]
 Follow me on my journey to create my first ARC!
 :::
 
 </ViolaSays>
+
+
+
 
 
 ## Viola's PhD Project
@@ -42,9 +50,7 @@ For my PhD I investigate the effect of cold stress on sugar metabolism in *A. th
 </ViolaSays>
 
 
-### Demo data
-
-<Card title="Demo data" icon="setting">
+## Demo data
 
 To follow along this guide:
 
@@ -52,10 +58,4 @@ To follow along this guide:
   1. Please download <a href="/nfdi4plants.knowledgebase/Violas-PhD-Project.zip">this unstructured demo dataset</a>
   2. Unzip the folder `Violas-PhD-Project.zip` and store it somewhere ready for the next steps
   </Steps>
-
-</Card>
-
-
-
-
 
