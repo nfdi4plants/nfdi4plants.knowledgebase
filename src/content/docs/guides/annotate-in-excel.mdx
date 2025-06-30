@@ -9,7 +9,7 @@ sidebar:
 
 import { Steps } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
-
+import DownloadLink from '../../../components/scripts/DownloadLink.tsx?client:load'
 
 
 With the help of an [Excel-Add-In](https://learn.microsoft.com/de-de/office/dev/add-ins/excel/excel-add-ins-overview) you can manage your data, utilizing the [ARC](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/core-concepts/arc/) standard, directly in excel, without the necessity to upload it anywhere. 
@@ -24,7 +24,12 @@ Currently, we recommend the installation using the [excel-browser version provid
 
 <Steps>
 
-1. Download the Swate <a type="application/xml" href="https://raw.githubusercontent.com/nfdi4plants/Swate/refs/heads/main/build/manifest.production.xml" download="manifest.production.xml">Manifest File</a>
+1. 
+    <div>
+        <DownloadLink client:load href="https://raw.githubusercontent.com/nfdi4plants/Swate/refs/heads/main/build/manifest.production.xml" filename="manifest.production.xml">
+            Download the Swate Manifest File
+        </DownloadLink>
+    </div>
     :::tip
     Right-click this link and depending on your Browser select e.g. "Save Link as" or "Download Linked File" to download the file called `manifest.production.xml`
     :::
@@ -49,7 +54,12 @@ Currently, we recommend the installation using the [excel-browser version provid
 
 <Steps>
 
-1. Download the Swate <a type="application/xml" href="https://raw.githubusercontent.com/nfdi4plants/Swate/refs/heads/main/build/manifest.production.xml" download="manifest.production.xml">Manifest File</a>
+1. 
+    <div>
+        <DownloadLink client:load href="https://raw.githubusercontent.com/nfdi4plants/Swate/refs/heads/main/build/manifest.production.xml" filename="manifest.production.xml">
+            Download the Swate Manifest File
+        </DownloadLink>
+    </div>
     :::tip
     Right-click this link and depending on your Browser select e.g. "Save Link as" or "Download Linked File" to download the file called `manifest.production.xml`
     :::
