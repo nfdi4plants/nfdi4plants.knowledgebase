@@ -1,0 +1,26 @@
+---
+title: Export annotation Tables from ARCs
+lastUpdated: 2025-06-27
+authors:
+  - dominik-brilhaus
+sidebar:
+  hidden: false
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import { Code } from '@astrojs/starlight/components'
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import Mermaid from '@components/mdx/Mermaid.astro'
+
+import rawCode from './export-tables.fsx?raw'
+
+<>
+  <Code
+    code={
+      rawCode
+        .split('\n')
+        .slice(0, 2)
+        .join('\n')}
+    lang="fsharp"
+  />
+</>
