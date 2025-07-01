@@ -1,6 +1,6 @@
 ---
 title: Create ARCs from SOPs
-lastUpdated: 2025-06-24
+lastUpdated: 2025-07-01
 authors:
   - dominik-brilhaus
 ---
@@ -81,45 +81,69 @@ flowchart LR
 
 </Mermaid>
 
+
 ### Study SOP: Plant Growth
+
+<Tabs syncKey="pl">
+
+<TabItem label="Tabular View">
+
+The SOP holds the following template table to be filled with the information about how the plant samples were grown:
+
+Input [Source Name] | Protocol REF | Characteristic [organism] | Characteristic [Tissue] | Characteristic [Growth Medium] | Characteristic [ecotype] | Parameter [Light intensity] | Factor [temperature] | Parameter [growth time] | Output [Sample Name]
+--------------------|--------------|---------------------------|-------------------------|--------------------------------|--------------------------|-----------------------------|----------------------|-------------------------|---------------------| 
+  |  |  |  |  |  |  |  |  |  | 
+
+</TabItem>
+
+<TabItem label="ARCtrl.json">
 
 The SOP in json format looks like this
 
 import PlantGrowth from '/arctrl/use-cases/create-arc-template/PlantGrowth.arctrl.json?url&raw'
 
-<details>
-  <summary>PlantGrowth.arctrl.json</summary>
+<Code 
+  title="PlantGrowth.arctrl.json"
+  code={ PlantGrowth } 
+  lang="json"/
+>
 
-  <Code code={ PlantGrowth } lang="json"/>
+</TabItem>
+</Tabs>
 
-</details>
 
-This holds the following template table to be filled with the information about how the plant samples were grown:
-
-Input [Source Name] | Protocol REF | Characteristic [organism] | Characteristic [Tissue] | Characteristic [Growth Medium] | Characteristic [ecotype] | Parameter [Light intensity] | Factor [temperature] | Parameter [growth time] | Output [Sample Name]
---------------------|--------------|---------------------------|-------------------------|--------------------------------|--------------------------|-----------------------------|----------------------|-------------------------|---------------------
-  | 
 
 
 ### Assay SOP: Protein Digest with Trypsin
 
-The SOP in json format looks like this:
 
-import ProtDigest from '/arctrl/use-cases/create-arc-template/ProtDigest-Trypsin.arctrl.json?url&raw'
+<Tabs syncKey="pl">
 
-<details>
-  <summary>Assay: ProtDigest-Trypsin.arctrl.json</summary>
-  
-  <Code code={ ProtDigest } lang="json"/>
+<TabItem label="Tabular View">
 
-</details>
-
-This holds the already filled out annotation table with the information about the SOP to trypsin-digest extracted proteins.
-
+This SOP contains the already filled out annotation table with the information about the SOP to trypsin-digest extracted proteins.
 
 Input [Sample Name] | Parameter [sample mass] | Parameter [Protein Precipitation] | Parameter [alkylating agent] | Parameter [reducing agent] | Parameter [cleavage agent name] | Parameter [Tryptic Digestion] | Parameter [sample preparation] | Output [Sample Name]
 --------------------|-------------------------|-----------------------------------|------------------------------|----------------------------|---------------------------------|-------------------------------|--------------------------------|---------------------
 |  | 10 | acetone | Chloroacetamide | TCEP | Trypsin | in-solution digestion | reversed-phase solid-phase extraction | 
+
+</TabItem>
+
+<TabItem label="ARCtrl.json">
+
+The SOP in json format looks like this
+
+import ProtDigest from '/arctrl/use-cases/create-arc-template/ProtDigest-Trypsin.arctrl.json?url&raw'
+
+<Code 
+  title="ProtDigest-Trypsin.arctrl.json"
+  code={ ProtDigest } 
+  lang="json"
+/>
+
+</TabItem>
+</Tabs>
+
 
 ## Example script
 
