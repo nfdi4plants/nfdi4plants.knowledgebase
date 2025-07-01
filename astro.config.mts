@@ -200,7 +200,7 @@ export default defineConfig({
         collapsed: true,
         items: 
         [
-          'arctrl/use-cases/create-arc-template/create-arc-template'
+          'arctrl/use-cases/create-arc-template'
         ],
         // badge: {text: 'For developers', variant: 'tip'},
       },

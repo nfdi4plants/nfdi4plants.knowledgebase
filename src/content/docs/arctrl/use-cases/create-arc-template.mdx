@@ -11,6 +11,7 @@ import { Steps } from '@astrojs/starlight/components';
 import { Code } from '@astrojs/starlight/components'
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 import Mermaid from '@components/mdx/Mermaid.astro'
+import DownloadLink from '@components/scripts/DownloadLink.tsx?client:load'
 
 This guide demonstrates how to use ARCtrl to generate an ARC from previously created SOP annotation tables.
 
@@ -87,7 +88,7 @@ flowchart LR
 
 The SOP in json format looks like this
 
-import PlantGrowth from './PlantGrowth.arctrl.json?raw'
+import PlantGrowth from '/arctrl/use-cases/create-arc-template/PlantGrowth.arctrl.json?url&raw'
 
 <details>
   <summary>PlantGrowth.arctrl.json</summary>
@@ -107,7 +108,7 @@ Input [Source Name] | Protocol REF | Characteristic [organism] | Characteristic 
 
 The SOP in json format looks like this:
 
-import ProtDigest from './ProtDigest-Trypsin.arctrl.json?raw'
+import ProtDigest from '/arctrl/use-cases/create-arc-template/ProtDigest-Trypsin.arctrl.json?url&raw'
 
 <details>
   <summary>Assay: ProtDigest-Trypsin.arctrl.json</summary>
@@ -125,9 +126,9 @@ Input [Sample Name] | Parameter [sample mass] | Parameter [Protein Precipitation
 
 ## Example script
 
-import rawCode from './create-arc-template.fsx?raw';
+The following script is split in two parts.
 
-The following script is split in two parts:
+### Define inputs and outputs
 
 The first part includes the variable information, that needs to be adapted per ARC as highlighted, i.e.
   - the path to the ARC (`arcPath`)
@@ -137,19 +138,24 @@ The first part includes the variable information, that needs to be adapted per A
 
 In this example, the script uses only the two SOPs ("PlantGrowth" and "ProtDigest-Trypsin") introduced above, and it adds two contact persons. Both of these variables could be extended to add more SOPs or more persons one per line, respectively.
 
-The second part of the script creates the ARC based on the provided information and SOPs.
 
-### Define inputs and outputs
+import rawCode from '/arctrl/use-cases/create-arc-template/create-arc-template.fsx?url&raw'
 
 <Code
   code={rawCode.split('\n').slice(0, 34).join('\n')}
   lang="fsharp"
-  highlight={[8, [12, 13], [18, 19], 26, 32]}
+  mark={[8, 12, 13, 18, 19, 26, 32]}
 />
 
 ### Combine and write the ARC
+
+The second part of the script creates the ARC based on the provided information and SOPs.
 
 <Code
   code={rawCode.split('\n').slice(34, 66).join('\n')}
   lang="fsharp"
 />
+
+## Download Example
+
+You can download the example script and SOPs <a href="/nfdi4plants.knowledgebase/arctrl/use-cases/create-arc-template.zip">here</a> to adapt them to your needs.
