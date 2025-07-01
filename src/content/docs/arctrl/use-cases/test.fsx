@@ -16,7 +16,7 @@ let inv = ArcInvestigation(
 
 // Add assay
 
-let assay = inv.InitAssay("Assay")
+let assay = ArcAssay.create "MyAssay"
 
 let addAssayFromTable (tableJsonPath : string) (assay : ArcAssay) = 
     let jsonString = System.IO.File.ReadAllText tableJsonPath
@@ -27,7 +27,6 @@ addAssayFromTable @"./rna_extraction.json" assay
 
 
 inv.AddAssay assay
-
 
 // Create ARC
 
