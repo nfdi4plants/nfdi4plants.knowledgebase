@@ -1,6 +1,6 @@
 ---
 title: Export annotation Tables from ARCs
-lastUpdated: 2025-06-27
+lastUpdated: 2025-07-01
 authors:
   - dominik-brilhaus
 ---
@@ -10,7 +10,35 @@ import { Code } from '@astrojs/starlight/components'
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 import Mermaid from '@components/mdx/Mermaid.astro'
 
-import rawCode from './export-tables.fsx?raw'
+
+This guide demonstrates how to use ARCtrl to export annotation tables from an ARC into individual json files.
+
+## Use-case
+
+- Lab typical ARC
+- Want to establish SOPs
+
+
+## Example script
+
+:::tip[Download]
+To follow this example you can download the public ARC `Facultative-CAM-in-Talinum`
+
+  <Tabs>
+    <TabItem label="via ARC Commander">
+    ```bash
+    arc get -n -r https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum.git
+    ```
+    </TabItem>
+    <TabItem label="via git">
+    ```bash
+    GIT_LFS_SKIP_SMUDGE=1 git clone --filter=blob:none https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum.git
+    ```
+    </TabItem>
+  </Tabs>
+:::
+
+import rawCode from '/arctrl/use-cases/export-tables/export-tables.fsx?raw&url'
 
 <Code
   title="export-tables.fsx"
