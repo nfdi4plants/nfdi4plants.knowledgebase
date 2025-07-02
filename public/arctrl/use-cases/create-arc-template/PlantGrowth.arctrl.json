@@ -1,0 +1,95 @@
+{
+  "Identifier": "AthalianaColdStress",
+  "Description": "Cold acclimation analysis of Arabidopsis leaf tissue",
+  "Tables": [
+    {
+      "name": "plant-growth",
+      "header": [
+        {
+          "headertype": "Input",
+          "values": [
+            "Source Name"
+          ]
+        },
+        {
+          "headertype": "ProtocolREF",
+          "values": []
+        },
+        {
+          "headertype": "Characteristic",
+          "values": [
+            {
+              "annotationValue": "organism"
+            }
+          ]
+        },
+        {
+          "headertype": "Characteristic",
+          "values": [
+            {
+              "annotationValue": "Tissue",
+              "termSource": "NCIT",
+              "termAccession": "NCIT:C12801"
+            }
+          ]
+        },
+        {
+          "headertype": "Characteristic",
+          "values": [
+            {
+              "annotationValue": "Growth Medium",
+              "termSource": "NCIT",
+              "termAccession": "NCIT:C85504"
+            }
+          ]
+        },
+        {
+          "headertype": "Characteristic",
+          "values": [
+            {
+              "annotationValue": "ecotype",
+              "termSource": "EFO",
+              "termAccession": "EFO:0000434"
+            }
+          ]
+        },
+        {
+          "headertype": "Parameter",
+          "values": [
+            {
+              "annotationValue": "Light intensity",
+              "termSource": "MIAPPE",
+              "termAccession": "MIAPPE:0101"
+            }
+          ]
+        },
+        {
+          "headertype": "Factor",
+          "values": [
+            {
+              "annotationValue": "temperature",
+              "termSource": "EFO",
+              "termAccession": "EFO:0001702"
+            }
+          ]
+        },
+        {
+          "headertype": "Parameter",
+          "values": [
+            {
+              "annotationValue": "growth time",
+              "termSource": "DPBO",
+              "termAccession": "DPBO:0000100"
+            }
+          ]
+        },
+        {
+          "headertype": "Output",
+          "values": [
+            "Sample Name"
+          ]
+        }
+      ]
+    }
+  ]
+}

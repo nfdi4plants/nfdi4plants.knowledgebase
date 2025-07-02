@@ -39,7 +39,7 @@ export default defineConfig({
     sidebar: [
       {
         label: 'Start Here',
-        badge: { text: 'For starters', variant: 'tip' }, 
+        // badge: { text: 'For starters', variant: 'tip' }, 
         // autogenerate: { directory: 'start-here' },
         items:[
           'start-here',
@@ -194,6 +194,12 @@ export default defineConfig({
         collapsed: true,
         badge: {text: 'For developers', variant: 'tip'}, 
         autogenerate: { directory: 'arctrl' },
+      },
+      {
+        label: 'ARCtrl Use-Cases',
+        collapsed: true,
+        autogenerate: {directory: 'arctrl/use-cases/'},
+        badge: {text: 'New!', variant: 'tip'},
       },
       // {
       //   label: 'Vault',

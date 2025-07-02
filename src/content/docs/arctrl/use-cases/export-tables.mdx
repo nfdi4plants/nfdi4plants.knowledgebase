@@ -1,0 +1,102 @@
+---
+title: Export annotation Tables from ARCs
+lastUpdated: 2025-07-01
+authors:
+  - dominik-brilhaus
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import { Code } from '@astrojs/starlight/components'
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import Mermaid from '@components/mdx/Mermaid.astro'
+
+
+This guide demonstrates how to use ARCtrl to export annotation tables from an ARC into individual json files.
+
+## Use-case
+
+Some users want to quickly export studies, assays or individual annotation tables into easily shareable and reusable json files. 
+This might help to [establish SOPs](/nfdi4plants.knowledgebase/arctrl/use-cases/create-arc-template/) from a lab-typical ARC.
+
+:::tip[Swate]
+This is similar to [Swate's export](/nfdi4plants.knowledgebase/swate/json/#export) feature
+:::
+
+
+## Example script
+
+To follow this example you can download the public ARC `Facultative-CAM-in-Talinum` and store it parallel to the script.
+
+:::tip[Download example ARC]
+
+  <Tabs>
+    <TabItem label="via ARC Commander">
+    ```bash
+    arc get -n -r https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum.git
+    ```
+    </TabItem>
+    <TabItem label="via git">
+    ```bash
+    GIT_LFS_SKIP_SMUDGE=1 git clone --filter=blob:none https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum.git
+    ```
+    </TabItem>
+  </Tabs>
+:::
+
+import rawCode from '/arctrl/use-cases/export-tables/export-tables.fsx?raw&url'
+
+### Preparation
+
+First, load the required libraries and load the local ARC into an `ArcInvestigation` object for easy access.
+
+<Code
+  title="export-tables.fsx"
+  code={rawCode.split('\n').slice(0, 19).join('\n')}
+  lang="fsharp"
+  wrap="false"
+/>
+
+### Export a study
+
+We can simply create a function `exportStudyToJson`, which takes an `ArcInvestigation` object and a selected study identifier as inputs and writes the json (of type ARCtrl json) to a file named by the study identifier with the extension ".arctrl.json".
+In this example, we select "TalinumSamples-STRI" from the available studies. 
+
+<Code
+  title="export-tables.fsx"
+  code={rawCode.split('\n').slice(21, 37).join('\n')}
+  lang="fsharp"
+  wrap="false"
+/>
+
+### Export an assay
+
+In the same manner, we can create a function `exportAssayToJson`, which takes an `ArcInvestigation` object and a selected assay identifier as inputs and writes the json (of type ARCtrl json) to a file named by the assay identifier with the extension ".arctrl.json".
+In this example, we select "RNASeq" from the available assays. 
+
+
+<Code
+  title="export-tables.fsx"
+  code={rawCode.split('\n').slice(40, 56).join('\n')}
+  lang="fsharp"
+  wrap="false"
+/>
+
+
+### Export a single table
+
+Instead of exporting a full study or assay, including all annotation tables and the respective metadata sheet, respectively, you can also export a single annotation table.
+
+<Code
+  title="export-tables.fsx"
+  code={rawCode.split('\n').slice(58, 76).join('\n')}
+  lang="fsharp"
+  wrap="false"
+/>
+
+:::note[Swate import]
+This type of table is currently not supported by Swate import.
+:::
+
+## Download example
+
+You can download the <a href="/nfdi4plants.knowledgebase/arctrl/use-cases/export-tables.zip">example script</a> to adapt it to your needs.
