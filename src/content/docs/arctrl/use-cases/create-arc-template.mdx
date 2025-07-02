@@ -61,17 +61,18 @@ flowchart LR
     B11 --> B12
   end
 
-  linkStyle default stroke: #2D3E50  
+  linkStyle default stroke:#2D3E50,stroke-width:3px;
+  classDef default rx:1em,ry:1em;
 
-  classDef grey fill:#eaecee,color:#2D3E50;
-  classDef white fill:#ffffff,color:#2D3E50;
+  classDef greyBox fill:#eaecee,color:#2D3E50,rx:1em,ry:1em,width:1100px,font-weight:bold,font-size:16px,margin-top:80px;
+  classDef whiteBox fill:#ffffff,color:#2D3E50,rx:1em,ry:1em,margin-top:80px;
   classDef mint fill:#62d4c1;
   classDef yellow fill:#ffd34d;
   classDef olive fill:#b4ce82;
   classDef red30 fill:#D46275;
   
-  class a1,a2,a3,s1,s2,s3 white;
-  class ARC1,ARC2,ARC3 grey;
+  class ARC1,ARC2,ARC3 greyBox;
+  class a1,a2,a3,s1,s2,s3 whiteBox;
   class A11 olive;
   class A21,A31 red30;
   class B11,B21 yellow;
