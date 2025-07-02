@@ -20,30 +20,37 @@ let investigation = arc.ISA.Value
 ////////////////////////////////////////////////
 // Function to export a selected study to a .json file
 
-let exportStudyToJson (a: ArcInvestigation) (studyName : string) =
-  a.GetStudy studyName
+let exportStudyToJson (a: ArcInvestigation) (studyIdentifier : string) =
+  a.GetStudy studyIdentifier
   |> ArcStudy.toJsonString 2
-  |> fun c -> File.WriteAllText(studyName + ".arctrl.json", c)
+  |> fun c -> File.WriteAllText(studyIdentifier + ".arctrl.json", c)
 
 // Print all study identifiers
 
-investigation.StudyIdentifiers
-|> Seq.iter (printfn "%s")
+investigation.StudyIdentifiers |> Seq.iter (printfn "%s")
+
+  // TalinumGenomeDraft
+  // TalinumSamples-STRI
+  // val it: unit = ()
 
 exportStudyToJson investigation "TalinumSamples-STRI"
 
 ////////////////////////////////////////////////
 // Function to export a selected assay to a .json file
 
-let exportAssayToJson (a: ArcInvestigation) (assayName : string) =
-  a.GetAssay assayName
+let exportAssayToJson (a: ArcInvestigation) (assayIdentifier : string) =
+  a.GetAssay assayIdentifier
   |> ArcAssay.toJsonString 2
-  |> fun c -> File.WriteAllText(assayName + ".arctrl.json", c)
+  |> fun c -> File.WriteAllText(assayIdentifier + ".arctrl.json", c)
 
 // Print all assay identifiers
 
-investigation.AssayIdentifiers
-|> Seq.iter (printfn "%s")
+investigation.AssayIdentifiers |> Seq.iter (printfn "%s")
+
+  // MassHunter_targets
+  // RNASeq
+  // GCqTOF_targets
+  // val it: unit = ()
 
 exportAssayToJson investigation "RNASeq"
 
@@ -60,9 +67,9 @@ let exportArcTableToJson (a: ArcInvestigation) (tableName : string) =
 
 investigation.ArcTables.TableNames |> Seq.iter (printfn "%s")
 
-// val it: string list =
-// ["TalinumGenomeDraft"; "plant_material"; "mh-quant-results";
-//  "mh-quant-report"; "rna_extraction"; "illumina"; "metabolite_extraction";
-//  "gas_chromatography"; "mass_spec"]
+  // val it: string list =
+  // ["TalinumGenomeDraft"; "plant_material"; "mh-quant-results";
+  //  "mh-quant-report"; "rna_extraction"; "illumina"; "metabolite_extraction";
+  //  "gas_chromatography"; "mass_spec"]
 
 exportArcTableToJson investigation "rna_extraction"
