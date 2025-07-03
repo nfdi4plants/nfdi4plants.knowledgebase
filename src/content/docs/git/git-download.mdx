@@ -7,8 +7,89 @@ sidebar:
   hidden: true
 ---
 
-Please install <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.github.com/" target="_blank">Git LFS</a>.
+import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+
+<Tabs syncKey="os">
+<TabItem label="Windows" icon='seti:windows'>
+
+  <Steps>
+
+  1. Download the Git installer for Windows from https://git-scm.com.
+  2. Open the installer and follow the installation instructions
+  3. During the installation, make sure to include **Git LFS (Large File Support)**
+
+  </Steps>
+
+</TabItem>
+<TabItem label="Macos" icon="apple">
+
+<Steps>
+
+1. Open a Terminal
+2. (Optional, if homebrew is not yet installed:) Install the package manager homebrew via
+
+    ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+
+3. Install Git via homebrew with
+
+    ```bash
+    brew install git
+    ```
+4. Install Git LFS via homebrew with
+  
+    ```bash
+    brew install git-lfs
+    ```
+
+5. Initialize Git LFS via
+
+    ```bash
+    git lfs install
+    ```
+
+  </Steps>
+
+
+</TabItem>
+
+<TabItem label="Linux" icon='linux'>
+
+<Steps>
+
+1. Open a Terminal
+2. Update the package manager apt via
+
+    ```bash
+    sudo apt update
+    ```
+
+3. Install Git via apt with
+
+    ```bash
+    sudo apt-get install git
+    ```
+
+4. Install Git LFS via apt with
+  
+    ```bash
+    sudo apt-get install git-lfs
+    ```
+
+5. Initialize Git LFS via
+
+    ```bash
+    git lfs install
+    ```
+
+</Steps>
+    
+</TabItem>
+</Tabs>
 
 :::tip
-For macOS and Linux we recommend to install via homebrew as described on the site above.
+For more details or alternatives, check out the documentation of <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.com" target="_blank">Git LFS</a>. 
 :::
