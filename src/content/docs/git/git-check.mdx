@@ -1,0 +1,38 @@
+---
+title: Check your Git installation
+lastUpdated: 2025-07-03
+authors:
+  - dominik-brilhaus
+sidebar:
+  hidden: true
+---
+
+import { Steps } from '@astrojs/starlight/components';
+
+To check, that <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.com" target="_blank">Git LFS</a> are installed on your computer, open a **new** command prompt or terminal and execute the following two commands. These should display the installed version. If not, follow the [installation instructions](/nfdi4plants.knowledgebase/git/git-installation).
+
+<Steps>
+
+1. Open a command prompt or terminal
+
+2. Check the installed Git version via 
+    
+    ```bash
+    git --version
+    ```
+
+    :::tip
+    Recommended Git version ≥ 2.32.0
+    :::
+
+3. Check the installed Git LFS version via 
+
+    ```bash
+    git-lfs --version
+    ```
+
+    :::tip
+    Recommended Git LFS version ≥ 3.6.1
+    :::
+
+</Steps>

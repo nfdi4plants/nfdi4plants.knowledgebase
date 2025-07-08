@@ -1,9 +1,8 @@
 ---
-title: Installation
-lastUpdated: 2024-10-22
+title: ARCitect Installation
+lastUpdated: 2025-07-03
 authors:
   - dominik-brilhaus
-  - hannah-dörpholz
 sidebar:
     order: 2
 ---
@@ -12,6 +11,17 @@ import { Steps } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 import GitDownloadInstall from '../git/git-download.mdx'
+import GitCheck from '../git/git-check.mdx'
+
+ARCitect depends on <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.com" target="_blank">Git LFS</a>.  
+The ARCitect installer for Windows includes both tools automatically.  
+On macOS and Linux, Git and Git LFS have to be installed separately.
+
+<details>
+    <summary>Check git installation</summary>
+    <GitCheck />
+</details>
+
 
 <Tabs syncKey="os">
 <TabItem label="Windows" icon='seti:windows'>
@@ -61,7 +71,7 @@ import MacOSPopupNetwork from "@images/arcitect/macos-popup-network.png"
 
 ### Unidentified developer
 
-When starting the ARCitect for the first time, you are warned about an unidentified developer.
+When starting ARCitect for the first time, you are warned about an unidentified developer.
 
 <img src={MacOSPopup.src} style="width:25%;display: block; margin: 20px" />
 
@@ -77,7 +87,6 @@ Every time you start the ARCitect, you are asked to accept incoming network conn
 <img src={MacOSPopupNetwork.src} style="width:25%;display: block; margin: 20px" />
 
 This enables communication with the [DataHUB](/nfdi4plants.knowledgebase/datahub).
-
 
 </TabItem>
 
