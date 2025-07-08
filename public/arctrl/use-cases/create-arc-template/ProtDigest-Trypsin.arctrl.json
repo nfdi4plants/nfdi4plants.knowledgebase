@@ -1,0 +1,246 @@
+{
+  "Identifier": "Proteomics_MS",
+  "MeasurementType": {
+    "annotationValue": "Proteomics_MS",
+    "termSource": "MS",
+    "termAccession": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1003348"
+  },
+  "TechnologyType": {
+    "annotationValue": "Mass Spectrometry",
+    "termSource": "NCIT",
+    "termAccession": "https://bioregistry.io/NCIT:C17156"
+  },
+  "TechnologyPlatform": {
+    "annotationValue": "timsTOF Pro 2",
+    "termSource": "MS",
+    "termAccession": "MS:1003230"
+  },
+  "Tables": [
+    {
+      "name": "ProtDigest-Trypsin",
+      "header": [
+        {
+          "headertype": "Input",
+          "values": [
+            "Sample Name"
+          ]
+        },
+        {
+          "headertype": "Parameter",
+          "values": [
+            {
+              "annotationValue": "sample mass",
+              "termSource": "MS",
+              "termAccession": "MS:1000004"
+            }
+          ]
+        },
+        {
+          "headertype": "Parameter",
+          "values": [
+            {
+              "annotationValue": "Protein Precipitation",
+              "termSource": "NCIT",
+              "termAccession": "NCIT:C113065"
+            }
+          ]
+        },
+        {
+          "headertype": "Parameter",
+          "values": [
+            {
+              "annotationValue": "alkylating agent",
+              "termSource": "CHEBI",
+              "termAccession": "CHEBI:22333"
+            }
+          ]
+        },
+        {
+          "headertype": "Parameter",
+          "values": [
+            {
+              "annotationValue": "reducing agent",
+              "termSource": "CHEBI",
+              "termAccession": "CHEBI:63247"
+            }
+          ]
+        },
+        {
+          "headertype": "Parameter",
+          "values": [
+            {
+              "annotationValue": "cleavage agent name",
+              "termSource": "MS",
+              "termAccession": "MS:1001045"
+            }
+          ]
+        },
+        {
+          "headertype": "Parameter",
+          "values": [
+            {
+              "annotationValue": "Tryptic Digestion",
+              "termSource": "NCIT",
+              "termAccession": "NCIT:C68835"
+            }
+          ]
+        },
+        {
+          "headertype": "Parameter",
+          "values": [
+            {
+              "annotationValue": "sample preparation",
+              "termSource": "MS",
+              "termAccession": "MS:1000831"
+            }
+          ]
+        },
+        {
+          "headertype": "Output",
+          "values": [
+            "Sample Name"
+          ]
+        }
+      ],
+      "values": [
+        [
+          [
+            0,
+            0
+          ],
+          {
+            "celltype": "FreeText",
+            "values": [
+              ""
+            ]
+          }
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          {
+            "celltype": "Unitized",
+            "values": [
+              "10",
+              {
+                "annotationValue": "microgram",
+                "termSource": "UO",
+                "termAccession": "https://bioregistry.io/UO:0000023"
+              }
+            ]
+          }
+        ],
+        [
+          [
+            2,
+            0
+          ],
+          {
+            "celltype": "Term",
+            "values": [
+              {
+                "annotationValue": "acetone",
+                "termSource": "CHEBI",
+                "termAccession": "https://bioregistry.io/CHEBI:15347"
+              }
+            ]
+          }
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          {
+            "celltype": "Term",
+            "values": [
+              {
+                "annotationValue": "Chloroacetamide",
+                "termSource": "NCIT",
+                "termAccession": "https://bioregistry.io/NCIT:C161899"
+              }
+            ]
+          }
+        ],
+        [
+          [
+            4,
+            0
+          ],
+          {
+            "celltype": "Term",
+            "values": [
+              {
+                "annotationValue": "TCEP",
+                "termSource": "CHEBI",
+                "termAccession": "https://bioregistry.io/CHEBI:63213"
+              }
+            ]
+          }
+        ],
+        [
+          [
+            5,
+            0
+          ],
+          {
+            "celltype": "Term",
+            "values": [
+              {
+                "annotationValue": "Trypsin",
+                "termSource": "MS",
+                "termAccession": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1001251"
+              }
+            ]
+          }
+        ],
+        [
+          [
+            6,
+            0
+          ],
+          {
+            "celltype": "Term",
+            "values": [
+              {
+                "annotationValue": "in-solution digestion",
+                "termSource": "MS",
+                "termAccession": "https://www.ebi.ac.uk/ols4/ontologies/ms/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMS_1002986"
+              }
+            ]
+          }
+        ],
+        [
+          [
+            7,
+            0
+          ],
+          {
+            "celltype": "Term",
+            "values": [
+              {
+                "annotationValue": "reversed-phase solid-phase extraction",
+                "termSource": "CHMO",
+                "termAccession": "http://purl.obolibrary.org/obo/CHMO_0001585"
+              }
+            ]
+          }
+        ],
+        [
+          [
+            8,
+            0
+          ],
+          {
+            "celltype": "FreeText",
+            "values": [
+              ""
+            ]
+          }
+        ]
+      ]
+    }
+  ]
+}

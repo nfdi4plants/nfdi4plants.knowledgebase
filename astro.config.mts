@@ -39,7 +39,7 @@ export default defineConfig({
     sidebar: [
       {
         label: 'Start Here',
-        badge: { text: 'For starters', variant: 'tip' }, 
+        // badge: { text: 'For starters', variant: 'tip' }, 
         // autogenerate: { directory: 'start-here' },
         items:[
           'start-here',
