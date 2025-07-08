@@ -11,13 +11,13 @@ import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
-The Datamap files used to annotate data files are modelled in ARCtrl as `Datamap` objects.
+The Datamap files used to annotate data files are modeled in ARCtrl as `Datamap` objects.
 
 They can be found in `Study`, `Assay`, `Workflow` and `Run` folders and therefore in the `ArcStudy`, `ArcAssay`, `ArcWorkflow` and `ArcRun` classes.
 
 ![](@images/arctrl/datamap.png)
 
-The `Datamap` itself is a table with fixed columns. Each row in the Datamap represents and annotates a Data Fragment of a data file and is modelles as an `DataContext` object. The `Datamap` therefore consists of a collection of `DataContext` objects.
+The `Datamap` itself is a table with fixed columns. Each row in the Datamap represents and annotates a Data Fragment of a data file and is modeled as an `DataContext` object. The `Datamap` therefore consists of a collection of `DataContext` objects.
 
 In this small tutorial we will show how to create a `Datamap` and integrate it into an `ARC`. The `Datamap` will describe a CSV file called `sugar_result.csv` located in `assays/MyAssay/dataset`, with two columns, each containing measurements of cellular sugar content:
 
