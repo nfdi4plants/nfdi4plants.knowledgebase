@@ -195,12 +195,6 @@ export default defineConfig({
         badge: {text: 'For developers', variant: 'tip'}, 
         autogenerate: { directory: 'arctrl' },
       },
-      {
-        label: 'ARCtrl Use-Cases',
-        collapsed: true,
-        autogenerate: {directory: 'arctrl/use-cases/'},
-        badge: {text: 'New!', variant: 'tip'},
-      },
       // {
       //   label: 'Vault',
       //   // Collapse the group by default.
