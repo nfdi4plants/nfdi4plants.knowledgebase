@@ -19,6 +19,8 @@ They can be found in `Study`, `Assay`, `Workflow` and `Run` folders and therefor
 
 The `Datamap` itself is a table with fixed columns. Each row in the Datamap represents and annotates a Data Fragment of a data file and is modeled as an `DataContext` object. The `Datamap` therefore consists of a collection of `DataContext` objects.
 
+# Basic Usage
+
 In this small tutorial we will show how to create a `Datamap` and integrate it into an `ARC`. The `Datamap` will describe a CSV file called `sugar_result.csv` located in `assays/MyAssay/dataset`, with two columns, each containing measurements of cellular sugar content:
 
 <Card icon='seti:csv' title="sugar_result.csv">
@@ -234,7 +236,7 @@ XlsxController.Datamap().to_xlsx_file("isa.datamap.xlsx", datamap)
 Include the `Datamap` in an `ARC` and write or update the whole `ARC`, which will include the `Datamap` as well.
 
 1. First, we load the `ARC` from a repository.
-2. Then we set the `DataMap` of the first assay to our `datamap`.
+2. Then we set the `DataMap` of the assay "MyAssay" to our `datamap`.
 3. Finally, we update the `ARC` to write the changes back to the repository.
 
 <Tabs syncKey="pl">
@@ -243,7 +245,7 @@ Include the `Datamap` in an `ARC` and write or update the whole `ARC`, which wil
 ```fsharp
 let arc = ARC.load("path_to_my_arc")
 
-arc.ISA.Value.GetAssayAt(0).DataMap <- Some datamap
+arc.ISA.Value.GetAssay("MyAssay").DataMap <- Some datamap
 
 arc.Update("path_to_my_arc")
 
@@ -269,7 +271,7 @@ from arctrl.arctrl import ARC
 
 arc = ARC.load("path_to_my_arc")
 
-arc.ISA.GetAssayAt(0).DataMap = datamap
+arc.ISA.GetAssay("MyAssay").DataMap = datamap
 
 arc.Update("path_to_my_arc")
 
