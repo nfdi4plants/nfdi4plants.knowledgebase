@@ -64,6 +64,9 @@ outputs:
 
 ### Example
 
+Each script below reads a CSV file (`data.csv`), sorts it by the first column, and writes the result to `sorted.csv`.
+
+
 Change this...
 
 <Tabs syncKey="pl">
@@ -71,7 +74,12 @@ Change this...
 <TabItem label="Python" icon='seti:python'>
 
 ```python 
+import sys
+import pandas as pd
+
 data = pd.read_csv("data.csv")
+data_sorted = data.sort_values(by=data.columns[0])
+data_sorted.to_csv("sorted.csv", index=False)
 ```
 
 </TabItem>
@@ -80,6 +88,8 @@ data = pd.read_csv("data.csv")
 
 ```r 
 data <- read.csv("data.csv")
+data_sorted <- data[order(data[[1]]), ]
+write.csv(data_sorted, "sorted.csv", row.names=FALSE)
 ```
 
 </TabItem>
@@ -88,7 +98,9 @@ data <- read.csv("data.csv")
 <TabItem label="Bash" icon='seti:shell'>
 
 ```bash 
-cat data.csv | sort > sorted.csv
+#!/bin/bash
+
+(head -n 1 data.csv && tail -n +2 data.csv | sort) > sorted.csv
 ```
 
 </TabItem>
@@ -101,18 +113,65 @@ cat data.csv | sort > sorted.csv
 
 <TabItem label="Python" icon='seti:python'>
 
-```python
+```python title="sort-csv.py"
 import sys
-data = pd.read_csv(sys.argv[1])
+import pandas as pd
+
+input_file = sys.argv[1]
+output_file = sys.argv[2]
+
+data = pd.read_csv(input_file)
+data_sorted = data.sort_values(by=data.columns[0])
+data_sorted.to_csv(output_file, index=False)
 ```
 
 </TabItem>
 
 <TabItem label="R" icon='seti:R'>
 
-```r
+```r title="sort-csv.R"
 args <- commandArgs(trailingOnly=TRUE)
-data <- read.csv(args[1])
+input_file <- args[1]
+output_file <- args[2]
+
+data <- read.csv(input_file)
+data_sorted <- data[order(data[[1]]), ]
+write.csv(data_sorted, output_file, row.names=FALSE)
+```
+
+</TabItem>
+
+<TabItem label="Bash" icon='seti:shell'>
+
+```bash title="sort-csv.sh"
+#!/bin/bash
+input_file="$1"
+output_file="$2"
+
+(head -n 1 "$input_file" && tail -n +2 "$input_file" | sort) > "$output_file"
+```
+
+</TabItem>
+
+</Tabs>
+
+
+The script can then be run via
+
+<Tabs syncKey="pl">
+
+<TabItem label="Python" icon='seti:python'>
+
+```bash
+python sort-csv.py data.csv sorted.csv
+```
+
+</TabItem>
+
+<TabItem label="R" icon='seti:R'>
+
+```bash
+Rscript sort-csv.R data.csv sorted.csv
 ```
 
 </TabItem>
@@ -120,12 +179,14 @@ data <- read.csv(args[1])
 <TabItem label="Bash" icon='seti:shell'>
 
 ```bash
-cat "$1" | sort > "$2"
+bash sort-csv.sh data.csv sorted.csv
 ```
 
 </TabItem>
 
 </Tabs>
+
+
 
 ### Goal
 
@@ -139,16 +200,20 @@ Create a file named `workflow.cwl`.
 
 ### Example
 
+<Tabs syncKey="pl">
+
+<TabItem label="Python" icon='seti:python'>
+
 ```yaml title="workflow.cwl"
 cwlVersion: v1.2
 class: CommandLineTool
 requirements:
   - class: InitialWorkDirRequirement
     listing:
-      - entryname: script.py
+      - entryname: sort-csv.py
         entry:
-          $include: script.py
-baseCommand: python3
+          $include: sort-csv.py
+baseCommand: [python3, sort-csv.py]
 inputs:
   input_file:
     type: File
@@ -163,13 +228,74 @@ outputs:
       glob: $(inputs.output_filename)
 ```
 
+</TabItem>
+
+<TabItem label="R" icon='seti:R'>
+
+```yaml title="workflow.cwl"
+cwlVersion: v1.2
+class: CommandLineTool
+requirements:
+  - class: InitialWorkDirRequirement
+    listing:
+      - entryname: sort-csv.R
+        entry:
+          $include: sort-csv.R
+baseCommand: [Rscript, sort-csv.R]
+inputs:
+  input_file:
+    type: File
+    inputBinding:
+      position: 1
+  output_filename:
+    type: string
+outputs:
+  output_file:
+    type: File
+    outputBinding:
+      glob: $(inputs.output_filename)
+```
+
+</TabItem>
+
+<TabItem label="Bash" icon='seti:shell'>
+
+```yaml title="workflow.cwl"
+cwlVersion: v1.2
+class: CommandLineTool
+requirements:
+  - class: InitialWorkDirRequirement
+    listing:
+      - entryname: sort-csv.sh
+        entry:
+          $include: sort-csv.sh
+baseCommand: [bash, sort-csv.sh]
+inputs:
+  input_file:
+    type: File
+    inputBinding:
+      position: 1
+  output_filename:
+    type: string
+outputs:
+  output_file:
+    type: File
+    outputBinding:
+      glob: $(inputs.output_filename)
+```
+
+
+</TabItem>
+
+</Tabs>
+
+
 ### Goal 
 
-This wraps your script in CWL as a `CommandLineTool`.
-It basically runs `python3 script.py output.csv`. 
+This wraps your script in CWL as a `CommandLineTool` and basically runs e.g. `python3 sort-csv.py data.csv sorted.csv`.
 
 :::note
-Make sure your script is saved alongside `workflow.cwl`.
+Make sure your script (`sort-csv.py`) is saved alongside `workflow.cwl`.
 :::
 
 ---
@@ -206,7 +332,7 @@ Also create a suitable `run.yml` to provide the parameters required by the `run.
 
 ```yaml title="run.yml"
 input_file: data.csv
-output_filename: output.csv
+output_filename: sorted.csv
 ```
 
 ### Goal
