@@ -1,0 +1,228 @@
+---
+title: From Script to CWL
+lastUpdated: 2025-07-09
+authors:
+  - dominik-brilhaus
+---
+
+import { FileTree } from '@astrojs/starlight/components';
+import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import Mermaid from '@components/mdx/Mermaid.astro'
+
+
+This starter’s guide to **FAIRifying script-based data analysis workflows** walks you through the steps to turn your existing script into a **reusable CWL workflow**. Whether you use Bash, Python, R, or another language the same logic applies.
+
+---
+
+# Before we begin
+
+## Identify Required Tools and Packages
+
+Go back to your script and **list all external packages and tools it depends on**.
+
+### Example
+
+Look for e.g.
+
+- Python packages (`pandas`, `numpy`)
+- R libraries (`ggplot2`)
+- Command-line tools (`samtools`, `awk`)
+
+### Goal
+
+
+---
+
+## Collect Metadata About Dependencies
+
+Record:
+
+- **Exact package names**
+- **Versions**
+
+
+### Example
+
+- pandas, version 1.5.3
+- numpy, version 1.23.0
+
+This helps others reproduce your analysis precisely.
+
+
+---
+
+
+## Identify Inputs and Outputs
+
+Look through your script and **identify what data it reads and what data it writes**. These are your `inputs` and `outputs`.
+
+### Examples
+
+- Input: a CSV file, a FASTA file.
+- Output: a figure, a table, a processed file.
+
+### Goal
+
+Make a list like:
+
+```yaml
+inputs:
+  - input_data: "data.csv"
+
+outputs:
+  - result_file: "results/summary.csv"
+```
+
+---
+
+## Refactor the script
+
+**Replace hard-coded paths** (pointing to your `inputs` and `outputs`) with command-line arguments. For easier handling, move these input/output variables to a section on **top of your script**.
+
+### Example
+
+Change this...
+
+```python  title="Old"
+data = pd.read_csv("data.csv")
+```
+
+...to this:
+
+```python title="New"
+import sys
+data = pd.read_csv(sys.argv[1])
+```
+
+:::tip
+Use `argparse` in Python or `commandArgs()` in R for clarity.
+:::
+
+### Goal
+
+This makes your script **modular and reusable**.
+
+---
+
+## Write a minimal Workflow CWL File
+
+Create a file named `workflow.cwl`.
+
+### Example
+
+```yaml title="workflow.cwl"
+cwlVersion: v1.2
+class: CommandLineTool
+baseCommand: python3
+inputs:
+  script_file:
+    type: File
+    inputBinding:
+      position: 1
+  input_file:
+    type: File
+    inputBinding:
+      position: 2
+outputs:
+  output_file:
+    type: File
+    outputBinding:
+      glob: "output.csv"
+requirements: []
+```
+
+### Goal 
+
+This wraps your script in CWL as a `CommandLineTool`.
+It basically runs `python3 script.py output.csv`. 
+
+:::note
+Make sure your script is saved alongside `workflow.cwl`.
+:::
+
+---
+
+## Add a minimal `Run`
+
+Create a `run.cwl` file that uses your `workflow.cwl`.
+
+### Example
+
+```yaml titles="run.cwl"
+cwlVersion: v1.2
+class: Workflow
+
+inputs:
+  input_file: File
+
+steps:
+  step1:
+    run: workflow.cwl
+    in:
+      script_file: { default: script.py }
+      input_file: input_file
+    out: [output_file]
+
+outputs:
+  output_file:
+    type: File
+    outputSource: step1/output_file
+```
+
+Also create a suitable `run.yml` to provide the parameters required by the `run.cwl`:
+
+```yaml title="run.yml"
+input_file: data.csv
+```
+
+### Goal
+
+
+Then run it with:
+
+```bash
+cwltool run.cwl run.yml
+```
+
+---
+
+## Add `requirements` and `hints`
+
+In `workflow.cwl`, add a `SoftwareRequirement`
+
+### Example
+
+```yaml
+requirements:
+  - class: SoftwareRequirement
+    packages:
+      - package: python
+        version: [3.10]
+      - package: pandas
+        version: [1.5.3]
+```
+
+Optionally, add `hints` to suggest optimal tools or resources.
+
+---
+
+## Add a Docker Container
+
+For full portability, specify a container with all dependencies.
+
+### Example
+
+```yaml
+requirements:
+  - class: DockerRequirement
+    dockerPull: python:3.10-slim
+```
+
+Or create your own `Dockerfile` and build an image:
+
+```Dockerfile
+FROM python:3.10-slim
+RUN pip install pandas==1.5.3 numpy==1.23.0
+COPY script.py /script.py
+```
