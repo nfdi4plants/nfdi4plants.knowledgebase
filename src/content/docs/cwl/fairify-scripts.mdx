@@ -66,20 +66,66 @@ outputs:
 
 Change this...
 
-```python  title="Old"
+<Tabs syncKey="pl">
+
+<TabItem label="Python" icon='seti:python'>
+
+```python 
 data = pd.read_csv("data.csv")
 ```
 
+</TabItem>
+
+<TabItem label="R" icon='seti:R'>
+
+```r 
+data <- read.csv("data.csv")
+```
+
+</TabItem>
+
+
+<TabItem label="Bash" icon='seti:shell'>
+
+```bash 
+cat data.csv | sort > sorted.csv
+```
+
+</TabItem>
+
+</Tabs>
+
 ...to this:
 
-```python title="New"
+<Tabs syncKey="pl">
+
+<TabItem label="Python" icon='seti:python'>
+
+```python
 import sys
 data = pd.read_csv(sys.argv[1])
 ```
 
-:::tip
-Use `argparse` in Python or `commandArgs()` in R for clarity.
-:::
+</TabItem>
+
+<TabItem label="R" icon='seti:R'>
+
+```r
+args <- commandArgs(trailingOnly=TRUE)
+data <- read.csv(args[1])
+```
+
+</TabItem>
+
+<TabItem label="Bash" icon='seti:shell'>
+
+```bash
+cat "$1" | sort > "$2"
+```
+
+</TabItem>
+
+</Tabs>
 
 ### Goal
 
