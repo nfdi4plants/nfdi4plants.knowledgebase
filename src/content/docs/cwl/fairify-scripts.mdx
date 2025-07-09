@@ -13,45 +13,27 @@ import Mermaid from '@components/mdx/Mermaid.astro'
 
 This starter’s guide to **FAIRifying script-based data analysis workflows** walks you through the steps to turn your existing script into a **reusable CWL workflow**. Whether you use Bash, Python, R, or another language the same logic applies.
 
----
+## Recommendations for FAIR data analysis
 
-# Before we begin
+These recommendations are good coding practice independently of the steps below.
 
-## Identify Required Tools and Packages
+<Steps>
 
-Go back to your script and **list all external packages and tools it depends on**.
+1. Follow the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) and **Keep It Single-Step**
+    - A script should ideally only execute a single process
+    - Modular, easier to combine in multi-step pipelines
+    - More reusable
+    - Easier to follow and annotate what the script consumes (`inputs`) and creates (`outputs`)
+2. **Do not hard code input or output paths**
+    - Reusability
+3. Collect information about external packages and tools the script depends on
+    - Packages
+    - Record the version
+    - Record online resources (URLs, biotool ro SciCrunch IDs, GitHub site)
 
-### Example
-
-Look for e.g.
-
-- Python packages (`pandas`, `numpy`)
-- R libraries (`ggplot2`)
-- Command-line tools (`samtools`, `awk`)
-
-### Goal
-
-
----
-
-## Collect Metadata About Dependencies
-
-Record:
-
-- **Exact package names**
-- **Versions**
-
-
-### Example
-
-- pandas, version 1.5.3
-- numpy, version 1.23.0
-
-This helps others reproduce your analysis precisely.
-
+</Steps>
 
 ---
-
 
 ## Identify Inputs and Outputs
 
@@ -78,7 +60,7 @@ outputs:
 
 ## Refactor the script
 
-**Replace hard-coded paths** (pointing to your `inputs` and `outputs`) with command-line arguments. For easier handling, move these input/output variables to a section on **top of your script**.
+**Replace hard-coded paths** (pointing to your `inputs` and `outputs`) with command-line arguments. For easier handling, move these input/output variables to its own section (e.g. on top of your script).
 
 ### Example
 
@@ -187,14 +169,55 @@ cwltool run.cwl run.yml
 
 ---
 
-## Add `requirements` and `hints`
+## Identify Required Tools and Packages
+
+Go back to your script and **list all external packages and tools it depends on**.
+
+### Example
+
+Look for e.g.
+
+- Python packages (`pandas`, `numpy`)
+- R libraries (`ggplot2`)
+- Command-line tools (`samtools`, `awk`)
+
+### Goal
+
+---
+
+## Collect Metadata About Dependencies
+
+Record:
+
+- **Exact package names**
+- **Versions**
+
+### Example
+
+- pandas, version 1.5.3
+- numpy, version 1.23.0
+
+This helps others reproduce your analysis precisely.
+
+## Add dependencies to `hints` and `requirements`
 
 In `workflow.cwl`, add a `SoftwareRequirement`
+
+### Soft requirements = `hints`
+
+Specify software and resource requirements under `hints`
+
+- add `SoftwareRequirement` to specify software version and reference
+  - `package: ` name of the software or package
+  - `specs: ` reference url from https://identifiers.org/biotools/ or SciCrunch https://identifiers.org/rrid/
+  - `version: [ "0.11.9" ]`
+
+- add `ResourceRequirement` to specify the required compute resources
 
 ### Example
 
 ```yaml
-requirements:
+hints:
   - class: SoftwareRequirement
     packages:
       - package: python
@@ -203,15 +226,20 @@ requirements:
         version: [1.5.3]
 ```
 
-Optionally, add `hints` to suggest optimal tools or resources.
+### Hard requirements = `requirements`
+
+Use the `requirements` primarily to specify hard requirements needed to run the current `CommandLineTool` or `Workflow` document
 
 ---
 
 ## Add a Docker Container
 
 For full portability, specify a container with all dependencies.
+Use the `DockerRequirement` to load a published Docker image or reference a local `Dockerfile`.
 
 ### Example
+
+Load a public image
 
 ```yaml
 requirements:
@@ -219,10 +247,50 @@ requirements:
     dockerPull: python:3.10-slim
 ```
 
-Or create your own `Dockerfile` and build an image:
+Create your own `Dockerfile` and build an image:
 
 ```Dockerfile
 FROM python:3.10-slim
 RUN pip install pandas==1.5.3 numpy==1.23.0
-COPY script.py /script.py
 ```
+
+## Metadata
+
+### Namespaces and schemas
+
+Adding namespaces and schemas allows to reuse them elsewhere in a CWL document
+
+```yaml
+$namespaces:
+  s: https://schema.org/
+  edam: http://edamontology.org/
+
+$schemas:
+  - https://schema.org/version/latest/schemaorg-current-https.rdf
+  - http://edamontology.org/EDAM_1.18.owl
+```
+
+### Attribute authors and contributors
+
+```yaml
+s:author:
+  - class: s:Person
+    s:identifier: <author ORCID>
+    s:email: mailto:<author email>
+    s:name: <author name>
+
+s:contributor:
+  - class: s:Person
+    s:identifier: <contributor ORCID>
+    s:email: mailto:<contributor email>
+    s:name: <contributor name>
+
+```
+
+
+## Resources
+
+This guide is adapted and includes recommendations from:
+
+- https://www.commonwl.org/user_guide/topics/best-practices.html
+- https://www.commonwl.org/user_guide/topics/metadata-and-authorship.html 
