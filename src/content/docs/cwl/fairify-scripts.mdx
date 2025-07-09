@@ -142,22 +142,25 @@ Create a file named `workflow.cwl`.
 ```yaml title="workflow.cwl"
 cwlVersion: v1.2
 class: CommandLineTool
+requirements:
+  - class: InitialWorkDirRequirement
+    listing:
+      - entryname: script.py
+        entry:
+          $include: script.py
 baseCommand: python3
 inputs:
-  script_file:
-    type: File
-    inputBinding:
-      position: 1
   input_file:
     type: File
     inputBinding:
-      position: 2
+      position: 1
+  output_filename:
+    type: string
 outputs:
   output_file:
     type: File
     outputBinding:
-      glob: "output.csv"
-requirements: []
+      glob: $(inputs.output_filename)
 ```
 
 ### Goal 
@@ -183,13 +186,14 @@ class: Workflow
 
 inputs:
   input_file: File
+  output_filename: string
 
 steps:
   step1:
     run: workflow.cwl
     in:
-      script_file: { default: script.py }
       input_file: input_file
+      output_filename: output_filename
     out: [output_file]
 
 outputs:
@@ -202,6 +206,7 @@ Also create a suitable `run.yml` to provide the parameters required by the `run.
 
 ```yaml title="run.yml"
 input_file: data.csv
+output_filename: output.csv
 ```
 
 ### Goal
@@ -287,18 +292,33 @@ Use the `DockerRequirement` to load a published Docker image or reference a loca
 
 Load a public image
 
-```yaml
+```yaml title="workflow.cwl"
 requirements:
   - class: DockerRequirement
     dockerPull: python:3.10-slim
 ```
 
-Create your own `Dockerfile` and build an image:
+Create your own `Dockerfile` ...
 
-```Dockerfile
+```Dockerfile title="Dockerfile"
 FROM python:3.10-slim
 RUN pip install pandas==1.5.3 numpy==1.23.0
 ```
+
+...and load it in your `workflow.cwl`
+
+```yaml title="workflow.cwl"
+
+...
+hints:
+  DockerRequirement:
+    dockerImageId: "mydocker"
+    dockerFile: {$include: "Dockerfile"}
+...
+
+```
+
+
 
 ## Metadata
 
