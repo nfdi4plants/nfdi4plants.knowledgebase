@@ -1,21 +1,21 @@
 ---
 title: From Script to CWL
-lastUpdated: 2025-07-09
+lastUpdated: 2025-07-10
 authors:
   - dominik-brilhaus
 ---
 
 import { FileTree } from '@astrojs/starlight/components';
 import { Steps } from '@astrojs/starlight/components';
-import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Tabs, TabItem, Card } from '@astrojs/starlight/components';
 import Mermaid from '@components/mdx/Mermaid.astro'
-
 
 This starter’s guide to **FAIRifying script-based data analysis workflows** walks you through the steps to turn your existing script into a **reusable CWL workflow**. Whether you use Bash, Python, R, or another language the same logic applies.
 
 ## Recommendations for FAIR data analysis
 
-These recommendations are good coding practice independently of the steps below.
+The following considerations are recommended as FAIR coding practice independently of the steps below. 
+The goal is to be able to share the data analysis with as much context and functionality as possible to replicate, reproduce or reuse it in other contexts and on other data of the same type.
 
 <Steps>
 
@@ -24,12 +24,12 @@ These recommendations are good coding practice independently of the steps below.
     - Modular, easier to combine in multi-step pipelines
     - More reusable
     - Easier to follow and annotate what the script consumes (`inputs`) and creates (`outputs`)
-2. **Do not hard code input or output paths**
+2. Collect information about external packages and tools the script depends on
+    - Record the packages, libraries, tools
+    - Record their version
+    - Record available resources (URLs, biotool ro SciCrunch IDs, GitHub site)
+3. **Do not hard code input or output paths**
     - Reusability
-3. Collect information about external packages and tools the script depends on
-    - Packages
-    - Record the version
-    - Record online resources (URLs, biotool ro SciCrunch IDs, GitHub site)
 
 </Steps>
 
@@ -41,8 +41,8 @@ Look through your script and **identify what data it reads and what data it writ
 
 ### Examples
 
-- Input: a CSV file, a FASTA file.
-- Output: a figure, a table, a processed file.
+- Input: path to a CSV file, a FASTA file.
+- Output: path to a figure, a table, a processed file.
 
 ### Goal
 
@@ -56,16 +56,29 @@ outputs:
   - result_file: "results/summary.csv"
 ```
 
----
-
 ## Refactor the script
 
-**Replace hard-coded paths** (pointing to your `inputs` and `outputs`) with command-line arguments. For easier handling, move these input/output variables to its own section (e.g. on top of your script).
+For easier overview and handling, move the input and output variables to its own section (e.g. on top of your script).
 
-### Example
+<Steps>
+  1. Replace any paths pointing outside the ARC
+  2. Replace **absolute** with **relative** paths
+</Steps>
+
+:::tip[Goal]
+Reusability – Collaborators receive the ARC and its contents and cannot access referenced data outside the ARC.
+:::
+
+## From interactive to reusable
+
+<Steps>
+  1. **Replace hard-coded paths** (pointing to your `inputs` and `outputs`) with command-line arguments.
+</Steps>
+
+
+<Card icon="pen" title="Example">
 
 Each script below reads a CSV file (`data.csv`), sorts it by the first column, and writes the result to `sorted.csv`.
-
 
 Change this...
 
@@ -186,21 +199,23 @@ bash sort-csv.sh data.csv sorted.csv
 
 </Tabs>
 
+</Card>
 
-
-### Goal
-
-This makes your script **modular and reusable**.
+:::tip[Goal]
+Reusability – This makes your script more **modular and reusable** on other data inputs.
+:::
 
 ---
 
-## Write a minimal Workflow CWL File
+## Write a minimal workflow CWL descriptor
 
-Create a file named `workflow.cwl`.
+The following wraps your script in CWL as a `CommandLineTool`.
 
-### Example
+<Card icon="pen" title="Example">
 
 <Tabs syncKey="pl">
+
+1. Create a file named `workflow.cwl` and save it alongside the script.
 
 <TabItem label="Python" icon='seti:python'>
 
@@ -221,12 +236,16 @@ inputs:
       position: 1
   output_filename:
     type: string
+    inputBinding:
+      position: 2
 outputs:
   output_file:
     type: File
     outputBinding:
       glob: $(inputs.output_filename)
 ```
+
+This basically runs `python3 sort-csv.py data.csv sorted.csv`.
 
 </TabItem>
 
@@ -249,12 +268,16 @@ inputs:
       position: 1
   output_filename:
     type: string
+    inputBinding:
+      position: 2
 outputs:
   output_file:
     type: File
     outputBinding:
       glob: $(inputs.output_filename)
 ```
+
+This basically runs `Rscript sort-csv.R data.csv sorted.csv`.
 
 </TabItem>
 
@@ -277,6 +300,8 @@ inputs:
       position: 1
   output_filename:
     type: string
+    inputBinding:
+      position: 2
 outputs:
   output_file:
     type: File
@@ -284,18 +309,16 @@ outputs:
       glob: $(inputs.output_filename)
 ```
 
+This basically runs `bash sort-csv.sh data.csv sorted.csv`.
 
 </TabItem>
 
 </Tabs>
 
+</Card>
 
-### Goal 
-
-This wraps your script in CWL as a `CommandLineTool` and basically runs e.g. `python3 sort-csv.py data.csv sorted.csv`.
-
-:::note
-Make sure your script (`sort-csv.py`) is saved alongside `workflow.cwl`.
+:::tip[Goal]
+Interoperability – Together with the `workflow.cwl`, the script is now a "workflow". As such, it can become a step in a pipeline.
 :::
 
 ---
@@ -304,7 +327,7 @@ Make sure your script (`sort-csv.py`) is saved alongside `workflow.cwl`.
 
 Create a `run.cwl` file that uses your `workflow.cwl`.
 
-### Example
+<Card icon="pen" title="Example">
 
 ```yaml titles="run.cwl"
 cwlVersion: v1.2
@@ -331,26 +354,28 @@ outputs:
 Also create a suitable `run.yml` to provide the parameters required by the `run.cwl`:
 
 ```yaml title="run.yml"
-input_file: data.csv
+input_file:
+  class: File
+  path: data.csv
 output_filename: sorted.csv
 ```
 
-### Goal
+</Card>
 
-
-Then run it with:
+The workflow can now be executed with
 
 ```bash
 cwltool run.cwl run.yml
 ```
 
----
+:::tip[Goal]
+Interoperability – separate generic process from concrete data
+:::
+
 
 ## Identify Required Tools and Packages
 
 Go back to your script and **list all external packages and tools it depends on**.
-
-### Example
 
 Look for e.g.
 
@@ -358,7 +383,11 @@ Look for e.g.
 - R libraries (`ggplot2`)
 - Command-line tools (`samtools`, `awk`)
 
-### Goal
+:::tip[Goal]
+- Reuse
+- Find
+- Access 
+:::
 
 ---
 
@@ -380,7 +409,7 @@ This helps others reproduce your analysis precisely.
 
 In `workflow.cwl`, add a `SoftwareRequirement`
 
-### Soft requirements = `hints`
+- Soft requirements = `hints`
 
 Specify software and resource requirements under `hints`
 
@@ -391,9 +420,15 @@ Specify software and resource requirements under `hints`
 
 - add `ResourceRequirement` to specify the required compute resources
 
-### Example
 
-```yaml
+- Hard requirements = `requirements`
+
+Use the `requirements` primarily to specify hard requirements needed to run the current `CommandLineTool` or `Workflow` document
+
+<Card icon="pen" title="Example">
+
+```yaml title="workflow.cwl"
+...
 hints:
   - class: SoftwareRequirement
     packages:
@@ -401,13 +436,10 @@ hints:
         version: [3.10]
       - package: pandas
         version: [1.5.3]
+...
 ```
 
-### Hard requirements = `requirements`
-
-Use the `requirements` primarily to specify hard requirements needed to run the current `CommandLineTool` or `Workflow` document
-
----
+</Card>
 
 ## Add a Docker Container
 
@@ -419,14 +451,16 @@ Use the `DockerRequirement` to load a published Docker image or reference a loca
 Load a public image
 
 ```yaml title="workflow.cwl"
+...
 requirements:
   - class: DockerRequirement
     dockerPull: python:3.10-slim
+...
 ```
 
 Create your own `Dockerfile` ...
 
-```Dockerfile title="Dockerfile"
+```dockerfile title="Dockerfile"
 FROM python:3.10-slim
 RUN pip install pandas==1.5.3 numpy==1.23.0
 ```
@@ -434,17 +468,13 @@ RUN pip install pandas==1.5.3 numpy==1.23.0
 ...and load it in your `workflow.cwl`
 
 ```yaml title="workflow.cwl"
-
 ...
 hints:
   DockerRequirement:
     dockerImageId: "mydocker"
     dockerFile: {$include: "Dockerfile"}
 ...
-
 ```
-
-
 
 ## Metadata
 
