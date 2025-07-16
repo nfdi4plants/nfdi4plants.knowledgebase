@@ -12,6 +12,16 @@ import Mermaid from '@components/mdx/Mermaid.astro'
 
 This starter’s guide to **FAIRifying script-based data analysis workflows** walks you through the steps to turn your existing script into a **reusable CWL workflow**. Whether you use Python, R, Bash, or another language the same logic applies.
 
+
+{/* TODOs
+
+  - devcontainsers
+  - biotools
+
+
+*/}
+
+
 ## Recommendations for FAIR data analysis
 
 The following considerations are recommended as FAIR coding practice independently of the steps below. 
@@ -26,20 +36,22 @@ The goal is to be able to share the data analysis with as much context and funct
     - Record the packages, libraries, tools
     - Record their version
     - Record available resources (URLs, biotool ro SciCrunch IDs, GitHub site)
-2. Separate the process from the data
+3. Separate processes and data
     - Modular, easier to combine in multi-step pipelines
     - **Do not hard code input or output paths**
     - Reusability
+4. Un-couple processes from environment
+    - use containers
 
 </Steps>
 
 
 ## Refactor the script
 
-Look through your script and identify **what data it reads and what data it writes**. These are your `inputs` and `outputs`.
-
-  - Input: path to a FASTA file, a CSV file (e.g. `data.csv`)
-  - Output: path to where a result is written, e.g. a figure, a processed file, a table (`sorted.csv`)
+Look through your script and identify **what data it reads and what data it writes**. These are your `inputs` and `outputs`, for example:
+  
+  - Inputs: path to a FASTA file, a CSV file (e.g. `data.csv`)
+  - Outputs: path to where a result is written, e.g. a figure, a processed file, a table (`sorted.csv`)
 
 <Steps>
   1. For easier overview and handling, move the input and output variables to its own section (e.g. on top of your script).
@@ -563,7 +575,10 @@ Reusability – makes your data analysis workflow portable and reusable
 
 Adding namespaces and schemas allows to reuse them elsewhere in a CWL document
 
-```yaml
+<Card icon="pen" title="Example">
+
+```yaml title="workflow.cwl"
+...
 $namespaces:
   s: https://schema.org/
   edam: http://edamontology.org/
@@ -571,11 +586,19 @@ $namespaces:
 $schemas:
   - https://schema.org/version/latest/schemaorg-current-https.rdf
   - http://edamontology.org/EDAM_1.18.owl
+...
 ```
+
+</Card>
+
 
 ### Attribute authors and contributors
 
-```yaml
+
+<Card icon="pen" title="Example">
+
+```yaml title="workflow.cwl"
+...
 s:author:
   - class: s:Person
     s:identifier: <author ORCID>
@@ -587,8 +610,10 @@ s:contributor:
     s:identifier: <contributor ORCID>
     s:email: mailto:<contributor email>
     s:name: <contributor name>
-
+...
 ```
+
+</Card>
 
 
 ## Resources
@@ -596,4 +621,9 @@ s:contributor:
 This guide is adapted and includes recommendations from:
 
 - https://www.commonwl.org/user_guide/topics/best-practices.html
-- https://www.commonwl.org/user_guide/topics/metadata-and-authorship.html 
+- https://www.commonwl.org/user_guide/topics/metadata-and-authorship.html
+
+
+### Recommended reads
+
+- Wilkinson, S.R., Aloqalaa, M., Belhajjame, K. et al. Applying the FAIR Principles to computational workflows. Sci Data 12, 328 (2025). https://doi.org/10.1038/s41597-025-04451-9
