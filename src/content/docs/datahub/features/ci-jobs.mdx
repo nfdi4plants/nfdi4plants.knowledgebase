@@ -1,0 +1,86 @@
+---
+title: Run own CI/CD jobs
+lastUpdated: 2025-07-16
+authors:
+  - dominik-brilhaus
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import { Code } from '@astrojs/starlight/components'
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import Mermaid from '@components/mdx/Mermaid.astro'
+import DownloadLink from '@components/scripts/DownloadLink.tsx?client:load'
+
+This guide demonstrates how to extend DataHUB's AutoDevOps pipeline with own CI/CD[^CICD] jobs.
+
+:::note[Advanced Users]
+This guide needs some familiarity with GitLab.
+:::
+
+:::caution[Work in Progress]
+Since some tools exemplified below are under development, consider this experimental.
+1. Be aware that the examples maybe outdated.
+2. Run on a test ARC first and check for expected results.
+3. Please let us know, if something is not working as expected.
+:::
+
+## Use-case
+
+Every time an ARC in the DataHUB is updated, an "AutoDevOps Pipeline" automatically runs certain jobs on the ARC. This is employed for instance to create machine-readable metadata (`arc.json`) as artifacts, or – if triggered – to [validate the ARC](nfdi4plants.knowledgebase/arc-validation/cqc-pipelines) against different validation packages (e.g. for publication via the DataPLANT publication service).
+
+Some advanced users want to extend this pipeline with other jobs to run on the ARC as it facilitates to 
+- run CLI tools that are still under development (and have not yet be implemented in the global AutoDevOps Pipeline) on ARCs
+- as a data steward support users with the features of these CLI tools without the need for local tool installation and execution
+
+
+## Adding custom CI/CD jobs
+
+<Steps>
+1. In the DataHUB, open the ARC for which you would like to add a custom CI/CD pipeline
+2. Create a new `.gitlab-ci.yml` file at the root of the ARC by either
+   - navigating via the sidebar to `Build` -> `Pipeline editor` or
+   - adding it as a new file to the ARC via DataHUB
+   :::tip
+   You can also import `.gitlab-ci.yml` to the root's ARC via ARCitect or add it manually.
+   :::
+3. Use or adapt one of the examples below for your ARC's `.gitlab-ci.yml`
+</Steps>
+
+
+## Generic example
+
+This example extends the stages of the "Auto-DevOps" pipeline with a job called `my_own_ci_job`. 
+The `my_own_ci_job` only executes the simple `echo` command and prints "doing things..."
+
+import GenericCI from 'assets/gitlab-ci-generic.yml?url&raw'
+
+<Code 
+  title=".gitlab-ci.yml"
+  code={ GenericCI } 
+  lang="yaml"
+  mark={[9, 11, 12, 13, 14]}
+/>
+
+
+## Example: ARC Summary
+
+This example extends the "Auto-DevOps" pipeline with the [ARC Summary](https://github.com/nfdi4plants/ARCSummary) tool. The tool is provided as a ready-to-use docker image (ghcr.io/nfdi4plants/arc-summary:main). It creates an artifact file `README.md`, which automatically includes a summary of the ARC prepared from ISA metadata. Once run, the created `README.md` can be downloaded from the job artifacts in the DataHUB.
+
+
+import ARCSummary from 'assets/gitlab-ci-arc-summary.yml?url&raw'
+
+<Code 
+  title=".gitlab-ci.yml"
+  code={ ARCSummary } 
+  lang="yaml"
+  mark={[22]}
+/>
+
+
+
+{/* Footnotes */}
+
+[^CICD]: CI/CD: Continuous Integration (CI) / Continuous Deployment (CD)
+
+
+

@@ -150,6 +150,10 @@ export default defineConfig({
             label: 'Data Publications',
             autogenerate: { directory: 'datahub/data-publications'},
           },
+          {
+            label: 'Additional Features',
+            autogenerate: { directory: 'datahub/features'},
+          },
         ]
       },        
       {
