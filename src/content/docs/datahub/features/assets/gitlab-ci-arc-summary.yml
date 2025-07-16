@@ -8,21 +8,16 @@ stages:
     - generate_metadata
     - arc-summary
 
-arc-summary:
-    stage: arc-summary
-    image: docker:24.0.7
-    services:
-      - name: docker:24.0.7-dind
-        alias: docker
-    variables:
-        DOCKER_HOST: tcp://docker:2375
-        DOCKER_TLS_CERTDIR: ""
-    script:
-      - echo "Create ARC summary in README.md as job artifact"
-      - docker run --rm -v "$CI_PROJECT_DIR:/arc" ghcr.io/nfdi4plants/arc-summary:main summary -d /arc
-    artifacts:
+summary:
+  stage: arc-summary
+  image:
+    name: ghcr.io/nfdi4plants/arc-summary:main
+    entrypoint: [""]
+  script:
+    - /tool/ARCSummary summary -d .
+  artifacts:
       paths:
         - README.md
       expire_in: 1 week
-    only:
-      - main
+  only:
+    - main
