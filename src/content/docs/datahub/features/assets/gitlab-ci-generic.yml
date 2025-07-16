@@ -1,0 +1,14 @@
+include:
+    - template: Auto-DevOps.gitlab-ci.yml
+
+stages:
+    - arc_json
+    - quality_report_generator
+    - quality_report
+    - generate_metadata
+    - my_own_ci_job
+
+My own CI job:
+    stage: my_own_ci_job
+    script:
+        - echo "doing things..."

@@ -1,0 +1,23 @@
+include:
+    - template: Auto-DevOps.gitlab-ci.yml
+
+stages:
+    - arc_json
+    - quality_report_generator
+    - quality_report
+    - generate_metadata
+    - arc-summary
+
+summary:
+  stage: arc-summary
+  image:
+    name: ghcr.io/nfdi4plants/arc-summary:main
+    entrypoint: [""]
+  script:
+    - /tool/ARCSummary summary -d .
+  artifacts:
+      paths:
+        - README.md
+      expire_in: 1 week
+  only:
+    - main

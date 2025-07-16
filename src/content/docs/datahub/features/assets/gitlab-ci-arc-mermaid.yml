@@ -1,0 +1,23 @@
+include:
+    - template: Auto-DevOps.gitlab-ci.yml
+
+stages:
+    - arc_json
+    - quality_report_generator
+    - quality_report
+    - generate_metadata
+    - arcIsaProcessMermaid
+
+arcIsaProcessMermaid:
+  stage: arcIsaProcessMermaid
+  image: 
+    name: mcr.microsoft.com/dotnet/sdk:8.0
+  before_script:
+    - export PATH="$PATH:/root/.dotnet/tools"
+    - dotnet tool install --global arcIsaProcessMermaid
+  script:
+    - arcIsaProcessMermaid -p ./ -o arc-mermaid.md
+  artifacts:
+    paths:
+      - arc-mermaid.md
+    expire_in: 1 week

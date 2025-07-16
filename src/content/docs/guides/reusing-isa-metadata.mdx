@@ -19,14 +19,14 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 Do you find yourself describing the same workflows over and over again?
 You can save time by reusing them! Swate’s Export/Import functionality allows you to store and reload completed ISA Swate tables, including multiple filled-out sheets.
 
-This feature is especially useful when working with recurring Standard Operating Procedures (SOPs). You can export a fully filled-out set of metadata sheets once and later import it. This way, you only need to make minimal adjustments, such as adding new sample IDs, without having to re-enter all the metadata from scratch.
+This feature is especially useful when working with recurring Standard Operating Procedures (SOPs). Consider a lab that routinely uses mass spectrometry to assess the proteome from various samples. The lab might maintain a pool of SOPs, e.g. for different sample sources (e.g. plants or bacteria) or protein digestion methods (e.g. trypsin or formic acid). You can create metadata tables for each of those SOPs in Swate and export the fully filled-out set of metadata sheets. Then they can later be imported into other ARCs. This way, you only need to make minimal adjustments, such as adding new sample IDs, without having to re-enter all the metadata from scratch.
 
-We recommend using the ARCtrl export format. Make sure to also select the ARCtrl format during import to ensure correct structure and compatibility.
+We recommend using the ARCtrl export format. Save the file to a location accessible to you or your team (e.g., a shared folder or version-controlled repository). This makes it easy to manage personal or group-specific metadata tables, ensuring consistency and efficiency across experiments and projects. Make sure to also select the ARCtrl format during import to ensure correct structure and compatibility.
 
 <Json />
 
-Save the file to a location accessible to you or your team (e.g., a shared folder or version-controlled repository). This makes it easy to manage personal or group-specific metadata tables, ensuring consistency and efficiency across experiments and projects.
 
 A step-by-step guide including example data can be found in the [Viola Guide](/nfdi4plants.knowledgebase/start-here/sops). 
 
+If you are familiar with ARCtrl and would like to combine SOPs to an ARC purely using ARCtrl, have a look at [this article](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/arctrl/use-cases/create-arc-template/).
 
