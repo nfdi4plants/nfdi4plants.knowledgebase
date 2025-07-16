@@ -3,6 +3,10 @@ title: Run own CI/CD jobs
 lastUpdated: 2025-07-16
 authors:
   - dominik-brilhaus
+sidebar:
+  badge:
+    variant: note
+    text: experimental
 ---
 
 import { Steps } from '@astrojs/starlight/components';
@@ -11,13 +15,13 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 import Mermaid from '@components/mdx/Mermaid.astro'
 import DownloadLink from '@components/scripts/DownloadLink.tsx?client:load'
 
-This guide demonstrates how to extend DataHUB's AutoDevOps pipeline with own CI/CD[^CICD] jobs.
+This guide demonstrates how to extend DataHUB's AutoDevOps pipeline with own [CI/CD](https://docs.gitlab.com/ci/ "Continuous Integration (CI) / Continuous Deployment (CD)") jobs.
 
 :::note[Advanced Users]
 This guide needs some familiarity with GitLab.
 :::
 
-:::caution[Work in Progress]
+:::caution[Experimental]
 Since some tools exemplified below are under development, consider this experimental.
 1. Be aware that the examples maybe outdated.
 2. Run on a test ARC first and check for expected results.
@@ -72,12 +76,10 @@ import ARCSummary from 'assets/gitlab-ci-arc-summary.yml?url&raw'
   title=".gitlab-ci.yml"
   code={ ARCSummary } 
   lang="yaml"
-  mark={[22]}
+  mark={[14, 17, 20]}
 />
 
 ## Example: ARC Mermaid Graph
-
-
 
 This example extends the "Auto-DevOps" pipeline with the [arcIsaProcessMermaid](https://github.com/nfdi4plants/arcIsaProcessMermaid) tool. This dotnet tool tries to draw a graphical overview of the ISA information in the ARC and stores it in an artifact file `arc-mermaid.md`. Once run, the `arc-mermaid.md` file can be downloaded from the job artifacts in the DataHUB.
 
@@ -91,11 +93,6 @@ import ARCMermaid from 'assets/gitlab-ci-arc-mermaid.yml?url&raw'
 />
 
 
-
-
-{/* Footnotes */}
-
-[^CICD]: CI/CD: Continuous Integration (CI) / Continuous Deployment (CD)
 
 
 
