@@ -61,10 +61,9 @@ import GenericCI from 'assets/gitlab-ci-generic.yml?url&raw'
   mark={[9, 11, 12, 13, 14]}
 />
 
-
 ## Example: ARC Summary
 
-This example extends the "Auto-DevOps" pipeline with the [ARC Summary](https://github.com/nfdi4plants/ARCSummary) tool. The tool is provided as a ready-to-use docker image (ghcr.io/nfdi4plants/arc-summary:main). It creates an artifact file `README.md`, which automatically includes a summary of the ARC prepared from ISA metadata. Once run, the created `README.md` can be downloaded from the job artifacts in the DataHUB.
+This example extends the "Auto-DevOps" pipeline with the [ARC Summary](https://github.com/nfdi4plants/ARCSummary) tool. The tool is provided as a ready-to-use docker image (ghcr.io/nfdi4plants/arc-summary:main). It creates an artifact file `README.md`, which automatically includes a summary of the ARC prepared from ISA metadata. Once run, the `README.md` file can be downloaded from the job artifacts in the DataHUB.
 
 
 import ARCSummary from 'assets/gitlab-ci-arc-summary.yml?url&raw'
@@ -75,6 +74,22 @@ import ARCSummary from 'assets/gitlab-ci-arc-summary.yml?url&raw'
   lang="yaml"
   mark={[22]}
 />
+
+## Example: ARC Mermaid Graph
+
+
+
+This example extends the "Auto-DevOps" pipeline with the [arcIsaProcessMermaid](https://github.com/nfdi4plants/arcIsaProcessMermaid) tool. This dotnet tool tries to draw a graphical overview of the ISA information in the ARC and stores it in an artifact file `arc-mermaid.md`. Once run, the `arc-mermaid.md` file can be downloaded from the job artifacts in the DataHUB.
+
+import ARCMermaid from 'assets/gitlab-ci-arc-mermaid.yml?url&raw'
+
+<Code 
+  title=".gitlab-ci.yml"
+  code={ ARCMermaid } 
+  lang="yaml"
+  mark={[17, 19]}
+/>
+
 
 
 
