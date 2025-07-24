@@ -1,0 +1,47 @@
+---
+title: Very large data upload
+lastUpdated: 2025-07-23
+authors: 
+   - dominik-brilhaus
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import Mermaid from '@components/mdx/Mermaid.astro'
+
+### Use-case
+
+- very large data that wants to be uploaded (pushed) as early as possible to the DataHUB
+
+### Challenge
+
+- limited local storage, git by design duplicates data
+
+### Considerations
+
+- file processing location (local vs. remote)
+- are the files still needed locally? Or are they already processed?
+
+<Mermaid>
+
+```mermaid
+sequenceDiagram   
+  box grey
+    participant LocalData as Local Data folder
+    participant LocalARC as Local ARC folder
+    participant DataHUB as DataHUB ARC repository
+  end
+  LocalARC->>DataHUB: Initialize empty ARC
+
+  Note over LocalARC: Loop file-by-file upload process 
+  
+  loop For each fileX from 1 to n
+      LocalData->>LocalARC: Move fileX to ARC
+      LocalARC->>LocalARC: git [lfs track + add + commit] fileX
+      LocalARC->>DataHUB: git push
+      DataHUB->>LocalARC: Option 1: Replace local ARC with LFS-filtered clone
+      DataHUB->>LocalARC: Option 2: Replace fileX with LFS pointer (lfs migrate export)
+  end
+```
+
+</Mermaid>
