@@ -1,10 +1,10 @@
 ---
-layout: docs 
 title: "Dev Containers with CWL"
-date: 2025-07-24
-add toc: true 
-add support: false 
-add sidebar: _sidebard/mainSidebar.md 
+latIpdated: 2025-07-25
+authors: 
+  - pauline-hans
+sidebar: 
+  order: 8
 --- 
 # Dev Containers and CWL 
 ## What is a Docker Container? 
