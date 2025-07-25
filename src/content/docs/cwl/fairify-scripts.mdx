@@ -12,12 +12,9 @@ import Mermaid from '@components/mdx/Mermaid.astro'
 
 This starter’s guide to **FAIRifying script-based data analysis workflows** walks you through the steps to turn your existing script into a **reusable CWL workflow**. Whether you use Python, R, Bash, or another language the same logic applies.
 
-
 {/* TODOs
 
   - devcontainsers
-  - biotools
-
 
 */}
 
@@ -25,28 +22,30 @@ This starter’s guide to **FAIRifying script-based data analysis workflows** wa
 ## Recommendations for FAIR data analysis
 
 The following considerations are recommended as FAIR coding practice independently of the steps below. 
-The goal is to be able to share the data analysis with as much context and functionality as possible to replicate, reproduce or reuse it in other contexts and on other data of the same type.
+The goal is to be able to share the data analysis with as much context and functionality as possible. This should enable yourself or other researchers to **replicate, reproduce or reuse** it in other contexts or on other data of the same type.
 
 <Steps>
 
-1. Follow the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) and **Keep It Single-Step**
+1. Follow the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) and **"Keep It Single-Step"**
     - A script should ideally only execute a single process. Avoid mixing too many, independent processes in a single script. 
     - Focussing on a clear task increases the script's reusabaility in other contexts and facilitates the comprehension and annotation of what the script achieves, what `inputs` it consumes and which `outputs` it creates
-2. Collect information about external packages and tools the script depends on
-    - Record the packages, libraries, tools
-    - Record their version
-    - Record available resources
-      - official citation ()
-      - URLs to tool / developer website, docs, GitHub / GitLab
-      - Unique tool IDs from registries such ([bio.tools](https://bio.tools/)) or RRIDs ([SciCrunch](https://scicrunch.org/resources/about/resource), identifiers.org)
 
-      
-3. Separate processes and data
-    - Modular, easier to combine in multi-step pipelines
-    - **Do not hard code input or output paths**
-    - Reusability
+2. **Separate data analysis from the data**
+    - Avoid hard-coding paths to inputs or outputs such as data, parameters or dependencies
+    - The smaller and more modular the process, the easier it will be to reuse it or combine it in multi-step pipelines
+
+3. Collect **information about  dependencies**, such as external packages and tools
+    - Record the script language itself
+    - Record the packages, libraries, tools
+    - Record their versions
+    - Record available resources
+      - Official citation
+      - URLs to tool or developer website, docs, GitHub / GitLab
+      - Unique tool IDs from registries such ([bio.tools](https://bio.tools/)) or RRIDs ([SciCrunch](https://scicrunch.org/resources/about/resource), identifiers.org)  
+
 4. Un-couple processes from environment
-    - use containers
+    - The result of a script should not depend on where it is run.
+    - To achieve this, provide or reuse existing containers that include as much of the above information as required to make the use independent 
 
 </Steps>
 
