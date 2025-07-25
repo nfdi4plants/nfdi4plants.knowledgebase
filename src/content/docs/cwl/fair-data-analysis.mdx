@@ -1,0 +1,68 @@
+---
+title: Recommendations for FAIR Data Analysis
+lastUpdated: 2025-07-25
+authors:
+  - dominik-brilhaus
+sidebar:
+  hidden: true
+  badge:
+    variant: note
+    text: WIP
+---
+
+:::note
+This guide is work in progress.
+:::
+
+The following practices support FAIR (Findable, Accessible, Interoperable, Reusable) data analysis. They apply regardless of workflow format or tooling, and help ensure that your work can be **replicated, reproduced, or reused** – by yourself or others, in the future or in new contexts.
+
+## Follow the KISS principle – **"Keep It Single-Step"**. 
+
+- Each script should ideally perform only one distinct task.
+- Avoid mixing unrelated processes in a single script.
+- This improves:
+  - Reusability across projects
+  - Understandability of the script’s purpose
+  - Clarity around its inputs and outputs- A focused script is easier to reuse, understand, and annotate, especially regarding the `inputs` it consumes and the `outputs` it creates
+
+## Separate data analysis logic from data
+    
+- Avoid hard-coded paths or filenames.
+- Parameterize inputs, outputs, and configuration as arguments.
+- Benefits:
+  - Easier reuse across datasets and platforms
+  - Smoother integration into larger workflows or pipelines
+
+## Collect information about dependencies
+
+- Record the script language (e.g. Python, R, Bash)
+- List all external packages, libraries, and software tools used
+- Specify versions where applicable
+- List runtime environments and hardware requirements (if relevant)
+- Include useful metadata:
+  - Official citation
+  - URLs (e.g. docs, GitHub, project websites)
+  - Unique identifiers from registries such as 
+    - [bio.tools](https://bio.tools/)
+    - [RRIDs via SciCrunch](https://scicrunch.org/resources/about/resource)
+    - [identifiers.org](https://identifiers.org/)
+
+## Uncouple processes from the execution environment
+
+- Ensure that your analysis can be run anywhere, not just on your machine.
+- Use containerization (e.g., Docker, Singularity) to bundle:
+  - Dependencies
+  - Correct versions
+  - Required system tools
+- Use existing community-maintained containers where possible, e.g.
+  - [BioContainers](https://biocontainers.pro/)
+  - [Docker Hub](https://hub.docker.com/)
+- This makes your analysis portable and reproducible across different systems.
+
+## Resources and recommended reads
+
+This guide is adapted and includes recommendations from:
+
+- https://www.commonwl.org/user_guide/topics/best-practices.html
+- https://www.commonwl.org/user_guide/topics/metadata-and-authorship.html
+- Wilkinson, S.R., Aloqalaa, M., Belhajjame, K. et al. Applying the FAIR Principles to computational workflows. Sci Data 12, 328 (2025). https://doi.org/10.1038/s41597-025-04451-9

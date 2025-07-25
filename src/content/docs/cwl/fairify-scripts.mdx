@@ -1,0 +1,562 @@
+---
+title: From Script to CWL
+lastUpdated: 2025-07-25
+authors:
+  - dominik-brilhaus
+sidebar:
+  hidden: true
+  badge:
+    variant: note
+    text: WIP
+---
+
+import { FileTree } from '@astrojs/starlight/components';
+import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem, Card } from '@astrojs/starlight/components';
+
+:::note
+This guide is work in progress.
+:::
+
+
+This starter’s guide to **FAIRifying script-based data analysis workflows** walks you through the initial steps to turn your existing script into a **reusable CWL workflow**. Whether you use Python, R, Bash, or another language the same logic applies.
+
+:::tip
+Check out the [Recommendations for FAIR Data Analysis](/nfdi4plants.knowledgebase/cwl/fair-data-analysis), which are applied here.
+:::
+
+
+## Refactor the script
+
+Look through your script and identify **what data it reads and what data it writes**. These are your `inputs` and `outputs`, for example:
+  
+  - Inputs: path to a FASTA file, a CSV file (e.g. `data.csv`)
+  - Outputs: path to where a result is written, e.g. a figure, a processed file, a table (`sorted.csv`)
+
+<Steps>
+  1. For easier overview and handling, move the input and output variables to its own section (e.g. on top of your script).
+  1. Replace any paths pointing outside the ARC
+  2. Replace **absolute** with **relative** paths
+</Steps>
+
+:::tip[Goal]
+Reusability – Collaborators receive the ARC and its contents and cannot access referenced data outside the ARC.
+:::
+
+## From interactive to reusable
+
+<Steps>
+  1. **Replace hard-coded paths** (pointing to your `inputs` and `outputs`) with command-line arguments.
+</Steps>
+
+
+<Card icon="pen" title="Example">
+
+Each script below reads a CSV file (`data.csv`), sorts it by the first column, and writes the result to `sorted.csv`.
+
+Change this...
+
+<Tabs syncKey="pl">
+
+<TabItem label="Python" icon='seti:python'>
+
+```python 
+import sys
+import pandas as pd
+
+data = pd.read_csv("data.csv")
+data_sorted = data.sort_values(by=data.columns[0])
+data_sorted.to_csv("sorted.csv", index=False)
+```
+
+</TabItem>
+
+<TabItem label="R" icon='seti:R'>
+
+```r 
+data <- read.csv("data.csv")
+data_sorted <- data[order(data[[1]]), ]
+write.csv(data_sorted, "sorted.csv", row.names=FALSE)
+```
+
+</TabItem>
+
+
+<TabItem label="Bash" icon='seti:shell'>
+
+```bash 
+#!/bin/bash
+
+(head -n 1 data.csv && tail -n +2 data.csv | sort) > sorted.csv
+```
+
+</TabItem>
+
+</Tabs>
+
+...to this:
+
+<Tabs syncKey="pl">
+
+<TabItem label="Python" icon='seti:python'>
+
+```python title="sort-csv.py"
+import sys
+import pandas as pd
+
+input_file = sys.argv[1]
+output_file = sys.argv[2]
+
+data = pd.read_csv(input_file)
+data_sorted = data.sort_values(by=data.columns[0])
+data_sorted.to_csv(output_file, index=False)
+```
+
+</TabItem>
+
+<TabItem label="R" icon='seti:R'>
+
+```r title="sort-csv.R"
+args <- commandArgs(trailingOnly=TRUE)
+input_file <- args[1]
+output_file <- args[2]
+
+data <- read.csv(input_file)
+data_sorted <- data[order(data[[1]]), ]
+write.csv(data_sorted, output_file, row.names=FALSE)
+```
+
+</TabItem>
+
+<TabItem label="Bash" icon='seti:shell'>
+
+```bash title="sort-csv.sh"
+#!/bin/bash
+input_file="$1"
+output_file="$2"
+
+(head -n 1 "$input_file" && tail -n +2 "$input_file" | sort) > "$output_file"
+```
+
+</TabItem>
+
+</Tabs>
+
+
+The script can then be run via
+
+<Tabs syncKey="pl">
+
+<TabItem label="Python" icon='seti:python'>
+
+```bash
+python sort-csv.py data.csv sorted.csv
+```
+
+</TabItem>
+
+<TabItem label="R" icon='seti:R'>
+
+```bash
+Rscript sort-csv.R data.csv sorted.csv
+```
+
+</TabItem>
+
+<TabItem label="Bash" icon='seti:shell'>
+
+```bash
+bash sort-csv.sh data.csv sorted.csv
+```
+
+</TabItem>
+
+</Tabs>
+
+</Card>
+
+:::tip[Goal]
+Reusability – This makes your script more **modular and reusable** on other data inputs.
+:::
+
+## Write a minimal workflow CWL descriptor
+
+Once the interactive script is converted into a generally executable script, it can be described with a CWL descriptor file, that wraps the script as a `CommandLineTool`.
+
+<Card icon="pen" title="Example">
+
+<Tabs syncKey="pl">
+
+  <TabItem label="Python" icon='seti:python'>
+
+    <Steps>
+    1. Create a file named `workflow.cwl`    
+
+        ```yaml title="workflow.cwl"
+        cwlVersion: v1.2
+        class: CommandLineTool
+        requirements:
+          - class: InitialWorkDirRequirement
+            listing:
+              - entryname: sort-csv.py
+                entry:
+                  $include: sort-csv.py
+        baseCommand: [python3, sort-csv.py]
+        inputs:
+          input_file:
+            type: File
+            inputBinding:
+              position: 1
+          output_filename:
+            type: string
+            inputBinding:
+              position: 2
+        outputs:
+          output_file:
+            type: File
+            outputBinding:
+              glob: $(inputs.output_filename)
+        ```
+
+        This basically runs `python3 sort-csv.py data.csv sorted.csv`.
+
+    2. Save it alongside the `sort-csv.py` script.
+    3. Store the workflow.cwl and script in an ARC's `workflows` folder
+
+       <FileTree>
+        - ...
+        - workflows
+          - sort-csv
+            - sort-csv.py
+            - workflow.cwl
+        - runs
+          - ...
+        - ...
+        </FileTree>
+    
+    </Steps>
+
+    </TabItem>
+
+    <TabItem label="R" icon='seti:R'>
+
+    <Steps>
+    1. Create a file named `workflow.cwl`
+
+        ```yaml title="workflow.cwl"
+        cwlVersion: v1.2
+        class: CommandLineTool
+        requirements:
+          - class: InitialWorkDirRequirement
+            listing:
+              - entryname: sort-csv.R
+                entry:
+                  $include: sort-csv.R
+        baseCommand: [Rscript, sort-csv.R]
+        inputs:
+          input_file:
+            type: File
+            inputBinding:
+              position: 1
+          output_filename:
+            type: string
+            inputBinding:
+              position: 2
+        outputs:
+          output_file:
+            type: File
+            outputBinding:
+              glob: $(inputs.output_filename)
+        ```
+
+        This basically runs `Rscript sort-csv.R data.csv sorted.csv`.
+
+    2. Save it alongside the `sort-csv.R` script.
+    3. Store the workflow.cwl and script in an ARC's `workflows` folder
+
+       <FileTree>
+        - ...
+        - workflows
+          - sort-csv
+            - sort-csv.R
+            - workflow.cwl
+        - runs
+          - ...
+        - ...
+        </FileTree>
+    
+    
+    </Steps>
+
+    </TabItem>
+
+    <TabItem label="Bash" icon='seti:shell'>
+
+    <Steps>
+
+    1. Create a file named `workflow.cwl`
+    
+        ```yaml title="workflow.cwl"
+        cwlVersion: v1.2
+        class: CommandLineTool
+        requirements:
+          - class: InitialWorkDirRequirement
+            listing:
+              - entryname: sort-csv.sh
+                entry:
+                  $include: sort-csv.sh
+        baseCommand: [bash, sort-csv.sh]
+        inputs:
+          input_file:
+            type: File
+            inputBinding:
+              position: 1
+          output_filename:
+            type: string
+            inputBinding:
+              position: 2
+        outputs:
+          output_file:
+            type: File
+            outputBinding:
+              glob: $(inputs.output_filename)
+        ```
+
+        This basically runs `bash sort-csv.sh data.csv sorted.csv`.
+
+    2. Save it alongside the `sort-csv.sh` script.
+    3. Store the workflow.cwl and script in an ARC's `workflows` folder
+
+       <FileTree>
+        - ...
+        - workflows
+          - sort-csv
+            - sort-csv.sh
+            - workflow.cwl
+        - runs
+          - ...
+        - ...
+        </FileTree>
+    </Steps>
+
+    </TabItem>
+
+</Tabs>
+
+</Card>
+
+:::tip[Goal]
+Interoperability – Together with the `workflow.cwl`, the script is now a "workflow". As such, it can become a step in a pipeline.
+:::
+
+## Add a minimal `Run`
+
+<Card icon="pen" title="Example">
+
+<Steps>
+
+  1. Create a `run.cwl` file that uses the `workflow.cwl`.
+
+      ```yaml title="run.cwl" { 10 }
+      cwlVersion: v1.2
+      class: Workflow
+
+      inputs:
+        input_file: File
+        output_filename: string
+
+      steps:
+        step1:
+          run: ../../workflows/sort-csv/workflow.cwl
+          in:
+            input_file: input_file
+            output_filename: output_filename
+          out: [output_file]
+
+      outputs:
+        output_file:
+          type: File
+          outputSource: step1/output_file
+      ```
+
+      :::note[Workflow reference]
+      the `../../workflows/sort-csv/workflow.cwl`
+      :::
+
+  2. Create a `run.yml` to provide the parameters required by the `run.cwl`:
+
+      ```yaml title="run.yml"
+      input_file:
+        class: File
+        path: data.csv
+      output_filename: sorted.csv
+      ```
+
+  3. Place both files in an ARC's `runs` folder
+
+      <FileTree>
+        - ...
+        - workflows
+          - sort-csv
+            - sort-csv.py / .R / .sh
+            - workflow.cwl
+        - runs
+          - sort-my-data-table
+            - **run.cwl**
+            - **run.yml**
+        - ...
+      </FileTree>
+      
+
+  </Steps>
+
+</Card>
+
+The workflow can now be executed with
+
+```bash
+cwltool run.cwl run.yml
+```
+
+:::tip[Goal]
+Interoperability – separate generic process from concrete data
+:::
+
+
+## Specify Required Tools, Packages and Environment
+
+Go back to your script and **list all external packages and tools it depends on**.
+
+Look for e.g.
+
+- Python packages (`pandas, version 1.5.3`, `numpy, version 1.23.0`)
+- R libraries (`ggplot2`)
+- Command-line tools (`samtools`, `awk`)
+
+In the `workflow.cwl` describing your script, such software dependencies and resource requirements can be specified under the sections `hints` (i.e. "soft requirements") or `requirements` (i.e. "hard requirements").
+
+- `SoftwareRequirement` allows to specify software version and reference
+  - `package:` the name of the software or package
+  - `version:` the name of the software or package
+  - `specs:` a reference URL for the software or package (e.g. from [bio.tools](https://bio.tools) or [SciCrunch](https://identifiers.org/rrid/))
+
+- `ResourceRequirement` allows to specify the required compute resources
+
+<Card icon="pen" title="Example">
+
+```yaml title="workflow.cwl"
+...
+hints:
+  SoftwareRequirement
+    packages:
+      - package: python
+        version: [3.10]
+      - package: pandas
+        version: [1.5.3]
+requirements:
+  ResourceRequirement
+    coresMin: 1
+    ramMin: 500
+...
+```
+
+</Card>
+
+:::tip[Goal]
+Reusability – This helps others reuse or reproduce your analysis precisely.
+:::
+
+## Add a container
+
+For full portability, specify a container with all dependencies.
+Use the `DockerRequirement` to load a published Docker image or reference a local `Dockerfile`.
+
+<Card icon="pen" title="Example">
+
+Load a public image
+
+```yaml title="workflow.cwl"
+...
+requirements:
+  - class: DockerRequirement
+    dockerPull: python:3.10-slim
+...
+```
+
+</Card>
+
+<Card icon="pen" title="Example">
+
+If you cannot find a suitable container matching your dependencies, you can also design a `Dockerfile`. 
+
+<Steps>
+
+1. Create your own `Dockerfile`
+
+    ```dockerfile title="Dockerfile"
+    FROM python:3.10-slim
+    RUN pip install pandas==1.5.3
+    ```
+
+2. Load the `Dockerfile` in `workflow.cwl`
+
+    ```yaml title="workflow.cwl"
+    ...
+    hints:
+      DockerRequirement:
+        dockerImageId: "mydocker"
+        dockerFile: {$include: "Dockerfile"}
+    ...
+    ```
+
+</Steps>
+
+</Card>
+
+:::tip[Goal]
+Reusability – makes your data analysis workflow portable and reusable
+:::
+
+
+## Namespaces and schemas
+
+Adding namespaces and schemas allows to reuse them elsewhere in a CWL document
+
+<Card icon="pen" title="Example">
+
+```yaml title="workflow.cwl"
+...
+$namespaces:
+  s: https://schema.org/
+  edam: http://edamontology.org/
+
+$schemas:
+  - https://schema.org/version/latest/schemaorg-current-https.rdf
+  - http://edamontology.org/EDAM_1.18.owl
+...
+```
+
+</Card>
+
+
+## Attribute authors and contributors
+
+<Card icon="pen" title="Example">
+
+```yaml title="workflow.cwl"
+...
+s:author:
+  - class: s:Person
+    s:identifier: <author ORCID>
+    s:email: mailto:<author email>
+    s:name: <author name>
+
+s:contributor:
+  - class: s:Person
+    s:identifier: <contributor ORCID>
+    s:email: mailto:<contributor email>
+    s:name: <contributor name>
+...
+```
+
+</Card>
