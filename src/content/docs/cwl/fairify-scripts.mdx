@@ -1,14 +1,23 @@
 ---
 title: From Script to CWL
-lastUpdated: 2025-07-10
+lastUpdated: 2025-07-25
 authors:
   - dominik-brilhaus
+sidebar:
+  hidden: true
+  badge:
+    variant: note
+    text: WIP
 ---
 
 import { FileTree } from '@astrojs/starlight/components';
 import { Steps } from '@astrojs/starlight/components';
 import { Tabs, TabItem, Card } from '@astrojs/starlight/components';
-import Mermaid from '@components/mdx/Mermaid.astro'
+
+:::note
+This guide is work in progress.
+:::
+
 
 This starter’s guide to **FAIRifying script-based data analysis workflows** walks you through the initial steps to turn your existing script into a **reusable CWL workflow**. Whether you use Python, R, Bash, or another language the same logic applies.
 
@@ -16,12 +25,6 @@ This starter’s guide to **FAIRifying script-based data analysis workflows** wa
 Check out the [Recommendations for FAIR Data Analysis](/nfdi4plants.knowledgebase/cwl/fair-data-analysis), which are applied here.
 :::
 
-
-{/* TODOs
-
-  - devcontainsers
-
-*/}
 
 ## Refactor the script
 
@@ -420,70 +423,48 @@ Interoperability – separate generic process from concrete data
 :::
 
 
-## Identify Required Tools and Packages
+## Specify Required Tools, Packages and Environment
 
 Go back to your script and **list all external packages and tools it depends on**.
 
 Look for e.g.
 
-- Python packages (`pandas`, `numpy`)
+- Python packages (`pandas, version 1.5.3`, `numpy, version 1.23.0`)
 - R libraries (`ggplot2`)
 - Command-line tools (`samtools`, `awk`)
 
-:::tip[Goal]
-- Reuse
-- Find
-- Access 
-:::
+In the `workflow.cwl` describing your script, such software dependencies and resource requirements can be specified under the sections `hints` (i.e. "soft requirements") or `requirements` (i.e. "hard requirements").
 
-## Collect Metadata About Dependencies
+- `SoftwareRequirement` allows to specify software version and reference
+  - `package:` the name of the software or package
+  - `version:` the name of the software or package
+  - `specs:` a reference URL for the software or package (e.g. from [bio.tools](https://bio.tools) or [SciCrunch](https://identifiers.org/rrid/))
 
-Record:
-- **Exact package names**
-- **Versions**
-
-- pandas, version 1.5.3
-- numpy, version 1.23.0
-
-:::tip[Goal]
-Reusability – This helps others reproduce your analysis precisely.
-:::
-
-## Add dependencies to `hints` and `requirements`
-
-In `workflow.cwl`, add a `SoftwareRequirement`
-
-- Soft requirements = `hints`
-
-Specify software and resource requirements under `hints`
-
-- add `SoftwareRequirement` to specify software version and reference
-  - `package: ` name of the software or package
-  - `specs: ` reference url from https://identifiers.org/biotools/ or SciCrunch https://identifiers.org/rrid/
-  - `version: [ "0.11.9" ]`
-
-- add `ResourceRequirement` to specify the required compute resources
-
-
-- Hard requirements = `requirements`
-
-Use the `requirements` primarily to specify hard requirements needed to run the current `CommandLineTool` or `Workflow` document
+- `ResourceRequirement` allows to specify the required compute resources
 
 <Card icon="pen" title="Example">
 
 ```yaml title="workflow.cwl"
 ...
 hints:
-  - class: SoftwareRequirement
+  SoftwareRequirement
     packages:
       - package: python
         version: [3.10]
       - package: pandas
         version: [1.5.3]
+requirements:
+  ResourceRequirement
+    coresMin: 1
+    ramMin: 500
 ...
 ```
 
 </Card>
+
+:::tip[Goal]
+Reusability – This helps others reuse or reproduce your analysis precisely.
+:::
 
 ## Add a container
 
@@ -501,15 +482,6 @@ requirements:
     dockerPull: python:3.10-slim
 ...
 ```
-
-:::note[Public containers]
-
-- dockerhub
-- biocontainers
-- mutli-containers
-
-:::
-
 
 </Card>
 
@@ -546,9 +518,7 @@ Reusability – makes your data analysis workflow portable and reusable
 :::
 
 
-## Metadata
-
-### Namespaces and schemas
+## Namespaces and schemas
 
 Adding namespaces and schemas allows to reuse them elsewhere in a CWL document
 
@@ -569,8 +539,7 @@ $schemas:
 </Card>
 
 
-### Attribute authors and contributors
-
+## Attribute authors and contributors
 
 <Card icon="pen" title="Example">
 
@@ -591,17 +560,3 @@ s:contributor:
 ```
 
 </Card>
-
-
-## Resources
-
-This guide is adapted and includes recommendations from:
-
-- https://www.commonwl.org/user_guide/topics/best-practices.html
-- https://www.commonwl.org/user_guide/topics/metadata-and-authorship.html
-
-
-### Recommended reads
-
-- Wilkinson, S.R., Aloqalaa, M., Belhajjame, K. et al. Applying the FAIR Principles to computational workflows. Sci Data 12, 328 (2025). https://doi.org/10.1038/s41597-025-04451-9
-
