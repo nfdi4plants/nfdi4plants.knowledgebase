@@ -1,0 +1,78 @@
+---
+title: "ISA (Investigation – Study – Assay)"
+lastUpdated: 2024-12-10
+authors:
+  - lukas-weil
+sidebar:
+  order: 4.0  
+---
+
+
+import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+
+At the top level of the ISA portion of the data model is the `ArcInvestigation` class. 
+It contains organizational metadata like `Persons` and `Publications` as well as the experimental metadata in the major datasets `ArcStudies` and `ArcAssays`.
+
+![](@images/arctrl/isa-datamodel.svg)
+
+## Setting up basic Investigation
+
+<Tabs syncKey="pl">
+
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:'>
+```fsharp
+open ARCtrl
+
+let inv = ArcInvestigation("MyInvestigation", title = "My Investigation", description = "My Investigation Description")
+
+let study = inv.InitStudy("MyStudy")
+
+let lukas = Person(firstName = "Heinrich", lastName = "Weil", midInitials = "L")
+
+study.Contacts.Add(lukas)
+
+study.InitTable("Growth")
+```
+</TabItem>
+
+
+
+{/* JAVASCRIPT */}
+<TabItem label="JavaScript" icon='seti:javascript'>
+```js
+import {ArcInvestigation, Person} from "@nfdi4plants/arctrl";
+
+let inv = new ArcInvestigation("MyInvestigation", "My Investigation", "My Investigation Description")
+
+let study = inv.InitStudy("MyStudy")
+
+let lukas = new Person(undefined, "Weil", "Heinrich", "L")
+
+study.Contacts.push(lukas)
+
+study.InitTable("Growth")
+```
+</TabItem>
+
+
+{/* PYTHON */}
+<TabItem label="Python" icon='seti:python'>
+```py
+from arctrl.arctrl import ArcInvestigation, ArcStudy, Person
+
+inv = ArcInvestigation("MyInvestigation", title = "My Investigation", description = "My Investigation Description")
+
+study = inv.InitStudy("MyStudy")
+
+lukas = Person(first_name = "Heinrich", last_name = "Weil", mid_initials = "L")
+
+study.Contacts.append(lukas)
+
+study.InitTable("Growth")
+```
+
+</TabItem>
+</Tabs>

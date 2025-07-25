@@ -1,0 +1,35 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/Footer.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getEntries } from 'astro:content';
+import AuthorCard from '@components/AuthorCard.astro';
+
+// Resolve an array of references
+const authors: CollectionEntry<'authors'>[] = Astro.props.entry.data.authors ? await getEntries(Astro.props.entry.data.authors) : [];
+---
+
+<footer class="flex gap-4 flex-col">
+  <Default {...Astro.props}>
+    <slot />
+  </Default>
+  {
+    authors.length > 0 &&
+      <div>
+        <p class="text-lg text">
+          Authors
+        </p>
+        <div class="flex flex-col gap-2 md:gap-4">
+          {authors.map((author) => (
+            <AuthorCard author={author} />
+          ))}
+        </div>
+      </div>
+  }
+</footer>
+
+<style>
+  .text {
+    color: var(--sl-color-gray-3);
+  }
+</style>

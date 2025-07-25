@@ -1,1 +1,0 @@
-import * as DataPLANT from "@nfdi4plants/web-components";

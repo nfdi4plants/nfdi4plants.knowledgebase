@@ -1,0 +1,43 @@
+---
+title: External Data
+lastUpdated: 2023-07-07
+authors:
+  - dominik-brilhaus
+---
+
+Research projects rarely start out of the blue. Most projects build on previous findings and published or unpublished datasets.
+In this guide we recommend routines to properly add data from external sources to your ARC.
+
+## Add a study to store and describe the external data
+
+To properly re-use and reference such a dataset, we recommend to add a `study` to your ARC. Every study by default comes with four parts:
+
+import { FileTree } from '@astrojs/starlight/components';
+
+<FileTree>
+- studies
+  - \<study_name\>
+    - resources
+      - ...
+    - protocols
+      - ... 
+    - isa.study.xlsx
+    - isa.datamap.xlsx
+  - ...
+- ...
+...
+</FileTree>
+
+- In the `resources` directory you can add the data (e.g. supplemental data files)
+- In the `protocols` directory you can add notes on how you retrieved the data and from where.
+- Add publication details to the study metadata
+- Contextualize the data (stored in `resources`) via a `datamap`
+
+
+:::tip
+As with any other routine used by researchers to share scientific results and data, the responsibility to acknowledge scientific integrity, follow guidelines of good scientific practice, institutional guidelines for data handling, and respective laws for licensing, and &ndash; if applicable  &ndash; to properly reference or cite the data source lies with the individual researcher.
+:::
+
+:::tip
+You can add datasets to the [.gitignore](/nfdi4plants.knowledgebase/git/git-gitignore) file, if you are unsure about the conditions to reuse data from an external source. 
+:::

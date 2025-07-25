@@ -1,0 +1,61 @@
+---
+title: Getting Started
+authors:
+  - kevin-frey
+  - dominik-brilhaus
+lastUpdated: 2025-06-17
+sidebar:
+  order: 0
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+
+Welcome to the **Getting Started** guide to create your own ARC!
+
+ARCs are structured data containers, so-called FAIR Digital Objects. ARCs help you organize your research data in a standardized way. They are based on existing standards, unifying machine and human readability!
+
+import ARCbag from "@images/start-here/arc-bag.svg"
+
+<img src={ARCbag.src} style="width:75%; display: block" />
+
+## About this guide
+
+Starting out with ARCs can be a bit overwhelming. Don't worry, we are here to help you with the first steps! This guide walks you through the process of creating your first ARC, adding data to it, and sharing it with collaborators. It is designed as a **self-paced tutorial** with a minimal demo dataset and often serves as the basis for workshops held by our data stewards (→ checkout DataPLANT [events](https://nfdi4plants.org/events/) or [support](https://nfdi4plants.org/support/)).
+
+Together we will follow a fictional researcher **Viola** on her journey to create her first ARC. Viola is a plant scientist and has heard about ARCs and wants to give them a try.
+
+<ViolaSays>
+I recently attended a conference where my project partner introduced me to the Annotated Research Context (ARC). Coming back to lab I was eager to set up my first ARC. However, I only remembered the basic ARC structure and something about some ISA metadata?! 😕
+
+:::tip[Come along!]
+Follow me on my journey to create my first ARC!
+:::
+
+</ViolaSays>
+
+
+
+
+
+## Viola's PhD Project
+
+![](@images/start-here/arc-prototypic.svg)
+
+<ViolaSays>
+
+For my PhD I investigate the effect of cold stress on sugar metabolism in *A. thaliana*. I grew the plants under ambient (25 °C) and cold stress (6 °C) conditions, harvested leaves from a two-day time series experiment, extracted proteins and soluble sugars. I submitted the protein samples to a nearby core facility for proteomics. After a few weeks of iterative consultation with the facility head as well as technicians and computational biologists, I received back a wealth of raw and processed data. The extracted sugars I measured myself via a plate reader assay. From the data I produced figures using a mix of code and statistical software. Now I want to wrap everything up to publish the results in the *Journal of Wonderful Plant Sciences*.
+
+</ViolaSays>
+
+
+## Demo data
+
+To follow along this guide:
+
+  <Steps>
+  1. Please download <a href="/nfdi4plants.knowledgebase/Violas-PhD-Project.zip">this unstructured demo dataset</a>
+  2. Unzip the folder `Violas-PhD-Project.zip` and store it somewhere ready for the next steps
+  </Steps>
+

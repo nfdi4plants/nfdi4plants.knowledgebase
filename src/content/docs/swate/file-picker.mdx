@@ -1,0 +1,40 @@
+---
+title: File Picker
+lastUpdated: 2024-04-26
+authors: 
+  - kevin-frey
+  - stella-eggels
+  - patrick-blume
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+You might want to add file names to a column, "Input" or "Output". Since typing them in name by name could get quite tedious, you can copy the file names with the file picker instead. For this, click on the 'File Picker' tab in the sidebar and select "Pick file names". The file names will appear in the sidebar and you can modify their order. Once your files are listed in the correct order, click on "Insert File Names" to directly paste their names into the selected column. 
+
+{/* reduce size of all images on this page */}
+<style>
+{`
+  img {
+    max-height: 400px !important; 
+    width: auto
+  }
+`}
+</style>
+
+
+<Tabs syncKey="swateHost">
+<TabItem label="Browser">
+
+
+![](@images/swate/swate-alpha-filepicker.png)
+
+
+</TabItem>
+<TabItem label="Excel">
+
+
+![](@images/swate/swate-excel-filepicker.png)
+
+
+</TabItem>
+</Tabs>

@@ -1,0 +1,32 @@
+import { FileTree } from '@astrojs/starlight/components';
+
+<FileTree>
+- **studies**
+  - \<study_name\>
+    - resources
+    - protocols [optional / add. payload]
+    - isa.study.xlsx
+    - isa.datamap.xlsx [optional]
+  - ...
+- **assays**
+  - \<assay_name\>
+    - dataset
+    - protocols [optional / add. payload]
+    - isa.assay.xlsx
+    - isa.datamap.xlsx [optional]
+  - ...
+- **workflows**
+  - \<workflow_name\>
+    - docker-compose.yml [optional / add. payload]
+    - workflow.cwl
+  - ...
+- **runs**
+  - \<run_name\>
+    - [files;...] (different output files) 
+    - run.cwl
+    - run.yml [optional]
+  - ...
+- arc.cwl [optional]
+- arc.yml [optional] 
+- isa.investigation.xlsx
+</FileTree>

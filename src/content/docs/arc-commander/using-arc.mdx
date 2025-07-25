@@ -1,0 +1,43 @@
+---
+title: Using the ARC Commander
+lastUpdated: 2023-06-14
+sidebar:
+  order: 4
+---
+
+- For most steps in this manual and in the [ARC Commander QuickStart](/nfdi4plants.knowledgebase/arc-commander/arc-commander-quick-start), it is assumed, that you opened a [shell or command prompt](/nfdi4plants.knowledgebase/fundamentals/tutorial-command-line) within a directory you want to initiate as an ARC
+- In the shell, `arc` defines the path to the ARC Commander executable (e.g. on Windows "C:\Users\userA\programs\ArcCommander\arc.exe").
+- Note that each input that contains non-literal characters must be encapsulated in "quotation marks" when entered within the shell. This also applies when using the editor for numerals that are no numbers (dates, phone numbers, etc.).
+
+## Different Routes to add Metadata
+
+Using the ARC commander, most metadata information (e.g. the title or identifier of your investigation) can theoretically be entered solely by using the shell.
+
+For instance, the following command would create an investigation with the identifier `MyInv001` and title `My Investigation 001`:
+
+```bash
+arc investigation create --identifier "MyInv001" --title "My Investigation 001"
+``` 
+
+If no arguments are supplied, a text editor may pop up asking you for suitable metadata values. 
+For instance, the command 
+
+```bash
+arc investigation create
+```
+
+will open a text editor and (amongst other metadata keys) allow you to enter
+
+
+```yaml
+Identifier:
+
+#A concise name given to the investigation
+Title:
+
+#A textual description of the investigation
+Description:
+```
+
+After entering the required values, you can save and close the editor.
+

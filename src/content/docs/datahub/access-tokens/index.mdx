@@ -1,0 +1,114 @@
+---
+title: Access tokens
+lastUpdated: 2025-06-06
+authors:
+  - dominik-brilhaus
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+Access tokens provide flexible and secure ways to interact with the DataHUB, including synchronization of ARCs from local computers or servers.
+In most scenarios, users do not have to create access tokens themselves, since [ARCitect](/nfdi4plants.knowledgebase/arcitect) and [ARC Commander](/nfdi4plants.knowledgebase/arc-commander) take care of this.
+
+
+## When to use access tokens
+
+1. **Upload of very large data or large amounts of data**. The default access tokens used by ARCitect and ARC Commander expire after two hours. For data uploads that take longer than two hours, users need an access token.
+2. **ARCs stored on a (shared) server**. When collecting many ARCs with different scopes on a central server and accessing these ARCs from different machines (office desktop, workstation, laptop), it may be easier to handle the synchronization rights between that server and the DataHUB via tokens. This is a common scenario in core facilities. In this case, we recommend to use **group** or **project** access tokens during ARC synchronization to be independent of the current user working on the ARC (via ARCitect or ARC Commander).
+3. See other advanced examples [here](/nfdi4plants.knowledgebase/git/git-troubleshooting#use-of-tokens).
+
+## How to use access tokens
+
+- **ARCitect**: Open the `DataHUB Sync` panel and follow the help menu (activated in "Settings").
+- **ARC Commander**: Follow [this guide](/nfdi4plants.knowledgebase/arc-commander/setup/access#store-a-configurable-datahub-access-token-for-your-project).
+
+## Token overview
+
+| **Token Type**                  | **Scope of access**                            | **Generation**                    
+| ------------------------------- | ---------------------------------------------- | ----------------------------------
+| **Personal Access Token (PAT)** | User-level (All ARCs of one user)              | Generated in user profile settings
+| **Group Access Token**          | Group-level (All ARCs within one group)        | Generated in group settings       
+| **Project Access Token**        | Project-level access (One specific ARC)        | Generated in ARC settings         
+
+:::tip[Project = ARC]
+In the DataHUB, ARCs are called "projects".
+:::
+
+:::tip[Group = User group]
+In the DataHUB, a group is a group of users (e.g. a research group)
+:::
+
+
+## Token information
+
+When [creating a new access token](#creating-an-access-token), users are asked to adapt or fill out some information summarized here.
+
+### Token name
+
+Choose a descriptive name. This helps to track its usage and identify it later, especially if multiple tokens are created.
+This could for instance be the computer ("Office Desktop") or Application ("ARCitect Office Desktop") where the token is used.
+
+### Token description (optional)
+
+You can add a more detailed description about the token's purpose for easier identification.
+
+### Expiration date
+
+All tokens support expiration, allowing you to set a time limit on their validity. This is essential for maintaining security and reducing the risk of token misuse over time. The token expiration defaults to one month in the future. You can adapt or remove the expiration date, e.g. to allow only temporary or long-time access.
+
+### Role
+
+You can assign a role for the access tokens (only group and project tokens).
+
+:::tip
+Learn more about [roles and permissions](/nfdi4plants.knowledgebase/datahub/working-together/#roles-and-permissions).
+:::
+
+:::note
+Users cannot assign a role for personal access tokens. A personal access token always has the role the user has in a specific ARC or group.
+:::
+
+### Scopes
+
+Together with the role, the scopes define what actions the token can perform. Common scopes include:
+
+  - api: Full access to all features
+  - read_repository: Read access to repositories
+  - write_repository: Write access to repositories
+
+Each token type may have different available scopes based on its level (user, group, project).
+
+## Creating an access token
+
+import ProjectAT from 'datahub-project-access-token.mdx'
+import GroupAT from 'datahub-group-access-token.mdx'
+import PersonalAT from 'datahub-personal-access-token.mdx'
+
+<Tabs syncKey="os">
+  <TabItem label="Project Access Token">
+    <ProjectAT />
+  </TabItem>
+  <TabItem label="Group Access Token">
+    <GroupAT />
+  </TabItem>
+  <TabItem label="Personal Access Token (PAT)">
+    <PersonalAT />
+  </TabItem>
+</Tabs>
+
+
+## Security & Revoking access tokens
+
+Depending on the chosen type (user, group, project) of token as well as its role and scope, an access token grants access to varying degrees to one or multiple ARCs. 
+
+:::caution
+Treat tokens like passwords – keep them secure and regularly rotate or revoke them if no longer needed.
+We recommend not to "save" your token anywhere in a file, especially not inside files of your ARC (e.g. the `README`).
+Instead, use the token directly in the desired application (e.g. in ARCitect). You can easily generate a new token, if needed.
+:::
+
+:::tip[List, revoke, rotate tokens]
+You can see a list of access tokens generated for user, group or project in the respective access token settings (see section [creating a new access token](#creating-an-access-token) above).
+Besides the token name, description and scopes, the overview shows you when a token was created and last used and when it expires. 
+There you can also revoke (i.e. "delete") access tokens.
+:::

@@ -1,0 +1,100 @@
+---
+title: Using ARCs with Galaxy
+lastUpdated: 2024-01-23
+authors:
+  - julian-weidhase
+  - dominik-brilhaus
+---
+
+import { Steps } from '@astrojs/starlight/components';
+
+Galaxy is an online platform that allows you to easily analyze data in your ARCs with established bioinformatics tools and pipelines. 
+
+In this guide we introduce how to access ARCs from within Galaxy. To access the data of an ARC, you must first provide a DataHUB access token in Galaxy, which is used to authenticate Galaxy to DataHUB. To create a new token and add it to [Galaxy](https://usegalaxy.eu/), you can proceed as described below.
+
+:::note[DataPLANT login to Galaxy]
+You can use your DataPANT account on the Galaxy instances https://usegalaxy.eu/ and https://plants.usegalaxy.eu/.
+:::
+
+## Create an access token in DataHUB
+
+import DataHubPat from '../datahub/access-tokens/datahub-personal-access-token.mdx'
+
+<DataHubPat />
+
+:::tip
+Only the scopes "api" (for write access) and "read_api" (for read access) are relevant for Galaxy.
+:::
+
+:::caution
+After you created the token, you can copy and view it. After you leave the site, you will **not** be able to do so again.
+:::
+
+## Add the token to Galaxy
+
+![image](@images/guides/arcfs/arcfs-kb-03-blurred-marked.png)
+![image](@images/guides/arcfs/arcfs-kb-06-blurred-marked.png)
+![image](@images/guides/arcfs/arcfs-kb-07-blurred-marked-cut.png)
+![image](@images/guides/arcfs/arcfs-kb-08-cut-marked.png)
+
+<Steps>
+
+1. Visit [usegalaxy.eu](https://usegalaxy.eu/) and log in or create an account. It is possible to log in using your DataPlant account.
+2. Open the "User" drop down menu and
+3. select "Preferences".
+4. In the user preference settings, select "Manage Information".
+5. Copy your token into the "API read access token" field. This filed is located at the bottom of the "User preferences" menu. Click "Save" to adopt your changes.
+
+</Steps>
+
+:::tip
+Despite the name "API **read** access token", tokens with write access rights (like those with the scope "api") will also work or, respectively, are required.
+:::
+
+## Data import
+
+With the token available to Galaxy, you are now able to import data. You can do this as described below.
+
+![image](@images/guides/arcfs/arcfs-kb-09-marked.png)
+![image](@images/guides/arcfs/arcfs-kb-10-11-marked.png)
+![image](@images/guides/arcfs/arcfs-kb-12-13-marked.png)
+![image](@images/guides/arcfs/arcfs-kb-14-15-marked.png)
+
+<Steps>
+
+1. Click on the "Upload Data".
+2. Pick "Choose remote files".
+3. Scroll down and select "DataPLANT DataHub ARCs".
+4. Explore ARCs or search for a specific one.
+   
+   :::note
+   If you receive an `Internal Server Error` during this step, your access token may have expired. Please follow the steps above to renew the access token and add it to your Galaxy Account.
+   :::
+
+6. Inside an ARC, choose the file you want to import to Galaxy. Confirm with "Ok".
+7. Click start to begin the import process to Galaxy. This may take some time, depending
+   on the workload on the Galaxy server and the size of your file.
+
+</Steps>
+
+## Data export
+
+It is also possible to export datasets back to an ARC. You can do this as described below.
+
+![image](@images/guides/arcfs/arcfs-kb-16-17-marked.png)
+![image](@images/guides/arcfs/arcfs-kb-18-19-marked.png)
+![image](@images/guides/arcfs/arcfs-kb-20-21-marked-1.png)
+
+<Steps>
+
+1. On the left sidebar, open the menu "Send Data".
+2. Select "Export datasets" to remote files source.
+3. In the opening menu, select "DataPLANT DataHUB ARCs".
+4. Select or
+5. search for an ARC.
+6. Chose a directory inside an ARC where your dataset should be stored.
+7. Choose the dataset you want to export,
+8. Clock on "Run Tool" to start the export process. This may take some time, depending
+   on the workload on the Galaxy server and the size of your file.
+
+</Steps>

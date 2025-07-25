@@ -1,0 +1,36 @@
+---
+title: Commits
+lastUpdated: 2024-10-31
+authors:
+  - dominik-brilhaus
+---
+
+import { Steps } from '@astrojs/starlight/components';
+
+All commit messages added to your ARC via [ARCitect](/nfdi4plants.knowledgebase/arcitect) or [ARC Commander](/nfdi4plants.knowledgebase/arc-commander) are available in the DataHUB.
+
+<Steps>
+
+1. Open your ARC in the [DataHUB](https://git.nfdi4plants.org/) 
+2. In the sidebar on the left, navigate to `Repository` &rarr; `Commits`. 
+3. There you find a chronological list of syncing messages together with who synced (if you collaborate with others on an ARC) and when.
+
+    ![](@images/datahub/datahub-commits.png)
+
+</Steps>
+
+## Undo latest changes
+
+<Steps>
+
+4. Click on the latest (i.e. uppermost) commit.
+5. In the top-right corner select `Revert` from the drop-down menu `Options`. 
+
+    ![](@images/datahub/datahub-commits-revert01.png)
+
+6. Un-check the box "Start a new merge request with these changes".
+7. Click "Revert"
+
+    ![](@images/datahub/datahub-commits-revert02.png)
+
+</Steps>

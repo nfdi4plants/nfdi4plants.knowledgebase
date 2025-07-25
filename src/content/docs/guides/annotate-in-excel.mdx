@@ -1,0 +1,76 @@
+---
+title: Annotate in Excel
+authors:
+  - kevin-frey
+  - patrick-blume
+sidebar:
+  order: 1
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import DownloadLink from '../../../components/scripts/DownloadLink.tsx?client:load'
+
+
+With the help of an [Excel-Add-In](https://learn.microsoft.com/de-de/office/dev/add-ins/excel/excel-add-ins-overview) you can manage your data, utilizing the [ARC](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/core-concepts/arc/) standard, directly in excel, without the necessity to upload it anywhere. 
+The functionality the excel-add-in provides are similar to [Swate](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/swate/) and the differences will be explained in the different sections of swate.
+The excel-add-in will soon be published in the official [Microsoft Excel-Add-Ins Store](https://appsource.microsoft.com/en-us/marketplace/apps?product=excel).
+
+## Installation
+Currently, we recommend the installation using the [excel-browser version provided by microsoft](https://excel.cloud.microsoft/?wdOrigin=MARKETING.FREE.GO-TO-EXCEL) because the set up is much easier than with a local excel version.
+
+<Tabs syncKey="swateHost">
+<TabItem label="Excel Browser">
+
+<Steps>
+
+1. 
+    <div>
+        <DownloadLink client:load href="https://raw.githubusercontent.com/nfdi4plants/Swate/refs/heads/main/build/manifest.production.xml" filename="manifest.production.xml">
+            Download the Swate Manifest File
+        </DownloadLink>
+    </div>
+    :::tip
+    Right-click this link and depending on your Browser select e.g. "Save Link as" or "Download Linked File" to download the file called `manifest.production.xml`
+    :::
+2. Upload the manifest file to Excel, by clicking on the Add-Ins button (a) in the start tab of Excel.
+3. Click on the Additional Add-Ins button in the expanded widget
+
+    ![Swate Excel Brwoser Installation Step 1](@images/swate/swate-browser-excel-add-in-basic.png)
+
+4. In the next step you select My Add-Ins (a) and Upload My Add-In.
+
+    ![Swate Excel Brwoser Installation Step 2](@images/swate/swate-browser-excel-add-in-additional-ones.png)
+
+5. Select the folder where you have downloaded the Manifest File to and select it, in order to upload it.
+6. When the installation was successful, the icon of [Swate](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/swate/) should be available in the data tab.
+7. Once you click on the icon, the Swate sidebar should appear. Its size is adaptable and once big enough, the quick icons of the navbar are visible.
+8. When everything was successful, it should look similar to this:
+
+</Steps>
+
+</TabItem>
+<TabItem label="Excel Desktop">
+
+<Steps>
+
+1. 
+    <div>
+        <DownloadLink client:load href="https://raw.githubusercontent.com/nfdi4plants/Swate/refs/heads/main/build/manifest.production.xml" filename="manifest.production.xml">
+            Download the Swate Manifest File
+        </DownloadLink>
+    </div>
+    :::tip
+    Right-click this link and depending on your Browser select e.g. "Save Link as" or "Download Linked File" to download the file called `manifest.production.xml`
+    :::
+1. Follow the Microsoft official documentation for sideloading add ins [Excel-Add-Ins](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/test-debug-office-add-ins#sideload-an-office-add-in-for-testing).
+2. When the installation was successful, the icon of [Swate](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/swate/) should be available in the data tab.
+3. When you click on the icon, the Swate sidebar should appear. Its size is adaptable and once big enough, the quick icons of the navbar are visible.
+4. When everything was successful, it should look similar to this:
+
+</Steps>
+
+</TabItem>
+</Tabs>
+
+![Swate Sidebar Overview](@images/swate/swate-excel-overview.png)

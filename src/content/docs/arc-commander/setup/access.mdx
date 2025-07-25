@@ -1,0 +1,68 @@
+---
+title: DataHUB access
+lastUpdated: 2024-01-25
+author:
+- dominik-brilhaus
+- david-zimmer
+- martin-kuhl
+sidebar:
+  order: 3
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import ProjectToken from '../../datahub/access-tokens/datahub-project-access-token.mdx'
+
+The [DataHUB](<https://git.nfdi4plants.org>) allows you to share your ARCs with registered lab or project partners. After [registration](<https://register.nfdi4plants.org>), you need to setup the ARC Commander for smooth ARC synchronization between your computer and the DataHUB.
+
+:::tip
+This needs to be done only once per computer.
+:::
+
+## Enable Git to store credentials on your computer
+
+
+import GitCredentials from '../../git/git-credentials.mdx'
+
+<GitCredentials />
+
+
+## Receive and store a DataHUB access token
+
+```bash
+arc remote accesstoken get -s https://git.nfdi4plants.org
+```
+
+A browser window will open asking for your DataPLANT login. After login you are asked to authorize your computer to communicate with the DataHUB.
+In case you are already logged in, the browser will directly display a plain `Success` message to you.
+
+:::tip
+This authenticates your computer to communicate with your personal DataHUB account
+:::
+
+:::tip
+After two hours you have to repeat this process as this token will expire. Have a look at the next section to learn how to create a longer lasting token (e.g. for large data uploads).
+:::
+
+## Store a configurable DataHUB access token for your project
+
+Access tokens created with the ARCommander expire after two hours. To create a longer-lasting access token for your project, follow these steps:
+
+<Steps>
+
+1. 
+    <details>
+      <summary>Create a project access token</summary>
+
+      <ProjectToken />
+
+    </details>
+
+2. Store the token in your local ARC
+
+    ```bash
+    arc remoteaccess accesstoken store --token <replaceWithYourToken>
+    ```
+
+</Steps>
+
+Once set up, you will not need to authenticate yourself (e.g., by manually retrieving a token through 'arc remote token get') until the token expires. When switching to another machine you have to repeat the process.

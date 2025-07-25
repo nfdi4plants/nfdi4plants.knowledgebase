@@ -1,0 +1,70 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import {Image} from 'astro:assets';
+import { Icon } from 'astro-icon/components'
+
+interface Props {
+  author: CollectionEntry<'authors'>;
+}
+
+const {author} = Astro.props;
+---
+
+<div class="starlightBorder">
+  <div class="flex flex-col md:flex-row gap-2 md:gap-6">
+    <div class="flex items-center gap-3">
+      {
+        author.data.image ? (
+          <Image
+            height={48}
+            width={48}
+            src={author.data.image}
+            alt="Avatar Tailwind CSS Component" 
+            class="rounded" />
+        ) : (
+          <div class="rounded defaultColor">
+            <div class="h-12 w-12 flex items-center justify-center" class:list={[author.data.styling?.background, author.data.styling?.color]}>
+              { author.data.styling?.text ? author.data.styling.text : author.data.name.slice(0,3).toUpperCase()}
+            </div>
+          </div>
+        )
+      }
+      <div>
+        <div class="font-bold">{author.data.name}</div>
+        <div class="text-sm opacity-50">{author.data.affiliation}</div>
+      </div>
+    </div>
+    {
+      author.data.socials && author.data.socials.length > 0 &&
+        <div class="flex grow items-center gap-2">
+            {
+              author.data.socials.map((social: any) => (
+                <a href={social.href} target="_blank" class="w-7 h-7">
+                  <Icon name={social.icon} class="w-7 h-7 simpleIcons" title={social.icon.split(":")[1]}/>
+                </a>
+              ))
+            }
+        </div>
+    }
+  </div>
+</div>
+
+<style>
+.defaultColor {
+  font-weight: 600;
+  color: var(--sl-color-text-invert);
+  background-color: var(--sl-color-text-accent);
+}
+
+.simpleIcons {
+  color: var(--sl-color-text)
+}
+
+.starlightBorder {
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: var(--sl-color-gray-2);
+}
+
+</style>

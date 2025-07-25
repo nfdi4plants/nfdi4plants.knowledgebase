@@ -1,0 +1,76 @@
+---
+title: Working together
+authors: 
+    - dominik-brilhaus
+lastUpdated: 2023-06-14
+sidebar:
+  order: 5
+---
+
+import { Steps } from '@astrojs/starlight/components';
+
+## Options to share an ARC via the DataHUB
+
+To suit a wide range of collaborative scenarios, the DataHUB offers multiple, flexible ways of sharing an ARC.
+This flexibility can be confusing at first. Generally, ARCs can be uploaded to the DataHUB and (a) associated to the namespace of a user account (the default) or (b) the namespace of a group.
+
+The figure below is supposed to give a quick overview. Once an ARC exists in the DataHUB, you can choose between these options to share the ARC with collaborators.
+
+1. You can [invite individual users](/nfdi4plants.knowledgebase/datahub/working-together/datahub-invite-collaborators) (1). This is helpful to share an ARC with selected colleagues.
+2. To share an ARC with a group of users (e.g. a lab or consortium), you can [invite a group](/nfdi4plants.knowledgebase/datahub/working-together/datahub-invite-collaborators) (2).
+
+In both cases (1 and 2), the ARC "stays associated" with the original owner only (visible by the [namespace](#namespaces) and URL address). Furthermore the [roles and permissions](#roles-and-permissions) can be set for individual users and groups.
+
+3. Alternatively, you [can create a fork of your ARC](/nfdi4plants.knowledgebase/datahub/arc-features/datahub-arc-fork) (3). This generates a copy linked to the original ARC, but now associated with the group. This can be used to share an ARC at a certain stage, without sharing the full progress after that stage. However, since the two ARCs (the original and the fork) can now be developed independently. This can easily lead to divergence and requires a bit more technical expertise to keep both ARCs in sync (if desired).
+
+4. Finally, you can [transfer your ARC](/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-arc-settings#advanced-settings) to a group (4). This moves the ARC to new namespace (that of the group).
+
+In both cases 3 and 4, you must have at least [maintainer access](#roles-and-permissions) to the group.
+If you have maintainer access, you can also directly create or upload an ARC to a group.
+
+![](@images/datahub/arc-sharing.drawio.png)
+
+## Visibility
+
+The visibility of ARCs and groups can be managed individually for each ARC (see [ARC settings](/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-arc-settings)) or group see ([Creating a Group](/nfdi4plants.knowledgebase/datahub/working-together/datahub-groups)).
+
+- **Private** &ndash; Access must be granted explicitly to each user or a group.
+- **Internal** &ndash; Can be accessed by any logged in user.
+- **Public** &ndash; Can be accessed without authentication.  
+
+:::tip
+By default every ARC and every group is set to **private**.
+:::
+
+## Roles and permissions
+
+If you create or upload an ARC to the DataHUB, you are the *Owner* by default.
+When inviting new members to an ARC or group, you can choose between different roles.
+
+- **Guest** &ndash; Has the least rights. They will not be able to see the content of an ARC (only the wiki page).
+- **Reporter** &ndash; Has read access to your ARC. This is recommended for people you ask for consultancy.
+- **Developer** &ndash; The choice for most people you want to invite to your ARC. Developers have read and write access, but cannot maintain the project on the DataHUB, e.g. invite new members.
+- **Maintainer** &ndash; Has read and write access and can add or remove members, except for yourself. This is the minimum role recommended for inviting group leaders as it allows them to add their group members for data upload or analysis to the project.
+- **Owner** &ndash; An owner has basically all rights to the ARC. They can delete or transfer the ARC and manage user memberships.
+
+:::tip
+A detailed list of all permissions for the individual roles can be found [here](https://docs.gitlab.com/ee/user/permissions.html)
+:::
+
+## Namespaces
+
+In the DataHUB, namespaces help organize related projects.
+
+- Every user has a personal namespace, where they can upload or create new ARCs.
+- Every [group and subgroup](/nfdi4plants.knowledgebase/datahub/working-together/datahub-groups) has an own namespace, respectively.
+
+You can check the namespace by looking at the URL. For example:
+
+Type | URL | Namespace | Display Name
+--- | --- | --- | ---
+A **personal** ARC | https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum | `brilator` | Dominik Brilhaus
+A **group**-shared ARC | https://git.nfdi4plants.org/ceplas/triesch2023_brassicaceae_transposons | `ceplas` | CEPLAS
+
+:::tip
+"Personal" is not the same as "private", see [visibility](#visibility).
+:::

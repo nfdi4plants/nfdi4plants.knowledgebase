@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nfdi4plants.github.io/nfdi4plants.knowledgebase/sitemap-index.xml

@@ -1,0 +1,103 @@
+---
+title: Term Search
+lastUpdated: 2024-04-26
+authors: 
+  - kevin-frey
+  - stella-eggels
+  - patrick-blume
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+import SwateOverview from '@images/swate/swate-alpha-overview.png'
+
+While this page will focus on the ontology term search, it will also feature useful information about term search related to the [Building Blocks](/nfdi4plants.knowledgebase/swate/add-building-blocks) page.
+
+[Ontologies](/nfdi4plants.knowledgebase/fundamentals/ontologies) are controlled vocabularies, consisting of terms and relationships. Most of these terms feature a name, a unique identifier and a description. We use these ontology terms for workflow description to utilize the benefits of a unified language in terms of machine-readability and reproducibility, following [FAIR principles](https://www.go-fair.org/fair-principles/).
+
+- [Term Insert](#swatedb)
+- [Relationship-Directed Search](#relationship-directed-search)
+
+You can find ontology term search fields on the *Building Blocks* and on the *Ontology Term Search* tab in the <a href={SwateOverview.src} target="_blank">sidebar</a>.
+
+
+## Usage
+
+<Tabs syncKey="swateHost">
+<TabItem label="Browser">
+
+![Image highlighting important components of the swate in-table term search](@images/swate/swate-alpha-ontology-termsearch4.png)
+*When you start typing a word to search for a specific term, both child terms and unrelated terms will be suggested. You can recognize the terms that are related to your building block header (parent term, b) by the symbol in front of the terms ( c ).*
+
+You can find the "Ontology term search" function in the respective tab in the side bar after double clicking into a cell. With this function you will insert ontology terms in an [ISA-Tab conform way](https://isa-specs.readthedocs.io/en/latest/isatab.html#ontology-annotations).
+
+Type in the search field to trigger the auto-complete function and find terms. Select the term you want. When using the ontology term search in the sidebar, click "Fill selected cells with this term" to add it to your table. When using the term search within your table, the term will automatically be added in the proper format once you select the term. 
+
+:::tip[Toggle Search]
+You can toggle the auto complete search by clicking on the magnifying glass ( a ) or pressing <kbd>Tab</kbd> with the search field active!
+:::
+
+:::tip[Search all Children]
+Double click into a empty search field to return up to 500 children of a given [parent term](#relationship-directed-search).
+:::
+
+</TabItem>
+<TabItem label="Excel">
+
+![Image highlighting important components of the swate in-table term search](@images/swate/swate-excel-ontology-termsearch4.png)
+*When you start typing a word to search for a specific term, several terms will be suggested, independent of a parent term.
+Upon clicking the small arrow on the side (a) additional information of the ontology will be shown, its name, description and source (b).*
+
+The term search function of the sidebar enables you to find and insert  ontology terms in an [ISA-Tab conform way](https://isa-specs.readthedocs.io/en/latest/isatab.html#ontology-annotations).
+
+Type in the search field to trigger the auto-complete function and find terms. 
+Select the term you want and add it to the selected building blocks of your table by clicking "Fill celected cells with this term".
+
+</TabItem>
+</Tabs>
+
+Terms will be added to the selected rows in the format:
+
+```
+| term name | term source reference | term id |
+```
+
+:::tip[ID Search]
+If you already know what you are searching for, you can also type in the term unique identifier (example: `MS:1000031`).
+
+:::caution
+To trigger this search the input must match the [Swate Regex pattern](http://regexstorm.net/tester?p=%5b%5cw%5d%2b%3f%3a%5b%5cd%5d%2b&i=MS%3a1000031%0d%0aDPBO%3a1000161%0d%0a) for term accessions.
+
+:::
+
+:::tip[Trigger search again]
+To execute the search query on any search text again after closing the dropdown with the search results, double click into the search field.
+:::
+
+## SwateDB
+
+Access to the SwateDB with a list of established, [external ontologies](/nfdi4plants.knowledgebase/fundamentals/ontology-service-landscape) deemed fit for use in plant science. In addition we feature our very own ontology [DPBO](https://github.com/nfdi4plants/nfdi4plants_ontology/blob/main/nfdi4plants_ontology.obo), which we extend with missing but necessary terms.
+
+External ontologies are typically taken from the [OBO Foundry](https://obofoundry.org) and updated regularly.
+
+Search through our database with autocomplete search on term names.
+
+You can also use the advanced term search for a more refined search approach. Just click on the blue link close to the related search field in the side bar.
+
+:::note
+If you miss a term or ontology, please follow the [DPBO contribution guide](https://github.com/nfdi4plants/nfdi4plants_ontology) to let us know.
+:::
+
+## Relationship-Directed Search 
+
+Ontology terms contain different types of relationships between each other. For example `is_a`, `part_of`, `xref` relationships. Swate and the SwateDB utilize these relationships to provide the user with a predefined set of terms as most likely search requests. 
+
+Let's look at this with an example:
+
+| Input [Source Name] | Component [instrument model] | TSR (MS:1000031) | TAN (MS:1000031) | Output [Sample Name] |
+|-------------|------------------------------|------------------------------|------------------------------------|-------------|
+|             |                              |                              |                                    |             |
+
+import SwateRelationshipGraph from '@images/swate/swate-relationship-graph-exp.png'
+
+If a user wants to fill in cells of the column `Component [instrument model]`, they are most likely looking for the instrument model used in their experimental workflow. In this example the instrument model series and the exact instrument models are so-called child terms of `instrument model (MS:1000031)` because they are connected to `instrument model (MS:1000031)` via <a href={SwateRelationshipGraph.src}>`is_a` relationships</a>. When a cell of the column `Component [instrument model]` is selected, the respective child terms can be shown by double clicking into the empty search field.

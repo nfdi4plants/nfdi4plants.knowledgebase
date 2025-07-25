@@ -1,0 +1,218 @@
+---
+title: ARC Commander QuickStart
+authors:
+  - dominik-brilhaus
+  - martin-kuhl
+lastUpdated: 2025-05-13
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import NewARC from '@components/mdx/NewARC.mdx'
+
+import InstallationARCCommander from 'setup/installation.mdx'
+import InstallationGit from 'setup/installation-git.mdx'
+import Access from 'setup/access.mdx'
+import DataHUBAccount from '../datahub/account/index.mdx'
+
+
+This guide introduces the **ARC Commander**, a command line tool to create, edit and share you ARC.
+It requires some experience with the command line (command prompt, shell, terminal,...).
+
+:::tip
+Before following this guide, we recommend to explore the [Getting Started guide](/nfdi4plants.knowledgebase/start-here/) for a more comprehensive overview of ARC concepts and features.
+
+Here we reproduce parts of Viola's example ARC created [there](/nfdi4plants.knowledgebase/start-here/). However, the ARC Commander by design does not offer all functions you know from [ARCitect](/nfdi4plants.knowledgebase/arcitect/).
+For metadata annotations you can either work on your ARC in ARCitect as explained in the [Getting Started guide](/nfdi4plants.knowledgebase/start-here/) or explore the different options of using [Swate](/nfdi4plants.knowledgebase/swate/).
+:::
+
+## Setup
+
+Before using the ARC commander, please install Git, Git-LFS and ARC Commander and setup access to your DataHUB account.
+
+<Steps>
+
+  1. 
+      <details>
+        <summary>Install and setup Git and Git-LFS</summary>
+        <InstallationGit />
+      </details>
+  
+  2. 
+      <details>
+        <summary>Install ARC Commander</summary>
+        <InstallationGit />
+      </details>
+
+  3. 
+      <details>
+        <summary>Register for a DataPLANT account</summary>
+        <DataHUBAccount />
+      </details>
+
+  4. 
+      <details>
+        <summary>Setup DataHUB access</summary>
+        <Access />
+      </details>
+      
+
+</Steps>
+
+
+## Initialize your ARC
+
+<Steps>
+
+  1. Create and navigate to a local folder, which you want to initialize as an ARC, e.g. via file explorer or
+
+      ```bash
+      mkdir AthalianaColdStressSugar
+      cd AthalianaColdStressSugar
+      ```
+  
+  2. Initialize your ARC by executing
+
+      ```bash
+      arc init
+      ```
+
+</Steps>
+
+This created the general ARC folder structure:
+
+<NewARC />
+
+## Add investigation metadata
+
+<Steps>
+  
+  1. Add an investigation identifier (`-i` or `--investigationidentifier`)
+
+      ```bash
+      arc investigation update -i AthalianaColdStressSugar
+      ```
+
+      :::tip
+      Avoid using spaces or special characters in the identifier.
+      :::
+  
+  
+  2. Add a Title
+
+      ```bash
+      arc investigation --title "Arabidopsis thaliana cold acclimation"
+      ```  
+  
+  3. Add a Description
+
+      ```bash
+      arc i --description "This experiment investigates the response of Arabidopsis thaliana to cold stress by subjecting plants to low-temperature conditions and monitoring physiological, molecular, and growth-related changes. Cold-treated plants are compared with control groups grown under optimal conditions to assess stress-related markers such as changes in protein abundance, sugar content, and growth rates. The goal is to identify key molecules and physiological responses involved in cold tolerance, contributing to the understanding of plant stress adaptation mechanisms."
+      ```
+
+  4. Add Contacts
+
+      ```bash
+      arc i person register -f Jasmine -l Beetroot
+      arc i person register -f Oliver -l Sage
+      arc i person register -f Viola -l Canina --email viola@plantscience.xyz
+      ```
+
+</Steps>
+
+
+## Add studies and assays
+
+<Steps>
+
+1. Add a study with an identifier (`-s`, `--assayidentifier`)
+
+    ```bash
+    arc study add -s AthalianaColdStress
+    ```
+  
+2. Add assays with an identifier (`-a`, `--assay`)
+
+    ```bash
+    arc assay add -s AthalianaColdStress -a SugarMeasurement
+    arc assay add -s AthalianaColdStress -a Proteomics_MS
+    arc assay add -s AthalianaColdStress -a Proteomics_DataAnalysis
+    ```
+
+    :::note
+    An assay must be linked to a study. If a study does not exist, it will be created automatically in this step.
+    :::
+
+</Steps>
+
+The ARC Commander will add subdirectories to the *studies* and *assays* folders. Your ARC should
+look similar to this now:
+
+import { FileTree } from '@astrojs/starlight/components';
+
+<FileTree>
+- studies
+  - AthalianaColdStress
+    - resources
+    - protocols
+    - **isa.study.xlsx**
+  - ...
+- assays
+  - SugarMeasurement
+    - dataset
+    - protocols
+    - **isa.assay.xlsx**
+  - ...
+- workflows
+  - ...
+- runs
+  - ...
+- isa.investigation.xlsx
+</FileTree>
+
+
+## Sync with the DataHUB
+
+<Steps>
+
+1. Synchronize your ARCs with the DataHUB using the command
+
+      ```bash
+      arc sync 
+      ```
+
+2. If you did not connect your local ARC with a remote one so far, you can specify the remote address (`-r` or `--remote`) followed by the DataHUB URL, e.g.,
+
+    ```bash
+    arc sync -r https://git.nfdi4plants.org/<YourUserName>/<YourARC>
+    ```
+
+3. If no ARC exists under the given URL, you can force (`-f` or `--force`) the ARC Commander to create it.
+
+    ```bash
+    arc sync -f
+    ```
+
+    :::note
+    This will prompt an Error `ERROR: GIT: fatal: repository 'https://git.nfdi4plants.org/<YourUserName>/<YourARC>' not found` (Windows) or `ERROR: GIT: fatal: couldn't find remote ref main` (macOS). Don't worry, the ARC is being created at that DataHUB during this step.
+    :::
+
+4. Check if the upload was successful by visiting your ARC at the respective URL in your browser.
+
+</Steps>
+
+## Seeking help
+
+import Help from 'central-functions/help.mdx'
+
+<Help />
+
+## What's next? 
+
+Here we only introduced the basic functions. After concluding this quickstart, you might want to explore the [ARC Commander manual](/nfdi4plants.knowledgebase/arc-commander) for a more detailed usage instruction.
+
+In order to annotate the data in your ARC, explore the sections on studies and assays in the [Getting Started guide](/nfdi4plants.knowledgebase/start-here/). You can do this with [ARCitect](/nfdi4plants.knowledgebase/arcitect) or [Swate](/nfdi4plants.knowledgebase/swate/). 
+
+:::tip
+You were looking for even more code?
+Check out the [ARCtrl docs](/nfdi4plants.knowledgebase/arctrl/) for fully-fledged code control over ARCs. 
+:::

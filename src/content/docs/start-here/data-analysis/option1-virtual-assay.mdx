@@ -1,0 +1,67 @@
+---
+title: Option I – Virtual assay
+lastUpdated: 2025-06-05
+sidebar:
+  order: 8.1
+authors:
+  - dominik-brilhaus
+  - lukas-weil
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+
+<ViolaSays>
+What if I have analyzed data in a way that is not perfectly reusable or reproducible – for instance when I use a proprietary software or a colleague helped with data analysis – but I would still want to store and annotate the data analysis in a way comprehensible to others? 
+</ViolaSays>
+
+## A computational workflow is like a protocol
+
+Just like laboratory workflows produce samples or data, computational workflows produce data. They represent the processing steps used in data analysis or data transformation. 
+
+import Workflows2 from "@images/start-here/arc-prototypic-workflows2.svg"
+
+<img src={Workflows2.src} style="width:70%; display: block; margin: auto;" />
+
+## Create a virtual assay
+
+A computational workflow can simply be treated as a protocol. This can be a summary of the steps followed in any data analysis software. Or it can be a script.
+Hence the data analysis can simply be packaged as an assay, with the computational workflow stored in `protocols` and the resulting data stored in `dataset`
+
+![](@images/start-here/arc-prototypic-workflows-virtual.svg)
+
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+
+    1. Add a new assay `Visualization`. 
+    2. Import the python script `heatmap.py` into `protocols`.
+    3. Import the figure `heatmap.svg` resulting from the script into `dataset`.
+
+        <FileTree>
+        - assays
+            - **Visualization**
+                - dataset
+                    - **heatmap.svg**
+                - protocols
+                    - **heatmap.py**
+                - isa.assay.xlsx
+                - README.md
+        - ...
+        </FileTree>
+
+    4. Add a new annotation table to `Visualization`.
+    5. Add the following building blocks:
+        - `Input [Data]`: Use File Picker to reference the proteomics output file.
+        - `Protocol REF`: Use File Picker to reference python script.
+        - `Output [Data]`: Use File Picker to reference to heatmap result file.
+    
+        `Input [Data]`	 | `ProtocolREF` |  `Output [Data]` 
+        ---------------- | -----------   | -------------- 
+        sugar_result.csv | heatmap.py    | heatmap.svg
+
+    </Steps>
+</Card>

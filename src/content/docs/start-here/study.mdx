@@ -1,0 +1,427 @@
+---
+title: Add a study
+sidebar:
+  order: 3
+authors:
+  - dominik-brilhaus
+  - lukas-weil
+  - sabrina-zander 
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+import Icons from '@components/swate/Icons';
+
+<ViolaSays>
+And where do I add my experimental design? Where can I describe how I grew my plants under different conditions?
+</ViolaSays>
+
+With **studies** you can describe materials and resources. In this Violas-PhD-Project you can add the different growth conditions of your plants here.
+
+![](@images/start-here/arc-prototypic-study-divide-conquer.svg)
+
+## Create a new study
+
+<Card icon="pen" title="ARCitect">
+  <Steps>
+
+  1. Click on the plus icon next to `studies` to add a new study.
+  2. Enter a name for the `New Study`.
+
+      <ViolaSays>
+        AthalianaColdStress
+      </ViolaSays>
+
+  3. Click `New Study`.
+  4. ARCitect adds the study `AthalianaColdStress` including the folders `protocols` and `resources` as well as a `README.md` and the `isa.study.xlsx` workbook. 
+    
+      <FileTree>
+      - AthalianaColdStressSugar
+        - studies
+          - **AthalianaColdStress**
+            - protocols
+              - ...
+            - resources
+              - ...
+            - isa.study.xlsx
+            - README.md
+        - ...
+      </FileTree>
+
+      :::note
+      The `isa.study.xlsx` is not displayed inside ARCitect.
+      :::
+
+  5. Click on the study's name (`AthalianaColdStress`) in the file tree to edit the study metadata in the right panel.
+  6. Here you can add metadata about your study.
+
+      <ViolaSays>
+        My **description**: "Cold acclimation analysis of Arabidopsis leaf tissue"
+      </ViolaSays>
+
+      :::note
+      On the study level, you can add the same type of metadata as on the investigation level in the previous step.
+      :::
+      
+      :::tip
+      If you add data from an external source or database, this is a good place to reference the data source or associated publications.
+      :::
+
+  </Steps>
+</Card>
+
+## Protocols
+
+<ViolaSays>
+  I saved my lab notes about the plant growth in the file growth_protocol.md. Can I store that somewhere?
+</ViolaSays>
+
+You can use the protocol subdirectory to store free-text protocols that describe how the samples or materials were created.
+
+![](@images/start-here/arc-prototypic-study-identify.svg)
+
+
+<Card icon="pen" title="ARCitect">
+  <Steps>
+
+  1. Right-click on the `protocols` folder and select `Import Files` from the context menu.
+
+  3. Select the file `growth_protocol.md` from the demo data and click `Open`.
+  
+      :::note 
+      In this example Viola has prepared a Markdown file (.md) as a protocol. 
+      Markdown Guide: https://www.markdowntutorial.com/
+      
+
+  4. The file is added to your ARC.
+    
+      <FileTree>
+      - AthalianaColdStressSugar
+        - studies
+          - AthalianaColdStress
+            - protocols
+              - **growth_protocol.md**
+        - ...
+      </FileTree>
+
+  5. A click on the protocol's file name opens a text editor in the right panel.
+
+  </Steps>
+</Card>
+
+
+## Add samples to your study
+
+<ViolaSays>
+And where do I note down the plants I used?
+</ViolaSays>
+
+Structured metadata annotation in the ARC is mostly achieved via spreadsheet tables.
+
+Let us start by adding the samples to the study.
+
+<Card icon="pen" title="ARCitect">
+  <Steps>
+
+  1. Click on the study's name (`AthalianaColdStress`) in the file tree.
+  2. At the bottom of the right panel, click on the <btn>+</btn> right next to the `Study` sheet.
+  3. This adds a new table sheet.
+  4. Right-click on sheet’s tab to rename it to plant-growth. 
+  4. Click on the **"Add Building Block"** button <Icons.BuildingBlock />
+  5. From the dropdown menu in the `Add Building Block` widget:
+      - select `Input` -> `Source Name` and click `Add Column`
+      - select `Output` -> `Sample Name` and click `Add Column`
+  6. At the bottom of the table, type `6` in the text field and click <btn>+</btn> to add six rows to your table.
+
+      <ViolaSays>
+
+      I called my plants: "Cold1", "Cold2", "Cold3" and "RT1", "RT2", "RT3"  
+      
+      And the leaf samples accordingly: "Cold1_leaf", "Cold2_leaf", "Cold3_leaf" and "RT1_leaf", "RT2_leaf", "RT3_leaf". 
+
+      </ViolaSays>
+
+  7. Add the sample identifiers into the columns `Input[Source Name]` and `Output[Sample Name]`.
+
+      `Input[Source Name]` | `Output[Sample Name]`
+      -------------------- |  --------------------
+      Cold1                |  Cold1_leaf
+      Cold2                |  Cold2_leaf
+      Cold3                |  Cold3_leaf
+      RT1                  |  RT1_leaf
+      RT2                  |  RT2_leaf
+      RT3                  |  RT3_leaf
+
+      This means that input "Cold1" results in output "Cold1_leaf".
+
+  </Steps>
+</Card>
+
+## Referencing the protocol
+
+In the next step we draw a link between the original protocol and the structured metadata.
+We reference the protocol in the annotation table to say:
+
+> Plant "Cold1" results in sample "Cold1_leaf" by applying the protocol to it.
+
+
+<Card icon="pen" title="ARCitect">
+  <Steps>
+
+  1. On top of the annotation table, click <Icons.BuildingBlock />.
+  1. From the dropdown menu select `More` -> `ProtocolREF` and click `Add Column`.
+  1. On top click <Icons.FilePicker /> to open the `File Picker`.
+  1. In the `File Picker` widget, click `Pick Files`.
+  2. From the ARC select the file `protocols/growth_protocol.md` and click `Open`.
+  1. Select a cell in the `Protocol REF` column and click `Insert file names`.
+
+      `Input[Source Name]` |  `Output[Sample Name]` | `ProtocolREF`
+      -------------------- |  --------------------   |  --------------------
+      Cold1                |  Cold1_leaf  | protocols/growth_protocol.md 
+      Cold2                |  Cold2_leaf  |
+      Cold3                |  Cold3_leaf  |
+      RT1                  |  RT1_leaf  |
+      RT2                  |  RT2_leaf  |
+      RT3                  |  RT3_leaf  |
+ 
+  1. To fill the complete column with the same value, right-click on a cell and select `Fill Column`. 
+
+      `Input[Source Name]` |  `Output[Sample Name]` | `ProtocolREF`
+      -------------------- |  --------------------   |  --------------------
+      Cold1                |  Cold1_leaf  | protocols/growth_protocol.md 
+      Cold2                |  Cold2_leaf  | protocols/growth_protocol.md 
+      Cold3                |  Cold3_leaf  | protocols/growth_protocol.md 
+      RT1                  |  RT1_leaf  | protocols/growth_protocol.md 
+      RT2                  |  RT2_leaf  | protocols/growth_protocol.md 
+      RT3                  |  RT3_leaf  | protocols/growth_protocol.md 
+   
+   </Steps>
+
+</Card>
+
+:::tip
+While it is recommended to store the protocol in an open format (`.md`, `.txt`, `.docx`, …), everything is possible also an URL to an electronic lab notebook.
+:::
+
+<ViolaSays>
+But from my understanding this is not really machine readable, right? 
+</ViolaSays>
+
+Yes, but it still contains valuable information! As we now can link the protocol to the samples, we can later on use the protocol to extract more information from the samples.
+
+## From free-text protocol to structured metadata
+
+![](@images/start-here/arc-prototypic-study-parameterization.svg)
+
+### Finding the metadata vocabulary and descriptors
+
+The ARC builds on standards and leverages ontologies for metadata annotation. The details are out of the scope of this guide. However, it is good to know that a combination of structural and biological ontologies are combined to semantically structure the metadata.
+
+{/* TODO: explain better or delete */}
+
+import XY from "@images/start-here/arc-prototypic-metadata.svg"
+
+<img src={XY.src} style="width:80%;display: block; margin: 20px" />
+
+<ViolaSays>
+So I need to find the important information in my protocol and then add it to the metadata table?
+</ViolaSays>
+
+Yes! Imagine ontologies like a vocabulary. You can use them to describe your samples in a standardized way. This makes it easier for others to understand your data.
+
+### Parameterizing the study
+
+import {ParentChild} from '@components/mdx/ParentChild.mdx'
+
+Let us look at the growth protocol and extract the important information.
+
+```md title="growth_protocol.md" {3-6, 8-12}
+# Study Name: Growth Protocol for *Arabidopsis thaliana*
+
+## Parameters:
+- 200 µmol photons m²/s (200 Einstein)
+- Alternating 6°C (cold treatment) and 25°C (control)
+- 4 days
+
+## Characteristics:
+- *Arabidopsis thaliana*
+- Leaf
+- Hydroponic culture
+- Columbia (Col-0)
+
+...
+```
+
+Then we need to put this information into context:
+
+> "*Arabidopsis thaliana*" is a "Characteristic" of the samples, describing its "Organism".
+
+<div class="grid md:grid-cols-2">
+
+  <div class="md:!m-0">
+  
+  ##### Characteristics [ ]
+
+  - <ParentChild parent="Organism" child="Arabidopsis thaliana"/>
+  - <ParentChild parent="Tissue" child="Leaf"/>
+  - <ParentChild parent="Growth medium" child="Hydroponic culture"/>
+  - <ParentChild parent="Ecotype" child="Columbia"/>
+  
+  </div>
+  <div class="md:!m-0">
+  
+  ##### Parameters [ ]
+
+  - <ParentChild parent="Growth time" child="4d"/>
+  - <ParentChild parent="Light intensity" child="200 µEinstein"/>
+  - <ParentChild parent="Temperature" child="6°C / 25°C"/>
+  
+  </div>
+
+</div>
+
+
+## Add characteristics
+
+<Card icon="pen" title="ARCitect">
+  <Steps>
+
+  1. On top of the annotation table, open the `Add Building Block` widget <Icons.BuildingBlock />.
+  1. From the dropdown menu select `Characteristic`. The order of blocks shown below may not correspond to what you see in ARCitect but we will learn how to rearrange columns later.
+
+      <ViolaSays>
+        I worked on *Arabidopsis thaliana* plants
+      </ViolaSays>
+
+  1. Enter `organism` in the search bar. This search looks for suitable *terms* in the *ontology* database.
+  1. Select the Term with the id `OBI:0100026` and click `Add Column`.
+  1. In the table, insert values by selecting any cell below `Characteristic [organism]`.
+  1. Search for _Arabidopsis thaliana_, select a suitable hit and again fill the complete column with right-click on a cell and select `Fill Column`.
+
+      `Input[Source Name]` | `Characteristic [organism]` | `Output[Sample Name]`
+      -------------------- |  --------------------   |  --------------------
+      Cold1                |  Arabidopsis thaliana  | Cold1_leaf
+      Cold2                |                        | Cold2_leaf
+      Cold3                |                        | Cold3_leaf
+      RT1                  |                        | RT1_leaf
+      RT2                  |                        | RT2_leaf
+      RT3                  |                        | RT3_leaf
+
+
+        <ViolaSays>
+        Great, I've got this! 
+        Now I can add building blocks for the characteristics "tissue" and "growth medium" and enter the values "leaf" and "hydroponic plant culture media", respectively.
+      </ViolaSays>
+  </Steps>
+</Card>
+
+
+## Add a parameter with a unit
+
+<ViolaSays>
+Parameters works just like Characteristics, right? But they also contain numbers with a unit, how can i add that?
+</ViolaSays>
+
+Yes, you are right! Parameters are similar to Characteristics. To use units you can simply select the `Unit` toggle during the `Add building block` step and then insert the value in the table afterwards.
+
+<Card icon="pen" title="ARCitect">
+  <Steps>
+
+    1. In the *Building Blocks* widget <Icons.BuildingBlock />, select *Parameter*, search for `growth time`.
+    2. Click `Unit` and search for `day` in the adjacent search bar. Select the term with the id "UO:0000033" from the unit ontology (UO).
+    3. Click `Add Column`.
+    4. In the annotation table, select any cell below `Parameter [growth time]` and add "4".
+
+        :::note
+        You can see the numbers being complemented with the associated unit.
+        :::
+
+    5. Repeat the steps for the parameter `Light intensity`.
+
+  </Steps>
+</Card>
+
+
+## Add a factor building block
+
+<ViolaSays>
+So what do i do with "temperature"? My experiment revolves around this specific parameter.
+</ViolaSays>
+
+In this case, you can use a `Factor` building block. Factors are used to describe the experimental conditions that are manipulated in an experiment.
+
+<Card icon="pen" title="ARCitect">
+  <Steps>       
+
+    1. In the *Building Blocks* widget <Icons.BuildingBlock />, select *Factor*, search for `temperature day`, select the term with the ID `DPBO:0000007`.        
+    2. Check the box for *Unit* and search for `degree celsius` in the adjacent search bar.
+    3. Select `UO:0000027`.
+    4. Click `Add Column`.
+    5. In the annotation table, add "25" vs. "6" degree celsius to the respective samples.
+
+        <div class="overflow-x-auto">
+          <div class="min-w-[800px]" > 
+          `Input[Source Name]` | `Characteristic [organism]` | `Factor [temperature day]` | `Output[Sample Name]`
+          -------------------- |  --------------------       | --------------------          |  --------------------
+          Cold1                |  Arabidopsis thaliana       | 6 degree celsius              | Cold1_leaf
+          Cold2                |  Arabidopsis thaliana       | 6 degree celsius              | Cold2_leaf
+          Cold3                |  Arabidopsis thaliana       | 6 degree celsius              | Cold3_leaf
+          RT1                  |  Arabidopsis thaliana       | 25 degree celsius             | RT1_leaf
+          RT2                  |  Arabidopsis thaliana       | 25 degree celsius             | RT2_leaf
+          RT3                  |  Arabidopsis thaliana       | 25 degree celsius             | RT3_leaf
+          </div>
+        </div>
+
+  </Steps>
+</Card>
+
+
+## Show ontology information
+
+<Card icon="pen" title="ARCitect">
+  <Steps>
+
+    1. By clicking <btn> \>> </btn> or <btn> \<< </btn> in the column headers you can show or hide the ontology information.
+    
+        <div class="overflow-x-auto">
+          <div class="min-w-[600px]" > 
+        `Characteristic [organism]`  | `Unit` | `TSR (OBI:0100026)` | `TAN (OBI:0100026)`
+          --------------------       | ----   |-------------------- |  --------------------
+          Arabidopsis thaliana	     | -      | NCBITaxon           |  NCBITaxon:3702
+          Arabidopsis thaliana       | -      | NCBITaxon           |  NCBITaxon:3702
+          Arabidopsis thaliana       | -      | NCBITaxon           |  NCBITaxon:3702
+          Arabidopsis thaliana       | -      | NCBITaxon           |  NCBITaxon:3702
+          Arabidopsis thaliana       | -      | NCBITaxon           |  NCBITaxon:3702
+          Arabidopsis thaliana       | -      | NCBITaxon           |  NCBITaxon:3702
+        </div></div>
+
+        <ViolaSays>
+          So if someone needs to look up my species, they will find it in an online ontology database.
+        </ViolaSays>
+
+        :::note
+        You can see that `Arabidopsis thaliana` was added with id and source ontology in the reference (hidden) columns.
+        :::
+
+        :::tip
+        Go to OLS (https://www.ebi.ac.uk/ols4). 
+        :::
+
+  </Steps>
+</Card>
+
+
+## Re-organize the annotation table
+
+If the order of the building blocks needs to be adjusted, you can delete or move them from your annotation table.
+
+<Card icon="pen" title="ARCitect">
+  <Steps>
+  1. Right-click a column and select: 
+      - `Delete Column` to remove it including all related ontology reference columns
+      - `Move Column` to move a column to another position
+
+  </Steps>
+</Card>

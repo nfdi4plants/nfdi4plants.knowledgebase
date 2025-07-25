@@ -1,0 +1,115 @@
+---
+title: Add a datamap
+sidebar:
+  order: 9
+authors:
+  - lukas-weil
+  - dominik-brilhaus
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+
+import Datamap from "@images/start-here/arc-prototypic-datamap.svg"
+
+<ViolaSays>
+The data file "sugar_result.csv" I added earlier contains multiple columns, but in the assay annotation, I just pointed to the file. Is there a way to specify which column belongs to which sample?
+</ViolaSays>
+
+Yes! For this, you can make use of data fragment selectors.
+
+:::note
+A data fragment selector is a short text which can be added to a file path to specify a portion of the file. 
+:::
+
+There exist various different file formats and each requires its own format for annotating fragments as well. 
+In this case, we have a tabular file format, for which our tooling provides help.
+
+## Point into results – Fragment selectors
+
+We will now add fragment selectors to the previously created annotation table to connect our sample to specific data points. 
+This way, provenance is persistently tracked. Data scientists down the line will thank you for the increase in machine-actionability.
+
+![](@images/start-here/arc-prototypic-datamap-fragment-selectors1.svg)
+
+<Card icon="pen" title="ARCitect">
+  <Steps>
+  1. In the "SugarMeasurement" assay, open the "Sugar Measurement" table
+  2. On top of the annotation table, open the "Data Annotator" tool
+  3. Click `Choose a file`, find and select `sugar_result.csv` and click `Open`
+  4. On top switch from "autodetect" to "output"
+  5. Select only the 6(!) Data columns (`RT_M1`, `RT_M2`, `RT_M3`, `Cold_M1`, `Cold_M2`, `Cold_M3`). These are the direct results of the 6 samples.
+  6. Click `Submit`
+
+      :::note
+      This links the **exact columns** of the result table to the biological samples
+      :::
+
+      Input [Sample Name] | Parameter [...] | Output [Data]          | Data Format | Data Selector Format
+      --------------------|-----------------|----------------------- |------------ |---------------------
+      Cold1_sugar-ext     | ...             | sugar_result.csv#col=2 | text/csv    | https://datatracker.ietf.org/doc/html/rfc7111
+      Cold2_sugar-ext     | ...             | sugar_result.csv#col=3 | text/csv    | https://datatracker.ietf.org/doc/html/rfc7111
+      Cold3_sugar-ext     | ...             | sugar_result.csv#col=4 | text/csv    | https://datatracker.ietf.org/doc/html/rfc7111
+      RT1_sugar-ext       | ...             | sugar_result.csv#col=5 | text/csv    | https://datatracker.ietf.org/doc/html/rfc7111
+      RT2_sugar-ext       | ...             | sugar_result.csv#col=6 | text/csv    | https://datatracker.ietf.org/doc/html/rfc7111
+      RT3_sugar-ext       | ...             | sugar_result.csv#col=7 | text/csv    | https://datatracker.ietf.org/doc/html/rfc7111
+
+
+  </Steps>
+</Card>
+
+## DataMAP: Annotation for the fragment selectors
+
+<ViolaSays>
+Wow, this is very verbose, even though it only took a few clicks! And you say data scientists will now finally be content?
+</ViolaSays>
+
+Yes, but with a final bit of annotation you might even raise a smile from them. 
+Using data fragment selectors in the annotation table, you described the provenance between your samples and your data fragments.
+
+In addition, you can further annotate these data fragments and even those which do not directly originate from any of the samples. 
+For example, the column containing the names of the sugars. This annotation is done in the datamap.
+
+:::note
+A datamap is a collection of data fragment selectors with additional annotation, meant to aid with parsing and understanding the contents of the file. 
+:::
+
+We'll now use the datamap to annotate all columns in the file, even the ones we didn't cover in the annotation table.
+
+![](@images/start-here/arc-prototypic-datamap-fragment-selectors2.svg)
+
+<Card icon="pen" title="ARCitect">
+  <Steps>
+
+  7. Go back to assay metadata (the sheet named `Assay`)
+  8. In the `Datamap` section click `Add Datamap` to add a sheet `Data Map`
+  9. Open the `Data Map` table sheet at the bottom
+  10. Open the "Data Annotator" tool and select the same file (`sugar_result.csv`) as before.
+  11. Click on `Open Annotator` and this time **select all 7 columns** and click `Submit`
+  12. From the same file select all 7 columns
+
+
+      <ViolaSays>
+        The first column of my result table "sugar_result.csv" contains the name of the measured sugar, that is the **molecule name**. 
+        The other six columns contain the measured data: **molecule count** in mmol / kg. 
+      </ViolaSays>
+
+  13. Add the following annotation to describe what the columns in "sugar_result.csv" 
+      
+      Data	                  | …	  | Explication	    | Unit	                  | Object Type
+      ----------------------- | --- | --------------- | ----------------------- | -----------
+      sugar_result.csv#col=1	| …	  | molecule name		|                         | string
+      sugar_result.csv#col=2	| …	  | molecule count	| Millimole per Kilogram	| Float
+      sugar_result.csv#col=3	| …	  | molecule count	| Millimole per Kilogram	| Float
+      sugar_result.csv#col=4	| …	  | molecule count	| Millimole per Kilogram	| Float
+      sugar_result.csv#col=5	| …	  | molecule count	| Millimole per Kilogram	| Float
+      sugar_result.csv#col=6	| …	  | molecule count	| Millimole per Kilogram	| Float
+      sugar_result.csv#col=7	| …	  | molecule count	| Millimole per Kilogram	| Float
+
+  </Steps>
+</Card>
+
+
+
+

@@ -1,0 +1,224 @@
+---
+title: Share your ARC
+sidebar:
+  order: 5
+authors:
+  - dominik-brilhaus
+  - lukas-weil
+  - sabrina-zander
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+
+<ViolaSays>
+          Now I have created my local ARC, but how can I share it with my colleagues?
+</ViolaSays>
+
+## Using the PLANTDataHUB for collaboration
+
+ARCs are the basis of the collaborative research platform and can be seamlessly shared between researchers by using the PLANTDataHUB. 
+
+![](@images/start-here/collaboration-plantdatahub.svg)
+
+<Card title="DataPLANT Account" icon="setting">
+
+If you do not have an account, please register with DataPLANT to use the PLANTDataHUB.
+
+<details>
+<summary>Follow these instructions to sign up</summary>
+
+import DataHUBAccount from '../datahub/account/index.mdx'
+
+<DataHUBAccount />
+
+</details>
+
+</Card>
+
+
+## Track changes
+
+The ARC comes with a mechanism to track changes. This version control is based on [git](/nfdi4plants.knowledgebase/fundamentals/version-control-git). Briefly, snapshots of an ARC are called `Commits`. Every Commit is encoded with the information on **who** made the change and **when** and it is accompanied with a note, i.e. a "Commit message" that allows the user to communicate what was changed.
+
+:::note
+Commits would usually be done more frequently along the previous steps described in this `start here` guide.
+:::
+
+### Login to DataHUB
+
+In order to retreive your user information and associate it with your commits, you need to login to the DataHUB.
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+        
+    1. Click `Login` in the sidebar.
+    2. Select `git.nfdi4plants.org` as DataHUB from the dropdown menu.
+    3. Click `Login`. 
+
+        :::note
+        This automatically opens your browser at the DataHUB (https://git.nfdi4plants.org) and asks you to login. If you are not already logged in at the DataHUB, you can directly return to ARCitect. Otherwise you need to login first.
+        :::
+
+        :::note
+        The first time you login using ARCitect from a new computer, you are asked to authorize this computer's ARCitect to communicate with your DataHUB account.
+        :::
+
+        <ViolaSays>
+        Great, now I have some new functions activated in the sidebar. What are they for?  
+        </ViolaSays>
+
+    </Steps>
+</Card>
+
+### Commit your changes
+
+The commit menu allows you to "commit" your changes locally. This saves the changes of your local ARC together with your DataHUB credentials (Name and eMail).
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+    
+    1. Navigate to the `Commit` menu.
+    2. Since you are logged in, the `Name` and `eMail` of your DataHUB account are automatically added.
+    3. Add a commit message:
+
+        <ViolaSays>
+            "Created my first ARC and added data."
+        </ViolaSays>
+    3. Click `Commit` to store your changes locally.
+        
+    </Steps>
+</Card>
+
+
+### History menu
+
+In the History menu you can inspect your ARC history with all commit messages.
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+    
+    1. Navigate to the `History` menu.
+    2. Find your commit messages.
+
+        <ViolaSays>
+            Great, so even in five years I will know what I did in every step.
+        </ViolaSays>
+        
+    </Steps>
+</Card>
+
+## Upload your ARC to the PLANTDataHUB
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+    1. From the sidebar, navigate to the `DataHUB Sync` menu.
+    2. In the grey `Remote` box, click `+` to add a remote.
+    3. In the `Add Remote` dialog, leave the defaults for `Remote Name`, `DataHUB Account` and `URL`.
+
+        :::note
+        By default, your ARC will be synced privately to your personal DataHUB Account.
+        :::
+
+        <ViolaSays>
+          So my ARC will be synced to https://git.nfdi4plants.org/viola/AthalianaColdStressSugar.git
+        </ViolaSays>
+
+    4. Click `Add Remote`.
+    5. Click `Push` to upload your ARC to the DataHUB.     
+    6. In the grey `Remote` box, click the globe icon to be directed to your ARC in the DataHUB.
+
+    </Steps>
+</Card>
+
+:::note
+If you edit your ARC in a different location (e.g. the DataHUB or another computer) be sure to synchronize your local ARC using the `Pull` button. 
+:::
+
+
+## Explore your ARC in the PLANTDataHUB
+
+<Card icon="gitlab" title="PLANTDataHUB">
+    <Steps>
+    
+    1. Sign in to the [PLANTDataHUB](https://git.nfdi4plants.org)
+    1. Navigate to your ARC.
+    1. Browse the files of your ARC.
+    1. The main panel of the ARC menu mimics the local folder structure
+
+    </Steps>
+</Card>
+
+
+## Add members to your ARC
+    <ViolaSays>
+     Now my ARC is stored in the PLANTDataHUB, but how can I add my project partner?
+    </ViolaSays>
+
+<Card icon="gitlab" title="PLANTDataHUB">
+    <Steps>
+
+    1. Click on **Manage** in the left navigation panel.
+    2. Click on **Members**.
+    3. Click on **Invite members**.
+    4. Search for potential collaborators.
+    5. Select a role.
+
+        :::note[Choosing the proper role]
+        When inviting new members to an ARC or group, you can choose between different levels.
+        :::
+
+        :::note
+        By default you are **Owner** of an ARC you create or upload to the DataHUB.
+        :::  
+
+    </Steps>
+</Card>
+
+
+## DataHUB Roles
+
+When inviting new members to an ARC or group, you can choose between different roles.
+
+- **Guest** &ndash; Has the least rights. They will not be able to see the content of an ARC (only the wiki page).
+- **Reporter** &ndash; Has read access to your ARC. This is recommended for people you ask for consultancy.
+- **Developer** &ndash; The choice for most people you want to invite to your ARC. Developers have read and write access, but cannot maintain the project on the DataHUB, e.g. invite new members.
+- **Maintainer** &ndash; Has read and write access and can add or remove members, except for yourself. This is the minimum role recommended for inviting group leaders as it allows them to add their group members for data upload or analysis to the project.
+- **Owner** &ndash; An owner has basically all rights to the ARC. They can delete or transfer the ARC and manage user memberships.
+
+    :::note
+        If you are interested in details about permissions and roles have a look [here](https://docs.gitlab.com/ee/user/permissions.html).
+    :::
+ <ViolaSays>
+     I will invite my PI Prof. Jasmine Beetroot as **Maintainer** and my collaboration partner Oliver Sage as **Developer**. 
+    </ViolaSays>
+
+## Project Management
+
+The DataHUB can also be used for Project Management. With issues you can collaborate on ideas and plan your work. 
+
+<Card icon="gitlab" title="PLANTDataHUB">
+    <Steps>
+
+    1. Click on **Plan** in the left navigation panel.
+    2. Click on **Issues**.
+    3. Create a new Issue.
+
+         <ViolaSays>
+          It would be good to have summary statistics for sugar measurement from my project collaborator.
+         </ViolaSays>
+    
+    4. Type in a Title `Summary statistics for sugar measurement`.
+    5. Fill out the Description. 
+    6. Assign yourselve or collaboration partner to the task.
+    7. Click `Create Issue`. 
+
+    </Steps>
+</Card>
+
+
+
+
+
+
