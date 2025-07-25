@@ -10,61 +10,18 @@ import { Steps } from '@astrojs/starlight/components';
 import { Tabs, TabItem, Card } from '@astrojs/starlight/components';
 import Mermaid from '@components/mdx/Mermaid.astro'
 
-This starter’s guide to **FAIRifying script-based data analysis workflows** walks you through the steps to turn your existing script into a **reusable CWL workflow**. Whether you use Python, R, Bash, or another language the same logic applies.
+This starter’s guide to **FAIRifying script-based data analysis workflows** walks you through the initial steps to turn your existing script into a **reusable CWL workflow**. Whether you use Python, R, Bash, or another language the same logic applies.
+
+:::tip
+Check out the [Recommendations for FAIR Data Analysis](/nfdi4plants.knowledgebase/cwl/fair-data-analysis), which are applied here.
+:::
+
 
 {/* TODOs
 
   - devcontainsers
 
 */}
-
-
-## Recommendations for FAIR Data Analysis
-
-The following considerations are recommended as FAIR coding practice independently of the steps below. 
-The goal is to be able to share the data analysis with as much context and functionality as possible. This should enable yourself or other researchers to **replicate, reproduce or reuse** it in other contexts or on other data of the same type.
-
-<Steps>
-
-1. Follow the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) and **"Keep It Single-Step"**
-    - Each script should ideally perform only one distinct task.
-    - Avoid mixing unrelated processes in a single script.
-    - This improves:
-      - Reusability across projects
-      - Understandability of the script’s purpose
-      - Clarity around its inputs and outputs- A focused script is easier to reuse, understand, and annotate, especially regarding the `inputs` it consumes and the `outputs` it creates.
-
-2. **Separate data analysis logic from data and environment**
-    - Avoid hard-coded paths or filenames.
-    - Parameterize inputs, outputs, and configuration as arguments.
-    - Benefits:
-      - Easier reuse across datasets and platforms
-      - Smoother integration into larger workflows or pipelines
-
-3. Collect **information about dependencies**, such as external packages and tools
-    - Record the script language (e.g. Python, R, Bash)
-    - List all packages, libraries, and software tools used
-    - Specify versions where applicable
-    - List runtime environments and hardware requirements (if relevant)
-    - Include useful metadata:
-      - Official citation
-      - URLs (e.g. docs, GitHub, project websites)
-      - Unique identifiers from registries such as 
-        - [bio.tools](https://bio.tools/)
-        - [RRIDs via SciCrunch](https://scicrunch.org/resources/about/resource)
-        - [identifiers.org](https://identifiers.org/)
-
-4. **Uncouple processes from the execution environment**
-    - Ensure that your analysis can be run anywhere, not just on your machine.
-    - Use containerization (e.g., Docker, Singularity) to bundle:
-      - Dependencies
-      - Correct versions
-      - Required system tools
-    - Use existing community-maintained containers where possible.
-    - This makes your analysis portable and reproducible across different systems.
-
-</Steps>
-
 
 ## Refactor the script
 
