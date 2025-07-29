@@ -94,7 +94,7 @@ You now have the files needed to run the Dev Container: `devcontainer.json` and 
 
 This example uses **Option B**, which requires creating a Dockerfile. You can create it by running the command `touch Dockerfile` in the VS Code terminal. The image below shows a simple Dockerfile:
 
-``` Dockerfile
+```txt 
 FROM mcr.microsoft.com/dotnet/sdk:8.0
 
 ENV DOTNET.DockerScoutOptOut=1
@@ -115,7 +115,7 @@ Now we have everything we need to start our project.
 
 This tutorial starts with two scripts, each of which creates a column chart and a target folder to store the results.
 
-```fsx  
+```fsharp
 #r "nuget: Plotly.NET, 5.0.0"
 #r "nuget: Plotly.NET.Interactive, 5.0.0"
 #r "nuget: Plotly.NET.ImageExport, 6.1.0"
@@ -143,7 +143,7 @@ buildChart |> Chart.saveHtml (Path.Combine(outputDir, "exampleChart1"))
 
 The second example Script is identical 
 
-```fsx2
+```fsharp
 #r "nuget: Plotly.NET, 5.0.0"
 #r "nuget: Plotly.NET.Interactive, 5.0.0"
 #r "nuget: Plotly.NET.ImageExport, 6.1.0"
