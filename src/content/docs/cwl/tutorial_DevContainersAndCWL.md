@@ -15,7 +15,7 @@ import { Tabs, TabItem, Card } from '@astrojs/starlight/components';
 
 ## What is a Docker Container?
 
-A container is a standardized software unit that bundles program code and all necessary dependencies so that applications can run quickly and reliably in different IT environments. You can think of it as a box that includes everything needed for your project.
+A container is a standardised software unit that bundles program code and all necessary dependencies so that applications can run quickly and reliably in different IT environments. You can think of it as a box that includes everything needed for your project.
 
 A Docker container image is a lightweight, self-contained, executable software package that contains everything necessary to run an application: the code, the runtime environment, system tools, libraries, and configurations. Using Docker containers can, for example, improve reproducibility, which is a significant advantage over non-isolated projects.
 
@@ -28,9 +28,11 @@ Further information about Docker and Docker containers can be found here:
 
 ## What is a Dev Container?
 
-A Dev Container is also a Docker container, but you don't always need Docker to execute it.
+A Dev Container is based on a container concept such as Docker. Docker is not strictly required for its execution, but a container engine that is compatible with the Dev Container standard is necessary, such as Docker, Podman, or a corresponding runtime environment.
 
+:::tip[example]
 Think of it like this: every Jacuzzi is a whirlpool, but not every whirlpool is a Jacuzzi. Likewise, every Dev Container is a Docker container, but not every Docker container is a Dev Container. They serve the same purpose and operate similarly. If you run the container using Docker, it’s a Docker container; otherwise, it’s just a Dev Container.
+:::
 
 ## Common Workflow Language
 
@@ -44,21 +46,24 @@ Additional information can be found [here](https://www.commonwl.org/).
 
 ## Setup
 <steps>
-  1. Install VS Code:  
-    - https://code.visualstudio.com/download
-  2. Install the Dev Containers extension:  
-    - https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
+  
+  1. Install VS Code [here](https://code.visualstudio.com/download)
+
+  2. Install the Dev Containers extension [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
   3. Install other necessary extensions for your project:  
     - For example: .NET Install Tool or Ionide for F#
-  4. Install Docker Desktop:  
-    - https://docs.docker.com/desktop/setup/install/windows-install/
+
+  4. Install Docker Desktop [here](https://docs.docker.com/desktop/setup/install/windows-install/)
 </steps>
 
 
 ## Dev Container in VS Code
 <steps>
+  
   1. Create a new folder with your project name and open it in VS Code.  
-  2. In the VS Code menu bar, click **View** > **Command Palette** and run the following command:
+
+  2. In the VS Code menu bar, click **`View** > Command Palette`** and run the following command:
   
   **`Dev Containers: Add Dev Container Configuration Files...`**
 </steps>
@@ -69,28 +74,42 @@ There are two options for setting up your environment:
 
 ### Option A
 <steps>
+
   1. Start with "Add configuration to workspace"  
-  2. Choose **.NET (C#), Node.js (TypeScript) & MS SQL**  
+
+  2. Choose **.NET (C#), Node.js (TypeScript) & MS SQL** 
+
   3. Select `8.0-bookworm` (default)  
+
   4. Select `-lts` (default)  
+
   5. Then press OK, or select additional features if desired
 </steps>
 
-**Note:** If you choose this option, you must manually add the F# extension to the `devcontainer.json` file. Insert `"ms-dotnettools.fsharp"` in the `"extensions"` section.
+:::tip[Important]
+If you choose this option, you must manually add the F# extension to the `devcontainer.json` file. Insert `"ms-dotnettools.fsharp"` in the `"extensions"` section.
+:::
 
 ### Option B
 <steps>
-  1. Start with "Add configuration to workspace"  
+
+  1. Start with "Add configuration to workspace" 
+
   2. Choose **F# (.NET)** and press OK
 </steps>
 
-**Note:** If you choose this option, you’ll need to create your own Dockerfile!
+:::tip[Important]
+If you choose this option, you’ll need to create your own Dockerfile!
+:::
 
+:::tip
 You now have the files needed to run the Dev Container: `devcontainer.json` and `Dockerfile`.  
 - `devcontainer.json` tells VS Code how to work with that environment (extensions, settings, folder paths).  
 - The `Dockerfile` is a text file with instructions to build a Docker image—it defines everything needed to set up and run your application in a container.
+:::
 
-<Card icon="pen" title= "Example">
+
+<Card icon="pen" title="Example">
 
 This example uses **Option B**, which requires creating a Dockerfile. You can create it by running the command `touch Dockerfile` in the VS Code terminal. The image below shows a simple Dockerfile:
 
@@ -279,5 +298,7 @@ devcontainerTutorial:
     class: Directory 
     path: ./ 
 ``` 
-ANow you have everything you need to run a CWL workflow within a Docker container. Just open your WSL (or terminal, if you're using Linux) and run the following command: `cwltool ./workflow.cwl ./run.yml`. 
+</Card>
+
+And now you have everything you need to run a CWL workflow within a Docker container. Just open your WSL (or terminal, if you're using Linux) and run the following command: `cwltool ./workflow.cwl ./run.yml`. 
 
