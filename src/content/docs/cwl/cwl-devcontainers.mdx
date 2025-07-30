@@ -1,6 +1,6 @@
 ---
 title: "Dev Containers with CWL"
-lastUpdated: 2025-07-25
+lastUpdated: 2025-07-28
 authors:
   - pauline-hans
 sidebar:
@@ -11,6 +11,7 @@ import { FileTree } from '@astrojs/starlight/components';
 import { Steps } from '@astrojs/starlight/components';
 import { Tabs, TabItem, Card } from '@astrojs/starlight/components';
 
+Here we introduce Dev Containers and how to use them for data analysis with [Common Workflow Language (CWL)](/nfdi4plants.knowledgebase/cwl/cwl-introduction/).
 
 ## What is a Docker Container?
 
@@ -30,39 +31,27 @@ Further information about Docker and Docker containers can be found here:
 A Dev Container is based on a container concept such as Docker. Docker is not strictly required for its execution, but a container engine that is compatible with the Dev Container standard is necessary, such as Docker, Podman, or a corresponding runtime environment.
 
 
-## Why you should use containers
+## How to benefit from using containers
 
 Dev or Docker containers create a clean, uniform development environment, regardless of the operating system. They prevent classic “it works for me” problems, reliably isolate projects, and enable the parallel use of different software versions. Thanks to their portability, they run the same everywhere, locally, on the server, or in the cloud. They also support the FAIR principles: developments become findable, accessible, interoperable, and reusable. 
 In short, containers save time, minimize sources of error, and promote a transparent, sustainable workflow.
 
-## Common Workflow Language
-
-The Common Workflow Language (CWL) is explained in detail in the Knowledgebase and can be found [here](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/cwl/cwl-introduction/).
-
-:::tip
-Additional information can be found [here](https://www.commonwl.org/).
-:::
-
-# Tutorial
 
 ## Setup
 
 <Steps>
-
   1. Install VS Code [here](https://code.visualstudio.com/download)
   2. Install the Dev Containers extension [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
   3. Install other necessary extensions for your project (For example: .NET Install Tool or Ionide for F#)
   4. Install Docker Desktop [here](https://docs.docker.com/desktop/setup/install/windows-install/)
-
 </Steps>
 
 
 ## Dev Container in VS Code
+
 <Steps>
-  
   1. Create a new folder with your project name and open it in VS Code.  
   2. In the VS Code menu bar, click **`View** > Command Palette`** and run the following command: **`Dev Containers: Add Dev Container Configuration Files...`**
-
 </Steps>
 
 :::tip[Note]
@@ -74,26 +63,24 @@ The following example is written in F# but every other language is possible. Thi
 There are two options for setting up your environment:
 
 ### Option A - specified Dockerfile
-<Steps>
 
+<Steps>
   1. Start with "Add configuration to workspace"  
   2. Choose **.NET (C#), Node.js (TypeScript) & MS SQL** 
   3. Select `8.0-bookworm` (default)  
   4. Select `-lts` (default)  
   5. Then press OK, or select additional features if desired
-
 </Steps>
 
 :::tip[Important]
 If you choose this option, you must manually add the F# extension to the `devcontainer.json` file. Insert `"ms-dotnettools.fsharp"` in the `"extensions"` section.
 :::
 
-### Option B - creating your own Dockerfile 
-<Steps>
+### Option B - creating your own Dockerfile
 
+<Steps>
   1. Start with "Add configuration to workspace" 
   2. Choose **F# (.NET)** and press OK
-
 </Steps>
 
 :::tip[Important]
@@ -111,7 +98,7 @@ You now have the files needed to run the Dev Container: `devcontainer.json` and 
 
 This example uses **Option B**, which requires creating a Dockerfile. You can create it by running the command `touch Dockerfile` in the VS Code terminal. The image below shows a simple Dockerfile:
 
-```txt title="DockerFile"
+```dockerfile title="Dockerfile"
 FROM mcr.microsoft.com/dotnet/sdk:8.0
 
 ENV DOTNET.DockerScoutOptOut=1
@@ -121,7 +108,9 @@ COPY *.devcontainer/settings.vscode.json /root/.vscode-remote/data/Machine/setti
 RUN apt-get update && apt-get -y install git procps 
 ```
 
-**Note:** Check your .NET version using the terminal or PowerShell with `dotnet --version`.
+:::note
+Check your .NET version using the terminal or PowerShell with `dotnet --version`.
+:::
 
 Now we have everything we need to start our project.
 
@@ -186,7 +175,7 @@ This tutorial starts with two scripts, each of which creates a column chart and 
 
 3. After that we need the CWL Command-Line-Tools that calls the scripts.
 
-      ```cwl title="exampleChart1.cwl"
+      ```yaml title="exampleChart1.cwl"
       cwlVersion: v1.2
       class: CommandLineTool
       hints:
@@ -214,9 +203,12 @@ This tutorial starts with two scripts, each of which creates a column chart and 
           type: Directory
           outputBinding: 
             glob: ./devcontainerTutorial/runs/execution/Results
-      ``` 
-      This was for the Commnad-Line-Tool for first script (exampleChart1.fsx). Following is the second Command-Line-Tool for the second script (exampleChart2.fsx)
-      ```cwl title="exampleChart2.cwl"
+      ```
+
+      This was for the Commnad-Line-Tool for first script (exampleChart1.fsx). Following is the second Command-Line-Tool for the second script 
+      (exampleChart2.fsx)
+
+      ```yaml title="exampleChart2.cwl"
       cwlVersion: v1.2
       class: CommandLineTool
       hints:
@@ -248,7 +240,7 @@ This tutorial starts with two scripts, each of which creates a column chart and 
 
 3. With the Command-Line-Tools we can create the CWL workflow, that calls the two Command-Line-Tools
 
-      ```cwl title="mainWorkflow.cwl"
+      ```yaml title="mainWorkflow.cwl"
       cwlVersion: v1.2
       class: Workflow 
       hints: 
@@ -294,7 +286,7 @@ This tutorial starts with two scripts, each of which creates a column chart and 
     <FileTree>
       - ...
       - workflows 
-        - scrpits 
+        - scripts 
           - exampleChart1.fsx 
           - exampleChart2.fsx
         - exampleChart1.cwl  
@@ -309,7 +301,7 @@ This tutorial starts with two scripts, each of which creates a column chart and 
 
     The **run.cwl** looks like this: 
 
-      ```cwl title="run.cwl"
+      ```yaml title="run.cwl"
       cwlVersion: v1.2
       class: Workflow 
       hints: 
@@ -355,7 +347,12 @@ This tutorial starts with two scripts, each of which creates a column chart and 
 
 </Card>
 
-And now you have everything you need to run a CWL workflow within a Docker container. Just open your Powershell with WSL (or terminal, if you're using Linux) and run the following command: `cwltool ./workflow.cwl ./run.yml`. 
+And now you have everything you need to run a CWL workflow within a Docker container. Just open your Powershell with WSL (or terminal, if you're using Linux) and run the following command:
+
+```bash
+cwltool ./workflow.cwl ./run.yml
+```
+
 :::tip 
-To install the CWL runner on your computer, follow these steps [here](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/cwl/cwl-runner-installation/)
+To install the CWL runner on your computer, follow these steps [here](/nfdi4plants.knowledgebase/cwl/cwl-runner-installation/)
 :::
