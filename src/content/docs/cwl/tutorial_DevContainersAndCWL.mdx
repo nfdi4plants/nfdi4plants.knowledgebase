@@ -29,9 +29,11 @@ Further information about Docker and Docker containers can be found here:
 
 A Dev Container is based on a container concept such as Docker. Docker is not strictly required for its execution, but a container engine that is compatible with the Dev Container standard is necessary, such as Docker, Podman, or a corresponding runtime environment.
 
-:::tip[example]
-Think of it like this: every Jacuzzi is a whirlpool, but not every whirlpool is a Jacuzzi. Likewise, every Dev Container is a Docker container, but not every Docker container is a Dev Container. They serve the same purpose and operate similarly. If you run the container using Docker, it’s a Docker container; otherwise, it’s just a Dev Container.
-:::
+
+## Why you should use containers
+
+Dev or Docker containers create a clean, uniform development environment, regardless of the operating system. They prevent classic “it works for me” problems, reliably isolate projects, and enable the parallel use of different software versions. Thanks to their portability, they run the same everywhere, locally, on the server, or in the cloud. They also support the FAIR principles: developments become findable, accessible, interoperable, and reusable. 
+In short, containers save time, minimize sources of error, and promote a transparent, sustainable workflow.
 
 ## Common Workflow Language
 
@@ -63,11 +65,15 @@ Additional information can be found [here](https://www.commonwl.org/).
 
 </Steps>
 
+:::tip[Note]
+The following example is written in F# but every other language is possible. This Tutorial should show how you create your on Dev Container in VS Code based on .NET and how you can create a CWL worklfow within the container. 
+:::
+
 ## Settings
 
 There are two options for setting up your environment:
 
-### Option A
+### Option A - specified Dockerfile
 <Steps>
 
   1. Start with "Add configuration to workspace"  
@@ -82,7 +88,7 @@ There are two options for setting up your environment:
 If you choose this option, you must manually add the F# extension to the `devcontainer.json` file. Insert `"ms-dotnettools.fsharp"` in the `"extensions"` section.
 :::
 
-### Option B
+### Option B - creating your own Dockerfile 
 <Steps>
 
   1. Start with "Add configuration to workspace" 
@@ -174,6 +180,10 @@ This tutorial starts with two scripts, each of which creates a column chart and 
           )
       buildChart |> Chart.saveHtml (String.concat "" [|"./devcontainerTutorial/runs/execution"; "/Results/exampleChart2"|])
       ```
+      :::tip[Note]
+      You can connect as many scripts as you want. 
+      ::: 
+
 3. After that we need the CWL Command-Line-Tools that calls the scripts.
 
       ```cwl title="exampleChart1.cwl"
@@ -284,14 +294,16 @@ This tutorial starts with two scripts, each of which creates a column chart and 
     <FileTree>
       - ...
       - workflows 
-        - exampleChart1.fsx 
-        - exampleChart2.fsx
+        - scrpits 
+          - exampleChart1.fsx 
+          - exampleChart2.fsx
         - exampleChart1.cwl  
         - exampleChart2.cwl 
         - workflow.cwl 
-      - runs 
-        - run.cwl
-        - run.yml 
+      - runs
+        - execution 
+          - run.cwl
+          - run.yml 
       - ...
     </FileTree>
 
