@@ -1,0 +1,361 @@
+---
+title: "Dev Containers with CWL"
+lastUpdated: 2025-07-25
+authors:
+  - pauline-hans
+sidebar:
+  order: 9
+---
+
+import { FileTree } from '@astrojs/starlight/components';
+import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem, Card } from '@astrojs/starlight/components';
+
+
+## What is a Docker Container?
+
+A container is a standardised software unit that bundles program code and all necessary dependencies so that applications can run quickly and reliably in different IT environments. You can think of it as a box that includes everything needed for your project.
+
+A Docker container image is a lightweight, self-contained, executable software package that contains everything necessary to run an application: the code, the runtime environment, system tools, libraries, and configurations. Using Docker containers can, for example, improve reproducibility, which is a significant advantage over non-isolated projects.
+
+:::tip
+Further information about Docker and Docker containers can be found here:
+
+- https://www.docker.com/resources/what-container/
+- https://www.docker.com/products/docker-desktop/
+:::
+
+## What is a Dev Container?
+
+A Dev Container is based on a container concept such as Docker. Docker is not strictly required for its execution, but a container engine that is compatible with the Dev Container standard is necessary, such as Docker, Podman, or a corresponding runtime environment.
+
+
+## Why you should use containers
+
+Dev or Docker containers create a clean, uniform development environment, regardless of the operating system. They prevent classic “it works for me” problems, reliably isolate projects, and enable the parallel use of different software versions. Thanks to their portability, they run the same everywhere, locally, on the server, or in the cloud. They also support the FAIR principles: developments become findable, accessible, interoperable, and reusable. 
+In short, containers save time, minimize sources of error, and promote a transparent, sustainable workflow.
+
+## Common Workflow Language
+
+The Common Workflow Language (CWL) is explained in detail in the Knowledgebase and can be found [here](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/cwl/cwl-introduction/).
+
+:::tip
+Additional information can be found [here](https://www.commonwl.org/).
+:::
+
+# Tutorial
+
+## Setup
+
+<Steps>
+
+  1. Install VS Code [here](https://code.visualstudio.com/download)
+  2. Install the Dev Containers extension [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+  3. Install other necessary extensions for your project (For example: .NET Install Tool or Ionide for F#)
+  4. Install Docker Desktop [here](https://docs.docker.com/desktop/setup/install/windows-install/)
+
+</Steps>
+
+
+## Dev Container in VS Code
+<Steps>
+  
+  1. Create a new folder with your project name and open it in VS Code.  
+  2. In the VS Code menu bar, click **`View** > Command Palette`** and run the following command: **`Dev Containers: Add Dev Container Configuration Files...`**
+
+</Steps>
+
+:::tip[Note]
+The following example is written in F# but every other language is possible. This Tutorial should show how you create your on Dev Container in VS Code based on .NET and how you can create a CWL worklfow within the container. 
+:::
+
+## Settings
+
+There are two options for setting up your environment:
+
+### Option A - specified Dockerfile
+<Steps>
+
+  1. Start with "Add configuration to workspace"  
+  2. Choose **.NET (C#), Node.js (TypeScript) & MS SQL** 
+  3. Select `8.0-bookworm` (default)  
+  4. Select `-lts` (default)  
+  5. Then press OK, or select additional features if desired
+
+</Steps>
+
+:::tip[Important]
+If you choose this option, you must manually add the F# extension to the `devcontainer.json` file. Insert `"ms-dotnettools.fsharp"` in the `"extensions"` section.
+:::
+
+### Option B - creating your own Dockerfile 
+<Steps>
+
+  1. Start with "Add configuration to workspace" 
+  2. Choose **F# (.NET)** and press OK
+
+</Steps>
+
+:::tip[Important]
+If you choose this option, you’ll need to create your own Dockerfile!
+:::
+
+:::tip
+You now have the files needed to run the Dev Container: `devcontainer.json` and `Dockerfile`.  
+- `devcontainer.json` tells VS Code how to work with that environment (extensions, settings, folder paths).  
+- The `Dockerfile` is a text file with instructions to build a Docker image—it defines everything needed to set up and run your application in a container.
+:::
+
+
+<Card icon="pen" title="Example">
+
+This example uses **Option B**, which requires creating a Dockerfile. You can create it by running the command `touch Dockerfile` in the VS Code terminal. The image below shows a simple Dockerfile:
+
+```txt title="DockerFile"
+FROM mcr.microsoft.com/dotnet/sdk:8.0
+
+ENV DOTNET.DockerScoutOptOut=1
+
+COPY *.devcontainer/settings.vscode.json /root/.vscode-remote/data/Machine/setting.json
+
+RUN apt-get update && apt-get -y install git procps 
+```
+
+**Note:** Check your .NET version using the terminal or PowerShell with `dotnet --version`.
+
+Now we have everything we need to start our project.
+
+# Start the Programming Journey
+
+## Example
+
+This tutorial starts with two scripts, each of which creates a column chart and a target folder to store the results. To better understand the file structure and the CWL workflow, the example with all files is available in an ARC. You can find it [here](https://git.nfdi4plants.org/mrspaulinehans/DevContainerAndCWL)
+
+<Steps> 
+1. Create your scripts 
+
+      ```fsharp title="exampleChart1.fsx"
+      //first example chart for creating a simple column chart, 
+      //with Chart.saveHtml, where you can define the
+      //location where the chart should be saved.
+
+      #r "nuget: Plotly.NET, 5.0.0"
+      #r "nuget: Plotly.NET.Interactive, 5.0.0"
+      #r "nuget: Plotly.NET.ImageExport, 6.1.0"
+      open Plotly.NET
+      open Plotly.NET.Interactive
+      open System 
+      open System.IO 
+      //example: simple column chart for Devcontainer Tutorial 
+      let x = 25
+      let y = 85
+      let combine = [|x, y|]
+      let buildChart = 
+          Chart.Column (
+              keysValues = combine,
+              Name = "Example Chart for Devcontainer Tutorial"
+          )
+      buildChart |> Chart.saveHtml (String.concat "" [|"./devcontainerTutorial/runs/execution"; "/Results/exampleChart1"|])
+      ```
+
+2. The second example Script is identical 
+
+      ```fsharp title="exampleChart2.fsx"
+      //second example chart, which is identical to the one above
+      #r "nuget: Plotly.NET, 5.0.0"
+      #r "nuget: Plotly.NET.Interactive, 5.0.0"
+      #r "nuget: Plotly.NET.ImageExport, 6.1.0"
+      open Plotly.NET
+      open Plotly.NET.Interactive
+      open System 
+      open System.IO
+      //example Chart 2 for Devocontainer tutorial 
+      let x = 34
+      let y = 26 
+      let combine = [| x, y|]
+      let buildChart = 
+          Chart.Column (
+              keysValues = combine,
+              Name = "Example Chart for Devcontainer Tutorial"
+          )
+      buildChart |> Chart.saveHtml (String.concat "" [|"./devcontainerTutorial/runs/execution"; "/Results/exampleChart2"|])
+      ```
+      :::tip[Note]
+      You can connect as many scripts as you want. 
+      ::: 
+
+3. After that we need the CWL Command-Line-Tools that calls the scripts.
+
+      ```cwl title="exampleChart1.cwl"
+      cwlVersion: v1.2
+      class: CommandLineTool
+      hints:
+        DockerRequirement:
+          dockerImageId: "devcontainertutorial"
+          dockerFile: {$include: "./Dockerfile"}
+      requirements:
+        - class: InitialWorkDirRequirement
+          listing:
+            - entryname: devcontainerTutorial
+              entry: $(inputs.devcontainerTutorial)
+              writable: true
+        - class: EnvVarRequirement
+          envDef:
+            - envName: DOTNET_NOLOGO
+              envValue: "true"
+        - class: NetworkAccess
+          networkAccess: true
+      baseCommand: [dotnet, fsi, "./devcontainerTutorial/workflows/exampleChart1.fsx"]
+      inputs: 
+        devcontainerTutorial:
+          type: Directory
+      outputs: 
+        output_exampleChart1: 
+          type: Directory
+          outputBinding: 
+            glob: ./devcontainerTutorial/runs/execution/Results
+      ``` 
+      This was for the Commnad-Line-Tool for first script (exampleChart1.fsx). Following is the second Command-Line-Tool for the second script (exampleChart2.fsx)
+      ```cwl title="exampleChart2.cwl"
+      cwlVersion: v1.2
+      class: CommandLineTool
+      hints:
+        DockerRequirement:
+          dockerImageId: "devcontainertutorial"
+          dockerFile: {$include: "./Dockerfile"}
+      requirements:
+        - class: InitialWorkDirRequirement
+          listing:
+            - entryname: devcontainerTutorial
+              entry: $(inputs.devcontainerTutorial)
+              writable: true
+        - class: EnvVarRequirement
+          envDef:
+            - envName: DOTNET_NOLOGO
+              envValue: "true"
+        - class: NetworkAccess
+          networkAccess: true
+      baseCommand: [dotnet, fsi, "./devcontainerTutorial/workflows/exampleChart2.fsx"]
+      inputs: 
+        devcontainerTutorial:
+          type: Directory
+      outputs: 
+        output_exampleChart2: 
+          type: Directory
+          outputBinding: 
+            glob: ./devcontainerTutorial/runs/execution/Results
+      ```
+
+3. With the Command-Line-Tools we can create the CWL workflow, that calls the two Command-Line-Tools
+
+      ```cwl title="mainWorkflow.cwl"
+      cwlVersion: v1.2
+      class: Workflow 
+      hints: 
+          DockerRequirement: 
+            dockerImageId: "devcontainerTutorial"
+            dockerFile: {$include: "./Dockerfile"}
+      requirements: 
+        - class: InitialWorkDirRequirement
+          listing: 
+            - entryname: tutorialDevcontainer 
+              entry: $(inputs.tutorialDevcontainer)
+              writable: true 
+        - class: MultipleInputFeatureRequirement 
+      inputs: 
+        devcontainerTutorial: Directory 
+        folder: string 
+      steps: 
+        exampleChart1: 
+          run: exampleChart1.cwl 
+          in: 
+            devcontainerTutorial: devcontainerTutorial
+          out: [output_exampleChart1]
+        exampleChart2: 
+          run: exampleChart2.cwl 
+          in: 
+            devcontainerTutorial: devcontainerTutorial
+          out: [output_exampleChart2]
+        expressionTool: 
+          run: exTool.cwl 
+          in: 
+            directory_array: [exampleChart1/output_exampleChart1, exampleChart2/output_exampleChart2]
+            newname: folder
+          out: [pool_directory]
+      outputs: 
+        outputMain:
+          type: Directory
+          outputSource: expressionTool/pool_directory
+      ```
+    The five scripts shown above are located in an ARC in the workflow directory. The next step is to create a **run.cwl** which is together with the **run.yml** located in the runs directory.
+
+4. To follow the ARC specification we need to create a **run.cwl** in the runs directory, that is calling our main workflow. The files are then stored in the ARC as follows:
+  
+    <FileTree>
+      - ...
+      - workflows 
+        - scrpits 
+          - exampleChart1.fsx 
+          - exampleChart2.fsx
+        - exampleChart1.cwl  
+        - exampleChart2.cwl 
+        - workflow.cwl 
+      - runs
+        - execution 
+          - run.cwl
+          - run.yml 
+      - ...
+    </FileTree>
+
+    The **run.cwl** looks like this: 
+
+      ```cwl title="run.cwl"
+      cwlVersion: v1.2
+      class: Workflow 
+      hints: 
+          DockerRequirement: 
+            dockerImageId: "devcontainerTutorial"
+            dockerFile: {$include: "./Dockerfile"}
+      requirements: 
+        - class: InitialWorkDirRequirement
+          listing: 
+            - entryname: tutorialDevcontainer 
+              entry: $(inputs.tutorialDevcontainer)
+              writable: true 
+        - class: MultipleInputFeatureRequirement 
+        - class: SubworkflowFeatureRequirement
+      inputs: 
+        devcontainerTutorial: Directory 
+        folder: string 
+      steps: 
+        mainWorkflow: 
+          run: ../../workflows/workflow.cwl 
+          in: 
+            devcontainerTutorial: devcontainerTutorial
+            folder: folder 
+          out: [outputMain]
+      outputs: 
+        outputMain: 
+          type: Directory
+          outputSource: mainWorkflow/outputMain
+      ```
+5. To finish our journey and to execute our CWL workflow we need the **run.yml** which is also located in the runs directory. 
+    
+      ```yaml title="run.yml" 
+      devcontainerTutorial: 
+          class: Directory 
+          path: ../../
+      folder: "Results" 
+      ``` 
+      :::tip 
+      Additional information about the YAML file can be found [here](https://www.commonwl.org/user_guide/topics/yaml-guide.html) 
+      :::
+
+</Steps>
+
+</Card>
+
+And now you have everything you need to run a CWL workflow within a Docker container. Just open your Powershell with WSL (or terminal, if you're using Linux) and run the following command: `cwltool ./workflow.cwl ./run.yml`. 
+:::tip 
+To install the CWL runner on your computer, follow these steps [here](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/cwl/cwl-runner-installation/)
+:::
