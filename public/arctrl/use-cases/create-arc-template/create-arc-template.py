@@ -1,6 +1,7 @@
 from arctrl.arc import ARC
 from arctrl.arctrl import ArcInvestigation, Person
 from arctrl.arctrl import JsonController
+
 import json
 
 # Path where the ARC should be created
@@ -30,37 +31,33 @@ assayJsonPaths = [
   ]
 
 # Add study
-
 def addStudyFromJson(studyJsonPath): 
     with open(studyJsonPath, encoding="utf-8") as f:
         studyJsonString = json.dumps(json.load(f))
 
     studyFromJson = JsonController.Study().from_json_string(studyJsonString)
     
-    inv.add_study(studyFromJson)
+    inv.AddStudy(studyFromJson)
 
 for s in studyJsonPaths:
   print(s)
   addStudyFromJson(s)
 
 # Add assay
-
 def addAssayFromJson (assayJsonPath):
   
   with open(assayJsonPath) as f:
     assayJsonString = json.dumps(json.load(f))
 
-  assayFromJson = JsonController.Study().from_json_string(assayJsonString)
+  assayFromJson = JsonController.Assay().from_json_string(assayJsonString)
 
-  inv.add_assay(assayFromJson)
+  inv.AddAssay(assayFromJson)
 
 for a in assayJsonPaths:
   addAssayFromJson(a)
 
 # Create ARC
-
 arc = ARC( isa = inv )
 
 # Write ARC to path
-
 arc.Write(arcPath)

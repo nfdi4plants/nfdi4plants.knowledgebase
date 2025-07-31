@@ -1,6 +1,6 @@
 ---
 title: Create ARCs from SOPs
-lastUpdated: 2025-07-01
+lastUpdated: 2025-07-31
 authors:
   - dominik-brilhaus
 ---
@@ -85,7 +85,7 @@ flowchart LR
 
 ### Study SOP: Plant Growth
 
-<Tabs syncKey="pl">
+<Tabs syncKey="arc-dual">
 
 <TabItem label="Tabular View">
 
@@ -118,7 +118,7 @@ import PlantGrowth from '/arctrl/use-cases/create-arc-template/PlantGrowth.arctr
 ### Assay SOP: Protein Digest with Trypsin
 
 
-<Tabs syncKey="pl">
+<Tabs syncKey="arc-dual">
 
 <TabItem label="Tabular View">
 
@@ -150,7 +150,7 @@ import ProtDigest from '/arctrl/use-cases/create-arc-template/ProtDigest-Trypsin
 
 The following script is split in two parts.
 
-### Define inputs and outputs
+### Part 1: Define inputs and outputs
 
 The first part includes the variable information, that needs to be adapted per ARC as highlighted, i.e.
   - the path to the ARC (`arcPath`)
@@ -160,24 +160,71 @@ The first part includes the variable information, that needs to be adapted per A
 
 In this example, the script uses only the two SOPs ("PlantGrowth" and "ProtDigest-Trypsin") introduced above, and it adds two contact persons. Both of these variables could be extended to add more SOPs or more persons one per line, respectively.
 
+import rawCodeFsx from '/arctrl/use-cases/create-arc-template/create-arc-template.fsx?url&raw'
+import rawCodePy from '/arctrl/use-cases/create-arc-template/create-arc-template.py?url&raw'
 
-import rawCode from '/arctrl/use-cases/create-arc-template/create-arc-template.fsx?url&raw'
+<Tabs syncKey="pl">
 
-<Code
-  code={rawCode.split('\n').slice(0, 34).join('\n')}
-  lang="fsharp"
-  mark={[8, 12, 13, 18, 19, 26, 32]}
-/>
+<TabItem label="FSharp" icon='seti:f-sharp'>
 
-### Combine and write the ARC
+  <Code
+    title="create-arc-template.fsx"
+    code={rawCodeFsx.split('\n').slice(0, 34).join('\n')}
+    lang="fsharp"
+    mark={[8, 12, 13, 18, 19, 26, 32]}
+  />
+
+</TabItem>
+
+<TabItem label="Python" icon='seti:python'>
+
+  <Code
+    title="create-arc-template.py"
+    code={rawCodePy.split('\n').slice(0, 32).join('\n')}
+    lang="python"
+    mark={[8, 12, 13, 18, 19, 25, 30]}
+  />
+
+</TabItem>
+</Tabs>
+
+### Part 2: Combine and write the ARC
 
 The second part of the script creates the ARC based on the provided information and SOPs.
 
-<Code
-  code={rawCode.split('\n').slice(34, 66).join('\n')}
-  lang="fsharp"
-/>
+
+<Tabs syncKey="pl">
+
+<TabItem label="FSharp" icon='seti:f-sharp'>
+
+  <Code
+    title="create-arc-template.fsx"
+    code={rawCodeFsx.split('\n').slice(34, 66).join('\n')}
+    lang="fsharp"
+  />
+
+</TabItem>
+
+<TabItem label="Python" icon='seti:python'>
+
+  <Code
+    title="create-arc-template.py"
+    code={rawCodePy.split('\n').slice(32, 68).join('\n')}
+    lang="python"
+  />
+
+</TabItem>
+</Tabs>
+
+
+
+
+
 
 ## Download example
 
 You can download the example script and SOPs <a href="/nfdi4plants.knowledgebase/arctrl/use-cases/create-arc-template.zip">here</a> to adapt them to your needs.
+
+
+
+
