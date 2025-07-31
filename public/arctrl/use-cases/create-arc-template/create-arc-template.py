@@ -40,7 +40,6 @@ def addStudyFromJson(studyJsonPath):
     inv.AddStudy(studyFromJson)
 
 for s in studyJsonPaths:
-  print(s)
   addStudyFromJson(s)
 
 # Add assay
