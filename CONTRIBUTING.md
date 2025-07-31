@@ -354,7 +354,7 @@ Then for multilanguage code blocks use the following structure:
 ```html
 <Tabs syncKey="pl">
 
-<TabItem label="FSharp" icon='seti:'>
+<TabItem label="FSharp" icon='seti:f-sharp'>
 // Your F# documentation here
 </TabItem>
 
