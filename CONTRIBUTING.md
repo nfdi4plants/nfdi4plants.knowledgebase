@@ -25,7 +25,8 @@ Your contribution to the DataPLANT Knowledge Base is highly appreciated. This gu
   - [Tables](#tables)
   - [Lists](#lists)
   - [Article cross-references](#article-cross-references)
-  - [Multilingual code](#multilingual-code)
+  - [Using tabs](#using-tabs)
+  - [ARC Representation](#arc-representation)
 
 ## Setup
 
@@ -334,7 +335,9 @@ Instead, use references starting from the `docs` folder as root and add `/nfdi4p
 [wiki associated to the ARC](/nfdi4plants.knowledgebase/datahub/datahub-arc-wiki)
 ```
 
-### Multilingual code
+### Using tabs
+
+#### Multilingual code
 
 Some software libraries of the DataPLANT ecosystem are transpiled and can be accessed from three different programming languages: 
   - FSharp
@@ -370,3 +373,26 @@ Then for multilanguage code blocks use the following structure:
 ```
 
 Make sure the `syncKey` is always `"pl"` (programming language), and the labels are written exactly as `FSharp`, `JavaScript` and `Python`.
+
+
+### ARC Representation
+
+The ARC metadata comes in [two representations](https://arc-rdm.org/details/arc-representation/): json (RO-Crate) and tabular (scaffold).
+To showcase these representations for different users (coders: json, biologists: table), you can use the `Tab` component and icons `seti:json` and `seti:xls`.
+
+```html
+<Tabs syncKey="arc-dual-view">
+
+<TabItem label="Tabular View" icon="seti:xls">
+
+// tabular or scaffold example
+
+</TabItem>
+
+<TabItem label="ARCtrl.json" icon="seti:json">
+
+// json example
+
+</TabItem>
+</Tabs>
+```
