@@ -39,7 +39,7 @@ First, we will prepare some ontology terms that we will use in the `Datamap`.
 <Tabs syncKey="pl">
 
 {/* FSHARP */}
-<TabItem label="FSharp" icon='seti:'>
+<TabItem label="FSharp" icon='seti:f-sharp'>
 ```fsharp
 open ARCtrl
 
@@ -115,7 +115,7 @@ Afterwards, we will initialize a `Datamap` object with the two `DataContext` obj
 <Tabs syncKey="pl">
 
 {/* FSHARP */}
-<TabItem label="FSharp" icon='seti:'>
+<TabItem label="FSharp" icon='seti:f-sharp'>
 ```fsharp
 let col1Entry = DataContext(
     name="assays/MyAssay/dataset/sugar_result.csv#col=1",
@@ -197,7 +197,7 @@ Using the `XlsxController` to write the `Datamap` to a singular Excel file, usab
 
 <Tabs syncKey="pl">
 {/* FSHARP */}
-<TabItem label="FSharp" icon='seti:'>
+<TabItem label="FSharp" icon='seti:f-sharp'>
 ```fsharp
 open ARCtrl.Spreadsheet
 
@@ -241,7 +241,7 @@ Include the `Datamap` in an `ARC` and write or update the whole `ARC`, which wil
 
 <Tabs syncKey="pl">
 {/* FSHARP */}
-<TabItem label="FSharp" icon='seti:'>
+<TabItem label="FSharp" icon='seti:f-sharp'>
 ```fsharp
 let arc = ARC.load("path_to_my_arc")
 
