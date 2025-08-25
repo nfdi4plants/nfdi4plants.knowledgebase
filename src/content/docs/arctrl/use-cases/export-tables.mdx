@@ -27,46 +27,84 @@ This is similar to [Swate's export](/nfdi4plants.knowledgebase/swate/json/#expor
 
 To follow this example you can download the public ARC `Facultative-CAM-in-Talinum` and store it parallel to the script.
 
-:::tip[Download example ARC]
-
   <Tabs>
     <TabItem label="via ARC Commander">
-    ```bash
-    arc get -n -r https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum.git
+    ```bash wrap=false
+    arc get --nolfs -r https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum.git
     ```
     </TabItem>
-    <TabItem label="via git">
-    ```bash
+    <TabItem label="via git" icon="seti:git">
+    ```bash wrap=false
     GIT_LFS_SKIP_SMUDGE=1 git clone --filter=blob:none https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum.git
     ```
     </TabItem>
   </Tabs>
-:::
 
-import rawCode from '/arctrl/use-cases/export-tables/export-tables.fsx?raw&url'
+
+import rawCodeFsx from '/arctrl/use-cases/export-tables/export-tables.fsx?raw&url'
+import rawCodePy from '/arctrl/use-cases/export-tables/export-tables.py?raw&url'
 
 ### Preparation
 
 First, load the required libraries and load the local ARC into an `ArcInvestigation` object for easy access.
 
-<Code
-  title="export-tables.fsx"
-  code={rawCode.split('\n').slice(0, 19).join('\n')}
-  lang="fsharp"
-  wrap="false"
-/>
+<Tabs syncKey="pl">
+
+<TabItem label="FSharp" icon='seti:f-sharp'>
+
+  <Code
+    title="export-tables.fsx"
+    code={rawCodeFsx.split('\n').slice(0, 19).join('\n')}
+    lang="fsharp"
+    wrap="false"
+  />
+
+</TabItem>
+
+<TabItem label="Python" icon='seti:python'>
+
+  <Code
+    title="export-tables.py"
+    code={rawCodePy.split('\n').slice(0, 16).join('\n')}
+    lang="python"
+  />
+
+</TabItem>
+</Tabs>
+
+
 
 ### Export a study
 
 We can simply create a function `exportStudyToJson`, which takes an `ArcInvestigation` object and a selected study identifier as inputs and writes the json (of type ARCtrl json) to a file named by the study identifier with the extension ".arctrl.json".
 In this example, we select "TalinumSamples-STRI" from the available studies. 
 
-<Code
-  title="export-tables.fsx"
-  code={rawCode.split('\n').slice(21, 37).join('\n')}
-  lang="fsharp"
-  wrap="false"
-/>
+
+<Tabs syncKey="pl">
+
+<TabItem label="FSharp" icon='seti:f-sharp'>
+
+  <Code
+    title="export-tables.fsx"
+    code={rawCodeFsx.split('\n').slice(20, 37).join('\n')}
+    lang="fsharp"
+    wrap="false"
+  />
+
+</TabItem>
+
+<TabItem label="Python" icon='seti:python'>
+
+  <Code
+    title="export-tables.py"
+    code={rawCodePy.split('\n').slice(17, 35).join('\n')}
+    lang="python"
+    wrap="false"
+  />
+
+</TabItem>
+</Tabs>
+
 
 ### Export an assay
 
@@ -74,24 +112,57 @@ In the same manner, we can create a function `exportAssayToJson`, which takes an
 In this example, we select "RNASeq" from the available assays. 
 
 
-<Code
-  title="export-tables.fsx"
-  code={rawCode.split('\n').slice(40, 56).join('\n')}
-  lang="fsharp"
-  wrap="false"
-/>
+<Tabs syncKey="pl">
+
+<TabItem label="FSharp" icon='seti:f-sharp'>
+
+  <Code
+    title="export-tables.fsx"
+    code={rawCodeFsx.split('\n').slice(38, 56).join('\n')}
+    lang="fsharp"
+    wrap="false"
+  />
+
+</TabItem>
+
+<TabItem label="Python" icon='seti:python'>
+
+  <Code
+    title="export-tables.py"
+    code={rawCodePy.split('\n').slice(37, 56).join('\n')}
+    lang="python"
+    wrap="false"
+  />
+
+</TabItem>
+</Tabs>
+
 
 
 ### Export a single table
 
 Instead of exporting a full study or assay, including all annotation tables and the respective metadata sheet, respectively, you can also export a single annotation table.
 
-<Code
-  title="export-tables.fsx"
-  code={rawCode.split('\n').slice(58, 76).join('\n')}
-  lang="fsharp"
-  wrap="false"
-/>
+
+
+<Tabs syncKey="pl">
+
+<TabItem label="FSharp" icon='seti:f-sharp'>
+
+  <Code
+    title="export-tables.fsx"
+    code={rawCodeFsx.split('\n').slice(58, 76).join('\n')}
+    lang="fsharp"
+    wrap="false"
+  />
+
+</TabItem>
+
+{/* <TabItem label="Python" icon='seti:python'>
+
+</TabItem> */}
+</Tabs>
+
 
 :::note[Swate import]
 This type of table is currently not supported by Swate import.
