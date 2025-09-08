@@ -7,6 +7,7 @@ authors:
   - dominik-brilhaus
   - lukas-weil
   - sabrina-zander
+  - kevin-frey
 ---
 
 import ViolaSays from '@components/ViolaSays.astro'
@@ -160,27 +161,26 @@ Instead of adding each individual building block to the table, we can use a gene
 
     1. Click on the assay's name (`SugarMeasurement`) in the file tree.
     2. Select the "SugarExtraction" table added in the previous step.
-    3. In the `New Table!` widget, click <Icons.Templates /> to `Start from an existing template!`.
-    4. Click on `Browse database`, now all DataPLANT curated templates are shown. 
-    5. To select a template from a different community click <Icons.Settings />. 
-    6. From the `Select community` dropdown, select "Training".
-    7. Click the name of the template `Training - Sugar extraction` and `select`.
-    8. Click `Add templates`.
-    8. Select `Import Type` with Units and `Append to active table`. 
-    9. You can expand `Select Columns` to view all building blocks of the template. 
+    3. In the `New Table!` widget, click <Icons.Templates /> to `Start with template!`. This will show you all DataPLANT curated templates.
+    4. To select a template from a different community click <Icons.Institution />.
+    6. From the dropdown, select "Training" and deselect "DataPLANT".
+    7. Click on the template `Training - Sugar extraction`.
+    8. Click `Import Templates`.
+    8. Configure `Import Type` to `..With Units` and `SugarExtraction` to `Append to active table`. 
+    9. You can expand `Preview Selected Columns` to view all building blocks of the template. 
 
         <ViolaSays>
             This shows me that the template has an **Input**, **Output** as well as two **Parameter** columns: "Vortex Mixer" and "Temperature"
         </ViolaSays>
 
-    10. Click `Import` to use the template.
+    10. Click `Submit` to use the template.
 
 
         Input [Sample Name]	| Parameter [Vortex Mixer] | Parameter [Temperature] | Output [Sample Name] 
         --- | --- | --- | --- 
             |     |     |   
 
-    9. At the bottom of the table, type `5` in the text field and click `+` to add 5 rows to your table for a total of 6 since one was added automatically.
+    9. At the bottom of the table, type `5` in the text field and click `+` to add 6 rows to your table for a total of 6 since one was added automatically.
     10. Transfer the sample names of your study's `Output [Sample Name]` to the `Input [Sample Name]` column.
 
         Input [Sample Name]	| Parameter [Vortex Mixer] | Parameter [Temperature] | Output [Sample Name] 
@@ -191,6 +191,10 @@ Instead of adding each individual building block to the table, we can use a gene
         RT1_leaf
         RT2_leaf
         RT3_leaf
+
+        :::note
+        Select multiple cells by clicking once on the first and the last cell while holding the `Shift` key. You can copy and paste multiple cells by right-clicking on the selected cells.
+        :::
 
     11. Add information of the `sugar_extraction_protocol.md` into the table, e.g. 
 
@@ -206,8 +210,8 @@ Instead of adding each individual building block to the table, we can use a gene
 
     12. Fill the `Output [Sample Name]` column: 
         - Select the six cells from `Input`, and copy the sample names (right-click -> Copy)
-        - Select the cell below `Output [Sample Name]` and paste the sample names (right-click -> Paste all)
-        - Click Right-click -> Update on a cell below `Output [Sample Name]` to change the sample names
+        - Select the cells below `Output [Sample Name]` and paste the sample names (right-click -> Paste)
+        - Right-click a cell in the column `Output [Sample Name]`. Then select `Edit` and `Update Rows` in the opened field to update all rows at once.
         - Type "leaf" in the `Regex` and "sugar-ext" in the `Replacement` fields
         - Click `Submit`
 
@@ -233,8 +237,8 @@ We follow the same steps to fill the **Sugar Measurement** table.
 <Card icon="pen" title="ARCitect">
     <Steps>
     1. Select the "SugarMeasurement" table.
-    2. Load the template `Training - Sugar measurement` 
-    3. Add the ` Output [Sample Name]` values (*_sugar-ext) of the "SugarExtraction" to the `Input [Sample name]` column
+    2. Click `Utilize prior output` and `Import selected output column` to use the (*_sugar-ext) values of the "SugarExtraction" table.
+    3. Click on the <Icons.Templates /> button in the top bar and import the template `Training - Sugar measurement`, following the same steps as before. this will not replace the existing input column.
     4. Fill the parameter columns
         - Parameter [`technical replicate`] of 1,2,3,1,2,3
         - Parameter [`sample volume`] of 10 `microliter`

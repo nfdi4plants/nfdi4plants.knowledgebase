@@ -13,6 +13,7 @@ import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
 import Mermaid from '@components/mdx/Mermaid.astro'
+import Icons from '@components/swate/Icons';
 
 import Sop from '@images/start-here/arc-prototypic-assay-sop-proteomics.svg'
 
@@ -69,8 +70,8 @@ Follow the same steps as before to add two assays and sort the available demo da
 
     1. Create a new annotation table for the assay `Proteomics_MS`.
     2. In the bottom-right corner click `<` to open a panel on the right.
-    3. On top of the panel, navigate to the templates tab.
-    4. In the "Add template(s) from file" section, select ARCtrl and click `Upload protocol`.
+    3. On top of the panel, navigate to the JSON import tab <Icons.FileImport />.
+    4. Select `ARCtrl` and `Assay`, then click on `Choose File`.
     5. Navigate to and select the file `AssayTemplate_Proteomics_MS.json` and click `open`.
         - Select the "Import Type" `..With Values`
         - Check the `Import` boxes
