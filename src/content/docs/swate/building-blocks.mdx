@@ -7,8 +7,10 @@ authors:
   - patrick-blume
 ---
 
+import Icons from '@components/swate/Icons';
 import { Steps } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
+import SwateOverview from '@images/swate/swate-alpha-overview.png'
 
 import { Icon } from '@astrojs/starlight/components';
 
@@ -20,25 +22,11 @@ Check out the ISA-XLSX specification to find out more about the individual build
 <a href={"https://github.com/nfdi4plants/ARC-specification/blob/main/ISA-XLSX.md"}> ISA-XLSX specification <Icon name="external" class="!inline"/></a>
 :::
 
-
-<Tabs syncKey="swateHost">
-<TabItem label="Browser">
-
-![](@images/swate/swate-alpha-add-building-block.png)
-
-</TabItem>
-<TabItem label="Excel">
-
-![](@images/swate/swate-excel-add-building-block.png)
-
-</TabItem>
-</Tabs>
-
 <Steps>
   <ol>
-    1. Click on "Add building block" in the top bar or in the sidebar.
-    2. Choose the type of building block you want to add ( a ). For more information on building block types, click [here](/nfdi4plants.knowledgebase/swate/building-blocks).
-    3. If you chose a descriptive building block type, use search field ( b ) to [search for an ontology term](/nfdi4plants.knowledgebase/swate/term-search). This term together with your building block type describes your workflow. If you want to add a building block with a unit, activate the unit box ( c ) and use the search field to look for a fitting unit term.
+    1. Click on "Add building block" (<Icons.CreateAnnotationTable />) in the <a href={SwateOverview.src} target="_blank">Sidebar</a> or <a href={SwateOverview.src} target="_blank">Widgets</a>.
+    2. Choose the type of building block you want to add, e.g. Parameter, Input, Factor... .
+    3. If you chose a descriptive building block type, use the search field to [search for an ontology term](/nfdi4plants.knowledgebase/swate/term-search). This term, together with your building block type, describes your workflow. If you want to add a building block with a unit, activate the unit box and use the search field to look for a fitting unit term.
       
         **Example 1:** `Component [instrument model]` will describe any mass spectrometry instrument model used in your workflow ([source](http://www.ontobee.org/ontology/MS?iri=http://purl.obolibrary.org/obo/MS_1000031)).
             
@@ -71,20 +59,20 @@ Check out the ISA-XLSX specification to find out more about the individual build
       <Tabs syncKey="swateHost">
       <TabItem label="Browser">
 
-        4. Click "Add column" to insert the building block into an existing [Annotation Table](/nfdi4plants.knowledgebase/swate/annotation-table). 
-        The new building block will be added to the right side of the table. To change the position you can use the context menu.
+        4. Click "Add column" (<Icons.BuildingBlock />) to insert the building block into an existing [Annotation Table](/nfdi4plants.knowledgebase/swate/annotation-table). 
+        The new building block will be added after the selected column in the table. To change the position you can use the context menu.
 
         </TabItem>
         <TabItem label="Excel">
 
-        4. Click "Add column" to insert the building block into an existing [Annotation Table](/nfdi4plants.knowledgebase/swate/annotation-table). 
-        The new building block will be added at your selected column of the table. 
-        When you have selected a column outside the table or the worksheet contains no annotation table, "Add column" fails.
+        4. Click "Add column" (<Icons.BuildingBlock />) to insert the building block into an existing [Annotation Table](/nfdi4plants.knowledgebase/swate/annotation-table). 
+        The new building block will be added after the selected column of the table. 
+        When a column outside the table is selected or the worksheet contains no annotation table, "Add column" fails.
+
+        5. Depending on the [building block type](/nfdi4plants.knowledgebase/swate/building-blocks), multiple columns might be created in the excel file.
 
       </TabItem>
       </Tabs>
-
-    5. Depending on the [building block type](/nfdi4plants.knowledgebase/swate/building-blocks), multiple columns might be created in the excel file.
   </ol>
 </Steps>
 

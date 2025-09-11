@@ -7,64 +7,25 @@ authors:
   - patrick-blume
 ---
 
+import Icons from '@components/swate/Icons';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ## Template selection
 
-A good starting point for your data annotation is using a predefined template. For this, select the option "Start with template" or click the "Add Template" widget at the top or the "Templates" tab in the sidebar. By default, templates provided by DataPLANT are displayed. By clicking on the button "Filter Communities" on the right of the search input, you can select and deselect the communities you want to choose templates from. When you have selected your templates by clicking on them, click on the "Import Templates" button to select the import parameters of your templates."
+A good starting point for your data annotation is using a predefined template. For this, select the option "Start with template" or click the "Add Template" (<Icons.Templates />) widget at the top or the "Templates" tab (<Icons.Templates />) in the sidebar. By default, templates provided by DataPLANT are displayed. By clicking on the button "Filter Communities" on the right of the search input, you can select and deselect the communities you want to choose templates from. When you have selected your templates by clicking on them, click on the "Import Templates" button to select the import parameters of your templates."
 
 :::note[Get in contact]
 If you have any problems in using the templates please contact us [via Swate issues](https://github.com/nfdi4plants/Swate/issues/new/choose) or if you want to discuss existing templates or request new ones, please contact us [via templates issues](https://github.com/nfdi4plants/SWATE_templates/issues/new/choose).
 :::
 
-<Tabs syncKey="swateHost">
-<TabItem label="Browser">
+## Template information
 
-![](@images/swate/swate-alpha-add-template.png)
-
-</TabItem>
-<TabItem label="Excel">
-
-![](@images/swate/swate-excel-add-template.png)
-
-</TabItem>
-</Tabs>
+You can view additional information of templates without selecting and viewing them in the import modal. For that, you can just click on the arrow down menu in the template search. There you will see additonal information, regarding its authors, current version and associated organisation. The display of the additional information can easily be removed by clicking on the x button on its right side.
 
 ## Template import
 
-In the import modal of your templates you can select different parameters, that determine the way a template will be imported. The "Import Type" determines, whether you import only the headers of your template, add units to the terms, or also import the example values that are part of the template. The next category enables you to decide for each template whether to be added to the currently active table, to be imported as a new table or not to be imported at all. Finally, you can customize the imported table further by clicking on the "Preview Selected Columns". Here, all columns of the table are represented and also their values. You can click on the columns that you do not want to import and click again on them to import them again.
-
-<Tabs syncKey="swateHost">
-<TabItem label="Browser">
-
-![](@images/swate/swate-alpha-import-template.png)
-
-</TabItem>
-<TabItem label="Excel">
-
-![](@images/swate/swate-excel-import-template.png)
-
-</TabItem>
-</Tabs>
+The "Import Type" determines, whether you import only the headers of your template, add units to the terms, or also import the example values that are part of the template. The next category enables you to decide for each template whether to be added to the currently active table, to be imported as a new table or not to be imported at all. Finally, you can customize the imported table further by clicking on the "Preview Selected Columns". Here, all columns of the table are represented and also their values. You can click on the columns that you do not want to import and click again on them to import them again.
 
 ## Additional Filter Parameters
 
-ou can filter the templates not only by their community but also by authors, tags, and specific template names. In order to do so, type the desired value into the search field and click on it. It will be added to the search input as an additional filter parameter. In order to do so, type the desired one into the search field and click on it. It will be added to the search input then and be an additional filter parameters. These search parameters can be removed by clicking on them in the search input. For an easier identification, they have different symbols.
-
-### Authors
-
-![](@images/swate/swate-author-symbol.png)
-
-### Tags
-
-![](@images/swate/swate-tag-symbol.png)
-
-### Templates
-
-![](@images/swate/swate-template-symbol.png)
-
-## Template information
-
-You can view additional information of templates without selecting them and viewing them in the import modal. For that, you can just click on the arrow down menu in the template search. There you will see additonal information, regarding its authors, current version and associated organisation. The display of the additional information can easily be removed by clicking on the x button on its right side.
-
-![](@images/swate/swate-template-details.png)
+You can filter the templates not only by their community but also by authors, tags, and specific template names. In order to do so, type the desired value into the search field and click on it. It will be added to the search input as an additional filter parameter. In order to do so, type the desired one into the search field and click on it. It will be added to the search input then and be an additional filter parameters. These search parameters can be removed by clicking on them in the search input. For an easier identification, they have different icons.
