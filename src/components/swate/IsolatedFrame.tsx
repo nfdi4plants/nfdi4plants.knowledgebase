@@ -6,7 +6,7 @@ export default function IsolatedFrame({ children, ...props }: { children: React.
 
   useEffect(() => {
     if (ref.current && ref.current.contentDocument) {
-      createRoot(ref.current.contentDocument.body).render(children);
+      createRoot(ref.current.contentDocument.body, ).render(children);
     }
   }, []);
 

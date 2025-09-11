@@ -53,13 +53,15 @@ Hence the data analysis can simply be packaged as an assay, with the computation
         - ...
         </FileTree>
 
-    4. Add a new annotation table to `Visualization`.
-    5. Add the following building blocks:
-        - `Input [Data]`: Use File Picker to reference the proteomics output file.
+    4. Add a new annotation table to `Visualization` and click `Create basic table!`.
+    5. This will create the following building blocks:
+        - `Input [Sample Name]`: Use File Picker to reference the proteomics output file.
         - `Protocol REF`: Use File Picker to reference python script.
-        - `Output [Data]`: Use File Picker to reference to heatmap result file.
-    
-        `Input [Data]`	 | `ProtocolREF` |  `Output [Data]` 
+        - `Output [Sample Name]`: Use File Picker to reference to heatmap result file.
+
+    6. `Rightclick` then `Edit` to update the input and output columns to be `Input [Data]` and `Output [Data]` respectively.
+
+        `Input [Data]`	 | `ProtocolREF` |  `Output [Data]`
         ---------------- | -----------   | -------------- 
         sugar_result.csv | heatmap.py    | heatmap.svg
 

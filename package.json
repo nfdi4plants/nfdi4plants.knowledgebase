@@ -16,7 +16,7 @@
     "@astrojs/starlight-tailwind": "^3.0.0",
     "@astrojs/tailwind": "^5.1.5",
     "@iconify-json/simple-icons": "^1.2.8",
-    "@nfdi4plants/swate-components": "^1.0.0-beta.37",
+    "@nfdi4plants/swate-components": "^1.0.0-rc.4",
     "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.5",
     "astro-icon": "^1.1.1",
