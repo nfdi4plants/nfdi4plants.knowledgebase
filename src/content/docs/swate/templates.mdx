@@ -1,6 +1,6 @@
 ---
 title: Templates
-lastUpdated: 2024-04-26
+lastUpdated: 2025-09-11
 authors: 
   - kevin-frey
   - stella-eggels
@@ -11,7 +11,7 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ## Template selection
 
-A good starting point for your data annotation is using a predefined template. It displays you all available templates of your selected communities. By clicking on the button "Filter Communities", on the right of the search input, you can select and deselct the communites you want to choose templates from. By default DataPlant communities are displayed. When you have selected your templates by clicking on them, you click on the "Import Templates" button, to select the import parameters of your templates.
+A good starting point for your data annotation is using a predefined template. For this, select the option "Start with template" or click the "Add Template" widget at the top or the "Templates" tab in the sidebar. By default, templates provided by DataPLANT are displayed. By clicking on the button "Filter Communities" on the right of the search input, you can select and deselect the communities you want to choose templates from. When you have selected your templates by clicking on them, click on the "Import Templates" button to select the import parameters of your templates."
 
 :::note[Get in contact]
 If you have any problems in using the templates please contact us [via Swate issues](https://github.com/nfdi4plants/Swate/issues/new/choose) or if you want to discuss existing templates or request new ones, please contact us [via templates issues](https://github.com/nfdi4plants/SWATE_templates/issues/new/choose).
@@ -32,7 +32,7 @@ If you have any problems in using the templates please contact us [via Swate iss
 
 ## Template import
 
-In the import modal of your templates you can select different parameter, that determine the way a template will be imported. The "Import Type" determines, whether you import a only the headers of your template, add units to the terms, or also import the values that are part of the template. The "MIMS" category enables you to decide for each template to be added to the currently active table, to be imported as a new table or not to be imported at all. Finally, you can customize the imported table further by clicking on the "Preview Selected Columns". Here, all columns of the table are represented and also their values. You can click on the columns that you do not want to import and click again on them to import them again.
+In the import modal of your templates you can select different parameters, that determine the way a template will be imported. The "Import Type" determines, whether you import only the headers of your template, add units to the terms, or also import the example values that are part of the template. The next category enables you to decide for each template whether to be added to the currently active table, to be imported as a new table or not to be imported at all. Finally, you can customize the imported table further by clicking on the "Preview Selected Columns". Here, all columns of the table are represented and also their values. You can click on the columns that you do not want to import and click again on them to import them again.
 
 <Tabs syncKey="swateHost">
 <TabItem label="Browser">
@@ -49,7 +49,7 @@ In the import modal of your templates you can select different parameter, that d
 
 ## Additional Filter Parameters
 
-You can filter the templates not only by their community but also by authors, tags, and specific templates. In order to do so, type the desired one into the search field and click on it. It will be added to the search input then and be an additional filter parameters. These search parameters can be removed by clicking on them in the search input. For an easier identification, they have different symbols.
+ou can filter the templates not only by their community but also by authors, tags, and specific template names. In order to do so, type the desired value into the search field and click on it. It will be added to the search input as an additional filter parameter. In order to do so, type the desired one into the search field and click on it. It will be added to the search input then and be an additional filter parameters. These search parameters can be removed by clicking on them in the search input. For an easier identification, they have different symbols.
 
 ### Authors
 
@@ -65,6 +65,6 @@ You can filter the templates not only by their community but also by authors, ta
 
 ## Template information
 
-You can view additional information of templates without selecting them and viewing them in the import modal. For that, you can just click on the arrow down menu in the template search. There you will see additonal information, regadring its authors, current version and associated organisation. The display of the additional information can easily be removed by clicking on the x button on its right side.
+You can view additional information of templates without selecting them and viewing them in the import modal. For that, you can just click on the arrow down menu in the template search. There you will see additonal information, regarding its authors, current version and associated organisation. The display of the additional information can easily be removed by clicking on the x button on its right side.
 
 ![](@images/swate/swate-template-details.png)
