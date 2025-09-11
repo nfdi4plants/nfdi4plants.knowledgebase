@@ -18,8 +18,11 @@ While this page will focus on the ontology term search, it will also feature use
 - [Term Insert](#swatedb)
 - [Relationship-Directed Search](#relationship-directed-search)
 
-You can find ontology term search fields on the *Building Blocks* and on the *Ontology Term Search* tab in the <a href={SwateOverview.src} target="_blank">sidebar</a>.
+You cann access the ontology term search fields in different ways. You can select the *Building Blocks* and on the *Ontology Term Search* in the <a href={SwateOverview.src} target="_blank">sidebar</a>. Alternatively, you can start typing in a cell of your annotation table and the tearm search opens automatically. In the combobox that is opening, you can click on a term to add it to your annotation table, to insert ontology terms in an [ISA-Tab conform way](https://isa-specs.readthedocs.io/en/latest/isatab.html#ontology-annotations).
 
+When using the ontology term search in the sidebar, click "Fill selected cells with this term" to add it to your table. When using the term search within your table, the term will automatically be added in the proper format once you select the term. 
+
+![Image highlighting ontology term search example](@images/swate/swate-alpha-ontology-term-search-example.png)
 
 ## Usage
 
@@ -27,19 +30,10 @@ You can find ontology term search fields on the *Building Blocks* and on the *On
 <TabItem label="Browser">
 
 ![Image highlighting important components of the swate in-table term search](@images/swate/swate-alpha-ontology-termsearch4.png)
-*When you start typing a word to search for a specific term, both child terms and unrelated terms will be suggested. You can recognize the terms that are related to your building block header (parent term, b) by the symbol in front of the terms ( c ).*
+*When you start typing a word to search for a specific term, both child terms and unrelated terms will be suggested. You can recognize the terms that are related to your building block header (parent term) by the symbol in front of the terms.*
 
-You can find the "Ontology term search" function in the respective tab in the side bar after double clicking into a cell. With this function you will insert ontology terms in an [ISA-Tab conform way](https://isa-specs.readthedocs.io/en/latest/isatab.html#ontology-annotations).
-
-Type in the search field to trigger the auto-complete function and find terms. Select the term you want. When using the ontology term search in the sidebar, click "Fill selected cells with this term" to add it to your table. When using the term search within your table, the term will automatically be added in the proper format once you select the term. 
-
-:::tip[Toggle Search]
-You can toggle the auto complete search by clicking on the magnifying glass ( a ) or pressing <kbd>Tab</kbd> with the search field active!
-:::
-
-:::tip[Search all Children]
-Double click into a empty search field to return up to 500 children of a given [parent term](#relationship-directed-search).
-:::
+![Image highlighting important components of the swate in-table term search](@images/swate/swate-alpha-ontology-termsearch4-only-children.png)
+*When you press the arrow down button in an active cell, it will only suggest child terms of your building block header (parent term).*
 
 </TabItem>
 <TabItem label="Excel">
@@ -55,6 +49,15 @@ Select the term you want and add it to the selected building blocks of your tabl
 
 </TabItem>
 </Tabs>
+
+![Image highlighting important components of the swate in-table term search](@images/swate/swate-alpha-details.png)
+You can open the swate term search details modal by clicking F2 on a term in the search. It will show additional information on its information tab.*
+
+![Image highlighting important components of the swate in-table term search](@images/swate/swate-alpha-details-advanced-search.png)
+*You can also use the advanced term search for a more refined search approach in the term search details modal. Just click on the magnifying glass with the + icon in the middle of the term search details modal.*
+
+![Image highlighting important components of the swate in-table term search](@images/swate/swate-alpha-ontology-termsearch4-settings.png)
+*In addition to the information tab or advanced search tab, you can also access several term setting by clicking on the Termsearch Settings (cog) tab. Several term settings are displayed here, including the Id of its parent.*
 
 Terms will be added to the selected rows in the format:
 
@@ -81,8 +84,6 @@ Access to the SwateDB with a list of established, [external ontologies](/nfdi4pl
 External ontologies are typically taken from the [OBO Foundry](https://obofoundry.org) and updated regularly.
 
 Search through our database with autocomplete search on term names.
-
-You can also use the advanced term search for a more refined search approach. Just click on the blue link close to the related search field in the side bar.
 
 :::note
 If you miss a term or ontology, please follow the [DPBO contribution guide](https://github.com/nfdi4plants/nfdi4plants_ontology) to let us know.
