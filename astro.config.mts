@@ -67,6 +67,7 @@ export default defineConfig({
           label: '– Check point 3 –', link: 'start-here/check-point3', attrs: { style: 'font-style: italic; color: grey; padding-left: 10%' },
           },
           'start-here/validate-arc',
+          'start-here/review-arc',
           'start-here/publish-arc',
           {
           label: '– Check point 4 –', link: 'start-here/check-point4', attrs: { style: 'font-style: italic; color: grey; padding-left: 10%' },
