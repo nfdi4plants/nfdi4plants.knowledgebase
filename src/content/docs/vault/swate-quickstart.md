@@ -24,13 +24,11 @@ DataPLANT provides the tool [Swate](/nfdi4plants.knowledgebase/swate) to support
 
 - To create an annotation table with the [Swate standalone](https://swate-alpha.nfdi4plants.org/) in your browser, click "New File" and select which kind of annotation table you want to create. If you already created a isa.study.xlsx or isa.assay.xlsx file, you can select "Import File" to modify and add to it.
 
-![](@images/swate/swate-alpha-new-file.png)
-
+![swate-alpha-new-file.png](https://raw.githubusercontent.com/nfdi4plants/nfdi4plants.knowledgebase/a86e66f8204a9d4ad56b99f912357068cec54ad9/src/assets/images/swate/swate-alpha-new-file.png)
 
 - To create an annotation table within ARCitect, add a new table to your assay or study by clicking the plus (+) symbol next to your metadata sheet
 
-![](@images/swate/swate-alpha-arcitect-newtable.png)
-
+The Image swate-alpha-arcitect-newtable is no longer available!
 
 - Fill in the metadata sheet of your study or assay
 
@@ -53,8 +51,7 @@ Briefly:
 
 4. If you want to add a building block with a unit, activate the unit box ( d ) and use the search field to look for a fitting unit term, e.g. degree Celsius as unit for Parameter \[temperature\].
 
-![](@images/swate/swate-alpha-add-building-block.png)
-
+The Image swate-alpha-add-building-block is no longer available!
 
 5. For more information on customizing your annotation table click [here](/nfdi4plants.knowledgebase/swate/building-blocks).
 
@@ -62,7 +59,7 @@ Briefly:
 
 Alternatively, you can also use one of DataPLANT’s [Swate templates](/nfdi4plants.knowledgebase/swate/templates). You can find them via the "add template" button, next to the "add building block" button.  
 
-![](@images/swate/swate-alpha-add-template.png)
+The Image swate-alpha-add-template is no longer available!
 
 ## Annotate your samples and data
 
@@ -74,4 +71,4 @@ Add rows beneath the building blocks with the plus symbol ( A ) and fill the cel
 
 3. If you still could not find a fitting term, use free text input.
 
-![](@images/swate/swate-alpha-ontology-termsearch3.png)
+The Image swate-alpha-move-column3 is no longer available!

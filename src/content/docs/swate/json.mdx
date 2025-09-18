@@ -1,6 +1,6 @@
 ---
 title: JSON import and export
-lastUpdated: 2025-06-25
+lastUpdated: 2025-09-15
 authors: 
   - kevin-frey
   - patrick-blume
@@ -8,38 +8,17 @@ authors:
   - sabrina-zander
 ---
 
+import Icons from '@components/swate/Icons';
 import SwateOverview from '@images/swate/swate-alpha-overview.png'
-import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 Utilizing [ARCtrl](https://github.com/nfdi4plants/ARCtrl), Swate supports multiple different import and export formats for JSON. 
 
 ## Export
 
-The "File Export" function can be found in the <a href={SwateOverview.src} target="_blank">Sidebar</a>.
+In order to export your file, click on "File Export" (<Icons.FileExport />) in the <a href={SwateOverview.src} target="_blank">Sidebar</a>. Here you can select between different official JavaScript Object Notation (JSON) formats. JSON is a lightweight format for storing and exchanging formats between different systems.
 
-<Tabs syncKey="swateHost">
-<TabItem label="Browser">
-
-You can export your metadata sheet simply by clicking on "Download".
-
-</TabItem>
-<TabItem label="Excel">
-
-In contrast to the web version of Swate, you cannot simply download your annotation tables.
-
-In order to do so, you have to create a [top level metadata sheet](/nfdi4plants.knowledgebase/swate/top-level-metadata).
-
-
-</TabItem>
-</Tabs>
-
-![](@images/swate/json-export.png)
-
-
+After selecting your desired format you export your file by clicking on the "Download" button. A word of warning here, in Excel you have to create a [top level metadata sheet](/nfdi4plants.knowledgebase/swate/top-level-metadata) before you can export it.
 
 ## Import 
 
-The "File Import" function can be found next to the export function in the side bar. For importing a filled Swate table, select the same format that was used for the export, upload your file and select your desired import options.
-
-![](@images/swate/json-import.png)
-
+In order to import a file, click on "File Import" (<Icons.FileImport />) in the <a href={SwateOverview.src} target="_blank">Sidebar</a>. For importing a filled Swate table, select the same JSON format that was used for the export. Additionally, you also have to select the fitting [ISA file type](/nfdi4plants.knowledgebase/core-concepts/isa) that was used for the export. Next, you upload your file and select your desired import options, e.g. annotate to existing table, import with values and so on.

@@ -2,13 +2,14 @@
 title: Top Level Metadata
 sidebar:
   order: 2
-lastUpdated: 2024-11-14
+lastUpdated: 2025-09-15
 authors: 
   - kevin-frey
   - stella-eggels
   - patrick-blume
 ---
 
+import Icons from '@components/swate/Icons';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 :::tip
@@ -23,8 +24,6 @@ Consider reading about [Swate](/nfdi4plants.knowledgebase/swate)
 To create an annotation table file with the [Swate standalone](https://swate-alpha.nfdi4plants.org/) in your browser, click "New File" and select which kind of file (investigation, study, assay) you want to create. 
 If you already created a `isa.study.xlsx` or `isa.assay.xlsx` file, you can select "Import File" to modify and add to it.
 
-![Image showing add new file option in Swate](@images/swate/swate-alpha-new-file.png)
-
 In the "Metadata" sheet, you can fill in general metadata about your investigation, study or assay.
 
 </TabItem>
@@ -36,15 +35,11 @@ In contrast to [Swate standalone](https://swate-alpha.nfdi4plants.org/) in your 
 
 In order to export your data as [JSON](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/swate/json/) a top level metadata file is needed but it can be added afterwards and be changed any time, without affecting the rest of your data.
 
-You create by clicking the "Create Metadata" icon in the nabar of the sidebar. When a top level metadatasheet is available, the different properties of it will be loaded, enabling you to manipulate the data outside the sheet itself or delete it.
+You create by clicking "Create Metadata" (<Icons.CreateMetadata />) in the sidebar. When a top level metadatasheet is available, the different properties of it will be loaded, enabling you to manipulate the data outside the sheet itself or delete it.
 When no top level meta data sheet is available, you can determine its [Type](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/arc-commander/isa/).
-
-![Image showing add new file option in Swate](@images/swate/swate-excel-create-top-level-metadata.png)
 
 After you decided its type, the sheet with the basic information of the top level metadata will be created. While the dialogue is open in the sidebar, changes in the sheet will not be recognized.
 When you reopen the dialogue to adapt your top level metadata, the changes in the sheet will be present now.
-
-![Image showing add new file option in Swate](@images/swate/swate-excel-update-top-level-metadata.png)
 
 </TabItem>
 </Tabs>
