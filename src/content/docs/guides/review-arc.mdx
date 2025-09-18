@@ -1,5 +1,5 @@
 ---
-title: Review your ARC
+title: Validate, Review & Publish your ARC
 sidebar:
   order: 11
 lastUpdated: 2025-09-16
@@ -11,13 +11,22 @@ import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 
+import {Content as ValidateARC} from '../start-here/validate-arc.mdx';
+import {Content as PublishARC} from '../start-here/publish-arc.mdx';
+
+
+<ValidateARC />
+
+
+## Review your ARC
+
 <ViolaSays>
 The validation tests pass, what else should I check before submitting my ARC for publication?
 </ViolaSays>
 
-The validation packages help you identify many potential issues with your ARC, but they can't catch everything. Below you will find a checklist to help you prepare your ARC for publication.
 
-## Check the ARC repository on DataHUB
+
+### Check the ARC repository on DataHUB
 
 <Card icon="pen" title="DataHUB repository">
     <Steps>
@@ -32,7 +41,7 @@ The validation packages help you identify many potential issues with your ARC, b
     </Steps>
 </Card>
 
-## Check the ARC (e.g. in ARCitect)
+### Check the ARC (e.g. in ARCitect)
 
 Next, open the ARC itself, and run through everything one last time. Or ask somebody else to have a look at your ARC to make sure it's understandable.
 
@@ -93,4 +102,9 @@ To check the overall consistency of your ARC, make sure that the full connection
 
     </Steps>
 </Card>
+
+
+
+
+<PublishARC />
 
