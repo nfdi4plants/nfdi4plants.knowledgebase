@@ -7,48 +7,38 @@ authors:
   - saskia-hiltemann
 ---
 
-import ViolaSays from '@components/ViolaSays.astro'
-import { Steps } from '@astrojs/starlight/components';
-import { Card } from '@astrojs/starlight/components';
-
-import {Content as ValidateARC} from '../start-here/validate-arc.mdx';
-import {Content as PublishARC} from '../start-here/publish-arc.mdx';
-
-
 <ValidateARC />
 
 
-## Review your ARC
+## Reviewing your ARC before publication
 
-<ViolaSays>
-The validation tests pass, what else should I check before submitting my ARC for publication?
-</ViolaSays>
-
-
+Before an ARC can be published, it must clearly and completely describe the data it contains. In this guide we outline things to consider before before submitting your ARC for publication.
 
 ### Check the ARC repository on DataHUB
+
+First, check the ARC's top level information:
 
 <Card icon="pen" title="DataHUB repository">
     <Steps>
 
     1. Open your ARC on [PLANTDataHUB](https://git.nfdi4plants.org)
     2. Is the name of the repository descriptive?
-    3. Check the icon behind the repository name. The visibility should be set to public. You can change the visibility under `Settings -> General -> Visibility, project features, permissions`
-    4. Check the `README.md`, does it contain useful information? This is the first thing people will see when they look at your ARC on DataHUB.
+    3. Check the icon behind the repository name. The visibility should be set to public. You can change the visibility under `Settings -> General -> Visibility, project features, permissions` (This is currently the best way to ensure that the people reviewing the corresponding publication have access to the ARC.)
+    4. Check the `README.md`, does it contain useful information? This is the first thing people will see when they look at your ARC on DataHUB and is a useful way to 'orientate' the viewer in the ARC. (However, be sure that any important information in the README is also contained within the actual ARC structure in order to adhere to the ISA framework.)
     5. Does your repository have a `LICENSE` file? In the panel on the right you will find a button to add a license. There are many license templates available to choose from. We recommend an open license such as `MIT` or `Creative Commons`
-    5. Check the **Project Storage** on the right side. Is most of the storage space LFS storage?
+    6. Check the **Project Storage** on the right side. Is most of the storage space LFS storage?
 
     </Steps>
 </Card>
 
 ### Check the ARC (e.g. in ARCitect)
 
-Next, open the ARC itself, and run through everything one last time. Or ask somebody else to have a look at your ARC to make sure it's understandable.
+Next, open the ARC itself, and run through everything one last time, or else ask a freind or colleauge to have a look at your ARC to make sure it's understandable.
 
 <Card icon="pen" title="Investigation">
     <Steps>
     1. Are the title and description clear and useful?
-    2. Check the contacts. Anybody missing? Is all the data (name, email, ORCiD) for the contacts correct and complete?
+    2. Check the contacts. Are all collaborators included? Is all data (name, email, ORCiD) for the contacts correct and complete?
 
 
     </Steps>
@@ -57,14 +47,15 @@ Next, open the ARC itself, and run through everything one last time. Or ask some
 <Card icon="pen" title="Studies">
 For each study in your ARC, check that:
     <Steps>
-    1. Is the study metadata correct, complete and informative?
-    2. Check all the annotation tables
-       - Are the columns using ontology terms where possible?
-       - Are the column types (e.g. characteristic, parameter) correct?
-       - Check the input column header, does it match what is in the column? This can be `Input[Source Name]`, `Input[Sample Name]`, `Input[Material]`, or `Input[Data]`
-       - Do columns have units (where applicable)?
-       - Are there columns missing? Is the data fully described?
-    3. Are there protocol documents in the `protocols` folder? If so, are they referenced somewhere via a `ProtocolREF` column?
+    1. The study metadata is correct, complete and informative.
+    2. Within all annotation tables:
+       - Columns use ontology terms where possible.
+       - Column types (e.g. characteristic, parameter) are correct.
+       - Input column headers match the 'type' of input in the column (this can be `Input[Source Name]`, `Input[Sample Name]`, `Input[Material]`, or `Input[Data]`).
+       - Columns have units (where applicable).
+       - There are no missing columns.
+       - The data is fully described.
+    3. There are protocol documents in the `protocols` folder AND they are referenced in the corresponding annotation sheet via a `ProtocolREF` column.
 
     </Steps>
 </Card>
@@ -72,16 +63,16 @@ For each study in your ARC, check that:
 <Card icon="pen" title="Assays">
 For each assay in your ARC, check that:
     <Steps>
-    1. Is the assay metadata correct, complete and informative?
-       - Is the technology metadata set?
-    2. Check all the annotation tables
-       - Are the columns using ontology terms where possible?
-       - Are the column types (e.g. characteristic, parameter) correct?
-       - Check the input column header, does it match what is in the column? This can be `Input[Source Name]`, `Input[Sample Name]`, `Input[Material]`, or `Input[Data]`
-       - Do columns have units (where applicable)?
-       - Are there columns missing? Is the data fully described?
-    3. Are there protocol documents in the `protocols` folder? If so, are they referenced somewhere via a `ProtocolREF` column?
-    4. Check the `dataset` folder, is the data organised in a good way?
+    1. The assay metadata is correct, complete and informative, including the technology metadata.
+    2. Within all annotation tables:
+       - Columns use ontology terms where possible.
+       - Column types (e.g. characteristic, parameter) are correct.
+       - Input column headers match the 'type' of input in the column (this can be `Input[Source Name]`, `Input[Sample Name]`, `Input[Material]`, or `Input[Data]`).
+       - Columns have units (where applicable).
+       - There are no missing columns.
+       - The data is fully described.
+    3.There are protocol documents in the `protocols` folder AND they are referenced in the corresponding annotation sheet via a `ProtocolREF` column.
+    4. The data contained in the `dataset` folder is organised in and understandable way.
 
     </Steps>
 </Card>
@@ -89,6 +80,7 @@ For each assay in your ARC, check that:
 <Card icon="pen" title="Runs and Workflows">
     <Steps>
     1. TODO
+
     2. Was any reference data used in the analysis? is it clear where this came from?
 
     </Steps>
@@ -98,7 +90,7 @@ For each assay in your ARC, check that:
 To check the overall consistency of your ARC, make sure that the full connection from sample to raw data to processed data is there.
     <Steps>
     1. For every sample, can you trace it through the ARC?
-       - Is there a path from one annotation table (input column to output column), to another annotation table where the input column matches the output column of a previous step's table?
+       - Is there a path from one annotation table (input column to output column), to another annotation table where the input column matches the output column of a previous step's table? A mermaid graph is a quick way to check that every output in connected to a subsequent input. Learn more about the arcIsaProcessMermaid tool [here](https://www.nuget.org/packages/arcIsaProcessMermaid/#readme-body-tab)
 
     </Steps>
 </Card>
@@ -106,6 +98,3 @@ To check the overall consistency of your ARC, make sure that the full connection
 
 
 ## Publish your ARC
-
-<PublishARC />
-
