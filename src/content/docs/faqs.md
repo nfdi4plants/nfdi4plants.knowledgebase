@@ -1,9 +1,10 @@
 ---
-title: Frequently Asked Questions
-lastUpdated: 2023-11-30
-pagefind: false
+title: Frequently Asked Questions (FAQ)
+lastUpdated: 2025-09-23
+authors:
+  - dominik-brilhaus
+  - cristina-martins-rodrigues
 ---
-
 
 ## Annotated Research Context
 
@@ -11,7 +12,7 @@ pagefind: false
 Where should the metadata annotation be made. In the same documents containing the data? 
 </summary>
 
-No. The metadata describing the data is collected in a separate xlsx-file &ndash; called `isa.assay.xlsx` &ndash; that resides in the parent folder of the dataset.
+No. The metadata describing the data is collected in separate xlsx-files – called `isa.assay.xlsx` – that resides in the parent folder of the dataset.
 
 </details>
 
@@ -60,37 +61,12 @@ How often should I sync my ARC?
 
 We would not want to recommend a fixed time interval (once every hour / day / week) for how often you ideally sync the ARC. In general, the more you work with your ARC, the more you add or update, annotate or analyze data, the more you will want to make sure these changes are saved. Consider the syncing as a way to backup your project's progress as well as an "undo button".
 
-:bulb: For more details, check out the [Syncing Recommendations](/nfdi4plants.knowledgebase/git/git-syncing-recommendation)
+:::tip
+For more details, check out the [Syncing Recommendations](/nfdi4plants.knowledgebase/git/git-syncing-recommendation)
+:::
 
 </details>
 
-<details><summary><span style="color: #1fc2a7">
-How to retrieve a valid access token?
-</summary>
-
-Please follow the short instructions below.  
-
-Alternatively, please visit <a href="https://github.com/nfdi4plants/arcCommander/discussions/157English">#157 in the ARC Commander repository's discussion section</a> for detailed instructions.  
-
-Note: This also works for "arc get"  
-
-___TLDR:___  
-
-- Have a GitLab account (here: <a href="https://git.nfdi4plants.org/explore">DataPLANT DataHUB</a>)  
-- Generate a personal GitLab access token (Preferences -> Access Tokens) (with API and read/write repository)  
-- Copy token string  
-- Clone a GitLab repo with adjusted address (one for which you have the respective access rights):  
-
-```bash
-git clone https://oauth2:TOKENSTRING@git.nfdi4plants.org/abc/xyz  
-```
-
-In case you created a <i>project access token</i> instead of a <i>personal access token</i>, a <a href="https://docs.gitlab.com/ee/user/project/settings/project_access_tokens.html#bot-users-for-projects">GitLab bot</a> will join your project as a member.  
-Please note that this is supportive and not a “negative” bot in case you are not familiar with this. (Thanks to <a href="https://github.com/Zerskk">@Zerskk</a> and <a href="https://github.com/j-bauer">@j-bauer</a> for providing the background knowledge on this.)  
-
-However, for the steps above, you want to create a <b>personal access token</b>.  
-
-</details>
 
 <details><summary><span style="color: #1fc2a7">
 Why do I get the error `'arc' is not recognized as an internal or external command, operable program or batch file.`?
@@ -110,44 +86,6 @@ If this does not do the trick, please follow these steps towards debugging (on W
 
 </details>
 
-<details><summary><span style="color: #1fc2a7">
-Why do I get the error `ERROR: GIT: fatal: detected dubious ownership`?
-</summary>
-
-This error occurs when working on a mounted network drive (Fileshare, File Server, NAS). Very simplified: the user on the computer and the owner of the network drive differ and git tries to safe you from working in a folder you do not own. 
-
-You can circumvent this error by adding **all directories** to your list of safe directories via the following command: 
-
-```bash
-git config --global --add safe.directory *
-```
-
-This might however pose a safety risk. Please read the details here: https://www.git-scm.com/docs/git-config#Documentation/git-config.txt-safedirectory
-
-</details>
-
-<details><summary><span style="color: #1fc2a7">
-Syncing my ARC to the DataHUB takes forever or gets stuck. What can I do?
-</summary>
-
-This is likely due to handling a big volume of data. 
-
-Solution: Increase git's http post buffer
-
-Execute the following command in your command line:
-
-```
-git config --global http.postBuffer 524288000
-```
-
-- 500 MB: 524288000
-- 1 GB: 1048576000
-- 2 GB: 2097152000
-
-source: https://stackoverflow.com/questions/6887228/git-hangs-while-writing-objects
-
-</details>
-
 ## ARCitect
 
 <details>
@@ -160,10 +98,13 @@ Sometimes, the ARCitect does not "accept" a commit or when writing a commit mess
 1. Close all windows (e.g. windows explorer) and files (in particular Excel workbooks) related to the ARC
 2. Try to commit again.
 
-:bulb: In general, we recommend to close all isa.investigation.xlsx, isa.study.xlsx and isa.assay.xlsx workbooks when working on your ARC using ARCitect.
+:::tip
+In general, we recommend to close all isa.investigation.xlsx, isa.study.xlsx and isa.assay.xlsx workbooks when working on your ARC using ARCitect.
+:::
 
 </details>
 
+<!-- 
 <details>
 <summary><span style="color: #1fc2a7">
 Why is the file tree flickering in ARCitect?
@@ -184,7 +125,7 @@ If you see this error, when using ARCitect (version ≥ 0.0.21) under Windows or
 On macOS ARCitect's git dependency is not yet in place.
 Please follow [this workaround](https://github.com/nfdi4plants/ARCitect/discussions/88).
 
-</details>
+</details> -->
 
 <details>
 <summary><span style="color: #1fc2a7">
@@ -193,15 +134,18 @@ What does the "Credential Helper Selector" mean?
 
 During ARCitect login, Windows asks you wether you want to use a "Credential Helper". This can be used to store your DataHUB credentials. You do not need this for ARCitect to work. You can choose "no helper" or "manager" and tick the check box "always use this from now on" to avoid the popup in the future.
 
+![](@images/faqs/credential-helper-selector.png)
+
 </details>
 
-## Swate
 
-<details><summary><span style="color: #1fc2a7">
+## Metadata annotation (Swate, ISA)
+
+<!-- <details><summary><span style="color: #1fc2a7">
 Is it possible to use common Excel functionalities?
 </summary>
 
-Yes. In fact, this is one of the reasons why we decided to embed Swate within Excel, as it allows users to continue using the Excel functionality they are accustomed to.
+Yes. In fact, this is one of the reasons why we decided to embed Swate within Excel, as it allows users to continue using the Excel functionality they are accustomed to. -->
 
 </details>
 
@@ -212,7 +156,8 @@ Do I have to fill in all columns when using a template?
 No. However, if you want to submit your data to a <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/fundamentals/PublicDataRepositories.html">public data repository</a>, these will require specific metadata. For this purpose we provide the corresponding templates helping you to annotate your data accordingly.
 
 </details>
-<details><summary><span style="color: #1fc2a7">
+
+<!-- <details><summary><span style="color: #1fc2a7">
 Installation (Windows, manual): How and where to create a shared folder?
 </summary>
 
@@ -222,8 +167,9 @@ This might not be possible at <span style="background-color: grey">'C:\folder-to
 
 When you created a <b>folder-to-be-shared</b>, placed the latest manifest(s) from the zip-extracted <a href="https://github.com/nfdi4plants/Swate/blob/developer/.assets/swate-win.zip?raw=true">download</a> into it (<span style="background-color:grey">'core_manifest.xml'</span>, and optional: <span style="background-color:grey">'experts_manifest.xml'</span>), finished <a href="https://learn.microsoft.com/en-us/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins#share-a-folder">these steps</a> and continue with <a href="https://learn.microsoft.com/en-us/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins#configure-the-trust-manually">these steps</a> in Excel, you should be ready to dive into Swate. - Enjoy 🚀
 
-</details>
+</details> -->
 
+<!-- 
 ## ISA
 
 <details><summary><span style="color: #1fc2a7">
@@ -232,7 +178,7 @@ Which format must be used to enter a date?
 
 String formatted as ISO8601 date: YYYY-MM-DD
 
-</details>
+</details> -->
 
 ## DataHUB
 
@@ -248,6 +194,3 @@ After login to the DataHUB you see the following banners
 If you use DataPLANT tools (ARCitect or ARC commander) to sync your ARC with the DataHUB, you can safely ignore them and click "Don't show again".
 
 </details>
-
-
-Already got an answer to a question or figured out the answer yourself? Please let others benefit from it by adding your suggestion [here](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/issues/new?assignees=CMR248&labels=FAQ&projects=&template=contribution-to-the-faq-section.md&title=%5BFAQ%5D).

@@ -199,6 +199,11 @@ export default defineConfig({
         badge: {text: 'For developers', variant: 'tip'}, 
         autogenerate: { directory: 'arctrl' },
       },
+      {
+        slug: 'faqs'
+
+      },
+      
       // {
       //   label: 'Vault',
       //   // Collapse the group by default.
