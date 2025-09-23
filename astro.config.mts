@@ -189,6 +189,12 @@ export default defineConfig({
         autogenerate: { directory: 'swate' },
       },
       {
+        label: 'BOAT',
+        // Collapse the group by default.
+        collapsed: true,
+        autogenerate: { directory: 'boat' },
+      },
+      {
         label: 'ARCManager',
         collapsed: true,
         autogenerate: { directory: 'arc-manager' },
