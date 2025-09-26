@@ -62,8 +62,8 @@ For each study and assay in your ARC, check that:
     1. The top-level metadata is present and informative, including the technology metadata.
     2. Within all annotation tables:
        - Columns use ontology terms where possible.
-       - Column types (e.g. characteristic, parameter) are correct.
-       - Column headers such as `Protocol REF` may not be manually renamed.
+       - Column types (e.g. characteristic, parameter, factor) are correct.
+       - Fixed ISA Column headers (e.g. Protocol REF) may not be manually renamed.
        - Input column headers match the 'type' of input in the column (this can be `Input[Source Name]`, `Input[Sample Name]`, `Input[Material]`, or `Input[Data]`).
        - Output column headers match the 'type' of output in the column (this can be `Output[Source Name]`, `Output[Sample Name]`, `Output[Material]`, or `Output[Data]`).
        - Columns have units (where applicable).
@@ -93,7 +93,7 @@ To check the overall consistency of your ARC, make sure that the full connection
     <Steps>
     1. For every output, can you trace its origins back through the ARC? Is the provenance of all data fully described?
        - A mermaid graph is a quick way to visualize this provenance, showing how the inputs and outputs from your studies and assays are connected. Learn more about the arcIsaProcessMermaid tool [here](https://www.nuget.org/packages/arcIsaProcessMermaid/#readme-body-tab)
-
+       - The `arc-summary.md` lists the files that are properly linked in the ARC. This is provided as a downloadable artifact by the CI/CD job "Create ARC json".
     </Steps>
 </Card>
 
