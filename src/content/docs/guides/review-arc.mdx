@@ -35,7 +35,8 @@ First, check the ARC's top level information:
 
     1. Open your ARC on [PLANTDataHUB](https://git.nfdi4plants.org)
     2. Is the name of the repository descriptive?
-    3. Check the icon behind the repository name. The visibility should be set to public. You can change the visibility under `Settings -> General -> Visibility, project features, permissions` (This is currently the best way to ensure that the people reviewing the corresponding publication have access to the ARC.)
+    3. The repository should be set to public. Check this by looking at the icon behind the repository name.
+       - You can change the visibility under `Settings -> General -> Visibility, project features, permissions` (This is currently the best way to ensure that the people reviewing the corresponding publication have access to the ARC.)
     4. Check the `README.md`, does it contain useful information? This is the first thing people will see when they look at your ARC on DataHUB and is a useful way to 'orientate' the viewer in the ARC. (However, be sure that any important information in the README is also contained within the actual ARC structure in order to adhere to the ISA framework.)
     5. Does your repository have a `LICENSE` file? In the panel on the right you will find a button to add a license. There are many license templates available to choose from. We recommend an open license such as `MIT` or `Creative Commons`
     6. Check the **Project Storage** on the right side. Is most of the storage space LFS storage?
@@ -49,9 +50,8 @@ Next, open the ARC itself, and run through everything one last time, or else ask
 
 <Card icon="pen" title="Investigation">
     <Steps>
-    1. Are the title and description clear and useful?
+    1. The title and description should be clear and informative.
     2. Check the contacts. Are all collaborators included? Is all data (name, email, ORCiD, affiliation) for the contacts correct and complete?
-
 
     </Steps>
 </Card>
@@ -63,12 +63,14 @@ For each study and assay in your ARC, check that:
     2. Within all annotation tables:
        - Columns use ontology terms where possible.
        - Column types (e.g. characteristic, parameter) are correct.
+       - Column headers such as `Protocol REF` may not be manually renamed.
        - Input column headers match the 'type' of input in the column (this can be `Input[Source Name]`, `Input[Sample Name]`, `Input[Material]`, or `Input[Data]`).
        - Columns have units (where applicable).
-       - There are no missing columns.
+       - There are no missing columns.  E.g. is there important metadata in a protocol document that should be added to the annoation table?
        - The data is fully described.
-    3.There are protocol documents in the `protocols` folder AND they are referenced in the corresponding annotation sheet via a `ProtocolREF` column.
-    4.[Assays] The data contained in the `dataset` folder is organised in an understandable way AND is referenced in the 'Output [Data]' column of the corresponding annotation sheet.
+    3. Protocol documents in the `protocols` folder must be referenced in the corresponding annotation sheet via a `Protocol REF` column.
+    4. [Assays] The data contained in the `dataset` folder is organised in an understandable way AND is referenced in the 'Output [Data]' column of the corresponding annotation sheet.
+    5. [Assays] TODO: check datamaps? check if one should be added?
 
     </Steps>
 </Card>
@@ -78,7 +80,8 @@ For each study and assay in your ARC, check that:
     1. Analysis code is included either as a CWL workflow in the workflows/runs folder, or as a virtual assay.
        See also our [guide on adding data analysis](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/start-here/data-analysis)
     2. Was any external data used in the analysis? Is it clear where this came from?
-    3. If there is a CWL workflow included, ensure that it runs.
+    3. [CWL workflow] Ensure that it runs using `cwltool`. See [guide](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/start-here/data-analysis/option2-cwl/) for more details.
+    4. [Virtual Assay] Code should be in the "protocols" folder, and input/output  data in "dataset" folder. Ensure that the workflow runs.
 
     </Steps>
 </Card>
