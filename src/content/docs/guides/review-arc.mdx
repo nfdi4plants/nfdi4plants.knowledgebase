@@ -59,14 +59,16 @@ Next, open the ARC itself, and run through everything one last time, or else ask
 <Card icon="pen" title="Studies and Assays">
 For each study and assay in your ARC, check that:
     <Steps>
-    1. The assay metadata is correct, complete and informative, including the technology metadata.
+    1. The top-level metadata is present and informative, including the technology metadata.
     2. Within all annotation tables:
        - Columns use ontology terms where possible.
        - Column types (e.g. characteristic, parameter) are correct.
        - Column headers such as `Protocol REF` may not be manually renamed.
        - Input column headers match the 'type' of input in the column (this can be `Input[Source Name]`, `Input[Sample Name]`, `Input[Material]`, or `Input[Data]`).
+       - Output column headers match the 'type' of output in the column (this can be `Output[Source Name]`, `Output[Sample Name]`, `Output[Material]`, or `Output[Data]`).
        - Columns have units (where applicable).
-       - There are no missing columns.  E.g. is there important metadata in a protocol document that should be added to the annoation table?
+       - The values in the columns make sense (e.g. numerical values in a temperature column), no obvious copy-paste errors, etc.
+       - There are no missing columns. E.g. is there important metadata in a protocol document that should be added to the annotation table?
        - The data is fully described.
     3. Protocol documents in the `protocols` folder must be referenced in the corresponding annotation sheet via a `Protocol REF` column.
     4. [Assays] The data contained in the `dataset` folder is organised in an understandable way AND is referenced in the 'Output [Data]' column of the corresponding annotation sheet.
