@@ -92,7 +92,7 @@ For each assay in your ARC, check that:
 <Card icon="pen" title="Runs and Workflows">
     <Steps>
     1. Analysis code is included either as a CWL workflow in the workflows/runs folder, or as a virtual assay.
-    2. Was any reference data used in the analysis? Is it clear where this came from?
+    2. Was any external data used in the analysis? Is it clear where this came from?
 
     </Steps>
 </Card>
@@ -100,8 +100,8 @@ For each assay in your ARC, check that:
 <Card icon="pen" title="All together">
 To check the overall consistency of your ARC, make sure that the full connection from sample to raw data to processed data is there.
     <Steps>
-    1. For every sample, can you trace it through the ARC?
-       - Is there a path from one annotation table (input column to output column), to another annotation table where the input column matches the output column of a previous step's table? A mermaid graph is a quick way to check that every output in connected to a subsequent input. Learn more about the arcIsaProcessMermaid tool [here](https://www.nuget.org/packages/arcIsaProcessMermaid/#readme-body-tab)
+    1. For every output, can you trace its origins back through the ARC? Is the provenance of all data fully described?
+       - A mermaid graph is a quick way to visualize this provenance, showing how the inputs and outputs from your studies and assays are connected. Learn more about the arcIsaProcessMermaid tool [here](https://www.nuget.org/packages/arcIsaProcessMermaid/#readme-body-tab)
 
     </Steps>
 </Card>
