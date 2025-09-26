@@ -68,8 +68,9 @@ For each study and assay in your ARC, check that:
        - Output column headers match the 'type' of output in the column (this can be `Output[Source Name]`, `Output[Sample Name]`, `Output[Material]`, or `Output[Data]`).
        - Columns have units (where applicable).
        - The values in the columns make sense (e.g. numerical values in a temperature column), no obvious copy-paste errors, etc.
-       - There are no missing columns. E.g. is there important metadata in a protocol document that should be added to the annotation table?
-       - The data is fully described.
+       - There are no missing columns.
+         - Important metadata present in a protocol document has been added to the annotation table.
+         - Any community requirements such as templates or validation packages are utilized.
     3. Protocol documents in the `protocols` folder must be referenced in the corresponding annotation sheet via a `Protocol REF` column.
     4. [Assays] The data contained in the `dataset` folder is organised in an understandable way AND is referenced in the 'Output [Data]' column of the corresponding annotation sheet.
     5. [Assays] TODO: check datamaps? check if one should be added?
