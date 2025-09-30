@@ -104,6 +104,22 @@ In general, we recommend to close all isa.investigation.xlsx, isa.study.xlsx and
 
 </details>
 
+<details>
+<summary><span style="color: #1fc2a7">
+I want to download my LFS files, but the files are not flagged. 
+</summary>
+
+To see the LFS flag and enable file download, you need Git LFS version 3.7.0 or higher. Please try the following steps:
+
+1. Open command line via ARCitect --> Tools --> Command Window
+2. Type and execute: `git-lfs --version`
+3. If your Git LFS version is older then 3.7.0, follow the [Git Installation Guide](/nfdi4plants.knowledgebase/git/git-installation) to install the latest version. 
+4. After installation reload ARCitect. The LFS files should now be flagged and can be downloaded with right-click.  
+
+
+
+</details>
+
 <!-- 
 <details>
 <summary><span style="color: #1fc2a7">
