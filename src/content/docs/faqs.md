@@ -109,7 +109,7 @@ In general, we recommend to close all isa.investigation.xlsx, isa.study.xlsx and
 I want to download my LFS files, but the files are not flagged. 
 </summary>
 
-To see the LFS flag and enable file download, you need Git LFS version 3.7.0 or hiher. Please try the following steps:
+To see the LFS flag and enable file download, you need Git LFS version 3.7.0 or higher. Please try the following steps:
 
 1. Open command line via ARCitect --> Tools --> Command Window
 2. Type and execute: `git-lfs --version`
