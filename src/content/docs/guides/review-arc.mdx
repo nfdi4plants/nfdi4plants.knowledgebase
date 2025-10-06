@@ -67,13 +67,18 @@ For each study and assay in your ARC, check that:
        - Input column headers match the 'type' of input in the column (this can be `Input[Source Name]`, `Input[Sample Name]`, `Input[Material]`, or `Input[Data]`).
        - Output column headers match the 'type' of output in the column (this can be `Output[Source Name]`, `Output[Sample Name]`, `Output[Material]`, or `Output[Data]`).
        - Columns have units (where applicable).
-       - The values in the columns make sense (e.g. numerical values in a temperature column), no obvious copy-paste errors, etc.
+       - The values in the columns make sense (e.g. numerical values in a temperature column), no obvious copy-paste errors, excel dragging errors, missing values, etc.
        - There are no missing columns.
          - Important metadata present in a protocol document has been added to the annotation table.
          - Any community requirements such as templates or validation packages are utilized.
     3. Protocol documents in the `protocols` folder must be referenced in the corresponding annotation sheet via a `Protocol REF` column.
     4. [Assays] The data contained in the `dataset` folder is organised in an understandable way AND is referenced in the 'Output [Data]' column of the corresponding annotation sheet.
-    5. [Assays] TODO: check datamaps? check if one should be added?
+    5. [Assays] Check the Datamap if one is present
+    6. Make sure that all column headers within a table are unique.
+    7. Did you create or make the last editions in your ISA files in MS Excel rather than in one of the ARC tools? Make sure that:
+       - Your your ISA-tables are tables in the MS Excel sense rather than ranges. Tables should include all lines and rows that are meant to contain Isa-formatted data.
+       - To check this, right-click a cell that should belong to the table. If you get the Menu item "Table" > and in sub-menu "convert to range", you are fine. Otherwise, select the all cells of the table, go to the "Insert" tab and select the "Table" button.
+
 
     </Steps>
 </Card>
@@ -95,10 +100,10 @@ To check the overall consistency of your ARC, make sure that the full connection
     1. For every output, can you trace its origins back through the ARC? Is the provenance of all data fully described?
        - A mermaid graph is a quick way to visualize this provenance, showing how the inputs and outputs from your studies and assays are connected. Learn more about the arcIsaProcessMermaid tool [here](https://www.nuget.org/packages/arcIsaProcessMermaid/#readme-body-tab)
        - The `arc-summary.md` lists the files that are properly linked in the ARC. This is provided as a downloadable artifact by the CI/CD job "Create ARC json".
+
     </Steps>
 </Card>
 
 
-Also look at the ARC.json file -> dragging in excel on ontology column example
 
 ## Publish your ARC
