@@ -38,7 +38,7 @@ First, check the ARC's top level information:
     3. The repository should be set to public. Check this by looking at the icon behind the repository name.
        - You can change the visibility under `Settings -> General -> Visibility, project features, permissions` (This is currently the best way to ensure that the people reviewing the corresponding publication have access to the ARC.)
     4. Check the `README.md`, does it contain useful information? This is the first thing people will see when they look at your ARC on DataHUB and is a useful way to 'orientate' the viewer in the ARC. (However, be sure that any important information in the README is also contained within the actual ARC structure in order to adhere to the ISA framework.)
-    5. Does your repository have a `LICENSE` file? In the panel on the right you will find a button to add a license. There are many license templates available to choose from. We recommend an open license such as `MIT` or `Creative Commons`
+    5. Does your repository have a `LICENSE` file? This is required to allow re-use of your ARC. [Follow these instructions and recommendations](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/datahub/arc-features/datahub-arc-license/#_top) to add an open license such as `MIT` or `Creative Commons` to your ARC. [IMPORTANT]
     6. Check the **Project Storage** on the right side. Is most of the storage space LFS storage?
 
     </Steps>
@@ -59,10 +59,10 @@ Next, open the ARC itself, and run through everything one last time, or else ask
 <Card icon="pen" title="Studies and Assays">
 For each study and assay in your ARC, check that:
     <Steps>
-    1. The top-level metadata is present and informative, including the technology metadata.
+    1. The top-level metadata is present and informative, including the measurement/technology metadata (in the case of assays).
     2. Within all annotation tables:
        - Columns use ontology terms where possible.
-       - Column types (e.g. characteristic, parameter, factor) are correct.
+       - Column types (e.g. characteristic, parameter, factor) are correct. See the [Annotation Principles](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/core-concepts/isa-annotation-principles/#characteristics) for more details.
        - Fixed ISA Column headers (e.g. Protocol REF) may not be manually renamed.
        - Input column headers match the 'type' of input in the column (this can be `Input[Source Name]`, `Input[Sample Name]`, `Input[Material]`, or `Input[Data]`).
        - Output column headers match the 'type' of output in the column (this can be `Output[Source Name]`, `Output[Sample Name]`, `Output[Material]`, or `Output[Data]`).
@@ -99,5 +99,6 @@ To check the overall consistency of your ARC, make sure that the full connection
 </Card>
 
 
+Also look at the ARC.json file -> dragging in excel on ontology column example
 
 ## Publish your ARC
