@@ -50,7 +50,8 @@ export default defineConfig({
           label: '– Check point 1 –', link: 'start-here/check-point1', attrs: { style: 'font-style: italic; color: grey; padding-left: 10%' },
           },
           'start-here/assays',
-          'start-here/share',
+          'start-here/commit',
+          'start-here/datahub',
           {
           label: '– Check point 2 –', link: 'start-here/check-point2', attrs: { style: 'font-style: italic; color: grey; padding-left: 10%' },
           },
