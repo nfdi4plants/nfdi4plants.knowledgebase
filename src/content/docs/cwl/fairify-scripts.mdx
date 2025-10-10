@@ -4,7 +4,6 @@ lastUpdated: 2025-07-25
 authors:
   - dominik-brilhaus
 sidebar:
-  hidden: true
   badge:
     variant: note
     text: WIP
@@ -190,7 +189,7 @@ Once the interactive script is converted into a generally executable script, it 
   <TabItem label="Python" icon='seti:python'>
 
     <Steps>
-    1. Create a file named `workflow.cwl`    
+    1. Create a file named `workflow.cwl`
 
         ```yaml title="workflow.cwl"
         cwlVersion: v1.2
@@ -437,7 +436,7 @@ In the `workflow.cwl` describing your script, such software dependencies and res
 
 - `SoftwareRequirement` allows to specify software version and reference
   - `package:` the name of the software or package
-  - `version:` the name of the software or package
+  - `version:` the version of the software or package
   - `specs:` a reference URL for the software or package (e.g. from [bio.tools](https://bio.tools) or [SciCrunch](https://identifiers.org/rrid/))
 
 - `ResourceRequirement` allows to specify the required compute resources
