@@ -1,0 +1,153 @@
+---
+title: Track changes to your ARC
+sidebar:
+  order: 5
+authors:
+  - dominik-brilhaus
+  - lukas-weil
+  - sabrina-zander
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+
+<ViolaSays>
+    How can I make sure, other researchers will understand what I did while working on my ARC?
+</ViolaSays>
+
+<Card title="DataPLANT Account" icon="setting">
+
+If you do not have an account, please register with DataPLANT to use the PLANTDataHUB.
+
+<details>
+<summary>Follow these instructions to sign up</summary>
+
+import DataHUBAccount from '../datahub/account/index.mdx'
+
+<DataHUBAccount />
+
+</details>
+
+</Card>
+
+
+## Track changes
+
+The ARC comes with a mechanism to track changes. This version control is based on [git](/nfdi4plants.knowledgebase/fundamentals/version-control-git). Briefly, snapshots of an ARC are called `Commits`. Every Commit is encoded with the information on **who** made the change and **when** and it is accompanied with a note, i.e. a "Commit message" that allows the user to communicate what was changed.
+
+:::note
+Commits would usually be done more frequently along the previous steps described in this `start here` guide.
+:::
+
+### Login to DataHUB
+
+In order to retreive your user information and associate it with your commits, you need to login to the DataHUB.
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+        
+    1. Click `Login` in the sidebar.
+    2. Select `git.nfdi4plants.org` as DataHUB from the dropdown menu.
+    3. Click `Login`. 
+
+        :::note
+        This automatically opens your browser at the DataHUB (https://git.nfdi4plants.org) and asks you to login. If you are not already logged in at the DataHUB, you can directly return to ARCitect. Otherwise you need to login first.
+        :::
+
+        :::note
+        The first time you login using ARCitect from a new computer, you are asked to authorize this computer's ARCitect to communicate with your DataHUB account.
+        :::
+
+        <ViolaSays>
+        Great, now I have some new functions activated in the sidebar. What are they for?  
+        </ViolaSays>
+
+    </Steps>
+</Card>
+
+### Commit your changes
+
+The commit menu allows you to "commit" your changes locally. This saves the changes of your local ARC together with your DataHUB credentials (Name and eMail).
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+    
+    1. Navigate to the `Commit` menu.
+    2. Since you are logged in, the `Name` and `eMail` of your DataHUB account are automatically added.
+    3. Add a commit message:
+
+        <ViolaSays>
+            "Created my first ARC and added data."
+        </ViolaSays>
+    3. Click `Commit` to store your changes locally.
+        
+    </Steps>
+</Card>
+
+
+### History menu
+
+In the History menu you can inspect your ARC history with all commit messages.
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+    
+    1. Navigate to the `History` menu.
+    2. Find your commit messages.
+
+        <ViolaSays>
+            Great, so even in five years I will know what I did in every step.
+        </ViolaSays>
+        
+    </Steps>
+</Card>
+
+## Try it yourself – add messages to communicate your ARC's evolution
+
+We recommend adding a message that shortly summarizes, what you did since you last synced your ARC, e.g.
+
+<Steps>
+
+1. Viola starts a fresh ARC for her project
+
+    <ViolaSays>
+      initialize ARC structure
+    </ViolaSays>
+
+2. She adds folders for her study and assay
+
+    <ViolaSays>
+      add folder structure
+    </ViolaSays>
+
+3. She adds raw data to an RNASeq assay
+
+    <ViolaSays>
+      add RNAseq dataset
+    </ViolaSays>
+
+4. She annotates the dataset using Swate 
+
+    <ViolaSays>
+      annotate RNAseq samples
+    </ViolaSays>
+
+</Steps>
+
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+    
+    1. Make some small changes to your ARC like adding or editing a text file.
+    2. Navigate to the `Commit` menu.
+    3. Add a commit message:
+
+        <ViolaSays>
+            "Add a README to include some notes"
+        </ViolaSays>
+    3. Click `Commit` to store your changes locally.
+    4. Check the `History`
+        
+    </Steps>
+</Card>
