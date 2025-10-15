@@ -2,7 +2,7 @@
 title: Validate, Review & Publish your ARC
 sidebar:
   order: 11
-lastUpdated: 2025-09-16
+lastUpdated: 2025-10-15
 authors:
   - saskia-hiltemann
   - kathryn-dumschott
@@ -35,11 +35,11 @@ First, check the ARC's top level information:
 
     1. Open your ARC on [PLANTDataHUB](https://git.nfdi4plants.org)
     2. Is the name of the repository descriptive?
-    3. The repository should be set to public. Check this by looking at the icon behind the repository name.
-       - You can change the visibility under `Settings -> General -> Visibility, project features, permissions` (This is currently the best way to ensure that the people reviewing the corresponding publication have access to the ARC.)
-    4. Check the `README.md`, does it contain useful information? This is the first thing people will see when they look at your ARC on DataHUB and is a useful way to 'orientate' the viewer in the ARC. (However, be sure that any important information in the README is also contained within the actual ARC structure in order to adhere to the ISA framework.)
-    5. Does your repository have a `LICENSE` file? This is required to allow re-use of your ARC. [Follow these instructions and recommendations](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/datahub/arc-features/datahub-arc-license/#_top) to add an open license such as `MIT` or `Creative Commons` to your ARC. [IMPORTANT]
-    6. Check the **Project Storage** on the right side. Is most of the storage space LFS storage?
+    3. The repository should be set to public. This is currently the best way to ensure that the people reviewing the corresponding publication have access to the ARC. Check the visibility by looking at the icon behind the repository name. 
+       - You can change the visibility under `Settings -> General -> Visibility, project features, permissions`. 
+    4. The ARC should have a `README.md` with useful information? This is the first thing people will see when they look at your ARC on DataHUB and is a useful way to 'orientate' the viewer in the ARC. (However, be sure that any important information in the README is also contained within the actual ARC structure in order to adhere to the ISA framework.)
+    5. Does your repository have a `LICENSE` file? This is required to allow re-use of your ARC. [Follow these instructions and recommendations](/nfdi4plants.knowledgebase/datahub/arc-features/datahub-arc-license) to add an open license such as `MIT` or `Creative Commons` to your ARC. [IMPORTANT]
+    6. Check the **Project Storage** on the right side. Is most of the storage space "LFS" storage? As a rule of thumb, the usage under "Repository" storage should be less than 1 GB.
 
     </Steps>
 </Card>
@@ -62,7 +62,7 @@ For each study and assay in your ARC, check that:
     1. The top-level metadata is present and informative, including the measurement/technology metadata (in the case of assays).
     2. Within all annotation tables:
        - Columns use ontology terms where possible.
-       - Column types (e.g. characteristic, parameter, factor) are correct. See the [Annotation Principles](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/core-concepts/isa-annotation-principles/#characteristics) for more details.
+       - Column types (e.g. characteristic, parameter, factor) are correct. See the [Annotation Principles](/nfdi4plants.knowledgebase/core-concepts/isa-annotation-principles/#characteristics) for more details.
        - Fixed ISA Column headers (e.g. Protocol REF) may not be manually renamed.
        - Input column headers match the 'type' of input in the column (this can be `Input[Source Name]`, `Input[Sample Name]`, `Input[Material]`, or `Input[Data]`).
        - Output column headers match the 'type' of output in the column (this can be `Output[Source Name]`, `Output[Sample Name]`, `Output[Material]`, or `Output[Data]`).
@@ -76,9 +76,8 @@ For each study and assay in your ARC, check that:
     5. [Assays] Check the Datamap if one is present
     6. Make sure that all column headers within a table are unique.
     7. Did you create or make the last editions in your ISA files in MS Excel rather than in one of the ARC tools? Make sure that:
-       - Your your ISA-tables are tables in the MS Excel sense rather than ranges. Tables should include all lines and rows that are meant to contain Isa-formatted data.
+       - Your ISA-tables are tables in the MS Excel sense rather than ranges. Tables should include all lines and rows that are meant to contain Isa-formatted data.
        - To check this, right-click a cell that should belong to the table. If you get the Menu item "Table" > and in sub-menu "convert to range", you are fine. Otherwise, select the all cells of the table, go to the "Insert" tab and select the "Table" button.
-
 
     </Steps>
 </Card>
@@ -86,10 +85,14 @@ For each study and assay in your ARC, check that:
 <Card icon="pen" title="Runs and Workflows">
     <Steps>
     1. Analysis code is included either as a CWL workflow in the workflows/runs folder, or as a virtual assay.
-       See also our [guide on adding data analysis](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/start-here/data-analysis)
+       See also our [guide on adding data analysis](/nfdi4plants.knowledgebase/start-here/data-analysis)
     2. Was any external data used in the analysis? Is it clear where this came from?
-    3. [CWL workflow] Ensure that it runs using `cwltool`. See [guide](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/start-here/data-analysis/option2-cwl/) for more details.
-    4. [Virtual Assay] Code should be in the "protocols" folder, and input/output  data in "dataset" folder. Ensure that the workflow runs.
+        :::tip
+        Follow [this guide](/nfdi4plants.knowledgebase/guides/arc-adding-external-data/) to design a study describing the external data (e.g. downloads from a database or supplemental data from publications)
+        :::
+    3. [CWL workflow] Ensure that it runs using `cwltool`. See [guide](/nfdi4plants.knowledgebase/start-here/data-analysis/option2-cwl/) for more details.
+    4. [Virtual Assay] Code should be in the "protocols" folder, and output data in "dataset" folder. Ensure that the code runs. Typically, the "input" data consumed by the code is already stored somewhere in the ARC, e.g. assay datasets or study resources.
+    5. [Virtual Assay] For non-code based data analysis using softwares e.g. for statistics or graphics, we recommend the same logic: describe the data analysis as comprehensible as possible in the "protocols" folder, and provide the resulting data in the "dataset" folder. 
 
     </Steps>
 </Card>
@@ -107,3 +110,5 @@ To check the overall consistency of your ARC, make sure that the full connection
 
 
 ## Publish your ARC
+
+<PublishARC />
