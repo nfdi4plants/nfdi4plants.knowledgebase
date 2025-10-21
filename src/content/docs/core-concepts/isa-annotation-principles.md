@@ -3,7 +3,8 @@ title: Annotation Principles
 authors: 
   - kevin-schneider
   - dominik-brilhaus
-lastUpdated: 2025-07-04
+  - stella-eggels
+lastUpdated: 2025-10-21
 ---
 
 Annotation of data and workflows within the ARC builds on the ISA model. In this guide we introduce the different building blocks available to annotate your workflows in a study (isa.study.xlsx) or assay (isa.assay.xlsx).
@@ -20,7 +21,7 @@ Every annotation table must start with the `Input` column, which defines the inp
 
 ## Characteristics
 
-Characteristic columns describe inherent properties of the source material, e.g., a certain strain or ecotype, but also the temperature an organism was exposed to. You can add **any number** of `Characteristic` columns.
+Characteristic columns describe inherent properties of the source material, e.g., a certain strain or ecotype, or the developmental stage. You can add **any number** of `Characteristic` columns.
 
 <div style="background-color: white; color: #1FC2A7;">
 
@@ -30,7 +31,7 @@ Characteristic columns describe inherent properties of the source material, e.g.
 
 ## Factor
 
-Use `Factor` columns to describe independent variables that determine the specific output of your experiment when processes and analysis were identical. Most of the time, `Factor`s are the most important building blocks for downstream computational analysis. You can add **any number** of `Characteristic` columns.
+Use `Factor` columns to describe independent variables that determine the specific output of your experiment when processes and analysis were identical. Most of the time, `Factor`s are the most important building blocks for downstream computational analysis. You can add **any number** of `Factor` columns.
 
 <div style="background-color: #1FC2A7; color: white;">
 
@@ -40,7 +41,7 @@ Use `Factor` columns to describe independent variables that determine the specif
 
 ## Parameter
 
-`Parameter` columns describe steps in your experimental workflow, e.g., the temperature or extraction buffer used for your assay. Multiple Parameter columns form a protocol. You can add any number of `Parameter` columns.
+`Parameter` columns describe steps in your experimental workflow, e.g., the temperature or extraction buffer volume used for your assay. Multiple Parameter columns form a protocol. You can add any number of `Parameter` columns.
 
 <div style="background-color: white; color: #0BB5DD;">
 
