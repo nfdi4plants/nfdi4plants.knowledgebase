@@ -1,6 +1,6 @@
 ---
 title: General
-lastUpdated: 2025-09-15
+lastUpdated: 2025-10-21
 authors:
   - martin-kuhl
   - stella-eggels
@@ -33,28 +33,28 @@ import UseSwate from 'using-swate.mdx';
 A key factor in the development of research data management tools is finding the balance between standardization and the requirements of researchers for annotating their experimental workflows. The spreadsheet-based version of the well-established ISA framework allows for ontology-driven metadata annotation of these workflows in a simple and accessible way. However, finding the appropriate ontology term can be extremely tedious and often results in incomplete metadata annotation. To overcome this hurdle, DataPLANT offers Swate to facilitate the generation of ISA-Tab annotation tables with an integrated search function and an ontology guided metadata annotation. 
 
 Users can add and delete building blocks to their ISA compliant annotation tables, describing the data in a clear representation. These building blocks can either represent a 
-- `Input Column` (Source Name/Sample Name/Material/Raw Data File/Derived Data File/Image File, one per table), 
+- `Input Column` (Source Name/Sample Name/Material/Data, one per table), 
 - `Characteristic`, 
 - `Parameter`, 
 - `Factor`, 
 - `Component`, 
-- `Protocol Column` (Protocol REF/Protocol Type), or an
-- `Output Column` (Sample Name/Material/Raw Data File/Derived Data File/Image File, one per table).  
+- `Protocol Column` (e.g. Protocol REF/Protocol Type), or an
+- `Output Column` (Sample Name/Material/Data, one per table).  
 
 
-Combination of ISA terms (Characteristic, Parameter, Factor, Component) and biological or technological ontology terms (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on within your annotation table (Parameter [temperature] or Factor [temperature]). For more information on these building blocks, please check our [annotation principles](https://nfdi4plants.github.io/AnnotationPrinciples/). 
+Combination of ISA terms (Characteristic, Parameter, Factor, Component) and biological or technological ontology terms (e.g. temperature, strain, instrument model) gives the flexibility to display an ontology term, e.g. temperature, as a regular process parameter or as the factor your study is based on within your annotation table (Parameter [temperature] or Factor [temperature]). For more information on these building blocks, please check our [annotation principles](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/core-concepts/isa-annotation-principles/). 
 
 
-Ontology terms within the Swate database can not only be used to standardize the headers of your annotation table, but also for standardization of the respective values. When filling in metadata via the "ontology term search", which can be activated by clicking the magnifying glass symbol, Swate will suggest matching metadata terms for the respective building block. Of course, users are not forced to use this feature in case they opt for more flexibility.
+Ontology terms within the Swate database can not only be used to standardize the headers of your annotation table, but also for standardization of the respective values. When filling in metadata via the "ontology term search", which is automatically activated in the table cells, Swate will suggest matching metadata terms based on the searched term and the respective building block. Of course, users are not forced to use this feature in case they opt for more flexibility.
 
 
 ## Templates for convenient metadata annotation
 Metadata annotation as part of the data submission routine to public repositories is often bothersome due to a high variability between repository requirements. This can become particularly inconvenient when the same metadata is submitted repeatedly, e.g. to unrelated public repositories. To assist researchers in this process, DataPLANT provides a growing collection of templates as a starting point for their annotation tables. The template design process is initiated “backwards”, starting from the requirements of public repositories and thereby, compliance with metadata standards. Our Data stewards supervise the metadata harmonization between template and target repository and simultaneously contribute to the development of the DataPLANT biology ontology [(DPBO)](https://github.com/nfdi4plants/nfdi4plants_ontology).  
-From a technical perspective, these templates are ISA Protocols containing various Characteristics, Parameters, and the Study specific Factor. DataPLANT provides checklists and requirements of public repositories as templates that are considered useful for various technologies and common standards, e.g. MIAPPE. For finding metadata checklists and Swate templates that are suitable for your data, you might want to use the [Metadata recommendation quiz](/nfdi4plants.knowledgebase/resources/metadata-quiz). Swate templates can directly be integrated to the isa.study.xlsx and isa.assay.xlsx files using Swate. Once loaded into the table, they still can be modified to special needs in the sense of adding or deleting annotation building blocks. The modularity of the system also gives labs and institutions the possibility to create their own lab specific templates for experiments that are frequently run in the lab, e.g. a metabolomics experiment of a measurement facility. High flexibility is fostered by offering a manual or Swate-supported template customization, distribution, and use.
+From a technical perspective, these templates are ISA Protocols containing various Characteristics and Parameters. DataPLANT provides checklists and requirements of public repositories and common standards, e.g. MIAPPE, that are considered useful for various technologies as templates. For finding metadata checklists and Swate templates that are suitable for your data, you might want to use the [Metadata recommendation quiz](/nfdi4plants.knowledgebase/resources/metadata-quiz). Swate templates can directly be integrated to the isa.study.xlsx and isa.assay.xlsx files using Swate. Once loaded into the table, they still can be modified to special needs in the sense of adding or deleting annotation building blocks. The modularity of the system also gives labs and institutions the possibility to create their own lab specific templates for experiments that are frequently run in the lab, e.g. a metabolomics experiment of a measurement facility. High flexibility is fostered by offering a manual or Swate-supported template customization, distribution, and use.
 
 
 ## There is no wrong or right
 Neither does DataPLANT tell you which building blocks or terms you should use for your data annotation, nor do we enforce the usage of our templates. These shall only serve as a starting point for your annotation table and CAN assist you during data submission to specific endpoint repositories.
 
-If you cannot find a fitting term for your data annotation, you can try to use Swate's Advanced Term Search. If you still cannot find a fitting term, annotate your data with free-text. Any annotation will help to understand your data. Hence, an ontology-independent annotation is still preferred over a missing annotation. Feel free to <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">contact us</a> or open an issue in our [Helpdesk](<https://helpdesk.nfdi4plants.org>) if you want to request the addition of a term to our broker ontology. 
+If you cannot find a fitting term for your data annotation, you can try configuring your [Term Search](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/swate/term-search/). If you still cannot find a fitting term, annotate your data with free-text. Any annotation will help to understand your data. Hence, an ontology-independent annotation is still preferred over a missing annotation. Feel free to <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">contact us</a> or open an issue in our [Helpdesk](<https://helpdesk.nfdi4plants.org>) if you want to request the addition of a term to our broker ontology. 
 
