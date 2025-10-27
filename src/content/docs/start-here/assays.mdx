@@ -266,10 +266,29 @@ Following the simple approach of reusing sample and data identifiers in differen
 
 
 <Mermaid>
-
 ```mermaid
-flowchart LR
-s1[Seeds] --Plant growth--> s2[Leaves] --Sugar Extraction--> s3[Sugar extract] --Sugar Measurement--> sugar_result.csv
+flowchart TD
+classDef studyStyle fill:#dae7c1,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:bold;
+classDef assayStyle fill:#ffe080,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:bold;
+classDef processStyle fill:#E08F9C,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
+classDef sampleStyle fill:#FEFEFE,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
+classDef dataStyle fill:#FEFEFE,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
+subgraph study1["Study:AthalianaColdStress"]
+    s1[Plants] ---p1[Plant-growth]--> s2[Leaves]
+end
+subgraph assay2[Assay2:Proteomics_MS]
+    s2 ---p4[ProtDigest]--> s4[Protein extracts]
+    s4 ---p5[PeptideMS_Bruker]--> d2@{ shape: docs, label: MS_raw}
+end
+subgraph assay1[Assay1:SugarMeasurement]
+    s2 ---p2[SugarExtraction]--> s3[Sugar extract]
+    s3 ---p3[SugarMeasurement]--> d1@{ shape: doc, label: sugar_result.csv}
+end
+class study1 studyStyle;
+class assay1,assay2 assayStyle;
+class p1,p2,p3,p4,p5 processStyle;
+class s1,s2,s3,s4 sampleStyle;
+class d1,d2 dataStyle;
 ```
 
 </Mermaid>
