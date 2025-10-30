@@ -155,6 +155,19 @@ During ARCitect login, Windows asks you wether you want to use a "Credential Hel
 </details>
 
 
+<details>
+<summary><span style="color: #1fc2a7">
+What does the error `Invalid ARC format` mean? 
+</summary>
+
+You likely tried to open a folder that is not an ARC.
+
+</details>
+
+
+
+
+
 ## Metadata annotation (Swate, ISA)
 
 <!-- <details><summary><span style="color: #1fc2a7">
