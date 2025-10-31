@@ -33,7 +33,7 @@ Characteristic columns describe inherent properties of the source material, e.g.
 
 ## Factor
 
-Use `Factor` columns to describe independent variables that determine the specific output of your experiment when processes and analysis were identical. Most of the time, `Factor`s are the most important building blocks for downstream computational analysis. You can add **any number** of `Factor` columns.
+Use `Factor` columns to represent independent variables that are varied within the investigation design to assess their effect on the response of the investigated system. Usually, these variables also play a key role in your computational analysis. You can add **any number** of `Factor` columns.
 
 <div style="background-color: #1FC2A7; color: white;">
 
