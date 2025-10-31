@@ -1,0 +1,32 @@
+name: Add question to FAQ
+description: Add a (solved) FAQ
+title: "[FAQ]: "
+labels: 
+  - FAQ
+body:
+  - type: input
+    id: section
+    attributes:
+      label: Section
+      description: Please name the section where the FAQ should be added
+    validations:
+      required: true
+    options:
+      - ARC
+      - ARC Commander
+      - ARCitect
+      - Metadata annotation (Swate, ISA)
+      - DataHUB
+      - other (please specify via comment below)
+  - type: input
+    id: question
+    attributes:
+      label: Question
+    validations:
+      required: true
+  - type: input
+    id: answer
+    attributes:
+      label: Answer
+    validations:
+      required: true
