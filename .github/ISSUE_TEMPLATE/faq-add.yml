@@ -9,15 +9,15 @@ body:
     attributes:
       label: Section
       description: Please name the section where the FAQ should be added
+      options:
+        - ARC
+        - ARC Commander
+        - ARCitect
+        - Metadata annotation (Swate, ISA)
+        - DataHUB
+        - other (please specify via comment below)
     validations:
-      required: true
-    options:
-      - ARC
-      - ARC Commander
-      - ARCitect
-      - Metadata annotation (Swate, ISA)
-      - DataHUB
-      - other (please specify via comment below)
+      required: true    
   - type: input
     id: question
     attributes:
