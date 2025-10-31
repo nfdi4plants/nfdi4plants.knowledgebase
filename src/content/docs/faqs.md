@@ -88,6 +88,37 @@ If this does not do the trick, please follow these steps towards debugging (on W
 :bulb: If you do not have admin rights on the computer, please open the settings "Edit environment variables for your account" and follow steps described in the [ARC Commander setup](/nfdi4plants.knowledgebase/arc-commander/setup/installation).
 
 </details>
+<details><summary><span style="color: #1fc2a7">
+Trying to get an access token on a Linux server, I get an error "ERROR: System InvalidOperationException"
+
+</summary>
+
+If you see something like this ...
+
+```yaml
+ERROR: System.InvalidOperationException: Error loading discovery document: Error connecting to https://git.nfdi4plants.org/.well-known/openid-configuration. The SSL connection could not be established, see inner exception.. System.InvalidOperationException: Error loading discovery document: Error connecting to https://git.nfdi4plants.org/.well-known/openid-configuration. The SSL connection could not be established, see inner exception..
+```
+
+... the Linux machine cannot verify the SSL certificates of the DataHUB.
+
+The root certificates need to be present on the machine to verify certificates for any outgoing connection. These come from a package usually called `ca-certificates` on RHEL-derivates and on Debian-based systems. It can be installed quite easily with:
+
+### Debian
+
+```bash
+apt install ca-certificates
+```
+
+### RHEL
+
+```bash
+dnf install ca-certificates
+```
+
+
+
+
+</details>
 
 ### ARCitect
 
