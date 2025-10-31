@@ -6,7 +6,10 @@ authors:
   - cristina-martins-rodrigues
 ---
 
-## Annotated Research Context
+Here we collect common questions raised by users.
+Feel free to add a solved FAQ [here]()
+
+### Annotated Research Context
 
 <details><summary><span style="color: #1fc2a7">
 Where should the metadata annotation be made. In the same documents containing the data? 
@@ -45,7 +48,7 @@ To properly re-use and reference such a dataset, we recommend to add a `study` t
 
 </details>
 
-## ARC Commander
+### ARC Commander
 
 <details><summary><span style="color: #1fc2a7">
 Are there any recommendations for titles or identifiers?
@@ -86,7 +89,7 @@ If this does not do the trick, please follow these steps towards debugging (on W
 
 </details>
 
-## ARCitect
+### ARCitect
 
 <details>
 <summary><span style="color: #1fc2a7">
@@ -155,7 +158,7 @@ During ARCitect login, Windows asks you wether you want to use a "Credential Hel
 </details>
 
 
-## Metadata annotation (Swate, ISA)
+### Metadata annotation (Swate, ISA)
 
 <!-- <details><summary><span style="color: #1fc2a7">
 Is it possible to use common Excel functionalities?
@@ -196,7 +199,7 @@ String formatted as ISO8601 date: YYYY-MM-DD
 
 </details> -->
 
-## DataHUB
+### DataHUB
 
 <details><summary><span style="color: #1fc2a7">
 Why do I see banners about "SSH Key", "SAML", "Personal Access Tokens" when logging into the DataHUB?
