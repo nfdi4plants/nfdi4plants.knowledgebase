@@ -7,7 +7,7 @@ authors:
 ---
 
 Here we collect common questions raised by users.
-Feel free to add a solved FAQ [here]()
+Feel free to add a solved FAQ [here](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/issues).
 
 ### Annotated Research Context
 
