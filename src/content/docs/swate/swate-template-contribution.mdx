@@ -1,15 +1,19 @@
 ---
 title: How to contribute Swate templates
-lastUpdated: 2025-05-27
+lastUpdated: 2025-09-11
 authors: 
   - dominik-brilhaus
   - kevin-frey
   - stella-eggels
   - patrick-blume
+sidebar:
+  order: 11
 ---
 
 import { Steps } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
+import Icons from '@components/swate/Icons';
+import SwateOverview from '@images/swate/swate-alpha-overview.png'
 
 :::note[About this guide]
 This tutorial guides you how to create Swate metadata templates with [Swate-alpha](https://swate-alpha.nfdi4plants.org/).
@@ -51,19 +55,6 @@ Before contributing Swate templates you ideally have
 
 Open [Swate-alpha](https://swate-alpha.nfdi4plants.org/). To create a new template click "New File" and select "Template". If you want to edit an existing template, click "Import" and select the respective file.
 
-<Tabs syncKey="swateHost">
-<TabItem label="Browser">
-
-![](@images/swate/swate-alpha-template-new.png)
-
-</TabItem>
-<TabItem label="Excel">
-
-![](@images/swate/swate-excel-template-new.png)
-
-</TabItem>
-</Tabs>
-
 ### Add Template Metadata
 
 Once you open a new template, you will see a "Metadata" sheet. Here you will enter a name for the template as well as further information describing the template. You can find explanations of the necessary information in the table below.
@@ -92,18 +83,13 @@ Here is an example for filled out template metadata and how it helps in Swate's 
 <Tabs syncKey="swateHost">
 <TabItem label="Browser">
 
-To add the building blocks of your actual template, you need to switch from the "Metadata" sheet to the "New Table" sheet on the bottom left. Using the "Add Building Block" button, you can add your desired building blocks with or without a unit.
-
-![](@images/swate/swate-alpha-building-block.png)
+To add [building blocks](/nfdi4plants.knowledgebase/swate/building-blocks) to your actual template, you need to switch from the "Metadata" sheet to the "New Table" sheet on the bottom left. Then you click "Add Building Block" (<Icons.BuildingBlock />) in the <a href={SwateOverview.src} target="_blank">Sidebar</a> or <a href={SwateOverview.src} target="_blank">Widgets</a>. You can add building blocks as simple terms or units at your selected column in the table by clicking the "Add Column" button.
 
 </TabItem>
 <TabItem label="Excel">
 
-To add the building blocks of your actual template, you have to create an annotation table with the "Create an Annotation table" icon (a) in the navbar.
-Then you can select the desired building blocks in the "Building Block" tab (b) in the sidebar.
-You can add building blocks with or without a unit at your selected column in the table by clicking the "Add Column" button.
-
-![](@images/swate/swate-excel-building-block.png)
+To add [building blocks](/nfdi4plants.knowledgebase/swate/building-blocks) to your actual template, you you click "Add Building Block" (<Icons.BuildingBlock />) in the <a href={SwateOverview.src} target="_blank">Sidebar</a>.
+You can add building blocks as simple terms or units at your selected column in the table by clicking the "Add Column" button.
 
 </TabItem>
 </Tabs>

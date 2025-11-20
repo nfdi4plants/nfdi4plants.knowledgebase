@@ -5,7 +5,7 @@ authors:
   - martin-kuhl
 lastUpdated: 2024-11-06
 sidebar:
-  order: 6
+  order: 2
 ---
 
 The ARC builds on the <a href="https://isa-specs.readthedocs.io/en/latest/isamodel.html" target="_blank">ISA model</a> (Investigation - Study - Assay) for metadata annotation, which aligns well with most projects in biology labs. It allows to group multiple studies and assays to one investigation.

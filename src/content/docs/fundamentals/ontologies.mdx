@@ -1,18 +1,21 @@
 ---
 title: Ontologies
-lastUpdated: 2023-02-28
+lastUpdated: 2025-11-04
 description: An introduction to ontologies in the context of research data management.
 authors: 
   - hannah-dörpholz
   - angela-kranz
   - kathryn-dumschott
+  - stella-eggels
+sidebar:
+  order: 8
 ---
 
 ## What is an Ontology?
 
 The term ontology has its origin in the philosophic question about the very nature of our existence. Here, we do not want to engage into a discussion that could fill whole books.
 
-In our context, an ontology comprises a conceptualized collection of well-defined terms and their relationships for a specific research domain, e.g., plant sciences. Each term and relationship consists of a unique ID, a label and a definition that are curated manually by experts of the respective domain. Therefore, it can be used to semantically annotate and describe research data in a way that makes it both human- and machine-readable. Using the human-readable definition each researcher can understand and correctly reuse specific terms, while a computer can use the unique ID to reference any term from the ontology. If one term will be replaced by a more accurate term it will not be deleted from the ontology but rather marked as "obsolete". This ensures that older documents that reference the old ontology term remain valid. Using the relationships within the ontology, experimental data can be structured and easily compared to other structured datasets and infer new information.
+In our context, an ontology comprises a conceptualized collection of well-defined terms and their relationships for a specific research domain, e.g., plant sciences. Each term and relationship consists of a unique ID, a label and a definition that are curated manually by experts of the respective domain. Therefore, it can be used to semantically annotate and describe research data in a way that makes it both human- and machine-readable. Using the human-readable definition each researcher can understand and correctly reuse specific terms, while a computer can use the unique ID to reference any term from the ontology. If one term will be replaced by a more accurate term it will not be deleted from the ontology but rather marked as "obsolete". This ensures that older documents that reference the old ontology term remain valid. Using the relationships within the ontology, experimental data can be structured and easily compared to other structured datasets to infer new information.
 
 All knowledge within an ontology is described through axiom triples in a subject-predicate-object syntax. An example for this is the following triplet:  
 >The "phyllome" (subject) is "part of" (predicate) the "shoot system" (object).  
@@ -40,7 +43,7 @@ Fig. 1: Excerpt of the [plant ontology](https://obofoundry.org/ontology/po.html)
 
 ## OBO and OWL format
 
-Ontologies can be used for many different purposes. As such, there are also multiple languages which an ontology can be written in, as well as many formats. Some of the most important relevant for our context include the Web Ontology Language (OWL) and Open Biomedical Ontologies (OBO) format. OBO was mainly used by the biomedical community (see section OBO Foundry) before the rise of OWL and today is considered a dialect of OWL.
+Ontologies can be used for many different purposes. As such, there are also multiple languages which an ontology can be written in, as well as many formats. Some of the most relevant for our context include the Web Ontology Language (OWL) and Open Biomedical Ontologies (OBO) format. OBO was mainly used by the biomedical community (see section OBO Foundry) before the rise of OWL and today is considered a dialect of OWL.
 
 The OBO format is the simplest format and not only machine-readable but also easily read by humans. As such, it is easy to edit and review, but also lacks multiple features only available in other formats. For instance, it is not possible to define DatatypeProperties in OBO, which are used in OWL ontologies. 
 
@@ -80,16 +83,16 @@ ObjectProperty: BFO_0000050
 ```
 
 
-Since the OBO format does not cover all aspects that can be included in OWL formatted ontologies, conversion between the formats can be problematic. Generally, it is possible to convert OBO files into OWL files using conversion tools such as the [OWL API](https://owlapi.sourceforge.net/), since OBO can be interpreted as a reduced OWL form. However, when trying to convert OWL files to OBO files, there can be significant information loss when concepts foreign to OBO (such as DatatypeProperties mentioned above) are used.
+Since the OBO format does not cover all aspects that can be included in OWL formatted ontologies, conversion between the formats can be problematic. Generally, it is possible to convert OBO files into OWL files using conversion tools such as the [OWL API](https://owlcs.github.io/owlapi/), since OBO can be interpreted as a reduced OWL form. However, when trying to convert OWL files to OBO files, there can be significant information loss when concepts foreign to OBO (such as DatatypeProperties mentioned above) are used.
 
 
 ## OBO Foundry
-The Open Biological Biomedical Ontologies (OBO) Foundry is a team of scientists interested in the development, collection and maintenance of ontologies for the biological and biomedical domain of life sciences. 
+The Open Biological and Biomedical Ontologies (OBO) Foundry is a team of scientists interested in the development, collection and maintenance of ontologies for the biological and biomedical domain of life sciences. 
 
 The OBO Foundry is open for contribution from everyone. For an ontology to be accepted into the OBO Foundry, it must follow the [OBO Foundry Principles](https://obofoundry.org/principles/fp-000-summary.html):
 1. It must be open and it needs to be licensed (e.g. CC-BY 3.0).
 2. A common format must be used (see section OBO and OWL format).
-3. Each term should have a unique identifier by using a unique prefix (such as GO) followed by a numerical ID, thereby resulting in an unique OBO Foundry URL.
+3. Each term should have a unique identifier by using a unique prefix (such as GO) followed by a numerical ID, thereby resulting in a unique OBO Foundry URL.
 4. Every new version of an ontology must be versioned using documented procedures.
 5. The domain or matter of the ontology must be described.
 6. Each term in an ontology must be described in a human-readable form.
@@ -98,9 +101,11 @@ The OBO Foundry is open for contribution from everyone. For an ontology to be ac
 9.  It should be documented that multiple independent people or organizations use the ontology.
 10. The ontology should be open to contribution from anyone.
 11. One person should be listed as contact and responsible person for the ontology.
-12. The naming of for elements such as classes, subclasses etc. should follow naming conventions.
-16.  The ontology needs to be maintained.
-20.  Ontology developers MUST offer channels for community participation and SHOULD be responsive to requests.
+12. The naming of elements such as classes, subclasses etc. should follow naming conventions.
+13. Major changes to an ontology SHOULD be announced before the release.
+16. The ontology needs to be maintained.
+19. The definition of a term MUST always mean the same. Minor changes are acceptable, as long as they don't change the meaning of the definition.
+20. Ontology developers MUST offer channels for community participation and SHOULD be responsive to requests.
 
 ## Sources and further information
 * [OBO Foundry](https://obofoundry.org/)
@@ -108,4 +113,4 @@ The OBO Foundry is open for contribution from everyone. For an ontology to be ac
 * [OBO Academy](https://oboacademy.github.io/obook/explanation/owl-format-variants/)
 * [W3 - Web Ontology Language](https://www.w3.org/TR/owl-features/)
 * [Plant ontology](https://obofoundry.org/ontology/po.html)
-* [OWL API](https://owlapi.sourceforge.net/)
+* [OWL API](https://owlcs.github.io/owlapi/)

@@ -1,17 +1,19 @@
 ---
 title: Ontology Service Landscape
-lastUpdated: 2023-11-21
+lastUpdated: 2025-11-04
 description: The DataPLANT Metadata Annotation and Ontology Service Landscape
 authors:
   - angela-kranz
   - kathryn-dumschott
   - stella-eggels
   - hannah-dörpholz
+sidebar:
+  order: 9
 ---
 
 # The DataPLANT Metadata Annotation and Ontology Service Landscape
 
-The [Annotated Research Context (ARC)](/nfdi4plants.knowledgebase/core-concepts/arc) as a concept for systematic storage of data and metadata contributes to FAIRness (findability, accessibility, interoperability and reusability) of data throughout the whole research data life cycle. This is achieved by relying on established standards, which include the use of unambiguous language for the description of the data via ontologies and controlled vocabularies. [Ontologies](/nfdi4plants.knowledgebase/fundamentals/ontologies) are collections of concepts, or terms, relevant to a specific research domain, as well as the relations between them. Terms can include additional annotations, such as a human readable label, definition, synonyms and equivalent terms. Most importantly, each term must include a unique, permanent identifier, such as a persistent identifier (PID), which allows for the term to be forever identified. By defining a common vocabulary, ontologies enable data to be shared, integrated, and reused across different systems and applications in a standardized way. They help to ensure that data is semantically interoperable, which means that it can be understood and interpreted consistently by different users and applications. In order to allow ontology-driven metadata annotation, DataPLANT provides a dynamic service and tool [landscape](https://doi.org/10.48550/arXiv.2309.07129).
+The [Annotated Research Context (ARC)](/nfdi4plants.knowledgebase/core-concepts/arc) as a concept for systematic storage of data and metadata contributes to FAIRness (findability, accessibility, interoperability and reusability) of data throughout the whole research data life cycle. This is achieved by relying on established standards, which include the use of unambiguous language for the description of the data via ontologies and controlled vocabularies. [Ontologies](/nfdi4plants.knowledgebase/fundamentals/ontologies) are collections of concepts, or terms, relevant to a specific research domain, as well as the relations between them. Terms can include additional annotations, such as a human readable label, definition, synonyms and equivalent terms. Most importantly, each term must include a unique, permanent identifier, such as a persistent identifier (PID), which allows for the term to be forever identified. By defining a common vocabulary, ontologies enable data to be shared, integrated, and reused across different systems and applications in a standardized way. They help to ensure that data is semantically interoperable, which means that it can be understood and interpreted consistently by different users and applications. In order to allow ontology-driven metadata annotation, DataPLANT provides a dynamic service and tool [landscape](https://doi.org/10.11588/heibooks.1288.c18067).
 
 
 ![Alt-Text](@images/fundamentals/broker-ontology/ontology_landscape_fig1.png)
@@ -20,12 +22,12 @@ The [Annotated Research Context (ARC)](/nfdi4plants.knowledgebase/core-concepts/
 
 ## Swate
 
-The spreadsheet-based tool Swate allows ontology-driven metadata annotation of experimental workflows. It links Microsoft Excel to a set of ontologies (saved in the Swate database SwateDB) that can be searched for terms when generating metadata description files. Swate already provides a selection of different templates for metadata description that e.g. fulfill requirements for endpoint repositories, but it is also possible to generate own templates. More information on how to use Swate (including best practices for data annotation) can be found [here](/nfdi4plants.knowledgebase/swate).
+The spreadsheet-based tool Swate allows ontology-driven metadata annotation of experimental workflows. It is linked to a set of ontologies (saved in the Swate database SwateDB) that can be searched for terms when generating metadata description files. Swate already provides a selection of different templates for metadata description that e.g. fulfill requirements for endpoint repositories, but it is also possible to generate own templates. More information on how to use Swate (including best practices for data annotation) can be found [here](/nfdi4plants.knowledgebase/swate).
 
 
 ### SwateDB and Swobup
 
-A collection of ontologies that can be used to annotate metadata sheets via Swate are stored and structured within the SwateDB. These include a collection of external ontologies relevant to plant data as well as the DataPLANT Biology Ontology (DPBO). Detailed descriptions of the ontologies that are currently included in the SwateDB can be found below. The [Swate OBO Updater](https://github.com/nfdi4plants/Swobup) (Swobup) facilitates the integration of new ontologies by automatically reading newly added ontologies in the database.
+A collection of ontologies that can be used to annotate metadata sheets via Swate are stored and structured within the SwateDB. These include a collection of external ontologies relevant to plant data as well as the DataPLANT Biology Ontology (DPBO). Detailed descriptions of some ontologies currently included in the SwateDB can be found below. The [Swate OBO Updater](https://github.com/nfdi4plants/Swobup) (Swobup) facilitates the integration of new ontologies by automatically reading newly added ontologies in the database. In addition to the ontologies included in SwateDB, different [ontology collections](https://terminology.tib.eu/ts/collections) from the TIB terminology service can be accessed in Swate. For this, you need to configure your term search accordingly, as described [here](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/swate/term-search/#configuring-the-term-search).
 
 
 ## Ontologies in DataPLANT – Best practices
@@ -55,8 +57,7 @@ You can either open an issue on [GitHub](https://github.com/nfdi4plants/nfdi4pla
 On our GitHub page we provide a few instructions and issue templates that offer guidance for your contribution:
 
 ![Alt-Text](@images/fundamentals/broker-ontology/ontology_landscape_fig2.png)
-
-#### Issue templates for importing or changing terms and ontologies in the SwateDB
+*Issue templates for importing or changing terms and ontologies in the SwateDB*
 
 If you are unsure about what kind of issue template to use, you can always use an empty issue to explain your wishes.
 
@@ -65,9 +66,7 @@ If you are unsure about what kind of issue template to use, you can always use a
 Our DataPLANT ontology curation team reviews your suggestion and then incorporates the term (including any relations that are necessary) into the DPBO or the full ontology into the SwateDB.
 
 ![Alt-Text](@images/fundamentals/broker-ontology/ontology_landscape_fig3.png)
-
-
-#### Integration of new terms into the DPBO
+*Integration of new terms into the DPBO*
 
 The term or ontology is then directly available in Swate via the “Ontology Term Search” tab. If the term is considered to be relevant for the general scientific community, we will also suggest the integration of this term to a suitable external ontology.
 

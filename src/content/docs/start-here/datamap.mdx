@@ -46,14 +46,17 @@ This way, provenance is persistently tracked. Data scientists down the line will
       This links the **exact columns** of the result table to the biological samples
       :::
 
-      Input [Sample Name] | Parameter [...] | Output [Data]          | Data Format | Data Selector Format
-      --------------------|-----------------|----------------------- |------------ |---------------------
-      Cold1_sugar-ext     | ...             | sugar_result.csv#col=2 | text/csv    | https://datatracker.ietf.org/doc/html/rfc7111
-      Cold2_sugar-ext     | ...             | sugar_result.csv#col=3 | text/csv    | https://datatracker.ietf.org/doc/html/rfc7111
-      Cold3_sugar-ext     | ...             | sugar_result.csv#col=4 | text/csv    | https://datatracker.ietf.org/doc/html/rfc7111
-      RT1_sugar-ext       | ...             | sugar_result.csv#col=5 | text/csv    | https://datatracker.ietf.org/doc/html/rfc7111
-      RT2_sugar-ext       | ...             | sugar_result.csv#col=6 | text/csv    | https://datatracker.ietf.org/doc/html/rfc7111
-      RT3_sugar-ext       | ...             | sugar_result.csv#col=7 | text/csv    | https://datatracker.ietf.org/doc/html/rfc7111
+      Input [Sample Name] | Parameter [...] | Output [Data]          |
+      --------------------|-----------------|----------------------- |
+      Cold1_sugar-ext     | ...             | sugar_result.csv#col=2 |
+      Cold2_sugar-ext     | ...             | sugar_result.csv#col=3 |
+      Cold3_sugar-ext     | ...             | sugar_result.csv#col=4 |
+      RT1_sugar-ext       | ...             | sugar_result.csv#col=5 |
+      RT2_sugar-ext       | ...             | sugar_result.csv#col=6 |
+      RT3_sugar-ext       | ...             | sugar_result.csv#col=7 |
+
+      :::note
+      You can find more information about the data column by pressing `F2` after selecting the cell.
 
 
   </Steps>
@@ -82,9 +85,8 @@ We'll now use the datamap to annotate all columns in the file, even the ones we 
 <Card icon="pen" title="ARCitect">
   <Steps>
 
-  7. Go back to assay metadata (the sheet named `Assay`)
-  8. In the `Datamap` section click `Add Datamap` to add a sheet `Data Map`
-  9. Open the `Data Map` table sheet at the bottom
+  7. In the file tree, right-click the assay and select `Add Datamap`
+  9. Open the `isa.datamap.xlsx` file from the file tree
   10. Open the "Data Annotator" tool and select the same file (`sugar_result.csv`) as before.
   11. Click on `Open Annotator` and this time **select all 7 columns** and click `Submit`
   12. From the same file select all 7 columns

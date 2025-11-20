@@ -1,14 +1,16 @@
 ---
 title: FAIR data principles
-lastUpdated: 2022-05-19
+lastUpdated: 2025-11-03
 description: The FAIR data principles
 authors:
   - martin-kuhl
+sidebar:
+  order: 2
 ---
 
 The FAIR Principles were published in 2016 to serve as guidelines for improving the **F**indability, **A**ccessibility, **I**nteroperability, and **R**eusability of scientific data. Albeit data can only be FAIR when provided with [metadata](/nfdi4plants.knowledgebase/fundamentals/metadata), researchers rely on infrastructures to set a framework. Hence, FAIR(ness) addresses both stakeholders publishing data and those providing infrastructures, such as repositories.
 
-The ultimate goal of FAIR (data) is to drive science and the production of new datasets, as it allows researchers to build on existing comprehensively annotated studies. In plant biology, this, e.g., can accelerate the innovation process of generating new crop species that provide a higher nutritional content or show a superior heat tolerance, regarding global warming. Submitting your proteomics dataset for such a new species in a standardized file format to a repository would be one implementation of the FAIR Principles. While researchers need to be able to find and understand published datasets, computers need to handle (big) data depending on the intended use case. Thus, the FAIR principles also aim to improve the machine-readability of datasets for autonomous processing, while preserving human-readability.
+The ultimate goal of FAIR (data) is to drive science and the production of new datasets, as it allows researchers to build on existing comprehensively annotated studies. In plant biology, this, e.g., can accelerate the innovation process of generating new crop varieties that provide a higher nutritional content or show a superior heat tolerance, regarding global warming. Submitting your proteomics dataset for such a new variety in a standardized file format to a repository would be one implementation of the FAIR Principles. While researchers need to be able to find and understand published datasets, computers need to handle (big) data depending on the intended use case. Thus, the FAIR principles also aim to improve the machine-readability of datasets for autonomous processing, while preserving human-readability.
 
 
 ### Findable
@@ -55,7 +57,7 @@ A PID you have probably already heard of as most biological journals assign them
 
 #### F2. Data are described with rich metadata (defined by R1 below)
 
-To enable (automatic) findability of your dataset, it is essential for humans and computers to understand its content. This is supported by comprehensive metadata in a standardized format about the dataset (how it was generated), its context (including associated data), or associated publications . This aspect goes hand in hand with making your data reusable and is therefore additionally addressed during metadata attributes (R1). As creator of the data, you should always keep in mind that it is best to provide as much information as possible, as others will generally profit from more input. Repository providers set the framework for this aspect by giving researchers the possibility to fully describe their datasets with proper metadata.
+To enable (automatic) findability of your dataset, it is essential for humans and computers to understand its content. This is supported by comprehensive metadata in a standardized format about the dataset (how it was generated), its context (including associated data), or associated publications. This aspect goes hand in hand with making your data reusable and is therefore additionally addressed during metadata attributes (R1). As creator of the data, you should always keep in mind that it is best to provide as much information as possible, as others will generally profit from more input. Repository providers set the framework for this aspect by giving researchers the possibility to fully describe their datasets with proper metadata.
 
 #### F3. Metadata clearly and explicitly include the identifier of the data they describe
 
@@ -75,7 +77,7 @@ Standardized communication protocols, in combination with persistent identifiers
 
 #### A1.1 The protocol is open, free, and universally implementable
 
-Infrastructure providers should use free (no-cost), open-source protocols. Thus, these protocols are globally implementable and can grant researchers around the globe access to the data, at least to the metadata. As researcher, you can maximize the reuse of your data if you share your data with repositories that follow these criteria. Avoid proprietary and non-standard protocols.
+Infrastructure providers should use free (no-cost), open-source protocols. Thus, these protocols are globally implementable and can grant researchers around the globe access to the data, at least to the metadata. As a researcher, you can maximize the reuse of your data if you share your data with repositories that follow these criteria. Avoid proprietary and non-standard protocols.
 
 #### A1.2 The protocol allows for an authentication and authorisation procedure, where necessary
 
@@ -110,7 +112,7 @@ The ultimate goal of FAIR is to optimise the reuse of data. To achieve this, met
 
 #### R1. (Meta)data are richly described with a plurality of accurate and relevant attributes
 
-Principle R1 is related to F2, but focuses on assisting humans and machines to decide if your data is actually useful in a particular context. This can be facilitated by giving as much standardized information as possible on the context under which and how the data was generated, e.g. "Which specific strain was used?" or "Under which parameters was the mass spectrometer?", but also "simple" information as the manufacturer of an incubator or sensor.
+Principle R1 is related to F2, but focuses on assisting humans and machines to decide if your data is actually useful in a particular context. This can be facilitated by giving as much standardized information as possible on the context under which and how the data was generated, e.g. "Which specific strain was used?" or "Under which parameters was the mass spectrometer run?", but also "simple" information as the manufacturer of an incubator or sensor.
 As author of your dataset you cannot expect other researchers to be familiar with your methods or domain. Therefore, you should be as generous as possible in providing metadata and even include information that seem irrelevant to you. As infrastructure provider you should give researchers the option to include a variety of metadata, including optional and free-text fields. Exemplary questions that need to be answered by the metadata are:
 
 - Who created the data?

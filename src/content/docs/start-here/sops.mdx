@@ -13,6 +13,7 @@ import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
 import Mermaid from '@components/mdx/Mermaid.astro'
+import Icons from '@components/swate/Icons';
 
 import Sop from '@images/start-here/arc-prototypic-assay-sop-proteomics.svg'
 
@@ -69,20 +70,28 @@ Follow the same steps as before to add two assays and sort the available demo da
 
     1. Create a new annotation table for the assay `Proteomics_MS`.
     2. In the bottom-right corner click `<` to open a panel on the right.
-    3. On top of the panel, navigate to the templates tab.
-    4. In the "Add template(s) from file" section, select ARCtrl and click `Upload protocol`.
+    3. On top of the panel, navigate to the JSON import tab <Icons.FileImport />.
+    4. Select `Assay – ARCtrl`, then click on `Choose File`.
     5. Navigate to and select the file `AssayTemplate_Proteomics_MS.json` and click `open`.
         - Select the "Import Type" `..With Values`
-        - Check the `Import` boxes
+        - Check the `Import` checkbox in the `Assay Metadata` panel
         - Click `Submit`
     
     </Steps>    
 
 </Card>
 
+Your assay now contains top-level metadata in the `Assay` sheet, including the "Measurement Type" and "Technology Type" and "Technology Platform". Furthermore, it includes two sheets called `ProtDigest` and `PeptideMS_Bruker` including the metadata records to describe the two processes of protein digest and the mass spectrometry measurement of peptides, respectively.
+
+<ViolaSays>
+    Great, with just a few clicks my assay is complemented with the metadata of the facility's SOP.
+    Now, I just need to complement the names of my samples and dataset files in the "Input" and "Output" columns. 
+</ViolaSays>
+
+
+
 
 ### Proteomics – Data analysis
-
 
 Repeat the same for the "Proteomics Data Analysis" files.
 
@@ -118,6 +127,47 @@ Repeat the same for the "Proteomics Data Analysis" files.
         ```
     </Mermaid>
 
-    
-
 </Card>
+
+<ViolaSays>
+    Again, I will have to complement the specific "Input" and "Output" columns for the identifiers in my ARC. 
+    In this example both these columns are of type "Data", so this assay describes a process where data was processed or analyzed. I want to learn more about this approach.
+</ViolaSays>
+
+## Linking samples to data – across studies and assays
+
+<ViolaSays>
+    My ARC is now really coming into shape. 
+</ViolaSays>
+
+
+<Mermaid>
+```mermaid
+flowchart TD
+classDef studyStyle fill:#dae7c1,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:bold;
+classDef assayStyle fill:#ffe080,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:bold;
+classDef processStyle fill:#E08F9C,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
+classDef sampleStyle fill:#FEFEFE,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
+classDef dataStyle fill:#FEFEFE,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
+subgraph study1["Study:AthalianaColdStress"]
+    s1[Plants] ---p1[Plant-growth]--> s2[Leaves]
+end
+subgraph assay2[Assay2:Proteomics_MS]
+    s2 ---p4[ProtDigest]--> s4[Protein extracts]
+    s4 ---p5[PeptideMS_Bruker]--> d2@{ shape: docs, label: MS_raw}
+end
+subgraph assay3[Assay3:Proteomics_DataAnalysis]
+    d2 ---p6[PSM_Bruker_MaSuc]--> d3@{ shape: doc, label: combined_protein.fasta}
+end
+subgraph assay1[Assay1:SugarMeasurement]
+    s2 ---p2[SugarExtraction]--> s3[Sugar extract]
+    s3 ---p3[SugarMeasurement]--> d1@{ shape: doc, label: sugar_result.csv}
+end
+class study1 studyStyle;
+class assay1,assay2,assay3 assayStyle;
+class p1,p2,p3,p4,p5,p6 processStyle;
+class s1,s2,s3,s4 sampleStyle;
+class d1,d2,d3 dataStyle;
+```
+
+</Mermaid>

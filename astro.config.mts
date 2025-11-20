@@ -50,7 +50,8 @@ export default defineConfig({
           label: '– Check point 1 –', link: 'start-here/check-point1', attrs: { style: 'font-style: italic; color: grey; padding-left: 10%' },
           },
           'start-here/assays',
-          'start-here/share',
+          'start-here/commit',
+          'start-here/datahub',
           {
           label: '– Check point 2 –', link: 'start-here/check-point2', attrs: { style: 'font-style: italic; color: grey; padding-left: 10%' },
           },
@@ -66,6 +67,7 @@ export default defineConfig({
           {
           label: '– Check point 3 –', link: 'start-here/check-point3', attrs: { style: 'font-style: italic; color: grey; padding-left: 10%' },
           },
+          'start-here/license',
           'start-here/validate-arc',
           'start-here/publish-arc',
           {
@@ -205,6 +207,11 @@ export default defineConfig({
         badge: {text: 'For developers', variant: 'tip'}, 
         autogenerate: { directory: 'arctrl' },
       },
+      {
+        slug: 'faqs'
+
+      },
+      
       // {
       //   label: 'Vault',
       //   // Collapse the group by default.

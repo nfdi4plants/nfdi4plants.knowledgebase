@@ -30,7 +30,7 @@ Create and/or open an annotation table as described in the [Swate QuickStart](/n
 
 Each annotation should start with an *Input* and end with an *Output* column. To add and specify your *Input* building block, click either the "Add Building Block" widget on the top (A) or use the "Building Blocks" function in the sidebar (B). Select *Input* from the drop-down menu instead of *Parameter* and select *Source Name* as input type. Then click <kbd>Add column</kbd>. Add *Output [Sample Name]* analogously.
 
-![](@images/swate/swate-alpha-building-block-categories.png)
+The Image swate-alpha-building-block-categories is no longer available!
 
 > 💡 Only one *Input*, one *Output* and one of each *Protocol* columns can be added per table.
 
@@ -59,9 +59,9 @@ At this point, your table should look similar to this:
 
 We now want to move the *Output* column to the end of your table. For this, right-click into any cell (except the header) of the column that you want to move. Now you can click "Move Column" and select the position that the column should be moved to (in this case: 3). If your table does not contain empty cells yet, you can add any number of rows with the plus symbol. Right-clicking into cells also gives the option of deleting a column or row.
 
-![](@images/swate/swate-alpha-move-column1.png)
+The Image swate-alpha-move-column1 is no longer available!
 
-![](@images/swate/swate-alpha-move-column2.png)
+The Image swate-alpha-move-column2 is no longer available!
 
 ## Use a template
 

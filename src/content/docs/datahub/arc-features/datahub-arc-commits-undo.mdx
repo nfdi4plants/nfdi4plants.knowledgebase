@@ -1,0 +1,26 @@
+---
+title: Undo latest changes
+lastUpdated: 2024-10-31
+authors:
+  - dominik-brilhaus
+---
+
+import { Steps } from '@astrojs/starlight/components';
+
+import DataHUBCommits from 'datahub-arc-commits.mdx'
+
+<DataHUBCommits />
+
+<Steps>
+
+4. Click on the latest (i.e. uppermost) commit.
+5. In the top-right corner select `Revert` from the drop-down menu `Options`. 
+
+    ![](@images/datahub/datahub-commits-revert01.png)
+
+6. Un-check the box "Start a new merge request with these changes".
+7. Click "Revert"
+
+    ![](@images/datahub/datahub-commits-revert02.png)
+
+</Steps>

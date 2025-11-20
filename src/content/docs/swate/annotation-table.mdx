@@ -1,15 +1,17 @@
 ---
 title: Annotation Table
-lastUpdated: 2024-11-14
+lastUpdated: 2025-09-15
 sidebar:
-  order: 3
+  order: 5
 authors: 
   - kevin-frey
   - stella-eggels
   - patrick-blume
 ---
 
+import Icons from '@components/swate/Icons';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
+import SwateOverview from '@images/swate/swate-alpha-overview.png'
 
 :::tip
 Consider reading about [Swate](/nfdi4plants.knowledgebase/swate)
@@ -20,27 +22,23 @@ Consider reading about [Swate](/nfdi4plants.knowledgebase/swate)
 
 ## Add an annotation table
 
-In the "New Table" sheet, you can create your annotation table by adding [building blocks](/nfdi4plants.knowledgebase/swate/building-blocks). 
+In the "New Table" sheet, you can create an annotation table by adding [building blocks](/nfdi4plants.knowledgebase/swate/building-blocks). Simply click on the "Create Annotation Table" (<Icons.CreateAnnotationTable />) in the <a href={SwateOverview.src} target="_blank">Sidebar</a> or <a href={SwateOverview.src} target="_blank">Widgets</a>.
 Your annotation table should consist of an "Input", multiple descriptive building blocks ("Characteristics", "Parameters", "Components") and an "Output".
 
 To create an annotation table within ARCitect, add a new table to your assay or study by clicking the plus (+) symbol next to your metadata sheet. 
 Here, you can build your annotation table by adding [building blocks](/nfdi4plants.knowledgebase/swate/building-blocks) the same way as in the Swate standalone.
-
-![Image showing Swate integration in ARCitect with focus on "add new annotation table"-button.](@images/swate/swate-alpha-arcitect-newtable.png)
 
 </TabItem>
 <TabItem label="Excel">
 
 ## Add an annotation table
 
-When you have an empty excel sheet or one hat already contains an annotation table, you can click on the "Create Annotation Table" icon of the navbar of the sidebar.
+When you have an empty excel sheet or one that already contains an annotation table, you can click "Create Annotation Table" (<Icons.CreateAnnotationTable />) in the <a href={SwateOverview.src} target="_blank">Sidebar</a>.
 When the excel sheet contains no annotation table, a new annotation table will be created in the active excel sheet.
 When an annotation table already exists in the active excel sheet, a new excel sheet will be created, become active and a new annotation table will be created in that sheet.
 
-The new annotation table will be created in the cell that was selected, when you the "Create Annotation Table" icon was clicked.
+The new annotation table will be created in the cell that was selected, when "Create Annotation Table" (<Icons.CreateAnnotationTable />) was clicked.
 The newly created annotation table has a size of 1 Input [Source Name] column and row.
-
-![Image showing add new file option in Swate](@images/swate/swate-excel-add-annotation-table.png)
 
 </TabItem>
 </Tabs>

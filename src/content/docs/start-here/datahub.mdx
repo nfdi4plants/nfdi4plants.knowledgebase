@@ -1,11 +1,10 @@
 ---
-title: Share your ARC
+title: Share your ARC via the DataHUB
 sidebar:
-  order: 5
+  order: 5.5
 authors:
   - dominik-brilhaus
   - lukas-weil
-  - sabrina-zander
 ---
 
 import ViolaSays from '@components/ViolaSays.astro'
@@ -16,98 +15,9 @@ import { Card } from '@astrojs/starlight/components';
           Now I have created my local ARC, but how can I share it with my colleagues?
 </ViolaSays>
 
-## Using the PLANTDataHUB for collaboration
-
 ARCs are the basis of the collaborative research platform and can be seamlessly shared between researchers by using the PLANTDataHUB. 
 
 ![](@images/start-here/collaboration-plantdatahub.svg)
-
-<Card title="DataPLANT Account" icon="setting">
-
-If you do not have an account, please register with DataPLANT to use the PLANTDataHUB.
-
-<details>
-<summary>Follow these instructions to sign up</summary>
-
-import DataHUBAccount from '../datahub/account/index.mdx'
-
-<DataHUBAccount />
-
-</details>
-
-</Card>
-
-
-## Track changes
-
-The ARC comes with a mechanism to track changes. This version control is based on [git](/nfdi4plants.knowledgebase/fundamentals/version-control-git). Briefly, snapshots of an ARC are called `Commits`. Every Commit is encoded with the information on **who** made the change and **when** and it is accompanied with a note, i.e. a "Commit message" that allows the user to communicate what was changed.
-
-:::note
-Commits would usually be done more frequently along the previous steps described in this `start here` guide.
-:::
-
-### Login to DataHUB
-
-In order to retreive your user information and associate it with your commits, you need to login to the DataHUB.
-
-<Card icon="pen" title="ARCitect">
-    <Steps>
-        
-    1. Click `Login` in the sidebar.
-    2. Select `git.nfdi4plants.org` as DataHUB from the dropdown menu.
-    3. Click `Login`. 
-
-        :::note
-        This automatically opens your browser at the DataHUB (https://git.nfdi4plants.org) and asks you to login. If you are not already logged in at the DataHUB, you can directly return to ARCitect. Otherwise you need to login first.
-        :::
-
-        :::note
-        The first time you login using ARCitect from a new computer, you are asked to authorize this computer's ARCitect to communicate with your DataHUB account.
-        :::
-
-        <ViolaSays>
-        Great, now I have some new functions activated in the sidebar. What are they for?  
-        </ViolaSays>
-
-    </Steps>
-</Card>
-
-### Commit your changes
-
-The commit menu allows you to "commit" your changes locally. This saves the changes of your local ARC together with your DataHUB credentials (Name and eMail).
-
-<Card icon="pen" title="ARCitect">
-    <Steps>
-    
-    1. Navigate to the `Commit` menu.
-    2. Since you are logged in, the `Name` and `eMail` of your DataHUB account are automatically added.
-    3. Add a commit message:
-
-        <ViolaSays>
-            "Created my first ARC and added data."
-        </ViolaSays>
-    3. Click `Commit` to store your changes locally.
-        
-    </Steps>
-</Card>
-
-
-### History menu
-
-In the History menu you can inspect your ARC history with all commit messages.
-
-<Card icon="pen" title="ARCitect">
-    <Steps>
-    
-    1. Navigate to the `History` menu.
-    2. Find your commit messages.
-
-        <ViolaSays>
-            Great, so even in five years I will know what I did in every step.
-        </ViolaSays>
-        
-    </Steps>
-</Card>
 
 ## Upload your ARC to the PLANTDataHUB
 
@@ -135,7 +45,6 @@ In the History menu you can inspect your ARC history with all commit messages.
 :::note
 If you edit your ARC in a different location (e.g. the DataHUB or another computer) be sure to synchronize your local ARC using the `Pull` button. 
 :::
-
 
 ## Explore your ARC in the PLANTDataHUB
 
@@ -193,6 +102,12 @@ When inviting new members to an ARC or group, you can choose between different r
  <ViolaSays>
      I will invite my PI Prof. Jasmine Beetroot as **Maintainer** and my collaboration partner Oliver Sage as **Developer**. 
     </ViolaSays>
+
+## Follow your ARC's progress in the DataHUB
+
+import DataHUBCommits from '../datahub/arc-features/datahub-arc-commits.mdx'
+
+<DataHUBCommits />
 
 ## Project Management
 

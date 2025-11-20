@@ -6,6 +6,7 @@ authors:
   - dominik-brilhaus
   - lukas-weil
   - sabrina-zander 
+  - kevin-frey
 ---
 
 import ViolaSays from '@components/ViolaSays.astro'
@@ -383,26 +384,21 @@ In this case, you can use a `Factor` building block. Factors are used to describ
 <Card icon="pen" title="ARCitect">
   <Steps>
 
-    1. By clicking <btn> \>> </btn> or <btn> \<< </btn> in the column headers you can show or hide the ontology information.
-    
-        <div class="overflow-x-auto">
-          <div class="min-w-[600px]" > 
-        `Characteristic [organism]`  | `Unit` | `TSR (OBI:0100026)` | `TAN (OBI:0100026)`
-          --------------------       | ----   |-------------------- |  --------------------
-          Arabidopsis thaliana	     | -      | NCBITaxon           |  NCBITaxon:3702
-          Arabidopsis thaliana       | -      | NCBITaxon           |  NCBITaxon:3702
-          Arabidopsis thaliana       | -      | NCBITaxon           |  NCBITaxon:3702
-          Arabidopsis thaliana       | -      | NCBITaxon           |  NCBITaxon:3702
-          Arabidopsis thaliana       | -      | NCBITaxon           |  NCBITaxon:3702
-          Arabidopsis thaliana       | -      | NCBITaxon           |  NCBITaxon:3702
-        </div></div>
+    1. You can press `F2` after selecting a table cell or open the context menu with `right click` and open `Details` to view all ontology information stored for this cell. By default, only the term name is shown in the table with an green checkmark indicating that a full ontology term exists.
+
+        <div class="mt-4 p-4 border border-[#e6eff8] rounded-lg max-w-sm">
+          <h4 class="font-bold mb-2 block">Term</h4>
+          <p>Arabidopsis thaliana</p>
+          <p>NCBITaxon</p>
+          <p>NCBITaxon:3702</p>
+        </div>
 
         <ViolaSays>
           So if someone needs to look up my species, they will find it in an online ontology database.
         </ViolaSays>
 
         :::note
-        You can see that `Arabidopsis thaliana` was added with id and source ontology in the reference (hidden) columns.
+        You can see that `Arabidopsis thaliana` was added with id and source ontology.
         :::
 
         :::tip
@@ -420,7 +416,7 @@ If the order of the building blocks needs to be adjusted, you can delete or move
 <Card icon="pen" title="ARCitect">
   <Steps>
   1. Right-click a column and select: 
-      - `Delete Column` to remove it including all related ontology reference columns
+      - `Delete Column` to remove it
       - `Move Column` to move a column to another position
 
   </Steps>
