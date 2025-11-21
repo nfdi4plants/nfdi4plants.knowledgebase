@@ -577,7 +577,7 @@ arc get -n -r https://"$projectTokenName":"$projectToken"@"$arcUrl"
 GIT_LFS_SKIP_SMUDGE=1 git clone --filter=blob:none https://"$projectTokenName":"$projectToken"@"$arcUrl"
 ```
 
-## Download a single (LFS) file of an ARC via GitLab API using a token
+### Download a single (LFS) file of an ARC via GitLab API using a token
 
 - `<project_id>`: numerical project ID (check three-dots menu of ARC in top-right corner)
 - `<your_token>`: a project access token with at least `Reporter` role and `read_repository` scope (Settings -> Access toke)
@@ -588,7 +588,7 @@ GIT_LFS_SKIP_SMUDGE=1 git clone --filter=blob:none https://"$projectTokenName":"
 ```bash
 curl --header "PRIVATE-TOKEN: <your_token>" \
      --location \
-     "https://gitlab.com/api/v4/projects/<project_id>/repository/files/<url_encoded_path>/raw?ref=<branch>&lfs=true" \
+     "https://git.nfdi4plants.org/api/v4/projects/<project_id>/repository/files/<url_encoded_path>/raw?ref=<branch>&lfs=true" \
      -o <fileName>
 ```
 
