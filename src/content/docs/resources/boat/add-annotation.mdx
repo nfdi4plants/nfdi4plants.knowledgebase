@@ -1,0 +1,85 @@
+---
+title: Adding an annotation
+lastUpdated: 2025-11-27
+sidebar:
+  order: 3
+authors: 
+  - annika-paul
+---
+
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+import Icons from '@components/swate/Icons';
+
+<ViolaSays>
+Ok now I uploaded my protocol, how do I create the metadata about the process and important information in it?
+</ViolaSays>
+
+To add a step of the experimental process as an annotation, mark the word and right-click to open the BOAT context menu.
+
+Inside the upper context menu, the marked term can be placed inside a new annotation as a **Key, Term or Value**. In the lower part, the selected word can be added to the annotation lastly created as the same types.
+Here the Key refers to the header of the annotation and Term with an optional Value is the content.
+
+<ViolaSays>
+Got it! So the Key serves as the header which describes the step of the process. The Term is the actual content which can be unit or a substance for example. The Value is an optional number.
+</ViolaSays>
+
+After clicking on an action inside the context menu, an annotation note is created at the edge of the document with the marked word in the respective text field.
+They can be expanded or downsized again, leading to a small speech bubble icon. 
+
+## Workflow with demo dataset
+
+<Card icon="pen" title="BOAT">
+  <Steps>
+
+  1. Inside the `growth_protocol.md` document, you find the important information about the process at the top.
+      ```md title="growth_protocol.md" {3-6, 8-12}
+      # Study Name: Growth Protocol for *Arabidopsis thaliana*
+
+      ## Parameters:
+      - 200 µmol photons m²/s (200 Einstein)
+      - Alternating 6°C (cold treatment) and 25°C (control)
+      - 4 days
+
+      ## Characteristics:
+      - *Arabidopsis thaliana*
+      - Leaf
+      - Hydroponic culture
+      - Columbia (Col-0)
+
+      ...
+      ```
+  2. Start with the Parameter "200 µmol photons m²/s" by marking `photons m²/s` or `Einstein`.
+
+      <ViolaSays>
+       This will be my Term because its the content.
+      </ViolaSays>
+
+  3. After right-click a context menu will open, in which we want to create a new annotation by selecting **Term**.
+
+  4. Since this Term is a unit, we also have the value `200`. Highlight this number and add it to the *last annotation* as **Value**. By that, the Term automatically turns into a **unit**. Clicking on the Term/Unit switch deletes the current value if switched back to Term.
+  
+  5. After the annotation note was created, it's time to handle the Key. It can be directly written in the empty field of the annotation note. Here the respective Key is `Light intensity`.
+      :::note
+      Since in this protocol the Parameters and Characteristics are already extracted, the Key is not in the text. Normally in a free text, the Key can be mostly found in it and can be added via the context menu.
+      :::
+  6. The same procedure can be done with the temperature, as well as the growth time annotation: 
+      <ViolaSays>
+      So again I just highlight the term `°C` and use right-click to assign it to a Term in a new annotation.
+      </ViolaSays>
+  7. Change the Term/Unit Switch to "Unit", by that we have a field for values. The Key here is `Temperature`. Beware that here the value field must remain empty because we have a special case with two different temperatures, pointing out two groups. This case can be handled with [Swate](/nfdi4plants.knowledgebase/swate) or the [ARCitect](/nfdi4plants.knowledgebase/arcitect/) afterwards.
+  8. Redo this with `days` as Term in the third annotation. Here we also have a value `4`, this can assigned as Value in the *last annotation*. Inside the key text field, `Growth time` fits the best. 
+  </Steps>
+</Card>
+
+The **Keytype** will be explained in the next section. Already added words are highlighted in the document with colors.
+
+<ViolaSays>
+Now, I successfully added my first annotation! Hooray 🎉 Now I can work through my document and pull out all the annotations I need for my process.
+But do they already meet the FAIR principles?
+</ViolaSays>
+
+Not yet, everything about **adding ontologies** will be explained in the next chapter.
