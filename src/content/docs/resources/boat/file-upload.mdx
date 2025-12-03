@@ -1,0 +1,35 @@
+---
+title: Upload a document
+lastUpdated: 2025-11-21
+authors: 
+  - annika-paul
+sidebar:
+  order: 2
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+import Icons from '@components/swate/Icons';
+
+First of all, start by uploading your free text document as a .docx, .pdf, .md or .txt file using the "Browse" button. The explorer window will open to let you select the file.
+
+<ViolaSays>
+Great! So it`s just a typical upload and fortunately I have most of my protocols as .docx, .pdf or .md file. This way I can directly use them.
+</ViolaSays>
+
+<Card icon="pen" title="BOAT">
+  <Steps>
+
+  1. Click on "Select a File" at the center of the page
+  2. Select `growth_protocol.md` from the `Violas-PhD-Project` folder.
+      <ViolaSays>
+      In this protocol I described the process of growing *Arabidopsis thailiana*.
+      </ViolaSays>
+  3. The document gets uploaded into BOAT
+
+  </Steps>
+</Card>
+
+The selected document will be displayed on the left side of the page and keeps the format. Now, the annotation process can be begin with.

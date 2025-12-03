@@ -1,0 +1,78 @@
+---
+title: Customize the annotation and adding an ontology
+lastUpdated: 2025-11-27
+sidebar:
+  order: 4
+authors: 
+  - annika-paul
+---
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+import Icons from '@components/swate/Icons';
+import {ParentChild} from '@components/mdx/ParentChild.mdx'
+
+Your new annotation might need some adjustments. First, you probably want to change the **Keytype** to be more descriptive for the header. 
+By clicking on the blue box, a dropdown opens which lets you determine the Keytype such as **Characteristics, Factor, Component** or **Parameter**. Under "more" you can find more descriptive Keytypes which are for more general data about the protocol like date, performer, description, type, uri and version.
+
+
+
+## Using ontologies
+
+As a next step, you should consider connecting your added key or terms to [ontologies](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/fundamentals/ontologies/). Implementing ontologies enhances the value of your data by using predefined vocabulary with an unique ID.
+
+
+To do this, just double click inside the text field and the built-in Term Search component will search in the [SwateDB](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/fundamentals/ontology-service-landscape/#swatedb-and-swobup) for fitting ontologies. You might change the word a bit to get the best results. The search suggestions can be expanded to see the definitions and the ID of the ontology.
+Clicking on an ontology suggestion replaces the term in the text field and a check mark appears on the right to ensure the use of an ontology.
+
+In the same way, you can add more annotations or complete the metadata in the last created annotation. 
+
+<ViolaSays>
+With that I can comfortably search for a fitting ontology for my Key and Term without changing my workspace.
+Is my metadata example about my process more FAIR now?
+</ViolaSays>
+
+Depends on how detailed you annotate it! Adding ontologies significantly enhances the FAIRness according **findability** and **interoperability** by machines and humans.
+But making it also **accessible** and **reusable**, you should implement your metadata in a appropriate environment, for example an ARC.
+
+## Workflow with demo dataset
+
+<Card icon="pen" title="BOAT">
+  <Steps>
+  1. To change the Keytype, click on the blue field at the left side of the Key textfield.
+      <ViolaSays>
+      For my already added information, I would choose the Keytype "Parameter".
+      </ViolaSays>
+  2. Double click in the text field of the Key `Light intensity` inside the annotation note.
+  3. Inside the Term Search suggestions, click on the best fitting one. Your ontology use gets validated with a check mark.
+  4. Redo this step with the Term `Einstein`. Here the best suggestion might be `einstein per square meter per second based unit`.
+
+      :::note
+      The suggestion does not always fit the word you highlighted.
+      You can find more info about the Term Search [here](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/swate/term-search/).
+      :::
+  5. Repeat those steps for the `Temperature` and `Growth time` annotations. `°C` must be changed to `degree celsius`.
+  </Steps>
+</Card>
+
+Now, your ontologized metadata structure looks like this: 
+
+<div class="grid md:grid-cols-2">
+
+  <div class="md:!m-0">
+  
+  ##### Parameters [ ]
+
+  - <ParentChild parent="Light intensity" child="200 einstein per square meter per second based unit"/>
+  - <ParentChild parent="Temperature" child="[]°C"/>
+  - <ParentChild parent="Growth time" child="4day"/>
+  
+  </div>
+
+</div>
+
+
+:::tip
+All annotations can be edited or deleted any time with the trash bin icon in the upper right corner of each annotation note.
+:::

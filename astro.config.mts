@@ -89,7 +89,19 @@ export default defineConfig({
         label: 'Resources',
         // Collapse the group by default.
         collapsed: true,
-        autogenerate: { directory: 'resources' },
+        // autogenerate: { directory: 'resources' },
+          items: [
+            {
+            label: 'Boat',
+            // Collapse the group by default.
+            collapsed: true,
+            autogenerate: { directory: 'resources/boat' },
+            },
+            'resources/dataplan',
+            'resources/elab',
+            'resources/galaxy',
+            'resources/metadata-quiz'
+          ]
       },
       {
         label: 'Git',
@@ -190,12 +202,7 @@ export default defineConfig({
         collapsed: true,
         autogenerate: { directory: 'swate' },
       },
-      {
-        label: 'BOAT',
-        // Collapse the group by default.
-        collapsed: true,
-        autogenerate: { directory: 'boat' },
-      },
+
       {
         label: 'ARCManager',
         collapsed: true,
