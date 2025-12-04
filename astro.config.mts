@@ -98,7 +98,7 @@ export default defineConfig({
             autogenerate: { directory: 'resources/boat' },
             },
             'resources/dataplan',
-            'resources/elab',
+            'resources/elab2arc',
             'resources/galaxy',
             'resources/metadata-quiz'
           ]
