@@ -12,9 +12,9 @@ import { FileTree } from '@astrojs/starlight/components';
 
 In general, any script or tool can be used to validate aspects of an ARC. However, to be compatible with the [Continuous Quality Control (CQC) pipelines](/nfdi4plants.knowledgebase/arc-validation/cqc-pipelines) on the DataHUB, validation packages must adhere to certain guidelines and conventions, both in terms of format and generated output.
 
-In CQC pipelines, validation packages are pulled from the [ARC Validation Package Registry (AVPR)](https://avpr.nfdi4plants.org/packages) and executed in isolated environments via the [`arc-validate`]() CLI tool. Validation packages must adhere to the structure (e.g. programming language, metadata) and output requirements outlined below to be both publishable to AVPR and executable by `arc-validate`.
+In CQC pipelines, validation packages are pulled from the [ARC Validation Package Registry (AVPR)](https://avpr.nfdi4plants.org/packages) and executed in isolated environments via the [`arc-validate`](https://github.com/nfdi4plants/arc-validate) CLI tool. Validation packages must adhere to the structure (e.g. programming language, metadata) and output requirements outlined below to be both publishable to AVPR and executable by `arc-validate`.
 
-_**See also the [relevant sections in the ARC specification](https://github.com/nfdi4plants/ARC-specification/blob/release/ARC%20specification.md#mechanisms-for-arc-quality-control)**_
+_**See also the [relevant sections in the ARC specification](https://github.com/nfdi4plants/ARC-specification/blob/release/ARC%20specification.md/#mechanisms-for-arc-quality-control)**_
 
 # Validation package structure
 
@@ -171,8 +171,8 @@ Description: |
 | Field | Type | Description |
 | --- | --- | --- |
 | Publish | bool | a boolean value indicating whether the package should be published to the registry. If set to `true`, the package will be built and pushed to the registry. If set to `false` (or not present), the package will be ignored. |
-| Authors | author[] | the authors of the package. For more information about mandatory and optional fields in this object, see [Objects > Author](/nfdi4plants.knowledgebase/arc-validation/authoring-validation-packages#author) |
-| Tags | string[] | a list of tags with optional ontology annotations that describe the package. For more information about mandatory and optional fields in this object, see [Objects > Tag](/nfdi4plants.knowledgebase/arc-validation/authoring-validation-packages#tag)  |
+| Authors | author[] | the authors of the package. For more information about mandatory and optional fields in this object, see [Objects > Author](/nfdi4plants.knowledgebase/arc-validation/authoring-validation-packages/#author) |
+| Tags | string[] | a list of tags with optional ontology annotations that describe the package. For more information about mandatory and optional fields in this object, see [Objects > Tag](/nfdi4plants.knowledgebase/arc-validation/authoring-validation-packages/#tag)  |
 | ReleaseNotes | string[] | a list of release notes for the package indicating changes from previous versions |
 | CQCHookEndpoint | string | an optional URL to a CQC Hook endpoint that can be used for continuous quality control (CQC) integration. If provided, this endpoint will be called with validation results after each package execution. |
 
@@ -322,8 +322,8 @@ A SVG badge named `badge.svg` MUST be created inside the package output folder. 
 
 A JSON file named `validation_summary.json` MUST be created inside the package output folder. This file contains a summary of the validation results, including the total number of tests executed, the number of tests passed, failed, and errored, as well as other information necessary to trigger downstream processes in CQC pipelines.
 
-_**Current schema is available in the [ARC specification](https://github.com/nfdi4plants/ARC-specification/blob/release/ARC%20specification.md#validation-packages)**_
+_**Current schema is available in the [ARC specification](https://github.com/nfdi4plants/ARC-specification/blob/release/ARC%20specification.md/#validation-packages)**_
 
 ## Submission to AVPR
 
-To submit a validation package to the [ARC Validation Package Registry (AVPR)](https://avpr.nfdi4plants.org/packages) go to the [AVPR repository in GitHub and file a PR as stated in the repository's README](https://github.com/nfdi4plants/arc-validate-package-registry?tab=readme-ov-file#validation-package-staging-area).
+To submit a validation package to the [ARC Validation Package Registry (AVPR)](https://avpr.nfdi4plants.org/packages) go to the [AVPR repository in GitHub and file a PR as stated in the repository's README](https://github.com/nfdi4plants/arc-validate-package-registry?tab=readme-ov-file/#validation-package-staging-area).
