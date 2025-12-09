@@ -9,7 +9,7 @@ sidebar:
 
 The ARC is a generic and flexible RDM framework that does not, by itself, enforce specific quality criteria for the data and metadata it contains. Many research communities have developed their own standards and best practices, which can vary significantly between disciplines. While these standards can be implemented using ARCs, compliance with them is out of scope for the ARC framework itself.
 
-## A pull model vor domain-specfic validation
+## A pull model for domain-specific validation
 
 Validation of ARCs is realized as a pull model: for a given ARC, the required quality criteria must be explicitly stated and then verified against these criteria. This is achieved using ARC Validation Packages, which are self-contained sets of rules and checks that can be applied to an ARC to assess its quality.
 
