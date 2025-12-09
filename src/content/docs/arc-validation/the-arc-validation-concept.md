@@ -11,7 +11,7 @@ The ARC is a generic and flexible RDM framework that does not, by itself, enforc
 
 ## A pull model for domain-specific validation
 
-Validation of ARCs is realized as a pull model: for a given ARC, the required quality criteria must be explicitly stated and then verified against these criteria. This is achieved using ARC Validation Packages, which are self-contained sets of rules and checks that can be applied to an ARC to assess its quality.
+Validation of ARCs is realized as a pull model: for a given ARC, the required criteria must be explicitly stated and then verified. This is achieved using ARC Validation Packages, which are self-contained sets of rules and checks that can be applied to an ARC to assess its quality.
 
 In addition to enabling the implementation of abstract quality measures, practical RDM applications include:
 
