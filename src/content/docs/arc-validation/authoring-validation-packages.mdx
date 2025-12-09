@@ -1,0 +1,329 @@
+---
+title: Authoring ARC Validation Packages
+lastUpdated: 2025-12-09
+authors:
+  - kevin-schneider
+sidebar:
+  order: 3
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+
+In general, any script or tool can be used to validate aspects of an ARC. However, to be compatible with the [Continuous Quality Control (CQC) pipelines](/nfdi4plants.knowledgebase/arc-validation/cqc-pipelines) on the DataHUB, validation packages must adhere to certain guidelines and conventions, both in terms of format and generated output.
+
+In CQC pipelines, validation packages are pulled from the [ARC Validation Package Registry (AVPR)](https://avpr.nfdi4plants.org/packages) and executed in isolated environments via the [`arc-validate`]() CLI tool. Validation packages must adhere to the structure (e.g. programming language, metadata) and output requirements outlined below to be both publishable to AVPR and executable by `arc-validate`.
+
+_**See also the [relevant sections in the ARC specification](https://github.com/nfdi4plants/ARC-specification/blob/release/ARC%20specification.md#mechanisms-for-arc-quality-control)**_
+
+# Validation package structure
+
+## Supported validation package file formats
+
+Validation packages must be **self-contained, single-file scripts**.
+
+The following programming languages can currently be used to create validation packages:
+
+- **F#** (`.fsx`)
+  - software package management in F# scripts MUST use `#r nuget ...` directives to reference any external dependencies.
+  - F# scripts are executed via `dotnet fsi`.
+- **Python** (`.py`)
+  - software package management in Python scripts MUST use [uv inline script dependencies](https://docs.astral.sh/uv/guides/scripts/#declaring-script-dependencies) to reference any external dependencies. Ideally also specify the python language version.
+  - Python scripts are executed via `uv run`.
+
+## Package metadata
+
+Package metadata are used to display information about the validation package in the AVPR, keep track of versioning, release notes, etc.
+
+The metadata MUST be the first thing occurring in the validation package file and can be either formatted as a standalone string or bound to a variable. It is formatted as YAML frontmatter, enclosed by triple-dashed lines (`---`).
+
+### String frontmatter
+
+<Tabs syncKey="frontmatter">
+
+<TabItem label="FSharp" icon='seti:f-sharp'>
+In F# validation packages, the frontmatter MUST be enclosed in a multi-line comment (`(* ... *)`).
+```fsharp
+(*
+---
+<yaml frontmatter here>
+---
+*)
+```
+</TabItem>
+<TabItem label="Python" icon='seti:python'>
+In Python validation packages, the frontmatter MUST be enclosed in a multi-line string (`""" ... """`).
+```python
+"""
+---
+<yaml frontmatter here>
+---
+"""
+```
+</TabItem>
+</Tabs>
+
+### Frontmatter bindings
+
+You can bind YAML frontmatter as a string inside your package. **This is recommended** because you can now re-use the metadata in your package code.
+
+<Tabs syncKey="frontmatter">
+<TabItem label="FSharp" icon='seti:f-sharp'>
+
+Binding must be placed at the start of the file to the name `PACKAGE_METADATA` with a `[<Literal>]` attribute _exactly_ like this:
+
+```fsharp
+let [<Literal>] PACKAGE_METADATA = """(*
+---
+<yaml frontmatter here>
+---
+*)"""
+```
+
+</TabItem>
+<TabItem label="Python" icon='seti:python'>
+Binding must be placed at the start of the file to the name `PACKAGE_METADATA` _exactly_ like this:
+
+```python
+PACKAGE_METADATA = """
+---
+<yaml frontmatter here>
+---
+"""
+```
+</TabItem>
+</Tabs>
+
+Re-use in the package code:
+
+<Tabs syncKey="frontmatter">
+<TabItem label="FSharp" icon='seti:f-sharp'>
+```fsharp
+// The F# library for writing ARC validation packages, adjust version!
+#r "nuget: ARCExpect, 5.0.1"
+
+Setup.ValidationPackage(
+    metadata = Setup.Metadata(PACKAGE_METADATA),
+    CriticalValidationCases = [...]
+)
+|> Execute.ValidationPipeline(
+    basePath = ...
+)
+```
+</TabItem>
+<TabItem label="Python" icon='seti:python'>
+A library for python is WIP, for now you can use string processing and YAML parsing libraries to extract metadata from the `PACKAGE_METADATA` variable.
+</TabItem>
+</Tabs>
+
+### Mandatory fields
+
+| Field | Type | Description |
+| --- | --- | --- |
+| Name | string | the name of the package |
+| MajorVersion | int | the major version of the package |
+| MinorVersion | int | the minor version of the package |
+| PatchVersion | int | the patch version of the package |
+| Summary | string | a single sentence description (less than 50 words) of the package |
+| Description | string | an unconstrained free text description of the package |
+
+Example:
+
+<Tabs syncKey="frontmatter">
+<TabItem label="FSharp" icon='seti:f-sharp'>
+```fsharp
+let [<Literal>] PACKAGE_METADATA = """(*
+---
+Name: my-package
+MajorVersion: 1
+MinorVersion: 0
+PatchVersion: 0
+Summary: My package does the thing.
+Description: |
+  My package does the thing. 
+  It does it very good, it does it very well. 
+  It does it very fast, it does it very swell.
+---
+*)"""
+```
+</TabItem>
+<TabItem label="Python" icon='seti:python'>
+```python
+PACKAGE_METADATA = """
+---
+Name: my-package
+MajorVersion: 1
+MinorVersion: 0
+PatchVersion: 0
+Summary: My package does the thing.
+Description: |
+  My package does the thing. 
+  It does it very good, it does it very well. 
+  It does it very fast, it does it very swell.
+---
+"""
+```
+</TabItem>
+</Tabs>
+
+### Optional fields
+
+| Field | Type | Description |
+| --- | --- | --- |
+| Publish | bool | a boolean value indicating whether the package should be published to the registry. If set to `true`, the package will be built and pushed to the registry. If set to `false` (or not present), the package will be ignored. |
+| Authors | author[] | the authors of the package. For more information about mandatory and optional fields in this object, see [Objects > Author](#author) |
+| Tags | string[] | a list of tags with optional ontology annotations that describe the package. For more information about mandatory and optional fields in this object, see [Objects > Tag](#tag)  |
+| ReleaseNotes | string[] | a list of release notes for the package indicating changes from previous versions |
+| CQCHookEndpoint | string | an optional URL to a CQC Hook endpoint that can be used for continuous quality control (CQC) integration. If provided, this endpoint will be called with validation results after each package execution. |
+
+Example:
+
+<Tabs syncKey="frontmatter">
+<TabItem label="FSharp" icon='seti:f-sharp'>
+```fsharp
+let [<Literal>] PACKAGE_METADATA = """(*
+---
+Name: my-package
+MajorVersion: 1
+MinorVersion: 0
+PatchVersion: 0
+Summary: My package does the thing.
+Description: |
+  My package does the thing. 
+  It does it very good, it does it very well. 
+  It does it very fast, it does it very swell.
+Publish: true
+Authors:
+  - FullName: John Doe
+    Email: j@d.com
+    Affiliation: University of Nowhere
+    AffiliationLink: https://nowhere.edu
+  - FullName: Jane Doe
+    Email: jj@d.com
+    Affiliation: University of Somewhere
+    AffiliationLink: https://somewhere.edu
+Tags:
+  - Name: validation
+  - Name: my-tag
+    TermSourceREF: my-ontology
+    TermAccessionNumber: MO:12345
+ReleaseNotes: |
+  - initial release
+    - does the thing
+    - does it well
+CQCHookEndpoint: https://some-url.xd
+---
+*)"""
+```
+</TabItem>
+<TabItem label="Python" icon='seti:python'>
+```python
+PACKAGE_METADATA = """
+---
+Name: my-package
+MajorVersion: 1
+MinorVersion: 0
+PatchVersion: 0
+Summary: My package does the thing.
+Description: |
+  My package does the thing. 
+  It does it very good, it does it very well. 
+  It does it very fast, it does it very swell.
+Publish: true
+Authors:
+  - FullName: John Doe
+    Email: j@d.com
+    Affiliation: University of Nowhere
+    AffiliationLink: https://nowhere.edu
+  - FullName: Jane Doe
+    Email: jj@d.com
+    Affiliation: University of Somewhere
+    AffiliationLink: https://somewhere.edu
+Tags:
+  - Name: validation
+  - Name: my-tag
+    TermSourceREF: my-ontology
+    TermAccessionNumber: MO:12345
+ReleaseNotes: |
+  - initial release
+    - does the thing
+    - does it well
+CQCHookEndpoint: https://some-url.xd
+---
+"""
+```
+</TabItem>
+</Tabs>
+
+### Objects
+
+#### Author
+
+Author metadata about the people that create and maintain the package.
+
+| Field | Type | Description | Mandatory |
+| --- | --- | --- | --- |
+| FullName | string | the full name of the author | yes |
+| Email | string | the email address of the author | no |
+| Affiliation | string | the affiliation (e.g. institution) of the author | no |
+| AffiliationLink | string | a link to the affiliation of the author | no |
+
+#### Tag
+
+Tags can be any string with an optional ontology annotation from a controlled vocabulary:
+
+| Field | Type | Description | Mandatory |
+| --- | --- | --- | --- |
+| Name | string | the name of the tag | yes |
+| TermSourceREF | string | Reference to a controlled vocabulary source | no |
+| TermAccessionNumber | string | Accession in the referenced controlled vocabulary source | no |
+
+## Versioning packages
+
+Packages SHOULD be versioned according to the [semantic versioning](https://semver.org/) standard. This means that the version number of a package should be incremented according to the following rules:
+
+- **Major version**: incremented when you make changes incompatible with previous versions
+- **Minor version**: incremented when you add functionality in a backwards-compatible manner
+- **Patch version**: incremented when you make backwards-compatible bug fixes
+
+## Validation Output
+
+Validation packages MUST create a folder structure in the folder they are executed in that looks exactly like this:
+
+<FileTree>
+- \<execution_directory\>
+  - .arc-validate-results
+    - \<package-name\>@\<package_version\>
+      - validation_report.xml
+      - validation_summary.json
+      - badge.svg
+</FileTree>
+
+Meaning for the package `invenio` with version `3.1.0`, the following folder structure MUST be created:
+
+<FileTree>
+- \<execution_directory\>
+  - .arc-validate-results
+    - invenio@3.1.0
+      - validation_report.xml
+      - validation_summary.json
+      - badge.svg
+</FileTree>
+
+### JUnit report
+
+A file in [JUnit XML format](https://llg.cubic.org/docs/junit/) named `validation_report.xml` MUST be created inside the package output folder. This file contains detailed information about all validation cases executed by the package, including their status (passed, failed,errored), execution time, and any error messages or stack traces.
+
+### Badges
+
+A SVG badge named `badge.svg` MUST be created inside the package output folder. This badge summarizes the overall validation status of the package execution. The badge SHOULD indicate whether the validation passed or failed, and MAY include additional information such as the number of tests executed or the percentage of tests passed. This badge will be displayed on the ARC homepage.
+
+### Summary
+
+A JSON file named `validation_summary.json` MUST be created inside the package output folder. This file contains a summary of the validation results, including the total number of tests executed, the number of tests passed, failed, and errored, as well as other information necessary to trigger downstream processes in CQC pipelines.
+
+_**Current schema is available in the [ARC specification](https://github.com/nfdi4plants/ARC-specification/blob/release/ARC%20specification.md#validation-packages)**_
+
+## Submission to AVPR
+
+To submit a validation package to the [ARC Validation Package Registry (AVPR)](https://avpr.nfdi4plants.org/packages) go to the [AVPR repository in GitHub and file a PR as stated in the repository's README](https://github.com/nfdi4plants/arc-validate-package-registry?tab=readme-ov-file#validation-package-staging-area).
