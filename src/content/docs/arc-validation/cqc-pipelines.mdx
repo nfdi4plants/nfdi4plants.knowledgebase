@@ -8,10 +8,40 @@ sidebar:
 ---
 
 import Mermaid from '@components/mdx/Mermaid.astro';
+import { Steps } from '@astrojs/starlight/components';
 
 **Continuous Quality Control (CQC) pipelines** are automated processes that run on every commit to an ARC on the DataHUB. They combine the automatic attachment of the ARC RO-Crate to the commit with optional, user-selected validation steps. Users can specify which validation packages their ARC should be tested against, and the results are displayed as badges on the ARC homepage.
 
-CQC on the DataHUB consist of 4 steps: **(1)** the machine-readable representation (_ARC RO-Crate_) for the commit is created and linked, enabling a plethora of downstream applications. **(2)** The ARC is then queried for whether the user has opted in to validate against any validation package. If **(2)** is the case, a pipeline step is created for each validation package. In these steps, the validation package is executed and results are collected and committed to the ARCs `cqc` branch. Subsequently, **(4)** the validation results from **(3)** are displayed as badges on the ARC homepage.
+**CQC on the DataHUB consist of 4 steps:**
+
+<Steps>
+
+  1. 
+      <details>
+        <summary>Generation and attachment of the ARC RO-Crate</summary>
+        The ARC RO-Crate is the machine-readable representation of the ARC at the given commit. It is generated via [arc-export](https://github.com/nfdi4plants/arc-export) and available via the ARCs package registry page. Read more about the ARC-RO-Crate [here](https://arc-rdm.org/details/arc-representation/#two-sides-of-the-same-coin)
+      </details>
+  2. 
+      <details>
+        <summary>Check for user-selected validation packages</summary>
+        Users can opt-in to validate their ARC against any validation package available on the [ARC Validation Package Registry (AVPR)](https://avpr.nfdi4plants.org/packages). 
+
+        [Read more below](/nfdi4plants.knowledgebase/arc-validation/cqc-pipelines/#use-validation-packages-in-your-cqc-pipeline).
+      </details>
+  4. 
+      <details>
+        <summary>Execute validation packages (optional)</summary>
+        - 3.1: For each validation package selected in step 2, a pipeline step is created that executes the package. 
+        - 3.2: Results are collected and committed to the ARCs `cqc` branch.
+        - [Read more about validation package output](http://localhost:4321/nfdi4plants.knowledgebase/arc-validation/authoring-validation-packages/#validation-output).
+        - [Read more about authoring validation packages](/nfdi4plants.knowledgebase/arc-validation/authoring-validation-packages).
+      </details>
+  3. 
+      <details>
+        <summary>Display validation results as badges on ARC homepage</summary>
+        Each validation package creates a badge representing the result of the package execution. These badges are displayed on the ARC homepage, providing a quick overview of the ARC's compliance with the selected validation packages.
+      </details>
+</Steps>
 
 <Mermaid>
 ```mermaid
