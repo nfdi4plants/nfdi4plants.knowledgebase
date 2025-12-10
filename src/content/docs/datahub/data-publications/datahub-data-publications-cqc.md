@@ -6,12 +6,12 @@ authors:
 ---
 
 :::note
-All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](/nfdi4plants.knowledgebase/arc-validation/validation-packages) to learn how to opt-in.
+All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](/nfdi4plants.knowledgebase/arc-validation/cqc-pipelines) to learn how to opt-in.
 :::
 
 Continuous Quality Control (**CQC**) is a process that ensures the quality of the metadata of an ARC meets certain standards.
 
-Read more about the general CQC process [here](/nfdi4plants.knowledgebase/arc-validation/validation-packages).
+Read more about the general CQC process [here](/nfdi4plants.knowledgebase/arc-validation/cqc-pipelines).
 
 in short the CQC pipeline is performed on each commit to an ARC, and the results of each step (e.g., validation against a user-selected validation package) are displayed on the ARC homepage:
 

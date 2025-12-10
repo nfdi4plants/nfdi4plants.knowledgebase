@@ -6,7 +6,7 @@ authors:
 ---
 
 :::note
-All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](/nfdi4plants.knowledgebase/arc-validation/validation-packages) to learn how to opt-in.
+All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](/nfdi4plants.knowledgebase/arc-validation/cqc-pipelines) to learn how to opt-in.
 :::
 
 Once your data publication is published on the ARChive, you can use its digital object identifier (DOI) to cite your data publication. The DOI is a [persistent identifier](/nfdi4plants.knowledgebase/fundamentals/persistent-identifiers) and will always resolve to the data publication. The DOI is also registered with DataCite and will be indexed by DataCite and other DOI registration agencies. This means that your data publication will be findable and citable by other researchers.
