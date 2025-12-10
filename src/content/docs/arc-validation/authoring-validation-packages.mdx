@@ -39,7 +39,7 @@ The metadata MUST be the first thing occurring in the validation package file an
 
 ### String frontmatter
 
-<Tabs syncKey="frontmatter">
+<Tabs syncKey="pl">
 
 <TabItem label="FSharp" icon='seti:f-sharp'>
 In F# validation packages, the frontmatter MUST be enclosed in a multi-line comment (`(* ... *)`).
@@ -67,7 +67,7 @@ In Python validation packages, the frontmatter MUST be enclosed in a multi-line 
 
 You can bind YAML frontmatter as a string inside your package. **This is recommended** because you can now re-use the metadata in your package code.
 
-<Tabs syncKey="frontmatter">
+<Tabs syncKey="pl">
 <TabItem label="FSharp" icon='seti:f-sharp'>
 
 Binding must be placed at the start of the file to the name `PACKAGE_METADATA` with a `[<Literal>]` attribute _exactly_ like this:
@@ -96,7 +96,7 @@ PACKAGE_METADATA = """
 
 Re-use in the package code:
 
-<Tabs syncKey="frontmatter">
+<Tabs syncKey="pl">
 <TabItem label="FSharp" icon='seti:f-sharp'>
 ```fsharp
 // The F# library for writing ARC validation packages, adjust version!
@@ -129,7 +129,7 @@ A library for python is WIP, for now you can use string processing and YAML pars
 
 Example:
 
-<Tabs syncKey="frontmatter">
+<Tabs syncKey="pl">
 <TabItem label="FSharp" icon='seti:f-sharp'>
 ```fsharp
 let [<Literal>] PACKAGE_METADATA = """(*
@@ -178,7 +178,7 @@ Description: |
 
 Example:
 
-<Tabs syncKey="frontmatter">
+<Tabs syncKey="pl">
 <TabItem label="FSharp" icon='seti:f-sharp'>
 ```fsharp
 let [<Literal>] PACKAGE_METADATA = """(*
