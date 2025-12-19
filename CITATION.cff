@@ -1,0 +1,76 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "DataPLANT Knowledge Base"
+version: 1.0.0
+authors:
+  - family-names: Brilhaus
+    given-names: Dominik
+    orcid: https://orcid.org/0000-0001-9021-3197
+  - familiy-names: Frey
+    given names: Kevin 
+    orcid: https://orcid.org/0000-0002-8510-6810
+  - familiy-names: Weil
+    given names: Heinrich Lukas
+    orcid: https://orcid.org/0000-0003-1945-6342
+  - familiy-names: Schneider
+    given names: Kevin 
+    orcid: https://orcid.org/0000-0002-2198-5262
+  - familiy-names: Ott
+    given names: Caroline 
+    orcid: https://orcid.org/0000-0003-1512-9504
+  - familiy-names: Zander
+    given names: Sabrina
+    orcid: https://orcid.org/0009-0000-4569-6126
+  - familiy-names: Schmale Rodrigues
+    given names: Cristina
+    orcid: https://orcid.org/0000-0002-4849-1537
+  - familiy-names: Dörpholz
+    given names: Hannah
+    orcid: https://orcid.org/0000-0002-0476-9699
+  - familiy-names: Weidhase
+    given names: Julian
+    orcid: https://orcid.org/0009-0005-7138-4763
+  - familiy-names: Paul
+    given names: Annika 
+    orcid: https://orcid.org/0009-0008-7417-0965
+  - familiy-names: Blume
+    given names: Patrick
+  - familiy-names: Hans
+    given names: Pauline
+    orcid: https://orcid.org/0009-0007-8992-9447
+  - familiy-names: Eggels
+    given names: Stella
+    orcid: https://orcid.org/0000-0002-0006-0002
+  - familiy-names: Kranz
+    given names: Angela
+  - familiy-names: Dumschott
+    given names: Kathryn
+  - familiy-names: Hiltemann
+    given names: Saskia
+    orcid: https://orcid.org/0000-0003-3803-468X
+  - familiy-names: Zhou
+    given names: Xiaoran 
+    orcid: https://orcid.org/0000-0002-5622-3348
+  - familiy-names: Zimmer
+    given names: David
+  - familiy-names: Kirbis
+    given names: Alexander 
+    orcid: https://orcid.org/0000-0002-5667-3103
+  - familiy-names: Jalali
+    given names: Hamed 
+    orcid: https://orcid.org/0000-0002-1190-5652
+  - familiy-names: Eberhardt
+    given names: Ursula
+    orcid: https://orcid.org/0000-0003-1221-7074
+  - familiy-names: Beuter
+    given names: Lucas
+    orcid: https://orcid.org/0009-0008-8744-825X
+  - familiy-names: Kuhl
+    given names: Martin 
+    orcid: https://orcid.org/0000-0002-8493-1077
+  - familiy-names: Petrova
+    given names: Viktoria
+# identifiers:
+#   - type: doi
+#     value: 
+date-released: 2025-12-19
