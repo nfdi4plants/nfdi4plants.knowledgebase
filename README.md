@@ -1,6 +1,6 @@
 # DataPLANT Knowledge Base
 
-[![CC BY 4.0][cc-by-shield]][cc-by]
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18161503.svg)](https://doi.org/10.5281/zenodo.18161503) [![CC BY 4.0][cc-by-shield]][cc-by]
 
 Welcome to the [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4plants.knowledgebase/index.html)! 👋
 
