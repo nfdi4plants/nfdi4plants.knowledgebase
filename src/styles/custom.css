@@ -28,6 +28,73 @@
 	--sl-color-black: #FEFEFE;
 }
 
+/* =====================================
+   ASIDE COLOR TOKENS
+   ===================================== */
+
+/* Dark mode */
+:root {
+  --aside-note-bg: #10242B;
+  --aside-note-border: #4FB3D9;
+  --aside-note-accent: #72C2E1;
+
+  --aside-tip-bg: #062721;
+  --aside-tip-border: #1FC2A7;
+  --aside-tip-accent: #4CCEB9;
+
+  --aside-caution-bg: #332600;
+  --aside-caution-border: #FFC000;
+  --aside-caution-accent: #FFD34D;
+
+  --aside-danger-bg: #26060B;
+  --aside-danger-border: #C21F3A;
+  --aside-danger-accent: #CE4B61;
+}
+
+/* Light mode */
+:root[data-theme='light'] {
+  --aside-note-bg: #EDF7FB;
+  --aside-note-border: #4FB3D9;
+  --aside-note-accent: #377D98;
+
+  --aside-tip-bg: #E9F9F6;
+  --aside-tip-border: #1FC2A7;
+  --aside-tip-accent: #168875;
+
+  --aside-caution-bg: #FFF9E6;
+  --aside-caution-border: #FFC000;
+  --aside-caution-accent: #B38600;
+
+  --aside-danger-bg: #F8E8EB;
+  --aside-danger-border: #C21F3A;
+  --aside-danger-accent: #871528;
+}
+
+
+.starlight-aside--note {
+  background-color: var(--aside-note-bg);
+  --sl-color-asides-border: var(--aside-note-border);
+  --sl-color-asides-text-accent: var(--aside-note-accent);
+}
+
+.starlight-aside--tip {
+  background-color: var(--aside-tip-bg);
+  --sl-color-asides-border: var(--aside-tip-border);
+  --sl-color-asides-text-accent: var(--aside-tip-accent);
+}
+
+.starlight-aside--caution {
+  background-color: var(--aside-caution-bg);
+  --sl-color-asides-border: var(--aside-caution-border);
+  --sl-color-asides-text-accent: var(--aside-caution-accent);
+}
+
+.starlight-aside--danger {
+  background-color: var(--aside-danger-bg);
+  --sl-color-asides-border: var(--aside-danger-border);
+  --sl-color-asides-text-accent: var(--aside-danger-accent);
+}
+
 
 
 btn {
