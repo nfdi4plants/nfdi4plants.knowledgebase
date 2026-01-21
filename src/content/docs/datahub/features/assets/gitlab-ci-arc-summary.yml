@@ -6,10 +6,10 @@ stages:
     - quality_report_generator
     - quality_report
     - generate_metadata
-    - arc-summary
+    - arc_summary
 
 summary:
-  stage: arc-summary
+  stage: arc_summary
   image:
     name: ghcr.io/nfdi4plants/arc-summary:main
     entrypoint: [""]
