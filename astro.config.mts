@@ -17,6 +17,10 @@ export default defineConfig({
   integrations: [icon(), starlight({
     title: 'DataPLANT',
     favicon: "favicon.png",
+    logo: {
+        src: 'public/dataplant_logo_bg_transparent.svg',
+        replacesTitle: true
+    },
     customCss: [
       // Relative path to your custom CSS file
       './src/styles/tailwind.css',
