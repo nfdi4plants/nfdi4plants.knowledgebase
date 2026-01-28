@@ -6,11 +6,11 @@ import { getEntries } from 'astro:content';
 import AuthorCard from '@components/AuthorCard.astro';
 
 // Resolve an array of references
-// const authors: CollectionEntry<'authors'>[] = Astro.props.entry.data.authors ? await getEntries(Astro.props.entry.data.authors) : [];
+const authors: CollectionEntry<'authors'>[] = Astro.locals.starlightRoute.entry.data.authors ? await getEntries(Astro.locals.starlightRoute.entry.data.authors) : [];
 ---
 
 <footer class="flex gap-4 flex-col">
-  <Default {...Astro.props}>
+  <Default {...Astro.locals.starlightRoute}>
     <slot />
   </Default>
   {
@@ -20,9 +20,9 @@ import AuthorCard from '@components/AuthorCard.astro';
           Authors
         </p>
         <div class="flex flex-col gap-2 md:gap-4">
-          {/* {authors.map((author) => (
+          {authors.map((author) => (
             <AuthorCard author={author} />
-          ))} */}
+          ))}
         </div>
       </div>
   }
