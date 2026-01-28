@@ -36,9 +36,7 @@ export default defineConfig({
     editLink: {
       baseUrl: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase/edit/main/'
     },
-    // social: {
-    //   github: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase',
-    // },
+    social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase' }],
     plugins: [
       starlightLinksValidator(),
       starlightImageZoom(),
