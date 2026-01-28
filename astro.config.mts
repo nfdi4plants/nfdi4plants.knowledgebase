@@ -3,17 +3,19 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import rehypeSlug from 'rehype-slug';
 import { rehypeAutolink } from './plugins/rehype-autolink';
-import tailwind from '@astrojs/tailwind';
 import starlightLinksValidator from 'starlight-links-validator'
 import starlightImageZoom from 'starlight-image-zoom'
 import icon from "astro-icon";
 
 import react from '@astrojs/react';
 
+import tailwindcss from '@tailwindcss/vite';
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://nfdi4plants.github.io",
   base: '/nfdi4plants.knowledgebase',
+
   integrations: [icon(), starlight({
     title: 'DataPLANT',
     favicon: "favicon.png",
@@ -22,10 +24,11 @@ export default defineConfig({
         replacesTitle: true
     },
     customCss: [
-      // Relative path to your custom CSS file
-      './src/styles/tailwind.css',
-      './src/styles/custom.css',
-    ],
+        // Path to Tailwind base styles:
+        './src/styles/global.css',
+        // Relative path to custom CSS file
+        './src/styles/custom.css',
+      ],
     components: {
       MarkdownContent: '@components/starlight/MarkdownContent.astro',
       Footer: '@components/starlight/Footer.astro',
@@ -33,9 +36,9 @@ export default defineConfig({
     editLink: {
       baseUrl: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase/edit/main/'
     },
-    social: {
-      github: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase',
-    },
+    // social: {
+    //   github: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase',
+    // },
     plugins: [
       starlightLinksValidator(),
       starlightImageZoom(),
@@ -239,11 +242,14 @@ export default defineConfig({
         },
       },
     },
-  }), tailwind({
-    // Disable the default base styles:
-    applyBaseStyles: false,
-  }), react()],
+  }), 
+  react()],
+
   markdown: {
     rehypePlugins: [rehypeSlug, ...rehypeAutolink()],
+  },
+
+  vite: {
+    plugins: [tailwindcss()],
   },
 });
