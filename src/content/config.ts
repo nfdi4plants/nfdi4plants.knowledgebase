@@ -1,5 +1,8 @@
 import { z, defineCollection, reference } from 'astro:content';
+import { docsLoader } from '@astrojs/starlight/loaders'
 import { docsSchema } from '@astrojs/starlight/schema';
+import { autoSidebarLoader } from 'starlight-auto-sidebar/loader'
+import { autoSidebarSchema } from 'starlight-auto-sidebar/schema'
 
 const authors = defineCollection({
   type: 'data',
@@ -22,6 +25,7 @@ const authors = defineCollection({
 });
 
 const extendedDocsSchema = defineCollection({ 
+  loader: docsLoader(),
   schema: docsSchema({
     extend: z.object({
       authors: z.array(reference('authors')).optional(),
@@ -29,7 +33,11 @@ const extendedDocsSchema = defineCollection({
   })
 });
 
-export const collections = {
+export const collections = {  
 	docs: extendedDocsSchema,
   authors: authors,
+  autoSidebar: defineCollection({
+    loader: autoSidebarLoader(),
+    schema: autoSidebarSchema(),
+  }),
 };

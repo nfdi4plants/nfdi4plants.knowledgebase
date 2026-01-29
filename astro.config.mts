@@ -5,6 +5,7 @@ import rehypeSlug from 'rehype-slug';
 import { rehypeAutolink } from './plugins/rehype-autolink';
 import starlightLinksValidator from 'starlight-links-validator'
 import starlightSidebarTopics from 'starlight-sidebar-topics'
+import starlightAutoSidebar from 'starlight-auto-sidebar'
 import starlightImageZoom from 'starlight-image-zoom'
 import icon from "astro-icon";
 
@@ -42,6 +43,7 @@ export default defineConfig({
     plugins: [
       starlightLinksValidator(),
       starlightImageZoom(),
+      starlightAutoSidebar(),
       starlightSidebarTopics([
         {
           label: 'Start Here',
@@ -52,16 +54,21 @@ export default defineConfig({
           ]
         },
         {
+          label: 'DataHUB',
+          icon: 'external',
+          link: 'https://git.nfdi4plants.org/',
+        },
+        {
           label: 'Docs',
           icon: 'open-book',
-          link: 'core-concepts',
+          link: 'guides',
           items:[
-            {label: 'Core Concepts', autogenerate: { directory: 'core-concepts' }},
-            {label: 'Guides', autogenerate: { directory: 'guides' }},
-            {label: 'Resources', autogenerate: { directory: 'resources' }},
-            {label: 'Git', autogenerate: { directory: 'git' }},
-            {label: 'CWL', autogenerate: { directory: 'cwl' }},
-            {label: 'Fundamentals', autogenerate: { directory: 'fundamentals' }},
+            {collapsed: true, label: 'Fundamentals', autogenerate: { directory: 'fundamentals' }},
+            {collapsed: true, label: 'Core Concepts', autogenerate: { directory: 'core-concepts' }},
+            {collapsed: true, label: 'Guides', autogenerate: { directory: 'guides' }},
+            {collapsed: true, label: 'Resources', autogenerate: { directory: 'resources' }},
+            {collapsed: true, label: 'Git', autogenerate: { directory: 'git' }},
+            {collapsed: true, label: 'CWL', autogenerate: { directory: 'cwl' }},
           ]
         },
         {
@@ -69,12 +76,12 @@ export default defineConfig({
           icon: 'setting',
           link: 'arcitect',
           items: [
-            {label: 'ARCitect', autogenerate: { directory: 'arcitect' }},
-            {label: 'ARC Validation', autogenerate: { directory: 'arc-validation' }},
-            {label: 'DataHUB', autogenerate: { directory: 'datahub' }},
-            {label: 'ARC Commander', autogenerate: { directory: 'arc-commander' }},
-            {label: 'Swate', autogenerate: { directory: 'swate' }},
-            {label: 'ARCManager', autogenerate: { directory: 'arc-manager' }},
+            {collapsed: true, label: 'ARCitect', autogenerate: { directory: 'arcitect' }},
+            {collapsed: true, label: 'ARC Validation', autogenerate: { directory: 'arc-validation' }},
+            {collapsed: true, label: 'DataHUB', autogenerate: { directory: 'datahub' }},
+            {collapsed: true, label: 'ARC Commander', autogenerate: { directory: 'arc-commander' }},
+            {collapsed: true, label: 'Swate', autogenerate: { directory: 'swate' }},
+            {collapsed: true, label: 'ARCManager', autogenerate: { directory: 'arc-manager' }},
           ]
         },
         {
