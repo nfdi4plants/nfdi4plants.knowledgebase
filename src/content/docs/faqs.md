@@ -103,13 +103,13 @@ ERROR: System.InvalidOperationException: Error loading discovery document: Error
 
 The root certificates need to be present on the machine to verify certificates for any outgoing connection. These come from a package usually called `ca-certificates` on RHEL-derivates and on Debian-based systems. It can be installed quite easily with:
 
-### Debian
+#### Debian
 
 ```bash
 apt install ca-certificates
 ```
 
-### RHEL
+#### RHEL
 
 ```bash
 dnf install ca-certificates
