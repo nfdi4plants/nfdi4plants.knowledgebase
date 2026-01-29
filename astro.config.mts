@@ -39,7 +39,11 @@ export default defineConfig({
     editLink: {
       baseUrl: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase/edit/main/'
     },
-    social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase' }],
+    social: [
+      { icon: 'github', label: 'GitHub', href: 'https://github.com/nfdi4plants/nfdi4plants.knowledgebase' },
+      { icon: 'matrix', label: 'Matrix', href: 'https://matrix.to/#/%23arc-user-support:matrix.org' },
+    
+    ],
     plugins: [
       starlightLinksValidator(),
       starlightImageZoom(),
