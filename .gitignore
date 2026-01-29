@@ -26,3 +26,5 @@ pnpm-debug.log*
 
 # linux-specific files
 *.swp
+
+.cache

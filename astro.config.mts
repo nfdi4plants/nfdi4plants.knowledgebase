@@ -170,7 +170,8 @@ export default defineConfig({
           icon: 'forward-slash',
           link: 'arctrl',
           items: [
-            {label: 'ARCtrl', autogenerate: { directory: 'arctrl' }}
+            {collapsed: true, label: 'ARCtrl', autogenerate: { directory: 'arctrl' }},
+            'contribution',
           ]
         },
         ],
