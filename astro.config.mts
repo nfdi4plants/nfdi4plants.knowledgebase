@@ -21,11 +21,11 @@ export default defineConfig({
 
   integrations: [icon(), 
     starlight({
-      title: 'DataPLANT',
+      title: 'Knowledge Base',
       favicon: "favicon.png",
       logo: {
-        src: 'public/dataplant_logo_bg_transparent.svg',
-        replacesTitle: true
+        src: '@images/banner.svg',
+        // replacesTitle: true
       },
       customCss: [
         // Path to Tailwind base styles:
@@ -170,7 +170,8 @@ export default defineConfig({
           icon: 'forward-slash',
           link: 'arctrl',
           items: [
-            {label: 'ARCtrl', autogenerate: { directory: 'arctrl' }}
+            {collapsed: true, label: 'ARCtrl', autogenerate: { directory: 'arctrl' }},
+            'contribution',
           ]
         },
         ],
