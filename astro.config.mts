@@ -7,6 +7,7 @@ import starlightLinksValidator from 'starlight-links-validator'
 import starlightSidebarTopics from 'starlight-sidebar-topics'
 import starlightAutoSidebar from 'starlight-auto-sidebar'
 import starlightImageZoom from 'starlight-image-zoom'
+import starlightUiTweaks from 'starlight-ui-tweaks'
 import icon from "astro-icon";
 
 import react from '@astrojs/react';
@@ -48,13 +49,17 @@ export default defineConfig({
       starlightLinksValidator(),
       starlightImageZoom(),
       starlightAutoSidebar(),
+      starlightUiTweaks({
+        navbarLinks: [
+            { label: "DataHUB", href: "https://git.nfdi4plants.org/",},
+            { label: "DataPLANT", href: "https://nfdi4plants.org/",},
+            { label: "ARC", href: "https://arc-rdm.org",},
+          ],
+        }
+
+      ),
       starlightSidebarTopics(        
         [
-        {
-          label: 'DataHUB',
-          icon: 'external',
-          link: 'https://git.nfdi4plants.org/',
-        },
         {
           label: 'Start Here',
           icon: 'rocket',
