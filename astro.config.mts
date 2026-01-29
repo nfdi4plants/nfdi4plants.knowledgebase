@@ -64,6 +64,7 @@ export default defineConfig({
           label: 'Guides and docs',
           icon: 'open-book',
           link: 'index-docs',
+          id: 'guides',
           items:[
             'index-docs',
             {collapsed: true, label: 'Fundamentals', autogenerate: { directory: 'fundamentals' }},
