@@ -46,6 +46,11 @@ export default defineConfig({
       starlightAutoSidebar(),
       starlightSidebarTopics([
         {
+          label: 'DataHUB',
+          icon: 'external',
+          link: 'https://git.nfdi4plants.org/',
+        },
+        {
           label: 'Start Here',
           icon: 'rocket',
           link: 'start-here',
@@ -54,19 +59,14 @@ export default defineConfig({
           ]
         },
         {
-          label: 'DataHUB',
-          icon: 'external',
-          link: 'https://git.nfdi4plants.org/',
-        },
-        {
-          label: 'Docs',
+          label: 'Guides and docs',
           icon: 'open-book',
-          link: 'guides',
+          link: 'index-docs',
           items:[
+            'index-docs',
             {collapsed: true, label: 'Fundamentals', autogenerate: { directory: 'fundamentals' }},
             {collapsed: true, label: 'Core Concepts', autogenerate: { directory: 'core-concepts' }},
             {collapsed: true, label: 'Guides', autogenerate: { directory: 'guides' }},
-            {collapsed: true, label: 'Resources', autogenerate: { directory: 'resources' }},
             {collapsed: true, label: 'Git', autogenerate: { directory: 'git' }},
             {collapsed: true, label: 'CWL', autogenerate: { directory: 'cwl' }},
           ]
@@ -74,14 +74,77 @@ export default defineConfig({
         {
           label: 'Tools and Services',
           icon: 'setting',
-          link: 'arcitect',
+          link: 'index-tools-services',
           items: [
+            'index-tools-services',
             {collapsed: true, label: 'ARCitect', autogenerate: { directory: 'arcitect' }},
             {collapsed: true, label: 'ARC Validation', autogenerate: { directory: 'arc-validation' }},
-            {collapsed: true, label: 'DataHUB', autogenerate: { directory: 'datahub' }},
-            {collapsed: true, label: 'ARC Commander', autogenerate: { directory: 'arc-commander' }},
+            {collapsed: true, label: 'DataHUB', 
+              items: [
+                'datahub',           
+                {
+                  label: 'DataPLANT Account',
+                  collapsed: false,
+                  autogenerate: { directory: 'datahub/account'},
+                },
+                {
+                  label: 'Navigation & Settings',
+                  autogenerate: { directory: 'datahub/navigation-settings'},
+                },
+                'datahub/access-tokens',
+                {
+                  label: 'Working together',
+                  autogenerate: { directory: 'datahub/working-together'},
+                },
+                {
+                  label: 'ARC files',
+                  autogenerate: { directory: 'datahub/arc-files'},
+                },
+                {
+                  label: 'ARC features',
+                  autogenerate: { directory: 'datahub/arc-features'},
+                },
+                {
+                  label: 'Data Publications',
+                  autogenerate: { directory: 'datahub/data-publications'},
+                },
+                {
+                  label: 'Additional Features',
+                  autogenerate: { directory: 'datahub/features'},
+                },                
+              ]
+            },
+            {collapsed: true, label: 'ARC Commander', 
+              items:[
+                      'arc-commander',           
+                      {
+                        label: 'Setup',
+                        collapsed: false,
+                        autogenerate: { directory: 'arc-commander/setup'},
+                      },
+                      'arc-commander/using-arc',
+                      'arc-commander/arc-commander-quick-start',
+                      {
+                        label: 'Central Functions',
+                        collapsed: false,
+                        autogenerate: { directory: 'arc-commander/central-functions'},
+                      },
+                      {
+                        label: 'ISA metadata',
+                        collapsed: false,
+                        autogenerate: { directory: 'arc-commander/isa'},
+                      },
+                      'arc-commander/lfs',
+                    ]
+              
+            },
             {collapsed: true, label: 'Swate', autogenerate: { directory: 'swate' }},
+            {collapsed: true, label: 'Boat', autogenerate: { directory: 'resources/boat' }},
             {collapsed: true, label: 'ARCManager', autogenerate: { directory: 'arc-manager' }},
+            'resources/dataplan',
+            'resources/elab2arc',
+            'resources/galaxy',
+            'resources/metadata-quiz',
           ]
         },
         {
@@ -100,14 +163,6 @@ export default defineConfig({
         },
         ]),
       ],
-      
-      // {
-      //   label: 'Vault',
-      //   // Collapse the group by default.
-      //   collapsed: true,
-      //   badge: {text: 'Outdated', variant: 'note'}, 
-      //   autogenerate: { directory: 'vault' },
-      // },
     expressiveCode: {
       defaultProps: {
         // Enable wrap for specific languages
@@ -127,3 +182,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 });
+
+
