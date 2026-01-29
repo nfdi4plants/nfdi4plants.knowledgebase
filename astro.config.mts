@@ -44,7 +44,8 @@ export default defineConfig({
       starlightLinksValidator(),
       starlightImageZoom(),
       starlightAutoSidebar(),
-      starlightSidebarTopics([
+      starlightSidebarTopics(        
+        [
         {
           label: 'DataHUB',
           icon: 'external',
@@ -54,10 +55,11 @@ export default defineConfig({
           label: 'Start Here',
           icon: 'rocket',
           link: 'start-here',
+          id: 'start-here',
           items:[
             {label: "Start Here", autogenerate: { directory: 'start-here' }},              
           ]
-        },
+        },        
         {
           label: 'Guides and docs',
           icon: 'open-book',
@@ -161,7 +163,16 @@ export default defineConfig({
             {label: 'ARCtrl', autogenerate: { directory: 'arctrl' }}
           ]
         },
-        ]),
+        ],
+        // {
+        //   // https://starlight-sidebar-topics.netlify.app/docs/guides/excluded-pages/
+        //   exclude: [
+        //     '**/start-here/viola-cwl',
+        //     'docs/git/git-check',
+        //     'git/git-download'          
+        //   ],
+        //   },      
+      ),
       ],
     expressiveCode: {
       defaultProps: {
