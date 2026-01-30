@@ -153,6 +153,7 @@ export default defineConfig({
             {collapsed: true, label: 'Swate', autogenerate: { directory: 'swate' }},
             {collapsed: true, label: 'Boat', autogenerate: { directory: 'resources/boat' }},
             {collapsed: true, label: 'ARCManager', autogenerate: { directory: 'arc-manager' }},
+            'resources/arc-summary',
             'resources/dataplan',
             'resources/elab2arc',
             'resources/galaxy',
