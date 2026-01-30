@@ -9,6 +9,7 @@ import starlightAutoSidebar from 'starlight-auto-sidebar'
 import starlightImageZoom from 'starlight-image-zoom'
 import starlightUiTweaks from 'starlight-ui-tweaks'
 import icon from "astro-icon";
+import { pluginLineNumbers } from '@expressive-code/plugin-line-numbers'
 
 import react from '@astrojs/react';
 
@@ -192,6 +193,7 @@ export default defineConfig({
           'txt,md,bash': { wrap: true },
         },
       },
+      plugins: [pluginLineNumbers()],
     },
   }), 
   react()],
