@@ -1,0 +1,234 @@
+---
+title: Linking inputs and outputs
+lastUpdated: 2026-01-30
+authors:
+ - dominik-brilhaus
+sidebar:
+  order: 1
+---
+
+import { FileTree } from '@astrojs/starlight/components';
+import Mermaid from '@components/mdx/Mermaid.astro'
+import NoWrapTable from "@components/NoWrapTable.astro"
+
+A key objective of the ARC is to trace each finding or result back to its specific biological experiment. Achieving this requires linking dataset files to their corresponding individual samples. To accomplish this, we follow a sequence of processes with defined **inputs** and **outputs**. Certain inputs and outputs may want to be reused or reproduced, while some processes may need to be applied to different inputs.
+
+
+## Example
+
+Consider the example experiment from the getting-started guide where six *Arabidopsis thaliana* plants were exposed to cold stress, and the sugar content was measured as a response. The ARC structure for this experiment could look like this:
+
+<FileTree>
+- AthalianaColdStressSugar
+  - studies
+    - AthalianaColdStress
+      - protocols
+        - **plant-sampling.md**
+  - assays
+      - SugarMeasurement
+          - dataset
+              - **sugar_result.csv**
+          - protocols
+              - **sugar_extraction.md**
+              - **sugar_measurement.md**
+          - isa.assay.xlsx
+          - README.md
+  - ...
+
+</FileTree>
+
+## Three annotation tables to describe three processes
+
+The following three annotation tables describe the three processes involved in this experiment. Each table links the `Input` and `Output` nodes by **reusing** the respective identifiers.
+
+:::note
+For simplicity, only the relevant columns to introduce the linking concept are shown here. The `[...]` indicates that there are additional columns in the actual tables, which would typically include other necessary metadata and annotations from the protocols.
+:::
+
+
+### 1. Plant Sampling (Study)
+
+| `Input`[Source Name] |  `ProtocolREF`                | [...] | `Output`[Sample Name] | 
+| -------------------- |  ---------------------------  | ----  |  -------------------- | 
+| <span style='background:yellow'>Cold1</span>                |  protocols/plant-sampling.md  | ...   |  Cold1_leaf           | 
+| Cold2                |  protocols/plant-sampling.md  | ...   |  Cold2_leaf           | 
+| Cold3                |  protocols/plant-sampling.md  | ...   |  Cold3_leaf           | 
+| RT1                  |  protocols/plant-sampling.md  | ...   |  RT1_leaf             | 
+| RT2                  |  protocols/plant-sampling.md  | ...   |  RT2_leaf             | 
+| RT3                  |  protocols/plant-sampling.md  | ...   |  RT3_leaf             | 
+
+### 2. Sugar Extraction (Assay)
+
+| `Input`[Sample Name] | `ProtocolREF`                   | [...] | `Output`[Sample Name] | 
+|  -------------------- | -----------------------------  | ----  |  -------------------- | 
+|  Cold1_leaf           | protocols/sugar_extraction.md  | ...   |  Cold1_sugar-ext      | 
+|  Cold2_leaf           | protocols/sugar_extraction.md  | ...   |  Cold2_sugar-ext      | 
+|  Cold3_leaf           | protocols/sugar_extraction.md  | ...   |  Cold3_sugar-ext      | 
+|  RT1_leaf             | protocols/sugar_extraction.md  | ...   |  RT1_sugar-ext        | 
+|  RT2_leaf             | protocols/sugar_extraction.md  | ...   |  RT2_sugar-ext        | 
+|  RT3_leaf             | protocols/sugar_extraction.md  | ...   |  RT3_sugar-ext        | 
+
+
+### 3. Sugar Measurement (Assay)
+
+<NoWrapTable>
+
+| `Input [Sample Name]` | `ProtocolREF`                 | [...] | `Output [Data]`                                    |
+| --------------------- | ----------------------------- | ---   | -------------------------------------------------- |
+| Cold1_sugar-ext       | protocols/sugar_extraction.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
+| Cold2_sugar-ext       | protocols/sugar_extraction.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
+| Cold3_sugar-ext       | protocols/sugar_extraction.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
+| RT1_sugar-ext         | protocols/sugar_extraction.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
+| RT2_sugar-ext         | protocols/sugar_extraction.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
+| RT3_sugar-ext         | protocols/sugar_extraction.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
+
+</NoWrapTable>
+
+
+## Linking samples to data – across studies and assays
+
+Following the simple approach of reusing sample and data identifiers in different parts of the ARC, we were able to concisely link the samples through the different lab processes in studies and assays to the data produced from those samples. 
+
+
+<Mermaid>
+```mermaid
+flowchart LR
+classDef studyStyle fill:#dae7c1,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:bold;
+classDef assayStyle fill:#ffe080,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:bold;
+classDef processStyle fill:#E08F9C,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
+classDef sampleStyle fill:#FEFEFE,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
+classDef dataStyle fill:#FEFEFE,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
+subgraph study1["Study:AthalianaColdStress"]
+    s1[Plants] ---p1[plant-sampling]--> s2[Leave samples]
+end
+subgraph assay1[Assay1:SugarMeasurement]
+    s2 ---p2[SugarExtraction]--> s3[Sugar extract samples]
+    s3 ---p3[SugarMeasurement]--> d1@{ shape: doc, label: sugar_result.csv}
+end
+class study1 studyStyle;
+class assay1 assayStyle;
+class p1,p2,p3 processStyle;
+class s1,s2,s3 sampleStyle;
+class d1 dataStyle;
+```
+
+</Mermaid>
+
+
+
+<Mermaid>
+```mermaid
+flowchart LR
+classDef studyStyle fill:#dae7c1,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:bold;
+classDef assayStyle fill:#ffe080,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:bold;
+classDef processStyle fill:#E08F9C,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
+classDef sampleStyle fill:#FEFEFE,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
+classDef dataStyle fill:#FEFEFE,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
+
+subgraph study1["Study:AthalianaColdStress"]
+    
+  subgraph p1[Plant Sampling]
+
+    subgraph in1[Plants]
+        is1a[Cold1]
+        is1b[Cold2]
+        is1c[Cold3]
+        is1d[RT1]
+        is1e[RT2]
+        is1f[RT3]
+    end
+
+    subgraph out1[Leaves]
+      os2a[Cold1_leaf]
+      os2b[Cold2_leaf]
+      os2c[Cold3_leaf]
+      os2d[RT1_leaf]
+      os2e[RT2_leaf]
+      os2f[RT3_leaf]
+    end    
+
+    is1a --> os2a
+    is1b --> os2b
+    is1c --> os2c
+    is1d --> os2d
+    is1e --> os2e
+    is1f --> os2f
+
+    end
+end
+
+os2a[Cold1_leaf]  --> is2a[Cold1_leaf]
+os2b[Cold2_leaf]  --> is2b[Cold2_leaf]
+os2c[Cold3_leaf]  --> is2c[Cold3_leaf]
+os2d[RT1_leaf]    --> is2d[RT1_leaf]  
+os2e[RT2_leaf]    --> is2e[RT2_leaf]  
+os2f[RT3_leaf]    --> is2f[RT3_leaf]  
+
+subgraph assay1[Assay1:SugarMeasurement]
+  
+  subgraph p2[Sugar Extraction]
+
+    subgraph in2[Leaves]
+      is2a
+      is2b
+      is2c
+      is2d
+      is2e
+      is2f
+    end  
+
+    subgraph out2[Sugar extract samples]
+      os3a[Cold1_sugar-ext]
+      os3b[Cold2_sugar-ext]
+      os3c[Cold3_sugar-ext]
+      os3d[RT1_sugar-ext]
+      os3e[RT2_sugar-ext]
+      os3f[RT3_sugar-ext]
+    end    
+    
+    is2a --> os3a
+    is2b --> os3b
+    is2c --> os3c
+    is2d --> os3d
+    is2e --> os3e
+    is2f --> os3f
+  
+  end  
+
+    os3a --> is3a[Cold1_sugar-ext]
+    os3b --> is3b[Cold2_sugar-ext]
+    os3c --> is3c[Cold3_sugar-ext]
+    os3d --> is3d[RT1_sugar-ext]
+    os3e --> is3e[RT2_sugar-ext]
+    os3f --> is3f[RT3_sugar-ext]
+
+  subgraph p3[Sugar Measurement]
+
+    subgraph in3[Sugar extract samples]
+      is3a
+      is3b
+      is3c
+      is3d
+      is3e
+      is3f
+    end
+
+    is3a --> d1@{ shape: doc, label: sugar_result.csv}
+    is3b --> d1
+    is3c --> d1
+    is3d --> d1
+    is3e --> d1
+    is3f --> d1
+  
+  end
+
+end
+
+class study1 studyStyle;
+class assay1 assayStyle;
+class p1,p2,p3 processStyle;
+class in1,in2,in3,out1,out2,out3 sampleStyle;
+class d1 dataStyle;
+```
+
+</Mermaid>
