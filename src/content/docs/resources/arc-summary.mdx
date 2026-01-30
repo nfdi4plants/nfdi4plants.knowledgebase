@@ -1,0 +1,62 @@
+---
+title: ARC Summary
+lastUpdated: 2026-01-30
+authors:
+  - dominik-brilhaus
+sidebar:
+  variant: note
+  text: WIP
+---
+
+:::note
+The ARC summary tool is still under development and subject to change.
+:::
+
+## About
+
+The **ARC Summary** tool automatically generates a comprehensive `README.md` file for your ARC based on its metadata and structure. This summary provides an overview of the investigation, studies, assays, and other relevant information contained within the ARC, facilitating better understanding and communication of the data.
+
+## How to use
+
+Add a blank `.arc/arc_summary.yml` file to your ARC directly [via the DataHUB](/nfdi4plants.knowledgebase/datahub/arc-files/datahub-files). The ARC Summary tool will automatically generate the `README.md` file based on the ARC's metadata and structure.
+
+Upon adding the configuration file, the ARC Summary tool:
+
+1. Creates the auto README as an "artifact". This `README.md` is available via the sidebar: **Build** → **Artifacts** and can be downloaded from there: search for "ARC Summary" and click the download icon. 
+2. Opens a merge request to merge the README into the repository. See **Code** → **Merge requests** in the sidebar.
+
+:::note
+Depending on the size and amount of (meta)data in your ARC, this may take a few minutes
+:::
+
+## Customization
+
+By adapting the `.arc/arc_summary.yml`, users can customize which sections are presented in the resulting `README.md` and in which order. Simply move or remove sections as desired. The default structure is as follows:
+
+```yaml
+Custom:
+   - Investigation # Top-level information based on metadata
+      - Title
+      - Description
+      - Contacts
+      - Publication
+   - TOC # Table of Contents
+   - ProvenanceGraph 
+      - AsISA # Flowchart comparing study & assay relationships
+      - AsArcTables # Flowchart comparing ArcTable relationships
+   - OverviewTable # Additional table based on metadata
+   - Studies
+      - Title
+      - Description
+      - Additionaldetails
+      - Annotationheaders
+   - Assays
+      - Title
+      - Description
+      - Additionaldetails
+      - Annotationheaders
+```
+
+:::note
+The correct indentation matters.
+:::
