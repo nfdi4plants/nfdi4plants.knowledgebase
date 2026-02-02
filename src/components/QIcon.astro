@@ -1,10 +1,46 @@
 ---
-const { name, set = 'material-icons', class: className = '', size = '1em' } = Astro.props
+const {
+  name = '',
+  size = '1em',
+  class: className = '',
+} = Astro.props
+
+let iconClass = 'material-icons'
+let iconName = name
+
+if (name.includes(':')) {
+  const [prefix, value] = name.split(':')
+  iconName = value
+
+  switch (prefix) {
+    case 'fa':
+      iconClass = 'fa-solid fa-' + value
+      iconName = ''
+      break
+    case 'far':
+      iconClass = 'fa-regular fa-' + value
+      iconName = ''
+      break
+    case 'sym':
+      iconClass = 'material-symbols-outlined'
+      break
+    case 'ion':
+      iconClass = 'ionicons'
+      break
+  }
+}
 ---
 
 <i
-  class={`${set} ${className}`}
-  style={`font-size: ${size}; line-height: 1; vertical-align: middle;`}
+  class={`${iconClass} ${className}`}
+  style={`
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: ${size};
+    line-height: 1;
+    vertical-align: middle;
+  `}
 >
-  {name}
+  {iconName}
 </i>
