@@ -5,6 +5,8 @@ authors:
 lastUpdated: 2023-03-16
 sidebar:
   hidden: true
+## https://starlight-sidebar-topics.netlify.app/docs/guides/unlisted-pages/
+topic: guides
 ---
 
 Find the **command-line interface (CLI)** on your system.
