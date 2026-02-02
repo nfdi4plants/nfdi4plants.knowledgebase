@@ -46,11 +46,24 @@ For simplicity, only the relevant columns to introduce the linking concept are s
 :::
 
 
+export const Highlight = ({ children }) => (
+  <span
+    style={{
+      backgroundColor: '#fff59d',
+      padding: '0 0.25rem',
+      borderRadius: '0.125rem',
+    }}
+  >
+    {children}
+  </span>
+)
+
+
 ### 1. Plant Sampling (Study)
 
 | `Input`[Source Name] |  `ProtocolREF`                | [...] | `Output`[Sample Name] | 
 | -------------------- |  ---------------------------  | ----  |  -------------------- | 
-| <span style='background:yellow'>Cold1</span>                |  protocols/plant-sampling.md  | ...   |  Cold1_leaf           | 
+| <Highlight>Cold1</Highlight> |  protocols/plant-sampling.md  | ...   |  <Highlight>Cold1_leaf</Highlight>           | 
 | Cold2                |  protocols/plant-sampling.md  | ...   |  Cold2_leaf           | 
 | Cold3                |  protocols/plant-sampling.md  | ...   |  Cold3_leaf           | 
 | RT1                  |  protocols/plant-sampling.md  | ...   |  RT1_leaf             | 
@@ -61,7 +74,7 @@ For simplicity, only the relevant columns to introduce the linking concept are s
 
 | `Input`[Sample Name] | `ProtocolREF`                   | [...] | `Output`[Sample Name] | 
 |  -------------------- | -----------------------------  | ----  |  -------------------- | 
-|  Cold1_leaf           | protocols/sugar_extraction.md  | ...   |  Cold1_sugar-ext      | 
+|  <Highlight>Cold1_leaf</Highlight>            | protocols/sugar_extraction.md  | ...   |  <Highlight>Cold1_sugar-ext</Highlight>       | 
 |  Cold2_leaf           | protocols/sugar_extraction.md  | ...   |  Cold2_sugar-ext      | 
 |  Cold3_leaf           | protocols/sugar_extraction.md  | ...   |  Cold3_sugar-ext      | 
 |  RT1_leaf             | protocols/sugar_extraction.md  | ...   |  RT1_sugar-ext        | 
@@ -75,12 +88,12 @@ For simplicity, only the relevant columns to introduce the linking concept are s
 
 | `Input [Sample Name]` | `ProtocolREF`                 | [...] | `Output [Data]`                                    |
 | --------------------- | ----------------------------- | ---   | -------------------------------------------------- |
-| Cold1_sugar-ext       | protocols/sugar_extraction.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
-| Cold2_sugar-ext       | protocols/sugar_extraction.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
-| Cold3_sugar-ext       | protocols/sugar_extraction.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
-| RT1_sugar-ext         | protocols/sugar_extraction.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
-| RT2_sugar-ext         | protocols/sugar_extraction.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
-| RT3_sugar-ext         | protocols/sugar_extraction.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
+| <Highlight>Cold1_sugar-ext</Highlight>       | protocols/sugar_measurement.md | ...   | <Highlight>./assays/SugarMeasurement/dataset/sugar_result.csv</Highlight> |
+| Cold2_sugar-ext       | protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
+| Cold3_sugar-ext       | protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
+| RT1_sugar-ext         | protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
+| RT2_sugar-ext         | protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
+| RT3_sugar-ext         | protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
 
 </NoWrapTable>
 
