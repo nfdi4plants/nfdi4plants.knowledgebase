@@ -252,6 +252,7 @@ Icons used in ARCitect are based on [quasar](https://quasar.dev/vue-components/i
 ```js
 import QIcon from "@components/QIcon.astro"
 
+<QIcon name="exit_to_app" />
 <QIcon name="note_add" />
 <QIcon name="file_open" />
 <QIcon name="cloud_download" />
