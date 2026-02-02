@@ -1,6 +1,6 @@
 ---
 title: Linking inputs and outputs
-lastUpdated: 2026-01-30
+lastUpdated: 2026-02-02
 authors:
  - dominik-brilhaus
 sidebar:
@@ -8,42 +8,48 @@ sidebar:
 ---
 
 import { FileTree } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 import Mermaid from '@components/mdx/Mermaid.astro'
 import NoWrapTable from "@components/NoWrapTable.astro"
 
-A key objective of the ARC is to trace each finding or result back to its specific biological experiment. Achieving this requires linking dataset files to their corresponding individual samples. To accomplish this, we follow a sequence of processes with defined **inputs** and **outputs**. Certain inputs and outputs may want to be reused or reproduced, while some processes may need to be applied to different inputs.
+A key objective of the ARC is to trace each finding or result back to its specific biological experiment. Achieving this requires linking dataset files to their corresponding individual samples. To accomplish this, we follow a sequence of processes with defined **inputs** and **outputs**.
 
 
 ## Example
 
-Consider the example experiment from the getting-started guide where six *Arabidopsis thaliana* plants were exposed to cold stress, and the sugar content was measured as a response. The ARC structure for this experiment could look like this:
+Consider the example experiment from the [Start Here guide](/nfdi4plants.knowledgebase/start-here) where six *Arabidopsis thaliana* plants were exposed to cold stress, and the sugar content was measured as a response. The ARC structure for this experiment could look like this:
 
 <FileTree>
 - AthalianaColdStressSugar
   - studies
     - AthalianaColdStress
       - protocols
-        - **plant-sampling.md**
+        - plant-sampling.md
   - assays
-      - SugarMeasurement
+      - SugarContent
           - dataset
-              - **sugar_result.csv**
+              - sugar_result.csv
           - protocols
-              - **sugar_extraction.md**
-              - **sugar_measurement.md**
+              - sugar_extraction.md
+              - sugar_measurement.md
           - isa.assay.xlsx
           - README.md
   - ...
 
 </FileTree>
 
-## Three annotation tables to describe three processes
+The ARC contains one study (`AthalianaColdStress`) and one assay (`SugarContent`). The study includes a protocol for plant sampling describing how the plants were grown and treated, while the assay contains protocols for sugar extraction and sugar measurement. The dataset file `sugar_result.csv` holds the measured sugar content data.
 
-The following three annotation tables describe the three processes involved in this experiment. Each table links the `Input` and `Output` nodes by **reusing** the respective identifiers.
+## Annotation tables describe processes
 
-:::note
-For simplicity, only the relevant columns to introduce the linking concept are shown here. The `[...]` indicates that there are additional columns in the actual tables, which would typically include other necessary metadata and annotations from the protocols.
-:::
+The following three annotation tables describe the three consecutive processes:
+  - Plant Sampling (part of the Study `AthalianaColdStress`),
+  - Sugar Extraction (part of the Assay `SugarContent`), and
+  - Sugar Measurement (part of the Assay `SugarContent`). 
+
+Each table starts with an `Input` column specifying the input entity (sample, material or data) for the respective process, followed by a `ProtocolREF` column indicating the protocol used, and ends with an `Output` column specifying the output entity resulting from the process.
+ 
+The annotation tables (and effectively the studies and assays) are linked by reusing the respective identifiers of the `Input` and `Output` entities (samples, materials or dataset files) across the different processes – i.e. the `Output` of one process becomes the `Input` of the next process.
 
 
 export const Highlight = ({ children }) => (
@@ -58,64 +64,83 @@ export const Highlight = ({ children }) => (
   </span>
 )
 
+In this example we follow <Highlight>one line of highlighted samples</Highlight> through the processes:
 
-### 1. Plant Sampling (Study)
+<Tabs>
 
-| `Input`[Source Name] |  `ProtocolREF`                | [...] | `Output`[Sample Name] | 
-| -------------------- |  ---------------------------  | ----  |  -------------------- | 
-| <Highlight>Cold1</Highlight> |  protocols/plant-sampling.md  | ...   |  <Highlight>Cold1_leaf</Highlight>           | 
-| Cold2                |  protocols/plant-sampling.md  | ...   |  Cold2_leaf           | 
-| Cold3                |  protocols/plant-sampling.md  | ...   |  Cold3_leaf           | 
-| RT1                  |  protocols/plant-sampling.md  | ...   |  RT1_leaf             | 
-| RT2                  |  protocols/plant-sampling.md  | ...   |  RT2_leaf             | 
-| RT3                  |  protocols/plant-sampling.md  | ...   |  RT3_leaf             | 
+  <TabItem label="1. Plant Sampling">
 
-### 2. Sugar Extraction (Assay)
+    | `Input`[Source Name] |  `ProtocolREF`                | [...] | `Output`[Sample Name] | 
+    | -------------------- |  ---------------------------  | ----  |  -------------------- | 
+    | <Highlight>Cold1</Highlight> |  ./protocols/plant-sampling.md  | ...   |  <Highlight>Cold1_leaf</Highlight>           | 
+    | Cold2                |  ./protocols/plant-sampling.md  | ...   |  Cold2_leaf           | 
+    | Cold3                |  ./protocols/plant-sampling.md  | ...   |  Cold3_leaf           | 
+    | RT1                  |  ./protocols/plant-sampling.md  | ...   |  RT1_leaf             | 
+    | RT2                  |  ./protocols/plant-sampling.md  | ...   |  RT2_leaf             | 
+    | RT3                  |  ./protocols/plant-sampling.md  | ...   |  RT3_leaf             | 
 
-| `Input`[Sample Name] | `ProtocolREF`                   | [...] | `Output`[Sample Name] | 
-|  -------------------- | -----------------------------  | ----  |  -------------------- | 
-|  <Highlight>Cold1_leaf</Highlight>            | protocols/sugar_extraction.md  | ...   |  <Highlight>Cold1_sugar-ext</Highlight>       | 
-|  Cold2_leaf           | protocols/sugar_extraction.md  | ...   |  Cold2_sugar-ext      | 
-|  Cold3_leaf           | protocols/sugar_extraction.md  | ...   |  Cold3_sugar-ext      | 
-|  RT1_leaf             | protocols/sugar_extraction.md  | ...   |  RT1_sugar-ext        | 
-|  RT2_leaf             | protocols/sugar_extraction.md  | ...   |  RT2_sugar-ext        | 
-|  RT3_leaf             | protocols/sugar_extraction.md  | ...   |  RT3_sugar-ext        | 
+  </TabItem>
 
+  <TabItem label="2. Sugar Extraction">
 
-### 3. Sugar Measurement (Assay)
+    | `Input`[Sample Name] | `ProtocolREF`                   | [...] | `Output`[Sample Name] | 
+    |  -------------------- | -----------------------------  | ----  |  -------------------- | 
+    |  <Highlight>Cold1_leaf</Highlight>            | ./protocols/sugar_extraction.md  | ...   |  <Highlight>Cold1_sugar-ext</Highlight>       | 
+    |  Cold2_leaf           | ./protocols/sugar_extraction.md  | ...   |  Cold2_sugar-ext      | 
+    |  Cold3_leaf           | ./protocols/sugar_extraction.md  | ...   |  Cold3_sugar-ext      | 
+    |  RT1_leaf             | ./protocols/sugar_extraction.md  | ...   |  RT1_sugar-ext        | 
+    |  RT2_leaf             | ./protocols/sugar_extraction.md  | ...   |  RT2_sugar-ext        | 
+    |  RT3_leaf             | ./protocols/sugar_extraction.md  | ...   |  RT3_sugar-ext        | 
 
-<NoWrapTable>
+  </TabItem>
 
-| `Input [Sample Name]` | `ProtocolREF`                 | [...] | `Output [Data]`                                    |
-| --------------------- | ----------------------------- | ---   | -------------------------------------------------- |
-| <Highlight>Cold1_sugar-ext</Highlight>       | protocols/sugar_measurement.md | ...   | <Highlight>./assays/SugarMeasurement/dataset/sugar_result.csv</Highlight> |
-| Cold2_sugar-ext       | protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
-| Cold3_sugar-ext       | protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
-| RT1_sugar-ext         | protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
-| RT2_sugar-ext         | protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
-| RT3_sugar-ext         | protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
-
-</NoWrapTable>
+  <TabItem label="3. Sugar Measurement">
 
 
-## Linking samples to data – across studies and assays
+    <NoWrapTable>
+
+    | `Input` [Sample Name] | `ProtocolREF`                 | [...] | `Output` [Data]                                    |
+    | --------------------- | ----------------------------- | ---   | -------------------------------------------------- |
+    | <Highlight>Cold1_sugar-ext</Highlight>       | ./protocols/sugar_measurement.md | ...   | <Highlight>./assays/SugarMeasurement/dataset/sugar_result.csv</Highlight> |
+    | Cold2_sugar-ext       | ./protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
+    | Cold3_sugar-ext       | ./protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
+    | RT1_sugar-ext         | ./protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
+    | RT2_sugar-ext         | ./protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
+    | RT3_sugar-ext         | ./protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
+
+    </NoWrapTable>
+
+  </TabItem>
+
+</Tabs>
+
+:::note
+For simplicity, only the relevant columns to introduce the linking concept are shown here. The `[...]` indicates that there are additional columns in the actual tables, which would typically include other necessary metadata and annotations from the protocols.
+:::
+
+
+## Linking samples to data
 
 Following the simple approach of reusing sample and data identifiers in different parts of the ARC, we were able to concisely link the samples through the different lab processes in studies and assays to the data produced from those samples. 
 
+The tables above contain all information visualized in the following flowchart to show how the study and assay processes are connected:
 
 <Mermaid>
 ```mermaid
 flowchart LR
+linkStyle default stroke:#2d3e50,stroke-width:2px;
 classDef studyStyle fill:#dae7c1,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:bold;
 classDef assayStyle fill:#ffe080,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:bold;
 classDef processStyle fill:#E08F9C,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
 classDef sampleStyle fill:#FEFEFE,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
 classDef dataStyle fill:#FEFEFE,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
-subgraph study1["Study:AthalianaColdStress"]
-    s1[Plants] ---p1[plant-sampling]--> s2[Leave samples]
+
+subgraph study1[Study:AthalianaColdStress]
+    s1[Plants] ---p1[plant-sampling]--> s2[Leaves]
 end
-subgraph assay1[Assay1:SugarMeasurement]
-    s2 ---p2[SugarExtraction]--> s3[Sugar extract samples]
+
+subgraph assay1[Assay:SugarContent]
+    s2 ---p2[SugarExtraction]--> s3[Sugar extracts]
     s3 ---p3[SugarMeasurement]--> d1@{ shape: doc, label: sugar_result.csv}
 end
 class study1 studyStyle;
@@ -127,16 +152,27 @@ class d1 dataStyle;
 
 </Mermaid>
 
-
+Zooming in on the sample level, we can follow the samples through the processes from their biological origin to the data:
 
 <Mermaid>
 ```mermaid
+
+%%{init: {
+  "flowchart": {
+    "nodeSpacing": 40,
+    "rankSpacing": 30
+  }
+}}%%
+
+
 flowchart LR
+linkStyle default stroke:#2d3e50,stroke-width:2px;
 classDef studyStyle fill:#dae7c1,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:bold;
 classDef assayStyle fill:#ffe080,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:bold;
 classDef processStyle fill:#E08F9C,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
 classDef sampleStyle fill:#FEFEFE,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
 classDef dataStyle fill:#FEFEFE,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
+classDef cold1 fill:#fff59d,color:#2d3e50,font-weight:bold;
 
 subgraph study1["Study:AthalianaColdStress"]
     
@@ -177,7 +213,7 @@ os2d[RT1_leaf]    --> is2d[RT1_leaf]
 os2e[RT2_leaf]    --> is2e[RT2_leaf]  
 os2f[RT3_leaf]    --> is2f[RT3_leaf]  
 
-subgraph assay1[Assay1:SugarMeasurement]
+subgraph assay1[Assay: SugarContent]
   
   subgraph p2[Sugar Extraction]
 
@@ -190,7 +226,7 @@ subgraph assay1[Assay1:SugarMeasurement]
       is2f
     end  
 
-    subgraph out2[Sugar extract samples]
+    subgraph out2[Sugar extracts]
       os3a[Cold1_sugar-ext]
       os3b[Cold2_sugar-ext]
       os3c[Cold3_sugar-ext]
@@ -217,7 +253,7 @@ subgraph assay1[Assay1:SugarMeasurement]
 
   subgraph p3[Sugar Measurement]
 
-    subgraph in3[Sugar extract samples]
+    subgraph in3[Sugar extracts]
       is3a
       is3b
       is3c
@@ -242,6 +278,16 @@ class assay1 assayStyle;
 class p1,p2,p3 processStyle;
 class in1,in2,in3,out1,out2,out3 sampleStyle;
 class d1 dataStyle;
+class is1a,os2a,is2a,os3a,is3a cold1;
 ```
 
 </Mermaid>
+
+
+## Tracing back the data to its biological origin
+
+Using this approach, we can trace back the dataset file to its specific biological origin. For example, the sugar content measurement for the sample `Cold1_sugar-ext` can be traced back through the processes to the original plant sample `Cold1`. Looking at it from this other perspective (i.e. starting from the data): all metadata enriched in the preceding annotation tables aid in contextualizing the data in `sugar_result.csv`, such as the protocols used, conditions applied, and sample origins. Hence, this linkage is crucial for understanding the context of the data and ensuring its reliability and reproducibility in scientific research.
+
+:::note
+In order to go a level deeper, and trace each **data point** in the `sugar_result.csv` to the sample, the ARC employs the concept of [fragment selectors and DataMAPs](/nfdi4plants.knowledgebase/arctrl/datamap).
+:::
