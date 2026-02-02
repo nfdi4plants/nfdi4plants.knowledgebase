@@ -244,6 +244,30 @@ import TermSearch from '@components/swate/TermSearch';
 
 ```
 
+
+#### Use "ARCitect" (i.e. Quasar) icons
+
+Icons used in ARCitect are based on [quasar](https://quasar.dev/vue-components/icon/). These can be used via the `QIcon.astro` component in markdown / mdx files:
+
+```js
+import QIcon from "@components/QIcon.astro"
+
+<QIcon name="note_add" />
+<QIcon name="file_open" />
+<QIcon name="cloud_download" />
+<QIcon name="rule" />
+<QIcon name="published_with_changes" />
+<QIcon name="error" />
+<QIcon name="history" />
+<QIcon name="verified" />
+<QIcon name="support_agent" />
+<QIcon name="settings" />
+<QIcon name="chevron_left" />
+<QIcon name="chevron_right" />
+<QIcon name="bug_report" />
+```
+
+
 ### Plugins
 
 Several features are provided by external plugins. Please check their docs for details.

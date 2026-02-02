@@ -17,6 +17,7 @@
     "@expressive-code/plugin-line-numbers": "^0.41.6",
     "@iconify-json/simple-icons": "^1.2.68",
     "@nfdi4plants/swate-components": "^1.0.6",
+    "@quasar/extras": "^1.17.0",
     "@tailwindcss/vite": "^4.1.18",
     "@types/react": "^19.2.9",
     "@types/react-dom": "^19.2.3",

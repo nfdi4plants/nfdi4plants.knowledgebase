@@ -1,0 +1,10 @@
+---
+const { name, set = 'material-icons', class: className = '', size = '1em' } = Astro.props
+---
+
+<i
+  class={`${set} ${className}`}
+  style={`font-size: ${size}; line-height: 1; vertical-align: middle;`}
+>
+  {name}
+</i>

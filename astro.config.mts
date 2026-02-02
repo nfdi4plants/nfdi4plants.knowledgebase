@@ -32,6 +32,7 @@ export default defineConfig({
         './src/styles/global.css',
         // Relative path to custom CSS file
         './src/styles/custom.css',
+        './src/styles/quasar-icons.css',
         ],
       components: {
         MarkdownContent: '@components/starlight/MarkdownContent.astro',
