@@ -77,9 +77,9 @@
           "headertype": "Parameter",
           "values": [
             {
-              "annotationValue": "growth time",
-              "termSource": "DPBO",
-              "termAccession": "DPBO:0000100"
+              "annotationValue": "exposure duration",
+              "termSource": "NCIT",
+              "termAccession": "NCIT:C83280"
             }
           ]
         },
