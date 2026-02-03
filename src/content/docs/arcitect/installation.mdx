@@ -13,15 +13,11 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 import GitDownloadInstall from '../git/git-download.mdx'
 import GitCheck from '../git/git-check.mdx'
 
-ARCitect depends on <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.com" target="_blank">Git LFS</a>.  
-The ARCitect installer for Windows includes both tools automatically.  
+:::note
+ARCitect depends on <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.com" target="_blank">Git LFS</a>.
+The ARCitect installer for Windows includes both tools automatically.
 On macOS and Linux, Git and Git LFS have to be installed separately.
-
-<details>
-    <summary>Check git installation</summary>
-    <GitCheck />
-</details>
-
+:::
 
 <Tabs syncKey="os">
 <TabItem label="Windows" icon='seti:windows'>
@@ -47,9 +43,15 @@ On macOS and Linux, Git and Git LFS have to be installed separately.
 </Steps>
 
 </TabItem>
+
 <TabItem label="Macos" icon="apple">
 
-### Git Installation
+### Check git installation
+
+<GitCheck />
+
+
+### Installing Git and Git LFS
 
 <GitDownloadInstall />
 
@@ -92,7 +94,11 @@ This enables communication with the [DataHUB](/nfdi4plants.knowledgebase/datahub
 
 <TabItem label="Linux" icon='linux'>
 
-### Git Installation
+### Check git installation
+
+<GitCheck />
+
+### Installing Git and Git LFS
 
 <GitDownloadInstall />
 
