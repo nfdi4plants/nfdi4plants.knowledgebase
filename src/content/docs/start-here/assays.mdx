@@ -17,7 +17,7 @@ import { FileTree } from '@astrojs/starlight/components';
 import Mermaid from '@components/mdx/Mermaid.astro'
 import Icons from '@components/swate/Icons';
 import QIcon from "@components/QIcon.astro"
-
+import NoWrapTable from "@components/NoWrapTable.astro"
 
 <ViolaSays>
 Ok, I think I understand. The study is used to describe the overall experiment and the sample generation. Then the assays are used to describe the individual lab processes and the data generation!
@@ -177,22 +177,30 @@ Instead of adding each individual building block to the table, we can use a gene
 
     10. Click `Submit` to use the template.
 
+        <NoWrapTable>
 
-        Input [Sample Name]	| Parameter [Vortex Mixer] | Parameter [Temperature] | Output [Sample Name] 
-        --- | --- | --- | --- 
-            |     |     |   
+            Input [Sample Name]	| Parameter [Vortex Mixer] | Parameter [Temperature] | Output [Sample Name] 
+            --- | --- | --- | --- 
+                |     |     |   
+
+        </NoWrapTable>
 
     9. At the bottom of the table, type `5` in the text field and click `+` to add 6 rows to your table for a total of 6 since one was added automatically.
     10. Transfer the sample names of your study's `Output [Sample Name]` to the `Input [Sample Name]` column.
 
-        Input [Sample Name]	| Parameter [Vortex Mixer] | Parameter [Temperature] | Output [Sample Name] 
-        --- | --- | --- | --- 
-        Cold1_leaf
-        Cold2_leaf
-        Cold3_leaf
-        RT1_leaf
-        RT2_leaf
-        RT3_leaf
+        <NoWrapTable>
+            
+            Input [Sample Name]	| Parameter [Vortex Mixer] | Parameter [Temperature] | Output [Sample Name] 
+            --- | --- | --- | --- 
+            Cold1_leaf
+            Cold2_leaf
+            Cold3_leaf
+            RT1_leaf
+            RT2_leaf
+            RT3_leaf
+        
+        </NoWrapTable>
+
 
         :::note
         Select multiple cells by clicking once on the first and the last cell while holding the `Shift` key. You can copy and paste multiple cells by right-clicking on the selected cells.
@@ -200,15 +208,18 @@ Instead of adding each individual building block to the table, we can use a gene
 
     11. Add information of the `sugar_extraction_protocol.md` into the table, e.g. 
 
+        <NoWrapTable>
 
-        Input [Sample Name]	| Parameter [Vortex Mixer] | Parameter [Temperature] | Output [Sample Name] 
-        --- | --- | --- | --- 
-        Cold1_leaf  | 3 seconds | 95 degree celsius | 
-        Cold2_leaf  | 3 seconds | 95 degree celsius | 
-        Cold3_leaf  | 3 seconds | 95 degree celsius | 
-        RT1_leaf    | 3 seconds | 95 degree celsius | 
-        RT2_leaf    | 3 seconds | 95 degree celsius | 
-        RT3_leaf    | 3 seconds | 95 degree celsius | 
+            Input [Sample Name]	| Parameter [Vortex Mixer] | Parameter [Temperature] | Output [Sample Name] 
+            --- | --- | --- | --- 
+            Cold1_leaf  | 3 seconds | 95 degree celsius | 
+            Cold2_leaf  | 3 seconds | 95 degree celsius | 
+            Cold3_leaf  | 3 seconds | 95 degree celsius | 
+            RT1_leaf    | 3 seconds | 95 degree celsius | 
+            RT2_leaf    | 3 seconds | 95 degree celsius | 
+            RT3_leaf    | 3 seconds | 95 degree celsius | 
+
+        </NoWrapTable>
 
     12. Fill the `Output [Sample Name]` column: 
         - Select the six cells from `Input`, and copy the sample names (right-click -> Copy)
@@ -217,14 +228,18 @@ Instead of adding each individual building block to the table, we can use a gene
         - Type "leaf" in the `Regex` and "sugar-ext" in the `Replacement` fields
         - Click `Submit`
 
-        Input [Sample Name]	| Parameter [Vortex Mixer] | Parameter [Temperature] | Output [Sample Name] 
-        --- | --- | --- | --- 
-        Cold1_leaf  | 3 seconds | 95 degree celsius | Cold1_sugar-ext
-        Cold2_leaf  | 3 seconds | 95 degree celsius | Cold2_sugar-ext
-        Cold3_leaf  | 3 seconds | 95 degree celsius | Cold3_sugar-ext
-        RT1_leaf    | 3 seconds | 95 degree celsius | RT1_sugar-ext
-        RT2_leaf    | 3 seconds | 95 degree celsius | RT2_sugar-ext
-        RT3_leaf    | 3 seconds | 95 degree celsius | RT3_sugar-ext  
+        <NoWrapTable>
+
+            Input [Sample Name]	| Parameter [Vortex Mixer] | Parameter [Temperature] | Output [Sample Name] 
+            --- | --- | --- | --- 
+            Cold1_leaf  | 3 seconds | 95 degree celsius | Cold1_sugar-ext
+            Cold2_leaf  | 3 seconds | 95 degree celsius | Cold2_sugar-ext
+            Cold3_leaf  | 3 seconds | 95 degree celsius | Cold3_sugar-ext
+            RT1_leaf    | 3 seconds | 95 degree celsius | RT1_sugar-ext
+            RT2_leaf    | 3 seconds | 95 degree celsius | RT2_sugar-ext
+            RT3_leaf    | 3 seconds | 95 degree celsius | RT3_sugar-ext  
+        
+        </NoWrapTable>
 
     </Steps>
 </Card>
@@ -248,15 +263,19 @@ We follow the same steps to fill the **Sugar Measurement** table.
         - Parameter [`cycle count`] of 5
     5. Use the `File Picker` feature <Icons.FilePicker /> to import the results of sugar measurement (`sugar_result.csv`) into `Output [Data]`
 
+        <NoWrapTable>
 
-        Input [Sample Name]	| Parameter [technical replicate] | Parameter [...] | Output [Data] 
-        ---                 | ------------------------------- | --------------- | --- 
-        Cold1_sugar-ext     | 1                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
-        Cold2_sugar-ext     | 2                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
-        Cold3_sugar-ext     | 3                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
-        RT1_sugar-ext       | 1                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
-        RT2_sugar-ext       | 2                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
-        RT3_sugar-ext       | 3                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+            Input [Sample Name]	| Parameter [technical replicate] | Parameter [...] | Output [Data] 
+            ---                 | ------------------------------- | --------------- | --- 
+            Cold1_sugar-ext     | 1                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+            Cold2_sugar-ext     | 2                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+            Cold3_sugar-ext     | 3                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+            RT1_sugar-ext       | 1                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+            RT2_sugar-ext       | 2                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+            RT3_sugar-ext       | 3                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+
+        </NoWrapTable>
+
 
     </Steps>
 </Card>
