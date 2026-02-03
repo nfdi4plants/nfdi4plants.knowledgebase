@@ -101,7 +101,10 @@ For each study and assay in your ARC, check that:
 To check the overall consistency of your ARC, make sure that the full connection from sample to raw data to processed data is there.
     <Steps>
     1. For every output, can you trace its origins back through the ARC? Is the provenance of all data fully described?
-       - A mermaid graph is a quick way to visualize this provenance, showing how the inputs and outputs from your studies and assays are connected. Learn more about the arcIsaProcessMermaid tool [here](https://www.nuget.org/packages/arcIsaProcessMermaid/#readme-body-tab)
+        :::tip
+            Check out [this article](/nfdi4plants.knowledgebase/core-concepts/inputs-outputs) on how inputs and outputs – specifically samples and dataset files – are linked in an ARC.
+        :::
+    2. A mermaid graph is a quick way to visualize this provenance, showing how the inputs and outputs from your studies and assays are connected. Learn more about the arcIsaProcessMermaid tool [here](https://www.nuget.org/packages/arcIsaProcessMermaid/#readme-body-tab)
        - The `arc-summary.md` lists the files that are properly linked in the ARC. This is provided as a downloadable artifact by the CI/CD job "Create ARC json".
 
     </Steps>
