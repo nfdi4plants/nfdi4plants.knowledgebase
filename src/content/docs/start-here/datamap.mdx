@@ -10,6 +10,7 @@ authors:
 import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
+import NoWrapTable from "@components/NoWrapTable.astro"
 
 import Datamap from "@images/start-here/arc-prototypic-datamap.svg"
 
@@ -97,17 +98,21 @@ We'll now use the datamap to annotate all columns in the file, even the ones we 
         The other six columns contain the measured data: **molecule count** in mmol / kg. 
       </ViolaSays>
 
-  13. Add the following annotation to describe what the columns in "sugar_result.csv" 
-      
-      Data	                  | …	  | Explication	    | Unit	                  | Object Type
-      ----------------------- | --- | --------------- | ----------------------- | -----------
-      sugar_result.csv#col=1	| …	  | molecule name		|                         | string
-      sugar_result.csv#col=2	| …	  | molecule count	| Millimole per Kilogram	| Float
-      sugar_result.csv#col=3	| …	  | molecule count	| Millimole per Kilogram	| Float
-      sugar_result.csv#col=4	| …	  | molecule count	| Millimole per Kilogram	| Float
-      sugar_result.csv#col=5	| …	  | molecule count	| Millimole per Kilogram	| Float
-      sugar_result.csv#col=6	| …	  | molecule count	| Millimole per Kilogram	| Float
-      sugar_result.csv#col=7	| …	  | molecule count	| Millimole per Kilogram	| Float
+  13. Add the following annotation to describe what the columns in "sugar_result.csv"
+
+      <NoWrapTable>
+        
+          Data	                  | …	  | Explication	    | Unit	                  | Object Type
+          ----------------------- | --- | --------------- | ----------------------- | -----------
+          sugar_result.csv#col=1	| …	  | molecule name		|                         | string
+          sugar_result.csv#col=2	| …	  | molecule count	| Millimole per Kilogram	| Float
+          sugar_result.csv#col=3	| …	  | molecule count	| Millimole per Kilogram	| Float
+          sugar_result.csv#col=4	| …	  | molecule count	| Millimole per Kilogram	| Float
+          sugar_result.csv#col=5	| …	  | molecule count	| Millimole per Kilogram	| Float
+          sugar_result.csv#col=6	| …	  | molecule count	| Millimole per Kilogram	| Float
+          sugar_result.csv#col=7	| …	  | molecule count	| Millimole per Kilogram	| Float
+
+      </NoWrapTable>
 
   </Steps>
 </Card>
