@@ -31,16 +31,21 @@ if (name.includes(':')) {
 }
 ---
 
-<i
-  class={`${iconClass} ${className}`}
+<span
   style={`
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    font-size: ${size};
-    line-height: 1;
     vertical-align: middle;
   `}
 >
-  {iconName}
-</i>
+  <i
+    class={`${iconClass} ${className}`}
+    style={`
+      display: inline-block;
+      font-size: ${size};
+      line-height: 1;
+    `}
+  >
+    {iconName}
+  </i>
+</span>
