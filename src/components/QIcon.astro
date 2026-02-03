@@ -1,0 +1,51 @@
+---
+const {
+  name = '',
+  size = '1em',
+  class: className = '',
+} = Astro.props
+
+let iconClass = 'material-icons'
+let iconName = name
+
+if (name.includes(':')) {
+  const [prefix, value] = name.split(':')
+  iconName = value
+
+  switch (prefix) {
+    case 'fa':
+      iconClass = 'fa-solid fa-' + value
+      iconName = ''
+      break
+    case 'far':
+      iconClass = 'fa-regular fa-' + value
+      iconName = ''
+      break
+    case 'sym':
+      iconClass = 'material-symbols-outlined'
+      break
+    case 'ion':
+      iconClass = 'ionicons'
+      break
+  }
+}
+---
+
+<span
+  style={`
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+  `}
+>
+  <i
+    class={`${iconClass} ${className}`}
+    style={`
+      display: inline-block;
+      font-size: ${size};
+      line-height: 1;
+    `}
+  >
+    {iconName}
+  </i>
+</span>

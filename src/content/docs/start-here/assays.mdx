@@ -16,6 +16,8 @@ import { Card } from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
 import Mermaid from '@components/mdx/Mermaid.astro'
 import Icons from '@components/swate/Icons';
+import QIcon from "@components/QIcon.astro"
+
 
 <ViolaSays>
 Ok, I think I understand. The study is used to describe the overall experiment and the sample generation. Then the assays are used to describe the individual lab processes and the data generation!
@@ -43,7 +45,7 @@ Then let's start with the "Sugar Measurement" assay.
 <Card icon="pen" title="ARCitect">
     <Steps>
 
-    1. Click on the plus icon next to `assays` to add a new assay.
+    1. Click on the plus icon <QIcon name="add" /> next to <QIcon name="storage" /> `assays` to add a new assay.
     2. Enter a name for the `New Assay`.
 
         <ViolaSays>
