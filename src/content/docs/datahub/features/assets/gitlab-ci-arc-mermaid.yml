@@ -1,16 +1,16 @@
 include:
-    - template: Auto-DevOps.gitlab-ci.yml
-
+  - template: Auto-DevOps.gitlab-ci.yml
 stages:
-    - arc_json
-    - quality_report_generator
-    - quality_report
-    - generate_metadata
-    - arcIsaProcessMermaid
+  - arc_json
+  - quality_report_generator
+  - quality_report
+  - generate_metadata
+  - arc_summary
+  - arcIsaProcessMermaid
 
 arcIsaProcessMermaid:
   stage: arcIsaProcessMermaid
-  image: 
+  image:
     name: mcr.microsoft.com/dotnet/sdk:8.0
   before_script:
     - export PATH="$PATH:/root/.dotnet/tools"
