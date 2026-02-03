@@ -47,7 +47,7 @@ The following three annotation tables describe the three consecutive processes:
   - Sugar Extraction (part of the Assay `SugarContent`), and
   - Sugar Measurement (part of the Assay `SugarContent`). 
 
-Each table starts with an `Input` column specifying the input entity (sample, material or data) for the respective process, followed by a `ProtocolREF` column indicating the protocol used, and ends with an `Output` column specifying the output entity resulting from the process.
+Each table starts with an `Input` column specifying the input entity (sample, material or data) for the respective process, followed by a `ProtocolUri` column indicating the protocol used, and ends with an `Output` column specifying the output entity resulting from the process.
  
 The annotation tables (and effectively the studies and assays) are linked by reusing the respective identifiers of the `Input` and `Output` entities (samples, materials or dataset files) across the different processes – i.e. the `Output` of one process becomes the `Input` of the next process.
 
@@ -70,7 +70,7 @@ In this example we follow <Highlight>one line of highlighted samples</Highlight>
 
   <TabItem label="1. Plant Sampling">
 
-    | `Input`[Source Name] |  `ProtocolREF`                | [...] | `Output`[Sample Name] | 
+    | `Input`[Source Name] |  `ProtocolUri`                | [...] | `Output`[Sample Name] | 
     | -------------------- |  ---------------------------  | ----  |  -------------------- | 
     | <Highlight>Cold1</Highlight> |  ./protocols/plant-sampling.md  | ...   |  <Highlight>Cold1_leaf</Highlight>           | 
     | Cold2                |  ./protocols/plant-sampling.md  | ...   |  Cold2_leaf           | 
@@ -83,7 +83,7 @@ In this example we follow <Highlight>one line of highlighted samples</Highlight>
 
   <TabItem label="2. Sugar Extraction">
 
-    | `Input`[Sample Name] | `ProtocolREF`                   | [...] | `Output`[Sample Name] | 
+    | `Input`[Sample Name] | `ProtocolUri`                   | [...] | `Output`[Sample Name] | 
     |  -------------------- | -----------------------------  | ----  |  -------------------- | 
     |  <Highlight>Cold1_leaf</Highlight>            | ./protocols/sugar_extraction.md  | ...   |  <Highlight>Cold1_sugar-ext</Highlight>       | 
     |  Cold2_leaf           | ./protocols/sugar_extraction.md  | ...   |  Cold2_sugar-ext      | 
@@ -99,7 +99,7 @@ In this example we follow <Highlight>one line of highlighted samples</Highlight>
 
     <NoWrapTable>
 
-    | `Input` [Sample Name] | `ProtocolREF`                 | [...] | `Output` [Data]                                    |
+    | `Input` [Sample Name] | `ProtocolUri`                 | [...] | `Output` [Data]                                    |
     | --------------------- | ----------------------------- | ---   | -------------------------------------------------- |
     | <Highlight>Cold1_sugar-ext</Highlight>       | ./protocols/sugar_measurement.md | ...   | <Highlight>./assays/SugarMeasurement/dataset/sugar_result.csv</Highlight> |
     | Cold2_sugar-ext       | ./protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
