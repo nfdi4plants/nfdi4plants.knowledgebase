@@ -135,6 +135,26 @@ To avoid issues on certain Linux distributions, ARCitect installation is based o
     arcitect
     ```
 
+    :::note[Admin privileges]
+    `apt-get install` and `dpkg -i` often require admin privileges, since they write into system directories. You can circumvent this problem by local installations in folders where you have permission, e.g.
+
+        ```
+        dpkg-deb -x ./ARCitect-x.x.x_amd64.deb $HOME/arc
+        ```
+
+        would install the ARCitect in a folder in your home directory. You can then add it to your path via
+
+        ```
+        export PATH="$HOME/arc/ARCitect:$PATH"
+        ```
+
+        To install `git`, `git-lfs`, `libgtk-3-0`, `libnotify4`, `xdg-utils` and `libsecret-1-0`, if they are not already installed, you can use `apt download`, which gives you the `.deb` files for their installations.  
+        From there you can proceed the same as written above for the ARCitect. `apt download` does not resolve package dependencies, so you may have to resolve them manually.
+
+    :::
+
+
+
 </Steps>
     
 </TabItem>
