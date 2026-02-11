@@ -201,6 +201,18 @@ During ARCitect login, Windows asks you wether you want to use a "Credential Hel
 </details>
 
 
+<details>
+<summary><span style="color: #1fc2a7">
+During a push I see the error "failed to load library 'libcurl-4.dll'"
+</summary>
+
+If the path to your ARC contains umlauts (e.g. the windows user name), Git throws the error `failed to load library 'libcurl-4.dll'`.
+This is an issue with older Git installations (git version ≤ 2.42.0).
+Changing the path (e.g. moving your ARC to a location without umlauts) solves the error. Spaces do not seem to have an effect.
+
+</details>
+
+
 ### Metadata annotation (Swate, ISA)
 
 <!-- <details><summary><span style="color: #1fc2a7">
