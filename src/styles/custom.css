@@ -1,3 +1,100 @@
+/* Dark mode colors. */
+:root {
+	--sl-color-accent-low: #052b24;
+	--sl-color-accent: #007b6a;
+	--sl-color-accent-high: #acd2c8;
+	--sl-color-white: #FEFEFE;
+	--sl-color-gray-1: #e7eff2;
+	--sl-color-gray-2: #bac4c8;
+	--sl-color-gray-3: #7b8f96;
+	--sl-color-gray-4: #495c62;
+	--sl-color-gray-5: #2a3b41;
+	--sl-color-gray-6: #182a2f;
+	--sl-color-black: #2D3E50;
+}
+/* Light mode colors. */
+:root[data-theme='light'] {
+	--sl-color-accent-low: #c1ded7;
+	--sl-color-accent: #007967;
+	--sl-color-accent-high: #003c32;
+	--sl-color-white: #2D3E50;
+	--sl-color-gray-1: #182a2f;
+	--sl-color-gray-2: #2a3b41;
+	--sl-color-gray-3: #495c62;
+	--sl-color-gray-4: #7b8f96;
+	--sl-color-gray-5: #bac4c8;
+	--sl-color-gray-6: #e7eff2;
+	--sl-color-gray-7: #f3f7f9;
+	--sl-color-black: #FEFEFE;
+}
+
+/* =====================================
+   ASIDE COLOR TOKENS
+   ===================================== */
+
+/* Dark mode */
+:root {
+  --aside-note-bg: #10242B;
+  --aside-note-border: #4FB3D9;
+  --aside-note-accent: #72C2E1;
+
+  --aside-tip-bg: #062721;
+  --aside-tip-border: #1FC2A7;
+  --aside-tip-accent: #4CCEB9;
+
+  --aside-caution-bg: #332600;
+  --aside-caution-border: #FFC000;
+  --aside-caution-accent: #FFD34D;
+
+  --aside-danger-bg: #26060B;
+  --aside-danger-border: #C21F3A;
+  --aside-danger-accent: #CE4B61;
+}
+
+/* Light mode */
+:root[data-theme='light'] {
+  --aside-note-bg: #EDF7FB;
+  --aside-note-border: #4FB3D9;
+  --aside-note-accent: #377D98;
+
+  --aside-tip-bg: #E9F9F6;
+  --aside-tip-border: #1FC2A7;
+  --aside-tip-accent: #168875;
+
+  --aside-caution-bg: #FFF9E6;
+  --aside-caution-border: #FFC000;
+  --aside-caution-accent: #B38600;
+
+  --aside-danger-bg: #F8E8EB;
+  --aside-danger-border: #C21F3A;
+  --aside-danger-accent: #871528;
+}
+
+
+.starlight-aside--note {
+  background-color: var(--aside-note-bg);
+  --sl-color-asides-border: var(--aside-note-border);
+  --sl-color-asides-text-accent: var(--aside-note-accent);
+}
+
+.starlight-aside--tip {
+  background-color: var(--aside-tip-bg);
+  --sl-color-asides-border: var(--aside-tip-border);
+  --sl-color-asides-text-accent: var(--aside-tip-accent);
+}
+
+.starlight-aside--caution {
+  background-color: var(--aside-caution-bg);
+  --sl-color-asides-border: var(--aside-caution-border);
+  --sl-color-asides-text-accent: var(--aside-caution-accent);
+}
+
+.starlight-aside--danger {
+  background-color: var(--aside-danger-bg);
+  --sl-color-asides-border: var(--aside-danger-border);
+  --sl-color-asides-text-accent: var(--aside-danger-accent);
+}
+
 
 
 btn {
@@ -7,9 +104,9 @@ btn {
   font-family:Arial,Helvetica,sans-serif;
   background-color:#f7f7f7;
   color:#333;
-  -moz-box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
-  -webkit-box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
-  box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+  -moz-box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #FEFEFE inset;
+  -webkit-box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #FEFEFE inset;
+  box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #FEFEFE inset;
   -moz-border-radius:3px;
   -webkit-border-radius:3px;
   border-radius:3px;

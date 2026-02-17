@@ -11,6 +11,7 @@ authors:
 import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
+import QIcon from "@components/QIcon.astro"
 
 <ViolaSays>
 The ARC offers a lot of flexibility in how I structure my data and annotation.
@@ -30,12 +31,12 @@ You can simply select the validation via ARCitect.
     <Steps>
 
     1. Open the ARC in ARCitect
-    2. In the sidebar, go to the `Validation` menu
+    2. In the sidebar, go to the <QIcon name="verified" /> `Validation` menu
     3. Check the box next to the `arc_specification` dropdown
     3. In the section "Custom Validation Packages", select the `invenio` package
     4. Select the latest version for both packages and click `Save`
-    4. Commit your changes via the `Commit` menu
-    5. Upload your changes via the `DataHUB Sync` menu
+    4. Commit your changes via the <QIcon name="rule" /> `Commit` menu
+    5. Upload your changes via the <QIcon name="published_with_changes" /> `DataHUB Sync` menu
     6. Open your ARC in the DataHUB
 
     </Steps>

@@ -14,6 +14,9 @@ import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
 import Icons from '@components/swate/Icons';
+import QIcon from "@components/QIcon.astro"
+import NoWrapTable from "@components/NoWrapTable.astro"
+
 
 <ViolaSays>
 And where do I add my experimental design? Where can I describe how I grew my plants under different conditions?
@@ -28,7 +31,7 @@ With **studies** you can describe materials and resources. In this Violas-PhD-Pr
 <Card icon="pen" title="ARCitect">
   <Steps>
 
-  1. Click on the plus icon next to `studies` to add a new study.
+  1. Click on the plus icon <QIcon name="add" /> next to <QIcon name="science" /> `studies` to add a new study.
   2. Enter a name for the `New Study`.
 
       <ViolaSays>
@@ -172,32 +175,41 @@ We reference the protocol in the annotation table to say:
   <Steps>
 
   1. On top of the annotation table, click <Icons.BuildingBlock />.
-  1. From the dropdown menu select `More` -> `ProtocolREF` and click `Add Column`.
+  1. From the dropdown menu select `More` -> `ProtocolUri` and click `Add Column`.
   1. On top click <Icons.FilePicker /> to open the `File Picker`.
   1. In the `File Picker` widget, click `Pick Files`.
   2. From the ARC select the file `protocols/growth_protocol.md` and click `Open`.
   1. Select a cell in the `Protocol REF` column and click `Insert file names`.
 
-      `Input[Source Name]` |  `Output[Sample Name]` | `ProtocolREF`
-      -------------------- |  --------------------   |  --------------------
-      Cold1                |  Cold1_leaf  | protocols/growth_protocol.md 
-      Cold2                |  Cold2_leaf  |
-      Cold3                |  Cold3_leaf  |
-      RT1                  |  RT1_leaf  |
-      RT2                  |  RT2_leaf  |
-      RT3                  |  RT3_leaf  |
+      <NoWrapTable>
+
+        `Input[Source Name]` |  `Output[Sample Name]` | `ProtocolUri`
+        -------------------- |  --------------------   |  --------------------
+        Cold1                |  Cold1_leaf  | protocols/growth_protocol.md 
+        Cold2                |  Cold2_leaf  |
+        Cold3                |  Cold3_leaf  |
+        RT1                  |  RT1_leaf  |
+        RT2                  |  RT2_leaf  |
+        RT3                  |  RT3_leaf  |
+
+      </NoWrapTable>
  
   1. To fill the complete column with the same value, right-click on a cell and select `Fill Column`. 
 
-      `Input[Source Name]` |  `Output[Sample Name]` | `ProtocolREF`
-      -------------------- |  --------------------   |  --------------------
-      Cold1                |  Cold1_leaf  | protocols/growth_protocol.md 
-      Cold2                |  Cold2_leaf  | protocols/growth_protocol.md 
-      Cold3                |  Cold3_leaf  | protocols/growth_protocol.md 
-      RT1                  |  RT1_leaf  | protocols/growth_protocol.md 
-      RT2                  |  RT2_leaf  | protocols/growth_protocol.md 
-      RT3                  |  RT3_leaf  | protocols/growth_protocol.md 
+      <NoWrapTable>
+
+
+        `Input[Source Name]` |  `Output[Sample Name]` | `ProtocolUri`
+        -------------------- |  --------------------   |  --------------------
+        Cold1                |  Cold1_leaf  | protocols/growth_protocol.md 
+        Cold2                |  Cold2_leaf  | protocols/growth_protocol.md 
+        Cold3                |  Cold3_leaf  | protocols/growth_protocol.md 
+        RT1                  |  RT1_leaf  | protocols/growth_protocol.md 
+        RT2                  |  RT2_leaf  | protocols/growth_protocol.md 
+        RT3                  |  RT3_leaf  | protocols/growth_protocol.md 
    
+      </NoWrapTable>
+
    </Steps>
 
 </Card>
@@ -275,7 +287,7 @@ Then we need to put this information into context:
   
   ##### Parameters [ ]
 
-  - <ParentChild parent="Growth time" child="4d"/>
+  - <ParentChild parent="Exposure duration" child="4d"/>
   - <ParentChild parent="Light intensity" child="200 µEinstein"/>
   - <ParentChild parent="Temperature" child="6°C / 25°C"/>
   
@@ -330,10 +342,10 @@ Yes, you are right! Parameters are similar to Characteristics. To use units you 
 <Card icon="pen" title="ARCitect">
   <Steps>
 
-    1. In the *Building Blocks* widget <Icons.BuildingBlock />, select *Parameter*, search for `growth time`.
+    1. In the *Building Blocks* widget <Icons.BuildingBlock />, select *Parameter*, search for `exposure duration`.
     2. Click `Unit` and search for `day` in the adjacent search bar. Select the term with the id "UO:0000033" from the unit ontology (UO).
     3. Click `Add Column`.
-    4. In the annotation table, select any cell below `Parameter [growth time]` and add "4".
+    4. In the annotation table, select any cell below `Parameter [exposure duration]` and add "4".
 
         :::note
         You can see the numbers being complemented with the associated unit.
@@ -362,18 +374,19 @@ In this case, you can use a `Factor` building block. Factors are used to describ
     4. Click `Add Column`.
     5. In the annotation table, add "25" vs. "6" degree celsius to the respective samples.
 
-        <div class="overflow-x-auto">
-          <div class="min-w-[800px]" > 
-          `Input[Source Name]` | `Characteristic [organism]` | `Factor [temperature day]` | `Output[Sample Name]`
-          -------------------- |  --------------------       | --------------------          |  --------------------
-          Cold1                |  Arabidopsis thaliana       | 6 degree celsius              | Cold1_leaf
-          Cold2                |  Arabidopsis thaliana       | 6 degree celsius              | Cold2_leaf
-          Cold3                |  Arabidopsis thaliana       | 6 degree celsius              | Cold3_leaf
-          RT1                  |  Arabidopsis thaliana       | 25 degree celsius             | RT1_leaf
-          RT2                  |  Arabidopsis thaliana       | 25 degree celsius             | RT2_leaf
-          RT3                  |  Arabidopsis thaliana       | 25 degree celsius             | RT3_leaf
-          </div>
-        </div>
+        <NoWrapTable>
+
+            `Input[Source Name]` | `Characteristic [organism]` | `Factor [temperature day]` | `Output[Sample Name]`
+            -------------------- |  --------------------       | --------------------          |  --------------------
+            Cold1                |  Arabidopsis thaliana       | 6 degree celsius              | Cold1_leaf
+            Cold2                |  Arabidopsis thaliana       | 6 degree celsius              | Cold2_leaf
+            Cold3                |  Arabidopsis thaliana       | 6 degree celsius              | Cold3_leaf
+            RT1                  |  Arabidopsis thaliana       | 25 degree celsius             | RT1_leaf
+            RT2                  |  Arabidopsis thaliana       | 25 degree celsius             | RT2_leaf
+            RT3                  |  Arabidopsis thaliana       | 25 degree celsius             | RT3_leaf
+
+        </NoWrapTable>
+
 
   </Steps>
 </Card>

@@ -1,7 +1,7 @@
 ---
 title: Share your ARC via the DataHUB
 sidebar:
-  order: 5.5
+  order: 5
 authors:
   - dominik-brilhaus
   - lukas-weil
@@ -10,9 +10,10 @@ authors:
 import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
+import QIcon from "@components/QIcon.astro"
 
 <ViolaSays>
-          Now I have created my local ARC, but how can I share it with my colleagues?
+  Now I have created my local ARC, but how can I share it with my colleagues?
 </ViolaSays>
 
 ARCs are the basis of the collaborative research platform and can be seamlessly shared between researchers by using the PLANTDataHUB. 
@@ -23,7 +24,7 @@ ARCs are the basis of the collaborative research platform and can be seamlessly 
 
 <Card icon="pen" title="ARCitect">
     <Steps>
-    1. From the sidebar, navigate to the `DataHUB Sync` menu.
+    1. From the sidebar, navigate to the <QIcon name="published_with_changes" /> `DataHUB Sync` menu.
     2. In the grey `Remote` box, click `+` to add a remote.
     3. In the `Add Remote` dialog, leave the defaults for `Remote Name`, `DataHUB Account` and `URL`.
 

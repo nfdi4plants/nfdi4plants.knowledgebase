@@ -11,6 +11,8 @@ authors:
 import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
+import QIcon from "@components/QIcon.astro"
+
 
 <ViolaSays>
     How can I make sure, other researchers will understand what I did while working on my ARC?
@@ -47,7 +49,7 @@ In order to retreive your user information and associate it with your commits, y
 <Card icon="pen" title="ARCitect">
     <Steps>
         
-    1. Click `Login` in the sidebar.
+    1. Click <QIcon name="exit_to_app" /> `Login` in the sidebar.
     2. Select `git.nfdi4plants.org` as DataHUB from the dropdown menu.
     3. Click `Login`. 
 
@@ -73,7 +75,7 @@ The commit menu allows you to "commit" your changes locally. This saves the chan
 <Card icon="pen" title="ARCitect">
     <Steps>
     
-    1. Navigate to the `Commit` menu.
+    1. Navigate to the <QIcon name="rule" /> `Commit` menu.
     2. Since you are logged in, the `Name` and `eMail` of your DataHUB account are automatically added.
     3. Add a commit message:
 
@@ -93,7 +95,7 @@ In the History menu you can inspect your ARC history with all commit messages.
 <Card icon="pen" title="ARCitect">
     <Steps>
     
-    1. Navigate to the `History` menu.
+    1. Navigate to the <QIcon name="history" /> `History` menu.
     2. Find your commit messages.
 
         <ViolaSays>
@@ -140,14 +142,14 @@ We recommend adding a message that shortly summarizes, what you did since you la
     <Steps>
     
     1. Make some small changes to your ARC like adding or editing a text file.
-    2. Navigate to the `Commit` menu.
+    2. Navigate to the <QIcon name="rule" /> `Commit` menu.
     3. Add a commit message:
 
         <ViolaSays>
             "Add a README to include some notes"
         </ViolaSays>
     3. Click `Commit` to store your changes locally.
-    4. Check the `History`
+    4. Check the <QIcon name="history" /> `History`
         
     </Steps>
 </Card>

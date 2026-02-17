@@ -90,7 +90,7 @@ For each study and assay in your ARC, check that:
         :::tip
         Follow [this guide](/nfdi4plants.knowledgebase/guides/arc-adding-external-data/) to design a study describing the external data (e.g. downloads from a database or supplemental data from publications)
         :::
-    3. [CWL workflow] Ensure that it runs using `cwltool`. See [guide](/nfdi4plants.knowledgebase/start-here/data-analysis/option2-cwl/) for more details.
+    3. [CWL workflow] Ensure that it runs using `cwltool`. See [guide](/nfdi4plants.knowledgebase/start-here/option2-cwl/) for more details.
     4. [Virtual Assay] Code should be in the "protocols" folder, and output data in "dataset" folder. Ensure that the code runs. Typically, the "input" data consumed by the code is already stored somewhere in the ARC, e.g. assay datasets or study resources.
     5. [Virtual Assay] For non-code based data analysis using softwares e.g. for statistics or graphics, we recommend the same logic: describe the data analysis as comprehensible as possible in the "protocols" folder, and provide the resulting data in the "dataset" folder. 
 
@@ -101,7 +101,10 @@ For each study and assay in your ARC, check that:
 To check the overall consistency of your ARC, make sure that the full connection from sample to raw data to processed data is there.
     <Steps>
     1. For every output, can you trace its origins back through the ARC? Is the provenance of all data fully described?
-       - A mermaid graph is a quick way to visualize this provenance, showing how the inputs and outputs from your studies and assays are connected. Learn more about the arcIsaProcessMermaid tool [here](https://www.nuget.org/packages/arcIsaProcessMermaid/#readme-body-tab)
+        :::tip
+            Check out [this article](/nfdi4plants.knowledgebase/core-concepts/inputs-outputs) on how inputs and outputs – specifically samples and dataset files – are linked in an ARC.
+        :::
+    2. A mermaid graph is a quick way to visualize this provenance, showing how the inputs and outputs from your studies and assays are connected. Learn more about the arcIsaProcessMermaid tool [here](https://www.nuget.org/packages/arcIsaProcessMermaid/#readme-body-tab)
        - The `arc-summary.md` lists the files that are properly linked in the ARC. This is provided as a downloadable artifact by the CI/CD job "Create ARC json".
 
     </Steps>

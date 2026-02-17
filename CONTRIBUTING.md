@@ -20,6 +20,7 @@ Your contribution to the DataPLANT Knowledge Base is highly appreciated. This gu
 - [Composition](#composition)
   - [Use Starlight components](#use-starlight-components)
   - [Use Custom components](#use-custom-components)
+  - [Plugins](#plugins)
   - [Images](#images)
   - [html](#html)
   - [Tables](#tables)
@@ -127,7 +128,6 @@ src\assets\images\arc-commander\access-2.png
 Always follow **DRY (Don't Repeat Yourself)** principle. If you have the same content in multiple places, consider creating a reusable component.
 
 In `.mdx` you can not only link to other content, but also directly insert other content in the current file.
-
 
 ### Use Starlight components
 
@@ -243,6 +243,42 @@ import TermSearch from '@components/swate/TermSearch';
 <TermSearch name={"Test"} parentId={"MS:1000031"} showTerm client:only="react"/>
 
 ```
+
+
+#### Use "ARCitect" (i.e. Quasar) icons
+
+Icons used in ARCitect are based on [quasar](https://quasar.dev/vue-components/icon/). These can be used via the `QIcon.astro` component in markdown / mdx files:
+
+```js
+import QIcon from "@components/QIcon.astro"
+
+<QIcon name="exit_to_app" />
+<QIcon name="note_add" />
+<QIcon name="file_open" />
+<QIcon name="cloud_download" />
+<QIcon name="rule" />
+<QIcon name="published_with_changes" />
+<QIcon name="error" />
+<QIcon name="history" />
+<QIcon name="verified" />
+<QIcon name="support_agent" />
+<QIcon name="settings" />
+<QIcon name="chevron_left" />
+<QIcon name="chevron_right" />
+<QIcon name="bug_report" />
+```
+
+
+### Plugins
+
+Several features are provided by external plugins. Please check their docs for details.
+
+- Expressive Code: https://expressive-code.com/
+- Expressive Code Line Numbers: https://expressive-code.com/plugins/line-numbers/
+- Starlight Sidebar Topics: https://starlight-sidebar-topics.netlify.app
+- Starlight Auto Sidebar: https://github.com/HiDeoo/starlight-auto-sidebar
+- Starlight UI Tweaks: https://starlight-ui-tweaks.dlcastillop.com
+- Starlight Contributor List: https://starlight-contributor-list.trueberryless.org
 
 ### Images
 

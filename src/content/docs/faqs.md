@@ -9,6 +9,18 @@ authors:
 Here we collect common questions raised by users.
 Feel free to add a solved FAQ [here](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/issues).
 
+### DataPLANT
+
+<details><summary><span style="color: #1fc2a7">
+How can I change the main email address used for my DataPLANT account?
+</summary>
+
+The main email of your [DataPLANT account](https://auth.nfdi4plants.org/realms/dataplant/account) can only be adapted by the admins. Please open a ticket via our [helpdesk](https://helpdesk.nfdi4plants.org/?topic=ToolsandServices_DataHUB) to request a change listing your old and new email addresses. 
+
+Note that in the DataHUB, users can add additional email addresses via their [profile settings](https://git.nfdi4plants.org/-/profile/emails).
+
+</details>
+
 ### Annotated Research Context
 
 <details><summary><span style="color: #1fc2a7">
@@ -103,13 +115,13 @@ ERROR: System.InvalidOperationException: Error loading discovery document: Error
 
 The root certificates need to be present on the machine to verify certificates for any outgoing connection. These come from a package usually called `ca-certificates` on RHEL-derivates and on Debian-based systems. It can be installed quite easily with:
 
-### Debian
+#### Debian
 
 ```bash
 apt install ca-certificates
 ```
 
-### RHEL
+#### RHEL
 
 ```bash
 dnf install ca-certificates
@@ -185,6 +197,18 @@ What does the "Credential Helper Selector" mean?
 During ARCitect login, Windows asks you wether you want to use a "Credential Helper". This can be used to store your DataHUB credentials. You do not need this for ARCitect to work. You can choose "no helper" or "manager" and tick the check box "always use this from now on" to avoid the popup in the future.
 
 ![](@images/faqs/credential-helper-selector.png)
+
+</details>
+
+
+<details>
+<summary><span style="color: #1fc2a7">
+During a push I see the error "failed to load library 'libcurl-4.dll'"
+</summary>
+
+If the path to your ARC contains umlauts (e.g. the windows user name), Git throws the error `failed to load library 'libcurl-4.dll'`.
+This is an issue with older Git installations (git version ≤ 2.42.0).
+Changing the path (e.g. moving your ARC to a location without umlauts) solves the error. Spaces do not seem to have an effect.
 
 </details>
 

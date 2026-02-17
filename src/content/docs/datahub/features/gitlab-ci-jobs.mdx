@@ -1,6 +1,6 @@
 ---
 title: Run own CI/CD jobs
-lastUpdated: 2025-07-16
+lastUpdated: 2026-02-03
 authors:
   - dominik-brilhaus
 sidebar:
@@ -44,12 +44,12 @@ Some advanced users want to extend this pipeline with other jobs to run on the A
 2. Create a new `.gitlab-ci.yml` file at the root of the ARC by either
    - navigating via the sidebar to `Build` -> `Pipeline editor` or
    - adding it as a new file to the ARC via DataHUB
-   :::tip
-   You can also import `.gitlab-ci.yml` to the root's ARC via ARCitect or add it manually.
-   :::
 3. Use or adapt one of the examples below for your ARC's `.gitlab-ci.yml`
 </Steps>
 
+   :::tip
+   You can also import `.gitlab-ci.yml` to the root's ARC via ARCitect or add it manually.
+   :::
 
 ## Generic example
 
@@ -62,21 +62,7 @@ import GenericCI from 'assets/gitlab-ci-generic.yml?url&raw'
   title=".gitlab-ci.yml"
   code={ GenericCI } 
   lang="yaml"
-  mark={[9, 11, 12, 13, 14]}
-/>
-
-## Example: ARC Summary
-
-This example extends the "Auto-DevOps" pipeline with the [ARC Summary](https://github.com/nfdi4plants/ARCSummary) tool. The tool is provided as a ready-to-use docker image (ghcr.io/nfdi4plants/arc-summary:main). It creates an artifact file `README.md`, which automatically includes a summary of the ARC prepared from ISA metadata. Once run, the `README.md` file can be downloaded from the job artifacts in the DataHUB.
-
-
-import ARCSummary from 'assets/gitlab-ci-arc-summary.yml?url&raw'
-
-<Code 
-  title=".gitlab-ci.yml"
-  code={ ARCSummary } 
-  lang="yaml"
-  mark={[14, 17, 20]}
+  mark={[10, 12, 13, 14, 15]}
 />
 
 ## Example: ARC Mermaid Graph
@@ -92,7 +78,15 @@ import ARCMermaid from 'assets/gitlab-ci-arc-mermaid.yml?url&raw'
   mark={[17, 19]}
 />
 
+## Downloading artifacts
 
+After the pipeline has run successfully, you can download the generated artifact (e.g. `arc-mermaid.md`) from the DataHUB
 
+<Steps>
+  1. In the DataHUB, navigate to the ARC's sidebar to `Build` -> `Artifacts` (1)
+  2. Search for the job of interest (e.g. `arcIsaProcessMermaid`) in the list of artifacts and click the download icon (2)
+</Steps>
+
+![](@images/datahub/download-artifact.png)
 
 

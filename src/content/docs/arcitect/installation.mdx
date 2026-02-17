@@ -13,15 +13,11 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 import GitDownloadInstall from '../git/git-download.mdx'
 import GitCheck from '../git/git-check.mdx'
 
-ARCitect depends on <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.com" target="_blank">Git LFS</a>.  
-The ARCitect installer for Windows includes both tools automatically.  
+:::note
+ARCitect depends on <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.com" target="_blank">Git LFS</a>.
+The ARCitect installer for Windows includes both tools automatically.
 On macOS and Linux, Git and Git LFS have to be installed separately.
-
-<details>
-    <summary>Check git installation</summary>
-    <GitCheck />
-</details>
-
+:::
 
 <Tabs syncKey="os">
 <TabItem label="Windows" icon='seti:windows'>
@@ -47,9 +43,15 @@ On macOS and Linux, Git and Git LFS have to be installed separately.
 </Steps>
 
 </TabItem>
-<TabItem label="Macos" icon="apple">
 
-### Git Installation
+<TabItem label="macOS" icon="apple">
+
+### Check git installation
+
+<GitCheck />
+
+
+### Installing Git and Git LFS
 
 <GitDownloadInstall />
 
@@ -92,7 +94,11 @@ This enables communication with the [DataHUB](/nfdi4plants.knowledgebase/datahub
 
 <TabItem label="Linux" icon='linux'>
 
-### Git Installation
+### Check git installation
+
+<GitCheck />
+
+### Installing Git and Git LFS
 
 <GitDownloadInstall />
 
@@ -128,6 +134,26 @@ To avoid issues on certain Linux distributions, ARCitect installation is based o
     ```bash
     arcitect
     ```
+
+    :::note[Admin privileges]
+    `apt-get install` and `dpkg -i` often require admin privileges, since they write into system directories. You can circumvent this problem by local installations in folders where you have permission, e.g.
+
+        ```
+        dpkg-deb -x ./ARCitect-x.x.x_amd64.deb $HOME/arc
+        ```
+
+        would install the ARCitect in a folder in your home directory. You can then add it to your path via
+
+        ```
+        export PATH="$HOME/arc/ARCitect:$PATH"
+        ```
+
+        To install `git`, `git-lfs`, `libgtk-3-0`, `libnotify4`, `xdg-utils` and `libsecret-1-0`, if they are not already installed, you can use `apt download`, which gives you the `.deb` files for their installations.  
+        From there you can proceed the same as written above for the ARCitect. `apt download` does not resolve package dependencies, so you may have to resolve them manually.
+
+    :::
+
+
 
 </Steps>
     
