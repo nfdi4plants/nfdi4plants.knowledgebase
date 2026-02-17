@@ -115,7 +115,7 @@ authors:
 ## Style Guide
 
 
-All files and folders must always be [kebap-case](https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case). This means all lower case and `-` as word separator.
+All files and folders must always be [kebab-case](https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case). This means all lower case and `-` as word separator.
 
 ```txt title="Example"
 src\assets\images\arc-commander\access-2.png
