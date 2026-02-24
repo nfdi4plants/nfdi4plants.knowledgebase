@@ -1,0 +1,471 @@
+---
+title: Create ARC from External Sources
+lastUpdated: 2026-02-04
+authors:
+  - manuel-feser
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import { Code } from '@astrojs/starlight/components'
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import Mermaid from '@components/mdx/Mermaid.astro'
+import DownloadLink from '@components/scripts/DownloadLink.tsx?client:load'
+
+This use case describes how one can extract information from an external source, such as a database or an API server, and update an existing ARC.
+
+## Use Case
+
+This use case is derived from the BrAPI2ARC tool, where the plant phenotyping application GridScore is being enabled to export its observation data to an ARC via the Breeding API. While the use case is quite specific, the general ideas can be reused in other, broader contexts.
+
+### Retrieve current ARC
+
+Within the BrAPI2ARC use case, the prerequisiste is that an ARC is already existing with a study containing the information about the germplasms that are used in the phenotyping trial.
+To update the latest version, we therefore download the RO-Crate file from the PLANTdataHUB using the known ARC identifier within PLANTdataHUB:
+
+<Tabs>
+
+{/* JAVASCRIPT */}
+<TabItem label="JavaScript" icon='seti:javascript'>
+```js
+import { ARC } from "@nfdi4plants/arctrl";
+
+let arc_url = `https://git.nfdi4plants.org/api/v4/projects/${arcId}/packages/generic/isa_arc_json/0.0.1/arc-ro-crate-metadata.json`;
+let response = await fetch(arc_url, {
+    headers: {
+        'Authorization': `Bearer ${PLANTDATAHUB_PAT}`
+    }
+});
+let arc = ARC.fromROCrateJsonString(JSON.stringify(await response.json()));
+```
+</TabItem>
+
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:f-sharp'>
+[Contribute your Code Snippets](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/CONTRIBUTING.md)
+</TabItem>
+
+
+{/* PYTHON */}
+<TabItem label="Python" icon='seti:python'>
+[Contribute your Code Snippets](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/CONTRIBUTING.md)
+</TabItem>
+</Tabs>
+
+### Update Investigation
+
+You can directly access the metadata of your investigation by addressing the `arc` object. In this case we want to update the investigation with the BrAPI trial:
+
+<Tabs>
+
+{/* JAVASCRIPT */}
+<TabItem label="JavaScript" icon='seti:javascript'>
+```js
+let trial = await magicGetTrialFunction();
+
+arc.Identifier = trial.trialDbId;
+arc.Title = trial.trialName;
+arc.Description = trial.Description;
+```
+</TabItem>
+
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:f-sharp'>
+[Contribute your Code Snippets](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/CONTRIBUTING.md)
+</TabItem>
+
+{/* PYTHON */}
+<TabItem label="Python" icon='seti:python'>
+[Contribute your Code Snippets](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/CONTRIBUTING.md)
+</TabItem>
+</Tabs>
+
+### Update Study
+
+In BrAPI, trials can group multiple studies together. In our use case we allow the ARC studies to be mapped to the BrAPI studies. In the end, the ARC study will contain two annotation tables. The first one describes the biological material, the germplasm, that are used as sources in the experiment. The second describes how many samples, the observation units, are grown from the germplasm. As we require the germplasm to already be available in the ARC, we simply need to check that the data can be found and update the row if required. Afterwards, the growth annotation table is created or updated if already existing. 
+
+<Tabs>
+
+{/* JAVASCRIPT */}
+<TabItem label="JavaScript" icon='seti:javascript'>
+```js
+import { ArcAssay, ArcTable, CompositeCell, Contract, DataContext, Datamap, IOType, OntologyAnnotation } from '@nfdi4plants/arctrl';
+import { CompositeHeader, CompositeHeader_Input, IOType_Source } from '@nfdi4plants/arctrl/Core/Table/CompositeHeader';
+
+const mapping = {
+  'study1': {
+    arcStudy: 'my-study-1',
+    arcAssay: 'My Assay 1'
+  }
+}
+
+const GERMPLASM_TABLE_NAME = 'biological_material';
+const GROWTH_TABLE_NAME = 'growth';
+
+for (const brapiStudy of brapiStudies) {
+  let arcStudy = arc.GetStudy(mapping[brapiStudy.studyDbId].arcStudy);
+  if (arcStudy) {
+    // Update the ARC study metadata
+    arcStudy.Title = brapiStudy.studyName;
+    arcStudy.Description = brapiStudy.studyDescription;
+
+    // Look up the observation units from your external source
+    let observationUnits = await magicGetObservationUnitsFunction();
+
+
+    // Check if the GERMPLASM_TABLE exists and contains all germplasm
+    let germplasmNames = new Set<string>();
+    for (const ou of observationUnits) {
+      germplasmNames.add(ou.germplasmName);
+    }
+    let germplasmTable = arcStudy.GetTable(GERMPLASM_TABLE_NAME);
+    if (germplasmTable) {
+      let germplasmRowMap: Record<string, number> = {};
+      let inputHeader = CompositeHeader_Input<IOType_Source());
+      let inputColumn = germplasmTable.GetColumnByHeader(inputHeader);
+      for (let i=0; i<inputColumn.Cells.length; i++) {
+        let row = inputColumn.Cells[i];
+        if (germplasmNames.has(row.AsFreeText)) {
+          germplasmRowMap[row.AsFreeText] = i;
+        }
+      }
+      if (germplasmNames.size != Object.keys(germplasmRowMap).length) {
+        console.error(`Not all germplasm found in ARC for study ${brapiStudy.studyDbId}`);
+      }
+    } else {
+      // Here you could create the table from scratch
+    }
+
+    // Create or update the GROWTH_TABLE
+    try {
+      let growthTable = arcStudy.GetTable(GROWTH_TABLE_NAME);
+      // Here you could update an exsiting GROWTH_TABLE
+    } catch {
+      // GROWTH_TABLE does not exist. Create a new one
+      let oa_protocol_type = new OntologyAnnotation('plant growth protocol', 'DPBO', 'https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000164');
+
+      let growthTable = ArcTable.init(GROWTH_TABLE_NAME);
+      growthTable.AddColumn(CompositeHeader.input(IOType_Source()));
+      growthTable.AddColumn(CompositeHeader.protocolType());
+      growthTable.AddColumn(CompositeHeader.output(IOType_Sample()));
+
+      for (let ou of observationUnits) {
+        let inputCell = CompositeCell.freeText(ou.germplasmName);
+        let protocolTypeCell = CompositeCell(oa_protocol_type);
+        let outputCell = CompositeCell.freeText(ou.observationUnitName);
+        growthTable.AddRow([inputCell, protocolTypeCell, outputCell]);
+      }
+      arcStudy.AddTable(growthTable);
+    }
+  }
+}
+
+```
+</TabItem>
+
+
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:f-sharp'>
+[Contribute your Code Snippets](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/CONTRIBUTING.md)
+</TabItem>
+
+
+{/* PYTHON */}
+<TabItem label="Python" icon='seti:python'>
+[Contribute your Code Snippets](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/CONTRIBUTING.md)
+</TabItem>
+</Tabs>
+
+### Create Assay
+
+BrAPI does not have an equivalent to an ARC Assay, we therefore need to create an Assay with a configured name. Normally, the below code snippet, would be inside the study logic. Therefore, we will reuse without redefining some variables that would be available in the studies loop above.
+The Assay should in the end contain the field plan, the grid where the observation units were grown, and the annotation table for the result data files.
+
+<Tabs>
+
+{/* JAVASCRIPT */}
+<TabItem label="JavaScript" icon='seti:javascript'>
+```js
+
+const FIELD_PLAN_TABLE_NAME = 'field_plan';
+const PHENOTYPING_TABLE_NAME = 'phenotyping';
+
+for (const brapiStudy of brapiStudies) {
+  /*
+   Update Study logic
+  */
+
+  try {
+    let arcAssay = arc.GetAssay(mapping[brapiStudy.studyDbId].arcAssay.replace(' ', '_').toLowerCase());
+    // Here you could update the assay if it already exists
+  } catch {
+    let assayId = mapping[brapiStudy.studyDbId].arcAssay.replace(' ', '_').toLowerCase();
+    let arcAssay = ArcAssay.init(assayId);
+    arcAssay.Title = mapping[brapiStudy.studyDbId].arcAssay;
+
+    // Create field plant table
+    let fieldPlanTable = ArcTable.init(FIELD_PLAN_TABLE_NAME);
+    fieldPlanTable.AddColumn(CompositeHeader.characteristic(new OntologyAnnotation('replicate', 'EFO', 'EFO:EFO_0000683')));
+    fieldPlanTable.AddColumn(CompositeHeader.characteristic(new OntologyAnnotation('row', 'NCIT', 'NCIT:C43379')));
+    fieldPlanTable.AddColumn(CompositeHeader.characteristic(new OntologyAnnotation('column', 'NCIT', 'NCIT:C43378')));
+    fieldPlanTable.AddColumn(CompositeHeader.characteristic(new OntologyAnnotation('entry type', 'NCIT', 'NCIT:C25284')));
+
+    for (let ou of observationUnits) {
+      let inputCell = CompositeCell.freeText(ou.observationUnitName);
+      let replicateCell = CompositeCell.createTermFromString(ou.observationUnitPosition.observationLevel.levelCode || '');
+      let rowCell = CompositeCell.createTermFromString(ou.observationUnitPosition.positionCoordinateY || '');
+      let columnCell = CompositeCell.createTermFromString(ou.observationUnitPosition.positionCoordinateX || '');
+      let entryTypeCell = CompositeCell.createTermFromString(ou.observationUnitPosition.entryType || '');
+      fieldPlanTable.AddRow([inputCell, replicateCell, rowCell, columnCell, entryTypeCell]);
+    }
+    arcAssay.AddTable(fieldPlanTable);
+
+    // Retrieve observations
+    let observations = await magicGetObservationsFunction();
+    let obsevationVariableNames = new Set<string>();
+    for (let obs of observations) {
+      obsevationVariableNames.add(obs.observationVariableName);
+    }
+
+    if (observations.length > 0) {
+      let phenotypingTable = ArcTable.init(PHENOTYPING_TABLE_NAME);
+      phenotypingTable.AddColumn(CompositeHeader.input(IOType.sample()));
+      phenotypingTable.AddColumn(CompositeHeader.protocolType());
+      phenotypingTable.AddColumn(CompositeHeader.output(IOType.data()));
+
+      for (let i=0; i<observationUnits.length; i++) {
+        let ou = observationUnits[i];
+        let fragmentSelector = '';
+        if (mapping[brapiStudy.studyDbId].dataFileForm === 'wide') {
+          fragmentSelector = `row=${i+1}`;
+        } else {
+          fragmentSelector = `row=${i+1}-${i+1+observationVariableNames.size}`;
+        }
+        let inputCell = CompositeCell.freeText(ou.observationUnitName);
+        let protocolTypeCell = CompositeCell.term(new OntologyAnnotation('plant phenotyping protocol', 'DPBO', 'https://purl.org/nfdi4plants/ontology/dpbo/DPBO_1000250'));
+        let outputCell = CompositeCell.freeText(`./assays/${assayId}/dataset/df.csv#${fragmentSelector}`);
+        phenotypingTable.AddRow([inputCell, protocolTypeCell, outputCell]);
+      }
+      arcAssay.AddTable(phenotypingTable);
+    }
+    arc.AddAssay(arcAssay);
+  }
+}
+
+```
+</TabItem>
+
+
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:f-sharp'>
+[Contribute your Code Snippets](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/CONTRIBUTING.md)
+</TabItem>
+
+
+{/* PYTHON */}
+<TabItem label="Python" icon='seti:python'>
+[Contribute your Code Snippets](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/CONTRIBUTING.md)
+</TabItem>
+</Tabs>
+
+### Create Result Data File with Datamap
+
+Now that the ARC ISA files are updated, it remains to write the actual data, the observations, to the ARC and write a datamap to provide explanation of the observation variables.
+Again, this will use some variables already defined above within the BrAPI Studies loop.
+
+<Tabs>
+
+{/* JAVASCRIPT */}
+<TabItem label="JavaScript" icon='seti:javascript'>
+```js
+
+const datafiles = [];
+const datamaps = [];
+
+for (const brapiStudy of brapiStudies) {
+  /*
+  Update Study 
+  */
+
+  /*
+  Create Assay 
+  */
+
+  let dataFileContent = '';
+  let datamap;
+
+  // Create Trait Definitions
+  let termMap: Record<string, OntologyAnnotation> = {};
+  for (const observationVariableName of observationVariableNames) {
+    let observationVariablePui = observation.find(o => o.observationVariableName === observationVariableName).observationVariablePUI;
+    if (observationVariablePui) {
+      let oa = new OntologyAnnotation(
+        observationVariableName,
+        'CO',
+        observationVariablePui
+      );
+      termMap[observationVariableName] = oa;
+    } else {
+      termMap[observationVariableName] = new OntologyAnnotation(observationVariableName, '', '');
+    }
+  }
+
+  if (mapping[brapiStudy.studyDbId].dataFileForm === 'wide') {
+    // Create wide format data file
+    // Header
+    dataFileContent += `Sample\t${Array.from(observationVariableNames).join('\t')}\n`;
+    // Rows
+    for (let ou of dbObservationUnits) {
+      let row = `${ou.observation_units.observationUnitName}`;
+      for (let varName of observationVariableNames) {
+        let obs = dbObservations.find(o => 
+          o.observation_units.observationUnitDbId === ou.observation_units.observationUnitDbId &&
+          o.variables.observationVariableName === varName
+        );
+        row += `\t${obs ? obs.observations.value : ''}`;
+      }
+      dataFileContent += row + '\n';
+    }
+
+    // Create datamap for wide format
+    let datacontexts: DataContext[] = [];
+    for (let varName of observationVariableNames) {
+      let fragment = `./assays/${assayId}/dataset/df.csv#column=${Array.from(observationVariableNames).indexOf(varName)+2}`;
+      let datafile = DataFile_RawDataFile();
+      let format = 'text/csv';
+      let selector_format = 'https://datatracker.ietf.org/doc/html/rfc7111';
+      let explication = termMap[varName];
+      let unit = undefined;
+      let object_type = undefined;
+      let label = varName;
+      let description = '';
+
+      datacontexts.push(new DataContext(
+          varName,
+          fragment,
+          datafile,
+          format,
+          selector_format,
+          explication,
+          unit,
+          object_type,
+          label,
+          description
+      ));
+    }
+    datamap = new Datamap(datacontexts);
+  } else {
+    // Here you could create long format data file
+  }
+  
+  // Save the datafile, so we can export it later on
+  datafiles.push({
+      Operation: 'CREATE',
+      Path: `assays/${assayId}/dataset/df.csv`,
+      DTOType: 'PlainText',
+      DTO: dataFileContent,
+  });
+  // Save the datamap, so we can export it later on
+  datamaps.push({
+    Operation: 'CREATE',
+    Path: `assays/${assayId}/isa.datamap.xlsx`,
+    DTOType: 'ISA_Datamap',
+    DTO: datamap
+  })
+}
+
+```
+</TabItem>
+
+
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:f-sharp'>
+[Contribute your Code Snippets](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/CONTRIBUTING.md)
+</TabItem>
+
+
+{/* PYTHON */}
+<TabItem label="Python" icon='seti:python'>
+[Contribute your Code Snippets](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/CONTRIBUTING.md)
+</TabItem>
+</Tabs>
+
+### Export ARC to PLANTdataHUB using Gitlab API
+
+We have now sucessfully updated our ARC. The last step is to export it to the PLANTdataHUB. We will be using the Gitlab REST API for this:
+
+<Tabs>
+
+{/* JAVASCRIPT */}
+<TabItem label="JavaScript" icon='seti:javascript'>
+```js
+
+// Create the payload for the commit
+let contracts = arc.GetWriteContracts();
+let payload = {
+  "branch": "main",
+  "commit_message": "YOUR COMMIT MESSAGE HERE",
+  "actions": []
+}
+
+for (const contract of contracts) {
+  if (contract.Operation === 'CREATE') {
+    if (contract.DTOType === 'ISA_Investigation' || contract.DTOType === 'ISA_Study' ||contract.DTOType === 'ISA_Assay') {
+      let xlsxBytes = await Xlsx.toBytes(contract.DTO);
+      let base64String = Buffer.from(xlsxBytes).toString('base64');
+      let action = magicDecisionLogicIfCreateOrUpdate();
+      payload.actions.push({
+        "action": action,
+        "file_path": contract.Path,
+        "content": base64String,
+        "encoding": "base64"
+      });
+    }
+  }
+}
+
+for (const datafile of datafiles) {
+  payload.actions.push({
+    "action": "create",
+    "file_path": datafile.Path,
+    "content": datafile.DTO,
+    "encoding": "text"
+  });
+}
+
+
+for (const datamap of datamaps) {
+  let xlsxBytes = await Xlsx.toBytes(datamap.DTO);
+  let base64String = Buffer.from(xlsxBytes).toString('base64');
+  payload.actions.push({
+    "action": "create",
+    "file_path": datamap.Path,
+    "content": base64String,
+    "encoding": "base64"
+  });
+}
+
+const response = await fetch(`https://git.nfdi4plants.org/api/v4/projects/${arcId}/repository/commits`, {
+  method: 'POST',
+  headers: {
+    'Accept': 'application/json',
+    'Authorization': authHeader,
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(payload)
+});
+
+```
+</TabItem>
+
+
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:f-sharp'>
+[Contribute your Code Snippets](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/CONTRIBUTING.md)
+</TabItem>
+
+
+{/* PYTHON */}
+<TabItem label="Python" icon='seti:python'>
+[Contribute your Code Snippets](https://github.com/nfdi4plants/nfdi4plants.knowledgebase/blob/main/CONTRIBUTING.md)
+</TabItem>
+</Tabs>
