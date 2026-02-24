@@ -1,0 +1,78 @@
+---
+title: Setting Up an SOP Repository
+sidebar:
+  order: 3
+authors:
+  - timo-muehlhaus
+  - dominik-brilhaus
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps, FileTree } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+
+<ViolaSays>
+
+We already have protocols. How do we turn them into a structured knowledge base?
+
+</ViolaSays>
+
+## Step 1: Standardize Format
+
+Protocols should be stored as Markdown files.
+
+Example structure:
+
+<FileTree>
+- lab-sops
+  - DNA_Extraction.md
+  - RNA_Extraction.md
+  - WesternBlot.md
+  - CellCulture.md
+  - README.md
+</FileTree>
+
+Markdown ensures:
+
+- Long-term readability
+- Platform independence
+- Compatibility with version control
+
+
+<Card title="Initialize the Knowledge Base" icon="code">
+
+<Steps>
+
+1. Navigate to the SOP folder:
+
+```bash
+cd lab-sops
+````
+
+2. Initialize Git:
+
+```bash
+git init
+```
+
+3. Create the first recorded baseline:
+
+```bash
+git add .
+git commit -m "Initial baseline of laboratory SOP collection"
+```
+
+</Steps>
+
+</Card>
+
+
+## What This Represents
+
+You have created:
+
+* A structured SOP system
+* A baseline state
+* A recoverable starting point
+
+This is the foundation of your living knowledge base.

@@ -1,0 +1,52 @@
+---
+title: Publication and Reproducibility
+sidebar:
+  order: 6
+authors:
+  - timo-muehlhaus
+  - dominik-brilhaus
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Card } from '@astrojs/starlight/components';
+
+<ViolaSays>
+
+How do we reference the exact protocol version used in a paper?
+
+</ViolaSays>
+
+When submitting a manuscript, freeze the repository state:
+
+```bash
+git tag -a paper_2026_submission -m "Protocols used in manuscript"
+````
+
+This marks a permanent reference point.
+
+
+<Card title="Why This Matters" icon="bookmark">
+
+Tagging enables:
+
+* Exact reconstruction of methods
+* Transparent reviewer responses
+* Long-term reproducibility
+* Clear linkage between data and protocol version
+
+</Card>
+
+
+## From Documents to Infrastructure
+
+By managing SOPs in a Git repository, you transform:
+
+Static documents
+into
+Versioned scientific knowledge infrastructure.
+
+This is not just about Git.
+
+It is about making laboratory knowledge structured, traceable, and reproducible.
+
+```
