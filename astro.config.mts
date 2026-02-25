@@ -168,6 +168,15 @@ export default defineConfig({
           items:['faqs']
         },
         {
+        label: 'Workshops',
+        icon: 'certificate',
+        link: 'workshops',
+        id: 'workshops',
+        items: [
+          { label: 'Workshops', autogenerate: { directory: 'workshops' } },
+         ]
+      },
+        {
           label: 'Development',
           icon: 'forward-slash',
           link: 'arctrl',
