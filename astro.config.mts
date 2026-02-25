@@ -169,7 +169,7 @@ export default defineConfig({
         },
         {
           label: 'Workshops',
-          icon: 'certificate',
+          icon: 'star',
           link: 'workshops',
           id: 'workshops',
           items: [
@@ -220,6 +220,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 });
+
 
 
 
