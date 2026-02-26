@@ -168,6 +168,20 @@ export default defineConfig({
           items:['faqs']
         },
         {
+          label: 'Workshops',
+          icon: 'star',
+          link: 'workshops',
+          id: 'workshops',
+          items: [
+            'workshops',
+            {
+              collapsed: true,
+              label: 'FDM-Werkstatt',
+              autogenerate: { directory: 'workshops/2026-fdm-werkstatt' }
+            },
+          ]
+        },
+        {
           label: 'Development',
           icon: 'forward-slash',
           link: 'arctrl',
@@ -206,5 +220,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 });
+
+
 
 
