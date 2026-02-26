@@ -15,8 +15,8 @@ import Mermaid from '@components/mdx/Mermaid.astro'
 import Icons from '@components/swate/Icons';
 import QIcon from "@components/QIcon.astro"
 import NoWrapTable from "@components/NoWrapTable.astro"
-import ViolasARCElab2ARC1 from './additional_material/ViolasARC-elab2ARC-1.mdx'
-import ViolasARCElab2ARC2 from './additional_material/ViolasARC-elab2ARC-2.mdx'
+import ViolasARCElab2ARC1 from '@components/mdx/workshops/2026-fdm-werkstatt/ViolasARC-elab2ARC-1.mdx'
+import ViolasARCElab2ARC2 from '@components/mdx/workshops/2026-fdm-werkstatt/ViolasARC-elab2ARC-2.mdx'
 
 <ViolaSays>
 I documented some of my protocols and data in the electronic lab notebook eLabFTW! Can I somehow convert the data into a format that can be used in the ARC?
@@ -91,5 +91,5 @@ Thats great! I can easily convert my eLabFTW entries into the ARC and have all t
 
 To get a better understanding of the conversion process, you can check the picture. The tool uses the eLabFTW title as the name of the created study/assay folder in the ARC. The main text of the eLabFTW entry is converted into a markdown file and added to the protocols folder. All attachements of the eLabFTW entry are added to the dataset folder. Low-level administrative metadata of the eLabFTW entry (e.g. creation date, author, etc.) are added to the isa.study or isa.assay sheet. If you enable the LLM Annotation Table, the tool will also extract experimental metadata from the main text of the eLabFTW entry and add it to the isa.study or isa.assay sheet.
 
-![f](src\content\docs\workshops\2026-fdm-werkstatt\additional_material\Conversion-elab2ARC.jpg)
+![](@images/workshops/2026-fdm-werkstatt/Conversion-elab2ARC.jpg)
 
