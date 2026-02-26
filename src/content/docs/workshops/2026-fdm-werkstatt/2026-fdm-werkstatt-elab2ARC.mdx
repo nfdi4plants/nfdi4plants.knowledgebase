@@ -1,7 +1,7 @@
 ---
 title: elab2ARC
 sidebar:
-  order: 9
+  order: 10
 lastUpdated: 2026-02-26
 authors:
   - sabrina-zander
@@ -88,4 +88,8 @@ Now a new assay folder with the content of the eLabFTW entry is created. Because
 <ViolaSays>
 Thats great! I can easily convert my eLabFTW entries into the ARC and have all the data and metadata together. This will save me a lot of time in the future! 
 </ViolaSays>
+
+To get a better understanding of the conversion process, you can check the picture. The tool uses the eLabFTW title as the name of the created study/assay folder in the ARC. The main text of the eLabFTW entry is converted into a markdown file and added to the protocols folder. All attachements of the eLabFTW entry are added to the dataset folder. Low-level administrative metadata of the eLabFTW entry (e.g. creation date, author, etc.) are added to the isa.study or isa.assay sheet. If you enable the LLM Annotation Table, the tool will also extract experimental metadata from the main text of the eLabFTW entry and add it to the isa.study or isa.assay sheet.
+
+![f](src\content\docs\workshops\2026-fdm-werkstatt\additional_material\Conversion-elab2ARC.jpg)
 

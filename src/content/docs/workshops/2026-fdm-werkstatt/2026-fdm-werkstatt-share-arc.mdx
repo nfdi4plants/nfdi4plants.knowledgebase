@@ -1,12 +1,92 @@
 ---
 title: Share ARC
 sidebar:
-  order: 10
+  order: 12
 lastUpdated: 2026-02-26
 authors:
   - sabrina-zander
 ---
 
-import ShareArc from '../../start-here/publish-arc.mdx'
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+import QIcon from "@components/QIcon.astro"
+import DataHUBCommits from '../../datahub/arc-features/datahub-arc-commits.mdx'
 
-<ShareArc />
+
+## Add members to your ARC
+    <ViolaSays>
+     Now my local and remote ARCs are synchronized. But how can I invite my project partner?
+    </ViolaSays>
+
+<Card icon="gitlab" title="PLANTDataHUB">
+    <Steps>
+
+    1. Click on **Manage** in the left navigation panel.
+    2. Click on **Members**.
+    3. Click on **Invite members**.
+    4. Search for potential collaborators.
+    5. Select a role.
+
+        :::note[Choosing the proper role]
+        When inviting new members to an ARC or group, you can choose between different levels.
+        :::
+
+        :::note
+        By default you are **Owner** of an ARC you create or upload to the DataHUB.
+        :::  
+
+    </Steps>
+</Card>
+
+
+## DataHUB Roles
+
+When inviting new members to an ARC or group, you can choose between different roles.
+
+- **Guest** &ndash; Has the least rights. They will not be able to see the content of an ARC (only the wiki page).
+- **Reporter** &ndash; Has read access to your ARC. This is recommended for people you ask for consultancy.
+- **Developer** &ndash; The choice for most people you want to invite to your ARC. Developers have read and write access, but cannot maintain the project on the DataHUB, e.g. invite new members.
+- **Maintainer** &ndash; Has read and write access and can add or remove members, except for yourself. This is the minimum role recommended for inviting group leaders as it allows them to add their group members for data upload or analysis to the project.
+- **Owner** &ndash; An owner has basically all rights to the ARC. They can delete or transfer the ARC and manage user memberships.
+
+    :::note
+        If you are interested in details about permissions and roles have a look [here](https://docs.gitlab.com/ee/user/permissions.html).
+    :::
+ <ViolaSays>
+     I will invite my PI Prof. Jasmine Beetroot as **Maintainer** and my collaboration partner Oliver Sage as **Developer**. 
+    </ViolaSays>
+
+## Follow your ARC's progress in the DataHUB
+
+<DataHUBCommits />
+
+## Project Management
+
+The DataHUB can also be used for Project Management. With issues you can collaborate on ideas and plan your work. 
+
+<Card icon="gitlab" title="PLANTDataHUB">
+    <Steps>
+
+    1. Click on **Plan** in the left navigation panel.
+    2. Click on **Issues**.
+    3. Create a new Issue.
+
+         <ViolaSays>
+          It would be good to have summary statistics for sugar measurement from my project collaborator.
+         </ViolaSays>
+    
+    4. Type in a Title `Summary statistics for sugar measurement`.
+    5. Fill out the Description. 
+    6. Assign yourselve or collaboration partner to the task.
+    7. Click `Create Issue`. 
+
+    </Steps>
+</Card>
+
+
+
+
+
+
+

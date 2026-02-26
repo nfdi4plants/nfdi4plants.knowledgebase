@@ -1,0 +1,41 @@
+---
+title: Synchronize ARC
+sidebar:
+  order: 11
+lastUpdated: 2026-02-26
+authors:
+  - sabrina-zander
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+import Icons from '@components/swate/Icons';
+import QIcon from "@components/QIcon.astro"
+import NoWrapTable from "@components/NoWrapTable.astro"
+
+
+<ViolaSays>
+All the changes I made with the eLab2ARC tool are only visible in the DataHUB. How can I synchronize them with my local ARC?  
+</ViolaSays>
+
+## Download your ARC from the PLANTDataHUB
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+    1. From the sidebar, navigate to the <QIcon name="published_with_changes" /> `DataHUB Sync` menu.
+    2. Click `Pull` to download your ARC from the DataHUB.     
+    
+    </Steps>
+</Card>
+
+## Inspect ARC changes in ARCitect
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+    1. Click through the new studys and assays in the sidebar.
+    2. Inspect the new files and check the isa.study and isa.assay sheets to see the added metadata.
+    3. Check the isa.assay file also to see the LLM extracted metadata.
+  
+    </Steps>
+</Card>
