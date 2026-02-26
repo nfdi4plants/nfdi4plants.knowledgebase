@@ -6,3 +6,86 @@ lastUpdated: 2026-02-26
 authors:
   - sabrina-zander
 ---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+import Mermaid from '@components/mdx/Mermaid.astro'
+import Icons from '@components/swate/Icons';
+import QIcon from "@components/QIcon.astro"
+import NoWrapTable from "@components/NoWrapTable.astro"
+import ViolasARCElab2ARC1 from './additional_material/ViolasARC-elab2ARC-1.mdx'
+import ViolasARCElab2ARC2 from './additional_material/ViolasARC-elab2ARC-2.mdx'
+
+<ViolaSays>
+I documented some of my protocols and data in the electronic lab notebook eLabFTW! Can I somehow convert the data into a format that can be used in the ARC?
+</ViolaSays>
+
+Yes, you can! We developed a browser-based tool bridging elabFTW with ARCs. We will use pre-created entries as an example. 
+
+## Authentification
+
+
+<Card icon="pen" title="elab2ARC">
+    <Steps>
+
+    1. Open the website [elab2ARC](http://nfdi4plants.org/elab2arc) and go to the **Token** tab
+    2. Select the eLabFTW instance: DataPLANT  
+    3. Click `get a test API key` for the eLabFTW API Key 
+    4. Click `get a token` to automatically generate a token for your DataHUB account. 
+    5. Click `Save`.
+    
+    </Steps>
+</Card>
+
+Now you authenticated your account and can use the tool to convert your eLabFTW data directly into the ARC. 
+
+<ViolaSays>
+I have several eLabFTW entries, some belongs to the study part, some to assays. How can I deal with that? 
+</ViolaSays>
+
+The tool gives you the choice to select to which part of the ARC you entries belong. We will first create an example for the **study** part.  
+
+## Add an eLabFTW entry as study
+
+<Card icon="pen" title="elab2ARC">
+    <Steps>
+
+    1. Go to the **eLabFTW** tab. Here you can see all demo eLabFTW entries with its metadata. 
+    2. Click the `Preview button` of entry *66: Arabidopsis growth protocol* to see the content of the entry. Close it afterwards.
+    3. Select the entry *66: Arabidopsis growth protocol* and click `Confirm eLabFTW Selection`. 
+    4. In the **ARC** tab you can now see the ARC which we created before. Click `Select study` to define the target folder. This will change the Target Path at the bottom. 
+    5. Click `Start Conversion` to start the conversion. The converted data will be directly uploaded to the ARC.
+    6. In the Conversion Status window you can see the progress of the conversion. Once it is finished, you can go to `Files Changed in the ARC` and directly open the converted data in the ARC by clicking `click to check the file`. 
+        
+    </Steps>
+</Card>
+
+Now a new study folder with the content of the eLabFTW entry is created in the ARC. The structure of the converted data looks like this:
+
+<ViolasARCElab2ARC1 />
+
+## Add an eLabFTW entry as assay
+
+<Card icon="pen" title="elab2ARC">
+    <Steps>
+
+    1. Go back to the **eLabFTW** tab. 
+    2. Click the `Preview button` of entry *68: Sugar extraction & measurement* to see the content of the entry. It has also the `sugar.results.csv` file as an attachment. Close it afterwards.
+    3. Select the entry *68: Sugar extraction & measurement* and click `Confirm eLabFTW Selection`. 
+    4. In the **ARC** tab click `Select assay` to define the target folder. 
+    5. Enable LLM Annotation Table this time to automatically extract metadata from the eLabFTW entry and fill it into the isa.assay sheet. 
+    5. Click `Start Conversion` to start the conversion. The converted data will be directly uploaded to the ARC.
+    6. In the Conversion Status window you can see the LLM Response Stream during the process of the conversion. Once it is finished, you can again go to `Files Changed in the ARC` and directly open the converted data in the ARC by clicking `click to check the file`. 
+        
+    </Steps>
+</Card>
+Now a new assay folder with the content of the eLabFTW entry is created. Because the eLabFTW entry contains a file attachment, it is also added to the assays dataset folder. The metadata extracted from the LLM is added to the isa.assay sheet, which we later check in ARCitect. 
+
+<ViolasARCElab2ARC2 />
+
+<ViolaSays>
+Thats great! I can easily convert my eLabFTW entries into the ARC and have all the data and metadata together. This will save me a lot of time in the future! 
+</ViolaSays>
+
