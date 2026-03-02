@@ -36,9 +36,10 @@ then we can make the required imports
 </TabItem>
 </Tabs>
 
-### Define some Gitlab download helper functions
+### Define GitLab download helper functions
 
 With the GitLab API package setup, we can define some helper functions to download files from GitLab repositories. We need three functions:
+
 - Retrieve all file paths in a GitLab repository
 - Download a file from GitLab as string (for cwl files)
 - Download a file from GitLab as bytes (for xlsx files)
@@ -58,7 +59,7 @@ With the GitLab API package setup, we can define some helper functions to downlo
 
 ### Define Contract handling function
 
-ARCtrl IO is based upon a contract handling layer, that allows to flexibly load and write ARCs from different sources. To load an ARC from the DataHub, we need to implement a custom contract handling function that uses the above defined GitLab helper functions to retrieve the required files.
+ARCtrl IO is based upon a contract handling layer, that allows to flexibly load and write ARCs from different sources. To load an ARC from the DataHUB, we need to implement a custom contract handling function that uses the above defined GitLab helper functions to retrieve the required files.
 
 <Tabs syncKey="pl">
 
@@ -73,7 +74,7 @@ ARCtrl IO is based upon a contract handling layer, that allows to flexibly load 
 </TabItem>
 </Tabs>
 
-### Define a function to load an ARC from DataHub
+### Define a function to load an ARC from DataHUB
 
 Finally, we can define a function `download_arc` that takes the GitLab repository identifier as input and returns an `ARC` object that represents the loaded ARC. This function:
 - Retrieves the file paths from the GitLab repository
@@ -97,7 +98,7 @@ Finally, we can define a function `download_arc` that takes the GitLab repositor
 
 ### Profit
 
-Now we can simply call the `download_arc` function with the GitLab repository identifier of the ARC we want to load from the DataHub. In this example, we load the [brilator/Facultative-CAM-in-Talinum](https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum) ARC.
+Now we can simply call the `download_arc` function with the GitLab repository identifier of the ARC we want to load from the DataHUB. In this example, we load the [brilator/Facultative-CAM-in-Talinum](https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum) ARC.
 
 <Tabs syncKey="pl">
 
