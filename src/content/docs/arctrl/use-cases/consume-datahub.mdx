@@ -12,7 +12,7 @@ import Mermaid from '@components/mdx/Mermaid.astro'
 
 import rawCodePy from '/arctrl/use-cases/consume-datahub/consume-datahub.py?raw&url'
 
-This guide demonstrates how to consume ARCs in ARCtrl directly from the DataHub. I.e. we want to load an ARC from the DataHUB without cloning the ARC repository locally. 
+This guide demonstrates how to consume ARCs via ARCtrl directly from the DataHUB, i.e. loading an ARC without cloning the ARC repository locally.
 
 ### Prerequisites
 
@@ -39,7 +39,7 @@ then we can make the required imports
 ### Define some Gitlab download helper functions
 
 With the GitLab API package setup, we can define some helper functions to download files from GitLab repositories. We need three functions:
-- Retreive all file paths in a GitLab repository
+- Retrieve all file paths in a GitLab repository
 - Download a file from GitLab as string (for cwl files)
 - Download a file from GitLab as bytes (for xlsx files)
 
@@ -48,7 +48,7 @@ With the GitLab API package setup, we can define some helper functions to downlo
 <TabItem label="Python" icon='seti:python'>
 
   <Code
-    title="export-tables.py"
+    title="consume-datahub.py"
     code={rawCodePy.split('\n').slice(7, 30).join('\n')}
     lang="python"
   />
@@ -58,14 +58,14 @@ With the GitLab API package setup, we can define some helper functions to downlo
 
 ### Define Contract handling function
 
-ARCtrl IO is based upon a contract handling layer, that allows to flexibly load and write ARCs from different sources. To load an ARC from the DataHub, we need to implement a custom contract handling function that uses the above defined GitLab helper functions to retreive the required files.
+ARCtrl IO is based upon a contract handling layer, that allows to flexibly load and write ARCs from different sources. To load an ARC from the DataHub, we need to implement a custom contract handling function that uses the above defined GitLab helper functions to retrieve the required files.
 
 <Tabs syncKey="pl">
 
 <TabItem label="Python" icon='seti:python'>
 
   <Code
-    title="export-tables.py"
+    title="consume-datahub.py"
     code={rawCodePy.split('\n').slice(31, 43).join('\n')}
     lang="python"
   />
@@ -76,7 +76,7 @@ ARCtrl IO is based upon a contract handling layer, that allows to flexibly load 
 ### Define a function to load an ARC from DataHub
 
 Finally, we can define a function `download_arc` that takes the GitLab repository identifier as input and returns an `ARC` object that represents the loaded ARC. This function:
-- Retreives the file paths from the GitLab repository
+- Retrieves the file paths from the GitLab repository
 - Creates an empty ARC object from these file paths
 - Gets empty read contracts for the ARC object 
 - Uses the contract handling function to fill the read contracts
@@ -87,7 +87,7 @@ Finally, we can define a function `download_arc` that takes the GitLab repositor
 <TabItem label="Python" icon='seti:python'>
 
   <Code
-    title="export-tables.py"
+    title="consume-datahub.py"
     code={rawCodePy.split('\n').slice(44, 61).join('\n')}
     lang="python"
   />
@@ -104,7 +104,7 @@ Now we can simply call the `download_arc` function with the GitLab repository id
 <TabItem label="Python" icon='seti:python'>
 
   <Code
-    title="export-tables.py"
+    title="consume-datahub.py"
     code={rawCodePy.split('\n').slice(62, 68).join('\n')}
     lang="python"
   />
