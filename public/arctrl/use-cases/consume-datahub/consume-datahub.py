@@ -43,13 +43,13 @@ def handle_read_contract(project_path: str, contract : Contract) -> Contract:
 
 
 def download_arc(project_path: str, branch: str = "main", token: str | None = None) -> ARC:
-    print ("retreive file paths")
+    print ("retrieve file paths")
     filepaths = list_repo_files(project_path, branch, token)
 
     print ("init arc from file paths")
     arc = ARC.from_file_paths(filepaths)
 
-    print ("retreive and fulfill metadata file read contracts")
+    print ("retrieve and fulfill metadata file read contracts")
     contracts = [
         handle_read_contract(project_path, contract) for contract in arc.GetReadContracts()
     ]
