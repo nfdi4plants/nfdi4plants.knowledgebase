@@ -1,0 +1,80 @@
+---
+title: Best Practices for Laboratory SOP Writing
+sidebar:
+  order: 5
+authors:
+  - timo-muehlhaus
+  - dominik-brilhaus
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Card } from '@astrojs/starlight/components';
+
+<ViolaSays>
+
+How do we ensure long-term quality across all protocols?
+
+</ViolaSays>
+
+## Write for the Next Person
+
+Assume the reader:
+
+- Is new to the lab
+- Is stressed
+- Has never done this protocol before
+
+Clarity prevents mistakes.
+
+---
+
+## Keep One Protocol per File
+
+Avoid mixing multiple procedures in one document.
+
+This improves:
+
+- Version control
+- Review
+- Traceability
+
+---
+
+## Use Consistent Terminology
+
+<Card title="Consistency Rule" icon="rule">
+
+If you call it “lysis buffer” once,  
+do not call it “extraction buffer” later.
+
+</Card>
+
+---
+
+## Link Related SOPs
+
+```markdown
+See also: [RNA Extraction](RNA_Extraction.md)
+````
+
+This creates an interconnected knowledge system.
+
+---
+
+## Think in Terms of Knowledge Infrastructure
+
+A Markdown SOP in Git is not just a document.
+
+It is:
+
+* Versioned
+* Reviewable
+* Traceable
+* Publishable
+* Machine-readable
+
+You are not just writing instructions.
+
+You are building laboratory knowledge infrastructure.
+
+```

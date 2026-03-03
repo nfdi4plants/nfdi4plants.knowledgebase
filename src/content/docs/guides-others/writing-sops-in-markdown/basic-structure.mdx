@@ -1,0 +1,69 @@
+---
+title: Basic Structure of a Protocol
+sidebar:
+  order: 2
+authors:
+  - timo-muehlhaus
+  - dominik-brilhaus
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { FileTree } from '@astrojs/starlight/components';
+
+<ViolaSays>
+
+What should a well-written SOP actually look like?
+
+</ViolaSays>
+
+A protocol should follow a predictable structure. This improves readability and reviewability.
+
+Example file:
+
+<FileTree>
+- DNA_Extraction.md
+</FileTree>
+
+
+## Recommended Structure
+
+```markdown
+# DNA Extraction – CTAB Method
+
+## Purpose
+Brief description of what the protocol achieves.
+
+## Materials
+- CTAB buffer
+- Proteinase K
+- Chloroform
+
+## Equipment
+- Centrifuge
+- Heat block
+
+## Procedure
+1. Grind tissue.
+2. Add buffer.
+3. Incubate at 55°C.
+
+## Expected Results
+Describe quality criteria.
+
+## Troubleshooting
+Common problems and solutions.
+````
+
+
+## Why Structure Matters
+
+Consistent structure:
+
+* Makes review easier
+* Reduces ambiguity
+* Improves reproducibility
+* Supports automated parsing later
+
+Structure is not decoration — it is part of scientific rigor.
+
+````
