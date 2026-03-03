@@ -80,7 +80,7 @@ export default defineConfig({
             {collapsed: true, label: 'Fundamentals', autogenerate: { directory: 'fundamentals' }},
             {collapsed: true, label: 'Core Concepts', autogenerate: { directory: 'core-concepts' }},
             {collapsed: true, label: 'ARC Guides', autogenerate: { directory: 'guides' }},
-            {collapsed: true, label: 'Other Guides', 
+            {collapsed: true, label: 'Git-powered Lab Organization', 
               items: [
                 {
                   label: 'Git for Biologists',
