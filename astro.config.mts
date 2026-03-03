@@ -79,7 +79,17 @@ export default defineConfig({
             'index-docs',
             {collapsed: true, label: 'Fundamentals', autogenerate: { directory: 'fundamentals' }},
             {collapsed: true, label: 'Core Concepts', autogenerate: { directory: 'core-concepts' }},
-            {collapsed: true, label: 'Guides', autogenerate: { directory: 'guides' }},
+            {collapsed: true, label: 'ARC Guides', autogenerate: { directory: 'guides' }},
+            {collapsed: true, label: 'Other Guides', 
+              items: [
+                {
+                  label: 'Git for Biologists',
+                  collapsed: true,
+                  autogenerate: { directory: 'guides-others/git-for-biologists'},
+                },
+              ]
+
+            },
             {collapsed: true, label: 'Git', autogenerate: { directory: 'git' }},
             {collapsed: true, label: 'CWL', autogenerate: { directory: 'cwl' }},
           ]
