@@ -1,0 +1,78 @@
+---
+title: Essential Markdown Elements
+sidebar:
+  order: 3
+authors:
+  - timo-muehlhaus
+  - dominik-brilhaus
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Card } from '@astrojs/starlight/components';
+
+<ViolaSays>
+
+What Markdown syntax do I really need for SOP writing?
+
+</ViolaSays>
+
+You only need a small subset of Markdown.
+
+
+## Headings
+
+```markdown
+# Main Title
+## Section
+### Subsection
+```
+
+Headings create structure and allow navigation.
+
+
+## Lists for Materials and Steps
+
+```markdown
+- CTAB buffer
+- Ethanol
+- RNase A
+```
+
+Numbered steps:
+
+```markdown
+1. Add buffer.
+2. Mix gently.
+3. Incubate 20 minutes.
+```
+
+
+<Card title="Use Imperative Voice" icon="rule">
+
+Write steps as actions:
+
+✔ Add 500 µL buffer
+✘ You should add 500 µL buffer
+
+Clear, direct instructions reduce ambiguity.
+
+</Card>
+
+
+## Emphasis
+
+```markdown
+**Critical step**
+*Optional step*
+```
+
+Use emphasis sparingly to highlight safety or critical points.
+
+
+## Inline Code for Temperatures and Parameters
+
+```markdown
+Incubate at `55°C` for `20 minutes`.
+```
+
+This improves visual clarity of parameters.

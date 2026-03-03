@@ -1,0 +1,65 @@
+---
+title: The SOP Review Workflow
+sidebar:
+  order: 2
+authors:
+  - timo-muehlhaus
+  - dominik-brilhaus
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+
+<ViolaSays>
+
+How should an SOP change move from idea to official procedure?
+
+</ViolaSays>
+
+Instead of editing the main branch directly, follow a structured workflow.
+
+
+<Card title="Proposed Workflow" icon="flow">
+
+<Steps>
+
+1. Create a branch for the modification:
+
+    ```bash
+    git checkout -b improve-dna-lysis-step
+    ```
+
+2. Edit the SOP in Markdown.
+
+3. Commit changes with explanation:
+
+    ```bash
+    git commit -m "Increase lysis time to improve yield"
+    ```
+
+4. Push the branch to the remote repository:
+
+    ```bash
+    git push
+    ```
+
+5. Open a pull request for review.
+
+</Steps>
+
+</Card>
+
+
+## Why Not Edit the Main Branch?
+
+The main branch represents validated procedures.
+
+Direct modification can:
+
+* Introduce un-reviewed errors
+* Reduce trust in official protocols
+* Create confusion about approval status
+
+Branching separates experimentation from validation.
+

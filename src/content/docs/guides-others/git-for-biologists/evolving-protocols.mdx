@@ -1,0 +1,80 @@
+---
+title: Evolving Protocols Without Losing History
+sidebar:
+  order: 4
+authors:
+  - timo-muehlhaus
+  - dominik-brilhaus
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+
+<ViolaSays>
+
+What happens when a protocol improves? Do we overwrite it?
+
+</ViolaSays>
+
+Six months later, the DNA extraction SOP improves.
+
+Original step:
+
+```
+
+Incubate at 55°C for 10 minutes.
+
+```
+
+Improved step:
+
+```
+
+Incubate at 55°C for 20 minutes.
+Add Proteinase K.
+
+```
+
+In traditional file systems, the old version disappears.
+
+In a Git-based SOP system, it becomes part of the documented evolution.
+
+
+<Card title="Record the Improvement" icon="edit">
+
+<Steps>
+
+1. Edit the SOP.
+2. Stage the change:
+
+    ```bash
+    git add DNA_Extraction.md
+    ```
+
+3. Commit with explanation:
+
+    ```bash
+    git commit -m "Increase lysis time to improve DNA yield"
+    ```
+
+</Steps>
+
+</Card>
+
+
+## Why This Changes Laboratory Culture
+
+Instead of:
+
+* Silent overwriting
+* Unclear provenance
+* Informal knowledge transfer
+
+You create:
+
+* Documented improvements
+* Transparent authorship
+* Traceable method evolution
+
+Protocols become scientific artefacts with history.

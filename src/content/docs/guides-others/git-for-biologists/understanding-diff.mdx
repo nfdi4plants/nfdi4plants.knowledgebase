@@ -1,0 +1,199 @@
+---
+title: Understanding Protocol Changes with git diff
+sidebar:
+  order: 3
+authors:
+  - timo-muehlhaus
+  - dominik-brilhaus
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Card } from '@astrojs/starlight/components';
+
+<ViolaSays>
+
+When a protocol changes, how do I see exactly what was modified?
+
+</ViolaSays>
+
+Git does not only store versions of your SOPs.  
+It allows you to compare them line by line.
+
+This comparison is called a **diff**.
+
+For laboratory governance, `git diff` is one of the most important tools — it makes methodological evolution transparent.
+
+
+## Why Diff Matters for SOP Management
+
+When a protocol improves, small textual edits may represent major scientific changes.
+
+For example:
+
+Original SOP step:
+
+```
+
+Incubate at 55°C for 10 minutes.
+
+```
+
+Improved SOP step:
+
+```
+
+Incubate at 55°C for 20 minutes.
+Add Proteinase K (0.2 mg/mL).
+
+```
+
+Without structured comparison, such changes may go unnoticed.
+
+With Git, you can inspect them precisely.
+
+
+## View Local Changes
+
+If you edited a file but have not yet committed it:
+
+```bash
+git diff
+````
+
+Git will show the exact lines that were changed.
+
+Example output:
+
+```diff
+- Incubate at 55°C for 10 minutes.
++ Incubate at 55°C for 20 minutes.
++ Add Proteinase K (0.2 mg/mL).
+```
+
+Lines beginning with:
+
+* `-` were removed
+* `+` were added
+
+This makes parameter changes immediately visible.
+
+
+<Card title="Scientific Meaning of a Diff" icon="science">
+
+A diff does not show “text editing”.
+
+It shows:
+
+* Changed incubation times
+* Added reagents
+* Modified concentrations
+* Removed safety instructions
+
+In other words:
+It shows scientific modifications.
+
+</Card>
+
+
+## Compare Two Committed Versions
+
+To compare your current version with the previous commit:
+
+```bash
+git diff HEAD~1
+```
+
+To compare two tagged releases:
+
+```bash
+git diff v1.0.0 v2.0.0
+```
+
+This allows you to track how a protocol evolved across major revisions.
+
+
+## Diff in Pull Requests
+
+On platforms like GitHub or GitLab, pull requests automatically display diffs.
+
+Reviewers do not read the entire SOP again.
+They inspect only the changes.
+
+This improves:
+
+* Review efficiency
+* Error detection
+* Transparency
+* Documentation of discussion
+
+
+## Example: Detecting a Critical Error
+
+Suppose someone accidentally changes:
+
+```
+Add 50 µL ethanol.
+```
+
+to:
+
+```
+Add 500 µL ethanol.
+```
+
+The diff would show:
+
+```diff
+- Add 50 µL ethanol.
++ Add 500 µL ethanol.
+```
+
+This makes critical parameter changes obvious before approval.
+
+
+<Card title="Best Practice" icon="rule">
+
+Always review the diff before:
+
+* Committing changes
+* Approving a pull request
+* Merging into the main branch
+* Tagging a release
+
+Diff review is quality control.
+
+</Card>
+
+
+## From Editing to Scientific Traceability
+
+Using `git diff` transforms SOP management:
+
+Instead of:
+
+* Overwriting files
+* Guessing what changed
+* Manually comparing documents
+
+You gain:
+
+* Transparent evolution
+* Line-by-line accountability
+* Clear scientific audit trails
+
+A protocol becomes a versioned, inspectable scientific artefact.
+
+
+## Summary
+
+`git diff` enables you to:
+
+* See exactly what changed
+* Review protocol modifications efficiently
+* Detect errors early
+* Document methodological evolution
+
+For laboratories managing SOPs in Git, diff is not optional.
+
+It is the foundation of responsible procedural governance.
+

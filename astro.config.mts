@@ -79,7 +79,27 @@ export default defineConfig({
             'index-docs',
             {collapsed: true, label: 'Fundamentals', autogenerate: { directory: 'fundamentals' }},
             {collapsed: true, label: 'Core Concepts', autogenerate: { directory: 'core-concepts' }},
-            {collapsed: true, label: 'Guides', autogenerate: { directory: 'guides' }},
+            {collapsed: true, label: 'ARC Guides', autogenerate: { directory: 'guides' }},
+            {collapsed: true, label: 'Git-powered Lab Organization', 
+              items: [
+                {
+                  label: 'Git for Biologists',
+                  collapsed: true,
+                  autogenerate: { directory: 'guides-others/git-for-biologists'},               
+                },
+                {
+                  label: 'Writing SOPs in Markdown',
+                  collapsed: true,
+                  autogenerate: { directory: 'guides-others/writing-sops-in-markdown'},               
+                },
+                {
+                  label: 'Reviewing and Approving SOPs in Git',
+                  collapsed: true,
+                  autogenerate: { directory: 'guides-others/reviewing-and-approving-sops'},               
+                },
+              ]
+
+            },
             {collapsed: true, label: 'Git', autogenerate: { directory: 'git' }},
             {collapsed: true, label: 'CWL', autogenerate: { directory: 'cwl' }},
           ]
