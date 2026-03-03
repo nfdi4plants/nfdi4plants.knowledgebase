@@ -85,7 +85,17 @@ export default defineConfig({
                 {
                   label: 'Git for Biologists',
                   collapsed: true,
-                  autogenerate: { directory: 'guides-others/git-for-biologists'},
+                  autogenerate: { directory: 'guides-others/git-for-biologists'},               
+                },
+                {
+                  label: 'Writing SOPs in Markdown',
+                  collapsed: true,
+                  autogenerate: { directory: 'guides-others/writing-sops-in-markdown'},               
+                },
+                {
+                  label: 'Reviewing and Approving SOPs in Git',
+                  collapsed: true,
+                  autogenerate: { directory: 'guides-others/reviewing-and-approving-sops'},               
                 },
               ]
 
