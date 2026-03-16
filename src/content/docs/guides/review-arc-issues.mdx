@@ -1,0 +1,111 @@
+---
+title: Revision of ARCs using default issues
+sidebar:
+  hidden: true
+topic: guides
+lastUpdated: 2026-03-16
+authors:
+  - dominik-brilhaus
+---
+
+import { Steps,  Code, Card } from '@astrojs/starlight/components';
+import issueCsv from '/review-arc-issues.csv?raw&url'
+
+This guide provides a template issue list for ARC revision in the DataHUB. The issue list can be imported into the DataHUB to create a default set of issues for ARC revision. The issue list is based on the typical review criteria for ARC publication in DataPLANT, but can be adapted to the specific needs of the ARC revision.
+
+- 
+    <details>
+    <summary>Check out the `review-arc-issues.csv`</summary>
+
+        <Code
+        title="review-arc-issues.csv"
+        code={issueCsv}
+        lang="csv"
+        />
+
+    </details>
+
+- <a href="/nfdi4plants.knowledgebase/review-arc-issues.csv" download="review-arc-issues.csv">Download `review-arc-issues.csv`</a>
+
+:::note
+In the long run, the revision will be automated as much as possible via the [arc-validation](/nfdi4plants.knowledgebase/arc-validation/the-arc-validation-concept/) workflows and validation packages, but for now, this issue list can be imported manually into the DataHUB. This issue-based revision may also help to engage with the ARC authors and reviewers in the DataHUB to transparently discuss the revision process and the quality criteria for ARC publication.
+:::
+
+## Importing default issues into DataHUB
+
+To import the default issue list into the DataHUB, you can use the [CSV import feature of GitLab issues](https://docs.gitlab.com/user/project/issues/csv_import/). This allows you to create multiple issues at once by uploading a CSV file with the issue details.
+
+
+### Basics about the issue CSV file
+
+- The first two columns must be `title` and `description`.
+- The first row is used as a header and is ignored. 
+- The order of the rows does not matter.
+
+### Use of quick-actions
+
+GitLab offers so-called "quick-actions" to perform certain actions on issues, e.g. to assign an issue to a user, to add a label or to mark an issue as confidential. These quick-actions can also be used in the CSV file to set up the issues in a more specific way during import. 
+
+- Each action must be on a separate line.
+- For quick actions like `/label` and `/milestone`, the label or milestone must already exist in the project.
+
+#### Labels
+
+Using the quick-action `/label` allows to categorize the issues. Instead of typical journal review terminology (e.g. "required", "recommended", "major", "minor"), this issue list uses the default GitLab labels `critical`, `suggestion` and `enhancement`. Since these labels already exist on every project (ARC) by default. This prevents having to create the labels before issue import.
+
+:::tip
+You can see all available labels via left sidebar → Manage → Labels
+:::
+
+#### Confidential
+
+Marking review issues as "confidential" via the `/confidential` quick-action simply adds a bit more comfort for the ARC authors. Issues marked as confidential are only visible to project members with at least "Reporter" permissions.
+
+## Using the review issue list during ARC revision
+
+<Steps>
+
+1. Navigate to the ARC in the DataHUB
+1. Create a new milestone to bundle the issues (left sidebar → Plan → Milestones)
+
+    **Title**
+    
+        `ARC publication revision`
+
+        :::note
+        If the title is not `ARC publication revision` the import of the here provided issue list will fail, since all issues are assigned to this milestone.
+        :::
+
+    **Description**
+    
+        ```markdown showLineNumbers=false
+
+        This milestone helps to bundle all issues (➡ [Issues](../issues)) related to the ongoing revision of your ARC for publication via DataPLANT's [ARChive](https://archive.nfdi4plants.org/).
+
+        ### ARC publication criteria
+
+        [This article](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/guides/review-arc/) in the knowledge base summarizes what DataPLANT typically expects during ARC publication.
+
+        The ➡ [Issues](../issues) are used to transparently discuss certain quality criteria for the ARCs. Feel free to get in touch with the reviewers and data stewards by responding directly via the issues.
+
+        ### Issue names and labels
+
+        - Issues starting with `DataHUB:` can easily be addressed here in the DataHUB
+        - Issues starting with `ISA Metadata:` are most easily fixed using some ARC tooling, e.g. ARCitect, Swate, ARC commander
+        - Issues labeled as `critical` **must** be addressed for acceptance
+        - Issues labeled as `suggestion` **should** be addressed for acceptance – this also depends on the nature of the ARC
+        - Issues labeled as `enhancement` add a nice touch to the ARC, e.g. for (human) findability
+        ```
+    
+1. Import issues 
+
+    - left sidebar → Plan → Issues
+    - three-dots menu in the top-right corner → Import CSV
+    - Select the `review-arc-issues.csv` file and import it
+    - Wait a short moment. You will receive a notification once the import is finished. The issues should now be visible in the issue list and assigned to the milestone "ARC publication revision".
+
+</Steps>
+
+:::tip
+In case there's an issue with the import or you want to bulk close the imported issues, you can use the `bulk edit` feature in the top-right of the issue menu. This allows you to select multiple issues and perform actions on them. For instance, to close them: Select the issues, change the status to "Close", select "Update selected".
+:::
