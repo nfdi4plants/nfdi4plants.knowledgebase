@@ -44,16 +44,17 @@ To import the default issue list into the DataHUB, you can use the [CSV import f
 
 ### Use of quick-actions
 
+GitLab offers so-called "quick-actions" to perform certain actions on issues, e.g. to assign an issue to a user, to add a label or to mark an issue as confidential. These quick-actions can also be used in the CSV file to set up the issues in a more specific way during import. 
+
 - Each action must be on a separate line.
 - For quick actions like `/label` and `/milestone`, the label or milestone must already exist in the project.
-- The user you assign the issue to must be a member of the project.
 
 #### Labels
 
 Using the quick-action `/label` allows to categorize the issues. Instead of typical journal review terminology (e.g. "required", "recommended", "major", "minor"), this issue list uses the default GitLab labels `critical`, `suggestion` and `enhancement`. Since these labels already exist on every project (ARC) by default. This prevents having to create the labels before issue import.
 
 :::tip
-You can see all available labels via left sidebar -> Manage -> Labels
+You can see all available labels via left sidebar → Manage → Labels
 :::
 
 #### Confidential
@@ -65,7 +66,7 @@ Marking review issues as "confidential" via the `/confidential` quick-action sim
 <Steps>
 
 1. Navigate to the ARC in the DataHUB
-1. Create a new milestone to bundle the issues (left sidebar -> Plan -> Milestones)
+1. Create a new milestone to bundle the issues (left sidebar → Plan → Milestones)
 
     **Title**
     
@@ -79,28 +80,32 @@ Marking review issues as "confidential" via the `/confidential` quick-action sim
     
         ```markdown showLineNumbers=false
 
-        This milestone helps to bundle all issues (➡ [Issues](../issues)) related to the ongoing revision of your ARC for publication via DataPLANT's [ARChive](https://archive.nfdi4plants.org/).  
+        This milestone helps to bundle all issues (➡ [Issues](../issues)) related to the ongoing revision of your ARC for publication via DataPLANT's [ARChive](https://archive.nfdi4plants.org/).
 
         ### ARC publication criteria
 
         [This article](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/guides/review-arc/) in the knowledge base summarizes what DataPLANT typically expects during ARC publication.
 
         The ➡ [Issues](../issues) are used to transparently discuss certain quality criteria for the ARCs. Feel free to get in touch with the reviewers and data stewards by responding directly via the issues.
-        
+
         ### Issue names and labels
-        
+
         - Issues starting with `DataHUB:` can easily be addressed here in the DataHUB
-        - Issues starting with `ISA Metadata:` are most easily fixed using some ARC tooling, e.g. ARCitect, Swate, ARC commander  
+        - Issues starting with `ISA Metadata:` are most easily fixed using some ARC tooling, e.g. ARCitect, Swate, ARC commander
         - Issues labeled as `critical` **must** be addressed for acceptance
-        - Issues labeled as `suggestion` **should** be addressed for acceptance – this also depends on the nature of the ARC.
-        - Issues labeled as `enhancement` add a nice touch to the ARC, e.g. for (human) findability.  
+        - Issues labeled as `suggestion` **should** be addressed for acceptance – this also depends on the nature of the ARC
+        - Issues labeled as `enhancement` add a nice touch to the ARC, e.g. for (human) findability
         ```
     
-1. Import issues
+1. Import issues 
 
+    - left sidebar → Plan → Issues
+    - three-dots menu in the top-right corner → Import CSV
+    - Select the `review-arc-issues.csv` file and import it
+    - Wait a short moment. You will receive a notification once the import is finished. The issues should now be visible in the issue list and assigned to the milestone "ARC publication revision".
 
 </Steps>
 
-
-## Bulk delete
-
+:::tip
+In case there's an issue with the import or you want to bulk close the imported issues, you can use the `bulk edit` feature in the top-right of the issue menu. This allows you to select multiple issues and perform actions on them. For instance, to close them: Select the issues, change the status to "Close", select "Update selected".
+:::

@@ -1,8 +1,4 @@
 title,description,milestone
-"Test Enhancement Issue","/label ~enhancement","ARC publication revision"
-"Test Suggestion Issue","/label ~suggestion ","ARC publication revision"
-"Test Critical Issue","/confidential
-/label ~critical ","ARC publication revision"
 "DataHUB: Move ARC into non-personal namespace","/confidential
 /label ~critical
   In order to guarantee that the ARC can (in the future) be accessed and maintained by others, please transfer it to a group namespace.
