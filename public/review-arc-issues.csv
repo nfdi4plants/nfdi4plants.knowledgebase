@@ -1,13 +1,13 @@
 title,description,milestone
-"Test Enhancement Issue","/label ~enhancement","DataPLANT Revision"
-"Test Suggestion Issue","/label ~suggestion ","DataPLANT Revision"
+"Test Enhancement Issue","/label ~enhancement","ARC publication revision"
+"Test Suggestion Issue","/label ~suggestion ","ARC publication revision"
 "Test Critical Issue","/confidential
-/label ~critical ","DataPLANT Revision"
+/label ~critical ","ARC publication revision"
 "DataHUB: Move ARC into non-personal namespace","/confidential
 /label ~critical
   In order to guarantee that the ARC can (in the future) be accessed and maintained by others, please transfer it to a group namespace.
     see https://nfdi4plants.org/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-arc-settings/
-  ","DataPLANT Revision"
+  ","ARC publication revision"
 "After publication: Cite ARC and DataPLANT and make ARC public","/confidential
 /label ~critical
 In your journal manuscript, please
@@ -15,23 +15,23 @@ In your journal manuscript, please
 - [ ] Cite the DataPLANT publication
 see https://nfdi4plants.org/articles/citing/
 Once the manuscript is published, please
-- [ ] Set your ARC `public` in the DataHUB","DataPLANT Revision"
+- [ ] Set your ARC `public` in the DataHUB","ARC publication revision"
 "DataHUB: Add icon and description","/confidential
 /label ~enhancement
   Adding an icon (project avatar) and a description to your ARC makes it more attractive and easier to find for others.
   For instance, as icon you can use a typical image from your investigation, e.g. a plant or a plot; the description could be your manuscript title.
   see https://nfdi4plants.org/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-arc-settings/
-","DataPLANT Revision"
+","ARC publication revision"
 "DataHUB: Add a LICENSE","/confidential
 /label ~critical 
   Please add a LICENSE file to your ARC. This is important for others to know how they can use your data and to ensure that your data can be reused by others. 
   see https://nfdi4plants.org/nfdi4plants.knowledgebase/datahub/arc-features/datahub-arc-license/
-  ","DataPLANT Revision"
+  ","ARC publication revision"
 "DataHUB: Improve README","/confidential
 /label ~suggestion
   The README file is the first thing that users see when they access your ARC. It should give a human-readable overview of the content of the ARC.
   There's a tool to automatically generate a nicely structured README from the ISA metadata as a basis, see https://nfdi4plants.org/nfdi4plants.knowledgebase/resources/arc-summary/
-  ","DataPLANT Revision"
+  ","ARC publication revision"
 "ISA Metadata: Double-check the use of annotation principles","/confidential
 /label ~critical
   In annotation tables, make sure to follow the [annotation principles](https://nfdi4plants.org/nfdi4plants.knowledgebase/core-concepts/isa-annotation-principles/), e.g.
@@ -40,17 +40,17 @@ Once the manuscript is published, please
   - `Characteristic` columns describe inherent properties of samples or material
   - `Parameter` columns describe steps in your experimental workflow
   - `Factor` columns represent independent variables that are varied within the study design
-  ","DataPLANT Revision"
+  ","ARC publication revision"
 "ISA Metadata: Link all dataset files in an annotation table","/confidential
 /label ~critical
 If you have dataset files that are not linked in any annotation table, please add an annotation table that links those files via an `Output [Data]` column.
 Only those files are listed as part of the DOI registration, so missing annotation tables can lead to missing dataset files in the DOI registration.
 see 
-","DataPLANT Revision"
+","ARC publication revision"
 "ISA Metadata: Double-check sample–to-dataset connections and protocol references","/confidential
 /label ~critical
   Make sure that all assays are linked to a study and that all datasets are linked to an assay. Also check that all protocols are referenced in the annotation tables.
-  ","DataPLANT Revision"
+  ","ARC publication revision"
 "ISA Metadata: Improve assay top-level metadata","/confidential
 /label ~suggestion
   Some assays contain no or misleading assay 'top-level metadata'.
@@ -60,4 +60,4 @@ see
   - Technology Platform
   - Performers
   This metadata helps to find and understand the assay. If an assay describes one specific measurement, filling out that data should be easy.
-  ","DataPLANT Revision"
+  ","ARC publication revision"
