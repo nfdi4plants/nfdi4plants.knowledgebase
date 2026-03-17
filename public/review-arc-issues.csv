@@ -11,14 +11,14 @@ Once the manuscript is published, please
 "DataHUB: Move ARC into non-personal namespace","/confidential
 /label ~critical
   In order to guarantee that the ARC can (in the future) be accessed and maintained by others, please transfer it to a group namespace.
-    - see https://nfdi4plants.org/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-arc-settings/
-    - or directly go to [➡ Advanced Settings](../../../edit#js-project-advanced-settings)"
+  - see https://nfdi4plants.org/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-arc-settings/
+  - or directly go to [➡ Advanced Settings](../../../edit#js-project-advanced-settings) and scroll down to 'Transfer project'"
 "DataHUB: Add icon and description","/confidential
 /label ~enhancement
   Adding an icon (project avatar) and a description to your ARC makes it more attractive and easier to find for others.
   For instance, as icon you can use a typical image from your investigation, e.g. a plant or a plot; the description could be your manuscript title.
   - see https://nfdi4plants.org/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-arc-settings/
-  - or directly go to [➡ ARC Settings](../../../edit#js-project-advanced-settings)"
+  - or directly go to [➡ ARC Settings](../../../edit)"
 "DataHUB: Add a LICENSE","/confidential
 /label ~critical 
   Please add a LICENSE file to your ARC. This is important for others to know how they can use your data and to ensure that your data can be reused by others. 
