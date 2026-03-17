@@ -39,6 +39,7 @@
     "typescript": "^5.9.3"
   },
   "devDependencies": {
+    "@types/papaparse": "^5.5.2",
     "astro": "^5.16.15"
   }
 }
