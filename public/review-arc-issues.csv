@@ -40,7 +40,7 @@ As a rule of thumb, the usage under 'Repository' storage should be less than 500
 - [ ] the title is clear – this could be the title of your manuscript
 - [ ] the description is clear and informative – this could be the abstract of your manuscript
 - [ ] all people who contributed to the project are listed in the investigation contacts – typically this includes all manuscript authors
-"
+- [ ] if a publication (e.g. a pre-print) is associated with the investigation, it should be listed in the investigation publications"
 "ISA Metadata: Double-check the use of annotation principles","/confidential
 /label ~critical
   In annotation tables, make sure to follow the [annotation principles](https://nfdi4plants.org/nfdi4plants.knowledgebase/core-concepts/isa-annotation-principles/), e.g.
@@ -57,14 +57,33 @@ As a rule of thumb, the usage under 'Repository' storage should be less than 500
   - [ ] dataset files are linked in annotation tables as `Output [Data]`
     - Only those files are listed as part of the DOI registration, so missing annotation tables can lead to missing dataset files in the DOI registration.
   - [ ] the annotation tables themselves provide necessary metadata (columns) or 'link back' to preceding annotation tables (of the same or other studies or assays) via `Input [Sample Name]` or `Input [Source Name]` columns
-  - [ ] protocol steps can be linked to assay or study annotation tables via `ProtocolUri`or `Protocol REF` columns, respectively.
+  - [ ] free-text protocols can be linked to assay or study annotation tables via `ProtocolUri`or `Protocol REF` columns, respectively.
     - While this helps to provide a human-readable description of the experimental workflow, the most important metadata should be contained in the annotation tables themselves to ensure that the ARC is comprehensible and reusable, and machine-readable  
 See also https://nfdi4plants.org/nfdi4plants.knowledgebase/core-concepts/inputs-outputs"
 "ISA Metadata: Double-check assay top-level metadata","/confidential
 /label ~suggestion
-  All assays should contain 'top-level metadata' This metadata helps to find and understand the assay. If an assay describes one specific measurement, filling out that data should be easy.
+  All assays should contain 'top-level metadata'. This helps to find and understand the assay.
   - [ ] Short and concise title and description
   - [ ] Measurement Type
   - [ ] Technology Type
   - [ ] Technology Platform
   - [ ] Performers"
+"Annotation of data analysis","/confidential
+/label ~suggestion
+  Description of data analysis is an important part of the ARC, as it helps others to understand how the data was processed and analyzed.
+  This basically follows the same logic as annotation of experimental data: one can annotate the data analysis steps via annotation tables, link a free-text description ('protocol') or a script (e.g. an R or python script or notebook) to define what data analysis was done on which `Input [Data]` and generating which `Output [Data]`.
+  For details on different options, see https://nfdi4plants.org/nfdi4plants.knowledgebase/start-here/data-analysis/.
+  
+  Scripts or notebooks used for data processing and analysis, should be (re)usable in the ARC, e.g.
+  - [ ] define necessary dependencies (e.g. which packages to install)
+  - [ ] remove absolute paths
+  - [ ] adapt relative paths to the structure of the ARC, referencing suitable input and output paths in the ARC
+
+  More advanced users may want to annotate the data analysis steps in more detail, e.g. using the CWL-based workflows & runs logic to define the data analysis workflow and its dependencies in a machine-readable way.
+  For details, see https://nfdi4plants.org/nfdi4plants.knowledgebase/cwl/
+
+  Workflows & runs should 
+  - [ ] contain minimal metadata, e.g. short and concise title and description, version  
+  - [ ] reference a reusable container (e.g. a Docker image or local Docker File) that contains all necessary dependencies for the workflow
+  - [ ] reference the input and output dataset files in the ARC, e.g. via `Input [Data]` and `Output [Data]` columns in annotation tables
+  "
