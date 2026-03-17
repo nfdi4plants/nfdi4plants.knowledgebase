@@ -1,0 +1,39 @@
+---
+import Papa from 'papaparse'
+
+const { csv } = Astro.props
+
+const { data } = Papa.parse(csv.trim(), {
+  header: true,
+  skipEmptyLines: true
+})
+
+const headers = data.length ? Object.keys(data[0]) : []
+---
+
+<table>
+  <thead>
+    <tr>
+      {headers.map((h) => <th>{h}</th>)}
+    </tr>
+  </thead>
+  <tbody>
+    {data.map((row) => (
+      <tr>
+        {headers.map((h) => <td>{row[h]}</td>)}
+      </tr>
+    ))}
+  </tbody>
+</table>
+
+<style>
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+  td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+</style>
