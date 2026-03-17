@@ -6,24 +6,41 @@ In your journal manuscript, please
 - [ ] Cite the DataPLANT publication
 see https://nfdi4plants.org/articles/citing/
 Once the manuscript is published, please
-- [ ] Set your ARC `public` in the DataHUB"
+- [ ] Set your ARC to `public` in the DataHUB via Settings → General → Visibility, project features, permissions
+  - or directly go to [➡ Visibility Settings](../../../edit#js-shared-permissions)"
 "DataHUB: Move ARC into non-personal namespace","/confidential
 /label ~critical
   In order to guarantee that the ARC can (in the future) be accessed and maintained by others, please transfer it to a group namespace.
-    see https://nfdi4plants.org/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-arc-settings/"
+  - see https://nfdi4plants.org/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-arc-settings/
+  - or directly go to [➡ Advanced Settings](../../../edit#js-project-advanced-settings) and scroll down to 'Transfer project'"
 "DataHUB: Add icon and description","/confidential
 /label ~enhancement
   Adding an icon (project avatar) and a description to your ARC makes it more attractive and easier to find for others.
   For instance, as icon you can use a typical image from your investigation, e.g. a plant or a plot; the description could be your manuscript title.
-  see https://nfdi4plants.org/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-arc-settings/"
+  - see https://nfdi4plants.org/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-arc-settings/
+  - or directly go to [➡ ARC Settings](../../../edit)"
 "DataHUB: Add a LICENSE","/confidential
 /label ~critical 
   Please add a LICENSE file to your ARC. This is important for others to know how they can use your data and to ensure that your data can be reused by others. 
-  see https://nfdi4plants.org/nfdi4plants.knowledgebase/datahub/arc-features/datahub-arc-license/"
+  - see https://nfdi4plants.org/nfdi4plants.knowledgebase/datahub/arc-features/datahub-arc-license/
+  - or directly [➡ add a LICENSE](../../new/main?commit_message=Add+LICENSE&file_name=LICENSE)"
 "DataHUB: Improve README","/confidential
 /label ~suggestion
-  The README file is the first thing that users see when they access your ARC. It should give a human-readable overview of the content of the ARC.
-  There's a tool to automatically generate a nicely structured README from the ISA metadata as a basis, see https://nfdi4plants.org/nfdi4plants.knowledgebase/resources/arc-summary/"
+  The README file is the first thing that other users see when they access your ARC. It should give a human-readable overview of the content of the ARC.
+  DataPLANT provides a tool to automatically generate a nicely structured README from the ISA metadata as a basis, see https://nfdi4plants.org/nfdi4plants.knowledgebase/resources/arc-summary/"
+"DataHUB: Check usage quota","/confidential
+/label ~critical
+Please check the `Project Storage` of your ARC. You can find this on the right side of the ARC's page. Most of the storage space should be under 'LFS'.
+As a rule of thumb, the usage under 'Repository' storage should be less than 500 MB. To see the project storage, one must at least have `maintainer` permission to the ARC.
+- directly go to [➡ usage quota](../../usage_quotas)
+"
+"ISA Metadata: Double-check the investigation metadata","/confidential
+/label ~critical
+- [ ] the investigation identifier should not contain special characters
+- [ ] the title is clear – this could be the title of your manuscript
+- [ ] the description is clear and informative – this could be the abstract of your manuscript
+- [ ] all people who contributed to the project are listed in the investigation contacts – typically this includes all manuscript authors
+- [ ] if a publication (e.g. a pre-print) is associated with the investigation, it should be listed in the investigation publications"
 "ISA Metadata: Double-check the use of annotation principles","/confidential
 /label ~critical
   In annotation tables, make sure to follow the [annotation principles](https://nfdi4plants.org/nfdi4plants.knowledgebase/core-concepts/isa-annotation-principles/), e.g.
@@ -32,20 +49,41 @@ Once the manuscript is published, please
   - `Characteristic` columns describe inherent properties of samples or material
   - `Parameter` columns describe steps in your experimental workflow
   - `Factor` columns represent independent variables that are varied within the study design"
-"ISA Metadata: Link all dataset files in an annotation table","/confidential
-/label ~critical
-If you have dataset files that are not linked in any annotation table, please add an annotation table that links those files via an `Output [Data]` column.
-Only those files are listed as part of the DOI registration, so missing annotation tables can lead to missing dataset files in the DOI registration.
-see"
 "ISA Metadata: Double-check sample–to-dataset connections and protocol references","/confidential
 /label ~critical
-  Make sure that all assays are linked to a study and that all datasets are linked to an assay. Also check that all protocols are referenced in the annotation tables."
-"ISA Metadata: Improve assay top-level metadata","/confidential
+  One main goal of the ARC is to annotate raw, measurement dataset files with the necessary metadata to make them comprehensible and reusable.
+  To achieve this, 
+  - [ ] dataset files are added to assay `dataset` folders
+  - [ ] dataset files are linked in annotation tables as `Output [Data]`
+    - Only those files are listed as part of the DOI registration, so missing annotation tables can lead to missing dataset files in the DOI registration.
+  - [ ] the annotation tables themselves provide necessary metadata (columns) or 'link back' to preceding annotation tables (of the same or other studies or assays) via `Input [Sample Name]` or `Input [Source Name]` columns
+  - [ ] free-text protocols can be linked to assay or study annotation tables via `ProtocolUri`or `Protocol REF` columns, respectively.
+    - While this helps to provide a human-readable description of the experimental workflow, the most important metadata should be contained in the annotation tables themselves to ensure that the ARC is comprehensible and reusable, and machine-readable  
+See also https://nfdi4plants.org/nfdi4plants.knowledgebase/core-concepts/inputs-outputs"
+"ISA Metadata: Double-check assay top-level metadata","/confidential
 /label ~suggestion
-  Some assays contain no or misleading assay 'top-level metadata'.
-  - Title and description
-  - Measurement Type
-  - Technology Type
-  - Technology Platform
-  - Performers
-  This metadata helps to find and understand the assay. If an assay describes one specific measurement, filling out that data should be easy."
+  All assays should contain 'top-level metadata'. This helps to find and understand the assay.
+  - [ ] Short and concise title and description
+  - [ ] Measurement Type
+  - [ ] Technology Type
+  - [ ] Technology Platform
+  - [ ] Performers"
+"Annotation of data analysis","/confidential
+/label ~suggestion
+  Description of data analysis is an important part of the ARC, as it helps others to understand how the data was processed and analyzed.
+  This basically follows the same logic as annotation of experimental data: one can annotate the data analysis steps via annotation tables, link a free-text description ('protocol') or a script (e.g. an R or python script or notebook) to define what data analysis was done on which `Input [Data]` and generating which `Output [Data]`.
+  For details on different options, see https://nfdi4plants.org/nfdi4plants.knowledgebase/start-here/data-analysis/.
+  
+  Scripts or notebooks used for data processing and analysis, should be (re)usable in the ARC, e.g.
+  - [ ] define necessary dependencies (e.g. which packages to install)
+  - [ ] remove absolute paths
+  - [ ] adapt relative paths to the structure of the ARC, referencing suitable input and output paths in the ARC
+
+  More advanced users may want to annotate the data analysis steps in more detail, e.g. using the CWL-based workflows & runs logic to define the data analysis workflow and its dependencies in a machine-readable way.
+  For details, see https://nfdi4plants.org/nfdi4plants.knowledgebase/cwl/
+
+  Workflows & runs should 
+  - [ ] contain minimal metadata, e.g. short and concise title and description, version  
+  - [ ] reference a reusable container (e.g. a Docker image or local Docker File) that contains all necessary dependencies for the workflow
+  - [ ] reference the input and output dataset files in the ARC, e.g. via `Input [Data]` and `Output [Data]` columns in annotation tables
+  "
