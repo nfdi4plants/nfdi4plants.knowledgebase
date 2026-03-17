@@ -6,7 +6,7 @@ In your journal manuscript, please
 - [ ] Cite the DataPLANT publication
 see https://nfdi4plants.org/articles/citing/
 Once the manuscript is published, please
-- [ ] Set your ARC `public` in the DataHUB"
+- [ ] Set your ARC to `public` in the DataHUB via Settings → General → Visibility, project features, permissions"
 "DataHUB: Move ARC into non-personal namespace","/confidential
 /label ~critical
   In order to guarantee that the ARC can (in the future) be accessed and maintained by others, please transfer it to a group namespace.
@@ -24,6 +24,17 @@ Once the manuscript is published, please
 /label ~suggestion
   The README file is the first thing that users see when they access your ARC. It should give a human-readable overview of the content of the ARC.
   There's a tool to automatically generate a nicely structured README from the ISA metadata as a basis, see https://nfdi4plants.org/nfdi4plants.knowledgebase/resources/arc-summary/"
+"DataHUB: Project Storage","/confidential
+/label ~critical
+Please check the `Project Storage` of your ARC. You can find this on the right side of the ARC's page. Is most of the storage space 'LFS' storage?
+As a rule of thumb, the usage under “Repository” storage should be less than 500 MB."
+"ISA Metadata: Double-check the investigation metadata","/confidential
+/label ~critical
+- [ ] 
+
+
+
+"
 "ISA Metadata: Double-check the use of annotation principles","/confidential
 /label ~critical
   In annotation tables, make sure to follow the [annotation principles](https://nfdi4plants.org/nfdi4plants.knowledgebase/core-concepts/isa-annotation-principles/), e.g.
