@@ -3,7 +3,7 @@ title: Revision of ARCs using default issues
 sidebar:
   hidden: true
 topic: guides
-lastUpdated: 2026-03-16
+lastUpdated: 2026-03-17
 authors:
   - dominik-brilhaus
 ---
@@ -40,7 +40,7 @@ To import the default issue list into the DataHUB, you can use the [CSV import f
 
 - The first two columns must be `title` and `description`.
 - The first row is used as a header and is ignored. 
-- The order of the rows does not matter.
+- The order of the rows does not matter – by default the issues are sorted alphabetically in the DataHUB.
 
 ### Use of quick-actions
 
@@ -65,20 +65,27 @@ Marking review issues as "confidential" via the `/confidential` quick-action sim
 
 <Steps>
 
-1. Navigate to the ARC in the DataHUB
-1. Create a new milestone to bundle the issues (left sidebar → Plan → Milestones)
+1. Navigate to the ARC to be revised in the DataHUB
+1. Open the issue menu: left sidebar → Plan → Issues
+1. Via the three-dots menu in the top-right corner use `Import CSV`
+1. Select the `review-arc-issues.csv` file and import it
+1. Wait a short moment. You receive an email notification once the import finished (or failed due to parsing errors).
+
+</Steps>
+
+## (Optional) Bundle issues in a milestone
+
+<Steps>
+
+1. Create a new milestone (left sidebar → Plan → Milestones), e.g. with the following title and description:
 
     **Title**
     
         `ARC publication revision`
 
-        :::note
-        If the title is not `ARC publication revision` the import of the here provided issue list will fail, since all issues are assigned to this milestone.
-        :::
-
     **Description**
     
-        ```markdown showLineNumbers=false
+        ```markdown showLineNumbers=false nowrap=true
 
         This milestone helps to bundle all issues (➡ [Issues](../issues)) related to the ongoing revision of your ARC for publication via DataPLANT's [ARChive](https://archive.nfdi4plants.org/).
 
@@ -96,16 +103,14 @@ Marking review issues as "confidential" via the `/confidential` quick-action sim
         - Issues labeled as `suggestion` **should** be addressed for acceptance – this also depends on the nature of the ARC
         - Issues labeled as `enhancement` add a nice touch to the ARC, e.g. for (human) findability
         ```
-    
-1. Import issues 
 
-    - left sidebar → Plan → Issues
-    - three-dots menu in the top-right corner → Import CSV
-    - Select the `review-arc-issues.csv` file and import it
-    - Wait a short moment. You will receive a notification once the import is finished. The issues should now be visible in the issue list and assigned to the milestone "ARC publication revision".
+1. Open the issue menu: left sidebar → Plan → Issues
+1. Click on the "Bulk edit" button in the top-right corner to select some or all issues
+1. In the right sidebar, select the "Milestone" dropdown and choose the milestone you just created
+1. Click on "Update selected" to apply the milestone to the selected issues
 
 </Steps>
 
 :::tip
-In case there's an issue with the import or you want to bulk close the imported issues, you can use the `bulk edit` feature in the top-right of the issue menu. This allows you to select multiple issues and perform actions on them. For instance, to close them: Select the issues, change the status to "Close", select "Update selected".
+In case there's an issue with the import or you want to immediately close (some of) the imported issues, you can also use the `bulk edit` feature. Select the relevant issues, change the status to "Close", select "Update selected".
 :::
