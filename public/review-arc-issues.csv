@@ -49,8 +49,13 @@ As a rule of thumb, the usage under 'Repository' storage should be less than 500
   - `Characteristic` columns describe inherent properties of samples or material
   - `Parameter` columns describe steps in your experimental workflow
   - `Factor` columns represent independent variables that are varied within the study design"
-"ISA Metadata: Double-check sample–to-dataset connections and protocol references","/confidential
+"ISA Metadata: Double-check annotation tables","/confidential
 /label ~critical
+
+
+  Double-check sample–to-dataset connections and protocol references
+
+
   One main goal of the ARC is to annotate raw, measurement dataset files with the necessary metadata to make them comprehensible and reusable.
   To achieve this, 
   - [ ] dataset files are added to assay `dataset` folders
@@ -68,6 +73,21 @@ See also https://nfdi4plants.org/nfdi4plants.knowledgebase/core-concepts/inputs-
   - [ ] Technology Type
   - [ ] Technology Platform
   - [ ] Performers"
+"Data from external sources or publications","/confidential
+/label ~suggestion
+  If you have data from external sources that are relevant to your study (e.g. from a database, an online tool, or a publication's supplement), you can add them to your ARC.
+  As described [here](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/guides/arc-adding-external-data/), you can simply add a **new study** for such 'external data'.  
+  - [ ] add the data files to the `resources` folder of the study
+  - [ ] add publications to relevant external data sources in the study 'top-level metadata'
+  - [ ] add a protocol to describe, how to retrieve – e.g. create or download – the data
+  "
+"ISA Metadata: Double-check study top-level metadata","/confidential
+/label ~suggestion
+  All studies should contain 'top-level metadata'. This helps to find and understand the study.
+  - [ ] Short and concise title and description
+  - [ ] Add contacts to show who contributed to that specific study or experiment
+  - [ ] Add publications to relevant external data sources
+  "
 "Annotation of data analysis","/confidential
 /label ~suggestion
   Description of data analysis is an important part of the ARC, as it helps others to understand how the data was processed and analyzed.
