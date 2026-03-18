@@ -113,5 +113,20 @@ See also https://nfdi4plants.org/nfdi4plants.knowledgebase/core-concepts/inputs-
   While creating a journal manuscript, you may have aggregated and submitted 'supplemental data' to the journal. 
   These data are often a collection of different files, e.g. raw data files, processed data files, scripts, and documentation.
   An ARC provides a suitable location for any of these files. 
-  - [ ] add supplemental datasets to make them accessible and reusable for others and show how they relate to the overall ARC
+  - [ ] add supplemental datasets to make them accessible and reusable for others and show how they relate to the overall ARC"
+"Add or reference all relevant raw data","/confidential
+/label ~critical
+  The ARC should contain all raw data files relevant for the investigation.
+  Raw data is considered the 'outcome' of an assay, e.g. a measurement.
+  
+  Typically, one would add the data files directly to an assay, e.g.
+  - [ ] add a new assay for the measurement that generated the raw data
+  - [ ] add all relevant raw data files to the assay's `dataset` folder
+  - [ ] provide clear metadata of the data in the annotation tables
+
+  Some journals require that raw data is deposited in defined repositories (e.g. at EBI or NCBI).
+  In this case, the raw data files can be linked in an assay via annotation tables.
+  - [ ] for every dataset file add a URL to the annotation table under the `Output [Data]` column
+  - [ ] make sure, the URL is stable and points to the correct file in the repository
+  - [ ] provide clear metadata annotation of the data files via the annotation tables
 "
