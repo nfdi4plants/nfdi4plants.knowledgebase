@@ -7,7 +7,7 @@ In your journal manuscript, please
 see https://nfdi4plants.org/articles/citing/
 Once the manuscript is published, please
 - [ ] Set your ARC to `public` in the DataHUB via Settings → General → Visibility, project features, permissions
-  - or directly go to [➡ Visibility Settings](../../../edit#js-shared-permissions)"
+  - directly go to [➡ Visibility Settings](../../../edit#js-shared-permissions)"
 "DataHUB: Move ARC into non-personal namespace","/confidential
 /label ~critical
   In order to guarantee that the ARC can (in the future) be accessed and maintained by others, please transfer it to a group namespace.
@@ -23,7 +23,7 @@ Once the manuscript is published, please
 /label ~critical 
   Please add a LICENSE file to your ARC. This is important for others to know how they can use your data and to ensure that your data can be reused by others. 
   - see https://nfdi4plants.org/nfdi4plants.knowledgebase/datahub/arc-features/datahub-arc-license/
-  - or directly [➡ add a LICENSE](../../new/main?commit_message=Add+LICENSE&file_name=LICENSE)"
+  - or directly [➡ add a LICENSE here](../../new/main?commit_message=Add+LICENSE&file_name=LICENSE)"
 "DataHUB: Improve README","/confidential
 /label ~suggestion
   The README file is the first thing that other users see when they access your ARC. It should give a human-readable overview of the content of the ARC.
@@ -49,9 +49,15 @@ As a rule of thumb, the usage under 'Repository' storage should be less than 500
   - `Characteristic` columns describe inherent properties of samples or material
   - `Parameter` columns describe steps in your experimental workflow
   - `Factor` columns represent independent variables that are varied within the study design"
-"ISA Metadata: Double-check sample–to-dataset connections and protocol references","/confidential
+"ISA Metadata: Add annotation tables to every study and assay","/confidential
 /label ~critical
+
+  Every study and assay must have an annotation table. This is important to ensure that the ARC is comprehensible and reusable, and machine-readable.
+  A minimal annotation table should contain at least an `Input` and an `Output` column.
   One main goal of the ARC is to annotate raw, measurement dataset files with the necessary metadata to make them comprehensible and reusable.
+
+  So, please double-check the sample–to-dataset connections and protocol references.
+
   To achieve this, 
   - [ ] dataset files are added to assay `dataset` folders
   - [ ] dataset files are linked in annotation tables as `Output [Data]`
@@ -68,6 +74,21 @@ See also https://nfdi4plants.org/nfdi4plants.knowledgebase/core-concepts/inputs-
   - [ ] Technology Type
   - [ ] Technology Platform
   - [ ] Performers"
+"Data from external sources or publications","/confidential
+/label ~suggestion
+  If you have data from external sources that are relevant to your study (e.g. from a database, an online tool, or a publication's supplement), you can add them to your ARC.
+  As described [here](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/guides/arc-adding-external-data/), you can simply add a **new study** for such 'external data'.  
+  - [ ] add the data files to the `resources` folder of the study
+  - [ ] add publications to relevant external data sources in the study 'top-level metadata'
+  - [ ] add a protocol to describe, how to retrieve – e.g. create or download – the data
+  "
+"ISA Metadata: Double-check study top-level metadata","/confidential
+/label ~suggestion
+  All studies should contain 'top-level metadata'. This helps to find and understand the study.
+  - [ ] Short and concise title and description
+  - [ ] Add contacts to show who contributed to that specific study or experiment
+  - [ ] Add publications to relevant external data sources
+  "
 "Annotation of data analysis","/confidential
 /label ~suggestion
   Description of data analysis is an important part of the ARC, as it helps others to understand how the data was processed and analyzed.
@@ -87,3 +108,25 @@ See also https://nfdi4plants.org/nfdi4plants.knowledgebase/core-concepts/inputs-
   - [ ] reference a reusable container (e.g. a Docker image or local Docker File) that contains all necessary dependencies for the workflow
   - [ ] reference the input and output dataset files in the ARC, e.g. via `Input [Data]` and `Output [Data]` columns in annotation tables
   "
+"Add supplemental data","/confidential
+/label ~enhancement
+  While creating a journal manuscript, you may have aggregated and submitted 'supplemental data' to the journal. 
+  These data are often a collection of different files, e.g. raw data files, processed data files, scripts, and documentation.
+  An ARC provides a suitable location for any of these files. 
+  - [ ] add supplemental datasets to make them accessible and reusable for others and show how they relate to the overall ARC"
+"Add or reference all relevant raw data","/confidential
+/label ~critical
+  The ARC should contain all raw data files relevant for the investigation.
+  Raw data is considered the 'outcome' of an assay, e.g. a measurement.
+  
+  Typically, one would add the data files directly to an assay, e.g.
+  - [ ] add a new assay for the measurement that generated the raw data
+  - [ ] add all relevant raw data files to the assay's `dataset` folder
+  - [ ] provide clear metadata of the data in the annotation tables
+
+  Some journals require that raw data is deposited in defined repositories (e.g. at EBI or NCBI).
+  In this case, the raw data files can be linked in an assay via annotation tables.
+  - [ ] for every dataset file add a URL to the annotation table under the `Output [Data]` column
+  - [ ] make sure, the URL is stable and points to the correct file in the repository
+  - [ ] provide clear metadata annotation of the data files via the annotation tables
+"
