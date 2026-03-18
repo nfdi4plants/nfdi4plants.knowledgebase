@@ -1,0 +1,58 @@
+---
+title: Upload ARC
+sidebar:
+  order: 8
+lastUpdated: 2026-02-26
+authors:
+  - sabrina-zander
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+import QIcon from "@components/QIcon.astro"
+
+<ViolaSays>
+  Now I have created my local ARC, but how can I share it with my colleagues?
+</ViolaSays>
+
+ARCs are the basis of the collaborative research platform and can be seamlessly shared between researchers by using the PLANTDataHUB. 
+
+![](@images/start-here/collaboration-plantdatahub.svg)
+
+## Upload your ARC to the PLANTDataHUB
+
+<Card icon="pen" title="ARCitect">
+    <Steps>
+    1. From the sidebar, navigate to the <QIcon name="published_with_changes" /> `DataHUB Sync` menu.
+    2. In the grey `Remote` box, click `+` to add a remote.
+    3. In the `Add Remote` dialog, leave the defaults for `Remote Name`, `DataHUB Account` and `URL`.
+
+        :::note
+        By default, your ARC will be synced privately to your personal DataHUB Account.
+        :::
+
+        <ViolaSays>
+          So my ARC will be synced to https://git.nfdi4plants.org/viola/AthalianaColdStressSugar.git
+        </ViolaSays>
+
+    4. Click `Add Remote`.
+    5. Click `Push` to upload your ARC to the DataHUB.     
+    6. In the grey `Remote` box, click the globe icon to be directed to your ARC in the DataHUB.
+
+    </Steps>
+</Card>
+
+## Explore your ARC in the PLANTDataHUB
+
+<Card icon="gitlab" title="PLANTDataHUB">
+    <Steps>
+    
+    1. Sign in to the [PLANTDataHUB](https://git.nfdi4plants.org)
+    1. Navigate to your ARC.
+    1. Browse the files of your ARC.
+    1. The main panel of the ARC menu mimics the local folder structure
+
+    </Steps>
+</Card>
+
