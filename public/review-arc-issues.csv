@@ -108,3 +108,10 @@ See also https://nfdi4plants.org/nfdi4plants.knowledgebase/core-concepts/inputs-
   - [ ] reference a reusable container (e.g. a Docker image or local Docker File) that contains all necessary dependencies for the workflow
   - [ ] reference the input and output dataset files in the ARC, e.g. via `Input [Data]` and `Output [Data]` columns in annotation tables
   "
+"Add supplemental datasets","/confidential
+/label ~enhancement
+  While creating a journal manuscript, you may have aggregated and submitted 'supplemental data' to the journal. 
+  These data are often a collection of different files, e.g. raw data files, processed data files, scripts, and documentation.
+  An ARC provides a suitable location for any of these files. 
+  - [ ] add supplemental datasets to make them accessible and reusable for others and show how they relate to the overall ARC
+"
