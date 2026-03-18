@@ -7,7 +7,7 @@ In your journal manuscript, please
 see https://nfdi4plants.org/articles/citing/
 Once the manuscript is published, please
 - [ ] Set your ARC to `public` in the DataHUB via Settings → General → Visibility, project features, permissions
-  - or directly go to [➡ Visibility Settings](../../../edit#js-shared-permissions)"
+  - directly go to [➡ Visibility Settings](../../../edit#js-shared-permissions)"
 "DataHUB: Move ARC into non-personal namespace","/confidential
 /label ~critical
   In order to guarantee that the ARC can (in the future) be accessed and maintained by others, please transfer it to a group namespace.
@@ -23,7 +23,7 @@ Once the manuscript is published, please
 /label ~critical 
   Please add a LICENSE file to your ARC. This is important for others to know how they can use your data and to ensure that your data can be reused by others. 
   - see https://nfdi4plants.org/nfdi4plants.knowledgebase/datahub/arc-features/datahub-arc-license/
-  - or directly [➡ add a LICENSE](../../new/main?commit_message=Add+LICENSE&file_name=LICENSE)"
+  - or directly [➡ add a LICENSE here](../../new/main?commit_message=Add+LICENSE&file_name=LICENSE)"
 "DataHUB: Improve README","/confidential
 /label ~suggestion
   The README file is the first thing that other users see when they access your ARC. It should give a human-readable overview of the content of the ARC.
