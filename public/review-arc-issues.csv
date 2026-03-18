@@ -49,14 +49,15 @@ As a rule of thumb, the usage under 'Repository' storage should be less than 500
   - `Characteristic` columns describe inherent properties of samples or material
   - `Parameter` columns describe steps in your experimental workflow
   - `Factor` columns represent independent variables that are varied within the study design"
-"ISA Metadata: Double-check annotation tables","/confidential
+"ISA Metadata: Add annotation tables to every study and assay","/confidential
 /label ~critical
 
-
-  Double-check sample–to-dataset connections and protocol references
-
-
+  Every study and assay must have an annotation table. This is important to ensure that the ARC is comprehensible and reusable, and machine-readable.
+  A minimal annotation table should contain at least an `Input` and an `Output` column.
   One main goal of the ARC is to annotate raw, measurement dataset files with the necessary metadata to make them comprehensible and reusable.
+
+  So, please double-check the sample–to-dataset connections and protocol references.
+
   To achieve this, 
   - [ ] dataset files are added to assay `dataset` folders
   - [ ] dataset files are linked in annotation tables as `Output [Data]`
