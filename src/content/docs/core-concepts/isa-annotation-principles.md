@@ -4,16 +4,16 @@ authors:
   - kevin-schneider
   - dominik-brilhaus
   - stella-eggels
-lastUpdated: 2025-10-21
+lastUpdated: 2026-03-19
 sidebar:
   order: 3
 ---
 
-Annotation of data and workflows within the ARC builds on the ISA model. In this guide we introduce the different building blocks available to annotate your workflows in a study (isa.study.xlsx) or assay (isa.assay.xlsx).
+Annotation of data and workflows within the ARC builds on the [ISA model](https://isa-tools.org/format/specification.html). In this guide we introduce the different building blocks available to annotate your workflows in a study (isa.study.xlsx) or assay (isa.assay.xlsx).
 
 ## Input
 
-Every annotation table must start with the `Input` column, which defines the input of your table and can be of type "Source Name", "Sample Name", "Material", or "Data". This input value must be a unique identifier for an organism or a sample. The number of `Input` columns per table is limited to **one**.
+Every annotation table must start with the `Input` column, which defines the input of your annotation table and can be of type "Source Name", "Sample Name", "Material", or "Data". This input value must be a unique identifier for an organism or a sample. The number of `Input` columns per table is limited to **one**.
 
 <div style="background-color: #0BB5DD; color: white;">
 
@@ -21,7 +21,7 @@ Every annotation table must start with the `Input` column, which defines the inp
 
 </div>
 
-## Characteristics
+## Characteristic
 
 Characteristic columns describe inherent properties of the source material, e.g., a certain strain or ecotype, or the developmental stage. You can add **any number** of `Characteristic` columns.
 
@@ -43,7 +43,7 @@ Use `Factor` columns to represent independent variables that are varied within t
 
 ## Parameter
 
-`Parameter` columns describe steps in your experimental workflow, e.g., the temperature or extraction buffer volume used for your assay. Multiple Parameter columns form a protocol. You can add any number of `Parameter` columns.
+`Parameter` columns describe steps in your experimental workflow, e.g., the temperature or extraction buffer volume used for your assay. You can add any number of `Parameter` columns.
 
 <div style="background-color: white; color: #0BB5DD;">
 
@@ -63,7 +63,7 @@ Use `Component` columns to list anything physical of a protocol that can be cons
 
 ## Protocol Columns
 
-Use `Protocol REF` columns to reference the protocol used in the table, i.e., the name of the protocol. `Protocol Type` columns define the type, e.g. a growth protocol. The number of columns for each subtype is limited to **one per table**.
+Use `Protocol` columns to reference the protocol used in the table. Use a `Protocol REF` column ro reference the name or `ProtocolUri` to reference a path of the protocol, respectively. `Protocol Type` columns define the type, e.g. a growth protocol. The number of columns for each subtype is limited to **one per table**.
 
 <div style="background-color: white; color: #2D3E50;">
 
@@ -73,7 +73,7 @@ Use `Protocol REF` columns to reference the protocol used in the table, i.e., th
 
 ## Output
 
-**Per table only one** `Output` column is allowed, which can either be a "Sample Name", "Material", or "Data". Data files can be sources or outputs of computational workflows. The value of this column must be a unique identifier.
+**Per table only one** `Output` column is allowed, which can either be a "Sample Name", "Material", or "Data". Data files can be sources or outputs of computational workflows.
 
 <div style="background-color: #0BB5DD; color: white;">
 
