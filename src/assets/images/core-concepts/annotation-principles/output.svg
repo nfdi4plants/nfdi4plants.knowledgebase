@@ -32,7 +32,7 @@
         font-size="165" x="-1241.5" y="378">workflow</tspan>
       <tspan font-size="183" x="25.0958" y="699">Lysate1</tspan>
       <tspan font-family="Avenir Next LT Pro Demi,Avenir Next LT Pro Demi_MSFontService,sans-serif" font-weight="600"
-        font-size="100" x="-72" y="-559">Output [Sample Name]</tspan>
+        font-size="100" x="-72" y="-559">Output [Material]</tspan>
     </text>
     <path
       d="M696.256 281.49C695.402 281.49 694.587 281.94 693.991 282.762 693.395 283.564 693.057 284.659 693.057 285.813 693.057 374.106 693.057 1785.9 693.057 2175.56 693.057 2201.79 700.767 2226.96 714.479 2245.5 728.19 2264.06 746.79 2274.49 766.185 2274.49 1008.84 2274.49 1772.06 2274.49 1772.06 2274.49L1772.06 361.666C1772.06 319.769 1747 285.793 1716.04 285.656L696.256 281.49Z"
@@ -405,9 +405,9 @@
         </g>
       </g>
     </g><text fill="#FFFFFF" font-family="Avenir Next LT Pro,Avenir Next LT Pro_MSFontService,sans-serif"
-      font-weight="400" font-size="183" transform="matrix(1 0 0 1 2181.37 1074)">Ath1.wiff<tspan
+      font-weight="400" font-size="183" transform="matrix(1 0 0 1 2181.37 1074)">Ath1<tspan
         font-family="Avenir Next LT Pro Demi,Avenir Next LT Pro Demi_MSFontService,sans-serif" font-weight="600"
-        font-size="110" x="-30.47" y="-559">Output [Data]</tspan></text>
+        font-size="110" x="-30.47" y="-559">Output [Sample Name]</tspan></text>
     <path
       d="M2031.17 281.49C2030.34 281.49 2029.54 281.94 2028.96 282.762 2028.38 283.564 2028.06 284.659 2028.06 285.813 2028.06 374.106 2028.06 1785.9 2028.06 2175.56 2028.06 2201.79 2035.55 2226.96 2048.88 2245.5 2062.21 2264.06 2080.29 2274.49 2099.15 2274.49 2335.06 2274.49 3077.06 2274.49 3077.06 2274.49L3077.06 361.666C3077.06 319.769 3052.69 285.793 3022.59 285.656L2031.17 281.49Z"
       stroke="#FFFFFF" stroke-width="19.5297" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
@@ -418,7 +418,7 @@
       font-family="Avenir Next LT Pro,Avenir Next LT Pro_MSFontService,sans-serif" font-weight="400" font-size="183"
       transform="matrix(1 0 0 1 3481.5 1074)">Proc1.csv<tspan
         font-family="Avenir Next LT Pro Demi,Avenir Next LT Pro Demi_MSFontService,sans-serif" font-weight="600"
-        font-size="110" x="1.7" y="-559">Output [Material] </tspan></text>
+        font-size="110" x="1.7" y="-559">Output [Data] </tspan></text>
     <path
       d="M3355.16 281.49C3354.33 281.49 3353.54 281.94 3352.96 282.762 3352.38 283.564 3352.06 284.659 3352.06 285.813 3352.06 374.106 3352.06 1785.9 3352.06 2175.56 3352.06 2201.79 3359.54 2226.96 3372.86 2245.5 3386.18 2264.06 3404.25 2274.49 3423.08 2274.49 3658.77 2274.49 4400.06 2274.49 4400.06 2274.49L4400.06 361.666C4400.06 319.769 4375.72 285.793 4345.65 285.656L3355.16 281.49Z"
       stroke="#FFFFFF" stroke-width="19.5297" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
@@ -429,7 +429,7 @@
       font-family="Avenir Next LT Pro Demi,Avenir Next LT Pro Demi_MSFontService,sans-serif" font-weight="600"
       font-size="128" transform="matrix(1 0 0 1 1805.8 1387)">OR<tspan
         font-family="Avenir Next LT Pro,Avenir Next LT Pro_MSFontService,sans-serif" font-weight="400" font-size="183"
-        x="375.57" y="386">Ath2.wiff</tspan>
+        x="375.57" y="386">Ath2</tspan>
       <tspan font-family="Avenir Next LT Pro,Avenir Next LT Pro_MSFontService,sans-serif" font-weight="400"
         font-size="183" x="1675.7" y="386">Proc2.csv</tspan>
       <tspan font-size="165" x="2777.1" y="-356">Annotated</tspan>
