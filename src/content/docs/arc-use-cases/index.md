@@ -4,9 +4,10 @@ lastUpdated: 2026-03-30
 authors:
   - dominik-brilhaus
 sidebar:
-  order: 0  
+  order: 0
 ---
 
+Here we take a closer look at some experimental scenarios that scientists might face on a more or less regular basis. With these examples we aim to provide best practices for ARC-powered data annotation allowing to generate machine-readable, interoperable and reproducible data and metadata.
 
 ## Request or contribute a use-case
 
