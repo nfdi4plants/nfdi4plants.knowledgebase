@@ -188,6 +188,14 @@ export default defineConfig({
           items:['faqs']
         },
         {
+          label: 'ARC Annotation Use-Cases',
+          icon: 'pencil',
+          link: 'arc-use-cases',
+          items: [
+            {collapsed: true, label: 'ARC Annotation Use-Cases', autogenerate: { directory: 'arc-use-cases' }}
+          ]
+        },
+        {
           label: 'Workshops',
           icon: 'star',
           link: 'workshops',
