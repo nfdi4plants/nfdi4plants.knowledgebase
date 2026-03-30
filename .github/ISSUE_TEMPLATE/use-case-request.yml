@@ -1,0 +1,20 @@
+name: Request an ARC Annotation Use-Case
+description: 
+title: "[ARC Use-Case]: "
+labels: 
+  - arc-use-case
+body:
+  - type: textarea
+    id: description
+    attributes:
+      description: Please describe the use-case, add any relevant context. 
+      label: Description
+    validations:
+      required: false
+  - type: textarea
+    id: resources
+    attributes:
+      label: Resources
+      description: Share links to existing resources, standards, repositories, ARCs, 
+    validations:
+      required: false
