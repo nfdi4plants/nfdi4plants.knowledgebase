@@ -1,5 +1,5 @@
 name: Request an ARC Annotation Use-Case
-description: 
+description: ARC use-cases can be variably complex and range from a single annotation-table for a certain measurement to a full-fledged ARC.
 title: "[ARC Use-Case]: "
 labels: 
   - arc-use-case
