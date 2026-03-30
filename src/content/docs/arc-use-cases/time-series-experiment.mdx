@@ -1,0 +1,14 @@
+---
+title: Annotation of time series experiments
+lastUpdated: 2022-11-07
+authors:
+  - martin-kuhl
+sidebar:
+  order: 1
+---
+
+As an example, we will walk you through a simple ARC and discuss good practices for annotation along the way. In our first scenario we take a look at the annotation of time course patterns. Let's imagine a study in which our plant of interest (plant1), Arabidopsis thaliana (Characteristic [Organism]), was exposed to salt stress (Component [Ingredient]) for a given time. To investigate the cellular response, you harvested samples at various time points after exposure to the stressor: S1 is harvested right away, S2 after 10 minutes, and so on. This information was stored within the isa.study.xlsx file.
+
+![](@images/guides/isa-annotationpattern-timeseries.drawio.png)
+
+You should use the Factor building block in such a case to annotate the time after exposure and thereby the sampling point in the isa.study.xlsx file, as this time period will ultimately result in the given output, when all remaining parameters for treatment and analysis were identical.
