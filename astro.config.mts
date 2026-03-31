@@ -69,6 +69,14 @@ export default defineConfig({
           items:[
             {label: "Start Here", autogenerate: { directory: 'start-here' }},              
           ]
+        },
+        {
+          label: 'Annotation Use-Cases',
+          icon: 'pencil',
+          link: 'arc-use-cases',
+          items: [
+            {collapsed: true, label: 'ARC Annotation Use-Cases', autogenerate: { directory: 'arc-use-cases' }}
+          ]
         },        
         {
           label: 'Guides and docs',

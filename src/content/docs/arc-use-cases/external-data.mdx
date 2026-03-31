@@ -1,0 +1,124 @@
+---
+title: External data
+lastUpdated: 2026-03-31
+authors:
+  - dominik-brilhaus
+---
+
+import { FileTree, Steps } from '@astrojs/starlight/components';
+import NoWrapTable from "@components/NoWrapTable.astro"
+import ViolaSays from '@components/ViolaSays.astro'
+
+<ViolaSays>
+
+How can I annotate data sets from external sources in my ARC? For instance data sets from online repositories or supplemental data from publications.
+
+</ViolaSays>
+
+export const Highlight = ({ children }) => (
+  <span
+    style={{
+      backgroundColor: '#fff59d',
+      borderRadius: '0.125rem',
+    }}
+  >
+    {children}
+  </span>
+)
+
+
+
+Research projects rarely start out of the blue. Most projects build on previous findings and published or unpublished datasets.
+In this example we recommend routines to add data from external sources to your ARC.
+
+## Add a study for the external data
+
+To properly re-use and reference such a dataset, we recommend to add a `study` to your ARC.
+
+<Steps>
+1. Add a study to your ARC, e.g. `EnsemblReferences`
+
+    <FileTree>
+    - studies
+      - EnsemblReferences
+        - resources
+          - <Highlight>ArabidopsisCDS.fasta</Highlight>
+          - <Highlight>HordeumCDS.fasta</Highlight>
+        - protocols
+          - DownloadFromEnsembl.md
+        - isa.study.xlsx
+    </FileTree>
+
+1. In the `protocols` directory you can add notes on how you retrieved the data and from where, e.g.
+
+    ```markdown title="protocols/DownloadFromEnsembl.md"
+
+    # Download CDS fasta files from Ensembl Plants
+
+    1. Go to [Ensembl Plants](https://plants.ensembl.org/index.html)
+    2. Search for
+      - Arabidopsis thaliana
+      - Hordeum vulgare
+    3. Go to the "Download DNA, cDNA, ncRNA and protein sequences" section
+    4. Download the "cDNA FASTA" file
+    ```
+
+1. Add publication details to the study metadata, e.g.
+
+    ```markdown title="EnsemblReferences: Study"
+
+    Identifier: EnsemblReferences
+    Title: Reference CDS for Arabidopsis thaliana
+    Publications
+      - DOI: https://doi.org/10.1111/tpj.13415
+      - Title: Araport11: a complete reannotation of the Arabidopsis thaliana reference genome
+      - Authors: Chia‐Yi Cheng, Vivek Krishnakumar, Agnes P. Chan, Françoise Thibaud‐Nissen, Seth Schobel, Christopher D. Town
+
+    ```
+
+1. Contextualize the data (stored in `resources`) via a `datamap`
+
+</Steps>
+
+
+:::tip
+As with any other routine used by researchers to share scientific results and data, the responsibility to acknowledge scientific integrity, follow guidelines of good scientific practice, institutional guidelines for data handling, and respective laws for licensing, and – if applicable – to properly reference or cite the data source lies with the individual researcher.
+:::
+
+## Annotate the downloaded dataset files
+
+To attach more meaning to the external data, you can annotate the data files in the annotation table of the study.
+
+  <NoWrapTable>
+  
+  `ProtocolUri`                      | `Factor` [Organism]   | `Output`[Data]         |
+  ---------------------------        | ----                  |  --------------------  | 
+  ./protocols/DownloadFromEnsembl.md | Arabidopsis thaliana  |  <Highlight>ArabidopsisCDS.fasta</Highlight>  |
+  ./protocols/DownloadFromEnsembl.md | Hordeum vulgare       |  <Highlight>HordeumCDS.fasta</Highlight>      |
+  
+  </NoWrapTable>
+
+:::tip[Pro Tip: DataMAP]
+To annotate the data files in a more structured way, you can also use the [`datamap` feature](/nfdi4plants.knowledgebase/start-here/datamap/). This allows you to precisely make the data file comprehensible and machine-actionable.
+:::
+
+
+## Integrate the files in your data analysis
+
+Having the dataset files properly annotated and contextualized, you can now integrate them into your ARC just as you would do for any other dataset. For example, you can use the downloaded reference sequences as input for a mapping step in a transcriptomics workflow or assay.
+
+  <NoWrapTable>
+
+    `Input`[Data]                                               | `ProtocolUri`                 | `Output`[Data]      |
+    --------------------                                        | ----------------------------- | ------------------- |
+    ./assays/RNA-Seq/dataset/Sample1.fastq.gz                   | ./protocols/RNASeq-mapping.md | Sample1-counts.tsv  |
+    ./studies/EnsemblReferences/resources/<Highlight>ArabidopsisCDS.fasta</Highlight>  | ./protocols/RNASeq-mapping.md | Sample1-counts.tsv  |
+    ./assays/RNA-Seq/dataset/Sample2.fastq.gz                   | ./protocols/RNASeq-mapping.md | Sample2-counts.tsv  |
+    ./studies/EnsemblReferences/resources/<Highlight>ArabidopsisCDS.fasta</Highlight>  | ./protocols/RNASeq-mapping.md | Sample2-counts.tsv  |
+    ./assays/RNA-Seq/dataset/Sample3.fastq.gz                   | ./protocols/RNASeq-mapping.md | Sample3-counts.tsv  |
+    ./studies/EnsemblReferences/resources/<Highlight>ArabidopsisCDS.fasta</Highlight>  | ./protocols/RNASeq-mapping.md | Sample3-counts.tsv  |
+    ./assays/RNA-Seq/dataset/Sample4.fastq.gz                   | ./protocols/RNASeq-mapping.md | Sample4-counts.tsv  |
+    ./studies/EnsemblReferences/resources/<Highlight>ArabidopsisCDS.fasta</Highlight>  | ./protocols/RNASeq-mapping.md | Sample4-counts.tsv  |
+ 
+  </NoWrapTable>
+
