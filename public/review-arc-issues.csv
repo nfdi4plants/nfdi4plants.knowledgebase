@@ -65,7 +65,7 @@ As a rule of thumb, the usage under 'Repository' storage should be less than 500
   - [ ] the annotation tables themselves provide necessary metadata (columns) or 'link back' to preceding annotation tables (of the same or other studies or assays) via `Input [Sample Name]` or `Input [Source Name]` columns
   - [ ] free-text protocols can be linked to assay or study annotation tables via `ProtocolUri`or `Protocol REF` columns, respectively.
     - While this helps to provide a human-readable description of the experimental workflow, the most important metadata should be contained in the annotation tables themselves to ensure that the ARC is comprehensible and reusable, and machine-readable  
-See also https://nfdi4plants.org/nfdi4plants.knowledgebase/core-concepts/inputs-outputs"
+See also https://nfdi4plants.org/nfdi4plants.knowledgebase/arc-use-cases/inputs-outputs"
 "ISA Metadata: Double-check assay top-level metadata","/confidential
 /label ~suggestion
   All assays should contain 'top-level metadata'. This helps to find and understand the assay.
@@ -77,7 +77,7 @@ See also https://nfdi4plants.org/nfdi4plants.knowledgebase/core-concepts/inputs-
 "Data from external sources or publications","/confidential
 /label ~suggestion
   If you have data from external sources that are relevant to your study (e.g. from a database, an online tool, or a publication's supplement), you can add them to your ARC.
-  As described [here](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/guides/arc-adding-external-data/), you can simply add a **new study** for such 'external data'.  
+  As described [here](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/arc-use-cases/external-data), you can simply add a **new study** for such 'external data'.  
   - [ ] add the data files to the `resources` folder of the study
   - [ ] add publications to relevant external data sources in the study 'top-level metadata'
   - [ ] add a protocol to describe, how to retrieve – e.g. create or download – the data
