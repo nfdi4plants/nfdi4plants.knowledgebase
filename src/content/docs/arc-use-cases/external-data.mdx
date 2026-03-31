@@ -15,6 +15,18 @@ How can I annotate data sets from external sources in my ARC? For instance data 
 
 </ViolaSays>
 
+export const Highlight = ({ children }) => (
+  <span
+    style={{
+      backgroundColor: '#fff59d',
+      borderRadius: '0.125rem',
+    }}
+  >
+    {children}
+  </span>
+)
+
+
 
 Research projects rarely start out of the blue. Most projects build on previous findings and published or unpublished datasets.
 In this example we recommend routines to add data from external sources to your ARC.
@@ -30,12 +42,11 @@ To properly re-use and reference such a dataset, we recommend to add a `study` t
     - studies
       - EnsemblReferences
         - resources
-          - ArabidopsisCDS.fasta
-          - HordeumCDS.fasta
+          - <Highlight>ArabidopsisCDS.fasta</Highlight>
+          - <Highlight>HordeumCDS.fasta</Highlight>
         - protocols
           - DownloadFromEnsembl.md
         - isa.study.xlsx
-        - isa.datamap.xlsx
     </FileTree>
 
 1. In the `protocols` directory you can add notes on how you retrieved the data and from where, e.g.
@@ -82,8 +93,8 @@ To attach more meaning to the external data, you can annotate the data files in 
   
   `ProtocolUri`                      | `Factor` [Organism]   | `Output`[Data]         |
   ---------------------------        | ----                  |  --------------------  | 
-  ./protocols/DownloadFromEnsembl.md | Arabidopsis thaliana  |  ArabidopsisCDS.fasta  |
-  ./protocols/DownloadFromEnsembl.md | Hordeum vulgare       |  HordeumCDS.fasta      |
+  ./protocols/DownloadFromEnsembl.md | Arabidopsis thaliana  |  <Highlight>ArabidopsisCDS.fasta</Highlight>  |
+  ./protocols/DownloadFromEnsembl.md | Hordeum vulgare       |  <Highlight>HordeumCDS.fasta</Highlight>      |
   
   </NoWrapTable>
 
@@ -92,7 +103,7 @@ To annotate the data files in a more structured way, you can also use the [`data
 :::
 
 
-## Integrate dataset files
+## Integrate the files in your data analysis
 
 Having the dataset files properly annotated and contextualized, you can now integrate them into your ARC just as you would do for any other dataset. For example, you can use the downloaded reference sequences as input for a mapping step in a transcriptomics workflow or assay.
 
@@ -101,13 +112,13 @@ Having the dataset files properly annotated and contextualized, you can now inte
     `Input`[Data]                                               | `ProtocolUri`                 | `Output`[Data]      |
     --------------------                                        | ----------------------------- | ------------------- |
     ./assays/RNA-Seq/dataset/Sample1.fastq.gz                   | ./protocols/RNASeq-mapping.md | Sample1-counts.tsv  |
-    ./studies/EnsemblReferences/resources/ArabidopsisCDS.fasta  | ./protocols/RNASeq-mapping.md | Sample1-counts.tsv  |
+    ./studies/EnsemblReferences/resources/<Highlight>ArabidopsisCDS.fasta</Highlight>  | ./protocols/RNASeq-mapping.md | Sample1-counts.tsv  |
     ./assays/RNA-Seq/dataset/Sample2.fastq.gz                   | ./protocols/RNASeq-mapping.md | Sample2-counts.tsv  |
-    ./studies/EnsemblReferences/resources/ArabidopsisCDS.fasta  | ./protocols/RNASeq-mapping.md | Sample2-counts.tsv  |
+    ./studies/EnsemblReferences/resources/<Highlight>ArabidopsisCDS.fasta</Highlight>  | ./protocols/RNASeq-mapping.md | Sample2-counts.tsv  |
     ./assays/RNA-Seq/dataset/Sample3.fastq.gz                   | ./protocols/RNASeq-mapping.md | Sample3-counts.tsv  |
-    ./studies/EnsemblReferences/resources/ArabidopsisCDS.fasta  | ./protocols/RNASeq-mapping.md | Sample3-counts.tsv  |
+    ./studies/EnsemblReferences/resources/<Highlight>ArabidopsisCDS.fasta</Highlight>  | ./protocols/RNASeq-mapping.md | Sample3-counts.tsv  |
     ./assays/RNA-Seq/dataset/Sample4.fastq.gz                   | ./protocols/RNASeq-mapping.md | Sample4-counts.tsv  |
-    ./studies/EnsemblReferences/resources/ArabidopsisCDS.fasta  | ./protocols/RNASeq-mapping.md | Sample4-counts.tsv  |
+    ./studies/EnsemblReferences/resources/<Highlight>ArabidopsisCDS.fasta</Highlight>  | ./protocols/RNASeq-mapping.md | Sample4-counts.tsv  |
  
   </NoWrapTable>
 
