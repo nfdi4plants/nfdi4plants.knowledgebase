@@ -1,9 +1,11 @@
 ---
 title: External Data
-lastUpdated: 2023-07-07
+lastUpdated: 2026-03-31
 authors:
   - dominik-brilhaus
 ---
+
+import { FileTree, Steps } from '@astrojs/starlight/components';
 
 Research projects rarely start out of the blue. Most projects build on previous findings and published or unpublished datasets.
 In this guide we recommend routines to properly add data from external sources to your ARC.
@@ -12,11 +14,10 @@ In this guide we recommend routines to properly add data from external sources t
 
 To properly re-use and reference such a dataset, we recommend to add a `study` to your ARC. Every study by default comes with four parts:
 
-import { FileTree } from '@astrojs/starlight/components';
 
 <FileTree>
 - studies
-  - \<study_name\>
+  - ArabidopsisReference
     - resources
       - ...
     - protocols
@@ -28,14 +29,18 @@ import { FileTree } from '@astrojs/starlight/components';
 ...
 </FileTree>
 
-- In the `resources` directory you can add the data (e.g. supplemental data files)
-- In the `protocols` directory you can add notes on how you retrieved the data and from where.
-- Add publication details to the study metadata
-- Contextualize the data (stored in `resources`) via a `datamap`
+<Steps>
+
+1. In the `resources` directory you can add the data (e.g. supplemental data files)
+1. In the `protocols` directory you can add notes on how you retrieved the data and from where.
+1. Add publication details to the study metadata
+1. Contextualize the data (stored in `resources`) via a `datamap`
+
+</Steps>
 
 
 :::tip
-As with any other routine used by researchers to share scientific results and data, the responsibility to acknowledge scientific integrity, follow guidelines of good scientific practice, institutional guidelines for data handling, and respective laws for licensing, and &ndash; if applicable  &ndash; to properly reference or cite the data source lies with the individual researcher.
+As with any other routine used by researchers to share scientific results and data, the responsibility to acknowledge scientific integrity, follow guidelines of good scientific practice, institutional guidelines for data handling, and respective laws for licensing, and – if applicable – to properly reference or cite the data source lies with the individual researcher.
 :::
 
 :::tip
