@@ -1,0 +1,157 @@
+---
+title: ARC from Publication
+lastUpdated: 2026-03-31
+authors:
+  - dominik-brilhaus
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import ViolaSays from '@components/ViolaSays.astro'
+
+<ViolaSays>
+
+I have a publication with associated datasets. We published this before we knew about ARCs. Now I want to create an ARC based on this publication and its datasets to include relevant data and analysis steps that were not included in the original publication. How do I do this?
+
+</ViolaSays>
+
+In this use-case we collect recommendations and thoughts on creating an ARC based on a publication and associated published datasets.
+This is not the typical entry into an ARC, but rather retrospective. It might however help to build community-tailored showcases; i.e. showing what a project could look like as an ARC.
+
+## ARC setup
+
+<Steps>
+
+1. Create an ARC and name it e.g. "FirstAuthorLastName-PublicationYear"
+2. Add a `README.md` file to the ARC, e.g. with the following content:
+
+    ```markdown
+    # Title of Publication
+
+    ## Original Publication
+
+    <citation as provided by publisher or exported from bibliography manager; ideally in a standard format including the DOI>
+
+    ## Abstract
+
+    <paper abstract>
+
+    ## License
+
+    <license / copyright as provided by publisher>
+    ```
+
+    :::tip
+    You might want to add a note that the ARC is based on a publication and associated datasets, but that it is not identical to the original publication. 
+    :::
+
+3. Add original publication files into a folder (e.g. `_publication`) inside the ARC, e.g.
+
+    - The publication pdf
+    - Any supplemental files (as offered on the publication page)
+    - You can add a `_publication/README.md` with a table of links to the files
+
+    :::tip
+    This is rather a helper step. In the end the supplemental files are usually a very aggregated and reshaped version of the original data stored in assays.
+    :::
+
+4. Add a `LICENSE` file to the ARC
+  
+    :::tip
+    This should be in line with the publisher's license usually found on the journal website of the publication.
+    We recommend to focus on open access / CC-BY publications and datasets, unless you explicitly know, whether and how to re-use the data published elsewhere.
+    :::
+
+</Steps>
+
+## Translate the publication into the ARC's Investigation
+
+<Steps>
+
+1. Add Title: the publication title
+1. Add Description: the publication abstract
+1. Add Public Release Data: the publication online date
+1. Add Contacts: the authors in same order as on publication
+    - Add First Name, Last Name, Affiliation
+    - If possible, add Emails and ORCIDs
+1. Add Publication
+    - DOI, Title, Authors, Status = Published
+
+</Steps>
+
+## Separate the publication into studies and assays
+
+In a publication most information is collated into a very aggregated state. In an ARC, we want to convert this into a more granular and modular structure. Hence, the major challenge is to identify how to decompose which sections and files above and how to best represent them in the ARC structure. This may require some iterations. As a starting point, try to reach a point where one assay covers one type of measurement and dataset and move "backwards" from there.
+
+### Preparation
+
+<Steps>
+
+1. For each publication bit, try to categorize it into the ARC components, e.g. as follows:
+
+    | Publication                             | ARC
+    | --------------------------------------- | ---------------------------
+    | Methods                                 | Study or assay protocol 
+    | Computational analysis (e.g. scripts)   | Assay protocol or Workflow
+    | Results (e.g. Figures, Tables)          | Assay dataset or Run
+    | Supplemental files                      | Assay dataset
+
+    :::tip
+    At this stage it might make sense to just write this out in a list before creating the respective components in the ARC.
+    :::
+
+1. Try to clearly separate different types of measurements and datasets and the methods leading to them. 
+
+</Steps>
+
+### Result files
+
+<Steps>
+
+1. For every measurement or result, create one `Assay`
+1. Add the respective files (e.g. result tables, result figures, supplemental files) to the `Assay` dataset folder
+1. Add the respective `protocol` (e.g. methods, computational analysis) used to generate the associated dataset as an `Assay` protocol
+1. Add an annotation table to every assay and reference the `dataset` files in an `Output [Data]` column.
+
+</Steps>
+
+### Sample sets
+
+<Steps>
+
+1. Identify the sample sets leading to the `Assay` datasets. Which samples were measured in which assay?
+1. For every sample set, create one `Study` and add an annotation table to list sample IDs for these samples.
+1. Add the respective `protocol` (e.g. materials, methods) used to generate the associated sample set as a `Study` protocol
+1. Link the respective `Assay` dataset files to the `Study` samples.
+1. If there are multiple measurements that share the same sample set you can link multiple `Assays` to this `Study`.
+
+</Steps>
+
+### Annotate data and samples
+
+<Steps>
+
+1. Reference the protocol file in the respective `Study` and `Assay` annotation table via `Protocol Uri` or `Protocol REF` columns.
+1. Extract the major `protocol` information and add this as metadata to the annotation tables.
+
+</Steps>
+
+## Additional recommendations
+
+### File names
+
+- Avoid spaces in file names. We recommend to use camelCase or PascalCase for file names 
+- However, in order to keep track of links and data origin, it is recommended to keep the original name of data files, i.e. if a publisher or repository stores files with spaces.
+
+### Original Data
+
+The publication may contain a section "data availability" or "data accession" or similar that references external links, e.g. large data files deposited to a public repository. 
+
+<Steps>
+
+1. Try to find and transfer all info (sample accessions, IDs, metadata, links, etc.) into the ARC. See this use-case for more details on how to do this: [Repository Data Files](/nfdi4plants.knowledgebase/arc-use-cases/repository-data/)
+
+</Steps>
+
+:::note
+To minimize data duplication and save storage space, please avoid adding very large data files already published in a public repository.
+:::
