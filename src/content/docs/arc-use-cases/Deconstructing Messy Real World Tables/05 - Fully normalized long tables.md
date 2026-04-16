@@ -1,12 +1,12 @@
 ---
-title: From format-driven to clean wide table(s)
+title: "Fully normalized long tables: representing measurements explicitly"
 sidebar:
   order: 5.5
 authors:
   - timo-muehlhaus
 ---
 
-# Fully normalized long tables: representing measurements explicitly
+# 
 
 ## Returning to the measurement concept
 

@@ -1,12 +1,10 @@
 ---
-title: From format-driven to clean wide table(s)
+title: "Partially normalized tables: making structure explicit"
 sidebar:
   order: 5.3
 authors:
   - timo-muehlhaus
 ---
-
-# Partially normalized tables: making structure explicit
 
 ## From clean tables to explicit structure
 

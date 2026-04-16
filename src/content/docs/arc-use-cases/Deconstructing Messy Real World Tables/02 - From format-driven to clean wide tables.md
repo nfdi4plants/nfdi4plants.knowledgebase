@@ -6,7 +6,6 @@ authors:
   - timo-muehlhaus
 ---
 
-
 ## Let’s start from conceptual measurements
 
 Before looking at tables, we begin with a small set of **measurements**.

@@ -1,12 +1,10 @@
 ---
-title: From format-driven to clean wide table(s)
+title: Describing data with the DataMap
 sidebar:
   order: 5.4
 authors:
   - timo-muehlhaus
 ---
-
-# Describing data with the DataMap
 
 ## From structure to meaning
 
