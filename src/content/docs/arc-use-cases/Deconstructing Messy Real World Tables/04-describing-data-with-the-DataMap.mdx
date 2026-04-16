@@ -6,6 +6,9 @@ authors:
   - timo-muehlhaus
 ---
 
+import { FileTree } from '@astrojs/starlight/components'
+import NoWrapTable from "@components/NoWrapTable.astro"
+
 ## From structure to meaning
 
 In the previous sections, we focused on improving the **structure** of our data. We transformed a messy spreadsheet into a clean and partially normalized table where key components of the measurement became explicit.
@@ -38,16 +41,18 @@ Within an
 **Annotated Research Context (ARC)**,
 this would be represented as an assay folder:
 
-```text
-assays/
-  LiDARHeightMeasurement/
-    dataset/
-      plant_height_lidar.tsv
-    protocols/
-      lidar_measurement_protocol.md
-    isa.assay.xlsx
-    README.md
-```
+<FileTree>
+
+- assays/
+  - LiDARHeightMeasurement/
+    - dataset/
+      - plant_height_lidar.tsv
+    - protocols/
+      - lidar_measurement_protocol.md
+    - isa.assay.xlsx
+    - README.md
+
+</FileTree>
 
 The actual measurement table is stored in:
 
@@ -68,12 +73,16 @@ This file contains the **values**, but not their full meaning.
 
 The assay itself provides the **experimental and technical context**. A minimal `isa.assay.xlsx` for this example could look like this:
 
+<NoWrapTable>
+
 | Sample Name | Protocol REF             | Parameter[Day] | Parameter [instrument model] | Raw Data File                  |
 | ----------- | ------------------------ | -------------- | ---------------------------- | ------------------------------ |
 | P1          | LiDAR height acquisition | 1              | LiDAR                        | dataset/plant_height_lidar.tsv |
 | P1          | LiDAR height acquisition | 2              | LiDAR                        | dataset/plant_height_lidar.tsv |
 | P2          | LiDAR height acquisition | 1              | LiDAR                        | dataset/plant_height_lidar.tsv |
 | P2          | LiDAR height acquisition | 2              | LiDAR                        | dataset/plant_height_lidar.tsv |
+
+</NoWrapTable>
 
 This table does not duplicate the measurement values. Instead, it:
 
@@ -97,11 +106,16 @@ Each row in the DataMap refers to a specific fragment of a file and describes it
 
 For our LiDAR example, a DataMap could look like this:
 
+<NoWrapTable>
+
 | Data                         | Data Format               | Data Selector Format | Explication        | Term Source REF | Term Accession Number | Unit       | Term Source REF | Term Accession Number | Object Type | Term Source REF | Term Accession Number | Description                       |
 | ---------------------------- | ------------------------- | -------------------- | ------------------ | --------------- | --------------------- | ---------- | --------------- | --------------------- | ----------- | --------------- | --------------------- | --------------------------------- |
 | plant_height_lidar.tsv#col=1 | text/tab-separated-values | rfc7111              | plant identifier   |                 |                       |            |                 |                       | string      | xsd             | xsd:string            | Identifier of the measured plant  |
 | plant_height_lidar.tsv#col=2 | text/tab-separated-values | rfc7111              | day of measurement |                 |                       | day        | UO              | UO_0000033            | integer     | xsd             | xsd:integer           | Measurement time point            |
 | plant_height_lidar.tsv#col=3 | text/tab-separated-values | rfc7111              | plant height       | OBA             | OBA_VT0001251         | centimeter | UO              | UO_0000015            | double      | xsd             | xsd:double            | Plant height measured using LiDAR |
+
+</NoWrapTable>
+
 
 For readability, URIs are shortened to prefixes (e.g. `UO`, `OBA`, `xsd`) in this example.
 

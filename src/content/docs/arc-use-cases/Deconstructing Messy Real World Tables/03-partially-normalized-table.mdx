@@ -6,6 +6,8 @@ authors:
   - timo-muehlhaus
 ---
 
+import { Card } from '@astrojs/starlight/components';
+
 ## From clean tables to explicit structure
 
 After extracting a clean wide table from a messy spreadsheet, we have already made significant progress. The data is no longer mixed with formatting or annotations, and the table has a clear rectangular structure that can be interpreted without relying on visual cues.
@@ -195,10 +197,13 @@ In DataPLANT, this role is fulfilled by the **DataMap**, which allows us to anno
 In the next part, we will explore how data is stored, versioned, and annotated using the DataMap, and how this enables us to work with heterogeneous and partially normalized data in a consistent manner.
 
 
-## Self-check questions
+<Card title="Self-check questions" icon="approve-check">
+
 * Which component of the measurement is still implicit in the partially normalized table?
 * Why do column names such as Height_Day1 become problematic as data grows?
 * What advantages does introducing a dedicated “Day” column provide?
 * In which situations is a partially normalized table an appropriate or even ideal representation?
 * Why is it not always necessary to fully normalize a dataset?
 * How could you describe the meaning and usage of a column if it is not explicitly encoded in the table structure?
+
+</Card>
