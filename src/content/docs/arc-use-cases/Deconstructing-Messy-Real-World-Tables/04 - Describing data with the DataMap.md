@@ -1,0 +1,171 @@
+---
+title: From format-driven to clean wide table(s)
+sidebar:
+  order: 5.4
+authors:
+  - timo-muehlhaus
+---
+
+# Describing data with the DataMap
+
+## From structure to meaning
+
+In the previous sections, we focused on improving the **structure** of our data. We transformed a messy spreadsheet into a clean and partially normalized table where key components of the measurement became explicit.
+
+At this point, our data looks like this:
+
+| PlantID | Day | Height |
+| ------- | --- | ------ |
+| P1      | 1   | 10     |
+| P1      | 2   | 12     |
+| P2      | 1   | 8      |
+| P2      | 2   | 9      |
+
+This table is already much easier to interpret than the original spreadsheet. However, an important question remains:
+
+> How do we make sure that others understand what this data *means*?
+
+The table tells us how values are arranged, but not fully what they represent, how they were generated, or how they should be interpreted.
+
+To complete the picture, we now introduce two additional layers:
+
+* the **assay**, which provides experimental context
+* the **DataMap**, which provides semantic annotation
+
+## A small LiDAR assay example
+
+To make this concrete, let us assume that plant height was measured using a **LiDAR-based assay**.
+
+Within an
+**Annotated Research Context (ARC)**,
+this would be represented as an assay folder:
+
+```text
+assays/
+  LiDARHeightMeasurement/
+    dataset/
+      plant_height_lidar.tsv
+    protocols/
+      lidar_measurement_protocol.md
+    isa.assay.xlsx
+    README.md
+```
+
+The actual measurement table is stored in:
+
+`dataset/plant_height_lidar.tsv`
+
+and contains:
+
+| PlantID | Day | Height |
+| ------- | --- | ------ |
+| P1      | 1   | 10     |
+| P1      | 2   | 12     |
+| P2      | 1   | 8      |
+| P2      | 2   | 9      |
+
+This file contains the **values**, but not their full meaning.
+
+## The role of the assay table
+
+The assay itself provides the **experimental and technical context**. A minimal `isa.assay.xlsx` for this example could look like this:
+
+| Sample Name | Protocol REF             | Parameter[Day] | Parameter [instrument model] | Raw Data File                  |
+| ----------- | ------------------------ | -------------- | ---------------------------- | ------------------------------ |
+| P1          | LiDAR height acquisition | 1              | LiDAR                        | dataset/plant_height_lidar.tsv |
+| P1          | LiDAR height acquisition | 2              | LiDAR                        | dataset/plant_height_lidar.tsv |
+| P2          | LiDAR height acquisition | 1              | LiDAR                        | dataset/plant_height_lidar.tsv |
+| P2          | LiDAR height acquisition | 2              | LiDAR                        | dataset/plant_height_lidar.tsv |
+
+This table does not duplicate the measurement values. Instead, it:
+
+* links samples to the **measurement protocol**
+* records relevant **parameters** (e.g. day, instrument)
+* connects the assay to the **data file**
+
+In other words:
+
+> The assay tells us **where the data comes from and how it was generated**.
+
+However, it still does not fully define what each column in the dataset means.
+
+## The role of the DataMap
+
+This is where the DataMap comes in.
+
+The **DataMap** provides a way to annotate **fragments of data files**, such as columns, in a structured and machine-readable way.
+
+Each row in the DataMap refers to a specific fragment of a file and describes its meaning.
+
+For our LiDAR example, a DataMap could look like this:
+
+| Data                         | Data Format               | Data Selector Format | Explication        | Term Source REF | Term Accession Number | Unit       | Term Source REF | Term Accession Number | Object Type | Term Source REF | Term Accession Number | Description                       |
+| ---------------------------- | ------------------------- | -------------------- | ------------------ | --------------- | --------------------- | ---------- | --------------- | --------------------- | ----------- | --------------- | --------------------- | --------------------------------- |
+| plant_height_lidar.tsv#col=1 | text/tab-separated-values | rfc7111              | plant identifier   |                 |                       |            |                 |                       | string      | xsd             | xsd:string            | Identifier of the measured plant  |
+| plant_height_lidar.tsv#col=2 | text/tab-separated-values | rfc7111              | day of measurement |                 |                       | day        | UO              | UO_0000033            | integer     | xsd             | xsd:integer           | Measurement time point            |
+| plant_height_lidar.tsv#col=3 | text/tab-separated-values | rfc7111              | plant height       | OBA             | OBA_VT0001251         | centimeter | UO              | UO_0000015            | double      | xsd             | xsd:double            | Plant height measured using LiDAR |
+
+For readability, URIs are shortened to prefixes (e.g. `UO`, `OBA`, `xsd`) in this example.
+
+## Putting the pieces together
+
+At this point, we have three complementary layers:
+
+* the **dataset** (`plant_height_lidar.tsv`)
+  → contains the actual measurement values
+
+* the **assay table** (`isa.assay.xlsx`)
+  → describes the measurement process and links data files
+
+* the **DataMap**
+  → annotates what each column in the dataset represents
+
+Each layer answers a different question:
+
+* dataset → *What are the values?*
+* assay → *How were they generated?*
+* DataMap → *What do they mean?*
+
+This separation is essential, because:
+
+> Not all meaning can or should be encoded directly in the table structure.
+
+## Why this matters for real-world data
+
+In practice, datasets are rarely perfectly normalized or uniform. We often encounter:
+
+* partially normalized tables
+* outputs from instruments
+* intermediate analysis files
+* mixed representations across workflows
+
+Instead of forcing all data into one strict format, the combination of:
+
+* **structured tables**
+* **assay context**
+* **DataMap annotation**
+
+allows us to work with heterogeneous data in a consistent and interpretable way.
+
+## A note on storage formats
+
+Once data is structured and annotated, it should be stored in a format that preserves these properties.
+
+Plain text tabular formats such as TSV or CSV are recommended because they are:
+
+* easy to process programmatically
+* suitable for long-term storage
+* compatible with a wide range of tools
+* well suited for version control systems such as Git
+
+## Transition to the final step
+
+At this stage, we have:
+
+* improved the structure of the data
+* provided experimental context through the assay
+* annotated semantic meaning through the DataMap
+
+The final step is to decide whether we also want to make the **variable itself explicit within the table**.
+
+This leads to the fully normalized long format, where each row represents one complete measurement.
