@@ -1,0 +1,209 @@
+---
+title: "Partially normalized tables: making structure explicit"
+sidebar:
+  order: 5.3
+authors:
+  - timo-muehlhaus
+---
+
+import { Card } from '@astrojs/starlight/components';
+
+## From clean tables to explicit structure
+
+After extracting a clean wide table from a messy spreadsheet, we have already made significant progress. The data is no longer mixed with formatting or annotations, and the table has a clear rectangular structure that can be interpreted without relying on visual cues.
+
+However, even in this cleaned form, the table still does not fully represent the underlying measurements. Some parts of the measurement are still **encoded in the structure of the table itself**. The next step is therefore not about storage or formatting, but about **making meaning explicit**.
+
+## Where structure is still hidden
+
+Consider the cleaned table:
+
+| PlantID | Day1 | Day2 |
+| ------- | ---- | ---- |
+| P1      | 10   | 12   |
+| P2      | 8    | 9    |
+
+At first glance, this table appears simple and usable. But if we interpret it through the lens of the measurement model introduced earlier, an important limitation becomes visible.
+
+> Some parts of the measurement are still encoded in the *column names*.
+
+Revisiting the measurement components:
+
+* **Entity** is explicit (`PlantID`)
+* **Value** is explicit (cell values)
+* **Context** (Day) is encoded in the column names
+* **Variable** (Height) is not represented explicitly at all
+
+The table is therefore only **partially explicit**, even though it looks clean.
+
+## Why encoded structure becomes a problem
+
+Encoding information in column names is convenient for small datasets, but it does not scale well. As soon as the dataset grows, the structure of the table becomes increasingly complex.
+
+If additional time points are added, new columns must be introduced:
+
+| PlantID | Day1 | Day2 | Day3 | Day4 |
+| ------- | ---- | ---- | ---- | ---- |
+
+If additional variables are measured, the encoding becomes more elaborate:
+
+| PlantID | Height_Day1 | Height_Day2 | Weight_Day1 | Weight_Day2 |
+| ------- | ----------- | ----------- | ----------- | ----------- |
+
+At this point, the structure of the table begins to carry a large amount of implicit information. This leads to rapidly growing numbers of columns, inconsistent naming conventions, and increasing difficulty in querying or transforming the data.
+
+> The table structure itself starts to encode the experiment, rather than simply representing measurements.
+
+## Making context explicit
+
+To address this, we begin by extracting one dimension of the encoded structure and turning it into an explicit column. In this example, we make the **time dimension (Day)** explicit.
+
+| PlantID | Day | Height |
+| ------- | --- | ------ |
+| P1      | 1   | 10     |
+| P1      | 2   | 12     |
+| P2      | 1   | 8      |
+| P2      | 2   | 9      |
+
+This transformation is commonly referred to as **pivoting** or **unpivoting**, and it represents the first concrete step toward normalization.
+
+## What changed conceptually?
+
+With the introduction of the *Day* column, the table moves closer to the measurement model.
+
+* **Entity** is explicit
+* **Context** is now explicit
+* **Value** remains explicit
+* **Variable** is still implicit (represented by the column `Height`)
+
+Each row now corresponds to a measurement at a specific time point, but the representation is still limited to a single variable.
+
+In other words:
+
+> We have made the context explicit, but the measurement is not yet fully generalized.
+
+## Why this step matters
+
+Even this partial transformation provides significant benefits. The table becomes easier to extend, as new time points can be added without introducing new columns. It also becomes easier to filter and process, for example when selecting all measurements from a specific day.
+
+At the same time, the table remains relatively compact and intuitive, especially for users familiar with spreadsheet-based workflows. This makes partially normalized tables a useful intermediate representation between informal spreadsheets and fully structured data.
+
+This is a very important addition. You are introducing two key ideas:
+
+* partial normalization as a **valid and often ideal compromise**
+* the need for **annotation (DataMap, provenance vs. semantic meaning)** when structure alone is not sufficient
+
+I’ve rewritten your section to:
+
+* clean up language and grammar
+* integrate it smoothly into the narrative
+* clarify the two “sides” of annotation (usage vs. meaning)
+* keep your intent and examples intact
+* align with the style of previous parts
+
+---
+
+## When partially normalized tables are ideal
+
+It is important to recognize that full normalization is not always required.
+
+In many practical situations, partially normalized tables represent an **ideal compromise between machine readability and human readability**. They are especially useful when working with a small and well-defined set of variables, performing standard statistical analyses, or preparing intermediate datasets for further processing.
+
+At this stage, we have already achieved several important improvements:
+
+* formatting and visual encoding have been removed
+* the data region has been clearly identified
+* structural complexity has been reduced
+* contextual information (such as time) has been made explicit
+
+This results in a table that is significantly easier to interpret and process, while still remaining intuitive for users familiar with spreadsheet-based workflows. In many real-world scenarios, this level of structure is sufficient.
+
+## What is still missing?
+
+Despite these improvements, one important component of the measurement remains implicit: the **variable** itself.
+
+To fully represent measurements in a general and scalable way, the variable must also become an explicit part of the data. This becomes particularly important when we want to extend datasets by **stacking different variables** into a common structure.
+
+Full normalization therefore requires that:
+
+> each measurement is represented independently by making the **variable itself explicit**
+
+This leads to the fully normalized long format, where each row corresponds to one complete measurement. In this representation, the variable is no longer implied by the table structure but becomes an explicit column.
+
+## Real-world data is rarely fully normalized
+
+In practice, data rarely exists in a single, perfectly normalized form. Instead, real-world datasets are often a mixture of:
+
+* partially normalized tables
+* fully normalized tables
+* wide tables produced by different tools
+* intermediate representations created during analysis
+
+As a result, it is not always possible or even desirable to enforce a single structure across all data.
+
+This raises an important question:
+
+> How can we work with mixed or partially structured data in a consistent and interpretable way?
+
+## Beyond structure: annotating meaning and usage
+
+When structure alone is not sufficient, we need additional mechanisms to describe what the data represents and how it is used.
+
+Within an **Annotated Research Context (ARC)**, this is achieved by separating two complementary aspects:
+
+### 1. Operational context (provenance and usage)
+
+One way to understand a variable is through the **process that produced it** and how it is used in downstream analysis.
+
+For example, the same column may play different roles in different workflows:
+
+* in one workflow, values from column B are used as a **feature**
+* in another workflow, the same values are used as a **response variable**
+* in yet another workflow, they are used for **normalization**
+
+In this sense, the meaning of a variable is partly defined by its **usage context**.
+
+### 2. Semantic designation (what the values represent)
+
+Independently of how a variable is used, we can also describe its **semantic meaning**.
+
+For example:
+
+* values in column C may represent **amounts**
+* in another dataset, values in column C may represent **gene identifiers**
+
+This aspect describes *what the data is*, independent of how it is used.
+
+### Why this separation matters
+
+These two aspects are deliberately kept separate, because:
+
+> The same semantic designation can be used in different operational contexts without conflict.
+
+For example, a measurement of gene expression may be used as:
+
+* a feature in one analysis
+* a response variable in another
+* an input for normalization in a third
+
+The underlying meaning of the data does not change, but its role in analysis does.
+
+## Transition: the role of the DataMap
+
+To consistently describe both the **structure** and the **meaning** of data across different representations, we need a unifying layer.
+
+In DataPLANT, this role is fulfilled by the **DataMap**, which allows us to annotate datasets in a structured and interoperable way.
+
+In the next part, we will explore how data is stored, versioned, and annotated using the DataMap, and how this enables us to work with heterogeneous and partially normalized data in a consistent manner.
+
+
+<Card title="Self-check questions" icon="approve-check">
+
+* Which component of the measurement is still implicit in the partially normalized table?
+* Why do column names such as Height_Day1 become problematic as data grows?
+* What advantages does introducing a dedicated “Day” column provide?
+* In which situations is a partially normalized table an appropriate or even ideal representation?
+* Why is it not always necessary to fully normalize a dataset?
+* How could you describe the meaning and usage of a column if it is not explicitly encoded in the table structure?
+
+</Card>
