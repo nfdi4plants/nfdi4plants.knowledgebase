@@ -400,7 +400,9 @@ for (const brapiStudy of brapiStudies) {
 
 ### Export ARC to PLANTdataHUB using Gitlab API
 
-We have now sucessfully updated our ARC. The last step is to export it to the PLANTdataHUB. We will be using the Gitlab REST API for this:
+We have now sucessfully updated our ARC. The last step is to export it to the PLANTdataHUB. We will be using the Gitlab REST API for this. To write the ARC, we will make use of Contracts.
+ARCtrl allows to create Write Contracts for the ISA files using the `GetWriteContracts()` function. We will use those contracts and the `Xlsx` library to create virtual files that are not stored on the local filesystem to add actions to the Gitlab Commit payload by base64 encoding the Investigation, Studies and Assays. Afterwards we also add make sure that the Datamaps and Datafiles are also included as base64 encoded strings in the commit actions.
+Finally, the commit is send to the PLANTdataHUB.
 
 <Tabs>
 
