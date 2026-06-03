@@ -3,7 +3,6 @@ title: "Datamap"
 lastUpdated: 2025-07-08
 authors:
   - lukas-weil
-  - manuel-feser
 sidebar:
   order: 4
 ---
@@ -190,8 +189,11 @@ datamap = DataMap([col1Entry, col2Entry])
 
 ## Writing the Datamap
 
-Use the `XlsxController` to write the `Datamap` to a singular Excel file, usable in or out of the ARC context.
+We have two approaches to write the `Datamap` to a file:
 
+<Card title="1. Single File">
+
+Using the `XlsxController` to write the `Datamap` to a singular Excel file, usable in or out of the ARC context.
 <Tabs syncKey="pl">
 {/* FSHARP */}
 <TabItem label="FSharp" icon='seti:f-sharp'>
@@ -225,3 +227,55 @@ XlsxController.Datamap().to_xlsx_file("isa.datamap.xlsx", datamap)
 ```
 </TabItem>
 </Tabs>
+
+Collapse commentComment on line L231HLWeil commented on Feb 17, 2026 HLWeilon Feb 17, 2026MemberMore actionsThis works. Just tested it in FSharp. If it doesn't in Javascript then there is a bug..ReactWrite a replyResolve comment
+</Card>
+
+<Card title="2. As part of an ARC">
+
+Include the `Datamap` in an `ARC` and write or update the whole `ARC`, which will include the `Datamap` as well.
+
+1. First, we load the `ARC` from a repository.
+2. Then we set the `DataMap` of the assay "MyAssay" to our `datamap`.
+3. Finally, we update the `ARC` to write the changes back to the repository.
+
+<Tabs syncKey="pl">
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:f-sharp'>
+```fsharp
+let arc = ARC.load("path_to_my_arc")
+
+arc.ISA.Value.GetAssay("MyAssay").DataMap <- Some datamap
+
+arc.Update("path_to_my_arc")
+
+```
+</TabItem>
+
+
+
+{/* JAVASCRIPT */}
+<TabItem label="JavaScript" icon='seti:javascript'>
+
+```js
+// Will be part of tutorial for ARCtrl >=3.0.0
+```
+</TabItem>
+
+
+{/* PYTHON */}
+<TabItem label="Python" icon='seti:python'>
+```py
+
+from arctrl.arctrl import ARC
+
+arc = ARC.load("path_to_my_arc")
+
+arc.ISA.GetAssay("MyAssay").DataMap = datamap
+
+arc.Update("path_to_my_arc")
+
+```
+</TabItem>
+</Tabs>
+</Card>
