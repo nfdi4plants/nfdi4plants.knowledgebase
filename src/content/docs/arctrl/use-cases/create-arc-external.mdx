@@ -212,12 +212,14 @@ for (const brapiStudy of brapiStudies) {
     arcAssay.Title = mapping[brapiStudy.studyDbId].arcAssay;
 
     // Create field plant table
+    // Creates the table with its columns
     let fieldPlanTable = ArcTable.init(FIELD_PLAN_TABLE_NAME);
     fieldPlanTable.AddColumn(CompositeHeader.characteristic(new OntologyAnnotation('replicate', 'EFO', 'EFO:EFO_0000683')));
     fieldPlanTable.AddColumn(CompositeHeader.characteristic(new OntologyAnnotation('row', 'NCIT', 'NCIT:C43379')));
     fieldPlanTable.AddColumn(CompositeHeader.characteristic(new OntologyAnnotation('column', 'NCIT', 'NCIT:C43378')));
     fieldPlanTable.AddColumn(CompositeHeader.characteristic(new OntologyAnnotation('entry type', 'NCIT', 'NCIT:C25284')));
 
+    // Fill the table with rows following the previously defined table columns
     for (let ou of observationUnits) {
       let inputCell = CompositeCell.freeText(ou.observationUnitName);
       let replicateCell = CompositeCell.createTermFromString(ou.observationUnitPosition.observationLevel.levelCode || '');
