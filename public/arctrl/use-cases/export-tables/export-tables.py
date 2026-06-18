@@ -1,5 +1,4 @@
-from arctrl.arc import ARC
-from arctrl.arctrl import  JsonController
+from arctrl import ARC,JsonController
 
 import json
 

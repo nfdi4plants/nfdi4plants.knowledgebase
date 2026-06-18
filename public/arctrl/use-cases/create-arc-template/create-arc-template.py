@@ -1,6 +1,4 @@
-from arctrl.arc import ARC
-from arctrl.arctrl import ArcInvestigation, Person
-from arctrl.arctrl import JsonController
+from arctrl import ARC, ArcInvestigation, Person, JsonController
 
 import json
 

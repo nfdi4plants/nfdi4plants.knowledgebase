@@ -46,7 +46,7 @@ let datamap = XlsxController.Datamap.fromXlsxFile("isa.datamap.xlsx")
 {/* PYTHON */}
 <TabItem label="Python" icon='seti:python'>
 ```py
-from arctrl.arctrl import XlsxController
+from arctrl import XlsxController
 
 investigation = XlsxController.Investigation().from_xlsx_file("isa.investigation.xlsx")
 study = XlsxController.Study().from_xlsx_file("isa.study.xlsx")
@@ -92,7 +92,7 @@ XlsxController.Datamap.toXlsxFile("isa.datamap.xlsx", datamap)
 {/* PYTHON */}
 <TabItem label="Python" icon='seti:python'>
 ```py
-from arctrl.arctrl import XlsxController
+from arctrl import XlsxController
 
 XlsxController.Investigation().to_xlsx_file("isa.investigation.xlsx",investigation)
 XlsxController.Study().to_xlsx_file("isa.study.xlsx",study)
@@ -139,7 +139,7 @@ let assay = JsonController.Assay.fromISAJsonString(myJson)
 {/* PYTHON */}
 <TabItem label="Python" icon='seti:python'>
 ```py
-from arctrl.arctrl import  JsonController
+from arctrl import  JsonController
 
 investigation = JsonController.Investigation().from_json_string(myJsonString)
 study = JsonController.Study().from_json_string(myJsonString)
@@ -181,7 +181,7 @@ JsonController.Assay.toISAJsonString(assay)
 {/* PYTHON */}
 <TabItem label="Python" icon='seti:python'>
 ```py
-from arctrl.arctrl import  JsonController
+from arctrl import  JsonController
 
 JsonController.Investigation().to_json_string(investigation)
 JsonController.Study().to_json_string(study)

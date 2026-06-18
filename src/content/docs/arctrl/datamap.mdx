@@ -79,7 +79,7 @@ let float_type = OntologyAnnotation(
 <TabItem label="Python" icon='seti:python'>
 ```py
 
-from arctrl.arctrl import OntologyAnnotation
+from arctrl import OntologyAnnotation
 
 molecule_count = OntologyAnnotation(
     name="molecule count",
@@ -139,7 +139,7 @@ let col2Entry = DataContext(
     description="Measured sugar concentration in sample 1, replicate 2"
 )
 
-let datamap = DataMap(ResizeArray[col1Entry; col2Entry])
+let datamap = Datamap(ResizeArray[col1Entry; col2Entry])
 ```
 </TabItem>
 
@@ -157,7 +157,7 @@ let datamap = DataMap(ResizeArray[col1Entry; col2Entry])
 {/* PYTHON */}
 <TabItem label="Python" icon='seti:python'>
 ```py
-from arctrl.Core.data_map import DataContext, DataMap
+from arctrl import DataContext, Datamap
 
 col1Entry = DataContext(
     name="assays/MyAssay/dataset/sugar_result.csv#col=1",
@@ -181,7 +181,7 @@ col2Entry = DataContext(
     description="Measured sugar concentration in sample 1, replicate 2"
 )
 
-datamap = DataMap([col1Entry, col2Entry])
+datamap = Datamap([col1Entry, col2Entry])
 ```
 
 </TabItem>
@@ -221,7 +221,7 @@ XlsxController.Datamap.toXlsxFile("isa.datamap.xlsx", datamap)
 <TabItem label="Python" icon='seti:python'>
 ```py
 
-from arctrl.arctrl import XlsxController
+from arctrl import XlsxController
 
 XlsxController.Datamap().to_xlsx_file("isa.datamap.xlsx", datamap)
 
@@ -236,7 +236,7 @@ XlsxController.Datamap().to_xlsx_file("isa.datamap.xlsx", datamap)
 Include the `Datamap` in an `ARC` and write or update the whole `ARC`, which will include the `Datamap` as well.
 
 1. First, we load the `ARC` from a repository.
-2. Then we set the `DataMap` of the assay "MyAssay" to our `datamap`.
+2. Then we set the `Datamap` of the assay "MyAssay" to our `datamap`.
 3. Finally, we update the `ARC` to write the changes back to the repository.
 
 <Tabs syncKey="pl">
@@ -245,7 +245,7 @@ Include the `Datamap` in an `ARC` and write or update the whole `ARC`, which wil
 ```fsharp
 let arc = ARC.load("path_to_my_arc")
 
-arc.ISA.Value.GetAssay("MyAssay").DataMap <- Some datamap
+arc.ISA.Value.GetAssay("MyAssay").Datamap <- Some datamap
 
 arc.Update("path_to_my_arc")
 
@@ -267,11 +267,11 @@ arc.Update("path_to_my_arc")
 <TabItem label="Python" icon='seti:python'>
 ```py
 
-from arctrl.arctrl import ARC
+from arctrl import ARC
 
 arc = ARC.load("path_to_my_arc")
 
-arc.ISA.GetAssay("MyAssay").DataMap = datamap
+arc.ISA.GetAssay("MyAssay").Datamap = datamap
 
 arc.Update("path_to_my_arc")
 
