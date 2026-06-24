@@ -57,3 +57,182 @@ arc = ARC()
 
 </TabItem>
 </Tabs>
+
+
+# Read and write
+
+ARCtrl offers a variety of IO functionality to read and write ARCs. 
+
+## Load
+
+The `load` function reads the ARC Scaffold representation for a given path.
+
+<Tabs syncKey="pl">
+
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:f-sharp'>
+
+```fsharp
+open ARCtrl
+
+let myArcPath = @"arcs/myARC/"
+
+let arc = ARC.load(myArcPath)
+```
+</TabItem>
+
+{/* JAVASCRIPT */}
+<TabItem label="JavaScript" icon='seti:javascript'>
+
+```js
+import {ARC} from "@nfdi4plants/arctrl";
+
+let myArcPath = "arcs/myARC/"
+
+ARC.loadAsync(myArcPath)
+```
+</TabItem>
+
+{/* PYTHON */}
+<TabItem label="Python" icon='seti:python'>
+
+```py
+from arctrl.arc import ARC
+
+myArcPath = "arcs/myARC/"
+
+arc = ARC.load(myArcPath)
+```
+
+</TabItem>
+</Tabs>
+
+
+## Write
+
+The `write` function writes the whole ARC as its Scaffold representation to a given path. It will overwrite all metadata files like `isa.assay.xlsx` and such.
+
+<Tabs syncKey="pl">
+
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:f-sharp'>
+
+```fsharp
+open ARCtrl
+
+let myArcPath = @"arcs/myARC/"
+
+arc.Write(myArcPath)
+```
+</TabItem>
+
+{/* JAVASCRIPT */}
+<TabItem label="JavaScript" icon='seti:javascript'>
+
+```js
+import {ARC} from "@nfdi4plants/arctrl";
+
+let myArcPath = "arcs/myARC/"
+
+arc.WriteAsync(myArcPath)
+```
+</TabItem>
+
+{/* PYTHON */}
+<TabItem label="Python" icon='seti:python'>
+
+```py
+from arctrl.arc import ARC
+
+myArcPath = "arcs/myARC/"
+
+arc.Write(myArcPath)
+```
+
+</TabItem>
+</Tabs>
+
+
+## Update
+
+The `update` function updates the ARC as its Scaffold representation to a given path. 
+It will only write those entities which have changed in the datamodel since the last `load`, `write` or `update` operation.
+
+<Tabs syncKey="pl">
+
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:f-sharp'>
+
+```fsharp
+open ARCtrl
+
+let myArcPath = @"arcs/myARC/"
+
+arc.Update(myArcPath)
+```
+</TabItem>
+
+{/* JAVASCRIPT */}
+<TabItem label="JavaScript" icon='seti:javascript'>
+
+```js
+import {ARC} from "@nfdi4plants/arctrl";
+
+let myArcPath = "arcs/myARC/"
+
+arc.UpdateAsync(myArcPath)
+```
+</TabItem>
+
+{/* PYTHON */}
+<TabItem label="Python" icon='seti:python'>
+
+```py
+from arctrl.arc import ARC
+
+myArcPath = "arcs/myARC/"
+
+arc.Update(myArcPath)
+```
+
+</TabItem>
+</Tabs>
+
+# RO-Crate
+
+ARCs can seemlessly be read from and parsed to their RO-Crate JSON-LD string representation:
+
+
+<Tabs syncKey="pl">
+
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:f-sharp'>
+
+```fsharp
+let jsonString = arc.ToROCrateJsonString(spaces = 2)
+
+let arc2 = ARC.fromROCrateJsonString(jsonString)
+```
+</TabItem>
+
+{/* JAVASCRIPT */}
+<TabItem label="JavaScript" icon='seti:javascript'>
+
+```js
+let jsonString = arc.ToROCrateJsonString(2)
+
+let arc2 = ARC.fromROCrateJsonString(jsonString)
+```
+</TabItem>
+
+{/* PYTHON */}
+<TabItem label="Python" icon='seti:python'>
+
+```py
+jsonString = arc.ToROCrateJsonString(spaces = 2)
+
+arc2 = ARC.from_rocrate_json_string(jsonString)
+```
+
+</TabItem>
+</Tabs>
