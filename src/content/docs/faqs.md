@@ -221,6 +221,30 @@ Is it possible to use common Excel functionalities?
 
 Yes. In fact, this is one of the reasons why we decided to embed Swate within Excel, as it allows users to continue using the Excel functionality they are accustomed to. -->
 
+
+</details>
+
+<details><summary><span style="color: #1fc2a7">
+How do I change the investigation identifier?
+</summary>
+
+Changing the investigation identifier is not directly supported by ARCitect as it comes with a few pitfalls that one needs to be aware of:
+
+By default, the investigation identifier 
+1. aligns with the ARC folder name on your computer
+2. is used to create the ARC's URL and Display name in the DataHUB
+
+To change the ID manually, you can edit the `Investigation Identifier` field in the `isa.investigation.xlsx` file.
+When working with ARCitect, the ARC needs to be reloaded afterwards.
+Furthermore, it is recommended to
+1. Change the local ARC folder name accordingly
+2. Change the DataHUB URL and Display name in the [ARC settings](/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-arc-settings)
+3. Let ARC collaborators know about the URL change
+
+</details>
+
+
+
 </details>
 
 <details><summary><span style="color: #1fc2a7">
