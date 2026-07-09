@@ -1,0 +1,37 @@
+---
+title: ARC Publications
+lastUpdated: 2026-07-09
+authors:
+  - kevin-schneider
+  - dominik-brilhaus
+---
+
+## Introduction
+
+Here we provide a general overview on DataPLANT's data publication process. For practical guides on each step, check out the sidebar or refer to the guide links in this document.
+
+Data is usually the primary output of scientific research; in contrast, the universal measurement of research success is the publication. In the past, accessing the underlying data of a published research paper required the tedious process of contacting the original authors and asking for access.
+
+ARCs are FAIR Digital Objects (FDOs). One of DataPLANT's main goal is facilitating the publication of ARCs as data publications.
+
+This is achieved by a set of services and tools that are integrated into [DataPLANT's DataHUB](/nfdi4plants.knowledgebase/datahub/).
+
+## Data publication services and tools
+
+### Continuous Quality Control (CQC)
+
+Upon every commit to an ARC repository, PLANTdataHUB can perform automated quality control measures based on the committed changes. For more information, have a look at [Continuous Quality Control (CQC) pipelines & ARC validation](/nfdi4plants.knowledgebase/arc-validation/cqc-pipelines).
+
+### ARChigator: the ARC submission service
+
+The ARChigator is an interface for submitting ARCs hosted on DataHUB for publication in the [ARChive](https://archive.nfdi4plants.org/). Only ARCs that pass CQC are eligible for submission.
+
+ARChigator also acts as a last-stop preview of the ARC record metadata and data. When submitting an ARC, ARChigator will display the metadata record that will be used for the data publication. This allows for a last manual check if the metadata is correct and complete before submitting the ARC.
+
+Once submitted via ARCigator, ARCs are submitted as a request for publication (**RFP**) to the [ARChive](https://archive.nfdi4plants.org/communities/dataplant).
+
+### ARChive: The collection of published ARCs
+
+Once an ARC is in **RFP** stage, emails are sent to the addresses registered in the ARCs metadata that contain a link to the ARCs publication status page. **RFP**s are reviewed by DataPLANT's reviewer board, which might request changes to metadata entries to meet certain quality criteria. 
+
+If the RFP is accepted, the ARC is published and a [Digital Object Identifier (**DOI**)](https://www.doi.org/the-identifier/what-is-a-doi/) is registered for the ARC.

@@ -1,8 +1,9 @@
 ---
 title: Use your DOIs
-lastUpdated: 2023-09-07
+lastUpdated: 2026-07-09
 authors:
   - kevin-schneider
+  - dominik-brilhaus
 ---
 
 :::note

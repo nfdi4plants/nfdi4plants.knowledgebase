@@ -77,6 +77,14 @@ export default defineConfig({
           items: [
             {collapsed: true, label: 'ARC Annotation Use-Cases', autogenerate: { directory: 'arc-use-cases' }}
           ]
+        },
+        {
+          label: 'ARC Publications',
+          icon: 'add-document',
+          link: 'arc-publications',
+          items: [
+            {collapsed: true, label: 'ARC Publications', autogenerate: { directory: 'arc-publications' }}
+          ]
         },        
         {
           label: 'Guides and docs',

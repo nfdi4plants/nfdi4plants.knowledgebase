@@ -1,19 +1,32 @@
 ---
-title: Passing Continuous Quality Control
-lastUpdated: 2023-09-07
+title: ARC Validation and Continuous Quality Control
+lastUpdated: 2026-07-09
 authors:
   - kevin-schneider
+  - dominik-brilhaus
 ---
-
-:::note
-All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](/nfdi4plants.knowledgebase/arc-validation/cqc-pipelines) to learn how to opt-in.
-:::
 
 Continuous Quality Control (**CQC**) is a process that ensures the quality of the metadata of an ARC meets certain standards.
 
-Read more about the general CQC process [here](/nfdi4plants.knowledgebase/arc-validation/cqc-pipelines).
 
-in short the CQC pipeline is performed on each commit to an ARC, and the results of each step (e.g., validation against a user-selected validation package) are displayed on the ARC homepage:
+:::note
+Read more about the general CQC process [here](/nfdi4plants.knowledgebase/arc-validation/cqc-pipelines).
+:::
+
+In short the validation and CQC pipeline is performed on each commit to an ARC, and the results of each step (e.g., validation against a user-selected validation package) are displayed on the ARC homepage.
+
+
+## Starting the publication process
+
+<!-- TODO!  
+
+make this user-friendly and clear, e.g. ARCitect
+
+-->
+
+To start the publication process, first make sure to install the [invenio validation package](https://avpr.nfdi4plants.org/package/invenio). Clicking on the _publish button_ **(2)** on the ARC homepage will start the publication process. Refer to the [ARChigator guide](/nfdi4plants.knowledgebase/datahub/data-publications/datahub-data-publications-archigator) for more information on the publication process.
+
+
 
 ## ARC homepage
 
@@ -52,9 +65,7 @@ Clicking on **(7)** will open the CQC pipeline, where each step can be viewed in
 - **(12)** _CQC step 3_: The ARC metadata is converted to a metadata record, which is used by subsequent tools to trigger the data publication and associated creation of a DOI via DataCite for that record.
 - **(13)**: _Test tab_ shows the results of each individual test performed in _CQC step 2_ **(11)**
 
-## Starting the publication process
 
-To start the publication process, first make sure to install the [invenio validation package](https://avpr.nfdi4plants.org/package/invenio). Clicking on the _publish button_ **(2)** on the ARC homepage will start the publication process. Refer to the [ARChigator guide](/nfdi4plants.knowledgebase/datahub/data-publications/datahub-data-publications-archigator) for more information on the publication process.
 
 ## What to do when the CQC pipeline fails?
 
