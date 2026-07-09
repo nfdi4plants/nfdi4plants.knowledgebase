@@ -3,12 +3,14 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import rehypeSlug from 'rehype-slug';
 import { rehypeAutolink } from './plugins/rehype-autolink';
+import { unified } from '@astrojs/markdown-remark';
 import starlightLinksValidator from 'starlight-links-validator'
 import starlightSidebarTopics from 'starlight-sidebar-topics'
 import starlightAutoSidebar from 'starlight-auto-sidebar'
 import starlightImageZoom from 'starlight-image-zoom'
 import starlightUiTweaks from 'starlight-ui-tweaks'
 import icon from "astro-icon";
+
 
 import react from '@astrojs/react';
 
@@ -59,175 +61,391 @@ export default defineConfig({
         }
 
       ),
-      starlightSidebarTopics(        
-        [
-        {
-          label: 'Start Here',
-          icon: 'rocket',
-          link: 'start-here',
-          id: 'start-here',
-          items:[
-            {label: "Start Here", autogenerate: { directory: 'start-here' }},              
-          ]
+      starlightSidebarTopics([
+  {
+    label: 'Start Here',
+    icon: 'rocket',
+    link: 'start-here',
+    id: 'start-here',
+    items: [
+      {
+        autogenerate: {
+          directory: 'start-here',
         },
-        {
-          label: 'Annotation Use-Cases',
-          icon: 'pencil',
-          link: 'arc-use-cases',
-          items: [
-            {collapsed: true, label: 'ARC Annotation Use-Cases', autogenerate: { directory: 'arc-use-cases' }}
-          ]
-        },        
-        {
-          label: 'Guides and docs',
-          icon: 'open-book',
-          link: 'index-docs',
-          id: 'guides',
-          items:[
-            'index-docs',
-            {collapsed: true, label: 'Fundamentals', autogenerate: { directory: 'fundamentals' }},
-            {collapsed: true, label: 'Core Concepts', autogenerate: { directory: 'core-concepts' }},
-            {collapsed: true, label: 'ARC Guides', autogenerate: { directory: 'guides' }},
-            {collapsed: true, label: 'Git-powered Lab Organization', 
-              items: [
-                {
-                  label: 'Git for Biologists',
-                  collapsed: true,
-                  autogenerate: { directory: 'guides-others/git-for-biologists'},               
-                },
-                {
-                  label: 'Writing SOPs in Markdown',
-                  collapsed: true,
-                  autogenerate: { directory: 'guides-others/writing-sops-in-markdown'},               
-                },
-                {
-                  label: 'Reviewing and Approving SOPs in Git',
-                  collapsed: true,
-                  autogenerate: { directory: 'guides-others/reviewing-and-approving-sops'},               
-                },
-              ]
+      },
+    ],
+  },
 
+  {
+    label: 'Annotation Use-Cases',
+    icon: 'pencil',
+    link: '/arc-use-cases/',
+    items: [
+      {
+        label: 'ARC Annotation Use-Cases',
+        items: [
+          {
+            autogenerate: {
+              directory: 'arc-use-cases',
             },
-            {collapsed: true, label: 'Git', autogenerate: { directory: 'git' }},
-            {collapsed: true, label: 'CWL', autogenerate: { directory: 'cwl' }},
-          ]
-        },
-        {
-          label: 'Tools and Services',
-          icon: 'setting',
-          link: 'index-tools-services',
-          items: [
-            'index-tools-services',
-            {collapsed: true, label: 'ARCitect', autogenerate: { directory: 'arcitect' }},
-            {collapsed: true, label: 'ARC Validation', autogenerate: { directory: 'arc-validation' }},
-            {collapsed: true, label: 'DataHUB', 
-              items: [
-                'datahub',           
-                {
-                  label: 'DataPLANT Account',
-                  collapsed: false,
-                  autogenerate: { directory: 'datahub/account'},
-                },
-                {
-                  label: 'Navigation & Settings',
-                  autogenerate: { directory: 'datahub/navigation-settings'},
-                },
-                'datahub/access-tokens',
-                {
-                  label: 'Working together',
-                  autogenerate: { directory: 'datahub/working-together'},
-                },
-                {
-                  label: 'ARC files',
-                  autogenerate: { directory: 'datahub/arc-files'},
-                },
-                {
-                  label: 'ARC features',
-                  autogenerate: { directory: 'datahub/arc-features'},
-                },
-                {
-                  label: 'Data Publications',
-                  autogenerate: { directory: 'datahub/data-publications'},
-                },
-                {
-                  label: 'Additional Features',
-                  autogenerate: { directory: 'datahub/features'},
-                },                
-              ]
-            },
-            {collapsed: true, label: 'ARC Commander', 
-              items:[
-                      'arc-commander',           
-                      {
-                        label: 'Setup',
-                        collapsed: false,
-                        autogenerate: { directory: 'arc-commander/setup'},
-                      },
-                      'arc-commander/using-arc',
-                      'arc-commander/arc-commander-quick-start',
-                      {
-                        label: 'Central Functions',
-                        collapsed: false,
-                        autogenerate: { directory: 'arc-commander/central-functions'},
-                      },
-                      {
-                        label: 'ISA metadata',
-                        collapsed: false,
-                        autogenerate: { directory: 'arc-commander/isa'},
-                      },
-                      'arc-commander/lfs',
-                    ]
-              
-            },
-            {collapsed: true, label: 'Swate', autogenerate: { directory: 'swate' }},
-            {collapsed: true, label: 'Boat', autogenerate: { directory: 'resources/boat' }},
-            {collapsed: true, label: 'ARCManager', autogenerate: { directory: 'arc-manager' }},
-            'resources/arc-summary',
-            'resources/dataplan',
-            'resources/elab2arc',
-            'resources/galaxy',
-            'resources/metadata-quiz',
-          ]
-        },
-        {
-          label: 'FAQs',
-          icon: 'comment',
-          link: 'faqs',
-          items:['faqs']
-        },
-        {
-          label: 'Workshops',
-          icon: 'star',
-          link: 'workshops',
-          id: 'workshops',
-          items: [
-            'workshops',
-            {
-              collapsed: true,
-              label: 'FDM-Werkstatt',
-              autogenerate: { directory: 'workshops/2026-fdm-werkstatt' }
-            },
-          ]
-        },
-        {
-          label: 'Development',
-          icon: 'forward-slash',
-          link: 'arctrl',
-          items: [
-            {collapsed: true, label: 'ARCtrl', autogenerate: { directory: 'arctrl' }},
-            'contribution',
-          ]
-        },
+          },
         ],
-        // {
-        //   // https://starlight-sidebar-topics.netlify.app/docs/guides/excluded-pages/
-        //   exclude: [
-        //     '**/start-here/viola-cwl',
-        //     'docs/git/git-check',
-        //     'git/git-download'          
-        //   ],
-        //   },      
-      ),
+      },
+    ],
+  },
+
+  {
+    label: 'Guides and docs',
+    icon: 'open-book',
+    link: 'index-docs',
+    id: 'guides',
+    items: [
+      'index-docs',
+
+      {
+        label: 'Fundamentals',
+        items: [
+          {
+            autogenerate: {
+              directory: 'fundamentals',
+            },
+          },
+        ],
+      },
+
+      {
+        label: 'Core Concepts',
+        items: [
+          {
+            autogenerate: {
+              directory: 'core-concepts',
+            },
+          },
+        ],
+      },
+
+      {
+        label: 'ARC Guides',
+        items: [
+          {
+            autogenerate: {
+              directory: 'guides',
+            },
+          },
+        ],
+      },
+
+      {
+        label: 'Git-powered Lab Organization',
+        items: [
+          {
+            label: 'Git for Biologists',
+            items: [
+              {
+                autogenerate: {
+                  directory: 'guides-others/git-for-biologists',
+                },
+              },
+            ],
+          },
+
+          {
+            label: 'Writing SOPs in Markdown',
+            items: [
+              {
+                autogenerate: {
+                  directory: 'guides-others/writing-sops-in-markdown',
+                },
+              },
+            ],
+          },
+
+          {
+            label: 'Reviewing and Approving SOPs in Git',
+            items: [
+              {
+                autogenerate: {
+                  directory: 'guides-others/reviewing-and-approving-sops',
+                },
+              },
+            ],
+          },
+        ],
+      },
+
+      {
+        label: 'Git',
+        items: [
+          {
+            autogenerate: {
+              directory: 'git',
+            },
+          },
+        ],
+      },
+
+      {
+        label: 'CWL',
+        items: [
+          {
+            autogenerate: {
+              directory: 'cwl',
+            },
+          },
+        ],
+      },
+    ],
+  },
+    {
+    label: 'Tools and Services',
+    icon: 'setting',
+    link: 'index-tools-services',
+    items: [
+      'index-tools-services',
+
+      {
+        label: 'ARCitect',
+        items: [
+          {
+            autogenerate: {
+              directory: 'arcitect',
+            },
+          },
+        ],
+      },
+
+      {
+        label: 'ARC Validation',
+        items: [
+          {
+            autogenerate: {
+              directory: 'arc-validation',
+            },
+          },
+        ],
+      },
+
+      {
+        label: 'DataHUB',
+        items: [
+          'datahub',
+
+          {
+            label: 'DataPLANT Account',
+            items: [
+              {
+                autogenerate: {
+                  directory: 'datahub/account',
+                },
+              },
+            ],
+          },
+
+          {
+            label: 'Navigation & Settings',
+            items: [
+              {
+                autogenerate: {
+                  directory: 'datahub/navigation-settings',
+                },
+              },
+            ],
+          },
+
+          'datahub/access-tokens',
+
+          {
+            label: 'Working together',
+            items: [
+              {
+                autogenerate: {
+                  directory: 'datahub/working-together',
+                },
+              },
+            ],
+          },
+
+          {
+            label: 'ARC files',
+            items: [
+              {
+                autogenerate: {
+                  directory: 'datahub/arc-files',
+                },
+              },
+            ],
+          },
+
+          {
+            label: 'ARC features',
+            items: [
+              {
+                autogenerate: {
+                  directory: 'datahub/arc-features',
+                },
+              },
+            ],
+          },
+
+          {
+            label: 'Data Publications',
+            items: [
+              {
+                autogenerate: {
+                  directory: 'datahub/data-publications',
+                },
+              },
+            ],
+          },
+
+          {
+            label: 'Additional Features',
+            items: [
+              {
+                autogenerate: {
+                  directory: 'datahub/features',
+                },
+              },
+            ],
+          },
+        ],
+      },
+
+      {
+        label: 'ARC Commander',
+        items: [
+          'arc-commander',
+
+          {
+            label: 'Setup',
+            items: [
+              {
+                autogenerate: {
+                  directory: 'arc-commander/setup',
+                },
+              },
+            ],
+          },
+
+          'arc-commander/using-arc',
+          'arc-commander/arc-commander-quick-start',
+
+          {
+            label: 'Central Functions',
+            items: [
+              {
+                autogenerate: {
+                  directory: 'arc-commander/central-functions',
+                },
+              },
+            ],
+          },
+
+          {
+            label: 'ISA metadata',
+            items: [
+              {
+                autogenerate: {
+                  directory: 'arc-commander/isa',
+                },
+              },
+            ],
+          },
+
+          'arc-commander/lfs',
+        ],
+      },
+
+      {
+        label: 'Swate',
+        items: [
+          {
+            autogenerate: {
+              directory: 'swate',
+            },
+          },
+        ],
+      },
+
+      {
+        label: 'Boat',
+        items: [
+          {
+            autogenerate: {
+              directory: 'resources/boat',
+            },
+          },
+        ],
+      },
+
+      {
+        label: 'ARCManager',
+        items: [
+          {
+            autogenerate: {
+              directory: 'arc-manager',
+            },
+          },
+        ],
+      },
+
+      'resources/arc-summary',
+      'resources/dataplan',
+      'resources/elab2arc',
+      'resources/galaxy',
+      'resources/metadata-quiz',
+    ],
+  },
+          {
+    label: 'FAQs',
+    icon: 'comment',
+    link: 'faqs',
+    items: [
+      'faqs',
+    ],
+  },
+
+  {
+    label: 'Workshops',
+    icon: 'star',
+    link: 'workshops',
+    id: 'workshops',
+    items: [
+      'workshops',
+
+      {
+        label: 'FDM-Werkstatt',
+        items: [
+          {
+            autogenerate: {
+              directory: 'workshops/2026-fdm-werkstatt',
+            },
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    label: 'Development',
+    icon: 'forward-slash',
+    link: 'arctrl',
+    items: [
+      {
+        label: 'ARCtrl',
+        items: [
+          {
+            autogenerate: {
+              directory: 'arctrl',
+            },
+          },
+        ],
+      },
+
+      'contribution',
+    ],
+  },
+]),   
       ],
     expressiveCode: {
       defaultProps: {
@@ -240,9 +458,11 @@ export default defineConfig({
   }), 
   react()],
 
-  markdown: {
+markdown: {
+  processor: unified({
     rehypePlugins: [rehypeSlug, ...rehypeAutolink()],
-  },
+  }),
+},
 
   vite: {
     plugins: [tailwindcss()],
