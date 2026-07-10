@@ -15,7 +15,7 @@ On the commit click on the _invenio badge_ on the ARC homepage. Make sure that t
 
 After clicking the badge, you will be redirected to the ARChigator page, where you can review the metadata of the record that will be created in the ARChive. Note that you can only proceed to this page if you are logged in to DataHUB.
 
-![](@images/data-publications/archigator-metadata-review.png)
+![](@images/arc-publications/archigator-metadata-review.png)
 
 - **(4)**: The source of your ARC
 - **(5)**: Selected investigation metadata from the ARC that will also be shown in the publication record
@@ -25,7 +25,7 @@ Once you double-checked the metadata, you can proceed to submitting the ARC.
 
 ## Submit the ARC
 
-![](@images/data-publications/archigator-submit.png)
+![](@images/arc-publications/archigator-submit.png)
 
 - **(7)**: Name and image of the ARC. The `Ready` badge signifies that this ARC is eligible for publication (it has passed the CQC pipeline **(1)**). Note that you are stopped from publishing here at latest if the CQC pipeline fails.
 - **(8)**: You cannot publish an ARC that you do not have access control for on the DataHUB instance it is hosted on.
@@ -36,4 +36,4 @@ After clicking on the _publish button_ (**10**), your ARC is officially in Reque
 
 ## Publication status
 
-Once you clicked on the _publish button_ (**10**), you will be redirected to the submission ticket, and receive a confirmation mail. For more information on tracking the publication progress, refer to this [guide](/nfdi4plants.knowledgebase/datahub/data-publications/datahub-data-publications-status).
+Once you clicked on the _publish button_ (**10**), you will be redirected to the submission ticket, and receive a confirmation mail. For more information on tracking the publication progress, refer to this [guide](/nfdi4plants.knowledgebase/datahub/arc-publications/datahub-arc-publications-status).

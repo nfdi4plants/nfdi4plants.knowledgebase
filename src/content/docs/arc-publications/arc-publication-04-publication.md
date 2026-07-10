@@ -12,7 +12,7 @@ Once your data publication is published on the ARChive, you can use its digital 
 
 You can cite your ARC publication in the same way as you would cite a journal article. The citation can be copied from the record in the ARChive **(1)**
 
-![](@images/data-publications/doi-accession.png)
+![](@images/arc-publications/doi-accession.png)
 
 - **(1)**: Citation of the record.
 - **(2)**: Details of the record. You can get the DOI badge from here.
@@ -23,8 +23,8 @@ By clicking on the DOI badge **(2)**, you can get the code to display the badge 
 
 For example, you can copy the markdown code to display the badge on your ARC homepage.
 
-![](@images/data-publications/doi-badge.png)
+![](@images/arc-publications/doi-badge.png)
 
 Paste the code into the README.md of your ARC, and the badge will be displayed on your ARC homepage:
 
-![](@images/data-publications/doi-badge-display.png)
+![](@images/arc-publications/doi-badge-display.png)

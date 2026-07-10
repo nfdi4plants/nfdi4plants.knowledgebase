@@ -21,7 +21,7 @@ Once an ARC is in **RFP** (Request For Publication) stage, emails are sent to th
 
 Here is an example on the publication status page of a record:
 
-![](@images/data-publications/publication-status.png)
+![](@images/arc-publications/publication-status.png)
 
 - **(1)**: The _publication status_ of the submission. This submission has been accepted.
 - **(2)**: The _title_ of the investigation associated with the submission.

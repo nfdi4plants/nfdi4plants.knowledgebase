@@ -155,7 +155,7 @@ export default defineConfig({
                 },
                 {
                   label: 'Data Publications',
-                  autogenerate: { directory: 'datahub/data-publications'},
+                  autogenerate: { directory: 'datahub/arc-publications'},
                 },
                 {
                   label: 'Additional Features',
