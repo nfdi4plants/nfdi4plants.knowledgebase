@@ -1,16 +1,19 @@
 ---
-title: Track your publication status
+title: Revision and Curation
 lastUpdated: 2026-07-09
 authors:
   - kevin-schneider
   - dominik-brilhaus
 ---
 
-:::note
-All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](/nfdi4plants.knowledgebase/arc-validation/cqc-pipelines) to learn how to opt-in.
-:::
 
-# Track your publication status
+
+
+
+
+
+
+## Track your publication status
 
 Once you submitted a record to the ARChive, it is in **RFP** (Request For Publication) stage. You can track the publication status of your record. To do so, click on the link you received in the confirmation mail after submitting the record.
 

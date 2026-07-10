@@ -1,20 +1,16 @@
 ---
-title: Use your DOIs
-lastUpdated: 2026-07-09
+title: Publication and citation
+lastUpdated: 2026-07-10
 authors:
   - kevin-schneider
   - dominik-brilhaus
 ---
 
-:::note
-All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](/nfdi4plants.knowledgebase/arc-validation/cqc-pipelines) to learn how to opt-in.
-:::
-
 Once your data publication is published on the ARChive, you can use its digital object identifier (DOI) to cite your data publication. The DOI is a [persistent identifier](/nfdi4plants.knowledgebase/fundamentals/persistent-identifiers) and will always resolve to the data publication. The DOI is also registered with DataCite and will be indexed by DataCite and other DOI registration agencies. This means that your data publication will be findable and citable by other researchers.
 
-## How to cite your data publication
+## How to cite your ARC publication
 
-You can cite your data publication in the same way as you would cite a journal article. The citation can be copied from the record in the ARChive **(1)**
+You can cite your ARC publication in the same way as you would cite a journal article. The citation can be copied from the record in the ARChive **(1)**
 
 ![](@images/data-publications/doi-accession.png)
 

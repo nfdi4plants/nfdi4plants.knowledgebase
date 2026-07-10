@@ -1,20 +1,15 @@
 ---
-title: Submitting ARCs with ARChigator
+title: Request for publication
 lastUpdated: 2026-07-09
 authors:
   - kevin-schneider
   - dominik-brilhaus
 ---
 
-:::note
-All CQC pipelines are opt-in starting from July 10, 2024. If you used the DataHUB publication service before, head [here](/nfdi4plants.knowledgebase/arc-validation/cqc-pipelines) to learn how to opt-in.
-:::
 
-ARChigator is a tool for submitting ARCs hosted on DataHUB for publication in the [ARChive](https://archive.nfdi4plants.org/communities/dataplant).
+## Request for publication
 
-## Start the publication process
-
-To start the publication process, first make sure to install the [invenio validation package](https://avpr.nfdi4plants.org/package/invenio). On the commit click on the _invenio badge_ on the ARC homepage. Make sure that the validation against the invenio package  passes (indicated by a green badge), otherwise you will not be able to proceed to the next steps.
+On the commit click on the _invenio badge_ on the ARC homepage. Make sure that the validation against the invenio package  passes (indicated by a green badge), otherwise you will not be able to proceed to the next steps.
 
 ## Review record metadata
 
@@ -29,7 +24,6 @@ After clicking the badge, you will be redirected to the ARChigator page, where y
 Once you double-checked the metadata, you can proceed to submitting the ARC.
 
 ## Submit the ARC
-
 
 ![](@images/data-publications/archigator-submit.png)
 
