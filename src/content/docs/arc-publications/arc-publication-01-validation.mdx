@@ -6,6 +6,10 @@ authors:
   - dominik-brilhaus
 ---
 
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+import QIcon from "@components/QIcon.astro"
+
 Continuous Quality Control (**CQC**) is a process that ensures the quality of the metadata of an ARC meets certain standards.
 
 
@@ -18,13 +22,47 @@ In short the validation and CQC pipeline is performed on each commit to an ARC, 
 
 ## Starting the publication process
 
-<!-- TODO!  
+The publication process is initiated with the automated validation.
+Your ARC can be validated in the PLANTDataHUB against a selection of validation packages.
+For instance, you can validate the ARC
+1. against the `arc_specification` – to make sure that your ARC is intact
+2. against the `invenio` requirements – Invenio is the basis of DataPLANT's publication service
 
-make this user-friendly and clear, e.g. ARCitect
+### Add validation to your ARC
 
--->
+You can simply select the validation via ARCitect.
 
-To start the publication process, first make sure to install the [invenio validation package](https://avpr.nfdi4plants.org/package/invenio). Clicking on the _publish button_ **(2)** on the ARC homepage will start the publication process. Refer to the [ARChigator guide](/nfdi4plants.knowledgebase/datahub/data-publications/datahub-data-publications-archigator) for more information on the publication process.
+<Card icon="pen" title="ARCitect">
+    <Steps>
+
+    1. Open the ARC in ARCitect
+    2. In the sidebar, go to the <QIcon name="verified" /> `Validation` menu
+    3. Check the box next to the `arc_specification` dropdown
+    3. In the section "Custom Validation Packages", select the `invenio` package
+    4. Select the latest version for both packages and click `Save`
+    4. Commit your changes via the <QIcon name="rule" /> `Commit` menu
+    5. Upload your changes via the <QIcon name="published_with_changes" /> `DataHUB Sync` menu
+    6. Open your ARC in the DataHUB
+
+    </Steps>
+</Card>
+
+## Check the validation results
+
+The validation is being run in the PLANTDataHUB, where you can also find the validation results.
+
+<Card icon="gitlab" title="PLANTDataHUB">
+    <Steps>
+
+    1. Sign in to the [PLANTDataHUB](https://git.nfdi4plants.org)
+    2. Navigate to the validated ARC
+    3. In the right sidebar you find several validation badges (e.g. `arc specification` and `invenio`)
+    4. Click on the `arc specification` badge to explore the test results.
+
+    </Steps>
+</Card>
+
+The validation tests check many things, but cannot catch everything. Whenever you are getting ready to publish an ARC, we suggest you have a look at our [guide for reviewing your ARC](/nfdi4plants.knowledgebase/guides/review-arc)
 
 
 
