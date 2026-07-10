@@ -1,5 +1,5 @@
 ---
-title: Validation and CQC
+title: Metadata validation
 lastUpdated: 2026-07-09
 authors:
   - kevin-schneider
@@ -10,16 +10,12 @@ import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 import QIcon from "@components/QIcon.astro"
 
-
 ## Starting the publication process
 
 The publication process is initiated with the automated validation.
-Your ARC can be validated in the PLANTDataHUB against a selection of validation packages.
-For instance, you can validate the ARC
-1. against the `arc_specification` – to make sure that your ARC is intact
-2. against the `invenio` requirements – Invenio is the basis of DataPLANT's publication service
 
-### Add validation to your ARC
+
+### Validate your ARC
 
 You can simply select the validation via ARCitect.
 
@@ -47,14 +43,11 @@ The validation is being run in the PLANTDataHUB, where you can also find the val
 
     1. Sign in to the [PLANTDataHUB](https://git.nfdi4plants.org)
     2. Navigate to the validated ARC
-    3. In the right sidebar you find several validation badges (e.g. `arc specification` and `invenio`)
-    4. Click on the `arc specification` badge to explore the test results.
+    3. In the right sidebar you find several validation badges (e.g. `invenio`)
+    4. Click on the `invenio` badge to explore the test results.
 
     </Steps>
 </Card>
-
-The validation tests check many things, but cannot catch everything. Whenever you are getting ready to publish an ARC, we suggest you have a look at our [guide for reviewing your ARC](/nfdi4plants.knowledgebase/guides/review-arc)
-
 
 
 ## ARC homepage

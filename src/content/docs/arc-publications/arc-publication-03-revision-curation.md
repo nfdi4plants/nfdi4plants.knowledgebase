@@ -1,5 +1,5 @@
 ---
-title: Revision and Curation
+title: Revision and curation
 lastUpdated: 2026-07-09
 authors:
   - kevin-schneider

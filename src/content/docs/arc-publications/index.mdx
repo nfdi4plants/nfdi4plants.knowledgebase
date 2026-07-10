@@ -2,9 +2,11 @@
 title: ARC Publications
 lastUpdated: 2026-07-09
 authors:
-  - kevin-schneider
   - dominik-brilhaus
+  - kevin-schneider
 ---
+
+import { Steps } from '@astrojs/starlight/components';
 
 :::note
 Here we provide a general overview on DataPLANT's ARC publication process. For practical guides on each step, check out the sidebar.
@@ -14,25 +16,45 @@ Here we provide a general overview on DataPLANT's ARC publication process. For p
 
 Data is usually the primary output of scientific research; in contrast, the universal measurement of research success is the publication. In the past, accessing the underlying data of a published research paper oftentimes required the tedious process of contacting the original authors and asking for access. ARCs are FAIR Digital Objects (FDOs). One of DataPLANT's main goal is facilitating the publication of ARCs as **data publications**.
 
-## Phases of ARC publication
+## ARC publication tools and services
 
-0. Creating an ARC – via ARCitect
-1. Metadata validation – via Continuous Quality Control (CQC) in the DataHUB
-2. Request for Publication (RFP) – via ARChigator
-3. Revision and curation – via DataHUB
-4. (Submission for) publication – via ARChive
+The ARC data publication process is enabled by a set of tools and services that are integrated into [DataPLANT's DataHUB](/nfdi4plants.knowledgebase/datahub/) and are employed by different persons along the following steps:
 
-## ARC publication services and tools
+<Steps>
 
-ARC data publications are achieved by a set of services and tools that are integrated into [DataPLANT's DataHUB](/nfdi4plants.knowledgebase/datahub/).
+0. Creating and uploading the ARC
+    - **Tool/Service**: ARCitect or ARC Commander and DataHUB
+    - **Person**: ARC author
+1. Metadata validation
+    - **Tool/Service**: Continuous Quality Control (CQC) in the DataHUB
+    - **Person**: Triggered by the ARC author
+2. Request for Publication (RFP)
+    - **Tool/Service**: ARChigator
+    - **Person**: Triggered by the ARC author
+3. Revision and curation
+    - **Tool/Service**: DataHUB and ARChigator
+    - **Person**: ARC reviewer and ARC author
+4. (Submission for) publication
+    - **Tool/Service**: ARChive
+    - **Person**: ARC reviewer
+
+</Steps>
+
+<figure>
+  ![ARC publication pipeline](@images/arc-publications/arc-publication_pipeline.svg)
+  <figcaption style="font-size: 0.8em;">Figure 2 of <em>Bauer, J., Schneider, K., Brilhaus, D. et al. Data Publication Infrastructure for FAIR Digital Objects. SN COMPUT. SCI. 7, 411 (2026). https://doi.org/10.1007/s42979-026-05010-8</em></figcaption>
+</figure>
+
+Tools to iteratively create ARCs (ARCitect, ARC Commander, Swate) as well as the DataHUB are described in detail in the [Tools and Services section](/nfdi4plants.knowledgebase/index-tools-services/). Here we want to introduce the three tools that are specifically used for the ARC publication process: Continuous Quality Control (CQC), ARChigator, and ARChive.
 
 ### Continuous Quality Control (CQC)
 
-Continuous Quality Control (**CQC**) is a process that ensures the quality of the metadata of an ARC meets certain standards.
+Continuous Quality Control (CQC) is a process that ensures the quality of the metadata of an ARC meets certain standards. In short the validation and CQC pipeline is performed on each commit to an ARC, and the results of each step are displayed on the ARC homepage. Upon every commit to an ARC repository, the DataHUB can perform automated quality control measures based on the committed changes.
 
-In short the validation and CQC pipeline is performed on each commit to an ARC, and the results of each step (e.g., validation against a user-selected validation package) are displayed on the ARC homepage.
-
-Upon every commit to an ARC repository, the DataHUB can perform automated quality control measures based on the committed changes.
+An ARC can be validated in the DataHUB against a selection of validation packages.
+For instance, you can validate the ARC
+1. against the `arc_specification` – to make sure that your ARC is intact
+2. against the `invenio` requirements – InvenioRDM is the basis of DataPLANT's publication service **ARChive**
 
 :::note
 For more information, have a look at [Continuous Quality Control (CQC) pipelines & ARC validation](/nfdi4plants.knowledgebase/arc-validation/).
@@ -40,14 +62,14 @@ For more information, have a look at [Continuous Quality Control (CQC) pipelines
 
 ### ARChigator: the ARC submission interface
 
-The ARChigator is an interface for submitting ARCs hosted on DataHUB for publication in the [ARChive](https://archive.nfdi4plants.org/). Only ARCs that pass CQC are eligible for submission.
+The ARChigator is an interface for submitting ARCs hosted on DataHUB for publication in the [ARChive](https://archive.nfdi4plants.org/). Only those ARCs that pass the `invenio` CQC are eligible for submission.
 
-ARChigator also acts as a last-stop preview of the ARC record metadata and data. When submitting an ARC, ARChigator will display the metadata record that will be used for the data publication. This allows for a last manual check if the metadata is correct and complete before submitting the ARC.
+The ARChigator dashboard acts as a last-stop preview of the ARC record metadata and data. When submitting an ARC, ARChigator will display the metadata record that will be used for the ARC publication. This allows for a last manual check if the metadata is correct and complete before submitting the ARC for publication or cancelling the submission if something is missing or incorrect.
 
-Once submitted via ARCigator, ARCs are submitted as a request for publication (**RFP**) to the [ARChive](https://archive.nfdi4plants.org/communities/dataplant).
+Once submitted via ARChigator, ARCs are submitted as a **request for publication (RFP)** to the [ARChive](https://archive.nfdi4plants.org/communities/dataplant). An email sent to the addresses registered in the ARCs metadata contains a link to the ARCs publication status page, which allows the ARC authors to track the progress of the publication process and to interact with the ARC reviewer.
+
+The ARC is then reviewed by DataPLANT's reviewer board. The ARC reviewer might request changes to metadata entries to meet certain quality criteria. These requirements are communicated via the DataHUB's issue system directly on the ARC, which allows for a transparent discussion and iterative curation between the ARC authors, Data Stewards and ARC reviewers.
 
 ### ARChive: The collection of published ARCs
 
-Once an ARC is in **RFP** stage, emails are sent to the addresses registered in the ARCs metadata that contain a link to the ARCs publication status page. **RFP**s are reviewed by DataPLANT's reviewer board, which might request changes to metadata entries to meet certain quality criteria. 
-
-If the RFP is accepted, the ARC is published and a [Digital Object Identifier (**DOI**)](https://www.doi.org/the-identifier/what-is-a-doi/) is registered for the ARC.
+After ARC revision, i.e. once the RFP is accepted, the ARC is published and registered with a [Digital Object Identifier (**DOI**)](https://www.doi.org/the-identifier/what-is-a-doi/) via the [ARChive](https://archive.nfdi4plants.org).
