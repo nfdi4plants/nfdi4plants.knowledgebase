@@ -85,7 +85,7 @@ The standardized ARC structure helps with routine computations:
 
 ### Data publication
 
-At some point you and your collaborator want to [publish the data](/nfdi4plants.knowledgebase/fundamentals/arc-publications) resulting from the project.
+At some point you and your collaborator want to [publish the data](/nfdi4plants.knowledgebase/fundamentals/data-publications) resulting from the project.
 
 There are two major options: You can publish the current version of the ARC and receive a (https://www.doi.org/). Some scientific journals require data to be published in  [domain-specific repositories](/nfdi4plants.knowledgebase/fundamentals/public-data-repositories), specialized for a certain type of assay. For this purpose converters help you export the relevant dataset and metadata into a repository-accepted format.
 

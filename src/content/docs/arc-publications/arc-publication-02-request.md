@@ -6,7 +6,7 @@ authors:
   - dominik-brilhaus
 ---
 
-Once the [validation against the invenio package](./arc-publication-01-validation) passes (indicated by a green badge), one can proceed with the request for publication of the ARC. The request is submitted via the **ARChigator** interface, which is accessible through the DataHUB.
+Once the [validation against the invenio package](/nfdi4plants.knowledgebase/arc-publications/arc-publication-01-validation/) passes (indicated by a green badge), one can proceed with the request for publication of the ARC. The request is submitted via the **ARChigator** interface, which is accessible through the DataHUB.
 
 ## Review record metadata
 

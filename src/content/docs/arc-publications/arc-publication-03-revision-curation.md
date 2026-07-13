@@ -9,7 +9,7 @@ authors:
 ## Revision of ARC publications
 
 - in RFP status
-- ARC revision is communicated via [ARChigators publication status](./arc-publication-02-request.md) page
+- ARC revision is communicated via [ARChigators publication status](/nfdi4plants.knowledgebase/arc-publications/arc-publication-02-request) page
 - revision is done via issues / work items directly in the ARC repository
   - a link to the issue board is provided in the ARChigators publication status page
 - depending on the community, different quality standards are applied to the data publication
