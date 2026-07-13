@@ -86,9 +86,11 @@ export default defineConfig({
             items: [
               {
                 label: "ARC Annotation Use-Cases",
+                collapsed: true,
                 items: [
                   {
                     autogenerate: {
+                      collapsed: true,
                       directory: "arc-use-cases",
                     },
                   },
@@ -107,6 +109,7 @@ export default defineConfig({
 
               {
                 label: "Fundamentals",
+                collapsed: true,
                 items: [
                   {
                     autogenerate: {
@@ -118,6 +121,7 @@ export default defineConfig({
 
               {
                 label: "Core Concepts",
+                collapsed: true,
                 items: [
                   {
                     autogenerate: {
@@ -129,6 +133,7 @@ export default defineConfig({
 
               {
                 label: "ARC Guides",
+                collapsed: true,
                 items: [
                   {
                     autogenerate: {
@@ -140,6 +145,7 @@ export default defineConfig({
 
               {
                 label: "Git-powered Lab Organization",
+                collapsed: true,
                 items: [
                   {
                     label: "Git for Biologists",
@@ -179,6 +185,7 @@ export default defineConfig({
 
               {
                 label: "Git",
+                collapsed: true,
                 items: [
                   {
                     autogenerate: {
@@ -190,6 +197,7 @@ export default defineConfig({
 
               {
                 label: "CWL",
+                collapsed: true,
                 items: [
                   {
                     autogenerate: {
@@ -204,11 +212,13 @@ export default defineConfig({
             label: "Tools and Services",
             icon: "setting",
             link: "index-tools-services",
+            
             items: [
               "index-tools-services",
-
+              
               {
                 label: "ARCitect",
+                collapsed: true,
                 items: [
                   {
                     autogenerate: {
@@ -220,6 +230,7 @@ export default defineConfig({
 
               {
                 label: "ARC Validation",
+                collapsed: true,
                 items: [
                   {
                     autogenerate: {
@@ -231,6 +242,7 @@ export default defineConfig({
 
               {
                 label: "DataHUB",
+                collapsed: true,
                 items: [
                   "datahub",
 
@@ -317,6 +329,7 @@ export default defineConfig({
 
               {
                 label: "ARC Commander",
+                collapsed: true,
                 items: [
                   "arc-commander",
 
@@ -362,6 +375,7 @@ export default defineConfig({
 
               {
                 label: "Swate",
+                collapsed: true,
                 items: [
                   {
                     autogenerate: {
@@ -373,6 +387,7 @@ export default defineConfig({
 
               {
                 label: "Boat",
+                collapsed: true,
                 items: [
                   {
                     autogenerate: {
@@ -384,6 +399,7 @@ export default defineConfig({
 
               {
                 label: "ARCManager",
+                collapsed: true,
                 items: [
                   {
                     autogenerate: {
@@ -413,10 +429,10 @@ export default defineConfig({
             link: "workshops",
             id: "workshops",
             items: [
-              "workshops",
-
+              "workshops",              
               {
                 label: "FDM-Werkstatt",
+                collapsed: true,
                 items: [
                   {
                     autogenerate: {
@@ -438,6 +454,7 @@ export default defineConfig({
                 items: [
                   {
                     autogenerate: {
+                      collapsed: true,
                       directory: "arctrl",
                     },
                   },
