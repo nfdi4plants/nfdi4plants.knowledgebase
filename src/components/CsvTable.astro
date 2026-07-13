@@ -23,7 +23,7 @@ const headers = data.length ? Object.keys(data[0]) : []
     </tr>
   </thead>
   <tbody>
-    {data.map((row: Row, i: number) => (
+    {data.map((row: Row, _: number) => (
       <tr>
         {headers.map((h) => <td>{row[h]}</td>)}
       </tr>
