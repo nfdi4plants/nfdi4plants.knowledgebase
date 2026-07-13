@@ -1,4 +1,6 @@
-import { z, defineCollection, reference } from 'astro:content';
+import { z } from 'astro/zod';
+import { glob } from 'astro/loaders';
+import { defineCollection, reference } from "astro:content"
 import { docsLoader } from '@astrojs/starlight/loaders'
 import { docsSchema } from '@astrojs/starlight/schema';
 import { topicSchema } from 'starlight-sidebar-topics/schema'
@@ -6,14 +8,14 @@ import { autoSidebarLoader } from 'starlight-auto-sidebar/loader'
 import { autoSidebarSchema } from 'starlight-auto-sidebar/schema'
 
 const authors = defineCollection({
-  type: 'data',
+  loader: glob({ pattern: '**/[^_]*.{yml,yaml}', base: "./src/content/authors" }),
   schema: ({ image }) => z.object({
     name: z.string(),
     image: image().optional(),
     socials: z.array(
       z.object({
         icon: z.string(),
-        href: z.string().url(),
+        href: z.url(),
       })
     ).optional(),
     styling: z.object({
