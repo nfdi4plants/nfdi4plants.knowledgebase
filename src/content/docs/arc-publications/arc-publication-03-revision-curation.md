@@ -1,28 +1,23 @@
 ---
 title: Revision and curation
-lastUpdated: 2026-07-09
+lastUpdated: 2026-07-13
 authors:
-  - kevin-schneider
   - dominik-brilhaus
 ---
 
 
+## Revision of ARC publications
 
+- in RFP status
+- ARC revision is communicated via [ARChigators publication status](./arc-publication-02-request.md) page
+- revision is done via issues / work items directly in the ARC repository
+  - a link to the issue board is provided in the ARChigators publication status page
+- depending on the community, different quality standards are applied to the data publication
 
+## Curation
 
+- curation is done by the ARC authors
+- ARCitect, Swate, directly in DataHUB
 
+## Re-submission
 
-
-## Track your publication status
-
-Once you submitted a record to the ARChive, it is in **RFP** (Request For Publication) stage. You can track the publication status of your record. To do so, click on the link you received in the confirmation mail after submitting the record.
-
-Once an ARC is in **RFP** (Request For Publication) stage, emails are sent to the addresses registered in the ARCs metadata that contain a link to the ARCs publication status update page. **RFP**s are reviewed by the ARChive's editorial board, which might request changes to certain metadata entries to meet our quality criteria.
-
-Here is an example on the publication status page of a record:
-
-![](@images/arc-publications/publication-status.png)
-
-- **(1)**: The _publication status_ of the submission. This submission has been accepted.
-- **(2)**: The _title_ of the investigation associated with the submission.
-- **(3)**: The _progress_ of the submission process. If there are requests for changes, they will be listed here.

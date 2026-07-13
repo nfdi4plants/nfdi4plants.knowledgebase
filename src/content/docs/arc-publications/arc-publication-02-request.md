@@ -1,39 +1,50 @@
 ---
 title: Request for publication
-lastUpdated: 2026-07-09
+lastUpdated: 2026-07-13
 authors:
   - kevin-schneider
   - dominik-brilhaus
 ---
 
-
-## Request for publication
-
-On the commit click on the _invenio badge_ on the ARC homepage. Make sure that the validation against the invenio package  passes (indicated by a green badge), otherwise you will not be able to proceed to the next steps.
+Once the [validation against the invenio package](./arc-publication-01-validation) passes (indicated by a green badge), one can proceed with the request for publication of the ARC. The request is submitted via the **ARChigator** interface, which is accessible through the DataHUB.
 
 ## Review record metadata
 
-After clicking the badge, you will be redirected to the ARChigator page, where you can review the metadata of the record that will be created in the ARChive. Note that you can only proceed to this page if you are logged in to DataHUB.
+After clicking the `invenio` badge, you will be redirected to the **ARChigator** page, where you can review the metadata of the publication record that will be created in the ARChive. 
 
 ![](@images/arc-publications/archigator.png)
 
-- **(4)**: The source of your ARC
-- **(5)**: Selected investigation metadata from the ARC that will also be shown in the publication record
-- **(6)**: Author metadata from the ARC that will also be shown in the publication record. Note that author details are blacked out here for privacy reasons.
+The ARChigator page shows:
 
-Once you double-checked the metadata, you can proceed to submitting the ARC.
+  - The source of your ARC
+  - Selected investigation metadata from the ARC that will also be shown in the publication record
+  - Author metadata from the ARC that will also be shown in the publication record.
+  - The file and folder structure of the ARC, which will be included in the publication record.
 
-## Submit the ARC
+:::note
+You can only proceed to the ARChigator page if you are logged in to DataHUB.
+:::
 
-![](@images/arc-publications/archigator.png)
+## Submit the request for publication
 
-- **(7)**: Name and image of the ARC. The `Ready` badge signifies that this ARC is eligible for publication (it has passed the CQC pipeline **(1)**). Note that you are stopped from publishing here at latest if the CQC pipeline fails.
-- **(8)**: You cannot publish an ARC that you do not have access control for on the DataHUB instance it is hosted on.
-- **(9)**: You can only publish an ARC if you agree to the terms of use of the ARChive and made sure to include all authors.
-- **(10)**: Clicking on the _publish button_ will submit the ARC to the ARChive.
+Once you double-checked the metadata, you can proceed to open the Request for Publication (RFP) by clicking the <btn> Submit Data </btn> button.
 
-After clicking on the _publish button_ (**10**), your ARC is officially in Request For Publication (**RFP**) stage. You will receive a confirmation mail with a link to the publication status page of your ARC.
+:::note
+You can only publish an ARC that you have access control for on the DataHUB instance it is hosted on.
+:::
 
 ## Publication status
 
-Once you clicked on the _publish button_ (**10**), you will be redirected to the submission ticket, and receive a confirmation mail. For more information on tracking the publication progress, refer to this [guide](/nfdi4plants.knowledgebase/datahub/arc-publications/datahub-arc-publications-status).
+Once your ARC is submitted as a Request For Publication (**RFP**), you receive a confirmation mail with a link to the publication status page of your ARC.
+
+To do so, click on the link you received in the confirmation mail after submitting the record.
+
+Once an ARC is in **RFP** (Request For Publication) stage, emails are sent to the addresses registered in the ARCs metadata that contain a link to the ARCs publication status update page. **RFP**s are reviewed by the ARChive's editorial board, which might request changes to certain metadata entries to meet the quality criteria.
+
+Here is an example on the publication status page of a record:
+
+![](@images/arc-publications/publication-status.png)
+
+- **(1)**: The _publication status_ of the submission. This submission has been accepted.
+- **(2)**: The _title_ of the investigation associated with the submission.
+- **(3)**: The _progress_ of the submission process. If there are requests for changes, they will be listed here.

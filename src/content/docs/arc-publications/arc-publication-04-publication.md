@@ -1,6 +1,6 @@
 ---
 title: Publication and citation
-lastUpdated: 2026-07-10
+lastUpdated: 2026-07-13
 authors:
   - kevin-schneider
   - dominik-brilhaus
