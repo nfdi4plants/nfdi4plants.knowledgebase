@@ -10,53 +10,45 @@ import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 import QIcon from "@components/QIcon.astro"
 
-## Starting the publication process
+The publication process is initiated with the automated validation. This ensures that the ARC meets the minimum metadata requirements for publication. 
 
-The publication process is initiated with the automated validation.
-
-
-### Validate your ARC
+## Validate your ARC
 
 You can simply select the validation via ARCitect.
 
-<Card icon="pen" title="ARCitect">
-    <Steps>
+<Steps>
 
-    1. Open the ARC in ARCitect
-    2. In the sidebar, go to the <QIcon name="verified" /> `Validation` menu
-    3. Check the box next to the `arc_specification` dropdown
-    3. In the section "Custom Validation Packages", select the `invenio` package
-    4. Select the latest version for both packages and click `Save`
-    4. Commit your changes via the <QIcon name="rule" /> `Commit` menu
-    5. Upload your changes via the <QIcon name="published_with_changes" /> `DataHUB Sync` menu
-    6. Open your ARC in the DataHUB
+1. Open the ARC in ARCitect
+2. In the sidebar, go to the <QIcon name="verified" /> `Validation` menu
+3. Check the box next to the `arc_specification` dropdown
+3. In the section "Custom Validation Packages", select the `invenio` package
+4. Select the latest version for both packages and click `Save`
+4. Commit your changes via the <QIcon name="rule" /> `Commit` menu
+5. Upload your changes via the <QIcon name="published_with_changes" /> `DataHUB Sync` menu
+6. Open your ARC in the DataHUB
 
-    </Steps>
-</Card>
+</Steps>
 
 ## Check the validation results
 
 The validation is being run in the PLANTDataHUB, where you can also find the validation results.
 
-<Card icon="gitlab" title="PLANTDataHUB">
-    <Steps>
+<Steps>
 
-    1. Sign in to the [PLANTDataHUB](https://git.nfdi4plants.org)
-    2. Navigate to the validated ARC
-    3. In the right sidebar you find several validation badges (e.g. `invenio`)
-    4. Click on the `invenio` badge to explore the test results.
+1. Sign in to the [PLANTDataHUB](https://git.nfdi4plants.org)
+2. Navigate to the validated ARC
+3. In the right sidebar you find several validation badges (e.g. `invenio`)
+4. Click on the `invenio` badge to explore the test results.
 
-    </Steps>
-</Card>
-
-
-## ARC homepage
+</Steps>
 
 ![](@images/arc-publications/cqc-results.png)
 
 - **(1)**: The _pipeline badge_ indicates wether all steps of CQC have passed, or if there are any failures.
-- **(2)**: The _publish button_ is used to submit the ARC to the ARChive via [ARChigator](/nfdi4plants.knowledgebase/datahub/arc-publications/datahub-arc-publications-archigator). Note that ARCs that fail CQC are not eligible for publication.
-- **(3)**: The _arc quality badge_ indicates the overall metadata quality of the ARC. This is calculated based on the results of the CQC pipeline, and signifies how many of the performed tests have passed. The badge is color-coded, and the color indicates the quality of the ARC.
+- **(2)**: The _`invenio` badge_ is used to open a request for ARC publication via [ARChigator](/nfdi4plants.knowledgebase/datahub/arc-publications/datahub-arc-publications-archigator).
+    - If an ARC fails the `invenio` CQC it is not eligible for publication. Clicking the badge will show the failed tests and their details, which can be used to fix the issues in the ARC metadata.
+    - If an ARC passes the `invenio` CQC, it is eligible for publication. Clicking the badge will open the ARChigator interface to submit a request for publication (RFP) of the ARC.
+- **(3)**: Every CQC badge comes with a count indicator, which depends on the CQC results, and signifies how many of the performed tests have passed, respectively.
 
 For more details, you can click on the pipeline badge **(1)**, and investigate the steps of the CQC pipeline details:
 
