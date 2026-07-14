@@ -1,12 +1,15 @@
 ---
 title: Publication and citation
-lastUpdated: 2026-07-13
+lastUpdated: 2026-07-14
 authors:
   - kevin-schneider
   - dominik-brilhaus
 ---
 
-Once your data publication is published on the ARChive, you can use its digital object identifier (DOI) to cite your data publication. The DOI is a [persistent identifier](/nfdi4plants.knowledgebase/fundamentals/persistent-identifiers) and will always resolve to the data publication. The DOI is also registered with DataCite and will be indexed by DataCite and other DOI registration agencies. This means that your data publication will be findable and citable by other researchers.
+Once the ARC publication is published on the [ARChive](https://archive.nfdi4plants.org), you can cite it via its digital object identifier (DOI). The DOI is a [persistent identifier](/nfdi4plants.knowledgebase/fundamentals/persistent-identifiers) and will always resolve to the ARC publication. The DOI is also registered with DataCite and will be indexed by DataCite and other DOI registration agencies. This means that the ARC publication will be findable and citable by other researchers.
+
+When referring to your ARC publication in a journal manuscript (e.g. in the 'data availability' statement), please use the full ARC citation or its DOI. To cite or acknowledge the tools and services of the DataPLANT consortium, please refer to the example text blocks available on the [DataPLANT website](https://nfdi4plants.org/articles/citing/). Finally, data stewards who helped in the curation of the ARC publication appreciate to be acknowledged in the manuscript. 
+
 
 ## How to cite your ARC publication
 
