@@ -3,7 +3,7 @@ title: Frequently Asked Questions (FAQ)
 lastUpdated: 2025-09-23
 authors:
   - dominik-brilhaus
-  - cristina-martins-rodrigues
+  - cristina-schmale-rodrigues
 ---
 
 Here we collect common questions raised by users.
