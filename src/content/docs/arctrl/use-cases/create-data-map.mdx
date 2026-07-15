@@ -1,0 +1,337 @@
+---
+title: Create Datamaps for scattered csv files
+lastUpdated: 2026-07-05
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import { Code } from '@astrojs/starlight/components'
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import Mermaid from '@components/mdx/Mermaid.astro'
+
+
+This guide demonstrates how to use ARCtrl to export annotation tables from an ARC into individual json files.
+
+## Use-case
+
+Some users want to quickly export studies, assays or individual annotation tables into easily shareable and reusable json files. 
+This might help to [establish SOPs](/nfdi4plants.knowledgebase/arctrl/use-cases/create-arc-template/) from a lab-typical ARC.
+
+:::tip[Swate]
+This is similar to [Swate's export](/nfdi4plants.knowledgebase/swate/json/#export) feature
+:::
+
+<Tabs syncKey="pl">
+
+{/* FSHARP */}
+<TabItem label="FSharp" icon='seti:f-sharp'>
+
+```fsharp
+#r "nuget: ARCtrl.QueryModel, 3.0.0-alpha.4"
+open System.IO
+open ARCtrl
+open ARCtrl.QueryModel
+
+let arcPath = @"H:\User\ARCs\BeechThinning"
+let arc = ARC.load arcPath
+let arcTables = arc.ArcTables
+
+// Ontology Preparation
+let µg_p_mg = OntologyAnnotation(
+    name="microgram per milligram"
+)
+let mg_p_smm = OntologyAnnotation(
+    name="milligram per square millimiter"
+)
+let unitless = OntologyAnnotation(
+    name="none",
+    tsr="NCIT",
+    tan="http://purl.obolibrary.org/obo/NCIT_C41132"
+)
+let floatType = OntologyAnnotation(
+    name="float",
+    tsr="NCIT",
+    tan="http://purl.obolibrary.org/obo/NCIT_C48150"
+)
+let maxQuantEfficiency = OntologyAnnotation(
+    name="maximal quantum efficiency"
+)
+let quantumYield = OntologyAnnotation(
+    name="quantum yield",
+    tsr="TO",
+    tan="http://purl.obolibrary.org/obo/TO_0012004"
+)
+let nonphotochemicalQuenching = OntologyAnnotation(
+    name="nonphotochemical quenching",
+    tsr="GO",
+    tan="http://purl.obolibrary.org/obo/GO_0010196"
+)
+let nonregulatedQuenching = OntologyAnnotation(
+    name="nonregulated quenching"
+)
+let specificeafWeight = OntologyAnnotation(
+    name="specific leaf weight",
+    tsr="TO",
+    tan="http://purl.obolibrary.org/obo/TO_0001122"
+)
+let sleafChloCo = OntologyAnnotation(
+    name="leaf chlorophyll content",
+    tsr="TO",
+    tan="http://purl.obolibrary.org/obo/TO_0012002"
+)
+let chloACo = OntologyAnnotation(
+    name="chlorophyll a content",
+    tsr="TO",
+    tan="http://purl.obolibrary.org/obo/TO_0000293"
+)
+let chloBCo = OntologyAnnotation(
+    name="chlorophyll B content",
+    tsr="TO",
+    tan="http://purl.obolibrary.org/obo/TO_0000295"
+)
+let chloRatio = OntologyAnnotation(
+    name="chlorophyll ratio",
+    tsr="TO",
+    tan="http://purl.obolibrary.org/obo/TO_0000298"
+)
+let carContent = OntologyAnnotation(
+    name="carotenoid content",
+    tsr="TO",
+    tan="http://purl.obolibrary.org/obo/TO_0000496"
+)
+let protPerLeafArea = OntologyAnnotation(
+    name="Protein per leaf area"
+)
+let protContent = OntologyAnnotation(
+    name="protein content",
+    tsr="TO",
+    tan="http://purl.obolibrary.org/obo/TO_0000598"
+)
+
+type AssayColumn =
+    {
+        Header : string
+        Unit : OntologyAnnotation
+        Description : string
+        Explication : OntologyAnnotation
+        ObjectType: OntologyAnnotation
+    }
+type AssayDefinition =
+    {
+        AssayName : string
+        Columns : AssayColumn list
+    }
+
+let excelHeaders =
+    [|
+        "Specific_weight"
+        "2:Y (II)"
+        "2:Y (NO)"
+        "2:Y (NPQ)"
+        "2:Fv/Fm"
+        "Chl_total"
+        "Chl_a"
+        "Chl_b"
+        "Chl_a/b"
+        "Car"
+    |]
+let assays =
+    [
+        {
+            AssayName = "Photosynthesis"
+            Columns =
+                [
+                    {
+                        Header = "Fv/Fm"
+                        Unit = unitless
+                        Description = "maximal quantum efficiency"
+                        Explication = maxQuantEfficiency
+                        ObjectType = floatType
+                    }
+                    {
+                        Header = "Y(II)"
+                        Unit = unitless
+                        Description = "quantum yield"
+                        Explication = quantumYield
+                        ObjectType = floatType
+                    }
+                    {
+                        Header = "Y(NPQ)"
+                        Unit = unitless
+                        Description = "nonphotochemical quenching"
+                        Explication = nonphotochemicalQuenching
+                        ObjectType = floatType
+                    }
+                    {
+                        Header = "Y(NO)"
+                        Unit = unitless
+                        Description = "nonregulated quenching"
+                        Explication = nonregulatedQuenching
+                        ObjectType = floatType
+                    }
+                ]
+        }
+        {
+            AssayName = "Pigment content"
+            Columns =
+                [
+                    {
+                        Header = "Chl_total"
+                        Unit = µg_p_mg
+                        Description = "Total chlorophyll content per leaf fresh weight"
+                        Explication = sleafChloCo
+                        ObjectType = floatType
+                    }
+                    {
+                        Header = "Chl_a"
+                        Unit = µg_p_mg
+                        Description = "Chlorophyll a content per leaf fresh weight"
+                        Explication = chloACo
+                        ObjectType = floatType
+                    }
+                    {
+                        Header = "Chl_b"
+                        Unit = µg_p_mg
+                        Description = "Chlorophyll b content per leaf fresh weight"
+                        Explication = chloBCo
+                        ObjectType = floatType
+                    }
+                    {
+                        Header = "Chl_a/b"
+                        Unit = unitless
+                        Description = "Carotenoid content per leaf fresh weight"
+                        Explication = chloRatio
+                        ObjectType = floatType
+                    }
+                    {
+                        Header = "Car"
+                        Unit = µg_p_mg
+                        Description = "Carotenoid content"
+                        Explication = carContent
+                        ObjectType = floatType
+                    }
+                ]
+        }
+
+        {
+            AssayName = "LeafBiomass"
+            Columns =
+                [
+                    {
+                        Header = "Specific_weight"
+                        Unit = mg_p_smm
+                        Description = "Leaf fresh weight per leaf area"
+                        Explication = specificeafWeight // Hinweis: In deiner Definition fehlt hier das 'l' bei "specificLeafWeight"
+                        ObjectType = floatType
+                    }
+                ]
+        }
+
+        {
+            AssayName = "Total protein content"
+            Columns =
+                [
+                    {
+                        Header = "Protein_per_Area"
+                        Unit = mg_p_smm
+                        Description = "Total leaf protein content per leaf area"
+                        Explication = protPerLeafArea
+                        ObjectType = floatType
+                    }
+                    {
+                        Header = "Protein_content"
+                        Unit = µg_p_mg
+                        Description = "Total leaf protein content per leaf fresh weight"
+                        Explication = protContent
+                        ObjectType = floatType
+                    }
+                ]
+        }
+    ]
+
+// Datamap generation
+let normalizeHeader (header:string) =
+    header
+        .Trim()
+        .Replace("2:", "")
+        .Replace(" ", "")
+
+let readHeaders (csvFile:string) =
+    File.ReadLines(csvFile)
+    |> Seq.head
+    |> fun line -> 
+        line.Split(',')
+        |> Array.map normalizeHeader
+
+let createDataContexts (arcPath:string) (assay:AssayDefinition) =
+
+    let datasetFolder =
+        Path.Combine(arcPath, "assays", assay.AssayName, "dataset")
+
+    if Directory.Exists datasetFolder then
+
+        Directory.GetFiles(datasetFolder, "*.csv", SearchOption.AllDirectories)
+        |> Array.collect (fun csvFile ->
+
+            printfn "analyse file: %s" csvFile
+
+            let headers = readHeaders csvFile
+
+            let relativePath =
+                Path.GetRelativePath(arcPath, csvFile)
+                    .Replace("\\", "/")
+
+            let parentFolderName = Directory.GetParent(csvFile).Name
+
+            assay.Columns
+            |> List.choose (fun col ->
+
+                let wantedHeader = normalizeHeader col.Header
+
+                headers
+                |> Array.tryFindIndex ((=) wantedHeader)
+                |> Option.map (fun i ->
+                    
+                    let dataName = $"{relativePath}#col={i+1}"
+
+                    printfn "  -> Match found: %s (Column %i)" wantedHeader (i+1)
+                    DataContext(
+                        name = dataName,
+                        format = "text/csv",
+                        selectorFormat = "https://datatracker.ietf.org/doc/html/rfc7111",
+                        explication = col.Explication,
+                        unit = col.Unit,
+                        ObjectType = Some col.ObjectType,
+                        label = col.Header, 
+                        description = col.Description
+                        
+                    )
+                )
+            )
+            |> List.toArray
+        )
+        |> Array.toList
+    else
+        printfn "directory not found: %s" datasetFolder
+        []
+
+
+for assay in assays do
+    let dataContexts =
+        createDataContexts arcPath assay
+
+    printfn "%s: %i columns found"
+        assay.AssayName
+        dataContexts.Length
+        
+    if not dataContexts.IsEmpty then
+
+        let datamap =
+            Datamap(ResizeArray dataContexts)
+        let isaAssay =
+            arc.GetAssay(assay.AssayName)
+        isaAssay.Datamap <- Some datamap
+
+arc.Update(arcPath)
+```
+</TabItem>
+</Tabs>
