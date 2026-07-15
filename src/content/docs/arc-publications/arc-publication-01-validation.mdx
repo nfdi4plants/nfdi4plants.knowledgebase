@@ -1,0 +1,150 @@
+---
+title: Metadata validation
+lastUpdated: 2026-07-14
+authors:
+  - kevin-schneider
+  - dominik-brilhaus
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+import QIcon from "@components/QIcon.astro"
+
+export const inlineButtonStyle = {
+  height: "1rem",
+  verticalAlign: "middle",
+  display: "inline-block",
+}
+
+The publication process is initiated with the automated validation. This ensures that the ARC meets the minimum metadata requirements for publication. 
+
+## Validate your ARC
+
+You can simply select the validation via ARCitect.
+
+<Steps>
+
+1. Open the ARC in ARCitect
+2. In the sidebar, go to the <QIcon name="verified" /> `Validation` menu
+3. Check the box next to the `arc_specification` dropdown
+3. In the section "Custom Validation Packages", select the `invenio` package
+4. Select the latest version for both packages and click `Save`
+4. Commit your changes via the <QIcon name="rule" /> `Commit` menu
+5. Upload your changes via the <QIcon name="published_with_changes" /> `DataHUB Sync` menu
+6. Open your ARC in the DataHUB
+
+</Steps>
+
+## Check the validation status
+
+The validation is being run in the PLANTDataHUB, where you can also find the validation results.
+
+import InvenioPass from "@images/arc-publications/invenio-badge-pass.svg"
+import InvenioFail from "@images/arc-publications/invenio-badge-fail.svg"
+
+<Steps>
+
+1. Sign in to the [PLANTDataHUB](https://git.nfdi4plants.org)
+2. Navigate to the validated ARC
+3. In the right sidebar you find several validation badges
+
+    ![](@images/arc-publications/cqc-results.png)
+
+    - **(1)**: The `pipeline` badge indicates wether all steps of CQC have passed, or if there are any failures.
+    - **(2)**: The `invenio` badge is used to open a request for ARC publication via [ARChigator](/nfdi4plants.knowledgebase/arc-publications/arc-publication-02-request).
+        - If an ARC **fails** the `invenio` validation, it is not eligible for publication. Clicking the <img src={InvenioFail.src} style={inlineButtonStyle} /> badge will show the failed tests and their details, which can be used to fix the issues in the ARC metadata. 
+        - If an ARC **passes** the `invenio` validation, it is eligible for publication. Clicking the <img src={InvenioPass.src} style={inlineButtonStyle} /> badge will open the ARChigator interface to submit a [request for publication (RFP)](/nfdi4plants.knowledgebase/arc-publications/arc-publication-02-request) of the ARC. 
+    - **(3)**: Every CQC badge comes with a count indicator, which depends on the CQC results, and signifies how many of the performed tests have passed, respectively.
+
+
+</Steps>
+
+
+## Why does the validation fail?
+
+The most common reason for a failed `invenio` validation for ARC publication is missing or invalid investigation metadata. The `invenio` validation checks the ARC metadata against a set of critical metadata checks.
+
+Critical checks:
+
+- The **Investigation** has a title and description
+- At least one **Investigation Contacts** person must have a name, last name, affiliation, valid email, and valid ORCID
+- The ARC contains a `LICENSE` file
+
+## How to check and fix a failed validation?
+
+<Steps>
+
+  1. Click on a red validation badge (e.g. `invenio`) to explore the test results.
+  2. Click on the **Tests** tab (1) and next on **validate-invenio** (2) to see the results of each individual test performed in the `invenio` validation.
+  
+      ![](@images/arc-publications/cqc-results-2.drawio.png)
+
+  3. Next you see a list of passed and failed tests. Click on "View Details" (3) for a failed test to see the details of the test.
+
+      ![](@images/arc-publications/cqc-results-3.drawio.png)
+
+  4. Return to your local ARC and fix the issues based on the information displayed in the test details. For example, if a person does not have a first name, add it to the investigation metadata.
+
+</Steps>
+
+:::note[Invenio]
+A common issue with failed tests are malformed names or ORCIDs.
+1. Please make sure that names do not have trailing spaces (e.g., `John` not `John `).
+1. Please make sure that the ORCID is valid and in the correct format (e.g., `0000-0002-1825-0097`).
+:::
+
+
+{/* 
+
+
+
+
+## CQC pipeline details
+
+For more details, you can click on the pipeline badge **(1)**, and investigate the steps of the CQC pipeline details:
+
+![](@images/arc-publications/cqc-pipeline-path-1.png)
+
+- **(4)**: List of commits, with the most recent commit on top.
+- **(5)**: _Pipeline result_: If the pipeline passed, it shows a green checkmark.
+- **(6)**: _Pipeline result_: If the pipeline failed, it shows a red cross.
+
+Click on a _pipeline result_ (e.g., **(4)**) of a commit of choice to open the CQC pipeline details for that commit.
+
+On the next page, you can see the details of the CQC pipeline for the selected commit:
+
+![](@images/arc-publications/cqc-pipeline-path-2.png)
+
+- **(7)**: overall pipeline result
+- **(8)**: associated commit information
+- **(9)**: pipeline step results
+
+Clicking on **(7)** will open the CQC pipeline, where each step can be viewed in detail:
+
+![](@images/arc-publications/cqc-pipeline-steps.png)
+
+- **(10)** _CQC step 1_: a machine-readable representation (JSON) of the ARC metadata is created and linked with the commit, which makes it discoverable for search tools. 
+- **(11)** _CQC step 2_: ARC metadata is subjected to a set of quality checks, e.g., if ORCIDs associated with persons are valid or if each author has a contact email. 
+- **(12)** _CQC step 3_: The ARC metadata is converted to a metadata record, which is used by subsequent tools to trigger the data publication and associated creation of a DOI via DataCite for that record.
+- **(13)**: _Test tab_ shows the results of each individual test performed in _CQC step 2_ **(11)**
+
+
+## What to do when the CQC pipeline fails?
+
+There are multiple issues that can lead to a failed CQC pipeline:
+
+### CQC step 1 fails
+
+_CQC step 1_ **(10)**, should never fail, as it usually creates a json file even when there is no ARC in the repository. If this step fails, please contact the DataHUB support team, as there is something fundamentally wrong with your repository.
+
+### CQC step 2 fails
+
+_CQC step 2_ **(11)**, is the most common step to fail. This step contains a set of critical quality checks that **MUST** pass in order for the ARC to be eligible for publication, and a set of non-critical checks that signify metadata quality. Only failed critical tests lead to a failed CQC pipeline. If this happens, investigate the failed tests in the _Test tab_ **(13)**, and fix the issues based on the information displayed there. An example could for example be a person not having a First name in your investigation metadata. Commit your changes and check wether the tests pass.
+
+### CQC step 3 fails
+
+As _CQC step 3_ **(12)** is only performed after the ARC has passed all critical tests **(10)**, it is very unlikely that this step fails. If it does, please contact the DataHUB support team.
+
+
+
+ */}

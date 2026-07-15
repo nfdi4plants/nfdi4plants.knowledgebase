@@ -78,7 +78,14 @@ export default defineConfig({
               },
             ],
           },
-
+          {
+            label: 'ARC Publications',
+            icon: 'add-document',
+            link: 'arc-publications',
+            items: [
+              {collapsed: true, label: 'ARC Publications', items: [{ autogenerate: { directory: "arc-publications" }}]}
+            ]
+          },
           {
             label: "Annotation Use-Cases",
             icon: "pencil",
@@ -477,12 +484,6 @@ export default defineConfig({
     }),
     react(),
   ],
-
-  // markdown: {
-  //   processor: unified({
-  //     rehypePlugins: [rehypeSlug, ...rehypeAutolink()],
-  //   }),
-  // },
 
   vite: {
     plugins: [tailwindcss()],

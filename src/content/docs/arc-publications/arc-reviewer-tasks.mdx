@@ -1,9 +1,9 @@
 ---
-title: ARC revision for publication using default issues
+title: ARC reviewer tasks
 sidebar:
   hidden: true
 topic: guides
-lastUpdated: 2026-03-17
+lastUpdated: 2026-07-14
 authors:
   - dominik-brilhaus
 ---
@@ -12,12 +12,55 @@ import { Steps,  Code, Card, LinkButton} from '@astrojs/starlight/components';
 import CsvTable from '@components/CsvTable.astro'
 import issueCsv from '/review-arc-issues.csv?raw&url'
 
+:::note[Hidden guide]
+This page is hidden, since it is only relevant for ARC reviewers.
+:::
+
+:::note
+Please familiarize with the [user-targeted guides](/nfdi4plants.knowledgebase/arc-publications/) first. This should give a good overview about the publication and review process, and associated tools and services.
+:::
+
+## ARC revision steps
+
+<Steps>
+
+1. Once an ARC is submitted as RFP, all ARC reviewers receive an email
+2. If you plan to review an ARC, please communicate this by responding directly to the reviewer email list
+3. Open the RFP on the ARChive https://archive.nfdi4plants.org
+
+      :::note[WIP July 2026]
+      Currently, all ARC reviewers use the same invenio account
+      :::
+
+4. Respond to the RFP, e.g. that "a DataPLANT reviewer" (closed review) or you (open review; e.g. add name and affiliation) will initiate the revision. In the response, provide a link to the ARC issue board.
+
+    :::note
+    This response will be visible to the ARC submitter via the [ARChigators publication status](/nfdi4plants.knowledgebase/arc-publications/arc-publication-02-request/#publication-status)
+    :::
+
+5. Initiate the ARC revision
+    - Inspect the ARC in the DataHUB
+    - Download and inspect the ARC locally
+    - Add reviewer comments as work items / issues directly to the ARC in the DataHUB
+    - Consider using the default issues provided below
+
+
+</Steps>
+
+:::note[WIP July 2026]
+- A mechanism to assign ARC reviewer DataHUB accounts to RFP-ARCs is currently work in progress.
+- Oftentimes ARC reviewers already have access to the ARC under revision due to their data steward role in the project.
+- If not, this could be requested by contacting the ARC submitters via invenio / the publication status page
+:::
+
+
+## Using default issues for ARC revision
+
 This guide provides a template issue list for ARC revision in the DataHUB. The issue list can be imported into the DataHUB to create a default set of issues for ARC revision. The issue list is based on the typical review criteria for ARC publication in DataPLANT, but can be adapted to the specific needs of the ARC revision.
 
 :::note
-In the long run, the revision will be automated as much as possible via the [arc-validation](/nfdi4plants.knowledgebase/arc-validation/the-arc-validation-concept/) workflows and validation packages, but for now, this issue list can be imported manually into the DataHUB. This issue-based revision may also help to engage with the ARC authors and reviewers in the DataHUB to transparently discuss the revision process and the quality criteria for ARC publication.
+In the long run, the revision will be automated as much as possible via the [arc-validation](/nfdi4plants.knowledgebase/arc-validation/) workflows and validation packages, but for now, this issue list can be imported manually into the DataHUB. This issue-based revision may also help to engage with the ARC authors and reviewers in the DataHUB to transparently discuss the revision process and the quality criteria for ARC publication.
 :::
-
 
 <Card title="review-arc-issues.csv" icon="seti:csv">
 
@@ -41,7 +84,11 @@ In the long run, the revision will be automated as much as possible via the [arc
 <Steps>
 
 1. Navigate to the ARC to be revised in the DataHUB
-1. Open the issue menu: left sidebar → Plan → Issues
+2. Navigate to labels: left sidebar → Manage → Labels and click `Generate a default set of labels`
+    :::note
+    This enables to tag issues with default GitLab labels such as `critical`, `enhancement`, `suggestion` as provided in the following issue list.
+    :::
+1. Open the issue menu: left sidebar → Plan → Work items
 1. Via the three-dots menu in the top-right corner use `Import CSV`
 1. Select the `review-arc-issues.csv` file and import it
 1. Wait a short moment. You receive an email notification once the import finished (or failed due to parsing errors).

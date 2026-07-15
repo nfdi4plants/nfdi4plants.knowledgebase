@@ -1,0 +1,85 @@
+---
+title: Request for publication (RFP)
+lastUpdated: 2026-07-14
+authors:
+  - kevin-schneider
+  - dominik-brilhaus
+---
+
+import { Steps } from '@astrojs/starlight/components';
+
+export const inlineButtonStyle = {
+  height: "1.5rem",
+  verticalAlign: "middle",
+  display: "inline-block",
+}
+
+import InvenioPass from "@images/arc-publications/invenio-badge-pass.svg"
+import SubmitButton from '@images/arc-publications/archigator-submit.png'
+import CancelButton from '@images/arc-publications/archigator-cancel.png'
+
+Once the [validation against the invenio package](/nfdi4plants.knowledgebase/arc-publications/arc-publication-01-validation/) passes (indicated by a green badge), one can proceed with the Request for Publication (RFP) of the ARC. The request is submitted via the **ARChigator** interface, which is accessible through the DataHUB.
+
+## Check the ARC publication record
+
+<Steps>
+  1. Click on the <img src={InvenioPass.src} alt="Invenio" style={inlineButtonStyle} /> badge to open the ARChigator dashboard. 
+    
+
+      :::note
+      You can only proceed to the ARChigator dashboard if you are logged in to DataHUB.
+      :::
+  
+  2. You are redirected to the ARChigator dashboard and receive an email about a new personal access token.
+  
+      :::note
+      The token is automatically generated to communicate with the ARChigator interface and is valid for 16 hrs. Hence you receive another email about token expiration after 16 hrs.
+      :::
+
+  3. In the ARChigator dashboard, you can review the ARC metadata and data of the publication record that will be created in the ARChive:
+
+      ![](@images/arc-publications/archigator-dashboard.png)
+
+      The ARChigator dashboard summarizes what will be shown in the ARC publication record:
+
+        - A project overview including the ARC source URL, creation date, and the ARC identifier
+        - Selected investigation metadata from the ARC, including title, description, and contacts (i.e. authors)
+        - A preview of the file and folder structure of the ARC, that can be navigated to check all data and metadata files
+
+</Steps>
+
+## Request for publication
+
+<Steps>
+  
+  4. Double-check the data and metadata
+  5. Open the Request for Publication (RFP) by clicking <img src={SubmitButton.src} alt="Submit" style={inlineButtonStyle} />
+
+      :::note
+      You can only publish an ARC that you have access control for on the DataHUB instance it is hosted on.
+      :::
+
+      :::tip
+      If you wish to update the ARC and open another RFP, you can cancel the request by clicking <img src={CancelButton.src} alt="Cancel" style={inlineButtonStyle} />.
+      :::
+
+</Steps>
+
+
+## Publication status 
+
+<Steps>
+
+  6. Once an ARC is submitted as RFP, all registered owners of the ARC receive a confirmation email with a link to the **ARChigator publication status** page of the ARC:
+
+      ![](@images/arc-publications/archigator-publication-status.png)
+
+  7. The publication status page summarizes the current state, and allows the ARC reviewers to communicate with the ARC submitters and *vice versa*.
+
+      :::note
+      Follow the link in the confirmation email to access the publication status page.
+      :::
+
+  8. The ARC reviewer will communicate the [revision](/nfdi4plants.knowledgebase/arc-publications/arc-publication-03-revision-curation) via the publication status page.
+
+</Steps>
