@@ -130,14 +130,11 @@ Let us start by adding the samples to the study.
   <Steps>
 
   1. Click on the study's name (`AthalianaColdStress`) in the file tree.
-  2. At the bottom of the right panel, click on the <btn>+</btn> right next to the `Study` sheet.
-  3. This adds a new table sheet.
-  4. Right-click on sheet’s tab to rename it to plant-growth. 
-  4. Click on the **"Add Building Block"** button <Icons.BuildingBlock />
-  5. From the dropdown menu in the `Add Building Block` widget:
-      - select `Input` -> `Source Name` and click `Add Column`
-      - select `Output` -> `Sample Name` and click `Add Column`
-  6. At the bottom of the table, type `6` in the text field and click <btn>+</btn> to add six rows to your table.
+  2. At the bottom of the right panel, click on the <btn>+ New Table</btn> right next to the `Study` sheet.
+  3. Select "Create basic table".
+  4. This adds a new table sheet with three columns `Input[Sample Name]`, `Protocol Uri` and `Output[Sample Name]` and three empty rows
+  4. Right-click on sheet’s tab to rename it to "plant-growth". 
+  6. At the bottom of the table, type `3` in the text field and click <btn>+</btn> to add another three rows to the table.
 
       <ViolaSays>
 
@@ -147,16 +144,16 @@ Let us start by adding the samples to the study.
 
       </ViolaSays>
 
-  7. Add the sample identifiers into the columns `Input[Source Name]` and `Output[Sample Name]`.
+  7. Add the sample identifiers into the columns `Input[Sample Name]` and `Output[Sample Name]`.
 
-      `Input[Source Name]` | `Output[Sample Name]`
-      -------------------- |  --------------------
-      Cold1                |  Cold1_leaf
-      Cold2                |  Cold2_leaf
-      Cold3                |  Cold3_leaf
-      RT1                  |  RT1_leaf
-      RT2                  |  RT2_leaf
-      RT3                  |  RT3_leaf
+      `Input[Sample Name]` | `ProtocolUri` | `Output[Sample Name]`
+      -------------------- | ------------- | --------------------
+      Cold1                |               | Cold1_leaf
+      Cold2                |               | Cold2_leaf
+      Cold3                |               | Cold3_leaf
+      RT1                  |               | RT1_leaf
+      RT2                  |               | RT2_leaf
+      RT3                  |               | RT3_leaf
 
       This means that input "Cold1" results in output "Cold1_leaf".
 
@@ -179,18 +176,18 @@ We reference the protocol in the annotation table to say:
   1. On top click <Icons.FilePicker /> to open the `File Picker`.
   1. In the `File Picker` widget, click `Pick Files`.
   2. From the ARC select the file `protocols/growth_protocol.md` and click `Open`.
-  1. Select a cell in the `Protocol REF` column and click `Insert file names`.
+  1. Select a cell in the `ProtocolUri` column and click `Insert file names`.
 
       <NoWrapTable>
 
-        `Input[Source Name]` |  `Output[Sample Name]` | `ProtocolUri`
-        -------------------- |  --------------------   |  --------------------
-        Cold1                |  Cold1_leaf  | protocols/growth_protocol.md 
-        Cold2                |  Cold2_leaf  |
-        Cold3                |  Cold3_leaf  |
-        RT1                  |  RT1_leaf  |
-        RT2                  |  RT2_leaf  |
-        RT3                  |  RT3_leaf  |
+        `Input[Sample Name]` | `ProtocolUri`                | `Output[Sample Name]`
+        -------------------- | ---------------------------- | --------------------
+        Cold1                | protocols/growth_protocol.md | Cold1_leaf
+        Cold2                |                              | Cold2_leaf
+        Cold3                |                              | Cold3_leaf
+        RT1                  |                              | RT1_leaf
+        RT2                  |                              | RT2_leaf
+        RT3                  |                              | RT3_leaf
 
       </NoWrapTable>
  
@@ -198,15 +195,14 @@ We reference the protocol in the annotation table to say:
 
       <NoWrapTable>
 
-
-        `Input[Source Name]` |  `Output[Sample Name]` | `ProtocolUri`
-        -------------------- |  --------------------   |  --------------------
-        Cold1                |  Cold1_leaf  | protocols/growth_protocol.md 
-        Cold2                |  Cold2_leaf  | protocols/growth_protocol.md 
-        Cold3                |  Cold3_leaf  | protocols/growth_protocol.md 
-        RT1                  |  RT1_leaf  | protocols/growth_protocol.md 
-        RT2                  |  RT2_leaf  | protocols/growth_protocol.md 
-        RT3                  |  RT3_leaf  | protocols/growth_protocol.md 
+        `Input[Sample Name]` | `ProtocolUri`                | `Output[Sample Name]`
+        -------------------- | ---------------------------- | --------------------
+        Cold1                | protocols/growth_protocol.md | Cold1_leaf
+        Cold2                | protocols/growth_protocol.md | Cold2_leaf
+        Cold3                | protocols/growth_protocol.md | Cold3_leaf
+        RT1                  | protocols/growth_protocol.md | RT1_leaf
+        RT2                  | protocols/growth_protocol.md | RT2_leaf
+        RT3                  | protocols/growth_protocol.md | RT3_leaf
    
       </NoWrapTable>
 
