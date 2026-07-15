@@ -11,12 +11,13 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 import Mermaid from '@components/mdx/Mermaid.astro'
 
 
-This guide demonstrates how to create individual datamaps for each Assay using CSV tables located within the `datasetFolder`.
+This guide demonstrates how to create individual datamaps for each Assay based on CSV tables located within the `dataset` folder.
 
 ## Use-case
 
-Researchers often need to store specific metadata—such as the measurement units for a particular analyte (e.g., chlorophyll a)—directly within a datamap. 
-This workflow facilitates the automated generation of these datamaps for selected Assays by extracting the relevant measurement parameters from the CSV files in an Assay's dataset.
+Researchers often need to store specific metadata for given data entities. Examples for this include measurement units for a particular analyte or textual descriptions of the measured properties. 
+In the context of an ARC, we store this information within datamaps. 
+This workflow facilitates the automated generation of these datamaps for selected Assays. For each header we want to annotate, we define a Data Context, containing Explication, Object Type and a Unit. We then map over the data files in the given assays and create a Datamap according to the headers we encounter.
 
 ## Procedure
 
