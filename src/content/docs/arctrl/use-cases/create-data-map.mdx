@@ -1,6 +1,8 @@
 ---
 title: Create Datamaps for scattered csv files
-lastUpdated: 2026-07-05
+lastUpdated: 2026-07-15
+authors:
+  - dennis-kuhl
 ---
 
 import { Steps } from '@astrojs/starlight/components';
@@ -9,20 +11,18 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 import Mermaid from '@components/mdx/Mermaid.astro'
 
 
-This guide demonstrates how to use ARCtrl to export annotation tables from an ARC into individual json files.
+This guide demonstrates how to create individual datamaps for each Assay using CSV tables located within the `datasetFolder`.
 
 ## Use-case
 
-Some users want to quickly export studies, assays or individual annotation tables into easily shareable and reusable json files. 
-This might help to [establish SOPs](/nfdi4plants.knowledgebase/arctrl/use-cases/create-arc-template/) from a lab-typical ARC.
+Researchers often need to store specific metadata—such as the measurement units for a particular analyte (e.g., chlorophyll a)—directly within a datamap. 
+This workflow facilitates the automated generation of these datamaps for selected Assays by extracting the relevant measurement parameters from the CSV files in an Assay's dataset.
 
-:::tip[Swate]
-This is similar to [Swate's export](/nfdi4plants.knowledgebase/swate/json/#export) feature
-:::
+## Procedure
+
+1. **Load dependencies:** Initialize and load the required ARC dependencies.
 
 <Tabs syncKey="pl">
-
-{/* FSHARP */}
 <TabItem label="FSharp" icon='seti:f-sharp'>
 
 ```fsharp
@@ -34,8 +34,16 @@ open ARCtrl.QueryModel
 let arcPath = @"H:\User\ARCs\BeechThinning"
 let arc = ARC.load arcPath
 let arcTables = arc.ArcTables
+```
+</TabItem>
+</Tabs>
 
-// Ontology Preparation
+2. **Define ontology terms:** Specify the ontology terms corresponding to the units and explications required for the datamap.
+
+<Tabs syncKey="pl">
+<TabItem label="FSharp" icon='seti:f-sharp'>
+
+```fsharp
 let µg_p_mg = OntologyAnnotation(
     name="microgram per milligram"
 )
@@ -107,6 +115,17 @@ let protContent = OntologyAnnotation(
     tan="http://purl.obolibrary.org/obo/TO_0000598"
 )
 
+```
+</TabItem>
+</Tabs>
+
+* **Optional:** Add or remove DataContext values according to your specific experimental requirements.
+
+<Tabs syncKey="pl">
+<TabItem label="FSharp" icon='seti:f-sharp'>
+
+```fsharp
+
 type AssayColumn =
     {
         Header : string
@@ -121,6 +140,16 @@ type AssayDefinition =
         Columns : AssayColumn list
     }
 
+```
+</TabItem>
+</Tabs>
+
+3. **Define header names:** Specify the exact column headers you intend to utilize as metadata labels.
+
+<Tabs syncKey="pl">
+<TabItem label="FSharp" icon='seti:f-sharp'>
+
+```fsharp
 let excelHeaders =
     [|
         "Specific_weight"
@@ -134,6 +163,18 @@ let excelHeaders =
         "Chl_a/b"
         "Car"
     |]
+
+```
+</TabItem>
+</Tabs>
+
+4. Configure Assay parameters: Define the target Assays alongside their associated metadata parameters, which include Headers (Labels), Units, Description, Explication, and ObjectType. 
+(Note: If you modify the AssayColumn type, ensure these parameters are updated accordingly).
+ 
+<Tabs syncKey="pl">
+<TabItem label="FSharp" icon='seti:f-sharp'>
+
+```fsharp
 let assays =
     [
         {
@@ -248,13 +289,24 @@ let assays =
         }
     ]
 
-// Datamap generation
+```
+</TabItem>
+</Tabs>
+
+* **Optional:** Perform any necessary string formatting or header corrections using the normalizeHeaders function.
+ 
+<Tabs syncKey="pl">
+<TabItem label="FSharp" icon='seti:f-sharp'>
+
+```fsharp
+// header correction function
 let normalizeHeader (header:string) =
     header
         .Trim()
         .Replace("2:", "")
         .Replace(" ", "")
 
+// helper function for next step
 let readHeaders (csvFile:string) =
     File.ReadLines(csvFile)
     |> Seq.head
@@ -262,6 +314,16 @@ let readHeaders (csvFile:string) =
         line.Split(',')
         |> Array.map normalizeHeader
 
+```
+</TabItem>
+</Tabs>
+
+5. **Generate datamaps:** Execute the createDatamap function. This function iterates through the configured Assays and computationally generates the designated datamaps for each one.
+ 
+<Tabs syncKey="pl">
+<TabItem label="FSharp" icon='seti:f-sharp'>
+
+```fsharp
 let createDataContexts (arcPath:string) (assay:AssayDefinition) =
 
     let datasetFolder =
