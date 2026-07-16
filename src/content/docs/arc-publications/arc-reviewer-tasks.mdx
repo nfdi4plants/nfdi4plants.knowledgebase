@@ -6,6 +6,7 @@ topic: guides
 lastUpdated: 2026-07-14
 authors:
   - dominik-brilhaus
+  - cristina-schmale-rodrigues
 ---
 
 import { Steps,  Code, Card, LinkButton} from '@astrojs/starlight/components';
@@ -16,15 +17,35 @@ import issueCsv from '/review-arc-issues.csv?raw&url'
 This page is hidden, since it is only relevant for ARC reviewers.
 :::
 
-:::note
-Please familiarize with the [user-targeted guides](/nfdi4plants.knowledgebase/arc-publications/) first. This should give a good overview about the publication and review process, and associated tools and services.
-:::
+## Before your first review
+
+Before reviewing your first ARC, please make sure that the following initial setup steps have been completed:
+
+✅ You have been accepted as an **ARC Reviewer**. If not, please follow the instructions listes here: **[Become an ARC Reviewer](/nfdi4plants.knowledgebase/arc-publications/become-arc-reviewer/)**.   
+✅ You have received access to the **ARChive** and the **DataHUB**.   
+✅ You have received all further required credentials.   
+✅ You are familiar with the general ARC publication workflow described in the [ARC publication guides](/nfdi4plants.knowledgebase/arc-publications/).   
+✅ You have created (or have been assigned) the community you are responsible for in the **ARChive**, so that submitted ARCs can be associated with your community.   
+
+Once these initial setup steps are completed, you are ready to review your first ARC.
+
+## What should I review?
+
+When reviewing an ARC, your goal is not to evaluate the scientific quality of the research. Instead, you should assess whether the ARC
+
+- is complete,
+- follows the FAIR principles,
+- contains sufficient metadata,
+- passes the available validation checks,
+- can be understood and reused by other researchers.
+
+The provided issue list covers many of these aspects and serves as a starting point for the review.
 
 ## ARC revision steps
 
 <Steps>
 
-1. Once an ARC is submitted as RFP, all ARC reviewers receive an email
+1. Once an ARC is submitted as Request for Publication (RFP), all ARC reviewers receive an email
 2. If you plan to review an ARC, please communicate this by responding directly to the reviewer email list
 3. Open the RFP on the ARChive https://archive.nfdi4plants.org
 
@@ -43,13 +64,14 @@ Please familiarize with the [user-targeted guides](/nfdi4plants.knowledgebase/ar
     - Download and inspect the ARC locally
     - Add reviewer comments as work items / issues directly to the ARC in the DataHUB
     - Consider using the default issues provided below
+    - Communicate with the authors via these issues
 
 
 </Steps>
 
 :::note[WIP July 2026]
 - A mechanism to assign ARC reviewer DataHUB accounts to RFP-ARCs is currently work in progress.
-- Oftentimes ARC reviewers already have access to the ARC under revision due to their data steward role in the project.
+- Often ARC reviewers already have access to the ARC under revision due to their data steward role in the project.
 - If not, this could be requested by contacting the ARC submitters via invenio / the publication status page
 :::
 
@@ -79,7 +101,7 @@ In the long run, the revision will be automated as much as possible via the [arc
 
 </Card>
 
-## Using the review issue list during ARC revision
+### Using the review issue list during ARC revision
 
 <Steps>
 
@@ -95,7 +117,7 @@ In the long run, the revision will be automated as much as possible via the [arc
 
 </Steps>
 
-## (Optional) Bundle issues in a milestone
+### (Optional) Bundle issues in a milestone
 
 <Steps>
 
@@ -140,7 +162,7 @@ In case there's an issue with the import or you want to immediately close (some 
 
 ## What's next? – The actual revision process
 
-The issue list is really just a starting point for ARC revision. This should help ARC reviewers to have a clear overview of the most important issues that need to be addressed for ARC publication. However, the issue list is not exhaustive and may need to be adapted to the specific needs of the ARC revision. For example, some issues may not be relevant for a specific ARC, while other issues may need to be added. 
+The issue list serves as a starting point for ARC revision. This should help ARC reviewers to have a clear overview of the most important issues that need to be addressed for ARC publication. However, the issue list is not exhaustive and may need to be adapted to the specific needs of the ARC revision. For example, some issues may not be relevant for a specific ARC, while other issues may need to be added. 
 
 In order to guide the ARC creators and relate the issues to their specific ARC, it usually makes sense to add some comments to the issues. This can be done directly in the DataHUB by responding to the issues and include specific parts, e.g. study or assay names and screenshots (e.g. from ARCitect).
 
