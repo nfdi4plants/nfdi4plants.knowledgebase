@@ -29,12 +29,12 @@
 }
 
 /* Dark mode: Add background to images in page content */
-:root:not([data-theme='light']) .sl-markdown-content img {
+:root:not([data-theme='light']) .sl-markdown-content > p > img,
+:root:not([data-theme='light']) .sl-markdown-content > img {
 	background-color: var(--sl-color-gray-1);
 	padding: 0.5rem;
 	border-radius: 0.5rem;
 }
-
 /* =====================================
    ASIDE COLOR TOKENS
    ===================================== */
