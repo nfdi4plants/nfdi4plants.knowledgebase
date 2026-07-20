@@ -20,7 +20,7 @@ This page is hidden, since it is only relevant for ARC reviewers.
 Please familiarize with the [user-targeted guides](/nfdi4plants.knowledgebase/arc-publications/) first. This should give a good overview about the publication and review process, and associated tools and services.
 :::
 
-## ARC revision steps
+## Initiate the ARC revision
 
 <Steps>
 
@@ -28,14 +28,19 @@ Please familiarize with the [user-targeted guides](/nfdi4plants.knowledgebase/ar
 2. If you plan to review an ARC, please communicate this by responding directly to the reviewer email list
 3. Open the RFP on the ARChive https://archive.nfdi4plants.org
 
+    1. Go to "My dashboard" ![](@images/arc-publications/archive-request1.drawio.png)
+    2. Go to "Requests" and select the record by clicking the title
+
       :::note[WIP July 2026]
       Currently, all ARC reviewers use the same invenio account
       :::
 
 4. Respond to the RFP, e.g. that "a DataPLANT reviewer" (closed review) or you (open review; e.g. add name and affiliation) will initiate the revision. In the response, provide a link to the ARC issue board.
 
+    1. Go to "Conversation" ![](@images/arc-publications/archive-request2.drawio.png)
+
     :::note
-    This response will be visible to the ARC submitter via the [ARChigators publication status](/nfdi4plants.knowledgebase/arc-publications/arc-publication-02-request/#publication-status)
+    This conversation will be visible to the ARC submitter via the [ARChigators publication status](/nfdi4plants.knowledgebase/arc-publications/arc-publication-02-request/#publication-status)
     :::
 
 5. Initiate the ARC revision
@@ -44,7 +49,6 @@ Please familiarize with the [user-targeted guides](/nfdi4plants.knowledgebase/ar
     - Add reviewer comments as work items / issues directly to the ARC in the DataHUB
     - Consider using the default issues provided below
 
-
 </Steps>
 
 :::note[WIP July 2026]
@@ -52,7 +56,6 @@ Please familiarize with the [user-targeted guides](/nfdi4plants.knowledgebase/ar
 - Oftentimes ARC reviewers already have access to the ARC under revision due to their data steward role in the project.
 - If not, this could be requested by contacting the ARC submitters via invenio / the publication status page
 :::
-
 
 ## Using default issues for ARC revision
 
@@ -79,7 +82,7 @@ In the long run, the revision will be automated as much as possible via the [arc
 
 </Card>
 
-## Using the review issue list during ARC revision
+### Importing the issues from csv
 
 <Steps>
 
@@ -95,7 +98,7 @@ In the long run, the revision will be automated as much as possible via the [arc
 
 </Steps>
 
-## (Optional) Bundle issues in a milestone
+### (Optional) Bundle issues in a milestone
 
 <Steps>
 
@@ -137,45 +140,99 @@ In the long run, the revision will be automated as much as possible via the [arc
 In case there's an issue with the import or you want to immediately close (some of) the imported issues, you can also use the `bulk edit` feature. Select the relevant issues, change the status to "Close", select "Update selected".
 :::
 
+### Adapting the issue list
 
-## What's next? – The actual revision process
+The issue list is based on the [CSV import feature of GitLab issues](https://docs.gitlab.com/user/project/issues/csv_import/), which allows you to create multiple issues at once by uploading a CSV file with the issue details. For more details on the CSV format and the available options, please refer to the GitLab documentation. 
 
-The issue list is really just a starting point for ARC revision. This should help ARC reviewers to have a clear overview of the most important issues that need to be addressed for ARC publication. However, the issue list is not exhaustive and may need to be adapted to the specific needs of the ARC revision. For example, some issues may not be relevant for a specific ARC, while other issues may need to be added. 
+<details>
+<summary>Learn More</summary>
+
+  
+
+  #### Basics about the issue CSV file
+
+  - The first two columns must be `title` and `description`.
+  - The first row is used as a header and is ignored. 
+  - The order of the rows does not matter – by default the issues are sorted alphabetically in the DataHUB.
+
+  #### Use of quick-actions
+
+  GitLab offers so-called "quick-actions" to perform certain actions on issues, e.g. to assign an issue to a user, to add a label or to mark an issue as confidential. These quick-actions can also be used in the CSV file to set up the issues in a more specific way during import. 
+
+  - Each action must be on a separate line.
+  - For quick actions like `/label` and `/milestone`, the label or milestone must already exist in the project.
+
+  #### Labels
+
+  Using the quick-action `/label` allows to categorize the issues. Instead of typical journal review terminology (e.g. "required", "recommended", "major", "minor"), this issue list uses the default GitLab labels `critical`, `suggestion` and `enhancement`. 
+
+  :::tip
+  You can see all available labels via left sidebar → Manage → Labels
+  :::
+
+  #### Confidential
+
+  Marking review issues as "confidential" via the `/confidential` quick-action simply adds a bit more comfort for the ARC authors. Issues marked as confidential are only visible to project members with at least "Reporter" permissions.
+
+</details>
+
+## The revision process
+
+Above issue list is really just a starting point for ARC revision. This should help ARC reviewers to have an idea of some important issues that could be addressed for ARC publication. However, the issue list is not exhaustive and may need to be adapted to the specific needs of the ARC revision. For example, some issues may not be relevant for a specific ARC, while other issues may need to be added. 
 
 In order to guide the ARC creators and relate the issues to their specific ARC, it usually makes sense to add some comments to the issues. This can be done directly in the DataHUB by responding to the issues and include specific parts, e.g. study or assay names and screenshots (e.g. from ARCitect).
 
 Furthermore, since the issue list is generic and with the logic above, always all issues are imported, it may be useful to close some of the issues immediately after import if they are not (anymore) relevant for the specific ARC revision. Again, this highlights, that certain criteria simply apply to all ARCs.
 
 :::tip[A pull-request goes a long way]
-For small things such as adding a License or the automated README, ARC creators usually also appreciate a pull request. 
+For small things such as adding a License or the automated README, ARC creators usually also appreciate a merge request (if communicated clearly). 
 :::
 
+## Finalizing revision and publication
 
-## Adapting the issue list
+Once all 
 
-The issue list is based on the [CSV import feature of GitLab issues](https://docs.gitlab.com/user/project/issues/csv_import/), which allows you to create multiple issues at once by uploading a CSV file with the issue details. For more details on the CSV format and the available options, please refer to the GitLab documentation. 
+:::note[WIP July 2026]
 
-### Basics about the issue CSV file
+- There is currently no formal mechanism for re-submission. After finishing the revision, either ask the ARC creators to resubmit via the invenio badge or do it for them, then close (i.e. reject) the original submission with a comment and DOI-link that the re-submission was accepted. 
 
-- The first two columns must be `title` and `description`.
-- The first row is used as a header and is ignored. 
-- The order of the rows does not matter – by default the issues are sorted alphabetically in the DataHUB.
+- A **user-selected** community assignment (and reviewer assignment based on that) is currently under discussion.
 
-### Use of quick-actions
+- Embargos for ARC publications are currently being tested and discussed.
+  - An embargo allows to reserve a DOI.
+  - During an embargo a link with a token may be provided to the full or partial ARC publication record to serve the **journal manuscript peer review** process. 
 
-GitLab offers so-called "quick-actions" to perform certain actions on issues, e.g. to assign an issue to a user, to add a label or to mark an issue as confidential. These quick-actions can also be used in the CSV file to set up the issues in a more specific way during import. 
-
-- Each action must be on a separate line.
-- For quick actions like `/label` and `/milestone`, the label or milestone must already exist in the project.
-
-#### Labels
-
-Using the quick-action `/label` allows to categorize the issues. Instead of typical journal review terminology (e.g. "required", "recommended", "major", "minor"), this issue list uses the default GitLab labels `critical`, `suggestion` and `enhancement`. 
-
-:::tip
-You can see all available labels via left sidebar → Manage → Labels
 :::
 
-#### Confidential
+<Steps>
 
-Marking review issues as "confidential" via the `/confidential` quick-action simply adds a bit more comfort for the ARC authors. Issues marked as confidential are only visible to project members with at least "Reporter" permissions.
+  1. Sanity double-check the ARC publication record in Invenio.
+      - Title
+      - Description
+      - Authors
+      - ARC preview (Metadata, Download of files, etc.)
+  
+  2. Accept the publication by clicking "Accept and publish" in the Requests view (see above). 
+
+  3. Provide the DOI to the user via the Invenio interface
+    
+      :::tip[Concept DOI]
+        It's recommended to use the "Concept DOI", which will always resolve to the latest record version, respectively.
+      :::
+
+      :::tip[Add DOI to README]
+        To go full circle, one can simply add the DOI (e.g. as a badge) to the ARC's README via merge request.
+      :::
+
+  4. Guide the user how to use the DOI record and remind of citation and acknowledgement habits (e.g. for DataPLANT and data stewardship visibility).
+
+  5. Assign the ARC to your or a suitable community: In the right sidebar panel "Communities", 
+      1. search and select the community under "Submit to community"
+      2. Accept the change under "Pending submissions"
+  
+      ![](@images/arc-publications/archive-communities.png)
+
+</Steps>
+
+
+
