@@ -50,9 +50,8 @@ import InvenioFail from "@images/arc-publications/invenio-badge-fail.svg"
 
     ![](@images/arc-publications/cqc-results.png)
 
-    - **(1)**: The `pipeline` badge indicates wether all steps of CQC have passed, or if there are any failures.
-    - **(2)**: The `invenio` badge is used to open a request for ARC publication via [ARChigator](/nfdi4plants.knowledgebase/arc-publications/arc-publication-02-request).
-        - If an ARC **fails** the `invenio` validation, it is not eligible for publication. Clicking the <img src={InvenioFail.src} style={inlineButtonStyle} /> badge will show the failed tests and their details, which can be used to fix the issues in the ARC metadata. 
+    - **(1)**: The `pipeline` badge indicates wether all steps of [Continuous Quality Control (CQC)](/nfdi4plants.knowledgebase/arc-publications/#continuous-quality-control-cqc) have passed, or if there are any failures.
+    - **(2)**: The `invenio` badge is used to open a request for ARC publication via [ARChigator](/nfdi4plants.knowledgebase/arc-publications/#archigator-the-arc-submission-interface) for publication. Clicking the <img src={InvenioFail.src} style={inlineButtonStyle} /> badge will show the failed tests and their details, which can be used to fix the issues in the ARC metadata. 
         - If an ARC **passes** the `invenio` validation, it is eligible for publication. Clicking the <img src={InvenioPass.src} style={inlineButtonStyle} /> badge will open the ARChigator interface to submit a [request for publication (RFP)](/nfdi4plants.knowledgebase/arc-publications/arc-publication-02-request) of the ARC. 
     - **(3)**: Every CQC badge comes with a count indicator, which depends on the CQC results, and signifies how many of the performed tests have passed, respectively.
 
@@ -95,9 +94,6 @@ A common issue with failed tests are malformed names or ORCIDs.
 
 
 {/* 
-
-
-
 
 ## CQC pipeline details
 
