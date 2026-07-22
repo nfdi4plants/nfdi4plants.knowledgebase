@@ -108,6 +108,17 @@ See also https://nfdi4plants.org/nfdi4plants.knowledgebase/arc-use-cases/inputs-
   - [ ] reference a reusable container (e.g. a Docker image or local Docker File) that contains all necessary dependencies for the workflow
   - [ ] reference the input and output dataset files in the ARC, e.g. via `Input [Data]` and `Output [Data]` columns in annotation tables
   "
+"Use Open and Future-Proof File Formats","/confidential
+/label ~suggestion
+  To maximise the chances that your data can be accessed and re-used by a wide audience and into the future, it is best to use open and common file formats which are supported by a wide range of (ideally free) software.
+  Otherwise you risk your data and metadata being lost to [Digital Obsolescence](https://en.wikipedia.org/wiki/Digital_obsolescence).
+  
+  To combat this, you can
+  - [ ] see if your analysis software offers a feature to export measurement data to [open formats](https://en.wikipedia.org/wiki/List_of_open_file_formats) instead of only providing the data in a proprietary format which requires a specific software to open
+  - [ ] save things which are pure text in Markdown (.md) or .txt files
+  - [ ] instead of `.docx`, `.xlsx`, `.pptx` use the open `.odt`, `.ods`, and `.odp` formats (Microsoft Office can write them, no extra software required; see [here](https://fsfe.org/activities/msooxml/msooxml.en.html) for why the Microsoft formats are not truly open)
+  - [ ] for 'fixed' documents which require no interaction or editing capabilities, export them to PDF, using the [PDF/A](https://en.wikipedia.org/wiki/PDF/A) profile
+  "
 "Add supplemental data","/confidential
 /label ~enhancement
   While creating a journal manuscript, you may have aggregated and submitted 'supplemental data' to the journal. 
