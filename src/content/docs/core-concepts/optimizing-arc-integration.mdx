@@ -4,7 +4,7 @@ lastUpdated: 2027-07-22
 authors:
   - dominik-brilhaus
 sidebar:
-  order: 5
+  order: 2
 ---
 
 import { Steps } from '@astrojs/starlight/components';
@@ -55,7 +55,7 @@ Some tips in this guide are highlighted that may be especially relevant for **en
     - At what step and how does the collaborator "hand over" or submit samples (in real life and in the ARC) or metadata?
     :::
 
-5. ### Package and share ARCs via your DataHUB group
+4. ### Package and share ARCs via your DataHUB group
 
     - Try to gradually transfer running projects into ARCs.
     - If you consider sharing already published projects, [this guide](/nfdi4plants.knowledgebase/arc-use-cases/publication/) provides recommendations to create ARCs based on publications.
@@ -71,7 +71,7 @@ Some tips in this guide are highlighted that may be especially relevant for **en
     - You can use the [wiki associated to the ARC](/nfdi4plants.knowledgebase/datahub/arc-features/datahub-arc-wiki) to collect meeting minutes with your collaborators
     - You can use the [ARC's work items board](/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-arc-panel) to coordinate tasks between collaborators, team members, data analysts and others involved
 
-4. ### Reuse or implement naming conventions
+6. ### Reuse or implement naming conventions
 
     - You can keep naming your ARCs with the same way you are used to name your local projects or project folders.
     - If available, it is recommended to use your established naming conventions or system of identifiers in [ISA metadata](/nfdi4plants.knowledgebase/core-concepts/isa). There are designated places for any kind of laboratory items such as projects, samples, components, devices.
@@ -79,43 +79,6 @@ Some tips in this guide are highlighted that may be especially relevant for **en
     :::tip
     - If your lab does not yet have a naming convention for projects, samples, and other items, your step into the ARC world may be a good time point to establish one.
     - Having a good system of identifiers in place also allows to work across (RDM) systems without designated interfaces, e.g. if you refer to a project in an electronic lab notebook, another data store or email. 
-    :::
-
-6. ### Design metadata templates
-
-    - [Metadata templates](/nfdi4plants.knowledgebase/swate/swate-template-contribution) allow to unify what metadata is collected for sample annotation and how.
-    - You, your team members or collaborators can select your public templates directly via [Swate](/nfdi4plants.knowledgebase/swate).
-    - You can also store filled-out templates for standard operating procedures (SOPs) as a reusable [JSON file](/nfdi4plants.knowledgebase/guides/reusing-isa-metadata/).
-
-    :::tip[Seek Data Steward support]
-    Creating protocol templates or SOPs is not trivial. Ask for help by experienced data stewards.
-    :::
-
-    :::note[Enabling platforms]
-    Using templates, you can communicate with collaborators and team members, what information metadata is crucial for specific assays
-    :::
-
-6. ### Design metadata validation
-
-    - The DataHUB offers to automatically validate the content of the ARC on every change.
-    - You can design a [custom validation](/nfdi4plants.knowledgebase/arc-validation/) to e.g. check that required metadata exists in the ARC and that identifiers or names align with your lab convention.
-    - This goes well hand-in-hand with metadata templates.
-
-    :::tip[Seek Data Steward support]
-    This is for advanced users and requires some coding. Ask for help by experienced data stewards.
-    :::
-
-    :::note[Enabling platforms]
-    This may be especially helpful for platform communication with collaborators as it enables automated checks for metadata completeness before sample submission.
-    :::
-
-7. ### Create and share computational workflows
-
-    - The ARC's simple [directory structure](/nfdi4plants.knowledgebase/core-concepts/arc) itself helps building routines, no matter whether you work with code or licensed software. Across projects, you and your collaborators know, where to find metadata and raw data, where to store processed data and results.
-    - Code-based computations can be designed as reusable and reproducible workflows using [Common Workflow Language (CWL)](/nfdi4plants.knowledgebase/cwl)
-
-    :::note[Enabling platforms]
-    Your platform supports researchers with a specific set of methods and assays. You perform routine measurements, follow established protocols and SOPs to generate specific types of samples and data. Aligned with your lab workflows, you also follow computational routines: For the same types of (raw) data you re-use computational steps for processing and analysis. Reusing computational workflows across projects helps comprehensibility for your collaborators and ensures reproducibility and quality for your data.
     :::
 
 7. ### Publish ARCs
@@ -138,6 +101,43 @@ Some tips in this guide are highlighted that may be especially relevant for **en
             
         */}
 
+8. ### Design metadata templates
+
+    - [Metadata templates](/nfdi4plants.knowledgebase/swate/swate-template-contribution) allow to unify what metadata is collected for sample annotation and how.
+    - You, your team members or collaborators can select your public templates directly via [Swate](/nfdi4plants.knowledgebase/swate).
+    - You can also store filled-out templates for standard operating procedures (SOPs) as a reusable [JSON file](/nfdi4plants.knowledgebase/guides/reusing-isa-metadata/).
+
+    :::tip[Seek Data Steward support]
+    Creating protocol templates or SOPs is not trivial. Ask for help by experienced data stewards.
+    :::
+
+    :::note[Enabling platforms]
+    Using templates, you can communicate with collaborators and team members, what information metadata is crucial for specific assays
+    :::
+
+9. ### Design metadata validation
+
+    - The DataHUB offers to automatically validate the content of the ARC on every change.
+    - You can design a [custom validation](/nfdi4plants.knowledgebase/arc-validation/) to e.g. check that required metadata exists in the ARC and that identifiers or names align with your lab convention.
+    - This goes well hand-in-hand with metadata templates.
+
+    :::tip[Seek Data Steward support]
+    This is for advanced users and requires some coding. Ask for help by experienced data stewards.
+    :::
+
+    :::note[Enabling platforms]
+    This may be especially helpful for platform communication with collaborators as it enables automated checks for metadata completeness before sample submission.
+    :::
+
+10. ### Create and share reusable computational workflows
+
+    - The ARC's simple [directory structure](/nfdi4plants.knowledgebase/core-concepts/arc) itself helps building routines. No matter whether you work with code or licensed software: across projects, you and your collaborators know, where to find metadata and raw data, where to store processed data and results.
+    - So, for code-based data analysis in your lab, you and your team members will already appreciate that common directory structure plus version-control via [Git](/nfdi4plants.knowledgebase/fundamentals/version-control-git/).
+    - Code-based computations can be designed as **reusable and reproducible workflows** using [Common Workflow Language (CWL)](/nfdi4plants.knowledgebase/cwl)
+
+    :::note[Enabling platforms]
+    Your platform supports researchers with a specific set of methods and assays. You perform routine measurements, follow established protocols and SOPs to generate specific types of samples and data. Aligned with your lab workflows, you also follow computational routines: For the same types of (raw) data you re-use computational steps for processing and analysis. Reusing computational workflows across projects helps comprehensibility for your collaborators and ensures reproducibility and quality for your data.
+    :::
 
 </Steps>
 
