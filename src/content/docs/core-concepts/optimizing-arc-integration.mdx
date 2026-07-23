@@ -1,0 +1,275 @@
+---
+title: Integrating ARCs in your lab
+lastUpdated: 2027-07-22
+authors:
+  - dominik-brilhaus
+sidebar:
+  order: 2
+---
+
+import { Steps } from '@astrojs/starlight/components';
+
+
+import DataHubGroup from "@images/guides/datahub-group.drawio.png"
+import DataHubGroupGuide from "@images/guides/datahub-group-guide.drawio.png"
+import DataHubGroupExampleArcs from "@images/guides/datahub-group-example-arcs.drawio.png"
+import TemplatesSops from "@images/guides/templates-sops.svg"
+
+
+Here we recommend steps to prepare your lab towards using ARCs to streamline data flows and project management in your lab. This guide can only stay at a very abstract level. Please [contact us for data stewardship](https://nfdi4plants.org/support/) to work out a suitable solution for your lab together.
+
+:::note[Enabling platforms]
+Some tips in this guide are highlighted that may be especially relevant for **enabling platforms** such as small single-lab services or large instrumentation-based research infrastructures such as core facilities offering e.g. "omics" technologies (genome, transcriptome, proteome, metabolome), phenotyping, (microscopic) imaging, genetic engineering or plant growth facilities.
+:::
+
+<Steps>
+
+1. ### Create a DataHUB Group for your lab
+
+    - A [DataHUB group](/nfdi4plants.knowledgebase/datahub/working-together/datahub-groups) can help you organize all running projects in one place
+    - In a group you can easily manage access for multiple ARCs
+    - You can also create subgroups to better represent your lab's organization
+
+    :::tip
+    - Give your group a meaningful name (e.g. a university or institute acronym plus the lab name).
+    - Add an informative group description and link to your group's website to let users know who you are.
+    - You can make your group public so team members can easily find and request access to it. Making the group public does not make the ARCs public!
+    - Explore [existing groups](https://git.nfdi4plants.org/groups)
+    :::
+    
+    <img src={DataHubGroup.src} style="display:block; width:50%; margin: 1rem"/>
+
+2. ### Write a short guide
+
+    - Especially for new team members or collaborators, it helps to summarize your lab's routine with a short guide.
+    - What are ARCs and how does your lab incorporate them?
+
+    :::tip
+    - You could simply link to the starter guides in this knowledge base.
+    - You can add this publicly or privately as a README directly to your DataHUB group.
+    :::
+
+    <img src={DataHubGroupGuide.src} style="display:block; width:50%; margin: 1rem"/>
+    
+
+
+3. ### Create example ARCs
+    
+    - Try to structure typical experiments run in your lab as an ARC.
+    - An example ARC helps understand the ARC concept with your type of data and metadata.
+    - It show-cases where collaborators find what information such as samples, protocols, datasets, results.
+    
+    :::tip
+    - Consider what information is required to represent the experiment from sample to data.
+    :::
+
+    :::note[Enabling platforms]
+    - Consider what information is provided by the collaborator or by the lab?
+    - At what step and how does the collaborator "hand over" or submit samples (in real life and in the ARC) or metadata?
+    :::
+
+    <img src={DataHubGroupExampleArcs.src} style="margin: 1rem"/>
+
+4. ### Package and share ARCs via your DataHUB group
+
+    - Try to gradually transfer running projects into ARCs.
+    - If you consider sharing already published projects, [this guide](/nfdi4plants.knowledgebase/arc-use-cases/publication/) provides recommendations to create ARCs based on publications.
+
+    :::tip
+    - Start in small steps, don't over-think and aim for the perfect ARC to begin with. See also [this guide](/nfdi4plants.knowledgebase/core-concepts/is-my-arc-good-enough/).
+    - Especially in the exploration phase, it's recommended to have only one person working on one ARC instead of heavy collaboration. 
+    :::
+
+5. ### Centralize your projects via the DataHUB
+
+    - The DataHUB can help as a platform to centralize data from different sources and function as a geo-redundant backup with tracked changes:
+    - No matter where you work (office desktop, remote laptop, workstation), you can always sync your current state of the ARC via the [DataHUB](/nfdi4plants.knowledgebase/datahub)
+    - You can follow the evolution of a project via ARC's [version control](/nfdi4plants.knowledgebase/fundamentals/version-control-git)
+
+    :::tip
+    - No matter the size or complexity: ARCs can cover any kinds of projects from summer interns, Bachelor or Master theses, to projects run in the lab over years.
+    - Capturing all of these projects in a central location will safe you a lot of time finding them in the future.
+    :::
+
+
+5. ### Manage projects via the DataHUB
+
+    - The DataHUB offers some additional project management features around the ARCs.
+    - You can use the [wiki associated to the ARC](/nfdi4plants.knowledgebase/datahub/arc-features/datahub-arc-wiki) to collect meeting minutes with your collaborators.
+    - You can use the [ARC's work items board](/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-arc-panel) to coordinate tasks between collaborators, team members, data analysts and others involved.
+
+6. ### Reuse or implement naming conventions
+
+    - You can keep naming your ARCs the same way you name your local projects or project folders.
+    - If available, it is recommended to use your established naming conventions or system of identifiers in [ISA metadata](/nfdi4plants.knowledgebase/core-concepts/isa). There are designated places for any kind of laboratory items such as projects, samples, components, devices and others.
+
+    :::tip
+    - If your lab does not yet have a naming convention for projects, samples, and other items, your step into the ARC world may be a good time point to establish one.
+    - Having a good system of identifiers in place also allows to work across (RDM) systems without designated interfaces, e.g. if you refer to a project in an electronic lab notebook, another data store or email. 
+    :::
+
+7. ### Publish ARCs
+
+    - An ARC can be published with a DOI for citation via DataPLANT's [ARChive](https://archive.nfdi4plants.org).
+    - This is most often done in connection to an ongoing journal publication: the DOI to the ARC is then referenced in the publication.
+    - However, ARCs can also be published independently of journal publications, e.g. solely as a "data publication" for several purposes.
+
+    :::tip
+    Explore [this section](/nfdi4plants.knowledgebase/arc-publications/) for details on ARC publications.
+    :::
+
+        {/* 
+            Some scientific journals require data to be published in  [domain-specific repositories](/nfdi4plants.knowledgebase/fundamentals/public-data-repositories), specialized for a certain type of assay. For this purpose converters help you export the relevant dataset and metadata into a repository-accepted format.
+
+            :::note
+            We are working on converters to export the relevant data and metadata of your ARC into a format accepted by domain-specific repositories.
+            You can support this by telling us relevant repositories for your type of data or help creating [templates](/nfdi4plants.knowledgebase/swate/templates).
+            :::
+            
+        */}
+
+8. ### Design metadata templates
+
+    - [Metadata templates](/nfdi4plants.knowledgebase/swate/swate-template-contribution) allow to unify what metadata is collected for sample annotation and how.
+    - You, your team members or collaborators can select your public templates directly via [Swate](/nfdi4plants.knowledgebase/swate).
+    - You can also store filled-out templates for standard operating procedures (SOPs) as a reusable [JSON file](/nfdi4plants.knowledgebase/guides/reusing-isa-metadata/).
+
+    :::tip[Seek Data Steward support]
+    Creating protocol templates or SOPs is not trivial. Ask for help by experienced data stewards.
+    :::
+
+    :::note[Enabling platforms]
+    Using templates, you can communicate with collaborators and team members, what information metadata is crucial for specific assays
+    :::
+
+    <img src={TemplatesSops.src} style="margin: 1rem"/>
+
+    
+
+9. ### Design metadata validation
+
+    - The DataHUB offers to automatically validate the content of the ARC on every change.
+    - You can design a [custom validation](/nfdi4plants.knowledgebase/arc-validation/) to e.g. check that required metadata exists in the ARC and that identifiers or names align with your lab convention.
+    - This goes well hand-in-hand with metadata templates.
+
+    :::tip[Seek Data Steward support]
+    This is for advanced users and requires some coding. Ask for help by experienced data stewards.
+    :::
+
+    :::note[Enabling platforms]
+    This may be especially helpful for platform communication with collaborators as it enables automated checks for metadata completeness before sample submission.
+    :::
+    
+    ![](@images/guides/datahub-group-validation.drawio.png)
+
+10. ### Create and share reusable computational workflows
+
+    - The ARC's simple [directory structure](/nfdi4plants.knowledgebase/core-concepts/arc) itself helps building routines. No matter whether you work with code or licensed software: across projects, you and your collaborators know, where to find metadata and raw data, where to store processed data and results.
+    - For code-based data analysis in your lab, you and your team members will already appreciate that common directory structure plus version-control via [Git](/nfdi4plants.knowledgebase/fundamentals/version-control-git/).
+    - To further boost your code habits, you can design your computations as **reusable and reproducible workflows** using [Common Workflow Language (CWL)](/nfdi4plants.knowledgebase/cwl).
+
+    :::note[Enabling platforms]
+    Your platform supports researchers with a specific set of methods and assays. You perform routine measurements, follow established protocols and SOPs to generate specific types of samples and data. Aligned with your lab workflows, you also follow computational routines: For the same types of (raw) data you re-use computational steps for processing and analysis. Reusing computational workflows across projects helps comprehensibility for your collaborators and ensures reproducibility and quality for your data.
+    :::
+
+</Steps>
+
+
+## Additional points to consider
+
+### Where do I store my ARC?
+
+Your lab produces a lot of valuable raw data. Depending on your setup and the type of data you generate, the data is stored on individual machines, hard drives, institutional or internal file shares. For instance, workstations directly associated with measuring devices require quickest data transfer rates or specific security restrictions and write data to proximal data stores rather than a cloud storage.
+
+
+As with projects and data shared via cloud services or other platforms, ARCs do not exist in just one location. Depending on your preferences and current use-case you can choose one of various starting points: you can create your ARC in different locations (e.g. personal computer, shared server or directly in the DataHUB) and to do so you can use different tools (e.g. ARCitect, ARC Commander, ARCtrl, by hand).
+
+
+![](@images/guides/arc-storage-locations-timeline.drawio.png)
+
+A typical scenario could look like this: You create your ARC on you personal computer, add structure with studies and assays as you see fit and upload the ARC to the DataHUB to have a save copy and be able to share it with collaboration partners. You acquire some large dataset, which you do not want to store or analyze on your computer. Instead you keep this on a larger workstation in the lab or a server or high performance computing (HPC) cluster, where you would also run data analysis workflows. With the **DataHUB as the central meeting point**, you can keep your ARC in sync across these locations. Simply download the ARC from the DataHUB to your server, add the dataset from there and synchronize it back to the DataHUB. Consider your ARC stored in the DataHUB as the **ground truth** – even if you delete the ARCs on your local computer or the server, it will still be available in the DataHUB including the change history from those source locations.
+
+:::note
+Many labs collaborate on local or cloud file storage servers, where multiple team members edit the same "physical" project folder, i.e. add and edit files, metadata, etc.. This deviates from the collaborative workflow recommended for ARCs, where changes are tracked, synchronized, and reviewed in a version-controlled environment provided by Git. Instead, it is recommended to collaborate via the DataHUB, with every team member managing a local version of their relevant ARCs and synchronizing changes via the DataHUB instead of the local file storages.
+:::
+
+
+### Keep the ARCs in sync
+
+A few things are important when maintaining ARCs in multiple locations:
+
+1. Try to keep your ARC in sync via the DataHUB
+2. Make sure to [sync large files](/nfdi4plants.knowledgebase/git/git-lfs/) properly
+
+As with any cloud service, when a single file is edited from multiple locations, you can run into merge conflicts. To avoid these, make sure to regularly [sync your ARC with the DataHUB](/nfdi4plants.knowledgebase/git/git-syncing-recommendation) and from there sync with your (other) locations before adding or editing data.
+
+:::tip
+- In order to store large files only where you need them and not where you do not (e.g. your personal computer), the ARC and DataHUB implement the LFS (Large file storage) system. ARC tools provide options to properly handle [LFS-tagged files](/nfdi4plants.knowledgebase/git/git-lfs).
+:::
+
+![](@images/guides/arc-storage-locations-withnotes.drawio.png)
+
+
+### Track changes and provenance
+
+Different people are involved in the projects passing your lab. From team members to internal and external collaboration partners (collaborators). This makes it sometimes hard to keep track of who contributed how, what, when, why and to manage who needs access to which data.
+
+- The [DataHUB](/nfdi4plants.knowledgebase/datahub/) facilitates access management across institute boarders
+- ARCs document [changes and contributions](/nfdi4plants.knowledgebase/fundamentals/version-control-git)
+- The [ISA metadata model](/nfdi4plants.knowledgebase/core-concepts/isa) allows to associate contributors with investigations and studies. List your team members to ensure proper credit for their contributions
+
+### How can I share ARCs with external collaborators?
+
+Not all of your collaborators use ARCs or are planning to do so, but you still want to interact and share data with those collaborators in the same routines employed with everyone else. The good thing: they only need a [DataHUB account](/nfdi4plants.knowledgebase/datahub/account). And they can use their existing **ORCID** pr **LifeScience** login to create one.
+
+The DataHUB comes with [built-in features](/nfdi4plants.knowledgebase/datahub/arc-files/datahub-files) that allow interaction with the ARC solely via the web browser without any addional tools.
+
+
+## Additional points to consider for enabling platforms
+
+### Project communication and data flow
+
+Enabling platforms interact with many versatile collaborators. Most platforms have established workflows or routines for (i) project initiation, (ii) submission of samples to be assayed, (iii) exchange of and access to generated data. This communication typically includes a ping-pong of meetings and emails to shape the study in mind, elaborate the biological question and hypothesis, define the most suitable method offered by the platform. To effectively process the project, the platform raises requirements for how samples need to be prepared and submitted.
+
+:::note
+For simplicity, in this guide we call researchers, clients and customers approaching the platform "collaborators".
+:::
+
+### Streamline data exchange with collaborators
+
+During project collaboration a lot of information including metadata is exchanged.
+Here's an idea what your data flow could look like with the ARC:
+
+![](@images/guides/enablingplatform-fileshare.drawio.png)
+
+1. Data exchange between collaborator and platform occurs through the ARC shared via the DataHUB. Depending on the phase of the project this involves different data and information.  
+   (1a) The collaborator primarily describes the investigation's goal and study design, annotates the submitted samples with metadata and adds associated protocols. Once available the collaborator receives assayed data and relevant information.  
+   (1b) The platform team receives relevant sample metadata to run the respective assay and complements the ARC with platform-specific assay metadata, protocols and standard operating procedures (SOPs).
+2. A clone of the ARC is stored locally at the platform.
+3. From the platform data source, e.g. a workstation attached to your assay device, the generated data can directly be written or transferred to the assay dataset folder of your ARC stored in the file storage
+
+### Who initiates the ARC: platform or collaborator?
+
+You decide whether you prepare the ARC for you collaborators (scenario A) or meet them half the way (scenario B).
+Eventually this depends on different factors, e.g. the type of collaboration you agreed upon or whether or not the collaborators are used to work with the ARC and associated tools.
+
+![](@images/guides/enablingplatform-timeline.drawio.png)
+
+Following the exemplary scenario A, you could setup the ARC for your collaboration (1), add the relevant studies and assays (2) as well as templates (3) as discussed with them and ask them to complement the required metadata (4) and protocols (5) before you can run the assays and add the dataset (6).
+
+Alternatively, collaborators already working with ARCs could invite you to "their" ARC (exemplary scenario B). They can independently set up the ARC and fill metadata (4) based on your prepared templates (3).
+
+:::tip
+In scenario B the collaborator might invite you to a very large ARC with data not really relevant for your platform-specific collaboration. In this case you might want to [exclude irrelevant data or avoid downloading large data](/nfdi4plants.knowledgebase/git/git-gitignore) when syncing the ARC.
+:::
+
+### Can we retain the established naming convention for project management and data storage?
+
+Running a central platform, you probably follow an established project management system or naming convention.
+This is particularly important for how project folders are named on your platform's data storage. When implementing ARCs, **you do not need to change** this system. You can simply name the ARCs the same way you are used to name your project folders.
+
+This is also true for scenario B exemplified above. You can simply [fork](/nfdi4plants.knowledgebase/datahub/arc-features/datahub-arc-fork) the collaborator's ARC and rename it according to your system.
+
+:::note[Enabling platforms]
+You might want to consider **requiring** your collaborators to name the assays (folder name or assay identifier) according to your project management system. This would help you associate the correct ARCs, studies, assays, etc. to the respective project. This could also be controlled using the validation system.
+:::
