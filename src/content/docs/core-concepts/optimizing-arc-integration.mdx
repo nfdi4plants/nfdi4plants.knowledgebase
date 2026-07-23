@@ -9,6 +9,13 @@ sidebar:
 
 import { Steps } from '@astrojs/starlight/components';
 
+
+import DataHubGroup from "@images/guides/datahub-group.drawio.png"
+import DataHubGroupGuide from "@images/guides/datahub-group-guide.drawio.png"
+import DataHubGroupExampleArcs from "@images/guides/datahub-group-example-arcs.drawio.png"
+import TemplatesSops from "@images/guides/templates-sops.svg"
+
+
 Here we recommend steps to prepare your lab towards using ARCs to streamline data flows and project management in your lab. This guide can only stay at a very abstract level. Please [contact us for data stewardship](https://nfdi4plants.org/support/) to work out a suitable solution for your lab together.
 
 :::note[Enabling platforms]
@@ -21,7 +28,7 @@ Some tips in this guide are highlighted that may be especially relevant for **en
 
     - A [DataHUB group](/nfdi4plants.knowledgebase/datahub/working-together/datahub-groups) can help you organize all running projects in one place
     - In a group you can easily manage access for multiple ARCs
-    - You can also create subgroups, if that better represents your lab's organization
+    - You can also create subgroups to better represent your lab's organization
 
     :::tip
     - Give your group a meaningful name (e.g. a university or institute acronym plus the lab name).
@@ -29,6 +36,8 @@ Some tips in this guide are highlighted that may be especially relevant for **en
     - You can make your group public so team members can easily find and request access to it. Making the group public does not make the ARCs public!
     - Explore [existing groups](https://git.nfdi4plants.org/groups)
     :::
+    
+    <img src={DataHubGroup.src} style="display:block; width:50%; margin: 1rem"/>
 
 2. ### Write a short guide
 
@@ -39,6 +48,10 @@ Some tips in this guide are highlighted that may be especially relevant for **en
     - You could simply link to the starter guides in this knowledge base.
     - You can add this publicly or privately as a README directly to your DataHUB group.
     :::
+
+    <img src={DataHubGroupGuide.src} style="display:block; width:50%; margin: 1rem"/>
+    
+
 
 3. ### Create example ARCs
     
@@ -54,6 +67,8 @@ Some tips in this guide are highlighted that may be especially relevant for **en
     - Consider what information is provided by the collaborator or by the lab?
     - At what step and how does the collaborator "hand over" or submit samples (in real life and in the ARC) or metadata?
     :::
+
+    <img src={DataHubGroupExampleArcs.src} style="margin: 1rem"/>
 
 4. ### Package and share ARCs via your DataHUB group
 
@@ -127,6 +142,10 @@ Some tips in this guide are highlighted that may be especially relevant for **en
     Using templates, you can communicate with collaborators and team members, what information metadata is crucial for specific assays
     :::
 
+    <img src={TemplatesSops.src} style="margin: 1rem"/>
+
+    
+
 9. ### Design metadata validation
 
     - The DataHUB offers to automatically validate the content of the ARC on every change.
@@ -140,6 +159,8 @@ Some tips in this guide are highlighted that may be especially relevant for **en
     :::note[Enabling platforms]
     This may be especially helpful for platform communication with collaborators as it enables automated checks for metadata completeness before sample submission.
     :::
+    
+    ![](@images/guides/datahub-group-validation.drawio.png)
 
 10. ### Create and share reusable computational workflows
 
