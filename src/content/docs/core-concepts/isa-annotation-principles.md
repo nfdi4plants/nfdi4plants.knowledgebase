@@ -6,7 +6,7 @@ authors:
   - stella-eggels
 lastUpdated: 2026-03-19
 sidebar:
-  order: 3
+  order: 2
 ---
 
 Annotation of data and workflows within the ARC builds on the [ISA model](https://isa-tools.org/format/specification.html). In this guide we introduce the different building blocks available to annotate your workflows in a study (isa.study.xlsx) or assay (isa.assay.xlsx).
