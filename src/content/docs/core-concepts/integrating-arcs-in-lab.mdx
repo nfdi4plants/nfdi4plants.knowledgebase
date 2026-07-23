@@ -4,7 +4,7 @@ lastUpdated: 2027-07-22
 authors:
   - dominik-brilhaus
 sidebar:
-  order: 2
+  order: 3
 ---
 
 import { Steps } from '@astrojs/starlight/components';
@@ -29,6 +29,8 @@ Some tips in this guide are highlighted that may be especially relevant for **en
     - A [DataHUB group](/nfdi4plants.knowledgebase/datahub/working-together/datahub-groups) can help you organize all running projects in one place
     - In a group you can easily manage access for multiple ARCs
     - You can also create subgroups to better represent your lab's organization
+    
+    <img src={DataHubGroup.src} style="display:block; width:50%; margin: 1rem"/>
 
     :::tip
     - Give your group a meaningful name (e.g. a university or institute acronym plus the lab name).
@@ -37,27 +39,27 @@ Some tips in this guide are highlighted that may be especially relevant for **en
     - Explore [existing groups](https://git.nfdi4plants.org/groups)
     :::
     
-    <img src={DataHubGroup.src} style="display:block; width:50%; margin: 1rem"/>
 
 2. ### Write a short guide
 
     - Especially for new team members or collaborators, it helps to summarize your lab's routine with a short guide.
     - What are ARCs and how does your lab incorporate them?
 
+    <img src={DataHubGroupGuide.src} style="display:block; width:50%; margin: 1rem"/>
+    
     :::tip
     - You could simply link to the starter guides in this knowledge base.
     - You can add this publicly or privately as a README directly to your DataHUB group.
     :::
-
-    <img src={DataHubGroupGuide.src} style="display:block; width:50%; margin: 1rem"/>
     
-
 
 3. ### Create example ARCs
     
     - Try to structure typical experiments run in your lab as an ARC.
     - An example ARC helps understand the ARC concept with your type of data and metadata.
     - It show-cases where collaborators find what information such as samples, protocols, datasets, results.
+    
+    <img src={DataHubGroupExampleArcs.src} style="margin: 1rem"/>
     
     :::tip
     - Consider what information is required to represent the experiment from sample to data.
@@ -68,7 +70,6 @@ Some tips in this guide are highlighted that may be especially relevant for **en
     - At what step and how does the collaborator "hand over" or submit samples (in real life and in the ARC) or metadata?
     :::
 
-    <img src={DataHubGroupExampleArcs.src} style="margin: 1rem"/>
 
 4. ### Package and share ARCs via your DataHUB group
 
@@ -114,9 +115,17 @@ Some tips in this guide are highlighted that may be especially relevant for **en
     - This is most often done in connection to an ongoing journal publication: the DOI to the ARC is then referenced in the publication.
     - However, ARCs can also be published independently of journal publications, e.g. solely as a "data publication" for several purposes.
 
+    <figure>
+        ![ARC publication pipeline](@images/arc-publications/arc-publication_pipeline.svg)
+        <figcaption style="font-size: 0.8em;">Figure 2 of <em>Bauer, J., Schneider, K., Brilhaus, D. et al. Data Publication Infrastructure for FAIR Digital Objects. SN COMPUT. SCI. 7, 411 (2026). https://doi.org/10.1007/s42979-026-05010-8</em></figcaption>
+    </figure>
+
+
     :::tip
     Explore [this section](/nfdi4plants.knowledgebase/arc-publications/) for details on ARC publications.
     :::
+
+
 
         {/* 
             Some scientific journals require data to be published in  [domain-specific repositories](/nfdi4plants.knowledgebase/fundamentals/public-data-repositories), specialized for a certain type of assay. For this purpose converters help you export the relevant dataset and metadata into a repository-accepted format.
@@ -133,6 +142,8 @@ Some tips in this guide are highlighted that may be especially relevant for **en
     - [Metadata templates](/nfdi4plants.knowledgebase/swate/swate-template-contribution) allow to unify what metadata is collected for sample annotation and how.
     - You, your team members or collaborators can select your public templates directly via [Swate](/nfdi4plants.knowledgebase/swate).
     - You can also store filled-out templates for standard operating procedures (SOPs) as a reusable [JSON file](/nfdi4plants.knowledgebase/guides/reusing-isa-metadata/).
+    
+    <img src={TemplatesSops.src} style="margin: 1rem"/>
 
     :::tip[Seek Data Steward support]
     Creating protocol templates or SOPs is not trivial. Ask for help by experienced data stewards.
@@ -141,16 +152,15 @@ Some tips in this guide are highlighted that may be especially relevant for **en
     :::note[Enabling platforms]
     Using templates, you can communicate with collaborators and team members, what information metadata is crucial for specific assays
     :::
-
-    <img src={TemplatesSops.src} style="margin: 1rem"/>
-
-    
+   
 
 9. ### Design metadata validation
 
     - The DataHUB offers to automatically validate the content of the ARC on every change.
     - You can design a [custom validation](/nfdi4plants.knowledgebase/arc-validation/) to e.g. check that required metadata exists in the ARC and that identifiers or names align with your lab convention.
     - This goes well hand-in-hand with metadata templates.
+
+    ![](@images/guides/datahub-group-validation.drawio.png)
 
     :::tip[Seek Data Steward support]
     This is for advanced users and requires some coding. Ask for help by experienced data stewards.
@@ -160,7 +170,6 @@ Some tips in this guide are highlighted that may be especially relevant for **en
     This may be especially helpful for platform communication with collaborators as it enables automated checks for metadata completeness before sample submission.
     :::
     
-    ![](@images/guides/datahub-group-validation.drawio.png)
 
 10. ### Create and share reusable computational workflows
 
