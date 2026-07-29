@@ -1,0 +1,34 @@
+---
+sidebar:
+  hidden: true
+---
+
+import { Steps } from '@astrojs/starlight/components'
+import NoWrapTable from "@components/NoWrapTable.astro"
+import Icons from '@components/swate/Icons';
+
+<Steps>
+  1. In the "SugarMeasurement" assay, open the "Sugar Measurement" table
+  2. On top of the annotation table, open the "Data Annotator" tool
+  3. Click `Choose a file`, find and select `sugar_result.csv` and click `Open`
+  4. On top switch from "autodetect" to "output"
+  5. Select only the 6(!) Data columns (`RT_M1`, `RT_M2`, `RT_M3`, `Cold_M1`, `Cold_M2`, `Cold_M3`). These are the direct results of the 6 samples.
+  6. Click `Submit`
+
+      :::note
+      This links the **exact columns** of the result table to the biological samples
+      :::
+
+      Input [Sample Name] | Parameter [...] | Output [Data]          |
+      --------------------|-----------------|----------------------- |
+      Cold1_sugar-ext     | ...             | sugar_result.csv#col=2 |
+      Cold2_sugar-ext     | ...             | sugar_result.csv#col=3 |
+      Cold3_sugar-ext     | ...             | sugar_result.csv#col=4 |
+      RT1_sugar-ext       | ...             | sugar_result.csv#col=5 |
+      RT2_sugar-ext       | ...             | sugar_result.csv#col=6 |
+      RT3_sugar-ext       | ...             | sugar_result.csv#col=7 |
+
+      :::note
+      You can find more information about the data column by pressing `F2` after selecting the cell.
+
+</Steps>
