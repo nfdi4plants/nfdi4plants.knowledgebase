@@ -8,6 +8,29 @@ authors:
   - sabrina-zander
 ---
 
-import Investigation from '../../start-here/investigation.mdx'
+{/* Import components */}
 
-<Investigation />
+import ViolaSays from '@components/ViolaSays.astro'
+import { Card } from '@astrojs/starlight/components';
+
+{/* Import contents */}
+
+import ArcitectInvestigation from "@kb/start-here/arcitect/arcitect-investigation.mdx"
+
+<ViolaSays>
+Now that I have an ARC, I want to add my data. The investigation file seems to be the most top level. Let's start there!
+</ViolaSays>
+
+At the **investigation** level you can record project metadata such as the project title and description, responsible contacts and associated publications.
+
+<ViolaSays>
+So no lab work here, just some metadata. Let's see how this works.
+</ViolaSays>
+
+![](@images/start-here/arc-prototypic.svg)
+
+<Card icon="pen" title="ARCitect">
+  <ArcitectInvestigation />  
+</Card>
+
+
