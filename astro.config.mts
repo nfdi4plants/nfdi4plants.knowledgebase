@@ -438,12 +438,23 @@ export default defineConfig({
             items: [
               "workshops",              
               {
-                label: "FDM-Werkstatt",
+                label: "FDM-Werkstatt 2026",
                 collapsed: true,
                 items: [
                   {
                     autogenerate: {
                       directory: "workshops/2026-fdm-werkstatt",
+                    },
+                  },
+                ],
+              },
+              {
+                label: "PlantAI Summer School 2026",
+                collapsed: true,
+                items: [
+                  {
+                    autogenerate: {
+                      directory: "workshops/2026-08-TRR175-SummerSchool",
                     },
                   },
                 ],
