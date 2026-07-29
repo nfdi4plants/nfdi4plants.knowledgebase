@@ -9,13 +9,14 @@ authors:
   - lukas-weil
 ---
 
+{/* Import components */}
+
 import ViolaSays from '@components/ViolaSays.astro'
-import { Steps } from '@astrojs/starlight/components';
-import { Tabs, TabItem } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
-import { FileTree } from '@astrojs/starlight/components';
-import ViolasARCFinal from '@components/mdx/ViolasARC-checkpoint2.mdx'
-import Mermaid from '@components/mdx/Mermaid.astro'
+
+{/* Import contents */}
+
+import ViolaCWL from 'viola-cwl.mdx'
 
 <ViolaSays>
 Ok, in this case the heatmap was actually produced using a python script. It should be possible to document this in a reusable way.
@@ -41,7 +42,5 @@ If you want to learn more about using CWL, please check out the [Step-by-step CW
 :::
 
 ### Use Common Workflow Language (CWL)
-
-import ViolaCWL from 'viola-cwl.mdx'
 
 <ViolaCWL />
