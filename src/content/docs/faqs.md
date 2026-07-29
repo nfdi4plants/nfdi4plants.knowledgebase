@@ -127,9 +127,6 @@ apt install ca-certificates
 dnf install ca-certificates
 ```
 
-
-
-
 </details>
 
 ### ARCitect
@@ -146,6 +143,21 @@ Sometimes, the ARCitect does not "accept" a commit or when writing a commit mess
 
 :::tip
 In general, we recommend to close all isa.investigation.xlsx, isa.study.xlsx and isa.assay.xlsx workbooks when working on your ARC using ARCitect.
+:::
+
+</details>
+
+<details>
+<summary><span style="color: #1fc2a7">
+My data sets have now become so large that the storage space on my PC is no longer sufficient for the ARC. Therefore I want to move it completely to our institute’s internal server so I can use the large amount of storage available there.
+</summary>
+
+Before moving it, it is recommended to sync the ARC to the DataHUB once more.
+Depending on how large the data sets are, it is especially recommended to do this in small steps (with ARCitect, move no more than 100 GB at a time).  Before you copy the ARC to the server, close all programs (ARCitect, Excel, etc.) that might be accessing the ARC.
+After you have moved it to the server, you can simply open it again in ARCitect directly from the server.
+
+:::tip
+Check out [this guide](nfdi4plants.knowledgebase/core-concepts/integrating-arcs-in-lab/) on integrating ARCs in a lab; especially the part about [storage locations](http://localhost:4321/nfdi4plants.knowledgebase/core-concepts/integrating-arcs-in-lab/#where-do-i-store-my-arc).
 :::
 
 </details>
