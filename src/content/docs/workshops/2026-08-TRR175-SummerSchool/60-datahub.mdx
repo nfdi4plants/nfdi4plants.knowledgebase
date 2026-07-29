@@ -1,0 +1,78 @@
+---
+title: Share your ARC via the DataHUB
+sidebar:
+  order: 5
+authors:
+  - dominik-brilhaus
+  - lukas-weil
+---
+
+{/* Import components */}
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+import QIcon from "@components/QIcon.astro"
+
+{/* Import contents */}
+
+import ArcitectSync from "@kb/start-here/arcitect/arcitect-sync.mdx"
+import DatahubArc from "@kb/start-here/datahub/datahub-arc.mdx"
+import DatahubInvite  from "@kb/start-here/datahub/datahub-invite-members.mdx"
+import DatahubIssues  from "@kb/start-here/datahub/datahub-arc-issues.mdx"
+import DatahubRoles  from "@kb/datahub/working-together/datahub-roles.mdx"
+import DataHUBCommits from '@kb/datahub/arc-features/datahub-arc-commits.mdx'
+
+<ViolaSays>
+  Now I have created my local ARC, but how can I share it with my colleagues?
+</ViolaSays>
+
+ARCs are the basis of the collaborative research platform and can be seamlessly shared between researchers by using the PLANTDataHUB. 
+
+![](@images/start-here/collaboration-plantdatahub.svg)
+
+## Upload your ARC to the PLANTDataHUB
+
+<Card icon="pen" title="ARCitect">
+    <ArcitectSync />
+</Card>
+
+
+## Explore your ARC in the PLANTDataHUB
+
+<Card icon="gitlab" title="PLANTDataHUB">
+    <DatahubArc />
+</Card>
+
+
+## DataHUB Roles
+
+<DatahubRoles />
+
+
+## Add members to your ARC
+
+<ViolaSays>
+    Now my ARC is stored in the PLANTDataHUB, but how can I add my project partner?
+</ViolaSays>
+
+<Card icon="gitlab" title="PLANTDataHUB">
+    <DatahubInvite />
+</Card>
+
+
+<ViolaSays>
+I will invite my PI Prof. Jasmine Beetroot as **Maintainer** and my collaboration partner Oliver Sage as **Developer**. 
+</ViolaSays>
+
+## Follow your ARC's progress in the DataHUB
+
+<DataHUBCommits />
+
+## Project Management
+
+The DataHUB can also be used for Project Management. With work items and issues you can collaborate on ideas and plan your work. 
+
+<Card icon="gitlab" title="PLANTDataHUB">
+    <DatahubIssues />    
+</Card>
