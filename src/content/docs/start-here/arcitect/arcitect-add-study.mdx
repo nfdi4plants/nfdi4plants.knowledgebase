@@ -1,0 +1,56 @@
+---
+title: ARCitect add study
+sidebar:
+  hidden: true
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+import QIcon from "@components/QIcon.astro"
+
+<Steps>
+
+1. Click on the plus icon <QIcon name="add" /> next to <QIcon name="science" /> `studies` to add a new study.
+2. Enter a name for the `New Study`.
+
+    <ViolaSays>
+    AthalianaColdStress
+    </ViolaSays>
+
+3. Click `New Study`.
+4. ARCitect adds the study `AthalianaColdStress` including the folders `protocols` and `resources` as well as a `README.md` and the `isa.study.xlsx` workbook. 
+
+    <FileTree>
+    - AthalianaColdStressSugar
+    - studies
+        - **AthalianaColdStress**
+        - protocols
+            - ...
+        - resources
+            - ...
+        - isa.study.xlsx
+        - README.md
+    - ...
+    </FileTree>
+
+    :::note
+    The `isa.study.xlsx` is not displayed inside ARCitect.
+    :::
+
+5. Click on the study's name (`AthalianaColdStress`) in the file tree to edit the study metadata in the right panel.
+6. Here you can add metadata about your study.
+
+    <ViolaSays>
+    My **description**: "Cold acclimation analysis of Arabidopsis leaf tissue"
+    </ViolaSays>
+
+    :::note
+    On the study level, you can add the same type of metadata as on the investigation level in the previous step.
+    :::
+    
+    :::tip
+    If you add data from an external source or database, this is a good place to reference the data source or associated publications.
+    :::
+
+</Steps>

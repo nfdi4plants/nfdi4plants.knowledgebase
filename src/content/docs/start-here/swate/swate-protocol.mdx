@@ -1,0 +1,48 @@
+---
+title: Swate reference Protocol
+sidebar:
+  hidden: true
+---
+
+import { Steps } from '@astrojs/starlight/components'
+import NoWrapTable from "@components/NoWrapTable.astro"
+import Icons from '@components/swate/Icons';
+
+<Steps>
+
+1. On top of the annotation table, click <Icons.BuildingBlock />.
+1. From the dropdown menu select `More` -> `ProtocolUri` and click `Add Column`.
+1. On top click <Icons.FilePicker /> to open the `File Picker`.
+1. In the `File Picker` widget, click `Pick Files`.
+2. From the ARC select the file `protocols/growth_protocol.md` and click `Open`.
+1. Select a cell in the `ProtocolUri` column and click `Insert file names`.
+
+    <NoWrapTable>
+
+      `Input[Sample Name]` | `ProtocolUri`                | `Output[Sample Name]`
+      -------------------- | ---------------------------- | --------------------
+      Cold1                | protocols/growth_protocol.md | Cold1_leaf
+      Cold2                |                              | Cold2_leaf
+      Cold3                |                              | Cold3_leaf
+      RT1                  |                              | RT1_leaf
+      RT2                  |                              | RT2_leaf
+      RT3                  |                              | RT3_leaf
+
+    </NoWrapTable>
+
+1. To fill the complete column with the same value, right-click on a cell and select `Fill Column`. 
+
+    <NoWrapTable>
+
+      `Input[Sample Name]` | `ProtocolUri`                | `Output[Sample Name]`
+      -------------------- | ---------------------------- | --------------------
+      Cold1                | protocols/growth_protocol.md | Cold1_leaf
+      Cold2                | protocols/growth_protocol.md | Cold2_leaf
+      Cold3                | protocols/growth_protocol.md | Cold3_leaf
+      RT1                  | protocols/growth_protocol.md | RT1_leaf
+      RT2                  | protocols/growth_protocol.md | RT2_leaf
+      RT3                  | protocols/growth_protocol.md | RT3_leaf
+  
+    </NoWrapTable>
+
+  </Steps>

@@ -1,0 +1,41 @@
+---
+title: Swate Add Samples
+sidebar:
+  hidden: true
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components'
+import NoWrapTable from "@components/NoWrapTable.astro"
+
+<Steps>
+
+  1. Click on the study's name (`AthalianaColdStress`) in the file tree.
+  2. At the bottom of the right panel, click on the <btn>+ New Table</btn> right next to the `Study` sheet.
+  3. Select "Create basic table".
+  4. This adds a new table sheet with three columns `Input[Sample Name]`, `Protocol Uri` and `Output[Sample Name]` and three empty rows
+  4. Right-click on sheet’s tab to rename it to "plant-growth". 
+  6. At the bottom of the table, type `3` in the text field and click <btn>+</btn> to add another three rows to the table.
+
+      <ViolaSays>
+
+      I called my plants: "Cold1", "Cold2", "Cold3" and "RT1", "RT2", "RT3"  
+      
+      And the leaf samples accordingly: "Cold1_leaf", "Cold2_leaf", "Cold3_leaf" and "RT1_leaf", "RT2_leaf", "RT3_leaf". 
+
+      </ViolaSays>
+
+  7. Add the sample identifiers into the columns `Input[Sample Name]` and `Output[Sample Name]`.
+
+      `Input[Sample Name]` | `ProtocolUri` | `Output[Sample Name]`
+      -------------------- | ------------- | --------------------
+      Cold1                |               | Cold1_leaf
+      Cold2                |               | Cold2_leaf
+      Cold3                |               | Cold3_leaf
+      RT1                  |               | RT1_leaf
+      RT2                  |               | RT2_leaf
+      RT3                  |               | RT3_leaf
+
+      This means that input "Cold1" results in output "Cold1_leaf".
+
+  </Steps>
