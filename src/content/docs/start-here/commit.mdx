@@ -8,10 +8,20 @@ authors:
   - sabrina-zander
 ---
 
+{/* Import components */}
+
 import ViolaSays from '@components/ViolaSays.astro'
 import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 import QIcon from "@components/QIcon.astro"
+
+{/* Import contents */}
+
+import DataHUBAccount from '../datahub/account/index.mdx'
+import ArcitectLogin from "@kb/start-here/arcitect-login.mdx"
+import ArcitectCommit from "@kb/start-here/arcitect-commit.mdx"
+import ArcitectHistory from "@kb/start-here/arcitect-history.mdx"
+import ArcitectCommit2 from "@kb/start-here/arcitect-commit2.mdx"
 
 
 <ViolaSays>
@@ -25,9 +35,7 @@ If you do not have an account, please register with DataPLANT to use the PLANTDa
 <details>
 <summary>Follow these instructions to sign up</summary>
 
-import DataHUBAccount from '../datahub/account/index.mdx'
-
-<DataHUBAccount />
+    <DataHUBAccount />
 
 </details>
 
@@ -47,25 +55,7 @@ Commits would usually be done more frequently along the previous steps described
 In order to retreive your user information and associate it with your commits, you need to login to the DataHUB.
 
 <Card icon="pen" title="ARCitect">
-    <Steps>
-        
-    1. Click <QIcon name="exit_to_app" /> `Login` in the sidebar.
-    2. Select `git.nfdi4plants.org` as DataHUB from the dropdown menu.
-    3. Click `Login`. 
-
-        :::note
-        This automatically opens your browser at the DataHUB (https://git.nfdi4plants.org) and asks you to login. If you are not already logged in at the DataHUB, you can directly return to ARCitect. Otherwise you need to login first.
-        :::
-
-        :::note
-        The first time you login using ARCitect from a new computer, you are asked to authorize this computer's ARCitect to communicate with your DataHUB account.
-        :::
-
-        <ViolaSays>
-        Great, now I have some new functions activated in the sidebar. What are they for?  
-        </ViolaSays>
-
-    </Steps>
+    <ArcitectLogin />
 </Card>
 
 ### Commit your changes
@@ -73,36 +63,16 @@ In order to retreive your user information and associate it with your commits, y
 The commit menu allows you to "commit" your changes locally. This saves the changes of your local ARC together with your DataHUB credentials (Name and eMail).
 
 <Card icon="pen" title="ARCitect">
-    <Steps>
-    
-    1. Navigate to the <QIcon name="rule" /> `Commit` menu.
-    2. Since you are logged in, the `Name` and `eMail` of your DataHUB account are automatically added.
-    3. Add a commit message:
-
-        <ViolaSays>
-            "Created my first ARC and added data."
-        </ViolaSays>
-    3. Click `Commit` to store your changes locally.
-        
-    </Steps>
+    <ArcitectCommit />
 </Card>
 
 
-### History menu
+### Follow your changes
 
 In the History menu you can inspect your ARC history with all commit messages.
 
 <Card icon="pen" title="ARCitect">
-    <Steps>
-    
-    1. Navigate to the <QIcon name="history" /> `History` menu.
-    2. Find your commit messages.
-
-        <ViolaSays>
-            Great, so even in five years I will know what I did in every step.
-        </ViolaSays>
-        
-    </Steps>
+    <ArcitectHistory />
 </Card>
 
 ## Try it yourself – add messages to communicate your ARC's evolution
@@ -111,45 +81,33 @@ We recommend adding a message that shortly summarizes, what you did since you la
 
 <Steps>
 
-1. Viola starts a fresh ARC for her project
+1. Viola starts a fresh ARC for her project and fills the investigation metadata
 
     <ViolaSays>
-      initialize ARC structure
+      add investigation info
     </ViolaSays>
 
-2. She adds folders for her study and assay
+2. She adds a study with plant samples 
 
     <ViolaSays>
-      add folder structure
+      create study and add samples
     </ViolaSays>
 
-3. She adds raw data to an RNASeq assay
+3. She adds raw data to an assay sugar measurement
 
     <ViolaSays>
-      add RNAseq dataset
+      add sugar dataset
     </ViolaSays>
 
-4. She annotates the dataset using Swate 
+4. She annotates the dataset using
 
     <ViolaSays>
-      annotate RNAseq samples
+      annotate sugar extraction and measurement
     </ViolaSays>
 
 </Steps>
 
 
 <Card icon="pen" title="ARCitect">
-    <Steps>
-    
-    1. Make some small changes to your ARC like adding or editing a text file.
-    2. Navigate to the <QIcon name="rule" /> `Commit` menu.
-    3. Add a commit message:
-
-        <ViolaSays>
-            "Add a README to include some notes"
-        </ViolaSays>
-    3. Click `Commit` to store your changes locally.
-    4. Check the <QIcon name="history" /> `History`
-        
-    </Steps>
+    <ArcitectCommit2 />
 </Card>
