@@ -1,0 +1,38 @@
+---
+title: ARCitect Virtual Assay Proteomics
+sidebar:
+  hidden: true
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import Mermaid from '@components/mdx/Mermaid.astro'
+
+<Steps>
+
+1. Create an assay `Proteomics_DataAnalysis`.
+2. Import the assay files and folders from the demo data into the assay
+3. Create suitable annotation tables and import the data annotation, respectively.
+
+</Steps>
+
+<Mermaid>
+    ```mermaid
+    flowchart LR
+    subgraph d[Demo Data]
+        D1@{ shape: doc, label: combined_protein.fasta}
+        D2@{ shape: doc, label: MSFraggerOutput/combined_protein.csv}
+        D3@{ shape: doc, label: AssayTemplate_Proteomics_DataAnalysis.json}
+    end
+    subgraph a[ARC]
+        A1@{ shape: lin-cyl, label: Proteomics_DataAnalysis/dataset/}
+        A2@{ shape: lin-cyl, label: Proteomics_DataAnalysis/protocols/}
+    end
+    D1 --> A1
+    D2 --> A1
+    D3 --> A2
+    classDef sub fill:#FFFFFF,color:#2d3e50,font-size:1.1em;
+    class d,a sub;
+    classDef item font-size:0.9em;
+    class D1,D2,D3,A1,A2 item;
+    ```
+</Mermaid>
