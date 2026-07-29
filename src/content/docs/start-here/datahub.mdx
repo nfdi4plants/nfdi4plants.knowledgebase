@@ -19,7 +19,9 @@ import QIcon from "@components/QIcon.astro"
 import ArcitectSync from "@kb/start-here/arcitect/arcitect-sync.mdx"
 import DatahubArc from "@kb/start-here/datahub/datahub-arc.mdx"
 import DatahubInvite  from "@kb/start-here/datahub/datahub-invite-members.mdx"
+import DatahubIssues  from "@kb/start-here/datahub/datahub-arc-issues.mdx"
 import DatahubRoles  from "@kb/datahub/working-together/datahub-roles.mdx"
+import DataHUBCommits from '@kb/datahub/arc-features/datahub-arc-commits.mdx'
 
 <ViolaSays>
   Now I have created my local ARC, but how can I share it with my colleagues?
@@ -58,17 +60,12 @@ ARCs are the basis of the collaborative research platform and can be seamlessly 
     <DatahubInvite />
 </Card>
 
-:::note
-By default you are **Owner** of an ARC you create or upload to the DataHUB.
-:::  
 
 <ViolaSays>
 I will invite my PI Prof. Jasmine Beetroot as **Maintainer** and my collaboration partner Oliver Sage as **Developer**. 
 </ViolaSays>
 
 ## Follow your ARC's progress in the DataHUB
-
-import DataHUBCommits from '../datahub/arc-features/datahub-arc-commits.mdx'
 
 <DataHUBCommits />
 
@@ -77,26 +74,5 @@ import DataHUBCommits from '../datahub/arc-features/datahub-arc-commits.mdx'
 The DataHUB can also be used for Project Management. With work items and issues you can collaborate on ideas and plan your work. 
 
 <Card icon="gitlab" title="PLANTDataHUB">
-    <Steps>
-
-    1. Click on **Plan** in the left navigation panel.
-    2. Click on **Work items**.
-    3. Create a new item.
-
-         <ViolaSays>
-          It would be good to have summary statistics for sugar measurement from my project collaborator.
-         </ViolaSays>
-    
-    4. Type in a Title `Summary statistics for sugar measurement`.
-    5. Fill out the Description. 
-    6. Assign yourself or a collaboration partner to the task.
-    7. Click `Create Issue`. 
-
-    </Steps>
+    <DatahubIssues />    
 </Card>
-
-
-
-
-
-
