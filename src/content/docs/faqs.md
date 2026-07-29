@@ -157,7 +157,7 @@ Depending on how large the data sets are, it is especially recommended to do thi
 After you have moved it to the server, you can simply open it again in ARCitect directly from the server.
 
 :::tip
-Check out [this guide](nfdi4plants.knowledgebase/core-concepts/integrating-arcs-in-lab/) on integrating ARCs in a lab; especially the part about [storage locations](http://localhost:4321/nfdi4plants.knowledgebase/core-concepts/integrating-arcs-in-lab/#where-do-i-store-my-arc).
+Check out [this guide](/nfdi4plants.knowledgebase/core-concepts/integrating-arcs-in-lab/) on integrating ARCs in a lab; especially the part about [storage locations](/nfdi4plants.knowledgebase/core-concepts/integrating-arcs-in-lab/#where-do-i-store-my-arc).
 :::
 
 </details>
