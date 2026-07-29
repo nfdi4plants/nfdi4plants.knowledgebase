@@ -1,5 +1,6 @@
 // @ts-check
-import { defineConfig } from "astro/config";
+import { defineConfig } from "astro/config"
+import { fileURLToPath } from 'node:url';;
 import starlight from "@astrojs/starlight";
 import starlightLinksValidator from "starlight-links-validator";
 import starlightSidebarTopics from "starlight-sidebar-topics";
@@ -498,5 +499,10 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()],
+    resolve: {
+      alias: {
+        '@kb': fileURLToPath(new URL('./src/content/docs', import.meta.url)),
+      },
+    },
   },
 });
