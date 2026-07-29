@@ -69,6 +69,12 @@ Critical checks:
 - At least one **Investigation Contacts** person must have a name, last name, affiliation, valid email, and valid ORCID
 - The ARC contains a `LICENSE` file
 
+:::note[Invenio]
+A common issue with failed tests are malformed names or ORCIDs.
+1. Please make sure that names do not have trailing spaces (e.g., `John` not `John `).
+1. Please make sure that the ORCID is valid and in the correct format (e.g., `0000-0002-1825-0097`).
+:::
+
 ## How to check and fix a failed validation?
 
 <Steps>
@@ -86,11 +92,6 @@ Critical checks:
 
 </Steps>
 
-:::note[Invenio]
-A common issue with failed tests are malformed names or ORCIDs.
-1. Please make sure that names do not have trailing spaces (e.g., `John` not `John `).
-1. Please make sure that the ORCID is valid and in the correct format (e.g., `0000-0002-1825-0097`).
-:::
 
 
 {/* 
