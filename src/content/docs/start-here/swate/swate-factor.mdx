@@ -1,0 +1,35 @@
+---
+title: Swate Add Factor
+sidebar:
+  hidden: true
+## https://starlight-sidebar-topics.netlify.app/docs/guides/unlisted-pages/
+topic: start-here
+---
+
+import { Steps } from '@astrojs/starlight/components'
+import NoWrapTable from "@components/NoWrapTable.astro"
+import Icons from '@components/swate/Icons';
+
+<Steps>       
+
+  1. In the *Building Blocks* widget <Icons.BuildingBlock />, select *Factor*, search for `temperature day`, select the term with the ID `DPBO:0000007`.        
+  2. Check the box for *Unit* and search for `degree celsius` in the adjacent search bar.
+  3. Select `UO:0000027`.
+  4. Click `Add Column`.
+  5. In the annotation table, add "25" vs. "6" degree celsius to the respective samples.
+
+      <NoWrapTable>
+
+          `Input[Source Name]` | `Characteristic [organism]` | `Factor [temperature day]` | `Output[Sample Name]`
+          -------------------- |  --------------------       | --------------------          |  --------------------
+          Cold1                |  Arabidopsis thaliana       | 6 degree celsius              | Cold1_leaf
+          Cold2                |  Arabidopsis thaliana       | 6 degree celsius              | Cold2_leaf
+          Cold3                |  Arabidopsis thaliana       | 6 degree celsius              | Cold3_leaf
+          RT1                  |  Arabidopsis thaliana       | 25 degree celsius             | RT1_leaf
+          RT2                  |  Arabidopsis thaliana       | 25 degree celsius             | RT2_leaf
+          RT3                  |  Arabidopsis thaliana       | 25 degree celsius             | RT3_leaf
+
+      </NoWrapTable>
+
+
+</Steps>

@@ -1,0 +1,34 @@
+---
+title: ARCitect Import Files
+sidebar:
+  hidden: true
+## https://starlight-sidebar-topics.netlify.app/docs/guides/unlisted-pages/
+topic: start-here
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+import Icons from '@components/swate/Icons';
+import QIcon from "@components/QIcon.astro"
+
+  <Steps>
+
+  1. Right-click on the `dataset` folder and select `Import Files`.
+  2. Select the file `sugar_result.csv` from the demo data and click `Open`.
+  3. Right-click on the `protocols` folder and select `Import Files`.
+  4. Select the file `sugar_extraction_protocol.md` from the demo data and click `Open`.
+  5. The files are added to your ARC.
+    
+        <FileTree>
+        - assays
+            - SugarMeasurement
+                - dataset
+                    - **sugar_result.csv**
+                - protocols
+                    - **sugar_extraction_protocol.md**
+                - isa.assay.xlsx
+                - README.md
+        - ...
+        </FileTree>
+
+  </Steps>

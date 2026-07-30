@@ -9,11 +9,15 @@ authors:
   - lukas-weil
 ---
 
+{/* Import components */}
+
 import ViolaSays from '@components/ViolaSays.astro'
-import { Steps } from '@astrojs/starlight/components';
-import { Tabs, TabItem } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
-import { FileTree } from '@astrojs/starlight/components';
+
+
+{/* Import contents */}
+
+import ArcitectVirtualAssay from "@kb/start-here/arcitect/arcitect-virtual-assay.mdx"
 
 <ViolaSays>
 What if I have analyzed data in a way that is not perfectly reusable or reproducible – for instance when I use a proprietary software or a colleague helped with data analysis – but I would still want to store and annotate the data analysis in a way comprehensible to others? 
@@ -36,35 +40,5 @@ Hence the data analysis can simply be packaged as an assay, with the computation
 
 
 <Card icon="pen" title="ARCitect">
-    <Steps>
-
-    1. Add a new assay `Visualization`. 
-    2. Import the python script `heatmap.py` into `protocols`.
-    3. Import the figure `heatmap.svg` resulting from the script into `dataset`.
-
-        <FileTree>
-        - assays
-            - **Visualization**
-                - dataset
-                    - **heatmap.svg**
-                - protocols
-                    - **heatmap.py**
-                - isa.assay.xlsx
-                - README.md
-        - ...
-        </FileTree>
-
-    4. Add a new annotation table to `Visualization` and click `Create basic table!`.
-    5. This will create the following building blocks:
-        - `Input [Sample Name]`: Use File Picker to reference the proteomics output file.
-        - `Protocol REF`: Use File Picker to reference python script.
-        - `Output [Sample Name]`: Use File Picker to reference to heatmap result file.
-
-    6. `Rightclick` then `Edit` to update the input and output columns to be `Input [Data]` and `Output [Data]` respectively.
-
-        `Input [Data]`	 | `ProtocolUri` |  `Output [Data]`
-        ---------------- | -----------   | -------------- 
-        sugar_result.csv | heatmap.py    | heatmap.svg
-
-    </Steps>
+    <ArcitectVirtualAssay />    
 </Card>

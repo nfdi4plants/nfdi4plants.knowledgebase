@@ -8,10 +8,14 @@ authors:
   - lukas-weil
 ---
 
+{/* Import components */}
+
 import ViolaSays from '@components/ViolaSays.astro'
-import { Steps } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 
+{/* Import contents */}
+
+import RequestPublication from '../arc-publications/arc-publication-02-request.mdx';
 import invenio from "@images/start-here/invenio-badge.svg"
 
 <ViolaSays>
@@ -19,10 +23,7 @@ I think my ARC is now ready for publication.
 How can I submit my ARC for a data publication? 
 </ViolaSays>
 
-import RequestPublication from '../arc-publications/arc-publication-02-request.mdx';
-
 <RequestPublication />
-
 
 :::tip[ARC Publications]
 Read more about ARC Publications [here](/nfdi4plants.knowledgebase/arc-publications).

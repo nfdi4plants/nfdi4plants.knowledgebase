@@ -1,0 +1,43 @@
+---
+title: ARCitect Virtual Assay
+sidebar:
+  hidden: true
+## https://starlight-sidebar-topics.netlify.app/docs/guides/unlisted-pages/
+topic: start-here
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+
+<Steps>
+
+1. Add a new assay `Visualization`. 
+2. Import the python script `heatmap.py` into `protocols`.
+3. Import the figure `heatmap.svg` resulting from the script into `dataset`.
+
+    <FileTree>
+    - assays
+        - **Visualization**
+            - dataset
+                - **heatmap.svg**
+            - protocols
+                - **heatmap.py**
+            - isa.assay.xlsx
+            - README.md
+    - ...
+    </FileTree>
+
+4. Add a new annotation table to `Visualization` and click `Create basic table!`.
+5. This will create the following building blocks:
+    - `Input [Sample Name]`: Use File Picker to reference the proteomics output file.
+    - `Protocol REF`: Use File Picker to reference python script.
+    - `Output [Sample Name]`: Use File Picker to reference to heatmap result file.
+
+6. `Rightclick` then `Edit` to update the input and output columns to be `Input [Data]` and `Output [Data]` respectively.
+
+    `Input [Data]`	 | `ProtocolUri` |  `Output [Data]`
+    ---------------- | -----------   | -------------- 
+    sugar_result.csv | heatmap.py    | heatmap.svg
+
+</Steps>

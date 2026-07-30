@@ -1,0 +1,38 @@
+---
+title: ARCitect add protocol
+sidebar:
+  hidden: true
+## https://starlight-sidebar-topics.netlify.app/docs/guides/unlisted-pages/
+topic: start-here
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+import QIcon from "@components/QIcon.astro"
+
+<Steps>
+
+1. Right-click on the `protocols` folder and select `Import Files` from the context menu.
+
+3. Select the file `growth_protocol.md` from the demo data and click `Open`.
+
+    :::note 
+    In this example Viola has prepared a Markdown file (.md) as a protocol. 
+    Markdown Guide: https://www.markdowntutorial.com/
+    
+
+4. The file is added to your ARC.
+
+    <FileTree>
+    - AthalianaColdStressSugar
+    - studies
+        - AthalianaColdStress
+        - protocols
+            - **growth_protocol.md**
+    - ...
+    </FileTree>
+
+5. A click on the protocol's file name opens a text editor in the right panel.
+
+</Steps>

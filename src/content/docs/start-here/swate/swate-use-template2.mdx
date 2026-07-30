@@ -1,0 +1,38 @@
+---
+title: Swate Use Template
+sidebar:
+  hidden: true
+## https://starlight-sidebar-topics.netlify.app/docs/guides/unlisted-pages/
+topic: start-here
+---
+
+import { Steps } from '@astrojs/starlight/components'
+import NoWrapTable from "@components/NoWrapTable.astro"
+import Icons from '@components/swate/Icons';
+
+
+<Steps>
+1. Select the "SugarMeasurement" table.
+2. Click `Utilize prior output` and `Import selected output column` to use the (*_sugar-ext) values of the "SugarExtraction" table.
+3. Click on the <Icons.Templates /> button in the top bar and import the template `Training - Sugar measurement`, following the same steps as before. this will not replace the existing input column.
+4. Fill the parameter columns
+    - Parameter [`technical replicate`] of 1,2,3,1,2,3
+    - Parameter [`sample volume`] of 10 `microliter`
+    - Parameter [`buffer volume`] of 190 `microliter`
+    - Parameter [`cycle count`] of 5
+5. Use the `File Picker` feature <Icons.FilePicker /> to import the results of sugar measurement (`sugar_result.csv`) into `Output [Data]`
+
+    <NoWrapTable>
+
+        Input [Sample Name]	| Parameter [technical replicate] | Parameter [...] | Output [Data] 
+        ---                 | ------------------------------- | --------------- | --- 
+        Cold1_sugar-ext     | 1                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+        Cold2_sugar-ext     | 2                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+        Cold3_sugar-ext     | 3                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+        RT1_sugar-ext       | 1                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+        RT2_sugar-ext       | 2                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+        RT3_sugar-ext       | 3                               | ...             | ./assays/SugarMeasurement/dataset/sugar_result.csv
+
+    </NoWrapTable>
+
+</Steps>

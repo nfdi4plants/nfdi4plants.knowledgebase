@@ -1,0 +1,93 @@
+---
+import chatbotAvatar from '@images/viola/chatbot-avatar.png';
+import { Image } from 'astro:assets';
+---
+
+<div class="chat chat-end">
+  <div class="chat-image avatar">
+    <div class="w-10 rounded-full">
+      <Image
+        alt="Chatbot avatar"
+        src={chatbotAvatar} />
+    </div>
+  </div>
+
+  <div class="chat-bubble text-lg chatbot-bubble">
+    <slot />
+  </div>
+</div>
+
+<style>
+.chat-end {
+    place-items: end;
+    grid-template-columns: 1fr auto;
+}
+
+.chat {
+    display: grid;
+    column-gap: .75rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+
+.chat-end .chat-image {
+    grid-column-start: 2;
+}
+
+.chat-image {
+    grid-row: span 2 / span 2;
+    align-self: flex-end;
+}
+
+.avatar {
+    position: relative;
+    display: inline-flex;
+}
+
+.avatar > div {
+    display: block;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.avatar img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.chat-end .chat-bubble {
+    grid-column-start: 1;
+    justify-self: end;
+    border-end-end-radius: 0;
+}
+
+.chat-bubble {
+    position: relative;
+    display: block;
+    width: fit-content;
+    max-width: 90%;
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+    padding: .5rem 1rem;
+    border-radius: var(--rounded-box, 1rem);
+    color: white;
+}
+
+.chatbot-bubble {
+    background: #374151; /* slate-700 */
+}
+
+/* Tail */
+.chat-end .chat-bubble::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -.749rem;
+    width: .75rem;
+    height: .75rem;
+    background: inherit;
+    -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMycgaGVpZ2h0PSczJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxwYXRoIGZpbGw9J2JsYWNrJyBkPSdNIDAgMCBMIDAgMyBDIDAgMiAyIDEgMyAwIFonLz48L3N2Zz4=");
+    mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMycgaGVpZ2h0PSczJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxwYXRoIGZpbGw9J2JsYWNrJyBkPSdNIDAgMCBMIDAgMyBDIDAgMiAyIDEgMyAwIFonLz48L3N2Zz4=");
+}
+</style>

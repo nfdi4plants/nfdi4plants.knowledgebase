@@ -1,0 +1,34 @@
+---
+title: ARCitect Sync
+sidebar:
+  hidden: true
+## https://starlight-sidebar-topics.netlify.app/docs/guides/unlisted-pages/
+topic: start-here
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import QIcon from "@components/QIcon.astro"
+
+<Steps>
+1. From the sidebar, navigate to the <QIcon name="published_with_changes" /> `DataHUB Sync` menu.
+2. In the grey `Remote` box, click `+` to add a remote.
+3. In the `Add Remote` dialog, leave the defaults for `Remote Name`, `DataHUB Account` and `URL`.
+
+    :::note
+    By default, your ARC will be synced privately to your personal DataHUB Account.
+    :::
+
+    <ViolaSays>
+      So my ARC will be synced to https://git.nfdi4plants.org/viola/AthalianaColdStressSugar.git
+    </ViolaSays>
+
+4. Click `Add Remote`.
+5. Click `Push` to upload your ARC to the DataHUB.     
+6. In the grey `Remote` box, click the globe icon to be directed to your ARC in the DataHUB.
+
+    :::note
+    If you edit your ARC in a different location (e.g. the DataHUB or another computer) be sure to synchronize your local ARC using the `Pull` button. 
+    :::
+
+</Steps>

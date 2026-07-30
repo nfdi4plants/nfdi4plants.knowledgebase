@@ -1,5 +1,6 @@
 // @ts-check
-import { defineConfig } from "astro/config";
+import { defineConfig } from "astro/config"
+import { fileURLToPath } from 'node:url';;
 import starlight from "@astrojs/starlight";
 import starlightLinksValidator from "starlight-links-validator";
 import starlightSidebarTopics from "starlight-sidebar-topics";
@@ -438,12 +439,23 @@ export default defineConfig({
             items: [
               "workshops",              
               {
-                label: "FDM-Werkstatt",
+                label: "FDM-Werkstatt 2026",
                 collapsed: true,
                 items: [
                   {
                     autogenerate: {
                       directory: "workshops/2026-fdm-werkstatt",
+                    },
+                  },
+                ],
+              },
+              {
+                label: "PlantAI Summer School 2026",
+                collapsed: true,
+                items: [
+                  {
+                    autogenerate: {
+                      directory: "workshops/2026-08_trr175-summer-school",
                     },
                   },
                 ],
@@ -487,5 +499,10 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()],
+    resolve: {
+      alias: {
+        '@kb': fileURLToPath(new URL('./src/content/docs', import.meta.url)),
+      },
+    },
   },
 });
