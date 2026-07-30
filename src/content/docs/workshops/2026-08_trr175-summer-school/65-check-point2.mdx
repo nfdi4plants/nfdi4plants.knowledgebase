@@ -9,7 +9,7 @@ authors:
 
 import ViolaSays from '@components/ViolaSays.astro'
 import BotSays from '@components/BotSays.astro'
-import { Steps } from '@astrojs/starlight/components';
+import { Card, LinkButton} from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
 
 <ViolaSays>
@@ -25,6 +25,15 @@ import ViolasARC2 from '@components/mdx/ViolasARC-checkpoint2.mdx'
 <ViolasARC2 />
 
 <BotSays>
-Great, this allows me to understand the connection between samples and data points.
+Alright, now we've got some data to work with. It's just not quite clear to me, which columns in "sugar_result.csv" contain the results for which plant samples.
 </BotSays>
 
+
+<Card title="Download Check-point" icon="gitlab">
+If needed, you can download the ARC at this stage 
+  <LinkButton
+    href="https://git.nfdi4plants.org/training/trr175-plantai-summerschool/AthalianaColdStressSugar-CheckPoint2/-/archive/main/AthalianaColdStressSugar-CheckPoint2-main.zip?ref_type=heads"
+  >
+    Download Check-point 2 ARC
+  </LinkButton>
+</Card>

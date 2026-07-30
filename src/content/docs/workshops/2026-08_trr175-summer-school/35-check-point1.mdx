@@ -8,14 +8,15 @@ authors:
 ---
 
 import ViolaSays from '@components/ViolaSays.astro'
-import { Steps } from '@astrojs/starlight/components';
+import BotSays from '@components/BotSays.astro'
+import { Card, LinkButton} from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
 
 <ViolaSays>
 Done!   
-  ✔︎ I've created an ARC for my project!  
+  ✔︎ I've created an ARC for my project  
   ✔︎ I've added metadata about the overall investigation  
-  ✔︎ I've added a study for my samples  
+  ✔︎ I've added a study to annotate my samples  
 </ViolaSays>
 
 The ARC now looks like this:
@@ -24,6 +25,17 @@ import ViolasARC1 from '@components/mdx/ViolasARC-checkpoint1.mdx'
 
 <ViolasARC1 />
 
-The ARC is now ready to be filled with more life.
-Explore the next sections to add an assay and share your ARC via the DataHUB. 
 
+<BotSays>
+Great, the cold-stressed plant samples are all clear. Now I'm looking forward to see some measurement data that we can analyze.
+</BotSays>
+
+
+<Card title="Download Check-point" icon="gitlab">
+If needed, you can download the ARC at this stage 
+  <LinkButton
+    href="https://git.nfdi4plants.org/training/trr175-plantai-summerschool/AthalianaColdStressSugar-CheckPoint1/-/archive/main/AthalianaColdStressSugar-CheckPoint1-main.zip?ref_type=heads"
+  >
+    Download Check-point 1 ARC
+  </LinkButton>
+</Card>
