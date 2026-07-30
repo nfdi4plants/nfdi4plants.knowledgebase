@@ -455,7 +455,7 @@ export default defineConfig({
                 items: [
                   {
                     autogenerate: {
-                      directory: "workshops/2026-08-TRR175-SummerSchool",
+                      directory: "workshops/2026-08_trr175-summer-school",
                     },
                   },
                 ],
