@@ -234,6 +234,17 @@ export default defineConfig({
                     },
                   },
                 ],
+              },              {
+                label: "ARCitect-GX",
+                badge: {text: "WIP", variant: "caution"},
+                collapsed: true,
+                items: [
+                  {
+                    autogenerate: {
+                      directory: "arcitect-gx",
+                    },
+                  },
+                ],
               },
 
               {

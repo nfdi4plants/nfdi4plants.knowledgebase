@@ -1,0 +1,34 @@
+---
+title: Import Files
+authors:
+ - dominik-brilhaus
+lastUpdated: 2026-08-04
+sidebar:
+  hidden: true
+## https://starlight-sidebar-topics.netlify.app/docs/guides/unlisted-pages/
+topic: start-here
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+
+  <Steps>
+
+  1. Right-click on the `SugarMeasurement` folder and select `Open Folder Location`.
+  2. Move the demo data files: 
+      - `sugar_result.csv` into `dataset`
+      - `sugar_extraction_protocol.md` into `protocols`
+    
+        <FileTree>
+        - assays
+            - SugarMeasurement
+                - dataset
+                    - **sugar_result.csv**
+                - protocols
+                    - **sugar_extraction_protocol.md**
+                - isa.assay.xlsx
+                - README.md
+        - ...
+        </FileTree>
+
+  </Steps>
