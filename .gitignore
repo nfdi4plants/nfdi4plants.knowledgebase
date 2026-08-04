@@ -28,5 +28,3 @@ pnpm-debug.log*
 *.swp
 
 .cache
-
-src/content/docs/arcitect-gx/todo/**
