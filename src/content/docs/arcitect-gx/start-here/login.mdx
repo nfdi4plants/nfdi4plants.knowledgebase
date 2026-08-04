@@ -1,0 +1,27 @@
+---
+title: Sign In
+author: dominik-brilhaus
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+
+import Signin from '@images/arcitect-gx/signin.png'
+
+<Steps>
+    
+1. Click Open the DataHUB Authentication menu in the top-right.
+2. Select PLANTdataHUB (official) `git.nfdi4plants.org` as DataHUB from the dropdown menu.
+
+    <img src={Signin.src} width="400px" />
+
+3. Click the link `Click here to generate a new GitLab Personal Access Token`. This automatically opens your browser at the DataHUB (https://git.nfdi4plants.org) and guides you to create an access token.
+4. Scroll down and click <btn> Generate token </btn>.
+5. Copy the token on top and paste it into the ARCitect-GX field "Personal Access Token"
+6. Click <btn> Sign In </btn>
+
+    <ViolaSays>
+    Great, now I should be able to work with the DataHUB.
+    </ViolaSays>
+
+</Steps>
