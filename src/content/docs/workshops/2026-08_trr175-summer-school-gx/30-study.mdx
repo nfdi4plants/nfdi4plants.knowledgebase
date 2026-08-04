@@ -1,0 +1,211 @@
+---
+title: Add a study
+sidebar:
+  order: 3
+authors:
+  - dominik-brilhaus
+  - lukas-weil
+  - sabrina-zander 
+  - kevin-frey
+---
+
+{/* Import components */}
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Card } from '@astrojs/starlight/components';
+import { Steps } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+import Mermaid from '@components/mdx/Mermaid.astro'
+
+{/* Import contents */}
+
+import ArcitectStudy from "@kb/arcitect-gx/start-here/add-study.mdx"
+import ArcitectProtocol from "@kb/arcitect-gx/start-here/add-protocol.mdx"
+import SwateSamples from "@kb/start-here/swate/swate-samples.mdx"
+import SwateProtocol from "@kb/start-here/swate/swate-protocol.mdx"
+import SwateCharacteristic from "@kb/start-here/swate/swate-characteristic.mdx"
+import SwateParameter from "@kb/start-here/swate/swate-parameter.mdx"
+import SwateFactor from "@kb/start-here/swate/swate-factor.mdx"
+import SwateOntologyInfo from "@kb/start-here/swate/swate-ontology-info.mdx"
+import SwateTableEdit from "@kb/start-here/swate/swate-table-edit.mdx"
+
+<ViolaSays>
+And where do I add my experimental design? Where can I describe how I grew my plants under different conditions?
+</ViolaSays>
+
+With **studies** you can describe materials and resources. In this Violas-PhD-Project you can add the different growth conditions of your plants here.
+
+![](@images/start-here/arc-prototypic-study-divide-conquer.svg)
+
+## Create a new study
+
+<Card icon="pen" title="ARCitect-GX">
+  <ArcitectStudy />
+</Card>
+
+## Protocols
+
+<ViolaSays>
+  I saved my lab notes about the plant growth in the file growth_protocol.md. Can I store that somewhere?
+</ViolaSays>
+
+You can use the protocol subdirectory to store free-text protocols that describe how the samples or materials were created.
+
+![](@images/start-here/arc-prototypic-study-identify.svg)
+
+
+<Card icon="pen" title="ARCitect-GX">
+  <ArcitectProtocol />
+</Card>
+
+
+## Add samples to your study
+
+<ViolaSays>
+And where do I note down the plants I used?
+</ViolaSays>
+
+Structured metadata annotation in the ARC is mostly achieved via spreadsheet tables.
+
+Let us start by adding the samples to the study.
+
+<Card icon="pen" title="ARCitect-GX">
+  <SwateSamples />  
+</Card>
+
+## Referencing the protocol
+
+In the next step we draw a link between the original protocol and the structured metadata.
+We reference the protocol in the annotation table to say:
+
+> Plant "Cold1" results in sample "Cold1_leaf" by applying the protocol to it.
+
+<Card icon="pen" title="ARCitect-GX">
+  <SwateProtocol />
+</Card>
+
+:::tip
+While it is recommended to store the protocol in an open format (`.md`, `.txt`, `.docx`, …), everything is possible also an URL to an electronic lab notebook.
+:::
+
+<ViolaSays>
+But from my understanding this is not really machine readable, right? 
+</ViolaSays>
+
+Yes, but it still contains valuable information! As we now can link the protocol to the samples, we can later on use the protocol to extract more information from the samples.
+
+## From free-text protocol to structured metadata
+
+![](@images/start-here/arc-prototypic-study-parameterization.svg)
+
+### Finding the metadata vocabulary and descriptors
+
+The ARC builds on standards and leverages ontologies for metadata annotation. The details are out of the scope of this guide. However, it is good to know that a combination of structural and biological ontologies are combined to semantically structure the metadata.
+
+import XY from "@images/start-here/arc-prototypic-metadata.svg"
+
+<img src={XY.src} style="width:80%;display: block; margin: 20px" />
+
+<ViolaSays>
+So I need to find the important information in my protocol and then add it to the metadata table?
+</ViolaSays>
+
+Yes! Imagine ontologies like a vocabulary. You can use them to describe your samples in a standardized way. This makes it easier for others to understand your data.
+
+### Parameterizing the study
+
+import {ParentChild} from '@components/mdx/ParentChild.mdx'
+
+Let us look at the growth protocol and extract the important information.
+
+```md title="growth_protocol.md" {3-6, 8-12}
+# Study Name: Growth Protocol for *Arabidopsis thaliana*
+
+## Parameters:
+- 200 µmol photons m²/s (200 Einstein)
+- Alternating 6°C (cold treatment) and 25°C (control)
+- 4 days
+
+## Characteristics:
+- *Arabidopsis thaliana*
+- Leaf
+- Hydroponic culture
+- Columbia (Col-0)
+
+...
+```
+
+Then we need to put this information into context:
+
+> "*Arabidopsis thaliana*" is a "Characteristic" of the samples, describing its "Organism".
+
+<div class="grid md:grid-cols-2">
+
+  <div class="md:!m-0">
+  
+  ##### Characteristics [ ]
+
+  - <ParentChild parent="Organism" child="Arabidopsis thaliana"/>
+  - <ParentChild parent="Tissue" child="Leaf"/>
+  - <ParentChild parent="Growth medium" child="Hydroponic culture"/>
+  - <ParentChild parent="Ecotype" child="Columbia"/>
+  
+  </div>
+  <div class="md:!m-0">
+  
+  ##### Parameters [ ]
+
+  - <ParentChild parent="Exposure duration" child="4d"/>
+  - <ParentChild parent="Light intensity" child="200 µEinstein"/>
+  - <ParentChild parent="Temperature" child="6°C / 25°C"/>
+  
+  </div>
+
+</div>
+
+
+## Add characteristics
+
+<Card icon="pen" title="ARCitect-GX">
+  <SwateCharacteristic />
+</Card>
+
+## Add a parameter with a unit
+
+<ViolaSays>
+Parameters works just like Characteristics, right? But they also contain numbers with a unit, how can i add that?
+</ViolaSays>
+
+Yes, you are right! Parameters are similar to Characteristics. To use units you can simply select the `Unit` toggle during the `Add building block` step and then insert the value in the table afterwards.
+
+<Card icon="pen" title="ARCitect-GX">
+  <SwateParameter />
+</Card>
+
+## Add a factor building block
+
+<ViolaSays>
+So what do i do with "temperature"? My experiment revolves around this specific parameter.
+</ViolaSays>
+
+In this case, you can use a `Factor` building block. Factors are used to describe the experimental conditions that are manipulated in an experiment.
+
+<Card icon="pen" title="ARCitect-GX">
+  <SwateFactor />
+</Card>
+
+
+## Show ontology information
+
+<Card icon="pen" title="ARCitect-GX">
+  <SwateOntologyInfo />
+</Card>
+
+
+## Re-organize the annotation table
+
+If the order of the building blocks needs to be adjusted, you can delete or move them from your annotation table.
+
+<Card icon="pen" title="ARCitect-GX">
+  <SwateTableEdit />
+</Card>

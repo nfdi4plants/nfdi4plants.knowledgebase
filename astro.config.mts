@@ -65,7 +65,9 @@ export default defineConfig({
             { label: "ARC", href: "https://arc-rdm.org" },
           ],
         }),
-        starlightSidebarTopics([
+        starlightSidebarTopics(
+          [
+
           {
             label: "Start Here",
             icon: "rocket",
@@ -440,15 +442,16 @@ export default defineConfig({
             icon: "comment",
             link: "faqs",
             items: ["faqs"],
-          },
-
+          },         
+          
           {
             label: "Workshops",
             icon: "star",
             link: "workshops",
             id: "workshops",
             items: [
-              "workshops",              
+              "workshops",
+
               {
                 label: "FDM-Werkstatt 2026",
                 collapsed: true,
@@ -463,10 +466,11 @@ export default defineConfig({
               {
                 label: "PlantAI Summer School 2026",
                 collapsed: true,
+                badge: {text: "GX", variant: "caution"},
                 items: [
                   {
                     autogenerate: {
-                      directory: "workshops/2026-08_trr175-summer-school",
+                      directory: "workshops/2026-08_trr175-summer-school-gx",
                     },
                   },
                 ],
@@ -494,7 +498,11 @@ export default defineConfig({
               "contribution",
             ],
           },
-        ]),
+        ],
+        {
+            exclude: ["**/2026-08_trr175-summer-school/**"]
+          },      
+      ),
       ],
       expressiveCode: {
         defaultProps: {
