@@ -1,0 +1,112 @@
+---
+title: Track changes to your ARC
+sidebar:
+  order: 5
+authors:
+  - dominik-brilhaus
+  - lukas-weil
+  - sabrina-zander
+---
+
+{/* Import components */}
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+
+{/* Import contents */}
+
+import DataHUBAccount from '@kb/datahub/account/index.mdx'
+import ArcitectLogin from "@kb/arcitect-gx/start-here/login.mdx"
+import ArcitectCommit from "@kb/arcitect-gx/start-here/commit.mdx"
+// import ArcitectHistory from "@kb/arcitect-gx/start-here/history.mdx"
+import ArcitectCommit2 from "@kb/arcitect-gx/start-here/commit2.mdx"
+
+
+<ViolaSays>
+    How can I make sure, other researchers will understand what I did while working on my ARC?
+</ViolaSays>
+
+<Card title="DataPLANT Account" icon="setting">
+
+If you do not have an account, please register with DataPLANT to use the PLANTDataHUB.
+
+<details>
+<summary>Follow these instructions to sign up</summary>
+
+    <DataHUBAccount />
+
+</details>
+
+</Card>
+
+
+## Track changes
+
+The ARC comes with a mechanism to track changes. This version control is based on [git](/nfdi4plants.knowledgebase/fundamentals/version-control-git). Briefly, snapshots of an ARC are called `Commits`. Every Commit is encoded with the information on **who** made the change and **when** and it is accompanied with a note, i.e. a "Commit message" that allows the user to communicate what was changed.
+
+:::note
+Commits would usually be done more frequently along the previous steps described in this guide.
+:::
+
+### Login to DataHUB
+
+In order to retreive your user information and associate it with your commits, you need to login to the DataHUB.
+
+<Card icon="pen" title="ARCitect-GX">
+    <ArcitectLogin />
+</Card>
+
+### Commit your changes
+
+The commit menu allows you to "commit" your changes locally. This saves the changes of your local ARC together with your DataHUB credentials (Name and eMail).
+
+<Card icon="pen" title="ARCitect-GX">
+    <ArcitectCommit />
+</Card>
+
+
+{/* ### Follow your changes
+
+In the History menu you can inspect your ARC history with all commit messages.
+
+<Card icon="pen" title="ARCitect-GX">
+    <ArcitectHistory />
+</Card> */}
+
+## Try it yourself – add messages to communicate your ARC's evolution
+
+We recommend adding a message that shortly summarizes, what you did since you last synced your ARC, e.g.
+
+<Steps>
+
+1. Viola starts a fresh ARC for her project and fills the investigation metadata
+
+    <ViolaSays>
+      add investigation info
+    </ViolaSays>
+
+2. She adds a study with plant samples 
+
+    <ViolaSays>
+      create study and add samples
+    </ViolaSays>
+
+3. She adds raw data to an assay sugar measurement
+
+    <ViolaSays>
+      add sugar dataset
+    </ViolaSays>
+
+4. She annotates the dataset using
+
+    <ViolaSays>
+      annotate sugar extraction and measurement
+    </ViolaSays>
+
+</Steps>
+
+
+<Card icon="pen" title="ARCitect-GX">
+    <ArcitectCommit2 />
+</Card>

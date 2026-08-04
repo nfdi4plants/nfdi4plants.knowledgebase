@@ -1,0 +1,62 @@
+---
+title: Create an ARC
+sidebar:
+  order: 1
+authors:
+  - dominik-brilhaus
+  - lukas-weil
+---
+
+{/* Import components */}
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+
+{/* Import contents */}
+
+import ARCitectInstallation from '@kb/arcitect-gx/installation.mdx'
+import ArcitectNewArc from "@kb/arcitect-gx/start-here/new-arc.mdx"
+
+<ViolaSays>
+So, where do I start? What is an ARC? And how do I create one?
+</ViolaSays>
+
+An ARC represents an entire investigation. At the top level, it includes directories named “studies,” “assays,” “workflows,” and “runs,” along with an investigation metadata table that holds all administrative metadata.
+
+It follows a very specific structure to be easily readable by machines 🤖. While it can be created by hand it is faster to use some tooling!
+
+![](@images/start-here/arc-scaffold.svg)
+
+
+## ARCitect-GX installation
+
+The easiest way to create a new ARC is via **ARCitect-GX**. 
+
+<Card title="ARCitect-GX installation" icon="setting">
+
+If ARCitect is not yet installed on your computer, 
+
+<details>
+<summary>please follow these instructions to install ARCitect</summary>
+
+  <ARCitectInstallation />
+
+</details>
+
+</Card>
+
+## Create a new ARC
+
+<Card icon="pen" title="ARCitect-GX">
+  <ArcitectNewArc />
+</Card>
+
+:::note[Your ARC's name]
+
+By default, your ARC's name will be used:
+
+1. For the **ARC folder** on your computer.
+2. As the **investigation identifier**. 
+:::
+
