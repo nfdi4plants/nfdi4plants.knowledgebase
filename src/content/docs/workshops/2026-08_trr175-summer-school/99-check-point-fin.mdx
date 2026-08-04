@@ -1,17 +1,43 @@
 ---
-title: – Fin –
-sidebar:
-  order: 9
-  attrs: { style: 'font-style: italic; color: grey; padding-left: 10%'}
+title: Explore and start agentic
 authors:
   - dominik-brilhaus
 ---
 
 import ViolaSays from '@components/ViolaSays.astro'
-import { Steps } from '@astrojs/starlight/components';
+import BotSays from '@components/BotSays.astro'
+import { Card, LinkButton } from '@astrojs/starlight/components';
 import { FileTree } from '@astrojs/starlight/components';
 
-<ViolaSays>
+import ViolasARC3 from '@components/mdx/ViolasARC-checkpoint3.mdx'
 
+At this point we'll explore the ARC using ARCgentic.
+For this we will be using a more advanced version of Viola's ARC, that includes some proteomics data of her cold stress experiment. 
+
+<ViolaSays>
+  ✔︎ In addition to the raw data, my ARC now contains the annotated data analysis "Visualization".  
+  ✔︎ And, I've added experimental details and some data of my Proteomics dataset.  
 </ViolaSays>
 
+The ARC now looks like this:
+
+<ViolasARC3 />
+
+
+:::tip
+If you want to see the details of this ARC advanced, follow the [start-here guide](/nfdi4plants.knowledgebase/start-here/).
+:::
+
+
+<BotSays>
+  Great, let's explore some bigger data.
+</BotSays>
+
+
+<Card title="Download Check-point" icon="gitlab">
+  <LinkButton
+    href="https://git.nfdi4plants.org/training/trr175-plantai-summerschool/AthalianaColdStressSugar-CheckPointFinal/-/archive/main/AthalianaColdStressSugar-CheckPointFinal-main.zip?ref_type=heads"
+  >
+    Download Check-point Final
+  </LinkButton>
+</Card>
