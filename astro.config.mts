@@ -234,6 +234,16 @@ export default defineConfig({
                     },
                   },
                 ],
+              },              {
+                label: "ARCitect-GX",
+                collapsed: true,
+                items: [
+                  {
+                    autogenerate: {
+                      directory: "arcitect-gx",
+                    },
+                  },
+                ],
               },
 
               {
