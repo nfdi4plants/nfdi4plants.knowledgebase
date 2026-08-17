@@ -134,59 +134,59 @@ In the long run, the revision will be automated as much as possible via the [arc
     
         ```markdown showLineNumbers=false nowrap=true
 
-        This milestone helps to bundle all issues (➡ [Issues](../../issues)) related to the ongoing revision of your ARC for publication via DataPLANT's [ARChive](https://archive.nfdi4plants.org/).
+        This milestone helps to bundle all issues (➡ [Work Items](../../work_items)) related to the ongoing revision of your ARC for publication via DataPLANT's [ARChive](https://archive.nfdi4plants.org/).
 
         ### ARC publication criteria
 
         [This article](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/guides/review-arc/) in the knowledge base summarizes what DataPLANT typically expects during ARC publication.
 
-        The ➡ [Issues](../../issues) are used to transparently discuss certain quality criteria for the ARCs. Feel free to get in touch with the reviewers and data stewards by responding directly via the issues.
+        The ➡ [Work Items](../../work_items) are used to transparently discuss certain quality criteria for the ARCs. Feel free to get in touch with the reviewers and data stewards by responding directly via the issues.
 
-        ### Issue names and labels
+        ### Work item names and labels
 
-        - Issues starting with `DataHUB:` can easily be addressed here in the DataHUB
-        - Issues starting with `ISA Metadata:` are most easily fixed using some ARC tooling, e.g. ARCitect, Swate, ARC commander
-        - Issues labeled as `critical` **must** be addressed for acceptance
-        - Issues labeled as `suggestion` **should** be addressed for acceptance – this also depends on the nature of the ARC
-        - Issues labeled as `enhancement` add a nice touch to the ARC, e.g. for (human) findability
+        - Work items starting with `DataHUB:` can easily be addressed here in the DataHUB
+        - Work items starting with `ISA Metadata:` are most easily fixed using some ARC tooling, e.g. ARCitect, Swate, ARC commander
+        - Work items labeled as `critical` **must** be addressed for acceptance
+        - Work items labeled as `suggestion` **should** be addressed for acceptance – this also depends on the nature of the ARC
+        - Work items labeled as `enhancement` add a nice touch to the ARC, e.g. for (human) findability
         ```
 
 1. Open the work items menu: left sidebar → Plan → Work items
-1. Click on the "Bulk edit" button in the top-right corner to select some or all issues
+1. Click on the "Bulk edit" button in the top-right corner to select some or all work items
 1. In the right sidebar, select the "Milestone" dropdown and choose the milestone you just created
-1. Click on "Update selected" to apply the milestone to the selected issues
+1. Click on "Update selected" to apply the milestone to the selected work items
 
 </Steps>
 
-:::tip[Close multiple issues via bulk edit]
-In case there's an issue with the import or you want to immediately close (some of) the imported issues, you can also use the `bulk edit` feature. Select the relevant issues, change the status to "Close", select "Update selected".
+:::tip[Close multiple work items via bulk edit]
+In case there's an work item with the import or you want to immediately close (some of) the imported work items, you can also use the `bulk edit` feature. Select the relevant work items, change the status to "Close", select "Update selected".
 :::
 
-### Adapting the issue list
+### Adapting the work item list
 
-The issue list is based on the [CSV import feature of GitLab issues](https://docs.gitlab.com/user/project/issues/csv_import/), which allows you to create multiple issues at once by uploading a CSV file with the issue details. For more details on the CSV format and the available options, please refer to the GitLab documentation. 
+The work item list is based on the [CSV import feature of GitLab work items](https://docs.gitlab.com/user/project/issues/csv_import/), which allows you to create multiple work items at once by uploading a CSV file with the work item details. For more details on the CSV format and the available options, please refer to the GitLab documentation. 
 
 <details>
 <summary>Learn More</summary>
 
   
 
-  #### Basics about the issue CSV file
+  #### Basics about the work item CSV file
 
   - The first two columns must be `title` and `description`.
   - The first row is used as a header and is ignored. 
-  - The order of the rows does not matter – by default the issues are sorted alphabetically in the DataHUB.
+  - The order of the rows does not matter – by default the work items are sorted alphabetically in the DataHUB.
 
   #### Use of quick-actions
 
-  GitLab offers so-called "quick-actions" to perform certain actions on issues, e.g. to assign an issue to a user, to add a label or to mark an issue as confidential. These quick-actions can also be used in the CSV file to set up the issues in a more specific way during import. 
+  GitLab offers so-called "quick-actions" to perform certain actions on work items, e.g. to assign an work item to a user, to add a label or to mark an work item as confidential. These quick-actions can also be used in the CSV file to set up the work items in a more specific way during import. 
 
   - Each action must be on a separate line.
   - For quick actions like `/label` and `/milestone`, the label or milestone must already exist in the project.
 
   #### Labels
 
-  Using the quick-action `/label` allows to categorize the issues. Instead of typical journal review terminology (e.g. "required", "recommended", "major", "minor"), this issue list uses the default GitLab labels `critical`, `suggestion` and `enhancement`. 
+  Using the quick-action `/label` allows to categorize the work items. Instead of typical journal review terminology (e.g. "required", "recommended", "major", "minor"), this work item list uses the default GitLab labels `critical`, `suggestion` and `enhancement`. 
 
   :::tip
   You can see all available labels via left sidebar → Manage → Labels
@@ -194,17 +194,17 @@ The issue list is based on the [CSV import feature of GitLab issues](https://doc
 
   #### Confidential
 
-  Marking review issues as "confidential" via the `/confidential` quick-action simply adds a bit more comfort for the ARC authors. Issues marked as confidential are only visible to project members with at least "Reporter" permissions.
+  Marking review work items as "confidential" via the `/confidential` quick-action simply adds a bit more comfort for the ARC authors. Work items marked as confidential are only visible to project members with at least "Reporter" permissions.
 
 </details>
 
 ## The revision process
 
-Above issue list is really just a starting point for ARC revision. This should help ARC reviewers to have an idea of some important issues that could be addressed for ARC publication. However, the issue list is not exhaustive and may need to be adapted to the specific needs of the ARC revision. For example, some issues may not be relevant for a specific ARC, while other issues may need to be added. 
+Above work item list is really just a starting point for ARC revision. This should help ARC reviewers to have an idea of some important work items that could be addressed for ARC publication. However, the work item list is not exhaustive and may need to be adapted to the specific needs of the ARC revision. For example, some work items may not be relevant for a specific ARC, while other work items may need to be added. 
 
-In order to guide the ARC creators and relate the issues to their specific ARC, it usually makes sense to add some comments to the issues. This can be done directly in the DataHUB by responding to the issues and include specific parts, e.g. study or assay names and screenshots (e.g. from ARCitect).
+In order to guide the ARC creators and relate the work items to their specific ARC, it usually makes sense to add some comments to the work items. This can be done directly in the DataHUB by responding to the work items and include specific parts, e.g. study or assay names and screenshots (e.g. from ARCitect).
 
-Furthermore, since the issue list is generic and with the logic above, always all issues are imported, it may be useful to close some of the issues immediately after import if they are not (anymore) relevant for the specific ARC revision. Again, this highlights, that certain criteria simply apply to all ARCs.
+Furthermore, since the work item list is generic and with the logic above, always all work items are imported, it may be useful to close some of the work items immediately after import if they are not (anymore) relevant for the specific ARC revision. Again, this highlights, that certain criteria simply apply to all ARCs.
 
 :::tip[A pull-request goes a long way]
 For small things such as adding a License or the automated README, ARC creators usually also appreciate a merge request (if communicated clearly). 
@@ -212,7 +212,7 @@ For small things such as adding a License or the automated README, ARC creators 
 
 ## Finalizing revision and publication
 
-Once all critical issues are addressed and the ARC is ready for publication, the ARC reviewer can finalize and publish the ARC publication.
+Once all critical work items are addressed and the ARC is ready for publication, the ARC reviewer can finalize and publish the ARC publication.
 
 :::note[WIP July 2026]
 
