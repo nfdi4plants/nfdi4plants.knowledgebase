@@ -17,12 +17,15 @@ import { Card } from '@astrojs/starlight/components';
 {/* Import contents */}
 
 import DataHUBAccount from '@kb/datahub/account/index.mdx'
-import ArcitectLogin from "@kb/arcitect-gx/start-here/login.mdx"
-import ArcitectCommit from "@kb/arcitect-gx/start-here/commit.mdx"
 
-{/* import ArcitectHistory from "@kb/arcitect-gx/start-here/history.mdx" */}
+import ArcitectGXLogin from "@kb/arcitect-gx/start-here/login.mdx"
+import ArcitectGXCommit from "@kb/arcitect-gx/start-here/commit.mdx"
+import ArcitectGXCommit2 from "@kb/arcitect-gx/start-here/commit2.mdx"
 
-import ArcitectCommit2 from "@kb/arcitect-gx/start-here/commit2.mdx"
+import ArcitectLogin from "@kb/start-here/arcitect/arcitect-login.mdx"
+import ArcitectCommit from "@kb/start-here/arcitect/arcitect-commit.mdx"
+import ArcitectHistory from "@kb/start-here/arcitect/arcitect-history.mdx"
+import ArcitectCommit2 from "@kb/start-here/arcitect/arcitect-commit2.mdx"
 
 
 <ViolaSays>
@@ -53,10 +56,27 @@ Commits would usually be done more frequently along the previous steps described
 
 ### Login to DataHUB
 
-In order to retreive your user information and associate it with your commits, you need to login to the DataHUB.
+In order to retrieve your user information and associate it with your commits, you need to login to the DataHUB.
+
+<Tabs syncKey="arcitect">
+  <TabItem label="ARCitect" icon='approve-check'>
+
+
+  </TabItem>
+
+  <TabItem label="ARCitect-GX" icon='random'>
+
+    
+  </TabItem>
+</Tabs>
+
+
+
+
+
 
 <Card icon="pen" title="ARCitect-GX">
-    <ArcitectLogin />
+    <ArcitectGXLogin />
 </Card>
 
 ### Commit your changes
@@ -64,7 +84,7 @@ In order to retreive your user information and associate it with your commits, y
 The commit menu allows you to "commit" your changes locally. This saves the changes of your local ARC together with your DataHUB credentials (Name and eMail).
 
 <Card icon="pen" title="ARCitect-GX">
-    <ArcitectCommit />
+    <ArcitectGXCommit />
 </Card>
 
 
@@ -73,7 +93,7 @@ The commit menu allows you to "commit" your changes locally. This saves the chan
 In the History menu you can inspect your ARC history with all commit messages.
 
 <Card icon="pen" title="ARCitect-GX">
-    <ArcitectHistory />
+    <ArcitectGXHistory />
 </Card> */}
 
 ## Try it yourself – add messages to communicate your ARC's evolution
@@ -110,5 +130,5 @@ We recommend adding a message that shortly summarizes, what you did since you la
 
 
 <Card icon="pen" title="ARCitect-GX">
-    <ArcitectCommit2 />
+    <ArcitectGXCommit2 />
 </Card>
