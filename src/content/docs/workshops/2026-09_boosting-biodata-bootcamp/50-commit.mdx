@@ -11,7 +11,7 @@ authors:
 {/* Import components */}
 
 import ViolaSays from '@components/ViolaSays.astro'
-import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem, Steps, FileTree } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 
 {/* Import contents */}
@@ -59,42 +59,40 @@ Commits would usually be done more frequently along the previous steps described
 In order to retrieve your user information and associate it with your commits, you need to login to the DataHUB.
 
 <Tabs syncKey="arcitect">
+
   <TabItem label="ARCitect" icon='approve-check'>
-
-
+    <ArcitectLogin />
   </TabItem>
 
   <TabItem label="ARCitect-GX" icon='random'>
-
-    
+    <ArcitectGXLogin />    
   </TabItem>
+
 </Tabs>
 
-
-
-
-
-
-<Card icon="pen" title="ARCitect-GX">
-    <ArcitectGXLogin />
-</Card>
 
 ### Commit your changes
 
 The commit menu allows you to "commit" your changes locally. This saves the changes of your local ARC together with your DataHUB credentials (Name and eMail).
 
-<Card icon="pen" title="ARCitect-GX">
-    <ArcitectGXCommit />
-</Card>
+<Tabs syncKey="arcitect">
 
+  <TabItem label="ARCitect" icon='approve-check'>
+    <ArcitectCommit />
 
-{/* ### Follow your changes
+    ### Follow your changes
 
-In the History menu you can inspect your ARC history with all commit messages.
+    In the History menu you can inspect your ARC history with all commit messages.
 
-<Card icon="pen" title="ARCitect-GX">
-    <ArcitectGXHistory />
-</Card> */}
+    <ArcitectHistory />
+  </TabItem>
+
+  <TabItem label="ARCitect-GX" icon='random'>
+    <ArcitectGXCommit />    
+  </TabItem>
+
+</Tabs>
+    
 
 ## Try it yourself – add messages to communicate your ARC's evolution
 
@@ -129,6 +127,14 @@ We recommend adding a message that shortly summarizes, what you did since you la
 </Steps>
 
 
-<Card icon="pen" title="ARCitect-GX">
-    <ArcitectGXCommit2 />
-</Card>
+<Tabs syncKey="arcitect">
+
+  <TabItem label="ARCitect" icon='approve-check'>
+    <ArcitectCommit2 />
+  </TabItem>
+
+  <TabItem label="ARCitect-GX" icon='random'>
+    <ArcitectGXCommit2 />    
+  </TabItem>
+
+</Tabs>

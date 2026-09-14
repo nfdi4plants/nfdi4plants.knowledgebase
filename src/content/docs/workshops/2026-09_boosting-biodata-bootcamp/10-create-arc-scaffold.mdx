@@ -10,7 +10,7 @@ authors:
 {/* Import components */}
 
 import ViolaSays from '@components/ViolaSays.astro'
-import { Steps, Tabs, TabItem} from '@astrojs/starlight/components';
+import { Icon, Card, CardGrid, Steps, Tabs, TabItem} from '@astrojs/starlight/components';
 
 {/* Import contents */}
 
@@ -30,12 +30,28 @@ It follows a very specific structure to be easily readable by machines 🤖. Whi
 
 ![](@images/start-here/arc-scaffold.svg)
 
-## Choose your path
+## Choose your training track
 
 The easiest way to create a new ARC is via one of the ARC tools provided by DataPLANT. 
 
-ARCitect
-ARCitect-GX
+As of September 2026, two parallel ARC tools are being maintained as the main user tool.
+
+<CardGrid>
+  <Card title="ARCitect" icon="approve-check">
+    - Most stable
+    - Most feature complete
+    - Will be replaced in the future
+  </Card>
+
+  <Card title="ARCitect-GX" icon="random">
+    - Latest developments
+    - Not fully user-ready
+    - Not yet all features implemented
+  </Card>
+</CardGrid>
+
+Choose and follow one of these tracks by selecting the respective tab in the following guides. 
+
 
 ## ARCitect installation
 

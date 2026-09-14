@@ -1,0 +1,56 @@
+---
+title: Validate your ARC
+sidebar:
+  order: 10
+lastUpdated: 2025-06-05
+authors:
+  - dominik-brilhaus
+---
+
+{/* Import components */}
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Tabs, TabItem, Steps } from '@astrojs/starlight/components';
+
+{/* Import contents */}
+
+import ValidateARC from '@kb/arc-publications/arc-publication-01-validation.mdx';
+
+<ViolaSays>
+The ARC offers a lot of flexibility in how I structure my data and annotation.
+How can I make sure that it is intact or holds enough data to be published and receive a DOI?
+</ViolaSays>
+
+<Tabs syncKey="arcitect">
+
+  <TabItem label="ARCitect" icon='approve-check'>
+    <ValidateARC />
+  </TabItem>
+
+  <TabItem label="ARCitect-GX" icon='random'>
+    
+    <Steps>
+
+      1. In the file tree, right-click on the ARC's name
+      2. From the context menu, add a `New Folder` and call it `.arc`.
+          :::note
+            Make sure to include the `.` at the beginning.
+          :::
+
+      3. Download the file <a href="/nfdi4plants.knowledgebase/validation_packages.yml" download="validation_packages.yml"> `validation_packages.yml` </a>
+      
+      4. Open the folder and add the file `validation_packages.yml` to the `.arc` folder
+      5. Save and upload your changes to the DataHUB.
+    </Steps>
+
+  </TabItem>
+
+</Tabs>
+
+
+
+
+:::tip[ARC Publications]
+Read more about ARC Publications [here](/nfdi4plants.knowledgebase/arc-publications).
+:::
+
