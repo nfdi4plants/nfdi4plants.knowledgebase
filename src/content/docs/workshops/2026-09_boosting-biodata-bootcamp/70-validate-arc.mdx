@@ -12,19 +12,44 @@ authors:
 import ViolaSays from '@components/ViolaSays.astro'
 import { Tabs, TabItem, Steps } from '@astrojs/starlight/components';
 
-{/* Import contents */}
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+import QIcon from "@components/QIcon.astro"
 
-import ValidateARC from '@kb/arc-publications/arc-publication-01-validation.mdx';
+export const inlineButtonStyle = {
+  height: "1rem",
+  verticalAlign: "middle",
+  display: "inline-block",
+}
 
 <ViolaSays>
 The ARC offers a lot of flexibility in how I structure my data and annotation.
 How can I make sure that it is intact or holds enough data to be published and receive a DOI?
 </ViolaSays>
 
+The publication process is initiated with the automated validation. This ensures that the ARC meets the minimum metadata requirements for publication. 
+
+## Validate your ARC
+
 <Tabs syncKey="arcitect">
 
   <TabItem label="ARCitect" icon='approve-check'>
-    <ValidateARC />
+    
+    You can simply select the validation via ARCitect.
+
+    <Steps>
+
+      1. Open the ARC in ARCitect
+      2. In the sidebar, go to the <QIcon name="verified" /> `Validation` menu
+      3. Check the box next to the `arc_specification` dropdown
+      3. In the section "Custom Validation Packages", select the `invenio` package
+      4. Select the latest version for both packages and click `Save`
+      4. Commit your changes via the <QIcon name="rule" /> `Commit` menu
+      5. Upload your changes via the <QIcon name="published_with_changes" /> `DataHUB Sync` menu
+      6. Open your ARC in the DataHUB
+
+    </Steps>
+
   </TabItem>
 
   <TabItem label="ARCitect-GX" icon='random'>
@@ -47,6 +72,63 @@ How can I make sure that it is intact or holds enough data to be published and r
 
 </Tabs>
 
+
+## Check the validation status
+
+The validation is being run in the PLANTDataHUB, where you can also find the validation results.
+
+import InvenioPass from "@images/arc-publications/invenio-badge-pass.svg"
+import InvenioFail from "@images/arc-publications/invenio-badge-fail.svg"
+
+<Steps>
+
+1. Sign in to the [PLANTDataHUB](https://git.nfdi4plants.org)
+2. Navigate to the validated ARC
+3. In the right sidebar you find several validation badges
+
+    ![](@images/arc-publications/cqc-results.png)
+
+    - **(1)**: The `pipeline` badge indicates wether all steps of [Continuous Quality Control (CQC)](/nfdi4plants.knowledgebase/arc-publications/#continuous-quality-control-cqc) have passed, or if there are any failures.
+    - **(2)**: The `invenio` badge is used to open a request for ARC publication via [ARChigator](/nfdi4plants.knowledgebase/arc-publications/#archigator-the-arc-submission-interface) for publication. Clicking the <img src={InvenioFail.src} style={inlineButtonStyle} /> badge will show the failed tests and their details, which can be used to fix the issues in the ARC metadata. 
+        - If an ARC **passes** the `invenio` validation, it is eligible for publication. Clicking the <img src={InvenioPass.src} style={inlineButtonStyle} /> badge will open the ARChigator interface to submit a [request for publication (RFP)](/nfdi4plants.knowledgebase/arc-publications/arc-publication-02-request) of the ARC. 
+    - **(3)**: Every CQC badge comes with a count indicator, which depends on the CQC results, and signifies how many of the performed tests have passed, respectively.
+
+
+</Steps>
+
+
+## Why does the validation fail?
+
+The most common reason for a failed `invenio` validation for ARC publication is missing or invalid investigation metadata. The `invenio` validation checks the ARC metadata against a set of critical metadata checks.
+
+Critical checks:
+
+- The **Investigation** has a title and description
+- At least one **Investigation Contacts** person must have a name, last name, affiliation, valid email, and valid ORCID
+- The ARC contains a `LICENSE` file
+
+:::note[Invenio]
+A common issue with failed tests are malformed names or ORCIDs.
+1. Please make sure that names do not have trailing spaces (e.g., `John` not `John `).
+1. Please make sure that the ORCID is valid and in the correct format (e.g., `0000-0002-1825-0097`).
+:::
+
+## How to check and fix a failed validation?
+
+<Steps>
+
+  1. Click on a red validation badge (e.g. `invenio`) to explore the test results.
+  2. Click on the **Tests** tab (1) and next on **validate-invenio** (2) to see the results of each individual test performed in the `invenio` validation.
+  
+      ![](@images/arc-publications/cqc-results-2.drawio.png)
+
+  3. Next you see a list of passed and failed tests. Click on "View Details" (3) for a failed test to see the details of the test.
+
+      ![](@images/arc-publications/cqc-results-3.drawio.png)
+
+  4. Return to your local ARC and fix the issues based on the information displayed in the test details. For example, if a person does not have a first name, add it to the investigation metadata.
+
+</Steps>
 
 
 
