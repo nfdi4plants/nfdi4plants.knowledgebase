@@ -11,12 +11,14 @@ authors:
 
 import ViolaSays from '@components/ViolaSays.astro'
 import { Steps, Tabs, TabItem} from '@astrojs/starlight/components';
-import { Card } from '@astrojs/starlight/components';
 
 {/* Import contents */}
 
-import ARCitectInstallation from '@kb/arcitect-gx/installation.mdx'
-import ArcitectNewArc from "@kb/arcitect-gx/start-here/new-arc.mdx"
+import ARCitectGXInstallation from '@kb/arcitect-gx/installation.mdx'
+import ArcitectGXNewArc from "@kb/arcitect-gx/start-here/new-arc.mdx"
+
+import ARCitectInstallation from '@kb/arcitect/installation.mdx'
+import ArcitectNewArc from "@kb/start-here/arcitect/arcitect-new-arc.mdx"
 
 <ViolaSays>
 So, where do I start? What is an ARC? And how do I create one?
@@ -35,14 +37,11 @@ The easiest way to create a new ARC is via one of the ARC tools provided by Data
 ARCitect
 ARCitect-GX
 
+## ARCitect installation
 
 <Tabs syncKey="arcitect">
-<TabItem label="ARCitect-GX" icon='rocket'>
+<TabItem label="ARCitect" icon='approve-check'>
 
-## ARCitect-GX installation
-
-
-<Card title="ARCitect-GX installation" icon="setting">
 
 If ARCitect is not yet installed on your computer, 
 
@@ -53,16 +52,39 @@ If ARCitect is not yet installed on your computer,
 
 </details>
 
-</Card>
+</TabItem>
 
+
+<TabItem label="ARCitect-GX" icon='random'>
+
+If ARCitect-GX is not yet installed on your computer, 
+
+<details>
+<summary>please follow these instructions to install ARCitect</summary>
+
+  <ARCitectGXInstallation />
+
+</details>
+
+</TabItem>
+
+</Tabs>
 
 ## Create a new ARC
 
-<Card icon="pen" title="ARCitect-GX">
+<Tabs syncKey="arcitect">
+<TabItem label="ARCitect" icon='approve-check'>
+
   <ArcitectNewArc />
-</Card>
 
 </TabItem>
+
+<TabItem label="ARCitect-GX" icon='random'>
+
+  <ArcitectGXNewArc />
+
+</TabItem>
+
 </Tabs>
 
 :::note[Your ARC's name]

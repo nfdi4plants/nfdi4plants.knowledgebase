@@ -11,11 +11,13 @@ authors:
 {/* Import components */}
 
 import ViolaSays from '@components/ViolaSays.astro'
-import { Card } from '@astrojs/starlight/components';
+import { Tabs, TabItem} from '@astrojs/starlight/components';
 
 {/* Import contents */}
 
-import ArcitectInvestigation from "@kb/arcitect-gx/start-here/investigation.mdx"
+import ArcitectGXInvestigation from "@kb/arcitect-gx/start-here/investigation.mdx"
+import ArcitectInvestigation from "@kb/start-here/arcitect/arcitect-investigation.mdx"
+
 
 <ViolaSays>
 Now that I have an ARC, I want to add my data. The investigation file seems to be the most top level. Let's start there!
@@ -29,8 +31,14 @@ So no lab work here, just some metadata. Let's see how this works.
 
 ![](@images/start-here/arc-prototypic.svg)
 
-<Card icon="pen" title="ARCitect-GX">
-  <ArcitectInvestigation />  
-</Card>
 
+<Tabs syncKey="arcitect">
+  <TabItem label="ARCitect" icon='approve-check'>
+        <ArcitectInvestigation />  
+  </TabItem>
+
+  <TabItem label="ARCitect-GX" icon='random'>
+      <ArcitectGXInvestigation />
+  </TabItem>
+</Tabs>
 
