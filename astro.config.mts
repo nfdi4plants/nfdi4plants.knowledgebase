@@ -451,14 +451,14 @@ export default defineConfig({
             id: "workshops",
             items: [
               "workshops",
-
               {
-                label: "FDM-Werkstatt 2026",
+                label: "Boosting Biodata Bootcamp 2026",
                 collapsed: true,
+                // badge: {text: "Latest", variant: "note"},
                 items: [
                   {
                     autogenerate: {
-                      directory: "workshops/2026-fdm-werkstatt",
+                      directory: "workshops/2026-09_boosting-biodata-bootcamp",
                     },
                   },
                 ],
@@ -466,7 +466,6 @@ export default defineConfig({
               {
                 label: "PlantAI Summer School 2026",
                 collapsed: true,
-                badge: {text: "GX", variant: "caution"},
                 items: [
                   {
                     autogenerate: {
@@ -475,13 +474,14 @@ export default defineConfig({
                   },
                 ],
               },
+
               {
-                label: "Boosting Biodata Bootcamp 2026",
+                label: "FDM-Werkstatt 2026",
                 collapsed: true,
                 items: [
                   {
                     autogenerate: {
-                      directory: "workshops/2026-09_boosting-biodata-bootcamp",
+                      directory: "workshops/2026-fdm-werkstatt",
                     },
                   },
                 ],
