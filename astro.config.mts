@@ -451,6 +451,29 @@ export default defineConfig({
             id: "workshops",
             items: [
               "workshops",
+              {
+                label: "Boosting Biodata Bootcamp 2026",
+                collapsed: true,
+                // badge: {text: "Latest", variant: "note"},
+                items: [
+                  {
+                    autogenerate: {
+                      directory: "workshops/2026-09_boosting-biodata-bootcamp",
+                    },
+                  },
+                ],
+              },
+              {
+                label: "PlantAI Summer School 2026",
+                collapsed: true,
+                items: [
+                  {
+                    autogenerate: {
+                      directory: "workshops/2026-08_trr175-summer-school-gx",
+                    },
+                  },
+                ],
+              },
 
               {
                 label: "FDM-Werkstatt 2026",
@@ -459,18 +482,6 @@ export default defineConfig({
                   {
                     autogenerate: {
                       directory: "workshops/2026-fdm-werkstatt",
-                    },
-                  },
-                ],
-              },
-              {
-                label: "PlantAI Summer School 2026",
-                collapsed: true,
-                badge: {text: "GX", variant: "caution"},
-                items: [
-                  {
-                    autogenerate: {
-                      directory: "workshops/2026-08_trr175-summer-school-gx",
                     },
                   },
                 ],
@@ -499,9 +510,6 @@ export default defineConfig({
             ],
           },
         ],
-        {
-            exclude: ["**/2026-08_trr175-summer-school/**"]
-          },      
       ),
       ],
       expressiveCode: {

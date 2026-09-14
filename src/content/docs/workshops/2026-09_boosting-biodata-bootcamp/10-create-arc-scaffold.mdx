@@ -1,0 +1,124 @@
+---
+title: Create an ARC
+sidebar:
+  order: 1
+authors:
+  - dominik-brilhaus
+  - lukas-weil
+---
+
+{/* Import components */}
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Icon, Card, CardGrid, Steps, Tabs, TabItem} from '@astrojs/starlight/components';
+
+{/* Import contents */}
+
+import ARCitectGXInstallation from '@kb/arcitect-gx/installation.mdx'
+import ArcitectGXNewArc from "@kb/arcitect-gx/start-here/new-arc.mdx"
+
+import ARCitectInstallation from '@kb/arcitect/installation.mdx'
+import ArcitectNewArc from "@kb/start-here/arcitect/arcitect-new-arc.mdx"
+
+<ViolaSays>
+So, where do I start? What is an ARC? And how do I create one?
+</ViolaSays>
+
+An ARC represents an entire investigation. At the top level, it includes directories named “studies,” “assays,” “workflows,” and “runs,” along with an investigation metadata table that holds all administrative metadata.
+
+It follows a very specific structure to be easily readable by machines 🤖. While it can be created by hand it is faster to use some tooling!
+
+![](@images/start-here/arc-scaffold.svg)
+
+## Choose your training track
+
+The easiest way to create a new ARC is via one of the ARC tools provided by DataPLANT. 
+
+As of September 2026, two parallel ARC tools are being maintained as the main user tool.
+
+<CardGrid>
+  <Card title="ARCitect" icon="approve-check">
+    - Most stable
+    - Most feature complete
+    - Will be replaced in the future
+
+    :::tip[Comfy space]
+    Choose this, if you want things to work mostly as described.
+    :::
+
+  </Card>
+
+  <Card title="ARCitect-GX" icon="random">
+    - Latest developments
+    - Not fully user-ready
+    - Not yet all features implemented
+
+    :::tip[Beta-tester]
+    Choose this, if you're ok with possible bugs and trouble-shooting.
+    :::
+
+
+  </Card>
+</CardGrid>
+
+Choose and follow one of these tracks by selecting the respective tab in the following guides. 
+
+
+## ARCitect installation
+
+<Tabs syncKey="arcitect">
+<TabItem label="ARCitect" icon='approve-check'>
+
+
+If ARCitect is not yet installed on your computer, 
+
+<details>
+<summary>please follow these instructions to install ARCitect</summary>
+
+  <ARCitectInstallation />
+
+</details>
+
+</TabItem>
+
+
+<TabItem label="ARCitect-GX" icon='random'>
+
+If ARCitect-GX is not yet installed on your computer, 
+
+<details>
+<summary>please follow these instructions to install ARCitect</summary>
+
+  <ARCitectGXInstallation />
+
+</details>
+
+</TabItem>
+
+</Tabs>
+
+## Create a new ARC
+
+<Tabs syncKey="arcitect">
+<TabItem label="ARCitect" icon='approve-check'>
+
+  <ArcitectNewArc />
+
+</TabItem>
+
+<TabItem label="ARCitect-GX" icon='random'>
+
+  <ArcitectGXNewArc />
+
+</TabItem>
+
+</Tabs>
+
+:::note[Your ARC's name]
+
+By default, your ARC's name will be used:
+
+1. For the **ARC folder** on your computer.
+2. As the **investigation identifier**. 
+:::
+

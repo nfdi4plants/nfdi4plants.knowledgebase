@@ -9,18 +9,21 @@ authors:
   - kevin-frey
 ---
 
+
 {/* Import components */}
 
 import ViolaSays from '@components/ViolaSays.astro'
-import { Card } from '@astrojs/starlight/components';
-import { Steps } from '@astrojs/starlight/components';
-import { FileTree } from '@astrojs/starlight/components';
+import { Tabs, TabItem, Steps, FileTree } from '@astrojs/starlight/components';
 import Mermaid from '@components/mdx/Mermaid.astro'
 
 {/* Import contents */}
 
+import ArcitectGXStudy from "@kb/arcitect-gx/start-here/add-study.mdx"
+import ArcitectGXProtocol from "@kb/arcitect-gx/start-here/add-protocol.mdx"
+
 import ArcitectStudy from "@kb/start-here/arcitect/arcitect-add-study.mdx"
 import ArcitectProtocol from "@kb/start-here/arcitect/arcitect-add-protocol.mdx"
+
 import SwateSamples from "@kb/start-here/swate/swate-samples.mdx"
 import SwateProtocol from "@kb/start-here/swate/swate-protocol.mdx"
 import SwateCharacteristic from "@kb/start-here/swate/swate-characteristic.mdx"
@@ -39,9 +42,19 @@ With **studies** you can describe materials and resources. In this Violas-PhD-Pr
 
 ## Create a new study
 
-<Card icon="pen" title="ARCitect">
-  <ArcitectStudy />
-</Card>
+<Tabs syncKey="arcitect">
+  <TabItem label="ARCitect" icon='approve-check'>
+  
+    <ArcitectStudy />
+
+  </TabItem>
+
+  <TabItem label="ARCitect-GX" icon='random'>
+
+    <ArcitectGXStudy />
+    
+  </TabItem>
+</Tabs>
 
 ## Protocols
 
@@ -54,9 +67,19 @@ You can use the protocol subdirectory to store free-text protocols that describe
 ![](@images/start-here/arc-prototypic-study-identify.svg)
 
 
-<Card icon="pen" title="ARCitect">
-  <ArcitectProtocol />
-</Card>
+<Tabs syncKey="arcitect">
+  <TabItem label="ARCitect" icon='approve-check'>
+  
+    <ArcitectProtocol />
+
+  </TabItem>
+
+  <TabItem label="ARCitect-GX" icon='random'>
+
+    <ArcitectGXProtocol />
+    
+  </TabItem>
+</Tabs>
 
 
 ## Add samples to your study
@@ -69,9 +92,7 @@ Structured metadata annotation in the ARC is mostly achieved via spreadsheet tab
 
 Let us start by adding the samples to the study.
 
-<Card icon="pen" title="ARCitect">
-  <SwateSamples />  
-</Card>
+<SwateSamples />  
 
 ## Referencing the protocol
 
@@ -80,9 +101,7 @@ We reference the protocol in the annotation table to say:
 
 > Plant "Cold1" results in sample "Cold1_leaf" by applying the protocol to it.
 
-<Card icon="pen" title="ARCitect">
-  <SwateProtocol />
-</Card>
+<SwateProtocol />
 
 :::tip
 While it is recommended to store the protocol in an open format (`.md`, `.txt`, `.docx`, …), everything is possible also an URL to an electronic lab notebook.
@@ -166,9 +185,7 @@ Then we need to put this information into context:
 
 ## Add characteristics
 
-<Card icon="pen" title="ARCitect">
-  <SwateCharacteristic />
-</Card>
+<SwateCharacteristic />
 
 ## Add a parameter with a unit
 
@@ -178,9 +195,7 @@ Parameters works just like Characteristics, right? But they also contain numbers
 
 Yes, you are right! Parameters are similar to Characteristics. To use units you can simply select the `Unit` toggle during the `Add building block` step and then insert the value in the table afterwards.
 
-<Card icon="pen" title="ARCitect">
-  <SwateParameter />
-</Card>
+<SwateParameter />
 
 ## Add a factor building block
 
@@ -190,22 +205,16 @@ So what do i do with "temperature"? My experiment revolves around this specific 
 
 In this case, you can use a `Factor` building block. Factors are used to describe the experimental conditions that are manipulated in an experiment.
 
-<Card icon="pen" title="ARCitect">
-  <SwateFactor />
-</Card>
+<SwateFactor />
 
 
 ## Show ontology information
 
-<Card icon="pen" title="ARCitect">
-  <SwateOntologyInfo />
-</Card>
+<SwateOntologyInfo />
 
 
 ## Re-organize the annotation table
 
 If the order of the building blocks needs to be adjusted, you can delete or move them from your annotation table.
 
-<Card icon="pen" title="ARCitect">
-  <SwateTableEdit />
-</Card>
+<SwateTableEdit />

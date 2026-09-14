@@ -13,14 +13,19 @@ authors:
 {/* Import components */}
 
 import ViolaSays from '@components/ViolaSays.astro'
-import { Card } from '@astrojs/starlight/components';
 import Mermaid from '@components/mdx/Mermaid.astro'
 import {ParentChild} from '@components/mdx/ParentChild.mdx'
+import { Tabs, TabItem, Steps, FileTree } from '@astrojs/starlight/components';
+
 
 {/* Import contents */}
 
 import ArcitectAddAssay from "@kb/start-here/arcitect/arcitect-add-assay.mdx"
 import ArcitectAddDatasetProtocol from "@kb/start-here/arcitect/arcitect-add-dataset-protocol.mdx"
+
+import ArcitectGXAddAssay from "@kb/arcitect-gx/start-here/add-assay.mdx"
+import ArcitectGXAddDatasetProtocol from "@kb/arcitect-gx/start-here/add-dataset-protocol.mdx"
+
 import SwateAddAnnotationTable from "@kb/start-here/swate/swate-table-add.mdx"
 import SwateUseTemplate from "@kb/start-here/swate/swate-use-template.mdx"
 import SwateUseTemplate2 from "@kb/start-here/swate/swate-use-template2.mdx"
@@ -49,10 +54,15 @@ Then let's start with the "Sugar Measurement" assay.
 
 ### Add a new assay
 
-
-<Card icon="pen" title="ARCitect">
+<Tabs syncKey="arcitect">
+  <TabItem label="ARCitect" icon='approve-check'>
     <ArcitectAddAssay />
-</Card>
+  </TabItem>
+
+  <TabItem label="ARCitect-GX" icon='random'>
+    <ArcitectGXAddAssay />    
+  </TabItem>
+</Tabs>
 
 
 ### Separate different assay elements
@@ -66,9 +76,16 @@ import IMG2 from "@images/start-here/arc-prototypic-assay-modular2.svg"
 
 ### Add assay data and protocols
 
-<Card icon="pen" title="ARCitect">
+<Tabs syncKey="arcitect">
+  <TabItem label="ARCitect" icon='approve-check'>
     <ArcitectAddDatasetProtocol />
-</Card>
+  </TabItem>
+
+  <TabItem label="ARCitect-GX" icon='random'>
+    <ArcitectGXAddDatasetProtocol />
+  </TabItem>
+</Tabs>
+
 
 
 ### Isolate the lab processes in an assay
@@ -79,9 +96,7 @@ import IMG from "@images/start-here/arc-prototypic-assay-modular1.svg"
 
 <img src={IMG.src} style="width:70%; display: block; margin: auto;" />
 
-<Card icon="pen" title="ARCitect">
-    <SwateAddAnnotationTable />
-</Card>
+<SwateAddAnnotationTable />
 
 ### Use templates to describe the lab processes
 
@@ -98,9 +113,7 @@ Similar to the study example, we can parameterize the individual process steps, 
 
 Instead of adding each individual building block to the table, we can use a generic template for a sugar extraction.
 
-<Card icon="pen" title="ARCitect">
-    <SwateUseTemplate />    
-</Card>
+<SwateUseTemplate />
 
 #### Sugar measurement
 
@@ -108,9 +121,7 @@ Instead of adding each individual building block to the table, we can use a gene
 
 We follow the same steps to fill the **Sugar Measurement** table.
 
-<Card icon="pen" title="ARCitect">
-    <SwateUseTemplate2 />    
-</Card>
+<SwateUseTemplate2 />
 
 
 ## Linking samples to data – across studies and assays

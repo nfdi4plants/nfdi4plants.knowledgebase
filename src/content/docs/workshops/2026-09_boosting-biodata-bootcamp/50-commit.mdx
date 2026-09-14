@@ -11,12 +11,17 @@ authors:
 {/* Import components */}
 
 import ViolaSays from '@components/ViolaSays.astro'
-import { Steps } from '@astrojs/starlight/components';
+import { Tabs, TabItem, Steps, FileTree } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
 
 {/* Import contents */}
 
 import DataHUBAccount from '@kb/datahub/account/index.mdx'
+
+import ArcitectGXLogin from "@kb/arcitect-gx/start-here/login.mdx"
+import ArcitectGXCommit from "@kb/arcitect-gx/start-here/commit.mdx"
+import ArcitectGXCommit2 from "@kb/arcitect-gx/start-here/commit2.mdx"
+
 import ArcitectLogin from "@kb/start-here/arcitect/arcitect-login.mdx"
 import ArcitectCommit from "@kb/start-here/arcitect/arcitect-commit.mdx"
 import ArcitectHistory from "@kb/start-here/arcitect/arcitect-history.mdx"
@@ -46,33 +51,48 @@ If you do not have an account, please register with DataPLANT to use the PLANTDa
 The ARC comes with a mechanism to track changes. This version control is based on [git](/nfdi4plants.knowledgebase/fundamentals/version-control-git). Briefly, snapshots of an ARC are called `Commits`. Every Commit is encoded with the information on **who** made the change and **when** and it is accompanied with a note, i.e. a "Commit message" that allows the user to communicate what was changed.
 
 :::note
-Commits would usually be done more frequently along the previous steps described in this `start here` guide.
+Commits would usually be done more frequently along the previous steps described in this guide.
 :::
 
 ### Login to DataHUB
 
-In order to retreive your user information and associate it with your commits, you need to login to the DataHUB.
+In order to retrieve your user information and associate it with your commits, you need to login to the DataHUB.
 
-<Card icon="pen" title="ARCitect">
+<Tabs syncKey="arcitect">
+
+  <TabItem label="ARCitect" icon='approve-check'>
     <ArcitectLogin />
-</Card>
+  </TabItem>
+
+  <TabItem label="ARCitect-GX" icon='random'>
+    <ArcitectGXLogin />    
+  </TabItem>
+
+</Tabs>
+
 
 ### Commit your changes
 
 The commit menu allows you to "commit" your changes locally. This saves the changes of your local ARC together with your DataHUB credentials (Name and eMail).
 
-<Card icon="pen" title="ARCitect">
+<Tabs syncKey="arcitect">
+
+  <TabItem label="ARCitect" icon='approve-check'>
     <ArcitectCommit />
-</Card>
 
+    ### Follow your changes
 
-### Follow your changes
+    In the History menu you can inspect your ARC history with all commit messages.
 
-In the History menu you can inspect your ARC history with all commit messages.
-
-<Card icon="pen" title="ARCitect">
     <ArcitectHistory />
-</Card>
+  </TabItem>
+
+  <TabItem label="ARCitect-GX" icon='random'>
+    <ArcitectGXCommit />    
+  </TabItem>
+
+</Tabs>
+    
 
 ## Try it yourself – add messages to communicate your ARC's evolution
 
@@ -107,6 +127,14 @@ We recommend adding a message that shortly summarizes, what you did since you la
 </Steps>
 
 
-<Card icon="pen" title="ARCitect">
+<Tabs syncKey="arcitect">
+
+  <TabItem label="ARCitect" icon='approve-check'>
     <ArcitectCommit2 />
-</Card>
+  </TabItem>
+
+  <TabItem label="ARCitect-GX" icon='random'>
+    <ArcitectGXCommit2 />    
+  </TabItem>
+
+</Tabs>
