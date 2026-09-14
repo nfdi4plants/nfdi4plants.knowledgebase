@@ -475,6 +475,17 @@ export default defineConfig({
                   },
                 ],
               },
+              {
+                label: "Boosting Biodata Bootcamp 2026",
+                collapsed: true,
+                items: [
+                  {
+                    autogenerate: {
+                      directory: "workshops/2026-09_boosting-biodata-bootcamp",
+                    },
+                  },
+                ],
+              },
             ],
           },
 
@@ -499,9 +510,6 @@ export default defineConfig({
             ],
           },
         ],
-        {
-            exclude: ["**/2026-08_trr175-summer-school/**"]
-          },      
       ),
       ],
       expressiveCode: {

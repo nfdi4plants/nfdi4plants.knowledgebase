@@ -1,0 +1,39 @@
+---
+title: – Check-point 2 –
+sidebar:
+  order: 6.5
+  attrs: { style: 'font-style: italic; color: grey; padding-left: 10%'}
+authors:
+  - dominik-brilhaus
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import BotSays from '@components/BotSays.astro'
+import { Card, LinkButton} from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+
+<ViolaSays>
+✔︎ I've added measurement data as an assay  
+✔︎ I've uploaded my ARC to the DataHUB to have a version-controlled save copy.  
+✔︎ I've shared the ARC with colleagues, so they can explore my findings and contribute.   
+</ViolaSays>
+
+The ARC now looks like this:
+
+import ViolasARC2 from '@components/mdx/ViolasARC-checkpoint2.mdx'
+
+<ViolasARC2 />
+
+<BotSays>
+Alright, now we've got some data to work with. It's just not quite clear to me, which columns in "sugar_result.csv" contain the results for which plant samples.
+</BotSays>
+
+
+<Card title="Download Check-point" icon="gitlab">
+If needed, you can download the ARC at this stage 
+  <LinkButton
+    href="https://git.nfdi4plants.org/training/trr175-plantai-summerschool/AthalianaColdStressSugar-CheckPoint2/-/archive/main/AthalianaColdStressSugar-CheckPoint2-main.zip?ref_type=heads"
+  >
+    Download Check-point 2 ARC
+  </LinkButton>
+</Card>
