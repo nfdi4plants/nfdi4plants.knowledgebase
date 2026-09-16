@@ -1,6 +1,6 @@
 # Contribution Guide
 
-Your contribution to the DataPLANT Knowledge Base is highly appreciated. This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones. For changes and suggestions, feel free to open a GitHub issue or pull request.
+Your contribution to the ARC Knowledge Base is highly appreciated. This guide is intended to show you how to contribute new articles and tutorials or review and adapt parts of existing ones. For changes and suggestions, feel free to open a GitHub issue or pull request.
 
 
 - [Setup](#setup)
@@ -31,7 +31,7 @@ Your contribution to the DataPLANT Knowledge Base is highly appreciated. This gu
 
 ## Setup
 
-The DataPLANT Knowledge Base is built on [astro starlight](https://starlight.astro.build). Many features not covered here specifically may be found in their docs.
+The ARC Knowledge Base is built on [astro starlight](https://starlight.astro.build). Many features not covered here specifically may be found in their docs.
 
 Starlight itself builds on [Astro](https://astro.build). Please check out [their website](https://docs.astro.build/en/install-and-setup/) for detailed installation instructions.
 

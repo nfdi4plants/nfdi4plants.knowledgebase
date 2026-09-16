@@ -1,8 +1,8 @@
-# DataPLANT Knowledge Base
+# ARC Knowledge Base
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18161503.svg)](https://doi.org/10.5281/zenodo.18161503) [![CC BY 4.0][cc-by-shield]][cc-by]
 
-Welcome to the [DataPLANT knowledge base](https://nfdi4plants.org/nfdi4plants.knowledgebase/index.html)! 👋
+Welcome to the [ARC Knowledge Base](https://nfdi4plants.org/nfdi4plants.knowledgebase/index.html)! 👋
 
 This knowledge base combines articles on
 - **fundamental** topics on research data management (RDM) and
@@ -10,7 +10,7 @@ This knowledge base combines articles on
 
 ## Feedback & Contribution
 
-The DataPLANT knowledge base is a community effort and improves with every feedback we receive from readers and users.
+The ARC Knowledge Base is a community effort and improves with every feedback we receive from readers and users.
 **Your contribution is highly appreciated** no matter how little it may seem!
 
 If you just want to ask a question, recommend missing topics or tutorials, raise awareness for inconsistencies, typos, missing links, errors in training materials or tutorials, feel free to

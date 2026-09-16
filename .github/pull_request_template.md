@@ -1,4 +1,4 @@
-# Thank you for contributing to the DataPLANT Knowledge Base :rocket:
+# Thank you for contributing to the ARC Knowledge Base :rocket:
 
 ## Please make sure that
 
