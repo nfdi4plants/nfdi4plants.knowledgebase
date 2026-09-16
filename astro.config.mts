@@ -91,7 +91,7 @@ export default defineConfig({
           },
           {
             label: "Annotation Use-Cases",
-            icon: "pencil",
+            icon: "translate",
             link: "/arc-use-cases/",
             items: [
               {
@@ -439,7 +439,7 @@ export default defineConfig({
           },
           {
             label: "FAQs",
-            icon: "comment",
+            icon: "question",
             link: "faqs",
             items: ["faqs"],
           },         
@@ -505,9 +505,13 @@ export default defineConfig({
                   },
                 ],
               },
-
-              "contribution",
             ],
+          },
+          {
+            label: "Your Contribution",
+            icon: "pen",
+            link: "contribution",
+            items: ["contribution"]
           },
         ],
       ),
