@@ -1,6 +1,6 @@
 ---
 title: elab2ARC
-lastUpdated: 2024-11-28
+lastUpdated: 2026-10-13
 description: elab2ARC is a tool for converting eLabFTW experiment data into ARC format.
 authors: 
   - xiaoran-zhou
@@ -9,7 +9,12 @@ authors:
 
 import { Steps } from '@astrojs/starlight/components';
 
-[elab2ARC](http://nfdi4plants.org/elab2arc) is a tool for converting [eLabFTW](https://www.elabftw.net/) experiments into [Annotated Research Context (ARC)](/nfdi4plants.knowledgebase/core-concepts/arc/) format. It allows researchers to easily fetch experiment data from eLabFTW instances and update or push these files to DataHUB in ARC format. The application streamlines the management of data from lab experiments to repositories, improving efficiency in scientific data handling.
+[elab2ARC](https://nfdi4plants.org/elab2arc/) is a browser-based tool for converting [eLabFTW](https://www.elabftw.net/) experiments and resources into the [Annotated Research Context (ARC)](/nfdi4plants.knowledgebase/core-concepts/arc/) format. It retrieves protocols, administrative metadata and attachments via the eLabFTW API, organises them into an ISA-compliant ARC and pushes the result to the DataHUB or another Git host.
+
+- **Tool:** [nfdi4plants.org/elab2arc](https://nfdi4plants.org/elab2arc/)
+- **Source code:** [github.com/nfdi4plants/elab2arc](https://github.com/nfdi4plants/elab2arc) (GPL-3.0)
+- **Try it without registration:** [elab2arc-review.dataplan.top](https://elab2arc-review.dataplan.top) provides one-click access with demo eLabFTW and DataHUB accounts
+- **Publication:** Zander S, Zhou X et al. (2026) elab2ARC: A browser-based workspace for converting free-text protocols into rich FAIR digital objects. bioRxiv. [doi:10.64898/2026.05.14.724833](https://doi.org/10.64898/2026.05.14.724833)
 
 ## Why is elab2ARC needed?
 
@@ -17,27 +22,31 @@ Many researchers rely on [electronic lab notebooks (ELNs)](/nfdi4plants.knowledg
 
 ARC offers robust metadata annotation tools and customizable templates that help standardize the unstructured content typically found in ELNs. Additionally, ARC supports large files up to 10 GB, making it an excellent complement to ELNs like eLabFTW, which are not designed to handle raw data storage or larger file sizes.
 
-Manually transferring metadata from ELNs to ARC can be both error-prone and time-consuming. To address this challenge, elab2ARC provides an efficient solution by automating the extraction, transformation, and loading (ETL) of data from ELN records into ARC-compliant structures. This tool streamlines the process, reduces errors, and ensures consistency, enhancing research data management workflows.
+Manually transferring metadata from ELNs to ARC can be both error-prone and time-consuming. elab2ARC automates this step. It is designed to be used **when a project (or a part of it) is completed**: you keep documenting in eLabFTW as usual and convert the finished entries into an ARC with a few clicks, without changing your daily lab routine.
 
 ## Features of elab2ARC
 
-**elab2ARC** simplifies converting eLabFTW experiment data into Annotated Research Context (ARC) format. Key features include:
-
-- **Direct Data Retrieval**: Extracts experiment data from eLabFTW using experiment IDs and API keys.
-- **ARC Conversion**: Transforms data into ARC format, organizing protocols, datasets, and metadata.
-- **DataHub Integration**: Automates ARC file updates and pushes them to a DataHub repository.
-- **Multi-Instance Support**: Manages data from multiple eLabFTW instances seamlessly.
-
-These features streamline workflows, ensuring efficient and standardized data management.
+- **Experiments and resources**: converts eLabFTW experiments as well as resources (e.g. samples, reagents, equipment).
+- **ARC conversion**: each entry becomes an assay (or study) with protocol, dataset and ISA metadata.
+- **Runs in your browser**: retrieval, conversion and Git operations happen client-side; no installation is needed.
+- **Optional LLM-assisted annotation**: a large language model can turn free-text protocols into ISA annotation tables (samples, process steps, parameters) as an editable draft.
+- **Flexible targets**: pushes to the DataHUB by default; custom GitLab instances and GitHub are also supported.
+- **Version history**: every conversion is a Git commit, so re-converting an entry never silently overwrites earlier states.
+- **Other input formats**: besides eLabFTW, HTML or Markdown files (also several files in a ZIP archive) can be used as input via the advanced settings.
+- **Multi-instance support**: works with any eLabFTW instance you have access to.
+- **Self-hosting**: a Dockerfile and docker-compose configuration are available in the repository.
 
 ## Setting up Tokens for elab2ARC
 
-
-### Create an Personal Access Token in DataHUB
+### Create a Personal Access Token in DataHUB
 
 import DataHubPat from '../datahub/access-tokens/datahub-personal-access-token.mdx'
 
 <DataHubPat />
+
+:::tip
+If you are already logged into the DataHUB in the same browser, elab2ARC can fetch the token for you via **Get a token**.
+:::
 
 ### Create an eLabFTW API key
 
@@ -54,56 +63,89 @@ import DataHubPat from '../datahub/access-tokens/datahub-personal-access-token.m
 
 ## How to use elab2ARC 
 
-Open the tools page: [elab2ARC](http://nfdi4plants.org/elab2arc). 
+Open the tool: [elab2ARC](https://nfdi4plants.org/elab2arc/). 
 
-### Add Tokens
+### 1. Configure instance and tokens
 
+In the `Tokens` tab:
 
-- In the `Tokens tab`, select your eLabFTW Instance or add Instance [1]
-- Paste eLabFTW API key [2]
-- Paste DataHUB Project Access Token [3]
-    ![](@images/elab2arc/elab2arc-token-page.png)
+![](@images/elab2arc/elab2arc-token-page.png)
 
+- Select your eLabFTW instance from the drop-down list or add your own [1].
+- Paste your eLabFTW API key [2]. For the demo instance, **get a test api key** fills in a key automatically.
+- Paste your DataHUB token or click **get a token** [3]. To use another GitLab server or GitHub, tick **Use custom DataHub/GitLab instance**.
+- *(Optional)* Choose an **LLM API Provider** (see [LLM-assisted annotation](#optional-llm-assisted-annotation)).
+- Click **Save** [4].
 
+### 2. Select eLabFTW experiments and resources
 
-### Select eLabFTW experiment/resource
+In the `eLabFTW` tab, all experiments and resources you have access to are listed. Use the search field to filter.
 
+![](@images/elab2arc/elab2arc-home-page.png)
 
-- In the `Home tab`, select [1] your eLabFTW Experiment/Resource or enter the corresponding ID [2]. Use commas to separate multiple IDs.  
-    ![](@images/elab2arc/elab2arc-home-page.png)
-- Click **Submission** [3] to fetch entries. 
-- **Check Status** [4] provides detailed information about the submission. 
-- **Preview** [5] opens the `eLabFTW tab` and shows more information about the eLabFTW entry. Here you can also select linked Experiments/Resources for conversion. 
+- Click **Preview** to check an entry (main text, metadata, linked entries, attachments) before converting it.
+- Tick the entries you want to convert [5a]. Their IDs are added to the selection fields [5b]; you can also enter IDs there directly, separated by commas.
+- Click **Confirm eLabFTW Selection** [6].
 
+### 3. Select the target ARC and start the conversion
 
+In the `ARCs` tab:
 
-### Preview eLabFTW entry
-In the `eLabFTW tab`, you get detailed information about your eLabFTW entry.
-- Main text of the entry [1]
-- administrative Metadata [2]
-- linked Resources and Experiments [3]
-- and Attachments [4]
-![](@images/elab2arc/elab2arc-elabFTW-page.png)
-With the checkboxes, you can select entries for conversion. 
-
-
-### Select ARC & Start Conversion
-
-
-- In the `ARCs tab`, select the ARC into which the elabFTW entry should be converted. 
-- You can use an existing ARC by clicking the **Convert to assay** button [1] or create a new ARC with the **Create a new ARC** button [2]. 
-- Use **Start Conversion** button [3] to start the elab2ARC conversion. 
 ![](@images/elab2arc/elab2arc-arc-page.png)
 
+- Either enter a project name and click **Create a new ARC** [7a], or choose an existing ARC and click **Select assay**, **Select study** or **Select a specific ARC folder** [7b].
+- Check the **Target Path in ARC** (filled in automatically when selecting an assay or study).
+- *(Optional)* Switch on **Enable LLM Annotation Table** [9]. An **Edit Prompt** button then appears to adjust the prompt.
+- Click **Start Conversion** [8]. **Check Status** shows the progress.
+- *(Optional)* Use **Export ISA-JSON** to download the metadata as ISA-JSON.
 
 ## Conversion 
 
 ![](@images/elab2arc/elab2arc-output.png)
 
-The elab2ARC tool will automatically convert your elabFTW experiments into ARC format
-- create a new assay folder with eLabFTW experiment name as assay name (green)
+The elab2ARC tool will automatically convert your eLabFTW experiments into ARC format:
+- create a new assay folder with the eLabFTW experiment title as assay name (grey, dashed)
 - create the assay folder structure (dataset/protocols/isa.assay)
-- convert experiment main text into a .md file and store it in the protocol folder (purple)
-- add all attachments of the eLabFTW experiment into the dataset folder (yellow)
-- enter name/email/affiliation of the eLabFTW experiment metadata into the isa.assay sheet
+- convert the experiment main text into a Markdown file and store it in the protocols folder (blue)
+- add all attachments of the eLabFTW experiment to the dataset folder (orange), handled via Git LFS
+- enter the administrative metadata of the eLabFTW entry (e.g. ID, dates, author name/email/affiliation) into the `Assay` sheet of the isa.assay file (green)
+- *with the LLM option:* extract samples, process steps and parameters from the main text into additional annotation sheets of the isa.assay file (blue, bottom)
 
+The ARC is then committed and pushed to the selected repository. From there, you can add large raw data or analysis results, enrich the metadata, work on it with collaborators and finally [publish it with a DOI](/nfdi4plants.knowledgebase/arc-publications/).
+
+## Re-converting entries
+
+You can update an eLabFTW entry and convert it again into the same ARC:
+
+- Every conversion is stored as a new Git commit. The **Version History** panel shows what changed (line by line for Markdown and JSON files; for Excel files only *that* they changed).
+- Protocol files and attachments are regenerated from the current eLabFTW entry on each run.
+- LLM-generated annotation tables are kept if the LLM step is not run again.
+
+:::caution
+Make changes to protocols in eLabFTW, not directly in the ARC. Manual edits to protocol files in the ARC are overwritten by the next conversion of the same entry.
+:::
+
+## Optional: LLM-assisted annotation
+
+When enabled, elab2ARC sends the free-text protocol to a large language model, which extracts samples, process steps and parameters into ISA annotation tables.
+
+| Provider | Where does the protocol text go? |
+|---|---|
+| LM Studio / Ollama (local) | stays on your computer (the application must be running) |
+| Community server / remote API / custom endpoint | is sent to the selected service |
+
+- Before protocol text is sent to a non-local provider, elab2ARC asks for your explicit consent.
+- The extraction prompt can be edited via **Edit Prompt**.
+- The quality of the result depends on the model and on how detailed the ELN entry is. elab2ARC only extracts what is written down.
+
+:::caution
+For sensitive or unpublished data, use a local model (LM Studio or Ollama). Always review LLM-generated tables before publishing your ARC.
+:::
+
+## Troubleshooting
+
+- **"LLM extraction failed ..."**: the message names the reason (e.g. missing key, empty entry content, no parsable model output). The conversion continues without LLM tables.
+- **Empty or incomplete eLabFTW entries** are converted without error; the assay then contains only the available metadata.
+- **Push fails**: check that your DataHUB/GitLab/GitHub token is valid and has write access to the target repository.
+
+Bugs and feature requests: [GitHub issues](https://github.com/nfdi4plants/elab2arc/issues)
