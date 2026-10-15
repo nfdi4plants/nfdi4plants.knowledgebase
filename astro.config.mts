@@ -481,7 +481,7 @@ export default defineConfig({
                 items: [
                   {
                     autogenerate: {
-                      directory: "workshops/2026-fdm-werkstatt",
+                      directory: "workshops/2026-03-fdm-werkstatt",
                     },
                   },
                 ],
