@@ -1,0 +1,25 @@
+---
+title: – Check-point 1 –
+sidebar:
+  order: 3.5
+  attrs: { style: 'font-style: italic; color: grey; padding-left: 10%'}
+authors:
+  - dominik-brilhaus
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Card, LinkButton} from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+
+<ViolaSays>
+Done!   
+  ✔︎ I've created an ARC for my project  
+  ✔︎ I've added metadata about the overall investigation  
+  ✔︎ I've added a study to annotate my samples  
+</ViolaSays>
+
+The ARC now looks like this:
+
+import ViolasARC1 from '@components/mdx/ViolasARC-checkpoint1.mdx'
+
+<ViolasARC1 />
