@@ -20,11 +20,12 @@ import Mermaid from '@components/mdx/Mermaid.astro'
 
 import ArcitectGXStudy from "@kb/arcitect-gx/start-here/add-study.mdx"
 import ArcitectGXProtocol from "@kb/arcitect-gx/start-here/add-protocol.mdx"
+import ArcitectGXSamples from "@kb/arcitect-gx/start-here/samples.mdx"
 
 import ArcitectStudy from "@kb/start-here/arcitect/arcitect-add-study.mdx"
 import ArcitectProtocol from "@kb/start-here/arcitect/arcitect-add-protocol.mdx"
-
 import SwateSamples from "@kb/start-here/swate/swate-samples.mdx"
+
 import SwateProtocol from "@kb/start-here/swate/swate-protocol.mdx"
 import SwateCharacteristic from "@kb/start-here/swate/swate-characteristic.mdx"
 import SwateParameter from "@kb/start-here/swate/swate-parameter.mdx"
@@ -92,7 +93,20 @@ Structured metadata annotation in the ARC is mostly achieved via spreadsheet tab
 
 Let us start by adding the samples to the study.
 
-<SwateSamples />  
+
+<Tabs syncKey="arcitect">
+  <TabItem label="ARCitect" icon='approve-check'>
+  
+    <SwateSamples />
+
+  </TabItem>
+
+  <TabItem label="ARCitect-GX" icon='random'>
+
+    <ArcitectGXSamples />
+    
+  </TabItem>
+</Tabs>
 
 ## Referencing the protocol
 
