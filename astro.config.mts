@@ -467,6 +467,20 @@ export default defineConfig({
             link: "contribution",
             items: ["contribution"]
           },
+          {
+            label: "Start Here (Legacy)",
+            icon: "rocket",
+            link: "start-here-old",
+            id: "start-here-old",
+            items: [
+              {
+                autogenerate: {
+                  directory: "start-here-old",
+                },
+              },
+            ],
+          },
+
         ],
       ),
       ],
