@@ -4,7 +4,7 @@ lastUpdated: 2026-08-04
 authors:
   - dominik-brilhaus
 sidebar:
-    order: 1
+    order: 2
 ---
 
 import { Steps } from '@astrojs/starlight/components';
@@ -18,14 +18,11 @@ import MacOSPopup from "@images/arcitect/macos-popup-dev.png"
 import MacOSSecurity from "@images/arcitect/macos-security.png"
 import MacOSPopupNetwork from "@images/arcitect/macos-popup-network.png"
 
-:::caution[ARCitISA ~ SwateApp]
-As of October 2026, the ARCitISA app is still called "SwateApp". The name will be updated in future releases.
-Hence, you might see the name "Swate" in the app and in the installation instructions. Please do not be confused by this.
-:::
-
 ## Installing Git and Git LFS
 
+:::note
 ARCitISA depends on <a href="https://git-scm.com/downloads" target="_blank">Git</a> and <a href="https://git-lfs.com" target="_blank">Git LFS</a>. If not already installed, these need to be installed separately.
+:::
 
 <GitDownloadInstall />
 
@@ -37,9 +34,8 @@ ARCitISA depends on <a href="https://git-scm.com/downloads" target="_blank">Git<
 
         <Steps>
         1. Head to the ARCitISA's GitHub [release page](https://github.com/nfdi4plants/swate/releases/latest).
-        2. Under "Assets" Download the latest release for Windows (`Swate-x.x.x Setup.exe`).
-        3. In Windows Explorer, open the folder where you downloaded the ARCitISA and move the app (`Swate-x.x.x Setup.exe`) to another location (e.g. `Program files`).
-        5. Start the ARCitISA, by clicking the `Swate` application.
+        2. Under "Assets" download the latest release for Windows (`ARCitISA-x.x.x Setup.exe`).
+        3. In Windows Explorer, start `ARCitISA-x.x.x Setup.exe` to install `ARCitISA`
 
         6. Once started, you see a Windows Defender warning. To proceed, click `More info` and then `Run anyway`.
 
@@ -49,9 +45,6 @@ ARCitISA depends on <a href="https://git-scm.com/downloads" target="_blank">Git<
 
             ![](@images/arcitect/win-firewall.png)
 
-            :::tip
-            You might have to select the app from your taskbar.
-            :::
         </Steps>
 
     </TabItem>
@@ -62,9 +55,9 @@ ARCitISA depends on <a href="https://git-scm.com/downloads" target="_blank">Git<
 
         1. Head to the ARCitISA's GitHub <a href="https://github.com/nfdi4plants/swate/releases/latest" target="_blank">release page</a>.
 
-        2. Download the macOS installer `Swate-x.x.x.dmg` for your platform (Intel: x64 or Apple Silicon: arm64).
+        2. Download the macOS installer `ARCitISA-x.x.x.dmg` for your platform (Intel: x64 or Apple Silicon: arm64).
 
-        3. Double-click the installer `Swate-x.x.x.dmg` and move the app to your Applications folder.
+        3. Double-click the installer `ARCitISA-x.x.x.dmg` and move the app to your Applications folder.
 
         </Steps>
 
@@ -105,24 +98,24 @@ ARCitISA depends on <a href="https://git-scm.com/downloads" target="_blank">Git<
             :::
 
         2. Head to the ARCitISA's GitHub <a href="https://github.com/nfdi4plants/swate/releases/latest" target="_blank">release page</a>.
-        3. Download the Linux DEB package `Swate-x.x.x_amd64.deb`.
+        3. Download the Linux DEB package `ARCitISA-x.x.x_amd64.deb`.
         4. Install ARCitISA
 
             ```bash
-            sudo dpkg -i ./Swate-x.x.x_amd64.deb
+            sudo dpkg -i ./ARCitISA-x.x.x_amd64.deb
             ```
 
         5. Start the ARCitISA via
 
             ```bash
-            swate
+            arcitisa
             ```
 
             :::note[Admin privileges]
             `apt-get install` and `dpkg -i` often require admin privileges, since they write into system directories. You can circumvent this problem by local installations in folders where you have permission, e.g.
 
                 ```
-                dpkg-deb -x ./Swate-x.x.x_amd64.deb $HOME/arc
+                dpkg-deb -x ./ARCitISA-x.x.x_amd64.deb $HOME/arc
                 ```
 
                 would install the ARCitISA in a folder in your home directory. You can then add it to your path via
