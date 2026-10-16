@@ -73,7 +73,7 @@ export default defineConfig({
             icon: "rocket",
             link: "start-here",
             id: "start-here",
-            badge: {text: "ARCitect-GX!", variant: "note", },
+            badge: {text: "ARCitISA!", variant: "note", },
             items: [
               {
                 autogenerate: {
@@ -238,13 +238,13 @@ export default defineConfig({
                   },
                 ],
               },              {
-                label: "ARCitect-GX",
+                label: "ARCitISA",
                 badge: {text: "WIP", variant: "caution"},
                 collapsed: true,
                 items: [
                   {
                     autogenerate: {
-                      directory: "arcitect-gx",
+                      directory: "arcitisa",
                     },
                   },
                 ],
