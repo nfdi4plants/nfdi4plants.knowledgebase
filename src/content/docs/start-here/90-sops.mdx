@@ -1,7 +1,6 @@
 ---
 title: Apply standard procedures
-sidebar:
-  order: 7
+draft: true
 authors:
   - dominik-brilhaus
   - lukas-weil
@@ -19,8 +18,8 @@ import Mermaid from '@components/mdx/Mermaid.astro'
 {/* Import contents */}
 
 import SwateJson from "@kb/start-here/swate/swate-json-import.mdx"
-import ArcitectAssay2 from "@kb/start-here/arcitect/arcitect-add-assay2.mdx"
-import ArcitectVirtualAssay2 from "@kb/start-here/swate/arcitect-virtual-assay2.mdx"
+import ArcitectGXAssay2 from "@kb/arcitect-gx/start-here/add-assay2.mdx"
+import ArcitectGXVirtualAssay2 from "@kb/arcitect-gx/start-here/virtual-assay2.mdx"
 import Sop from "@images/start-here/arc-prototypic-assay-sop-proteomics.svg"
 
 <div style="display: flex;">
@@ -42,15 +41,11 @@ Follow the same steps as before to add two assays and sort the available demo da
 
 ### Proteomics – Mass Spectrometry
 
-<Card icon="pen" title="ARCitect">
+<ArcitectGXAssay2 />    
 
-    <ArcitectAssay2 />    
+Load the data annotation into the respective annotation tables
 
-    Load the data annotation into the respective annotation tables
-
-    <SwateJson />   
-
-</Card>
+<SwateJson />   
 
 Your assay now contains top-level metadata in the `Assay` sheet, including the "Measurement Type" and "Technology Type" and "Technology Platform". Furthermore, it includes two sheets called `ProtDigest` and `PeptideMS_Bruker` including the metadata records to describe the two processes of protein digest and the mass spectrometry measurement of peptides, respectively.
 
@@ -64,9 +59,7 @@ Your assay now contains top-level metadata in the `Assay` sheet, including the "
 
 Repeat the same for the "Proteomics Data Analysis" files.
 
-<Card icon="pen" title="ARCitect">
-    <ArcitectVirtualAssay2 />
-</Card>
+<ArcitectGXVirtualAssay2 />
 
 <ViolaSays>
     Again, I will have to complement the specific "Input" and "Output" columns for the identifiers in my ARC. 
