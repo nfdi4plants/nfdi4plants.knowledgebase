@@ -1,0 +1,57 @@
+---
+title: New ARC
+authors:
+ - dominik-brilhaus
+lastUpdated: 2026-08-04
+sidebar:
+  hidden: true
+## https://starlight-sidebar-topics.netlify.app/docs/guides/unlisted-pages/
+topic: start-here
+---
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+
+<Steps>
+
+1. Start the **ARCitISA** app.
+2. In the dropdown on top click on "Create new ARC".
+    
+    ![](@images/arcitisa/new-arc.png)
+
+
+3. Select an identifier for your ARC.
+
+    <ViolaSays>
+
+    To keep it simple, I call my ARC "AthalianaColdStressSugar"
+
+    </ViolaSays>
+
+    :::tip
+    - Use a short acronym  
+    - Avoid spaces and special characters in your ARC's name
+    - Avoid administrative metadata (name, data, etc.)
+    - Use a combination of keywords, maybe a grant number
+    :::
+
+4. Click `Create new ARC`
+5. Select a location and click "open".
+6. ARCitISA creates the base ARC folder on your computer and opens it right away.
+  
+    <FileTree>
+    - AthalianaColdStressSugar
+      - **notes**
+      - isa.investigation.xlsx
+      - **assays**
+      - **runs**
+      - **studies**
+      - **workflows**
+    </FileTree>
+
+    {/* :::note
+    The `isa.investigation.xlsx` is not displayed inside ARCitISA, but can be accessed by clicking on "AthalianaColdStressSugar" (in Viola's example).
+    ::: */}
+
+</Steps>
