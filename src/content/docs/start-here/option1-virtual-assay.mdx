@@ -1,0 +1,44 @@
+---
+title: Option I – Virtual assay
+lastUpdated: 2025-06-05
+sidebar:
+  order: 8.1
+  attrs: { style: 'padding-left: 10%'}
+authors:
+  - dominik-brilhaus
+  - lukas-weil
+---
+
+{/* Import components */}
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Card } from '@astrojs/starlight/components';
+
+
+{/* Import contents */}
+
+import ArcitectVirtualAssay from "@kb/start-here/swate/arcitect-virtual-assay.mdx"
+
+<ViolaSays>
+What if I have analyzed data in a way that is not perfectly reusable or reproducible – for instance when I use a proprietary software or a colleague helped with data analysis – but I would still want to store and annotate the data analysis in a way comprehensible to others? 
+</ViolaSays>
+
+## A computational workflow is like a protocol
+
+Just like laboratory workflows produce samples or data, computational workflows produce data. They represent the processing steps used in data analysis or data transformation. 
+
+import Workflows2 from "@images/start-here/arc-prototypic-workflows2.svg"
+
+<img src={Workflows2.src} style="width:70%; display: block; margin: auto;" />
+
+## Create a virtual assay
+
+A computational workflow can simply be treated as a protocol. This can be a summary of the steps followed in any data analysis software. Or it can be a script.
+Hence the data analysis can simply be packaged as an assay, with the computational workflow stored in `protocols` and the resulting data stored in `dataset`
+
+![](@images/start-here/arc-prototypic-workflows-virtual.svg)
+
+
+<Card icon="pen" title="ARCitect">
+    <ArcitectVirtualAssay />    
+</Card>
