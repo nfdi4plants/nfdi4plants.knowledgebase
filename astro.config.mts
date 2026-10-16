@@ -73,6 +73,7 @@ export default defineConfig({
             icon: "rocket",
             link: "start-here",
             id: "start-here",
+            badge: {text: "ARCitect-GX!", variant: "note", },
             items: [
               {
                 autogenerate: {
