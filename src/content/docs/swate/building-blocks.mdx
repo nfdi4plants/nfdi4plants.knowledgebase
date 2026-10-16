@@ -9,7 +9,6 @@ sidebar:
   order: 6
 ---
 
-import Icons from '@components/swate/Icons';
 import { Steps } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 import SwateOverview from '@images/swate/swate-alpha-overview.png'
@@ -26,7 +25,7 @@ Check out the ISA-XLSX specification to find out more about the individual build
 
 <Steps>
   <ol>
-    1. Click on "Add building block" (<Icons.CreateAnnotationTable />) in the <a href={SwateOverview.src} target="_blank">Sidebar</a> or <a href={SwateOverview.src} target="_blank">Widgets</a>.
+    1. Click on the "Add building block" button in the <a href={SwateOverview.src} target="_blank">Sidebar</a> or <a href={SwateOverview.src} target="_blank">Widgets</a>.
     2. Choose the type of building block you want to add, e.g. Parameter, Input, Factor... .
     3. If you chose a descriptive building block type, use the search field to [search for an ontology term](/nfdi4plants.knowledgebase/swate/term-search). This term, together with your building block type, describes your workflow. If you want to add a building block with a unit, activate the unit box and use the search field to look for a fitting unit term.
       
@@ -61,13 +60,13 @@ Check out the ISA-XLSX specification to find out more about the individual build
       <Tabs syncKey="swateHost">
       <TabItem label="Browser">
 
-        4. Click "Add column" (<Icons.BuildingBlock />) to insert the building block into an existing [Annotation Table](/nfdi4plants.knowledgebase/swate/annotation-table). 
+        4. Click the "Add column" button to insert the building block into an existing [Annotation Table](/nfdi4plants.knowledgebase/swate/annotation-table). 
         The new building block will be added after the selected column in the table. To change the position you can use the context menu.
 
         </TabItem>
         <TabItem label="Excel">
 
-        4. Click "Add column" (<Icons.BuildingBlock />) to insert the building block into an existing [Annotation Table](/nfdi4plants.knowledgebase/swate/annotation-table). 
+        4. Click the "Add column" button to insert the building block into an existing [Annotation Table](/nfdi4plants.knowledgebase/swate/annotation-table). 
         The new building block will be added after the selected column of the table. 
         When a column outside the table is selected or the worksheet contains no annotation table, "Add column" fails.
 

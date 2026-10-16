@@ -1,0 +1,71 @@
+---
+import AnnotationTableDemo from "@components/swate/AnnotationTableDemo";
+import "@nfdi4plants/swate-components/style.css";
+---
+
+<!doctype html>
+<html lang="en" data-theme="finster">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Annotation Table Playground</title>
+    <script is:inline>
+      const colorScheme = matchMedia('(prefers-color-scheme: light)');
+      let knowledgebaseRoot;
+      try {
+        if (window.parent !== window) {
+          knowledgebaseRoot = window.parent.document.documentElement;
+        }
+      } catch {
+        // A standalone or externally embedded page uses its own preference.
+      }
+
+      function updateTheme() {
+        let storedTheme;
+        try {
+          storedTheme = localStorage.getItem('starlight-theme');
+        } catch {
+          // System preference still works when browser storage is unavailable.
+        }
+        const theme = knowledgebaseRoot?.dataset.theme || storedTheme;
+        const isLight = theme === 'light' ||
+          (theme !== 'dark' && colorScheme.matches);
+        document.documentElement.dataset.theme = isLight ? 'sunrise' : 'finster';
+      }
+
+      updateTheme();
+      const observer = new MutationObserver(updateTheme);
+      if (knowledgebaseRoot) {
+        observer.observe(knowledgebaseRoot, {
+          attributes: true,
+          attributeFilter: ['data-theme'],
+        });
+      }
+      colorScheme.addEventListener('change', updateTheme);
+      window.addEventListener('storage', updateTheme);
+      window.addEventListener('pagehide', () => {
+        observer.disconnect();
+        colorScheme.removeEventListener('change', updateTheme);
+        window.removeEventListener('storage', updateTheme);
+      }, { once: true });
+    </script>
+  </head>
+  <body>
+    <AnnotationTableDemo client:only="react">
+      <p slot="fallback">Loading annotation table…</p>
+    </AnnotationTableDemo>
+    <noscript>Enable JavaScript to edit the annotation table.</noscript>
+  </body>
+</html>
+
+<style is:global>
+  html {
+    background: var(--color-base-100);
+    color: var(--color-base-content);
+    font-family: system-ui, sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+</style>
