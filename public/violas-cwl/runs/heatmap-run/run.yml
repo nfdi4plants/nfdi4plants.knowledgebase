@@ -1,4 +1,4 @@
 MeasurementTableCSV:
     class: File
-    path: ../../assays/SugarMeasurement/dataset/sugar_result.csv
+    path: ../../assays/SugarsPhotometer/dataset/sugar_result.csv
 FigureFileName: heatmap

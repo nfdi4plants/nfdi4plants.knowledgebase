@@ -91,7 +91,7 @@ end
 subgraph assay3[Assay3:Proteomics_DataAnalysis]
     d2 ---p6[PSM_Bruker_MaSuc]--> d3@{ shape: doc, label: combined_protein.fasta}
 end
-subgraph assay1[Assay1:SugarMeasurement]
+subgraph assay1[Assay1:SugarsPhotometer]
     s2 ---p2[SugarExtraction]--> s3[Sugar extract]
     s3 ---p3[SugarMeasurement]--> d1@{ shape: doc, label: sugar_result.csv}
 end

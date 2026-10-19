@@ -119,12 +119,12 @@ In this example we follow <Highlight>one line of highlighted samples</Highlight>
 
     | `Input` [Sample Name] | `ProtocolUri`                 | [...] | `Output` [Data]                                    |
     | --------------------- | ----------------------------- | ---   | -------------------------------------------------- |
-    | <Highlight>Cold1_sugar-ext</Highlight>       | ./protocols/sugar_measurement.md | ...   | <Highlight>./assays/SugarMeasurement/dataset/sugar_result.csv</Highlight> |
-    | Cold2_sugar-ext       | ./protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
-    | Cold3_sugar-ext       | ./protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
-    | RT1_sugar-ext         | ./protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
-    | RT2_sugar-ext         | ./protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
-    | RT3_sugar-ext         | ./protocols/sugar_measurement.md | ...   | ./assays/SugarMeasurement/dataset/sugar_result.csv |
+    | <Highlight>Cold1_sugar-ext</Highlight>       | ./protocols/sugar_measurement.md | ...   | <Highlight>./assays/SugarsPhotometer/dataset/sugar_result.csv</Highlight> |
+    | Cold2_sugar-ext       | ./protocols/sugar_measurement.md | ...   | ./assays/SugarsPhotometer/dataset/sugar_result.csv |
+    | Cold3_sugar-ext       | ./protocols/sugar_measurement.md | ...   | ./assays/SugarsPhotometer/dataset/sugar_result.csv |
+    | RT1_sugar-ext         | ./protocols/sugar_measurement.md | ...   | ./assays/SugarsPhotometer/dataset/sugar_result.csv |
+    | RT2_sugar-ext         | ./protocols/sugar_measurement.md | ...   | ./assays/SugarsPhotometer/dataset/sugar_result.csv |
+    | RT3_sugar-ext         | ./protocols/sugar_measurement.md | ...   | ./assays/SugarsPhotometer/dataset/sugar_result.csv |
 
     </NoWrapTable>
 
@@ -159,7 +159,7 @@ end
 
 subgraph assay1[Assay:SugarContent]
     s2 ---p2[SugarExtraction]--> s3[Sugar extracts]
-    s3 ---p3[SugarMeasurement]--> d1@{ shape: doc, label: sugar_result.csv}
+    s3 ---p3[SugarsPhotometer]--> d1@{ shape: doc, label: sugar_result.csv}
 end
 class study1 studyStyle;
 class assay1 assayStyle;
