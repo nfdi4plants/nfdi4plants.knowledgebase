@@ -39,10 +39,10 @@ You can have multiple assays in one ARC. Each assay can have its own metadata, d
 In general it is a good approach to describe each logical process in a separate assay. 
 
 <ViolaSays>
-Then let's start with the "Sugar Measurement" assay.
+Then let's start with the "Sugars Photometer" assay.
 </ViolaSays>
 
-## Assay: Sugar Measurement
+## Assay: Sugars Photometer
 
 ![](@images/start-here/arc-prototypic-assay-sugar.svg)
 
@@ -118,7 +118,7 @@ classDef dataStyle fill:#FEFEFE,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,fon
 subgraph study1["Study:AthalianaColdStress"]
     s1[Plants] ---p1[Plant-growth]--> s2[Leaves]
 end
-subgraph assay1[Assay1:SugarMeasurement]
+subgraph assay1[Assay1:SugarsPhotometer]
     s2 ---p2[SugarExtraction]--> s3[Sugar extract]
     s3 ---p3[SugarMeasurement]--> d1@{ shape: doc, label: sugar_result.csv}
 end

@@ -179,7 +179,7 @@ import { FileTree } from '@astrojs/starlight/components'
 
 <FileTree>
 - assays
-    - **SugarMeasurement**
+    - **SugarsPhotometer**
         - dataset
             - ...
         - protocols
