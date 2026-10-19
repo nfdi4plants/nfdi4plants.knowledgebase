@@ -239,7 +239,6 @@ export default defineConfig({
                 ],
               },              {
                 label: "ARCitISA",
-                badge: {text: "WIP", variant: "caution"},
                 collapsed: true,
                 items: [
                   {
@@ -469,10 +468,11 @@ export default defineConfig({
             items: ["contribution"]
           },
           {
-            label: "Start Here (Legacy)",
+            label: "ARCitect",
             icon: "rocket",
             link: "start-here-old",
             id: "start-here-old",
+            badge: { variant: "caution", text: "Legacy"},
             items: [
               {
                 autogenerate: {
