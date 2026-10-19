@@ -239,7 +239,6 @@ export default defineConfig({
                 ],
               },              {
                 label: "ARCitISA",
-                badge: {text: "WIP", variant: "caution"},
                 collapsed: true,
                 items: [
                   {
