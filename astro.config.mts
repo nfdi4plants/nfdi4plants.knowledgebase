@@ -73,6 +73,7 @@ export default defineConfig({
             icon: "rocket",
             link: "start-here",
             id: "start-here",
+            badge: {text: "ARCitISA!", variant: "note", },
             items: [
               {
                 autogenerate: {
@@ -237,13 +238,13 @@ export default defineConfig({
                   },
                 ],
               },              {
-                label: "ARCitect-GX",
+                label: "ARCitISA",
                 badge: {text: "WIP", variant: "caution"},
                 collapsed: true,
                 items: [
                   {
                     autogenerate: {
-                      directory: "arcitect-gx",
+                      directory: "arcitisa",
                     },
                   },
                 ],
@@ -442,53 +443,7 @@ export default defineConfig({
             icon: "question",
             link: "faqs",
             items: ["faqs"],
-          },         
-          
-          {
-            label: "Workshops",
-            icon: "star",
-            link: "workshops",
-            id: "workshops",
-            items: [
-              "workshops",
-              {
-                label: "Boosting Biodata Bootcamp 2026",
-                collapsed: true,
-                // badge: {text: "Latest", variant: "note"},
-                items: [
-                  {
-                    autogenerate: {
-                      directory: "workshops/2026-09_boosting-biodata-bootcamp",
-                    },
-                  },
-                ],
-              },
-              {
-                label: "PlantAI Summer School 2026",
-                collapsed: true,
-                items: [
-                  {
-                    autogenerate: {
-                      directory: "workshops/2026-08_trr175-summer-school-gx",
-                    },
-                  },
-                ],
-              },
-
-              {
-                label: "FDM-Werkstatt 2026",
-                collapsed: true,
-                items: [
-                  {
-                    autogenerate: {
-                      directory: "workshops/2026-03-fdm-werkstatt",
-                    },
-                  },
-                ],
-              },
-            ],
           },
-
           {
             label: "Development",
             icon: "forward-slash",
@@ -513,6 +468,20 @@ export default defineConfig({
             link: "contribution",
             items: ["contribution"]
           },
+          {
+            label: "Start Here (Legacy)",
+            icon: "rocket",
+            link: "start-here-old",
+            id: "start-here-old",
+            items: [
+              {
+                autogenerate: {
+                  directory: "start-here-old",
+                },
+              },
+            ],
+          },
+
         ],
       ),
       ],
