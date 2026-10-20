@@ -20,10 +20,10 @@ import { Steps, FileTree } from '@astrojs/starlight/components';
 
 import ARCitISAAddAssay from "@kb/arcitisa/start-here/add-assay.mdx"
 import ARCitISAAddDatasetProtocol from "@kb/arcitisa/start-here/add-dataset-protocol.mdx"
+import ARCitISAUseTemplate from "@kb/arcitisa/start-here/use-template.mdx"
+import ARCitISAUseTemplate2 from "@kb/arcitisa/start-here/use-template2.mdx"
 
 import SwateAddAnnotationTable from "@kb/start-here/swate/swate-table-add.mdx"
-import SwateUseTemplate from "@kb/start-here/swate/swate-use-template.mdx"
-import SwateUseTemplate2 from "@kb/start-here/swate/swate-use-template2.mdx"
 
 
 <ViolaSays>
@@ -91,7 +91,7 @@ Similar to the study example, we can parameterize the individual process steps, 
 
 Instead of adding each individual building block to the table, we can use a generic template for a sugar extraction.
 
-<SwateUseTemplate />
+<ARCitISAUseTemplate />
 
 #### Sugar measurement
 
@@ -99,7 +99,7 @@ Instead of adding each individual building block to the table, we can use a gene
 
 We follow the same steps to fill the **Sugar Measurement** table.
 
-<SwateUseTemplate2 />
+<ARCitISAUseTemplate2 />
 
 
 ## Linking samples to data – across studies and assays
@@ -109,7 +109,7 @@ Following the simple approach of reusing sample and data identifiers in differen
 
 <Mermaid>
 ```mermaid
-flowchart TD
+flowchart LR
 classDef studyStyle fill:#dae7c1,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:bold;
 classDef assayStyle fill:#ffe080,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:bold;
 classDef processStyle fill:#E08F9C,rx:.4em,ry:.4em,color:#2d3e50,stroke:#2d3e50,font-weight:normal;
@@ -130,3 +130,7 @@ class d1 dataStyle;
 ```
 
 </Mermaid>
+
+:::tip[Follow your ARC evolution]
+You can also see these connections in ARCitISA's `Provenance Graph` menu in the left sidebar. 
+:::
