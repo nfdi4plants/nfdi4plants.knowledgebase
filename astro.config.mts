@@ -228,16 +228,6 @@ export default defineConfig({
               "index-tools-services",
               
               {
-                label: "ARCitect",
-                collapsed: true,
-                items: [
-                  {
-                    autogenerate: {
-                      directory: "arcitect",
-                    },
-                  },
-                ],
-              },              {
                 label: "ARCitISA",
                 collapsed: true,
                 items: [
@@ -351,85 +341,29 @@ export default defineConfig({
               {
                 label: "ARC Commander",
                 collapsed: true,
-                items: [
-                  "arc-commander",
-
-                  {
-                    label: "Setup",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "arc-commander/setup",
-                        },
-                      },
-                    ],
-                  },
-
-                  "arc-commander/using-arc",
-                  "arc-commander/arc-commander-quick-start",
-
-                  {
-                    label: "Central Functions",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "arc-commander/central-functions",
-                        },
-                      },
-                    ],
-                  },
-
-                  {
-                    label: "ISA metadata",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "arc-commander/isa",
-                        },
-                      },
-                    ],
-                  },
-
-                  "arc-commander/lfs",
-                ],
+                items: [{autogenerate: {directory: "arc-commander/"}}]
               },
-
               {
                 label: "Swate",
                 collapsed: true,
-                items: [
-                  {
-                    autogenerate: {
-                      directory: "swate",
-                    },
-                  },
-                ],
+                items: [{autogenerate: {directory: "swate"}}]
               },
-
               {
                 label: "Boat",
                 collapsed: true,
-                items: [
-                  {
-                    autogenerate: {
-                      directory: "resources/boat",
-                    },
-                  },
-                ],
+                items: [{autogenerate: {directory: "resources/boat"}}]
               },
-
+              {
+                label: "ARCitect",
+                collapsed: true,
+                badge: {variant: "caution", text: "Legacy"},
+                items: [{autogenerate: {directory: "arcitect"}}],
+              },
               {
                 label: "ARCManager",
                 collapsed: true,
-                items: [
-                  {
-                    autogenerate: {
-                      directory: "arc-manager",
-                    },
-                  },
-                ],
+                items: [{autogenerate: {directory: "arc-manager"}}],
               },
-
               "resources/arc-summary",
               "resources/dataplan",
               "resources/elab2arc",
@@ -450,14 +384,7 @@ export default defineConfig({
             items: [
               {
                 label: "ARCtrl",
-                items: [
-                  {
-                    autogenerate: {
-                      collapsed: true,
-                      directory: "arctrl",
-                    },
-                  },
-                ],
+                items: [{autogenerate: {collapsed: true, directory: "arctrl"}}]
               },
             ],
           },
@@ -469,19 +396,12 @@ export default defineConfig({
           },
           {
             label: "ARCitect",
-            icon: "rocket",
+            icon: "random",
             link: "start-here-old",
             id: "start-here-old",
             badge: { variant: "caution", text: "Legacy"},
-            items: [
-              {
-                autogenerate: {
-                  directory: "start-here-old",
-                },
-              },
-            ],
+            items: [{autogenerate: {directory: "start-here-old"}}]
           },
-
         ],
       ),
       ],
