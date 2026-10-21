@@ -193,155 +193,62 @@ export default defineConfig({
                   },
                 ],
               },
-
               {
                 label: "Git",
                 collapsed: true,
                 items: [
-                  {
-                    autogenerate: {
-                      directory: "git",
-                    },
-                  },
-                ],
+                  {autogenerate: {directory: "git"}}]
               },
-
               {
                 label: "CWL",
                 collapsed: true,
-                items: [
-                  {
-                    autogenerate: {
-                      directory: "cwl",
-                    },
-                  },
-                ],
-              },
-            ],
-          },
+                items: [{autogenerate: {directory: "cwl"}}]
+              }
+            ]
+            },
           {
             label: "Tools and Services",
             icon: "setting",
             link: "index-tools-services",
-            
             items: [
               "index-tools-services",
-              
               {
                 label: "ARCitISA",
                 collapsed: true,
                 items: [
-                  {
-                    autogenerate: {
-                      directory: "arcitisa",
-                    },
-                  },
-                ],
-              },
-
+                  {autogenerate: {directory: "arcitisa"}}]
+                },
               {
                 label: "ARC Validation",
                 collapsed: true,
-                items: [
-                  {
-                    autogenerate: {
-                      directory: "arc-validation",
-                    },
-                  },
-                ],
+                items: [{autogenerate: {directory: "arc-validation"}}]
               },
-
               {
                 label: "DataHUB",
                 collapsed: true,
-                items: [
+                items: [                  
                   "datahub",
-
-                  {
-                    label: "DataPLANT Account",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "datahub/account",
-                        },
-                      },
-                    ],
-                  },
-
-                  {
-                    label: "Navigation & Settings",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "datahub/navigation-settings",
-                        },
-                      },
-                    ],
-                  },
-
+                  "datahub/account",
+                  {label: "Navigation & Settings", items: [{autogenerate: {directory: "datahub/navigation-settings/"}}]},
+                  {label: "Working together", items: [{autogenerate: {directory: "datahub/working-together/"}}]},
                   "datahub/access-tokens",
-
-                  {
-                    label: "Working together",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "datahub/working-together",
-                        },
-                      },
-                    ],
-                  },
-
-                  {
-                    label: "ARC files",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "datahub/arc-files",
-                        },
-                      },
-                    ],
-                  },
-
-                  {
-                    label: "ARC features",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "datahub/arc-features",
-                        },
-                      },
-                    ],
-                  },
-
-                  {
-                    label: "Data Publications",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "datahub/data-publications",
-                        },
-                      },
-                    ],
-                  },
-
-                  {
-                    label: "Additional Features",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "datahub/features",
-                        },
-                      },
-                    ],
-                  },
+                  {label: "ARC files", items: [{autogenerate: {directory: "datahub/arc-files/"}}]},
+                  {label: "ARC features", items: [{autogenerate: {directory: "datahub/arc-features"}}]},
+                  {label: "Data Publications",items: [{autogenerate: {directory: "datahub/data-publications"}}]},
+                  // {label: "Additional Features",items: [{autogenerate: {directory: "datahub/features"}}]},
                 ],
               },
-
               {
                 label: "ARC Commander",
                 collapsed: true,
-                items: [{autogenerate: {directory: "arc-commander/"}}]
+                items: [
+                  "arc-commander",
+                  {label: "Setup", items: [{autogenerate: {directory: "arc-commander/setup"}}]},
+                  "arc-commander/using-arc",
+                  "arc-commander/arc-commander-quick-start",
+                  {label: "Central Functions", items: [{autogenerate: {directory: "arc-commander/central-functions"}}]},
+                  {label: "ISA metadata", items: [{autogenerate: {directory: "arc-commander/isa"}}]},
+                  "arc-commander/lfs"],
               },
               {
                 label: "Swate",
