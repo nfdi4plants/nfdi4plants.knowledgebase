@@ -24,7 +24,7 @@ import ARCitISARefProtocol from "@kb/arcitisa/start-here/ref-protocol.mdx"
 
 import ARCitISACharacteristic from "@kb/arcitisa/start-here/add-characteristic.mdx"
 import ARCitISAParameter from "@kb/arcitisa/start-here/parameter.mdx"
-import ARCitISAFactor from "@kb/arcitisa/start-here/add-factor.mdx"
+import ARCitISAFactor from "@kb/arcitisa/start-here/add-factor-unit.mdx"
 import ARCitISAOntologyInfo from "@kb/arcitisa/start-here/ontology-info.mdx"
 import ARCitISATableEdit from "@kb/arcitisa/start-here/table-edit.mdx"
 
@@ -159,7 +159,7 @@ Then we need to put this information into context:
 
 ## Add characteristics
 
-<SwateCharacteristic />
+<ARCitISACharacteristic />
 
 ## Add a parameter with a unit
 
@@ -169,7 +169,7 @@ Parameters works just like Characteristics, right? But they also contain numbers
 
 Yes, you are right! Parameters are similar to Characteristics. To use units you can simply select the `Unit` toggle during the `Add building block` step and then insert the value in the table afterwards.
 
-<SwateParameter />
+<ARCitISAParameter />
 
 ## Add a factor building block
 
@@ -179,16 +179,16 @@ So what do i do with "temperature"? My experiment revolves around this specific 
 
 In this case, you can use a `Factor` building block. Factors are used to describe the experimental conditions that are manipulated in an experiment.
 
-<SwateFactor />
+<ARCitISAFactor />
 
 
 ## Show ontology information
 
-<SwateOntologyInfo />
+<ARCitISAOntologyInfo />
 
 
 ## Re-organize the annotation table
 
 If the order of the building blocks needs to be adjusted, you can delete or move them from your annotation table.
 
-<SwateTableEdit />
+<ARCitISATableEdit />
