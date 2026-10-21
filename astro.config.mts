@@ -60,6 +60,8 @@ export default defineConfig({
         starlightAutoSidebar(),
         starlightUiTweaks({
           navbarLinks: [
+            { label: "Support", href: "https://nfdi4plants.org/support" },
+            { label: "ARChive", href: "https://archive.nfdi4plants.org" },
             { label: "DataHUB", href: "https://git.nfdi4plants.org/" },
             { label: "DataPLANT", href: "https://nfdi4plants.org/" },
             { label: "ARC", href: "https://arc-rdm.org" },
