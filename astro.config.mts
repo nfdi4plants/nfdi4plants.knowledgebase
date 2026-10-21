@@ -225,17 +225,20 @@ export default defineConfig({
             link: "index-tools-services",
             
             items: [
-              "index-tools-services",              
+              "index-tools-services",
+              
               {
                 label: "ARCitISA",
                 collapsed: true,
-                items: [{autogenerate: {directory: "arcitisa"}}]
+                items: [
+                  {
+                    autogenerate: {
+                      directory: "arcitisa",
+                    },
+                  },
+                ],
               },
-              {
-                label: "DataHUB",
-                collapsed: true,
-                items: [{autogenerate: {directory: "datahub/"}}]
-              },
+
               {
                 label: "ARC Validation",
                 collapsed: true,
@@ -247,6 +250,94 @@ export default defineConfig({
                   },
                 ],
               },
+
+              {
+                label: "DataHUB",
+                collapsed: true,
+                items: [
+                  "datahub",
+
+                  {
+                    label: "DataPLANT Account",
+                    items: [
+                      {
+                        autogenerate: {
+                          directory: "datahub/account",
+                        },
+                      },
+                    ],
+                  },
+
+                  {
+                    label: "Navigation & Settings",
+                    items: [
+                      {
+                        autogenerate: {
+                          directory: "datahub/navigation-settings",
+                        },
+                      },
+                    ],
+                  },
+
+                  "datahub/access-tokens",
+
+                  {
+                    label: "Working together",
+                    items: [
+                      {
+                        autogenerate: {
+                          directory: "datahub/working-together",
+                        },
+                      },
+                    ],
+                  },
+
+                  {
+                    label: "ARC files",
+                    items: [
+                      {
+                        autogenerate: {
+                          directory: "datahub/arc-files",
+                        },
+                      },
+                    ],
+                  },
+
+                  {
+                    label: "ARC features",
+                    items: [
+                      {
+                        autogenerate: {
+                          directory: "datahub/arc-features",
+                        },
+                      },
+                    ],
+                  },
+
+                  {
+                    label: "Data Publications",
+                    items: [
+                      {
+                        autogenerate: {
+                          directory: "datahub/data-publications",
+                        },
+                      },
+                    ],
+                  },
+
+                  {
+                    label: "Additional Features",
+                    items: [
+                      {
+                        autogenerate: {
+                          directory: "datahub/features",
+                        },
+                      },
+                    ],
+                  },
+                ],
+              },
+
               {
                 label: "ARC Commander",
                 collapsed: true,
