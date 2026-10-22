@@ -218,26 +218,26 @@ export default defineConfig({
                 items: [
                   {autogenerate: {directory: "arcitisa"}}]
                 },
-              {
-                label: "ARC Validation",
-                collapsed: true,
-                items: [{autogenerate: {directory: "arc-validation"}}]
-              },
-              {
-                label: "DataHUB",
-                collapsed: true,
-                items: [                  
-                  "datahub",
-                  "datahub/account",
-                  {label: "Navigation & Settings", items: [{autogenerate: {directory: "datahub/navigation-settings/"}}]},
-                  {label: "Working together", items: [{autogenerate: {directory: "datahub/working-together/"}}]},
-                  "datahub/access-tokens",
-                  {label: "ARC files", items: [{autogenerate: {directory: "datahub/arc-files/"}}]},
-                  {label: "ARC features", items: [{autogenerate: {directory: "datahub/arc-features"}}]},
-                  {label: "Data Publications",items: [{autogenerate: {directory: "datahub/data-publications"}}]},
-                  // {label: "Additional Features",items: [{autogenerate: {directory: "datahub/features"}}]},
-                ],
-              },
+                {
+                  label: "DataHUB",
+                  collapsed: true,
+                  items: [                  
+                    "datahub",
+                    "datahub/account",
+                    {label: "Navigation & Settings", items: [{autogenerate: {directory: "datahub/navigation-settings/"}}]},
+                    {label: "Working together", items: [{autogenerate: {directory: "datahub/working-together/"}}]},
+                    "datahub/access-tokens",
+                    {label: "ARC files", items: [{autogenerate: {directory: "datahub/arc-files/"}}]},
+                    {label: "ARC features", items: [{autogenerate: {directory: "datahub/arc-features"}}]},
+                    {label: "Data Publications",items: [{autogenerate: {directory: "datahub/data-publications"}}]},
+                    // {label: "Additional Features",items: [{autogenerate: {directory: "datahub/features"}}]},
+                  ],
+                },
+                {
+                  label: "ARC Validation",
+                  collapsed: true,
+                  items: [{autogenerate: {directory: "arc-validation"}}]
+                },
               {
                 label: "ARC Commander",
                 collapsed: true,
