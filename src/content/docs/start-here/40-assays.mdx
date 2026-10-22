@@ -14,16 +14,18 @@ import ViolaSays from '@components/ViolaSays.astro'
 import Mermaid from '@components/mdx/Mermaid.astro'
 import {ParentChild} from '@components/mdx/ParentChild.mdx'
 import { Steps, FileTree } from '@astrojs/starlight/components';
+import NoWrapTable from "@components/NoWrapTable.astro"
+import Icons from '@components/swate/Icons';
 
 
 {/* Import contents */}
 
-import ARCitISAAddAssay from "@kb/arcitisa/start-here/add-assay.mdx"
-import ARCitISAAddDatasetProtocol from "@kb/arcitisa/start-here/add-dataset-protocol.mdx"
-import ARCitISAUseTemplate from "@kb/arcitisa/start-here/use-template.mdx"
-import ARCitISAUseTemplate2 from "@kb/arcitisa/start-here/use-template2.mdx"
+import ARCitISAAddAssay from "@kb/arcitisa/functions/add-assay.mdx"
+import ARCitISAAddDatasetProtocol from "@kb/arcitisa/functions/add-dataset-protocol.mdx"
+import ARCitISAUseTemplate from "@kb/arcitisa/functions/use-template.mdx"
+import ARCitISAUseTemplate2 from "@kb/arcitisa/functions/use-template2.mdx"
 
-import ARCitISAAddAnnotationTable from "@kb/arcitisa/start-here/table-add.mdx"
+import ARCitISAAddAnnotationTable from "@kb/arcitisa/functions/table-add.mdx"
 
 
 <ViolaSays>
@@ -99,7 +101,32 @@ Instead of adding each individual building block to the table, we can use a gene
 
 We follow the same steps to fill the **Sugar Measurement** table.
 
-<ARCitISAUseTemplate2 />
+
+<Steps>
+1. Select the "SugarMeasurement" table.
+2. Click `Utilize prior output` and `Import selected output column` to use the (*_sugar-ext) values of the "SugarExtraction" table.
+3. Import the template `Training - Sugar measurement`, following the same steps as before. This will not replace the existing input column.
+4. Fill the parameter columns
+    - Parameter [`technical replicate`] of 1,2,3,1,2,3
+    - Parameter [`sample volume`] of 10 `microliter`
+    - Parameter [`buffer volume`] of 190 `microliter`
+    - Parameter [`cycle count`] of 5
+5. Use the `File Picker` feature <Icons.FilePicker /> to import the results of sugar measurement (`sugar_result.csv`) into `Output [Data]`
+
+    <NoWrapTable>
+
+        Input [Sample Name]	| Parameter [technical replicate] | Parameter [...] | Output [Data] 
+        ---                 | ------------------------------- | --------------- | --- 
+        Cold1_sugar-ext     | 1                               | ...             | ./assays/SugarsPhotometer/dataset/sugar_result.csv
+        Cold2_sugar-ext     | 2                               | ...             | ./assays/SugarsPhotometer/dataset/sugar_result.csv
+        Cold3_sugar-ext     | 3                               | ...             | ./assays/SugarsPhotometer/dataset/sugar_result.csv
+        RT1_sugar-ext       | 1                               | ...             | ./assays/SugarsPhotometer/dataset/sugar_result.csv
+        RT2_sugar-ext       | 2                               | ...             | ./assays/SugarsPhotometer/dataset/sugar_result.csv
+        RT3_sugar-ext       | 3                               | ...             | ./assays/SugarsPhotometer/dataset/sugar_result.csv
+
+    </NoWrapTable>
+
+</Steps>
 
 
 ## Linking samples to data – across studies and assays
