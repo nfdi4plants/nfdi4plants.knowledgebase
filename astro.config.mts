@@ -4,7 +4,6 @@ import { fileURLToPath } from 'node:url';;
 import starlight from "@astrojs/starlight";
 import starlightLinksValidator from "starlight-links-validator";
 import starlightSidebarTopics from "starlight-sidebar-topics";
-import starlightAutoSidebar from "starlight-auto-sidebar";
 import starlightImageZoom from "starlight-image-zoom";
 import starlightUiTweaks from "starlight-ui-tweaks";
 import icon from "astro-icon";
@@ -57,7 +56,6 @@ export default defineConfig({
       plugins: [
         starlightLinksValidator(),
         starlightImageZoom(),
-        starlightAutoSidebar(),
         starlightUiTweaks({
           navbarLinks: [
             { label: "Support", href: "https://nfdi4plants.org/support" },
