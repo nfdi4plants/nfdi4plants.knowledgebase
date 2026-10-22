@@ -276,7 +276,6 @@ Several features are provided by external plugins. Please check their docs for d
 - Expressive Code: https://expressive-code.com/
 - Expressive Code Line Numbers: https://expressive-code.com/plugins/line-numbers/
 - Starlight Sidebar Topics: https://starlight-sidebar-topics.netlify.app
-- Starlight Auto Sidebar: https://github.com/HiDeoo/starlight-auto-sidebar
 - Starlight UI Tweaks: https://starlight-ui-tweaks.dlcastillop.com
 - Starlight Contributor List: https://starlight-contributor-list.trueberryless.org
 

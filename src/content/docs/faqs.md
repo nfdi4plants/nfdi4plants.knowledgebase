@@ -35,7 +35,7 @@ No. The metadata describing the data is collected in separate xlsx-files – cal
 Is it necessary to fill in the empty fields in the investigation-file manually? 
 </summary>
 
-No. Although it is possible to fill out the workbook manually, we recommend using [ARC Commander](/nfdi4plants.knowledgebase/arc-commander) or [ARCitect](/nfdi4plants.knowledgebase/arcitect) to add this metadata.
+No. Although it is possible to fill out the workbook manually, we recommend using [ARC Commander](/nfdi4plants.knowledgebase/arc-commander) or [ARCitISA](/nfdi4plants.knowledgebase/arcitisa) to add this metadata.
 
 </details>
 
@@ -129,110 +129,7 @@ dnf install ca-certificates
 
 </details>
 
-### ARCitect
-
-<details>
-<summary><span style="color: #1fc2a7">
-I already committed my changes, but they are still displayed in the ARCitect and are not uploaded to the DataHUB.
-</summary>
-
-Sometimes, the ARCitect does not "accept" a commit or when writing a commit message and hitting the "commit" button the changes are still displayed. You can try the following:
-
-1. Close all windows (e.g. windows explorer) and files (in particular Excel workbooks) related to the ARC
-2. Try to commit again.
-
-:::tip
-In general, we recommend to close all isa.investigation.xlsx, isa.study.xlsx and isa.assay.xlsx workbooks when working on your ARC using ARCitect.
-:::
-
-</details>
-
-<details>
-<summary><span style="color: #1fc2a7">
-My data sets have now become so large that the storage space on my PC is no longer sufficient for the ARC. Therefore I want to move it completely to our institute’s internal server so I can use the large amount of storage available there.
-</summary>
-
-Before moving it, it is recommended to sync the ARC to the DataHUB once more.
-Depending on how large the data sets are, it is especially recommended to do this in small steps (with ARCitect, move no more than 100 GB at a time).  Before you copy the ARC to the server, close all programs (ARCitect, Excel, etc.) that might be accessing the ARC.
-After you have moved it to the server, you can simply open it again in ARCitect directly from the server.
-
-:::tip
-Check out [this guide](/nfdi4plants.knowledgebase/core-concepts/integrating-arcs-in-lab/) on integrating ARCs in a lab; especially the part about [storage locations](/nfdi4plants.knowledgebase/core-concepts/integrating-arcs-in-lab/#where-do-i-store-my-arc).
-:::
-
-</details>
-
-<details>
-<summary><span style="color: #1fc2a7">
-I want to download my LFS files, but the files are not flagged. 
-</summary>
-
-To see the LFS flag and enable file download, you need Git LFS version 3.7.0 or higher. Please try the following steps:
-
-1. Open command line via ARCitect --> Tools --> Command Window
-2. Type and execute: `git-lfs --version`
-3. If your Git LFS version is older then 3.7.0, follow the [Git Installation Guide](/nfdi4plants.knowledgebase/git/git-installation) to install the latest version. 
-4. After installation reload ARCitect. The LFS files should now be flagged and can be downloaded with right-click.  
-
-
-
-</details>
-
-<!-- 
-<details>
-<summary><span style="color: #1fc2a7">
-Why is the file tree flickering in ARCitect?
-</summary>
-
-So far we only saw this bug on macOS with ARCs stored in a folder that is watched and synced by iCloud (typically the `Desktop` and `Documents` folder and sub-folders). Please store your ARCs in folders outside iCloud.
-
-</details>
-
-<details>
-<summary><span style="color: #1fc2a7">
-Why do I get the warning "Clone succeeded, but checkout failed."?
-</summary>
-
-This warning is likely due to an issue with your Git or Git LFS installation.
-If you see this error, when using ARCitect (version ≥ 0.0.21) under Windows or Linux, please let us know via e.g. helpdesk.
-
-On macOS ARCitect's git dependency is not yet in place.
-Please follow [this workaround](https://github.com/nfdi4plants/ARCitect/discussions/88).
-
-</details> -->
-
-<details>
-<summary><span style="color: #1fc2a7">
-What does the "Credential Helper Selector" mean?
-</summary>
-
-During ARCitect login, Windows asks you wether you want to use a "Credential Helper". This can be used to store your DataHUB credentials. You do not need this for ARCitect to work. You can choose "no helper" or "manager" and tick the check box "always use this from now on" to avoid the popup in the future.
-
-![](@images/faqs/credential-helper-selector.png)
-
-</details>
-
-
-<details>
-<summary><span style="color: #1fc2a7">
-During a push I see the error "failed to load library 'libcurl-4.dll'"
-</summary>
-
-If the path to your ARC contains umlauts (e.g. the windows user name), Git throws the error `failed to load library 'libcurl-4.dll'`.
-This is an issue with older Git installations (git version ≤ 2.42.0).
-Changing the path (e.g. moving your ARC to a location without umlauts) solves the error. Spaces do not seem to have an effect.
-
-</details>
-
-
-### Metadata annotation (Swate, ISA)
-
-<!-- <details><summary><span style="color: #1fc2a7">
-Is it possible to use common Excel functionalities?
-</summary>
-
-Yes. In fact, this is one of the reasons why we decided to embed Swate within Excel, as it allows users to continue using the Excel functionality they are accustomed to. -->
-
+### Metadata annotation (ARCitISA)
 
 </details>
 
@@ -240,14 +137,14 @@ Yes. In fact, this is one of the reasons why we decided to embed Swate within Ex
 How do I change the investigation identifier?
 </summary>
 
-Changing the investigation identifier is not directly supported by ARCitect as it comes with a few pitfalls that one needs to be aware of:
+Changing the investigation identifier is not directly supported by ARCitISA as it comes with a few pitfalls that one needs to be aware of:
 
 By default, the investigation identifier 
 1. aligns with the ARC folder name on your computer
 2. is used to create the ARC's URL and Display name in the DataHUB
 
 To change the ID manually, you can edit the `Investigation Identifier` field in the `isa.investigation.xlsx` file.
-When working with ARCitect, the ARC needs to be reloaded afterwards.
+When working with ARCitISA, the ARC needs to be reloaded afterwards.
 Furthermore, it is recommended to
 1. Change the local ARC folder name accordingly
 2. Change the DataHUB URL and Display name in the [ARC settings](/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-arc-settings)
@@ -301,6 +198,6 @@ After login to the DataHUB you see the following banners
 ![](@images/datahub/datahub-banner-token.png)
 
 
-If you use DataPLANT tools (ARCitect or ARC commander) to sync your ARC with the DataHUB, you can safely ignore them and click "Don't show again".
+If you use DataPLANT tools (ARCitISA or ARC commander) to sync your ARC with the DataHUB, you can safely ignore them and click "Don't show again".
 
 </details>

@@ -4,8 +4,6 @@ import { defineCollection, reference } from "astro:content"
 import { docsLoader } from '@astrojs/starlight/loaders'
 import { docsSchema } from '@astrojs/starlight/schema';
 import { topicSchema } from 'starlight-sidebar-topics/schema'
-import { autoSidebarLoader } from 'starlight-auto-sidebar/loader'
-import { autoSidebarSchema } from 'starlight-auto-sidebar/schema'
 
 const authors = defineCollection({
   loader: glob({ pattern: '**/[^_]*.{yml,yaml}', base: "./src/content/authors" }),
@@ -39,8 +37,4 @@ const extendedDocsSchema = defineCollection({
 export const collections = {  
 	docs: extendedDocsSchema,
   authors: authors,
-  autoSidebar: defineCollection({
-    loader: autoSidebarLoader(),
-    schema: autoSidebarSchema(),
-  }),
 };

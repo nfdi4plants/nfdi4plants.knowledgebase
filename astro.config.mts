@@ -4,7 +4,6 @@ import { fileURLToPath } from 'node:url';;
 import starlight from "@astrojs/starlight";
 import starlightLinksValidator from "starlight-links-validator";
 import starlightSidebarTopics from "starlight-sidebar-topics";
-import starlightAutoSidebar from "starlight-auto-sidebar";
 import starlightImageZoom from "starlight-image-zoom";
 import starlightUiTweaks from "starlight-ui-tweaks";
 import icon from "astro-icon";
@@ -57,9 +56,10 @@ export default defineConfig({
       plugins: [
         starlightLinksValidator(),
         starlightImageZoom(),
-        starlightAutoSidebar(),
         starlightUiTweaks({
           navbarLinks: [
+            { label: "Support", href: "https://nfdi4plants.org/support" },
+            { label: "ARChive", href: "https://archive.nfdi4plants.org" },
             { label: "DataHUB", href: "https://git.nfdi4plants.org/" },
             { label: "DataPLANT", href: "https://nfdi4plants.org/" },
             { label: "ARC", href: "https://arc-rdm.org" },
@@ -193,243 +193,84 @@ export default defineConfig({
                   },
                 ],
               },
-
               {
                 label: "Git",
                 collapsed: true,
                 items: [
-                  {
-                    autogenerate: {
-                      directory: "git",
-                    },
-                  },
-                ],
+                  {autogenerate: {directory: "git"}}]
               },
-
               {
                 label: "CWL",
                 collapsed: true,
-                items: [
-                  {
-                    autogenerate: {
-                      directory: "cwl",
-                    },
-                  },
-                ],
-              },
-            ],
-          },
+                items: [{autogenerate: {directory: "cwl"}}]
+              }
+            ]
+            },
           {
             label: "Tools and Services",
             icon: "setting",
             link: "index-tools-services",
-            
             items: [
               "index-tools-services",
-              
               {
-                label: "ARCitect",
-                collapsed: true,
-                items: [
-                  {
-                    autogenerate: {
-                      directory: "arcitect",
-                    },
-                  },
-                ],
-              },              {
                 label: "ARCitISA",
                 collapsed: true,
                 items: [
-                  {
-                    autogenerate: {
-                      directory: "arcitisa",
-                    },
-                  },
-                ],
-              },
-
-              {
-                label: "ARC Validation",
-                collapsed: true,
-                items: [
-                  {
-                    autogenerate: {
-                      directory: "arc-validation",
-                    },
-                  },
-                ],
-              },
-
-              {
-                label: "DataHUB",
-                collapsed: true,
-                items: [
-                  "datahub",
-
-                  {
-                    label: "DataPLANT Account",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "datahub/account",
-                        },
-                      },
-                    ],
-                  },
-
-                  {
-                    label: "Navigation & Settings",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "datahub/navigation-settings",
-                        },
-                      },
-                    ],
-                  },
-
-                  "datahub/access-tokens",
-
-                  {
-                    label: "Working together",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "datahub/working-together",
-                        },
-                      },
-                    ],
-                  },
-
-                  {
-                    label: "ARC files",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "datahub/arc-files",
-                        },
-                      },
-                    ],
-                  },
-
-                  {
-                    label: "ARC features",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "datahub/arc-features",
-                        },
-                      },
-                    ],
-                  },
-
-                  {
-                    label: "Data Publications",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "datahub/data-publications",
-                        },
-                      },
-                    ],
-                  },
-
-                  {
-                    label: "Additional Features",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "datahub/features",
-                        },
-                      },
-                    ],
-                  },
-                ],
-              },
-
+                  {autogenerate: {directory: "arcitisa"}}]
+                },
+                {
+                  label: "DataHUB",
+                  collapsed: true,
+                  items: [                  
+                    "datahub",
+                    "datahub/account",
+                    {label: "Navigation & Settings", items: [{autogenerate: {directory: "datahub/navigation-settings/"}}]},
+                    {label: "Working together", items: [{autogenerate: {directory: "datahub/working-together/"}}]},
+                    "datahub/access-tokens",
+                    {label: "ARC files", items: [{autogenerate: {directory: "datahub/arc-files/"}}]},
+                    {label: "ARC features", items: [{autogenerate: {directory: "datahub/arc-features"}}]},
+                    {label: "Data Publications",items: [{autogenerate: {directory: "datahub/data-publications"}}]},
+                    // {label: "Additional Features",items: [{autogenerate: {directory: "datahub/features"}}]},
+                  ],
+                },
+                {
+                  label: "ARC Validation",
+                  collapsed: true,
+                  items: [{autogenerate: {directory: "arc-validation"}}]
+                },
               {
                 label: "ARC Commander",
                 collapsed: true,
                 items: [
                   "arc-commander",
-
-                  {
-                    label: "Setup",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "arc-commander/setup",
-                        },
-                      },
-                    ],
-                  },
-
+                  {label: "Setup", items: [{autogenerate: {directory: "arc-commander/setup"}}]},
                   "arc-commander/using-arc",
                   "arc-commander/arc-commander-quick-start",
-
-                  {
-                    label: "Central Functions",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "arc-commander/central-functions",
-                        },
-                      },
-                    ],
-                  },
-
-                  {
-                    label: "ISA metadata",
-                    items: [
-                      {
-                        autogenerate: {
-                          directory: "arc-commander/isa",
-                        },
-                      },
-                    ],
-                  },
-
-                  "arc-commander/lfs",
-                ],
+                  {label: "Central Functions", items: [{autogenerate: {directory: "arc-commander/central-functions"}}]},
+                  {label: "ISA metadata", items: [{autogenerate: {directory: "arc-commander/isa"}}]},
+                  "arc-commander/lfs"],
               },
-
               {
                 label: "Swate",
                 collapsed: true,
-                items: [
-                  {
-                    autogenerate: {
-                      directory: "swate",
-                    },
-                  },
-                ],
+                items: [{autogenerate: {directory: "swate"}}]
               },
-
               {
                 label: "Boat",
                 collapsed: true,
-                items: [
-                  {
-                    autogenerate: {
-                      directory: "resources/boat",
-                    },
-                  },
-                ],
+                items: [{autogenerate: {directory: "resources/boat"}}]
               },
-
+              {
+                label: "ARCitect",
+                collapsed: true,
+                badge: {variant: "caution", text: "Legacy"},
+                items: [{autogenerate: {directory: "arcitect"}}],
+              },
               {
                 label: "ARCManager",
                 collapsed: true,
-                items: [
-                  {
-                    autogenerate: {
-                      directory: "arc-manager",
-                    },
-                  },
-                ],
+                items: [{autogenerate: {directory: "arc-manager"}}],
               },
-
               "resources/arc-summary",
               "resources/dataplan",
               "resources/elab2arc",
@@ -450,14 +291,7 @@ export default defineConfig({
             items: [
               {
                 label: "ARCtrl",
-                items: [
-                  {
-                    autogenerate: {
-                      collapsed: true,
-                      directory: "arctrl",
-                    },
-                  },
-                ],
+                items: [{autogenerate: {collapsed: true, directory: "arctrl"}}]
               },
             ],
           },
@@ -469,19 +303,12 @@ export default defineConfig({
           },
           {
             label: "ARCitect",
-            icon: "rocket",
+            icon: "random",
             link: "start-here-old",
             id: "start-here-old",
             badge: { variant: "caution", text: "Legacy"},
-            items: [
-              {
-                autogenerate: {
-                  directory: "start-here-old",
-                },
-              },
-            ],
+            items: [{autogenerate: {directory: "start-here-old"}}]
           },
-
         ],
       ),
       ],

@@ -17,9 +17,7 @@ import Mermaid from '@components/mdx/Mermaid.astro'
 
 {/* Import contents */}
 
-import SwateJson from "@kb/start-here/swate/swate-json-import.mdx"
-import ARCitISAAssay2 from "@kb/arcitisa/start-here/add-assay2.mdx"
-import ARCitISAVirtualAssay2 from "@kb/arcitisa/start-here/virtual-assay2.mdx"
+import ARCitISAJson from "@kb/arcitisa/functions/json-import.mdx"
 import Sop from "@images/start-here/arc-prototypic-assay-sop-proteomics.svg"
 
 <div style="display: flex;">
@@ -41,11 +39,38 @@ Follow the same steps as before to add two assays and sort the available demo da
 
 ### Proteomics – Mass Spectrometry
 
-<ARCitISAAssay2 />    
+
+<Steps>
+
+1. Create an assay `Proteomics_MS`.
+2. Import the assay files and folders from the demo data into the assay. Use the "Import Files" and "Import Directories" functions accordingly:
+
+</Steps>
+
+<Mermaid>
+```mermaid
+    flowchart LR
+    subgraph d[Demo Data]
+        D1@{ shape: docs, label: MS_Raw}
+        D2@{ shape: doc, label: AssayTemplate_Proteomics_MS.json}
+    end
+    subgraph a[ARC]
+        A1@{ shape: lin-cyl, label: Proteomics_MS/dataset/}
+        A2@{ shape: lin-cyl, label: Proteomics_MS/protocols/}
+    end
+    D1 --> A1
+    D2 --> A2
+    classDef sub fill:#FFFFFF,color:#2d3e50,font-size:1.1em;
+    class d,a sub;
+    classDef item font-size:0.9em;
+    class D1,D2,A1,A2 item;
+```
+</Mermaid>
+
 
 Load the data annotation into the respective annotation tables
 
-<SwateJson />   
+<ARCitISAJson />   
 
 Your assay now contains top-level metadata in the `Assay` sheet, including the "Measurement Type" and "Technology Type" and "Technology Platform". Furthermore, it includes two sheets called `ProtDigest` and `PeptideMS_Bruker` including the metadata records to describe the two processes of protein digest and the mass spectrometry measurement of peptides, respectively.
 
@@ -59,7 +84,36 @@ Your assay now contains top-level metadata in the `Assay` sheet, including the "
 
 Repeat the same for the "Proteomics Data Analysis" files.
 
-<ARCitISAVirtualAssay2 />
+<Steps>
+
+1. Create an assay `Proteomics_DataAnalysis`.
+2. Import the assay files and folders from the demo data into the assay
+3. Create suitable annotation tables and import the data annotation, respectively.
+
+</Steps>
+
+<Mermaid>
+```mermaid
+flowchart LR
+subgraph d[Demo Data]
+    D1@{ shape: doc, label: combined_protein.fasta}
+    D2@{ shape: doc, label: MSFraggerOutput/combined_protein.csv}
+    D3@{ shape: doc, label: AssayTemplate_Proteomics_DataAnalysis.json}
+end
+subgraph a[ARC]
+    A1@{ shape: lin-cyl, label: Proteomics_DataAnalysis/dataset/}
+    A2@{ shape: lin-cyl, label: Proteomics_DataAnalysis/protocols/}
+end
+D1 --> A1
+D2 --> A1
+D3 --> A2
+classDef sub fill:#FFFFFF,color:#2d3e50,font-size:1.1em;
+class d,a sub;
+classDef item font-size:0.9em;
+class D1,D2,D3,A1,A2 item;
+```
+</Mermaid>
+
 
 <ViolaSays>
     Again, I will have to complement the specific "Input" and "Output" columns for the identifiers in my ARC. 
@@ -101,5 +155,4 @@ class p1,p2,p3,p4,p5,p6 processStyle;
 class s1,s2,s3,s4 sampleStyle;
 class d1,d2,d3 dataStyle;
 ```
-
 </Mermaid>

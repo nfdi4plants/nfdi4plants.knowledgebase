@@ -17,16 +17,16 @@ import Mermaid from '@components/mdx/Mermaid.astro'
 
 {/* Import contents */}
 
-import ARCitISAStudy from "@kb/arcitisa/start-here/add-study.mdx"
-import ARCitISAProtocol from "@kb/arcitisa/start-here/add-protocol.mdx"
-import ARCitISASamples from "@kb/arcitisa/start-here/samples.mdx"
-import ARCitISARefProtocol from "@kb/arcitisa/start-here/ref-protocol.mdx"
+import ARCitISAStudy from "@kb/arcitisa/functions/add-study.mdx"
+import ARCitISAProtocol from "@kb/arcitisa/functions/add-protocol.mdx"
+import ARCitISASamples from "@kb/arcitisa/functions/samples.mdx"
+import ARCitISARefProtocol from "@kb/arcitisa/functions/ref-protocol.mdx"
 
-import SwateCharacteristic from "@kb/start-here/swate/swate-characteristic.mdx"
-import SwateParameter from "@kb/start-here/swate/swate-parameter.mdx"
-import SwateFactor from "@kb/start-here/swate/swate-factor.mdx"
-import SwateOntologyInfo from "@kb/start-here/swate/swate-ontology-info.mdx"
-import SwateTableEdit from "@kb/start-here/swate/swate-table-edit.mdx"
+import ARCitISACharacteristic from "@kb/arcitisa/functions/add-characteristic.mdx"
+import ARCitISAParameter from "@kb/arcitisa/functions/parameter.mdx"
+import ARCitISAFactor from "@kb/arcitisa/functions/add-factor-unit.mdx"
+import ARCitISAOntologyInfo from "@kb/arcitisa/functions/ontology-info.mdx"
+import ARCitISATableEdit from "@kb/arcitisa/functions/table-edit.mdx"
 
 <ViolaSays>
 And where do I add my experimental design? Where can I describe how I grew my plants under different conditions?
@@ -159,7 +159,7 @@ Then we need to put this information into context:
 
 ## Add characteristics
 
-<SwateCharacteristic />
+<ARCitISACharacteristic />
 
 ## Add a parameter with a unit
 
@@ -169,7 +169,7 @@ Parameters works just like Characteristics, right? But they also contain numbers
 
 Yes, you are right! Parameters are similar to Characteristics. To use units you can simply select the `Unit` toggle during the `Add building block` step and then insert the value in the table afterwards.
 
-<SwateParameter />
+<ARCitISAParameter />
 
 ## Add a factor building block
 
@@ -179,16 +179,16 @@ So what do i do with "temperature"? My experiment revolves around this specific 
 
 In this case, you can use a `Factor` building block. Factors are used to describe the experimental conditions that are manipulated in an experiment.
 
-<SwateFactor />
+<ARCitISAFactor />
 
 
 ## Show ontology information
 
-<SwateOntologyInfo />
+<ARCitISAOntologyInfo />
 
 
 ## Re-organize the annotation table
 
 If the order of the building blocks needs to be adjusted, you can delete or move them from your annotation table.
 
-<SwateTableEdit />
+<ARCitISATableEdit />
