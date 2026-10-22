@@ -18,7 +18,6 @@ import Mermaid from '@components/mdx/Mermaid.astro'
 {/* Import contents */}
 
 import ARCitISAJson from "@kb/arcitisa/functions/json-import.mdx"
-import ARCitISAAssay2 from "@kb/arcitisa/functions/add-assay2.mdx"
 import Sop from "@images/start-here/arc-prototypic-assay-sop-proteomics.svg"
 
 <div style="display: flex;">
@@ -49,8 +48,7 @@ Follow the same steps as before to add two assays and sort the available demo da
 </Steps>
 
 <Mermaid>
-
-    ```mermaid
+```mermaid
     flowchart LR
     subgraph d[Demo Data]
         D1@{ shape: docs, label: MS_Raw}
@@ -66,8 +64,7 @@ Follow the same steps as before to add two assays and sort the available demo da
     class d,a sub;
     classDef item font-size:0.9em;
     class D1,D2,A1,A2 item;
-    ```
-
+```
 </Mermaid>
 
 
@@ -95,26 +92,27 @@ Repeat the same for the "Proteomics Data Analysis" files.
 
 </Steps>
 
-    <Mermaid>
-        ```mermaid
-        flowchart LR
-        subgraph d[Demo Data]
-            D1@{ shape: doc, label: combined_protein.fasta}
-            D2@{ shape: doc, label: MSFraggerOutput/combined_protein.csv}
-            D3@{ shape: doc, label: AssayTemplate_Proteomics_DataAnalysis.json}
-        end
-        subgraph a[ARC]
-            A1@{ shape: lin-cyl, label: Proteomics_DataAnalysis/dataset/}
-            A2@{ shape: lin-cyl, label: Proteomics_DataAnalysis/protocols/}
-        end
-        D1 --> A1
-        D2 --> A1
-        D3 --> A2
-        classDef sub fill:#FFFFFF,color:#2d3e50,font-size:1.1em;
-        class d,a sub;
-        classDef item font-size:0.9em;
-        class D1,D2,D3,A1,A2 item;
-        ```</Mermaid>
+<Mermaid>
+```mermaid
+flowchart LR
+subgraph d[Demo Data]
+    D1@{ shape: doc, label: combined_protein.fasta}
+    D2@{ shape: doc, label: MSFraggerOutput/combined_protein.csv}
+    D3@{ shape: doc, label: AssayTemplate_Proteomics_DataAnalysis.json}
+end
+subgraph a[ARC]
+    A1@{ shape: lin-cyl, label: Proteomics_DataAnalysis/dataset/}
+    A2@{ shape: lin-cyl, label: Proteomics_DataAnalysis/protocols/}
+end
+D1 --> A1
+D2 --> A1
+D3 --> A2
+classDef sub fill:#FFFFFF,color:#2d3e50,font-size:1.1em;
+class d,a sub;
+classDef item font-size:0.9em;
+class D1,D2,D3,A1,A2 item;
+```
+</Mermaid>
 
 
 <ViolaSays>
@@ -157,5 +155,4 @@ class p1,p2,p3,p4,p5,p6 processStyle;
 class s1,s2,s3,s4 sampleStyle;
 class d1,d2,d3 dataStyle;
 ```
-
 </Mermaid>

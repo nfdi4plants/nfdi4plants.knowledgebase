@@ -35,7 +35,7 @@ No. The metadata describing the data is collected in separate xlsx-files – cal
 Is it necessary to fill in the empty fields in the investigation-file manually? 
 </summary>
 
-No. Although it is possible to fill out the workbook manually, we recommend using [ARC Commander](/nfdi4plants.knowledgebase/arc-commander) or [ARCitISA](/nfdi4plants.knowledgebase/ARCitISA) to add this metadata.
+No. Although it is possible to fill out the workbook manually, we recommend using [ARC Commander](/nfdi4plants.knowledgebase/arc-commander) or [ARCitISA](/nfdi4plants.knowledgebase/arcitisa) to add this metadata.
 
 </details>
 
