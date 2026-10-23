@@ -1,0 +1,45 @@
+---
+title: Edit files via the DataHUB
+authors:
+  - dominik-brilhaus
+  - lukas-weil
+lastUpdated: 2026-10-16
+---
+
+{/* Import components */}
+
+import ViolaSays from '@components/ViolaSays.astro'
+import { Steps } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+
+{/* Import contents */}
+
+import DataHUBCreateFile from '@kb/datahub/arc-files/datahub-file-create.mdx'
+import DataHUBCommits from '@kb/datahub/arc-features/datahub-arc-commits.mdx'
+import DataHUBIssues  from "@kb/datahub/arc-features/datahub-arc-issues.mdx"
+import ARCitISAPull from "@kb/arcitisa/functions/pull.mdx"
+
+## Create a new file via the DataHUB
+
+<DataHUBCreateFile />
+
+:::tip[Workshop mode]
+Ask the workshop participant you invited, to create a new file in your ARC.
+:::
+
+## Follow your ARC's progress in the DataHUB
+
+<DataHUBCommits />
+
+## Download the ARC changes
+
+The changes made via the DataHUB are not yet present in the local version of your ARC.
+
+<ARCitISAPull />
+
+
+## Project Management
+
+The DataHUB can also be used for Project Management. With work items and issues you can collaborate on ideas and plan your work. 
+
+<DataHUBIssues />
