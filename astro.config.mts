@@ -216,7 +216,11 @@ export default defineConfig({
                 label: "ARCitISA",
                 collapsed: true,
                 items: [
-                  {autogenerate: {directory: "arcitisa"}}]
+                  "arcitisa",
+                  "arcitisa/release-note",
+                  "arcitisa/installation",
+                  {label: "Functions", collapsed: true, items: [{autogenerate: {directory: "arcitisa/functions"}}]},
+                ]
                 },
                 {
                   label: "DataHUB",
