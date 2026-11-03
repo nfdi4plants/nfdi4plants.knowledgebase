@@ -275,9 +275,13 @@ export default defineConfig({
                 collapsed: true,
                 items: [{autogenerate: {directory: "arc-manager"}}],
               },
+              {
+                label: "elab2ARC",
+                collapsed: true,
+                items: [{autogenerate: {directory: "resources/elab2arc"}}]
+              },
               "resources/arc-summary",
               "resources/dataplan",
-              "resources/elab2arc",
               "resources/galaxy",
               "resources/metadata-quiz",
             ],
