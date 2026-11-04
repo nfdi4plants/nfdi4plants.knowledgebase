@@ -7,17 +7,12 @@ import { Steps } from '@astrojs/starlight/components'
 import NoWrapTable from "@components/NoWrapTable.astro"
 import Icons from '@components/arcitisa/Icons';
 
-import NavbarTemplate from '@images/arcitisa/navbar-template.png'
-
 <Steps>
 
 1. Click on the assay's name (`SugarsPhotometer`) in the file tree.
 2. Select the "SugarExtraction" table added in the previous step.
 3. In the `New Table!` widget, click `Create basic table!`.
-4. On top of the annotation table open `Add Template`.
-
-    <img src={NavbarTemplate.src} width="50%"/>
-
+4. On top of the annotation table open `Add Template` <Icons.Template />
 4. This will show you all DataPLANT curated templates.
 4. To select a template from a different community click <Icons.Institution />.
 6. From the dropdown, select "Training" and deselect "DataPLANT".
