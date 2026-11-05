@@ -8,11 +8,11 @@ import Icons from '@components/arcitisa/Icons';
 
 <Steps>
   1. In the "SugarsPhotometer" assay, open the "Sugar Measurement" table
-  2. On top of the annotation table, open the "Data Annotator" tool
-  3. Click `Choose a file`, find and select `sugar_result.csv` and click `Open`
-  4. On top switch from "autodetect" to "output"
-  5. Select only the 6(!) Data columns (`RT_M1`, `RT_M2`, `RT_M3`, `Cold_M1`, `Cold_M2`, `Cold_M3`). These are the direct results of the 6 samples.
-  6. Click `Submit`
+  2. On top of the annotation table, open the "Data Annotator" tool <Icons.DataAnnotator />
+  3. Click `Choose File`, find and select `sugar_result.csv` and click `Preview and Select Targets`
+  4. Select only the 6(!) Data columns (`RT_M1`, `RT_M2`, `RT_M3`, `Cold_M1`, `Cold_M2`, `Cold_M3`). These are the direct results of the 6 samples.
+  6. Click `Add selectors`
+  7. Select the corresponding cells in the `Output [Data]` column and click `Insert selectors`
 
       :::note
       This links the **exact columns** of the result table to the biological samples
