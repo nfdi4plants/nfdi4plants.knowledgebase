@@ -242,6 +242,11 @@ export default defineConfig({
                   collapsed: true,
                   items: [{autogenerate: {directory: "arc-validation"}}]
                 },
+                {
+                  label: "elab2ARC",
+                  collapsed: true,
+                  items: [{autogenerate: {directory: "resources/elab2arc"}}]
+                },
               {
                 label: "ARC Commander",
                 collapsed: true,
@@ -274,11 +279,6 @@ export default defineConfig({
                 label: "ARCManager",
                 collapsed: true,
                 items: [{autogenerate: {directory: "arc-manager"}}],
-              },
-              {
-                label: "elab2ARC",
-                collapsed: true,
-                items: [{autogenerate: {directory: "resources/elab2arc"}}]
               },
               "resources/arc-summary",
               "resources/dataplan",
