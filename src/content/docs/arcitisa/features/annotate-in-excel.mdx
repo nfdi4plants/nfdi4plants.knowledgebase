@@ -12,14 +12,20 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 import DownloadLink from '@components/scripts/DownloadLink.tsx?client:load'
 
 
-With the help of an [Excel-Add-In](https://learn.microsoft.com/de-de/office/dev/add-ins/excel/excel-add-ins-overview) you can manage your data, utilizing the [ARC](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/core-concepts/arc/) standard, directly in excel, without the necessity to upload it anywhere. 
-The functionality the excel-add-in provides are similar to [Swate](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/swate/) and the differences will be explained in the different sections of swate.
-The excel-add-in will soon be published in the official [Microsoft Excel-Add-Ins Store](https://appsource.microsoft.com/en-us/marketplace/apps?product=excel).
+With the ARCitISA [Excel add-In](https://learn.microsoft.com/de-de/office/dev/add-ins/excel/excel-add-ins-overview) you can annotate the [ARC](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/core-concepts/arc/) metadata directly in excel.
+
+:::note
+The ARCitISA Excel add-in provides all features for metadata annotation known from the [ARCitISA app](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/arcitisa/installation). 
+However, it does not support ARC design or DataHUB synchronization.
+:::
+
+{/* The excel-add-in will soon be published in the official [Microsoft Excel-Add-Ins Store](https://appsource.microsoft.com/en-us/marketplace/apps?product=excel). */}
 
 ## Installation
-Currently, we recommend the installation using the [excel-browser version provided by microsoft](https://excel.cloud.microsoft/?wdOrigin=MARKETING.FREE.GO-TO-EXCEL) because the set up is much easier than with a local excel version.
 
-<Tabs syncKey="swateHost">
+We recommend the installation using the [excel-browser version provided by microsoft](https://excel.cloud.microsoft/?wdOrigin=MARKETING.FREE.GO-TO-EXCEL) because the set up is much easier than with a local excel version.
+
+<Tabs syncKey="arcitisaHost">
 <TabItem label="Excel Browser">
 
 <Steps>
