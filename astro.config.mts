@@ -219,6 +219,7 @@ export default defineConfig({
                   "arcitisa",
                   "arcitisa/release-note",
                   "arcitisa/installation",
+                  "arcitisa/using-arcitisa",
                   {label: "Features", collapsed: true, items: [{autogenerate: {directory: "arcitisa/features"}}]},
                   {label: "Functions", collapsed: true, items: [{autogenerate: {directory: "arcitisa/functions"}}]},
                 ]
