@@ -1,6 +1,6 @@
 ---
-title: How to contribute Swate templates
-lastUpdated: 2025-09-11
+title: How to contribute metadata templates
+lastUpdated: 2026-11-06
 authors: 
   - dominik-brilhaus
   - kevin-frey
@@ -15,20 +15,17 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 import Icons from '@components/swate/Icons';
 import SwateOverview from '@images/swate/swate-alpha-overview.png'
 
-:::note[About this guide]
-This tutorial guides you how to create Swate metadata templates with [Swate-alpha](https://swate-alpha.nfdi4plants.org/).
-:::
+This tutorial guides you how to create metadata templates with [ARCitISA browser tool](https://swate.nfdi4plants.org/).
 
 :::tip[Before we can start]
-Before contributing Swate templates you ideally have
+Before contributing metadata templates you ideally have
 
-- Access to [Swate-alpha](https://swate-alpha.nfdi4plants.org/)
-- Some routine with Swate (e.g. from the Swate manual and quickstarts)
-  - you know how to create an [Annotation Table](/nfdi4plants.knowledgebase/swate/annotation-table)
-  - you know how to [add building blocks](/nfdi4plants.knowledgebase/swate/building-blocks) to your annotation table
+- Some routine with ARCitISA
+  - you know how to create an [Annotation Table](/nfdi4plants.knowledgebase/arcitisa/features/annotation-table)
+  - you know how to [add building blocks](/nfdi4plants.knowledgebase/arcitisa/features/building-blocks) to your annotation table
   - you know the annotation principles
 - A [GitHub](https://github.com) account and some routine with GitHub
-- Feel free to contact us for Data Steward support, if you are not familiar to GitHub or Swate, but would like to contribute a Swate template for your community
+- Feel free to contact us for [Data Steward support](https://nfdi4plants.org/support/), if you are not familiar to GitHub or ARCitISA, but would like to contribute a template for your community
 :::
 
 ## GitHub Workflow to add or edit templates
@@ -49,11 +46,11 @@ Before contributing Swate templates you ideally have
 
 </Steps>
 
-## Creating a new Swate template
+## Creating a new template
 
-### Create or open a Swate template
+### Create or open a template
 
-Open [Swate-alpha](https://swate-alpha.nfdi4plants.org/). To create a new template click "New File" and select "Template". If you want to edit an existing template, click "Import" and select the respective file.
+Open [ARCitISA](https://swate.nfdi4plants.org/). To create a new template click "New File" and select "Template". If you want to edit an existing template, click "Import" and select the respective file.
 
 ### Add Template Metadata
 
@@ -74,13 +71,13 @@ Key | Definition | Tip 💡
 
 #### Template Metadata Example
 
-Here is an example for filled out template metadata and how it helps in Swate's template search.
+Here is an example for filled out template metadata and how it helps in ARCitISA's template search.
 
 ![](@images/swate/swate-alpha-template-metadata.png)
 
 ### Add building blocks
 
-<Tabs syncKey="swateHost">
+<Tabs syncKey="arcitisaHost">
 <TabItem label="Browser">
 
 To add [building blocks](/nfdi4plants.knowledgebase/swate/building-blocks) to your actual template, you need to switch from the "Metadata" sheet to the "New Table" sheet on the bottom left. Then you click "Add Building Block" (<Icons.BuildingBlock />) in the <a href={SwateOverview.src} target="_blank">Sidebar</a> or <a href={SwateOverview.src} target="_blank">Widgets</a>. You can add building blocks as simple terms or units at your selected column in the table by clicking the "Add Column" button.
