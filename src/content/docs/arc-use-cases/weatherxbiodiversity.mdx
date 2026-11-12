@@ -5,7 +5,7 @@ authors:
   - dominik-brilhaus
 ---
 
-import { FileTree, LinkCard} from '@astrojs/starlight/components';
+import { FileTree, CardGrid, LinkCard, Steps} from '@astrojs/starlight/components';
 import ViolaSays from '@components/ViolaSays.astro'
 
 :::note
@@ -23,20 +23,31 @@ This annotation use-case was created during the BioHackathon Europe 2026 as part
 
 <CardGrid>
   <LinkCard 
-    title="Original publication"
-    description="Peter Soroye et al. ,Climate change contributes to widespread declines among bumble bees across continents.Science367,685-688(2020).DOI:10.1126/science.aax8591"
-    href="https://doi.org/10.1126/science.aax8591"
-  />
-  <LinkCard 
-    title="Example ARC WeatherXBiodiversity_Soroye2020"
-    description="ARC created during the BioHackathon 2026"
-    href="https://git.nfdi4plants.org/weil/WeatherXBiodiversity_Soroye2020"
+    title="WeatherXBiodiversity ARC"
+    description="Example ARC created during the BioHackathon 2026"
+    href="https://git.nfdi4plants.org/lifewatch-eric/WeatherXBiodiversity_Soroye2020"
   />
   <LinkCard 
     title="BioHackathon Report"
     description="Report to summarize the BioHackathon project results."
     href=""
   />
+  <LinkCard 
+    title="Original publication"
+    description="Peter Soroye et al., Science (2020). DOI:10.1126/science.aax8591"
+    href="https://doi.org/10.1126/science.aax8591"
+  />
+  <LinkCard 
+    title="Data Source: GBIF"
+    description="GBIF website"
+    href="https://gbif.org/"
+  />
+  <LinkCard 
+    title="Data Source: ERA5"
+    description=""
+    href="https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels"
+  />
+
 </CardGrid>
 
 
@@ -49,4 +60,55 @@ This annotation use-case was created during the BioHackathon Europe 2026 as part
 - Adopt the published (R) scripts provided by the publication to python
 - Wrap / annotate the scripts using CWL for FAIR annotation and reusability
   - provide docker
+
+## The example ARC
+
+The [example ARC](https://git.nfdi4plants.org/lifewatch-eric/WeatherXBiodiversity_Soroye2020) 
+
+<Steps>
+
+  1. Use ARCitISA to interact with the ARC
+  2. Install cwltool
+  3. Install docker
+  4. (Optional) Register GBIF account 
+
+</Steps>
+
+
+<FileTree>
+- isa.investigation.xlsx
+- studies
+  - ...
+- assays
+  - ...
+- workflows
+    - Analysis
+    - ERA5_Preprocessing
+    - ERA5_Retrieval
+    - GBIF_Preprocessing
+    - GBIF_Retrieval
+      - 00-submit-request.cwl
+      - 00-submit-request.py
+      - 01-download.cwl
+      - 01-download.py
+      - Dockerfile
+      - isa.workflow.xlsx
+      - README.md
+      - **workflow.cwl**
+    - orchestration.cwl
+- runs
+  - ERA5_Retrieval
+  - GBIF_Retrieval
+    - **gbif_credentials.json** # Needs to be adapted
+    - gbif_data
+    - isa.run.xlsx
+    - metadata.json
+    - README.md
+    - **run.cwl**
+    - **run.yml** # Needs to be adapted
+  - Orchestrate_Full_Workflow
+- LICENSE
+- README.md
+</FileTree>
+
 
