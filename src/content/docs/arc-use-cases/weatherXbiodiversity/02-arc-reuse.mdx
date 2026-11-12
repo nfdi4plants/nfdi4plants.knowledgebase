@@ -1,0 +1,124 @@
+---
+title: Using the WeatherXBiodiversity_Soroye2020 ARC
+lastUpdated: 2026-11-12
+authors:
+  - dominik-brilhaus
+sidebar:
+  order: 1
+---
+
+import { FileTree, CardGrid, LinkCard, Steps} from '@astrojs/starlight/components';
+import ViolaSays from '@components/ViolaSays.astro'
+
+Here we describe, how to reuse the provided ARC.
+
+
+
+
+## The example ARC
+
+The [example ARC](https://git.nfdi4plants.org/lifewatch-eric/WeatherXBiodiversity_Soroye2020) 
+
+### Overview
+
+<FileTree>
+- isa.investigation.xlsx
+- studies
+  - ...
+- assays
+  - ...
+- workflows
+    - Analysis
+    - ERA5_Preprocessing
+    - ERA5_Retrieval
+    - GBIF_Preprocessing
+    - GBIF_Retrieval
+      - 00-submit-request.cwl
+      - 00-submit-request.py
+      - 01-download.cwl
+      - 01-download.py
+      - Dockerfile
+      - isa.workflow.xlsx
+      - README.md
+      - **workflow.cwl**
+    - orchestration.cwl
+- runs
+  - ERA5_Retrieval
+  - GBIF_Retrieval
+    - **gbif_credentials.json** # Needs to be adapted
+    - gbif_data
+    - isa.run.xlsx
+    - metadata.json
+    - README.md
+    - **run.cwl**
+    - **run.yml** # Needs to be adapted
+  - Orchestrate_Full_Workflow
+- LICENSE
+- README.md
+</FileTree>
+
+
+## Workflows and runs
+
+The **workflows** folder contains the pipeline’s reusable steps:
+
+- `GBIF_Retrieval` requests and downloads biodiversity occurrence records from GBIF.
+- `GBIF_Preprocessing` cleans and prepares those records for analysis.
+- `ERA5_Retrieval` obtains historical climate data from ERA5.
+- `ERA5_Preprocessing` converts the retrieved climate files into monthly climate data.
+- `Analysis` processes the biodiversity and climate data through a sequence of steps, including cleaning records, creating presence–absence data, sampling, calculating climate measures, fitting models, and producing forest plots.
+- `util` contains a helper for gathering climate files into a directory.
+
+The **runs** folder contains individual executions of these workflows. Their `run.yml` and `run.cwl` files specify how each run is configured, and the resulting or intermediate data are stored alongside them, often in `results/`.
+
+The provided `orchestration.cwl` runs the full pipeline, coordinating the workflow steps in order so data can flow from retrieval and preprocessing through to analysis.
+
+
+### Preparation
+
+<Steps>
+
+  1. Familiarize with [ARCitISA](/nfdi4plants.knowledgebase/arcitisa/) to interact with the ARC
+  2. Install [cwltool and docker](/nfdi4plants.knowledgebase/cwl/cwl-runner-installation)
+  4. (Optional) Register a [GBIF](https://gbif.org/) account
+  5. (Optional) Register a [CDS](https://cds.climate.copernicus.eu) account
+
+</Steps>
+
+## Resources
+
+{/* TODOs 
+ - adapt links
+ - add report once available
+
+*/}
+
+<CardGrid>
+  <LinkCard 
+    title="WeatherXBiodiversity ARC"
+    description="Example ARC created during the BioHackathon 2026"
+    href="https://git.nfdi4plants.org/lifewatch-eric/WeatherXBiodiversity_Soroye2020"
+  />
+  <LinkCard 
+    title="BioHackathon Report"
+    description="Report to summarize the BioHackathon project results."
+    href=""
+  />
+  <LinkCard 
+    title="Original publication"
+    description="Peter Soroye et al., Science (2020). DOI:10.1126/science.aax8591"
+    href="https://doi.org/10.1126/science.aax8591"
+  />
+  <LinkCard 
+    title="Data Source: GBIF"
+    description="Global Biodiversity Information Facility"
+    href="https://gbif.org/"
+  />
+  <LinkCard 
+    title="Data Source: ERA5"
+    description="Climate Data Store"
+    href="https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels"
+  />
+
+</CardGrid>
+

@@ -1,0 +1,62 @@
+---
+title: ARCification of the Soroye 2020 study
+lastUpdated: 2026-11-12
+authors:
+  - dominik-brilhaus
+sidebar:
+  order: 1
+---
+
+import { FileTree, CardGrid, LinkCard, Steps} from '@astrojs/starlight/components';
+import ViolaSays from '@components/ViolaSays.astro'
+
+<ViolaSays>
+
+I stumbled across a publication in Science by Peter Soroye and colleagues from 2020, where they reused publicly available weather and biodiversity data. They provided some scripts to document what they did. In their case they looked at bumble bees in Portugal and Spain.
+I'd be interested to do something similar for dragonflies in France. 
+
+</ViolaSays>
+
+
+In this guide, we describe the steps undertaken to transform a manuscript-published analysis pipeline into an ARC for easy and adaptable reuse.
+
+
+## About the original publication
+
+- Reproduce the data retrieval and processing pipeline described in the paper
+- Purely designed as an ARC for data retrieval and reuse
+  - no studies / assays
+  - use of workflows and runs
+- Adopt the published (R) scripts provided by the publication to python
+- Wrap / annotate the scripts using CWL for FAIR annotation and reusability
+  - provide docker
+
+
+## Resources
+
+{/* TODOs 
+ - adapt links
+ - add report once available
+
+*/}
+
+<CardGrid>
+  <LinkCard 
+    title="Original publication"
+    description="Peter Soroye et al., Science (2020). DOI:10.1126/science.aax8591"
+    href="https://doi.org/10.1126/science.aax8591"
+  />
+  <LinkCard 
+    title="Data of the publication"
+    description="figshare dataset provided with the publication. DOI:10.6084/m9.figshare.9956471"
+    href="https://doi.org/10.6084/m9.figshare.9956471"
+  />
+  <LinkCard 
+    title="WeatherXBiodiversity ARC"
+    description="Example ARC created during the BioHackathon 2026"
+    href="https://git.nfdi4plants.org/lifewatch-eric/WeatherXBiodiversity_Soroye2020"
+  />
+</CardGrid>
+
+
+
