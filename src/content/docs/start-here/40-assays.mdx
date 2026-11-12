@@ -5,7 +5,7 @@ authors:
   - lukas-weil
   - sabrina-zander
   - kevin-frey
-lastUpdated: 2026-10-16
+lastUpdated: 2026-11-13
 ---
 
 {/* Import components */}
@@ -99,6 +99,8 @@ Instead of adding each individual building block to the table, we can use a gene
 
 We follow the same steps to fill the **Sugar Measurement** table.
 
+Record the measurement information in the assay's top-level metadata: set `Measurement Type` to `sugar measurement`, `Technology Type` to `photometry`, and `Technology Platform` to `Infinite M200 plate reader (Tecan)`. These fields are the recommended place to describe the measurement device, rather than a parameter column in the annotation table.
+
 
 <Steps>
 1. Select the "SugarMeasurement" table.
@@ -108,7 +110,6 @@ We follow the same steps to fill the **Sugar Measurement** table.
     - Parameter [`technical replicate`] of 1,2,3,1,2,3
     - Parameter [`sample volume`] of 10 `microliter`
     - Parameter [`buffer volume`] of 190 `microliter`
-    - Parameter [`measurement device`] of `Infinite M200 plate reader (Tecan)` for all six rows
     - Parameter [`cycle count`] of 5
 5. Use the `File Picker` feature <Icons.FilePicker /> to import the results of sugar measurement (`sugar_result.csv`) into `Output [Data]`
 
