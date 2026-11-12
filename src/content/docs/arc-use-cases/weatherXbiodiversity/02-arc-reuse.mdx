@@ -58,6 +58,22 @@ The [example ARC](https://git.nfdi4plants.org/lifewatch-eric/WeatherXBiodiversit
 </FileTree>
 
 
+## Workflows and runs
+
+The **workflows** folder contains the pipeline’s reusable steps:
+
+- `GBIF_Retrieval` requests and downloads biodiversity occurrence records from GBIF.
+- `GBIF_Preprocessing` cleans and prepares those records for analysis.
+- `ERA5_Retrieval` obtains historical climate data from ERA5.
+- `ERA5_Preprocessing` converts the retrieved climate files into monthly climate data.
+- `Analysis` processes the biodiversity and climate data through a sequence of steps, including cleaning records, creating presence–absence data, sampling, calculating climate measures, fitting models, and producing forest plots.
+- `util` contains a helper for gathering climate files into a directory.
+
+The **runs** folder contains individual executions of these workflows. Their `run.yml` and `run.cwl` files specify how each run is configured, and the resulting or intermediate data are stored alongside them, often in `results/`.
+
+The provided `orchestration.cwl` runs the full pipeline, coordinating the workflow steps in order so data can flow from retrieval and preprocessing through to analysis.
+
+
 ### Preparation
 
 <Steps>
