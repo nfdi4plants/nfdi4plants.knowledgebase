@@ -1,0 +1,52 @@
+---
+title: WeatherXBiodiversity
+lastUpdated: 2026-11-12
+authors:
+  - dominik-brilhaus
+---
+
+import { FileTree, LinkCard} from '@astrojs/starlight/components';
+import ViolaSays from '@components/ViolaSays.astro'
+
+:::note
+This annotation use-case was created during the BioHackathon Europe 2026 as part of project 28 – [WeatherXBiodiversity: Exploring Harmonization of Cross-Domain Data into FAIR Digital Objects](https://github.com/elixir-europe/biohackathon-projects-2026/blob/main/28.md)
+:::
+
+
+## Resources
+
+{/* TODOs 
+ - adapt links
+ - add report once available
+
+*/}
+
+<CardGrid>
+  <LinkCard 
+    title="Original publication"
+    description="Peter Soroye et al. ,Climate change contributes to widespread declines among bumble bees across continents.Science367,685-688(2020).DOI:10.1126/science.aax8591"
+    href="https://doi.org/10.1126/science.aax8591"
+  />
+  <LinkCard 
+    title="Example ARC WeatherXBiodiversity_Soroye2020"
+    description="ARC created during the BioHackathon 2026"
+    href="https://git.nfdi4plants.org/weil/WeatherXBiodiversity_Soroye2020"
+  />
+  <LinkCard 
+    title="BioHackathon Report"
+    description="Report to summarize the BioHackathon project results."
+    href=""
+  />
+</CardGrid>
+
+
+## About the original publication
+
+
+## This use case
+
+- Reproduce the data retrieval and processing pipeline described in the paper
+- Adopt the published (R) scripts provided by the publication to python
+- Wrap / annotate the scripts using CWL for FAIR annotation and reusability
+  - provide docker
+
