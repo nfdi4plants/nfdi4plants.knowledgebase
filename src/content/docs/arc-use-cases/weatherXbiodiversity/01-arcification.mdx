@@ -1,0 +1,108 @@
+---
+title: ARCification of the Soroye 2020 study
+lastUpdated: 2026-11-12
+authors:
+  - dominik-brilhaus
+sidebar:
+  order: 1
+---
+
+import { FileTree, CardGrid, LinkCard, Steps} from '@astrojs/starlight/components';
+import ViolaSays from '@components/ViolaSays.astro'
+
+<ViolaSays>
+
+I stumbled across a publication in Science by Peter Soroye and colleagues from 2020, where they reused publicly available weather and biodiversity data. They provided some scripts to document what they did. In their case they looked at bumble bees in Portugal and Spain.
+I'd be interested to do something similar for dragonflies in France. 
+
+</ViolaSays>
+
+
+## About the original publication and this use case
+
+- Reproduce the data retrieval and processing pipeline described in the paper
+- Purely designed as an ARC for data retrieval and reuse
+  - no studies / assays
+  - use of workflows and runs
+- Adopt the published (R) scripts provided by the publication to python
+- Wrap / annotate the scripts using CWL for FAIR annotation and reusability
+  - provide docker
+
+
+## The example ARC
+
+The [example ARC](https://git.nfdi4plants.org/lifewatch-eric/WeatherXBiodiversity_Soroye2020) 
+
+### Overview
+
+<FileTree>
+- isa.investigation.xlsx
+- studies
+  - ...
+- assays
+  - ...
+- workflows
+    - Analysis
+    - ERA5_Preprocessing
+    - ERA5_Retrieval
+    - GBIF_Preprocessing
+    - GBIF_Retrieval
+      - 00-submit-request.cwl
+      - 00-submit-request.py
+      - 01-download.cwl
+      - 01-download.py
+      - Dockerfile
+      - isa.workflow.xlsx
+      - README.md
+      - **workflow.cwl**
+    - orchestration.cwl
+- runs
+  - ERA5_Retrieval
+  - GBIF_Retrieval
+    - **gbif_credentials.json** # Needs to be adapted
+    - gbif_data
+    - isa.run.xlsx
+    - metadata.json
+    - README.md
+    - **run.cwl**
+    - **run.yml** # Needs to be adapted
+  - Orchestrate_Full_Workflow
+- LICENSE
+- README.md
+</FileTree>
+
+
+### Preparation
+
+<Steps>
+
+  1. Familiarize with [ARCitISA](/nfdi4plants.knowledgebase/arcitisa/) to interact with the ARC
+  2. Install [cwltool and docker](/nfdi4plants.knowledgebase/cwl/cwl-runner-installation)
+  4. (Optional) Register a [GBIF](https://gbif.org/) account
+  5. (Optional) Register a [CDS](https://cds.climate.copernicus.eu) account
+
+</Steps>
+
+## Resources
+
+{/* TODOs 
+ - adapt links
+ - add report once available
+
+*/}
+
+<CardGrid>
+  <LinkCard 
+    title="Original publication"
+    description="Peter Soroye et al., Science (2020). DOI:10.1126/science.aax8591"
+    href="https://doi.org/10.1126/science.aax8591"
+  />
+  <LinkCard 
+    title="WeatherXBiodiversity ARC"
+    description="Example ARC created during the BioHackathon 2026"
+    href="https://git.nfdi4plants.org/lifewatch-eric/WeatherXBiodiversity_Soroye2020"
+  />
+</CardGrid>
+
+
+

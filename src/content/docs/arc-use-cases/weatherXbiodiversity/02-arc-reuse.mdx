@@ -1,31 +1,14 @@
 ---
-title: WeatherXBiodiversity
+title: Using the WeatherXBiodiversity_Soroye2020 ARC
 lastUpdated: 2026-11-12
 authors:
   - dominik-brilhaus
+sidebar:
+  order: 1
 ---
 
 import { FileTree, CardGrid, LinkCard, Steps} from '@astrojs/starlight/components';
 import ViolaSays from '@components/ViolaSays.astro'
-
-<ViolaSays>
-
-I stumbled across a publication in Science by Peter Soroye and colleagues from 2020, where they reused publicly available weather and biodiversity data. They provided some scripts to document what they did. In their case they looked at bumble bees in Portugal and Spain.
-I'd be interested to do something similar for dragonflies in France. 
-
-</ViolaSays>
-
-
-## About the original publication and this use case
-
-- Reproduce the data retrieval and processing pipeline described in the paper
-- Purely designed as an ARC for data retrieval and reuse
-  - no studies / assays
-  - use of workflows and runs
-- Adopt the published (R) scripts provided by the publication to python
-- Wrap / annotate the scripts using CWL for FAIR annotation and reusability
-  - provide docker
-
 
 ## The example ARC
 
@@ -117,9 +100,4 @@ The [example ARC](https://git.nfdi4plants.org/lifewatch-eric/WeatherXBiodiversit
   />
 
 </CardGrid>
-
-
-:::note
-This annotation use-case was created during the BioHackathon Europe 2026 as part of project 28 – [WeatherXBiodiversity: Exploring Harmonization of Cross-Domain Data into FAIR Digital Objects](https://github.com/elixir-europe/biohackathon-projects-2026/blob/main/28.md)
-:::
 
