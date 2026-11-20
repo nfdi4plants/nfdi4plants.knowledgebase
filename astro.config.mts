@@ -267,11 +267,6 @@ export default defineConfig({
                   "arc-commander/lfs"],
               },
               {
-                label: "Swate",
-                collapsed: true,
-                items: [{autogenerate: {directory: "swate"}}]
-              },
-              {
                 label: "Boat",
                 collapsed: true,
                 items: [{autogenerate: {directory: "resources/boat"}}]
