@@ -4,11 +4,22 @@ lastUpdated: 2026-11
 authors:
   - kathryn-dumschott
 sidebar:
-  order: 
+  order: 4
 ---
-## Additional Validation Packages
 
-There a number of different validation packages available depending on what you want to validate your ARC against. You can check out the full validation package registry [here](https://avpr.nfdi4plants.org/packages) or in ARCitect. Below are some that may be particularly relevant to the Usadel group.
+## Available Validation Packages
+
+You can validate your ARC to ensure it meets minimum information requirements for publication, external repository submission requirements or minimum information standards. This means that your ARC meets requirements or contains all necessary information when it comes time to share or publish your ARC.
+
+ To read up on how to add validation packages to your ARC, please check out this 
+[DataPLANT tutorial](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/arc-publications/arc-publication-01-validation/).
+
+The two main validation packages that your ARC should contain are arc_specification and invenio.
+
+- **arc_specification** This package assesses the quality, structure and overall metadata compliance of your ARC.
+- **invenio** This [package](https://avpr.nfdi4plants.org/package/invenio) validates if your ARC contains the necessary metadata to be publishable via Invenio 
+
+There a number of additional validation packages available depending on what you want to validate your ARC against. You can check out the full validation package registry [here](https://avpr.nfdi4plants.org/packages) or in the 'Validation Packages' menu in the left sidebar in ARCitISA. Below is a summary of currently available validation packages:
 
 ### External Repository Requirements
 
@@ -33,3 +44,13 @@ Even if you are not a member of CEPLAS, there are number of packages available t
 | **ceplas-02-biometadata** <ul><li>https://avpr.nfdi4plants.org/package/ceplas-02-biometadata </li><li>Validates the ARC's "biological" metadata. | <ul><li>ARC contains at least one study, assay, workflow or run </li><li>ARC contains any annotation column (Characteristic, Parameter, Factor) </li><li>Every study contains at least one annotation table </li><li>Every study annotation table contains basic information </li><li>Every study annotation table column contains values </li><li>Every study annotation table row contains values </li><li>Every assay contains at least one annotation table </li><li>Every assay annotation table contains basic information </li><li>Every assay annotation table column contains values </li><li>Every assay annotation table row contains values </li><li>Every run contains at least one annotation table </li><li>Every run annotation table contains basic information </li><li>Every run annotation table column contains values </li><li>Every run annotation table row contains values | <ul><li>Every study contains a title </li><li>Every study contains a description </li><li>Every study contains contacts </li><li>Every assay contains a title </li><li>Every assay contains a description </li><li>Every assay contains performers </li><li>Every assay contains a measurement type </li><li>Every assay contains a technology type </li><li>Every assay contains a technology platform </li><li>Every workflow contains a title </li><li>Every workflow contains a description </li><li>Every workflow contains contacts </li><li>Every run contains a title </li><li>Every run contains a description </li><li>Every run contains performers </li><li>Every run contains a measurement type </li><li>Every run contains a technology type </li><li>Every run contains a technology platform </li><li>Every annotation table contains some annotation column |
 | **ceplas-03-biodata** <ul><li>https://avpr.nfdi4plants.org/package/ceplas-03-biodata </li><li>Validates the ARC's "biological" data (e.g. measured, raw or processed, datasets). | <ul><li>ARC contains 'raw' data (e.g. raw dataset file or URL) </li><li>ARC assay dataset file exists | <ul><li>Every data entity derives from a Source or Sample </li><li>Every data entity is annotated with at least one of Characteristic, Parameter, Factor |
 | **ceplas-04-connectedData** <ul><li>https://avpr.nfdi4plants.org/package/ceplas-04-connectedData </li><li>Validates whether data and metadata in the ARC are properly connected. | <ul><li>Every annotation table contains an Input </li><li>Every annotation table contains an Output </li><li>Every annotation table contains a Protocol reference </li><li>ARC annotation tables are connected | | 
+
+### Other available packages
+
+| Package Name & Link | Critical quality criteria | Non-Critical quality criteria |
+| -------------| -------------------------- | ------------------------------ |
+| **odrl** <ul><li>https://avpr.nfdi4plants.org/package/odrl </li><li>Validates if the ARC contains the necessary metadata to be specify its terms of use. | |
+| **hhu-cmml** <ul><li>https://avpr.nfdi4plants.org/package/hhu-cmml </li><li>Validates if the ARC contains the necessary metadata for plant sample submission to HHU CMML. </li><li>This package validates against "Swate template study sheet for plant samples" (https://str.nfdi4plants.org/template/226689ec-4be3-4143-b775-f8856c8ed6a5) | <ul><li>Input [Source Name] </li><li>Parameter [sample submission date] </li><li>Characteristic [organism] OBI:0100026 | The following metadata is recommended: <ul><li>Characteristic [biological replicate] DPBO:0000042 </li><li>Characteristic [organism part] EFO:0000635 </li><li>Characteristic [plant age] DPBO:0000033 </li><li>Characteristic [genotype] EFO:0000513 </li><li>Parameter [normalisation factor] </li><li>Parameter [dry weight] </li><li>Parameter [fresh weight] </li><li>Characteristic [resuspension volume] </li><li>Characteristic [resuspension solution] |
+|**bioprofilekit** <ul><li>https://avpr.nfdi4plants.org/package/bioprofilekit </li><li>BioProfileKit is a web application for explorative data analysis of biological data. This package validates ARCs for containment of relevant data for the BioProfileKit web application. |
+|**insdc_curation** <ul><li>https://avpr.nfdi4plants.org/package/insdc_curation </li><li>Validates certain INSDC record curation metadata. | <ul><li>Contains fastqc files </li><li>Experiment accession annotation is present, correct and descends from a correctly named sample. | |
+|**agdafair** 
