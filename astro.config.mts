@@ -17,6 +17,10 @@ export default defineConfig({
   site: "https://nfdi4plants.github.io",
   base: "/nfdi4plants.knowledgebase",
 
+  redirects: {
+    '/swate/swate-template-contribution': '/arcitisa/template-contribution',
+  },
+
   integrations: [
     icon(),
     starlight({
@@ -219,6 +223,9 @@ export default defineConfig({
                   "arcitisa",
                   "arcitisa/release-note",
                   "arcitisa/installation",
+                  "arcitisa/using-arcitisa",
+                  "arcitisa/template-contribution",
+                  {label: "Features", collapsed: true, items: [{autogenerate: {directory: "arcitisa/features"}}]},
                   {label: "Functions", collapsed: true, items: [{autogenerate: {directory: "arcitisa/functions"}}]},
                 ]
                 },
@@ -258,11 +265,6 @@ export default defineConfig({
                   {label: "Central Functions", items: [{autogenerate: {directory: "arc-commander/central-functions"}}]},
                   {label: "ISA metadata", items: [{autogenerate: {directory: "arc-commander/isa"}}]},
                   "arc-commander/lfs"],
-              },
-              {
-                label: "Swate",
-                collapsed: true,
-                items: [{autogenerate: {directory: "swate"}}]
               },
               {
                 label: "Boat",
