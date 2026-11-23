@@ -10,52 +10,23 @@ sidebar:
 import { FileTree, CardGrid, LinkCard, Steps} from '@astrojs/starlight/components';
 import ViolaSays from '@components/ViolaSays.astro'
 
+<ViolaSays>
+
+Soroye and colleagues looked at bumble bees in Portugal and Spain. I'd be interested to do something similar for dragonflies in France. 
+
+</ViolaSays>
+
 Here we describe, how to reuse the provided ARC.
 
-
-
-
-## The example ARC
+## The WeatherXBiodiversity_Soroye2020 ARC
 
 The [example ARC](https://git.nfdi4plants.org/lifewatch-eric/WeatherXBiodiversity_Soroye2020) 
 
 ### Overview
 
-<FileTree>
-- isa.investigation.xlsx
-- studies
-  - ...
-- assays
-  - ...
-- workflows
-    - Analysis
-    - ERA5_Preprocessing
-    - ERA5_Retrieval
-    - GBIF_Preprocessing
-    - GBIF_Retrieval
-      - 00-submit-request.cwl
-      - 00-submit-request.py
-      - 01-download.cwl
-      - 01-download.py
-      - Dockerfile
-      - isa.workflow.xlsx
-      - README.md
-      - **workflow.cwl**
-    - orchestration.cwl
-- runs
-  - ERA5_Retrieval
-  - GBIF_Retrieval
-    - **gbif_credentials.json** # Needs to be adapted
-    - gbif_data
-    - isa.run.xlsx
-    - metadata.json
-    - README.md
-    - **run.cwl**
-    - **run.yml** # Needs to be adapted
-  - Orchestrate_Full_Workflow
-- LICENSE
-- README.md
-</FileTree>
+import ARCFileTree from './arc-filetree.mdx'
+
+<ARCFileTree/>
 
 
 ## Workflows and runs
