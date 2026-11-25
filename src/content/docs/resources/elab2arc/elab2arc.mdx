@@ -1,6 +1,6 @@
 ---
 title: Using elab2ARC
-lastUpdated: 2026-11-03
+lastUpdated: 2026-11-25
 description: Step-by-step guide for converting eLabFTW experiments into an ARC with elab2ARC.
 authors: 
   - xiaoran-zhou
@@ -13,19 +13,9 @@ import { Steps } from '@astrojs/starlight/components';
 
 This guide explains how to convert eLabFTW experiments and resources into an ARC with [elab2ARC](https://nfdi4plants.org/elab2arc/). For an overview of the tool, see [About elab2ARC](/nfdi4plants.knowledgebase/resources/elab2arc/). If your eLabFTW or DataHUB instance is self-hosted, first follow the [setup for self-hosted instances](/nfdi4plants.knowledgebase/resources/elab2arc/elab2arc-setup-self-hosted/).
 
-## Setting up Tokens for elab2ARC
+## Before you start: create an eLabFTW API key
 
-### Create a Personal Access Token in DataHUB
-
-import DataHubPat from '../../datahub/access-tokens/datahub-personal-access-token.mdx'
-
-<DataHubPat />
-
-:::tip
-If you are already logged into the DataHUB in the same browser, elab2ARC can fetch the token for you via **Get a token**.
-:::
-
-### Create an eLabFTW API key
+elab2ARC needs an eLabFTW API key to read your entries. You only have to create it once.
 
 <Steps>
 1. Login to your eLabFTW instance 
@@ -37,6 +27,8 @@ If you are already logged into the DataHUB in the same browser, elab2ARC can fet
     ![](@images/elab2arc/elabftw-user-api-key-2.png)
 
 </Steps>
+
+You do **not** need to create a DataHUB token beforehand: elab2ARC fetches it for you (see below).
 
 ## How to use elab2ARC 
 
@@ -50,9 +42,11 @@ In the `Tokens` tab:
 
 - Select your eLabFTW instance from the drop-down list or add your own [1].
 - Paste your eLabFTW API key [2]. For the demo instance, **get a test api key** fills in a key automatically.
-- Paste your DataHUB token or click **get a token** [3]. To use another GitLab server or GitHub, tick **Use custom DataHub/GitLab instance**.
-- *(Optional)* Choose an **LLM API Provider** (see [LLM-assisted annotation](#optional-llm-assisted-annotation)).
+- Click **get a token** [3]. You are redirected to the DataHUB login; after signing in, you return to elab2ARC and the DataHUB token is filled in automatically.
+- *(Optional)* Choose an **LLM API Provider** and model (see [LLM-assisted annotation](#optional-llm-assisted-annotation)).
 - Click **Save** [4].
+
+To push to another GitLab server or to GitHub, tick **Use custom DataHub/GitLab instance**. You can then set the **GitLab URL**, the **API Suffix** (default `/api/v4`), the **SSO/Token URL** and a **Git CORS Proxy**. If the SSO/Token URL points to a token page instead of a login service, **get a token** opens that page in a new tab; create a [personal access token](/nfdi4plants.knowledgebase/datahub/navigation-settings/datahub-generate-pat/) there with write access to your repositories and paste it into the field.
 
 ### 2. Select eLabFTW experiments and resources
 
@@ -60,7 +54,7 @@ In the `eLabFTW` tab, all experiments and resources you have access to are liste
 
 ![](@images/elab2arc/elab2arc-home-page.png)
 
-- Click **Preview** to check an entry (main text, metadata, linked entries, attachments) before converting it.
+- Click **Preview** to check an entry (main text, metadata, linked entries, attachments) before converting it. With an LLM provider configured, **Pre-conversion with LLM** shows the extracted samples and process steps as a process graph; you can then start the conversion via **Confirm & Start Conversion**.
 - Tick the entries you want to convert [5a]. Their IDs are added to the selection fields [5b]; you can also enter IDs there directly, separated by commas.
 - Click **Confirm eLabFTW Selection** [6].
 
@@ -74,7 +68,16 @@ In the `ARCs` tab:
 - Check the **Target Path in ARC** (filled in automatically when selecting an assay or study).
 - *(Optional)* Switch on **Enable LLM Annotation Table** [9]. An **Edit Prompt** button then appears to adjust the prompt.
 - Click **Start Conversion** [8]. **Check Status** shows the progress.
-- *(Optional)* Use **Export ISA-JSON** to download the metadata as ISA-JSON.
+
+### 4. Check the result in the File Explorer
+
+Click **Open File Explorer** to inspect the ARC in your browser:
+
+- browse the folder structure and preview files (Markdown, images, text, ISA tables)
+- compare the converted ARC with the version in the repository (diff view)
+- download single files or the whole ARC as a ZIP archive
+- **Export ISA-JSON**: download all metadata of the ARC as one ISA-JSON file
+- **Generate READMEs**: let the LLM write a `README.md` for each study and assay and a root `README.md` for the ARC; publish them with **Commit & Push READMEs**
 
 ## Conversion 
 
@@ -90,11 +93,21 @@ The elab2ARC tool will automatically convert your eLabFTW experiments into ARC f
 
 The ARC is then committed and pushed to the selected repository. From there, you can add large raw data or analysis results, enrich the metadata, work on it with collaborators and finally [publish it with a DOI](/nfdi4plants.knowledgebase/arc-publications/).
 
+## Other input formats: zip files and note vaults
+
+Besides direct access to eLabFTW, the `Alternative Input (zip / note vault)` tab accepts a zip file containing
+
+- an eLabFTW `.eln` export,
+- an eLabFTW `export-elabftw.json` export, or
+- a generic Markdown/HTML note vault (e.g. Obsidian).
+
+Select the target ARC in the `ARCs` tab first. For note vaults, choose how notes are grouped into experiments: the whole vault, each top-level folder or every single note becomes one experiment. Then click **Convert**.
+
 ## Re-converting entries
 
 You can update an eLabFTW entry and convert it again into the same ARC:
 
-- Every conversion is stored as a new Git commit. The **Version History** panel shows what changed (line by line for Markdown and JSON files; for Excel files only *that* they changed).
+- Every conversion is stored as a new Git commit. The **Conversion Status** window lists the **Files Changed in ARC** and the **History** of your last 5 conversions.
 - Protocol files and attachments are regenerated from the current eLabFTW entry on each run.
 - LLM-generated annotation tables are kept if the LLM step is not run again.
 
@@ -109,10 +122,11 @@ When enabled, elab2ARC sends the free-text protocol to a large language model, w
 | Provider | Where does the protocol text go? |
 |---|---|
 | LM Studio / Ollama (local) | stays on your computer (the application must be running) |
-| Community server / remote API / custom endpoint | is sent to the selected service |
+| Community Server / Together.AI / Custom API | is sent to the selected service |
 
-- Before protocol text is sent to a non-local provider, elab2ARC asks for your explicit consent.
-- The extraction prompt can be edited via **Edit Prompt**.
+- The **Community Server** is free and needs no API key, but has a waiting queue. Together.AI requires your own API key.
+- Before protocol text is sent to a non-local provider, elab2ARC asks for your explicit consent. You can also give or withdraw this consent in the `Tokens` tab.
+- The extraction prompt can be edited via **Edit Prompt**. The prompt editor saves your last 50 prompt versions under **Version History**, where you can compare, restore, export and import them. **Reset to Default** returns to the recommended prompt.
 - The quality of the result depends on the model and on how detailed the ELN entry is. elab2ARC only extracts what is written down.
 
 :::caution
@@ -123,6 +137,7 @@ For sensitive or unpublished data, use a local model (LM Studio or Ollama). Alwa
 
 - **"LLM extraction failed ..."**: the message names the reason (e.g. missing key, empty entry content, no parsable model output). The conversion continues without LLM tables.
 - **Empty or incomplete eLabFTW entries** are converted without error; the assay then contains only the available metadata.
-- **Push fails**: check that your DataHUB/GitLab/GitHub token is valid and has write access to the target repository.
+- **Push fails**: check that your DataHUB/GitLab/GitHub token is valid and has write access to the target repository. If in doubt, click **get a token** again.
+- **Reporting a problem**: in the **Conversion Status** window, **Download Metadata JSON** and **View Troubleshooting Report** collect the details of the last conversion (LLM prompts, models, timing, results). Attach them to your bug report.
 
 Bugs and feature requests: [GitHub issues](https://github.com/nfdi4plants/elab2arc/issues)
