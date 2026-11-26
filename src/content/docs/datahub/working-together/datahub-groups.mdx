@@ -1,9 +1,8 @@
 ---
 title: User groups
-lastUpdated: 2024-07-22
+lastUpdated: 2026-11-26
 authors:
   - dominik-brilhaus
-  - viktoria-petrova
 sidebar:
   order: 6
 ---
@@ -18,14 +17,70 @@ import { Steps } from '@astrojs/starlight/components';
 - The group Owner(s) can adjust group settings and manage group memberships.
 - Groups can have subgroups (with a subset of members). Subgroups have the same features as groups.
 
-:::note
-"Projects" and "Groups" are not the same
+:::tip[Projects and Groups]
+In the DataHUB
+ - ARCs are called "Projects"
+ - "Groups" are groups of users (e.g. a research group)
 :::
+
+## Example groups
+
+Name | Type | URL
+--- | --- | ---
+CEPLAS | Consortium | https://git.nfdi4plants.org/ceplas
+CRC1535_MibiNet | Consortium | https://git.nfdi4plants.org/sfb1535_mibinet
+HHU_MolPhys_Frommer | Institute | https://git.nfdi4plants.org/hhu_molphys_frommer
+ICIB | Institute | https://git.nfdi4plants.org/icib
+MAdLand | Consortium | https://git.nfdi4plants.org/madland
+MIAPPE-TopicTable | Use-cases and demos | https://git.nfdi4plants.org/miappe-topictable
+Training | Use-cases and demos | https://git.nfdi4plants.org/training
+
+
+## Roles of group members
+
+- Owner
+  - recommended to have at least two owners (e.g. lab PI and staff scientist or data manager)
+- Other lab members
+  - must at least have reporter access (to see ARC file contents)
+  - recommended to grant "Maintainer" access to members that should independently add ARCs to the group
+
+### How to invite or remove group members
+
+<Steps>
+  
+  1. go to manage members
+  2. top-right invite
+  3. ...
+
+</Steps>
+
+
+
+
+
+## Group visibility
+
+- private / internal / public (add GitLab icons)
+- recommended to make group "public"
+  - this shows your work
+  - makes your ARCs more findable
+  - allows new members to easily find your group and request access
+
+### How to adjust the visibility settings
+
+<Steps>
+  
+  1. go to settings
+  2. visibility
+  3. ...
+
+</Steps>
+
 
 
 ## Groups panel
 
-The groups panel lists all user groups.
+The [groups panel](https://git.nfdi4plants.org/explore/groups/) lists all user groups.
 
 ![](@images/datahub/datahub-group-panel.drawio.png)
 
@@ -38,7 +93,7 @@ The groups panel lists all user groups.
 
 ## Creating a new group
 
-You can create a new group from the [groups panel](#groups-panel). 
+You can create a new group from the [groups panel](https://git.nfdi4plants.org/explore/groups/). 
 
 ![](@images/datahub/datahub-group-panel-create.drawio.png)
 
