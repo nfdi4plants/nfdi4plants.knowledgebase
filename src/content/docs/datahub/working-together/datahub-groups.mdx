@@ -1,5 +1,5 @@
 ---
-title: User groups
+title: DataHUB User Groups
 lastUpdated: 2026-11-26
 authors:
   - dominik-brilhaus
@@ -9,108 +9,121 @@ sidebar:
 
 import { Steps } from '@astrojs/starlight/components';
 
-- A "Group" is a group of users (then called "members" of that group) with specific [permissions](/nfdi4plants.knowledgebase/datahub/working-together/#roles-and-permissions).
-- A group (e.g. your lab or consortium) can share ARCs.
-- Groups help you communicate with all group members and manage permissions for the ARCs shared in that group.
-- Depending on their assigned roles, members of the group can view, edit, delete, and / or maintain the ARCs of that group.
-- If someone has access to a group, they get access to all the ARC in the group.
-- The group Owner(s) can adjust group settings and manage group memberships.
-- Groups can have subgroups (with a subset of members). Subgroups have the same features as groups.
+In the DataHUB, groups provide a shared space and access management. 
+This is useful for a lab, institute, or consortium. Members' access is based on their group role.
 
-:::tip[Projects and Groups]
-In the DataHUB
- - ARCs are called "Projects"
- - "Groups" are groups of users (e.g. a research group)
+Groups can contain subgroups for teams or projects with separate membership. Access may be inherited by projects in the group hierarchy.
+
+:::tip[Groups and Projects]
+Users sometimes confuse the DataHUB terminology for "groups" and "projects". 
+Here, ARCs are called **projects**, while a **group** is a group of users.
 :::
 
-## Example groups
 
-Name | Type | URL
---- | --- | ---
-CEPLAS | Consortium | https://git.nfdi4plants.org/ceplas
-CRC1535_MibiNet | Consortium | https://git.nfdi4plants.org/sfb1535_mibinet
-HHU_MolPhys_Frommer | Institute | https://git.nfdi4plants.org/hhu_molphys_frommer
-ICIB | Institute | https://git.nfdi4plants.org/icib
-MAdLand | Consortium | https://git.nfdi4plants.org/madland
-MIAPPE-TopicTable | Use-cases and demos | https://git.nfdi4plants.org/miappe-topictable
-Training | Use-cases and demos | https://git.nfdi4plants.org/training
+## Set up a lab group
 
+- Keep at least two **Owners** (for example, the PI and a staff scientist or data manager).
+- Assign a **Maintainer** to handle routine membership and project administration.
+- Give other members the lowest role they need: **Developer** to contribute, **Reporter** to read.
 
-## Roles of group members
+Example roles for a lab group:
 
-- Owner
-  - recommended to have at least two owners (e.g. lab PI and staff scientist or data manager)
-- Other lab members
-  - must at least have reporter access (to see ARC file contents)
-  - recommended to grant "Maintainer" access to members that should independently add ARCs to the group
+| Person or role | Suggested group role | Typical responsibility |
+| --- | --- | --- |
+| PI | Owner | Oversees the group and appoints administrators |
+| Staff scientist or data manager | Owner or Maintainer | Administers the group |
+| Lab member | Developer | Contributes to ARCs |
+| Reviewer or consultant | Reporter | Reads ARC contents |
 
-### How to invite or remove group members
+:::tip
+If someone only needs access to one ARC, invite them to that ARC instead of giving access to the whole group.
+:::
 
-<Steps>
-  
-  1. go to manage members
-  2. top-right invite
-  3. ...
+### Example groups
 
-</Steps>
+DataHUB groups can serve different purposes and allow to share ARCs with group members.
+Here are some example groups:
 
+| Name | Type | URL |
+| --- | --- | --- |
+| CEPLAS | Consortium | https://git.nfdi4plants.org/ceplas |
+| CRC1535_MibiNet | Consortium | https://git.nfdi4plants.org/sfb1535_mibinet |
+| HHU_MolPhys_Frommer | Institute | https://git.nfdi4plants.org/hhu_molphys_frommer |
+| ICIB | Institute | https://git.nfdi4plants.org/icib |
+| MAdLand | Consortium | https://git.nfdi4plants.org/madland |
+| MIAPPE-TopicTable | Use-cases and demos | https://git.nfdi4plants.org/miappe-topictable |
+| Training | Use-cases and demos | https://git.nfdi4plants.org/training |
 
+## Roles for group members
 
+- **Guest** – Cannot read ARC contents.
+- **Reporter** – Can read ARC contents.
+- **Developer** – Can read and contribute to ARCs; may create projects in the group if group settings allow it.
+- **Maintainer** – Can contribute and manage group membership.
+- **Owner** – Can manage group settings and membership.
 
+:::tip[Permissions]
+For exact permissions, see [DataHUB roles](/nfdi4plants.knowledgebase/datahub/working-together/datahub-roles).
+:::
 
-## Group visibility
+## Find or create a group
 
-- private / internal / public (add GitLab icons)
-- recommended to make group "public"
-  - this shows your work
-  - makes your ARCs more findable
-  - allows new members to easily find your group and request access
-
-### How to adjust the visibility settings
-
-<Steps>
-  
-  1. go to settings
-  2. visibility
-  3. ...
-
-</Steps>
-
-
-
-## Groups panel
-
-The [groups panel](https://git.nfdi4plants.org/explore/groups/) lists all user groups.
+Open the [groups panel](https://git.nfdi4plants.org/explore/groups/) to view your groups or explore visible groups.
 
 ![](@images/datahub/datahub-group-panel.drawio.png)
 
 <Steps>
 
-1. Choose a tab (1) to see your groups, or explore public groups (2)
-2. You can create a `New group` in the top-right corner (3).
+1. Select **Groups** to view your groups or explore available groups.
+2. Select **New group** to create one.
 
 </Steps>
-
-## Creating a new group
-
-You can create a new group from the [groups panel](https://git.nfdi4plants.org/explore/groups/). 
 
 ![](@images/datahub/datahub-group-panel-create.drawio.png)
 
 <Steps>
 
-1. choose a suitable name (1),
-2. adapt the url if needed (2),
-3. set the visibility level (3), and 
-4. invite members with a specified role and permission (4).
+1. Enter a group name and check its URL (namespace).
+2. Choose visibility.
+3. Add initial members and assign roles.
+4. Create the group.
 
 </Steps>
 
-:::tip
-When syncing an ARC shared with a group, the group's url rather than your user url is used to generate the ARC's address.
-:::
+To manage members later, open the group and select **Manage** → **Members**. Invite members and assign roles, or remove access when it is no longer needed. Owners can manage group settings and membership.
 
-:::tip
-Within ARCitect, you can directly choose your group namespace to sync your ARC with the group. 
-:::
+## Choose the group's visibility
 
+Groups can be:
+
+- **Private** – Only explicitly authorized users can access the group.
+- **Internal** – Signed-in DataHUB users can access it.
+- **Public** – Anyone can access it without signing in.
+
+Keep unpublished, sensitive, or restricted work private. Check institutional and project data-sharing requirements before making a group public.
+
+<Steps>
+
+1. Open the group.
+2. Go to **Settings** → **General**.
+3. Change the visibility setting and save.
+
+</Steps>
+
+Projects have separate visibility settings. Check both group and project visibility before sharing a link.
+
+## Choose how to share an ARC
+
+| What you need | Recommended approach | What it means |
+| --- | --- | --- |
+| Start an ARC for ongoing lab work | Create or sync it in the group namespace | The group is the ARC's namespace and shared home. |
+| Keep an existing ARC under team ownership | Transfer it to the group | Moves it from a personal to the group namespace. Useful when the lab needs to retain it. |
+| Give a group access without changing the ARC's namespace | Invite the group to the ARC | The ARC remains in its current namespace; assign the appropriate role. |
+| Develop a separate copy of an ARC | Fork it into the group | Creates a linked copy that can change independently. |
+
+Developers can create projects (ARCs) in a group unless the group restricts project creation. An Owner can check **Settings** → **General** → **Permissions and group features** → **Allowed to create projects**. Creating a subgroup requires Maintainer or Owner access. In [ARCitect](/nfdi4plants.knowledgebase/arcitect), choose the group namespace when syncing.
+
+- **Student leaves:** Transfer any ARC the lab needs to retain to the lab group.
+- **Consortium project:** Invite a partner group to an ARC that stays under the partner's ownership; create or transfer an ARC to the consortium group for a shared canonical copy.
+
+See [Inviting collaborators](/nfdi4plants.knowledgebase/datahub/working-together/datahub-invite-collaborators) and [Fork an ARC](/nfdi4plants.knowledgebase/datahub/arc-features/datahub-arc-fork) for details.
