@@ -9,73 +9,102 @@ sidebar:
 
 import { Steps } from '@astrojs/starlight/components';
 
-In the DataHUB, groups provide a shared space and access management. 
-This is useful for a lab, institute, or consortium. Members' access is based on their group role.
+## Organize your lab with groups
 
-Groups can contain subgroups for teams or projects with separate membership. Access may be inherited by projects in the group hierarchy.
+In the DataHUB, **groups provide a shared space for managing ARCs and their members**. They are particularly useful for research groups, laboratories, institutes, and consortia that want to organize their research data collaboratively.
 
-:::tip[Groups and Projects]
-Users sometimes confuse the DataHUB terminology for "groups" and "projects". 
-Here, ARCs are called **projects**, while a **group** is a group of users.
+A group provides a common home for ARCs and makes it easier to manage who can access them. Instead of granting access to each ARC individually, you can assign members a role at group level. Members then receive the corresponding access to the ARCs within the group.
+
+Groups can also contain **subgroups**, which are useful for organizing individual teams, collaborations, or research projects with separate memberships. Depending on the group structure and permissions, access can be inherited by ARCs in subgroups.
+
+:::tip[Groups and ARCs]
+In the DataHUB, ARCs are represented as **projects**, while groups represent collections of users and provide a shared space for their ARCs.
+
+Think of a group as your lab's shared workspace and an ARC as an individual research project within it.
 :::
 
+## When should you create a group?
+
+A group is useful whenever several people need to collaborate on ARCs or when research data should remain accessible beyond the involvement of a single person.
+
+Here are some typical use cases:
+
+| Use case | Why use a group? |
+| --- | --- |
+| **Research group or laboratory** | Give lab members shared access to research ARCs and keep them accessible when students or staff leave. |
+| **Research team or project** | Organize ARCs belonging to a particular project and manage access for the people involved. |
+| **Institute or department** | Provide a shared space for several research groups, with subgroups for individual teams. |
+| **Consortium or collaboration** | Share ARCs across institutions and provide collaborators with appropriate access. |
+| **Teaching and training** | Maintain shared ARCs for courses, workshops, tutorials, and demonstration purposes. |
+
+For example, a PI could create a group for their laboratory, appoint a staff scientist as an additional administrator, and give lab members access to the ARCs they work on. When a doctoral researcher leaves, the ARC remains in the lab's shared space rather than being tied to the researcher's personal account.
 
 ## Set up a lab group
 
-- Keep at least two **Owners** (for example, the PI and a staff scientist or data manager).
-- Assign a **Maintainer** to handle routine membership and project administration.
-- Give other members the lowest role they need: **Developer** to contribute, **Reporter** to read.
+For a research group, we recommend the following role distribution:
 
-Example roles for a lab group:
+- Keep at least two **Owners**, for example, the PI and a staff scientist or data manager. This ensures that group administration does not depend on a single person.
+- Assign a **Maintainer** to handle routine membership and ARC administration.
+- Give other members the lowest role they need: **Developer** to contribute to ARCs, or **Reporter** for read-only access.
+
+Example role distribution:
 
 | Person or role | Suggested group role | Typical responsibility |
 | --- | --- | --- |
 | PI | Owner | Oversees the group and appoints administrators |
-| Staff scientist or data manager | Owner or Maintainer | Administers the group |
-| Lab member | Developer | Contributes to ARCs |
-| Reviewer or consultant | Reporter | Reads ARC contents |
+| Staff scientist or data manager | Owner or Maintainer | Handles group administration |
+| Postdoc or doctoral researcher | Developer | Contributes to research ARCs |
+| Student or other lab member | Developer | Contributes to assigned ARCs |
+| Reviewer or external consultant | Reporter | Reads ARC contents |
 
-:::tip
-If someone only needs access to one ARC, invite them to that ARC instead of giving access to the whole group.
+:::tip[Grant access only where needed]
+If someone only needs access to a single ARC and should not see the other ARCs in the group, grant access directly to that ARC instead.
 :::
 
-### Example groups
+### Examples of existing groups
 
-DataHUB groups can serve different purposes and allow to share ARCs with group members.
-Here are some example groups:
+The following groups illustrate how DataHUB groups can be used for different purposes:
 
-| Name | Type | URL |
-| --- | --- | --- |
-| CEPLAS | Consortium | https://git.nfdi4plants.org/ceplas |
-| CRC1535_MibiNet | Consortium | https://git.nfdi4plants.org/sfb1535_mibinet |
-| HHU_MolPhys_Frommer | Institute | https://git.nfdi4plants.org/hhu_molphys_frommer |
-| ICIB | Institute | https://git.nfdi4plants.org/icib |
-| MAdLand | Consortium | https://git.nfdi4plants.org/madland |
-| MIAPPE-TopicTable | Use-cases and demos | https://git.nfdi4plants.org/miappe-topictable |
-| Training | Use-cases and demos | https://git.nfdi4plants.org/training |
+| Group | Purpose |
+| --- | --- |
+| [CEPLAS](https://git.nfdi4plants.org/ceplas) | Consortium |
+| [CRC1535_MibiNet](https://git.nfdi4plants.org/sfb1535_mibinet) | Consortium |
+| [HHU_MolPhys_Frommer](https://git.nfdi4plants.org/hhu_molphys_frommer) | Institute |
+| [ICIB](https://git.nfdi4plants.org/icib) | Institute |
+| [MAdLand](https://git.nfdi4plants.org/madland) | Consortium |
+| [MIAPPE-TopicTable](https://git.nfdi4plants.org/miappe-topictable) | Use cases and demonstrations |
+| [Training](https://git.nfdi4plants.org/training) | Use cases and demonstrations |
 
-## Roles for group members
+:::tip[Explore Groups]
+Open the [DataHUB groups panel](https://git.nfdi4plants.org/explore/groups/) to view existing groups that are visible to you.
+:::
 
-- **Guest** – Cannot read ARC contents.
-- **Reporter** – Can read ARC contents.
-- **Developer** – Can read and contribute to ARCs; may create projects in the group if group settings allow it.
-- **Maintainer** – Can contribute and manage group membership.
-- **Owner** – Can manage group settings and membership.
+## Understand group roles
 
-:::tip[Permissions]
-For exact permissions, see [DataHUB roles](/nfdi4plants.knowledgebase/datahub/working-together/datahub-roles).
+Each group member has a role that determines what they can do within the group and its ARCs.
+
+| Role | What it allows |
+| --- | --- |
+| **Guest** | Cannot read ARC contents. |
+| **Reporter** | Can read ARC contents. |
+| **Developer** | Can read and contribute to ARCs. May also create ARCs in the group if permitted by its settings. |
+| **Maintainer** | Can contribute to ARCs and manage group membership. |
+| **Owner** | Has full group administration rights, including managing group settings and membership. |
+
+:::tip[Detailed permissions]
+For a detailed overview of the permissions associated with each role, see [DataHUB roles](/nfdi4plants.knowledgebase/datahub/working-together/datahub-roles).
 :::
 
 ## Find or create a group
 
-Open the [groups panel](https://git.nfdi4plants.org/explore/groups/) to view your groups or explore visible groups.
+Open the [DataHUB groups panel](https://git.nfdi4plants.org/explore/groups/) to view your existing groups or explore groups that are visible to you.
 
 ![](@images/datahub/datahub-group-panel.drawio.png)
 
 <Steps>
 
 1. Select **Groups** to view your groups or explore available groups.
-2. Select **New group** to create one.
+2. Select **New group** to create a group.
 
 </Steps>
 
@@ -83,47 +112,110 @@ Open the [groups panel](https://git.nfdi4plants.org/explore/groups/) to view you
 
 <Steps>
 
-1. Enter a group name and check its URL (namespace).
-2. Choose visibility.
-3. Add initial members and assign roles.
-4. Create the group.
+1. Enter a group name and check the suggested URL (namespace). This URL identifies your group's shared space.
+2. Choose the group's visibility.
+3. Add initial members and assign their roles.
+4. Select **Create group**.
 
 </Steps>
 
-To manage members later, open the group and select **Manage** → **Members**. Invite members and assign roles, or remove access when it is no longer needed. Owners can manage group settings and membership.
+You can manage membership at any time by opening the group and navigating to **Manage → Members**. From there, you can invite additional members, change their roles, or remove their access.
+
+Owners can also change the group's settings and manage its membership.
 
 ## Choose the group's visibility
 
-Groups can be:
+Groups can have one of three visibility levels:
 
-- **Private** – Only explicitly authorized users can access the group.
-- **Internal** – Signed-in DataHUB users can access it.
-- **Public** – Anyone can access it without signing in.
+- **Private** – Only explicitly authorized users can view and access the group.
+- **Internal** – All signed-in DataHUB users can view the group.
+- **Public** – Anyone can view the group without signing in.
 
-Keep unpublished, sensitive, or restricted work private. Check institutional and project data-sharing requirements before making a group public.
+:::tip[Recommended: Public groups]
+We recommend setting research groups to **Public**. This makes it easier for interested DataHUB users to discover your group and request access to it.
+
+**A public group does not mean that all its ARCs are public!** Each ARC has its own visibility setting, which determines who can access its contents. You can therefore have a public group while keeping individual ARCs private.
+:::
+
+Before changing visibility, consider institutional and project-specific data-sharing requirements.
 
 <Steps>
 
 1. Open the group.
-2. Go to **Settings** → **General**.
-3. Change the visibility setting and save.
+2. Navigate to **Settings → General**.
+3. Change the visibility setting and save your changes.
 
 </Steps>
 
-Projects have separate visibility settings. Check both group and project visibility before sharing a link.
+:::caution[Check ARC visibility separately]
+Groups and ARCs have independent visibility settings. Making a group public does not automatically make its ARCs public. Likewise, a public ARC can be accessible beyond the group's membership. Check both settings before sharing research data.
+:::
 
-## Choose how to share an ARC
+## Share ARCs with your group
 
-| What you need | Recommended approach | What it means |
-| --- | --- | --- |
-| Start an ARC for ongoing lab work | Create or sync it in the group namespace | The group is the ARC's namespace and shared home. |
-| Keep an existing ARC under team ownership | Transfer it to the group | Moves it from a personal to the group namespace. Useful when the lab needs to retain it. |
-| Give a group access without changing the ARC's namespace | Invite the group to the ARC | The ARC remains in its current namespace; assign the appropriate role. |
-| Develop a separate copy of an ARC | Fork it into the group | Creates a linked copy that can change independently. |
+A group is most useful when it serves as the shared home for the ARCs belonging to your lab or project.
 
-Developers can create projects (ARCs) in a group unless the group restricts project creation. An Owner can check **Settings** → **General** → **Permissions and group features** → **Allowed to create projects**. Creating a subgroup requires Maintainer or Owner access. In [ARCitect](/nfdi4plants.knowledgebase/arcitect), choose the group namespace when syncing.
+There are two ways to get an ARC into a group:
 
-- **Student leaves:** Transfer any ARC the lab needs to retain to the lab group.
-- **Consortium project:** Invite a partner group to an ARC that stays under the partner's ownership; create or transfer an ARC to the consortium group for a shared canonical copy.
+### Option A: Synchronize directly with the group (recommended)
 
-See [Inviting collaborators](/nfdi4plants.knowledgebase/datahub/working-together/datahub-invite-collaborators) and [Fork an ARC](/nfdi4plants.knowledgebase/datahub/arc-features/datahub-arc-fork) for details.
+When creating a new ARC with [ARCitISA](/nfdi4plants.knowledgebase/arcitisa), you can select your lab or project group as the DataHUB destination instead of your personal namespace.
+
+The ARC is then created directly in the group's shared space. Group members can access it according to their assigned roles, and the ARC is immediately associated with the lab or project's shared collection.
+
+This is the easiest approach when you already know which group should own the ARC.
+
+### Option B: Start in your personal namespace
+
+You can also create and synchronize an ARC in your personal DataHUB namespace first. This is useful when you want to work on an ARC independently before deciding where it should be shared.
+
+Once the ARC is ready for collaboration, you can:
+
+- **Fork it into a group:** Creates a separate, linked copy in the group's namespace. The original remains in your personal namespace, while the group can develop its own version.
+- **Transfer it to a group:** Moves the existing ARC into the group's namespace. This is suitable when the ARC should become part of the lab's or project's shared collection.
+
+:::tip[ARC sharing]
+For more details about ARC sharing, see [Working together](/nfdi4plants.knowledgebase/datahub/working-together/).
+:::
+
+### Which approach should you choose?
+
+| What you want to achieve | Recommended approach |
+| --- | --- |
+| Start a new ARC for an existing lab or project | Synchronize directly with the group (Option A). |
+| Develop an ARC independently before sharing it | Start in your personal namespace (Option B). |
+| Make an existing ARC part of the lab's shared collection | Transfer it to the group. |
+| Maintain a separate version for collaborative development | Fork it into the group. |
+| Give an external collaborator access to one ARC only | Invite them directly to that ARC. |
+
+:::tip[Creating ARCs in a group]
+Developers can create ARCs in a group unless the group restricts project creation.
+
+An Owner can check this setting under **Settings → General → Permissions and group features → Allowed to create projects**.
+
+Creating subgroups requires Maintainer or Owner access.
+:::
+
+### Examples of group-based collaboration
+
+**A doctoral researcher starts a new project**
+
+The researcher creates an ARC using ARCitISA and synchronizes it directly with the lab group. Other lab members can immediately access and contribute to it according to their assigned roles.
+
+**A researcher develops an ARC independently**
+
+The researcher initially synchronizes an ARC with their personal namespace. Once the ARC is ready for collaboration, they transfer it to the lab group or fork it there to maintain a separate version.
+
+**A doctoral researcher leaves the lab**
+
+The researcher has created several ARCs in their personal namespace. Before their departure, the lab transfers the relevant ARCs to its group. The research data remains accessible to the lab, and future members can continue working with it.
+
+**A consortium collaborates on an ARC**
+
+A partner institution maintains an ARC in its own group. If the consortium needs to work on a shared version, the ARC can be forked into the consortium group's namespace. The original remains under the partner institution's ownership, while the consortium maintains its own copy.
+
+For more information, see:
+
+- [Inviting collaborators](/nfdi4plants.knowledgebase/datahub/working-together/datahub-invite-collaborators)
+- [Fork an ARC](/nfdi4plants.knowledgebase/datahub/arc-features/datahub-arc-fork)
+- [DataHUB roles](/nfdi4plants.knowledgebase/datahub/working-together/datahub-roles)
