@@ -20,7 +20,7 @@ Here we describe, how to reuse the provided ARC.
 
 ## The WeatherXBiodiversity_Soroye2020 ARC
 
-The [example ARC](https://git.nfdi4plants.org/lifewatch-eric/WeatherXBiodiversity_Soroye2020) 
+The [WeatherXBiodiversity_Soroye2020 ARC](https://git.nfdi4plants.org/lifewatch-eric/WeatherXBiodiversity_Soroye2020) 
 
 ### Overview
 
@@ -49,12 +49,27 @@ The provided `orchestration.cwl` runs the full pipeline, coordinating the workfl
 
 <Steps>
 
-  1. Familiarize with [ARCitISA](/nfdi4plants.knowledgebase/arcitisa/) to interact with the ARC
+  1. Install and familiarize with [ARCitISA](/nfdi4plants.knowledgebase/arcitisa/) to interact with the ARC
   2. Install [cwltool and docker](/nfdi4plants.knowledgebase/cwl/cwl-runner-installation)
   4. (Optional) Register a [GBIF](https://gbif.org/) account
   5. (Optional) Register a [CDS](https://cds.climate.copernicus.eu) account
 
 </Steps>
+
+### Use the provided workflow for your data of choice
+
+<Steps>
+  1. Using [ARCitISA](/nfdi4plants.knowledgebase/arcitisa/), download the [WeatherXBiodiversity_Soroye2020 ARC](https://git.nfdi4plants.org/lifewatch-eric/WeatherXBiodiversity_Soroye2020)
+  2. Provide your credentials to
+      - gbif_credentials.json
+      - cds_credentials.json
+  3. Adapt the `orchestration.yml` to provide your data selection and reference the paths to `*_credentials.json` files.
+
+</Steps>
+
+
+
+
 
 ## Resources
 
