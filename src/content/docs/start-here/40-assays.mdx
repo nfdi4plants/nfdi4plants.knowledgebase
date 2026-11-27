@@ -104,13 +104,14 @@ Record the measurement information in the assay's top-level metadata: set `Measu
 
 <Steps>
 1. Select the "SugarMeasurement" table.
-2. Click `Utilize prior output` and `Import selected output column` to use the (*_sugar-ext) values of the "SugarExtraction" table.
+2. Click `Utilize existing tables!` and `Import as input column` to use the (*_sugar-ext) values of the "SugarExtraction" table.
 3. Import the template `Training - Sugar measurement`, following the same steps as before. This will not replace the existing input column.
 4. Fill the parameter columns
     - Parameter [`technical replicate`] of 1,2,3,1,2,3
     - Parameter [`sample volume`] of 10 `microliter`
     - Parameter [`buffer volume`] of 190 `microliter`
     - Parameter [`cycle count`] of 5
+    {/* should we also mention the Parameter [measurement device]? */}
 5. Use the `File Picker` feature <Icons.FilePicker /> to import the results of sugar measurement (`sugar_result.csv`) into `Output [Data]`
 
     <NoWrapTable>

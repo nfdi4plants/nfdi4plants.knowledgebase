@@ -12,6 +12,7 @@ import Icons from '@components/arcitisa/Icons';
 1. Click on the assay's name (`SugarsPhotometer`) in the file tree.
 2. Select the "SugarExtraction" table added in the previous step.
 3. In the `New Table!` widget, click `Create basic table!`.
+{/* the basic table creates 3 rows. If you create the table directly from a template, it will only have one row. We have to have this in mind for the step 9 were new rows are added. It also has a protocol Uri column (from the basic table) that is not mentioned in the assay steps. Shoul we mention the protocol and link it in the table or delete the column?*/}
 4. On top of the annotation table open `Add Template` <Icons.Template />
 4. This will show you all DataPLANT curated templates.
 4. To select a template from a different community click <Icons.Institution />.
@@ -35,7 +36,7 @@ import Icons from '@components/arcitisa/Icons';
 
     </NoWrapTable>
 
-9. At the bottom of the table, type `5` in the text field and click `+` to add 6 rows to your table for a total of 6 since one was added automatically.
+9. At the bottom of the table, type `5` in the text field and click `+` to add 5 rows to your table for a total of 6 since one was added automatically.
 10. Transfer the sample names of your study's `Output [Sample Name]` to the `Input [Sample Name]` column.
 
     <NoWrapTable>
