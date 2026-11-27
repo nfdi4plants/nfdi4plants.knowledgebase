@@ -1,6 +1,6 @@
 ---
 title: About
-lastUpdated: 2026-11-03
+lastUpdated: 2026-11-25
 description: elab2ARC is a tool for converting eLabFTW experiment data into ARC format.
 authors: 
   - xiaoran-zhou
@@ -32,9 +32,11 @@ Manually transferring metadata from ELNs to ARC can be both error-prone and time
 - **Optional LLM-assisted annotation**: a large language model can turn free-text protocols into ISA annotation tables (samples, process steps, parameters) as an editable draft.
 - **Flexible targets**: pushes to the DataHUB by default; custom GitLab instances and GitHub are also supported.
 - **Version history**: every conversion is a Git commit, so re-converting an entry never silently overwrites earlier states.
-- **Other input formats**: besides eLabFTW, HTML or Markdown files (also several files in a ZIP archive) can be used as input via the advanced settings.
+- **Other input formats**: besides direct eLabFTW access, zip files with an eLabFTW `.eln` or JSON export or a Markdown/HTML note vault (e.g. Obsidian) can be converted.
+- **One-click DataHUB login**: **get a token** signs you in to the DataHUB and fills in the access token automatically.
+- **File Explorer**: preview the converted ARC, compare it with the repository version, download it as a ZIP, export ISA-JSON and generate READMEs.
 - **Multi-instance support**: works with any eLabFTW instance you have access to.
-- **Self-hosting**: a Dockerfile and docker-compose configuration are available in the repository.
+- **Self-hosting**: a Docker setup that includes the required CORS/Git/LFS proxy is available in the repository.
 
 ## Guides
 
